@@ -1,1 +1,1 @@
-# Conditions
+# Condiții

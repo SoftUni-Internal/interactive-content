@@ -1,1 +1,1 @@
-# Introduction to Programming - Exercise
+# Introducere în Programare - Exercițiu

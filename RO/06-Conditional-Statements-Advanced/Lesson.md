@@ -1,1 +1,1 @@
-# Conditions Advanced
+# Condiții Avansate

@@ -1,1 +1,1 @@
-# Conditions - Exercise
+# Condiții - Exercițiu
