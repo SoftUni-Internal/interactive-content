@@ -1,2 +1,1 @@
-# Interactive Content
-SoftUni Interactive Content: Courses, Lessons, Seminars, Trainings
+# programming-basics-with-java

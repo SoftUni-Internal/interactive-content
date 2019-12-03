@@ -1,0 +1,1 @@
+# Condiții - Exercițiu
