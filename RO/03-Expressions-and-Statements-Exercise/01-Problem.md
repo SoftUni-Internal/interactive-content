@@ -1,5 +1,5 @@
 [slide]
-# Problem: Square Area
+# Problemă: Zona pătratului
 [code-task title="Square Area" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

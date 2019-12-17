@@ -1,5 +1,5 @@
 [slide]
-# Problem: Trapezoid Area
+# Problemă: Zona trapezilor
 [code-task title="Trapezoid Areq" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
