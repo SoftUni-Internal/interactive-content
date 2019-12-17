@@ -1,5 +1,5 @@
 [slide]
-# Problem: Numbers Ending in 7
+# Problemă: Numere care se termină în 7
 [code-task title="Numbers Ending in 7" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

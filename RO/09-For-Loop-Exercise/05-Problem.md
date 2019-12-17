@@ -1,5 +1,5 @@
 [slide]
-# Problem: Odd / Even Position
+# Problemă: Poziția par/impar
 [code-task title="Odd / Even Position" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
