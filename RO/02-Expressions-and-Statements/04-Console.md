@@ -1,5 +1,6 @@
 [slide]
-# Console (Terminal)
+# Consolă ( Terminal)
+
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus,etc. 
 
 It usually looks like a black colored window like this two:

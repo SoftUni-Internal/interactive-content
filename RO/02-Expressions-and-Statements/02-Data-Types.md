@@ -1,5 +1,6 @@
 [slide]
-# Data Types
+# Tipuri de date
+
 In Python we can use data types to define variables as follows:
 * **int** - integer number 
 * **float** - real number

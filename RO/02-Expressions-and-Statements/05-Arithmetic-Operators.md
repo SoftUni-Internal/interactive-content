@@ -1,5 +1,6 @@
 [slide]
-# Arithmetic Operations
+# Operații aritmetice
+
 Let's examine the basic **arithmetic operations** in programming. 
 
 We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*` and `/`.

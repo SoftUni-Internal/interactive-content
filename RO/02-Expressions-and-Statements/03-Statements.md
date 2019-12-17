@@ -1,5 +1,6 @@
 [slide]
-# Statements
+# Declarații
+
 The **actions** that a program takes, are expressed as **statements**. 
 
 Python supports several different kinds of statements and here are a few of them:
