@@ -1,5 +1,5 @@
 [slide]
-# Problem: Report System
+# Problemă: Report Sistem
 [code-task title="Report System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

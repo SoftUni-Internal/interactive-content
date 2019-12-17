@@ -1,5 +1,5 @@
 [slide]
-# Problem: Old Books
+# Problemă: Cărți vechi
 [code-task title="Old Books" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
