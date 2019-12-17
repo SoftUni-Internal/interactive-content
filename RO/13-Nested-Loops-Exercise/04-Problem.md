@@ -1,5 +1,5 @@
 [slide]
-# Problem: Word Wars
+# Problemă: Războaie de cuvinte
 [code-task title="Word Wars" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

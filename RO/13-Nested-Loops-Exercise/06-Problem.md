@@ -1,5 +1,5 @@
 [slide]
-# Problem: Train the Trainers
+# Problemă: Antrenați trainerii
 [code-task title="Train the Trainers" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

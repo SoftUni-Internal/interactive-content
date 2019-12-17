@@ -1,5 +1,5 @@
 [slide]
-# Problem: Combinations
+# Problemă: Combinații
 [code-task title="Combinations" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
