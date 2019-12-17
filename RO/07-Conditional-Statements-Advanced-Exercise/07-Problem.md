@@ -1,5 +1,5 @@
 [slide]
-# Problem: Flowers
+# Problemă: Flori
 [code-task title="Flowers" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

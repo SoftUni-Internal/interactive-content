@@ -1,5 +1,5 @@
 [slide]
-# Problem: Fuel Tank
+# Problemă: Rezervor de combustibil
 [code-task title="Fuel Tank" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

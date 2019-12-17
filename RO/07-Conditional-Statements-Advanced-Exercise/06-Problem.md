@@ -1,5 +1,5 @@
 [slide]
-# Prolem: Fishing Boat
+# Problemă: Barcă de pescuit
 [code-task title="Fishing Boat" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

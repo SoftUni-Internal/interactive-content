@@ -1,5 +1,5 @@
 [slide]
-# Problem: Point on Rectangle Border
+# Problemă: Punct pe marginea dreptunghiului
 [code-task title="Point on Rectangle Border" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
