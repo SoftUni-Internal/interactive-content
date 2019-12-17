@@ -1,5 +1,5 @@
 [slide]
-# Problem: Stream Of Letters
+# Problemă: Flux de litere
 [code-task title="Stream Of Letters" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

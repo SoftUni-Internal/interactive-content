@@ -1,5 +1,5 @@
 [slide]
-# Problem: Old Books
+# Problemă: Cărți vechi
 [code-task title="Old Books" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
