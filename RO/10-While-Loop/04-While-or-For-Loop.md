@@ -1,5 +1,5 @@
 [slide]
-# While or For Loop?
+# Bucla While sau bucla For?
 
 `while` and `for` loops both **repeat** a block of **code**.
 
