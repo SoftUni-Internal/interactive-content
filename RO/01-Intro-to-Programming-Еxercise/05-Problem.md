@@ -1,5 +1,5 @@
 [slide]
-# Problem: Triunghi de steluțe
+# Problemă: Triunghi de steluțe
 [code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
