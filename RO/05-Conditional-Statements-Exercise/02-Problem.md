@@ -1,5 +1,5 @@
 [slide]
-# Problem: Area of Figures
+# Problemă: Zona figurilor
 [code-task title="Area of Figures" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

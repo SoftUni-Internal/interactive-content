@@ -1,5 +1,5 @@
 [slide]
-# Problem: Animal Type
+# Problemă: Tip de animal
 [code-task title="Animal Type" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

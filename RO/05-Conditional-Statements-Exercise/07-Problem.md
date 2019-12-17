@@ -1,5 +1,5 @@
 [slide]
-# Problem: Pipes In Pool
+# Problemă: Conducte în piscină
 [code-task title="Pipes In Pool" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

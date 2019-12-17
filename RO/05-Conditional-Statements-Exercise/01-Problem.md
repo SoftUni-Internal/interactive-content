@@ -1,5 +1,5 @@
 [slide]
-# Problem: Harvest
+# Problemă: Recoltă
 [code-task title="Harvest" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

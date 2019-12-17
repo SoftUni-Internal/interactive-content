@@ -1,5 +1,5 @@
 [slide]
-# Problem: Day of Week
+# Problemă: Ziua săptămânii
 [code-task title="Day of Week" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

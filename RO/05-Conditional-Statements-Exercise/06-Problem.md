@@ -1,5 +1,5 @@
 [slide]
-# Problem: Pets
+# Problemă: Animale de companie
 [code-task title="Pets" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
