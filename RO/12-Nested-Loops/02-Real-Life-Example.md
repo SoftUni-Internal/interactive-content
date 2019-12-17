@@ -1,3 +1,5 @@
+# Exemple din viața reală
+
 [slide]
 # Real-Life Example: Clock
 Imagine the current time is exactly 12:00 AM. 

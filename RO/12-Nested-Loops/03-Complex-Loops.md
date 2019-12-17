@@ -1,5 +1,5 @@
 [slide]
-# Complex Loops
+# Complex Buclă
 Loops with different **steps**
 
 ```python
