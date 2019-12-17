@@ -1,5 +1,5 @@
 [slide]
-# Problem: Back to the Past
+# Problemă: Înapoi în trecut
 [code-task title="Back to the Past" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -1,5 +1,5 @@
 [slide]
-# Problem: Grades
+# Problemă: Note
 [code-task title="Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
