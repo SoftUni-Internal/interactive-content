@@ -1,5 +1,5 @@
 [slide]
-# Revision
+# Revizuire
 Let's revise what we learned in the last lesson:
 - Numbers can be **compared** by the `==`, `<`, `>`, `<=`, `>=` and `!=` operators:
 ```py live

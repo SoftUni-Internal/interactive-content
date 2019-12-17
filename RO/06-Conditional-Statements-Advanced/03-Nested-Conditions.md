@@ -1,5 +1,5 @@
 [slide]
-# Nested Conditions
+# Condiții imbricate
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 
 
