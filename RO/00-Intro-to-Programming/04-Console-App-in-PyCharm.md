@@ -1,5 +1,6 @@
 [slide]
-# Console App in PyCharm
+# Aplicație consola în PyCharm
+
 We already have PyCharm and we can start it. 
 
 We can create a new project by clicking `[Create New Project]`

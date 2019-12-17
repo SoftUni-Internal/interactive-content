@@ -1,5 +1,6 @@
 [slide]
-# Development Environments (IDE)
+# Medii integrate de dezvoltare (IDE)
+
 In order to program we need an **Integrated Development Environment** (IDE). 
 
 **An environment for development** (Integrated Development Environment – **IDE**) is a combination of traditional tools for development of software applications. 
