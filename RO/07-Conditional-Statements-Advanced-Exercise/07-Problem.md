@@ -1,5 +1,5 @@
 [slide]
-# Problem: Flowers
+# Problemă: Flori
 [code-task title="Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

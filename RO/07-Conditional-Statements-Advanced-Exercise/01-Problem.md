@@ -1,5 +1,5 @@
 [slide]
-# Problem: Personal Titles
+# Problemă: Titluri personale
 [code-task title="Personal Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

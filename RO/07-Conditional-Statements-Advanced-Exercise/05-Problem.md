@@ -1,5 +1,5 @@
 [slide]
-# Problem: Summer Outfit
+# Problemă: Costum de vară
 [code-task title="Summer Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
