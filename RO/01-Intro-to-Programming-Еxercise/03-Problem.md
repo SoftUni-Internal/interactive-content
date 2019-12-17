@@ -1,5 +1,5 @@
 [slide]
-# Problem: Nums 1...10
+# Problemă: Numerele 1...10
 [code-task title="Name and Expression" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```

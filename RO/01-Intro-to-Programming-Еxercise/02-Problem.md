@@ -1,5 +1,5 @@
 [slide]
-# Problem: Rectangle Area
+# Problemă: Zona dreptunhiului
 [code-task title="Rectangle Area" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
