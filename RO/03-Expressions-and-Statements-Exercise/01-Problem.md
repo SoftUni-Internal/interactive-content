@@ -1,5 +1,5 @@
 [slide]
-# Problem: Square Area
+# Problemă: Zona pătratului
 [code-task title="Square Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -1,5 +1,5 @@
 [slide]
-# Problem: Yard Greening
+# Problemă: Înverzirea curții
 [code-task title="Yard Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
