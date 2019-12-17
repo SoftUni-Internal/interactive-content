@@ -1,5 +1,5 @@
 [slide]
-# Introduction
+# Introducere
 
 [vimeo-video videoId="341553633" startTimeInSeconds="900" endTimeInSeconds="1027" /]
 

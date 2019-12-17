@@ -1,6 +1,6 @@
-[slide]
-# Revision 
+# Revizuire 
 
+[slide]
 # Variables
 In programming **data** is stored in **variables**
 

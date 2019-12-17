@@ -1,5 +1,6 @@
 [slide]
-# Sequence of If-Else Conditions
+# Secvențe de condiții If-Else
+
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
 In such cases, we can apply the construction `if-elif ... -else` **in series**.

@@ -1,5 +1,6 @@
 [slide]
-# Variable Lifetime
+# Domeniu de vizibilitate al variabilei
+
 Each variable has a range in which it exists, called **variable scope**. 
 
 This range specifies where a variable can be used and how long is its **lifetime**. 
