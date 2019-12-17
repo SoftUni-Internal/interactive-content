@@ -1,5 +1,5 @@
 [slide]
-# Problem: Calculations
+# Problem: Calculări
 [code-task title="Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
