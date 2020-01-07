@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Tipăriți"Hello SoftUni"
-[code-task title="Print Hello SoftUni" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Print Hello SoftUni" taskId="ITPE-p-01" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {

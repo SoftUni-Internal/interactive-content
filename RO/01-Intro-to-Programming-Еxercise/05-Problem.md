@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Triunghi de steluțe
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Triangle of Stars" taskId="ITPE-p-05" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
