@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Combinații
-[code-task title="Combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Combinations" taskId="NL-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

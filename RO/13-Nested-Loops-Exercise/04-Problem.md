@@ -1,6 +1,6 @@
 [slide]
 # Problemă:Războaie de cuvinte
-[code-task title="Word Wars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Wars" taskId="NL-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
