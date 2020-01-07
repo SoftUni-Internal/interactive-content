@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Mașina de spălat vasele
-[code-task title="Dishwasher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Dishwasher" taskId="WL-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
