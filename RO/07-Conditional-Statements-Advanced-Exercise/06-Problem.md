@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Barcă de pescuit
-[code-task title="Fishing Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fishing Boat" taskId="CAE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

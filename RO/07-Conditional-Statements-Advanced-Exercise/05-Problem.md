@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Costum de vară
-[code-task title="Summer Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Summer Outfit" taskId="CAE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

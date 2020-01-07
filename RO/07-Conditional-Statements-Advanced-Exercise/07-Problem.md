@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Flori
-[code-task title="Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Flowers" taskId="CAE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
