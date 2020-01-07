@@ -1,6 +1,6 @@
 [slide]
 # Problem: Yard Greening
-[code-task title="Yard Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Yard Greening" taskId="ESE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
