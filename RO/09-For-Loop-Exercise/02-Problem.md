@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Note de plată
-[code-task title="Bills" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bills" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
