@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Recoltă
-[code-task title="Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Harvest" taskId="CE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

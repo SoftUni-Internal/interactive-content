@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Zona figurilor
-[code-task title="Area of Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Figures" taskId="CE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

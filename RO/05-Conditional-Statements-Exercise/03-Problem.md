@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Timp + 15 minute
-[code-task title="Time + 15 Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Time + 15 Minutes" taskId="CE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
