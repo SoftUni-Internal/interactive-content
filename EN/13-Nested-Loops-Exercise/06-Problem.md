@@ -1,6 +1,6 @@
 [slide]
 # Problem: Train the Trainers
-[code-task title="Train the Trainers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Train the Trainers" taskId="NLE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
