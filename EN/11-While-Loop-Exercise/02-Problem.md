@@ -1,6 +1,6 @@
 [slide]
 # Problem: Report System
-[code-task title="Report System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Report System" taskId="WLE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

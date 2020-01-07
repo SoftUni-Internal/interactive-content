@@ -1,6 +1,6 @@
 [slide]
 # Problem: Walking
-[code-task title="Walking" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+[code-task title="Walking" taskId="WLE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
 import java.util.Scanner;
