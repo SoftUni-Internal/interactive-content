@@ -16,7 +16,7 @@ You receive multiple lines from the console until the command "STOP" or until th
 Print on the console:
 - If you have reached the limit of 7 movies you must print: "The limit is reached."
 - Print the best movie for you: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
-[code-task title="Problem-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-06" taskId="EP-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

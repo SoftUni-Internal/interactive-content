@@ -23,7 +23,7 @@ You receive 3 lines from the console:
 Print one line on the console: "Your bill is \{total price\}$"
  * The price must be formatted to two digits after the decimal point.
 
-[code-task title="Problem-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-03" taskId="EP-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

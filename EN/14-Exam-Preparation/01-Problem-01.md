@@ -20,7 +20,7 @@ From the console you receive 4 lines:
 You have to print on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format: 
 - "Total time needed to watch the \{name of the series\} series is \{time\} minutes."
 
-[code-task title="Problem-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-01" taskId="EP-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
