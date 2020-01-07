@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Piața de legume
-[code-task title="Vegetable Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vegetable Market" taskId="ESE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

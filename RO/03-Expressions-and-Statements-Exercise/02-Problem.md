@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Crearea de proiecte
-[code-task title="Project Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Project Creation" taskId="ESE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
