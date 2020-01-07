@@ -22,7 +22,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Biggest Number
-[code-task title="Biggest Number" taskId="p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Biggest Number" taskId="FL-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -81,7 +81,7 @@ Write a program, which:
 
 [slide]
 # Problem: Number Sequence
-[code-task title="Number Sequence" taskId="p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Number Sequence" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -156,7 +156,7 @@ Min number: -2
 
 [slide]
 # Problem: Power of Number
-[code-task title="Power of Number" taskId="p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Power of Number" taskId="FL-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -200,7 +200,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Pairs" taskId="FL-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -339,7 +339,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="FL-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -399,7 +399,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="FL-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -451,7 +451,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowel Sum" taskId="FL-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -540,7 +540,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Rollercoaster" taskId="FL-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -641,7 +641,7 @@ The rollercoaster departures
 [slide]
 # Problem: Multiply
 
-[code-task title="Multiply" taskId="p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply" taskId="FL-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
