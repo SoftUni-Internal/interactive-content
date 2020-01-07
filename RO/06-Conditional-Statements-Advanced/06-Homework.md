@@ -21,7 +21,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Fruit or Vegetable
-[code-task title="Fruit or Vegetable" taskId="p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fruit or Vegetable" taskId="CA-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -76,7 +76,7 @@ vegetable
 
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="CA-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -138,7 +138,7 @@ Sunday
 
 [slide]
 # Problem: Vowel or Consonant
-[code-task title="Vowel or Consonant" taskId="p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowel or Consonant" taskId="CA-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -199,7 +199,7 @@ Consonant
 
 [slide]
 # Problem: Product of 3 Numbers
-[code-task title="Product of 3 Numbers" taskId="p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Product of 3 Numbers" taskId="CA-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -266,7 +266,7 @@ zero
 
 [slide]
 # Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sorted Numbers" taskId="CA-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -339,7 +339,7 @@ Descending
 
 [slide]
 # Problem: Vacation Expenses
-[code-task title="Vacation Expenses" taskId="p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vacation Expenses" taskId="CA-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -391,7 +391,7 @@ Hotel
 
 [slide]
 # Problem: Cinema
-[code-task title="Cinema" taskId="p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Cinema" taskId="CA-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -443,7 +443,7 @@ Normal
 
 [slide]
 # Problem: Operations with Numbers
-[code-task title="Operations with Numbers" taskId="p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Operations with Numbers" taskId="CA-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -529,7 +529,7 @@ Write a program to apply an operator for given two numbers:
 
 [slide]
 # Problem: ATM
-[code-task title="ATM" taskId="p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="ATM" taskId="CA-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -584,7 +584,7 @@ The withdraw was successful.
 
 [slide]
 # Problem: Biggest of Five Numbers
-[code-task title="Biggest of Five Numbers" taskId="p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Biggest of Five Numbers" taskId="CA-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
