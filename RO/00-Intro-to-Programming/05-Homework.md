@@ -15,7 +15,7 @@ We have prepared some simple problems for you to solve. If you struggle you can 
 
 [slide]
 # Problem: Print "Hello Java"
-[code-task title="Print Hello Java" executionStrategy="java-code"]
+[code-task title="Print Hello Java" taskId="ITP-p-01" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -45,7 +45,7 @@ Hello Java
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" executionStrategy="java-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="ITP-p-02" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -77,7 +77,7 @@ Write a Java program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" executionStrategy="java-code"]
+[code-task title="Name and Expression" taskId="ITP-p-03" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -107,7 +107,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" executionStrategy="java-code"]
+[code-task title="Calculations" taskId="ITP-p-04" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -141,7 +141,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" executionStrategy="java-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="ITP-p-05" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
