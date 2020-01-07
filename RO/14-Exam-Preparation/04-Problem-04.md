@@ -24,7 +24,7 @@ First, print on the console one line:
 - If you have received the command "Movie time!": "There are \{seats left\} seats left in the cinema."
 - If there are no more free seats in the hall: "The cinema is full."
 - Afterwards, print: "Cinema income - \{income\}$"
-[code-task title="Problem-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-04" taskId="EP-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

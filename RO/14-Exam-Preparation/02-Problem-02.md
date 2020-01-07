@@ -21,7 +21,7 @@ Print on the console one line:
 - If the time is not enough: "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
 Round the time up to the nearest whole number.
 
-[code-task title="Problem-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-02" taskId="EP-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
