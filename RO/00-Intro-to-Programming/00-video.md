@@ -1,5 +1,5 @@
 [slide]
-# Introduction
+# Video with start and end time
 
 [vimeo-video startTimeInSeconds="10" endTimeInSeconds="20"]
 [stream language='"EN" videoId="383474878"  /]
