@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Antrenați trainerii
-[code-task title="Train the Trainers" taskId="NL-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Train the Trainers" taskId="NLE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
