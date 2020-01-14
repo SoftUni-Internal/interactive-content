@@ -13,7 +13,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Fruit or Vegetable
-[code-task title="Fruit or Vegetable" taskId="p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Fruit or Vegetable" taskId="24-03-p01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -62,7 +62,7 @@ vegetable
 
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Day of Week" taskId="24-03-p02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -118,7 +118,7 @@ Sunday
 
 [slide]
 # Problem: Product of 3 Numbers
-[code-task title="Product of 3 Numbers" taskId="p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Product of 3 Numbers" taskId="24-03-p03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -179,7 +179,7 @@ zero
 
 [slide]
 # Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Sorted Numbers" taskId="24-03-p04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -246,7 +246,7 @@ Descending
 
 [slide]
 # Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Sorted Numbers" taskId="24-03-p05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 № Write code herе
@@ -313,7 +313,7 @@ Descending
 
 [slide]
 # Problem: Vacation Expenses
-[code-task title="Vacation Expenses" taskId="p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Vacation Expenses" taskId="24-03-p06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -359,7 +359,7 @@ Hotel
 
 [slide]
 # Problem: Cinema
-[code-task title="Cinema" taskId="p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Cinema" taskId="24-03-p07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -405,7 +405,7 @@ Normal
 
 [slide]
 # Problem: Number Operations
-[code-task title="Number Operations" taskId="p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Number Operations" taskId="24-03-p08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -485,7 +485,7 @@ Write a program to apply an operator for given two numbers:
 
 [slide]
 # Problem: ATM
-[code-task title="ATM" taskId="p-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="ATM" taskId="24-03-p09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
