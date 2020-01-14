@@ -1,6 +1,6 @@
 [slide]
 # Problem: Projects Creation
-[code-task title="Project Creation" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Project Creation" taskId="24-01E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
