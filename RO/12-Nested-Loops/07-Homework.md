@@ -1,6 +1,5 @@
 [slide]
 # Temă
-
 Welcome to the homework. 
 
 Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
@@ -14,7 +13,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Building
-[code-task title="Building" taskId="p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Building" taskId="24-06-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -80,7 +79,7 @@ L10
 
 [slide]
 # Problem: Passwords
-[code-task title="Passwords" taskId="p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Passwords" taskId="24-06-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -117,7 +116,7 @@ Write a program, which:
 
 [slide]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Magic Number" taskId="24-06-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -186,7 +185,7 @@ Find all 3-digit numbers, which:
 
 [slide]
 # Problem: Travelling
-[code-task title="Travelling" taskId="p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Travelling" taskId="24-06-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -241,7 +240,7 @@ End
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Prime Numbers" taskId="24-06-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 import math
@@ -289,7 +288,7 @@ London
 
 [slide]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Unique PIN Codes" taskId="24-06-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -353,7 +352,7 @@ Write a program, which:
 
 [slide]
 # Problem: Letters Combinations
-[code-task title="Letters Combinations" taskId="p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Letters Combinations" taskId="24-06-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -446,7 +445,7 @@ hhh
 
 [slide]
 # Problem: Number Pattern
-[code-task title="Number Pattern" taskId="p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Number Pattern" taskId="24-06-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
