@@ -1,6 +1,6 @@
 [slide]
 # Problem: Report System
-[code-task title="Report System" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Report System" taskId="24-05E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

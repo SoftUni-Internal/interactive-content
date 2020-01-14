@@ -1,6 +1,6 @@
 [slide]
 # Problem: Graduation
-[code-task title="Graduation" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Graduation" taskId="24-05E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
