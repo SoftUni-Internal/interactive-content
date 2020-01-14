@@ -1,6 +1,6 @@
 [slide]
 # Problem: Odd / Even Position
-[code-task title="Odd / Even Position" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Odd / Even Position" taskId="24-04E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
