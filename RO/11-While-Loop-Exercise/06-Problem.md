@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Mers
-[code-task title="Walking" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
+[code-task title="Walking" taskId="24-05E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
 [code-editor language=python]
 ```
 # Write your code here

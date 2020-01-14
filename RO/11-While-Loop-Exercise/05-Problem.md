@@ -1,6 +1,6 @@
 [slide]
 # Problemă:Pregătire pentru examen
-[code-task title="Exam Preparation" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Exam Preparation" taskId="24-05E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

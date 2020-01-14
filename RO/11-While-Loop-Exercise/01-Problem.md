@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Mașina de spălat vasele
-[code-task title="Dishwasher" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Dishwasher" taskId="24-05E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

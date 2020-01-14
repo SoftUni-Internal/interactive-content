@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Cărți vechi
-[code-task title="Old Books" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Old Books" taskId="24-05E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
