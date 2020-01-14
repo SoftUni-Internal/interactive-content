@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Cărți vechi
-[code-task title="Old Books" taskId="WL-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Old Books" taskId="WLE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
