@@ -1,6 +1,6 @@
 [slide]
 # Problem: Pipes In Pool
-[code-task title="Pipes In Pool" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Pipes In Pool" taskId="24-02E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

@@ -1,6 +1,6 @@
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Area of Figures" taskId="24-02E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
