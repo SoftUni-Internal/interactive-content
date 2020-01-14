@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Tip de animal
-[code-task title="Animal Type" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Animal Type" taskId="24-02E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

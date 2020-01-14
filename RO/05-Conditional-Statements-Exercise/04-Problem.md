@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Ziua săptămânii
-[code-task title="Day of Week" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Day of Week" taskId="24-02E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
