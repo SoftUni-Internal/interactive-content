@@ -1,6 +1,6 @@
 [slide]
 # Problem: Fuel Tank
-[code-task title="Fuel Tank" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Fuel Tank" taskId="24-03E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
