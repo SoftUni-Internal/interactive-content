@@ -1,6 +1,6 @@
 [slide]
 # Problem: Rectangle Area
-[code-task title="Rectangle Area" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Rectangle Area" taskId="24-00E-p-02" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
 # Write your code here
