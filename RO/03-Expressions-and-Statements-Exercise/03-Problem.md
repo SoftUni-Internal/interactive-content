@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Zona trapezilor
-[code-task title="Trapezoid Areq" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Trapezoid Areq" taskId="24-01E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

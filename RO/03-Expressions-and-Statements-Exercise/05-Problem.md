@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Magazin pentru animale de companie
-[code-task title="Pet Shop" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Pet Shop" taskId="24-01E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

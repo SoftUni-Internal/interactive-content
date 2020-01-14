@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Piața de legume
-[code-task title="Vegetable Market" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Vegetable Market" taskId="24-01E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

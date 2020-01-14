@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Înverzirea curții
-[code-task title="Yard Greening" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Yard Greening" taskId="24-01E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
