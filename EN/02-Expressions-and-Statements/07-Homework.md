@@ -13,7 +13,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Calculate Speed
-[code-task title="Calculate Speed" taskId="p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Calculate Speed" taskId="24-01-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -77,7 +77,7 @@ Write a program to calculate the speed by time and distance:
 [slide]
 
 # Problem: Currency Converter
-[code-task title="Currency Converter" taskId="p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Currency Converter" taskId="24-01-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -141,7 +141,7 @@ Write a program to convert from USD to EUR:
 
 [slide]
 # Problem: Area of Triangle
-[code-task title="Area of Triangle" taskId="p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Area of Triangle" taskId="24-01-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -206,7 +206,7 @@ Write a program to calculate a triangle area:
 
 [slide]
 # Problem: Four Operations
-[code-task title="Four Operations" taskId="p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Four Operations" taskId="24-01-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -284,7 +284,7 @@ Write a program, which:
 
 [slide]
 # Problem: Days to Minutes
-[code-task title="Days to Minutes" taskId="p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Days to Minutes" taskId="24-01-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -347,7 +347,7 @@ Write a program to convert from days to minutes:
 
 [slide]
 # Problem: Person Info
-[code-task title="Person Info" taskId="p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Person Info" taskId="24-01-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -420,7 +420,7 @@ A B from C - D!
 
 [slide]
 # Problem: Town Info
-[code-task title="Town Info" taskId="p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Town Info" taskId="24-01-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -492,4 +492,3 @@ Town A has population of 123456 and area 789 square km.
 [vimeo-video videoId="341528681" startTimeInSeconds="5359" endTimeInSeconds="9641" /]
 
 [/slide]
-
