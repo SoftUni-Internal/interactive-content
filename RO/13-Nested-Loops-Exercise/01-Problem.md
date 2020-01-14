@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Ceas
-[code-task title="Clock" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Clock" taskId="24-06E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

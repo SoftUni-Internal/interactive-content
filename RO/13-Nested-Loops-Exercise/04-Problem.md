@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Războaie de cuvinte
-[code-task title="Word Wars" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Word Wars" taskId="24-06E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
