@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Spital
-[code-task title="Hospital" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Hospital" taskId="24-04E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

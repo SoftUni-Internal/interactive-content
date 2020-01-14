@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Note de plată
-[code-task title="Bills" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Bills" taskId="24-04E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
