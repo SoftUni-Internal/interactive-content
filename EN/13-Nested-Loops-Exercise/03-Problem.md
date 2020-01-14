@@ -1,6 +1,6 @@
 [slide]
 # Problem: Combinations
-[code-task title="Combinations" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Combinations" taskId="24-06E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
