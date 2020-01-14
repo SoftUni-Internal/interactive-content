@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Punct pe marginea dreptunghiului
-[code-task title="Point on Rectangle Border" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Point on Rectangle Border" taskId="24-03E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

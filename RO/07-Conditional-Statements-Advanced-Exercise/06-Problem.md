@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Barcă de pescuit
-[code-task title="Fishing Boat" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Fishing Boat" taskId="24-03E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

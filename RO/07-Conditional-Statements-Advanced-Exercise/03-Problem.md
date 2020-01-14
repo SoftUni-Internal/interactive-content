@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Comisioane comerciale
-[code-task title="Trade Commissions" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Trade Commissions" taskId="24-03E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
