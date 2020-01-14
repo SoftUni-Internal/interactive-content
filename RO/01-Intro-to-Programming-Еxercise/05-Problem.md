@@ -1,6 +1,6 @@
 [slide]
 # Problemă: Triunghi de steluțe
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Triangle of Stars" taskId="24-00E-p-05" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
 # Write your code here
