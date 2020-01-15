@@ -1,8 +1,11 @@
-# Aplicație consola în IntelliJ IDEA
+# Console App in IntelliJ IDEA
 
 [slide]
 # Video
-[vimeo-video videoId="342593690" startTimeInSeconds="4657" endTimeInSeconds="5877" /]
+[vimeo-video startTimeInSeconds="4657" endTimeInSeconds="5877"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
 
 [/slide]
 

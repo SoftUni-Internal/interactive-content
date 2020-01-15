@@ -1,8 +1,11 @@
-# Temă
+# Homework
 
 [slide]
 # Video
-[vimeo-video videoId="342593690" startTimeInSeconds="9002" endTimeInSeconds="9772" /]
+[vimeo-video startTimeInSeconds="9002" endTimeInSeconds="9772"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
 
 [/slide]
 

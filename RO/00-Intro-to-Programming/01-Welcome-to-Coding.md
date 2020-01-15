@@ -1,4 +1,4 @@
-# Ce reprezintă codarea?
+# What is Coding?
 
 [slide]
 # Video

@@ -1,8 +1,11 @@
-# Limbaje de programare
+# Programming Languages
 
 [slide]
 # Video
-[vimeo-video videoId="342593690" startTimeInSeconds="3111" endTimeInSeconds="4030" /]
+[vimeo-video startTimeInSeconds="3111" endTimeInSeconds="4030"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
 
 [/slide]
 

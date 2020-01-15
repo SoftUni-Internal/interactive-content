@@ -1,9 +1,11 @@
-# Medii integrate de dezvoltare (IDE)
+# Integrated Development Environments (IDE)
 
 [slide]
 # Video
-[vimeo-video videoId="342593690" startTimeInSeconds="4035" endTimeInSeconds="4655" /]
-
+[vimeo-video startTimeInSeconds="4035" endTimeInSeconds="4655"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
 [/slide]
 
 [slide]
