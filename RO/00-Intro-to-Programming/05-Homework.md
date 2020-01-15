@@ -21,6 +21,8 @@ We have prepared some simple problems for you to solve. If you struggle you can 
 [code-task title="Print Hello Java" taskId="ITP-p-01" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -51,6 +53,8 @@ Hello Java
 [code-task title="Calculate and Print 5 * 5" taskId="ITP-p-02" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -83,6 +87,8 @@ Write a Java program, which:
 [code-task title="Name and Expression" taskId="ITP-p-03" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -113,6 +119,8 @@ Catlyn
 [code-task title="Calculations" taskId="ITP-p-04" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -147,6 +155,8 @@ Write a program, which calculates and prints the value of the following express
 [code-task title="Square of 7 * 7 Stars" taskId="ITP-p-05" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
       // Write code here
