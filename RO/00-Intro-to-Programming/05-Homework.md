@@ -199,3 +199,10 @@ Prints a square of 7 * 7 stars like this:
 [/tests]
 [/code-task]
 [/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
+
+[/slide]
