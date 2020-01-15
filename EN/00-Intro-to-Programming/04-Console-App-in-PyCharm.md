@@ -1,3 +1,14 @@
+# Console App in PyCharm
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="3984" endTimeInSeconds="4584"]
+[stream language="EN" videoId="342593690" default /]
+[stream language="RO" videoId="384789175"  /]
+[/video-vimeo]
+[/slide]
+
 [slide]
 # Console App in PyCharm
 We already have PyCharm and we can start it. 
@@ -65,11 +76,3 @@ Hello Python
 
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="3984" endTimeInSeconds="4584"]
-[stream language="EN" videoId="342593690" default /]
-[stream language="RO" videoId="384789175"  /]
-[/video-vimeo]
-[/slide]

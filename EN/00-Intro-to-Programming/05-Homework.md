@@ -1,3 +1,15 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="6026" endTimeInSeconds="6731"]
+[stream language="EN" videoId="342593690" default /]
+[stream language="RO" videoId="384789175"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -168,12 +180,3 @@ Prints a square of 7 * 7 stars like this:
 [/code-task]
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="6026" endTimeInSeconds="6731"]
-[stream language="EN" videoId="342593690" default /]
-[stream language="RO" videoId="384789175"  /]
-[/video-vimeo]
-
-[/slide]
