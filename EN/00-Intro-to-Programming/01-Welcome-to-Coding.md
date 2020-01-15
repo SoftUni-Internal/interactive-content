@@ -1,8 +1,12 @@
 # What is Coding?
 
 [slide]
+
 # Video
-[vimeo-video videoId="342593690" startTimeInSeconds="1783" endTimeInSeconds="3110" /]
+[vimeo-video startTimeInSeconds="1783" endTimeInSeconds="3110"]
+[stream language='"EN" videoId="342593690" default /]
+[stream language='"RO" videoId="384789175"  /]
+[/video-vimeo]
 
 [/slide]
 
