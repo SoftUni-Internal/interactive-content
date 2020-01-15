@@ -1,5 +1,17 @@
+# Integrated Development Environments
+
 [slide]
-# Medii integrate de dezvoltare (IDE)
+# Video
+
+[vimeo-video startTimeInSeconds="3260" endTimeInSeconds="3982"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
+# Integrated Development Environments (IDE)
 
 In order to program we need an **Integrated Development Environment** (IDE). 
 
@@ -92,12 +104,3 @@ Alternative IDE (online)
 [image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-replit.png"/]
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="3260" endTimeInSeconds="3982"]
-[stream language="EN" videoId="342593690"  /]
-[stream language="RO" videoId="384789175" default /]
-[/video-vimeo]
-
-[/slide]

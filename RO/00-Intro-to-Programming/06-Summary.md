@@ -1,5 +1,5 @@
 [slide]
-# Rezumat
+# Summary
 
 [vimeo-video startTimeInSeconds="6732" endTimeInSeconds="6778"]
 [stream language="EN" videoId="342593690"  /]

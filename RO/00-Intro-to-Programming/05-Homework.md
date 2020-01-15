@@ -1,5 +1,16 @@
+# Homework
+
 [slide]
-# # Temă
+# Video
+
+[vimeo-video startTimeInSeconds="6026" endTimeInSeconds="6731"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
+[/slide]
+
+[slide]
+# Homework
 Welcome to the homework. 
 
 Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
@@ -168,11 +179,3 @@ Prints a square of 7 * 7 stars like this:
 [/code-task]
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="6026" endTimeInSeconds="6731"]
-[stream language="EN" videoId="342593690"  /]
-[stream language="RO" videoId="384789175" default /]
-[/video-vimeo]
-[/slide]

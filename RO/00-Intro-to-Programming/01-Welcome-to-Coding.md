@@ -1,5 +1,16 @@
+# What is Coding?
+
 [slide]
-# Ce reprezintă codarea?
+# Video
+
+[vimeo-video startTimeInSeconds="1761" endTimeInSeconds="2734"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
+[/slide]
+
+[slide]
+# What is Coding?
 **To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
 
 When the commands are one after another, they are called **a computer program**. 
@@ -71,11 +82,3 @@ print(euro)
 ```
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1761" endTimeInSeconds="2734"]
-[stream language="EN" videoId="342593690"  /]
-[stream language="RO" videoId="384789175" default /]
-[/video-vimeo]
-[/slide]
