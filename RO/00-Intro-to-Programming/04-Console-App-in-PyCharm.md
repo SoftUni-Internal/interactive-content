@@ -69,6 +69,9 @@ Hello Python
 [slide]
 # Video
 
-[vimeo-video videoId="351878876" startTimeInSeconds="3984" endTimeInSeconds="4584" /]
+[vimeo-video startTimeInSeconds="3984" endTimeInSeconds="4584"]
+[stream language="EN" videoId="342593690"  /]
+[stream language="RO" videoId="384789175" default /]
+[/video-vimeo]
 
 [/slide]
