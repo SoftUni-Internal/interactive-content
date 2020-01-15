@@ -28,7 +28,7 @@ print("Welcome to coding")
 Computer programs represent **a sequence of commands** that are written in certain **programming language**, like Python, Java, JavaScript, C#, C++, PHP, C, Ruby, Swift, Go or another.
 
 Example of **computer program** in Python:
-```python
+```python live
 size = 5
 print("Size = ", size)
 print("Area = ", size * size)
