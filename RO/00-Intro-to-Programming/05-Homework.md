@@ -179,3 +179,8 @@ Prints a square of 7 * 7 stars like this:
 [/code-task]
 [/slide]
 
+[slide]
+# Homework Summary
+
+[tasks-results /]
+[/slide]
