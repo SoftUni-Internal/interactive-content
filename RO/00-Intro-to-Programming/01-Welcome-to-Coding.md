@@ -82,7 +82,7 @@ For convenience when creating programs, for writing programming code, for execut
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 
 This is a program of 3 consecutive commands:
-```java
+```java live no-template
 import java.util.Scanner;
 
 public class Program {
