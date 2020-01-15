@@ -74,6 +74,9 @@ And now we can type in commands. The most simple example is calculating some num
 [slide]
 # Video
 
-[vimeo-video videoId="351878876" startTimeInSeconds="2736" endTimeInSeconds="3258" /]
+[vimeo-video startTimeInSeconds="2736" endTimeInSeconds="3258"]
+[stream language="EN" videoId="342593690" default /]
+[stream language="RO" videoId="384789175"  /]
+[/video-vimeo]
 
 [/slide]

@@ -171,6 +171,9 @@ Prints a square of 7 * 7 stars like this:
 [slide]
 # Video
 
-[vimeo-video videoId="342601566" startTimeInSeconds="6026" endTimeInSeconds="6731" /]
+[vimeo-video startTimeInSeconds="6026" endTimeInSeconds="6731"]
+[stream language="EN" videoId="342593690" default /]
+[stream language="RO" videoId="384789175"  /]
+[/video-vimeo]
 
 [/slide]
