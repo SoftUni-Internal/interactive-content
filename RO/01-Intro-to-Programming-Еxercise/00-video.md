@@ -1,6 +1,8 @@
 [slide]
-# Introducere
+# Training Session
 
-[vimeo-video videoId="342593690" /]
+[vimeo-video]
+[stream language="EN" videoId="385258371" default /]
+[/video-vimeo]
 
 [/slide]
