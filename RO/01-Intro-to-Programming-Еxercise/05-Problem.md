@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Triunghi de steluțe
+# Problem: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="ITPE-p-05" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```

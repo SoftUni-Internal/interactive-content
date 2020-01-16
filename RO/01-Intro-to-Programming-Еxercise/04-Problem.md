@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Calculări
+# Problem: Calculations
 [code-task title="Calculations" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```

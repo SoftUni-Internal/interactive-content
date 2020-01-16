@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Numerele 1...10
+# Problem: Nums 1...10
 [code-task title="Name and Expression" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```

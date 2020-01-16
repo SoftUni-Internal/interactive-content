@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Zona dreptunhiului
+# Problem: Rectangle Area
 [code-task title="Rectangle Area" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
