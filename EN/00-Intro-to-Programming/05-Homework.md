@@ -15,7 +15,9 @@ Now, it's your turn to practice what you have learned in the training session.
 
 We have prepared some simple problems for you to solve. If you struggle you can see the solution after each problem. 
 
-[image assetsSrc="homework.png"/]
+[image src="https://github.com/SoftUni-Internal/interactive-content/blob/pb-java-jan-20/assets/homework.png"/]
+
+[image assetsSrc="homework.png" /]
 
 [/slide]
 
