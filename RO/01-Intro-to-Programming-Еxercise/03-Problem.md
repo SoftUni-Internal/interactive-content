@@ -1,6 +1,6 @@
 [slide]
-# Problem: Nums 1...10
-[code-task title="Name and Expression" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Nums from 1 to 10
+[code-task title="Nums from 1 to 10" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
