@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Calculări
+# Problem: Calculations
 [code-task title="Calculations" taskId="24-00E-p-04" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```

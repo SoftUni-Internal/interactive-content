@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Tipăriți"Hello SoftUni"
+# Problem: Print "Hello SoftUni"
 [code-task title="Print Hello SoftUni" taskId="24-00E-p-01" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```

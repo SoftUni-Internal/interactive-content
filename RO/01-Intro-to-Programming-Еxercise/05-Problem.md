@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Triunghi de steluțe
+# Problem: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="24-00E-p-05" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
