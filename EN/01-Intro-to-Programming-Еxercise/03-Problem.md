@@ -1,6 +1,6 @@
 [slide]
 # Problem: Nums 1...10
-[code-task title="Name and Expression" taskId="24-00E-p-03" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Nums from 1 to 10" taskId="24-00E-p-03" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
 # Write your code here
