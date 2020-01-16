@@ -17,8 +17,6 @@ We have prepared some simple problems for you to solve. If you struggle you can 
 
 [image src="https://github.com/SoftUni-Internal/interactive-content/blob/pb-java-jan-20/assets/homework.png"/]
 
-[image assetsSrc="homework.png" /]
-
 [/slide]
 
 [slide]
