@@ -27,7 +27,7 @@ Print the result of each expression on a separate line
 [output]
 11
 24
-8
+8.0
 [/output]
 [/test]
 [/tests]

@@ -9,7 +9,7 @@
 [task-description]
 # Description
 
-Write a program to print numbers from **1** to **10 (inclsuive)**.
+Write a program to print numbers from 1 to 10 (inclsuive).
 
 # Output
 
