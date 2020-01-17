@@ -14,10 +14,8 @@ public class Main {
 # Description
 
 Write a program, which:
-
-* Calculates the **area of the rectangle**
-
-* Sides of the rectangle are **5** and **10**
+* Calculates the area of the rectangle
+* Sides of the rectangle are 5 and 10
 [/task-description]
 [code-io /]
 [tests]
