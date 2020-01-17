@@ -1,9 +1,11 @@
-[slide]
-# Introduction
+# Welcome to SoftUni
 
-[vimeo-video startTimeInSeconds="1680" endTimeInSeconds="1756"]
-[stream language="EN" videoId="351878876"  /]
-[stream language="RO" videoId="384850106" default /]
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="901" endTimeInSeconds="1379"]
+[stream language="EN" videoId="351878876" default /]
+[stream language="RO" videoId="384850106"  /]
 [/video-vimeo]
 
 [/slide]
