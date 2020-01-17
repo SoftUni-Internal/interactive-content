@@ -13,8 +13,7 @@ public class Main {
 [task-description]
 # Description
 
-Write a program, which **calculates** and **prints** the value of the following expressions:
-
+<span>Write a program, which **calculates** and **prints** the value of the following expressions:</span>
 * 5 + 3 \* 2
 * 4 \* 3 \* 2
 * 12 \/ 3 \* 2
