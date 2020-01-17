@@ -8,7 +8,9 @@
 [/code-editor]
 [task-description]
 # Description
-Write a program, which **prints a triangle** of stars as you print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
+Write a program, which prints a triangle of stars. 
+
+You should print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
 
 # Output
 ```
