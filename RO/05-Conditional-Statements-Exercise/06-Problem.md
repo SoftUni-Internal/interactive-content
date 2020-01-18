@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Animale de companie
+# Problem: Pets
 [code-task title="Pets" taskId="24-02E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Fishland
+# Problem: Fishland
 [code-task title="Fishland" taskId="24-01E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

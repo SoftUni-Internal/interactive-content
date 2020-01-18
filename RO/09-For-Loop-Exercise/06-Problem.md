@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Note
+# Problem: Grades
 [code-task title="Grades" taskId="24-04E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

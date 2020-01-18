@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Absolvire
+# Problem: Graduation
 [code-task title="Graduation" taskId="24-05E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

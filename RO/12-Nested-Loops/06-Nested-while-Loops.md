@@ -1,6 +1,5 @@
 [slide]
-# Bucle while imbricate
-
+# Nested while Loops
 ```python
 while condition:
   # Outer Loop 

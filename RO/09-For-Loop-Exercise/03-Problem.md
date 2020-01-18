@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Spital
+# Problem: Hospital
 [code-task title="Hospital" taskId="24-04E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

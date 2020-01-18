@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Mers
+# Problem: Walking
 [code-task title="Walking" taskId="24-05E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
 [code-editor language=python]
 ```

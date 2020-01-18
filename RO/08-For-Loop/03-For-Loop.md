@@ -1,6 +1,5 @@
 [slide]
-# Bucla for
-
+# For Loop
 In programming it is often required to perform a block of commands multiple times. 
 
 In order to do that, the so-called **loops** are used.

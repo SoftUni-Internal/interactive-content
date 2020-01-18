@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Timp + 15 minute
+# Problem: Time + 15 Minutes
 [code-task title="Time + 15 Minutes" taskId="24-02E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

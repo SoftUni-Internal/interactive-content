@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Note de plată
+# Problem: Bills
 [code-task title="Bills" taskId="24-04E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

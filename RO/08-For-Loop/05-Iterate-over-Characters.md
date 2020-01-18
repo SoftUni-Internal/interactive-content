@@ -1,6 +1,5 @@
 [slide]
-# Iterarea peste caractere
-
+# Iterating over Characters
 It is good to know that the **for loops** don't only work with numbers. 
 
 We can also use **for loops** to iterate over **characters**.

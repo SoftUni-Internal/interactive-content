@@ -1,6 +1,5 @@
 [slide]
-# Bucle for imbricate
-
+# Nested for Loops
 ```python
 for i in range(1, 10):
   # Outer Loop 

@@ -1,6 +1,5 @@
 [slide]
-# Variabile
-
+# Variables
 In programming, each **variable** stores a certain value of a particular type. 
 
 For example, data types can be: number, letter, text (string), date, color, image, list and others. Here are some examples of data types:

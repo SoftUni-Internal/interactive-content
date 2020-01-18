@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Înapoi în tercut
+# Problem: Back to the Past
 [code-task title="Back to the Past" taskId="24-04E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

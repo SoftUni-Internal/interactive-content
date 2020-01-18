@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Ceas - Partea 2
+# Problem: Clock - Part 2
 [code-task title="Clock - Part 2" taskId="24-06E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

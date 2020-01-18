@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Magazin pentru animale de companie
+# Problem: Pet Shop
 [code-task title="Pet Shop" taskId="24-01E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

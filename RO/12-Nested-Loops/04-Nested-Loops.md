@@ -1,6 +1,5 @@
 [slide]
-# Bucle imbricate
-
+# Nested Loops
 Statements that consist of several **loops** located **inside each other**
 
 **Nested loops** are used:

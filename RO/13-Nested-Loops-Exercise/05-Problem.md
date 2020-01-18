@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Codare
+# Problem: Coding
 [code-task title="Coding" taskId="24-06E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
 [code-editor language=python]
 ```

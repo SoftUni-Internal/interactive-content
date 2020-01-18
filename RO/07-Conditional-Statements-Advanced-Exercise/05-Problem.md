@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Costum de vară
+# Problem: Summer Outfit
 [code-task title="Summer Outfit" taskId="24-03E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

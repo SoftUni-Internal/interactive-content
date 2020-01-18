@@ -1,5 +1,5 @@
 [slide]
-# Revizuire
+# Revision
 
 # For Loop
 Allows code to be executed **repeatedly**.

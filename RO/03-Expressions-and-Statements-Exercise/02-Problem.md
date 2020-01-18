@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Crearea de proiecte
+# Problem: Projects Creation
 [code-task title="Project Creation" taskId="24-01E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

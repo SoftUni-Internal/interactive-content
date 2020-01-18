@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Comisioane comerciale
+# Problem: Trade Commissions
 [code-task title="Trade Commissions" taskId="24-03E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

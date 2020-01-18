@@ -1,6 +1,5 @@
 [slide]
-# Expresii logice
-
+# Comparison Operators
 In programming, we can compare values using the following operators:
 
 |Operators|Designation|

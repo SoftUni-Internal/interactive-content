@@ -1,5 +1,5 @@
 [slide]
-# Problemă:Pregătire pentru examen
+# Problem: Exam Preparation
 [code-task title="Exam Preparation" taskId="24-05E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

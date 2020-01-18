@@ -1,6 +1,5 @@
 [slide]
-# Bucla While
-
+# While Loop
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
 By **"condition"**, we understand every **expression** that returns `True` or `False`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 

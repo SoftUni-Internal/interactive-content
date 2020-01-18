@@ -1,6 +1,5 @@
 [slide]
-# Bucle infinite
-
+# Infinite While Loop
 We call an infinite loop one that repeats infinitely the performance of its body. 
 
 In `while` loops the end check is a conditional expression that always returns `True`. 

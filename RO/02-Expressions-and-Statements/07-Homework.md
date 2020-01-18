@@ -1,5 +1,5 @@
 [slide]
-# Temă
+# Homework
 Welcome to the homework. 
 
 Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 

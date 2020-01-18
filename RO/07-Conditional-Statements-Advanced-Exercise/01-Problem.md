@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Titluri personale
+# Problem: Personal Titles
 [code-task title="Personal Titles" taskId="24-03E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

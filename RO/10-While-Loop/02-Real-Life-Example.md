@@ -1,5 +1,3 @@
-# Exemple din viața reală
-
 [slide]
 # Real-Life Example: Fill a Bucket
 The next type of loops that we will get familiar with are called `while` loops. 

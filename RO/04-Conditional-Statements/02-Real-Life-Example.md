@@ -1,5 +1,3 @@
-# Exemple din viața reală
-
 [slide]
 # Real Life Example: Watering Plants
 [image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/02-coditional-statements-1.png"/]

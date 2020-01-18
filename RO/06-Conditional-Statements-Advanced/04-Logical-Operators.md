@@ -1,5 +1,5 @@
 [slide]
-# Operatori logici
+# More Complex Conditions
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:

@@ -1,6 +1,5 @@
 [slide]
-# Condiții simple If-Else
-
+# If-Else Conditions
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
