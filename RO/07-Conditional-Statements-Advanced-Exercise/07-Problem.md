@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Flori
+# Problem: Flowers
 [code-task title="Flowers" taskId="CAE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

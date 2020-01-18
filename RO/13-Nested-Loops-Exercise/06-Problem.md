@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Antrenați trainerii
+# Problem: Train the Trainers
 [code-task title="Train the Trainers" taskId="NLE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

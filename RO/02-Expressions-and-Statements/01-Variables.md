@@ -1,4 +1,4 @@
-# Variabile
+# Variables
 
 [slide]
 # Video

@@ -1,4 +1,4 @@
-# Temă
+# Homework
 
 [slide]
 # Video

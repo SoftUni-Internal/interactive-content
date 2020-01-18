@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Fishland
+# Problem: Fishland
 [code-task title="Fishland" taskId="ESE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

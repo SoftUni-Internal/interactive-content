@@ -1,4 +1,4 @@
-# Bucla For cu Pas
+# For Loop with Step
 
 [slide]
 # Video

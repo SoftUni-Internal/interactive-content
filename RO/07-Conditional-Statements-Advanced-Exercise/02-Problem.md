@@ -1,5 +1,5 @@
 [slide]
-# Problem: Rezervor de combustibil
+# Problem: Fuel Tank
 [code-task title="Fuel Tank" taskId="CAE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

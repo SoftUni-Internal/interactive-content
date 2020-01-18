@@ -1,4 +1,4 @@
-# Condiții simple If-Else
+# If-Else Conditions
 
 [slide]
 # Video

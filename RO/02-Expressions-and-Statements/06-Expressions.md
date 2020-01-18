@@ -1,4 +1,4 @@
-# Expresii
+# Expressions
 
 [slide]
 # Video

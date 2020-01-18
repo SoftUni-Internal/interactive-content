@@ -1,5 +1,5 @@
 [slide]
-# Problemă:Pregătire pentru examen
+# Problem: Exam Preparation
 [code-task title="Exam Preparation" taskId="WLE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

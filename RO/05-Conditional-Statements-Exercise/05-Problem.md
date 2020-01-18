@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Tip de animal
+# Problem: Animal Type
 [code-task title="Animal Type" taskId="CE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -1,4 +1,4 @@
-# Tipuri de date
+# Data Types
 
 [slide]
 # Video

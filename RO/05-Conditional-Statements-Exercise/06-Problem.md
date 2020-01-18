@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Animale de companie
+# Problem: Pets
 [code-task title="Pets" taskId="CE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

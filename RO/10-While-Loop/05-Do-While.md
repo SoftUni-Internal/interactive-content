@@ -1,6 +1,5 @@
 [slide]
-# Bucla Do-While
-
+# Do-While Loop
 The next type of loops we will get familiar with are the `do-while` loops. 
 
 By structure, this type of loop resembles the while loop, but there is a significant difference between them.

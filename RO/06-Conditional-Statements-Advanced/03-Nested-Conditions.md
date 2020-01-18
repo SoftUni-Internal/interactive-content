@@ -1,4 +1,4 @@
-# Condiții Imbricate
+# Nested Conditions
 
 [slide]
 # Video

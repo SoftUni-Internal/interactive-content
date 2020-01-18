@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Flux de litere
+# Problem: Stream Of Letters
 [code-task title="Stream Of Letters" taskId="WLE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

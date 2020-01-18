@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Crearea de proiecte
+# Problem: Projects Creation
 [code-task title="Project Creation" taskId="ESE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

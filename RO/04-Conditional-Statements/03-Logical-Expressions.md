@@ -1,4 +1,4 @@
-# Expresii logice
+# Logical Expressions
 
 [slide]
 # Video

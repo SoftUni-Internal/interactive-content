@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Note de plată
+# Problem: Bills
 [code-task title="Bills" taskId="FLE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

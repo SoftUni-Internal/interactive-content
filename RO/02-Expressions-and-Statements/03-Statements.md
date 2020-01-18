@@ -1,4 +1,4 @@
-# Declarații
+# Statements
 
 [slide]
 # Video

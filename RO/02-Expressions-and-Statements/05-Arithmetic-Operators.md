@@ -1,4 +1,4 @@
-# Operații aritmetice
+# Arithmetic Operations
 
 [slide]
 # Video

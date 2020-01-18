@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Zona trapezilor
+# Problem: Trapezoid Area
 [code-task title="Trapezoid Areq" taskId="ESE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

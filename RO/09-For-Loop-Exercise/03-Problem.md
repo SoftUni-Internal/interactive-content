@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Spital
+# Problem: Hospital
 [code-task title="Hospital" taskId="FLE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

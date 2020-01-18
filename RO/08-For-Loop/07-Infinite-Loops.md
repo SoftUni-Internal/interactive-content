@@ -1,4 +1,4 @@
-# Bucle infinite
+# Infinite Loops
 
 [slide]
 # Video

@@ -1,4 +1,4 @@
-# Instrucţiunea switch
+# The Switch-Case Statement
 
 [slide]
 # Video

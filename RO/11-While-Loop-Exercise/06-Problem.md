@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Mers
+# Problem: Walking
 [code-task title="Walking" taskId="WLE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```

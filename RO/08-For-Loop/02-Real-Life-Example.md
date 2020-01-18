@@ -1,4 +1,4 @@
-# Exemple din viața reală
+# Real-Life Example
 
 [slide]
 # Real-Life Example: Moving Dishes

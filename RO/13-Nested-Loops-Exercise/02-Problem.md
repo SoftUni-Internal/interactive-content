@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Ceas - Partea 2
+# Problem: Clock - Part 2
 [code-task title="Clock - Part 2" taskId="NLE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

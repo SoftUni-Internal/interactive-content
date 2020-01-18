@@ -1,5 +1,5 @@
 [slide]
-# Problemă:Războaie de cuvinte
+# Problem: Word Wars
 [code-task title="Word Wars" taskId="NLE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
