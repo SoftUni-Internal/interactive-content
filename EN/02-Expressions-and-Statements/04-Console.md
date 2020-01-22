@@ -1,3 +1,12 @@
+# Console (Terminal)
+
+[slide]
+# Video
+
+[vimeo-video videoId="341528681" startTimeInSeconds="3268" endTimeInSeconds="4092" /]
+
+[/slide]
+
 [slide]
 # Console (Terminal)
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus,etc. 
@@ -325,9 +334,3 @@ print(sum);  # The sum is: 4.0
 ```
 [/slide]
 
-[slide]
-# Video
-
-[vimeo-video videoId="341528681" startTimeInSeconds="3268" endTimeInSeconds="4092" /]
-
-[/slide]

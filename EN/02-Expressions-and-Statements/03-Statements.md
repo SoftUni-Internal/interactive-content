@@ -29,9 +29,3 @@ Common actions include:
   sum = a + b
   ```
 [/slide]
-
-[slide]
-# Video - no
-
-
-[/slide]

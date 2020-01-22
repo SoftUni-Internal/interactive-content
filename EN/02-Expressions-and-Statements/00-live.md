@@ -1,7 +1,12 @@
 [slide]
 # Live Session
 
-[live-stream videoId="341528681" playerType="vimeo" /]
+[live-stream videoId="" playerType="vimeo" /]
+
+[live-stream]
+[stream language="EN" videoId="341528681" default /]
+[stream language="RO" videoId="386192895"  /]
+[/live-stream]
 
 [slido id="5faavvrx" /]
 
