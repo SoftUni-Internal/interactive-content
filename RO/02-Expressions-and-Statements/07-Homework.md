@@ -251,7 +251,7 @@ public class Program {
 [task-description]
 # Description
 Write a program, which:
-  * **Reads** 2 real numbers from the console
+  * Reads 2 real numbers from the console
   * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
   * Formats and prints the results like this example:
 # Example
@@ -475,7 +475,7 @@ public class Program {
 [task-description]
 # Description
 Write a program, which:
-  * Reads 4 lines of **strings**: **first name**, **last name**, **country** and **town** 
+  * Reads 4 lines of strings: first name, last name, country and town 
   * Prints information about a person in the following format: `"{firstName} {lastName} from {country} - {town}!"`
 # Example
 ## Input
@@ -554,7 +554,7 @@ public class Program {
 [task-description]
 # Description
 Write a program, which:
-  * Reads **3 lines** of input: name (string), population and area (integers)
+  * Reads 3 lines of input: name (string), population and area (integers)
   * Prints information about a town in the following format: `"Town {name} has population of {population} and area {area} square km."`
 # Example
 ## Input
