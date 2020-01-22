@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="9284" endTimeInSeconds="11400 "]
-[stream language="EN" videoId="341522009"  /]
-[stream language="RO" videoId="386049133" default /]
+[stream language="EN" videoId="341522009" default /]
+[stream language="RO" videoId="386049133"  /]
 [/video-vimeo]
 
 [/slide]
@@ -252,7 +252,7 @@ public class Program {
 # Description
 Write a program, which:
   * Reads 2 real numbers from the console
-  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
+  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: +, -, *, /
   * Formats and prints the results like this example:
 # Example
 ## Input
