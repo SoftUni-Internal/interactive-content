@@ -1,3 +1,14 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="8424" endTimeInSeconds="9641"]
+[stream language="EN" videoId="341528681" default /]
+[stream language="RO" videoId="386192895"  /]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -483,12 +494,10 @@ Town A has population of 123456 and area 789 square km.
 [/tests]
 [code-io/]
 [/code-task]
-
 [/slide]
 
 [slide]
-# Video
+# Homework Results
 
-[vimeo-video videoId="341528681" startTimeInSeconds="5359" endTimeInSeconds="9641" /]
-
+[tasks-results /]
 [/slide]

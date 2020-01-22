@@ -1,3 +1,15 @@
+# Arithmetic Operations
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="4533" endTimeInSeconds="4916"]
+[stream language="EN" videoId="341528681" default /]
+[stream language="RO" videoId="386192895"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Arithmetic Operations
 Let's examine the basic **arithmetic operations** in programming. 
@@ -82,11 +94,4 @@ See the following example:
 print(3 % 2);
 print(4 % 2);
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341528681" startTimeInSeconds="4533" endTimeInSeconds="4916" /]
-
 [/slide]
