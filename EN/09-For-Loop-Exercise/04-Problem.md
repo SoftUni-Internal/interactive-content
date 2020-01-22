@@ -13,13 +13,13 @@ public class Main {
 [task-description]
 # Description
 
-Write a program that **prints the numbers in the range** \[1...1000\], which **end in 7**. 
+Write a program that prints the numbers in the range \[1...1000\], which end in 7. 
 
-Print the numbers on a **single** line, separated by a **single space**.
+Print the numbers on a single line, separated by a single space.
 
 # Example
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | (no input) | | 7 17 27 ... 997 |
 [/task-description]

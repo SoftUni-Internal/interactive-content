@@ -14,15 +14,15 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-**For a period of time, patients are arriving every day** in the hospital for examination. 
+For a period of time, patients are arriving every day in the hospital for examination. 
 
-It has initially **7** doctors. 
+It has initially 7 doctors. 
 
-Each doctor can only review **one patient per day**, but sometimes there is a shortage of doctors, so other patients are sent to other hospitals. 
+Each doctor can only review one patient per day, but sometimes there is a shortage of doctors, so other patients are sent to other hospitals. 
 
-**Every third day** the hospital makes calculations and **if the number of unreviewed patients is greater than the number of reviewed, one more doctor is appointed**. 
+Every third day the hospital makes calculations and if the number of unreviewed patients is greater than the number of reviewed, one more doctor is appointed. 
 
-As the **appointment of the doctor occurs before the intake of patients for the day**. 
+As the appointment of the doctor occurs before the intake of patients for the day. 
 
 Write a program that calculates the number of reviewed and unreviewed patients for the given period.
 
@@ -30,8 +30,8 @@ Write a program that calculates the number of reviewed and unreviewed patients f
 
 The input is read from the console and contains: 
 
-- **The period** for which you need to perform calculations - integer in range \[1... 1000\] 
-- On the **following lines (equal to the number of days)** – the number of patients arriving for review for the current day - integer in range \[0... 10 000\]
+- The period for which you need to perform calculations - integer in range \[1... 1000\] 
+- On the following lines (equal to the number of days) – the number of patients arriving for review for the current day - integer in range \[0... 10 000\]
 
 # Output
 Print on the console 2 lines:
@@ -40,7 +40,7 @@ Print on the console 2 lines:
 
 # Example
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 4 | | Treated patients: 23. |
 | 7 | | Untreated patients: 21. |
