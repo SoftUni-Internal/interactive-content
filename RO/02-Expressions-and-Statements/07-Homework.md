@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="8424" endTimeInSeconds="9641"]
-[stream language="EN" videoId="341528681"  /]
-[stream language="RO" videoId="386192895" default /]
+[stream language="EN" videoId="341528681" default /]
+[stream language="RO" videoId="386192895"  /]
 [/video-vimeo]
 
 [/slide]
@@ -228,7 +228,7 @@ Write a program to calculate a triangle area:
 # Description
 Write a program, which:
   * Reads 2 real numbers from the console
-  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
+  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: +, -, *, /
   * Formats and prints the results like this example:
 # Example
 ## Input
