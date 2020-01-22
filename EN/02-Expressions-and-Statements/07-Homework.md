@@ -6,6 +6,7 @@
 [vimeo-video startTimeInSeconds="8424" endTimeInSeconds="9641"]
 [stream language="EN" videoId="341528681" default /]
 [stream language="RO" videoId="386192895"  /]
+[/video-vimeo]
 
 [/slide]
 
