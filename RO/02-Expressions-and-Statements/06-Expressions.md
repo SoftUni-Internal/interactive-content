@@ -1,3 +1,15 @@
+# Expressions
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="4923" endTimeInSeconds="5034"]
+[stream language="EN" videoId="341528681"  /]
+[stream language="RO" videoId="386192895" default /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Expressions
 **Expressions** are sequences of operators, literals and variables which are evaluated to a value.
@@ -24,11 +36,4 @@ r = (150-20) / 2 + 5;
 The standard rule for **priorities** of arithmetic operations is applied: multiplying and dividing are always done before adding and subtracting. 
 
 In case of an expression in **brackets**, it is calculated **first**, just like in math.
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341528681" startTimeInSeconds="4923" endTimeInSeconds="5034" /]
-
 [/slide]

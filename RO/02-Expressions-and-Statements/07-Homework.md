@@ -1,3 +1,14 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="8424" endTimeInSeconds="9641"]
+[stream language="EN" videoId="341528681"  /]
+[stream language="RO" videoId="386192895" default /]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -22,8 +33,8 @@ Let's solve a few problems to confirm what we have learned.
 [task-description]
 # Description
 Write a program to calculate the speed by time and distance:
-  * Read 2 floating-point numbers: **distance** and **time**
-  * Calculate the **speed** needed to travel a given distance for given time
+  * Read 2 floating-point numbers: distance and time
+  * Calculate the speed needed to travel a given distance for given time
   * Print the calculated result
 # Example
 ## Input
@@ -86,9 +97,9 @@ Write a program to calculate the speed by time and distance:
 [task-description]
 # Description
 Write a program to convert from USD to EUR:
-  * Read a **floating-point number**: the **dollars** to be converted 
-  * Convert dollars to euro (use fixed rate of dollars to euro: **0.88**)
-  * Print the converted value in **euro**
+  * Read a floating-point number: the dollars to be converted 
+  * Convert dollars to euro (use fixed rate of dollars to euro: 0.88)
+  * Print the converted value in euro
 
 # Example
 ## Input
@@ -151,9 +162,9 @@ Write a program to convert from USD to EUR:
 # Description
 Write a program to calculate a triangle area:
 
-  * Read from input a side **a** and height for that side **ha**
+  * Read from input a side a and height for that side ha
   * Calculate the area of a triangle by the side and height
-  * Print the **area**, formatted to the **2nd digit** after decimal point
+  * Print the area, formatted to the 2nd digit after decimal point
 # Example
 ## Input
 - 5
@@ -215,9 +226,9 @@ Write a program to calculate a triangle area:
 [task-description]
 # Description
 Write a program, which:
-  * **Reads** 2 real numbers from the **console**
-  * Performs **4 arithmetic operations** on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
-  * **Formats** and **prints** the results like this example:
+  * Reads 2 real numbers from the console
+  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: `+`, `-`, `*`, `/`
+  * Formats and prints the results like this example:
 # Example
 ## Input
 - 5.00
@@ -293,9 +304,9 @@ Write a program, which:
 [task-description]
 # Description
 Write a program to convert from days to minutes:
-  * Read a single **integer** (the **days** to be converted)
+  * Read a single integer (the days to be converted)
   * Convert the days to minutes (use calculations)
-  * Print the **minutes**
+  * Print the minutes
 # Example
 ## Input
 - 2
@@ -356,7 +367,7 @@ Write a program to convert from days to minutes:
 [task-description]
 # Description
 Write a program, which:
-  * Reads 4 lines of **strings**: **first name**, **last name**, **country** and **town** 
+  * Reads 4 lines of strings: first name, last name, country and town 
   * Prints information about a person in the following format: `"{firstName} {lastName} from {country} - {town}!"`
 # Example
 ## Input
@@ -429,7 +440,7 @@ A B from C - D!
 [task-description]
 # Description
 Write a program, which:
-  * Reads **3 lines** of input: **name** (string), **population** and **area** (integers)
+  * Reads 3 lines of input: name (string), population and area (integers)
   * Prints information about a town in the following format: `"Town {name} has population of {population} and area {area} square km."`
 # Example
 ## Input
@@ -483,12 +494,10 @@ Town A has population of 123456 and area 789 square km.
 [/tests]
 [code-io/]
 [/code-task]
-
 [/slide]
 
 [slide]
-# Video
+# Homework Results
 
-[vimeo-video videoId="341528681" startTimeInSeconds="5359" endTimeInSeconds="9641" /]
-
+[tasks-results /]
 [/slide]

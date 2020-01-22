@@ -1,3 +1,15 @@
+# Data Types
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1873" endTimeInSeconds="2655"]
+[stream language="EN" videoId="341528681"  /]
+[stream language="RO" videoId="386192895" default /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Data Types
 In Python we can use data types to define variables as follows:
@@ -78,11 +90,4 @@ userLoginCount
 ```python
 UserLoginCount
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341528681" startTimeInSeconds="1873" endTimeInSeconds="2655" /]
-
 [/slide]
