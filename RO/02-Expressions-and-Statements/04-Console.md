@@ -191,10 +191,9 @@ import math, sys # import both math and sys libraries
 [/code-editor]
 [task-description]
 # Description
-Write a **program**, which:
-
-  * Reads a user input: **name**, from the console
-  * Prints "Hello, \{name\}", where {**name**} is the **user input**
+Write a program, which:
+  * Reads a user input: name, from the console
+  * Prints "Hello, \{name\}", where \{name\} is the user input
 # Example
 ## Input
 - Peter
@@ -251,10 +250,9 @@ print(name)
 [/code-editor]
 [task-description]
 # Description
-Write a **program**, which:
-
-  * Reads a user input: **name**, from the console
-  * Prints "Hello, \{name\}", where {**name**} is the **user input**
+Write a program, which:
+  * Reads a user input: name, from the console
+  * Prints "Hello, \{name\}", where \{name\} is the user input
 # Example
 ## Input
 - Peter
