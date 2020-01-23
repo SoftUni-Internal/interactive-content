@@ -549,9 +549,9 @@ Area = 95.03
 Perimeter = 34.56
 [/output]
 [/test]
+[/tests]
 [code-io/]
 [/code-task]
-
 [/slide]
 
 [slide]
