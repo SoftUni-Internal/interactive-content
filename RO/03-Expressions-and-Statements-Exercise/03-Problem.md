@@ -14,7 +14,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that calculates the area of trapezoid with bases `b1` and `b2` and height `h`. 
+Write a program that calculates the area of trapezoid with bases b1 and b2 and height h. 
 
 The formula for calculating area of a trapezoid is ((b1 + b2) / 2) * h.
 
