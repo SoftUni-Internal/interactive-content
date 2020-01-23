@@ -502,6 +502,8 @@ Town A has population of 123456 and area 789 square km.
 [code-task title="Circle Area and Perimeter" taskId="24-01-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```python
+import math
+
 # Write code here
 ```
 [/code-editor]
@@ -516,8 +518,8 @@ Write a program to calculate a circle area and perimeter:
 ## Input
 - 7
 ## Output
-- Area = 153.938040
-- Perimeter = 43.982297
+- Area = 153.94
+- Perimeter = 43.98
 [/task-description]
 [tests]
 [test]
@@ -525,8 +527,8 @@ Write a program to calculate a circle area and perimeter:
 12.0
 [/input]
 [output]
-Area = 452.389342
-Perimeter = 75.398224
+Area = 452.39
+Perimeter = 75.40
 [/output]
 [/test]
 [test]
@@ -534,8 +536,8 @@ Perimeter = 75.398224
 10.0
 [/input]
 [output]
-Area = 314.159265
-Perimeter = 62.831853
+Area = 314.16
+Perimeter = 62.83
 [/output]
 [/test]
 [test]
@@ -543,20 +545,10 @@ Perimeter = 62.831853
 5.5
 [/input]
 [output]
-Area = 95.033178
-Perimeter = 34.557519
+Area = 95.03
+Perimeter = 34.56
 [/output]
 [/test]
-[test]
-[input]
-9.4
-[/input]
-[output]
-Area = 277.591127
-Perimeter = 59.061942
-[/output]
-[/test]
-[/tests]
 [code-io/]
 [/code-task]
 
