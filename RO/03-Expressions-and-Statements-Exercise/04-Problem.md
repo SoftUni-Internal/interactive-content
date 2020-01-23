@@ -16,32 +16,32 @@ public class Main {
 # Description
 Gardener is selling his harvest at the vegetable market. 
 
-He sells **vegetables for N dollars per kilogram** and **fruits for M dollars per kilogram**. 
+He sells vegetables for N dollars per kilogram and fruits for M dollars per kilogram. 
 
-Write a program that **calculates the income** from the harvest in **euros** (**1 USD = 0.89 EUR**).
+Write a program that calculates the income from the harvest in euros (1 USD = 0.89 EUR).
 
 # Input
-The input will be **4 numbers**, each on a single line:
-- **The price of kilogram vegetables** - floating-point number [0.00… 1000.00]
-- **The price of kilogram fruits** - floating-point number [0.00… 1000.00]
-- **The total kilograms of vegetables** - integer [0… 1000]
-- **The total kilograms of fruits** - integer [0… 1000]
+The input will be 4 numbers, each on a single line:
+- The price of kilogram vegetables - floating-point number [0.00… 1000.00]
+- The price of kilogram fruits - floating-point number [0.00… 1000.00]
+- The total kilograms of vegetables - integer [0… 1000]
+- The total kilograms of fruits - integer [0… 1000]
 
 # Output
-Print on the console **a single number**: the income from **all** of the fruits and vegetables in **euro**.
+Print on the console a single number: the income from all of the fruits and vegetables in euro.
 
-**The result should be formatted to the second decimal point.**
+The result should be formatted to the second decimal point.
 
 # Example
 
-| **Input** | | **Output** | | **Comments** |
+| Input | | Output | | Comments |
 | --- | --- | --- | --- | --- |
 | 0.194 | | 174.39 | | The vegetables cost - 0.194$ \* 10kg = 1.94$ |
 | 19.4 | | | | The fruits cost - 19.4$ \* 10kg  = 194$ |
 | 10 | | | | Total - 195.94$ = 174.39€ |
 | 10 | | | | |
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 1.5 | | 35.60 |
 | 2.5 | | |

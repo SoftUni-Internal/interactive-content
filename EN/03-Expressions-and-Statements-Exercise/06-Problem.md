@@ -14,28 +14,28 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-George decides to buy **tuna, scads** and **mussels**. 
+George decides to buy tuna, scads and mussels. 
 
-Read from the console prices **of mackerel and sprats**, the **quantity of tuna**, **scads and mussels** in **kilograms**. 
+Read from the console prices of mackerel and sprats, the quantity of tuna, scads and mussels in kilograms. 
 
-**Calculate how much money** will he need to pay his bill, if the **prices** at the Fishland are:
-- Tuna - **60% more expensive than the mackerel**
-- Scads - **80% more expensive than the sprats**
-- Mussels - **7.50 dollars per kilogram**
+Calculate how much money will he need to pay his bill, if the prices at the Fishland are:
+- Tuna - 60% more expensive than the mackerel
+- Scads - 80% more expensive than the sprats
+- Mussels - 7.50 dollars per kilogram
 
 # Input
-You have to read **5** numbers from the console:
-- **the price of the mackerel per kilogram** - floating-point number in range [0.00…40.00]
-- **the price of the sprats per kilogram** - floating-point number in range [0.00…30.00]
-- **kilograms of tuna** - floating-point number in range [0.00…50.00]
-- **kilograms of scads** - floating-point number in range [0.00…70.00]
-- **kilograms of mussels** - integer number in range [0...100]
+You have to read 5 numbers from the console:
+- the price of the mackerel per kilogram - floating-point number in range [0.00…40.00]
+- the price of the sprats per kilogram - floating-point number in range [0.00…30.00]
+- kilograms of tuna - floating-point number in range [0.00…50.00]
+- kilograms of scads - floating-point number in range [0.00…70.00]
+- kilograms of mussels - integer number in range [0...100]
 
 # Output
-Print on the console a **single** number with floating point: **the money** George will need to pay the bill, **formatted to the second decimal point**.
+Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the second decimal point.
 
 # Example
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 6.90 | | 42.96 |
 | 4.20 | | |
