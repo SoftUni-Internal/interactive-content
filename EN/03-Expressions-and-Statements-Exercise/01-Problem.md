@@ -9,7 +9,7 @@
 [task-description]
 # Description
 
-Write a console program that reads an **integer** \'a\' and calculates the **area** of a square with size \'a\'.
+Write a console program that reads an integer \'a\' and calculates the area of a square with size \'a\'.
 
 # Input
 
@@ -22,7 +22,7 @@ Print on the console the calculated area
 
 # Example
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 5 | | 25 |
 [/task-description]
