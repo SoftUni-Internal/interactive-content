@@ -28,7 +28,7 @@ Read three numbers from the console:
 Print on the console a single number - the area of the trapezoid, formatted to the second decimal point.
 
 # Example
-| Input | | Output |
+| Input | Output |
 | --- | --- | --- |
 | 8 | | 73.50 |
 | 13 | | |
