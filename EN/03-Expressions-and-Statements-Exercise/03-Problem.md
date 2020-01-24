@@ -29,10 +29,10 @@ Print on the console a single number - the area of the trapezoid, formatted to t
 
 # Example
 | Input | Output |
-| --- | --- | --- |
-| 8 | | 73.50 |
-| 13 | | |
-| 7 | | |
+| --- | --- |
+| 8 | 73.50 |
+| 13 | |
+| 7 | |
 [/task-description]
 [tests]
 [test]
