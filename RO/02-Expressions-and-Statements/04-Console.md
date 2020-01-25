@@ -5,7 +5,7 @@
 
 [vimeo-video startTimeInSeconds="3268" endTimeInSeconds="4092"]
 [stream language="EN" videoId="341528681"  /]
-[stream language="RO" videoId="386192895" default /]
+[stream language="RO" videoId="387031676" default /]
 [/vimeo-video]
 
 [/slide]

@@ -3,7 +3,7 @@
 
 [live-stream]
 [stream language="EN" videoId="341528681"  /]
-[stream language="RO" videoId="386192895" default /]
+[stream language="RO" videoId="387031676" default /]
 [/live-stream]
 
 [slido id="5faavvrx" /]
