@@ -35,7 +35,7 @@ Print the digits in the range of 1 to 9 (digits are read from the console) in En
 We can read the digit and then, through a **sequence of conditions** we print the relevant English word:
 ```java live
 Scanner scanner = new Scanner(System.in);
-int num = Integer.ParseInt(scanner.nextLine());
+int num = Integer.parseInt(scanner.nextLine());
 
 if (num == 1) {
     System.out.println("one");
