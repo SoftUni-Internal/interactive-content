@@ -1,3 +1,15 @@
+# If-Else Conditions
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="2429" endTimeInSeconds="2553"]
+[stream language="EN" videoId="341553633" default /]
+[stream language="RO" videoId="387288483"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # If-Else Conditions
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
@@ -195,17 +207,17 @@ even
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
-# Example
-## Input
+## Example
+### Input
 - 4
 - 8
-## Output
+### Output
 - Greater number: 8
 
 [/task-description]
@@ -259,17 +271,17 @@ elif number2 > number1:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
-# Example
-## Input
+## Example
+### Input
 - 4
 - 8
-## Output
+### Output
 - Greater number: 8
 [/task-description]
 [tests]
@@ -303,12 +315,5 @@ Greater number: 2
 [/tests]
 [code-io/]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341553633" startTimeInSeconds="2429" endTimeInSeconds="2553" /]
 
 [/slide]

@@ -1,3 +1,15 @@
+# Comparison Operators
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1448" endTimeInSeconds="2019"]
+[stream language="EN" videoId="341553633"  /]
+[stream language="RO" videoId="387288483" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Comparison Operators
 In programming, we can compare values using the following operators:
@@ -60,11 +72,4 @@ print(a == b); # True
 print(a < b); # error
 ```
 A string is an object and every object has an instance, but this is a knowledge we will acquire later on throughout the course.
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341553633" startTimeInSeconds="1448" endTimeInSeconds="2019" /]
-
 [/slide]

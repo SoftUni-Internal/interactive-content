@@ -1,3 +1,15 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="7335" endTimeInSeconds="9327"]
+[stream language="EN" videoId="341553633" default /]
+[stream language="RO" videoId="387288483"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -450,12 +462,5 @@ True
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341553633" startTimeInSeconds="7335" endTimeInSeconds="9327" /]
 
 [/slide]

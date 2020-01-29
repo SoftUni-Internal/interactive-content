@@ -1,3 +1,15 @@
+# Variable Lifetime
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="3905" endTimeInSeconds="4025"]
+[stream language="EN" videoId="341553633"  /]
+[stream language="RO" videoId="387288483" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Variable Lifetime
 Each variable has a range in which it exists, called **variable scope**. 
@@ -22,11 +34,4 @@ print(salary) # Error
 ```
 
 The above code **will not work**, because we are trying to access a variable **out of its scope**.
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341553633" startTimeInSeconds="3905" endTimeInSeconds="4025" /]
-
 [/slide]
