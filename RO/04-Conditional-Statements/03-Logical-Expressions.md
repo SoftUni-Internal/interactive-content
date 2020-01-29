@@ -65,14 +65,13 @@ String b = a;
 System.out.println(a.equals(b)); // true
 ```
 
-```
-java live
+```java live
 String a = "Examplе";
 String b = "Examplе";
 System.out.println(a == b);
 ```
 
-```java
+```java live
 String a = "hello";
 String b = "hello";
 System.out.println(a.equals(b)); // true
