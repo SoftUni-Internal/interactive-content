@@ -178,11 +178,11 @@ import math
 [task-description]
 # Description
 Write a program to calculate the area of different figures:
-  * Read a string: the figure **type**
-  * Read number (the **size**) or two numbers for rectangle (sizes)
-    * Numbers will be floating-point
+  * Reads a string: the figure **type**
   * Checks if the entered figure is **square**, **rectangle** or **circle**
-  * Print the calculated area **formatted** to the second digit after the decimal point
+  * Reads a number for square and circle or two numbers for rectangle
+    * Numbers will be floating-point
+  * Prints the calculated area **formatted** to the second digit after the decimal point
   * For unknown figure print **"Unknown figure"**
 # Example
 ## Input
