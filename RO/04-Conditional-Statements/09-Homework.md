@@ -3,7 +3,7 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="4583" endTimeInSeconds="9990"]
+[vimeo-video startTimeInSeconds="7708" endTimeInSeconds="9990"]
 [stream language="EN" videoId="341539841"  /]
 [stream language="RO" videoId="387657941" default /]
 [/vimeo-video]
@@ -465,7 +465,7 @@ Invalid Triangle
 [/slide]
 
 [slide]
-# Home Results
+# Homework Results
 
 [tasks-results /]
 
