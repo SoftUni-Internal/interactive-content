@@ -13,8 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-
+## Description
 Write a program where user enters type and dimensions of a geometric figure and calculates its area. 
 
 Figures are four types: **square, rectangle, circle and triangle**. 
@@ -27,30 +26,30 @@ On the first line of the input you will receive the type of the figure.
 
 The result should be **formatted to the third decimal point**.
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- | 
-| square | | 25.000 | 
-| 5 | | |
-| | | |
+| **Input** | **Output** |
+| --- | --- | 
+| square | 25.000 | 
+| 5 | |
+| | |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| rectangle | | 17.500|
-| 7| | |
-| 2.5| | |
+| **Input** | **Output** |
+| --- | --- |
+| rectangle | 17.500|
+| 7| |
+| 2.5| |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| circle| | 113.097|
-| 6| | |
+| **Input** | **Output** |
+| --- | --- |
+| circle| 113.097|
+| 6| |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| triangle| | 45.000|
-| 4.5| | |
-| 20| | |
+| **Input** | **Output** |
+| --- | --- |
+| triangle | 45.000|
+| 4.5| |
+| 20| |
 [/task-description]
 [tests]
 [test]

@@ -13,13 +13,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-
+## Description
 Write a **program** calculating the **amount of kilograms** food Martina\'s pets will eat for the time she is **on adventure** and **checks if the food is enough**. 
 
 Each animal eats certain amount food per day.
 
-# Input
+## Input
 Read **five** lines from the console:
 - **number of days** - an integer in range \[1…5000\]
 - **left food in kilograms** - an integer in range \[0…100000\]
@@ -27,23 +26,23 @@ Read **five** lines from the console:
 - **food for the cat per day in kilograms** - double in range \[0.00…100.00\]
 - **food for the turtle per day in grams** - double in range \[0.00…10000.00\]
 
-# Output
+## Output
 Print on the console a **single** line:
 - If the left food **IS enough**:
   - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**
 - If the left food **IS NOT enough**:
   - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**
 
-# Example
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| 2 | | 3 kilos of food left. |
-| 10 | |  |
-| 1 | |  |
-| 1 | |  |
-| 1200 | |  |
+## Example
+| **Input**  | **Output** |
+| --- | --- |
+| 2 | 3 kilos of food left. |
+| 10 | |
+| 1 | |
+| 1 | |
+| 1200 | |
 
-## Comments
+### Comments
 - **Food needed for:**
 - **dog** = 2 days \* 1 kg = **2** kg;
 - **cat** = 2 days \* 1 kg = **2** kg;
@@ -51,16 +50,16 @@ Print on the console a **single** line:
 - **Total amount of food** = 2 + 2 + 2.4 = **6.4** kg;
 - **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg food remain**
 
-# Example
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| 5 | | 7 more kilos of food are needed. |
-| 10 | |  |
-| 2.1 | |  |
-| 0.8 | |  |
-| 321 | |  |
+## Example
+| **Input**  | **Output** |
+| --- | --- |
+| 5 | 7 more kilos of food are needed. |
+| 10 | |
+| 2.1 | |
+| 0.8 | |
+| 321 | |
 
-## Comments
+### Comments
 - **Needed food for:**
 - **dog** = **10.5** kg;
 - **cat** = 5 days \* 0.8 kg = **4** kg;
