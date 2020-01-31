@@ -7,29 +7,26 @@
 ```
 [/code-editor]
 [task-description]
-# Description
-
+## Description
 Write a program that prints the **type** of an animal according to its **name**.
 
-# Input / Output
-
+## Input / Output
 - **dog -> mammal**
 - **crocodile, tortoise, snake -> reptile**
 - **others -> unknown**
 
-# Example
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| dog | mammal |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| dog | | mammal |
+| **Input** | **Output** |
+| --- | --- |
+| snake | reptile |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| snake | | reptile |
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| cat | | unknown |
+| **Input** | **Output** |
+| --- | --- |
+| cat | unknown |
 [/task-description]
 [tests]
 [test]
