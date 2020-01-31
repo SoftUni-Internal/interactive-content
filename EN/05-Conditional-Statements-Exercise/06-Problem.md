@@ -17,9 +17,9 @@ Each animal eats certain amount food per day.
 Read **five** lines from the console:
 - **number of days** - an integer in range \[1…5000\]
 - **left food in kilograms** - an integer in range \[0…100000\]
-- **food for the dog per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the cat per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the turtle per day in grams** - double in range \[0.00…10000.00\]
+- **food for the dog per day in kilograms** - floating-point number in range \[0.00…100.00\]
+- **food for the cat per day in kilograms** - floating-point number in range \[0.00…100.00\]
+- **food for the turtle per day in grams** - floating-point number in range \[0.00…10000.00\]
 
 ## Output
 Print on the console a **single** line:
