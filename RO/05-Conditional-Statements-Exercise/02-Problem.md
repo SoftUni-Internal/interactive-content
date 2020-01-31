@@ -24,6 +24,10 @@ On the first line of the input you will receive the type of the figure.
 - If it\'s **circle** - on the next line you will receive a single number - the **radius**. 
 - If the figure is **triangle**, on the next **two** lines you will be given the **length** of its size and the **height** to it. 
 
+The input numbers will be floating-point numbers.
+
+## Output
+
 The result should be **formatted to the third decimal point**.
 
 ## Example
