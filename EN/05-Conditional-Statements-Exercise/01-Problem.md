@@ -31,8 +31,8 @@ The following should be printed on the console:
 -  If the wine produced is less than necessary:
     - "It will be a tough winter! More \{unattainable wine\} liters wine needed."
         - The result must be rounded to a lower integer
-- If the wine produced is more than necessary:
-    - "Good harvest this year! Total Wine: \{Total wine\} liters."
+- If the wine produced is more than or equal to necessary:
+    - "Good harvest this year! Total wine: \{Total wine\} liters."
         - The result must be rounded to a lower integer
     -  "\{remaining wine\} liters left -> \{wine for 1 worker\} liters per person."
         - Both results must be rounded to the higher integer
