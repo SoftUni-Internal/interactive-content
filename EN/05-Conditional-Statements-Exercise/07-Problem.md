@@ -35,6 +35,7 @@ Print on the console **one of both possibilities**:
   - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
 - If the pool is overflowing – how many liters are overflowed for the given time
   - "For \{hours pipes are filling the pool\} hours the pool overflows with \{liters water overflow\} liters."
+- All numbers in the output should be formatted to 2nd digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
