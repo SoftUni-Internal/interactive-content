@@ -44,12 +44,12 @@ The following should be printed on the console:
         - Both results must be rounded to the higher integer
 
 # Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 650 | | Good harvest this year! Total wine: 208 liters. |
-| 2 | | 33 liters left -> 11 liters per person. |
-| 175 | | |
-| 3 | | |
+| **Input** | **Output** |
+| --- | --- |
+| 650 | Good harvest this year! Total wine: 208 liters. |
+| 2 | 33 liters left -> 11 liters per person. |
+| 175 | |
+| 3 | |
 
 ## Comments
 - Total Grapes: 650 \* 2 = 1300
@@ -58,12 +58,12 @@ The following should be printed on the console:
 - 208 \- 175 = 33 liters remain \-> 11 liters per person
 
 # Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 1020 | | It will be a tough winter! More 180 liters wine needed.|
-| 1.5 | | |
-| 425 | | |
-| 4 | | |
+| **Input** | **Output** |
+| --- |  --- |
+| 1020 | It will be a tough winter! More 180 liters wine needed.|
+| 1.5 | |
+| 425 | |
+| 4 | |
 
 [/task-description]
 [tests]
