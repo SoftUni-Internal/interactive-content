@@ -184,12 +184,28 @@ Write a program to calculate the area of different figures:
     * Numbers will be floating-point
   * Prints the calculated area **formatted** to the second digit after the decimal point
   * For unknown figure print **"Unknown figure"**
-# Example
-## Input
-- square
-- 5
-## Output
-- 25.00
+
+## Examples
+
+| **Input** | **Output** |
+| --- | --- |
+| square | 25.00 |
+| 5 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| rectangle | 30.00 |
+| 3 |  |
+| 10 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| trapezoid | Unknown figure |
+
+| **Input** | **Output** |
+| --- | --- |
+| circle | 28.27 |
+| 28.27 | |
 [/task-description]
 [tests]
 [test]
