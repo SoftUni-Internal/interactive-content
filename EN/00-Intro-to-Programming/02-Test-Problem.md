@@ -1,4 +1,4 @@
-[slide hideTitle]
+[slide]
 # Problem: Print "Hello SoftUni"
 [code-task title="Print Hello SoftUni" taskId="ITPE-p-01" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
