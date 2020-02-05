@@ -1,3 +1,15 @@
+# More Complex Conditions
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="2061" endTimeInSeconds="2872"]
+[stream language="EN" videoId="341568008"  /]
+[stream language="RO" videoId="388278683" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # More Complex Conditions
 Let's take a look at how we can create more **complex logical conditions** in programming. 
@@ -418,11 +430,4 @@ Example of checking whether a variable belongs to certain ranges:
 if (x < 0) or ((x >= 5) and (x <= 10)) or (x > 20):
     # Commands
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341568008" startTimeInSeconds="2061" endTimeInSeconds="2872" /]
-
 [/slide]

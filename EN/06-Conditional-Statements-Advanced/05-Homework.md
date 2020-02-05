@@ -1,3 +1,15 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="5965" endTimeInSeconds="8399"]
+[stream language="EN" videoId="341568008" default /]
+[stream language="RO" videoId="388278683"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -529,12 +541,5 @@ The withdraw was successful.
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341568008" startTimeInSeconds="5965" endTimeInSeconds="8399" /]
 
 [/slide]

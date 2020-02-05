@@ -1,3 +1,15 @@
+# Revision
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="970" endTimeInSeconds="1027"]
+[stream language="EN" videoId="341568008" default /]
+[stream language="RO" videoId="388278683"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Revision
 Let's revise what we learned in the last lesson:
@@ -32,11 +44,4 @@ elif a > 20:
 else:
     print("The number `a` is smaller or equal than 20")
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="341568008" startTimeInSeconds="970" endTimeInSeconds="1027" /]
-
 [/slide]
