@@ -24,7 +24,7 @@ Let's solve a few problems to confirm what we have learned.
 [/slide]
 
 [slide]
-# Problem: Fruit or Vegetable
+## Problem: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="24-03-p01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
@@ -32,21 +32,21 @@ Let's solve a few problems to confirm what we have learned.
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check for fruit or vegetable:
 
 * Read a single input line: an item from the greengrocery
 * Fruits: banana, apple, kiwi, cherry, lemon, grapes
 * Vegetables: cucumber, pepper, carrot, onion
 * Print: **"vegetable"**, **"fruit"** or **"unknown"**
-# Example
-## Input
+## Example
+### Input
 - lemon
-## Output
+### Output
 - fruit
-## Input
+### Input
 - carrot
-## Output
+### Output
 - vegetable
 [/task-description]
 [tests]
@@ -73,7 +73,7 @@ vegetable
 [/slide]
 
 [slide]
-# Problem: Day of Week
+## Problem: Day of Week
 [code-task title="Day of Week" taskId="24-03-p02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
@@ -81,18 +81,18 @@ vegetable
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to print the day of week as words:
 
 * Read and integer **n**: the **day of the week** in range [1..7]
 * Print the **name of the day** (as words, in English)
 * Print **"Error"** if the number is not in the given range
-# Example
-## Input
+## Example
+### Input
 - 1
-## Output
+### Output
 - Monday
-## Input
+### Input
 - 8
 ## Output
 - Error
@@ -198,25 +198,25 @@ zero
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which checks for **sorted 3 numbers**:
 
 * Read 3 real numbers
 * Print **"Ascending"** if the numbers are in ascending order
 * Print **"Descending"** if the numbers are in descending order
 * Print **"Not sorted"** in any other case
-# Example
-## Input
+## Example
+### Input
 - 1
 - 2
 - 3
-## Output
+### Output
 - Ascending
-## Input
+### Input
 - 3
 - 5
 - 2
-## Output
+### Output
 - Not sorted
 [/task-description]
 [tests]
@@ -257,73 +257,6 @@ Descending
 [/slide]
 
 [slide]
-# Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="24-03-p05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-№ Write code herе
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which checks for **sorted 3 numbers**:
-
-* Read 3 real numbers
-* Print **"Ascending"** if the numbers are in ascending order
-* Print **"Descending"** if the numbers are in descending order
-* Print **"Not sorted"** in any other case
-# Example
-## Input
-- 1
-- 2
-- 3
-## Output
-- Ascending
-## Input
-- 3
-- 5
-- 2
-## Output
-- Not sorted
-[/task-description]
-[tests]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-Ascending
-[/output]
-[/test]
-[test]
-[input]
-3
-1
-2
-[/input]
-[output]
-Not sorted
-[/output]
-[/test]
-[test]
-[input]
-3
-2
-1
-[/input]
-[output]
-Descending
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
-
-[slide]
 # Problem: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="24-03-p06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
@@ -332,7 +265,7 @@ Descending
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which calculates vacation expenses:
 
 * Read season, accommodation type and count of the days
@@ -344,12 +277,12 @@ Write a program, which calculates vacation expenses:
 |Summer|50|30|0%|
 |Autumn|20|15|30%|
 |Winter|40|10|10%|
-# Example
-## Input
+## Example
+### Input
 - Winter
 - Hotel
 - 5
-## Output
+### Output
 - 180.00
 [/task-description]
 [tests]
@@ -370,7 +303,7 @@ Hotel
 [/slide]
 
 [slide]
-# Problem: Cinema
+## Problem: Cinema
 [code-task title="Cinema" taskId="24-03-p07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
@@ -378,7 +311,7 @@ Hotel
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Calculate the **price** for all the tickets for a cinema movie:
 
 * Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
@@ -390,12 +323,12 @@ Calculate the **price** for all the tickets for a cinema movie:
 |Normal|7.50|
 |Discount|5.00|
 
-# Example
-## Input
+## Example
+### Input
 - Normal
 - 12
 - 9
-## Output
+### Output
 - 810.00
 [/task-description]
 [tests]
@@ -424,18 +357,18 @@ Normal
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to apply an operator for given two numbers:
 
 * Read **two integers** and **math operator** from the console
 * The math operator could be: "+", "-", "/", "%" and "*"
 * The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
-# Example
-## Input
+## Example
+### Input
 - 12
 - 10
 - \+
-## Output
+### Output
 - 12 + 10 = 22
 [/task-description]
 [tests]
@@ -504,7 +437,7 @@ Write a program to apply an operator for given two numbers:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to simulate an ATM withdrawal:
 
 * Read: **balance**, **withdraw** and **limit**
@@ -512,18 +445,18 @@ Write a program to simulate an ATM withdrawal:
 * Print **"The daily limit was exceeded."** if the limit is exceeded
 * Print **"Insufficient availability."** if the balance isn't enough
 
-# Example
-## Input
+## Example
+### Input
 - 420
 - 20
 - 25
-## Output
+### Output
 - The withdraw was successful.
-## Input
+### Input
 - 10
 - 50
 - 20
-## Output
+### Output
 - The daily limit was exceeded.
 - Insufficient availability.
 [/task-description]
