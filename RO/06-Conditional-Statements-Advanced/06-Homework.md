@@ -633,3 +633,10 @@ Write a program to find the biggest among 5 numbers
 [/code-task]
 
 [/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
+
+[/slide]
