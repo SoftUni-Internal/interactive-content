@@ -59,6 +59,13 @@ Print on the console a **single** line:
 | Winter | |
 | 13 | |
 
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3600 | Yes! You have 1035.00 dollars left. |
+| Spring | |
+| 6 | |
+
 [/task-description]
 [tests]
 [test]

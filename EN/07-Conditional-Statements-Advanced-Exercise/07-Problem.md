@@ -9,15 +9,16 @@
 [task-description]
 ## Description
 
-A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depends on the season:
+A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depend on the season:
 
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
 | **Autumn / Winter** | **3.75$** | **4.50$** | **4.15$** |
 
-In the holidays the prices of all flowers **increase by 15%**. The market offers the following **discounts**:
+In the holidays the prices of all flowers **increase by 15%**.
 
+The market offers the following **discounts**:
 - If you buy **7 or more tulips during the spring** - **5% of the price of the whole bouquet**
 - If you buy **10 or more roses during the winter** - **10% of the price of the whole bouquet**
 - If you buy **more than 20 flowers in total during ALL seasons - 20% of the price of the whole bouquet**
