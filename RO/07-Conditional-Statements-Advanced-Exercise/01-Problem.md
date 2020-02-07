@@ -9,14 +9,14 @@
 [task-description]
 ## Description
 
-Write a **console** program **that reads** age (floating-point number) and **gender**("**m**" or "**f**") and prints **address** among these:
+Write a **console** program that reads **age (floating-point number)** and **gender**("**m**" or "**f**") and and prints an address according to these principles:
 - "**Mr.**" - a man (gender "**m**") of age 16 or more
 - "**Master**" - a boy (gender "**m**") under 16 years old
 - "**Ms.**" - a woman (gender "**f**") of age 16 or more
 - "**Miss**" - a girl (gender "**f**") under 16 years old
 
 ## Input
-Enter from the console:
+Entered from the console:
 - age - floating-point number
 - gender - "**m**" or "**f**"
 

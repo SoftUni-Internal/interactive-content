@@ -9,7 +9,7 @@
 [task-description]
 ## Description
 
-A company gives the following **commissions** to its businessmen according to the **city** they work in and the **amount** of **sales s**:
+A company pays the following **commissions** to its businessmen according to the **city** they work in and the **amount** of **sales s**:
 
 | **Sales / City** | London | New York | Sydney|
 | --- | --- | --- | --- |
@@ -18,7 +18,7 @@ A company gives the following **commissions** to its businessmen according to th
 | \[1001-10000\] | 8% | 10% | 12% |
 | s > 10000 | 12% | 13% | 14.5% |
 
-Write a console program **that reads as input the** name of a **city** and the **amount of sales** and calculates the value of the **trade commission**. 
+Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
 
 ## Input
 Read from the console two lines:
