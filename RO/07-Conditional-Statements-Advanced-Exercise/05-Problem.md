@@ -23,9 +23,9 @@ Your friend has different plans for every part of the day with different outfits
 | **Part of Day / Degrees** | Morning | Afternoon | Evening |
 | --- | --- | --- | --- |
 | 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
-| | Shoes = Sneakers | Shoes: Moccasins | Shoes: Moccasins |
+| | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
 | 18 < deg <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
-| | Shoes = Moccasins | Shoes: Sandals | Shoes: Moccasins |
+| | Shoes: Moccasins | Shoes: Sandals | Shoes: Moccasins |
 | deg >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
 | | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
 
