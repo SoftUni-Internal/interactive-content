@@ -13,41 +13,36 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-
+## Description
 Write a program to check if a **point {x, y}** is **on** some of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
 
-# Input
-
+## Input
 The input comes from the console and it consists of **6 rows, introduced from the user: real numbers x1, y1, x2, y2, x and y** (it will be always true that **x1 < x2** and **y1 < y2**).
 
-# Output
-
+## Output
 If the point lies on one of the rectangle's sides:
 - Print "**Border**"
-
 If the point does NOT lie on a side:
 - Print "**Inside / Outside**"
 
-# Example
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | Inside / Outside |
+| -3 | |
+| 12 | |
+| 3 | |
+| 8 | |
+| -1 | | 
 
-| **Input** | | **Output** 
-| --- | --- | --- |
-| 2 | | Inside / Outside |
-| -3 | | |
-| 12 | | |
-| 3 | | |
-| 8 | | |
-| -1 | | | 
-
-| **Input** | | **Output** | 
-|  --- | --- | --- |
-| 2| | Border|
-| -3| | |
-| 12| | |
-| 3| | |
-| 12| | |
-| -1| | |
+| **Input** | **Output** | 
+|  --- | --- |
+| 2 | Border|
+| -3 | |
+| 12 | |
+| 3 | |
+| 12 | |
+| -1 | |
 
 \* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if it's fulfilled one of the specified conditions:
 

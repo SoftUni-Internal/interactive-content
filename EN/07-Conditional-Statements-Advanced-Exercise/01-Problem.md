@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a **console** program **that reads** age (floating-point number) and **gender**("**m**" or "**f**") and prints **address** among these:
 - "**Mr.**" - a man (gender "**m**") of age 16 or more
@@ -21,25 +21,25 @@ Write a **console** program **that reads** age (floating-point number) and **gen
 - "**Ms.**" - a woman (gender "**f**") of age 16 or more
 - "**Miss**" - a girl (gender "**f**") under 16 years old
 
-# Input
+## Input
 Enter from the console:
 - age - floating-point number
 - gender - "**m**" or "**f**"
 
-# Output
+## Output
 Print the expected address on a single line.
 
-# Example
+## Example
 
-| **Input** | | **Output** | 
-| --- | --- | --- |
-| 25 | | Ms. |
-| f | | |
+| **Input** | **Output** | 
+| --- | --- |
+| 25 | Ms. |
+| f | |
 
-| **Input** | | **Output** | 
-| --- | --- | --- |
-| 13.5 | | Master |
-| m | | |
+| **Input** | **Output** | 
+| --- |  --- |
+| 13.5 | Master |
+| m | |
 [/task-description]
 [tests]
 [test]
