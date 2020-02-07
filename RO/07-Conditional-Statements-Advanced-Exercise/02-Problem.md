@@ -22,12 +22,13 @@ The input is consists of 2 lines:
 - The second line of input reads the fuel in the tank in liters
 
 ## Output
-If the fuel in the tank is more than or equal to 25 liters print:
-- "You have enough \{type of fuel\}."
-Otherwise print:
-- "Fill your tank with \{type of fuel\}!". 
-
-If a fuel other than the specified is introduced, "Invalid fuel!" shall be printed.
+- If the fuel is other than the specified print "Invalid fuel!".
+- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
+    - "You have enough \{type of fuel\}."
+    - Type of the fuel should be printed in lower case.
+- Otherwise print:
+    - "Fill your tank with \{type of fuel\}!". 
+    - Type of the fuel should be printed in lower case.
 
 ### Example
 
