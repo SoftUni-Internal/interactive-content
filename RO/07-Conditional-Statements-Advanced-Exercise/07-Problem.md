@@ -7,7 +7,7 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depends on the season:
 
@@ -30,7 +30,7 @@ The price of the bouquet arrangement is **always** 2 dollars.
 
 Write a program to **calculate** the price of a bouquet.
 
-# Input
+## Input
 The input is read from the **console** and is exactly **5 lines**:
 - Count of the bought **lilias** - integer in range \[0 ... 200\]
 - Count of the bought **roses** - integer in range \[0 ... 200\]
@@ -38,25 +38,24 @@ The input is read from the **console** and is exactly **5 lines**:
 - **Season** - \[Spring, Summer, Аutumn, Winter\]
 - If the day is **holiday** - \[Y - yes / N - no\]
 
-# Output
+## Output
 Print on the console a **single number** - the price of the flowers, **formatted to the second decimal point**.
 
-# Example
-| **Input** | | **Output** 
-| --- | --- | --- |
-| 2 | | 46.14 |
-| 4 | | |
-| 8 | | |
-| Spring | | |
-| Y | | |
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 46.14 |
+| 4 | |
+| 8 | |
+| Spring | |
+| Y | |
 
-## Comments
+### Comments
 - **Price: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
 - **Holiday** 40.40 + **15%** = 46.46 $
 - **5% discount for more than 7 tulips during the spring** - 44.14
 - In total the flowers are 20 or less - there **isn't a discount**
 - **44.14 + 2 for arrangement = 46.14 $** 
-
 [/task-description]
 [tests]
 [test]

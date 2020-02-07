@@ -7,42 +7,41 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 A company gives the following **commissions** to its businessmen according to the **city** they work in and the **amount** of **sales s**:
 
-| **Sales / City** | | London | | New York | | Sydney|
-| --- | --- | --- | --- | --- | --- | --- |
-| \[0-500\]| | 5%| | 4.5%| | 5.5%|
-| \[501-1000\]| | 7%| | 7.5%| | 8%|
-| \[1001-10000\]| | 8%| | 10%| | 12%|
-| s > 10000| | 12%| | 13%| | 14.5%|
+| **Sales / City** | London | New York | Sydney|
+| --- | --- | --- | --- |
+| \[0-500\] | 5% | 4.5% | 5.5% |
+| \[501-1000\] | 7% | 7.5% | 8% |
+| \[1001-10000\] | 8% | 10% | 12% |
+| s > 10000 | 12% | 13% | 14.5% |
 
 Write a console program **that reads as input the** name of a **city** and the **amount of sales** and calculates the value of the **trade commission**. 
 
-# Input
+## Input
 Read from the console two lines:
 - Name of a city - String
 - Amount of sales - floating-point number
 
-# Output
+## Output
 Print on the console the calculated value of trade commission.
 
 The result should be **formatted to the second decimal point**. 
 
 If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
 
-# Example
-| **Input** | | **Output** |  
-| --- | --- | --- |
-| London | | 120.00 | 
-| 1500 | | |  
+## Example
+| **Input** | **Output** |  
+| --- | --- |
+| London | 120.00 | 
+| 1500 | |  
 
-
-| **Input** | | **Output** | 
-| --- | --- | --- | 
-| Moscow | | error |
-| -50 | | |
+| **Input** | **Output** | 
+| --- | --- | 
+| Moscow | error |
+| -50 | |
 [/task-description]
 [tests]
 [test]
