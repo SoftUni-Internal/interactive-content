@@ -11,7 +11,7 @@
 [/slide]
 
 [slide]
-# Table of Content
+# Table of Contents
 
 [image src="https://github.com/SoftUni-Internal/interactive-content/blob/pb-java-jan-20/assets/introduction-to-programming-toc.jpg"/]
 
