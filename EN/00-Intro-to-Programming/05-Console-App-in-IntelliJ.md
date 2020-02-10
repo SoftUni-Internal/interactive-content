@@ -33,7 +33,7 @@ Click [New] and locate your JDK installation:
 
 [slide]
 # Writing the Program Code
-The commands of the program are written in `main(String\[\] args)`, between the opening and the closing parentheses `{ }`.
+The commands of the program are written in `main(String[] args)`, between the opening and the closing parentheses `{ }`.
 
 This is the main method (action), that is being executed with the start of a Java program.
 

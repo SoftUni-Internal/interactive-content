@@ -12,11 +12,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program to print numbers from 1 to 10 (inclsuive).
 
-# Output
+## Output
 
 Each number should be on a new line.
 [/task-description]

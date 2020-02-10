@@ -11,7 +11,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program, which calculates and prints the value of the following expressions:
 
@@ -19,7 +19,7 @@ Write a program, which calculates and prints the value of the following express
 * 4 \* 3 \* 2
 * 12 \/ 3 \* 2
 
-# Output 
+## Output 
 
 Print the result of each expression on a separate line
 [/task-description]

@@ -34,6 +34,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a Java program, which:
 
 Prints "Hello Java" on the console
@@ -66,10 +68,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a Java program, which:
 
 * Calculates the value of 5 * 5
-
 * Prints the result
 [/task-description]
 [code-io /]
@@ -101,6 +104,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
@@ -132,6 +137,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program, which calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
@@ -168,6 +175,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program, which:
 
 Prints a square of 7 * 7 stars like this:

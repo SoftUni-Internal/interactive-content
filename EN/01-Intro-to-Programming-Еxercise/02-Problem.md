@@ -11,11 +11,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program, which:
 * Calculates the area of the rectangle
 * Sides of the rectangle are 5 and 10
+
+## Output
+* Print the the calculated area
 [/task-description]
 [code-io /]
 [tests]
