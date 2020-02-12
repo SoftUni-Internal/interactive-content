@@ -85,7 +85,7 @@ Write a program, which:
 
 [slide]
 # Problem: Max and Min Numbers
-[code-task title="Number Sequence" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Max and Min Numbers" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -98,7 +98,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** representing the count of numbers to read next
@@ -467,7 +467,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** - the count of characters:
@@ -556,7 +556,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads rollercoaster **places**, **minimum age**, **count of people** on the queue and **age** for each person
