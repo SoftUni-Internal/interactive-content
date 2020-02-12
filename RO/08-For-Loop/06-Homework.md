@@ -95,7 +95,7 @@ Write a program, which:
 | **Input** | **Output** 
 | --- | --- |
 | 5 | Max number: 304 |
-| 10 | Min number: 0Min number: 0 |
+| 10 | Min number: 0 |
 | 304 | |
 | 0 | |
 | 0 | |
