@@ -1,6 +1,9 @@
 [slide]
 # Summary
 
-[vimeo-video videoId="342471604" startTimeInSeconds="11471" endTimeInSeconds="11647" /]
+[vimeo-video startTimeInSeconds="11471" endTimeInSeconds="11647"]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
+[/vimeo-video]
 
 [/slide]

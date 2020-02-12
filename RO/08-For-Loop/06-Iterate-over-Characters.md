@@ -2,7 +2,11 @@
 
 [slide]
 # Video
-[vimeo-video videoId="342471604" startTimeInSeconds="3555" endTimeInSeconds="4281" /]
+
+[vimeo-video startTimeInSeconds="3555" endTimeInSeconds="4281"]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
+[/vimeo-video]
 
 [/slide]
 
