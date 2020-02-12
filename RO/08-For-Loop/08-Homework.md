@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7800" endTimeInSeconds="11467"]
-[stream language="EN" videoId="342471604" default /]
-[stream language="RO" videoId="389927500"  /]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
 [/vimeo-video]
 
 [/slide]
@@ -111,7 +111,7 @@ Write a program, which:
 | **Input** | **Output** 
 | --- | --- |
 | 5 | Max number: 304 |
-| 10 | 0 |
+| 10 | Min number: 0 |
 | 304 | |
 | 0 | |
 | 0 | |
