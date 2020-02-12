@@ -53,17 +53,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
-* Reads **2 letters**
+* Reads **2 letters**, each on a separate line
 * Prints **all letters** in the given range **inclusive**
-# Example
-## Input
-- a
-- c
-## Output
-- a b c
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| a | a |
+| c | b |
+|  | c |
 [/task-description]
 [tests]
 [test]
@@ -116,12 +117,13 @@ Write a program, which:
 
 * Reads **2 letters**
 * Prints **all letters** in the given range **inclusive**
-# Example
-## Input
-- a
-- c
-## Output
-- a b c
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| a | a |
+| c | b |
+|  | c |
 [/task-description]
 [tests]
 [test]

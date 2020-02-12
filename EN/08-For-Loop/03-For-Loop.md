@@ -72,23 +72,23 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads number n from the console
 * **Prints** all numbers from **1** to **n**
 * **Sums** all numbers from **1** to **n**
 * **Prints** the sum on the console at the end
-# Example
-## Input
-- 5
-## Output
-- 1
-- 2
-- 3
-- 4
-- 5
-- 15
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 5 | 1 |
+|  | 2 |
+|  | 3 |
+|  | 4 |
+|  | 5 |
+|  | 15 |
 [/task-description]
 [tests]
 [test]
@@ -146,23 +146,23 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads number n from the console
 * **Prints** all numbers from **1** to **n**
 * **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end
-# Example
-## Input
-- 5
-## Output
-- 1
-- 2
-- 3
-- 4
-- 5
-- 15
+* **Prints** the sum on the console at the end\
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 5 | 1 |
+|  | 2 |
+|  | 3 |
+|  | 4 |
+|  | 5 |
+|  | 15 |
 [/task-description]
 [tests]
 [test]
@@ -213,19 +213,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
-* Reads working days in the current month and salary per day - integers
-* **Calculates** the salary for the month
-* **Prints** the result on the console
-# Example
-## Input
-- 2
-- 100
-- 200
-## Output
-- 300
+* Reads n - the number of working days in the current month. 
+* On the next n lines reads an integer - the salary for each particular day.
+* **Calculates** the salary for the month.
+* **Prints** the result on the console.
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 300 |
+| 100 |  |
+| 200 |  |
 [/task-description]
 [tests]
 [test]
@@ -266,19 +267,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
-* Reads working days in the current month and salary per day - integers
-* **Calculates** the salary for the month
-* **Prints** the result on the console
-# Example
-## Input
-- 2
-- 100
-- 200
-## Output
-- 300
+* Reads n - the number of working days in the current month. 
+* On the next n lines reads an integer - the salary for each particular day.
+* **Calculates** the salary for the month.
+* **Prints** the result on the console.
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 300 |
+| 100 |  |
+| 200 |  |
 [/task-description]
 [tests]
 [test]

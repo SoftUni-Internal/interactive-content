@@ -61,18 +61,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number **n**
 * Prints all numbers from **7 to n**, **ending with 7**
-# Example
-## Input
-- 30
-## Output
-- 7
-- 17
-- 27
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 30 | 7 |
+|  | 17 |
+|  | 27 |
 [/task-description]
 [tests]
 [test]
@@ -111,18 +111,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number **n**
 * Prints all numbers from **7 to n**, **ending with 7**
-# Example
-## Input
-- 30
-## Output
-- 7
-- 17
-- 27
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 30 | 7 |
+|  | 17 |
+|  | 27 |
 [/task-description]
 [tests]
 [test]
@@ -163,14 +163,14 @@ Write a program, which:
 * Reads an integer - count of **days before an exam**
 * For **each day** prints: "\{currentDay\} days before the exam"
 * At the end prints: **"The exam has come"**
-# Example
-## Input
-- 3
-## Output
-- 3 days before the exam
-- 2 days before the exam
-- 1 days before the exam
-- The exam has come
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 3 | 3 days before the exam |
+|  | 2 days before the exam |
+|  | 1 days before the exam |
+|  | The exam has come |
 [/task-description]
 [tests]
 [test]
@@ -217,14 +217,14 @@ Write a program, which:
 * Reads an integer - count of **days before an exam**
 * For **each day** prints: "\{currentDay\} days before the exam"
 * At the end prints: **"The exam has come"**
-# Example
-## Input
-- 3
-## Output
-- 3 days before the exam
-- 2 days before the exam
-- 1 days before the exam
-- The exam has come
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 3 | 3 days before the exam |
+|  | 2 days before the exam |
+|  | 1 days before the exam |
+|  | The exam has come |
 [/task-description]
 [tests]
 [test]
