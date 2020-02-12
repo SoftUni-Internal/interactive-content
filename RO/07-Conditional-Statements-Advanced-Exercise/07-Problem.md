@@ -16,6 +16,7 @@ public class Main {
 ## Description
 
 A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depend on the season:
+
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
