@@ -84,7 +84,7 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Problem: Number Sequence
+# Problem: Max and Min Numbers
 [code-task title="Number Sequence" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
