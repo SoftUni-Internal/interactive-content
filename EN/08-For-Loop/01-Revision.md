@@ -1,3 +1,15 @@
+# Revision 
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="996" endTimeInSeconds="1252"]
+[stream language="EN" videoId="342410322" default /]
+[stream language="RO" videoId="389330702"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Revision 
 Before proceeding ahead, let's remind ourselves about the program concepts and techniques that we have learned in the last session.
@@ -16,11 +28,4 @@ if condition1:
 if (x == left or x == right) and y >= top and y <= bottom:
     print(…)
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="342410322" startTimeInSeconds="996" endTimeInSeconds="1252" /]
-
 [/slide]

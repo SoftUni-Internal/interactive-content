@@ -1,3 +1,15 @@
+# Real-Life Example
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1272" endTimeInSeconds="1329"]
+[stream language="EN" videoId="342410322"  /]
+[stream language="RO" videoId="389330702" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Real-Life Example: Moving Dishes
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
@@ -13,11 +25,4 @@ So, you'll pick up the **first one** and put it in the dishwasher - that's one i
 Then you'll pick up the **second one** and put it in the dishwasher and continue **repeating the same action** until you put all dirty dishes in the dishwasher.
 
 The whole idea is that you have to repeat a particular action a **count** of times, which **you know before starting** the process.
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="342410322" startTimeInSeconds="1272 " endTimeInSeconds="1329" /]
-
 [/slide]

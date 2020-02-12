@@ -39,7 +39,7 @@ For example, the decimal value of the character **'a'** is **97** and the one co
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **2 letters**
@@ -89,7 +89,7 @@ for a in range(ord(start), ord(end)+1):
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **2 letters**

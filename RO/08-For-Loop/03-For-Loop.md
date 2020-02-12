@@ -1,3 +1,14 @@
+# For Loop
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1330" endTimeInSeconds="1650"]
+[stream language="EN" videoId="342410322"  /]
+[stream language="RO" videoId="389330702" default /]
+[/vimeo-video]
+[/slide]
+
 [slide]
 # For Loop
 In programming it is often required to perform a block of commands multiple times. 
@@ -60,16 +71,16 @@ for char in "John":
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 - Receives a single string
 - Print each character of that string on a new line
 
-# Example
-## Input
+## Example
+### Input
 - Hello
-## Output
+### Output
 - H
 - e
 - l
@@ -125,16 +136,16 @@ for char in text:
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 - Receives a single string
 - Print each character of that string on a new line
 
-# Example
-## Input
+## Example
+### Input
 - Hello
-## Output
+### Output
 - H
 - e
 - l
@@ -172,12 +183,5 @@ i
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="342410322" startTimeInSeconds="1330" endTimeInSeconds="165" /]
 
 [/slide]

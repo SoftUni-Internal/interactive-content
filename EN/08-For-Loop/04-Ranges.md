@@ -1,3 +1,15 @@
+# Range
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1656" endTimeInSeconds="2522"]
+[stream language="EN" videoId="342410322" default /]
+[stream language="RO" videoId="389330702"  /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Range
 `range()` is a function in python, which generates a collection of numbers between given start and stop integers.
@@ -272,12 +284,5 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="342410322" startTimeInSeconds="1656" endTimeInSeconds="2522" /]
 
 [/slide]
