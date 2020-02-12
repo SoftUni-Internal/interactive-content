@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7800" endTimeInSeconds="11467"]
-[stream language="EN" videoId="342471604"  /]
-[stream language="RO" videoId="389927500" default /]
+[stream language="EN" videoId="342471604" default /]
+[stream language="RO" videoId="389927500"  /]
 [/vimeo-video]
 
 [/slide]
@@ -103,12 +103,14 @@ Write a program, which:
 
 * Reads **n** representing the count of numbers to read next
 * Finds the **max** and the **min numbers**
-* Prints them on the console
+* Prints them on the console in the following format:
+   - Max number: \{max number\}
+   - Min number: \{min number\}
 
 ## Example
 | **Input** | **Output** 
 | --- | --- |
-| 5 | 304 |
+| 5 | Max number: 304 |
 | 10 | 0 |
 | 304 | |
 | 0 | |
@@ -363,14 +365,6 @@ Write a program, which:
 * For every **even** line **adds** the number to the result
 * For every **odd** line **subtracts** the number from the result
 * **Prints** the result
-
-# Example
-## Input
-- 2
-- 10
-- 20
-## Output
-- 10
 
 ## Example
 | **Input** | **Output** 
