@@ -76,7 +76,7 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Problem: Number Sequence
+# Problem: Max and Min Numbers
 [code-task title="Number Sequence" taskId="24-04-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
