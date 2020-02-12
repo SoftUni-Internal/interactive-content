@@ -707,3 +707,10 @@ Write a program, which:
 [code-io/]
 [/code-task]
 [/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results/]
+
+[/slide]
