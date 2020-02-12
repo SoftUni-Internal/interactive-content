@@ -408,6 +408,7 @@ Write a program to calculate a circle area and perimeter:
   * Read a floating-point number: the radius of a circle
   * Calculate the area and perimeter of a circle
   * Print the calculated values
+    * Use the default formatting for floating-point numbers in Java in the output (like in the example below)
 # Example
 ## Input
 - 7
