@@ -7,7 +7,7 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program to calculate the average cost per month for a family over a period of time. For each month the costs are as follows:
 
@@ -18,14 +18,14 @@ Write a program to calculate the average cost per month for a family over a peri
 
 For each bill, you need to calculate how much total is paid for **all months**.
 
-# Input
+## Input
 
 The input is read from the console: 
 
 - The **months** for which the average cost is searched – integer in range \[1... 100\] 
 - For each month – the bill for electricity – a real number in range \[1.00... 1000.00\]
 
-# Output
+## Output
 Print to the console **5** rows: 
 - "Electricity: \{electricity for all months\} $" 
 - "Water: \{water for all months\} $" 
@@ -35,16 +35,15 @@ Print to the console **5** rows:
 
 All bills sohould be **formatted to the 2nd digit after the decimal point**.
 
-# Example
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 5 | | Electricity: 447.16 $ |
-| 68.63 | | Water: 100.00 $ |
-| 68.63 | | Internet: 75.00 $ |
-| 132.53 | | Other: 746.59 $ |
-| 93.53 | | Average: 273.75 $ |
-| 63.22 | | |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | Electricity: 447.16 $ |
+| 68.63 | Water: 100.00 $ |
+| 68.63 | Internet: 75.00 $ |
+| 132.53 | Other: 746.59 $ |
+| 93.53 | Average: 273.75 $ |
+| 63.22 | |
 
 ## Comments
 For **5** months:

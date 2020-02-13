@@ -7,16 +7,16 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that reads the **n** - **count** of **numbers** entered by the user, and **calculates** the **amount** of the **minimum** and **maximum** numbers of **odd** and **even** positions (counting from **1**). 
 
 If there **is not** minimum/maximum element print "**No**".
 
-# Input
+## Input
 - On the first input line read count of numbers - N - integer \[0...100\]
 - On every next line read a number - floating-point number \[-100...100\]
 
-# Output
+## Output
 The output should be **formatted** in the following form:
 **"OddSum="** + \{**sum** of the numbers on **odd** positions\},
 
@@ -32,25 +32,24 @@ The output should be **formatted** in the following form:
 
 **Each number should be formatted to the second decimal point.**
 
-# Example
+## Example
+| **Input** | **Output** |   
+| --- | --- |
+| 5 | OddSum=8.00, |
+| 3 | OddMin=-3.00, |
+| -2 | OddMax=8.00, |
+| 8 | EvenSum=9.00, |
+| 11 | EvenMin=-2.00, |
+| -3 | EvenMax=11.00 |
 
-| **Input** | | **Output** |   
-| --- | --- | --- |
-| 5 | | OddSum=8.00, | |
-| 3 | | OddMin=-3.00, |
-| -2 | | OddMax=8.00, | | |
-| 8 | | EvenSum=9.00, | |
-| 11 | | EvenMin=-2.00, | | 
-| -3 | | EvenMax=11.00 |
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 0 | | OddSum=0.00, |
-| | | OddMin=No, |
-| | | OddMax=No, |
-| | | EvenSum=0.00, |
-| | | EvenMin=No, |
-| | | EvenMax=No |
+| **Input** | **Output** |
+| --- | --- |
+| 0 |  OddSum=0.00, |
+| | OddMin=No, |
+| | OddMax=No, |
+| | EvenSum=0.00, |
+| | EvenMin=No, |
+| | EvenMax=No |
 [/task-description]
 [tests]
 [test]

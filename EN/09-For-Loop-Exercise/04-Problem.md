@@ -7,17 +7,16 @@
 ```
 [/code-editor]
 [task-description]
-# Description
-
+## Description
 Write a program that **prints the numbers in the range** \[1...1000\], which **end in 7**. 
 
 Print the numbers on a **single** line, separated by a **single space**.
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| (no input) | | 7 17 27 ... 997 |
+| **Input** | **Output** |
+| --- | --- |
+| | 7 17 27 ... 997 |
 [/task-description]
 [tests]
 [test]
