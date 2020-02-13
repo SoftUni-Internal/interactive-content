@@ -1,6 +1,6 @@
 [slide]
 # Problem: Personal Titles
-[code-task title="Personal Titles" taskId="CAE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Personal Titles" taskId="25-02AE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

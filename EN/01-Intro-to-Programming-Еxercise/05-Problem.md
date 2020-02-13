@@ -1,6 +1,6 @@
 [slide]
 # Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="ITPE-p-05" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Triangle of Stars" taskId="25-00E-p-05" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {

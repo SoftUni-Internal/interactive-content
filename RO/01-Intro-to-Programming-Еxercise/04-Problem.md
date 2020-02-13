@@ -1,6 +1,6 @@
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Calculations" taskId="25-00E-p-04" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {

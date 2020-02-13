@@ -1,6 +1,6 @@
 [slide]
 # Problem: Numbers Ending in 7
-[code-task title="Numbers Ending in 7" taskId="FLE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Numbers Ending in 7" taskId="25-04E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 public class Main {

@@ -1,6 +1,6 @@
 [slide]
 # Problem: Rectangle Area
-[code-task title="Rectangle Area" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Rectangle Area" taskId="25-00E-p-02" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {

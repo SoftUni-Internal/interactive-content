@@ -21,7 +21,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Building
-[code-task title="Building" taskId="NL-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Building" taskId="25-06-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -185,7 +185,7 @@ A10 A11 A12
 
 [slide]
 # Problem: Passwords
-[code-task title="Passwords" taskId="NL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Passwords" taskId="25-06-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -260,7 +260,7 @@ Write a program, which:
 
 [slide]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="NL-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Magic Number" taskId="25-06-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -307,7 +307,7 @@ Write a program, which:
 
 [slide]
 # Problem: Travelling
-[code-task title="Travelling" taskId="NL-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Travelling" taskId="25-06-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -574,7 +574,7 @@ Going to Albania!
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="NL-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Prime Numbers" taskId="25-06-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -671,7 +671,7 @@ Write a program, which:
 
 [slide]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="NL-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Unique PIN Codes" taskId="25-06-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -741,7 +741,7 @@ Write a program, which:
 
 [slide]
 # Problem: Letter Combinations
-[code-task title="Letter Combinations" taskId="NL-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Letter Combinations" taskId="25-06-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -787,7 +787,7 @@ aaa aac aca acc caa cac cca ccc 8
 
 [slide]
 # Problem: Happy Numbers
-[code-task title="Happy Numbers" taskId="NL-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Happy Numbers" taskId="25-06-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

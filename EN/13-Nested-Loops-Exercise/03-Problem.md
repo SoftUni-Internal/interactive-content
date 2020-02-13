@@ -1,6 +1,6 @@
 [slide]
 # Problem: Combinations
-[code-task title="Combinations" taskId="NLE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Combinations" taskId="25-06E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

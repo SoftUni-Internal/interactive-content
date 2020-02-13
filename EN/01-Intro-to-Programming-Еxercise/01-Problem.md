@@ -1,6 +1,6 @@
 [slide]
 # Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="ITPE-p-01" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Print Hello SoftUni" taskId="25-00E-p-01" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
