@@ -32,9 +32,9 @@ Let's solve a few problems to confirm what we have learned.
 ```
 [/code-editor]
 [task-description]
-Write a Python program, which:
+## Description
+Write a Python program, which prints `Hello Python` on the console.
 
-Prints "Hello Python" on the console
 [/task-description]
 [code-io /]
 [tests]
@@ -59,6 +59,7 @@ Hello Python
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a Python program, which:
 
 * Calculates the value of 5 * 5
@@ -87,7 +88,9 @@ Write a Python program, which:
 ```
 [/code-editor]
 [task-description]
-Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
+## Description
+
+Write a program to print `Catlyn` on the first line and calculate and print the result of the expression `5 + 3` on the second line.
 [/task-description]
 [code-io /]
 [tests]
@@ -114,6 +117,7 @@ Catlyn
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
@@ -145,9 +149,8 @@ Write a program, which calculates and prints the value of the following express
 ```
 [/code-editor]
 [task-description]
-Write a program, which:
-
-Prints a square of 7 * 7 stars like this:
+## Description
+Write a program, which prints a square of 7 * 7 stars like this:
 
 ```
 * * * * * * *
