@@ -1,11 +1,13 @@
-# Integrated Development Environments (IDE)
+# Integrated Development Environments
 
 [slide]
 # Video
-[vimeo-video startTimeInSeconds="4035" endTimeInSeconds="4655"]
-[stream language="EN" videoId="342593690/38eafff801"  /]
-[stream language="RO" videoId="384789175/e68b1ea3ae" default /]
+
+[vimeo-video startTimeInSeconds="6481" endTimeInSeconds="7114"]
+[stream language="EN" videoId="384741142"  /]
+[stream language="RO" videoId="390421925" default /]
 [/video-vimeo]
+
 [/slide]
 
 [slide]
