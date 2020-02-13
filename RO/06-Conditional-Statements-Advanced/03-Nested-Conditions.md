@@ -45,7 +45,7 @@ These blocks will be **nested**, meaning from **the result** of the first, we ar
 
 The diagram below illustrates the process in detail:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/01.Personal-titles-01.jpg"/]
+[image assetsSrc="01.Personal-titles-01.jpg" /]
 
 After reading the input data from the console, the following program logic should be executed:
 ```java

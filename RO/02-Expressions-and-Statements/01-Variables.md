@@ -43,7 +43,7 @@ boolean employed = true;
 int age = 35;
 ```
 If you think of the variables as boxes that hold information, this is how they would look like:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/expressions-and-statements-boxes.png"/]
+[image assetsSrc="expressions-and-statements-boxes.png" /]
 
 Variables can be stored in the program's:
   * Operational memory - in the execution **stack**

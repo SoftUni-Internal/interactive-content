@@ -30,7 +30,7 @@ In this course, we are going to use the development environment **IntelliJ IDEA*
 
 This an example how a development IDE may look (IntelliJ IDEA IDE for Java):
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-hello-world.png"/]
+[image assetsSrc="intro-to-programming-hello-world.png" /]
 [/slide]
 
 [slide]
@@ -46,35 +46,35 @@ The installation is typical for Windows with `[Next]`, `[Next]` and `[Finish]`.
 The next lines describe in detail the steps for the installation of IntelliJ IDEA (version Community 2019.2.1). 
 
 After we download the installation file and start it, the following screen appears:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-1.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-1.png" /]
 
 Press the `[Next]` button and you will see the screen bellow:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-2.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-2.png" /]
 
 A screen with the installation options of IntelliJ IDEA is being loaded.
 
 Put a check mark on `[64-bit launcher]`, `[.java]`, `[.groovy]` and `[.kt]`, then press the `[Next]` button. 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-3.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-3.png" /]
 
 After that we have to select the Start Menu Folder `[JetBrains]` and click `[Install]`. Basically, this is everything.
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-4.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-4.png" /]
 
 Installation of IntelliJ IDEA begins, and a screen like the one bellow will appear:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-5.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-5.png" /]
 
 After IntelliJ IDEA is installed, an informative screen will appear. Put a check mark on the `[Run]` button to start it and click `[Finish]`.
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-6.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-6.png" /]
 
 In order to continue you have to choose whether to import settings or not. Put a check mark on the `[Do not import settings]` button.
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-7.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-7.png" /]
 
 The next step is to choose **the color theme**, in which IntelliJ is visualized. The choice here lays completely on the preferences of the user and it doesn't matter which option will be chosen.
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-8.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-8.png" /]
 
 On the next configurations you can choose the default ones.
 
 Press the `[Start using IntelliJ IDEA]` button and the main view of IntelliJ IDEA Community will be displayed:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-install-intelliJ-9.png"/]
+[image assetsSrc="intro-to-programming-install-intelliJ-9.png" /]
 
 That's all. You are ready to work with IntelliJ IDEA.
 [/slide]
@@ -83,7 +83,7 @@ That's all. You are ready to work with IntelliJ IDEA.
 # Project Solutions and Projects in IntelliJ IDEA
 Before we start working with IntelliJ IDEA, it is necessary to get familiar with the concepts of a **IntelliJ IDEA Project** and a **IntelliJ IDEA Modules**, which are an inevitable part of it.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-modules-and-projects.png"/]
+[image assetsSrc="intro-to-programming-modules-and-projects.png" /]
 
 **IntelliJ IDEA Project** represents "the **project**" we are working on. In the beginning, these will be our console applications, which we are going to learn writing with the help of the current course and the training sessions.
 
@@ -122,5 +122,5 @@ Alternative IDE (online)
 * Python: https://repl.it
 * JavaScript: directly use the Web browser console (press \[F12\] key)
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-rplit.png"/]
+[image assetsSrc="intro-to-programming-rplit.png" /]
 [/slide]

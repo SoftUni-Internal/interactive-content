@@ -12,5 +12,5 @@
 [slide]
 # Summary
 
-[image src="https://github.com/SoftUni-Internal/interactive-content/blob/pb-java-jan-20/assets/java-intro-to-programming-summary.png"/]
+[image assetsSrc="java-intro-to-programming-summary.png" /]
 [/slide]

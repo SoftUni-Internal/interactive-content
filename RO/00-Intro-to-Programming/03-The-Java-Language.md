@@ -70,5 +70,5 @@ JDK should not be confused for a runtime environment (JRE)
 
 * JRE allow to **run** Java programs, but can't **develop own programs**
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/intro-to-programming-java.png"/]
+[image assetsSrc="intro-to-programming-java.png" /]
 [/slide]

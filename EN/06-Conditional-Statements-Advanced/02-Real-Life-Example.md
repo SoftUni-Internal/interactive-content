@@ -14,7 +14,7 @@
 # Real Life Example: Marketplace
 A market offers different prices for certain products based on the day of the week
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/03-conditional-statements-advanced-example.png"/]
+[image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
 |Product|Weekday|Weekend| 
 |-------|-------|-------|

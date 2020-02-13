@@ -8,9 +8,9 @@
 
 [slide]
 # Real-Life Example: Clock
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/06-nested-loops-clock-1159.png"/] 
+[image assetsSrc="06-nested-loops-clock-1159.png" /] 
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/06-nested-loops-clock-1200.png"/]
+[image assetsSrc="06-nested-loops-clock-1200.png" /]
 
 Imagine the current time is exactly **11:00** AM. 
 

@@ -30,7 +30,7 @@ Computers can only understand numbers, so an **ASCII** code is the numerical rep
 
 This is an example part of the table:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/04-for-loop-ascii.png"/]
+[image assetsSrc="04-for-loop-ascii.png" /]
 
 And here you can check the whole **ASCII Table**: **http://www.asciitable.com**
 

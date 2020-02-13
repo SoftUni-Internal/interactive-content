@@ -16,7 +16,7 @@ Generally, the **system console** represents a text terminal, which means that i
 
 It usually looks like a black colored window like this one:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/00.Console-example.png"/]
+[image assetsSrc="00.Console-example.png" /]
 
 In most operating systems, the **console** is available as a standalone application on which we print console commands. 
 
@@ -25,7 +25,7 @@ It is called a **Command Prompt** in Windows, and a **Terminal** in Linux and Ma
 The console runs console applications. They read text from the command line and print text on the console. We are going to learn programming mostly through creating **console applications**.
 
 **IntelliJ IDEA** has its own console, which we are going to use to **read input** and **print output**:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-console.png"/]
+[image assetsSrc="intro-to-programming-console.png" /]
 
 [/slide]
 
@@ -138,7 +138,7 @@ System.out.println(area);
 
 Here is how the program would work if we had a square with a side length equal to 3:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/expressions-and-statements-console-example-area.png"/]
+[image assetsSrc="expressions-and-statements-console-example-area.png" /]
 [/slide]
 
 [slide]
@@ -163,7 +163,7 @@ System.out.println(centimeters);
 
 Let's start the program and make sure that when a value in inches is entered, we obtain a correct output in centimeters:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/expressions-and-statements-console-example-2.png"/]
+[image assetsSrc="expressions-and-statements-console-example-2.png" /]
 
 Note that if you enter and **invalid number**, e.g. **"asfd"**, the program will crash with an error message (exception). 
 
