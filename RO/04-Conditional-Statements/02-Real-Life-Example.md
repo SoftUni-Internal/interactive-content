@@ -12,7 +12,7 @@
 
 [slide]
 # Real Life Example: Watering Plants
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/02-coditional-statements-1.png"/]
+[image assetsSrc="02-coditional-statements-1.png" /]
 
 Every day we are faced with decisions, which we make based on conditions that may or may not depend on us.
 

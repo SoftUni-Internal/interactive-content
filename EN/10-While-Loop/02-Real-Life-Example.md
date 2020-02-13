@@ -7,7 +7,7 @@ The specific thing about them is that they repeat a block of commands while a co
 As a structure, they differ from `for` loops, and even have a simple syntax.
 
 Before we jump to the lesson, let's cover an example which is from the real life.
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/05-bucket-example.png"/]
+[image assetsSrc="05-bucket-example.png" /]
 You have to fill a bucket with water using a mug.
 
 You never know how many mugs of water you will use.

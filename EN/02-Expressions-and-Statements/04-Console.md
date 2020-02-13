@@ -16,7 +16,7 @@ Generally, the **system console** represents a text terminal, which means that i
 
 It usually looks like a black colored window like this two:
 
-[image src="https://raw.githubusercontent.com/AtanasovAtanas/pb-interactive-csharp/master/assets/00.Console-example.png"/]
+[image assetsSrc="00.Console-example.png" /]
 
 In most operating systems, the **console** is available as a standalone application on which we write console commands. 
 
@@ -134,7 +134,7 @@ print(area)
 
 Here is how the program would work if we had a square with a side length equal to 3:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/expressions-and-statements-area-3.png"/]
+[image assetsSrc="expressions-and-statements-area-3.png" /]
 [/slide]
 
 [slide]
@@ -158,7 +158,7 @@ print(centimeters)
 
 Let's start the program and make sure that when a value in inches is entered, we obtain a correct output in centimeters:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/expressions-and-statements-inches-to-centimeters.png"/]
+[image assetsSrc="expressions-and-statements-inches-to-centimeters.png" /]
 
 Note that if you enter and **invalid number**, e.g. **"asfd"**, the program will crash with an error message (exception). 
 

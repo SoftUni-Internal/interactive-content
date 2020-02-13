@@ -70,16 +70,16 @@ In order to write code in Python, you will need to download **Python**
 
 Go to https://www.python.org/downloads/ and download the latest available version:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-download-python.png"/]
+[image assetsSrc="intro-to-programming-download-python.png" /]
 
 After you download and install Python, you can **start** it.
 
 If you are using Windows OS, the terminal will be opened, which looks like this:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-python-terminal1.png"/]
+[image assetsSrc="intro-to-programming-python-terminal1.png" /]
 
 And now we can type in commands. The most simple example is calculating some numbers:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-python-terminal2.png"/]
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-python-terminal3.png"/]
+[image assetsSrc="intro-to-programming-python-terminal2.png" /]
+[image assetsSrc="intro-to-programming-python-terminal3.png" /]
 
 [/slide]
 

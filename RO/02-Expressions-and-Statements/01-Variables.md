@@ -41,7 +41,7 @@ employed = True
 age = 35
 ```
 If you think of the variables as boxes that hold information, this is how they would look like:
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/boxes-with-variables.png"/]
+[image assetsSrc="boxes-with-variables.png" /]
 
 Variables can be stored in the program's:
   * Operational memory - in the execution **stack**

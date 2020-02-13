@@ -20,7 +20,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/homeowrk.png"/]
+[image assetsSrc="homeowrk.png" /]
 [/slide]
 
 [slide]

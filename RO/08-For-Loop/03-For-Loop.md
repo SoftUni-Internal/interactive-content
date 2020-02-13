@@ -22,7 +22,7 @@ for i in iterable:
 
 The block of code can be explained with this use case diagram:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/for-loop-use-case.png"/]
+[image assetsSrc="for-loop-use-case.png" /]
 
 The loop starts with the `for` operator and passes through all values in a particular iterable, which is a collection that can be iterated over.
 

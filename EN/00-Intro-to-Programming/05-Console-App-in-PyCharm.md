@@ -14,18 +14,18 @@
 We already have PyCharm and we can start it. 
 
 We can create a new project by clicking `[Create New Project]`
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-create-new-project.png"/]
+[image assetsSrc="intro-to-programming-create-new-project.png" /]
 
 If an old project is opened, the way we create a new console project is: `[File]` → `[New Project]`.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/new-project-pycharm.png"/]
+[image assetsSrc="new-project-pycharm.png" /]
 
 We set **a meaningful name** to our program, for example `Hello`:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-set-name.png"/]
+[image assetsSrc="intro-to-programming-set-name.png" /]
 
 PyCharm is going to create for us **an empty Python project**, in which we can create Python files. 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-ptogramming-new-py-file.png"/]
+[image assetsSrc="intro-to-ptogramming-new-py-file.png" /]
 
 [/slide]
 
@@ -37,7 +37,7 @@ The code of the program is written **inwards**, as this is a part of shaping up 
 
 We have to keep in mind that Python uses indentation, which we are going to cover later.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-blank-file.png"/]
+[image assetsSrc="intro-to-programming-blank-file.png" /]
 
 Write the following command:
 ```python
@@ -46,7 +46,7 @@ print('Hello Python')
 
 Here is how our program should look like in PyCharm:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-hello-result.png"/]
+[image assetsSrc="intro-to-programming-hello-result.png" /]
 
 The message `Process finished with exit code 0` signifies that there are no errors in our code.
 
@@ -65,7 +65,7 @@ To start the program, press `[Ctrl + Shift + F10]`.
 
 The result will be written on the console (PyCharm has its own console):
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/intro-to-programming-console.png"/]
+[image assetsSrc="intro-to-programming-console.png" /]
 
 Notice that we start it with `[Ctrl + Shift + F10]`, and `[Shift + F10]` is used to run the program.
 

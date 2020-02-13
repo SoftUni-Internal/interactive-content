@@ -23,7 +23,7 @@ It takes three arguments:
 Having a **default** value means that we don't have to specify it and the function will use 0 or 1 as parameter depending on whether it is start or step.
 
 **Example: range(0, 10, 2)**
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/for-loop-range-use-case.png"/]
+[image assetsSrc="for-loop-range-use-case.png" /]
 
 **Note:** All parameters must be whole numbers (integers), positive or negative
 
@@ -60,7 +60,7 @@ for num in range(1, 10, 3):
   # loop body
 # rest of code
 ```
-[image src="https://github.com/AtanasovAtanas/pb-interactive-python/blob/master/assets/for-loop-range-use-case-example.png"/]
+[image assetsSrc="for-loop-range-use-case-example.png" /]
 
 `num` is the variable that will represent the current number of iterations. 
 

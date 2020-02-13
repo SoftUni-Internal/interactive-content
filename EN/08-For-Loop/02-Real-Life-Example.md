@@ -14,7 +14,7 @@
 # Real-Life Example: Moving Dishes
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/04.For-Loop-Real-Life-Example-Dishes.png"/]
+[image assetsSrc="04.For-Loop-Real-Life-Example-Dishes.png" /]
 
 You know **exactly how many** dishes you are going to move from the sink to the dishwasher before you start this task, because there is a certain number of dirty dishes in the sink.
 

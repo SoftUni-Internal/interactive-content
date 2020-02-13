@@ -87,7 +87,7 @@ The program will run in the **following** way:
 # Example: Point in a Rectangle
 Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/03.Point-in-rectangle-01.png"/]
+[image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 The input data is read from the console and consists of 6 lines: 
 - the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
