@@ -14,7 +14,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="24-05-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Sum Digits" taskId="26-05-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -90,7 +90,7 @@ Write a program, which:
 
 [slide]
 # Problem: Favorite Book
-[code-task title="Favorite Book" taskId="24-05-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Favorite Book" taskId="26-05-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -133,7 +133,7 @@ Book found! Attempts: 4
 
 [slide]
 # Problem: Find Min and Max
-[code-task title="Find Min and Max" taskId="24-05-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Find Min and Max" taskId="26-05-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 import math
@@ -224,7 +224,7 @@ Min number: 0
 
 [slide]
 # Problem: Special Number
-[code-task title="Special Number" taskId="24-05-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Special Number" taskId="26-05-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -269,7 +269,7 @@ Write a program, which:
 
 [slide]
 # Problem: Special Bonus
-[code-task title="Special Bonus" taskId="24-05-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Special Bonus" taskId="26-05-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -320,7 +320,7 @@ Write a program, which:
 
 [slide]
 # Problem: Sequence 2k + 1
-[code-task title="Sequence 2k + 1" taskId="24-05-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="26-05-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -417,7 +417,7 @@ Write a program, which:
 
 [slide]
 # Problem: Account Balance
-[code-task title="Account Balance" taskId="24-05-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Account Balance" taskId="26-05-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

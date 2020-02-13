@@ -1,6 +1,6 @@
 [slide]
 # Problem: Personal Titles
-[code-task title="Personal Titles" taskId="24-03E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Personal Titles" taskId="26-03E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

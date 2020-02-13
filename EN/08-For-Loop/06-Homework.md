@@ -24,7 +24,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Biggest Number
-[code-task title="Biggest Number" taskId="24-04-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Biggest Number" taskId="26-04-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -77,7 +77,7 @@ Write a program, which:
 
 [slide]
 # Problem: Max and Min Numbers
-[code-task title="Max and Min Numbers" taskId="24-04-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Max and Min Numbers" taskId="26-04-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -145,7 +145,7 @@ Min number: -2
 
 [slide]
 # Problem: Power of Number
-[code-task title="Power of Number" taskId="24-04-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Power of Number" taskId="26-04-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -183,7 +183,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="24-04-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Equal Pairs" taskId="26-04-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -316,7 +316,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="24-04-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="26-04-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -370,7 +370,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="24-04-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="26-04-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -414,7 +414,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="24-04-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Vowel Sum" taskId="26-04-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -497,7 +497,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="24-04-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Rollercoaster" taskId="26-04-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -591,7 +591,7 @@ The rollercoaster departures
 
 [slide]
 # Problem: Multiply
-[code-task title="Multiply" taskId="24-04-p-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Multiply" taskId="26-04-p-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

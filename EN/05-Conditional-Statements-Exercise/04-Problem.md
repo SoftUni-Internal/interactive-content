@@ -1,6 +1,6 @@
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="24-02E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Day of Week" taskId="26-02E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

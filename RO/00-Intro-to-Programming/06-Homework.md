@@ -25,7 +25,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Print "Hello Python"
-[code-task title="Print Hello Python" taskId="24-00-p-01" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Print Hello Python" taskId="26-00-p-01" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
 # Write your code here
@@ -52,7 +52,7 @@ Hello Python
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="24-00-p-02" executionType="tests-execution" executionStrategy="python-code" ]
+[code-task title="Calculate and Print 5 * 5" taskId="26-00-p-02" executionType="tests-execution" executionStrategy="python-code" ]
 [code-editor language=python]
 ```
 # Write your code here
@@ -81,7 +81,7 @@ Write a Python program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="24-00-p-03" executionStrategy="python-code" ]
+[code-task title="Name and Expression" taskId="26-00-p-03" executionStrategy="python-code" ]
 [code-editor language=python]
 ```
 # Write your code here
@@ -110,7 +110,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="24-00-p-04" executionStrategy="python-code" ]
+[code-task title="Calculations" taskId="26-00-p-04" executionStrategy="python-code" ]
 [code-editor language=python]
 ```
 # Write your code here
@@ -142,7 +142,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="24-00-p-05" executionStrategy="python-code" ]
+[code-task title="Square of 7 * 7 Stars" taskId="26-00-p-05" executionStrategy="python-code" ]
 [code-editor language=python]
 ```
 # Write your code here
