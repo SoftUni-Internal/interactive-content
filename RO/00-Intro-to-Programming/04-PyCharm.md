@@ -3,16 +3,15 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="3260" endTimeInSeconds="3982"]
-[stream language="EN" videoId="351878876/1e9a5d9c79"  /]
-[stream language="RO" videoId="384850106/be2591b37d" default /]
+[vimeo-video startTimeInSeconds="5724" endTimeInSeconds="6730"]
+[stream language="EN" videoId="388805190"  /]
+[stream language="RO" videoId="390423636" default /]
 [/video-vimeo]
 
 [/slide]
 
 [slide]
-# Integrated Development Environments (IDE)
-
+# Development Environments (IDE)
 In order to program we need an **Integrated Development Environment** (IDE). 
 
 **An environment for development** (Integrated Development Environment – **IDE**) is a combination of traditional tools for development of software applications. 

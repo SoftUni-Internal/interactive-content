@@ -3,15 +3,15 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="2736" endTimeInSeconds="3258"]
-[stream language="EN" videoId="351878876/1e9a5d9c79"  /]
-[stream language="RO" videoId="384850106/be2591b37d" default /]
+[vimeo-video startTimeInSeconds="5198" endTimeInSeconds="5721"]
+[stream language="EN" videoId="388805190"  /]
+[stream language="RO" videoId="390423636" default /]
 [/video-vimeo]
+
 [/slide]
 
 [slide]
 # Programming Languages
-
 A programming language is an artificial language (syntax for expression), meant for giving commands that we want the computer to **read**, **process** and **execute**.
 
 Using programming languages, we write **sequences of commands** (programs), which define what the computer should do. 
@@ -82,5 +82,4 @@ And now we can type in commands. The most simple example is calculating some num
 [image assetsSrc="intro-to-programming-python-terminal3.png" /]
 
 [/slide]
-
 
