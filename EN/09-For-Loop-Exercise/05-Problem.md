@@ -13,50 +13,45 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that reads the n - count of numbers entered by the user, and calculates the amount of the minimum and maximum numbers of odd and even positions (counting from 1). 
 
 If there is not minimum/maximum element print "No".
 
-# Input
+## Input
 - On the first input line read count of numbers - N - integer \[0...100\]
 - On every next line read a number - floating-point number \[-100...100\]
 
-# Output
+## Output
 The output should be formatted in the following form:
-"OddSum=" + \{sum of the numbers on odd positions\},
 
-"OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
+- "OddSum=" + \{sum of the numbers on odd positions\},
+- "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
+- "OddMax=" + \{maximum value of the numbers of odd positions\} / \{"No"\},
+- "EvenSum=" + \{sum of the numbers of even positions\},
+- "EvenMin=" + \{minimum value of the numbers of even positions\} / \{"No"\},
+- "EvenMax=" + \{maximum value of the numbers of even positions\} / \{"No"\}
+- Each number should be formatted to the second decimal point.
 
-"OddMax=" + \{maximum value of the numbers of odd positions\} / \{"No"\},
+## Example
 
-"EvenSum=" + \{sum of the numbers of even positions\},
+| Input | Output |   
+| --- | --- |
+| 5 | OddSum=8.00, | |
+| 3 | OddMin=-3.00, |
+| -2 | OddMax=8.00, | | |
+| 8 | EvenSum=9.00, | |
+| 11 | EvenMin=-2.00, | | 
+| -3 | EvenMax=11.00 |
 
-"EvenMin=" + \{minimum value of the numbers of even positions\} / \{"No"\},
-
-"EvenMax=" + \{maximum value of the numbers of even positions\} / \{"No"\}
-
-Each number should be formatted to the second decimal point.
-
-# Example
-
-| Input | | Output |   
-| --- | --- | --- |
-| 5 | | OddSum=8.00, | |
-| 3 | | OddMin=-3.00, |
-| -2 | | OddMax=8.00, | | |
-| 8 | | EvenSum=9.00, | |
-| 11 | | EvenMin=-2.00, | | 
-| -3 | | EvenMax=11.00 |
-
-| Input | | Output |
-| --- | --- | --- |
-| 0 | | OddSum=0.00, |
-| | | OddMin=No, |
-| | | OddMax=No, |
-| | | EvenSum=0.00, |
-| | | EvenMin=No, |
-| | | EvenMax=No |
+| Input | Output |
+| --- | --- |
+| 0 | OddSum=0.00, |
+| | OddMin=No, |
+| | OddMax=No, |
+| | EvenSum=0.00, |
+| | EvenMin=No, |
+| | EvenMax=No |
 [/task-description]
 [tests]
 [test]

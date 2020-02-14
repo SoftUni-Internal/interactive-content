@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program to calculate the average cost per month for a family over a period of time. For each month the costs are as follows:
 
@@ -41,18 +41,18 @@ Print to the console 5 rows:
 
 All bills sohould be formatted to the 2nd digit after the decimal point.
 
-# Example
+## Example
 
-| Input | | Output |
-| --- | --- | --- |
-| 5 | | Electricity: 447.16 $ |
-| 68.63 | | Water: 100.00 $ |
-| 68.63 | | Internet: 75.00 $ |
-| 132.53 | | Other: 746.59 $ |
-| 93.53 | | Average: 273.75 $ |
-| 63.22 | | |
+| Input | Output |
+| --- | --- |
+| 5 | Electricity: 447.16 $ |
+| 68.63 | Water: 100.00 $ |
+| 68.63 | Internet: 75.00 $ |
+| 132.53 | Other: 746.59 $ |
+| 93.53 | Average: 273.75 $ |
+| 63.22 | |
 
-## Comments
+### Comments
 For 5 months:
 - Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
 - Water -> 5 months \* 20$ = 100$
