@@ -37,11 +37,11 @@ The output should be formatted in the following form:
 
 | Input | Output |   
 | --- | --- |
-| 5 | OddSum=8.00, | |
+| 5 | OddSum=8.00, |
 | 3 | OddMin=-3.00, |
-| -2 | OddMax=8.00, | | |
-| 8 | EvenSum=9.00, | |
-| 11 | EvenMin=-2.00, | | 
+| -2 | OddMax=8.00, |
+| 8 | EvenSum=9.00, |
+| 11 | EvenMin=-2.00, |
 | -3 | EvenMax=11.00 |
 
 | Input | Output |
