@@ -43,7 +43,7 @@ public class Program {
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
-* Reads n numbers
+* Reads **n integer numbers**
 * Finds and prints the **biggest number**
 
 ## Example
