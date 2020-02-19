@@ -2,8 +2,10 @@
 
 [slide]
 # Video
-[vimeo-video videoId="343678060" startTimeInSeconds="3186" endTimeInSeconds="8624" /]
-
+[vimeo-video startTimeInSeconds="6246" endTimeInSeconds="8624"]
+[stream language="EN" videoId="343678060" default /]
+[stream language="RO" videoId="391452320"  /]
+[/vimeo-video]
 [/slide]
 
 [slide]
@@ -169,7 +171,9 @@ public class Program {
 Write a program, which: 
 
 * Receives integers until **"END"**
-* Prints the **biggest** and the **smallest** integer
+* Prints the **biggest** and the **smallest** integer in the following format:
+   * Max number: \{max number\}
+   * Min number: \{min number\}
 # Example
 ## Input
 - 10
