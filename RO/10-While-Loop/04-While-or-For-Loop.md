@@ -1,3 +1,15 @@
+# While or For Loop?
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="2145" endTimeInSeconds="2859"]
+[stream language="EN" videoId="343587107"  /]
+[stream language="RO" videoId="392266139" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # While or For Loop?
 
@@ -6,7 +18,7 @@
 But there are different situations when writing code that require either the first loop, or the other.
 
 When you know **exactly how many times** you want to loop through a block of code, use the `for` loop.
-```py
+```py live
 for i in range(1, 5)
     print(i)
 ```
@@ -19,7 +31,7 @@ But, there could be many **complex** problems where number of iterations depend 
 That means we don't know in advance **how many times** to repeat a loop.
 
 In those situation it is better to use `while` loop.
-```py
+```py live
 i = int(input())
 
 while i != 10
@@ -37,18 +49,19 @@ while i != 10
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -81,18 +94,19 @@ print(number)
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -122,18 +136,19 @@ Write a program, which:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -168,18 +183,18 @@ print(number)
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -197,12 +212,5 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="343587107" startTimeInSeconds="2145" endTimeInSeconds="2859" /]
 
 [/slide]

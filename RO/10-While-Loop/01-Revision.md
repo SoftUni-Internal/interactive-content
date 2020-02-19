@@ -1,38 +1,46 @@
+# Revision
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1025" endTimeInSeconds="1220"]
+[stream language="EN" videoId="343587107"  /]
+[stream language="RO" videoId="392266139" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Revision
 
-# For Loop
+## For Loop
 Allows code to be executed **repeatedly**.
 
 Repeating while the condition is met.
 
 Iterating over a collection.
-```python
+```py
 for i in iterable:
   print(i)
 ```
 
-# Range
+## Range
 `range()` is a function in Python, which generates a collection of numbers in a given range.
 
-```python
-range(1, 5) # stop is not inclusive
+```py live
+for i in range(1, 5):
+  print(i)
 ```
 
-```python
-range(1, 10, 2) # the step is optional
-# 1 3 5 7 9
+Having a step:
+```py live
+for i in range(1, 10, 2):
+  print(i)
 ```
 
-```python
-range(10, 1, -2) # negative step
-# 10 8 6 4 2
+Having a negative step:
+```py live
+for i in range(10, 1, -2):
+  print(i)
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="343587107" startTimeInSeconds="1025" endTimeInSeconds="1220" /]
-
 [/slide]

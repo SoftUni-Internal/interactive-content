@@ -1,3 +1,15 @@
+# While Loop
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1331" endTimeInSeconds="2144"]
+[stream language="EN" videoId="343587107"  /]
+[stream language="RO" videoId="392266139" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # While Loop
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
@@ -31,7 +43,7 @@ Here is how we can solve the problem:
 - In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
 
 Here is a sample implementation of this idea:
-```py
+```py live
 n = int(input())
 num = 1
 while num <= n:
@@ -49,7 +61,7 @@ while num <= n:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
@@ -83,7 +95,7 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Solution: Decreasing Numbers
+## Solution: Decreasing Numbers
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
@@ -94,15 +106,15 @@ while number >= 1:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
 * Prints the numbers starting from the number to 1 (**inclusive**)
-# Example
-## Input
+## Example
+### Input
 - 4
-## Output
+### Output
 - 4
 - 3
 - 2
@@ -136,19 +148,19 @@ Write a program, which:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a **number** from the console
 * Checks if the number is in the range between **1 and 100**
 * If it isn't - it reads a **new one**
 * If it is - **prints the number** and the program stops
-# Example
-## Input
+## Example
+### Input
 - -10
 - 101
 - 50
-## Output
+### Output
 - 50
 [/task-description]
 [tests]
@@ -180,19 +192,20 @@ print(num)
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a **number** from the console
 * Checks if the number is in the range between **1 and 100**
 * If it isn't - it reads a **new one**
 * If it is - **prints the number** and the program stops
-# Example
-## Input
+
+## Example
+### Input
 - -10
 - 101
 - 50
-## Output
+### Output
 - 50
 [/task-description]
 [tests]
@@ -209,12 +222,5 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="343587107" startTimeInSeconds="1331" endTimeInSeconds="2144" /]
 
 [/slide]

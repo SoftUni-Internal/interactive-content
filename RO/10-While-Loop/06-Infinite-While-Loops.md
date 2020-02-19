@@ -1,38 +1,42 @@
+# Infinite While Loop
+
+[slide]
+# Video
+ 
+[vimeo-video startTimeInSeconds="2968" endTimeInSeconds="3357"]
+[stream language="EN" videoId="343587107"  /]
+[stream language="RO" videoId="392266139" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Infinite While Loop
 We call an infinite loop one that repeats infinitely the performance of its body. 
 
 In `while` loops the end check is a conditional expression that always returns `True`. 
 
-```py
+```py live
 while True:
-  # Commands
+  print('Hello world!')
 ```
 
 # Example: Infinite While Loop (Bug)
-```py
+```py live
 command = "Add"
 while command != "End":
-  print("Executing: " + command)
+  print("Executing: ", command)
 ```
 
 In the example above, the condition is always `True` because it is never changed.
 
 # Example: Finite Loop (Bug Fixed)
-```py
-string command = "Add"
+```py live
+command = "Add"
 while command != "End":
-  print("Executing: " + command)
-
+  print("Executing: ", command)
   command = input()
 ```
 
 Here, the value of the variable `command` is changed at each iteration and the **infinite loop** is avoided. 
-[/slide]
-
-[slide]
-# Video
- 
-[vimeo-video videoId="343587107" startTimeInSeconds="2968" endTimeInSeconds="3357" /]
-
 [/slide]
