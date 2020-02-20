@@ -128,7 +128,7 @@ Write a program, which:
 ## Example
 | Input | Output |
 | --- | --- |
-| Alice in Wonderland | Book Found! Attempts: 3 |
+| Alice in Wonderland | Book found! Attempts: 3 |
 | Winnie the Pooh | |
 | Peter Pan | |
 | Alice in Wonderland | |
@@ -183,6 +183,7 @@ Write a program, which:
 | 304 |  |
 | 0 |  |
 | 50 |  |
+| END |  |
 
 [/task-description]
 [tests]
