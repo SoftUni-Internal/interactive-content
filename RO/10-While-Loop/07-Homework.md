@@ -4,7 +4,7 @@
 # Video
  
 [vimeo-video startTimeInSeconds="7016" endTimeInSeconds="9705"]
-[stream language="EN" videoId="343587107" /]
+[stream language="EN" videoId="343587107"  /]
 [stream language="RO" videoId="392266139" default /]
 [/vimeo-video]
 [/slide]
@@ -117,13 +117,13 @@ Write a program, which:
 * Prints "Book found! Attempts: \{attemptsCount\}" and stops afterwards
 
 ## Example
-### Input
-- Alice in Wonderland
-- Winnie the Pooh
-- Peter Pan
-- Alice in Wonderland
-### Output
-- Book Found! Attempts: 3
+| Input | Output |
+| --- | --- |
+| Alice in Wonderland | Book found! Attempts: 3 |
+| Winnie the Pooh | |
+| Peter Pan | |
+| Alice in Wonderland | |
+
 [/task-description]
 [tests]
 [test]
@@ -164,15 +164,16 @@ Write a program, which:
     * Min number: \{min number\}
 
 ## Example
-### Input
-- 10
-- 20
-- 304
-- 0
-- 50
-### Output
-- Max number: 304
-- Min number: 0
+
+| Input | Output |
+| --- | --- |
+| 10 | Max number: 304 |
+| 20 | Min number: 0 |
+| 304 | |
+| 0 | |
+| 50 | |
+| END | |
+
 [/task-description]
 [tests]
 [test]
