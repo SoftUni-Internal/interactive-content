@@ -1,4 +1,4 @@
-# Programming Basics with Java
+# Programming Fundamentals with Java
 
 ## Description
 This course teaches the **basics of coding**, such as:
