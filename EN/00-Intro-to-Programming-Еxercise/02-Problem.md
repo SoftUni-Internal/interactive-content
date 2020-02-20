@@ -1,6 +1,6 @@
 [slide]
-# Problem: Rectangle Area
-[code-task title="Rectangle Area" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Division
+[code-task title="Division" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -13,20 +13,49 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
+You will be given an integer and you have to print whether that number is divisible by the following numbers: **2**, **3**, **6**, **7**, **10**. 
 
-## Output
-* Print the the calculated area
+You should always take the **bigger** division. 
+
+If the number is divisible by **both 2 and 3** it is also **divisible by 6** and you should **print only the division by 6**. 
+
+If the number is not divisible by any of the given numbers print "**Not divisible**". 
+
+Otherwise print "**The number is divisible by \{number\}**".
+
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
+30
 [/input]
 [output]
-50
+The number is divisible by 10
+[/output]
+[/test]
+[test]
+[input]
+1643
+[/input]
+[output]
+Not divisible
+[/output]
+[/test]
+[test]
+[input]
+10
+[/input]
+[output]
+The number is divisible by 10
+[/output]
+[/test]
+[test]
+[input]
+15
+[/input]
+[output]
+The number is divisible by 3
 [/output]
 [/test]
 [/tests]
