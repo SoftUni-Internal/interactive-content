@@ -4,7 +4,7 @@
 # Video
  
 [vimeo-video startTimeInSeconds="7016" endTimeInSeconds="9705"]
-[stream language="EN" videoId="343587107"  /]
+[stream language="EN" videoId="343587107" /]
 [stream language="RO" videoId="392266139" default /]
 [/vimeo-video]
 [/slide]
@@ -481,4 +481,10 @@ Total: ‭165.73‬
 [code-io /]
 [/code-task]
 
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
 [/slide]
