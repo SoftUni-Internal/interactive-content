@@ -1,8 +1,10 @@
 [slide]
-# Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="ITPE-p-05" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Login
+[code-task title="Login" taskId="ITPE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
       // Write code here
@@ -12,18 +14,42 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **prints a triangle** of stars. 
+You will be given a string representing a **username**. 
 
-You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
+The **password** will be that **username reversed**. 
 
-## Output
-```
-*
-**
-***
-****
-*****
-```
+**Until** you receive the **correct** password **print** "Incorrect password. Try again." 
+
+**When** you receive the **correct** password **print** "User \{username\} logged in." 
+
+If the password is still not correct on the **fourth try** print "User {username} blocked!" and **end** the program.
+
+## Example
+### Input
+momo
+
+omom
+### Output
+User momo logged in.
+### Input
+sunny
+
+rainy
+
+cloudy
+
+sunny
+
+not sunny
+
+### Output
+Incorrect password. Try again.
+
+Incorrect password. Try again.
+
+Incorrect password. Try again.
+
+User sunny blocked!
 [/task-description]
 [code-io /]
 [tests]
