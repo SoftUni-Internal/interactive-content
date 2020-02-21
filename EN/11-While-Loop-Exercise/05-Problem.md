@@ -13,20 +13,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description 
+## Description 
 Write a program in which Martin solves problems for exams until he receives message from his trainer: "**Enough**". 
 
 Every time he solves a problem, he get a grade. **The program should ends either** Martin receives "Enough" command, **or obtain the number of poor grades**. 
 
 A poor grade is a grade less or equal to 4.00.
 
-# Input
+## Input
 - On the first line – **number of poor grades** – integer in range \[1…5\]
 - **After that repeatedly two lines**:
   - **Name of a problem - text**
   - **Grade** - integer in range \[2…6\]
 
-# Output
+## Output
 - If Martin reaches "**Enough**" command, print **3** lines:
   - "Average score: \{average grade\}"
   - "Number of problems: \{number of ALL problems\}"
@@ -36,7 +36,7 @@ A poor grade is a grade less or equal to 4.00.
 
 **The average grade should be formatted to the second decimal point.**
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Average score: 5.25 |
@@ -50,7 +50,7 @@ A poor grade is a grade less or equal to 4.00.
 | 6 | |
 | Enough | |
 
-## Comments
+### Comments
 - The number of allowed poor grades is 3.
 - First problem\'s name is Money, Martin\'s grade is 6.
 - Second problem - Story, grade - 4.
@@ -61,9 +61,9 @@ A poor grade is a grade less or equal to 4.00.
 - Number of solved problems: 4
 - Last problem: Bus
 
-# Example
+## Example
 | **Input** | **Output** |
-| --- | --- | --- |
+| --- | --- |
 | 2| You need a break, 2 poor grades. |
 | Income| |
 | 3| |
@@ -72,7 +72,7 @@ A poor grade is a grade less or equal to 4.00.
 | Best Player| |
 | 4| |
 
-## Comments
+### Comments
 - The number of allowed poor grades is 2.
 - The first problem\'s name is Income, Martin\' grade is 3.
 - Second problem - Game Info, grade - 6.

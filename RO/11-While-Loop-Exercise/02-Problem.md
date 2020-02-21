@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 At a charity event, payments for the purchased products are always **alternated**: **cash payment and card payment**. **Always first payment method is cash**.
 
 The following payment rules have been established:
@@ -22,14 +22,14 @@ The following payment rules have been established:
 
 The program ends either after we receive the command **"End"**, or after the **funds are collected**.
 
-# Input
+## Input
 Read from the console:
 - The amount **expected to be collected** from sales - integer in range \[1...10000\] 
 
 On each subsequent line, until the **"End"** command is received or until **the necessary funds are collected**: 
     - **The prices of items** to be purchased - integer in range \[1...500\]
 
-# Output
+## Output
 Print on the console:
 - In case of successful transaction: "Product sold!" 
 - In case of unsuccessful transaction: "Error in transaction!" 
@@ -40,20 +40,20 @@ Print on the console:
 - When the **"End"** command is received, **one line** is written:
     - "Failed to collect required money for charity."
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 500| | Error in transaction!|
-| 120| | Error in transaction!|
-| 8| | Product sold!|
-| 63| | Product sold!|
-| 256| | Product sold!|
-| 78| | Product sold!|
-| 317| | Average CS: 70.50|
-| | | Average CC: 286.50|
+| **Input** | **Output** |
+| --- | --- |
+| 500| Error in transaction!|
+| 120| Error in transaction!|
+| 8| Product sold!|
+| 63| Product sold!|
+| 256| Product sold!|
+| 78| Product sold!|
+| 317| Average CS: 70.50|
+| | Average CC: 286.50|
 
-## Comments
+### Comments
 - The condition is rotated first in **cash payment**, then through **credit card**
 - 120 > 100 transaction is rejected 
 - 8 < 10 transaction is rejected 

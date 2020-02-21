@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
 
 Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
@@ -40,17 +40,17 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 - If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
     - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 2 | | Detergent was enough! |
-| 53 | | 118 dishes and 55 pots were washed. |
-| 65 | | Leftover detergent 85 ml. |
-| 55 | | |
-| End | | |
+| **Input** | **Output** |
+| --- | --- |
+| 2 | Detergent was enough! |
+| 53 | 118 dishes and 55 pots were washed. |
+| 65 | Leftover detergent 85 ml. |
+| 55 | |
+| End | |
 
-## Comments
+### Comments
 - Detergent quantity = 2 \* 750 = 1500 ml.
 - 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
 - 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)

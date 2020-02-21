@@ -13,37 +13,37 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program that calculates the **average grade** of a student from his entire education. 
 
-# Input
+## Input
 - On the first line you will receive **the name of the student**, and on each following line his annual grades. - The student passes to upper class, if his **annual grade is 4.00 or greater**. 
 - If his grade is less than 4.00, he has to **repeat** the class.
 
-# Output
+## Output
 - If the student graduates **12th** class, you have to print:
     - "\{student name\} graduated. Average grade: \{average grade from his entire education\}"
 
 **The grade should be formatted to the second decimal point.**
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- | 
-| John | | John graduated. Average grade: 5.37 | 
-| 4 | | |
-| 5.5 | | | 
-| 6 | | | 
-| 5.43 | | |
-| 4.5 | | | 
-| 6 | | | 
-| 5.55 | | | 
-| 5 | | | 
-| 6 | | | 
-| 6 | | | 
-| 5.43 | | |
-| 5 | | |
+| **Input** | **Output** |
+| --- | --- | 
+| John | John graduated. Average grade: 5.37 | 
+| 4 | |
+| 5.5 | | 
+| 6 | | 
+| 5.43 | |
+| 4.5 | | 
+| 6 | | 
+| 5.55 | | 
+| 5 | | 
+| 6 | | 
+| 6 | | 
+| 5.43 | |
+| 5 | |
 [/task-description]
 [tests]
 [test]
