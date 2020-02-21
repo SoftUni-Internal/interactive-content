@@ -26,7 +26,8 @@ Print: "Total price: {price}".
 
 Format the price to the second decimal point.
 
-| asd | **Friday** | **Saturday** | **Sunday** |
+|  | **Friday** | **Saturday** | **Sunday** |
+| --- | --- | --- | --- |
 | 1 | 2 | 3 | 4 |
 
 There are also discounts based on some conditions:
