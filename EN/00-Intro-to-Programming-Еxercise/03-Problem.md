@@ -27,7 +27,7 @@ Print: "Total price: {price}".
 Format the price to the second decimal point.
 
 | asd | **Friday** | **Saturday** | **Sunday** |
-| **Students** | 8.45 | 9.80 | 10.46 |
+| 1 | 2 | 3 | 4 |
 
 There are also discounts based on some conditions:
 •	Students – if the group is bigger than or equal to 30 people reduce the total price by 15%
