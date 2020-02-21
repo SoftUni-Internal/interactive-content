@@ -26,7 +26,7 @@ Print: "Total price: {price}".
 
 Format the price to the second decimal point.
 
-| - | **Friday** | **Saturday** | **Sunday** |
+| asd | **Friday** | **Saturday** | **Sunday** |
 | **Students** | 8.45 | 9.80 | 10.46 |
 | **Business** | 10.90 | 15.60 | 16 |
 | **Regular** | 15 | 20 | 22.50 |
