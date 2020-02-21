@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program that calculates the expenses for yard greening. 
 
@@ -21,13 +21,13 @@ The price for one square meter is 7.61 dollars with VAT.
 
 The company offers 18% discount from the total price.
 
-# Input
+## Input
 
 Single line from the console:
 
 - Square meters which will be greening - float-pointing number in range [0.00… 10000.00]
 
-# Output
+## Output
 
 Print on the console two lines:   
 - "The final price is: \{total price\} dollars"
@@ -35,13 +35,13 @@ Print on the console two lines:
 
 Prices should be formatted to the second decimal point.
 
-# Example
+## Example
 | Input | | Output |
 | --- | --- | --- |
-| 540 | | The final price is: 3369.71 dollars |
-|  | | The discount is: 739.69 dollars |
+| 540 | The final price is: 3369.71 dollars |
+|  | The discount is: 739.69 dollars |
 
-# Comments
+### Comments
 - Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $
 - Calculate the discount: 0.18 \* 4109.40 = 739.69 $
 - Calculate the final price: 4109.40 – 739.69 = 3369.71 $

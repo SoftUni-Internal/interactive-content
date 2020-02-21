@@ -13,33 +13,33 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that calculates how many hours will be necessary to an architect to create projects of some construction objects. 
 
 Creating one project takes approximately 3 hours.
 
-# Input
+## Input
 Read two lines from the console:
 - Name of the architect - String
 - Number of projects - integer in range \[0… 100\]
 
-# Output
+## Output
 
 Print on the console: 
 
 -  "The architect \{name of the architect\} will need \{necessary hours\} hours to complete \{number of projects\} project/s."
 
-# Example
+## Examples
 
-| Input | | Output | 
-| --- | --- | --- |
-| George | | The architect George will need 12 hours to complete 4 project/s. |
-| 4 | | |
+| Input | Output | 
+| --- | --- |
+| George | The architect George will need 12 hours to complete 4 project/s. |
+| 4 | |
 
-| Input | | Output |  
-| --- | --- | --- |
-| Sanya | | The architect Sanya will need 27 hours to complete 9 project/s. |
-| 9 | | |
+| Input | Output |  
+| --- | --- |
+| Sanya | The architect Sanya will need 27 hours to complete 9 project/s. |
+| 9 | |
 [/task-description]
 [tests]
 [test]

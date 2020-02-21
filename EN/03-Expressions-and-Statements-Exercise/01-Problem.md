@@ -13,24 +13,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a console program that reads an integer \'a\' and calculates the area of a square with size \'a\'.
 
-# Input
+## Input
 
 Read from the console:
 - size of the square - integer in range \[1...1000\]
 
-# Output
+## Output
 
 Print on the console the calculated area
 
-# Example
+## Examples
 
-| Input | | Output |
-| --- | --- | --- |
-| 5 | | 25 |
+| Input | Output |
+| --- | --- |
+| 5 | 25 |
+
+| Input | Output |
+| --- | --- |
+| 6 | 36 |
 [/task-description]
 [tests]
 [test]
