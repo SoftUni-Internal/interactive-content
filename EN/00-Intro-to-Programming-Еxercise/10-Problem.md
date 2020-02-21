@@ -16,7 +16,7 @@ public class Main {
 ## Description
 John has the bad habit to trash his PC when he loses a game and rage quits. 
 
-His gaming setup consists of **headset, mouse, keyboard and display**. You will receive John`s **lost games count**. 
+His gaming setup consists of **headset, mouse, keyboard and display**. You will receive John's **lost games count**. 
 
 Every **second** lost game, John trashes his **headset**.
 
