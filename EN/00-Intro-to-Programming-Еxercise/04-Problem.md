@@ -35,12 +35,42 @@ Sum: 45
 [tests]
 [test]
 [input]
-
+5
+10
 [/input]
 [output]
-11
+5 6 7 8 9 10
+Sum: 45
+[/output]
+[/test]
+[test]
+[input]
+0
+26
+[/input]
+[output]
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+Sum: 351
+[/output]
+[/test]
+[test]
+[input]
+50
+60
+[/input]
+[output]
+50 51 52 53 54 55 56 57 58 59 60
+Sum: 605
+[/output]
+[/test]
+[test]
+[input]
 24
-8
+29
+[/input]
+[output]
+24 25 26 27 28 29
+Sum: 159
 [/output]
 [/test]
 [/tests]
