@@ -14,7 +14,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You task is to calculate the **total price of a purchase** from a vending machine.
+Your task is to calculate the **total price of a purchase** from a vending machine.
 
 Until you receive "**Start**" you will be given different coins that are being inserted in the machine. 
  
