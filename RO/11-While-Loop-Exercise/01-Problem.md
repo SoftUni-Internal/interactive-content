@@ -26,13 +26,13 @@ Accept that on every **third** filling with vessels, the dishwasher is filled on
 
 Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
 
-# Input
+## Input
 Read from the console: 
 - **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
 
 On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
 
-# Output
+## Output
 - In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
     - "Detergent was enough!"
     - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
@@ -56,6 +56,17 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 - 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
 - 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
 - We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | Not enough detergent, 100 ml. more necessary! |
+| 10 | |
+| 15 | |
+| 10 | |
+| 12 | |
+| 13 | |
+| 30 | |
 [/task-description]
 [tests]
 [test]
