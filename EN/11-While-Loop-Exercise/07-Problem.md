@@ -7,7 +7,7 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that reads a hidden message in a sequence of symbols.
 
 You will receive each of them on a single line until the "**End**" command. 
@@ -26,13 +26,13 @@ After you have found **all three symbols from the command**, you have to print t
 
 A new word is started at the same way, waiting the secret command to be printed. 
 
-# Input
+## Input
 - Read a sequence of lines with a single symbol each, until you receive the "**End**" command
 
-# Output
+## Output
 - Print on the console **every word after the secret command** followed by **space**
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |

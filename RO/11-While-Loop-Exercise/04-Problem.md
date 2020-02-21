@@ -7,7 +7,7 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Andreea goes to her home town after being a long time abroad. 
 
 When she comes home, she sees her grandmother\'s library and remembers her favourite book. 
@@ -16,42 +16,42 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 
 **Until** Andreea finds her favourite book **or** doesn\'t check all books in the library, the program have to reads every time the name of the next book on a separate line.
 
-# Input
+## Input
 - First line of input is the name of the book Andreea's searching for - string
 - Second line is the capacity of the library - integer
 - On every nex line - name of book from library - string
 
-# Output
+## Output
 - If Andreea **does not** find the book, print **two** lines:
   - "The book you search is not here!"
   - "You checked \{count\} books."
 - If Andreea **finds** the book, print a **single** line:
   - "You checked \{count\} books and found it."
 
-# Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| Troy | | You checked 2 books and found it. |
-| 8 | | |
-| Stronger | | |
-| Life Style | | |
-| Troy | | |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Troy | You checked 2 books and found it. |
+| 8 | |
+| Stronger | |
+| Life Style | |
+| Troy | |
 
-## Comments
+### Comments
 - Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
 - The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
 
-# Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| The Spot | | The book you search is not here! |
-| 4 | | You checked 4 books. |
-| Hunger Games | | |
-| Harry Potter | | |
-| Torronto | | | 
-| Spotify | | | 
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| The Spot | The book you search is not here! |
+| 4 | You checked 4 books. |
+| Hunger Games | |
+| Harry Potter | |
+| Torronto | | 
+| Spotify | | 
 
-## Comments
+### Comments
 - Andreea is searching for a book with name "The Spot". The library contains 4 books.
 - The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify"
 - Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.

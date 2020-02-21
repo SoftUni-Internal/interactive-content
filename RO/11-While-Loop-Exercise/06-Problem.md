@@ -7,7 +7,7 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Gaby wants to start healthy life and shesets a goal to walk **10000 steps** a **day**.
 
 Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
@@ -18,24 +18,23 @@ In case she wants to go home **before** reaching the goal, she will enter "**Goi
 After that, if she didn\'t manage to reach her goal, you have to print the following massage on the console: 
 - "\{difference in steps\} more steps to reach goal."
 
-# Example
+## Examples
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 1000 | | Goal reached! Good job! |
-| 1500| | | 
-| 2000| | | 
-| 6500| | |
+| **Input** | **Output** |
+| --- | --- |
+| 1000 | Goal reached! Good job! |
+| 1500| | 
+| 2000| | 
+| 6500| |
 
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 1500 | | 2500 more steps to reach goal. |
-| 300| | |
-| 2500| | |
-| 3000| | |
-| Going home| | |
-| 200| | |
+| **Input** | **Output** |
+| --- | --- |
+| 1500 | 2500 more steps to reach goal. |
+| 300| |
+| 2500| |
+| 3000| |
+| Going home| |
+| 200| |
 [/task-description]
 [tests]
 [test]
