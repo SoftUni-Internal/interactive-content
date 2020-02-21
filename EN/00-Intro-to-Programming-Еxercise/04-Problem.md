@@ -1,8 +1,10 @@
 [slide]
-# Problem: Calculations
-[code-task title="Calculations" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Print and Sum
+[code-task title="Print and Sum" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -13,20 +15,27 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program, which calculates and prints the value of the following expressions:
+Write a program to **display numbers** from given start to given end and their sum. 
 
-* 5 + 3 \* 2
-* 4 \* 3 \* 2
-* 12 \/ 3 \* 2
+All the numbers will be **integers**. 
 
-## Output 
+On the **first line** you will receive the **start** number, on the **second** the **end** number.
 
-Print the result of each expression on a separate line
+## Example
+### Input
+5
+
+10
+### Output
+5 6 7 8 9 10
+
+Sum: 45
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
+
 [/input]
 [output]
 11
