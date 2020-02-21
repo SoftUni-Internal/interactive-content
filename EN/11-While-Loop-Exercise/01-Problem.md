@@ -50,6 +50,18 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 - 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
 - 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
 - We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | Not enough detergent, 100 ml. more necessary! |
+| 10 | |
+| 15 | |
+| 10 | |
+| 12 | |
+| 13 | |
+| 30 | |
+
 [/task-description]
 [tests]
 [test]
