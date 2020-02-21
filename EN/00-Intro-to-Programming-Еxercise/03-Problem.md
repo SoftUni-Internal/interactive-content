@@ -1,8 +1,10 @@
 [slide]
 # Problem: Vacation
-[code-task title="Vacarion" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Vacarion" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -30,8 +32,8 @@ Format the price to the second decimal point.
 | **Regular** | 15 | 20 | 22.50
 
 There are also discounts based on some conditions:
-•	Students – if the group is bigger than or equal to 30 people you should reduce the total price by 15%
-•	Business – if the group is bigger than or equal to  100 people 10 of them can stay for free.
+•	Students – if the group is bigger than or equal to 30 people reduce the total price by 15%
+•	Business – if the group is bigger than or equal to  100 people 10 of them can stay for free
 •	Regular – if the group is bigger than or equal 10 and less than or equal to 20 reduce the total price by 5% 
 
 You should reduce the prices in that EXACT order
@@ -41,18 +43,52 @@ You should reduce the prices in that EXACT order
 [tests]
 [test]
 [input]
+30
+Students
+Sunday
 [/input]
 [output]
-1
-2
-3
-4
+Total price: 266.73
+[/output]
+[/test]
+[test]
+[input]
+40
+Regular
+Saturday
+[/input]
+[output]
+Total price: 800.00
+[/output]
+[/test]
+[test]
+[input]
 5
-6
-7
-8
-9
+Students
+Friday
+[/input]
+[output]
+Total price: 42.25
+[/output]
+[/test]
+[test]
+[input]
 10
+Students
+Saturday
+[/input]
+[output]
+Total price: 98.00
+[/output]
+[/test]
+[test]
+[input]
+30
+Students
+Friday
+[/input]
+[output]
+Total price: 215.47
 [/output]
 [/test]
 [/tests]

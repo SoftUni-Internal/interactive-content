@@ -1,8 +1,10 @@
 [slide]
 # Problem: Division
-[code-task title="Division" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Division" taskId="ITPE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here

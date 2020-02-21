@@ -3,6 +3,8 @@
 [code-task title="Ages" taskId="ITPE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
