@@ -1,6 +1,6 @@
 [slide]
 # Problem: Print and Sum
-[code-task title="Print and Sum" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print and Sum" taskId="JF-01-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

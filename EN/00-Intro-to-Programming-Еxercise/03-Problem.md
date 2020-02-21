@@ -1,6 +1,6 @@
 [slide]
 # Problem: Vacation
-[code-task title="Vacarion" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vacarion" taskId="JF-01-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
