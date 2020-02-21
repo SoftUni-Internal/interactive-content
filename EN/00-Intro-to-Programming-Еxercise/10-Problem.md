@@ -39,7 +39,7 @@ You will receive the **price** of each item in his gaming setup.
 
 
 ### Output
-Print John`s total expenses: "Rage expenses: {expenses}$."
+Print John's total expenses: **"Rage expenses: \{expenses\}$."**
 
 [/task-description]
 [code-io /]
