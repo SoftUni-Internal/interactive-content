@@ -39,7 +39,7 @@ The output should be printed on the console.
 -	If the **calculated price of the equipment is less or equal to the money** the master has:
     -	"The money is enough - it would cost \{the cost of the equipment\} $."
 -	If the **calculated price of the equipment is more than the money** the master has:
-    - "The master will need \{neededMoney\} $ more."
+	- "The master will need \{neededMoney\} $ more."
 -	All prices must be **rounded** to **two** digits after the decimal point.
 
 [/task-description]
