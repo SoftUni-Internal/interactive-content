@@ -1,6 +1,6 @@
 [slide]
-# Problem: Integer Operations
-[code-task title="Integer Operations" taskId="JF-02-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Sum Digits
+[code-task title="Sum Digits" taskId="JF-02-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,68 +14,44 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read **four integer numbers**. 
 
-**Add** **first** to the **second**, **divide** (integer) the **sum** by the **third** number and **multiply** the result by the **fourth** number. 
+You will be given a **single** integer. 
 
-**Print** the **result**.
+Your task is to find the **sum of its digits**.
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-10
-20
-3
-3
+245678
 [/input]
 [output]
-30
+32
 [/output]
 [/test]
 [test]
 [input]
-15
-14
-2
-3
+97561
 [/input]
 [output]
-42
+28
 [/output]
 [/test]
 [test]
 [input]
-30
-3
-3
-2
+543
 [/input]
 [output]
-22
+12
 [/output]
 [/test]
 [test]
 [input]
-40
-10
-5
-2
+1000
 [/input]
 [output]
-20
-[/output]
-[/test]
-[test]
-[input]
-100
-20
-2
-3
-[/input]
-[output]
-180
+1
 [/output]
 [/test]
 [/tests]
