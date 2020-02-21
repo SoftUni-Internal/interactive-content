@@ -22,7 +22,7 @@ The **password** will be that **username reversed**.
 
 **When** you receive the **correct** password **print** "User \{username\} logged in." 
 
-If the password is still not correct on the **fourth try** print "User {username} blocked!" and **end** the program.
+If the password is still not correct on the **fourth try** print "User \{username\} blocked!" and **end** the program.
 
 ## Example
 ### Input
@@ -55,13 +55,69 @@ User sunny blocked!
 [tests]
 [test]
 [input]
+Acer
+login
+go
+let me in
+recA
 [/input]
 [output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
+Incorrect password. Try again.
+Incorrect password. Try again.
+Incorrect password. Try again.
+User Acer logged in.
+[/output]
+[/test]
+[test]
+[input]
+momo
+omom
+[/input]
+[output]
+User momo logged in.
+[/output]
+[/test]
+[test]
+[input]
+sunny
+rainy
+cloudy
+sunny
+not sunny
+[/input]
+[output]
+Incorrect password. Try again.
+Incorrect password. Try again.
+Incorrect password. Try again.
+User sunny blocked!
+[/output]
+[/test]
+[test]
+[input]
+ac
+fg
+df
+ca
+[/input]
+[output]
+Incorrect password. Try again.
+Incorrect password. Try again.
+User ac logged in.
+[/output]
+[/test]
+[test]
+[input]
+bb
+aa
+ss
+dd
+ff
+[/input]
+[output]
+Incorrect password. Try again.
+Incorrect password. Try again.
+Incorrect password. Try again.
+User bb blocked!
 [/output]
 [/test]
 [/tests]
