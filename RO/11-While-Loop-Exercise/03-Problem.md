@@ -8,7 +8,7 @@
 [/code-editor]
 [task-description]
 ## Description
-Gaby wants to start healthy life and shesets a goal to walk **10000 steps** a **day**.
+Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
 
 Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
 - "**Goal reached! Good job!**".
