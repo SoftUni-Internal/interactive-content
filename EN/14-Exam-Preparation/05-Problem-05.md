@@ -1,7 +1,25 @@
 [slide]
 # Problem 05
+[code-task title="Problem-05" taskId="EP-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
 ## Description
-You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. You have a budget and number of series that the user will want to purchase. Each series has a title and price.
+You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. 
+
+You have a budget and number of series that the user will want to purchase.
+
+Each series has a title and price.
+
 Some of the series have a discount:
 - Thrones – 50%
 - Lucifer – 40%	
@@ -24,40 +42,18 @@ Print one line on the console:
 - If your budget is less than the price of the series: "You need \{money needed\}$ more to buy the series!"
 
 The result must be formatted to two digits after the decimal point.
-[code-task title="Problem-05" taskId="EP-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Input
-Budget - 10
 
-Count series - 3
-
-Name of the first series - Thrones
-
-Price for the first series - 5
-
-Name of the second series - Riverdale
-
-Price for the second series - 5
-
-Name of the third series - Gotham
-
-Price for the third series - 2
-
-## Output
-You bought all the series and left with 0.50$
-
-## Comments
-You receive budget – 10$ and count of series - 3. The first series is Thrones with price 5$, which has 50% discount from the price 5 - 50% = 2.50$. The second series is Riverdale, which does not have a discount on the price. The third series also does not have a discount. Price of series is 2.50 + 5 + 2 = 9.50$. Your budget is bigger than the price of series, so you can buy them.
+## Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| 10 | You bought all the series and left with 0.50$ | You receive budget – 10$ and count of series - 3. |
+| 3 | | The first series is Thrones with price 5$, which has 50% discount from the price 5 - 50% = 2.50$. |
+| Thrones | | The second series is Riverdale, which does not have a discount on the price. |
+| 5 | | The third series also does not have a discount. |
+| Riverdale | | Price of series is 2.50 + 5 + 2 = 9.50$. Your budget is bigger than the price of series, so you can buy them.|
+| 5 | | |
+| Gotham | | |
+| 2 | | |
 [/task-description]
 [code-io /]
 [tests]

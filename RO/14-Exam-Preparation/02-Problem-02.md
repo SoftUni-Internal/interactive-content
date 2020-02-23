@@ -1,5 +1,18 @@
 [slide]
 # Problem 02
+[code-task title="Problem-02" taskId="EP-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
 ## Description
 During the lunch break you want to watch an episode from your favorite series. 
 
@@ -19,38 +32,16 @@ You receive 3 lines from the console:
 Print on the console one line:
 - If the time is enough to watch the episode: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
 - If the time is not enough: "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
-Round the time up to the nearest whole number.
+    - Round the time up to the nearest whole number.
 
-[code-task title="Problem-02" taskId="EP-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Input
-Name of the series - Game of Thrones
+## Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| Game of Thrones | You have enough time to watch Game of Thrones and left with 0 minutes free time. | Time for lunch: 96 * 1/8 = 12.0 |
+| 60 | | Time to unwind: 96 * 1/4 = 24.0 |
+| 96 | | Time left: 96 - 12 - 24 = 60 |
+|  | | The time we have left is bigger or equal to the duration of the episode, so we print the suitable output. |
 
-Duration of an episode - 60
-
-Duration of the break - 96
-
-## Output
-You have enough time to watch Game of Thrones and left with 0 minutes free time.
-
-## Comments
-Time for lunch: 96 * 1/8 = 12.0
-
-Time to unwind: 96 * 1/4 = 24.0
-
-Time left: 96 - 12 - 24 = 60
-
-The time we have left is bigger or equal to the duration of the episode, so we print the suitable output. 
 [/task-description]
 [code-io /]
 [tests]
