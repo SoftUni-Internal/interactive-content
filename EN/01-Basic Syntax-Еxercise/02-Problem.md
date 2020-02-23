@@ -25,6 +25,16 @@ If the number is not divisible by any of the given numbers print "**Not divisibl
 
 Otherwise print "**The number is divisible by \{number\}**".
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 15 | The number is divisible by 3 |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 1643 | Not divisible |
+
 [/task-description]
 [code-io /]
 [tests]

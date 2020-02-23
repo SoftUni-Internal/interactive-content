@@ -39,6 +39,13 @@ There are also discounts based on some conditions:
 
 You should reduce the prices in that EXACT order
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 40 | Total price: 800.00 |
+| Regular | |
+| Saturday | |
+
 [/task-description]
 [code-io /]
 [tests]

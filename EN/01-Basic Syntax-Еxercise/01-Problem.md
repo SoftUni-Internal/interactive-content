@@ -32,17 +32,6 @@ All the values are inclusive
 | **Input** | **Output** |
 | --- | --- |
 | 10 | child |
-| --- | --- |
-| 70 | elder |
-
-
-| **Input** | **Output** |
-| --- | --- |
-| 10 | child |
-
-| **Input** | **Output** |
-| --- | --- |
-| 70 | elder |
 
 [/task-description]
 [code-io /]
