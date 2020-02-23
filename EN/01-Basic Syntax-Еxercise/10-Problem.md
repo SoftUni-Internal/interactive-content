@@ -41,8 +41,8 @@ You will receive the **price** of each item in his gaming setup.
 Print John's total expenses: "Rage expenses: \{expenses\}$."
 
 ### Example
-| **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| **Input** | **Output** |
+| --- | --- |
 | 7 | Rage expenses: 16.00$. |
 | 2 | |
 | 3 | |
