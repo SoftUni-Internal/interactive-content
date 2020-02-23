@@ -10,20 +10,15 @@
 ## Description
 Write a program, which receives a number – **n**, and prints a **triangle** from 1 to n as in the example.
 
-## Example
-### Input
-5
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | 1 |
+| | 2 2 |
+| | 3 3 3 |
+| | 4 4 4 4 |
+| | 5 5 5 5 5 |
 
-### Output
-1
-
-2 2
-
-3 3 3
-
-4 4 4 4
-
-5 5 5 5 5
 [/task-description]
 [code-io /]
 [tests]

@@ -22,6 +22,11 @@ The bounders are:
 
 All the values are inclusive
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 10 | child |
+
 [/task-description]
 [code-io /]
 [tests]

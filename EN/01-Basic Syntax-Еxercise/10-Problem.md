@@ -35,6 +35,15 @@ You will receive the **price** of each item in his gaming setup.
 ### Output
 Print John's total expenses: "Rage expenses: \{expenses\}$."
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 7 | Rage expenses: 16.00$. |
+| 2 | |
+| 3 | |
+| 4 | |
+| 5 | |
+
 [/task-description]
 [code-io /]
 [tests]

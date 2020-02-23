@@ -18,32 +18,21 @@ The **password** will be that **username reversed**.
 
 If the password is still not correct on the **fourth try** print "User \{username\} blocked!" and **end** the program.
 
-## Example
-### Input
-momo
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| momo | User momo logged in. |
+| omom | |
 
-omom
-### Output
-User momo logged in.
-### Input
-sunny
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| sunny | Incorrect password. Try again. |
+| rainy | Incorrect password. Try again. |
+| cloudy | Incorrect password. Try again. |
+| stormy | User sunny blocked! |
+| not sunny | |
 
-rainy
-
-cloudy
-
-sunny
-
-not sunny
-
-### Output
-Incorrect password. Try again.
-
-Incorrect password. Try again.
-
-Incorrect password. Try again.
-
-User sunny blocked!
 [/task-description]
 [code-io /]
 [tests]

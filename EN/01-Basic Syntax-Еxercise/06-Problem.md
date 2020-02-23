@@ -15,6 +15,12 @@ A number is strong if the **sum of the Factorial of each digit is equal to the n
 For example **145** is a strong number, because **1! + 4! + 5! = 145**. 
 
 **Print** "**yes**" if the number is strong and "**no**" if the number is not strong.
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 40585 | yes |
+
 [/task-description]
 [code-io /]
 [tests]
