@@ -1,15 +1,9 @@
 [slide]
 # Problem: Padawan Equipment
-[code-task title="Padawan Equipment" taskId="JF-01-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Padawan Equipment" taskId="JF-01-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-  public static void main(String[] args) {
-      // Write code here
-    }
-}
+# Write your code here
 ```
 [/code-editor]
 [task-description]

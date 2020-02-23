@@ -1,16 +1,9 @@
 [slide]
 # Problem: Vacation
-[code-task title="Vacarion" taskId="JF-01-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Vacarion" taskId="JF-01-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-
+# Write your code here
 ```
 [/code-editor]
 [task-description]
