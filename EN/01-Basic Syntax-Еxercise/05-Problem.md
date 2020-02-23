@@ -24,33 +24,6 @@ The **password** will be that **username reversed**.
 
 If the password is still not correct on the **fourth try** print "User \{username\} blocked!" and **end** the program.
 
-## Example
-### Input
-momo
-
-omom
-### Output
-User momo logged in.
-### Input
-sunny
-
-rainy
-
-cloudy
-
-sunny
-
-not sunny
-
-### Output
-Incorrect password. Try again.
-
-Incorrect password. Try again.
-
-Incorrect password. Try again.
-
-User sunny blocked!
-
 ### Example
 | **Input** | **Output** |
 | --- | --- |
