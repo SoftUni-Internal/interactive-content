@@ -50,6 +50,22 @@ Incorrect password. Try again.
 Incorrect password. Try again.
 
 User sunny blocked!
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| momo | User momo logged in. |
+| omom | |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| sunny | Incorrect password. Try again. |
+| rainy | Incorrect password. Try again. |
+| cloudy | Incorrect password. Try again. |
+| stormy | User sunny blocked! |
+| not sunny | |
+
 [/task-description]
 [code-io /]
 [tests]
@@ -82,7 +98,7 @@ User momo logged in.
 sunny
 rainy
 cloudy
-sunny
+stormy
 not sunny
 [/input]
 [output]

@@ -37,6 +37,20 @@ In that case **print "Sorry, not enough money"**.
 If the person purchases a product **successfully** print **"Purchased \{product name\}"**. 
  
 After the **"End"** command print the money that are left **formatted** to the **second** decimal point in the format **"Change: \{money left\}"**.
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | Cannot accept 0.60 |
+| 1 | Purchased Coke |
+| 0.5 | Purchased Soda |
+| 0.6 | Sorry, not enough money |
+| Start | Change: 0.70 |
+| Coke | |
+| Soda | |
+| Crisps | |
+| End | |
+
 [/task-description]
 [code-io /]
 [tests]

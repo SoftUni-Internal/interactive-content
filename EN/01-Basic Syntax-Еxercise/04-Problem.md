@@ -21,15 +21,12 @@ All the numbers will be **integers**.
 
 On the **first line** you will receive the **start** number, on the **second** the **end** number.
 
-## Example
-### Input
-5
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | 5 6 7 8 9 10|
+| 10 | Sum: 45 |
 
-10
-### Output
-5 6 7 8 9 10
-
-Sum: 45
 [/task-description]
 [code-io /]
 [tests]
