@@ -26,7 +26,7 @@ You receive 3 lines from the console:
 Print on the console one line:
 - If the time is enough to watch the episode: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
 - If the time is not enough: "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
-Round the time up to the nearest whole number.
+    - Round the time up to the nearest whole number.
 
 ## Example
 | **Input** | **Output** | **Comments** |

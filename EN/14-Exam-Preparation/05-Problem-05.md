@@ -9,7 +9,12 @@
 [/code-editor]
 [task-description]
 ## Description
-You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. You have a budget and number of series that the user will want to purchase. Each series has a title and price.
+You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. 
+
+You have a budget and number of series that the user will want to purchase.
+
+Each series has a title and price.
+
 Some of the series have a discount:
 - Thrones – 50%
 - Lucifer – 40%	

@@ -23,6 +23,7 @@ If more people than the available seats try to enter the hall, it is considered 
 ## Input
 Read from the console:
 - First line – hall's capacity – whole number in the range [50... 150]
+
 On each of the next lines until the command "Movie time!":
 - Count of people entering the cinema - whole number in the range [1… 15]
 
