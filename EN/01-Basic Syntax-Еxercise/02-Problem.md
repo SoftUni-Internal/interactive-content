@@ -23,7 +23,7 @@ If the number is divisible by **both 2 and 3** it is also **divisible by 6** and
 
 If the number is not divisible by any of the given numbers print "**Not divisible**". 
 
-Otherwise print "The number is divisible by \{number\}".
+Otherwise print "**The number is divisible by \{number\}**".
 
 ### Example
 | **Input** | **Output** |
