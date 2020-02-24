@@ -13,7 +13,7 @@
 [slide]
 # Summary
 
-Numbers can be compared by the `==,` `<`, `>`, `<=`, `>=` and `!=` operators:
+Numbers can be compared by the `==`, `<`, `>`, `<=`, `>=` and `!=` operators:
 ```py live
 print(5 <= 10) 
 ```
