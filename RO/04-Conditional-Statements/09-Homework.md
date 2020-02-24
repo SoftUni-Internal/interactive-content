@@ -32,21 +32,23 @@ Let's solve a few problems to confirm what we have learned.
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check a password:
 
   * Read a string: the password **guess**
   * Print **"Welcome"** if the password guess is **"s3cr3t!"**
   * Print **"Wrong password!"** in all other cases 
-# Example
-## Input
-- s3cr3t!
-## Output
-- Welcome
-## Input
-- qwerty
-## Output
-- Wrong password!
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| s3cr3t! | Welcome |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| qwerty! | Wrong password! |
+
 [/task-description]
 [tests]
 [test]
@@ -80,21 +82,23 @@ Wrong password!
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which checks for hot water: 
 
   * Read a floating-point number: the water **temperature** (in °C)
   * Print **"The water is boiling"** if the number **> 100**
-  * Prints **"The water is not hot enough"** in all other cases 
-# Example
-## Input
-- 104.8
-## Output
-- The water is boiling
-## Input
-- 29
-## Output
-- The water is not hot enough
+  * Prints **"The water is not hot enough"** in all other cases
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 104.8 | The water is boiling |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 29 | The water is not hot enough |
+
 [/task-description]
 [tests]
 [test]
@@ -127,21 +131,23 @@ The water is not hot enough
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check for fast / slow speed: 
 
   * Read the **speed** (a floating-point number)
   * Print **"Slow"** if the speed **<= 30**
   * Print **"Fast"** if the speed **> 30**
-# Example
-## Input
-- 30
-## Output
-- Slow
-## Input
-- 60
-## Output
-- Fast
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 30 | Slow |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 60 | Fast |
+
 [/task-description]
 [tests]
 [test]
@@ -176,7 +182,7 @@ import math
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate the area of different figures:
   * Reads a string: the figure **type**
   * Checks if the entered figure is **square**, **rectangle** or **circle**
@@ -206,6 +212,7 @@ Write a program to calculate the area of different figures:
 | --- | --- |
 | circle | 28.27 |
 | 28.27 | |
+
 [/task-description]
 [tests]
 [test]
@@ -259,7 +266,7 @@ Unknown figure
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate a ticket price:
 
   * Read a ticket type: either **student** or **regular**
@@ -268,11 +275,17 @@ Write a program to calculate a ticket price:
   * Student ticket price: **1.00**
   * Regular ticket price: **1.60**
   * For invalid type print **"Invalid ticket type!"**
-# Example
-## Input
-- student
-## Output
-- $1.00
+
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| student | $1.00 |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| regular | $1.60 |
 [/task-description]
 [tests]
 [test]
@@ -313,7 +326,7 @@ Invalid ticket type!
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate the drink price in a coffee shop:
 
   * Read a drink: either **"coffee"** or **"tea"**
@@ -325,17 +338,19 @@ Prices:
   * Coffee price: **1.00**
   * Tea price: **0.60**
   * Sugar price: **0.40**
-# Example
-## Input
-- coffee
-- sugar
-## Output
-- Final price: $1.40
-## Input
-- tea
-- no
-## Output
-- Final price: $0.60
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| coffee | Final price: $1.40 |
+| sugar | |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| tea | Final price: $0.60 |
+| no | |
+
 [/task-description]
 [tests]
 [test]
@@ -389,20 +404,27 @@ Final price: $0.60
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check if a triangle is valid by its sizes:
 
   * Read 3 integers: the **sides of a triangle**
   * Checks if each side is less than the sum of the others 2
     * Prints **"Valid Triangle"** if the above condition is met
     * Prints **"Invalid Triangle"** otherwise 
-# Example
-## Input
-- 3
-- 4
-- 5
-## Output
-- Valid Triangle
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | Valid Triangle |
+| 4 | |
+| 5 | |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | Invalid Triangle |
+| 8 | |
+| 3 | |
 
 [/task-description]
 [tests]
@@ -446,13 +468,20 @@ Write a program, which:
 * Receives **3 numbers**
 * Prints ***"True"*** if the **sum** of **2** of them is **equal** to the **third one**
 * Prints ***"False"*** if the condition above is **NOT met**
-# Example
-## Input
-- 2
-- 6
-- 4
-## Output
-- True
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | True |
+| 6 | |
+| 4 | |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | False |
+| 1 | |
+| 1 | |
 [/task-description]
 [tests]
 [test]
@@ -478,7 +507,6 @@ True
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
 [slide]
