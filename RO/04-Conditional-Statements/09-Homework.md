@@ -4,7 +4,7 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7708" endTimeInSeconds="9990"]
-[stream language="EN" videoId="341539841/456a08950e"  /]
+[stream language="EN" videoId="341539841/456a08950e" /]
 [stream language="RO" videoId="387657941/b7f1ede8f0" default /]
 [/vimeo-video]
 
@@ -38,21 +38,23 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check a password:
 
   * Read a string: the password **guess**
   * Print **"Welcome"** if the password guess is **"s3cr3t!"**
   * Print **"Wrong password!"** in all other cases 
-# Example
-## Input
-- s3cr3t!
-## Output
-- Welcome
-## Input
-- qwerty
-## Output
-- Wrong password!
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| s3cr3t! | Welcome |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| qwerty | Wrong password! |
+
 [/task-description]
 [tests]
 [test]
@@ -93,21 +95,24 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which checks for hot water: 
 
   * Read a floating-point number: the water **temperature** (in °C)
   * Print **"The water is boiling"** if the number **> 100**
   * Prints **"The water is not hot enough"** in all other cases 
-# Example
-## Input
-- 104.8
-## Output
-- The water is boiling
-## Input
-- 29
-## Output
-- The water is not hot enough
+
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 104.8 | The water is boiling |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 29 | The water is not hot enough |
+
 [/task-description]
 [tests]
 [test]
@@ -148,21 +153,24 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check for fast / slow speed: 
 
   * Read the **speed** (a floating-point number)
   * Print **"Slow"** if the speed **<= 30**
   * Print **"Fast"** if the speed **> 30**
-# Example
-## Input
-- 30
-## Output
-- Slow
-## Input
-- 60
-## Output
-- Fast
+
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 30 | Slow |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 60 | Fast |
+
 [/task-description]
 [tests]
 [test]
@@ -203,7 +211,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate the area of different figures:
   * Reads a string: the figure **type**
   * Checks if the entered figure is **square**, **rectangle** or **circle**
@@ -293,7 +301,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate a ticket price:
 
   * Read a ticket type: either **student** or **regular**
@@ -302,11 +310,12 @@ Write a program to calculate a ticket price:
   * Student ticket price: **1.00**
   * Regular ticket price: **1.60**
   * For invalid type print **"Invalid ticket type!"**
-# Example
-## Input
-- student
-## Output
-- $1.00
+  
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| student | $1.00 |
+
 [/task-description]
 [tests]
 [test]
@@ -355,7 +364,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to calculate the drink price in a coffee shop:
 
   * Read a drink: either **"coffee"** or **"tea"**
@@ -364,20 +373,23 @@ Write a program to calculate the drink price in a coffee shop:
     * The price should be **formatted** to 2nd digit after the decimal point
   
 Prices:
+
   * Coffee price: **1.00**
   * Tea price: **0.60**
   * Sugar price: **0.40**
-# Example
-## Input
-- coffee
-- sugar
-## Output
-- Final price: $1.40
-## Input
-- tea
-- no
-## Output
-- Final price: $0.60
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| coffee | Final price: $1.40 |
+| sugar |  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| tea | Final price: $0.60 |
+| no |  |
+
 [/task-description]
 [tests]
 [test]
@@ -438,20 +450,21 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check if a triangle is valid by its sizes:
 
   * Read 3 integers: the **sides of a triangle**
   * Checks if each side is less than the sum of the others 2
     * Prints **"Valid Triangle"** if the above condition is met
     * Prints **"Invalid Triangle"** otherwise 
-# Example
-## Input
-- 3
-- 4
-- 5
-## Output
-- Valid Triangle
+
+    
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | Valid Triangle |
+| 4 |  |
+| 5 |  |
 
 [/task-description]
 [tests]
