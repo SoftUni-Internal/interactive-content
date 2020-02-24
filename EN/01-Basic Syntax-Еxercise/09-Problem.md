@@ -24,7 +24,7 @@ You will be given the **amount of money** he has, the **number of students** and
 
 You have to help **calculate** if the **money** the master has is **enough** to buy all of the equipment, or how much more money he needs. 
 
-Because the **lightsabres** sometimes **brake**, he should buy **10% more**, rounded up to the next integer. Also, **every sixth belt is free**.
+Because the **lightsabres** sometimes **break**, he should buy **10% more**, rounded up to the next integer. Also, **every sixth belt is free**.
 
 ### Input/ Constraints
 The input data should be read from the console. It will consist of exactly 5 lines:

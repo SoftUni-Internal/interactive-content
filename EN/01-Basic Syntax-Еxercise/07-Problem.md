@@ -22,7 +22,7 @@ You have to **sum** them in order to have the **total money inserted**.
  
 There is a problem though. Your vending machine only works with **0.1**, **0.2**, **0.5**, **1**, and **2 coins**. 
  
-If someone **tries to insert some other coins** you have to **display "Cannot accept \{money\}"**, where the value is **formated** to the **second** digit after the decimal point and not add it to the total money. 
+If someone **tries to insert some other coins** you have to **display** "Cannot accept \{money\}", where the value is **formated** to the **second** digit after the decimal point and not add it to the total money. 
  
 On the next few lines until you receive **"End"** you will be **given products** to purchase. 
  
@@ -34,9 +34,9 @@ Be careful that the person may **try** to **purchase** a product for which he **
  
 In that case **print "Sorry, not enough money"**. 
  
-If the person purchases a product **successfully** print **"Purchased \{product name\}"**. 
+If the person purchases a product **successfully** print "Purchased \{product name\}". 
  
-After the **"End"** command print the money that are left **formatted** to the **second** decimal point in the format **"Change: \{money left\}"**.
+After the **"End"** command print the money that are left **formatted** to the **second** decimal point in the format "Change: \{money left\}".
 
 ### Example
 | **Input** | **Output** |
