@@ -3,7 +3,7 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="5768" endTimeInSeconds="11030"]
+[vimeo-video startTimeInSeconds="7657" endTimeInSeconds="11030"]
 [stream language="EN" videoId="345011935"  /]
 [stream language="RO" videoId="393861306" default /]
 [/vimeo-video]
@@ -849,4 +849,10 @@ Write a program, which:
 [code-io/]
 [/code-task]
 
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
 [/slide]
