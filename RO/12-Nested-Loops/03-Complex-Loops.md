@@ -1,8 +1,20 @@
+# Complex Loops
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1501" endTimeInSeconds="2677"]
+[stream language="EN" videoId="345185854" /]
+[stream language="RO" videoId="393622973" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Complex Loops
 Loops with different **steps**
 
-```python
+```py live
 for x in range(2, 11, 2):
   print(x)
 # Prints the even numbers from 2 to 10
@@ -18,14 +30,13 @@ for x in range(2, 11, 2):
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which:
 
 * Reads an integer number n
 * Prints the numbers from n to 1 
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |10|10|
@@ -38,6 +49,9 @@ Write a program, which:
 ||3|
 ||2|
 ||1|
+[/task-description]
+[code-io /]
+[/code-task]
 [/slide]
 
 [slide]
@@ -51,14 +65,13 @@ for i in range(n, 0, -1):
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which:
 
 * Reads an integer number n
 * Prints the numbers from n to 1 
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |10|10|
@@ -71,6 +84,10 @@ Write a program, which:
 ||3|
 ||2|
 ||1|
+[/task-description]
+[code-io /]
+[/code-task]
+
 [/slide]
 
 [slide]
@@ -82,20 +99,22 @@ Write a program, which:
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program which:
 
 * Reads an integer number n
 * Prints the numbers from 1 to n with step 3
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |10|1|
 ||4|
 ||7|
 ||10|
+[/task-description]
+[code-io /]
+[/code-task]
 [/slide]
 
 [slide]
@@ -109,20 +128,22 @@ for i in range(1, n + 1, 3):
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program which:
 
 * Reads an integer number n
 * Prints the numbers from 1 to n with step 3
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |10|1|
 ||4|
 ||7|
 ||10|
+[/task-description]
+[code-io /]
+[/code-task]
 [/slide]
 
 [slide]
@@ -134,19 +155,21 @@ Write a program which:
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which:
 
 * Reads a number n
 * Prints the even powers of 2 to 2n: 20, 22, 24, 28, …, 2n
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |3|1|
 ||4|
 ||16|
+[/task-description]
+[code-io /]
+[/code-task]
 [/slide]
 
 [slide]
@@ -162,23 +185,19 @@ for i in range(0, n + 1, 2):
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which:
 
 * Reads a number n
 * Prints the even powers of 2 to 2^n: 2^0, 2^2, 2^4, 2^8, …, 2^n
-[/task-description]
-[code-io /]
-[/code-task]
-# Sample Input and Output
+
+## Example
 |Input|Output|
 |-----|------|
 |3|1|
 ||4|
-[/slide]
-
-[slide]
-# Introduction
-
-[vimeo-video videoId="345185854" startTimeInSeconds="1501" endTimeInSeconds="2677" /]
+[/task-description]
+[code-io /]
+[/code-task]
 
 [/slide]

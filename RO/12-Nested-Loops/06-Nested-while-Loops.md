@@ -1,5 +1,18 @@
+# Nested while Loops
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="3511" endTimeInSeconds="3956"]
+[stream language="EN" videoId="345185854"  /]
+[stream language="RO" videoId="393622973" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Nested while Loops
+
 ```python
 while condition:
   # Outer Loop 
@@ -18,23 +31,21 @@ while condition:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads the height of a triangle from the console
 * Prints a triangle of stars
-* use a **while** loop
-# Example
-## Input
-- 5
-## Output
-```
-*
-**
-***
-****
-*****
-```
+* Use a `while` loop
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+| | \*\*\*\*\ |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
@@ -69,23 +80,21 @@ while i <= height:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads the height of a triangle from the console
 * Prints a triangle of stars
-* use a **while** loop
-# Example
-## Input
-- 5
-## Output
-```
-*
-**
-***
-****
-*****
-```
+* Use a `while` loop
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+| | \*\*\*\*\ |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
@@ -101,11 +110,4 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="3511" endTimeInSeconds="3956" /]
-
 [/slide]

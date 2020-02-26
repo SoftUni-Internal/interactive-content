@@ -1,3 +1,15 @@
+# Real-Life Example
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="2680" endTimeInSeconds="2798"]
+[stream language="EN" videoId="345185854" default /]
+[stream language="RO" videoId="393622973" /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Real-Life Example: Clock
 Imagine the current time is exactly 12:00 AM. 
@@ -14,11 +26,4 @@ for h which is in range from 0 to 23
     for m which is in range from 0 to 59
         print h and m in format similar to the clock
 ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="2680" endTimeInSeconds="2798" /]
-
 [/slide]

@@ -1,11 +1,22 @@
+# Nested for Loops
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="3024" endTimeInSeconds="3508"]
+[stream language="EN" videoId="345185854"  /]
+[stream language="RO" videoId="393622973" default /]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Nested for Loops
 ```python
 for i in range(1, 10):
-  # Outer Loop 
+  print(f'i = {i}')
   for j in range(1, 10):
-  # Inner Loop
-     # Statement
+    print(f'  j = {j}')
 ```
 [/slide]
 
@@ -18,22 +29,20 @@ for i in range(1, 10):
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads the height of a triangle from the console
 * Prints a triangle of stars
-# Example
-## Input
-- 5
-## Output
-```
-*
-**
-***
-****
-*****
-```
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+| | \*\*\*\*\ |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
@@ -65,22 +74,20 @@ for i in range(1, height + 1):
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads the height of a triangle from the console
 * Prints a triangle of stars
-# Example
-## Input
-- 5
-## Output
-```
-*
-**
-***
-****
-*****
-```
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+| | \*\*\*\*\ |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
@@ -96,12 +103,5 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="3024" endTimeInSeconds="3508" /]
 
 [/slide]

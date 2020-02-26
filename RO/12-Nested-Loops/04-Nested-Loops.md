@@ -1,3 +1,14 @@
+# Nested Loops
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="2796" endTimeInSeconds="3023"]
+[stream language="EN" videoId="345185854" /]
+[stream language="RO" videoId="393622973" default /]
+[/vimeo-video]
+[/slide]
+
 [slide]
 # Nested Loops
 Statements that consist of several **loops** located **inside each other**
@@ -7,11 +18,4 @@ Statements that consist of several **loops** located **inside each other**
 * To execute an **action**, which **executes** multiple **actions**
 
 * To make more **complex** calculations and variations
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="2796" endTimeInSeconds="3023" /]
-
 [/slide]

@@ -1,3 +1,15 @@
+# Homework
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="3958" endTimeInSeconds="11286"]
+[stream language="EN" videoId="345185854"  /]
+[stream language="RO" videoId="393622973" default/]
+[/vimeo-video]
+
+[/slide]
+
 [slide]
 # Homework
 Welcome to the homework. 
@@ -27,17 +39,15 @@ Write a program, which:
 * Office "O\{floorNum\}\{officeNum\}"
 * Floor "L\{buildingNum\}\{apartmentNum\}"
 * The numbers always start from 0
-# Example
-## Input
-- 4
-- 5
-## Output
-```
-L40 L41 L42 L43 L44 
-A30 A31 A32 A33 A34 
-O20 O21 O22 O23 O24 
-A10 A11 A12 A13 A14 
-```
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 4 | L40 L41 L42 L43 L44  |
+| 5| A30 A31 A32 A33 A34  |
+| | O20 O21 O22 O23 O24 |
+| | A10 A11 A12 A13 A14  |
+
 [/task-description]
 [tests]
 [test]
@@ -86,7 +96,7 @@ L10
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Receives a number **n**
@@ -94,11 +104,12 @@ Write a program, which:
 * The first digit is an even number
 * The second digit is an odd number
 * The third part is the product of the first two
-# Example
-## Input
-5
-## Output
-212 236 2510 414 4312 4520 
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | 212 236 2510 414 4312 4520 |
+
 [/task-description]
 [tests]
 [test]
@@ -123,19 +134,18 @@ Write a program, which:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Read a number - **n**, from the console
 
-Find all 3-digit numbers, which:
+Find all 3-digit numbers, which form **n** as the product of the multiplication of their digits
 
-* Form n as the product of the multiplication of their digits
-# Example
-## Input
-- 3
-## Output
-- 113
-- 131
-- 311
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 113 |
+|  | 131 |
+|  | 311 |
+
 [/task-description]
 [tests]
 [test]
@@ -192,20 +202,21 @@ Find all 3-digit numbers, which:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a destination and needed budget for destination
 * You must continue reading amount of money until you have enough for the destination
 * If you receive the command "End" end the program
-# Example
-## Input
-- Greece
-- 1000
-- 550
-- 450
-## Output
-- Going to Greece!
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Greece | Going to Greece! |
+| 1000|  |
+| 550|  |
+| 450|  |
+
 [/task-description]
 [tests]
 [test]
@@ -249,16 +260,15 @@ import math
 ```
 [/code-editor]
 [task-description]
-# Description
-Read two number from the console
+## Description
+- Reads two integers from the console.
+- Prints the prime numbers in that range.
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+| 50|  |
 
-Print the prime numbers in that range
-# Example
-## Input
-- 1
-- 50
-## Output
-1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
 [/task-description]
 [tests]
 [test]
@@ -295,7 +305,7 @@ London
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads 3 digits - each of them is an upper limit
@@ -303,18 +313,17 @@ Write a program, which:
     * They are in the range
     * The first and the third digit must be even
     * The second digit must be a prime number in the range \[2…7\]
-# Example
-## Input
-3
-5
-5
-## Output
-222
-224
-232
-234
-252
-254
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 222 |
+| 5| 224 |
+| 5| 232 |
+| | 234 |
+| | 252 |
+| | 254 |
+
 [/task-description]
 [tests]
 [test]
@@ -359,27 +368,26 @@ Write a program, which:
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Prints letters combinations and the count of the printed combinations
 * You will receive the range of letters on the first and second line
 * On the third line, you will receive a letter, which you must ignore - don't print combinations with it
-# Example
-## Input
-a
-c
-b
-## Output
-aaa
-aab
-aba
-abb
-baa
-bab
-bba
-bbb
-8
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| a | aaa |
+| c| aab |
+| b | aba |
+| | abb |
+| | baa |
+| | bab |
+| | bba |
+| | bbb |
+| | 8 |
+
 [/task-description]
 [tests]
 [test]
@@ -452,18 +460,19 @@ hhh
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Receives a single number: n
 * Prints the pattern shown in the example
-# Example
-## Input
-3
-## Output
-- 1
-- 121
-- 12321
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 1 |
+|  | 121 |
+|  | 12321 |
+
 [/task-description]
 [tests]
 [test]
@@ -489,12 +498,5 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="3958" endTimeInSeconds="11286" /]
 
 [/slide]
