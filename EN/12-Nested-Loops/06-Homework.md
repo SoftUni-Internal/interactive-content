@@ -500,3 +500,9 @@ Write a program, which:
 [/code-task]
 
 [/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
+[/slide]
