@@ -18,7 +18,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image assetsSrc="homeowrk.png" /]
+[image assetsSrc="homework.png" /]
 [/slide]
 
 [slide]
