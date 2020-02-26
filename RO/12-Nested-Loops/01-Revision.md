@@ -11,7 +11,7 @@
 [/slide]
 
 [slide]
-# While Loop
+# Revision
 A while loop is used to repeat a block of code when we don't know the count of iterations
 
 ```py lvie
