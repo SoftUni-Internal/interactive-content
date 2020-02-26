@@ -3,7 +3,7 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="3958" endTimeInSeconds="11286"]
+[vimeo-video startTimeInSeconds="6418" endTimeInSeconds="11286"]
 [stream language="EN" videoId="345185854" default /]
 [stream language="RO" videoId="393622973" /]
 [/vimeo-video]
