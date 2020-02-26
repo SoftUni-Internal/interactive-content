@@ -17,6 +17,7 @@ The use of nested `while` loops is very similar to the one of the `for`.
 
 Here is the syntax in **Python**:
 ```py live
+i = 1
 n = 5
 while i < n:
   print(f'Value of i: {i}')
@@ -26,7 +27,6 @@ while i < n:
   while j < n:
     print(f'  Value of j: {j}')
     j += 1
-}
 ```
 [/slide]
 
@@ -52,7 +52,7 @@ Write a program, which:
 | 5 | \* |
 | | \*\* |
 | | \*\*\* |
-| | \*\*\*\*\ |
+| | \*\*\*\* |
 | | \*\*\*\*\* |
 [/task-description]
 [tests]
@@ -76,7 +76,7 @@ Write a program, which:
 [code-task title="Triangle of Stars 2" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
-height = 5
+height = int(input())
 i = 1
 while i <= height:
     j = 0
@@ -101,7 +101,7 @@ Write a program, which:
 | 5 | \* |
 | | \*\* |
 | | \*\*\* |
-| | \*\*\*\*\ |
+| | \*\*\*\* |
 | | \*\*\*\*\* |
 [/task-description]
 [tests]

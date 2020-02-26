@@ -52,7 +52,7 @@ Write a program, which:
 | 5 | \* |
 | | \*\* |
 | | \*\*\* |
-| | \*\*\*\*\ |
+| | \*\*\*\*|
 | | \*\*\*\*\* |
 [/task-description]
 [tests]
@@ -97,7 +97,7 @@ Write a program, which:
 | 5 | \* |
 | | \*\* |
 | | \*\*\* |
-| | \*\*\*\*\ |
+| | \*\*\*\* |
 | | \*\*\*\*\* |
 [/task-description]
 [tests]

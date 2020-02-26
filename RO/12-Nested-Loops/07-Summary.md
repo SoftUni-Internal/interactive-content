@@ -31,8 +31,8 @@ while i < n:
     j = 1
     i += 1
 
-  while j < n:
-    print(f'  Value of j: {j}')
-    j += 1
+    while j < n:
+        print(f'  Value of j: {j}')
+        j += 1
 ```
 [/slide]
