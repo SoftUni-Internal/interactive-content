@@ -20,6 +20,14 @@ Read **four integer numbers**.
 
 **Print** the **result**.
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 10 | 30 |
+| 20 | |
+| 3 | |
+| 3 | |
+
 [/task-description]
 [code-io /]
 [tests]

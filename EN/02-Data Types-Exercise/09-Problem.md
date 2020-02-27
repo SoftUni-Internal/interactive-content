@@ -33,6 +33,13 @@ You will **receive a number**, representing the **starting** yield of the source
 ### Output
 Print **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
 
+### Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| 111 | 2 | Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101. |
+| | 134 | Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91. |
+| | Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days. |
+
 [/task-description]
 [code-io /]
 [tests]

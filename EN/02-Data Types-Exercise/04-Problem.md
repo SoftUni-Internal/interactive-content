@@ -27,6 +27,17 @@ Write a program, which **sums the ASCII codes of n characters**.
 Print the total sum in the following format:
 -   "The sum equals: \{totalSum\}"
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | The sum equals: 399 |
+| A | |
+| b | |
+| C | |
+| d | |
+| E | |
+
+
 [/task-description]
 [code-io /]
 [tests]

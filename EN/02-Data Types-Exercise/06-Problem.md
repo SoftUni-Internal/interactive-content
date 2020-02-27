@@ -16,26 +16,18 @@ public class Main {
 ## Description
 Write a program to **read** an integer **n** and **print all triples of the first n small Latin letters**, ordered **alphabetically**.
 
-## Example
-### Input
-2
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | aaa |
+| | aab |
+| | aba |
+| | abb |
+| | baa |
+| | bab |
+| | bba |
+| | bbb |
 
-### Output
-aaa
-
-aab
-
-aba
-
-abb
-
-baa
-
-bab
-
-bba
-
-bbb
 [/task-description]
 [code-io /]
 [tests]

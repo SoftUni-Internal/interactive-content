@@ -49,6 +49,13 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 -	On the first line print **what has remained of N**, after subtracting from it.
 -	On the second line print the **count of targets**, you’ve managed to poke
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | 1 |
+| 2 | 2 |
+| 3 | |
+
 [/task-description]
 [code-io /]
 [tests]

@@ -26,25 +26,16 @@ Calculate the **volume** using the following formula: **π * r^2 * h**.
 
 At the end, **print the model of the biggest keg**.
 
-## Example
-### Input
-2
-
-Smaller Keg
-
-2.41
-
-10
-
-Bigger Keg
-
-5.12
-
-20
-
-
-### Output
-Bigger Keg
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | Bigger Keg |
+| Smaller Keg | |
+| 2.41 | |
+| 10 | |
+| Bigger Keg | |
+| 5.12 | |
+| 20 | |
 
 [/task-description]
 [code-io /]
