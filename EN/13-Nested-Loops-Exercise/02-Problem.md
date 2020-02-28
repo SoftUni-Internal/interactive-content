@@ -7,19 +7,19 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to print **the hours of the day** from given hour, minutes, seconds to 23:59:59 (**inclusive**), each on a separate line. 
 
-# Input
+## Input
 The input is entered from the console as **3** lines:
 - First line - **hours** - integer in range \[0...23\]
 - Second line - **minutes** - integer in range \[0...59\]
 - Third line - **seconds** - integer in range \[0...59\]
 
-# Output
+## Output
 - The output should be printed in the following format "\{hour\} : \{minutes\} : \{seconds\}".
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |

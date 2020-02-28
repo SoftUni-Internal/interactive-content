@@ -7,17 +7,17 @@
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 The course "Train the trainers" is ending and the final evaluation approaches.
 
 Help the jury which by writing a program to calculate the **average score** of **each presentation** by a student, and the **average of all of them**.
 
-# Input
+## Input
 - From the console of the first row read the number of people on the jury - **n** - an integer in the range \[1...20\]
 - Then on a separate line read the name of the presentation - **String**
 - For each presentation of the new line is read **n - the number of ratings** - real number in the interval \[2.00 ... 6.00\]
 
-# Output
+## Output
 - After calculating the **average score** for a particular presentation, print to the console:   
    "\{name of the presentation\} \- \{average score\}."
 - After receiving the command "**Finish**" on the console, print:    
@@ -25,7 +25,7 @@ Help the jury which by writing a program to calculate the **average score** of *
 
 All scores must be formatted to the **second decimal point**.
 
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
