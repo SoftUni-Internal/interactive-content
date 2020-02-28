@@ -27,16 +27,16 @@ All scores must be formatted to the **second decimal point**.
 
 # Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 2 | | While-Loop - 5.75. |
-| While-Loop | | For-Loop - 5.75. |
-| 6.00 | | Student\'s final assessment is 5.75. |
-| 5.50 | | |
-| For-Loop | | | 
-| 5.84 | | |
-| 5.66 | | | 
-| Finish | | | 
+| **Input** | **Output** |
+| --- | --- |
+| 2 | While-Loop - 5.75. |
+| While-Loop | For-Loop - 5.75. |
+| 6.00 | Student\'s final assessment is 5.75. |
+| 5.50 | |
+| For-Loop | | 
+| 5.84 | |
+| 5.66 | | 
+| Finish | | 
 
 ## Comments
 - 2 – the number of people on the jury - therefore gain a 2 evaluations of the presentation:
