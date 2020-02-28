@@ -44,9 +44,9 @@ From the ASCII table we know that the corresponding symbol of 42 is '\*'.
 
 Because to the first line corresponds the digit 9 we print '\*' 9 times.
 
-For the second line the digit is 4. 4\+33=37. Using ASCII table we find that 
+For the second line the digit is 4. 4\+33=37. Using ASCII table we find that the symbol to print is '%'. 
 
-the symbol to print is '%'. We print '%' 4 times.
+We print '%' 4 times.
 
 The third line matches a digit 0. On this line we print ZERO once.
 
