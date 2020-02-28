@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Zona pătratului
+# Problem: Square Area
 [code-task title="Square Area" taskId="ESE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -15,7 +15,7 @@ public class Main {
 [task-description]
 # Description
 
-Write a console program that reads an **integer** \'a\' and calculates the **area** of a square with size \'a\'.
+Write a console program that reads an integer \'a\' and calculates the area of a square with size \'a\'.
 
 # Input
 
@@ -28,7 +28,7 @@ Print on the console the calculated area
 
 # Example
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 5 | | 25 |
 [/task-description]

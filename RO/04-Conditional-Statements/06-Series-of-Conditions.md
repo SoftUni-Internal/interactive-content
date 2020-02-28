@@ -1,8 +1,12 @@
-# Secvențe de condiții If-Else
+# Sequence of If-Else Conditions
 
 [slide]
 # Video
-[vimeo-video videoId="341539841" startTimeInSeconds="3554" endTimeInSeconds="4003" /]
+
+[vimeo-video startTimeInSeconds="3554" endTimeInSeconds="4003"]
+[stream language="EN" videoId="341539841/456a08950e"  /]
+[stream language="RO" videoId="387657941/b7f1ede8f0" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -34,8 +38,7 @@ Print the digits in the range of 1 to 9 (digits are read from the console) in En
 
 We can read the digit and then, through a **sequence of conditions** we print the relevant English word:
 ```java live
-Scanner scanner = new Scanner(System.in);
-int num = Integer.ParseInt(scanner.nextLine());
+int num = 5;
 
 if (num == 1) {
     System.out.println("one");

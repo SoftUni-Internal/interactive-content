@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Barcă de pescuit
+# Prolem: Fishing Boat
 [code-task title="Fishing Boat" taskId="CAE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -13,18 +13,16 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Tony and his friends decided to rent a boat - the rent depends on the **season** and the **number** of fishermen.
 
 **The price** on the basis of **season**:
-
 - **Spring - 3000 $**
 - **Summer and autumn - 4200 $**
 - **Winter - 2600 $**
 
 **The price** on the basis of **number** of fishermen uses **discount:**
-
 - If the group is **up to 6 people (inclusive) -  10% discount**
 - If the group members are in range \[7…11\] -  **15% discount**
 - If the group is **12 or more people - 25% discount**
@@ -33,37 +31,44 @@ The fishermen use another **5 % discount if they are even number** except when i
 
 Write a **program** to **calculate** whether the fishermen will gather **enough** money.
 
-# Input
+## Input
 The input is consists of exactly **3 lines**:
 - The **budget** of the group - real number in range \[1…8000\]
 - **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
 - **Number** of fishermen - integer in range \[4…18\]
 
-# Output
+## Output
 Print on the console a **single** line:
 - If the budget **IS** enough: "Yes! You have \{money left\} dollars left."
 - If the budget **IS NOT** enough: "Not enough money! You need \{money needed\} dollars."
 
 **The prices should be formatted to the second decimal point.**
 
-# Example
-| **Input** | | **Output** 
-| --- | --- | --- |
-| 3000 | | Not enough money! You need 570.00 dollars. |
-| Summer | | |
-| 11 | | |
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 3000 | Not enough money! You need 570.00 dollars. |
+| Summer | |
+| 11 | |
 
-## Comments
+### Comments
 - In the summer fishing costs 4200$,
 - **11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
 - 3000 <= 3570, hence they need 570.00 $ more
 
-# Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 2000 | | Yes! You have 50.00 dollars left. |
-| Winter | | |
-| 13 | | |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 2000 | Yes! You have 50.00 dollars left. |
+| Winter | |
+| 13 | |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3600 | Yes! You have 1035.00 dollars left. |
+| Spring | |
+| 6 | |
 
 [/task-description]
 [tests]

@@ -1,8 +1,12 @@
-# Temă
+# Homework
 
 [slide]
 # Video
-[vimeo-video videoId="341539841" startTimeInSeconds="4583" endTimeInSeconds="9990" /]
+
+[vimeo-video startTimeInSeconds="7708" endTimeInSeconds="9990"]
+[stream language="EN" videoId="341539841/456a08950e"  /]
+[stream language="RO" videoId="387657941/b7f1ede8f0" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -16,7 +20,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/homeowrk.png"/]
+[image assetsSrc="homeowrk.png" /]
 [/slide]
 
 [slide]
@@ -201,19 +205,35 @@ public class Program {
 [task-description]
 # Description
 Write a program to calculate the area of different figures:
-
-  * Read a string: the figure **type**
-  * Read number (the **size**) or two numbers for rectangle (sizes)
-    * Numbers will be floating-point
+  * Reads a string: the figure **type**
   * Checks if the entered figure is **square**, **rectangle** or **circle**
-  * Print the calculated area **formatted** to the second digit after the decimal point
+  * Reads a number for square and circle or two numbers for rectangle
+    * Numbers will be floating-point
+  * Prints the calculated area **formatted** to the second digit after the decimal point
   * For unknown figure print **"Unknown figure"**
-# Example
-## Input
-- square
-- 5
-## Output
-- 25.00
+
+## Examples
+
+| **Input** | **Output** |
+| --- | --- |
+| square | 25.00 |
+| 5 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| rectangle | 30.00 |
+| 3 |  |
+| 10 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| trapezoid | Unknown figure |
+
+| **Input** | **Output** |
+| --- | --- |
+| circle | 28.27 |
+| 28.27 | |
+
 [/task-description]
 [tests]
 [test]
@@ -458,4 +478,11 @@ Invalid Triangle
 [/tests]
 [code-io/]
 [/code-task]
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
+
 [/slide]

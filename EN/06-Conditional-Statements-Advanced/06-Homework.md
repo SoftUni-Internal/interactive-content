@@ -2,7 +2,11 @@
 
 [slide]
 # Video
-[vimeo-video videoId="341582556" startTimeInSeconds="4780" endTimeInSeconds="11380" /]
+
+[vimeo-video startTimeInSeconds="7275" endTimeInSeconds="11380"]
+[stream language="EN" videoId="341582556" default /]
+[stream language="RO" videoId="388314290"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -16,7 +20,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/homeowrk.png"/]
+[image assetsSrc="homeowrk.png" /]
 [/slide]
 
 [slide]
@@ -627,5 +631,12 @@ Write a program to find the biggest among 5 numbers
 [/tests]
 [code-io/]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
 
 [/slide]

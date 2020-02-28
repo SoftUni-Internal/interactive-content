@@ -15,28 +15,28 @@ public class Main {
 [task-description]
 # Description
 
-Write a program that **calculates the expenses** for yard greening. 
+Write a program that calculates the expenses for yard greening. 
 
-The price **for one square meter is 7.61 dollars with VAT**. 
+The price for one square meter is 7.61 dollars with VAT. 
 
-The company offers **18% discount from the total price**.
+The company offers 18% discount from the total price.
 
 # Input
 
 Single line from the console:
 
-- **Square meters** which will be greening - float-pointing number in range [0.00… 10000.00]
+- Square meters which will be greening - float-pointing number in range [0.00… 10000.00]
 
 # Output
 
-Print on the console **two lines**:   
+Print on the console two lines:   
 - "The final price is: \{total price\} dollars"
 - "The discount is: \{discount\} dollars"
 
-Prices should be **formatted to the second decimal point**.
+Prices should be formatted to the second decimal point.
 
 # Example
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 540 | | The final price is: 3369.71 dollars |
 |  | | The discount is: 739.69 dollars |

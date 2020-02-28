@@ -1,16 +1,20 @@
-# Exemple din viața reală
+# Real-Life Example
 
 [slide]
 # Video
-[vimeo-video videoId="345011935" startTimeInSeconds="2914" endTimeInSeconds="3142" /]
+
+[vimeo-video startTimeInSeconds="2914" endTimeInSeconds="3142"]
+[stream language="EN" videoId="345011935"  /]
+[stream language="RO" videoId="393861306" default /]
+[/vimeo-video]
 
 [/slide]
 
 [slide]
 # Real-Life Example: Clock
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/06-nested-loops-clock-1159.png"/] 
+[image assetsSrc="06-nested-loops-clock-1159.png" /] 
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/06-nested-loops-clock-1200.png"/]
+[image assetsSrc="06-nested-loops-clock-1200.png" /]
 
 Imagine the current time is exactly **11:00** AM. 
 

@@ -1,5 +1,6 @@
 [slide]
-# Homework Summary
+# Exercise Results
 
 [tasks-results /]
+
 [/slide]

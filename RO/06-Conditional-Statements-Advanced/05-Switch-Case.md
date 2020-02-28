@@ -1,8 +1,12 @@
-# Instrucţiunea switch
+# The Switch-Case Statement
 
 [slide]
 # Video
-[vimeo-video videoId="341582556" startTimeInSeconds="4110" endTimeInSeconds="4779" /]
+
+[vimeo-video startTimeInSeconds="4110" endTimeInSeconds="4779"]
+[stream language="EN" videoId="341582556"  /]
+[stream language="RO" videoId="388314290" default /]
+[/vimeo-video]
 
 [/slide]
 

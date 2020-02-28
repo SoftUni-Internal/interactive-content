@@ -1,8 +1,12 @@
-# Temă
+# Homework
 
 [slide]
 # Video
-[vimeo-video videoId="345011935" startTimeInSeconds="5768" endTimeInSeconds="11030" /]
+
+[vimeo-video startTimeInSeconds="7657" endTimeInSeconds="11030"]
+[stream language="EN" videoId="345011935"  /]
+[stream language="RO" videoId="393861306" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -16,7 +20,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/homeowrk.png"/]
+[image assetsSrc="homework.png" /]
 [/slide]
 
 [slide]
@@ -34,7 +38,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Prints information about **apartments** (odd rows), **offices** (even rows) and the **last floor** (last row)
@@ -42,17 +46,17 @@ Write a program, which:
 * Office `"O{floorNum}{officeNum}"`
 * Floor `"L{buildingNum}{apartmentNum}"`
 * The numbers always start from 0
-# Example
-## Input
-- 6
-- 4
-## Output
-- L60 L61 L62 L63
-- A50 A51 A52 A53
-- O40 O41 O42 O43
-- A30 A31 A32 A33
-- O20 O21 O22 O23
-- A10 A11 A12 A13
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 6 | L60 L61 L62 L63 |
+| 4| A50 A51 A52 A53 |
+| | O40 O41 O42 O43 |
+| | A30 A31 A32 A33 |
+| | O20 O21 O22 O23 |
+| | A10 A11 A12 A13 |
+
 [/task-description]
 [tests]
 [test]
@@ -198,18 +202,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 * Reads an integer - **n**
 * Generates custom passwords, which meet the following conditions:
 * The **first** part is an **even** number and should not be greater than **n**
 * The **second** part is an **odd** number and should not be greater than **n**
 * The **last part** is the **product** of the first two
-# Example
-## Input
-- 6
-## Output
-- 212 236 2510 414 4312 4520 616 6318 6530
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
+
 [/task-description]
 [tests]
 [test]
@@ -273,17 +278,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 * Reads a **number - n**, from the console
 * Finds all **3-digit numbers** which product of the multiplication of their digits is equal to **n**
-# Example
-## Input
-- 3
-## Output
-- 113
-- 131
-- 311
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 113 |
+| | 131 |
+| | 311 |
+
 [/task-description]
 [tests]
 [test]
@@ -320,21 +326,37 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a **destination** and **needed budget** for destination
 * Continues reading numbers - amounts of money, until they are **enough** for the destination
 * If it receives the command **"End"** the program ends
-# Example
-## Input
-- Philippines
-- 1000
-- 550
-- 450
-- End
-## Output
-- Going to Philippines!
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Philippines | Going to Philippines! |
+| 1000|  |
+| 550|  |
+| 450|  |
+| End|  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Bulgaria | Going to Bulgaria! |
+| 500|  Going to Austria! |
+| 200|  |
+| 100|  |
+| 300|  |
+| Austria|  |
+| 700|  |
+| 200|  |
+| 200|  |
+| 200|  |
+| 200|  |
+| End|  |
 
 [/task-description]
 [tests]
@@ -587,17 +609,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **two numbers** from the console
 * Prints the **prime** number in that **range**
-# Example
-## Input
-- 1
-- 50
-## Output
-- 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+| 50|  |
+
 [/task-description]
 [tests]
 [test]
@@ -684,7 +707,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **3 digits** - n1, n2 and n3
@@ -694,18 +717,17 @@ Write a program, which:
 * The **third** digit should not be greater than n3
 * The **first** and the **third** digit must be even
 * The second digit must be a **prime number** in the range \[2…7\]
-# Example
-## Input
-- 3
-- 5
-- 5
-## Output
-- 222
-- 224
-- 232
-- 234
-- 252
-- 254
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 222 |
+| 5| 224 |
+| 5| 232 |
+| | 234 |
+| | 252 |
+| | 254 |
+
 [/task-description]
 [tests]
 [test]
@@ -800,18 +822,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number n
 * Prints **all 4 digit numbers**, which meet the following conditions:
 * When you **split** them in two pairs and **add** the first digit to the second - the result **equals** n
 * When you add the first two digits to each other, the result must be **divisible** by n **without a remainder**
-# Example
-## Input
-- 3
-## Output
-- 1212 1221 2112 2121
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 1212 1221 2112 2121 |
+
 [/task-description]
 [tests]
 [test]
@@ -826,4 +849,10 @@ Write a program, which:
 [code-io/]
 [/code-task]
 
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
 [/slide]

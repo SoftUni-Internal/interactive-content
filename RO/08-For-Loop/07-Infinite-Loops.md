@@ -1,8 +1,12 @@
-# Bucle infinite
+# Infinite Loops
 
 [slide]
 # Video
-[vimeo-video videoId="342471604" startTimeInSeconds="4288" endTimeInSeconds="4751" /]
+
+[vimeo-video startTimeInSeconds="4288" endTimeInSeconds="4751"]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
+[/vimeo-video]
 
 [/slide]
 

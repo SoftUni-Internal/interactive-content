@@ -1,8 +1,12 @@
-# Temă
+# Homework
 
 [slide]
 # Video
-[vimeo-video videoId="342471604" startTimeInSeconds="4752" endTimeInSeconds="11467" /]
+
+[vimeo-video startTimeInSeconds="7800" endTimeInSeconds="11467"]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -16,7 +20,7 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/homeowrk.png"/]
+[image assetsSrc="homeowrk.png" /]
 [/slide]
 
 
@@ -35,20 +39,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
-* Reads n numbers
+* Reads **n integer numbers**
 * Finds and prints the **biggest number**
-# Example
-## Input
-- 3
-- 40
-- 90
-- 50
-## Output
-- 90
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 3 | 90 |
+| 40 | |
+| 90 | |
+| 50 | |
 [/task-description]
 [tests]
 [test]
@@ -80,8 +84,8 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Problem: Number Sequence
-[code-task title="Number Sequence" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Max and Min Numbers
+[code-task title="Max and Min Numbers" taskId="FL-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -94,23 +98,24 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** representing the count of numbers to read next
 * Finds the **max** and the **min numbers**
-* Prints them on the console
-# Example
-## Input
-- 5
-- 10
-- 304
-- 0
-- 0
-- 50
-## Output
-- Max number: 304
-- Min number: 0
+* Prints them on the console in the following format:
+   - Max number: \{max number\}
+   - Min number: \{min number\}
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 5 | Max number: 304 |
+| 10 | Min number: 0 |
+| 304 | |
+| 0 | |
+| 0 | |
+| 50 | |
 [/task-description]
 [tests]
 [test]
@@ -169,18 +174,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **p – the power** and **n – the number**
 * Prints the result of n powered by p
-* Don't use Math.pow()
-# Example
-## Input
-- 5
-- 2
-## Output
-- 32
+* Don't use `Math.pow()`
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 5 | 32 |
+| 2 | |
 [/task-description]
 [tests]
 [test]
@@ -213,22 +218,22 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads number **n** and **n pairs** of numbers
 * Prints "Yes, value=\{sum\}", if the **sum of all** pairs is the **same**
 * **Otherwise**, prints "No, maxdiff=\{diff\}"
 * diff is the **max difference** in the sum between two pairs
-# Example
-## Input
-- 2
-- -1
-- 0
-- 0
-- -1
-## Output
-- Yes, value=-1
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | Yes, value=-1 |
+| -1 | |
+| 0 | |
+| 0 | |
+| -1 | |
 [/task-description]
 [tests]
 [test]
@@ -352,7 +357,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
@@ -360,13 +365,13 @@ Write a program, which:
 * For every **even** line **adds** the number to the result
 * For every **odd** line **subtracts** the number from the result
 * **Prints** the result
-# Example
-## Input
-- 2
-- 10
-- 20
-## Output
-- 10
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 10 |
+| 10 | |
+| 20 | |
 [/task-description]
 [tests]
 [test]
@@ -412,22 +417,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** and **n numbers**
 * Finds in **percentage** how many of them can **divide without remainder** at **2**, **3** and **4**
 * Prints percentages p1, p2 and p3, **formatted** to the second digit
-# Example
-## Input
-- 3
-- 3
-- 6
-- 9
-## Output
-- 33.33%
-- 100.00%
-- 0.00%
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 3 | 33.33% |
+| 3 | 100.00% |
+| 6 | 0.00% |
+| 9 | |
 [/task-description]
 [tests]
 [test]
@@ -464,24 +467,24 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads **n** - the count of characters:
 * If character is **vowel** adds its value to the result
 
-    |character|a|e|i|o|u|
-    |---------|-|-|-|-|-|
-    |value|1|2|3|4|5|
+|character|a|e|i|o|u|
+|---------|-|-|-|-|-|
+|value|1|2|3|4|5|
 
 * Prints the result
-# Example
-## Input
-- 2
-- a
-- g
-## Output
-- 1
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 1 |
+| a | |
+| g | |
 [/task-description]
 [tests]
 [test]
@@ -553,21 +556,22 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads rollercoaster **places**, **minimum age**, **count of people** on the queue and **age** for each person
 * If all places are taken, prints - **"The rollercoaster departures"**
 * In other case, prints **"Waiting..."**
-# Example
-## Input
-- 2
-- 10
-- 2
-- 15
-- 24
-## Output
-- The rollercoaster departures
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | The rollercoaster departures |
+| 10 | |
+| 2 | |
+| 15 | |
+| 24 | |
+
 [/task-description]
 [tests]
 [test]
@@ -654,27 +658,26 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which: 
 
 * Reads **n** 
 * Prints **n's multiples** in the format "\{n\} x \{i\} = \{result\}"
 * Where i are the numbers from **1 to 10** (**inclusive**)
 
-# Example
-## Input
-- 2
-## Output
-- 2 x 1 = 2
-- 2 x 2 = 4
-- 2 x 3 = 6
-- 2 x 4 = 8
-- 2 x 5 = 10
-- 2 x 6 = 12
-- 2 x 7 = 14
-- 2 x 8 = 16
-- 2 x 9 = 18
-- 2 x 10 = 20
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| 2 | 2 x 1 = 2 |
+| | 2 x 2 = 4 |
+| | 2 x 3 = 6 |
+| | 2 x 4 = 8 |
+| | 2 x 5 = 10 |
+| | 2 x 6 = 12 |
+| | 2 x 7 = 14 |
+| | 2 x 8 = 16 |
+| | 2 x 9 = 18 |
+| | 2 x 10 = 20 |
 [/task-description]
 [tests]
 [test]
@@ -697,4 +700,11 @@ Write a program, which:
 [/tests]
 [code-io/]
 [/code-task]
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results/]
+
 [/slide]

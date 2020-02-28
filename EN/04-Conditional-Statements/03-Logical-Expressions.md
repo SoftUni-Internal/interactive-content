@@ -3,7 +3,10 @@
 [slide]
 # Video
 
-[vimeo-video videoId="341539841" startTimeInSeconds="1628" endTimeInSeconds="2292" /]
+[vimeo-video startTimeInSeconds="1628" endTimeInSeconds="2292"]
+[stream language="EN" videoId="341539841/456a08950e" default /]
+[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -62,14 +65,13 @@ String b = a;
 System.out.println(a.equals(b)); // true
 ```
 
-```
-java live
+```java live
 String a = "Examplе";
 String b = "Examplе";
 System.out.println(a == b);
 ```
 
-```java
+```java live
 String a = "hello";
 String b = "hello";
 System.out.println(a.equals(b)); // true

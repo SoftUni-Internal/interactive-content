@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Magazin pentru animale de companie
+# Problem: Pet Shop
 [code-task title="Pet Shop" taskId="ESE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -14,28 +14,28 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Write a program that **calculates the expenses** for buying food for dogs and other animals. 
+Write a program that calculates the expenses for buying food for dogs and other animals. 
 
-Each package of **food for dogs costs 2.5 dollars**, and every other that\'s **NOT** for them - 4 dollars.
+Each package of food for dogs costs 2.5 dollars, and every other that\'s NOT for them - 4 dollars.
 
 # Input
 
-The input will be **two** lines from the console:
-- Number of **dogs** - integer in range \[0… 100\]
-- Number of the **others animals** - integer in range \[0… 100\]
+The input will be two lines from the console:
+- Number of dogs - integer in range \[0… 100\]
+- Number of the others animals - integer in range \[0… 100\]
 
 # Output
-Print on the console: **"\{total sum\} dollars"**. The result should be **formatted to the second decimal point**.
+Print on the console: "\{total sum\} dollars". The result should be formatted to the second decimal point.
 
 # Example
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 5 | | 28.50 dollars |
 | 4 | | |
 
 
-| **Input** | | **Output** |
+| Input | | Output |
 | --- | --- | --- |
 | 13 | | 68.50 dollars |
 | 9 | | |

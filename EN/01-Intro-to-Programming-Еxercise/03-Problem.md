@@ -1,6 +1,6 @@
 [slide]
-# Problem: Nums 1...10
-[code-task title="Name and Expression" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Nums from 1 to 10
+[code-task title="Nums from 1 to 10" taskId="ITPE-p-03" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -12,11 +12,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
-Write a program to print numbers from **1** to **10 (inclsuive)**.
+Write a program to print numbers from 1 to 10 (inclsuive).
 
-# Output
+## Output
 
 Each number should be on a new line.
 [/task-description]

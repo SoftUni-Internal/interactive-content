@@ -2,7 +2,11 @@
 
 [slide]
 # Video
-[vimeo-video videoId="341582556" startTimeInSeconds="1459" endTimeInSeconds="2833" /]
+
+[vimeo-video startTimeInSeconds="1459" endTimeInSeconds="2833"]
+[stream language="EN" videoId="341582556" default /]
+[stream language="RO" videoId="388314290"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -41,7 +45,7 @@ These blocks will be **nested**, meaning from **the result** of the first, we ar
 
 The diagram below illustrates the process in detail:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/01.Personal-titles-01.jpg"/]
+[image assetsSrc="01.Personal-titles-01.jpg" /]
 
 After reading the input data from the console, the following program logic should be executed:
 ```java

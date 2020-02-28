@@ -2,8 +2,10 @@
 
 [slide]
 # Video
-[vimeo-video videoId="343678060" startTimeInSeconds="1406" endTimeInSeconds="1957" /]
-
+[vimeo-video startTimeInSeconds="1406" endTimeInSeconds="1957"]
+[stream language="EN" videoId="343678060" default /]
+[stream language="RO" videoId="391452320"  /]
+[/vimeo-video]
 [/slide]
 
 [slide]
@@ -11,7 +13,9 @@
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
 By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/05-use-case-while.png"/]
+
+[image assetsSrc="05-use-case-while.png" /]
+
 The while loop looks like this:
 ```java
 while (condition) {
@@ -40,7 +44,7 @@ Here is how we can solve the problem:
 - In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
 
 Here is a sample implementation of this idea:
-```java
+```java live
 Scanner scanner = new Scanner(System.in);
 int n = Integer.parseInt(scanner.nextLine());
 int num = 1;
@@ -66,15 +70,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
 * Prints the numbers starting from the number to 1 (**inclusive**)
-# Example
-## Input
+## Example
+### Input
 - 4
-## Output
+### Output
 - 4
 - 3
 - 2
@@ -119,15 +123,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
 * Prints the numbers starting from the number to 1 (**inclusive**)
-# Example
-## Input
+## Example
+### Input
 - 4
-## Output
+### Output
 - 4
 - 3
 - 2
@@ -167,19 +171,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a **number** from the console
 * Checks if the number is in the range between **1 and 100**
 * If it isn't - it reads a **new one**
 * If it is - **prints the number** and the program stops
-# Example
-## Input
+
+## Example
+### Input
 - -10
 - 101
 - 50
-## Output
+### Output
 - 50
 [/task-description]
 [tests]
@@ -219,19 +224,19 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a **number** from the console
 * Checks if the number is in the range between **1 and 100**
 * If it isn't - it reads a **new one**
 * If it is - **prints the number** and the program stops
-# Example
-## Input
+## Example
+### Input
 - -10
 - 101
 - 50
-## Output
+### Output
 - 50
 [/task-description]
 [tests]

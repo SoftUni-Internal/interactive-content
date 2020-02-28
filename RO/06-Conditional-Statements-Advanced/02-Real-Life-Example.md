@@ -1,8 +1,12 @@
-# Exemple din viața reală
+# Real-Life Example
 
 [slide]
 # Video
-[vimeo-video videoId="341582556" startTimeInSeconds="1345" endTimeInSeconds="1458" /]
+
+[vimeo-video startTimeInSeconds="1345" endTimeInSeconds="1458"]
+[stream language="EN" videoId="341582556"  /]
+[stream language="RO" videoId="388314290" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -10,7 +14,7 @@
 # Real Life Example: Marketplace
 A market offers different prices for certain products based on the day of the week
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/03-conditional-statements-advanced-example.png"/]
+[image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
 |Product|Weekday|Weekend| 
 |-------|-------|-------|

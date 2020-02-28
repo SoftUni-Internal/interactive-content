@@ -1,8 +1,12 @@
-# Recapitulare
+# Revision
 
 [slide]
 # Video
-[vimeo-video videoId="342471604" startTimeInSeconds="1022" endTimeInSeconds="1177" /]
+
+[vimeo-video startTimeInSeconds="1022" endTimeInSeconds="1177"]
+[stream language="EN" videoId="342471604"  /]
+[stream language="RO" videoId="389927500" default /]
+[/vimeo-video]
 
 [/slide]
 

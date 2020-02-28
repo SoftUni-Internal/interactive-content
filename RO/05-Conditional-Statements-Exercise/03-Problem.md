@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Timp + 15 minute
+# Problem: Time + 15 Minutes
 [code-task title="Time + 15 Minutes" taskId="CE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -13,29 +13,29 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that reads from the console an **hour** and **minutes** from 24-hour day, and calculates what will be the time **after 15 minutes**. 
 
-# Input
+## Input
 The input consists **two** lines:
 - The hours - integer in range \[0...23\]
 - The minutes - integer in range \[0...59\]
 
-# Output
+## Output
 Print the result in the following format: "\{hours\}:\{minutes\}".
 - The hours should be formatted **without leading zero**.
 - The minutes should be formatted **with leading zero**.
 
-# Example
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 11| | 11:23|
-| 08| | |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 11 | 11:23|
+| 08 | |
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 1 || 2:01 | 
-| 46 | | |
+| **Input** | **Output** |
+| --- | --- |
+| 1 | 2:01 | 
+| 46 | |
 [/task-description]
 [tests]
 [test]

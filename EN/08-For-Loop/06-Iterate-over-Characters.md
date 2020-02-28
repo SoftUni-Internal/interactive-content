@@ -2,7 +2,11 @@
 
 [slide]
 # Video
-[vimeo-video videoId="342471604" startTimeInSeconds="3555" endTimeInSeconds="4281" /]
+
+[vimeo-video startTimeInSeconds="3555" endTimeInSeconds="4281"]
+[stream language="EN" videoId="342471604" default /]
+[stream language="RO" videoId="389927500"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -26,7 +30,7 @@ Computers can only understand numbers, so an **ASCII** code is the numerical rep
 
 This is an example part of the table:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/04-for-loop-ascii.png"/]
+[image assetsSrc="04-for-loop-ascii.png" /]
 
 And here you can check the whole **ASCII Table**: **http://www.asciitable.com**
 
@@ -49,17 +53,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
-* Reads **2 letters**
+* Reads **2 letters**, each on a separate line
 * Prints **all letters** in the given range **inclusive**
-# Example
-## Input
-- a
-- c
-## Output
-- a b c
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| a | a |
+| c | b |
+|  | c |
 [/task-description]
 [tests]
 [test]
@@ -112,12 +117,13 @@ Write a program, which:
 
 * Reads **2 letters**
 * Prints **all letters** in the given range **inclusive**
-# Example
-## Input
-- a
-- c
-## Output
-- a b c
+
+## Example
+| **Input** | **Output** 
+| --- | --- |
+| a | a |
+| c | b |
+|  | c |
 [/task-description]
 [tests]
 [test]

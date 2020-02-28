@@ -1,8 +1,12 @@
-# Bucle While imbricate
+# Nested while Loops
 
 [slide]
 # Video
-[vimeo-video videoId="345011935" startTimeInSeconds="4533" endTimeInSeconds="5149" /]
+
+[vimeo-video startTimeInSeconds="4533" endTimeInSeconds="5149"]
+[stream language="EN" videoId="345011935"  /]
+[stream language="RO" videoId="393861306" default /]
+[/vimeo-video]
 
 [/slide]
 

@@ -13,38 +13,38 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Josh is 18 years old and receives a legacy that consists of **X amount of money and time machine**. 
+## Description
+Josh is 18 years old and receives a legacy that consists of X amount of money and time machine. 
 
-He decided to return **until 1800**, but he did not know if the money would suffice to live without working.
+He decided to return until 1800, but he did not know if the money would suffice to live without working.
 
 Write a program that calculates whether Josh will have enough money to not have to work until a certain year. 
-- Assuming that for every even (1800, 1802, etc.) year will spend **12 000 dollars**. 
+- Assuming that for every even (1800, 1802, etc.) year will spend 12 000 dollars. 
 - For each odd (1801, 1803, etc.) will spend 12 000 + 50 \* \[the years age in a given year\].
 
-# Input
+## Input
 The input is read from the console and contains exactly 2 lines:
 - Legacy money – real number in range \[1.00... 1,000,000.00\] 
 - Year to be lived (inclusive) – integer in range \[1801... 1900\]
 
-# Output
-Print on the console a **single** line. The amount must be formatted to **two decimal digits**:
+## Output
+Print on the console a single line. The amount must be formatted to two decimal digits:
 - If the money are enough:
     - "Yes! He will live a carefree life and will have \{N\} dollars left." – where N are the money that will remain
-- If the money are **NOT** enough:
+- If the money are NOT enough:
     - "He will need \{М\} dollars to survive." - where M are money he needs
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 50000 | | Yes! He will live a carefree life and will have 13050.00 dollars left. |
-| 1802 | | |
+| Input | Output |
+| --- | --- |
+| 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
+| 1802 | |
 
-## Comments
+### Comments
 - 1800 -> even year;
-    - Josh spends **12000** dollars
-    - 50000 – 12000 = **38000** dollars remain
+    - Josh spends 12000 dollars
+    - 50000 – 12000 = 38000 dollars remain
 - 1801 -> odd year 
     - he spends 12000 + 19 \* 50 = 12000 + 950 = 12950 dollars
     - 38000 – 12950 = 25050 dollars remain

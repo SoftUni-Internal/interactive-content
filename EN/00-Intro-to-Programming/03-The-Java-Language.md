@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="3111" endTimeInSeconds="4030"]
-[stream language="EN" videoId="342593690" default /]
-[stream language="RO" videoId="384789175"  /]
+[stream language="EN" videoId="342593690/38eafff801" default /]
+[stream language="RO" videoId="384789175/e68b1ea3ae"  /]
 [/video-vimeo]
 [/slide]
 
@@ -70,5 +70,5 @@ JDK should not be confused for a runtime environment (JRE)
 
 * JRE allow to **run** Java programs, but can't **develop own programs**
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/intro-to-programming-java.png"/]
+[image assetsSrc="intro-to-programming-java.png" /]
 [/slide]

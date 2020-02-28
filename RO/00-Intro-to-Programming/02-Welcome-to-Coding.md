@@ -1,11 +1,10 @@
 # What is Coding?
 
 [slide]
-
 # Video
 [vimeo-video startTimeInSeconds="1783" endTimeInSeconds="3110"]
-[stream language="EN" videoId="342593690" default /]
-[stream language="RO" videoId="384789175"  /]
+[stream language="EN" videoId="342593690/38eafff801"  /]
+[stream language="RO" videoId="384789175/e68b1ea3ae" default /]
 [/video-vimeo]
 
 [/slide]
@@ -83,7 +82,7 @@ For convenience when creating programs, for writing programming code, for execut
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 
 This is a program of 3 consecutive commands:
-```java
+```java 
 import java.util.Scanner;
 
 public class Program {

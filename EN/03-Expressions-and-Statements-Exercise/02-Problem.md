@@ -19,9 +19,9 @@ Write a program that calculates how many hours will be necessary to an architect
 Creating one project takes approximately 3 hours.
 
 # Input
-Read **two** lines from the console:
-- **Name of the architect - String**
-- **Number of projects** - integer in range \[0… 100\]
+Read two lines from the console:
+- Name of the architect - String
+- Number of projects - integer in range \[0… 100\]
 
 # Output
 
@@ -31,12 +31,12 @@ Print on the console:
 
 # Example
 
-| **Input** | | **Output** | 
+| Input | | Output | 
 | --- | --- | --- |
 | George | | The architect George will need 12 hours to complete 4 project/s. |
 | 4 | | |
 
-| **Input** | | **Output** |  
+| Input | | Output |  
 | --- | --- | --- |
 | Sanya | | The architect Sanya will need 27 hours to complete 9 project/s. |
 | 9 | | |

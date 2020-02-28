@@ -11,7 +11,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program, which:
 

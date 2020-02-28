@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Combinații
+# Problem: Combinations
 [code-task title="Combinations" taskId="NLE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

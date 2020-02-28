@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Calculări
+# Problem: Calculations
 [code-task title="Calculations" taskId="ITPE-p-04" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -11,15 +11,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
-Write a program, which **calculates** and **prints** the value of the following expressions:
+Write a program, which calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
 * 4 \* 3 \* 2
 * 12 \/ 3 \* 2
 
-# Output 
+## Output 
 
 Print the result of each expression on a separate line
 [/task-description]

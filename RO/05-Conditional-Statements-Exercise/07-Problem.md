@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Conducte în piscină
+# Problem: Pipes In Pool
 [code-task title="Pipes In Pool" taskId="CE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 A pool with **volume V** has **two pipes** that fill it. 
 
 **Every pipe has certain flow** (liters water that going through a single pipe per hour). 
@@ -22,44 +22,45 @@ The worker turns on the pipes **at the same time** and goes out for **N hours**.
 
 Write a program that shows the condition of the pool **at the moment the worker comes back**.
 
-# Input
+## Input
 **Four** lines of input:
 - **V** - **The volume of the pool in liters** - integer in range \[1…10000\]
 - **P1** - **flow of the first pipe per hour** - integer in range \[1…5000\]
 - **P2** - **flow of the second pipe per hour** - integer in range \[1…5000\]
 - **H** - **hours the worker is missing** - float-pointing number in range \[1.0…24.00\]
 
-# Output
+## Output
 Print on the console **one of both possibilities**:
 - How far the pool has been filled and which pipe how much contributed in percentage
   - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
 - If the pool is overflowing – how many liters are overflowed for the given time
   - "For \{hours pipes are filling the pool\} hours the pool overflows with \{liters water overflow\} liters."
+- All numbers in the output should be formatted to 2nd digit after the decimal point.
 
-# Example
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| 1000 | | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
-| 100 | |  |
-| 120 | |  |
-| 3 | |  |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
+| 100 | |
+| 120 | |
+| 3 | |
 
-## Comments
+### Comments
 - For 3 hours: The first pipe fills up 300 liters
 - The second pipe fills up 360 liters
 - In total – 660 l < 1000 l => 66% are filled up
 - The first pipe is contributed with 45% (300 of 660 liters).
 - The second pipe is contributed with 54% (360 of 660 liters).
 
-# Example
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| 100 | | For 2.50 hours the pool overflows with 400.00 liters. |
-| 100 | |  |
-| 100 | |  |
-| 2.5 | |  |
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 100 | For 2.50 hours the pool overflows with 400.00 liters. |
+| 100 | |
+| 100 | |
+| 2.5 | |
 
-## Comments
+### Comments
 - For 2.5 hours: The first pipe fills up 250 l 
 - The second pipe fills up 250 l
 - In total – 500 l > 100 l => 400 l are overflowed.

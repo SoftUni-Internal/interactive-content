@@ -1,5 +1,5 @@
 [slide]
-# Problem: Rezervor de combustibil
+# Problem: Fuel Tank
 [code-task title="Fuel Tank" taskId="CAE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -13,34 +13,34 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that knows whether the tank of a vehicle needs refueling or not. 
 
-# Input
+## Input
 The input is consists of 2 lines:
 - First you have to read from the console the type of fuel - text with options: "Diesel", "Gasoline" or "Gas"
 - The second line of input reads the fuel in the tank in liters
 
-# Output
-If the fuel in the tank is more than or equal to 25 liters print:
-- "You have enough \{type of fuel\}."
+## Output
+- If the fuel is other than the specified print "Invalid fuel!".
+- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
+    - "You have enough \{type of fuel\}."
+    - Type of the fuel should be printed in lower case.
+- Otherwise print:
+    - "Fill your tank with \{type of fuel\}!". 
+    - Type of the fuel should be printed in lower case.
 
-Otherwise print:
-- "Fill your tank with \{type of fuel\}!". 
+### Example
 
-If a fuel other than the specified is introduced, "Invalid fuel!" shall be printed.
+| **Input** | **Output** |
+| --- | --- |
+| Diesel | Fill your tank with diesel! |
+| 10 | |
 
-# Example
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| Diesel | | Fill your tank with diesel! |
-| 10 | | |
-
-| **Input** | | **Output** |
-| --- | --- | --- |
-| Gas | | You have enough gas. |
-| 25 | | |
+| **Input** | **Output** |
+| --- | --- |
+| Gas | You have enough gas. |
+| 25 | |
 
 [/task-description]
 [tests]

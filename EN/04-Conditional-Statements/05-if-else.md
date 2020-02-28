@@ -2,7 +2,11 @@
 
 [slide]
 # Video
-[vimeo-video videoId="341539841" startTimeInSeconds="2681" endTimeInSeconds="3553" /]
+
+[vimeo-video startTimeInSeconds="2681" endTimeInSeconds="3553"]
+[stream language="EN" videoId="341539841/456a08950e" default /]
+[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -15,7 +19,7 @@ Built this way, **the conditional statement** is called `if-else` and its behavi
 * if the result of the condition is positive (`true`) – we perform some actions
 * when it is negative (`false`) – others. 
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/02-usecase-if-else-statement.png"/]
+[image assetsSrc="02-usecase-if-else-statement.png" /]
 
 The format of the construction is:
 ```java

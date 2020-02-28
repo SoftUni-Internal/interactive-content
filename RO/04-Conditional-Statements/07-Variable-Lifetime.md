@@ -1,8 +1,12 @@
-# Domeniu de vizibilitate al variabilei
+# Variable Scope
 
 [slide]
 # Video
-[vimeo-video videoId="341539841" startTimeInSeconds="4005" endTimeInSeconds="4209" /]
+
+[vimeo-video startTimeInSeconds="4005" endTimeInSeconds="4209"]
+[stream language="EN" videoId="341539841/456a08950e"  /]
+[stream language="RO" videoId="387657941/b7f1ede8f0" default /]
+[/vimeo-video]
 
 [/slide]
 

@@ -1,8 +1,12 @@
-# Operatori Logici
+# More Complex Conditions
 
 [slide]
 # Video
-[vimeo-video videoId="341582556" startTimeInSeconds="2834" endTimeInSeconds="4109" /]
+
+[vimeo-video startTimeInSeconds="2834" endTimeInSeconds="4109"]
+[stream language="EN" videoId="341582556"  /]
+[stream language="RO" videoId="388314290" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -85,7 +89,7 @@ The program will run in the **following** way:
 # Example: Point in a Rectangle
 Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/03.Point-in-rectangle-01.png"/]
+[image assetsSrc="03.Point-in-rectangle-01.png" /]
 
 The input data is read from the console and consists of 6 lines: 
 - the decimal numbers `x1`, `y1`, `x2`, `y2`, `x` and `y` (as it is guaranteed that `x1 < x2` and `y1 < y2`).
@@ -436,7 +440,7 @@ Logical negation (operator **!**) means a given condition is **not fulfilled**.
 The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
 # Example: Invalid Number
-A given **number is valid** if it is in the range **\[100 … 200\]** or it is **0**. Do a validation for an **invalid** number.
+A given **number is valid** if it is in the range \[100 … 200\] or it is **0**. Do a validation for an **invalid** number.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 

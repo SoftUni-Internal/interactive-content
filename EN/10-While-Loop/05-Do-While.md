@@ -4,7 +4,7 @@ The next type of loops we will get familiar with are the `do-while` loops.
 
 By structure, this type of loop resembles the while loop, but there is a significant difference between them.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-csharp/blob/master/assets/05-while-loop-use-case-do-while.png"/]
+[image assetsSrc="05-while-loop-use-case-do-while.png" /]
 
 The following example shows the usage of the `do-while` loop:
 ```java live
@@ -43,7 +43,7 @@ Here is how we can specifically calculate **factorial**:
 - **Outside** the body of the loop, we print the final factorial value
 
 This is a sample code, implementing the above described steps:
-```java
+```java live
 Scanner scanner = new Scanner(System.in);
 int n = Integer.parseInt(scanner.nextLine());
 int fact = 1;

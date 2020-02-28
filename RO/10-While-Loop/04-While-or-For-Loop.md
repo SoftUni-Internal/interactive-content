@@ -1,8 +1,12 @@
-# Bucla While sau bucla For?
+# While or For Loop?
 
 [slide]
 # Video
-[vimeo-video videoId="343678060" startTimeInSeconds="1958" endTimeInSeconds="2495" /]
+
+[vimeo-video startTimeInSeconds="1958" endTimeInSeconds="2495"]
+[stream language="EN" videoId="343678060"  /]
+[stream language="RO" videoId="391452320" default /]
+[/vimeo-video]
 
 [/slide]
 
@@ -65,18 +69,19 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -119,18 +124,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-# Example
-## Input
+## Example
+### Input
 - 2
 - 4
 - 8
 - 3
-## Output
+### Output
 - 3
 [/task-description]
 [tests]
@@ -166,7 +171,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
@@ -174,12 +179,13 @@ Write a program, which:
 * **Add** - Аdds 1 to the number
 * **Subtract** - Subtracts 1 from the number
 * **END** -  Prints the number and stops the program
-# Example
-## Input
+
+## Example
+### Input
 - 5
 - Add
 - END
-## Output
+### Output
 - 6
 [/task-description]
 [tests]
@@ -253,7 +259,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Reads a number from the console
@@ -261,12 +267,13 @@ Write a program, which:
 * **Add** - Аdds 1 to the number
 * **Subtract** - Subtracts 1 from the number
 * **END** -  Prints the number and stops the program
-# Example
-## Input
+
+## Example
+### Input
 - 5
 - Add
 - END
-## Output
+### Output
 - 6
 [/task-description]
 [tests]

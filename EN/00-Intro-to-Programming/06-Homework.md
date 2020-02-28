@@ -3,8 +3,8 @@
 [slide]
 # Video
 [vimeo-video startTimeInSeconds="9002" endTimeInSeconds="9772"]
-[stream language="EN" videoId="342593690"  /]
-[stream language="RO" videoId="384789175" default /]
+[stream language="EN" videoId="342593690/38eafff801" default /]
+[stream language="RO" videoId="384789175/e68b1ea3ae"  /]
 [/video-vimeo]
 
 [/slide]
@@ -14,6 +14,9 @@
 Now, it's your turn to practice what you have learned in the training session.
 
 We have prepared some simple problems for you to solve. If you struggle you can see the solution after each problem. 
+
+[image assetsSrc="homework.png" /]
+
 [/slide]
 
 [slide]
@@ -21,6 +24,8 @@ We have prepared some simple problems for you to solve. If you struggle you can 
 [code-task title="Print Hello Java" taskId="ITP-p-01" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -29,6 +34,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a Java program, which:
 
 Prints "Hello Java" on the console
@@ -51,6 +58,8 @@ Hello Java
 [code-task title="Calculate and Print 5 * 5" taskId="ITP-p-02" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -59,10 +68,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a Java program, which:
 
 * Calculates the value of 5 * 5
-
 * Prints the result
 [/task-description]
 [code-io /]
@@ -83,6 +93,8 @@ Write a Java program, which:
 [code-task title="Name and Expression" taskId="ITP-p-03" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -92,6 +104,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
@@ -113,6 +127,8 @@ Catlyn
 [code-task title="Calculations" taskId="ITP-p-04" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -121,6 +137,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program, which calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
@@ -147,6 +165,8 @@ Write a program, which calculates and prints the value of the following express
 [code-task title="Square of 7 * 7 Stars" taskId="ITP-p-05" executionStrategy="java-code"]
 [code-editor language=java]
 ```
+import java.util.Scanner;
+
 public class Main {
   public static void main(String[] args) {
       // Write code here
@@ -155,6 +175,8 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
+## Description
+
 Write a program, which:
 
 Prints a square of 7 * 7 stars like this:
@@ -185,4 +207,11 @@ Prints a square of 7 * 7 stars like this:
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
+
 [/slide]

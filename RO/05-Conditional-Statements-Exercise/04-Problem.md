@@ -1,5 +1,5 @@
 [slide]
-# Problemă: Ziua săptămânii
+# Problem: Day of Week
 [code-task title="Day of Week" taskId="CE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -13,19 +13,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program that reads an integer from the console and prints **day of the week** (in English) in range \[1…7\] and "**Error**" if the number is **invalid**.
 
-# Example
+## Example
 
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| 2 | | Tuesday |
+| **Input** | **Output** |
+| --- |  --- |
+| 2 | Tuesday |
 
-| **Input**  | | **Output** |
-| --- | --- | --- |
-| -1 | | Error |
+| **Input** | **Output** |
+| --- | --- |
+| -1 | Error |
 [/task-description]
 [tests]
 [test]

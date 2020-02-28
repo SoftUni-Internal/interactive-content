@@ -3,8 +3,8 @@
 [slide]
 # Video
 [vimeo-video startTimeInSeconds="4657" endTimeInSeconds="5877"]
-[stream language="EN" videoId="342593690" default /]
-[stream language="RO" videoId="384789175"  /]
+[stream language="EN" videoId="342593690/38eafff801" default /]
+[stream language="RO" videoId="384789175/e68b1ea3ae"  /]
 [/video-vimeo]
 
 [/slide]
@@ -17,23 +17,23 @@ Create new Console Application in IntelliJ IDEA: `[New Project]` -> `[Java]` -> 
 
 We set **a meaningful name** to our program, for example `HelloJava`:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-name-hellojava.png"/]
+[image assetsSrc="intro-to-programming-name-hellojava.png" /]
 
 IntelliJ IDEA is going to create for us **an empty Java program**, which we have to finish writing.
 
 # Configuring JDK in IntelliJ IDEA
 If no JDK is still configured, you should configure it:
 
-[image src="https://github.com/AlenPaunov/pb-interactive-java/blob/master/assets/intro-to-programming-4.png"/]
+[image assetsSrc="intro-to-programming-4.png" /]
 
 Click [New] and locate your JDK installation:
 
-[image src="https://github.com/AlenPaunov/pb-interactive-java/blob/master/assets/intro-to-programming-5.png"/]
+[image assetsSrc="intro-to-programming-5.png" /]
 [/slide]
 
 [slide]
 # Writing the Program Code
-The commands of the program are written in `main(String\[\] args)`, between the opening and the closing parentheses `{ }`.
+The commands of the program are written in `main(String[] args)`, between the opening and the closing parentheses `{ }`.
 
 This is the main method (action), that is being executed with the start of a Java program.
 
@@ -41,7 +41,7 @@ Press `[Enter]` after **the opening parentheses** `{` and **start writing**.
 
 The code of the program is written **inwards**, as this is a part of shaping up the text for convenience during a review and/or debugging.
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-inwards-example.png"/]
+[image assetsSrc="intro-to-programming-inwards-example.png" /]
 
 Write the following command:
 ```java
@@ -50,7 +50,7 @@ System.out.println("Hello Java");
 
 Here is how our program should look like in IntelliJ IDEA:
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-code-in-intellij.png"/]
+[image assetsSrc="intro-to-programming-code-in-intellij.png" /]
 
 The command `System.out.println("Hello Java")` in the Java language means to execute printing (`System.out.println(…)`) on the console and to print the text message `Hello Java`, which we should surround by quotation marks, in order to clarify that this is a text.
 
@@ -67,11 +67,11 @@ To start the program, press `[Ctrl + Shift + F10]`. If there aren't any errors, 
 
 The result will appear in the console (terminal window):
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/intro-to-programming-console.png"/]
+[image assetsSrc="intro-to-programming-console.png" /]
 
 Another way to start your program is by clicking the right mouse button and selecting **Run 'Main'**
 
-[image src="https://github.com/AtanasovAtanas/pb-interactive-java/blob/master/assets/run-intellij-right-click.png"/]
+[image assetsSrc="run-intellij-right-click.png" /]
 
 Actually, the output from the program is the following text message:
 ```

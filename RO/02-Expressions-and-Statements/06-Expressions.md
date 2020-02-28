@@ -1,9 +1,12 @@
-# Expresii
+# Expressions
 
 [slide]
 # Video
 
-[vimeo-video videoId="341522009" startTimeInSeconds="7018" endTimeInSeconds="7376" /]
+[vimeo-video startTimeInSeconds="7018" endTimeInSeconds="7376 "]
+[stream language="EN" videoId="341522009/063bddc415"  /]
+[stream language="RO" videoId="386049133/766a425069" default /]
+[/video-vimeo]
 
 [/slide]
 
