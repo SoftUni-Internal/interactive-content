@@ -18,7 +18,7 @@ public class Main {
 Write a program that calculates **how many solutions in natural numbers (including zero)** has the equation:
 
 ```
-**x1** \+ **x2** \+ **x3** \+ **x4** \+ **x5** = **n**
+x1 + x2 + x3 + x4 + x5 = n
 ```
 
 # Input
