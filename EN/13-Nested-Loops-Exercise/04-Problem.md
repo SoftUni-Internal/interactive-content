@@ -1,13 +1,13 @@
 [slide]
 # Problem: Word Wars
-[code-task title="Word Wars" taskId="26-06E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Word Wars" taskId="24-06E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that **calculates the ASCII value of a few words**, as the word with the **highest value** is the winner.
 
 The value of a word is calculated when you sum the **ASCII values of all the letters of which it consists of**. 
@@ -15,7 +15,7 @@ The value of a word is calculated when you sum the **ASCII values of all the let
 From the console read words until the command "**STOP**", then print:
 - "Winner is \{winner word\} – \{value of the word\}!"
 
-# Example
+## Example
 
 | **Input** | **Output** 
 | --- | --- |
@@ -24,7 +24,7 @@ From the console read words until the command "**STOP**", then print:
 | Destination | |
 | STOP | |
 
-## Comments
+### Comments
 - The first letter is \'H\' and it\'s ASCII value is 72, \'o\' has value 111, \'u\' has value 117, \'s\' has value 115, \'e\' has value 101. Their sum is 516. 
 - Keep doing the same calculations for the other words and get that Destination has the highest value - 1154.
 

@@ -1,8 +1,20 @@
+# Revision
+
 [slide]
-# While Loop
+# Video
+
+[vimeo-video startTimeInSeconds="984" endTimeInSeconds="1500"]
+[stream language="EN" videoId="345185854" default /]
+[stream language="RO" videoId="393622973" /]
+[/vimeo-video]
+
+[/slide]
+
+[slide]
+# Revision
 A while loop is used to repeat a block of code when we don't know the count of iterations
 
-```python
+```py lvie
 n = int(input())
 while n % 2 != 0:
   n = int(input())
@@ -17,7 +29,7 @@ Can only be executed from the loop's **body**
 When it is executed, the code inside the loop's body after it **is skipped** and does not execute
 
 # Infinite While Loop
-```python
+```py live
 number = 1
 command = "Add"
 while command != "END"
@@ -25,15 +37,8 @@ while command != "END"
 # Always evaluated to True
 ```
 
-```python
+```py live
 while True:
-  # Commands
+  print('Hello world!')
  ```
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video videoId="345185854" startTimeInSeconds="984" endTimeInSeconds="1500" /]
-
 [/slide]

@@ -1,5 +1,12 @@
 [slide]
 # Problem 04
+[code-task title="Problem-04" taskId="24-07-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
 ## Description
 You have been hired by a cinema to write a program that calculates whether a movie showing will be enough so that the cinema hall is filled and how much money will the profit be. 
 
@@ -13,9 +20,10 @@ If there are not enough free seats for the people that want to enter, it means t
 
 If more people than the available seats try to enter the hall, it is considered full and the program should stop receiving input.
 
-# Input
+## Input
 Read from the console:
 - First line – hall's capacity – whole number in the range [50... 150]
+
 On each of the next lines until the command "Movie time!":
 - Count of people entering the cinema - whole number in the range [1… 15]
 
@@ -24,39 +32,18 @@ First, print on the console one line:
 - If you have received the command "Movie time!": "There are \{seats left\} seats left in the cinema."
 - If there are no more free seats in the hall: "The cinema is full."
 - Afterwards, print: "Cinema income - \{income\}$"
-[code-task title="Problem-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-## Input
-Capacity - 60
 
-People entering the cinema:
-10
-6
-3
-20
-15
-Movie time!
-
-## Output
-There are 6 seats left in the cinema.
-
-Cinema income - 255$
-
-## Comments
-If we receive the hall's capacity – 60 seats. 
-
-On the next line we receive the people that have entered the hall – 10. 
-
-The price that they will pay is 10 * 5 = 50. 
-
-After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. 
-
-We continue until we receive the command "Movie time!" and then we print a suitable output.
+## Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| 60 | There are 6 seats left in the cinema. | If we receive the hall's capacity – 60 seats.|
+| 10 | Cinema income - 255$ | On the next line we receive the people that have entered the hall – 10. |
+| 6 | | The price that they will pay is 10 * 5 = 50. |
+| 6 | | After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. |
+| 3 | | We continue until we receive the command "Movie time!" and then we print a suitable output. |
+| 20 | | |
+| 15 | | |
+| Movie time! | | |
 [/task-description]
 [code-io /]
 [tests]
