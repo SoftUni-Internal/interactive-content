@@ -1,6 +1,6 @@
 [slide]
 # Problem: Back to the Past
-[code-task title="Back to the Past" taskId="25-04E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Back to the Past" taskId="FLE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Josh is 18 years old and receives a legacy that consists of X amount of money and time machine. 
 
 He decided to return until 1800, but he did not know if the money would suffice to live without working.
@@ -22,26 +22,26 @@ Write a program that calculates whether Josh will have enough money to not have 
 - Assuming that for every even (1800, 1802, etc.) year will spend 12 000 dollars. 
 - For each odd (1801, 1803, etc.) will spend 12 000 + 50 \* \[the years age in a given year\].
 
-# Input
+## Input
 The input is read from the console and contains exactly 2 lines:
 - Legacy money – real number in range \[1.00... 1,000,000.00\] 
 - Year to be lived (inclusive) – integer in range \[1801... 1900\]
 
-# Output
+## Output
 Print on the console a single line. The amount must be formatted to two decimal digits:
 - If the money are enough:
     - "Yes! He will live a carefree life and will have \{N\} dollars left." – where N are the money that will remain
 - If the money are NOT enough:
     - "He will need \{М\} dollars to survive." - where M are money he needs
 
-# Example
+## Example
 
-| Input | | Output |
-| --- | --- | --- |
-| 50000 | | Yes! He will live a carefree life and will have 13050.00 dollars left. |
-| 1802 | | |
+| Input | Output |
+| --- | --- |
+| 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
+| 1802 | |
 
-## Comments
+### Comments
 - 1800 -> even year;
     - Josh spends 12000 dollars
     - 50000 – 12000 = 38000 dollars remain

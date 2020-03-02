@@ -1,6 +1,6 @@
 [slide]
 # Problem: Combinations
-[code-task title="Combinations" taskId="25-06E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Combinations" taskId="NLE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -13,21 +13,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 
 Write a program that calculates **how many solutions in natural numbers (including zero)** has the equation:
 
 ```
-**x1** \+ **x2** \+ **x3** \+ **x4** \+ **x5** = **n**
+x1 + x2 + x3 + x4 + x5 = n
 ```
 
-# Input
+## Input
 - The input consits a single number - n - integer
 
-# Output
+## Output
 - Print on the console the total number of solutions
 
-# Example
+## Example
 | **Input** | **Output** | **Comments** | 
 | --- | --- | --- |
 | 25 | 23751 | Generate all combinations of 5 digits, the first is: |

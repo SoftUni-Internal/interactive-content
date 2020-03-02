@@ -1,6 +1,6 @@
 [slide]
 # Problem: Hospital
-[code-task title="Hospital" taskId="25-04E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hospital" taskId="FLE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 For a period of time, patients are arriving every day in the hospital for examination. 
 
 It has initially 7 doctors. 
@@ -26,29 +26,27 @@ As the appointment of the doctor occurs before the intake of patients for the da
 
 Write a program that calculates the number of reviewed and unreviewed patients for the given period.
 
-# Input
-
+## Input
 The input is read from the console and contains: 
 
 - The period for which you need to perform calculations - integer in range \[1... 1000\] 
 - On the following lines (equal to the number of days) – the number of patients arriving for review for the current day - integer in range \[0... 10 000\]
 
-# Output
 Print on the console 2 lines:
 - First line: "Treated patients: \{Number of patients reviewed\}." 
 - Second line: "Untreated patients: \{Number of unreviewed patients\}."
 
-# Example
+## Example
 
-| Input | | Output |
-| --- | --- | --- |
-| 4 | | Treated patients: 23. |
-| 7 | | Untreated patients: 21. |
-| 27 | | |
-| 9 | | |
-| 1 | | |
+| Input | Output |
+| --- | --- |
+| 4 | Treated patients: 23. |
+| 7 | Untreated patients: 21. |
+| 27 | |
+| 9 | |
+| 1 | |
 
-## Comments
+### Comments
 - Day 1: 7 treated and 0 untreated patients for the day 
 - Day 2: 7 treated and 20 untreated patients for the day 
 - Day 3: Until now, the patients treated were 14 and untreated – 20 – > A new doctor is appointed – > 8 treated and 1 untreated patient for the day 

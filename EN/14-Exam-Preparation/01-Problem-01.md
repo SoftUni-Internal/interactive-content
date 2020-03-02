@@ -1,5 +1,18 @@
 [slide]
 # Problem 01
+[code-task title="Problem-01" taskId="EP-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
 ## Description
 Write a program, which calculates how long it will take you to watch all episodes of a series in minutes. 
 
@@ -20,38 +33,13 @@ From the console you receive 4 lines:
 You have to print on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format: 
 - "Total time needed to watch the \{name of the series\} series is \{time\} minutes."
 
-[code-task title="Problem-01" taskId="EP-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Input
-Name of the series - Lucifer
-
-Count seasons – 3
-
-Count episodes  – 18
-
-Duration of an episode – 55
-
-## Output
-Total time needed to watch the Lucifer series is 3594 minutes.
-
-## Comments 
-Duration of advertisements per episode: 20% от 55 = 11.0
-
-Duration of an episode with the advertisements: 55 + 11 = 66.0
-
-Additional time from the special episode: 3*10 = 30
-
-Total time to watch the episodes: 66 * 18 * 3 + 30 = 3594.0  
+## Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | Duration of advertisements per episode: 20% от 55 = 11.0 |
+| 3 | | Duration of an episode with the advertisements: 55 + 11 = 66.0 |
+| 18 | | Additional time from the special episode: 3*10 = 30|
+| 55 | | Total time to watch the episodes: 66 * 18 * 3 + 30 = 3594.0 |
 [/task-description]
 [code-io /]
 [tests]
