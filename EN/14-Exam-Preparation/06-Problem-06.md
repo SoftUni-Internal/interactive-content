@@ -1,6 +1,6 @@
 [slide]
 # Problem 06
-[code-task title="Problem-06" taskId="24-07-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Problem-06" taskId="26-07-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

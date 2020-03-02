@@ -1,6 +1,6 @@
 [slide]
 # Problem: Hospital
-[code-task title="Hospital" taskId="24-04E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Hospital" taskId="26-04E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

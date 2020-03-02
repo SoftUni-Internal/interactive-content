@@ -1,6 +1,6 @@
 [slide]
 # Problem: Stream Of Letters
-[code-task title="Stream Of Letters" taskId="24-05E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Stream Of Letters" taskId="26-05E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

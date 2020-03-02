@@ -1,6 +1,6 @@
 [slide]
 # Problem: Clock - Part 2
-[code-task title="Clock - Part 2" taskId="24-06E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Clock - Part 2" taskId="26-06E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

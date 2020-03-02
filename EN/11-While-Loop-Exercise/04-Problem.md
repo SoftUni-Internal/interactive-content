@@ -1,6 +1,6 @@
 [slide]
 # Problem: Dishwasher
-[code-task title="Dishwasher" taskId="24-05E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Dishwasher" taskId="26-05E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
