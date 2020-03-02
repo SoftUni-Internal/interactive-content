@@ -7,33 +7,22 @@
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program that reads a hidden message in a sequence of symbols.
+## Description
+You will receive symbols the "**End**" command. 
 
-You will receive each of them on a single line until the "**End**" command. 
-
-The words are initiated from the letters in the **order of their reading**. 
-
-Symbols which are **not Latin** letters should be **ignored**.
-
-The words, hidden in the stream, are separated from a **secret command by three letters** - "**c**", "**o**" and "**n**". 
+You skip the **non-letter chars** and the first occurence of **c**, **o**  and **n** (code chars).
 
 When you **first receive** one of these letters, you have to mark it as visited, **but it is not saved in the word**.
 
-Every time you **receive the same** letter, **it is saved normally** in the word.
+After you have found **all three code chars from the command**, you have to print the word with a space and reset the counting of the code chars.
 
-After you have found **all three symbols from the command**, you have to print the word and a space " ".
-
-A new word is started at the same way, waiting the secret command to be printed. 
-
-# Input
+## Input
 - Read a sequence of lines with a single symbol each, until you receive the "**End**" command
 
-# Output
+## Output
 - Print on the console **every word after the secret command** followed by **space**
 
-# Example
-
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | H | Hello |
@@ -46,11 +35,53 @@ A new word is started at the same way, waiting the secret command to be printed.
 | c| |
 | End| |
 
-## Comments
+### Comments
 - "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
 - First we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
 - The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
 - We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| % | BooM |
+| \!| |
+|  c|
+| ^| |
+| B| |
+| \`| | 
+| o| |
+| %| |
+| o| |
+| o| |
+| M| |
+| \)| |
+| n| |
+| A| |
+| D| |
+| End| |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| o | Solve me |
+| S | |
+| % | |
+| o | |
+| l | |
+| ^ | |
+| v | |
+| e | |
+| c | |
+| n | |
+| & | |
+| m | |
+| e | |
+| c | |
+| o | |
+| n | |
+| End | |
+
 [/task-description]
 [tests]
 [test]

@@ -1,1 +1,1 @@
-# Bucle For - Exercițiu
+# For Loop - Exercise

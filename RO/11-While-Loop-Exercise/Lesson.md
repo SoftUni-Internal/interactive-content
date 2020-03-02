@@ -1,1 +1,1 @@
-# Bucle While - Exercițiu
+# While Loop - Exercise

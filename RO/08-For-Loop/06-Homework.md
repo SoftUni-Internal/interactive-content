@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="6163" endTimeInSeconds="9456"]
-[stream language="EN" videoId="342410322"  /]
-[stream language="RO" videoId="389330702" default /]
+[stream language="EN" videoId="342410322" default /]
+[stream language="RO" videoId="389330702"  /]
 [/vimeo-video]
 [/slide]
 
@@ -35,7 +35,7 @@ Let's solve a few problems to confirm what we have learned.
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
-* Reads n numbers
+* Reads **n integer numbers**
 * Finds and prints the **biggest number**
 
 ## Example
@@ -95,7 +95,7 @@ Write a program, which:
 | **Input** | **Output** 
 | --- | --- |
 | 5 | Max number: 304 |
-| 10 | Min number: 0 |
+| 10 | Min number: 0|
 | 304 | |
 | 0 | |
 | 0 | |
@@ -598,7 +598,7 @@ The rollercoaster departures
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which: 
 
 * Reads **n** 
