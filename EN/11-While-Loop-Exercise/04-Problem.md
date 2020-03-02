@@ -1,6 +1,6 @@
 [slide]
 # Problem: Dishwasher
-[code-task title="Dishwasher" taskId="WLE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Dishwasher" taskId="25-05E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

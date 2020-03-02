@@ -1,6 +1,6 @@
 [slide]
 # Problem: Odd / Even Position
-[code-task title="Odd / Even Position" taskId="FLE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Odd / Even Position" taskId="25-04E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
