@@ -4,8 +4,8 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7800" endTimeInSeconds="11467"]
-[stream language="EN" videoId="342471604"  /]
-[stream language="RO" videoId="389927500" default /]
+[stream language="EN" videoId="342471604" default /]
+[stream language="RO" videoId="389927500"  /]
 [/vimeo-video]
 
 [/slide]
@@ -43,7 +43,7 @@ public class Program {
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
-* Reads n numbers
+* Reads **n integer numbers**
 * Finds and prints the **biggest number**
 
 ## Example

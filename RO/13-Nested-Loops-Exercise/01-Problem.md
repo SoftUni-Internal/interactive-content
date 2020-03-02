@@ -13,27 +13,27 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program that prints **the hours of the day** from given hour and minutes to 23:59 (**inclusive**), each on a separate line. 
 
-# Input
+## Input
 The input is consists of **2** lines:
 - First line - hours - integer in range \[0...23\]
 - Second line - minutes - integer in range \[0...59\]
 
-# Output
+## Output
 - Hours must be printed on the console in "\{hour\} : \{minutes\}" format.
 
-# Example
+## Example
 
-| **Input** | | **Output** |
-| --- | --- | --- |
-| 8 | | 08 : 05 |
-| 5 | | 08 : 06 |
-| | | ... |
-| | | 23 : 57 |
-| | | 23 : 58 |
-| | | 23 : 59 |
+| **Input** | **Output** |
+| --- | --- |
+| 8 | 08 : 05 |
+| 5 | 08 : 06 |
+| | ... |
+| | 23 : 57 |
+| | 23 : 58 |
+| | 23 : 59 |
 
 [/task-description]
 [tests]

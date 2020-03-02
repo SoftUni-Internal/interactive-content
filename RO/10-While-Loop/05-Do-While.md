@@ -43,7 +43,7 @@ Here is how we can specifically calculate **factorial**:
 - **Outside** the body of the loop, we print the final factorial value
 
 This is a sample code, implementing the above described steps:
-```java
+```java live
 Scanner scanner = new Scanner(System.in);
 int n = Integer.parseInt(scanner.nextLine());
 int fact = 1;
