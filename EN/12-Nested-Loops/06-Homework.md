@@ -776,19 +776,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program, which:
 
 * Prints **letters combinations** and the **count** of the printed combinations
 * You will receive the **range of letters** on the first and second line
 * On the third line, you will receive a **letter**, which you must **ignore** - don't print combinations with it
-# Example
-## Input
-- a
-- c
-- b
-## Output
-- aaa aac aca acc caa cac cca ccc 8
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| a | aaa aac aca acc caa cac cca ccc 8 |
+| c |  |
+| b |  |
+
 [/task-description]
 [tests]
 [test]
