@@ -371,82 +371,31 @@ Write a program, which:
 ## Description
 Write a program, which:
 
-* Prints letters combinations and the count of the printed combinations
-* You will receive the range of letters on the first and second line
-* On the third line, you will receive a letter, which you must ignore - don't print combinations with it
+* Prints **letters combinations** and the **count** of the printed combinations
+* You will receive the **range of letters** on the first and second line
+* On the third line, you will receive a **letter**, which you must **ignore** - don't print combinations with it
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| a | aaa |
-| c| aab |
-| b | aba |
-| | abb |
-| | baa |
-| | bab |
-| | bba |
-| | bbb |
-| | 8 |
+| a | aaa aac aca acc caa cac cca ccc 8 |
+| c |  |
+| b |  |
 
 [/task-description]
 [tests]
 [test]
 [input]
-k
-l
-m
+a
+c
+b
 [/input]
 [output]
-kkk
-kkl
-klk
-kll
-lkk
-lkl
-llk
-lll
-8
-[/output]
-[/test]
-[test]
-[input]
-e
-h
-f
-[/input]
-[output]
-eee
-eeg
-eeh
-ege
-egg
-egh
-ehe
-ehg
-ehh
-gee
-geg
-geh
-gge
-ggg
-ggh
-ghe
-ghg
-ghh
-hee
-heg
-heh
-hge
-hgg
-hgh
-hhe
-hhg
-hhh
-27
+aaa aac aca acc caa cac cca ccc 8
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
