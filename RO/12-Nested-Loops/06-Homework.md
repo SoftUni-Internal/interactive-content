@@ -310,7 +310,6 @@ Write a program, which:
 
 * Reads 3 digits - each of them is an upper limit
 * Generates unique 3 digit PIN Codes, which meet the following conditions:
-    * They are in the range
     * The first and the third digit must be even
     * The second digit must be a prime number in the range \[2…7\]
 
