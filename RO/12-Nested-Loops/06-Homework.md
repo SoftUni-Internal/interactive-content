@@ -273,7 +273,6 @@ import math
 [tests]
 [test]
 [input]
-London
 1
 20
 [/input]
