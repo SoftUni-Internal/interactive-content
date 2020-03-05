@@ -4,8 +4,8 @@
 # Video
  
 [vimeo-video startTimeInSeconds="7016" endTimeInSeconds="9705"]
-[stream language="EN" videoId="343587107" default /]
-[stream language="RO" videoId="392266139" /]
+[stream language="EN" videoId="343587107"  /]
+[stream language="RO" videoId="392266139" default /]
 [/vimeo-video]
 [/slide]
 
@@ -40,10 +40,10 @@ Write a program, which:
 * Prints the sum
 
 ## Example
-### Input
-- 5634
-### Output
-- 18
+| Input | Output |
+| --- | --- |
+| 5634 | 18 |
+
 [/task-description]
 [tests]
 [test]
@@ -132,10 +132,17 @@ Fav Book
 Book1
 Book2
 Book3
+Book4
+Book5
+Book6
+Book7
+Book8
+Book9
+Book10
 Fav Book
 [/input]
 [output]
-Book found! Attempts: 4
+Book found! Attempts: 11
 [/output]
 [/test]
 [/tests]
@@ -257,10 +264,14 @@ Write a program, which:
 * Otherwise, prints "\{num\} is not special"
 
 ## Example
-### Input
-- 23
-### Output
-- 23 is not special
+| Input | Output |
+| --- | --- |
+| 23 | 23 is not special |
+
+## Example
+| Input | Output |
+| --- | --- |
+| 404 | 404 is special |
 [/task-description]
 [tests]
 [test]
@@ -277,6 +288,14 @@ Write a program, which:
 [/input]
 [output]
 43 is not special
+[/output]
+[/test]
+[test]
+[input]
+202
+[/input]
+[output]
+202 is special
 [/output]
 [/test]
 [/tests]
@@ -301,14 +320,15 @@ Write a program, which:
 * Keeps reading integers until it finds the **same one as the first one**
 * When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
 
+
 ## Example
-### Input
-- 25
-- 20
-- 30
-- 25
-### Output
-- 60
+| Input | Output |
+| --- | --- |
+| 25 | 60 |
+| 20 |  |
+| 30 |  |
+| 25 |  |
+
 [/task-description]
 [tests]
 [test]
@@ -354,12 +374,12 @@ Write a program, which:
 * Each number is equal to the previous one multiplied by **2** plus **1**
 
 ## Example
-### Input
-- 8
-### Output
-- 1
-- 3
-- 7
+| Input | Output |
+| --- | --- |
+| 8 | 1 |
+|  | 3 |
+|  | 7 |
+
 [/task-description]
 [tests]
 [test]
@@ -451,17 +471,15 @@ Write a program, which:
 * **Adds** the money to the **balance** and **prints**: "Increase: \{money\}", format `money` to the **2nd digit** after the decimal point
 * After **"END"** calculates and **prints** the total balance: "Total: \{balance\}", format `balance` to the **2nd digit** after the decimal point
 
+
 ## Example
-### Input
-- 5.51
-- 69.42
-- 100
-- END
-### Output
-- Increase: 5.51
-- Increase: 69.42
-- Increase: 100.00
-- Total: 174.93
+| Input | Output |
+| --- | --- |
+| 5.51 | Increase: 5.51 |
+| 69.42 | Increase: 69.42 |
+| 100 | Increase: 100.00 |
+| END | Total: 174.93 |
+
 [/task-description]
 [tests]
 [test]
