@@ -41,6 +41,14 @@ Print on the console the calculated area
 25
 [/output]
 [/test]
+[test open]
+[input]
+6
+[/input]
+[output]
+36
+[/output]
+[/test]
 [test]
 [input]
 2
