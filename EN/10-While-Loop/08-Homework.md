@@ -140,10 +140,18 @@ Fav Book
 Book1
 Book2
 Book3
+Book4
+Book5
+Book6
+Book7
+Book8
+Book9
+Book10
+Book11
 Fav Book
 [/input]
 [output]
-Book found! Attempts: 4
+Book found! Attempts: 12
 [/output]
 [/test]
 [/tests]
@@ -277,6 +285,11 @@ Write a program, which:
 | Input | Output |
 | --- | --- |
 | 23 | 23 is not special |
+
+## Example
+| Input | Output |
+| --- | --- |
+| 404 | 404 is special |
 [/task-description]
 [tests]
 [test]
@@ -293,6 +306,14 @@ Write a program, which:
 [/input]
 [output]
 43 is not special
+[/output]
+[/test]
+[test]
+[input]
+202
+[/input]
+[output]
+202 is special
 [/output]
 [/test]
 [/tests]
