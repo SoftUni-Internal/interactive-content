@@ -361,9 +361,10 @@ public class Program {
 Write a program, which:
 
 * Reads **n** - number representing amount of input numbers
-* Reads **n numbers** 
-* For every **even** line **adds** the number to the result
-* For every **odd** line **subtracts** the number from the result
+* Reads **n integers** 
+   * For every **even** line **adds** the number to the result
+   * For every **odd** line **subtracts** the number from the result
+   * The counting starts from 1.
 * **Prints** the result
 
 ## Example
