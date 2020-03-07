@@ -40,7 +40,7 @@ All bills sohould be **formatted to the 2nd digit after the decimal point**.
 | --- | --- |
 | 5 | Electricity: 447.16 $ |
 | 68.63 | Water: 100.00 $ |
-| 68.63 | Internet: 75.00 $ |
+| 89.25 | Internet: 75.00 $ |
 | 132.53 | Other: 746.59 $ |
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
