@@ -15,7 +15,7 @@ Calculate how much they have to pay and print that price.
 
 Use the table below. In each cell is the price for a single person. 
 
-Print: "Total price: {price}". 
+Print: "Total price: \{price\}". 
 
 Format the price to the second decimal point.
 
