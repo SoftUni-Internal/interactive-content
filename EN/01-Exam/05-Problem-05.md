@@ -1,9 +1,15 @@
 ﻿[slide]
 # Problem 05
-[code-task title="Problem-05" taskId="pb-java-jan-exam-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Problem-05" taskId="pb-java-jan-exam-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+    // Write code here
+  }
+}
 ```
 [/code-editor]
 [task-description]
