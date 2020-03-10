@@ -1,6 +1,6 @@
 ﻿[slide]
 # Problem 03
-[code-task title="Problem-03" taskId="pb-java-jan-exam-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Problem-03" taskId="pb-python-jan-exam-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
