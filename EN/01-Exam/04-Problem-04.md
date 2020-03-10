@@ -1,5 +1,13 @@
 ﻿[slide]
 # Problem 04
+[code-task title="Problem-04" taskId="pb-java-jan-exam-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
+
 ## Description
 The weather is warming up and the clubs are launching promising offers. 
 
@@ -30,46 +38,27 @@ Then print:
 
 The money must be formatted to the second digit after the decimal point.
 
-[code-task title="Problem-04" taskId="pb-june-pr-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-# Example 
-## Input
-500
 
-Bellini
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 500 | We need 416.00 dollars more. |
+| Bellini | Club income - 84.00 dollars. |
+| 6 |  |
+| Bamboo |  |
+| 7 |  |
+| Party! |  |
 
-6
-
-Bamboo
-
-7
-
-Party!
-
-## Output
-We need 416.00 dollars more.
-
-Club income - 84.00 dollars.
-
-## Comments
-The goal of the club is to collect 500$.
-
-The first order is for 6 cocktails Bellini. 
-
-The price of the cocktail is its name length - 7. 6 Cocktails of 7$ -> 42$, the last digit is 2, therefore there is no discount.
-
-The next order is for 7 Bamboo cocktails, its price is 6$. 6 * 7-> 42$, again there is no discount.
-
-We receive the command Party! The program stops.
-
-The club has 42 + 42 = 84$ and the target is 500. 500 – 84 = 416$ are needed.
+### Comments
+- The goal of the club is to collect 500$.
+- The first order is for 6 cocktails Bellini. 
+- The price of the cocktail is its name length - 7. 6 Cocktails of 7$ -> 42$, the last digit is 2, therefore there is no discount.
+- The next order is for 7 Bamboo cocktails, its price is 6$. 6 * 7-> 42$, again there is no discount.
+- We receive the command Party! The program stops.
+- The club has 42 + 42 = 84$ and the target is 500. 500 – 84 = 416$ are needed.
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]

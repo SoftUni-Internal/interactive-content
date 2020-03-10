@@ -1,5 +1,12 @@
 ﻿[slide]
 # Problem 02
+[code-task title="Problem-02" taskId="pb-java-jan-exam-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
 ## Description
 The Smiths are planning their family trip. 
 
@@ -23,37 +30,22 @@ The printing on the console depends on the result:
 
 The sum must be formatted to the second digit after the decimal point.
 
-[code-task title="Problem-02" taskId="pb-june-pr-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-# Example
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 800.50 | The Smiths will be left with 24.49 dollars after vacation. |
+| 8 | |
+| 100 | |
+| 2 | |
 
-## Input
-800.50
-
-8
-
-100
-
-2
-
-## Output
-The Smiths will be left with 24.49 dollars after vacation.
-
-## Comments
-8 Nights > 7, therefore there is a 5% discount on the price per night, which is 100$
-
-5% from 100 is 5. -> 100 – 5-> 95$ per night after the discount, 8 overnights 95$ -> 760$
-
-2% of the budget is provided for additional costs. 2% from 800.50 is 16.01$
-
-760 + 16.01 = 776.01 < = 800.50, therefore the money is enough and after the trip they return with 800.50 – 776.01 = 24.49$
+### Comments
+- 8 Nights > 7, therefore there is a 5% discount on the price per night, which is 100$
+- 5% from 100 is 5. -> 100 – 5-> 95$ per night after the discount, 8 overnights 95$ -> 760$
+- 2% of the budget is provided for additional costs. 2% from 800.50 is 16.01$
+- 760 + 16.01 = 776.01 < = 800.50, therefore the money is enough and after the trip they return with 800.50 – 776.01 = 24.49$
  
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]

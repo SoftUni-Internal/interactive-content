@@ -1,5 +1,12 @@
 ﻿[slide]
 # Problem 05
+[code-task title="Problem-05" taskId="pb-java-jan-exam-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
 ## Description
 Your task is to write a program that takes the name of a team and does statistics about it. 
 
@@ -24,7 +31,6 @@ You will receive two lines from the console:
 For each game played, a separate line is read:
 - The result of the game played in one of the formats above - a character: 'W', 'D' or 'L'
 
-
 ## Output
 Depending on whether the team has played games in the current season two types of output are displayed.
 - If the team has not played a single match in the current season, one line is displayed in the following format:
@@ -39,70 +45,34 @@ Depending on whether the team has played games in the current season two types o
 
 The percent must be formatted to the second digit after the decimal point.
 
-[code-task title="Problem-05" taskId="pb-june-pr-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-# Example
-## Input
-Liverpool
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Liverpool | Liverpool has won 19 points during this season. |
+| 10 | Total stats: |
+| W | \#\# W: 5 |
+| D | \#\# D: 4 |
+| D | \#\# L: 1 |
+| W | Win rate: 50.00% |
+| L |  |
+| W |  |
+| D |  |
+| D |  |
+| W |  |
+| W |  |
 
-10
-
-W
-
-D
-
-D
-
-W
-
-L
-
-W
-
-D
-
-D
-
-W
-
-W
-
-## Output
-Liverpool has won 19 points during this season.
-
-Total stats:
-
-\#\# W: 5
-
-\#\# D: 4
-
-\#\# L: 1
-
-Win rate: 50.00%
-
-## Comments
-The name of our team is Liverpool.
-
-He played 10 games in the season:
-
-5 won * 3 points = 15 points
-
-4 scored even * 1 points = 4 points
-
-1 lost -> no points added
-
-Total points after the season: 19 points
-
-5 wins of 10 games played = 50% win rate
-
-After formatting to the second digit -> 50.00%
+### Comments
+- The name of our team is Liverpool.
+- 10 played games in the season:
+- 5 won * 3 points = 15 points
+- 4 scored even * 1 points = 4 points
+- 1 lost -> no points added
+- Total points after the season: 19 points
+- 5 wins of 10 games played = 50% win rate
+- After formatting to the second digit -> 50.00%
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]

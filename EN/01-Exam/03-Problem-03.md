@@ -1,5 +1,12 @@
 ﻿[slide]
 # Problem 03
+[code-task title="Problem-03" taskId="pb-java-jan-exam-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
 ## Description
 Write a program that calculates the price a customer, who has bought drinks from a coffee machine, has to pay:
 
@@ -27,35 +34,21 @@ Print one line on the console:
 - "You bought \{count drinks\} cups of \{drink\} for \{total price\} dollars."
 	 - The price must be formatted to the second digit after the decimal point.
 
-[code-task title="Problem-03" taskId="pb-june-pr-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-# Example
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Espresso | You bought 10 cups of Espresso for 4.39 dollars. |
+| Without |  |
+| 10 |  |
 
-## Input
-Espresso
-
-Without
-
-10
-
-## Output
-You bought 10 cups of Espresso for 4.39 dollars.
-
-## Comments
-Selected are 10 cups of espresso without sugar 0.90 each -> 9$
-
-35% discount for a sugar free drink of 9$ -> 3.15 -> 9 – 3.15 = 5.85
-
-25% discount on the purchase of at least 5 cups of espresso. 25% of 5.85 -> 1.4625
-
-5.85 – 1.4625 -> 4.3875
+### Comments
+- Selected are 10 cups of espresso without sugar 0.90 each -> 9$
+- 35% discount for a sugar free drink of 9$ -> 3.15 -> 9 – 3.15 = 5.85
+- 25% discount on the purchase of at least 5 cups of espresso. 25% of 5.85 -> 1.4625
+- 5.85 – 1.4625 -> 4.3875
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]

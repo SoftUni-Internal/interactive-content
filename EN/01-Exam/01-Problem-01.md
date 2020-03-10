@@ -1,5 +1,12 @@
 [slide]
 # Problem 01
+[code-task title="Problem-01" taskId="pb-java-jan-exam-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
+```
+# Write your code here
+```
+[/code-editor]
+[task-description]
 ## Description
 It is hot and sunny outside so Softuni training team decides to organize a workday by the swimming pool. 
 
@@ -7,7 +14,9 @@ Your task is to write a program that calculates the amount that should be paid.
 
 Entrance fee must be paid for every single person. 
 
-You should keep in mind that an umbrella is enough for two people. It is known that only 75% of the team wants sunbeds. In the calculation of the number of umbrellas and sunbeds, their number should be rounded up to the nearest whole number.
+You should keep in mind that an umbrella is enough for two people. It is known that only 75% of the team wants sunbeds. 
+
+In the calculation of the number of umbrellas and sunbeds, their number should be rounded up to the nearest whole number.
 
 ## Input
 4 lines are read from the console:
@@ -20,36 +29,16 @@ You should keep in mind that an umbrella is enough for two people. It is known t
 "\{total price\} dollars." 
 - The result must be formatted to the second digit after the decimal point.
 
-
-[code-task title="Problem-01" taskId="pb-june-pr-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-## Input
-21
-
-5.50
-
-4.40
-
-6.20
-
-## Output
-254.10 dollars.
-
-## Comments 
-21 people at 5.50$ entrance fee is 115.50$
-
-75% of 21 people are 16 and therefore need 16 sunbeds, which are priced at 4.40$ -> 16 * 4.40 = 70. 40$
-
-50% of 21 people are 11 and therefore need 11 umbrellas, which are priced at 6.20$ -> 11 * 6.20 = 68.20$
-
-The final price is: 115.50 + 70.40 + 68.20 = 254.10
+## Example
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| 21 | 254.10 dollars. | 21 people \* 5.50$ = 115.50$ |
+| 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40$ |
+| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20$ = 68.20$ |
+| 6.20 | | The final: 115.50 + 70.40 + 68.20 = 254.10 |
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
