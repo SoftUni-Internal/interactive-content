@@ -1,6 +1,6 @@
 [slide]
 # Problem 06
-[code-task title="Problem-06" taskId="EP-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-06" taskId="feb-EP-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You decide to write a program to choose it for you. Until the command "STOP" you will be receiving titles of your favorite movies.
+Until the command "STOP" you will be receiving titles of your favorite movies.
 
 The best movie for you will be the one that has the most points.
 

@@ -1,6 +1,6 @@
 [slide]
 # Problem 04
-[code-task title="Problem-04" taskId="EP-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-04" taskId="feb-EP-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -45,9 +45,8 @@ First, print on the console one line:
 | 60 | There are 6 seats left in the cinema. | If we receive the hall's capacity – 60 seats.|
 | 10 | Cinema income - 255$ | On the next line we receive the people that have entered the hall – 10. |
 | 6 | | The price that they will pay is 10 * 5 = 50. |
-| 6 | | After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. |
-| 3 | | We continue until we receive the command "Movie time!" and then we print a suitable output. |
-| 20 | | |
+| 3 | | After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. |
+| 20 | | We continue until we receive the command "Movie time!" and then we print a suitable output. |
 | 15 | | |
 | Movie time! | | |
 [/task-description]
