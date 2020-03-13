@@ -24,6 +24,16 @@ If the **capacity is not enough**, print "Insufficient capacity!" and **continue
 
 On the **last** line, **print the liters** in the tank.
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | Insufficient capacity! |
+| 20 | 240 |
+| 100 | |
+| 100 | |
+| 100 | |
+| 20 | |
+
 [/task-description]
 [code-io /]
 [tests]

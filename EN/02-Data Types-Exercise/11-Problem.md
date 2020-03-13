@@ -40,6 +40,16 @@ At the end you must **print the highest calculated** snowballValue.
 - The output format is: 
 \{snowballSnow\} : \{snowballTime\} = \{snowballValue\} (\{snowballQuality\})
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | 10 : 2 = 125 (3) |
+| 10 | |
+| 2 | |
+| 3 | |
+| 5 | |
+| 5 | |
+| 5 | |
 [/task-description]
 [code-io /]
 [tests]

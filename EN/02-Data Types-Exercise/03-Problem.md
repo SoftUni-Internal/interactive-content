@@ -22,6 +22,12 @@ The **input** holds **two lines**:
 - the number of people **n**
 - the capacity **p** of the elevator
 
+### Example
+| **Input** | **Output** | **Comments**
+| --- | --- | --- |
+| 17 | 6 | 5 courses * 3 people |
+| 3 | | + 1 course * 2 people |
+
 [/task-description]
 [code-io /]
 [tests]

@@ -18,6 +18,12 @@ Find online more information about ASCII www.ascii-code.com (American Standard C
 
 On the first line of input you will receive the **char index** you should **start** with and on the second line - the index of the **last** character you should print.
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 60 | < = > ? @ A |
+| 65 | |
+
 [/task-description]
 [code-io /]
 [tests]

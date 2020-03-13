@@ -19,6 +19,16 @@ You will be given a **single** integer.
 
 Your task is to find the **sum of its digits**.
 
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 245678 | 32 |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 543 | 12 |
+
 [/task-description]
 [code-io /]
 [tests]
