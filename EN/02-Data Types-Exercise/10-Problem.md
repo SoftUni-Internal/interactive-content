@@ -1,15 +1,9 @@
 [slide]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="JF-02-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Poke Mon" taskId="PF-02-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-  public static void main(String[] args) {
-      // Write code here
-    }
-}
+# Write your code here
 ```
 [/code-editor]
 [task-description]

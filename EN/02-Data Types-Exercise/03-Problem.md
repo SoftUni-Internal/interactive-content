@@ -1,16 +1,9 @@
 [slide]
 # Problem: Elevator
-[code-task title="Elevator" taskId="JF-02-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+[code-task title="Elevator" taskId="PF-02-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-
+# Write your code here
 ```
 [/code-editor]
 [task-description]
