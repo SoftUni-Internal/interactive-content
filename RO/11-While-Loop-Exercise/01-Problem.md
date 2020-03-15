@@ -1,6 +1,6 @@
 [slide]
 # Problem: Old Books
-[code-task title="Old Books" taskId="25-05E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Old Books" taskId="27-05E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

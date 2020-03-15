@@ -1,6 +1,6 @@
 [slide]
 # Problem: Stream Of Letters
-[code-task title="Stream Of Letters" taskId="25-05E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Stream Of Letters" taskId="27-05E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

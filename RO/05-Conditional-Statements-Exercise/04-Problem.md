@@ -1,6 +1,6 @@
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="25-02E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="27-02E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

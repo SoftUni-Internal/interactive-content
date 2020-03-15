@@ -21,7 +21,7 @@ We have prepared some simple problems for you to solve. If you struggle you can 
 
 [slide]
 # Problem: Print "Hello Java"
-[code-task title="Print Hello Java" taskId="25-00-p-01" executionStrategy="java-code"]
+[code-task title="Print Hello Java" taskId="27-00-p-01" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -55,7 +55,7 @@ Hello Java
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="25-00-p-02" executionStrategy="java-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="27-00-p-02" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -90,7 +90,7 @@ Write a Java program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="25-00-p-03" executionStrategy="java-code"]
+[code-task title="Name and Expression" taskId="27-00-p-03" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -124,7 +124,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="25-00-p-04" executionStrategy="java-code"]
+[code-task title="Calculations" taskId="27-00-p-04" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -162,7 +162,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="25-00-p-05" executionStrategy="java-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="27-00-p-05" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;

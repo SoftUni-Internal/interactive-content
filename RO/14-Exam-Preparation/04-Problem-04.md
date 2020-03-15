@@ -1,6 +1,6 @@
 [slide]
 # Problem 04
-[code-task title="Problem-04" taskId="feb-EP-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem-04" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

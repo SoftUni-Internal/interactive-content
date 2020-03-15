@@ -1,6 +1,6 @@
 [slide]
 # Problem: Pet Shop
-[code-task title="Pet Shop" taskId="25-01E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pet Shop" taskId="27-01E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide]
 # Problem: Hospital
-[code-task title="Hospital" taskId="25-04E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hospital" taskId="27-04E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

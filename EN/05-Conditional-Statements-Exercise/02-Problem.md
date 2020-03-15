@@ -1,6 +1,6 @@
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="25-02E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Figures" taskId="27-02E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

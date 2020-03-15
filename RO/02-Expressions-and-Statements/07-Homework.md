@@ -25,7 +25,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Calculate Speed
-[code-task title="Calculate Speed" taskId="25-01-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculate Speed" taskId="27-01-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -96,7 +96,7 @@ Write a program to calculate the speed by time and distance:
 
 [slide]
 # Problem: Currency Converter
-[code-task title="Currency Converter" taskId="25-01-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Currency Converter" taskId="27-01-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -166,7 +166,7 @@ Write a program to convert from USD to EUR:
 
 [slide]
 # Problem: Area of Triangle
-[code-task title="Area of Triangle" taskId="25-01-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Triangle" taskId="27-01-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -239,7 +239,7 @@ Write a program to calculate a triangle area:
 
 [slide]
 # Problem: Four Operations
-[code-task title="Four Operations" taskId="25-01-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Four Operations" taskId="27-01-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -324,7 +324,7 @@ Write a program, which:
 
 [slide]
 # Problem: Days to Minutes
-[code-task title="Days to Minutes" taskId="25-01-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Days to Minutes" taskId="27-01-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -395,7 +395,7 @@ Write a program to convert from days to minutes:
 
 [slide]
 # Problem: Circle Area and Perimeter
-[code-task title="Circle Area and Perimeter" taskId="25-01-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Circle Area and Perimeter" taskId="27-01-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -466,7 +466,7 @@ Perimeter = 59.061942
 
 [slide]
 # Problem: Person Info
-[code-task title="Person Info" taskId="25-01-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Person Info" taskId="27-01-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner; 
@@ -546,7 +546,7 @@ A B from C - D!
 
 [slide]
 # Problem: Town Info
-[code-task title="Town Info" taskId="25-01-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Town Info" taskId="27-01-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;

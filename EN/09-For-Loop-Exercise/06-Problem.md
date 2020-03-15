@@ -1,6 +1,6 @@
 [slide]
 # Problem: Grades
-[code-task title="Grades" taskId="25-04E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="27-04E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

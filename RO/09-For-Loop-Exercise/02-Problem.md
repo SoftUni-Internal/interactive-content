@@ -1,6 +1,6 @@
 [slide]
 # Problem: Bills
-[code-task title="Bills" taskId="25-04E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bills" taskId="27-04E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

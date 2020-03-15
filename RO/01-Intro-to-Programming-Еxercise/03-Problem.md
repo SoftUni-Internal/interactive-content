@@ -1,6 +1,6 @@
 [slide]
 # Problem: Nums from 1 to 10
-[code-task title="Nums from 1 to 10" taskId="25-00E-p-03" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Nums from 1 to 10" taskId="27-00E-p-03" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {

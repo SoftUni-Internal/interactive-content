@@ -1,6 +1,6 @@
 [slide]
 # Problem: Graduation
-[code-task title="Graduation" taskId="25-05E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Graduation" taskId="27-05E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

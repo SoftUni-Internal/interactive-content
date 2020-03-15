@@ -1,6 +1,6 @@
 [slide]
 # Problem: Square Area
-[code-task title="Square Area" taskId="25-01E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Square Area" taskId="27-01E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

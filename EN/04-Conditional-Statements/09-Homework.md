@@ -25,7 +25,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Guess the Password
-[code-task title="Guess the Password" taskId="25-02-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Guess the Password" taskId="27-02-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -81,7 +81,7 @@ Wrong password!
 
 [slide]
 # Problem: Boiling Water
-[code-task title="Boiling Water" taskId="25-02-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Boiling Water" taskId="27-02-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -139,7 +139,7 @@ The water is not hot enough
 
 [slide]
 # Problem: Speed Info
-[code-task title="Speed Info" taskId="25-02-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Speed Info" taskId="27-02-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -197,7 +197,7 @@ Fast
 
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="25-02-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Figures" taskId="27-02-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -288,7 +288,7 @@ Unknown figure
 
 [slide]
 # Problem: Tickets
-[code-task title="Tickets" taskId="25-02-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Tickets" taskId="27-02-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -350,7 +350,7 @@ Invalid ticket type!
 
 [slide]
 # Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="25-02-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Coffee Shop" taskId="27-02-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -436,7 +436,7 @@ Final price: $0.60
 
 [slide]
 # Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="25-02-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Valid Triangle" taskId="27-02-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java

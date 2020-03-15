@@ -1,6 +1,6 @@
 [slide]
 # Problem: Summer Outfit
-[code-task title="Summer Outfit" taskId="25-02AE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Summer Outfit" taskId="27-02AE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide]
 # Problem: Harvest
-[code-task title="Harvest" taskId="25-02E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Harvest" taskId="27-02E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
