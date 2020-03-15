@@ -1,6 +1,6 @@
 [slide]
 # Problem: Yard Greening
-[code-task title="Yard Greening" taskId="26-01E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Yard Greening" taskId="28-01E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

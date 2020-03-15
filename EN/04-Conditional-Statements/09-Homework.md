@@ -25,7 +25,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Guess the Password
-[code-task title="Guess the Password" taskId="26-02-p-01" executionStrategy="python-code" requiresInput]
+[code-task title="Guess the Password" taskId="28-02-p-01" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -75,7 +75,7 @@ Wrong password!
 
 [slide]
 # Problem: Boiling Water
-[code-task title="Boiling Water" taskId="26-02-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Boiling Water" taskId="28-02-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -124,7 +124,7 @@ The water is not hot enough
 
 [slide]
 # Problem: Speed Info
-[code-task title="Speed Info" taskId="26-02-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Speed Info" taskId="28-02-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -173,7 +173,7 @@ Fast
 
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="26-02-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Area of Figures" taskId="28-02-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 import math
@@ -259,7 +259,7 @@ Unknown figure
 
 [slide]
 # Problem: Tickets
-[code-task title="Tickets" taskId="26-02-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Tickets" taskId="28-02-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -319,7 +319,7 @@ Invalid ticket type!
 
 [slide]
 # Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="26-02-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Coffee Shop" taskId="28-02-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -397,7 +397,7 @@ Final price: $0.60
 
 [slide]
 # Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="26-02-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Valid Triangle" taskId="28-02-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
@@ -456,7 +456,7 @@ Invalid Triangle
 
 [slide]
 # Problem: Sum of Numbers
-[code-task title="Sum of Numbers" taskId="26-02-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Sum of Numbers" taskId="28-02-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

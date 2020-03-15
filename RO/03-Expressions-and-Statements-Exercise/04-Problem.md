@@ -1,6 +1,6 @@
 [slide]
 # Problem: Vegetable Market
-[code-task title="Vegetable Market" taskId="26-01E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Vegetable Market" taskId="28-01E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

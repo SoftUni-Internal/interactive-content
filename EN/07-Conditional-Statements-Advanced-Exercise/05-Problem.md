@@ -1,6 +1,6 @@
 [slide]
 # Problem: Summer Outfit
-[code-task title="Summer Outfit" taskId="26-03E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Summer Outfit" taskId="28-03E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

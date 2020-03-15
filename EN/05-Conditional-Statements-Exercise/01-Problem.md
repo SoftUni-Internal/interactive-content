@@ -1,6 +1,6 @@
 [slide]
 # Problem: Harvest
-[code-task title="Harvest" taskId="26-02E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Harvest" taskId="28-02E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

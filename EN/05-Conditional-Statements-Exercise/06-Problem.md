@@ -1,6 +1,6 @@
 [slide]
 # Problem: Pets
-[code-task title="Pets" taskId="26-02E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Pets" taskId="28-02E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

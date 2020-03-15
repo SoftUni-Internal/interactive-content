@@ -1,6 +1,6 @@
 [slide]
 # Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="26-00E-p-05" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Triangle of Stars" taskId="28-00E-p-05" executionType="tests-execution" executionStrategy="python-code"]
 [code-editor language=python]
 ```
 # Write your code here

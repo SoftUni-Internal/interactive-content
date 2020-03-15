@@ -1,6 +1,6 @@
 [slide]
 # Problem: Walking
-[code-task title="Walking" taskId="26-05E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
+[code-task title="Walking" taskId="28-05E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
 [code-editor language=python]
 ```
 # Write your code here

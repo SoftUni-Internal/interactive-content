@@ -1,6 +1,6 @@
 [slide]
 # Problem: Numbers Ending in 7
-[code-task title="Numbers Ending in 7" taskId="26-04E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Numbers Ending in 7" taskId="28-04E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here

@@ -1,6 +1,6 @@
 [slide]
 # Problem: Fishland
-[code-task title="Fishland" taskId="26-01E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-task title="Fishland" taskId="28-01E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
 # Write your code here
