@@ -20,9 +20,9 @@ You will **receive** in total **3 * n lines**.
 
 Each **three lines** will hold information for a **single keg**. 
 
-**First** up is the **model** of the keg, **after that** is the **radius** (a floating-point numeber) of the keg, and **lastly** is the **height** of the keg.
+**First** up is the **model** of the keg, **after that** is the **radius** (a floating-point number) of the keg, and **lastly** is the **height** of the keg.
 
-Calculate the **volume** using the following formula: **π * r^2 * h**. 
+Calculate the **volume** using the following formula: π * r^2 * h. 
 
 At the end, **print the model of the biggest keg**.
 
