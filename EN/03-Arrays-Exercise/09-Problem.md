@@ -36,9 +36,9 @@ After you receive the last command "Clone them!" you should print the collected 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | 1 1 |
-| 1!0!1!1!0 | Best DNA sample 2 with sum: 2. |
-| 0!1!1!0!0 | 0 1 1 0 0 |
+| 5 | Best DNA sample 2 with sum: 2. |
+| 1!0!1!1!0 | 0 1 1 0 0 |
+| 0!1!1!0!0 | |
 | Clone them! | |
 
 ### Comments
