@@ -50,7 +50,7 @@ For the example above, the output should be '0 1 0'.
 - On the next lines, until you get the "end" command you will receive commands in the format: "{ladybug index} {direction} {fly length}"
 
 ### Output
-- Print the all cells within the field in format: "{cell} {cell} … {cell}"
+- Print the all cells within the field in format: "\{cell\} \{cell\} … \{cell\}"
     - If a cell has ladybug in it, print '1'
     - If a cell is empty, print '0' 
 
