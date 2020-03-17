@@ -1,6 +1,6 @@
 [slide]
 # Train
-[code-task title="Train" taskId="java-fundamentals-arrays-1" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Train" taskId="java-fundamentals-arrays-1" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

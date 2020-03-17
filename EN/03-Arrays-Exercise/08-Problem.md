@@ -1,6 +1,6 @@
 [slide]
 # Magic Sum
-[code-task title="Magic Sum" taskId="java-fundamentals-arrays-8" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Magic Sum" taskId="java-fundamentals-arrays-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide]
 # LadyBugs
-[code-task title="LadyBugs" taskId="java-fundamentals-arrays-10" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="LadyBugs" taskId="java-fundamentals-arrays-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
