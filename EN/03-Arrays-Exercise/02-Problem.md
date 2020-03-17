@@ -31,7 +31,6 @@ You have to **compare the elements** of the **second array** to the elements of 
 [input]
 Hey hello 2 4
 10 hey 4 hello
-
 [/input]
 [output]
 4 hello
@@ -41,7 +40,6 @@ Hey hello 2 4
 [input]
 S of t un i
 of i 10 un
-
 [/input]
 [output]
 of i un
@@ -51,7 +49,6 @@ of i un
 [input]
 i love to code
 code i love to
-
 [/input]
 [output]
 code i love to
