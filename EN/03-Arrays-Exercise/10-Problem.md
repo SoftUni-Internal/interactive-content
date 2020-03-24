@@ -47,7 +47,7 @@ For the example above, the output should be '0 1 0'.
 ### Input
 - On the first line you will receive an integer - the size of the field
 - On the second line you will receive the initial indexes of all ladybugs separated by a blank space. The given indexes may or may not be inside the field range
-- On the next lines, until you get the "end" command you will receive commands in the format: "{ladybug index} {direction} {fly length}"
+- On the next lines, until you get the "end" command you will receive commands in the format: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
 - Print the all cells within the field in format: "\{cell\} \{cell\} … \{cell\}"
