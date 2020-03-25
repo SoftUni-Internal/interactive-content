@@ -1,6 +1,6 @@
 [slide]
 # Zig-Zag Arrays
-[code-task title="Zig-Zag Arrays" taskId="java-fundamentals-arrays-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig-Zag Arrays" taskId="java-fundamentals-arrays-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
