@@ -13,7 +13,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Guess the Password
-[code-task title="Guess the Password" taskId="pb-js-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Guess the Password" taskId="pb-js-02-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function guessThePassword(input) {
@@ -63,7 +63,7 @@ Wrong password!
 
 [slide]
 # Problem: Boiling Water
-[code-task title="Boiling Water" taskId="pb-js-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Boiling Water" taskId="pb-js-02-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function boilingWater(input) {
@@ -113,7 +113,7 @@ The water is not hot enough
 
 [slide]
 # Problem: Speed Info
-[code-task title="Speed Info" taskId="pb-js-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Speed Info" taskId="pb-js-02-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function speedInfo(input) {
@@ -163,7 +163,7 @@ Fast
 
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="pb-js-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Area of Figures" taskId="pb-js-02-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function areaOfFigures(input) {
@@ -233,7 +233,7 @@ Unknown figure
 
 [slide]
 # Problem: Tickets
-[code-task title="Tickets" taskId="pb-js-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Tickets" taskId="pb-js-02-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function tickets(input) {
@@ -290,7 +290,7 @@ Invalid ticket type!
 
 [slide]
 # Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="pb-js-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Coffee Shop" taskId="pb-js-02-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function coffeeShop(input) {
@@ -368,7 +368,7 @@ Final price: $0.60
 
 [slide]
 # Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="pb-js-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Valid Triangle" taskId="pb-js-02-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function validTriangle(input) {

@@ -14,7 +14,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Biggest Number
-[code-task title="Biggest Number" taskId="pb-js-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumber(input) {
@@ -69,7 +69,7 @@ Write a program, which:
 
 [slide]
 # Problem: Number Sequence
-[code-task title="Number Sequence" taskId="pb-js-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Sequence" taskId="pb-js-04-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numberSequence(input) {
@@ -140,7 +140,7 @@ Min number: -2
 
 [slide]
 # Problem: Power Of Numbers
-[code-task title="Power Of Numbers" taskId="pb-js-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Power Of Numbers" taskId="pb-js-04-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function powerOfNumbers(input) {
@@ -180,7 +180,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="pb-js-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Equal Pairs" taskId="pb-js-04-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function equalPairs(input) {
@@ -315,7 +315,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="pb-js-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="pb-js-04-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function zigZagSum(input) {
@@ -371,7 +371,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="pb-js-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="pb-js-04-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function divideWithoutRemainder(input) {
@@ -419,7 +419,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="pb-js-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Vowel Sum" taskId="pb-js-04-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function vowelSum(input) {
@@ -504,7 +504,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="pb-js-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Rollercoaster" taskId="pb-js-04-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rollercoaster(input) {
@@ -600,7 +600,7 @@ The rollercoaster departures
 
 [slide]
 # Problem: Multiply
-[code-task title="Multiply" taskId="pb-js-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Multiply" taskId="pb-js-04-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function multiply(input) {
