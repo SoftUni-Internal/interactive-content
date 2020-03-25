@@ -21,7 +21,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Print "Hello JavaScript"
-[code-task title="Print Hello Javascript" taskId="p-01" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Print Hello Javascript" taskId="pb-js-p-01" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function hello() {
@@ -49,7 +49,7 @@ Hello JavaScript
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="p-02" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="pb-js-p-02" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculate() {
@@ -78,7 +78,7 @@ Write a JavaScript program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="p-03" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Name and Expression" taskId="pb-js-p-03" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function nameAndExpression() {
@@ -105,7 +105,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="p-04" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculations" taskId="pb-js-p-04" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
@@ -137,7 +137,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="p-05" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="pb-js-p-05" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function squareOfStars() {

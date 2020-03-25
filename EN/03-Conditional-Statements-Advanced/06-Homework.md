@@ -13,7 +13,7 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Fruit or Vegetable
-[code-task title="Fruit or Vegetable" taskId="p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Fruit or Vegetable" taskId="pb-js-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function fruitOrVegetable(input) {
@@ -64,7 +64,7 @@ vegetable
 
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Day of Week" taskId="pb-js-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function dayOfWeek(input) {
@@ -122,7 +122,7 @@ Sunday
 
 [slide]
 # Problem: Vowel or Consonant
-[code-task title="Vowel or Consonant" taskId="p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Vowel or Consonant" taskId="pb-js-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function vowelOrConsonant(input) {
@@ -179,7 +179,7 @@ Consonant
 
 [slide]
 # Problem: Product of 3 Numbers
-[code-task title="Product of 3 Numbers" taskId="p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Product of 3 Numbers" taskId="pb-js-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function productOfThreeNumbers(input) {
@@ -242,7 +242,7 @@ zero
 
 [slide]
 # Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sorted Numbers" taskId="pb-js-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sortedNumbers(input) {
@@ -311,7 +311,7 @@ Descending
 
 [slide]
 # Problem: Vacation Expenses
-[code-task title="Vacation Expenses" taskId="p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Vacation Expenses" taskId="pb-js-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function vacationExpenses(input) {
@@ -359,7 +359,7 @@ Hotel
 
 [slide]
 # Problem: Cinema
-[code-task title="Cinema" taskId="p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema" taskId="pb-js-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function cinema(input) {
@@ -406,7 +406,7 @@ Normal
 
 [slide]
 # Problem: Operations with Numbers
-[code-task title="Operations with Numbers" taskId="p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Operations with Numbers" taskId="pb-js-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numberOperations(input) {
@@ -488,7 +488,7 @@ Write a program to apply an operator for given two numbers:
 
 [slide]
 # Problem: ATM
-[code-task title="ATM" taskId="p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="ATM" taskId="pb-js-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function ATM(input) {
@@ -547,7 +547,7 @@ The withdraw was successful.
 
 [slide]
 # Problem: Biggest of Five Numbers
-[code-task title="Biggest of Five Numbers" taskId="p-10" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest of Five Numbers" taskId="pb-js-p-10" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestOfFiveNumbers(input) {
