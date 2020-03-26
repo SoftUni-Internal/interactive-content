@@ -16,6 +16,8 @@ public class Main {
 ## Description
 Write a method that receives **two characters** and prints on a single line all the **characters in between them according to ASCII**.
 
+**NOTE:** If the second letter is less than the first one then letters should be swapped.
+
 ### Example
 | **Input** | **Output** |
 | --- | --- |
@@ -42,7 +44,7 @@ b c
 [/test]
 [test]
 [input]
-#
+\#
 :
 [/input]
 [output]
@@ -52,7 +54,7 @@ $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9
 [test]
 [input]
 C
-#
+\#
 [/input]
 [output]
 $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B
