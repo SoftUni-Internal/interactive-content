@@ -10,6 +10,8 @@
 ## Description
 Write a method that receives **two characters** and prints on a single line all the **characters in between them according to ASCII**.
 
+**NOTE:** If the second letter is less than the first one then letters should be swapped.
+
 ### Example
 | **Input** | **Output** |
 | --- | --- |
