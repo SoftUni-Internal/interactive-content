@@ -21,8 +21,8 @@ Write a method that receives **two characters** and prints on a single line all 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| # | 1 |
-| : | $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 |
+| # | $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 |
+| : | |
 
 [/task-description]
 [code-io /]
