@@ -1,7 +1,7 @@
 [slide]
 # Characters in Range
-[code-task title="Characters in Range" taskId="java-fundamentals-methods-03" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Characters in Range" taskId="java-fundamentals-methods-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

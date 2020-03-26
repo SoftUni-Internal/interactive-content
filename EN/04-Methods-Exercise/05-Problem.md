@@ -1,7 +1,7 @@
 [slide]
 # Add and Subtract
-[code-task title="Add and Subtract" taskId="java-fundamentals-methods-05" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Add and Subtract" taskId="java-fundamentals-methods-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
 [slide]
 # Array Manipulator
-[code-task title="Array Manipulator" taskId="java-fundamentals-methods-11" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Array Manipulator" taskId="java-fundamentals-methods-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

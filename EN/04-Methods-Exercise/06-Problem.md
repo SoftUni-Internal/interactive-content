@@ -1,7 +1,7 @@
 [slide]
 # Middle Characters
-[code-task title="Middle Characters" taskId="java-fundamentals-methods-06" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Middle Characters" taskId="java-fundamentals-methods-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 
