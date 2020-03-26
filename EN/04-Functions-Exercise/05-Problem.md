@@ -1,6 +1,6 @@
 [slide]
 # Add and Subtract
-[code-task title="Add and Subtract" taskId="python-fundamentals-methods-05" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Add and Subtract" taskId="python-fundamentals-methods-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```
 # Write your code here

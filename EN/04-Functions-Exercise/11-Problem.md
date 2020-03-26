@@ -1,7 +1,7 @@
 [slide]
 # Array Manipulator
-[code-task title="Array Manipulator" taskId="python-fundamentals-methods-11" executionType="tests-execution" executionStrategy="python-code"]
-[code-editor language=python requiresInput]
+[code-task title="Array Manipulator" taskId="python-fundamentals-methods-11" executionType="tests-execution" executionStrategy="python-code" requiresInput]
+[code-editor language=python]
 ```
 # Write your code here
 ```

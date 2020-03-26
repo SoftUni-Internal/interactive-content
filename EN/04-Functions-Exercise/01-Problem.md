@@ -1,6 +1,6 @@
 [slide]
 # Smallest of Three Numbers
-[code-task title="Smallest of Three Numbers" taskId="python-fundamentals-methods-01" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Smallest of Three Numbers" taskId="python-fundamentals-methods-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```
 # Write your code here

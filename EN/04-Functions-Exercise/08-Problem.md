@@ -1,6 +1,6 @@
 [slide]
 # Factorial Division
-[code-task title="Factorial Division" taskId="python-fundamentals-methods-08" executionType="tests-execution" executionStrategy="python-code"]
+[code-task title="Factorial Division" taskId="python-fundamentals-methods-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```
 # Write your code here
