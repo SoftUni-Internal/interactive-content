@@ -239,8 +239,8 @@ Write a program to calculate the area of different figures:
 
 | **Input** | **Output** |
 | --- | --- |
-| circle | 28.27 |
-| 28.27 | |
+| circle | 19.63 |
+| 2.5 | |
 
 [/task-description]
 [tests]
