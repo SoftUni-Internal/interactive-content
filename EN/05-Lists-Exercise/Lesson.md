@@ -1,1 +1,1 @@
-# Arrays - Exercise
+# Lists - Exercise
