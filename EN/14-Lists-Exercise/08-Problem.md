@@ -42,7 +42,7 @@ The **program ends** when the sequence has **no elements**.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 5 3 | 1 |
+| 4 5 3 | 14 |
 | 1 | |
 | 1 | |
 | 0 | |
