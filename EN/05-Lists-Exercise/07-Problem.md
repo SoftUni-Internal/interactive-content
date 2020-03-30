@@ -27,14 +27,14 @@ Write a program to **append several arrays** of numbers.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 7 | 4  5\|1 0\| 2 5 \|3  | 3 2 5 1 0 4 5 7 |
+| 7 \| 4  5\|1 0\| 2 5 \|3  | 3 2 5 1 0 4 5 7 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-1 2 3 |4 5 6 |  7  8
+1 2 3 \|4 5 6 \|  7  8
 [/input]
 [output]
 7 8 4 5 6 1 2 3
@@ -42,7 +42,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-7 | 4  5|1 0| 2 5 |3
+7 \| 4  5\|1 0\| 2 5 \|3
 [/input]
 [output]
 3 2 5 1 0 4 5 7
@@ -50,7 +50,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-1| 4 5 6 7 | 8 9
+1\| 4 5 6 7 \| 8 9
 [/input]
 [output]
 8 9 4 5 6 7 1
@@ -58,7 +58,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-1 2 3 |4 5 6 |  7  8
+1 2 3 \|4 5 6 \|  7  8
 [/input]
 [output]
 7 8 4 5 6 1 2 3
@@ -66,7 +66,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-7 | 4  5|1 0| 2 5 |3
+7 \| 4  5\|1 0\| 2 5 \|3
 [/input]
 [output]
 3 2 5 1 0 4 5 7
@@ -74,7 +74,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-1| 4 5 6 7 | 8 9
+1\| 4 5 6 7 \| 8 9
 [/input]
 [output]
 8 9 4 5 6 7 1
@@ -82,7 +82,7 @@ Write a program to **append several arrays** of numbers.
 [/test]
 [test]
 [input]
-1 | | |||2   3 |4   5 6 | 7 8| -3 2   1||1 2|3|4|99 77
+1 \| \| \|\|\|2   3 \|4   5 6 \| 7 8\| -3 2   1\|\|1 2\|3\|4\|99 77
 [/input]
 [output]
 99 77 4 3 1 2 -3 2 1 7 8 4 5 6 2 3 1
