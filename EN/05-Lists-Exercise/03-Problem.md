@@ -15,14 +15,18 @@ On the first input line you are going to **receive how many commands** you are g
 On the next lines you are going to receive some of the following inputs: 
 -	"\{name\} is going!"
 -	"\{name\} is not going!"
+
 If you receive the **first** type of input, you have to **add the person if he/she is not in the list**. 
 
 If **he/she is in the list print** on the console: 
 - "\{name\} is already in the list!" 
-If you receive the second type of input, you have to remove the person if he/she is in the list. If not print: 
-- "\{name\} is not in the list!
 
-**At the end print all the guests**.
+If you receive the second type of input, you have to remove the person if he/she is in the list. 
+
+If not print: 
+- "\{name\} is not in the list!"
+
+**At the end print all the guests. Each on a new line.**
 
 ### Example
 | **Input** | **Output** |
