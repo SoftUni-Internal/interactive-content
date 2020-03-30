@@ -9,7 +9,7 @@
 [task-description]
 ## Description
 Write a program to **append several arrays** of numbers.
-- **Arrays** are **separated** by '|'
+- **Arrays** are **separated** by '\|'
 - **Values** are **separated** by spaces (' ', one or several)
 - Order the arrays from the last to the first, and their values from left to right
 
