@@ -1,7 +1,7 @@
 [slide]
 # Pokemon Don't Go
-[code-task title="Pokemon Don't Go" taskId="java-fundamentals-lists-08" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Pokemon Don't Go" taskId="java-fundamentals-lists-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

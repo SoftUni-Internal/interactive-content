@@ -1,7 +1,7 @@
 [slide]
 # SoftUni Course Planning
-[code-task title="SoftUni Course Planning" taskId="java-fundamentals-lists-09" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="SoftUni Course Planning" taskId="java-fundamentals-lists-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

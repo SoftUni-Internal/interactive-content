@@ -1,7 +1,7 @@
 [slide]
 # Bomb Numbers
-[code-task title="Bomb Numbers" taskId="java-fundamentals-lists-05" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Bomb Numbers" taskId="java-fundamentals-lists-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 
