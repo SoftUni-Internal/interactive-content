@@ -1,1 +1,1 @@
-# How to Become a Developer with Svetlin Nakov
+# Lesson
