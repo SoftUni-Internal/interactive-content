@@ -3,29 +3,45 @@
 [code-task title="Students" taskId="python-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that receives **n count** of students and **orders them by grade** (in **descending**).
+Write a program that receives **n count** of students with grades and prints whether they have successfully passed a test.
+
+If the **grade** is **greater than or equal to 3.00**, the test is **passed**.
 
 Each student should have **First name** (string), **Last name** (string) and **grade** (floating-point number).
 
 ### Input
 - First line will be a **number n**
-- Next **n lines** you will get a student info in the **format** "\{first name\} \{second name\} \{grade\}"
+- Next **n lines** you will get a student info in the **format** 
+
+"\{first name\} \{second name\} \{grade\}"
 
 ### Output
-- **Print** each student in the following **format** "\{first name\} \{second name\}: \{grade\}"
+- If the **test is passed**, print:
+
+"\{first name\} \{second name\}: \{PASS\}"
+
+- If the **test isn't passed**, print:
+
+"\{first name\} \{second name\}"
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 | Rocco Erben: 6.00 |
-| Lakia Eason 3.90 | Prince Messing: 5.49 |
-| Prince Messing 5.49 | Akiko Segers: 4.85 |
-| Akiko Segers 4.85 | Lakia Eason: 3.90 |
+| 4 | Lakia Eason: PASS |
+| Lakia Eason 3.90 | Prince Messing: PASS |
+| Prince Messing 5.49 | Akiko Segers |
+| Akiko Segers 2.85 | Rocco Erben: PASS |
 | Rocco Erben 6.00 | |
 
 [/task-description]
@@ -36,14 +52,14 @@ Each student should have **First name** (string), **Last name** (string) and **g
 4
 Lakia Eason 3.90
 Prince Messing 5.49
-Akiko Segers 4.85
+Akiko Segers 2.85
 Rocco Erben 6.00
 [/input]
 [output]
-Rocco Erben: 6.00
-Prince Messing: 5.49
-Akiko Segers: 4.85
-Lakia Eason: 3.90
+Lakia Eason: PASS
+Prince Messing: PASS
+Akiko Segers
+Rocco Erben: PASS
 [/output]
 [/test]
 [test]
@@ -55,10 +71,10 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Sydnie Britton: 5.79
-Mora Tod: 2.78
-Pete Kendrick: 2.61
-Amias Mathews: 2.30
+Sydnie Britton: PASS
+Amias Mathews
+Mora Tod
+Pete Kendrick
 [/output]
 [/test]
 [test]
@@ -69,9 +85,9 @@ Deena Banks 5.83
 Asher West 5.76
 [/input]
 [output]
-Deena Banks: 5.83
-Asher West: 5.76
-Cletus Henry: 4.34
+Cletus Henry: PASS
+Deena Banks: PASS
+Asher West: PASS
 [/output]
 [/test]
 [test]
@@ -82,9 +98,9 @@ Deena Banks 5.33
 Asher West 3.59
 [/input]
 [output]
-Cletus Henry: 5.50
-Deena Banks: 5.33
-Asher West: 3.59
+Cletus Henry: PASS
+Deena Banks: PASS
+Asher West: PASS
 [/output]
 [/test]
 [test]
@@ -98,12 +114,12 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Sydnie Britton: 5.79
-Cletus Henry: 5.50
-Deena Banks: 5.24
-Asher West: 4.59
-Mora Tod: 2.78
-Pete Kendrick: 2.61
+Sydnie Britton: PASS
+Cletus Henry: PASS
+Deena Banks: PASS
+Asher West: PASS
+Mora Tod
+Pete Kendrick
 [/output]
 [/test]
 [test]
@@ -118,13 +134,13 @@ Mora Tod 2.78
 Pete Kendrick 2.61
 [/input]
 [output]
-Sydnie Britton: 5.79
-Cletus Henry: 5.50
-Deena Banks: 5.33
-Asher West: 3.59
-Mora Tod: 2.78
-Pete Kendrick: 2.61
-Amias Mathews: 2.30
+Cletus Henry: PASS
+Deena Banks: PASS
+Asher West: PASS
+Sydnie Britton: PASS
+Amias Mathews
+Mora Tod
+Pete Kendrick
 [/output]
 [/test]
 [/tests]

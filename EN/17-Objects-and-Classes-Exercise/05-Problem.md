@@ -3,7 +3,13 @@
 [code-task title="Vehicle Catalogue" taskId="python-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
