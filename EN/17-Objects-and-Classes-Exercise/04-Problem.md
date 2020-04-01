@@ -22,7 +22,9 @@ Each student should have **First name** (string), **Last name** (string) and **g
 
 ### Input
 - First line will be a **number n**
-- Next **n lines** you will get a student info in the **format** "\{first name\} \{second name\} \{grade\}"
+- Next **n lines** you will get a student info in the **format** 
+
+"\{first name\} \{second name\} \{grade\}"
 
 ### Output
 - If the **test is passed**, print:
