@@ -1,6 +1,6 @@
 [slide]
-# Advertisement Message
-[code-task title="Advertisement Message" taskId="java-fundamentals-objects-and-classes-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Articles
+[code-task title="Articles" taskId="java-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,57 +14,118 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that generates random fake advertisement messages.
+Create an article class with the following properties:
+- Title – a string
+- Content – a string
+- Author – a string
 
-The messages must consist of **4 parts**: **laudatory phrase** + **event** + **author** + **city**.
+The class should have a constructor and the following methods:
+- **Edit** (new content) – change the old content with the new one
+- **ChangeAuthor** (new author) – change the author
+- **Rename** (new title) – change the title of the article
+- **override ToString** – print the article in the following format: 
 
-Use the following **predefined parts**:
-- **Phrases** – \{"Excellent product.", "Such a great product.", "I always use that product.", "Best product of its category.", "Exceptional product.", "I can’t live without this product."\}
-- **Events** – \{"Now I feel good.", "I have succeeded with this product.", "Makes miracles. I am happy of the results!", "I cannot believe but now I feel awesome.", "Try it yourself, I am very satisfied.", "I feel great!"\}
-- **Authors** – \{"Diana", "Petya", "Stella", "Elena", "Katya", "Iva", "Annie", "Eva"\}
-- **Cities** – \{"Burgas", "Sofia", "Plovdiv", "Varna", "Ruse"\}
+"\{title\} - \{content\}:\{author\}"
 
-The **format of the output message** is: \{phrase\} \{event\} \{author\} – \{city\}.
+Write a program that reads an article in the following **format** "\{title\}, \{content\}, \{author\}". 
 
-As an input, you **take the number of messages to be generated**. 
+On the next line, you will get a **number n**. 
 
-Print each random message **at a separate line**.
+On the **next n lines**, you will get one of the following **commands**: 
+- "Edit: \{new content\}" 
+- "ChangeAuthor: \{new author\}" 
+- "Rename: \{new title\}". 
+
+At the end, **print the final article**.
+
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | Such a great product. Now I feel good. Elena – Ruse |
-| | Excelent product. Makes miracles. I am happy of the results! Katya – Varna |
-| | Best product of its category. That makes miracles. Eva - Sofia |
+| some title, some content, some author | better title - better content: better author |
+| 3 | |
+| Edit: better content | |
+| ChangeAuthor:  better author | |
+| Rename: better title | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
+some title, some content, some author
 3
+Edit: better content
+ChangeAuthor: better author
+Rename: better title
 [/input]
 [output]
-Excellent product. I cannot believe but now I feel awesome. Stella - Plovdiv.
-I can’t live without this product. Makes miracles. I am happy of the results! Petya - Burgas.
-Exceptional product. Try it yourself, I am very satisfied. Stella - Plovdiv.
+better title - better content: better author
 [/output]
 [/test]
 [test]
 [input]
-1
+Holy Ghost, content, John Sandford
+3
+Edit: better content1
+Edit: better content2
+Edit: better content3
 [/input]
 [output]
-product
+Holy Ghost - better content3: John Sandford
 [/output]
 [/test]
 [test]
 [input]
-2
+Holy Ghost, content, John Sandford
+3
+ChangeAuthor:  Mitch Albom
+ChangeAuthor:  better author
+ChangeAuthor:  Kim Heacox
 [/input]
 [output]
-Excellent product. Makes miracles. I am happy of the results! Annie - Plovdiv.
-Such a great product. I feel great! Katya - Plovdiv.
+Holy Ghost - content:  Kim Heacox
+[/output]
+[/test]
+[test]
+[input]
+Holy Ghost, content, John Sandford
+3
+Rename: The Next Person You Meet in Heaven
+Rename: better title
+Rename: John Muir and the Ice That Started a Fire
+[/input]
+[output]
+John Muir and the Ice That Started a Fire - content: John Sandford
+[/output]
+[/test]
+[test]
+[input]
+some title, some content, some author
+6
+Rename: The Good German
+Edit: better content1
+ChangeAuthor:  Ben Coes
+ChangeAuthor:  Gary D. Chapman
+Rename: The Girl with No Shadow
+Edit: better content2
+[/input]
+[output]
+The Girl with No Shadow - better content2:  Gary D. Chapman
+[/output]
+[/test]
+[test]
+[input]
+some title, some content, some author
+5
+Rename: John Muir and the Ice That Started a Fire
+ChangeAuthor:  John Grisham
+ChangeAuthor:  Shirley Jackson
+Rename: The haunting of hill house
+Edit: better content2
+[/input]
+[output]
+The haunting of hill house - better content2:  Shirley Jackson
 [/output]
 [/test]
 [/tests]

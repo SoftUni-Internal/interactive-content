@@ -1,6 +1,6 @@
 [slide]
-# Articles 2.0
-[code-task title="Articles 2.0" taskId="java-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Students
+[code-task title="Students" taskId="java-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,133 +14,123 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Change the program "Articles", so you can store a **list of articles**.
+Write a program that receives **n count** of students and **orders them by grade** (in **descending**).
 
-You will not need the methods any more (**except** the ToString method).
+Each student should have **First name** (string), **Last name** (string) and **grade** (floating-point number).
 
-On the **first line**, you will get a **number n**.
+### Input
+- First line will be a **number n**
+- Next **n lines** you will get a student info in the **format** "\{first name\} \{second name\} \{grade\}"
 
-On the next **n lines**, you will get some **articles in the same format as the previous task** ("\{title\}, \{content\}, \{author\}").
-
-Finally, you will get one of the **three criteria**: "title", "content", "author".
-
-You need to order the articles **alphabetically** based on the command and print them sorted by the given **criteria**.
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 2 | Article - content: Johnny |
-| Science, planets, Bill | Science - planets: Bill |
-| Article, content, Johnny | |
-| title | |
+### Output
+- **Print** each student in the following **format** "\{first name\} \{second name\}: \{grade\}"
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | title3 – A: author3 |
-| title1, C, author1 | title2 – B: author2 |
-| title2, B, author2 | title1 – C: author1 |
-| title3, A, author3 | |
-| content | |
+| 4 | Rocco Erben: 6.00 |
+| Lakia Eason 3.90 | Prince Messing: 5.49 |
+| Prince Messing 5.49 | Akiko Segers: 4.85 |
+| Akiko Segers 4.85 | Lakia Eason: 3.90 |
+| Rocco Erben 6.00 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-2
-Science, planets, Bill
-Article, content, Johnny
-title
+4
+Lakia Eason 3.90
+Prince Messing 5.49
+Akiko Segers 4.85
+Rocco Erben 6.00
 [/input]
 [output]
-Article - content: Johnny
-Science - planets: Bill
-
-[/output]
-[/test]
-[test]
-[input]
-3
-title1, C, author1
-title2, B, author2
-title3, A, author3
-content
-[/input]
-[output]
-title3 - A: author3
-title2 - B: author2
-title1 - C: author1
-[/output]
-[/test]
-[test]
-[input]
-2
-The Reckoning, Content, John Grisham
-Harry Potter and the Sorcerer's Stone (Enhanced Edition), content2, J.K. Rowling
-title
-[/input]
-[output]
-Harry Potter and the Sorcerer's Stone (Enhanced Edition) - content2: J.K. Rowling
-The Reckoning - Content: John Grisham
+Rocco Erben: 6.00
+Prince Messing: 5.49
+Akiko Segers: 4.85
+Lakia Eason: 3.90
 [/output]
 [/test]
 [test]
 [input]
 4
-Ego Is the Enemy, content2, Ryan Holiday
-Cole and Sav, content1, Cole LaBrant & Savannah LaBrant
-Most Valuable Playboy, content4, Lauren Blakely
-A Christmas Message, content3, Anne Perry
-content
+Sydnie Britton 5.79
+Amias Mathews 2.30
+Mora Tod 2.78
+Pete Kendrick 2.61
 [/input]
 [output]
-Cole and Sav - content1: Cole LaBrant & Savannah LaBrant
-Ego Is the Enemy - content2: Ryan Holiday
-A Christmas Message - content3: Anne Perry
-Most Valuable Playboy - content4: Lauren Blakely
-[/output]
-[/test]
-[test]
-[input]
-4
-Ego Is the Enemy, content2, Ryan Holiday
-Cole and Sav, content1, Cole LaBrant & Savannah LaBrant
-Most Valuable Playboy, content4, Lauren Blakely
-A Christmas Message, content3, Anne Perry
-author
-[/input]
-[output]
-A Christmas Message - content3: Anne Perry
-Cole and Sav - content1: Cole LaBrant & Savannah LaBrant
-Most Valuable Playboy - content4: Lauren Blakely
-Ego Is the Enemy - content2: Ryan Holiday
-[/output]
-[/test]
-[test]
-[input]
-2
-A Simple Favor, content2, Darcey Bell
-Gracie's Secret, content1, Jill Childs
-title
-[/input]
-[output]
-A Simple Favor - content2: Darcey Bell
-Gracie's Secret - content1: Jill Childs
+Sydnie Britton: 5.79
+Mora Tod: 2.78
+Pete Kendrick: 2.61
+Amias Mathews: 2.30
 [/output]
 [/test]
 [test]
 [input]
 3
-A Simple Favor, content2, Darcey Bell
-Most Valuable Playboy, content4, Lauren Blakely
-Gracie's Secret, content1, Jill Childs
-content
+Cletus Henry 4.34
+Deena Banks 5.83
+Asher West 5.76
 [/input]
 [output]
-Gracie's Secret - content1: Jill Childs
-A Simple Favor - content2: Darcey Bell
-Most Valuable Playboy - content4: Lauren Blakely
+Deena Banks: 5.83
+Asher West: 5.76
+Cletus Henry: 4.34
+[/output]
+[/test]
+[test]
+[input]
+3
+Cletus Henry 5.50
+Deena Banks 5.33
+Asher West 3.59
+[/input]
+[output]
+Cletus Henry: 5.50
+Deena Banks: 5.33
+Asher West: 3.59
+[/output]
+[/test]
+[test]
+[input]
+6
+Sydnie Britton 5.79
+Cletus Henry 5.50
+Deena Banks 5.24
+Asher West 4.59
+Mora Tod 2.78
+Pete Kendrick 2.61
+[/input]
+[output]
+Sydnie Britton: 5.79
+Cletus Henry: 5.50
+Deena Banks: 5.24
+Asher West: 4.59
+Mora Tod: 2.78
+Pete Kendrick: 2.61
+[/output]
+[/test]
+[test]
+[input]
+7
+Cletus Henry 5.50
+Deena Banks 5.33
+Asher West 3.59
+Sydnie Britton 5.79
+Amias Mathews 2.30
+Mora Tod 2.78
+Pete Kendrick 2.61
+[/input]
+[output]
+Sydnie Britton: 5.79
+Cletus Henry: 5.50
+Deena Banks: 5.33
+Asher West: 3.59
+Mora Tod: 2.78
+Pete Kendrick: 2.61
+Amias Mathews: 2.30
 [/output]
 [/test]
 [/tests]

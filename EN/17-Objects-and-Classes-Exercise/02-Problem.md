@@ -1,6 +1,6 @@
 [slide]
-# Articles
-[code-task title="Articles" taskId="java-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Opinion Poll
+[code-task title="Opinion Poll" taskId="java-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,118 +14,206 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create an article class with the following properties:
-- Title – a string
-- Content – a string
-- Author – a string
+Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years**, sorted in **alphabetical** order in the following **format**:
 
-The class should have a constructor and the following methods:
-- **Edit** (new content) – change the old content with the new one
-- **ChangeAuthor** (new author) – change the author
-- **Rename** (new title) – change the title of the article
-- **override ToString** – print the article in the following format: 
+\{name\} - \{age\}
 
-"\{title\} - \{content\}:\{author\}"
-
-Write a program that reads an article in the following **format** "\{title\}, \{content\}, \{author\}". 
-
-On the next line, you will get a **number n**. 
-
-On the **next n lines**, you will get one of the following **commands**: 
-- "Edit: \{new content\}" 
-- "ChangeAuthor: \{new author\}" 
-- "Rename: \{new title\}". 
-
-At the end, **print the final article**.
-
+Note: you can use **stream()** to filter people.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| some title, some content, some author | better title - better content: better author |
-| 3 | |
-| Edit: better content | |
-| ChangeAuthor:  better author | |
-| Rename: better title | |
+| 3 | Ivan - 48 |
+| Pesho 12 | Stamat – 31 |
+| Stamat 31 | |
+| Ivan 48 | |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | Lyubo - 44 |
+| Nikolai 33 | Nikolai - 33 |
+| Yordan 88 | Yordan – 88 |
+| Tosho 22 | |
+| Lyubo 44 | |
+| Stanislav 11 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-some title, some content, some author
 3
-Edit: better content
-ChangeAuthor: better author
-Rename: better title
+Pesho 12
+Stamat 31
+Ivan 48
+
 [/input]
 [output]
-better title - better content: better author
+Ivan - 48
+Stamat - 31
+
 [/output]
 [/test]
 [test]
 [input]
-Holy Ghost, content, John Sandford
-3
-Edit: better content1
-Edit: better content2
-Edit: better content3
-[/input]
-[output]
-Holy Ghost - better content3: John Sandford
-[/output]
-[/test]
-[test]
-[input]
-Holy Ghost, content, John Sandford
-3
-ChangeAuthor:  Mitch Albom
-ChangeAuthor:  better author
-ChangeAuthor:  Kim Heacox
-[/input]
-[output]
-Holy Ghost - content:  Kim Heacox
-[/output]
-[/test]
-[test]
-[input]
-Holy Ghost, content, John Sandford
-3
-Rename: The Next Person You Meet in Heaven
-Rename: better title
-Rename: John Muir and the Ice That Started a Fire
-[/input]
-[output]
-John Muir and the Ice That Started a Fire - content: John Sandford
-[/output]
-[/test]
-[test]
-[input]
-some title, some content, some author
-6
-Rename: The Good German
-Edit: better content1
-ChangeAuthor:  Ben Coes
-ChangeAuthor:  Gary D. Chapman
-Rename: The Girl with No Shadow
-Edit: better content2
-[/input]
-[output]
-The Girl with No Shadow - better content2:  Gary D. Chapman
-[/output]
-[/test]
-[test]
-[input]
-some title, some content, some author
 5
-Rename: John Muir and the Ice That Started a Fire
-ChangeAuthor:  John Grisham
-ChangeAuthor:  Shirley Jackson
-Rename: The haunting of hill house
-Edit: better content2
+Nikolai 33
+Yordan 88
+Tosho 22
+Lyubo 44
+Stanislav 11
+
 [/input]
 [output]
-The haunting of hill house - better content2:  Shirley Jackson
+Lyubo - 44
+Nikolai - 33
+Yordan - 88
+
+[/output]
+[/test]
+[test]
+[input]
+11
+A 40
+B 43
+C 54
+Dencho 31
+Encho 99
+Mincho 32
+Noncho 123
+Oncho 100
+Pesho 321534
+Suzi 3213
+Zuzi 32131
+[/input]
+[output]
+A - 40
+B - 43
+C - 54
+Dencho - 31
+Encho - 99
+Mincho - 32
+Noncho - 123
+Oncho - 100
+Pesho - 321534
+Suzi - 3213
+Zuzi - 32131
+[/output]
+[/test]
+[test]
+[input]
+11
+A 40
+B 43
+C 54
+Dencho 1
+Encho 99
+Mincho 32
+Noncho 123
+Oncho 100
+Pesho 0
+Suzi 12
+Zuzi 32131
+[/input]
+[output]
+A - 40
+B - 43
+C - 54
+Encho - 99
+Mincho - 32
+Noncho - 123
+Oncho - 100
+Zuzi - 32131
+[/output]
+[/test]
+[test]
+[input]
+4
+A 10
+B 11
+C 12
+D 13
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+13
+A 31
+W 45
+B 76
+C 87
+D 453
+E 645
+Z 55
+K 53
+I 43
+J 543
+P 67
+H 76
+F 88
+[/input]
+[output]
+A - 31
+B - 76
+C - 87
+D - 453
+E - 645
+F - 88
+H - 76
+I - 43
+J - 543
+K - 53
+P - 67
+W - 45
+Z - 55
+[/output]
+[/test]
+[test]
+[input]
+13
+Astor 45
+Asto 31
+Borko 76
+Ceco 87
+Dido 453
+Encho 645
+Focker 11
+Haplio 76
+Ivo 12
+Julien 0
+Kodkoslav 30
+Pencho 67
+Zoro 55
+[/input]
+[output]
+Asto - 31
+Astor - 45
+Borko - 76
+Ceco - 87
+Dido - 453
+Encho - 645
+Haplio - 76
+Pencho - 67
+Zoro - 55
+[/output]
+[/test]
+[test]
+[input]
+4
+Ann 31
+Anntoanette 39
+An 33
+Annie 31
+[/input]
+[output]
+An - 33
+Ann - 31
+Annie - 31
+Anntoanette - 39
 [/output]
 [/test]
 [/tests]

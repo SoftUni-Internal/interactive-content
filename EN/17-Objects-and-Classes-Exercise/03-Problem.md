@@ -1,6 +1,6 @@
 [slide]
-# Opinion Poll
-[code-task title="Opinion Poll" taskId="java-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Articles 2.0
+[code-task title="Articles 2.0" taskId="java-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,206 +14,133 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years**, sorted in **alphabetical** order in the following **format**:
+Change the program "Articles", so you can store a **list of articles**.
 
-\{name\} - \{age\}
+You will not need the methods any more (**except** the ToString method).
 
-Note: you can use **stream()** to filter people.
+On the **first line**, you will get a **number n**.
 
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 3 | Ivan - 48 |
-| Pesho 12 | Stamat – 31 |
-| Stamat 31 | |
-| Ivan 48 | |
+On the next **n lines**, you will get some **articles in the same format as the previous task** ("\{title\}, \{content\}, \{author\}").
+
+Finally, you will get one of the **three criteria**: "title", "content", "author".
+
+You need to order the articles **alphabetically** based on the command and print them sorted by the given **criteria**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Lyubo - 44 |
-| Nikolai 33 | Nikolai - 33 |
-| Yordan 88 | Yordan – 88 |
-| Tosho 22 | |
-| Lyubo 44 | |
-| Stanislav 11 | |
+| 2 | Article - content: Johnny |
+| Science, planets, Bill | Science - planets: Bill |
+| Article, content, Johnny | |
+| title | |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | title3 – A: author3 |
+| title1, C, author1 | title2 – B: author2 |
+| title2, B, author2 | title1 – C: author1 |
+| title3, A, author3 | |
+| content | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
+2
+Science, planets, Bill
+Article, content, Johnny
+title
+[/input]
+[output]
+Article - content: Johnny
+Science - planets: Bill
+
+[/output]
+[/test]
+[test]
+[input]
 3
-Pesho 12
-Stamat 31
-Ivan 48
-
+title1, C, author1
+title2, B, author2
+title3, A, author3
+content
 [/input]
 [output]
-Ivan - 48
-Stamat - 31
-
+title3 - A: author3
+title2 - B: author2
+title1 - C: author1
 [/output]
 [/test]
 [test]
 [input]
-5
-Nikolai 33
-Yordan 88
-Tosho 22
-Lyubo 44
-Stanislav 11
-
+2
+The Reckoning, Content, John Grisham
+Harry Potter and the Sorcerer's Stone (Enhanced Edition), content2, J.K. Rowling
+title
 [/input]
 [output]
-Lyubo - 44
-Nikolai - 33
-Yordan - 88
-
-[/output]
-[/test]
-[test]
-[input]
-11
-A 40
-B 43
-C 54
-Dencho 31
-Encho 99
-Mincho 32
-Noncho 123
-Oncho 100
-Pesho 321534
-Suzi 3213
-Zuzi 32131
-[/input]
-[output]
-A - 40
-B - 43
-C - 54
-Dencho - 31
-Encho - 99
-Mincho - 32
-Noncho - 123
-Oncho - 100
-Pesho - 321534
-Suzi - 3213
-Zuzi - 32131
-[/output]
-[/test]
-[test]
-[input]
-11
-A 40
-B 43
-C 54
-Dencho 1
-Encho 99
-Mincho 32
-Noncho 123
-Oncho 100
-Pesho 0
-Suzi 12
-Zuzi 32131
-[/input]
-[output]
-A - 40
-B - 43
-C - 54
-Encho - 99
-Mincho - 32
-Noncho - 123
-Oncho - 100
-Zuzi - 32131
+Harry Potter and the Sorcerer's Stone (Enhanced Edition) - content2: J.K. Rowling
+The Reckoning - Content: John Grisham
 [/output]
 [/test]
 [test]
 [input]
 4
-A 10
-B 11
-C 12
-D 13
+Ego Is the Enemy, content2, Ryan Holiday
+Cole and Sav, content1, Cole LaBrant & Savannah LaBrant
+Most Valuable Playboy, content4, Lauren Blakely
+A Christmas Message, content3, Anne Perry
+content
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-13
-A 31
-W 45
-B 76
-C 87
-D 453
-E 645
-Z 55
-K 53
-I 43
-J 543
-P 67
-H 76
-F 88
-[/input]
-[output]
-A - 31
-B - 76
-C - 87
-D - 453
-E - 645
-F - 88
-H - 76
-I - 43
-J - 543
-K - 53
-P - 67
-W - 45
-Z - 55
-[/output]
-[/test]
-[test]
-[input]
-13
-Astor 45
-Asto 31
-Borko 76
-Ceco 87
-Dido 453
-Encho 645
-Focker 11
-Haplio 76
-Ivo 12
-Julien 0
-Kodkoslav 30
-Pencho 67
-Zoro 55
-[/input]
-[output]
-Asto - 31
-Astor - 45
-Borko - 76
-Ceco - 87
-Dido - 453
-Encho - 645
-Haplio - 76
-Pencho - 67
-Zoro - 55
+Cole and Sav - content1: Cole LaBrant & Savannah LaBrant
+Ego Is the Enemy - content2: Ryan Holiday
+A Christmas Message - content3: Anne Perry
+Most Valuable Playboy - content4: Lauren Blakely
 [/output]
 [/test]
 [test]
 [input]
 4
-Ann 31
-Anntoanette 39
-An 33
-Annie 31
+Ego Is the Enemy, content2, Ryan Holiday
+Cole and Sav, content1, Cole LaBrant & Savannah LaBrant
+Most Valuable Playboy, content4, Lauren Blakely
+A Christmas Message, content3, Anne Perry
+author
 [/input]
 [output]
-An - 33
-Ann - 31
-Annie - 31
-Anntoanette - 39
+A Christmas Message - content3: Anne Perry
+Cole and Sav - content1: Cole LaBrant & Savannah LaBrant
+Most Valuable Playboy - content4: Lauren Blakely
+Ego Is the Enemy - content2: Ryan Holiday
+[/output]
+[/test]
+[test]
+[input]
+2
+A Simple Favor, content2, Darcey Bell
+Gracie's Secret, content1, Jill Childs
+title
+[/input]
+[output]
+A Simple Favor - content2: Darcey Bell
+Gracie's Secret - content1: Jill Childs
+[/output]
+[/test]
+[test]
+[input]
+3
+A Simple Favor, content2, Darcey Bell
+Most Valuable Playboy, content4, Lauren Blakely
+Gracie's Secret, content1, Jill Childs
+content
+[/input]
+[output]
+Gracie's Secret - content1: Jill Childs
+A Simple Favor - content2: Darcey Bell
+Most Valuable Playboy - content4: Lauren Blakely
 [/output]
 [/test]
 [/tests]
