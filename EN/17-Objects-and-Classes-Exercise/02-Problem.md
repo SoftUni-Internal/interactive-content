@@ -21,7 +21,7 @@ Using the **Person class**, write a program that reads from the console **N line
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | John – 31 | 
+| 3 | John - 31 | 
 | Peter 12 | Steven - 48 |
 | John 31 | |
 | Steven 48 | |
@@ -30,7 +30,7 @@ Using the **Person class**, write a program that reads from the console **N line
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Nick - 33 | 
-| Nick 33 | John – 88 |
+| Nick 33 | John - 88 |
 | John 88 | Leo - 44 |
 | George 22 | |
 | Leo 44 | |
