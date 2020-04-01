@@ -18,7 +18,7 @@ Using the **Person class**, write a program that reads from the console **N line
 
 \{name\} - \{age\}
 
-Note: you can use **stream()** to filter people.
+Note: you can use `stream()` to filter people.
 
 ### Example
 | **Input** | **Output** |
