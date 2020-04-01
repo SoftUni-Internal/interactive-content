@@ -36,7 +36,7 @@ The **program ends** when the sequence has **no elements**.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 5 3 | 1 |
+| 4 5 3 | 14 |
 | 1 | |
 | 1 | |
 | 0 | |
@@ -55,7 +55,7 @@ The **program ends** when the sequence has **no elements**.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 10 6 3 5 | 1 |
+| 5 10 6 3 5 | 51 |
 | 4 | |
 | 1 | |
 | 1 | |
