@@ -21,20 +21,20 @@ Using the **Person class**, write a program that reads from the console **N line
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | Stamat – 31 | 
-| Pesho 12 | Ivan - 48 |
-| Stamat 31 | |
-| Ivan 48 | |
+| 3 | John – 31 | 
+| Peter 12 | Steven - 48 |
+| John 31 | |
+| Steven 48 | |
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Nikolai - 33 | 
-| Nikolai 33 | Yordan – 88 |
-| Yordan 88 | Lyubo - 44 |
-| Tosho 22 | |
-| Lyubo 44 | |
-| Stanislav 11 | |
+| 5 | Nick - 33 | 
+| Nick 33 | John – 88 |
+| John 88 | Leo - 44 |
+| George 22 | |
+| Leo 44 | |
+| Peter 11 | |
 
 [/task-description]
 [code-io /]
