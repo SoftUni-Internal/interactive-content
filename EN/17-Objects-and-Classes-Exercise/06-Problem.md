@@ -24,14 +24,17 @@ The **second** element will be a **string** and will represent the **ID of the p
 
 The last element will be an **integer** and represents the **age of the person**.
 
-When you receive the **command** "End", **stop** taking input and **print all the people, ordered by age**.
+If you get a person whose **ID you've already received**, then **update** the name and age for that ID with that **of the new person**.
+
+When you receive the **command** "End", **stop** taking input and **print all the people**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| George 123456 20 | Stefan with ID: 524244 is 10 years old. |
-| Peter 78911 15 | Pesho with ID: 78911 is 15 years old. |
-| Steven 524244 10 | Georgi with ID: 123456 is 20 years old. |
+| George 123456 20 | George with ID: 123456 is 20 years old. |
+| Peter 78911 15 | John with ID: 78911 is 30 years old. |
+| Steven 524244 10 | Steven with ID: 524244 is 10 years old. |
+| John 78911 30 | |
 | End | |
 
 [/task-description]
@@ -42,12 +45,13 @@ When you receive the **command** "End", **stop** taking input and **print all th
 Georgi 123456 20
 Pesho 78911 15
 Stefan 524244 10
+John 78911 30
 End
 [/input]
 [output]
-Stefan with ID: 524244 is 10 years old.
-Pesho with ID: 78911 is 15 years old.
 Georgi with ID: 123456 is 20 years old.
+John with ID: 78911 is 30 years old.
+Stefan with ID: 524244 is 10 years old.
 [/output]
 [/test]
 [test]
@@ -56,10 +60,12 @@ Cindy 88611 2
 Kaloyan 13967 3
 Simona 53316 11
 Gil 31837 72
+Gil 31837 72
+Stacy 88611 10
 End
 [/input]
 [output]
-Cindy with ID: 88611 is 2 years old.
+Stacy with ID: 88611 is 10 years old.
 Kaloyan with ID: 13967 is 3 years old.
 Simona with ID: 53316 is 11 years old.
 Gil with ID: 31837 is 72 years old.
@@ -91,48 +97,9 @@ End
 [output]
 Deyan with ID: 57989 is 24 years old.
 Chip with ID: 74059 is 44 years old.
-Margie with ID: 17098 is 46 years old.
 Chip with ID: 84450 is 89 years old.
-[/output]
-[/test]
-[test]
-[input]
-Simona 53316 11
-Gil 31837 72
-Cindy 88611 2
-Kaloyan 13967 3
-End
-[/input]
-[output]
-Cindy with ID: 88611 is 2 years old.
-Kaloyan with ID: 13967 is 3 years old.
-Simona with ID: 53316 is 11 years old.
-Gil with ID: 31837 is 72 years old.
-[/output]
-[/test]
-[test]
-[input]
-Deyan 57989 24
-Chip 74059 44
-Chip 84450 89
-Margie 17098 46
-Simona 53316 11
-Gil 31837 72
-Cindy 88611 2
-Kaloyan 13967 3
-End
-[/input]
-[output]
-Cindy with ID: 88611 is 2 years old.
-Kaloyan with ID: 13967 is 3 years old.
-Simona with ID: 53316 is 11 years old.
-Deyan with ID: 57989 is 24 years old.
-Chip with ID: 74059 is 44 years old.
 Margie with ID: 17098 is 46 years old.
-Gil with ID: 31837 is 72 years old.
-Chip with ID: 84450 is 89 years old.
 [/output]
-[/test]
 [/tests]
 [/code-task]
 [/slide]
