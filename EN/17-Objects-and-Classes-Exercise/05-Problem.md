@@ -1,6 +1,6 @@
 [slide]
 # Vehicle Catalogue
-[code-task title="Vehicle Catalogue" taskId="java-fundamentals-objects-and-classes-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vehicle Catalogue" taskId="java-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
