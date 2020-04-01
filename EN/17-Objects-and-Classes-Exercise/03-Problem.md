@@ -1,7 +1,7 @@
 [slide]
 # Opinion Poll
-[code-task title="Opinion Poll" taskId="java-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Opinion Poll" taskId="java-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 

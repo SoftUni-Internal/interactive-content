@@ -1,7 +1,7 @@
 [slide]
 # Articles
-[code-task title="Articles" taskId="java-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java requiresInput]
+[code-task title="Articles" taskId="java-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 
