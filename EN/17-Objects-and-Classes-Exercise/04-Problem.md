@@ -3,13 +3,7 @@
 [code-task title="Students" taskId="python-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
+# Write your code here
 ```
 [/code-editor]
 [task-description]

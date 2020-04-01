@@ -3,13 +3,7 @@
 [code-task title="Opinion Poll" taskId="python-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
+# Write your code here
 ```
 [/code-editor]
 [task-description]
@@ -21,7 +15,7 @@ Using the **Person class**, write a program that reads from the console **N line
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | John – 31 | 
+| 3 | John - 31 | 
 | Peter 12 | Steven - 48 |
 | John 31 | |
 | Steven 48 | |
@@ -30,7 +24,7 @@ Using the **Person class**, write a program that reads from the console **N line
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Nick - 33 | 
-| Nick 33 | John – 88 |
+| Nick 33 | John - 88 |
 | John 88 | Leo - 44 |
 | George 22 | |
 | Leo 44 | |
