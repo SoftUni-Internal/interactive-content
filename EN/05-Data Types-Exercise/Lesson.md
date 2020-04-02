@@ -1,1 +1,1 @@
-# Data Types Exercise
+# Data Types - Exercise

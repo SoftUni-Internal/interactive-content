@@ -1,1 +1,1 @@
-# Arrays Exercise
+# Arrays - Exercise
