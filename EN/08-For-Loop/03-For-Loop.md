@@ -7,7 +7,9 @@
 [stream language="EN" videoId="342471604" default /]
 [stream language="RO" videoId="389927500"  /]
 [/vimeo-video]
+[/slide]
 
+[slide]
 # For Loop
 In programming it is often required to perform a block of commands multiple times. 
 
