@@ -225,21 +225,6 @@ Side: Pesho Peshov, Members: 1
 [/test]
 [test]
 [input]
-Pesho \| Gosho
-Pesho \| Gosho
-Pesho \| Gosho
-Pesho \| Gosho
-Pesho \| Gosho
-Pesho \| Gosho
-End
-[/input]
-[output]
-Side: Pesho, Members: 1
-! Gosho
-[/output]
-[/test]
-[test]
-[input]
 Light \| Gosho
 Dark \| Pesho
 Pesho -> SoftUni
