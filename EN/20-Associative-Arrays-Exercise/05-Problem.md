@@ -20,20 +20,11 @@ Users can **register to park and unregister to leave**.
 
 The program receives **2 commands**:
 - "register \{username\} \{licensePlateNumber\}":
-    - The system **only supports one car per user** at the moment, so if a user tries to register another license plate, using the same username, the system should **print**:
-
-"ERROR: already registered with plate number \{licensePlateNumber\}"
-    - If the aforementioned checks pass **successfully**, the **plate can be registered**, so the system should **print**:
-
- "\{username\} registered \{licensePlateNumber\} successfully"
-
+    - The system **only supports one car per user** at the moment, so if a user tries to register another license plate, using the same username, the system should **print**: "ERROR: already registered with plate number \{licensePlateNumber\}"
+    - If the aforementioned checks pass **successfully**, the **plate can be registered**, so the system should **print**: "\{username\} registered \{licensePlateNumber\} successfully"
 - "unregister \{username\}":
-    - If the user is **not present in the database**, the system should **print**:
-
-"ERROR: user \{username\} not found"
-    - If the aforementioned check passes **successfully**, the system should **print**:
-
-"\{username\} unregistered successfully"
+    - If the user is **not present in the database**, the system should **print**: "ERROR: user \{username\} not found"
+    - If the aforementioned check passes **successfully**, the system should **print**: "\{username\} unregistered successfully"
 
 After you execute all of the commands, **print** all the **currently registered users and their license plates** in the format:
 - "\{username\} => \{licensePlateNumber\}"
