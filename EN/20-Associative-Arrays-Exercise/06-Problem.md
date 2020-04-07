@@ -29,16 +29,18 @@ When you do receive the **command** "end", **print** the courses with their **na
 For each **contest print registered users** **ordered by name in ascending** order.
 
 ### Input
-- Until you receive "end", the **input come in the format**: "\{courseName\} : \{studentName\}".
+- Until you receive "end", the **input come in the format**:
+
+ "\{courseName\} : \{studentName\}".
 - The product data is **always delimited** by " : ".
 
 ### Output
 - Print information about each **course**, following the **format**: 
 
-"{courseName}: {registeredStudents}"
+"\{courseName\}: \{registeredStudents\}"
 - Print information about each **student**, following the **format**:
 
-"-- {studentName}"
+"-- \{studentName\}"
 
 ### Examples
 | **Input** | **Output** |
