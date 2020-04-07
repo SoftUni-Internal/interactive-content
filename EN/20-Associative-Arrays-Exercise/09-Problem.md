@@ -229,7 +229,7 @@ Pesho \| Gosho
 Pesho \| Gosho
 Pesho \| Gosho
 Pesho \| Gosho
-Pesho \ Gosho
+Pesho \| Gosho
 Pesho \| Gosho
 End
 [/input]
