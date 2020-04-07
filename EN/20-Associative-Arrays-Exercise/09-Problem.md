@@ -32,7 +32,9 @@ If you receive a force user -> force side you should **check if there is such fo
 
 If there is no such force user, **add him/her to the corresponding force side**, treating the command as new registered force user.
 
-Then you should print on the console: "\{forceUser\} joins the \{forceSide\} side!"
+Then you should print on the console: 
+
+"\{forceUser\} joins the \{forceSide\} side!"
 
 You should **end your program when you receive the command** "End". 
 

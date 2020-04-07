@@ -29,7 +29,7 @@ When you finish reading data, keep the students with average grade **higher or e
 Order filtered students by average grade in **descending**.
 
 **Print the students and their average grade** in format:
-- "{name} –> {averageGrade}"
+- "\{name\} –> \{averageGrade\}"
 
 **Format** the average grade to the **second decimal** place.
 

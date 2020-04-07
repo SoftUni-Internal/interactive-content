@@ -34,7 +34,9 @@ Print the company name and each employee's id in the following format:
 -- \{idN\}
 
 ### Input
-Until you receive "End", the input come **in the format**: "\{companyName\} -> \{employeeId\}".
+Until you receive "End", the input come **in the format**:
+
+"\{companyName\} -> \{employeeId\}".
 
 
 ### Examples
