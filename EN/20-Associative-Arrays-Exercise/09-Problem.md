@@ -92,8 +92,8 @@ We print only Lighter side because Darker side has no members.
 [tests]
 [test]
 [input]
-Light | Gosho
-Dark | Pesho
+Light \| Gosho
+Dark \| Pesho
 End
 [/input]
 [output]
@@ -105,8 +105,8 @@ Side: Light, Members: 1
 [/test]
 [test]
 [input]
-Lighter | Royal
-Darker | DCay
+Lighter \| Royal
+Darker \| DCay
 Ivan Ivanov -> Lighter
 DCay -> Lighter
 End
@@ -122,8 +122,8 @@ Side: Lighter, Members: 3
 [/test]
 [test]
 [input]
-Dark | Gosho
-Light | Pesho
+Dark \| Gosho
+Light \| Pesho
 End
 [/input]
 [output]
@@ -135,9 +135,9 @@ Side: Light, Members: 1
 [/test]
 [test]
 [input]
-Light | Gosho
-Dark | Pesho
-Dark | Kiro
+Light \| Gosho
+Dark \| Pesho
+Dark \| Kiro
 End
 [/input]
 [output]
@@ -150,8 +150,8 @@ Side: Light, Members: 1
 [/test]
 [test]
 [input]
-Light | Royal
-Dark | DCay
+Light \| Royal
+Dark \| DCay
 Ivan -> Middle
 End
 [/input]
@@ -167,8 +167,8 @@ Side: Middle, Members: 1
 [/test]
 [test]
 [input]
-Light | Royal
-Dark | DCay
+Light \| Royal
+Dark \| DCay
 Ivan -> Light
 End
 
@@ -206,10 +206,10 @@ Side: JScript, Members: 1
 [/test]
 [test]
 [input]
-Pesho | Gosho Goshov
-Gosho | Pesho Peshov
-Pesho Peshov | Gosho
-Gosho Goshov | Pesho
+Pesho \| Gosho Goshov
+Gosho \| Pesho Peshov
+Pesho Peshov \| Gosho
+Gosho Goshov \| Pesho
 End
 [/input]
 [output]
@@ -225,12 +225,12 @@ Side: Pesho Peshov, Members: 1
 [/test]
 [test]
 [input]
-Pesho | Gosho
-Pesho | Gosho
-Pesho | Gosho
-Pesho | Gosho
-Pesho | Gosho
-Pesho | Gosho
+Pesho \| Gosho
+Pesho \| Gosho
+Pesho \| Gosho
+Pesho \| Gosho
+Pesho \ Gosho
+Pesho \| Gosho
 End
 [/input]
 [output]
@@ -240,8 +240,8 @@ Side: Pesho, Members: 1
 [/test]
 [test]
 [input]
-Light | Gosho
-Dark | Pesho
+Light \| Gosho
+Dark \| Pesho
 Pesho -> SoftUni
 Gosho -> SoftUni
 End
@@ -256,11 +256,11 @@ Side: SoftUni, Members: 2
 [/test]
 [test]
 [input]
-Java | e
-Java | d
-Java | c
-Java | b
-Java | a
+Java \| e
+Java \| d
+Java \| c
+Java \| b
+Java \| a
 End
 [/input]
 [output]
@@ -274,12 +274,12 @@ Side: Java, Members: 5
 [/test]
 [test]
 [input]
-e | b
-e | a
-f | d
-f | c
-f | e
-g | e
+e \| b
+e \| a
+f \| d
+f \| c
+f \| e
+g \| e
 End
 [/input]
 [output]
