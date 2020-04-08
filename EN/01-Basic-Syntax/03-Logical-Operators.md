@@ -1,0 +1,4 @@
+[slide]
+# Logical Operators
+
+[/slide]
