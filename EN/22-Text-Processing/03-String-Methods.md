@@ -1,0 +1,3 @@
+[slide]
+# String Methods
+[/slide]

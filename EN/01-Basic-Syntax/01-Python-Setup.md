@@ -1,0 +1,3 @@
+[slide]
+# Python Setup
+[/slide]

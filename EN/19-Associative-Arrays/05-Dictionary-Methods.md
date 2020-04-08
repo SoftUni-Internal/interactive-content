@@ -1,0 +1,3 @@
+[slide]
+# Dictionary Methods
+[/slide]

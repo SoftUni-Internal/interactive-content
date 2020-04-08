@@ -1,0 +1,3 @@
+[slide]
+# Advanced Methods
+[/slide]

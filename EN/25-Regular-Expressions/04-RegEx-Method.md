@@ -1,0 +1,3 @@
+[slide]
+# RegEx Method
+[/slide]
