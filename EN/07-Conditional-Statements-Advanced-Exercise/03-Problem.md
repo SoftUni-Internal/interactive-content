@@ -49,13 +49,22 @@ Read from the console two lines:
 | -50 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 London
 1500
 [/input]
 [output]
 120.00
+[/output]
+[/test]
+[test open]
+[input]
+Moscow
+-50
+[/input]
+[output]
+error
 [/output]
 [/test]
 [test]

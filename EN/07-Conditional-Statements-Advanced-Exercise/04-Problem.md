@@ -53,7 +53,7 @@ If the point does NOT lie on a side:
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 -3
@@ -66,7 +66,7 @@ You can check the conditions above using one more complicated **if**-**else** co
 Inside / Outside
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 -3

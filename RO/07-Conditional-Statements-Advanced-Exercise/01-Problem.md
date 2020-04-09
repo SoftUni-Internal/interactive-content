@@ -42,6 +42,24 @@ Print the expected address on a single line.
 | m | |
 [/task-description]
 [tests]
+[test open]
+[input]
+25
+f
+[/input]
+[output]
+Ms.
+[/output]
+[/test]
+[test open]
+[input]
+13.5
+m
+[/input]
+[output]
+Master
+[/output]
+[/test]
 [test]
 [input]
 12

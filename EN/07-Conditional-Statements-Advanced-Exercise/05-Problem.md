@@ -46,7 +46,7 @@ Your friend has different plans for every part of the day with different outfits
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 16
 Morning
@@ -55,7 +55,7 @@ Morning
 It's 16 degrees, get your Sweatshirt and Sneakers.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 22
 Afternoon

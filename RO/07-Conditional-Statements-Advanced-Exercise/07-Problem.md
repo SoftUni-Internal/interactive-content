@@ -66,7 +66,7 @@ Print on the console a **single number** - the price of the flowers, **formatted
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 4

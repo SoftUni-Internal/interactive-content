@@ -44,13 +44,22 @@ The input is consists of 2 lines:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Diesel
 10
 [/input]
 [output]
 Fill your tank with diesel!
+[/output]
+[/test]
+[test open]
+[input]
+Gas
+25
+[/input]
+[output]
+You have enough gas.
 [/output]
 [/test]
 [test]
@@ -60,15 +69,6 @@ Gasoline
 [/input]
 [output]
 You have enough gasoline.
-[/output]
-[/test]
-[test]
-[input]
-Gas
-25
-[/input]
-[output]
-You have enough gas.
 [/output]
 [/test]
 [test]
