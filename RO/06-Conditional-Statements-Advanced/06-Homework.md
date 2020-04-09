@@ -38,25 +38,27 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to check for fruit or vegetable:
 
 * Read a single input line: an item from the greengrocery
 * Fruits: banana, apple, kiwi, cherry, lemon, grapes
 * Vegetables: cucumber, pepper, carrot, onion
 * Print: **"vegetable"**, **"fruit"** or **"unknown"**
-# Example
-## Input
-- lemon
-## Output
-- fruit
-## Input
-- carrot
-## Output
-- vegetable
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| lemon | fruit |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| carrot | vegetable |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 lemon
 [/input]
@@ -66,7 +68,23 @@ fruit
 [/test]
 [test]
 [input]
+grapes
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
 carrot
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test open]
+[input]
+pepper
 [/input]
 [output]
 vegetable
@@ -93,23 +111,41 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a program to print the day of week as words:
 
 * Read and integer **n**: the **day of the week** in range [1..7]
 * Print the **name of the day** (as words, in English)
 * Print **"Error"** if the number is not in the given range
-# Example
-## Input
-- 1
-## Output
-- Monday
-## Input
-- 8
-## Output
-- Error
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | Monday |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 8 | Error |
+
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+[/input]
+[output]
+Monday
+[/output]
+[/test]
+[test open]
+[input]
+8
+[/input]
+[output]
+Error
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -160,23 +196,33 @@ Write a program to check a letter for vowel or consonant:
 
 * Read a **letter** from the English alphabet
 * Print either **"Vowel"** or **"Consonant"**
-# Example
-## Input
-- a
-## Output
-- Vowel
-## Input
-- B
-## Output
-- Consonant
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| a | Vowel |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| B | Consonant |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 a
 [/input]
 [output]
 Vowel
+[/output]
+[/test]
+[test open]
+[input]
+B
+[/input]
+[output]
+Consonant
 [/output]
 [/test]
 [test]
@@ -221,18 +267,25 @@ Calculate the sign of the product of 3 numbers:
 
 * Read **3 floating-point** numbers
 * Print the **sign** of the product of the entered 3 numbers: **positive**, **negative** or **zero**
+* Try to do this **without multiplying** the numbers
 
-Try to do this **without multiplying** the 3 numbers
-# Example
-## Input
-- 2
-- 3
-- -1
-## Output
-- negative
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | negative |
+| 3 |  |
+| -1 |  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 2 | positive |
+| 3 |  |
+| 1 |  |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -2
 3
@@ -240,6 +293,16 @@ Try to do this **without multiplying** the 3 numbers
 [/input]
 [output]
 negative
+[/output]
+[/test]
+[test open]
+[input]
+2
+3
+1
+[/input]
+[output]
+positive
 [/output]
 [/test]
 [test]
@@ -290,22 +353,32 @@ Write a program, which checks for **sorted 3 numbers**:
 * Print **"Ascending"** if the numbers are in ascending order
 * Print **"Descending"** if the numbers are in descending order
 * Print **"Not sorted"** in any other case
-# Example
-## Input
-- 1
-- 2
-- 3
-## Output
-- Ascending
-## Input
-- 3
-- 5
-- 2
-## Output
-- Not sorted
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 | Ascending |
+| 2 |  |
+| 3 |  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3 | Not sorted |
+| 5 |  |
+| 2 |  |
+
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 5 | Descending |
+| 4 |  |
+| 3 |  |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2
@@ -313,6 +386,26 @@ Write a program, which checks for **sorted 3 numbers**:
 [/input]
 [output]
 Ascending
+[/output]
+[/test]
+[test open]
+[input]
+3
+5
+2
+[/input]
+[output]
+Not sorted
+[/output]
+[/test]
+[test open]
+[input]
+5
+4
+3
+[/input]
+[output]
+Descending
 [/output]
 [/test]
 [test]
@@ -368,13 +461,14 @@ Write a program, which calculates vacation expenses:
 |Summer|50|30|0%|
 |Autumn|20|15|30%|
 |Winter|40|10|10%|
-# Example
-## Input
-- Winter
-- Hotel
-- 5
-## Output
-- 180.00
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Winter | 180.00 |
+| Hotel |  |
+| 5 |  |
+
 [/task-description]
 [tests]
 [test]
@@ -420,13 +514,13 @@ Calculate the **price** for all the tickets for a cinema movie:
 |Normal|7.50|
 |Discount|5.00|
 
-# Example
-## Input
-- Normal
-- 12
-- 9
-## Output
-- 810.00
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Normal | 810.00 |
+| 12 |  |
+| 9 |  |
+
 [/task-description]
 [tests]
 [test]
@@ -466,16 +560,17 @@ Write a program to apply an operator for given two numbers:
 * Read **two integers** and **math operator** from the console
 * The math operator could be: "+", "-", "/", "%" and "*"
 * The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
-# Example
-## Input
-- 12
-- 10
-- \+
-## Output
-- 12 + 10 = 22
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 12 | 12 + 10 = 22 |
+| 10 |  |
+| \+ |  |
+
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 12
@@ -554,20 +649,20 @@ Write a program to simulate an ATM withdrawal:
 * Print **"The daily limit was exceeded."** if the limit is exceeded
 * Print **"Insufficient availability."** if the balance isn't enough
 
-# Example
-## Input
-- 420
-- 20
-- 25
-## Output
-- The withdraw was successful.
-## Input
-- 10
-- 50
-- 20
-## Output
-- The daily limit was exceeded.
-- Insufficient availability.
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 420 | The withdraw was successful. |
+| 20 |  |
+| 25 |  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 10 | The daily limit was exceeded. |
+| 50 | Insufficient availability. |
+| 20 |  |
+
 [/task-description]
 [tests]
 [test]
@@ -605,17 +700,29 @@ public class Main {
 Write a program to find the biggest among 5 numbers
 * Read **5 integers**
 * Print the **biggest** number
-# Example
-## Input
-- -1
-- -2
-- -3
-- -4
-- -5
-## Output
-- -1
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| -1 | -1 |
+| -2 |  |
+| -3 |  |
+| -4 |  |
+| -5 |  |
 [/task-description]
 [tests]
+[test open]
+[input]
+-1
+-2
+-3
+-4
+-5
+[/input]
+[output]
+-1
+[/output]
+[/test]
 [test]
 [input]
 1
