@@ -1,4 +1,0 @@
-[slide]
-# Comparison Operators
-
-[/slide]

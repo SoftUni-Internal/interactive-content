@@ -1,3 +1,0 @@
-[slide]
-# Early Computing
-[/slide]

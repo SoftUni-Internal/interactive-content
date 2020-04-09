@@ -1,4 +1,0 @@
-[slide]
-# Loops
-
-[/slide]

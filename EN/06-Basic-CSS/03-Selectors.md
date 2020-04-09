@@ -1,3 +1,0 @@
-[slide]
-# Selectors
-[/slide]

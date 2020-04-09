@@ -1,3 +1,0 @@
-[slide]
-# Box Model
-[/slide]

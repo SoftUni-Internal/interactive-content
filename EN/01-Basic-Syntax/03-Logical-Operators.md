@@ -1,4 +1,0 @@
-[slide]
-# Logical Operators
-
-[/slide]

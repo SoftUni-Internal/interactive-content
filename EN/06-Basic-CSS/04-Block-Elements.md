@@ -1,3 +1,0 @@
-[slide]
-# Block Elements
-[/slide]

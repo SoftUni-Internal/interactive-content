@@ -1,4 +1,0 @@
-[slide]
-# Lists Overview
-
-[/slide]

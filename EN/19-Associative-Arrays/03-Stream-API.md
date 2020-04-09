@@ -1,5 +1,0 @@
-[slide]
-# Associative Arrays
-
-
-[/slide]

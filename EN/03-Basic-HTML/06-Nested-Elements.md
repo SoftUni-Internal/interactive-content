@@ -1,4 +1,0 @@
-[slide]
-# Nested Elements
-
-[/slide]
