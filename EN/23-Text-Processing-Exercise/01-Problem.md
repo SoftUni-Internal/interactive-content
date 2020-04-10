@@ -82,7 +82,7 @@ collection
 [/test]
 [test]
 [input]
-produce, gather, low-ther, energy_power, #adored,   dashboard  , registered , fish, stylish
+produce, gather, low-ther, energy_power, #adored,   dashboard  , registered , fish, stylish 
 [/input]
 [output]
 produce
