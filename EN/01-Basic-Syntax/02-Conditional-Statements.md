@@ -1,4 +1,0 @@
-[slide]
-# Conditional Statements
-
-[/slide]
