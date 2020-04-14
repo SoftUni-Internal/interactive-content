@@ -84,6 +84,7 @@ gather
 low-ther
 energy_power
 fish
+stylish
 [/output]
 [/test]
 [test]
