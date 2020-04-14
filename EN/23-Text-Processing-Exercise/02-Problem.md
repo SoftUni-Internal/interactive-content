@@ -23,9 +23,12 @@ Then **continue with the next two characters**.
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| Jeff, john45, ab, cd, peter-white, @smith | Jeff | 
-| | John45 |
-| | peter-white |
+| a aaaa | 9700 | 
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| John Smith | 42025 | 
 
 [/task-description]
 [code-io /]
