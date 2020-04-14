@@ -67,7 +67,7 @@ collection
 [/test]
 [test]
 [input]
-chee@sey, \$chix\$,   clastic, clear-water, cof actor, collection
+chee\@sey, \$chix\$,   clastic, clear-water, cof actor, collection
 [/input]
 [output]
 clear-water
@@ -76,7 +76,7 @@ collection
 [/test]
 [test]
 [input]
-produce, gather, low-ther, energy_power, #adored,   dashboard  , registered , fish, stylish 
+produce, gather, low-ther, energy_power, #adored,   dashboard  , registered , fish, stylish
 [/input]
 [output]
 produce
