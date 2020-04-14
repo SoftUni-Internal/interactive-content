@@ -67,7 +67,7 @@ collection
 [/test]
 [test]
 [input]
-chee@sey, $chix$,   clastic, clear-water, cof actor, collection
+chee@sey, \$chix\$,   clastic, clear-water, cof actor, collection
 [/input]
 [output]
 clear-water
