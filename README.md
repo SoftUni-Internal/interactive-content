@@ -1,1 +1,1 @@
-# programming-basics-with-java
+# working-remotely-webinar

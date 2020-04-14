@@ -1,1 +1,0 @@
-# Condiții Avansate

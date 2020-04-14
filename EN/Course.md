@@ -1,13 +1,12 @@
-# Programming Basics with Java
+# Working Remotely with George Georgiev
 
 ## Description
-This course teaches the **basics of coding**, such as:
- - Using variables and expressions
- - Reading and printing at the console
- - Writing conditional logic (if-else)
- - Using loops: for-loops, while-loops, nested loops
- - Writing control-flow logic: combining conditions and loops
- - Problem solving: program design and implementation
+In this webinar we are going to talk about:
+- What do we need to be able to work remotely
+- The good side of working remotely
+- What freedom brings to the table
+- What are the characteristics of good remote developers
+- The bad side of working remotely
 
 ## Language
 English

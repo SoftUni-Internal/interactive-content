@@ -1,1 +1,1 @@
-# Introduction to Programming
+# Working Remotely with George Georgiev
