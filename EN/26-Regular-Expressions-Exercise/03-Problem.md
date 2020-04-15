@@ -52,10 +52,10 @@ When you receive "end of shift" **print the total amount of money** for the day 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| %InvalidName%\<Croissant\>\|2\|10.3$ | Valid: Valid - 200.00 |
-| %Peter%\<Gum\>1.3$ | Total income: 200.00 |
+| %InvalidName%\<Croissant\>\|2\|10.3\$ | Valid: Valid - 200.00 |
+| %Peter%\<Gum\>1.3\$ | Total income: 200.00 |
 | %Maria%\<Cola\>\|1\|2.4 | |
-| %Valid%\<Valid\>valid\|10\|valid20$ | |
+| %Valid%\<Valid\>valid\|10\|valid20\$ | |
 | end of shift | |
 
 ### Comments
