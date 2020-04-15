@@ -99,9 +99,9 @@ end of race
 [test]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
-Mi*&^%\$ch123o!\#\$%\#nne787)
-%\$\$B(*&&)i89ll)*&)
-R**(on%^&ald992)
+Mi*\\&^%\$ch123o!\#\$%\#nne787)
+%\$\$B(*\\&\\&)i89ll)*\\&)
+R**(on%^\\&ald992)
 T(*^^%immy77)
 Ma10**\$\#g0g0g0i0e
 end of race
@@ -116,9 +116,9 @@ end of race
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
-N***&^E989GA(*&^&^&N323a)))
-*^%%Pe87876t&&^er87\#\$&(%)
-L&^%u9754cille*&^&%^234
+N***\\&^E989GA(*\\&^\\&^\\&N323a)))
+*^%%Pe87876t\\&\\&^er87\#\$\\&(%)
+L\\&^%u9754cille*\\&^\\&%^234
 end of race
 [/input]
 [output]
@@ -131,11 +131,11 @@ end of race
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
-N***&^e989ga(*&^&^&n323)))
-*^%%Pe87876t&&^er87\#\$&(%)
-L&^%u9754cille*&^&%^234
-R**%^&%i11c104k123!^&!!
-R&&%^&%ic10^\$@k123!^&!!
+N***\\&^e989ga(*\\&^\\&^\\&n323)))
+*^%%Pe87876t\\&\\&^er87\#\$\\&(%)
+L\\&^%u9754cille*\\&^\\&%^234
+R**%^\\&%i11c104k123!^\\&!!
+R\\&\\&%^\\&%ic10^\$@k123!^\\&!!
 *^%Peter8675
 *^%Geo\$12\#%112r^\$ge23!(@^)
 !!22!P23!e!t!e!r!85
@@ -150,10 +150,10 @@ end of race
 [test]
 [input]
 Joro, George, Georgi, Stamat
-^&^%^232St\#\$ama&&^^t
-^&^%^232St\#\$ama&&^^t
-G7667eorge&^^&^
-&^&&&J99999oro&^^57
+^\\&^%^232St\#\$ama\\\&\\\&^^t
+^\\\&^%^232St\#\$ama\\\&\\\&^^t
+G7667eorge\\\&^^\\\&^
+\\\&^\\\&\\\&\\\&J99999oro\\\&^^57
 end of race
 [/input]
 [output]
