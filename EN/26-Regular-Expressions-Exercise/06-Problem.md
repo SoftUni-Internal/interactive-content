@@ -1,6 +1,6 @@
 [slide]
 # Extract Emails
-[code-task title="Extract Emails" taskId="java-fundamentals-regex-6" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Extract Emails" taskId="java-fundamentals-regex-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
