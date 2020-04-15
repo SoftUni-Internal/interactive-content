@@ -67,7 +67,7 @@ When you receive "end of shift" **print the total amount of money** for the day 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 %George%<Croissant>\|2\|10.3\$
 %Peter%<Gum>\|1\|1.3\$
@@ -81,7 +81,7 @@ Maria: Cola - 2.40
 Total income: 24.30
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 %InvalidName%<Croissant>\|2\|10.3\$
 %Peter%<Gum>1.3\$
@@ -94,7 +94,7 @@ Valid: Valid - 200.00
 Total income: 200.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|1\|20.50\$
 end of shift
@@ -104,7 +104,7 @@ Name: Product - 20.50
 Total income: 20.50
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product2>\|1\|20.50\$
 end of shift
@@ -114,7 +114,7 @@ Name: Product2 - 20.50
 Total income: 20.50
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%valid<Product3>valid\|1\|20.80\$
 end of shift
@@ -124,7 +124,7 @@ Name: Product3 - 20.80
 Total income: 20.80
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|2\|20.50\$
 end of shift
@@ -134,7 +134,7 @@ Name: Product - 41.00
 Total income: 41.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|1\|20.50\$
 %Name%<Product>\|1\|9.50\$
@@ -146,7 +146,7 @@ Name: Product - 9.50
 Total income: 30.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|2\|10.3\$
 %Name%<Pro_duct>\|2\|10.3\$
@@ -158,7 +158,7 @@ Name: Pro_duct - 20.60
 Total income: 41.20
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|2\|10\$
 end of shift
@@ -168,7 +168,7 @@ Name: Product - 20.00
 Total income: 20.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%<Product>\|1\|30.10\$
 %Name%<Product>\|1.0\|10.10\$
@@ -181,7 +181,7 @@ Name: Product - 30.10
 Total income: 30.10
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%ho<Product>eins\|1\|10\$
 %Name%he<Product>zwei\|2\|10\$
@@ -195,7 +195,7 @@ Name: Product - 30.00
 Total income: 60.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 %Name%sorry for this test<><><><><Product><><>\|2\|10\$
 end of shift

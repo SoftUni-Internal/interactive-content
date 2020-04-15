@@ -40,7 +40,7 @@ Emails are considered to be in **format** \{user\}\@\{host\}, where:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Please contact us at: support@github.com.
 end
@@ -49,7 +49,7 @@ end
 support@github.com
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information.
 end
@@ -59,7 +59,7 @@ s.miller@mit.edu
 j.hopking@york.ac.uk
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Many users @ SoftUni confuse email addresses. We @ Softuni.BG provide high-quality training @ home or @ class. ?- steve.parker@softuni.de.
 end
@@ -68,7 +68,7 @@ end
 steve.parker@softuni.de
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Examples of valid emails: info@softuni-bulgaria.org, kiki@hotmail.co.uk, no-reply@github.com, s.peterson@mail.uu.net, info-bg@software-university.software.academy
 end

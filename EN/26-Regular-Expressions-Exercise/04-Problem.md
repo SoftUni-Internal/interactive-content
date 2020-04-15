@@ -81,11 +81,10 @@ We receive three messages.
 - The third message has key 5.
     - @Cantonica:3000!D!->4000NM
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 2
 STCDoghudd4=63333\$D\$0A53333
@@ -98,7 +97,7 @@ Destroyed planets: 1
 -> Cantonica
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3
 tt(''DGsvywgerx>6444444444%H%1B9444
@@ -112,7 +111,7 @@ Destroyed planets: 2
 -> Coruscant
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 @Khomm:100!D!->200
@@ -125,7 +124,7 @@ Destroyed planets: 2
 -> Lwhekk
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 GQhrr\|A977777(H(4E:777TTTT
@@ -138,7 +137,7 @@ Destroyed planets: 1
 -> Khomm
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 1
 STCDoghudd4=63333\$D\$0A53333
@@ -149,7 +148,7 @@ Attacked planets: 1
 Destroyed planets: 0
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 STCDoghudd4=63333\$D\$0A53333
@@ -162,7 +161,7 @@ Destroyed planets: 1
 -> Alderaaaa
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 3
 CWdwrrlqh&'(=533333\$D\$&'.0A633333
@@ -177,7 +176,7 @@ Destroyed planets: 1
 -> Coruscant
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 CWdwrrlqh&'(=533333\$D\$&'.0A433333
@@ -190,7 +189,7 @@ Attacked planets: 2
 Destroyed planets: 0
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 5
 TTBFciqdcj<722\#C\#/@622
@@ -209,7 +208,7 @@ Destroyed planets: 1
 -> Yavin
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 TTBFc\#iqdcj<722\#C\#/@622
@@ -220,7 +219,7 @@ Attacked planets: 0
 Destroyed planets: 0
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 3
 TBCnfgtccccp<422\#C\#/@322
@@ -233,7 +232,7 @@ Attacked planets: 1
 Destroyed planets: 0
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 5
 TTBFciqdcj\#C\#<722/@622

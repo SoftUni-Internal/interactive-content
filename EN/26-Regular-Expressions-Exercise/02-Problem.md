@@ -62,7 +62,7 @@ At the end **print the top 3 racers ordered by distance in descending** in the f
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 George, Peter, Bill, Tom
 G4e@55or%6g6!68e!!@
@@ -79,7 +79,6 @@ end of race
 3rd place: Tom
 [/output]
 [/test]
-[test open]
 [input]
 Gregory, Tom, Jerry, Christian, Bill
 G4r*&^\$\#ego%4^&4*ry
@@ -96,7 +95,7 @@ end of race
 3rd place: Gregory
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
 Mi*&^%\$ch123o!\#\$%\#nne787)
@@ -112,7 +111,7 @@ end of race
 3rd place: Bill
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
@@ -127,7 +126,7 @@ end of race
 3rd place: Rick
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
@@ -147,7 +146,7 @@ end of race
 3rd place: Negan
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Joro, George, Georgi, Stamat
 ^&^%^232St\#\$ama&&^^t

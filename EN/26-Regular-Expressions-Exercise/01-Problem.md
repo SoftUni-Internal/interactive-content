@@ -55,7 +55,7 @@ And **on the last line print** the following:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 >>Sofa<<312.23!3
 >>TV<<300!5
@@ -69,7 +69,6 @@ TV
 Total money spend: 2436.69
 [/output]
 [/test]
-[test open]
 [input]
 >>Televizor<<312.23!3
 >>Monitor<<300!5
@@ -86,7 +85,7 @@ Sink
 Total money spend: 4636.69
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 >Invalid<<!5
 >Invalid<<!5
@@ -98,7 +97,7 @@ Bought furniture:
 Total money spend: 0.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 >>Sofa<<316.12!10
 >>Couch<<31!12
@@ -114,7 +113,7 @@ Table
 Total money spend: 3905.20
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 >>Sofa<<312.23!3.66
 >>Sofa<<312.23!3.66
@@ -133,7 +132,7 @@ Sofa
 Total money spend: 4683.45
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 >>Laptop<<312.2323!3
 >>TV<<300.21314!5

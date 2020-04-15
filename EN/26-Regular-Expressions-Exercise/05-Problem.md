@@ -80,7 +80,7 @@ Sort them in **alphabetical order and print their names** along their **health a
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 M3ph-0.5s-0.5t0.0**
 [/input]
@@ -88,7 +88,7 @@ M3ph-0.5s-0.5t0.0**
 M3ph-0.5s-0.5t0.0** - 524 health, 8.00 damage
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 M3ph1st0**, Azazel
 [/input]
@@ -105,7 +105,7 @@ Gos/ho
 Gos/ho - 512 health, 0.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Leopold   ,    Merrie , Goldham,     Stephen   ,     Rodgers,Bob
 [/input]
@@ -118,7 +118,7 @@ Rodgers - 726 health, 0.00 damage
 Stephen - 727 health, 0.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 D0novan , P1er, Alfons000, Mav3r1ck   , Garf13ld33
 [/input]
@@ -130,7 +130,7 @@ Mav3r1ck - 612 health, 4.00 damage
 P1er - 295 health, 1.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 F3.0R0.3D0.5, K0.0TL1.1N, Z3R0.0303, F3RD1NAND
 [/input]
@@ -141,7 +141,7 @@ K0.0TL1.1N - 313 health, 1.10 damage
 Z3R0.0303 - 172 health, 3.03 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 F-3.0R3D0.5, K-0.0TL1.1N, Z3R-0.0303, F-3RD1NAND
 [/input]
@@ -152,7 +152,7 @@ K-0.0TL1.1N - 313 health, 1.10 damage
 Z3R-0.0303 - 172 health, 2.97 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 G0SH0  , P3.666SH-0.666, AP3.666SH0.666   , G0.056-0.56O65
 [/input]
@@ -163,7 +163,7 @@ G0SH0 - 226 health, 0.00 damage
 P3.666SH-0.666 - 235 health, 3.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 S/1M0.0***  , G3.3*6.66A*  , P360***/
 [/input]
@@ -173,7 +173,7 @@ P360***/ - 80 health, 1440.00 damage
 S/1M0.0*** - 160 health, 4.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 (232<***>232)  , ((-1.5)6.66\{>*/\|\*<\}6.66(-2.3)) , @\#\$%*********
 [/input]
@@ -183,7 +183,7 @@ S/1M0.0*** - 160 health, 4.00 damage
 @\#\$%********* - 172 health, 0.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 ***a/// , ***b///  , ***c///
 [/input]
@@ -193,7 +193,7 @@ S/1M0.0*** - 160 health, 4.00 damage
 ***c/// - 99 health, 0.00 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 912345678912.2**/-468.3a  , 0123456789.3*/b ,  0123456789.99999*/c
 [/input]
@@ -203,7 +203,7 @@ S/1M0.0*** - 160 health, 4.00 damage
 912345678912.2**/-468.3a - 97 health, 1824691356887.80 damage
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 1.1!@2.2\#\$3.999%^0.01&*(0.22)?0.3/* , d0.3r0.2o0.1b0.0, k0.0rab0.02a0.5*    ,      fr0002d0.2*/
 [/input]
