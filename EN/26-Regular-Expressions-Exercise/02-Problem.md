@@ -82,12 +82,12 @@ end of race
 [test]
 [input]
 Gregory, Tom, Jerry, Christian, Bill
-G4r\*&^\$\#ego%4^&4\*ry
-T\*&^%57)&%\$o^\*m6
-J&\*\*67e%&))rr&12\*3y
-J&\*\*22e%&))rr&44\*8y
-Ch&\*&\*^ri1s3t5ian
-L&\*&%666amar
+G4r\*\&^\$\#ego%4^\&4\*ry
+T\*\&^%57)\&%\$o^\*m6
+J\&\*\*67e%\&))rr\&12\*3y
+J\&\*\*22e%&))rr\&44\*8y
+Ch\&\*\&\*^ri1s3t5ian
+L\&\*\&%666amar
 end of race
 [/input]
 [output]
