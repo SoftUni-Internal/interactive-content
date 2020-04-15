@@ -79,6 +79,7 @@ end of race
 3rd place: Tom
 [/output]
 [/test]
+[test]
 [input]
 Gregory, Tom, Jerry, Christian, Bill
 G4r*&^\$\#ego%4^&4*ry

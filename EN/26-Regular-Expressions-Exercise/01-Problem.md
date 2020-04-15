@@ -69,6 +69,7 @@ TV
 Total money spend: 2436.69
 [/output]
 [/test]
+[test]
 [input]
 >>Televizor<<312.23!3
 >>Monitor<<300!5
