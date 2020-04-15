@@ -83,10 +83,10 @@ Total income: 24.30
 [/test]
 [test open]
 [input]
-%InvalidName%<Croissant>\|2\|10.3\$
-%Peter%<Gum>1.3\$
-%Maria%<Cola>\|1\|2.4
-%Valid%<Valid>valid\|10\|valid20\$
+%InvalidName%\<Croissant\>\|2\|10.3\$
+%Peter%\<Gum\>1.3\$
+%Maria%\<Cola\>\|1\|2.4
+%Valid%\<Valid\>valid\|10\|valid20\$
 end of shift
 [/input]
 [output]
@@ -96,7 +96,7 @@ Total income: 200.00
 [/test]
 [test]
 [input]
-%Name%<Product>\|1\|20.50\$
+%Name%\<Product\>\|1\|20.50\$
 end of shift
 [/input]
 [output]
@@ -106,7 +106,7 @@ Total income: 20.50
 [/test]
 [test]
 [input]
-%Name%<Product2>\|1\|20.50\$
+%Name%\<Product2\>\|1\|20.50\$
 end of shift
 [/input]
 [output]
@@ -116,7 +116,7 @@ Total income: 20.50
 [/test]
 [test]
 [input]
-%Name%valid<Product3>valid\|1\|20.80\$
+%Name%valid\<Product3\>valid\|1\|20.80\$
 end of shift
 [/input]
 [output]
@@ -126,7 +126,7 @@ Total income: 20.80
 [/test]
 [test]
 [input]
-%Name%<Product>\|2\|20.50\$
+%Name%\<Product\>\|2\|20.50\$
 end of shift
 [/input]
 [output]
@@ -136,8 +136,8 @@ Total income: 41.00
 [/test]
 [test]
 [input]
-%Name%<Product>\|1\|20.50\$
-%Name%<Product>\|1\|9.50\$
+%Name%\<Product\>\|1\|20.50\$
+%Name%\<Product\>\|1\|9.50\$
 end of shift
 [/input]
 [output]
@@ -148,8 +148,8 @@ Total income: 30.00
 [/test]
 [test]
 [input]
-%Name%<Product>\|2\|10.3\$
-%Name%<Pro_duct>\|2\|10.3\$
+%Name%\<Product\>\|2\|10.3\$
+%Name%\<Pro_duct\>\|2\|10.3\$
 end of shift
 [/input]
 [output]
@@ -160,7 +160,7 @@ Total income: 41.20
 [/test]
 [test]
 [input]
-%Name%<Product>\|2\|10\$
+%Name%\<Product\>\|2\|10\$
 end of shift
 [/input]
 [output]
@@ -170,9 +170,9 @@ Total income: 20.00
 [/test]
 [test]
 [input]
-%Name%<Product>\|1\|30.10\$
-%Name%<Product>\|1.0\|10.10\$
-%Name%<Product>\|1\|10.10
+%Name%\<Product\>\|1\|30.10\$
+%Name%\<Product\>\|1.0\|10.10\$
+%Name%\<Product\>\|1\|10.10
 %Name%Product\|1\|10.10\$
 end of shift
 [/input]
@@ -183,9 +183,9 @@ Total income: 30.10
 [/test]
 [test]
 [input]
-%Name%ho<Product>eins\|1\|10\$
-%Name%he<Product>zwei\|2\|10\$
-%Name%hi<Product>drei\|3\|10\$
+%Name%ho\<Product\>eins\|1\|10\$
+%Name%he\<Product\>zwei\|2\|10\$
+%Name%hi\<Product\>drei\|3\|10\$
 end of shift
 [/input]
 [output]
@@ -197,7 +197,7 @@ Total income: 60.00
 [/test]
 [test]
 [input]
-%Name%sorry for this test<><><><><Product><><>\|2\|10\$
+%Name%sorry for this test\<\>\<\>\<\>\<\>\<Product\>\<\>\<\>\|2\|10\$
 end of shift
 [/input]
 [output]
