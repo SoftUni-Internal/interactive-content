@@ -40,9 +40,9 @@ When you receive "end of shift" **print the total amount of money** for the day 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| %George%<Croissant>\|2\|10.3$ | George: Croissant - 20.60 |
-| %Peter%<Gum>\|1\|1.3$ | Peter: Gum - 1.30 |
-| %Maria%<Cola>\|1\|2.4$ | Maria: Cola - 2.40 |
+| %George%\<Croissant\>\|2\|10.3\$ | George: Croissant - 20.60 |
+| %Peter%\<Gum\>\|1\|1.3\$ | Peter: Gum - 1.30 |
+| %Maria%\<Cola\>\|1\|2.4\$ | Maria: Cola - 2.40 |
 | end of shift | Total income: 24.30 |
 
 ### Comments
