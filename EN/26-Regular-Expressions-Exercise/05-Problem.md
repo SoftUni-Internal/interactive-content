@@ -165,26 +165,6 @@ P3.666SH-0.666 - 235 health, 3.00 damage
 [/test]
 [test]
 [input]
-S/1M0.0***  , G3.3*6.66A*  , P360***/
-[/input]
-[output]
-G3.3*6.66A* - 136 health, 39.84 damage
-P360***/ - 80 health, 1440.00 damage
-S/1M0.0*** - 160 health, 4.00 damage
-[/output]
-[/test]
-[test]
-[input]
-(232<***>232)  , ((-1.5)6.66\{>*/\|\*<\}6.66(-2.3)) , @\#\$%*********
-[/input]
-[output]
-((-1.5)6.66\{>*/\|\*<\}6.66(-2.3)) - 829 health, 19.04 damage
-(232<***>232) - 203 health, 3712.00 damage
-@\#\$%********* - 172 health, 0.00 damage
-[/output]
-[/test]
-[test]
-[input]
 ***a/// , ***b///  , ***c///
 [/input]
 [output]
