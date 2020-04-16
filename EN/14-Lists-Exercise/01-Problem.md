@@ -1,5 +1,5 @@
 [slide]
-# Train
+# Problem: Train
 [code-task title="Train" taskId="java-fundamentals-lists-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

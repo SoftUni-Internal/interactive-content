@@ -1,5 +1,5 @@
 [slide]
-# Smallest of Three Numbers
+# Problem: Smallest of Three Numbers
 [code-task title="Smallest of Three Numbers" taskId="java-fundamentals-methods-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

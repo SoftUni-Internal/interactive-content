@@ -1,5 +1,5 @@
 [slide]
-# Parking
+# Problem: Parking
 [code-task title="Parking" taskId="java-fundamentals-assosiative-arrays-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

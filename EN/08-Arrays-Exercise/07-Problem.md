@@ -1,5 +1,5 @@
 [slide]
-# Max Sequence of Equal Elements
+# Problem: Max Sequence of Equal Elements
 [code-task title="Max Sequence of Equal Elements" taskId="java-fundamentals-arrays-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

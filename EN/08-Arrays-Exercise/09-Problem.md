@@ -1,5 +1,5 @@
 [slide]
-# Kamino Factory
+# Problem: Kamino Factory
 [code-task title="Kamino Factory" taskId="java-fundamentals-arrays-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

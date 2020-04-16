@@ -1,5 +1,5 @@
 [slide]
-# Character Multiplier
+# Problem: Character Multiplier
 [code-task title="Character Multiplier" taskId="java-fundamentals-text-processing-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

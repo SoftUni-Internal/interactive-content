@@ -1,5 +1,5 @@
 [slide]
-# Articles 2.0
+# Problem: Articles 2.0
 [code-task title="Articles 2.0" taskId="java-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

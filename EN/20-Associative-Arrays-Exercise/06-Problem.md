@@ -1,5 +1,5 @@
 [slide]
-# Courses
+# Problem: Courses
 [code-task title="Courses" taskId="java-fundamentals-assosiative-arrays-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

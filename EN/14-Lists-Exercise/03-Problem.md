@@ -1,5 +1,5 @@
 [slide]
-# House Party
+# Problem: House Party
 [code-task title="House Party" taskId="java-fundamentals-lists-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

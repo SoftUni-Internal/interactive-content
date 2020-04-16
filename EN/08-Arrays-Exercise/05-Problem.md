@@ -1,5 +1,5 @@
 [slide]
-# Top Integers
+# Problem: Top Integers
 [code-task title="Top Integers" taskId="java-fundamentals-arrays-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

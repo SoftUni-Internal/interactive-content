@@ -1,5 +1,5 @@
 [slide]
-# Count Chars in a String
+# Problem: Count Chars in a String
 [code-task title="Count Chars in a String" taskId="java-fundamentals-assosiative-arrays-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

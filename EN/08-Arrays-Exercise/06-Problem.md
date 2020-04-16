@@ -1,5 +1,5 @@
 [slide]
-# Equal Sums
+# Problem: Equal Sums
 [code-task title="Equal Sums" taskId="java-fundamentals-arrays-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
