@@ -31,7 +31,7 @@ String name = sc.nextLine();
 ## Converting Input from the Console
 As you know **scanner.nextLine()** returns a **String**, if we want **Integer** input we have to convert the string to number by **parsing**:
 
-```java
+```java live
 import java.util.Scanner;
 …
 Scanner sc = new Scanner(System.in);
@@ -47,8 +47,9 @@ We can print to the console, using the System class:
 
 ### Example
 ```java live
+Scanner sc = new Scanner(System.in);
 System.out.print("Name: ");
-String name = scanner.nextLine();
+String name = sc.nextLine();
 System.out.println("Hi, " + name);
 ```
 
