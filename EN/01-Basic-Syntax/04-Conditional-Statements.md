@@ -50,7 +50,7 @@ if (grade >= 3.00) {
 
 [slide]
 # Problem: Back in 30 Minutes
-[code-task title="Back in 30 Minutes" taskId="java-fundamentals-Basic-Syntax-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Back in 30 Minutes" taskId="java-fundamentals-basic-syntax-lesson-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -405,7 +405,7 @@ This is how it works:
 
 [slide]
 # Problem Month Printer
-[code-task title="Month Printer" taskId="java-fundamentals-Basic-Syntax-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Month Printer" taskId="java-fundamentals-basic-syntax-lesson-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -618,7 +618,7 @@ Error!
 
 [slide]
 # Problem: Foreign Languages
-[code-task title="Foreign Languages" taskId="java-fundamentals-Basic-Syntax-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Foreign Languages" taskId="java-fundamentals-basic-syntax-lesson-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 import java.util.Scanner;
