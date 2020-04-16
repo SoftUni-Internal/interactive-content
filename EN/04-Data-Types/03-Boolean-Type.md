@@ -1,4 +1,0 @@
-[slide]
-# Boolen Type
-
-[/slide]

@@ -1,5 +1,0 @@
-[slide]
-# Type Conversion
-
-
-[/slide]
