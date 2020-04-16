@@ -23,14 +23,14 @@ Valid types are **float**, **double**:
 
 |Type | Min Value | Max Value| Size | Precision |
 |-----|------|-----|------|-----|
-| float | ±1.5 x (10<sup>-45</sup>) | ±3.4 x (10<sup>38</sup>) | 32 bit | up to 7 digits |
-| double | ±5.0 x (10<sup>-324</sup>) | ±1.7 x (10<sup>308</sup>) | 64 bit | up to 16 digits |
+| float | ±1.5 x (10 ^ -45) | ±3.4 x (10 ^ 38) | 32 bit | up to 7 digits |
+| double | ±5.0 x (10 ^ -324) | ±1.7 x (10 ^ 308) | 64 bit | up to 16 digits |
 
 ## Examples
 
 ### Float
 
-The **float** data type can store fractional numbers from ±1.5 x (10<sup>-45</sup>) to ±3.4 x (10<sup>38</sup>).
+The **float** data type can store fractional numbers from ±1.5 x (10 ^ -45) to ±3.4 x (10 ^ 38).
 
 Note that you should end the value with an `f`:
 
@@ -40,7 +40,7 @@ System.out.println(myNum);
 ```
 
 ### Double
-The **double** data type can store fractional numbers from ±5.0 x (10<sup>-324</sup>) to ±1.7 x (10<sup>308</sup>).
+The **double** data type can store fractional numbers from ±5.0 x (10 ^ -324) to ±1.7 x (10 ^ 308).
 
 Note that you should end the value with a `d`:
 

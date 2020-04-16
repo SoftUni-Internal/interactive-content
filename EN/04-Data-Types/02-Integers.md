@@ -170,7 +170,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int meters = Integer.parseInt(scanner.nextLine());
-        double kilometers = meters / 1000 d;
+        double kilometers = meters / 1000.0;
 
         System.out.println(String.format("%.2f", kilometers));
     }
