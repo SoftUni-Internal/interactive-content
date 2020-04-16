@@ -1,5 +1,5 @@
 [slide]
-# Parking
+# Problem: Parking
 [code-task title="Parking" taskId="python-fundamentals-assosiative-arrays-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

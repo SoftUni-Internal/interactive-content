@@ -1,5 +1,5 @@
 [slide]
-# Opinion Poll
+# Problem: Opinion Poll
 [code-task title="Opinion Poll" taskId="python-fundamentals-objects-and-classes-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

@@ -1,5 +1,5 @@
 [slide]
-# Valid Usernames
+# Problem: Valid Usernames
 [code-task title="Valid Usernames" taskId="python-fundamentals-text-processing-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

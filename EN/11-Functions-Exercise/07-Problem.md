@@ -1,5 +1,5 @@
 [slide]
-# NxN Matrix
+# Problem: NxN Matrix
 [code-task title="NxN Matrix" taskId="python-fundamentals-methods-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```

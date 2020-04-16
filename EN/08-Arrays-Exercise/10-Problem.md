@@ -1,5 +1,5 @@
 [slide]
-# LadyBugs
+# Problem: LadyBugs
 [code-task title="LadyBugs" taskId="python-fundamentals-arrays-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

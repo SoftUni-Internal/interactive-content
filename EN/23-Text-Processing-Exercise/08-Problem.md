@@ -1,5 +1,5 @@
 [slide]
-# Letters Change Numbers
+# Problem: Letters Change Numbers
 [code-task title="Letters Change Numbers" taskId="python-fundamentals-text-processing-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

@@ -1,5 +1,5 @@
 [slide]
-# Max Sequence of Equal Elements
+# Problem: Max Sequence of Equal Elements
 [code-task title="Max Sequence of Equal Elements" taskId="python-fundamentals-arrays-7" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

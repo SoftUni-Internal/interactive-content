@@ -1,5 +1,5 @@
 [slide]
-# Vowels Count
+# Problem: Vowels Count
 [code-task title="Vowels Count" taskId="python-fundamentals-methods-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```

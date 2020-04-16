@@ -1,5 +1,5 @@
 [slide]
-# Vehicle Catalogue
+# Problem: Vehicle Catalogue
 [code-task title="Vehicle Catalogue" taskId="python-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

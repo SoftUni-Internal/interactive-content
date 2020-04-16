@@ -1,5 +1,5 @@
 [slide]
-# Extract File
+# Problem: Extract File
 [code-task title="Extract File" taskId="python-fundamentals-text-processing-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

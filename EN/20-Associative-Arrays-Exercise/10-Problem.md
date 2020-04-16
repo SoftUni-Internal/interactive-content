@@ -1,5 +1,5 @@
 [slide]
-# SoftUni Course Planning
+# Problem: SoftUni Course Planning
 [code-task title="SoftUni Course Planning" taskId="python-fundamentals-assosiative-arrays-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

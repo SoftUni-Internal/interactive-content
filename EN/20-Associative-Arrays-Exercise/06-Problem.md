@@ -1,5 +1,5 @@
 [slide]
-# Courses
+# Problem: Courses
 [code-task title="Courses" taskId="python-fundamentals-assosiative-arrays-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

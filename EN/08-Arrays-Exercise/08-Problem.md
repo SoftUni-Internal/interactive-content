@@ -1,5 +1,5 @@
 [slide]
-# Magic Sum
+# Problem: Magic Sum
 [code-task title="Magic Sum" taskId="python-fundamentals-arrays-8" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
 ```

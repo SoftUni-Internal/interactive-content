@@ -1,5 +1,5 @@
 [slide]
-# Middle Characters
+# Problem: Middle Characters
 [code-task title="Middle Characters" taskId="python-fundamentals-methods-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]
 ```
