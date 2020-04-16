@@ -24,8 +24,8 @@ They return a boolean value and compare boolean values.
 
 * **Logical NOT**
 ```java live
-    int x = 5;
-    System.out.println(!(x > 3 && x < 10)); 
+int x = 5;
+System.out.println(!(x > 3 && x < 10)); 
 ```
 In that example the result is false because ! (not) is used to reverse the result.
 
