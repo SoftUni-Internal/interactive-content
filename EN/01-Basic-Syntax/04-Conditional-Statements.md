@@ -372,18 +372,6 @@ That way he will not have to wait on the desk and come at the appropriate time. 
 [/code-task]
 [/slide]
 
-# The Switch-Case Statement
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="4110" endTimeInSeconds="4779"]
-[stream language="EN" videoId="341582556" default /]
-[stream language="RO" videoId="388314290"  /]
-[/vimeo-video]
-
-[/slide]
-
 [slide]
 # The Switch-Case Statement
 The switch-case condition works as a sequence of **if-else** blocks. 
