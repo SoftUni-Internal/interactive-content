@@ -20,6 +20,7 @@ In programming we often **check particular conditions** and perform various acti
 Take as an input a grade and check if the student has passed the exam (grade >= 3.00).
 
 ```java live
+Scanner sc = new Scanner(System.in);
 double grade = Double.parseDouble(sc.nextLine());
 if (grade >= 3.00) {
    System.out.println("Passed!");
@@ -40,6 +41,9 @@ Upgrade the last example, so it prints "Failed!", if the mark is lower than 3.00
 
 As you can see now we have another case, which will be executed when the condition in the `if` statement turns out **false**.
 ```java live
+Scanner sc = new Scanner(System.in);
+
+double grade = Double.parseDouble(sc.nextLine());
 if (grade >= 3.00) {
    System.out.println("Passed!");
 } else {
@@ -382,7 +386,7 @@ It is being used for **choosing between a list of possibilities**.
 
 The statement compares a given value with defined constants and depending on the result, it takes an action.
 
-```java live
+```java
 switch(expression) {
   case x:
     // code block
@@ -394,14 +398,44 @@ switch(expression) {
     // code block
 }
 ```
+
+```java live
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+  default:
+    System.out.println("Error");
+    break;
+}
+```
+
 This is how it works:
 * The switch expression is evaluated once.
 * The value of the expression is compared with the values of each case.
 * If there is a match, the associated block of code is executed.
-* The break and default keywords are optional, and will be described later in this chapter
+* The break and `default` keywords are optional, and will be described later in this lesson.
 
 [/slide]
-
 
 [slide]
 # Problem Month Printer
@@ -620,7 +654,7 @@ Error!
 # Problem: Foreign Languages
 [code-task title="Foreign Languages" taskId="java-fundamentals-basic-syntax-lesson-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -628,7 +662,7 @@ public class Main {
         // Write your code here
     }
 }
-
+```
 [/code-editor]
 [task-description]
 ## Description
@@ -711,7 +745,7 @@ unknown
 # Solution Foreign Languages
 [code-task title="Foreign Languages" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -733,7 +767,7 @@ public class Main {
   }
  }
 }
-
+```
 [/code-editor]
 [task-description]
 ## Description
