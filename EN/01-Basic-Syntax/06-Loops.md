@@ -41,7 +41,7 @@ You can use `fori` live template in Intellij, using `fori` push \[Tab\] twice.
 [/slide]
 
 [slide]
-# Problem Divisible by 3
+# Problem: Divisible by 3
 [code-task title="Divisible by 3" taskId="java-fundamentals-basic-syntax-lesson-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -66,7 +66,6 @@ The program should not receive input.
 [tests]
 [test]
 [input]
-
 [/input]
 [output]
 3
@@ -108,6 +107,74 @@ The program should not receive input.
 [/code-task]
 [/slide]
 
+[slide]
+# Solution: Divisible by 3
+[code-task title="Divisible by 3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      for (int i = 3; i <= 100; i += 3) {
+        System.out.println(i);  
+      }
+  }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program, which prints all the numbers from **1 to 100**, which are **divisible by 3**.
+
+You have to use a single **for** loop.
+
+The program should not receive input.
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+[/input]
+[output]
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+51
+54
+57
+60
+63
+66
+69
+72
+75
+78
+81
+84
+87
+90
+93
+96
+99
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 
 [slide]
 # Problem Sum of Odd Numbers
@@ -392,6 +459,20 @@ The while loop looks like this:
 while (condition) {
   //loop body;
 }
+```
+
+```java live
+Scanner sc = new Scanner(System.in);
+String correctWord = sc.nextLine();
+int failedAttempts = 0;
+
+String guessWord = sc.nextLine();
+while(!guessWord.equals(correctWord)) {
+    failedAttempts += 1;
+    correctWord = sc.nextLine();
+}
+
+System.out.println(failedAttempts);
 ```
 
 In the code example above, condition is any **expression that returns a Boolean result** – `true` or `false`. 
