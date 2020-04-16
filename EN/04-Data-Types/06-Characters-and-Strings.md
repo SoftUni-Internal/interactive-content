@@ -110,7 +110,7 @@ $
 $
 [/input]
 [output]
-$ % $
+$ \% $
 [/output]
 [/test]
 [test]
@@ -229,7 +229,7 @@ $
 $
 [/input]
 [output]
-$ % $
+$ \% $
 [/output]
 [/test]
 [test]

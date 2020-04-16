@@ -187,7 +187,7 @@ Write a program that converts **British pounds** to **US dollars** formatted to 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 80
 [/input]
@@ -300,7 +300,7 @@ System.out.printf("a+b=%f sum=%f equal=%b", a+b, sum, (a + b == sum));
 double num = 0;
 
 for (int i = 0; i < 10000; i++) {
-num += 0.0001;
+    num += 0.0001;
 }
 
 System.out.println(num); 
@@ -312,20 +312,19 @@ Java includes a `BigDecimal` class for performing high-precision arithmetic whic
 This class approximately fit into the same category as the `wrapper` classes but has some very useful methods.
 
 ```java live
-BigDecimal number = new BigDecimal(0); 
+BigDecimal number = new BigDecimal(0);
 number = number.add(BigDecimal.valueOf(2.5));
-System.out.printf(number)
+System.out.println(number);
 
 number = number.subtract(BigDecimal.valueOf(1.5));
-System.out.printf(number)
+System.out.println(number);
 
 number = number.multiply(BigDecimal.valueOf(2));
-System.out.printf(number)
+System.out.println(number);
 
 number = number.divide(BigDecimal.valueOf(2));
-System.out.printf(number)
+System.out.println(number);
 ```
-
 [/slide]
 
 [slide]
@@ -477,7 +476,6 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 | 2 | 333333333333.30000000003 |
 | 0.00000000003 | |
 | 333333333333.3 |  |
-
 
 [/task-description]
 [code-io /]

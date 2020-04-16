@@ -71,7 +71,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 15
 [/input]
@@ -280,9 +280,7 @@ public class SpecialNumbers {
             } else {
                 System.out.printf("%d -> False%n", i);
             }
-
         }
-
     }
 }
 ```
@@ -321,7 +319,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 15
 [/input]
