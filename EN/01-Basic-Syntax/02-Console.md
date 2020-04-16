@@ -79,8 +79,8 @@ We can format floating point number with certain digits after the decimal point 
 ```java live
 int percentage = 55;
 double grade = 5.5334;
-System.out.printf("%03d", percentage);
-System.out.printf("%.2f", grade);
+System.out.printf("%03d%n", percentage);
+System.out.printf("%.2f%n", grade);
 ```
 * In that example we have two numbers **int** `55` and **double** `5.5334`.
 * On the last two lines we use `%03d` to format first number to `055`, and we use `%.2f` to format second number to `5.53`.
@@ -102,7 +102,7 @@ System.out.println(result);
 
 
 [slide]
-# Student Information
+# Problem: Student Information
 [code-task title="Student Information" taskId="java-fundamentals-basic-syntax-lesson-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -218,8 +218,8 @@ public class Main {
  public static void main(String[] args) {
   Scanner scanner = new Scanner(System.in);
   String name = scanner.nextLine();
-  int age = Integer.valueOf(scanner.nextLine());
-  double grade = Double.valueOf(scanner.nextLine());
+  int age = Integer.parseInt(scanner.nextLine());
+  double grade = Double.parseDouble(scanner.nextLine());
 
   System.out.printf("Name: %s, Age: %d, Grade: %.2f", name, age, grade);
  }
