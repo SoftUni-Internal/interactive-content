@@ -467,9 +467,9 @@ String correctWord = sc.nextLine();
 int failedAttempts = 0;
 
 String guessWord = sc.nextLine();
-while(!guessWord.equals(correctWord)) {
+while (!guessWord.equals(correctWord)) {
     failedAttempts += 1;
-    correctWord = sc.nextLine();
+    guessWord = sc.nextLine();
 }
 
 System.out.println(failedAttempts);
@@ -489,7 +489,7 @@ All this is repeated again and again **until at some point the conditional expre
 [/slide]
 
 [slide]
-# Problem Multiplication Table
+# Problem: Multiplication Table
 [code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -636,7 +636,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 [/slide]
 
 [slide]
-# Solution Multiplication Table
+# Solution: Multiplication Table
 [code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -817,7 +817,7 @@ This process repeats until the given condition becomes false.
 [/slide]
 
 [slide]
-# Problem Multiplication Table 2.0
+# Problem: Multiplication Table 2.0
 [code-task title="Multiplication Table 2.0" taskId="java-fundamentals-basic-syntax-lesson-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -967,7 +967,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 [/slide]
 
 [slide]
-# Solution Multiplication Table 2.0
+# Solution: Multiplication Table 2.0
 [code-task title="Multiplication Table 2.0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

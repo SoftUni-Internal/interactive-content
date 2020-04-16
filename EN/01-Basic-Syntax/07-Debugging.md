@@ -30,7 +30,7 @@ With `[Ctrl + F8]` we create the so-called breakpoints, that we can reach direct
 [/slide]
 
 [slide]
-# Problem Refactor Sum of Odd Numbers
+# Problem: Refactor Sum of Odd Numbers
 [code-task title="Refactor Sum of Odd Numbers" taskId="java-fundamentals-basic-syntax-lesson-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -171,23 +171,23 @@ Sum: 64
 
 
 [slide]
-# Solution Refactor Sum of Odd Numbers
+# Solution: Refactor Sum of Odd Numbers
 [code-task title="Refactor Sum of Odd Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner sc = new Scanner(System.in);
-  int sum = 0;
-  int first = Integer.parseInt(sc.nextLine());
-  int second = Integer.parseInt(sc.nextLine());
-  for (int i = first; i <= second; i++) {
-   sum += i;
-  }
-  System.out.println(sum);
- }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.println(2 * i + 1);
+            sum += 2 * i + 1;
+        }
+        System.out.printf("Sum: %d%n", sum);
+    }
 }
 ```
 [/code-editor]
