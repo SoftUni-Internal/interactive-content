@@ -29,7 +29,7 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 
 [slide]
 # Problem: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-data-types-lesson-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -339,7 +339,7 @@ System.out.printf("Your full name is %s.", fullName);
 
 [slide]
 # Problem: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fundamentals-Data-Types-and-Variables-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Concat Names" taskId="java-fundamentals-data-types-lesson-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

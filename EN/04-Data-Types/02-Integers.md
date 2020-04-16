@@ -70,7 +70,7 @@ System.out.println(myNum);
 
 [slide]
 # Problem: Convert Meters to Kilometers
-[code-task title="Convert Meters to Kilometers" taskId="java-fundamentals-Data-Types-and-Variables-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Convert Meters to Kilometers" taskId="java-fundamentals-data-types-lesson-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

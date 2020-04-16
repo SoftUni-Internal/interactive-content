@@ -25,7 +25,7 @@ System.out.println(isPositive);
 
 [slide]
 # Problem: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fundamentals-data-types-lesson-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
