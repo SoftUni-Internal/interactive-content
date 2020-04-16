@@ -242,7 +242,7 @@ Sum: 64
 
 [slide]
 # Solution Sum of Odd Numbers
-[code-task title="Sum of Odd Numbers" taskId="java-fundamentals-Basic-Syntax-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Odd Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -887,7 +887,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 
 [slide]
 # Solution Multiplication Table 2.0
-[code-task title="Multiplication Table 2.0" taskId="java-fundamentals-Basic-Syntax-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiplication Table 2.0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

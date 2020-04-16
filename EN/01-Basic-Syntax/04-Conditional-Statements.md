@@ -17,7 +17,7 @@ One of the single most important statements in every programming language is the
 In programming we often **check particular conditions** and perform various actions depending on the result of the check. 
 
 # Example: 
-Take as an input a grade and check if the student has passed the exam (grade >= 3.00).
+Take as an input a grade and check if the student has passed the exam (grade >= 3.00).
 
 ```java live
 double grade = Double.parseDouble(sc.nextLine());
@@ -205,7 +205,7 @@ That way he will not have to wait on the desk and come at the appropriate time. 
 
 [slide]
 # Solution: Back in 30 Minutes
-[code-task title="Back in 30 Minutes" taskId="java-fundamentals-Basic-Syntax-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Back in 30 Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -490,7 +490,7 @@ Error!
 
 [slide]
 # Solution Month Printer
-[code-task title="Month Printer" taskId="java-fundamentals-Basic-Syntax-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Month Printer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -709,7 +709,7 @@ unknown
 
 [slide]
 # Solution Foreign Languages
-[code-task title="Foreign Languages" taskId="java-fundamentals-Basic-Syntax-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Foreign Languages" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 import java.util.Scanner;

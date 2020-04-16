@@ -220,7 +220,7 @@ Holiday
 
 [slide]
 # Solution Theatre Promotions
-[code-task title="Theatre Promotions" taskId="java-fundamentals-Basic-Syntax-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Theatre Promotions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

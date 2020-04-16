@@ -172,7 +172,7 @@ Sum: 64
 
 [slide]
 # Solution Refactor Sum of Odd Numbers
-[code-task title="Refactor Sum of Odd Numbers" taskId="java-fundamentals-Basic-Syntax-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Refactor Sum of Odd Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

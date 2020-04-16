@@ -208,7 +208,7 @@ Name: John, Age: 18, Grade: 5.40
 
 [slide]
 # Solution: Student Information
-[code-task title="Student Information" taskId="java-fundamentals-Basic-Syntax-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Student Information" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
