@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Race
 [code-task title="Race" taskId="java-fundamentals-regex-2" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
 [code-editor language=java]

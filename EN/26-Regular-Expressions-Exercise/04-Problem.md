@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Star Enigma
 [code-task title="Star Enigma" taskId="java-fundamentals-regex-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

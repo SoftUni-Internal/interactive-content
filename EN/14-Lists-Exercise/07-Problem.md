@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Append Arrays
 [code-task title="Append Arrays" taskId="java-fundamentals-lists-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Students
 [code-task title="Students" taskId="java-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

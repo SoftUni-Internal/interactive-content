@@ -23,7 +23,7 @@ System.out.println(isPositive);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Special Numbers
 [code-task title="Problem: Special Numbers" taskId="java-fundamentals-data-types-lesson-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -257,7 +257,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Special Numbers
 [code-task title="Problem: Special Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

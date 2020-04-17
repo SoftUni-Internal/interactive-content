@@ -45,7 +45,7 @@ In that example the result is true because one of the conditions are true (5 is 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem Theatre Promotions
 [code-task title="Theatre Promotions" taskId="java-fundamentals-basic-syntax-lesson-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

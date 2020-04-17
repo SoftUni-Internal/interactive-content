@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Array Rotation
 [code-task title="Array Rotation" taskId="java-fundamentals-arrays-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

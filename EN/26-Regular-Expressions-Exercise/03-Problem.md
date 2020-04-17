@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Bar Income
 [code-task title="Bar Income" taskId="java-fundamentals-regex-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

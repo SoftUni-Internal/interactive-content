@@ -67,7 +67,7 @@ System.out.println("Double PI is: " + doublePI);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Pounds to Dollars
 [code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-data-types-lesson-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -156,7 +156,7 @@ Write a program that converts **British pounds** to **US dollars** formatted to 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Pounds to Dollars
 [code-task title="Problem: Pounds to Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -327,7 +327,7 @@ System.out.println(number);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Exact Sum of Real Numbers
 [code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-data-types-lesson-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -435,7 +435,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Exact Sum of Real Numbers
 [code-task title="Problem: Exact Sum of Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

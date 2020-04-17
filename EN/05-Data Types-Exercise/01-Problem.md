@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Integer Operations
 [code-task title="Integer Operations" taskId="JF-02-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Palindrome Integers
 [code-task title="Palindrome Integers" taskId="java-fundamentals-methods-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

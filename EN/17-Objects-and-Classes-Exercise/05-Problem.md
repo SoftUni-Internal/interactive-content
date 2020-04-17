@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Vehicle Catalogue
 [code-task title="Vehicle Catalogue" taskId="java-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

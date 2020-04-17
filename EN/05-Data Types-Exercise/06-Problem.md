@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="JF-02-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

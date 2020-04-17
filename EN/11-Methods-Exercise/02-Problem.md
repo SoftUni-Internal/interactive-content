@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Vowels Count
 [code-task title="Vowels Count" taskId="java-fundamentals-methods-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

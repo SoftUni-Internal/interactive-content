@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Beer Kegs
 [code-task title="Beer Kegs" taskId="JF-02-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

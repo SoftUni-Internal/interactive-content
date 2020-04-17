@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Spice Must Flow
 [code-task title="Spice Must Flow" taskId="JF-02-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

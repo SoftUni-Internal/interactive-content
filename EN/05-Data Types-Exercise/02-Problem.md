@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Sum Digits
 [code-task title="Sum Digits" taskId="JF-02-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

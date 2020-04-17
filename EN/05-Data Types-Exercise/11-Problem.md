@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Snowballs
 [code-task title="Snowballs" taskId="JF-02-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

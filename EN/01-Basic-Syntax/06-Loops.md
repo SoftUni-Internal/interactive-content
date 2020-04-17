@@ -40,7 +40,7 @@ for (int i = 0; i < 5; i++) {
 You can use `fori` live template in Intellij, using `fori` push \[Tab\] twice.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Divisible by 3
 [code-task title="Divisible by 3" taskId="java-fundamentals-basic-syntax-lesson-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -107,7 +107,7 @@ The program should not receive input.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Divisible by 3
 [code-task title="Divisible by 3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -176,7 +176,7 @@ The program should not receive input.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem Sum of Odd Numbers
 [code-task title="Sum of Odd Numbers" taskId="java-fundamentals-basic-syntax-lesson-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -488,7 +488,7 @@ Then again the input condition is checked and if it is `true` again, the body of
 All this is repeated again and again **until at some point the conditional expression returns value** `false`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Multiplication Table
 [code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -635,7 +635,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Multiplication Table
 [code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -816,7 +816,7 @@ If the condition is true, the flow of control jumps back up to `do`, and the sta
 This process repeats until the given condition becomes false.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Multiplication Table 2.0
 [code-task title="Multiplication Table 2.0" taskId="java-fundamentals-basic-syntax-lesson-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -966,7 +966,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Multiplication Table 2.0
 [code-task title="Multiplication Table 2.0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

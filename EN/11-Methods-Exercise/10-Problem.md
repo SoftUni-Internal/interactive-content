@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Top Number
 [code-task title="Top Number" taskId="java-fundamentals-methods-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

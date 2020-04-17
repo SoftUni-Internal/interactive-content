@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Vending Machine
 [code-task title="Vending Machine" taskId="JF-01-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

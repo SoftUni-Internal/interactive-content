@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: LadyBugs
 [code-task title="LadyBugs" taskId="java-fundamentals-arrays-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

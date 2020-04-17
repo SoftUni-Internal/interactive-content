@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Cards Game
 [code-task title="Cards Game" taskId="java-fundamentals-lists-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

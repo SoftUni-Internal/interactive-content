@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Strong Number
 [code-task title="Strong Number" taskId="JF-01-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

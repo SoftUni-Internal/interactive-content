@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Padawan Equipment
 [code-task title="Padawan Equipment" taskId="JF-01-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

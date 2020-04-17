@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Student Academy
 [code-task title="Student Academy" taskId="java-fundamentals-assosiative-arrays-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

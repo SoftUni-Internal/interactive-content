@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Factorial Division
 [code-task title="Factorial Division" taskId="java-fundamentals-methods-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

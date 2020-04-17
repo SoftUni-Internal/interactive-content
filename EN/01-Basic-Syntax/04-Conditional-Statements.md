@@ -52,7 +52,7 @@ if (grade >= 3.00) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Back in 30 Minutes
 [code-task title="Back in 30 Minutes" taskId="java-fundamentals-basic-syntax-lesson-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -207,7 +207,7 @@ That way he will not have to wait on the desk and come at the appropriate time. 
 
 
 
-[slide]
+[slide hideTitle]
 # Solution: Back in 30 Minutes
 [code-task title="Back in 30 Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -437,7 +437,7 @@ This is how it works:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem Month Printer
 [code-task title="Month Printer" taskId="java-fundamentals-basic-syntax-lesson-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -650,7 +650,7 @@ Error!
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Foreign Languages
 [code-task title="Foreign Languages" taskId="java-fundamentals-basic-syntax-lesson-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

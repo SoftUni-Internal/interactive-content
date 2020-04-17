@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Password Validator
 [code-task title="Password Validator" taskId="java-fundamentals-methods-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

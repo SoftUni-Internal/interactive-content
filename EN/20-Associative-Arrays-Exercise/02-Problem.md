@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: A Miner Task
 [code-task title="A Miner Task" taskId="java-fundamentals-assosiative-arrays-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

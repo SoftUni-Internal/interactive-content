@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Extract File
 [code-task title="Extract File" taskId="java-fundamentals-text-processing-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

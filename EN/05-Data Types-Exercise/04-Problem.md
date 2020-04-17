@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Sum of Chars
 [code-task title="Sum of Chars" taskId="JF-02-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

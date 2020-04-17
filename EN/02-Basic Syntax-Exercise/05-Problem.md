@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Login
 [code-task title="Login" taskId="JF-01-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

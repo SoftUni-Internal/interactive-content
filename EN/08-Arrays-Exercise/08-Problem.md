@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Magic Sum
 [code-task title="Magic Sum" taskId="java-fundamentals-arrays-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

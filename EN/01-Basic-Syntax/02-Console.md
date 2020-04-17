@@ -101,7 +101,7 @@ System.out.println(result);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Student Information
 [code-task title="Student Information" taskId="java-fundamentals-basic-syntax-lesson-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -207,7 +207,7 @@ Name: John, Age: 18, Grade: 5.40
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Student Information
 [code-task title="Student Information" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
