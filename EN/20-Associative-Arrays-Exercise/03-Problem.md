@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Legendary Farming
 [code-task title="Legendary Farming" taskId="python-fundamentals-assosiative-arrays-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

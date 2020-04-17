@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Snowballs
 [code-task title="Snowballs" taskId="PF-02-11" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

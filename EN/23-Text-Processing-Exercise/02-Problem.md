@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Character Multiplier
 [code-task title="Character Multiplier" taskId="python-fundamentals-text-processing-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

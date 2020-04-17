@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Replace Repeating Chars
 [code-task title="Replace Repeating Chars" taskId="python-fundamentals-text-processing-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

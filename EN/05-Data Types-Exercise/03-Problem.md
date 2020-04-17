@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Elevator
 [code-task title="Elevator" taskId="PF-02-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

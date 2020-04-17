@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Characters in Range
 [code-task title="Characters in Range" taskId="python-fundamentals-methods-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]

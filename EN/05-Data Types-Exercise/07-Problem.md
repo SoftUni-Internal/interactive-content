@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Water Overflow
 [code-task title="Water Overflow" taskId="PF-02-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

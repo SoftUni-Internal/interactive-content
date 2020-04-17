@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Equal Sums
 [code-task title="Equal Sums" taskId="python-fundamentals-arrays-6" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

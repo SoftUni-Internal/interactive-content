@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Factorial Division
 [code-task title="Factorial Division" taskId="python-fundamentals-methods-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]

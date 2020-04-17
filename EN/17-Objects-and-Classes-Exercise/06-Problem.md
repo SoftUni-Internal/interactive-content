@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Person ID
 [code-task title="Person ID" taskId="python-fundamentals-objects-and-classes-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

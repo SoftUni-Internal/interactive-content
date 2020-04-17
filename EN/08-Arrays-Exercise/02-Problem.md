@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Common Elements
 [code-task title="Common Elements" taskId="python-fundamentals-arrays-2" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

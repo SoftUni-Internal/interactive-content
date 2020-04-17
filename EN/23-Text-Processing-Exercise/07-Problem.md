@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: String Explosion
 [code-task title="String Explosion" taskId="python-fundamentals-text-processing-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="PF-02-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

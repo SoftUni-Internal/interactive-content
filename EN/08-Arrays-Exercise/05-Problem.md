@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Top Integers
 [code-task title="Top Integers" taskId="python-fundamentals-arrays-5" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

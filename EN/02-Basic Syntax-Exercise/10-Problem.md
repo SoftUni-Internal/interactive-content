@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Rage Expenses
 [code-task title="Rage Expenses" taskId="JF-01-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

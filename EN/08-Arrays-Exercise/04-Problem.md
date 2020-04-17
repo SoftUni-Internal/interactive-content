@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Array Rotation
 [code-task title="Array Rotation" taskId="python-fundamentals-arrays-4" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Cards Game
 [code-task title="Cards Game" taskId="python-fundamentals-lists-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

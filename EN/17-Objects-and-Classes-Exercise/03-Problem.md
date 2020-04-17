@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Articles 2.0
 [code-task title="Articles 2.0" taskId="python-fundamentals-objects-and-classes-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

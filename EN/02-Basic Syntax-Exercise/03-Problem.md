@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Vacation
 [code-task title="Vacarion" taskId="JF-01-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

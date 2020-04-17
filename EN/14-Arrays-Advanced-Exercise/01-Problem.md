@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Train
 [code-task title="Train" taskId="python-fundamentals-lists-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

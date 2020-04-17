@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Ages
 [code-task title="Ages" taskId="JF-01-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

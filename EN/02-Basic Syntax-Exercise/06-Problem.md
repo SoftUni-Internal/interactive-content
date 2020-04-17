@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Strong Number
 [code-task title="Strong Number" taskId="JF-01-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

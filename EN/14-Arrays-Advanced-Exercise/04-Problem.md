@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: List Operations
 [code-task title="List Operations" taskId="python-fundamentals-lists-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

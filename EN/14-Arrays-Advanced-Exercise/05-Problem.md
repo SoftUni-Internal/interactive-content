@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Bomb Numbers
 [code-task title="Bomb Numbers" taskId="python-fundamentals-lists-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

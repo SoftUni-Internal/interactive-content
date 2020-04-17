@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: House Party
 [code-task title="House Party" taskId="python-fundamentals-lists-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

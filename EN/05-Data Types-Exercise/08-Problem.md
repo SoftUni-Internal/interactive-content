@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Beer Kegs
 [code-task title="Beer Kegs" taskId="PF-02-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

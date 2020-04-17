@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Print and Sum
 [code-task title="Print and Sum" taskId="JF-01-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

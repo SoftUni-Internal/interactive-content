@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Spice Must Flow
 [code-task title="Spice Must Flow" taskId="PF-02-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

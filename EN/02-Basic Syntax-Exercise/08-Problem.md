@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Triangle of Numbers
 [code-task title="Triangle of Numbers" taskId="JF-01-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

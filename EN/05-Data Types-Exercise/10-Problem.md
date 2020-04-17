@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Poke Mon
 [code-task title="Poke Mon" taskId="PF-02-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

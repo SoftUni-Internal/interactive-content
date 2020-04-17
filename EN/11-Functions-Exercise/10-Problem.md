@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Top Number
 [code-task title="Top Number" taskId="python-fundamentals-methods-10" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python requiresInput]

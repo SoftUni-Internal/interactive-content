@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Multiply Big Number
 [code-task title="Multiply Big Number" taskId="python-fundamentals-text-processing-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

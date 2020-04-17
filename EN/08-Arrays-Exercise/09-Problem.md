@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Kamino Factory
 [code-task title="Kamino Factory" taskId="python-fundamentals-arrays-9" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

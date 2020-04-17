@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Students
 [code-task title="Students" taskId="python-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

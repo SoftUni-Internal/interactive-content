@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Sum of Chars
 [code-task title="Sum of Chars" taskId="PF-02-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

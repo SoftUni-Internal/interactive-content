@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Division
 [code-task title="Division" taskId="JF-01-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

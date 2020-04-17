@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Company Users
 [code-task title="Company Users" taskId="python-fundamentals-assosiative-arrays-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

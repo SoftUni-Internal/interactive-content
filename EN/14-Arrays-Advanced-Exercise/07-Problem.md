@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Append Arrays
 [code-task title="Append Arrays" taskId="python-fundamentals-lists-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Change List
 [code-task title="Change List" taskId="python-fundamentals-lists-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

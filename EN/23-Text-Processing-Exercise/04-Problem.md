@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Caesar Cipher
 [code-task title="Caesar Cipher" taskId="python-fundamentals-text-processing-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

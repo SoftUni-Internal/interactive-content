@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: ForceBook
 [code-task title="ForceBook" taskId="python-fundamentals-assosiative-arrays-09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]

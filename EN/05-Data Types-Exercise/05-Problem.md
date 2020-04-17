@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem: Print Part of the ASCII Table
 [code-task title="Print Part of the ASCII Table" taskId="PF-02-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
