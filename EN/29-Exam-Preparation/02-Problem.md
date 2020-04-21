@@ -76,9 +76,9 @@ In the end **print the count of successful registrations**:
 [test open]
 [input]
 3
-U\\$MichaelU\\$P@\\$asdqwe123P@\\$
-U\\$NameU\\$P@\\$PasswordP@\\$
-U\\$UserU\\$P@\\$ad2P@\\$
+U\$MichaelU\$P@\\$asdqwe123P@\$
+U\$NameU\$P@\$PasswordP@\$
+U\$UserU\$P@\$ad2P@\$
 [/input]
 [output]
 Registration was successful
