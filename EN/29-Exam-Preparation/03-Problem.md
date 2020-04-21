@@ -129,8 +129,8 @@ Mike is already registered
 Peter not found!
 Users count: 1
 Mike
- - Hello, do you want to meet up tomorrow?
- - Another random test mail
+ /- Hello, do you want to meet up tomorrow?
+ /- Another random test mail
 [/output]
 [/test]
 [test open]
@@ -169,7 +169,7 @@ Statistics
 [output]
 Users count: 1
 a
- - test
+ \- test
 [/output]
 [/test]
 [test]
@@ -244,10 +244,10 @@ Statistics
 [output]
 Users count: 2
 b
- - test
- - test
+ \- test
+ \- test
 a
- - test
+ \- test
 [/output]
 [/test]
 [test]
@@ -263,11 +263,11 @@ Statistics
 [output]
 Users count: 2
 a
- - test
- - test
+ \- test
+ \- test
 b
- - test
- - test
+ \- test
+ \- test
 [/output]
 [/test]
 [test]
@@ -291,11 +291,11 @@ b is already registered
 a not found!
 Users count: 2
 b
- - test
- - test
+ \- test
+ \- test
 c
- - test
- - test
+ \- test
+ \- test
 [/output]
 [/test]
 [/tests]
