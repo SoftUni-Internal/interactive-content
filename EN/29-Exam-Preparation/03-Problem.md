@@ -102,12 +102,12 @@ Statistics
 [output]
 Users count: 2
 George
- - Hello World
- - Some random test mail
- - It would be a pleasure
+ \- Hello World
+ \- Some random test mail
+ \- It would be a pleasure
 Mike
- - Hello, do you want to meet up tomorrow?
- - Another random test mail
+ \- Hello, do you want to meet up tomorrow?
+ \- Another random test mail
 [/output]
 [/test]
 [test open]
