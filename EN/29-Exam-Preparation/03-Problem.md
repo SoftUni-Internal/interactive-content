@@ -129,8 +129,8 @@ Mike is already registered
 Peter not found!
 Users count: 1
 Mike
- /- Hello, do you want to meet up tomorrow?
- /- Another random test mail
+ \- Hello, do you want to meet up tomorrow?
+ \- Another random test mail
 [/output]
 [/test]
 [test open]
