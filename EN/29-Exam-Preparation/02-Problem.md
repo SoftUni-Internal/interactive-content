@@ -91,7 +91,7 @@ Successful registrations: 1
 [test open]
 [input]
 2
-U\\$TommyU\\$P@\\$asdqwe123P@\\$
+U\$TommyU\$P@\$asdqwe123P@\$
 Sara 1232412
 [/input]
 [output]
@@ -104,9 +104,9 @@ Successful registrations: 1
 [test open]
 [input]
 3
-U\\$myU\\$--\>P@\\$asdqwe123P@\\$
+U\$myU\$--\>P@\$asdqwe123P@\$
 Sara 1232412
-U\\$NameU\\$P@\\$Pass234P@\\$
+U\$NameU\$P@\$Pass234P@\$
 [/input]
 [output]
 Invalid username or password
@@ -118,7 +118,7 @@ Successful registrations: 0
 [test]
 [input]
 1
-U\\$MichaelU\\$P@\\$asdqwe123P@\\$
+U\$MichaelU\$P@\$asdqwe123P@\$
 [/input]
 [output]
 Registration was successful
@@ -129,7 +129,7 @@ Successful registrations: 1
 [test]
 [input]
 1
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Registration was successful
@@ -140,8 +140,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-U\\$MicU\\$P@\\$asdqw1P@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$MicU\$P@\$asdqw1P@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Registration was successful
@@ -154,8 +154,8 @@ Successful registrations: 2
 [test]
 [input]
 2
-U\\$micU\\$P@\\$asdqw1P@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$micU\$P@\$asdqw1P@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -167,8 +167,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-U\\$MiU\\$P@\\$asdqw1P@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$MiU\$P@\$asdqw1P@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -180,8 +180,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-U\\$MicU\\$P@\\$asdqwP@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$MicU\$P@\$asdqwP@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -193,8 +193,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-U\\$MicU\\$P@\\$asdq5P@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+U\$MicU\$P@\$asdq5P@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -206,8 +206,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-\\$Mic\\$P@\\$asdqs5P@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+\$Mic\$P@\$asdqs5P@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -219,8 +219,8 @@ Successful registrations: 1
 [test]
 [input]
 2
-\\$Mic\\$P@\\$asdqs5
-U\\$MicU\\$P@\\$asdqw1P@\\$
+\$Mic\$P@\$asdqs5
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
@@ -232,11 +232,11 @@ Successful registrations: 1
 [test]
 [input]
 5
-\\$Mic\\$P@\\$asdqs5
-MicU\\$P@\\$asdqw1P@\\$
-U\\$micU\\$P@\\$asdqw1P@\\$
-U\\$MicU\\$P@\\$asdqwP@\\$
-U\\$MicU\\$P@\\$asdqw1P@\\$
+\$Mic\$P@\$asdqs5
+MicU\$P@\$asdqw1P@\$
+U\$micU\$P@\$asdqw1P@\$
+U\$MicU\$P@\$asdqwP@\$
+U\$MicU\$P@\$asdqw1P@\$
 [/input]
 [output]
 Invalid username or password
