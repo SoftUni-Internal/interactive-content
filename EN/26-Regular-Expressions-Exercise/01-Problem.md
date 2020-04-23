@@ -110,11 +110,11 @@ Total money spend: 3905.20
 [/test]
 [test]
 [input]
->>Sofa<<312.23!3.66
->>Sofa<<312.23!3.66
->>Sofa<<312.23!3.66
->>Sofa<<312.23!3.66
->>Sofa<<312.23!3.66
+>>Sofa<<312.23!3
+>>Sofa<<312.23!3
+>>Sofa<<312.23!3
+>>Sofa<<312.23!3
+>>Sofa<<312.23!3
 Purchase
 [/input]
 [output]
