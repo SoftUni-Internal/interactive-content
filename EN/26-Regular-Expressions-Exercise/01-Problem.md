@@ -30,7 +30,7 @@ At the end **print each bought furniture on a separate line** in the format:
 …"
 
 And **on the last line print** the following: 
-- "Total money spend: \{spend money\}" **formatted** to the second decimal point.
+- "Total money spent: \{spent money\}" **formatted** to the second decimal point.
 
 
 ### Example
@@ -39,7 +39,7 @@ And **on the last line print** the following:
 | >>Sofa<<312.23!3 | Bought furniture: |
 | >>TV<<300!5 | Sofa |
 | >Invalid<<!5 | TV |
-| Purchase | Total money spend: 2436.69 |
+| Purchase | Total money spent: 2436.69 |
 
 ### Comments
 - Only the Sofa and the TV are valid.
@@ -60,7 +60,7 @@ Purchase
 Bought furniture:
 Sofa
 TV
-Total money spend: 2436.69
+Total money spent: 2436.69
 [/output]
 [/test]
 [test]
@@ -77,7 +77,7 @@ Bought furniture:
 Televizor
 Monitor
 Sink
-Total money spend: 4636.69
+Total money spent: 4636.69
 [/output]
 [/test]
 [test]
@@ -89,7 +89,7 @@ Purchase
 [/input]
 [output]
 Bought furniture:
-Total money spend: 0.00
+Total money spent: 0.00
 [/output]
 [/test]
 [test]
@@ -105,7 +105,7 @@ Bought furniture:
 Sofa
 Couch
 Table
-Total money spend: 3905.20
+Total money spent: 3905.20
 [/output]
 [/test]
 [test]
@@ -124,7 +124,7 @@ Sofa
 Sofa
 Sofa
 Sofa
-Total money spend: 4683.45
+Total money spent: 4683.45
 [/output]
 [/test]
 [test]
@@ -144,7 +144,7 @@ Laptop
 TV
 TV
 TV
-Total money spend: 8593.09
+Total money spent: 8593.09
 [/output]
 [/test]
 [/tests]
