@@ -49,7 +49,7 @@ Write a program, which:
 | 5634 | 18 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 123456
 [/input]
@@ -134,6 +134,17 @@ Write a program, which:
 | Alice in Wonderland | |
 [/task-description]
 [tests]
+[test open]
+[input]
+Alice in Wonderland
+Winnie the Pooh
+Peter Pan
+Alice in Wonderland
+[/input]
+[output]
+Book found! Attempts: 3
+[/output]
+[/test]
 [test]
 [input]
 Fav Book
@@ -195,6 +206,20 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+10
+20
+304
+0
+50
+END
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
 [test]
 [input]
 5
@@ -292,6 +317,22 @@ Write a program, which:
 | 404 | 404 is special |
 [/task-description]
 [tests]
+[test open]
+[input]
+23
+[/input]
+[output]
+23 is not special
+[/output]
+[/test]
+[test open]
+[input]
+404
+[/input]
+[output]
+404 is special
+[/output]
+[/test]
 [test]
 [input]
 55
@@ -353,6 +394,17 @@ Write a program, which:
 | 25 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+25
+20
+30
+25
+[/input]
+[output]
+60
+[/output]
+[/test]
 [test]
 [input]
 20
@@ -409,6 +461,16 @@ Write a program, which:
 |  | 7 |
 [/task-description]
 [tests]
+[test open]
+[input]
+8
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -513,6 +575,20 @@ Write a program, which:
 | END | Total: 174.93 |
 [/task-description]
 [tests]
+[test open]
+[input]
+5.51
+69.42
+100
+END
+[/input]
+[output]
+Increase: 5.51
+Increase: 69.42
+Increase: 100.00
+Total: Total: 174.93
+[/output]
+[/test]
 [test]
 [input]
 5.50
