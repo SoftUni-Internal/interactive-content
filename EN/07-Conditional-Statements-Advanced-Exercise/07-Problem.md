@@ -59,7 +59,7 @@ Print on the console a **single number** - the price of the flowers, **formatted
 - **44.14 + 2 for arrangement = 46.14 $** 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 4

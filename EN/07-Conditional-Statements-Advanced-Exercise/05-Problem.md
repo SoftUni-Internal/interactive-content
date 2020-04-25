@@ -40,7 +40,7 @@ Your friend has different plans for every part of the day with different outfits
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 16
 Morning

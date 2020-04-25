@@ -35,7 +35,7 @@ Print the expected address on a single line.
 | m | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 12
 f
@@ -44,7 +44,7 @@ f
 Miss
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 17
 m

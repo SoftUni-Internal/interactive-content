@@ -49,7 +49,7 @@ A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if on
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 -3
@@ -62,7 +62,7 @@ You can check the conditions above using one more complicated **if**-**else** co
 Inside / Outside
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 -3

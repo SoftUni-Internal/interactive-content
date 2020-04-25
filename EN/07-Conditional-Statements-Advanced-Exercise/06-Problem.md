@@ -68,7 +68,7 @@ Print on the console a **single** line:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3000
 Summer
@@ -78,7 +78,7 @@ Summer
 Not enough money! You need 570.00 dollars.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3600
 Autumn

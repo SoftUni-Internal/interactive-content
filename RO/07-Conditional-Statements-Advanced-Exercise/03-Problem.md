@@ -44,7 +44,7 @@ If you receive **invalid** name of city **or** amount of sales (negative number)
 | -50 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 London
 1500
@@ -53,7 +53,7 @@ London
 120.00
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Sydney
 499.99

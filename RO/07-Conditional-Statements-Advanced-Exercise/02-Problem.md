@@ -38,7 +38,7 @@ The input is consists of 2 lines:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Diesel
 10
@@ -47,7 +47,7 @@ Diesel
 Fill your tank with diesel!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Gasoline
 40
