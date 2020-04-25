@@ -22,6 +22,13 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+50
+[/output]
+[/test]
 [test]
 [input]
 [/input]

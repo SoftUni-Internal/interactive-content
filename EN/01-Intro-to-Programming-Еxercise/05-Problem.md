@@ -27,6 +27,17 @@ You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+[/output]
+[/test]
 [test]
 [input]
 [/input]
