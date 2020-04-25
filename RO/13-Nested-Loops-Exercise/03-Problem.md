@@ -36,7 +36,7 @@ x1 + x2 + x3 + x4 + x5 = n
 | | | the number of valid combinations is 23751.|
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 25
 [/input]

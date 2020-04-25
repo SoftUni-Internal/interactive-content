@@ -43,7 +43,7 @@ On each line you must print a **symbol**, which meets the following conditions:
 - To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable. Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2049
 [/input]

@@ -45,7 +45,7 @@ All scores must be formatted to the **second decimal point**.
 - \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 While\-Loop
