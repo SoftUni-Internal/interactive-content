@@ -52,6 +52,15 @@ Write a program to calculate the speed by time and distance:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+15
+2
+[/input]
+[output]
+7.5
+[/output]
+[/test]
 [test]
 [input]
 10.0
@@ -126,6 +135,22 @@ Write a program to convert from USD to EUR:
 | 87 | 76.56 |
 [/task-description]
 [tests]
+[test open]
+[input]
+17
+[/input]
+[output]
+14.96
+[/output]
+[/test]
+[test open]
+[input]
+87
+[/input]
+[output]
+76.56
+[/output]
+[/test]
 [test]
 [input]
 10.0
@@ -195,6 +220,15 @@ Write a program to calculate a triangle area:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+10
+[/input]
+[output]
+25.00
+[/output]
+[/test]
 [test]
 [input]
 12.0
@@ -268,7 +302,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10.0
 5.0
@@ -355,6 +389,22 @@ Write a program to convert from days to minutes:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+[/input]
+[output]
+2880
+[/output]
+[/test]
+[test open]
+[input]
+5
+[/input]
+[output]
+7200
+[/output]
+[/test]
 [test]
 [input]
 6
@@ -422,6 +472,15 @@ Write a program to calculate a circle area and perimeter:
 |  | Perimeter = 43.982297 |
 [/task-description]
 [tests]
+[test open]
+[input]
+7
+[/input]
+[output]
+Area = 153.938040
+Perimeter = 43.982297
+[/output]
+[/test]
 [test]
 [input]
 12.0
@@ -494,6 +553,17 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Kelly
+Smith
+Ireland
+Cork
+[/input]
+[output]
+Kelly Smith from Ireland - Cork!
+[/output]
+[/test]
 [test]
 [input]
 John
@@ -572,6 +642,16 @@ Write a program, which:
 | 984 |  |
 [/task-description]
 [tests]
+[test open]
+[input]
+Berlin
+3675000
+984
+[/input]
+[output]
+Town Berlin has population of 3675000 and area 984 square km.
+[/output]
+[/test]
 [test]
 [input]
 Sofia
