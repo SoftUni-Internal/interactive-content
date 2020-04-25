@@ -54,6 +54,24 @@ The output should be formatted in the following form:
 | | EvenMax=No |
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+3
+-2
+8
+11
+-3
+[/input]
+[output]
+OddSum=8.00,
+OddMin=-3.00,
+OddMax=8.00,
+EvenSum=9.00,
+EvenMin=-2.00,
+EvenMax=11.00
+[/output]
+[/test]
 [test]
 [input]
 6

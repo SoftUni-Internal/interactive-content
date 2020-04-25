@@ -24,7 +24,7 @@ Print the numbers on a single line, separated by a single space.
 | (no input) | | 7 17 27 ... 997 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 [/input]
 [output]
