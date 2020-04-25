@@ -55,6 +55,17 @@ Write a program, which:
 | 50 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+40
+90
+50
+[/input]
+[output]
+90
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -118,6 +129,20 @@ Write a program, which:
 | 50 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+10
+304
+0
+0
+50
+[/input]
+[output]
+Max number: 304
+Min number: 0
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -188,13 +213,22 @@ Write a program, which:
 | 2 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 2
 [/input]
 [output]
 32
+[/output]
+[/test]
+[test]
+[input]
+6
+2
+[/input]
+[output]
+64
 [/output]
 [/test]
 [/tests]
@@ -236,6 +270,30 @@ Write a program, which:
 | -1 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+-1
+0
+0
+-1
+[/input]
+[output]
+Yes, value=-1
+[/output]
+[/test]
+[test open]
+[input]
+2
+1
+2
+2
+2
+[/input]
+[output]
+No, maxdiff=1
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -248,18 +306,6 @@ Write a program, which:
 [/input]
 [output]
 Yes, value=3
-[/output]
-[/test]
-[test]
-[input]
-2
-1
-2
-2
-2
-[/input]
-[output]
-No, maxdiff=1
 [/output]
 [/test]
 [test]
@@ -375,6 +421,16 @@ Write a program, which:
 | 20 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+10
+20
+[/input]
+[output]
+10
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -434,6 +490,19 @@ Write a program, which:
 | 9 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+3
+6
+9
+[/input]
+[output]
+33.33%
+100.00%
+0.00%
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -488,6 +557,16 @@ Write a program, which:
 | g | |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+a
+g
+[/input]
+[output]
+1
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -575,7 +654,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 10
@@ -587,7 +666,7 @@ Write a program, which:
 The rollercoaster departures
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 25
@@ -681,6 +760,23 @@ Write a program, which:
 | | 2 x 10 = 20 |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+[/input]
+[output]
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+[/output]
+[/test]
 [test]
 [input]
 5
