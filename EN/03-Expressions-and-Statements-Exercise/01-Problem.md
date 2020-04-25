@@ -37,7 +37,7 @@ Print on the console the calculated area
 | 6 | 36 |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 [/input]

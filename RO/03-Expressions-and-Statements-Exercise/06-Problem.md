@@ -53,7 +53,7 @@ Print on the console a single number with floating point: the money George will 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 6.90
 4.20

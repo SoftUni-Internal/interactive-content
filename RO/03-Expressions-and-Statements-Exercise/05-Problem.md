@@ -41,7 +41,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 | 9 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 4
@@ -50,7 +50,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 28.50 dollars
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 13
 9
