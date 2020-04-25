@@ -43,7 +43,7 @@ The result should be formatted to the second decimal point.
 | 10 | | 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 0.194
 19.4
@@ -54,7 +54,7 @@ The result should be formatted to the second decimal point.
 174.39
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 1.5
 2.5

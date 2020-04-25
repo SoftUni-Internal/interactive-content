@@ -41,7 +41,7 @@ Prices should be formatted to the second decimal point.
 - Calculate the final price: 4109.40 – 739.69 = 3369.71 $
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 540
 [/input]

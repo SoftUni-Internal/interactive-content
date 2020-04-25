@@ -29,7 +29,7 @@ Print on the console a single number - the area of the trapezoid, formatted to t
 | 7 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 8
 13

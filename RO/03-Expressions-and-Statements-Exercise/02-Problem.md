@@ -36,7 +36,7 @@ Print on the console:
 | 9 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 George
 4
@@ -45,7 +45,7 @@ George
 The architect George will need 12 hours to complete 4 project/s.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Sanya
 9
