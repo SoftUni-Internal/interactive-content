@@ -37,7 +37,7 @@ After that, if she didn\'t manage to reach her goal, you have to print the follo
 | 200| |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1000
 1500
@@ -48,7 +48,7 @@ After that, if she didn\'t manage to reach her goal, you have to print the follo
 Goal reached! Good job!
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 1500
 300

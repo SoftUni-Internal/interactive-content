@@ -57,7 +57,7 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 - Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Troy
 8
@@ -69,7 +69,7 @@ Troy
 You checked 2 books and found it.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 The Spot
 4

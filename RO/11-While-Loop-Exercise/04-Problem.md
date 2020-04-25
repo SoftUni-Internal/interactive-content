@@ -64,7 +64,7 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 53
@@ -78,7 +78,7 @@ Detergent was enough!
 Leftover detergent 85 ml.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 1
 10

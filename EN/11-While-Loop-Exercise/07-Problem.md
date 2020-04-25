@@ -84,7 +84,7 @@ After you have found **all three code chars from the command**, you have to prin
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 H
 n
@@ -109,7 +109,7 @@ End
 Hello there 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 %
 \!

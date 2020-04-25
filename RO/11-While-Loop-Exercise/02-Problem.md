@@ -74,7 +74,7 @@ A poor grade is a grade less or equal to 4.00.
 - Martin reaches the number of allowed poor grades, it is time for break.
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 Money
