@@ -36,7 +36,7 @@ From the console read words until the command "**STOP**", then print:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 House
 Dog
