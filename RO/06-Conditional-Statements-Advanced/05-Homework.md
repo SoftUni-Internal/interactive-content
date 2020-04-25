@@ -4,7 +4,7 @@
 # Video
 
 [vimeo-video startTimeInSeconds="5965" endTimeInSeconds="8399"]
-[stream language="EN" videoId="341568008"  /]
+[stream language="EN" videoId="341568008" /]
 [stream language="RO" videoId="388278683" default /]
 [/vimeo-video]
 
@@ -50,7 +50,7 @@ Write a program to check for fruit or vegetable:
 - vegetable
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 lemon
 [/input]
@@ -58,12 +58,100 @@ lemon
 fruit
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 carrot
 [/input]
 [output]
 vegetable
+[/output]
+[/test]
+[test]
+[input]
+kiwi
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+cherry
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+banana
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+grapes
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+cucumber
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+pepper
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+carror
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+onion
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+bread
+[/input]
+[output]
+unknown
+[/output]
+[/test]
+[test]
+[input]
+onion
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+coffee
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [/tests]
@@ -98,6 +186,22 @@ Write a program to print the day of week as words:
 - Error
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+[/input]
+[output]
+Monday
+[/output]
+[/test]
+[test open]
+[input]
+8
+[/input]
+[output]
+Error
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -108,10 +212,42 @@ Monday
 [/test]
 [test]
 [input]
-8
+2
 [/input]
 [output]
-Error
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+Saturday
 [/output]
 [/test]
 [test]
@@ -153,6 +289,36 @@ Try to do this **without multiplying** the 3 numbers
 - negative
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+3
+-1
+[/input]
+[output]
+negative
+[/output]
+[/test]
+[test open]
+[input]
+2
+3
+1
+[/input]
+[output]
+positive
+[/output]
+[/test]
+[test open]
+[input]
+2
+3
+0
+[/input]
+[output]
+zero
+[/output]
+[/test]
 [test]
 [input]
 -2
@@ -220,7 +386,7 @@ Write a program, which checks for **sorted 3 numbers**:
 - Not sorted
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2
@@ -230,6 +396,26 @@ Write a program, which checks for **sorted 3 numbers**:
 Ascending
 [/output]
 [/test]
+[test open]
+[input]
+3
+5
+2
+[/input]
+[output]
+Not sorted
+[/output]
+[/test]
+[test open]
+[input]
+4
+3
+2
+[/input]
+[output]
+Descending
+[/output]
+[test]
 [test]
 [input]
 3
@@ -249,6 +435,16 @@ Not sorted
 [output]
 Descending
 [/output]
+[test]
+[input]
+10
+11
+12
+[/input]
+[output]
+Ascending
+[/output]
+[/test]
 [/test]
 [/tests]
 [code-io /]
@@ -269,7 +465,7 @@ Descending
 Write a program, which calculates vacation expenses:
 
 * Read season, accommodation type and count of the days
-* Print the total expenses, based on the price table bellow,formatted to the 2nd * digit after the decimal point
+* Print the total expenses, based on the price table bellow, formatted to the 2nd * digit after the decimal point
 
 |Season|Hotel|Camping|Discount|
 |-----|------|-------|--------|
@@ -332,14 +528,234 @@ Calculate the **price** for all the tickets for a cinema movie:
 - 810.00
 [/task-description]
 [tests]
+[test open]
+[input]
+Premiere
+10
+12
+[/input]
+[output]
+1440.00
+[/output]
+[/test]
+[test open]
+[input]
+Normal
+21
+13
+[/input]
+[output]
+2047.50
+[/output]
+[/test]
+[test open]
+[input]
+Discount
+12
+30
+[/input]
+[output]
+1800.00 leva
+[/output]
+[/test]
 [test]
 [input]
 Normal
-12
+88
+44
+[/input]
+[output]
+29040.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+43
+15
+[/input]
+[output]
+3225.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+42
+62
+[/input]
+[output]
+31248.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+30
+36
+[/input]
+[output]
+5400.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+94
+17
+[/input]
+[output]
+19176.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+7
+[/input]
+[output]
+1190.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+93
+21
+[/input]
+[output]
+9765.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+54
+46
+[/input]
+[output]
+12420.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+34
+93
+[/input]
+[output]
+15810.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+68
+50
+[/input]
+[output]
+40800.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+73
+61
+[/input]
+[output]
+33397.50
+[/output]
+[/test]
+[test]
+[input]
+Normal
+63
+64
+[/input]
+[output]
+30240.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+84
+98
+[/input]
+[output]
+61740.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+59
+57
+[/input]
+[output]
+25222.50
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+32
+54
+[/input]
+[output]
+20736.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+52
+35
+[/input]
+[output]
+21840.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+36
+75
+[/input]
+[output]
+20250.00
+[/output]
+[/test]
+[test]
+[input]
+Normal
+65
+68
+[/input]
+[output]
+33150.00
+[/output]
+[/test]
+[test]
+[input]
+Premiere
+59
+35
+[/input]
+[output]
+24780.00
+[/output]
+[/test]
+[test]
+[input]
+Discount
+78
 9
 [/input]
 [output]
-810.00
+3510.00
 [/output]
 [/test]
 [/tests]
@@ -372,7 +788,7 @@ Write a program to apply an operator for given two numbers:
 - 12 + 10 = 22
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 12
@@ -380,6 +796,16 @@ Write a program to apply an operator for given two numbers:
 [/input]
 [output]
 10 + 12 = 22
+[/output]
+[/test]
+[test open]
+[input]
+22
+12
+\-
+[/input]
+[output]
+22 \- 12 = 10
 [/output]
 [/test]
 [test]
@@ -425,56 +851,6 @@ Write a program to apply an operator for given two numbers:
 [/tests]
 [code-io /]
 [/code-task]
-
-[/slide]
-
-[slide]
-# Problem: ATM
-[code-task title="ATM" taskId="28-03-p09" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program to simulate an ATM withdrawal:
-
-* Read: **balance**, **withdraw** and **limit**
-* Print **"The withdraw was successful."** if the balance is enough
-* Print **"The daily limit was exceeded."** if the limit is exceeded
-* Print **"Insufficient availability."** if the balance isn't enough
-
-## Example
-### Input
-- 420
-- 20
-- 25
-### Output
-- The withdraw was successful.
-### Input
-- 10
-- 50
-- 20
-### Output
-- The daily limit was exceeded.
-- Insufficient availability.
-[/task-description]
-[tests]
-[test]
-[input]
-420
-20
-25
-[/input]
-[output]
-The withdraw was successful.
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
 [/slide]
 
 [slide]
