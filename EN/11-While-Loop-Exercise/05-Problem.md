@@ -68,7 +68,7 @@ Print on the console:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 500
 120

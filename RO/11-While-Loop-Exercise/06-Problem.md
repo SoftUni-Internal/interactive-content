@@ -46,7 +46,7 @@ Write a program that calculates the **average grade** of a student from his enti
 | 5 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 David
 4

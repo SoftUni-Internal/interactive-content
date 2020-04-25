@@ -69,6 +69,34 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 | 30 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+53
+65
+55
+End
+[/input]
+[output]
+Detergent was enough!
+118 dishes and 55 pots were washed.
+Leftover detergent 85 ml.
+[/output]
+[/test]
+[test open]
+[input]
+1
+10
+15
+10
+12
+13
+30
+[/input]
+[output]
+Not enough detergent, 100 ml. more necessary!
+[/output]
+[/test]
 [test]
 [input]
 2
