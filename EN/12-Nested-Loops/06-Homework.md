@@ -59,6 +59,20 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+6
+4
+[/input]
+[output]
+L60 L61 L62 L63
+A50 A51 A52 A53
+O40 O41 O42 O43
+A30 A31 A32 A33
+O20 O21 O22 O23
+A10 A11 A12 A13
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -217,6 +231,14 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+6
+[/input]
+[output]
+212 236 2510 414 4312 4520 616 6318 6530
+[/output]
+[/test]
 [test]
 [input]
 8
@@ -292,6 +314,16 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+113
+131
+311
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -360,6 +392,61 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Greece
+1000
+200
+200
+300
+100
+150
+240
+Spain
+1200
+300
+500
+193
+423
+End
+[/input]
+[output]
+Going to Greece!
+Going to Spain!
+[/output]
+[/test]
+[test open]
+[input]
+France
+2000
+300
+300
+200
+400
+190
+258
+360
+Portugal
+1450
+400
+400
+200
+300
+300
+Egypt
+1900
+1000
+280
+300
+500
+End
+[/input]
+[output]
+Going to France!
+Going to Portugal!
+Going to Egypt!
+[/output]
+[/test]
 [test]
 [input]
 Maldives
@@ -623,6 +710,15 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+50
+[/input]
+[output]
+1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -730,6 +826,21 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+5
+5
+[/input]
+[output]
+222
+224
+232
+234
+252
+254
+[/output]
+[/test]
 [test]
 [input]
 8
@@ -791,6 +902,16 @@ Write a program, which:
 - aaa aac aca acc caa cac cca ccc 8
 [/task-description]
 [tests]
+[test open]
+[input]
+a
+c
+b
+[/input]
+[output]
+aaa aac aca acc caa cac cca ccc 8
+[/output]
+[/test]
 [test]
 [input]
 a
@@ -837,6 +958,14 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+1212 1221 2112 2121
+[/output]
+[/test]
 [test]
 [input]
 3
