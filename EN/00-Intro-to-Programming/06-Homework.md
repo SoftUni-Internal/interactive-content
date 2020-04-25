@@ -42,6 +42,13 @@ Prints "Hello Java" on the console
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+Hello Java
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -77,6 +84,13 @@ Write a Java program, which:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+25
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -109,6 +123,14 @@ public class Main {
 Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
 [/task-description]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+Catlyn
+8
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -147,6 +169,15 @@ Write a program, which calculates and prints the value of the following express
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+11
+20
+6
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -192,6 +223,19 @@ Prints a square of 7 * 7 stars like this:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+[/output]
+[/test]
 [test]
 [input]
 [/input]
