@@ -4,7 +4,7 @@
 # Video
  
 [vimeo-video startTimeInSeconds="7016" endTimeInSeconds="9705"]
-[stream language="EN" videoId="343587107"  /]
+[stream language="EN" videoId="343587107" /]
 [stream language="RO" videoId="392266139" default /]
 [/vimeo-video]
 [/slide]
@@ -46,7 +46,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 123456
 [/input]
@@ -126,6 +126,17 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Alice in Wonderland
+Winnie the Pooh
+Peter Pan
+Alice in Wonderland
+[/input]
+[output]
+Book found! Attempts: 3
+[/output]
+[/test]
 [test]
 [input]
 Fav Book
@@ -183,7 +194,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 10
@@ -274,6 +285,22 @@ Write a program, which:
 | 404 | 404 is special |
 [/task-description]
 [tests]
+[test open]
+[input]
+23
+[/input]
+[output]
+23 is not special
+[/output]
+[/test]
+[test open]
+[input]
+404
+[/input]
+[output]
+404 is special
+[/output]
+[/test]
 [test]
 [input]
 55
@@ -331,6 +358,17 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+25
+20
+30
+25
+[/input]
+[output]
+60
+[/output]
+[/test]
 [test]
 [input]
 20
@@ -382,6 +420,16 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+8
+[/input]
+[output]
+1
+3
+7
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -482,6 +530,20 @@ Write a program, which:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5.51
+69.42
+100
+END
+[/input]
+[output]
+Increase: 5.51
+Increase: 69.42
+Increase: 100.00
+Total: 174.93
+[/output]
+[/test]
 [test]
 [input]
 5.50
