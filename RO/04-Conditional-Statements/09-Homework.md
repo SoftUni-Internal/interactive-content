@@ -4,7 +4,7 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7335" endTimeInSeconds="9030"]
-[stream language="EN" videoId="341553633"  /]
+[stream language="EN" videoId="341553633" /]
 [stream language="RO" videoId="387288483" default /]
 [/vimeo-video]
 
@@ -51,6 +51,22 @@ Write a program to check a password:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+s3cr3t!
+[/input]
+[output]
+Welcome
+[/output]
+[/test]
+[test open]
+[input]
+qwerty!
+[/input]
+[output]
+Wrong password!
+[/output]
+[/test]
 [test]
 [input]
 s3cr3t!
@@ -101,6 +117,22 @@ Write a program, which checks for hot water:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+104.8
+[/input]
+[output]
+The water is boiling
+[/output]
+[/test]
+[test open]
+[input]
+29
+[/input]
+[output]
+The water is not hot enough
+[/output]
+[test]
 [test]
 [input]
 105
@@ -150,9 +182,25 @@ Write a program to check for fast / slow speed:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 30
+[/input]
+[output]
+Slow
+[/output]
+[/test]
+[test open]
+[input]
+60
+[/input]
+[output]
+Fast
+[/output]
+[/test]
+[test]
+[input]
+25
 [/input]
 [output]
 Slow
@@ -215,13 +263,49 @@ Write a program to calculate the area of different figures:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 square
 5
 [/input]
 [output]
 25.00
+[/output]
+[/test]
+[test open]
+[input]
+rectangle
+3
+10
+[/input]
+[output]
+30.00
+[/output]
+[/test]
+[test open]
+[input]
+circle
+2.5
+[/input]
+[output]
+19.63
+[/output]
+[/test]
+[test open]
+[input]
+trapezoid
+[/input]
+[output]
+Unknown figure
+[/output]
+[/test]
+[test]
+[input]
+square
+6
+[/input]
+[output]
+36.00
 [/output]
 [/test]
 [test]
@@ -237,10 +321,10 @@ rectangle
 [test]
 [input]
 circle
-2.5
+3.5
 [/input]
 [output]
-19.63
+38.48
 [/output]
 [/test]
 [test]
@@ -288,6 +372,30 @@ Write a program to calculate a ticket price:
 | regular | $1.60 |
 [/task-description]
 [tests]
+[test open]
+[input]
+student
+[/input]
+[output]
+$1.00
+[/output]
+[/test]
+[test open]
+[input]
+regular
+[/input]
+[output]
+$1.60
+[/output]
+[/test]
+[test open]
+[input]
+vip
+[/input]
+[output]
+Invalid ticket type!
+[/output]
+[/test]
 [test]
 [input]
 student
@@ -353,6 +461,24 @@ Prices:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+coffee
+sugar
+[/input]
+[output]
+Final price: $1.40
+[/output]
+[/test]
+[test]
+[input]
+tea
+no
+[/input]
+[output]
+Final price: $0.60
+[/output]
+[/test]
 [test]
 [input]
 coffee
@@ -428,7 +554,7 @@ Write a program to check if a triangle is valid by its sizes:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 4
@@ -438,11 +564,31 @@ Write a program to check if a triangle is valid by its sizes:
 Valid Triangle
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 8
 3
+[/input]
+[output]
+Invalid Triangle
+[/output]
+[/test]
+[test]
+[input]
+6
+8
+10
+[/input]
+[output]
+Valid Triangle
+[/output]
+[/test]
+[test open]
+[input]
+10
+16
+6
 [/input]
 [output]
 Invalid Triangle
@@ -484,6 +630,26 @@ Write a program, which:
 | 1 | |
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+6
+4
+[/input]
+[output]
+True
+[/output]
+[/test]
+[test open]
+[input]
+1
+1
+1
+[/input]
+[output]
+False
+[/output]
+[/test]
 [test]
 [input]
 3
