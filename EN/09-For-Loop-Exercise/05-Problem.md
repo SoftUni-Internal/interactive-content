@@ -52,7 +52,7 @@ The output should be **formatted** in the following form:
 | | EvenMax=No |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 6
 2
@@ -71,7 +71,7 @@ EvenMin=1.00,
 EvenMax=4.00
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 1.5

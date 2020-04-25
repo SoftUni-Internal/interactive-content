@@ -61,7 +61,7 @@ For **5** months:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 5
 68.63

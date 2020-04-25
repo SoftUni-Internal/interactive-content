@@ -55,7 +55,7 @@ All numbers must be **formatted** to the **second decimal place**.
 - Average grade: 3 + 2.99 + 5.68 + 3.01 + 4 + 4 + 6 + 4.50 + 2.44 + 5 = 40.62 / 10 = 4.062
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 3

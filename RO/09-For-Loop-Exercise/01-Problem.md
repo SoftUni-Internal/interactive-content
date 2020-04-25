@@ -47,7 +47,7 @@ Print on the console a **single** line. The amount must be formatted to **two de
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 50000
 1802

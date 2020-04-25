@@ -51,7 +51,7 @@ Print on the console 2 lines:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 4
 7
