@@ -22,12 +22,20 @@ Write a program that reads an integer from the console and prints **day of the w
 | -1 | Error |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 [/input]
 [output]
 Monday
+[/output]
+[/test]
+[test open]
+[input]
+-1
+[/input]
+[output]
+Error
 [/output]
 [/test]
 [test]

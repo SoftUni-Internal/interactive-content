@@ -61,7 +61,7 @@ The following should be printed on the console:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 650
 2
@@ -73,7 +73,7 @@ Good harvest this year! Total wine: 208 liters.
 33 liters left -> 11 liters per person.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 1020
 1.5

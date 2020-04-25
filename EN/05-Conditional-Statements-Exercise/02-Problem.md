@@ -51,7 +51,7 @@ The result should be **formatted to the third decimal point**.
 | 20 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 square
 5
@@ -60,7 +60,7 @@ square
 25.000
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 rectangle
 7
@@ -70,7 +70,7 @@ rectangle
 17.500
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 circle
 6
@@ -79,7 +79,7 @@ circle
 113.097
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 triangle
 4.5

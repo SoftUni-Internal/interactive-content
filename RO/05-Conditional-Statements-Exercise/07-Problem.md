@@ -60,7 +60,7 @@ Print on the console **one of both possibilities**:
 - In total – 500 l > 100 l => 400 l are overflowed.
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1000
 100
@@ -71,7 +71,7 @@ Print on the console **one of both possibilities**:
 The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 100
 100

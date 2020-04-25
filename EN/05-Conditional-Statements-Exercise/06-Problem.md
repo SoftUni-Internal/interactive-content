@@ -63,7 +63,7 @@ Print on the console a **single** line:
 - 16.105 – 10 = 6.105 -> 7 kg of food are needed
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 10
@@ -75,7 +75,7 @@ Print on the console a **single** line:
 3 kilos of food left.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 10
