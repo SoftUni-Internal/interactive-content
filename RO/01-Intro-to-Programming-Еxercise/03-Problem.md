@@ -17,6 +17,22 @@ Each number should be on a new line.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+[/output]
+[/test]
 [test]
 [input]
 [/input]

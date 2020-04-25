@@ -23,6 +23,17 @@ You should print one asteriks symbol \(\*\) for the first row, two asteriks symb
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+[/output]
+[/test]
 [test]
 [input]
 [/input]

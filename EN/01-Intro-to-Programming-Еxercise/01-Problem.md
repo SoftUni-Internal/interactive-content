@@ -15,6 +15,13 @@ Prints "Hello SoftUni" on the console
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+Hello SoftUni
+[/output]
+[/test]
 [test]
 [input]
 [/input]

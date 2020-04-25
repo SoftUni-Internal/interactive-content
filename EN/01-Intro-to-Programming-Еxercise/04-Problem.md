@@ -21,6 +21,15 @@ Print the result of each expression on a separate line
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+11
+24
+8.0
+[/output]
+[/test]
 [test]
 [input]
 [/input]
