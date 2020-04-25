@@ -67,6 +67,13 @@ Write a Python program, which:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+25
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -94,6 +101,14 @@ Write a program to print `Catlyn` on the first line and calculate and print the 
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+Catlyn
+8
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -126,6 +141,15 @@ Write a program, which calculates and prints the value of the following express
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+11
+20
+6.0
+[/output]
+[/test]
 [test]
 [input]
 [/input]
@@ -165,6 +189,19 @@ Write a program, which prints a square of 7 * 7 stars like this:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+\* \* \* \* \* \* \*
+[/output]
+[/test]
 [test]
 [input]
 [/input]
