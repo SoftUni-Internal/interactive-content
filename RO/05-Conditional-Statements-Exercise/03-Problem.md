@@ -38,7 +38,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 | 46 | |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 46
@@ -47,7 +47,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 2:01
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 0
 01

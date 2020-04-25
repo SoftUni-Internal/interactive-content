@@ -69,7 +69,7 @@ Print on the console a **single** line:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 10
@@ -81,7 +81,7 @@ Print on the console a **single** line:
 3 kilos of food left.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 10

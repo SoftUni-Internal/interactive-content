@@ -37,12 +37,28 @@ Write a program that prints the **type** of an animal according to its **name**.
 | cat | unknown |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 dog
 [/input]
 [output]
 mammal
+[/output]
+[/test]
+[test open]
+[input]
+snake
+[/input]
+[output]
+reptile
+[/output]
+[/test]
+[test open]
+[input]
+cat
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [test]
