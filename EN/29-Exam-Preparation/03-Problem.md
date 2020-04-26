@@ -112,29 +112,6 @@ Mike
 [/test]
 [test open]
 [input]
-Add-\>Mike
-Add-\>George
-Send-\>George-\>Hello World
-Send-\>George-\>Your loan is overdue
-Add-\>Mike
-Send-\>Mike-\>Hello, do you want to meet up tomorrow?
-Delete-\>Peter
-Send-\>George-\>I'm busy
-Send-\>Mike-\>Another random test mail
-Delete-\>George
-Statistics
-[/input]
-[output]
-Mike is already registered
-Peter not found!
-Users count: 1
-Mike
- \- Hello, do you want to meet up tomorrow?
- \- Another random test mail
-[/output]
-[/test]
-[test open]
-[input]
 Add-\>Annie
 Add-\>George
 Send-\>George-\>Hello World
