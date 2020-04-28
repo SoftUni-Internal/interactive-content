@@ -21,7 +21,7 @@ A **registration is valid** when:
 - The **password needs to start with minimum 5 alphabetical letters** (not including digits) and **must end with a digit**
 
 **Example for a valid** registration: 
-- "U$MichaelU$P@$asdqwe123P@$"
+- "U\$MichaelU\$P@\$asdqwe123P@\$"
 
 You must check if the registration is **valid and if it is print**:
 - "Registration was successful"
@@ -45,9 +45,9 @@ In the end **print the count of successful registrations**:
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Registration was successful |
-| U$MichaelU$P@$asdqwe123P@$ | Username: Michael, Password: asdqwe123 |
-| U$NameU$P@$PasswordP@$ | Invalid username or password |
-| U$UserU$P@$ad2P@$ | Invalid username or password |
+| U\$MichaelU\$P@$asdqwe123P@\$ | Username: Michael, Password: asdqwe123 |
+| U\$NameU$P@\$PasswordP@\$ | Invalid username or password |
+| U\$UserU$P@\$ad2P@\$ | Invalid username or password |
 | | Successful registrations: 1 |
 
 ### Comment
