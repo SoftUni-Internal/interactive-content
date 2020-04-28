@@ -60,7 +60,7 @@ In the end **print the count of successful registrations**:
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Registration was successful |
-| U$TommyU$P@$asdqwe123P@$ | Username: Tommy, Password: asdqwe123 |
+| U\$TommyU\$P@\$asdqwe123P@\$ | Username: Tommy, Password: asdqwe123 |
 | Sara 1232412 | Invalid username or password |
 | | Successful registrations: 1 |
 
