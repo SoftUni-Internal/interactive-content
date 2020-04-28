@@ -25,7 +25,7 @@ There are **six possible commands**:
     - Replace all letters with **upper case**, then **print** the result. 
 - "Make Lower"
     - Replace all letters with **lower case**, then **print** the result.
-- "GetDomain \{count\}
+- "GetDomain \{count\}"
     - **Print** the **last** \{count\} **characters** of the Email.
 - "GetUsername"
     - **Print** the substring from the start of the Email **until the** @ symbol.
