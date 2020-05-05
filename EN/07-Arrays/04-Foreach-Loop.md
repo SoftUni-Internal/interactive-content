@@ -1,3 +1,3 @@
 [slide]
-# Printing Arrays
+# Foreach Loop
 [/slide]
