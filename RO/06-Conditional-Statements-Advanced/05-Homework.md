@@ -415,7 +415,7 @@ Not sorted
 [output]
 Descending
 [/output]
-[test]
+[/test]
 [test]
 [input]
 3
