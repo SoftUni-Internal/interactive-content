@@ -41,7 +41,18 @@ Print on the console:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+Matrix
+Breaking bad
+Legend
+STOP
+[/input]
+[output]
+The best movie for you is Breaking bad with 878 ASCII sum.
+[/output]
+[/test]
+[test open]
 [input]
 The maze
 School story 2

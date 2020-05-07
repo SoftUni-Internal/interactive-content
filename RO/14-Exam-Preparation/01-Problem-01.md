@@ -37,7 +37,19 @@ You have to print on the console the time needed to watch all of the episodes, r
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+Lucifer
+3
+18
+55
+[/input]
+[output]
+Total time needed to watch the Lucifer series is 3594 minutes.
+[/output]
+[/test]
+[tests]
+[test open]
 [input]
 Flash
 5

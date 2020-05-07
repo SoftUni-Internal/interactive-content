@@ -44,7 +44,7 @@ Print one line on the console: "Your bill is \{total price\}$"
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John Wick
 Drink

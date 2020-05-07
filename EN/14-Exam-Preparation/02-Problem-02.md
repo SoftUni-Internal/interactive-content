@@ -39,7 +39,17 @@ Print on the console one line:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+Game of Thrones
+60
+96
+[/input]
+[output]
+You have enough time to watch Game of Thrones and left with 0 minutes free time.
+[/output]
+[/test]
+[test open]
 [input]
 Riverdale
 57

@@ -46,7 +46,22 @@ First, print on the console one line:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+60
+10
+6
+3
+20
+15
+Movie time!
+[/input]
+[output]
+There are 6 seats left in the cinema.
+Cinema income - 255$
+[/output]
+[/test]
+[test open]
 [input]
 140
 15

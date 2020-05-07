@@ -52,7 +52,22 @@ The result must be formatted to two digits after the decimal point.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+10
+3
+Thrones
+5
+Riverdale
+5
+Gotham
+2
+[/input]
+[output]
+You bought all the series and left with 0.50$
+[/output]
+[/test]
+[test open]
 [input]
 25
 2
