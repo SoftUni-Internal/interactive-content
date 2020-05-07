@@ -4,7 +4,7 @@
 # Video
 
 [vimeo-video startTimeInSeconds="7335" endTimeInSeconds="9030"]
-[stream language="EN" videoId="341553633" /]
+[stream language="EN" videoId="341553633"  /]
 [stream language="RO" videoId="387288483" default /]
 [/vimeo-video]
 
@@ -132,7 +132,7 @@ The water is boiling
 [output]
 The water is not hot enough
 [/output]
-[test]
+[/test]
 [test]
 [input]
 105

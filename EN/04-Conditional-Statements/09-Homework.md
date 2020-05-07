@@ -132,7 +132,7 @@ The water is boiling
 [output]
 The water is not hot enough
 [/output]
-[test]
+[/test]
 [test]
 [input]
 105
