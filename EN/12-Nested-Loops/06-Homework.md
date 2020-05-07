@@ -607,7 +607,7 @@ Write a program, which:
 
 * Reads 3 digits - each of them is an upper limit
 * Generates unique 3 digit PIN Codes, which meet the following conditions:
-    * They are in the range
+    * Digits must be in the range \[1…9\]
     * The first and the third digit must be even
     * The second digit must be a prime number in the range \[2…7\]
 
@@ -623,7 +623,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 5
@@ -636,6 +636,31 @@ Write a program, which:
 234
 252
 254
+[/output]
+[/test]
+[test open]
+[input]
+8
+2
+8
+[/input]
+[output]
+222
+224
+226
+228
+422
+424
+426
+428
+622
+624
+626
+628
+822
+824
+826
+828
 [/output]
 [/test]
 [test]
@@ -663,6 +688,79 @@ Write a program, which:
 212
 222
 232
+[/output]
+[/test]
+[test]
+[input]
+9
+9
+9
+[/input]
+[output]
+222
+224
+226
+228
+232
+234
+236
+238
+252
+254
+256
+258
+272
+274
+276
+278
+422
+424
+426
+428
+432
+434
+436
+438
+452
+454
+456
+458
+472
+474
+476
+478
+622
+624
+626
+628
+632
+634
+636
+638
+652
+654
+656
+658
+672
+674
+676
+678
+822
+824
+826
+828
+832
+834
+836
+838
+852
+854
+856
+858
+872
+874
+876
+878
 [/output]
 [/test]
 [/tests]
