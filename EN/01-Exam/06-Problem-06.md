@@ -58,6 +58,20 @@ Print the word with the "greatest" power:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+The
+Most
+Powerful
+Word
+Is
+Experience
+End of words
+[/input]
+[output]
+The most powerful word is Experience - 10320
+[/output]
+[/test]
 [test]
 [input]
 Whats'up

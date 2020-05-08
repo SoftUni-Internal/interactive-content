@@ -56,6 +56,16 @@ Print one line on the console:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Espresso
+Without
+10
+[/input]
+[output]
+You bought 10 cups of Espresso for 4.39 dollars.
+[/output]
+[/test]
 [test]
 [input]
 Espresso

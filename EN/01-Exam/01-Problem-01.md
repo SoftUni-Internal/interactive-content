@@ -46,6 +46,17 @@ In the calculation of the number of umbrellas and sunbeds, their number should b
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+21
+5.50
+4.40
+6.20
+[/input]
+[output]
+254.10 dollars.
+[/output]
+[/test]
 [test]
 [input]
 32

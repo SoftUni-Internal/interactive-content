@@ -53,6 +53,17 @@ The sum must be formatted to the second digit after the decimal point.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+800.50
+8
+100
+2
+[/input]
+[output]
+The Smiths will be left with 24.49 dollars after vacation.
+[/output]
+[/test]
 [test]
 [input]
 504.20
