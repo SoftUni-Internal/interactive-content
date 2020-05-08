@@ -2,8 +2,8 @@
 # Problem 03
 [code-task title="Problem-03" taskId="pb-python-march-exam-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
-```
-# Write your code here
+```python
+# Write code here
 ```
 [/code-editor]
 [task-description]
@@ -50,6 +50,16 @@ Print one line on the console:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Espresso
+Without
+10
+[/input]
+[output]
+You bought 10 cups of Espresso for 4.39 dollars.
+[/output]
+[/test]
 [test]
 [input]
 Espresso

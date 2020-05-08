@@ -2,8 +2,8 @@
 # Problem 06 
 [code-task title="Problem-06" taskId="pb-python-march-exam-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
-```
-# Write your code here
+```python
+# Write code here
 ```
 [/code-editor]
 [task-description]
@@ -52,6 +52,20 @@ Print the word with the "greatest" power:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+The
+Most
+Powerful
+Word
+Is
+Experience
+End of words
+[/input]
+[output]
+The most powerful word is Experience - 10320
+[/output]
+[/test]
 [test]
 [input]
 Whats'up

@@ -2,8 +2,8 @@
 # Problem 04
 [code-task title="Problem-04" taskId="pb-python-march-exam-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
-```
-# Write your code here
+```python
+# Write code here
 ```
 [/code-editor]
 [task-description]
@@ -60,6 +60,35 @@ The money must be formatted to the second digit after the decimal point.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+500
+Bellini
+6
+Bamboo
+7
+Party!
+[/input]
+[output]
+We need 416.00 dollars more.
+Club income - 84.00 dollars.
+[/output]
+[/test]
+[test open]
+[input]
+100
+Sidecar
+7
+Mojito
+5
+White Russian
+10
+[/input]
+[output]
+Target acquired.
+Club income - 196.75 dollars.
+[/output]
+[/test]
 [test]
 [input]
 50

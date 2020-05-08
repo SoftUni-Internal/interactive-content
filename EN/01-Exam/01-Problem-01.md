@@ -2,8 +2,8 @@
 # Problem 01
 [code-task title="Problem-01" taskId="pb-python-march-exam-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
-```
-# Write your code here
+```python
+# Write code here
 ```
 [/code-editor]
 [task-description]
@@ -40,6 +40,17 @@ In the calculation of the number of umbrellas and sunbeds, their number should b
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+21
+5.50
+4.40
+6.20
+[/input]
+[output]
+254.10 dollars.
+[/output]
+[/test]
 [test]
 [input]
 32

@@ -2,8 +2,8 @@
 # Problem 05
 [code-task title="Problem-05" taskId="pb-python-march-exam-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
 [code-editor language=python]
-```
-# Write your code here
+```python
+# Write code here
 ```
 [/code-editor]
 [task-description]
@@ -74,6 +74,30 @@ The percent must be formatted to the second digit after the decimal point.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Liverpool
+10
+W
+D
+D
+W
+L
+W
+D
+D
+W
+W
+[/input]
+[output]
+Liverpool has won 19 points during this season.
+Total stats:
+\#\# W: 5
+\#\# D: 4
+\#\# L: 1
+Win rate: 50.00%
+[/output]
+[/test]
 [test]
 [input]
 Otbor deto igrae malko machove
