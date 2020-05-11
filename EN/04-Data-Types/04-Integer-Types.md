@@ -1,4 +1,4 @@
-# Integers
+# Integer types
 
 [slide]
 # Video
@@ -17,18 +17,18 @@ Valid types are **byte**, **short**, **int** and **long**, which type you should
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
-| byte | 0 | -128 (-2 ^ 7) | 127  (2 ^ 7 - 1)| 8 bit |
-| short | 0 | -32768 (-2 ^ 15) | 32767 (2 ^ 15 - 1) | 16 bit |
-| int | 0 | -2147483648 (-2 ^ 31) | 2147483647 (2 ^ 31 - 1) | 32 bit |
-| long | 0 | -9223372036854775808 (-2 ^ 63) | 9223372036854775807 (2 ^ 63 - 1) | 64 bit |
+| byte | 0 | -128 (-2<sup>7</sup>) | 127  (2<sup>7</sup> - 1)| 8 bit |
+| short | 0 | -32768 (-2<sup>15</sup>) | 32767 (2<sup>15</sup> - 1) | 16 bit |
+| int | 0 | -2147483648 (-2<sup>31</sup>) | 2147483647 (2<sup>31</sup> - 1) | 32 bit |
+| long | 0 | -9223372036854775808 (-2<sup>63</sup>) | 9223372036854775807 (2<sup>63</sup> - 1) | 64 bit |
 
 ## Examples
 
 ### Byte
 
-The **byte** data type can store whole numbers from -128 (-2 ^ 7) to 127 (2 ^ 7 - 1). 
+The **byte** data type can store whole numbers from -128 (-2<sup>7</sup>) to 127 (2<sup>7</sup> - 1). 
 
-This can be used instead of **int** or other integer types to save memory when you are certain that the value will be within (-2 ^ 7) and (2 ^ 7 - 1):
+This can be used instead of **int** or other integer types to save memory when you are certain that the value will be within (-2<sup>7</sup>) and (2<sup>7</sup> - 1):
 
 ```java live
 byte myNum = 100;
@@ -36,7 +36,7 @@ System.out.println(myNum);
 ```
 
 ### Short
-The **short** data type can store whole numbers from -32768 (-2 ^ 15) to 32767 (2 ^ 15 - 1):
+The **short** data type can store whole numbers from -32768 (-2<sup>15</sup>) to 32767 (2<sup>15</sup> - 1):
 
 ```java live
 short myNum = 5000;
@@ -44,7 +44,7 @@ System.out.println(myNum);
 ```
 
 ### Int
-The **int** data type can store whole numbers from -2147483648 (-2 ^ 31) to 2147483647 (2 ^ 31 - 1). 
+The **int** data type can store whole numbers from -2147483648 (-2<sup>31</sup>) to 2147483647 (2<sup>31</sup> - 1). 
 
 In general, and in our course, the **int** data type is the preferred data type when we create variables with a numeric value.
 
@@ -54,7 +54,7 @@ System.out.println(myNum);
 ```
 
 ### Long
-The **long** data type can store whole numbers from -9223372036854775808 (-2 ^ 63) to 9223372036854775807 (2 ^ 63 - 1). 
+The **long** data type can store whole numbers from -9223372036854775808 (-2<sup>63</sup>) to 9223372036854775807 (2<sup>63</sup> - 1). 
 
 This is used when int is not large enough to store the value.
 
@@ -68,9 +68,9 @@ System.out.println(myNum);
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Problem: Convert Meters to Kilometers
-[code-task title="Convert Meters to Kilometers" taskId="java-fundamentals-data-types-lesson-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Convert Meters to Kilometers" taskId="java-fundamentals-Data-Types-and-Variables-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -94,10 +94,11 @@ Write a program that converts meters to kilometers formatted to the second decim
 | 1852 | 1.85 |
 | 798 | 0.80 |
 
+
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 1852
 [/input]
@@ -158,9 +159,9 @@ Write a program that converts meters to kilometers formatted to the second decim
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Solution: Convert Meters to Kilometers
-[code-task title="Convert Meters to Kilometers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Convert Meters to Kilometers" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -170,7 +171,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int meters = Integer.parseInt(scanner.nextLine());
-        double kilometers = meters / 1000.0;
+        double kilometers = meters / 1000 d;
 
         System.out.println(String.format("%.2f", kilometers));
     }
@@ -193,7 +194,7 @@ Write a program that converts meters to kilometers formatted to the second decim
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 1852
 [/input]

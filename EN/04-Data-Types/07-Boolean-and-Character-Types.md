@@ -12,22 +12,22 @@
 
 [slide]
 # Boolean Type
-A boolean data type is declared with the **boolean** keyword and can only take the values `true` or `false`:
+A boolean data type is declared with the **boolean** keyword and can only take the values **true** or **false**:
 
 ```java live
-boolean isValid = true;
-boolean isPositive = 5 > 0;
-System.out.println(isValid);   
-System.out.println(isPositive);   
+boolean isJavaFun = true;
+boolean isFishTasty = false;
+System.out.println(isJavaFun);   
+System.out.println(isFishTasty);     
 ```
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 # Problem: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-data-types-lesson-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 
 public class Main {
@@ -41,7 +41,7 @@ public class Main {
 ## Description
 A **number** is **special** when its **sum of digits is 5, 7 or 11**.
 
-Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not - `true` or `false`.
+Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not **\(True / False\)**.
 
 ## Examples
 |**Input**|**Output**|
@@ -63,15 +63,13 @@ Write a program to read an integer **n** and for all numbers in the range **1…
 |  | 15 -> False |
  
 ### Hints
-To calculate the sum of digits of given number **num**, you might repeat the following steps:
-- sum the last digit - `num % 10`
-- remove the last digit - `sum = sum / 10`
-- until **num** reaches **0**
+To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **\(num % 10\)** and remove it **\(sum = sum / 10\)** until **num** reaches **0**.
+
 
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 15
 [/input]
@@ -257,11 +255,11 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/code-task]
 [/slide]
 
-[slide hideTitle]
+[slide]
 # Solution: Special Numbers
-[code-task title="Problem: Special Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 
 public class SpecialNumbers {
@@ -280,7 +278,9 @@ public class SpecialNumbers {
             } else {
                 System.out.printf("%d -> False%n", i);
             }
+
         }
+
     }
 }
 ```
@@ -289,7 +289,7 @@ public class SpecialNumbers {
 ## Description
 A **number** is **special** when its **sum of digits is 5, 7 or 11**.
 
-Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not - `true` or `false`.
+Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not **\(True / False\)**.
 
 ## Examples
 |**Input**|**Output**|
@@ -311,15 +311,13 @@ Write a program to read an integer **n** and for all numbers in the range **1…
 |  | 15 -> False |
  
 ### Hints
-To calculate the sum of digits of given number **num**, you might repeat the following steps:
-- sum the last digit - `num % 10`
-- remove the last digit - `sum = sum / 10`
-- until **num** reaches **0**
+To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **\(num % 10\)** and remove it **\(sum = sum / 10\)** until **num** reaches **0**.
+
 
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 15
 [/input]
@@ -503,4 +501,310 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+
+
+[slide]
+# Character Type
+The char data type is used to store a **single** character. The character must be surrounded by single quotes, like `A` or `c`.
+
+```java live
+char myGrade = 'B';
+System.out.println(myGrade);
+```
+
+The character also:
+
+* Gives each symbol a corresponding integer code.
+
+* Has a `\0` default value.
+
+* Takes 16 bits of memory \(from **U+0000** to **U+FFFF**\).
+
+* Holds a single Unicode character \(or part of character\).
+
+```java live
+char ch = 'a';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+
+ch = 'b';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+
+ch = 'A';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+```
+[/slide]
+
+[slide]
+# Problem: Reversed Chars
+[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that takes 3 lines of characters and prints them in reversed order with a space between them.
+
+## Examples
+|**Input**|**Output**|
+|-----|------|
+| A | C B A |
+| B |  |
+| C |  |
+
+|**Input**|**Output**|
+|-----|------|
+| 1 | & L 1 |
+| L |  |
+| & |  |
+ 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+A
+B
+C
+
+[/input]
+[output]
+C B A
+[/output]
+[/test]
+[test]
+[input]
+1
+L
+&
+
+[/input]
+[output]
+& L 1
+[/output]
+[/test]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+3 2 1
+[/output]
+[/test]
+[test]
+[input]
+A
+A
+A
+[/input]
+[output]
+A A A
+[/output]
+[/test]
+[test]
+[input]
+$
+%
+$
+[/input]
+[output]
+$ % $
+[/output]
+[/test]
+[test]
+[input]
+X
+a
+1
+[/input]
+[output]
+1 a X
+[/output]
+[/test]
+[test]
+[input]
+(
+0
+)
+[/input]
+[output]
+) 0 (
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+[slide]
+# Solution: Reversed Chars
+[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class ReversedChars {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String result = "";
+        for (int i = 0; i < 3; i++) {
+            char input = sc.nextLine().charAt(0);
+            result += input;
+        }
+        for (int i = result.length() - 1; i >= 0; i--) {
+            System.out.printf("%s ", result.charAt(i));
+        }
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that takes 3 lines of characters and prints them in reversed order with a space between them.
+
+## Examples
+|**Input**|**Output**|
+|-----|------|
+| A | C B A |
+| B |  |
+| C |  |
+
+|**Input**|**Output**|
+|-----|------|
+| 1 | & L 1 |
+| L |  |
+| & |  |
+ 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+A
+B
+C
+
+[/input]
+[output]
+C B A
+[/output]
+[/test]
+[test]
+[input]
+1
+L
+&
+
+[/input]
+[output]
+& L 1
+[/output]
+[/test]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+3 2 1
+[/output]
+[/test]
+[test]
+[input]
+A
+A
+A
+[/input]
+[output]
+A A A
+[/output]
+[/test]
+[test]
+[input]
+$
+%
+$
+[/input]
+[output]
+$ % $
+[/output]
+[/test]
+[test]
+[input]
+X
+a
+1
+[/input]
+[output]
+1 a X
+[/output]
+[/test]
+[test]
+[input]
+(
+0
+)
+[/input]
+[output]
+) 0 (
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Escaping Characters
+Because strings must be written within quotes, Java will misunderstand this string, and generate an error:
+
+```Java
+String txt = "We are the so-called "Vikings" from the north.";
+```
+
+The solution to avoid this problem, is to use the backslash escape character.
+
+The backslash \(\\\) escape character turns special characters into string characters:
+|**Escape character**|**Result**| **Description** |
+|-----|------| ------|
+|\\' | ' | Single quote |
+|\\" | " | Double quote |
+|\\\ | 	\\ | Backslash |
+
+The sequence `\"` inserts a double quote in a string:
+
+```Java live
+String txt = "We are the so-called \"Vikings\" from the north.";
+System.out.println(txt);
+```
+
+The sequence \'  inserts a single quote in a string:
+
+```Java live
+String txt = "It\'s alright.";
+System.out.println(txt);
+```
+
+The sequence `\\`  inserts a single backslash in a string:
+
+```Java live
+String txt = "The character \\ is called backslash.";
+System.out.println(txt);
+```
+
 [/slide]

@@ -23,14 +23,14 @@ Valid types are **float**, **double**:
 
 |Type | Min Value | Max Value| Size | Precision |
 |-----|------|-----|------|-----|
-| float | ±1.5 x (10 ^ -45) | ±3.4 x (10 ^ 38) | 32 bit | up to 7 digits |
-| double | ±5.0 x (10 ^ -324) | ±1.7 x (10 ^ 308) | 64 bit | up to 16 digits |
+| float | ±1.5 x (10<sup>-45</sup>) | ±3.4 x (10<sup>38</sup>) | 32 bit | up to 7 digits |
+| double | ±5.0 x (10<sup>-324</sup>) | ±1.7 x (10<sup>308</sup>) | 64 bit | up to 16 digits |
 
 ## Examples
 
 ### Float
 
-The **float** data type can store fractional numbers from ±1.5 x (10 ^ -45) to ±3.4 x (10 ^ 38).
+The **float** data type can store fractional numbers from ±1.5 x (10<sup>-45</sup>) to ±3.4 x (10<sup>38</sup>).
 
 Note that you should end the value with an `f`:
 
@@ -40,7 +40,7 @@ System.out.println(myNum);
 ```
 
 ### Double
-The **double** data type can store fractional numbers from ±5.0 x (10 ^ -324) to ±1.7 x (10 ^ 308).
+The **double** data type can store fractional numbers from ±5.0 x (10<sup>-324</sup>) to ±1.7 x (10<sup>308</sup>).
 
 Note that you should end the value with a `d`:
 
@@ -67,9 +67,9 @@ System.out.println("Double PI is: " + doublePI);
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Problem: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-data-types-lesson-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -85,17 +85,19 @@ public class Main {
 ## Description
 Write a program that converts **British pounds** to **US dollars** formatted to 3th decimal point.
 
-**Note:** 1 British Pound = 1.31 Dollars.
+1 British Pound = 1.31 Dollars
 
 ## Examples
 |**Input**|**Output**|
 |-----|------|
 | 80 | 104.800 |
+| 39 | 39 |
+
 
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 80
 [/input]
@@ -156,11 +158,11 @@ Write a program that converts **British pounds** to **US dollars** formatted to 
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Solution: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 
 public class Main {
@@ -177,17 +179,19 @@ public class Main {
 ## Description
 Write a program that converts **British pounds** to **US dollars** formatted to 3th decimal point.
 
-**NOTE**: 1 British Pound = 1.31 Dollars.
+1 British Pound = 1.31 Dollars
 
 ## Examples
 |**Input**|**Output**|
 |-----|------|
 | 80 | 104.800 |
+| 39 | 39 |
+
 
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 80
 [/input]
@@ -246,6 +250,7 @@ Write a program that converts **British pounds** to **US dollars** formatted to 
 [/tests]
 [/code-task]
 [/slide]
+
 
 [slide]
 # Scientific Notation
@@ -268,6 +273,7 @@ System.out.println(exampleVariableThree);
 ```
 
 # Floating-Point Division
+
 Integral division and floating-point division are different.
 
 See the examples below:
@@ -300,7 +306,7 @@ System.out.printf("a+b=%f sum=%f equal=%b", a+b, sum, (a + b == sum));
 double num = 0;
 
 for (int i = 0; i < 10000; i++) {
-    num += 0.0001;
+num += 0.0001;
 }
 
 System.out.println(num); 
@@ -312,26 +318,27 @@ Java includes a `BigDecimal` class for performing high-precision arithmetic whic
 This class approximately fit into the same category as the `wrapper` classes but has some very useful methods.
 
 ```java live
-BigDecimal number = new BigDecimal(0);
+BigDecimal number = new BigDecimal(0); 
 number = number.add(BigDecimal.valueOf(2.5));
-System.out.println(number);
+System.out.printf(number)
 
 number = number.subtract(BigDecimal.valueOf(1.5));
-System.out.println(number);
+System.out.printf(number)
 
 number = number.multiply(BigDecimal.valueOf(2));
-System.out.println(number);
+System.out.printf(number)
 
 number = number.divide(BigDecimal.valueOf(2));
-System.out.println(number);
+System.out.printf(number)
 ```
+
 [/slide]
 
-[slide hideTitle]
+[slide]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-data-types-lesson-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 import java.math.BigDecimal;
 
@@ -364,7 +371,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 3
 1000000000000000000
@@ -375,7 +382,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 0.00000000003
@@ -435,11 +442,11 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/code-task]
 [/slide]
 
-[slide hideTitle]
+[slide]
 # Solution: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.math.BigDecimal;
 import java.util.Scanner;
 
@@ -477,10 +484,11 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 | 0.00000000003 | |
 | 333333333333.3 |  |
 
+
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 3
 1000000000000000000
@@ -491,7 +499,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 0.00000000003
