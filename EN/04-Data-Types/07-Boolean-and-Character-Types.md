@@ -25,7 +25,7 @@ System.out.println(isFishTasty);
 
 [slide]
 # Problem: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-problem-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -257,7 +257,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 
 [slide]
 # Solution: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-solution-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -538,7 +538,7 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 
 [slide]
 # Problem: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-problem-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -651,7 +651,7 @@ a
 
 [slide]
 # Solution: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-solution-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

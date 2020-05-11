@@ -69,7 +69,7 @@ System.out.println("Double PI is: " + doublePI);
 
 [slide]
 # Problem: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-problem-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -160,7 +160,7 @@ Write a program that converts **British pounds** to **US dollars** formatted to 
 
 [slide]
 # Solution: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-solution-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -336,7 +336,7 @@ System.out.printf(number)
 
 [slide]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-problem-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -444,7 +444,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 
 [slide]
 # Solution: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-solution-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigDecimal;

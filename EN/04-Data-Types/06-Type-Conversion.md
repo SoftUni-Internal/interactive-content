@@ -45,7 +45,7 @@ System.out.println(myInt);
 
 [slide]
 # Problem: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables-problem-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -137,7 +137,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 [slide]
 # Solution: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables-solution-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
