@@ -3,11 +3,6 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="1028" endTimeInSeconds="1323"]
-[stream language="EN" videoId="343678060" default /]
-[stream language="RO" videoId="391452320"  /]
-[/vimeo-video]
-
 [/slide]
 
 [slide]
@@ -15,15 +10,14 @@
 
 ## Declaring Variables
 We can declare a variable in the following way:
-```java live
+```java
 int number = 5;
 String language = "english";
 ```
 
 ## Reading from or Printing to the Console
 
-### Reading from the Console
-```java
+```java live
 Scanner sc = new Scanner(System.in);
 String name = sc.nextLine();
 int age = Integer.parseInt(sc.nextLine());
@@ -32,15 +26,14 @@ double salary = Double.parseDouble(sc.nextLine());
 
 ### Printing to the Console
 ```java live
+Scanner sc = new Scanner(System.in);
 System.out.print("Name: ");
 String name = scanner.nextLine();
 System.out.println("Hi, " + name);
-// Name: George
-// Hi, George
 ```
 
 ## Conditional Statements
-We've learned how to implement programming logic, using **conditional statements**
+We use `if-else` statement to specify a block of Java code to be executed if a condition is true.
 
 ```java
 if (grade >= 3.00) {
@@ -51,7 +44,7 @@ if (grade >= 3.00) {
 ```
 
 ## Loops 
-We've learned how to repeat a code block multiple times, using **loops**
+If we want to repeat a block code multiple times we can use **loops**. 
 
 ### For loop example
 ```java live
@@ -63,19 +56,18 @@ for (int i = 1; i <= 10; i += 1) {
 ### While loop example
 ```java
 while (condition) {
-  loop body;
+  // loop body;
 }
 ```
 
 ### Do-While Loop example
-```java live
+```java
 int n = 0;
 do {
-    System.out.println(n);
-    n++;
-} while (n < 5);
+    // loop body;
+} while (condition);
 ```
 
 ## Debugging
-We've learned how to find bugs in our gode, useing **the debugger**.
+**Debugging** is the process of "**attaching**" to the program execution, which allows us to **track step by step the process**.
 [/slide]
