@@ -56,7 +56,7 @@ for (int i = 1; i <= 10; i += 1) {
 ### While loop example
 ```java
 while (condition) {
-  // loop body;
+  // loop body
 }
 ```
 
