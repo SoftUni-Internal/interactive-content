@@ -77,5 +77,5 @@ do {
 ```
 
 ## Debugging
-We've learned how to find bugs in our gode, useing **the debugger**.
+We've learned how to find bugs in our code, useing **the debugger**.
 [/slide]
