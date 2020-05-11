@@ -23,5 +23,5 @@ In programming it is almost the same.
 
 We use variables that act as jars for different data like numbers, text, symbols and so on. 
 
-And in the variable, we store numbers, we cannot store text."
+And in the variable, we store numbers, we cannot store text.
 [/slide]
