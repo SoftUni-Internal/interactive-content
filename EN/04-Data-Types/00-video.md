@@ -1,9 +1,9 @@
 [slide]
-# Training Session
+# Introduction
 
-[vimeo-video startTimeInSeconds="901"]
-[stream language="EN" videoId="385251779/4288f0ea81" default /]
-[stream language="RO" videoId="385455039/c211b09211"  /]
-[/video-vimeo]
+[vimeo-video startTimeInSeconds="901" endTimeInSeconds="1027"]
+[stream language="EN" videoId="343678060" default /]
+[stream language="RO" videoId="391452320"  /]
+[/vimeo-video]
 
 [/slide]

@@ -43,11 +43,11 @@ System.out.println(myInt);
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Problem: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-data-types-lesson-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 
 public class Main {
@@ -70,10 +70,11 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 |-----|------|
 | 5 | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
+
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 1
 [/input]
@@ -81,7 +82,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 5
 [/input]
@@ -134,11 +135,11 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [/slide]
 
 
-[slide hideTitle]
+[slide]
 # Solution: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fundamentals-Data-Types-and-Variables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```java
+```
 import java.util.Scanner;
 
 public class Main {
@@ -173,7 +174,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 1
 [/input]
@@ -181,7 +182,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 5
 [/input]

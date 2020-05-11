@@ -86,6 +86,8 @@ Before naming a variable, ask yourself  `What does this variable contain?`.
 
 [/slide]
 
+
+
 [slide]
 # Variable Scope and Lifetime
 
