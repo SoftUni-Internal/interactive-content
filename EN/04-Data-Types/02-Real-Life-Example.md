@@ -12,9 +12,9 @@
 
 [slide]
 # Real-Life Example: Kitchen jars
-You can imagine that **variables** are like your kitchen jars where you can store `salt`, `sugar`, `coffee`.
+You can imagine that **variables** are like your kitchen jars where you can store `salt`, `sugar`, `coffee`, `tea`.
 
-Any time you can open the sugar jar and take as much as you want, until there are no more sugar left in the jar.
+Any time you can open the sugar jar and take as much as you want, until there are no more sugar left in the jar. 
 [image assetsSrc="Install-IntelliJ-IDEA.png" /]
 
 In programming is almost the same, each **variable** stores a certain value of a particular type. 
