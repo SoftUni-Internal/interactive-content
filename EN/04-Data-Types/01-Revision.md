@@ -40,7 +40,7 @@ System.out.println("Hi, " + name);
 ```
 
 ## Conditional Statements
-We've learned how to implementing programming logic, using **conditional statements**
+We've learned how to implement programming logic, using **conditional statements**
 
 ```java
 if (grade >= 3.00) {
