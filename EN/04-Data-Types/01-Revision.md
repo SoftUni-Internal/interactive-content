@@ -33,7 +33,7 @@ System.out.println("Hi, " + name);
 ```
 
 ## Conditional Statements
-We use `if-else` statement to specify a block of Java code to be executed if a condition is true.
+We use `if-else` statement to specify a block of Java code to be executed if a condition is true:
 
 ```java
 if (grade >= 3.00) {
