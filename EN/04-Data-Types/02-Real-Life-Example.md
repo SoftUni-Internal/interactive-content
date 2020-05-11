@@ -12,14 +12,16 @@
 
 [slide]
 # Real-Life Example: Kitchen jars
-You can imagine that **variables** are like your kitchen jars where you can store `salt`, `sugar`, `coffee`, `tea`.
+You can think of variables as kitchen jars. 
 
-Any time you can open the sugar jar and take as much as you want, until there are no more sugar left in the jar. 
-[image assetsSrc="Install-IntelliJ-IDEA.png" /]
+You, personally, might store coffee in the sugar jar, but these ones will be different.
 
-In programming is almost the same, each **variable** stores a certain value of a particular type. 
+Imagine that in each jar you can only store one of the following: salt, sugar, or coffee. 
+[image assetsSrc="Variables-real-life-example.png" /]
 
-For example, data types can be: number, letter, text (string), date, color, image, list and others. 
+In programming it is almost the same. 
 
-Today we're going to do in depth learning about different data types and variables in Java.
+We use variables that act as jars for different data like numbers, text, symbols and so on. 
+
+And in the variable, we store numbers, we cannot store text."
 [/slide]
