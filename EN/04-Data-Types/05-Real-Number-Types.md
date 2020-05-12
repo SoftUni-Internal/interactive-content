@@ -28,17 +28,14 @@ Valid types are **float** and **double**:
 
 ## Examples
 
-- Float
-
-The **float** data type can store fractional numbers, note that you should end the value with an `f`:
+- **Float**: data type can store fractional numbers, note that you should end the value with an `f`:
 
 ```java live
 float myNum = 5.75f;
 System.out.println(myNum);
 ```
 
-- Double
-In this course when we need floating point number, most of the time we're going to use **double**.
+- **Double**: in this course when we need floating point number, most of the time we're going to use **double**.
 
 ```java live
 double myNum = 19.99;
@@ -311,22 +308,20 @@ System.out.println(num);
 ```
 # BigDecimal Class
 
-Java includes a `BigDecimal` class for performing high-precision arithmetic which can be used in banking or financial domain based application. 
+Java includes a `BigDecimal` class for performing high-precision arithmetic with 32-bit integer scale, which can be used in banking or financial domain based application. 
 
 
 ```java live
+//create number
 BigDecimal number = new BigDecimal(0); 
+//add 2.5
 number = number.add(BigDecimal.valueOf(2.5));
-System.out.println(number);
-
+//substract  1.5
 number = number.subtract(BigDecimal.valueOf(1.5));
-System.out.println(number);
-
+//multiply by 2
 number = number.multiply(BigDecimal.valueOf(2));
-SSystem.out.println(number);
-
+//divide by 2
 number = number.divide(BigDecimal.valueOf(2));
-System.out.println(number);
 ```
 
 [/slide]
