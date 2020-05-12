@@ -15,21 +15,21 @@ int number = 5;
 String language = "english";
 ```
 
-## Reading from or Printing to the Console
-
-```java live
+### Reading from the Console
+```java
 Scanner sc = new Scanner(System.in);
-String name = sc.nextLine();
+String name = sc.nextLine();                       
 int age = Integer.parseInt(sc.nextLine());
 double salary = Double.parseDouble(sc.nextLine());
 ```
 
 ### Printing to the Console
-```java live
-Scanner sc = new Scanner(System.in);
+```java
 System.out.print("Name: ");
 String name = scanner.nextLine();
 System.out.println("Hi, " + name);
+// Name: George
+// Hi, George
 ```
 
 ## Conditional Statements
