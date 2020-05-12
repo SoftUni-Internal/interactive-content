@@ -16,20 +16,18 @@ String language = "english";
 ```
 
 ### Reading from the Console
-```java
+```java live
 Scanner sc = new Scanner(System.in);
 String name = sc.nextLine();                       
 int age = Integer.parseInt(sc.nextLine());
-double salary = Double.parseDouble(sc.nextLine());
+System.out.println("My name is " +name+" and I am "+age+ " years old");
 ```
 
 ### Printing to the Console
-```java
-System.out.print("Name: ");
-String name = scanner.nextLine();
+```java live
+Scanner sc = new Scanner(System.in);
+String name = sc.nextLine();
 System.out.println("Hi, " + name);
-// Name: George
-// Hi, George
 ```
 
 ## Conditional Statements
