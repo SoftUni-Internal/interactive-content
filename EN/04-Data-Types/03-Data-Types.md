@@ -18,9 +18,6 @@ Taking in information is called input, storing information is better known as me
 
 [image assetsSrc="How-Does-Computing-Work.png" /]
 
-[/slide]
-
-[slide]
 # Variables
 
 A variable is a name given to a memory location. It is the basic unit of storage in a program.
@@ -39,7 +36,7 @@ int count = 5;
 ```
 
 * **Data type**: Type of data that can be stored in this variable.
-* **Variable name**: Name given to the variable.
+* **Variable name**: Name given to the variable .
 * **Variable value**: It is the initial value stored in the variable.
 
 [/slide]
@@ -51,9 +48,9 @@ Data types specify the different sizes and values that can be stored in the vari
 
 There are **two types of data types** in Java:
 
-* **Primitive data types**: built-into a programming language is called `primitive` data type. They're size and type of variable values are specified and they cannot be modified. The primitive data types include **boolean**, **char**, **byte**, **short**, **int**, **long**, **float** and **double**.
+- **Primitive data types**: built-into a programming language is called `primitive` data type. They're size and type of variable values are specified and they cannot be modified. The primitive data types include **boolean**, **char**, **byte**, **short**, **int**, **long**, **float** and **double**.
 
-* **Non-primitive data types**: These data types are not actually defined by the programming language but are created by the programmer. They are also called `reference variables` since they hold the address in the computer mommory \(RAM\) where the data is stored. The non-primitive data types include **String**, **Arrays** and **Classes**.
+- **Non-primitive data types**: These data types are not actually defined by the programming language but are created by the programmer. They are also called `reference variables` since they hold the address in the computer mommory \(RAM\) where the data is stored. The non-primitive data types include **String**, **Arrays** and **Classes**.
 
 ```java
 int myNum = 5;               // Integer (whole number)
@@ -64,11 +61,11 @@ String myText = "Hello";     // String
 ```
 As you see in the example above, **date types** have:
 
-* **Name** (Java keyword).
+* **Name**: Java keyword.
 
-* **Size** (how much memory is used).
+* **Size**: how much memory is used.
 
-* **Default value**.
+* **Value**: every variable hold value.
 
 [/slide]
 
@@ -94,11 +91,6 @@ The variable's name should explain it's purpose.
 
 Before naming a variable, ask yourself: **What does this variable contain?**
 
-[/slide]
-
-
-
-[slide]
 # Variable Scope and Lifetime
 
 **Scope** of a variable refers to in which areas or sections of a program can the variable be accessed and **lifetime** of a variable refers to how long the variable stays alive in memory.
@@ -130,7 +122,7 @@ Variable **span** is how long before a variable is called.
 
 It's good practice declare a variable as **late as possible** (e.g. shorter span).
 
-## Example
+- Example
 ```java
 static void main(String[] args) {
   String outer = "I'm inside the main()";
