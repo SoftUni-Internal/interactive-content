@@ -22,6 +22,36 @@ System.out.println(isFishTasty);
 ```
 In the example above we declare two variables with key word `boolean` and names as follow `isCodingFun` and `isFishTasty`. We use `=` operator to assign value to those variables. And then we print the result.
 
+# Character Type
+The char data type is used to store a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
+
+```java live
+char myGrade = 'B';
+System.out.println(myGrade);
+```
+
+The character also:
+
+* Gives each symbol a corresponding integer code.
+
+* Has a `\0` default value.
+
+* Takes 16 bits of memory \(from **U+0000** to **U+FFFF**\).
+
+* Holds a single Unicode character \(or part of character\).
+
+```java live
+char ch = 'a';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+
+ch = 'b';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+
+ch = 'A';
+System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+```
+In the exampla above we convert each character to it's **ASCII** value. **ASCII table** is the acronym for the `American Standard Code for Information Interchange`.
+It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. We encourage you to research it yourself!
 [/slide]
 
 [slide]
@@ -64,7 +94,7 @@ Write a program to read an integer **n** and for all numbers in the range **1…
 |  | 15 -> False |
  
 ### Hints
-To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **\(num % 10\)** and remove it **\(sum = sum / 10\)** until **num** reaches **0**.
+To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until **num** reaches **0**.
 
 
 [/task-description]
@@ -312,8 +342,7 @@ Write a program to read an integer **n** and for all numbers in the range **1…
 |  | 15 -> False |
  
 ### Hints
-To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **\(num % 10\)** and remove it **\(sum = sum / 10\)** until **num** reaches **0**.
-
+To calculate the sum of digits of given number **num**, you might repeat the following: sum the last digit **(num % 10)** and remove it **(sum = sum / 10)** until **num** reaches **0**.
 
 [/task-description]
 [code-io /]
@@ -504,40 +533,6 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 [/code-task]
 [/slide]
 
-
-[slide]
-# Character Type
-The char data type is used to store a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
-
-```java live
-char myGrade = 'B';
-System.out.println(myGrade);
-```
-
-The character also:
-
-* Gives each symbol a corresponding integer code.
-
-* Has a `\0` default value.
-
-* Takes 16 bits of memory \(from **U+0000** to **U+FFFF**\).
-
-* Holds a single Unicode character \(or part of character\).
-
-```java live
-char ch = 'a';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
-
-ch = 'b';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
-
-ch = 'A';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
-```
-In the exampla above we convert each character to it's **ASCII** value. **ASCII table** is the acronym for the `American Standard Code for Information Interchange`.
-It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. We encourage you to research it yourself!
-[/slide]
-
 [slide]
 # Problem: Reversed Chars
 [code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-problem-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -613,16 +608,6 @@ A
 [/input]
 [output]
 A A A
-[/output]
-[/test]
-[test]
-[input]
-$
-%
-$
-[/input]
-[output]
-$ % $
 [/output]
 [/test]
 [test]
@@ -732,16 +717,6 @@ A A A
 [/test]
 [test]
 [input]
-$
-%
-$
-[/input]
-[output]
-$ % $
-[/output]
-[/test]
-[test]
-[input]
 X
 a
 1
@@ -775,11 +750,11 @@ String txt = "We are the so-called "Vikings" from the north.";
 The solution to avoid this problem, is to use the backslash escape character.
 
 The backslash \(\\\) escape character turns special characters into string characters:
-|**Escape character**|**Result**| **Description** |
-| --- | --- | --- |
-|\\' | ' | Single quote |
-|\\" | " | Double quote |
-|\\\ | 	\\ | Backslash |
+
+**Escape character**:
+- \\' -> '  Single quote;
+- \\" -> "  Double quote; 
+- \\\ -> \\ Backslash;
 
 The sequence `\"` inserts a double quote in a string:
 
