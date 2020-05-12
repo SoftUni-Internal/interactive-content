@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Orders
-[code-task title="Orders" taskId="java-fundamentals-assosiative-arrays-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Orders" taskId="f677f7ed-d545-4c07-b912-71da212d943a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

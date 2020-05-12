@@ -42,7 +42,7 @@ You can use `fori` live template in Intellij, using `fori` push \[Tab\] twice.
 
 [slide hideTitle]
 # Problem: Divisible by 3
-[code-task title="Divisible by 3" taskId="java-fundamentals-basic-syntax-lesson-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Divisible by 3" taskId="f9c26787-72f2-4345-87a1-3faf6bc6d2f4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -178,7 +178,7 @@ The program should not receive input.
 
 [slide hideTitle]
 # Problem Sum of Odd Numbers
-[code-task title="Sum of Odd Numbers" taskId="java-fundamentals-basic-syntax-lesson-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Odd Numbers" taskId="93043fb3-836e-4ee0-baf6-8e7057cf5636" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -490,7 +490,7 @@ All this is repeated again and again **until at some point the conditional expre
 
 [slide hideTitle]
 # Problem: Multiplication Table
-[code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiplication Table" taskId="0594e792-2522-4dbc-8417-c0c4781504cd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -637,7 +637,7 @@ Print every row of the table in the following format: `theInteger X times = prod
 
 [slide hideTitle]
 # Solution: Multiplication Table
-[code-task title="Multiplication Table" taskId="java-fundamentals-basic-syntax-lesson-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiplication Table" taskId="a9f86f49-4282-448e-b705-4d2442564902" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -818,7 +818,7 @@ This process repeats until the given condition becomes false.
 
 [slide hideTitle]
 # Problem: Multiplication Table 2.0
-[code-task title="Multiplication Table 2.0" taskId="java-fundamentals-basic-syntax-lesson-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiplication Table 2.0" taskId="cf93d721-5d3f-459a-9c55-f2b73ea674af" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Replace Repeating Chars
-[code-task title="Replace Repeating Chars" taskId="java-fundamentals-text-processing-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Replace Repeating Chars" taskId="66b4fe88-c9f9-4027-a35b-9d733b7cba2a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

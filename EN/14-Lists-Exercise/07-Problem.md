@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Append Arrays
-[code-task title="Append Arrays" taskId="java-fundamentals-lists-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Append Arrays" taskId="e9942979-121f-410c-950c-453ee9b1eb50" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide]
 # Registration
-[code-task title="Registration" taskId="java-fundamentals-final-exam-prep-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Registration" taskId="d3807cc1-117e-4698-9d49-adceb9e49978" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

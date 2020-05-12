@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Factorial Division
-[code-task title="Factorial Division" taskId="java-fundamentals-methods-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Factorial Division" taskId="5b653c17-08cd-473e-9274-3a2fad054d94" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

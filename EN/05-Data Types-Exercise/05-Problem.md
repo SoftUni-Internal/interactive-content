@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Print Part of the ASCII Table" taskId="JF-02-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print Part of the ASCII Table" taskId="155c5406-4091-4b8a-a968-853ab2103533" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Character Multiplier
-[code-task title="Character Multiplier" taskId="java-fundamentals-text-processing-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Character Multiplier" taskId="8dd26c21-d68c-4e7e-bb09-a72a527aa521" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

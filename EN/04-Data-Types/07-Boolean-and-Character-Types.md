@@ -56,7 +56,7 @@ It is a code for representing 128 English characters as numbers, with each lette
 
 [slide]
 # Problem: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-problem-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="b7209ede-5f27-41c7-b513-38f74d90a8b4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -288,7 +288,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 
 [slide]
 # Solution: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fundamentals-Data-Types-and-Variables-solution-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="aa153a78-04bb-4aa2-9918-b3be5129397b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -535,7 +535,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 
 [slide]
 # Problem: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-problem-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="fe492dca-20e0-415d-8c44-65a5a6c8f73a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -637,7 +637,7 @@ a
 
 [slide]
 # Solution: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fundamentals-Data-Types-and-Variables-solution-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="b3555c4a-4b2c-4878-944e-0b0eb64cf854" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

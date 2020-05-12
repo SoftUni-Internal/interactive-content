@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Count Chars in a String
-[code-task title="Count Chars in a String" taskId="java-fundamentals-assosiative-arrays-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Chars in a String" taskId="95ac6981-6926-4f87-a71a-40a9025161d6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

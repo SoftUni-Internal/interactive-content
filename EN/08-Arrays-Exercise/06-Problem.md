@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Equal Sums
-[code-task title="Equal Sums" taskId="java-fundamentals-arrays-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Sums" taskId="feeb5cf4-349f-4ba8-8ead-5ee22c3e44bd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

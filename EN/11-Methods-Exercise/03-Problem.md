@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Characters in Range
-[code-task title="Characters in Range" taskId="java-fundamentals-methods-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Characters in Range" taskId="d24a1005-2e60-4945-8a07-b4849fdd2bff" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Parking
-[code-task title="Parking" taskId="java-fundamentals-assosiative-arrays-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Parking" taskId="5cc3b7a5-ce88-4822-bce2-841d1e366c33" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

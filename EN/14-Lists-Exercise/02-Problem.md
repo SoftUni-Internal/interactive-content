@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Change List
-[code-task title="Change List" taskId="java-fundamentals-lists-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Change List" taskId="b06a96d8-e2c4-4e5c-9809-ced29ebc5f3e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

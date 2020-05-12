@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Star Enigma
-[code-task title="Star Enigma" taskId="java-fundamentals-regex-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Star Enigma" taskId="62851f82-c61f-4d6b-967b-e4646496f4c3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

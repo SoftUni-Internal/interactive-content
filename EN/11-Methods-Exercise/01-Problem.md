@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Smallest of Three Numbers
-[code-task title="Smallest of Three Numbers" taskId="java-fundamentals-methods-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Smallest of Three Numbers" taskId="84385d71-1c90-4480-8a28-fe69740c9cb0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

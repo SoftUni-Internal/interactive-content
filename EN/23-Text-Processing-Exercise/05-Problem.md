@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Multiply Big Number
-[code-task title="Multiply Big Number" taskId="java-fundamentals-text-processing-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply Big Number" taskId="0253a8fb-6cb7-4ed7-a527-43518d47f23e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

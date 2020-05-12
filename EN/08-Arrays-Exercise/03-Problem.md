@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Zig-Zag Arrays
-[code-task title="Zig-Zag Arrays" taskId="java-fundamentals-arrays-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig-Zag Arrays" taskId="6c8358c3-589f-4c49-94b3-d403d955121d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

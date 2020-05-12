@@ -62,7 +62,7 @@ System.out.println("Double PI is: " + doublePI);
 
 [slide]
 # Problem: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-problem-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="257f2500-6c55-4c63-b129-932f0429fa74" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -154,7 +154,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 
 [slide]
 # Solution: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-solution" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="55739714-6ae4-4768-9253-80471a3d212b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -328,7 +328,7 @@ number = number.divide(BigDecimal.valueOf(2));
 
 [slide]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-problem-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="6e574f9f-8c01-40ec-8f12-7f2b36130a02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -436,7 +436,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 
 [slide]
 # Solution: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types-and-Variables-solution-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="55739714-6ae4-4768-9253-80471a3d212b-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigDecimal;

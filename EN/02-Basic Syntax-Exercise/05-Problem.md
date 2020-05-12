@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Login
-[code-task title="Login" taskId="JF-01-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Login" taskId="931b4593-e029-460b-a683-ddd00ea262a8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

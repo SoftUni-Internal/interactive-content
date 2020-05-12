@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Add and Subtract
-[code-task title="Add and Subtract" taskId="java-fundamentals-methods-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Add and Subtract" taskId="f587dbb7-061e-4f77-a269-98118c8a2104" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

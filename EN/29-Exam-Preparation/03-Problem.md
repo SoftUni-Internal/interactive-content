@@ -1,6 +1,6 @@
 [slide]
 # Inbox Manager
-[code-task title="Inbox Manager" taskId="java-fundamentals-final-exam-prep-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Inbox Manager" taskId="64e29e83-0df4-41cb-b25b-44ea07742954" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

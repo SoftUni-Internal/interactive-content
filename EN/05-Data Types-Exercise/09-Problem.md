@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="JF-02-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Spice Must Flow" taskId="a2b10ea9-bf93-4305-830a-7e30aae770e2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

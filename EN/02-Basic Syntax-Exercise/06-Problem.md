@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Strong Number
-[code-task title="Strong Number" taskId="JF-01-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Strong Number" taskId="ed9f992a-57c1-4776-a4ba-e19f9bf7b0b9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

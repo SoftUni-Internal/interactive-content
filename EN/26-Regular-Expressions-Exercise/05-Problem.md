@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Nether Realms
-[code-task title="Nether Realms" taskId="java-fundamentals-regex-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Nether Realms" taskId="b906fb25-6321-44d0-bde6-80b88937d198" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

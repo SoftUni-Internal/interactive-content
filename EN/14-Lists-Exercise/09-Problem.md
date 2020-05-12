@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: SoftUni Course Planning
-[code-task title="SoftUni Course Planning" taskId="java-fundamentals-lists-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Course Planning" taskId="57aa6f4c-60c1-4980-bf61-abe22992681f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

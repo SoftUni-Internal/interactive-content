@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" taskId="JF-02-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="a6015fb2-e271-46eb-ad1f-f448246c1a60" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

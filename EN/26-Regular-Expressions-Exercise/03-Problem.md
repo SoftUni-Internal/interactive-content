@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Bar Income
-[code-task title="Bar Income" taskId="java-fundamentals-regex-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bar Income" taskId="f4d199ba-5dc2-49c6-a7ef-ea9cb9c71a6d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

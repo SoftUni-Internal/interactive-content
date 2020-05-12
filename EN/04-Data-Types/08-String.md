@@ -56,7 +56,7 @@ System.out.printf("Your full name is %s.", fullName);
 
 [slide]
 # Problem: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fundamentals-Data-Types-and-Variables-problem-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Concat Names" taskId="e4bd4ac9-c747-4c23-b11a-4a2f9397920d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -179,7 +179,7 @@ abc-->123
 
 [slide]
 # Solution: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fundamentals-Data-Types-and-Variables-solution-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Concat Names" taskId="4da0811d-4f8f-4588-87ab-31e26978ad1b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

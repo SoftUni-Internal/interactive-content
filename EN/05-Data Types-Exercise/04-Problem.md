@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="JF-02-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Chars" taskId="1be21214-a9e3-4bd1-a880-8586ffc858fb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

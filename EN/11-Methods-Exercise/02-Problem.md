@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Vowels Count
-[code-task title="Vowels Count" taskId="java-fundamentals-methods-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowels Count" taskId="7e9cfa72-50cc-4c79-83dc-f2e4f159ca8f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

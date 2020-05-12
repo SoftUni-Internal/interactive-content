@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: NxN Matrix
-[code-task title="NxN Matrix" taskId="java-fundamentals-methods-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="NxN Matrix" taskId="c59605ec-57a7-4ba1-ba02-5463209d72de" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

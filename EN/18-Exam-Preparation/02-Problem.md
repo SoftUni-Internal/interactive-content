@@ -1,6 +1,6 @@
 [slide]
 # Shopping List
-[code-task title="Shopping List" taskId="java-fundamentals-mid-exam-prep-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Shopping List" taskId="2dd725e4-bfbd-45ef-8997-23eb46722ee5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

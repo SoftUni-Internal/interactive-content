@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Middle Characters
-[code-task title="Middle Characters" taskId="java-fundamentals-methods-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Middle Characters" taskId="49ba98bf-12aa-4085-b4e7-7d050d5dfc59" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

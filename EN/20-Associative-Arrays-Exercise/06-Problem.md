@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Courses
-[code-task title="Courses" taskId="java-fundamentals-assosiative-arrays-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Courses" taskId="ffed8271-3b3f-46de-bd26-273d16582333" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

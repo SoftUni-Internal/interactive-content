@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Train
-[code-task title="Train" taskId="java-fundamentals-arrays-01" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
+[code-task title="Train" taskId="fb8782ce-c44f-4b82-9f99-00135bb69e8f" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

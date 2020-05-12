@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: ForceBook
-[code-task title="ForceBook" taskId="java-fundamentals-assosiative-arrays-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="ForceBook" taskId="9bc11cca-f0ef-401d-a174-42b93f03c811" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

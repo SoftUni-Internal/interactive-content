@@ -54,7 +54,7 @@ numbers[10] = 1; // ArrayIndexOutOfBoundsException
 
 [slide]
 # Problem: Day of Weekr
-[code-task title="Problem: Day of Weekr" taskId="java-fundamentals-Arrays-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Day of Weekr" taskId="71f48600-35f4-440c-a233-7710f5fe7a99" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -207,7 +207,7 @@ Invalid day!
 
 [slide]
 # Solution: Day of Weekr
-[code-task title="Problem: Day of Weekr" taskId="java-fundamentals-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Day of Weekr" taskId="9cfa4cb8-1354-4f90-8574-a82485f22fcb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

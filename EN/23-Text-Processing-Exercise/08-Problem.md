@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Letters Change Numbers
-[code-task title="Letters Change Numbers" taskId="java-fundamentals-text-processing-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Letters Change Numbers" taskId="904f4c38-b525-446b-89b7-df45a3fa840b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

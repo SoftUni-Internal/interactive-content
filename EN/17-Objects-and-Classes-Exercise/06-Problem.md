@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Person ID
-[code-task title="Person ID" taskId="java-fundamentals-objects-and-classes-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Person ID" taskId="1f64bed6-7fca-4528-86f0-b8efd0bf1fcf" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

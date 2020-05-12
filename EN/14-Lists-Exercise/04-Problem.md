@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: List Operations
-[code-task title="List Operations" taskId="java-fundamentals-lists-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List Operations" taskId="53976a00-b0cb-4716-b44e-48a2a7b6fe94" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

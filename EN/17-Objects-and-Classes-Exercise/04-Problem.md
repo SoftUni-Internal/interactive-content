@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Students
-[code-task title="Students" taskId="java-fundamentals-objects-and-classes-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Students" taskId="c4b8d28b-e8ab-492f-bb87-3098c5862e10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

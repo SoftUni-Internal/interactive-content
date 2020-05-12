@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Company Users
-[code-task title="Company Users" taskId="java-fundamentals-assosiative-arrays-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Company Users" taskId="d4c5fcc2-0b0a-4fdf-8a97-be46e4a9e197" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

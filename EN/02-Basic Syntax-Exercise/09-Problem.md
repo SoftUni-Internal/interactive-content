@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Padawan Equipment
-[code-task title="Padawan Equipment" taskId="JF-01-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Padawan Equipment" taskId="ff6045fd-c81a-4ea6-bedb-b9a7c9bf09b0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

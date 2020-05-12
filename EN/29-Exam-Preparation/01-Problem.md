@@ -1,6 +1,6 @@
 [slide]
 # Email Validator
-[code-task title="Email Validator" taskId="java-fundamentals-final-exam-prep-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Email Validator" taskId="a6f7d9dd-7e35-43fe-b3f8-c90ee64026c7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

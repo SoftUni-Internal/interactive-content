@@ -47,7 +47,7 @@ In that example the result is true because one of the conditions are true (5 is 
 
 [slide hideTitle]
 # Problem Theatre Promotions
-[code-task title="Theatre Promotions" taskId="java-fundamentals-basic-syntax-lesson-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Theatre Promotions" taskId="75681c49-470f-4a1f-808c-d3e26cfd3ef5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

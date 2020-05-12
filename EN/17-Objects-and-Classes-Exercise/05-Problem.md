@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Vehicle Catalogue
-[code-task title="Vehicle Catalogue" taskId="java-fundamentals-objects-and-classes-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vehicle Catalogue" taskId="75e9952c-3f3d-47cf-a3f5-b1f3cbc630b9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

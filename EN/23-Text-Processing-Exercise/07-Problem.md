@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: String Explosion
-[code-task title="String Explosion" taskId="java-fundamentals-text-processing-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="String Explosion" taskId="ba2d7943-6271-4a2e-9266-5dae9fed1ba3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

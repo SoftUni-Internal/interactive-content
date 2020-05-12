@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Common Elements
-[code-task title="Common Elements" taskId="java-fundamentals-arrays-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Common Elements" taskId="3d8a64f9-e5ed-4e6a-9e89-23c7388ee617" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

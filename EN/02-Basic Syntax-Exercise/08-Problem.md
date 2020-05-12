@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Triangle of Numbers
-[code-task title="Triangle of Numbers" taskId="JF-01-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triangle of Numbers" taskId="6f2fec5e-86ef-4cf6-a92e-ee5179d37481" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

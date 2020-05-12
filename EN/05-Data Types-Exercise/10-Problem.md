@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="JF-02-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poke Mon" taskId="4eb5b46d-7cc9-4ec2-90fd-d21709b95f7a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

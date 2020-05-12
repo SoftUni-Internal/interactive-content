@@ -103,7 +103,7 @@ System.out.println(result);
 
 [slide hideTitle]
 # Problem: Student Information
-[code-task title="Student Information" taskId="java-fundamentals-basic-syntax-lesson-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Student Information" taskId="5430f0a3-511c-4228-98b1-df027f8b12b5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Top Integers
-[code-task title="Top Integers" taskId="java-fundamentals-arrays-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Top Integers" taskId="93998a52-eb1c-4024-9ebd-d38a6df4f5a5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Max Sequence of Equal Elements
-[code-task title="Max Sequence of Equal Elements" taskId="java-fundamentals-arrays-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Max Sequence of Equal Elements" taskId="baa4230f-93c8-4fb7-b7d6-a493fb35cb69" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

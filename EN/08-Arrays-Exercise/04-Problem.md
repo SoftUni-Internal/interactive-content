@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Array Rotation
-[code-task title="Array Rotation" taskId="java-fundamentals-arrays-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Array Rotation" taskId="314e9e03-2f67-4881-a461-6da8e47f908a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

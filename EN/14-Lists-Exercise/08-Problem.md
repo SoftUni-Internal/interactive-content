@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Pokemon Don't Go
-[code-task title="Pokemon Don't Go" taskId="java-fundamentals-lists-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pokemon Don't Go" taskId="1a2c6f61-42a0-4919-b402-4e4d9d209f8f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Furniture
-[code-task title="Furniture" taskId="java-fundamentals-regex-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Furniture" taskId="03a38e07-6ad8-453f-9595-bc4d9c14b30d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

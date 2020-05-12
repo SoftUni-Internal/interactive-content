@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Town Info
-[code-task title="Problem: Town Info" taskId="java-fundamentals-Data-Types-and-Variables-Homework-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Town Info" taskId="f59a7291-02a4-4eb7-95aa-a272a71da021" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -82,7 +82,7 @@ Town KEF has population of 10000 and area 500 square km.
 
 [slide]
 # Problem: Chars to String
-[code-task title="Problem: Chars to String" taskId="java-fundamentals-Data-Types-and-Variables-Homework-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Chars to String" taskId="6bb0a787-48b0-412b-90cf-cba7ea8c9d5c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -209,7 +209,7 @@ b
 
 [slide]
 # Problem: Lower or Upper
-[code-task title="Problem: Lower or Upper" taskId="java-fundamentals-Data-Types-and-Variables-Homework-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Lower or Upper" taskId="65519ad1-b13a-4eb0-a7dc-24805b4bb257" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

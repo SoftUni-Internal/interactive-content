@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Elevator
-[code-task title="Elevator" taskId="JF-02-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Elevator" taskId="335c547e-304d-4697-83be-56849b189395" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: A Miner Task
-[code-task title="A Miner Task" taskId="java-fundamentals-assosiative-arrays-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="A Miner Task" taskId="6275489d-9eb4-43ca-850a-1c055cb6377f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

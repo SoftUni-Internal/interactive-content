@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Race
-[code-task title="Race" taskId="java-fundamentals-regex-2" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
+[code-task title="Race" taskId="ce66b922-72e3-4277-9c51-4e988d899ed8" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

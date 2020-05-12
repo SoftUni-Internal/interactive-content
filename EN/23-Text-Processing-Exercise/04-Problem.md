@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Caesar Cipher
-[code-task title="Caesar Cipher" taskId="java-fundamentals-text-processing-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Caesar Cipher" taskId="c46864a7-02cc-4fdd-b8a9-2daf11d12134" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Vending Machine
-[code-task title="Vending Machine" taskId="JF-01-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vending Machine" taskId="398febaf-1b28-474e-89aa-4326d487effd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

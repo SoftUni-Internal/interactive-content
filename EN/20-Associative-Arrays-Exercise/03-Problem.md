@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Legendary Farming
-[code-task title="Legendary Farming" taskId="java-fundamentals-assosiative-arrays-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Legendary Farming" taskId="93f0004d-ff1f-47bb-9ca6-fae9129a540d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

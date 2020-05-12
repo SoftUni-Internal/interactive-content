@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Password Validator
-[code-task title="Password Validator" taskId="java-fundamentals-methods-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Password Validator" taskId="40e046c0-efda-4096-8812-f4b1b72599ee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

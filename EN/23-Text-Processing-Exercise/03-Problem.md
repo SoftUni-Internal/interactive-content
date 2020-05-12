@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Extract File
-[code-task title="Extract File" taskId="java-fundamentals-text-processing-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Extract File" taskId="cac7c441-14af-4959-a260-7542a570f50b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
