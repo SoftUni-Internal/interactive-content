@@ -1,4 +1,4 @@
-# Arrays
+# Reading and Printing Array
 
 [slide]
 # Video
