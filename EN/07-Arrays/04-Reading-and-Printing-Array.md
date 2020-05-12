@@ -10,9 +10,9 @@
 
 [slide]
 # Reading Arrays From the Console
-There is no direct way to take array input in Java using Scanner or any other utility, but it's pretty easy to achieve the same by using standard **Scanne)** methods and asking some questions to the user. 
+There is no direct way to take array input in Java using Scanner or any other utility, but it's pretty easy to achieve the same by using standard **Scanne** methods and asking some questions to the user. 
 
-For example, if you want to take an **array of String** as input then you can first you need the length of the array and then you can use a for loop to retrieve that many elements and store them in an array.
+For example, if you want to take an **array of string** as input then you can first you need the length of the array and then you can use a for loop to retrieve that many elements and store them in an array.
 
 ```Java
 int n = Integer.parseInt(sc.nextLine()); //Receive the array length
@@ -36,7 +36,7 @@ for (int i = 0; i < items.length; i++){
   arr[i] = Integer.parseInt(items[i]);
 }
 ```
-## Shorter: Reading Array from a Single Line
+# Shorter: Reading Array from a Single Line
 
 We can read an array of integers using functional programming: 
 
@@ -44,20 +44,15 @@ We can read an array of integers using functional programming:
 
 ```Java
 String inputLine = sc.nextLine();
-String[] items = inputLine.split(" ");
-int[] arr = Arrays
-    .stream(items)
-    .mapToInt(e - > Integer.parseInt(e))
-    .toArray();
-```
-* Or we can chain method:
 
-```Java
+String[] items = inputLine
+.split(" ");                 
+
 int[] arr = Arrays
-    .stream(sc.nextLine()
-    .split(" "))
-    .mapToInt(e - > Integer.parseInt(e))
-    .toArray();
+.stream(scanner.nextLine()   //read the input from the console as string
+.split(" "))                 //split the input by space
+.mapToInt(Integer::parseInt) //convert the string input to int
+.toArray();                  //convert to array
 ```
 [/slide]
 
