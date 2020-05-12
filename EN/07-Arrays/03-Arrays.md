@@ -20,9 +20,6 @@ Arrays are used to store multiple values in a single variable, instead of declar
 
 * Elements are numbered from **0** to **length-1**.
 
-[/slide]
-
-[slide]
 # Working with Arrays
 
 **Allocating** an array of 10 integers. We initialize the array, but all values are **0**, because default of `int` is zero.
