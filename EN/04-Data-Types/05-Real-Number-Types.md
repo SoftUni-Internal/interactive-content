@@ -311,7 +311,7 @@ System.out.println(num);
 Java includes a `BigDecimal` class for performing high-precision arithmetic with 32-bit integer scale, which can be used in banking or financial domain based application. 
 
 
-```java live
+```java
 //create number
 BigDecimal number = new BigDecimal(0); 
 //add 2.5
