@@ -24,9 +24,7 @@ Valid types are **byte**, **short**, **int** and **long**, which type you should
 
 ## Examples
 
-- Byte
-
-The **byte** data type can store whole numbers from -128 to 127. 
+- **Byte** data type can store whole numbers from -128 to 127. 
 
 This can be used instead of **int** or other integer types to save memory when you are certain that the value will be within -128 to 127:
 
@@ -35,16 +33,14 @@ byte myNum = 100;
 System.out.println(myNum);
 ```
 
-- Short
-The **short** data type can store whole numbers from -32768 to 32767:
+- **Short** data type can store whole numbers from -32768 to 32767:
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- Int
-The **int** data type can store whole numbers from -2147483648 to 2147483647. 
+- **Int** data type can store whole numbers from -2147483648 to 2147483647. 
 
 In general, and in our course, the **int** data type is the preferred data type when we create variables with a numeric value.
 
@@ -53,8 +49,7 @@ int myNum = 100000;
 System.out.println(myNum);
 ```
 
-- Long
-The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807. 
+- **Long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807. 
 
 This is used when int is not large enough to store the value.
 
