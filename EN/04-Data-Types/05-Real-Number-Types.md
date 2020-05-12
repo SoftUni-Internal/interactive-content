@@ -19,28 +19,26 @@ Floating-point types also:
 * Sometimes behave abnormally in the calculations.
 * May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**.
 
-Valid types are **float**, **double**:
+Valid types are **float** and **double**:
 
-|Type | Min Value | Max Value| Size | Precision |
-|-----|------|-----|------|-----|
-| float | ±1.5 x \(10<sup>-45</sup>\) | ±3.4 x \(10<sup>38</sup>\) | 32 bit | up to 7 digits |
-| double | ±5.0 x \(10<sup>-324</sup>\) | ±1.7 x \(10<sup>308</sup>\) | 64 bit | up to 16 digits |
+|Type | Size | Precision |
+|-----|------|-----|
+| float | 32 bit | up to 7 digits |
+| double | 64 bit | up to 16 digits |
 
 ## Examples
 
-### Float
+- Float
 
-The **float** data type can store fractional numbers from ±1.5 x \(10<sup>-45</sup>\) to ±3.4 x \(10<sup>38</sup>\).
-
-Note that you should end the value with an `f`:
+The **float** data type can store fractional numbers, note that you should end the value with an `f`:
 
 ```java live
 float myNum = 5.75f;
 System.out.println(myNum);
 ```
 
-### Double
-The **double** data type can store fractional numbers from ±5.0 x \(10<sup>-324</sup>\) to ±1.7 x \(10<sup>308</sup>\).
+- Double
+In this course when we need floating point number, most of the time we're going to use **double**.
 
 ```java live
 double myNum = 19.99;
