@@ -154,7 +154,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 
 [slide]
 # Solution: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-solution-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fundamentals-Data-Types-and-Variables-solution" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
