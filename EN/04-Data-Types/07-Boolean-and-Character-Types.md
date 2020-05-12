@@ -11,7 +11,7 @@
 [/slide]
 
 [slide]
-# Boolean Type
+# Boolean and character types
 A boolean data type is declared with the **boolean** keyword with two choices of value: **true** or **false**:
 
 ```java live
