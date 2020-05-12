@@ -1,3 +1,0 @@
-[slide]
-# Reading Arrays
-[/slide]
