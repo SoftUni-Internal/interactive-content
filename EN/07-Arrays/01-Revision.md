@@ -17,7 +17,7 @@
 
 Stores whole numbers, positive or negative \(such as 123 or -456\), without decimals.
 
-Valid integer types: **byte**, **short**, **int** and **long**, which type you should use, depends on the numeric value.
+Valid integer types: **byte**, **short**, **int** and **long**, which type you should use depends on the numeric value.
 
 ## Floating point types
 
