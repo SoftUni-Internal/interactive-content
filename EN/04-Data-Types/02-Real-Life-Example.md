@@ -17,7 +17,7 @@ You can think of variables as kitchen jars.
 You, personally, might store coffee in the sugar jar, but these ones will be different.
 
 Imagine that in each jar you can only store one of the following: salt, sugar, or coffee. 
-[image assetsSrc="Variables-real-life-example.png" /]
+[image assetsSrc="Variables-real-life-example.jpg" /]
 
 In programming it is almost the same. 
 
