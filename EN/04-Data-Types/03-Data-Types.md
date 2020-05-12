@@ -70,8 +70,7 @@ As you see in the example above, **date types** have:
 [/slide]
 
 [slide]
-## Naming Variables
-
+# Naming Variables
 Naming conventions make programs more understandable by making them easier to read. 
 
 They can also give information about the function of the identifier-for example, whether it's a constant, package, or class-which can 
@@ -90,7 +89,9 @@ int personAge = 41;
 The variable's name should explain it's purpose. 
 
 Before naming a variable, ask yourself: **What does this variable contain?**
+[/slide]
 
+[slide]
 # Variable Scope and Lifetime
 
 **Scope** of a variable refers to in which areas or sections of a program can the variable be accessed and **lifetime** of a variable refers to how long the variable stays alive in memory.
@@ -115,7 +116,9 @@ public static void main(String[] args) {
 
   // System.out.println(inner); Error
 ```
+[/slide]
 
+[slide]
 # Variable Span
 
 Variable **span** is how long before a variable is called.
@@ -160,5 +163,4 @@ static void main(String[] args) {
   //System.out.println(inner); Error
 }
 ```
-
 [/slide]
