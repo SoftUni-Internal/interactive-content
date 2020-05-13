@@ -11,7 +11,7 @@ The main difference between them is that the size of an array cannot be resized.
 For example if you want to add or remove elements to/from an array, you have to create a new one, while elements can be **added** and **removed** from the **List** whenever you want.
 
 ```java live
-List<String> names = new ArrayList<>(); //Create a List of strings
+List<String> names = new ArrayList<>(); //Create an empty List of strings
 
         names.add("Peter"); // Add Peter to the List
         names.add("Maria"); // Add Maria to the List
@@ -30,7 +30,7 @@ The main **features** of the **Lists** are:
 - Lists can store **objects** of any types(Integer, Double, String, etc.)
 - Elements are numbered from **0** to **size-1**
 - The **size** of the **List** is **expandable**
-- A list supports a lot of useful **methods**
+- A **List** supports a lot of useful **methods**
 
 
 [/slide]
