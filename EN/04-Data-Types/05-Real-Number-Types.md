@@ -251,7 +251,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 
 When working with large numbers, scientific notation is exceptionally helpful. 
 
-In scientific notation, the letter `e` represents `10 to the power of e`. For example, `1.51E+1` means the same thing as `1.51x10^1`. 
+In scientific notation, the letter `e` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`. 
 
 Let's review some examples of scientific notation below.
 
@@ -272,14 +272,14 @@ Integral division and floating-point division are different.
 
 See the examples below:
 
-```java
+```java live
 System.out.println(10 / 4);    // 2 (integral division)
 System.out.println(10 / 4.0);  // 2.5 (real division)
 System.out.println(10 / 0.0);  // Infinity
 System.out.println(-10 / 0.0); // -Infinity
 System.out.println(0 / 0.0);   // NaN (not a number)
 System.out.println(8 % 2.5);   // 0.5 (3 * 2.5 + 0.5 = 8)
-System.out.println(10 / 0);    // ArithmeticException
+//System.out.println(10 / 0);     ArithmeticException
 ```
 
 # Floating-Point Calculations – Abnormalities
@@ -294,7 +294,7 @@ double a = 1.0f;
 double b = 0.33f;
 double sum = 1.33d;
 
-System.out.printf("a+b=%f sum=%f equal=%b", a+b, sum, (a + b == sum));
+System.out.printf(" a+b=%f \n sum=%f \n equal=%b", a + b, sum, (a + b == sum));
 ```
 
 ```java live
@@ -311,17 +311,31 @@ System.out.println(num);
 Java includes a `BigDecimal` class for performing high-precision arithmetic with 32-bit integer scale, which can be used in banking or financial domain based application. 
 
 
-```java
-//create number
-BigDecimal number = new BigDecimal(0); 
-//add 2.5
-number = number.add(BigDecimal.valueOf(2.5));
-//substract  1.5
-number = number.subtract(BigDecimal.valueOf(1.5));
-//multiply by 2
-number = number.multiply(BigDecimal.valueOf(2));
-//divide by 2
-number = number.divide(BigDecimal.valueOf(2));
+```java live
+BigDecimal bigDecimal1 =
+ new BigDecimal("243156478.7384930212");
+BigDecimal bugDecimal2 =
+ new BigDecimal("843753892.4637281941");
+
+// Addition of two BigDecimals 
+bigDecimal1 = bigDecimal1.add(bugDecimal2);
+System.out.println("BigDecimal1 = " + bigDecimal1);
+
+// Multiplication of two BigDecimals 
+bigDecimal1 = bigDecimal1.multiply(bugDecimal2);
+System.out.println("BigDecimal1 = " + bigDecimal1);
+
+// Subtraction of two BigDecimals 
+bigDecimal1 = bigDecimal1.subtract(bugDecimal2);
+System.out.println("BigDecimal1 = " + bigDecimal1);
+
+// Division of two BigDecimals 
+bigDecimal1 = bigDecimal1.divide(bugDecimal2);
+System.out.println("BigDecimal1 = " + bigDecimal1);
+
+// BigDecima1 raised to the power of 2 
+bigDecimal1 = bigDecimal1.pow(2);
+System.out.println("BigDecimal1 = " + bigDecimal1); 
 ```
 
 [/slide]

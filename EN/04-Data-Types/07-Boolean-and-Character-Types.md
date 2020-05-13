@@ -15,10 +15,17 @@
 A boolean data type is declared with the **boolean** keyword with two choices of value: **true** or **false**:
 
 ```java live
-boolean isCodingFun = true;
-boolean isFishTasty = false;
-System.out.println(isCodingFun);   
-System.out.println(isFishTasty);     
+ int firstNumber = 5;
+ int secondNumber = 10;
+
+ boolean firstBoolean = true;
+ boolean secondBoolean = false;
+
+ if (firstNumber < secondNumber) {
+  System.out.println(firstBoolean);
+ } else {
+  System.out.println(secondBoolean);
+ }       
 ```
 In the example above we declare two variables with key word `boolean` and names as follow `isCodingFun` and `isFishTasty`. We use `=` operator to assign value to those variables. And then we print the result.
 
@@ -320,7 +327,7 @@ public class SpecialNumbers {
 ## Description
 A **number** is **special** when its **sum of digits is 5, 7 or 11**.
 
-Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not **\(True / False\)**.
+Write a program to read an integer **n** and for all numbers in the range **1…n** to print the number and if it is special or not **(True / False)**.
 
 ## Example
 | **Input** | **Output** |
