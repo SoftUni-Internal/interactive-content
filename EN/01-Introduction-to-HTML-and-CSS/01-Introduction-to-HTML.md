@@ -27,6 +27,7 @@ yes
 [test]
 [input]
 expect($("strong")).to.have.lengthOf(2,"Incorrect amount of strong tags.");
+[/input]
 [output]
 yes
 [/output]
@@ -34,6 +35,7 @@ yes
 [test]
 [input]
 expect($(document.body).find("strong").text()).to.include("CSS","Incorrect text in strong tag.");
+[/input]
 [output]
 yes
 [/output]
