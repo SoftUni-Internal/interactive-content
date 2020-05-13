@@ -1,6 +1,6 @@
-[slide hideTitle]
+[slide]
 # Problem: Random HTML Problem
-[code-task title="Random HTML Problem" taskId="random-html-problem" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false" /]
+[code-task title="Random HTML Problem" taskId="random-html-problem" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
 [code-upload allowedMemory="30" /]
 [task-description]
 ## Description
