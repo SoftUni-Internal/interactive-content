@@ -18,7 +18,7 @@ You, personally, might store coffee in the sugar jar, but these ones will be dif
 
 Imagine that in each jar you can only store one of the following: salt, sugar, or coffee. 
 
-[image assetsSrc="Variables-real-life-example.jpg" /]
+[image assetsSrc="Variables-real-life-example(2).jpg" /]
 
 In programming it is almost the same. 
 
