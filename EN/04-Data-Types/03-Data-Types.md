@@ -48,9 +48,15 @@ Data types specify the different sizes and values that can be stored in the vari
 
 There are **two types of data types** in Java:
 
-- **Primitive data types**: built-into a programming language is called `primitive` data type. They're size and type of variable values are specified and they cannot be modified. The primitive data types include **boolean**, **char**, **byte**, **short**, **int**, **long**, **float** and **double**.
+**Primitive data types** are: 
+* built-into a programming language is called `primitive` data type;
+* size and type of variable values are specified and they cannot be modified; 
+* **boolean**, **char**, **byte**, **short**, **int**, **long**, **float** and **double**.
 
-- **Non-primitive data types**: These data types are not actually defined by the programming language but are created by the programmer. They are also called `reference variables` since they hold the address in the computer mommory \(RAM\) where the data is stored. The non-primitive data types include **String**, **Arrays** and **Classes**.
+**Non-primitive data types** are:
+* not actually defined by the programming language but are created by the programmer;
+* called `reference variables` since they hold the address in the computer mommory \(RAM\) where the data is stored;
+* **String**, **Arrays** and **Classes**.
 
 ```java
 int myNum = 5;               // Integer (whole number)
@@ -71,21 +77,20 @@ As you see in the example above, **date types** have:
 
 [slide]
 # Naming Variables
+In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
+
 Naming conventions make programs more understandable by making them easier to read. 
 
-They can also give information about the function of the identifier-for example, whether it's a constant, package, or class-which can 
-be helpful in understanding the code.
+In Java the convention for naming variables are used ***"camel-case"***. 
 
-In Java we use **camelCase** conventions for naming data types. 
-
-**Camel case** is the practice of writing phrases such that each word or abbreviation in the middle of the phrase begins with a capital letter, with no intervening spaces or punctuation.
-
+**Camel case** combines words by:
+* capitalizing all words following the first word;
+* removing the space:
 ```Java
 String firstName = John;
 String lastName = Smith;
 int personAge = 41;
 ```
-
 The variable's name should explain it's purpose. 
 
 Before naming a variable, ask yourself: **What does this variable contain?**
@@ -107,8 +112,8 @@ public static void main(String[] args) {
 
   //Begining of inner block
   for (int i = 0; i < 10; i++) {
-   String inner = "I'm inside the loop";
-   System.out.println(inner); //print the result
+      String inner = "I'm inside the loop";
+      System.out.println(inner); //print the result
   }
   //End of inner block
 
@@ -116,6 +121,7 @@ public static void main(String[] args) {
 
   // System.out.println(inner); Error
 ```
+
 [/slide]
 
 [slide]
