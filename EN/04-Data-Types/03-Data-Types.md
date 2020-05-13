@@ -73,9 +73,6 @@ As you see in the example above, **date types** have:
 
 * **Value**: every variable hold value.
 
-[/slide]
-
-[slide]
 # Naming Variables
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
