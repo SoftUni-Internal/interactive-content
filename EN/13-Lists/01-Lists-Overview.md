@@ -27,8 +27,11 @@ for (String name : names) {
 The main **features** of the **Lists** are:
 
 - Lists can store **objects** of any types(Integer, Double, String, etc.)
+
 - Elements are numbered from **0** to **size-1**
+
 - The **size** of the **List** is **expandable**
+
 - A **List** supports a lot of useful **methods**
 
 [/slide]
@@ -41,11 +44,11 @@ The main **features** of the **Lists** are:
 ```java
 List<String> names = new ArrayList<>(); //Create an empty List of strings
 ```
-- Initialization using asList() - method 
+- Initialization using `asList()` - method 
 ```java
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); // Create a List of strings with 3 elements
 ```
-- Initialization by converting an array to List
+- Initialization by **converting** an **array** to **List**
 
 ```java
 Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
@@ -53,5 +56,14 @@ Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
 List<Integer> nums = Arrays.asList(numbers); // convert the Integer array into List
 ```
 
+- If you try to convert an array which holds a primitive data type like `int []` to List, that will produce a **compile error**,
+
+   because **Lists** accept only **Reference data types** (**objects**). 
+
+```java live
+ int [] numbers = new int[] {10, 20, 30, 40, 50};
+
+ List<Integer> nums = Arrays.asList(numbers);
+```
 
 [/slide]
