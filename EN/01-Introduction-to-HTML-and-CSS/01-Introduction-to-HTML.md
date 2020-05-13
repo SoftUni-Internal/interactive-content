@@ -7,7 +7,6 @@
 - Change the document title to Simple HTML Page
 - Use paragraph tag for plain text and strong tag for bold text
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
