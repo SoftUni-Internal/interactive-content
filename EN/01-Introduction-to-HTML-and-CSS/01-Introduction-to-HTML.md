@@ -19,6 +19,7 @@ yes
 [test]
 [input]
 expect($("p")).to.have.lengthOf(1,"Incorrect amount of p tag.");
+[/input]
 [output]
 yes
 [/output]
