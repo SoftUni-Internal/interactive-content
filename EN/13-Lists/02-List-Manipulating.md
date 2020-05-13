@@ -2,7 +2,7 @@
 # List Manipulating
 **List manipulation** is easier than an array because of its **methods**.
 
-[/slide]
+
 # Lists methods
 There are a lot of useful **methods** in a List:
 
@@ -106,3 +106,4 @@ int numberOfNames = names.size();
 
 System.out.println(numberOfNames);
 ```
+[/slide]
