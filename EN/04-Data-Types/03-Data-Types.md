@@ -39,7 +39,7 @@ int count = 5;
 * **Variable name**: Name given to the variable .
 * **Variable value**: It is the initial value stored in the variable.
 
-* A variable can be declared, without any initialisation:
+A variable can be declared, without initialisation:
 
 ```java
 int count;
