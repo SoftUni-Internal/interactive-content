@@ -12,7 +12,7 @@
 We can declare a variable in the following way:
 ```java
 int number = 5;
-String language = "english";
+String language = "English";
 ```
 
 ### Reading from the Console
