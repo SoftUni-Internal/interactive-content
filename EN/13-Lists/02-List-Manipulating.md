@@ -1,9 +1,8 @@
-[slide]
 # List Manipulating
-**List manipulation** is easier than an array because of its **methods**.
-
+[slide]
 
 # Lists methods
+**List manipulation** is easier than an array because of its **methods**.
 There are a lot of useful **methods** in a List:
 
 `add(element)` method - **appends** the element at the **end** of the **list**:
