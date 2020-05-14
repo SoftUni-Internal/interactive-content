@@ -47,7 +47,7 @@ Here the higher data types \(having larger size\) are converted into lower data 
 
 [slide]
 # Problem: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" taskId="c34737c4-2d3a-4300-9d27-601952e75ab6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="9e72df63-7fba-48e8-b7c3-fa121db7f79e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -72,7 +72,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 1
 [/input]
@@ -80,7 +80,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 [/input]
@@ -134,8 +134,8 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 
 [slide]
-# Solution: Centuries to Minutes
-[code-task title="Problem: Centuries to Minutes" taskId="b7b4fa50-d403-4a09-83a5-643bee18d82a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Centuries to Minutes
+[code-task title="Problem: Centuries to Minutes" taskId="9e763-7fba-48e8-b7c3-fabf79" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -165,11 +165,10 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 | 1 | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
 | 5 | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 1
 [/input]
@@ -177,7 +176,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 5
 [/input]
