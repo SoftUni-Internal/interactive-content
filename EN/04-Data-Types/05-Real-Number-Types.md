@@ -438,8 +438,8 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/slide]
 
 [slide]
-# Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="8cd9d-61b-3ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Solution: Exact Sum of Real Numbers
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="d9d-61b-3ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigDecimal;
