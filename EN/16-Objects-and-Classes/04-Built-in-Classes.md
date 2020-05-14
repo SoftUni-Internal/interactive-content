@@ -126,6 +126,245 @@ System.out.println(isValid);
 
 [/slide]
 
+[slide]
+# Problem: Randomize Words
+[code-task title="Randomize Words" taskId="edbcb9f1-7763-463c-8292-c065268b8432" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You are given a **list of words in one line**.
+
+**Randomize their order** and print **each word at a separate line**.
+
+## Examples
+
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| Welcome to SoftUni and have fun learning programming | learning | The order of the words in the output will be different after each program execution. |
+| | Welcome | |
+| | SoftUni | |
+| | and | |
+| | fun | |
+| | programming | |
+| | have | |
+| | to | |
+
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+PHP Java C\#
+[/input]
+[output]
+b
+a
+[/output]
+[/test]
+[test]
+[input]
+hello
+[/input]
+[output]
+7H
+JS
+10S
+9C
+9D
+[/output]
+[/test]
+[test]
+[input]
+Java
+PHP
+C\#
+[/input]
+[output]
+10S 7H 9C 9D JS
+[/output]
+[/test]
+[test open]
+[input]
+learning
+Welcome
+SoftUni
+and
+fun
+programming
+have
+to
+[/input]
+[output]
+Welcome to SoftUni and have fun learning programming
+[/output]
+[/test]
+[test]
+[input]
+a b
+[/input]
+[output]
+hello
+[/output]
+[/test]
+[test]
+[input]
+pesho gosho kiro miro niki pipi koko
+[/input]
+[output]
+kiro
+gosho
+koko
+miro
+niki
+pesho
+pipi
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Randomize Words
+[code-task title="Randomize Words"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomizeWords {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+         String [] words = scanner.nextLine().split(" ");
+
+         Random random= new Random();
+
+        for (int i = 0; i < words.length ; i++) {
+            int firstIndex = random.nextInt(words.length);
+            int secondIndex = random.nextInt(words.length);
+
+            String swapWord = words[firstIndex];
+            words[firstIndex] = words[secondIndex];
+            words[secondIndex] = swapWord;
+        }
+
+        System.out.println(String.join(System.lineSeparator(), words));
+
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You are given a **list of words in one line**.
+
+**Randomize their order** and print **each word at a separate line**.
+
+## Examples
+
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| Welcome to SoftUni and have fun learning programming | learning | The order of the words in the output will be different after each program execution. |
+| | Welcome | |
+| | SoftUni | |
+| | and | |
+| | fun | |
+| | programming | |
+| | have | |
+| | to | |
+
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+PHP Java C\#
+[/input]
+[output]
+b
+a
+[/output]
+[/test]
+[test]
+[input]
+hello
+[/input]
+[output]
+7H
+JS
+10S
+9C
+9D
+[/output]
+[/test]
+[test]
+[input]
+Java
+PHP
+C\#
+[/input]
+[output]
+10S 7H 9C 9D JS
+[/output]
+[/test]
+[test open]
+[input]
+learning
+Welcome
+SoftUni
+and
+fun
+programming
+have
+to
+[/input]
+[output]
+Welcome to SoftUni and have fun learning programming
+[/output]
+[/test]
+[test]
+[input]
+a b
+[/input]
+[output]
+hello
+[/output]
+[/test]
+[test]
+[input]
+pesho gosho kiro miro niki pipi koko
+[/input]
+[output]
+kiro
+gosho
+koko
+miro
+niki
+pesho
+pipi
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 [slide]
 ## BigInteger
