@@ -1,6 +1,6 @@
-[slide]
-
 # Lists Overview
+[slide]
+# What are Lists?
 
 Just like an array а **List** is a **sequence of elements**.
 
