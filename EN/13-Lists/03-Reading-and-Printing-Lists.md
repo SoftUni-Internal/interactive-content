@@ -1,6 +1,6 @@
+# Reading and Printing Lists
 
 [slide]
-# Reading and Printing Lists
 # Reading Lists 
 - Reading a List using **for loop** and `scanner.nextLine()` - method
 ```java 
