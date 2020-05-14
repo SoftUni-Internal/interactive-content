@@ -26,7 +26,7 @@ A variable is a name given to a memory location. It is the basic unit of storage
 
 * A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.
 
-* In Java, all the variables must be declared \(create\) before use.
+* In Java, all the variables must be create before use.
 
 ```java
 int count = 5;
@@ -48,15 +48,17 @@ Data types specify the different sizes and values that can be stored in the vari
 
 There are **two types of data types** in Java:
 
-**Primitive data types** are: 
-* built-into a programming language is called `primitive` data type;
-* size and type of variable values are specified and they cannot be modified; 
-* **boolean**, **char**, **byte**, **short**, **int**, **long**, **float** and **double**.
+**Primitive data types**
+-	Built-into a programming language
+-	The size and type of the variable values are specified, and they cannot be modified
+-	Some examples include boolean, char, int, long, float and double.
 
-**Non-primitive data types** are:
-* not actually defined by the programming language but are created by the programmer;
-* called `reference variables` since they hold the address in the computer mommory \(RAM\) where the data is stored;
-* **String**, **Arrays** and **Classes**.
+
+**Non-primitive data types**
+-	Not defined by the programming language but by the programmer
+-	Called reference variables since they hold the address in the computer memory (RAM) where the data is stored
+-	Some examples include String, Arrays and Classes
+
 
 ```java
 int myNum = 5;               // Integer (whole number)
@@ -80,15 +82,25 @@ Naming conventions make programs more understandable by making them easier to re
 
 In Java the convention for naming variables are used ***"camel-case"***. 
 
-**Camel case** combines words by:
-* capitalizing all words following the first word;
-* removing the space:
+**Camel case** is the practice of writing phrases:
+
+- each word or abbreviation in the middle of the phrase begins with a capital letter
+
+- no spaces
+
+- punctuation.
+
 ```Java
-String firstName = John;
-String lastName = Smith;
-int personAge = 41;
+String firstName = John; //correct
+String lastName = Smith; //correct
+int personAge = 41;      //correct
+
+String Firstname = John;  //wrong
+String last_name = Smith; //wrong
+int PersonAge = 41;       //wrong
+int foo = 2;              //wrong
 ```
-The variable's name should explain it's purpose. 
+The variable's name should explain it's purpose.
 
 Before naming a variable, ask yourself: **What does this variable contain?**
 [/slide]
@@ -98,7 +110,7 @@ Before naming a variable, ask yourself: **What does this variable contain?**
 
 **Scope** of a variable refers to in which areas or sections of a program can the variable be accessed and **lifetime** of a variable refers to how long the variable stays alive in memory.
 
-General convention for a variable's scope is, it is accessible only within the block in which it is declared.
+General convention for a variable's scope is, it is accessible only within the block in which it is created.
 
 A block **begins** with a left curly brace `{` and **ends** with a right curly brace `}`.
 
@@ -126,7 +138,7 @@ public static void main(String[] args) {
 
 Variable **span** is how long before a variable is called.
 
-It's good practice declare a variable as **late as possible** (e.g. shorter span).
+It's good practice create a variable as **late as possible** (e.g. shorter span).
 
 - Example
 ```java
