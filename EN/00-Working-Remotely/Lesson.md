@@ -1,1 +1,1 @@
-# Working Remotely with George Georgiev
+# Working Remotely
