@@ -1,11 +1,12 @@
 # List Manipulating
 [slide]
 
-# Lists methods
+# Lists Methods
 **List manipulation** is easier than an array because of its **methods**.
 There are a lot of useful **methods** in a List:
+# Adding an Element
 
-`add(element)` method - **appends** the element at the **end** of the **list**:
+- `add(element)` method - **appends** the element at the **end** of the **list**:
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -19,26 +20,24 @@ for (String name : names){
 }
 ```
 
-`add(index, element)` - inserts an element to given position:
+- `add(index, element)` - inserts an element to given position:
 
 ```java live
 List<Integer> nums = new ArrayList<>();
-        nums.add(10);
-        nums.add(20);
-        nums.add(30);
-        nums.add(40);
-        nums.add(50);
+nums.add(10);
+nums.add(20);
+nums.add(30);
+nums.add(40);
+nums.add(50);
 
-        nums.add(0, -100); // insert the number -100 at index 0
+nums.add(0, -100); // insert the number -100 at index 0
 
-        for (Integer num : nums) {
-            System.out.print(num + " ");
-        }
+for (Integer num : nums) {
+    System.out.print(num + " ");
 }
-
 ```
-
-`remove(element)` - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**)
+# Remove Element
+- `remove(element)` - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**)
 
 ```java live
  List<String> names = new ArrayList<>();
@@ -53,10 +52,9 @@ List<Integer> nums = new ArrayList<>();
  for (String name : names){
      System.out.println(name);
  }
-
 ```
 
-`remove(index)` - **removes** the **element** at the **specified index**
+- `remove(index)` - **removes** the **element** at the **specified index**
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -70,8 +68,8 @@ for (String name : names){
   System.out.println(name);
 }
 ```
-
-`set(index, item)` - replaces element at a given index
+# Change an Element
+- `set(index, item)` - **replaces** element at a **specified index**
 
 ```java live
  Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
@@ -84,12 +82,9 @@ for (Integer num : nums) {
     System.out.print(num + " ");
 }
 ```
-Let's explain what does the code do above:
-- On the first line we initialize an array `numbers` not with primitive type `int []` but with its wrapper class `Integer []`, because the List can store only objects.
-- After that we **convert** the **array** numbers into **List** using  `Arrays.asList()` - method
-- On the next row we **replace** the element at **index 4** with **-100**.
 
-`get()` - access an element to the given index
+# Access an Element
+- `get()` - **access** an element to the **specified index**
 
 ```java live
 List<Integer> nums = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50));
@@ -98,8 +93,8 @@ int numberAtIndex4 = nums.get(4);
         
 System.out.println(numberAtIndex4);
 ```
-
-`contains(element)` - checks if an element is in the List
+# Check if an Element is in the List
+- `contains(element)` - checks if an **element is in the List**
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
@@ -108,8 +103,8 @@ if (names.contains("Maria")){
      System.out.println("Yes, the name is in the List.");
 }
 ```
-
-`size()` - number of elements in the List
+# Number of Elements in the List
+- `size()` - gives the **size** of the ArrayList – **Number of elements** of the list
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
