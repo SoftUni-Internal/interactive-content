@@ -39,6 +39,16 @@ int count = 5;
 * **Variable name**: Name given to the variable .
 * **Variable value**: It is the initial value stored in the variable.
 
+A variable can be declared, without initialisation:
+
+```java
+int count;
+count = 5;
+```
+
+In the example above we declare an `int` variable, named `count` and when we need that variable we can assign a value.
+Here we gave that variable value of `5`.
+
 [/slide]
 
 [slide]

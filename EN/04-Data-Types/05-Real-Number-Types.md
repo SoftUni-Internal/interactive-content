@@ -11,7 +11,7 @@
 [slide]
 # What are Floating-Point Types?
 
-You should use a **floating point type** whenever you need a number with a decimal, such as 9.99 or 3.14515. 
+You should use a **floating point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
@@ -59,10 +59,9 @@ System.out.println("Double PI is: " + doublePI);
 * One should explicitly convert them to float
 [/slide]
 
-
 [slide]
 # Problem: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="257f2500-6c55-4c63-b129-932f0429fa74" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="f3a7e5c2-c8f2-41a7-b7f8-848749f955b2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -86,12 +85,10 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 | 80 | 104.800 |
 | 39 | |
 
-
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 80
 [/input]
@@ -99,7 +96,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 104.800
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 39
 [/input]
@@ -154,7 +151,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 
 [slide]
 # Solution: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="55739714-6ae4-4768-9253-80471a3d212b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="2e55d28f-adb6-4222-8650-9ea91e1717a5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -181,11 +178,10 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 | 80 | 104.800 |
 | 39 | |
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 80
 [/input]
@@ -193,7 +189,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 104.800
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 39
 [/input]
@@ -245,13 +241,12 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 [/code-task]
 [/slide]
 
-
 [slide]
 # Scientific Notation
 
 When working with large numbers, scientific notation is exceptionally helpful. 
 
-In scientific notation, the letter `e` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`. 
+In scientific notation, the letter `E` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`.
 
 Let's review some examples of scientific notation below.
 
@@ -290,11 +285,11 @@ We encourage you to read more about `IEEE 754`.
 ## Example
 
 ```java live
-double a = 1.0f; 
+double a = 1.0f;
 double b = 0.33f;
 double sum = 1.33d;
 
-System.out.printf(" a+b=%f \n sum=%f \n equal=%b", a + b, sum, (a + b == sum));
+System.out.printf("a+b=%f \nsum=%f \nequal=%b", a + b, sum, (a + b == sum));
 ```
 
 ```java live
@@ -314,39 +309,34 @@ Java includes a `BigDecimal` class for performing high-precision arithmetic with
 ```java live
 BigDecimal bigDecimal1 =
  new BigDecimal("243156478.7384930212");
-BigDecimal bugDecimal2 =
+BigDecimal bigDecimal2 =
  new BigDecimal("843753892.4637281941");
 
 // Addition of two BigDecimals 
-bigDecimal1 = bigDecimal1.add(bugDecimal2);
-System.out.println("BigDecimal1 = " + bigDecimal1);
-
-// Multiplication of two BigDecimals 
-bigDecimal1 = bigDecimal1.multiply(bugDecimal2);
-System.out.println("BigDecimal1 = " + bigDecimal1);
+bigDecimal1 = bigDecimal1.add(bigDecimal2);
+System.out.println(bigDecimal1);
 
 // Subtraction of two BigDecimals 
-bigDecimal1 = bigDecimal1.subtract(bugDecimal2);
-System.out.println("BigDecimal1 = " + bigDecimal1);
+bigDecimal1 = bigDecimal1.subtract(bigDecimal2);
+System.out.println(bigDecimal1);
 
-// Division of two BigDecimals 
-bigDecimal1 = bigDecimal1.divide(bugDecimal2);
-System.out.println("BigDecimal1 = " + bigDecimal1);
+// Multiplication of two BigDecimals 
+bigDecimal1 = bigDecimal1.multiply(bigDecimal2);
+System.out.println(bigDecimal1);
 
 // BigDecima1 raised to the power of 2 
 bigDecimal1 = bigDecimal1.pow(2);
-System.out.println("BigDecimal1 = " + bigDecimal1); 
+System.out.println(bigDecimal1); 
 ```
 
 [/slide]
 
 [slide]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="6e574f9f-8c01-40ec-8f12-7f2b36130a02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="8ca6d9d-661b-43ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
-import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
@@ -373,11 +363,10 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 | 0.00000000003 | |
 | 333333333333.3 |  |
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 3
 1000000000000000000
@@ -388,7 +377,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 0.00000000003
@@ -450,7 +439,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 
 [slide]
 # Solution: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="55739714-6ae4-4768-9253-80471a3d212b-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="d9d-61b-3ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigDecimal;
@@ -490,11 +479,10 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 | 0.00000000003 | |
 | 333333333333.3 |  |
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 3
 1000000000000000000
@@ -505,7 +493,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2
 0.00000000003
