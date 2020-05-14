@@ -87,10 +87,10 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 | 39 | |
 
 
-
 [/task-description]
 [code-io /]
 [tests]
+[test open]
 [test]
 [input]
 80
@@ -99,6 +99,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 104.800
 [/output]
 [/test]
+[test open]
 [test]
 [input]
 39
@@ -185,6 +186,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 [/task-description]
 [code-io /]
 [tests]
+[test open]
 [test]
 [input]
 80
@@ -193,6 +195,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 104.800
 [/output]
 [/test]
+[test open]
 [test]
 [input]
 39
@@ -251,7 +254,7 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 
 When working with large numbers, scientific notation is exceptionally helpful. 
 
-In scientific notation, the letter `e` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`. 
+In scientific notation, the letter `E` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`.
 
 Let's review some examples of scientific notation below.
 
@@ -377,6 +380,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/task-description]
 [code-io /]
 [tests]
+[test open]
 [test]
 [input]
 3
@@ -388,6 +392,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
+[test open]
 [test]
 [input]
 2
@@ -490,10 +495,10 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 | 0.00000000003 | |
 | 333333333333.3 |  |
 
-
 [/task-description]
 [code-io /]
 [tests]
+[test open]
 [test]
 [input]
 3
@@ -505,6 +510,7 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 1000000000000000015
 [/output]
 [/test]
+[test open]
 [test]
 [input]
 2
