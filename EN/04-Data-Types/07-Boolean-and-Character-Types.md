@@ -618,16 +618,6 @@ A A A
 [/test]
 [test]
 [input]
-\\$
-%
-\\$
-[/input]
-[output]
-\\$ % \\$
-[/output]
-[/test]
-[test]
-[input]
 X
 a
 1
@@ -731,16 +721,6 @@ A
 [/input]
 [output]
 A A A
-[/output]
-[/test]
-[test]
-[input]
-\\$
-%
-\\$
-[/input]
-[output]
-\\$ % \\$
 [/output]
 [/test]
 [test]
