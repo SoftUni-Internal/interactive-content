@@ -1,5 +1,7 @@
+
 [slide]
-# Reading Lists from the Console
+# Reading and Printing Lists
+# Reading Lists 
 - Reading a List using **for loop** and `scanner.nextLine()` - method
 ```java 
 Scanner scanner = new Scanner(System.in);
@@ -26,7 +28,7 @@ List<Integer> items = Arrays
 [/slide]
 
 [slide]
-# Printing Lists to the Console
+# Printing Lists 
 - Printing a list using a `for-loop`
 ```java live
 List<String> numbers = new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five", "six"));
