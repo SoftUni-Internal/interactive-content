@@ -4,6 +4,10 @@
 # Lists Methods
 **List manipulation** is easier than an array because of its **methods**.
 There are a lot of useful **methods** in a List:
+
+[/slide]
+[slide]
+
 # Adding an Element
 
 - `add(element)` method - **appends** the element at the **end** of the **list**:
@@ -36,6 +40,11 @@ for (Integer num : nums) {
     System.out.print(num + " ");
 }
 ```
+
+[/slide]
+
+[slide]
+
 # Remove Element
 - `remove(element)` - **removes** the **first occurrence** of the **specified element** (returns **true** / **false**)
 
@@ -68,6 +77,8 @@ for (String name : names){
   System.out.println(name);
 }
 ```
+[/slide]
+[slide]
 # Change an Element
 - `set(index, item)` - **replaces** element at a **specified index**
 
@@ -82,7 +93,8 @@ for (Integer num : nums) {
     System.out.print(num + " ");
 }
 ```
-
+[/slide]
+[slide]
 # Access an Element
 - `get()` - **access** an element to the **specified index**
 
@@ -93,6 +105,8 @@ int numberAtIndex4 = nums.get(4);
         
 System.out.println(numberAtIndex4);
 ```
+[/slide]
+[slide]
 # Check if an Element is in the List
 - `contains(element)` - checks if an **element is in the List**
 
@@ -103,6 +117,8 @@ if (names.contains("Maria")){
      System.out.println("Yes, the name is in the List.");
 }
 ```
+[/slide]
+[slide]
 # Number of Elements in the List
 - `size()` - gives the **size** of the ArrayList – **Number of elements** of the list
 
