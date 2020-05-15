@@ -210,7 +210,7 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 
 [slide]
 # Solution: Sum Adjacent Equal Numbers
-[code-task title="Sum Adjacent Equal Numbers" taskId="java-fundamentals-lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Adjacent Equal Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;
