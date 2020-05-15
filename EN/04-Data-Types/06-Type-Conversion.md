@@ -296,6 +296,8 @@ b
 [/tests][/code-task]
 [/slide]
 
+[slide]
+
 # Problem: Lower or Upper
 
 [code-task title="Problem: Lower or Upper" taskId="65519ad1-b13a-4eb0-a7dc-24805b4bb257" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
