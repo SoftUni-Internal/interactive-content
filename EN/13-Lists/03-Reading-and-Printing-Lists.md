@@ -389,3 +389,207 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 [/tests]
 [/code-task]
 [/slide]
+
+
+[slide]
+# Problem: Gauss' Trick
+[code-task title="Gauss' Trick" taskId="2a5bbcd5-0335-4300-8580-27248e5ea712" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that sum all numbers in a list in the following order: 
+- **first** + **last**, **first + 1** + **last - 1**, **first + 2** + **last - 2**, … **first + n**, **last - n**.
+
+
+[image assetsSrc="lists-problem-gaus-trick(1).png" /]
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 1 2 3 4 5 | 6 6 3 |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 1 2 3 4 | 5 5 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 2 3 4 5
+[/input]
+[output]
+6 6 3
+[/output]
+[/test]
+[test open]
+[input]
+1 2 3 4
+[/input]
+[output]
+5 5
+[/output]
+[/test]
+[test]
+[input]
+1 1
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+[/input]
+[output]
+4 2
+[/output]
+[/test]
+[test]
+[input]
+10 20 30 40
+[/input]
+[output]
+50 50
+[/output]
+[/test]
+[test]
+[input]
+10 20 30 40 50
+[/input]
+[output]
+60 60 30
+[/output]
+[/test]
+[test]
+[input]
+1
+[/input]
+[output]
+1
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+[slide]
+# Solution: Gauss' Trick
+[code-task title="Gauss' Trick"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        List<Integer> numbers = Arrays.stream(sc.nextLine().split(" "))
+                .map(Integer::parseInt).collect(Collectors.toList());
+        int size = numbers.size();
+        for (int i = 0; i < size / 2; i++) {
+            numbers.set(i, numbers.get(i) +
+                    numbers.get(numbers.size() - 1));
+            numbers.remove(numbers.size() - 1);
+        }
+        System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that sum all numbers in a list in the following order: 
+- **first** + **last**, **first + 1** + **last - 1**, **first + 2** + **last - 2**, … **first + n**, **last - n**.
+
+
+[image assetsSrc="lists-problem-gaus-trick(1).png" /]
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 1 2 3 4 5 | 6 6 3 |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 1 2 3 4 | 5 5 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 2 3 4 5
+[/input]
+[output]
+6 6 3
+[/output]
+[/test]
+[test open]
+[input]
+1 2 3 4
+[/input]
+[output]
+5 5
+[/output]
+[/test]
+[test]
+[input]
+1 1
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+[/input]
+[output]
+4 2
+[/output]
+[/test]
+[test]
+[input]
+10 20 30 40
+[/input]
+[output]
+50 50
+[/output]
+[/test]
+[test]
+[input]
+10 20 30 40 50
+[/input]
+[output]
+60 60 30
+[/output]
+[/test]
+[test]
+[input]
+1
+[/input]
+[output]
+1
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
