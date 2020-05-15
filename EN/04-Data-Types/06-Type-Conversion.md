@@ -285,7 +285,7 @@ b
 [/slide]
 
 [slide]
-# Chars to String
+# Lower or Upper
 [code-task title="Chars to String" taskId="ad206-9433-472d-85da-4da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
