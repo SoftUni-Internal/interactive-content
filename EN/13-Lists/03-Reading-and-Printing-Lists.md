@@ -52,7 +52,7 @@ System.out.println(String.join(" ", list));
 
 [slide]
 # Problem: Sum Adjacent Equal Numbers
-[code-task title="Sum Adjacent Equal Numbers" taskId="java-fundamentals-lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Adjacent Equal Numbers" taskId="d53ed131-024f-4045-bd52-afba63b09d5e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
