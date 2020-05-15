@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Rage Expenses
+# Problem: Test Problem
 [code-task title="Rage Expenses" taskId="f666be38-a944-4e41-a5ae-5c1a12a70aaa95" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
