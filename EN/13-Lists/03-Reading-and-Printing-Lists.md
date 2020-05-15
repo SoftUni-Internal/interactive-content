@@ -125,26 +125,10 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 [/test]
 [test]
 [input]
-3 3 6 1
-[/input]
-[output]
-12 1
-[/output]
-[/test]
-[test]
-[input]
 0.1 0.1 5 -5
 [/input]
 [output]
 0.2 5 -5
-[/output]
-[/test]
-[test]
-[input]
-8 2 2 4 8 16
-[/input]
-[output]
-16 8 16
 [/output]
 [/test]
 [test]
@@ -308,26 +292,10 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 [/test]
 [test]
 [input]
-3 3 6 1
-[/input]
-[output]
-12 1
-[/output]
-[/test]
-[test]
-[input]
 0.1 0.1 5 -5
 [/input]
 [output]
 0.2 5 -5
-[/output]
-[/test]
-[test]
-[input]
-8 2 2 4 8 16
-[/input]
-[output]
-16 8 16
 [/output]
 [/test]
 [test]
