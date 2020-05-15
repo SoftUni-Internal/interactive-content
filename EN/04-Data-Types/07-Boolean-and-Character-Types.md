@@ -618,16 +618,6 @@ A A A
 [/test]
 [test]
 [input]
-\\$
-%
-\\$
-[/input]
-[output]
-\\$ % \\$
-[/output]
-[/test]
-[test]
-[input]
 X
 a
 1
@@ -653,7 +643,7 @@ a
 
 [slide]
 # Solution: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="b3555c4a-4b2c-4878-944e-0b0eb64cf854" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="b35c4a-4b2c-4878-944e-0b0eb64cf854" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -731,16 +721,6 @@ A
 [/input]
 [output]
 A A A
-[/output]
-[/test]
-[test]
-[input]
-\\$
-%
-\\$
-[/input]
-[output]
-\\$ % \\$
 [/output]
 [/test]
 [test]

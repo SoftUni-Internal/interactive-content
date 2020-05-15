@@ -91,46 +91,46 @@ Print the names joined by the delimiter.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John
 Smith
-->
+-\>
 [/input]
 [output]
-John->Smith
+John-\>Smith
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Jan
 White
-<->
+\<-\>
 
 [/input]
 [output]
-Jan<->White
+Jan\<-\>White
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Linda
 Terry
-=>
+=\>
 
 [/input]
 [output]
-Linda=>Terry
+Linda=\>Terry
 [/output]
 [/test]
 [test]
 [input]
 a
 b
-{}
+\{\}
 [/input]
 [output]
-a{}b
+a\{\}b
 [/output]
 [/test]
 [test]
@@ -147,10 +147,10 @@ a!a
 [input]
 x
 y
-**
+\*\*
 [/input]
 [output]
-x**y
+x\*\*y
 [/output]
 [/test]
 [test]
@@ -167,10 +167,10 @@ abc&def
 [input]
 abc
 123
--->
+--\>
 [/input]
 [output]
-abc-->123
+abc--\>123
 [/output]
 [/test]
 [/tests]
@@ -217,50 +217,49 @@ Print the names joined by the delimiter.
 | <-> | |
 
 
-
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John
 Smith
-->
+-\>
 [/input]
 [output]
-John->Smith
+John-\>Smith
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Jan
 White
-<->
+\<-\>
 
 [/input]
 [output]
-Jan<->White
+Jan\<-\>White
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Linda
 Terry
-=>
+=\>
 
 [/input]
 [output]
-Linda=>Terry
+Linda=\>Terry
 [/output]
 [/test]
 [test]
 [input]
 a
 b
-{}
+\{\}
 [/input]
 [output]
-a{}b
+a\{\}b
 [/output]
 [/test]
 [test]
@@ -277,10 +276,10 @@ a!a
 [input]
 x
 y
-**
+\*\*
 [/input]
 [output]
-x**y
+x\*\*y
 [/output]
 [/test]
 [test]
@@ -297,10 +296,10 @@ abc&def
 [input]
 abc
 123
--->
+--\>
 [/input]
 [output]
-abc-->123
+abc--\>123
 [/output]
 [/test]
 [/tests]
