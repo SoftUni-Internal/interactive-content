@@ -64,12 +64,9 @@ System.out.println("Double PI is: " + doublePI);
 [/slide]
 
 [slide]
-
 # Problem: Pounds to Dollars
-
-[code-task title="Problem: Pounds to Dollars" taskId="f3a7e5c2-c8f2-41a7-b7f8-848749f955b2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pounds to Dollars" taskId="java-fundamentals-Data-Types - 02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 
@@ -79,22 +76,23 @@ public class Main {
     }
 }
 ```
-
 [/code-editor]
 [task-description]
-
 ## Description
+Write a program that converts British pounds to US dollars formatted to 3th decimal point.
 
-Write a program that converts **British pounds** to **US dollars** formatted to 3th decimal point.
-
-Exchange rate: 1 British Pound \= 1.31 Dollars
+1 British Pound = 1.31 Dollars
 
 ## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 80 | 104.800 |
+|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 80        | 104.800    |
-| 39        |            |
+| 39 | 51.090 |
+|  |  |
 
 [/task-description]
 [code-io /]
@@ -160,12 +158,9 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 [/slide]
 
 [slide]
-
 # Solution: Pounds to Dollars
-
-[code-task title="Problem: Pounds to Dollars" taskId="4b3a949e-8b60-4074-9a94-0e815304fd21" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pounds to Dollars" taskId="22525714-e4ae-4c16-b1be-5b5c67d2aa46" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 
@@ -178,22 +173,23 @@ public class Main {
     }
 }
 ```
-
 [/code-editor]
 [task-description]
-
 ## Description
+Write a program that converts British pounds to US dollars formatted to 3th decimal point.
 
-Write a program that converts **British pounds** to **US dollars** formatted to 3th decimal point.
-
-Exchange rate: 1 British Pound \= 1.31 Dollars
+1 British Pound = 1.31 Dollars
 
 ## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 80 | 104.800 |
+|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 80        | 104.800    |
-| 39        |            |
+| 39 | 51.090 |
+|  |  |
 
 [/task-description]
 [code-io /]
@@ -259,7 +255,6 @@ Exchange rate: 1 British Pound \= 1.31 Dollars
 [/slide]
 
 [slide]
-
 # Scientific Notation
 
 When working with large numbers, scientific notation is exceptionally helpful.
@@ -351,12 +346,9 @@ System.out.println(bigDecimal1);
 [/slide]
 
 [slide]
-
 # Problem: Exact Sum of Real Numbers
-
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="8ca6d9d-661b-43ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Exact Sum of Real Numbers" taskId="java-fundamentals-Data-Types - 03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 
@@ -366,28 +358,25 @@ public class Main {
     }
 }
 ```
-
 [/code-editor]
 [task-description]
-
 ## Description
-
-Write program to enter n numbers and calculate and print their exact sum \(without rounding\).
+Write program to enter n numbers and calculate and print their **exact sum** (without rounding).
 
 ## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 1000000000000000015 |
+| 1000000000000000000 |  |
+| 5 |  |
+| 10 |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 3                   | 1000000000000000015 |
-| 1000000000000000000 |                     |
-| 5                   |                     |
-| 10                  |                     |
+| 2 | 333333333333.30000000003 |
+| 0.00000000003 |  |
+| 333333333333.3 |  |
 
-| **Input** | **Output** |
-| --- | --- |
-| 2              | 333333333333.30000000003 |
-| 0.00000000003  |                          |
-| 333333333333.3 |                          |
 
 [/task-description]
 [code-io /]
@@ -444,7 +433,6 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/input]
 [output]
 333333333333.30000000003
-
 [/output]
 [/test]
 [test]
@@ -464,12 +452,9 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/slide]
 
 [slide]
-
 # Solution: Exact Sum of Real Numbers
-
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="d9d-61b-3ce-a8ea-c39f8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Exact Sum of Real Numbers" taskId="de81bcb8-dd0c-4cc2-8721-064f2bbc774c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.math.BigDecimal;
 import java.util.Scanner;
@@ -489,28 +474,24 @@ public class ExactSum {
     }
 }
 ```
-
 [/code-editor]
 [task-description]
-
 ## Description
-
-Write program to enter n numbers and calculate and print their exact sum \(without rounding\).
+Write program to enter n numbers and calculate and print their **exact sum** (without rounding).
 
 ## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 3 | 1000000000000000015 |
+| 1000000000000000000 |  |
+| 5 |  |
+| 10 |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 3                   | 1000000000000000015 |
-| 1000000000000000000 |                     |
-| 5                   |                     |
-| 10                  |                     |
-
-| **Input** | **Output** |
-| --- | --- |
-| 2              | 333333333333.30000000003 |
-| 0.00000000003  |                          |
-| 333333333333.3 |                          |
+| 2 | 333333333333.30000000003 |
+| 0.00000000003 |  |
+| 333333333333.3 |  |
 
 [/task-description]
 [code-io /]
@@ -567,7 +548,6 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 [/input]
 [output]
 333333333333.30000000003
-
 [/output]
 [/test]
 [test]
@@ -588,11 +568,10 @@ Write program to enter n numbers and calculate and print their exact sum \(witho
 
 [slide]
 
+[slide]
 # Problem: Town Info
-
-[code-task title="Problem: Town Info" taskId="f59291-02a4-4eb7-95aa-a272a71da021" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Town Info" taskId="77b5023f-ad6c-41e9-80e7-65d6596629bf" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 
@@ -602,12 +581,9 @@ public class Main {
     }
 }
 ```
-
 [/code-editor]
 [task-description]
-
 ## Description
-
 You will be given 3 lines of input.
 
 On the first line you will be given the name of the town, on the second – the population and on the third the area.
@@ -617,27 +593,26 @@ Use the correct data types and print the result in the following format:
 \"Town \{town name\} has population of \{population\} and area \{area\} square km.\"
 
 ## Examples
-
 | **Input** | **Output** |
 | --- | --- |
-| Bucharest | Town Bucharest has population of 1829897 and area 226 square km. |
-| 1829897   |                                                                  |
-| 226       |                                                                  |
+| Sofia | Town Sofia has population of 1286383 and area 492 square km. |
+| 1286383 |  |
+| 492 |  |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Bucharest
-1829897
-226
+Sofia
+1286383
+492
 [/input]
 [output]
-Town Bucharest has population of 1829897 and area 226 square km.
+Town Sofia has population of 1286383 and area 492 square km.
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 a
 1
@@ -667,4 +642,6 @@ KEF
 Town KEF has population of 10000 and area 500 square km.
 [/output]
 [/test]
+[/tests]
+[/code-task]
 [/slide]
