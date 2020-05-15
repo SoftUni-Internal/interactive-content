@@ -18,7 +18,7 @@ You can find many objects around us: cars, dogs, humans, etc.
 
 
 [slide]
-## Definition of Object
+# Definition of Object
 
 An object has:
 
@@ -43,7 +43,7 @@ System.out.println(birthday);
 
 
 [slide]
-## Create an Object
+# Create an Object
 
 Creating an object of a defined class is called **instantiation**.
 The **instance** is the object itself, which is created runtime.

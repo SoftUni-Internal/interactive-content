@@ -18,7 +18,7 @@ Non obligatory, but credential, components are:
 
 
 [slide]
-## Naming Classes
+# Naming Classes
 
 The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
 
@@ -36,7 +36,7 @@ class MyClass {
 
 
 [slide]
-## Fields
+# Fields
 
 Fields store **values** 
 `private String type;` `private int age;` `private boolean vegetarian;`
@@ -58,7 +58,7 @@ class Animal {
 
 
 [slide]
-## Constructor
+# Constructor
 
 Special method, executed during object creation, that **sets object's initial state**.
 
@@ -86,7 +86,7 @@ class Animal {
 
 
 [slide]
-## Methods
+# Methods
 
 Methods describe **behavior** of an object 
 `public void animalSound() { ... }`
@@ -108,7 +108,7 @@ class Animal {
 
 
 [slide]
-## Getters and Setters
+# Getters and Setters
 
 Getters provide **access** to fields.
 Setters provide fields **change**.

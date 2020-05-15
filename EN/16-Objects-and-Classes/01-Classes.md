@@ -1,5 +1,5 @@
 [slide]
-## Classes
+# Classes
 
 Classes and objects are the **two main aspects** of object-orientated programming. 
 
@@ -13,7 +13,7 @@ It builds specification of a given type objects from the real-world.
 [/slide]
 
 [slide]
-## Real Life Example
+# Real Life Example
 
 All entities with similar characteristics can be arranged in categories.
 
@@ -29,7 +29,7 @@ A class is like an object constructor, that contains all of their similar charac
 [/slide]
 
 [slide]
-## Declaring Class
+# Declaring Class
 
 The class **body** (the area between the braces) contains all the code that provides for the life cycle of the objects created from class:
    - **Fields** that provide the state of the class and its objects.
@@ -60,5 +60,4 @@ class MyClass {
     // other methods
 }
 ```
-
 [/slide]
