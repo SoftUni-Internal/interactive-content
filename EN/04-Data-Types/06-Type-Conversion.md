@@ -1,16 +1,4 @@
-# Type Conversion
-
 [slide]
-
-# Video
-
-[vimeo-video startTimeInSeconds="1958" endTimeInSeconds="2495"][stream language="en" videoid="343678060" default /]
-[stream language="RO" videoId="391452320" /][/vimeo-video]
-
-[/slide]
-
-[slide]
-
 # Type Conversion
 
 When you assign value of one data type to another, the two types might not be compatible with each other.
