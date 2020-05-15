@@ -4,8 +4,10 @@
 
 # Video
 
-[vimeo-video startTimeInSeconds="1406" endTimeInSeconds="1957"][stream language="en" videoid="343678060" default /]
-[stream language="RO" videoId="391452320" /][/vimeo-video]
+[vimeo-video startTimeInSeconds="1406" endTimeInSeconds="1957"]
+[stream language="en" videoid="343678060" default /]
+[stream language="RO" videoId="391452320" /]
+[/vimeo-video]
 [/slide]
 
 [slide]
@@ -59,7 +61,7 @@ System.out.println("Double PI is: " + doublePI);
 - Real numbers are by default interpreted as double.
 
 - One should explicitly convert them to float
-  [/slide]
+[/slide]
 
 [slide]
 
