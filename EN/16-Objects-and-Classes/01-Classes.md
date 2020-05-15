@@ -32,25 +32,23 @@ A class is like an object constructor, that contains all of their similar charac
 # Declaring Class
 
 The class **body** (the area between the braces) contains all the code that provides for the life cycle of the objects created from class:
-   - **Fields** that provide the state of the class and its objects.
-   Example: 
+   - **Fields** that provide the state of the class and its objects. Example: 
      - day; 
      - month;
      - year;
 
    - **Constructors** for initializing new objects.
 
-   - **Getters and Setters** for accessing and changing the fields.
-   Example: 
+   - **Getters and Setters** for accessing and changing the fields. Example: 
      - getDay; 
      - setMonth;
      - getYear;
      - setYear;
    
-   - **Methods** to implement the behavior of the class and its objects.
-   Example: 
+   - **Methods** to implement the behavior of the class and its objects. Example: 
      - plusDay(count); 
      - subtract(date);
+
 
 ```java
 class MyClass {
@@ -60,4 +58,5 @@ class MyClass {
     // other methods
 }
 ```
+
 [/slide]
