@@ -21,7 +21,7 @@ int randomNumber = rnd.nextInt(10);
 
 
 [slide]
-## Math
+# Math
 
 Math class methods are **static** and  help to perform the **numeric operations** and commonly used **mathematical functions** like rounding, comparing, square root, cube root, exponential, logarithm and trigonometric operations.
 
@@ -80,13 +80,11 @@ double radians = Math.toRadians(180);
 System.out.println(radians);
 ```
 - Trigonometric Functions - calculate the value of come angle value in radians `sin(a)` `cos(a)` `tan(a)`
-
-
 [/slide]
 
 
 [slide]
-## Random
+# Random
 
 The class `java.util.Random;` is used to generate random numbers of types integer, float, double, long, boolean. 
 Random class methods are **non-static**.
@@ -368,7 +366,7 @@ pipi
 
 
 [slide]
-## BigInteger
+# BigInteger
 
 The class `java.math.BigInteger;` provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;`.
 `BigInteger` class helps to deal with **very large Integers**. BigInteger class methods are **non-static**.

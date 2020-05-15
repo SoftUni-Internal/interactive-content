@@ -1,1 +1,1 @@
-# Basic Syntax Еxercise
+# Basic Syntax - Еxercise
