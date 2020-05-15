@@ -1,4 +1,5 @@
 [slide]
+
 # Type Conversion
 
 When you assign value of one data type to another, the two types might not be compatible with each other.
@@ -39,7 +40,7 @@ Here the higher data types \(having larger size\) are converted into lower data 
 
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="9e72df63-7fba-48e8-b7c3-fa121db7f79e" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Problem: Centuries to Minutes" taskId="9e72d63-7fba-48e8-b7c3-fa121db7f79e" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -59,8 +60,8 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 ## Examples
 
-| **Input** | **Output**                                                                |
-| --------- | ------------------------------------------------------------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
 | 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
@@ -108,7 +109,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="9e763-7fba-48e8-b7c3-fabf79" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Problem: Centuries to Minutes" taskId="9e73-7fba-48e8-b7c3-fabf79" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -136,8 +137,8 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 ## Examples
 
-| **Input** | **Output**                                                                |
-| --------- | ------------------------------------------------------------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
 | 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
@@ -183,9 +184,9 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 [slide]
 
-# Problem: Chars to String
+# Chars to String
 
-[code-task title="Problem: Chars to String" taskId="6bb07-4b0-412b-90cf-cbaa8c9d5c" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Chars to String" taskId="d2c4406-9433-472d-85da-da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -207,16 +208,17 @@ On each line you get a single character.
 
 Combine all the characters into one string and print it on the console.
 
-## Example
+## Examples
 
 | **Input** | **Output** |
-| --------- | ---------- |
+| --- | --- |
 | a         | abc        |
 | b         |            |
 | c         |            |
 
+
 | **Input** | **Output** |
-| --------- | ---------- |
+| --- | --- |
 | %         | %2o        |
 | 2         |            |
 | o         |            |
@@ -237,7 +239,7 @@ abc
 [/input][output]
 %20
 [/output][/test]
-[test][input]
+[test open][input]
 1
 5
 p
@@ -275,21 +277,17 @@ xyz
 [test][input]
 1
 b
-
-#
-
+\#
 [/input][output]
-1b#
+1b\#
 [/output][/test]
 [/tests][/code-task]
 [/slide]
 
 [slide]
-
-# Problem: Lower or Upper
-
-[code-task title="Problem: Lower or Upper" taskId="65519ad1-b13a-4eb0-a7dc-24805b4bb257" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
-
+# Chars to String
+[code-task title="Chars to String" taskId="ad206-9433-472d-85da-4da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
 import java.util.Scanner;
 
@@ -299,44 +297,58 @@ public class Main {
     }
 }
 ```
-
-[/code-editor][task-description]
-
+[/code-editor]
+[task-description]
 ## Description
-
 Write a program that prints whether a given character is upper-case or lower-case.
 
-## Example
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| L | upper-case |
+|  |  |
 
 | **Input** | **Output** |
-| --------- | ---------- |
-| L         | upper-case |
+| --- | --- |
+| f | lower-case |
+|  |  |
 
-| **Input** | **Output** |
-| --------- | ---------- |
-| f         | lower-case |
 
-[/task-description][code-io /]
-[tests][test open]
+[/task-description]
+[code-io /]
+[tests]
+[test open]
 [input]
 L
-[/input][output]
+[/input]
+[output]
 upper-case
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test open]
+[input]
 f
-[/input][output]
+[/input]
+[output]
 lower-case
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 A
-[/input][output]
+[/input]
+[output]
 upper-case
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 a
-[/input][output]
+[/input]
+[output]
 lower-case
-[/output][/test]
-[/tests][/code-task]
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
