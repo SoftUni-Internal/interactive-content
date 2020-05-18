@@ -49,13 +49,12 @@ Creating an object of a defined class is called **instantiation**.
 The **instance** is the object itself, which is created runtime.
 All instances have common **behavior**. 
 
-To create an object first declare main method, then specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
+To create an object first declare **main method**, then specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
 
 ```java
 public class Animal {
     // fields
     private String type;
-    private int age;
 
     // constructors
     public Animal() {
@@ -74,21 +73,12 @@ public class Animal {
         this.type = type;
     }
 
-    public int getAge() {
-        return this.age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     // methods
     public void makeSound() {
         System.out.println("The animal is making sounds.");
     }
 }
 ```
-
 
 You can create multiple objects of one class.
 
@@ -132,7 +122,7 @@ Define a class **Song**, which holds the following information about songs:
  - On the first line you will receive the **number of songs - N**.
 
  - On the next N-lines you will be receiving data in the following format: 
-**"\{typeList\}\_\{name\}\_\{time\}"**.
+**" \{ typeList \} \_ \{ name \} \_ \{ time \} "**.
 
  - On the last line you will receive **Type List** or **"all"**.
 
@@ -353,7 +343,7 @@ Define a class **Song**, which holds the following information about songs:
  - On the first line you will receive the **number of songs - N**.
 
  - On the next N-lines you will be receiving data in the following format: 
-**"\{typeList\}\_\{name\}\_\{time\}"**.
+**" \{ typeList \} \_ \{ name \} \_ \{ time \} "**.
 
  - On the last line you will receive **Type List** or **"all"**.
 
@@ -517,7 +507,7 @@ After that, you will receive a **city name**.
 ### Output
 
 Print only students which are from the given city, in the following format: 
-**"\{firstName\} \{lastName\} is \{age\} years old."**.
+**" \{ firstName \} \{ lastName \} is \{ age \} years old."**.
 
 ## Examples
 
@@ -770,7 +760,7 @@ After that, you will receive a **city name**.
 ### Output
 
 Print only students which are from the given city, in the following format: 
-**"\{firstName\} \{lastName\} is \{age\} years old."**.
+**" \{ firstName \} \{ lastName \} is \{ age \} years old."**.
 
 ## Examples
 

@@ -97,6 +97,8 @@ public class Animal {
 [slide]
 # Getters and Setters
 
+There can be declared getter and setter for each field.
+
 Getter provide **access** to field and read its value. 
 
 Naming convention: `getXxx()`, where **Xxx** is the name of the variable. 
