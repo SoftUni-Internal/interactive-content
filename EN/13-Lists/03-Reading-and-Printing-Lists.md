@@ -44,7 +44,7 @@ for (int index = 0; index < numbers.size(); index++) {
    System.out.print(numbers.get(index) + " ");
 }
 ```
-- Printing a list using `for` each loop
+- Printing a list using `for-each` loop
 ```java live
 List<String> numbers = new ArrayList<>(
     Arrays.asList("one", "two", "three", "four", "five", "six"));
