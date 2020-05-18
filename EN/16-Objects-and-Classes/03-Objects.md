@@ -12,7 +12,7 @@ Example:
 An object represents **real-life subjects**. 
 
 If you compare the software object with a real-world object, they have very similar characteristics.
-You can find many objects around us: cars, dogs, humans, etc.
+You can find many objects around us: cars from class Vehicle, dogs from class Animal, humans from class Person, etc.
 
 [/slide]
 
@@ -22,11 +22,11 @@ You can find many objects around us: cars, dogs, humans, etc.
 
 An object has:
 
-- State is represented by **fields**.
+- state, which is represented by **fields**.
 
-- Behavior is represented by **methods**. An object interacts with another object by invoking methods. 
+- behavior, which is represented by **methods** - an object interacts with another object by invoking methods. 
 
-- Identity gives an **unique name** to an object.
+- identity, which gives an **unique name** to an object.
 
 
 Real-life example: A dog has states - color, name, breed; and behaviors – barking, eating, wagging the tail. 
@@ -48,23 +48,47 @@ System.out.println(birthday);
 Creating an object of a defined class is called **instantiation**.
 The **instance** is the object itself, which is created runtime.
 All instances have common **behavior**. 
-s
 
-To create an object, specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
+To create an object first declare main method, then specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
+
 ```java
-public class MyClass {
+class Animal {
+    private String type;
+    private int age;
+    private boolean vegetarian;
+ 
+    public Animal() {
+    }
+    public Animal(String type) {
+        this.type = type;
+    }
+
+    public int getType() {
+        return this.type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void animalSound() {
+        System.put.println("The animal makes a sound")
+    }
+
     public static void main(String[] args) {
-        MyClass myObject = new MyClass();
+        Animal dog = new Animal("mammal");
     }
 }
 ```
 
+
 You can create multiple objects of one class.
+
 ```java
-public class MyClass {
+public class Animal {
     public static void main(String[] args) {
-        MyClass myObj1 = new MyClass();
-        MyClass myObj2 = new MyClass();
+        Animal dog = new Animal("mammal");
+        Animal lizard = new Animal("reptile");
     }
 }
 ```
@@ -88,15 +112,20 @@ public class Main {
 [task-description]
 ## Description
 
-Define a class **Song**, which holds the following information about songs: **Type List**, **Name** and **Time**.
+Define a class **Song**, which holds the following information about songs: 
+ - **Type List**
+
+ - **Name**
+
+ - **Time**
 
 On the first line you will receive the **number of songs - N**.
 
 On the next N-lines you will be receiving data in the following format: **"{typeList}_{name}_{time}"**.
 
-On the last line you will receive **Type List / "all"**.
+On the last line you will receive **Type List** or **"all"**.
 
-Print only the **Names of the songs** which are from that **Type List / All songs**.
+Print only the **Names of the songs** which are from that **Type List** or **All songs**.
 
 ## Examples
 
@@ -299,15 +328,20 @@ public class Songs {
 [task-description]
 ## Description
 
-Define a class **Song**, which holds the following information about songs: **Type List**, **Name** and **Time**.
+Define a class **Song**, which holds the following information about songs: 
+ - **Type List**
+
+ - **Name**
+
+ - **Time**
 
 On the first line you will receive the **number of songs - N**.
 
 On the next N-lines you will be receiving data in the following format: **"{typeList}_{name}_{time}"**.
 
-On the last line you will receive **Type List / "all"**.
+On the last line you will receive **Type List** or **"all"**.
 
-Print only the **Names of the songs** which are from that **Type List / All songs**.
+Print only the **Names of the songs** which are from that **Type List** or **All songs**.
 
 ## Examples
 
@@ -458,6 +492,7 @@ After that, you will receive a city name.
 Print only students which are from the given city, in the following format: **"{firstName} {lastName} is {age} years old."**.
 
 ## Examples
+
 | **Input** | **Output** |
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 15 years old. |
@@ -700,6 +735,7 @@ After that, you will receive a city name.
 Print only students which are from the given city, in the following format: **"{firstName} {lastName} is {age} years old."**.
 
 ## Examples
+
 | **Input** | **Output** |
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 15 years old. |
@@ -854,7 +890,7 @@ Use the class from the previous problem.
 If you receive a student which already exists (first name and last name should be unique) overwrite the information.
 
 ## Examples
-## Examples
+
 | **Input** | **Output** |
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 16 years old. |
@@ -1068,7 +1104,7 @@ Use the class from the previous problem.
 If you receive a student which already exists (first name and last name should be unique) overwrite the information.
 
 ## Examples
-## Examples
+
 | **Input** | **Output** |
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 16 years old. |
