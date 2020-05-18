@@ -115,7 +115,8 @@ public class Main {
 ```
 
 Random methods include:
-- `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you gonna see different results on the console.
+
+- `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you will see different results on the console.
 ```java live
 Random random = new Random();
 int number = random.nextInt();
@@ -843,14 +844,6 @@ Calculate **Factorial of N** and print the result.
 [/test]
 [test]
 [input]
-5
-[/input]
-[output]
-120
-[/output]
-[/test]
-[test]
-[input]
 10
 [/input]
 [output]
@@ -863,14 +856,6 @@ Calculate **Factorial of N** and print the result.
 [/input]
 [output]
 479001600
-[/output]
-[/test]
-[test]
-[input]
-50
-[/input]
-[output]
-30414093201713378043612608166064768844377641568960512000000000000
 [/output]
 [/test]
 [test]

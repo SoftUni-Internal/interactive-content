@@ -52,18 +52,21 @@ All instances have common **behavior**.
 To create an object first declare main method, then specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
 
 ```java
-class Animal {
+public class Animal {
+    // fields
     private String type;
     private int age;
-    private boolean vegetarian;
- 
+
+    // constructors
     public Animal() {
     }
+
     public Animal(String type) {
         this.type = type;
     }
 
-    public int getType() {
+    // getters and setters
+    public String getType() {
         return this.type;
     }
 
@@ -71,12 +74,17 @@ class Animal {
         this.type = type;
     }
 
-    public void animalSound() {
-        System.put.println("The animal makes a sound")
+    public int getAge() {
+        return this.age;
     }
 
-    public static void main(String[] args) {
-        Animal dog = new Animal("mammal");
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // methods
+    public void makeSound() {
+        System.out.println("The animal is making sounds.");
     }
 }
 ```
@@ -119,11 +127,16 @@ Define a class **Song**, which holds the following information about songs:
 
  - **Time**
 
-On the first line you will receive the **number of songs - N**.
+### Input/ Constraints
 
-On the next N-lines you will be receiving data in the following format: **"{typeList}_{name}_{time}"**.
+ - On the first line you will receive the **number of songs - N**.
 
-On the last line you will receive **Type List** or **"all"**.
+ - On the next N-lines you will be receiving data in the following format: 
+**"\{typeList\}\_\{name\}\_\{time\}"**.
+
+ - On the last line you will receive **Type List** or **"all"**.
+
+### Output
 
 Print only the **Names of the songs** which are from that **Type List** or **All songs**.
 
@@ -335,11 +348,16 @@ Define a class **Song**, which holds the following information about songs:
 
  - **Time**
 
-On the first line you will receive the **number of songs - N**.
+### Input/ Constraints
 
-On the next N-lines you will be receiving data in the following format: **"{typeList}_{name}_{time}"**.
+ - On the first line you will receive the **number of songs - N**.
 
-On the last line you will receive **Type List** or **"all"**.
+ - On the next N-lines you will be receiving data in the following format: 
+**"\{typeList\}\_\{name\}\_\{time\}"**.
+
+ - On the last line you will receive **Type List** or **"all"**.
+
+### Output
 
 Print only the **Names of the songs** which are from that **Type List** or **All songs**.
 
@@ -483,13 +501,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Define a class **Student**, which holds the following information about students: first name, last name, age and hometown.
+
+Define a class **Student**, which holds the following information about students: 
+ - first name
+ - last name
+ - age
+ - hometown
+
+### Input/ Constraints
 
 Read list of students until you receive **"end"** command.
 
-After that, you will receive a city name.
+After that, you will receive a **city name**.
 
-Print only students which are from the given city, in the following format: **"{firstName} {lastName} is {age} years old."**.
+### Output
+
+Print only students which are from the given city, in the following format: 
+**"\{firstName\} \{lastName\} is \{age\} years old."**.
 
 ## Examples
 
@@ -726,13 +754,23 @@ public class Students {
 [/code-editor]
 [task-description]
 ## Description
-Define a class **Student**, which holds the following information about students: first name, last name, age and hometown.
+
+Define a class **Student**, which holds the following information about students: 
+ - first name
+ - last name
+ - age
+ - hometown
+
+### Input/ Constraints
 
 Read list of students until you receive **"end"** command.
 
-After that, you will receive a city name.
+After that, you will receive a **city name**.
 
-Print only students which are from the given city, in the following format: **"{firstName} {lastName} is {age} years old."**.
+### Output
+
+Print only students which are from the given city, in the following format: 
+**"\{firstName\} \{lastName\} is \{age\} years old."**.
 
 ## Examples
 
@@ -887,7 +925,7 @@ public class Main {
 ## Description
 Use the class from the previous problem.
 
-If you receive a student which already exists (first name and last name should be unique) overwrite the information.
+If you receive a student which already exists (**first name** and **last name** should be **unique**) overwrite the information.
 
 ## Examples
 
