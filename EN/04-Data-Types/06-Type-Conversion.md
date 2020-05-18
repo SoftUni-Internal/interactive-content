@@ -40,7 +40,8 @@ Here the higher data types \(having larger size\) are converted into lower data 
 
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="9e72d63-7fba-48e8-b7c3-fa121db7f79e" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Problem: Centuries to Minutes" taskId="9e72d63-7fba-48e8-b7c3-fa121db7f79e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -52,7 +53,8 @@ public class Main {
 }
 ```
 
-[/code-editor][task-description]
+[/code-editor]
+[task-description]
 
 ## Description
 
@@ -65,51 +67,75 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 | 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
 | 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
-[/task-description][code-io /]
-[tests][test open]
+[/task-description]
+[code-io /]
+[tests]
+[test open]
 [input]
 1
-[/input][output]
+[/input]
+[output]
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
-[/output][/test]
-[test open][input]
+[/output]
+[/test]
+[test open]
+[input]
 5
-[/input][output]
+[/input]
+[output]
 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 14
-[/input][output]
+[/input]
+[output]
 14 centuries = 1400 years = 511339 days = 12272136 hours = 736328160 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 2
-[/input][output]
+[/input]
+[output]
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 4
-[/input][output]
+[/input]
+[output]
 4 centuries = 400 years = 146096 days = 3506304 hours = 210378240 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 3
-[/input][output]
+[/input]
+[output]
 3 centuries = 300 years = 109572 days = 2629728 hours = 157783680 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 6
-[/input][output]
+[/input]
+[output]
 6 centuries = 600 years = 219145 days = 5259480 hours = 315568800 minutes
-[/output][/test]
-[/tests][/code-task]
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
 
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="9e73-7fba-48e8-b7c3-fabf79" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Problem: Centuries to Minutes" taskId="9e73-7fba-48e8-b7c3-fabf79" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -129,7 +155,8 @@ public class Main {
 }
 ```
 
-[/code-editor][task-description]
+[/code-editor]
+[task-description]
 
 ## Description
 
@@ -142,51 +169,75 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 | 1         | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes    |
 | 5         | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
-[/task-description][code-io /]
-[tests][test open]
+[/task-description]
+[code-io /]
+[tests]
+[test open]
 [input]
 1
-[/input][output]
+[/input]
+[output]
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
-[/output][/test]
-[test open][input]
+[/output]
+[/test]
+[test open]
+[input]
 5
-[/input][output]
+[/input]
+[output]
 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 14
-[/input][output]
+[/input]
+[output]
 14 centuries = 1400 years = 511339 days = 12272136 hours = 736328160 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 2
-[/input][output]
+[/input]
+[output]
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 4
-[/input][output]
+[/input]
+[output]
 4 centuries = 400 years = 146096 days = 3506304 hours = 210378240 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 3
-[/input][output]
+[/input]
+[output]
 3 centuries = 300 years = 109572 days = 2629728 hours = 157783680 minutes
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 6
-[/input][output]
+[/input]
+[output]
 6 centuries = 600 years = 219145 days = 5259480 hours = 315568800 minutes
-[/output][/test]
-[/tests][/code-task]
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
 
 # Chars to String
 
-[code-task title="Chars to String" taskId="d2c4406-9433-472d-85da-da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput][code-editor language=java]
+[code-task title="Chars to String" taskId="d2c4406-9433-472d-85da-da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 
 ```
 import java.util.Scanner;
@@ -198,7 +249,8 @@ public class Main {
 }
 ```
 
-[/code-editor][task-description]
+[/code-editor]
+[task-description]
 
 ## Description
 
@@ -223,69 +275,95 @@ Combine all the characters into one string and print it on the console.
 | 2         |            |
 | o         |            |
 
-[/task-description][code-io /]
-[tests][test open]
+[/task-description]
+[code-io /]
+[tests]
+[test open]
 [input]
 a
 b
 c
-[/input][output]
+[/input]
+[output]
 abc
-[/output][/test]
-[test open][input]
+[/output]
+[/test]
+[test open]
+[input]
 %
 2
 0
-[/input][output]
+[/input]
+[output]
 %20
-[/output][/test]
-[test open][input]
+[/output]
+[/test]
+[test open]
+[input]
 1
 5
 p
-[/input][output]
+[/input]
+[output]
 15p
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 d
 e
 f
-[/input][output]
+[/input]
+[output]
 def
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 x
 y
 z
-[/input][output]
+[/input]
+[output]
 xyz
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 1
 2
 3
-[/input][output]
+[/input]
+[output]
 123
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 0
 0
 0
-[/input][output]
+[/input]
+[output]
 000
-[/output][/test]
-[test][input]
+[/output]
+[/test]
+[test]
+[input]
 1
 b
 \#
-[/input][output]
+[/input]
+[output]
 1b\#
-[/output][/test]
-[/tests][/code-task]
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
-# Chars to String
+# Lower or Upper
 [code-task title="Chars to String" taskId="ad206-9433-472d-85da-4da54ffe1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
