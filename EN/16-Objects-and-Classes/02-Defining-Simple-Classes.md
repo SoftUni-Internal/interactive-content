@@ -53,10 +53,10 @@ There can be specified as many fields as needed.
 
 ```java
 public class Animal {
- // fields
- private String type;
- private int age;
- private boolean vegetarian;
+    // fields
+    private String type;
+    private int age;
+    private boolean vegetarian;
 }
 ```
 
@@ -78,18 +78,18 @@ There can be **multiple constructors of the same class**. This helps to instanti
 
 ```java
 public class Animal {
- // fields
- private String type;
- private int age;
- private boolean vegetarian;
- 
- // constructors
- public Animal() {
- 
- }
- public Animal(String type) {
- this.type = type;
- }
+    // fields
+    private String type;
+    private int age;
+    private boolean vegetarian;
+
+    // constructors
+    public Animal() {
+
+    }
+    public Animal(String type) {
+        this.type = type;
+    }
 }
 ```
 [/slide]
@@ -113,18 +113,18 @@ The setter method is **void** type.
 
 ```java
 public class Animal {
- // field
- private String type;
- . . .
- // getter
- public String getType() {
- return this.type;
- }
+    // field
+    private String type;
+    . . .
+    // getter
+    public String getType() {
+        return this.type;
+    }
 
- // setter
- public void setType(String type) {
- this.type = type;
- }
+    // setter
+    public void setType(String type) {
+        this.type = type;
+    }
 }
 ```
 [/slide]
@@ -138,15 +138,15 @@ Methods store **executable code** (algorithm) that manipulate state.
 
 ```java
 class Animal {
- // fields
- private String type;
- private int age;
- private boolean vegetarian;
+    // fields
+    private String type;
+    private int age;
+    private boolean vegetarian;
 
- // method
- public void makeSound() {
- System.put.println("The animal is making sounds.")
- }
+    // method
+    public void makeSound() {
+        System.out.println("The animal is making sounds.")
+    }
 }
 ```
 [/slide]
