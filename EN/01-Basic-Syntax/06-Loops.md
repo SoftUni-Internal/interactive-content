@@ -13,7 +13,7 @@
 # Loop: Definition
 In programming it is often required to perform a block of commands multiple times. 
 
-In order to do that, the so-called **loops** are used. 
+To do that, the so-called **loops** are used.
 
 A **loop** is a control statement that repeats the execution of a block of statements.
 
