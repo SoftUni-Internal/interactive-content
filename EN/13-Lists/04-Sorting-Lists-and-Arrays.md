@@ -3,7 +3,7 @@
 
 [slide]
 # Sorting Lists
-- sorting Lists of Strings in ascending order using `Collections.sort()`
+- Sorting Lists of Strings in ascending order using `Collections.sort()`
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
@@ -11,7 +11,7 @@ Collections.sort(names); // sort in ascending (alphabetical) order
 
 System.out.println(String.join(", ", names));
 ```
-- sorting Lists of Strings in descending order using `Collections.sort()` and `Collections.reverse()`
+- Sorting Lists of Strings in descending order using `Collections.sort()` and `Collections.reverse()`
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -26,7 +26,7 @@ System.out.println(String.join(", ", names));
 
 [slide]
 # Sorting Arrays
-- sorting `int []` in ascending order using `Arrays.sort()`
+- Sorting `int []` in ascending order using `Arrays.sort()`
 
 ```java live
 int[] numbers = new int[]{4, 3, 6, 5, 1, 2};
@@ -37,7 +37,7 @@ for (int number : numbers) {
     System.out.print(number + " ");
 }
 ```
-- sorting `Integer []` in descending order using `Arrays.sort()` and `Collections.sort()`
+- Sorting `Integer []` in descending order using `Arrays.sort()` and `Collections.sort()`
 ```java live
 Integer[] numbers = new Integer[]{4, 3, 6, 5, 1, 2};
 
@@ -51,7 +51,7 @@ for (int number : numbers) {
 ```
 Let's explain what does the code above:
 
-- Initializing `Integer []` with 6 items, pay attention that the items **are Integers** not ints (primitive types)
+- Initializing `Integer []` with 6 items, pay attention that the items **are Integers**, not ints (primitive types)
 
 - We use `Arrays.sort()` to sort the array in **ascending** order
 
@@ -325,7 +325,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers**, **remove all negative numbers** from it and print the remaining elements in **reversed order**.
+Read a **list of integers**, **remove all negative numbers** from it, and print the remaining elements in **reversed order**.
 
 In case of no elements left in the list, print "**empty**".
 
@@ -465,7 +465,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read a **list of integers**, **remove all negative numbers** from it and print the remaining elements in **reversed order**.
+Read a **list of integers**, **remove all negative numbers** from it, and print the remaining elements in **reversed order**.
 
 In case of no elements left in the list, print "**empty**".
 
