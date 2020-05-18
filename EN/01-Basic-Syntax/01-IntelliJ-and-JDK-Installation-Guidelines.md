@@ -31,7 +31,7 @@ Next step:
 
 [image assetsSrc="Install-IntelliJ-IDEA(3).png" /]
 
-If you use 32 bit operation system, select "32-bit launcher" and then continue with next:
+If you use 32 bit operation system, select "32-bit launcher" and then continue with 'Next':
 
 [image assetsSrc="Install-IntelliJ-IDEA(4).png" /]
 
