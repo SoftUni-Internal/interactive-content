@@ -2,7 +2,7 @@
 
 [slide]
 
-# Adding an Element
+# Add Element
 
 - `add(element)` method - **appends** the element at the **end** of the **list**:
 
@@ -18,7 +18,7 @@ for (String name : names){
 }
 ```
 
-- `add(index, element)` - inserts an element to given position:
+- `add(index, element)` - **inserts** an element to **specified position**:
 
 ```java live
 List<Integer> nums = new ArrayList<>();
@@ -49,8 +49,11 @@ for (Integer num : nums) {
  names.add("Maria");
  names.add("George");
 
- System.out.println(names.remove("Maria")); // return true because "Maria" is in the List
- System.out.println(names.remove("John"));  // return false because "John" is not in the List
+ // return true because "Maria" is in the List
+ System.out.println(names.remove("Maria")); 
+
+ // return false because "John" is not in the List
+ System.out.println(names.remove("John")); 
 
  for (String name : names){
      System.out.println(name);
@@ -64,7 +67,8 @@ List<String> names = new ArrayList<>();
 
 names.add("Peter");
 names.add("Maria");
-names.add("George")
+names.add("George");
+
 names.remove(1); // remove element at index 1
 
 for (String name : names){
@@ -73,15 +77,17 @@ for (String name : names){
 ```
 [/slide]
 [slide]
-# Change an Element
+# Change Element
 - `set(index, item)` - **replaces** element at a **specified index**
 
 ```java live
  Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
 
-List<Integer> nums = Arrays.asList(numbers); // convert the numbers array into List
+// convert the numbers array into List
+List<Integer> nums = Arrays.asList(numbers); 
 
-nums.set(4, -100); // replace the element at index 4 (50) with -100
+ // replace the element at index 4 (50) with -100
+nums.set(4, -100);
 
 for (Integer num : nums) {
     System.out.print(num + " ");
@@ -89,7 +95,7 @@ for (Integer num : nums) {
 ```
 [/slide]
 [slide]
-# Access an Element
+# Access Element
 - `get()` - **access** an element to the **specified index**
 
 ```java live
@@ -101,7 +107,7 @@ System.out.println(numberAtIndex4);
 ```
 [/slide]
 [slide]
-# Check if an Element is in the List
+# Contains Element
 - `contains(element)` - checks if an **element is in the List**
 
 ```java live
@@ -113,8 +119,8 @@ if (names.contains("Maria")){
 ```
 [/slide]
 [slide]
-# Number of Elements in the List
-- `size()` - gives the **size** of the ArrayList – **Number of elements** of the list
+# Count Elements
+- `size()` - returns the **size** (**count elements**) of the list
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
