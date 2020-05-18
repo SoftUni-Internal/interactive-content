@@ -12,9 +12,9 @@
 
 [slide]
 # Reading from the Console
-We can **read/write** to the console, using the **Scanner** class.
+We can **read/write** to the console, using the `Scanner` class.
 
-Import the **java.util.Scanner** class:
+Import the `java.util.Scanner` class:
 
 ```java
 import java.util.Scanner;
@@ -22,33 +22,38 @@ import java.util.Scanner;
 Scanner sc = new Scanner(System.in);
 ```
 
-Reading input from the console:
+Read input from the console:
 
 ```java
 String name = sc.nextLine();
 ```
 
 ## Converting Input from the Console
-As you know **scanner.nextLine()** returns a **String**, if we want **Integer** input we have to convert the string to number by **parsing**:
+As you know `scanner.nextLine()` returns a **String**.
+
+If we want **Integer** input we have to convert the string to a number by **parsing**.
 
 ```java live
 import java.util.Scanner;
 …
 Scanner sc = new Scanner(System.in);
+
 String name = sc.nextLine();
 int age = Integer.parseInt(sc.nextLine());
+
 double salary = Double.parseDouble(sc.nextLine());
 ```
 
 ## Printing to the Console
-We can print to the console, using the System class:
-* System.out.print();
-* System.out.println();
+We can print to the console, using the `System` class.
+* `System.out.print();`
+* `System.out.println();`
 
 ### Example
 ```java live
 Scanner sc = new Scanner(System.in);
 System.out.print("Name: ");
+
 String name = sc.nextLine();
 System.out.println("Hi, " + name);
 ```
@@ -60,42 +65,50 @@ The program will run in the **following** way:
 [/slide]
 
 [slide]
-# Using Print Format
-We ca use **format** to print at the console:
+# Using .printf()
+We can use **format** to print at the console:
 
 ```java live
 String name = "George";
 int age = 5;
+
 System.out.printf("Name: %s, Age: %d", name, age);
 ```
-* In that example we have a person with name `George` and age `5`.
-* On the last line we print person's name and age, where `%s` stands for string and correspond to **name**. Here `%d` stands for integer number and corresponds to **age**.
+* We have a person with name `George` and age `5`
+* On the last line we print the person's name and age
+    * `%s` stands for string and corresponds to **name**
+    * `%d` stands for integer number and corresponds to **age**
 
-# Formatting Numbers in Placeholders
-We can format number to certain digits with leading zeros using **d**.
+# Formatting Numbers with Placeholders
+We can format numbers to certain digits with leading zeros using **d**.
 
-We can format floating point number with certain digits after the decimal point **f**.
+We can format floating-point numbers with certain digits after the decimal point using **f**.
 
 ```java live
 int percentage = 55;
 double grade = 5.5334;
+
 System.out.printf("%03d%n", percentage);
 System.out.printf("%.2f%n", grade);
 ```
-* In that example we have two numbers **int** `55` and **double** `5.5334`.
-* On the last two lines we use `%03d` to format first number to `055`, and we use `%.2f` to format second number to `5.53`.
+* We have two numbers: **int** `55` and **double** `5.5334`.
+* On the last two lines we use 
+    * `%03d` to format the first number to `055`
+    * `%.2f` to format second number to `5.53`.
 
 # Using String.format
-In the example below we use **String.format** to create a string by pattern.
+In the example below we use `String.format()` to create a string by pattern.
 
 ```java live
 String name = "George";
 int age = 5;
+
 String result = String.format("Name: %s,Age: %d", name, age);
+
 System.out.println(result);
 ```
-* In that example we have a person with name `George` and age `5`.
-* On the next line we create a new **string** variable, named `result` where we use **String.format** to format our output message.
+* We have a person with name `George` and age `5`.
+* On the next line we create a new **string** variable, named `result` where we use `String.format()` to format our output message.
 * On the last line we print `result`.
 
 [/slide]
