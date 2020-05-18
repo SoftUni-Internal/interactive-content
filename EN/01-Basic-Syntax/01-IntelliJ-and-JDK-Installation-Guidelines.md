@@ -54,7 +54,7 @@ E.g **Windows 64-bit**:
 
 [image assetsSrc="Install-Java-SE-Development-Kit-11.0.1(2).png" /]
 
-After download the file open it and click **"Next"**:
+After you download the file, open it and click **'Next'**:
 
 [image assetsSrc="Install-Java-SE-Development-Kit-11.0.1(3).png" /]
 
@@ -70,11 +70,14 @@ Wait for the Installer:
 
 [slide]
 # Choose SDK 11
-After the installation of **JDK** it is necessary to choose **SDK 11**. To do that click on **"Create New Project"**:
+After the installation of **JDK** it is necessary to choose **SDK 11**. 
+
+To do that click on **"Create New Project"**:
 
 [image assetsSrc="Choose-SDK-11(1).png" /]
 
 The displayed window in which we have to select the SDK from the already installed JDK package. 
+
 By clicking the **"New"** button, select the package installation directory:
 
 [image assetsSrc="Choose-SDK-11(2).png" /]
