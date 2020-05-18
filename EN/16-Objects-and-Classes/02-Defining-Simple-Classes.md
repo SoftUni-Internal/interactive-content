@@ -97,31 +97,6 @@ class Animal {
 ```
 [/slide]
 
-
-[slide]
-# Methods
-
-Methods describe **behavior** of an object 
-`public void animalSound() { ... }`
-Methods store **executable code** (algorithm) that manipulate state.
-
-```java
-class Animal {
-    // fields
-    private String type;
-    private int age;
-    private boolean vegetarian;
-
-    // method
-    public void animalSound() {
-        System.put.println("The animal makes a sound")
-    }
-
-}
-```
-[/slide]
-
-
 [slide]
 # Getters and Setters
 
@@ -154,3 +129,28 @@ class Animal {
 }
 ```
 [/slide]
+
+[slide]
+# Methods
+
+Methods describe **behavior** of an object 
+`public void animalSound() { ... }`
+Methods store **executable code** (algorithm) that manipulate state.
+
+```java
+class Animal {
+    // fields
+    private String type;
+    private int age;
+    private boolean vegetarian;
+
+    // method
+    public void animalSound() {
+        System.put.println("The animal makes a sound")
+    }
+
+}
+```
+[/slide]
+
+
