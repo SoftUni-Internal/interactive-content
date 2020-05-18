@@ -11,7 +11,6 @@
 [/slide]
 
 [slide]
-# Real-Life Example: Football team
 
 # Definition
 
