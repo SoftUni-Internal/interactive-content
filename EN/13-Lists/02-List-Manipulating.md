@@ -4,7 +4,7 @@
 
 # Add Element
 
-- `add(element)` method - **appends** the element at the **end** of the **list**:
+- `add(element)` - **appends** the element at the **end** of the **list**:
 
 ```java live
 List<String> names = new ArrayList<>();
