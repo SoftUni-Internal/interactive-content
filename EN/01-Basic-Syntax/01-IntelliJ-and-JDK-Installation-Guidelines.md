@@ -17,7 +17,7 @@ This guide contains guidelines for installing:
 - Java SE Development Kit 11 - https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 
 # Install IntelliJ (IDEA)
-Opening the above link starts downloading the IntelliJ IDEA 2018.3 installer. 
+Opening the above link starts downloading the IntelliJ IDEA 2018.3 installer 
 
 After we open the installation file, the following installation window is displayed:
 
@@ -62,7 +62,7 @@ Next step:
 
 [image assetsSrc="Install-Java-SE-Development-Kit-11.0.1(4).png" /]
 
-Wait for the Installer: 
+Wait for the Installer:
 
 [image assetsSrc="Install-Java-SE-Development-Kit-11.0.1(5).png" /]
 [/slide]
@@ -76,8 +76,12 @@ To do that click on **"Create New Project"**:
 
 [image assetsSrc="Choose-SDK-11(1).png" /]
 
+<<<<<<< HEAD
+The displayed window in which we have to select the SDK from the already installed JDK package.
+=======
 The displayed window in which we have to select the SDK from the already installed JDK package. 
 
+>>>>>>> 8aa096e4baafa157cb1614f7508ac63c65e16656
 By clicking the **"New"** button, select the package installation directory:
 
 [image assetsSrc="Choose-SDK-11(2).png" /]
