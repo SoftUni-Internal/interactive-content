@@ -32,20 +32,20 @@ A class is like an object constructor, that contains all of their similar charac
 # Declaring Class
 
 The class **body** (the area between the braces) contains all the code that provides for the life cycle of the objects created from class:
- - **Fields** that provide the state of the class and its objects. Example: 
- - String type; 
- - int age;
+- **Fields** that provide the state of the class and its objects. Example: 
+  - String type; 
+  - int age;
 
- - **Constructors** for initializing new objects.
+- **Constructors** for initializing new objects.
 
- - **Getters and Setters** for accessing and changing the fields. Example: 
- - getType(); 
- - setType(String type);
- - getAge();
- - setAge(int age);
+- **Getters and Setters** for accessing and changing the fields. Example: 
+  - getType(); 
+  - setType(String type);
+  - getAge();
+  - setAge(int age);
  
- - **Methods** to implement the behavior of the class and its objects. Example: 
- - makeSound();
+- **Methods** to implement the behavior of the class and its objects. Example: 
+  - makeSound();
 
 
 ```java
