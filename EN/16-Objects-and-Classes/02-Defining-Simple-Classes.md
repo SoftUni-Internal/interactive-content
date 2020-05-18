@@ -14,7 +14,12 @@ Non obligatory, but credential, components are:
 - Getters and Setters
 - Class methods
 
-Each field, method, constructor and class is initialized with an access modifier in front, which specifies the accessibility. Тhe access level of fields, constructors, methods, and class can be changed by applying the access modifier on it. We will cover this in the next course. 
+Each class, field, constructor, method is initialized with an access modifier in front, which specifies the accessibility. Тhe access level can be changed by applying the access modifier on it. We will cover this in the next course. 
+
+There is a possibility to generate automatically via IntelliJ IDEA constructors, getters, setters, and other most used methods. It is possible by Right-click + Generate. The short command depends on the operation system of the computer: in Windows and Linux - Alt + Insert; in Macintosh - Cmd + N.
+
+
+
 
 [/slide]
 
