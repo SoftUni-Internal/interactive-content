@@ -23,7 +23,21 @@ int randomNumber = rnd.nextInt(10);
 [slide]
 # Math
 
-Math class methods are **static** and  help to perform the **numeric operations** and commonly used **mathematical functions** like rounding, comparing, square root, cube root, exponential, logarithm and trigonometric operations.
+Math class methods are **static** and  help to perform the **numeric operations** and commonly used **mathematical functions** like:
+ - rounding
+ 
+ - comparing
+
+ - square root
+
+ - cube root
+
+ - exponential
+
+ - logarithm
+
+ - trigonometric operations.
+
 
 - `abs(a)` : Returns the absolute value of the passed parameter `a`
 ```java live
@@ -86,14 +100,22 @@ System.out.println(radians);
 [slide]
 # Random
 
-The class `java.util.Random;` is used to generate random numbers of types integer, float, double, long, boolean. 
+The class `java.util.Random;` is used to generate random numbers of types integer, float, double, long. It can also generate random boolean type and return result between `true` or `false`. 
 Random class methods are **non-static**.
 
 Declare a Random:
-`Random random = new Random();`
+```java
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Random random = new Random();
+    }
+}
+```
 
 Random methods include:
-- `nextInt()` - Returns next pseudorandom `int` value from random number sequence
+- `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you gonna see different results on the console.
 ```java live
 Random random = new Random();
 int number = random.nextInt();
@@ -428,7 +450,7 @@ System.out.println(number);
 
 [slide]
 # Problem: Sum Big Numbers
-[code-task title="Race" taskId="d8d55320-0574-4f45-bee9-7ff8ea252233" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Big Numbers" taskId="d8d55320-0574-4f45-bee9-7ff8ea252233" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -442,7 +464,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10^50)**, print their sum.
+You will receive two numbers **(0 to 10/^50)**, print their sum.
 
 ## Examples
 
@@ -539,7 +561,7 @@ You will receive two numbers **(0 to 10^50)**, print their sum.
 
 [slide]
 # Solution: Sum Big Numbers
-[code-task title="Race" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Big Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigInteger;
@@ -561,7 +583,7 @@ public class SumBigNumbers {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10^50)**, print their sum.
+You will receive two numbers **(0 to 10/^50)**, print their sum.
 
 ## Examples
 
@@ -672,7 +694,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive N – number in range **[0 – 1000]**.
+You will receive N – number in range **/[0 – 1000/]**.
 
 Calculate **Factorial of N** and print the result.
 
@@ -785,7 +807,7 @@ public class BigFactorial {
 [/code-editor]
 [task-description]
 ## Description
-You will receive N – number in range **[0 – 1000]**.
+You will receive N – number in range **/[0 – 1000/]**.
 
 Calculate **Factorial of N** and print the result.
 
