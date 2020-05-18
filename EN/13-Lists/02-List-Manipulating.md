@@ -99,7 +99,7 @@ for (Integer num : nums) {
 - `get()` - **access** an element to the **specified index**
 
 ```java live
-List<Integer> nums = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50));
+List<Integer> nums = Arrays.asList(10, 20, 30, 40, 50);
         
 int numberAtIndex4 = nums.get(4);
         
@@ -111,7 +111,7 @@ System.out.println(numberAtIndex4);
 - `contains(element)` - checks if an **element is in the List**
 
 ```java live
-List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
+List<String> names = Arrays.asList("Maria", "Peter", "George");
 
 if (names.contains("Maria")){ 
      System.out.println("Yes, the name is in the List.");
@@ -123,7 +123,7 @@ if (names.contains("Maria")){
 - `size()` - returns the **size** (**count elements**) of the list
 
 ```java live
-List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
+List<String> names = Arrays.asList("Maria", "Peter", "George");
 
 int numberOfNames = names.size();
 
