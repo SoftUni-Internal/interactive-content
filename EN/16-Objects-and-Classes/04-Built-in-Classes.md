@@ -464,7 +464,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10^^50)**, print their sum.
+You will receive two numbers (0 to 10 ^ 50), print their sum.
 
 ## Examples
 
@@ -583,7 +583,7 @@ public class SumBigNumbers {
 [/code-editor]
 [task-description]
 ## Description
-You will receive two numbers **(0 to 10^^50)**, print their sum.
+You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 
 ## Examples
 
