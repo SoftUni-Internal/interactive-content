@@ -116,7 +116,7 @@ public class Main {
 
 Random methods include:
 
- - `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you will see different results on the console.
+* `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you will see different results on the console.
 
 ```java live
 Random random = new Random();
@@ -124,7 +124,7 @@ int number = random.nextInt();
 System.out.println(number);
 ```
 
- - `nextInt(n)` - Returns next pseudorandom `int` value in the range from 0 to 9 both inclusive
+- `nextInt(n)` - Returns next pseudorandom `int` value in the range from 0 to 9 both inclusive
 
 ```java live
 Random random = new Random();
@@ -134,7 +134,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
- - `nextDouble()` - Returns next pseudorandom `double` value in the range from 0.0 to 1.0
+- `nextDouble()` - Returns next pseudorandom `double` value in the range from 0.0 to 1.0
 
 ```java live 
 Random random = new Random();
@@ -144,7 +144,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
- - `nextBoolean()` - Returns next pseudorandom `boolean` value, which can either be `true` or `false`
+- `nextBoolean()` - Returns next pseudorandom `boolean` value, which can either be `true` or `false`
 
 ```java live
 Random random = new Random();

@@ -337,12 +337,11 @@ Define a class **Song**, which holds the following information about songs:
 
  - **Time**
 
-### Input/ Constraints
+### Input / Constraints
 
  - On the first line you will receive the **number of songs - N**.
 
- - On the next N-lines you will be receiving data in the following format: 
-**" \{ typeList \} \_ \{ name \} \_ \{ time \} "**.
+ - On the next N-lines you will be receiving data in the following format: "\{typeList\}\_\{name\}\_\{time\}".
 
  - On the last line you will receive **Type List** or **"all"**.
 
@@ -497,7 +496,7 @@ Define a class **Student**, which holds the following information about students
  - age
  - hometown
 
-### Input/ Constraints
+### Input / Constraints
 
 Read list of students until you receive **"end"** command.
 
@@ -505,8 +504,7 @@ After that, you will receive a **city name**.
 
 ### Output
 
-Print only students which are from the given city, in the following format: 
-**" \{ firstName \} \{ lastName \} is \{ age \} years old."**.
+Print only students which are from the given city, in the following format: "\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Examples
 
@@ -758,8 +756,7 @@ After that, you will receive a **city name**.
 
 ### Output
 
-Print only students which are from the given city, in the following format: 
-**" \{ firstName \} \{ lastName \} is \{ age \} years old."**.
+Print only students which are from the given city, in the following format: "\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Examples
 
