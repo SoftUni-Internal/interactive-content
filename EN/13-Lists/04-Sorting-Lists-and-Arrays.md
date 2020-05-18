@@ -3,7 +3,7 @@
 
 [slide]
 # Sorting Lists
-- sorting Lists of Strings in ascending order using `Collections.sort()` - method
+- sorting Lists of Strings in ascending order using `Collections.sort()`
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
@@ -11,7 +11,8 @@ Collections.sort(names); // sort in ascending (alphabetical) order
 
 System.out.println(String.join(", ", names));
 ```
-- sorting Lists of Strings in descending order using `Collections.sort()` and `Collections.reverse()` - methods
+- sorting Lists of Strings in descending order using `Collections.sort()` and `Collections.reverse()`
+
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
@@ -25,7 +26,7 @@ System.out.println(String.join(", ", names));
 
 [slide]
 # Sorting Arrays
-- sorting `int []` in ascending order using `Arrays.sort()` - method
+- sorting `int []` in ascending order using `Arrays.sort()`
 
 ```java live
 int[] numbers = new int[]{4, 3, 6, 5, 1, 2};
@@ -187,15 +188,22 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = Integer.parseInt(sc.nextLine());
+
         List<String> products = new ArrayList<>();
+        
         for (int i = 0; i < n; i++) {
             String currentProduct = sc.nextLine();
             products.add(currentProduct);
         }
+
         Collections.sort(products);
-        for (int i = 0; i < products.size(); i++)
+
+        for (int i = 0; i < products.size(); i++){
+
             System.out.printf("%d.%s%n", i + 1, products.get(i));
+        }
     }
 }
 ```
@@ -427,17 +435,29 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-        List<Integer> nums = Arrays.stream(sc.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+
+        List<Integer> nums = Arrays
+                .stream(sc.nextLine().split(" "))
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
+
         for (int i = 0; i < nums.size(); i++) {
+
             if (nums.get(i) < 0) {
                 nums.remove(i--);
             }
         }
+
         Collections.reverse(nums);
-        if (nums.size() == 0){
+
+        if (nums.size() == 0) {
+
             System.out.println("empty"); 
-        } else{
+
+        } else {
+
             System.out.println(nums.toString().replaceAll("[\\[\\],]", ""));
+
         }
     }
 }
