@@ -26,7 +26,7 @@ A variable is a name given to a memory location. It is the basic unit of storage
 
 * A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.
 
-* In Java, all the variables must be create before use.
+* In Java, all the variables must be created before use.
 
 ```java
 int count = 5;
@@ -36,10 +36,10 @@ int count = 5;
 ```
 
 * **Data type**: Type of data that can be stored in this variable.
-* **Variable name**: Name given to the variable .
+* **Variable name**: Name given to the variable.
 * **Variable value**: It is the initial value stored in the variable.
 
-A variable can be declared, without initialisation:
+A variable can be declared, without initialization:
 
 ```java
 int count;
@@ -61,7 +61,7 @@ There are **two types of data types** in Java:
 **Primitive data types**
 -	Built-into a programming language
 -	The size and type of the variable values are specified, and they cannot be modified
--	Some examples include boolean, char, int, long, float and double.
+- Some examples include boolean, char, int, long, float, and double.
 
 
 **Non-primitive data types**
@@ -90,7 +90,7 @@ In computer programming, a naming convention is a set of **rules** for choosing 
 
 Naming conventions make programs more understandable by making them easier to read. 
 
-In Java the convention for naming variables are used ***"camel-case"***. 
+In Java the convention for naming variables is used ***"camel-case"***.
 
 **Camel case** is the practice of writing phrases:
 
@@ -148,7 +148,7 @@ public static void main(String[] args) {
 
 Variable **span** is how long before a variable is called.
 
-It's good practice create a variable as **late as possible** (e.g. shorter span).
+It's good practice to create a variable as **late as possible** (e.g. shorter span).
 
 - Example
 ```java
@@ -166,11 +166,12 @@ static void main(String[] args) {
   //System.out.println(inner); Error
 }
 ```
-As a good rule of thumb, try to keep variable span shorter.
+As a good rule of thumb, try to keep the variable span shorter.
 
 Shorter span simplifies the code and improves its **readability** and **maintainability**.
 
-We can reduce `outer` variable span as follows:
+We can reduce the `outer` variable span as follows:
+
 
 ```java
 static void main(String[] args) {

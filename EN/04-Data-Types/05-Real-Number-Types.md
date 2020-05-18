@@ -14,7 +14,7 @@
 
 # What are Floating-Point Types?
 
-You should use a **floating point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
+You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
@@ -38,7 +38,7 @@ float myNum = 5.75f;
 System.out.println(myNum);
 ```
 
-- **Double**: in this course when we need floating point number, most of the time we're going to use **double**.
+- **Double**: in this course when we need floating-point numbers, most of the time we're going to use **double**.
 
 ```java live
 double myNum = 19.99;
@@ -79,7 +79,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars formatted to 3th decimal point.
+Write a program that converts British pounds to US dollars formatted to 3rd decimal point.
 
 1 British Pound = 1.31 Dollars
 
@@ -176,7 +176,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars formatted to 3th decimal point.
+Write a program that converts British pounds to US dollars formatted to 3rd decimal point.
 
 1 British Pound = 1.31 Dollars
 
@@ -318,7 +318,11 @@ System.out.println(num);
 
 # BigDecimal Class
 
-Java includes a `BigDecimal` class for performing high-precision arithmetic with 32-bit integer scale, which can be used in banking or financial domain based application.
+
+Keep in mind that sometimes floating-point numbers work incorrectly!
+
+We encourage you to read more about `IEEE 754`.
+
 
 ```java live
 BigDecimal bigDecimal1 =
@@ -361,7 +365,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write program to enter n numbers and calculate and print their **exact sum** (without rounding).
+Write a program to enter n numbers and calculate and print their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
@@ -477,7 +481,7 @@ public class ExactSum {
 [/code-editor]
 [task-description]
 ## Description
-Write program to enter n numbers and calculate and print their **exact sum** (without rounding).
+Write a program to enter n numbers and calculate and print their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |

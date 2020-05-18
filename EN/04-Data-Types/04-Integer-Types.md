@@ -51,7 +51,7 @@ System.out.println(myNum);
 
 - **Long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807. 
 
-This is used when int is not large enough to store the value.
+This is used when an int is not large enough to store the value.
 
 Note that you should end the value with an "L":
 

@@ -27,7 +27,6 @@ A boolean data type is declared with the **boolean** keyword with two choices of
   System.out.println(secondBoolean);
  }       
 ```
-In the example above we declare two variables with key word `boolean` and names as follow `isCodingFun` and `isFishTasty`. We use `=` operator to assign value to those variables. And then we print the result.
 
 # Character Type
 The char data type is used to store a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
@@ -57,7 +56,7 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ch = 'A';
 System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ```
-In the exampla above we convert each character to it's **ASCII** value. **ASCII table** is the acronym for the `American Standard Code for Information Interchange`.
+In the example above we convert each character to its **ASCII** value. **ASCII table** is the acronym for the `American Standard Code for Information Interchange`.
 It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. We encourage you to research it yourself!
 [/slide]
 
@@ -761,7 +760,7 @@ The backslash \(\\\) escape character turns special characters into string chara
 
 **Escape character**:
 - \\' -> '  Single quote;
-- \\" -> "  Double quote; 
+- \\" -> "  Double quote;
 - \\\ -> \\ Backslash;
 
 The sequence `\"` inserts a double quote in a string:
