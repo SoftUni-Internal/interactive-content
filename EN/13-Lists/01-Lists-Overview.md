@@ -32,7 +32,7 @@ The main **features** of the **Lists** are:
 
 - The **size** of the **List** is **expandable**
 
-- A **List** supports a lot of useful **methods**
+- **Lists** support a lot of useful **methods**
 
 [/slide]
 
@@ -42,18 +42,21 @@ The main **features** of the **Lists** are:
 - Initialize an empty **List** using keyword `new` and  `ArrayList<>()`
 
 ```java
-List<String> names = new ArrayList<>(); //Create an empty List of strings
+//Create an empty List of strings
+List<String> names = new ArrayList<>(); 
 ```
 - Initialization using `asList()` - method 
 ```java
-List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); // Create a List of strings with 3 elements
+// Create a List of strings with 3 elements
+List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George")); 
 ```
 - Initialization by **converting** an **array** to **List**
 
 ```java
 Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
 
-List<Integer> nums = Arrays.asList(numbers); // convert the Integer array into List
+// Convert the Integer array into List
+List<Integer> nums = Arrays.asList(numbers); 
 ```
 
 - If you try to convert an array which holds a primitive data type like `int []` to List, that will produce a **compile error**,
