@@ -5,7 +5,9 @@ An object is **basic unit** and an **instance of a class**.
 Classes define templates for objects: fields, constructors, methods.
 
 Example:
+
 - Sample class: LocalDate
+
 - Sample objects: birthdayPeter, birthdayMaria
 
 
@@ -53,30 +55,36 @@ To create an object first declare **main method**, then specify the **class name
 
 ```java
 public class Animal {
- // fields
- private String type;
+    // fields
+    private String type;
 
- // constructors
- public Animal() {
- }
+    // constructors
+    public Animal() {
+    }
 
- public Animal(String type) {
- this.type = type;
- }
+    public Animal(String type) {
+        this.type = type;
+    }
 
- // getters and setters
- public String getType() {
- return this.type;
- }
+    // getters and setters
+    public String getType() {
+        return this.type;
+    }
 
- public void setType(String type) {
- this.type = type;
- }
+    public void setType(String type) {
+        this.type = type;
+    }
 
- // methods
- public void makeSound() {
- System.out.println("The animal is making sounds.");
- }
+    // methods
+    public void makeSound() {
+        System.out.println("The animal is making sounds.");
+    }
+
+    // main method
+    public static void main(String[] args) {
+        Animal dog = new Animal("mammal");
+        Animal lizard = new Animal("reptile");
+    }
 }
 ```
 
@@ -84,10 +92,10 @@ You can create multiple objects of one class.
 
 ```java
 public class Animal {
- public static void main(String[] args) {
- Animal dog = new Animal("mammal");
- Animal lizard = new Animal("reptile");
- }
+    public static void main(String[] args) {
+        Animal dog = new Animal("mammal");
+        Animal lizard = new Animal("reptile");
+    }
 }
 ```
 
@@ -101,9 +109,9 @@ public class Animal {
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
- // Write your code here
- }
+    public static void main(String[] args) {
+        // Write your code here
+    }
 }
 ```
 [/code-editor]
@@ -264,66 +272,66 @@ import java.util.stream.Collectors;
 
 public class Songs {
 
- public static class Song{
- private String typeList;
- private String name;
- private String time;
+    public static class Song {
+        private String typeList;
+        private String name;
+        private String time;
 
- public String getTypeList(){
- return typeList;
- }
+        public String getTypeList() {
+            return typeList;
+        }
 
- public String getName(){
- return name;
- }
+        public String getName() {
+            return name;
+        }
 
- public void setTypeList(String typeList){
- this.typeList = typeList;
- }
+        public void setTypeList(String typeList) {
+            this.typeList = typeList;
+        }
 
- public void setName(String name){
- this.name = name;
- }
+        public void setName(String name) {
+            this.name = name;
+        }
 
- public void setTime(String time){
- this.time = time;
- }
- }
+        public void setTime(String time) {
+            this.time = time;
+        }
+    }
 
- public static void main(String[] args) {
- Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
- int n = Integer.parseInt(scanner.nextLine());
- List<Song> songs = new ArrayList<>();
+        int n = Integer.parseInt(scanner.nextLine());
+        List<Song> songs = new ArrayList<>();
 
- for (int i = 0; i < n; i++) {
- String [] data = scanner.nextLine().split("_");
- String type = data[0];
- String name = data[1];
- String time = data[2];
+        for (int i = 0; i < n; i++) {
+            String[] data = scanner.nextLine().split("_");
+            String type = data[0];
+            String name = data[1];
+            String time = data[2];
 
- Song song = new Song();
+            Song song = new Song();
 
- song.setTypeList(type);
- song.setName(name);
- song.setTime(time);
+            song.setTypeList(type);
+            song.setName(name);
+            song.setTime(time);
 
- songs.add(song);
- }
- String typeList = scanner.nextLine();
+            songs.add(song);
+        }
+        String typeList = scanner.nextLine();
 
- if(typeList.equals("all")){
- for (Song song : songs) {
- System.out.println(song.getName());
- }
- } else {
- for (Song song : songs) {
- if(song.getTypeList().equals(typeList)){
- System.out.println(song.getName());
- }
- }
- }
- }
+        if (typeList.equals("all")) {
+            for (Song song : songs) {
+                System.out.println(song.getName());
+            }
+        } else {
+            for (Song song : songs) {
+                if (song.getTypeList().equals(typeList)) {
+                    System.out.println(song.getName());
+                }
+            }
+        }
+    }
 }
 ```
 [/code-editor]
@@ -481,9 +489,9 @@ Photoshop
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
- // Write your code here
- }
+    public static void main(String[] args) {
+        // Write your code here
+    }
 }
 ```
 [/code-editor]
@@ -652,90 +660,90 @@ import java.util.Scanner;
 
 public class Students {
 
- static class Student {
- private String firstName;
- private String lastName;
- private int age;
- private String city;
+    static class Student {
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String city;
 
- public Student (String firstName, String lastName, int age, String city){
- this.firstName = firstName;
- this.lastName = lastName;
- this.age = age;
- this.city = city;
- }
+        public Student(String firstName, String lastName, int age, String city) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.city = city;
+        }
 
- public String getFirstName() {
- return firstName;
- }
+        public String getFirstName() {
+            return firstName;
+        }
 
- public String getLastName() {
- return lastName;
- }
+        public String getLastName() {
+            return lastName;
+        }
 
- public String getCity() {
- return city;
- }
+        public String getCity() {
+            return city;
+        }
 
- public int getAge() {
- return age;
- }
+        public int getAge() {
+            return age;
+        }
 
- public void setAge(int age) {
- this.age = age;
- }
+        public void setAge(int age) {
+            this.age = age;
+        }
 
- public void setCity(String city) {
- this.city = city;
- }
- }
+        public void setCity(String city) {
+            this.city = city;
+        }
+    }
 
- private static Student findStudent(String firstName, String lastName, List <Student> students ){
- for (Student student : students) {
- if(student.getFirstName().equals(firstName) &&
- student.getLastName().equals(lastName)){
- return student;
- }
- }
- return null;
- }
+    private static Student findStudent(String firstName, String lastName, List<Student> students) {
+        for (Student student : students) {
+            if (student.getFirstName().equals(firstName) &&
+                    student.getLastName().equals(lastName)) {
+                return student;
+            }
+        }
+        return null;
+    }
 
- public static void main(String[] args) {
- Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
- List<Student> students = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
 
- String input = scanner.next();
- while (!input.equals("end")){
- String firstName = input;
- String lastName = scanner.next();
- int age = scanner.nextInt();
- String city = scanner.next();
+        String input = scanner.next();
+        while (!input.equals("end")) {
+            String firstName = input;
+            String lastName = scanner.next();
+            int age = scanner.nextInt();
+            String city = scanner.next();
 
- Student existingStudent = findStudent(firstName, lastName, students);
- if(existingStudent != null){
- existingStudent.setAge(age);
- existingStudent.setCity(city);
- }else{
- Student student = new Student(firstName, lastName, age, city);
- students.add(student);
- }
+            Student existingStudent = findStudent(firstName, lastName, students);
+            if (existingStudent != null) {
+                existingStudent.setAge(age);
+                existingStudent.setCity(city);
+            } else {
+                Student student = new Student(firstName, lastName, age, city);
+                students.add(student);
+            }
 
 
- input = scanner.next();
+            input = scanner.next();
 
- }
+        }
 
- String cityName = scanner.next();
+        String cityName = scanner.next();
 
- for (Student student : students) {
- if(student.getCity().equals(cityName)){
- System.out.printf("%s %s is %d years old%n", student.getFirstName(),
- student.getLastName(), student.getAge());
- }
- }
+        for (Student student : students) {
+            if (student.getCity().equals(cityName)) {
+                System.out.printf("%s %s is %d years old%n", student.getFirstName(),
+                        student.getLastName(), student.getAge());
+            }
+        }
 
- }
+    }
 }
 ```
 [/code-editor]
@@ -901,9 +909,9 @@ Port Lee is 14 years old
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
- // Write your code here
- }
+    public static void main(String[] args) {
+        // Write your code here
+    }
 }
 ```
 [/code-editor]
@@ -923,7 +931,6 @@ If you receive a student, who already exists (**first name** and **last name** s
 | Simon Stone 12 Varna | |
 | end | |
 | Sofia | |
-
 
 
 [/task-description]
@@ -1007,117 +1014,117 @@ import java.util.Scanner;
 
 public class Students2 {
 
- static class Student {
- private String firstName;
- private String lastName;
- private int age;
- private String city;
+    static class Student {
+        private String firstName;
+        private String lastName;
+        private int age;
+        private String city;
 
- public Student (String firstName, String lastName, int age, String city){
- this.firstName = firstName;
- this.lastName = lastName;
- this.age = age;
- this.city = city;
- }
+        public Student(String firstName, String lastName, int age, String city) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.city = city;
+        }
 
- public String getFirstName() {
- return firstName;
- }
+        public String getFirstName() {
+            return firstName;
+        }
 
- public String getLastName() {
- return lastName;
- }
+        public String getLastName() {
+            return lastName;
+        }
 
- public String getCity() {
- return city;
- }
+        public String getCity() {
+            return city;
+        }
 
- public int getAge() {
- return age;
- }
+        public int getAge() {
+            return age;
+        }
 
- public void setAge(int age) {
- this.age = age;
- }
+        public void setAge(int age) {
+            this.age = age;
+        }
 
- public void setCity(String city) {
- this.city = city;
- }
+        public void setCity(String city) {
+            this.city = city;
+        }
 
- public void setFirstName(String firstName) {
- this.firstName = firstName;
- }
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
 
- public void setLastName(String lastName) {
- this.lastName = lastName;
- }
- }
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+    }
 
- private static Student getStudent(List<Student> students, String firstName, String lastName) {
- Student existingStudent = null;
- for (Student student : students) {
- if(student.getFirstName().equals(firstName) &&
- student.getLastName().equals(lastName)){
- existingStudent = student;
- }
- }
- return existingStudent;
- }
+    private static Student getStudent(List<Student> students, String firstName, String lastName) {
+        Student existingStudent = null;
+        for (Student student : students) {
+            if (student.getFirstName().equals(firstName) &&
+                    student.getLastName().equals(lastName)) {
+                existingStudent = student;
+            }
+        }
+        return existingStudent;
+    }
 
- private static boolean isStudentExisting(List<Student> students, String firstName, String lastName) {
- for (Student student : students) {
- if(student.getFirstName().equals(firstName) &&
- student.getLastName().equals(lastName)){
- return true;
- }
- }
- return false;
- }
+    private static boolean isStudentExisting(List<Student> students, String firstName, String lastName) {
+        for (Student student : students) {
+            if (student.getFirstName().equals(firstName) &&
+                    student.getLastName().equals(lastName)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
- public static void main(String[] args) {
- Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
- List<Student> students = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
 
- String input = scanner.next();
- while (!input.equals("end")){
- String firstName = input;
- String lastName = scanner.next();
- int age = scanner.nextInt();
- String city = scanner.next();
+        String input = scanner.next();
+        while (!input.equals("end")) {
+            String firstName = input;
+            String lastName = scanner.next();
+            int age = scanner.nextInt();
+            String city = scanner.next();
 
- if(isStudentExisting(students, firstName, lastName)){
- Student student = getStudent(students,firstName,lastName);
- student.setFirstName(firstName);
- student.setLastName(lastName);
- student.setAge(age);
- student.setCity(city);
- } else {
- Student student = new Student(firstName,lastName,age,city);
- students.add(student);
- }
+            if (isStudentExisting(students, firstName, lastName)) {
+                Student student = getStudent(students, firstName, lastName);
+                student.setFirstName(firstName);
+                student.setLastName(lastName);
+                student.setAge(age);
+                student.setCity(city);
+            } else {
+                Student student = new Student(firstName, lastName, age, city);
+                students.add(student);
+            }
 
- Student existingStudent = getStudent(students, firstName, lastName);
- if (existingStudent != null){
- existingStudent.setAge(age);
- existingStudent.setCity(city);
- } else {
- Student student = new Student(firstName, lastName, age, city);
- students.add(student);
- }
- 
- input = scanner.next();
- }
+            Student existingStudent = getStudent(students, firstName, lastName);
+            if (existingStudent != null) {
+                existingStudent.setAge(age);
+                existingStudent.setCity(city);
+            } else {
+                Student student = new Student(firstName, lastName, age, city);
+                students.add(student);
+            }
 
- String cityName = scanner.next();
+            input = scanner.next();
+        }
 
- for (Student student : students) {
- if(student.getCity().equals(cityName)){
- System.out.printf("%s %s is %d years old%n", student.getFirstName(),
- student.getLastName(), student.getAge());
- }
- }
- }
+        String cityName = scanner.next();
+
+        for (Student student : students) {
+            if (student.getCity().equals(cityName)) {
+                System.out.printf("%s %s is %d years old%n", student.getFirstName(),
+                        student.getLastName(), student.getAge());
+            }
+        }
+    }
 }
 ```
 [/code-editor]

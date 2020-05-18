@@ -50,48 +50,48 @@ The class **body** (the area between the braces) contains all the code that prov
 
 ```java
 public class MyClass {
- // fields
- // constructors
- // getters and setters
- // other methods
+    // fields
+    // constructors
+    // getters and setters
+    // other methods
 }
 ```
 
 ```java
 public class Animal {
- // fields
- private String type;
- private int age;
+    // fields
+    private String type;
+    private int age;
 
- // constructors
- public Animal() {
- }
+    // constructors
+    public Animal() {
+    }
 
- public Animal(String type) {
- this.type = type;
- }
+    public Animal(String type) {
+        this.type = type;
+    }
 
- // getters and setters
- public String getType() {
- return this.type;
- }
+    // getters and setters
+    public String getType() {
+        return this.type;
+    }
 
- public void setType(String type) {
- this.type = type;
- }
+    public void setType(String type) {
+        this.type = type;
+    }
 
- public int getAge() {
- return this.age;
- }
+    public int getAge() {
+        return this.age;
+    }
 
- public void setAge(int age) {
- this.age = age;
- }
+    public void setAge(int age) {
+        this.age = age;
+    }
 
- // methods
- public void makeSound() {
- System.out.println("The animal is making sounds.");
- }
+    // methods
+    public void makeSound() {
+        System.out.println("The animal is making sounds.");
+    }
 }
 ```
 
