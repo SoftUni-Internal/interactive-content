@@ -7,7 +7,7 @@ Everything in Java is associated with classes and objects, along with its fields
 
 In programming classes provide the **structure for describing and creating objects**. 
 
-It builds specification of a given type objects from the real-world.
+It builds the specification of a given type object from the real-world.
 
 
 [/slide]
@@ -21,9 +21,9 @@ For example all animals are grouped in a single `class` and each animal is an `o
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Each animal has states like type, age, color, preferred food, ect. and behavior like eat, drink water, move, make sound, ect. 
+Each animal has states like type, age, color, preferred food, etc. and behavior like eat, drink water, move, make sound, etc. 
 
-A class is like an object constructor, that contains all of their similar characteristics. It is "blueprint" for creating objects.
+A class is like an object constructor, that contains all of their similar characteristics. It is a "blueprint" for creating objects.
 
 
 [/slide]
@@ -32,66 +32,66 @@ A class is like an object constructor, that contains all of their similar charac
 # Declaring Class
 
 The class **body** (the area between the braces) contains all the code that provides for the life cycle of the objects created from class:
-   - **Fields** that provide the state of the class and its objects. Example: 
-     - String type; 
-     - int age;
+ - **Fields** that provide the state of the class and its objects. Example: 
+ - String type; 
+ - int age;
 
-   - **Constructors** for initializing new objects.
+ - **Constructors** for initializing new objects.
 
-   - **Getters and Setters** for accessing and changing the fields. Example: 
-     - getType(); 
-     - setType(String type);
-     - getAge();
-     - setAge(int age);
-   
-   - **Methods** to implement the behavior of the class and its objects. Example: 
-     - makeSound();
+ - **Getters and Setters** for accessing and changing the fields. Example: 
+ - getType(); 
+ - setType(String type);
+ - getAge();
+ - setAge(int age);
+ 
+ - **Methods** to implement the behavior of the class and its objects. Example: 
+ - makeSound();
 
 
 ```java
 public class MyClass {
-    // fields
-    // constructors
-    // getters and setters
-    // other methods
+ // fields
+ // constructors
+ // getters and setters
+ // other methods
 }
 ```
 
 ```java
 public class Animal {
-    // fields
-    private String type;
-    private int age;
+ // fields
+ private String type;
+ private int age;
 
-    // constructors
-    public Animal() {
-    }
+ // constructors
+ public Animal() {
+ }
 
-    public Animal(String type) {
-        this.type = type;
-    }
+ public Animal(String type) {
+ this.type = type;
+ }
 
-    // getters and setters
-    public String getType() {
-        return this.type;
-    }
+ // getters and setters
+ public String getType() {
+ return this.type;
+ }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+ public void setType(String type) {
+ this.type = type;
+ }
 
-    public int getAge() {
-        return this.age;
-    }
+ public int getAge() {
+ return this.age;
+ }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+ public void setAge(int age) {
+ this.age = age;
+ }
 
-    // methods
-    public void makeSound() {
-        System.out.println("The animal is making sounds.");
-    }
+ // methods
+ public void makeSound() {
+ System.out.println("The animal is making sounds.");
+ }
 }
 ```
 

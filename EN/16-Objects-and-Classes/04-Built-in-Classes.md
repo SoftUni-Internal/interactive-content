@@ -1,7 +1,7 @@
 [slide]
 # Built-in Classes
 
-Java provides **ready-to-use** classes, which are organized inside **Packages**. This classes provide predefined methods and fields that help to save time and effort in writing code and repeating it.
+Java provides **ready-to-use** classes, which are organized inside **Packages**. These classes provide predefined methods and fields that help to save time and effort in writing code and repeating it.
 
 Example: `java.util.Scanner;` `java.utils.List;` `java.lang.Math;` `java.math.BigInteger;`
 
@@ -23,7 +23,7 @@ int randomNumber = rnd.nextInt(10);
 [slide]
 # Math
 
-Math class methods are **static** and  help to perform the **numeric operations** and commonly used **mathematical functions** like:
+Math class methods are **static** and help to perform the **numeric operations** and commonly used **mathematical functions** like:
  - rounding
  
  - comparing
@@ -101,16 +101,16 @@ System.out.println(radians);
 # Random
 
 The class `java.util.Random;` is used to generate random numbers of types integer, float, double, long. It can also generate random boolean type and return result between `true` or `false`. 
-Random class methods are **non-static**.
+Random class methods are **not-static**.
 
 Declare a Random:
 ```java
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) {
-        Random random = new Random();
-    }
+ public static void main(String[] args) {
+ Random random = new Random();
+ }
 }
 ```
 
@@ -163,9 +163,9 @@ System.out.println(isValid);
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -269,32 +269,32 @@ pipi
 
 [slide]
 # Solution: Randomize Words
-[code-task title="Randomize Words"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Randomize Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Random;
 import java.util.Scanner;
 
 public class RandomizeWords {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-         String [] words = scanner.nextLine().split(" ");
+ String [] words = scanner.nextLine().split(" ");
 
-         Random random= new Random();
+ Random random= new Random();
 
-        for (int i = 0; i < words.length ; i++) {
-            int firstIndex = random.nextInt(words.length);
-            int secondIndex = random.nextInt(words.length);
+ for (int i = 0; i < words.length ; i++) {
+ int firstIndex = random.nextInt(words.length);
+ int secondIndex = random.nextInt(words.length);
 
-            String swapWord = words[firstIndex];
-            words[firstIndex] = words[secondIndex];
-            words[secondIndex] = swapWord;
-        }
+ String swapWord = words[firstIndex];
+ words[firstIndex] = words[secondIndex];
+ words[secondIndex] = swapWord;
+ }
 
-        System.out.println(String.join(System.lineSeparator(), words));
+ System.out.println(String.join(System.lineSeparator(), words));
 
-    }
+ }
 }
 ```
 [/code-editor]
@@ -402,11 +402,11 @@ pipi
 The class `java.math.BigInteger;` provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;`.
 `BigInteger` class helps to deal with **very large Integers**. BigInteger class methods are **non-static**.
 
-Declare a BigInteger:  
+Declare a BigInteger: 
 - `BigInteger num = BigInteger.valueOf(1234567890);` 
-  - Here the number `1234567890` is a `long` variable (64 bits).
+ - Here the number `1234567890` is a `long` variable (64 bits).
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - Here the number `12345688901234567890` is too large, can not fit in 64bits, so take the **numeric String** as parameter.
+ - Here the number `12345688901234567890` is too large, can not fit in 64bits, so take the **numeric String** as parameter.
 
 BigInteger **fields** include:
 - `BigInteger.ONE` : Constant one
@@ -426,7 +426,7 @@ BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)` :  Assigns **new value** to current BigInteger, performs **subtraction** (current - value)
+- `subtract(value)` : Assigns **new value** to current BigInteger, performs **subtraction** (current - value)
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
@@ -465,9 +465,9 @@ System.out.println(number);
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -480,7 +480,7 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 | **Input** | **Output** |
 | --- | --- |
 | 923847238931983192462832102 | 934573817465075391826664309019448 |
-| 934572893617836459843471846187346 |  |
+| 934572893617836459843471846187346 | |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -577,16 +577,16 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class SumBigNumbers {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-        BigInteger firstNumber = new BigInteger(scanner.nextLine());
-        BigInteger secondNumber = new BigInteger(scanner.nextLine());
+ BigInteger firstNumber = new BigInteger(scanner.nextLine());
+ BigInteger secondNumber = new BigInteger(scanner.nextLine());
 
-        BigInteger sum = firstNumber.add(secondNumber);
+ BigInteger sum = firstNumber.add(secondNumber);
 
-        System.out.println(sum);
-    }
+ System.out.println(sum);
+ }
 }
 ```
 [/code-editor]
@@ -599,7 +599,7 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 | **Input** | **Output** |
 | --- | --- |
 | 923847238931983192462832102 | 934573817465075391826664309019448 |
-| 934572893617836459843471846187346 |  |
+| 934572893617836459843471846187346 | |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -695,9 +695,9 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -799,18 +799,18 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class BigFactorial {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-        int n = Integer.parseInt(scanner.nextLine());
-        BigInteger f = new BigInteger(String.valueOf(1));
+ int n = Integer.parseInt(scanner.nextLine());
+ BigInteger f = new BigInteger(String.valueOf(1));
 
-        for (int i = 1; i <= n ; i++) {
-            f = f.multiply(BigInteger.valueOf(Integer.parseInt(String.valueOf(i))));
-        }
+ for (int i = 1; i <= n ; i++) {
+ f = f.multiply(BigInteger.valueOf(Integer.parseInt(String.valueOf(i))));
+ }
 
-        System.out.println(f);
-    }
+ System.out.println(f);
+ }
 }
 ```
 [/code-editor]

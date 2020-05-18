@@ -26,14 +26,14 @@ An object has:
 
 - behavior, which is represented by **methods** - an object interacts with another object by invoking methods. 
 
-- identity, which gives an **unique name** to an object.
+- identity, which gives a **unique name** to an object.
 
 
 Real-life example: A dog has states - color, name, breed; and behaviors – barking, eating, wagging the tail. 
 
 
 An object holds a set of named values.
-Example: birthday object holds day, month and year.
+Example: birthday object holds the day, month and year.
 
 ```java live
 LocalDate birthday = LocalDate.of(2018,5,5);
@@ -53,30 +53,30 @@ To create an object first declare **main method**, then specify the **class name
 
 ```java
 public class Animal {
-    // fields
-    private String type;
+ // fields
+ private String type;
 
-    // constructors
-    public Animal() {
-    }
+ // constructors
+ public Animal() {
+ }
 
-    public Animal(String type) {
-        this.type = type;
-    }
+ public Animal(String type) {
+ this.type = type;
+ }
 
-    // getters and setters
-    public String getType() {
-        return this.type;
-    }
+ // getters and setters
+ public String getType() {
+ return this.type;
+ }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+ public void setType(String type) {
+ this.type = type;
+ }
 
-    // methods
-    public void makeSound() {
-        System.out.println("The animal is making sounds.");
-    }
+ // methods
+ public void makeSound() {
+ System.out.println("The animal is making sounds.");
+ }
 }
 ```
 
@@ -84,10 +84,10 @@ You can create multiple objects of one class.
 
 ```java
 public class Animal {
-    public static void main(String[] args) {
-        Animal dog = new Animal("mammal");
-        Animal lizard = new Animal("reptile");
-    }
+ public static void main(String[] args) {
+ Animal dog = new Animal("mammal");
+ Animal lizard = new Animal("reptile");
+ }
 }
 ```
 
@@ -101,9 +101,9 @@ public class Animal {
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -136,24 +136,24 @@ Print only the **Names of the songs** which are from that **Type List** or **All
 | 3 | DownTown |
 | favourite_DownTown_3:14 | Kiss |
 | favourite_Kiss_4:16 | Smooth Criminal |
-| favourite_Smooth Criminal_4:01 |  |
-| favourite |  |
+| favourite_Smooth Criminal_4:01 | |
+| favourite | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Andalouse |
-| favourite_DownTown_3:14 |  |
-| listenLater_Andalouse_3:24 |  |
-| favourite_In To The Night_3:58 |  |
-| favourite_Live It Up_3:48 |  |
-| listenLater |  |
+| favourite_DownTown_3:14 | |
+| listenLater_Andalouse_3:24 | |
+| favourite_In To The Night_3:58 | |
+| favourite_Live It Up_3:48 | |
+| listenLater | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Replay |
 | like_Replay_3:15 | Photoshop |
-| ban_Photoshop_3:48 |  |
-| all |  |
+| ban_Photoshop_3:48 | |
+| all | |
 
 
 
@@ -264,66 +264,66 @@ import java.util.stream.Collectors;
 
 public class Songs {
 
-    public static class Song{
-        private String typeList;
-        private String name;
-        private String time;
+ public static class Song{
+ private String typeList;
+ private String name;
+ private String time;
 
-        public String getTypeList(){
-            return typeList;
-        }
+ public String getTypeList(){
+ return typeList;
+ }
 
-        public String getName(){
-            return name;
-        }
+ public String getName(){
+ return name;
+ }
 
-        public void setTypeList(String typeList){
-            this.typeList = typeList;
-        }
+ public void setTypeList(String typeList){
+ this.typeList = typeList;
+ }
 
-        public void setName(String name){
-            this.name = name;
-        }
+ public void setName(String name){
+ this.name = name;
+ }
 
-        public void setTime(String time){
-            this.time = time;
-        }
-    }
+ public void setTime(String time){
+ this.time = time;
+ }
+ }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-        int n = Integer.parseInt(scanner.nextLine());
-        List<Song> songs = new ArrayList<>();
+ int n = Integer.parseInt(scanner.nextLine());
+ List<Song> songs = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            String [] data = scanner.nextLine().split("_");
-            String type = data[0];
-            String name = data[1];
-            String time = data[2];
+ for (int i = 0; i < n; i++) {
+ String [] data = scanner.nextLine().split("_");
+ String type = data[0];
+ String name = data[1];
+ String time = data[2];
 
-            Song song = new Song();
+ Song song = new Song();
 
-            song.setTypeList(type);
-            song.setName(name);
-            song.setTime(time);
+ song.setTypeList(type);
+ song.setName(name);
+ song.setTime(time);
 
-            songs.add(song);
-        }
-        String typeList = scanner.nextLine();
+ songs.add(song);
+ }
+ String typeList = scanner.nextLine();
 
-        if(typeList.equals("all")){
-            for (Song song : songs) {
-                System.out.println(song.getName());
-            }
-        } else {
-            for (Song song : songs) {
-                if(song.getTypeList().equals(typeList)){
-                    System.out.println(song.getName());
-                }
-            }
-        }
-    }
+ if(typeList.equals("all")){
+ for (Song song : songs) {
+ System.out.println(song.getName());
+ }
+ } else {
+ for (Song song : songs) {
+ if(song.getTypeList().equals(typeList)){
+ System.out.println(song.getName());
+ }
+ }
+ }
+ }
 }
 ```
 [/code-editor]
@@ -356,24 +356,24 @@ Print only the **Names of the songs** which are from that **Type List** or **All
 | 3 | DownTown |
 | favourite_DownTown_3:14 | Kiss |
 | favourite_Kiss_4:16 | Smooth Criminal |
-| favourite_Smooth Criminal_4:01 |  |
-| favourite |  |
+| favourite_Smooth Criminal_4:01 | |
+| favourite | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Andalouse |
-| favourite_DownTown_3:14 |  |
-| listenLater_Andalouse_3:24 |  |
-| favourite_In To The Night_3:58 |  |
-| favourite_Live It Up_3:48 |  |
-| listenLater |  |
+| favourite_DownTown_3:14 | |
+| listenLater_Andalouse_3:24 | |
+| favourite_In To The Night_3:58 | |
+| favourite_Live It Up_3:48 | |
+| listenLater | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 2 | Replay |
 | like_Replay_3:15 | Photoshop |
-| ban_Photoshop_3:48 |  |
-| all |  |
+| ban_Photoshop_3:48 | |
+| all | |
 
 
 
@@ -481,9 +481,9 @@ Photoshop
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -498,7 +498,7 @@ Define a class **Student**, which holds the following information about students
 
 ### Input / Constraints
 
-Read list of students until you receive **"end"** command.
+Read a list of students until you receive **"end"** command.
 
 After that, you will receive a **city name**.
 
@@ -512,19 +512,19 @@ Print only students which are from the given city, in the following format: "\{f
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 15 years old. |
 | Peter Ivanov 14 Plovdiv | Linda Bridge is 16 years old. |
-| Linda Bridge 16 Sofia |  |
-| Simon Stone 12 Varna |  |
-| end |  |
-| Sofia |  |
+| Linda Bridge 16 Sofia | |
+| Simon Stone 12 Varna | |
+| end | |
+| Sofia | |
 
 | **Input** | **Output** |
 | --- | --- |
 | Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
 | David Anderson 16 Washington | Jack Lewis is 14 years old. |
 | Jack Lewis 14 Chicago | David Lee is 14 years old. |
-| David Lee 14 Chicago |  |
-| end |  |
-| Chicago |  |
+| David Lee 14 Chicago | |
+| end | |
+| Chicago | |
 
 
 
@@ -652,90 +652,90 @@ import java.util.Scanner;
 
 public class Students {
 
-    static class  Student {
-        private String firstName;
-        private String lastName;
-        private int age;
-        private String city;
+ static class Student {
+ private String firstName;
+ private String lastName;
+ private int age;
+ private String city;
 
-        public Student (String firstName, String lastName, int age, String city){
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-            this.city = city;
-        }
+ public Student (String firstName, String lastName, int age, String city){
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.age = age;
+ this.city = city;
+ }
 
-        public String getFirstName() {
-            return firstName;
-        }
+ public String getFirstName() {
+ return firstName;
+ }
 
-        public String getLastName() {
-            return lastName;
-        }
+ public String getLastName() {
+ return lastName;
+ }
 
-        public String getCity() {
-            return city;
-        }
+ public String getCity() {
+ return city;
+ }
 
-        public int getAge() {
-            return age;
-        }
+ public int getAge() {
+ return age;
+ }
 
-        public void setAge(int age) {
-            this.age = age;
-        }
+ public void setAge(int age) {
+ this.age = age;
+ }
 
-        public void setCity(String city) {
-            this.city = city;
-        }
-    }
+ public void setCity(String city) {
+ this.city = city;
+ }
+ }
 
-    private static Student findStudent(String firstName, String lastName, List <Student> students ){
-        for (Student student : students) {
-            if(student.getFirstName().equals(firstName) &&
-            student.getLastName().equals(lastName)){
-                return student;
-            }
-        }
-        return null;
-    }
+ private static Student findStudent(String firstName, String lastName, List <Student> students ){
+ for (Student student : students) {
+ if(student.getFirstName().equals(firstName) &&
+ student.getLastName().equals(lastName)){
+ return student;
+ }
+ }
+ return null;
+ }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-        List<Student> students = new ArrayList<>();
+ List<Student> students = new ArrayList<>();
 
-        String input = scanner.next();
-        while (!input.equals("end")){
-            String firstName = input;
-            String lastName = scanner.next();
-            int age = scanner.nextInt();
-            String city = scanner.next();
+ String input = scanner.next();
+ while (!input.equals("end")){
+ String firstName = input;
+ String lastName = scanner.next();
+ int age = scanner.nextInt();
+ String city = scanner.next();
 
-            Student existingStudent = findStudent(firstName, lastName, students);
-            if(existingStudent != null){
-                existingStudent.setAge(age);
-                existingStudent.setCity(city);
-            }else{
-                Student student = new Student(firstName, lastName, age, city);
-                students.add(student);
-            }
+ Student existingStudent = findStudent(firstName, lastName, students);
+ if(existingStudent != null){
+ existingStudent.setAge(age);
+ existingStudent.setCity(city);
+ }else{
+ Student student = new Student(firstName, lastName, age, city);
+ students.add(student);
+ }
 
 
-            input = scanner.next();
+ input = scanner.next();
 
-        }
+ }
 
-        String cityName = scanner.next();
+ String cityName = scanner.next();
 
-        for (Student student : students) {
-            if(student.getCity().equals(cityName)){
-                System.out.printf("%s %s is %d years old%n", student.getFirstName(),
-                        student.getLastName(), student.getAge());
-            }
-        }
+ for (Student student : students) {
+ if(student.getCity().equals(cityName)){
+ System.out.printf("%s %s is %d years old%n", student.getFirstName(),
+ student.getLastName(), student.getAge());
+ }
+ }
 
-    }
+ }
 }
 ```
 [/code-editor]
@@ -750,7 +750,7 @@ Define a class **Student**, which holds the following information about students
 
 ### Input/ Constraints
 
-Read list of students until you receive **"end"** command.
+Read a list of students until you receive **"end"** command.
 
 After that, you will receive a **city name**.
 
@@ -764,19 +764,19 @@ Print only students which are from the given city, in the following format: "\{f
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 15 years old. |
 | Peter Ivanov 14 Plovdiv | Linda Bridge is 16 years old. |
-| Linda Bridge 16 Sofia |  |
-| Simon Stone 12 Varna |  |
-| end |  |
-| Sofia |  |
+| Linda Bridge 16 Sofia | |
+| Simon Stone 12 Varna | |
+| end | |
+| Sofia | |
 
 | **Input** | **Output** |
 | --- | --- |
 | Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
 | David Anderson 16 Washington | Jack Lewis is 14 years old. |
 | Jack Lewis 14 Chicago | David Lee is 14 years old. |
-| David Lee 14 Chicago |  |
-| end |  |
-| Chicago |  |
+| David Lee 14 Chicago | |
+| end | |
+| Chicago | |
 
 
 
@@ -901,9 +901,9 @@ Port Lee is 14 years old
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
+ public static void main(String[] args) {
+ // Write your code here
+ }
 }
 ```
 [/code-editor]
@@ -911,7 +911,7 @@ public class Main {
 ## Description
 Use the class from the previous problem.
 
-If you receive a student which already exists (**first name** and **last name** should be **unique**) overwrite the information.
+If you receive a student, who already exists (**first name** and **last name** should be **unique**) overwrite the information.
 
 ## Examples
 
@@ -919,10 +919,10 @@ If you receive a student which already exists (**first name** and **last name** 
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 16 years old. |
 | John Smith 16 Sofia | Linda Bridge is 17 years old. |
-| Linda Bridge 17 Sofia |  |
-| Simon Stone 12 Varna |  |
-| end |  |
-| Sofia |  |
+| Linda Bridge 17 Sofia | |
+| Simon Stone 12 Varna | |
+| end | |
+| Sofia | |
 
 
 
@@ -1007,117 +1007,117 @@ import java.util.Scanner;
 
 public class Students2 {
 
-    static class  Student {
-        private String firstName;
-        private String lastName;
-        private int age;
-        private String city;
+ static class Student {
+ private String firstName;
+ private String lastName;
+ private int age;
+ private String city;
 
-        public Student (String firstName, String lastName, int age, String city){
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-            this.city = city;
-        }
+ public Student (String firstName, String lastName, int age, String city){
+ this.firstName = firstName;
+ this.lastName = lastName;
+ this.age = age;
+ this.city = city;
+ }
 
-        public String getFirstName() {
-            return firstName;
-        }
+ public String getFirstName() {
+ return firstName;
+ }
 
-        public String getLastName() {
-            return lastName;
-        }
+ public String getLastName() {
+ return lastName;
+ }
 
-        public String getCity() {
-            return city;
-        }
+ public String getCity() {
+ return city;
+ }
 
-        public int getAge() {
-            return age;
-        }
+ public int getAge() {
+ return age;
+ }
 
-        public void setAge(int age) {
-            this.age = age;
-        }
+ public void setAge(int age) {
+ this.age = age;
+ }
 
-        public void setCity(String city) {
-            this.city = city;
-        }
+ public void setCity(String city) {
+ this.city = city;
+ }
 
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
+ public void setFirstName(String firstName) {
+ this.firstName = firstName;
+ }
 
-        public void setLastName(String lastName) {
-            this.lastName = lastName;
-        }
-    }
+ public void setLastName(String lastName) {
+ this.lastName = lastName;
+ }
+ }
 
-    private static Student getStudent(List<Student> students, String firstName, String lastName) {
-        Student existingStudent = null;
-        for (Student student : students) {
-            if(student.getFirstName().equals(firstName) &&
-                    student.getLastName().equals(lastName)){
-                existingStudent = student;
-            }
-        }
-        return existingStudent;
-    }
+ private static Student getStudent(List<Student> students, String firstName, String lastName) {
+ Student existingStudent = null;
+ for (Student student : students) {
+ if(student.getFirstName().equals(firstName) &&
+ student.getLastName().equals(lastName)){
+ existingStudent = student;
+ }
+ }
+ return existingStudent;
+ }
 
-    private static boolean isStudentExisting(List<Student> students, String firstName, String lastName) {
-        for (Student student : students) {
-            if(student.getFirstName().equals(firstName) &&
-                    student.getLastName().equals(lastName)){
-                return true;
-            }
-        }
-        return false;
-    }
+ private static boolean isStudentExisting(List<Student> students, String firstName, String lastName) {
+ for (Student student : students) {
+ if(student.getFirstName().equals(firstName) &&
+ student.getLastName().equals(lastName)){
+ return true;
+ }
+ }
+ return false;
+ }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+ public static void main(String[] args) {
+ Scanner scanner = new Scanner(System.in);
 
-        List<Student> students = new ArrayList<>();
+ List<Student> students = new ArrayList<>();
 
-        String input = scanner.next();
-        while (!input.equals("end")){
-            String firstName = input;
-            String lastName = scanner.next();
-            int age = scanner.nextInt();
-            String city = scanner.next();
+ String input = scanner.next();
+ while (!input.equals("end")){
+ String firstName = input;
+ String lastName = scanner.next();
+ int age = scanner.nextInt();
+ String city = scanner.next();
 
-            if(isStudentExisting(students, firstName, lastName)){
-                Student student = getStudent(students,firstName,lastName);
-                student.setFirstName(firstName);
-                student.setLastName(lastName);
-                student.setAge(age);
-                student.setCity(city);
-            } else {
-                Student student = new Student(firstName,lastName,age,city);
-                students.add(student);
-            }
+ if(isStudentExisting(students, firstName, lastName)){
+ Student student = getStudent(students,firstName,lastName);
+ student.setFirstName(firstName);
+ student.setLastName(lastName);
+ student.setAge(age);
+ student.setCity(city);
+ } else {
+ Student student = new Student(firstName,lastName,age,city);
+ students.add(student);
+ }
 
-            Student existingStudent = getStudent(students, firstName, lastName);
-            if (existingStudent != null){
-                existingStudent.setAge(age);
-                existingStudent.setCity(city);
-            } else {
-                Student student = new Student(firstName, lastName, age, city);
-                students.add(student);
-            }
+ Student existingStudent = getStudent(students, firstName, lastName);
+ if (existingStudent != null){
+ existingStudent.setAge(age);
+ existingStudent.setCity(city);
+ } else {
+ Student student = new Student(firstName, lastName, age, city);
+ students.add(student);
+ }
  
-            input = scanner.next();
-        }
+ input = scanner.next();
+ }
 
-        String cityName = scanner.next();
+ String cityName = scanner.next();
 
-        for (Student student : students) {
-            if(student.getCity().equals(cityName)){
-                System.out.printf("%s %s is %d years old%n", student.getFirstName(),
-                        student.getLastName(), student.getAge());
-            }
-        }
-    }
+ for (Student student : students) {
+ if(student.getCity().equals(cityName)){
+ System.out.printf("%s %s is %d years old%n", student.getFirstName(),
+ student.getLastName(), student.getAge());
+ }
+ }
+ }
 }
 ```
 [/code-editor]
@@ -1125,7 +1125,7 @@ public class Students2 {
 ## Description
 Use the class from the previous problem.
 
-If you receive a student which already exists (first name and last name should be unique) overwrite the information.
+If you receive a student, who already exists (first name and last name should be unique) overwrite the information.
 
 ## Examples
 
@@ -1133,10 +1133,10 @@ If you receive a student which already exists (first name and last name should b
 | --- | --- |
 | John Smith 15 Sofia | John Smith is 16 years old. |
 | John Smith 16 Sofia | Linda Bridge is 17 years old. |
-| Linda Bridge 17 Sofia |  |
-| Simon Stone 12 Varna |  |
-| end |  |
-| Sofia |  |
+| Linda Bridge 17 Sofia | |
+| Simon Stone 12 Varna | |
+| end | |
+| Sofia | |
 
 
 

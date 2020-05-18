@@ -8,7 +8,7 @@ The obligatory components are:
 - Class name
 - Class body - between `{}`
 
-Non obligatory, but credential, components are: 
+Not obligatory, but credential, components are: 
 - Class fields
 - Constructor
 - Getters and Setters
@@ -29,7 +29,7 @@ The class name is with the initial letter capitalized by convention, i.e. **Pasc
 
 The class name should contain descriptive nouns.
 
-Abbreviations is required to be avoided (except widely known, e.g. URL, HTTP, etc.).
+Abbreviations are required to be avoided (except widely known, e.g. URL, HTTP, etc.).
 
 ```java
 public class MyClass {
@@ -53,10 +53,10 @@ There can be specified as many fields as needed.
 
 ```java
 public class Animal {
-    // fields
-    private String type;
-    private int age;
-    private boolean vegetarian;
+ // fields
+ private String type;
+ private int age;
+ private boolean vegetarian;
 }
 ```
 
@@ -66,9 +66,9 @@ public class Animal {
 [slide]
 # Constructor
 
-Special method, executed during object creation, that **sets object's initial state**.
+A special method, executed during object creation, that **sets object's initial state**.
 
-Constructor name is the **same as the name of the class**.
+The constructor name is the **same as the name of the class**.
 
 Constructor **can take parameters**, which is used to **initialize fields**.
 
@@ -78,18 +78,18 @@ There can be **multiple constructors of the same class**. This helps to instanti
 
 ```java
 public class Animal {
-    // fields
-    private String type;
-    private int age;
-    private boolean vegetarian;
-    
-    // constructors
-    public Animal() {
-        
-    }
-    public Animal(String type) {
-        this.type = type;
-    }
+ // fields
+ private String type;
+ private int age;
+ private boolean vegetarian;
+ 
+ // constructors
+ public Animal() {
+ 
+ }
+ public Animal(String type) {
+ this.type = type;
+ }
 }
 ```
 [/slide]
@@ -105,7 +105,7 @@ Naming convention: `getXxx()`, where **Xxx** is the name of the variable.
 
 Since the getter method is **return** type, the data type of the value returned by the method is the same as the field type.
 
-Setter provide field's **change** and update its value. 
+Setter provides field's **change** and updates its value. 
 
 Naming convention: `setXxx()`, where **Xxx** is the name of the variable. 
 
@@ -113,18 +113,18 @@ The setter method is **void** type.
 
 ```java
 public class Animal {
-    // field
-    private String type;
-    . . .
-    // getter
-    public String getType() {
-        return this.type;
-    }
+ // field
+ private String type;
+ . . .
+ // getter
+ public String getType() {
+ return this.type;
+ }
 
-    // setter
-    public void setType(String type) {
-        this.type = type;
-    }
+ // setter
+ public void setType(String type) {
+ this.type = type;
+ }
 }
 ```
 [/slide]
@@ -138,15 +138,15 @@ Methods store **executable code** (algorithm) that manipulate state.
 
 ```java
 class Animal {
-    // fields
-    private String type;
-    private int age;
-    private boolean vegetarian;
+ // fields
+ private String type;
+ private int age;
+ private boolean vegetarian;
 
-    // method
-    public void makeSound() {
-        System.put.println("The animal is making sounds.")
-    }
+ // method
+ public void makeSound() {
+ System.put.println("The animal is making sounds.")
+ }
 }
 ```
 [/slide]
