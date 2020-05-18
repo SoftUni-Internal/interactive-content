@@ -2,26 +2,32 @@
 
 [slide]
 # Reading Lists 
-- Reading a List using **for loop** and `scanner.nextLine()` - method
+- Reading a List using `for-loop` and `scanner.nextLine()`
 ```java 
 Scanner scanner = new Scanner(System.in);
 
-int n = Integer.parseInt(scanner.nextLine()); // reading the List size 
+    // reading the List size 
+int n = Integer.parseInt(scanner.nextLine()); 
         
-List<Integer> list = new ArrayList<>(); // initializing empty List of Integers
-        
-for (int i = 0; i < n; i++) { // creating a for loop with the size of the List
-            
-    int number = Integer.parseInt(scanner.nextLine()); // read the element from the console
-            
-    list.add(number); // add the element to the List
+    // initializing empty List of Integers
+List<Integer> list = new ArrayList<>(); 
+
+    // creating a for loop with the size of the List
+for (int i = 0; i < n; i++) { 
+
+    // read the element from the console        
+    int number = Integer.parseInt(scanner.nextLine()); 
+
+    // add the element to the List        
+    list.add(number); 
 }
 ```
-- Reading List values from a **single line** using `String.split()` - method
+- Reading List values from a **single line** using `String.split()`
 ```java
 String values = scanner.nextLine();    // input: 10 20 30 40 50
+
 List<Integer> items = Arrays
-        .stream(values.split(" "))     // breaks the string by space
+        .stream(values.split(" "))     // split the string by a whitespace
         .map(Integer::parseInt)        // parse string to integer
         .collect(Collectors.toList()); // convert to List
 ```
@@ -31,21 +37,27 @@ List<Integer> items = Arrays
 # Printing Lists 
 - Printing a list using a `for-loop`
 ```java live
-List<String> numbers = new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five", "six"));
+List<String> numbers = new ArrayList<>(
+    Arrays.asList("one", "two", "three", "four", "five", "six"));
+
 for (int index = 0; index < numbers.size(); index++) {
    System.out.print(numbers.get(index) + " ");
 }
 ```
 - Printing a list using `for-each` loop
 ```java live
-List<String> numbers = new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five", "six"));
+List<String> numbers = new ArrayList<>(
+    Arrays.asList("one", "two", "three", "four", "five", "six"));
+
 for (String number : numbers) {
    System.out.print(number + " ");
 }
 ```
 - Printing a list using a `String.join(…)`
 ```java live
-List<String> list = new ArrayList<>(Arrays.asList("one", "two", "three", "four", "five", "six"));
+List<String> list = new ArrayList<>(
+    Arrays.asList("one", "two", "three", "four", "five", "six"));
+
 System.out.println(String.join(" ", list));
 ```
 [/slide]
@@ -125,10 +137,26 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 [/test]
 [test]
 [input]
+3 3 6 1
+[/input]
+[output]
+12 1
+[/output]
+[/test]
+[test]
+[input]
 0.1 0.1 5 -5
 [/input]
 [output]
 0.2 5 -5
+[/output]
+[/test]
+[test]
+[input]
+8 2 2 4 8 16
+[/input]
+[output]
+16 8 16
 [/output]
 [/test]
 [test]
@@ -206,14 +234,19 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         List<Double> numbers = Arrays.stream(sc.nextLine().split(" "))
                 .map(Double::parseDouble).collect(Collectors.toList());
+
         for (int i = 0; i < numbers.size() - 1; i++)
+
             if (numbers.get(i).equals(numbers.get(i + 1))) {
+
                 numbers.set(i, numbers.get(i) + numbers.get(i + 1));
                 numbers.remove(i + 1);
                 i = -1;
             }
+
         String output = joinElementsByDelimiter(numbers, " ");
         System.out.println(output);
 
@@ -222,9 +255,11 @@ public class Main {
 
     private static String joinElementsByDelimiter(List<Double> items, String delimiter) {
         String output = "";
-        for (Double item : items)
-            output += (new DecimalFormat("0.#").format(item)
-                    + delimiter);
+
+        for (Double item : items){
+            output += (new DecimalFormat("0.#").format(item) + delimiter);
+        }
+
         return output;
 
     }
@@ -292,10 +327,26 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 [/test]
 [test]
 [input]
+3 3 6 1
+[/input]
+[output]
+12 1
+[/output]
+[/test]
+[test]
+[input]
 0.1 0.1 5 -5
 [/input]
 [output]
 0.2 5 -5
+[/output]
+[/test]
+[test]
+[input]
+8 2 2 4 8 16
+[/input]
+[output]
+16 8 16
 [/output]
 [/test]
 [test]
@@ -468,12 +519,16 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         List<Integer> numbers = Arrays.stream(sc.nextLine().split(" "))
                 .map(Integer::parseInt).collect(Collectors.toList());
+
         int size = numbers.size();
+
         for (int i = 0; i < size / 2; i++) {
-            numbers.set(i, numbers.get(i) +
-                    numbers.get(numbers.size() - 1));
+
+            numbers.set(i, numbers.get(i) + numbers.get(numbers.size() - 1));
+
             numbers.remove(numbers.size() - 1);
         }
         System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
@@ -579,13 +634,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are going to receive two lists with numbers.
+You are going to receive **two lists** with **numbers**.
 
-Create a result list which contains the numbers from both of the lists.
+Create a result list which **contains** the **numbers** from **both of the lists**.
 
-The first element should be from the first list, the second from the second list and so on.
+The **first element** should be from the **first list**, **the second** from the **second list** and so on.
 
-If the length of the two lists are not equal, just add the remaining elements at the end of the list.
+If **the length** of the two lists **are not equal**, just **add the remaining** elements **at the end of the list**.
 
 ## Examples
 | **Input** | **Output** |
@@ -680,26 +735,44 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<Integer> nums1 = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
-        List<Integer> nums2 = Arrays.stream(scanner.nextLine().split(" ")).map(Integer::parseInt).collect(Collectors.toList());
+
+        List<Integer> nums1 = Arrays
+                .stream(scanner.nextLine()
+                .split(" "))
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
+
+        List<Integer> nums2 = Arrays
+                .stream(scanner.nextLine()
+                .split(" ")).map(Integer::parseInt)
+                .collect(Collectors.toList());
 
         List<Integer> resultNums = new ArrayList<>();
+
         for (int i = 0; i < Math.min(nums1.size(), nums2.size()); i++) {
             resultNums.add(nums1.get(i));
             resultNums.add(nums2.get(i));
         }
-        if (nums1.size() > nums2.size())
+
+        if (nums1.size() > nums2.size()){
+            
             resultNums.addAll(getRemainingElements(nums1, nums2));
-        else if (nums2.size() > nums1.size())
+        }
+        else if (nums2.size() > nums1.size()){
+
             resultNums.addAll(getRemainingElements(nums2, nums1));
+        }
         System.out.println(resultNums.toString().replaceAll("[\\[\\],]", ""));
 
     }
 
     public static List<Integer> getRemainingElements(List<Integer> longerList, List<Integer> shorterList) {
         List<Integer> nums = new ArrayList<>();
-        for (int i = shorterList.size(); i < longerList.size(); i++)
+        
+        for (int i = shorterList.size(); i < longerList.size(); i++){
+
             nums.add(longerList.get(i));
+        }
         return nums;
     }
 }
@@ -707,13 +780,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are going to receive two lists with numbers.
+You are going to receive **two lists** with **numbers**.
 
-Create a result list which contains the numbers from both of the lists.
+Create a result list which **contains** the **numbers** from **both of the lists**.
 
-The first element should be from the first list, the second from the second list and so on.
+The **first element** should be from the **first list**, **the second** from the **second list** and so on.
 
-If the length of the two lists are not equal, just add the remaining elements at the end of the list.
+If **the length** of the two lists **are not equal**, just **add the remaining** elements **at the end of the list**.
 
 ## Examples
 | **Input** | **Output** |
