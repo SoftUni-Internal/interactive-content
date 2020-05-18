@@ -1,10 +1,9 @@
 [slide]
 
 # Type Conversion
+When you assign the value of one data type to another, the two types might not be compatible with each other.
 
-When you assign value of one data type to another, the two types might not be compatible with each other.
-
-If the data types are compatible, then Java will perform the conversion automatically known as Automatic Type Conversion and if not then they need to be casted or converted explicitly.
+If the data types are compatible, then Java will perform the conversion automatically known as Automatic Type Conversion, and if not then they need to be cast or converted explicitly.
 
 For example, assigning an int value to a long variable.
 
