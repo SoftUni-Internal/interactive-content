@@ -116,6 +116,7 @@ public class Main {
 
 Random methods include:
 
+
 * `nextInt()` - Returns next pseudorandom `int` value from random number sequence. If you press the `Run` button several times you will see different results on the console.
 
 ```java live
