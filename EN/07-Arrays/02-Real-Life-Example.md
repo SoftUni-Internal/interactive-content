@@ -13,14 +13,37 @@
 [slide]
 # Real-Life Example: Football team
 
-You favorite footbal team consists of 11 players. Each player has a number, which is unique and there are not two players in one team with same numbers. 
+# Definition
 
-[image assetsSrc="array-live-example-pic.png" /]
+You already know how to store single data in one variable. Arrays allow us to store multiple data, again, in only one variable.
 
-An array is like a footbal team, it has **name**, it has **fixed size** \(footbal team has 11 players\), it has **unique indexes** \(there are not two players in one team with same numbers\), all elements in the array are of the **same type** \(like in a footbal team, so far only a human can play footbal\).
+Arrays are useful for preserving a sequence of data and iterating over it.
 
-Today we're going to do in depth learning about arrays in Java. 
+They are enclosed in curly brackets and the values inside it are separated by a comma.
 
-We're going to learn how to create arrays, how to manipulate arrays, how perform operation on arrays and many more.
+``` java
+String[] days = { "apple", "pear", "cherry" };
+```
+
+A single array can contain duplicate values.
+
+```Java
+int[] numbers = { 1, 1, 2, 4, 5 };
+```
+The values in a array are called elements.
+
+Imagine a train which has wagons, and each wagon - passengers.
+
+Now imagine this as an array of integers, each element represent a wagon and its value is the passengers.
+
+Take a look at this picture:
+
+[image assetsSrc="array-real-live-example.jpg" /]
+
+There are **7 wagons (elements)**. Each has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
+
+Arrays are the **basis** for other abstract data types like **list**, **stack**, **queue**.
+
+You are going to learn about these structures in the following courses.
 
 [/slide]
