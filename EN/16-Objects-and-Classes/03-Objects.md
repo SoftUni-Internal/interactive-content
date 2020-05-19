@@ -119,19 +119,20 @@ public class Main {
 ## Description
 
 Define a class **Song**, which holds the following information about songs: 
- - **Type List**
+- **Type List**
 
- - **Name**
+- **Name**
 
- - **Time**
+- **Time**
 
 ### Input / Constraints
 
- - On the first line you will receive the **number of songs - N**.
+- On the first line you will receive the **number of songs - N**.
 
- - On the next N-lines you will be receiving data in the following format: "\{typeList\}\_\{name\}\_\{time\}".
+- On the next N-lines you will be receiving data in the following format: 
+"\{typeList\}\_\{name\}\_\{time\}".
 
- - On the last line you will receive **Type List** or **"all"**.
+- On the last line you will receive **Type List** or **"all"**.
 
 ### Output
 
@@ -339,19 +340,20 @@ public class Songs {
 ## Description
 
 Define a class **Song**, which holds the following information about songs: 
- - **Type List**
+- **Type List**
 
- - **Name**
+- **Name**
 
- - **Time**
+- **Time**
 
 ### Input / Constraints
 
- - On the first line you will receive the **number of songs - N**.
+- On the first line you will receive the **number of songs - N**.
 
- - On the next N-lines you will be receiving data in the following format: "\{typeList\}\_\{name\}\_\{time\}".
+- On the next N-lines you will be receiving data in the following format: 
+"\{typeList\}\_\{name\}\_\{time\}".
 
- - On the last line you will receive **Type List** or **"all"**.
+- On the last line you will receive **Type List** or **"all"**.
 
 ### Output
 
@@ -512,7 +514,8 @@ After that, you will receive a **city name**.
 
 ### Output
 
-Print only students which are from the given city, in the following format: "\{firstName\} \{lastName\} is \{age\} years old.".
+Print only students which are from the given city, in the following format: 
+"\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Examples
 
@@ -764,7 +767,8 @@ After that, you will receive a **city name**.
 
 ### Output
 
-Print only students which are from the given city, in the following format: "\{firstName\} \{lastName\} is \{age\} years old.".
+Print only students which are from the given city, in the following format: 
+"\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Examples
 
