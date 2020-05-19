@@ -222,7 +222,7 @@ products.entrySet()
 
 **!!! FILL THE MAP !!!**
 
-```java live
+```java
 Map<String, ArrayList<Integer>> products = new HashMap<>();
 products.entrySet()
         .stream()
