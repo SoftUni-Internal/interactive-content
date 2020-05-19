@@ -9,17 +9,17 @@
 [/slide]
 
 [slide]
-# Foreach Loop
+# For-each Loop
 
 For-each is another array traversing technique like for loop, while loop, do-while loop introduced in Java.
 
-* It starts with the keyword **for** like a normal for-loop.
+- It starts with the keyword **for** like a normal for-loop.
 
-* Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon, which is then followed by the array name.
+- Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon, which is then followed by the array name.
 
-* In the loop body, you cannot access the current index, but you can use the loop variable you created rather than using an indexed array element.
+- In the loop body, you cannot access the current index, but you can use the loop variable you created rather than using an indexed array element.
 
-* It’s commonly used to iterate over an array.
+- It’s commonly used to iterate over an array.
 
 ```Java
 for (var item : collection) {
@@ -258,6 +258,123 @@ Write a program that calculates the difference between the sum of the even and t
 [/input]
 [output]
 -1
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+[slide]
+# Problem: Condense Array to Number
+[code-task title="Problem: Condense Array to Number" taskId="feeee2ef-3f88-4ae4-b6c1-c01d2c0e152e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program to read a**n array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** is obtained.
+
+For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and obtain \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and obtain \{12+13\} = \{25\}.
+
+## Examples
+|**Input**|**Output**| **Comments** |
+|-----|------|------|
+| 2 10 3| 25|2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25 |
+| 5 0 4 1 2 | 35|5 0 4 1 2 -> 5+0 0+4 4+1 1+2 -> 5 4 5 3 -> 5+4 4+5 5+3 -> 9 9 8 -> 9+9 9+8 -> 18 17 -> 18+17 -> 35|
+| 1 | 1 | 1 is already condensed to number |
+
+
+### Hints
+While we have more than one element in the array **nums[]**, repeat the following:
+
+*	Allocate a new array **condensed\[\]** of size **nums.Length-1**.
+*	Sum the numbers from **nums\[\]** to **condensed\[\]**:
+
+	**condensed\[i\]** = **nums\[i\]** + **nums\[i+1\]**
+*	**nums\[\]** = **condensed\[\]**
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+2 10 3
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+5 0 4 1 2
+[/input]
+[output]
+35
+[/output]
+[/test]
+[test open]
+[input]
+1
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test]
+[input]
+3 4 0 3 4 0 0 0 0 1 2
+[/input]
+[output]
+1255
+[/output]
+[/test]
+[test]
+[input]
+0 0 0
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+-5 -10 -15 -5
+[/input]
+[output]
+-85
+[/output]
+[/test]
+[test]
+[input]
+-1 2 -3 4 -5 6 -7 8 -9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+-1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -1
+[/input]
+[output]
+514214
+[/output]
+[/test]
+[test]
+[input]
+10
+[/input]
+[output]
+10
 [/output]
 [/test]
 [/tests]
