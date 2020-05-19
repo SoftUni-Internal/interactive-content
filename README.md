@@ -1,1 +1,1 @@
-# working-remotely-webinar
+# how-to-become-a-programmer-webinar
