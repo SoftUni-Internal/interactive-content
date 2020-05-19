@@ -254,7 +254,6 @@ Use an **array of strings**.
 
 * Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
 
-
 [/task-description]
 [code-io /]
 [tests]
