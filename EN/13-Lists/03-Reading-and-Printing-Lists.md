@@ -2,7 +2,7 @@
 
 [slide]
 # Reading Lists 
-- Reading a List using `for-loop` and `scanner.nextLine()`
+- Reading a List using `for` loop and `scanner.nextLine()`
 ```java 
 Scanner scanner = new Scanner(System.in);
 
@@ -35,7 +35,7 @@ List<Integer> items = Arrays
 
 [slide]
 # Printing Lists 
-- Printing a list using a `for-loop`
+- Printing a list using a `for` loop
 ```java live
 List<String> numbers = new ArrayList<>(
     Arrays.asList("one", "two", "three", "four", "five", "six"));
