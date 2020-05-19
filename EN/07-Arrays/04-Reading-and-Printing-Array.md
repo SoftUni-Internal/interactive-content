@@ -38,9 +38,9 @@ for (int i = 0; i < items.length; i++){
 ```
 # Shorter: Reading Array from a Single Line
 
-We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulating arrays.
+We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulate arrays.
 
-We're going to learn about **classes** later in this course, but if you're qurios feel free to google it.
+We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
 
 ```Java
 String inputLine = sc.nextLine();
@@ -354,9 +354,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read an **array of strings**, reverse it and **print** its elements.
+Write a program to read an **array of strings**, reverse it, and **print** its elements.
 
-The input consists of a sequence of space separated strings.
+The input consists of a sequence of space-separated strings.
 
 Print the output on a single line \(space separated\).
 
@@ -458,9 +458,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read an **array of strings**, reverse it and **print** its elements.
+Write a program to read an **array of strings**, reverse it, and **print** its elements.
 
-The input consists of a sequence of space separated strings.
+The input consists of a sequence of space-separated strings.
 
 Print the output on a single line \(space separated\).
 
@@ -558,10 +558,8 @@ Arrays are **identical** if their **elements are equal**.
 If the arrays are identical find the **sum of the first one** and print on the console following message: 
 `"Arrays are identical. Sum: {sum}"`.
 
-Otherwise find the first index where the arrays differ and print on the console following message: 
+Otherwise, find the first index where the arrays differ and print on the console following message:  
 `"Arrays are not identical. Found difference at {index} index."`.
-
-
 
 ## Examples
 |**Input**|**Output**|
