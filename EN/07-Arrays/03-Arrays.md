@@ -9,43 +9,47 @@
 [/slide]
 
 [slide]
-# What are Arrays?
-Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
-
-[image assetsSrc="array-example(1).png" /]
-
-* Arrays have **fixed size \(array.length\)** cannot be resized.
-
-* Elements are of the **same type** (e.g. integers).
-
-* Elements are numbered from **0** to **length-1**.
-
 # Working with Arrays
 
-**Allocating** an array of 10 integers. We initialize the array, but all values are **0**, because default of `int` is zero.
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 
-```Java
-int[] numbers = new int[10];
-```
+Arrays have **fixed size \(array.length\)** cannot be resized.
 
-**Assigning values** to the array elements. The **length** holds the number of array elements.
+Elements are always of the **same type**.
 
-```Java
-for (int i = 0; i < numbers.length; i++){
-  numbers[i] = 1;
+* Indexes of an array are numbered from **0** to **length-1**.
+
+**Example:**
+```Java live
+
+//Allocating
+int[] numbers = new int[5];
+System.out.println(Arrays.toString(numbers));
+
+for (int i = 0; i < numbers.length; i++) {
+ //Assigning a value
+ numbers[i] = i + 1;
 }
+
+System.out.println(Arrays.toString(numbers));
+
+//Accessing
+numbers[4] = numbers[2] + numbers[3];
+System.out.println(numbers[4]);
+
+// System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
 ```
 
-**Accessing** array elements by index. The sart index of an array is always **0** and the last index is **array.length - 1**. The `[]` operator accesses elements by index
+- **Allocating** an array of 5 integers. We initialize the array, but all values are **0**, because the default of `int` is zero.
 
-```Java
-numbers[5] = numbers[2] + numbers[7];
-```
-If we try to access element on invalid index, we get exception:
+- **Assigning a value** to the array elements. The **length** holds the number of array elements.
+In the for-loop we use `i < numbers.length` because array's indexes are zero-based, which means that the first index of an array is `0` and the last element is `numbers[4]`.
 
-```Java
-numbers[10] = 1; // ArrayIndexOutOfBoundsException
-```
+- **Accessing** array elements by index. As we mentioned above the first index of an array is always `0` and the last index is `array.length - 1`.
+In total we have **5 elements** in our array, but the last element is at **index 4**, so we substract `array.length - 1 = 4` which is our last index. 
+The `[]` operator accesses elements by index.
+If we try to access the element on an invalid index, we get an exception.
+
 
 [/slide]
 
@@ -80,7 +84,7 @@ Use an **array of strings**.
 ### Hints
 * Use an array of strings holding the day names: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
 
-*	Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
+* Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
 
 
 [/task-description]
@@ -248,7 +252,7 @@ Use an **array of strings**.
 ### Hints
 * Use an array of strings holding the day names: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
 
-*	Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
+* Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
 
 
 [/task-description]
@@ -364,6 +368,102 @@ Invalid day!
 [/input]
 [output]
 Invalid day!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Problem: Sum Even Numbers
+[code-task title="Problem: Sum Even Numbers" taskId="7b6be9b9-ac4f-423a-a0e5-12c4e7288835" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read an array from the console and sum only the even numbers.
+
+## Examples
+|**Input**|**Output**|**Comments**|
+|-----|------|------|
+| 1 2 3 4 5 6 | 12|
+| 3 5 7 9 | 0 |
+| 2 4 6 8 10 | 30|
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 2 3 4 5 6
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test open]
+[input]
+3 5 7 9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test open]
+[input]
+2 4 6 8 10
+[/input]
+[output]
+30
+[/output]
+[/test]
+[test]
+[input]
+1 1 1
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+2 4 3 1
+[/input]
+[output]
+6
+[/output]
+[/test]
+[test]
+[input]
+12 22 32 44
+[/input]
+[output]
+110
+[/output]
+[/test]
+[test]
+[input]
+1 2 3 4 5 6 7 8 9 10
+[/input]
+[output]
+30
 [/output]
 [/test]
 [/tests]
