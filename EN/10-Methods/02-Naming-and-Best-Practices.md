@@ -3,10 +3,4 @@
 [slide]
 # Video
 
-[/vimeo-video]
-[/slide]
-
-[slide]
-# Naming Methods
-
 [/slide]
