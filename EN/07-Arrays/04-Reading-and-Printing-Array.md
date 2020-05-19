@@ -10,9 +10,9 @@
 
 [slide]
 # Reading Arrays From the Console
-There is no direct way to take array input in Java using Scanner or any other utility, but it's pretty easy to achieve the same by using standard **Scanne** methods and asking some questions to the user. 
+There is no direct way to take array input in Java using Scanner or any other utility, but it's pretty easy to achieve the same by using standard **Scanner** methods and asking some questions to the user.
 
-For example, if you want to take an **array of string** as input then you can first you need the length of the array and then you can use a for loop to retrieve that many elements and store them in an array.
+For example, if you want to take an **array of string** as input you need the **length** of the array and then you can use a for loop to retrieve that many elements and store them in an array.
 
 ```Java
 int n = Integer.parseInt(sc.nextLine()); //Receive the array length
@@ -25,7 +25,7 @@ for (int i = 0; i < n; i++) {
 
 # Reading Array Values from a Single Line
 
-Arrays can be read from a **single line** of **separated values**, if we want to read array: `2 8 30 25 40 72 -2 44 56`:
+Arrays can be read from a single line of separated values. For example, if we want to read this array: `2 8 30 25 40 72 -2 44 56`:
 
 ```Java
 String values = sc.nextLine();
@@ -38,21 +38,21 @@ for (int i = 0; i < items.length; i++){
 ```
 # Shorter: Reading Array from a Single Line
 
-We can read an array of integers using functional programming: 
+We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulating arrays.
 
-* First we need to import `java.util.Arrays;`
+We're going to learn about **classes** later in this course, but if you're qurios feel free to google it.
 
 ```Java
 String inputLine = sc.nextLine();
 
-String[] items = inputLine
-.split(" ");                 
+String[] items = inputLine      //create a string array
+  .split(" ");
 
 int[] arr = Arrays
-.stream(scanner.nextLine()   //read the input from the console as string
-.split(" "))                 //split the input by space
-.mapToInt(Integer::parseInt) //convert the string input to int
-.toArray();                  //convert to array
+  .stream(scanner.nextLine()    //read the input from the console as string
+  .split(" "))                  //split the input by space
+  .mapToInt(Integer::parseInt)  //convert the string input to int
+  .toArray();                   //convert to array
 ```
 [/slide]
 
@@ -60,40 +60,40 @@ int[] arr = Arrays
 [slide]
 # Printing Array using for-loop
 
-We can print all array elements, a **for-loop** can be used and separate elements with white space or a new line: 
+To print all elements of an array a `for` loop can be used.
+While printing each element we can use a whitespace or a new line, to split them.
+See the following example:
 
 ```Java live
-String[] arr = {"one", "two"}; 
+String[] arr = {"one", "two"};
 
 // Process all array elements
-for (int i = 0; i < arr.length; i++) { 
+for (int i = 0; i < arr.length; i++) {
    System.out.printf("arr[%d] = %s%n", i, arr[i]);
 }
 ```
 
 # Printing Arrays with String.join(…)
 
-Use String.join\(separator, array\) works only with `String`: 
+Use `String.join()` works only with `String`:
 
 ```Java live
 String[] strings = {
-    "one",
-    "two"
+ "one",
+ "two"
 };
-System.out.println(
-    String.join(" ", strings));
+System.out.println(String.join(" ", strings));
 ```
 
 If we try printing int we receive error:
 
-```Java
+```Java live
 int[] arr = {
-    1,
-    2,
-    3
+ 1,
+ 2,
+ 3
 };
-System.out.println(
-    String.join(" ", arr)); // Compile error
+System.out.println(String.join(" ", arr));
 ```
 [/slide]
 
@@ -535,3 +535,113 @@ f60 e50 d40 c30 b20 a10
 [/code-task]
 [/slide]
 
+[slide]
+# Problem: Equal Arrays
+[code-task title="Problem: Equal Arrays" taskId="63b62d9d-129f-4373-a12b-258b526164e8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read two arrays and print on the console whether they are identical or not.
+
+Arrays are **identical** if their **elements are equal**.
+
+If the arrays are identical find the **sum of the first one** and print on the console following message: 
+`"Arrays are identical. Sum: {sum}"`.
+
+Otherwise find the first index where the arrays differ and print on the console following message: 
+`"Arrays are not identical. Found difference at {index} index."`.
+
+
+
+## Examples
+|**Input**|**Output**|
+|-----|------|------|
+| 10 20 30 | Arrays are identical. Sum: 60|
+| 10 20 30 | |
+
+|**Input**|**Output**|
+|-----|------|------|
+| 1 2 3 4 5 | Arrays are not identical. Found difference at 2 index.|
+| 1 2 4 3 5 | |
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+10 20 30
+10 20 30
+[/input]
+[output]
+Arrays are identical. Sum: 60
+[/output]
+[/test]
+[test open]
+[input]
+1 2 3 4 5
+1 2 4 3 5
+[/input]
+[output]
+Arrays are not identical. Found difference at 2 index.
+[/output]
+[/test]
+[test]
+[input]
+1
+10
+[/input]
+[output]
+Arrays are not identical. Found difference at 0 index.
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+1 2 3
+[/input]
+[output]
+Arrays are identical. Sum: 6
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+1 2 4
+[/input]
+[output]
+Arrays are not identical. Found difference at 2 index.
+[/output]
+[/test]
+[test]
+[input]
+100
+100
+[/input]
+[output]
+Arrays are identical. Sum: 100
+[/output]
+[/test]
+[test]
+[input]
+100 200 300 400
+400 300 200 100
+[/input]
+[output]
+Arrays are not identical. Found difference at 0 index.
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
