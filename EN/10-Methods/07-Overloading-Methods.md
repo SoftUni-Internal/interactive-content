@@ -69,7 +69,7 @@ public static void main(String[] args) {
 
 [slide]
 # Problem: Greater of Two Values
-[code-task title="Problem: Greater of Two Values" taskId="java-fundamentals-Methods-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Greater of Two Values" taskId="7b71f8cb-9452-4504-bfec-46e9d0798340" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -227,7 +227,7 @@ int
 
 [slide]
 # Solution: Greater of Two Values
-[code-task title="Problem: Greater of Two Values" taskId="9fd7bd5d-06d4-4260-bc61-66bcc9048a89" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Greater of Two Values" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -422,7 +422,7 @@ int
 
 [slide]
 # Problem: Multiply Evens by Odds
-[code-task title="Problem: Multiply Evens by Odds" taskId="java-fundamentals-Methods-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Multiply Evens by Odds" taskId="085af835-e3fc-483b-b82e-0fa9a2eda267" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

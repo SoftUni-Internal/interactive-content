@@ -51,7 +51,7 @@ public static void printStudent(String name, int age, double grade) {
 
 [slide]
 # Problem: Sign of Integer
-[code-task title="Problem: Sign of Integer" taskId="java-fundamentals-Methods-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sign of Integer" taskId="48bb1725-a560-4cc1-93c8-6f5823d2a727" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -108,7 +108,7 @@ The number 0 is zero.
 
 [slide]
 # Solution: Sign of Integer
-[code-task title="Problem: Sign of Integer" taskId="f12a8de7-eadf-4344-92e3-ec2af1dc8116" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sign of Integer"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -178,7 +178,7 @@ The number 0 is zero.
 
 [slide]
 # Problem: Grades
-[code-task title="Problem: Grades" taskId="java-fundamentals-Methods-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Grades" taskId="3896ae85-5857-471a-8715-60bd279d3344" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -282,7 +282,7 @@ Fail
 
 [slide]
 # Solution: Grades
-[code-task title="Problem: Grades" taskId="f1a14d69-a9b4-48d2-b8fe-4559e72c77eb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Grades"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -401,7 +401,7 @@ Fail
 
 [slide]
 # Problem: Printing Triangle
-[code-task title="Problem: Printing Triangle" taskId="java-fundamentals-Methods-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Printing Triangle" taskId="9a7b9c69-0a9b-4bbf-b77f-8fad2a3373dd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
