@@ -144,7 +144,7 @@ Create a method that calculates and returns the area of a triangle by given widt
 
 [slide]
 # Solution: Calculate Rectangle Area
-[code-task title="Problem: Calculate Rectangle Area" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Calculate Rectangle Area" taskId="e006274e-99e6-49fb-8199-b61023d630c7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -352,7 +352,7 @@ ivanivan
 
 [slide]
 # Solution: Repeat String
-[code-task title="Problem: Repeat String" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Repeat String" taskId="78c29823-aae1-4025-a0d3-347281513879" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -613,7 +613,7 @@ Create a method that calculates and returns the value of a number raised to a gi
 
 [slide]
 # Solution: Math Power
-[code-task title="Problem: Math Power" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Math Power" taskId="e890ee5c-8496-49e2-b459-784791bc6f13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;

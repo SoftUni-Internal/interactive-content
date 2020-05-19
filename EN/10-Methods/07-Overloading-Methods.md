@@ -227,7 +227,7 @@ int
 
 [slide]
 # Solution: Greater of Two Values
-[code-task title="Problem: Greater of Two Values" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Greater of Two Values" taskId="9fd7bd5d-06d4-4260-bc61-66bcc9048a89" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

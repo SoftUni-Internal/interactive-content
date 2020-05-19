@@ -108,7 +108,7 @@ The number 0 is zero.
 
 [slide]
 # Solution: Sign of Integer
-[code-task title="Problem: Sign of Integer" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sign of Integer" taskId="f12a8de7-eadf-4344-92e3-ec2af1dc8116" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -282,7 +282,7 @@ Fail
 
 [slide]
 # Solution: Grades
-[code-task title="Problem: Grades" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Grades" taskId="f1a14d69-a9b4-48d2-b8fe-4559e72c77eb" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -584,7 +584,7 @@ Create a method for printing triangles as shown below:
 
 [slide]
 # Splution: Printing Triangle
-[code-task title="Problem: Printing Triangle" taskId="java-fundamentals-Methods" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Printing Triangle" taskId="ca3428ed-e610-49c4-ab22-e117add80410" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -780,7 +780,7 @@ Create a method for printing triangles as shown below:
 [/slide]
 [slide]
 # Problem: Calculations
-[code-task title="Problem: Calculations" taskId="java-fundamentals-Methods-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Calculations" taskId="8b06437a-86a3-466f-8c64-abb2a47be868" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
