@@ -12,4 +12,11 @@
 [slide]
 # Naming Methods
 
+Methods always should be verbs.
+
+They represent an action and the method name should clearly state the action they perform.
+
+The method name can be a single or 2-3 words as needed to represent the action.
+
+
 [/slide]
