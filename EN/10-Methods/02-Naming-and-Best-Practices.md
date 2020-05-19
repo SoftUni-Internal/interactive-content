@@ -7,3 +7,9 @@
 [stream language="RO" videoId="391452320"  /]
 [/vimeo-video]
 [/slide]
+
+
+[slide]
+# Naming Methods
+
+[/slide]
