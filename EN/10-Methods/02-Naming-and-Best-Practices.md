@@ -18,5 +18,13 @@ They represent an action and the method name should clearly state the action the
 
 The method name can be a single or 2-3 words as needed to represent the action.
 
+## Example for good names
+
+Method names should answer the question:
+
+`What does this method do?`
+
+* Good method names: `findStudent`, `getReportByName`, `getId`.
+
 
 [/slide]
