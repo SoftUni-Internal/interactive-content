@@ -16,6 +16,8 @@ One of the single most important statements in every programming language is the
 
 In programming we often **check particular conditions** and perform various actions depending on the result of the check. 
 
+[image assetsSrc="02-usecase-if-statement.png" /]
+
 # Example: 
 Take as an input a grade and check if the student has passed the exam (grade >= 3.00).
 
@@ -35,6 +37,8 @@ The `if` construction may also contain an `else` clause to give a specific actio
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
 * if the result of the condition is positive (`true`) – we perform some actions
 * when it is negative (`false`) – others. 
+
+[image assetsSrc="02-usecase-if-else-statement.png" /]
 
 # Example: 
 Upgrade the last example, so it prints "Failed!", if the mark is lower than 3.00:

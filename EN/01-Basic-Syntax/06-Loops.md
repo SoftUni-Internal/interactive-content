@@ -315,20 +315,20 @@ Sum: 64
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner scan = new Scanner(System.in);
-  int n = Integer.parseInt(scan.nextLine());
-  int counter = 1;
-  int sum = 0;
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
+        int counter = 1;
+        int sum = 0;
 
-  for (int i = 1; counter <= n; i += 2) {
-   System.out.println(i);
-   counter++;
-   sum += i;
-  }
+        for (int i = 1; counter <= n; i += 2) {
+            System.out.println(i);
+            counter++;
+            sum += i;
+        }
 
-  System.out.println("Sum: " + sum);
- }
+        System.out.println("Sum: " + sum);
+    }
 }
 ```
 [/code-editor]
@@ -450,11 +450,13 @@ Sum: 64
 
 [slide]
 # While Loop
-In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is true. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+By **condition**, we understand every **expression** that returns `true` or `false`. 
 
-The while loop looks like this:
+When **the condition** is **false**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+
+The `while` loop looks like this:
 ```java
 while (condition) {
   //loop body;
@@ -481,7 +483,7 @@ It determines how long the loop body will be repeated and is called `loop condit
 
 In this example the `loop body` is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
 
-In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
+In the while loop, firs, the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
 
 Then again the input condition is checked and if it is `true` again, the body of the loop is executed. 
 
@@ -791,9 +793,9 @@ Print every row of the table in the following format: `theInteger X times = prod
 
 [slide]
 # Do-While Loop
-The next type of loops we will get familiar with are the `do-while` loops. 
+The next type of loops we will get familiar with is the `do-while` loop. 
 
-By structure, this type of loop resembles the while loop, but there is a significant difference between them.
+By structure, this type of loop resembles the `while` loop, but there is a significant difference between them.
 
 The following example shows the usage of the `do-while` loop:
 ```java live
@@ -803,7 +805,9 @@ do {
     n++;
 } while (n < 5);
 ```
-It is that the `do-while` loop will execute its body at least once. Why is this happening? 
+It is that the `do-while` loop will execute its body at least once. 
+
+Why is this happening? 
 
 Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop executes once before the condition is tested.
 
@@ -832,7 +836,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rewrite you program so it can receive the **multiplier from the console**.
+Rewrite your program so it can receive the **multiplier from the console**.
 
 Print the **table from the given multiplier to 10**.
 
@@ -974,22 +978,22 @@ Print every row of the table in the following format: `theInteger X times = prod
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner scanner = new Scanner(System.in);
-  int number = scanner.nextInt();
-  int multiplier = scanner.nextInt();
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int multiplier = scanner.nextInt();
 
-  do {
-   System.out.printf("%d X %d = %d%n", number, multiplier, number * multiplier);
-   multiplier++;
-  } while (multiplier <= 10);
- }
+        do {
+            System.out.printf("%d X %d = %d%n", number, multiplier, number * multiplier);
+            multiplier++;
+        } while (multiplier <= 10);
+    }
 }
 ```
 [/code-editor]
 [task-description]
 ## Description
-Rewrite you program so it can receive the **multiplier from the console**.
+Rewrite your program so it can receive the **multiplier from the console**.
 
 Print the **table from the given multiplier to 10**.
 

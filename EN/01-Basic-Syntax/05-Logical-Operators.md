@@ -41,7 +41,9 @@ In that example the result is true because 5 is greater than 3 AND 5 is less tha
 int x = 5;
 System.out.println(x > 3 || x < 4); 
 ```
-In that example the result is true because one of the conditions are true (5 is greater than 3, but 5 is not less than 4).
+In that example the result is true because one of the conditions is true (5 is greater than 3, but 5 is not less than 4).
+
+If both conditions were false, then the result would be false.
 
 [/slide]
 
@@ -226,47 +228,44 @@ Holiday
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner scanner = new Scanner(System.in);
-  String typeOfDay = scanner.nextLine();
-  int age = scanner.nextInt();
-  int price = 0;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String typeOfDay = scanner.nextLine();
+        int age = scanner.nextInt();
+        int price = 0;
 
-  switch (typeOfDay) {
-   case "Weekday":
-    if ((age >= 0 && age <= 18) || (age > 64 && age <= 122)) {
-     price = 12;
-    } else if (age > 18 && age < 65) {
-     price = 18;
+        switch (typeOfDay) {
+            case "Weekday":
+                if ((age >= 0 && age <= 18) || (age > 64 && age <= 122)) {
+                    price = 12;
+                } else if (age > 18 && age < 65) {
+                    price = 18;
+                }
+                break;
+            case "Weekend":
+                if ((age >= 0 && age <= 18) || (age > 64 && age <= 122)) {
+                    price = 15;
+                } else if (age > 18 && age < 65) {
+                    price = 20;
+                }
+                break;
+            case "Holiday":
+                if (age >= 0 && age <= 18) {
+                    price = 5;
+                } else if (age > 18 && age < 65) {
+                    price = 12;
+                } else if (age > 64 && age < 123) {
+                    price = 10;
+                }
+                break;
+        }
+
+        if (price == 0) {
+            System.out.println("Error!");
+        } else {
+            System.out.println(price + "$");
+        }
     }
-
-    break;
-   case "Weekend":
-    if ((age >= 0 && age <= 18) || (age > 64 && age <= 122)) {
-     price = 15;
-    } else if (age > 18 && age < 65) {
-     price = 20;
-    }
-
-    break;
-   case "Holiday":
-    if (age >= 0 && age <= 18) {
-     price = 5;
-    } else if (age > 18 && age < 65) {
-     price = 12;
-    } else if (age > 64 && age < 123) {
-     price = 10;
-    }
-
-    break;
-  }
-
-  if (price == 0) {
-   System.out.println("Error!");
-  } else {
-   System.out.println(price + "$");
-  }
- }
 }
 ```
 [/code-editor]

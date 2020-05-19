@@ -11,7 +11,9 @@
 
 [slide]
 # Debugging
-So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will show a tool that can help us find mistakes more easily: **the debugger**.
+So far, we wrote a lot of code, and there were some mistakes in it, right? 
+
+Now we will show a tool that can help us find mistakes more easily: **the debugger**.
 
 # What is "Debugging"?
 **Debugging** is the process of "**attaching**" to the program execution, which allows us to **track step by step the process**. 
@@ -37,16 +39,18 @@ With `[Ctrl + F8]` we create the so-called breakpoints, that we can reach direct
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner sc = new Scanner(System.in);
-  int n = Integer.parseInt(sc.nextLine());
-  int sum = 1;
-  for (int i = 0; i <= n; i++) {
-   System.out.print(2 * i + 1);
-   sum += 2 * i;
-  }
-  System.out.printf("Sum: %d%n", sum);
- }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = Integer.parseInt(sc.nextLine());
+        int sum = 1;
+        
+        for (int i = 0; i <= n; i++) {
+        System.out.print(2 * i + 1);
+        sum += 2 * i;
+        }
+        System.out.printf("Sum: %d%n", sum);
+    }
 }
 ```
 [/code-editor]

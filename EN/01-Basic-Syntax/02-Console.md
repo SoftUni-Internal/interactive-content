@@ -74,9 +74,7 @@ int age = 5;
 
 System.out.printf("Name: %s, Age: %d", name, age);
 ```
-* In that example we have a person with the name `George` and age `5`.
-* On the last line we print a person's name and age, where `%s` stands for string and correspond to **name**. Here `%d` stands for integer number and corresponds to **age**.
-=======
+
 * We have a person with name `George` and age `5`
 * On the last line, we print the person's name and age
     * `%s` stands for string and corresponds to **name**
@@ -94,9 +92,7 @@ double grade = 5.5334;
 System.out.printf("%03d%n", percentage);
 System.out.printf("%.2f%n", grade);
 ```
-* In that example we have two numbers **int** `55` and **double** `5.5334`.
-* On the last two lines we use `%03d` to format the first number to `055`, and we use `%.2f` to format the second number to `5.53`.
-=======
+
 * We have two numbers: **int** `55` and **double** `5.5334`.
 * On the last two lines, we use 
     * `%03d` to format the first number to `055`
@@ -138,7 +134,7 @@ public class Main {
 You will be given 3 lines of input – student name, age and average grade.
 
 Your task is to print all the info about the student in the following format:
-* **"Name: \{student name\}, Age: \{student age\}, Grade: \{student grade\}"**. 
+* "Name: \{student name\}, Age: \{student age\}, Grade: \{student grade\}". 
 
 ## Examples
 |**Input**|**Output**|
@@ -233,14 +229,15 @@ Name: John, Age: 18, Grade: 5.40
 import java.util.Scanner;
 
 public class Main {
- public static void main(String[] args) {
-  Scanner scanner = new Scanner(System.in);
-  String name = scanner.nextLine();
-  int age = Integer.parseInt(scanner.nextLine());
-  double grade = Double.parseDouble(scanner.nextLine());
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        String name = scanner.nextLine();
+        int age = Integer.parseInt(scanner.nextLine());
+        double grade = Double.parseDouble(scanner.nextLine());
 
-  System.out.printf("Name: %s, Age: %d, Grade: %.2f", name, age, grade);
- }
+        System.out.printf("Name: %s, Age: %d, Grade: %.2f", name, age, grade);
+    }
 }
 ```
 [/code-editor]
@@ -249,7 +246,7 @@ public class Main {
 You will be given 3 lines of input – student name, age and average grade.
 
 Your task is to print all the info about the student in the following format:
-* **"Name: \{student name\}, Age: \{student age\}, Grade: \{student grade\}"**. 
+* "Name: \{student name\}, Age: \{student age\}, Grade: \{student grade\}". 
 
 ## Examples
 |**Input**|**Output**|
