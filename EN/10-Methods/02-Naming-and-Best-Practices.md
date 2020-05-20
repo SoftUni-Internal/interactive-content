@@ -8,6 +8,7 @@
 [/vimeo-video]
 [/slide]
 
+
 [slide]
 # Naming Methods
 
@@ -25,9 +26,10 @@ Method names should answer the question:
 
 * Good method names: `findStudent`, `getReportByName`, `getId`.
 
+
 ## Exmaple for bad names
 
-If you cannot find a good name for a method, thinkabout whether it has a **clear intent**.
+If you cannot find a good name for a method, think about whether it has a **clear intent**.
 
 * Bad methods name: `Method1`, `DoSomething`, `HandleStuff`, `SampleMethod`.
 
@@ -48,7 +50,7 @@ A Method's name should **describe that task** in a clear and non-ambiguous way.
 * Here are some self-documenting and easy to test:
 
 ```Java
-private static void printReceipt() {
+public static void printReceipt() {
     printHeader();
     printBody();
     printFooter();
@@ -66,7 +68,7 @@ Always use **curly brackets** for loops and if statements bodies.
 **Avoid long lines** and **complex expressions**.
 
 ```Java
-static void main(args) {
+public static void main(args) {
     // some code…
     // some more code…
 }

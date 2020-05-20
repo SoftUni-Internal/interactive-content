@@ -1,4 +1,4 @@
-# Real-Life Example
+# Definition
 
 [slide]
 # Video
@@ -31,6 +31,7 @@ int[] numbers = { 1, 1, 2, 4, 5 };
 ```
 The values in a array are called elements.
 
+# Real-Life Example
 Imagine a train which has wagons, and each wagon - passengers.
 
 Now imagine this as an array of integers, each element represent a wagon and its value is the passengers.
