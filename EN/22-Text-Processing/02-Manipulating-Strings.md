@@ -345,15 +345,214 @@ linearlinearlinearlinearlinearlinear
 [/slide]
 
 [slide]
-
 # Problem: Substring
+[code-task title="Substring" taskId="7f1f33a4-aa1e-4df3-b15a-bd36b7e25b3d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+On the **first line** you will receive a **string**.
+
+On the **second line** you will receive a **second string**.
+
+Write a program that **removes all of the occurrences** of **the first string** in **the second** until there is no match.
+
+At the end **print the remaining string**.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| ice | kgb |
+| kicegiciceeb |  |
+
+# Hints
+- **Read the input.**
+- Find the **first index** where the key appears.
+	- Use the built-in method `indexOf()` 
+- **Remove the match**.
+	- Use the built-in method `replace(String oldValue, String newValue)`
+- **Repeat** it until the text **doesn't contain the key anymore**.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+ice
+kicegiciceeb
+[/input]
+[output]
+kgb
+[/output]
+[/test]
+[test]
+[input]
+e
+fixture
+[/input]
+[output]
+fixtur
+[/output]
+[/test]
+[test]
+[input]
+f
+coffin
+[/input]
+[output]
+coin
+[/output]
+[/test]
+[test]
+[input]
+in
+coffiinncoffin
+[/input]
+[output]
+coffcoff
+[/output]
+[/test]
+[test]
+[input]
+ice
+pricekicegiciceeb
+[/input]
+[output]
+prkgb
+[/output]
+[/test]
+[test]
+[input]
+reg
+rrregegegstration
+[/input]
+[output]
+stration
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
-
 # Solution: Substring
+[code-task title="Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String key = sc.nextLine();
+        String text = sc.nextLine();
+
+        int index = text.indexOf(key);
+
+        while (index != -1) {
+            
+            text = text.replace(key, "");
+
+            index = text.indexOf(key);
+        }
+        System.out.println(text);
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+On the **first line** you will receive a **string**.
+
+On the **second line** you will receive a **second string**.
+
+Write a program that **removes all of the occurrences** of **the first string** in **the second** until there is no match.
+
+At the end **print the remaining string**.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| ice | kgb |
+| kicegiciceeb |  |
+
+# Hints
+- **Read the input.**
+- Find the **first index** where the key appears.
+	- Use the built-in method `indexOf()` 
+- **Remove the match**.
+	- Use the built-in method `replace(String oldValue, String newValue)`
+- **Repeat** it until the text **doesn't contain the key anymore**.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+ice
+kicegiciceeb
+[/input]
+[output]
+kgb
+[/output]
+[/test]
+[test]
+[input]
+e
+fixture
+[/input]
+[output]
+fixtur
+[/output]
+[/test]
+[test]
+[input]
+f
+coffin
+[/input]
+[output]
+coin
+[/output]
+[/test]
+[test]
+[input]
+in
+coffiinncoffin
+[/input]
+[output]
+coffcoff
+[/output]
+[/test]
+[test]
+[input]
+ice
+pricekicegiciceeb
+[/input]
+[output]
+prkgb
+[/output]
+[/test]
+[test]
+[input]
+reg
+rrregegegstration
+[/input]
+[output]
+stration
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 
