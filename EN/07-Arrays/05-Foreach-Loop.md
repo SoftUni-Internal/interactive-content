@@ -188,7 +188,7 @@ Write a program that calculates the difference between the sum of the even and t
 | | |1 + 3 + 5 = 9|
 | | |12 – 9 = 3|
 
-|**Input**|**Output**|**Comments**|
+|**Input**|**Output**|
 |-----|------|------|
 | 3 5 7 9 | -24|
 
