@@ -203,34 +203,42 @@ The possible operators are: `/` `*` `+` `-`
 ```
 import java.util.Scanner;
 
-public class MathOperations {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int firstNum = Integer.parseInt(scanner.nextLine());
-        String operator = scanner.nextLine();
-        int secondNum = Integer.parseInt(scanner.nextLine());
-
-        System.out.println(Math.round(CalculateNumbers(firstNum, operator, secondNum)));
+public class MathOperations{
+    static void add(double firstNum, double secondNum){
+        double result = firstNum+secondNum;
+        System.out.printf("%.0f",result);
+    }
+    static void multiply(double firstNum, double secondNum){
+        double result = firstNum*secondNum;
+        System.out.printf("%.0f",result);
+    }
+    static void subtract(double firstNum, double secondNum){
+        double result = firstNum-secondNum;
+        System.out.printf("%.0f",result);
+    }
+    static void divide(double firstNum, double secondNum){
+        double result = firstNum/secondNum;
+        System.out.printf("%.0f",result);
     }
 
-    private static double CalculateNumbers(int firstNum, String operator, int secondNum) {
-        double result = 0;
-        switch (operator) {
-            case "-":
-                result = firstNum - secondNum;
-                break;
-            case "+":
-                result = firstNum + secondNum;
-                break;
-            case "*":
-                result = firstNum * secondNum;
-                break;
-            case "/":
-                result = firstNum / secondNum;
-                break;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double firstNum = Double.parseDouble(scanner.nextLine());
+        char operator = scanner.nextLine().charAt(0);
+        double secondNum = Double.parseDouble(scanner.nextLine());
+
+        if (operator=='+'){
+            add(firstNum,secondNum);
+        }else if (operator=='-') {
+            subtract(firstNum, secondNum);
+        }else if (operator=='*'){
+            multiply(firstNum,secondNum);
+        }else {
+            divide(firstNum,secondNum);
         }
-        return result;
+
+
     }
 }
 ```
