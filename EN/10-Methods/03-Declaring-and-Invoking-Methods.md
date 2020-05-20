@@ -41,12 +41,12 @@ In the following example, `printHello()` is used to print a text (the action), w
 
 ```Java live
 public class MyClass {
- public static void printHello() {
-    System.out.println("Hello World!");
-  }
-
   public static void main(String[] args) {
     printHello();
+  }
+
+  public static void printHello() {
+    System.out.println("Hello World!");
   }
 }
 ```
@@ -55,14 +55,14 @@ A method can also be called multiple times:
 
 ```Java live
 public class MyClass {
- public static void printHello() {
-    System.out.println("Hello World!");
-  }
-
   public static void main(String[] args) {
     printHello();
     printHello();
     printHello();
+  }
+
+  public static void printHello() {
+    System.out.println("Hello World!");
   }
 }
 ```
