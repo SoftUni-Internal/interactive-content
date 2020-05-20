@@ -774,8 +774,8 @@ Create a method that calculates and returns the value of a number raised to a gi
 [/tests]
 [/code-task]
 [/slide]
-[slide]
 
+[slide]
 # Problem: Orders
 [code-task title="Problem: Orders" taskId="0a5a5249-7481-4ef1-bcaf-78da51614220" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -886,6 +886,7 @@ water
 [/code-task]
 [/slide]
 
+[slide]
 # Solution: Orders
 [code-task title="Problem: Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
