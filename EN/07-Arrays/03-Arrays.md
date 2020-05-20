@@ -462,3 +462,116 @@ Read an array from the console and sum only the even numbers.
 [/tests]
 [/code-task]
 [/slide]
+
+[slide]
+# Solution: Sum Even Numbers
+[code-task title="Problem: Sum Even Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SumEvenNumbers {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int [] numbers = Arrays.stream(scan.nextLine()
+                .split(" "))
+                .mapToInt(Integer:: parseInt)
+                .toArray();
+
+        int sum = 0;
+
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                sum += number;
+            }
+
+        }
+        System.out.println(sum);
+
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read an array from the console and sum only the even numbers.
+
+## Examples
+|**Input**|**Output**|**Comments**|
+|-----|------|------|
+| 1 2 3 4 5 6 | 12|
+| 3 5 7 9 | 0 |
+| 2 4 6 8 10 | 30|
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 2 3 4 5 6
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test open]
+[input]
+3 5 7 9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test open]
+[input]
+2 4 6 8 10
+[/input]
+[output]
+30
+[/output]
+[/test]
+[test]
+[input]
+1 1 1
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+2 4 3 1
+[/input]
+[output]
+6
+[/output]
+[/test]
+[test]
+[input]
+12 22 32 44
+[/input]
+[output]
+110
+[/output]
+[/test]
+[test]
+[input]
+1 2 3 4 5 6 7 8 9 10
+[/input]
+[output]
+30
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
