@@ -10,12 +10,6 @@
 
 [slide]
 
-# Value vs. Reference Types
-
-Value types and reference types are the two main categories of Java types
-
-[image assetsSrc="Value-vs-Reference-Types(1).gif" /]
-
 # Value Types
 
 A variable of a value \(primitive data\) type contains an instance of the type and hold directly their value. 
