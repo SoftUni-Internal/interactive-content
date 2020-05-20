@@ -1,7 +1,7 @@
 [slide]
 # What Is a String?
 
- **String** is an **object** that represents a **sequence of characters**(`char []`).
+ **String** is an **object** that represents a **sequence of characters** - `char []`.
 
  ```java
     // nice to have some picture
@@ -13,7 +13,7 @@
  ```java live
     String name = "SoftUni!";
 
-    // the hashCode() - return the address of the object in memory
+    // hashCode() - return the address of the object in memory
     System.out.println(name.hashCode());
 
     name = "Peter!";
@@ -27,15 +27,15 @@
 
  **Strings use Unicode** (can use most alphabets, e.g. Arabic) 
  ```java live
-    String greeting = "你好";  // Hello
+    String greeting = "مرحبا";  // Hello in Arabic
 
     System.out.println(greeting);
  ```
 
-The main features of Strings are:
+The main **features** of **Strings** are:
 - Strings represent a **sequence of characters**
 - Strings are used to **store text**
-- Java String class has a lot of methods for **text processing**
+- Java String class has a lot of **methods** for **text processing**
 - Strings are immutable(**read only**)
 
 
@@ -47,7 +47,7 @@ The main features of Strings are:
 [slide]
 # Initializing a String
 
-- Initializing using String literal
+- Initializing using **String literal**
 ```java
 String greeting = "Hello, SoftUni";
 ```
