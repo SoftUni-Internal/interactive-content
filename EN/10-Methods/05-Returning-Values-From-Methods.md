@@ -893,9 +893,30 @@ water
 ```
 import java.util.Scanner;
 
-public class Main {
+public class Orders {
+
+    static void order(String product, int quantity){
+        switch (product){
+            case "coffee":
+                System.out.printf("%.2f", quantity * 1.5);
+                break;
+            case "water":
+                System.out.printf("%.2f", (double)quantity);
+                break;
+            case "coke":
+                System.out.printf("%.2f", quantity * 1.4);
+                break;
+            default:
+                System.out.printf("%.2f", (double)quantity * 2);
+                break;
+        }
+    }
+
     public static void main(String[] args) {
-        // Write your code here
+        Scanner scanner = new Scanner(System.in);
+        String product = scanner.nextLine();
+        int quantity = Integer.parseInt(scanner.nextLine());
+        order(product,quantity);
     }
 }
 ```
