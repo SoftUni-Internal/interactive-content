@@ -635,7 +635,7 @@ public class Main {
 
     private static double Power(double number, int power) {
 
-        double result = 0 d;
+        double result = 0d;
 
         result = Math.pow(number, power);
         return result;
