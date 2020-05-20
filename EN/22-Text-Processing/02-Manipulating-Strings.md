@@ -51,11 +51,50 @@ System.out.println(firstName); // John
 
 # Searching
 
+- `indexOf()` - returns the **first match index**, if there is **no match** returns **-1**
+```java live 
+String fruits = "banana, apple, kiwi, banana, apple";
+
+System.out.println(fruits.indexOf("banana"));    // 0
+
+System.out.println(fruits.indexOf("orange"));    // -1
+
+```
+- `lastIndexOf()` - finds the last occurrence
+```java live
+String fruits = "banana, apple, kiwi, banana, apple";
+
+System.out.println(fruits.lastIndexOf("banana")); // 21
+
+System.out.println(fruits.lastIndexOf("orange")); // -1
+
+```
 [/slide]
 
 [slide]
 
 # Splitting
+ 
+- `split()` - split a string by a given pattern
+```java live
+
+String text = "Hello, john@softuni.bg, you have been using john@softuni.bg in your registration";
+        
+String[] words = text.split(", ");
+
+System.out.println(String.join(", ",words));
+```
+
+- `split()` - split by multiple separators
+```java live
+
+String text = "Hello, I am John.";
+
+// splits text by comma, whitespace or dot
+String[] words = text.split("[, .]+");
+
+System.out.println(String.join(", ",words));
+```
 
 [/slide]
 
@@ -63,18 +102,246 @@ System.out.println(firstName); // John
 
 # Replacing
 
+- `replace(match, replacement)` - **replaces all occurrences** and return a **new String** (Strings are immutable)
+
+```java live
+
+String text = "Hello, john@softuni.com," +
+           " you have been using john@softuni.com in your registration.";
+
+String replacedText = text
+            .replace("john@softuni.com", "peter@softuni.com");
+
+System.out.println(replacedText);
+
+```
+
 [/slide]
 
 [slide]
+# Problem: Repeat strings
+[code-task title="Repeat strings" taskId="390307eb-d652-44d9-b31e-aee43b3982a8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
-# Problem: Repeat Strings
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that reads an **array of strings**.
 
+Each string is repeated **n** times, where **n** is the **length of the string**.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| hi abc add | hihiabcabcabcaddaddadd |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| work | workworkworkwork |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| ball | ballballballball |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+hi abc add
+[/input]
+[output]
+hihiabcabcabcaddaddadd
+[/output]
+[/test]
+[test open]
+[input]
+work
+[/input]
+[output]
+workworkworkwork
+[/output]
+[/test]
+[test open]
+[input]
+ball
+[/input]
+[output]
+ballballballball
+[/output]
+[/test]
+[test]
+[input]
+spot exempt
+[/input]
+[output]
+spotspotspotspotexemptexemptexemptexemptexemptexempt
+[/output]
+[/test]
+[test]
+[input]
+church lamp pier
+[/input]
+[output]
+churchchurchchurchchurchchurchchurchlamplamplamplamppierpierpierpier
+[/output]
+[/test]
+[test]
+[input]
+peace glide
+[/input]
+[output]
+peacepeacepeacepeacepeaceglideglideglideglideglide
+[/output]
+[/test]
+[test]
+[input]
+headquarters baseball
+[/input]
+[output]
+headquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersbaseballbaseballbaseballbaseballbaseballbaseballbaseballbaseball
+[/output]
+[/test]
+[test]
+[input]
+linear
+[/input]
+[output]
+linearlinearlinearlinearlinearlinear
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
+# Solution: Repeat strings
+[code-task title="Repeat strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
-# Solution: Repeat Strings
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        String[] words = sc.nextLine().split(" ");
+
+        String result = "";
+
+        for (String word : words) {
+            int repeatTimes = word.length();
+
+            for (int i = 0; i < repeatTimes; i++){
+
+                result += word;
+            }
+        }
+        System.out.println(result);
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that reads an **array of strings**.
+
+Each string is repeated **n** times, where **n** is the **length of the string**.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| hi abc add | hihiabcabcabcaddaddadd |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| work | workworkworkwork |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| ball | ballballballball |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+hi abc add
+[/input]
+[output]
+hihiabcabcabcaddaddadd
+[/output]
+[/test]
+[test open]
+[input]
+work
+[/input]
+[output]
+workworkworkwork
+[/output]
+[/test]
+[test open]
+[input]
+ball
+[/input]
+[output]
+ballballballball
+[/output]
+[/test]
+[test]
+[input]
+spot exempt
+[/input]
+[output]
+spotspotspotspotexemptexemptexemptexemptexemptexempt
+[/output]
+[/test]
+[test]
+[input]
+church lamp pier
+[/input]
+[output]
+churchchurchchurchchurchchurchchurchlamplamplamplamppierpierpierpier
+[/output]
+[/test]
+[test]
+[input]
+peace glide
+[/input]
+[output]
+peacepeacepeacepeacepeaceglideglideglideglideglide
+[/output]
+[/test]
+[test]
+[input]
+headquarters baseball
+[/input]
+[output]
+headquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersheadquartersbaseballbaseballbaseballbaseballbaseballbaseballbaseballbaseball
+[/output]
+[/test]
+[test]
+[input]
+linear
+[/input]
+[output]
+linearlinearlinearlinearlinearlinear
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
