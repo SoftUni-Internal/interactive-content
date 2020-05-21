@@ -124,22 +124,21 @@ The number 0 is zero.
 ```
 import java.util.Scanner;
 
-public class Main {
+public class _01_SignOfIntegerNumbers {
     public static void main(String[] args) {
-        public static void printSignNumbers(int number) {
-        if (number > 0) {
-            System.out.printf("The number %d is positive.", number);
-        } else if (number < 0) {
-            System.out.printf("The number %d is negative.", number);
-        } else {
-            System.out.println("The number 0 is zero.");
-        }
-    }
+        Scanner scanner = new Scanner(System.in);
+        int num = Integer.parseInt(scanner.nextLine());
 
-    public static void main(String[] args) {
-        Scanner drucker = new Scanner(System.in);
-        printSignNumbers(Integer.parseInt(drucker.nextLine()));
+        printNumber(num);
     }
+    private static void printNumber (int num) {
+        if (num < 0) {
+            System.out.println("The number " + num + " is negative.");
+        } else if (num == 0) {
+            System.out.println("The number " + num + " is zero.");
+        } else {
+            System.out.println("The number " + num + " is positive.");
+        }
     }
 }
 ```

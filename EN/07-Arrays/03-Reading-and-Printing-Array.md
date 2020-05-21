@@ -73,9 +73,9 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
-# Printing Arrays with String.join(…)
+# Printing Arrays with String.join()
 
-Use `String.join(x, y)`, where **x separator** and **y is the array** we want to print. `String.join(…)` works only with `String`:
+Use `String.join(x, y)`, where x is the **separator** and **y is the array** we want to print. `String.join(…)` works only with `String`:
 
 ```Java live
 String[] strings = { "one", "two" };
@@ -224,7 +224,6 @@ public class Main {
 
         for (int i = numbers.length - 1; i >= 0; i--) {
             System.out.print(numbers[i] + " ");
-
         }
 
     }
