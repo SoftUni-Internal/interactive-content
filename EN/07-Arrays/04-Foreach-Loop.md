@@ -26,7 +26,7 @@ for (var item : collection) {
     // Process the value here
 }
 ```
-We can print an array with Foreach:
+We can **print** an array with `for-each`:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -296,7 +296,7 @@ For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the se
 ### Hints
 While we have more than one element in the array `nums[]`, repeat the following:
 
-*	Allocate a new array `condensed[]` of size `nums.Length`.
+*	Allocate a new array `condensed[]` of size `nums.length`.
 *	Sum the numbers from `nums[]` to `condensed[]`:
 
 	`condensed[i]` = `nums[i]` + `nums[i+1]`
@@ -426,7 +426,7 @@ For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the se
 ### Hints
 While we have more than one element in the array `nums[]`, repeat the following:
 
-*	Allocate a new array `condensed[]` of size `nums.Length`.
+*	Allocate a new array `condensed[]` of size `nums.length`.
 *	Sum the numbers from `nums[]` to `condensed[]`:
 
 	`condensed[i]` = `nums[i]` + `nums[i+1]`
