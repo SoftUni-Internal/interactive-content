@@ -574,7 +574,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-All words included in the ban list should be replaced with asterisks "*", equal to the word's length.
+**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
@@ -652,7 +652,113 @@ object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science 
 [/slide]
 
 [slide]
-
 # Solution: Text Filter
+[code-task title="Text Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] banWords = sc.nextLine().split(", ");
+        String text = sc.nextLine();
+
+        for (String banWord : banWords) {
+
+            if (text.contains(banWord)) {
+                
+                String replacement = "";
+
+                for (int i = 0; i < banWord.length(); i++) {
+                    replacement += "*";
+                }
+                text = text.replace(banWord, replacement);
+            }
+        }
+        System.out.println(text);
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that takes a **text** and a **string of banned words**.
+
+**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
+
+The entries in the ban list will be separated by a **comma** and **space** ", ".
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| Linux, Windows | It is not \*\*\*\*\*, it is GNU/\*\*\*\*\*. \*\*\*\*\* is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/\*\*\*\*\*! Sincerely, a \*\*\*\*\*\*\* client |
+| It is not Linux, it is GNU/Linux. Linux is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/Linux! Sincerely, a Windows client |  |
+
+
+# Hints  
+- **Read the input**.
+- **Replace all ban words** in the text **with** **asterisk (*)**.
+	- Use the **built-in method** `replace(banWord, replacement)`.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Linux, Windows
+It is not Linux, it is GNU/Linux. Linux is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/Linux! Sincerely, a Windows client
+[/input]
+[output]
+It is not \*\*\*\*\*, it is GNU/\*\*\*\*\*. \*\*\*\*\* is merely the kernel, while GNU adds the functionality. Therefore we owe it to them by calling the OS GNU/\*\*\*\*\*! Sincerely, a \*\*\*\*\*\*\* client
+[/output]
+[/test]
+[test]
+[input]
+framework, structure, something
+In general, a framework is a real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful.
+[/input]
+[output]
+In general, a \*\*\*\*\*\*\*\*\* is a real or conceptual \*\*\*\*\*\*\*\*\* intended to serve as a support or guide for the building of \*\*\*\*\*\*\*\*\* that expands the \*\*\*\*\*\*\*\*\* into \*\*\*\*\*\*\*\*\* useful.
+[/output]
+[/test]
+[test]
+[input]
+computer, programming, set
+In computer programming, an application programming interface (API) is a set of subroutine definitions, communication protocols, and tools for building software.
+[/input]
+[output]
+In \*\*\*\*\*\*\*\* \*\*\*\*\*\*\*\*\*\*\*, an application \*\*\*\*\*\*\*\*\*\*\* interface (API) is a \*\*\* of subroutine definitions, communication protocols, and tools for building software.
+[/output]
+[/test]
+[test]
+[input]
+view, engine
+View engine gives the ability to render the HTML from your view to the browser. There are many view engines supported by ASP.NET MVC but the most widely used view engines are. Web form / ASPX view engine. Razor view engine.
+[/input]
+[output]
+View \*\*\*\*\*\* gives the ability to render the HTML from your \*\*\*\* to the browser. There are many \*\*\*\* \*\*\*\*\*\*s supported by ASP.NET MVC but the most widely used \*\*\*\* \*\*\*\*\*\*s are. Web form / ASPX \*\*\*\* \*\*\*\*\*\*. Razor \*\*\*\* \*\*\*\*\*\*.
+[/output]
+[/test]
+[test]
+[input]
+Controller, interface
+Model View Controller (MVC) is a software architecture pattern, commonly used to implement user interfaces.
+[/input]
+[output]
+Model View \*\*\*\*\*\*\*\*\*\* (MVC) is a software architecture pattern, commonly used to implement user \*\*\*\*\*\*\*\*\*s.
+[/output]
+[/test]
+[test]
+[input]
+object, programming
+object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems using object-oriented programming languages.
+[/input]
+[output]
+\*\*\*\*\*\*-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a \*\*\*\*\*\*\*\*\*\*\* technique for converting data between incompatible type systems using \*\*\*\*\*\*-oriented \*\*\*\*\*\*\*\*\*\*\* languages.
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
