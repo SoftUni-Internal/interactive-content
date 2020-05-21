@@ -177,17 +177,295 @@ int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
 
 [slide]
 # Problem: Word Filter
+[code-task title="Word Filter" taskId="862fa494-90f9-440d-a1cc-4f83cb8dd2c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read an array of **strings**, take only words which length is **even**.
+
+### Input / Constraints
+
+Read an array of strings.
+
+### Output
+
+Print each word on a new line.
+
+Filter those whose length is even.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| kiwi orange banana apple | kiwi |
+|  | orange |
+|  | banana |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| pizza cake pasta chips | cake |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+kiwi orange banana apple
+[/input]
+[output]
+kiwi
+orange
+banana
+[/output]
+[/test]
+[test open]
+[input]
+pizza cake pasta chips
+[/input]
+[output]
+cake
+[/output]
+[/test]
+[test]
+[input]
+deal guide counter seat hobby
+[/input]
+[output]
+deal
+seat
+[/output]
+[/test]
+[test]
+[input]
+deal guide counter seat hobby acute switch car widen criticism painter unfortunate pause boat
+[/input]
+[output]
+deal
+seat
+switch
+boat
+[/output]
+[/test]
+[test]
+[input]
+photograph architect literature wardrobe hobby locate upset explosion extension favour gravel crutch misery resort leaf
+[/input]
+[output]
+photograph
+literature
+wardrobe
+locate
+favour
+gravel
+crutch
+misery
+resort
+leaf
+[/output]
+[/test]
+[test]
+[input]
+adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint
+[/input]
+[output]
+strike
+graduate
+critical
+rest
+ignorant
+contract
+[/output]
+[/test]
+[test]
+[input]
+adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint guerrilla jam diagram anticipation muggy rhetoric invite parade manage aid bank smooth native snub image injury real east storm sell
+[/input]
+[output]
+strike
+graduate
+critical
+rest
+ignorant
+contract
+anticipation
+rhetoric
+invite
+parade
+manage
+bank
+smooth
+native
+snub
+injury
+real
+east
+sell
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
 # Solution: Word Filter
+[code-task title="Word Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class WordFilter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String[] words = Arrays.stream(scanner.nextLine().split(" "))
+                .filter(w->w.length() % 2 == 0).toArray(String[]::new);
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read an array of **strings**, take only words which length is **even**.
+
+### Input / Constraints
+
+Read an array of strings.
+
+### Output
+
+Print each word on a new line.
+
+Filter those whose length is even.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| kiwi orange banana apple | kiwi |
+|  | orange |
+|  | banana |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| pizza cake pasta chips | cake |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+kiwi orange banana apple
+[/input]
+[output]
+kiwi
+orange
+banana
+[/output]
+[/test]
+[test open]
+[input]
+pizza cake pasta chips
+[/input]
+[output]
+cake
+[/output]
+[/test]
+[test]
+[input]
+deal guide counter seat hobby
+[/input]
+[output]
+deal
+seat
+[/output]
+[/test]
+[test]
+[input]
+deal guide counter seat hobby acute switch car widen criticism painter unfortunate pause boat
+[/input]
+[output]
+deal
+seat
+switch
+boat
+[/output]
+[/test]
+[test]
+[input]
+photograph architect literature wardrobe hobby locate upset explosion extension favour gravel crutch misery resort leaf
+[/input]
+[output]
+photograph
+literature
+wardrobe
+locate
+favour
+gravel
+crutch
+misery
+resort
+leaf
+[/output]
+[/test]
+[test]
+[input]
+adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint
+[/input]
+[output]
+strike
+graduate
+critical
+rest
+ignorant
+contract
+[/output]
+[/test]
+[test]
+[input]
+adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint guerrilla jam diagram anticipation muggy rhetoric invite parade manage aid bank smooth native snub image injury real east storm sell
+[/input]
+[output]
+strike
+graduate
+critical
+rest
+ignorant
+contract
+anticipation
+rhetoric
+invite
+parade
+manage
+bank
+smooth
+native
+snub
+injury
+real
+east
+sell
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
-[slide]
-# Mapping
-
-
-[/slide]
 
 [slide]
 # Ordering / Sorting Collections
@@ -299,11 +577,233 @@ courseGrades.entrySet()
 
 [slide]
 # Problem: Largest 3 Numbers
+[code-task title="Largest 3 Numbers" taskId="d49b1d1b-d371-411a-bbd5-98b77b6b62e9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read a **list of integers** and **print largest 3 of them**.
+
+If there are **less** than 3, print **all** of them.
+
+Order the list using **Stream API**.
+
+### Input / Constraints
+Read a list of integers.
+
+### Output 
+
+Print top 3 numbers with **for** loop.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 10 30 15 20 50 5 | 50 30 20 |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 20 30 | 30 20 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+10 30 15 20 50 5
+[/input]
+[output]
+50 30 20
+[/output]
+[/test]
+[test open]
+[input]
+20 30
+[/input]
+[output]
+30 20
+[/output]
+[/test]
+[test]
+[input]
+3 3 9 5 2 3 3
+[/input]
+[output]
+9 5 3
+[/output]
+[/test]
+[test]
+[input]
+33 88 35 98 43 10 81
+[/input]
+[output]
+98 88 81
+[/output]
+[/test]
+[test]
+[input]
+91 4 7 49 83 51 73 34 45 24
+[/input]
+[output]
+91 83 73
+[/output]
+[/test]
+[test]
+[input]
+59 12
+[/input]
+[output]
+59 12
+[/output]
+[/test]
+[test]
+[input]
+53 3
+[/input]
+[output]
+53 3
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+5
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
 # Solution: Largest 3 Numbers
+[code-task title="Largest 3 Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
+public class Largest3Numbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        List<Integer> nums = Arrays.stream(scanner.nextLine().split(" "))
+                .map(Integer::parseInt).sorted((n1,n2) -> n2.compareTo(n1)).limit(3)
+                .collect(Collectors.toList());
+
+        for (Integer num : nums) {
+            System.out.print(num + " ");
+
+        }
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read a **list of integers** and **print largest 3 of them**.
+
+If there are **less** than 3, print **all** of them.
+
+Order the list using **Stream API**.
+
+### Input / Constraints
+Read a list of integers.
+
+### Output 
+
+Print top 3 numbers with **for** loop.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 10 30 15 20 50 5 | 50 30 20 |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 20 30 | 30 20 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+10 30 15 20 50 5
+[/input]
+[output]
+50 30 20
+[/output]
+[/test]
+[test open]
+[input]
+20 30
+[/input]
+[output]
+30 20
+[/output]
+[/test]
+[test]
+[input]
+3 3 9 5 2 3 3
+[/input]
+[output]
+9 5 3
+[/output]
+[/test]
+[test]
+[input]
+33 88 35 98 43 10 81
+[/input]
+[output]
+98 88 81
+[/output]
+[/test]
+[test]
+[input]
+91 4 7 49 83 51 73 34 45 24
+[/input]
+[output]
+91 83 73
+[/output]
+[/test]
+[test]
+[input]
+59 12
+[/input]
+[output]
+59 12
+[/output]
+[/test]
+[test]
+[input]
+53 3
+[/input]
+[output]
+53 3
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+5
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
