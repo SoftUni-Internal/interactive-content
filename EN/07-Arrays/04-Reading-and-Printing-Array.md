@@ -75,24 +75,17 @@ for (int i = 0; i < arr.length; i++) {
 
 # Printing Arrays with String.join(…)
 
-Use `String.join()` works only with `String`:
+Use `String.join(x, y)`, where **x separator** and **y is the array** we want to print. `String.join(…)` works only with `String`:
 
 ```Java live
-String[] strings = {
- "one",
- "two"
-};
+String[] strings = { "one", "two" };
 System.out.println(String.join(" ", strings));
 ```
 
 If we try printing int we receive error:
 
 ```Java live
-int[] arr = {
- 1,
- 2,
- 3
-};
+int[] arr = { 1, 2, 3 };
 System.out.println(String.join(" ", arr));
 ```
 [/slide]
@@ -113,7 +106,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read n numbers and print them in reverse order.
+Read n numbers and print them in reverse order, separated by single space.
 
 ## Examples
 |**Input**|**Output**|
@@ -227,7 +220,6 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             numbers[i] = Integer.parseInt(scan.nextLine());
-
         }
 
         for (int i = numbers.length - 1; i >= 0; i--) {
@@ -241,7 +233,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read n numbers and print them in reverse order.
+Read n numbers and print them in reverse order, separated by single space.
 
 ## Examples
 |**Input**|**Output**|
@@ -573,6 +565,143 @@ Otherwise, find the first index where the arrays differ and print on the console
 | 1 2 4 3 5 | |
 
 
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+10 20 30
+10 20 30
+[/input]
+[output]
+Arrays are identical. Sum: 60
+[/output]
+[/test]
+[test open]
+[input]
+1 2 3 4 5
+1 2 4 3 5
+[/input]
+[output]
+Arrays are not identical. Found difference at 2 index.
+[/output]
+[/test]
+[test]
+[input]
+1
+10
+[/input]
+[output]
+Arrays are not identical. Found difference at 0 index.
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+1 2 3
+[/input]
+[output]
+Arrays are identical. Sum: 6
+[/output]
+[/test]
+[test]
+[input]
+1 2 3
+1 2 4
+[/input]
+[output]
+Arrays are not identical. Found difference at 2 index.
+[/output]
+[/test]
+[test]
+[input]
+100
+100
+[/input]
+[output]
+Arrays are identical. Sum: 100
+[/output]
+[/test]
+[test]
+[input]
+100 200 300 400
+400 300 200 100
+[/input]
+[output]
+Arrays are not identical. Found difference at 0 index.
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Equal Arrays
+[code-task title="Problem: Equal Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class LabEqualArrays {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int[] first = Arrays
+                .stream(scan.nextLine().split(" "))
+                .mapToInt(e -> Integer.parseInt(e))
+                .toArray();
+        int[] second = Arrays
+                .stream(scan.nextLine().split(" "))
+                .mapToInt(e -> Integer.parseInt(e))
+                .toArray();
+
+        int match = 0;
+        int firstSum = 0;
+        for (int i :
+                first) {
+            firstSum += i;
+        }
+
+        for (int i = 0; i < first.length; i++) {
+            if (first[i] == second[i]) {
+                match++;
+            } else {
+                System.out.printf("Arrays are not identical. Found difference at %d index.", match);
+                break;
+            }
+        }
+
+        if (match == first.length) {
+            System.out.println("Arrays are identical. Sum: " + firstSum);
+        }
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Read two arrays and print on the console whether they are identical or not.
+
+Arrays are **identical** if their **elements are equal**.
+
+If the arrays are identical find the **sum of the first one** and print on the console following message:
+`"Arrays are identical. Sum: {sum}"`.
+
+Otherwise, find the first index where the arrays differ and print on the console following message:  
+`"Arrays are not identical. Found difference at {index} index."`.
+
+## Examples
+|**Input**|**Output**|
+|-----|------|------|
+| 10 20 30 | Arrays are identical. Sum: 60|
+| 10 20 30 | |
+
+|**Input**|**Output**|
+|-----|------|------|
+| 1 2 3 4 5 | Arrays are not identical. Found difference at 2 index.|
+| 1 2 4 3 5 | |
 
 [/task-description]
 [code-io /]
