@@ -73,6 +73,7 @@ public static void increment(int[] nums, int value) {
   nums[0] += value;
 }
 ```
+[/slide]
 
 [slide]
 # Problem: Math operations
