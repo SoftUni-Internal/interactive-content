@@ -532,7 +532,7 @@ If you get the same word for second time, just add the new synonym to the list.
 ### Output 
 
 Print the words in the following format:
-**\{word} - \{synonym1, synonym2… synonymN}**
+**\{word} - {synonym1, synonym2… synonymN}**
 
 ## Examples
 | **Input** | **Output** |
@@ -773,7 +773,7 @@ If you get the same word for second time, just add the new synonym to the list.
 ### Output 
 
 Print the words in the following format:
-**\{word} - \{synonym1, synonym2… synonymN}**
+**\{word} - {synonym1, synonym2… synonymN}**
 
 ## Examples
 | **Input** | **Output** |
