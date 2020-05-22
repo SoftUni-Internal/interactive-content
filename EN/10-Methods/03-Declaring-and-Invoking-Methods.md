@@ -39,7 +39,7 @@ To call a method in Java, write the method's name followed by two parentheses `(
 
 In the following example, `printHello()` is used to print a text (the action), when it is called:
 
-```Java live
+```java live no-template
 public class MyClass {
   public static void main(String[] args) {
     printHello();
@@ -53,7 +53,7 @@ public class MyClass {
 
 A method can also be called multiple times:
 
-```Java live
+```java live no-template
 public class MyClass {
   public static void main(String[] args) {
     printHello();

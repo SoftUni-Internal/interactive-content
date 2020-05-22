@@ -13,7 +13,7 @@
 
 The `return` keyword finished the execution of a method, and can be used to return a value from a method.
 
-```Java live
+```java live no-template
 public class MyClass {
   static int myMethod(int x) {
     return 5 + x;

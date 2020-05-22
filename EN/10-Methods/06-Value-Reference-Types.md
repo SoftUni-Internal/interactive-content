@@ -48,7 +48,7 @@ byte[] bytes = { 1, 2, 3 };
 ```
 ## Value Types Example
 
-```Java live
+```java live no-template
 public static void main(String[] args) {
    int num = 5;
    increment(num, 15);
@@ -62,7 +62,7 @@ public static void increment(int num, int value) {
 
 ## Reference Types Example
 
-```Java live
+```java live no-template
 public static void main(String[] args) {
   int[] nums = { 5 };
   increment(nums, 15);

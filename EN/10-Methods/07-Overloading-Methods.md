@@ -46,7 +46,7 @@ Instead of defining two methods that should do the same thing, it is better to o
 
 In the example below, we overload the `plusMethod` method to work for both `int` and `double`:
 
-```Java live
+```java live no-template
 static int plusMethodInt(int x, int y) {
   return x + y;
 }

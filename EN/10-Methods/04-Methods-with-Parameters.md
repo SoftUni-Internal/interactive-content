@@ -22,7 +22,7 @@ The following example has a method that takes a `String` called `firstName` as a
 
 When the method is called, we pass along a first name, which is used inside the method to print the full name:
 
-```Java live
+```java live no-template
 public class MyClass {
   static void myMethod(String firstName) {
     System.out.println(firstName + " Refsnes");
