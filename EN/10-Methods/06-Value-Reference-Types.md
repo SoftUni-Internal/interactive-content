@@ -48,8 +48,9 @@ byte[] bytes = { 1, 2, 3 };
 ```
 ## Value Types Example
 
-```Java live
-public static void main(String[] args) {
+```java live no-template
+public class MyClass {
+ public static void main(String[] args) {
    int num = 5;
    increment(num, 15);
    System.out.println(num);
@@ -57,12 +58,14 @@ public static void main(String[] args) {
 
 public static void increment(int num, int value) {
    num += value;
+ }
 }
 ```
 
 ## Reference Types Example
 
-```Java live
+```java live no-template
+public class MyClass {
 public static void main(String[] args) {
   int[] nums = { 5 };
   increment(nums, 15);
@@ -71,7 +74,8 @@ public static void main(String[] args) {
 
 public static void increment(int[] nums, int value) {
   nums[0] += value;
-}
+ }
+} 
 ```
 [/slide]
 
@@ -148,7 +152,7 @@ The possible operators are: `/` `*` `+` `-`
 [test]
 [input]
 3
--
+\-
 1
 [/input]
 [output]
@@ -291,7 +295,7 @@ The possible operators are: `/` `*` `+` `-`
 [test]
 [input]
 3
--
+\-
 1
 [/input]
 [output]
