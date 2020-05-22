@@ -523,16 +523,16 @@ You will be given a number **n**.
 
 On the next **2 * n** lines you will be given a **word** and a **synonym** each on a separate line like this:
 
-- **\{word\}**
+- **\{word}**
 
-- **\{synonym\}**
+- **\{synonym}**
 
 If you get the same word for second time, just add the new synonym to the list.
 
 ### Output 
 
 Print the words in the following format:
-**\{word\} - \{synonym1, synonym2… synonymN\}**
+**\{word} - {synonym1, synonym2… synonymN}**
 
 ## Examples
 | **Input** | **Output** |
@@ -764,16 +764,16 @@ You will be given a number **n**.
 
 On the next **2 * n** lines you will be given a **word** and a **synonym** each on a separate line like this:
 
-- **\{word\}**
+- **\{word}**
 
-- **\{synonym\}**
+- **\{synonym}**
 
 If you get the same word for second time, just add the new synonym to the list.
 
 ### Output 
 
 Print the words in the following format:
-**\{word\} - \{synonym1, synonym2… synonymN\}**
+**\{word} - {synonym1, synonym2… synonymN}**
 
 ## Examples
 | **Input** | **Output** |
