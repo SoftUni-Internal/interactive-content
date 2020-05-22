@@ -16,22 +16,12 @@ For example:
 | Sam Doe | +1-555-5050 |
 
 
-## Map Implementation
-
-To use `Map` in Java import `java.util.Map` package. 
-
-To implement a map specify the generic type of the key and the value in the angle brackets `<>`, followed by the map **name**, which should be descriptive enough to understand what the key and the value represent. After the equals sign `=` use the keyword `new` and the intended type of map.
-
-```java
-Map <Kay, Value> airplanes = new HashMap<>();
-```
-
 [/slide]
 
 [slide]
-# Map Types
+# Map Implementations
 
-There are three collection views, which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. The order of a map depends on the chosen collection view. Some map implementations, like the TreeMap class, make specific guarantees as to their order; others, like the HashMap class, do not. 
+The Java Collections API contains several Map implementations, which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. The commonly used Map implementations are `HashMap`, `LinkedHashMap` and `TreeMap`. The order of a Map depends on the chosen collection view. Some Map implementations, like the TreeMap class, make specific guarantees as to their order; others, like the HashMap class, do not. 
 
 HashMap and LinkedHashMap allow `null` keys and values, but TreeMap does not allow any `null` key or value.
 
@@ -40,17 +30,41 @@ A Map can not be traversed, so you need to convert it into Set using `keySet()` 
 
 ## HashMap < Key, Value >
 
-HashMap is the implementation of Map, but it does not maintain any order.
+HashMap maps a Key and a Value, but it does not maintain any order of the elements sorted internally in the map. This is the fastest of the Map implementations, so if there is no need to sort the elements in the Map is recommended to use `HashMap`.
 
 ## LinkedHashMap < Key, Value >
 
-LinkedHashMap is the implementation of Map. It inherits HashMap class, but maintains insertion order.
-Keeps the keys in order of addition.
+LinkedHashMap also maps a Key and a Value. It inherits HashMap class, but maintains insertion order. Keeps the keys in order of addition.
 
 ## TreeMap < Key, Value >
 
-TreeMap is the implementation of Map and StoredMap and maintains ascending order.
-Keeps its keys always stored and uses a balanced search tree.
+TreeMap also maps a Key and a Value. It maintains ascending order. Keeps its keys always stored and uses a balanced search tree.
+[/slide]
+
+[slide]
+# Map Implementation
+
+To use `Map` in Java import `java.util.Map` package. Create an instance of one of the classes that implement the Java Map interface.
+
+To implement a map:
+- specify the **generic type** of the Key and the Value in the angle brackets `<>`. 
+Once the Key and the Value are set the map can only accept their generic types.
+
+- followed by the map **name**, which should be **descriptive** enough to understand what the **Key and the Value represent**. 
+
+- After the equals sign `=` use the keyword `new` and the **intended type** of map.
+
+```java
+Map <Kay, Value> airplanes = new HashMap<>();
+```
+
+```java
+Map <Kay, Value> shoppingList = new LinkedHashMap<>();
+```
+
+```java
+Map <Kay, Value> phoneBook = new TreeMap<>();
+```
 
 [/slide]
 
@@ -58,7 +72,7 @@ Keeps its keys always stored and uses a balanced search tree.
 [slide]
 # Built-in methods
 
-- `put(K key, V value)` - add items (insert an entry) in the map 
+- `put(K key, V value)` - add items (insert an entry) in the map. Only a single Key + Value pair for each key can exist in the Map at the same time. For one Key only one value can be stored in the same Map instance. There can be stored values for the same Key in different Map instances. If `put()` is called more than once with the same Key, the latest Value passed to `put()` for that Key will overwrite what is already stored in the Map for that Key. The latest Value replaces the existing Value for the given Key.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
