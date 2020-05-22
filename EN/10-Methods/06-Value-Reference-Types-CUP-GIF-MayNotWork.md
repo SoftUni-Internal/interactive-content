@@ -285,16 +285,6 @@ The possible operators are: `/` `*` `+` `-`
 [/test]
 [test]
 [input]
-4
-/
-2
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
 3
 -
 1
