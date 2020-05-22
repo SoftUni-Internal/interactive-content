@@ -24,7 +24,8 @@ System.out.println(result); // "Hello, SoftUni!"
 
 # Substring
 
-- `substring(int startIndex)` - returns **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
+- `substring(int startIndex)` - returns **new String** containing the substring of the given
+ string from specified **startIndex** (**inclusive**)
 
 ```java live
 String text = "My name is John";
