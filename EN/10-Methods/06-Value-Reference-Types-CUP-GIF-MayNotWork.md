@@ -191,48 +191,15 @@ The possible operators are: `/` `*` `+` `-`
 [/slide]
 
 [slide]
-# Solution: Math operations
-[code-task title="Problem: Math operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Math operations
+[code-task title="Problem: Math operations" taskId="4dad7f6-8952-45a0-a127-215e23bed3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
 
-public class MathOperations{
-    static void add(double firstNum, double secondNum){
-        double result = firstNum+secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void multiply(double firstNum, double secondNum){
-        double result = firstNum*secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void subtract(double firstNum, double secondNum){
-        double result = firstNum-secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void divide(double firstNum, double secondNum){
-        double result = firstNum/secondNum;
-        System.out.printf("%.0f",result);
-    }
-
-
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double firstNum = Double.parseDouble(scanner.nextLine());
-        char operator = scanner.nextLine().charAt(0);
-        double secondNum = Double.parseDouble(scanner.nextLine());
-
-        if (operator=='+'){
-            add(firstNum,secondNum);
-        }else if (operator=='-') {
-            subtract(firstNum, secondNum);
-        }else if (operator=='*'){
-            multiply(firstNum,secondNum);
-        }else {
-            divide(firstNum,secondNum);
-        }
-
-
+        // Write your code here
     }
 }
 ```
@@ -281,6 +248,159 @@ The possible operators are: `/` `*` `+` `-`
 [/input]
 [output]
 12
+[/output]
+[/test]
+[test]
+[input]
+4
+/
+2
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+3
+-
+1
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+5
++
+2
+[/input]
+[output]
+7
+[/output]
+[/test]
+[test]
+[input]
+2
+\*
+3
+[/input]
+[output]
+6
+[/output]
+[/test]
+[test]
+[input]
+5
++
+5
+[/input]
+[output]
+10
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Math operations
+[code-task title="Problem: Math operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class MathOperations {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double firstNumber = Double.valueOf(sc.nextLine());
+        String operator = sc.nextLine();
+        double secondNumber = Double.valueOf(sc.nextLine());
+        double result = 0;
+
+        switch (operator) {
+            case "+": result = sum(firstNumber, secondNumber); break;
+            case "-": result = subtract(firstNumber, secondNumber); break;
+            case "*": result = multiply(firstNumber, secondNumber); break;
+            case "/": result = divide(firstNumber, secondNumber); break;
+        }
+
+        System.out.printf("%d", (int)result);
+    }
+
+    private static double sum(double a, double b) {
+        return a + b;
+    }
+
+    private static double subtract(double a, double b) {
+        return a - b;
+    }
+
+    private static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    private static double divide(double a, double b) {
+        return a / b;
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a method that receives **two number** and an **operator**, calculates the result and returns it.
+
+You will be given **three lines of input**.
+
+The first will be the first **number**, the second one will be the **operator** and the last one will be the **second number**.
+
+The possible operators are: `/` `*` `+` `-`
+
+## Examples
+|**Input**|**Output**|
+| --- | --- | 
+| 5 | 25 |
+| * ||
+| 5 ||
+
+|**Input**|**Output**|
+| --- | --- | 
+| 4 | 12 |
+| + ||
+| 8 ||
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+5
+\*
+5
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+4
++
+8
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test]
+[input]
+4
+/
+2
+[/input]
+[output]
+2
 [/output]
 [/test]
 [test]
