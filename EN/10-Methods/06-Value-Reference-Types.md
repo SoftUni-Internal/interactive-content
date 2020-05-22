@@ -1,4 +1,4 @@
-# Value vs. Reference Types
+# Value and Reference Types
 
 [slide]
 # Video
@@ -73,6 +73,7 @@ public static void increment(int[] nums, int value) {
   nums[0] += value;
 }
 ```
+[/slide]
 
 [slide]
 # Problem: Math operations
