@@ -74,11 +74,9 @@ public static void increment(int[] nums, int value) {
 }
 ```
 
-[/slide]
-
 [slide]
 # Problem: Math operations
-[code-task title="Problem: Math operations" taskId="ff5ffc37-d053-4ef1-8ccf-936b7c94b4a0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Math operations" taskId="4dad7f6-8952-45a0-a127-215e23bed3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -197,42 +195,38 @@ The possible operators are: `/` `*` `+` `-`
 ```
 import java.util.Scanner;
 
-public class MathOperations{
-    static void add(double firstNum, double secondNum){
-        double result = firstNum+secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void multiply(double firstNum, double secondNum){
-        double result = firstNum*secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void subtract(double firstNum, double secondNum){
-        double result = firstNum-secondNum;
-        System.out.printf("%.0f",result);
-    }
-    static void divide(double firstNum, double secondNum){
-        double result = firstNum/secondNum;
-        System.out.printf("%.0f",result);
-    }
-
-
+public class MathOperations {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double firstNum = Double.parseDouble(scanner.nextLine());
-        char operator = scanner.nextLine().charAt(0);
-        double secondNum = Double.parseDouble(scanner.nextLine());
+        Scanner sc = new Scanner(System.in);
+        double firstNumber = Double.valueOf(sc.nextLine());
+        String operator = sc.nextLine();
+        double secondNumber = Double.valueOf(sc.nextLine());
+        double result = 0;
 
-        if (operator=='+'){
-            add(firstNum,secondNum);
-        }else if (operator=='-') {
-            subtract(firstNum, secondNum);
-        }else if (operator=='*'){
-            multiply(firstNum,secondNum);
-        }else {
-            divide(firstNum,secondNum);
+        switch (operator) {
+            case "+": result = sum(firstNumber, secondNumber); break;
+            case "-": result = subtract(firstNumber, secondNumber); break;
+            case "*": result = multiply(firstNumber, secondNumber); break;
+            case "/": result = divide(firstNumber, secondNumber); break;
         }
 
+        System.out.printf("%d", (int)result);
+    }
 
+    private static double sum(double a, double b) {
+        return a + b;
+    }
+
+    private static double subtract(double a, double b) {
+        return a - b;
+    }
+
+    private static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    private static double divide(double a, double b) {
+        return a / b;
     }
 }
 ```
