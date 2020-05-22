@@ -3,9 +3,7 @@
 
  **String** is an **object** that represents a **sequence of characters** - `char []`.
 
- ```java
-    // nice to have some picture
- ```
+ [image assetsSrc="String-example(1).png" /]
 
  Just like an array of chars, **Strings are immutable**.
 
