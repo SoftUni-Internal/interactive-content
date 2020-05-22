@@ -24,10 +24,8 @@
 
 
  **Strings use Unicode** (can use most alphabets, e.g. Arabic) 
- ```java live
+ ```java 
     String greeting = "مرحبا";  // Hello in Arabic
-
-    System.out.println(greeting);
  ```
 
 The main **features** of **Strings** are:
