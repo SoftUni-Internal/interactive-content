@@ -1,4 +1,4 @@
-# Value vs. Reference Types
+# Value and Reference Types
 
 [slide]
 # Video
