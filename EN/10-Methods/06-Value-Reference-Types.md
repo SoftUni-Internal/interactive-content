@@ -148,7 +148,7 @@ The possible operators are: `/` `*` `+` `-`
 [test]
 [input]
 3
--
+\-
 1
 [/input]
 [output]
