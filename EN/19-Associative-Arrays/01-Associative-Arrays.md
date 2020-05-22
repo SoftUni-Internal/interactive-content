@@ -80,13 +80,14 @@ airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
 ```
 
-- `putIfAbsent(K key, V value)` - insert the specified value with the specified key in the map only if it is not already existing
+- `putIfAbsent(K key, V value)` - insert the specified Value with the specified Key in the Map only if it is not already existing
 
-- `get(K key)` - access a value in the map using its key and return the value object
+- `get(K key)` - access a Value in the Map using its Key and return the Value object
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
-System.out.println(airplanes.get("Boeing 737"));
+int peopleCount = airplanes.get("Boeing 737");
+System.out.println(peopleCount);
 ```
 
 - `remove(K key)` - delete an item (entry) using its key
