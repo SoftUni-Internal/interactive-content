@@ -28,6 +28,8 @@ System.out.println(sb.toString());
 # Length
 - `length()` - return the **length** of the **string** in the buffer
 ```java live
+StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
+
 sb.append("Hello Peter, how are you?");
 
 System.out.println(sb.length()); // 25
