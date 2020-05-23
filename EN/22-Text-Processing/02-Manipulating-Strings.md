@@ -83,8 +83,8 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 ```java live
 
 String text
-      = "Hello, john@softuni.com," +
-           " you have been using john@softuni.com in your registration.";
+     = "Hello, john@softuni.com," +
+       " you have been using john@softuni.com in your registration.";
         
 String[] words = text.split(", ");
 
@@ -113,8 +113,8 @@ System.out.println(String.join(", ",words));
 ```java live
 
 String text
-      = "Hello, john@softuni.com," +
-           " you have been using john@softuni.com in your registration.";
+    = "Hello, john@softuni.com," +
+      " you have been using john@softuni.com in your registration.";
 
 String replacedText = text
             .replace("john@softuni.com", "peter@softuni.com");
