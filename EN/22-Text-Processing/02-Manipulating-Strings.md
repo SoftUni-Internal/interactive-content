@@ -82,7 +82,9 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 - `split()` - split a string by a given pattern
 ```java live
 
-String text = "Hello, john@softuni.bg, you have been using john@softuni.bg in your registration";
+String text
+      = "Hello, john@softuni.com," +
+           " you have been using john@softuni.com in your registration.";
         
 String[] words = text.split(", ");
 
@@ -110,7 +112,8 @@ System.out.println(String.join(", ",words));
 
 ```java live
 
-String text = "Hello, john@softuni.com," +
+String text
+      = "Hello, john@softuni.com," +
            " you have been using john@softuni.com in your registration.";
 
 String replacedText = text
