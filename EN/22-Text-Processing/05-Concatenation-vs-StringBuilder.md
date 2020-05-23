@@ -4,7 +4,7 @@
 
 # Concatenation vs StringBuilder
 
-- **Concatenating** strings is a **slow** operation, because each iteration creates a **new String**
+- **Concatenating** strings is a **slow** operation because each iteration creates a **new String**
 
 ```java live
 
@@ -20,9 +20,9 @@ for (int i = 0; i < 1000000; i++){
 // End time 
 System.out.println(new Date());
 ```
-As we can see the time of program execution is about 1 minute, wich is slow.
+As we can see the time of program execution is about 1 minute, which is slow.
 
-- Let's the same operation using **StringBuilder**
+- Let's do the same operation using **StringBuilder**
 ```java live
 System.out.println(new Date());
 
