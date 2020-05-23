@@ -79,7 +79,7 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 
 # Splitting
  
-- `split()` - split a string by a given pattern
+- `split()` - splits a string by a given pattern
 ```java live
 
 String text
@@ -91,7 +91,7 @@ String[] words = text.split(", ");
 System.out.println(String.join(", ",words));
 ```
 
-- `split()` - split by multiple separators
+- `split()` - splits by multiple separators
 ```java live
 
 String text = "Hello, I am John.";
