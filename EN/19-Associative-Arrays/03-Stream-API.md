@@ -1,7 +1,13 @@
 [slide]
 # Stream API
 
-Traversing and Querying Collections
+Java Stream API provides a functional approach to process collections of objects.
+
+A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream do not change the original data structure, it provides result. 
+
+
+
+
 
 [/slide]
 
@@ -48,6 +54,32 @@ int [] numbers = new int[]{15, 25, 35};
 double average = Arrays.stream(numbers).average().getAsDouble();
 System.out.println(average);
 ```
+
+- `map()` - manipulating elements in a collection
+```java
+int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+```
+
+```java live
+String[] words = {"abc", "def", "geh", "yyy"};
+words = Arrays.stream(words).map(w -> w + "yyy").toArray(String[]::new);
+for (String word : words) {
+    System.out.println(word);
+}
+```
+
+- `toArray()` - converting collection to an array
+```java
+int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+```
+
+`filter()` - filter an array
+```java
+int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
+        .mapToInt(e -> Integer.parseInt(e))
+        .filter(n -> n > 0).toArray();
+```
+
 [/slide]
 
 [slide]
@@ -105,57 +137,7 @@ double average = numbers.stream().mapToInt(Integer::intValue).average().getAsDou
 System.out.println(average);
 ```
 
-- `map()` - manipulating elements in a collection
-```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
-```
-
-```java live
-String[] words = {"abc", "def", "geh", "yyy"};
-words = Arrays.stream(words).map(w -> w + "yyy").toArray(String[]::new);
-for (String word : words) {
-    System.out.println(word);
-}
-```
-
-[/slide]
-
-[slide]
-# Lambda
-
-A lambda expression is an anonymous function containing expressions and statements
-(a -> a > 5)
-
-Lambda expressions
-
-Use the lambda operator `->`. Read as "goes to"
-
-The **left** side specifies the **input** parameters
-The **right** side holds the **expression** or **statement**
-
-Lambda functions are **inline methods** (functions) that take input parameters and return values:
-
-`x -> x / 2` = `static int function(int x) { return x / 2; }`
-
-`x -> x != 0` = `static boolean function(int x) { return x != 0; }`
-
-`() -> 42` = `static int function() { return 42; }`
-
-
-
-[/slide]
-
-[slide]
-# Converting Collections
-
-To convert collections use:
-
-- `toArray()`
-```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
-```
-
-- `toList()`
+- `toList()` - converting collection to a list
 ```java
 List<Integer> nums = Arrays.stream(scanner.nextLine().split(" "))
         .map(e -> Integer.parseInt(e)).collect(Collectors.toList());
@@ -163,17 +145,6 @@ List<Integer> nums = Arrays.stream(scanner.nextLine().split(" "))
 
 [/slide]
 
-[slide]
-# Filtering Collections
-
-`filter()`
-```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
-        .mapToInt(e -> Integer.parseInt(e))
-        .filter(n -> n > 0).toArray();
-```
-
-[/slide]
 
 [slide]
 # Problem: Word Filter
