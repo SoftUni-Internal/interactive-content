@@ -1,5 +1,5 @@
 [slide]
-# Lambda
+# Lambda Expressions
 
 A lambda expression is an anonymous function containing expressions and statements
 (a -> a > 5)

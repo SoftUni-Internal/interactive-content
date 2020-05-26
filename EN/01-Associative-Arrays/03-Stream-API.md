@@ -1,17 +1,15 @@
 [slide]
 # Stream API
 
-Java Stream API provides a functional approach to process collections of objects.
+Java Stream API provides a functional approach to process collections of objects. It allows to reduce the code, to create more readable programs and to improve productivity. 
 
 A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream do not change the original data structure, it provides result. 
 
+Stream pipeline is a chain of stream source, intermediate operations, and a terminal operation. 
+
+The API has many terminal operations which aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. 
+
 Most of the methods use lambda expressions on the stream.
-
-There are two types of operations:
-
-- non-terminal stream operations - transform of filter the elements in the stream. There is a new stream as result. The new stream represents the stream of elements resulting from the original stream with the non-terminal operation applied.
-
-- terminal stream operations - return a single value from an operation when an iteration is done. When the operation is invoked, the iteration and the chained streams star. Terminal stream operations do not return a new stream instance.
 
 
 
@@ -23,7 +21,7 @@ There are two types of operations:
 [slide]
 # Processing Arrays with Stream API
 
-- `min()` - finds the **smallest** element in a collection:
+- `min()` - finds and returns the **smallest** element in a collection:
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers).min().getAsInt();
@@ -42,21 +40,21 @@ int min = Arrays.stream(numbers).min().orElse(2);
 System.out.println(min);
 ```
 
-- `max()` - finds the **largest** element in a collection
+- `max()` - finds and returns the **largest** element in a collection
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int max = Arrays.stream(numbers).max().getAsInt();
 System.out.println(max);
 ```
 
-- `sum()` - finds **the sum** of all elements in a collection
+- `sum()` - finds and returns **the sum** of all elements in a collection
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int sum = Arrays.stream(numbers).sum();
 System.out.println(sum);
 ```
 
-- `average()` - finds **the average** of all elements
+- `average()` - finds and returns **the average** of all elements
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 double average = Arrays.stream(numbers).average().getAsDouble();
@@ -93,7 +91,7 @@ int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
 [slide]
 # Processing Collections with Stream API
 
-- `min()` - finds the **smallest** element in a collection:
+- `min()` - finds and returns the **smallest** element in a collection:
 ```java live
 ArrayList<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -110,7 +108,7 @@ int min = numbers.stream().min(Integer::compareTo).get();
 System.out.println(min);
 ```
 
-- `max()` - finds the **largest** element in a collection
+- `max()` - finds and returns the **largest** element in a collection
 ```java live
 ArrayList<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -127,7 +125,7 @@ int max = numbers.stream().max(Integer::compareTo).get();
 System.out.println(max);
 ```
 
-- `sum()` - finds **the sum** of all elements in a collection
+- `sum()` - finds and returns **the sum** of all elements in a collection
 ```java live
 ArrayList<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -136,7 +134,7 @@ int sum = numbers.stream().mapToInt(Integer::intValue).sum();
 System.out.println(sum);
 ```
 
-- `average()` - finds **the average** of all elements
+- `average()` - finds and returns **the average** of all elements
 ```java live
 ArrayList<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
