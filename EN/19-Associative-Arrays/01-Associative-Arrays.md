@@ -3,16 +3,16 @@
 
 Associative arrays are collections of type parameters **Key** and **Value** pairs and are indexed by **Keys**, not by numbers 0, 1, 2,... like arrays. 
 
-The Key represents the index of the map. Keys and Values are **objects** and each pair is known as an entry.
+**The Key** represents **the index** of the map. Keys and Values are **objects** and each pair is known as **an entry**.
 
-One object is used as a Key (index) to another object (Value). 
+One object is used as a **Key** (index) to another object (**Value**). 
 
-They can not be primitive types like int, double, boolean, etc. 
-They must be specified with the equivalent wrapper class: Integer, Double, Boolean, etc. 
+They **can not** be **primitive types** like int, double, boolean, etc. 
+They **must be specified** with the equivalent **wrapper class**: Integer, Double, Boolean, etc. 
 
-The type of Key and Value can be the same or different, depends from the case.
+**The type of Key and Value** can be the **same or different**, depends on the case.
 
-In Java associative arrays are called **Map**. A map can not contain duplicate Keys; each Key can map to at most one Value. But the values can be duplicated.
+In Java associative arrays are called **Map**. A Map **can not contain duplicate Keys**; each Key can map to at most one Value. But **the values can be duplicated**. **For one Key only one Value** can be stored **in the same Map instance**. There can be stored **different values for the same Key in different Map instances**. 
 
 For example:
 
@@ -30,7 +30,7 @@ For example:
 [slide]
 # Map Implementations
 
-The Java Collections API contains several Map **implementations**, which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. 
+The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. 
 
 The commonly used **Map implementations** are `HashMap`, `LinkedHashMap` and `TreeMap`. 
 
@@ -41,43 +41,43 @@ The **order** of a Map depends on the **chosen collection view**. Some Map imple
 
 ## HashMap < Key, Value >
 
-HashMap maps a Key and a Value, but it **does not maintain any order** of the elements stored internally in the map. This is the **fastest** of the Map implementations, so if there is no need to sort the elements in the Map is recommended to use `HashMap`.
+`HashMap` maps a Key and a Value, but it **does not maintain any order** of the elements stored internally on the Map. This is the **fastest** of the Map implementations, so if there is no need to sort the elements in the Map is recommended to use `HashMap`.
 
 
 ## LinkedHashMap < Key, Value >
 
-LinkedHashMap also maps a Key and a Value. It inherits HashMap class, but **maintains insertion order**. Keeps the Keys **in order of addition**.
+`LinkedHashMap` also maps a Key and a Value. It inherits **HashMap** class, but **maintains insertion order**. Keeps the Keys **in order of addition**.
 
 
 ## TreeMap < Key, Value >
 
-TreeMap also maps a Key and a Value. It **maintains ascending order**. Keeps its keys **always stored** and uses a balanced search tree.
+`TreeMap` also maps a Key and a Value. It **maintains ascending order**. Keeps its keys **always stored** and uses a balanced search tree.
 [/slide]
 
 [slide]
-# Map Implementation
+# Map Declaration and Initialization
 
-To use `Map` in Java import `java.util.Map` package. Create an instance of one of the classes that implement the Java Map interface.
+To use `Map` in Java **import** `java.util.Map` package. Create an **instance** of one of the classes that implement the Java **Map interface**.
 
-To implement a map:
+To initialize a map:
 
 - specify the **generic type** of the Key and the Value in the angle brackets `<>`. 
 Once the Key and the Value are set the map can only accept their generic types.
 
 - followed by the map **name**, which should be **descriptive** enough to understand what the **Key and the Value represent**. 
 
-- After the equals sign `=` use the keyword `new` and the **intended type** of map.
+- After the equals sign `=` use the keyword `new` and the **intended type** of the Map.
 
 ```java
-Map <Kay, Value> airplanes = new HashMap<>();
+Map <Key, Value> airplanes = new HashMap<>();
 ```
 
 ```java
-Map <Kay, Value> shoppingList = new LinkedHashMap<>();
+Map <Key, Value> shoppingList = new LinkedHashMap<>();
 ```
 
 ```java
-Map <Kay, Value> phoneBook = new TreeMap<>();
+Map <Key, Value> phoneBook = new TreeMap<>();
 ```
 
 [/slide]
@@ -86,7 +86,7 @@ Map <Kay, Value> phoneBook = new TreeMap<>();
 [slide]
 # Built-in methods
 
-- `put(K key, V value)` - **add items** (insert an entry) in the map. Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. **For one Key only one Value** can be stored **in the same Map instance**. There can be stored **different values for the same Key in different Map instances**. If `put()` is called more than once with the same Key, **the latest Value** passed to `put()` for that Key will **overwrite** what is already stored in the Map for that Key. **The latest Value replaces the existing Value** for the given Key.
+- `put(K key, V value)` - **add items** (insert an entry) in the map. Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. If `put()` is called more than once with the same Key, **the latest Value** passed to `put()` for that Key will **overwrite** what is already stored in the Map for that Key. **The latest Value replaces the existing Value** for the given Key.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -94,9 +94,16 @@ airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
 ```
 
-- `putIfAbsent(K key, V value)` - insert the specified Value with the specified Key in the Map only if it is not already existing
+- `putIfAbsent(K key, V value)` - insert the specified Value with the specified Key in the Map only if it is **not already existing**
 
-- `get(K key)` - access a Value in the Map using its Key and return the Value object
+```java live
+HashMap<String, Integer> airplanes = new HashMap<>();
+airplanes.put("Boeing 737", 130);
+airplanes.putIfAbsent("Boeing 737", 100);
+System.out.println(airplanes.get("Boeing 737"));
+```
+
+- `get(K key)` - **access a Value** in the Map using its Key and **return the Value** object
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -104,22 +111,25 @@ int peopleCount = airplanes.get("Boeing 737");
 System.out.println(peopleCount);
 ```
 
-- `remove(K key)` - delete an item (entry) using its Key
-```java
+- `remove(K key)` - **delete** an item (entry) **using its Key**
+```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
 airplanes.remove("Boeing 737");
+System.out.println(airplanes.get("Boeing 737"));
 ```
 
 - `clear()` - remove all items (entries) in the map, reset the Map
-```java
+```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
 airplanes.clear();
+System.out.println(airplanes.get("Boeing 737"));
+System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - return the number of items (entries) in the Map
+- `size()` - return the **number of items (entries)** in the Map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -127,7 +137,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - check if there is such Key object in the Map and if there is return `true`, else return `false`
+- `containsKey(K key)` - check **if there is such Key object** in the Map and if there is return `true`, else return `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -136,7 +146,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - check if there is such Value object in the Map and if there is return `true`, else return `false`
+- `containsValue(V value)` - check **if there is such Value object** in the Map and if there is return `true`, else return `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -144,7 +154,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - return `true` if the Map is empty and `false` if it contains at least one Key
+- `isEmpty()` - return `true` if the Map is **empty** and `false` if it contains **at least one Key**
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 System.out.println(airplanes.isEmpty());
@@ -162,9 +172,9 @@ System.out.println(airplanes.isEmpty());
 [slide]
 # Iterating through Map
 
-Iterating through objects of type Map.Entry<K, V>. Cannot modify the collection(read-only).
+Iterating through objects of type **Map.Entry <K, V>**. **Cannot modify** the collection(read-only).
 
-There are several ways to iterate the keys stored in a Map.
+There are several ways to iterate the Keys stored in a Map.
 
 - Iterating through the items of a map using a **for-each** loop
 
@@ -191,8 +201,8 @@ for (Double price : fruitsPrice.values()) {
 ```
 
 - Iterating through the items of a map using the build-in method `entrySet()`
-  - `entry.getKey()` - obtain the keys
-  - `entry.getValue()` - obtain the values
+  - `entry.getKey()` - obtain the Keys
+  - `entry.getValue()` - obtain the Values
 
 ```java live
 Map<String, Double> fruitsPrice = new LinkedHashMap<>();
@@ -511,7 +521,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which keeps a map with synonyms.
+Write a program that keeps a map with synonyms.
 
 The **key** of the map will be the **word**.
 
@@ -527,7 +537,7 @@ On the next **2 * n** lines you will be given a **word** and a **synonym** each 
 
 - **\{synonym}**
 
-If you get the same word for second time, just add the new synonym to the list.
+If you get the same word for the second time, just add the new synonym to the list.
 
 ### Output 
 
@@ -752,7 +762,7 @@ public class WordSynonyms {
 [task-description]
 
 ## Description
-Write a program which keeps a map with synonyms.
+Write a program that keeps a map with synonyms.
 
 The **key** of the map will be the **word**.
 
@@ -768,7 +778,7 @@ On the next **2 * n** lines you will be given a **word** and a **synonym** each 
 
 - **\{synonym}**
 
-If you get the same word for second time, just add the new synonym to the list.
+If you get the same word for the second time, just add the new synonym to the list.
 
 ### Output 
 
@@ -972,7 +982,7 @@ Write a program that extracts from a given sequence of words all elements that a
 
 ### Input / Constraints
 
-Words are given in a **single line**, **space separated**.
+Words are given in a **single line**, **space-separated**.
 
 ### Output
 
@@ -1113,7 +1123,7 @@ Write a program that extracts from a given sequence of words all elements that a
 
 ### Input / Constraints
 
-Words are given in a **single line**, **space separated**.
+Words are given in a **single line**, **space-separated**.
 
 ### Output
 
