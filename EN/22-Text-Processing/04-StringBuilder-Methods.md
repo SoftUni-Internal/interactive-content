@@ -3,7 +3,7 @@
 
 [slide]
 # Add
-- `append()` - **appends** the string value **to the end** of the current sequence of characters
+- `append()` - **appends** a string value **to the end** of the current sequence of characters
 ```java live
 StringBuilder sb = new StringBuilder();
 
@@ -26,9 +26,9 @@ System.out.println(sb.toString());
 [/slide]
 [slide]
 # Length
-- `length()` - return the **length** of the **string** in the buffer
+- `length()` - returns the **length** of the **string** in the buffer
 ```java live
-sb.append("Hello Peter, how are you?");
+StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 
 System.out.println(sb.length()); // 25
 ```
@@ -59,7 +59,7 @@ System.out.println(sb.length()); // 28
 [slide]
 # Access
 
-- `charAt(int index)` - return char on current index
+- `charAt(int index)` - returns char on the current index
 ```java live
 StringBuilder sb = new StringBuilder();
 

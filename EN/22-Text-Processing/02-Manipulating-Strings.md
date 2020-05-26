@@ -24,7 +24,9 @@ System.out.println(result); // "Hello, SoftUni!"
 
 # Substring
 
-- `substring(int startIndex)` - returns **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
+- `substring(int startIndex)` - returns **new String** containing the substring of the given
+
+ string from specified **startIndex** (**inclusive**)
 
 ```java live
 String text = "My name is John";
@@ -34,7 +36,9 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - returns **new String** containing the substring of the given string from specified **startIndex** (inclusive) to **endIndex** (exclusive)
+- `substring(int startIndex, int endIndex)` - returns **new String** containing the substring of
+
+ the given string from specified **startIndex** (inclusive) to **endIndex** (exclusive)
 
 ```java live
 String fullName = "John Doe";
@@ -75,17 +79,19 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 
 # Splitting
  
-- `split()` - split a string by a given pattern
+- `split()` - splits a string by a given pattern
 ```java live
 
-String text = "Hello, john@softuni.bg, you have been using john@softuni.bg in your registration";
+String text
+     = "Hello, john@softuni.com," +
+       " you have been using john@softuni.com in your registration.";
         
 String[] words = text.split(", ");
 
 System.out.println(String.join(", ",words));
 ```
 
-- `split()` - split by multiple separators
+- `split()` - splits by multiple separators
 ```java live
 
 String text = "Hello, I am John.";
@@ -106,8 +112,9 @@ System.out.println(String.join(", ",words));
 
 ```java live
 
-String text = "Hello, john@softuni.com," +
-           " you have been using john@softuni.com in your registration.";
+String text
+    = "Hello, john@softuni.com," +
+      " you have been using john@softuni.com in your registration.";
 
 String replacedText = text
             .replace("john@softuni.com", "peter@softuni.com");
