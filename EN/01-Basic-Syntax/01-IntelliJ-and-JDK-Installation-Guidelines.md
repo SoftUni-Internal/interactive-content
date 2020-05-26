@@ -76,12 +76,8 @@ To do that click on **"Create New Project"**:
 
 [image assetsSrc="Choose-SDK-11(1).png" /]
 
-<<<<<<< HEAD
-The displayed window in which we have to select the SDK from the already installed JDK package.
-=======
 The displayed window in which we have to select the SDK from the already installed JDK package. 
 
->>>>>>> 8aa096e4baafa157cb1614f7508ac63c65e16656
 By clicking the **"New"** button, select the package installation directory:
 
 [image assetsSrc="Choose-SDK-11(2).png" /]
