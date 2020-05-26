@@ -3,12 +3,12 @@
 [slide]
 # What are Regular Expressions?
 
- ## The abbreviation for **regular expression** is **regex**.
+ The **abbreviation** for **regular expression** is **regex**.
 
- ### A **regular expression** defines a **search pattern** for **strings**.
+ A **regular expression** defines a **search pattern** for **strings**.
  
- ### The search pattern can be anything from a **simple character**, 
- ### a **fixed string** or a complex expression containing special characters describing the pattern.
+ The search pattern can be anything from a **simple character**, 
+ a **fixed string** or a complex expression containing special characters describing the pattern.
 
  
  `[0-9]+` - matches non-empty sequence of digits
@@ -18,7 +18,7 @@
 
  
 
- ### You can play with regex live at:
+ - You can **play** with **regex live** at:
 
  - [regexr.com](regexr.com)
  - [regex101.com](regex101.com)
