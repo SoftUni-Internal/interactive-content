@@ -3,7 +3,7 @@
 [slide]
 # What are Regular Expressions?
 
- ### The abbreviation for **regular expression** is **regex**.
+ ###### The abbreviation for **regular expression** is **regex**.
 
  ### A **regular expression** defines a **search pattern** for **strings**.
  
@@ -16,6 +16,8 @@
 
  `[A-Z][a-z]*` - matches a capital + small letters
 
+ 
+
  ### You can play with regex live at:
 
  - [regexr.com](regexr.com)
@@ -25,7 +27,3 @@
 
 [/slide]
 
-[slide]
-# Regular Expressions Syntax
-
-[/slide]
