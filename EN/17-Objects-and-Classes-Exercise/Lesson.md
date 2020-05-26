@@ -1,1 +1,0 @@
-# Objects and Classes - Exercise

@@ -1,3 +1,0 @@
-[slide]
-# HTML Forms
-[/slide]

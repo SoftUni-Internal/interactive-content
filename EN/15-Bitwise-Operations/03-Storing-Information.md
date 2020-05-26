@@ -1,3 +1,0 @@
-[slide]
-# Storing Information
-[/slide]
