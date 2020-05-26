@@ -3,7 +3,7 @@
 [slide]
 # What are Regular Expressions?
 
- ###### The abbreviation for **regular expression** is **regex**.
+ ## The abbreviation for **regular expression** is **regex**.
 
  ### A **regular expression** defines a **search pattern** for **strings**.
  
