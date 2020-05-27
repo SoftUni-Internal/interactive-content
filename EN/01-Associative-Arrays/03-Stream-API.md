@@ -1,18 +1,15 @@
 [slide]
 # Stream API
 
-Java Stream API provides a functional approach to process collections of objects. It allows to reduce the code, to create more readable programs and to improve productivity. 
+Java Stream API provides a functional approach to process collections of objects / elements. It allows to reduce the code, to create more readable programs and to improve productivity. It also provides easier coding of parallel operations. 
 
 A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream do not change the original data structure, it provides result. 
 
 Stream pipeline is a chain of stream source, intermediate operations, and a terminal operation. 
 
-The API has many terminal operations which aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. 
+The API has many terminal operations which aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. It is called terminal operation because in order to get the minimum value for example, have to traverse the values inside the stream and get the result. After getting the min value it is not possible to convert that back into stream because the minimum value is just an value. 
 
 Most of the methods use lambda expressions on the stream.
-
-
-
 
 
 [/slide]
@@ -21,29 +18,39 @@ Most of the methods use lambda expressions on the stream.
 [slide]
 # Processing Arrays with Stream API
 
+Using one line operations on arrays instead of writing loops with indexes or for-each loops for simple operations when processing data:
+
 - `min()` - finds and returns the **smallest** element in a collection:
 ```java live
 int [] numbers = new int[]{15, 25, 35};
-int min = Arrays.stream(numbers).min().getAsInt();
+int min = Arrays.stream(numbers)
+            .min()
+            .getAsInt();
 System.out.println(min);
 ```
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
-int min = Arrays.stream(numbers).min().orElse(2);
+int min = Arrays.stream(numbers)
+            .min()
+            .orElse(2);
 System.out.println(min);
 ```
 
 ```java live
 int [] numbers = new int[]{};
-int min = Arrays.stream(numbers).min().orElse(2);
+int min = Arrays.stream(numbers)
+            .min()
+            .orElse(2);
 System.out.println(min);
 ```
 
 - `max()` - finds and returns the **largest** element in a collection
 ```java live
 int [] numbers = new int[]{15, 25, 35};
-int max = Arrays.stream(numbers).max().getAsInt();
+int max = Arrays.stream(numbers)
+            .max()
+            .getAsInt();
 System.out.println(max);
 ```
 
@@ -57,23 +64,32 @@ System.out.println(sum);
 - `average()` - finds and returns **the average** of all elements
 ```java live
 int [] numbers = new int[]{15, 25, 35};
-double average = Arrays.stream(numbers).average().getAsDouble();
+double average = Arrays.stream(numbers)
+            .average()
+            .getAsDouble();
 System.out.println(average);
 ```
 
 - `toArray()` - converting collection to an array
 ```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
 ```
 
 - `map()` - manipulating elements in a collection
 ```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e)).toArray();
 ```
 
 ```java live
 String[] words = {"abc", "def", "geh", "yyy"};
-words = Arrays.stream(words).map(w -> w + "yyy").toArray(String[]::new);
+words = Arrays.stream(words)
+            .map(w -> w + "yyy")
+            .toArray(String[]::new);
 for (String word : words) {
     System.out.println(word);
 }
@@ -82,8 +98,8 @@ for (String word : words) {
 `filter()` - select elements with given condition
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
-        .mapToInt(e -> Integer.parseInt(e))
-        .filter(n -> n > 0).toArray();
+            .mapToInt(e -> Integer.parseInt(e))
+            .filter(n -> n > 0).toArray();
 ```
 
 [/slide]
@@ -91,62 +107,82 @@ int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
 [slide]
 # Processing Collections with Stream API
 
+Using one line operations on collections like lists, maps, instead of writing loops with indexes or for-each loops for simple operations when processing data:
+
+
 - `min()` - finds and returns the **smallest** element in a collection:
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-int min = numbers.stream().mapToInt(Integer::intValue).min().getAsInt();
+int min = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .min()
+            .getAsInt();
 System.out.println(min);
 ```
 
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-int min = numbers.stream().min(Integer::compareTo).get();
+int min = numbers.stream()
+            .min((n1, n2) -> n1.compareTo(n2))
+            .get();
 System.out.println(min);
 ```
 
 - `max()` - finds and returns the **largest** element in a collection
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-int max = numbers.stream().mapToInt(Integer::intValue).max().getAsInt();
+int max = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .max()
+            .getAsInt();
 System.out.println(max);
 ```
 
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-int max = numbers.stream().max(Integer::compareTo).get();
+int max = numbers.stream()
+            .max((n1, n2) -> n1.compareTo(n2))
+            .get();
 System.out.println(max);
 ```
 
 - `sum()` - finds and returns **the sum** of all elements in a collection
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-int sum = numbers.stream().mapToInt(Integer::intValue).sum();
+int sum = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .sum();
 System.out.println(sum);
 ```
 
 - `average()` - finds and returns **the average** of all elements
 ```java live
-ArrayList<Integer> numbers = new ArrayList<>() {{
+List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
 }};
-double average = numbers.stream().mapToInt(Integer::intValue).average().getAsDouble();
+double average = numbers.stream()
+            .mapToInt(n -> n.intValue())
+            .average()
+            .getAsDouble();
 System.out.println(average);
 ```
 
 - `toList()` - converting collection to a list
 ```java
-List<Integer> nums = Arrays.stream(scanner.nextLine().split(" "))
-        .map(e -> Integer.parseInt(e)).collect(Collectors.toList());
+List<Integer> numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .map(e -> Integer.parseInt(e))
+            .collect(Collectors.toList());
 ```
 
 [/slide]
@@ -455,8 +491,9 @@ List<Integer> numbers = new ArrayList<>() {{
     add(3);
     add(2);
 }};
-numbers = numbers.stream().sorted((n1, n2) -> n1.compareTo(n2))
-        .collect(Collectors.toList());
+numbers = numbers.stream()
+            .sorted((n1, n2) -> n1.compareTo(n2))
+            .collect(Collectors.toList());
 for (Integer number : numbers) {
     System.out.println(number);
 }
@@ -470,8 +507,9 @@ List<Integer> numbers = new ArrayList<>() {{
     add(3);
     add(2);
 }};
-numbers = numbers.stream().sorted((n1, n2) -> n2.compareTo(n1))
-        .collect(Collectors.toList());
+numbers = numbers.stream()
+            .sorted((n1, n2) -> n2.compareTo(n1))
+            .collect(Collectors.toList());
 for (Integer number : numbers) {
     System.out.println(number);
 }
