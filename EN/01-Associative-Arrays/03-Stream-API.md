@@ -1,13 +1,13 @@
 [slide]
 # Stream API
 
-Java Stream API provides a functional approach to process collections of objects / elements. It allows to reduce the code, to create more readable programs and to improve productivity. It also provides easier coding of parallel operations. 
+Java Stream API provides a functional approach to process collections of objects/elements. It allows to reduce the code, to create more readable programs, and to improve productivity. It also provides easier coding of parallel operations. 
 
-A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream do not change the original data structure, it provides result. 
+A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream does not change the original data structure, it provides result. 
 
 Stream pipeline is a chain of stream source, intermediate operations, and a terminal operation. 
 
-The API has many terminal operations which aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. It is called terminal operation because in order to get the minimum value for example, have to traverse the values inside the stream and get the result. After getting the min value it is not possible to convert that back into stream because the minimum value is just an value. 
+The API has many terminal operations that aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. It is called terminal operation because in order to get the minimum value, for example, have to traverse the values inside the stream and get the result. After getting the min value it is not possible to convert that back into the stream because the minimum value is just a value. 
 
 Most of the methods use lambda expressions on the stream.
 
