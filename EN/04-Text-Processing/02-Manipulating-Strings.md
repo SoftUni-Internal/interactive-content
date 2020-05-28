@@ -83,7 +83,6 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 ```java live
 String text
  = "I had coffee, pancakes, berries and a banana for breakfast.";
-
 String[] words = text.split(", ");
 
 System.out.println(words[0]);
@@ -111,11 +110,9 @@ System.out.println(String.join(", ",words));
 - `replace(match, replacement)` - **replaces all occurrences** and return a **new String** (Strings are immutable)
 
 ```java live
-String text
-    = "John enjoys walking in the park.";
+String text = "John enjoys walking in the park.";
 
-String replacedText = text
-            .replace("John", "Peter");
+String replacedText = text.replace("John", "Peter");
 
 System.out.println(replacedText);
 ```
@@ -591,7 +588,7 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 
 # Hints  
 - **Read the input**.
-- **Replace all ban words** in the text **with** **asterisk (*)**.
+- **Replace all ban words** in the text **with** **asterisk \(\*\)**.
 	- Use the **built-in method** `replace(banWord, replacement)`.
 
 [/task-description]
