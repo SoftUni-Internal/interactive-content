@@ -10,12 +10,9 @@
  Whenever a **change** to a String is made, an entirely **new String object is created**. 
  ```java live
     String name = "SoftUni!";
-
     // hashCode() - return the address of the object in memory
     System.out.println(name.hashCode());
-
     name = "Peter!";
-    
     System.out.println(name.hashCode());
  ```
  Let's explain what does the code above:
@@ -34,9 +31,6 @@ The main **features** of **Strings** are:
 - Java String class has a lot of **methods** for **text processing**
 - Strings are immutable(**read-only**)
 
-
-
-  
 
 [/slide]
 
