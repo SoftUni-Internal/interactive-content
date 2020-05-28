@@ -17,7 +17,7 @@
 
 - Ranges - 
   - `[0-9]` - character **range** matches any digit from 0 to 9:
-  
+   [image assetsSrc="regex-example.png" /]
 
 
 
