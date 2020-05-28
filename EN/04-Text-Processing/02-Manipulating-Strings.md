@@ -575,7 +575,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks** \"\*\", equal to the **word's length.**
+**All words included** in the **ban list** should be **replaced** with **asterisks** \"__\*__\", equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
@@ -687,7 +687,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
+**All words included** in the **ban list** should be **replaced** with **asterisks** \"\*\", equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
