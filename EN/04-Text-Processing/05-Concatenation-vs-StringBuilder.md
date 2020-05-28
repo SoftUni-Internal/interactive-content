@@ -6,8 +6,8 @@
 
 - **Concatenating** strings is a **slow** operation because each iteration creates a **new String**
 
-```java live
-
+Copy the following code and run it on your computer!
+```java
 // Start time of program execution
 System.out.println(new Date());
 
@@ -20,10 +20,10 @@ for (int i = 0; i < 1000000; i++){
 // End time 
 System.out.println(new Date());
 ```
-As we can see the time of program execution is about 1 minute, which is slow.
+As you can see the time of program execution is about 1 minute, which is slow.
 
 - Let's do the same operation using **StringBuilder**
-```java live
+```java
 System.out.println(new Date());
 
 StringBuilder text = new StringBuilder();
