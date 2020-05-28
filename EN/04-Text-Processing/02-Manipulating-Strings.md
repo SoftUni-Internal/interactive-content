@@ -81,14 +81,14 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
  
 - `split()` - splits a string by a given pattern
 ```java live
-
 String text
-     = "Hello, john@softuni.com," +
-       " you have been using john@softuni.com in your registration.";
-        
+ = "I had coffee, pancakes, berries and a banana for breakfast.";
+
 String[] words = text.split(", ");
 
-System.out.println(String.join(", ",words));
+System.out.println(words[0]);
+System.out.println(words[1]);
+System.out.println(words[2]);
 ```
 
 - `split()` - splits by multiple separators
@@ -111,16 +111,13 @@ System.out.println(String.join(", ",words));
 - `replace(match, replacement)` - **replaces all occurrences** and return a **new String** (Strings are immutable)
 
 ```java live
-
 String text
-    = "Hello, john@softuni.com," +
-      " you have been using john@softuni.com in your registration.";
+    = "John enjoys walking in the park.";
 
 String replacedText = text
-            .replace("john@softuni.com", "peter@softuni.com");
+            .replace("John", "Peter");
 
 System.out.println(replacedText);
-
 ```
 
 [/slide]
@@ -149,12 +146,12 @@ Each string is repeated **n** times, where **n** is the **length of the string**
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
 | work | workworkworkwork |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -269,12 +266,12 @@ Each string is repeated **n** times, where **n** is the **length of the string**
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
 | work | workworkworkwork |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -581,7 +578,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
+**All words included** in the **ban list** should be **replaced** with **asterisks \"\*\"**, equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
