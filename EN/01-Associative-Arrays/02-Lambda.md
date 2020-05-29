@@ -1,9 +1,9 @@
 [slide]
 # Lambda Expressions
 
-A lambda expression is an anonymous function containing expressions and statements. It replaces an entire function and improves code writing. It is used mostly with Stream API, which is explained in the next chapter.  
+A lambda expression is an **anonymous function** containing **expressions and statements**. It **replaces an entire function** and **improves** code writing. It is used mostly **with Stream API**, which is explained in the next chapter.  
 
-Lambda function is a shorter-expression that gives result, but it is not always necessary.
+Lambda function is a **shorter-expression** that gives result, but it is not always necessary.
 
 Use the lambda operator `->`, which is read as "goes to"
 

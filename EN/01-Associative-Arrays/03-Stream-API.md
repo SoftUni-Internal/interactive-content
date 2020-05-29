@@ -1,13 +1,15 @@
 [slide]
 # Stream API
 
-Java Stream API provides a functional approach to process collections of objects/elements. It allows to reduce the code, to create more readable programs, and to improve productivity. It also provides easier coding of parallel operations. 
+Java Stream API provides a **functional approach to process collections of objects/elements**. It allows to **reduce the code**, to create **more readable programs**, and to **improve productivity**. It also provides **easier coding of parallel operations**. 
 
-A Java Stream is a component that is capable of internal iteration of its elements, this means it can iterate its elements itself. A stream is a sequence of objects that supports various methods. The stream does not change the original data structure, it provides result. 
+A Java Stream is a component that is capable of **internal iteration of its elements**, this means it can **iterate its elements itself**. A stream is a **sequence of objects** that supports **various methods**. The stream does **not change the original data structure**, it provides result. 
 
-Stream pipeline is a chain of stream source, intermediate operations, and a terminal operation. 
+Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
-The API has many terminal operations that aggregate a stream to a type or a primitive, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. It is called terminal operation because in order to get the minimum value, for example, have to traverse the values inside the stream and get the result. After getting the min value it is not possible to convert that back into the stream because the minimum value is just a value. 
+The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. 
+
+It is called **terminal operation** because in order to get the minimum value, for example, have to **traverse the values inside the stream** and get the result. After getting the min value it is **not possible to convert that back into the stream** because the minimum value is just a value. 
 
 Most of the methods use lambda expressions on the stream.
 
@@ -18,7 +20,7 @@ Most of the methods use lambda expressions on the stream.
 [slide]
 # Processing Arrays with Stream API
 
-Using one line operations on arrays instead of writing loops with indexes or for-each loops for simple operations when processing data:
+Using **one line operations** on arrays instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 - `min()` - finds and returns the **smallest** element in a collection:
 ```java live
@@ -29,6 +31,8 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
+It is possible to set an alternative value to be returned instead of the minimum value, using `orElse()`.
+
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
@@ -36,6 +40,8 @@ int min = Arrays.stream(numbers)
             .orElse(2);
 System.out.println(min);
 ```
+
+The value set in the `orElse()` operation is returned, if the array is empty.
 
 ```java live
 int [] numbers = new int[]{};
@@ -82,7 +88,8 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
             .split(" "))
-            .mapToInt(e -> Integer.parseInt(e)).toArray();
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
 ```
 
 ```java live
@@ -97,9 +104,11 @@ for (String word : words) {
 
 `filter()` - select elements with given condition
 ```java
-int[] numbers = Arrays.stream(scanner.nextLine().split(" "))
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
             .mapToInt(e -> Integer.parseInt(e))
-            .filter(n -> n > 0).toArray();
+            .filter(n -> n > 0)
+            .toArray();
 ```
 
 [/slide]
@@ -223,7 +232,6 @@ Filter those whose length is even.
 | kiwi orange banana apple | kiwi |
 |  | orange |
 |  | banana |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -372,7 +380,6 @@ Filter those whose length is even.
 | kiwi orange banana apple | kiwi |
 |  | orange |
 |  | banana |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -638,7 +645,6 @@ Print top 3 numbers with **for** loop.
 | **Input** | **Output** |
 | --- | --- |
 | 10 30 15 20 50 5 | 50 30 20 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -760,7 +766,6 @@ Print top 3 numbers with **for** loop.
 | **Input** | **Output** |
 | --- | --- |
 | 10 30 15 20 50 5 | 50 30 20 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |

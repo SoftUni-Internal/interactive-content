@@ -30,7 +30,13 @@ For example:
 [slide]
 # Map Implementations
 
-The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings. 
+The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as:
+
+- a set of keys
+
+- collection of values
+
+- set of key-value mappings 
 
 The commonly used **Map implementations** are `HashMap`, `LinkedHashMap` and `TreeMap`. 
 
@@ -59,12 +65,21 @@ The **order** of a Map depends on the **chosen collection view**. Some Map imple
 
 To use `Map` in Java **import** `java.util.Map` package. Create an **instance** of one of the classes that implement the Java **Map interface**.
 
+```java
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        Map<Key, Value> map = new HashMap<>();
+    }
+}
+```
+
 To initialize a map:
 
-- specify the **generic type** of the Key and the Value in the angle brackets `<>`. 
-Once the Key and the Value are set the map can only accept their generic types.
+- Specify the **generic type** of the Key and the Value in the angle brackets `<>`. Once the Key and the Value are set the map can only accept their generic types.
 
-- followed by the map **name**, which should be **descriptive** enough to understand what the **Key and the Value represent**. 
+- Followed by the map **name**, which should be **descriptive** enough to understand what the **Key and the Value represent**. 
 
 - After the equals sign `=` use the keyword `new` and the **intended type** of the Map.
 
@@ -86,7 +101,13 @@ Map <Key, Value> phoneBook = new TreeMap<>();
 [slide]
 # Built-in methods
 
-- `put(K key, V value)` - **add items** (insert an entry) in the map. Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. If `put()` is called more than once with the same Key, **the latest Value** passed to `put()` for that Key will **overwrite** what is already stored in the Map for that Key. **The latest Value replaces the existing Value** for the given Key.
+- `put(K key, V value)` - **add items** (insert an entry) in the map. 
+
+Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. 
+
+If `put()` is called more than once with the same Key, **the latest Value** passed to `put()` for that Key will **overwrite** what is already stored in the Map for that Key. 
+
+**The latest Value replaces the existing Value** for the given Key.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -239,14 +260,12 @@ Read a **list of real numbers** and print them in **ascending order** along with
 | --- | --- |
 | 82282 | 2 -> 3 |
 |  | 8 -> 2 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
 | 1513 | 1 -> 2 |
 |  | 3 -> 1 |
 |  | 5 -> 1 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -396,14 +415,12 @@ Read a **list of real numbers** and print them in **ascending order** along with
 | --- | --- |
 | 82282 | 2 -> 3 |
 |  | 8 -> 2 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
 | 1513 | 1 -> 2 |
 |  | 3 -> 1 |
 |  | 5 -> 1 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -992,12 +1009,10 @@ Print the result elements in **lowercase in their order of appearance separated 
 | **Input** | **Output** |
 | --- | --- |
 | Java C# PHP PHP JAVA C java | java, c#, c |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
 | 3 5 5 hi pi HO Hi 5 ho 3 hi pi | 5, hi |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1133,12 +1148,10 @@ Print the result elements in **lowercase in their order of appearance separated 
 | **Input** | **Output** |
 | --- | --- |
 | Java C# PHP PHP JAVA C java | java, c#, c |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
 | 3 5 5 hi pi HO Hi 5 ho 3 hi pi | 5, hi |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
