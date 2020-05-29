@@ -1,32 +1,30 @@
 [slide]
 # What Is a String?
 
- A **String** is an **object** that represents a **sequence of characters** - `char []`.
+A **String** is an **object** that represents a **sequence of characters** - `char []`.
 
- [image assetsSrc="String-example(1).png" /]
+[image assetsSrc="String-example(1).png" /]
 
- Just like an array of chars, **Strings are immutable**.
+Just like an array of chars, **Strings are immutable**.
 
- Whenever a **change** to a String is made, an entirely **new String object is created**. 
- ```java live
-    String name = "SoftUni!";
+Whenever a **change** to a String is made, an entirely **new String object is created**. 
+```java live
+String name = "SoftUni!";
+// hashCode() - return the address of the object in memory
+System.out.println(name.hashCode());
 
-    // hashCode() - return the address of the object in memory
-    System.out.println(name.hashCode());
-
-    name = "Peter!";
-    
-    System.out.println(name.hashCode());
- ```
- Let's explain what does the code above:
- - After assigning a new value in the variable **name** it appears a new address in memory - a **new String object is created**
+name = "Peter!";
+System.out.println(name.hashCode());
+```
+Let's explain what does the code above:
+- After assigning a new value in the variable **name** it appears a new address in memory - a **newString object is created**
 
 
 
- **Strings use Unicode** (can use most alphabets, e.g. Arabic) 
- ```java 
-    String greeting = "مرحبا";  // Hello in Arabic
- ```
+**Strings use Unicode** (can use most alphabets, e.g. Arabic) 
+```java 
+String greeting = "مرحبا";  // Hello in Arabic
+```
 
 The main **features** of **Strings** are:
 - Strings represent a **sequence of characters**
@@ -34,9 +32,6 @@ The main **features** of **Strings** are:
 - Java String class has a lot of **methods** for **text processing**
 - Strings are immutable(**read-only**)
 
-
-
-  
 
 [/slide]
 

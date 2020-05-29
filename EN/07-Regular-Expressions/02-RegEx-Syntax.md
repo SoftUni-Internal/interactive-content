@@ -16,7 +16,8 @@
   - `[^abc]` - matches any character that is not a, b or c: a**lph**ab**eti**c
 
 - Ranges - 
-  - `[0-9]` - character **range** matches any digit from 0 to 9: John is **8** years old.
+  - `[0-9]` - character **range** matches any digit from 0 to 9:
+   [image assetsSrc="regex-example.png" /]
 
 
 

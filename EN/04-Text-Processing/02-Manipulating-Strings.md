@@ -4,8 +4,12 @@
 # Concatenating
 
 - Using `+` or `+=` operators
-```java 
-String text = "Hello" + ", " + "SoftUni!";  // "Hello, SoftUni!"
+```java live
+String text = "Hello" + ", " + "SoftUni";
+
+text += "!";
+
+System.out.println(text); // "Hello, SoftUni!"
 ```
 - Using `concat()` method
 ```java live
@@ -81,14 +85,13 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
  
 - `split()` - splits a string by a given pattern
 ```java live
-
 String text
-     = "Hello, john@softuni.com," +
-       " you have been using john@softuni.com in your registration.";
-        
+ = "I had coffee, pancakes, berries and a banana for breakfast.";
 String[] words = text.split(", ");
 
-System.out.println(String.join(", ",words));
+System.out.println(words[0]);
+System.out.println(words[1]);
+System.out.println(words[2]);
 ```
 
 - `split()` - splits by multiple separators
@@ -111,16 +114,11 @@ System.out.println(String.join(", ",words));
 - `replace(match, replacement)` - **replaces all occurrences** and return a **new String** (Strings are immutable)
 
 ```java live
+String text = "I have three bananas, three oranges, three apples.";
 
-String text
-    = "Hello, john@softuni.com," +
-      " you have been using john@softuni.com in your registration.";
-
-String replacedText = text
-            .replace("john@softuni.com", "peter@softuni.com");
+String replacedText = text.replace("three", "five");
 
 System.out.println(replacedText);
-
 ```
 
 [/slide]
@@ -149,12 +147,12 @@ Each string is repeated **n** times, where **n** is the **length of the string**
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
 | work | workworkworkwork |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -269,12 +267,12 @@ Each string is repeated **n** times, where **n** is the **length of the string**
 | **Input** | **Output** |
 | --- | --- |
 | hi abc add | hihiabcabcabcaddaddadd |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
 | work | workworkworkwork |
-|  |  |
+
 
 | **Input** | **Output** |
 | --- | --- |
@@ -581,7 +579,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
+**All words included** in the **ban list** should be **replaced** with **asterisks** \"__\*__\", equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
@@ -594,7 +592,7 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 
 # Hints  
 - **Read the input**.
-- **Replace all ban words** in the text **with** **asterisk (*)**.
+- **Replace all ban words** in the text **with** **asterisk** \(__\*__\).
 	- Use the **built-in method** `replace(banWord, replacement)`.
 
 [/task-description]
@@ -693,7 +691,7 @@ public class Main {
 ## Description
 Write a program that takes a **text** and a **string of banned words**.
 
-**All words included** in the **ban list** should be **replaced** with **asterisks "*"**, equal to the **word's length.**
+**All words included** in the **ban list** should be **replaced** with **asterisks** \"__\*__\", equal to the **word's length.**
 
 The entries in the ban list will be separated by a **comma** and **space** ", ".
 
@@ -706,7 +704,7 @@ The entries in the ban list will be separated by a **comma** and **space** ", ".
 
 # Hints  
 - **Read the input**.
-- **Replace all ban words** in the text **with** **asterisk (*)**.
+- **Replace all ban words** in the text **with** **asterisk** \(__\*__\).
 	- Use the **built-in method** `replace(banWord, replacement)`.
 
 [/task-description]
