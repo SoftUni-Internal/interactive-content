@@ -116,7 +116,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 [slide]
 # Processing Collections with Stream API
 
-Using one line operations on collections like lists, maps, instead of writing loops with indexes or for-each loops for simple operations when processing data:
+Using one line operations on collections like lists, maps, instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 
 - `min()` - finds and returns the **smallest** element in a collection:
