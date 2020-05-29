@@ -11,13 +11,14 @@
 
 - Simple Class - a set of characters side-by-side within square brackets:
  [image assetsSrc="regex-example(2).png" /]
+ In the example above, the class `[abc]` matches any character other than **a**, **b**, or **c**
 
 - Negation - the "^" metacharacter at the beginning of the character class matches all characters except the listed
   - `[^abc]` - matches any character that is not a, b or c: a**lph**ab**eti**c
 
 - Ranges - 
   - `[0-9]` - character **range** matches any digit from 0 to 9:
-  [image assetsSrc="regex-example.png" /]
+  
 
 
 
