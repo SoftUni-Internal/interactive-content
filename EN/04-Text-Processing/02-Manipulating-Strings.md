@@ -4,8 +4,12 @@
 # Concatenating
 
 - Using `+` or `+=` operators
-```java 
-String text = "Hello" + ", " + "SoftUni!";  // "Hello, SoftUni!"
+```java live
+String text = "Hello" + ", " + "SoftUni";
+
+text += "!";
+
+System.out.println(result); // "Hello, SoftUni!"
 ```
 - Using `concat()` method
 ```java live
@@ -110,9 +114,9 @@ System.out.println(String.join(", ",words));
 - `replace(match, replacement)` - **replaces all occurrences** and return a **new String** (Strings are immutable)
 
 ```java live
-String text = "John enjoys walking in the park.";
+String text = "I have three bananas, three oranges, three apples.";
 
-String replacedText = text.replace("John", "Peter");
+String replacedText = text.replace("three", "five");
 
 System.out.println(replacedText);
 ```
