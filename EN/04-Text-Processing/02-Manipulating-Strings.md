@@ -9,7 +9,7 @@ String text = "Hello" + ", " + "SoftUni";
 
 text += "!";
 
-System.out.println(result); // "Hello, SoftUni!"
+System.out.println(text); // "Hello, SoftUni!"
 ```
 - Using `concat()` method
 ```java live
