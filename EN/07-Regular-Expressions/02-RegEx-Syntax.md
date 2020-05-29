@@ -10,14 +10,14 @@
   It specifies the **characters** that will **successfully match** a **single character** from a given **input string**.
 
 - Simple Class - a set of characters side-by-side within square brackets:
-  - `[abc]`->  matches any character that is either a, b or c: **a**lph**ab**eti**c**
+  - `[abc]` - [image assetsSrc="regex-example(2).png" /] - matches any character that is either a, b or c
 
-- Negation - 
+- Negation - the "^" metacharacter at the beginning of the character class matches all characters except the listed
   - `[^abc]` - matches any character that is not a, b or c: a**lph**ab**eti**c
 
 - Ranges - 
   - `[0-9]` - character **range** matches any digit from 0 to 9:
-   [image assetsSrc="regex-example.png" /]
+  [image assetsSrc="regex-example.png" /]
 
 
 
