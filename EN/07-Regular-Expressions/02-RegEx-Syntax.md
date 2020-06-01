@@ -28,13 +28,17 @@
 
 [slide]
 
- # Predefined Classes
+# Predefined Classes
 
- - `\w` - matches any word character [a-z, A-Z, 0-9, _]
+- `\w` - matches any word character [a-z, A-Z, 0-9, _]
 [image assetsSrc="regex-example(5).png" /]
 
 - `\W` - matches any **non-word** character (the opposite of \w)
 [image assetsSrc="regex-example(6).png" /]
+
+- `\s` - matches any **white-space** character
+[image assetsSrc="regex-example(7).png" /]
+
 
 [/slide]
 
