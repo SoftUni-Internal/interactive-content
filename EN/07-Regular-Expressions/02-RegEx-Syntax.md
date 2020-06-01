@@ -30,6 +30,17 @@
 
 # Predefined Classes
 
+| **Notation** | **Meaning (Returns a match where…)** |
+| --- | --- |
+|`\w`|matches any **word** characters from `a` to `Z`, digits from `0-9`, and the underscore `_` character|
+|`\W`|matches any **non-word** character (the opposite of \w)|
+|`\s`|matches any **white-space** character|
+|`\S`|matches any **non-white-space**  character (opposite of \s)|
+|`\d`|matches any **decimal digit** (0-9)|
+|`\D`|matches any **non-decimal character** (the opposite of \d)|
+
+
+
 - `\w` - matches any word character [a-z, A-Z, 0-9, _]
 [image assetsSrc="regex-example(5).png" /]
 
@@ -47,7 +58,6 @@
 
 - `\D` - matches any **non-decimal** character
  [image assetsSrc="regex-example(10).png" /]
-
 
 
 [/slide]
