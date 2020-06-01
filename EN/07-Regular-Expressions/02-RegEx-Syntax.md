@@ -66,6 +66,9 @@
 
 # Character Escapes
 
+- `\` - escapes special characters
+[image assetsSrc="regex-example(11).png" /]
+
 [/slide]
 
 [slide]
