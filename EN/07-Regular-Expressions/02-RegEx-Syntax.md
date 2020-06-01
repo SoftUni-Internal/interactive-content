@@ -39,6 +39,16 @@
 - `\s` - matches any **white-space** character
 [image assetsSrc="regex-example(7).png" /]
 
+- `\S` - matches any **non-white-space**  character (opposite of \s)
+[image assetsSrc="regex-example(8).png" /]
+
+- `\d` - matches any **decimal digit** [0-9]
+[image assetsSrc="regex-example(9).png" /]
+
+- `\D` - matches any **non-decimal** character
+ [image assetsSrc="regex-example(10).png" /]
+
+
 
 [/slide]
 
