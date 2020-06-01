@@ -33,6 +33,9 @@
  - `\w` - matches any word character [a-z, A-Z, 0-9, _]
 [image assetsSrc="regex-example(5).png" /]
 
+- `\W` - matches any **non-word** character (the opposite of \w)
+[image assetsSrc="regex-example(6).png" /]
+
 [/slide]
 
 [slide]
