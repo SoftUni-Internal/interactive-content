@@ -17,7 +17,7 @@
 [image assetsSrc="regex-example(3).png" /]
 `[^abc]` - matches any character that is **not** **a**,**b** or **c**
 
-- Ranges - 
+- Ranges - insert a "-" between the first and last character to set the range
 [image assetsSrc="regex-example(4).png" /]
 `[0-9]` - character **range** matches any digit from 0 to 9:
   
@@ -29,6 +29,9 @@
 [slide]
 
  # Predefined Classes
+
+ - `\w` - matches any word character [a-z, A-Z, 0-9, _]
+[image assetsSrc="regex-example(5).png" /]
 
 [/slide]
 
