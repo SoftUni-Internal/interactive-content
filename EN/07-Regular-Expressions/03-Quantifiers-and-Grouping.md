@@ -36,7 +36,7 @@ In the example above there is only one group - the green highlighted text.
 [image assetsSrc="regex-example(18).png" /]
 The green highlighted text is a non-capture group.
 
-- **?\<name>subexpression** - defines a named capturing group
+- **?\<\name\>subexpression** - defines a named capturing group
 [image assetsSrc="regex-example(19).png" /]
 In the example above **day**, **month**, **year** are the group's names.
 
