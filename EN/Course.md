@@ -1,12 +1,12 @@
-# How to Become a Programmer with Svetlin Nakov
+# Tips and Tricks for Working Remotely
 
 ## Description
-In this webinar we are going to talk about:
-- What are the main skills of the Software Engineer? 
-- Which programming language to choose as your first language? 
-- What are companies looking for? 
-- What is the most recommended curriculum for developers? 
-- What is the path to Software Engineering through SoftUni? 
+- What actions can we take to increase our productivity?
+- How to maintain concentration during work? 
+- What tools can be useful for us to manage our time and tasks?
+- What are the biggest challenges of telecommuting?
+- Will remote work become more common in the future?
+- What good practices can we apply in our work process now?
 
 ## Language
 English
