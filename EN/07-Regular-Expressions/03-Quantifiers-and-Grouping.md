@@ -2,6 +2,8 @@
 
 [slide]
 # Quantifiers 
+**Quantifiers** specify **how many** instances of a **character**, **group**, or **character class** must be **present** in the input for a match to be found.
+
 | **Notation** | **Meaning** |
 | --- | --- |
 |`*`|**Zero** or **more** occurrences|
@@ -23,5 +25,11 @@
 [slide]
 
 # Grouping
+
+We can split regex into **groups** and we can use these groups to **extract information** about **part of the match**.
+
+- **subexpression** - captures the matched subexpression as numbered group
+[image assetsSrc="regex-example(17).png" /]
+In the example above there is only one group - the marked text in green.
 
 [/slide]
