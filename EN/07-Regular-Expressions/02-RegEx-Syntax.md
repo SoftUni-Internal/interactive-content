@@ -66,13 +66,18 @@
 
 # Character Escapes
 
-- `\` - escapes special characters
-[image assetsSrc="regex-example(11).png" /]
+- `\` -  escapes special characters to suppress their special meaning
+ [image assetsSrc="regex-example(11).png" /]
 
 [/slide]
 
 [slide]
 
 # Anchors
+
+- `^` - the match must start at the beginning of the string or line
+- `$` - the match must occur at the end of the string or before next line
+[image assetsSrc="regex-example(12).png" /]
+The example above match the **entire string** with a length between **6** and **12** characters
 
 [/slide]
