@@ -64,14 +64,13 @@
 
 [slide]
 
+# Metacharacters
+
 # Character Escapes
 
 - `\` -  escapes special characters to suppress their special meaning
  [image assetsSrc="regex-example(11).png" /]
 
-[/slide]
-
-[slide]
 
 # Anchors
 
