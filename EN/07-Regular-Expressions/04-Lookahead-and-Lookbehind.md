@@ -1,9 +1,8 @@
 
+[slide]
 # Lookahead and Lookbehind
 
-[slide]
-
-# Lookahead 
+## Lookahead 
 
 - Positive Lookahead
 [image assetsSrc="regex-example(20).png" /]
@@ -14,7 +13,7 @@ In the example above the regex matches only  "abc" because they are followed by 
 In the example above the regex matches only "ab" because they are **not** followed by one or more digits.
 
 
-# Lookbehind
+## Lookbehind
 
 - Positive Lookbehind
 [image assetsSrc="regex-example(22).png" /]
