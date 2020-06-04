@@ -1,5 +1,4 @@
-
-
+# Regex in Java
 [slide]
 # Built-In Regex Classes 
 For advanced regular expressions the `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used.
@@ -52,7 +51,7 @@ System.out.println(result);   // hi hi
 ```
 - replaceFirst() - replaces the first matched subsequences in the input with the given string value and returns the result
 
-```live
+```java live
 Pattern pattern = Pattern.compile("[A-Za-z]+");
 Matcher matcher = pattern.matcher("Hello Java");
 
