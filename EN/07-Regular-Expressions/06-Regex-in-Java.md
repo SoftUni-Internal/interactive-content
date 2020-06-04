@@ -23,7 +23,7 @@ First, we create a **Pattern object** which **defines the regular expression**. 
 [slide]
 # Matcher methods
 
-- find() - scans the input sequence looking for the next subsequence that matches the pattern
+- `find()` - scans the input sequence looking for the next subsequence that matches the pattern
 
 ```java live
 String text = "Andy: 123";
@@ -39,7 +39,7 @@ System.out.println(matcher.group(2)); 		// 123
 System.out.println(matcher.group("number")); // 123
 ```
 
-- replaceAll() - replaces all the matched subsequences in the input with the given string value and returns the result
+- `replaceAll()` - replaces all the matched subsequences in the input with the given string value and returns the result
 
 ```java live
 Pattern pattern = Pattern.compile("[A-Za-z]+");
@@ -49,7 +49,7 @@ String result = matcher.replaceAll("hi");
 
 System.out.println(result);   // hi hi
 ```
-- replaceFirst() - replaces the first matched subsequences in the input with the given string value and returns the result
+- `replaceFirst()` - replaces the first matched subsequences in the input with the given string value and returns the result
 
 ```java live
 Pattern pattern = Pattern.compile("[A-Za-z]+");
