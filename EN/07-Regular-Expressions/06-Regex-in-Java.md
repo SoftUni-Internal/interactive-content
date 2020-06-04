@@ -25,18 +25,24 @@ First, we create a **Pattern object** which **defines the regular expression**. 
 
 - `find()` - scans the input sequence looking for the next subsequence that matches the pattern
 
-```java live
-String text = "Andy: 123";
-String pattern = "([A-Z][a-z]+): (?<number>\\d+)";
+```java live no-template
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
-Pattern regex = Pattern.compile(pattern);
-Matcher matcher = regex.matcher(text);
+public class Main {
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("[a-z]+");
 
-System.out.println(matcher.find());   		// true
-System.out.println(matcher.group(0)); 		// Andy: 123
-System.out.println(matcher.group(1)); 		// Andy
-System.out.println(matcher.group(2)); 		// 123
-System.out.println(matcher.group("number")); // 123
+        String text = "the quick brown fox jumps over the lazy dog";
+
+        Matcher matcher = pattern.matcher(text);
+
+// check all occurrences
+        while (matcher.find()) {
+            System.out.println(matcher.group());
+        }
+    }
+}
 ```
 
 - `replaceAll()` - replaces all the matched subsequences in the input with the given string value and returns the result
