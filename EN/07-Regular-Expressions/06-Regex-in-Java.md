@@ -42,28 +42,51 @@ public class Main {
             System.out.println(matcher.group());
         }
     }
-}
+} 
 ```
 
 - `replaceAll()` - replaces all the matched subsequences in the input with the given string value and returns the result
 
-```java live
-Pattern pattern = Pattern.compile("[A-Za-z]+");
-Matcher matcher = pattern.matcher("Hello Java");
+```java live no-template
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-String result = matcher.replaceAll("hi");  
 
-System.out.println(result);   // hi hi
+public class Main {
+
+    public static void main(String[] args) {
+
+        Pattern pattern = Pattern.compile("[A-Za-z]+");
+        Matcher matcher = pattern.matcher("Hello Java");
+
+        String result = matcher.replaceAll("hi");
+
+        System.out.println(result);   // hi hi
+
+
+    }
+}
 ```
 - `replaceFirst()` - replaces the first matched subsequences in the input with the given string value and returns the result
 
-```java live
-Pattern pattern = Pattern.compile("[A-Za-z]+");
-Matcher matcher = pattern.matcher("Hello Java");
+```java live no-template
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-String result = matcher.replaceFirst("hi"); // hi Java
 
-System.out.println(result);
+public class Main {
+
+    public static void main(String[] args) {
+
+        Pattern pattern = Pattern.compile("[A-Za-z]+");
+        Matcher matcher = pattern.matcher("Hello Java");
+
+        String result = matcher.replaceFirst("hi"); // hi Java
+
+        System.out.println(result);
+
+    }
+}
 ```
 
 - `split(String pattern)` - splits the text by the pattern, returns `String[]`
