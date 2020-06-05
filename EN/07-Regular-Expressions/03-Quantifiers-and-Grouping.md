@@ -36,8 +36,19 @@ In the example above there is only one group - the green highlighted text.
 [image assetsSrc="regex-example(18).png" /]
 The green highlighted text is a non-capture group.
 
-- **?\<\name\>subexpression** - defines a named capturing group
+- **?\<name>subexpression** - defines a named capturing group
 [image assetsSrc="regex-example(19).png" /]
 In the example above **day**, **month**, **year** are the group's names.
+
+[/slide]
+
+[slide]
+# Problem: Match All Words
+
+Write a **regular expression** at [www.regex101.com](www.regex101.com) which **extracts all word** char sequences **from a given text**.
+
+[image assetsSrc="regex-example(25).png" /]
+
+
 
 [/slide]
