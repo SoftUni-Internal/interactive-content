@@ -49,6 +49,29 @@ Write a **regular expression** at [www.regex101.com](www.regex101.com) which **e
 
 [image assetsSrc="regex-example(25).png" /]
 
+[/slide]
 
+[slide]
+# Problem: Match Dates
+
+Write a **regular expression** that **extracts dates from text**.
+
+- Valid date format: `dd-MMM-yyyy`
+- Examples: `12-Jun-1999`, `3-Nov-1999`
+
+[image assetsSrc="regex-example(26).png" /]
+
+[/slide]
+
+[slide]
+# Problem: Email Validation
+
+Write a regular expression that performs simple **email validation**
+- An email consists of: **username**, **@**, **domain name**
+- **Usernames** are **alphanumeric**
+- **Domain names** consist of **two strings**, separated by a **period**
+- **Domain names** may contain only **English letters**
+
+[image assetsSrc="regex-example(27).png" /]
 
 [/slide]
