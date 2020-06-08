@@ -110,6 +110,7 @@ System.out.println(String.join(", ",tokens));
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -230,6 +231,7 @@ Ivan Ivanov Ivan Ivanov
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -383,6 +385,7 @@ Ivan Ivanov Ivan Ivanov
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -465,6 +468,7 @@ After you find all numbers, print them on the console, separated by space " ".
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
