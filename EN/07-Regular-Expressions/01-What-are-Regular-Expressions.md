@@ -7,7 +7,7 @@
 
  A **regular expression** defines a **search pattern** for **strings**.
  
- The search pattern can be anything from a **simple character**, a **fixed string** or a complex expression containing special characters describing the pattern.
+ The search pattern can be anything from a **simple character**, a **fixed string**, or a complex expression containing special characters describing the pattern.
 
  - Patterns are defined by special syntax, e.g.
 
