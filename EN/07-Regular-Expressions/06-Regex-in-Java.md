@@ -108,6 +108,8 @@ System.out.println(String.join(", ",tokens));
 [code-editor language=java]
 ```
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -367,6 +369,184 @@ goshogoshov peshoivanov-c c-XiBan-cc-Ivan Ivanov-D D IVAN IVANOV xi ban BB-xiban
 [/input]
 [output]
 Ivan Ivanov Ivan Ivanov
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Problem: Match Numbers
+[code-task title="Match Numbers" taskId="8fc7f1de-7cb0-4ab4-b1d0-1de73de6efe3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a regular expression to match all numbers from a given string.
+
+After you find all numbers, print them on the console, separated by space " ".
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
+[/input]
+[output]
+1 -1 123 -123 123.456 -123.456
+[/output]
+[/test]
+[test]
+[input]
+123Y Peter44 456 982 -873829 -_89
+[/input]
+[output]
+456 982 -873829
+[/output]
+[/test]
+[test]
+[input]
+123    89382- -09-09 - 8-8jid08  -92813 j8 -
+[/input]
+[output]
+123 -92813
+[/output]
+[/test]
+[test]
+[input]
+51542 41+1 4+10059 %0870_((\* 8098 jeoifjd9908
+[/input]
+[output]
+51542 8098
+[/output]
+[/test]
+[test]
+[input]
+891273hndjn 0912039 jjjjjj-12830 0-9=9 =---9 83127 328
+[/input]
+[output]
+0912039 83127 328
+[/output]
+[/test]
+[test]
+[input]
+13728 jd8j10 8498  j9 6698 -09 0
+[/input]
+[output]
+13728 8498 6698 -09 0
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Match Numbers
+[code-task title="Match Numbers" taskId="8fc7f1de-7cb0-4ab4-b1d0-1de73de6efe3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        String regex = "(^|(?<=\\s))-?\\d+(\\.\\d+)?($|(?=\\s))";
+
+        List<String> matchedNumbers = new ArrayList<>();
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+
+        while (matcher.find()) {
+            matchedNumbers.add(matcher.group());
+        }
+
+        System.out.println(String.join(" ", matchedNumbers));
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a regular expression to match all numbers from a given string.
+
+After you find all numbers, print them on the console, separated by space " ".
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
+[/input]
+[output]
+1 -1 123 -123 123.456 -123.456
+[/output]
+[/test]
+[test]
+[input]
+123Y Peter44 456 982 -873829 -_89
+[/input]
+[output]
+456 982 -873829
+[/output]
+[/test]
+[test]
+[input]
+123    89382- -09-09 - 8-8jid08  -92813 j8 -
+[/input]
+[output]
+123 -92813
+[/output]
+[/test]
+[test]
+[input]
+51542 41+1 4+10059 %0870_((\* 8098 jeoifjd9908
+[/input]
+[output]
+51542 8098
+[/output]
+[/test]
+[test]
+[input]
+891273hndjn 0912039 jjjjjj-12830 0-9=9 =---9 83127 328
+[/input]
+[output]
+0912039 83127 328
+[/output]
+[/test]
+[test]
+[input]
+13728 jd8j10 8498  j9 6698 -09 0
+[/input]
+[output]
+13728 8498 6698 -09 0
 [/output]
 [/test]
 [/tests]
