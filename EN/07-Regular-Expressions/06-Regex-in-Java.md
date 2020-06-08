@@ -459,7 +459,7 @@ After you find all numbers, print them on the console, separated by space " ".
 
 [slide]
 # Solution: Match Numbers
-[code-task title="Match Numbers" taskId="8fc7f1de-7cb0-4ab4-b1d0-1de73de6efe3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
