@@ -74,8 +74,11 @@ Write a **regular expression** that **extracts dates from text**.
 # Solution: Match Dates
 Use an online regex tester like [https://regex101.com/](https://regex101.com/)
 [image assetsSrc="regex-solution(2).png" /] 
-
-
+- `\d?`- matches a digit(0-9) zero or one times
+- `\d` - matches one digit(0-9)
+- `-` - matches the character literally 
+- [A-Za-z]{3} - matches capital or small letters exactly 3 times
+- `\d{4}` - matches exactly 4 digits(0-9)
 
 [/slide]
 
