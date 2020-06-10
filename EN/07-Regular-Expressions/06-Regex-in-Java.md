@@ -3,16 +3,25 @@
 # Built-In Regex Classes 
 For advanced regular expressions the `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used.
 
-```java live
-Pattern pattern = Pattern.compile("[a-z]+");
+```java live no-template
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-String text = "the quick brown fox jumps over the lazy dog";
+public class Main {
+    public static void main(String[] args) {
 
-Matcher matcher = pattern.matcher(text);
+        Pattern pattern = Pattern.compile("[a-z]+");
 
-// check all occurrences
-while (matcher.find()) {
-    System.out.println(matcher.group());
+        String text = "the quick brown fox jumps over the lazy dog";
+
+        Matcher matcher = pattern.matcher(text);
+
+        // check all occurrences
+        while (matcher.find()) {
+            System.out.println(matcher.group());
+        }
+    }
+}
 }
 ```
 Let's explain what does the code above:
@@ -39,7 +48,7 @@ public class Main {
 
         Matcher matcher = pattern.matcher(text);
 
-// check all occurrences
+        // check all occurrences
         while (matcher.find()) {
             System.out.println(matcher.group());
         }
@@ -53,9 +62,7 @@ public class Main {
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 public class Main {
-
     public static void main(String[] args) {
 
         Pattern pattern = Pattern.compile("[A-Za-z]+");
@@ -64,8 +71,6 @@ public class Main {
         String result = matcher.replaceAll("hi");
 
         System.out.println(result);   // hi hi
-
-
     }
 }
 ```
@@ -74,7 +79,6 @@ public class Main {
 ```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 
 public class Main {
 
@@ -86,7 +90,6 @@ public class Main {
         String result = matcher.replaceFirst("hi"); // hi Java
 
         System.out.println(result);
-
     }
 }
 ```
