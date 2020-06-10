@@ -77,7 +77,8 @@ Use an online regex tester like [https://regex101.com/](https://regex101.com/)
 - `\d?`- matches a digit(0-9) zero or one times
 - `\d` - matches one digit(0-9)
 - `-` - matches the character literally 
-- [A-Za-z]{3} - matches capital or small letters exactly 3 times
+- `[A-Za-z]{3}` - matches capital or small letters exactly 3 times
+- `-` - matches the character literally
 - `\d{4}` - matches exactly 4 digits(0-9)
 
 [/slide]
