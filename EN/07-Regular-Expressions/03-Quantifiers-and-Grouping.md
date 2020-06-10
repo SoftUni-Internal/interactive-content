@@ -55,6 +55,9 @@ Write a **regular expression** at [www.regex101.com](www.regex101.com) which **e
 Use an online regex tester like [https://regex101.com/](https://regex101.com/)
 [image assetsSrc="regex-solution(1).png" /] 
 
+
+- `[A-Za-z_]+` - matches any characters between `a-z` or `A-Z` or `_` one or more times. 
+
 [/slide]
 [slide]
 # Problem: Match Dates
