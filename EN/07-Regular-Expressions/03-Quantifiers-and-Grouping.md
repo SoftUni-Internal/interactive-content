@@ -70,6 +70,14 @@ Write a **regular expression** that **extracts dates from text**.
 [image assetsSrc="regex-example(26).png" /]
 
 [/slide]
+[slide]
+# Solution: Match Dates
+Use an online regex tester like [https://regex101.com/](https://regex101.com/)
+[image assetsSrc="regex-solution(2).png" /] 
+
+
+
+[/slide]
 
 [slide]
 # Problem: Email Validation
@@ -81,5 +89,14 @@ Write a regular expression that performs simple **email validation**
 - **Domain names** may contain only **English letters**
 
 [image assetsSrc="regex-example(27).png" /]
+
+[/slide]
+[slide]
+# Solution: Email Validation
+Use an online regex tester like [https://regex101.com/](https://regex101.com/)
+[image assetsSrc="regex-solution(3).png" /] 
+
+
+
 
 [/slide]
