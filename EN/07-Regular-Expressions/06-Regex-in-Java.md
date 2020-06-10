@@ -16,7 +16,11 @@ while (matcher.find()) {
 }
 ```
 Let's explain what does the code above:
-First, we create a **Pattern object** which **defines the regular expression**. This Pattern object allows you to **create a Matcher object for a given string**. This Matcher object then allows you to do **regex operations on a String**.
+First, we create a **Pattern object** which **defines the regular expression**.
+
+This Pattern object allows you to **create a Matcher object for a given string**.
+
+This Matcher object then allows you to do **regex operations on a String**.
 
 [/slide]
 
