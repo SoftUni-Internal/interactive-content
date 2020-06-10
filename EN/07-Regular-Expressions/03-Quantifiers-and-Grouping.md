@@ -50,7 +50,12 @@ Write a **regular expression** at [www.regex101.com](www.regex101.com) which **e
 [image assetsSrc="regex-example(25).png" /]
 
 [/slide]
+[slide]
+# Solution: Match All Words
+Use an online regex tester like [https://regex101.com/](https://regex101.com/)
+[image assetsSrc="regex-solution(1).png" /] 
 
+[/slide]
 [slide]
 # Problem: Match Dates
 
