@@ -28,15 +28,15 @@
 
 We can split regex into **groups** and we can use these groups to **extract information** about **part of the match**.
 
-- **subexpression** - captures the matched subexpression as numbered group
+- `subexpression` - captures the matched subexpression as numbered group
 [image assetsSrc="regex-example(17).png" /]
 In the example above there is only one group - the green highlighted text.
 
-- **?:subexpression** - defines a non-capturing group
+- `?:subexpression` - defines a non-capturing group
 [image assetsSrc="regex-example(18).png" /]
 The green highlighted text is a non-capture group.
 
-- **\?\<name\>subexpression** - defines a named capturing group
+- `?<name>subexpression` - defines a named capturing group
 [image assetsSrc="regex-example(19).png" /]
 In the example above **day**, **month**, **year** are the group's names.
 
