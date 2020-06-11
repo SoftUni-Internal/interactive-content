@@ -36,7 +36,7 @@ In the example above there is only one group - the green highlighted text.
 [image assetsSrc="regex-example(18).png" /]
 The green highlighted text is a non-capture group.
 
-- **\?\<name>subexpression** - defines a named capturing group
+- **\?\<name\>subexpression** - defines a named capturing group
 [image assetsSrc="regex-example(19).png" /]
 In the example above **day**, **month**, **year** are the group's names.
 
@@ -101,7 +101,7 @@ Use an online regex tester like [https://regex101.com/](https://regex101.com/)
 [image assetsSrc="regex-solution(3).png" /] 
 - `^` - asserts position at start of a line
 - `\w+` - matches any word character (equal to `[a-zA-Z0-9_]`) one or more times
-- `@` - matches the character **@** literally
+- `@` - matches the character `@` literally
 - `[A-Za-z]+` - matches any characters between `a-z` or `A-Z` one or more times 
 - `\.` - matches the character `.` literally
 - `[A-Za-z]+` - matches any characters between `a-z` or `A-Z` one or more times
