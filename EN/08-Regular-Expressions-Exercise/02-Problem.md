@@ -101,10 +101,10 @@ end of race
 [test open]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
-Mi\*\&^\%$ch123o!\#$\%\#nne787)
-\%$$B(\*\&\&)i89ll)\*\&)
-R\*\*(on\%^\&ald992)
-T(\*^^\%immy77)
+Mi\*&^%$ch123o\!\#$%\#nne787)
+%$$B(\*&&)i89ll)\*&)
+R\*\*(on%^&ald992)
+T(\*^^%immy77)
 Ma10\*\*$\#g0g0g0i0e
 end of race
 [/input]
@@ -152,10 +152,10 @@ end of race
 [test open]
 [input]
 Joro, George, Georgi, Stamat
-^\\&^%^232St\#\$ama\\\&\\\&^^t
-^\\\&^%^232St\#\$ama\\\&\\\&^^t
-G7667eorge\\\&^^\\\&^
-\\\&^\\\&\\\&\\\&J99999oro\\\&^^57
+^&^%^232St\#$ama&&^^t
+^&^%^232St\#$ama&&^^t
+G7667eorge&^^&^
+&^&&&J99999oro&^^57
 end of race
 [/input]
 [output]
