@@ -3,7 +3,7 @@
 [code-task title="A Miner Task" taskId="6275489d-9eb4-43ca-850a-1c055cb6377f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,7 +53,7 @@ Your task is to collect the resources and print them each on a new line.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Gold
 155
@@ -69,7 +69,7 @@ Silver -> 10
 Copper -> 17
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 gold
 155

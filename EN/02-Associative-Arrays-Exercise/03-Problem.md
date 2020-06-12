@@ -3,7 +3,7 @@
 [code-task title="Legendary Farming" taskId="93f0004d-ff1f-47bb-9ca6-fae9129a540d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -67,7 +67,7 @@ Each line of input is in format \{quantity\} \{material\} \{quantity\} \{materia
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 3 Motes 5 stones 5 Shards
 6 leathers 255 fragments 7 Shards
@@ -81,7 +81,7 @@ leathers: 6
 stones: 5
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 123 silver 6 shards 8 shards 5 motes
 9 fangs 75 motes 103 MOTES 8 Shards

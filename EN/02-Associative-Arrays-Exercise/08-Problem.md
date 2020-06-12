@@ -3,7 +3,7 @@
 [code-task title="Company Users" taskId="d4c5fcc2-0b0a-4fdf-8a97-be46e4a9e197" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,7 +53,7 @@ Until you receive "End", the input come **in the format**:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 SoftUni -> AA12345
 SoftUni -> BB12345

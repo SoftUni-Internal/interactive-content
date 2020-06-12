@@ -3,7 +3,7 @@
 [code-task title="Parking" taskId="5cc3b7a5-ce88-4822-bce2-841d1e366c33" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,7 +59,7 @@ After you execute all of the commands, **print** all the **currently registered 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 5
 register John CS1234JS
@@ -79,7 +79,7 @@ George => JAVA123S
 Jesica => VR1223EE
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 4
 register Jony AA4132BB

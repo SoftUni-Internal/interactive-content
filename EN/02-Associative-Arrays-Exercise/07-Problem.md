@@ -3,7 +3,7 @@
 [code-task title="Student Academy" taskId="b8d51fcb-c61c-49b4-94f3-baf33a98e9e9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ Order filtered students by average grade in **descending**.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 5
 John

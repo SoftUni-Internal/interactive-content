@@ -3,7 +3,7 @@
 [code-task title="Courses" taskId="ffed8271-3b3f-46de-bd26-273d16582333" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -56,7 +56,7 @@ For each **contest print registered users** **ordered by name in ascending** ord
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Programming Fundamentals : John Smith
 Programming Fundamentals : Linda Johnson
@@ -72,7 +72,6 @@ JS Core: 1
 -- Will Wilson
 Java Advanced: 1
 -- Harrison White
-
 [/output]
 [/test]
 [test]

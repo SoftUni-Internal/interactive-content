@@ -3,7 +3,7 @@
 [code-task title="SoftUni Course Planning" taskId="f79c1e2b-c5aa-4d45-9d52-41c73c3db591" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,22 +53,22 @@ So although there are only 2 participants in the results, there are 4 submission
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-Pesho-Java-84
-Gosho-C#-70
-Gosho-C#-84
-Kiro-C#-94
+Peter-Java-91
+George-C#-84
+Mike-Java-90
+Mike-C#-50
+Mike-banned
 exam finished
 [/input]
 [output]
 Results:
-Kiro | 94
-Gosho | 84
-Pesho | 84
+Peter | 91
+George | 84
 Submissions:
-C# - 3
-Java - 1
+C# - 2
+Java - 2
 [/output]
 [/test]
 [test]
