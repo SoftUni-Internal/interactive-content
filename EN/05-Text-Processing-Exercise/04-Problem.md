@@ -59,7 +59,7 @@ Zkhuh#gr#udqgrp#wkrxjkwv#frph#iurpB
 I think I will buy the red car, or I will lease the blue one.
 [/input]
 [output]
-L#wklqn#L#zloo#ex|#wkh#uhg#fdu/#ru#L#zloo#ohdvh#wkh#eoxh#rqh1
+L#wklqn#L#zloo#ex\|#wkh#uhg#fdu/#ru#L#zloo#ohdvh#wkh#eoxh#rqh1
 [/output]
 [/test]
 [test open]
@@ -75,7 +75,7 @@ Wkh#vwudqjhu#riilfldwhv#wkh#phdo1
 There was no ice cream in the freezer, nor did they have money to go to the store.
 [/input]
 [output]
-Wkhuh#zdv#qr#lfh#fuhdp#lq#wkh#iuhh}hu/#qru#glg#wkh|#kdyh#prqh|#wr#jr#wr#wkh#vwruh1
+Wkhuh#zdv#qr#lfh#fuhdp#lq#wkh#iuhh}hu/#qru#glg#wkh\|#kdyh#prqh\|#wr#jr#wr#wkh#vwruh1
 [/output]
 [/test]
 [test open]
@@ -83,7 +83,7 @@ Wkhuh#zdv#qr#lfh#fuhdp#lq#wkh#iuhh}hu/#qru#glg#wkh|#kdyh#prqh|#wr#jr#wr#wkh#vwru
 My Mum tries to be cool by saying that she likes all the same things that I do.
 [/input]
 [output]
-P|#Pxp#wulhv#wr#eh#frro#e|#vd|lqj#wkdw#vkh#olnhv#doo#wkh#vdph#wklqjv#wkdw#L#gr1
+P\|#Pxp#wulhv#wr#eh#frro#e\|#vd\|lqj#wkdw#vkh#olnhv#doo#wkh#vdph#wklqjv#wkdw#L#gr1
 [/output]
 [/test]
 [/tests]
