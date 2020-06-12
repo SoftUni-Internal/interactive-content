@@ -6,6 +6,7 @@
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -152,10 +153,10 @@ end of race
 [test open]
 [input]
 Joro, George, Georgi, Stamat
-^&^%^232St\#$ama&&^^t
-^&^%^232St\#$ama&&^^t
-G7667eorge&^^&^
-&^&&&J99999oro&^^57
+!@232St#$ama!@!@t
+@@@232St@@ama!@!@!t
+G7667eorge!!!
+@!@@J99999oro@@@57
 end of race
 [/input]
 [output]
