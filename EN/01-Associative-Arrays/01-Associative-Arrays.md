@@ -242,7 +242,8 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 [code-task title="Count Real Numbers" taskId="2d224614-8c87-43c1-ab6a-873186350cad" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -527,7 +528,8 @@ Read a **list of real numbers** and print them in **ascending order** along with
 [code-task title="Word Synonyms" taskId="37dfcf73-dcfa-46ba-91cb-1ee1387c01fc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -984,7 +986,7 @@ customer - client, purchaser
 [code-task title="Odd Occurrences" taskId="36f87397-888e-4d94-901e-cf29de88de73" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
