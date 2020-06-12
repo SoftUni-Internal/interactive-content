@@ -407,14 +407,14 @@ After you find all numbers, print them on the console, separated by space " ".
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
+| 1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
+1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
 [/input]
 [output]
 1 -1 123 -123 123.456 -123.456
@@ -504,14 +504,14 @@ After you find all numbers, print them on the console, separated by space " ".
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
+| 1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1 -1 1s 123 s-s -123 _55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
+1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5
 [/input]
 [output]
 1 -1 123 -123 123.456 -123.456
