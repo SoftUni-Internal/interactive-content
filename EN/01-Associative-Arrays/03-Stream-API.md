@@ -202,7 +202,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 [code-task title="Word Filter" taskId="862fa494-90f9-440d-a1cc-4f83cb8dd2c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -617,7 +617,8 @@ courseGrades.entrySet()
 [code-task title="Largest 3 Numbers" taskId="d49b1d1b-d371-411a-bbd5-98b77b6b62e9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
