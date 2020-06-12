@@ -101,11 +101,11 @@ end of race
 [test open]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
-Mi\*&^%$ch123o\!\#$%\#nne787)
-%$$B(\*&&)i89ll)\*&)
-R\*\*(on%^&ald992)
-T(\*^^%immy77)
-Ma10\*\*$\#g0g0g0i0e
+Mi@@@@!ch123o!@nne787)
+%@B(@@)i89ll)!@)
+R@(on@ald992)
+T(@immy77)
+Ma10!@@g0g0g0i0e
 end of race
 [/input]
 [output]
