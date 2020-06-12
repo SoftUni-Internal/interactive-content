@@ -78,7 +78,7 @@ There was no ice cream in the freezer, nor did they have money to go to the stor
 Wkhuh#zdv#qr#lfh#fuhdp#lq#wkh#iuhh}hu/#qru#glg#wkh|#kdyh#prqh|#wr#jr#wr#wkh#vwruh1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 My Mum tries to be cool by saying that she likes all the same things that I do.
 [/input]
