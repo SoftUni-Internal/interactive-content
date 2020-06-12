@@ -3,7 +3,9 @@
 [code-task title="Star Enigma" taskId="62851f82-c61f-4d6b-967b-e4646496f4c3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {

@@ -3,7 +3,9 @@
 [code-task title="Extract Emails" taskId="660e5715-62c0-4244-8b1f-fee98b6a98a7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,21 +44,21 @@ Emails are considered to be in **format** \{user\}\@\{host\}, where:
 [tests]
 [test open]
 [input]
-Please contact us at: support@github.com.
-end
-[/input]
-[output]
-support@github.com
-[/output]
-[/test]
-[test]
-[input]
 Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information.
 end
 [/input]
 [output]
 s.miller@mit.edu
 j.hopking@york.ac.uk
+[/output]
+[/test]
+[test]
+[input]
+Please contact us at: support@github.com.
+end
+[/input]
+[output]
+support@github.com
 [/output]
 [/test]
 [test]
@@ -74,7 +76,6 @@ Examples of valid emails: info@softuni-bulgaria.org, kiki@hotmail.co.uk, no-repl
 end
 [/input]
 [output]
-
 info@softuni-bulgaria.org
 kiki@hotmail.co.uk
 no-reply@github.com

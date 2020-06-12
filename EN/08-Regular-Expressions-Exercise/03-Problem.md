@@ -3,7 +3,9 @@
 [code-task title="Bar Income" taskId="f4d199ba-5dc2-49c6-a7ef-ea9cb9c71a6d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {

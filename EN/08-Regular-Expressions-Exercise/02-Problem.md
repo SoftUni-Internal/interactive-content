@@ -3,7 +3,9 @@
 [code-task title="Race" taskId="ce66b922-72e3-4277-9c51-4e988d899ed8" executionType="tests-execution" executionStrategy="java-code"  requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {

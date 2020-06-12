@@ -3,7 +3,9 @@
 [code-task title="Furniture" taskId="03a38e07-6ad8-453f-9595-bc4d9c14b30d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
