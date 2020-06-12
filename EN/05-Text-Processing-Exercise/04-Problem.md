@@ -43,7 +43,7 @@ Surjudpplqj#lv#frro$
 One year has 365 days.
 [/input]
 [output]
-Rqh#|hdu#kdv#698#gd|v1
+Rqh#\|hdu#kdv#698#gd\|v1
 [/output]
 [/test]
 [test open]
