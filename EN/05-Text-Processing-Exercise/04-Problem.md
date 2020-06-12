@@ -38,7 +38,7 @@ Programming is cool!
 Surjudpplqj#lv#frro$
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 One year has 365 days.
 [/input]
@@ -46,7 +46,7 @@ One year has 365 days.
 Rqh#\|hdu#kdv#698#gd\|v1
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 Where do random thoughts come from?
 [/input]
@@ -54,7 +54,7 @@ Where do random thoughts come from?
 Zkhuh#gr#udqgrp#wkrxjkwv#frph#iurpB
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 I think I will buy the red car, or I will lease the blue one.
 [/input]
@@ -62,7 +62,7 @@ I think I will buy the red car, or I will lease the blue one.
 L#wklqn#L#zloo#ex\|#wkh#uhg#fdu/#ru#L#zloo#ohdvh#wkh#eoxh#rqh1
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 The stranger officiates the meal.
 [/input]
@@ -70,7 +70,7 @@ The stranger officiates the meal.
 Wkh#vwudqjhu#riilfldwhv#wkh#phdo1
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 There was no ice cream in the freezer, nor did they have money to go to the store.
 [/input]
@@ -78,7 +78,7 @@ There was no ice cream in the freezer, nor did they have money to go to the stor
 Wkhuh#zdv#qr#lfh#fuhdp#lq#wkh#iuhh}hu/#qru#glg#wkh\|#kdyh#prqh\|#wr#jr#wr#wkh#vwruh1
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 My Mum tries to be cool by saying that she likes all the same things that I do.
 [/input]
