@@ -3,7 +3,7 @@
 [code-task title="Replace Repeating Chars" taskId="66b4fe88-c9f9-4027-a35b-9d733b7cba2a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ Write a program that **reads a string from the console** and **replaces any sequ
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 aaaaabbbbbcdddeeeedssaa
 [/input]
@@ -37,7 +37,7 @@ aaaaabbbbbcdddeeeedssaa
 abcdedsa
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 qqqwerqwecccwd
 [/input]

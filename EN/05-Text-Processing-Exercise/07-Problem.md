@@ -3,7 +3,7 @@
 [code-task title="String Explosion" taskId="ba2d7943-6271-4a2e-9266-5dae9fed1ba3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -63,7 +63,7 @@ We do not have any more explosions and we print the result: abv>>>>dasd
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 abv>1>1>2>2asdasd
 [/input]

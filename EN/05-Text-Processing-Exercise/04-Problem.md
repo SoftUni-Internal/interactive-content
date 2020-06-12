@@ -3,7 +3,7 @@
 [code-task title="Caesar Cipher" taskId="c46864a7-02cc-4fdd-b8a9-2daf11d12134" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ Write a program that **returns an encrypted version of the same text**.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Programming is cool!
 [/input]

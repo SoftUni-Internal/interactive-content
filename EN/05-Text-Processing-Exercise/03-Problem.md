@@ -3,7 +3,7 @@
 [code-task title="Extract File" taskId="cac7c441-14af-4959-a260-7542a570f50b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ Write a program that **reads the path to a file** and **subtracts the file name 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 C:\Internal\training-internal\Template.pptx
 [/input]
@@ -40,7 +40,7 @@ File name: Template
 File extension: pptx
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 C:\Projects\Data-Structures\LinkedList.cs
 [/input]

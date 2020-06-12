@@ -3,7 +3,7 @@
 [code-task title="Character Multiplier" taskId="8dd26c21-d68c-4e7e-bb09-a72a527aa521" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,12 +33,20 @@ Then **continue with the next two characters**.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-Gosho Pesho
+a aaaa
 [/input]
 [output]
-53253
+9700
+[/output]
+[/test]
+[test open]
+[input]
+John Smith
+[/input]
+[output]
+42025
 [/output]
 [/test]
 [test]
@@ -47,14 +55,6 @@ Gosho Pesho
 [/input]
 [output]
 7647
-[/output]
-[/test]
-[test]
-[input]
-a aaaa
-[/input]
-[output]
-9700
 [/output]
 [/test]
 [test]

@@ -3,7 +3,7 @@
 [code-task title="Valid Usernames" taskId="9ed965a2-c892-454a-985c-88e8f9b2ff7a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,22 +31,22 @@ A **valid username** is:
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Jeff, john45, ab, cd, peter-white, @smith
+[/input]
+[output]
+Jeff
+John45
+peter-white
+[/output]
+[/test]
 [test]
 [input]
 sh, too_long_username, !lleg@l ch@rs, jeffbutt
 [/input]
 [output]
 jeffbutt
-[/output]
-[/test]
-[test]
-[input]
-Jeff, John45, ab, cd, peter-ivanov, @smith
-[/input]
-[output]
-Jeff
-John45
-peter-ivanov
 [/output]
 [/test]
 [test]

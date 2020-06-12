@@ -3,7 +3,7 @@
 [code-task title="Letters Change Numbers" taskId="904f4c38-b525-446b-89b7-df45a3fa840b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -86,7 +86,7 @@ Print at the console a single number: the total sum of all processed numbers rou
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 A12b s17G
 End
@@ -95,7 +95,7 @@ End
 330.00
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 P34562Z q2576f   H456z
 End
