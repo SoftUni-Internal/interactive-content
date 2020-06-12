@@ -25,7 +25,7 @@ A **valid username** is:
 | **Input** | **Output** |
 | --- | --- |
 | Jeff, john45, ab, cd, peter-white, @smith | Jeff | 
-| | John45 |
+| | john45 |
 | | peter-white |
 
 [/task-description]
@@ -37,7 +37,7 @@ Jeff, john45, ab, cd, peter-white, @smith
 [/input]
 [output]
 Jeff
-John45
+john45
 peter-white
 [/output]
 [/test]
