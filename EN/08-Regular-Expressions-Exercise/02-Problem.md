@@ -101,7 +101,7 @@ end of race
 [test open]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
-Mi*\&^\%$ch123o!\#$\%\#nne787)
+Mi\*\&^\%$ch123o!\#$\%\#nne787)
 \%$$B(\*\&\&)i89ll)\*\&)
 R\*\*(on\%^\&ald992)
 T(\*^^\%immy77)
@@ -117,10 +117,10 @@ end of race
 [test open]
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
-R****i22c00k199!!!
-N***\\&^E989GA(*\\&^\\&^\\&N323a)))
-*^%%Pe87876t\\&\\&^er87\#\$\\&(%)
-L\\&^%u9754cille*\\&^\\&%^234
+R\*\*\*\*i22c00k199!!!
+N\*\*\*\\&^E989GA(\*\\&^\\&^\\&N323a)))
+\*^%%Pe87876t\\&\\&^er87\#\$\\&(%)
+L\\&^%u9754cille\*\\&^\\&%^234
 end of race
 [/input]
 [output]
