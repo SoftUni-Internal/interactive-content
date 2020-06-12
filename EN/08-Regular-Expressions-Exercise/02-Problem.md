@@ -81,7 +81,7 @@ end of race
 3rd place: Tom
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Gregory, Tom, Jerry, Christian, Bill
 G4r\*\&^\$\#ego%4^\&4\*ry
@@ -98,7 +98,7 @@ end of race
 3rd place: Gregory
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Ronald, Bill, Tom, Timmy, Maggie, Michonne
 Mi*\&^\%$ch123o!\#$\%\#nne787)
@@ -114,7 +114,7 @@ end of race
 3rd place: Bill
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
@@ -129,7 +129,7 @@ end of race
 3rd place: Rick
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Rick, Negan, Lucille, Peter, Stamat, George
 R****i22c00k199!!!
@@ -149,7 +149,7 @@ end of race
 3rd place: Negan
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Joro, George, Georgi, Stamat
 ^\\&^%^232St\#\$ama\\\&\\\&^^t
