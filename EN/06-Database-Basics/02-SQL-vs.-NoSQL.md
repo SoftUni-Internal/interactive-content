@@ -73,9 +73,31 @@ Notice that there are **2 items sold** with Order ID equal to 1 and the total am
 
 
 [slide]
-# NoSQL Databases: Non-Relational Databases)
+# NoSQL Databases: Non-Relational Databases
 
-# ADD PICTURE
+[image assetsSrc="NoSQL.png" /]
+
+There are two types of databases:
+
+- relational
+
+- non-relational.
+
+**A relational**, also known as **SQL**, database is very **strict**. It means that th  databases **regulate** the input data, what their format is, how **different types** of data are connected, etc.
+
+SQL is one of the most **versatile** options available.
+
+It is also one of the most widely-used options.
+
+Relational databases are great for **complex** queries.
+
+Having a clear structure makes it easy to know what we can do.
+
+Relational databases are highly **restrictive**.
+
+This is neither a plus nor a minus.
+
+It is just a **characteristic** of this type of database.
 
 NoSQL, or also non-relational, database has a **dynamic** schema.
 
@@ -106,5 +128,74 @@ A key-value database is designed for **querying** and **storing** associative ar
 They contain a collection of objects which are consisted of different fields, each containing data.
 
 These objects are very similar to the JavaScript objects, with which some of you might be familiar.
+
+[/slide]
+
+[slide]
+# Scalability
+
+**Scalability** is a very important characteristic of an application.
+An enterprise application needs to be able to be **extended**.
+
+**Relational databases scale vertically:**
+
+- You want to increase the volume of data the database processes, you have to upgrade the server.
+- Increasing the RAM, the HDD storage, or the processor, depends on the situation.
+
+**Non-relational databases scale horizontally:**
+
+- You can upgrade the database to handle more traffic by sharding.
+- Sharding means to separate the stored data into several databases, on different servers.
+
+# Structure
+
+Use an **SQL database** when you are developing an application that requires multi-row transactions.
+
+**Example:** a bank system would be better built with an SQL database, because everything is strictly structured there.
+
+Transferring money from account `A` to account `B`.
+
+One of the queries would be to **subtract** money from account `A` and the other one – to **add** money to account `B`.
+
+What would happen if something in between crashes?
+
+Account `A` would have lost the money and account `B` wouldn’t have received anything.
+
+This is why there are the so-called **transactions**, they guarantee that, in this case, if **both queries are successful**, **changes would be applied**, otherwise – **anything would be rolled back**.
+
+That's the reason why you'd prefer to use an SQL database, it gives you better security and restrictions aimed to fulfill that.
+
+Some legacy systems were built for a relational structure.
+
+In this case, it would be better **not to change** the database to a NoSQL one, to prevent failures.
+
+In case it isn't clear what data you'd be working with and the structure is undefined, you should choose a NoSQL database.
+
+There are **four main types of NoSQL** databases:
+
+- Wide-Column Store
+
+- Document Store
+
+- Key-Value datastore
+
+- Graph store
+
+# Databases Examples
+
+SQL databases include:
+- MySQL
+- Oracle
+- PostgreSQL
+- Microsoft SQL Server
+
+
+NoSQL database include:
+- MongoDB
+- BigTable
+- Redis
+- RavenDB
+- Cassandra
+- HBase
 
 [/slide]
