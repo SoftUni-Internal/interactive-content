@@ -21,7 +21,7 @@ The workflow is as follows:
 
 - the database returns the desired data to the engine.
 
-- at the end the engine interprets the returned data and passes it to the client in a human-readable format.
+- in the end, the engine interprets the returned data and passes it to the client in a human-readable format.
 
 [/slide]
 
