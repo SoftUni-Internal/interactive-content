@@ -32,7 +32,7 @@ It is just a **characteristic** of this type of database.
 [slide]
 # Relational Databases: Example
 
-[image assetsSrc="rel-db.png" /]
+[image assetsSrc="rel-db1.png" /]
 
 Relational databases organize data into **tables** of **columns** and rows.
 
