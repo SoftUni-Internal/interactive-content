@@ -83,7 +83,7 @@ There are two types of databases:
 
 - non-relational.
 
-**A relational**, also known as **SQL**, database is very **strict**. It means that th  databases **regulate** the input data, what their format is, how **different types** of data are connected, etc.
+**A relational**, also known as **SQL**, database is very **strict**. It means that the databases **regulate** the input data, what their format is, how **different types** of data are connected, etc.
 
 SQL is one of the most **versatile** options available.
 
