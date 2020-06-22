@@ -3,7 +3,7 @@
 [slide]
 # Structured Query Language - SQL
 
-[image assetsSrc="mssql.png" /]
+[image assetsSrc="mssql1.png" /]
 
 The SQL (Structured Query Language) is a language designed for **managing data** in a relational database.
 
