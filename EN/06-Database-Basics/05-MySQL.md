@@ -226,7 +226,7 @@ Deleting structures is called **dropping**.
 Emptying a structure is called **truncating**.
 
 ```
-TRUNCATE TABLE people;.
+TRUNCATE TABLE people;
 ```
 
 What this query will do is that it will **delete all records** in the `people` table.
