@@ -1,7 +1,7 @@
 # MySQL
 
 [slide]
-# MySQL \/ MariaDB
+# MySQL / MariaDB
 
 [image assetsSrc="mssql11.png" /]
 
