@@ -187,6 +187,66 @@ It tells the engine to retrieve **only the first X numbers**, where `X` is equal
 
 [slide]
 
-# Update Records
+# Update and Delete Records
+
+## Update Records
+
+While retrieving records, you can filter rows by specific conditions with the `WHERE` keyword.
+
+```
+SELECT first_name, last_name, email
+ FROM people
+ WHERE last_name = 'Smith'
+ ```
+
+This query will retrieve all records that have the last name equal to `Smith`.
+
+To **update already added entities**, start the query with the `UPDATE` keyword.
+
+In the example above:
+
+- `UPDATE people` tells the engine that we will be updating the `people` table.
+
+- `SET last_name = 'Adams'` will update the last name of the records to `Adams`.
+
+It is much like **assigning** or **changing** the value of a variable in programming languages.
+
+- `WHERE first_name = 'John'` tells the engine to make the change only to records with first name equal to `John`.
+
+If we executed the query without the `WHERE` clause, it would **update** the last name of all records of the `people` table.
+
+We don't want that, so don't skip the `WHERE` clause.
+
+To summarize, the last example updates the last name of records in the `people` table for which the condition is true.
+
+## Delete Records
+
+Deleting structures is called **dropping**.
+
+Emptying a structure is called **truncating**.
+
+```
+TRUNCATE TABLE people;.
+```
+
+What this query will do is that it will **delete all records** in the `people` table.
+
+Notice that it will **delete** only the records, it will empty the table.
+
+But the **table itself** won't be deleted.
+
+If you want to delete the whole table, you have to use the `DROP` keyword:
+```
+DROP TABLE people;
+```
+It will **delete all the records in this table** and **the table itself** too.
+
+If you want to delete the whole database, this can be done as shown:
+```
+DROP DATABASE employees;
+```
+It will delete the **entire database**, all the tables, and the records in them too.
+
+What you should know is that both of these actions, **truncate** and **drop**, cannot be **undone**.
 
 [/slide]
