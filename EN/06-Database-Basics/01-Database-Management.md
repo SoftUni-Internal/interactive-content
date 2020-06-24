@@ -65,7 +65,7 @@ Some examples of **DBMS** you may have heard of are:
 
 - MySQL -\> which is **free** to use.
 
-- MS SQL Server -\> which is a product of Microsoft needs a paid license.
+- MS SQL Server -\> which is **free** to use.
 
 - Oracle -\> it's also paid.
 
@@ -85,7 +85,7 @@ For example, C# developers use MS SQL Server, while Java developers use Oracle.
 
 [image assetsSrc="storage-vs-manegement.png" /]
 
-Information about each order or **purchase** from a store is printed on a receipt, this is a **databases**.
+Information about each order or **purchase** from a store is printed on a receipt, this is a **database**.
 But if you have **thousands** of sales or buys per day.
 It's hard to keep all receipts physically, that will take way too much space.
 

@@ -15,13 +15,13 @@ Each **DBMS there is a client to work with** because otherwise, we wouldn't be a
 
 The workflow is as follows:
 
-- create a query through the client which is passed to the engine
+Create a query through the client which is passed to the engine.
 
-   - the engine processes the query and accesses the data.
+The engine processes the query and accesses the data.
 
-- the database returns the desired data to the engine.
+The database returns the desired data to the engine.
 
-- in the end, the engine interprets the returned data and passes it to the client in a human-readable format.
+In the end, the engine interprets the returned data and passes it to the client in a human-readable format.
 
 [/slide]
 

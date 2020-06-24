@@ -3,13 +3,13 @@
 [slide]
 # SQL Databases: Relational Databases
 
-[image assetsSrc="Relational-Databases.png" /]
-
 There are two types of databases:
 
 - relational
 
 - non-relational.
+
+[image assetsSrc="Relational-Databases.png" /]
 
 **A relational**, also known as **SQL**, database is very **strict**. It means that the databases **regulate** the input data, what their format is, how **different types** of data are connected, etc.
 
@@ -76,28 +76,6 @@ Notice that there are **2 items sold** with Order ID equal to 1 and the total am
 # NoSQL Databases: Non-Relational Databases
 
 [image assetsSrc="NoSQL.png" /]
-
-There are two types of databases:
-
-- relational
-
-- non-relational.
-
-**A relational**, also known as **SQL**, database is very **strict**. It means that the databases **regulate** the input data, what their format is, how **different types** of data are connected, etc.
-
-SQL is one of the most **versatile** options available.
-
-It is also one of the most widely-used options.
-
-Relational databases are great for **complex** queries.
-
-Having a clear structure makes it easy to know what we can do.
-
-Relational databases are highly **restrictive**.
-
-This is neither a plus nor a minus.
-
-It is just a **characteristic** of this type of database.
 
 NoSQL, or also non-relational, database has a **dynamic** schema.
 
