@@ -50,7 +50,7 @@ The objects are loosely coupled, and this is exactly why it is preferred for app
 
 # Developer Tools
 
-The client I'd recommend you to use it **Robo 3T**.
+The client we recommend you to use it **Robo 3T**.
 
 It is a fully-featured client with an embedded shell.
 
@@ -73,7 +73,7 @@ It features a fluent query builder that allows you to communicate with the datab
 
 You can see how the database creation pop-up window looks like:
 
-[image assetsSrc="create-database.png" /]
+[image assetsSrc="create-database1.png" /]
 
 **Creating a database** with the Robo 3T client is done simply by using the graphical interface it provides.
 
@@ -178,7 +178,7 @@ db.getCollection('people').update(
 It will make the `.update()` method update all entries found.
 
 # Deleting Entries
-To delete a single entry, you have to use the ".deleteOne()" method:
+To delete a single entry, you have to use the `.deleteOne()` method:
 
 ```
 db.getCollection('people').deleteOne(
