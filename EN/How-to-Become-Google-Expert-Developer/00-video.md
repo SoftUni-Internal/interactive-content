@@ -2,7 +2,7 @@
 # Video
 
 [vimeo-video]
-[stream language="EN" videoId="431802611" default /]
+[stream language="EN" videoId="402121391" default /]
 [/video-vimeo]
 
 [/slide]
