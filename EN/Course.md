@@ -1,4 +1,4 @@
-# Performance Optimizations and Scalability Techniques in WP
+# Performance Scalability
 
 ## Description
 What you will learn:
