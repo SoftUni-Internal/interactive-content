@@ -2,7 +2,7 @@
 # Live Session
 
 [live-stream]
-[stream language="EN" videoId="402119611" default /]
+[stream language="EN" videoId="412266123" default /]
 [/live-stream]
 
 [slido id="5faavvrx" /]

@@ -1,12 +1,14 @@
-# Cybersecurity and Social Engineering
+# Performance Optimizations and Scalability Techniques in WP
 
 ## Description
-- What actions can we take to increase our productivity?
-- How to maintain concentration during work? 
-- What tools can be useful for us to manage our time and tasks?
-- What are the biggest challenges of telecommuting?
-- Will remote work become more common in the future?
-- What good practices can we apply in our work process now?
+What you will learn:
+- Why serving proper image sizes is an important speed optimization factor;
+- Lazy loading of images: when do you need it;
+- GZIP compression: why it helps and when it can be used;
+- Technologies that help: Cloudflare caching techniques, caching via service workers;
+- Caching admin-ajax.php requests: why GET works;
+- JS deferring and async loading of JS: most common JS optimization techniques for achieving a faster load of heavy pages.
+
 
 ## Language
 English
