@@ -1,1 +1,1 @@
-# Performance Optimizations and Scalability Techniques in WP
+# Performance Optimizations
