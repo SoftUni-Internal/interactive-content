@@ -1,3 +1,15 @@
+# Associative Arrays
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="139" endTimeInSeconds="4406"]
+[stream language="EN" videoId="421796076" default /]
+[stream language="RO" videoId="435043258"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Associative Arrays
 

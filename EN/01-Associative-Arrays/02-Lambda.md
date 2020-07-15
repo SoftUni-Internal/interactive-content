@@ -1,3 +1,15 @@
+# Lambda Expressions
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="4407" endTimeInSeconds="5621"]
+[stream language="EN" videoId="421796076" default /]
+[stream language="RO" videoId="435043258"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Lambda Expressions
 

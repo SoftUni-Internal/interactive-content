@@ -1,3 +1,15 @@
+# Stream API
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="5622" endTimeInSeconds="10868"]
+[stream language="EN" videoId="421796076" default /]
+[stream language="RO" videoId="435043258"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Stream API
 
