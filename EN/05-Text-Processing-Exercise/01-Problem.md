@@ -1,3 +1,14 @@
+# Problem: Valid Usernames
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421823458" default /]
+[stream language="RO" videoId="436016525"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
 # Problem: Valid Usernames
 [code-task title="Valid Usernames" taskId="9ed965a2-c892-454a-985c-88e8f9b2ff7a" executionType="tests-execution" executionStrategy="java-code" requiresInput]

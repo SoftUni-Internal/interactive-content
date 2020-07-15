@@ -1,3 +1,14 @@
+# Problem: String Explosion
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421822656" default /]
+[stream language="RO" videoId="436016476"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
 # Problem: String Explosion
 [code-task title="String Explosion" taskId="ba2d7943-6271-4a2e-9266-5dae9fed1ba3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
