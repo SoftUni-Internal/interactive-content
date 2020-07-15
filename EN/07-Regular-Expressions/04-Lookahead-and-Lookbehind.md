@@ -1,3 +1,14 @@
+# Lookahead and Lookbehind
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="7671" endTimeInSeconds="8892"]
+[stream language="EN" videoId="421806246" default /]
+[stream language="RO" videoId="435070128"  /]
+[/video-vimeo]
+
+[/slide]
 
 [slide]
 # Lookahead and Lookbehind

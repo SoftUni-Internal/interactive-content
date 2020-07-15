@@ -1,4 +1,15 @@
 # Regex in Java
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="9433" endTimeInSeconds="11620"]
+[stream language="EN" videoId="421806246" default /]
+[stream language="RO" videoId="435070128"  /]
+[/video-vimeo]
+
+[/slide]
+
 [slide]
 # Built-In Regex Classes 
 For advanced regular expressions the `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used.

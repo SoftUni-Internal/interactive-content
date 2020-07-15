@@ -1,6 +1,16 @@
 # Quantifiers and Grouping
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="4627" endTimeInSeconds="7353"]
+[stream language="EN" videoId="421806246" default /]
+[stream language="RO" videoId="435070128"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
 # Quantifiers 
 **Quantifiers** specify **how many** instances of a **character**, **group**, or **character class** must be **present** in the input for a match to be found.
 
