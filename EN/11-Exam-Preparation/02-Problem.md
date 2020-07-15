@@ -1,4 +1,15 @@
+# Registration
+
 [slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421822173" default /]
+[stream language="RO" videoId="436043909"  /]
+[/video-vimeo]
+[/slide]
+
+[slide hideTitle]
 # Registration
 [code-task title="Registration" taskId="d3807cc1-117e-4698-9d49-adceb9e49978" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

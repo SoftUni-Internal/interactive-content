@@ -1,4 +1,15 @@
+# Inbox Manager
+
 [slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421820584" default /]
+[stream language="RO" videoId="436043847"  /]
+[/video-vimeo]
+[/slide]
+
+[slide hideTitle]
 # Inbox Manager
 [code-task title="Inbox Manager" taskId="64e29e83-0df4-41cb-b25b-44ea07742954" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
