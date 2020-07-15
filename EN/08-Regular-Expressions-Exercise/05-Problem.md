@@ -1,3 +1,14 @@
+# Problem: Nether Realms
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421821336" default /]
+[stream language="RO" videoId="436028985"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
 # Problem: Nether Realms
 [code-task title="Nether Realms" taskId="b906fb25-6321-44d0-bde6-80b88937d198" executionType="tests-execution" executionStrategy="java-code" requiresInput]
