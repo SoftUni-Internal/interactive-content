@@ -1,6 +1,16 @@
 # StringBuilder: How It Works?
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="6988" endTimeInSeconds="7355"]
+[stream language="EN" videoId="421802353" default /]
+[stream language="RO" videoId="436008840"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
 # StringBuilder: How It Works?
 Just like the String the `StringBuilder` is a **sequence of characters**. 
 
