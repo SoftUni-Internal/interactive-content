@@ -1,12 +1,13 @@
-# Cybersecurity and Social Engineering
+# Working as а Developer in Amazon
 
 ## Description
-- What actions can we take to increase our productivity?
-- How to maintain concentration during work? 
-- What tools can be useful for us to manage our time and tasks?
-- What are the biggest challenges of telecommuting?
-- Will remote work become more common in the future?
-- What good practices can we apply in our work process now?
+In this webinar, Viktor Dakov will answer some of the following questions:
+- What do you need to know before getting into programming;
+- Which is more important: talent or hard work;
+- Which programming language to start with;
+- How to prepare for your first interview;
+- How did he decide to apply for a job in Amazon;
+- What are the questions asked on an Amazon interview.
 
 ## Language
 English
