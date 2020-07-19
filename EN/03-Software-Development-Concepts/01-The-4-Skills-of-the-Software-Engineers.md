@@ -171,26 +171,26 @@ For Example:
 - **Django** stack (`Python` + `Django` + `PostgreSQL`).
 
 Here are some more detailed examples of commonly used software development stacks which software companies are looking for:
-- `.NET` development stack:
+`.NET` development stack:
     -  `C#` + `.NET Core` + `Visual Studio` 
     - **databases** + `SQL Server` + `SQL` + `Entity Framework`
     - ` ASP.NET MVC` and `Web API` + `HTML` + `CSS` + `JavaScript` + `AJAX` + `RESTful` services + `JSON` +
     -  **object-oriented programming** + **functional programming** + **algorithmic thinking** 
     - **source control systems** and `Git` + **software engineering** + **cloud** + **containers** + **English** and **teamwork skills**.
 
-- `JavaScript` development stack: 
+`JavaScript` development stack: 
     - `JavaScript` + **functional programming** + **object-oriented programming**
     - **databases** + `MongoDB` or `MySQL` + `HTTP` + **web programming** 
     - **web front-end** (`HTML` with `CSS`, `JavaScript`, `DOM` and `jQuery` or `Angular` or `React`)
     - **web back-end** (`Node.js` and `Express`) + **JavaScript tools** + **cloud** + **containers**.
 
-- `Python` development stack: 
+`Python` development stack: 
     - `Python`+ **object-oriented programming** + **functional programming** 
     - **databases** + `MongoDB` or `MySQL` or `PostgreSQL` + `HTTP` 
     - web development + `HTML` + `CSS` + `JavaScript` and `DOM` + `jQuery`
     - some **MVC framework** like `Django` or `Flask` + cloud and containers.
 
-- `Java` development stacks: 
+`Java` development stacks: 
     - `Java`+ **Java API classes** + **object-oriented programming** + **functional programming**
     - **databases** + `MySQL` + `HTTP` + web programming + 
     - **web front-end** - `HTML` + `CSS` + `JS` + `DOM` + `jQuery` + `JSP` and `Servlets` 
