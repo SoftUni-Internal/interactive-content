@@ -64,6 +64,80 @@ Developers use similar concepts when they **create the user interface of their a
 
 # Object-Oriented Programming (OOP)
 
+**Object-oriented programming** (**OOP**) is the concept of using **classes** and **objects** to model the real world.
+
+**Classes** are sets of **data fields**, together with **methods** (which are functionality to interact with the data fields and other objects).
+
+**Classes** define the **structure of information objects**: the data they holds and the operation they can perform.
+**Objects** are **instances of the classes**, holding certain values in their data fields.
+
+At the **example** we have a definition of the **class "Rectangle"**:
+```java
+class Rectangle {
+
+  int width, height;
+
+  int CalcArea() {
+      return width * height;
+  }
+}
+```
+It holds two **data fields**: **width** and **height**. – integer values.
+
+It defines a **method**, holding the code to **calculate the area** of the rectangle.
+
+This is the **class definition** and the programming language here doesn’t matter.
+```java
+class Rectangle{
+
+}
+```
+These are the definitions of the **data fields**, which the class holds in each object.
+```java
+int width, height;
+```
+
+These are the methods of the class: the operations or actions that objects of this class can do.
+```java
+int CalcArea() {
+      return width * height;
+  }
+```
+We can create several objects of this class "Rectangle" every with different width and height, for examlple:
+
+```java 
+Rectangle( 5, 6 );
+
+Rectangle( 6, 4 );
+
+Rectangle( 7, 3 );
+```
+
+In the example above we have **several objects** of this class "**Rectangle**".
+
+The **first object** is a rectangle of **width 5** and **height 6**.
+
+Another **object** has **width 6** and **height 4**.
+
+Some other **object** has **width 7** and **height 3**.
+
+We have **one class "Rectangle"** and **3 objects** (or instances) of this class.
+
+The **class** holds the definition (the specification, the model, the template) for the objects.
+
+It defines the **data fields** and **methods** and more details (in some cases).
+
+Classes don't hold data. They hold **data definitions** and **operation definitions**.
+
+**Objects hold values** for the data fields in the class.
+
+Objects of class "Rectangle" **hold data** about **certain rectangle**.
+
+Typically one class has **multiple objects** (or instances).
+
+**Classes** and **objects** are the building blocks of the **object-oriented programming (OOP)** and they come together with some other OOP concepts like **abstraction**, **interfaces**, **data encapsulation**, **inheritance**, **polymorphism** and **exception handling**.
+
+
 [/slide]
 
 [slide]
