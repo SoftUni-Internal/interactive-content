@@ -171,7 +171,12 @@ For Example:
 - **Django** stack (`Python` + `Django` + `PostgreSQL`).
 
 Here are some more detailed examples of commonly used software development stacks which software companies are looking for:
-- `.NET` development stack consists of: `C#` + `.NET Core` + `Visual Studio` + **databases** + `SQL Server` + `SQL` + `Entity Framework` +` ASP.NET MVC` and `Web API` + `HTML` + `CSS` + `JavaScript` + `AJAX` + `RESTful` services + `JSON` + **object-oriented programming** + **functional programming** + **algorithmic thinking** + **source control systems** and `Git` + **software engineering** + **cloud** + **containers** + **English** and **teamwork skills**.
+- `.NET` development stack:
+    -  `C#` + `.NET Core` + `Visual Studio` 
+    - **databases** + `SQL Server` + `SQL` + `Entity Framework`
+    - ` ASP.NET MVC` and `Web API` + `HTML` + `CSS` + `JavaScript` + `AJAX` + `RESTful` services + `JSON` +
+    -  **object-oriented programming** + **functional programming** + **algorithmic thinking** 
+    - **source control systems** and `Git` + **software engineering** + **cloud** + **containers** + **English** and **teamwork skills**.
 
 - `JavaScript` development stack: `JavaScript` + **functional programming** + **object-oriented programming** + **databases** + `MongoDB` or `MySQL` + `HTTP` + **web programming** + **web front-end** (`HTML` with `CSS`, `JavaScript`, `DOM` and `jQuery` or `Angular` or `React`) + web back-end (`Node.js` and `Express`) + **JavaScript tools** + **cloud** + **containers**.
 
