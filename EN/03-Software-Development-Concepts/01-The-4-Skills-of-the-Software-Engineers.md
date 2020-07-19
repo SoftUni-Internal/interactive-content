@@ -178,11 +178,23 @@ Here are some more detailed examples of commonly used software development stack
     -  **object-oriented programming** + **functional programming** + **algorithmic thinking** 
     - **source control systems** and `Git` + **software engineering** + **cloud** + **containers** + **English** and **teamwork skills**.
 
-- `JavaScript` development stack: `JavaScript` + **functional programming** + **object-oriented programming** + **databases** + `MongoDB` or `MySQL` + `HTTP` + **web programming** + **web front-end** (`HTML` with `CSS`, `JavaScript`, `DOM` and `jQuery` or `Angular` or `React`) + web back-end (`Node.js` and `Express`) + **JavaScript tools** + **cloud** + **containers**.
+- `JavaScript` development stack: 
+    - `JavaScript` + **functional programming** + **object-oriented programming**
+    - **databases** + `MongoDB` or `MySQL` + `HTTP` + **web programming** 
+    - **web front-end** (`HTML` with `CSS`, `JavaScript`, `DOM` and `jQuery` or `Angular` or `React`)
+    - **web back-end** (`Node.js` and `Express`) + **JavaScript tools** + **cloud** + **containers**.
 
-- `Python` development stack: `Python`+ **object-oriented programming** + **functional programming** + **databases** + `MongoDB` or `MySQL` or `PostgreSQL` + `HTTP` + web development + `HTML` + `CSS` + `JavaScript` and `DOM` + `jQuery` + some MVC framework like `Django` or `Flask` + cloud and containers.
+- `Python` development stack: 
+    - `Python`+ **object-oriented programming** + **functional programming** 
+    - **databases** + `MongoDB` or `MySQL` or `PostgreSQL` + `HTTP` 
+    - web development + `HTML` + `CSS` + `JavaScript` and `DOM` + `jQuery`
+    - some **MVC framework** like `Django` or `Flask` + cloud and containers.
 
-- `Java` development stacks: `Java`+ **Java API classes** + **object-oriented programming** + **functional programming** + **databases** + `MySQL` + `HTTP` + web programming + `HTML` + `CSS` + `JS` + `DOM` + `jQuery` + `JSP` and `Servlets` + `Spring MVC` or `Java EE` + cloud and containers.
+- `Java` development stacks: 
+    - `Java`+ **Java API classes** + **object-oriented programming** + **functional programming**
+    - **databases** + `MySQL` + `HTTP` + web programming + 
+    - **web front-end** - `HTML` + `CSS` + `JS` + `DOM` + `jQuery` + `JSP` and `Servlets` 
+    - `Spring MVC` or `Java EE` + cloud and containers.
 
 All these technologies consist of large amount of **technical knowledge**, which **change very fast**.
 Once you learn a software technology, such as Angular 9 or Java EE 8, it will be **outdated in few years** or even months and new versions or entirely new technologies will come as replacement. 
