@@ -16,6 +16,21 @@
 
 # In this lesson you learnt:
 
+- The 4 skills of the software engineers:
+    - Coding 
+    - Problem solving 
+    - Development concepts 
+    - Software technologies
+    
+- Software development concepts
+    - Object-oriented programming
+    - Functional programming
+    - Asynchronous programming
+    - Data structures & algorithms
+    - Web technology concepts
+    - Front-end and UI concepts 
+    - Back-end development concepts
+    - RESTful services, databases, cloud
 
 
 
