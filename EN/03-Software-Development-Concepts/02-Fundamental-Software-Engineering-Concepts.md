@@ -595,7 +595,7 @@ Most user interface frameworks and libraries are **event-driven** and use the "*
 - Communication in Internet uses **networking protocols**.
 - **Protocols** define the technical standards for communication between two systems, for example a mobile app and a Web server.
 
-The [**OSI model**](https://en.wikipedia.org/wiki/OSI_model) defines **7 layers** of networking protocols.
+The [OSI model](https://en.wikipedia.org/wiki/OSI_model) defines **7 layers** of networking protocols.
 
 - **OSI** stands for "Open Systems Interconnection" and defines a framework on which modern networking and communication standards are based.
 
@@ -659,10 +659,48 @@ The **7-layer OSI model** is too complicated.
 - Software engineers only need to learn **the basic concepts of networking** , networking models and the basics of the most important network protocols (like HTTP).
 - Everything else from the world of networks is optional and whether developers need it highly depends on their narrow specialization.
 
+
+## HTTP and Socket Communication
+
+Most connected applications communicate through **HTTP** or **sockets**.
+
+**HTTP** is application level protocol for the Web, the protocol used by Web browsers to open Web sites.
+
+**Sockets** are bi-directional stream connections, usually implemented by the **TCP** protocol or the **WebSocket** protocol, which is a socket over HTTP.
+
+**HTTP** is a "request / response" based protocol for the Web.
+
+- **Web clients request** a resource, using HTTP GET, POST, PUT or DELETE **request**.
+- The **Web server responds to the request** and provides the resource as HTTP **response**.
+
+**Sockets** are bidirectional communication streams.
+
+When a **socket connection** is established between two endpoints (host + port), both participants can **send and receive data** , which arrives in the same order, as it was sent.
+
+**Sockets** are used for communication over Internet.
+
+**Sockets** are used to open a Web site, to download a file from Internet, for real-time communication such as chat messaging, for streaming video, for gaming and in many other scenarios.
+
+- **HTTP** also works over a **TCP** or **QUIC** socket connection.
+
+**Web sockets** are **sockets** that run over **HTTP.**
+
+If supported by the Web server, an HTTP connection can be **upgraded to a WebSocket** , using special HTTP Upgrade headers in the request.
+
+**Web sockets** allows JavaScript clients to communicate with the Web server bidirectionally in a **message-oriented style**.
+- The **Web server can push data messages** to the client over the Web socket at any time.
+- The **Web client can also push data messages** to the Web server over the Web socket at any time.
+- The **WebSocket** technology allows Web applications to efficiently **communicate in real-time**.
+
+You will learn more about socket communication later at **SoftUni**, in the **Web development professional modules.**
+
 [/slide]
 
 [slide]
 
 # Asynchronous Programming
+
+
+
 
 [/slide]
