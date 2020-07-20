@@ -467,6 +467,41 @@ DepthFirstSearch(node) {
 
 # Component-Based Development and Event-Driven Programming
 
+
+**Component-based software development** is software development approach, a programming paradigm, based on the **composition of re-usable components**.
+
+- Instead of building the application or system from scratch, developers take **ready-to-use components** and plug them into their software.
+- The **components** are **building blocks** , which come from **component libraries** and **software packages** (which can be open-source, royalty free or commercial).
+
+**Components** are self-contained pieces of functionality, ready to be inserted as part of larger software application.
+
+- For **example** , a **PDF generator** component can be used to
+  - create PDF reports, insert formatted text, images, tables and other elements in them
+  - and then create a **PDF file** , which can be displayed in the Web browser or printed on paper.
+  - The **internal details** about the PDF document format and how it works **are hidden** in the component.
+  - Developers do not need to care about these technical details. They just use the component.
+- Another **example** of software component is an **email sender** , which can send emails, holding formatted text and attachments.
+  - The email components knows how to connect to the specified **email server** using the **SMTP protocol**
+  - and how to compose **email messages** using the **MIME standard**.
+  - This functionality is **encapsulated internally** inside the component and developers do not have to go into great technical details.
+- Another **example** of software component is a **"date picker" UI control** , used in Web front-end applications.
+  - The **"date picker"** visual component is a **drop-down box** , which shows the **calendar** and users can select a specific date.
+  - If you open a website to book online airline tickets, you will see such a &quot;date picker&quot;component.
+
+**User interface (UI) components** are also known as **UI controls** , **visual components** or **widgets**.
+
+- Software components can be **visual** , such as the date picker and **non-visual** , such as the PDF generator.
+- **Visual components** are also called &quot; **UI controls**&quot;.
+
+Software components are distributed in **component libraries**.
+
+- **Components libraries** are software components, bundled as redistributable software packages.
+  - They can be downloaded from a **software component repository** (such as **npm** , **NuGet** and **PyPI** ).
+  - Or can be purchased from **software component publishers** (such as Telerik, DevExpress, Aspose, and others).
+  - Or can be publicly available **open-source projects** (such as **Apache Commons Crypto** and **jQuery UI** ).
+- Example of open-source **UI control library** is the[jQuery UI](https://jqueryui.com/) project.
+  - **jQuery UI** provides front-end user-interface components, widgets, effects and interactions for JavaScript developers.
+
 [/slide]
 
 [slide]
