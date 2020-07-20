@@ -137,12 +137,47 @@ Typically one class has **multiple objects** (or instances).
 
 **Classes** and **objects** are the building blocks of the **object-oriented programming (OOP)** and they come together with some other OOP concepts like **abstraction**, **interfaces**, **data encapsulation**, **inheritance**, **polymorphism** and **exception handling**.
 
+## Inheritance and Interfaces
+
+**Inheritance** and **Interfaces** are two other major concepts in the object-oriented programming.
+
+**Inheritance** allows classes to **inherit data and functionality** from a **parent class** (also called "**base class**").
+
+When a class inherits another class, the **parent class fields** are merged with the **child class fields** and they together form the **set of data fields** for the child class.
+
+**Interfaces** defines **abstract actions**.
+
+These are actions to be **implemented in the descendent classes**.
+
+Interfaces define a **set of empty (or abstract) methods** (or actions), which shall be obligatory implemented in the child classes.
+
+Interfaces are also called "**contracts**", because they define certain set of functionalities, a contract to implement certain methods.
+
+**Abstract classes** are used to model abstractions.
+
+For example, the class **Figure** is not a concrete figure like square or rectangle, but the concept or the abstraction of "figure".
+
+Abstract classes defines **data** + **actions** (or normal methods) + **abstract actions** (or empty methods).
+
+Abstract classes are **designed to be inherited** (or extended).
+
+**Concrete classes** like **Circle** and **Rectangle** represent real entities, not abstractions.
+
+Concrete classes define data fields + concrete functionality (methods).
+
+They can **implement interfaces** and **inherit abstract and other classes**.
+
+
+
+
 
 [/slide]
 
 [slide]
 
 # Functional Programming
+
+
 
 [/slide]
 
