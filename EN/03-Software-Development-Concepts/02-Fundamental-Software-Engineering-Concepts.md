@@ -205,14 +205,10 @@ They can **implement interfaces** and **inherit abstract and other classes**.
   - They only access their input arguments and return an output.
   - I will give you examples later.
 
-Functional programming is **declarative**  programing approach (not  **imperative** ),
-
-- which means that instead of describing an algorithm how to do something step by step,
-- functional developers describe the result by functions and compositions of functions.
+Functional programming is **declarative**  programing approach (not  **imperative** ), which means that instead of describing an algorithm how to do something step by step, functional developers describe the result by functions and compositions of functions.
 
 The **program state** flows through pure functions, where one function passes its output data as input to other function.
 
-- I will illustrate how this happens with **examples** later.
 
 What is a **pure function**?
 
@@ -244,8 +240,35 @@ This is the most **important principle in functional programming** :
 
 - To build programs by composition of stateless pure functions without side effects.
  
+## Functional Programming Languages
 
+There are many **functional programming languages and languages** that incorporate **functional paradigms** into modern software development.
 
+- Most modern languages are not functional, but support **concepts for functional programming**.
+
+**Purely functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
+
+- Purely functional developers need to **switch their thinking style** from the traditional "**algorithmic thinking**" to "**functional thinking**".
+- The program in the purely functional languages is a **pure function** (which calls other pure functions) without side effects.
+- An example of purely functional language is **Haskell** , which is not widely used in practice,
+  - but it has a great value in learning the functional programming paradigms.
+
+**Impure functional languages** are used more often because they allow exceptions from the concept of &quot;pure functions&quot; and simplify the work of developers.
+
+- These languages emphasize the **functional style** but sometimes **allow side effects**.
+- An example of impure functional language is **Clojure**.
+  - It is not very popular in practical software development.
+
+**Multi-paradigm languages** combine the strengths of both the **functional** and the **algorithmic** (or **imperative** )world.
+
+- Most of today&#39;s widely used general-purpose programming languages are **multi-paradigm**.
+- They combine multiple programing paradigms: **functional** programming, **declarative** programming, **structured** programming, **imperative** programming, **object-oriented** programming, **component-based** programming, **event-driven** programming, **asynchronous** programming, and many others.
+
+Examples of popular general-purpose multi-paradigm programming languages are:
+
+- **JavaScript** , **C#** , **Python** , **Java** , PHP, C++, Go, Swift and TypeScript.
+
+All these languages combine multiple concepts and paradigms for structuring the program to simplify the work of developers and improve their efficiency and performance.
 
 [/slide]
 
