@@ -198,6 +198,52 @@ They can **implement interfaces** and **inherit abstract and other classes**.
 
 # Functional Programming
 
+**Functional programming**  (FP) is programming based on composing **pure functions** , while avoiding **shared state** , **mutable data** , and  **side-effects**.
+
+- Functional programs are **sequences of transformations** of data through **functions**.
+- In pure functional programming functions and programs **don&#39;t have state** , which means that **functions do not hold shared data**.
+  - They only access their input arguments and return an output.
+  - I will give you examples later.
+
+Functional programming is **declarative**  programing approach (not  **imperative** ),
+
+- which means that instead of describing an algorithm how to do something step by step,
+- functional developers describe the result by functions and compositions of functions.
+
+The **program state** flows through pure functions, where one function passes its output data as input to other function.
+
+- I will illustrate how this happens with **examples** later.
+
+What is a &quot; **pure function**&quot;?
+
+- It is a function, which returns value **only determined by its input** , without side effects.
+- Printing something at the console or storing something in a database are examples of side effects.
+- Therefore, using **pure functional programming** is often **impractical**.
+  - Modern languages use **elements of functional-style programming** and are not purely functional.
+
+**Examples of pure functions** are:
+
+- the square root function: &quot;_ **sqrt of** _ **x**&quot;, which takes a number as input and returns another number as output,
+- and the function &quot;_ **sort of list** _&quot;, which takes a list as input and returns a new list as output.
+
+Both functions have **no side effects** :
+
+- they don&#39;t change anything;
+- they don&#39;t read or write external data;
+- and they do not use state.
+
+They are **pure functions**.
+
+**Pure functions** are the **heart** of the functional programming.
+
+- Using &quot;pure functions&quot; means maintaining &quot;consistent results&quot;.
+- If you **invoke a pure function many times** with the same input data, it will have the same consistent behavior and **will return the same result** , because it have no state and no interaction with the external data or components.
+  - Pure functions produce **predictable results and behavior** and sometimes their correctness can be mathematically proven.
+
+This is the most **important principle in functional programming** :
+
+- to build programs by composition of stateless pure functions without side effects.
+ 
 
 
 
