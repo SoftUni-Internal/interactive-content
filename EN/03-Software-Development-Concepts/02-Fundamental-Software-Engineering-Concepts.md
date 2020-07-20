@@ -589,6 +589,76 @@ Most user interface frameworks and libraries are **event-driven** and use the "*
 
 # Networking and Internet Protocols
 
+
+**Networking and Internet protocols** play an important role in software development.
+
+- Communication in Internet uses **networking protocols**.
+- **Protocols** define the technical standards for communication between two systems, for example a mobile app and a Web server.
+
+The [**OSI model**](https://en.wikipedia.org/wiki/OSI_model) defines **7 layers** of networking protocols.
+
+- **OSI** stands for "Open Systems Interconnection" and defines a framework on which modern networking and communication standards are based.
+
+The 7 layers of the OSI model are:
+
+- **Layer 1** : the **Physical layer**.
+  - It is responsible for the physical connection between two or more parties.
+  - At the physical layer, the data is carried by **electrical impulses** (using electrical cables), **radio signals** (in wireless communication), or **light** (using optical cables).
+  - The physical layer specifications define characteristics such as voltage levels, the timing of voltage changes, physical data rates, maximum transmission distances, modulation scheme, channel access method, physical connectors and many more.
+  - The physical layer is part of the specifications of the **USB** , **Bluetooth** , **Ethernet** and **WiFi** standards.
+  - **Repeaters** , **hubs** and **antennas** are typical devices at the physical layer.
+- **Layer 2** : the **Data Link layer**.
+  - It provides **node-to-node data transfer** – a link between two directly connected nodesin the same network.
+  - The data transferred is split into packets called "**frames**".
+  - Layer 2 hardware, such as **Ethernet adapters** and **modems** are responsible for transmitting the frames over the physical connections.
+  - At layers 2 communication devices are identified by **hardware addresses** , such as MAC address.
+  - Typical data link layer protocols are **Ethernet** and **PPP**.
+  - **Network switches** are typical hardware for the layer 2 (the data link layer).
+- **Layer**  **3** : the **Network layer**.
+  - Layer 3 networking protocols (such as **IP** , **IPv6** , **IPSec** , **ICMP** and **IGMP** ) transfer **packets** (such as IP packets) between two nodes at **two different networks**.
+  - Packets typically pass through several **routers** to reach their destination.
+  - The **routing** of the packetsis an important concept for the layer 3 networking.
+  - **Routers** are typical hardware for the layer 3 (the network layer).
+  - The concept of "**IP address**" comes from the layer 3 and is important for software developers.
+- **Layer**  **4** : the **Transport layer**.
+  - The transport layer protocols (such as **TCP** , **UDP** and **QUIC** ) are responsible for end-to-end communication between the two endpoints.
+  - These protocols transfer data, split into pieces called "**segments**", and handle the flow control and error control during the communication.
+  - For example, if an IP packet at layer 3 is lost, it will not be retransmittedand it will never arrive,
+    - but layer 4 protocol TCP retransmit the lost TCP segments and maintain streams of data between the endpoints.
+  - An important concept from the developer's perspective at layer 4 is the **port number**.
+    - Port numbers allow maintaining multiple parallel stream connections between two endpoints.
+- **Layer**  **5** : the **Session layer**.
+  - It controls the **dialogues** (connections) between computers.
+  - It establishes, manages and terminates connections between the local and remote application.
+  - Example protocols at layer 5 are **RPC** (Remote Procedure Call) and virtual private networking protocols like PPTP.
+- **Layer**  **6** : the **Presentation layer**.
+  - It is responsible for translation, encryption, and compression of data.
+  - Example protocols at layer 5 are **SSL** (Secure Socket Layer) and **TLS** (Transport Layer Security).
+- **Layer**  **7** : the **Application layer**.
+  - This is the only layer that directly interacts with data from the user.
+  - Software applications like Web browsers and Email clients rely directly on the application layer protocols.
+  - The **"Application layer"** is the most important for software engineers from all the OSI layers,
+    - because the code developers write, directly interacts at this layer.
+  - Typical application level protocols are: **HTTP** , **SMTP** , **POP3** , **IMAP** , **FTP** , **DNS** and many others.
+  - The **HTTP** protocol connects Web clients with the Web servers and allows downloading resources from the Web.
+  - The **SMTP** , **POP3** and **IMAP** protocols are used by email clients to send and read **emails**.
+  - Many other protocols operate at the **application layer** and you will encounter some of them in your career as a software engineer.
+
+The **7-layer OSI model** is too complicated.
+
+- It is designed for network engineers and communication experts.
+- In software development a simplified networking model exists.
+- It is called "**The TCP/IP protocol suite**" and it consists of only 4 layers:
+  - **Link layer** , which combines physical media and data link protocols, such as **Ethernet**.
+  - **Internet layer** , which transmits packets between two hosts in Internet, using the network protocols **IP** or **IPv6**.
+  - **Transport layer** , which provides communication between two endpoints, using the **TCP** , **UDP** or **QUIC** protocols.
+  - **Application layer** , which defines how two applications (client and server) talk to each other. Protocols like **HTTP** , **HTTPS** , **SMTP** , **SMTPS** , **DNS** and **DNSSEC** operate at the application level.
+
+**Network protocols** are a **large area of knowledge** and it takes years to master them in detail.
+
+- Software engineers only need to learn **the basic concepts of networking** , networking models and the basics of the most important network protocols (like HTTP).
+- Everything else from the world of networks is optional and whether developers need it highly depends on their narrow specialization.
+
 [/slide]
 
 [slide]
