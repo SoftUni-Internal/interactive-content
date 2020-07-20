@@ -537,6 +537,52 @@ Developers can write their **own components** (such as an "email sender") and **
   - When the button is clicked the framework **emits the "on click" event**.
   - The event handling function **handles the "on click" event** and shows a message.
 
+
+
+## Inversion of Control - IoC
+
+The **inversion of control** ( **IoC** ) principleis a **program control-flow paradigm** , where
+**a function or component or framework does the processing** and **calls pieces of your code** for certain tasks.
+
+Instead of **your program to keep the control** and invoke external functions and libraries,
+**the framework takes the control** and invokes pieces of your program's code (functions from your code).
+
+This concept is called "**inversion of control**" and is very often used with **software frameworks**.
+
+For **example** , most user interface **(UI) frameworks** work under **the "inversion of control" principle**.
+
+The UI frameworks typically keeps the control and the execution of your entire application, and invoke your code to handle events, to which your code is subscribed.
+
+Look at the following picture to get a better understanding of the difference between the "**traditional program flow**" and the "**inversion of control program flow**".
+
+[image assetsSrc="SDC-example(5).png" /]
+
+
+Let's look at two **examples** of "inversion of control" behavior, to understand it better:
+
+The first **example** is a **parser** , which processes a document and calls **events** when it finds certain tokens.
+
+- An **XML parser** takes as input an XML document, and it calls an **event handler** from your code, when a new tag is found in the XML document.
+- This is how **event-driven XML parsers** work, such as SAX.
+  - **SAX** stands for "Simple API for XML" and is widely used industry standard for XML processing.
+
+Another example is a **GUI app** - a visual app with a **graphical user interface** (GUI)
+
+The UI framework drives the app and **keeps the control over its execution**.
+
+**The framework manages the UI** , draws the UI controls, listens for user interactions and emits **events** after each interaction.
+
+When the text is changed in a text box, or a button is clicked or the focus is moved from one text field to another, the UI framework emits an event.
+
+Developers **handle these events** by providing event-handler functions and respond to user interactions.
+
+Most user interface frameworks and libraries are **event-driven** and use the "**inversion of control**" principle.
+
+- That's why "**event-driven programming**" and "**inversion of control**" are so important.
+- If you deal with **front-end** and **user interfaces** , you will use inversion of control frameworks and event-driven programming.
+- We shall learn **how to create front-end applications** in the professional modules and courses at **SoftUni**.
+
+
 [/slide]
 
 [slide]
