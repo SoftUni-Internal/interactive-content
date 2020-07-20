@@ -504,7 +504,38 @@ Software components are distributed in **component libraries**.
 
 ## Event-Driven Programming
 
+**Event-driven programming** is a **programming paradigm**, in which **the flow of the program ** is determined by  **events**, such as mouse clicks, key presses, button clicks, and many others.
 
+Typically a **software framework** drives the application:
+
+- **listens** for events in an **event loop** 
+- when an event occurs, the framework calls the code to handle it
+
+Developers write the **code for handling the events** (functions or methods).
+
+**Examples** of event-driven software frameworks are:
+
+- The user interface (UI) system in the Web browsers, where the **HTML5** standard describes the **components** and their **events**.
+- Another example is **the UI system in Android** , which defines a set of **UI components** with **events**.
+
+**Event source** (or event emitter) is a software component, that **produces events**.
+
+- For example, an internal component in the software framework may track the mouse and when the mouse is clicked, it may emit an event.
+- Typical **example** of event source is **the "button" component** , which defines the "**on click**" event.
+
+Developers can write their **own components** (such as an "email sender") and **emit events** in certain situations,
+
+- for example, when a successful **connection to the mail server** is established,
+- or when the **email was rejected** by the server for some reason.
+
+**Event handler** (or event consumer) is a **piece of code** (or callback function), written by developers, to **handle** (or process) **an event**.
+
+- A simple **example** is to **show a message, when a button is clicked**.
+- In this example the **button** is an **event emitter**.
+  - It has "**on click**" event, which can be handled by developers.
+- To handle the event, developers write an **event handling function** and assign it for the "**on click**" event.
+  - When the button is clicked the framework **emits the "on click" event**.
+  - The event handling function **handles the "on click" event** and shows a message.
 
 [/slide]
 
