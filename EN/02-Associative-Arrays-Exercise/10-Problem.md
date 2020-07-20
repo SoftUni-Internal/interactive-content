@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: SoftUni Course Planning
-[code-task title="SoftUni Course Planning" taskId="f79c1e2b-c5aa-4d45-9d52-41c73c3db591" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: SoftUni Exam Results
+[code-task title="SoftUni Exam Results" taskId="f79c1e2b-c5aa-4d45-9d52-41c73c3db591" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -14,25 +14,44 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are tasked to help planning a course by keeping track of the **lessons**, that are going to be included in the course, as well as all the **exercises** for the lessons.
+You should collect all the submissions and print the final results and statistics about each language that the participants submitted their solutions in.
 
-On the **first input line** you will receive the **initial schedule of lessons and exercises** that are going to be part of the next course, **separated by comma and space** ", ". 
+You will be receiving lines in the following format: "\{username\}-\{language\}-\{points\}" until you receive "exam finished". 
 
-But before the course starts, there are some changes to be made. 
+You should store each **username** and his **submissions and points**. 
 
-Until you receive "course start" you will be given some commands to modify the course schedule. 
+You can receive a command to ban a user for **cheating** in the following format: "\{username\}-banned". 
 
-The **possible commands** are: 
+In that case, you should remove the user from the contest, but preserve his submissions in the total count of submissions for each language.
 
-- Add:\{lessonTitle\} - **add the lesson to the end of the schedule**, if it does **not exist**
-- Insert:\{lessonTitle\}:\{index\} - **insert the lesson to the given index**, if it does **not exist**
-- Remove:\{lessonTitle\} - **remove the lesson**, if it **exists**
-- Swap:\{lessonTitle\}:\{lessonTitle\} - **change the place of the two lessons**, if they **exist**
-- Exercise:\{lessonTitle\} - **add exercise in the schedule right after the lesson index**
-    - **if the lesson exists** and there is **no exercise already,** in the following format "\{lessonTitle\}-Exercise"
-    - **if the lesson doesn't exist**, **add the lesson** in the end of the course schedule, **followed by the exercise**
+After receiving "exam finished", **print** each of the participants, ordered **descending** by their **max** **points**, then by **username**, in the following **format**:
 
-Each time you **swap or remove a lesson**, you should **do the same with the exercises**, if there are any, which follow the lessons.
+Results:
+\{username\} \| \{points\}
+…
+
+After that print each language, used in the exam, ordered **descending** by total **submission count** and **then** by language **name**, in the following format:
+
+Submissions:
+\{language\} - \{submissionsCount\}
+…
+
+## Input / Constraints
+Until you receive "exam finished", you will be receiving participant submissions in the following format: "\{username\}-\{language\}-\{points\}"
+You can receive a ban command -> "\{username\}-banned"
+The points of the participant will always be a valid integer in the range \[0-100\]
+
+## Output
+- Print the exam results for each participant, ordered descending by max points and then by username, in the following format:
+
+Results:
+\{username\} \| \{points\}
+…
+- After that print each language, ordered descending by total submissions and then by language name, in the following format:
+
+Submissions:
+\{language\} - \{submissionsCount\}
+…
 
 
 ### Examples
