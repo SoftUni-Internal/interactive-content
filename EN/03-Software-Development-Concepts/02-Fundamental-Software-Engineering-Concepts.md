@@ -387,13 +387,20 @@ This is how **arrays** and **array-based lists** look like in most programming l
 
 - They are **sequences of elements** , which are directly accessible by their **position** (which is called "**index**").
 
-This is an example of **linked-list**.
+This is an example of **linked-list**:
+
+[image assetsSrc="SDC-example(3).png" /]
+
+
 
 - It consists of **elements** , where each element knows its **next element**.
 - The **last element** has "**null**" (or missing value) as next element.
 - Unlike array-based lists, linked list **do not provide direct access by index**.
 
-This is an example of **array-based queue**.
+This is an example of **array-based queue**:
+
+[image assetsSrc="SDC-example(4).png" /]
+
 
 - The "**queue**" data structure works on the principle **FIFO** (first-in first-out).
 - Elements are **appended** in the queue at its **left end** (at its back). This operation is called &"**enqueue**";.
