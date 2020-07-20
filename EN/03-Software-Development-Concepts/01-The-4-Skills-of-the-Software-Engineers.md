@@ -160,7 +160,7 @@ These principles of software engineering and development paradigms are independe
 
 - **Programming languages** - `JavaScript`, `C#` and `Python`
 - **Software development technologies** - `React`, `ASP.NET Core` and `Django`
-- **Software platforms** - `Java EE` and `.NET Core`)
+- **Software platforms** - `Java EE` and `.NET Core`
 - **Software libraries** - `Apache Commons` and `ML.NET`
 - **Development frameworks** - `Spring MVC` and `Angular`
 - **Developer tools** - `npm`, `Visual Studio`, `Webpack` and `Maven` 
