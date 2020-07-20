@@ -214,7 +214,7 @@ The **program state** flows through pure functions, where one function passes it
 
 - I will illustrate how this happens with **examples** later.
 
-What is a &quot; **pure function**&quot;?
+What is a **pure function**?
 
 - It is a function, which returns value **only determined by its input** , without side effects.
 - Printing something at the console or storing something in a database are examples of side effects.
@@ -223,26 +223,26 @@ What is a &quot; **pure function**&quot;?
 
 **Examples of pure functions** are:
 
-- the square root function: &quot;_ **sqrt of** _ **x**&quot;, which takes a number as input and returns another number as output,
-- and the function &quot;_ **sort of list** _&quot;, which takes a list as input and returns a new list as output.
+- the square root function: "**sqrt of**" "**x**", which takes a number as input and returns another number as output,
+- and the function "**sort of list**", which takes a list as input and returns a new list as output.
 
 Both functions have **no side effects** :
 
-- they don&#39;t change anything;
-- they don&#39;t read or write external data;
+- they do not change anything;
+- they do not read or write external data;
 - and they do not use state.
 
 They are **pure functions**.
 
 **Pure functions** are the **heart** of the functional programming.
 
-- Using &quot;pure functions&quot; means maintaining &quot;consistent results&quot;.
+- Using "**pure functions**" means maintaining "consistent results".
 - If you **invoke a pure function many times** with the same input data, it will have the same consistent behavior and **will return the same result** , because it have no state and no interaction with the external data or components.
   - Pure functions produce **predictable results and behavior** and sometimes their correctness can be mathematically proven.
 
 This is the most **important principle in functional programming** :
 
-- to build programs by composition of stateless pure functions without side effects.
+- To build programs by composition of stateless pure functions without side effects.
  
 
 
