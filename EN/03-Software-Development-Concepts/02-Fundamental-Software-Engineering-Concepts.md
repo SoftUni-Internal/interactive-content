@@ -710,7 +710,100 @@ You will learn more about socket communication later at **SoftUni**, in the **We
 
 # Asynchronous Programming
 
+**Asynchronous programming** is another important paradigm in software engineering.
 
+- **Asynchronous programming** and **concurrent execution** allow multiple pieces of code to run simultaneously.
+- This is **quite natural** in computer software: you can listen to music on your laptop while browsing a website and downloading files.
+- **Asynchronous programming** allows several functions or methods of your code to be executed **simultaneously**, just like you are executing several programs in the same time.
 
+There are many **concepts and technologies** , which implement asynchronous code execution:
+
+- multithreading, background tasks 
+- promises, forked processes, web workers 
+- service workers, and others.
+
+**Multithreading** in `Java`, `C#` and `Python` allows simultaneously running several **threads**.
+
+- A **thread** of execution is a piece of code, which runs simultaneously within your program or application.
+- **Threads** are **methods** or **functions** , which are **executed concurrently**.
+- A program can run **multiple threads concurrently**.
+- Threads share the program state, memory and other resources.
+
+Accessing **shared data** from concurrent threads may need **synchronization**.
+
+What will happen if **one thread is printing** the elements from a list, while **another thread is deleting** some of the elements **in the same time**?
+**Тhe program can crash**, when it tries to read deleted elements.
+
+This is a **big problem** with multithreaded applications.
+
+**Inconsistent behavior** , **crashes** , **unexpected results** , and **hanging** are just few **examples of problems** when multiple threads access shared data concurrently.
+
+To solve these challenges, developers use "**thread synchronization**".
+
+**Critical sections** , **locks** , **mutexes** , **semaphores** , **signals** , **atomic operations** and **monitors** are examples of **synchronization objects** used in multithreading to resolve the conflicts when accessing shared data from several threads.
+
+Many programming languages offer a **simplified concurrent programming model** , without threads.
+
+- It is based on background **tasks** (in C#) and **promises** (in JavaScript).
+- **Tasks** and **promises** are handled with special language constructs: **async** and **await**.
+- We **shall learn** how to use them in the JavaScript programming modules and courses at **SoftUni**.
+
+**Web Workers** and **Service Workers** in HTML5 are tasks (JavaScript code), which run in the background.
+
+- **Workers** are **like threads** , but they cannot access shared data, so **synchronization is not needed**.
+- **Workers communicate** with the hosting Web site **through messages**.
+
+Running multiple parallel **processes** in Windows or Linux is another option to implement **concurrent code execution**.
+
+- This approach is typical for lower-level programming languages like **C**.
+
+## Promises
+
+**Promises** are very **important concept** in JavaScript and some other languages.
+
+- You cannot be a **JavaScript developer** without understanding **how to use promises**.
+- Without promises, you cannot execute asynchronous tasks like downloading a resource from the server.
+
+A **promise** in JS holds an **operation** that runs **asynchronously**.
+
+- After **completion** or **failure** an **event** is called.
+- This means that the **operation** behind a promise **runs in the background**.
+- Some functions (like **fetching a resource** ) do not return the result but return a **promise**.
+- This is a **promise** to execute the requested operation in background and **return the result later**.
+- Promises accept **functions** to be invoked in case of **success** and in case of **error**.
+
+Let's see the following **example**:
+
+```JS
+let request = fetch('https://blog.softuni.org/wp-json/wp/v2/posts');
+request.then(function(response) {
+  response.json().then(function(posts) {
+    console.log(JSON.stringify(posts));
+  });
+});
+request.catch((err) => console.log(err));
+
+```
+
+- We **fetch the blog posts** from the SoftUni blog, through its API.
+- This "**fetch**" function in JavaScript downloads a resource through an asynchronous **HTTP request**.
+- It does not return the resource itself, but instead **returns a promise**.
+
+Next, we pass to the promise a **function** to be called **in case of success**.
+
+- This function will receive **the HTTP response** as parameter from the promise.
+
+To download the response body as **JSON** object, **we use a promise again**.
+
+- In case of success, we **print the downloaded blog posts** as JSON string on the console.
+
+Finally, we pass to the promise a **function** to be called **in case of error** (a lambda expression).
+
+- This function will be invoked **in case of problem**, for example:
+    - if the remote server is down
+    - if the specified URL is invalid
+    - if the Internet connection is lost
+- The error function will receive **the error details** as parameter from the promise.
+- If an error occurs, we **print the error details** on the console.
 
 [/slide]
