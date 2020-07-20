@@ -270,6 +270,102 @@ Examples of popular general-purpose multi-paradigm programming languages are:
 
 All these languages combine multiple concepts and paradigms for structuring the program to simplify the work of developers and improve their efficiency and performance.
 
+## Lambda and First-Class Functions
+
+In programming, **lambda functions** are expressions, which transform some input to some output.
+
+They look like a mathematical **formula**, or like an anonymous (unnamed) function.
+
+
+- Lambda function in `Java`:
+```java
+x -> 2 * x
+```
+
+- Lambda function in `C#`:
+```C#
+x => 2 * x
+```
+
+- Lambda function in `JavaScript`:
+```JS
+x => 2 * x
+```
+
+- Lambda function in `Python`:
+```Python
+lambda x: 2 * x
+```
+JavaScript, Python, C# and Java support "**first-class functions**".
+
+This concept means that **functions can be stored in variables** and can be **passed as arguments** to other functions.
+
+These languages support **expressions of type "function"**, which hold programming logic to transform some input into some output.
+
+**Lambda functions** are the simplest way to write an **expression of type "function"**.
+
+Once we have a variable, which holds a function, we can **invoke it**.
+
+- First Class Functions in `Java`
+```java
+Function<Integer, Integer> twice = x -> 2 * x;
+var d = twice.apply(5); // 10
+```
+- First Class Functions in `C#`
+```C#
+Func<int, int> twice = x => 2 * x;
+var d = twice(5);  // 10
+```
+- First Class Functions in `Python`
+```Python
+twice = lambda x: 2 * x
+d = twice(5)  // 10
+```
+- First Class Functions in `JavaScript`
+```JS
+let twice = x => 2 * x;
+let d = twice(5);  // 10
+```
+
+**First-class functions** are an important concept in programming.
+
+They allow functions and methods to **take other functions as arguments**.
+
+And this is **very powerful tool** for many situations.
+
+**We shall learn more** about functional programming and first-class functions in the advanced programming modules and courses at **SoftUni**.
+
+## Higher Order Functions 
+
+**Higher-order functions** take other functions as arguments. This is powerful concept in functional programming.
+
+Using functions, which **take other functions as argument**, we can implement **abstract behavior**.
+
+For Example:
+```JS
+function aggregate(start, end, func) {
+  for (var result = start, i = start+1; i <= end; i++)
+    result = func(result, i);
+  return result;
+}
+```
+Let's explain what does the function above:
+- It takes 3 parameters: **start**, **end** and **func**.
+
+- The function aggregates the result from the given function over the numbers from start to end.
+- For example, it can multiply the numbers from 1 to 10.
+- Or it can sum the numbers from 20 to 30.
+
+In the body of the "**aggregate**" **function** we apply the function "**func**" many times in a loop, for the numbers from "**start**" to "**end**".
+
+The **start number**, **end number** and the **aggregation function** come as arguments.
+
+This function is a good **example**, which illustrates the power of "**higher-order functions**" in functional programming.
+
+The function "**aggregate**" accepts as parameter another function, which combines two values during the aggregation process.
+
+
+
 [/slide]
 
 [slide]
