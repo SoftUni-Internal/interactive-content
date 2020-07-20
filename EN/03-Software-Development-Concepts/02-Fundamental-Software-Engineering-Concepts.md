@@ -372,17 +372,93 @@ The function "**aggregate**" accepts as parameter another function, which combin
 
 # Data Structures
 
+**Data structures** are representations of data in the computer memory, which allow efficient access and modification.
+
+- This is a pretty **big topic**.
+- **Hundreds of books** are written about data structures.
+- Data structures can be **linear structures** (such as arrays and lists), **tree-like structures** (suchas balanced trees), **graph-like structures** (such as graphs), **hash-based structures** (such as hash-tables) and others.
+
+**Linear data types** are the most commonly used data structures in programming.
+
+- They represent **sequences of elements** , which can be ordered or not, indexed or not, linked to the next element or not, etc.
+- Examples of linear data structures are **arrays** , **lists** , **stacks** and **queues**.
+
+This is how **arrays** and **array-based lists** look like in most programming languages and platforms:
+
+- They are **sequences of elements** , which are directly accessible by their **position** (which is called "**index**").
+
+This is an example of **linked-list**.
+
+- It consists of **elements** , where each element knows its **next element**.
+- The **last element** has "**null**" (or missing value) as next element.
+- Unlike array-based lists, linked list **do not provide direct access by index**.
+
+This is an example of **array-based queue**.
+
+- The "**queue**" data structure works on the principle **FIFO** (first-in first-out).
+- Elements are **appended** in the queue at its **left end** (at its back). This operation is called &"**enqueue**";.
+- Elements are **taken** from the queue from its **right end** (from its front). This operation is called "**dequeue**".
+
+We shall **master the linear data structures** in detail in the advanced programming modules at **SoftUni**.
+
+
+
+
+
+
 [/slide]
 
 [slide]
 
 # Data Structures and Algorithms
 
+In programming, sometimes we use more complex data structures, like **trees**.
+
+**Trees** and tree-like data structures consist of nodes, where each **node** holds data + list of **child nodes** + **parent node**.
+
+
+[image assetsSrc="SDC-example(2).png" /]
+
+The example above illustrates visually a **tree**.
+- This is a tree holding, the directory structure of a hard drive in Windows.
+- The **root** node "**C colon backslash**" has 3 **child nodes**: "Programs", "Users" and "Windows"
+- The child node "Users" has **3 child nodes**: "Maria", "Peter" and "George".
+- The other nodes have **no children**.
+- Each node, except the root, have a **parent node**.
+
+Data structures often come with **algorithms** for their processing.
+
+- Such algorithms can be different styles of traversing;
+  - appending, inserting, deleting and modifying a node;
+  - extracting sub-structures, finding paths, and much more.
+
+**Examples** of algorithms are the classical **tree traversal algorithms** :
+
+- Depth-First Search (DFS)
+- And Breadth-First Search (BFS)
+- We shall learn them in the "Data Structures and Algorithms" module at SoftUni.
+
+This is a **sample** pseudocode implementation of the **Depth-First-Search algorithm**.
+
+```Python
+DepthFirstSearch(node) {
+  print(node);
+  for each ch in node.childNodes
+    DepthFirstSearch(ch)
+}
+```
+
+- The **in-depth traversal** starts from certain **node** .
+- Then this **node** is first **printed**.
+- Then the traversal starts **recursively from each child node** of the current **node** .
+- The traversal process initially starts from the root node of the tree and reaches all tree nodes sooner or later.
+- Unless the tree has a cycle or the tree is not connected, **this process infinite** and will **traverse all the nodes**.
+
 [/slide]
 
 [slide]
 
-# Component-Based Developmentand Event-Driven Programming
+# Component-Based Development and Event-Driven Programming
 
 [/slide]
 
