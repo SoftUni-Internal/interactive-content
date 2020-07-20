@@ -232,11 +232,7 @@ What is a **pure function**?
 - the square root function: "**sqrt of**" "**x**", which takes a number as input and returns another number as output,
 - and the function "**sort of list**", which takes a list as input and returns a new list as output.
 
-Both functions have **no side effects** :
-
-- they do not change anything;
-- they do not read or write external data;
-- and they do not use state.
+Both functions have **no side effects** they do not change anything, they do not read or write external data and they do not use state.
 
 They are **pure functions**.
 
@@ -246,9 +242,7 @@ They are **pure functions**.
 - If you **invoke a pure function many times** with the same input data, it will have the same consistent behavior and **will return the same result** , because it have no state and no interaction with the external data or components.
   - Pure functions produce **predictable results and behavior** and sometimes their correctness can be mathematically proven.
 
-This is the most **important principle in functional programming** :
-
-- To build programs by composition of stateless pure functions without side effects.
+This is the most **important principle in functional programming**, to build programs by composition of stateless pure functions without side effects.
  
 ## Functional Programming Languages
 
