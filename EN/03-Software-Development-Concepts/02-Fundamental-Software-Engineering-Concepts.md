@@ -467,13 +467,128 @@ DepthFirstSearch(node) {
 
 # Component-Based Development and Event-Driven Programming
 
+
+**Component-based software development** is software development approach, a programming paradigm, based on the **composition of re-usable components**.
+
+- Instead of building the application or system from scratch, developers take **ready-to-use components** and plug them into their software.
+- The **components** are **building blocks** , which come from **component libraries** and **software packages** (which can be open-source, royalty free or commercial).
+
+**Components** are self-contained pieces of functionality, ready to be inserted as part of larger software application.
+
+- For **example** , a **PDF generator** component can be used to
+  - create PDF reports, insert formatted text, images, tables and other elements in them
+  - and then create a **PDF file** , which can be displayed in the Web browser or printed on paper.
+  - The **internal details** about the PDF document format and how it works **are hidden** in the component.
+  - Developers do not need to care about these technical details. They just use the component.
+- Another **example** of software component is an **email sender** , which can send emails, holding formatted text and attachments.
+  - The email components knows how to connect to the specified **email server** using the **SMTP protocol**
+  - and how to compose **email messages** using the **MIME standard**.
+  - This functionality is **encapsulated internally** inside the component and developers do not have to go into great technical details.
+- Another **example** of software component is a **"date picker" UI control** , used in Web front-end applications.
+  - The **"date picker"** visual component is a **drop-down box** , which shows the **calendar** and users can select a specific date.
+  - If you open a website to book online airline tickets, you will see such a "**date picker**" component.
+
+**User interface (UI) components** are also known as **UI controls** , **visual components** or **widgets**.
+
+- Software components can be **visual** , such as the date picker and **non-visual** , such as the PDF generator.
+- **Visual components** are also called **UI controls**.
+
+Software components are distributed in **component libraries**.
+
+- **Components libraries** are software components, bundled as redistributable software packages.
+  - They can be downloaded from a **software component repository** (such as **npm** , **NuGet** and **PyPI** ).
+  - Or can be purchased from **software component publishers** (such as Telerik, DevExpress, Aspose, and others).
+  - Or can be publicly available **open-source projects** (such as **Apache Commons Crypto** and **jQuery UI** ).
+- Example of open-source **UI control library** is the[jQuery UI](https://jqueryui.com/) project.
+  - **jQuery UI** provides front-end user-interface components, widgets, effects and interactions for JavaScript developers.
+
+## Event-Driven Programming
+
+**Event-driven programming** is a **programming paradigm**, in which **the flow of the program ** is determined by  **events**, such as mouse clicks, key presses, button clicks, and many others.
+
+Typically a **software framework** drives the application:
+
+- **listens** for events in an **event loop** 
+- when an event occurs, the framework calls the code to handle it
+
+Developers write the **code for handling the events** (functions or methods).
+
+**Examples** of event-driven software frameworks are:
+
+- The user interface (UI) system in the Web browsers, where the **HTML5** standard describes the **components** and their **events**.
+- Another example is **the UI system in Android** , which defines a set of **UI components** with **events**.
+
+**Event source** (or event emitter) is a software component, that **produces events**.
+
+- For example, an internal component in the software framework may track the mouse and when the mouse is clicked, it may emit an event.
+- Typical **example** of event source is **the "button" component** , which defines the "**on click**" event.
+
+Developers can write their **own components** (such as an "email sender") and **emit events** in certain situations,
+
+- for example, when a successful **connection to the mail server** is established,
+- or when the **email was rejected** by the server for some reason.
+
+**Event handler** (or event consumer) is a **piece of code** (or callback function), written by developers, to **handle** (or process) **an event**.
+
+- A simple **example** is to **show a message, when a button is clicked**.
+- In this example the **button** is an **event emitter**.
+  - It has "**on click**" event, which can be handled by developers.
+- To handle the event, developers write an **event handling function** and assign it for the "**on click**" event.
+  - When the button is clicked the framework **emits the "on click" event**.
+  - The event handling function **handles the "on click" event** and shows a message.
+
+
+
+## Inversion of Control - IoC
+
+The **inversion of control** ( **IoC** ) principleis a **program control-flow paradigm** , where
+**a function or component or framework does the processing** and **calls pieces of your code** for certain tasks.
+
+Instead of **your program to keep the control** and invoke external functions and libraries,
+**the framework takes the control** and invokes pieces of your program's code (functions from your code).
+
+This concept is called "**inversion of control**" and is very often used with **software frameworks**.
+
+For **example** , most user interface **(UI) frameworks** work under **the "inversion of control" principle**.
+
+The UI frameworks typically keeps the control and the execution of your entire application, and invoke your code to handle events, to which your code is subscribed.
+
+Look at the following picture to get a better understanding of the difference between the "**traditional program flow**" and the "**inversion of control program flow**".
+
+[image assetsSrc="SDC-example(5).png" /]
+
+
+Let's look at two **examples** of "inversion of control" behavior, to understand it better:
+
+The first **example** is a **parser** , which processes a document and calls **events** when it finds certain tokens.
+
+- An **XML parser** takes as input an XML document, and it calls an **event handler** from your code, when a new tag is found in the XML document.
+- This is how **event-driven XML parsers** work, such as SAX.
+  - **SAX** stands for "Simple API for XML" and is widely used industry standard for XML processing.
+
+Another example is a **GUI app** - a visual app with a **graphical user interface** (GUI)
+
+The UI framework drives the app and **keeps the control over its execution**.
+
+**The framework manages the UI** , draws the UI controls, listens for user interactions and emits **events** after each interaction.
+
+When the text is changed in a text box, or a button is clicked or the focus is moved from one text field to another, the UI framework emits an event.
+
+Developers **handle these events** by providing event-handler functions and respond to user interactions.
+
+Most user interface frameworks and libraries are **event-driven** and use the "**inversion of control**" principle.
+
+- That's why "**event-driven programming**" and "**inversion of control**" are so important.
+- If you deal with **front-end** and **user interfaces** , you will use inversion of control frameworks and event-driven programming.
+- We shall learn **how to create front-end applications** in the professional modules and courses at **SoftUni**.
+
+
 [/slide]
 
 [slide]
 
 # Networking and Internet Protocols
 
-<<<<<<< HEAD
 
 **Networking and Internet protocols** play an important role in software development.
 
@@ -579,8 +694,6 @@ If supported by the Web server, an HTTP connection can be **upgraded to a WebSoc
 
 You will learn more about socket communication later at **SoftUni**, in the **Web development professional modules.**
 
-=======
->>>>>>> b2510aec2269f629cf63a899b800ff91bb8f28f1
 [/slide]
 
 [slide]
