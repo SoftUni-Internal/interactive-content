@@ -157,12 +157,33 @@ Interfaces are also called "**contracts**", because they define certain set of f
 
 For example, the class **Figure** is not a concrete figure like square or rectangle, but the concept or the abstraction of "figure".
 
+```java
+abstract class Figure {
+  int x, y;
+  abstract int calcArea();
+}
+```
+
 Abstract classes defines **data** + **actions** (or normal methods) + **abstract actions** (or empty methods).
 
 Abstract classes are **designed to be inherited** (or extended).
 
 **Concrete classes** like **Circle** and **Rectangle** represent real entities, not abstractions.
 
+```java 
+class Circle extends Figure {
+  int radius;
+  // override
+   int calcArea() => PI * radius * radius; 
+}
+```
+```java 
+class Rectangle extends Figure {
+  int width, height;
+  // override
+ int calcArea() => width * height; 
+}
+```
 Concrete classes define data fields + concrete functionality (methods).
 
 They can **implement interfaces** and **inherit abstract and other classes**.
@@ -176,6 +197,7 @@ They can **implement interfaces** and **inherit abstract and other classes**.
 [slide]
 
 # Functional Programming
+
 
 
 
