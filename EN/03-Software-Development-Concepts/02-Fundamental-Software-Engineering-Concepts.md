@@ -486,12 +486,12 @@ DepthFirstSearch(node) {
   - This functionality is **encapsulated internally** inside the component and developers do not have to go into great technical details.
 - Another **example** of software component is a **"date picker" UI control** , used in Web front-end applications.
   - The **"date picker"** visual component is a **drop-down box** , which shows the **calendar** and users can select a specific date.
-  - If you open a website to book online airline tickets, you will see such a &quot;date picker&quot;component.
+  - If you open a website to book online airline tickets, you will see such a "**date picker**" component.
 
 **User interface (UI) components** are also known as **UI controls** , **visual components** or **widgets**.
 
 - Software components can be **visual** , such as the date picker and **non-visual** , such as the PDF generator.
-- **Visual components** are also called &quot; **UI controls**&quot;.
+- **Visual components** are also called **UI controls**.
 
 Software components are distributed in **component libraries**.
 
@@ -501,6 +501,10 @@ Software components are distributed in **component libraries**.
   - Or can be publicly available **open-source projects** (such as **Apache Commons Crypto** and **jQuery UI** ).
 - Example of open-source **UI control library** is the[jQuery UI](https://jqueryui.com/) project.
   - **jQuery UI** provides front-end user-interface components, widgets, effects and interactions for JavaScript developers.
+
+## Event-Driven Programming
+
+
 
 [/slide]
 
