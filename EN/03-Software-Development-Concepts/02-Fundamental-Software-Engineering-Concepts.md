@@ -271,7 +271,7 @@ There are many **functional programming languages and languages** that incorpora
 
 **Multi-paradigm languages** combine the strengths of both the **functional** and the **algorithmic** (or **imperative** )world.
 
-- Most of today&#39;s widely used general-purpose programming languages are **multi-paradigm**.
+- Most of today's widely used general-purpose programming languages are **multi-paradigm**.
 - They combine multiple programing paradigms: **functional** programming, **declarative** programming, **structured** programming, **imperative** programming, **object-oriented** programming, **component-based** programming, **event-driven** programming, **asynchronous** programming, and many others.
 
 Examples of popular general-purpose multi-paradigm programming languages are:
