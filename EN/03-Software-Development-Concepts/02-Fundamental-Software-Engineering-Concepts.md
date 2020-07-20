@@ -1,6 +1,16 @@
 # Fundamental Software Engineering Concepts
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="1671" endTimeInSeconds="7589"]
+[stream language="EN" videoId="439144295" default /]
+[stream language="RO" videoId="439758279"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
 # Math Concepts in Software Development
 
 **Simple mathematical concepts** are often needed and applied in software development.

@@ -1,6 +1,16 @@
 # The 4 Skills of Software Engineers
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="363" endTimeInSeconds="1670"]
+[stream language="EN" videoId="439144295" default /]
+[stream language="RO" videoId="439758279"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
 
 # Skills of the Software Engineers
 
