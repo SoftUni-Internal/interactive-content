@@ -508,7 +508,7 @@ Software components are distributed in **component libraries**.
 
 ## Event-Driven Programming
 
-**Event-driven programming** is a **programming paradigm**, in which **the flow of the program ** is determined by  **events**, such as mouse clicks, key presses, button clicks, and many others.
+**Event-driven programming** is a **programming paradigm**, in which **the flow of the program** is determined by  **events**, such as mouse clicks, key presses, button clicks, and many others.
 
 Typically a **software framework** drives the application:
 
