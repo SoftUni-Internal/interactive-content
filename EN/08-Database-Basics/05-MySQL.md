@@ -1,5 +1,22 @@
 # MySQL
+[slide]
+# Video
 
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442293114" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide]
+[slide]
+# MySQL - Live Demo
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442293532" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide]
 [slide]
 # MySQL / MariaDB
 
