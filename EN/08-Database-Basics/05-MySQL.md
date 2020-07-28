@@ -1,4 +1,5 @@
 # MySQL
+
 [slide]
 # Video
 
@@ -8,6 +9,7 @@
 [/video-vimeo]
 
 [/slide]
+
 [slide]
 # MySQL - Live Demo
 
@@ -17,6 +19,7 @@
 [/video-vimeo]
 
 [/slide]
+
 [slide]
 # MySQL / MariaDB
 
