@@ -1,5 +1,13 @@
 # SQL vs. NoSQL
+[slide]
+# Video
 
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442290236" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide
 [slide]
 # SQL Databases: Relational Databases
 

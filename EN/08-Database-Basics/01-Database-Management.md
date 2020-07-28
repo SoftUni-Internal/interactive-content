@@ -1,6 +1,16 @@
 # Database Management
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442289177" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide]
+442289177
+[slide]
 # What is а Database?
 
 [image assetsSrc="what-si-db.png" /]
