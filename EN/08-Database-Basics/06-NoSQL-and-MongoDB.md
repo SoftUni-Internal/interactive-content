@@ -1,5 +1,23 @@
 # NoSQL Databases
+[slide]
+# Video
 
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442294031" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
+# NoSQL Databases - Live Demo
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="442294319" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+[/slide]
 [slide]
 # NoSQL Database
 
