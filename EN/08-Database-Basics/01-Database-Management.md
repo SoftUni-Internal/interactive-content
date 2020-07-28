@@ -9,7 +9,7 @@
 [/video-vimeo]
 
 [/slide]
-442289177
+
 [slide]
 # What is а Database?
 

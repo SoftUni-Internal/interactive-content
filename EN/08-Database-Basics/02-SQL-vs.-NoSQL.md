@@ -7,7 +7,8 @@
 [stream language="RO" videoId="" /]
 [/video-vimeo]
 
-[/slide
+[/slide]
+
 [slide]
 # SQL Databases: Relational Databases
 
