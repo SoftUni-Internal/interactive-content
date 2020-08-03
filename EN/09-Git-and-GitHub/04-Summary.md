@@ -1,5 +1,15 @@
-[slide]
 # Summary
+
+[slide]
+# Video
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="444157905" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+[/slide]
+
+[slide]
 
 # In this lesson you learnt:
 

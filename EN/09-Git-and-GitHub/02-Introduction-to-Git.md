@@ -1,6 +1,15 @@
 # Introduction to Git
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="444160928" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+[/slide]
+
+[slide]
 # What is Git?
 
 **Distributed version control** is a form of **version control** in which the **project’s code**, including its **full history** (change log), is **mirrored** on every **worker’s computer**.

@@ -1,6 +1,15 @@
 # Introduction to GitHub
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="444157785" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+[/slide]
+
+[slide]
 # What is GitHub?
 
 [image assetsSrc="git-and-github-image-5.png" /]

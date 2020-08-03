@@ -1,6 +1,15 @@
 # Software Configuration Management
 
 [slide]
+# Video
+
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="444157626" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+[/slide]
+
+[slide]
 # Definition
 
 **Management** is needed **during work** on **projects**.
