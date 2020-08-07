@@ -6,6 +6,6 @@
 [stream language="RO" videoId="443348500" /]
 [/live-stream]
 
-[slido id="5faavvrx" /]
+[slido id="jgeolnuv" /]
 
 [/slide]
