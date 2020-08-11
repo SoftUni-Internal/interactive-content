@@ -1,8 +1,11 @@
-
-[slide]
 # Summary
 
+[slide]
+# Video
 
+[/slide]
+
+[slide]
 # In this lesson you learnt:
 
 - Software evolved through the time
@@ -11,9 +14,7 @@
     - More customers
     - More money
     - No unsatisfied developers
-
-
-
-
-
+- What is QA and about QA Engineers
+- The processes of testing and testing strategies
+- How to track issues
 [/slide]
