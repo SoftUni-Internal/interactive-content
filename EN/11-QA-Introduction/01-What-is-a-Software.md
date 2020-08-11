@@ -3,6 +3,10 @@
 [slide]
 # Video
 
+[vimeo-video startTimeInSeconds="0"]
+[stream language="EN" videoId="446753283" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
 [/slide]
 
 [slide]
