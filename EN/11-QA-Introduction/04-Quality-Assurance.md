@@ -20,7 +20,7 @@ Most of the QA work is **software testing**. There are two types of testing:
 [slide]
 # The Software QA Process
 
-Initially, QA helps design and **control the development process** in a way that prevents serious issues during the project. To make this happen, QA engineers work on the project together with other team members (**product owner**,** project manager**, **business analyst**, and **dev lead**) throughout the complete software development cycle. The number and the order of QA activities may vary from project to project, depending heavily on the scope of the work and the project aims.
+Initially, QA helps design and **control the development process** in a way that prevents serious issues during the project. To make this happen, QA engineers work on the project together with other team members (**product owner**, **project manager**, **business analyst**, and **dev lead**) throughout the complete software development cycle. The number and the order of QA activities may vary from project to project, depending heavily on the scope of the work and the project aims.
 
 ## Development Process
 
