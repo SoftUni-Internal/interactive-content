@@ -39,7 +39,7 @@ This DDS is reviewed by all the important stakeholders and based on various para
 
 In this stage of SDLC the **actual development** starts and the product is built. The programming code is generated as per DDS during this stage. If the design is performed in a detailed and organized manner, code generation can be accomplished without much hassle.
 
-Developers must follow the coding guidelines defined by their organization and programming tools like **compilers**, **interpreters**, **debuggers**, etc. are used to generate the code. Different high level programming languages such as **C, C++, Pascal, Java and PHP** are used for coding. The programming language is chosen with respect to the type of software being developed.
+Developers must follow the coding guidelines defined by their organization and programming tools like **compilers**, **interpreters**, **debuggers**, etc. are used to generate the code. Different high level programming languages such as **C**, **C++**, **Pascal**, **Java** and **PHP** are used for coding. The programming language is chosen with respect to the type of software being developed.
 
 ## Stage 5: Testing the Product
 
