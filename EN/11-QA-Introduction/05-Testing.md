@@ -92,25 +92,98 @@ Writing an SRS can also minimize overall development time and costs. Embedded de
 
 [slide]
 # Test Process
-
+[image assetsSrc="test-process.png" /]
 [/slide]
 
 [slide]
 # Test Control
 
+Test control is about **guiding** and **corrective actions** to try to achieve the best possible outcome for the project. The specific guiding actions depend on what we are trying to control
+
+For example:
+* Monitoring of the test activities;
+* Comparing with the plan;
+* Reporting status of deviations from the plan;
+* Taking actions for correction;
+* Updating the test plan according to the feedback;
 [/slide]
 
 [slide]
 # Test Plan
 
+Test plan is a document describing the **scope**, **approach**, **resources** and **schedule** of intended test activities. It identifies amongst others test items, the features to be tested, the testing tasks, who will do each task, degree of tester independence, the test environment, the test design techniques and entry and exit criteria to be used, and the rationale for their choice,and any risks requiring contingency planning. It is a **record** of the test planning process.
+[/slide]
+
+[slide]
+# Test Analysis and Design
+
+Test Analysis is the **process** of looking into **test artifacts** to base your test conditions/test cases. Hence, it is also called **Test Basis**.
+
+The source from which you derive test information could be:
+
+* SRS (Software Requirement Specification);
+* BRS (Business Requirement Specification);
+* Functional Design Documents;
+[/slide]
+
+[slide]
+# Test Case
+
+A test case describes an input, action, or event and an expected response, to determine if a feature of a software application is working correctly. A test case may contain particulars such as test case identifier, test case name, objective, test conditions/setup, input data requirements, steps, and expected results. The level of detail may vary significantly depending on the organization and project context.
+
+# Test Case Example:
+
+[image assetsSrc="test-case-example.png" /]
 [/slide]
 
 [slide]
 # Test Execution
 
+Test execution is the process of **executing the code** and comparing the **expected** and **actual** results. Following factors are to be considered for a test execution process:
+
+* Based on a risk, select a subset of test suite to be executed for this cycle.
+* Assign the test cases in each test suite to testers for execution.
+* Execute tests, report bugs, and capture test status continuously.
+* Resolve blocking issues as they arise.
+* Report status, adjust assignments, and reconsider plans and priorities daily.
+* Report test cycle findings and status.
+[/slide]
+
+[slide]
+# Test Exit Criteria
+
+The exit criteria get evaluated at the **end** of the testing cycle and is defined in Test Plan. It is the set of conditions or activities which **must be fulfilled** in order to conclude testing.
+
+The Exit criteria define h**ow much testing is enough** and when testing activities can be declared complete. Coverage and completion criteria are combined to define exit criteria for testing.
 [/slide]
 
 [slide]
 # Test Summary Report
+
+Test summary report is a document which contains **summary of test activities** and final test results. After the testing cycle it is very important that you **communicate** the test results. And findings to the project stakeholders so that decisions can be made for the software release.
+
+As one of the most important deliverable, the significance of test summary report is immense in software development life cycle (**SDLC**). Prepared after the completion of the testing process, this report consist of **all the necessary information** related to the process of software testing as well as the results delivered by it.
+[/slide]
+
+[slide]
+# Static vs Dynamic Testing
+
+## What is Static Testing?
+Under Static Testing, **code is not executed**. Rather it manually checks the code, requirement documents, and design documents to find errors. Hence, the name "static".
+
+The main objective of this testing is to **improve the quality of software products** by finding errors in the **early stages** of the development cycle. This testing is also called a Non-execution technique or verification testing.
+
+## What is Dynamic Testing?
+Under Dynamic Testing, a **code is executed**. It checks for functional behavior of software system, memory/cpu usage and overall performance of the system. Hence the name "Dynamic"
+
+The main objective of this testing is to **confirm that the software product works** in conformance with the business requirements. This testing is also called an **Execution technique** or validation testing.
+
+## What is Black Box Testing?
+Black box testing is a form of software testing during which the functionality of an application is tested **without looking at the code** or **internal structure**. Any test which examines the interface of the application is considered black box testing. There is a wide range of test types that fall under this category of testing, **including**:
+
+* Functional Testing;
+* Regression Testing;
+* Integration Testing;
+* User acceptance Testing;
 
 [/slide]
