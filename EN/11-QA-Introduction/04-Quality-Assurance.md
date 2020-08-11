@@ -1,3 +1,3 @@
 [slide]
-# What is Testing?
+# Quality Assurance
 [/slide]

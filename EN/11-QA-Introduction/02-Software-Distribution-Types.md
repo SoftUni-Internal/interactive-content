@@ -7,8 +7,6 @@
 [slide]
 # Retail Software
 
-## Definition
-
 Retail software is computer software typically installed on **PC-type computers** or more recently (past 2005) delivered via the Internet (also known as cloud-based). Traditionally this software was delivered via **physical data storage media** sold to end consumer but very few companies still provide their software using physical media. The software is typically sold under restricted licenses (e.g. EULAs) or in the case of cloud-based software sold as a Software-as-a-Service (**SaaS**) model.
 
 ## Types
@@ -23,14 +21,14 @@ Retail software is computer software typically installed on **PC-type computers*
 [/slide]
 
 [slide]
-## Web Applications
+# Web Applications
 
 A web application (or web app) is an application software that runs on a **web** **server**, unlike computer-based software programs that are stored locally on the Operating System (OS) of the device. Web applications are accessed by the user through a **web** **browser** with an **active** **internet** **connection**. These applications are programmed using a client–server modeled structure—the **user** **client** is provided services through an off-site server that is hosted by a third-party. Examples of commonly-used, web applications, include: **web-mail**, **online** **retail** **sales**, **online** **banking**, and **online** **auctions**.
 
 [/slide]
 
 [slide]
-## Mobile Applications
+# Mobile Applications
 
 There are **several** **ways** of targeting mobile devices when making a web application:
 

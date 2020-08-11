@@ -1,3 +1,3 @@
 [slide]
-# QA Responsibilities
+# Testing
 [/slide]
