@@ -61,19 +61,33 @@ Evaluating exit criteria has the following **major tasks**:
 Test closure activities are done when software is ready to be delivered. 
 The testing can be closed for the other reasons also like:
 
-* When a project is **cancelled**
-* When some target is **achieved**
-* When a maintenance release or update is **done**
-[/slide]
-
-[slide]
-# QA vs Devs
-
+* When a project is **cancelled**;
+* When some target is **achieved**;
+* When a maintenance release or update is **done**;
 [/slide]
 
 [slide]
 # Software Requirement Specifications
 
+A software requirements specification (**SRS**) is a document that describes what the software **will do** and how it **will be expected** to perform. It also describes the functionality the product needs to fulfill all stakeholders (business, users) needs.
+
+A typical SRS includes:
+
+* A purpose;
+* An overall description;
+* Specific requirements;
+
+The best **SRS documents** define how the software will interact when embedded in hardware — or when connected to other software. Good SRS documents also account for real-life users.
+
+## Why Use an SRS Document?
+
+A software requirements specification is the **basis for your entire project**. It lays the framework that every team involved in development will follow.
+
+It's used to provide **critical information** to multiple teams — development, quality assurance, operations, and maintenance. This keeps everyone on the same page.
+
+Using the SRS helps to ensure **requirements are fulfilled**. And it can also help you make decisions about your product's lifecycle — for instance, when to retire a feature.
+
+Writing an SRS can also minimize overall development time and costs. Embedded development teams especially benefit from using an SRS.
 [/slide]
 
 [slide]
