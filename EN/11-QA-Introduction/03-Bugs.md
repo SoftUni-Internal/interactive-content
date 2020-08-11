@@ -1,5 +1,3 @@
-# Bugs
-
 [slide]
-
+# Bugs
 [/slide]
