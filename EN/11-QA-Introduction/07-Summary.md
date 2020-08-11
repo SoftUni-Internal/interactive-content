@@ -6,7 +6,9 @@
 [/slide]
 
 [slide]
-# In this lesson you learnt:
+# Summary 
+
+## In this lesson you learnt:
 
 - Software evolved through the time
     - Retail, web, mobile
