@@ -1,0 +1,3 @@
+[slide]
+# QA Responsibilities
+[/slide]
