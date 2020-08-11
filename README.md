@@ -1,2 +1,1 @@
-# Interactive Content
-SoftUni Interactive Content: Courses, Lessons, Seminars, Trainings
+# Programming Basics with Java - March 2020 - Exam
