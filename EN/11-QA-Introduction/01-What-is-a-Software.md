@@ -17,6 +17,8 @@
 
 Software Development Life Cycle (**SDLC**) is a process followed for a software project, within a **software organization**. It consists of a detailed plan describing how to **develop**, **maintain**, **replace** and **alter** or **enhance** specific software. The life cycle defines a **methodology** for improving the quality of software and the overall development process.
 
+[image assetsSrc="software-development-lifecycle.png" /]
+
 ## Stage 1: Planning and Requirement Analysis
 
 Requirement analysis is the **most important** and fundamental stage in SDLC. It is performed by the **senior members** of the team with inputs from the customer, the sales department, market surveys and domain experts in the industry. This information is then used to plan the basic project approach and to conduct product feasibility study in the **economical**, **operational** and **technical** areas.
