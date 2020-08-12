@@ -76,20 +76,32 @@ Examples of commonly-used, web applications, include:
 
 There are **several** **ways** of targeting mobile devices when making a web application:
 
-- **Responsive** **web** **design** can be used to make a web application - whether a **conventional** **website** or a single-page application viewable on **small** **screens** that works well with touchscreens
+### Responsive web design
+
+It can be used to make a web application - whether a **conventional** **website** or a single-page application viewable on **small** **screens** that works well with touchscreens.
 
 
-- **Progressive** **Web** **Apps** (**PWA**) are web applications that load like regular web pages or websites but can offer the user functionality such as **working** **offline** and device hardware access traditionally available only to native mobile applications
+### Progressive Web Apps (PWA)
+
+This apps are web applications that load like regular web pages or websites but can offer the user functionality such as **working** **offline** and device hardware access traditionally available only to native mobile applications.
 
 
-- **Native** **apps** or "**mobile** **apps**" run directly on a mobile device, just as a conventional software application runs directly on a desktop computer, without a web browser (and potentially without the need for Internet connectivity)
+### Native apps or "mobile apps"
+
+This apps run directly on a mobile device, just as a conventional software application runs directly on a desktop computer, without a web browser (and potentially without the need for Internet connectivity).
 
 
-- **Hybrid** **apps** embed a web site inside a native app, possibly using a hybrid framework. This allows development using web technologies (and possibly directly copying code from an existing mobile web site) while also retaining certain advantages of **native** **apps** (e.g. direct access to **device** **hardware**, **offline** **operation**, app store visibility). Hybrid app frameworks include:
-  - **Apache** **Cordova**,
-  - **Electron**,
-  - **Haxe**,
-  - **React** **Native**
-  - **Xamarin**.
+### Hybrid apps
+
+This apps embed a web site inside a native app, possibly using a hybrid framework. 
+
+This allows development using web technologies (and possibly directly copying code from an existing mobile web site) while also retaining certain advantages of **native** **apps** (e.g. direct access to **device** **hardware**, **offline** **operation**, app store visibility). 
+
+Hybrid app frameworks include:
+- **Apache** **Cordova**,
+- **Electron**,
+- **Haxe**,
+- **React** **Native**
+- **Xamarin**.
 
 [/slide]
