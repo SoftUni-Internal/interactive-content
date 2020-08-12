@@ -86,10 +86,10 @@ There are **several** **ways** of targeting mobile devices when making a web app
 
 
 - **Hybrid** **apps** embed a web site inside a native app, possibly using a hybrid framework. This allows development using web technologies (and possibly directly copying code from an existing mobile web site) while also retaining certain advantages of **native** **apps** (e.g. direct access to **device** **hardware**, **offline** **operation**, app store visibility). Hybrid app frameworks include:
- - **Apache** **Cordova**,
- - **Electron**,
- - **Haxe**,
- - **React** **Native**
- - **Xamarin**
+  - **Apache** **Cordova**,
+  - **Electron**,
+  - **Haxe**,
+  - **React** **Native**
+  - **Xamarin**.
 
 [/slide]
