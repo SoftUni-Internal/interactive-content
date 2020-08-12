@@ -12,7 +12,7 @@
 [slide]
 # Summary 
 
-## In this lesson you learnt:
+In this lesson you learnt:
 
 - Software evolved through the time
     - Retail, web, mobile
