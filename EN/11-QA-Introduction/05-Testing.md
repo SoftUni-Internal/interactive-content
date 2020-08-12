@@ -18,7 +18,7 @@ This is the process of analyzing the software to find problems, defects it is te
 
 It can be done **manually**, it can be done by **QA**, the **marketing director** or **all together**. 
 
-Anyone can find a bug, even the end user, but it is best for it to be found by the team. 
+Anyone can find a bug, even the end-user, but it is best for it to be found by the team. 
 
 We check if the features are implemented correctly and if they do the work they are supposed to do.
 
@@ -30,7 +30,7 @@ These are the **main test activities**:
 
 Test planning involves producing a document that describes an overall approach and test objectives. 
 
-It involves **reviewing** the test basis, **identifying** the test conditions based on analysis of test items, **writing test cases** and Designing the test environment. 
+It involves **reviewing** the test basis, **identifying** the test conditions based on analysis of test items, **writing test cases**, and Designing the test environment. 
 
 Completion or exit criteria must be specified so that we know when testing (at any stage) is complete.
 
@@ -41,7 +41,7 @@ Completion or exit criteria must be specified so that we know when testing (at a
 
 ### Control
 
-Control is the activity of comparing actual progress against the plan, and reporting the status, including deviations from the plan. 
+Control is the activity of comparing actual progress against the plan and reporting the status, including deviations from the plan. 
 
 It involves taking actions necessary to meet the mission and objectives of the project.
 
@@ -71,27 +71,27 @@ Test implementation has the following **major task**:
 
 Evaluating exit criteria is a process defining when to **stop testing**. 
 
-It depends on coverage of code, functionality or risk. 
+It depends on the coverage of code, functionality, or risk. 
 
-Basically it also depends on **business risk**, cost and time and vary from project to project. 
+Basically, it also depends on **business risk**, cost, and time and varies from project to project. 
 
-Exit criteria come into picture, **when**:
+Exit criteria come into the picture, **when**:
 
 * Maximum test cases are executed with certain pass percentage;
-* Bug rate falls below certain level;
+* Bug rate falls below a certain level;
 * When we achieve the deadlines.
 
 Evaluating exit criteria has the following **major tasks**:
 
-* To assess if more test are needed or if the exit criteria specified should be changed;
+* To assess if more test is needed or if the exit criteria specified should be changed;
 * To write a test summary report for stakeholders.
 
 ## Test Closure activities
 
-Test closure activities are done when software is ready to be delivered. 
-The testing can be closed for the other reasons also like:
+Test closure activities are done when the software is ready to be delivered. 
+The testing can be closed for other reasons also like:
 
-* When a project is **cancelled**;
+* When a project is ** canceled**;
 * When some target is **achieved**;
 * When a maintenance release or update is **done**.
 [/slide]
@@ -125,7 +125,7 @@ This keeps everyone on the same page.
 
 Using the SRS helps to ensure **requirements are fulfilled**. 
 
-And it can also help you make decisions about your product's lifecycle — for instance, when to retire a feature.
+And it can also help you make decisions about your product's lifecycle — for instance when to retire a feature.
 
 Writing an SRS can also minimize overall development time and costs. 
 
@@ -158,7 +158,7 @@ For example:
 
 Test plan is a document describing the **scope**, **approach**, **resources** and **schedule** of intended test activities. 
 
-It identifies amongst others test items, the features to be tested, the testing tasks, who will do each task, degree of tester independence, the test environment, the test design techniques and entry and exit criteria to be used, and the rationale for their choice, and any risks requiring contingency planning. 
+It identifies amongst others test items, the features to be tested, the testing tasks, who will do each task, degree of tester independence, the test environment, the test design techniques, and entry and exit criteria to be used, and the rationale for their choice, and any risks requiring contingency planning. 
 
 It is a **record** of the test planning process.
 [/slide]
@@ -204,18 +204,18 @@ Test execution is the process of **executing the code** and comparing the **expe
 
 Following factors are to be considered for a test execution process:
 
-* Based on a risk, select a subset of test suite to be executed for this cycle.
+* Based on risk, select a subset of a test suite to be executed for this cycle.
 * Assign the test cases in each test suite to testers for execution.
 * Execute tests, report bugs, and capture test status continuously.
 * Resolve blocking issues as they arise.
-* Report status, adjust assignments, and reconsider plans and priorities daily.
+* Report status, adjust assignments and reconsider plans and priorities daily.
 * Report test cycle findings and status.
 [/slide]
 
 [slide]
 # Test Exit Criteria
 
-The exit criteria get evaluated at the **end** of the testing cycle and is defined in Test Plan. 
+The exit criteria get evaluated at the **end** of the testing cycle and are defined in Test Plan. 
 
 It is the set of conditions or activities which **must be fulfilled** in order to conclude testing.
 
@@ -227,15 +227,15 @@ Coverage and completion criteria are combined to define exit criteria for testin
 [slide]
 # Test Summary Report
 
-Test summary report is a document which contains **summary of test activities** and final test results. 
+The test summary report is a document that contains **summary of test activities** and final test results. 
 
-After the testing cycle it is very important that you **communicate** the test results. 
+After the testing cycle, it is very important that you **communicate** the test results. 
 
 And findings to the project stakeholders so that decisions can be made for the software release.
 
-As one of the most important deliverable, the significance of test summary report is immense in software development life cycle (**SDLC**). 
+As one of the most important deliverables, the significance of the test summary report is immense in the software development life cycle (**SDLC**). 
 
-Prepared after the completion of the testing process, this report consist of **all the necessary information** related to the process of software testing as well as the results delivered by it.
+Prepared after the completion of the testing process, this report consists of **all the necessary information** related to the process of software testing as well as the results delivered by it.
 [/slide]
 
 [slide]
@@ -255,7 +255,7 @@ This testing is also called a Non-execution technique or verification testing.
 ## What is Dynamic Testing?
 Under Dynamic Testing, a **code is executed**. 
 
-It checks for functional behavior of software system, memory/cpu usage and overall performance of the system. 
+It checks for functional behavior of software system, memory/CPU usage, and overall performance of the system. 
 
 Hence the name "Dynamic"
 
@@ -266,7 +266,7 @@ This testing is also called an **Execution technique** or validation testing.
 ## What is Black Box Testing?
 Black box testing is a form of software testing during which the functionality of an application is tested **without looking at the code** or **internal structure**. 
 
-Any test which examines the interface of the application is considered black box testing. 
+Any test which examines the interface of the application is considered black-box testing. 
 
 There is a wide range of test types that fall under this category of testing, **including**:
 
