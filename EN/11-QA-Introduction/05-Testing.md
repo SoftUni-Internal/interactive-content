@@ -12,21 +12,34 @@
 [slide]
 # What Is Testing?
 
-Testing is a software check to see whether it **meets the requirements**, or whether there are bugs. This is the process of analyzing the software to find problems, defects it is testing. It can be done **manually**, it can be done by **QA**, the **marketing director** or **all together**. Anyone can find a bug, even the end user, but it is best for it to be found by the team. We check if the features are implemented correctly and if they do the work they are supposed to do.
+Testing is a software check to see whether it **meets the requirements**, or whether there are bugs. 
+
+This is the process of analyzing the software to find problems, defects it is testing. 
+
+It can be done **manually**, it can be done by **QA**, the **marketing director** or **all together**. 
+
+Anyone can find a bug, even the end user, but it is best for it to be found by the team. 
+
+We check if the features are implemented correctly and if they do the work they are supposed to do.
 
 These are the **main test activities**:
 
 ## Planning and Control
 
-**Test Planning**: Test planning involves producing a document that describes an overall approach and test objectives. It involves **reviewing** the test basis, **identifying** the test conditions based on analysis of test items, **writing test cases** and Designing the test environment. Completion or exit criteria must be specified so that we know when testing (at any stage) is complete.
+- **Test Planning** involves producing a document that describes an overall approach and test objectives. 
+
+It involves **reviewing** the test basis, **identifying** the test conditions based on analysis of test items, **writing test cases** and Designing the test environment. 
+
+Completion or exit criteria must be specified so that we know when testing (at any stage) is complete.
 
 **Puprose**
-* To determine the **scope** and **risks** and identify the objectives of testing;
-* To determine the **required test resources** like people, test environments etc;
-* To schedule **test analysis** and **design tasks**, test implementation, execution and evaluation;
+  * To determine the **scope** and **risks** and identify the objectives of testing;
+  * To determine the **required test resources** like people, test environments etc;
+  * To schedule **test analysis** and **design tasks**, test implementation, execution and evaluation;
 
-**Control**
-This is the activity of comparing actual progress against the plan, and reporting the status, including deviations from the plan. It involves taking actions necessary to meet the mission and objectives of the project.
+- **Control** is the activity of comparing actual progress against the plan, and reporting the status, including deviations from the plan. 
+
+It involves taking actions necessary to meet the mission and objectives of the project.
 
 ## Analysis and Design
 
