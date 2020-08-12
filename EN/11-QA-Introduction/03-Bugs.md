@@ -44,9 +44,13 @@ Don’t delay finding important problems.
 
 A developer working on software that already contains hastily written, error-prone functions, with little or no unit test coverage, is likely to add **more** **code** of the **same** **nature**. 
 
-Similarly, a tester who has seen tens of reported bugs go unfixed is **unlikely** **to** **be** **enthusiastic** about reporting many more. Of course, it isn't just developers and testers that are affected. 
+Similarly, a tester who has seen tens of reported bugs go unfixed is **unlikely** **to** **be** **enthusiastic** about reporting many more. 
 
-Over time, every member of the team will start to ask themselves, "what's the point?", why aim for a high-quality product when a **substandard** **one** is the accepted status quo. Don't set substandard quality expectations.
+Of course, it isn't just developers and testers that are affected. 
+
+Over time, every member of the team will start to ask themselves, "what's the point?", why aim for a high-quality product when a **substandard** **one** is the accepted status quo. 
+
+Don't set substandard quality expectations.
 [/slide]
 
 [slide]
@@ -62,7 +66,9 @@ Now imagine trying to perform the same task when there are **50 unfixed bugs** i
 
 It's either going to take a disagreeably long amount of time (time which could be better spent looking for other bugs) or the thought of such an overwhelming task will cause it to be abandoned, often leading to duplicate bugs being reported. 
 
-These duplicate bugs lead to duplicate investigation and duplicate re-testing. Don't waste time on unnecessary duplication.
+These duplicate bugs lead to duplicate investigation and duplicate re-testing. 
+
+Don't waste time on unnecessary duplication.
 [/slide]
 
 [slide]
