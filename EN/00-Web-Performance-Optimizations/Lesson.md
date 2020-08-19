@@ -1,1 +1,1 @@
-# How to build and launch your idea? The steps to making a successful MVP
+# How to build and launch your idea
