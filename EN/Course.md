@@ -1,12 +1,12 @@
-# Cybersecurity and Social Engineering
+# Web Performance Optimizations
 
 ## Description
-- What actions can we take to increase our productivity?
-- How to maintain concentration during work? 
-- What tools can be useful for us to manage our time and tasks?
-- What are the biggest challenges of telecommuting?
-- Will remote work become more common in the future?
-- What good practices can we apply in our work process now?
+This webinar answers some of the following questions: 
+- What is web performance?
+- How do we measure performance?
+- Which set of metrics should we look to track our performance?
+- What is the difference between performance and perceived performance?
+- How do we establish a performance culture?  
 
 ## Language
 English
