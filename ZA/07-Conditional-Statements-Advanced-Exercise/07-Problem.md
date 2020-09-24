@@ -1,9 +1,15 @@
 [slide]
 # Problem: Flowers
-[code-task title="Flowers" taskId="28-03E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Flowers" taskId="27-02AE-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -16,7 +22,7 @@ A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. 
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
 | **Autumn / Winter** | **3.75$** | **4.50$** | **4.15$** |
 
-In the holidays the prices of all flowers **increase by 15%**.
+On holidays the prices of all flowers **increase by 15%**.
 
 The market offers the following **discounts**:
 - If you buy **7 or more tulips during the spring** - **5% of the price of the whole bouquet**
@@ -57,6 +63,7 @@ Print on the console a **single number** - the price of the flowers, **formatted
 - **5% discount for more than 7 tulips during the spring** - 44.14
 - In total the flowers are 20 or less - there **isn't a discount**
 - **44.14 + 2 for arrangement = 46.14 $** 
+
 [/task-description]
 [tests]
 [test open]

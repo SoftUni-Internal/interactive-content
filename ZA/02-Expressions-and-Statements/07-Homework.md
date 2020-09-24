@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="8424" endTimeInSeconds="9641"]
-[stream language="EN" videoId="341528681" default /]
-[stream language="RO" videoId="387031676"  /]
+[vimeo-video startTimeInSeconds="9284" endTimeInSeconds="11400 "]
+[stream language="EN" videoId="341522009/063bddc415" default /]
+[stream language="RO" videoId="386049133/766a425069"  /]
 [/video-vimeo]
 
 [/slide]
@@ -25,10 +25,16 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Calculate Speed
-[code-task title="Calculate Speed" taskId="28-01-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Calculate Speed" taskId="27-01-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+    // Write code here
+  }
+}
 ```
 [/code-editor]
 [task-description]
@@ -37,12 +43,12 @@ Write a program to calculate the speed by time and distance:
   * Read 2 floating-point numbers: distance and time
   * Calculate the speed needed to travel a given distance for given time
   * Print the calculated result
-
+  
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 15 | 7.5 |
-| 2 |  |
+| 2|  |
 
 [/task-description]
 [tests]
@@ -93,16 +99,22 @@ Write a program to calculate the speed by time and distance:
 [/test]
 [/tests]
 [code-io/]
-[/code-task] 
+[/code-task]
+
 [/slide]
 
 [slide]
-
 # Problem: Currency Converter
-[code-task title="Currency Converter" taskId="28-01-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Currency Converter" taskId="27-01-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -121,7 +133,6 @@ Write a program to convert from USD to EUR:
 | **Input** | **Output** |
 | --- | --- |
 | 87 | 76.56 |
-
 [/task-description]
 [tests]
 [test open]
@@ -130,6 +141,14 @@ Write a program to convert from USD to EUR:
 [/input]
 [output]
 14.96
+[/output]
+[/test]
+[test open]
+[input]
+87
+[/input]
+[output]
+76.56
 [/output]
 [/test]
 [test]
@@ -172,10 +191,16 @@ Write a program to convert from USD to EUR:
 
 [slide]
 # Problem: Area of Triangle
-[code-task title="Area of Triangle" taskId="28-01-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Area of Triangle" taskId="27-01-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -183,9 +208,10 @@ Write a program to convert from USD to EUR:
 Write a program to calculate a triangle area:
 
   * Read from input a `side a` and `height` - **floating-point numbers**
-  * Calculate the area of a triangle by the side and height
+  * Calculate the area of the triangle
   * Print the area, formatted to the 2nd digit after decimal point
 
+  
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -227,7 +253,7 @@ Write a program to calculate a triangle area:
 2.5
 [/input]
 [output]
-13.12
+13.13
 [/output]
 [/test]
 [test]
@@ -247,10 +273,16 @@ Write a program to calculate a triangle area:
 
 [slide]
 # Problem: Four Operations
-[code-task title="Four Operations" taskId="28-01-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Four Operations" taskId="27-01-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -321,14 +353,21 @@ Write a program, which:
 [/tests]
 [code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Days to Minutes
-[code-task title="Days to Minutes" taskId="28-01-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Days to Minutes" taskId="27-01-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -356,6 +395,14 @@ Write a program to convert from days to minutes:
 [/input]
 [output]
 2880
+[/output]
+[/test]
+[test open]
+[input]
+5
+[/input]
+[output]
+7200
 [/output]
 [/test]
 [test]
@@ -397,11 +444,97 @@ Write a program to convert from days to minutes:
 [/slide]
 
 [slide]
-# Problem: Person Info
-[code-task title="Person Info" taskId="28-01-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+# Problem: Circle Area and Perimeter
+[code-task title="Circle Area and Perimeter" taskId="27-01-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+ 
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
-# Write your code here
+[/code-editor]
+[task-description]
+## Description
+Write a program to calculate a circle area and perimeter:
+  * Read a floating-point number: the radius of a circle
+  * Calculate the area and perimeter of a circle
+  * Print the calculated values
+    * Use the default formatting for floating-point numbers in Java in the output (like in the example below)
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 7 | Area = 153.938040 |
+|  | Perimeter = 43.982297 |
+[/task-description]
+[tests]
+[test open]
+[input]
+7
+[/input]
+[output]
+Area = 153.938040
+Perimeter = 43.982297
+[/output]
+[/test]
+[test]
+[input]
+12.0
+[/input]
+[output]
+Area = 452.389342
+Perimeter = 75.398224
+[/output]
+[/test]
+[test]
+[input]
+10.0
+[/input]
+[output]
+Area = 314.159265
+Perimeter = 62.831853
+[/output]
+[/test]
+[test]
+[input]
+5.5
+[/input]
+[output]
+Area = 95.033178
+Perimeter = 34.557519
+[/output]
+[/test]
+[test]
+[input]
+9.4
+[/input]
+[output]
+Area = 277.591127
+Perimeter = 59.061942
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Person Info
+[code-task title="Person Info" taskId="27-01-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner; 
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -483,10 +616,16 @@ A B from C - D!
 
 [slide]
 # Problem: Town Info
-[code-task title="Town Info" taskId="28-01-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Town Info" taskId="27-01-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -551,73 +690,6 @@ A
 [/input]
 [output]
 Town A has population of 123456 and area 789 square km.
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
-
-[slide]
-# Problem: Circle Area and Perimeter
-[code-task title="Circle Area and Perimeter" taskId="28-01-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```python
-import math
-
-# Write code here
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program to calculate a circle area and perimeter:
-  * Read a floating-point number: the radius of a circle
-  * Calculate the area and perimeter of a circle
-  * Print the calculated values
-  * Print the area, formatted to the 2nd digit after decimal point
-  
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 7 | Area = 153.94 |
-|  | Perimeter = 43.98 |
-
-[/task-description]
-[tests]
-[test open]
-[input]
-7.0
-[/input]
-[output]
-Area = 153.94
-Perimeter = 43.98
-[/output]
-[/test]
-[test]
-[input]
-12.0
-[/input]
-[output]
-Area = 452.39
-Perimeter = 75.40
-[/output]
-[/test]
-[test]
-[input]
-10.0
-[/input]
-[output]
-Area = 314.16
-Perimeter = 62.83
-[/output]
-[/test]
-[test]
-[input]
-5.5
-[/input]
-[output]
-Area = 95.03
-Perimeter = 34.56
 [/output]
 [/test]
 [/tests]

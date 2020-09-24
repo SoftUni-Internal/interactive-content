@@ -1,9 +1,15 @@
 [slide]
 # Problem: Dishwasher
-[code-task title="Dishwasher" taskId="28-05E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Dishwasher" taskId="27-05E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -20,13 +26,13 @@ Accept that on every **third** filling with vessels, the dishwasher is filled on
 
 Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
 
-## Input
+# Input
 Read from the console: 
 - **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
 
 On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
 
-## Output
+# Output
 - In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
     - "Detergent was enough!"
     - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
@@ -44,7 +50,7 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 | 55 | |
 | End | |
 
-## Comments
+### Comments
 - Detergent quantity = 2 \* 750 = 1500 ml.
 - 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
 - 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
@@ -61,7 +67,6 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 | 12 | |
 | 13 | |
 | 30 | |
-
 [/task-description]
 [tests]
 [test open]
@@ -79,6 +84,34 @@ Leftover detergent 85 ml.
 [/output]
 [/test]
 [test open]
+[input]
+1
+10
+15
+10
+12
+13
+30
+[/input]
+[output]
+Not enough detergent, 100 ml. more necessary!
+[/output]
+[/test]
+[test]
+[input]
+2
+53
+65
+55
+End
+[/input]
+[output]
+Detergent was enough!
+118 dishes and 55 pots were washed.
+Leftover detergent 85 ml.
+[/output]
+[/test]
+[test]
 [input]
 1
 10

@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="2061" endTimeInSeconds="2872"]
-[stream language="EN" videoId="341568008" default /]
-[stream language="RO" videoId="388278683"  /]
+[vimeo-video startTimeInSeconds="2834" endTimeInSeconds="4109"]
+[stream language="EN" videoId="341582556" default /]
+[stream language="RO" videoId="388314290"  /]
 [/vimeo-video]
 
 [/slide]
@@ -15,26 +15,28 @@
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:
-* logical **"AND"** (`and`)
-* logical **"OR"** (`or`)
-* logical **negation** (`not`) 
+* logical **"AND"** (`&&`)
+* logical **"OR"** (`||`)
+* logical **negation** (`!`) 
 * **brackets** (`()`).
 
 # Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
-```py
-animal = input()
-speed = int(input())
+```java
+Scanner scanner = new Scanner(System.in);
+String animal = scanner.nextLine();
+int speed = Integer.parseInt(scanner.nextLine());
 
-if (animal == "horse" or animal == "donkey") and (speed > 40)
-    print("Run fast")
-elif ((animal == "shark" or animal == "dolphin") and (speed > 45):
-    print("Swim fast")
-elif not(speed > 30 or animal == "turtle"):
-    print("Move slow")
+if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
+    System.out.println("Run fast");
+} else if ((animal == "shark" || animal == "dolphin") && (speed > 45)) {
+    System.out.println("Swim fast");
+} else if (!(speed > 30 || animal == "turtle")) {
+    System.out.println("Move slow");
+}
 ```
 
-We shall explain the logical **AND** (`and`), the logical **OR** (`or`), and the logical **NOT** (`not`) in the next few sections, along with examples and exercises.
+We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
 [/slide]
 
 [slide]
@@ -45,44 +47,44 @@ But what happens when in order to execute some code **more** conditions have to 
 
 The option with nested `if` **blocks** is valid, but the code would look very unordered and for sure – **hard to read and maintain**.
 
-The logical **"AND"** (operator `and`) means a few conditions have to be **fulfilled simultaneously**. 
+The logical **"AND"** (operator `&&`) means a few conditions have to be **fulfilled simultaneously**. 
 
 The following table of truthfulness is applicable:
 
 | Operand1 | Operand2 | AND |
 |---|---|---|---|
-| True | True | True |
-| True | False | False |
-| False | True | False |
-| False | False | False |
+| true | true | true |
+| true | false | false |
+| false | true | false |
+| false | false | false |
 
-# How Does the `and` Operator Work?
-The `and` operator accepts **a couple of Boolean** (conditional) statements, which have a `True` or `False` value, and returns one statement as a result. 
+# How Does the `&&` Operator Work?
+The `&&` operator accepts **a couple of Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
 
 Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
 
 But how does it **work**, when we put a **few** conditions one after another? 
 
-As we saw above, the logical **"AND"** returns `True`, **only** when it accepts as **arguments statements** with value `True`. 
+As we saw above, the logical **"AND"** returns `true`, **only** when it accepts as **arguments statements** with value `true`. 
 
-Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `False`. 
+Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `false`. 
 
 # Example
-```py live
-a = True
-b = True
-c = False
-d = True
-result = a and b and c and d
-print(result)
+```java live
+boolean a = true;
+boolean b = true;
+boolean c = false;
+boolean d = true;
+boolean result = a && b && c && d;
+System.out.println(result);
 ```
 
 The program will run in the **following** way: 
-- **It starts** the check form `a`, **reads** it and accepts that it has a `True` value, after which it **checks** `b`. 
-- After it has **accepted** that `a` and `b` return `True`, **it checks the next** argument. 
-- It gets to `c` and sees that the variable has a `False` value. 
-- After the program accepts that the argument `c` has a `False` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is. 
-- That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `False`.
+- **It starts** the check form `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`. 
+- After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument. 
+- It gets to `c` and sees that the variable has a `false` value. 
+- After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is. 
+- That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`.
 
 # Example: Point in a Rectangle
 Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
@@ -109,28 +111,35 @@ A point is internal for a given polygon, if the following four conditions are ap
 -  The point is placed downwards from the upper side of the rectangle.
 -  The point is placed upwards from the down side of the rectangle.
 
-```py live
-x1 = 2
-y1 = -3
-x2 = 12
-y2 = 3
+```java live
+double x1 = 2;
+double y1 = -3;
+double x2 = 12;
+double y2 = 3;
 
-x = 8
-y = -1
+double x = 8;
+double y = -1;
 
-if x >= x1 and x <= x2 and y >= y1 and y <= y2:
-    print("Inside")
-else:
-    print("Outside")
+if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
+    System.out.println("Inside");
+} else {
+    System.out.println("Outside");
+}
 ```
 [/slide]
 
 [slide]
 # Problem: Bonus Points
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write code here
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -173,23 +182,31 @@ Write a program that applies bonus to given points
 [/tests]
 [code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Solution: Bonus Points
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-points = int(input())
+import java.util.Scanner;
 
-if points >= 0 and points <= 3:
-    points += 5
-elif points >= 4 and points <= 6:
-    points += 15
-elif points >= 7 and points <= 9:
-    points += 20
-
-print(points)
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int points = Integer.parseInt(scanner.nextLine());
+        if (points >= 0 && points <= 3) {
+            points += 5;
+        } else if (points >= 4 && points <= 6) {
+            points += 15;
+        } else if (points >= 7 && points <= 9) {
+            points += 20;
+        }
+        
+        System.out.println(points);
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -230,59 +247,65 @@ Write a program that applies bonus to given points
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Logical OR Operator
-The logical **OR** (operator `or`) means that **at least one** among a few conditions is fulfilled. 
+The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
-Similar to the operator `and`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `True` or `False`. 
+Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
 
-We can easily guess that we **obtain** a value `True` every time when at least one of the arguments has a `True` value. 
+We can easily guess that we **obtain** a value `true` every time when at least one of the arguments has a `true` value. 
 
 | Operand1 | Operand2 | OR |
 |---|---|---|---|
-| True | True | True |
-| True | False | True |
-| False | True | True |
-| False | False | False |
+| true | true | true |
+| true | false | true |
+| false | true | true |
+| false | false | false |
 
 At school the teacher says: "John or Peter should clean the board". To fulfill this condition (to clean the board), it is possible either just for John to clean it, or just for Peter to clean it, or both of them to do it.
 
-# How Does the `or` Operator Work?
+# How Does the `||` Operator Work?
 We have already learned what the logical **OR** represents. But how is it actually being achieved? 
 
 Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. 
 
-In order to obtain `True` from the expression, it is necessary for **just one** argument to have a `True` value. 
+In order to obtain `true` from the expression, it is necessary for **just one** argument to have a `true` value. 
 
 Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
 Here is one **example** of the `||` operator in action:
 
-```py live
-a = False
-b = True
-c = False
-d = True
-result = a or b or c or d
-print(result)
+```java live
+boolean a = false;
+boolean b = true;
+boolean c = false;
+boolean d = true;
+boolean result = a || b || c || d;
+System.out.println(result);
 ```
 
-The programs **checks** `a`, accepts that it has a value `False` and continues. 
+The programs **checks** `a`, accepts that it has a value `false` and continues. 
 
-Reaching `b`, it understands that it has a `True` value and the whole **expression** is calculated as `True`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
+Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
 [/slide]
 
 [slide]
 # Problem: Food or Drink
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write code here
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -328,22 +351,33 @@ unknown
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 [/slide]
 
 [slide]
 # Solution: Food or Drink
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-input = input()
-if input == "curry" or input == "noodles" or input == "sushi" or input == "spaghetti":
-    print("food");
-elif input == "tea" or input == "water" or input == "coffee":
-    print("drink")
-else:
-    print("unknown")
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+
+        if (input.equals("curry") || input.equals("noodles") ||
+                input.equals("sushi") || input.equals("spaghetti")) {
+            System.out.println("food");
+        } else if (input.equals("tea") || input.equals("water") ||
+                input.equals("coffee")) {
+            System.out.println("drink");
+        } else {
+            System.out.println("unknown");
+        }
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -389,45 +423,49 @@ unknown
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
+
 
 [slide]
 # Logical NOT Operator
-Logical negation (operator `not`) means a given condition is **not fulfilled**.
+Logical negation (operator **!**) means a given condition is **not fulfilled**.
 
-| a | not a |
+| a | !a |
 |---|---|
-| True | False |
+| true | false |
 
-The operator `not` accepts as an **argument** a bool variable and **returns** its value.
+The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
 # Example: Invalid Number
 A given **number is valid** if it is in the range **\[100 … 200\]** or it is **0**. Do a validation for an **invalid** number.
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
-```py live
-num = 75
+```java live
+int num = 75;
 
-inRange = (num >= 100 and num <= 200) or num == 0
-if not inRange:
-    print("invalid")
+boolean inRange = (num >= 100 && num <= 200) || num == 0;
+if (!inRange) {
+    System.out.println("invalid");
+}
 ```
 [/slide]
 
 [slide]
 # The Parenthesis  Operator
-Like the rest of the operators in programming, the operators `and` and `or` have a priority, as in the case `and` is with higher priority than `or`. 
+Like the rest of the operators in programming, the operators `&&` and `||` have a priority, as in the case `&&` is with higher priority than `||`. 
 
 The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 
 
 Using parentheses also gives the code better readability and is considered a good practice.
 
 Example of checking whether a variable belongs to certain ranges:
-```py 
-if (x < 0) or ((x >= 5) and (x <= 10)) or (x > 20):
-    # Commands
+```java 
+if (x < 0) || ((x >= 5) && (x <= 10)) || (x > 20) {
+    // Commands
+}
 ```
 [/slide]

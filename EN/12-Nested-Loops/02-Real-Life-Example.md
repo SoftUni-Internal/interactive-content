@@ -3,22 +3,30 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="2680" endTimeInSeconds="2798"]
-[stream language="EN" videoId="345185854" default /]
-[stream language="RO" videoId="393622973" /]
+[vimeo-video startTimeInSeconds="2914" endTimeInSeconds="3142"]
+[stream language="EN" videoId="345011935" default /]
+[stream language="RO" videoId="393861306"  /]
 [/vimeo-video]
 
 [/slide]
 
 [slide]
 # Real-Life Example: Clock
-Imagine the current time is exactly 12:00 AM. 
+[image assetsSrc="06-nested-loops-clock-1159.png" /] 
 
-Our minutes will gradually increase by one until they reach 59. 
+[image assetsSrc="06-nested-loops-clock-1200.png" /]
 
-Once they get to 60, the hours will be incremented by 1 and the minutes will be reset back to zero. 
+Imagine the current time is exactly **11:00** AM. 
 
-We can represent this process using for loops, and more importantly, why would we even need more than one for-loop to simulate how a simple clock works
+Our minutes will gradually increase by **1** until they reach **59**. 
+
+Once they get to 60, the hours will be incremented by **1** and the minutes will be reset back to **00**. 
+
+We can represent this process using `for` loops, and more importantly, why would we even need more than one for-loop to simulate how a simple clock works
+
+As you can see in pseudocode example there are two `for` loops: **inner** and **outer**.
+
+The outer one represents the hours, while the inner one is responsible for the minutes.
 
 # Pseudocode
 ```

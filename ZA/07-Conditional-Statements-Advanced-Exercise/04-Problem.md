@@ -1,14 +1,19 @@
 [slide]
 # Problem: Point on Rectangle Border
-[code-task title="Point on Rectangle Border" taskId="28-03E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Point on Rectangle Border" taskId="27-02AE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-
 Write a program to check if a **point {x, y}** is **on** some of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
 
 ## Input
@@ -33,16 +38,15 @@ If the point does NOT lie on a side:
 
 | **Input** | **Output** | 
 |  --- | --- |
-| 2| Border|
-| -3| |
-| 12| |
-| 3| |
-| 12| |
-| -1| |
+| 2 | Border|
+| -3 | |
+| 12 | |
+| 3 | |
+| 12 | |
+| -1 | |
 
-\* **Hint**: use one or more conditional **if** statements with logical operations.
+\* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
 
-A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
 - **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
 - **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
 

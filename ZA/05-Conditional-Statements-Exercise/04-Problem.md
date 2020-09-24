@@ -1,9 +1,15 @@
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="28-02E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Day of Week" taskId="27-02E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -14,10 +20,10 @@ Write a program that reads an integer from the console and prints **day of the w
 ## Example
 
 | **Input** | **Output** |
-| --- | --- |
+| --- |  --- |
 | 2 | Tuesday |
 
-| **Input**  | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 | -1 | Error |
 [/task-description]
@@ -32,7 +38,7 @@ Monday
 [/test]
 [test open]
 [input]
--1
+-2
 [/input]
 [output]
 Error

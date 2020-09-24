@@ -1,14 +1,20 @@
 [slide]
 # Problem: Trapezoid Area
-[code-task title="Trapezoid Areq" taskId="28-01E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Trapezoid Areq" taskId="27-01E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates the area of trapezoid with bases `b1` and `b2` and height `h`. 
+Write a program that calculates the area of trapezoid with bases b1 and b2 and height h. 
 
 The formula for calculating area of a trapezoid is ((b1 + b2) / 2) * h.
 

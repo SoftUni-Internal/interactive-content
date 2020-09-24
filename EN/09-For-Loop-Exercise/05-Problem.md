@@ -1,39 +1,41 @@
 [slide]
 # Problem: Odd / Even Position
-[code-task title="Odd / Even Position" taskId="28-04E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Odd / Even Position" taskId="27-04E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads the **n** - **count** of **numbers** entered by the user, and **calculates** the **amount** of the **minimum** and **maximum** numbers of **odd** and **even** positions (counting from **1**). 
+Write a program that reads the n - count of numbers entered by the user, and calculates the amount of the minimum and maximum numbers of odd and even positions (counting from 1). 
 
-If there **is not** minimum/maximum element print "**No**".
+If there is not minimum/maximum element print "No".
 
 ## Input
 - On the first input line read count of numbers - N - integer \[0...100\]
 - On every next line read a number - floating-point number \[-100...100\]
 
 ## Output
-The output should be **formatted** in the following form:
-**"OddSum="** + \{**sum** of the numbers on **odd** positions\},
+The output should be formatted in the following form:
 
-**"OddMin="** + \{**minimum** value of the numbers of **odd** positions\} / \{**"No"**\},
-
-**"OddMax="** + \{**maximum** value of the numbers of **odd** positions\} / \{**"No"**\},
-
-**"EvenSum="** + \{**sum** of the numbers of **even** positions\},
-
-**"EvenMin="** + \{**minimum** value of the numbers of **even** positions\} / \{**"No"**\},
-
-**"EvenMax="** + \{**maximum** value of the numbers of **even** positions\} / \{**"No"**\}
-
-**Each number should be formatted to the second decimal point.**
+- "OddSum=" + \{sum of the numbers on odd positions\},
+- "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
+- "OddMax=" + \{maximum value of the numbers of odd positions\} / \{"No"\},
+- "EvenSum=" + \{sum of the numbers of even positions\},
+- "EvenMin=" + \{minimum value of the numbers of even positions\} / \{"No"\},
+- "EvenMax=" + \{maximum value of the numbers of even positions\} / \{"No"\}
+- Each number should be formatted to the second decimal point.
 
 ## Example
-| **Input** | **Output** |   
+
+| Input | Output |   
 | --- | --- |
 | 5 | OddSum=8.00, |
 | 3 | OddMin=-3.00, |
@@ -42,9 +44,9 @@ The output should be **formatted** in the following form:
 | 11 | EvenMin=-2.00, |
 | -3 | EvenMax=11.00 |
 
-| **Input** | **Output** |
+| Input | Output |
 | --- | --- |
-| 0 |  OddSum=0.00, |
+| 0 | OddSum=0.00, |
 | | OddMin=No, |
 | | OddMax=No, |
 | | EvenSum=0.00, |
@@ -53,6 +55,24 @@ The output should be **formatted** in the following form:
 [/task-description]
 [tests]
 [test open]
+[input]
+5
+3
+-2
+8
+11
+-3
+[/input]
+[output]
+OddSum=8.00,
+OddMin=-3.00,
+OddMax=8.00,
+EvenSum=9.00,
+EvenMin=-2.00,
+EvenMax=11.00
+[/output]
+[/test]
+[test]
 [input]
 6
 2
@@ -71,7 +91,7 @@ EvenMin=1.00,
 EvenMax=4.00
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 2
 1.5

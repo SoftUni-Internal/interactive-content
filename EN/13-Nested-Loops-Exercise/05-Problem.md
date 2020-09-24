@@ -1,9 +1,15 @@
 [slide]
 # Problem: Coding
-[code-task title="Coding" taskId="28-06E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
-[code-editor language=python]
+[code-task title="Coding" taskId="27-06E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

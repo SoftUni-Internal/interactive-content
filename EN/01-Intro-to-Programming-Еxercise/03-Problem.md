@@ -1,9 +1,14 @@
 [slide]
-# Problem: Nums 1...10
-[code-task title="Nums from 1 to 10" taskId="28-00E-p-03" executionType="tests-execution" executionStrategy="python-code"]
-[code-editor language=python]
+# Problem: Nums from 1 to 10
+[code-task title="Nums from 1 to 10" taskId="27-00E-p-03" executionType="tests-execution" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+
 ```
 [/code-editor]
 [task-description]

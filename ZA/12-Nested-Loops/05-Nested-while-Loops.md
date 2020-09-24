@@ -3,119 +3,153 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="3511" endTimeInSeconds="3956"]
-[stream language="EN" videoId="345185854" default /]
-[stream language="RO" videoId="393622973" /]
+[vimeo-video startTimeInSeconds="4533" endTimeInSeconds="5149"]
+[stream language="EN" videoId="345011935" default /]
+[stream language="RO" videoId="393861306"  /]
 [/vimeo-video]
 
 [/slide]
-
 
 [slide]
 # Nested while Loops
 The use of nested `while` loops is very similar to the one of the `for`.
 
-Here is the syntax in **Python**:
-```py live
-i = 1
-n = 5
-while i < n:
-  print(f'Value of i: {i}')
-  j = 1
-  i += 1
+Here is the syntax in Java:
+```java
+while (condition) {
+  // Outer Loop 
+  while (condition) {
+    // Inner Loop
+    
+    // Statements
+  }
+}
+```
 
-  while j < n:
-    print(f'  Value of j: {j}')
-    j += 1
+# Example
+
+```java live
+int i = 0;
+int n = 5;
+while (i < n) {
+  System.out.printf("Value of i: %d%n", i);
+  int j = 1;
+  i++;
+
+  while (j < n) {
+    System.out.printf("  Value of j: %d%n", j);
+    j++;
+  }
+}
 ```
 [/slide]
 
 [slide]
-# Problem: Triangle of Stars 2
-[code-task title="Triangle of Stars 2" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+# Problem: Triangle of Stars with While
+[code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which:
 
-* Reads the height of a triangle from the console
-* Prints a triangle of stars
-* Use a `while` loop
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 5 | \* |
-| | \*\* |
-| | \*\*\* |
-| | \*\*\*\* |
-| | \*\*\*\*\* |
+* Reads the **height** of a triangle from the console
+* Prints a **triangle of stars**
+# Example
+## Input
+- 5
+## Output
+- \*
+- \*\*
+- \*\*\*
+- \*\*\*\*
+- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
 [input]
-3
+4
 [/input]
 [output]
 *
 **
 ***
+****
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
-# Problem: Triangle of Stars 2
-[code-task title="Triangle of Stars 2" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+# Solution: Triangle of Stars with While
+[code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-height = int(input())
-i = 1
-while i <= height:
-    j = 0
-    while j < i:
-        print('*', end="")
-        j += 1
-    print()
-    i += 1
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int height = Integer.parseInt(scanner.nextLine());
+        int i = 1;
+
+        while (i <= height) {
+            int j = 1;
+            while (j <= i) {
+                System.out.print("*");
+                j++;
+            }
+
+            System.out.println();
+            i++;
+        }
+    }
+}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which:
 
-* Reads the height of a triangle from the console
-* Prints a triangle of stars
-* Use a `while` loop
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 5 | \* |
-| | \*\* |
-| | \*\*\* |
-| | \*\*\*\* |
-| | \*\*\*\*\* |
+* Reads the **height** of a triangle from the console
+* Prints a **triangle of stars**
+# Example
+## Input
+- 5
+## Output
+- \*
+- \*\*
+- \*\*\*
+- \*\*\*\*
+- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
 [input]
-3
+4
 [/input]
 [output]
 *
 **
 ***
+****
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]

@@ -1,9 +1,15 @@
 [slide]
 # Problem: Square Area
-[code-task title="Square Area" taskId="28-01E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Square Area" taskId="27-01E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -37,14 +43,6 @@ Print on the console the calculated area
 [/input]
 [output]
 25
-[/output]
-[/test]
-[test open]
-[input]
-6
-[/input]
-[output]
-36
 [/output]
 [/test]
 [test]

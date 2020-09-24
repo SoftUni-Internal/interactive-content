@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="6418" endTimeInSeconds="11286"]
-[stream language="EN" videoId="345185854" default /]
-[stream language="RO" videoId="393622973" /]
+[vimeo-video startTimeInSeconds="7657" endTimeInSeconds="11030"]
+[stream language="EN" videoId="345011935" default /]
+[stream language="RO" videoId="393861306"  /]
 [/vimeo-video]
 
 [/slide]
@@ -20,43 +20,113 @@ We have prepared some problems for you to solve.
 
 Let's solve a few problems to confirm what we have learned.
 
-[image assetsSrc="homeowrk.png" /]
+[image assetsSrc="homework.png" /]
 [/slide]
 
 [slide]
 # Problem: Building
-[code-task title="Building" taskId="28-06-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Building" taskId="27-06-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
+## Description
 Write a program, which:
 
-* Prints information about apartments (odd rows), offices (even rows) and the last floor (last row)
-* Apartment "A\{buildingNum\}\{apartmentNum\}"
-* Office "O\{floorNum\}\{officeNum\}"
-* Floor "L\{buildingNum\}\{apartmentNum\}"
+* Prints information about **apartments** (odd rows), **offices** (even rows) and the **last floor** (last row)
+* Apartment `"A{buildingNum}{apartmentNum}"`
+* Office `"O{floorNum}{officeNum}"`
+* Floor `"L{buildingNum}{apartmentNum}"`
 * The numbers always start from 0
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 | L40 L41 L42 L43 L44  |
-| 5| A30 A31 A32 A33 A34  |
-| | O20 O21 O22 O23 O24 |
-| | A10 A11 A12 A13 A14  |
+| 6 | L60 L61 L62 L63 |
+| 4| A50 A51 A52 A53 |
+| | O40 O41 O42 O43 |
+| | A30 A31 A32 A33 |
+| | O20 O21 O22 O23 |
+| | A10 A11 A12 A13 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
+6
 4
+[/input]
+[output]
+L60 L61 L62 L63
+A50 A51 A52 A53
+O40 O41 O42 O43
+A30 A31 A32 A33
+O20 O21 O22 O23
+A10 A11 A12 A13
+[/output]
+[/test]
+[test]
+[input]
+1
+7
+[/input]
+[output]
+L10 L11 L12 L13 L14 L15 L16
+[/output]
+[/test]
+[test]
+[input]
+0
+0
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+2
 5
 [/input]
 [output]
-L40 L41 L42 L43 L44
+L20 L21 L22 L23 L24
+A10 A11 A12 A13 A14
+[/output]
+[/test]
+[test]
+[input]
+10
+10
+[/input]
+[output]
+L100 L101 L102 L103 L104 L105 L106 L107 L108 L109
+A90 A91 A92 A93 A94 A95 A96 A97 A98 A99
+O80 O81 O82 O83 O84 O85 O86 O87 O88 O89
+A70 A71 A72 A73 A74 A75 A76 A77 A78 A79
+O60 O61 O62 O63 O64 O65 O66 O67 O68 O69
+A50 A51 A52 A53 A54 A55 A56 A57 A58 A59
+O40 O41 O42 O43 O44 O45 O46 O47 O48 O49
+A30 A31 A32 A33 A34 A35 A36 A37 A38 A39
+O20 O21 O22 O23 O24 O25 O26 O27 O28 O29
+A10 A11 A12 A13 A14 A15 A16 A17 A18 A19
+[/output]
+[/test]
+[test]
+[input]
+5
+5
+[/input]
+[output]
+L50 L51 L52 L53 L54
+O40 O41 O42 O43 O44
 A30 A31 A32 A33 A34
 O20 O21 O22 O23 O24
 A10 A11 A12 A13 A14
@@ -64,111 +134,187 @@ A10 A11 A12 A13 A14
 [/test]
 [test]
 [input]
-5
+1
+1
+[/input]
+[output]
+L10
+[/output]
+[/test]
+[test]
+[input]
+6
+7
+[/input]
+[output]
+L60 L61 L62 L63 L64 L65 L66
+A50 A51 A52 A53 A54 A55 A56
+O40 O41 O42 O43 O44 O45 O46
+A30 A31 A32 A33 A34 A35 A36
+O20 O21 O22 O23 O24 O25 O26
+A10 A11 A12 A13 A14 A15 A16
+[/output]
+[/test]
+[test]
+[input]
+8
+2
+[/input]
+[output]
+L80 L81
+A70 A71
+O60 O61
+A50 A51
+O40 O41
+A30 A31
+O20 O21
+A10 A11
+[/output]
+[/test]
+[test]
+[input]
+9
+0
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+7
 3
 [/input]
 [output]
-L50 L51 L52 
-O40 O41 O42 
-A30 A31 A32 
-O20 O21 O22 
+L70 L71 L72
+O60 O61 O62
+A50 A51 A52
+O40 O41 O42
+A30 A31 A32
+O20 O21 O22
 A10 A11 A12
 [/output]
 [/test]
-[test]
-[input]
-2
-4
-[/input]
-[output]
-L20 L21 L22 L23 
-A10 A11 A12 A13
-[/output]
-[/test]
-[test]
-[input]
-1
-1
-[/input]
-[output]
-L10 
-[/output]
-[/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Passwords
-[code-task title="Passwords" taskId="28-06-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Passwords" taskId="27-06-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
-
-* Receives a number **n**
-* Generates **n count** passwords, which meet the following conditions:
-* The first digit is an even number
-* The second digit is an odd number
-* The third part is the product of the first two
+* Reads an integer - **n**
+* Generates custom passwords, which meet the following conditions:
+* The **first** part is an **even** number and should not be greater than **n**
+* The **second** part is an **odd** number and should not be greater than **n**
+* The **last part** is the **product** of the first two
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | 212 236 2510 414 4312 4520 |
+| 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-5
+6
 [/input]
 [output]
-212 236 2510 414 4312 4520
+212 236 2510 414 4312 4520 616 6318 6530
 [/output]
 [/test]
 [test]
 [input]
-4
+8
 [/input]
 [output]
-212 236 414 4312 
+212 236 2510 2714 414 4312 4520 4728 616 6318 6530 6742 818 8324 8540 8756
+[/output]
+[/test]
+[test]
+[input]
+9
+[/input]
+[output]
+212 236 2510 2714 2918 414 4312 4520 4728 4936 616 6318 6530 6742 6954 818 8324 8540 8756 8972
+[/output]
+[/test]
+[test]
+[input]
+10
+[/input]
+[output]
+212 236 2510 2714 2918 414 4312 4520 4728 4936 616 6318 6530 6742 6954 818 8324 8540 8756 8972 10110 10330 10550 10770 10990
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+212 236
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+212
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="28-06-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Magic Number" taskId="27-06-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Read a number - **n**, from the console
-
-Find all 3-digit numbers, which form **n** as the product of the multiplication of their digits
+Write a program, which:
+* Reads a **number - n**, from the console
+* Finds all **3-digit numbers** which product of the multiplication of their digits is equal to **n**
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | 113 |
-|  | 131 |
-|  | 311 |
+| | 131 |
+| | 311 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 [/input]
@@ -176,32 +322,6 @@ Find all 3-digit numbers, which form **n** as the product of the multiplication 
 113
 131
 311
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-115
-151
-511
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-116
-123
-132
-161
-213
-231
-312
-321
-611
 [/output]
 [/test]
 [test]
@@ -218,34 +338,57 @@ Find all 3-digit numbers, which form **n** as the product of the multiplication 
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Travelling
-[code-task title="Travelling" taskId="28-06-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Travelling" taskId="27-06-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
 
-* Reads a destination and needed budget for destination
-* You must continue reading amount of money until you have enough for the destination
-* If you receive the command "End" end the program
+* Reads a **destination** and **needed budget** for destination
+* Continues reading numbers - amounts of money, until they are **enough** for the destination
+* If it receives the command **"End"** the program ends
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| Greece | Going to Greece! |
+| Philippines | Going to Philippines! |
 | 1000|  |
 | 550|  |
 | 450|  |
+| End|  |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| Bulgaria | Going to Bulgaria! |
+| 500|  Going to Austria! |
+| 200|  |
+| 100|  |
+| 300|  |
+| Austria|  |
+| 700|  |
+| 200|  |
+| 200|  |
+| 200|  |
+| 200|  |
+| End|  |
 
 [/task-description]
 [tests]
@@ -533,25 +676,32 @@ Going to Albania!
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="28-06-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Prime Numbers" taskId="27-06-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-import math
+import java.util.Scanner;
 
-# Write your code here
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-- Reads two integers from the console.
-- Prints the prime numbers in that range.
+Write a program, which:
+
+* Reads **two numbers** from the console
+* Prints the **prime** number in that **range**
+
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -560,7 +710,7 @@ import math
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 50
@@ -572,44 +722,97 @@ import math
 [test]
 [input]
 1
-20
+4
 [/input]
 [output]
-1 2 3 5 7 11 13 17 19
+1 2 3
 [/output]
 [/test]
 [test]
 [input]
-15
-35
+600
+900
 [/input]
 [output]
-17 19 23 29 31 
+601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887
+[/output]
+[/test]
+[test]
+[input]
+55
+70
+[/input]
+[output]
+59 61 67
+[/output]
+[/test]
+[test]
+[input]
+11
+13
+[/input]
+[output]
+11 13
+[/output]
+[/test]
+[test]
+[input]
+88
+100
+[/input]
+[output]
+89 97
+[/output]
+[/test]
+[test]
+[input]
+23
+27
+[/input]
+[output]
+23
+[/output]
+[/test]
+[test]
+[input]
+1
+9
+[/input]
+[output]
+1 2 3 5 7
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="28-06-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Unique PIN Codes" taskId="27-06-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
 
-* Reads 3 digits - each of them is an upper limit
-* Generates unique 3 digit PIN Codes, which meet the following conditions:
-    * Digits must be in the range \[1…9\]
-    * The first and the third digit must be even
-    * The second digit must be a prime number in the range \[2…7\]
+* Reads **3 digits** - n1, n2 and n3
+* Generates **unique 3 digit PIN Codes**, which meet the following **conditions**:
+* The **first** digit should not be greater than n1
+* The **second** digit should not be greater than n2
+* The **third** digit should not be greater than n3
+* The **first** and the **third** digit must be even
+* The second digit must be a **prime number** in the range \[2…7\]
 
 ## Example
 | **Input** | **Output** |
@@ -638,31 +841,6 @@ Write a program, which:
 254
 [/output]
 [/test]
-[test open]
-[input]
-8
-8
-3
-[/input]
-[output]
-222
-232
-252
-272
-422
-432
-452
-472
-622
-632
-652
-672
-822
-832
-852
-872
-[/output]
-[/test]
 [test]
 [input]
 8
@@ -686,143 +864,42 @@ Write a program, which:
 824
 826
 828
-[/output]
-[/test]
-[test]
-[input]
-4
-3
-5
-[/input]
-[output]
-212
-222
-232
-412
-422
-432
-[/output]
-[/test]
-[test]
-[input]
-2
-3
-4
-[/input]
-[output]
-212
-222
-232
-[/output]
-[/test]
-[test]
-[input]
-9
-9
-9
-[/input]
-[output]
-222
-224
-226
-228
-232
-234
-236
-238
-252
-254
-256
-258
-272
-274
-276
-278
-422
-424
-426
-428
-432
-434
-436
-438
-452
-454
-456
-458
-472
-474
-476
-478
-622
-624
-626
-628
-632
-634
-636
-638
-652
-654
-656
-658
-672
-674
-676
-678
-822
-824
-826
-828
-832
-834
-836
-838
-852
-854
-856
-858
-872
-874
-876
-878
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
-# Problem: Letters Combinations
-[code-task title="Letters Combinations" taskId="28-06-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+# Problem: Letter Combinations
+[code-task title="Letter Combinations" taskId="27-06-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which:
 
-* Prints letters combinations and the count of the printed combinations
-* You will receive the range of letters on the first and second line
-* On the third line, you will receive a letter, which you must ignore - don't print combinations with it
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| a | aaa |
-| c| aab |
-| b | aba |
-| | abb |
-| | baa |
-| | bab |
-| | bba |
-| | bbb |
-| | 8 |
-
+* Prints **letters combinations** and the **count** of the printed combinations
+* You will receive the **range of letters** on the first and second line
+* On the third line, you will receive a **letter**, which you must **ignore** - don't print combinations with it
+# Example
+## Input
+- a
+- c
+- b
+## Output
+- aaa aac aca acc caa cac cca ccc 8
 [/task-description]
 [tests]
 [test open]
@@ -832,99 +909,52 @@ c
 b
 [/input]
 [output]
-aaa
-aab
-aba
-abb
-baa
-bab
-bba
-bbb
-8
+aaa aac aca acc caa cac cca ccc 8
 [/output]
 [/test]
 [test]
 [input]
-k
-l
-m
+a
+c
+b
 [/input]
 [output]
-kkk
-kkl
-klk
-kll
-lkk
-lkl
-llk
-lll
-8
-[/output]
-[/test]
-[test]
-[input]
-e
-h
-f
-[/input]
-[output]
-eee
-eeg
-eeh
-ege
-egg
-egh
-ehe
-ehg
-ehh
-gee
-geg
-geh
-gge
-ggg
-ggh
-ghe
-ghg
-ghh
-hee
-heg
-heh
-hge
-hgg
-hgh
-hhe
-hhg
-hhh
-27
+aaa aac aca acc caa cac cca ccc 8
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
-# Problem: Number Pattern
-[code-task title="Number Pattern" taskId="28-06-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+# Problem: Happy Numbers
+[code-task title="Happy Numbers" taskId="27-06-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
 
-* Receives a single number: n
-* Prints the pattern shown in the example
+* Reads a number n
+* Prints **all 4 digit numbers**, which meet the following conditions:
+* When you **split** them in two pairs and **add** the first digit to the second - the result **equals** n
+* When you add the first two digits to each other, the result must be **divisible** by n **without a remainder**
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | 1 |
-|  | 121 |
-|  | 12321 |
+| 3 | 1212 1221 2112 2121 |
 
 [/task-description]
 [tests]
@@ -933,33 +963,19 @@ Write a program, which:
 3
 [/input]
 [output]
-1
-121
-12321
+1212 1221 2112 2121
 [/output]
 [/test]
 [test]
 [input]
-4
+3
 [/input]
 [output]
-1
-121
-12321
-1234321
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-1
-121
+1212 1221 2112 2121
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]

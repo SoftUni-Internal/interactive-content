@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="1025" endTimeInSeconds="1220"]
-[stream language="EN" videoId="343587107" default /]
-[stream language="RO" videoId="392266139" /]
+[vimeo-video startTimeInSeconds="1028" endTimeInSeconds="1323"]
+[stream language="EN" videoId="343678060" default /]
+[stream language="RO" videoId="391452320"  /]
 [/vimeo-video]
 
 [/slide]
@@ -13,34 +13,48 @@
 [slide]
 # Revision
 
-## For Loop
-Allows code to be executed **repeatedly**.
-
-Repeating while the condition is met.
-
-Iterating over a collection.
-```py
-for i in iterable:
-  print(i)
+## For-Loop
+We can repeat a code block using a `for` loop:
+```java live
+for (int i = 1; i <= 10; i += 1) {
+   System.out.println(i);
+}
 ```
 
-## Range
-`range()` is a function in Python, which generates a collection of numbers in a given range.
-
-```py live
-for i in range(1, 5):
-  print(i)
+We can read a sequence of `n` numbers from the console this way:
+```java
+Scanner scanner = new Scanner(System.in);
+int n = Integer.parseInt(scanner.nextLine());
+for (int i = 1; i <= n; i += 1) {
+   int num = Integer.parseInt(scanner.nextLine());
+}
 ```
 
-Having a step:
-```py live
-for i in range(1, 10, 2):
-  print(i)
+We can iterate over characters:
+```java live
+for (char ch = 'a'; ch <= 'z'; ch++) {
+   System.out.println(ch);
+}
 ```
 
-Having a negative step:
-```py live
-for i in range(10, 1, -2):
-  print(i)
+## Increment and Decrement Operators
+Increments or decrements its operand by 1.
+
+Both operators are supported in two forms: the postfix increment operator, `x++`, `x--`, and the prefix increment operator, `++x`, `--x`.
+
+Prefix operator means increment / decrement the value before using it, while the postfix operator means increment / decremenet the value after using it.
+
+```java live
+int i = 3;
+System.out.println(i);   // output: 3
+System.out.println(i++); // output: 3
+System.out.println(i);   // output: 4
+```
+
+```java live
+int i = 3;
+System.out.println(i);   // output: 3
+System.out.println(++i); // output: 4
+System.out.println(i);   // output: 4
 ```
 [/slide]

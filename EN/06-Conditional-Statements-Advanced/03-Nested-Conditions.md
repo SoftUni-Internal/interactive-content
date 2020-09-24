@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="1121" endTimeInSeconds="2059"]
-[stream language="EN" videoId="341568008" default /]
-[stream language="RO" videoId="388278683"  /]
+[vimeo-video startTimeInSeconds="1459" endTimeInSeconds="2833"]
+[stream language="EN" videoId="341582556" default /]
+[stream language="RO" videoId="388314290"  /]
 [/vimeo-video]
 
 [/slide]
@@ -17,12 +17,14 @@ They are called **nested** `if` or `if-else` statements.
 
 As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
 
-```py
-if condition1:
-    if condition2:
-        # body
-    else
-        # body
+```java
+if (condition1) {
+    if (condition2) {
+        // body; 
+    } else {
+        // body;
+    }
+}
 ```
 
 # Example: Personal Titles
@@ -46,20 +48,24 @@ The diagram below illustrates the process in detail:
 [image assetsSrc="01.Personal-titles-01.jpg" /]
 
 After reading the input data from the console, the following program logic should be executed:
-```py
-age = int(input())
-char = input()
+```java
+Scanner scanner = new Scanner(System.in);
+int age = Integer.parseInt(scanner.nextLine());
+String gender = scanner.nextLine();
 
-if age < 16
-    if gender == "m":
-        print("Master")
-    elif gender == "f":
-        print("Miss")
-else
-    if gender == "m":
-        print("Mr.")
-    elif gender == "f":
-        print("Ms.")
+if (age < 16) {
+    if (gender == "m") {
+        System.out.println("Master");
+    } else if (gender == "f") {
+        System.out.println("Miss");
+    }
+} else {
+    if (gender == "m") {
+        System.out.println("Mr.");
+    } else if (gender == "f") {
+        System.out.println("Ms.");
+    }
+}
 ```
 
 # Deep nesting
@@ -70,10 +76,17 @@ It **has to be avoided**, mostly through optimization of the structure/the algor
 
 [slide]
 # Problem: Marketplace
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main
+{
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -115,34 +128,45 @@ Weekend
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Solution: Marketplace
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-product = input()
-day_of_week = input()
+import java.util.Scanner;
 
-if product == "Banana":
-  if day_of_week == "Weekday":
-    print("2.50")
-  else:
-    print("2.70")
-elif product == "Apple":
-  if day_of_week == "Weekday":
-    print("1.30")
-  else:
-    print("1.60")
-elif product == "Kiwi":
-  if day_of_week == "Weekday":
-    print("2.20")
-  else:
-    print("3.00")
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String product = scanner.nextLine();
+        String dayOfWeek = scanner.nextLine();
+
+        if (product.equals("Banana")) {
+            if (dayOfWeek.equals("Weekday")) {
+                System.out.println("2.50");
+            } else {
+                System.out.println("2.70");
+            }
+        } else if (product.equals("Apple")) {
+            if (dayOfWeek.equals("Weekday")) {
+                System.out.println("1.30");
+            } else {
+                System.out.println("1.60");
+            }
+        } else if (product.equals("Kiwi"))
+            if (dayOfWeek.equals("Weekday")) {
+                System.out.println("2.20");
+            } else {
+                System.out.println("3.00");
+            }
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -184,17 +208,23 @@ Weekend
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Biggest Number of Three
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -243,29 +273,37 @@ Write a program, which:
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Solution: Biggest Number of Three
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-first = int(input())
-second = int(input())
-third = int(input())
-if first > second:
-  if first > third:
-    print(first)
-  else:
-    print(third)
-else:
-  if second > third:
-    print(second)
-  else:
-    print(third)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int first = Integer.parseInt(scanner.nextLine());
+        int second = Integer.parseInt(scanner.nextLine());
+        int third = Integer.parseInt(scanner.nextLine());
+        if (first > second)
+            if (first > third) {
+                System.out.println(first);
+            } else {
+                System.out.println(third);
+            }
+        else if (second > third) {
+            System.out.println(second);
+        } else {
+            System.out.println(third);
+        }
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -282,6 +320,7 @@ Write a program, which:
 ## Output
 - 3
 [/task-description]
+[code-io/]
 [tests]
 [test]
 [input]
@@ -314,7 +353,5 @@ Write a program, which:
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]

@@ -1,9 +1,15 @@
 [slide]
 # Problem: Harvest
-[code-task title="Harvest" taskId="28-02E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Harvest" taskId="27-02E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -53,7 +59,7 @@ The following should be printed on the console:
 
 ## Example
 | **Input** | **Output** |
-| --- | --- |
+| --- |  --- |
 | 1020 | It will be a tough winter! More 180 liters wine needed.|
 | 1.5 | |
 | 425 | |

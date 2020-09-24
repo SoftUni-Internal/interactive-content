@@ -1,11 +1,11 @@
-# Revision 
+# Revision
 
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="996" endTimeInSeconds="1252"]
-[stream language="EN" videoId="342410322" default /]
-[stream language="RO" videoId="389330702"  /]
+[vimeo-video startTimeInSeconds="1022" endTimeInSeconds="1177"]
+[stream language="EN" videoId="342471604" default /]
+[stream language="RO" videoId="389927500"  /]
 [/vimeo-video]
 
 [/slide]
@@ -15,17 +15,36 @@
 Before proceeding ahead, let's remind ourselves about the program concepts and techniques that we have learned in the last session.
 
 # Nested Conditions
-```py
-if condition1:
-    if condition2:
-        # body
-    else:
-        # body
+```java
+if (condition1) {
+    if (condition2)
+        // body; 
+    else
+        // body;
+}
 ```
 
-# Complex Conditions with `and,` `or`, `not` and `()`
-```py
-if (x == left or x == right) and y >= top and y <= bottom:
-    print(…)
+# Complex Conditions with `&&,` `||`, `!` and `()`
+```java
+if ((x == left || x == right) && y >= top && y <= bottom) {
+    System.out.println(…);
+}
+```
+
+# Switch-Case Conditions
+```java
+switch (selector) {
+    case value1:
+        construction;
+        break;
+    case value2:
+    case value3:
+        construction;
+        break;
+    …
+    default:
+        construction;
+        break;
+}
 ```
 [/slide]

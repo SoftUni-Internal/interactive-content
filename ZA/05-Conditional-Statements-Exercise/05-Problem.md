@@ -1,13 +1,20 @@
 [slide]
 # Problem: Animal Type
-[code-task title="Animal Type" taskId="28-02E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Animal Type" taskId="27-02E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
+
 Write a program that prints the **type** of an animal according to its **name**.
 
 ## Input / Output
@@ -16,8 +23,9 @@ Write a program that prints the **type** of an animal according to its **name**.
 - **others -> unknown**
 
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
+| --- | | --- |
 | dog | mammal |
 
 | **Input** | **Output** |

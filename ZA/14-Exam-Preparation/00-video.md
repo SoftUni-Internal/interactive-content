@@ -2,8 +2,8 @@
 # Training Session
 
 [vimeo-video startTimeInSeconds="901"]
-[stream language="EN" videoId="393624261" default /]
-[stream language="RO" videoId="395423507"  /]
+[stream language="EN" videoId="345605639" default /]
+[stream language="RO" videoId="395440719"  /]
 [/vimeo-video]
 
 [/slide]

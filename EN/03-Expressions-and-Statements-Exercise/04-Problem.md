@@ -1,9 +1,15 @@
 [slide]
 # Problem: Vegetable Market
-[code-task title="Vegetable Market" taskId="28-01E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Vegetable Market" taskId="27-01E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -26,7 +32,7 @@ Print on the console a single number: the income from all of the fruits and vege
 
 The result should be formatted to the second decimal point.
 
-## Example
+## Examples
 
 | Input | Output | Comments |
 | --- | --- | --- |

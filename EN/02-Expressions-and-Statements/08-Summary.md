@@ -3,10 +3,10 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="9590" endTimeInSeconds="9642"]
-[stream language="EN" videoId="341528681" default /]
-[stream language="RO" videoId="387031676"  /]
-[/video-vimeo]
+[vimeo-video startTimeInSeconds="11401" endTimeInSeconds="11583"]
+[stream language="EN" videoId="341522009/063bddc415" default /]
+[stream language="RO" videoId="386049133/766a425069"  /]
+[/vimeo-video]
 
 [/slide]
 
@@ -14,28 +14,30 @@
 # Summary
 
 Reading a text:
-```py live
-input = input()
+```java live
+Scanner scanner = new Scanner(System.in);
+
+String input = scanner.nextLine();
 ```
 
 Reading an integer:
-```py live
-number = int(input())
+```java live
+Scanner scanner = new Scanner(System.in);
+
+int number = Integer.parseInt(scanner.nextLine());
 ```
 
 Reading a floating-point number:
-```py live
-number = float(input())
+```java live
+Scanner scanner = new Scanner(System.in);
+
+double number = Double.parseDouble(scanner.nextLine());
 ```
 
 Calculations with numbers and using the suitable arithmetic operators: `+`, `-`, `*`, `/`, `%`.
 
 Printing a text by placeholders on the console:
-```py live
-first_number = 5
-second_number = 3
-sum = first_number + second_number
-
-print(f'{first_number} + {second_number} = {sum}')
+```java live
+System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 ```
 [/slide]

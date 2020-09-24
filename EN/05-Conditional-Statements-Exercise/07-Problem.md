@@ -1,9 +1,15 @@
 [slide]
 # Problem: Pipes In Pool
-[code-task title="Pipes In Pool" taskId="28-02E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Pipes In Pool" taskId="27-02E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -58,6 +64,7 @@ Print on the console **one of both possibilities**:
 - For 2.5 hours: The first pipe fills up 250 l 
 - The second pipe fills up 250 l
 - In total – 500 l > 100 l => 400 l are overflowed.
+
 [/task-description]
 [tests]
 [test open]

@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="4923" endTimeInSeconds="5034"]
-[stream language="EN" videoId="341528681" default /]
-[stream language="RO" videoId="387031676"  /]
+[vimeo-video startTimeInSeconds="7018" endTimeInSeconds="7376 "]
+[stream language="EN" videoId="341522009/063bddc415" default /]
+[stream language="RO" videoId="386049133/766a425069"  /]
 [/video-vimeo]
 
 [/slide]
@@ -16,11 +16,11 @@
   * Consist of at least one **operand**
   * Can have 1 or more **operators**
 
-```py
-y = x + 5
+```java
+int y = x + 5;
 ```
-```py
-name = "John Doe"
+```java
+String name = "John Doe";
 ```
 In most of the contexts in which expressions are used, for example in statements, the expression is expected to evaluate to some value. 
 
@@ -30,8 +30,8 @@ In most of the contexts in which expressions are used, for example in statements
 
 # Numerical expressions
 In programming, we can calculate numerical expressions, for example:
-```py
-r = (150-20) / 2 + 5;
+```java
+int r = (150-20) / 2 + 5;
 ```
 The standard rule for **priorities** of arithmetic operations is applied: multiplying and dividing are always done before adding and subtracting. 
 

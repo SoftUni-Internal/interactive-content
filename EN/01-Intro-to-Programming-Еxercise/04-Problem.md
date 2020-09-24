@@ -1,9 +1,13 @@
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="28-00E-p-04" executionType="tests-execution" executionStrategy="python-code"]
-[code-editor language=python]
+[code-task title="Calculations" taskId="27-00E-p-04" executionType="tests-execution" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -27,7 +31,7 @@ Print the result of each expression on a separate line
 [output]
 11
 24
-8.0
+8
 [/output]
 [/test]
 [test]
@@ -36,7 +40,7 @@ Print the result of each expression on a separate line
 [output]
 11
 24
-8.0
+8
 [/output]
 [/test]
 [/tests]

@@ -1,9 +1,15 @@
 [slide]
 # Problem 06
-[code-task title="Problem-06" taskId="28-07-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Problem-06" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -41,18 +47,7 @@ Print on the console:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
-[input]
-Matrix
-Breaking bad
-Legend
-STOP
-[/input]
-[output]
-The best movie for you is Breaking bad with 878 ASCII sum.
-[/output]
-[/test]
-[test open]
+[test]
 [input]
 The maze
 School story 2

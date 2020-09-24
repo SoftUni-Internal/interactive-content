@@ -2,10 +2,9 @@
 
 [slide]
 # Video
-
-[vimeo-video startTimeInSeconds="4025" endTimeInSeconds="4222"]
-[stream language="EN" videoId="341553633" default /]
-[stream language="RO" videoId="387288483"  /]
+[vimeo-video startTimeInSeconds="4211" endTimeInSeconds="4582"]
+[stream language="EN" videoId="341539841/456a08950e" default /]
+[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
 [/vimeo-video]
 
 [/slide]
@@ -19,16 +18,13 @@ So far, we wrote a lot of code, and there were some mistakes in it, right? Now w
 
 We can track **line by line** what happens in our program, what path it follows, what are the values of defined variables at each step of debugging, and many other things that allow us to detect errors (**bugs**).
 
-[image assetsSrc="debugging.png" /]
+[image assetsSrc="conditional-statements-breakpoint.png" /]
+[image assetsSrc="conditional-statements-variables-watch.png" /]
 
-# Debugging in PyCharm
-Pressing `[Shift + F9]` will start the program in debug mode
+# Debugging in IntelliJ IDEA 
+By pressing the `[Shift + F9]` button, we run the program in **debug mode**. We move to **the next line** with `[F7]`.
 
-We can go to the next step with `[F8]`
+[image assetsSrc="conditional-statements-debug.png" /]
 
-We can create breakpoints using `[Ctrl + F8]`
-  * We can go directly to them by using `[F9]`
-
-[image assetsSrc="debug_pycharm.png" /]
-
+With `[Ctrl + F8]` we create the so-called breakpoints, that we can reach directly using `[Ctrl + F8]` when we start the program.
 [/slide]

@@ -1,9 +1,15 @@
 [slide]
 # Problem: Fuel Tank
-[code-task title="Fuel Tank" taskId="28-03E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Fuel Tank" taskId="27-02AE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -24,7 +30,7 @@ The input is consists of 2 lines:
     - "Fill your tank with \{type of fuel\}!". 
     - Type of the fuel should be printed in lower case.
 
-## Example
+### Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -49,20 +55,20 @@ Fill your tank with diesel!
 [/test]
 [test open]
 [input]
-Gasoline
-40
-[/input]
-[output]
-You have enough gasoline.
-[/output]
-[/test]
-[test]
-[input]
 Gas
 25
 [/input]
 [output]
 You have enough gas.
+[/output]
+[/test]
+[test]
+[input]
+Gasoline
+40
+[/input]
+[output]
+You have enough gasoline.
 [/output]
 [/test]
 [test]

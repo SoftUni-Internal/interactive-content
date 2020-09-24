@@ -1,9 +1,15 @@
 [slide]
 # Problem 01
-[code-task title="Problem-01" taskId="28-07-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Problem-01" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -37,19 +43,7 @@ You have to print on the console the time needed to watch all of the episodes, r
 [/task-description]
 [code-io /]
 [tests]
-[test open]
-[input]
-Lucifer
-3
-18
-55
-[/input]
-[output]
-Total time needed to watch the Lucifer series is 3594 minutes.
-[/output]
-[/test]
-[tests]
-[test open]
+[test]
 [input]
 Flash
 5

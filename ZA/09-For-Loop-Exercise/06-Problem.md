@@ -1,53 +1,58 @@
 [slide]
 # Problem: Grades
-[code-task title="Grades" taskId="28-04E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Grades" taskId="27-04E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **calculate statistics** of the exam **grades**. 
+Write a program to calculate statistics of the exam grades. 
 
-In the beginning, the program receives the **number** of **students** attended the examination and **its grade for each student**. 
+In the beginning, the program receives the number of students attended the examination and its grade for each student. 
 
-In the end, the program should print **the percentage of students** with grade between **2.00 and 2.99**, between **3.00 and 3.99**, **4.00 and 4.99**, and between **5.00 or more**. 
+In the end, the program should print the percentage of students with grade between 2.00 and 2.99, between 3.00 and 3.99, 4.00 and 4.99, and between 5.00 or more. 
 
-Also the **average grade** of the exam.
+Also the average grade of the exam.
 
 ## Input
-Read from the console a **series of numbers**, each on a **separate** line:
-- The **first** line - **number** of students **attended** the exam - an integer in the range \[1 ... 1000\]
-- **For each student on a separate line** - grade of the exam - real number in the range \[2.00 ... 6.00\]
+Read from the console a series of numbers, each on a separate line:
+- The first line - number of students attended the exam - an integer in the range \[1 ... 1000\]
+- For each student on a separate line - grade of the exam - real number in the range \[2.00 ... 6.00\]
 
 ## Output
-**Print** on the console **5 rows** that contain the following information:
+Print on the console 5 rows that contain the following information:
 - "Top students: \{percent student with grade 5.00 or more\}%"
 - "Between 4.00 and 4.99: \{between 4.00 and 4.99 inclusive\}%"
 - "Between 3.00 and 3.99: \{between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{less than 3.00\}%"
 - "Average: \{average grade\}"
 
-All numbers must be **formatted** to the **second decimal place**.
+All numbers must be formatted to the second decimal place.
 
 ## Example
-
-| **Input** | **Output** |
+| Input | Output |
 | --- | --- | 
 | 10 | Top students: 30.00% |
 | 3.00 | Between 4.00 and 4.99: 30.00% |
-| 2.99 | Between 3.00 and 3.99: 20.00% |
-| 5.68 | Fail: 20.00% |
-| 3.01 | Average: 4.06 |
+| 2.99| Between 3.00 and 3.99: 20.00% |
+| 5.68| Fail: 20.00% |
+| 3.01| Average: 4.06 |
 | 4| | 
-| 4| | 
+| 4| | | 
 | 6.00| |
 | 4.50| |
 | 2.44| |
-| 5| | | 
+| 5| | 
 
-## Comments
+### Comments
 - Students with grade 5 and more – three = 30% of 10
 - Between 4 and 4.99 – three = 30% of 10
 - Between 3 and 3.99 – two = 20% of 10

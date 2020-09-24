@@ -1,9 +1,15 @@
 [slide]
 # Problem: Old Books
-[code-task title="Old Books" taskId="28-05E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Old Books" taskId="27-05E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

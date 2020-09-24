@@ -1,14 +1,19 @@
 [slide]
 # Problem: Pets
-[code-task title="Pets" taskId="28-02E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Pets" taskId="27-02E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-
 Write a **program** calculating the **amount of kilograms** food Martina\'s pets will eat for the time she is **on adventure** and **checks if the food is enough**. 
 
 Each animal eats certain amount food per day.
@@ -17,9 +22,9 @@ Each animal eats certain amount food per day.
 Read **five** lines from the console:
 - **number of days** - an integer in range \[1…5000\]
 - **left food in kilograms** - an integer in range \[0…100000\]
-- **food for the dog per day in kilograms** - floating-point number in range \[0.00…100.00\]
-- **food for the cat per day in kilograms** - floating-point number in range \[0.00…100.00\]
-- **food for the turtle per day in grams** - floating-point number in range \[0.00…10000.00\]
+- **food for the dog per day in kilograms** - double in range \[0.00…100.00\]
+- **food for the cat per day in kilograms** - double in range \[0.00…100.00\]
+- **food for the turtle per day in grams** - double in range \[0.00…10000.00\]
 
 ## Output
 Print on the console a **single** line:
@@ -37,7 +42,7 @@ Print on the console a **single** line:
 | 1 | |
 | 1200 | |
 
-## Comments
+### Comments
 - **Food needed for:**
 - **dog** = 2 days \* 1 kg = **2** kg;
 - **cat** = 2 days \* 1 kg = **2** kg;
@@ -61,6 +66,7 @@ Print on the console a **single** line:
 - **turtle** = 5 days \* 321 g = **1.605** kg;
 - **Total amount of food** = 10.5 + 4 + 1.605 = **16.105** ;
 - 16.105 – 10 = 6.105 -> 7 kg of food are needed
+
 [/task-description]
 [tests]
 [test open]

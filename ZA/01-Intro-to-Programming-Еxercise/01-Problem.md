@@ -1,9 +1,13 @@
 [slide]
 # Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="28-00E-p-01" executionType="tests-execution" executionStrategy="python-code"]
-[code-editor language=python]
+[code-task title="Print Hello SoftUni" taskId="27-00E-p-01" executionType="tests-execution" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

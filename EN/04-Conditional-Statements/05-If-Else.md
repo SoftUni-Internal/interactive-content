@@ -3,12 +3,13 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="2429" endTimeInSeconds="2553"]
-[stream language="EN" videoId="341553633" default /]
-[stream language="RO" videoId="387288483"  /]
+[vimeo-video startTimeInSeconds="2681" endTimeInSeconds="3553"]
+[stream language="EN" videoId="341539841/456a08950e" default /]
+[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
 [/vimeo-video]
 
 [/slide]
+
 
 [slide]
 # If-Else Conditions
@@ -21,11 +22,12 @@ Built this way, **the conditional statement** is called `if-else` and its behavi
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 
 The format of the construction is:
-```py
-if condition:
-  # condition body;
-else:
-  # else construction body;
+```java
+if (condition) {
+  // condition body;
+} else {
+  // else construction body;
+}
 ```
 
 If condition is `false`, the else-statement runs.
@@ -38,7 +40,9 @@ In an `if` statement that doesn’t include an else statement, if condition is `
 
 If condition is `false`, control is transferred to the next statement after the if statement.
 
-Both the then-statement and the else-statement can consist of a single statement or multiple statements. 
+Both the then-statement and the else-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
+
+For a single statement, the braces are optional but recommended.
 
 The statement or statements in the then-statement and the else-statement can be of any kind, including another if statement nested inside the original if statement.
 
@@ -46,50 +50,61 @@ The statement or statements in the then-statement and the else-statement can be 
 This is an extended version of the example from the previous slide.
 
 As you can see now we have another case, which will be executed when the condition in the `if` statement turns out **false**.
-```py
-weather = input()
+```java
+Scanner scanner = new Scanner(System.in);
+String weather = scanner.nextLine();
 
-if weather == "rainy":
-    print("Take an umbrella!")
-else:
-    print("Leave your umbrella at home!")
+if (weather.equals("rainy")) {
+    System.out.println("Take an umbrella!");
+} else {
+    System.out.println("Leave your umbrella at home!")
+}
 ```
 [/slide]
 
 [slide]
 # Block of Code
-Unlike other programming languages Python uses indentation to indicate the blocks of code and not only to make it readable and pretty.
+When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
-To make a block of code, you have to indent every line of the block by the same amount. 
+When we want to execute **block of code** (group of commands), curly brackets are **required**. 
 
-Here is an example where incorrect indentation leads to confusion:
-```py live
-color = "red"
-if color == "red":
-  print("tomato")
-else:
-  print("banana")
-print("lemon")
+In case we drop them, **only the first line** after the **if clause** will be executed.
+
+Here is an example where dropping curly braces leads to confusion:
+```java live
+String color = "red";
+if (color.equals("red")) 
+  System.out.println("tomato");
+else
+  System.out.println("banana");
+System.out.println("lemon"); 
 ```
 
-With proper indentation:
-```py live
-color = "red"
-if color == "red":
-  print("tomato")
-  print("strawberry")
-else:
-  print("banana")
-  print("lemon")
+With curly braces:
+```java live
+String color = "red";
+if (color.equals("red")) {
+  System.out.println("tomato");
+  System.out.println("strawberry"); 
+} else {
+  System.out.println("banana");
+  System.out.println("lemon");
+}
 ```
 [/slide]
 
 [slide]
 # Problem: Even or Odd
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write code here
+[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -141,14 +156,22 @@ even
 
 [slide]
 # Solution: Even or Odd
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-num = int(input())
-if num % 2 == 0: 
-   print("even")
-else:
-   print("odd")
+[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num = Integer.parseInt(scanner.nextLine());
+        if (num % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -200,24 +223,30 @@ even
 
 [slide]
 # Problem: Greater Numbers
-[code-task title="Greater Number" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write code here
+[code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
-## Example
-### Input
+# Example
+## Input
 - 4
 - 8
-### Output
+## Output
 - Greater number: 8
 
 [/task-description]
@@ -258,30 +287,37 @@ Greater number: 2
 
 [slide]
 # Solution: Greater Numbers
-[code-task title="Greater Number" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-number1 = int(input())
-number2 = int(input())
+[code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
 
-if number1 > number2:
-    print(f"Greater number: {number1}")
-elif number2 > number1:
-    print(f"Greater number: {number2}")
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num1 = Integer.parseInt(scanner.nextLine());
+        int num2 = Integer.parseInt(scanner.nextLine());
+        if (num1 > num2) {
+            System.out.println("Greater number: " + num1);
+        } else {
+            System.out.println("Greater number: " + num2);
+        }
+    }
+}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which finds the greater of two numbers:
 
   * Read two **integers**
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
-## Example
-### Input
+# Example
+## Input
 - 4
 - 8
-### Output
+## Output
 - Greater number: 8
 [/task-description]
 [tests]
@@ -315,5 +351,4 @@ Greater number: 2
 [/tests]
 [code-io/]
 [/code-task]
-
 [/slide]

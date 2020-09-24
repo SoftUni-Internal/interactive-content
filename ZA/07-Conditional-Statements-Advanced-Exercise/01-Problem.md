@@ -1,9 +1,15 @@
 [slide]
 # Problem: Personal Titles
-[code-task title="Personal Titles" taskId="28-03E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Personal Titles" taskId="27-02AE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -24,18 +30,37 @@ Entered from the console:
 Print the expected address on a single line.
 
 ## Example
+
 | **Input** | **Output** | 
 | --- | --- |
 | 25 | Ms. |
 | f | |
 
 | **Input** | **Output** | 
-| --- | --- |
+| --- |  --- |
 | 13.5 | Master |
 | m | |
 [/task-description]
 [tests]
 [test open]
+[input]
+25
+f
+[/input]
+[output]
+Ms.
+[/output]
+[/test]
+[test open]
+[input]
+13.5
+m
+[/input]
+[output]
+Master
+[/output]
+[/test]
+[test]
 [input]
 12
 f
@@ -44,7 +69,7 @@ f
 Miss
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 17
 m

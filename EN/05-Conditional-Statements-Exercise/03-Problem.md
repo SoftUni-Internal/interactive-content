@@ -1,9 +1,15 @@
 [slide]
 # Problem: Time + 15 Minutes
-[code-task title="Time + 15 Minutes" taskId="28-02E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Time + 15 Minutes" taskId="27-02E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -22,9 +28,9 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 
 ## Example
 | **Input** | **Output** |
-| --- |  --- |
-| 11| 11:23|
-| 08| |
+| --- | --- |
+| 11 | 11:23|
+| 08 | |
 
 | **Input** | **Output** |
 | --- | --- |

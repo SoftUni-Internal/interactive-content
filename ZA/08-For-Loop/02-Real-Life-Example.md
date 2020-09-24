@@ -1,16 +1,6 @@
 # Real-Life Example
 
 [slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1272" endTimeInSeconds="1329"]
-[stream language="EN" videoId="342410322" default /]
-[stream language="RO" videoId="389330702"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
 # Real-Life Example: Moving Dishes
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
 

@@ -3,58 +3,36 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="1873" endTimeInSeconds="2655"]
-[stream language="EN" videoId="341528681" default /]
-[stream language="RO" videoId="387031676"  /]
+[vimeo-video startTimeInSeconds="1778" endTimeInSeconds="2358 "]
+[stream language="EN" videoId="341522009/063bddc415" default /]
+[stream language="RO" videoId="386049133/766a425069"  /]
 [/video-vimeo]
 
 [/slide]
 
 [slide]
 # Data Types
-In Python we can use data types to define variables as follows:
-* **int** - integer number 
-* **float** - real number
-* **str** - string and chars 
-* **bool** - boolean
+In Java we can use data types to define variables as follows:
+  * **int** – an integer number: 1, 2, 3…
+  * **double** – a floating-point: -0.5, 3.14, …
+  * **boolean** – a Boolean value: true, false
+  * **char** – a symbol: 'a', 'b', '#', …
+  * **String** – text: "Hello", "World", …
 
-Once a variable is defined, it can change its value many times.
+Once a variable is defined, it can change its value many times, but it cannot change its data type later. 
 
-Here is how we can declare variables of different types:
-```python
-a = 5
-text = "Some text"
-letter = 'A'
-f = 4.2
-```
-
-In Python data types are **dynamic**.
-
-Unlike other programming languages such as C# and Java it can change its data type later. 
-
-A single variable can be used to hold different data types
-```python
-x = 5        # x is Number
-x = "John"   # x is String
-x = True     # x is Boolean
-```
-
-To set a string value to a variable you can use **single** or **double** **quotes**:
-```python
-first_name = "John" 
-last_name = 'Adams'
-```
-But you cannot use both together:
-```python
-first_name = 'John" 
-# this will not work  
-
+Variables may hold only data of their type. Here is how we can declare variables of different types:
+```java
+int a = 5;
+String text = "Some text";
+char letter = 'A';
+float f = 4.2;
 ```
 
 Data types set ranges of values with similar characteristics.
 
 The are characterized by:
-  * **Name** - E.g. bool, int, string, DateTime
+  * **Name** - E.g. boolean, int, String, DateTime
   * **Size** (memory usage) - Example: 4 bytes
   * **Default value** - Example: 0
 [/slide]
@@ -63,31 +41,31 @@ The are characterized by:
 # Naming Conventions
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
-In Python the convention for naming variables is ***"Snake-case"***. 
+In Java the convention for naming variables are used ***"camel-case"***. 
 
-There are other naming conventions which are used in different languages such as pascal case, camel case. 
+There are other naming conventions which are used in different languages such as pascal case, snake case. 
+
+**Camel case** combines words by:
+* capitalizing all words following the first word
+* removing the space:
+```java
+int userLoginCount;
+```
+
+**Pascal case** combines words by:
+* capitalizing each word along with the first one
+* removing the space:
+```java
+int UserLoginCount;
+```
 
 **Snake-case** is another naming convention, which separates words with:
 * one underscore character (_)
 * no spaces
 * each element's initial letter usually lowercased within the compound
 * the first letter either upper or lowercase:
-```python
-users_count
-first_name
-```
-
-**Camel case** combines words by:
-* capitalizing all words following the first word
-* removing the space:
-```python
-userLoginCount
-```
-
-**Pascal case** combines words by:
-* capitalizing each word along with the first one
-* removing the space:
-```python
-UserLoginCount
+```java
+int users_count;
+string first_name;
 ```
 [/slide]

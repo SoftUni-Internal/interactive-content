@@ -1,22 +1,28 @@
 [slide]
 # Problem: Trade Commissions
-[code-task title="Trade Commissions" taskId="28-03E-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Trade Commissions" taskId="27-02AE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-A company pays the following **commissions** to its businessmen according to the **city** they work in and the **amount** of **sales s**:
+A company pays the following commissions to its employees according to the city they work in and the amount of sales:
 
 | **Sales / City** | London | New York | Sydney|
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | \[0-500\] | 5% | 4.5% | 5.5% |
-| \[501-1000\] | 7% | 7.5% | 8% |
+| \[501-1000\] | 7% | 7.5% | 8% | 
 | \[1001-10000\] | 8% | 10% | 12% |
-| s > 10000 | 12% | 13% | 14.5% |
+| > 10000| 12% | 13% | 14.5% |
 
 Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
 
@@ -26,17 +32,16 @@ Read from the console two lines:
 - Amount of sales - floating-point number
 
 ## Output
-Print on the console the calculated value of trade commission.
-
-The result should be **formatted to the second decimal point**. 
-
-If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
+- Print on the console the calculated value of trade commission.
+- The result should be **formatted to the second decimal point**. 
+- If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
 
 ## Example
 | **Input** | **Output** |  
 | --- | --- |
 | London | 120.00 | 
 | 1500 | |  
+
 
 | **Input** | **Output** | 
 | --- | --- | 
@@ -54,6 +59,15 @@ London
 [/output]
 [/test]
 [test open]
+[input]
+Moscow
+-50
+[/input]
+[output]
+error
+[/output]
+[/test]
+[test]
 [input]
 Sydney
 499.99

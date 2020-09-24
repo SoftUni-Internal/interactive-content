@@ -1,4 +1,4 @@
-# Programming Basics with Python
+# Programming Basics with Java
 
 ## Description
 This course teaches the **basics of coding**, such as:
@@ -16,4 +16,4 @@ English
 Beginner
 
 ## Authors
-Unnamed
+Technical Trainers Team, SoftUni

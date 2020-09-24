@@ -1,9 +1,15 @@
 [slide]
 # Problem: Yard Greening
-[code-task title="Yard Greening" taskId="28-01E-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Yard Greening" taskId="27-01E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -30,10 +36,10 @@ Print on the console two lines:
 Prices should be formatted to the second decimal point.
 
 ## Example
-| Input | Output |
-| --- | --- |
+| Input | | Output |
+| --- | --- | --- |
 | 540 | The final price is: 3369.71 dollars |
-| | The discount is: 739.69 dollars |
+|  | The discount is: 739.69 dollars |
 
 ### Comments
 - Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $

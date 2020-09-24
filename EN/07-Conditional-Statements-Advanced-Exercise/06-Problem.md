@@ -1,9 +1,15 @@
 [slide]
 # Prolem: Fishing Boat
-[code-task title="Fishing Boat" taskId="28-03E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Fishing Boat" taskId="27-02AE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -12,13 +18,11 @@
 Tony and his friends decided to rent a boat - the rent depends on the **season** and the **number** of fishermen.
 
 **The price** on the basis of **season**:
-
 - **Spring - 3000 $**
 - **Summer and autumn - 4200 $**
 - **Winter - 2600 $**
 
 **The price** on the basis of **number** of fishermen uses **discount:**
-
 - If the group is **up to 6 people (inclusive) -  10% discount**
 - If the group members are in range \[7…11\] -  **15% discount**
 - If the group is **12 or more people - 25% discount**
@@ -88,7 +92,7 @@ Autumn
 Not enough money! You need 180.00 dollars.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 2000
 Winter

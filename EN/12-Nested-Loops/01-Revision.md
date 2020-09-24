@@ -3,42 +3,58 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="984" endTimeInSeconds="1500"]
-[stream language="EN" videoId="345185854" default /]
-[stream language="RO" videoId="393622973" /]
+[vimeo-video startTimeInSeconds="1007" endTimeInSeconds="1314"]
+[stream language="EN" videoId="345011935" default /]
+[stream language="RO" videoId="393861306"  /]
 [/vimeo-video]
 
 [/slide]
 
 [slide]
 # Revision
-A while loop is used to repeat a block of code when we don't know the count of iterations
 
-```py lvie
-n = int(input())
-while n % 2 != 0:
-  n = int(input())
-print(n)
+# While / Do-While Loops
+The while / do-while loops are repeated while a **condition is true**:
+
+```java live
+int n = 10;
+int num = 1;
+while (num <= n) {
+   System.out.println(num++);
+}
 ```
 
-# Break Operator
-Used for prematurely **exiting** the loop
-
-Can only be executed from the loop's **body**
-
-When it is executed, the code inside the loop's body after it **is skipped** and does not execute
-
-# Infinite While Loop
-```py live
-number = 1
-command = "Add"
-while command != "END"
-  print(number)
-# Always evaluated to True
+``` java live
+int num = 1;
+int count = 0;
+do {
+    count++;
+    num = num * 2;
+} while (num <= 10);
+System.out.printf("2^%d = %d%n", count, num);
 ```
 
-```py live
-while True:
-  print('Hello world!')
- ```
+# While or For
+**While** and **for** loops help to **repeat** block of **code**.
+
+Use `for` when you know the **number of repetitions**.
+
+Use `while` when you don't know when the **end condition** will be met.
+
+# The break Statement.
+If we have to **interrupt** the loop execution, we do it with the operator `break`:
+``` java
+Scanner scanner = new Scanner(System.in);
+while (true) {
+   int n = Integer.parseInt(scanner.nextLine());
+   
+   if (n % 2 == 0) {
+      break; // even number -> exit from the loop
+   }
+
+   System.out.println("The number is not even.");
+}
+
+System.out.println("Even number entered: %d", n);
+```
 [/slide]

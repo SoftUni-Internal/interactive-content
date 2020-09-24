@@ -1,9 +1,15 @@
 [slide]
 # Problem: Summer Outfit
-[code-task title="Summer Outfit" taskId="28-03E-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Summer Outfit" taskId="27-02AE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -49,7 +55,7 @@ Morning
 It's 16 degrees, get your Sweatshirt and Sneakers.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 22
 Afternoon

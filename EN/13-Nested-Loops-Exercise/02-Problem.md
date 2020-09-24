@@ -1,9 +1,15 @@
 [slide]
 # Problem: Clock - Part 2
-[code-task title="Clock - Part 2" taskId="28-06E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Clock - Part 2" taskId="27-06E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]

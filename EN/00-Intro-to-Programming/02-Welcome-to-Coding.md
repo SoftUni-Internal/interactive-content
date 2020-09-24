@@ -1,11 +1,11 @@
 # What is Coding?
 
 [slide]
-# Video
 
-[vimeo-video startTimeInSeconds="4218" endTimeInSeconds="5197"]
-[stream language="EN" videoId="388805190" default /]
-[stream language="RO" videoId="390423636"  /]
+# Video
+[vimeo-video startTimeInSeconds="4243" endTimeInSeconds="5570"]
+[stream language="EN" videoId="384741142" default /]
+[stream language="RO" videoId="390421925"  /]
 [/video-vimeo]
 
 [/slide]
@@ -19,26 +19,30 @@ When the commands are one after another, they are called **a computer program**.
 The text of computer programs is called **a program code** (or a **source code**, or even shorter – **code**).
 
 Example of command for the computer:
-```python live
-print("Welcome to coding")
+```java live
+System.out.println("I am coding");
 ```
 [/slide]
 
 [slide]
 # Computer Programs
-Computer programs represent **a sequence of commands** that are written in certain **programming language**, like Python, Java, JavaScript, C#, C++, PHP, C, Ruby, Swift, Go or another.
+Computer programs represent **a sequence of commands** that are written in certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
-Example of **computer program** in Python:
-```python live
-size = 5
-print("Size = ", size)
-print("Area = ", size * size)
+Example of **computer program** in Java:
+```java live no-template
+public class Main {
+  public static void main(String[] args) {
+    int size = 5;
+    System.out.println("Size = " + size);
+    System.out.println("Area = " + size * size);
+  }
+}
 ```
 
-The above program holds a sequence of **3 commands**:
-- Assigning a **value** to a **name**: `size = 5;`
-- Calculating and **printing** an **expression**: `print("Size = ", size);`
-- Calculating and **printing** an **expression**: `print("Area = ", size * size);`
+The above program defines a **class** `Main`, holding a **method** `main()`, which holds a sequence of **3 commands**:
+- Declaring and assigning a **variable**: `int size = 5;`
+- Calculating and **printing** an **expression**: `System.out.println("Size = " + size);`
+- Calculating and **printing** an **expression**: `System.out.println("Area = " + size * size);`
 
 The result (output) from the above program is as follows:
 ```
@@ -46,9 +50,13 @@ Size = 5
 Area = 25
 ```
 
-In order to write commands, we should know **the syntax and the semantics of the language** which we are working with, in our case – **Python**. 
+We **shall explain in detail how to write programs in Java**, why we need to define a **class** and why we need to define a **method** `main()` a bit later. 
 
-Therefore, we are going to get familiar with the syntax and the semantics of the language Python, and with programming generally, by learning step by step code writing from the simpler to the more complex programming constructions.
+Now, assume that the Java language requires all the above code in order to execute a sequence of commands.
+
+In order to write commands, we should know **the syntax and the semantics of the language** which we are working with, in our case – **Java**. 
+
+Therefore, we are going to get familiar with the syntax and the semantics of the language Java, and with programming generally, by learning step by step code writing from the simpler to the more complex programming constructions.
 [/slide]
 
 [slide]
@@ -67,19 +75,25 @@ Similarly, in programming **the computer programs execute algorithms**: a sequen
 
 For example, to arrange a sequence of numbers in an ascending order, an algorithm is needed, e.g. find the smallest number and print it, then find the smallest number among the rest of the numbers and print it, and this is repeated until there are no more numbers left.
 
-For convenience when creating programs, for writing programming code, for execution of programs and other operations related to programming, we need a **development environment**, for example PyCharm.
+For convenience when creating programs, for writing programming code, for execution of programs and other operations related to programming, we need a **development environment**, for example IntelliJ IDEA.
 [/slide]
 
 [slide]
-# Console-Based Python Program – Example
+# Console-Based Java Program – Example
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 
 This is a program of 3 consecutive commands:
+```java 
+import java.util.Scanner;
 
-```python
-dollars = int(input())
-euro = dollars * 0.883795087
-print(euro)
+public class Program {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+    int dollars = scanner.nextInt();
+    double euro = dollars * 0.883795087;
+    System.out.print("Euro: " + euro);
+  }
+}
 ```
 [/slide]
-

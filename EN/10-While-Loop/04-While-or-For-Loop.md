@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="2145" endTimeInSeconds="2859"]
-[stream language="EN" videoId="343587107" default /]
-[stream language="RO" videoId="392266139" /]
+[vimeo-video startTimeInSeconds="1958" endTimeInSeconds="2495"]
+[stream language="EN" videoId="343678060" default /]
+[stream language="RO" videoId="391452320"  /]
 [/vimeo-video]
 
 [/slide]
@@ -18,10 +18,12 @@
 But there are different situations when writing code that require either the first loop, or the other.
 
 When you know **exactly how many times** you want to loop through a block of code, use the `for` loop.
-```py live
-for i in range(1, 5)
-    print(i)
+```java live
+for (int i = 0; i <= 5; i++) {
+    System.out.println(i);
+}
 ```
+
 It is usually appropriate for loops in which the initialization and increment are single statements and logically related. 
 
 It is more compact than `while` and it keeps the loop control statements together in one place.
@@ -31,21 +33,39 @@ But, there could be many **complex** problems where number of iterations depend 
 That means we don't know in advance **how many times** to repeat a loop.
 
 In those situation it is better to use `while` loop.
-```py live
-i = int(input())
+```java live
+Scanner scanner = new Scanner(System.in);
+String command = scanner.nextLine();
+int number = Integer.parseInt(scanner.nextLine());
+while (command != "End") {
+    switch (command) {
+        case "Add":
+            number += 1;
+            break;
+        case "Subtract":
+            number -= 1;
+            break;
+    }
 
-while i != 10
-    print(i)
-    i = int(input())
+    command = scanner.nextLine();
+}
+
+System.out.println(number);
 ```
 [/slide]
 
 [slide]
 # Problem: Odd Number
-[code-task title="Odd Number" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -77,20 +97,30 @@ Write a program, which:
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Solution: Odd Number
-[code-task title="Odd Number" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-number = int(input())
-while (number % 2) == 0:
-    number = int(input())
-print(number)
+[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      int num = Integer.parseInt(scanner.nextLine());
+
+      while (num % 2 == 0) {
+        num = Integer.parseInt(scanner.nextLine());
+      }
+
+      System.out.println(num);
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -99,7 +129,6 @@ Write a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
-
 ## Example
 ### Input
 - 2
@@ -122,95 +151,166 @@ Write a program, which:
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
-# Problem: Number Manipulator
-[code-task title="Number Manipulator" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write code here
+# Problem: Number Processor
+[code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
+* Reads a number from the console
+* Reads the following commands:
+* **Add** - Аdds 1 to the number
+* **Subtract** - Subtracts 1 from the number
+* **END** -  Prints the number and stops the program
 
 ## Example
 ### Input
-- 2
-- 4
-- 8
-- 3
+- 5
+- Add
+- END
 ### Output
-- 3
+- 6
 [/task-description]
 [tests]
 [test]
 [input]
-2
 4
-8
+Add
+END
+[/input]
+[output]
 5
+[/output]
+[/test]
+[test]
+[input]
+4
+Subtract
+END
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test]
+[input]
+4
+Add
+Add
+Subtract
+END
 [/input]
 [output]
 5
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
-# Solution: Number Manipulator
-[code-task title="Number Manipulator" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-number = int(input())
+# Solution: Number Processor
+[code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
 
-while number % 2 == 0:
-    number = int(input())
+public class Program {
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in); 
+      int number = Integer.parseInt(scanner.nextLine());
+      String command = scanner.nextLine();
 
-print(number)
+      while (!command.equals("END")) {
+        switch (command) {
+          case "Add": 
+            number++; 
+            break;
+          case "Subtract": 
+            number--; 
+            break;
+        }
+
+        command = scanner.nextLine();
+      }
+      
+      System.out.println(number);
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
 Write a program, which:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
+* Reads a number from the console
+* Reads the following commands:
+* **Add** - Аdds 1 to the number
+* **Subtract** - Subtracts 1 from the number
+* **END** -  Prints the number and stops the program
+
 ## Example
 ### Input
-- 2
-- 4
-- 8
-- 3
+- 5
+- Add
+- END
 ### Output
-- 3
+- 6
 [/task-description]
 [tests]
 [test]
 [input]
-2
 4
-8
+Add
+END
+[/input]
+[output]
 5
+[/output]
+[/test]
+[test]
+[input]
+4
+Subtract
+END
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test]
+[input]
+4
+Add
+Add
+Subtract
+END
 [/input]
 [output]
 5
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]

@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="1027" endTimeInSeconds="1120"]
-[stream language="EN" videoId="341568008" default /]
-[stream language="RO" videoId="388278683"  /]
+[vimeo-video startTimeInSeconds="1345" endTimeInSeconds="1458"]
+[stream language="EN" videoId="341582556" default /]
+[stream language="RO" videoId="388314290"  /]
 [/vimeo-video]
 
 [/slide]

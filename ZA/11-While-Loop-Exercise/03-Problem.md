@@ -1,9 +1,15 @@
 [slide]
 # Problem: Walking
-[code-task title="Walking" taskId="28-05E-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput ]
-[code-editor language=python]
+[code-task title="Walking" taskId="27-05E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -27,6 +33,7 @@ After that, if she didn\'t manage to reach her goal, you have to print the follo
 | 2000| | 
 | 6500| |
 
+
 | **Input** | **Output** |
 | --- | --- |
 | 1500 | 2500 more steps to reach goal. |
@@ -34,7 +41,7 @@ After that, if she didn\'t manage to reach her goal, you have to print the follo
 | 2500| |
 | 3000| |
 | Going home| |
-| 200| |
+| 200| | |
 [/task-description]
 [tests]
 [test open]

@@ -1,14 +1,19 @@
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="28-02E-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Area of Figures" taskId="27-02E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-
 Write a program where user enters type and dimensions of a geometric figure and calculates its area. 
 
 Figures are four types: **square, rectangle, circle and triangle**. 
@@ -41,14 +46,14 @@ The result should be **formatted to the third decimal point**.
 
 | **Input** | **Output** |
 | --- | --- |
-| circle | 113.097|
+| circle| 113.097|
 | 6| |
 
 | **Input** | **Output** |
 | --- | --- |
 | triangle | 45.000|
-| 4.5 | |
-| 20 | |
+| 4.5| |
+| 20| |
 [/task-description]
 [tests]
 [test open]

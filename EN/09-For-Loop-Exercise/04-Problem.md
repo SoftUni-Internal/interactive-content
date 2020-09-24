@@ -1,22 +1,27 @@
 [slide]
 # Problem: Numbers Ending in 7
-[code-task title="Numbers Ending in 7" taskId="28-04E-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Numbers Ending in 7" taskId="27-04E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **prints the numbers in the range** \[1...1000\], which **end in 7**. 
 
-Print the numbers on a **single** line, separated by a **single space**.
+Write a program that prints the numbers in the range \[1...1000\], which end in 7. 
+
+Print the numbers on a single line, separated by a single space.
 
 ## Example
 
-| **Input** | **Output** |
-| --- | --- |
-| | 7 17 27 ... 997 |
+| Input | | Output |
+| --- | --- | --- |
+| (no input) | | 7 17 27 ... 997 |
 [/task-description]
 [tests]
 [test open]

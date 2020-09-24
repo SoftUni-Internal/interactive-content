@@ -3,9 +3,9 @@
 [slide]
 # Video
 
-[vimeo-video startTimeInSeconds="7335" endTimeInSeconds="9030"]
-[stream language="EN" videoId="341553633" default /]
-[stream language="RO" videoId="387288483"  /]
+[vimeo-video startTimeInSeconds="7708" endTimeInSeconds="9990"]
+[stream language="EN" videoId="341539841/456a08950e" default /]
+[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
 [/vimeo-video]
 
 [/slide]
@@ -25,10 +25,16 @@ Let's solve a few problems to confirm what we have learned.
 
 [slide]
 # Problem: Guess the Password
-[code-task title="Guess the Password" taskId="28-02-p-01" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Guess the Password" taskId="27-02-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -38,7 +44,7 @@ Write a program to check a password:
   * Read a string: the password **guess**
   * Print **"Welcome"** if the password guess is **"s3cr3t!"**
   * Print **"Wrong password!"** in all other cases 
-  
+
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -47,7 +53,7 @@ Write a program to check a password:
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| qwerty! | Wrong password! |
+| qwerty | Wrong password! |
 
 [/task-description]
 [tests]
@@ -61,7 +67,7 @@ Welcome
 [/test]
 [test open]
 [input]
-qwerty!
+random password
 [/input]
 [output]
 Wrong password!
@@ -84,17 +90,24 @@ Wrong password!
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Boiling Water
-[code-task title="Boiling Water" taskId="28-02-p-02" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Boiling Water" taskId="27-02-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -103,7 +116,8 @@ Write a program, which checks for hot water:
 
   * Read a floating-point number: the water **temperature** (in °C)
   * Print **"The water is boiling"** if the number **> 100**
-  * Prints **"The water is not hot enough"** in all other cases
+  * Prints **"The water is not hot enough"** in all other cases 
+
   
 ## Example
 | **Input** | **Output** |
@@ -125,6 +139,7 @@ Write a program, which checks for hot water:
 The water is boiling
 [/output]
 [/test]
+
 [test open]
 [input]
 29
@@ -150,16 +165,24 @@ The water is not hot enough
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Speed Info
-[code-task title="Speed Info" taskId="28-02-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Speed Info" taskId="27-02-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -169,7 +192,8 @@ Write a program to check for fast / slow speed:
   * Read the **speed** (a floating-point number)
   * Print **"Slow"** if the speed **<= 30**
   * Print **"Fast"** if the speed **> 30**
-  
+
+
 ## Example
 | **Input** | **Output** |
 | --- | --- |
@@ -215,18 +239,24 @@ Fast
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="28-02-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-import math
+[code-task title="Area of Figures" taskId="27-02-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 
-# Write your code here
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -284,19 +314,19 @@ rectangle
 [/test]
 [test open]
 [input]
+trapezoid
+[/input]
+[output]
+Unknown figure
+[/output]
+[/test]
+[test open]
+[input]
 circle
 2.5
 [/input]
 [output]
 19.63
-[/output]
-[/test]
-[test open]
-[input]
-trapezoid
-[/input]
-[output]
-Unknown figure
 [/output]
 [/test]
 [test]
@@ -336,17 +366,23 @@ Unknown figure
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Tickets
-[code-task title="Tickets" taskId="28-02-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Tickets" taskId="27-02-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -359,17 +395,12 @@ Write a program to calculate a ticket price:
   * Student ticket price: **1.00**
   * Regular ticket price: **1.60**
   * For invalid type print **"Invalid ticket type!"**
-
   
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | student | $1.00 |
 
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| regular | $1.60 |
 [/task-description]
 [tests]
 [test open]
@@ -390,7 +421,7 @@ $1.60
 [/test]
 [test open]
 [input]
-vip
+discount
 [/input]
 [output]
 Invalid ticket type!
@@ -421,16 +452,24 @@ Invalid ticket type!
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
+
 [/slide]
 
 [slide]
 # Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="28-02-p-06" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Coffee Shop" taskId="27-02-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -443,6 +482,7 @@ Write a program to calculate the drink price in a coffee shop:
     * The price should be **formatted** to 2nd digit after the decimal point
   
 Prices:
+
   * Coffee price: **1.00**
   * Tea price: **0.60**
   * Sugar price: **0.40**
@@ -451,13 +491,13 @@ Prices:
 | **Input** | **Output** |
 | --- | --- |
 | coffee | Final price: $1.40 |
-| sugar | |
+| sugar |  |
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | tea | Final price: $0.60 |
-| no | |
+| no |  |
 
 [/task-description]
 [tests]
@@ -470,7 +510,7 @@ sugar
 Final price: $1.40
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 tea
 no
@@ -516,17 +556,24 @@ Final price: $0.60
 [/output]
 [/test]
 [/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 
 [/slide]
 
 [slide]
 # Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="28-02-p-07" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
+[code-task title="Valid Triangle" taskId="27-02-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -538,19 +585,13 @@ Write a program to check if a triangle is valid by its sizes:
     * Prints **"Valid Triangle"** if the above condition is met
     * Prints **"Invalid Triangle"** otherwise 
 
+    
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Valid Triangle |
-| 4 | |
-| 5 | |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 5 | Invalid Triangle |
-| 8 | |
-| 3 | |
+| 4 |  |
+| 5 |  |
 
 [/task-description]
 [tests]
@@ -559,26 +600,6 @@ Write a program to check if a triangle is valid by its sizes:
 3
 4
 5
-[/input]
-[output]
-Valid Triangle
-[/output]
-[/test]
-[test open]
-[input]
-5
-8
-3
-[/input]
-[output]
-Invalid Triangle
-[/output]
-[/test]
-[test]
-[input]
-6
-8
-10
 [/input]
 [output]
 Valid Triangle
@@ -591,87 +612,31 @@ Valid Triangle
 6
 [/input]
 [output]
+Invalid  Triangle
+[/output]
+[/test]
+[test]
+[input]
+6
+8
+10
+[/input]
+[output]
+Valid Triangle
+[/output]
+[/test]
+[test]
+[input]
+5
+8
+3
+[/input]
+[output]
 Invalid Triangle
 [/output]
 [/test]
 [/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Sum of Numbers
-[code-task title="Sum of Numbers" taskId="28-02-p-08" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
-```
-# Write your code here
-```
-[/code-editor]
-[task-description]
-Write a program, which:
-
-* Receives **3 numbers**
-* Prints ***"True"*** if the **sum** of **2** of them is **equal** to the **third one**
-* Prints ***"False"*** if the condition above is **NOT met**
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 2 | True |
-| 6 | |
-| 4 | |
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 1 | False |
-| 1 | |
-| 1 | |
-[/task-description]
-[tests]
-[test open]
-[input]
-2
-6
-4
-[/input]
-[output]
-True
-[/output]
-[/test]
-[test open]
-[input]
-1
-1
-1
-[/input]
-[output]
-False
-[/output]
-[/test]
-[test]
-[input]
-3
-4
-5
-[/input]
-[output]
-False
-[/output]
-[/test]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-True
-[/output]
-[/test]
-[/tests]
-[code-io /]
+[code-io/]
 [/code-task]
 [/slide]
 

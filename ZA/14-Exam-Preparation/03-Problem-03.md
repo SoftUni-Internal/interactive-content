@@ -1,9 +1,15 @@
 [slide]
 # Problem 03
-[code-task title="Problem-03" taskId="28-07-p-03" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Problem-03" taskId="27-07-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -44,7 +50,7 @@ Print one line on the console: "Your bill is \{total price\}$"
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 John Wick
 Drink

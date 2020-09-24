@@ -1,9 +1,15 @@
 [slide]
 # Problem 04
-[code-task title="Problem-04" taskId="28-07-p-04" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Problem-04" taskId="27-07-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -46,22 +52,7 @@ First, print on the console one line:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
-[input]
-60
-10
-6
-3
-20
-15
-Movie time!
-[/input]
-[output]
-There are 6 seats left in the cinema.
-Cinema income - 255$
-[/output]
-[/test]
-[test open]
+[test]
 [input]
 140
 15

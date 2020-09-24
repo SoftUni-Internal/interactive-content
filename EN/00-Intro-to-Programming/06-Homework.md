@@ -2,65 +2,82 @@
 
 [slide]
 # Video
-
-[vimeo-video startTimeInSeconds="10165" endTimeInSeconds="10706"]
-[stream language="EN" videoId="388805190" default /]
-[stream language="RO" videoId="390423636"  /]
+[vimeo-video startTimeInSeconds="11462" endTimeInSeconds="12232"]
+[stream language="EN" videoId="384741142" default /]
+[stream language="RO" videoId="390421925"  /]
 [/video-vimeo]
 
 [/slide]
 
 [slide]
 # Homework
-Welcome to the homework. 
+Now, it's your turn to practice what you have learned in the training session.
 
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
+We have prepared some simple problems for you to solve. If you struggle you can see the solution after each problem. 
 
-We have prepared some problems for you to solve.
+[image assetsSrc="homework.png" /]
 
-Let's solve a few problems to confirm what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
 [/slide]
 
 [slide]
-# Problem: Print "Hello Python"
-[code-task title="Print Hello Python" taskId="28-00-p-01" executionType="tests-execution" executionStrategy="python-code"]
-[code-editor language=python]
+# Problem: Print "Hello Java"
+[code-task title="Print Hello Java" taskId="27-00-p-01" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a Python program, which prints `Hello Python` on the console.
 
+Write a Java program, which:
+
+Prints "Hello Java" on the console
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+[/input]
+[output]
+Hello Java
+[/output]
+[/test]
 [test]
 [input]
 [/input]
 [output]
-Hello Python
+Hello Java
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="28-00-p-02" executionType="tests-execution" executionStrategy="python-code" ]
-[code-editor language=python]
+[code-task title="Calculate and Print 5 * 5" taskId="27-00-p-02" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a Python program, which:
+
+Write a Java program, which:
 
 * Calculates the value of 5 * 5
 * Prints the result
@@ -82,24 +99,29 @@ Write a Python program, which:
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="28-00-p-03" executionStrategy="python-code" ]
-[code-editor language=python]
+[code-task title="Name and Expression" taskId="27-00-p-03" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a program to print `Catlyn` on the first line and calculate and print the result of the expression `5 + 3` on the second line.
+Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
@@ -120,19 +142,25 @@ Catlyn
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="28-00-p-04" executionStrategy="python-code" ]
-[code-editor language=python]
+[code-task title="Calculations" taskId="27-00-p-04" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
+
 Write a program, which calculates and prints the value of the following expressions:
 
 * 5 + 3 \* 2
@@ -147,7 +175,7 @@ Write a program, which calculates and prints the value of the following express
 [output]
 11
 20
-6.0
+6
 [/output]
 [/test]
 [test]
@@ -156,26 +184,33 @@ Write a program, which calculates and prints the value of the following express
 [output]
 11
 20
-6.0
+6
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="28-00-p-05" executionStrategy="python-code" ]
-[code-editor language=python]
+[code-task title="Square of 7 * 7 Stars" taskId="27-00-p-05" executionStrategy="java-code"]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+      // Write code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which prints a square of 7 * 7 stars like this:
 
+Write a program, which:
+
+Prints a square of 7 * 7 stars like this:
 ```
 * * * * * * *
 * * * * * * *
@@ -185,7 +220,6 @@ Write a program, which prints a square of 7 * 7 stars like this:
 * * * * * * *
 * * * * * * *
 ```
-
 [/task-description]
 [code-io /]
 [tests]
@@ -216,12 +250,12 @@ Write a program, which prints a square of 7 * 7 stars like this:
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]
 
 [slide]
-# Homework Summary
+# Homework Results
 
 [tasks-results /]
+
 [/slide]

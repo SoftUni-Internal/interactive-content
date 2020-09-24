@@ -1,10 +1,15 @@
 [slide]
 # Problem 05
-
-[code-task title="Problem-05" taskId="28-07-p-05" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Problem-05" taskId="27-07-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -52,22 +57,7 @@ The result must be formatted to two digits after the decimal point.
 [/task-description]
 [code-io /]
 [tests]
-[test open]
-[input]
-10
-3
-Thrones
-5
-Riverdale
-5
-Gotham
-2
-[/input]
-[output]
-You bought all the series and left with 0.50$
-[/output]
-[/test]
-[test open]
+[test]
 [input]
 25
 2

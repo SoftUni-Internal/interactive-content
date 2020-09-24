@@ -1,9 +1,15 @@
 [slide]
 # Problem: Clock
-[code-task title="Clock" taskId="28-06E-p-01" executionType="tests-execution" executionStrategy="python-code" requiresInput]
-[code-editor language=python]
+[code-task title="Clock" taskId="27-06E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-# Write your code here
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -17,7 +23,6 @@ The input is consists of **2** lines:
 
 ## Output
 - Hours must be printed on the console in "\{hour\} : \{minutes\}" format.
-    - Hours and minutes should be printed with a leading zero.
 
 ## Example
 
@@ -35,9 +40,12 @@ The input is consists of **2** lines:
 [test open]
 [input]
 22
-58
+55
 [/input]
 [output]
+22 : 55
+22 : 56
+22 : 57
 22 : 58
 22 : 59
 23 : 00
