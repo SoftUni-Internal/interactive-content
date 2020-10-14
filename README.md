@@ -1,2 +1,1 @@
-# Interactive Content
-SoftUni Interactive Content: Courses, Lessons, Seminars, Trainings
+# how-to-become-a-programmer-webinar
