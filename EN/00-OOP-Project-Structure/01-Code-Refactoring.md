@@ -58,6 +58,13 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
+## Submit
+To submit your solution, **zip** your whole package with the **Person** and **Main classes**:
+
+[image assetsSrc="generics-example(2).png" /]
+
+If you didn't create **package** just choose your classes and **zip** them.
+
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
