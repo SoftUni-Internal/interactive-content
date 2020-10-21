@@ -498,7 +498,7 @@ Folder size: 2878
 [/slide]
 
 
-# Problems For Self-Practice
+
 [slide hideTitle]
 # Problem: Copy a Picture
 
