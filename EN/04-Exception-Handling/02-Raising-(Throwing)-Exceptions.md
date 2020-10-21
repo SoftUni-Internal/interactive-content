@@ -1,7 +1,6 @@
-# Exception-Handling
 
 [slide]
 
-# Exception-Handling
+# Raising (Throwing) Exceptions
 
 [/slide]

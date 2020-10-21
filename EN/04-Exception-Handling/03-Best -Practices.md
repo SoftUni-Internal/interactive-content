@@ -1,7 +1,5 @@
-# Exception-Handling
-
 [slide]
 
-# Exception-Handling
+# Best Practices
 
 [/slide]

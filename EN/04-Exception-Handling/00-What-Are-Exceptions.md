@@ -32,13 +32,14 @@ Below **Throwable** are:
   public static void main(String args[]) {
     File file = new File("E://file.txt");
     FileReader fr = new FileReader(file);
-  }
+  } //File not found Exception
    ```
-
-   File not found Exception
+ 
 
 - **Unchecked** - an exception that occurs at the time of execution
     - Also called as **Runtime Exceptions**
+
+TODO: Give example for Runtime Exceptions.
 
 [/slide]
 
@@ -46,7 +47,7 @@ Below **Throwable** are:
 
 # Exception Hierarchy 
 
-
+[image assetsSrc="exception-handling-example(1).png" /]
 
 [/slide]
 
