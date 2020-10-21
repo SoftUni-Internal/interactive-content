@@ -41,6 +41,19 @@ try {
     - **ArrayIndexOutOfBoundsException**
     - **StringIndexOutOfBoundsException**
 
+Unmanaged code can throw **other exceptions**.
+
+For **handling all exceptions** (even unmanaged) use the construction:
+
+```java
+try {
+  // Do some work that can raise any exception
+} catch (Exception ex) {
+  // Handle the caught exception
+}
+``` 
+
+Exmaple: Find the Mistake.
 
 ```java live
 String str = "Peter";
@@ -53,5 +66,13 @@ try {
     System.out.println("Invalid integer number!");
 }
 ```
+[/slide]
+
+[slide]
+
+# "try finally" Statement
+
+
+
 
 [/slide]
