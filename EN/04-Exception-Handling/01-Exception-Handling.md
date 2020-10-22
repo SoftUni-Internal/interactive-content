@@ -113,7 +113,7 @@ static void testTryFinally() {
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Problem: Square Root
 
@@ -128,7 +128,7 @@ Use **try-catch-finally.**
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Solution: Square Root
 
@@ -139,7 +139,7 @@ Use **try-catch-finally.**
 ```
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Problem: Enter Numbers
 
@@ -166,7 +166,7 @@ If the user enters an invalid number, make the user enter all of them again.
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Problem: Fixing
 
@@ -197,7 +197,7 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Solution: Fixing
 
