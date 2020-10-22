@@ -112,3 +112,104 @@ static void testTryFinally() {
 ```
 
 [/slide]
+
+[slide hideTitle]
+
+# Problem: Square Root
+
+Write a program that reads an integer **number** and **calculates** and **prints** its **square root**.
+
+If the number is invalid, print **"Invalid number"**. 
+
+In all cases finally print **"Good bye"**. 
+
+Use **try-catch-finally.**
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Solution: Square Root
+
+**TODO: Take the solution from Dimo's presentation, because to be the same.**
+
+```java live
+
+```
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Enter Numbers
+
+Write a method **printNumbers(int start, int end)** that prints an integer numbers in a given range **\[start...end\]**. 
+
+If an **invalid number** or a **non-number** text is entered, the method should **throw an exception**. 
+
+Using this method write a program that enters **start** and **end:** **1 < start < end < 100**. 
+
+If the user enters an invalid number, make the user enter all of them again.
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Solution: Enter Numbers
+
+**TODO: Take the solution from Dimo's presentation, because to be the same.**
+
+```java live
+
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Fixing
+
+This program is throwing an **ArrayIndexOutOfBoundsException**. 
+
+Using your skills, fix this problem using a try catch block.
+
+```java
+
+public static void main(String[] args) {
+   Scanner scanner = new Scanner (System.in);
+   String[] weekdays = new String[5];
+
+   weekdays[0] = "Monday";
+   weekdays[1] = "Tuesday";
+   weekdays[2] = "Wednesday";
+   weekdays[3] = "Thursday";
+   weekdays[4] = "Friday";
+
+   for (int i = 0; i <= weekdays.lenght; i++) {
+      System.out.println(weekdays[i]);
+   }
+   
+   scanner.nextLine();
+}
+
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Solution: Fixing
+
+**TODO: Take the solution from Dimo's presentation, because to be the same.**
+
+```java live
+
+```
+
+[/slide]
+
+
+
+
+
