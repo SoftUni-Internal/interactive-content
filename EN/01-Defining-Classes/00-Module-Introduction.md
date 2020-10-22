@@ -1,7 +1,5 @@
-# Module Introduction
-
 [slide]
 
-# Module Introduction
+# Defining Classes
 
 [/slide]

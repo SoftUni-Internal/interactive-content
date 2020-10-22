@@ -1,7 +1,5 @@
-# Module Introduction
-
 [slide]
 
-# Module Introduction
+# Introduction to OOP
 
 [/slide]
