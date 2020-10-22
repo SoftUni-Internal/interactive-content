@@ -3,6 +3,7 @@
 [slide]
 
 # "try-catch" Construction
+
 In Java exceptions can be handled by the **try-catch** construction.
 
 ```java 
@@ -41,7 +42,7 @@ try {
     - **ArrayIndexOutOfBoundsException**
     - **StringIndexOutOfBoundsException**
 
-Unmanaged code can throw **other exceptions**.
+## Unmanaged code can throw **other exceptions**.
 
 For **handling all exceptions** (even unmanaged) use the construction:
 
@@ -66,13 +67,48 @@ try {
     System.out.println("Invalid integer number!");
 }
 ```
+
+Hint: Trace out the exceptions hierarchy. Be cautious witch exception is main and witch is inheritor.
+
 [/slide]
 
 [slide]
 
-# "try finally" Statement
+# "try-finally" Statement
+
+The **"try-finally"** statement ensures **execution** of a given block **in all cases**, when exception is raised or not in the try block.
+
+Used for execution of cleaning-up code, e.g. releasing resources.
+
+```java 
+try {
+   // Do some work that can cause an exception
+} finally {
+   // This block will always execute
+}
+```
+
+[image assetsSrc="exception-handling-example(2).png" /]
 
 
+**Example:**
 
+
+```java 
+static void testTryFinally() {
+  System.out.println("Code executed before try-finally.");
+  try {
+     String str = sc.nextLine();
+     Integer.parseInt(str);
+     System.out.println("Parsing was successful.");
+     return; // Exit from the current method
+  } catch (NumberFormatException ex) {
+     System.out.println("Parsing failed!");
+  } finally {
+     System.out.println("This cleanup code is always executed.");
+  }
+  System.out.println("This code is after the try-finally block.");
+}
+```
 
 [/slide]
