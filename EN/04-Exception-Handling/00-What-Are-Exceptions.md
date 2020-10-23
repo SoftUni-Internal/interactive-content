@@ -28,19 +28,25 @@ Below **Throwable** are:
 - **Checked** - an exception that is checked (notified) by the compiler at compilation-time
     - Also called as **Compile Time exceptions**
 
-    ```java 
+```java 
   public static void main(String args[]) {
     File file = new File("E://file.txt");
     FileReader fr = new FileReader(file);
   } //File not found Exception
-   ```
+```
  
 
 - **Unchecked** - an exception that occurs at the time of execution
     - Also called as **Runtime Exceptions**
 
-TODO: Give example for Runtime Exceptions.
-
+```java 
+  public static void main(String args[]) {
+    int num1=10;
+    int num2=0;
+    int res=num1/num2; //Since dividing an integer with 0 it should throw ArithmeticException
+  System.out.println(res);
+  } //ArithmeticException
+```
 [/slide]
 
 [slide]

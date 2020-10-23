@@ -54,7 +54,7 @@ try {
 }
 ``` 
 
-Exmaple: Find the Mistake.
+Example: Find the Mistake.
 
 ```java live
 String str = "Peter";
