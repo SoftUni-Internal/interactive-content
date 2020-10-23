@@ -78,13 +78,123 @@ Define a simple class **Person**, which has the following fields:
 
 [/slide]
 
-[slide hideTitle]
+[slide]
 
 # Solution: Valid Person
 
 ## Step 1. Create a Class Person
 
+Create a class **Person**. The class should contain the following fields: 
+**first name (String), last name (String) and age (int)**.
 
+All fields are **required**, meaning you should have one constructor accepting all three as **parameters**. 
 
+For example:
 
+```java
+public class Person {
+   private String firstName;
+   private String lastName;
+   private int age;
+
+   public Person (String firstName, String lastName, int age) {
+       // TODO: add setters and validate data
+
+   }
+
+   //TODO: add getters and setters
+   
+}
+```
+
+## Step 2. Add Getters and Setters and Validate the Data
+
+Add a **getters and setters** for each of the fields. 
+
+Perform validations in their **setters** to keep the state of the **Person** objects correct.
+
+The **first** and **last name** cannot be **null** or **empty** strings. 
+
+To check this, use the **string.IsNullOrEmpty()** method.
+
+The **age** must be in the range **[0 … 120].**
+
+If invalid data is entered, **throw** appropriate exceptions with descriptive **messages**. 
+
+E.g., if an empty name is entered, an appropriate exception may be **IllegalArgumentException**.
+
+Example for validating the **first name** (last name is analagous):
+
+```java
+private void setFirstName (String firstName) {
+   if (firstName.isBlank ()) {
+      throw new IllegalArgumentException ("The first name cannot be null or empty");
+   }
+
+   this.firstName = firstName;
+}
+```
+Example for validating the **age**:
+
+```java
+private void setAge (int age) {
+   if (age <0 || age > 120) {
+      throw new IllegalArgumentException ("Age should be in the range [O...120]");
+   }
+
+   this.age = age;
+}
+```
+
+Now the constructor should make use of the setters instead of modifying the private fields directly:
+
+```java
+public Person (String firstName, String lastName, int age) {
+   this. setFirstName (firstName);
+   this.setLastName (lastName);
+   this.setAge (age);
+}
+```
+
+## Step 3. Test the Person Class
+In your main program, test whether your class behaves properly. 
+
+Create several objects of type Person – one with **valid data**, one with an **empty first name**, 
+one with **null as last name**, one with **negative age** and one with **age > 120**. 
+
+Check whether executing the code results in errors, when bad data is provided. 
+
+Test the invalid cases one by one by commenting out the other invalid lines of code (your program will stop executing when the first error is encountered).
+
+```java
+public static void main(String[] args) {
+   Person peter = new Person ( firstName: "Franco", lastName : "Aimee", age: 19);
+
+   Person noName = new Person ( firstName: " " lastName: "Aimee", age: 19);
+   Person noLastName = new Person ( firstName: "Franco", lastName: null, age: 19);
+   Person negativeAge new Person ( firstName: "Franco", lastName: "Aimee", age: -1);
+   Person toooldForThisProgram = new Person ( firstName: "Franco", lastName: "Aimee", age: 121);
+}
+```
+
+## Step 4. Add Try-Catch Blocks
+
+To prevent the program from blowing up, surround the invalid lines in **try-catch** blocks. 
+
+It’s a good practice to put different catch blocks for the different types of errors you anticipate the operation might throw. 
+
+Print the **message** of the exception in the catch block.
+
+Example:
+
+```java
+try {
+      Person noName = new Person ( firstName: " ", lastName: "Aimee", age: 19);
+} catch (IllegalArgumentException ex) {
+      System.out.println("Exception thrown: " + ex.getMessage());
+}
+
+// Result in console:
+// Exception thrown: The first name cannot be null or empty
+```
 [/slide]
