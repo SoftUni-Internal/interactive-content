@@ -4,30 +4,25 @@
 
 # In this lesson you learnt:
 
-- What are Sets in Java? 
-    - Unordered collection of objects
-    - Duplicate elements are not allowed
-    - Offers very fast performance
-- Types of Sets
-    - `HashSet<E>`
-    - `TreeSet<E>`
-    - `LinkedHashSet<E>`
-- Associative Arrays - Maps
-    - hold a set of pairs `<key, value>`
-    - contains unique keys
-- Types of Maps
-    - `HashMap<K, V>`
-    - `TreeMap<K, V>`
-    - `LinkedHashMap<K, V>`
+- What are Exceptions in Java? 
+    - Exception Hierarchy
+- How to Hanlde Exception?
+    - `try-catch` Constructor
+    - `try-finally` Statement
+- How to Raising (Throwing) Exceptions
+    - Using Throw Keyword
+    - Re-Throwing Exceptions
+- Best Practices
+    - Using Catch Block
+    - Choosing the Exception Type 
 
 # In the next lesson, you will learn:
 
-- Streams Basics
-    - Opening a File Stream
-    - Closing a File Stream
-- Types of Streams
-    - Combining Streams
-- Files and Directories
-- Serialization
+- What is Debugging?
+    - Working with Debugging tools (`debuggers`)
+    - Importance of Debugging
+- Working with **IntelliJ IDEA Debugger**
+    - Breakpoints
+- Data Inspection
 
 [/slide]
