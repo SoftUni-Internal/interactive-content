@@ -26,7 +26,7 @@ Below **Throwable** are:
 **Exceptions** are two types:
 
 - **Checked** - an exception that is checked (notified) by the compiler at compilation-time
-    - Also called as **Compile Time exceptions**
+    - Also called **Compile Time exceptions**
 
 ```java 
   public static void main(String args[]) {

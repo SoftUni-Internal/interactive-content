@@ -10,7 +10,7 @@
    - Continue with the more general exceptions.
    - Otherwise a compilation error will occur.
 
-- Each **catch** block should handle only these exceptions which it expects
+- Each **catch** block should handle only these exceptions which it expects
 
    - If a method is not competent to handle an exception, it should leave it unhandled
    - Handling all exceptions disregarding their type is a popular bad practice (anti-pattern)!

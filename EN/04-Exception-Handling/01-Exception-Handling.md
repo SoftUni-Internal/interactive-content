@@ -28,7 +28,8 @@ try {
 }
 ```
 
-When catching an exception of a particular class, all its inheritors (child exceptions) are caught too, e.g.
+**When catching an exception of a particular class, all its inheritors (child exceptions) are caught too.**
+See the following  example:
 
 ```java 
 try {
@@ -37,10 +38,9 @@ try {
   // Handle the caught arithmetic exception
 }
 ```
-
-- Handles **IndexOutOfBoundsException** and its descendants: 
-    - **ArrayIndexOutOfBoundsException**
-    - **StringIndexOutOfBoundsException**
+- The code in the example handles `IndexOutOfBoundsException` and its descendants: 
+    - `ArrayIndexOutOfBoundsException`
+    - `StringIndexOutOfBoundsException`
 
 ## Unmanaged code can throw **other exceptions**.
 

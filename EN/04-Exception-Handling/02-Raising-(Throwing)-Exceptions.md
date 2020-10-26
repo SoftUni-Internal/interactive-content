@@ -5,7 +5,7 @@
 
 Exceptions are thrown (raised) by the **throw** keyword.
 
-Used to notify the calling code in case of an error or unusual situation.
+They are used to notify the calling code in case of an error or unusual situation.
 
 **When an exception is thrown:**
 - The program execution stops
@@ -109,19 +109,19 @@ public class Person {
 
 ## Step 2. Add Getters and Setters and Validate the Data
 
-Add a **getters and setters** for each of the fields. 
+Add **getters and setters** for each of the fields. 
 
 Perform validations in their **setters** to keep the state of the **Person** objects correct.
 
 The **first** and **last name** cannot be **null** or **empty** strings. 
 
-To check this, use the **string.IsNullOrEmpty()** method.
+To check this, use the `string.IsNullOrEmpty()` method.
 
 The **age** must be in the range **[0 … 120].**
 
 If invalid data is entered, **throw** appropriate exceptions with descriptive **messages**. 
 
-E.g., if an empty name is entered, an appropriate exception may be **IllegalArgumentException**.
+For example, if an empty name is entered, an appropriate exception may be **IllegalArgumentException**.
 
 Example for validating the **first name** (last name is analagous):
 
