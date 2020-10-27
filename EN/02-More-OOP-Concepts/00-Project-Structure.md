@@ -144,8 +144,3 @@ Add **Contains** method
 [/slide]
 
 
-[slide]
-
-
-
-[/slide]
