@@ -75,12 +75,6 @@ public static void main(String[] args) {
   int counter = Counter.staticCount; // Static Count: 3  
 }
 ```
-Count: 1
-Static Count: 1
-Count: 1
-Static Count: 2
-Count: 1
-Static Count: 3
 
 [/slide]
 
