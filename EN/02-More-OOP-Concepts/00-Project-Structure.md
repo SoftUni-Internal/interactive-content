@@ -143,3 +143,40 @@ Add **Contains** method
 
 [/slide]
 
+[slide]
+
+# Solution: Point in Rectangle
+
+```java
+public class Point {
+  private int x;
+  private int y;
+  //TODO: Add getters and setters
+}	
+
+public class Rectangle {
+  private Point bottomLeft;
+  private Point topRight;
+  //TODO: getters and setters
+  public boolean contains(Point point) {
+    //TODO: Implement
+  }
+}
+
+public boolean contains(Point point)
+{
+  boolean isInHorizontal = 
+	this.bottomLeft.getX() <= point.getX() &&
+	this.topRight.getX() >= point.getX();
+
+  boolean isInVertical = 
+	this.bottomLeft.getY() <= point.getY() &&
+	this.topRight.getY() >= point.getY();
+
+  boolean isInRectangle = isInHorizontal && isInVertical;
+
+  return isInRectangle;
+}
+```
+
+[/slide]
