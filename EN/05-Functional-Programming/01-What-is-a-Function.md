@@ -47,7 +47,7 @@ There are many **Functional Programming** languages and languages that incorpora
 
 **Purely Functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
 
-- Purely Functional developers need to **switch their thinking style** from the traditional "**algorithmic thinking**" to "**functional thinking**".
+Purely Functional developers need to **switch their thinking style** from the traditional "**algorithmic thinking**" to **"functional thinking"**. 
 
 - The program in the purely functional languages is a **pure function** (which calls other pure functions) without side effects.
 
@@ -122,10 +122,11 @@ int b = increment.apply(a);
 [code-task title="Problem: Sum Numbers" taskId="2884387f-fc71-4e3c-815f-00546e8e26b9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-import java.util.*;
-import java.util.Scanner;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.function.ToIntFunction;
 
 public class Main {
     public static void main(String[] args) {
@@ -240,28 +241,21 @@ Sum = 10
 
 
 ```
-import java.util.Scanner;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.function.ToIntFunction;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String[] input = scanner.nextLine().split(", ");
+public class SumNumbers {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        if(input.length < 2) {
-            System.out.println("Count = " + input.length);
-            System.out.println("Sum = " + input[0]);
-        } else {
-            BiFunction<String, String, Integer> parser = (x, y) -> Integer.parseInt(x) + Integer.parseInt(y);
+        ToIntFunction<String> function = Integer::parseInt;
 
-            int sum = 0;
-            for (int i = 0; i < input.length - 1; i = i + 2) {
-                sum += parser.apply(input[i], input[i + 1]);
-            }
-            System.out.println("Count = " + input.length);
-            System.out.println("Sum = " + sum);
-        }
+        int[] numbers = Arrays.stream(reader.readLine().split(", ")).mapToInt(function).toArray();
+
+        System.out.printf("Count = %d%nSum = %d%n", numbers.length, Arrays.stream(numbers).reduce(0, (x1, x2) -> x1 + x2));
     }
 }
 ```
