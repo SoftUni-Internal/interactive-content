@@ -863,6 +863,9 @@ public boolean contains(Point point)
 Than go in `Main()` and set **input and output.**
 
 ```java
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
