@@ -46,7 +46,7 @@ public class MyClass {
 }
  ```
 
- Use the lambda operator -> Reads as "`goes to`"
+ Use the lambda operator `->` Reads as `goes to`
 
 
 **Implicit** lambda expressions:
@@ -55,7 +55,7 @@ public class MyClass {
 (msg) -> { System.out.println(msg); }
 
 // Parameters can be enclosed in parentheses()
-// The body can be enclosed n braces{}
+// The body can be enclosed in braces{}
 ```
 
 
@@ -68,14 +68,14 @@ String msg -> System.out.println(msg);
  
 We can have different number of parameters:
 
-- `Zero` parameters:
+- **Zero** parameters:
 
 ```java
 () -> { System.out.println("Hello!"); }
 () -> { System.out.println("How are you?"); }
 ```
 
-- `More` parameters:
+- **More** parameters:
 ```java
 (int x, int y) -> { return x + y; }
 (int x, int y, int z) -> { return (y - x) * z; }
