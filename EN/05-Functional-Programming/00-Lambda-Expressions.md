@@ -46,7 +46,7 @@ public class MyClass {
 }
  ```
 
- Use the lambda operator `->` Reads as `goes to`
+ Use of the lambda operator `->` Reads as `goes to`
 
 
 **Implicit** lambda expressions:
@@ -63,10 +63,10 @@ public class MyClass {
 
 ```java
 String msg -> System.out.println(msg); 
-// We can declare parameters type
+// We can declare the type of the parameter/parameters
 ```
  
-We can have different number of parameters:
+We can have a different number of parameters
 
 - **Zero** parameters:
 
