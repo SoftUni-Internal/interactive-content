@@ -842,7 +842,7 @@ public class Rectangle {
         this.topRight = topRight;
     }
 ```
-- Implement **method contains**, that **return boolean**.
+- Implement **method `contains()`**, that **return boolean**.
 
 ```java
 public boolean contains(Point point)
