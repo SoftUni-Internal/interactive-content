@@ -302,6 +302,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int size = Integer.parseInt(sc.nextLine());
         for (int starCount = 1; starCount <= size; starCount++) {
           printRow(size, starCount); // Reusing code
@@ -309,6 +310,7 @@ public class Main {
         for (int starCount = size - 1; starCount >= 1; starCount--) {
           printRow(size, starCount);
         }
+    }
 
     static void printRow(int figureSize, int starCount) {
         for (int i = 0; i < figureSize - starCount; i++){
@@ -318,7 +320,6 @@ public class Main {
           System.out.print("* ");
         }
           System.out.println("*");
-      }
     }
 }
 ```
@@ -368,6 +369,36 @@ Create a `printRow()` method to easily reuse code.
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+1
+[/input]
+[output]
+\*
+[/output]
+[/test]
+[test open]
+[input]
+2
+[/input]
+[output]
+ \*
+\* \*
+ \*
+[/output]
+[/test]
+[test open]
+[input]
+3
+[/input]
+[output]
+  \*
+ \* \*
+\* \* \*
+ \* \*
+  \*
+[/output]
+[/test]
 [test open]
 [input]
 4
@@ -518,36 +549,6 @@ Create a `printRow()` method to easily reuse code.
             \* \* \*
              \* \*
               \*
-[/output]
-[/test]
-[test open]
-[input]
-1
-[/input]
-[output]
-\*
-[/output]
-[/test]
-[test open]
-[input]
-2
-[/input]
-[output]
- \*
-\* \*
- \*
-[/output]
-[/test]
-[test open]
-[input]
-3
-[/input]
-[output]
-  \*
- \* \*
-\* \* \*
- \* \*
-  \*
 [/output]
 [/test]
 [/tests]
