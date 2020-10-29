@@ -371,6 +371,36 @@ Create a `printRow()` method to easily reuse code.
 [tests]
 [test open]
 [input]
+1
+[/input]
+[output]
+\*
+[/output]
+[/test]
+[test open]
+[input]
+2
+[/input]
+[output]
+ \*
+\* \*
+ \*
+[/output]
+[/test]
+[test open]
+[input]
+3
+[/input]
+[output]
+  \*
+ \* \*
+\* \* \*
+ \* \*
+  \*
+[/output]
+[/test]
+[test open]
+[input]
 4
 [/input]
 [output]
@@ -519,36 +549,6 @@ Create a `printRow()` method to easily reuse code.
             \* \* \*
              \* \*
               \*
-[/output]
-[/test]
-[test open]
-[input]
-1
-[/input]
-[output]
-\*
-[/output]
-[/test]
-[test open]
-[input]
-2
-[/input]
-[output]
- \*
-\* \*
- \*
-[/output]
-[/test]
-[test open]
-[input]
-3
-[/input]
-[output]
-  \*
- \* \*
-\* \* \*
- \* \*
-  \*
 [/output]
 [/test]
 [/tests]
