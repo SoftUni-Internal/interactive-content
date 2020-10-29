@@ -604,41 +604,247 @@ printer.printToConsole(numbers);
 [/slide]
 
 [slide]
-
 # Problem: Point in Rectangle
+[code-task title="Problem: Point in Rectangle" taskId="23f4ddd7-605d-42b0-813d-1f1684c684a2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
-Create a Point class holding the horizontal and vertical coordinates
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a class **Point** and a class **Rectangle**.
 
-Create a **Rectangle class**
-- Holds 2 **points**
-    - **Bottom left** and **top right**
+The **Point** should hold **coordinates X** and **Y** and the **Rectangle** should hold 2 **Points** – its **bottom left** and **top right** corners.
 
-Add **Contains** method 
-- Takes a **Point** as an argument
-- **Returns** it if it’s inside the current object of the **Rectangle class**
+In the **Rectangle** class, you should implement a **contains(Point point)** method that returns **true** or **false**, based on **whether** the **Point** given as **attribute** is **inside** or **outside** of the **Rectangle** object.
 
+Points **on the side** of a Square are considered **inside**.
+
+## Input
+- On the first line read the coordinates of the bottom left and top right corner of the Rectangle in the format:
+
+     “`<bottomLeftX>` `<topRightX>` `<topRightY>`”.
+- On the second line, read an integer N and on the next N lines, read the coordinates of points.
+
+## Output
+- For each point, print out the result of the `Contains()` method.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 0 0 3 3 | true |
+| 5 | true |
+| 0 0 | false |
+| 0 1 | false |
+| 4 4 | true |
+| 5 3 |  |
+| 1 2 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 2 -3 12 3 | true |
+| 4 | true |
+| 8 -1 | false |
+| 11 3 | false |
+| 1 1 |  |
+| 2 4 |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| 5 8 12 15 | false |
+| 6 | true |
+| 0 0 | true |
+| 5 8 | true |
+| 12 15 | true |
+| 8 15 | true |
+| 7 15 |  |
+| 8 12 |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+2 -3 12 3
+4
+8 -1
+11 3
+1 1
+2 4
+[/input]
+[output]
+true
+true
+false
+false
+[/output]
+[/test]
+[test open]
+[input]
+0 0 3 3
+5
+0 0
+0 1
+4 4
+5 3
+1 2
+[/input]
+[output]
+true
+true
+false
+false
+true
+[/output]
+[/test]
+[test open]
+[input]
+5 8 12 15
+6
+0 0
+5 8
+12 15
+8 15
+7 15
+8 12
+[/input]
+[output]
+false
+true
+true
+true
+true
+true
+[/output]
+[/test]
+[test]
+[input]
+2 -3 12 3
+6
+8 -1
+11 3
+1 1
+2 4
+1 1
+2 4
+1 1
+2 4
+[/input]
+[output]
+true
+true
+false
+false
+false
+false
+[/output]
+[/test]
+[test]
+[input]
+0 0 3 3
+10
+0 0
+0 1
+4 4
+5 3
+1 2
+-1 5
+0 2
+3 0
+4 3
+1 2
+3 3
+[/input]
+[output]
+true
+true
+false
+false
+true
+false
+true
+true
+false
+true
+[/output]
+[/test]
+[test]
+[input]
+5 8 12 15
+9
+0 0
+5 8
+12 15
+8 15
+7 15
+8 12
+15 8
+15 7
+12 8
+[/input]
+[output]
+false
+true
+true
+true
+true
+true
+false
+false
+true
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
+
 
 [slide]
 
 # Solution: Point in Rectangle
 
+Create a class **Point**.
+
 ```java
 public class Point {
-  private int x;
-  private int y;
-  //TODO: Add getters and setters
-}	
+    private int x;
+    private int y;
 
-public class Rectangle {
-  private Point bottomLeft;
-  private Point topRight;
-  //TODO: getters and setters
-  public boolean contains(Point point) {
-    //TODO: Implement
-  }
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
 }
+```
+Then create a class **Rectangle**.
 
+```java
+public class Rectangle {
+    private Point bottomLeft;
+    private Point topRight;
+
+    public Rectangle(Point bottomLeft, Point topRight) {
+        this.bottomLeft = bottomLeft;
+        this.topRight = topRight;
+    }
+```
+- Implement **method contains**, that **return boolean**.
+
+```java
 public boolean contains(Point point)
 {
   boolean isInHorizontal = 
@@ -654,5 +860,36 @@ public boolean contains(Point point)
   return isInRectangle;
 }
 ```
+Than go in `Main()` and set **input and output.**
 
+```java
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] coordinates = Arrays.stream(scanner.nextLine().split("\\s+"))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+        Point2D leftBottom = new Point2D(coordinates[0], coordinates[1]);
+        Point2D topRight = new Point2D(coordinates[2], coordinates[3]);
+
+        Rectangle rectangle = new Rectangle(leftBottom, topRight);
+
+        int n = Integer.parseInt(scanner.nextLine());
+
+        while (n-- > 0) {
+            coordinates = Arrays.stream(scanner.nextLine().split("\\s+"))
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
+
+            Point2D point2D = new Point2D(coordinates[0], coordinates[1]);
+
+            boolean isContained = rectangle.contains(point2D);
+
+            System.out.println(isContained);
+        }
+    }
+}
+```
 [/slide]
