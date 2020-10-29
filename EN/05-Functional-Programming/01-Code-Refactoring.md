@@ -1,7 +1,0 @@
-[slide]
-
-# Code Refactoring
-
-
-
-[/slide]
