@@ -686,3 +686,9 @@ GREEN YELLOW RED GREEN YELLOW RED GREEN YELLOW RED GREEN YELLOW RED
 [/tests]
 [/code-task]
 [/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
+
+[/slide]
