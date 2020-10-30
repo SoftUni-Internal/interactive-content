@@ -178,5 +178,48 @@ On a **single line**, print the **total price** of the **holiday**, rounded to 2
 
 # Solution: Hotel Reservation 
 
+Create enumarations for **Seasons** and **Discounts**. Implement property with getter and setter:
+
+```java
+public enum Season {
+  Spring(2), Summer(4), Autumn(1), Winter(3);
+  private int value;
+  Season(int value) {
+    this.value = value;
+  }
+  public int getValue() {
+    return this.value;
+  }
+}
+```
+```java
+public enum Discount {
+  None(0), SecondVisit(10), VIP(20);
+  private int value;
+  Discount(int value) {
+    this.value = value;
+  }
+  public int getValue() {
+    return this.value;
+  }
+}
+```
+Then create class **PriceCalculator** and implement method `**CalculatePrice()**`:
+
+```java
+public class PriceCalculator {
+  public static double CalculatePrice(double pricePerDay,
+		int numberOfDays, Season season, Discount discount) {
+    int multiplier = season.getValue();
+    double discountMultiplier = discount.getValue() / 100.0;
+    double priceBeforeDiscount = numberOfDays * pricePerDay * multiplier;
+    double discountedAmount = priceBeforeDiscount * discountMultiplier;
+    return priceBeforeDiscount - discountedAmount;
+  }
+}
+```
+Afterwards go in `**main()**` and implement new **PriceCalculator**.
+
+Call `**CalculatePrice()**` with input data.
 
 [/slide]
