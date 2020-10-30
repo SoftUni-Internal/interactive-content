@@ -8,14 +8,13 @@ Lets continue with another **important paradigm** in modern programming: **Funct
 
 Functional Programs are **sequences of transformations** of data through functions.
 
-Functional programming is **declarative** programing approach (not **imperative**),
-which means that instead of describing an algorithm how to do something step by step,
-functional developers describe the result by functions and compositions of functions.
+Functional programming is a **declarative** programing approach (not **imperative**),
+which means that instead of describing an algorithm functional developers describe the result by functions and compositions of functions.
 
 
 What is a **Pure Function**?
 
-- It is a function, which returns value **only determined by its input**, without **side effects**.
+- It is a function, which returns a value **only determined by its input**, without **side effects**.
 
 - Printing something at the console or storing something in a database are examples of **side effects**.
 
@@ -27,9 +26,9 @@ What is a **Pure Function**?
 Examples of **Pure Functions** are:
 
 ## ``f(x) = √x`` 
-- the square root function: **"sqrt of x"**, which takes a number as input and returns another number as output.
+- The square root function: **"sqrt of x"**, which takes a number as input and returns another number as output.
 
-- The function **"sort of list"**, which takes a list as input and returns a new list as output.
+- The function **"list sort"**, which takes a list as input and returns a new list as output.
 
 Both functions have **no side effects**: 
 - They change nothing.
