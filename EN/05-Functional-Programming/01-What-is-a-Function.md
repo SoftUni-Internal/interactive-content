@@ -64,7 +64,7 @@ Purely Functional developers need to **switch their thinking style** from the tr
 
 - They combine multiple programing paradigms: 
 
-- **functional** programming, **declarative** programming, **structured** programming, **imperative** programming,
+**functional** programming, **declarative** programming, **structured** programming, **imperative** programming,
 **object-oriented** programming, **component-based** programming, **event-driven** programming, **asynchronous** programming, and many others.
 
 
