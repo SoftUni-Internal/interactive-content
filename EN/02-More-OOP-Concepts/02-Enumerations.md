@@ -67,9 +67,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class `**PriceCalculator**` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**. The **discount type** and **season** should be **enums.**
+Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**. The **discount type** and **season** should be **enums.**
 
-Use the class in your `**main()**` method to read input and **print** on the console the **price** of the **whole holiday**.
+Use the class in your `main()` method to read input and **print** on the console the **price** of the **whole holiday**.
 
 The price per day will be multiplied depending on the season by:
 - 1 during Autumn
@@ -204,7 +204,7 @@ public enum Discount {
   }
 }
 ```
-Then create class **PriceCalculator** and implement method `**CalculatePrice()**`:
+Then create class **PriceCalculator** and implement method `CalculatePrice()`:
 
 ```java
 public class PriceCalculator {
@@ -218,8 +218,8 @@ public class PriceCalculator {
   }
 }
 ```
-Afterwards go in `**main()**` and implement new **PriceCalculator**.
+Afterwards go in `main()` and implement new **PriceCalculator**.
 
-Call `**CalculatePrice()**` with input data.
+Call `CalculatePrice()` with input data.
 
 [/slide]
