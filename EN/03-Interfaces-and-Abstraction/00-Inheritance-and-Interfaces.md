@@ -54,7 +54,7 @@ This is an example of abstract class, which models an abstraction **"Figure"**.
 
 - This abstract class models the generic **abstraction "Figure"** and **child classes** will determine the type of the figure.
 
- The **child** class "Circle" – is a class, which inherit properties from the **abstract** class "Figure".
+ The **child class "Circle**" – is a class, which inherit properties from the **abstract** class "Figure".
 
 - This way the child class **has 3 fields**: two inherited from the parent class and one defined additionally.
 
