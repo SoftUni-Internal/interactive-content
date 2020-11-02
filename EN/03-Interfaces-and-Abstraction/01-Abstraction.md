@@ -83,7 +83,7 @@ class Dog implements Pet {
 
 Using `interface` example, the **Output** will be:
 
-``` java
+``` 
 Walking....
 ```
 
