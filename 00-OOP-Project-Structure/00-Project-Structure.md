@@ -1,5 +1,0 @@
-[slide]
-
-# Project Structure
-
-[/slide]
