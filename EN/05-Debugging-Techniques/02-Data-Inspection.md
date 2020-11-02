@@ -22,7 +22,7 @@
 ## Variables and Watches Windows
 
 - Allows you to inspect various states of your application
-- Several different kinds of "predefined" watches window
+- Several different kinds of "predefined" watches windows
 - "Custom" watches windows also possible
     - Contains only variables that you choose to add
     - Right click on the variable and select "Add to Watches"

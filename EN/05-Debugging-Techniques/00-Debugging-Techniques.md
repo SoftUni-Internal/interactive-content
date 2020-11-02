@@ -16,11 +16,9 @@ Steps to debug a program are:
 ## Debugging vs. Testing
 
 - Testing
-
-    A means of initial detection of errors
+    - Is about initial detection of errors
 - Debugging
-
-    A means of diagnosing and correcting the root causes of errors that have already been detected.
+    - Means of diagnosing and correcting the root causes of errors that have already been detected.
 
 ## Importance of Debugging
 
@@ -36,7 +34,7 @@ E.g. the Cluster Spacecraft Failure was caused by a bug.
 
 ## Debugging Philosophy
 
-**Debugging** can viewed as one big decision tree.
+**Debugging** can be viewed as one big decision tree.
 
 - Individual nodes represent **theories**
 - Leaf nodes represent possible **root causes**

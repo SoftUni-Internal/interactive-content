@@ -4,7 +4,7 @@
 
 # How to Debug a Process
 
-**IntelliJ IDE** gives us a lot of tools to debug your application
+**IntelliJ IDE** gives you a lot of tools to debug your application
 - Adding **breakpoints**
 - Visualize the **program flow**
 - Control the **flow of execution**
@@ -47,14 +47,13 @@
     - **Force Step Into** – through the method calls - Alt + Shift + F7
     - **Step Out** – Shift + F8
     - **Step into** – F7
-    - **Continue**
-    - **Break**
-    - **Breakpoints**
+    - **etc.**
+    
 
 **Controlling Execution**
 
-- By default, an app will run uninterrupted (and stop on exception or breakpoint)
-- ebugging is all about looking at the state of the process
+- By default, an app will run uninterrupted (and stop on exception or breakpoint)
+- Debugging is all about looking at the state of the process
 - Controlling execution allows:
     - **Pausing execution**
     - **Resuming execution**
@@ -62,7 +61,7 @@
 ## Options and Settings
 
 - IntelliJ offers quite a few knobs and tweaks in the debugging experience
-- Options and settings is available via Settings/Preferences -> 
+- Options and settings are available via Settings/Preferences -> 
 
     Build, Execution and Deployment (Ctrl + Alt + S):
 
@@ -87,9 +86,9 @@ Ability to stop execution based on certain criteria is key when debugging.
 
 - Stops execution at a specific instruction (line of code)
     - Can be set using:
-      **Ctrl + F8** shortcut
+      **Ctrl + F8** shortcut or 
 
-      Clicking on the **left most side** of the source code window
+      clicking on the **left most side** of the source code window
 
 - By default, the breakpoint will hit every time execution reaches the line of the code
 - Additional capabilities: condition, hit count, value changed, when hit, filters
