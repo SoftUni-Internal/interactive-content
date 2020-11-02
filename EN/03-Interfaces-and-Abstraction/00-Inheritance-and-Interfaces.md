@@ -8,7 +8,7 @@
 
 When a class inherits another class, the **parent class fields** are merged with the **child class fields** and they form the **set of data fields** for the child class.
 
-`Interfaces` defines abstract actions.
+`Interfaces` define abstract actions.
 
 - These are actions to be **implemented in the descendent classes.**
 
