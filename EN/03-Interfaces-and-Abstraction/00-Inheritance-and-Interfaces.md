@@ -20,7 +20,9 @@ When a class inherits another class, the **parent class fields** are merged with
 
 - An abstract class allows you to create functionality that subclasses can **implement** or **override**.
 
-- Abstract classes are similar to interfaces. You cannot instantiate them, and they may contain a mix of **methods** declared with or without an implementation.
+- Abstract classes are similar to interfaces. 
+
+- You cannot instantiate them, and they may contain a mix of **methods** declared with or without an implementation.
 
 - For example, the class **Figure** is not a concrete figure like square or rectangle, but the concept or the abstraction of "figure".
 
