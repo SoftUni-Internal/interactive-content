@@ -3,8 +3,7 @@
 # What is OOP?
 
 - **OOP** stands for **Objected-Oriented Programming**
-
-    It is a programming paradigm based on the concept of **"objects"**
+    - It is a programming paradigm based on the concept of **"objects"**
 - Object-Oriented programming enables programmers to think like they are working with real-life entities or objects 
 
 ## OOP vs Procedural Programming
@@ -19,10 +18,10 @@
 
 **OOP has following advantiges:**
 
-- **faster** and **easier** to execute
-- provides a **clear structure** for the programs
-- helps to keep the Java code **DRY** *"Don't Repeat Yourself"*, and makes the code **easier** to **maintain, modify and debug**
-- makes it **possible** to create full **reusable** applications with **less code** and **shorter development time**
+- **Faster** and **easier** to execute
+- Provides a **clear structure** for the programs
+- Helps to keep the Java code **DRY** *"Don't Repeat Yourself"*, and makes the code **easier** to **maintain, modify and debug**
+- Makes it **possible** to create full **reusable** applications with **less code** and **shorter development time**
 
 [/slide]
 
