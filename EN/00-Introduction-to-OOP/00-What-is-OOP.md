@@ -16,7 +16,7 @@
 
 [image assetsSrc="what-is-oop-example(2).png" /]
 
-**OOP has following advantiges:**
+**OOP has following advantages:**
 
 - **Faster** and **easier** to execute
 - Provides a **clear structure** for the programs
