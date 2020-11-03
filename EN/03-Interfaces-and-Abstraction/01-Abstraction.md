@@ -58,13 +58,13 @@ Woof, Woof
 
 ## Java Interface Example:
 
-``` java live
+``` java
 interface Pet {
     public void walk();
 }
 ```
 
-``` java live
+``` java
 class Dog implements Pet {
     public void walk() {
         System.out.println("Walking....");
@@ -72,7 +72,7 @@ class Dog implements Pet {
 }
 ```
 
-``` java live
+``` java
     public class Main {
     public static void main(String args[]) {
         Pet pet = new Dog();
