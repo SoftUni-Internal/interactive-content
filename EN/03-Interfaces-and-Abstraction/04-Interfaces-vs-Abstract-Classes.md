@@ -12,4 +12,7 @@ From that chart we can assume that we can use `interfaces` when we need to achie
 We use `abstraction` when some classes need to share few lines of code. We can put these lines of code in an abstract class and extend by all other related classes.
 
 
+# Problem: Say Hello Extended
+
+
 [/slide]
