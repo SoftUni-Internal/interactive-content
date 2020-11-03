@@ -17,8 +17,7 @@ As we know, Java does not support "**multiple inheritance**". However, we can ac
 
 
 
-[image assetsSrc="Interfaces-and-Abstraction-Implements-vs-Extends.png" /]
-
+[image assetsSrc="Interfaces-and-Abstraction-example(3).png" /]
 
 
 In this example we can see how implementation of `print()` is provided in class `Document`
