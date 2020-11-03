@@ -2,7 +2,7 @@
 
 # Programming Languages
 
-[image assetsSrc="Programming-Languages-pic.png" /]
+[image assetsSrc="Programming-Languages-pic1.png" /]
 
 A programming language is an artificial language (syntax for expression), meant for giving commands that we want the computer to **read**, **process** and **execute**.
 
