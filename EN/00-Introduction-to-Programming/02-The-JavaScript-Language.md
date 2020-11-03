@@ -32,6 +32,8 @@ It executes the commands in the program **one after another**, as it understands
 
 # The JavaScript Language
 
+[image assetsSrc="javascript-Languages-pic.png" /]
+
 **JavaScript** is prototype-based, multi-paradigm, dynamic language. 
 
 It is used both on the client-side (in the Web browser) and on the server-side (in Node.js).
