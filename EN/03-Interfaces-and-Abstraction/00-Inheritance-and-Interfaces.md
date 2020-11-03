@@ -37,7 +37,7 @@ When a class inherits another class, the **parent class fields** are merged with
 - They can **implement interfaces** and **inherit abstract** and other classes.
 
 
-[image assetsSrc="Interfaces-and-Abstraction-Diagram-Inheritance.png" /]
+[image assetsSrc="Interfaces-and-Abstraction-example.png" /]
 
 
 In this example we demonstrate **abstract** classes and **concrete** classes.
