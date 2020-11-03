@@ -1,20 +1,15 @@
+[slide]
+
 # What is Coding?
 
-[slide]
-# Video
-[vimeo-video videoId="342596676" startTimeInSeconds="1760" endTimeInSeconds="4009" /]
-
-[/slide]
-
-[slide]
-# What is Coding?
-**To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
+**To program** means to **give commands** to the computer, for example `to play a sound`, `to print something on the screen` or `to multiply two numbers`. 
 
 When the commands are one after another, they are called **a computer program**. 
 
 The text of computer programs is called **a program code** (or a **source code**, or even shorter – **code**).
 
 Example of command for the computer:
+
 ```js live
 console.log("Welcome to coding");
 ```
@@ -25,6 +20,7 @@ console.log("Welcome to coding");
 Computer programs represent **a sequence of commands** that are written in certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
 Example of **computer program** in JS:
+
 ```js live no-template
 function calculateArea() {
   let size = 5;
@@ -64,7 +60,7 @@ For example, if we fry eggs, we follow some recipe (an algorithm):
 - wait for them to fry
 - move them away from the stove
 
-Similarly, in programming **the computer programs execute algorithms**: a sequence of commands, necessary for the completion of a certain task. 
+Similarly, in programming **the computer programs execute algorithms**: a sequence of commands, necessary for the completion of a certain task.
 
 For example, to arrange a sequence of numbers in an ascending order, an algorithm is needed, e.g. find the smallest number and print it, then find the smallest number among the rest of the numbers and print it, and this is repeated until there are no more numbers left.
 
@@ -86,4 +82,5 @@ function convertUsdToEur(input) {
 
 convertUsdToEur("5");
 ```
+
 [/slide]
