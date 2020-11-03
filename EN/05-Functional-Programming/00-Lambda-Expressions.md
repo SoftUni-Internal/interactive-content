@@ -46,7 +46,7 @@ public class MyClass {
 }
  ```
 
- Use of the lambda operator `->` Reads as `goes to`
+ Use of the lambda operator `->` reads as `goes to`
 
 
 **Implicit** lambda expressions:
@@ -105,6 +105,11 @@ public class Main {
 [task-description]
 ## Description
 Write a program that reads one line of **integers** separated by **","**
+
+- Print the even numbers
+- Sort them in ascending order 
+- Print them again.
+
 
 # Examples
 
@@ -238,6 +243,11 @@ public class Main {
 [task-description]
 ## Description
 Write a program that reads one line of **integers** separated by **","**
+
+- Print the even numbers
+- Sort them in ascending order 
+- Print them again.
+
 
 # Examples
 

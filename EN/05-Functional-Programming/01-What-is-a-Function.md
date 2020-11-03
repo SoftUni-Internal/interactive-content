@@ -2,13 +2,13 @@
 
 # Functions
 
-Lets continue with another **important paradigm** in modern programming: **Functional Programming**
+Let us continue with another **important paradigm** in modern programming: **Functional Programming**
 
 **Functional Programming** (FP) is programming based on composing **pure functions**, while avoiding shared state, mutable data, and side-effects.
 
 Functional Programs are **sequences of transformations** of data through functions.
 
-Functional programming is a **declarative** programing approach (not **imperative**),
+This is called **declarative** programing approach (not **imperative**),
 which means that instead of describing an algorithm functional developers describe the result by functions and compositions of functions.
 
 
@@ -46,7 +46,7 @@ There are many **Functional Programming** languages and languages that incorpora
 
 **Purely Functional languages** are **unpractical** and rarely used, because it is more complicated to program without maintaining a state.
 
-Purely Functional developers need to **switch their thinking style** from the traditional "**algorithmic thinking**" to **"functional thinking"**. 
+Purely Functional developers need to **switch their thinking style** from the traditional "**algorithmic thinking**" to "**functional thinking**". 
 
 - The program in the purely functional languages is a **pure function** (which calls other pure functions) without side effects.
 
@@ -64,7 +64,7 @@ Purely Functional developers need to **switch their thinking style** from the tr
 
 - They combine multiple programing paradigms: 
 
-- **Functional** programming, **declarative** programming, **imperative** programming, **object-oriented** programming, **component based** programming, **event-driven** programming, **asynchronous** programming, and many others.
+- **Functional** , **declarative** , **imperative** , **object-oriented** , **component-based** , **event-driven** , **asynchronous** programming, and many others.
 
 
 
@@ -139,7 +139,7 @@ Write a program that reads one line of **Integers** separated by **", "**.
 
 Print the **count** of the numbers and their **sum**.
 
-- Use **Function<String, Integer>** for **parsing** integers after you split them to a **String** array
+- Use ```Function<String, Integer>``` for **parsing** integers after you split them to a **String** array
 
 ## Examples
 
