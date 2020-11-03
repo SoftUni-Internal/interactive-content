@@ -8,7 +8,14 @@
 
 [image assetsSrc="inheritance-example(1).png" /]
 
+[/slide]
 
+[slide]
 
+# Class Hierarchies
+
+**Inheritance leads to hierarchies of classes and/or interfaces in an application:**
+
+[image assetsSrc="inheritance-example(2).png" /]
 
 [/slide]
