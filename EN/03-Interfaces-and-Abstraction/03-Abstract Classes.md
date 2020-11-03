@@ -77,7 +77,8 @@ abstract class Device {
     System.out.println("Calling....");
   }
 }
-
+```
+``` java
 class Main extends Device {
 
   public static void main(String[] args) {
