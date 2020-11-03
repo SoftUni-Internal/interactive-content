@@ -54,11 +54,11 @@ Computer programs usually execute some algorithm.
 
 **Algorithms** are a **sequence of steps**, necessary for the completion of a certain task and for gaining some expected result, something like a "recipe".
 
-For example, if we fry eggs, we follow some recipe (an algorithm): 
-- warm up the oil in a pan
-- break the eggs inside it
-- wait for them to fry
-- move them away from the stove
+For example, if we boil an egg, we follow some recipe (an algorithm): 
+- you should turn on the stove
+- take a pot and pour water in it
+- place the pot on the stove and put the egg inside
+- bring the water to boil and cook for 5 minutes
 
 Similarly, in programming **the computer programs execute algorithms**: a sequence of commands, necessary for the completion of a certain task.
 
