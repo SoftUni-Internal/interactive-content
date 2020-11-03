@@ -1,12 +1,6 @@
 # Console App in VS Code
 
 [slide]
-# Video
-[vimeo-video videoId="342596676" startTimeInSeconds="6324" endTimeInSeconds="7057" /]
-
-[/slide]
-
-[slide]
 # Console App in VS Code
 We already have Visual Studio Code and we can start it. 
 
