@@ -11,7 +11,7 @@ We can **sum** up numbers using the `+` operator:
 let a = 5;
 let b = 7;
 let sum = a + b;
-console.log(sum); // 12 
+console.log(sum);
 ```
 
 ## Subtracting Numbers
@@ -19,7 +19,7 @@ console.log(sum); // 12
 ```js live
 let a = 15;
 let b = 7;
-console.log(a - b); // 8
+console.log(a - b);
 ```
 
 ## Multiplying Numbers
@@ -27,7 +27,7 @@ For **multiplication** of numbers we use the `*` operator:
 ```js live
 let a = 5;
 let b = 7;
-console.log(a * b); // 35
+console.log(a * b);
 ```
 
 ## Dividing Numbers
@@ -36,19 +36,19 @@ console.log(a * b); // 35
 The number type represents **both** integer and floating point numbers. There is **no integer division by default**.
 * If you do this: 
 ```js live
-let result = 5/4; //1.25
+let result = 5/4;
 console.log(result);
 ```
 the expected result is 1, but the answer is 1.25.
 
 Integer division can easily be achieved by flooring the quotient of the two numbers, using `Math.floor()`:
 ```js live
-let result = Math.floor(5/4); //1
+let result = Math.floor(5/4);
 console.log(result);
 ```
 This leads to a problem though. What if you had a situation like this:
 ```js live
-let result = Math.floor(-5/4); //-2
+let result = Math.floor(-5/4);
 console.log(result);
 ```
 In this case the quotient is negative. 
@@ -64,11 +64,11 @@ console.log(result);
 ```
 When it comes to dividing numbers by zero, there are two main cases:
 ```js live
-let result = 0/0; //NaN
+let result = 0/0;
 console.log(result);
 ```
 ```js live
-let result = 1/0; //Infinity
+let result = 1/0;
 console.log(result);
 ```
 
