@@ -17,7 +17,7 @@ As we know, Java does not support "**multiple inheritance**". However, we can ac
 
 
 
-[image assetsSrc="Implements-vs-Extends.png" /]
+[image assetsSrc="Interfaces-and-Abstraction-Implements-vs-Extends.png" /]
 
 
 
