@@ -50,7 +50,7 @@ Supports **imperative**, **functional** and **object-oriented** programming with
 [slide]
 
 # JavaScript Execution
-
+[image assetsSrc="execution-engine.png" /]
 As we have already mentioned, a program is **a sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to obtain certain result.
 
 A JS program is written in a text format, and the text of the program is called a **source code**. 
@@ -60,7 +60,5 @@ The interpreter executes the code directly line by line.
 With **scripts and interpreted languages**, like JavaScript, Python and PHP, the source code gets executed step by step by an interpreter.
 
 The process of **compilation** of the code before its execution is used only in compiled languages like C#, Java and C++. 
-
-[image src="https://github.com/AtanasovAtanas/pb-interactive-js/blob/master/assets/intro-to-programming-interpreter.png"/]
 
 [/slide]
