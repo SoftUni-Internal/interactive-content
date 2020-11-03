@@ -2,30 +2,22 @@
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson we learned:
 
-- What is Multidimensional Array?
-    - Arrays can have more than one dimension, e.g. matrices
-- Creating and Initializing
-- Manipulating a Matrix
-    - Accessing Elements of `2D Array`
-    - Getting Element Value
-    - Setting Element Value
-- Reading and Printing a Matrix
-
+- Inheritance and Interfaces
+- How we achieve Abstraction
+- Whate are Interfaces
+- Differences between `implement` and `extends`
+- `default` and `static` methods
+- What is the concept behind abstract classes
+- Interfaces vs Abstract Classes overview
 
 
 
-# In the next lesson, you will learn:
+# In the next lesson, we will learn:
 
-- Sets
-    - `HashSet<E>`
-    - `TreeSet<E>` 
-    - `LinkedHashSet<E>`
-- Maps
-    - `HashMap<K, V>` 
-    - `TreeMap<K, V>` 
-    - `LinkedHashMap<K, V>`
+- What is the concept behind `Polymorphism`
+- How we achieve `Polymorphism`
 
 
 
