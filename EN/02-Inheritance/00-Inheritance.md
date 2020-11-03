@@ -10,8 +10,8 @@
 
 [/slide]
 
-[slide]
 
+[slide]
 # Class Hierarchies
 
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
@@ -19,3 +19,12 @@
 [image assetsSrc="inheritance-example(2).png" /]
 
 [/slide]
+
+
+[slide]
+# Class Hierarchies – Java Collection
+
+[image assetsSrc="inheritance-example(3).png" /]
+[/slide]
+
+
