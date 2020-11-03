@@ -90,6 +90,6 @@ Walking....
 ## Abstraction vs Encapsulation
 
 
-[image assetsSrc="Abstraction-vs-Encapsulation.png" /]
+[image assetsSrc="Interfaces-and-Abstraction-example(2).png" /]
 
 [/slide]
