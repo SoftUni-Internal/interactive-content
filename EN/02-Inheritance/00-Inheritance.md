@@ -24,6 +24,8 @@
 [slide]
 # Class Hierarchies – Java Collection
 
+**`Object` is at the root of Java Class Hierarchy**
+
 [image assetsSrc="inheritance-example(3).png" /]
 [/slide]
 
