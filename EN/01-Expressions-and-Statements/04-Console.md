@@ -254,16 +254,16 @@ let firstName = "John";
 let lastName = "Doe";
 let age = 19;
 let str = firstName + " " + lastName + " @ " + age;
-console.log(str);  // John Doe @ 19
+console.log(str);
 ```
 There is another way of concatenating strings using the `concat()` method.
 ```js live
 let str1 = 'Hello';
 let str2 = 'JS';
 
-console.log(str1.concat(' ', str2)); //"Hello JS"
+console.log(str1.concat(' ', str2));
 
-console.log(str2.concat(', ', str1)); //"JS, Hello"
+console.log(str2.concat(', ', str1));
 ```
 
 # Examples: Concatenating Text and Numbers
@@ -272,7 +272,7 @@ Here is another **example** of concatenating text and numbers:
 let a = 1.5;
 let b = 2.5;
 let sum = "The sum is: " + a + b;
-console.log(sum);  // The sum is: 1.52.5
+console.log(sum);
 ```
 
 Did you notice **something strange**? Maybe you expected the numbers `a` and `b` to be summed? 
@@ -284,7 +284,7 @@ If we want to sum the numbers, we have to use **brackets**, in order to change t
 let a = 1.5;
 let b = 2.5;
 let sum = "The sum is: " + (a + b);
-console.log(sum);  // The sum is: 4
+console.log(sum);
 ```
 
 [/slide]
