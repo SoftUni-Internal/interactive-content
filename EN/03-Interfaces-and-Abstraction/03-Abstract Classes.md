@@ -95,7 +95,7 @@ class Main extends Device {
 
 **Output** will be:
 
-``` java
+```
 Calling....
 ```
 
@@ -108,11 +108,6 @@ Then, we have created the `Main` class which inherits the **abstract class**.
 The `obj` is the object of the child class `Main`. 
 
 We called the method of the abstract class using our object `obj`.
-
-
-
-
-
 
 
 
