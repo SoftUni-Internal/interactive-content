@@ -71,7 +71,7 @@ public interface Printable extends Callable {
 
 [/slide]
 
-
+[slide]
 
 ## Default Method
 
@@ -126,6 +126,7 @@ Now, if we want to calculate the **horsepower** of our car's engine we just call
 ``` java
 Vehicle.getHorsePower(480, 2500));
 ```
+
 [/slide]
 
 [slide]
