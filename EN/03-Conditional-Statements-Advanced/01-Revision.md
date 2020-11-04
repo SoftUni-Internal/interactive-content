@@ -1,6 +1,8 @@
 [slide]
+
 # Revision
-Let's revise what we learned in the last lesson:
+
+Revise what we learned in the last lesson:
 
 - Numbers can be **compared** by the `==`, `<`, `>`, `<=`, `>=` and `!=` operators:
 
@@ -40,4 +42,5 @@ if (a > 100) {
     console.log("The number `a` is smaller or equal than 20");
 }
 ```
+
 [/slide]
