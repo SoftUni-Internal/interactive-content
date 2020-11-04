@@ -79,17 +79,15 @@ First, we can
         System.out.println("Map is instance of HashMap: " + result);
 ```
 
-Similarly we can extend our previous task and check if our pets are instanceOf our classes for example.
+Similarly we can extend our previous task and check if our objects pets are instanceOf our classes for example.
 
-```java live
+``` java
 class Main {
     public static void main(String[] args) {
  Mammal animal = new Mammal();
         Mammal myCat = new Cat();
         Mammal myDog = new Dog();
-        animal.makeSound();
-        myDog.makeSound();
-        myCat.makeSound();
+        
 
         boolean result = myDog instanceof Mammal;
         boolean result2 = myDog instanceof Cat;
@@ -100,35 +98,16 @@ class Main {
         System.out.println(result3);
     }
 }
-class Mammal {
-    public void makeSound() {
-        System.out.println("The animal makes a sound");
-    }
-}
-class Dog extends Mammal {
-  public void makeSound() {
-  System.out.println("Woof woof!");
-    }
-}
-class Cat extends Animal {
-  public void makeSound() {
-  System.out.println("Meow Meow...");
- }
-}
 ```
 
-[/slide]
+And the **output** from our code will be:
 
-[slide]
+``` 
+true
+false
+true
+```
 
-# Repl.it test
-
-[html]
-
-<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@KaloqnKostadino/MyProject?lite=true"></iframe>	
-
-
-[/html]
 
 
 [/slide]
