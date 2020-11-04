@@ -12,7 +12,7 @@ It allows us to perform a single action in many different ways.
 
 For example, lets say we have **superclass** called `Mammal` that has method called `makeSound`. 
 
-**Subclasses** of our class Mammal could be Cats, Dogs, Pigs, Horses - And they also have their individual implementation for making sound.
+**Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation for making sound.
 
 Lets see that in code: 
 
@@ -63,6 +63,8 @@ The animal makes a sound
 Woof woof!
 Meow Meow...
 ```
+
+That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
 
 [/slide]
 
