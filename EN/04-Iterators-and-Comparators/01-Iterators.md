@@ -117,6 +117,67 @@ public class NamesList implements Iterable<String> {
 
     private String[] names;
 
+}
+```
+
+Next step is to create a constructor.
+Our constructor accepts varargs (of type String) so, we can create **multiple instance of the object** with different number of arguments each time we create it.
+
+```java
+public class NamesList implements Iterable<String> {
+
+    private String[] names;
+
+    public NamesList(String... names) {
+        this.names = names;
+    }
+
+}
+```
+
+After that, we have to implement the `iterator()` -  method which is inherited by the Iterable interface.
+
+
+```java
+public class NamesList implements Iterable<String> {
+
+    private String[] names;
+
+    public NamesList(String... names) {
+        this.names = names;
+    }
+
+    @Override
+    public Iterator<String> iterator() {
+        return null;
+    }
+
+}
+```
+
+The `iterator()` - method returns `new Iterator`, and we have to create an **inner class** which implements `Iterator<String>` and pass them to the iterator() method.
+
+So, let's create an inner **NamesIterator** class which implements `Iterator<String>`. 
+
+In this class, we have a field `int counter;`.
+
+In the constructor, we set the initial value of the field `counter` to 0.
+
+Next, we implement the `hasNext()` - method which is mandatory when we implement the Iterator interface.
+
+The boolean `hasNext()` - method returns `true` every time reach the name starts with `A`.
+
+The next one method which is mandatory to implement is the `next()` - method.
+
+This method return the **current** name from our "**names**" - array.
+
+The last thing, we have to do is to return `new NamesIterator()` in the `iterator()` - method.
+
+```java
+public class NamesList implements Iterable<String> {
+
+    private String[] names;
+
     public NamesList(String... names) {
         this.names = names;
     }
@@ -154,6 +215,7 @@ public class NamesList implements Iterable<String> {
         }
     }
 }
+
 ```
 
 
