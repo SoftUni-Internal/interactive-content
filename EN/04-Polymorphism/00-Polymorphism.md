@@ -79,22 +79,38 @@ We can use the `instanceOf` operator in Java to check if an **object** is an ins
 
 Lets take a look now at the different examples:
 
-Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
+First, lets declare our Map:
 
+```java
+ Map<Object, Object> map = new HashMap();
+```
+
+Then, lets create a `boolean` type to evaluate our result:
+
+```java
+boolean result = map instanceof Object;
+```
+
+Finally we can print the result:
+
+```java
+System.out.println("Map is instance of HashMap: " + result);
+```
 
 ```java live
   Map<Object, Object> map = new HashMap();
-  // first, we create a HashMap object
         boolean result = map instanceof Object;
         System.out.println("Map is instance of HashMap: " + result);
 ```
+
+Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`
 
 Similarly we can extend our previous task and check if our objects pets are instanceOf our classes for example.
 
 ``` java
 class Main {
     public static void main(String[] args) {
- Mammal animal = new Mammal();
+        Mammal animal = new Mammal();
         Mammal myCat = new Cat();
         Mammal myDog = new Dog();
         
