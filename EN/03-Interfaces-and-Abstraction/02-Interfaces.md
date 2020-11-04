@@ -37,10 +37,17 @@ class Document implements Printable {
   }
 }
 ```
+
+[/slide]
+
+[slide]
+
 ## Problem: Car Shop
 
+[/slide]
 
 
+[slide]
 
 In Java, interface can **extend another interface**.
 
@@ -56,7 +63,13 @@ public interface Printable extends Callable {
 }
 ```
 
+[/slide]
+
+[slide]
+
 ## Problem Car Shop Extended:
+
+[/slide]
 
 
 
@@ -86,6 +99,10 @@ class TestInterfaceDefault {
 } 
 ```
 
+[/slide]
+
+[slide]
+
 ## Static Method
 
 Another thing we can do since Java 8 is to **define** and **implement** `static` methods in interfaces.
@@ -109,6 +126,9 @@ Now, if we want to calculate the **horsepower** of our car's engine we just call
 ``` java
 Vehicle.getHorsePower(480, 2500));
 ```
+[/slide]
+
+[slide]
 
 ## Problem: Say Hello
 
