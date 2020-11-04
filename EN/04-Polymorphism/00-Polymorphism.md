@@ -64,7 +64,6 @@ Woof woof!
 Meow Meow...
 ```
 
-That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
 
 [/slide]
 
@@ -118,6 +117,8 @@ true
 false
 true
 ```
+
+That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
 
 
 
