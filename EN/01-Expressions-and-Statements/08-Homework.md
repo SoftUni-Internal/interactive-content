@@ -379,7 +379,7 @@ We deduct the discount from the total amount:
 - `0.18 * 4185.5 = $753.39`
 
 We calculate the final price of the service:
-`4185.5 – 753.39 -> $3432.11`
+- `4185.5 – 753.39 -> $3432.11`
 
 
 | **Input** | **Output** |
