@@ -2,7 +2,7 @@
 
 # Refactoring
 
-**Refactoring represent restructures the code without changing the behaviour**
+**Refactoring means restructuring the code without changing its behavior.**
 - **Improves** code readability
 - **Reduces** complexity
 
@@ -27,16 +27,15 @@ class OutputFormatter { public static void print() { … } }
 - **Breaking code** into reusable units
 - **Extracting parts of methods** and **classes** into **new** ones
 
-`depositOrWithdraw()` => `deposit()`
-                         `withdraw()`
+`depositOrWithdraw()` => `deposit()`; `withdraw()`
 
 - **Improving names** of variables, methods, classes, etc.
 
-`String str;` => `String name`;
+`String str;` => `String name;`
 
 - **Moving methods** or **fields** to more appropriate classes
 
-`Car.open();` => `Door.open`;
+`Car.open();` => `Door.open;`
 
 [/slide]
 
@@ -59,9 +58,9 @@ public class Main {
 You are given a **working project** for a small **Student System**, but the code is very poorly organized. Break up the code **logically** into **smaller functional units – methods** and **classes** and don’t break the functionality.
 
 The program supports the following commands:
-- “**Create `<studentName>` `<studentAge>` `<studentGrade>`**” – creates a new student and adds them to the repository.
-- “**Show `<studentName>`**” – prints on the console information about a student in the format:
-“**`<studentName>` is `<studentAge>` years old. `<commentary>`**”, where the **commentary** is based on the student’s grade.
+- “**Create `studentName` `studentAge` `studentGrade`**” – creates a new student and adds them to the repository.
+- “**Show `studentName`**” – prints on the console information about a student in the format:
+“**`studentName` is `studentAge` years old. `commentary`**”, where the **commentary** is based on the student’s grade.
 - “**Exit**” – closes the program.
 
 **Do not** add any **extra validation** or **functionality** to the app!

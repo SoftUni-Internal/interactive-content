@@ -6,13 +6,13 @@
 
 We use **Static** Keyword, for memory management mainly.
 
-Can apply with:
+Can be applied to:
 - Nested class
 - Variables
 - Methods
 - Blocks
 
-**Belongs to the class than an instance of the class.**
+**Belongs to the class, than to an instance of the class.**
 
 ```java
 static int count;
@@ -40,7 +40,7 @@ class TopClass {
 
 # Static Variable
 
-**Static Variable** Can be used to refer to the common variable of all objects
+**Static Variable** can be used to refer to the common variable of all objects
 
 Example:
 
@@ -48,7 +48,7 @@ Example:
 - College name of students
   - Name of the college is common for all students
 
-**Allocate memory only once in class area at the time of class loading**
+**Allocate memory only once in class area at the time of class loading**
 
 Example: Counter incrementation
 
@@ -82,7 +82,7 @@ public static void main(String[] args) {
 
 # Static Method
 
-**Static Method belongs to the class rather than the object of a class.**
+**Static Method belongs to the class rather than the object of a class**
 
 - Can be **invoked** without the need for creating an instance of a class
 - Can **access** static data member and can **change** the value of it
@@ -108,7 +108,7 @@ class Calculate {
 
 # Static Block
 
-**Static block represent a set of statements, which will be executed by the JVM before execution of main method**
+**Static block represents a set of statements, which will be executed by the JVM before execution of main method**
 
 - Executing static block is at the time of class loading
 - A class can take any number of static block but all blocks will be executed from top to bottom

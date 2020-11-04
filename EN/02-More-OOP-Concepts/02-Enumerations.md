@@ -2,7 +2,7 @@
 
 # Enumerations
 
-**Enumeration** rsepresent a numeric value from a fixed set as a text
+**Enumeration** represent a numeric value from a fixed set as a text
 
 We can use them to pass **arguments** to **methods** without making code confusing
 
@@ -67,9 +67,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a class `**PriceCalculator**` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**. The **discount type** and **season** should be **enums.**
+Create a class `PriceCalculator` that calculates the total price of a holiday, given the **price per day**, **number of days**, the **season** and a **discount type**. The **discount type** and **season** should be **enums.**
 
-Use the class in your `**main()**` method to read input and **print** on the console the **price** of the **whole holiday**.
+Use the class in your `main()` method to read input and **print** on the console the **price** of the **whole holiday**.
 
 The price per day will be multiplied depending on the season by:
 - 1 during Autumn
@@ -93,7 +93,7 @@ On a **single line** you will receive all the **information** about the **reserv
 - The discount will be one of: **VIP, SecondVisit, None**
 
 ## Output
-On a **single line**, print the **total price** of the **holiday**, rounded to 2** digits** after the decimal separator.
+On a **single line**, print the **total price** of the **holiday**, rounded to 2 **digits** after the decimal separator.
 
 
 ## Examples

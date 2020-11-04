@@ -171,7 +171,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that generates a **deck of cards** **(class Card)** which have a power. The power of a card is calculated by **adding** the power of its rank plus the power of its suit.
+Create a program that generates a **deck of cards** **(class Card)** which have a power. The power of a card is calculated by **adding** the power of its rank to the power of its suit.
 
 **Rank powers** are as follows: (ACE - 14, TWO - 2, THREE - 3, FOUR - 4, FIVE - 5, SIX - 6, SEVEN - 7, EIGHT - 8, NINE - 9, TEN - 10, JACK - 11, QUEEN - 12, KING - 13).
 
@@ -184,7 +184,7 @@ You will get a command consisting of **two** lines. On the **first** line you wi
 Print the output in the format **"Card name: ACE of SPADES; Card power: 53".**
 
 ## Note
-Try using the enumeration types you have created in the previous problems but extending them with constructors and methods. Try using the `**Enum.valueOf()**`.
+Try using the enumeration types you have created in the previous problems but extending them with constructors and methods. Try using the `Enum.valueOf()`.
 
 ## Submit
 Submit .zip
@@ -293,7 +293,7 @@ They may be 3, **more** or **less** than 3.
 
 You need to make as many traffic lights as there are signals in the input.
 
-On the second line, you will receive the **n** number of times you need to change each traffic light's signal.
+On the second line, you will receive the **n** - the number of times you need to change each traffic light's signal.
 
 ## Output
 Your output should consist of **n** number of lines, including **each** updated traffic light's signal. 
