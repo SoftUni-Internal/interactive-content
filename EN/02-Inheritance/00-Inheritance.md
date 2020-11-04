@@ -117,7 +117,7 @@ Only **multiple interfaces can be implemented**
 [slide]
 # Access to Base Class Members
 
-**To access the base class members, use the `super` keyword**
+To access the base class members, use the `super` keyword
 
 ```java
 class Person { … }
@@ -133,7 +133,7 @@ class Employee extends Person {
 [/slide]
 
 [slide]
-# Problem: Types of Inheritance
+# Example: Types of Inheritance
 
 ## Single Inheritance
 
