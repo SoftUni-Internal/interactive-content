@@ -62,7 +62,9 @@ Lets take a look now at the different examples:
 
 
 ```java live
-class Main {
+import java.util.HashMap;
+import java.util.Map;
+public class Main {
   public static void main(String[] args) {
   HashMap<String, Integer> map = new HashMap();
   // first, we create a HashMap with key-value pair
