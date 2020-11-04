@@ -68,7 +68,13 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 
 [/slide]
 
+
+
+
+
 [slide]
+
+# instanceOf Operator
 
 We can use the `instanceOf` operator in Java to check if an **object** is an instance of a **class** or not.
 
