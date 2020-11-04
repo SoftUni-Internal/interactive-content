@@ -30,7 +30,9 @@ public interface Printable {
 
 ``` java
 class Document implements Printable {  
-  public void print() { System.out.println("Hello"); }
+  public void print() { 
+    System.out.println("Hello"); 
+    }
   public static void main(String args[]) {
     Printable doc = new Document();  // We achieve Polymorphism
     doc.print();  // Hello
