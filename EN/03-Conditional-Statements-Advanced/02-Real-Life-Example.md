@@ -4,11 +4,11 @@
 A market offers different prices for certain products based on the day of the week
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
-|Banana|2.50|2.70|
-|Apple|1.30|1.60|
-|Kiwi|2.20|3.00|
+| **Product** | **Weekday** | **Weekend**|
+| --- | --- | --- |
+| Banana| 2.50 | 2.70 |
+| Apple |1.30 | 1.60 |
+| Kiwi |2.20 | 3.00 |
 
 We want to calculate the price for certain product and day
 
