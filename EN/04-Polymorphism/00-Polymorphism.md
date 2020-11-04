@@ -75,8 +75,6 @@ Lets take a look now at the different examples:
         boolean result = map instanceof HashMap;
         // we check if our map is instance of "HashMap"
         System.out.println("Map is instance of HashMap: " + result);
-  }
-}
 ```
 
 
