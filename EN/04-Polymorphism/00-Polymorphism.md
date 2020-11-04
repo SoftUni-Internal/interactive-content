@@ -43,37 +43,18 @@ class Dog extends Mammal {
 Now we can go in our Main class and create our cat and dog objects and call `makeSound()` method on both of them.
 
 
-``` java live
-class Mammal {
-  public void makeSound() {
-    System.out.println("The animal makes a sound");
-  }
-}
-class Cat extends Mammal {
-  public void makeSound() {
-    System.out.println("Meow Meow...");
-  }
-}
-class Dog extends Mammal {
-  public void makeSound() {
-    System.out.println("Woof Woof!");
-  }
-}
+``` java
 class Main {
   public static void main(String[] args) {
-    Mammal myAnimal = new Mammal();  
+    Mammal animal = new Mammal();  
     Mammal myCat = new Cat(); 
     Mammal myDog = new Dog(); 
-    myAnimal.makeSound();
-    myCat.makeSound();
+    animal.makeSound();
     myDog.makeSound();
+    myCat.makeSound();
   }
 }
 ```
-
-
-
-
 
 
 [/slide]
