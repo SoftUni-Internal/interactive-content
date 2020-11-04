@@ -159,67 +159,102 @@ Fast
 [/slide]
 
 [slide]
-# Problem: Area of Figures
-[code-task title="Area of Figures" taskId="pb-js-02-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Bonus Score
+[code-task title="Bonus Score" taskId="pb-js-02-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
-function areaOfFigures(input) {
+function bonusScore(input) {
     // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program to calculate the area of different figures:
+An integer is given which the initial **number** of points. 
+**Bonus points** are awarded according to the rules described below. 
+Write a function that calculates 
+- the **received** bonus points from the number 
+- and the **total number of points**  which number plus bonus.
 
-  * Read a string: the figure **type**
-  * Read number (the **size**) or two numbers for rectangle (sizes)
-    * Numbers will be floating-point
-  * Checks if the entered figure is **square**, **rectangle** or **circle**
-  * Print the calculated area **formatted** to the second digit after the decimal point
-  * For unknown figure print **"Unknown figure"**
+If the number is up to **100 inclusive**, the bonus points are **5**.
+If the number is **greater than 100**, the bonus points are **20 percent of the number**.
+If the number is **greater than 1000**, the bonus points are **10 percent of the number**.
+
+Additional bonus points, accrued separately from the previous ones:
+- For an even number you add 1 point
+-	For a number ending in 5, you add 2 points
+
 # Example
-## Input
-- square
-- 5
-## Output
-- 25.00
+
+| **Input** | **Output** |
+| --- | --- |
+| 20| 6 |
+|  |26 |
+
+| **Input** | **Output** |
+| --- | --- |
+| 175| 37 |
+|  |212 |
+
+| **Input** | **Output** |
+| --- | --- |
+| 2703| 270.3 |
+|  |2973.3 |
+
 [/task-description]
 [tests]
 [test]
 [input]
-square
+20
+[/input]
+[output]
+6
+26
+[/output]
+[/test]
+[test]
+[input]
+140
+[/input]
+[output]
+29
+169
+[/output]
+[/test]
+[test]
+[input]
+175
+[/input]
+[output]
+37
+212
+[/output]
+[/test]
+[test]
+[input]
+35
+[/input]
+[output]
+7
+42
+[/output]
+[/test]
+[test]
+[input]
+17
+[/input]
+[output]
 5
-[/input]
-[output]
-25.00
+22
 [/output]
 [/test]
 [test]
 [input]
-rectangle
-5
-10
+0
 [/input]
 [output]
-50.00
-[/output]
-[/test]
-[test]
-[input]
-circle
-2.5
-[/input]
-[output]
-19.63
-[/output]
-[/test]
-[test]
-[input]
-figure
-[/input]
-[output]
-Unknown figure
+6
+6
 [/output]
 [/test]
 [/tests]
@@ -280,138 +315,6 @@ ticket
 [/input]
 [output]
 Invalid ticket type!
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="pb-js-02-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function coffeeShop(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to calculate the drink price in a coffee shop:
-
-  * Read a drink: either **"coffee"** or **"tea"**
-  * Read an extra: either **"sugar"** or **"no"**
-  * Print the price in format `"Final price: ${price}"`
-    * The price should be **formatted** to 2nd digit after the decimal point
-  
-Prices:
-  * Coffee price: **1.00**
-  * Tea price: **0.60**
-  * Sugar price: **0.40**
-# Example
-## Input
-- coffee
-- sugar
-## Output
-- Final price: $1.40
-## Input
-- tea
-- no
-## Output
-- Final price: $0.60
-[/task-description]
-[tests]
-[test]
-[input]
-coffee
-sugar
-[/input]
-[output]
-Final price: $1.40
-[/output]
-[/test]
-[test]
-[input]
-coffee
-no
-[/input]
-[output]
-Final price: $1.00
-[/output]
-[/test]
-[test]
-[input]
-tea
-sugar
-[/input]
-[output]
-Final price: $1.00
-[/output]
-[/test]
-[test]
-[input]
-tea
-no
-[/input]
-[output]
-Final price: $0.60
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="pb-js-02-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function validTriangle(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to check if a triangle is valid by its sizes:
-
-  * Read 3 integers: the **sides of a triangle**
-  * Checks if each side is less than the sum of the others 2
-    * Prints **"Valid Triangle"** if the above condition is met
-    * Prints **"Invalid Triangle"** otherwise 
-# Example
-## Input
-- 3
-- 4
-- 5
-## Output
-- Valid Triangle
-
-[/task-description]
-[tests]
-[test]
-[input]
-3
-4
-5
-[/input]
-[output]
-Valid Triangle
-[/output]
-[/test]
-[test]
-[input]
-5
-8
-3
-[/input]
-[output]
-Invalid Triangle
 [/output]
 [/test]
 [/tests]
