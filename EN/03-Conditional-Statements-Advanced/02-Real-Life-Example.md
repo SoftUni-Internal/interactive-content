@@ -1,4 +1,5 @@
 [slide]
+
 # Real Life Example: Marketplace
 A market offers different prices for certain products based on the day of the week
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
