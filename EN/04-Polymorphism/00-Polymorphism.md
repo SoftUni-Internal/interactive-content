@@ -64,18 +64,21 @@ Woof woof!
 Meow Meow...
 ```
 
+[/slide]
+
+[slide]
+
 We can use the `instanceOf` operator in Java to check if an **object** is an instance of a **class** or not.
 
 Lets take a look now at the different examples:
 
-First, we can 
+Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
 
 
 ```java live
   Map<Object, Object> map = new HashMap();
   // first, we create a HashMap object
         boolean result = map instanceof Object;
-        // we check if our map is instance of "Object"
         System.out.println("Map is instance of HashMap: " + result);
 ```
 
