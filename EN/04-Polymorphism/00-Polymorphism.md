@@ -84,7 +84,7 @@ Similarly we can extend our previous task and check if our pets are instanceOf o
 ```java live
 class Main {
     public static void main(String[] args) {
-       Mammal animal = new Mammal();
+ Mammal animal = new Mammal();
         Mammal myCat = new Cat();
         Mammal myDog = new Dog();
         animal.makeSound();
@@ -106,22 +106,16 @@ class Mammal {
     }
 }
 class Dog extends Mammal {
-
-    @Override
-    public void makeSound() {
-        System.out.println("Woof woof!");
+  public void makeSound() {
+  System.out.println("Woof woof!");
     }
 }
 class Cat extends Animal {
-
-    @Override
-    public void makeSound() {
-        System.out.println("Meow Meow...");
-    }
+  public void makeSound() {
+  System.out.println("Meow Meow...");
+ }
 }
 ```
-
-
 
 [/slide]
 
