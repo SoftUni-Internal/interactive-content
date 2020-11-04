@@ -1,7 +1,9 @@
 [slide]
+
 # Real Life Example: Marketplace
 
 A market offers different prices for certain products based on the day of the week
+
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
 | **Product** | **Weekday** | **Weekend**|
@@ -13,9 +15,6 @@ A market offers different prices for certain products based on the day of the we
 We want to calculate the price for certain product and day
 
 # Pseudocode
-
-```js
-
 Read the input
 If product is banana
   If it is a weekday the price is 2.50
@@ -26,7 +25,5 @@ If product is apple
 If product is kiwi
   If its a weekday the price is 2.20
   Otherwise the price is 3.00
-
-``` 
 
 [/slide]
