@@ -124,3 +124,17 @@ class Cat extends Animal {
 
 
 [/slide]
+
+[slide]
+
+# Repl.it test
+
+[html]
+
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@KaloqnKostadino/MyProject?lite=true"></iframe>	<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/@KaloqnKostadino/MyProject?lite=true"></iframe>
+
+
+[/html]
+
+
+[/slide]
