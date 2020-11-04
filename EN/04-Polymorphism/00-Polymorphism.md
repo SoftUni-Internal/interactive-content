@@ -40,7 +40,7 @@ class Dog extends Mammal {
 }
 ```
 
-Now we can go in our Main class and create our cat and dog objects and call `makeSound()` method on both of them.
+Now we can go in our `Main` class and create our cat and dog objects and call `makeSound()` method on both of them.
 
 
 ``` java
@@ -68,14 +68,59 @@ We can use the `instanceOf` operator in Java to check if an **object** is an ins
 
 Lets take a look now at the different examples:
 
+First, we can 
+
 
 ```java live
-  HashMap<String, Integer> map = new HashMap();
-  // first, we create a HashMap with key-value pair
-        boolean result = map instanceof HashMap;
-        // we check if our map is instance of "HashMap"
+  Map<Object, Object> map = new HashMap();
+  // first, we create a HashMap object
+        boolean result = map instanceof Object;
+        // we check if our map is instance of "Object"
         System.out.println("Map is instance of HashMap: " + result);
 ```
+
+Similarly we can extend our previous task and check if our pets are instanceOf our classes for example.
+
+```java live
+class Main {
+    public static void main(String[] args) {
+       Mammal animal = new Mammal();
+        Mammal myCat = new Cat();
+        Mammal myDog = new Dog();
+        animal.makeSound();
+        myDog.makeSound();
+        myCat.makeSound();
+
+        boolean result = myDog instanceof Mammal;
+        boolean result2 = myDog instanceof Cat;
+        boolean result3 = myDog instanceof Dog;
+
+        System.out.println(result);
+        System.out.println(result2);
+        System.out.println(result3);
+    }
+}
+class Mammal {
+    public void makeSound() {
+        System.out.println("The animal makes a sound");
+    }
+}
+class Dog extends Mammal {
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woof woof!");
+    }
+}
+class Cat extends Animal {
+
+    @Override
+    public void makeSound() {
+        System.out.println("Meow Meow...");
+    }
+}
+```
+
 
 
 [/slide]
