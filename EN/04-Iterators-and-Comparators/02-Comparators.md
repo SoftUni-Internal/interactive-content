@@ -375,9 +375,171 @@ public class Book implements Comparable<Book>{
 }
 
 ```
-
-
 [/slide]
 
+
+[slide]
+# Problem: Book Comparator
+[code-task title="Problem: Book Comparator" taskId="55fbef83-deb2-4cd1-a6d9-e6a16dc9a987" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a class BookComparator from UML diagram below: 
+
+| `<<Comparator<Book>>>` |
+| --- |
+| **BookComparator** |
+|+ compare(Book, Book): int |
+
+
+- **BookComparator** have to **compare** two books by:
+	- Book **title**
+	- **Year** of publishing a book
+
+
+## Examples
+
+Test your **BookComparator** by using the code below:
+
+
+```java
+public static void main(String[] args) {
+    Book bookOne = new Book("Animal Farm", 2003, "George Orwell");
+    Book bookThree = new Book("The Documents in the Case", 2002);
+    Book bookTwo = new Book("The Documents in the Case", 1930, 
+         "Dorothy Sayers", "Robert Eustace");
+
+    List<Book> books = new ArrayList<>();
+    books.add(bookOne);
+    books.add(bookTwo);
+    books.add(bookThree);
+
+    books.sort(new BookComparator());
+
+    for (Book book : books) {
+	    System.out.println(book.getTitle() + book.getYear());
+    }
+}
+
+```
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Array;
+import java.util.\*;
+import java.util.stream.Stream;
+
+public class TestBookComparatorInterfaces \{
+    private static final String CLASS_NAME = "BookComparator";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'BookComparator' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        List\<Class\> interfaces = Arrays.asList(book.getInterfaces());
+        Assert.assertTrue(interfaces.contains(Comparator.class));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+
+public class TestBookComparatorMethodParameters \{
+    private static final String CLASS_NAME = "BookComparator";
+    private static final String PARAMETER_TYPE = "Book";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'BookComparator' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        Method\[\] methods = book.getMethods();
+
+        Class\[\] parameters = methods\[0\].getParameterTypes();
+        Assert.assertTrue("Parameters must be two", parameters.length == 2);
+        for (Class parameter : parameters) \{
+            Assert.assertTrue("Parameters are diff type", parameter.getTypeName().equals(PARAMETER_TYPE));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+
+public class TestBookComparatorReturnType \{
+    private static final String CLASS_NAME = "BookComparator";
+    private static final String PARAMETER_TYPE = "Book";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'BookComparator' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        Method\[\] methods = book.getMethods();
+        Assert.assertTrue(methods\[0\].getReturnType().getName().equals("int"));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Book Comparator
+
+To implement your **BookComparator** class use the Book class from the first problem:
+
+```java
+public class BookComparator implements Comparator<Book> {
+    @Override
+    public int compare(Book b1, Book b2) {
+        int titleCompare = b1.getTitle().compareTo(b2.getTitle());
+        return  titleCompare != 0 ? titleCompare : b2.getYear() - b1.getYear();
+    }
+}
+
+```
+
+[/slide]
 
 
