@@ -6,7 +6,7 @@
 
 - Inheritance and Interfaces
 - How we achieve Abstraction
-- Whate are Interfaces
+- What are Interfaces
 - Differences between `implement` and `extends`
 - `default` and `static` methods
 - What is the concept behind abstract classes
