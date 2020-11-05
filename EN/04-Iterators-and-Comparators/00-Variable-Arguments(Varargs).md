@@ -16,21 +16,28 @@ The varags allows the method to accept zero or multiple arguments.
 
 Let's see the following example:
 
-```java
-
-static void display(String... values) {  
-  System.out.println("display method invoked");  
-} 
-
-static void main() {
-  display();
-  display("first");
-  display("multiple", "Strings"); 
+```java live no-template
+public class Main {
+    static void display(String... values) {
+        int numberOfArgs = values.length;
+        System.out.printf("Number of arguments is: %d\n", numberOfArgs);
+    }
+    
+    public static void main(String[] args) {
+        display();
+        display("oneArgument");
+        display("multiple", "Strings");
+    }
 }
-
 ```
 
-In the example above, the method named `display()` accepts varargs (of type String) and from the main method, we are invoking this method multiple times by passing a different number of arguments each time we invoke it.
+In the example above, the method named `display()` accepts varargs (of type String).
+
+The `values` variable is implicitly declared as an array of type String.
+
+Thus, inside the method, `values` variable is accessed using the array syntax.
+
+As you can see, we are invoking this method multiple times by passing a different number of arguments each time we invoke it.
 
 
 
