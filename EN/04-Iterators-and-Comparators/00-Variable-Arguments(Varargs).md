@@ -6,13 +6,13 @@
 
 Let’s suppose you are creating a Java method. 
 
-However, you are not sure how many arguments your method is going to accept. 
+However, you are not sure **how many arguments** your method is going to accept. 
 
-To overcome this problem, Java 5 introduced varargs.
+To overcome this problem, **Java 5 introduced varargs**.
 
-Varargs stands for variable arguments.
+**Varargs** stands for **variable arguments**.
 
-The varags allows the method to accept zero or multiple arguments.
+The varags allows the method to accept **zero** or **multiple** arguments.
 
 Let's see the following example:
 
@@ -22,7 +22,7 @@ public class Main {
         int numberOfArgs = values.length;
         System.out.printf("Number of arguments is: %d\n", numberOfArgs);
     }
-    
+
     public static void main(String[] args) {
         display();
         display("oneArgument");
@@ -37,7 +37,7 @@ The `values` variable is implicitly declared as an array of type String.
 
 Thus, inside the method, `values` variable is accessed using the array syntax.
 
-As you can see, we are invoking this method multiple times by passing a different number of arguments each time we invoke it.
+As you can see, we are invoking this method multiple times by passing a **different number of arguments** each time we invoke it.
 
 
 
