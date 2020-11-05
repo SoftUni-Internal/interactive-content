@@ -243,7 +243,6 @@ Create a class **Library** from UML diagram below:
 | `<Iterable<Book>>` |
 | --- |
 | Library |
-|         |
 |\- books: `Book[]`|
 |\+ iterator(): `Iterator<Book>`|
 
@@ -251,7 +250,6 @@ Create a nested class **LibIterator** from UML diagram below:
 | `<Iterator<Book>>` |
 | --- |
 | LibIterator |
-|         |
 |\- counter: int |
 |\+ hasNext(): boolean |
 |\+ next(): Book |
@@ -390,6 +388,87 @@ Test Passed!
 
 # Solution: Library
 
+
+The **Library** Class should look like this:
+
+```java
+public class Library implements Iterable<Book> {
+    private Book[] books;
+
+    public Library(Book... books) {
+        this.books = books;
+    }
+
+    @Override
+    public Iterator<Book> iterator() {
+        return new LibIterator();
+    }
+
+    private class LibIterator implements Iterator<Book> {
+        private int counter;
+
+        LibIterator() {
+            this.counter = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return this.counter < books.length;
+        }
+
+        @Override
+        public Book next() {
+            return books[this.counter++];
+        }
+    }
+}
+
+```
+
+The **Book** class is the same as in previous problem:
+
+```java
+public class Book {
+    private String title;
+    private int year;
+    private List<String> authors;
+
+    public Book(String title, int year, String... authors) {
+        this.title = title;
+        this.year = year;
+        this.authors = new ArrayList<>();
+
+        if (authors.length != 0) {
+            this.authors.addAll(Arrays.asList(authors));
+        }
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public List<String> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(List<String> authors) {
+        this.authors = authors;
+    }
+}
+
+```
 
 
 [/slide]
