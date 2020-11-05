@@ -123,6 +123,7 @@ people.add(student);
 - We can **extend a class** that we **can't otherwise change**
 
 [image assetsSrc="inheritance-example(14).png" /]
+[/slide]
 
 [slide]
 # Example: Random Array List
@@ -162,5 +163,4 @@ public class RandomArrayList extends ArrayList {
     }
 }
 ``` 
-
 [/slide]
