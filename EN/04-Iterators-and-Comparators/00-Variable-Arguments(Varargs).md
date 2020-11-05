@@ -106,7 +106,7 @@ Create a class Book from UML diagram below:
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): List<String> |
+|+ getAuthors(): `List<String>` |
 
 
 
