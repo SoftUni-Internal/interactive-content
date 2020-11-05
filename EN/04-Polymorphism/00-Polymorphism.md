@@ -235,6 +235,8 @@ class Calculation {
 
 [slide]
 
+# Rules for Overriding methods:
+
 
 
 [/slide]
