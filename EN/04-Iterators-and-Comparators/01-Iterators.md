@@ -240,26 +240,28 @@ public class Main {
 [task-description]
 ## Description
 Create a class **Library** from UML diagram below:
+
 | `<Iterable<Book>>` |
 | --- |
-| Library |
-|\- books: `Book[]`|
-|\+ iterator(): `Iterator<Book>`|
+| **Library** |
+|- books: `Book[]`|
+|+ iterator(): `Iterator<Book>`|
 
 Create a nested class **LibIterator** from UML diagram below:
+
 | `<Iterator<Book>>` |
 | --- |
-| LibIterator |
-|\- counter: int |
-|\+ hasNext(): boolean |
-|\+ next(): Book |
+| **LibIterator** |
+|- counter: int |
+|+ hasNext(): boolean |
+|+ next(): Book |
 
 ## Hint
 Use the **Book** class from the previous problem.
 
 
 ## Examples
-Use the code below to test your Library class.
+Use the code below to test your **Library** class.
 
 ```java
 public static void main(String[] args) {
