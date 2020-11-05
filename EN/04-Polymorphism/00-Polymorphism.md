@@ -139,3 +139,34 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 
 
 [/slide]
+
+
+[slide]
+
+# Types of Polymorphism
+
+There are **two** types of **Polymorphism** in Java:
+
+- Dynamic Polymorpism
+
+- Static Polymorphism
+
+
+**Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
+
+Therefore the **behaviour** of the **method** is decided at **runtime**.
+
+**Dynamic Polymorphism** can be achieved using **method overriding**.
+
+We can declare a method in our **sub-class** while the method is already present in the **parent class**. That is called **method overriding**.
+
+This way, a **child class** can give its own **implementation/property** to a method which is already provided by the **parent class**.
+
+To understand better, lets take a look at this **example**:
+
+
+
+
+
+
+[/slide]
