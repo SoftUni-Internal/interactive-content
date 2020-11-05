@@ -99,11 +99,11 @@ System.out.println("Map is instance of HashMap: " + result);
 
 ```java live
   Map<Object, Object> map = new HashMap();
-        boolean result = map instanceof Object;
-        System.out.println("Map is instance of HashMap: " + result);
+  boolean result = map instanceof Object;
+  System.out.println("Map is instance of HashMap: " + result);
 ```
 
-Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`
+Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
 
 Similarly we can extend our previous task and check if our objects pets are instanceOf our classes for example.
 
@@ -114,7 +114,6 @@ class Main {
         Mammal myCat = new Cat();
         Mammal myDog = new Dog();
         
-
         boolean result = myDog instanceof Mammal;
         boolean result2 = myDog instanceof Cat;
         boolean result3 = myDog instanceof Dog;
