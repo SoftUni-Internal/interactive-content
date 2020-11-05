@@ -16,7 +16,7 @@ Lets see now a little more **detailed explanation** of what Reflection is.
 
 All objects in Java own `getClass()` method. This method allows us to determine the object's class even if we don't know it during **compile time**.
 
-This might seem insignificant, but such reflection is not possible in less dynamic languages such as **C\+\+**.
+This might seem insignificant, but such reflection is not possible in less dynamic languages such as **C++**.
 
 The importance here is that Reflection is allowing us to write programs that do not have to **know** everything at compile time. That makes them more dynamic.
 
