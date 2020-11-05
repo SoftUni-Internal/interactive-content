@@ -222,3 +222,175 @@ public class NamesList implements Iterable<String> {
 
 [/slide]
 
+
+[slide]
+# Problem: Library
+[code-task title="Problem: Library" taskId="f027f67a-2574-4b1d-a31e-e3af633bc5e8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a class **Library** from UML diagram below:
+| `<Iterable<Book>>` |
+| --- |
+| Library |
+|         |
+|\- books: `Book[]`|
+|\+ iterator(): `Iterator<Book>`|
+
+Create a nested class **LibIterator** from UML diagram below:
+| `<Iterator<Book>>` |
+| --- |
+| LibIterator |
+|         |
+|\- counter: int |
+|\+ hasNext(): boolean |
+|\+ next(): Book |
+
+## Hint
+Use the **Book** class from the previous problem.
+
+
+## Examples
+Use the code below to test your Library class.
+
+```java
+public static void main(String[] args) {
+    Book bookOne = new Book("Animal Farm", 2003, "George Orwell");
+    Book bookThree = new Book("The Documents in the Case", 2002);
+    Book bookTwo = new Book("The Documents in the Case", 1930, 
+    "Dorothy Sayers", "Robert Eustace");
+
+    Library library = new Library<>(bookOne, bookTwo, boоkThree);
+
+    for (Book book: library) {
+	    System.out.println(book.getTitle());
+    }
+}
+
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestLibraryFields \{
+    private static final String CLASS_NAME = "Library";
+    private static final String FIELD_NAME = "title";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        Field\[\] fields = book.getFields();
+        for (Field field : fields) \{
+            Assert.assertTrue(field.getName().equals(FIELD_NAME));
+            Assert.assertTrue(Modifier.isPrivate(field.getModifiers()));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestLibraryInterfaces \{
+    private static final String CLASS_NAME = "Library";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        List\<Class\> interfaces = Arrays.asList(book.getInterfaces());
+        Assert.assertTrue(interfaces.contains(Iterable.class));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestLibraryIterator \{
+    private static final String CLASS_NAME = "Library";
+    private static final String METHOD_NAME = "iterator";
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException, NoSuchMethodException \{
+        Assert.assertTrue("Class 'Library' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+
+        Method iterator = book.getDeclaredMethod("iterator");
+        Assert.assertNotNull(iterator);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+[slide]
+
+# Solution: Library
+
+
+
+[/slide]
+
