@@ -38,7 +38,7 @@ The diagram below illustrates the process in detail:
 After reading the input data from the console, the following program logic should be executed:
 
 ```js live
-let input = [14, 'm'];
+let input = [14, "m"];
 let age = Number(input[0]);
 let char = input[1];
 
@@ -213,7 +213,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 4 |
+|1| 3 |
 | 2 | |
 |3 | |
 
@@ -263,7 +263,7 @@ Write a program, which:
 function biggestNumberOfThree(input) {
   let first = Number(input[0]);
   let second = Number(input[1]);
-  let third = Number(input.[2]);
+  let third = Number(input[2]);
 
   if (first > second)
     if (first > third) {
@@ -289,7 +289,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 4 |
+|1| 3 |
 | 2 | |
 |3 | |
 
