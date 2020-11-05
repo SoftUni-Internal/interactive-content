@@ -17,6 +17,7 @@ for (let i = 0; i < 10; i++) {
 If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
 
  With step of 2, the loop would look like this:
+
 ```js live
 for (let i = 0; i < 10; i += 2) {
   console.log(i);
@@ -141,7 +142,7 @@ Write a program, which:
 
 * Reads an integer - count of **days before an exam**
 * For **each day** prints: `{currentDay} days before the exam`
-* At the end prints: `The exam has come`
+* At the end prints: `The exam has come.`
 
 # Example
   | **Input** | **Output** |
@@ -183,7 +184,7 @@ function examCountdown (input) {
       console.log(`${i} days before the exam`);
    }
    
-   console.log("The exam has come");
+   console.log("The exam has come.");
 }
 ```
 [/code-editor]
@@ -194,7 +195,7 @@ Write a program, which:
 
 * Reads an integer - count of **days before an exam**
 * For **each day** prints: `{currentDay} days before the exam`
-* At the end prints: `The exam has come`
+* At the end prints: `The exam has come.`
 
 
 # Example
@@ -203,7 +204,8 @@ Write a program, which:
 |3| 3 days before the exam |
 ||2 days before the exam |
 ||1 days before the exam |
-||The exam has come. |e
+||The exam has come. |
+
 [/task-description]
 [tests]
 [test]
