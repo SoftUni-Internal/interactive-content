@@ -2,7 +2,7 @@
 
 # What is Polymorphism?
 
-Hello there! Today, we will try to understand the nature of the forth OOP principle - The Polymorphism!
+Hello there! Today, we will try to understand the nature of the forth OOP principle - **The Polymorphism**!
 
 [image assetsSrc="Polymorphism-example.png" /]
 
@@ -10,7 +10,7 @@ Polymorphism is one of the four OOP pillars in **object-oriented** languages.
 
 It allows us to perform a single action in many different ways.
 
-For example, lets say we have **superclass** called `Mammal` that has method called `makeSound`. 
+For example, lets say we have **superclass** called `Mammal` that has method called `makeSound()`. 
 
 **Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation for making sound.
 
@@ -164,9 +164,39 @@ This way, a **child class** can give its own **implementation/property** to a me
 
 To understand better, lets take a look at this **example**:
 
+``` java
+class Animal {
+  public void eat() {
+    System.out.println("Animals can eat");
+  }
+}
+```
 
+``` java
+class Dog extends Animal {
+   public void eat() {
+      System.out.println("Dogs can eat meat");
+   }
+}
+```
+Now our `Main` class:
 
+``` java
+public class Main {
+   public static void main(String args[]) {
+      Animal animal = new Animal(); // We declare our Animal reference and object
+      Animal dog = new Dog();
+      animal.eat(); 
+      dog.eat();
+   }
+}
+```
 
+And the **output** will be: 
 
+```
+Animals can eat
+Dogs can eat meat
+```
 
 [/slide]
