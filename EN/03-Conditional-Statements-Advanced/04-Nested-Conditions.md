@@ -40,7 +40,7 @@ After reading the input data from the console, the following program logic shoul
 ```js live
 let input = [14, "m"];
 let age = Number(input[0]);
-let char = input[1];
+let gender = input[1];
 
 if (age < 16) {
     if (gender == "m") {
