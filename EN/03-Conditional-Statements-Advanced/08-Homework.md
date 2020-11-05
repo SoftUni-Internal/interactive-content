@@ -415,7 +415,7 @@ Write a program to apply an operator for given two numbers:
 
 * Read **two integers** and **math operator** from the console
 * The math operator could be: "+", "-", "/", "%" and "*"
-* The output should be in the following **format**: `{N1\} {operator} {N2} = {result}`
+* The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
 
 # Example
   | **Input** | **Output** |
@@ -497,9 +497,9 @@ function ATM(input) {
 Write a program to simulate an ATM withdrawal:
 
 * Read: **balance**, **withdraw** and **limit**
-* Print **"The withdraw was successful."** if the balance is enough
-* Print **"The daily limit was exceeded."** if the limit is exceeded
-* Print **"Insufficient availability."** if the balance isn't enough
+* Print `The withdraw was successful.` if the balance is enough
+* Print `The daily limit was exceeded.` if the limit is exceeded
+* Print `Insufficient availability.` if the balance isn't enough
 
 # Example
   | **Input** | **Output** |
