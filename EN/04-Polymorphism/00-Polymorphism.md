@@ -154,7 +154,7 @@ There are **two** types of **Polymorphism** in Java:
 
 **Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
 
-Therefore the **behaviour** of the **method** is decided at **runtime**.
+Therefore the **behavior** of the **method** is decided at **runtime**.
 
 **Dynamic Polymorphism** can be achieved using **method overriding**.
 
@@ -235,7 +235,32 @@ class Calculation {
 
 [slide]
 
-# Rules for Overriding methods:
+# Rules:
+
+
+## Rules for Overriding methods:
+
+- We can Override method in **sub-class**.
+
+- Parameters must be the same as parameters in **parent method**.
+
+- The overriding method must have **same return type**.
+
+- We cannot override **private**, **static** or **final** methods.
+
+- Overriding methods cannot throw **checked Exception** which is higher in hierarchy, than **checked Exception** thrown by overridden method.
+
+## Rules for Overloading methods:
+
+- We can **overload** method that take place in the **same class** or in its **sub-class**.
+
+- We can **overload Constructors** in Java.
+
+- Overloaded methods can have the **same** or **different** **return** types.
+
+- Overloaded methods must have **different argument list**.
+
+- Overloaded method should always be the part of the same class, with **same name** but **different parameters**.
 
 
 
