@@ -100,7 +100,7 @@ System.out.println("Map is instance of HashMap: " + result);
 ```java live
   Map<Object, Object> map = new HashMap();
   boolean result = map instanceof Object;
-  System.out.println("Map is instance of HashMap: " + result);
+  System.out.println("Map is instance of Object: " + result);
 ```
 
 Since `HashMap` is a subclass of `Object` the expression `map instanceOf Object` evaluates to `true`.
