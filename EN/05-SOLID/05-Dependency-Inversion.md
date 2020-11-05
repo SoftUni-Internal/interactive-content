@@ -1,0 +1,5 @@
+[slide]
+
+# Dependency Inversion
+
+[/slide]

@@ -1,0 +1,5 @@
+[slide]
+
+# Liskov Substitution
+
+[/slide]

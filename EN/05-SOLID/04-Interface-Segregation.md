@@ -1,0 +1,5 @@
+[slide]
+
+# Interface Segregation
+
+[/slide]
