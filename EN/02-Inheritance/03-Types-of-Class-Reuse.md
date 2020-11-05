@@ -65,6 +65,5 @@ class Laptop {
 - Share the **same role**
 Derived class is the **same as the base class** but adds a **little bit more functionality**
 
-            [image assetsSrc="inheritance-example(18).png" /]
 
 [/slide]
