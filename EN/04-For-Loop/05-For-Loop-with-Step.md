@@ -2,7 +2,7 @@
 # For Loop with Step
 In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
 
-**The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable. 
+**The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable.
 
 It is declared last in the **skeleton** of the for loop.
 
@@ -33,6 +33,7 @@ for (let i = 10; i >= 1; i--) {
   console.log(i);
 }
 ```
+
 [/slide]
 
 
@@ -54,7 +55,7 @@ Write a program, which:
 * Prints all numbers from **7 to n**, **ending with 7**
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |30| 7 |
 ||17 |
@@ -101,7 +102,7 @@ Write a program, which:
 * Prints all numbers from **7 to n**, **ending with 7**
 
 # Example
-  | **Input** | **Output** |
+|**Input** | **Output** |
 | --- | --- |
 |30| 7 |
 ||17 |
@@ -145,7 +146,7 @@ Write a program, which:
 * At the end prints: `The exam has come.`
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |3| 3 days before the exam |
 ||2 days before the exam |
@@ -192,14 +193,12 @@ function examCountdown (input) {
 # Description
 Write a program, which:
 
-
 * Reads an integer - count of **days before an exam**
 * For **each day** prints: `{currentDay} days before the exam`
 * At the end prints: `The exam has come.`
 
-
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |3| 3 days before the exam |
 ||2 days before the exam |
