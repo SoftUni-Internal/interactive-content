@@ -99,6 +99,8 @@ public class MyMath extends Math { }     // Error…
 ```
 
 [/slide]
+
+[slide]
 # Inheritance Benefits 
 
 ## Abstraction
