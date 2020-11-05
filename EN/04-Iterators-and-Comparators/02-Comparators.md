@@ -8,13 +8,13 @@ The Comparator interface allows us to provide a **custom comparison logic for ty
 
 It is simply an **external class** that exposes a `compare()` method that **accepts two objects**. 
 
-Inside of the method body we only have the implementation of the comparison logic.  
+Inside of the method body, we only have the implementation of the comparison logic.  
 
 That approach allows us to implement **multiple sorting sequences**. 
 
 Keeping in mind that the Comparator is an external class means that it **won’t affect the original class**.
 
-In the following example we compare **two Student objects** by student age.
+In the following example, we compare **two Student objects** by student age.
 
 Our AgeComparator class implements **Comparator** of type **Student**.
 
@@ -85,13 +85,13 @@ Then we would **return 0** which would mean that **the objects are the same**.
 
 In case the **age of the current student is bigger** than the age of the one which we get as an argument, we will **return 1**.
 
-By doing this we indicate that in by our sorting logic, **the current student is bigger**.
+By doing this, we indicate that in by our sorting logic, **the current student is bigger**.
 
 That leaves us with the last case, where we **return -1** because **the current student is less than the one from the arguments**.
 
 I don't know if you have noticed, but while implementing the Comparable interface we placed a **Student generic parameter**.
 
-That allows us to later implement the compare to method by **accepting a Student as an argument**. 
+That allows us to later implement the `compareTo()` method by **accepting a Student as an argument**. 
 
 **Avoiding the generics** will force us to implement the method, **by accepting an Object**. 
 

@@ -15,7 +15,7 @@ The Collection interface extends Iterable and hence all child classes of Collect
 
 An Iterable represents a collection which can be traversed.
 
-A class that implements the `Iterable<T>` can be used with the new for loop.
+A class that implements the `Iterable<T>` can be used with the new for-loop.
 
 It does that by internally calling the `iterator()` method on the object.
 
@@ -29,13 +29,13 @@ In the following example, we have a List which extends `Iterable<T>`.
 
 The iterator() method of this List returns Iterator of type String.
 
-So we can use all the Iterator methods to iterate over collection.
+So, we can use all the Iterator methods to iterate over a collection.
 
-The hasNext() - methods returns true if the iterator has more elements, and false if not.
+The hasNext() - method returns true if the iterator has more elements, and false if not.
 
-So, we pass the `iterator.hasNext()` into the while loop and by this way we begin to iterate over the collection.
+So, we pass the `iterator.hasNext()` into the while loop and in this way we begin to iterate over the collection.
 
-We use the `iterator.next()` - method to get the next element from the collection.
+We use an `iterator.next()` - method to get the next element from the collection.
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -55,7 +55,7 @@ while(iterator.hasNext()) {
 
 Another way to iterate the elements of a Java Iterable is via its forEach() method. 
 
-The forEach() method takes a Java Lambda Expression as parameter. 
+The forEach() method takes a Java Lambda Expression as a parameter. 
 
 This lambda expression is called once for each element in the Iterable. 
 
@@ -99,18 +99,18 @@ names.forEachRemaining((name) -> System.out.println(name));
 
 # Implement Custom Iterator
 
-There is a way to implement a custom Iterator, let's supose, we want a custom list with names.
+There is a way to implement a custom Iterator, let's suppose, we want a custom list with names.
 
 We want our NamesList to iterate only the names whose start with "A".
 
-For that reason our NamesList class have to implement Iterable interface.
+For that reason, our NamesList class have to implement the Iterable interface.
 
 ```java
 public class NamesList implements Iterable<String> {
 
 }
 ```
-Let's create a field `String[] names` where we are going to save our names
+Let's create a field `String[] names` where we are going to save our names.
 
 ```java
 public class NamesList implements Iterable<String> {
@@ -121,7 +121,8 @@ public class NamesList implements Iterable<String> {
 ```
 
 Next step is to create a constructor.
-Our constructor accepts varargs (of type String) so, we can create **multiple instance of the object** with different number of arguments each time we create it.
+
+Our constructor accepts varargs (of type String) so, we can create **multiple instances of the object** with different number of arguments each time we create it.
 
 ```java
 public class NamesList implements Iterable<String> {
