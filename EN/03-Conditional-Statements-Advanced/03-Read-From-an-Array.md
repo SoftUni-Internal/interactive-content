@@ -55,12 +55,12 @@ console.log(`Last element is ${train[train.length-1]}`);
 
 In this example each symbol is located in different index:
 
-- The first element of the array is located at index zero `train[0]`
+- The **first** element of the array is located at **index zero** `train[0]`
 
-- The second element of the array is located at index one `train[1]`
+- The **second** element of the array is located at **index one** `train[1]`
 
-- The third element of the array is located at index two `train[2]`
+- The **third** element of the array is located at **index two** `train[2]`
 
-- The last element of the array is located at `train[train.length-1]`
+- The **last** element of the array is located at `train[train.length-1]`
 
 [/slide]
