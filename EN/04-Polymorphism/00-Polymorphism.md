@@ -94,7 +94,7 @@ boolean result = map instanceof Object;
 Finally we can print the result:
 
 ```java
-System.out.println("Map is instance of HashMap: " + result);
+System.out.println("Map is instance of Object: " + result);
 ```
 
 ```java live
@@ -150,6 +150,7 @@ There are **two** types of **Polymorphism** in Java:
 
 - Static Polymorphism
 
+## Dynamic Polymorphism
 
 **Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
 
@@ -197,5 +198,43 @@ And the **output** will be:
 Animals can eat
 Dogs can eat meat
 ```
+
+## Static Polymorphism
+
+One of the way Java supports **Static Polymorphism** is by "**Method overloading**".
+
+**Method overloading** allows us to have two or more **methods** with the same name, but different **parameters**.
+
+Lets see this simple example:
+
+``` java
+class Calculation {  
+  void sum(int a,int b) {
+  System.out.println(a+b);
+  }  
+  void sum(int a,int b,int c){
+  System.out.println(a+b+c);
+  }  
+
+  public static void main(String args[]) {  
+    Calculation calculator = new Calculation();  
+    obj.sum(5,10,15);  // 30
+    obj.sum(20,40);   //60
+  }  
+}  
+```
+[/slide]
+
+[slide hideTitle]
+
+
+# Problem: MathOperation
+
+
+[/slide]
+
+[slide]
+
+
 
 [/slide]
