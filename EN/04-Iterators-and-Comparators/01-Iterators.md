@@ -241,7 +241,7 @@ public class Main {
 ## Description
 Create a class **Library** from UML diagram below:
 
-| `<Iterable<Book>>` |
+| `<<Iterable<Book>>>` |
 | --- |
 | **Library** |
 |- books: `Book[]`|

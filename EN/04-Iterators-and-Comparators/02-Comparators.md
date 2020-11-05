@@ -101,6 +101,227 @@ That allows us to later implement the compare to method by **accepting a Student
 [/slide]
 
 
+[slide]
+# Problem: Comparable Book
+[code-task title="Problem: Comparable Book" taskId="12f0f25d-3f35-4345-82c0-3c89d73cad8f" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Expand Book by implementing `Comparable<Book>`.
+
+Book have to be **compared by title**. 
+
+When title is equal, **compare them by year**.
+
+Expand **Book** from UML diagram below:
+
+| `<<Comparable<Book>>>` |
+| --- |
+| **Book** |
+|- title: String |
+|- year: int |
+|- authors: `List<String>` | 
+|- setTitle(String) |
+|- setYear(String) |
+|- setAuthors(String…) |
+|+ getTitle(): String |
+|+ getYear(): int |
+|+ getAuthors(): `List<String>` |
+|+ compareTo(Book): int |
+
+
+## Examples
+Use the code below to test your **Book** class.
+
+```java
+public static void main(String[] args) {
+    Book bookOne = new Book("Animal Farm", 2003, "George Orwell");
+    Book bookThree = new Book("The Documents in the Case", 2002);
+    Book bookTwo = new Book("The Documents in the Case", 1930, 
+    "Dorothy Sayers", "Robert Eustace");
+
+    if (bookOne.compareTo(bookTwo) > 0) {
+	    System.out.println(String.format("%s is before %s", bookOne, bookTwo));
+    } else if (bookOne.compareTo(bookTwo) < 0) {
+	    System.out.println(String.format("%s is before %s", bookTwo, bookOne));
+    } else {
+	    System.out.println("Book are equal");
+    
+}
+
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestBookFieldsNames \{
+    private static final String CLASS_NAME = "Book";
+    private static final List\<String\> FIELD_NAMES = Arrays.asList("title", "year", "authors");
+
+    @Test
+    public void bookFieldsNames() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        Field\[\] fields = book.getFields();
+        for (Field field : fields) \{
+            FIELD_NAMES.contains(field.getName());
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestBookFieldsAccessModifier \{
+    private static final String CLASS_NAME = "Book";
+
+    @Test
+    public void testFieldAccessModifiers() throws NoSuchFieldException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        Field\[\] fields = book.getFields();
+        for (Field field : fields) \{
+            Modifier.isPrivate(field.getModifiers());
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+import java.lang.reflect.\*;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestBookConstructor \{
+    private static final String CLASS_NAME = "Book";
+
+    @Test
+    public void bookSettersNames() throws NoSuchFieldException, NoSuchMethodException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        List\<Constructor\> constructors = Arrays.asList(book.getConstructors());
+        Assert.assertTrue(constructors.size() == 1);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestBookSettersNames \{
+    private static final String CLASS_NAME = "Book";
+    private static final List\<String\> METHODS_NAMES = Arrays.asList("setTitle", "setYear", "setAuthors");
+
+    @Test
+    public void bookSettersNames() throws NoSuchMethodException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        List\<Method\> methods = Arrays.asList(book.getDeclaredMethods());
+
+        Method setTitle = book.getDeclaredMethod("setTitle", String.class);
+        Assert.assertNotNull(setTitle);
+
+        Method setYear = book.getDeclaredMethod("setYear", int.class);
+        Assert.assertNotNull(setYear);
+
+        //Method setAuthors = book.getDeclaredMethod("setAuthors");
+        //setAuthors.setAccessible(true);
+        ////Assert.assertTrue(setAuthors.isVarArgs());
+        //Assert.assertNotNull(setAuthors.getParameterTypes().equals(String\[\].class));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.\*;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestBookComparable \{
+    private static final String CLASS_NAME = "Book";
+
+    @Test
+    public void bookSettersNames() throws NoSuchFieldException, NoSuchMethodException \{
+        Assert.assertTrue("Class 'Book' not found", Classes.allClasses.containsKey(CLASS_NAME));
+        Class book = Classes.allClasses.get(CLASS_NAME);
+        List\<Class\> interfaces = Arrays.asList(book.getInterfaces());
+        Assert.assertTrue(interfaces.contains(Comparable.class));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
 
 
 
