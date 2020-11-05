@@ -343,7 +343,7 @@ unknown
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
-    let product = input.shift();
+    let product = input;
     if (product == "curry" || product == "noodles" || product == "sushi" || product == "spaghetti") {
       console.log("food");
     } else if (product == "tea" || product == "water" || product == "coffee") {
