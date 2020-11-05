@@ -6,15 +6,14 @@ We can also use **for loops** to iterate over **characters**.
 
 Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
 ```js live
-function latinLetters(startChar, endChar) {
-  let startValue = startChar.charCodeAt(0);
-  let endValue = endChar.charCodeAt(0);
+
+  let startValue = a.charCodeAt(0);
+  let endValue = c.charCodeAt(0);
   let result = '';
   for (let i = startValue; i <= endValue; i++) {
     result += String.fromCharCode(i) + ' ';
   }
   console.log(result);
-}
 ```
 
 # ASCII Table
