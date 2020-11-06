@@ -1,5 +1,5 @@
 [slide]
-# Problem 01
+# Calculator for TV series
 ## Description
 Write a program, which calculates how long it will take you to watch all episodes of a series in minutes. 
 
@@ -20,7 +20,7 @@ From the console you receive 4 lines:
 You have to print on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format: 
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
 
-[code-task title="Problem-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
