@@ -56,7 +56,7 @@ We may use `Array.newInstance()` method.
 Lets make a quick demo in our main class:
 
 
-``` java live
+``` java 
 import java.lang.reflect.Array;
 int arr[] = (int[])Array.newInstance(int.class, 5); // a new instance is created using Array.newInstance method.
       Array.set(arr, 0, 2); // We set the values of the array with Array.set() method.
@@ -71,6 +71,13 @@ int arr[] = (int[])Array.newInstance(int.class, 5); // a new instance is created
    }
 }
 ```
+
+Output will be:
+
+```
+The array elements are: 2 9 3 0 7
+```
+
 
 
 
