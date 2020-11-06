@@ -55,8 +55,11 @@ Field field = aClass.getField("fieldname");
 Field[] fields = aClass.getFields();
 ```
 
+We can use `getDeclaredFields()` to obtain **all** fields:
 
-
+``` java
+Field[] fields = aClass.getDeclaredFields();
+```
 
 
 
