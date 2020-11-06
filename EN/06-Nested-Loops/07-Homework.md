@@ -31,7 +31,7 @@ Write a program, which:
 * The numbers always start from 0
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |6| L60 L61 L62 L63|
 |4| A50 A51 A52 A53|
@@ -188,8 +188,9 @@ Write a program, which:
 * The **first** part is an **even** number and should not be greater than **n**
 * The **second** part is an **odd** number and should not be greater than **n**
 * The **last part** is the **product** of the first two
+
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |6| 212 236 2510 414 4312 4520 616 6318 6530 |
 
@@ -307,10 +308,10 @@ Write a program, which:
 | **Input** | **Output** |
 | --- | --- |
 |Philippines| Going to Philippines! |
-|1000|  |
-|550|  |
-|450|  |
-|End|  |
+|1000| |
+|550| |
+|450| |
+|End| |
 
 
 [/task-description]
@@ -734,13 +735,7 @@ Write a program, which:
 |c|  |
 |b|  |
 
-# Example
-## Input
-- a
-- c
-- b
-## Output
-- aaa aac aca acc caa cac cca ccc 8
+
 [/task-description]
 [tests]
 [test]
@@ -784,7 +779,6 @@ Write a program, which:
 |3| 1212 1221 2112 2121 |
 ||  |
 ||  |
-
 
 [/task-description]
 [tests]
