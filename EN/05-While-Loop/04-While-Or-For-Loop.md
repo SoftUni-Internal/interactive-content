@@ -21,7 +21,7 @@ But, there could be many **complex** problems where number of iterations depend 
 That means we don't know in advance **how many times** to repeat a loop.
 
 In those situation it is better to use `while` loop.
-```js live
+```js
 let command = input.shift();
 let number = Number(input.shift());
 while (command != "End") {
@@ -205,8 +205,8 @@ END
 [code-editor language=javascript]
 ```
 function numberProcessor(input) {
-  let num = Number(input[0]);
-  let command = input[1];
+  let num = Number(input.shift());
+  let command = input.shift();
   
   while (command !== "END") {
     switch (command) {
