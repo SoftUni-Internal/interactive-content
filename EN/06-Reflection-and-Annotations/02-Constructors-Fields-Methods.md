@@ -61,8 +61,34 @@ We can use `getDeclaredFields()` to obtain **all** fields:
 Field[] fields = aClass.getDeclaredFields();
 ```
 
+There is also a way to obtain our field names and types:
+
+``` java
+String fieldName = field.getName();
+Object fieldType = field.getType();
+```
+
+Lets discuss now, how we can setting value for a field via Reflection
+
+``` java
+Field field = targetClass.getDeclaredField(fieldName);
+field.setAccessible(true); // We need to change the behavior of the AccessibleObject
+field.set(object, value); // The object parameter passed to the get and set method should be an instance of the class that owns the field.
+```
+
+We can also obtain methods with parameters and return type:
+
+```java
+Method method = myObject.class.getMethod("methodName", String.class);
+Object returnValue = method.invoke(null, "arg1"); // We use null for static methods
+```
 
 
 
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Getters and Setters
 
 [/slide]
