@@ -1,5 +1,5 @@
 [slide]
-# Problem 02
+# Time for Lunch
 ## Description
 During the lunch break you want to watch an episode from your favorite series. 
 
@@ -21,7 +21,7 @@ Print on the console one line:
 - If the time is not enough: `You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
 Round the time up to the nearest whole number.
 
-[code-task title="Problem-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Time for Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
