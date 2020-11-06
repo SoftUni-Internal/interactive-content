@@ -1,5 +1,6 @@
 [slide]
 # Summary
+
 In this lesson you learnt that:
 - **While** loop executes a block of code **multiple** times
    - While the loop condition is true
