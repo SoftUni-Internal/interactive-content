@@ -20,9 +20,9 @@ for (let i = 1; i <= n; i += 1) {
 
 We can iterate over characters:
 ```js live
-for (char ch = 'a'; ch <= 'z'; ch++)
+for (let ch = 'a'; ch <= 'z'; ch++)
 {
-   console.log(ch); ???
+   console.log(ch);
 }
 ```
 
