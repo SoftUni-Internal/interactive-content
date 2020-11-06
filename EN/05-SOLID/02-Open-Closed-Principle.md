@@ -66,7 +66,7 @@ According to this principle, **we can’t modify**, but **we can extend**.
 
 To overcome this problem, we have to **add abstraction** to the `calculate()` method.
 
-We have to **delegate** the responsibility of providing the calculation of area inside the operation itself.
+We have to **delegate** the responsibility of providing the calculation of the area inside the shape itself.
 
 Each **shape** must have **own logic** to calculate its area.
 
