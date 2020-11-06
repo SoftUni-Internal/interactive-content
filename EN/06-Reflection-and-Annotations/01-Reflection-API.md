@@ -125,4 +125,12 @@ method notifyAll
 
 We can see that besides the **custom methods** we wrote (walk, makeSound, eat) we also have default methods (wait, equals, toString, hashCode, etc).
 
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Reflection
+
 [/slide]
