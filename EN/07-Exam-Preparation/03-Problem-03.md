@@ -1,5 +1,5 @@
 [slide]
-# Problem 03
+# Cinema
 ## Description
 For the upcoming premiere of three popular productions a local cinema has hired you to write a software that calculates the price, which the clients have to pay, depending on the movie and the offer they have chosen.
 
@@ -25,7 +25,7 @@ You receive 3 lines from the console:
 Print one line on the console: `Your bill is {total price}$`
  * The price must be formatted to two digits after the decimal point.
 
-[code-task title="Problem-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

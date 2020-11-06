@@ -1,5 +1,5 @@
 [slide]
-# Problem 05
+# TV Series Budget
 ## Description
 You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. You have a budget and number of series that the user will want to purchase. Each series has a title and price.
 Some of the series have a discount:
@@ -24,7 +24,7 @@ Print one line on the console:
 - If your budget is less than the price of the series: `You need {money needed}$ more to buy the series!`
 
 The result must be formatted to two digits after the decimal point.
-[code-task title="Problem-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="TV Series Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

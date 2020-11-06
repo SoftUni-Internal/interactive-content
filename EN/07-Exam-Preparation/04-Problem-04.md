@@ -1,5 +1,5 @@
 [slide]
-# Problem 04
+# Cinema Income
 ## Description
 You have been hired by a cinema to write a program that calculates whether a movie showing will be enough so that the cinema hall is filled and how much money will the profit be. 
 
@@ -16,15 +16,15 @@ If more people than the available seats try to enter the hall, it is considered 
 # Input
 Read from the console:
 - First line – hall's capacity – whole number in the range \[50... 150\]
-On each of the next lines until the command `Movie time!`:
-- Count of people entering the cinema - whole number in the range \[1… 15\]
+- On each of the next lines until the command `Movie time!`:
+	- Count of people entering the cinema - whole number in the range \[1… 15\]
 
 ## Output
 First, print on the console one line:
 - If you have received the command `Movie time!`: `There are {seats left} seats left in the cinema.`
 - If there are no more free seats in the hall: `The cinema is full.`
 - Afterwards, print: `Cinema income - {income}$`
-[code-task title="Problem-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
