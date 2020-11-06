@@ -57,6 +57,7 @@ Lets make a quick demo in our main class:
 
 
 ``` java live
+import java.lang.reflect.Array;
 int arr[] = (int[])Array.newInstance(int.class, 5); // a new instance is created using Array.newInstance method.
       Array.set(arr, 0, 2); // We set the values of the array with Array.set() method.
       Array.set(arr, 2, 2);
