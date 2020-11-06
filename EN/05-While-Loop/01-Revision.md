@@ -18,14 +18,6 @@ for (let i = 1; i <= n; i += 1) {
 }
 ```
 
-We can iterate over characters:
-```js live
-for (let ch = 'a'; ch <= 'z'; ch++)
-{
-   console.log(ch);
-}
-```
-
 ## Increment and Decrement Operators
 Increments or decrements its operand by 1.
 
