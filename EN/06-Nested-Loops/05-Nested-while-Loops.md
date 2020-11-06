@@ -53,11 +53,11 @@ Write a program, which:
 ## Input
 - 5
 ## Output
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
+- \*
+- \*\*
+- \*\*\*
+- \*\*\*\*
+- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
@@ -65,10 +65,10 @@ Write a program, which:
 4
 [/input]
 [output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
+*
+**
+***
+****
 [/output]
 [/test]
 [/tests]
@@ -110,11 +110,11 @@ Write a program, which:
 ## Input
 - 5
 ## Output
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
+- \*
+- \*\*
+- \*\*\*
+- \*\*\*\*
+- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
@@ -122,14 +122,20 @@ Write a program, which:
 4
 [/input]
 [output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
+*
+**
+***
+****
 [/output]
 [/test]
 [/tests]
 [code-io/]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Video
+[vimeo-video videoId="344947750" startTimeInSeconds="4307" endTimeInSeconds="5172" /]
 
 [/slide]
