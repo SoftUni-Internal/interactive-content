@@ -79,6 +79,12 @@ The array elements are: 2 9 3 0 7
 ```
 
 
+[/slide]
+
+[slide hideTitle]
+
+
+# Problem: High Quality Mistakes
 
 
 [/slide]
