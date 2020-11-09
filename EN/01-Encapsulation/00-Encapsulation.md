@@ -77,7 +77,4 @@ public Person (String name, Integer age) {
   this.age = age;
 }
 ```
-
-
-
 [/slide]
