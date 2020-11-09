@@ -8,7 +8,7 @@ Here, we will take a look at some good practices in Unit Testing.
 
 For example:
 
-When we use `assertTrue()` method here, we can less descriptive output:
+When we use `assertTrue()` method here, we can see less descriptive output:
 
 ``` java
 Assert.assertTrue(account.getBalance() == 50);
