@@ -8,9 +8,9 @@ In other words, principle defines that objects of a **superclass** shall be **re
 
 That requires the objects of your subclasses to **behave in the same way** as the objects of your superclass.
 
-The Liskov substitution principle is just an **extension** of the **Open-closed** principle. 
-
 ## OCP vs LSP​
+
+The Liskov substitution principle is just an **extension** of the **Open-closed** principle. 
 
 That means that we are able to implement the Open-closed principle through **additional objects**, **inheritance**, and **polymorphism**.​
 
