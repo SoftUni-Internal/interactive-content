@@ -38,11 +38,13 @@ Most of the defects that are found during **pre-release testing** are related to
 
 The main reason behind this is that the modules may be **too complex**. Coding related to such modules is complicated.
 
-## 4.Eary Testing:
+## 4.Early Testing:
 
 The later a bug is found - the more it costs!
 
 The **cost** involved fixing defects at the start, when the project is small is cheaper compared to those found during the later stages of testing.
+
+[image assetsSrc="Unit-Testing-Example.png" /]
 
 
 [/slide]
