@@ -26,6 +26,7 @@ There are 2 ways we can achieve **abstraction** in Java:
 [slide]
 ## Java Abstract Class Example:
 
+Lets see how we can use that abstract classes.
 
 ``` java
 // Abstract parent class "Animal"
@@ -64,6 +65,10 @@ Woof, Woof
 
 [slide]
 ## Java Interface Example:
+
+We can use interfaces too.
+
+Here is a simple example:
 
 ``` java
 interface Pet {
