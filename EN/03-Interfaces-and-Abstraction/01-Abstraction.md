@@ -20,6 +20,10 @@ There are 2 ways we can achieve **abstraction** in Java:
 
 - Using `interfaces`.
 
+[/slide]
+
+
+[slide]
 ## Java Abstract Class Example:
 
 
@@ -55,7 +59,10 @@ Using the `abstract` classes, the **Output** will be:
 ``` 
 Woof, Woof
 ```
+[/slide]
 
+
+[slide]
 ## Java Interface Example:
 
 ``` java
