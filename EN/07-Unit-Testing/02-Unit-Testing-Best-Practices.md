@@ -42,4 +42,51 @@ Actual :35
 
 # Magic Numbers
 
+Other good practice is trying to avoid using "**magic numbers**".
+
+We must use "**constants**" instead.
+
+Lets take this simple example:
+
+``` java
+private static final int AMOUNT = 100;
+@Test
+public void depositShouldAddMoney() {
+  BankAccount account = new BankAccount();
+  account.deposit(AMOUNT);
+  Assert.assertEquals("Wrong balance",    
+               AMOUNT, account.getBalance());
+}
+```
+
+We see here from this example that its better to declare our int variable outside of the test and use it as a constant.
+
+This is better because if we need to change our `amount` variable, we can change it only **outsid**e of the test and don't worry about the logic inside.
+
+## Before
+
+When we write tests, its common to find that several tests need similar object to be created before they can run.
+
+We can use `@Before` annotation to create this behavior.
+
+Lets take a look with this simple example:
+
+``` java
+ public class Example {
+    HashMap empty;
+    @Before
+    public void initialize() {
+        empty = new HashMap();
+    }
+    
+    @Test public void size() {
+      // ... our test logic here
+    }
+    @Test public void remove() {
+       // ... our test logic here
+    }
+```
+
+That way, our initialize method will execute before each test.
+
 [/slide]
