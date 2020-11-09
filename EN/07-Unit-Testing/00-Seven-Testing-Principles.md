@@ -54,7 +54,7 @@ We can overcome this problem by writing new tests and adding new test data.
 
 ## 6.Testing shows presence of defects:
 
-It is important to understand that even **after testsing** we cannot say our product is **100% defect free**.
+It is important to understand that even **after testing** we cannot say our product is **100% defect free**.
 
 Our tests cannot prove that our software is free of defects. 
 
