@@ -99,4 +99,6 @@ public void depositShouldAddMoney() {
 
 # 3A Pattern
 
+There is a **must-known** pattern if we want to make a better unit tests.
+
 [/slide]
