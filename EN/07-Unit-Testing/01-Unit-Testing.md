@@ -53,6 +53,50 @@ Automated testing contains:
 [image assetsSrc="Unit-Testing-Example(1).png" /]
 
 
+[/slide]
 
+[slide]
+
+# JUnit
+
+JUnit is one of the first unit testing **Frameworks** for Java.
+
+First, we need to set the JUnit repository. 
+
+After creating a Maven project, we must copy and paste this code in our pom.xml file.
+
+```
+<project …>
+…
+<dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
+```
+
+Next, lets create a new **package** for our tests.
+
+After that we must create our first class for test methods. (e.g **CreditCardTests**)
+
+Now, we can create our first **public void** method annotated with `@Test`.
+
+``` java
+@Test
+public void depositShouldAddMoney() {
+  /* logic here... */
+}
+```
+
+[/slide]
+
+
+[slide]
+
+# 3A Pattern
 
 [/slide]
