@@ -76,7 +76,7 @@ The electric car is a vehicle, however it does not have an engine and hence, the
 
 These are the kinds of problems that **violation** of Liskov Substitution Principle leads to, and they can most usually be recognized by a **method that does nothing**, or even **can’t be implemented**.
 
-The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating classes of vehicles with and without engines.
+The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating interfaces of vehicles with and without engines.
 
 
 From the Vehicle Interface we remove the `startEngine()` method.
