@@ -61,9 +61,13 @@ public void depositShouldAddMoney() {
 
 We see here from this example that its better to declare our int variable outside of the test and use it as a constant.
 
-This is better because if we need to change our `amount` variable, we can change it only **outsid**e of the test and don't worry about the logic inside.
+This is better because if we need to change our `amount` variable, we can change it only **outside** of the test and don't worry about the logic inside.
 
-## Before
+[/slide]
+
+[slide]
+
+# Before
 
 When we write tests, its common to find that several tests need similar object to be created before they can run.
 
@@ -88,5 +92,46 @@ Lets take a look with this simple example:
 ```
 
 That way, our initialize method will execute before each test.
+
+
+[/slide]
+
+[slide]
+
+# Naming Test Methods:
+
+Test naming is very important. Especially for the big long term projects.
+
+There are few recommendations regarding test names:
+
+- Test names should use business domain terminology.
+
+- Test names should be descriptive and readable.
+
+- Our tests should express a specific requirement.
+
+- Some of ours test names could include the name of the tested method or class.
+
+- We must write clean names.
+
+Lets see some examples of **bad** test naming:
+
+```
+increaseDMG {}
+test1() {}
+testTransfer()
+idontrememberwhatiamtesting {}
+```
+
+Here is some **proper** test naming examples:
+
+```
+depositAddsMoneyToBalance() {}
+depositNegativeShouldNotAddMoney() {}
+transferSubtractsFromSourceAddsToDestAccount() {}
+```
+
+
+
 
 [/slide]
