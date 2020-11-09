@@ -45,17 +45,14 @@ Count tickets – 6
 Your bill is 72.00$
 
 ## Comments
-The movie is Star Wars and popcorn is chosen.
+The movie is John Wick and drink is chosen.
 
-The price for one ticket is 25\$
+The price for one ticket is 12\$
 
-4 tickets each `25$ -> 100$`
+6 tickets each `12$ -> 72$`
 
-For this movie there is 30\% discount for 4 or more people. 
+For this movie there is no discount, total price is `72.00$`. 
 
-`30% of 100 -> 30 `
-
-`100 – 30 -> 70$` is the total price
 [/task-description]
 [code-io /]
 [tests]
