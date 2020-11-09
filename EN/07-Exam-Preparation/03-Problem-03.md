@@ -17,8 +17,8 @@ Write a program that calculates the price that has to be paid. Keep in mind that
 
 ## Input
 You receive 3 lines from the console:
-- First line - movie - string: `John Wick`, `Star Wars` or `Jumanji
-- Second line - offer - string:"Drink", "Popcorn" or "Menu"
+- First line - movie - string: `John Wick`, `Star Wars` or `Jumanji`
+- Second line - offer - string: `Drink`, `Popcorn` or `Menu`
 - Third line - count tickets – whole number in the range \[1… 30\]
 
 ## Output
