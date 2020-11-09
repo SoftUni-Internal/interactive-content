@@ -6,7 +6,7 @@ Hello. Today we will learn about **Unit Testing** and what are the **Seven Testi
 
 There are **fundamentals** testing principles which helps the testing teams to make the process of testing software more effective.
 
-Lets see  what is the concept behind testing:
+Lets see what is the concept behind testing:
 
 ## 1.Testing is context depedent:
 
@@ -45,6 +45,32 @@ The later a bug is found - the more it costs!
 The **cost** involved fixing defects at the start, when the project is small is cheaper compared to those found during the later stages of testing.
 
 [image assetsSrc="Unit-Testing-Example.png" /]
+
+## 5.Pesticide Paradox
+
+The Pesticide Paradox in testing shows us that the process of **repeating** the **same tests** over and over eventually will stop find new defects or bugs.
+
+We can overcome this problem by writing new tests and adding new test data.
+
+## 6.Testing shows presence of defects:
+
+It is important to understand that even **after testsing** we cannot say our product is **100% defect free**.
+
+Our tests cannot prove that our software is free of defects. 
+
+However efficient testing techniques **reduces** the chance of undiscovered bugs/defects.
+
+## 7.Absence-of-errors fallacy:
+
+Sometimes our software is tested against wrong requirements.
+
+Finding and fixing defects itself does not help when:
+
+- Our system built is unusable.
+
+- When our software does not fulfill the users needs and expectations.
+
+
 
 
 [/slide]
