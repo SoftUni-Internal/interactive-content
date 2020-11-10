@@ -578,7 +578,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T05_TestGettersInstance \{
+public class T05_TestGettersInstance {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
 
     @Test
@@ -672,7 +672,7 @@ public class T05_TestGettersInstance \{
 
         return method;
     \}
-\}
+}
 [/input]
 [output]
 Test Passed!
