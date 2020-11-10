@@ -14,7 +14,7 @@ It implements all the **object-oriented concepts**.
 
 Any programs that we write in Java must use the concept of class. Our `Main` method itself is included in a main class.
 
-Classes are the basic building blocks of OOP paradigm.
+Classes are the basic building blocks of the OOP paradigm.
 
 That's why it is very important to understand the **four pillars** of **object-oriented programming**: 
 
@@ -49,11 +49,11 @@ We will learn more about that later.
 
 ## Reflection
 
-One particular important subject of this module is **Reflection**.
+One particularly important subject of this module is **Reflection**.
 
 Java Reflection allows us to inspect classes, interfaces, methods, and fields at **runtime**.
 
-It is a very powerful tool that can be very useful.
+It is a very powerful tool that can be vastly useful.
 
 Is it **safe** to use Reflection? **When and how** we use Reflection? This is a small part of the things we will learn in this module.
 
@@ -71,13 +71,13 @@ We will answer these and more questions in our lessons for Unit Testing and Test
 
 ## Software Design Patterns
 
-And last but not least we will expand our knowledge learning about the best practices used by experienced object-oriented developers.
+And last, but not least we will expand our knowledge learning about the best practices used by experienced developers.
 
 As professional developers, we must know the concepts behind solving some of the popular coding problems.
 
 These concepts often represents ideas, not a particular implementation.
 
-Using the design patterns we make our code less complicated, more reusable and maintainable. 
+Using the design patterns, we make our code less complicated, more reusable and maintainable. 
 
 **Now, lets begin!**
 
