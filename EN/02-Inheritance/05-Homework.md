@@ -2539,7 +2539,7 @@ You need a public class **Main**.
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
