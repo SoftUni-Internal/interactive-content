@@ -3,7 +3,7 @@
 ## Description
 You have been hired by a cinema to write a program that calculates whether a movie showing will be enough so that the cinema hall is filled and how much money will the profit be. 
 
-You are going to receive the count of seats in the hall and on the next lines until the command "Movie time!", how many people enter the hall. 
+You are going to receive the count of seats in the hall and on the next lines until the command `Movie time!`, how many people enter the hall. 
 
 The price for one ticket is 5$. 
 
@@ -55,15 +55,15 @@ There are 6 seats left in the cinema.
 Cinema income - 255$
 
 ## Comments
-If we receive the hall's capacity – 60 seats. 
+The hall's capacity is 60 seats. 
 
 On the next line we receive the people that have entered the hall – 10. 
 
-The price that they will pay is `10 * 5 = 50`. 
+The price that they will pay is `10 * 5 = 50$`. 
 
 After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. 
 
-We continue until we receive the command "Movie time!" and then we print a suitable output.
+We continue until we receive the command `Movie time!` and then we print a suitable output.
 [/task-description]
 [code-io /]
 [tests]
