@@ -1,0 +1,5 @@
+[slide hideTitle]
+
+# Problem
+
+[/slide]
