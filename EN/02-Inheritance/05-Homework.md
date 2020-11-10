@@ -1870,6 +1870,580 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Restaurant
+[code-task title="Problem: Restaurant" taskId="6ae299f2-f373-467d-8a69-a4ca813a9973" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a **restaurant** package with the following classes and hierarchy:
+
+There are Food and Beverages in the restaurant and they are all products.
+
+The **Product** class must have the following members:
+
+- A public constructor with the following parameters: **String name, BigDecimal price**
+- **name – String**
+- **price – BigDecimal**
+- **Getters for the fields**
+
+**Beverage** and **Food** classes are products. 
+
+The **Beverage** class must have the following members:
+- A public constructor with the following parameters: **String name, BigDecimal price, double milliliters**
+- **name – String**
+- **price – BigDecimal**
+- **milliliters – double**
+- **Getter for milliliters**
+
+The **Food** class must have the following members:
+- A constructor with the following parameters: **String name, BigDecimal price, double grams**
+- **name – String**
+- **price – double**
+- **grams – double**
+- **Getter for grams**
+
+**HotBeverage** and **ColdBeverage** are **beverages** and they accept the following parameters upon initialization: **String name, BigDecimal price, double milliliters**
+
+**Coffee** and **Tea** are **hot beverage**s. The **Coffee** class must have the following additional members:
+- **double COFFEE_MILLILITERS = 50**
+- **BigDecimal COFFEE_PRICE = 3.50**
+- **caffeine – double**
+- **Getter for caffeine**
+
+**MainDish**, **Dessert** and **Starter** are **food**.
+ They all accept the following parameters upon initialization: **String name, BigDecimal price, double grams**. 
+ **Dessert** must accept one more parameter in its constructor: **double calories**.
+- **calories – double**
+- **Getter for calories**
+
+Make **Salmon**, **Soup** and **Cake** inherit the proper classes.
+
+A **Cake** must have the following members upon initialization:
+- **double CAKE_GRAMS = 250**
+- **double CAKE_CALORIES = 1000**
+- **BigDecimal CAKE_PRICE = 5**
+A **Salmon** must have the following members upon initialization:
+- **double SALMON_GRAMS = 22**
+
+## Note
+You need a public class **Main**. Create a **restaurant** package.
+Zip your package and upload it in Judge.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T00_TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' type doesn't exist!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Product",
+                "Beverage",
+                "Coffee",
+                "ColdBeverage",
+                "HotBeverage",
+                "Tea",
+                "Cake",
+                "Dessert",
+                "Food",
+                "MainDish",
+                "Salmon",
+                "Soup",
+                "Starter"
+        \};
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
+            Assert.assertNotNull(message, getType(classType));
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01_TestIsAssignableFromProduct \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Beverage",
+                "Food",
+        \};
+
+        Class expectedParentClass = getType("Product");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T02_TestIsAssignableFromBeverage \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssertBeverage = new String\[\]\{
+                "ColdBeverage",
+                "HotBeverage",
+        \};
+        Class expectedParentClassBeverage = getType("Beverage");
+
+        validateTypeExist(classTypesToAssertBeverage, expectedParentClassBeverage);
+
+        String\[\] classTypesToAssertHotBeverage = new String\[\]\{
+                "Coffee",
+                "Tea",
+        \};
+        Class expectedParentClassHotBeverage = getType("HotBeverage");
+
+        validateTypeExist(classTypesToAssertHotBeverage, expectedParentClassHotBeverage);
+
+    \}
+
+    private static void validateTypeExist(String\[\] classTypesToAssert, Class expectedParentClass) \{
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T03_TestIsAssignableFromFood \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssertFood = new String\[\]\{
+                "MainDish",
+                "Dessert",
+                "Starter",
+        \};
+
+        Class expectedParentClassFood = getType("Food");
+        validateTypeExist(classTypesToAssertFood, expectedParentClassFood);
+
+
+        String\[\] classTypesToAssertMainDish = new String\[\]\{
+                "Salmon",
+        \};
+
+        Class expectedParentClassMainDish = getType("MainDish");
+        validateTypeExist(classTypesToAssertMainDish, expectedParentClassMainDish);
+    \}
+
+    private static void validateTypeExist(String\[\] classTypesToAssert, Class expectedParentClass) \{
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T04_TestIsAssignableFromFood \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssertDessert = new String\[\]\{
+                "Cake",
+        \};
+
+        Class expectedParentClassDessert = getType("Dessert");
+        validateTypeExist(classTypesToAssertDessert, expectedParentClassDessert);
+
+
+        String\[\] classTypesToAssertStarter = new String\[\]\{
+                "Soup",
+        \};
+
+        Class expectedParentClassStarter = getType("Starter");
+        validateTypeExist(classTypesToAssertStarter, expectedParentClassStarter);
+
+    \}
+
+    private static void validateTypeExist(String\[\] classTypesToAssert, Class expectedParentClass) \{
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.util.Arrays;
+
+public class T05_TestCakeInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Nedelq";
+
+        Object\[\] cakeArgs = new Object\[\]\{expectedName\};
+        Class\<?\> cakeClass = getType("Cake");
+        Object cakeObject = createObjectInstance(cakeClass, cakeArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(cakeObject, cakeClass, "getName", null);
+        Object actualPrice = getMethodValue(cakeObject, cakeClass, "getPrice", null);
+        Object actualCalories = getMethodValue(cakeObject, cakeClass, "getCalories", null);
+        Object actualGrams = getMethodValue(cakeObject, cakeClass, "getGrams", null);
+
+        // Assert
+        BigDecimal expectedPrice = new BigDecimal(5);
+        double expectedCalories = 1000.0;
+        double expectedGrams = 250.0;
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, cakeClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String priceMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, cakeClass.getName(), "getPrice", actualPrice, expectedPrice);
+        Assert.assertEquals(priceMessage, actualPrice, expectedPrice);
+
+        String caloriesMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, cakeClass.getName(), "getCalories", actualCalories, expectedCalories);
+        Assert.assertEquals(caloriesMessage, actualCalories, expectedCalories);
+
+        String gramsMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, cakeClass.getName(), "getGrams", actualGrams, expectedGrams);
+        Assert.assertEquals(gramsMessage, actualGrams, expectedGrams);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.util.Arrays;
+
+public class T06_TestCoffeeInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Lavazza";
+        double expectedCaffeine = 1.2;
+
+        Object\[\] caffeineArgs = new Object\[\]\{expectedName, expectedCaffeine\};
+        Class\<?\> caffeineClass = getType("Coffee");
+        Object caffeineObject = createObjectInstance(caffeineClass, caffeineArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(caffeineObject, caffeineClass, "getName", null);
+        Object actualPrice = getMethodValue(caffeineObject, caffeineClass, "getPrice", null);
+        Object actualCaffeine = getMethodValue(caffeineObject, caffeineClass, "getCaffeine", null);
+        Object actualMilliliters = getMethodValue(caffeineObject, caffeineClass, "getMilliliters", null);
+
+        // Assert
+        BigDecimal expectedPrice = new BigDecimal(3.5);
+        double expectedMilliliters = 50.0;
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, caffeineClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String priceMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, caffeineClass.getName(), "getPrice", actualPrice, expectedPrice);
+        Assert.assertEquals(priceMessage, actualPrice, expectedPrice);
+
+        String caffeineMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, caffeineClass.getName(), "getCaffeine", actualCaffeine, expectedCaffeine);
+        Assert.assertEquals(caffeineMessage, actualCaffeine, expectedCaffeine);
+
+        String millilitersMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, caffeineClass.getName(), "getMilliliters", actualMilliliters, expectedMilliliters);
+        Assert.assertEquals(millilitersMessage, actualMilliliters, expectedMilliliters);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 
 [slide]
