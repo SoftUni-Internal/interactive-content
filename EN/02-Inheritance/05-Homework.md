@@ -872,6 +872,424 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Players and Monsters
+[code-task title="Problem: Players and Monsters" taskId="172ea159-e00f-4fc5-9694-1f80211464b8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Your task is to create the following game hierarchy: 
+
+[image assetsSrc="inheritance-example(20).png" /]
+
+Create a class Hero. It should contain the following members:
+- A public constructor, which accepts:
+    - **username – String**
+    - **level – int**
+- The following fields:
+    - **username - String**
+    - **level – int**
+- Getters for username and level
+- `toString()` method
+
+## Hint: Override `toString()` of the base class in the following way:
+```java
+@Override
+public String toString() {
+    return String.format("Type: %s Username: %s Level: %s",
+            this.getClass().getName(),
+            this.getUsername(),
+            this.getLevel());
+```
+
+## Note
+You need a public class **Main**. Create a package **hero**.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T00_TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' type doesn't exist!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "BladeKnight",
+                "DarkKnight",
+                "DarkWizard",
+                "Elf",
+                "Hero",
+                "Knight",
+                "MuseElf",
+                "SoulMaster",
+                "Wizard",
+        \};
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
+            Assert.assertNotNull(message, getType(classType));
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01_TestIsAssignableFromHero \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Elf",
+                "Wizard",
+                "Knight",
+        \};
+
+        Class expectedParentClass = getType("Hero");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T02_TestIsAssignableFromElf \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "MuseElf",
+        \};
+
+        Class expectedParentClass = getType("Elf");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T03_TestIsAssignableFromWizard \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "DarkWizard",
+        \};
+
+        Class expectedParentClass = getType("Wizard");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T04_TestIsAssignableFromDarkWizard \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "SoulMaster",
+        \};
+
+        Class expectedParentClass = getType("DarkWizard");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T05_TestIsAssignableFromKnight \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "DarkKnight",
+        \};
+
+        Class expectedParentClass = getType("Knight");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T06_TestIsAssignableFromDarkKnight \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "BladeKnight",
+        \};
+
+        Class expectedParentClass = getType("DarkKnight");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T07_TestToStringMethodInstances \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        Object\[\] bladeKnightArgs = new Object\[\]\{"New Hero", 25\};
+        Class\<?\> bladeKnightClass = getType("BladeKnight");
+        Object bladeKnightObject = createObjectInstance(bladeKnightClass, bladeKnightArgs);
+
+        // Act
+        // Invoke methods
+        Object actualBladeKnightToString = getMethodValue(bladeKnightObject, bladeKnightClass, "toString", null);
+
+        // Assert
+        String expectedBladeKnightToString = "Type: hero.BladeKnight Username: New Hero Level: 25";
+        String bladeKnightMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, bladeKnightClass.getName(), "toString", actualBladeKnightToString, expectedBladeKnightToString);
+        Assert.assertEquals(bladeKnightMessage, actualBladeKnightToString, expectedBladeKnightToString);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 
 [slide]
