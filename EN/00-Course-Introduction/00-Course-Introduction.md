@@ -1,0 +1,5 @@
+[slide]
+
+# Welcome
+
+[/slide]
