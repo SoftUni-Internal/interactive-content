@@ -6,11 +6,13 @@
 
 Welcome to the Java OOP Advanced module!
 
+**Here, we will take a look at what knowledge we will acquire after completing this module!**
+
 As u all know, Java is **strong-typed OOP language**.
 
 It implements all the **object-oriented concepts**.
 
-Any programs that we write in Java must use the concept of class. Our `Main` method itself is included in a class main.
+Any programs that we write in Java must use the concept of class. Our `Main` method itself is included in a main class.
 
 Classes are the basic building blocks of OOP paradigm.
 
