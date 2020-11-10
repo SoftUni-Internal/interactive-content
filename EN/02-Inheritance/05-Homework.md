@@ -1,4 +1,3 @@
-[slide]
 
 # Homework
 
