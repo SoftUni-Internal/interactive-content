@@ -5,8 +5,10 @@ It's Friday night and you're wondering which movie to watch. You decide to write
 
 Keep in mind the following:
 - For each lowercase letter in the title, you must subtract from the sum twice the length of the movie title.
+
 - For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
-You can have a maximum of 7 movie titles.
+
+- You can have a maximum of 7 movie titles.
 
 ## Input
 You receive multiple lines from the console until the command `STOP` or until the limit of 7 movies is reached:
@@ -38,8 +40,8 @@ STOP
 The best movie for you is Breaking bad with 878 ASCII sum.
 
 ## Comments
-First we get Matrix, the first letter is M with a value of 77, but it is a capital letter and we subtract from it the length of the title  `77 - 6  = 71`, the second letter is a with a value of 97 and we subtract twice the movie title `97 - 12 = 85`. Similarly, we proceed with each subsequent letter and receive an amount of 563.
-Upon receiving the STOP command, we print the title with the highest value, which is Breaking bad with sum of 878.
+First we get **Matrix**, the first letter is M with a value of 77, but it is a capital letter and we subtract from it the length of the title  `77 - 6  = 71`, the second letter is a with a value of 97 and we subtract twice the movie title `97 - 12 = 85`. Similarly, we proceed with each subsequent letter and receive an amount of 563.
+Upon receiving the `STOP` command, we print the title with the highest value, which is **Breaking** bad with sum of 878.
 [/task-description]
 [code-io /]
 [tests]
