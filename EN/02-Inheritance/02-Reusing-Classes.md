@@ -125,11 +125,77 @@ people.add(student);
 - We can **extend a class** that we **can't otherwise change**
 
 [image assetsSrc="inheritance-example(14).png" /]
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Random Array List
+[code-task title="Problem: Random Array List" taskId="a002eea4-0c9f-4728-bb88-a7e24ab26a52" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+
+Create a **RandomArrayList** class that has all the functionality of an **ArrayList**.
+
+Add additional function that **returns** and **removes** a random element from the list.
+
+- Public method: **getRandomElement(): Object**
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestRandomArrayList \{
+    private static final String RANDOM_ARRAY_LIST_CLASS_NAME = "RandomArrayList";
+    private static final String ARRAY_LIST_CLASS_NAME = "ArrayList";
+    private static final String GET_RND_ELEMENT_METHOD_NAME = "getRandomElement";
+
+    @Test
+    public void testRandomArrayList() \{
+
+        Assert.assertTrue("Class 'RandomArrayList' not found", Classes.allClasses.containsKey(RANDOM_ARRAY_LIST_CLASS_NAME));
+        Class ral = Classes.allClasses.get(RANDOM_ARRAY_LIST_CLASS_NAME);
+        Class ralBase = ral.getSuperclass();
+        Assert.assertTrue("Class 'RandomArrayList' should extend 'ArrayList'", ralBase.getSimpleName().equals(ARRAY_LIST_CLASS_NAME));
+
+        Method\[\] methods = ral.getDeclaredMethods();
+        Assert.assertTrue("Method 'getRandomElement()' not present", isMethodPresent(methods, GET_RND_ELEMENT_METHOD_NAME));
+    \}
+
+    private boolean isMethodPresent(Method\[\] methods, String name) \{
+        Optional\<Method\> method =  Stream.of(methods)
+                .filter(m -\> m.getName().equals(name))
+                .findFirst();
+
+        return method.isPresent();
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
