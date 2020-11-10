@@ -1290,6 +1290,586 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Need for Speed
+[code-task title="Problem: Need for Speed" taskId="277be5e7-a78b-4f6b-ba50-4de8055eb398" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create the following **hierarchy** with the following **classes**: 
+
+[image assetsSrc="inheritance-example(21).png" /]
+
+Create a base class Vehicle. It should contain the following members:
+- **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
+- **fuelConsumption –double**
+- **fuel – double**
+- **horsePower – int**
+- **Getters and Setters for the fields**
+- A public constructor which accepts (**fuel, horsePower**) and set the **default fuel consumption** on the  field **fuelConsumption**
+- **void drive(double kilometers)**
+    - The **drive** method should have a functionality to reduce the **fuel** based on the travelled kilometers and fuel consumption. 
+    Keep in mind that you can drive the vehicle only if you have enough fuel to finish the driving.
+
+The default fuel consumption for **Vehicle** is **1.25**. Some of the classes have different default fuel consumption:
+- **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
+- **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
+- **Car – DEFAULT_FUEL_CONSUMPTION = 3**
+Zip your package and upload it in Judge.
+
+## Hint	
+In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
+
+## Note
+You need a public class **Main**. 
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T00_TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' type doesn't exist!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Vehicle",
+                "Motorcycle",
+                "Car",
+                "RaceMotorcycle",
+                "CrossMotorcycle",
+                "FamilyCar",
+                "SportCar",
+
+        \};
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
+            Assert.assertNotNull(message, getType(classType));
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01_TestIsAssignableFromVehicle \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Motorcycle",
+                "Car",
+        \};
+
+        Class expectedParentClass = getType("Vehicle");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T02_TestIsAssignableFromMotorcycle \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "RaceMotorcycle",
+                "CrossMotorcycle",
+        \};
+
+        Class expectedParentClass = getType("Motorcycle");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T03_TestIsAssignableFromCar \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "FamilyCar",
+                "SportCar",
+        \};
+
+        Class expectedParentClass = getType("Car");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T04_TestSportCarInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
+        Class\<?\> vehicleClass = getType("SportCar");
+        Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
+
+        // Act
+        // Invoke methods
+        getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
+        Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
+        Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
+        Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
+
+        // Assert
+        double expectedFuel = 0;
+        double expectedFuelConsumption = 10;
+        int expectedHorsePower = 200;
+
+        String fuelMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuel", actualFuel, expectedFuel);
+        Assert.assertEquals(fuelMessage, actualFuel, expectedFuel);
+
+        String fuelConsumptionMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuelConsumption", actualFuelConsumption, expectedFuelConsumption);
+        Assert.assertEquals(fuelConsumptionMessage, actualFuelConsumption, expectedFuelConsumption);
+
+        String horsePowerMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getHorsePower", actualHorsePower, expectedHorsePower);
+        Assert.assertEquals(horsePowerMessage, actualHorsePower, expectedHorsePower);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T05_TestRaceMotorcycleInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        Object\[\] vehicleArgs = new Object\[\]\{100.0, 200\};
+        Class\<?\> vehicleClass = getType("RaceMotorcycle");
+        Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
+
+        // Act
+        // Invoke methods
+        getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{10\}, double.class);
+        Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
+        Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
+        Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
+
+        // Assert
+        double expectedFuel = 20;
+        double expectedFuelConsumption = 8;
+        int expectedHorsePower = 200;
+
+        String fuelMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuel", actualFuel, expectedFuel);
+        Assert.assertEquals(fuelMessage, actualFuel, expectedFuel);
+
+        String fuelConsumptionMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuelConsumption", actualFuelConsumption, expectedFuelConsumption);
+        Assert.assertEquals(fuelConsumptionMessage, actualFuelConsumption, expectedFuelConsumption);
+
+        String horsePowerMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getHorsePower", actualHorsePower, expectedHorsePower);
+        Assert.assertEquals(horsePowerMessage, actualHorsePower, expectedHorsePower);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T06_TestFamilyCarInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
+        Class\<?\> vehicleClass = getType("FamilyCar");
+        Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
+
+        // Act
+        // Invoke methods
+        getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
+        Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
+        Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
+        Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
+
+        // Assert
+        double expectedFuel = 7;
+        double expectedFuelConsumption = 3;
+        int expectedHorsePower = 200;
+
+        String fuelMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuel", actualFuel, expectedFuel);
+        Assert.assertEquals(fuelMessage, actualFuel, expectedFuel);
+
+        String fuelConsumptionMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getFuelConsumption", actualFuelConsumption, expectedFuelConsumption);
+        Assert.assertEquals(fuelConsumptionMessage, actualFuelConsumption, expectedFuelConsumption);
+
+        String horsePowerMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, vehicleClass.getName(), "getHorsePower", actualHorsePower, expectedHorsePower);
+        Assert.assertEquals(horsePowerMessage, actualHorsePower, expectedHorsePower);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 
 [slide]
