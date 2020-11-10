@@ -65,10 +65,73 @@ Fake class or objects have **working** but **simplified** implementation.
 
 They are not the same as the production ones.
 
+A very good example of this is working with implementation of Repository.
+
+Our repository will use a collection to **store data**, but it won't engage any **database**.
+
+This will allow us to test easier, without starting up a database and performing time consuming requests.
+
+To illustrate this, lets see an example of that:
+
+``` java
+public class FakeRepository implements AccountRepository {
+       
+       Map<User, Account> accounts = new HashMap<>();
+       
+       public FakeRepository() {
+              this.accounts.put(new User("Peter@test.mail"), new UserAccount());
+              this.accounts.put(new User("George@test.mail"), new AdminAccount());
+       }
+       
+       String getPasswordHash(User user) {
+              return accounts.get(user).getPasswordHash();
+       }
+}
+```
+
+On the other hand **Mocking objects** simulate behavior of real objects.
+
+An example could be the function that calls e-mail sending service.
+
+It is pointless and ineffective to send e-mail everytime we run a test.
+
+The easiest think we can do is to verify that our **sending** service was called.
+
+Similar case is presented in the following example:
+
+``` java
+@Test
+public void testAlarmClockShouldRingInTheMorning() {
+  Time time = new Time();
+  AlarmClock clock = new AlarmClock(time);
+  if (time.isMorning()) // The test will pass only in the morning.
+  {
+    Assert.assertTrue(clock.isRinging());
+  }
+}
+```
+
+**Mockito** is a framework for mocking objects. [Mockito web site](https://site.mockito.org/)
+
+We can obtain our **Mockito** dependency from here: 
+
+Copy this in to pom.xml file:
+
+```
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>3.0.0</version>
+    <scope>test</scope>
+</dependency>
+```
 
 
+[/slide]
 
+[slide hideTitle]
 
+# Problem: Mocking
 
 
 [/slide]
