@@ -680,7 +680,197 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Zoo
+[code-task title="Problem: Zoo" taskId="5fec48b3-4642-41b4-8b75-da5b028dd713" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a package zoo. It needs to contain the following classes: 
+
+[image assetsSrc="inheritance-example(19).png" /]
+
+Follow the diagram and create all of the classes. 
+
+**Each** of them, except the **Animal** class, should **inherit** from **another class**. 
+
+The Animal class should have field **name – String** and **Getter** for **name**.
+
+Every class should have:
+- A public constructor, which accepts one parameter: **name**
+
+Zip your package and upload it in Judge.
+
+## Note: 
+You need a public class Main.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T00_TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' type doesn't exist!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Animal",
+                "Reptile",
+                "Mammal",
+                "Lizard",
+                "Snake",
+                "Gorilla",
+                "Bear",
+        \};
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
+            Assert.assertNotNull(message, getType(classType));
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01_TestIsAssignableFromAnimal \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Reptile",
+                "Mammal",
+        \};
+
+        Class expectedParentClass = getType("Animal");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T02_TestIsAssignableFromReptile \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Lizard",
+                "Snake",
+        \};
+
+        Class expectedParentClass = getType("Reptile");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T03_TestIsAssignableFromMammal \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Gorilla",
+                "Bear",
+        \};
+
+        Class expectedParentClass = getType("Mammal");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 
 
 
