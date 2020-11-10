@@ -53,7 +53,7 @@ One particularly important subject of this module is **Reflection**.
 
 Java Reflection allows us to inspect classes, interfaces, methods, and fields at **runtime**.
 
-It is a very powerful tool that can be vastly useful.
+It is a powerful tool that can be very useful.
 
 Is it **safe** to use Reflection? **When and how** we use Reflection? This is a small part of the things we will learn in this module.
 
