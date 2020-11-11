@@ -106,7 +106,7 @@ You should start crafting the given present, by assigning dwarfs which are most 
 
 - After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
 
-**"Present \{presentName\} is \{done/not done\}. \{countBrokenInstruments\} instrument/s have been broken while working on it!"**
+"Present \{presentName\} is \{done/not done\}. \{countBrokenInstruments\} instrument/s have been broken while working on it!"
 
 **Note**: The **name** of the **present** you receive will always be a **valid** one.
 
@@ -116,23 +116,23 @@ You should start crafting the given present, by assigning dwarfs which are most 
 
 Returns information about **crafted presents** and **dwarfs**:
 
-"**\{countCraftedPresents\} presents are done!**"
+"\{countCraftedPresents\} presents are done!"
 
-**"Dwarfs info:"**
+"Dwarfs info:"
 
-**"Name: \{dwarfName1\}"**
+"Name: \{dwarfName1\}"
 
-**"Energy: \{dwarfEnergy1\}"**
+"Energy: \{dwarfEnergy1\}"
 
-**"Instruments \{countInstruments\} not broken left"**
+"Instruments \{countInstruments\} not broken left"
 
-**…**
+…
 
-**"Name: \{dwarfNameN\}"**
+"Name: \{dwarfNameN\}"
 
-**"Energy: \{dwarfEnergyN\}"**
+"Energy: \{dwarfEnergyN\}"
 
-**"Instruments \{countInstruments\} not broken left"**
+"Instruments \{countInstruments\} not broken left"
 
 # Input / Output
 
