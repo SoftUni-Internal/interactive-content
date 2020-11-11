@@ -47,7 +47,7 @@ If the dwarf is invalid, throw an **IllegalArgumentException** with message:
 
 The method should **return** the following message:
 
-- "**Successfully added {dwarfType} named {dwarfName}!**"
+- "**Successfully added \{dwarfType\} named \{dwarfName\}!**"
 
 ### AddInstrumentToDwarf Command
 
@@ -105,7 +105,8 @@ You should start crafting the given present, by assigning dwarfs which are most 
 **"There is no dwarf ready to start crafting!"**
 
 - After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
-**"Present {presentName} is {done/not done}. {countBrokenInstruments} instrument/s have been broken while working on it!"**
+
+**"Present \{presentName\} is \{done/not done\}. \{countBrokenInstruments\} instrument/s have been broken while working on it!"**
 
 **Note**: The **name** of the **present** you receive will always be a **valid** one.
 
@@ -119,19 +120,19 @@ Returns information about **crafted presents** and **dwarfs**:
 
 **"Dwarfs info:"**
 
-**"Name: {dwarfName1}"**
+**"Name: \{dwarfName1\}"**
 
-**"Energy: {dwarfEnergy1}"**
+**"Energy: \{dwarfEnergy1\}"**
 
-**"Instruments {countInstruments} not broken left"**
+**"Instruments \{countInstruments\} not broken left"**
 
 **…**
 
-**"Name: {dwarfNameN}"**
+**"Name: \{dwarfNameN\}"**
 
-**"Energy: {dwarfEnergyN}"**
+**"Energy: \{dwarfEnergyN\}"**
 
-**"Instruments {countInstruments} not broken left"**
+**"Instruments \{countInstruments\} not broken left"**
 
 # Input / Output
 
@@ -143,11 +144,11 @@ Below, you can see the **format** in which **each command** will be given in the
 
 - AddDwarf \{dwarfType\} {dwarfName}
 
-- AddPresent {\presentName}\ {energyRequired}
+- AddPresent \{presentName\} {energyRequired}
 
-- AddInstrumentToDwarf \{dwarfName}\
+- AddInstrumentToDwarf \{dwarfName\}
 
-- CraftPresent {\presentName}\
+- CraftPresent \{presentName\}
 
 - Report
 
