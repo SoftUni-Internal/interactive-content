@@ -23,6 +23,7 @@ Model a class Box that can be instantiated by the same three parameters.
 Expose to the outside world only methods for its surface area, lateral surface area and its volume.
 [Formulas](http://www.mathwords.com/r/rectangular_parallelepiped.htm).
 
+## Input
 On the first three lines you will get the length, width and height. 
 
 On the next three lines print the surface area, lateral surface area and the volume of the box.
@@ -1849,8 +1850,10 @@ If the person can afford a product add it to his bag.
 If a person doesn’t have enough money, print an appropriate message:
 "{Person name} can't afford {Product name}"
 
+## Input
 On the first two lines you are given all people and all products. 
 
+## Output
 After all purchases print every person in the order of appearance and all products that he has bought also in order of appearance. 
 
 If nothing is bought, print the name of the person followed by "Nothing bought".
@@ -1859,7 +1862,8 @@ Read commands till you find line with "END" command.
 
 In case of invalid input (negative money exception message: "Money cannot be negative") or empty name: (empty name exception message "Name cannot be empty") break the program with an appropriate message. 
 
-See the examples below:
+## Hint
+Judge does not work with `isBlank()` method. You can use `trim().isEmpty()`.
 
 ## Examples
 | **Input** | **Output** |
@@ -2821,8 +2825,1340 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Pizza Calories
+[code-task title="Problem: Pizza Calories" taskId="b9709643-27b0-4c57-800c-4504ad2c7ce8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+A Pizza is made of a dough and different toppings. 
+
+You should model a class **Pizza** which should have a **name**, **dough** and **toppings** as fields. 
+
+Every type of ingredient should have its own class.
+
+| **Input** | 
+| --- | 
+| -name: String |
+| -dought:  Dough | 
+| -toppings: List(Topping)  | 
+|  |
+| +Piza (String, int numberOfToppings)| 
+| -setToppings(int) : void | 
+| -setName(String) : void |
+| +setDough(Dough) : void |
+| +getName(): String |
+| +addTopping (Topping) : void |
+| +getOverallCalories () : double |
+
+Every ingredient has **different fields**: 
+
+The dough can be **white** or **wholegrain** and in addition it can be **crispy**, **chewy** or **homemade**. 
+
+The toppings can be of type **meat**, **veggies**, **cheese** or **sauce**. 
+
+Every ingredient should have a **weight** in grams and a method for calculating its calories according its type. 
+
+Calories per gram are calculated through modifiers. 
+
+Every ingredient has **2 calories per gram as a base** and a **modifier** that gives the exact calories.
+
+| **Dough** | **Topping** |
+| --- | --- |
+| -flourType: String | -toppingType: String |
+| -bakingTechnique: String | -weight: double |
+| -weight: double |  |
+|  |  |
+| +Dought (String, String, double) | +Topping (String, double) |
+| -setWeight(double): void | -setToppingType (String): void |
+| -setFlourType(String): void | -setWeight (double): void |
+| -setBakingTechnique(String): void | -setWeight (double): void |
+| +calculateCalories (): double |  |
+
+**Your job** is to model the classes in such a way that they are **properly encapsulated**. 
+
+Provide a public method for every pizza that **calculates its calories according to the ingredients it has**.
+
+| **Dough Modifiers** | **Topping Modifiers** |
+| --- | --- |
+| White – 1.5 | Meat – 1.2 |
+| Wholegrain – 1.0 | Veggies – 0.8 |
+| Crispy – 0.9 | Cheese – 1.1 |
+| Chewy – 1.1 | Sauce – 0.9 |
+| Homemade – 1.0 |  |
+
+For example, white dough has a modifier of 1.5, a chewy dough has a modifier of 1.1, which means that a white chewy dough weighting 100 grams will have (2 * 100) * 1.5 * 1.1 = 330.00 total calories.
+
+For example, meat has a modifier of 1.2, which means that a meat weighting 50 grams will have (2 * 50) * 1.2 = 120.00 total calories.
+
+## Data Validation
+**Data Validation must be in the order of the Input Data**.
+- If invalid flour type or an invalid baking technique is given an exception is thrown with the message "**Invalid type of dough.**".
+- If dough weight is outside of range (1..200) throw an exception with the message "**Dough weight should be in the range (1..200).**"
+- If topping is not one of the provided types throw an exception with the message "**Cannot place {name of invalid argument} on top of your pizza.**"
+- If topping weight is outside of range (1..50) throw an exception with the message "**{Topping type name} weight should be in the range (1..50).**".
+- If name of the pizza is empty, only whitespace or longer than 15 symbols throw an exception with the message "**Pizza name should be between 1 and 15 symbols.**".
+- If number of topping is outside of range (0..10) throw an exception with the message "**Number of toppings should be in range (0..10).**".
+
+## Input
+**The input for a pizza consists of several lines:**
+- On the first line is the **pizza name** and the **number of toppings it has** in format:
+    - Pizza **{pizzaName} {numberOfToppings}**
+- On the second line you will get input for the **dough** in format:
+    - Dough **{flourType} {bakingTechnique} {weightInGrams}**
+- On the next lines, you will receive every topping the pizza has, until an **"END"** command is given:
+    - Topping **{toppingType} {weightInGrams}**
+
+## Output
+If creation of the pizza was **successful** print on a single line the name of the pizza and the **total calories** it has, rounded to the second digit after the decimal point.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| Pizza Meatless 2 | Meatless - 370.00 |
+| Dough Wholegrain Crispy 100 |  |
+| Topping Veggies 50 |  |
+| Topping Cheese 50 |  |
+| END |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Pizza Bulgarian 20 | Number of toppings should be in range (0..10). |
+| Dough Tip500 Balgarsko 100 |  |
+| Topping Sirene 50 |  |
+| Topping Cheese 50 |  |
+| Topping Krenvirsh 20 |  |
+| Topping Meat 10 |  |
+| END |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Pizza Bulgarian 2 | Invalid type of dough. |
+| Dough Tip500 Balgarsko 100 |  |
+| Topping Sirene 50 |  |
+| Topping Cheese 50 |  |
+| Topping Krenvirsh 20 |  |
+| Topping Meat 10 |  |
+| END |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Pizza Bulgarian 2 | Cannot place Sirene on top of your pizza. |
+| Dough White Chewy 100 |  |
+| Topping Sirene 50 |  |
+| Topping Cheese 50 |  |
+| Topping Krenvirsh 20 |  |
+| Topping Meat 10 |  |
+| END |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Pizza",
+            "Topping",
+            "Dough"
+    \};
+
+    @Test
+    public void test() \{
+        assertExistingClasses(classNames);
+    \}
+
+    private void assertExistingClasses(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertClassExists(className);
+        \}
+    \}
+
+    private void assertClassExists(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T02TestFieldsExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Pizza",
+            "Topping",
+            "Dough"
+    \};
+    private static final Map\<String, String\[\]\> allNeededFields =
+            new HashMap\<String, String\[\]\>() \{\{
+                put("Pizza", new String\[\]\{"name", "dough", "toppings"\});
+                put("Topping", new String\[\]\{"weight"\});
+                put("Dough", new String\[\]\{"weight"\});
+            \}\};
+
+    @Test
+    public void test() \{
+        assertHaveAllFields(classNames);
+    \}
+
+    private void assertHaveAllFields(String\[\] classNames) \{
+        for (String className : classNames) \{
+            haveAllFields(className);
+        \}
+    \}
+
+    private void haveAllFields(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+
+        Class cl = Classes.allClasses.get(className);
+        Field\[\] fields = cl.getDeclaredFields();
+
+        for (String field : allNeededFields.get(className)) \{
+            Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field),
+                    Arrays.stream(fields)
+                            .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.util.HashMap;
+
+public class T03TestConstructors \{
+
+    private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
+
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Pizza",
+            "Topping",
+            "Dough"
+    \};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put("Pizza", new Class\[\]\{String.class, int.class\});
+        put("Topping", new Class\[\]\{String.class, double.class\});
+        put("Dough", new Class\[\]\{String.class, String.class, double.class\});
+    \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        assertConstructors(classNames);
+    \}
+
+    private void assertConstructors(String\[\] classNames) throws NoSuchMethodException \{
+        for (String className : classNames) \{
+            assertConstructorExists(className);
+        \}
+    \}
+
+    private void assertConstructorExists(String className) throws NoSuchMethodException \{
+        Class cl = Classes.allClasses.get(className);
+
+        Constructor constructor = null;
+
+        try \{
+            constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
+        \} catch (Exception e) \{
+            constructor = null;
+        \}
+        Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, className), constructor);
+
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.stream.Stream;
+
+public class T04TestForNonPrivateFields \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Pizza",
+            "Topping",
+            "Dough"
+    \};
+
+    @Test
+    public void test() \{
+        assertPrivateFields(classNames);
+    \}
+
+    private void assertPrivateFields(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertHasNoPrivateFields(className);
+        \}
+    \}
+
+    private void assertHasNoPrivateFields(String className) \{
+        Class cl = getClass(className);
+        Field\[\] fields = cl.getDeclaredFields();
+        long nonPrivateFieldsCount = Stream.of(fields)
+                .filter(x -\> !Modifier.isPrivate(x.getModifiers()))
+                .count();
+
+        Assert.assertEquals(String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className)
+                , 0, nonPrivateFieldsCount);
+
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+
+        return Classes.allClasses.get(className);
+    \}
+
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T05TestAllMethodsExists \{
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String CLASS_NAME = "Pizza";
+    private static final String CLASS_NAME_2 = "Dough";
+    private static final String CLASS_NAME_3 = "Topping";
+    private static final String SEARCHED_METHOD_1 = "setName";
+    private static final String SEARCHED_METHOD_2 = "setDough";
+    private static final String SEARCHED_METHOD_3 = "setToppings";
+    private static final String SEARCHED_METHOD_4 = "getOverallCalories";
+    private static final String SEARCHED_METHOD_5 = "setWeight";
+    private static final String SEARCHED_METHOD_6 = "setFlourType";
+    private static final String SEARCHED_METHOD_7 = "setBakingTechnique";
+    private static final String SEARCHED_METHOD_8 = "calculateCalories";
+    private static final String SEARCHED_METHOD_9 = "setToppingType";
+
+    private static final String\[\] classNames = new String\[\]\{
+            CLASS_NAME,
+            CLASS_NAME_2,
+            CLASS_NAME_3
+    \};
+
+
+    private static final Map\<String, String\[\]\> methodsInClass =
+            new HashMap\<String, String\[\]\>() \{\{
+                put(CLASS_NAME, new String\[\]\{
+                        SEARCHED_METHOD_1,
+                        SEARCHED_METHOD_2,
+                        SEARCHED_METHOD_3,
+                        SEARCHED_METHOD_4
+                \});
+                put(CLASS_NAME_2, new String\[\]\{
+                        SEARCHED_METHOD_5,
+                        SEARCHED_METHOD_6,
+                        SEARCHED_METHOD_7,
+                        SEARCHED_METHOD_8
+                \});
+                put(CLASS_NAME_3, new String\[\]\{
+                        SEARCHED_METHOD_5,
+                        SEARCHED_METHOD_8,
+                        SEARCHED_METHOD_9
+                \});
+            \}\};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(SEARCHED_METHOD_1, void.class);
+        put(SEARCHED_METHOD_2, void.class);
+        put(SEARCHED_METHOD_3, void.class);
+        put(SEARCHED_METHOD_4, double.class);
+        put(SEARCHED_METHOD_5, void.class);
+        put(SEARCHED_METHOD_6, void.class);
+        put(SEARCHED_METHOD_7, void.class);
+        put(SEARCHED_METHOD_8, double.class);
+        put(SEARCHED_METHOD_9, void.class);
+
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(SEARCHED_METHOD_1, new Class\[\]\{String.class\});
+        put(SEARCHED_METHOD_2, new Class\[\]\{Classes.allClasses.get(CLASS_NAME_2)\});
+        put(SEARCHED_METHOD_3, new Class\[\]\{int.class\});
+        put(SEARCHED_METHOD_4, new Class\[\]\{\});
+        put(SEARCHED_METHOD_5, new Class\[\]\{double.class\});
+        put(SEARCHED_METHOD_6, new Class\[\]\{String.class\});
+        put(SEARCHED_METHOD_7, new Class\[\]\{String.class\});
+        put(SEARCHED_METHOD_8, new Class\[\]\{\});
+        put(SEARCHED_METHOD_9, new Class\[\]\{String.class\});
+
+    \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        assertExistingMethods(classNames);
+    \}
+
+    private void assertExistingMethods(String\[\] classNames) throws NoSuchMethodException \{
+        for (String className : classNames) \{
+
+            Class cl = getClass(className);
+            for (String methodName : methodsInClass.get(className)) \{
+                Method method =
+                        methodParameters.get(methodName).length == 0
+                                ? cl.getDeclaredMethod(methodName)
+                                : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+                Class\<?\> returnType = method.getReturnType();
+                Assert.assertTrue(
+                        String.format(METHOD_RETURN_TYPE_ERROR,
+                                methodName,
+                                className,
+                                methodReturnTypes.get(methodName)),
+                        returnType.equals(methodReturnTypes.get(methodName)));
+            \}
+
+        \}
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T06TestSetWeight \{
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT_SET = "Wrong result";
+    private static final String DOUGH_FLOUR_TYPE = "White";
+    private static final String TOPPING_TYPE = "Meat";
+    private static final String DOUGH_BAKING_TECHNIQUE = "Crispy";
+    private static final double NORMAL_VALUE_OF_WEIGHT = 10D;
+    private static final double NEGATIVE_WEIGHT = -10D;
+    private static final double WEIGHT_VALUE_2 = 51D;
+    private static final String NAME_OF_TESTED_FIELD = "weight";
+    private static final String TEST_METHOD_NAME = "setWeight";
+    private static final String CLASS_NAME = "Dough";
+    private static final String CLASS_NAME_2 = "Topping";
+    private static final String RIGHT_ERROR_MESSAGE_DOUGH = "Dough weight should be in the range \[1..200\].";
+    private static final String RIGHT_ERROR_MESSAGE_TOPPING = "%s weight should be in the range \[1..50\].";
+
+
+    private static final Map\<String, String\[\]\> classesAndMethods =
+            new HashMap\<String, String\[\]\>() \{\{
+                put(CLASS_NAME, new String\[\]\{TEST_METHOD_NAME\});
+                put(CLASS_NAME_2, new String\[\]\{TEST_METHOD_NAME\});
+            \}\};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{double.class\});
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters =
+            new HashMap\<String, Class\[\]\>() \{\{
+                put(CLASS_NAME, new Class\[\]\{String.class, String.class, double.class\});
+                put(CLASS_NAME_2, new Class\[\]\{String.class, double.class\});
+            \}\};
+
+    private static final HashMap\<String, Object\[\]\> parametersForNewInstance =
+            new HashMap\<String, Object\[\]\>() \{\{
+                put(CLASS_NAME, new Object\[\]\{DOUGH_FLOUR_TYPE, DOUGH_BAKING_TECHNIQUE, NORMAL_VALUE_OF_WEIGHT\});
+                put(CLASS_NAME_2, new Object\[\]\{TOPPING_TYPE, NORMAL_VALUE_OF_WEIGHT\});
+            \}\};
+
+    private static final HashMap\<String, String\> testedFieldInClass =
+            new HashMap\<String, String\>() \{\{
+                put(CLASS_NAME, NAME_OF_TESTED_FIELD);
+                put(CLASS_NAME_2, NAME_OF_TESTED_FIELD);
+            \}\};
+
+    private static final HashMap\<String, Double\> parametersWithNewValues =
+            new HashMap\<String, Double\>() \{\{
+                put(CLASS_NAME, NEGATIVE_WEIGHT);
+                put(CLASS_NAME_2, WEIGHT_VALUE_2);
+            \}\};
+
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        for (String className : classesAndMethods.keySet()) \{
+            assertExistingMethodsAndWorksCorrect(
+                    classesAndMethods.get(className), className
+            );
+        \}
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames, String className) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(className);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT_SET,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return correctSet(method, cl)
+                && throwCorrectException(method, cl);
+    \}
+
+    private boolean throwCorrectException(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        String className = cl.getSimpleName();
+        Constructor constructor = cl.getDeclaredConstructor(
+                constructorParameters.get(className));
+        constructor.setAccessible(true);
+        Object currentObject = constructor.newInstance(
+                parametersForNewInstance.get(className));
+
+        method.setAccessible(true);
+        boolean rightErrorMessage = false;
+        try \{
+            method.invoke(currentObject, parametersWithNewValues.get(className));
+        \} catch (InvocationTargetException ite) \{
+            String searchedError = className.endsWith(CLASS_NAME)
+                    ? RIGHT_ERROR_MESSAGE_DOUGH
+                    : String.format(RIGHT_ERROR_MESSAGE_TOPPING, TOPPING_TYPE);
+            if (searchedError.equals(String.valueOf(ite.getTargetException().getMessage()))) \{
+                rightErrorMessage = true;
+            \}
+        \}
+
+        return rightErrorMessage;
+    \}
+
+    private boolean correctSet(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        String className = cl.getSimpleName();
+        Constructor constructor = cl.getDeclaredConstructor(
+                constructorParameters.get(className));
+        constructor.setAccessible(true);
+        Object currentObject = constructor.newInstance(
+                parametersForNewInstance.get(className));
+
+        method.setAccessible(true);
+        method.invoke(currentObject, NORMAL_VALUE_OF_WEIGHT);
+
+        Field field = currentObject.getClass()
+                .getDeclaredField(NAME_OF_TESTED_FIELD);
+        field.setAccessible(true);
+
+        double result = (double) field.get(currentObject);
+
+        return NORMAL_VALUE_OF_WEIGHT == result;
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+public class T07TestDoughSetFlourType \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "setFlourType";
+    private static final String CLASS_NAME = "Dough";
+    private static final String NAME_OF_FIELD = "flourType";
+    private static final String DOUGH_FLOUR_TYPE = "White";
+    private static final String ILLEGAL_FLOUR_TYPE = "IllegalFlourType";
+    private static final String DOUGH_BAKING_TECHNIQUE = "Crispy";
+    private static final double NORMAL_VALUE_OF_WEIGHT = 10D;
+    private static final String RIGHT_ERROR_MESSAGE = "Invalid type of dough.";
+
+    private static final String\[\] allPossibleFlourTypes = new String\[\]\{
+            "White", "Wholegrain"
+    \};
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{String.class\});
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters =
+            new HashMap\<String, Class\[\]\>() \{\{
+                put(CLASS_NAME, new Class\[\]\{String.class, String.class, double.class\});
+            \}\};
+
+    private static final HashMap\<String, Object\[\]\> parametersForNewInstance =
+            new HashMap\<String, Object\[\]\>() \{\{
+                put(CLASS_NAME, new Object\[\]\{allPossibleFlourTypes\[0\], DOUGH_BAKING_TECHNIQUE, NORMAL_VALUE_OF_WEIGHT\});
+            \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createChickenAndFindMethod() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                constructorParameters.get(CLASS_NAME));
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                parametersForNewInstance.get(CLASS_NAME)
+        );
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return testWithCorrectParameters(method, cl)
+                && testWithIllegalArguments(method, cl);
+    \}
+
+    private boolean testWithIllegalArguments(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+        boolean rightErrorMessage = false;
+        try \{
+            method.invoke(this.currentObject, ILLEGAL_FLOUR_TYPE);
+        \} catch (InvocationTargetException ite) \{
+            if (RIGHT_ERROR_MESSAGE.equals(String.valueOf(ite.getTargetException().getMessage()))) \{
+                rightErrorMessage = true;
+            \}
+        \}
+
+        return rightErrorMessage;
+    \}
+
+    private boolean testWithCorrectParameters(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+
+        for (String possibleFlourType : allPossibleFlourTypes) \{
+            method.invoke(this.currentObject, possibleFlourType);
+        \}
+
+        Field field = this.currentObject.getClass()
+                .getDeclaredField(NAME_OF_FIELD);
+        field.setAccessible(true);
+
+        String result = (String) field.get(this.currentObject);
+
+        return allPossibleFlourTypes\[allPossibleFlourTypes.length - 1\].equals(result);
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+public class T08TestDoughSetBakingTechnique \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "setBakingTechnique";
+    private static final String CLASS_NAME = "Dough";
+    private static final String NAME_OF_FIELD = "bakingTechnique";
+    private static final String DOUGH_FLOUR_TYPE = "White";
+    private static final String ILLEGAL_ARGUMENT = "IllegalBakingType";
+    private static final String DOUGH_BAKING_TECHNIQUE = "Crispy";
+    private static final double NORMAL_VALUE_OF_WEIGHT = 10D;
+    private static final String RIGHT_ERROR_MESSAGE = "Invalid type of dough.";
+
+    private static final String\[\] allPossibleFlourTypes = new String\[\]\{
+            "Crispy",
+            "Chewy",
+            "Homemade"
+    \};
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{String.class\});
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters =
+            new HashMap\<String, Class\[\]\>() \{\{
+                put(CLASS_NAME, new Class\[\]\{String.class, String.class, double.class\});
+            \}\};
+
+    private static final HashMap\<String, Object\[\]\> parametersForNewInstance =
+            new HashMap\<String, Object\[\]\>() \{\{
+                put(CLASS_NAME, new Object\[\]\{DOUGH_FLOUR_TYPE, DOUGH_BAKING_TECHNIQUE, NORMAL_VALUE_OF_WEIGHT\});
+            \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createChickenAndFindMethod() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                constructorParameters.get(CLASS_NAME));
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                parametersForNewInstance.get(CLASS_NAME)
+        );
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return testWithCorrectParameters(method, cl)
+                && testWithIllegalArguments(method, cl);
+    \}
+
+    private boolean testWithIllegalArguments(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+        boolean rightErrorMessage = false;
+        try \{
+            method.invoke(this.currentObject, ILLEGAL_ARGUMENT);
+        \} catch (InvocationTargetException ite) \{
+            if (RIGHT_ERROR_MESSAGE.equals(String.valueOf(ite.getTargetException().getMessage()))) \{
+                rightErrorMessage = true;
+            \}
+        \}
+
+        return rightErrorMessage;
+    \}
+
+    private boolean testWithCorrectParameters(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+
+        for (String possibleFlourType : allPossibleFlourTypes) \{
+            method.invoke(this.currentObject, possibleFlourType);
+        \}
+
+        Field field = this.currentObject.getClass()
+                .getDeclaredField(NAME_OF_FIELD);
+        field.setAccessible(true);
+
+        String result = (String) field.get(this.currentObject);
+
+        return allPossibleFlourTypes\[allPossibleFlourTypes.length - 1\].equals(result);
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+public class T09TestPizzaSetName \{
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "setName";
+    private static final String NAME_OF_TESTED_FIELD = "name";
+    private static final String CLASS_NAME = "Pizza";
+    private static final String NAME = "PizzaName";
+    private static final String NEW_VALID_ARGUMENT = "NewPizzaName";
+    private static final String ILLEGAL_ARGUMENT = "  ";
+    private static final int NUMBER_OF_TOPPINGS = 5;
+    private static final String RIGHT_ERROR_MESSAGE = "Pizza name should be between 1 and 15 symbols.";
+
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{String.class\});
+    \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createChickenAndFindMethod() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                String.class, int.class);
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                NAME, NUMBER_OF_TOPPINGS);
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return correctWork(method, cl)
+                && throwCorrectException(method, cl);
+    \}
+
+    private boolean throwCorrectException(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+        try \{
+            method.invoke(this.currentObject, ILLEGAL_ARGUMENT);
+        \} catch (InvocationTargetException ite) \{
+            if (RIGHT_ERROR_MESSAGE.equals(String.valueOf(ite.getTargetException().getMessage()))) \{
+                return true;
+            \}
+        \}
+
+        return false;
+    \}
+
+    private boolean correctWork(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+        method.invoke(this.currentObject, NEW_VALID_ARGUMENT);
+
+        Field field = this.currentObject.getClass()
+                .getDeclaredField(NAME_OF_TESTED_FIELD);
+        field.setAccessible(true);
+        String result = (String) field.get(this.currentObject);
+
+        return NEW_VALID_ARGUMENT.equals(result);
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+public class T10TestSetToppings \{
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "setToppings";
+    private static final String NAME_OF_TESTED_FIELD = "toppings";
+    private static final String CLASS_NAME = "Pizza";
+    private static final String NAME = "PizzaName";
+    private static final int NEW_VALID_ARGUMENT = 5;
+    private static final int ILLEGAL_ARGUMENT = 11;
+    private static final String RIGHT_ERROR_MESSAGE = "Number of toppings should be in range \[0..10\].";
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{int.class\});
+    \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createChickenAndFindMethod() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                String.class, int.class);
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                NAME, NEW_VALID_ARGUMENT);
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return  throwCorrectException(method, cl);
+    \}
+
+    private boolean throwCorrectException(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+        try \{
+            method.invoke(this.currentObject, ILLEGAL_ARGUMENT);
+        \} catch (InvocationTargetException ite) \{
+            if (RIGHT_ERROR_MESSAGE.equals(String.valueOf(ite.getTargetException().getMessage()))) \{
+                return true;
+            \}
+        \}
+
+        return false;
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T11TestToppingCalculateCalories \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "calculateCalories";
+    private static final String CLASS_NAME = "Topping";
+    private static final double NORMAL_VALUE_OF_WEIGHT = 10D;
+
+    private static final Map\<String, Double\> toppingTypesAndModifiers =
+            new HashMap\<String, Double\>() \{\{
+                put("Meat", 1.2);
+                put("Veggies", 0.8);
+                put("Cheese", 1.1);
+                put("Sauce", 0.9);
+            \}\};
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, double.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{\});
+    \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return testWithCorrectParameters(method, cl);
+    \}
+
+    private boolean testWithCorrectParameters(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        for (String toppingType : toppingTypesAndModifiers.keySet()) \{
+            Constructor constructor = cl.getDeclaredConstructor(
+                    String.class, double.class);
+            constructor.setAccessible(true);
+            Object currentObject = constructor.newInstance(
+                    toppingType, NORMAL_VALUE_OF_WEIGHT);
+
+            method.setAccessible(true);
+            double currentResult = (double) method.invoke(currentObject);
+            double expectedCurrentResult = NORMAL_VALUE_OF_WEIGHT \* 2
+                    \* toppingTypesAndModifiers.get(toppingType);
+            if (expectedCurrentResult != currentResult) \{
+                return false;
+            \}
+        \}
+        return true;
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T12TestDoughCalculateCalories \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "calculateCalories";
+    private static final String CLASS_NAME = "Dough";
+    private static final String DOUGH_FLOUR_TYPE = "White";
+    private static final String DOUGH_BAKING_TECHNIQUE = "Crispy";
+    private static final double NORMAL_VALUE_OF_WEIGHT = 10D;
+
+    private static final Map\<String, Double\> flourTypesAndModifiers =
+            new HashMap\<String, Double\>() \{\{
+                put("White", 1.5);
+                put("Wholegrain", 1D);
+            \}\};
+    private static final Map\<String, Double\> bakingTypesAndModifiers =
+            new HashMap\<String, Double\>() \{\{
+                put("Crispy", 0.9);
+                put("Chewy", 1.1);
+                put("Homemade", 1D);
+            \}\};
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, double.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{\});
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters =
+            new HashMap\<String, Class\[\]\>() \{\{
+                put(CLASS_NAME, new Class\[\]\{String.class, String.class, double.class\});
+            \}\};
+
+    private static final HashMap\<String, Object\[\]\> parametersForNewInstance =
+            new HashMap\<String, Object\[\]\>() \{\{
+                put(CLASS_NAME, new Object\[\]\{DOUGH_FLOUR_TYPE, DOUGH_BAKING_TECHNIQUE, NORMAL_VALUE_OF_WEIGHT\});
+            \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            CLASS_NAME,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return testWithCorrectParameters(method, cl);
+    \}
+
+    private boolean testWithCorrectParameters(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        for (String flourType : flourTypesAndModifiers.keySet()) \{
+            for (String bakingType : bakingTypesAndModifiers.keySet()) \{
+                Constructor constructor = cl.getDeclaredConstructor(
+                        String.class, String.class, double.class);
+                constructor.setAccessible(true);
+                Object currentObject = constructor.newInstance(
+                        flourType, bakingType, NORMAL_VALUE_OF_WEIGHT);
+
+                method.setAccessible(true);
+                double currentResult = (double) method.invoke(currentObject);
+                double expectedCurrentResult = NORMAL_VALUE_OF_WEIGHT \* 2
+                        \* flourTypesAndModifiers.get(flourType)
+                        \* bakingTypesAndModifiers.get(bakingType);
+                if (expectedCurrentResult != currentResult) \{
+                    return false;
+                \}
+            \}
+        \}
+        return true;
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
