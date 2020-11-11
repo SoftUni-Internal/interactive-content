@@ -67,7 +67,7 @@ If the dwarf doesn't exist, throw an **IllegalArgumentException** with message:
 
 The method should **return** the following message:
 
-"**Successfully added instrument with power {instrumentPower} to dwarf {dwarfName}!**"
+"**Successfully added instrument with power \{instrumentPower\} to dwarf \{dwarfName\}!**"
 
 
 ### AddPresent Command
@@ -79,11 +79,11 @@ The method should **return** the following message:
 
 **Functionality:**
 
-Creates a **present** with the provided **name** and r**equired energy**.
+Creates a **present** with the provided **name** and **required energy**.
 
 The method should **return** the following message:
 
-- **"Successfully added Present: {presentName}!"**
+- **"Successfully added Present: \{presentName\}!"**
 
 ### CraftPresents Command
 
@@ -116,7 +116,7 @@ You should start crafting the given present, by assigning dwarfs which are most 
 
 Returns information about **crafted presents** and **dwarfs**:
 
-"**{countCraftedPresents} presents are done!**"
+"**\{countCraftedPresents\} presents are done!**"
 
 **"Dwarfs info:"**
 
