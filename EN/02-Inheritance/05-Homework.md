@@ -2444,6 +2444,753 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Animals
+[code-task title="Problem: Animals" taskId="ee3ccf32-0139-4f59-acca-07c9d5ddeaf8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a hierarchy(package) of **animals**. 
+
+Your program should have three different animals – **Dog**, **Frog** and **Cat**. 
+
+Deeper in the hierarchy you should have two additional classes – **Kitten** and **Tomcat**. 
+
+**Kittens are "Female" and Tomcats are "Male".**
+
+All types of animals should be able to produce some kind of sound - `String produceSound(). `
+
+For example, the dog should be able to bark.
+
+ Your task is to model the hierarchy and test its functionality. 
+
+ Create an animal of each kind and make them all produce sound and create getters for all fields.
+
+## Input
+You will be given some lines of input.
+
+Each two lines will represent an animal.
+
+On the first line will be the type of animal and on the second – the name, the age and the gender. 
+
+When the command "**Beast!**" is given, stop the input and print all the animals in the format shown below.
+
+## Output
+- Print the information for each animal on three lines. On the first line, print: "**{animalType}**"
+- On the second line print: "**{name}** **{age}** **{gender}**"
+- On the third line print the sounds it produces: "{`produceSound()`}"
+
+## Constraints
+- Each **Animal** should have a **name**, an **age** and a **gender**
+- **All** input values should **not be blank** (e.g. name, age and so on…)
+- If you receive an input for the **gender** of a **Tomcat** or a **Kitten**, ignore it but **create** the animal
+- If the input is invalid for one of the properties, throw an exception with message: "**Invalid input!**"
+- Each animal should have the functionality to `produceSound()`
+- Here is the type of sound each animal should produce:
+    - **Dog: "Woof!"**
+    - **Cat: "Meow meow"**
+    - **Frog: "Ribbit"**
+    - **Kittens: "Meow"**
+    - **Tomcat: "MEOW"**
+
+## Hint
+To find the name of the class you can use `this.getClass().getSimpleName()` in `toString()` method inside **Animal** class.
+
+## Note
+You need a public class **Main**.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| Cat | Cat  |
+| Tom 12 Male | Tom 12 Male |
+| Dog | Meow meow |
+| Rex 132 Male | Dog  |
+| Beast! | Rex 132 Male |
+|  | Woof! |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Frog | Frog  |
+| Kermit 12 Male | Kermit 12 Male |
+| Beast! | Ribbit |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Frog | Invalid input! |
+| Froakie -2 Male | Frog |
+| Frog | Froakie 2 Male |
+| Froakie 2 Male | Ribbit |
+| Beast! |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T00_TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' type doesn't exist!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Animal",
+                "Cat",
+                "Dog",
+                "Frog",
+                "Kitten",
+                "Tomcat",
+        \};
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
+            Assert.assertNotNull(message, getType(classType));
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01_TestIsAssignableFromAnimal \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Dog",
+                "Cat",
+                "Frog",
+        \};
+
+        Class expectedParentClass = getType("Animal");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T02_TestIsAssignableFromCat \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "'%s' should inherit from '%s'!";
+
+    @Test
+    public void validateTypesExist() \{
+        String\[\] classTypesToAssert = new String\[\]\{
+                "Kitten",
+                "Tomcat",
+        \};
+
+        Class expectedParentClass = getType("Cat");
+
+        for (String classType : classTypesToAssert) \{
+            String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType, expectedParentClass.getName());
+
+            Class childClass = getType(classType);
+            Class parentClass = childClass.getSuperclass();
+
+            Assert.assertEquals(message, expectedParentClass, parentClass);
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.util.Arrays;
+
+public class T03_TestDogInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Sharo";
+        int expectedAge = 12;
+        String expectedGender = "Male";
+
+        Object\[\] animalArgs = new Object\[\]\{expectedName, expectedAge, expectedGender\};
+        Class\<?\> animalClass = getType("Dog");
+        Object animalObject = createObjectInstance(animalClass, animalArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
+        Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
+        Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
+        Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
+
+        // Assert
+
+        String expectedSound = "Woof!";
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getAge", actualAge, expectedAge);
+        Assert.assertEquals(ageMessage, actualAge, expectedAge);
+
+        String genderMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getGender", actualGender, expectedGender);
+        Assert.assertEquals(genderMessage, actualGender, expectedGender);
+
+        String soundMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "produceSound", actualSound, expectedSound);
+        Assert.assertEquals(soundMessage, actualSound, expectedSound);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T04_TestFrogInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Gaag";
+        int expectedAge = 12;
+        String expectedGender = "Male";
+
+        Object\[\] animalArgs = new Object\[\]\{expectedName, expectedAge, expectedGender\};
+        Class\<?\> animalClass = getType("Frog");
+        Object animalObject = createObjectInstance(animalClass, animalArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
+        Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
+        Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
+        Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
+
+        // Assert
+
+        String expectedSound = "Ribbit";
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getAge", actualAge, expectedAge);
+        Assert.assertEquals(ageMessage, actualAge, expectedAge);
+
+        String genderMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getGender", actualGender, expectedGender);
+        Assert.assertEquals(genderMessage, actualGender, expectedGender);
+
+        String soundMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "produceSound", actualSound, expectedSound);
+        Assert.assertEquals(soundMessage, actualSound, expectedSound);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T05_TestKittenInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Gaag";
+        int expectedAge = 12;
+        String expectedGender = "Female";
+
+        Object\[\] animalArgs = new Object\[\]\{expectedName, expectedAge\};
+        Class\<?\> animalClass = getType("Kitten");
+        Object animalObject = createObjectInstance(animalClass, animalArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
+        Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
+        Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
+        Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
+
+        // Assert
+
+        String expectedSound = "Meow";
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getAge", actualAge, expectedAge);
+        Assert.assertEquals(ageMessage, actualAge, expectedAge);
+
+        String genderMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getGender", actualGender, expectedGender);
+        Assert.assertEquals(genderMessage, actualGender, expectedGender);
+
+        String soundMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "produceSound", actualSound, expectedSound);
+        Assert.assertEquals(soundMessage, actualSound, expectedSound);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+public class T06_TestTomcatInstance \{
+    private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
+
+    @Test
+    public void validateInstance() \{
+        // Arrange
+        String expectedName = "Tomcat";
+        int expectedAge = 12;
+        String expectedGender = "Male";
+
+        Object\[\] animalArgs = new Object\[\]\{expectedName, expectedAge\};
+        Class\<?\> animalClass = getType("Tomcat");
+        Object animalObject = createObjectInstance(animalClass, animalArgs);
+
+        // Act
+        // Invoke methods
+        Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
+        Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
+        Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
+        Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
+        Object actualToString = getMethodValue(animalObject, animalClass, "toString", null);
+
+        // Assert
+
+        String expectedSound = "MEOW";
+        String expectedToString = "Tomcat" + System.lineSeparator() +
+                "Tomcat 12 Male" + System.lineSeparator() +
+                "MEOW";
+
+        String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getName", actualName, expectedName);
+        Assert.assertEquals(nameMessage, actualName, expectedName);
+
+        String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getAge", actualAge, expectedAge);
+        Assert.assertEquals(ageMessage, actualAge, expectedAge);
+
+        String genderMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "getGender", actualGender, expectedGender);
+        Assert.assertEquals(genderMessage, actualGender, expectedGender);
+
+        String soundMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "produceSound", actualSound, expectedSound);
+        Assert.assertEquals(soundMessage, actualSound, expectedSound);
+
+        String toStringMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, animalClass.getName(), "toString", actualToString, expectedToString);
+        Assert.assertEquals(toStringMessage, actualToString, expectedToString);
+    \}
+
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+        Method method = getMethod(clazz, methodName, parameterTypes);
+
+        Object methodValue = null;
+        if (method != null) \{
+            try \{
+                methodValue = method.invoke(object, methodArgs);
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return methodValue;
+    \}
+
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+        Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+
+        Constructor\<?\> ctor = null;
+        try \{
+            ctor = clazz.getDeclaredConstructor(argumentTypes);
+        \} catch (NoSuchMethodException e) \{
+            mapIntegerToInt(argumentTypes);
+            mapDoubleToPrimitiveDouble(argumentTypes);
+
+            try \{
+                ctor = clazz.getDeclaredConstructor(argumentTypes);
+            \} catch (NoSuchMethodException ex) \{
+            \}
+        \}
+
+        Object obj = null;
+
+        if (ctor != null) \{
+            try \{
+                obj = ctor.newInstance(arguments);
+            \} catch (InstantiationException e) \{
+                e.printStackTrace();
+            \} catch (IllegalAccessException e) \{
+            \} catch (InvocationTargetException e) \{
+            \}
+        \}
+
+        return obj;
+    \}
+
+    private void mapIntegerToInt(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Integer.class.getName())) \{
+                types\[i\] = int.class;
+            \}
+        \}
+    \}
+
+    private void mapDoubleToPrimitiveDouble(Class\<?\>\[\] types) \{
+        for (int i = 0; i \< types.length; i++) \{
+            if (types\[i\].getName().equals(Double.class.getName())) \{
+                types\[i\] = double.class;
+            \}
+        \}
+    \}
+
+    private static Class getType(String name) \{
+        Class clazz = Classes.allClasses.get(name);
+
+        return clazz;
+    \}
+
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+        Method method = null;
+
+        try \{
+            method = clazz.getMethod(expectedName, parameterTypes);
+        \} catch (NoSuchMethodException e) \{
+        \}
+
+        return method;
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 
 [slide]
 # Homework Results
