@@ -141,7 +141,7 @@ You are provided with one interface, which will help you with the correct execut
 
 Below, you can see the **format** in which **each command** will be given in the input:
 
-**AddDwarf {dwarfType} {dwarfName}**
+**AddDwarf \{dwarfType} \{dwarfName}**
 
 **AddPresent {presentName} {energyRequired}**
 
