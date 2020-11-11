@@ -2934,31 +2934,31 @@ If creation of the pizza was **successful** print on a single line the name of t
 
 | **Input** | **Output** |
 | --- | --- |
-| Pizza Bulgarian 20 | Number of toppings should be in range (0..10). |
-| Dough Tip500 Balgarsko 100 |  |
-| Topping Sirene 50 |  |
+| Pizza European 20 | Number of toppings should be in range (0..10). |
+| Dough Type500 100 |  |
+| Topping Yellow Cheese 50 |  |
 | Topping Cheese 50 |  |
-| Topping Krenvirsh 20 |  |
+| Topping Chicken 20 |  |
 | Topping Meat 10 |  |
 | END |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| Pizza Bulgarian 2 | Invalid type of dough. |
-| Dough Tip500 Balgarsko 100 |  |
-| Topping Sirene 50 |  |
+| Pizza European 2 | Invalid type of dough. |
+| Dough Type500 100 |  |
+| Topping Yellow Cheese 50 |  |
 | Topping Cheese 50 |  |
-| Topping Krenvirsh 20 |  |
+| Topping Chicken 20 |  |
 | Topping Meat 10 |  |
 | END |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| Pizza Bulgarian 2 | Cannot place Sirene on top of your pizza. |
+| Pizza European 2 | Cannot place Yellow Cheese on top of your pizza. |
 | Dough White Chewy 100 |  |
-| Topping Sirene 50 |  |
+| Topping Yellow Cheese 50 |  |
 | Topping Cheese 50 |  |
-| Topping Krenvirsh 20 |  |
+| Topping Chicken 20 |  |
 | Topping Meat 10 |  |
 | END |  |
 
@@ -4161,8 +4161,275 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Football Team Generator
+[code-task title="Problem: Football Team Generator" taskId="1fb23f40-9f6d-4cde-8b9e-6a39eb4e221e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+**A football team has variable number of players, a name and a rating.**
+
+| **Team** |
+| --- |
+| -name: String |
+| -players: List(Player) |
+|  |
+| +Team (String) |
+| -setName(String) : void |
+| +getName(): String |
+| +addPlayer(Player) : void |
+| +removePlayer(String) : void |
+| +getRating() : double |
+
+A **player** has a **name** and **stats** which are the basis for his skill level. 
+
+The stats a player has are **endurance**, **sprint**, **dribble**, **passing** and **shooting**. 
+
+Each stat can be in the range (0..100). 
+
+The **overall skill** level of a player is calculated as the **average** of his stats. 
+
+Only the name of a player and his stats should be visible to all of the outside world. 
+
+Everything else should be hidden.
+
+| **Player** | 
+| --- |
+| -name: String |
+| -endurance:  int |
+| -sprint:  int |
+| -dribble: int   |
+| -passing: int |
+| -shooting: int  |
+|  |
+| +Player (String, int, int, int, int, int) |
+| -setName(String) : void |
+| +getName(): String |
+| -setEndurance (int) : void |
+| -setSprint (int) : void |
+| -setDribble (int) : void |
+| -setPassing (int) : void |
+| -setShooting (int) : void |
+| +overallSkillLevel() : double |
+
+A **team** should expose a **name**, a **rating** (calculated by the average skill level of all players in the team) and **methods** for **adding** and **removing** players.
+
+Your task is to model the team and the players following the proper principles of **Encapsulation**. 
+
+Expose only the fields that needs to be visible and validate data appropriately.
+
+## Input
+Your application will receive commands until the **"END"** command is given. 
+
+The command can be one of the following:
+- "**Team;{TeamName}**" – add a new team
+- "**Add;{TeamName};{PlayerName};{Endurance};{Sprint};{Dribble};{Passing};{Shooting}**" – add a new player to the team
+- "**Remove;{TeamName};{PlayerName}**" – remove the player from the team
+- "**Rating;{TeamName}**" – print the team rating, rounded to a closest integer
+
+## Data Validation
+- A **name** cannot be null, empty or white space. 
+
+If not, print "**A name should not be empty.**"
+- **Stats** should be in the range 0..100. If not, print "**{Stat name} should be between 0 and 100.**"
+- If you receive a command to **remove** a missing player, print 
+    "**Player {Player name} is not in {Team name} team.**"
+- If you receive a command to **add** a player to a missing team, print "**Team {team name} does not exist.**"
+- If you receive a command to **show** stats for a missing team, print "**Team {team name} does not exist.**"
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| Team;Arsenal | Arsenal – 81 |
+| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 |  |
+| Add;Arsenal;Aaron_Ramsey;95;82;82;89;68 |  |
+| Remove;Arsenal;Aaron_Ramsey |  |
+| Rating;Arsenal |  |
+| END |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Team;Arsenal | Endurance should be between 0 and 100. |
+| Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 | Player Aaron_Ramsey is not in Arsenal team. |
+| Add;Arsenal;Aaron_Ramsey;195;82;82;89;68 | Arsenal - 81 |
+| Remove;Arsenal;Aaron_Ramsey |  |
+| Rating;Arsenal |  |
+| END |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Team;Arsenal | Arsenal – 0 |
+| Rating;Arsenal |  |
+| END |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Team;Arsenal
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;95;82;82;89;68
+Remove;Arsenal;Aaron_Ramsey
+Rating;Arsenal
+END
+[/input]
+[output]
+Arsenal - 81
+[/output]
+[/test]
+[test open]
+[input]
+Team;Arsenal
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Remove;Arsenal;Aaron_Ramsey
+Rating;Arsenal
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal team.
+Arsenal - 81
+[/output]
+[/test]
+[test open]
+[input]
+Team;Arsenal
+Rating;Arsenal
+END
+[/input]
+[output]
+Arsenal - 0
+[/output]
+[/test]
+[test]
+[input]
+Team;Arsenal
+Team;England
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Add;England;Joe_Heart;11;46;32;87;10;
+Rating;England
+Rating;Arsenal
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+England - 37
+Arsenal - 81
+[/output]
+[/test]
+[test]
+[input]
+Team;Arsenal
+Team;England
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Add;England;Joe_Heart;11;46;32;87;10;
+Rating;England
+Rating;Arsenal
+Rating;Angliq
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+England - 37
+Arsenal - 81
+Team Angliq does not exist.
+[/output]
+[/test]
+[test]
+[input]
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Add;England;Joe_Heart;11;46;32;87;10;
+Rating;England
+Rating;Arsenal
+Rating;Angliq
+END
+[/input]
+[output]
+Team Arsenal does not exist.
+Team Arsenal does not exist.
+Team England does not exist.
+Team England does not exist.
+Team Arsenal does not exist.
+Team Angliq does not exist.
+[/output]
+[/test]
+[test]
+[input]
+Team;Arsenal
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Remove;Arsenal;Aaron_Ramsey
+Rating;Ce
+Rating;Arsenal
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal team.
+Team Ce does not exist.
+Arsenal - 81
+[/output]
+[/test]
+[test]
+[input]
+Team;Arsenal
+Team;England
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Add;England;Joe_Heart;11;46;32;87;10;
+Remove;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Remove;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Remove;England;Joe_Heart;11;46;32;87;10;
+Rating;England
+Rating;Arsenal
+Rating;Angliq
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+Player Aaron_Ramsey is not in Arsenal team.
+England - 0
+Arsenal - 0
+Team Angliq does not exist.
+[/output]
+[/test]
+[test]
+[input]
+Team;Arsenal
+Team;England
+Add;Arsenal;Kieran_Gibbs;75;85;84;92;67
+Add;Arsenal;Aaron_Ramsey;195;82;82;89;68
+Add;England;Joe_Heart;11;46;32;87;10;
+Rating;England
+Rating;Arsenal
+Rating;Angliq
+END
+[/input]
+[output]
+Endurance should be between 0 and 100.
+England - 37
+Arsenal - 81
+Team Angliq does not exist.
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
