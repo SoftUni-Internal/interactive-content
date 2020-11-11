@@ -105,7 +105,6 @@ You should start crafting the given present, by assigning dwarfs which are most 
 **"There is no dwarf ready to start crafting!"**
 
 - After the work is done, you must return the following message, reporting whether the present is done and how many instruments have been broken in the process:
-
 **"Present {presentName} is {done/not done}. {countBrokenInstruments} instrument/s have been broken while working on it!"**
 
 **Note**: The **name** of the **present** you receive will always be a **valid** one.
@@ -116,7 +115,7 @@ You should start crafting the given present, by assigning dwarfs which are most 
 
 Returns information about **crafted presents** and **dwarfs**:
 
-**"{countCraftedPresents} presents are done!"**
+"**{countCraftedPresents} presents are done!**"
 
 **"Dwarfs info:"**
 
@@ -142,17 +141,17 @@ You are provided with one interface, which will help you with the correct execut
 
 Below, you can see the **format** in which **each command** will be given in the input:
 
-- **AddDwarf {dwarfType} {dwarfName}**
+**AddDwarf {dwarfType} {dwarfName}**
 
-- **AddPresent {presentName} {energyRequired}**
+**AddPresent {presentName} {energyRequired}**
 
-- **AddInstrumentToDwarf {dwarfName}**
+**AddInstrumentToDwarf {dwarfName}**
 
-- **CraftPresent {presentName}**
+**CraftPresent {presentName}**
 
-- **Report**
+**Report**
 
-- **Exit**
+**Exit**
 
 ## Output
 
