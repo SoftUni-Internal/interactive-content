@@ -36,7 +36,7 @@ You are given interfaces, and you have to implement their functionality in the *
 
 There are **4** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
 
-There should also be a **DwarfRepository**, as well as **PresentRepository**.
+There should also be a **DwarfRepository**, as well as **PresentRepository**
 
 # BaseDwarf
 
