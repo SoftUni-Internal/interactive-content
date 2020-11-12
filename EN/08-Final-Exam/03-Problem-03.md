@@ -17,7 +17,7 @@ As well as how many **cuts are ordered.**
 Write a program that c**alculates the amount to be paid** for the order.
 
 
-|  | Watermelon  | Mango | Pineapple   | Raspberry |
+| \- | Watermelon  | Mango | Pineapple   | Raspberry |
 | :---:       |    :----:   |   :---:     |  :---:     | :---:     |
 | `2 pcs. (small)` | $56 pcs.  | $36.66 pcs. |$42.10 pcs. | $20 pcs.|
 | `5 pcs. (big)`  | $28.70 pcs.  | $19.60 pcs. |$24.80 pcs. | $15.20 pcs.|
