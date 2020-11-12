@@ -118,15 +118,6 @@ big
 [/test]
 [test]
 [input]
-Pineapple
-small
-2put]
-[output]
-168.40 dollars.
-[/output]
-[/test]
-[test]
-[input]
 Mango
 big
 10
@@ -193,16 +184,6 @@ big
 [/input]
 [output]
 666.40 dollars.
-[/output]
-[/test]
-[test]
-[input]
-Raspberry
-small
-50
-[/input]
-[output]
-1000.00 dollars.
 [/output]
 [/test]
 [/tests]
