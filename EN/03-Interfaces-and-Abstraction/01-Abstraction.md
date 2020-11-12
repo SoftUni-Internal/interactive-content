@@ -24,7 +24,7 @@ There are 2 ways we can achieve **abstraction** in Java:
 
 
 [slide]
-## Java Abstract Class Example:
+## Example Java Abstract Class :
 
 Lets see how we can use that abstract classes.
 
@@ -64,7 +64,7 @@ Woof, Woof
 
 
 [slide]
-## Java Interface Example:
+## Example Java Interface:
 
 We can use interfaces too.
 
@@ -95,12 +95,15 @@ class Dog implements Pet {
 
 Using `interface` example, the **Output** will be:
 
-``` 
+``` java
 Walking....
 ```
 
-## Abstraction vs Encapsulation
 
+[/slide]
+
+[slide]
+# Abstraction vs Encapsulation
 
 [image assetsSrc="Interfaces-and-Abstraction-example(2).png" /]
 

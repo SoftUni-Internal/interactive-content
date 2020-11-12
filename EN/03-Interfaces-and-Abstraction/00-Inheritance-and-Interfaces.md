@@ -35,7 +35,10 @@ When a class inherits another class, the **parent class fields** are merged with
 - Concrete classes define data fields + concrete functionality (methods).
 
 - They can **implement interfaces** and **inherit abstract** and other classes.
+[/slide]
 
+[slide]
+# Example: Abstract Classes and Concrete Classes
 
 [image assetsSrc="Interfaces-and-Abstraction-example.png" /]
 
@@ -67,7 +70,5 @@ The **child class "Rectangle"** inherits the properties from the **base class "F
 - The "Rectangle" class defines two additional fields: **width** and **height**.
 
 - It provides different concrete implementation of the "**calcArea**" abstract method, which calculates the rectangle area.
-
-
 
 [/slide]
