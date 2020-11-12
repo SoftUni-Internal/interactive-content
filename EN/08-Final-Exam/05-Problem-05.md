@@ -64,212 +64,141 @@ function solve(input) {
 [tests]
 [test]
 [input]
-6
-6000
-200
-100
-300
-30
-100
-55
-156
-25
-426
-65
-200
-29
-[/input]
-[output]
-Total eaten biscuits: 38gr.
-28.10\% of the food has been eaten.
-81.97\% eaten from the dog.
-18.03\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-5
-5014
-236
-124
-365
-120
-146
-66
-208
-140
-369
-96
-[/input]
-[output]
-Total eaten biscuits: 21gr.
-37.30\% of the food has been eaten.
-70.80\% eaten from the dog.
-29.20\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-2
+4
+500
+600
 700
-200
-33
-300
-50
+800
+Adopted
 [/input]
 [output]
-Total eaten biscuits: 0gr.
-83.29\% of the food has been eaten.
-85.76\% eaten from the dog.
-14.24\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-7
-7000
-200
-33
-300
-50
-369
-258
-456
-246
-666
-66
-648
-215
-741
-231
-[/input]
-[output]
-Total eaten biscuits: 149gr.
-63.99\% of the food has been eaten.
-75.46\% eaten from the dog.
-24.54\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-7
-3000
-200
-33
-300
-50
-369
-25
-234
-24
-466
-66
-648
-21
-541
-23
-[/input]
-[output]
-Total eaten biscuits: 106gr.
-100.00\% of the food has been eaten.
-91.93\% eaten from the dog.
-8.07\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-5
-5584
-436
-224
-565
-220
-346
-166
-508
-148
-469
-95
-[/input]
-[output]
-Total eaten biscuits: 51gr.
-56.89\% of the food has been eaten.
-73.15\% eaten from the dog.
-26.85\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-3
-900
-176
-36
-159
-19
-399
-111
-[/input]
-[output]
-Total eaten biscuits: 51gr.
-100.00\% of the food has been eaten.
-81.56\% eaten from the dog.
-18.44\% eaten from the cat.
-[/output]
-[/test]
-[test]
-[input]
-3
-2000
-300
-110
-365
-120
-444
-50
-[/input]
-[output]
-Total eaten biscuits: 49gr.
-69.45\% of the food has been eaten.
-79.84\% eaten from the dog.
-20.16\% eaten from the cat.
+Food is enough! Leftovers: 1400 grams.
 [/output]
 [/test]
 [test]
 [input]
 4
-5000
-666
-230
-156
-32
-400
-200
-500
-190
+1000
+2000
+3000
+4000
+Adopted
 [/input]
 [output]
-Total eaten biscuits: 60gr.
-47.48\% of the food has been eaten.
-72.54\% eaten from the dog.
-27.46\% eaten from the cat.
+Food is not enough. You need 6000 grams more.
 [/output]
 [/test]
 [test]
 [input]
 3
-500
-100
-30
-110
-25
 120
-35
+120
+120
+120
+150
+180
+340
+560
+Adopted
 [/input]
 [output]
-Total eaten biscuits: 16gr.
-84.00\% of the food has been eaten.
-78.57\% eaten from the dog.
-21.43\% eaten from the cat.
+Food is enough! Leftovers: 1290 grams.
+[/output]
+[/test]
+[test]
+[input]
+1
+200
+300
+400
+200
+Adopted
+[/input]
+[output]
+Food is not enough. You need 100 grams more.
+[/output]
+[/test]
+[test]
+[input]
+9
+800
+430
+560
+120
+340
+560
+125
+440
+Adopted
+[/input]
+[output]
+Food is enough! Leftovers: 5625 grams.
+[/output]
+[/test]
+[test]
+[input]
+4
+1000
+340
+120
+356
+1000
+2345
+100
+450
+Adopted
+[/input]
+[output]
+Food is not enough. You need 1711 grams more.
+[/output]
+[/test]
+[test]
+[input]
+2
+1200
+1200
+1200
+Adopted
+[/input]
+[output]
+Food is not enough. You need 1600 grams more.
+[/output]
+[/test]
+[test]
+[input]
+18
+200
+400
+500
+600
+Adopted
+[/input]
+[output]
+Food is enough! Leftovers: 16300 grams.
+[/output]
+[/test]
+[test]
+[input]
+5
+5000
+1000
+234
+456
+789
+Adopted
+[/input]
+[output]
+Food is not enough. You need 2479 grams more.
+[/output]
+[/test]
+[test]
+[input]
+1
+1000
+Adopted
+[/input]
+[output]
+Food is enough! Leftovers: 0 grams.
 [/output]
 [/test]
 [/tests]
