@@ -1,18 +1,18 @@
 [slide]
-# Study materials
+## Problem: Study Materials
 
 # Description
-The school year has already started Annie has to buy a certain number of packets of chemicals, packets of markers, and a detergent for cleaning the board. 
+The school year has already started Annie has to buy a certain number of **packets of pencils**, **packets of markers**, and a **detergent** for cleaning the board. 
 
-She is a regular customer of a bookstore, and there is a discount for her, which represents a percentage of the total. 
+She is a regular customer of a bookstore, and there is a **discount** for her, which represents a **percentage** of the total.
 
-Write a program that calculates how much money Annie will have to raise to pay the bill, keeping in mind the following price list:
+Write a program that calculates how much money Annie will have to **raise** to pay the bill, keeping in mind the following price list:
 
-- **Package of pencils: $5.80**
+- **Package of pencils:** $5.80
 
-- **Markers - $7.20**
+- **Markers:** $7.20
 
-- **Detergent - $1.20 (liter)**
+- **Detergent:** $1.20 (liter)
 
 # Input
 Four numbers are read from the console:
@@ -27,7 +27,7 @@ Four numbers are read from the console:
 
 # Output
 
-Print on the console how much money Annie will need to pay her bill. The result should be **FORMATTED** to the third decimal place.
+Print on the console how much money Annie will need to pay her bill. The result should be **formatted** to the third decimal place.
 
 [code-task title="Study materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -49,15 +49,15 @@ function solve(input) {
 
 # Comments
 
-**Price** of package pencils = `2 * 5.80 = 11.60`
+- Price of **package pencils**: `2 * 5.80 = 11.60`
 
-**Price** of packages markers = `3 * 7.20 = 21.60`
+- Price of **packages markers**: `3 * 7.20 = 21.60`
 
-**Price** of the detergent  = `2.5 * 1.20 = 3.00`
+- Price of the **detergent**: `2.5 * 1.20 = 3.00`
 
-**Price** for all materials = `11.60 + 21.60 + 3.00 = 36.20`
+- Price for **all materials**: `11.60 + 21.60 + 3.00 = 36.20`
 
-Discounted price = `36.20 – ((36.20 * 25) / 100) = 27.150`
+- Discounted price: `36.20 – ((36.20 * 25) / 100) = 27.150`
  
 [/task-description]
 [code-io /]
