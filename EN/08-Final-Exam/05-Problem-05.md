@@ -1,4 +1,4 @@
-# Problem: Care of Puppy
+# Problem 5: Care of Puppy
 
 [slide]
 

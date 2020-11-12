@@ -1,4 +1,4 @@
-# Problem: Food for Pets
+# Problem 4: Food for Pets
 
 [slide]
 

@@ -1,4 +1,4 @@
-# Problem: Energy Booster
+# Problem 3: Energy Booster
 
 [slide]
 

@@ -1,4 +1,4 @@
-# Problem: Study Materials
+# Problem 1: Study Materials
 
 [slide]
 

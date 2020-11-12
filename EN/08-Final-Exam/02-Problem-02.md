@@ -1,4 +1,4 @@
-# Problem: Mountain Run
+# Problem 2: Mountain Run
 
 [slide]
 
