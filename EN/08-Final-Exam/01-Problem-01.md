@@ -44,8 +44,6 @@ function solve(input) {
 | **Input** | **Output** |
 | --- | --- |
 |`["2", "3", "2.5", "25"]` | 27.150 |
-|`["4", "2", "5", "13"]` | 37.932 |
-|`["7, "8", "0.5", "45"]` | 54.340 |
 
 # Comments
 
@@ -58,6 +56,13 @@ function solve(input) {
 - Price for **all materials**: `11.60 + 21.60 + 3.00 = 36.20`
 
 - Discounted price: `36.20 – ((36.20 * 25) / 100) = 27.150`
+
+# More Examples
+
+| **Input** | **Output** |
+| --- | --- |
+|`["4", "2", "5", "13"]` | 37.932 |
+|`["7, "8", "0.5", "45"]` | 54.340 |
  
 [/task-description]
 [code-io /]
@@ -159,6 +164,17 @@ function solve(input) {
 [/input]
 [output]
 380.870
+[/output]
+[/test]
+[test]
+[input]
+100
+100
+50
+100
+[/input]
+[output]
+0.000
 [/output]
 [/test]
 [/tests]
