@@ -36,6 +36,44 @@ Most common problems that design pattern solves are:
 
 - Divide and conquer
 
+Lets see the Elements of our design patterns:
+
+- Pattern name that increases the **vocabulary** of designers
+
+- Problem - Intent, context and when to apply
+
+- Solution - An abstract code, or template idea to solve our problems
+
+- Consequences - **Results** and trade-offs
+
+
+[/slide]
+
+
+[slide]
+
+# Benefits and drawbacks of using Design Patterns
+
+Now, we will talk a little bit about benefits and drawbacks using design patterns.
+
+Lets start first with the benefits:
+
+Design patterns bring standardization to your projects. It also ensure, that your code follows good programming principles like **coupling** and **cohesion**.
+
+We learn in previous lessons the basics of **coupling** and **cohesion**, but today we will try to expand our knowledge a little bit.
+
+We can say that coupling components interact with each other. This is how they pass information on each other. High coupling usually leads to complex code.
+
+We cannot remove entirely the need for components to interact with each other.
+
+Usually low coupling indicates a good code structure.
+
+Coupling has many types, but we would not go that further.
+
+Design patterns can make our job easier. They can help us analyze the more abstract ideas of our program by p**roviding well tested solutions**.
+
+It is important to understand, that design patterns teach us to write **faster** and **more clear** code. It provide us a clearer picture of how we are implemeneting the software design.
+
 
 
 
