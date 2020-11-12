@@ -20,9 +20,9 @@ Four numbers are read from the console:
 
 - First row - count package of pencils. Integer in the interval \[0 ... 100\]
 
-- Second line - count package of markers. Integer in the interval \[0 ... 100\]
+- Second-line - count package of markers. Integer in the interval \[0 ... 100\]
 
-- Third row - liter of detergent for cleaning the board. Real number in the interval \[0.00… 50.00\]
+- Third row - a liter of detergent for cleaning the board. Real number in the interval \[0.00… 50.00\]
 
 - Fourth line - the percentage discount. Integer in the interval \[0 ... 100\]
 

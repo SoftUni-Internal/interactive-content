@@ -6,7 +6,7 @@
 
 George decides to improve the record for the fastest climb to Mont Blanc.
 
-The console introduces the record in seconds that Georgi has to improve, the distance in meters he has to climb and the time in seconds he has to climb 1 meter.
+The console introduces the record in seconds that Georgi has to improve, the distance in meters he has to climb, and the time in seconds he has to climb 1 meter.
 
 Write a program that calculates **whether he has coped with the task**, given that:
 
@@ -30,7 +30,7 @@ Three lines are read from the console
 
 Printing the console depends on the results:
 
-- If George has improved the record we print: `Yes! The new record is { eorge's time} seconds.`
+- If George has improved the record we print: `Yes! The new record is { George's time} seconds.`
 
 - If it has NOT improved the record we print: `No! He was {time need} seconds slower.` 
 
