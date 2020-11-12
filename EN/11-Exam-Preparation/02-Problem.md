@@ -47,7 +47,7 @@ If a computer, with the **same id**, already exists in **the computers collectio
 
 If the computer type is invalid, throw an **IllegalArgumentException** with the message "**Computer type is invalid.**"
 
-If it's successful, returns "**Computer with id \{id\} added successfully.**".
+If it's successful, returns "Computer with id \{id\} added successfully.".
 
 ### AddComponent Command:
 
@@ -70,7 +70,7 @@ If a component, with the **same id**, already exists in **the components collect
 
 If the component type is invalid, throws an **IllegalArgumentException** with the message "**Component type is invalid.**"
 
-If it's successful, returns **"Component \{component type\} with id \{component id\} added successfully in computer with id \{computer id\}.".**
+If it's successful, returns "Component \{component type\} with id \{component id\} added successfully in computer with id \{computer id\}.".
 
 ### RemoveComponent Command:
 
@@ -83,7 +83,7 @@ If it's successful, returns **"Component \{component type\} with id \{component 
 
 Removes a component, with the given **type from the computer with that id**, then removes component from the **collection of components**.
 
-If it's successful, it returns "**Successfully removed \{component type\} with id \{component id\}.**".
+If it's successful, it returns "Successfully removed \{component type\} with id \{component id\}.".
 
 ### AddPeripheral Command:
 
@@ -106,7 +106,7 @@ If a peripheral, with the **same id**, already exists in **the peripherals colle
 
 If the peripheral type is invalid, throws an **IllegalArgumentException** with the message "**Peripheral type is invalid.**"
 
-If it's successful, it returns **"Peripheral \{peripheral type\} with id \{peripheral id\} added successfully in computer with id \{computer id\}.".**
+If it's successful, it returns "Peripheral \{peripheral type\} with id \{peripheral id\} added successfully in computer with id \{computer id\}.".
 
 ### RemovePeripheral Command:
 
@@ -119,7 +119,7 @@ If it's successful, it returns **"Peripheral \{peripheral type\} with id \{perip
 
 Removes a peripheral, with the given **type from the computer** with that **id**, then removes the peripheral from the **collection of peripherals**.
 
-If it's successful, it returns **"Successfully removed \{peripheral type\} with id \{peripheral id\}.".**
+If it's successful, it returns "Successfully removed \{peripheral type\} with id \{peripheral id\}.".
 
 ### BuyComputer Command:
 
@@ -143,7 +143,7 @@ If it's successful, it returns **toString method on the removed computer**.
 
 Removes the computer with the highest overall performance and with a price, less or equal to the budget, from the collection of computers.
 
-If there are not any computers in the collection or the budget is insufficient for any computer, throws an **IllegalArgumentException** with the message "**Can't buy a computer with a budget of $\{budget\}.**"
+If there are not any computers in the collection or the budget is insufficient for any computer, throws an **IllegalArgumentException** with the message "Can't buy a computer with a budget of $\{budget\}."
 
 If it's successful, it returns **toString method on the removed computer**.
 
@@ -157,7 +157,7 @@ If it's successful, it returns **toString method on the removed computer**.
 
 If it's successful, it returns **toString method on the computer with the given id**.
 
-### Close COmmand:
+### Close Command:
 
 **Functionality:**
 
@@ -171,14 +171,14 @@ You are given the **EngineImpl** class with written logic in it. In order the co
 
 ## Input
 
-- AddComputer {computer type} {id} {manufacturer} {model} {price}
-- AddComponent {computer id} {component id} {component type} {manufacturer} {model} {price} {overall performance} {generation}
-- RemoveComponent {component type} {computer id}
-- AddPeripheral {computer id} {peripheral id} { peripheral type} {manufacturer} {model} {price} {overall performance} {connection type}
-- RemovePeripheral {peripheral type} {computer id}
-- BuyComputer {id}
-- BuyBestComputer {budget}
-- GetComputerData {id}
+- AddComputer \{computer type\} \{id\} \{manufacturer\} \{model\} \{price\}
+- AddComponent \{computer id\} \{component id\} \{component type\} \{manufacturer\} \{model\} \{price\} \{overall performance\} \{generation\}
+- RemoveComponent \{component type\} \{computer id\}
+- AddPeripheral \{computer id\} \{peripheral id\} \{peripheral type\} \{manufacturer\} \{model\} \{price\} \{overall performance\} \{connection type\}
+- RemovePeripheral \{peripheral type\} \{computer id\}
+- BuyComputer \{id\}
+- BuyBestComputer \{budget\}
+- GetComputerData \{id\}
 - Close
 
 ## Output
