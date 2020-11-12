@@ -24,7 +24,7 @@ There are 2 ways we can achieve **abstraction** in Java:
 
 
 [slide]
-## Example Java Abstract Class :
+## Example: Java Abstract Class
 
 Lets see how we can use that abstract classes.
 
@@ -64,7 +64,7 @@ Woof, Woof
 
 
 [slide]
-## Example Java Interface:
+## Example: Java Interface
 
 We can use interfaces too.
 
