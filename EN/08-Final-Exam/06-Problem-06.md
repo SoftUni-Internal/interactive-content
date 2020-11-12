@@ -7,13 +7,13 @@ Write a program that tracks your team's performance at a Christmas charity tourn
 
 Every day you get game names next to the `Finish` command. 
 
-By winning each game you win $20 for charity. 
+By winning each game you win **$20 for charity**. 
 
-You need to calculate how much money you earned at the end of the day. 
+You need to calculate how much **money you earned at the end of the day**. 
 
-If you have more games won than lost - you are the winner of the day and increase your money by 10\%. 
+If you have **more games won than lost** - **you are the winner of the day** and increase your money by 10\%. 
 
-At the end of the tournament, if you have been the winner most days, you win the tournament and increase all the money won by 20\%.
+At the **end of the tournament**, if you have been the winner most days, you **win the tournament and increase all the money won by 20%.**
 
 You will never have an equal number of won and lost games.
 
