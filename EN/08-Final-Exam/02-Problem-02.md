@@ -1,5 +1,6 @@
+# Problem: Mountain Run
+
 [slide]
-## Problem: Mountain Run
 
 # Description
 
@@ -9,7 +10,7 @@ The console introduces the record in seconds that Georgi has to improve, the dis
 
 Write a program that calculates **whether he has coped with the task**, given that:
 
-- the slope of the terrain **slows him down** every **50 meters by 30 seconds**.
+- The slope of the terrain **slows him down** every **50 meters by 30 seconds**.
 
 To **calculate** the time in seconds for which George will climb the **distance** to the top and the **difference from the record.**
 
@@ -29,11 +30,9 @@ Three lines are read from the console
 
 Printing the console depends on the results:
 
-- If George has improved the record we print
-`Yes! The new record is { eorge's time} seconds.`
+- If George has improved the record we print: `Yes! The new record is { eorge's time} seconds.`
 
-- If it has NOT improved the record we print:
-`No! He was {time need} seconds slower.` 
+- If it has NOT improved the record we print: `No! He was {time need} seconds slower.` 
 
 The result must be **formatted** to the second digit after the decimal point
 
