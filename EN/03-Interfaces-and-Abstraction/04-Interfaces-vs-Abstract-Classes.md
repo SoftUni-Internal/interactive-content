@@ -44,7 +44,7 @@ Your task is to **create a Ferrari** and **set the driver's name** to the passed
 
 After that, print the info. Take a look at the Examples to understand the task better.
 
-[image assetsSrc="interfaces-and-abstraction-example(10)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(10).png" /]
 
 ## Input
 On the **single input line**, you will be given the **driver's name**.

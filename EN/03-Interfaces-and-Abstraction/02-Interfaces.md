@@ -72,7 +72,7 @@ public class Main {
 ## Description
 Build hierarchy from **classes** and **interfaces** for this UML diagram
 
-[image assetsSrc="interfaces-and-abstraction-example(5)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(5).png" /]
 
 **Your hierarchy have to be used with this code**
 ```java
@@ -696,7 +696,7 @@ public class Main {
 ## Description
 Extend previous problem: 
 
-[image assetsSrc="interfaces-and-abstraction-example(6)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(6).png" /]
 
 **Your hierarchy has to be used with this code**
 
@@ -1559,7 +1559,7 @@ public class Main {
 ## Description
 **Build hierarchy from classes and interfaces for this UML diagram**
 
-[image assetsSrc="interfaces-and-abstraction-example(7)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(7).png" /]
 
 **Your hierarchy have to be used with this code**
 ```java
@@ -2024,7 +2024,7 @@ public class Main {
 ## Description
 **Build hierarchy from classes and interfaces for this UML diagram**
 
-[image assetsSrc="interfaces-and-abstraction-example(8)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(8).png" /]
 
 **Your hierarchy have to be used with this code**
 ```java

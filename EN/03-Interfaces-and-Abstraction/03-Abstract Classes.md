@@ -140,7 +140,7 @@ After the end command on the next line you will receive a single number represen
 
 The output of your program should consist of all detained **Ids** each on a separate line (the order of printing doesn’t matter).
 
-[image assetsSrc="interfaces-and-abstraction-example(9)).png" /]
+[image assetsSrc="interfaces-and-abstraction-example(9).png" /]
 
 ## Examples
 | **Input** | **Output** |
