@@ -19,14 +19,14 @@ public class Main {
 
 # Setup
 
-- Download the resources from here - [mega.nz](https://mega.nz/file/WIwyDBQR#pmG3HntfMJqVi70ofZq3-mWik_5yEDiIQ65egnDlqUA)
+- Download the resources from here - [mega.nz](https://mega.nz/file/aJhzACoK#3A-jxtTKRhj8tyZXSSlM3LprWL6kstyKfl1y0xB0eL4)
 - Upload **only the santaWorkshop package** in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
 - **Use inheritance and the provided interfaces wherever possible**
 - *This includes constructors, method parameters and return types*
-- **Do not** violate your **interface implementations** by adding **more public methods** in the concrete class than the interface has defined
-- Make sure you have **no public fields** anywhere
+- **Do not** violate your **interface implementations** by adding **more public methods** in the concrete class than the ones already defined in the interface
+- Make sure you have **no public fields** anywhere in your code
 
 # Description
 
@@ -36,7 +36,7 @@ You are given interfaces, and you have to implement their functionality in the *
 
 There are **4** types of entities in the application: **Dwarf, Present, Workshop, Instrument**. 
 
-There should also have be a **DwarfRepository**, as well as **PresentRepository**.
+There should also be a **DwarfRepository**, as well as **PresentRepository**.
 
 # BaseDwarf
 
@@ -45,14 +45,14 @@ There should also have be a **DwarfRepository**, as well as **PresentRepository*
 ## Data:
 
 - **name - String**
-  * If the name **is null or whitespace**, throw a **NullPointerException** with message: 
+  * If the name **is null or whitespace**, throw a **NullPointerException** with the message: 
 "**Dwarf name cannot be null or empty.**"
   * All names will be **unique**
 
 - **energy –  int**
   * The energy of a dwarf
-  * If the **initial** energy is below 0, throw an **IllegalArgumentException** with message:
- "**Cannot create Dwarf with negative energy!**"
+  * If the **initial** energy is below 0, throw an **IllegalArgumentException** with the message:
+ "**Cannot create a Dwarf with negative energy!**"
 
 - **instruments – Collection<Instrument\>**
   * A collection of a dwarf's instruments
@@ -91,7 +91,7 @@ There are two types of **BaseDwarf**:
 
 Initial **energy** units: **100**
 
-Constructor should take the following values upon initialization:
+The constructor should take the following values upon initialization:
 
 **(String name)**
 
@@ -99,15 +99,15 @@ Constructor should take the following values upon initialization:
 
 Initial **energy** units: **50**
 
-The method **work() decreases** the dwarfs' energy by additional **5 units**
+The method **work() decreases** the dwarfs' energy by an additional **5 units**
 
-Constructor should take the following values upon initialization:
+The constructor should take the following values upon initialization:
 
 **(String name)**
 
 # InstrumentImpl
 
-The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft **Present**
+The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** uses to craft a **Present**
 
 **It should** be able to be **instantiated**
 
@@ -116,8 +116,8 @@ The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** us
 - **power - int**
 
   * The power of an instrument
-  * If the **initial** power is below **0**, throw an **IllegalArgumentException** with message:
- "**Cannot create Instrument with negative power!**"
+  * If the **initial** power is below **0**, throw an **IllegalArgumentException** with the message:
+ "**Cannot create an Instrument with negative power!**"
 
  ## Constructor
 
@@ -129,13 +129,13 @@ The **InstrumentImpl** is a class that represents the tool, which a **Dwarf** us
 
  `void use()`
 
- The **use()** method **decreases** instrument's **power** with **10**
+ The **use()** method **decreases** an instrument's **power** by **10**
 
    * An instrument's power should **not** drop **below 0**. (If the power becomes less than 0, set it to 0)
 
 `boolean isBroken()` 
 
-This method returns true when power becomes equal to 0
+This method returns true when its power becomes equal to 0
 
 # PresentImpl
 
@@ -146,13 +146,13 @@ This is the class which holds information about the **Present** that a **Dwarf**
 ## Data
 
 - **name - String**
-  * If the name **is null or whitespace**, **throw a NullPointerException** with message: 
+  * If the name **is null or whitespace**, **throw a NullPointerException** with the message: 
 "**Present name cannot be null or empty.**"
 
 - **energyRequired - int**
   * The energy a present requires in order to be crafted
-  * If the **initial** energy is below **0**, throw an **IllegalArgumentException** with message:
- "**Cannot create Present requiring negative energy!**"
+  * If the **initial** energy is below **0**, throw an **IllegalArgumentException** with the message:
+ "**Cannot create a Present requiring negative energy!**"
 
 ## Constructor 
 
@@ -182,11 +182,11 @@ The **WorkshopImpl** class holds the main action, which is the **craft** method.
 
 Here is how the **craft** method works:
 
-- The dwarf starts crafting the present. This is only possible, if the dwarf has energy and an instrument that isn't broken.
+- The dwarf starts crafting the present. This is only possible if the dwarf has energy and an instrument that isn't broken.
 
-- Keep working **until** the present is **done** or the dwarf has **energy** (and **instruments** to use).
+- Keep working **until** the present is **done** and while the dwarf has **energy** left (and **instruments** to use).
 
-- If at some point the **power** of the current instrument **reaches** or **drops below 0**, meaning it is **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**.
+- If at some point the **power** of the current instrument **reaches** or **drops below 0**, meaning it gets **broken**, then the dwarf should take the **next instrument** from its collection, if it has **any left**.
 
 # DwarfRepository
 
@@ -202,7 +202,7 @@ The dwarf repository is a repository for the dwarfs working at Santa's Workshop.
 
 - **Adds** a dwarf to the collection
 
-- Every dwarf is **unique** and it is guaranteed that there will not be a dwarf with the same name
+- Every dwarf is **unique** and it is guaranteed that there will be no repeating dwarf names
 
 `boolean remove(Dwarf dwarf)`
 
@@ -212,7 +212,7 @@ The dwarf repository is a repository for the dwarfs working at Santa's Workshop.
 
 `Dwarf findByName(String name)`
 
-- Returns a **dwarf** with that **name** if such 
+- Returns the **dwarf** with that **name** if there is one
 
 `Collection<Dwarf> getModels()`
 
@@ -244,11 +244,11 @@ The present repository is a repository for presents that await to be crafted.
 
 - Returns a **present** with that **name** if such exists
 
-- It is guaranteed that the present **exists** in the collection
+- We are guaranteed that the present **exists** in the collection
 
 `Collection<Present> getModels()`
 
-- Returns collection of presents (unmodifiable)
+- Returns the collection of presents (unmodifiable)
 
 
 
