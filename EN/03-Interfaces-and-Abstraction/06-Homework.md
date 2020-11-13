@@ -4095,6 +4095,638 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Telephony
+[code-task title="Problem: Telephony" taskId="f43d2168-92b7-4e92-a841-99311488feba" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You have a business - **manufacturing cell phones**. 
+
+But you have no software developers, so you call your friends and ask them to help you create a cell phone software. 
+
+They agree and you start working on the project. 
+
+The project consists of one main **model - a Smartphone**. 
+
+Each of your smartphones should have functionalities of **calling other phones** and **browsing in the world wide web**.
+
+Your friends are very busy, so you decide to write the code on your own. 
+
+Here is the mandatory assignment:
+
+You should have a **model - Smartphone** and two separate functionalities which your smartphone has - to **call other phones** and to **browse in the world wide web**. 
+
+You should end up with **one class** and two **interfaces**.
+
+[image assetsSrc="interfaces-and-abstraction-example(15).png" /]
+
+## Input
+The input comes from the console. It will hold two lines:
+- **First line: phone numbers** to call (String), separated by spaces.
+- **Second line: sites** to visit (String), separated by spaces.
+## Output
+- First **call all numbers** in the order of input then **browse all sites** in order of input
+- The functionality of calling phones is printing on the console the number which are 
+being called in the format: "**Calling... {number}**"
+- The functionality of the browser should print on the console the site in format:
+"**Browsing: {site}!**" (pay attention to the exclamation mark when printing URLs)
+- If there is a number in the input of the URLs, print: "**Invalid URL!**" and continue printing the rest of the URLs.
+- If there is a character different from a digit in a number, print: "**Invalid number!**" and continue to the next number.
+## Constraints
+- Each site's URL should consist only of letters and symbols (**No digits are allowed** in the URL address)
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| 0882134215 0882134333 08992134215 0558123 3333 1 | Calling... 0882134215 |
+| http://softuni.org http://youtube.com http://www.g00gle.com | Calling... 0882134333 |
+|  | Calling... 08992134215 |
+|  | Calling... 0558123 |
+|  | Calling... 3333 |
+|  | Calling... 1 |
+|  | Browsing: http://softuni.org! |
+|  | Browsing: http://youtube.com! |
+|  | Invalid URL! |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01TestClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Callable",
+            "Browsable",
+            "Smartphone",
+    \};
+
+    @Test
+    public void test() \{
+        assertExistingClasses(classNames);
+    \}
+
+    private void assertExistingClasses(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertClassExists(className);
+        \}
+    \}
+
+    private void assertClassExists(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T02TestFieldsExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Smartphone",
+    \};
+    private static final Map\<String, String\[\]\> allNeededFields =
+            new HashMap\<String, String\[\]\>() \{\{
+                put("Smartphone", new String\[\]\{"numbers", "urls"\});
+            \}\};
+
+    @Test
+    public void test() \{
+        assertHaveAllFields(classNames);
+    \}
+
+    private void assertHaveAllFields(String\[\] classNames) \{
+        for (String className : classNames) \{
+            haveAllFields(className);
+        \}
+    \}
+
+    private void haveAllFields(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+
+        Class cl = Classes.allClasses.get(className);
+        Field\[\] fields = cl.getDeclaredFields();
+
+        for (String field : allNeededFields.get(className)) \{
+            Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field),
+                    Arrays.stream(fields)
+                            .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+
+public class T03TestConstructors \{
+    private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
+
+
+    private static final String\[\] classNames = new String\[\]\{
+            "Smartphone",
+    \};
+
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put("Smartphone", new Class\[\]\{List.class, List.class\});
+    \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        assertConstructors(classNames);
+    \}
+
+    private void assertConstructors(String\[\] classNames) throws NoSuchMethodException \{
+        for (String className : classNames) \{
+            assertConstructorExists(className);
+        \}
+    \}
+
+    private void assertConstructorExists(String className) throws NoSuchMethodException \{
+        Class cl = Classes.allClasses.get(className);
+
+        Constructor constructor = null;
+
+        try \{
+            constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
+        \} catch (Exception e) \{
+        \}
+        Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, className), constructor);
+
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+
+public class T05TestAllMethodsExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String CLASS_NAME = "Smartphone";
+    private static final String CLASS_NAME_2 = "Callable";
+    private static final String CLASS_NAME_3 = "Browsable";
+    private static final String SEARCHED_METHOD_1 = "call";
+    private static final String SEARCHED_METHOD_2 = "browse";
+
+    private static final String\[\] classNames = new String\[\]\{
+            CLASS_NAME,
+            CLASS_NAME_2,
+            CLASS_NAME_3,
+    \};
+
+
+    private static final Map\<String, String\[\]\> methodsInClass =
+            new HashMap\<String, String\[\]\>() \{\{
+                put(CLASS_NAME, new String\[\]\{
+                        SEARCHED_METHOD_1,
+                        SEARCHED_METHOD_2,
+                \});
+                put(CLASS_NAME_2, new String\[\]\{
+                        SEARCHED_METHOD_1,
+                \});
+                put(CLASS_NAME_3, new String\[\]\{
+                        SEARCHED_METHOD_2,
+                \});
+            \}\};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(SEARCHED_METHOD_1, String.class);
+        put(SEARCHED_METHOD_2, String.class);
+
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(SEARCHED_METHOD_1, new Class\[\]\{\});
+        put(SEARCHED_METHOD_2, new Class\[\]\{\});
+    \}\};
+
+    @Test
+    public void test() throws NoSuchMethodException \{
+        assertExistingMethods(classNames);
+    \}
+
+    private void assertExistingMethods(String\[\] classNames) throws NoSuchMethodException \{
+        for (String className : classNames) \{
+
+            Class cl = getClass(className);
+            for (String methodName : methodsInClass.get(className)) \{
+                Method method =
+                        methodParameters.get(methodName).length == 0
+                                ? cl.getDeclaredMethod(methodName)
+                                : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+                Class\<?\> returnType = method.getReturnType();
+                Assert.assertTrue(
+                        String.format(METHOD_RETURN_TYPE_ERROR,
+                                methodName,
+                                className,
+                                methodReturnTypes.get(methodName)),
+                        returnType.equals(methodReturnTypes.get(methodName)));
+            \}
+
+        \}
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.stream.Stream;
+
+public class T04TestForNonPrivateFields \{
+        private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+        private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
+
+        private static final String\[\] classNames = new String\[\]\{
+                "Smartphone",
+        \};
+
+        @Test
+        public void test() \{
+            assertPrivateFields(classNames);
+        \}
+
+        private void assertPrivateFields(String\[\] classNames) \{
+            for (String className : classNames) \{
+                assertHasNoPrivateFields(className);
+            \}
+        \}
+
+        private void assertHasNoPrivateFields(String className) \{
+            Class cl = getClass(className);
+            Field\[\] fields = cl.getDeclaredFields();
+            long nonPrivateFieldsCount = Stream.of(fields)
+                    .filter(x -\> !Modifier.isPrivate(x.getModifiers()))
+                    .count();
+
+            Assert.assertEquals(String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className)
+                    , 0, nonPrivateFieldsCount);
+
+        \}
+
+        private Class getClass(String className) \{
+            Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                    Classes.allClasses.containsKey(className));
+
+            return Classes.allClasses.get(className);
+        \}
+
+    \}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.util.Arrays;
+
+public class T06TestInterfaces \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String CLASS_NOT_INSTANCE_OF_ERROR_MESSAGE = "Class %s is not istance of %s";
+
+    private static final String TESTED_CLASS = "Smartphone";
+    private static final String TESTED_INTERFACE = "Callable";
+    private static final String TESTED_INTERFACE_2 = "Browsable";
+
+    @Test
+    public void test() \{
+
+        assertClassExists(TESTED_CLASS);
+
+        String\[\] interfacesNames = new String\[\] \{TESTED_INTERFACE, TESTED_INTERFACE_2\};
+
+        assertClassInstanceOf(TESTED_CLASS, interfacesNames);
+    \}
+
+    private void assertClassExists(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+    \}
+
+    private void assertClassInstanceOf(String className, String\[\] interfaces) \{
+        Class child = Classes.allClasses.get(className);
+
+        Class\[\] implementedInterfaces = child.getInterfaces();
+
+        for (String anInterface : interfaces) \{
+            Class parent = Classes.allClasses.get(anInterface);
+            Assert.assertTrue(
+                    String.format(CLASS_NOT_INSTANCE_OF_ERROR_MESSAGE, className, anInterface),
+                    Arrays.asList(implementedInterfaces).contains(parent));
+        \}
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class T07TestCallMethod \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "call";
+    private static final String CLASS_NAME = "Smartphone";
+    private static final List\<String\> NORMAL_LIST_FROM_NUMBERS_PARAMETER =
+            new ArrayList\<String\>() \{\{
+                add("0888111222");
+            \}\};
+    private static final List\<String\> ILLEGAL_LIST_FROM_NUMBERS_PARAMETER =
+            new ArrayList\<String\>() \{\{
+                add("words2222");
+            \}\};
+    private static final String EXPECTED_RESULT_1 =
+            "Calling... 0888111222";
+    private static final String EXPECTED_RESULT_2 =
+            "Invalid number!";
+
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, String.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{\});
+    \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createInstance() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                List.class, List.class);
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                NORMAL_LIST_FROM_NUMBERS_PARAMETER, new ArrayList\<\>()
+        );
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertEquals(String.format(METHOD_RETURN_TYPE_ERROR,
+                    methodName,
+                    CLASS_NAME,
+                    methodReturnTypes.get(methodName)), returnType, methodReturnTypes.get(methodName));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return correctBehaviour(method, cl)
+                && correctBehaviourWithIllegalParams(method, cl);
+    \}
+
+    private boolean correctBehaviourWithIllegalParams(Method method, Class cl) throws IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException \{
+        Constructor constructor = cl.getDeclaredConstructor(
+                List.class, List.class);
+        this.currentObject =constructor.newInstance(
+                ILLEGAL_LIST_FROM_NUMBERS_PARAMETER, new ArrayList\<\>());
+
+        String result = (String) method.invoke(this.currentObject);
+
+        return EXPECTED_RESULT_2.equals(result.trim());
+    \}
+
+    private boolean correctBehaviour(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+
+        String result = (String) method.invoke(this.currentObject);
+
+        return EXPECTED_RESULT_1.equals(result.trim());
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class T08TestBrowseMethod \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String WRONG_RESULT = "Wrong result";
+    private static final String TEST_METHOD_NAME = "browse";
+    private static final String CLASS_NAME = "Smartphone";
+    private static final List\<String\> NORMAL_LIST_FROM_URLS_PARAMETER =
+            new ArrayList\<String\>() \{\{
+                add("http://softuni.org");
+            \}\};
+    private static final List\<String\> ILLEGAL_LIST_FROM_URLS_PARAMETER =
+            new ArrayList\<String\>() \{\{
+                add("words2222");
+            \}\};
+    private static final String EXPECTED_RESULT_1 =
+            "Browsing: http://softuni.org!";
+    private static final String EXPECTED_RESULT_2 =
+            "Invalid URL!";
+
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, String.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{\});
+    \}\};
+
+    private Object currentObject;
+
+    @Before
+    public void createInstance() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getDeclaredConstructor(
+                List.class, List.class);
+        constructor.setAccessible(true);
+        this.currentObject = constructor.newInstance(
+                new ArrayList\<\>(), NORMAL_LIST_FROM_URLS_PARAMETER
+        );
+    \}
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        for (String methodName : methodNames) \{
+            Method method =
+                    methodParameters.get(methodName).length == 0
+                            ? cl.getDeclaredMethod(methodName)
+                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertEquals(String.format(METHOD_RETURN_TYPE_ERROR,
+                    methodName,
+                    CLASS_NAME,
+                    methodReturnTypes.get(methodName)), returnType, methodReturnTypes.get(methodName));
+
+            Assert.assertTrue(WRONG_RESULT,
+                    assertMethodWorksCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertMethodWorksCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return correctBehaviour(method, cl)
+                && correctBehaviourWithIllegalParams(method, cl);
+    \}
+
+    private boolean correctBehaviourWithIllegalParams(Method method, Class cl) throws IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchMethodException \{
+        Constructor constructor = cl.getDeclaredConstructor(
+                List.class, List.class);
+        this.currentObject = constructor.newInstance(
+                new ArrayList\<\>(), ILLEGAL_LIST_FROM_URLS_PARAMETER);
+
+        String result = (String) method.invoke(this.currentObject);
+
+        return EXPECTED_RESULT_2.equals(result.trim());
+    \}
+
+    private boolean correctBehaviour(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        method.setAccessible(true);
+
+        String result = (String) method.invoke(this.currentObject);
+
+        return EXPECTED_RESULT_1.equals(result.trim());
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 [slide]
 # Homework Results
 [tasks-results/]
