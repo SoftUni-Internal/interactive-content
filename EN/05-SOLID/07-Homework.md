@@ -159,9 +159,9 @@ If no report level is provided, the appender should be set to record all message
 
 If there is no report level, value is **INFO**.
 
-Next, until you get the **&quot;END&quot;** command you will receive messages containing report level, time and message separated by pipe **&quot;|&quot;** :
+Next, until you get the **END** command you will receive messages containing report level, time and message separated by pipe `|`:
 
-- **"`<REPORT LEVEL>`|`<time>`|`<message>`**
+- `<REPORT LEVEL>|<time>|<message>`
 
 ### Output
 
