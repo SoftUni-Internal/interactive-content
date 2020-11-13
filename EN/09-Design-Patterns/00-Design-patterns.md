@@ -54,6 +54,8 @@ Lets see the Elements of our design patterns:
 
 # Benefits and drawbacks of using Design Patterns
 
+## Benefits
+
 Now, we will talk a little bit about benefits and drawbacks using design patterns.
 
 Lets start first with the benefits:
@@ -66,17 +68,25 @@ We can say that coupling components interact with each other. This is how they p
 
 We cannot remove entirely the need for components to interact with each other.
 
-Usually low coupling indicates a good code structure.
+Usually low coupling indicates a **good code structure**.
 
 Coupling has many types, but we would not go that further.
 
-Design patterns can make our job easier. They can help us analyze the more abstract ideas of our program by p**roviding well tested solutions**.
+Design patterns can make our job easier. They can help us analyze the more abstract ideas of our program by **providing well tested solutions**.
 
 It is important to understand, that design patterns teach us to write **faster** and **more clear** code. It provide us a clearer picture of how we are implemeneting the software design.
 
+## Drawbacks
 
+Unfortunately, design patterns **do not lead** to a direct code reuse.
 
+Sometimes we tend to **overload** and **overdesign** our patterns.
 
+Design patterns should be used only if they are well understood from the developers.
+
+Often they are used improperly without a realistic understanding of how our software **is going to change in the future**.
+
+Now, let's continue to the next important information in our lesson: **Design Pattern Types**
 
 
 
