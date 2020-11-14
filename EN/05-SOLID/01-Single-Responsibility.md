@@ -40,7 +40,7 @@ From the name of the class, we can find out what exactly it is responsible for, 
 
 Therefore, in this class, we should not look for something that is not related to the settings of the character.
 
-But in the code above, we have two two responsibilities: **manipulating** and **printing**.
+But in the code above, we have two responsibilities: **manipulating** and **printing**.
 
 Having a method that prints out the hero features in this class **violate the Single Responsibility Principle**. 
 
