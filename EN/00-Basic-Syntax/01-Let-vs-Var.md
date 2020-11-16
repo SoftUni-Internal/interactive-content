@@ -36,7 +36,9 @@ console.log(myVar);
 var myVar = 'Peter';
 ```
 
-Here we get undefined, because we don't know the value of the variable, nut we can access it.
+Here we get undefined, because we don't know the value of the variable, nut we can access it. 
+
+But it's important that **no error is thrown**, the program works, that could lead to **unexpected results** of our program.
 
 Whereas when we declare a variable with `let`, this variable is available in **block scope**.
 
@@ -49,6 +51,14 @@ This can be the body of some `if` constructions, loops, or the body of a functio
     let x = 2;
 }
 console.log(x) // undefined
+```
+
+When we declare a varible with let, we can't access it, if we try to acces that varible, we receive an arror.
+
+``` js live
+console.log(myVar);
+
+let myVar = 'Peter';
 ```
 
 [/slide]
