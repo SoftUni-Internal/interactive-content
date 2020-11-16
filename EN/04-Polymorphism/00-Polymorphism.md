@@ -375,7 +375,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[/slide]
+[slide]
 # Solution: MathOperation
 
 [/slide]
@@ -408,7 +408,5 @@ Test Passed!
 - Overloaded methods must have **different argument list**.
 
 - Overloaded method should always be the part of the same class, with **same name** but **different parameters**.
-
-
 
 [/slide]
