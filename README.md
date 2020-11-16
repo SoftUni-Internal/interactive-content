@@ -1,1 +1,1 @@
-# programming-basics-with-javascript
+# JS-Fundamentals
