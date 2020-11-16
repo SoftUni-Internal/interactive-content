@@ -508,6 +508,243 @@ Bus: 23.00
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+# Problem: Wild Farm
+[code-task title="Problem: Wild Farm" taskId="9499f201-5601-481d-b5a2-225b32fdbbc5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Your task is to create a class **hierarchy** like the picture below. 
+
+All the classes **except** **Vegetable**, **Meat**, **Mouse**, **Tiger**, **Cat** & **Zebra** should be **abstract**.
+
+[image assetsSrc="interfaces-and-abstraction-example(17).png" /]
+
+Input should be read from the console. 
+
+Every **even** line will contain information about the **Animal** in following format:
+
+**{AnimalType} {AnimalName} {AnimalWeight} {AnimalLivingRegion} [{CatBreed} = Only if its cat]**
+
+On the **odd** lines you will receive information about the **food** that you should give to the **Animal**. 
+
+The line will consist of **FoodType** and **quantity** separated by a whitespace.
+
+You should build the logic to determine if the animal is going to eat the provided food. 
+
+The **Mouse** and **Zebra** should check if the food is a **Vegetable**. 
+
+If it is they will eat it. Otherwise you should print a message in the format:
+
+**{AnimalType} are not eating that type of food!**
+
+**Cats** eat **any** kind of food, but **Tigers** accept **only Meat**. 
+
+If **Vegetable** is provided to a **tiger** message like the one above should be printed on the console.
+
+After you read information about the **Animal** and **Food** then invoke **makeSound()** method of the current animal and then feed it. 
+
+At the end print the whole object and proceed reading information about the next animal/food. 
+
+The input will continue until you receive "**End**". 
+
+After that print the information of all received animals in format:
+
+**{AnimalType} [{AnimalName}, {CatBreed}, {AnimalWeight}, {AnimalLivingRegion}, {FoodEaten}]**
+
+Print all **AnimalWeight** with no trailing zeroes after the decimal separator. 
+
+Use the **DecimalFormat** class.
+
+## Note: 
+Consider overriding **toString()** method.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| Cat Gray 1.1 Home Persian | Meowwww |
+| Vegetable 4 | Cat[Gray, Persian, 1.1, Home, 4] |
+| End |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Tiger Tom 167.7 Asia | ROAAR!!! |
+| Vegetable 1 | Tigers are not eating that type of food! |
+| End | Tiger[Tom, 167.7, Asia, 0] |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Zebra Jaguar 500 Africa | Zs |
+| Vegetable 150 | Zebra[Jaguar, 500, Africa, 150] |
+| End |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| Mouse Jerry 0.5 Anywhere | SQUEEEAAAK! |
+| Vegetable 0 | Mouse[Jerry, 0.5, Anywhere, 0] |
+| End |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Cat Gray 1.1 Home Persian
+Vegetable 4
+End
+[/input]
+[output]
+Meowwww
+Cat\[Gray, Persian, 1.1, Home, 4\]
+[/output]
+[/test]
+[test open]
+[input]
+Tiger Tom 167.7 Asia
+Vegetable 1
+End
+[/input]
+[output]
+ROAAR!!!
+Tigers are not eating that type of food!
+Tiger\[Tom, 167.7, Asia, 0\]
+[/output]
+[/test]
+[test open]
+[input]
+Zebra Jaguar 500 Africa
+Vegetable 150
+End
+[/input]
+[output]
+Zs
+Zebra\[Jaguar, 500, Africa, 150\]
+[/output]
+[/test]
+[test open]
+[input]
+Mouse Jerry 0.5 Anywhere
+Vegetable 0
+End
+[/input]
+[output]
+SQUEEEAAAK!
+Mouse\[Jerry, 0.5, Anywhere, 0\]
+[/output]
+[/test]
+[test]
+[input]
+Cat Spas 7.250 Streets Unknown
+Meat 3
+Cat Tutcho 2.127 US_Home British
+Vegetable 10
+End
+[/input]
+[output]
+Meowwww
+Meowwww
+Cat\[Spas, Unknown, 7.25, Streets, 3\]
+Cat\[Tutcho, British, 2.13, US_Home, 10\]
+[/output]
+[/test]
+[test]
+[input]
+Cat Spas 0.750 Home Persian_Angorian
+Meat 143
+Mouse Mincho 4.23 Home
+Meat 1
+Tiger Giggs 4 Asia
+Vegetable 0
+End
+[/input]
+[output]
+Meowwww
+SQUEEEAAAK!
+Mice are not eating that type of food!
+ROAAR!!!
+Tigers are not eating that type of food!
+Cat\[Spas, Persian_Angorian, 0.75, Home, 143\]
+Mouse\[Mincho, 4.23, Home, 0\]
+Tiger\[Giggs, 4, Asia, 0\]
+[/output]
+[/test]
+[test]
+[input]
+Zebra Zebrin 345.235 Zoo
+Meat 55
+Tiger Tigrin 913 Zoo
+Vegetable 214
+Mouse Mousin 0.2 Zoo
+Meat 345
+End
+[/input]
+[output]
+Zs
+Zebras are not eating that type of food!
+ROAAR!!!
+Tigers are not eating that type of food!
+SQUEEEAAAK!
+Mice are not eating that type of food!
+Zebra\[Zebrin, 345.24, Zoo, 0\]
+Tiger\[Tigrin, 913, Zoo, 0\]
+Mouse\[Mousin, 0.2, Zoo, 0\]
+[/output]
+[/test]
+[test]
+[input]
+Cat No_Name 0.100 Cat_Clinic Unhealty_Cat
+Meat 100
+Tiger No_Name 100 Cat_Clinic
+Meat 1000
+Cat MyCat 1.120 @Home Persian/British
+Meat 17
+End
+[/input]
+[output]
+Meowwww
+ROAAR!!!
+Meowwww
+Cat\[No_Name, Unhealty_Cat, 0.1, Cat_Clinic, 100\]
+Tiger\[No_Name, 100, Cat_Clinic, 1000\]
+Cat\[MyCat, Persian/British, 1.12, @Home, 17\]
+[/output]
+[/test]
+[test]
+[input]
+Cat No_Name 0.100 Cat_Clinic Unhealty_Cat
+Vegetable 100
+Tiger No_Name 100 Cat_Clinic
+Vegetable 1000
+Cat MyCat 1.120 @Home Persian/British
+Vegetable 17
+End
+[/input]
+[output]
+Meowwww
+ROAAR!!!
+Tigers are not eating that type of food!
+Meowwww
+Cat\[No_Name, Unhealty_Cat, 0.1, Cat_Clinic, 100\]
+Tiger\[No_Name, 100, Cat_Clinic, 0\]
+Cat\[MyCat, Persian/British, 1.12, @Home, 17\]
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
 [slide]
 # Homework Results
 [tasks-results/]
