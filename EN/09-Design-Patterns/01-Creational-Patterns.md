@@ -7,7 +7,7 @@ Now, let's see the types of design patterns:
 
 Creational patterns are **object creational design patterns**.
 
-We use this patterns when we must take a decision how to create an object of a class.
+We use these patterns when we must decide on how to create an object of a class.
 
 They contain two main ideas:
 
@@ -17,11 +17,11 @@ They contain two main ideas:
 
 ## Singleton design pattern
 
-Singleton pattern is one of the most used creational design pattern
+Singleton pattern is one of the most used creational design patterns
 
-A concept of singleton class is a class that have only one object at a time.
+A concept of the singleton class is a class that has only one object at a time.
 
-Difference between normal class and singleton class is that we use constructor to initialize normal class, whereas for singleton class we use the method `getInstance()`
+The difference between a normal class and a singleton class is that we use a constructor to initialize the normal class, whereas for a singleton class we use the method `getInstance()`
 
 Let's see this in a simple example:
 
@@ -33,7 +33,7 @@ public class Singleton {
     //first, lets create an object of SingleObject
     private static Singleton instance = new Singleton();
 
-    //second, lets make the constructor private. By this way this class cannot be instantiated
+    //second let's make the constructor private. This way, this class cannot be instantiated
     private Singleton(){}
 
     //with getInstance method we get the only object available
@@ -87,9 +87,9 @@ By this way of creating it allows us to hide the complexity of making new instan
 
 The copied object acts as a prototype and contains the information of the actual object.
 
-Instead of using the `new` keyword we can use `clone()` method.
+Instead of using the `new` keyword, we can use `clone()` method.
 
-We can add or remove objects at runtime using prototype pattern.
+We can add or remove objects at runtime using the prototype pattern.
 
 [image assetsSrc="Design-Patterns.png" /]
 
@@ -127,7 +127,7 @@ We can use the **Prototype Design Pattern** when:
 
 - We need to instantiate classes at runtime.
 
-- When its complicated or expensive for us to create a class
+- When it's complicated or expensive for us to create a class
 
 - When our clients don't need to know of object creation and representation
 
@@ -139,15 +139,15 @@ We can use the **Prototype Design Pattern** when:
 
 # Builder design pattern
 
-Builder design pattern is used to assemble a complex structure step by step.
+The builder design pattern is used to assemble a complex structure step by step.
 
-At the final it will return the whole object. 
+In the final, it will return the whole object. 
 
 We can create an object with a lot of possible configuration options.
 
 Usage of Builder pattern:
 
-- When our construction process must allow different representation for the object that is constructed.
+- When our construction process must allow different representations for the object that is constructed.
 
 - When we want our algorithm for creating objects to be independent of the parts that make up our object and how they are assembled.
 
@@ -222,9 +222,9 @@ public class Builder {
 }
 ```
 
-With this builder pattern we have control over steps of **construction process**.
+With this builder pattern, we have control over the steps of the **construction process**.
 
-We can create a different representations with same construction process.
+We can create a different representation with the same construction process.
 
 
 [/slide]
