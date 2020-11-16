@@ -60,6 +60,7 @@ console.log(myVar);
 
 let myVar = 'Peter';
 ```
+We strongly advise you to use `let` when you **declare a variable**, that way you're going to protect yourself from unwanted behaviour of the program.
 
 [/slide]
 
@@ -71,7 +72,7 @@ Outside this scope variable **cannot be accessed.**
 
 We have **four types of scope**, and we will talk about them in more detail in the JavaScript Advanced course. 
 
-## Global scope
+# Global scope
 
 - all the variables we have defined at the top level. These are usually our functions
 
@@ -85,9 +86,9 @@ function myFunction() {
 
 In this example we define the variable `carName` in the global scope, outside the function, and thus we can access it in all functions.
 
-## Function Scope
+# Function Scope
 
-Functional scope it's the b**ody of the function** and each variable defined in the function lives o**nly in the body of the function**
+Functional scope it's the b**ody of the function** and each variable defined in the function lives **only in the body of the function**
 
 ``` JavaScript
 function myFunction() {
@@ -96,7 +97,7 @@ function myFunction() {
  }
  ```
 
-## Block Scope 
+# Block Scope 
 We also have a third type of scope that is **Block Scope**, which is any body that is defined in curly braces `{}`
 
 ``` JavaScript
@@ -111,10 +112,36 @@ From the programming basics course we know that we **can embed** `if-else` const
 
 So we put one block of code in another block of code.
 
+# Object Scoup
+
 The fourth type of scope is the **object scoup**, which is related to the **implementation of the functions**. We will talk about object scoup in more detail in the advanced course.
+
 [/slide]
 
 [slide]
 # Naming Variables
 
+When we create a variable, we use `cammelCase`, which means that the variable starts with a **lowercase letter** and each subsequent word is with a c**apital letter**.
+
+Names are also case sensitive.
+
+To be valid, the variable must start with either a **letter** or an **underscore**, but cannot begin with a number.
+
+`firstName, report, config, fontSize, maxSpeed`
+
+There are keywords in javascript that we **cannot use** for our variable names:
+
+`break, const, interface, typeof, true` etc.
+
+Naming variables is very **important** and also quite difficult.
+ 
+We need to know what the variable will be used for in the future to know how to name it.
+
+This rule is even more important when naming a **function** or a **class**. 
+
+Because in the future we can add some **functionality** to the function and we have to provide this in the naming of the functions. 
+
+This rule applies less to functions because it is **not a good practice to change** the functionality of the function.
+
+But this rule applies in full force to the **classes**, because a class can g**row a lot over time** and the name we have given is initially not good.
 [/slide]
