@@ -1,12 +1,10 @@
 [slide]
 # Homework
-Welcome to the homework. 
+Welcome to the homework tab. 
 
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
+Now we are going to create a couple of **console applications**, with which we are going to take a few more steps further into programming. 
 
 We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
 [image assetsSrc="homeowrk.png" /]
 [/slide]
 

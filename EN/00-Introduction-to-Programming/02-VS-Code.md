@@ -4,17 +4,21 @@
 # Development Environments (IDE)
 In order to program we need an **Integrated Development Environment** (IDE). 
 
-**An environment for development** (Integrated Development Environment – **IDE**) is a combination of traditional tools for development of software applications. 
+An **Integrated Development Environment** (or IDE) is a combination of some traditional tools for creating software applications.
 
-In the development environment we write code, compile and execute the programs. Development environments integrate in them a text editor for writing code, a programming language, a compiler or an interpreter and a runtime environment for executing programs, a debugger for tracking the program and seeking out errors, tools for user interface design and other tools and add-ons.
+In the development environment we can **write code**, **compile**, and e**xecute programs**. 
 
-**Environments for development** are convenient, because they integrate everything necessary for the development of the program, without the need to exit the environment. 
+Development environments usually integrate a **text editor**, a **programming language**, a **compiler** or an **interpreter** and a runtime environment for **executing programs**.
 
-If we don't use an environment for development, we will have to write the code in a text editor, to compile it with a command on the console, to run it with another command on the console and to write more additional commands when needed, which is very time consuming. 
+They also may contain a **debugger** for tracking the program and seeking out errors, and tools for **user interface design** or other utilities and add-ons. 
 
-For programming with **the JavaScript language** the most commonly used IDE is [Visual Studio Code](https://code.visualstudio.com), which is developed and distributed freely by Microsoft.
+Development environments are convenient, because they integrate **everything necessary for the development** of a program, in some cases even without the need for external tools.
 
-Alternatives of Visual Studio Code are:
+If we don't use an IDE, we would have to write the code in a **text editor**, compile it with a command on the console, run it with another console command and eventually include additional commands whenever needed, which is very time consuming. 
+
+For programming with **JavaScript**, the most commonly used IDE is [Visual Studio Code](https://code.visualstudio.com), which is developed and distributed freely by Microsoft.
+
+Some of the **popular** alternatives to Visual Studio Code are: 
 
 - [WebStorm](https://www.jetbrains.com/webstorm/download)
 - [Atom](https://atom.io)
@@ -22,9 +26,9 @@ Alternatives of Visual Studio Code are:
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 - [Eclipse](https://www.eclipse.org/downloads/)
 
-In this course, we are going to use the development environment **Visual Studio Code**.
+In this course, we are going to use **Visual Studio Code.** 
 
-This an example how a development IDE may look (the Visual Studio Code IDE for JavaScript):
+This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScript):
 
 [image assetsSrc="intro-to-programming-6.png" /]
 
@@ -33,6 +37,7 @@ This an example how a development IDE may look (the Visual Studio Code IDE for J
 [slide]
 # Installing Node.js and Visual Studio Code
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
+
 * server-side JS runtime.
 
 [image assetsSrc="intro-to-programming-3.png" /]
@@ -63,7 +68,7 @@ Press the `[Next]` button and you will see the screen bellow:
 You can choose a destination location or leave the default one. Then press the `[Next]` button again.
 [image assetsSrc="intro-to-programming-install-vscode-3.png" /]
 
-Now we have to select Start Menu Folder. 
+Now we have to specify a name for the program folder which will be created in the Start Menu. 
 
 The next step is to put check marks on the these tasks:
 [image assetsSrc="intro-to-programming-install-vscode-4.png" /]
