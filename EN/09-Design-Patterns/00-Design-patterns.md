@@ -18,7 +18,7 @@ They are more like a **description of templates** for how to solve problems that
 
 Why we use **design patterns**?
 
-By using design patterns we can solve software structural problems and speed the development process by providing ** well-proven development paradigms**.
+By using design patterns we can solve software structural problems and speed the development process by providing **well-proven development paradigms**.
 
 Also, we can prevent later issues that can cause serious problems and by using design patterns we improve code readability.
 
