@@ -47,9 +47,10 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 ```
 [/slide]
 
+
 [slide]
 # Problem: Concantenate names
-[code-task title="Problem 1. Concantenate names" taskId="33b168f1-6946-4196-8d4d-81fffb38290e" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -58,11 +59,10 @@ let lastName = input[1];
 let delimiter = input[2];
 
 console.log(`${firstName}${delimiter}${lastName}`);
-}
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a program, which: 
 - Receive two names as string parameters and a delimiter
 - Print the names joined by the delimiter
@@ -82,27 +82,7 @@ John
 Smith
 [/input]
 [output]
-John-\>Smith
-[/output]
-[/test]
-[test]
-[input]
-John
-\-
-Smith
-[/input]
-[output]
-John\-Smith
-[/output]
-[/test]
-[test]
-[input]
-John
-\-\>
-Smith
-[/input]
-[output]
-John-\>Smith
+John\-\>Smith
 [/output]
 [/test]
 [test]
@@ -116,7 +96,7 @@ Jan=White
 [/output]
 [/test]
 [/tests]
-[code-io/]
+[code-io /]
 [/code-task]
 
 [/slide]
