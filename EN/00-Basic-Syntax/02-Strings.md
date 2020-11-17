@@ -39,4 +39,13 @@ We know we can change the **data held by a variable**, but we can't change symbo
 [slide]
 # String Interpolation
 
+Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
+
+In JavaScript, the template literals (strings wrapped in backticks \`\`) and `${expression}` as placeholder perform the string interpolation.
+
+``` js live
+let name = 'Rick';
+let age = 18;
+console.log(`${name} = ${age}`);
+```
 [/slide]
