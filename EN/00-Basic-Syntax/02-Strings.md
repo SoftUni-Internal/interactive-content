@@ -79,11 +79,11 @@ Write a program, which:
 [test]
 [input]
 John
-\-\>
+->
 Smith
 [/input]
 [output]
-John\-\>Smith
+John->Smith
 [/output]
 [/test]
 [test]
