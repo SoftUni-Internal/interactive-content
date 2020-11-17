@@ -158,6 +158,15 @@ White
 Jan\<\-\>White
 [/output]
 [/test]
+[input]
+Jan
+White
+\-
+[/input]
+[output]
+Jan\-White
+[/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
