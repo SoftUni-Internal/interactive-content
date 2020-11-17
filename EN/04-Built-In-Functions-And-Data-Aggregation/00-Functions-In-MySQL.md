@@ -164,4 +164,44 @@ Submit your query statements as Prepare DB & run queries.
 
 # REPLACE Function
 
+Now, let's take a look at the `REPLACE()` Function in MySQL:
+
+`REPLACE()` Function allows us to replace all occurrences of a substring with a string.
+
+It's important to know that this method performs a **case-sensitive** match.
+
+The **Syntax** here we can use is:
+
+``` java
+REPLACE(String, Pattern, Replacement) // Where String is our field from the table.
+                                      // Pattern is the String which we need to replace
+                                      // Replacement is our replacement pattern                               
+```
+
+Take a look at this simple code:
+
+``` java
+SELECT REPLACE('aaa.softuni.org','a','w'); // this example will replace all "a" with "w"
+```
+
+**Output after executing will be:**
+
+```
+www.softuni.org
+```
+
+Using this method we can **replace whole words**:
+
+``` java
+SELECT REPLACE('We can replace the word blood with different symbol or words', 'blood', '*****') 
+// Where we first have our text, second we write the word we need to replace, and the last we write the replacement symbol or character.
+```
+
+**Output will be:**
+
+```
+We can replace the word ***** with different symbol or words
+```
+
+
 [/slide]
