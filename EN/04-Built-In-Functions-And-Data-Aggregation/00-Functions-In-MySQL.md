@@ -2,7 +2,7 @@
 
 # Functions in MySQL
 
-*U can download the resources needed for this lesson from here: [Mega.nz](https://mega.nz/file/mUghgSyJ#LvZ-9YTr0Xd9d_9SBuM-4ugbU_eWZdAtixcFb854nAU)*
+*U can download the resources needed for this lesson from here:* [Mega.nz](https://mega.nz/file/mUghgSyJ#LvZ-9YTr0Xd9d_9SBuM-4ugbU_eWZdAtixcFb854nAU)
 
 Today, we will talk about `Functions` in MySQL.
 
