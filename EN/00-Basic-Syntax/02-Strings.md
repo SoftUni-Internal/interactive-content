@@ -80,7 +80,7 @@ Write a program, which:
 [test open]
 [input]
 John
--\>
+\-\>
 Smith
 [/input]
 [output]
@@ -90,7 +90,7 @@ John-\>Smith
 [test]
 [input]
 John
--
+\-
 Smith
 [/input]
 [output]
@@ -100,21 +100,21 @@ John-Smith
 [test]
 [input]
 Jan
-=
+\=
 White
 [/input]
 [output]
-Jan=White
+Jan\=White
 [/output]
 [/test]
 [test]
 [input]
 Jan
-=
+\=
 White
 [/input]
 [output]
-Jan=White
+Jan\=White
 [/output]
 [/test]
 [/tests]
