@@ -84,7 +84,6 @@ Smith
 John\-\>Smith
 [/output]
 [/test]
-[test open]
 [input]
 Jan
 White
@@ -148,7 +147,6 @@ Smith
 John\-\>Smith
 [/output]
 [/test]
-[test open]
 [input]
 Jan
 White
