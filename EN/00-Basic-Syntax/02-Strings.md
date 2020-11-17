@@ -84,6 +84,7 @@ Smith
 John\-\>Smith
 [/output]
 [/test]
+[test]
 [input]
 Jan
 White
@@ -91,15 +92,6 @@ White
 [/input]
 [output]
 Jan\<\-\>White
-[/output]
-[/test]
-[input]
-Jan
-White
-\-
-[/input]
-[output]
-Jan\-White
 [/output]
 [/test]
 [/tests]
@@ -147,6 +139,7 @@ Smith
 John\-\>Smith
 [/output]
 [/test]
+[test]
 [input]
 Jan
 White
@@ -154,15 +147,6 @@ White
 [/input]
 [output]
 Jan\<\-\>White
-[/output]
-[/test]
-[input]
-Jan
-White
-\-
-[/input]
-[output]
-Jan\-White
 [/output]
 [/test]
 [/tests]
