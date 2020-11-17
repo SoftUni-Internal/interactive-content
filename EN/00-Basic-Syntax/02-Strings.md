@@ -48,69 +48,8 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [/slide]
 
 [slide]
-# Problem: Concatenate Names 
-[code-task title="Concatenate Names" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function concatNames(input){
-
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-- Receive two names as string parameters and a delimiter
-- Print the names joined by the delimiter
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['John', 'Smith', '->']`| John\-\>Smith |
-|`['Jan', 'White', '<->']`|Jan\<\-\>White|
-
-[/task-description]
-[tests]
-[test]
-[input]
-John
-\-\>
-Smith
-[/input]
-[output]
-John\-\>Smith
-[/output]
-[/test]
-[test]
-[input]
-Jan
-<\-\>
-White
-[/input]
-[output]
-Jan<\-\>White|
-[/output]
-[/test]
-[test]
-[input]
-John
-\-\>
-Smith
-[/input]
-[output]
-John\-\>Smith
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Concatenate Names 
-[code-task title="Concatenate Names" executionStrategy="javascript-code" requiresInput]
+# Problem: Concantenate names
+[code-task title="Problem 1. Concantenate names" taskId="33b168f1-6946-4196-8d4d-81fffb38290e" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -123,9 +62,8 @@ console.log(`${firstName}${delimiter}${lastName}`);
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
-
+## Description
+Write a program, which: 
 - Receive two names as string parameters and a delimiter
 - Print the names joined by the delimiter
 
@@ -135,40 +73,50 @@ Write a program, which:
 |`['John', 'Smith', '->']`| John\-\>Smith |
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
 
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John
-\-\>
+-\>
 Smith
 [/input]
 [output]
-John\-\>Smith
+John-\>Smith
+[/output]
+[/test]
+[test]
+[input]
+John
+-
+Smith
+[/input]
+[output]
+John-Smith
 [/output]
 [/test]
 [test]
 [input]
 Jan
-<\-\>
+=
 White
 [/input]
 [output]
-Jan<\-\>White|
+Jan=White
 [/output]
 [/test]
 [test]
 [input]
-John
-\-\>
-Smith
+Jan
+=
+White
 [/input]
 [output]
-John\-\>Smith
+Jan=White
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
