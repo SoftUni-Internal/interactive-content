@@ -59,6 +59,7 @@ let lastName = input[1];
 let delimiter = input[2];
 
 console.log(`${firstName}${delimiter}${lastName}`);
+}
 ```
 [/code-editor]
 [task-description]
