@@ -72,13 +72,12 @@ Write a program, which:
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
 
 [/task-description]
-[code-io /]
 [tests]
-[test open]
+[test]
 [input]
 John
-Smith
 \-\>
+Smith
 [/input]
 [output]
 John\-\>Smith
@@ -86,15 +85,26 @@ John\-\>Smith
 [/test]
 [test]
 [input]
-Jan
-White
-\<\-\>
+John
+\-\>
+Smith
 [/input]
 [output]
-Jan\<\-\>White
+John\-\>Smith
+[/output]
+[/test]
+[test]
+[input]
+John
+\-\>
+Smith
+[/input]
+[output]
+John\-\>Smith
 [/output]
 [/test]
 [/tests]
+[code-io /]
 [/code-task]
 [/slide]
 
@@ -127,13 +137,12 @@ Write a program, which:
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
 
 [/task-description]
-[code-io /]
 [tests]
-[test open]
+[test]
 [input]
 John
-Smith
 \-\>
+Smith
 [/input]
 [output]
 John\-\>Smith
@@ -141,14 +150,25 @@ John\-\>Smith
 [/test]
 [test]
 [input]
-Jan
-White
-\<\-\>
+John
+\-\>
+Smith
 [/input]
 [output]
-Jan\<\-\>White
+John\-\>Smith
+[/output]
+[/test]
+[test]
+[input]
+John
+\-\>
+Smith
+[/input]
+[output]
+John\-\>Smith
 [/output]
 [/test]
 [/tests]
+[code-io /]
 [/code-task]
 [/slide]
