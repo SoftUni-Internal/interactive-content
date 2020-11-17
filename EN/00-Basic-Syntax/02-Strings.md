@@ -95,7 +95,7 @@ White
 \<\-\>
 [/input]
 [output]
-Jan\<\-\>\White
+Jan\<\-\>White
 [/output]
 [/test]
 [test]
