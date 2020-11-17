@@ -4,11 +4,11 @@
 In programming, each **variable** stores a certain value of a particular type. 
 
 For example, data types can be: 
-* number: 1, 2, 3.14, -1, 1.5e38 etc.
+* a number: 1, 2, 3.14, -1, 1.5e38 etc.
 * text (string): 'Hello', "Hi", "How are you?" etc.
 * boolean: true or false
 
-You can also imagine that **variables** are containers for data or named areas in the memory and the data that they are storing can be read and changed at any time. 
+We can imagine **variables** as containers for data or named areas in the memory. The data that they are storing can be read and changed at any time.
 
 Basically **variables** provide means for:
   * **Storing** data
@@ -28,7 +28,8 @@ let name = "Bob";
 let employed = true;
 let age = 35;
 ```
-If you think of the variables as boxes that hold information, this is how they would look like:
+
+If we think of the variables as boxes that hold information, this is how they would look:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
 Variables can be stored in the program's:
