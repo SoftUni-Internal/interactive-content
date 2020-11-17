@@ -2,6 +2,7 @@
 
 # What is Polymorphism?
 
+
 Hello there! Today, we will try to understand the nature of the forth OOP principle - **The Polymorphism**!
 
 [image assetsSrc="Polymorphism-example.png" /]
@@ -213,7 +214,7 @@ class Calculation {
   public static void main(String args[]) {  
     Calculation calculator = new Calculation();  
     obj.sum(5,10,15);  // 30
-    obj.sum(20,40);   //60
+    obj.sum(20,40);   // 60
   }  
 }  
 ```
