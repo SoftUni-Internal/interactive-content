@@ -36,6 +36,6 @@ Let's see some of the advantages using **TDD**:
 
 - TDD has more and higher test coverage of the code due to higher test density.
 
-
+[image assetsSrc="Design-Patterns(5).png" /]
 
 [/slide]
