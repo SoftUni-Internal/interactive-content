@@ -11,10 +11,10 @@ First, let's understand what the acronym **CRUD** stands for including few query
 -> **C** stands for **CREATE** -- using the **INSERT INTO** statement we can choose table and rows which we want to populate,  
  indicating the values after the **VALUES** keyword.
 
-``` sql
-INSERT INTO                                  --Here we insert records
-students (full_name, age, course)            --in our students table
-VAlUES                                       --with the desired values.
+```java
+INSERT INTO                                  //Here we insert records
+students (full_name, age, course)            //in our students table
+VAlUES                                       //with the desired values.
 ('Jane Doe', 14, 'Java Basics'),               
 ('John Doe', 22, 'JavaScript Applications');
 ```
