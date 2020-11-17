@@ -90,11 +90,11 @@ John\-\>Smith
 [test]
 [input]
 Jan
-\<\-\>
+<\-\>
 White
 [/input]
 [output]
-Jan\<\-\>White|
+Jan<\-\>White|
 [/output]
 [/test]
 [test]
