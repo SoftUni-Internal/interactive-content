@@ -19,7 +19,7 @@ Common actions include:
   ```
 -  **Assigning** a value
 
-  After you declare a variable, you can assign a value to a variable. 
+After we declare a variable, we can assign a value to it.
   
   Assigning a value to a variable means **storing** a **value** to a variable.
   ```js

@@ -35,7 +35,8 @@ console.log(firstNum + secondNum); // 15
 ## Formatting
 JavaScript allows us to format floating-point numbers.
 
-In the following example we format the number to 2 digits after the decimal point:
+In the following example we format the number to 2 digits after the decimal point by using the `toFixed(2)` method:
+
 ```js
 function calculateSquareArea(input) {
   let a = Number(input);
@@ -49,13 +50,13 @@ We can format text in JS using also the following $ syntax. It provides simplifi
 
 Еnclosed by the back-tick (**\` \`**) character instead of double or single quotes
 
-May contain placeholders which are indicated by the dollar sign and curly braces (**`${expression}`**):
+May contain placeholders which are indicated by the dollar sign and curly braces (`${expression}`):
 ```js
 let name = "John"; 
 console.log(`Hi, ${name}`);
 ```
+The `$` prefix before a string in JS enables the so called **string interpolation**: replacing all expressions,which are placed in curly brackets `{ }` in the text with their values. 
 
-The `$` prefix before a string in JS enables the so called **"string interpolation"**: replacing all expressions, staying in curly brackets `{ }` in the text with their values.
 [/slide]
 
 [slide]
@@ -96,7 +97,7 @@ I am from Sofia!
 
 [slide]
 # Reading Numbers
-In order to read an  **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
+In order to read a **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
 
 ```js
 function example(input){
@@ -105,12 +106,10 @@ function example(input){
 ```
 The above line of JS code **reads a number** from the first line on the console.
 
-Try to write a wrong number, for example **"hello"**. 
-
-You will receive `NaN` which is the acronym for **Not a number**.
+If we try to assign a non-numeric value to this variable, for example `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
 
 # Example: Calculating a Square Area
-This code demonstrates how we can calculate the square area by the given length of the side:
+This code demonstrates how we can calculate the area of a square by given length of its side: 
 ```js
 function example(input){
     let a = Number(input);
@@ -136,7 +135,7 @@ function sayHello (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a **function**, which, reads a user input: **name**, from the console and prints "Hello, \{name\}", where {**name**} is the **user input**.
+Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
 
 ## Example
 | **Input** | **Output** |
@@ -195,7 +194,7 @@ function sayHello (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a **function**, which, reads a user input: **name**, from the console and prints "Hello, \{name\}", where {**name**} is the **user input**.
+Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
 
 ## Example
 | **Input** | **Output** |
@@ -243,11 +242,11 @@ Hello, George
 
 [slide]
 # Concatenating Text and Numbers
-Besides for summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
+Aside from summing summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
 
 In programming, joining two pieces of text is called **"concatenation"**. 
 
-Here is how we can concatenate a text with a number by the `+` operator:
+Here is how we can concatenate text with a number 
 
 ```js live
 let firstName = "John";

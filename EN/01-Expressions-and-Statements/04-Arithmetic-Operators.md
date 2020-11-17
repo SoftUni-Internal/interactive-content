@@ -46,7 +46,7 @@ Integer division can easily be achieved by flooring the quotient of the two numb
 let result = Math.floor(5/4);
 console.log(result);
 ```
-This leads to a problem though. What if you had a situation like this:
+This leads to a problem though. What if we have a situation like this: 
 ```js live
 let result = Math.floor(-5/4);
 console.log(result);

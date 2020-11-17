@@ -1,6 +1,6 @@
 [slide]
 # Summary 
-In this lesson you learnt:
+In this lesson we learned: 
 
 - Data types define the data range
 
