@@ -45,7 +45,7 @@ The `SUBSTRING()` function allows us to extract part of a string.
 We can use it this way:
 
 ``` java
-SUBSTRING(String, Position) // here we select our String and position from which we will take the substring
+SUBSTRING(String, Position) // Here we select our String and position from which we will take the substring
 ```
 
 **Example:**
@@ -63,7 +63,7 @@ oftuni.org
 Second way of using our `SUBSTRING()` is:
 
 ``` java
-SUBSTRING(String, Position, Length) // we take the index from where our result will start to index from where it will finish
+SUBSTRING(String, Position, Length) // We take the index from where our result will start to index from where it will finish
 ```
 
 **Example**:
@@ -181,7 +181,7 @@ REPLACE(String, Pattern, Replacement) // Where String is our field from the tabl
 Take a look at this simple code:
 
 ``` java
-SELECT REPLACE('aaa.softuni.org','a','w'); // this example will replace all "a" with "w"
+SELECT REPLACE('aaa.softuni.org','a','w'); // This example will replace all "a" with "w"
 ```
 
 **Output after executing will be:**
