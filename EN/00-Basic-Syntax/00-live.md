@@ -1,4 +1,0 @@
-[slide]
-# Live Session
-
-[/slide]
