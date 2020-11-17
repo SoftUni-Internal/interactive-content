@@ -50,5 +50,6 @@ WHERE course = 'JavaScipt Basics'   --where certain condition is true.
 [/slide]
 
 [slide]
+# Getting the Query Basics
 
 [/slide]
