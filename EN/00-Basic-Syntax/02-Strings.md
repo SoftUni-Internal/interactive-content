@@ -73,9 +73,7 @@ Write a program, which:
 |`['John', 'Smith', '->']`| John\-\>Smith |
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
 
-
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
@@ -94,29 +92,31 @@ John
 Smith
 [/input]
 [output]
-John-Smith
+John\-Smith
+[/output]
+[/test]
+[test]
+[input]
+John
+\-\>
+Smith
+[/input]
+[output]
+John-\>Smith
 [/output]
 [/test]
 [test]
 [input]
 Jan
-\=
+=
 White
 [/input]
 [output]
-Jan\=White
-[/output]
-[/test]
-[test]
-[input]
-Jan
-\=
-White
-[/input]
-[output]
-Jan\=White
+Jan=White
 [/output]
 [/test]
 [/tests]
+[code-io/]
 [/code-task]
+
 [/slide]
