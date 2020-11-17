@@ -53,6 +53,66 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-editor language=javascript]
 ```
 function concatNames(input){
+
+}
+```
+
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+- Receive two names as string parameters and a delimiter
+- Print the names joined by the delimiter
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['John', 'Smith', '->']`| John\-\>Smith |
+|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+John
+Smith
+\-\>
+[/input]
+[output]
+John\-\>Smith
+[/output]
+[/test]
+[test open]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[input]
+Jan
+White
+\-
+[/input]
+[output]
+Jan\-White
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide hideTitle]
+# Solution: Concatenate Names
+[code-task title="Concatenate Names" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function concatNames(input){
 let firstName = input[0];
 let lastName = input[1];
 let delimiter = input[2];
