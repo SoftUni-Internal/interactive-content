@@ -82,7 +82,8 @@ sof
 We can use the `SUBSTRING()` method this way too:
 
 ``` java
-SUBSTRING(String FROM Position FOR Length) // This way, we can choose from which position we want to start taking the substring and for what lenght.
+SUBSTRING(String FROM Position FOR Length) // This way, we can choose from which position we want to 
+                                           //  start taking the substring and for what lenght.
 ```
 
 **Example:**
