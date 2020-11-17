@@ -44,8 +44,8 @@ Replacing **placeholders** with values inside of a string literal is named strin
 In JavaScript, the template literals (strings wrapped in backticks \`\`) and `${expression}` as placeholder perform the string interpolation.
 
 ``` js live
-let name = 'Rick';
+let name = "Rick";
 let age = 18;
-console.log(`${name} = ${age}`);
+console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 ```
 [/slide]
