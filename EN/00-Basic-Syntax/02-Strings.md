@@ -77,7 +77,7 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 John
 \-\>
