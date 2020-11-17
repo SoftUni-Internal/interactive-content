@@ -18,7 +18,6 @@ console.log(myString.length);
 
 # Strings Are Immutable
 
-
 But keep in mind that we can only take the individual elements of the string, but we can not change the elements inside the string.
 
 Strings are immutable. 
@@ -34,9 +33,7 @@ console.log(myString);
 ```
 
 We know we can change the **data held by a variable**, but we can't change symbols in the string.
-[/slide]
 
-[slide]
 # String Interpolation
 
 Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
@@ -48,4 +45,212 @@ let name = "Rick";
 let age = 18;
 console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 ```
+[/slide]
+
+[slide]
+# Problem: Concatenate Names
+[code-task title="Concatenate Names" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function numberProcessor(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+- Receive two names as string parameters and a delimiter
+- Print the names joined by the delimiter
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['John', 'Smith', '->']`| John\-\>Smith |
+|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+
+[/task-description]
+[tests]
+[test open]
+[test]
+[input]
+John
+Smith
+\-\>
+[/input]
+[output]
+John\-\>Smith
+[/output]
+[/test]
+[test open]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>\White
+[/output]
+[/test]
+[test]
+[input]
+Ivan
+White
+\<\-
+[/input]
+[output]
+Jan\<\-White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Concatenate Names
+[code-task title="Concatenate Names" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function concatNames(input){
+let firstName = input[0];
+let lastName = input[1];
+let delimiter = input[2];
+
+console.log(`${firstName}${delimiter}${lastName}`);
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+- Receive two names as string parameters and a delimiter
+- Print the names joined by the delimiter
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['John', 'Smith', '->']`| John\-\>Smith |
+|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+
+[/task-description]
+[tests]
+[test open]
+[test]
+[input]
+John
+Smith
+\-\>
+[/input]
+[output]
+John\-\>Smith
+[/output]
+[/test]
+[test open]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>\White
+[/output]
+[/test]
+[test]
+[input]
+Ivan
+White
+\<\-
+[/input]
+[output]
+Jan\<\-White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\<\-\>
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
 [/slide]
