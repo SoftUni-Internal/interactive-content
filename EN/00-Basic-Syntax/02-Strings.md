@@ -231,3 +231,201 @@ JanpWhite
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Right Place
+[code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function rightPlace(input){
+
+}
+```
+[/code-editor]
+[task-description]
+# Description
+You will receive 3 parameters: **string**, **char**, **string**.
+
+First string will be a word with a **missing char** replaced with a underscore `_`.
+
+You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
+
+If they are equals you should print `Matched`, otherwise print `Not Matched`.
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Str_ng', 'I', 'Strong']`| Not Matched |
+|`['Str_ng', 'i', 'String']`|Matched|
+
+[/task-description]
+[tests]
+[test]
+[input]
+aa_av
+n
+aanav
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+fd_sa
+l
+fdlsa
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+ww_
+w
+www
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+_ngsd
+n
+jkljkl
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test]
+[input]
+gds_aaasng
+m
+Sjkl
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test]
+[input]
+a_ff
+i
+jkll
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Right Place
+[code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function rightPlace(input){
+  let underScopedString = input[0];
+  let char = input[1];
+  let string = input[2];
+  
+  let newString = underScopedString.replace('_', char);
+
+  if (newString === string) {
+    console.log('Matched');
+  } else {
+    console.log('Not Matched');
+  }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+You will receive 3 parameters: **string**, **char**, **string**.
+
+First string will be a word with a **missing char** replaced with a underscore `_`.
+
+You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
+
+If they are equals you should print `Matched`, otherwise print `Not Matched`.
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Str_ng', 'I', 'Strong']`| Not Matched |
+|`['Str_ng', 'i', 'String']`|Matched|
+
+[/task-description]
+[tests]
+[test]
+[input]
+aa_av
+n
+aanav
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+fd_sa
+l
+fdlsa
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+ww_
+w
+www
+[/input]
+[output]
+Matched
+[/output]
+[/test]
+[test]
+[input]
+_ngsd
+n
+jkljkl
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test]
+[input]
+gds_aaasng
+m
+Sjkl
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test]
+[input]
+a_ff
+i
+jkll
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
