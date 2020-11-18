@@ -88,7 +88,59 @@ Object returnValue = method.invoke(null, "arg1"); // We use null for static meth
 [/slide]
 
 [slide hideTitle]
-
 # Problem: Getters and Setters
+[code-task title="Problem: Getters and Setters" taskId="f876a19c-8018-49fd-9a79-ae6785133708" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Using reflection to get all **Reflection** methods. 
+
+Then prepare an algorithm that will recognize, which methods are **getters** and **setters**. 
+
+Sort each collection **alphabetically** by methods names. 
+
+Print to console each **getter** on new line in format:
+- "**{name} will return class {Return Type}**"
+
+Then print all setters in format:
+- "**{name} and will set field of class {Parameter Type}**"
+
+**Do this without changing anything in "Reflection.java"**
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+Blank Test
+[/input]
+[output]
+getEmail will return class java.lang.String
+getName will return class java.lang.String
+getWebAddress will return class java.lang.String
+getZip will return class int
+setEmail and will set field of class java.lang.String
+setName and will set field of class java.lang.String
+setWebAddress and will set field of class java.lang.String
+setZip and will set field of class int
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Getters and Setters
 
 [/slide]

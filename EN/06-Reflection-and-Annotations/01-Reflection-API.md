@@ -130,7 +130,72 @@ We can see that besides the **custom methods** we wrote (walk, makeSound, eat) w
 [/slide]
 
 [slide hideTitle]
-
 # Problem: Reflection
+[code-task title="Problem: Reflection" taskId="f4ea890c-82be-4e79-a370-9bd8d1be7655" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Download resources [here](https://mega.nz/file/2QJWVDCb#pex92_mdocrpJ-mg3FYMdmBL28je6xbzF3ZVgkiOF3o).
+
+Import "**Reflection.java**" to your "**src**" folder in your project. 
+
+Try to use **reflection** and print some information about this class. 
+
+Print everything on new line:
+- **This class type**
+- **Super class type**
+- **All interfaces** that are implemented by this class
+- **Instantiate object** using reflection and print it too
+
+**Don’t change anything in "Reflection class"!**
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Blank Test
+[/input]
+[output]
+class Reflection
+class java.lang.Object
+interface java.io.Serializable
+Name: Java
+WebAddress: oracle.com
+email: mail@oracle.com
+zip: 1407
+[/output]
+[/test]
+[test]
+[input]
+Blank Test
+[/input]
+[output]
+class Reflection
+class java.lang.Object
+interface java.io.Serializable
+Name: Java
+WebAddress: oracle.com
+email: mail@oracle.com
+zip: 1407
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Reflection
 
 [/slide]
