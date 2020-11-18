@@ -1,4 +1,0 @@
-[slide]
-# Classes
-
-[/slide]
