@@ -1369,6 +1369,227 @@ Swordsman -\> 0
 [/slide]
 
 [slide]
+# Problem: BarracksWars – Return of the Dependencies
+[code-task title="Problem: BarracksWars – Return of the Dependencies" taskId="9216a3a7-1d58-449e-ba63-aa9b30f7f227" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+In the final part of this epic problem trilogy we will resolve the issue where all Commands received all utility classes as parameters in their constructors. 
+
+We can accomplish this by using an approach called **dependency injection container**. 
+
+This approach is used in many frameworks like **Spring** for instance.
+
+We will do a little twist on that approach. 
+
+Remove all fields from the abstract command except the **data**. 
+
+Instead put whatever fields each command needs in the concrete class. 
+
+Create an annotation called **Inject** and make it so it can be used only on fields. 
+
+Put the annotation over the fields we need to set trough reflection. 
+
+Once you've prepared all of this, write the necessary reflection code in the **Command Interpreter** (which you should have refactored out from the engine in **Problem 4**).
+
+Use the tests from Problem 4 to test your solution.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+retire Archer
+add Pikeman
+add Pikeman
+add Gunner
+add Horseman
+add Archer
+add Gunner
+add Gunner
+add Horseman
+report
+retire Gunner
+retire Archer
+report
+retire Swordsman
+retire Archer
+fight
+[/input]
+[output]
+No such units in repository.
+Pikeman added!
+Pikeman added!
+Gunner added!
+Horseman added!
+Archer added!
+Gunner added!
+Gunner added!
+Horseman added!
+Archer -\> 1
+Gunner -\> 3
+Horseman -\> 2
+Pikeman -\> 2
+Gunner retired!
+Archer retired!
+Archer -\> 0
+Gunner -\> 2
+Horseman -\> 2
+Pikeman -\> 2
+No such units in repository.
+No such units in repository.
+[/output]
+[/test]
+[test]
+[input]
+retire Archer
+retire Swordsman
+retire Horseman
+add Gunner
+add Archer
+retire Archer
+retire Gunner
+report
+fight
+[/input]
+[output]
+No such units in repository.
+No such units in repository.
+No such units in repository.
+Gunner added!
+Archer added!
+Archer retired!
+Gunner retired!
+Archer -\> 0
+Gunner -\> 0
+[/output]
+[/test]
+[test]
+[input]
+add Pikeman
+add Gunner
+add Horseman
+report
+add Gunner
+add Pikeman
+retire Pikeman
+retire Gunner
+report
+fight
+[/input]
+[output]
+Pikeman added!
+Gunner added!
+Horseman added!
+Gunner -\> 1
+Horseman -\> 1
+Pikeman -\> 1
+Gunner added!
+Pikeman added!
+Pikeman retired!
+Gunner retired!
+Gunner -\> 1
+Horseman -\> 1
+Pikeman -\> 1
+[/output]
+[/test]
+[test]
+[input]
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+report
+retire Gunner
+retire Pikeman
+retire Horseman
+report
+add Horseman
+add Archer
+add Horseman
+add Archer
+add Horseman
+add Archer
+report
+retire Archer
+fight
+[/input]
+[output]
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman -\> 4
+No such units in repository.
+No such units in repository.
+Horseman retired!
+Horseman -\> 3
+Horseman added!
+Archer added!
+Horseman added!
+Archer added!
+Horseman added!
+Archer added!
+Archer -\> 3
+Horseman -\> 6
+Archer retired!
+[/output]
+[/test]
+[test]
+[input]
+add Swordsman
+add Swordsman
+retire Swordsman
+retire Archer
+add Archer
+retire Archer
+report
+add Horseman
+add Horseman
+add Horseman
+retire Swordsman
+retire Horseman
+add Swordsman
+retire Swordsman
+report
+fight
+[/input]
+[output]
+Swordsman added!
+Swordsman added!
+Swordsman retired!
+No such units in repository.
+Archer added!
+Archer retired!
+Archer -\> 0
+Swordsman -\> 1
+Horseman added!
+Horseman added!
+Horseman added!
+Swordsman retired!
+Horseman retired!
+Swordsman added!
+Swordsman retired!
+Archer -\> 0
+Horseman -\> 2
+Swordsman -\> 0
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 [tasks-results/]
 
