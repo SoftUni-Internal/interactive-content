@@ -1,5 +1,3 @@
-# Typeof, Undefined and Null
-
 [/slide]
 # Typeof
 
