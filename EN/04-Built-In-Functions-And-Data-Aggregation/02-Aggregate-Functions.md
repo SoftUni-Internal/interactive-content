@@ -1,5 +1,7 @@
 [slide]
 
+# Aggregate Functions
+
 In this chapter, we will examine the **aggregate** functions.
 
 An aggregate function is used to performs a calculations on multiple values, then returning a single value.
