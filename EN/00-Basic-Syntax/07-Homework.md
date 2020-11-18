@@ -322,3 +322,124 @@ Print the output in the following format:
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Special Numbers
+[code-task title="Special Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function specialNumbers(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program to receive a number **n** and for all numbers in the range **1…n** print the number and if it is special or not **(True / False).**
+
+A **number** is **special** when its s**um of digits is** **5, 7 or 11.**
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['15']`| 1 -> False |
+||2 -> False|
+||3 -> False|
+||4 -> False|
+||5 -> True|
+||6 -> False|
+||7 -> True|
+||8 -> False|
+||9 -> False|
+||10 -> False|
+||11 -> False|
+||12 -> False|
+||13 -> False|
+||14 -> True|
+||15 -> False|
+
+[/task-description]
+[tests]
+[test]
+[input]
+1
+[/input]
+[output]
+1 -> False
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+[/output]
+[/test]
+[test]
+[input]
+40
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+7 -> True
+8 -> False
+9 -> False
+10 -> False
+11 -> False
+12 -> False
+13 -> False
+14 -> True
+15 -> False
+16 -> True
+17 -> False
+18 -> False
+19 -> False
+20 -> False
+21 -> False
+22 -> False
+23 -> True
+24 -> False
+25 -> True
+26 -> False
+27 -> False
+28 -> False
+29 -> True
+30 -> False
+31 -> False
+32 -> True
+33 -> False
+34 -> True
+35 -> False
+36 -> False
+37 -> False
+38 -> True
+39 -> False
+40 -> False
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
