@@ -2,6 +2,8 @@
 # Retrieving data
 
 Now let's have a look over one of the most common (if not the most) operattion when we are talking about databases.
+
+
 Retrieving data, is the action where we demand records from our tables, through the keyword **SELECT**, which further gives us several possibilities: 
 
 ## Retrieve all available infromation from a table
