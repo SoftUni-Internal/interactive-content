@@ -37,13 +37,13 @@ For example, when we have the function to **return an object**, or a function th
 In case the function **does not find what it is looking for**, return null and we can checks if the function returns null.
 
 ``` js live
-let person = {
+let person = {
   firstName: "John",
   lastName: "Doe",
   age: 50
 };
 
-person = null;
+person = null;
 console.log(person);
 console.log(typeof(person));
 
