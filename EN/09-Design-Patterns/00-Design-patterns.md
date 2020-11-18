@@ -2,13 +2,9 @@
 
 # Design Patterns
 
-Hello to the next lesson in our module.
+In this lesson, we will review a concept behind **Design Patterns**.
 
-Today, we will review a concept behind **Design Patterns**. What are they? How we can use them? We will answer this and many more questions!
-
-Let us begin!
-
-So, what are **design patterns**?
+So, what are **design patterns?**
 
 In software engineering design patterns represents **general** and **reusable solutions** to frequent problems in software design.
 
