@@ -1,6 +1,5 @@
 [slide]
-
-# Typeof
+# The Typeof operator
 
 The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way. 
 
