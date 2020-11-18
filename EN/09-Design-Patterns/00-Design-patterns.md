@@ -2,15 +2,15 @@
 
 # Design Patterns
 
-In software engineering design patterns represents **general** and **reusable solutions** to frequent problems in software design.
+In software engineering design patterns represent **general** and **reusable solutions** to frequent problems in software design.
 
 It is important to understand, that design patterns **by themselves are not finished and ready for implementation templates**.
 
 They are more like a **description of templates** for how to solve problems that can be used in many situations.
 
-Why we use **design patterns**?
+Why do we use **design patterns**?
 
-By using design patterns we can solve software structural problems and speed the development process by providing **well-proven development paradigms**.
+By using design patterns we can solve software structural problems and speed up the development process by providing **well-proven development paradigms**.
 
 Also, we can prevent later issues that can cause serious problems and by using design patterns we improve code readability.
 
@@ -34,7 +34,7 @@ Let's see the Elements of our design patterns:
 
 - Problem - Intent, context, and when to apply
 
-- Solution - An abstract code, or template idea to solve our problems
+- Solution - Abstract code, or template idea to solve our problems
 
 - Consequences - **Results** and trade-offs
 
@@ -44,7 +44,7 @@ Let's see the Elements of our design patterns:
 
 [slide]
 
-# Benefits and drawbacks of using Design Patterns
+# Benefits and Drawbacks
 
 ## Benefits
 

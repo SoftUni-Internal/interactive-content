@@ -10,10 +10,8 @@ The idea behind behavioral patterns is to concentrate on the way objects are int
 
 It represents the relationship between objects.
 
-The first pattern we will discuss is **Command pattern**.
 
-
-# Command Pattern:
+# Command Pattern
 
 The command pattern lets us **parametrize** clients with different requests. 
 
@@ -21,17 +19,17 @@ This pattern provides us a single method for executing commands. This is called 
 
 Then, we have the **ConcreteCommand** which is an operation that passes the command to the receiver.
 
-The **Receiver** takes the command and act.
+The **Receiver** takes the command and acts.
 
 And the last, we have the **Invoker** class that basically asks the **command** to carry our request.
 
 [image assetsSrc="Design-Patterns(3).png" /]
 
-This simple example shows how the command pattern is working:
+This simple example shows how the command pattern is working.
 
-Imagine, we have a very simple text editor:
+Imagine, we have a very simple text editor.
 
-Let's first create our interface which will execute our methods:
+Let's first create our interface which will execute our methods.
 
 ```java
 public interface Command {
@@ -39,7 +37,7 @@ public interface Command {
 }
 ```
 
-Then, it is important to create our class which will handle our methods:
+Then, it is important to create our class which will handle our methods.
 
 ``` java
 public class Text
@@ -56,7 +54,7 @@ public class Text
 }
 ```
 
-Now, let's create our classes which implements our Command interface that we've created:
+Now, let's create our classes which implement our Command interface that we've created.
 
 ``` java
 public class OpenText implements Command
@@ -94,7 +92,7 @@ public class CloseText implements Command
 }
 ```
 
-We will also need an options class for our two commands. We will create Options() method with two parameters inside.
+We will also need an options class for our two commands. We will create `Options()` method with two parameters inside.
 
 ``` java
 public class Options
@@ -121,7 +119,7 @@ public class Options
 }
 ```
 
-And now, let's test our code using our `main` method:
+And now, let's test our code using our `main` method.
 
 ``` java
 public class Main

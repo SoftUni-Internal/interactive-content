@@ -1,7 +1,7 @@
 [slide] 
 
 
-# Creational Patterns:
+# Creational Patterns
 
 Now, let's see the types of design patterns:
 
@@ -30,18 +30,18 @@ Let's create a singleton class
 ``` java
 public class Singleton {
 
-    //first, lets create an object of SingleObject
+    //First, lets create an object of Singleton
     private static Singleton instance = new Singleton();
 
-    //second let's make the constructor private. This way, this class cannot be instantiated
+    //Second let's make the constructor private. This way, this class cannot be instantiated
     private Singleton(){}
 
-    //with getInstance method we get the only object available
-    public static Singleton getInstance(){
+    //With getInstance() method we get the only object available
+    public static Singleton getInstance() {
         return instance;
     }
 
-    public void printMessage(){
+    public void printMessage() {
         System.out.println("Hello, i am singleton class");
     }
 }
@@ -60,7 +60,7 @@ public class Main {
         //Get the only object available
         Singleton object = Singleton.getInstance();
 
-        //print the message
+        //Print the message
         object.printMessage();
     }
 }
@@ -83,7 +83,7 @@ This way, our Singleton class provides a method to get its **static** instance t
 
 Prototype pattern simply allows us to copy the instance of the class and create a new object from it.
 
-By this way of creating it allows us to hide the complexity of making new instances from the client.
+This way of creating it allows us to hide the complexity of making new instances from the client.
 
 The copied object acts as a prototype and contains the information of the actual object.
 
@@ -125,11 +125,11 @@ class ConcretePrototype extends Prototype {
 
 We can use the **Prototype Design Pattern** when:
 
-- We need to instantiate classes at runtime.
+- We need to instantiate classes at runtime
 
-- When it's complicated or expensive for us to create a class
+- It's complicated or expensive for us to create a class
 
-- When our clients don't need to know of object creation and representation
+- Our clients don't need to know of object creation and representation
 
 
 
@@ -137,11 +137,11 @@ We can use the **Prototype Design Pattern** when:
 
 [slide]
 
-# Builder design pattern
+# Builder Pattern
 
 The builder design pattern is used to assemble a complex structure step by step.
 
-In the final, it will return the whole object. 
+Finally, it will return the whole object. 
 
 We can create an object with a lot of possible configuration options.
 
@@ -170,7 +170,7 @@ public final class Hero {
     this.name = builder.name;
     this.startingHP = builder.startingHP;
     this.hairColor = builder.hairColor;
-        this.weapon = builder.weapon;
+    this.weapon = builder.weapon;
     this.armor = builder.armor;
     }
 }

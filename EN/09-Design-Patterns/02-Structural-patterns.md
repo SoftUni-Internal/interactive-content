@@ -75,7 +75,7 @@ class Main {
 }
 ```
 
-This example shows us how a client can **interact** with the facade (in our case computer) to **much complex system**.
+This example shows us how a client can **interact** with the facade (in our case computer).
 
 
 
@@ -87,11 +87,9 @@ This example shows us how a client can **interact** with the facade (in our case
 
 The composite pattern allows us to **combine** different types of objects in **tree structures**
 
-It gives us the possibility to treat the **same objects**.
-
 Also, our composite pattern could describe a whole hierarchy of objects.
 
-It's an interesting fact, that **composite pattern** is a pretty used solution for most problems that required building a tree structure.
+The **composite pattern** is a pretty used solution for most problems that require  building a tree structure.
 
 The composite pattern consist of 3 main objects:
 
@@ -133,7 +131,7 @@ public class Worker implements Employee
     @Override
     public void EmployeeInfo()
     {
-        System.out.println(employeeID + " " +name);
+        System.out.println(employeeID + " " + name);
     }
 }
 ```
@@ -157,7 +155,7 @@ public class Manager implements Employee
     @Override
     public void EmployeeInfo()
     {
-        System.out.println(employeeID + " " +name);
+        System.out.println(employeeID + " " + name);
     }
 }
 ```
