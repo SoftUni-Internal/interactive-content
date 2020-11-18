@@ -1,4 +1,0 @@
-[slide]
-# Element Anatomy
-
-[/slide]

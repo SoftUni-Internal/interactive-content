@@ -1,3 +1,0 @@
-[slide]
-# HTTP Response
-[/slide]

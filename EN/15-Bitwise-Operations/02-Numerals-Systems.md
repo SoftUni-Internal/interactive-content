@@ -1,3 +1,0 @@
-[slide]
-# Numerals Systems
-[/slide]
