@@ -54,7 +54,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-editor language=javascript]
 ```
 function concatNames(input){
-
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -238,7 +238,7 @@ JanpWhite
 [code-editor language=javascript]
 ```
 function rightPlace(input){
-
+  // Write your code here
 }
 ```
 [/code-editor]
