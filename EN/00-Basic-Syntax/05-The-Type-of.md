@@ -1,15 +1,18 @@
-[slide]
-# The Typeof operator
+# Typeof
 
-The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way. 
+[slide]
+
+## The Typeof operator
+
+The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way.
 
 `Typeof` **returns a string** of what a values data type is, so for an object `object` is returned and for a string `string`.
 
-However JavaScript data types and the `typeof` operator aren't exactly perfect. 
+However JavaScript data types and the `typeof` operator aren't exactly perfect.
 
 For example for arrays and `null` `object` is returned and for `NaN` and Infinity `number`.
 
-Examples: 
+Examples:
 
 ``` js live
 console.log(typeof "");
@@ -28,4 +31,5 @@ if (typeof(n) === 'number') {
     console.log(n);
 }
 ```
+
 [/slide]
