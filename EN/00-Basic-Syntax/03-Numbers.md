@@ -1,5 +1,5 @@
 [slide]
-# Numbers
+# What is a Number?
 The numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
 
 We have a type that is **numbers.**
