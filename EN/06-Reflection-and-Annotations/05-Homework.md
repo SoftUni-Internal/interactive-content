@@ -1085,6 +1085,290 @@ Swordsman -\> 2
 [/slide]
 
 [slide]
+# Problem: BarracksWars – the Commands Strike Back
+[code-task title="Problem: BarracksWars – the Commands Strike Back" taskId="ee763407-6634-494b-a22f-74fa7fdac039" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+As you might have noticed commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. 
+
+Although this approach works it is flawed when you add a new command because you have to add a new case for it. 
+
+In some projects you might not have access to the engine and this would not work. 
+
+Imagine this project will be outsourced and the outsourcing firm will not have access to the engine. 
+
+Make it so whenever they want to add a new command they won't have to change anything in the **Engine.**
+
+To do so employ the design pattern called [Command Pattern](https://www.baeldung.com/java-command-pattern).
+
+Here is how the base (abstract) command should look like:
+
+```java
+public abstract class Command implements Executable {
+    private String[] data;
+    private Repository repository;
+    private UnitFactory unitFactory;
+
+    protected Command (String[] data,
+                       Repository repository,
+                       UnitFactory unitFactory) {
+        this.data = data;
+        this.repository repository;
+        this.unitFactory = unitFactory;
+}
+
+    protected Repository getRepository () {
+        return repository;
+}
+
+    protected UnitFactory getunitFactory () {
+        return unitFactory;
+}
+
+    protected String[] getData() {
+        return data;
+    }
+}
+```
+Notice how all commands that extend this one will have both a **Repository** and a **UnitFactory** although not all of them need these. 
+
+Leave it like this for this problem, because for the reflection to work we need all constructors to accept the same parameters. 
+
+We will see how to go around this issue in **Problem 5.**
+
+Once you've implemented the pattern add a new command. 
+
+It will have the following syntax:
+- **retire {UnitType}** - All it has to do is **remove** a unit of the provided type from the repository.
+    - If there are no such units currently in the repository print: **"No such units in repository."**
+    - If there is such a unit currently in the repository, print: **"{UnitType} retired!"**
+
+To implement this command, you will also have to implement a corresponding method in the **UnitRepository.**
+
+If you do everything correctly for this problem, you should write/refactor code only in the **core** and **data** packages.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| retire Archer | No such units in repository. |
+| add Pikeman | Pikeman added! |
+| add Pikeman | Pikeman added! |
+| add Gunner | Gunner added! |
+| add Horseman | Horseman added! |
+| add Archer | Archer added! |
+| add Gunner | Gunner added! |
+| add Gunner | Gunner added! |
+| add Horseman | Horseman added! |
+| report | Archer -> 1 |
+| retire Gunner | Gunner -> 3 |
+| retire Archer | Horseman -> 2 |
+| report | Pikeman -> 2 |
+| retire Swordsman | Gunner retired! |
+| retire Archer | Archer retired! |
+| fight | Archer -> 0 |
+|  | Gunner -> 2 |
+|  | Horseman -> 2 |
+|  | Pikeman -> 2 |
+|  | No such units in repository. |
+|  | No such units in repository. |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+retire Archer
+add Pikeman
+add Pikeman
+add Gunner
+add Horseman
+add Archer
+add Gunner
+add Gunner
+add Horseman
+report
+retire Gunner
+retire Archer
+report
+retire Swordsman
+retire Archer
+fight
+[/input]
+[output]
+No such units in repository.
+Pikeman added!
+Pikeman added!
+Gunner added!
+Horseman added!
+Archer added!
+Gunner added!
+Gunner added!
+Horseman added!
+Archer -\> 1
+Gunner -\> 3
+Horseman -\> 2
+Pikeman -\> 2
+Gunner retired!
+Archer retired!
+Archer -\> 0
+Gunner -\> 2
+Horseman -\> 2
+Pikeman -\> 2
+No such units in repository.
+No such units in repository.
+[/output]
+[/test]
+[test]
+[input]
+retire Archer
+retire Swordsman
+retire Horseman
+add Gunner
+add Archer
+retire Archer
+retire Gunner
+report
+fight
+[/input]
+[output]
+No such units in repository.
+No such units in repository.
+No such units in repository.
+Gunner added!
+Archer added!
+Archer retired!
+Gunner retired!
+Archer -\> 0
+Gunner -\> 0
+[/output]
+[/test]
+[test]
+[input]
+add Pikeman
+add Gunner
+add Horseman
+report
+add Gunner
+add Pikeman
+retire Pikeman
+retire Gunner
+report
+fight
+[/input]
+[output]
+Pikeman added!
+Gunner added!
+Horseman added!
+Gunner -\> 1
+Horseman -\> 1
+Pikeman -\> 1
+Gunner added!
+Pikeman added!
+Pikeman retired!
+Gunner retired!
+Gunner -\> 1
+Horseman -\> 1
+Pikeman -\> 1
+[/output]
+[/test]
+[test]
+[input]
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+report
+retire Gunner
+retire Pikeman
+retire Horseman
+report
+add Horseman
+add Archer
+add Horseman
+add Archer
+add Horseman
+add Archer
+report
+retire Archer
+fight
+[/input]
+[output]
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman -\> 4
+No such units in repository.
+No such units in repository.
+Horseman retired!
+Horseman -\> 3
+Horseman added!
+Archer added!
+Horseman added!
+Archer added!
+Horseman added!
+Archer added!
+Archer -\> 3
+Horseman -\> 6
+Archer retired!
+[/output]
+[/test]
+[test]
+[input]
+add Swordsman
+add Swordsman
+retire Swordsman
+retire Archer
+add Archer
+retire Archer
+report
+add Horseman
+add Horseman
+add Horseman
+retire Swordsman
+retire Horseman
+add Swordsman
+retire Swordsman
+report
+fight
+[/input]
+[output]
+Swordsman added!
+Swordsman added!
+Swordsman retired!
+No such units in repository.
+Archer added!
+Archer retired!
+Archer -\> 0
+Swordsman -\> 1
+Horseman added!
+Horseman added!
+Horseman added!
+Swordsman retired!
+Horseman retired!
+Swordsman added!
+Swordsman retired!
+Archer -\> 0
+Horseman -\> 2
+Swordsman -\> 0
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 [tasks-results/]
 
