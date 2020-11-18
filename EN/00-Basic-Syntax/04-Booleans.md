@@ -251,7 +251,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/slide]
 
 [slide]
-# SOlution: Amazing Numbers
+# Solution: Amazing Numbers
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
