@@ -2,8 +2,6 @@
 
 # Design Patterns
 
-In this lesson, we will review a concept behind **Design Patterns**.
-
 So, what are **design patterns?**
 
 In software engineering design patterns represents **general** and **reusable solutions** to frequent problems in software design.
