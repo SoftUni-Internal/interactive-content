@@ -689,6 +689,402 @@ END
 [/slide]
 
 [slide]
+# Problem: BarracksWars – A New Factory
+[code-task title="Problem: BarracksWars – A New Factory" taskId="d693c323-9f5e-4bbe-b32a-ec8c01e0dc75" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You are given a small console based project called Barracks. 
+
+Download skeleton [here](https://mega.nz/file/fQ5xxKza#yB7v92dBu62SHmOfn_omGnwgTqnkIo9EEWE_yRyu1ug).
+
+The general functionality the project has is adding new units to its repository and printing a report with statistics about the units currently in the repository. 
+
+First let's go over the original task before the project was created:
+## Input
+The input consists of commands each on a separate line. 
+
+Commands that execute the functionality are:
+- **add {Archer/Swordsman/Pikeman/{…}}** - adds a unit to the repository.
+- **report** - prints a lexicological ordered statistic about the units in the repository.
+- **fight** - ends the input.
+## Output
+Each command except **fight** should print output on the console.
+- **add** should print: 
+
+    **"{Archer/Swordsman/Pikeman/{…}} added!"**
+- **report** should print all the info in the repository in the format: 
+
+    **"{UnitType} -> {UnitQuantity}"**, sorted by UnitType
+## Constraints
+- Input will consist of no more than **1000** lines
+- **report** command will never be given before any valid add command was provided
+## Your Task
+- You have to **study the code of the project and figure out how it works.**
+
+    However, there are parts of it that are not implemented (left with TODOs (**TODO** window will be useful)). 
+
+    You must implement the functionality of the **createUnit** method in the **UnitFactoryImpl** class so that it creates a unit based on the unit type received as parameter. 
+
+    Implement it in such a way that whenever you add a new unit it will be creatable without the need to change anything in the **UnitFactoryImpl** class (psst - use reflection). 
+
+    You can use the approach called **Simple Factory**.
+
+- Add two new unit classes (there will be tests that require them) - **Horseman** with 50 health and 10 attack and **Gunner** with 20 health and 20 attack.
+
+If you do everything correctly for this problem, you should write code only in the **factories** and **units** packages.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| add Swordsman | Swordsman added! |
+| add Archer | Archer added! |
+| add Pikeman | Pikeman added! |
+| report | Archer -> 1 |
+| add Pikeman | Pikeman -> 1 |
+| add Pikeman | Swordsman -> 1 |
+| report | Pikeman added! |
+| fight | Pikeman added! |
+|  | Archer -> 1 |
+|  | Pikeman -> 3 |
+|  | Swordsman -> 1 |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| add Pikeman | Pikeman added! |
+| add Pikeman | Pikeman added! |
+| add Gunner | Gunner added! |
+| add Horseman | Horseman added! |
+| add Archer | Archer added! |
+| add Gunner | Gunner added! |
+| add Gunner | Gunner added! |
+| add Horseman | Horseman added! |
+| report | Archer -> 1 |
+| fight | Gunner -> 3 |
+|  | Horseman -> 2 |
+|  | Pikeman -> 2 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+add Swordsman
+add Archer
+add Pikeman
+report
+add Pikeman
+add Pikeman
+report
+fight
+[/input]
+[output]
+Swordsman added!
+Archer added!
+Pikeman added!
+Archer -\> 1
+Pikeman -\> 1
+Swordsman -\> 1
+Pikeman added!
+Pikeman added!
+Archer -\> 1
+Pikeman -\> 3
+Swordsman -\> 1
+[/output]
+[/test]
+[test open]
+[input]
+add Pikeman
+add Pikeman
+add Gunner
+add Horseman
+add Archer
+add Gunner
+add Gunner
+add Horseman
+report
+fight
+[/input]
+[output]
+Pikeman added!
+Pikeman added!
+Gunner added!
+Horseman added!
+Archer added!
+Gunner added!
+Gunner added!
+Horseman added!
+Archer -\> 1
+Gunner -\> 3
+Horseman -\> 2
+Pikeman -\> 2
+[/output]
+[/test]
+[test]
+[input]
+add Horseman
+report
+add Horseman
+report
+add Pikeman
+report
+add Archer
+add Archer
+add Archer
+report
+fight
+[/input]
+[output]
+Horseman added!
+Horseman -\> 1
+Horseman added!
+Horseman -\> 2
+Pikeman added!
+Horseman -\> 2
+Pikeman -\> 1
+Archer added!
+Archer added!
+Archer added!
+Archer -\> 3
+Horseman -\> 2
+Pikeman -\> 1
+[/output]
+[/test]
+[test]
+[input]
+add Gunner
+report
+add Pikeman
+add Gunner
+add Pikeman
+report
+add Gunner
+add Pikeman
+add Gunner
+add Pikeman
+report
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+report
+fight
+[/input]
+[output]
+Gunner added!
+Gunner -\> 1
+Pikeman added!
+Gunner added!
+Pikeman added!
+Gunner -\> 2
+Pikeman -\> 2
+Gunner added!
+Pikeman added!
+Gunner added!
+Pikeman added!
+Gunner -\> 4
+Pikeman -\> 4
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Gunner -\> 4
+Horseman -\> 4
+Pikeman -\> 4
+[/output]
+[/test]
+[test]
+[input]
+add Archer
+add Gunner
+add Horseman
+add Pikeman
+add Swordsman
+add Archer
+add Gunner
+add Horseman
+add Pikeman
+add Swordsman
+add Archer
+add Gunner
+add Horseman
+add Pikeman
+add Swordsman
+add Archer
+add Gunner
+add Horseman
+add Pikeman
+add Swordsman
+add Archer
+add Gunner
+add Horseman
+add Pikeman
+add Swordsman
+report
+fight
+[/input]
+[output]
+Archer added!
+Gunner added!
+Horseman added!
+Pikeman added!
+Swordsman added!
+Archer added!
+Gunner added!
+Horseman added!
+Pikeman added!
+Swordsman added!
+Archer added!
+Gunner added!
+Horseman added!
+Pikeman added!
+Swordsman added!
+Archer added!
+Gunner added!
+Horseman added!
+Pikeman added!
+Swordsman added!
+Archer added!
+Gunner added!
+Horseman added!
+Pikeman added!
+Swordsman added!
+Archer -\> 5
+Gunner -\> 5
+Horseman -\> 5
+Pikeman -\> 5
+Swordsman -\> 5
+[/output]
+[/test]
+[test]
+[input]
+add Swordsman
+add Gunner
+add Swordsman
+report
+add Swordsman
+add Gunner
+add Gunner
+add Swordsman
+add Swordsman
+report
+add Gunner
+add Swordsman
+add Swordsman
+add Horseman
+report
+fight
+[/input]
+[output]
+Swordsman added!
+Gunner added!
+Swordsman added!
+Gunner -\> 1
+Swordsman -\> 2
+Swordsman added!
+Gunner added!
+Gunner added!
+Swordsman added!
+Swordsman added!
+Gunner -\> 3
+Swordsman -\> 5
+Gunner added!
+Swordsman added!
+Swordsman added!
+Horseman added!
+Gunner -\> 4
+Horseman -\> 1
+Swordsman -\> 7
+[/output]
+[/test]
+[test]
+[input]
+add Gunner
+add Swordsman
+add Horseman
+report
+add Archer
+add Archer
+add Archer
+report
+add Gunner
+add Swordsman
+add Horseman
+report
+add Archer
+add Archer
+add Archer
+report
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+add Horseman
+report
+fight
+[/input]
+[output]
+Gunner added!
+Swordsman added!
+Horseman added!
+Gunner -\> 1
+Horseman -\> 1
+Swordsman -\> 1
+Archer added!
+Archer added!
+Archer added!
+Archer -\> 3
+Gunner -\> 1
+Horseman -\> 1
+Swordsman -\> 1
+Gunner added!
+Swordsman added!
+Horseman added!
+Archer -\> 3
+Gunner -\> 2
+Horseman -\> 2
+Swordsman -\> 2
+Archer added!
+Archer added!
+Archer added!
+Archer -\> 6
+Gunner -\> 2
+Horseman -\> 2
+Swordsman -\> 2
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Horseman added!
+Archer -\> 6
+Gunner -\> 2
+Horseman -\> 10
+Swordsman -\> 2
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 [tasks-results/]
 
