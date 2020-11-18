@@ -366,7 +366,7 @@ ction
 
 # LOWER & UPPER Functions
 
-In MySQL we use `LOWER()` Function to converts all characters in our string to **lowercase** letters.
+In MySQL we use `LOWER()` function to converts all characters in our string to **lowercase** letters.
 
 Let's see the following example:
 
@@ -385,7 +385,7 @@ Similarly to this, we can use `UPPER()` to convert all lower case letters to upp
 **Example:**
 
 ``` java
-SELECT UPPER('i am upper case');
+SELECT UPPER('i am an upper case');
 ```
 
 **Output:**
@@ -394,5 +394,39 @@ SELECT UPPER('i am upper case');
 I AM UPPER CASE
 ```
 
+[/slide]
 
+[slide]
+
+# REVERSE & REPEAT Functions
+
+Next, we will take a look to `REVERSE()` and `REPEAT()` functions:
+
+**REVERSE** function allows us to reverse the order of all characters in the string.
+
+For example:
+
+``` java
+SELECT REVERSE('softuni'); // This will reverse the characters in the "softuni" string
+```
+
+**Output** will be:
+
+```
+inutfos
+```
+
+**REPEAT()** function allows us to repeat a string for a specified number of times.
+
+Syntax here is pretty easy:
+
+``` java
+SELECT REPEAT('softuni ',3); // This will repeat softuni with the whitespace after exactly 3 times
+```
+
+**Output:**
+
+```
+softuni softuni softuni 
+```
 [/slide]
