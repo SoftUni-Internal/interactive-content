@@ -102,5 +102,50 @@ It's **important** to remember that concat_ws() has additional behaviour of igno
 
 [slide]
 ## Filtering the selected rows
+Now we know how to take the information that we need and present it the way we want.
+
+Now lets have a look how we can filter these results in order to get only the results that we desire.
+
+There are several ways to achieve that:
+
+### DISTINCT
+
+First of them is the keyword **DISTINCT**
+
+
+``` java
+SELECT DISTINCT `course_name`  //Here we are trying to achieve  a result
+FROM students;                 //where we will have only the unique course_names in our table.
+```
+
+When we put the keyword **DISTINCT** in action, it eliminates all duplicate results in our table, leaving us only with the unique results of the desired rows in our table.
+
+
+### WHERE
+
+Second way of filtering the results would be the keyword **WHERE**
+
+``` java
+SELECT
+    concat_ws(' ', `first_name`, `last_name`) AS 'full_name',   //This query will result
+    `course` AS 'Course'                                        //in returning us filtered
+    `grade` AS 'Grade'                                          //results, where the renamed 'Course' column
+        FROM students                                           //will have the value 'Java Basics'.
+    WHERE Course = "Java Basics"
+```
+
+You can filter the rows in your table, by using the keyword **WHERE** which will result in returning only the records for which the condition is truth.
+
+
+We can use logical operators <>= in combination with **WHERE** in order to get better control over the information we want to recieve.
+
+```java
+SELECT *                           //This query will result in a filtered
+FROM students                      //collection of records
+WHERE age >= 14                    //where all of our records will meet the requirments.
+AND course = "Java Advanced".      //The keyword "AND" is used in order to combine conditions.
+```
+
+Other comparison conditions
 
 [/slide]
