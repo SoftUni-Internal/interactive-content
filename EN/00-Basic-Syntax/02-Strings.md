@@ -54,6 +54,96 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-editor language=javascript]
 ```
 function concatNames(input){
+
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+- Receive two names as string parameters and a delimiter
+- Print the names joined by the delimiter
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['John', 'Smith', '->']`| John\-\>Smith |
+|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+
+[/task-description]
+[tests]
+[test]
+[input]
+John
+Smith
+m
+[/input]
+[output]
+JohnmSmith
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+k
+[/input]
+[output]
+JankWhite
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\-
+[/input]
+[output]
+Jan\-White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\=
+[/input]
+[output]
+Jan\=White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+\,
+[/input]
+[output]
+Jan\,White
+[/output]
+[/test]
+[test]
+[input]
+Jan
+White
+p
+[/input]
+[output]
+JanpWhite
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Concantenate names
+[code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function concatNames(input){
 let firstName = input[0];
 let lastName = input[1];
 let delimiter = input[2];
@@ -100,40 +190,40 @@ JankWhite
 [input]
 Jan
 White
-k
+\-
 [/input]
 [output]
-JankWhite
+Jan\-White
 [/output]
 [/test]
 [test]
 [input]
 Jan
 White
-k
+\=
 [/input]
 [output]
-JankWhite
+Jan\=White
 [/output]
 [/test]
 [test]
 [input]
 Jan
 White
-k
+\,
 [/input]
 [output]
-JankWhite
+Jan\,White
 [/output]
 [/test]
 [test]
 [input]
 Jan
 White
-k
+p
 [/input]
 [output]
-JankWhite
+JanpWhite
 [/output]
 [/test]
 [/tests]
