@@ -2,7 +2,7 @@
 
 # Functions in MySQL
 
-*U can download the resources needed for this lesson from here:* [Mega.nz](https://mega.nz/file/vcQiQZzT#sMm1P_74urMujZK-3cm1BA1lCMuOnEKdgqAlJpux8ws)
+*Download the resources needed for this lesson from here:* [Mega.nz](https://mega.nz/file/vcQiQZzT#sMm1P_74urMujZK-3cm1BA1lCMuOnEKdgqAlJpux8ws)
 
 With MySQL we can do much more than simply store or retrieve data information.
 
@@ -21,6 +21,7 @@ Let's review the **built-in functions** provided in MySQL:
 - Math Functions
 
 Besides this, we have more **built-in functions**, but for the purposes of this lesson, let's take a look at the functions above:
+
 
 
 [/slide]
