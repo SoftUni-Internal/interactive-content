@@ -248,11 +248,37 @@ Retrieve data about the updated titles. **Order the result by id**. Submit your 
 
 **LTRIM** and **RTRIM** functions removes the space characters of a string passed as argument.
 
-We can use them like this:
+We can use the function like this:
 
 ``` java
 LTRIM(String)
 RTRIM(String)
 ```
+
+Let's take a look at this simple example:
+
+``` java
+SELECT LTRIM('    Softuni rocks!')
+```
+
+The Left Trim will trim the spaces left from "Softuni rocks!" and the **output** will be:
+
+``` 
+Softuni rocks!
+```
+
+The same principle is valid for the `RTRIM()`, but this time it will remove the trailing spaces right after the text.
+
+``` java
+SELECT RTRIM('Softuni rocks!'     )
+```
+
+Output:
+
+```
+Softuni rocks!
+```
+
+
 
 [/slide]
