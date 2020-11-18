@@ -3,8 +3,6 @@
 
 # String Functions
 
-Let's examine the **String Functions** in MySQL.
-
 We use String Functions to manipulate our character string effectively.
 
 Take a look at this simple example of String Function:
@@ -134,7 +132,7 @@ Submit your query statements as Prepare DB & run queries.
 
 # REPLACE Function
 
-Now, let's take a look at the `REPLACE()` Function in MySQL:
+Now, let's take a look at the `REPLACE()` function in MySQL:
 
 `REPLACE()` Function allows us to replace all occurrences of a substring with a string.
 
@@ -273,7 +271,7 @@ The same principle is valid for the `RTRIM()`, but this time it will remove the 
 SELECT RTRIM('Softuni rocks!'     )
 ```
 
-Output:
+**Output**:
 
 ```
 Softuni rocks!
@@ -474,14 +472,11 @@ INSERT(String, Position, Length, Substring) // Our Length parameter indicates th
 SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
 ```
 
-**Output** after executing:
+**Output after executing:**
 
 ```
 'S insert niTestString'
 ```
-
-We reviewed the most important **String** Functions. Now let's continue with our next chapter. **Aggregate** functions.
-
 
 
 [/slide]
