@@ -400,7 +400,7 @@ I AM UPPER CASE
 
 Next, we will take a look at `REVERSE()` and `REPEAT()` functions:
 
-**REVERSE** function allows us to reverse the order of all characters in the string.
+`REVERSE()` function allows us to reverse the order of all characters in the string.
 
 For example:
 
@@ -414,7 +414,7 @@ SELECT REVERSE('softuni'); // This will reverse the characters in the "softuni" 
 inutfos
 ```
 
-**REPEAT()** function allows us to repeat a string a specified number of times.
+`REPEAT()` function allows us to repeat a string a specified number of times.
 
 The syntax here is also pretty easy:
 
