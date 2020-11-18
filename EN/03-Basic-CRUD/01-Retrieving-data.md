@@ -48,13 +48,59 @@ WHERE courseName = "Java Advanced";
 
 
 ``` java
-SELECT course_name, course_schedule, teacher_full_name
-FROM Orders
-INNER JOIN Customers ON Courses.teacherId=Teachers.id; 
+SELECT course_name, course_schedule, teacher_full_name    //Here we can choose information from
+FROM Orders                                               //two tables by using JOIN to join them
+INNER JOIN Customers ON Courses.teacherId=Teachers.id;    //by two equal rows
 ```
 
 [image assetsSrc="Retrieving-data(3).png" /]
 
 Although we show you how **JOIN** works, we are not going to talk about it in this lecture, as you will have it in a further lesson.
+
+[/slide]
+
+[slide]
+## Concatenation of columns
+
+### concat()
+As you may already know SQL is not only a tool for storing and retrieving data, but you can also use it's build in functions.
+
+Now we will teach you how to use one of the basic string functions, **Concatenation**.
+
+```Java
+SELECT
+     concat(`first_name`,' ',`last_name`) AS 'full_name',    //The function concat is used to combine first_name, ' ' and last_name
+    `course` AS  'Course',                                  // to result in a single column combination of them both - full_name.
+    `grade` AS 'Grade'                                      //The keyword 'AS' may be used in order to give a column desired name.
+        FROM students;
+```
+The function **concat()** accepts columnds further combining the values of its record's rows, into a single column.
+
+Let's not forget that:
+-> String literals should be enclosed by ['].
+-> Table and column names that contain a special symbol should be surrounded by [`].
+
+### concat_ws()
+
+Than we have another function, which is simillar to **concat()**
+
+**concat_ws()** is used in order to join two or more rows, with separator.
+
+```Java
+SELECT
+    concat_ws(' ', `first_name`, `last_name`) AS 'full_name',   //Simillary the concat_ws function is used to combine rows, strings into a single column.
+    `course` AS 'Course'
+    `grade` AS 'Grade'
+        FROM students
+```
+The separator is given as first value in the argument, than you list the rows you want to concatenate,
+resulting in a new column combination of both. 
+
+
+It's **important** to remember that concat_ws() has additional behaviour of ignoring the records which have **NULL** value of the given rows.
+[/slide]
+
+[slide]
+## Filtering the selected rows
 
 [/slide]
