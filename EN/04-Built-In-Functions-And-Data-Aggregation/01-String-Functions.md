@@ -1,7 +1,5 @@
-
-[slide]
-
 # String Functions
+[slide]
 
 Let's examine the **String Functions** in MySQL.
 
@@ -9,7 +7,7 @@ We use String Functions to manipulate our character string effectively.
 
 Take a look at this simple example of String Function:
 
-## SUBSTRING()
+# SUBSTRING()
 
 The `SUBSTRING()` function allows us to extract part of a string.
 
@@ -283,7 +281,7 @@ Softuni rocks!
 
 [slide]
 
-# CHAR_LENGTH & LENGHT Functions
+# CHAR_LENGTH & LENGTH Functions
 
 `CHAR_LENGTH()` will return the length of our string. 
 
@@ -306,7 +304,7 @@ So, what is the difference between them?
 
 It's important to know that a **multi-byte character will counts as a single character**.
 
-If our string contains five two-bite characters, our `CHAR_LENGTH()` function will return 5, but our `LENGTH()` will return 10.
+If our string c**ontains five two-bite characters**, our `CHAR_LENGTH()` function will return **5**, but our `LENGTH()` will return **10**.
 
 We will picture this better with a very simple example:
 
