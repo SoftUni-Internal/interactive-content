@@ -463,6 +463,232 @@ private Stream secretStream
 [/slide]
 
 [slide]
+# Problem: Black Box Integer
+[code-task title="Problem: Black Box Integer" taskId="d57619b4-cea9-4301-90ed-6830ddc952d5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Download resources [here](https://mega.nz/file/2BgwhSIY#4UZLrzaBZTZIidTq2J5ejPPVd4rKdMwcfKYdB_Hd38s).
+
+You are helping a buddy of yours who is still in the OOP Basics course.
+
+He is rather slow and made a class with all private members. 
+
+Your tasks are to **instantiate** an object from his class (always with start value 0) and then **invoke** the different methods it has. 
+
+Your restriction is to **not** change anything in the class itself (consider it a black box). 
+
+You can look at his class but don't touch anything! 
+
+The class itself is called **BlackBoxInt**. It is a wrapper for the **int** primitive. 
+
+The methods it has are:
+
+```java
+private void add (int addend) {
+    this.innerValue += addend;
+}
+
+private void subtract(int subtrahend) {
+    this.innerValue -= subtrahend;
+}
+
+private void multiply(int multiplier) {
+    this.innerValue *= multiplier;
+}
+
+private void divide (int divider) {
+    this.innerValue /= divider;
+}
+
+private void leftShift(int shifter) {
+    this.innerValue <= shifter;
+}
+
+private void rightShift (int shifter) {
+    this.innerValue >>= shifter;
+}
+```
+## Input
+The input will consist of lines in the form:
+
+**"{command name}_{value}"**
+
+Example: **add_115**
+
+Input will always be valid and in the format described, so there is no need to check it explicitly. 
+
+You stop receiving input when you encounter the command "**END**".
+## Output
+Each command (except the **END** one) should print the current value of **innerValue** of the **BlackBoxInt** object you instantiated. 
+
+**Don't cheat** by overriding **toString** in the class - you must get the value from the **private** field.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| add_999999 | 999999 |
+| subtract_19 | 999980 |
+| divide_4 | 249995 |
+| multiply_2 | 499990 |
+| rightShift_1 | 249995 |
+| leftShift_3 | 1999960 |
+| END |  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+add_999999
+subtract_19
+divide_4
+multiply_2
+rightShift_1
+leftShift_3
+END
+[/input]
+[output]
+999999
+999980
+249995
+499990
+249995
+1999960
+[/output]
+[/test]
+[test]
+[input]
+add_200
+divide_5
+leftShift_4
+END
+[/input]
+[output]
+200
+40
+640
+[/output]
+[/test]
+[test]
+[input]
+multiply_1000
+subtract_5
+rightShift_3
+END
+[/input]
+[output]
+0
+-5
+-1
+[/output]
+[/test]
+[test]
+[input]
+subtract_3000
+add_556677
+add_889915
+rightShift_3
+leftShift_3
+END
+[/input]
+[output]
+-3000
+553677
+1443592
+180449
+1443592
+[/output]
+[/test]
+[test]
+[input]
+add_336688
+multiply_55
+multiply_2
+divide_6
+subtract_536489
+rightShift_15
+END
+[/input]
+[output]
+336688
+18517840
+37035680
+6172613
+5636124
+172
+[/output]
+[/test]
+[test]
+[input]
+add_15
+add_15
+add_15
+add_15
+add_15
+add_15
+add_15
+add_15
+add_15
+add_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+subtract_15
+multiply_2
+multiply_2
+multiply_2
+multiply_2
+END
+[/input]
+[output]
+15
+30
+45
+60
+75
+90
+105
+120
+135
+150
+135
+120
+105
+90
+75
+60
+45
+30
+15
+0
+0
+0
+0
+0
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 [tasks-results/]
 
