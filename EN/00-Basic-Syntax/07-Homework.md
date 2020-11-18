@@ -252,3 +252,73 @@ Needed money for that trip is 165.0175 dollars.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Centuries to Minutes
+[code-task title="Centuries to Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function centuriesToMinutes(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write program to receive a **number** of **centuries** and convert it to **years, days, hours** and minutes.
+
+Print the output in the following format: 
+`{number} centuries = {number} years = {number} days = {number} hours = {number} minutes`
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['1']`| 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
+|`['5']`| 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+
+[/task-description]
+[tests]
+[test]
+[input]
+14
+[/input]
+[output]
+14 centuries = 1400 years = 511339 days = 12272136 hours = 736328160 minutes
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+4 centuries = 400 years = 146096 days = 3506304 hours = 210378240 minutes
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+3 centuries = 300 years = 109572 days = 2629728 hours = 157783680 minutes
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+6 centuries = 600 years = 219145 days = 5259480 hours = 315568800 minutes
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
