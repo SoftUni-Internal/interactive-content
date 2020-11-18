@@ -2,8 +2,6 @@
 
 # Seven Testing Principles
 
-Hello. Today we will learn about **Unit Testing** and what are the **Seven Testing Principles**.
-
 There are **fundamentals** testing principles which helps the testing teams to make the process of testing software more effective.
 
 Lets see what is the concept behind testing:

@@ -2,10 +2,6 @@
 
 # What is Metaprogramming?
 
-Hello there! Today we will learn about Reflection and Reflection API in Java.
-
-Lets first take a look at what is "**Metaprogramming**".
-
 Metaprogramming is a **programming technique** that allows us to write a software which modify itself or other software using **metadata**.
 
 Software can be design to read, generate, transform or analyze our data.

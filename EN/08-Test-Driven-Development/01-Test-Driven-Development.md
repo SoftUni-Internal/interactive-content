@@ -2,8 +2,6 @@
 
 # Test Driven Development
 
-Hello. Today we will talk about the approach called **Test-Driven Development**.
-
 There are test cases, that are developed to specify and validate what the code will do.
 
 Test cases are created to test our functionalities and if the tests fails then we need to write a new code that is **bug-free**.

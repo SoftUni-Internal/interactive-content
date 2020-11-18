@@ -2,8 +2,6 @@
 
 # Design Patterns
 
-So, what are **design patterns?**
-
 In software engineering design patterns represents **general** and **reusable solutions** to frequent problems in software design.
 
 It is important to understand, that design patterns **by themselves are not finished and ready for implementation templates**.
