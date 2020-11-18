@@ -321,3 +321,43 @@ SELECT LENGTH('§'); vs SELECT CHAR_LENGTH('§');
 As we see here, the `LENGTH()` function will return the result of **2** and the `CHAR_LENGTH()` will return **1**.
 
 [/slide]
+
+[slide]
+
+# LEFT & RIGHT Functions
+
+`LEFT()` and `RIGHT()` Functions get characters from **beginning** or **end** of a string.
+
+Let see the Syntax first:
+
+``` java
+LEFT(String, Count)
+RIGHT(String, Count)
+```
+
+**Examples:**
+
+``` java
+SELECT LEFT('Testing Left Function', 5); // This syntax will return the first five words from the left in our string.
+```
+
+**Output:**
+
+```
+Testi
+```
+
+Similarly, our `RIGHT()` function will return the first five words from the right in our String:
+
+``` java
+SELECT RIGHT('Testing Left Function', 5);
+```
+
+**Output:**
+
+```
+ction
+```
+
+
+[/slide]
