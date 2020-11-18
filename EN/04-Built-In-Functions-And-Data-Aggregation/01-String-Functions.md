@@ -338,7 +338,7 @@ RIGHT(String, Count)
 **Examples:**
 
 ``` java
-SELECT LEFT('Testing Left Function', 5); // This syntax will return the first five words from the left in our string.
+SELECT LEFT('Testing Left Function', 5); // This syntax will return the first five characters from the left in our string.
 ```
 
 **Output:**
@@ -347,7 +347,7 @@ SELECT LEFT('Testing Left Function', 5); // This syntax will return the first fi
 Testi
 ```
 
-Similarly, our `RIGHT()` function will return the first five words from the right in our String:
+Similarly, our `RIGHT()` function will return the first five characters from the right in our String:
 
 ``` java
 SELECT RIGHT('Testing Left Function', 5);
