@@ -4,8 +4,6 @@
 
 *U can download the resources needed for this lesson from here:* [Mega.nz](https://mega.nz/file/vcQiQZzT#sMm1P_74urMujZK-3cm1BA1lCMuOnEKdgqAlJpux8ws)
 
-Today, we will talk about `Functions` in MySQL.
-
 With MySQL we can do much more than simply store or retrieve data information.
 
 Knowing this, we can **manipulate** the data we have.
