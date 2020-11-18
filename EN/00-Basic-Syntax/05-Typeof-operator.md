@@ -1,4 +1,5 @@
-[/slide]
+[slide]
+
 # Typeof
 
 The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way. 
@@ -28,4 +29,4 @@ if (typeof(n) === 'number') {
     console.log(n);
 }
 ```
-[slide]
+[/slide]
