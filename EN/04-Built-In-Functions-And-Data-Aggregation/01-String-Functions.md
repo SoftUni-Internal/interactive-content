@@ -31,7 +31,7 @@ SELECT SUBSTRING('softuni.org',2);
 oftuni.org
 ```
 
-Second way of using our `SUBSTRING()` is:
+The second way of using our `SUBSTRING()` is:
 
 ``` java
 SUBSTRING(String, Position, Length) // We take the index from where our result will start to index from where it will finish
@@ -54,7 +54,7 @@ We can use the `SUBSTRING()` method this way too:
 
 ``` java
 SUBSTRING(String FROM Position FOR Length) // This way, we can choose from which position we want to 
-                                           //  start taking the substring and for what lenght.
+                                           //  start taking the substring and for what length.
 ```
 
 **Example:**
@@ -163,7 +163,7 @@ www.softuni.org
 Using this method we can **replace whole words**:
 
 ``` java
-SELECT REPLACE('We can replace the word blood with different symbol or words', 'blood', '*****') 
+SELECT REPLACE('We can replace the word blood with a different symbol or words', 'blood', '*****') 
 // Where we first have our text, second we write the word we need to replace, and the last we write the replacement symbol or character.
 ```
 
@@ -246,7 +246,7 @@ Retrieve data about the updated titles. **Order the result by id**. Submit your 
 
 # LTRIM & RTRIM Functions
 
-**LTRIM** and **RTRIM** functions removes the space characters of a string passed as argument.
+**LTRIM** and **RTRIM** functions remove the space characters of a string passed as an argument.
 
 We can use the function like this:
 
@@ -318,7 +318,7 @@ SELECT LENGTH('§'); vs SELECT CHAR_LENGTH('§');
 | --- | --- |
 | 2 | 1 |
 
-As we see here, the `LENGTH()` function will return the result of **2** and the `CHAR_LENGTH()` will return **1**.
+As we see here, the `LENGTH()` function will return the result of **2**, and the `CHAR_LENGTH()` will return **1**.
 
 [/slide]
 
@@ -400,7 +400,7 @@ I AM UPPER CASE
 
 # REVERSE & REPEAT Functions
 
-Next, we will take a look to `REVERSE()` and `REPEAT()` functions:
+Next, we will take a look at `REVERSE()` and `REPEAT()` functions:
 
 **REVERSE** function allows us to reverse the order of all characters in the string.
 
@@ -416,9 +416,9 @@ SELECT REVERSE('softuni'); // This will reverse the characters in the "softuni" 
 inutfos
 ```
 
-**REPEAT()** function allows us to repeat a string for a specified number of times.
+**REPEAT()** function allows us to repeat a string a specified number of times.
 
-Syntax here is pretty easy:
+The syntax here is also pretty easy:
 
 ``` java
 SELECT REPEAT('softuni ',3); // This will repeat softuni with the whitespace after exactly 3 times
@@ -429,4 +429,58 @@ SELECT REPEAT('softuni ',3); // This will repeat softuni with the whitespace aft
 ```
 softuni softuni softuni 
 ```
+[/slide]
+
+[slide]
+
+# LOCATE & INSERT Functions
+
+`LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
+
+The function performs a **case-insensitive** search.
+
+We can see the syntax here:
+
+``` java
+LOCATE(Pattern, String,[Position]) // Where the [Position] argument is optional. If omitted, it defaults to 1. The first position in our string is 1.
+```
+
+Let's illustrate this with a simple code example:
+
+``` java
+SELECT LOCATE('st','teststring');
+```
+
+The following **output** will be:
+
+```
+3
+```
+
+The last **String** function we will look at is `INSERT()` function.
+
+It allows us to insert substring at a specific position.
+
+**Syntax:**
+
+``` java
+INSERT(String, Position, Length, Substring) // Our Length parameter indicates the count characters will be deleted.
+```
+
+**Example:**
+
+``` java
+SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
+```
+
+**Output** after executing:
+
+```
+'S insert niTestString'
+```
+
+We reviewed the most important **String** Functions. Now let's continue with our next chapter. **Aggregate** functions.
+
+
+
 [/slide]
