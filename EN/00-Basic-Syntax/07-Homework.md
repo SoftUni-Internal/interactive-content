@@ -67,7 +67,7 @@ The plate was rotated 80 times.
 [input]
 gjhg
 jklcrj
-gyuguygu
+gyuguyguy
 [/input]
 [output]
 The plate was rotated 44 times.
@@ -111,6 +111,140 @@ tuus
 [/input]
 [output]
 The plate was rotated 29 times.
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Fuel Money
+[code-task title="Fuel Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function fuelMoney(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a **function** which calculates how much **money** for fuel will be needed to drive а bus from one place to another.
+
+Consider the following:
+
+- Calculate **the fuel** by knowing that **an empty bus** can pass 100 km with 7L diesel.
+
+- **One person** in that bus excluding the driver increases fuel consumption by **100 milliliters.**
+
+- The **money** is calculated by **multiplying** the **fuel price** with the needed fuel for the trip.
+
+As **input** you will receive **3 parameters**:
+- **Distance** the bus must travel
+- **Passengers** in it 
+- **Price** for **1 liter of diesel**
+
+As output you should print this message:
+ `Needed money for that trip is {neededMoney} dollars.`
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['260', '9', '2.49']`| Needed money for that trip is 47.559 dollars. |
+|`['90', '14', '2.88']`| Needed money for that trip is 22.176 dollars. |
+
+[/task-description]
+[tests]
+[test]
+[input]
+154
+5
+3.1
+[/input]
+[output]
+Needed money for that trip is 34.968 dollars.
+[/output]
+[/test]
+[test]
+[input]
+545
+5
+54.59
+[/input]
+[output]
+Needed money for that trip is 2109.9035 dollars.
+[/output]
+[/test]
+[test]
+[input]
+32
+15
+1.0
+[/input]
+[output]
+Needed money for that trip is 3.74 dollars.
+[/output]
+[/test]
+[test]
+[input]
+1232
+13
+2.19
+[/input]
+[output]
+Needed money for that trip is 191.7126 dollars.
+[/output]
+[/test]
+[test]
+[input]
+546
+45
+4.45
+[/input]
+[output]
+Needed money for that trip is 190.104 dollars.
+[/output]
+[/test]
+[test]
+[input]
+755
+10
+3.474
+[/input]
+[output]
+Needed money for that trip is 187.0749 dollars.
+[/output]
+[/test]
+[test]
+[input]
+451
+2
+12.5
+[/input]
+[output]
+Needed money for that trip is 397.125 dollars.
+[/output]
+[/test]
+[test]
+[input]
+361
+45
+2.989
+[/input]
+[output]
+Needed money for that trip is 88.98253 dollars.
+[/output]
+[/test]
+[test]
+[input]
+1565
+12
+1.49
+[/input]
+[output]
+Needed money for that trip is 165.0175 dollars.
 [/output]
 [/test]
 [/tests]
