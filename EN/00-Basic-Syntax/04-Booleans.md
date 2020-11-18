@@ -384,12 +384,12 @@ For example for arrays and `null` `object` is returned and for `NaN` and Infinit
 Examples:
 
 ``` js live
-console.log(typeof "");
-console.log(typeof "John");
-console.log(typeof "John Doe");
-console.log(typeof 0);
-console.log(typeof true);
-console.log(typeof {Name: "Peter", Age: 3})
+console.log(typeof "");
+console.log(typeof "John");
+console.log(typeof "John Doe");
+console.log(typeof 0);
+console.log(typeof true);
+console.log(typeof {Name: "Peter", Age: 3})
 ```
 
 We can use typeof in `if` construction:
