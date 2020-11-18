@@ -279,6 +279,42 @@ Output:
 Softuni rocks!
 ```
 
+[/slide]
 
+[slide]
+
+# CHAR_LENGTH & LENGHT Functions
+
+`CHAR_LENGTH()` will return the length of our string. 
+
+We will understand this better with the following examples:
+
+``` java
+SELECT CHAR_LENGTH('Let us count the characters in this sentence');
+// This will count the whitespaces too
+```
+
+**Output:**
+
+```
+44
+```
+
+The `LENGTH()` will return the **same result** from the input above:
+
+So, what is the difference between them?
+
+It's important to know that a **multi-byte character will counts as a single character**.
+
+If our string contains five two-bite characters, our `CHAR_LENGTH()` function will return 5, but our `LENGTH()` will return 10.
+
+We will picture this better with a very simple example:
+
+
+| LENGTH('§') | CHAR_LENGTH('§') | 
+| --- | --- |
+| 2 | 1 |
+
+As we see here, the `LENGTH()` function will return the result of **2** and the `CHAR_LENGTH()` will return **1**.
 
 [/slide]
