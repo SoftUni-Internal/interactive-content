@@ -23,7 +23,7 @@ SELECT full_name, course, grade FROM students; //Makes a "projection" giving us 
 [image assetsSrc="Retrieving-data(1).png" /]
 
 
-**Keynote** - *when we make a projection, we take only data that we need, which optimizes our query and makes less trafic to the database.*
+**Keynote** - when we make a projection, we take only data that we need, which optimizes our query and makes less trafic to the database.
 
 ## Make a filtration/take a subset of desired rows
 
@@ -36,6 +36,6 @@ WHERE courseName = "Java Advanced";
 
 [image assetsSrc="Retrieving-data(2).png" /]
 
-**Keynote** = *This operation won't boost the performance, as the databse has to iterate through all the records in order to find the one that meets the requierment, but it will find you only the records that you need.*
+**Keynote** - This operation won't boost the performance, as the databse has to iterate through all the records in order to find the one that meets the requierment, but it will find you only the records that you need.
 
 [/slide]
