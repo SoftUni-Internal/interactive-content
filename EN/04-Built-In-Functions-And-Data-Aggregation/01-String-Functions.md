@@ -361,3 +361,38 @@ ction
 
 
 [/slide]
+
+[slide]
+
+# LOWER & UPPER Functions
+
+In MySQL we use `LOWER()` Function to converts all characters in our string to **lowercase** letters.
+
+Let's see the following example:
+
+``` java
+SELECT LOWER('SOFTUNI DB COURSE'); // This will convert all upper characters to lower.
+```
+
+**Output** will be:
+
+```
+softuni db course
+```
+
+Similarly to this, we can use `UPPER()` to convert all lower case letters to upper case.
+
+**Example:**
+
+``` java
+SELECT UPPER('i am upper case');
+```
+
+**Output:**
+
+```
+I AM UPPER CASE
+```
+
+
+[/slide]
