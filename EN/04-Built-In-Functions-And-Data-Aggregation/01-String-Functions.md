@@ -442,7 +442,8 @@ The function performs a **case-insensitive** search.
 We can see the syntax here:
 
 ``` java
-LOCATE(Pattern, String,[Position]) // Where the [Position] argument is optional. If omitted, it defaults to 1. The first position in our string is 1.
+LOCATE(Pattern, String,[Position]) // Where the [Position] argument is optional. If omitted, it defaults to 1. 
+                                  // The first position in our string is 1.
 ```
 
 Let's illustrate this with a simple code example:
