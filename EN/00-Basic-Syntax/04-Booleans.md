@@ -283,7 +283,6 @@ An amazing number is one that includes the **digit 9** the sum of its digits.
 Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
 
 
-
 # Example
   | **Input** | **Output** |
 | --- | --- |
@@ -367,5 +366,39 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+
+# The Typeof operator
+
+The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way.
+
+`Typeof` **returns a string** of what a values data type is, so for an object `object` is returned and for a string `string`.
+
+However JavaScript data types and the `typeof` operator aren't exactly perfect.
+
+For example for arrays and `null` `object` is returned and for `NaN` and Infinity `number`.
+
+Examples:
+
+``` js live
+console.log(typeof "");
+console.log(typeof "John");
+console.log(typeof "John Doe");
+console.log(typeof 0);
+console.log(typeof true);
+console.log(typeof {Name: "Peter", Age: 3})
+```
+
+We can use typeof in `if` construction:
+
+``` js live
+let n = 5;
+if (typeof(n) === 'number') {
+    console.log(n);
+}
+```
 
 [/slide]
