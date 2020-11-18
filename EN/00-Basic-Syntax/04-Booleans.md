@@ -38,7 +38,7 @@ Examples of comparison operators:
 Everything with a "value" is `true`:
 
 ``` js live
-let number = 1;
+let number=1;
 
 if (number) {
   console.log(number);
@@ -48,8 +48,7 @@ if (number) {
 - Everything without a "value" is `false`
 
 ``` js live
-
-let number;
+let number;
 
 if (number) {
   console.log(number);
@@ -123,7 +122,7 @@ In javascript we have eight values ​​that are assumed to be `falsy`:
 
 | Value | Description | 
 | :---:       |    :----:   |   
-| `false` | The keyword `false` ) | 
+| `false` | The keyword `false` | 
 | `0` | The number zero | 
 | `-0`| The number negative zero | 
 | `0n` | BigInt, when used as a boolean | 
@@ -137,5 +136,236 @@ All other values ​​are `true`, for example an empty array `[]` and an empty 
 Nevertheless, in loop, if construction a**lways submit the Boolean value**, respectively never submit anything other than a Boolean value. 
 
 It is always better to be **explicit** so as not to be ambiguous.
+
+[/slide]
+
+[slide]
+# Problem: Amazing Numbers
+[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function amazingNumbers(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function which as input will receive a **number.**
+ 
+Check and print if it is **amazing** or **not** into the following format: 
+
+`{number} Amazing? {result}`
+
+An amazing number is one that includes the **digit 9** the sum of its digits. 
+
+Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
+
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`1233`| 1233 Amazing? True |
+|`999`|999 Amazing? False|
+
+[/task-description]
+[tests]
+[test]
+[input]
+5454155
+[/input]
+[output]
+5454155 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+144
+[/input]
+[output]
+144 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+55555554
+[/input]
+[output]
+55555554 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+5554
+[/input]
+[output]
+5554 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+45645
+[/input]
+[output]
+45645 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+3671
+[/input]
+[output]
+3671 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+1231
+[/input]
+[output]
+1231 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+6123
+[/input]
+[output]
+6123 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+65451
+[/input]
+[output]
+65451 Amazing? False
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# SOlution: Amazing Numbers
+[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function amazingNumbers(input){
+ let	num = input.toString();
+let sum = 0;
+	for (let j = 0; j <=num.length - 1; j++) {
+		sum += Number(num[j]);
+	}
+	if (sum.toString().includes('9')) {
+		console.log(`${num} Amazing? True`);
+			} else {
+		console.log(`${num} Amazing? False`);
+	}
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function which as input will receive a **number.**
+ 
+Check and print if it is **amazing** or **not** into the following format: 
+
+`{number} Amazing? {result}`
+
+An amazing number is one that includes the **digit 9** the sum of its digits. 
+
+Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
+
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`1233`| 1233 Amazing? True |
+|`999`|999 Amazing? False|
+
+[/task-description]
+[tests]
+[test]
+[input]
+5454155
+[/input]
+[output]
+5454155 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+144
+[/input]
+[output]
+144 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+55555554
+[/input]
+[output]
+55555554 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+5554
+[/input]
+[output]
+5554 Amazing? True
+[/output]
+[/test]
+[test]
+[input]
+45645
+[/input]
+[output]
+45645 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+3671
+[/input]
+[output]
+3671 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+1231
+[/input]
+[output]
+1231 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+6123
+[/input]
+[output]
+6123 Amazing? False
+[/output]
+[/test]
+[test]
+[input]
+65451
+[/input]
+[output]
+65451 Amazing? False
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
 
 [/slide]
