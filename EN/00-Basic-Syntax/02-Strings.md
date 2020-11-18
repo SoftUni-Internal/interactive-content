@@ -49,7 +49,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 
 [slide]
-# Problem: Concantenate names
+# Problem: Concantenate Names
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -139,7 +139,7 @@ JanpWhite
 [/slide]
 
 [slide]
-# Solution: Concantenate names
+# Solution: Concantenate Names
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
