@@ -310,8 +310,11 @@ If our string c**ontains five two-bite characters**, our `CHAR_LENGTH()` functio
 
 We will picture this better with a very simple example:
 
+``` java
+SELECT LENGTH('§'); vs SELECT CHAR_LENGTH('§');
+```
 
-| LENGTH('§') | CHAR_LENGTH('§') | 
+| **LENGTH('§')** | **CHAR_LENGTH('§')** | 
 | --- | --- |
 | 2 | 1 |
 
