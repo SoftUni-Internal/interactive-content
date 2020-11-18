@@ -28,6 +28,7 @@ SELECT full_name, course, grade FROM students; //Makes a "projection" giving us 
 
 **Keynote** - when we make a projection, we take only data that we need, which optimizes our query and makes less trafic to the database.
 
+
 ## Make a filtration/take a subset of desired rows
 
 
@@ -41,5 +42,19 @@ WHERE courseName = "Java Advanced";
 [image assetsSrc="Retrieving-data(2).png" /]
 
 **Keynote** - This operation won't boost the performance, as the databse has to iterate through all the records in order to find the one that meets the requierment, but it will find you only the records that you need.
+
+
+## Combining tables
+
+
+``` java
+SELECT course_name, course_schedule, teacher_full_name
+FROM Orders
+INNER JOIN Customers ON Courses.teacherId=Teachers.id; 
+```
+
+[image assetsSrc="Retrieving-data(3).png" /]
+
+Although we show you how **JOIN** works, we are not going to talk about it in this lecture, as you will have it in a further lesson.
 
 [/slide]
