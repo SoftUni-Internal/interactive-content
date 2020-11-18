@@ -1,5 +1,7 @@
-# String Functions
+
 [slide]
+
+# String Functions
 
 Let's examine the **String Functions** in MySQL.
 
@@ -7,7 +9,7 @@ We use String Functions to manipulate our character string effectively.
 
 Take a look at this simple example of String Function:
 
-# SUBSTRING()
+## SUBSTRING()
 
 The `SUBSTRING()` function allows us to extract part of a string.
 
