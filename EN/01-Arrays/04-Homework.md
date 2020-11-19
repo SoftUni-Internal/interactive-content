@@ -280,7 +280,6 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 
 # Comments
 `2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
-|`['1','2','3','4','5']`, `['1','2','4','4','5']`| Arrays are not identical. Found 
 
 # More Examples
   | **Input** | **Output** |
@@ -321,7 +320,9 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
-0 0 0
+0
+0
+0
 [/input]
 [output]
 0
@@ -329,7 +330,10 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--5 -10 -15 -5
+-5
+-10
+-15
+-5
 [/input]
 [output]
 -85
@@ -337,7 +341,15 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--1 2 -3 4 -5 6 -7 8 -9
+-1
+2
+-3
+4
+-5
+6
+-7
+8
+-9
 [/input]
 [output]
 0
@@ -345,7 +357,26 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/test]
 [test]
 [input]
--1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -1
+-1
+-1
+-1
+-1
+-1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+-1
 [/input]
 [output]
 514214
