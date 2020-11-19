@@ -60,7 +60,7 @@ Although we show you how **JOIN** works, we are not going to talk about it in th
 [/slide]
 
 [slide]
-## Concatenation of columns
+# Concatenation of columns
 
 ### concat()
 As you may already know SQL is not only a tool for storing and retrieving data, but you can also use it's build in functions.
@@ -101,7 +101,7 @@ It's **important** to remember that concat_ws() has additional behaviour of igno
 [/slide]
 
 [slide]
-## Filtering the selected rows
+# Filtering the selected rows
 Now we know how to take the information that we need and present it the way we want.
 
 Lets have a look how we can filter these results in order to get only the results that we desire.
@@ -148,7 +148,7 @@ AND course = "Java Advanced"       //The keyword "AND" is used in order to combi
 [/slide]
 
 [slide]
-## Other comparison conditions
+# Other comparison conditions
 
 There are few other comparison conditions that make our live easier as developers and make our queries easier to read.
 
@@ -201,7 +201,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [/slide]
 
 [slide]
-## Comparison with **NULL**
+# Comparison with **NULL**
 
 One tricky part of SQL is the **NULL** value, it may sometimes surprise you until you finally get the hang of it.
 
@@ -247,7 +247,7 @@ SELECT 3 - NULL // = NULL
 [/slide]
 
 [slide]
-## Sorting the results
+# Sorting the results
 
 When we finish with selecting the information we need, filtering it and before vizualizing it the way we want we should consider for ordering it the right way.
 
@@ -274,7 +274,7 @@ ORDER BY age DESC, first_name
 [/slide]
 
 [slide]
-### Usage of **Views**
+# Usage of **Views**
 
 Views are virtual tables which do not store information by itself.
 
