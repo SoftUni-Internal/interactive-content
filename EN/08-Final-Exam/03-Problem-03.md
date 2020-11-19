@@ -10,9 +10,9 @@ The company offers **small** and **large** cuts with **2 pcs.** and **5 pcs.** e
 
 Depending on the **size of the cut**, the price per number of an energy bar is different.
 
-From the console are read the fruits, the size of the package `(small) 2 pcs.` Or `(large) 5 pcs.`. 
+From the console are read the fruits, the size of the package `(small) 2 pcs.` or `(big) 5 pcs.`.
 
-As well as how many **cuts are ordered.**
+Also, you will receive the **count of cuts that are ordered.**
 
 Write a program that c**alculates the amount to be paid** for the order.
 
@@ -72,7 +72,7 @@ function solve(input) {
 
 - `15% from 574 = $86.1 discount`
 
-- Finale price: `574 - 86.1 = $487.9`
+- Final price: `574 - 86.1 = $487.9`
 
 
 # More Examples
