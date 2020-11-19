@@ -104,7 +104,7 @@ It's **important** to remember that concat_ws() has additional behaviour of igno
 ## Filtering the selected rows
 Now we know how to take the information that we need and present it the way we want.
 
-Now lets have a look how we can filter these results in order to get only the results that we desire.
+Lets have a look how we can filter these results in order to get only the results that we desire.
 
 There are several ways to achieve that:
 
@@ -143,9 +143,59 @@ We can use logical operators <>= in combination with **WHERE** in order to get b
 SELECT *                           //This query will result in a filtered
 FROM students                      //collection of records
 WHERE age >= 14                    //where all of our records will meet the requirments.
-AND course = "Java Advanced".      //The keyword "AND" is used in order to combine conditions.
+AND course = "Java Advanced"       //The keyword "AND" is used in order to combine conditions.
+```
+[/slide]
+
+[slide]
+## Other comparison conditions
+
+There are few other comparison conditions that make our live easier as developers and make our queries easier to read.
+
+### NOT, OR, AND
+
+``` java
+SELECT `first_name`                                           //As we don't wnat to meet any
+FROM students                                                 //of the combined with the keyword 'AND' conditions
+WHERE NOT (course_name = 'JS Basics' AND 'Java Basics')       //we use the keyword 'NOT' to reverse the logic
 ```
 
-Other comparison conditions
+The keyword **NOT** is powerful, but you may have already used in you Java projects as the **operator '!'**.
+Follwing the same logic the keyword **AND** is equal to the **&& operator** in Java.
 
+
+Now lets have a look over the keyword 'OR'.
+
+```java
+SELECT concat_ws(' ', first_name, last_name) AS full_name       //Now we want only the full_name
+FROM students                                                   //of students
+WHERE course_name = 'JS Basics' AND 'Java Basics'               //where their course is either 'JS Basics' or 'Java Basics'
+```
+The keyword equivalent of **OR** in Java would be **'||' operator**.
+
+
+Now let's have a look over few operators that are native only to SQL.
+
+
+### BETWEEN
+
+```java
+SELECT concat_ws(' ', first_name, last_name) AS full_name       //Here we want the students names
+FROM students                                                   //where their age
+WHERE age BETWEEN 14 AND 18                                     //is between the conditions we set.
+```
+
+The **BETWEEN** operator is used in combination with the **AND** operator in order to set boundries of the filtration we want.
+The operator is inclusive, so it's taken in notice both boundries. The values can be numbers, text, or dates.
+
+
+### IN/NOT IN
+
+```java                                                                   
+SELECT *                                                                 //This query aims to return us
+FROM students                                                            //all the information for students
+WHERE course IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's course is in between the values we stated.
+```
+
+We want to use **IN/NOT IN** operators when we know the exact value we want, following the same logic we can understand what the **NOT IN** operator does.
 [/slide]
