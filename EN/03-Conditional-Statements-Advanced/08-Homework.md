@@ -27,7 +27,7 @@ Write a program to check for fruit or vegetable:
 * Read a single input line: an item from the greengrocery
 * Fruits: banana, apple, kiwi, cherry, lemon, grapes
 * Vegetables: cucumber, pepper, carrot, onion
-* Print: **vegetable**, **fruit** or **unknown**
+* Print: `vegetable`, `fruit` or `unknown`
 
 # Example
   | **Input** | **Output** |
@@ -75,7 +75,7 @@ Write a program to print the day of week as words:
 
 * Read and integer **n**: the **day of the week** in range `[1..7]`
 * Print the **name of the day** (as words, in English)
-* Print **"Error"** if the number is not in the given range
+* Print `Error` if the number is not in the given range
 
 # Example
   | **Input** | **Output** |
@@ -130,7 +130,7 @@ function vowelOrConsonant(input) {
 Write a program to check a letter for vowel or consonant:
 
 * Read a **letter** from the English alphabet
-* Print either **Vowel** or **Consonant**
+* Print either `Vowel` or `Consonant`
 
 # Example
   | **Input** | **Output** |
@@ -185,7 +185,7 @@ function productOfThreeNumbers(input) {
 Calculate the sign of the product of 3 numbers:
 
 * Read **3 floating-point** numbers
-* Print the **sign** of the product of the entered 3 numbers: **positive**, **negative** or **zero**
+* Print the **sign** of the product of the entered 3 numbers: `positive`, `negative` or `zero`
 
 Try to do this **without multiplying** the 3 numbers
 # Example
@@ -248,9 +248,9 @@ function sortedNumbers(input) {
 Write a program, which checks for **sorted 3 numbers**:
 
 * Read 3 real numbers
-* Print **"Ascending"** if the numbers are in ascending order
-* Print **"Descending"** if the numbers are in descending order
-* Print **"Not sorted"** in any other case
+* Print `Ascending` if the numbers are in ascending order
+* Print `Descending` if the numbers are in descending order
+* Print `Not sorted` in any other case
 
 # Example
   | **Input** | **Output** |
@@ -318,7 +318,7 @@ function vacationExpenses(input) {
 Write a program, which calculates vacation expenses:
 
 * Read season, accommodation type and count of the days
-* Print the total expenses, based on the price table bellow,formatted to the 2nd * digit after the decimal point
+* Print the total **expenses**, based on the price table bellow, formatted to the **2nd digit** after the decimal point
 
  | Season   | Hotel | Camping   | Discount|
 | :---:       |    :----:   |   :---:     |   :---: |

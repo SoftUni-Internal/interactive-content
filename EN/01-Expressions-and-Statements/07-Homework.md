@@ -153,7 +153,7 @@ function areaOfTriangle (input) {
 Write a function that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Use the formula: 
-- degrees = radians * 180 / π. 
+- `degrees = radians * 180 / π` 
 
 The number of **π** in JavaScript programs is available through `Math.PI`. 
 Round the result to the nearest integer using `toFixed(0)`.
@@ -220,9 +220,12 @@ function daysToMinutes (input) {
 [task-description]
 # Description
 Write a program to convert from days to minutes:
-  * Read a single **integer** (the **days** to be converted)
-  * Convert the days to minutes (use calculations)
-  * Print the **minutes**
+
+* Read a single **integer** (the **days** to be converted)
+
+* Convert the days to minutes (use calculations)
+
+* Print the **minutes**
 
   ## Example
 | **Input** | **Output** |
@@ -362,8 +365,10 @@ The function receives one argument:
 
 ## Output
  Two lines are printed on the console:
--	`The final price is: {final price of the service} dollars.`
--	`The discount is: {discount} dollars.`
+
+- `The final price is: {final price of the service} dollars.`
+
+- `The discount is: {discount} dollars.`
 
 ## Example
 | **Input** | **Output** |
@@ -373,12 +378,15 @@ The function receives one argument:
 
 ## Explanations
 We calculate the price for landscaping the whole yard:
+
 - `550 * 7.61 = $4185.5`
 
 We deduct the discount from the total amount:
+
 - `0.18 * 4185.5 = $753.39`
 
 We calculate the final price of the service:
+
 - `4185.5 – 753.39 -> $3432.11`
 
 
