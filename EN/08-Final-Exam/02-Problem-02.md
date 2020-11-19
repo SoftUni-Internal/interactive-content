@@ -12,9 +12,9 @@ Write a program that calculates **whether he has coped with the task**, given th
 
 - The slope of the terrain **slows him down** every **50 meters by 30 seconds**.
 
-To **calculate** the time in seconds for which George will climb the **distance** to the top and the **difference from the record.**
+**Calculate** the time in seconds for which George will climb the **distance** to the top and the **difference from the record.**
 
-When **calculating how many times George will slow down** as a result of the slope of the field, the result should be **rounded down to the nearest whole number.**
+When **calculating how much times George will slow down** as a result of the slope of the field, the result should be **rounded down to the nearest whole number.**
 
 
 # Input
@@ -28,7 +28,7 @@ Three lines are read from the console
 
 # Output
 
-Printing the console depends on the results:
+Printing on the console depends on the results:
 
 - If George has improved the record we print: `Yes! The new record is { George's time} seconds.`
 
@@ -57,7 +57,7 @@ function solve(input) {
 
 - George has to **climb 1400 m.**:  `1400 * 25 = 35000 seconds`
 
-- Every **50 meters**, **30 seconds are added** to its time: `(1400 / 50) * 30 = 840 seconds`
+- Every **50 meters**, **30 seconds are added** to his time: `(1400 / 50) * 30 = 840 seconds`
 
 - Total time: `35000 + 840 = 35840 seconds`
 
