@@ -1043,7 +1043,7 @@ Write a function that receives **three string parameters:**
 
 - **number**
 
-- **operator**
+- **operator**: `+`, `-`, `*`, `\`, `%`
 
 - **another number**
 
