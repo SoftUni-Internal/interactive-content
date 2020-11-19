@@ -273,6 +273,7 @@ ORDER BY age DESC, first_name
 
 [/slide]
 
+[slide]
 ### Usage of **Views**
 
 Views are virtual tables which do not store information by itself.
@@ -290,3 +291,4 @@ SELECT c1, c2, c3, FROM RandomColumns    //and we set what information we want f
 
 [image assetsSrc="Retrieving-data(4).png" /]
 
+[/slide]
