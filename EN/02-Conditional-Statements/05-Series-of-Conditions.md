@@ -24,7 +24,7 @@ else {
 # Example: Digits in English
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 
-We can read the digit and then, through a **sequence of conditions** we print the relevant English word:
+We can read the digit and then, through a **sequence of conditions** we can print the relevant English word: 
 ```js
 let num = Number(input);
 

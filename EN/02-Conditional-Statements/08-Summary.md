@@ -1,8 +1,8 @@
 [slide]
 # Summary
-In this lesson you learnt:
+In this lesson we learned:
 
-- what's are logical Boolean expression.
+- What is a logical Boolean expression. 
    - how to use comparison operators.
 
 - what is a conditional statement: 

@@ -26,8 +26,8 @@ function guessThePassword(input) {
 Write a program to check a password:
 
   * Read a string: the password **guess**
-  * Print **"Welcome"** if the password guess is **"s3cr3t!"**
-  * Print **"Wrong password!"** in all other cases 
+  * Print `Welcome` if the password guess is `s3cr3t!`
+  * Print `Wrong password!` in all other cases 
 
 # Example
 
@@ -75,8 +75,8 @@ function boilingWater(input) {
 Write a program, which checks for hot water: 
 
   * Read a floating-point number: the water **temperature** (in °C)
-  * Print **"The water is boiling"** if the number **> 100**
-  * Prints **"The water is not hot enough"** in all other cases 
+  * Print `The water is boiling` if the number `> 100`
+  * Prints `The water is not hot enough` in all other cases 
 
   # Example
 
@@ -124,8 +124,8 @@ function speedInfo(input) {
 Write a program to check for fast / slow speed: 
 
   * Read the **speed** (a floating-point number)
-  * Print **"Slow"** if the speed **<= 30**
-  * Print **"Fast"** if the speed **> 30**
+  * Print `Slow` if the speed `<= 30`
+  * Print `Fast` if the speed `> 30`
 
   # Example
 
@@ -171,17 +171,23 @@ function bonusScore(input) {
 [task-description]
 # Description
 An integer is given which the initial **number** of points. 
+
 **Bonus points** are awarded according to the rules described below. 
+
 Write a function that calculates 
+
 - the **received** bonus points from the number 
-- and the **total number of points**  which number plus bonus.
+
+- which is the initial **total number of points** - Which is the **number plus the bonus points.**
 
 If the number is up to **100 inclusive**, the bonus points are **5**.
 If the number is **greater than 100**, the bonus points are **20 percent of the number**.
 If the number is **greater than 1000**, the bonus points are **10 percent of the number**.
 
 Additional bonus points, accrued separately from the previous ones:
+
 - For an even number you add 1 point
+
 -	For a number ending in 5, you add 2 points
 
 # Example
@@ -282,7 +288,7 @@ Write a program to calculate a ticket price:
     * The price should be **formatted** to 2nd digit after the decimal point
   * Student ticket price: **1.00**
   * Regular ticket price: **1.60**
-  * For invalid type print **"Invalid ticket type!"**
+  * For invalid type print `Invalid ticket type!`
 
 # Example
 
