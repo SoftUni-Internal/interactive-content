@@ -254,3 +254,151 @@ Write a program that calculates the difference between the sum of the even and t
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Equal Arrays
+[code-task title="Equal Arrays" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function equalArrays(arr1, arr2){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a program which receives **two string arrays** and print on the console whether they are identical or NOT.
+
+Arrays are identical if their elements are **equal**. 
+
+- If the arrays are identical find the **sum** of the first one and print on the console following message: 
+`Arrays are identical. Sum: {sum}`
+ 
+- If the arrays are **NOT identical** find the **first index** where the arrays **differ** and print on the console following message:
+
+`Arrays are not identical. Found difference at {index} index`
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['10','20','30']`, `['10','20','30']`| Arrays are identical. Sum: 60 |
+|`['1','2','3','4','5']`, `['1','2','4','4','5']`| Arrays are not identical. Found difference at 2 index |
+|`['1']`, `['10']`| Arrays are not identical. Found difference at 0 index |
+
+[/task-description]
+[tests]
+[test]
+[input]
+110
+120
+130
+-
+110
+120
+130
+[/input]
+[output]
+Arrays are identical. Sum: 360
+[/output]
+[/test]
+[test]
+[input]
+74
+16
+65
+110
+[/input]
+[output]
+135
+[/output]
+[/test]
+[test]
+[input]
+53
+5
+27
+19
+[/input]
+[output]
+-104
+[/output]
+[/test]
+[test]
+[input]
+-53
+485
+328
+194
+[/input]
+[output]
+90
+[/output]
+[/test]
+[test]
+[input]
+24
+44
+16
+68
+15
+41
+[/input]
+[output]
+96
+[/output]
+[/test]
+[test]
+[input]
+24
+14
+16
+-48
+110
+[/input]
+[output]
+116
+[/output]
+[/test]
+[test]
+[input]
+24
+-6
+16
+68
+150
+[/input]
+[output]
+252
+[/output]
+[/test]
+[test]
+[input]
+24
+84
+16
+68
+-14
+[/input]
+[output]
+178
+[/output]
+[/test]
+[test]
+[input]
+24
+84
+16
+68
+-14
+[/input]
+[output]
+178
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
