@@ -256,11 +256,11 @@ Write a program that calculates the difference between the sum of the even and t
 [/slide]
 
 [slide]
-# Problem: Equal Arrays
-[code-task title="Equal Arrays" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Condense Array to Number
+[code-task title="Condense Array to Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function equalArrays(input){
+function condense(input){
   // Write your code here
 }
 ```
@@ -268,133 +268,85 @@ function equalArrays(input){
 [task-description]
 # Description
 
-Write a program which receives **two string arrays** and print on the console whether they are identical or NOT.
-
-Arrays are identical if their elements are **equal**. 
-
-- If the arrays are identical find the **sum** of the first one and print on the console following message: 
-`Arrays are identical. Sum: {sum}`
- 
-- If the arrays are **NOT identical** find the **first index** where the arrays **differ** and print on the console following message:
-
-`Arrays are not identical. Found difference at {index} index`
-
+Write a program which receives **an array of numbers** and condense them by **summing** adjacent couples of elements until a **single number** is obtained.
 
 # Example
+
+For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the second two elements and obtain `{2+10, 10+3} = {12, 13}`, then we sum again all adjacent elements and obtain `{12+13} = {25}`.
+
   | **Input** | **Output** |
 | --- | --- |
-|`['10','20','30']`, `['10','20','30']`| Arrays are identical. Sum: 60 |
-|`['1','2','3','4','5']`, `['1','2','4','4','5']`| Arrays are not identical. Found difference at 2 index |
-|`['1']`, `['10']`| Arrays are not identical. Found difference at 0 index |
+|`[2,10,3]`| 25 |
+
+# Comments
+`2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
+|`['1','2','3','4','5']`, `['1','2','4','4','5']`| Arrays are not identical. Found 
+
+# More Examples
+  | **Input** | **Output** |
+| --- | --- |
+|`[5,0,4,1,2]`| 35 |
+|`[1]`| 1 |
+
+# Hints
+
+While we have more than one element in the array `nums[]`, repeat the following:
+
+- Allocate a new array `condensed[]` of size `nums.Length-1`
+
+- Sum the numbers from `nums[]` to `condensed[]`:
+  -	`condensed[i] = nums[i] + nums[i+1]`
+
+-	`nums[] = condensed[]`
 
 [/task-description]
 [tests]
 [test]
 [input]
-110
-120
-130
-
-110
-120
-130
+3 4 0 3 4 0 0 0 0 1 2
 [/input]
 [output]
-Arrays are identical. Sum: 360
+1255
 [/output]
 [/test]
 [test]
 [input]
-74
-16
-65
-110
+0 0 0
 [/input]
 [output]
-135
+0
 [/output]
 [/test]
 [test]
 [input]
-53
-5
-27
-19
+-5 -10 -15 -5
 [/input]
 [output]
--104
+-85
 [/output]
 [/test]
 [test]
 [input]
--53
-485
-328
-194
+-1 2 -3 4 -5 6 -7 8 -9
 [/input]
 [output]
-90
+0
 [/output]
 [/test]
 [test]
 [input]
-24
-44
-16
-68
-15
-41
+-1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -1
 [/input]
 [output]
-96
+514214
 [/output]
 [/test]
 [test]
 [input]
-24
-14
-16
--48
-110
+10
 [/input]
 [output]
-116
-[/output]
-[/test]
-[test]
-[input]
-24
--6
-16
-68
-150
-[/input]
-[output]
-252
-[/output]
-[/test]
-[test]
-[input]
-24
-84
-16
-68
--14
-[/input]
-[output]
-178
-[/output]
-[/test]
-[test]
-[input]
-24
-84
-16
-68
--14
-[/input]
-[output]
-178
+10
 [/output]
 [/test]
 [/tests]
