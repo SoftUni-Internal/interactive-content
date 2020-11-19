@@ -11,13 +11,13 @@ Every day the dog and the cat eat a **different amount** of their common food.
 
 Every **third day they receive a prize** - cookies. 
 
-The amount of **cookies is 10\%** of the total food eaten for the day.
+The amount of cookies is `10%` of the total food eaten for the day.
 
 Your program should print **statistics about the amount of cookies they ate**.
 
-What **percentage of the original amount** of total food they ate.
+- What **percentage of the original amount** of total food they ate.
 
-And what **percentage of the food the dog ate** and how much the cat ate.
+- What **percentage of the food the dog ate** and how much the cat ate.
 
 
 # Input
