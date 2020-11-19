@@ -12,7 +12,7 @@ We have prepared some problems for you to solve.
 
 [slide]
 # Problem: Sum Even Numbers
-[code-task title="GraSum Even Numbersmophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Even Numbersmophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumEvenNumbers(input){
@@ -294,7 +294,7 @@ Arrays are identical if their elements are **equal**.
 110
 120
 130
--
+\-
 110
 120
 130
