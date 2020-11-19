@@ -260,7 +260,7 @@ Write a program that calculates the difference between the sum of the even and t
 [code-task title="Equal Arrays" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function equalArrays(arr1, arr2){
+function equalArrays(input){
   // Write your code here
 }
 ```
