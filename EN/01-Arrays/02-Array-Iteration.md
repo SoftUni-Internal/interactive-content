@@ -25,17 +25,15 @@ console.log(capitals.toString())
 
 [slide]
 # Problem: Reverse an Array of Numbers
-[code-task title="Reverse an Array of Numbers. Concantenate names" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverse(input){
+function reverce(input){
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-
 Write a program which receives an array of elements.
 
 Your task is to create a new array with `n` numbers, reverse it and print its elements on a single line, space separated.
@@ -50,46 +48,7 @@ Where `n` is the  first element of the array.
 |`[2, 66, 43, 75, 89, 47]` | 43 66 |
 
 [/task-description]
-[code-io /]
 [tests]
-[test open]
-[input]
-3
-10
-20
-30
-40
-50
-[/input]
-[output]
-30 20 10
-[/output]
-[/test]
-[test open]
-[input]
-4
--1
-20
-99
-5
-[/input]
-[output]
-5 99 20 -1
-[/output]
-[/test]
-[test open]
-[input]
-2
-66
-43
-75
-89
-47
-[/input]
-[output]
-43 66
-[/output]
-[/test]
 [test]
 [input]
 3
@@ -193,5 +152,7 @@ Where `n` is the  first element of the array.
 [/output]
 [/test]
 [/tests]
+[code-io /]
 [/code-task]
+
 [/slide]
