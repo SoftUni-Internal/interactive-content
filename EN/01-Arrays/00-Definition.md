@@ -91,3 +91,234 @@ console.log(numbers);
 ```
 
 [/slide]
+
+[slide]
+# Problem: Sum First and Last Array Elements
+[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function sum(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
+|`[11, 58, 69]`| 80 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+12
+32
+15
+1
+16
+78
+[/input]
+[output]
+90
+[/output]
+[/test]
+[test]
+[input]
+12
+32
+18
+16
+[/input]
+[output]
+28
+[/output]
+[/test]
+[test]
+[input]
+191
+67
+22
+33
+9
+[/input]
+[output]
+200
+[/output]
+[/test]
+[test]
+[input]
+10
+69
+[/input]
+[output]
+79
+[/output]
+[/test]
+[test]
+[input]
+56
+44
+19
+[/input]
+[output]
+75
+[/output]
+[/test]
+[test]
+[input]
+118
+574
+19
+[/input]
+[output]
+137
+[/output]
+[/test]
+[test]
+[input]
+11
+58
+69
+[/input]
+[output]
+80
+[/output]
+[/test]
+[test]
+[input]
+91
+18
+19
+[/input]
+[output]
+110
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Sum First and Last Array Elements
+[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function sum(arr){
+  let sum = Number(arr[0]) + Number(arr[arr.length - 1]);
+  console.log(sum);
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
+|`[11, 58, 69]`| 80 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+12
+32
+15
+1
+16
+78
+[/input]
+[output]
+90
+[/output]
+[/test]
+[test]
+[input]
+12
+32
+18
+16
+[/input]
+[output]
+28
+[/output]
+[/test]
+[test]
+[input]
+191
+67
+22
+33
+9
+[/input]
+[output]
+200
+[/output]
+[/test]
+[test]
+[input]
+10
+69
+[/input]
+[output]
+79
+[/output]
+[/test]
+[test]
+[input]
+56
+44
+19
+[/input]
+[output]
+75
+[/output]
+[/test]
+[test]
+[input]
+118
+574
+19
+[/input]
+[output]
+137
+[/output]
+[/test]
+[test]
+[input]
+11
+58
+69
+[/input]
+[output]
+80
+[/output]
+[/test]
+[test]
+[input]
+91
+18
+19
+[/input]
+[output]
+110
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
