@@ -31,7 +31,6 @@ Write a program which receives an array of strings, parse them to numbers and su
 |`['3','5','7','9']`| 0 |
 |`['2','4','6','8','10']`| 30 |
 
-
 [/task-description]
 [tests]
 [test]
