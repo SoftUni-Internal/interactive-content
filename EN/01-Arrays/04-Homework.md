@@ -303,7 +303,17 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [tests]
 [test]
 [input]
-3 4 0 3 4 0 0 0 0 1 2
+3
+4
+0
+3
+4
+0
+0
+0
+0
+1
+2
 [/input]
 [output]
 1255
