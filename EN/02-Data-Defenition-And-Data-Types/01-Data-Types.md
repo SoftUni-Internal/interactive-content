@@ -34,7 +34,8 @@ INT[(M)][UNSIGNED]  -  Where "M" is the count of digits stored for the value
 
 ```Java
 DOUBLE[(M, D)][UNSIGNED]  -  Where "M" is the count of digits stored for the value.
-                             "D" is the count of decimals after floating point. Example: DOUBLE[5, 2] - 999.99
+                             "D" is the count of decimals after floating point.
+                             Example: DOUBLE[5, 2] - 999.99
 ```
 
 Next is **String** data type:
