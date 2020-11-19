@@ -37,13 +37,13 @@ This SQL query will produce the following result:
 
 | department_id | MinSalary | 
 | --- | --- |
-| 1 | 32700.0000 |
-| 2 | 25000.0000 |
-| 3 | 23100.0000 |
-| 4 | 13500.0000 |
-| 5 | 12800.0000 | 
-| 6 | 40900.0000 |
-| 7 | 9500.0000 |
+| 1 | 32700,0000 |
+| 2 | 25000,0000 |
+| 3 | 23100,0000 |
+| 4 | 13500,0000 |
+| 5 | 12800,0000 | 
+| 6 | 40900,0000 |
+| 7 | 9500,0000 |
 
 After knowing this, let's take a look at the functions and their syntax:
 
@@ -69,7 +69,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output** from executing this query:
+**Output:** from executing this query:
 
 | department_id | name | manager_id |
 | --- | --- | --- |
@@ -109,7 +109,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output** from the following query will be:
+**Output:** from the following query will be:
 
 | department_id | TotalSalary |
 | --- | --- |
@@ -119,8 +119,8 @@ GROUP BY e.`department_id`;
 | 4 | 112500,0000 |
 | 5 | 227800,0000 |
 | 6 | 318800,0000 |
-| 7 | 2535100.0000 | 
-| 8 | 112100.0000 |
+| 7 | 2535100,0000 | 
+| 8 | 112100,0000 |
 | ..... | ...... |
 [/slide]
 
@@ -128,6 +128,91 @@ GROUP BY e.`department_id`;
 
 # MAX Function
 
+`MAX()` function will take the maximum value from a column.
+
+[image assetsSrc="Built-in-Functions-Data-Aggregations(2).png" /]
+
+``` java
+SELECT e.`department_id`, MAX(e.`salary`) AS 'MaxSalary'
+FROM `employees` AS e       
+ GROUP BY e.`department_id`;           
+```
+
+**Output:**
+
+| department_id | Max_salary |
+| --- | --- |
+| 1 | 63500,0000 |
+| 2 | 29800,0000 |
+| 3 | 72100,0000 |
+| 4 | 14400,0000 |
+| 5 | 37500,0000 |
+| 6 | 50500,0000 |
+| 7 | 84100,0000 | 
+| 8 | 24500,0000 |
+| ..... | ...... |
+
+
+[/slide]
+
+[slide]
+
+# MIN Function
+
+`MIN()` function will take the minimum value from a column.
+
+[image assetsSrc="Built-in-Functions-Data-Aggregations(3).png" /]
+
+``` java
+SELECT e.`department_id`,  MIN(e.`salary`) AS 'MinSalary'
+FROM `employees` AS e
+GROUP BY e.`department_id`;
+```
+
+**Output:**
+
+| department_id | Min_salary |
+| --- | --- |
+| 1 | 32700,0000 |
+| 2 | 25000,0000 |
+| 3 | 23100,0000 |
+| 4 | 13500,0000 |
+| 5 | 12800,0000 |
+| 6 | 40900,0000 |
+| 7 | 9500,0000 | 
+| 8 | 16000,0000 |
+| ..... | ...... |
+
+[/slide]
+
+[slide]
+
+# AVG Function
+
+`AVG()` function will calculate the average value in a column.
+
+[image assetsSrc="Built-in-Functions-Data-Aggregations(4).png" /]
+
+``` java
+SELECT e.`department_id`, 
+  AVG(e.`salary`) AS 'AvgSalary'
+FROM `employees` AS e
+GROUP BY e.`department_id`;
+```
+
+**Output:**
+
+| department_id | Average_Salary |
+| --- | --- |
+| 1 | 40166,66666667 |
+| 2 | 27150,00000000 |
+| 3 | 29988,88888889 |
+| 4 | 14062,50000000 |
+| 5 | 18983,33333333 |
+| 6 | 45542,85714286 |
+| 7 | 14162,56983240| 
+| 8 | 18683,33333333 |
+| ..... | ...... |
 
 
 [/slide]
