@@ -307,3 +307,201 @@ Where `n` is the  first element of the array.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Reverse an Array of Strings
+[code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function reverce(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
+Write a program which receives an **array of strings** (space separated values).
+
+Your task is to reverse it and print its elements. **Swap** elements.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['a', 'b', 'c', 'd', 'e']` | e d c b a  |
+|`['abc', 'def', 'hig', 'klm', 'nop']` | nop klm hig def abc |
+|`['33', '123', '0', 'dd']` | dd 0 123 33 |
+
+# Comments
+The first element should be last, and the last element should be first.
+
+[/task-description]
+[tests]
+[test]
+[input]
+3ghj3
+123
+0
+dkl;d
+dasjkjd
+dage
+[/input]
+[output]
+dage dasjkjd dkl;d 0 123 3ghj3
+[/output]
+[/test]
+[test]
+[input]
+3gjhgjh3
+123bnmb
+nmbmn0
+dd
+dasd
+dage
+[/input]
+[output]
+dage dasd dd nmbmn0 123bnmb 3gjhgjh3
+[/output]
+[/test]
+[test]
+[input]
+3bmn3
+12bnmbn3
+0
+dd
+dasd
+dage
+[/input]
+[output]
+dage dasd dd 0 12bnmbn3 3bmn3
+[/output]
+[/test]
+[test]
+[input]
+3hjkh3
+1hjkh23
+0ghjgj
+45dd
+djklasd
+dage
+[/input]
+[output]
+dage djklasd 45dd 0ghjgj 1hjkh23 3hjkh3
+[/output]
+[/test]
+[test]
+[input]
+3jkj3
+124543
+0
+dd
+dsadaffa
+[/input]
+[output]
+dsadaffa dd 0 124543 3jkj3
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Reverse an Array of Strings
+[code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function reverce(input){
+  let reversed = arr.reverse();
+
+  console.log(reversed);
+}
+```
+[/code-editor]
+[task-description]
+
+Write a program which receives an **array of strings** (space separated values).
+
+Your task is to reverse it and print its elements. **Swap** elements.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['a', 'b', 'c', 'd', 'e']` | e d c b a  |
+|`['abc', 'def', 'hig', 'klm', 'nop']` | nop klm hig def abc |
+|`['33', '123', '0', 'dd']` | dd 0 123 33 |
+
+# Comments
+The first element should be last, and the last element should be first.
+
+[/task-description]
+[tests]
+[test]
+[input]
+3ghj3
+123
+0
+dkl;d
+dasjkjd
+dage
+[/input]
+[output]
+dage dasjkjd dkl;d 0 123 3ghj3
+[/output]
+[/test]
+[test]
+[input]
+3gjhgjh3
+123bnmb
+nmbmn0
+dd
+dasd
+dage
+[/input]
+[output]
+dage dasd dd nmbmn0 123bnmb 3gjhgjh3
+[/output]
+[/test]
+[test]
+[input]
+3bmn3
+12bnmbn3
+0
+dd
+dasd
+dage
+[/input]
+[output]
+dage dasd dd 0 12bnmbn3 3bmn3
+[/output]
+[/test]
+[test]
+[input]
+3hjkh3
+1hjkh23
+0ghjgj
+45dd
+djklasd
+dage
+[/input]
+[output]
+dage djklasd 45dd 0ghjgj 1hjkh23 3hjkh3
+[/output]
+[/test]
+[test]
+[input]
+3jkj3
+124543
+0
+dd
+dsadaffa
+[/input]
+[output]
+dsadaffa dd 0 124543 3jkj3
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
