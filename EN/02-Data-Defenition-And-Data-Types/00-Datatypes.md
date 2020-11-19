@@ -1,6 +1,6 @@
 [slide]
 
-#Data Defenition And Data Types
+# Data Defenition And Data Types
 
 Today, we will talk about `Datatypes`.
 
