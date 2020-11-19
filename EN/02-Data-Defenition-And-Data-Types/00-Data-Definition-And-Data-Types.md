@@ -34,8 +34,8 @@ INT[(M)][UNSIGNED];  // Where "M" is the count of digits stored for the value
 
 ```Java
 DOUBLE[(M, D)][UNSIGNED];  //  Where "M" is the count of digits stored for the value.
-                          // "D" is the count of decimals after floating point.
-                          //  Example: DOUBLE[5, 2] - 999.99
+                           // "D" is the count of decimals after floating point.
+                           //  Example: DOUBLE[5, 2] - 999.99
 ```
 
 Next is **String** data type:
@@ -56,7 +56,7 @@ String column definitions include attributes that specify the **CHARACTER SET** 
 
 A character set is a set of symbols and encodings. A collation is a set of rules for comparing characters in a character set.
 
-For example, a subset of a character set could consist of the letters A , B and C . A default collation could define these as appearing in an ascending order of A, B, C .
+For example, a subset of a character set could consist of the letters A , B and C . A default collation could define these as appearing in an ascending order of A, B, C.
 
 CHARACTER SET(Encoding) - "Where Encoding coud be for example 'utf8', 'ucs2' etc."
 
@@ -75,64 +75,5 @@ Finally **Date** data type:
 MySQL retrievs values for a given date type in a **standard output format**
 
 Example: 'YYYY-MM-DD' or 'YY-MM-DD'
-
-[/slide]
-
-[slide]
-
-# Database Modeling
-
-## Working with IDEs
-
-We will manage databases with MySQL Workbench, which will allow us to:
-
-- create a new database
-- create objects in the database(tables, stored procedures, relationships and others)
-- change properties of an object
-- enter records into tables
-
-## Creating a new Database
-
-Select Create new schema from the command menu.
-
-[image assetsSrc="Data-Definition-And-Data-Types(4).png" /]
-
-## Creating Tables
-
-Right click on "Tables" Select Create Table.
-
-[image assetsSrc="Data-Definition-And-Data-Types(5).png" /]
-
-A **Primary Key** is used to uniquely identify and index records.
-
-[image assetsSrc="Data-Definition-And-Data-Types(6).png" /]
-
-Auto increment – on the "Default" field.
-
-[image assetsSrc="Data-Definition-And-Data-Types(7).png" /]
-
-We can **add**, **modify** and **read** records with GUI Clients.
-
-To insert or edit a record, click inside the cell
-
-[image assetsSrc="Data-Definition-And-Data-Types(8).png" /]
-
-[/slide]
-
-[slide]
-
-# Basic SQL Queries
-
-## SQL Queries
-
-We communicate with the database engine using SQL by writing queries which provide greater control and flexibility.
-
-To create a database using SQL type in the following command:
-
-```Java
-CREATE DATABASE employees;  // Where 'employees' is the name of our newly created database.
-```
-
-SQL keywords are conventionally `capitalized` - in this case these are the words "**CREATE DATABASE**"
 
 [/slide]
