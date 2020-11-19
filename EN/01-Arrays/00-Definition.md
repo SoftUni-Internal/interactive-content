@@ -14,6 +14,7 @@ Lists are useful for **preserving** a sequence of **data** and **iterating** ove
 They are enclosed in **square brackets** and the values inside it are **separated by a comma**.
 
 Creating an array of numbers:
+
 ```js
 let fruit = ["apple", "pear", "cherry"];
 ```
@@ -23,7 +24,7 @@ A **single array** can contain variables of **different data types**, for exampl
 Also, **duplicate** values **can** be stored in it.
 
 ```js
-let myArray = ["string", 2, 3.33, true];
+let myArray = ["string", 2, 3.33, 2, true];
 ```
 
 The values in an array are called **elements**.
@@ -33,7 +34,6 @@ Imagine a **train** which has **wagons**, and each wagon - **passengers**.
 Now imagine this as an **array of integers**, **each element** represent a **wagon** and its **value** is the **passengers**.
 
 Take a look at this picture:
-
 [image assetsSrc="array-example.png" /]
 
 There are **7 wagons** (**elements**). 
