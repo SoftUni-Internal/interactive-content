@@ -46,9 +46,9 @@ The expressions you compare can themselves be complex expressions, as in the fol
 x / 45 * (y +17) >= Math.sqrt(z) / (p - (x * 16))
 ```
 
-The preceding complex expression includes literals, variables, and function calls. 
+The preceding complex expression includes **literals**, **variables**, and **function calls.** 
 
-The expressions on both sides of the comparison operator are evaluated, and the resulting values are then compared using the `>=` comparison operator. 
+The expressions on both sides of the comparison operator are **evaluated**. Then the resulting values are **compared** by using the >= comparison operator. 
 
 If the value of the expression on the left side is greater than or equal to the value of the expression on the right, the entire expression evaluates to `true`, otherwise, it evaluates to `false`.
 [/slide]

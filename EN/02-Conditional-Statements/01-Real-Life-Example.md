@@ -2,7 +2,7 @@
 # Real Life Example: Watering Plants
 [image assetsSrc="02-coditional-statements-1.png" /]
 
-Every day we are faced with decisions, which we make based on conditions that may or may not depend on us.
+Every day we are faced with decisions to make, which we make based on conditions that may or may not depend on us.
 
 Let's imagine the following daily situation:
 

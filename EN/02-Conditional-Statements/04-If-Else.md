@@ -16,7 +16,7 @@ if (condition) {
 }
 ```
 
-If condition is `false`, the else-statement runs.
+If the condition is `false`, the else-statement runs.
 
 Because a condition can’t be simultaneously `true` and `false`, the then-statement and the else-statement of an `if-else` statement can **never both run**. 
 
@@ -35,7 +35,7 @@ The statement or statements in the then-statement and the else-statement can be 
 # Example: Weather
 This is an extended version of the example from the previous slide.
 
-As you can see now we have another case, which will be executed when the condition in the `if` statement turns out **false**.
+As you can see now we have another case, which will be executed when the condition in the `if` turns out to be **false.**
 ```js
 function example(input) {
   if (weather == "rainy") {
@@ -55,7 +55,7 @@ When we want to execute **block of code** (group of commands), curly brackets ar
 
 In case we drop them, **only the first line** after the **if clause** will be executed.
 
-Here is an example where dropping curly braces leads to confusion:
+Here is an example where **skipping** the curly brackets leads to **confusion:**
 ```js live
 let color = "red";
 if (color == "red") 
