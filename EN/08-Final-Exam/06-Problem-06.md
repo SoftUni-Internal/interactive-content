@@ -11,7 +11,7 @@ By winning each game you win **$20 for charity**.
 
 You need to calculate how much **money you earned at the end of the day**. 
 
-If you have **more games won than lost** - **you are the winner of the day** and increase your money by 10\%. 
+If you have **more games won than lost** - **you are the winner of the day** and your money is increased by 10%. 
 
 At the **end of the tournament**, if you have been the winner most days, you **win the tournament and increase all the money won by 20%.**
 
@@ -36,7 +36,7 @@ Finally, one line is printed:
 
 - If you won, the tournament: `You won the tournament! Total raised money: {the money earned}`
 
-- If you lost in the tournament: `You lost the tournament! Total raised money: {the money earned}`
+- If you lost, the tournament: `You lost the tournament! Total raised money: {the money earned}`
 
 The money should be **formatted to the second digit after the decimal point.**
 

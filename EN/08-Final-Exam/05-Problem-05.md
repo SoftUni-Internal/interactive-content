@@ -49,7 +49,7 @@ function solve(input) {
 
 - **This quantity is less than the originally purchased 4000 grams:**
 
-    - food remains is: `4000 - 1405 = 2595 grams.`
+    - The food left is: `4000 - 1405 = 2595 grams.`
 
 
 # More Examples
