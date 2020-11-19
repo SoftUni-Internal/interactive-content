@@ -425,7 +425,7 @@ Invalid day!
 [code-editor language=javascript]
 ```
 function days(input){
-    let days = input[0];
+    let n = input[0];
     if (n <= 7) {
         let days = ['Invalid day!', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         console.log(days[n]);
@@ -520,4 +520,66 @@ Invalid day!
 [code-io /]
 [/code-task]
 
+[/slide]
+
+[slide]
+# Arrays of Different Types
+
+Arrays can hold different types of elements:
+
+Array holding numbers:
+``` js
+let numbers = [10, 20, 30, 40, 50];
+```
+
+Array holding strings
+``` js
+let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+```
+
+Array holding mixed data
+```js
+let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
+```
+
+# Adding New Elements
+
+We  can add an element to the end of the array:
+``` js live
+let arr = [10, 20, 30];
+arr[arr.length] = 40;
+
+console.log(arr); 
+```
+
+Or we can use the built-in push method
+
+``` js live
+let arr = [10, 20, 30];
+arr.push(50);
+
+console.log(arr); 
+```
+
+# JS Arrays and Invalid Positions
+
+``` js live
+let nums = [10, 20, 30];
+nums[4] = 50; // Will resize the array
+
+console.log(nums);
+console.log(nums.length);
+console.log(nums[3]);
+```
+
+Typical erros that we can fase when working with arrays:
+
+``` js live
+let nums = [10, 20, 30];
+
+console.log(nums[-5]);
+nums[-5] = 8;
+console.log(nums[-5], nums.length);
+
+```
 [/slide]
