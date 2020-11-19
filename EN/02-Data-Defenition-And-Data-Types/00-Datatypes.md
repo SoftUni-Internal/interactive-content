@@ -1,5 +1,7 @@
 [slide]
 
+#Data Defenition And Data Types
+
 Today, we will talk about `Datatypes`.
 
 There are several data types in MySQL:
