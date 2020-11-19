@@ -11,106 +11,98 @@ We have prepared some problems for you to solve.
 [/slide]
 
 [slide]
-# Problem: Gramophone
-[code-task title="Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Sum Even Numbers
+[code-task title="GraSum Even Numbersmophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function gramophone(input){
+function sumEvenNumbers(input){
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function which as input will receive 3 parameters (strings)
-
-- First string is the name of the band
-
-- Second string is the name of the album
-
-- The third is holding a song name from the album
-
-You have to find out how many **times** the plate will rotate the given song from the album.
-
-**The plate makes a full rotation every 2.5 seconds.**
-
-The song **duration in seconds** is calculate by the given formula: 
-
-`albumName.length * bandName.length) * song name.length / 2`
-
-As output you should print the following message:
-
-`The plate was rotated {rotations} times.`
-
-Rotations should be **rounded up.**
-
-
+Write a program which receives an array of strings, parse them to numbers and sum only the even numbers.
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|`['Black Sabbath', 'Paranoid', 'War Pigs']`| The plate was rotated 167 times. |
+|`['1','2','3','4','5','6']`| 12 |
+|`['3','5','7','9']`| 0 |
+|`['2','4','6','8','10']`| 30 |
+
 
 [/task-description]
 [tests]
 [test]
 [input]
-Bhjkhbath
-Pudfgdgioid
-Wois
+1
+1
+34
+64
+86
 [/input]
 [output]
-The plate was rotated 80 times.
+184
 [/output]
 [/test]
 [test]
 [input]
-gjhg
-jklcrj
-gyuguyguy
+1
+2
+3
+4
+5
+6
+10
 [/input]
 [output]
-The plate was rotated 44 times.
+22
 [/output]
 [/test]
 [test]
 [input]
-bhjbhjbj
-cghcgh
-uiou
+13
+55
+37
+19
 [/input]
 [output]
-The plate was rotated 39 times.
+0
 [/output]
 [/test]
 [test]
 [input]
-Bvyuvh
-ji
-Wauios
+13
+55
+37
+19
 [/input]
 [output]
-The plate was rotated 15 times.
+0
 [/output]
 [/test]
 [test]
 [input]
-gyuuath
-Pgyd
-Wabygs
+1
+156
+7
+18
 [/input]
 [output]
-The plate was rotated 34 times.
+174
 [/output]
 [/test]
 [test]
 [input]
-tyuath
-Pargyu
-tuus
+3
+14
+0
+8
+18
 [/input]
 [output]
-The plate was rotated 29 times.
+40
 [/output]
 [/test]
 [/tests]
