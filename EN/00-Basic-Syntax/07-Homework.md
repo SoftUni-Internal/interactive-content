@@ -928,3 +928,102 @@ Your task is to find the sum of its digits.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Reversed Chars
+[code-task title="Reversed Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function reversedChars(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program that takes **3 parameters** (characters) and prints them in **reversed order** with a space between them.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['A', 'B','C']`| C B A |
+|`['1','L','&']`| \& L 1 |
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+a
+b
+c
+[/input]
+[output]
+c b a
+[/output]
+[/test]
+[test]
+[input]
+z
+z
+z
+[/input]
+[output]
+z z z
+[/output]
+[/test]
+[test]
+[input]
+\!
+\@
+\#
+[/input]
+[output]
+\# \@ \!
+[/output]
+[/test]
+[test]
+[input]
+l
+K
+\#
+[/input]
+[output]
+\# K l
+[/output]
+[/test]
+[test]
+[input]
+\_
+P
+\>
+[/input]
+[output]
+\> P \_
+[/output]
+[/test]
+[test]
+[input]
+A
+B
+C
+[/input]
+[output]
+C B A
+[/output]
+[/test]
+[test]
+[input]
+1
+L
+\&
+[/input]
+[output]
+\& L 1
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
