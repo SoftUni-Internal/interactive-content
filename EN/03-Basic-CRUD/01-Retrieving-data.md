@@ -199,3 +199,94 @@ WHERE course IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's
 
 We want to use **IN/NOT IN** operators when we know the exact value we want, following the same logic we can understand what the **NOT IN** operator does.
 [/slide]
+
+[slide]
+## Comparison with **NULL**
+
+One tricky part of SQL is the **NULL** value, it may sometimes surprise you until you finally get the hang of it.
+
+First we have to understand something, **NULL** does not mean **No value** it conceptually means **unavailable, unassigned, unknown, or inapplicable** and it's treated somewhat differently from other values.
+
+A null is not the same as zero or a space. Zero is a number, and a space is a character. 
+
+### Arithmetic comparison and NULL
+
+When we are talking about **NULL**, we should always be carefull with it's behaviour when we compare it with **><=**, as it does not give us the results we expect.
+
+```java
+SELECT 1 = NULL, 1 <> NULL, 1 < NULL, 1 > NULL;
++----------+-----------+----------+----------+
+| 1 = NULL | 1 <> NULL | 1 < NULL | 1 > NULL |
++----------+-----------+----------+----------+
+|     NULL |      NULL |     NULL |     NULL |
++----------+-----------+----------+----------+
+```
+
+As you may see, any arithmetic comparison with **NULL** always returns the same result **NULL**. We should keep that in mind while we understand what is the proper way working with **NULL**.
+
+
+### IS NULL / IS NOT NULL
+
+The proper way of checking if given value of a record is **NULL** is by using the **IS NULL / IS NOT NULL** operators, they work simply by telling you if the given statement is true or false.
+
+```java
+SELECT 'A' IS NULL, 'A' IS NOT NULL
++-----------+---------------+
+|'A' IS NULL|'A' IS NOT NULL|
++-----------+---------------+
+|   false   |          true |
++-----------+---------------+
+```
+
+Arithmetic divisons with **NULL** should also be taken in notice, if you want to make any arithmetic operation with **NULL** is always equal to **NULL**, for instance: 
+
+```java
+SELECT 3 - NULL // = NULL 
+```
+
+[/slide]
+
+[slide]
+## Sorting the results
+
+When we finish with selecting the information we need, filtering it and before vizualizing it the way we want we should consider for ordering it the right way.
+
+For this we can use the **ORDER BY** clause, which selects the information and orders it by chosen column or columns, the **ORDER BY** statement should always go last in the query.
+
+In addition you can use the keywords **ASC** and **DESC** to reverse the order in the results,  by default the **ORDER BY** clause uses **ASC** strategy.
+
+```java
+SELECT *                            //Here we choose all the information
+FROM students                       //for the table students
+WHERE age BETWEEN 14 AND 50         //filtered by where they meet the condition
+ORDER BY age DESC                   // Ordered by their age descending.
+```
+
+You can chain **ORDER BY** clauses by declaring second column by which you want to order them, separating them with a **,** in betweeen just as in the exampl
+
+```java
+SELECT *                
+FROM student
+WHERE age BETWEEN 14 AND 50    
+ORDER BY age DESC, first_name 
+```
+
+[/slide]
+
+### Usage of **Views**
+
+Views are virtual tables which do not store information by itself.
+
+It's used in the cases when you have wrote a complex query which take records from a table or many tables and you would like to save for future use or when you want to restrict the access to data for certain users.
+
+In other words **Views** are nothing but **saved SQL queries**.
+
+For example:
+
+```java
+CREATE VIEW `Combination of columns` AS  //We declare the creation of view
+SELECT c1, c2, c3, FROM RandomColumns    //and we set what information we want from a given table
+```
+
+[image assetsSrc="Retrieving-data(4).png" /]
+
