@@ -294,7 +294,7 @@ Arrays are identical if their elements are **equal**.
 110
 120
 130
-\-
+
 110
 120
 130
