@@ -934,7 +934,7 @@ Your task is to find the sum of its digits.
 [code-task title="Reversed Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reversedChars(input){
+function reversChars(input){
   // Write your code here
 }
 ```
@@ -1020,6 +1020,112 @@ L
 [/input]
 [output]
 \& L 1
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Calculator
+[code-task title="Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function calculator(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+Write a function that receives **three string parameters:** 
+
+- **number**
+
+- **operator**
+
+- **another number**
+
+Print the **result of the calculation** to the console formatted to the **second decimal point.**
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['5', '+','10']`| 15.00 |
+|`['25.5','-','3']`| 22.50 |
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+10
+/
+2
+[/input]
+[output]
+5.00
+[/output]
+[/test]
+[test]
+[input]
+20
+\*
+2
+[/input]
+[output]
+40.00
+[/output]
+[/test]
+[test]
+[input]
+5
+/
+2
+[/input]
+[output]
+2.50
+[/output]
+[/test]
+[test]
+[input]
+100
++
+100
+[/input]
+[output]
+200.00
+[/output]
+[/test]
+[test]
+[input]
+5.5
+\-
+5.5
+[/input]
+[output]
+0.00
+[/output]
+[/test]
+[test]
+[input]
+0
+\+
+11.11
+[/input]
+[output]
+11.11
+[/output]
+[/test]
+[test]
+[input]
+10
+\*
+5.5
+[/input]
+[output]
+55.00
 [/output]
 [/test]
 [/tests]
