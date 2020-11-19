@@ -128,7 +128,7 @@ Write a program that calculates the difference between the sum of the even and t
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`[1,2,3,4,5,6]`| 3 |
+|`['1','2','3','4','5','6']`| 3 |
 
 # Comments
 `2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
@@ -137,8 +137,8 @@ Write a program that calculates the difference between the sum of the even and t
 # More Example
   | **Input** | **Output** |
 | --- | --- |
-|`[3,5,7,9]`|\-24 |
-|`[2,4,6,8,10]`|30 |
+|`['3','5','7','9']`|\-24 |
+|`['2','4','6','8','10']`|30 |
 
 [/task-description]
 [tests]
@@ -276,7 +276,7 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 
   | **Input** | **Output** |
 | --- | --- |
-|`[2,10,3]`| 25 |
+|`['2','10','3']`| 25 |
 
 # Comments
 `2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
@@ -284,8 +284,8 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 # More Examples
   | **Input** | **Output** |
 | --- | --- |
-|`[5,0,4,1,2]`| 35 |
-|`[1]`| 1 |
+|`['5','0','4','1','2']`| 35 |
+|`['1']`| 1 |
 
 # Hints
 
@@ -316,6 +316,133 @@ While we have more than one element in the array `nums[]`, repeat the following:
 [/input]
 [output]
 1255
+[/output]
+[/test]
+[test]
+[input]
+0
+0
+0
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+-5
+-10
+-15
+-5
+[/input]
+[output]
+-85
+[/output]
+[/test]
+[test]
+[input]
+-1
+2
+-3
+4
+-5
+6
+-7
+8
+-9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+-1
+-1
+-1
+-1
+-1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+-1
+[/input]
+[output]
+514214
+[/output]
+[/test]
+[test]
+[input]
+10
+[/input]
+[output]
+10
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Add or Subtract
+[code-task title="Add or Subtract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function addOrSubstract(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function, which changes the **value** of odd and even numbers in an array of numbers. 
+
+- If the number is **even** - **add** to its value its index position
+
+- If the number is **odd** - **subtract** to its value its index position
+
+
+# Output
+
+On the first line print the **newly modified array**, on the second line print the sum of numbers from the **original** array, on the third line print the sum of numbers from the **modified array.**
+
+  | **Input** | **Output** |
+| --- | --- |
+|`['5', '15', '23', '56', '35']`| `[ 5, 14, 21, 59, 31 ]` |
+|| 134|
+|| 130 |
+|`[-5, 11, 3, 0, 2]`| `[ 5, 14, 21, 59, 31 ]` |
+|| 11|
+|| 15 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+2
+5
+-6
+32
+12
+[/input]
+[output]
+[ 2, 4, -4, 35, 16 ]
+45
+53
 [/output]
 [/test]
 [test]
