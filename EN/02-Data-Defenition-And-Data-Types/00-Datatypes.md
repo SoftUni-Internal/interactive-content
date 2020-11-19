@@ -26,6 +26,6 @@ Here is an example for Signed and Unsigned **INT**:
 
 The following table shows the summary of numeric types in MySQL:
 
-[image assetsSrc="Data-Types-Numeric-Table(1).png" /]
+[image assetsSrc="Data-Types-Numeric-Table.png" /]
 
 [/slide]
