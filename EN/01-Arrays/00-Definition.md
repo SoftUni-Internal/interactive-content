@@ -322,3 +322,198 @@ Write a function that receives an **array of strings** and prints the sum of **f
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Days of Week
+[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function days(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`[3]`| Wednesday |
+|`[6]`| Saturday |
+|`[11]`| Invalid day! |
+
+[/task-description]
+[tests]
+[test]
+[input]
+1
+[/input]
+[output]
+Monday
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+Saturday
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+Sunday
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
+[test]
+[input]
+9
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Days of Week
+[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function days(input){
+    let days = input[0];
+    if (n <= 7) {
+        let days = ['Invalid day!', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        console.log(days[n]);
+    }
+    else {
+        console.log('Invalid day!');
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`[3]`| Wednesday |
+|`[6]`| Saturday |
+|`[11]`| Invalid day! |
+
+[/task-description]
+[tests]
+[test]
+[input]
+1
+[/input]
+[output]
+Monday
+[/output]
+[/test]
+[test]
+[input]
+2
+[/input]
+[output]
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+Saturday
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+Sunday
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
+[test]
+[input]
+9
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
