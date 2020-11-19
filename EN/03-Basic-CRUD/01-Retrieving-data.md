@@ -201,7 +201,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [/slide]
 
 [slide]
-# Comparison with NULL
+# Comparison with NULLl
 
 One tricky part of SQL is the **NULL** value, it may sometimes surprise you until you finally get the hang of it.
 
@@ -274,7 +274,7 @@ ORDER BY age DESC, first_name
 [/slide]
 
 [slide]
-# Usage of Views
+# Usage of Viewss
 
 Views are virtual tables which do not store information by itself.
 
