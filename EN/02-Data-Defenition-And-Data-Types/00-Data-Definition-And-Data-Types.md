@@ -34,8 +34,8 @@ INT[(M)][UNSIGNED];  // Where "M" is the count of digits stored for the value
 
 ```Java
 DOUBLE[(M, D)][UNSIGNED];  //  Where "M" is the count of digits stored for the value.
-                          // "D" is the count of decimals after floating point.
-                          //  Example: DOUBLE[5, 2] - 999.99
+                           // "D" is the count of decimals after floating point.
+                           //  Example: DOUBLE[5, 2] - 999.99
 ```
 
 Next is **String** data type:
@@ -56,7 +56,7 @@ String column definitions include attributes that specify the **CHARACTER SET** 
 
 A character set is a set of symbols and encodings. A collation is a set of rules for comparing characters in a character set.
 
-For example, a subset of a character set could consist of the letters A , B and C . A default collation could define these as appearing in an ascending order of A, B, C .
+For example, a subset of a character set could consist of the letters A , B and C . A default collation could define these as appearing in an ascending order of A, B, C.
 
 CHARACTER SET(Encoding) - "Where Encoding coud be for example 'utf8', 'ucs2' etc."
 
