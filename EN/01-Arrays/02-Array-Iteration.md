@@ -10,7 +10,7 @@ let capitals = ['Bucuresti', 'Washington', 'London'];
 
   for (let i = 0; i < capitals.length; i++){
  console.log(capitals[i]);
-}
+  }
 ```
 
 Another way to print all array elements is using `toString()`
@@ -19,7 +19,6 @@ Another way to print all array elements is using `toString()`
 let capitals = ['Bucuresti', 'Washington', 'London'];
 
 console.log(capitals.toString())
-}
 ```
 [/slide]
 
@@ -412,9 +411,9 @@ dsadaffa dd 0 124543 3jkj3
 [code-editor language=javascript]
 ```
 function reverce(input){
-  let reversed = arr.reverse();
+  let reversed = input.reverse();
 
-  console.log(reversed);
+  console.log(reversed.join(' '));
 }
 ```
 [/code-editor]
