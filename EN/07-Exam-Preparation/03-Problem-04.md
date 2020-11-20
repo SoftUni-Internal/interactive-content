@@ -1,29 +1,39 @@
 [slide]
 # Cinema Income
+
 ## Description
-You have been hired by a cinema to write a program that calculates whether a movie showing will be enough so that the cinema hall is filled and how much money will the profit be. 
 
-You are going to receive the count of seats in the hall and on the next lines until the command `Movie time!`, how many people enter the hall. 
+You have been hired by a cinema to write a program that calculates whether the cinema hall is full and how much will the profit be.
 
-The price for one ticket is 5$. 
+You are going to receive the count of seats in the hall and on the next console lines until the command `Movie time!` Is entered, you will get a number of newly arriving viewers.
 
-If the current count of people that enter the hall can be divided by 3 without remainder, there is 5$. discount of the total price.
+If the number of people currently entering the hall can be divided by 3 without a remainder, there is $5 discount on the total price.
 
-If there are not enough free seats for the people that want to enter, it means that the there are no more seats left and the program must stop reading input from the console. 
+If there are no more free seats in the hall, the program must stop reading input from the console.
 
-If more people than the available seats try to enter the hall, it is considered full and the program should stop receiving input.
+If the number of entering viewers, exceeds the number of seats left in the hall, it should be considered full and the program should finish.
+
 
 # Input
 Read from the console:
-- First line – hall's capacity – whole number in the range \[50... 150\]
-- On each of the next lines until the command `Movie time!`:
-	- Count of people entering the cinema - whole number in the range \[1… 15\]
+
+- First line – the hall capacity – whole number in the range  \[50... 150\]
+
+- On each of the next line until the command is  `Movie time!`:
+	- Number of people entering the cinema - whole number in the range  \[1… 15\]
 
 ## Output
-First, print on the console one line:
-- If you have received the command `Movie time!`: `There are {seats left} seats left in the cinema.`
-- If there are no more free seats in the hall: `The cinema is full.`
-- Afterwards, print: `Cinema income - {income}$`
+First, print on of these lines:
+
+- If you have received the command `Movie time!`: 
+`There are {seats left} seats left in the cinema.`
+
+- If there are no more free seats in the hall: 
+`The cinema is full.`
+
+- Afterwards, print: 
+`Cinema income - {income}$`
+
 [code-task title="Cinema Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -57,7 +67,7 @@ Cinema income - 255$
 ## Comments
 The hall's capacity is 60 seats. 
 
-On the next line we receive the people that have entered the hall – 10. 
+On the next line we receive the number of people that have entered the hall – 10. 
 
 The price that they will pay is `10 * 5 = 50$`. 
 
