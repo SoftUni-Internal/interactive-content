@@ -1,24 +1,31 @@
 [slide]
 # Time for Lunch
 ## Description
-During the lunch break you want to watch an episode from your favorite series. 
+During your lunch break you want to watch an episode of your favorite TV series.
 
-Your task is to write a program that will help you determine whether you have enough time to watch the episode. 
+Your task is to write a program that will help you determine whether you have enough time to watch an entire episode.
 
-In the lunch break you spend time to have lunch and to unwind. 
+During your lunchbreak you should also take some time to eat and relax.
 
-The time for lunch will be 1/8 of the break time and the time for relaxing will be 1/4 of the break time.
+You know, that the time you need to finish your lunch takes up precisely `1/8`(an eight) of your break and the time you need for relaxation will be exactly `1/4` (a quarter) of your total break time.
+
 
 ## Input
-You receive 3 lines from the console:
+YYou will receive 3 lines from the console:
 - Name of the series - string
 - Duration of an episode - whole number in the range \[10… 90\]
-- Duration of the break - whole number in the range \[10… 120\]
+- Break duration - whole number in the range \[10… 120\]
 
 ## Output
-Print on the console one line:
-- If the time is enough to watch the episode: `You have enough time to watch {name of the series} and left with {time left} minutes free time.`
-- If the time is not enough: `You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
+The output should consist of one line:
+
+- If there is enough time to watch an episode: 
+
+`You have enough time to watch {name of the series} and left with {time left} minutes free time.`
+
+- If there is not enough time: 
+
+`You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
 Round the time up to the nearest whole number.
 
 [code-task title="Time for Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -43,11 +50,13 @@ You have enough time to watch Game of Thrones and left with 0 minutes free time.
 ## Comments
 Time for lunch: `96 * 1/8 = 12.0`
 
-Time to unwind: `96 * 1/4 = 24.0`
+Time to relax: `96 * 1/4 = 24.0`
 
 Time left: `96 - 12 - 24 = 60`
 
-The time we have left is bigger or equal to the duration of the episode, so we print the suitable output. 
+In this case, the time you would have left is more than or equal to the duration of the episode. 
+
+Make sure that the right output is printed out.
 [/task-description]
 [code-io /]
 [tests]
