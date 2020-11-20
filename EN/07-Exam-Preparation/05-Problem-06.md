@@ -1,10 +1,20 @@
 [slide]
 # The Best Movie
 ## Description
-It's Friday night and you're wondering which movie to watch. You decide to write a program to choose it for you. Until the command `STOP` you will be receiving titles of your favorite movies. The best movie for you will be the one that has the most points. Points are calculated as the sum of the ASCII character values in the movie title. (There will not be a case where we have two films with an equal number of points)
+It is Friday night, and you are wondering which movie to watch. 
+
+You decide to write a program to choose it for you. 
+
+Until receiving the command `STOP` you will be given the titles of some of your favorite movies. 
+
+The best movie for you will be the one that has the most points. 
+
+The points are calculated by the sum of the ASCII character values in the movie title. 
+
+There will not be a case where we have two films have an equal amount of points
 
 Keep in mind the following:
-- For each lowercase letter in the title, you must subtract from the sum twice the length of the movie title.
+- For each lowercase letter from the title, you must subtract from the sum the length of the movie title multiplied by 2.
 
 - For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
 
@@ -40,8 +50,15 @@ STOP
 The best movie for you is Breaking bad with 878 ASCII sum.
 
 ## Comments
-First we get **Matrix**, the first letter is M with a value of 77, but it is a capital letter and we subtract from it the length of the title  `77 - 6  = 71`, the second letter is a with a value of 97 and we subtract twice the movie title `97 - 12 = 85`. Similarly, we proceed with each subsequent letter and receive an amount of 563.
-Upon receiving the `STOP` command, we print the title with the highest value, which is **Breaking** bad with sum of 878.
+
+First we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title `77 - 6 = 71`.
+
+The second letter has a value of 97 and we subtract from its title length *2 from the sum `97 - 12 = 85`.
+
+Similarly, we proceed with each subsequent letter until we receive the final amount of 563.
+
+Upon receiving the `STOP` command, we print the title with the highest value, which is **Breaking** bad with a sum of 878.
+
 [/task-description]
 [code-io /]
 [tests]
