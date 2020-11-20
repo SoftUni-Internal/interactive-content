@@ -29,7 +29,7 @@ VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications'),
 [/slide]
 
 [slide]
-# Reusing existing data.
+## Reusing existing data.
 
 As MySQL is vast and full of possibilities, it gives us the chance to re-use already persisted records or part of records in our other tables.
 
