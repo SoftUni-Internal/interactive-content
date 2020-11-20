@@ -1,10 +1,10 @@
 [slide]
 # Summary
 
-In this lesson you learnt:
+In this lesson we learned: 
+- How to read input from an Array
 - An **if-else** statement can be nested within another **if-else**
-- Read **input** from an **Array**
-- Logical operators operate over boolean expressions
+- Logical operators run over boolean expressions
 - The **switch-case** statement is an alternative to the **if-else**
 
 

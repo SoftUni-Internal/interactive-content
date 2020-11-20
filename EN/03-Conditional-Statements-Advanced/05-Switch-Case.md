@@ -1,6 +1,7 @@
 [slide]
 # The Switch-Case Statement
-The switch-case condition works as a sequence of **if-else** blocks. 
+
+The switch-case condition works as a sequence of if-else blocks. 
 
 Whenever the work of our program depends on the value of one variable, instead of making consecutive conditions with `if-else` blocks, we can **use** the conditional `switch` statement. 
 
@@ -9,8 +10,8 @@ It is being used for **choosing between a list of possibilities**.
 The statement compares a given value with defined constants and depending on the result, it takes an action.
 
 - We put **the variable** that we want to **compare**, inside the **brackets after the operator** `switch` and it is called a **"selector"**. 
-- Here **the type must be comparable** (numbers, strings). 
-- **Consecutively**, the program starts **comparing** each **value** that is **found** after the `case` **labels**. 
+- The type must be **comparable** (numbers, strings,etc) 
+- **Consecutively**, the program starts comparing each value which is found after the case labels.  
 - Upon a match, the execution of the code from the respective place begins and continues until it reaches the operator `break`. 
 
 `break` might be skipped, in order to execute a code from other `case` construction, until it reaches another operator. 

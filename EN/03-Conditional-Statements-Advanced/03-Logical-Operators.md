@@ -237,7 +237,7 @@ Write a program that applies bonus to given points
 [/slide]
 
 [slide]
-# Logical OR Operator
+# Logical "OR" Operator
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
 Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
@@ -400,7 +400,8 @@ unknown
 [/slide]
 
 [slide]
-# Logical **NOT** Operator
+# Logical "NOT" Operator
+
 Logical negation (operator `!` ) means that a given condition is **not fulfilled.**
 
 | a | !a |
@@ -433,6 +434,7 @@ The operator `()` serves for **changing the priority of operators** and is being
 Using parentheses also gives the code better readability and it is considered to be a good practice. 
 
 Example of checking whether a variable belongs to certain ranges:
+
 ```js
 if (x < 0 || ((x >= 5) && (x <= 10)) || x > 20) {
     // Commands
