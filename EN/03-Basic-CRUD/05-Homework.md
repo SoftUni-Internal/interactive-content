@@ -32792,7 +32792,7 @@ D'Hers
 [/code-task]
 [/slide]
 
-
+[slide hideTitle]
 # Problem: Find All Employees Except Marketing 
 [code-task title="Problem: Find All Employees Except Marketing " taskId="e8af04eb-92dd-4f3b-a8d6-8cae9fcde38b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
