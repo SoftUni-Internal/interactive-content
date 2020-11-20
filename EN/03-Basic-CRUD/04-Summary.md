@@ -20,5 +20,5 @@
 - Regular expressions
 - Grouping
 - Having
-a
+
 [/slide]
