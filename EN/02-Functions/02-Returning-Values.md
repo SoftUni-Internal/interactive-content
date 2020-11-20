@@ -1,6 +1,0 @@
-# Returning Values
-
-[slide]
-
-
-[/slide]

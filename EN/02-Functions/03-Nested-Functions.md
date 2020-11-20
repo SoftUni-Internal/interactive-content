@@ -1,6 +1,0 @@
-# Nested Functions
-
-[slide]
-
-
-[/slide]

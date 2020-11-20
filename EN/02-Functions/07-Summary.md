@@ -1,6 +1,0 @@
-# Summary
-
-[slide]
-
-
-[/slide]

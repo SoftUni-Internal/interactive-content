@@ -1,6 +1,0 @@
-# Arrow Functions
-
-[slide]
-
-
-[/slide]

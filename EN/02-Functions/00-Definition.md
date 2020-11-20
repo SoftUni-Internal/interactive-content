@@ -1,6 +1,0 @@
-# Definition
-
-[slide]
-
-
-[/slide]
