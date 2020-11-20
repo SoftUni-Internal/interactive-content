@@ -14,19 +14,19 @@ Both of these actions cannot be **undone** so use with caution!
 
 To delete all the entries in a table
 
-```Java
+```java
 TRUNCATE TABLE employees; // Table name
 ```
 
 To drop a table - delete data and structure
 
-```Java
+```java
 DROP TABLE employees; // Table name
 ```
 
 To drop entire database
 
-```Java
+```java
 DROP DATABASE soft_uni; // Database name
 ```
 
@@ -34,14 +34,14 @@ DROP DATABASE soft_uni; // Database name
 
 To remove a constraining rule from a column like Primary keys, value constraints and unique fields
 
-```Java
+```java
 ALTER TABLE employees // Table name
 DROP CONSTRAINT pk_id; // Constraint name
 ```
 
 To remove DEFAULT value (if not specified, revert to NULL)
 
-```Java
+```java
 ALTER TABLE employees // Table name
 ALTER COLUMN clients // Column name
 DROP DEFAULT;
