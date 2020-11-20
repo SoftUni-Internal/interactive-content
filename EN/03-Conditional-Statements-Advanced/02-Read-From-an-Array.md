@@ -29,7 +29,7 @@ There are **7 wagons** (**elements**). Each has **passengers** (**a value**). `[
 
 The first element of the array is located at index `0`, and the last element of the array is located at index `length-1`. 
 
-In this course we** will not** initialize an array, we will only accept arrays as a parameter to our function. 
+In this course we **will not** initialize an array, we will only accept arrays as a parameter to our function. 
 
 [/slide]
 

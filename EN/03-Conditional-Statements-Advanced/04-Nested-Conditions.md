@@ -16,16 +16,16 @@ if (condition1) {
 ```
 
 # Example: Personal Titles
-Depending on **age** (decimal number and **gender** (**m** / **f**), print a personal title:
--  "Mr." – a man (gender "m") – 16 or more years old.
--  "Master" – a boy (gender "m") under 16 years.
--  "Ms." – a woman (gender "f") – 16 or more years old.
--  "Miss" – a girl (gender "f") under 16 years.
+Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
+-  `Mr.` - a man (gender **m**) - 16 or more years old.
+-  `Master` - a boy (gender **m**) - under 16 years. 
+-  `Ms.` - a woman (gender **f**) - 16 or more years old.
+-  `Miss` - a girl (gender **f**) -  under 16 years.
 
 # Solution: Person Titles
 We should notice that the **output** of the program **depends on a few things**. 
 
-**First**, we have to check what is the entered **gender** and **then** check the **age**. 
+**First**, we have to check what is the specified **gender** and **then** to check the **age.** 
 
 Respectively, we are going to use **a few** `if-else` blocks. 
 
@@ -75,9 +75,11 @@ function marketPlace(input) {
 [task-description]
 
 # Description
-Write a program which:
-* Reads a **product** and **day** from the console
- * Prints the **price**, formatted to 2nd digit, based on the price table below
+Write a program that: 
+
+- Reads a **product** and a day from the console. 
+
+- Prints the **price**, formatted to 2nd digit, based on the price table below: 
 
   | Product      | Weekday | Weekend   |
 | :---:       |    :----:   |   :---:     |
@@ -151,9 +153,11 @@ function marketPlace(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program which:
-* Reads a **product** and **day** from the console
-* Prints the **price**, formatted to 2nd digit, based on the price table below
+Write a program that: 
+
+- Reads a **product** and a day from the console. 
+
+- Prints the **price**, formatted to 2nd digit, based on the price table below: 
 
 | Product      | Weekday | Weekend   |
 | :---:       |    :----:   |   :---:     |
@@ -208,7 +212,7 @@ function biggestNumberOfThree(input) {
 Write a program, which:
 
   * Reads **3 numbers** from the console
-  * Prints **the biggest** number
+  * Prints the **greatest** number
 
 # Example
 | **Input** | **Output** |
@@ -284,7 +288,7 @@ function biggestNumberOfThree(input) {
 Write a program, which:
 
   * Reads **3 numbers** from the console
-  * Prints **the biggest** number
+  * Prints the **greatest** number
 
 # Example
 | **Input** | **Output** |

@@ -9,7 +9,7 @@ We can use:
 * **brackets** (`()`).
 
 # Logical "AND", "OR" and "NOT"
-This is a short example that demonstrates the power of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
+This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
 
 ```js live
 let input = ["shark", "50"];
@@ -25,18 +25,18 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 }
 ```
 
-We shall explain the logical **AND** (`||`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
+We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||`), and the logical **"NOT"** (`!`) in the next few sections, along with examples and exercises. 
 [/slide]
 
 [slide]
-# Logical AND
+# Logical "AND"
 As we saw, in some tasks we have to make **many checks at once**. 
 
-But what happens when in order to execute some code **more** conditions have to be executed and we **don't want** to make a **negation** (`else`) for each one of them? 
+What happens when more conditions have to be executed at once, and we don't want to make a negation (else) for each one of them? 
 
 The option with nested `if` **blocks** is valid, but the code would look very unordered and for sure – **hard to read and maintain**.
 
-The logical **"AND"** (operator `&&`) means a few conditions have to be **fulfilled simultaneously**. 
+The logical **"AND"** (operator `&&`) means that a few conditions have to be fulfilled simultaneously. 
 
 The following table of truthfulness is applicable:
 
@@ -47,16 +47,16 @@ The following table of truthfulness is applicable:
 | false | true | false |
 | false | false | false |
 
-# How Does the `&&` Operator Work?
-The `&&` operator accepts **a couple of Boolean** (conditional) statements, which have a `true` or `false` value, and returns one bool statement as a result. 
+# How does the `&&` operator work? 
+The `&&` operator accepts a couple of Boolean (conditional) statements, which have a true or a false value, and returns one 'bool' statement as a result. 
 
 Using it instead of a couple of nested `if` blocks, makes the code **more readable**, **ordered** and **easy** to maintain. 
 
-But how does it **work**, when we put a **few** conditions one after another? 
+But how does it work when we put a few conditions one after another? 
 
-As we saw above, the logical **"AND"** returns `true`, **only** when it accepts as **arguments statements** with value `true`. 
+As we saw above, the logical **"AND"** returns true, only when it accepts as arguments statements with values that are `true`.  
 
-Respectively, when we have a **sequence** of arguments, the logical **"AND"** **checks** either until one of the arguments is **over**, or until it **meets** an argument with value `false`. 
+Respectively, when we have a **sequence** of arguments, the logical **"AND"** checks either until there are no more arguments, or until it meets an argument with a `false` value. 
 
 # Example
 ```js live
@@ -69,7 +69,7 @@ console.log(result);
 ```
 
 The program will run in the **following** way: 
-- **It starts** the check form `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`. 
+- It starts the check from `a`, reads it and accepts that it has a true value. After that it checks `b`.  
 - After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument. 
 - It gets to `c` and sees that the variable has a `false` value. 
 - After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is. 
@@ -258,9 +258,9 @@ At school the teacher says: "John or Peter should clean the board". To fulfill t
 # How Does the `||` Operator Work?
 We have already learned what the logical **OR** represents. But how is it actually being achieved? 
 
-Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. 
+Just like with the logical **"AND"**, the program checks from left to right the given arguments. 
 
-In order to obtain `true` from the expression, it is necessary for **just one** argument to have a `true` value. 
+In order to obtain `true` from the expression, it is necessary to have at least one argument with a `true` value. 
 
 Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -400,8 +400,8 @@ unknown
 [/slide]
 
 [slide]
-# Logical NOT Operator
-Logical negation (operator **!**) means a given condition is **not fulfilled**.
+# Logical **NOT** Operator
+Logical negation (operator `!` ) means that a given condition is **not fulfilled.**
 
 | a | !a |
 |---|---|
@@ -410,7 +410,7 @@ Logical negation (operator **!**) means a given condition is **not fulfilled**.
 The operator `!` accepts as an **argument** a bool variable and **returns** its value.
 
 # Example: Invalid Number
-A given **number is valid** if it is in the range **\[100 … 200\]** or it is **0**. Do a validation for an **invalid** number.
+A given number is valid if it is in the range `[100 … 200]` or it is `0`. Do a validation for an invalid number. 
 
 For example, `75` and `220` are **invalid**, but `150` is **valid**.
 
@@ -426,11 +426,11 @@ if (!inRange) {
 
 [slide]
 # The Parenthesis  Operator
-Like the rest of the operators in programming, the operators `&&` and `||` have a priority, as in the case `&&` is with higher priority than `||`. 
+Like the rest of the operators in the programming, the operators `&&` and `||` have a priority, as in this case: `&&` is with higher priority than `||`. 
 
 The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 
 
-Using parentheses also gives the code better readability and is considered a good practice.
+Using parentheses also gives the code better readability and it is considered to be a good practice. 
 
 Example of checking whether a variable belongs to certain ranges:
 ```js
