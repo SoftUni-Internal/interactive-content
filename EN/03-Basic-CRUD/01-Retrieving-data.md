@@ -59,6 +59,120 @@ Although we show you how **JOIN** works, we are not going to talk about it in th
 
 [/slide]
 
+[slide hideTitle]
+# Problem: Select Employee Information
+[code-task title="Problem: Select Employee Information" taskId="f7dc4efe-897c-4add-b40f-5982805687ab" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Download and get familiar with the **hotel** database schemas and tables. 
+
+You will use it in the following exercises to write queries.
+
+Download resources [here](https://mega.nz/file/PN4TTaSD#TxOn0RfSAhh7oLmediuFI6qbfS0A5y43yxqdx5PTCw4).
+
+Write a query to select all employees and retrieve information about their **id, first_name, last_name and job_title ordered by id.**
+
+**Run your query statements & submit the output from the queries as plain text.**
+
+
+## Examples
+| **id** | **first_name** | **last_name** | *job_title* | 
+| --- | --- | --- | ---|
+| 1  | John | Smith | Manager |
+| 2  | John | Johnson | Customer Service |
+| 3  | Smith | Johnson | Porter |
+| … | … | … | … |
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+1
+John
+Smith
+Manager
+2
+John
+Johnson
+Customer Service
+3
+Smith
+Johnson
+Porter
+4
+Peter
+Petrov
+Front Desk Clerk
+5
+Peter
+Ivanov
+Sales
+6
+Ivan
+Petrov
+Waiter
+7
+Jack
+Jackson
+Executive Chef
+8
+Pedro
+Petrov
+Front Desk Supervisor
+9
+Nikolay
+Ivanov
+Housekeeping
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Select Employee Information
+[/slide]
+
 [slide]
 # Concatenation of columns
 
@@ -98,6 +212,162 @@ resulting in a new column combination of both.
 
 
 It's **important** to remember that concat_ws() has additional behaviour of ignoring the records which have **NULL** value of the given rows.
+[/slide]
+
+[slide hideTitle]
+# Problem: Select Employees with Filter
+[code-task title="Problem: Select Employees with Filter" taskId="d2c5460b-6508-476c-8d95-7d860667c6d3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a query to select all employees **(id, first_name and last_name (as full_name), job_title, salary)** whose salaries are **higher than 1000.00, ordered by id.**
+
+Concatenate fields **first_name and last_name into 'full_name'.**
+
+
+**Run your query statements & submit the output from the queries as plain text.**
+
+
+## Examples
+| **id** | **full_name** | **job_title** | **salary** |
+| --- | --- | --- | --- |
+| 3 | Smith Johnson |  Porter | 1100 |
+| 4 | Peter Petrov |  Front Desk Clerk | 1100 |
+| 5 | Peter Ivanov |  Sales | 1500.23 |
+| … | … |  … | … |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Select Employees with Filter
 [/slide]
 
 [slide]
@@ -200,6 +470,134 @@ WHERE course IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's
 We want to use **IN/NOT IN** operators when we know the exact value we want, following the same logic we can understand what the **NOT IN** operator does.
 [/slide]
 
+[slide hideTitle]
+# Select Employees by Multiple Filters
+[code-task title="Select Employees by Multiple Filters" taskId="785e330b-0635-4797-bbe7-30570f6b6938" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a query to retrieve information about employees, who are in **department 4** and has a salary **higher or equal to 1000**. Order the information by **id**.
+
+**Run your query statements & submit the output from the queries as plain text**
+
+## Examples
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+# Solution: Employees by Multiple Filters
+[/slide]
+
 [slide]
 # Comparison with NULL
 
@@ -290,5 +688,121 @@ SELECT c1, c2, c3, FROM RandomColumns    //and we set what information we want f
 ```
 
 [image assetsSrc="Retrieving-data(4).png" /]
+
+[/slide]
+
+[slide hideTitle]
+# Problem: Top Paid Employee
+[code-task title="Problem: Top Paid Employee" taskId="424cf37e-8a59-4172-bfe3-03948b9c73b5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+
+Write a query to create a view that selects all information about the **top paid employee** from the **"employees"** table in the **hotel** database.
+
+**Run your query statements & submit the output from the queries as plain text.**
+
+## Examples
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Top Paid Employee
 
 [/slide]
