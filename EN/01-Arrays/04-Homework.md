@@ -520,3 +520,115 @@ On the first line print the **newly modified array**, on the second line print t
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Array Rotation
+[code-task title="Array Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function arrayRotation(arr, n){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives an **array** and **number of rotations** you have to perform (first element goes at the end). 
+
+# Output
+
+Print the resulting array elements separated my single space.
+
+| **Input** | **Output** |
+| --- | --- |
+|`['51', '47', '32', '61', '21'], '2'`| 32 61 21 51 47 |
+|`['32', '21', '61', '1'], '4'`| 32 21 61 1 |
+|`['2', '4', '15', '31'], '5'`|4 15 31 2|
+
+[/task-description]
+[tests]
+[test]
+[input]
+[1, 47, 32, 61, 91]
+1
+[/input]
+[output]
+47 32 61 91 1
+[/output]
+[/test]
+[test]
+[input]
+8
+32
+-112
+21
+37
+[/input]
+[output]
+[ 8, 33, -110, 18, 33 ]
+-14
+-18
+[/output]
+[/test]
+[test]
+[input]
+1
+-4
+312
+124
+-1
+[/input]
+[output]
+[ 1, -3, 314, 127, -5 ]
+432
+434
+[/output]
+[/test]
+[test]
+[input]
+6
+15
+-6
+16
+77
+[/input]
+[output]
+[ 6, 14, -4, 19, 73 ]
+108
+108
+[/output]
+[/test]
+[test]
+[input]
+18
+15
+122
+11
+7
+[/input]
+[output]
+[ 18, 14, 124, 8, 3 ]
+173
+167
+[/output]
+[/test]
+[test]
+[input]
+19
+5
+123
+17
+79
+[/input]
+[output]
+[ 19, 4, 121, 14, 75 ]
+243
+233
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
