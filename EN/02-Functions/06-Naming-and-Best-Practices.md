@@ -1,4 +1,4 @@
-# Definition
+# Naming and Best Practices
 
 [slide]
 

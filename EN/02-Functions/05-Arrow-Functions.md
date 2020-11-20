@@ -1,4 +1,4 @@
-# Definition
+# Arrow Functions
 
 [slide]
 
