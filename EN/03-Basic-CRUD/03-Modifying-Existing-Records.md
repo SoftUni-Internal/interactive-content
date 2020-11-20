@@ -46,8 +46,6 @@ Update all employees' salaries whose **job_title** is **"Manager"** by **adding 
 
 **Run your query statements & submit the output from the queries as plain text.**
 
-## Examples
-
 
 [/task-description]
 [code-io /]
@@ -205,8 +203,6 @@ Write a query to delete all employees from the **"employees"** table who are in 
  Order the information by **id**.
 
 **Run your query statements & submit the output from the queries as plain text.**
-
-## Examples
 
 
 [/task-description]

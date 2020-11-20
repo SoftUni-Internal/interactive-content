@@ -471,7 +471,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [/slide]
 
 [slide hideTitle]
-# Select Employees by Multiple Filters
+# Problem: Select Employees by Multiple Filters
 [code-task title="Select Employees by Multiple Filters" taskId="785e330b-0635-4797-bbe7-30570f6b6938" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -489,8 +489,6 @@ public class Main {
 Write a query to retrieve information about employees, who are in **department 4** and has a salary **higher or equal to 1000**. Order the information by **id**.
 
 **Run your query statements & submit the output from the queries as plain text**
-
-## Examples
 
 
 [/task-description]
@@ -711,8 +709,6 @@ public class Main {
 Write a query to create a view that selects all information about the **top paid employee** from the **"employees"** table in the **hotel** database.
 
 **Run your query statements & submit the output from the queries as plain text.**
-
-## Examples
 
 
 [/task-description]
