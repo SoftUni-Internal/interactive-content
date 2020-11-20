@@ -2,15 +2,15 @@
 
 # Revision
 
-Revise what we learned in the last lesson:
+In the last lesson we learned:
 
-- Numbers can be **compared** by the `==`, `<`, `>`, `<=`, `>=` and `!=` operators:
+- Numbers can be **compared** by:  `==`, `<`, `>`, `<=`, `>=` and `!=` operators:
 
 ```js live
 console.log(5 <= 10);  
 ```
 
-- Simple **if-conditions** check a condition and execute a code block if it is **true**:
+- Simple if-conditions check a condition and execute a block of code if it is true: 
 
 ```js live
 let a = 10;
@@ -19,7 +19,7 @@ if (a > 5) {
 }
 ```
 
-- The **if-else construction** executes one of two blocks depending on whether a condition is **true** or **false**:
+- The **if-else** construction executes only one of the two blocks, depending on whether a condition is **true** or **false**:
 
 ```js live
 let a = 10;
