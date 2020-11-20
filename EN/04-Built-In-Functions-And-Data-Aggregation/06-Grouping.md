@@ -2,7 +2,7 @@
 
 # Grouping
 
-The **Group By** statement in SQL allows us to take data in to **separate groups** based on a **common property**.
+The **Group By** clause in SQL allows us to take data in to **separate groups** based on a **common property**.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(5).png" /]
 
@@ -11,8 +11,8 @@ Using **GROUP BY** we can get each **separate** group and use an **aggregate** f
 Let's take a look at this simple example using **soft_uni** database:
 
 ``` java
-SELECT e.`job_title`, count(employee_id) // The result of this query will be 
-  FROM `employees` AS e                  // names of positions and the number of staff working on the specific position
+SELECT e.`job_title`, count(employee_id) // This query would return a list of position 
+  FROM `employees` AS e                  // titles and the number of employees assigned to each one of them.
 GROUP BY e.`job_title`;
 ```
 
