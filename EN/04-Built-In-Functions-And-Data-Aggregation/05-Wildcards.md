@@ -28,9 +28,9 @@ WHERE CustomerName LIKE '_r%'; // It will find values that have "r" in second po
 WHERE ContactName LIKE 'a%o'; // It will find values that starts with "a" and ends with "o".
 ```
 
-The /[charlist/] wildcards are used to specify **which characters** to look for.
+The \[charlist\] wildcards are used to specify **which characters** to look for.
 
-Similarly we can use /[!charlist/] wildcard to specify **excluding** characters.
+Similarly we can use \[!charlist\] wildcard to specify **excluding** characters.
 
 We can use `REGEXP` function to match by any pattern.
 
