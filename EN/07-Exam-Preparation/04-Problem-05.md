@@ -1,7 +1,7 @@
 [slide]
 # TV Series Budget
 ## Description
-You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. You have a budget and number of series that the user will want to purchase. Each series has a title and price.
+You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
 Some of the series have a discount:
 - Thrones – 50\%
 - Lucifer – 40\%	
@@ -36,25 +36,35 @@ function solve(input) {
 ## Input
 Budget - 10
 
-Count series - 3
+Total number of TV series - 3
 
-Name of the first series - Thrones
+First title - Thrones
 
-Price for the first series - 5
+Price for the first one - 5
 
-Name of the second series - Riverdale
+Second title - Riverdale
 
-Price for the second series - 5
+Price for the second one - 5
 
-Name of the third series - Gotham
+Third title - Gotham
 
-Price for the third series - 2
+Price for the third one - 2
 
 ## Output
 You bought all the series and left with 0.50$
 
 ## Comments
-You receive budget – 10$ and count of series - 3. The first series is Thrones with price 5$, which has 50\% discount from the price `5 - 50% = 2.50$`. The second series is Riverdale, which does not have a discount on the price. The third series also does not have a discount. Price of series is `2.50 + 5 + 2 = 9.50$`. Your budget is bigger than the price of series, so you can buy them.
+You receive budget – 10$ and count of series - 3.
+
+The first series is Thrones with price 5$, which has 50\% discount from the price `5 - 50% = 2.50$`. 
+
+The second series is Riverdale, which does not have a discount on the price. 
+
+The third series also does not have a discount. 
+
+Price of series is `2.50 + 5 + 2 = 9.50$`. 
+
+Your budget is bigger than the price of series, so you can buy them.
 [/task-description]
 [code-io /]
 [tests]
