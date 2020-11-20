@@ -534,7 +534,9 @@ function arrayRotation(arr, n){
 [task-description]
 # Description
 
-Write a function that receives an **array** and **number of rotations** you have to perform (first element goes at the end). 
+Write a function that receives an **array** and **number of rotations** you have to perform (first element goes at the end).
+
+The first element of the input array is the **number of rotations** you have to perform.
 
 # Output
 
@@ -550,8 +552,12 @@ Print the resulting array elements separated my single space.
 [tests]
 [test]
 [input]
-[1, 47, 32, 61, 91]
 1
+1
+47
+32
+61
+91
 [/input]
 [output]
 47 32 61 91 1
