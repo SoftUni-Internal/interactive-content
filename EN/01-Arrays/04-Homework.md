@@ -637,3 +637,126 @@ Print the resulting array elements separated my single space.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Magic Sum
+[code-task title="Magic Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function magicSum(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function, which prints all **unique** pairs in an array of integers whose **sum is equal** to a given number. 
+
+**The given number will be the first element in the array.**
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['8', '1', '7', '6', '2', '19', '23']`| 1 7 |
+|| 6 2 |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['27', '14', '20', '60', '13', '7', '19', '8']`| 14 13 |
+||20 7 |
+||19 8 |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['6', '1', '2', '3', '4', '5', '6']`| 1 5 |
+|| 2 4 |
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+14
+1
+5
+3
+7
+7
+[/input]
+[output]
+7 7
+[/output]
+[/test]
+[test]
+[input]
+15
+14
+67
+43
+7
+19
+8
+[/input]
+[output]
+7 8
+[/output]
+[/test]
+[test]
+[input]
+6
+43
+1
+23
+43
+45
+5
+[/input]
+[output]
+1 5
+[/output]
+[/test]
+[test]
+[input]
+7
+6
+5
+3
+4
+3
+3
+[/input]
+[output]
+3 4
+4 3
+4 3
+[/output]
+[/test]
+[test]
+[input]
+46
+46
+3
+43
+[/input]
+[output]
+3 43
+[/output]
+[/test]
+[test]
+[input]
+5
+4
+1
+2
+3
+[/input]
+[output]
+4 1
+2 3
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
