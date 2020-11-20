@@ -1,6 +1,6 @@
 [slide]
 
-## Delete From Database
+# Delete From Database
 
 Deleting structures from the database is called `dropping`
 
