@@ -1,6 +1,6 @@
 [slide]
 
-## Delete From Database
+# Delete From Database
 
 Deleting structures from the database is called `dropping`
 
@@ -10,7 +10,7 @@ Deleting all data in a table is called `truncating`
 
 Both of these actions cannot be **undone** so use with caution!
 
-## Dropping And Truncating(1)
+### Dropping And Truncating(1)
 
 To delete all the entries in a table
 
@@ -30,7 +30,7 @@ To drop entire database
 DROP DATABASE soft_uni; // Database name
 ```
 
-## Dropping And Truncating(2)
+### Dropping And Truncating(2)
 
 To remove a constraining rule from a column like Primary keys, value constraints and unique fields
 
