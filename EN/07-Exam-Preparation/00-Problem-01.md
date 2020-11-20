@@ -1,23 +1,23 @@
 [slide]
 # Calculator for TV series
 ## Description
-Write a program, which calculates how long it will take you to watch all episodes of a series in minutes. 
+Write a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
 
-You will receive count seasons, count episodes per season and duration of each episode. 
+As input, you will receive the number of seasons, the number of episodes per season and the duration of each episode.
 
-In every episode there are advertisements, whose duration is 20% of the episode’s duration. 
+In every episode there are advertisements, which increase its duration by `20%`.
 
-You also have to keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual. 
+You should also keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual.
 
 ## Input
-From the console you receive 4 lines:
+As input you will receive 4 console lines:
 - Name of the series - String
-- Count seasons – int in the range \[1… 10\]
-- Count episodes  – int in the range \[10… 80\]
-- Duration of a usual episode without the advertisements – double in the range \[40.0… 65.0\]
+- Number of seasons – int in the range \[1… 10\]
+- Number of episodes – int in the range \[10… 80\]
+- Duration of a standard episode without the advertisements – double in the range \[40.0… 65.0\]
 
 ## Output
-You have to print on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format: 
+Print out on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
 
 [code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -32,9 +32,9 @@ function solve(input) {
 ## Input
 Name of the series - Lucifer
 
-Count seasons – 3
+Number seasons – 3
 
-Count episodes  – 18
+Number episodes  – 18
 
 Duration of an episode – 55
 
@@ -46,9 +46,9 @@ Duration of advertisements per episode: 20\% from 55 = 11.0
 
 Duration of an episode with the advertisements: `55 + 11 = 66.0`
 
-Additional time from the special episode: `3*10 = 30`
+Additional time to be added, because of the specials: `3*10 = 30`
 
-Total time to watch the episodes: `66 * 18 * 3 + 30 = 3594.0`  
+Total time needed to watch the episodes: `66 * 18 * 3 + 30 = 3594.0`  
 [/task-description]
 [code-io /]
 [tests]
