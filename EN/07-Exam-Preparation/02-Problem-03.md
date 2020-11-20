@@ -1,7 +1,7 @@
 [slide]
 # Cinema
 ## Description
-For the upcoming premiere of three popular productions a local cinema has hired you to write a software that calculates the price, which the clients have to pay, depending on the movie and the offer they have chosen.
+For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 
 | | John Wick      | Star Wars | Jumanji   |
 |:---:    | :---:       |    :----:   |   :---:     |
@@ -9,17 +9,19 @@ For the upcoming premiere of three popular productions a local cinema has hired 
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
+Write a program that calculates what is the total price to be paid by the customer. 
 
+There are also promotional discounts available for two of the movies:
 
-Write a program that calculates the price that has to be paid. Keep in mind that there are discounts:
-- If the chosen movie is `Star Wars` and at least four tickets are bought, there is 30\% family discount.
-- If the chosen movie is `Jumanji` and the tickets bought are exactly two, there is 15\% discount for two.
+- If the chosen movie is `Star Wars` and at least four tickets are bought, there is a `30%` family discount.
+
+- If the chosen movie is `Jumanji` and exactly 2 tickets are bought, there is `15%` discount for two.
 
 ## Input
 You receive 3 lines from the console:
 - First line - movie - string: `John Wick`, `Star Wars` or `Jumanji`
 - Second line - offer - string: `Drink`, `Popcorn` or `Menu`
-- Third line - count tickets – whole number in the range \[1… 30\]
+- Third line – number of tickets  – whole number in the range \[1… 30\]
 
 ## Output
 Print one line on the console: `Your bill is {total price}$`
