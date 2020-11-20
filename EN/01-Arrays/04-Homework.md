@@ -526,7 +526,7 @@ On the first line print the **newly modified array**, on the second line print t
 [code-task title="Array Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayRotation(arr, n){
+function arrayRotation(arr){
   // Write your code here
 }
 ```
@@ -544,9 +544,9 @@ Print the resulting array elements separated my single space.
 
 | **Input** | **Output** |
 | --- | --- |
-|`['51', '47', '32', '61', '21'], '2'`| 32 61 21 51 47 |
-|`['32', '21', '61', '1'], '4'`| 32 21 61 1 |
-|`['2', '4', '15', '31'], '5'`|4 15 31 2|
+|`['2','51', '47', '32', '61', '21']`| 32 61 21 51 47 |
+|`['4', '32', '21', '61', '1']`| 32 21 61 1 |
+|`['5', '2', '4', '15', '31']`|4 15 31 2|
 
 [/task-description]
 [tests]
@@ -565,72 +565,71 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
-8
+2
+451
+47
 32
--112
+61
+12
+[/input]
+[output]
+32 61 12 451 47
+[/output]
+[/test]
+[test]
+[input]
+3
+31 
 21
-37
-[/input]
-[output]
-[ 8, 33, -110, 18, 33 ]
--14
--18
-[/output]
-[/test]
-[test]
-[input]
+69
 1
--4
-312
-124
--1
 [/input]
 [output]
-[ 1, -3, 314, 127, -5 ]
-432
-434
+1 31 21 69
 [/output]
 [/test]
 [test]
 [input]
-6
-15
--6
-16
-77
-[/input]
-[output]
-[ 6, 14, -4, 19, 73 ]
-108
-108
-[/output]
-[/test]
-[test]
-[input]
-18
-15
-122
-11
+4
+3
+21
 7
+1
 [/input]
 [output]
-[ 18, 14, 124, 8, 3 ]
-173
-167
+3 21 7 1
 [/output]
 [/test]
 [test]
 [input]
-19
-5
-123
-17
-79
+10
+22
+4
+4
+15
 [/input]
 [output]
-[ 19, 4, 121, 14, 75 ]
-243
-233
+4 15 22 4
+[/output]
+[/test]
+[test]
+[input]
+11
+15
+[/input]
+[output]
+15
+[/output]
+[/test]
+[test]
+[input]
+0
+21
+69
+4
+[/input]
+[output]
+21 69 4
 [/output]
 [/test]
 [/tests]
