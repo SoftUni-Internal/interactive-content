@@ -83,7 +83,7 @@ The inner fuction **can access** the outer function's variables and arguments.
 
 ## Example
 
-```js
+```js live
 function swapElements(arr) {
   for (let i = 0; i < arr.length/2; i++) {
     swap(arr, i, arr.length – 1 - i);
