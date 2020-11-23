@@ -400,7 +400,6 @@ function mathPower(input){
   let result = Math.pow(num,pow);
   console.log(result);
 }
-}
 ```
 [/code-editor]
 [task-description]
