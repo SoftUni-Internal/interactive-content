@@ -33,8 +33,8 @@ SELECT full_name, course, grade FROM students; //Makes a "projection" giving us 
 
 
 ``` java
-SELECT full_name, grade                   //Makes a filtration, taking a only the subset of records
-FROM students                             //that meet our requirement of courseName.
+SELECT `full_name`, `grade`                   //Makes a filtration, taking a only the subset of records
+FROM `students`                             //that meet our requirement of courseName.
 WHERE courseName = "Java Advanced";
 ```
 
@@ -48,8 +48,8 @@ WHERE courseName = "Java Advanced";
 
 
 ``` java
-SELECT course_name, course_schedule, teacher_full_name    //Here we can choose information from
-FROM Orders                                               //two tables by using JOIN to join them
+SELECT `course_name`, `course_schedule`, `teacher_full_name`    //Here we can choose information from
+FROM `Orders`                                               //two tables by using JOIN to join them
 INNER JOIN Customers ON Courses.teacherId=Teachers.id;    //by two equal rows
 ```
 
@@ -99,32 +99,42 @@ Write a query to select all employees and retrieve information about their **id,
 [tests]
 [test]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+1
+John
+Smith
+Manager
+2
+John
+Johnson
+Customer Service
+3
+Smith
+Johnson
+Porter
+4
+Peter
+Petrov
+Front Desk Clerk
+5
+Peter
+Ivanov
+Sales
+6
+Ivan
+Petrov
+Waiter
+7
+Jack
+Jackson
+Executive Chef
+8
+Pedro
+Petrov
+Front Desk Supervisor
+9
+Nikolay
+Ivanov
+Housekeeping
 [/input]
 [output]
 1
@@ -251,33 +261,30 @@ Concatenate fields **first_name and last_name into 'full_name'.**
 [tests]
 [test open]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
 [/input]
 [output]
 3
@@ -308,32 +315,30 @@ Housekeeping
 [/test]
 [test]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
 [/input]
 [output]
 3
@@ -411,9 +416,9 @@ We can use logical operators <>= in combination with **WHERE** in order to get b
 
 ```java
 SELECT *                           //This query will result in a filtered
-FROM students                      //collection of records
-WHERE age >= 14                    //where all of our records will meet the requirments.
-AND course = "Java Advanced"       //The keyword "AND" is used in order to combine conditions.
+FROM `students`                      //collection of records
+WHERE `age` >= 14                    //where all of our records will meet the requirments.
+AND `course` = "Java Advanced"       //The keyword "AND" is used in order to combine conditions.
 ```
 [/slide]
 
@@ -426,8 +431,8 @@ There are few other comparison conditions that make our live easier as developer
 
 ``` java
 SELECT `first_name`                                           //As we don't wnat to meet any
-FROM students                                                 //of the combined with the keyword 'AND' conditions
-WHERE NOT (course_name = 'JS Basics' AND 'Java Basics')       //we use the keyword 'NOT' to reverse the logic
+FROM `students`                                                 //of the combined with the keyword 'AND' conditions
+WHERE NOT (`course_name` = 'JS Basics' AND 'Java Basics')       //we use the keyword 'NOT' to reverse the logic
 ```
 
 The keyword **NOT** is powerful, but you may have already used in you Java projects as the **operator '!'**.
@@ -437,9 +442,9 @@ Follwing the same logic the keyword **AND** is equal to the **&& operator** in J
 Now lets have a look over the keyword 'OR'.
 
 ```java
-SELECT concat_ws(' ', first_name, last_name) AS full_name       //Now we want only the full_name
-FROM students                                                   //of students
-WHERE course_name = 'JS Basics' AND 'Java Basics'               //where their course is either 'JS Basics' or 'Java Basics'
+SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Now we want only the full_name
+FROM `students`                                                   //of students
+WHERE `course_name` = 'JS Basics' AND 'Java Basics'               //where their course is either 'JS Basics' or 'Java Basics'
 ```
 The keyword equivalent of **OR** in Java would be **'||' operator**.
 
@@ -450,9 +455,9 @@ Now let's have a look over few operators that are native only to SQL.
 ### BETWEEN
 
 ```java
-SELECT concat_ws(' ', first_name, last_name) AS full_name       //Here we want the students names
-FROM students                                                   //where their age
-WHERE age BETWEEN 14 AND 18                                     //is between the conditions we set.
+SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Here we want the students names
+FROM `students`                                                   //where their age
+WHERE `age` BETWEEN 14 AND 18                                     //is between the conditions we set.
 ```
 
 The **BETWEEN** operator is used in combination with the **AND** operator in order to set boundries of the filtration we want.
@@ -463,8 +468,8 @@ The operator is inclusive, so it's taken in notice both boundries. The values ca
 
 ```java                                                                   
 SELECT *                                                                 //This query aims to return us
-FROM students                                                            //all the information for students
-WHERE course IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's course is in between the values we stated.
+FROM `students`                                                            //all the information for students
+WHERE `course` IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's course is in between the values we stated.
 ```
 
 We want to use **IN/NOT IN** operators when we know the exact value we want, following the same logic we can understand what the **NOT IN** operator does.
@@ -496,35 +501,18 @@ Write a query to retrieve information about employees, who are in **department 4
 [tests]
 [test open]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
 [/input]
 [output]
 3
@@ -543,35 +531,18 @@ Housekeeping
 [/test]
 [test]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
 [/input]
 [output]
 3
@@ -653,18 +624,18 @@ In addition you can use the keywords **ASC** and **DESC** to reverse the order i
 
 ```java
 SELECT *                            //Here we choose all the information
-FROM students                       //for the table students
-WHERE age BETWEEN 14 AND 50         //filtered by where they meet the condition
-ORDER BY age DESC                   // Ordered by their age descending.
+FROM `students`                       //for the table students
+WHERE `age` BETWEEN 14 AND 50         //filtered by where they meet the condition
+ORDER BY `age` DESC                   // Ordered by their age descending.
 ```
 
 You can chain **ORDER BY** clauses by declaring second column by which you want to order them, separating them with a **,** in betweeen just as in the exampl
 
 ```java
 SELECT *                
-FROM student
-WHERE age BETWEEN 14 AND 50    
-ORDER BY age DESC, first_name 
+FROM `student`
+WHERE `age` BETWEEN 14 AND 50    
+ORDER BY `age` DESC, `first_name` 
 ```
 
 [/slide]
@@ -681,8 +652,8 @@ In other words **Views** are nothing but **saved SQL queries**.
 For example:
 
 ```java
-CREATE VIEW `Combination of columns` AS  //We declare the creation of view
-SELECT c1, c2, c3, FROM RandomColumns    //and we set what information we want from a given table
+CREATE VIEW `Combination of columns AS  //We declare the creation of view
+SELECT `full_name`, `course`, `study_hours`, FROM RandomColumns    //and we set what information we want from a given table
 ```
 
 [image assetsSrc="Retrieving-data(4).png" /]
@@ -716,33 +687,12 @@ Write a query to create a view that selects all information about the **top paid
 [tests]
 [test open]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
 [/input]
 [output]
 8
@@ -755,34 +705,12 @@ Front Desk Supervisor
 [/test]
 [test]
 [input]
-CREATE TABLE departments (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
-);
-
-INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
-
-
-CREATE TABLE employees (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(50) NOT NULL,
-	last_name VARCHAR(50) NOT NULL,
-	job_title VARCHAR(50) NOT NULL,
-	department_id INT NOT NULL,
-	salary DOUBLE NOT NULL,
-	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
-);
-
-INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
-	('John', 'Smith', 'Manager',1, 900.00),
-	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
 [/input]
 [output]
 8
