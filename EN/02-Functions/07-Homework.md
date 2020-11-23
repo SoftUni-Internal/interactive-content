@@ -629,3 +629,107 @@ true
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Password Validator
+[code-task title="Password Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function passwordValidator(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that checks if a given password is valid. Password validations are:
+
+- The length should be 6 - 10 characters (inclusive)
+-	It should consists only of letters and digits
+-	It should have at least 2 digits 
+
+If a password is valid print `Password is valid`.
+
+If it is **NOT** valid, for every unfulfilled rule print a message:
+
+`Password must be between 6 and 10 characters`
+
+`Password must consist only of letters and digits`
+
+`Password must have at least 2 digits`
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['logIn']`| Password must be between 6 and 10 characters |
+|| Password must have at least 2 digits |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['MyPass123']`| Password is valid |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['Pa$s$s']`| Password must consist only of letters and digits |
+|| Password must have at least 2 digits|
+
+[/task-description]
+[tests]
+[test]
+[input]
+Acer
+[/input]
+[output]
+Password must be between 6 and 10 characters
+Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+Picture
+[/input]
+[output]
+Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+pesho123\#
+[/input]
+[output]
+Password must consist only of letters and digits
+[/output]
+[/test]
+[test]
+[input]
+gas\%2
+[/input]
+[output]
+Password must be between 6 and 10 characters
+Password must consist only of letters and digits
+Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+\$\$\$\$\$\$\$
+[/input]
+[output]
+Password must consist only of letters and digits
+Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+SoftUni40
+[/input]
+[output]
+Password is valid
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
