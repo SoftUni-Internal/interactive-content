@@ -188,3 +188,145 @@ Use appropriate name for the function.
 
 [/slide]
 
+[slide]
+# Problem: Add and Subtract
+[code-task title="Add and Subtract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function addSubtract(input){
+ 
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+You will receive **three integer numbers.** 
+
+Write a function `sum()` to get the sum of the first two integers and `subtract()` function that subtracts the third integer from the result.
+
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['23','6', '10']`| 29 |
+|`['1','17', '30']`| \-12 |
+|`['42','58', '100']`| 0 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+775
+8058
+6727
+[/input]
+[output]
+2106
+[/output]
+[/test]
+[test]
+[input]
+5238
+851
+8783
+[/input]
+[output]
+\-2694
+[/output]
+[/test]
+[test]
+[input]
+3311
+8557
+872
+[/input]
+[output]
+10996
+[/output]
+[/test]
+[test]
+[input]
+1318
+2018
+5695
+[/input]
+[output]
+\-2359
+[/output]
+[/test]
+[test]
+[input]
+1615
+4900
+8565
+[/input]
+[output]
+\-2050
+[/output]
+[/test]
+[test]
+[input]
+777
+9465
+7034
+[/input]
+[output]
+3208
+[/output]
+[/test]
+[test]
+[input]
+2667
+4817
+1801
+[/input]
+[output]
+5683
+[/output]
+[/test]
+[test]
+[input]
+2037
+50
+7681
+[/input]
+[output]
+\-5594
+[/output]
+[/test]
+[test]
+[input]
+120
+8802
+9102
+[/input]
+[output]
+\-180
+[/output]
+[/test]
+[test]
+[input]
+6598
+6102
+4528
+[/input]
+[output]
+8172
+[/output]
+[/test]
+[test]
+[input]
+789
+3598
+4387
+[/input]
+[output]
+0
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
