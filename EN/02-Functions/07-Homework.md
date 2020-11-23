@@ -15,7 +15,7 @@ We have prepared some problems for you to solve.
 [code-task title="Repeat String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function рepeatString(str, n){
+function рepeatString(input){
   // Write your code here
 }
 ```
