@@ -9,4 +9,4 @@
 - SQL Queries
 - How to modify Data Structures
 
-  [/slide]
+[/slide]
