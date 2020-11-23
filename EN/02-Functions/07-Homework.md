@@ -330,3 +330,89 @@ Write a function `sum()` to get the sum of the first two integers and `subtract(
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Characters in Range
+[code-task title="Characters in Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function charactersInRange(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that **receives two characters** and prints on a single line all the characters in between them according to the **ASCII** code. 
+
+Keep in mind that the **second character code might be before the first one inside the ASCII table.**
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['a','b']`| b c |
+|`['#',':']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
+|`['C','#']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
+
+[/task-description]
+[tests]
+[test]
+[input]
+t
+E
+[/input]
+[output]
+F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^\ _ \` a b c d e f g h i j k l m n o p q r s
+[/output]
+[/test]
+[test]
+[input]
+\!
+\}
+[/input]
+[output]
+\" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ _ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
+[/output]
+[/test]
+[test]
+[input]
+\|
+\$
+[/input]
+[output]
+\% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
+[/output]
+[/test]
+[test]
+[input]
+\:
+\#
+[/input]
+[output]
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
+[/output]
+[/test]
+[test]
+[input]
+m
+9
+[/input]
+[output]
+\: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l
+[/output]
+[/test]
+[test]
+[input]
+a
+d
+[/input]
+[output]
+b c
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
