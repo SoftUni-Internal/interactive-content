@@ -30,9 +30,9 @@ balance DECIMAL(10, 2) DEFAULT 0 // Default value set to 0
 
 1. Create new database called `gamebar`
 2. Create Tables:
-   - `employees` - id, firstName, lastName
+   - `employees` - id, first_name, last_name
    - `categories` - id, name
-   - `products` - id, name, categoryId
+   - `products` - id, name, category_id
 3. Insert Data:
    - Populate the `employees` table with 3 test values
 

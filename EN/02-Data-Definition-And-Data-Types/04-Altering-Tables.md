@@ -21,7 +21,7 @@ Delete existing column
 
 ```Java
 ALTER TABLE people
-DROP COLUMN fullName; // Delete column with name `fullName`
+DROP COLUMN full_name; // Delete column with name `fullName`
 ```
 
 Modify data type of existing column
@@ -61,9 +61,9 @@ ALTER COLUMN balance SET DEFAULT 0; // Default value - 0, column name `balance`
 ## Problem: Alter Tables
 
 1. Alter Table
-   - Add a new column `middleName` to the `employees` table
+   - Add a new column `middle_name` to the `employees` table
 2. Add Constraints
-   - Make `categoryId` foreign key linked to `id` in table `categories`
+   - Make `category_id` foreign key linked to `id` in table `categories`
 3. Modify Columns - Change the property `VARCHAR(50)` to `VARCHAR(100)` of the `middleName` column in `employees` table
 
 [/slide]
