@@ -133,3 +133,167 @@ If we pass less arguments then rest of the parameters will be **undefined.**
 If you pass more arguments then **additional arguments will be ignored.**
 
 [/slide]
+
+[slide]
+# Problem: Grades
+[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function grades(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words
+
+| **Grade** | **Result** |
+| --- | --- |
+|`2.00 - 2.99` | `Fail` |
+|`3.00 - 3.49` | `Poor` |
+|`3.50 - 4.49` | `Good` |
+|`4.50 - 5.49` | `Very good` |
+|`5.50 - 6.00` | `Excellent` |
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['3.33']` | Poor |
+|`['4.50']` | Very good |
+|`['2.99']` | Fail |
+
+[/task-description]
+[tests]
+[test]
+[input]
+4.49
+[/input]
+[output]
+Good
+[/output]
+[/test]
+[test]
+[input]
+5.50
+[/input]
+[output]
+Excellent
+[/output]
+[/test]
+[test]
+[input]
+4.60
+[/input]
+[output]
+Very good
+[/output]
+[/test]
+[test]
+[input]
+3.20
+[/input]
+[output]
+Poor
+[/output]
+[/test]
+[test]
+[input]
+2.00
+[/input]
+[output]
+Fail
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Grades
+[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function grades(grade){
+  if (grade >= 2.0 && grade < 3.0) {
+        console.log('Fail');
+    } else if (grade >= 3.0 && grade < 3.5) {
+        console.log('Poor');
+    } else if (grade >= 3.5 && grade < 4.5) {
+        console.log('Good');
+    } else if (grade >= 4.5 && grade < 5.5) {
+        console.log('Very good');
+    } else if (grade >= 5.5 && grade <= 6.0) {
+        console.log('Excellent');
+    }
+}
+```
+[/code-editor]
+[task-description]
+Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words
+
+| **Grade** | **Result** |
+| --- | --- |
+|`2.00 - 2.99` | `Fail` |
+|`3.00 - 3.49` | `Poor` |
+|`3.50 - 4.49` | `Good` |
+|`4.50 - 5.49` | `Very good` |
+|`5.50 - 6.00` | `Excellent` |
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['3.33']` | Poor |
+|`['4.50']` | Very good |
+|`['2.99']` | Fail |
+
+[/task-description]
+[tests]
+[test]
+[input]
+4.49
+[/input]
+[output]
+Good
+[/output]
+[/test]
+[test]
+[input]
+5.50
+[/input]
+[output]
+Excellent
+[/output]
+[/test]
+[test]
+[input]
+4.60
+[/input]
+[output]
+Very good
+[/output]
+[/test]
+[test]
+[input]
+3.20
+[/input]
+[output]
+Poor
+[/output]
+[/test]
+[test]
+[input]
+2.00
+[/input]
+[output]
+Fail
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
