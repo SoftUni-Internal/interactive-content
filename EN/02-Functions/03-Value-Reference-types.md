@@ -22,7 +22,7 @@ The called method does not have access to the original primitive value and there
 
 The called method can change the copied value.
 
-* Primitive data types are: `undefined`, `boolean`, `number`, `string`, `bigint` and `symbol`.
+- Primitive data types are: `undefined`, `boolean`, `number`, `string`, `bigint` and `symbol`.
 
 ```js
 i = 42;
@@ -38,7 +38,7 @@ When a reference type is assigned to another reference type, both will point to 
 
 When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
 
-* Reference data types are: `object`, `Array` and `function`.
+- Reference data types are: `object`, `Array` and `function`.
 
 ```js
 let cars = ["NIO", "XPang", "Tesla"];
