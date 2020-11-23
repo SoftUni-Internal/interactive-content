@@ -22,7 +22,7 @@ VAlUES                                       --with the desired values.
 
 
 -> **R** stands for **READ** -- via the **SELECT** keyword which indicates *retrieve*,  
- combined with **FROM** keyword which indicates the table, we *READ* our records.    
+ combined with the **FROM** keyword which indicates the table, we *READ* our records.    
 
 
 ``` java

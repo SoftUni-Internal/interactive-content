@@ -9,7 +9,7 @@ Creation of records is done by the keyword **INSERT**.
 INSERT INTO `students` VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications'); //Here we add a new record to our table students.
 ```
 
-This query is possible and it will compile, but to be more exhaustive and make our queries easier to comprehand, it's better to name the columns that we want to **INSERT INTO**.
+This query is possible and it will compile, but to be more exhaustive and make our queries easier to comprehend, it's better to name the columns that we want to **INSERT INTO**.
 
 ```java
 INSERT INTO students(`first_name`, `last_name`, `age`, `course_name`)     //As we specify the column names it will be easier for whoever

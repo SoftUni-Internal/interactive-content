@@ -6,16 +6,16 @@
 [slide]
 # Updating data
 
-Persisting our records in the database is the first step, but we also want to keep this data in up to date, in order to always recieve the results we expect and need.
+Persisting our records in the database is the first step, but we also want to keep this data up to date, to always receive the results we expect and need.
 
-In help comes the second part of our ancronym CR**UD**.
+In help comes the second part of our acronym CR**UD**.
 
 Updating data is an important part of our work if we want to keep our data relevant.
 
 This can be done with the keyword **UPDATE**. 
 
 ```java
-UPDATE `students`                                                //On the first line we declare the operation 'UPDATE' and the choosen table
+UPDATE `students`                                                //On the first line we declare the operation 'UPDATE' and the chosen table
 SET `age` = 14                                                   //with the keyword SET we choose the column/columns we want to change
 WHERE `first_name` = 'Mary' AND `last_name` = 'Johnson';         //we should not forget to add 'WHERE' clause, otherwise we may change our whole table.
 ```
@@ -123,25 +123,25 @@ Housekeeping
 
 # Deleting data
 
-Keeping our data in check and removing the records we don't need anymore is as imporant as persisting our records. 
+Keeping our data in check and removing the records we don't need anymore is as important as persisting our records. 
 
-We should learn how to do it properly as well, lets have a look.
+We should learn how to do it properly as well, let's have a look.
 
 You can delete specific rows from a given table:
 
 ```java
 DELETE FROM `employees`      //Here we delete from table employees
-WHERE `employee_id` = 1;	 //where the condition is true.
+WHERE `employee_id` = 1;     //where the condition is true.
 ```
 
-As well as in the **UPDATE** action, you should not forget to add an **WHERE** clause in order to filter and **DELETE** only the results you want. 
+As well as in the **UPDATE** action, you should not forget to add a **WHERE** clause to filter and **DELETE** only the results you want. 
 
-Be carefull, the **DELETE** is pernament and it's only reversable if you have a back-up of your database.
+Be careful, the **DELETE** is permanent and it's only reversible if you have a back-up of your database.
 
 You can also delete all records from a given table by using the keyword **TRUNCATE** (it works faster than **DELETE**).
 
 ```java
-TRUNCATE TABLE `users`;    //here we delete the whole information we persisted in the users table.
+TRUNCATE TABLE `users`;    //here we delete the whole information we persisted in the users' table.
 ```
 
 [/slide]

@@ -1,12 +1,12 @@
 [slide]
 # Retrieving data
 
-Now let's have a look over one of the most common (if not the most) operattion when we are talking about databases.
+Now let's have a look over one of the most common (if not the most) operations when we are talking about databases.
 
 
-Retrieving data, is the action where we demand records from our tables, through the keyword **SELECT**, which further gives us several possibilities: 
+Retrieving data is the action where we demand records from our tables, through the keyword **SELECT**, which further gives us several possibilities: 
 
-## Retrieve all available infromation from a table
+## Retrieve all available information from a table
 
 ``` java
 SELECT * FROM students; //Gives us back all available records, with all available columns from the table "students".
@@ -19,21 +19,21 @@ SELECT * FROM students; //Gives us back all available records, with all availabl
 
 
 ``` java
-SELECT full_name, course, grade FROM students; //Makes a "projection" giving us only the infromation we need (full_name, course, grade). 
+SELECT full_name, course, grade FROM students; //Makes a "projection" giving us only the information we need (full_name, course, grade). 
 ```
 
 
 [image assetsSrc="Retrieving-data(1).png" /]
 
 
-**Keynote** - when we make a projection, we take only data that we need, which optimizes our query and makes less trafic to the database.
+**Keynote** - when we make a projection, we take only data that we need, which optimizes our query and makes less traffic to the database.
 
 
 ## Make a filtration/take a subset of desired rows
 
 
 ``` java
-SELECT `full_name`, `grade`                   //Makes a filtration, taking a only the subset of records
+SELECT `full_name`, `grade`                   //Makes a filtration, taking only the subset of records
 FROM `students`                             //that meet our requirement of courseName.
 WHERE courseName = "Java Advanced";
 ```
@@ -41,7 +41,7 @@ WHERE courseName = "Java Advanced";
 
 [image assetsSrc="Retrieving-data(2).png" /]
 
-**Keynote** - This operation won't boost the performance, as the databse has to iterate through all the records in order to find the one that meets the requierment, but it will find you only the records that you need.
+**Keynote** - This operation won't boost the performance, as the database has to iterate through all the records to find the one that meets the requirements, but it will find you only the records that you need.
 
 
 ## Combining tables
@@ -81,7 +81,7 @@ You will use it in the following exercises to write queries.
 
 Download resources [here](https://mega.nz/file/PN4TTaSD#TxOn0RfSAhh7oLmediuFI6qbfS0A5y43yxqdx5PTCw4).
 
-Write a query to select all employees and retrieve information about their **id, first_name, last_name and job_title ordered by id.**
+Write a query to select all employees and retrieve information about their **id, first_name, last_name, and job_title ordered by id.**
 
 **Run your query statements & submit the output from the queries as plain text.**
 
@@ -187,7 +187,7 @@ Housekeeping
 # Concatenation of columns
 
 ### concat()
-As you may already know SQL is not only a tool for storing and retrieving data, but you can also use it's build in functions.
+As you may already know SQL is not only a tool for storing and retrieving data, but you can also use its built-in functions.
 
 Now we will teach you how to use one of the basic string functions, **Concatenation**.
 
@@ -195,10 +195,10 @@ Now we will teach you how to use one of the basic string functions, **Concatenat
 SELECT
      concat(`first_name`,' ',`last_name`) AS 'full_name',    //The function concat is used to combine first_name, ' ' and last_name
     `course` AS  'Course',                                  // to result in a single column combination of them both - full_name.
-    `grade` AS 'Grade'                                      //The keyword 'AS' may be used in order to give a column desired name.
+    `grade` AS 'Grade'                                      //The keyword 'AS' may be used to give a column the desired name.
         FROM students;
 ```
-The function **concat()** accepts columnds further combining the values of its record's rows, into a single column.
+The function **concat()** accepts columns further combining the values of its record's rows, into a single column.
 
 Let's not forget that:
 -> String literals should be enclosed by ['].
@@ -206,9 +206,9 @@ Let's not forget that:
 
 ### concat_ws()
 
-Than we have another function, which is simillar to **concat()**
+Then we have another function, which is similar to **concat()**
 
-**concat_ws()** is used in order to join two or more rows, with separator.
+**concat_ws()** is used to join two or more rows, with a separator.
 
 ```Java
 SELECT
@@ -217,11 +217,11 @@ SELECT
     `grade` AS 'Grade'
         FROM students
 ```
-The separator is given as first value in the argument, than you list the rows you want to concatenate,
+The separator is given as the first value in the argument than you list the rows you want to concatenate,
 resulting in a new column combination of both. 
 
 
-It's **important** to remember that concat_ws() has additional behaviour of ignoring the records which have **NULL** value of the given rows.
+It's **important** to remember that concat_ws() has additional behavior of ignoring the records which have **NULL** value of the given rows.
 [/slide]
 
 [slide hideTitle]
@@ -379,7 +379,7 @@ Housekeeping
 # Filtering the selected rows
 Now we know how to take the information that we need and present it the way we want.
 
-Lets have a look how we can filter these results in order to get only the results that we desire.
+Let's have a look at how we can filter these results to get only the results that we desire.
 
 There are several ways to achieve that:
 
@@ -398,7 +398,7 @@ When we put the keyword **DISTINCT** in action, it eliminates all duplicate resu
 
 ### WHERE
 
-Second way of filtering the results would be the keyword **WHERE**
+The second way of filtering the results would be the keyword **WHERE**
 
 ``` java
 SELECT
@@ -409,37 +409,37 @@ SELECT
     WHERE Course = "Java Basics"
 ```
 
-You can filter the rows in your table, by using the keyword **WHERE** which will result in returning only the records for which the condition is truth.
+You can filter the rows in your table, by using the keyword **WHERE** which will result in returning only the records for which the condition is true.
 
 
-We can use logical operators <>= in combination with **WHERE** in order to get better control over the information we want to recieve.
+We can use logical operators <>= in combination with **WHERE** to get better control over the information we want to receive.
 
 ```java
 SELECT *                           //This query will result in a filtered
 FROM `students`                      //collection of records
-WHERE `age` >= 14                    //where all of our records will meet the requirments.
-AND `course` = "Java Advanced"       //The keyword "AND" is used in order to combine conditions.
+WHERE `age` >= 14                    //where all of our records will meet the requirements.
+AND `course` = "Java Advanced"       //The keyword "AND" is used to combine conditions.
 ```
 [/slide]
 
 [slide]
 # Other comparison conditions
 
-There are few other comparison conditions that make our live easier as developers and make our queries easier to read.
+Few other comparison conditions make our lives easier as developers and make our queries easier to read.
 
 ### NOT, OR, AND
 
 ``` java
-SELECT `first_name`                                           //As we don't wnat to meet any
+SELECT `first_name`                                           //As we don't want to meet any
 FROM `students`                                                 //of the combined with the keyword 'AND' conditions
 WHERE NOT (`course_name` = 'JS Basics' AND 'Java Basics')       //we use the keyword 'NOT' to reverse the logic
 ```
 
-The keyword **NOT** is powerful, but you may have already used in you Java projects as the **operator '!'**.
-Follwing the same logic the keyword **AND** is equal to the **&& operator** in Java.
+The keyword **NOT** is powerful, but you may have already used in your Java projects as the **operator '!'**.
+Following the same logic, the keyword **AND** is equal to the **&& operator** in Java.
 
 
-Now lets have a look over the keyword 'OR'.
+Now let's have a look over the keyword 'OR'.
 
 ```java
 SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Now we want only the full_name
@@ -449,7 +449,7 @@ WHERE `course_name` = 'JS Basics' AND 'Java Basics'               //where their 
 The keyword equivalent of **OR** in Java would be **'||' operator**.
 
 
-Now let's have a look over few operators that are native only to SQL.
+Now let's have a look over a few operators that are native only to SQL.
 
 
 ### BETWEEN
@@ -460,8 +460,8 @@ FROM `students`                                                   //where their 
 WHERE `age` BETWEEN 14 AND 18                                     //is between the conditions we set.
 ```
 
-The **BETWEEN** operator is used in combination with the **AND** operator in order to set boundries of the filtration we want.
-The operator is inclusive, so it's taken in notice both boundries. The values can be numbers, text, or dates.
+The **BETWEEN** operator is used in combination with the **AND** operator to set the boundaries of the filtration we want.
+The operator is inclusive, so it's taken into notice both boundaries. The values can be numbers, text, or dates.
 
 
 ### IN/NOT IN
@@ -491,7 +491,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a query to retrieve information about employees, who are in **department 4** and has a salary **higher or equal to 1000**. Order the information by **id**.
+Write a query to retrieve information about employees, who are in **department 4** and have a salary **higher or equal to 1000**. Order the information by **id**.
 
 **Run your query statements & submit the output from the queries as plain text**
 
@@ -572,13 +572,13 @@ Housekeeping
 
 One tricky part of SQL is the **NULL** value, it may sometimes surprise you until you finally get the hang of it.
 
-First we have to understand something, **NULL** does not mean **No value** it conceptually means **unavailable, unassigned, unknown, or inapplicable** and it's treated somewhat differently from other values.
+First, we have to understand something, **NULL** does not mean **No value** it conceptually means **unavailable, unassigned, unknown, or inapplicable** and it's treated somewhat differently from other values.
 
-A null is not the same as zero or a space. Zero is a number, and a space is a character. 
+A null is not the same as zero or space. Zero is a number, and space is a character. 
 
 ### Arithmetic comparison and NULL
 
-When we are talking about **NULL**, we should always be carefull with it's behaviour when we compare it with **><=**, as it does not give us the results we expect.
+When we are talking about **NULL**, we should always be careful with its behavior when we compare it with **><=**, as it does not give us the results we expect.
 
 ```java
 SELECT 1 = NULL, 1 <> NULL, 1 < NULL, 1 > NULL;
@@ -589,23 +589,23 @@ SELECT 1 = NULL, 1 <> NULL, 1 < NULL, 1 > NULL;
 +----------+-----------+----------+----------+
 ```
 
-As you may see, any arithmetic comparison with **NULL** always returns the same result **NULL**. We should keep that in mind while we understand what is the proper way working with **NULL**.
+As you may see, any arithmetic comparison with **NULL** always returns the same result **NULL**. We should keep that in mind while we understand what is the proper way of working with **NULL**.
 
 
 ### IS NULL / IS NOT NULL
 
-The proper way of checking if given value of a record is **NULL** is by using the **IS NULL / IS NOT NULL** operators, they work simply by telling you if the given statement is true or false.
+The proper way of checking if the given value of a record is **NULL** is by using the **IS NULL / IS NOT NULL** operators, they work simply by telling you if the given statement is true or false.
 
 ```java
 SELECT 'A' IS NULL, 'A' IS NOT NULL
 +-----------+---------------+
-|'A' IS NULL|'A' IS NOT NULL|
+|'A' IS NULL| 'A' IS NOT NULL|
 +-----------+---------------+
 |   false   |          true |
 +-----------+---------------+
 ```
 
-Arithmetic divisons with **NULL** should also be taken in notice, if you want to make any arithmetic operation with **NULL** is always equal to **NULL**, for instance: 
+Arithmetic divisions with **NULL** should also be taken into notice, if you want to make any arithmetic operation with **NULL** is always equal to **NULL**, for instance: 
 
 ```java
 SELECT 3 - NULL // = NULL 
@@ -616,11 +616,11 @@ SELECT 3 - NULL // = NULL
 [slide]
 # Sorting the results
 
-When we finish with selecting the information we need, filtering it and before vizualizing it the way we want we should consider for ordering it the right way.
+When we finish with selecting the information we need, filtering it, and before visualizing it the way we want we should consider ordering it the right way.
 
 For this we can use the **ORDER BY** clause, which selects the information and orders it by chosen column or columns, the **ORDER BY** statement should always go last in the query.
 
-In addition you can use the keywords **ASC** and **DESC** to reverse the order in the results,  by default the **ORDER BY** clause uses **ASC** strategy.
+Besides, you can use the keywords **ASC** and **DESC** to reverse the order in the results,  by default the **ORDER BY** clause uses **ASC** strategy.
 
 ```java
 SELECT *                            //Here we choose all the information
@@ -629,7 +629,7 @@ WHERE `age` BETWEEN 14 AND 50         //filtered by where they meet the conditio
 ORDER BY `age` DESC                   // Ordered by their age descending.
 ```
 
-You can chain **ORDER BY** clauses by declaring second column by which you want to order them, separating them with a **,** in betweeen just as in the exampl
+You can chain **ORDER BY** clauses by declaring the second column by which you want to order them, separating them with a **,** in between just as in the example
 
 ```java
 SELECT *                
@@ -643,9 +643,9 @@ ORDER BY `age` DESC, `first_name`
 [slide]
 # Usage of Views
 
-Views are virtual tables which do not store information by itself.
+Views are virtual tables that do not store information by themselves.
 
-It's used in the cases when you have wrote a complex query which take records from a table or many tables and you would like to save for future use or when you want to restrict the access to data for certain users.
+It's used in the cases when you have written a complex query that takes records from a table or many tables and you would like to save for future use or when you want to restrict the access to data for certain users.
 
 In other words **Views** are nothing but **saved SQL queries**.
 
