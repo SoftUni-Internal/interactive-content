@@ -487,3 +487,145 @@ Odd sum = 30, Even sum = 8
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Palindrome Integers
+[code-task title="Palindrome Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function palindrome(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+A palindrome is a number which reads the same **backward** as **forward**, such as 323 or 1001. 
+
+Write a function which receives an **array of positive integer** and checks if each integer is a palindrome or not. 
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['123','323','421','121']`|  false |
+||true|
+||false|
+||true|
+
+| **Input** | **Output** |
+| --- | --- |
+|`['32','2','232','1010']`|  false |
+||true|
+||true|
+||false|
+
+[/task-description]
+[tests]
+[test]
+[input]
+121
+159
+259
+[/input]
+[output]
+true
+false
+false
+[/output]
+[/test]
+[test]
+[input]
+121
+528
+891
+622
+271
+602
+117
+489
+[/input]
+[output]
+true
+false
+false
+false
+false
+false
+false
+false
+[/output]
+[/test]
+[test]
+[input]
+70
+555
+523
+902
+554
+209
+918
+37
+808
+[/input]
+[output]
+false
+true
+false
+false
+false
+false
+false
+false
+true
+[/output]
+[/test]
+[test]
+[input]
+567
+656
+920
+184
+580
+128
+638
+276
+137
+[/input]
+[output]
+false
+true
+false
+false
+false
+false
+false
+false
+false
+[/output]
+[/test]
+[test]
+[input]
+123321
+121
+356653
+157
+1001
+666
+159951
+[/input]
+[output]
+true
+true
+true
+false
+true
+true
+true
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
