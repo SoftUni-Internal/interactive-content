@@ -15,7 +15,7 @@ We have prepared some problems for you to solve.
 [code-task title="Repeat String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function рepeatString(input){
+function repeatString(input){
   // Write your code here
 }
 ```
@@ -95,3 +95,96 @@ StringString
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Smallest of Three Numbers
+[code-task title="Smallest of Three Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function smallestNumbers(input){
+ 
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function which receives three integer numbers to print the **smallest.**
+
+Use appropriate name for the function.
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['2','5', '3']`| 2 |
+|`['600','342', '123']`| 123 |
+|`['25','21', '4']`| 4 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+25
+25
+25
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test]
+[input]
+664213164
+1808459534
+2103069969
+[/input]
+[output]
+664213164
+[/output]
+[/test]
+[test]
+[input]
+800572446
+391984821
+1988075527
+[/input]
+[output]
+391984821
+[/output]
+[/test]
+[test]
+[input]
+958036414
+1303722451
+81436290
+[/input]
+[output]
+81436290
+[/output]
+[/test]
+[test]
+[input]
+1504225756
+2078100171
+1952236125
+[/input]
+[output]
+1504225756
+[/output]
+[/test]
+[test]
+[input]
+1340748496
+2047564071
+892651240
+[/input]
+[output]
+892651240
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
