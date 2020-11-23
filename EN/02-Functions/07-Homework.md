@@ -416,3 +416,74 @@ b c
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Odd and Even Sum
+[code-task title="Odd and Even Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function oddEvenSum(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+You will receive a **single number.**
+
+You have to write a function, that returns the **sum** of **all even** and **all odd** digits from that number. 
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['1000435']`|  Odd sum = 9, Even sum = 4 |
+|`['3495892137259234']`| Odd sum = 54, Even sum = 22 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+527249158
+[/input]
+[output]
+Odd sum = 27, Even sum = 16
+[/output]
+[/test]
+[test]
+[input]
+100000001
+[/input]
+[output]
+Odd sum = 2, Even sum = 0
+[/output]
+[/test]
+[test]
+[input]
+12345
+[/input]
+[output]
+Odd sum = 9, Even sum = 6
+[/output]
+[/test]
+[test]
+[input]
+1117
+[/input]
+[output]
+Odd sum = 10, Even sum = 0
+[/output]
+[/test]
+[test]
+[input]
+570529212230
+[/input]
+[output]
+Odd sum = 30, Even sum = 8
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
