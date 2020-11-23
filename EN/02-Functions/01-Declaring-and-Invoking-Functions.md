@@ -159,9 +159,9 @@ Write a function that receives a grade between `2.00` and `6.00` and prints the 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['3.33']` | Poor |
-|`['4.50']` | Very good |
-|`['2.99']` | Fail |
+|`3.33` | Poor |
+|`4.50` | Very good |
+|`2.99` | Fail |
 
 [/task-description]
 [tests]
@@ -246,9 +246,9 @@ Write a function that receives a grade between `2.00` and `6.00` and prints the 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['3.33']` | Poor |
-|`['4.50']` | Very good |
-|`['2.99']` | Fail |
+|`3.33` | Poor |
+|`4.50` | Very good |
+|`2.99` | Fail |
 
 [/task-description]
 [tests]
@@ -290,6 +290,191 @@ Poor
 [/input]
 [output]
 Fail
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Math Power
+[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function mathPower(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+Write a function that **calculates** and returns the value of a number **raised to a given power:**
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['2', '8']` | 256 |
+|`['3', '4']` | 81 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+7
+2
+[/input]
+[output]
+49
+[/output]
+[/test]
+[test]
+[input]
+123
+3
+[/input]
+[output]
+1860867
+[/output]
+[/test]
+[test]
+[input]
+5.5
+3
+[/input]
+[output]
+166.375
+[/output]
+[/test]
+[test]
+[input]
+21
+10
+[/input]
+[output]
+16679880978201
+[/output]
+[/test]
+[test]
+[input]
+10
+7
+[/input]
+[output]
+10000000
+[/output]
+[/test]
+[test]
+[input]
+12
+3
+[/input]
+[output]
+1728
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+[/input]
+[output]
+8
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Math Power
+[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function mathPower(input){
+  let num = Number(input[0]);
+  let pow = Number(input[1]);
+
+  let result = Math.pow(num,pow);
+  console.log(result);
+}
+}
+```
+[/code-editor]
+[task-description]
+Write a function that **calculates** and returns the value of a number **raised to a given power:**
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['2', '8']` | 256 |
+|`['3', '4']` | 81 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+7
+2
+[/input]
+[output]
+49
+[/output]
+[/test]
+[test]
+[input]
+123
+3
+[/input]
+[output]
+1860867
+[/output]
+[/test]
+[test]
+[input]
+5.5
+3
+[/input]
+[output]
+166.375
+[/output]
+[/test]
+[test]
+[input]
+21
+10
+[/input]
+[output]
+16679880978201
+[/output]
+[/test]
+[test]
+[input]
+10
+7
+[/input]
+[output]
+10000000
+[/output]
+[/test]
+[test]
+[input]
+12
+3
+[/input]
+[output]
+1728
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+[/input]
+[output]
+8
 [/output]
 [/test]
 [/tests]
