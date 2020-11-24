@@ -303,3 +303,198 @@ On the second line print the **last k** elements, separated by space.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Last K Numbers Sequence
+[code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function numbers(arr){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+You are given two integers n and k. Write a function that generates and prints the following sequence:
+
+- The first element is `1`.
+- Every following element equals the sum of the previous `k` elements.
+- The length of the sequence is `n` elements.
+	
+The **input** comes as two number arguments. The first element represents the number `n`, and the second – the number `k`.
+
+The output is printed on the console on a single line, separated by space.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['6', '3']` | 1 1 2 4 7 13 |
+|`['8', '2']` | 1 1 2 3 5 8 13 21 |
+
+
+# Hints
+
+The **2nd element (1)** is the sum of the 3 elements before it, but there is only 1, so we take that. 
+
+The third element, is the s**um of the first 2 (1 and 1)** and the 4th – the sum of 1, 1 and 2. 
+
+The 5th element is the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on.
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+5
+[/input]
+[output]
+1 1 2
+[/output]
+[/test]
+[test]
+[input]
+4
+2
+[/input]
+[output]
+1 1 2 3
+[/output]
+[/test]
+[test]
+[input]
+8
+2
+[/input]
+[output]
+1 1 2 3 5 8 13 21
+[/output]
+[/test]
+[test]
+[input]
+8
+4
+[/input]
+[output]
+1 1 2 4 8 15 29 56
+[/output]
+[/test]
+[test]
+[input]
+10
+3
+[/input]
+[output]
+1 1 2 4 7 13 24 44 81 149
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Last K Numbers Sequence
+[code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function numbers(arr){
+  let n = Number(arr[0]);
+  let k = Number(arr[1]);
+
+  let sequence = [1];
+
+    for (let i = 1; i < n; i++) {
+        let start = Math.max(0, i - k);
+        let lastThreeEl = sequence.slice(start);
+
+        let sum = 0;
+        for (let number of lastThreeEl) {
+            sum += number;
+        }
+        sequence.push(sum);
+    }
+    console.log(sequence.join(' '));
+}
+```
+[/code-editor]
+[task-description]
+You are given two integers n and k. Write a function that generates and prints the following sequence:
+
+- The first element is `1`.
+- Every following element equals the sum of the previous `k` elements.
+- The length of the sequence is `n` elements.
+	
+The **input** comes as two number arguments. The first element represents the number `n`, and the second – the number `k`.
+
+The output is printed on the console on a single line, separated by space.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['6', '3']` | 1 1 2 4 7 13 |
+|`['8', '2']` | 1 1 2 3 5 8 13 21 |
+
+
+# Hints
+
+The **2nd element (1)** is the sum of the 3 elements before it, but there is only 1, so we take that. 
+
+The third element, is the s**um of the first 2 (1 and 1)** and the 4th – the sum of 1, 1 and 2. 
+
+The 5th element is the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on.
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+5
+[/input]
+[output]
+1 1 2
+[/output]
+[/test]
+[test]
+[input]
+4
+2
+[/input]
+[output]
+1 1 2 3
+[/output]
+[/test]
+[test]
+[input]
+8
+2
+[/input]
+[output]
+1 1 2 3 5 8 13 21
+[/output]
+[/test]
+[test]
+[input]
+8
+4
+[/input]
+[output]
+1 1 2 4 8 15 29 56
+[/output]
+[/test]
+[test]
+[input]
+10
+3
+[/input]
+[output]
+1 1 2 4 7 13 24 44 81 149
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
