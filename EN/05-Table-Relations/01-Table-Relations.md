@@ -17,6 +17,9 @@ There are several things you must know before creating your first relation.
     - **Many-to-many** - e.g. student/course
     - **One-to-one** - e.g. driver/driver licence
 
+[/slide]
+
+[slide]
 
 ## One-To-Many
 
@@ -33,7 +36,7 @@ One-to-many relationship is done by adding a unique identifier in a enitity and 
 
 Foreign key is introduced with this code:
 ``` java 
-CONSTRAINT fk_peaks_mountains            //Giving a name of the constraint/foreign key by convention starting with "fk"
+CONSTRAINT `fk_peaks_mountains`            //Giving a name of the constraint/foreign key by convention starting with "fk"
 FOREIGN KEY (mountain_id)               //Setting a column for a foreign key
 REFERENCES mountains(mountain_id);      //referencing the unique identifier in another column.
 ```
@@ -118,4 +121,91 @@ mountain_id
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Mountains and Peaks
+
+[/slide]
+
+[slide]
+
+## Many to many
+
+When we want to reference multiple records in a given table to multiple referenes in another table, than we use **Many-to-Many** relationship.
+
+We manage to do that through the help of a maping table.
+
+[image assetsSrc="Table-Relations(1).png" /]
+
+Each record in this mapping table must contain a reference to the first table and a reference to the second table in order for us to manage to **JOIN** them and take the full information we need.
+
+We will talk more about **JOIN** further in the lesson.
+
+How to create **Many-to-Many** relationship:
+
+```java
+CREATE TABLE employees(              //Create the first table
+  `employee_id` INT PRIMARY KEY,    //Don't forget to set a primary key
+   `employee_name` VARCHAR(50)
+);
+
+CREATE TABLE projects(          //Crate the second table
+  `project_id` INT PRIMARY KEY,   //set unique identifier as well.
+   `project_name` VARCHAR(50)
+);
+
+CREATE TABLE employees_projects(`employee_id` INT, `project_id` INT,    //Create the mapping table
+  CONSTRAINT `pk_employees_projects`                                  //with foreign keys referencing to both tables
+  PRIMARY KEY(`employee_id`, `project_id`),                             //don't forget that you can't add entities to the table
+  CONSTRAINT `fk_employees_projects_employees`                        //which don't already exist as records in their original tables.
+  FOREIGN KEY(`employee_id`)
+  REFERENCES employees(`employee_id`),
+  CONSTRAINT `fk_employees_projects_projects`
+  FOREIGN KEY(`project_id`)
+  REFERENCES projects(`project_id`)
+);
+```
+
+[/slide]
+
+[slide]
+
+## One to One
+
+This is the most uncommon relationship, as we don't have it that often in the real world. 
+
+As the name suggests, **One-to-One** relationship is when one entity references only one other entity.
+
+We can see that in the relationship: Driver-Driving licence.
+
+Peraphrased: **"One driver has one driving licence."**.
+
+It's achieved by two records referencing eachother. 
+
+[image assetsSrc="Table-Relations(2).png" /]
+
+
+The setup for it would be as follows:
+
+```java
+CREATE TABLE drivers(                                            //We create the first table                  
+  `id` INT PRIMARY KEY,
+  `driver_name` VARCHAR(50),
+  `driving_licence_id` INT
+);
+
+CREATE TABLE driving_licence(                                              //We create the second table.
+  `id` INT PRIMARY KEY,
+  `number` VARCHAR(10),
+  `driver_id` INT UNIQUE,
+  CONSTRAINT `fk_driving_licence_drivers` 
+  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id)         //We set the first foreign key constraint.
+);
+
+CONSTRAINT `fk_driver_driving_licence`                                    //Then we set the other constraint.
+FOREIGN KEY (driver_licence_id)
+ REFERENCES driving_licence(id)
+ ```
 [/slide]
