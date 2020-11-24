@@ -162,7 +162,7 @@ The **output** is the return value of your function.
 [/slide]
 
 [slide]
-# Solution: Sum First Last
+# Problem: Sum First Last
 [code-task title="Sum First Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -488,7 +488,6 @@ The **output** is printed on the console, each element on a new line.
 - Use `unshift()` to add an element at the first position
 
 - Use `push()` to add an element at the last position
-
 
 [/task-description]
 [tests]
