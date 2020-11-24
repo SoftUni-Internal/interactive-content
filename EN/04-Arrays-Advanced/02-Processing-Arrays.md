@@ -90,7 +90,7 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 # Hints
 
 - Counting in arrays starts from `0`
-- For example: we receive 1`0, 15, 20, 25`
+- For example: we receive `10, 15, 20, 25`
 - The elements at odd positions are `15 (index 1) and 25 (index 3)`
 - We need to take these two elements and `multiply them * 2`
 - Finally, we print them on the console in **reversed order**
@@ -208,7 +208,7 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 # Hints
 
 - Counting in arrays starts from `0`
-- For example: we receive 1`0, 15, 20, 25`
+- For example: we receive `10, 15, 20, 25`
 - The elements at odd positions are `15 (index 1) and 25 (index 3)`
 - We need to take these two elements and `multiply them * 2`
 - Finally, we print them on the console in **reversed order**
