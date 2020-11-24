@@ -2,7 +2,7 @@
 
 # JOIN Statements
 
-Now as we know the differnet ways to connect tables and the rules and guidance connected to this practice it's time to see the real power of **Relational Databasees**.
+Now as we know the different ways to connect tables and the rules and guidance connected to this practice it's time to see the real power of **Relational Databases**.
 
 The **JOIN** statements are a great tool introduced in SQL, it gives us the chance to **connect** two tables by theirs' **foreign keys** and take all the information we need **simultaneously**, with only one query statement.
 
@@ -16,7 +16,7 @@ FROM `table_a`                                                          //We nam
 JOIN `table_b` ON table_b.common_column = table_a.common_column         //And than we create a "Join condition" using "FOREIGN KEYS".
 ```
 
-We will have a closer look on **JOINS** in the next lesson.
+We will have a closer look at **JOINS** in the next lesson.
 [/slide]
 
 [slide hideTitle]
@@ -60,34 +60,34 @@ Submit your queries using the "**MySQL prepare DB and Run Queries**" strategy.
 [test open]
 [input]
 CREATE TABLE rooms(
-	id INT PRIMARY KEY,
-	occupation VARCHAR(20) not null,
-	beds_count int not null
+    id INT PRIMARY KEY,
+    occupation VARCHAR(20) not null,
+    beds_count int not null
 );
 
 CREATE TABLE vehicles(
-	id int primary key auto_increment not null,
-	driver_id int not null,
-	vehicle_type varchar(30) not null,
-	passengers int not null
+    id int primary key auto_increment not null,
+    driver_id int not null,
+    vehicle_type varchar(30) not null,
+    passengers int not null
 );
 
 CREATE TABLE campers(
-	id INT PRIMARY KEY auto_increment,
-	first_name varchar(20) not null,
-	last_name varchar(20) not null,
-	age int not null,
-	room int,
-	CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id)
+    id INT PRIMARY KEY auto_increment,
+    first_name varchar(20) not null,
+    last_name varchar(20) not null,
+    age int not null,
+    room int,
+    CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id)
 );
 
 CREATE TABLE routes(
-	id INT PRIMARY KEY auto_increment,
-	starting_point varchar(30) not null,
-	end_point varchar(30) not null,
-	leader_id int not null,
-	route_time TIME NOT NULL,	
-	CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
+    id INT PRIMARY KEY auto_increment,
+    starting_point varchar(30) not null,
+    end_point varchar(30) not null,
+    leader_id int not null,
+    route_time TIME NOT NULL,   
+    CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
 );
 
 insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
@@ -163,34 +163,34 @@ Iskren Ivanov
 [test]
 [input]
 CREATE TABLE rooms(
-	id INT PRIMARY KEY,
-	occupation VARCHAR(20) not null,
-	beds_count int not null
+    id INT PRIMARY KEY,
+    occupation VARCHAR(20) not null,
+    beds_count int not null
 );
 
 CREATE TABLE vehicles(
-	id int primary key auto_increment not null,
-	driver_id int not null,
-	vehicle_type varchar(30) not null,
-	passengers int not null
+    id int primary key auto_increment not null,
+    driver_id int not null,
+    vehicle_type varchar(30) not null,
+    passengers int not null
 );
 
 CREATE TABLE campers(
-	id INT PRIMARY KEY auto_increment,
-	first_name varchar(20) not null,
-	last_name varchar(20) not null,
-	age int not null,
-	room int,
-	CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id)
+    id INT PRIMARY KEY auto_increment,
+    first_name varchar(20) not null,
+    last_name varchar(20) not null,
+    age int not null,
+    room int,
+    CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id)
 );
 
 CREATE TABLE routes(
-	id INT PRIMARY KEY auto_increment,
-	starting_point varchar(30) not null,
-	end_point varchar(30) not null,
-	leader_id int not null,
-	route_time TIME NOT NULL,	
-	CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
+    id INT PRIMARY KEY auto_increment,
+    starting_point varchar(30) not null,
+    end_point varchar(30) not null,
+    leader_id int not null,
+    route_time TIME NOT NULL,   
+    CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
 );
 
 insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
@@ -273,7 +273,7 @@ Iskren Ivanov
 
 When we create table relations with **Foreign keys** we get few more benefits out of it, one of those benefits would be **Cascade Operations**.
 
-Cascading is a powerful tool but it should be used with a concious mind, as it may be pretty tricky and even lead us to changes to the data that we haven't intended.
+Cascading is a powerful tool but it should be used with a conscious mind, as it may be pretty tricky and even lead us to changes to the data that we haven't intended.
 
 Cascading allows when a change is made to a certain entity, this change to apply to all related entities.
 
@@ -281,7 +281,7 @@ Cascading allows when a change is made to a certain entity, this change to apply
 
 ## Cascade DELETE & Cascade UPDATE
 
-Cascade can be either **DELETE** OR **UPDATE**, followed with few guidlines you can choose by yourself when you use this strategy.
+Cascade can be either **DELETE** OR **UPDATE**, followed with a few guidelines you can choose by yourself when you use this strategy.
 
 ## CASCADE DELETE
 
@@ -298,23 +298,23 @@ Keep in mind that in more complicated relations where there is **Circular Refere
 **Example:**
 
 ```java
-CREATE TABLE drivers(										//Create the first table
-  driver_id INT PRIMARY KEY,								//Set it's primary key
+CREATE TABLE drivers(                                       //Create the first table
+  driver_id INT PRIMARY KEY,                                //Set its primary key
   driver_name VARCHAR(50)
 );
 
-CREATE TABLE cars(											//Create the second table
-  car_id INT PRIMARY KEY,									
-  driver_id INT,											//set a column for it's foreign key
-  CONSTRAINT fk_car_driver FOREIGN KEY(driver_id)			//create the foreign key constraint
-  REFERENCES drivers(driver_id) ON DELETE CASCADE);			//set the behaviour on deletion.
+CREATE TABLE cars(                                          //Create the second table
+  car_id INT PRIMARY KEY,                                   
+  driver_id INT,                                            //set a column for it's foreign key
+  CONSTRAINT fk_car_driver FOREIGN KEY(driver_id)           //create the foreign key constraint
+  REFERENCES drivers(driver_id) ON DELETE CASCADE);         //set the behaviour on deletion.
 
 ```
 [/slide]
 
 [slide hiteTitle]
-# Problem: 4.	Delete Mountains
-[code-task title="Problem: 4.	Delete Mountains" taskId="7b83c243-38f3-4147-ac70-b80a3d3ce501" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: 4.   Delete Mountains
+[code-task title="Problem: 4.   Delete Mountains" taskId="7b83c243-38f3-4147-ac70-b80a3d3ce501" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -376,7 +376,7 @@ Kutelo
 
 # CASCADE UPDATE
 
-Cascade update behaviour is simillar to cascade delete, therefore with a rule of thumb you will understand when to use it and when not to.
+Cascade update behavior is similar to cascade delete, therefore with a rule of thumb, you will understand when to use it and when not to.
 
 ## Cascade Update
 
@@ -390,16 +390,16 @@ Let's have an
 **Example:**
 
 ```java
-CREATE TABLE drivers(									//Create the first table
+CREATE TABLE drivers(                                   //Create the first table
   driver_id INT PRIMARY KEY,
   driver_name VARCHAR(50)
 );
 
-CREATE TABLE cars(										//Create the second table
+CREATE TABLE cars(                                      //Create the second table
   car_id INT PRIMARY KEY,
-  driver_id INT,										//set a column for it's foreign key
-  CONSTRAINT fk_car_driver FOREIGN KEY(driver_id)		//create a foreign key constraint
-  REFERENCES drivers(driver_id) ON UPDATE CASCADE);		//set on Update behaviour.
+  driver_id INT,                                        //set a column for it's foreign key
+  CONSTRAINT fk_car_driver FOREIGN KEY(driver_id)       //create a foreign key constraint
+  REFERENCES drivers(driver_id) ON UPDATE CASCADE);     //set on Update behaviour.
 ```
 
 You should keep in mind that **Cascading** can be avoided by using triggers or procedures.

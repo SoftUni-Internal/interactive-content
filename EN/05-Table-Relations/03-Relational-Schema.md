@@ -2,15 +2,15 @@
 
 # Relational Schema
 
-After finishing the design of our database and creating the entities, naturally we would want to finally see our creation.
+After finishing the design of our database and creating the entities, naturally, we would want to finally see our creation.
 
 Luckily, this is possible through using the tool **E/R Diagrams**.
 
-This tool is integrated in MYSQL and it creates a **Relational schema** of all the entities in the database. 
+This tool is integrated into MYSQL and it creates a **Relational schema** of all the entities in the database. 
 
-The relational schemas describes the structure of our database.
+The relational schemas describe the structure of our database.
 
-**It vizualizes:**
+**It visualizes:**
 
 - The schemas of all tables
 
@@ -22,7 +22,7 @@ The relational schemas describes the structure of our database.
 
 The schemas are meant to display graphicly the entities and their relations and nothing more than that.
 
-Now let's have a step by step guide how to create the schemas. 
+Now let's have a step-by-step guide on how to create the schemas. 
 
 1. Click on "Database" then select "Reverse Engineer"
 
