@@ -167,8 +167,8 @@ The **output** is the return value of your function.
 [code-editor language=javascript]
 ```
 function sumFirstLast(input){
-  let firstNum = Number(arr.pop());
-  let lastNum = Number(arr.shift());
+  let firstNum = Number(input.pop());
+  let lastNum = Number(input.shift());
 
   let result = firstNum + lastNum;
   console.log(result);
@@ -287,7 +287,7 @@ console.log(myArray);
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function negativePositive(input){
+function negativePositive(arr){
   // Write your code here
 }
 
@@ -445,7 +445,7 @@ The **output** is printed on the console, each element on a new line.
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function negativePositive(input){
+function negativePositive(arr){
   let resultArr = [arr[0]];
 
     for (let i = 1; i < arr.length; i++) {
@@ -604,4 +604,34 @@ The **output** is printed on the console, each element on a new line.
 [code-io /]
 [/code-task]
 
+[/slide]
+
+[slide]
+# Find Values
+
+The `array.includes()` returns true if the given value is part of the array
+
+``` js live
+let myArray = ['Peter','George','Mary'];
+
+let isGeorgeInclude = myArray.includes('George');
+let isJohnInclude =myArray.includes('John');
+
+console.log(isGeorgeInclude);
+console.log(isJohnInclude);
+```
+
+The `array.indexOf()` returns the index where the given value is stored.
+
+Returns `-1` if value is not found.
+
+``` js live
+let myArray = ['Peter','George','Mary'];
+
+let indexOfMary = myArray.indexOf('Mary');
+let indexOfNick = myArray.indexOf('Nick');
+
+console.log(indexOfMary);
+console.log(indexOfNick);
+```
 [/slide]
