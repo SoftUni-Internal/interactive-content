@@ -884,3 +884,92 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Perfect Number 
+[code-task title="Perfect Number " executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function perfectNumber (input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receive a number and return if this number is **perfect** or **NOT**.
+
+A perfect number is a **positive** integer that is equal to the **sum** of its **proper positive divisors**.
+
+That is the sum of its positive divisors excluding the number itself (also known as its **aliquot sum**).
+ 
+
+# Example
+| Input   | Output | Comments   |
+| :---:       |    :----:   |   :---:     |
+|`['6']`|We have a perfect number!| `1 + 2 + 3`|
+|`['28']`| We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
+|`['1236498']`|It's not so perfect.||
+
+## Hint
+
+Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors`(including itself) => 6` is a perfect number, because it is the sum of `1 + 2 + 3` (all of which are divided without residue)
+
+- Read about the [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
+
+[/task-description]
+[tests]
+[test]
+[input]
+7
+[/input]
+[output]
+It's not so perfect.
+[/output]
+[/test]
+[test]
+[input]
+496
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test]
+[input]
+29
+[/input]
+[output]
+It's not so perfect.
+[/output]
+[/test]
+[test]
+[input]
+8128
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test]
+[input]
+133
+[/input]
+[output]
+It's not so perfect.
+[/output]
+[/test]
+[test]
+[input]
+33550336
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
