@@ -42,7 +42,7 @@ Duration of an episode – 55
 Total time needed to watch the Lucifer series is 3594 minutes.
 
 ## Comments 
-Duration of advertisements per episode: 20\% from 55 = 11.0
+Duration of advertisements per episode: `20% from 55 = 11.0`
 
 Duration of an episode with the advertisements: `55 + 11 = 66.0`
 

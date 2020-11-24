@@ -21,7 +21,7 @@ The output should consist of one line:
 
 - If there is enough time to watch an episode: 
 
-`You have enough time to watch {name of the series} and left with {time left} minutes free time.`
+`You have enough time to watch {name of the series} and would be left with {time left} minutes of free time.`
 
 - If there is not enough time: 
 
@@ -45,8 +45,7 @@ Duration of an episode - 60
 Duration of the break - 96
 
 ## Output
-You have enough time to watch Game of Thrones and left with 0 minutes free time.
-
+You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.
 ## Comments
 Time for lunch: `96 * 1/8 = 12.0`
 
@@ -77,7 +76,7 @@ Gotham
 120
 [/input]
 [output]
-You have enough time to watch Gotham and left with 30 minutes free time.
+You have enough time to watch Gotham and would be left with 30 minutes of free time.
 [/output]
 [/test]
 [test]
@@ -117,7 +116,7 @@ Riverdale
 80
 [/input]
 [output]
-You have enough time to watch Riverdale and left with 5 minutes free time.
+You have enough time to watch Riverdale and would be left with 5 minutes of free time.
 [/output]
 [/test]
 [test]
@@ -127,7 +126,7 @@ Game of thrones
 90
 [/input]
 [output]
-You have enough time to watch Game of thrones and left with 1 minutes free time.
+You have enough time to watch Game of thrones and would be left with 1 minutes of free time.
 [/output]
 [/test]
 [test]
@@ -137,7 +136,7 @@ Lucifer
 80
 [/input]
 [output]
-You have enough time to watch Lucifer and left with 5 minutes free time.
+You have enough time to watch Lucifer and would be left with 5 minutes of free time.
 [/output]
 [/test]
 [/tests]
