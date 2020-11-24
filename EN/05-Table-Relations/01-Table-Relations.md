@@ -190,21 +190,21 @@ It's achieved by two records referencing eachother.
 The setup for it would be as follows:
 
 ```java
-CREATE TABLE drivers(                                            //We create the first table                  
+CREATE TABLE drivers(                                             //We create the first table                  
   `id` INT PRIMARY KEY,
   `driver_name` VARCHAR(50),
   `driving_licence_id` INT
 );
 
-CREATE TABLE driving_licence(                                              //We create the second table.
+CREATE TABLE driving_licence(                                     //We create the second table.
   `id` INT PRIMARY KEY,
   `number` VARCHAR(10),
   `driver_id` INT UNIQUE,
   CONSTRAINT `fk_driving_licence_drivers` 
-  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id)         //We set the first foreign key constraint.
+  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id)           //We set the first foreign key constraint.
 );
 
-CONSTRAINT `fk_driver_driving_licence`                                    //Then we set the other constraint.
+CONSTRAINT `fk_driver_driving_licence`                            //Then we set the other constraint.
 FOREIGN KEY (driver_licence_id)
  REFERENCES driving_licence(id)
  ```
