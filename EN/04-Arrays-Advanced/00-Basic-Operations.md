@@ -167,8 +167,11 @@ The **output** is the return value of your function.
 [code-editor language=javascript]
 ```
 function sumFirstLast(input){
-  let sum = Number(input[0]) + Number(input[input.length - 1]);
-  console.log(sum);
+  let firstNum = Number(arr.pop());
+  let lastNum = Number(arr.shift());
+
+  let result = firstNum + lastNum;
+  console.log(result);
 }
 ```
 [/code-editor]
