@@ -167,10 +167,8 @@ The **output** is the return value of your function.
 [code-editor language=javascript]
 ```
 function sumFirstLast(input){
-  function solve(arr) {
-    let sum = Number(arr[0]) + Number(arr[arr.length - 1]);
-    console.log(sum);
-}
+  let sum = Number(input[0]) + Number(input[input.length - 1]);
+  console.log(sum);
 }
 ```
 [/code-editor]
@@ -240,6 +238,364 @@ The **output** is the return value of your function.
 [/input]
 [output]
 15
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Pushing, Shifting and Unshifting
+
+The `array.push()` method adds one or more elements to the end of an array and returns the new length:
+
+``` js live
+let fruits = ['apple','banana','kiwi'];
+
+fruits.push('pineapple', 'orange');
+
+console.log(fruits);
+```
+
+The `array.shift()` removes the first element of an array:
+
+``` js live
+let myArray = ["one","two","three","four","five"];
+
+myArray.shift();
+
+console.log(myArray);
+```
+
+The `array.unshift()` adds elements to the beginning:
+
+``` js live
+let myArray = ["red","green","blue"];
+myArray.unshift("purple");
+
+console.log(myArray);
+```
+[/slide]
+
+[slide]
+# Problem: Negative or Positive Numbers
+[code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function negativePositive(input){
+  // Write your code here
+}
+
+```
+[/code-editor]
+[task-description]
+
+Write a function that processes the elements in an **array** one by one and produces a new array.
+
+Prepend each negative element at the front of the result and **append** each **positive** (or 0) element at the end of the result.
+
+The **input** comes as array of number elements.
+
+The **output** is printed on the console, each element on a new line.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['7', '-2', '8', '9']` | \-2 |
+| | 7 |
+| | 8 |
+| | 9 |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['3', '-2', '0', '-1']`  | \-1 |
+| | \-2 |
+| | 3 |
+| | 0 |
+
+## Hints
+
+- Use `unshift()` to add an element at the first position
+
+- Use `push()` to add an element at the last position
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+\-2
+8
+7
+99
+100
+11
+[/input]
+[output]
+\-2
+8
+7
+99
+100
+11
+[/output]
+[/test]
+[test]
+[input]
+\-2
+\-11
+7
+8
+100
+\-11
+\-11
+11
+\-2
+[/input]
+[output]
+\-2
+\-11
+\-11
+\-11
+\-2
+7
+8
+100
+11
+[/output]
+[/test]
+[test]
+[input]
+\-2
+\-11
+7
+8
+0
+\-13
+0
+\-25
+0
+[/input]
+[output]
+\-25
+\-13
+\-11
+\-2
+7
+8
+0
+0
+0
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+4
+5
+6
+\-7
+\-8
+[/input]
+[output]
+\-8
+\-7
+2
+3
+4
+5
+6
+[/output]
+[/test]
+[test]
+[input]
+\-2
+3
+0
+5
+\-6
+0
+8
+[/input]
+[output]
+\-6
+\-2
+3
+0
+5
+0
+8
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Negative or Positive Numbers
+[code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function negativePositive(input){
+  let resultArr = [arr[0]];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            resultArr.unshift(arr[i]);
+        } else {
+            resultArr.push(arr[i]);
+        }
+    }
+    console.log(resultArr.join('\r\n'));
+}
+
+```
+[/code-editor]
+[task-description]
+
+Write a function that processes the elements in an **array** one by one and produces a new array.
+
+Prepend each negative element at the front of the result and **append** each **positive** (or 0) element at the end of the result.
+
+The **input** comes as array of number elements.
+
+The **output** is printed on the console, each element on a new line.
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`['7', '-2', '8', '9']` | \-2 |
+| | 7 |
+| | 8 |
+| | 9 |
+
+| **Input** | **Output** |
+| --- | --- |
+|`['3', '-2', '0', '-1']`  | \-1 |
+| | \-2 |
+| | 3 |
+| | 0 |
+
+## Hints
+
+- Use `unshift()` to add an element at the first position
+
+- Use `push()` to add an element at the last position
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+\-2
+8
+7
+99
+100
+11
+[/input]
+[output]
+\-2
+8
+7
+99
+100
+11
+[/output]
+[/test]
+[test]
+[input]
+\-2
+\-11
+7
+8
+100
+\-11
+\-11
+11
+\-2
+[/input]
+[output]
+\-2
+\-11
+\-11
+\-11
+\-2
+7
+8
+100
+11
+[/output]
+[/test]
+[test]
+[input]
+\-2
+\-11
+7
+8
+0
+\-13
+0
+\-25
+0
+[/input]
+[output]
+\-25
+\-13
+\-11
+\-2
+7
+8
+0
+0
+0
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+4
+5
+6
+\-7
+\-8
+[/input]
+[output]
+\-8
+\-7
+2
+3
+4
+5
+6
+[/output]
+[/test]
+[test]
+[input]
+\-2
+3
+0
+5
+\-6
+0
+8
+[/input]
+[output]
+\-6
+\-2
+3
+0
+5
+0
+8
 [/output]
 [/test]
 [/tests]
