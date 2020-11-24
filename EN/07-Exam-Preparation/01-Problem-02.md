@@ -1,5 +1,5 @@
 [slide]
-# Time for Lunch
+# Problem 2: Time for Lunch
 ## Description
 During your lunch break you want to watch an episode of your favorite TV series.
 

@@ -1,5 +1,5 @@
 [slide]
-# Cinema Income
+# Problem 4: Cinema Income
 
 ## Description
 

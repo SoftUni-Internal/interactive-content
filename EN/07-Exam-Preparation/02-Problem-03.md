@@ -1,5 +1,5 @@
 [slide]
-# Cinema
+# Problem 3: Cinema
 ## Description
 For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 

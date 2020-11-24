@@ -1,5 +1,5 @@
 [slide]
-# TV Series Budget
+# Problem 5: TV Series Budget
 ## Description
 You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
 Some of the series have a discount:
@@ -20,7 +20,7 @@ For each series you receive two lines:
 
 ## Output
 Print one line on the console:
-- If your budget is greater than or equal to the price of the series: `You bought all the series and left with {money left}$`
+- If your budget is greater than or equal to the price of the series: `You bought all the series and have {money left}$ left.`
 - If your budget is less than the price of the series: `You need {money needed}$ more to buy the series!`
 
 The result must be formatted to two digits after the decimal point.
@@ -51,8 +51,7 @@ Third title - Gotham
 Price for the third one - 2
 
 ## Output
-You bought all the series and left with 0.50$
-
+You bought all the series and have 0.50$ left.
 ## Comments
 You receive budget – 10$ and count of series - 3.
 
@@ -78,7 +77,7 @@ Lucifer
 5
 [/input]
 [output]
-You bought all the series and left with 19.00$
+You bought all the series and have 19.00$ left.
 [/output]
 [/test]
 [test]
@@ -93,7 +92,7 @@ Area
 5
 [/input]
 [output]
-You bought all the series and left with 0.10$
+You bought all the series and have 0.10$ left.
 [/output]
 [/test]
 [test]
@@ -106,7 +105,7 @@ Gotham
 10
 [/input]
 [output]
-You bought all the series and left with 0.00$
+You bought all the series and have 0.00$ left.
 [/output]
 [/test]
 [test]
@@ -123,7 +122,7 @@ Unkown
 4
 [/input]
 [output]
-You bought all the series and left with 1.10$
+You bought all the series and have 1.10$ left.
 [/output]
 [/test]
 [test]
@@ -183,7 +182,7 @@ Scooby-Doo
 2.50
 [/input]
 [output]
-You bought all the series and left with 0.00$
+You bought all the series and have 0.00$ left.
 [/output]
 [/test]
 [test]
@@ -215,7 +214,7 @@ Breaking bad
 15
 [/input]
 [output]
-You bought all the series and left with 51.50$
+You bought all the series and have 51.50$ left.
 [/output]
 [/test]
 [/tests]

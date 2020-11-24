@@ -1,5 +1,5 @@
 [slide]
-# Calculator for TV series
+# Problem 1: Calculator for TV series
 ## Description
 Write a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
 
