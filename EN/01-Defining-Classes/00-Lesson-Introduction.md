@@ -2,7 +2,7 @@
 
 # Lesson Introduction
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="37 "]
+[vimeo-video]
 [stream language="EN" videoId="483436578" default /]
 [stream language="RO" videoId="483436578"  /]
 [/video-vimeo]
@@ -13,7 +13,7 @@
 
 # Table of Content
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="50 "]
+[vimeo-video]
 [stream language="EN" videoId="483436583" default /]
 [stream language="RO" videoId="483436583"  /]
 [/video-vimeo]
