@@ -283,6 +283,7 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 [/tests]
 [code-io /]
 [/code-task]
+[/slide]
 
 [slide]
 # Sorting Arrays
