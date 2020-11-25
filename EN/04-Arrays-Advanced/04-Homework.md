@@ -531,12 +531,14 @@ T
 
 [/slide]
 
+
+
 [slide]
 # Problem: Sorting
 [code-task title="Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sorting(input){
+function sorting(arr){
   // Write your code here
 }
 ```
@@ -550,8 +552,8 @@ Print the elements on one row, **separated by single space.**
 
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
+| **Input**   | **Output** | 
+| :---:       |    :----:   |   
 |`[1, 21, 3, 52, 69, 63, 31, 2, 18, 94]`| 94 1 69 2 63 3 52 18 31 21|
 
 [/task-description]
@@ -613,31 +615,29 @@ Print the elements on one row, **separated by single space.**
 [/test]
 [test]
 [input]
-2
-9
-3
-13
+11
+91
 18
 [/input]
 [output]
-18 2 13 3 9
+91 11 18 
 [/output]
 [/test]
 [test]
 [input]
-1
-21
-3
-52
-69
+22
+9
 63
-31
+3
 2
+19
+54
+11
+21
 18
-94
 [/input]
 [output]
-94 1 69 2 63 3 52 18 31 21
+63 2 54 3 22 9 21 11 19 18
 [/output]
 [/test]
 [/tests]
