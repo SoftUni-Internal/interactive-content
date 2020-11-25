@@ -352,3 +352,221 @@ words.sort((a, b) => a.localeCompare(b));
 console.log(words);
 ```
 [/slide]
+
+[slide]
+# Problem: Smallest two Numbers
+[code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function smallestTwoNumbers(arr){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
+Write a function that prints the two smallest elements from an array of numbers.
+
+The input comes as array of number elements.
+
+The output is printed on the console on a single line, separated by space.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`[30, 15, 50, 5]` | 50 30 |
+|`[3, 0, 10, 4, 7, 3]` | 0 3 |
+
+# Hints
+
+# Hints
+- You can use the following function to sort the numbers in the array:
+
+ ```js
+let sortedInAscending = arr.sort((a, b) =>{
+  return a - b
+});
+ ```
+
+- Afterwards the first two elements in the array are the smallest
+- You can use `slice()` to take the first two numbers
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+\-5
+3
+2
+1
+[/input]
+[output]
+\-5 1
+[/output]
+[/test]
+[test]
+[input]
+\-53
+31
+\-42
+21
+13
+2
+31
+[/input]
+[output]
+\-53 \-42
+[/output]
+[/test]
+[test]
+[input]
+31
+42
+\-25
+3
+2
+1
+[/input]
+[output]
+\-25 1
+[/output]
+[/test]
+[test]
+[input]
+-5
+13
+2
+1
+[/input]
+[output]
+\-5 1
+[/output]
+[/test]
+[test]
+[input]
+-5
+11
+[/input]
+[output]
+\-5 11
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+
+[slide]
+# Solution: Smallest two Numbers
+[code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function smallestTwoNumbers(arr){
+    let smallestTwoNumbers = [];
+    arr.sort((a, b) => a - b);
+
+    for (let i = 0; i < 2; i++) {
+        smallestTwoNumbers[i] = arr[i];
+    }
+
+    console.log(smallestTwoNumbers.join(" "));
+}
+```
+[/code-editor]
+[task-description]
+
+Write a function that prints the two smallest elements from an array of numbers.
+
+The input comes as array of number elements.
+
+The output is printed on the console on a single line, separated by space.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|`[30, 15, 50, 5]` | 50 30 |
+|`[3, 0, 10, 4, 7, 3]` | 0 3 |
+
+# Hints
+
+# Hints
+- You can use the following function to sort the numbers in the array:
+
+ ```js
+let sortedInAscending = arr.sort((a, b) =>{
+  return a - b
+});
+ ```
+
+- Afterwards the first two elements in the array are the smallest
+- You can use `slice()` to take the first two numbers
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+\-5
+3
+2
+1
+[/input]
+[output]
+\-5 1
+[/output]
+[/test]
+[test]
+[input]
+\-53
+31
+\-42
+21
+13
+2
+31
+[/input]
+[output]
+\-53 \-42
+[/output]
+[/test]
+[test]
+[input]
+31
+42
+\-25
+3
+2
+1
+[/input]
+[output]
+\-25 1
+[/output]
+[/test]
+[test]
+[input]
+-5
+13
+2
+1
+[/input]
+[output]
+\-5 1
+[/output]
+[/test]
+[test]
+[input]
+-5
+11
+[/input]
+[output]
+\-5 11
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
