@@ -47,7 +47,7 @@
 ## Homework Assignments & Exercises
 
 - Your homework is mainly work in class!
-  - Lessons  slides + videos + live demos + exercises
+  - Lessons slides + videos + live demos + exercises
   - Homework  only exercises
 - How to submit your homework?
   - You can submit your homework in the **platform**
