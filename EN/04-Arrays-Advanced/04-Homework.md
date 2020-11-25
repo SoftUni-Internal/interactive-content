@@ -181,58 +181,61 @@ Add 5
 [/test]
 [test]
 [input]
-C
-Z
-A
-K
+10 52 0 10 2 4 23 15 43
+110
+Add 100
+Add 10
+10
+Add 45
+8
+6
 [/input]
 [output]
-1\.A
-2\.C
-3\.K
-4\.Z
+34 52 0 10 2 4 23 15 43 100 10 45
 [/output]
 [/test]
 [test]
 [input]
-Pgf
-Zh
-fA
-K
-Z
-Aa
+52 0 15 43
+80
+Add 10
+Add 50
+10
+Add 45
 [/input]
 [output]
-1\.Aa
-2\.K
-3\.Pgf
-4\.Z
-5\.Zh
-6\.fA
+62 0 15 43 10 50 45
 [/output]
 [/test]
 [test]
 [input]
-Ca
-erfZ
-fdAg
-fgK
+10 5 10 10 2 4 3 15 3
+15
+Add 10
+Add 1
+10
+Add 5
+5
+9
 [/input]
 [output]
-1\.Ca
-2\.erfZ
-3\.fdAg
-4\.fgK
+15 15 10 10 11 4 3 15 3 10 1 5
 [/output]
 [/test]
 [test]
 [input]
-fC
-fdZ
+0
+10
+Add 10
+10
+0
+0
+Add 10
+Add 5
+Add 5
 [/input]
 [output]
-1\.fC
-2\.fdZ
+10 10 10 5 5
 [/output]
 [/test]
 [test]
