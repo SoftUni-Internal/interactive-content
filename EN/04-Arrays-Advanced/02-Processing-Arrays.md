@@ -284,4 +284,70 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 [code-io /]
 [/code-task]
 
+[slide]
+# Sorting Arrays
+
+The `sort()` method sorts the items of an array.
+
+Depending on the provided compare function, sorting can be **alphabetic** or **numeric**, and either **ascending (up)** or **descending (down).**
+
+By default, the `sort()` method sorts the values as **strings in alphabetical and ascending order.**
+
+If you want to sort numbers or other values, you need to provide the correct compare function.
+
+We have an array of names, calling sort directly on that array without passing in a compare function will, in this case, work correctly and sort the names in ascending alphabetic order
+
+``` js live
+let names = ['Peter','George','Mary'];
+names.sort(); 
+
+console.log(names); 
+```
+
+When the array contains numbers and not strings, the result is unexpected 
+
+The `sort()` method, without a passed in compare function will treat the array as an array of strings and not numbers. 
+
+So it will sort them as string values. 
+
+``` js live
+let numbers = [20, 40, 10, 30, 100, 5];
+
+numbers.sort();
+console.log(numbers);
+```
+
+[/slide]
+
+[slide]
+# Compare Functions
+
+The `sort()` method, fortunately, can sort **negative**, **zero**, and **positive** values in the correct order.
+
+When the `sort()` method compares two values, it sends the values to our compare function and sorts the values according to the returned value.
+
+- If the result is negative, `a` is sorted before `b`.
+- If the result is positive, `b` is sorted before `a`.
+- If the result is 0, nothing changes.
+
+``` js live
+let nums = [20, 40, 10, 30, 100, 5];
+nums.sort((a, b) => a-b);
+
+console.log(nums.join('|'));
+```
+
+# Sorting String Arrays
+The `localeCompare()` method is used to compare any two characters without regard for the case used.
+
+It's a string method so it can't be used directly on an array.
+
+Pass `localeCompare()` as the comparison function:
+
+``` js live
+let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
+words.sort((a, b) => a.localeCompare(b));
+
+console.log(words);
+```
 [/slide]
