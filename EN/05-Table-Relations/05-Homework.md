@@ -1210,7 +1210,7 @@ Submit your queries by using "**MySQL run queries & check DB" strategy**".
 
 ## Examples
 
-
+[/slide]
 [/task-description]
 [code-io /]
 [tests]
@@ -1733,7 +1733,7 @@ Submit your queries by using "**MySQL run queries & check DB**" strategy.
 
 ## Examples
 
-
+[/slide]
 [/task-description]
 [code-io /]
 [tests]
