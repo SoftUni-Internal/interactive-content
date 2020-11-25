@@ -786,3 +786,134 @@ Default
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Array Manipulations
+[code-task title="Array Manipulations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function arrayManipulations(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that manipulates an array of numbers. 
+
+- `Add {number}`: add a number to the end of the array
+
+- `Remove {number}`: remove number from the array
+
+-	`RemoveAt {index}`: removes number at a given index
+
+- `Insert {number} {index}`: inserts a number at a given index
+
+**Note: All the indices will be valid!**
+
+Print the final state of the array (separated by single space).
+
+The input comes as array of strings.
+
+First element will be a string containing the **array to manipulate.**
+
+Every other **command** you receive will also be a string.
+
+The output is the manipulated array printed on the console on a single line, separated by space.
+
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['4 19 2 53 6 43','Add 3','Remove 2','RemoveAt 1','Insert 8 3']`|4 53 6 8 43 3|
+
+[/task-description]
+[tests]
+[test]
+[input]
+14 19 52 33 16 3 15 78 19 20 30
+Add 7
+Remove 12
+RemoveAt 0
+Insert 5 1
+RemoveAt 5
+RemoveAt 7
+RemoveAt 8
+Insert 10 1
+[/input]
+[output]
+19 10 5 52 33 16 15 78 20 7
+[/output]
+[/test]
+[test]
+[input]
+14 33 16 3 15 78 30
+Add 9
+Remove 12
+RemoveAt 6
+RemoveAt 1
+RemoveAt 8
+Insert 10 1
+[/input]
+[output]
+14 10 16 3 15 78 9
+[/output]
+[/test]
+[test]
+[input]
+14 1 9 3 15 8
+Remove 1
+RemoveAt 0
+Add 12
+RemoveAt 1
+Insert 10 1
+[/input]
+[output]
+9 10 15 8 12
+[/output]
+[/test]
+[test]
+[input]
+14 1 9 3 15 12 19 30 5 8
+Add 12
+RemoveAt 2
+Add 11
+RemoveAt 3
+Add 12
+RemoveAt 1
+Insert 10 1
+[/input]
+[output]
+14 10 3 12 19 30 5 8 12 11 12
+[/output]
+[/test]
+[test]
+[input]
+4 1 9 3 25 12 9 3 55 12 19 30 65 18
+Add 12
+RemoveAt 2
+RemoveAt 1
+Insert 10 1
+[/input]
+[output]
+4 10 3 25 12 9 3 55 12 19 30 65 18 12
+[/output]
+[/test]
+[test]
+[input]
+4 19 2 53 6 43
+Add 3
+Remove 2
+RemoveAt 1
+Insert 8 3
+[/input]
+[output]
+4 53 6 8 43 3
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
