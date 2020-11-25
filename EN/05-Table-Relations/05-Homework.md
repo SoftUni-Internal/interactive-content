@@ -50,7 +50,6 @@ Create two tables as follows. Use appropriate data types.
 | 103 | ZE657QP2 |
 |  |  |
 
-[/slide]
 [/task-description]
 [code-io /]
 [tests]
@@ -344,7 +343,6 @@ Submit your queries by using "**MySQL run queries & check DB**" strategy.
 | 106 | Nova | 3 |
 |  |  |  |
 
-[/slide]
 [/task-description]
 [code-io /]
 [tests]
@@ -652,7 +650,6 @@ Submit your queries by using "**MySQL run queries & check DB**" strategy.
 | 2 | 102 |
 | 2 | 103 |
 |  |  |
-[/slide]
 
 [/task-description]
 [code-io /]
@@ -1015,8 +1012,6 @@ Submit your queries by using "**MySQL run queries & check DB" strategy**.
 | 106 | Greta | 101 |
 |  |  |  |
 
-[/slide]
-
 [/task-description]
 [code-io /]
 [tests]
@@ -1208,9 +1203,6 @@ Submit your queries by using "**MySQL run queries & check DB" strategy**".
 [image assetsSrc="Table-Relations-Homework.png" /]
 
 
-## Examples
-
-[/slide]
 [/task-description]
 [code-io /]
 [tests]
@@ -1731,9 +1723,6 @@ Submit your queries by using "**MySQL run queries & check DB**" strategy.
 [image assetsSrc="Table-Relations-Homework(1).png" /]
 
 
-## Examples
-
-[/slide]
 [/task-description]
 [code-io /]
 [tests]
@@ -2214,7 +2203,6 @@ Submit your queries by using "**MySQL prepare DB & run queries**" strategy.
 | … | … | … |
 |  |  |  |
 
-[/slide]
 [/task-description]
 [code-io /]
 [tests]

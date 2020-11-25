@@ -52,8 +52,6 @@ Submit your queries using the "**MySQL prepare DB and Run Queries**" strategy.
 | … | … | … |
 |  |  |  |
 
-[/slide] 
-
 [/task-description]
 [code-io /]
 [tests]
@@ -343,7 +341,6 @@ holding information about **peaks (id, name)** and other - about **mountains (id
 
 so that when a **mountain gets removed from the database, all of his peaks are deleted too**.
 
-[/slide]
 [/task-description]
 [code-io /]
 [tests]
