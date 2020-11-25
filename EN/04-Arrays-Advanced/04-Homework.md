@@ -645,3 +645,144 @@ Print the elements on one row, **separated by single space.**
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Sort an Array by 2 Criteria
+[code-task title="Sort an Array by 2 Criteria" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function sort(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that orders an **array of strings**, by their **length** in **ascending order** as primary criteria, and by **alphabetical value in ascending order as second criteria.** 
+
+The comparison should be **case-insensitive.**
+
+The input comes as **array of strings.**
+
+The output is the ordered array of strings.
+
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`["alpha", "beta", "gamma"]`|beta|
+||alpha|
+||gamma|
+
+
+| **Input** | **Output** |
+| --- | --- |
+|`["Isacc", "Theodor", "Jack", "Harrison", "George"]`|Jack|
+||Isacc|
+||George|
+ ||Theodor|
+||Harrison|
+
+## Hints
+
+- An array can be **sorted** by passing a comparing function to the `Array.sort()` function
+
+- Creating a comparing function by 2 criteria can be achieved by first comparing by the **main criteria**, if the 2 items are different \(the result of the compare is not 0\) - return the result as the result of the comparing function.
+
+If the two items are the same by the main criteria \(the result of the compare is 0\), we need to compare by the **second criteria** and the result of that comparison is the result of the comparing function
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+sa
+fs
+fdsf
+[/input]
+[output]
+fs
+sa
+fdsf
+[/output]
+[/test]
+[test]
+[input]
+agg
+add
+gga
+dfsj
+[/input]
+[output]
+add
+agg
+gga
+dfsj
+[/output]
+[/test]
+[test]
+[input]
+gss
+rwq
+ngf
+aaa
+vf
+[/input]
+[output]
+vf
+aaa
+gss
+ngf
+rwq
+[/output]
+[/test]
+[test]
+[input]
+vds
+jkl
+weq
+mdsc
+nc
+[/input]
+[output]
+nc
+jkl
+vds
+weq
+mdsc
+[/output]
+[/test]
+[test]
+[input]
+fee
+cz
+fe
+kcld
+[/input]
+[output]
+cz
+fe
+fee
+kcld
+[/output]
+[/test]
+[test]
+[input]
+test
+Deny
+omen
+Default
+[/input]
+[output]
+Deny
+omen
+test
+Default
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
