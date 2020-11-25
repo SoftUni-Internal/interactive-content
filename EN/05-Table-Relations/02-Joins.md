@@ -269,6 +269,13 @@ Iskren Ivanov
 
 [slide]
 
+# Solution: Trip Organization
+
+[/slide]
+
+
+[slide]
+
 # Cascade Operations
 
 When we create table relations with **Foreign keys** we get few more benefits out of it, one of those benefits would be **Cascade Operations**.
@@ -313,8 +320,8 @@ CREATE TABLE cars(                                          //Create the second 
 [/slide]
 
 [slide hiteTitle]
-# Problem: 4.   Delete Mountains
-[code-task title="Problem: 4.   Delete Mountains" taskId="7b83c243-38f3-4147-ac70-b80a3d3ce501" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Delete Mountains
+[code-task title="Problem: Delete Mountains" taskId="7b83c243-38f3-4147-ac70-b80a3d3ce501" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -374,6 +381,13 @@ Kutelo
 
 [slide]
 
+# Solution: Delete Mountains
+
+[/slide]
+
+
+[slide]
+
 # CASCADE UPDATE
 
 Cascade update behavior is similar to cascade delete, therefore with a rule of thumb, you will understand when to use it and when not to.
@@ -403,3 +417,5 @@ CREATE TABLE cars(                                      //Create the second tabl
 ```
 
 You should keep in mind that **Cascading** can be avoided by using triggers or procedures.
+
+[/slide]

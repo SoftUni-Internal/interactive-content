@@ -651,7 +651,8 @@ Submit your queries by using "**MySQL run queries & check DB**" strategy.
 | 3 | 103 |
 | 2 | 102 |
 | 2 | 103 |
-|  | [/slide] |
+|  |  |
+[/slide]
 
 [/task-description]
 [code-io /]
