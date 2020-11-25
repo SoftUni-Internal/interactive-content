@@ -620,7 +620,7 @@ Print the elements on one row, **separated by single space.**
 18
 [/input]
 [output]
-18 2 13 3 9 
+18 2 13 3 9
 [/output]
 [/test]
 [test]
