@@ -530,3 +530,118 @@ T
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Sorting
+[code-task title="Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function sorting(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that sorts an **array of numbers** so that the first element is the **biggest** one, the second is the smallest one, the third is the **second biggest** one, the fourth is the second smallest one and so on. 
+
+Print the elements on one row, **separated by single space.**
+
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`[1, 21, 3, 52, 69, 63, 31, 2, 18, 94]`| 94 1 69 2 63 3 52 18 31 21|
+
+[/task-description]
+[tests]
+[test]
+[input]
+22
+9
+63
+3
+2
+19
+54
+11
+21
+18
+[/input]
+[output]
+63 2 54 3 22 9 21 11 19 18
+[/output]
+[/test]
+[test]
+[input]
+11
+91
+18
+[/input]
+[output]
+91 11 18 
+[/output]
+[/test]
+[test]
+[input]
+21
+18
+4
+15
+21
+98
+[/input]
+[output]
+98 4 21 15 21 18
+[/output]
+[/test]
+[test]
+[input]
+12
+9
+63
+23
+14
+11
+21
+38
+[/input]
+[output]
+63 9 38 11 23 12 21 14
+[/output]
+[/test]
+[test]
+[input]
+2
+9
+3
+13
+18
+[/input]
+[output]
+18 2 13 3 9 
+[/output]
+[/test]
+[test]
+[input]
+1
+21
+3
+52
+69
+63
+31
+2
+18
+94
+[/input]
+[output]
+94 1 69 2 63 3 52 18 31 21
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
