@@ -240,16 +240,148 @@ Add 5
 [/test]
 [test]
 [input]
-Potatoes
-Tomatoes
-Onions
-Apples
+0 0 0 10 2 4
+10
+Add 10
+10
+10
+10
+8
+6
 [/input]
 [output]
-1\.Apples
-2\.Onions
-3\.Potatoes
-4\.Tomatoes
+10 10 10 10 10 10 10
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Distinct Array
+[code-task title="Distinct Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function distinctArray(arr){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+You will be given an array of integer numbers on the first line of the input (space-separated).
+
+Remove all repeating elements from the array. 
+
+Print the result elements separated by single space.
+
+# Example
+| Input   | Output | Comments   |
+| :---:       |    :----:   |   :---:     |
+|`[1, 2, 3, 4]`| 1 2 3 4|No repeating elements |
+|`[7, 8, 9, 7, 2, 3, 4, 1, 2]`| 7 8 9 2 3 4 1| `7` and `2` are already present in the array \-\> remove them|
+|`[20, 8, 12, 13, 4, 4, 8, 5]`| 20 8 12 13 4 5|`4` and `8` are already present in the array \-\> remove them |
+
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+11
+20
+51
+1 
+1
+51
+13
+9
+[/input]
+[output]
+11 20 51 1 13 9
+[/output]
+[/test]
+[test]
+[input]
+7
+1
+2
+3
+54
+7
+2
+2
+1
+[/input]
+[output]
+7 1 2 3 54
+[/output]
+[/test]
+[test]
+[input]
+9
+10
+7
+2
+2
+120
+51
+1
+[/input]
+[output]
+9 10 7 2 120 51 1
+[/output]
+[/test]
+[test]
+[input]
+20
+4
+4
+8
+5
+12
+2
+35
+5
+4
+[/input]
+[output]
+20 4 8 5 12 2 35
+[/output]
+[/test]
+[test]
+[input]
+0
+8
+5
+12
+0
+15
+5
+4
+8
+4
+[/input]
+[output]
+0 8 5 12 15 4
+[/output]
+[/test]
+[test]
+[input]
+20
+8
+12
+13
+4
+4
+8
+5
+[/input]
+[output]
+20 8 12 13 4 5
 [/output]
 [/test]
 [/tests]
