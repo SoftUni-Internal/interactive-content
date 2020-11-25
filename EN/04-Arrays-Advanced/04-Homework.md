@@ -389,3 +389,144 @@ Print the result elements separated by single space.
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: HouseParty
+[code-task title="HouseParty" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function houseParty(arr){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that keeps track of **guests** that are going to a house party.
+
+You will be given an **array of strings.**
+
+Each string will be one of the following:
+-	`{name} is going!`
+-	`{name} is not going!`
+
+If you receive the first type of input, you have to **add** the person if he\/she is not in the list (If he\/she is in the list print: `{name} is already in the list!`).
+
+If you receive the second type of input, you have to **remove** the person if he\/she is in the list (if not print: `{name} is not in the list!`). 
+
+At the end print all the guests each on a **separate line.**
+
+
+# Example
+| **Input**   | **Output** | 
+| :---:       |    :----:   |   
+|`['Allie is going!','George is going!','John is not going!','George is not going!']`| John is not in the list!|
+||Allie|
+
+| **Input**   | **Output** |
+| :---:       |    :----:   |  
+|`['Tom is going!','Annie is going!','Tom is going!','Garry is going!','Jerry is going!']`|Tom is already in the list!|
+||Tom|
+||Annie|
+||Garry|
+||Jerry|
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+Tom is going!
+Annie is going!
+Tom is going!
+Garry is going!
+Jerry is going!
+[/input]
+[output]
+Tom is already in the list!
+Tom
+Annie
+Garry
+Jerry
+[/output]
+[/test]
+[test]
+[input]
+A is going!
+Ge is going!
+J is not going!
+G is not going!
+[/input]
+[output]
+J is not in the list!
+G is not in the list!
+A
+Ge
+[/output]
+[/test]
+[test]
+[input]
+T is going!
+A is going!
+T is going!
+G is going!
+J is going!
+J is not going!
+G is not going!
+[/input]
+[output]
+T is already in the list!
+T
+A
+[/output]
+[/test]
+[test]
+[input]
+T is going!
+A is going!
+T is going!
+G is going!
+J is going!
+[/input]
+[output]
+T is already in the list!
+T
+A
+G
+J
+[/output]
+[/test]
+[test]
+[input]
+T is going!
+A is going!
+T is going!
+J is not going!
+G is not going!
+[/input]
+[output]
+T is already in the list!
+J is not in the list!
+G is not in the list!
+T
+A
+[/output]
+[/test]
+[test]
+[input]
+T is going\!
+G is going\!
+J is going\!
+J is not going\!
+G is not going\!
+[/input]
+[output]
+T
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
