@@ -2,6 +2,11 @@
 
 # Defining Simple Classes
 
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="50 "]
+[stream language="EN" videoId="483436616" default /]
+[stream language="RO" videoId="483436616"  /]
+[/video-vimeo]
+
 A class is the **basic building block of an object-oriented language** such as Java.
 
 Everything in Java is associated with **classes** and **objects**, along with its attributes and **methods**. 
@@ -18,7 +23,17 @@ The data (**attributes**) associated with a class or object is stored in **varia
 
 The **behaviour** associated with a class or object is implemented with **methods**. 
 
-## Class components
+[/slide]
+
+[slide]
+
+# Class components
+
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="100 "]
+[stream language="EN" videoId="483436731" default /]
+[stream language="RO" videoId="483436731"  /]
+[/video-vimeo]
+
 
 When defining class, it contains only those components of a class declaration that are required.
 
@@ -46,7 +61,15 @@ class Car {
     void start(){ ... }
 }
 ```
-## Naming Classes
+[/slide]
+
+[slide]
+# Naming Classes
+
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="81 "]
+[stream language="EN" videoId="483436669" default /]
+[stream language="RO" videoId="483436669"  /]
+[/video-vimeo]
 
 Below are the class naming rules of java programming language. 
 
@@ -58,7 +81,15 @@ Try to keep your class names simple and descriptive.
 
 Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
 
-## Creating an Object
+[/slide]
+
+[slide]
+# Creating an Object
+
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="86 "]
+[stream language="EN" videoId="483436739" default /]
+[stream language="RO" videoId="483436739"  /]
+[/video-vimeo]
 
 Creating an object of a defined class is called instantiation.
 
@@ -79,8 +110,15 @@ Car secondCar = new Car();
 
 Car thirdCar = new Car();
 ```
+[/slide]
 
-## Object Reference
+[slide]
+# Object Reference
+
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="153 "]
+[stream language="EN" videoId="483436767" default /]
+[stream language="RO" videoId="483436767"  /]
+[/video-vimeo]
 
 The `new` operator instantiates a Class by allocating memory for a new object and returning a **reference** to that memory. 
 
@@ -94,7 +132,15 @@ So, we cannot store object in a variable, we can store only its **reference to t
 
 Variables whose type is a class are known as **reference variables** and they are stored in the **Stack** memory.
 
+[/slide]
+
+[slide]
 ## Classes vs. Objects
+
+[vimeo-video startTimeInSeconds="0" endTimeInSeconds="43 "]
+[stream language="EN" videoId="483436805" default /]
+[stream language="RO" videoId="483436805"  /]
+[/video-vimeo]
 
 | Classes | Objects |
 | --- | --- |
@@ -105,6 +151,5 @@ Variables whose type is a class are known as **reference variables** and they ar
 | Class is declared **once**. | Object is created **many times** as per requirement. | 
 | Class **doesn't allocated memory** when it is created. | Object **allocates memory** when it is created. |
 | There is only one way to define class in java using `class` keyword. | There are many ways to create object in java such as `new` keyword, `newInstance()` method, `clone()` method `factory` method and deserialization. |
-
 [/slide]
 
