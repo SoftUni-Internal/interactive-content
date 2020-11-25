@@ -317,7 +317,7 @@ CREATE TABLE cars(                                          //Create the second 
 ```
 [/slide]
 
-[slide hiteTitle]
+[slide hideTitle]
 # Problem: Delete Mountains
 [code-task title="Problem: Delete Mountains" taskId="7b83c243-38f3-4147-ac70-b80a3d3ce501" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
