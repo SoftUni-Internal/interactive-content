@@ -24,6 +24,7 @@ Now, let's see how can we create a project from beginning.
 
 2. Choose name of the project, current Project group and project version.
 
-[image assetsSrc="Hibernate(2).jgp" /]
+[image assetsSrc="Hibernate(2).jpg" /]
 
+3. Set up project **name** and **location.** Enable Maven **auto-import.**
 [/slide]
