@@ -65,23 +65,14 @@ function solve(input) {
 [tests]
 [test]
 [input]
-rat 10
-bat 20
-potion 10
-rat 10
-chest 100
-boss 70
-chest 1000
+rat 10|bat 20
 [/input]
 [output]
 You slayed rat.
 You slayed bat.
-You healed for 10 hp.
-Current health: 80 hp.
-You slayed rat.
-You found 100 bitcoins.
-You died! Killed by boss.
-Best room: 6
+You've made it!
+Bitcoins: 0
+Health: 70
 [/output]
 [/test]
 [test]
