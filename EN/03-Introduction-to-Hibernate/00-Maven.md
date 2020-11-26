@@ -20,10 +20,10 @@ Now, let's see how can we create a project from beginning.
 
 1. Select "Maven" project from the new project panel:
 
-[image assetsSrc="Hibernate.png" /]
+[image assetsSrc="Hibernate.jpg" /]
 
 2. Choose name of the project, current Project group and project version.
 
-[image assetsSrc="Hibernate(2).png" /]
+[image assetsSrc="Hibernate(2).jgp" /]
 
 [/slide]

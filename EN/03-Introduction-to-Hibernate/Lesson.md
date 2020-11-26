@@ -1,1 +1,1 @@
-# Databases Introducing to Hibernate
+# Introduction to Hibernate
