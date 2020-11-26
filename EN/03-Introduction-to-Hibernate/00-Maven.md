@@ -18,13 +18,20 @@ Projects are configured using a Project Object Model, which is stored in **pom.x
 
 Now, let's see how can we create a project from beginning.
 
-1. Select "Maven" project from the new project panel:
+- Select "Maven" project from the new project panel:
 
 [image assetsSrc="Hibernate.jpg" /]
 
-2. Choose name of the project, current Project group and project version.
+- Choose name of the project, current Project group and project version.
 
 [image assetsSrc="Hibernate(2).jpg" /]
 
-3. Set up project **name** and **location.** Enable Maven **auto-import.**
+- Set up project **name** and **location.** 
+
+[image assetsSrc="Hibernate(3).jpg" /]
+
+- Enable Maven **auto-import.**
+
+[image assetsSrc="Hibernate(4).jpg" /]
+
 [/slide]
