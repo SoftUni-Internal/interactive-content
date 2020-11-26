@@ -37,7 +37,7 @@ For each command you must print the **fields** that have the **given access modi
 
 The format in which the fields should be printed is:
 
-"**\{access modifier\} \{field type\} \{field name\}**"
+"\{access modifier\} \{field type\} \{field name\}"
 
 
 ## Examples
@@ -715,17 +715,17 @@ First let's go over the original task before the project was created:
 The input consists of commands each on a separate line. 
 
 Commands that execute the functionality are:
-- **add \{Archer/Swordsman/Pikeman/\{…\}\}** - adds a unit to the repository.
-- **report** - prints a lexicological ordered statistic about the units in the repository.
-- **fight** - ends the input.
+- add \{Archer/Swordsman/Pikeman/\{…\}\} - adds a unit to the repository.
+- report - prints a lexicological ordered statistic about the units in the repository.
+- fight - ends the input.
 ## Output
 Each command except **fight** should print output on the console.
 - **add** should print: 
 
-    **"\{Archer/Swordsman/Pikeman/\{…\}\} added!"**
+    "\{Archer/Swordsman/Pikeman/\{…\}\} added!"
 - **report** should print all the info in the repository in the format: 
 
-    **"\{UnitType\} -> \{UnitQuantity\}"**, sorted by UnitType
+    "\{UnitType\} -> \{UnitQuantity\}", sorted by UnitType
 ## Constraints
 - Input will consist of no more than **1000** lines
 - **report** command will never be given before any valid add command was provided
