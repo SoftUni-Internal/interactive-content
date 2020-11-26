@@ -1,8 +1,5 @@
-[slide]
 
 # Homework
-
-[/slide]
 
 [slide hideTitle]
 
