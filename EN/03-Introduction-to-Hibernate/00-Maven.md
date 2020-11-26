@@ -28,10 +28,10 @@ Now, let's see how can we create a project from beginning.
 
 - Set up project **name** and **location.** 
 
-[image assetsSrc="Hibernate(3).jpg" /]
+[image assetsSrc="Hibernate(3).png" /]
 
 - Enable Maven **auto-import.**
 
-[image assetsSrc="Hibernate(4).jpg" /]
+[image assetsSrc="Hibernate(4).png" /]
 
 [/slide]
