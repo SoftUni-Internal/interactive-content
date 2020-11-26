@@ -31,30 +31,133 @@ GROUP BY e.`job_title`;
 [slide hideTitle]
 
 # Problem: Departments Info
+[code-task title="Problem: Departments Info" taskId="741003dd-c7ac-4443-b344-e1e4307f9a2b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
-# Description:
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
 
 Write a query to **count** the number of employees **in each department by id**. 
 
 Order the information by **deparment_id**, then by **employees count**. 
 
-**Run your query statements & submit the output from the queries as plain text.**
+**Run your query statements & submit the output from the queries as plain text**.
 
-
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1
+2
+2
+4
+3
+3
+[/input]
+[output]
+1
+2
+2
+4
+3
+3
+[/output]
+[/test]
+[test]
+[input]
+1
+2
+2
+4
+3
+3
+[/input]
+[output]
+1
+2
+2
+4
+3
+3
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
 
 # Solution: Departments Info
+[code-task title="Problem: Departments Info"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
-# Description:
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
 
 Write a query to **count** the number of employees **in each department by id**. 
 
 Order the information by **deparment_id**, then by **employees count**. 
 
-**Run your query statements & submit the output from the queries as plain text.**
+**Run your query statements & submit the output from the queries as plain text**.
 
-
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+1
+2
+2
+4
+3
+3
+[/input]
+[output]
+1
+2
+2
+4
+3
+3
+[/output]
+[/test]
+[test]
+[input]
+1
+2
+2
+4
+3
+3
+[/input]
+[output]
+1
+2
+2
+4
+3
+3
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
-
