@@ -11,12 +11,19 @@ The command can be:
 
 But your health **cannot exceed your initial health (100).**
 
-First print: `You healed for {amount} hp.`
+First print: 
 
-After that, print your current health: `Current health: {health} hp.`
+`You healed for {amount} hp.`
+
+After that, print your current health:
+
+`Current health: {health} hp.`
 
 * `chest`: You've found some bitcoins, the number in the second part.
-Print: `You found {amount} bitcoins.`
+
+Print: 
+
+`You found {amount} bitcoins.`
 
 * In any other case you are facing a monster, you are going to fight. 
 
@@ -24,9 +31,13 @@ The second part of the room, contains the attack of the monster.
 
 You should remove the monster's attack from your health. 
 
-* If you are not dead (health \<\= 0) you've slain the monster, and you should print `You slayed {monster}.`
+* If you are not dead (health \<\= 0) you've slain the monster, and you should print" 
 
-* If you've died, print `You died! Killed by {monster}.` and your quest is over. Print the best room you've manage to reach: `Best room: {room}`.
+`You slayed {monster}.`
+
+* If you've died, print `You died! Killed by {monster}.` and your quest is over. 
+
+Print the best room you've manage to reach: `Best room: {room}`.
 
 If you managed to go through all the rooms in the dungeon, print on the next three lines: 
 
@@ -52,7 +63,7 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |`['rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000']`| You slayed rat.|
