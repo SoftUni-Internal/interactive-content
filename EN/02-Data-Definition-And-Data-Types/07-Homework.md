@@ -1,9 +1,3 @@
-[slide]
-
-# Homework
-
-[/slide]
-
 [slide hideTitle]
 
 # Problem: Create Database
