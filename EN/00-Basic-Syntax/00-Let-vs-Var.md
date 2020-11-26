@@ -3,23 +3,23 @@
 [slide]
 # Var and Let
 
-Different data types have different **sizes** in the computer's memory.
+Different data types have different **sizes** in computer's memory.
 
-Everything in computers is **units and zeros**, for example int is 32bit, which means that in order to write int in the computer's m**emory thirty-two units and zeros** are needed.
+Everything in computers is **units and zeros**, for example int is 32bit, which means that in order to write int in the computer's memory, **thirty-two units and zeros are needed.**
 
-Thus we tell the computer that it must set aside thirty-two bits to read our number.
+Thus, we tell the computer that it must set aside thirty-two bits, in order to read our number.
 
-For **floating-point numbers**, such as 3.17, the computer must set 64bit to store them in memory.
+For **floating-point numbers**, such as 3.17, the computer must set aside 64 bits to store them in the memory.
 
-This is the reason why we need **data types** so that the size **can be known to the program** so that it can work correctly.
+This is the reason why we need **data types** so that the size can be known to the program in order to work correctly.
 
 When we declare a variable and assign a **value** to it, this value is called a literal.
 
-The literal in programming means to write a variable with such a value that the interpreter **understands** the type of this variable.
+A literal in programming means to write a variable with such a value that the interpreter **understands** the type of this variable.
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) or ES6 introduced two new ways to create variables, `let` and `const`, before that only `var` was used.
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) or ES6 introduced two new ways to create variables – `let` and `const`. Before that, only `var` was used.
 
-The characteristic of `var` is that it is a variable that works in the so-called. functional scope.
+`Var` is a variable that works in the so-called functional scope
 
 ``` JavaScript
 {
@@ -28,7 +28,7 @@ The characteristic of `var` is that it is a variable that works in the so-called
 console.log(x); // 2
 ```
 
-Using var we can access a variable, before we declare it:
+Using `var`, we can access a variable, before we declare it.:
 
 ``` js live
 console.log(myVar);
@@ -36,15 +36,17 @@ console.log(myVar);
 var myVar = 'Peter';
 ```
 
-Here we get undefined, because we don't know the value of the variable, nut we can access it. 
+Here we get undefined, because we don't know the value of the variable, nor can we access it. 
 
-But it's important that **no error is thrown**, the program works, that could lead to **unexpected results** of our program.
+But, it's important that no error is shown and the program works. 
+
+That could lead to unexpected results in our program.
 
 Whereas when we declare a variable with `let`, this variable is available in **block scope**.
 
-Everything that is enclosed in **curly braces** `{}` is a block where variables live. 
+Everything that is enclosed in **curly brackets** `{}` is a block where variables live. 
 
-This can be the body of some `if` constructions, loops, or the body of a functions.
+This can be the body of some `if` constructions, loops, or the body of a functions:
 
 ``` JavaScript
 {
