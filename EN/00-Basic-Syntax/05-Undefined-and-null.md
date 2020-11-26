@@ -30,11 +30,11 @@ console.log(car);
 [slide]
 ## Null
 
-Null is an **object type**, and can be used for any variable that will **hold an object** and we do not want it to be **undefined**.
+Null is an object type, which can be used for any variable that holds an object which we do not want to be undefined.
 
 For example, when we have the function to **return an object**, or a function that needs to read something from the **database and return an object**.
 
-In case the function **does not find what it is looking for**, return null and we can checks if the function returns null.
+In case the function **does not find what it is looking for**, we tell it to return null, and then we can check if the function returns null. 
 
 ``` js live
 let person = {

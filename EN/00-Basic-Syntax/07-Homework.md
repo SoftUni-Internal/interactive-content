@@ -139,7 +139,7 @@ Consider the following:
 
 - **One person** in that bus excluding the driver increases fuel consumption by **100 milliliters.**
 
-- The **money** is calculated by **multiplying** the **fuel price** with the needed fuel for the trip.
+- The **money** is calculated by **multiplying** the **fuel price** by the needed fuel for the trip.
 
 As **input** you will receive **3 parameters**:
 - **Distance** the bus must travel
@@ -265,7 +265,7 @@ function centuriesToMinutes(input){
 [/code-editor]
 [task-description]
 # Description
-Write program to receive a **number** of **centuries** and convert it to **years, days, hours** and minutes.
+Write a program that receives a number of centuries, and converts it to years, days, hours, and minutes.
 
 Print the output in the following format: 
 `{number} centuries = {number} years = {number} days = {number} hours = {number} minutes`
@@ -335,9 +335,10 @@ function specialNumbers(input){
 [/code-editor]
 [task-description]
 # Description
-Write a program to receive a number **n** and for all numbers in the range **1…n** print the number and if it is special or not **(True / False).**
+Write a program that receives a number `n`. For all numbers in the range `1…n`, print the number and whether it is special or not.
 
-A **number** is **special** when its s**um of digits is** **5, 7 or 11.**
+A number is special when the sum of its digits is **5,7, or 11.**
+
 
 # Example
   | **Input** | **Output** |
@@ -360,7 +361,7 @@ A **number** is **special** when its s**um of digits is** **5, 7 or 11.**
 
 # Hints
 
-To calculate the **sum of digits of given number**, you might **repeat** the following: 
+To calculate the sum of digits of a given number, you might repeat the following:
 
 - sum the last digit `num % 10` and remove it `sum = sum / 10` until num reaches `0`. 
 
@@ -464,8 +465,7 @@ function triplesLatinLetters(input){
 [/code-editor]
 [task-description]
 # Description
-Write a program to receive a **number** `n` and print all **triples** of the first `n` **small Latin letters**, ordered alphabetically:
-
+Write a program that receives a **number** `n` and prints all triples of the first n small Latin letters, ordered alphabetically.
 # Example
   | **Input** | **Output** |
 | --- | --- |
@@ -496,7 +496,8 @@ Write a program to receive a **number** `n` and print all **triples** of the fir
 # Hints
 
 Perform 3 nested loops from `0` to `n`. 
-For each number num print its corresponding Latin letter as follows:
+ 
+For each number `num`, print its corresponding Latin letter as follows:
 
 `let letter = String.FromCharCode(97 + num)`
 
