@@ -5,7 +5,7 @@ Boolean values ​​are named after [George Boole](https://en.wikipedia.org/wik
 
 Boolean values ​​represent some **logical value**.
 
-They can only have two values `​​true` and `false`.
+They can only have two values `​​true` or `false`.
 
 We can give this value as a **literal** or we can get it from the result of a **given expression**.
 

@@ -5,7 +5,7 @@ The numbers in JavaScript do not have a separate type for **integers** and **flo
 We have a type that is **numbers.**
 
 The largest number we can store is `2^54 +-1`
-`
+
 We have special values ​​that are:
 
 - `+Infinity` and `–Infinity`  we get when we divide by zero
@@ -28,7 +28,7 @@ The problem with `NaN` is that when we use it in **mathematical terms**, we alwa
 
 If we have **logic in our program that gives** `NaN`, and then we have some **mathematical operation**, we will always get `NaN`. 
 
-That can break our program logic.
+That can break our program's logic.
 
 ``` js live
 let nanVar = Number('not a number');

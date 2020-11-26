@@ -5,7 +5,7 @@
 
 Welcome to the homework tab. 
 
-Now we are going to create a couple of **console applications**, with which we are going to take a few more steps further into programming. 
+Now we are going to create a couple of **console applications**, which will takes us a bit further into programming.
 
 We have prepared some problems for you to solve.
 [/slide]

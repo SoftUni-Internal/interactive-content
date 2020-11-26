@@ -68,9 +68,9 @@ We strongly advise you to use `let` when you **declare a variable**, that way yo
 # Variable Scope
 Scope means the **life** of the variable or where the variable is **visible**. 
 
-Outside this scope variable **cannot be accessed.**
+Outside this scope, variable cannot be accessed.
 
-We have **four types of scope**, and we will talk about them in more detail in the JavaScript Advanced course. 
+We have **four types of scope**, and we will go through them in more detail in the JavaScript Advanced course.
 
 # Global scope
 
@@ -84,22 +84,22 @@ function myFunction() {
  }
 ```
 
-In this example we define the variable `carName` in the global scope, outside the function, and thus we can access it in all functions.
+In this example, we define the variable `carName` in the global scope, outside the function. Therefore, we can access it in all functions.
 
 # Function Scope
 
-Functional scope it's the b**ody of the function** and each variable defined in the function lives **only in the body of the function**
+Functional scope is the **body of the function**, and each variable defined in the function lives only in the body of the function.
 
 ``` JavaScript
 function myFunction() {
    var carName = "Volvo";
-   // Only here code CAN use carName
+   // Only here, the code can use carName
  }
  ```
 
 # Block Scope 
-We also have a third type of scope that is **Block Scope**, which is any body that is defined in curly braces `{}`
 
+We also have a third type of scope – **Block Scope**. That is any body, defined in curly braces `{}`.
 ``` JavaScript
 {
   let x = 2;
@@ -108,9 +108,9 @@ We also have a third type of scope that is **Block Scope**, which is any body th
 
 Note that the function is also defined with **curly braces** and is a block, but this is a special class.
 
-From the programming basics course we know that we **can embed** `if-else` construction as well as loops. 
+From the programming basics course we know that we can embed an `if-else` construction, as well as loops.
 
-So we put one block of code in another block of code.
+So we put one block of code into another block of code.
 
 # Object Scoup
 
