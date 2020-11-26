@@ -21,7 +21,7 @@ Delete existing column
 
 ```Java
 ALTER TABLE people
-DROP COLUMN full_name; // Delete column with name `fullName`
+DROP COLUMN full_name; // Delete column with name `full_name`
 ```
 
 Modify data type of existing column
