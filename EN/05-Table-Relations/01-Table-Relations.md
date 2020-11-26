@@ -10,9 +10,13 @@ There are several things you must know before creating your first relation.
 
 - The **foreign key** is an **indetifier** of a record located in another table (usually its a primary key.) **It must be unique**.
 
+
 - By using relationships we avoid repeating data in the database.
 
+
 - Relationships have multiplicity:
+
+
     - **One-to-many** - e.g. mountains/peaks
     - **Many-to-many** - e.g. student/course
     - **One-to-one** - e.g. driver/driver licence
@@ -24,6 +28,8 @@ There are several things you must know before creating your first relation.
 ## One-To-Many
 
 For the referenced table it's a constraint that the referenced column is unique, otherwise the database won't know with which record it should connect the references. 
+
+
 The constrains for the referencing table are that the type of foreign_key matches the referenced type as well as that the foreign key must be of an already existing property.
 
 [image assetsSrc="Table-Relations.png" /]

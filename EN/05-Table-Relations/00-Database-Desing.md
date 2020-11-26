@@ -13,10 +13,20 @@ There are a few fundamental steps when creating a database, which we should cons
 ## Steps in database design
 
 1. Identificatiion of entities.
+
+
 2. Defining table columns.
+
+
 3. Defining primary keys.
+
+
 4. Modeling relationships.
+
+
 5. Defining constraints.
+
+
 6. Filling test data. 
 
 [/slide]
@@ -39,10 +49,10 @@ Let's have a look.
 
 | **Specification** | 
 |---|
-|We need to develop a system that stores information about **students**, which are trained in various courses. |
-|The **courses** are held in different **towns**. |
-|When registering a new student the following information is entered: name, faculty number, photo, and date.|
-| |
+| We need to develop a system that stores information about **students**, which are trained in various courses. |
+| The **courses** are held in different **towns**. |
+| When registering a new student the following information is entered: name, faculty number, photo, and date.|
+|  |
 
 Entities: **Student**, **Course**, **Town**
 
@@ -62,10 +72,10 @@ When given **specifications** we can also try and seek information that will hel
 
 | **Specification** | 
 |---|
-|We need to develop a system that stores information about students, who are trained in various **courses**. |
-|The courses are held in different **towns**. |
-|When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**.|
-| |
+| We need to develop a system that stores information about students, who are trained in various **courses**. |
+| The courses are held in different **towns**. |
+| When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**. |
+|  |
 
 Columns: 
 - Student: **name, faculty number, photo date of enlistment, list of courses**.
@@ -85,11 +95,15 @@ There are a few pieces of advice which you should keep in mind to choose a prope
 
 - Don't use an existing column(for example SSN): Although you may think that a given column is unique, sometimes this turns against you.
 
+
 - Can be an integer number: Integer is always a good choice when picking a primary key, as it is unique and easy to sustain.
+
 
 - Must be declared as a PRIMARY KEY: when creating your database, don't forget to identify the primary key.
 
+
 - Use AUTO_INCREMENT to implement auto-increment: this will make the Id always different and will take the responsibility for sustaining it.
+
 
 - Put the primary key as the first column: makes the table easier to comprehend and it's accepted as a convention.
 
@@ -121,12 +135,14 @@ To better understand the two types of relationships we will have a look at our s
 
 | **Specification** | 
 |---|
-|We need to develop a system that stores information about **students, who are trained in various courses**. |
-|The **courses are held in different towns**. |
-|When registering a new student the following information is entered: name, faculty number, photo, and date.|
+| We need to develop a system that stores information about **students, who are trained in various courses**. |
+| The **courses are held in different towns**. |
+| When registering a new student the following information is entered: name, faculty number, photo, and date. |
 | |
 
 - **"Students are trained in courses."** Now let's paraphrase: **"Many students are trained in many courses."** - Many to Many relationships.
+
+
 - **"Course is held in towns."** becomes **"One course is held in many towns"** - here the relationship is One-To-Many.
 
 When designing our database, finding the relations between the entities is one of the most tricky parts, a piece of advice you should consider is always try to paraphrase the specifications to find your relations as well as always thing if the most often queries you are going to make with the given entity.
