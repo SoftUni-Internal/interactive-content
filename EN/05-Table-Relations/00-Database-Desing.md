@@ -50,7 +50,7 @@ Let's have a look.
 | **Specification** | 
 |---|
 | We need to develop a system that stores information about **students**, which are trained in various courses. |
-| The **courses** are held in different **towns**. |
+| The **courses** are held in different towns. |
 | When registering a new student the following information is entered: name, faculty number, photo, and date.|
 |  |
 
@@ -73,7 +73,7 @@ When given **specifications** we can also try and seek information that will hel
 | **Specification** | 
 |---|
 | We need to develop a system that stores information about students, who are trained in various **courses**. |
-| The courses are held in different **towns**. |
+| The courses are held in different towns. |
 | When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**. |
 |  |
 
@@ -136,7 +136,7 @@ To better understand the two types of relationships we will have a look at our s
 | **Specification** | 
 |---|
 | We need to develop a system that stores information about **students, who are trained in various courses**. |
-| The **courses are held in different towns**. |
+| The **courses are held in different towns. |
 | When registering a new student the following information is entered: name, faculty number, photo, and date. |
 | |
 
