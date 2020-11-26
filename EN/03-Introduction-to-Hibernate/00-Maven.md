@@ -35,3 +35,55 @@ Now, let's see how can we create a project from beginning.
 [image assetsSrc="Hibernate(4).png" /]
 
 [/slide]
+
+[slide]
+
+# Maven Configurations
+
+A Project Object Model (**POM**) is the fundamental unit of work in Maven.
+
+All of the configurations are held in the the pom.xml file.
+
+That's mean when we execute a task or goal, Maven search for the POM file in the current directory.
+
+Take a look at the POM file and dependencies inside.
+
+
+## Pom Model:
+
+```
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>15</source>
+                    <target>15</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+## Dependencies:
+
+Dependencies are set with \<dependency\> tag.
+
+```
+<dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.22.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+ </dependencies>
+```
+
+
+[/slide]
