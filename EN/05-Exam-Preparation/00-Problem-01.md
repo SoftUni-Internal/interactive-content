@@ -65,7 +65,9 @@ function solve(input) {
 [tests]
 [test]
 [input]
-rat 10|bat 20
+rat 10
+\|
+bat 20
 [/input]
 [output]
 You slayed rat.
