@@ -27,7 +27,7 @@ Logger logs data and time ( **String** ) and a message ( **String** ).
 
 The library should have the following components:
 
-- **Layouts** - define the format in which messages should be appended (e.g. **SimpleLayout** displays logs in the format **"{date-time} - {report level} - {message}"** )
+- **Layouts** - define the format in which messages should be appended (e.g. **SimpleLayout** displays logs in the format **"\{date-time\} - \{report level\} - \{message\}"** )
 - **Appenders -** responsible for appending the messages somewhere (e.g. **Console** , **File** , etc.)
 - **Loggers** - hold methods for various kinds of logging ( **warnings** , **errors** , **info** , etc.)
 
@@ -49,7 +49,7 @@ Avoid code repetition. Name everything accordingly.
 
 The library should provide the following ready classes for the client:
 
-- **SimpleLayout** - defines the format **"{date-time} - {report level} - {message}"**
+- **SimpleLayout** - defines the format **"\{date-time\} - \{report level\} - \{message\}"**
 - **ConsoleAppender** - appends a log to the console using the provided layout
 - **FileAppender** - appends a log to a file (You need to implement a **CustomFile** class) using
 the provided layout
