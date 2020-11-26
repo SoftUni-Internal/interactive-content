@@ -46,7 +46,7 @@ Whereas when we declare a variable with `let`, this variable is available in **b
 
 Everything that is enclosed in **curly brackets** `{}` is a block where variables live. 
 
-This can be the body of some `if` constructions, loops, or the body of a functions:
+This can be the body of some `if` constructions, loops, or the body of a functionс
 
 ``` JavaScript
 {

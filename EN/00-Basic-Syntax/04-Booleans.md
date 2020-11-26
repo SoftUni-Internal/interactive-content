@@ -66,9 +66,9 @@ In addition to `true` and `false`, JavaScript has `truthy` and `falsy` (sometime
 
 These are values ​​that are **not** `true` or `false`, but when we turn them into a Boolean value they give `true` or `false`.
 
-In JavaScript is **weakly typed language** and we do not have types of variables. 
+In JavaScript is **loosely typed language** and we do not have types of variables. 
 
-This does not prevent in if expression to try to **compare** variables that store values ​​with **different types.**
+This does not prevent an if expression which tries to compare variables that store values with different types. 
 
 In this example: 
 
@@ -133,7 +133,7 @@ In javascript we have eight values ​​that are assumed to be `falsy`:
 
 All other values ​​are `true`, for example an empty array `[]` and an empty object `{}` are true.
 
-Nevertheless, in loop, if construction a**lways submit the Boolean value**, respectively never submit anything other than a Boolean value. 
+Nevertheless, in a loop, if a construction always submits the Boolean value, it will never submit anything other than a Boolean value.  
 
 It is always better to be **explicit** so as not to be ambiguous.
 
@@ -373,13 +373,13 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 # The Typeof operator
 
-The JavaScript itself provides an operator called `typeof` for that which works in a straightforward way.
+JavaScript itself provides an operator called `typeof` for everything that works in a straightforward way.
 
 `Typeof` **returns a string** of what a values data type is, so for an object `object` is returned and for a string `string`.
 
 However JavaScript data types and the `typeof` operator aren't exactly perfect.
 
-For example for arrays and `null` `object` is returned and for `NaN` and Infinity `number`.
+For example, for arrays and `null`, `object` is returned. For `NaN` and `Infinity` – number.
 
 Examples:
 

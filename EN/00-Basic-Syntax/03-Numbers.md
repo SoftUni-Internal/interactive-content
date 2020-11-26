@@ -75,7 +75,7 @@ function integerOrFloat(input){
 # Description
 You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with the **addition** 
+Your task is to find their **sum** and print it to the console with an addition 
 
 `{number} - Integer or Float`
 
@@ -178,7 +178,7 @@ function integerOrFloat(input){
 # Description
 You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with the **addition** 
+Your task is to find their **sum** and print it to the console with an addition 
 
 `{number} - Integer or Float`
 

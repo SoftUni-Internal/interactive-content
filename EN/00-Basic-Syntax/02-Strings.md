@@ -61,8 +61,8 @@ function concatNames(input){
 [task-description]
 # Description
 Write a program, which: 
-- Receive two names as string parameters and a delimiter
-- Print the names joined by the delimiter
+- Receives two names as string parameters and a delimiter
+- Prints the names joined by the delimiter
 
 # Example
   | **Input** | **Output** |
@@ -155,8 +155,8 @@ console.log(`${firstName}${delimiter}${lastName}`);
 [task-description]
 # Description
 Write a program, which: 
-- Receive two names as string parameters and a delimiter
-- Print the names joined by the delimiter
+- Receives two names as string parameters and a delimiter
+- Prints the names joined by the delimiter
 
 # Example
   | **Input** | **Output** |
