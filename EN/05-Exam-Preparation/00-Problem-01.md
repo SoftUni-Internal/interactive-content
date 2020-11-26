@@ -7,26 +7,33 @@ Each room contains a command and a number, separated by space.
 
 The command can be:
 
-- `potion`: You are healed with the number in the second part. 
+* `potion`: You are healed with the number in the second part.
+
 But your health **cannot exceed your initial health (100).**
+
 First print: `You healed for {amount} hp.`
+
 After that, print your current health: `Current health: {health} hp.`
 
-- `chest`: You've found some bitcoins, the number in the second part.
+* `chest`: You've found some bitcoins, the number in the second part.
 Print: `You found {amount} bitcoins.`
 
-- In any other case you are facing a monster, you are going to fight. 
+* In any other case you are facing a monster, you are going to fight. 
 
 The second part of the room, contains the attack of the monster. 
 
 You should remove the monster's attack from your health. 
 
-- If you are not dead (health \<\= 0) you've slain the monster, and you should print `You slayed {monster}.`
+* If you are not dead (health \<\= 0) you've slain the monster, and you should print `You slayed {monster}.`
 
-- If you've died, print `You died! Killed by {monster}.` and your quest is over. Print the best room you've manage to reach: `Best room: {room}`.
+* If you've died, print `You died! Killed by {monster}.` and your quest is over. Print the best room you've manage to reach: `Best room: {room}`.
+
 If you managed to go through all the rooms in the dungeon, print on the next three lines: 
+
 `You've made it!`
+
 `Bitcoins: {bitcoins}`
+
 `Health: {health}`
 
 
@@ -152,7 +159,7 @@ Health: 90
 [/test]
 [test]
 [input]
-cat 10|potion 30
+cat 10\|potion 30
 [/input]
 [output]
 You slayed cat.
@@ -178,7 +185,7 @@ Health: 100
 [/test]
 [test]
 [input]
-a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50|chest 1000
+a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
 [/input]
 [output]
 You slayed a.
