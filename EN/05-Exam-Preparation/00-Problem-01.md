@@ -65,12 +65,12 @@ function solve(input) {
 [tests]
 [test]
 [input]
-rat 10\|
-bat 20\|
-potion 10\|
-rat 10\|
-chest 100\|
-boss 70\|
+rat 10
+bat 20
+potion 10
+rat 10
+chest 100
+boss 70
 chest 1000
 [/input]
 [output]
