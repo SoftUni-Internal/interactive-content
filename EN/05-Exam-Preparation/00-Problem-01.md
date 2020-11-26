@@ -87,7 +87,7 @@ Health: 70
 [/test]
 [test]
 [input]
-rat 10|bat 20|cat 30|dog 39
+rat 10\|bat 20\|cat 30\|dog 39
 [/input]
 [output]
 You slayed rat.
@@ -101,7 +101,7 @@ Health: 1
 [/test]
 [test]
 [input]
-rat 10|bat 20|cat 30|dog 40
+rat 10\|bat 20\|cat 30\|dog 40
 [/input]
 [output]
 You slayed rat.
@@ -113,7 +113,7 @@ Best room: 4
 [/test]
 [test]
 [input]
-chest 1|chest 2|chest 3
+chest 1\|chest 2\|chest 3
 [/input]
 [output]
 You found 1 bitcoins.
@@ -126,7 +126,7 @@ Health: 100
 [/test]
 [test]
 [input]
-chest 10|chest 20|chest 30
+chest 10\|chest 20\|chest 30
 [/input]
 [output]
 You found 10 bitcoins.
@@ -139,7 +139,7 @@ Health: 100
 [/test]
 [test]
 [input]
-cat 40|potion 30
+cat 40\|potion 30
 [/input]
 [output]
 You slayed cat.
@@ -165,7 +165,7 @@ Health: 100
 [/test]
 [test]
 [input]
-dog 10|potion 30
+dog 10\|potion 30
 [/input]
 [output]
 You slayed dog.
@@ -178,7 +178,7 @@ Health: 100
 [/test]
 [test]
 [input]
-a 10|b 20|potion 10|c 30|chest 10|chest 1000|d 50|chest 1000
+a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50|chest 1000
 [/input]
 [output]
 You slayed a.
@@ -194,7 +194,7 @@ Best room: 7
 [/test]
 [test]
 [input]
-cat 10|potion 30|orc 10|chest 10|snake 25|chest 110|chest 100|potion 1000|DRAGON 1000
+cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
 [/input]
 [output]
 You slayed cat.
