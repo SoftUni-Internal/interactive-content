@@ -48,7 +48,18 @@ function solve(input) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['cat 10|potion 30|orc 10|chest 10|snake 25|chest 110']`| You slayed cat.|
+|`['rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000']`| You slayed rat.|
+||You slayed bat.|
+||You healed for 10 hp.|
+||Current health: 80 hp.|
+||You slayed rat.|
+||You found 100 bitcoins.|
+||You died! Killed by boss.|
+||Best room: 6|
+
+| **Input** | **Output** |
+| --- | --- |
+|`cat 10|potion 30|orc 10|chest 10|snake 25|chest 110`| You slayed cat.|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You slayed orc.|
@@ -58,7 +69,6 @@ function solve(input) {
 ||You've made it!|
 ||Bitcoins: 120|
 ||Health: 65|
-
 
 [/task-description]
 [code-io /]
@@ -77,57 +87,128 @@ Health: 70
 [/test]
 [test]
 [input]
-Origin
-10
-19
-50
+rat 10|bat 20|cat 30|dog 39
 [/input]
 [output]
-Total time needed to watch the Origin series is 11500 minutes.
+You slayed rat.
+You slayed bat.
+You slayed cat.
+You slayed dog.
+You've made it!
+Bitcoins: 0
+Health: 1
 [/output]
 [/test]
 [test]
 [input]
-Arrow
-5
-24
-60
+rat 10|bat 20|cat 30|dog 40
 [/input]
 [output]
-Total time needed to watch the Arrow series is 8690 minutes.
+You slayed rat.
+You slayed bat.
+You slayed cat.
+You died! Killed by dog.
+Best room: 4
 [/output]
 [/test]
 [test]
 [input]
-Vampires
-8
-25
-50
+chest 1|chest 2|chest 3
 [/input]
 [output]
-Total time needed to watch the Vampires series is 12080 minutes.
+You found 1 bitcoins.
+You found 2 bitcoins.
+You found 3 bitcoins.
+You've made it!
+Bitcoins: 6
+Health: 100
 [/output]
 [/test]
 [test]
 [input]
-Tom & Jerry
-15
-25
-30
+chest 10|chest 20|chest 30
 [/input]
 [output]
-Total time needed to watch the Tom & Jerry series is 13650 minutes.
+You found 10 bitcoins.
+You found 20 bitcoins.
+You found 30 bitcoins.
+You've made it!
+Bitcoins: 60
+Health: 100
 [/output]
 [/test]
 [test]
 [input]
-Teen wolf
-5
-20
-55
+cat 40|potion 30
 [/input]
 [output]
-Total time needed to watch the Teen wolf series is 6650 minutes.
+You slayed cat.
+You healed for 30 hp.
+Current health: 90 hp.
+You've made it!
+Bitcoins: 0
+Health: 90
+[/output]
+[/test]
+[test]
+[input]
+cat 10|potion 30
+[/input]
+[output]
+You slayed cat.
+You healed for 10 hp.
+Current health: 100 hp.
+You've made it!
+Bitcoins: 0
+Health: 100
+[/output]
+[/test]
+[test]
+[input]
+dog 10|potion 30
+[/input]
+[output]
+You slayed dog.
+You healed for 10 hp.
+Current health: 100 hp.
+You've made it!
+Bitcoins: 0
+Health: 100
+[/output]
+[/test]
+[test]
+[input]
+a 10|b 20|potion 10|c 30|chest 10|chest 1000|d 50|chest 1000
+[/input]
+[output]
+You slayed a.
+You slayed b.
+You healed for 10 hp.
+Current health: 80 hp.
+You slayed c.
+You found 10 bitcoins.
+You found 1000 bitcoins.
+You died! Killed by d.
+Best room: 7
+[/output]
+[/test]
+[test]
+[input]
+cat 10|potion 30|orc 10|chest 10|snake 25|chest 110|chest 100|potion 1000|DRAGON 1000
+[/input]
+[output]
+You slayed cat.
+You healed for 10 hp.
+Current health: 100 hp.
+You slayed orc.
+You found 10 bitcoins.
+You slayed snake.
+You found 110 bitcoins.
+You found 100 bitcoins.
+You healed for 35 hp.
+Current health: 100 hp.
+You died! Killed by DRAGON.
+Best room: 9
 [/output]
 [/test]
 [/tests]
