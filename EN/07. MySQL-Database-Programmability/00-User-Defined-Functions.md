@@ -42,7 +42,7 @@ You declare user defined function like:
 CREATE FUNCTION CalculateAmount(userid INT) RETURNS float(10,2)                 //Here we declare that we want to create a function, it's parameters and return type.
 BEGIN                                                                           //We always set the begining of a function.
     DECLARE totalCredits FLOAT;
-    SELECT SUM(amount) INTO totalAmount FROM credit_user WHERE id =userid;      //Logic...
+    SELECT SUM(amount) INTO totalAmount FROM credit_user WHERE id = userid;      //Logic...
     RETURN totalAmount;
 END                                                                             //End the function.
 ```
