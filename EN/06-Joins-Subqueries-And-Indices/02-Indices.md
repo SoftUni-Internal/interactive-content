@@ -20,7 +20,7 @@ Indices are:
 - Maximum **1** clustered index per table
   - If a table has no clustered index, its data rows are stored in an **unordered structure** (heap)
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(10).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(10).png" /]
 
 ### Non-Clustered Indices
 
@@ -29,7 +29,7 @@ Indices are:
 - Maintained in a separate
 - Structure in the DB
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(11).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(11).png" /]
 
 ### Indices Syntax
 

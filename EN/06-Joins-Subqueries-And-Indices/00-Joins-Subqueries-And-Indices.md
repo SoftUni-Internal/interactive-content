@@ -18,7 +18,7 @@ Sometimes you need to combine data from several tables into a new table.
 
 Have a look at the example below.
 
-[image assetsSrc="[Joins-Subqueries-And-Indices.png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices.png" /]
 
 ### Cartesian Product(1)
 
@@ -98,7 +98,7 @@ The resulting table would be:
 
 Produces a set of records which **match in both tables**!
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(1).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(1).png" /]
 
 **LEFT JOIN**:
 
@@ -121,7 +121,7 @@ And this is the resulting table:
 
 Matches every entry in **left** table regardless of match in the **right**.
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(2).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(2).png" /]
 
 **RIGHT JOIN**:
 
@@ -145,7 +145,7 @@ And this is the resulting table:
 
 Matches every entry in **right** table regardless of match in the **left**.
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(3).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(3).png" /]
 
 **OUTER (FULL JOIN)**:
 
@@ -154,7 +154,7 @@ Returns all records in both tables regardless of **any** match
 - Less useful than **INNER**, **LEFT** or **RIGHT JOINs** and it's **not implemented in MySQL**.
 - We can use **UNION** of a **LEFT** and **RIGHT JOIN**.
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(4).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(4).png" /]
 
 **UNION of LEFT and RIGHT JOIN**:
 
@@ -197,23 +197,23 @@ CROSS JOIN students AS s;  // No Join Condition
 
 **CROSS JOIN(2)**
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(5).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(5).png" /]
 
 **Join Overview**
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(6).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(6).png" /]
 
 INNER JOIN
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(7).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(7).png" /]
 
 LEFT JOIN
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(8).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(8).png" /]
 
 RIGHT JOIN
 
-[image assetsSrc="[Joins-Subqueries-And-Indices(9).png" /]
+[image assetsSrc="Joins-Subqueries-And-Indices(9).png" /]
 
 [/slide]
 
