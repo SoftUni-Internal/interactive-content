@@ -1,1 +1,1 @@
-# Course Introduction
+# MySQL Course Introduction
