@@ -47,12 +47,11 @@ Luckily as programmers, we are often given specifications for our software, in w
 
 Let's have a look.
 
-| **Specification** | 
-|---|
-| We need to develop a system that stores information about **students**, which are trained in various courses. |
-| The **courses** are held in different towns. |
-| When registering a new student the following information is entered: name, faculty number, photo, and date.|
-|  |
+**Specification**
+We need to develop a system that stores information about **students**, which are trained in various courses. 
+The **courses** are held in different **towns**. 
+When registering a new student the following information is entered: name, faculty number, photo, and date.
+ 
 
 Entities: **Student**, **Course**, **Town**
 
@@ -70,12 +69,12 @@ This step also plays an important role in our database design as this will deter
 
 When given **specifications** we can also try and seek information that will help us understand the **columns** of our entities.
 
-| **Specification** | 
-|---|
-| We need to develop a system that stores information about students, who are trained in various **courses**. |
-| The courses are held in different towns. |
-| When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**. |
-|  |
+**Specification**
+
+We need to develop a system that stores information about students, who are trained in various **courses**.
+The courses are held in different towns.
+When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**.
+
 
 Columns: 
 - Student: **name, faculty number, photo date of enlistment, list of courses**.
@@ -133,12 +132,12 @@ In relational databases there are two types of relations:
 
 To better understand the two types of relationships we will have a look at our specifications again and try to find the different relations.
 
-| **Specification** | 
-|---|
-| We need to develop a system that stores information about **students, who are trained in various courses**. |
-| The **courses are held in different towns. |
-| When registering a new student the following information is entered: name, faculty number, photo, and date. |
-| |
+**Specification** 
+
+We need to develop a system that stores information about **students, who are trained in various courses**.
+The **courses are held in different towns.
+When registering a new student the following information is entered: name, faculty number, photo, and date.
+
 
 - **"Students are trained in courses."** Now let's paraphrase: **"Many students are trained in many courses."** - Many to Many relationships.
 
