@@ -1,4 +1,10 @@
+[slide]
+
 # Homework
+
+_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/uJZhjCBT#Z0mRwfZ5GJQorDXWjlKEEkah57NG4S9o6tmpqELcPz8)
+
+[/slide]
 
 [slide hideTitle]
 
