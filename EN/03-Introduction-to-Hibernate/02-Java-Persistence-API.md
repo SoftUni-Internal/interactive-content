@@ -92,6 +92,80 @@ If no **column** annotation is applied, the default values apply.
 
 ## Pom.xml
 
+``` java
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 	http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    		<groupId>com.javawebtutor</groupId>
+    		<artifactId>JPAMavenExample</artifactId>
+    		<packaging>jar</packaging>
+    		<version>1.0-SNAPSHOT</version>
+    		<name>JPAMavenExample</name>
+    		<url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.22.Final</version>
+        </dependency>
+        <dependency>
+		 <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.21</version>
+        </dependency>
+    </dependencies>
+</project>
+```
+
+## Persistence.xml
+
+``` java
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+   <persistence-unit name="school">
+        <properties>
+         <property name = "hibernate.connection.url" value="jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true"/>
+         <property name = "hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+         <property name = "hibernate.connection.username" value="root"/>
+         <property name = "hibernate.connection.password" value="1234"/>
+         <property name = "hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+         <property name = "hibernate.hbm2ddl.auto" value="update"/>
+         <property name = "hibernate.show_sql" value = "true" />
+      </properties>
+   </persistence-unit>
+</persistence>
+```
+
+## JPA Save Objects
+
+Let's take a look at syntax of how we save objects:
+
+``` java
+public static void main(String[] args) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("school");
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Student student = new Student("Teo", new Date());
+        em.persist(student);
+        em.getTransaction().commit();
+    }
+}
+```
+[/slide]
+
+[slide]
+
+# JPA Relations
+
+[image assetsSrc="Hibernate(5).jpg" /]
+
+# Persistence Context and Entities
+
 
 
 [/slide]
