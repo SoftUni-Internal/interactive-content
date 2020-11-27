@@ -1,0 +1,144 @@
+[slide]
+
+# Triggers
+
+Triggers are small named programs in our database, which wait for a given event to occur.
+
+We don't call triggers explicitly, they are attached to our database and called only when a specific event, which is set on trigger creation occurs.
+
+These triggers can happen **BEFORE** the **event**.
+
+[image assetsSrc="Database-Programabillity.png" /]
+
+Or **AFTER** the given **event**.
+
+[image assetsSrc="Database-Programabillity(1).png" /]
+
+
+The events that can activate the **Triggers** can either be **INSERT**, **UPDATE** or **DELETE** queries.
+
+[image assetsSrc="Database-Programabillity(2).png" /]
+
+The syntax for creation of a trigger would be: 
+
+```java
+CREATE TABLE account (          //Here we declare a table acount
+acct_number INT PRIMARY KEY,    //with account_number PK
+ totalAmount DECIMAL(10,2));    //and totalAmount DECIMAL.
+
+CREATE TRIGGER ins_sum BEFORE INSERT ON account     //Here we declare a BEFORE INSERT Trigger on table account
+FOR EACH ROW SET @sum = @sum + NEW.totalAmount;     //and than we totalSum to the balance before and the new sum.
+
+DROP TRIGGER ins_sum; // Drop the trigger
+```
+
+[/slide]
+
+[slide hideTitle]
+# Problem: Triggered
+[code-task title="Problem: Triggered" taskId="13546e2c-dde7-4f94-8648-fa4e0157dc0e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a table **deleted_employees(employee_id PK, first_name,last_name,middle_name,job_title,deparment_id,salary)** 
+
+that will hold information about **fired(deleted)** employees from the employees table. 
+
+Add a trigger to employees table that inserts the corresponding information in **deleted_employees**. 
+
+Submit your queries using the "**MySQL Run Skeleton, run queries and check DB**" strategy.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
+
+DELETE FROM employees WHERE employee_id = 216;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
+[/input]
+[output]
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
+1
+Mike
+Seamans
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
+
+DELETE FROM employees WHERE employee_id = 59;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
+[/input]
+[output]
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
+1
+Deborah
+Poe
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Triggered
+
+[/slide]
