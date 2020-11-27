@@ -162,7 +162,7 @@ public static void main(String[] args) {
 
 # JPA Relations
 
-[image assetsSrc="Hibernate(5).jpg" /]
+[image assetsSrc="Hibernate(5).png" /]
 
 # Persistence Context and Entities
 
