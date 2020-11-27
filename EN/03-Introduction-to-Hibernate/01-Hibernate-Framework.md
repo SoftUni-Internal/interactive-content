@@ -212,9 +212,9 @@ public static void main(String[] args) {
 
 Hibernate query language extends and allows us to use **object-oriented programming** on our **SQL** queries.
 
-Difference between SQL and HQL is that hibernate query language is fully object-oriented and supports concepts like **inheritance** and **polymorphism**.
+Difference between **SQL** and **HQL** is that hibernate query language is fully object-oriented and supports concepts like **inheritance** and **polymorphism**.
 
-We can write independent queries in HQL, which are converted in SQL at runtime.
+We can write independent queries in **HQL**, which are converted in **SQL** at **runtime**.
 
 HQL can even returns the child objects as part of query result.
 
