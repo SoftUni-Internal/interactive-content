@@ -1,1 +1,1 @@
-# Joins, Subqueries and Indices
+# Joins Subqueries And Indices
