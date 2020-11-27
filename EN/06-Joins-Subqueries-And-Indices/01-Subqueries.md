@@ -4,7 +4,7 @@
 
 ## Query Manipulation On Multiple Levels
 
-Subquetries are basically SQL queries inside a large one:
+Subqueries are basically SQL queries inside a large one:
 
 - Can be nested in **SELECT**, **INSERT**, **UPDATE**, **DELETE**
   - Usually added within a **WHERE** clause
