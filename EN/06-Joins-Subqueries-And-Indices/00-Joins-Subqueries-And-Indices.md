@@ -25,7 +25,7 @@ Have a look at the example below.
 This example will produce Cartesian product:
 
 ```Java
-SELECT las_name, name, AS department_name
+SELECT last_name, name, AS department_name
 FROM employees, departments;
 ```
 
