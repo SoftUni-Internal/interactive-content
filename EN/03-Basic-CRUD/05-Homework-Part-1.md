@@ -20,6 +20,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+Download resources [here](https://mega.nz/file/yIATzIza#x07nQx0_1kaFPaZ0AvK4_vtSZudwsiTeAdZ8jFsO09w).
+
 Write SQL query to find the **first, middle and last name** of each employee. 
 
 **Sort the information by id.** 
