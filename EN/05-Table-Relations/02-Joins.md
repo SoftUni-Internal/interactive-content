@@ -4,7 +4,9 @@
 
 Now as we know the different ways to connect tables and the rules and guidance connected to this practice it's time to see the real power of **Relational Databases**.
 
-The **JOIN** statements are a great tool introduced in SQL, it gives us the chance to **connect** two tables by theirs' **foreign keys** and take all the information we need **simultaneously**, with only one query statement.
+The **JOIN** statements are a great tool introduced in SQL, it gives us the chance to **connect** two tables by theirs'
+
+ **foreign keys** and take all the information we need **simultaneously**, with only one query statement.
 
 To achieve **JOIN** we need two tables and a **JOIN CONDITION**.
 
