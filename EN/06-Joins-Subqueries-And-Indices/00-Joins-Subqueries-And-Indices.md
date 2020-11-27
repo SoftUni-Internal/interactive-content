@@ -81,10 +81,10 @@ Table courses:
 | 5      | MySQL      |
 
 ```Java
-SELECT students.name, course.name
+SELECT students.name, courses.name
 FROM students
-INNER JOIN course  // or just JOIN
-ON students.course_id = course.id
+INNER JOIN courses  // or just JOIN
+ON students.course_id = courses.id
 ```
 
 The resulting table would be:
