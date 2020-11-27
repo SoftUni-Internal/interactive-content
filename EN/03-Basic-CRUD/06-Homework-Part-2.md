@@ -20,11 +20,6 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-
-Download and get familiar with the **soft_uni, diablo and geography** database schemas and tables. 
-
-You will use them in this and the following exercises to write queries. 
-
 **Queries for SoftUni Database**
 
 Write a SQL query to find **all available information about the departments.**
@@ -4275,6 +4270,10 @@ public class Main {
 [task-description]
 ## Description
 **QUEARIES FOR GEOGRAPHY DATABASE!**
+
+Download and get familiar with the **soft_uni, diablo and geography** database schemas and tables. 
+
+You will use them in this and the following exercises to write queries. 
 
 Display all **mountain peaks** in alphabetical order. Submit your query statements as **Prepare DB & run queries**. 
 
