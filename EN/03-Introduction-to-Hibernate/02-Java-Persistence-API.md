@@ -164,8 +164,22 @@ public static void main(String[] args) {
 
 [image assetsSrc="Hibernate(5).png" /]
 
+[/slide]
+
+[slide]
+
 # Persistence Context and Entities
 
+[image assetsSrc="Hibernate(6).png" /]
+
+
+[/slide]
+
+[slide]
+
+# Entity Object Life Cycle
+
+[image assetsSrc="Hibernate(7).png" /]
 
 
 [/slide]
