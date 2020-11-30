@@ -3645,7 +3645,8 @@ Submit your query statements as **Prepare DB & run queries**.
 
 
 ## Examples
-| **Salary** |
+
+| **salary** |
 | --- |
 | 12500.00  |
 | 15120.00  |
