@@ -34,8 +34,8 @@ SELECT full_name, age, course FROM students; --We retrieve information for the n
 the keyword **WHERE** helps us with filtering the tabla and updating only the records we want. 
 
 ``` java
-UPDATE students                    --In this example we update
-SET course = 'Java Fundamentals'   --certain row in a table
+UPDATE students                    --In this example we update.
+SET course = 'Java Fundamentals'   --certain row in a table.
 WHERE full_name = 'Jane Doe'       --where a condition is met.
 ```
 
@@ -44,7 +44,7 @@ WHERE full_name = 'Jane Doe'       --where a condition is met.
 while **WHERE** has the same purpose as the example above.
 
 ``` java
-DELETE FROM students                --Here we delete a record from the table students
+DELETE FROM students                --Here we delete a record from the table students.
 WHERE course = 'JavaScipt Basics'   --where certain condition is true.
 ```
 [/slide]
