@@ -7,8 +7,9 @@ Write a program to modify the elements after receive the commands `swap`, `multi
 
 * `swap {index1} {index2}`: take two elements and swap their places.
 
-* `multiply {index1} {index2}`: take element at the 1st index and multiply it with element at 2nd index. Save the product at the 1st index.
+* `multiply {index1} {index2}`: take element at the 1st index and multiply it with element at 2nd index. 
 
+Save the product at the 1st index.
 
 * `decrease`: decreases all elements in the array with 1.
 
@@ -61,7 +62,7 @@ function solve(input) {
 
 ## Comments
 
-* 23 -2 321 87 42 90 -123 – initial values
+The initial state of the array: `23 -2 321 87 42 90 -123`
 
 * `swap 1(-2)` and `3(87)`
 
