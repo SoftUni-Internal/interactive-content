@@ -86,7 +86,7 @@ The state array after the fifth command: `87 7383 2369943 -123 42 90 -2`
 
 * `decrease – all - 1`
 
-The state array after the sixt command: `86 7383 2369942 -124 41 89 -3`
+The state array after the sixth command: `86 7383 2369942 -124 41 89 -3`
 
 
 | **Input** | **Output** |
