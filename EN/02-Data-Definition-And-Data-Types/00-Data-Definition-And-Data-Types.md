@@ -30,6 +30,17 @@ The following table shows the summary of numeric types in MySQL:
 
 [image assetsSrc="Data-Definition-And-Data-Types.png" /]
 
+| **Numeric Types** | **Description**                          | **Spec**                                             |
+| ----------------- | ---------------------------------------- | ---------------------------------------------------- |
+| TINYINT           | A very small integer                     | integer(-128 to 127)                                 |
+| SMALLINT          | A small integer                          | integer(-32768 to 32767)                             |
+| MEDIUMINT         | A medium-sized integer                   | integer(-8388608 to 8388607)                         |
+| INT               | A standard integer                       | integer(-2147483648 to 2147483647                    |
+| BIGINT            | A large integer                          | integer(-9223372036854775808 to 9223372036854775807) |
+| DECIMAL           | A fixed-point number                     | double stored as string                              |
+| FLOAT             | A single-precision floating point number | decimal(precision to 23 digits)                      |
+| DOUBLE            | A double-precision floating point number | decimal(24 to 53 digits)                             |
+
 ```Java
 INT[(M)][UNSIGNED];  // Where "M" is the count of digits stored for the value
 ```
