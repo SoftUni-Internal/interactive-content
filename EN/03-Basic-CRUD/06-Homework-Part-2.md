@@ -3644,7 +3644,11 @@ Submit your query statements as **Prepare DB & run queries**.
 
 ## Examples
 
+<<<<<<< HEAD
 | **Salary** |
+=======
+| **salary** |
+>>>>>>> 14bf6e0027194aaa6b6f8785eb684ce235ca0e40
 | --- |
 | 12500.00  |
 | 15120.00  |
