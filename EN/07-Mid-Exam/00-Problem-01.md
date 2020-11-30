@@ -137,7 +137,7 @@ Game over
 [/input]
 [output]
 5 \- 5 \- 10 \- 10 \- 10
-Iskren finished the archery tournament with 10 points\!
+Peter finished the archery tournament with 10 points\!
 [/output]
 [/test]
 [test]
