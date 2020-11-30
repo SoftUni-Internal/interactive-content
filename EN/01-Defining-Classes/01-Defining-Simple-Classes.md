@@ -34,7 +34,6 @@ The **behaviour** associated with a class or object is implemented with **method
 [stream language="RO" videoId="483436731"  /]
 [/video-vimeo]
 
-
 When defining class, it contains only those components of a class declaration that are required.
 
 The obligatory components are:
