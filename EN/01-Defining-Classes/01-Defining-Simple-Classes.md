@@ -3,8 +3,8 @@
 # Defining Simple Classes
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="50 "]
-[stream language="EN" videoId="483436616" default /]
-[stream language="RO" videoId="483436616"  /]
+[stream language="EN" videoId="485442096" default /]
+[stream language="RO" videoId="485442096"  /]
 [/video-vimeo]
 
 A class is the **basic building block of an object-oriented language** such as Java.
@@ -30,8 +30,8 @@ The **behaviour** associated with a class or object is implemented with **method
 # Class components
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="100 "]
-[stream language="EN" videoId="483436731" default /]
-[stream language="RO" videoId="483436731"  /]
+[stream language="EN" videoId="485442219" default /]
+[stream language="RO" videoId="485442219"  /]
 [/video-vimeo]
 
 When defining class, it contains only those components of a class declaration that are required.
@@ -66,8 +66,8 @@ class Car {
 # Naming Classes
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="81 "]
-[stream language="EN" videoId="483436669" default /]
-[stream language="RO" videoId="483436669"  /]
+[stream language="EN" videoId="485442154" default /]
+[stream language="RO" videoId="485442154"  /]
 [/video-vimeo]
 
 Below are the class naming rules of java programming language. 
@@ -86,8 +86,8 @@ Use whole words-avoid acronyms and abbreviations (unless the abbreviation is muc
 # Creating an Object
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="86 "]
-[stream language="EN" videoId="483436739" default /]
-[stream language="RO" videoId="483436739"  /]
+[stream language="EN" videoId="485442316" default /]
+[stream language="RO" videoId="485442316"  /]
 [/video-vimeo]
 
 Creating an object of a defined class is called instantiation.
@@ -115,8 +115,8 @@ Car thirdCar = new Car();
 # Object Reference
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="153 "]
-[stream language="EN" videoId="483436767" default /]
-[stream language="RO" videoId="483436767"  /]
+[stream language="EN" videoId="485442368" default /]
+[stream language="RO" videoId="485442368"  /]
 [/video-vimeo]
 
 The `new` operator instantiates a Class by allocating memory for a new object and returning a **reference** to that memory. 
@@ -137,8 +137,8 @@ Variables whose type is a class are known as **reference variables** and they ar
 ## Classes vs. Objects
 
 [vimeo-video startTimeInSeconds="0" endTimeInSeconds="43 "]
-[stream language="EN" videoId="483436805" default /]
-[stream language="RO" videoId="483436805"  /]
+[stream language="EN" videoId="485442442" default /]
+[stream language="RO" videoId="485442442"  /]
 [/video-vimeo]
 
 | Classes | Objects |
