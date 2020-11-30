@@ -54,7 +54,7 @@ You receive a string, representing the dungeons rooms, separated with `|` (verti
 ## Output
 Print the corresponding messages, described above.
 
-[code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -77,7 +77,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`cat 10|potion 30|orc 10|chest 10|snake 25|chest 110`| You slayed cat.|
+|`[cat 10|potion 30|orc 10|chest 10|snake 25|chest 110]`| You slayed cat.|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You slayed orc.|

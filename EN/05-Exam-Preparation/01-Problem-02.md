@@ -22,7 +22,7 @@ Otherwise, ignore the command.
 ## Output
 After receiving `Craft!` print the items in your inventory, separated by `, ` (comma and space).
 
-[code-task title="Time for Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
