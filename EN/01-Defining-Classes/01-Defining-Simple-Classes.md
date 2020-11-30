@@ -2,7 +2,7 @@
 
 # Defining Simple Classes
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="50 "]
+[vimeo-video]
 [stream language="EN" videoId="485442096" default /]
 [stream language="RO" videoId="485442096"  /]
 [/video-vimeo]
@@ -12,6 +12,18 @@ A class is the **basic building block of an object-oriented language** such as J
 Everything in Java is associated with **classes** and **objects**, along with its attributes and **methods**. 
 
 For example: in real life, a **car is an object**. 
+
+```java
+public class Car {
+
+    String Color;
+    int weight;
+
+    void drive(){ ... }
+
+    void brake(){ ... }
+}
+```
 
 The car has **attributes**, such as **weight** and **colour**, and **methods**, such as **drive** and **brake**.
 
@@ -27,9 +39,9 @@ The **behaviour** associated with a class or object is implemented with **method
 
 [slide]
 
-# Class components
+# Class Components
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="100 "]
+[vimeo-video]
 [stream language="EN" videoId="485442219" default /]
 [stream language="RO" videoId="485442219"  /]
 [/video-vimeo]
@@ -65,32 +77,44 @@ class Car {
 [slide]
 # Naming Classes
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="81 "]
+[vimeo-video]
 [stream language="EN" videoId="485442154" default /]
 [stream language="RO" videoId="485442154"  /]
 [/video-vimeo]
 
-Below are the class naming rules of java programming language. 
+Below are the class naming rules of Java programming language. 
 
-They must be followed while developing software in java for good maintenance and readability of code. 
+They must be followed while developing software in Java for good maintenance and readability of code. 
 
 Class names should be nouns, in mixed case with the first letter of each internal word capitalized. 
 
+For example:
+
+```java
+class CarMaintenanceHistory { ... }
+// Good naminig 
+```
+
+```java
+class Carhp { ... }
+// Bad naming
+```
+
 Try to keep your class names simple and descriptive. 
 
-Use whole words-avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
+Use whole word. Avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
 
 [/slide]
 
 [slide]
 # Creating an Object
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="86 "]
+[vimeo-video]
 [stream language="EN" videoId="485442316" default /]
 [stream language="RO" videoId="485442316"  /]
 [/video-vimeo]
 
-Creating an object of a defined class is called instantiation.
+Creating an object of a defined class is called **instantiation**.
 
 The instance is the object itself, which is created runtime.
 
@@ -114,7 +138,7 @@ Car thirdCar = new Car();
 [slide]
 # Object Reference
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="153 "]
+[vimeo-video]
 [stream language="EN" videoId="485442368" default /]
 [stream language="RO" videoId="485442368"  /]
 [/video-vimeo]
@@ -131,12 +155,30 @@ So, we cannot store object in a variable, we can store only its **reference to t
 
 Variables whose type is a class are known as **reference variables** and they are stored in the **Stack** memory.
 
+For example:
+
+```java
+class Car {
+
+    int horsePower;
+}
+    
+Car sportsCar = new Car()
+```
+- In the `Stack` memory, we saved `sportsCar(4860c54d)`, that point `Heap` memory.
+- In the `Heap` memory, we saved:
+```java
+// for objecs sportsCar(4860c54d):
+type=Car;
+int horsePower=0;
+``` 
+
 [/slide]
 
 [slide]
 ## Classes vs. Objects
 
-[vimeo-video startTimeInSeconds="0" endTimeInSeconds="43 "]
+[vimeo-video]
 [stream language="EN" videoId="485442442" default /]
 [stream language="RO" videoId="485442442"  /]
 [/video-vimeo]
