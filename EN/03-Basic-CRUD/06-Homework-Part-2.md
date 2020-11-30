@@ -3642,10 +3642,9 @@ Then **select Salaries column** from the **Employees** table.
 
 Submit your query statements as **Prepare DB & run queries**. 
 
-# Example
+
 
 ## Examples
-
 | **Salary** |
 | --- |
 | 12500.00  |
