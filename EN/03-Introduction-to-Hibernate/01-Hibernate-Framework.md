@@ -2,23 +2,23 @@
 
 # Hibernate Framework
 
-Hibernate is a open-source Java ORM framework that take care of mapping an object-oriented model to a relational database.
+Hibernate is an open-source Java ORM framework that takes care of mapping an object-oriented model to a relational database.
 
 It is implemented by the configuration of an **XML file** or by using **Java Annotations.**
 
-Hibernate provides an abstract layer for us, meaning that software developers doesn't need to worry about the implementations.
+Hibernate provides an abstract layer for us, meaning that software developers don't need to worry about the implementations.
 
-Hibernate does the things for us directly like **connection with the database, writing a queries for CRUD operations and more.**
+Hibernate does the things for us directly like **connection with the database, writing queries for CRUD operations, and more.**
 
-Using ORM like hibernate improves our productivity by giving us high-level oriented API and removes the needs to write pure SQL.
+Using ORM like hibernate improves our productivity by giving us high-level-oriented API and removes the need to write pure SQL.
 
-It helps us improving our performance, maintainability and portability by providing us a way to write less and more cleaner code.
+It helps us improve our performance, maintainability, and portability by providing us a way to write less and more cleaner code.
 
 We have different approaches to **Java ORM:**
 
 - POJO (Plain Old Java Objects) + XML mappings
 
-  * This approach is a bit old-fashioned, but very powerful tool.
+  * This approach is a bit old-fashioned, but a very powerful tool.
   * It is implemented in "classical" Hibernate.
 
 - Annotated Java classes (POJO) mapped to DB tables
@@ -104,11 +104,11 @@ public class Student {
   private String name;
   private LocalDate registrationDate;
 
-  // Constructor, getters and setters
+  // Constructor, getters, and setters
 }
 ```
 
-Now, we must create and configurate our student.cfg.xml mapping file.
+Now, we must create and configure our student.cfg.xml mapping file.
 
 ``` java
 <?xml version="1.0" encoding="utf-8"?>
@@ -146,17 +146,17 @@ public class Main {
 }
 ```
 
-Let's see how we can **save** our objects after transaction:
+Let's see how we can **save** our objects after the transaction:
 
 ``` java
 public static void main(String[] args) {
 
-	// Logic
+    // Logic
 
     session.beginTransaction();
-	
-	Student example = new Student();
-	session.save(example); // Saving object
+    
+    Student example = new Student();
+    session.save(example); // Saving object
 
     session.getTransaction().commit();
     session.close();
@@ -172,8 +172,8 @@ public static void main(String[] args) {
     // Logic
 
     session.beginTransaction();
-	
-	Student student = session.get(Student.class, 1); // We get the object in the method
+    
+    Student student = session.get(Student.class, 1); // We get the object in the method
 
     session.getTransaction().commit();
     session.close();
@@ -186,11 +186,11 @@ We can **retrieve** data by queries also:
 
 ``` java
 public static void main(String[] args) {
-	// Logic here
+    // Logic here
         session.beginTransaction();
 
-	List<Student> studentList = 
-	session.createQuery("FROM Student " , Student.class).list(); // We are getting list of objects
+    List<Student> studentList = 
+    session.createQuery("FROM Student " , Student.class).list(); // We are getting list of objects
         for (Student student : studentList) {
             System.out.println(student.getId());
         }
@@ -212,13 +212,13 @@ public static void main(String[] args) {
 
 Hibernate query language extends and allows us to use **object-oriented programming** on our **SQL** queries.
 
-Difference between **SQL** and **HQL** is that hibernate query language is fully object-oriented and supports concepts like **inheritance** and **polymorphism**.
+The difference between **SQL** and **HQL** is that hibernate query language is fully object-oriented and supports concepts like **inheritance** and **polymorphism**.
 
 We can write independent queries in **HQL**, which are converted in **SQL** at **runtime**.
 
-HQL can even returns the child objects as part of query result.
+HQL can even return the child objects as part of the query result.
 
-Let's take a look at this simple examples:
+Let's take a look at these simple examples:
 
 **SELECT:**
 
@@ -243,14 +243,14 @@ Let see how we can obtain data information by Criteria:
 
 ``` java
 public static void main(String[] args) {
-	public static void main(String[] args) {
-	// Logic here...
+    public static void main(String[] args) {
+    // Logic here...
     session.beginTransaction();
-	CriteriaBuilder builder = session.getCriteriaBuilder();
-	CriteriaQuery criteria = builder.createQuery();
-	Root<Student> r = criteria.from(Student.class);
-	criteria.select(r).where(builder.like(r.get("name"),"P%"));
-	List<Student> studentList = session.createQuery(criteria).getResultList(); // Get list of objects by criteria
+    CriteriaBuilder builder = session.getCriteriaBuilder();
+    CriteriaQuery criteria = builder.createQuery();
+    Root<Student> r = criteria.from(Student.class);
+    criteria.select(r).where(builder.like(r.get("name"),"P%"));
+    List<Student> studentList = session.createQuery(criteria).getResultList(); // Get list of objects by criteria
         for (Student student : studentList) {
             System.out.println(student.getName());
         }
