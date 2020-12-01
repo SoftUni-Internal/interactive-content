@@ -75,7 +75,7 @@ As a result, we have two tables - "bikes" and "cars" with **id** and **type** co
 
   * Since we have individual table per entity, we can define specific constraints at the database layer.
 
-  * No **NULL** values
+  * No **NULL** values.
 
   * Good **performance** when querying single entities.
 
