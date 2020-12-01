@@ -1,12 +1,8 @@
-[slide]
-
 # Joins, Subqueries and Indices
 
 In this lesson we will have a look at **Joins**, **Subqueries** and **Indices**.
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/3IZTXSDR#FHeTo3uqIs6yEfIMQ1AXZh02WgkbUGaDsecPveCrSho)
-
-[/slide]
 
 [slide]
 
@@ -14,13 +10,21 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 ## Gathering data from multiple tables
 
-Sometimes you need to combine data from several tables into a new table.
+As you may know a relational database consists of multiple related tables.
+
+And sometimes you need to combine data from several tables into a new table.
+
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+The related column is a column which exists as a primery key in the first table and as a secondary key in the second table.
 
 Have a look at the example below.
 
-[image assetsSrc="Joins-Subqueries-And-Indices.png" /]
+Notice that the "course_id" column in the "Students" table refers to the "id" column in the "Courses" table.
 
-### Cartesian Product(1)
+The relationship between the two tables is the courses "id" column.
+
+### Cartesian Product
 
 This example will produce Cartesian product:
 
@@ -28,6 +32,13 @@ This example will produce Cartesian product:
 SELECT last_name, name, AS department_name
 FROM employees, departments;
 ```
+
+- Each row in the first table is paired with all the rows in the second table.
+  - When there is no relationship defined between the two tables.
+- Formed when:
+  - A join condition is omitted.
+  - A join condition is invalid.
+- To avoid, always include a valid **JOIN condition**.
 
 The result:
 
@@ -39,18 +50,9 @@ The result:
 | Gilbert       | Sales               |
 | Brown         | Sales               |
 
-### Cartesian Product(2)
-
-- Each row in the first table is paired with all the rows in the second table
-  - When there is no relationship defined between the two tables
-- Formed when:
-  - A join condition is omitted
-  - A join condition is invalid
-- To avoid, always include a valid **JOIN condition**
-
 ### Joins
 
-- **JOINS** - used to collect data from **two** or **more** tables
+- **JOINS** - used to collect data from **two** or **more** tables.
 - Types:
   - INNER JOIN
   - LEFT JOIN
@@ -83,9 +85,15 @@ Table courses:
 ```Java
 SELECT students.name, courses.name
 FROM students
-INNER JOIN courses  // or just JOIN
+INNER JOIN courses  // Or just JOIN
 ON students.course_id = courses.id
 ```
+
+The inner JOIN is used to return rows from both tables that satisfy a given condition.
+
+In this case the condition is **students.course_id = courses.id**.
+
+If you want to get list of students and their courses, you can simply use an INNER JOIN for that, which returns rows from both tables that satisfy the condition above.
 
 The resulting table would be:
 
@@ -102,11 +110,15 @@ Produces a set of records which **match in both tables**!
 
 **LEFT JOIN**:
 
+The LEFT JOIN returns all the rows from the table on the left even if no matching rows have been found in the table on the right.
+
+Where no matches have been found in the table on the right, **NULL** is returned.
+
 ```Java
 SELECT students.name, courses.name
 FROM students
 LEFT JOIN courses
-ON students.course_id = courses.id
+ON students.course_id = courses.id  // Matching condition
 ```
 
 And this is the resulting table:
@@ -121,9 +133,17 @@ And this is the resulting table:
 
 Matches every entry in **left** table regardless of match in the **right**.
 
+There was no match found for Emma, so we have **NULL** in the courses_name column.
+
 [image assetsSrc="Joins-Subqueries-And-Indices(2).png" /]
 
 **RIGHT JOIN**:
+
+RIGHT JOIN is the opposite of LEFT JOIN.
+
+The RIGHT JOIN returns all the columns from the table on the right even if no matching rows have been found in the table on the left.
+
+If no matches have been found in the table on the left, **NULL** is returned.
 
 ```Java
 SELECT students.name, courses.name
@@ -145,11 +165,13 @@ And this is the resulting table:
 
 Matches every entry in **right** table regardless of match in the **left**.
 
+So as a result we have **NULL** for **JavaScript** and **PHP**.
+
 [image assetsSrc="Joins-Subqueries-And-Indices(3).png" /]
 
 **OUTER (FULL JOIN)**:
 
-Returns all records in both tables regardless of **any** match
+Returns all records in both tables regardless of **any** match.
 
 - Less useful than **INNER**, **LEFT** or **RIGHT JOINs** and it's **not implemented in MySQL**.
 - We can use **UNION** of a **LEFT** and **RIGHT JOIN**.
@@ -184,9 +206,11 @@ And this is the resulting table:
 | NULL              | JavaScript       |
 | NULL              | PHP              |
 
-**CROSS JOIN(1)**
+**CROSS JOIN**
 
-- Produces a set of associated rows of two tables
+In MySQL, the CROSS JOIN produced a result set which is the product of rows of two associated tables when no **WHERE** clause is used with CROSS JOIN.
+
+- Produces a set of associated rows of two tables.
   - Multiplication of each row in the first table with each in second.
   - The result is a **Cartesian** product, when there's **no condition** in the **WHERE** clause.
 
@@ -195,23 +219,45 @@ SELECT * FROM courses AS c
 CROSS JOIN students AS s;  // No Join Condition
 ```
 
-**CROSS JOIN(2)**
+Cross JOIN is a simplest form of JOIN which matches each row from one database table to all rows of another.
+
+In MySQL, the CROSS JOIN behaves like JOIN and INNER JOIN without using any condition.
+
+Have a look at the following example below:
 
 [image assetsSrc="Joins-Subqueries-And-Indices(5).png" /]
 
 **Join Overview**
 
+To be able to implement joins we need a relation between tables.
+
+The relationships between tables are done by primary keys and secondary keys.
+
+In this case **department_id** is a secondary key in **employees** table, it is also a primary key in **departments** table.
+
 [image assetsSrc="Joins-Subqueries-And-Indices(6).png" /]
 
 INNER JOIN
+
+The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns.
+
+If there are records in the "employees" table that do not have matches in "departments" table, these will not be shown!
 
 [image assetsSrc="Joins-Subqueries-And-Indices(7).png" /]
 
 LEFT JOIN
 
+The LEFT JOIN keyword returns all records from the left table, and the matched records from the right table.
+
+The result is **NULL** in the right table, if there is no match.
+
 [image assetsSrc="Joins-Subqueries-And-Indices(8).png" /]
 
 RIGHT JOIN
+
+The RIGHT JOIN keyword returns all records from the right table, and the matched records from the left table.
+
+The result is **NULL** in the left table, if there is no match.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(9).png" /]
 
