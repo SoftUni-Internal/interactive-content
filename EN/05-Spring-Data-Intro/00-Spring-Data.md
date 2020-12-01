@@ -34,7 +34,7 @@ Few of the tools we get when working with **Spring data** are:
 
 - We can create dynamic query derivation from repository method names.
 
-- Better exception handling by translating data access related exceptions
+- Better exception handling by translating data access related exceptions.
 
 - And many more... 
 
@@ -106,7 +106,7 @@ Let's have an **example**:
 
 ```
 
-The configuration for the spring application is held in the application.properties
+The configuration for the spring application is held in the application.properties.
 
 ```java
 #Data Source Properties

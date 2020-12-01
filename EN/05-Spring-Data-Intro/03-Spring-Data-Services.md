@@ -57,25 +57,25 @@ Firstly we will need an entry point for our **Spring Application**.
 ```java
 @SpringBootApplication                                          //The entry point of our application is declared with this annotation. 
 public class MainApplication {                                  //the web application underneath is just a simple console application.
-public static void main(String[] args) {                               //as we know, every console application needs a static void main class.
+public static void main(String[] args) {                        //as we know, every console application needs a static void main class.
         SpringApplication.run(MainApplication.class,args);      //That's how we start our web app.
     }
 }
 
-    @Component                                              //The component class will let spring to know
-public class ConsoleRunner implements CommandLineRunner {   // that this class will need dependency injection.    
+    @Component                                                  //The component class will let spring to know
+public class ConsoleRunner implements CommandLineRunner {       // that this class will need dependency injection.    
     @Autowired
-    private StudentService studentService;                  //We set the dependency for student service.
+    private StudentService studentService;                      //We set the dependency for student service.
 
     @Autowired
-    private MajorService major service;                      //Than we set the second dependency for major service.
+    private MajorService major service;                         //Than we set the second dependency for major service.
 
     @Override
     public void run(String... strings) throws Exception {   
         Major major = new Major("Java DB Fundamentals");
         Student student = new Student("John",new Date(), major);
         majorService.create(major);
-        studentService.register(student);                   //Than we create our records and persist the data.
+        studentService.register(student);                       //Than we create our records and persist the data.
     }
 }
 ```
