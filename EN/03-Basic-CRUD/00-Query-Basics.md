@@ -5,8 +5,6 @@
 # Getting the Query Basics
 
 
-Hello, youngling programmer, after getting to know the **data types** and **modeling your first database** in MYSQL, now it's time for you to learn how to do basic **CRUD** operations using queries to the data in it.
-
 First, let's understand what the acronym **CRUD** stands for including few query examples.
 
 -> **C** stands for **CREATE** -- using the **INSERT INTO** statement we can choose table and rows which we want to populate,  

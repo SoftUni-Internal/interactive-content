@@ -12101,7 +12101,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-**QUEARIES FOR DIABLO DATABASE!**
+**QUERIES FOR DIABLO DATABASE!**
 
 Display the **name** of all **characters** in alphabetical order. 
 

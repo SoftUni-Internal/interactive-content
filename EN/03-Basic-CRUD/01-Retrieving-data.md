@@ -34,7 +34,7 @@ SELECT full_name, course, grade FROM students; //Makes a "projection" giving us 
 
 ``` java
 SELECT `full_name`, `grade`                   //Makes a filtration, taking only the subset of records
-FROM `students`                             //that meet our requirement of courseName.
+FROM `students`                               //that meet our requirement of courseName.
 WHERE courseName = "Java Advanced";
 ```
 
@@ -49,8 +49,8 @@ WHERE courseName = "Java Advanced";
 
 ``` java
 SELECT `course_name`, `course_schedule`, `teacher_full_name`    //Here we can choose information from
-FROM `Orders`                                               //two tables by using JOIN to join them
-INNER JOIN Customers ON Courses.teacherId=Teachers.id;    //by two equal rows
+FROM `Orders`                                                   //two tables by using JOIN to join them
+INNER JOIN Customers ON Courses.teacherId=Teachers.id;          //by two equal rows
 ```
 
 [image assetsSrc="Retrieving-data(3).png" /]
@@ -415,7 +415,7 @@ You can filter the rows in your table, by using the keyword **WHERE** which will
 We can use logical operators <>= in combination with **WHERE** to get better control over the information we want to receive.
 
 ```java
-SELECT *                           //This query will result in a filtered
+SELECT *                             //This query will result in a filtered
 FROM `students`                      //collection of records
 WHERE `age` >= 14                    //where all of our records will meet the requirements.
 AND `course` = "Java Advanced"       //The keyword "AND" is used to combine conditions.
@@ -430,7 +430,7 @@ Few other comparison conditions make our lives easier as developers and make our
 ### NOT, OR, AND
 
 ``` java
-SELECT `first_name`                                           //As we don't want to meet any
+SELECT `first_name`                                             //As we don't want to meet any
 FROM `students`                                                 //of the combined with the keyword 'AND' conditions
 WHERE NOT (`course_name` = 'JS Basics' AND 'Java Basics')       //we use the keyword 'NOT' to reverse the logic
 ```
@@ -443,8 +443,8 @@ Now let's have a look over the keyword 'OR'.
 
 ```java
 SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Now we want only the full_name
-FROM `students`                                                   //of students
-WHERE `course_name` = 'JS Basics' AND 'Java Basics'               //where their course is either 'JS Basics' or 'Java Basics'
+FROM `students`                                                       //of students
+WHERE `course_name` = 'JS Basics' AND 'Java Basics'                   //where their course is either 'JS Basics' or 'Java Basics'
 ```
 The keyword equivalent of **OR** in Java would be **'||' operator**.
 
@@ -456,8 +456,8 @@ Now let's have a look over a few operators that are native only to SQL.
 
 ```java
 SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Here we want the students names
-FROM `students`                                                   //where their age
-WHERE `age` BETWEEN 14 AND 18                                     //is between the conditions we set.
+FROM `students`                                                       //where their age
+WHERE `age` BETWEEN 14 AND 18                                         //is between the conditions we set.
 ```
 
 The **BETWEEN** operator is used in combination with the **AND** operator to set the boundaries of the filtration we want.
@@ -467,7 +467,7 @@ The operator is inclusive, so it's taken into notice both boundaries. The values
 ### IN/NOT IN
 
 ```java                                                                   
-SELECT *                                                                 //This query aims to return us
+SELECT *                                                                   //This query aims to return us
 FROM `students`                                                            //all the information for students
 WHERE `course` IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')    //who's course is in between the values we stated.
 ```
@@ -623,7 +623,7 @@ For this we can use the **ORDER BY** clause, which selects the information and o
 Besides, you can use the keywords **ASC** and **DESC** to reverse the order in the results,  by default the **ORDER BY** clause uses **ASC** strategy.
 
 ```java
-SELECT *                            //Here we choose all the information
+SELECT *                              //Here we choose all the information
 FROM `students`                       //for the table students
 WHERE `age` BETWEEN 14 AND 50         //filtered by where they meet the condition
 ORDER BY `age` DESC                   // Ordered by their age descending.
@@ -652,7 +652,7 @@ In other words **Views** are nothing but **saved SQL queries**.
 For example:
 
 ```java
-CREATE VIEW `Combination of columns AS  //We declare the creation of view
+CREATE VIEW `Combination of columns AS                             //We declare the creation of view
 SELECT `full_name`, `course`, `study_hours`, FROM RandomColumns    //and we set what information we want from a given table
 ```
 

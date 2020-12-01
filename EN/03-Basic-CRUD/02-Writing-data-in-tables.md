@@ -13,7 +13,7 @@ This query is possible and it will compile, but to be more exhaustive and make o
 
 ```java
 INSERT INTO students(`first_name`, `last_name`, `age`, `course_name`)     //As we specify the column names it will be easier for whoever
-VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications');  //reads our query to better undestand what we were trying to do.
+VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications');          //reads our query to better undestand what we were trying to do.
 ```
 
 
