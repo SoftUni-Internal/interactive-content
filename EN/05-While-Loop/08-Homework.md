@@ -1,12 +1,8 @@
 [slide]
 # Homework
-Welcome to the homework. 
-
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
-
-We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
+Welcome to the homework tab.
+Here, we are going to write a couple of console applications together.
+Let us solve a few problems to exercise what we have learned.
 [image assetsSrc="homeowrk.png" /]
 [/slide]
 

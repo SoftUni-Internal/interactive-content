@@ -6,7 +6,7 @@ In this lesson you learnt that:
    - While the loop condition is true
 
 - Use **for** when you initially know the number of repetitions, **while** otherwise
-- **while** loops can be **infinite**
+- **While** loops can be **infinite**
      - Use the **break** operator to exit from the loop on certain condition
 
 [/slide]
