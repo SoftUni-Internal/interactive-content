@@ -306,3 +306,193 @@ age: 22
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: City
+[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function city(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Receive and array containing five elements. 
+
+Create a city object which will hold the **city name**, **area, population**, **country** and **postcode**. 
+
+Loop through all the keys and print them with their values in format:
+
+`{key} -> {value}`
+
+The input will be in the following order: **name**, **area**, **population**, **country** and **postCode**.
+
+See the examples below.
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
+||area \-\> 228|
+||population \-\> 1.83m|
+||country \-\> Romania|
+||postCode \-\> 010082|
+
+[/task-description]
+[tests]
+[test]
+[input]
+Sofia
+492
+1238438
+Bulgaria
+1000
+[/input]
+[output]
+name -> Sofia
+area -> 492
+population -> 1238438
+country -> Bulgaria
+postCode -> 1000
+[/output]
+[/test]
+[test]
+[input]
+hnn
+1848
+354645
+mklmlk
+1561
+[/input]
+[output]
+name -> hnn
+area -> 1848
+population -> 354645
+country -> mklmlk
+postCode -> 1561
+[/output]
+[/test]
+[test]
+[input]
+ii
+44
+189
+jiji
+484
+[/input]
+[output]
+name -> ii
+area -> 44
+population -> 189
+country -> jiji
+postCode -> 484
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: City
+[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function city(input){
+ let cityObject = {
+        name: input[0],
+        area: input[1],
+        population: input[2],
+        country: input[3],
+        postCode: input[4]
+    }
+
+    for (let key in cityObject){
+        console.log(`${key} -> ${cityObject[key]}`);
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Receive and array containing five elements. 
+
+Create a city object which will hold the **city name**, **area, population**, **country** and **postcode**. 
+
+Loop through all the keys and print them with their values in format:
+
+`{key} -> {value}`
+
+The input will be in the following order: **name**, **area**, **population**, **country** and **postCode**.
+
+See the examples below.
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
+||area \-\> 228|
+||population \-\> 1.83m|
+||country \-\> Romania|
+||postCode \-\> 010082|
+
+[/task-description]
+[tests]
+[test]
+[input]
+Sofia
+492
+1238438
+Bulgaria
+1000
+[/input]
+[output]
+name -> Sofia
+area -> 492
+population -> 1238438
+country -> Bulgaria
+postCode -> 1000
+[/output]
+[/test]
+[test]
+[input]
+hnn
+1848
+354645
+mklmlk
+1561
+[/input]
+[output]
+name -> hnn
+area -> 1848
+population -> 354645
+country -> mklmlk
+postCode -> 1561
+[/output]
+[/test]
+[test]
+[input]
+ii
+44
+189
+jiji
+484
+[/input]
+[output]
+name -> ii
+area -> 44
+population -> 189
+country -> jiji
+postCode -> 484
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
