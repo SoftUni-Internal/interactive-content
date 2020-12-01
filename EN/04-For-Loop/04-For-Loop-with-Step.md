@@ -142,7 +142,7 @@ function examCountdown (days) {
 Write a program, which:
 
 * Reads an integer - count of **days before an exam**
-* For **each day** prints: `{currentDay} days before the exam`
+* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
 * At the end prints: `The exam has come.`
 
 # Example
@@ -194,7 +194,7 @@ function examCountdown (input) {
 Write a program, which:
 
 * Reads an integer - count of **days before an exam**
-* For **each day** prints: `{currentDay} days before the exam`
+* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
 * At the end prints: `The exam has come.`
 
 # Example

@@ -1,17 +1,20 @@
 [slide]
 # Infinite Loops
-Repeating a block of code an infinite number of times:
+
+Infinite loops can **repeat a block of code an unlimited number of times.** 
+
+Usage in Programming:
+
+* They are widely used in game development for drawing the game environment.
+
+* For drawing animations. 
+
+* In web servers, as they run permanently.
+
 ```js
 for ( ; ; ) {
   console.log("Hello World");
 }
 // You can skip the initialization, condition and the increment
 ```
-
-# Usage in Programming
-Widely used in game development for drawing the game environment
-
-Used for drawing animations
-
-Web servers run infinitely until said to stop
 [/slide]

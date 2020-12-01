@@ -1,6 +1,6 @@
 [slide]
 # Iterating over Characters
-It is good to know that the **for loops** don't only work with numbers. 
+It is good to know that **for loops** do not only work with numbers. 
 
 We can also use **for loops** to iterate over **characters**.
 
@@ -18,6 +18,7 @@ Here is an example of how a loop can pass sequentially through some **letters** 
 ```
 
 # ASCII Table
+
 **ASCII** stands for American Standard Code for Information Interchange. 
  
 Computers can only understand numbers, so an **ASCII** code is the numerical representation of a character such as `a` or `@` or an action of some sort. 
