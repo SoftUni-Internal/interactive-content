@@ -64,8 +64,9 @@ This allows for more than one non-clustered index per table.
 From the discussion we find following differences between clustered and non-clustered indexes.
 
 1. There can be only one clustered index per table. However, you can create multiple non-clustered indexes on a single table.
-2. Clustered indexes only sort tables. Therefore, they do not consume extra storage. Non-clustered indexes are stored in a separate place from the actual table claiming more storage space.
-3. Clustered indexes are faster than non-clustered indexes since they don’t involve any extra lookup step.
+2. Clustered indexes only sort tables. Therefore, they do not consume extra storage.
+3. Non-clustered indexes are stored in a separate place from the actual table claiming more storage space.
+4. Clustered indexes are faster than non-clustered indexes since they don’t involve any extra lookup step.
 
 ### Indices Syntax
 
