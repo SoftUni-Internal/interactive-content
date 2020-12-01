@@ -22,12 +22,6 @@ A JOIN clause is used to combine rows from two or more tables, based on a relate
 
 The related column is a column which exists as a primery key in the first table and as a secondary key in the second table.
 
-Have a look at the example below.
-
-Notice that the "course_id" column in the "Students" table refers to the "id" column in the "Courses" table.
-
-The relationship between the two tables is the courses "id" column.
-
 ### Cartesian Product
 
 This example will produce Cartesian product:
@@ -65,6 +59,12 @@ The result:
   - CROSS JOIN
 
 **INNER JOIN**:
+
+Have a look at the example below.
+
+Notice that the "course_id" column in the "Students" table refers to the "id" column in the "Courses" table.
+
+The relationship between the two tables is the courses "id" column.
 
 Table students:
 
