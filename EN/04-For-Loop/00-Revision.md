@@ -1,6 +1,6 @@
 [slide]
 # Revision 
-Before proceeding ahead, let's remind ourselves about the program concepts and techniques that we have learned in the last session.
+Before we proceed with this lesson, let us see the programming concepts and techniques from the last one. 
 
 # Nested Conditions
 ```js
