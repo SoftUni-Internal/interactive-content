@@ -1,1 +1,3 @@
-# programming-basics-with-java
+# Use Branches
+
+Please use **branches** for each course instance!
