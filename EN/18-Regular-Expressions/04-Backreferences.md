@@ -1,4 +1,0 @@
-[slide]
-# Backreferences
-
-[/slide]

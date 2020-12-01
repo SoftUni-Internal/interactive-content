@@ -1,3 +1,0 @@
-[slide]
-# Printing Arrays
-[/slide]

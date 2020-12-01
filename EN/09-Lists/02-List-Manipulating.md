@@ -1,5 +1,0 @@
-[slide]
-# List Manipulating
-
-
-[/slide]
