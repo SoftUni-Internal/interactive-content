@@ -1,6 +1,6 @@
 [slide]
 # Nested for Loops
-Statements that consist of several **for loops** located **inside each other**
+Nested for-loops are statements that consist of several for loops located inside each other 
 
 **Nested for loops** are used:
 
@@ -18,7 +18,8 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-These are 3 `for` loops nested in one another:
+
+Here is an example of 3 `for` loops nested in one another: 
 ```js live
 let n = 5;
 for (let i = 1; i <= n; i += 3) {
