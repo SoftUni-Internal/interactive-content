@@ -1,33 +1,34 @@
 [slide]
 # Homework
-Welcome to the homework. 
+Welcome to the homework tab.
 
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
+Here, we are going to write a couple of console applications together.
 
-We have prepared some problems for you to solve.
+Let us solve a few problems to exercise what we have learned.
 
-Let's solve a few problems to confirm what we have learned.
 [image assetsSrc="homeowrk.png" /]
 [/slide]
 
 
 [slide]
-# Problem: Biggest Number
-[code-task title="Biggest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Greatest Number
+[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function biggestNumber(input) {
+function greatestNumber(input) {
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Reads **n** - number representing amount of input numbers
-* Reads n numbers
-* Finds and prints the **biggest number**
+* Reads `n` - a number representing the amount of following input numbers 
+
+* Reads n numbers 
+
+* Finds and prints the greatest number 
 
 # Example
 | **Input** | **Output** |
@@ -150,11 +151,13 @@ function powerOfNumbers(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Reads **p – the power** and **n – the number**
-* Prints the result of n powered by p
-* Don't use `Math.Pow()`
+* Reads `p` – the power and n – the number 
+
+* Prints the result of `n` to the power of `p` 
+
+* Do not use `Math.Pow()`- not the goal of our exercise 
 
 # Example
 | **Input** | **Output** |
@@ -385,11 +388,13 @@ function divideWithoutRemainder(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Reads **n** and **n numbers**
-* Finds in **percentage** how many of them can **divide without remainder** at **2**, **3** and **4**
-* Prints percentages p1, p2 and p3, **formatted** to the second digit
+* Reads `n` and an **n amount** of numbers after it 
+
+* Finds the **percentage** of how many of them can be divided w**ithout a remainder using 2, 3 and 4 as a divisors** 
+
+* Prints the percentages for **p1, p2 and p3**, **formatted** to the second digit 
 
 # Example
   | **Input** | **Output** |
@@ -432,14 +437,15 @@ function vowelSum(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Reads **n** - the count of characters:
-* If character is **vowel** adds its value to the result
+* Reads `n` - the count of characters which the program is going to receive 
+
+* If character is a vowel, it adds the characters `value` to the result
 
  | character      | a | e   |i   |o  |u  |
 | :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
-| value   1  | 2 |3 |4 |5 |
+| value  | 1  | 2 |3 |4 |5 |
 
 
 * Prints the result
@@ -520,11 +526,19 @@ function rollercoaster(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Reads rollercoaster **places**, **minimum age**, **count of people** on the queue and **age** for each person
-* If all places are taken, prints - `The rollercoaster departures`
-* In other case, prints `Waiting...`
+* Reads the number of **places** on a rollercoaster 
+
+* The **minimum passenger age** 
+
+* After that receives the **number of people** on the queue for this ride 
+
+* Followed by the **age** for each person queuing 
+
+* If all places can be filled, the program prints out: `The rollercoaster departures` 
+
+* In any other case, prints out:  `Waiting...`
 
 # Example
   | **Input** | **Output** |
@@ -619,9 +633,12 @@ function multiply(input) {
 # Description
 Write a program, which: 
 
-* Reads **n** 
-* Prints **n's multiples** in the format `{n} x {i} = {result}`
-* Where i are the numbers from **1 to 10** \(**inclusive**\)
+* Reads `n` – an int 
+
+* Holds a for-loop which prints: `{n} x {i} = {result}` 
+
+* Where i are the numbers from **1 to 10 (inclusive)** 
+
 # Example
   | **Input** | **Output** |
 | --- | --- |
