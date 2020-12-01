@@ -11,7 +11,7 @@
 
 You have been given an Entity / Relationship Diagram of the **Insta Influencers**:
 
-[image assetsSrc="Exam-Prep-Database-Diagram" /]
+[image assetsSrc="Exam-Prep-Database-Diagram.png" /]
 
 The **Insta Influencers** needs to hold information about **users, addresses, photos, comments, users_photos, likes**.
 
@@ -426,4 +426,3 @@ MUL
 [/tests]
 [/code-task]
 [/slide]
-
