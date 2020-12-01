@@ -1,12 +1,12 @@
 [slide]
-# For Loop with Step
-In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
+# For Loop with A step
+In this section we will get more detail on a particular and very important part of the `for` loop, **namely the step.** 
 
-**The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable.
+**The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable. 
 
-It is declared last in the **skeleton** of the for loop.
+It is declared last in the skeleton of the for loop. 
 
-Most often, we have **a size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1`, we can use for a shorter syntax the `i++` or `i--` operators.
+Very often, it has a size of 1, in this case, instead of writing `i += 1` or `i -= 1`, we can use the `i++` or `i--` operators.
 
 ```js live
 for (let i = 0; i < 10; i++) {
