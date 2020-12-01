@@ -10419,7 +10419,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-**QUEARIES FOR GEOGRAPHY DATABASE!**
+**QUERIES FOR GEOGRAPHY DATABASE!**
 
 Display all **mountain peaks** in alphabetical order. Submit your query statements as **Prepare DB & run queries**. 
 
