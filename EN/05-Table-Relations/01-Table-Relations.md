@@ -42,9 +42,9 @@ One-to-many relationship is done by adding a unique identifier in a enitity and 
 
 Foreign key is introduced with this code:
 ``` java 
-CONSTRAINT `fk_peaks_mountains`            //Giving a name of the constraint/foreign key by convention starting with "fk"
-FOREIGN KEY (mountain_id)               //Setting a column for a foreign key
-REFERENCES mountains(mountain_id);      //referencing the unique identifier in another column.
+CONSTRAINT `fk_peaks_mountains`         //Giving a name of the constraint/foreign key by convention starting with "fk".
+FOREIGN KEY (mountain_id)               //Setting a column for a foreign key.
+REFERENCES mountains(mountain_id);      //Referencing the unique identifier in another column.
 ```
 
 [/slide]
@@ -153,19 +153,19 @@ How to create **Many-to-Many** relationship:
 
 ```java
 CREATE TABLE employees(              //Create the first table
-  `employee_id` INT PRIMARY KEY,    //Don't forget to set a primary key
+  `employee_id` INT PRIMARY KEY,     //Don't forget to set a primary key
    `employee_name` VARCHAR(50)
 );
 
-CREATE TABLE projects(          //Crate the second table
+CREATE TABLE projects(            //Crate the second table
   `project_id` INT PRIMARY KEY,   //set unique identifier as well.
    `project_name` VARCHAR(50)
 );
 
 CREATE TABLE employees_projects(`employee_id` INT, `project_id` INT,    //Create the mapping table
-  CONSTRAINT `pk_employees_projects`                                  //with foreign keys referencing to both tables
+  CONSTRAINT `pk_employees_projects`                                    //with foreign keys referencing to both tables
   PRIMARY KEY(`employee_id`, `project_id`),                             //don't forget that you can't add entities to the table
-  CONSTRAINT `fk_employees_projects_employees`                        //which don't already exist as records in their original tables.
+  CONSTRAINT `fk_employees_projects_employees`                          //which don't already exist as records in their original tables.
   FOREIGN KEY(`employee_id`)
   REFERENCES employees(`employee_id`),
   CONSTRAINT `fk_employees_projects_projects`
