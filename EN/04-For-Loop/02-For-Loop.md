@@ -1,10 +1,10 @@
 [slide]
 # For Loop
-In programming it is often required to perform a block of commands multiple times. 
+In programming on many occasions, we need to execute a block of commands multiple times. 
 
-In order to do that, the so-called **loops** are used. 
+To do that, the so-called loops are used. 
 
-Let's examine an example of a `for` loop that passes sequentially through the numbers from 1 to 10 and prints them:
+Let us see an example of a for loop that passes sequentially through the numbers from 1 to 10 and prints them to the console. 
 ```js live
 for (let i = 1; i <= 10; i += 1) {
   console.log(i);
@@ -14,14 +14,15 @@ for (let i = 1; i <= 10; i += 1) {
 The block of code can be explained with this use case diagram:
 [image assetsSrc="for-loop-use-case.png" /]
 
-The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
+The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands. 
 
-# Syntax: For-Loop
-Upon declaring the loop, you can specify a **start value** and an **end value**. 
+# Syntax: For-Loop 
 
-The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**. 
+Upon declaring the loop, you can specify a **start value** and an **end value.** 
 
-The code block below shows the structure of a `for` loop:
+The body of the loop is usually enclosed in curly brackets `{ }` and represents a block of one or multiple commands. 
+
+The code block below shows the structure of a `for` loop: 
 
 ```
 for (initialization; condition; update) {
@@ -193,9 +194,9 @@ function calculateMonthSalary (input) {
 # Description
 Write a program, which:
 
-* Reads working days in the current month and salary per day - integers
-* **Calculates** the salary for the month
-* **Prints** the result on the console
+* Receives the number of workdays for the current month and the salary per day - integers 
+* Calculates the monthly salary of an employee 
+* Prints the result on the console 
 
 # Example
   | **Input** | **Output** |
@@ -245,9 +246,9 @@ function calculateMonthSalary (input) {
 # Description
 Write a program, which:
 
-* Reads working days in the current month and salary per day - integers
-* **Calculates** the salary for the month
-* **Prints** the result on the console
+* Receives the number of workdays for the current month and the salary per day - integers 
+* Calculates the monthly salary of an employee 
+* Prints the result on the console 
 
 # Example
   | **Input** | **Output** |
