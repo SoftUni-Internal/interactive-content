@@ -4,10 +4,16 @@
 
 ## Query Manipulation On Multiple Levels
 
-Subqueries are basically SQL queries inside a large one:
+A subquery is a query nested within another query such as **SELECT**, **INSERT**, **UPDATE** or **DELETE**.
 
-- Can be nested in **SELECT**, **INSERT**, **UPDATE**, **DELETE**
-  - Usually added within a **WHERE** clause
+A subquery can also be nested inside another subquery.
+
+The subquery is called an inner query while the query that contains the subquery is called an outer query.
+
+A subquery can be used anywhere that expression is used and must be closed in parentheses.
+
+- Can be nested in **SELECT**, **INSERT**, **UPDATE**, **DELETE**.
+  - Usually added within a **WHERE** clause.
 
 ```Java
 SELECT * FROM students
