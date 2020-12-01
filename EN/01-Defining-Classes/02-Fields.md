@@ -40,32 +40,6 @@ public class Car {
 [stream language="RO" videoId="485442542"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Define Car Class" taskId="c0968b31-c783-4ee2-9227-6a10e5ff8cb3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        Car car = new Car();
-
-        car.brand = "TESLA";
-        car.model = "MODEL S";
-        car.horsePower = 503;
-
-        System.out.println(String.format(
-                "The car is: %s %s - %d HP",
-                car.brand, car.model, car.horsePower
-        ));
-    }
-}
-
-// Define your Car class here
-
-```
-[/code-editor]
-[task-description]
-## Description
 Create a class named **Car**.
 
 The class should have **public** fields for:
@@ -77,7 +51,8 @@ Create a **new class** and ensure **proper naming**
 
 You should be now able to use your class:
 
-```java
+```java live
+import java.util.*;
 public class Main {
     public static void main (String[] args) {
 
@@ -92,11 +67,9 @@ public class Main {
                 car.brand, car.model, car.horsePower
         ));
     }
+}
+// Define your Car class here
 ```
-
-[/task-description]
-[code-io /]
-[/code-task]
 [/slide]
 
 [slide]
