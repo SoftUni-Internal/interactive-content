@@ -23,10 +23,11 @@ function building(input) {
 # Description
 Write a program, which:
 
-* Prints information about **apartments** (odd rows), **offices** (even rows) and the **last floor** (last row)
-* Apartment `A{buildingNum}{apartmentNum}`
-* Office `O{floorNum}{officeNum}`
-* Floor `L{buildingNum}{apartmentNum}`
+Prints information about a building: 
+* The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
+* Apartments are indexed with: `A{buildingNum}{apartmentNum}`
+* Offices: `O{floorNum}{officeNum}`
+* Large apartments: `L{buildingNum}{apartmentNum}`
 * The numbers always start from 0
 
 # Example
@@ -255,7 +256,7 @@ function magicNumber(input) {
 # Description
 Write a program, which:
 * Reads a **number - n**, from the console
-* Finds all **3-digit numbers** which product of the multiplication of their digits is equal to **n**
+* Finds all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to `n` 
 
 # Example
 | **Input** | **Output** |
@@ -299,9 +300,9 @@ function travelling(input) {
 # Description
 Write a program, which:
 
-* Reads a **destination** and **needed budget** for destination
-* Continues reading numbers - amounts of money, until they are **enough** for the destination
-* If it receives the command `End` the program ends
+* Reads a **destination** and a **required budget** to visit it 
+* Continues taking numbers - amounts of money, until it is **enough** to take the trip 
+* If we receive the command `End` the program ends
 
 # Example
 | **Input** | **Output** |
@@ -723,9 +724,11 @@ function letterCombinations(input) {
 # Description
 Write a program, which:
 
-* Prints **letters combinations** and the **count** of the printed combinations
+* Prints **letter combinations** and the **number** of generated combinations
+
 * You will receive the **range of letters** on the first and second line
-* On the third line, you will receive a **letter**, which you must **ignore** - don't print combinations with it
+
+* On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
 
 # Example
 | **Input** | **Output** |
@@ -767,10 +770,11 @@ function happyNumbers(input) {
 # Description
 Write a program, which:
 
-* Reads a number n
-* Prints **all 4 digit numbers**, which meet the following conditions:
-* When you **split** them in two pairs and **add** the first digit to the second - the result **equals** n
-* When you add the first two digits to each other, the result must be **divisible** by n **without a remainder**
+Generates all **4 digit numbers** with digits less than n and prints them out if: 
+
+* When you split the number in two pairs and add the first digit to the second one of each pair- the result equals `n` 
+
+* When you add the first two, the result is divisible by n without a remainde
 
 # Example
 | **Input** | **Output** |
