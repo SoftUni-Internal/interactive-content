@@ -1,8 +1,12 @@
+[slide]
+
 # Joins, Subqueries and Indices
 
 In this lesson we will have a look at **Joins**, **Subqueries** and **Indices**.
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/3IZTXSDR#FHeTo3uqIs6yEfIMQ1AXZh02WgkbUGaDsecPveCrSho)
+
+[/slide]
 
 [slide]
 
