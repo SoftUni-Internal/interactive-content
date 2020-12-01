@@ -38,8 +38,8 @@ Your task is to create a database called **instd (Insta Database)**. Then you wi
 [/slide]
 
 [slide hideTitle]
-# Problem: Data Definition Language (DDL) – 40 Pts
-[code-task title="Problem: Data Definition Language (DDL) – 40 Pts" taskId="51d7fcdc-2dd1-44e8-a6b8-38e0d5d9fd27" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Data Definition Language (DDL)
+[code-task title="Problem: Data Definition Language (DDL)" taskId="f4c7b7cd-5742-416f-b64c-5d98923b0b2a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
