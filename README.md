@@ -1,1 +1,1 @@
-# how-to-become-a-programmer-webinar
+# JS-Fundamentals-objects-maps-strings
