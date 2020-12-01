@@ -47,7 +47,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        Car car = new Car();
+
+        car.brand = "TESLA";
+        car.model = "MODEL S";
+        car.horsePower = 503;
+
+        System.out.println(String.format(
+                "The car is: %s %s - %d HP",
+                car.brand, car.model, car.horsePower
+        ));
     }
 }
 
@@ -86,6 +95,7 @@ public class Main {
 ```
 
 [/task-description]
+[code-io /]
 [/code-task]
 [/slide]
 
