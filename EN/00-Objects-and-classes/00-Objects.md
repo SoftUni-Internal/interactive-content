@@ -206,3 +206,103 @@ age: 22
 [/code-task]
 
 [/slide]
+
+[slide]
+# Solution: Person Info
+[code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function personInfo(input){
+  let person = {
+        firstName: input[0],
+        lastName: input[1],
+        age: input[2]
+    }
+
+    for (let [key, value] of Object.entries(person)){
+        console.log(key + ": " + value);
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
+`{key}: {value}`
+
+The input comes as 3 separate strings in the following order: firstName, lastName, age.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Peter','Pan','20']`| firstName: Peter |
+||lastName: Pan|
+||age: 20|
+
+[/task-description]
+[tests]
+[test]
+[input]
+Johny
+Tony
+15
+[/input]
+[output]
+firstName: Johny
+lastName: Tony
+age: 15
+[/output]
+[/test]
+[test]
+[input]
+A
+b
+2
+[/input]
+[output]
+firstName: A
+lastName: b
+age: 2
+[/output]
+[/test]
+[test]
+[input]
+CC
+BB
+50
+[/input]
+[output]
+firstName: CC
+lastName: BB
+age: 50
+[/output]
+[/test]
+[test]
+[input]
+Z
+X
+41
+[/input]
+[output]
+firstName: Z
+lastName: X
+age: 41
+[/output]
+[/test]
+[test]
+[input]
+JO
+PA
+22
+[/input]
+[output]
+firstName: JO
+lastName: PA
+age: 22
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
