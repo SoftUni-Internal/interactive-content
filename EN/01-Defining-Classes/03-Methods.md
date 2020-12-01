@@ -2,6 +2,11 @@
 
 # Methods
 
+[vimeo-video]
+[stream language="EN" videoId="485442837" default /]
+[stream language="RO" videoId="485442837"  /]
+[/video-vimeo]
+
 A method is a collection of statements that perform some specific task and return the result to the caller. 
 
 A method can perform some specific task without returning anything.
@@ -25,8 +30,15 @@ class Car {
     }
 }
 ```
+[/slide]
 
-## Getters and Setters
+[slide]
+# Getters and Setters
+
+[vimeo-video]
+[stream language="EN" videoId="485442925" default /]
+[stream language="RO" videoId="485442925"  /]
+[/video-vimeo]
 
 In Java **getter** and **setter** are two conventional methods that are used for retrieving and updating the value of a variable.
 
@@ -93,7 +105,15 @@ To overcome this problem, we have to use `this` keyword:
 
 The most common use of the `this` keyword is to eliminate the confusion between class attributes and parameters with the same name.
 
-## ToString() Method
+[/slide]
+
+[slide]
+# ToString() Method
+
+[vimeo-video]
+[stream language="EN" videoId="485443131" default /]
+[stream language="RO" videoId="485443131"  /]
+[/video-vimeo]
 
 By using `toString()` method, you can represent any object as a String.
 
@@ -126,8 +146,15 @@ public class Car {
     }
 }
 ```
+[/slide]
 
-## Equals() Method
+[slide]
+# Equals() Method
+
+[vimeo-video]
+[stream language="EN" videoId="485443235" default /]
+[stream language="RO" videoId="485443235"  /]
+[/video-vimeo]
 
 In java `equals()` method is used to compare equality of two Objects. 
 
@@ -139,8 +166,15 @@ boolean isCarsEquals = firstCar.equals(secondCar);
 // false
 System.out.println(isCarsEquals);
 ```
+[/slide]
 
-## HashCode() Method
+[slide]
+# HashCode() Method
+
+[vimeo-video]
+[stream language="EN" videoId="485443247" default /]
+[stream language="RO" videoId="485443247"  /]
+[/video-vimeo]
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
@@ -172,6 +206,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+[vimeo-video]
+[stream language="EN" videoId="485443278" default /]
+[stream language="RO" videoId="485443278"  /]
+[/video-vimeo]
+
 The class should have the following private fields and public methods:
 - brand: String
 - model: String
@@ -391,6 +431,11 @@ The car is: d 2 - 4 HP.
 [slide]
 
 # Solution: Car Info
+
+[vimeo-video]
+[stream language="EN" videoId="485443434" default /]
+[stream language="RO" videoId="485443434"  /]
+[/video-vimeo]
 
 - Car class:
 ```java
