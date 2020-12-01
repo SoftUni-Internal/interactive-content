@@ -490,3 +490,9 @@ ydixelF,VIDIN-83637 Reinke Alley,0,25.53,1,21st-Aug-2018
 [/tests]
 [/code-task]
 [/slide]
+
+[slide]
+# Exam Results
+[tasks-results/]
+
+[/slide]
