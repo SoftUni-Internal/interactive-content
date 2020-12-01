@@ -40,21 +40,33 @@ public class Car {
 [stream language="RO" videoId="485442542"  /]
 [/video-vimeo]
 
-Create a class named Car.
+[code-task title="Problem: Define Car Class" taskId="c0968b31-c783-4ee2-9227-6a10e5ff8cb3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
-The class should have the following fields:
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 
-- brand: String
-- model: String
-- horsePower: int
+// Define your Car class here
 
-Create a new class and **ensure proper naming!**
-[image assetsSrc="defining-classes-example(2).png" /]
+```
+[/code-editor]
+[task-description]
+## Description
+Create a class named **Car**.
 
-Create a **Main** class in the same package to test your Car class:
-[image assetsSrc="defining-classes-example(1).png" /]
+The class should have **public** fields for:
+- Brand: String
+- Model: String
+- Horsepower: int
 
-You should be able to use your **Car** class:
+Create a **new class** and ensure **proper naming**
+
+You should be now able to use your class:
 
 ```java
 public class Main {
@@ -73,6 +85,8 @@ public class Main {
     }
 ```
 
+[/task-description]
+[/code-task]
 [/slide]
 
 [slide]
@@ -84,34 +98,17 @@ public class Main {
 [stream language="RO" videoId="485442701"  /]
 [/video-vimeo]
 
+Create a new class and **ensure proper naming!**
+[image assetsSrc="defining-classes-example(2).png" /]
+
+Create a **Main** class in the same package to test your Car class:
+[image assetsSrc="defining-classes-example(1).png" /]
+
+Set the fields inside the Car class:
 
 ```java
 public class Car {
 
-    String brand;
-    String model;
-    int horsePower;
-}
-```
-
-```java live
-public class Main {
-    public static void main (String[] args) {
-
-        Car car = new Car();
-
-        car.brand = "TESLA";
-        car.model = "MODEL S";
-        car.horsePower = 503;
-
-        System.out.println(String.format(
-                "The car is: %s %s - %d HP",
-                car.brand, car.model, car.horsePower
-        ));
-    }
-}
-public class Car{
-    
     String brand;
     String model;
     int horsePower;

@@ -218,42 +218,27 @@ public class Main {
 [stream language="RO" videoId="485443278"  /]
 [/video-vimeo]
 
-The class should have the following private fields and public methods:
+Define Car Class.
+
+The class should have the following private fields:
 - brand: String
 - model: String
 - horsePower: String
 
 The class should have the following public methods:
 
-- `getBrand()`: String
-- `setBrand(String brand)`: void
-- `getModel()`: String
-- `setModel(String model)`: void
-- `getHorsePower()`: String
-- `setHorsePower(int horsePower)`: void
-- `carInfo()`: String
+- `getBrand(): String`
+- `setBrand(String brand): void`
+- `getModel(): String`
+- `setModel(String model): void`
+- `getHorsePower(): String`
+- `setHorsePower(int horsePower): void`
+- `carInfo(): String`
 
 ## Hints
 
-Create a new class and **ensure proper naming!**
+Use the Car class from previous problem.
 
-[image assetsSrc="defining-classes-example(2).png" /]
-
-Create a **Main** class in the same package to test your Car class:
-
-[image assetsSrc="defining-classes-example(1).png" /]
-
-Define the fields:
-
-```java
-public class Car {
-
-    private String brand;
-    private String model;
-    private int horsePower;
-
-}
-```
 Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you should have a **compilation error**.
 
 To overcome this problem you have to use getters and setters methods.
@@ -443,7 +428,51 @@ The car is: d 2 - 4 HP.
 [stream language="RO" videoId="485443434"  /]
 [/video-vimeo]
 
-- Car class:
+Set access modifiers for the fields:
+```java
+public class Car {
+
+    private String brand;
+    private String model;
+    private int horsePower;
+```
+
+Set `get()` and `set()` methods for bthe fields:
+
+```java
+public class Car {
+
+    private String brand;
+    private String model;
+    private int horsePower;
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+}
+```
+
+Set `carInfo()` to format the output:
 ```java
 public class Car {
 
@@ -481,7 +510,8 @@ public class Car {
     }
 }
 ```
-- Main class:
+
+Set `Main()` method as following:
 
 ```java
 public class Main {
@@ -496,7 +526,4 @@ public class Main {
     }
 }
 ```
-
-
-
 [/slide]
