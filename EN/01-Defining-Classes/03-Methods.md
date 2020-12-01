@@ -192,6 +192,12 @@ System.out.println(hash);
 
 [slide]
 # Problem: Car Info
+
+[vimeo-video]
+[stream language="EN" videoId="485443278" default /]
+[stream language="RO" videoId="485443278"  /]
+[/video-vimeo]
+
 [code-task title="Problem: Car Info" taskId="8bb0524a-5629-4c59-847f-c7b913b41ff3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
