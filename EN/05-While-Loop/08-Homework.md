@@ -1,8 +1,11 @@
 [slide]
 # Homework
 Welcome to the homework tab.
+
 Here, we are going to write a couple of console applications together.
+
 Let us solve a few problems to exercise what we have learned.
+
 [image assetsSrc="homeowrk.png" /]
 [/slide]
 

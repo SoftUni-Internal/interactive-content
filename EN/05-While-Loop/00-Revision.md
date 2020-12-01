@@ -27,15 +27,15 @@ Prefix operator means increment / decrement the value before using it, while the
 
 ```js live
 let i = 3;
-console.log(i);   // output: 3
-console.log(i++); // output: 3
-console.log(i);   // output: 4
+console.log(i);
+console.log(i++);
+console.log(i);
 ```
 
 ```js live
 let i = 3;
-console.log(i);   // output: 3
-console.log(++i); // output: 4
-console.log(i);   // output: 4
+console.log(i);
+console.log(++i);
+console.log(i);
 ```
 [/slide]
