@@ -16,7 +16,7 @@ It is usually appropriate for loops in which the initialization and increment ar
 
 It is more compact than `while` and it keeps the loop control statements together in one place.
 
-But, there could be many **complex** problems where number of iterations depend upon a certain **condition** and can't be predicated beforehand. 
+But, there could be many **complex** problems where the number of iterations depends in these **situations** and can't be predicated beforehand. 
 
 That means we don't know in advance **how many times** to repeat a loop.
 
