@@ -1,6 +1,6 @@
 [slide]
 
-# Querying – 50 Pts
+# Querying
 
 And now we need to do some data extraction. 
 

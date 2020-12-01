@@ -528,9 +528,6 @@ Now you need to **remove** some **addresses**.
 
 **Delete** all **addresses** from table **addresses**, which id is divisible by **3**.
 
-## Examples
-
-
 [/task-description]
 [code-io /]
 [tests]
