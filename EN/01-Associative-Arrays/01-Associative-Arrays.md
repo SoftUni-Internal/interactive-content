@@ -564,18 +564,18 @@ Tuesday -> Ted
 
 ```js
 function solve(input) {
-  let meetings = {};
-  for (let line of input) {
-    let [weekday, name] = line.split(" ");
-    if (meetings.hasOwnProperty(weekday)) {
-      console.log(`Conflict on ${weekday}!`);
+  const meetings = {};
+  for (const line of input) {
+    const [day, name] = line.split(" ");
+    if (!meetings.hasOwnProperty(day)) {
+      meetings[day] = name;
+      console.log(`Scheduled for ${day}`);
     } else {
-      meetings[weekday] = name;
-      console.log(`Scheduled for ${weekday}`);
+      console.log(`Conflict on ${day}!`);
     }
   }
-  for (let key in meetings) {
-    console.log(`${key} -> ${meetings[key]}`);
+  for (const key in meetings) {
+    console.log(`${key} -> ${meetings[key]}`);
   }
 }
 ```
