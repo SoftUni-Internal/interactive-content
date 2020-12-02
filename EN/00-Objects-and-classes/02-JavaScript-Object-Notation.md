@@ -33,7 +33,7 @@ JSON uses human-readable text to transmit data.
 }
 ```
 
-In this example: 
+In this example:
 
 * Brackets `{}` define a JSON
 
