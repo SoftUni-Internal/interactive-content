@@ -1,4 +1,4 @@
-# Object Models
+# Classes
 
 [slide]
 # What Are Classes ?
