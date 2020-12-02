@@ -60,15 +60,7 @@ console.log(data);
 * `JSON.stringify()`: This method converts a JavaScript value to a JSON string representation.
 
 ``` js live
-let student = {
-  }
-  "name": "George",
-  "age": 25,
-  "grades": {
-    "Math": [2.50, 3.50],
-    "Chemistry": [4.50]
-  }
-};  
+let car = [{"Car":"Nio","Model": "EP9","Colour":"Blue"}];  
 
 var data = JSON.stringify(student);  
 
