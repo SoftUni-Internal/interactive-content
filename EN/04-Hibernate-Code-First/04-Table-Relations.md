@@ -84,10 +84,97 @@ public class BasicLabel implements Label {
 ```
 
 
+[/slide]
+
+[slide]
+
+# Many-To-One Relationship
+
+In Many to Many relationship one entity contains values that points to another entity which has **unique** values.
+
+## Many-To-One Unidirectional
+
+For example every shampoo product has one manufacturer only and one manufacturer belongs to many shampoo products.
+
+[image assetsSrc="Hibernate-Code-First(4).png" /]
+
+``` java
+@Entity
+@Table(name = "shampoos")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+public abstract class BasicShampoo implements Shampoo {
+
+// Logic here
+
+    @ManyToOne(optional = false) // Many-To-One relationship
+    @JoinColumn(name = "batch_id", referencedColumnName = "id") // Column name in table shampoos, reference column name in table batches
+    private ProductionBatch batch;
+// Logic here
+}
+```
+
+## One-To-Many Bidirectional 
+
+[image assetsSrc="Hibernate-Code-First(5).png" /]
+
+``` java
+@Entity
+@Table(name = "batches")
+public class ProductionBatch implements Batch {
+//…
+
+    @OneToMany(mappedBy = "batch", targetEntity = BasicShampoo.class, // Field in entity BasicShampoo and Entity for the mapping
+	       fetch = FetchType.LAZY, cascade = CascadeType.ALL) // Fetching Type and Cascade Type
+    private Set<Shampoo> shampoos;
+
+//…
+}
+```
 
 
+[/slide]
 
+[slide]
 
+# Many-To-Many Relationship
+
+In Many-to-Many relationship entities between both side of the relationship can have multiple references to each other.
+
+In our example we can have shampoo that has many ingredients and from the others side ingredients can be contained in multiple shampoos.
+
+## Many-to-Many Unidirectional Syntax:
+
+``` java
+@Entity
+@Table(name = "shampoos")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+public abstract class BasicShampoo implements Shampoo {
+
+// Custom Logic
+    @ManyToMany // Relationship Type
+    @JoinTable(name = "shampoos_ingredients", // Mapping Table 
+    joinColumns = @JoinColumn(name = "shampoo_id", referencedColumnName = "id"), // Column in shampoos
+    inverseJoinColumns = @JoinColumn(name = "ingredient_id", referencedColumnName = "id")) // Column in mapping table
+    private Set<BasicIngredient> ingredients;
+// Custom Logic
+}
+```
+
+## Many-to-Many Bidirectional Syntax:
+
+``` java
+@Entity
+@Table(name = "ingredients")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
+public abstract class BasicIngredient implements Ingredient {
+// Custom Logic
+
+    @ManyToMany(mappedBy = "ingredients", targetEntity = BasicShampoo.class) // Field in entity BasicShampoo and Entity for the mapping 
+    private Set<BasicShampoo> shampoos;
+// Custom Logic
+}
+```
 
 
 [/slide]
