@@ -1,0 +1,5 @@
+[slide]
+
+# Zdraveite priqteli
+
+[/slide]
