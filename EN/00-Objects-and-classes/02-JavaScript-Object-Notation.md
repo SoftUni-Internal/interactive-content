@@ -60,11 +60,79 @@ console.log(data);
 * `JSON.stringify()`: This method converts a JavaScript value to a JSON string representation.
 
 ``` js live
-let car = [{"Car":"Nio","Model": "EP9","Colour":"Blue"}];  
+let car = {
+  Car:"Nio",
+  Model: "EP9",
+  Colour:"Blue"
+  };  
 
 var data = JSON.stringify(student);  
 
 console.log(data);
 ```
+
+[/slide]
+
+[slide]
+# Problem: Convert to Object
+[code-task title="Convert to Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function convertToObject(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function that receives a string in JSON format and converts it to object.
+
+Loop through all the keys and print them with their values in format:
+`{key}: {value}`
+
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`{"name": "George", "age": 40, "town": "Bucuresti"}`| name: George |
+||age: 40|
+||town: Bucuresti|
+
+[/task-description]
+[tests]
+[test]
+[input]
+\{"hui"\: "byue", "cty"\: 26, "byu"\: "ctuct"\}
+[/input]
+[output]
+hui: byue
+cty: 26
+byu: ctuct
+[/output]
+[/test]
+[test]
+[input]
+\{"hui"\: 156, "cty"\: {"dsad": "dsadaf"}, "byu"\: "ctuct"\}
+[/input]
+[output]
+hui: 156
+cty: \[object Object\]
+byu: ctuct
+[/output]
+[/test]
+[test]
+[input]
+\{"name"\: "George", "age"\: 40, "town"\: "Sofia"\}
+[/input]
+[output]
+name: George
+age: 40
+town: Sofia
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
 
 [/slide]
