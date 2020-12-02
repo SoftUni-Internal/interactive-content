@@ -167,10 +167,10 @@ hjghjk -> 0845344
 [/test]
 [test]
 [input]
-hj -> 0552554
-h -> 087587
-hdfdf -> 0454563112
-hjghjk -> 0845344
+sdfshj 055562554
+hjhgjr 0875587
+sdfhj 0453456112
+tyuhjk 0844565344
 [/input]
 [output]
 sdfshj -> 055562554
@@ -301,10 +301,10 @@ hjghjk -> 0845344
 [/test]
 [test]
 [input]
-hj -> 0552554
-h -> 087587
-hdfdf -> 0454563112
-hjghjk -> 0845344
+sdfshj 055562554
+hjhgjr 0875587
+sdfhj 0453456112
+tyuhjk 0844565344
 [/input]
 [output]
 sdfshj -> 055562554
