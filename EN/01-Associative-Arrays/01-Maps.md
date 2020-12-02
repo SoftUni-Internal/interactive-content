@@ -358,7 +358,7 @@ for (let kvp of sorted) {
 
 # Problem: School Grades
 
-[code-task title="Scholl Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="School Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```js
@@ -492,7 +492,7 @@ Tghj\: 5\, 6\, 6\, 5
 
 # Solution: School Grades
 
-[code-task title="Scholl Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="School Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```js
