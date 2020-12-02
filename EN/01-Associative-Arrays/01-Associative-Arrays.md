@@ -57,6 +57,7 @@ for (let key in assocArr) {
 }
 ```
 
+[/slide]
 [slide]
 
 # Problem: Phone Book
@@ -317,6 +318,7 @@ tyuhjk -> 0844565344
 [/code-task]
 
 [/slide]
+[slide]
 
 ### Manipulating Associative Arrays
 
