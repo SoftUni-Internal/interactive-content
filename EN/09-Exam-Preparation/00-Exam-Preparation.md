@@ -20,5 +20,7 @@ Once the base is ready, you will be able to respond without any problems to any 
 
 As with other databases, it is most important first to become familiar with the structure you need to build, and then fill it with given data.
 
+Download resources [here](https://mega.nz/file/XEhwXCyT#j73ZVRsDHrV3UGtOVdeCKx2Mfo8J782BeM4x_ZNGbJk).
+
 [/slide]
 
