@@ -14,7 +14,7 @@ They do not have a length property like normal array and cannot be iterated usin
 
 - Arrays indexed by **string keys**.
 - Hold a set of pairs **key** and **value**.
-  - The key is a **string**.
+  - The **key** is a **string**.
   - The **value** can be of **any** type.
 
 Example:
