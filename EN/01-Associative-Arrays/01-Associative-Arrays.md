@@ -6,6 +6,12 @@
 
 ### What is an Associative Array?
 
+The whole of the JavaScript language is built on one central data structure - the associative array.
+
+Associative arrays are basically objects in JavaScript where indexes are replaced by user defined keys.
+
+They do not have a length property like normal array and cannot be iterated using normal for loop.
+
 - Arrays indexed by **string keys**.
 - Hold a set of pairs [**key => value**].
   - The key is a **string**.
@@ -28,7 +34,7 @@ Example:
 let assocArr = { one: 1, two: 2, three: 3, [key]: 6 }; // Quotes are used if the key contains special characters
 ```
 
-Valid ways to access values through keys:
+Valid ways to access values through keys.
 
 ```js
 assocArr["four"] = 4;
@@ -45,7 +51,7 @@ assocArr[key] = 6;
 
 ### Using for-in
 
-- We can use **for-in** loop to iterate through the keys:
+- We can use **for-in** loop to iterate through the keys.
 
 ```js
 let assocArr = {};
@@ -322,7 +328,9 @@ tyuhjk -> 0844565344
 
 ### Manipulating Associative Arrays
 
-- Check if a key is **present**:
+- Check if a key is **present**.
+
+Checking if the **key** exists you can use the following - **.hasOwnProperty(key)**.
 
 ```js
 let assocArr = {
@@ -333,13 +341,15 @@ if (assocArr.hasOwnProperty("John Smith")) {
 }
 ```
 
+If you try and access a key that doesn't exist then you get the result **undefined**.
+
 - Remove entries:
 
 ```js
 delete assocArr["John Smith"];
 ```
 
-- Iterate destructured entries:
+- Iterate destructured entries.
 
 ```js
 for (let [key, value] of Object.entries(assocArr)) {
@@ -347,8 +357,421 @@ for (let [key, value] of Object.entries(assocArr)) {
 }
 ```
 
-Problem: Meetings!!!
-Solution: Meetings!!!
+[/slide]
+
+[slide]
+
+# Problem: Meetings
+
+[code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function solve(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function that reads **weekdays** and **names**.
+
+Print a **success** message for every successful appointment.
+
+If the same weekday occurs a second time, print **conflict**.
+
+At end, print a list of all meetings.
+
+# Example
+
+| **Input** | **Output** |
+| --------- | ---------- |
+
+| `[Monday Peter, Wednesday Bill, Monday Tim, Friday Tim]` | Scheduled for Monday |
+| | Scheduled for Wednesday |
+| | Conflict on Monday |
+| | Scheduled for Friday |
+
+## Final Output
+
+| **Output**        |
+| ----------------- |
+| Monday -> Peter   |
+| Wednesday -> Bill |
+| Friday -> Tim     |
+
+[/task-description]
+[tests]
+[test]
+[input]
+Monday Peter
+Wednesday Bill
+Monday Tim
+Friday Tim
+[/input]
+[output]
+Scheduled for Monday
+Scheduled for Wednesday
+Conflict on Monday!
+Scheduled for Friday
+Monday -> Peter
+Wednesday -> Bill
+Friday -> Tim
+[/output]
+[/test]
+[test]
+[input]
+Monday Peter
+Wednesday Bill
+Friday Tim
+[/input]
+[output]
+Scheduled for Monday
+Scheduled for Wednesday
+Scheduled for Friday
+Monday -> Peter
+Wednesday -> Bill
+Friday -> Tim
+[/output]
+[/test]
+[test]
+[input]
+Friday Bob
+Saturday Ted
+Monday Bill
+Monday John
+Wednesday George
+[/input]
+[output]
+Scheduled for Friday
+Scheduled for Saturday
+Scheduled for Monday
+Conflict on Monday!
+Scheduled for Wednesday
+Friday -> Bob
+Saturday -> Ted
+Monday -> Bill
+Wednesday -> George
+[/output]
+[/test]
+[test]
+[input]
+Thursday Bob
+Tuesday Ted
+Tuesday Jeff
+Sunday George
+Wednesday John
+Sunday Jeff
+Sunday Jeff
+Saturday Bill
+[/input]
+[output]
+Scheduled for Thursday
+Scheduled for Tuesday
+Conflict on Tuesday!
+Scheduled for Sunday
+Scheduled for Wednesday
+Conflict on Sunday!
+Conflict on Sunday!
+Scheduled for Saturday
+Thursday -> Bob
+Tuesday -> Ted
+Sunday -> George
+Wednesday -> John
+Saturday -> Bill
+[/output]
+[/test]
+[test]
+[input]
+Sunday John
+Tuesday Jeff
+Sunday Bob
+Monday Tim
+Friday Bill
+Sunday Peter
+Saturday John
+Monday George
+Tuesday Jeff
+Tuesday Ted
+Wednesday Bob
+Wednesday John
+Tuesday John
+Tuesday Ted
+[/input]
+[output]
+Scheduled for Sunday
+Scheduled for Tuesday
+Conflict on Sunday!
+Scheduled for Monday
+Scheduled for Friday
+Conflict on Sunday!
+Scheduled for Saturday
+Conflict on Monday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Scheduled for Wednesday
+Conflict on Wednesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Sunday -> John
+Tuesday -> Jeff
+Monday -> Tim
+Friday -> Bill
+Saturday -> John
+Wednesday -> Bob
+[/output]
+[/test]
+[test]
+[input]
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Jeff
+[/input]
+[output]
+Scheduled for Tuesday
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Tuesday -> Ted
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+
+# Solution: Meetings
+
+[code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  let meetings = {};
+  for (let line of input) {
+    let [weekday, name] = line.split(" ");
+    if (meetings.hasOwnProperty(weekday)) {
+      console.log(`Conflict on ${weekday}!`);
+    } else {
+      meetings[weekday] = name;
+      console.log(`Scheduled for ${weekday}`);
+    }
+  }
+  for (let key in meetings) {
+    console.log(`${key} -> ${meetings[key]}`);
+  }
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function that reads **weekdays** and **names**.
+
+Print a **success** message for every successful appointment.
+
+If the same weekday occurs a second time, print **conflict**.
+
+At end, print a list of all meetings.
+
+# Example
+
+| **Input** | **Output** |
+| --------- | ---------- |
+
+| `[Monday Peter, Wednesday Bill, Monday Tim, Friday Tim]` | Scheduled for Monday |
+| | Scheduled for Wednesday |
+| | Conflict on Monday |
+| | Scheduled for Friday |
+
+## Final Output
+
+| **Output**        |
+| ----------------- |
+| Monday -> Peter   |
+| Wednesday -> Bill |
+| Friday -> Tim     |
+
+[/task-description]
+[tests]
+[test]
+[input]
+Monday Peter
+Wednesday Bill
+Monday Tim
+Friday Tim
+[/input]
+[output]
+Scheduled for Monday
+Scheduled for Wednesday
+Conflict on Monday!
+Scheduled for Friday
+Monday -> Peter
+Wednesday -> Bill
+Friday -> Tim
+[/output]
+[/test]
+[test]
+[input]
+Monday Peter
+Wednesday Bill
+Friday Tim
+[/input]
+[output]
+Scheduled for Monday
+Scheduled for Wednesday
+Scheduled for Friday
+Monday -> Peter
+Wednesday -> Bill
+Friday -> Tim
+[/output]
+[/test]
+[test]
+[input]
+Friday Bob
+Saturday Ted
+Monday Bill
+Monday John
+Wednesday George
+[/input]
+[output]
+Scheduled for Friday
+Scheduled for Saturday
+Scheduled for Monday
+Conflict on Monday!
+Scheduled for Wednesday
+Friday -> Bob
+Saturday -> Ted
+Monday -> Bill
+Wednesday -> George
+[/output]
+[/test]
+[test]
+[input]
+Thursday Bob
+Tuesday Ted
+Tuesday Jeff
+Sunday George
+Wednesday John
+Sunday Jeff
+Sunday Jeff
+Saturday Bill
+[/input]
+[output]
+Scheduled for Thursday
+Scheduled for Tuesday
+Conflict on Tuesday!
+Scheduled for Sunday
+Scheduled for Wednesday
+Conflict on Sunday!
+Conflict on Sunday!
+Scheduled for Saturday
+Thursday -> Bob
+Tuesday -> Ted
+Sunday -> George
+Wednesday -> John
+Saturday -> Bill
+[/output]
+[/test]
+[test]
+[input]
+Sunday John
+Tuesday Jeff
+Sunday Bob
+Monday Tim
+Friday Bill
+Sunday Peter
+Saturday John
+Monday George
+Tuesday Jeff
+Tuesday Ted
+Wednesday Bob
+Wednesday John
+Tuesday John
+Tuesday Ted
+[/input]
+[output]
+Scheduled for Sunday
+Scheduled for Tuesday
+Conflict on Sunday!
+Scheduled for Monday
+Scheduled for Friday
+Conflict on Sunday!
+Scheduled for Saturday
+Conflict on Monday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Scheduled for Wednesday
+Conflict on Wednesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Sunday -> John
+Tuesday -> Jeff
+Monday -> Tim
+Friday -> Bill
+Saturday -> John
+Wednesday -> Bob
+[/output]
+[/test]
+[test]
+[input]
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Ted
+Tuesday Jeff
+[/input]
+[output]
+Scheduled for Tuesday
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Conflict on Tuesday!
+Tuesday -> Ted
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
 
 ### Sorting Associative Arrays
 
