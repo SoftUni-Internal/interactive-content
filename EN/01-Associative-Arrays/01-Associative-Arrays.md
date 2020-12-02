@@ -842,7 +842,6 @@ Print list, **sorted** alphabetically by **name**.
 | `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill -> Ornery Rd    |
 |                                                                                    | Peter -> Carlyle Ave |
 |                                                                                    | Tim -> Doe Crossing  |
-|                                                                                    |                      |
 
 [/task-description]
 [tests]
@@ -1027,7 +1026,6 @@ Print list, **sorted** alphabetically by **name**.
 | `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill -> Ornery Rd    |
 |                                                                                    | Peter -> Carlyle Ave |
 |                                                                                    | Tim -> Doe Crossing  |
-|                                                                                    |                      |
 
 [/task-description]
 [tests]
@@ -1174,7 +1172,7 @@ Ted -> Dayton Ave
 
 [slide]
 
-### Sorting By Value
+# Sorting By Value
 
 - To **sort by value**, use the **second element** of each entry.
 
@@ -1194,7 +1192,7 @@ entries.sort(([keyA, valueA], [keyB, valueB]) => {
 });
 ```
 
-### Nested Data Structures
+## Nested Data Structures
 
 - The values of associative arrays can be objects, or arrays.
 - Once we have a **reference** to the value, we can **manipulate** it like any other object.
@@ -1208,7 +1206,7 @@ let billsContact = contacts["Bill"]; // Get reference
 console.log(billsContact.phone); // '0896543112'
 ```
 
-### Sorting Nested Data Structures
+## Sorting Nested Data Structures
 
 - We can **sort** them by the **property values** of each entry.
   - Sort a contact book **alphabetically** by person's address.
