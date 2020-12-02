@@ -808,8 +808,371 @@ entries.sort(([keyA, valueA], [keyB, valueB]) => {
 });
 ```
 
-Problem: Sort AddressBook
-Solution: Sort AddressBook
+[/slide]
+[slide]
+
+# Problem: AddressBook
+
+[code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function solve(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function that reads **names** and **addresses**.
+
+Values will be separated by **":"**.
+
+If same name occurs, save the **latest** address.
+
+Print list, **sorted** alphabetically by **name**.
+
+# Example
+
+| **Input**                                                                          | **Output**           |
+| ---------------------------------------------------------------------------------- | -------------------- |
+| `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill -> Ornery Rd    |
+|                                                                                    | Peter -> Carlyle Ave |
+|                                                                                    | Tim -> Doe Crossing  |
+|                                                                                    |                      |
+
+[/task-description]
+[tests]
+[test]
+[input]
+Tim:Doe Crossing
+Bill:Nelson Place
+Peter:Carlyle Ave
+Bill:Ornery Rd
+[/input]
+[output]
+Bill -> Ornery Rd
+Peter -> Carlyle Ave
+Tim -> Doe Crossing
+[/output]
+[/test]
+[test]
+[input]
+Bob:Coleman Ave
+Tim:Katie Crossing
+John:Coleman Ave
+John:Grover Rd
+Jeff:Acker Crossing
+Bob:Katie Crossing
+[/input]
+[output]
+Bob -> Katie Crossing
+Jeff -> Acker Crossing
+John -> Grover Rd
+Tim -> Katie Crossing
+[/output]
+[/test]
+[test]
+[input]
+Bob:Huxley Rd
+John:Milwaukee Crossing
+Peter:Fordem Ave
+Bob:Redwing Ave
+George:Mesta Crossing
+Ted:Gateway Way
+Bill:Gateway Way
+John:Grover Rd
+Peter:Huxley Rd
+Jeff:Gateway Way
+Jeff:Huxley Rd
+[/input]
+[output]
+Bill -> Gateway Way
+Bob -> Redwing Ave
+George -> Mesta Crossing
+Jeff -> Huxley Rd
+John -> Grover Rd
+Peter -> Huxley Rd
+Ted -> Gateway Way
+[/output]
+[/test]
+[test]
+[input]
+Bob:Coleman Ave
+Tim:Katie Crossing
+John:Coleman Ave
+John:Grover Rd
+Jeff:Acker Crossing
+Bob:Katie Crossing
+Bob:Huxley Rd
+John:Milwaukee Crossing
+Peter:Fordem Ave
+Bob:Redwing Ave
+George:Mesta Crossing
+Ted:Gateway Way
+Bill:Gateway Way
+John:Grover Rd
+Peter:Huxley Rd
+Jeff:Gateway Way
+Jeff:Huxley Rd
+[/input]
+[output]
+Bill -> Gateway Way
+Bob -> Redwing Ave
+George -> Mesta Crossing
+Jeff -> Huxley Rd
+John -> Grover Rd
+Peter -> Huxley Rd
+Ted -> Gateway Way
+Tim -> Katie Crossing
+[/output]
+[/test]
+[test]
+[input]
+George:Westend Ave
+Jeff:Westend Ave
+Bill:Redwing Ave
+George:Coleman Ave
+George:Acker Crossing
+Bill:Grover Rd
+Jeff:8th Rd
+John:Milwaukee Crossing
+Bob:Fordem Ave
+Ted:Toban Ave
+Bill:8th Rd
+Peter:Katie Crossing
+Ted:Dayton Ave
+Jeff:Milwaukee Crossing
+Ted:Gateway Way
+George:Westend Ave
+George:Westend Ave
+John:Huxley Rd
+George:Katie Crossing
+Peter:Milwaukee Crossing
+Peter:Katie Crossing
+Tim:Westend Ave
+[/input]
+[output]
+Bill -> 8th Rd
+Bob -> Fordem Ave
+George -> Katie Crossing
+Jeff -> Milwaukee Crossing
+John -> Huxley Rd
+Peter -> Katie Crossing
+Ted -> Gateway Way
+Tim -> Westend Ave
+[/output]
+[/test]
+[test]
+[input]
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Peter:Katie Crossing
+Ted:Dayton Ave
+[/input]
+[output]
+Peter -> Katie Crossing
+Ted -> Dayton Ave
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+
+# Solution: AddressBook
+
+[code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  const book = {};
+  for (const line of input) {
+    const [name, address] = line.split(":");
+    book[name] = address;
+  }
+  Object.keys(book)
+    .sort((a, b) => a.localeCompare(b))
+    .forEach((k) => console.log(`${k} -> ${book[k]}`));
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function that reads **names** and **addresses**.
+
+Values will be separated by **":"**.
+
+If same name occurs, save the **latest** address.
+
+Print list, **sorted** alphabetically by **name**.
+
+# Example
+
+| **Input**                                                                          | **Output**           |
+| ---------------------------------------------------------------------------------- | -------------------- |
+| `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill -> Ornery Rd    |
+|                                                                                    | Peter -> Carlyle Ave |
+|                                                                                    | Tim -> Doe Crossing  |
+|                                                                                    |                      |
+
+[/task-description]
+[tests]
+[test]
+[input]
+Tim:Doe Crossing
+Bill:Nelson Place
+Peter:Carlyle Ave
+Bill:Ornery Rd
+[/input]
+[output]
+Bill -> Ornery Rd
+Peter -> Carlyle Ave
+Tim -> Doe Crossing
+[/output]
+[/test]
+[test]
+[input]
+Bob:Coleman Ave
+Tim:Katie Crossing
+John:Coleman Ave
+John:Grover Rd
+Jeff:Acker Crossing
+Bob:Katie Crossing
+[/input]
+[output]
+Bob -> Katie Crossing
+Jeff -> Acker Crossing
+John -> Grover Rd
+Tim -> Katie Crossing
+[/output]
+[/test]
+[test]
+[input]
+Bob:Huxley Rd
+John:Milwaukee Crossing
+Peter:Fordem Ave
+Bob:Redwing Ave
+George:Mesta Crossing
+Ted:Gateway Way
+Bill:Gateway Way
+John:Grover Rd
+Peter:Huxley Rd
+Jeff:Gateway Way
+Jeff:Huxley Rd
+[/input]
+[output]
+Bill -> Gateway Way
+Bob -> Redwing Ave
+George -> Mesta Crossing
+Jeff -> Huxley Rd
+John -> Grover Rd
+Peter -> Huxley Rd
+Ted -> Gateway Way
+[/output]
+[/test]
+[test]
+[input]
+Bob:Coleman Ave
+Tim:Katie Crossing
+John:Coleman Ave
+John:Grover Rd
+Jeff:Acker Crossing
+Bob:Katie Crossing
+Bob:Huxley Rd
+John:Milwaukee Crossing
+Peter:Fordem Ave
+Bob:Redwing Ave
+George:Mesta Crossing
+Ted:Gateway Way
+Bill:Gateway Way
+John:Grover Rd
+Peter:Huxley Rd
+Jeff:Gateway Way
+Jeff:Huxley Rd
+[/input]
+[output]
+Bill -> Gateway Way
+Bob -> Redwing Ave
+George -> Mesta Crossing
+Jeff -> Huxley Rd
+John -> Grover Rd
+Peter -> Huxley Rd
+Ted -> Gateway Way
+Tim -> Katie Crossing
+[/output]
+[/test]
+[test]
+[input]
+George:Westend Ave
+Jeff:Westend Ave
+Bill:Redwing Ave
+George:Coleman Ave
+George:Acker Crossing
+Bill:Grover Rd
+Jeff:8th Rd
+John:Milwaukee Crossing
+Bob:Fordem Ave
+Ted:Toban Ave
+Bill:8th Rd
+Peter:Katie Crossing
+Ted:Dayton Ave
+Jeff:Milwaukee Crossing
+Ted:Gateway Way
+George:Westend Ave
+George:Westend Ave
+John:Huxley Rd
+George:Katie Crossing
+Peter:Milwaukee Crossing
+Peter:Katie Crossing
+Tim:Westend Ave
+[/input]
+[output]
+Bill -> 8th Rd
+Bob -> Fordem Ave
+George -> Katie Crossing
+Jeff -> Milwaukee Crossing
+John -> Huxley Rd
+Peter -> Katie Crossing
+Ted -> Gateway Way
+Tim -> Westend Ave
+[/output]
+[/test]
+[test]
+[input]
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Ted:Toban Ave
+Peter:Katie Crossing
+Ted:Dayton Ave
+[/input]
+[output]
+Peter -> Katie Crossing
+Ted -> Dayton Ave
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
 
 ### Sorting By Value
 
