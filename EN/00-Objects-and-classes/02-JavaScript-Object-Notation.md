@@ -106,19 +106,19 @@ Loop through all the keys and print them with their values in format:
 \{"hui"\: "byue", "cty"\: 26, "byu"\: "ctuct"\}
 [/input]
 [output]
-hui: byue
-cty: 26
-byu: ctuct
+hui\: byue
+cty\: 26
+byu\: ctuct
 [/output]
 [/test]
 [test]
 [input]
-\{"hui"\: 156, "cty"\: {"dsad": "dsadaf"}, "byu"\: "ctuct"\}
+\{"hui"\: 156, "cty"\: {"dsad"\: "dsadaf"}, "byu"\: "ctuct"\}
 [/input]
 [output]
-hui: 156
-cty: \[object Object\]
-byu: ctuct
+hui\: 156
+cty\: \[object Object\]
+byu\: ctuct
 [/output]
 [/test]
 [test]
@@ -126,9 +126,9 @@ byu: ctuct
 \{"name"\: "George", "age"\: 40, "town"\: "Sofia"\}
 [/input]
 [output]
-name: George
-age: 40
-town: Sofia
+name\: George
+age\: 40
+town\: Sofia
 [/output]
 [/test]
 [/tests]
