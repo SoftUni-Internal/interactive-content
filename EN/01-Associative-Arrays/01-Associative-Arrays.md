@@ -387,12 +387,12 @@ At end, print a list of all meetings.
 
 # Example
 
-| **Input**                                                | **Output**              |
-| -------------------------------------------------------- | ----------------------- |
-| `[Monday Peter, Wednesday Bill, Monday Tim, Friday Tim]` | Scheduled for Monday    |
-|                                                          | Scheduled for Wednesday |
-|                                                          | Conflict on Monday      |
-|                                                          | Scheduled for Friday    |
+| **Input**                                                        | **Output**              |
+| ---------------------------------------------------------------- | ----------------------- |
+| `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
+|                                                                  | Scheduled for Wednesday |
+|                                                                  | Conflict on Monday      |
+|                                                                  | Scheduled for Friday    |
 
 ## Final Output
 
@@ -598,12 +598,12 @@ At end, print a list of all meetings.
 
 # Example
 
-| **Input**                                                | **Output**              |
-| -------------------------------------------------------- | ----------------------- |
-| `[Monday Peter, Wednesday Bill, Monday Tim, Friday Tim]` | Scheduled for Monday    |
-|                                                          | Scheduled for Wednesday |
-|                                                          | Conflict on Monday      |
-|                                                          | Scheduled for Friday    |
+| **Input**                                                        | **Output**              |
+| ---------------------------------------------------------------- | ----------------------- |
+| `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
+|                                                                  | Scheduled for Wednesday |
+|                                                                  | Conflict on Monday      |
+|                                                                  | Scheduled for Friday    |
 
 ## Final Output
 
