@@ -3,11 +3,11 @@
 
 [image assetsSrc="homeowrk.png" /]
 
-Welcome to the homework tab. 
+Welcome to the homework tab.
 
-Now we are going to create a couple of **console applications**, with which we are going to take a few more steps further into programming. 
+Here, we are going to write a couple of console applications together.
 
-We have prepared some problems for you to solve.
+Let us solve a few problems to exercise what we have learned.
 [/slide]
 
 [slide]
