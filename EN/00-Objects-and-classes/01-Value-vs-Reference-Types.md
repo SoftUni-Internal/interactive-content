@@ -48,13 +48,13 @@ Variables that are assigned a non-primitive value are given a **reference** to 
 let array = ['a', 'b', 'c', 'd'];
 let array2 = array;
 
-console.log(`First array value ${array}`);
-console.log(`Second array value ${array2}`);
+console.log(`First array value: ${array}`);
+console.log(`Second array value: ${array2}`);
 
 array.push('e');
 
-console.log(`First array value ${array}`);
-console.log(`Second array value ${array2}`);
+console.log(`First array value: ${array}`);
+console.log(`Second array value: ${array2}`);
 ```
 
 In this example we're creating an array and assigning the value to a variable array.
