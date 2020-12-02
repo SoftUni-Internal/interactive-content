@@ -95,9 +95,9 @@ Loop through all the keys and print them with their values in format:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`{"name": "George", "age": 40, "town": "Bucuresti"}`| name: George |
+|`{"name": "George", "age": 40, "town": "Berlin"}`| name: George |
 ||age: 40|
-||town: Bucuresti|
+||town: Berlin|
 
 [/task-description]
 [tests]
@@ -134,10 +134,8 @@ town\: Sofia
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
-[/slide]
 
 [slide]
 # Solution: Convert to Object
@@ -165,9 +163,9 @@ Loop through all the keys and print them with their values in format:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`{"name": "George", "age": 40, "town": "Bucuresti"}`| name: George |
+|`{"name": "George", "age": 40, "town": "Berlin"}`| name: George |
 ||age: 40|
-||town: Bucuresti|
+||town: Berlin|
 
 [/task-description]
 [tests]
@@ -204,5 +202,63 @@ town\: Sofia
 [/tests]
 [code-io /]
 [/code-task]
+[/slide]
 
+[slide]
+# Problem: Convert to JSON
+[code-task title="Convert to JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function convertToJSON(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a Function That Receives **Name**, **LastName**, **HairColor** and Sets Them to an Object.
+
+Convert the object to JSON string and print it.
+
+Input is provided as 3 single strings in the order stated above.
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['George','Jones','Brown']`| `{"name":"George", "lastName":"Jones", "hairColor":"Brown"}`|
+
+[/task-description]
+[tests]
+[test]
+[input]
+George
+Jones
+Brown
+[/input]
+[output]
+\{"name"\:"George","lastName"\:"Jones","hairColor"\:"Brown"\}
+[/output]
+[/test]
+[test]
+[input]
+rtdrt
+xxer
+aweaw
+[/input]
+[output]
+\{"name"\:"rtdrt","lastName"\:"xxer","hairColor"\:"aweaw"\}
+[/output]
+[/test]
+[test]
+[input]
+Ivan
+njnnjk
+14178
+[/input]
+[output]
+\{"name"\:"Ivan","lastName"\:"njnnjk","hairColor"\:"14178"\}
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
 [/slide]
