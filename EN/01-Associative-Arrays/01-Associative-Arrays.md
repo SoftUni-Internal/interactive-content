@@ -406,7 +406,10 @@ At end, print a list of all meetings.
 [tests]
 [test]
 [input]
-Monday Peter, Wednesday Bill, Monday Tim, Friday Tim
+Monday Peter
+Wednesday Bill
+Monday Tim
+Friday Tim
 [/input]
 [output]
 Scheduled for Monday
