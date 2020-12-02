@@ -2,6 +2,8 @@
 
 [slide]
 
+# Value vs. Reference Types
+
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
 # Value Types
@@ -66,4 +68,5 @@ When we assign `array` to the second variable `array2` we create a copy of the r
  When we add the number `e` to the array by doing `array.push('e')` we are altering the value stored in memory.
  
 That's assigned by the reference point in the variable array, and because `array2` has copied the reference point to the same value, we get the same result when we `console.log` both variables.
+
 [/slide]
