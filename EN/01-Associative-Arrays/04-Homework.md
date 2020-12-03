@@ -732,3 +732,245 @@ Pesho\: 22
 [/code-task]
 
 [/slide]
+[slide]
+
+# Problem: Company Users
+
+[code-task title="Company Users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function which keeps information about companies and their employees.
+
+You will receive array of strings containing company name and employee's id.
+
+Add each employee to the given company. Keep in mind that a company cannot have two employees with the same id.
+
+When you finish reading data, order the companies by the name in ascending order.
+
+Print the company name and each employee's id in the following format:
+
+\{companyName\}
+\-\- \{id1\}
+\-\- \{id2\}
+\-\- \{idN\}
+
+Input / Constraints
+
+- The input comes **as array of strings**, each in the format: "**\{companyName\} \-\> \{employeeId\}**".
+- The input always will be valid.
+
+# Example 1
+
+| **Input**                                                                               | **Output**   |
+| --------------------------------------------------------------------------------------- | ------------ |
+| `['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']` | HP           |
+|                                                                                         | \-\- BB12345 |
+|                                                                                         | Microsoft    |
+|                                                                                         | \-\- CC12345 |
+|                                                                                         | SoftUni      |
+|                                                                                         | \-\- AA12345 |
+|                                                                                         | \-\- BB12345 |
+
+# Example 2
+
+| **Input**                                                                                                        | **Output**   |
+| ---------------------------------------------------------------------------------------------------------------- | ------------ |
+| `['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']` | Lenovo       |
+|                                                                                                                  | \-\- XX23456 |
+|                                                                                                                  | Movement     |
+|                                                                                                                  | \-\- DD11111 |
+|                                                                                                                  | SoftUni      |
+|                                                                                                                  | \-\- AA12345 |
+|                                                                                                                  | \-\- CC12344 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+SoftUni \-\> AA12345
+SoftUni \-\> BB12345
+Microsoft \-\> CC12345
+HP \-\> BB12345
+[/input]
+[output]
+HP
+\-\- BB12345
+Microsoft
+\-\- CC12345
+SoftUni
+\-\- AA12345
+\-\- BB12345
+[/output]
+[/test]
+[test]
+[input]
+SoftUni \-\> AA12345
+SoftUni \-\> CC12344
+Lenovo \-\> XX23456
+SoftUni \-\> AA12345
+Movement \-\> DD11111
+[/input]
+[output]
+Lenovo
+\-\- XX23456
+Movement
+\-\- DD11111
+SoftUni
+\-\- AA12345
+\-\- CC12344
+[/output]
+[/test]
+[test]
+[input]
+A \-\> ncsms
+B \-\> sasa
+B \-\> sasa
+M \-\> sasads
+M \-\> 12ww
+Z \-\> wqwqw
+[/input]
+[output]
+A
+\-\- ncsms
+B
+\-\- sasa
+M
+\-\- sasads
+\-\- 12ww
+Z
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+A \-\> ncsms
+B \-\> sasa
+B \-\> sasa
+M \-\> sasgyads
+M \-\> 12gyww
+Z \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+L \-\> 12vvww
+[/input]
+[output]
+A
+\-\- ncsms
+B
+\-\- sasa
+L
+\-\- sasa
+\-\- sahjksads
+\-\- 12vvww
+M
+\-\- sasgyads
+\-\- 12gyww
+Z
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dncsms
+B \-\> sasadd
+B \-\> sasadd
+M \-\> sasgdyads
+M \-\> 12gyww
+F \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+[/input]
+[output]
+B
+\-\- sasadd
+F
+\-\- dncsms
+\-\- wqwqw
+L
+\-\- sasa
+\-\- sahjksads
+M
+\-\- sasgdyads
+\-\- 12gyww
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dncsms
+A \-\> sa44sadd
+B \-\> sasadd
+M \-\> sas,gdyads
+M \-\> 12gnjyww
+N \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+[/input]
+[output]
+A
+\-\- sa44sadd
+B
+\-\- sasadd
+F
+\-\- dncsms
+L
+\-\- sasa
+\-\- sahjksads
+M
+\-\- sas,gdyads
+\-\- 12gnjyww
+N
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dnjkcsms
+A \-\> sa44sadd
+B \-\> sanjsadd
+M \-\> sas,gdyads
+M \-\> 12gnjyww
+N \-\> wqwqw
+O \-\> snnasa
+L \-\> sa(\*hjksads
+P \-\> 12gnjyww
+N \-\> wqwqw
+Q \-\> snnasa
+[/input]
+[output]
+A
+\-\- sa44sadd
+B
+\-\- sanjsadd
+F
+\-\- dnjkcsms
+L
+\-\- sa(\*hjksads
+M
+\-\- sas,gdyads
+\-\- 12gnjyww
+N
+\-\- wqwqw
+O
+\-\- snnasa
+P
+\-\- 12gnjyww
+Q
+\-\- snnasa
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
