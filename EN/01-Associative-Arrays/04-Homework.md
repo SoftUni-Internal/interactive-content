@@ -113,3 +113,86 @@ c \- 1
 [/code-task]
 
 [/slide]
+[slide]
+
+# Problem: Odd Occurrences
+
+[code-task title="Odd Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write a function that extracts all the elements of a sentence odd number of times (**case-insensitive**).
+
+The input comes as a **single string**. The words will be **separated by a single space**.
+
+# Example
+
+| **Input**                                   | **Output**  |
+| ------------------------------------------- | ----------- |
+| 'Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#' | c\# php 1 5 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#
+[/input]
+[output]
+c\# php 1 5
+[/output]
+[/test]
+[test]
+[input]
+a 2 A a A c D C dcndjk dbsa bsd bs Cbc D ss as
+[/input]
+[output]
+2 dcndjk dbsa bsd bs cbc ss as
+[/output]
+[/test]
+[test]
+[input]
+a a a a a D Sb dbsnb bdw dd dd dss
+[/input]
+[output]
+a d sb dbsnb bdw dss
+[/output]
+[/test]
+[test]
+[input]
+b b b b b
+[/input]
+[output]
+b
+[/output]
+[/test]
+[test]
+[input]
+a a a b b c
+[/input]
+[output]
+a c
+[/output]
+[/test]
+[test]
+[input]
+a a a a a a a a a aa a a a a ab bb bb cccc
+[/input]
+[output]
+a aa ab cccc
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
