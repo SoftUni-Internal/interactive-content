@@ -159,3 +159,107 @@ huuh, age 9 says Meow
 [code-io /]
 [/code-task]
 [/slide]
+[slide]
+
+# Solution: Cats
+[code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input){
+    let cats =[]
+    class Cat {
+        constructor(name, age) {
+            this.name = name
+            this.age = age
+        }
+        sayHello(){
+            console.log(`${this.name}, age ${this.age} says Meow`)
+        }
+    }
+    for (let i = 0; i < input.length; i++) {
+        let catData = input[i].split(' ')
+        let [name, age] = catData
+        cats.push(new Cat(name, age))
+    }
+
+    for (const key of cats) {
+        key.sayHello()
+    }
+}
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Write a function that receives array of strings in the following format `{cat name} {age}`.
+
+Create a Cat class that receives in the constructor the name and the age parsed from the input. 
+
+It should also have a function named `meow` that will print `{cat name}, age {age} says Meow` on the console.
+
+For each of the strings provided you must create a cat object.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['Mellow 2', 'Tom 5']`| Mellow, age 2 says Meow|
+||Tom, age 5 says Meow|
+
+# Hints
+
+* Create a Cat class with properties and methods described above
+
+* Parse the input data
+
+* Create all objects using class constructor and the parsed input data, store them in an array
+
+* Loop through the array using `for…of` cycle and invoke `.meow()` method
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+jsakd 45
+dasd 12
+[/input]
+[output]
+jsakd, age 45 says Meow
+dasd, age 12 says Meow
+[/output]
+[/test]
+[test]
+[input]
+jsakd 45
+gyug 11
+vtv 2
+vv 1
+huuh 9
+[/input]
+[output]
+jsakd, age 45 says Meow
+gyug, age 11 says Meow
+vtv, age 2 says Meow
+vv, age 1 says Meow
+huuh, age 9 says Meow
+[/output]
+[/test]
+[test]
+[input]
+jsakd 5
+huh 2
+f 1
+huuh 9
+[/input]
+[output]
+jsakd, age 5 says Meow
+huh, age 2 says Meow
+f, age 1 says Meow
+huuh, age 9 says Meow
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
