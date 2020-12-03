@@ -487,3 +487,123 @@ items \=\> ca, d, e, q, t, w
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Make a Dictionary
+[code-task title="Make a Dictionarytory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function dictionary(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+You will receive an array with strings in the form of JSON's. 
+
+You have to parse these strings and combine them into one object. Every string from the array will hold terms and a description. 
+
+If you receive the same term twice replace it with the new definition.
+
+Print every term and definition in that dictionary on new line in format:
+
+`Term: ${term} => Definition: ${definition}`
+
+Don't forget to sort the dictionary **alphabetically** by the terms as in real dictionaries.
+
+# Example
+
+**Input** 
+
+`['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']`
+
+**Output** 
+
+Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
+
+Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.
+
+Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub.
+
+Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded.
+
+Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+
+[/task-description]
+[tests]
+[test]
+[input]
+\{"bb":"fghfhgfghfghfhg."\}
+\{"ad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
+\{"ab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
+[/input]
+[output]
+Term: ab \=\> Definition: vyvgvgh vgh vty vtyv ytv yt vty vyt.
+Term: ad \=\> Definition: gyuguy gyu guy guy gyu guy guyguguhvhv
+Term: bb \=\> Definition: fghfhgfghfghfhg.
+[/output]
+[/test]
+[test]
+[input]
+\{"nmbb":"fghfhgfghfghfhg."\}
+\{"jad":"gyuguy gyu guy guy gyu guy guyguguhvhv"\}
+\{"hab":"vyvgvgh vgh vty vtyv ytv yt vty vyt."\}
+\{"bjad":"gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv"\}
+\{"mkjad":"gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv"\}
+[/input]
+[output]
+Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy guy gyu guy guyguguhvhv
+Term: hab \=\> Definition: vyvgvgh vgh vty vtyv ytv yt vty vyt.
+Term: jad \=\> Definition: gyuguy gyu guy guy gyu guy guyguguhvhv
+Term: mkjad \=\> Definition: gyuguy gyu guy guy gybhj bjh bu guy guyguguhvhv
+Term: nmbb \=\> Definition: fghfhgfghfghfhg.
+[/output]
+[/test]
+[test]
+[input]
+\{"mmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"nhab":"vyvgvgh v yt vty vyt."\}
+\{"bjad":"gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv"\}
+\{"mkjad":"gyuguy gyu guy guyuguhvhv"\}
+[/input]
+[output]
+Term: bjad \=\> Definition: gyuguy gy bhjbhjb  u guy gupp p po pyguguhvhv
+Term: mkjad \=\> Definition: gyuguy gyu guy guyuguhvhv
+Term: mmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
+Term: nhab \=\> Definition: vyvgvgh v yt vty vyt.
+[/output]
+[/test]
+[test]
+[input]
+\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"anhab":"vyvgvgh v yt vty vyt."\}
+\{"akjad":"gyuguy gyu guy guhvhv"\}
+[/input]
+[output]
+Term: akjad \=\> Definition: gyuguy gyu guy guhvhv
+Term: anhab \=\> Definition: vyvgvgh v yt vty vyt.
+Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
+[/output]
+[/test]
+[test]
+[input]
+\{"zmmjad":"gyuu guy guy gyu guy guyguhvhv"\}
+\{"anhab":"vyvgvgh v vty vtyy vyt."\}
+\{"makjad":"gyugvgh vghuy guhvhv"\}
+\{"kanhab":"vyvgvgh v yt vty vyt."\}
+\{"anhab":"vgh vgh yt."\}
+[/input]
+[output]
+Term: anhab \=\> Definition: vgh vgh yt.
+Term: kanhab \=\> Definition: vyvgvgh v yt vty vyt.
+Term: makjad \=\> Definition: gyugvgh vghuy guhvhv
+Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
