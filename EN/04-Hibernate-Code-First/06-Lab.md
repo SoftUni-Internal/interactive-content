@@ -39,14 +39,16 @@ Extends from the **Vehicle** class
 
 Use the appropriate **inheritance types** to reach **the diagrams** in the examples. 
 
-[image assetsSrc="Hibernate-Code-First-Lab" /]
+[image assetsSrc="Hibernate-Code-First-Lab.png" /]
 
-[image assetsSrc="Hibernate-Code-First-Lab(1)" /]
+[image assetsSrc="Hibernate-Code-First-Lab(1).png" /]
 
-[image assetsSrc="Hibernate-Code-First-Lab(2)" /]
+[image assetsSrc="Hibernate-Code-First-Lab(2).png" /]
 
 
+[/slide]
 
+[slide]
 # 2. Relations
 
 ## Plane_number
@@ -56,7 +58,7 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 - Has a **one to one** relations with **Cars**
 
 
-[image assetsSrc="Hibernate-Code-First-Lab(3)" /]
+[image assetsSrc="Hibernate-Code-First-Lab(3).png" /]
 
 
 
@@ -66,7 +68,7 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 - Has a **name - String**
 - Has a **one to many** relations with **Planes**
 
-[image assetsSrc="Hibernate-Code-First-Lab(4)" /]
+[image assetsSrc="Hibernate-Code-First-Lab(4).png" /]
 
 ## Drivers 
 
@@ -74,7 +76,7 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 - Has a **full_name - String**
 - Has a **many to many** relations with **Cars**
 
-[image assetsSrc="Hibernate-Code-First-Lab(5)" /]
+[image assetsSrc="Hibernate-Code-First-Lab(5).png" /]
 
 
 [/slide]
