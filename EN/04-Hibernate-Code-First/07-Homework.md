@@ -165,6 +165,7 @@ Your task is to create a database for the Football Bookmaker System, using the C
 - **Position** – Id (2 letters – GK, DF, MF, FW…), position description (for example – goal keeper, defender…)
 - **PlayerStatistics** – Game, Player, Scored Goals, Player Assists, Played Minutes During Game, (PK = Game + Player)
 - **Games** – Id, Home Team, Away Team, Home Goals, Away Goals, Date and Time of Game, Home team Win bet rate, Away Team Win Bet Rate, Draw Game Bet Rate, Round, Competition)
+
 - **Rounds** – Id, Name (for example Groups, League, 1/8 Final, 1/4 Final, Semi-Final, Final…)
 - **Competitions** – Id, Name, Type (local, national, international)
 - **CompetitionTypes** – Id, Name
