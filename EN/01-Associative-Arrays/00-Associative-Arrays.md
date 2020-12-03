@@ -838,7 +838,7 @@ To **sort by key**, use the **first element** of each entry.
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
 let entries = Object.entries(phonebook);
-let result = entries.sort((a, b) => {a[0].localeCompare(b[0])});
+let result = entries.sort((a, b) => a[0].localeCompare(b[0]));
 console.log(result);
 ```
 
@@ -847,7 +847,7 @@ To **sort by value**, use the **second element** of each entry.
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
 let entries = Object.entries(phonebook);
-let result = entries.sort((a, b) => {a[1].localeCompare(b[1])});
+let result = entries.sort((a, b) => a[1].localeCompare(b[1]));
 console.log(result);
 ```
 
