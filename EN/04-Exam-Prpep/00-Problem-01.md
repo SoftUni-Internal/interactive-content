@@ -9,21 +9,20 @@ The commands will be the following:
 
 * `TakeOdd`: Takes only the characters at odd indices and concatenates them together to obtain the new raw password and then prints it.
 
-* `Cut {index} {length}`:
-Cuts the substring with the given length starting from the given index and prints it on the console.
+* `Cut {index} {length}`: Cuts the substring with the given length starting from the given index and prints it on the console.
 
 Then prints the new raw password itself on a new line.
 
 The given index and length will always be valid.
 
-* `Substitute {substring} {substitute}`:
-If the raw password contains the given substring, replaces all of its  occurrences with the substitute text given and prints the result.
+* `Substitute {substring} {substitute}`: If the raw password contains the given substring, replaces all of its  occurrences with the substitute text given and prints the result.
 
 If it doesn't, prints `Nothing to replace!`
 
 ## Input
 
 * You will be receiving strings until the `Done` command is given.
+
 * The indexes from the `Cut {index} {length}` command will always be valid.
 
 ## Output
