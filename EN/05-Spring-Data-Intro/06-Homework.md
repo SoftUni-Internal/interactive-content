@@ -37,7 +37,7 @@ Assume everything, which is not market (optional), is mandatory.
 
 The final schema of the database should look like that:
 
-[image assetsSrc="Spring-Data-intro-hw.png" /]
+[image assetsSrc="Spring-data-intro-hw.png" /]
 [/slide]
 
 [slide]
