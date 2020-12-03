@@ -999,7 +999,7 @@ Your task is to collect the resources and print them each on a new line.
 
 **\{resource\} –\> \{quantity\}**
 
-The quantities inputs will be in the range \[1 … 2 000 000 000\]
+The quantities inputs will be in the range \[1 \.\.\. 2 000 000 000\]
 
 # Example 1
 
