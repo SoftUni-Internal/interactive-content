@@ -752,7 +752,7 @@ Create a class with name Vehicle that has the following properties:
 - `type` – a string
 -	`model` – a string
 -	`parts` – an object that contains:
-    - `engine` – number (quality of the engine)
+    - `engine` – number \(quality of the engine\)
     -	`power` – number
     -	`quality` – engine \* power
 -	`fuel` – a number
@@ -760,7 +760,7 @@ Create a class with name Vehicle that has the following properties:
 
 The constructor should receive the type, the model, the parts as an object and the fuel.
 
-In judge post your class (Note: all names should be as described).
+In judge post your class \(Note\: all names should be as described\).
 
 
 # Example: 
@@ -782,10 +782,10 @@ Smooth Criminal
 const Vehicle \= result;
 
 let parts \= \{engine: 2, power: 200\}\;
-let vehicle \= new Vehicle\('c', 'v', parts, 1000\)\;
-vehicle.drive\(200\)\;
+let vehicle \= new Vehicle\('c'\, 'v'\, parts\, 1000\)\;
+vehicle\.drive\(200\)\;
 
-expect\(vehicle.fuel\)\.to\.equal\(800\)\;
+expect\(vehicle\.fuel\)\.to\.equal\(800\)\;
 expect\(vehicle\.parts\.quality\)\.to\.equal\(400\)\;
 [/input]
 [output]
