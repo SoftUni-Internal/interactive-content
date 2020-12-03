@@ -2,8 +2,8 @@
 # Summary
 
 [vimeo-video]
-[stream language="EN" videoId="485444743" default /]
-[stream language="RO" videoId="485444743"  /]
+[stream language="EN" videoId="485444743/fd95b4883a" default /]
+[stream language="RO" videoId="485444743/fd95b4883a"  /]
 [/video-vimeo]
 
 # In this lesson you learnt:
