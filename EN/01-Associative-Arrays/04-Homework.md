@@ -691,9 +691,62 @@ jghvgyg
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function card(input) {
+  let register = new Map();
+  let deckInfo = new Map();
+  deckInfo.set("J", 11);
+  deckInfo.set("Q", 12);
+  deckInfo.set("K", 13);
+  deckInfo.set("A", 14);
+  deckInfo.set("S", 4);
+  deckInfo.set("H", 3);
+  deckInfo.set("D", 2);
+  deckInfo.set("C", 1);
+  for (const command of input) {
+    let [person, deck] = command.split(": ");
+    deck = deck.split(", ");
+    if (register.has(person)) {
+      register.set(person, register.get(person).concat(deck));
+    } else {
+      register.set(person, deck);
+    }
+  }
+
+  for (const [key, value] of register) {
+    register.set(key, filter(value));
+  }
+
+  for (const [key, value] of register) {
+    console.log(`${key}: ${sum(value)}`);
+  }
+
+  function filter(array) {
+    array = array.filter((item, pos) => {
+      return array.indexOf(item) == pos;
+    });
+
+    return array;
+  }
+
+  function sum(array) {
+    let sum = 0;
+    for (const card of array) {
+      let type = card.slice(-1);
+      let power = card.slice(0, card.length - 1);
+      if (power[0] >= "0" && power[0] <= "9") {
+        power = Number(power);
+      } else {
+        power = deckInfo.get(power);
+      }
+      type = deckInfo.get(type);
+      sum += power * type;
+    }
+    return sum;
+  }
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
