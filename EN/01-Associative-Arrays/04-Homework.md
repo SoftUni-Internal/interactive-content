@@ -974,3 +974,227 @@ Q
 [/code-task]
 
 [/slide]
+[slide]
+
+# Problem: A Miner Task
+
+[code-task title="A Miner Task" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+You are given an **array of strings**. Every **odd string** is representing a **resource** (e.g. Gold, Silver, Copper, and so on), and **every even – quantity**.
+
+Your task is to collect the resources and print them each on a new line.
+
+**Print the resources and their quantities in format**:
+
+**\{resource\} –\> \{quantity\}**
+
+The quantities inputs will be in the range \[1 … 2 000 000 000\]
+
+# Example 1
+
+| **Input**                                         | **Output**     |
+| ------------------------------------------------- | -------------- |
+| `['Gold', '155', 'Silver', '10', 'Copper', '17']` | Gold \-\> 155  |
+|                                                   | Silver \-\> 10 |
+|                                                   | Copper \-\> 17 |
+
+# Example 2
+
+| **Input**                                                       | **Output**     |
+| --------------------------------------------------------------- | -------------- |
+| `['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']` | gold \-\> 170  |
+|                                                                 | silver \-\> 10 |
+|                                                                 | Copper \-\> 17 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+SoftUni \-\> AA12345
+SoftUni \-\> BB12345
+Microsoft \-\> CC12345
+HP \-\> BB12345
+[/input]
+[output]
+HP
+\-\- BB12345
+Microsoft
+\-\- CC12345
+SoftUni
+\-\- AA12345
+\-\- BB12345
+[/output]
+[/test]
+[test]
+[input]
+SoftUni \-\> AA12345
+SoftUni \-\> CC12344
+Lenovo \-\> XX23456
+SoftUni \-\> AA12345
+Movement \-\> DD11111
+[/input]
+[output]
+Lenovo
+\-\- XX23456
+Movement
+\-\- DD11111
+SoftUni
+\-\- AA12345
+\-\- CC12344
+[/output]
+[/test]
+[test]
+[input]
+A \-\> ncsms
+B \-\> sasa
+B \-\> sasa
+M \-\> sasads
+M \-\> 12ww
+Z \-\> wqwqw
+[/input]
+[output]
+A
+\-\- ncsms
+B
+\-\- sasa
+M
+\-\- sasads
+\-\- 12ww
+Z
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+A \-\> ncsms
+B \-\> sasa
+B \-\> sasa
+M \-\> sasgyads
+M \-\> 12gyww
+Z \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+L \-\> 12vvww
+[/input]
+[output]
+A
+\-\- ncsms
+B
+\-\- sasa
+L
+\-\- sasa
+\-\- sahjksads
+\-\- 12vvww
+M
+\-\- sasgyads
+\-\- 12gyww
+Z
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dncsms
+B \-\> sasadd
+B \-\> sasadd
+M \-\> sasgdyads
+M \-\> 12gyww
+F \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+[/input]
+[output]
+B
+\-\- sasadd
+F
+\-\- dncsms
+\-\- wqwqw
+L
+\-\- sasa
+\-\- sahjksads
+M
+\-\- sasgdyads
+\-\- 12gyww
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dncsms
+A \-\> sa44sadd
+B \-\> sasadd
+M \-\> sas,gdyads
+M \-\> 12gnjyww
+N \-\> wqwqw
+L \-\> sasa
+L \-\> sahjksads
+[/input]
+[output]
+A
+\-\- sa44sadd
+B
+\-\- sasadd
+F
+\-\- dncsms
+L
+\-\- sasa
+\-\- sahjksads
+M
+\-\- sas,gdyads
+\-\- 12gnjyww
+N
+\-\- wqwqw
+[/output]
+[/test]
+[test]
+[input]
+F \-\> dnjkcsms
+A \-\> sa44sadd
+B \-\> sanjsadd
+M \-\> sas,gdyads
+M \-\> 12gnjyww
+N \-\> wqwqw
+O \-\> snnasa
+L \-\> sa(\*hjksads
+P \-\> 12gnjyww
+N \-\> wqwqw
+Q \-\> snnasa
+[/input]
+[output]
+A
+\-\- sa44sadd
+B
+\-\- sanjsadd
+F
+\-\- dnjkcsms
+L
+\-\- sa(\*hjksads
+M
+\-\- sas,gdyads
+\-\- 12gnjyww
+N
+\-\- wqwqw
+O
+\-\- snnasa
+P
+\-\- 12gnjyww
+Q
+\-\- snnasa
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
