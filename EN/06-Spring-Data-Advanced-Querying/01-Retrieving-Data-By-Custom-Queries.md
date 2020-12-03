@@ -20,6 +20,10 @@ When you are ready, we will be able to create our first repository and make our 
 [/slide]
 
 [slide]
+# TODO: DOCUMENTATION LINK???
+[/slide]
+
+[slide]
 
 # Query Methods
 
