@@ -892,9 +892,33 @@ Pesho\: 22
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function employer(input) {
+  let list = new Map();
+  let set = new Set();
+
+  for (const string of input) {
+    let [company, employee] = string.split(" -> ");
+    if (list.has(company)) {
+      list.set(company, list.get(company).add(employee));
+    } else {
+      list.set(company, new Set([employee]));
+    }
+  }
+
+  let sortedList = Object.fromEntries(
+    Array.from(list).sort((a, b) => a[0].localeCompare(b[0]))
+  );
+
+  for (const company in sortedList) {
+    console.log(`${company}`);
+    for (const employee of sortedList[company]) {
+      console.log(`-- ${employee}`);
+    }
+  }
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
