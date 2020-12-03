@@ -218,7 +218,7 @@ function movies(input){
 [/code-editor]
 [task-description]
 # Description
-Write a function that stores information about movies inside an array. 
+Write a function that stores information about movies inside an array.
 
 The movies object info must be name, director and date. You can receive several types of input:
 
@@ -238,7 +238,6 @@ At the end print all the movies that have all the info (if the movie has no dire
 `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`
 
 `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}`
-
 
 [/task-description]
 [tests]
