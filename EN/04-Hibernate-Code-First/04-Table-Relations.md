@@ -226,3 +226,44 @@ We can use lazy fetching with **all types** of hibernate mappings.
 
 
 [/slide]
+
+
+[slide]
+
+# Cascading
+
+Our entity relationships depends on the existance between two entities. 
+
+For example, the *Shampoo-Ingredients* relationship. Without the *Shampoo*, the *Ingredients* entity does not mean anything.
+
+By deleting *Shampoo* entity, the *Ingredients* entity should also get deleted.
+
+We achieve this using **Cascading**.
+
+There are several **CascadeType** mappings:
+
+- CascadeType.PERSIST:
+
+The `save()` and `persist()` operations in the hibernate cascade to the related entities.
+
+- CascadeTYPE.MERGE:
+
+It means that related entities are merged into managed state when the owning entity is merged. When one entity is merged, the rest entities will also be merged.
+
+- CascadeTYPE.REFRESH:
+
+It cascades the refresh operation to all entities. If an entity is refreshed, the rest entities associated will also be refreshed.
+
+- CascadeTYPE.REMOVE:
+
+Simply it means that the related entities are deleted when the **owning** entity is deleted.
+
+- CascadeTYPE.DETACH:
+
+**DETACH** detaches all related entities if a "manual detach" occurs.
+
+- CascadeTYPE.ALL: 
+
+It's shorthand for all of the **above** cascade operations.
+
+[/slide]
