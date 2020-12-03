@@ -186,7 +186,7 @@ The input comes as a **single string**. The words will be **separated by a singl
 [tests]
 [test]
 [input]
-Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#
+'Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#'
 [/input]
 [output]
 c\# php 1 5
