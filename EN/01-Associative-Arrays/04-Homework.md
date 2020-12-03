@@ -246,43 +246,9 @@ a aa ab cccc
 [code-editor language=javascript]
 
 ```js
-function piccolo(input) {
-  let register = [];
-  for (const entry of input) {
-    let [command, car] = entry.split(", ");
-    switch (command) {
-      case "IN":
-        carIn(car);
-        break;
-      case "OUT":
-        carOut(car);
-        break;
-    }
-  }
-
-  function carIn(number) {
-    if (!register.includes(number)) register.push(number);
-  }
-
-  function carOut(number) {
-    if (register.includes(number)) {
-      register.splice(register.indexOf(number), 1);
-    }
-  }
-
-  register = register.sort((a, b) => a.localeCompare(b));
-
-  if (register.length !== 0) {
-    for (const car of register) {
-      console.log(car);
-    }
-  } else {
-    console.log("Parking Lot is Empty");
-  }
+function solve(input) {
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
@@ -474,33 +440,9 @@ sss
 [code-editor language=javascript]
 
 ```js
-function partyTime(input) {
-  let invitedList = input.splice(0, input.indexOf("PARTY"));
-  input.splice(0, 1);
-  let VIP = [];
-  let regular = [];
-  for (let guest of invitedList) {
-    if (guest[0] >= "0" && guest[0] <= "9") {
-      VIP.push(guest);
-    } else {
-      regular.push(guest);
-    }
-  }
-  for (let guest of input) {
-    if (VIP.includes(guest)) {
-      VIP.splice(VIP.indexOf(guest), 1);
-    }
-    if (regular.includes(guest)) {
-      regular.splice(regular.indexOf(guest), 1);
-    }
-  }
-  console.log(VIP.length + regular.length);
-  VIP.forEach((x) => console.log(x));
-  regular.forEach((x) => console.log(x));
+function solve(input) {
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
@@ -691,62 +633,9 @@ jghvgyg
 [code-editor language=javascript]
 
 ```js
-function card(input) {
-  let register = new Map();
-  let deckInfo = new Map();
-  deckInfo.set("J", 11);
-  deckInfo.set("Q", 12);
-  deckInfo.set("K", 13);
-  deckInfo.set("A", 14);
-  deckInfo.set("S", 4);
-  deckInfo.set("H", 3);
-  deckInfo.set("D", 2);
-  deckInfo.set("C", 1);
-  for (const command of input) {
-    let [person, deck] = command.split(": ");
-    deck = deck.split(", ");
-    if (register.has(person)) {
-      register.set(person, register.get(person).concat(deck));
-    } else {
-      register.set(person, deck);
-    }
-  }
-
-  for (const [key, value] of register) {
-    register.set(key, filter(value));
-  }
-
-  for (const [key, value] of register) {
-    console.log(`${key}: ${sum(value)}`);
-  }
-
-  function filter(array) {
-    array = array.filter((item, pos) => {
-      return array.indexOf(item) == pos;
-    });
-
-    return array;
-  }
-
-  function sum(array) {
-    let sum = 0;
-    for (const card of array) {
-      let type = card.slice(-1);
-      let power = card.slice(0, card.length - 1);
-      if (power[0] >= "0" && power[0] <= "9") {
-        power = Number(power);
-      } else {
-        power = deckInfo.get(power);
-      }
-      type = deckInfo.get(type);
-      sum += power * type;
-    }
-    return sum;
-  }
+function solve(input) {
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
@@ -892,33 +781,9 @@ Pesho\: 22
 [code-editor language=javascript]
 
 ```js
-function employer(input) {
-  let list = new Map();
-  let set = new Set();
-
-  for (const string of input) {
-    let [company, employee] = string.split(" -> ");
-    if (list.has(company)) {
-      list.set(company, list.get(company).add(employee));
-    } else {
-      list.set(company, new Set([employee]));
-    }
-  }
-
-  let sortedList = Object.fromEntries(
-    Array.from(list).sort((a, b) => a[0].localeCompare(b[0]))
-  );
-
-  for (const company in sortedList) {
-    console.log(`${company}`);
-    for (const employee of sortedList[company]) {
-      console.log(`-- ${employee}`);
-    }
-  }
+function solve(input) {
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
@@ -1158,21 +1023,9 @@ Q
 [code-editor language=javascript]
 
 ```js
-function foo(arr) {
-  let result = {};
-  for (let i = 0; i < arr.length; i += 1) {
-    if (i % 2 === 0) {
-      if (result[arr[i]] === undefined) result[arr[i]] = 0;
-    } else {
-      result[arr[i - 1]] += Number(arr[i]);
-    }
-  }
-
-  Object.entries(result).forEach((x) => console.log(`${x[0]} -> ${x[1]}`));
+function solve(input) {
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
