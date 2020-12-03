@@ -21,7 +21,7 @@ If it doesn't, prints `Nothing to replace!`
 
 ## Input
 
-* You will be receiving strings until the `Done` command is given.
+* You will be receiving strings until the `Done` command is given. 
 
 * The indexes from the `Cut {index} {length}` command will always be valid.
 
