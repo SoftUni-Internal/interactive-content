@@ -186,7 +186,7 @@ The input comes as a **single string**. The words will be **separated by a singl
 [tests]
 [test]
 [input]
-'Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#'
+Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#
 [/input]
 [output]
 c\# php 1 5
@@ -246,9 +246,43 @@ a aa ab cccc
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function piccolo(input) {
+  let register = [];
+  for (const entry of input) {
+    let [command, car] = entry.split(", ");
+    switch (command) {
+      case "IN":
+        carIn(car);
+        break;
+      case "OUT":
+        carOut(car);
+        break;
+    }
+  }
+
+  function carIn(number) {
+    if (!register.includes(number)) register.push(number);
+  }
+
+  function carOut(number) {
+    if (register.includes(number)) {
+      register.splice(register.indexOf(number), 1);
+    }
+  }
+
+  register = register.sort((a, b) => a.localeCompare(b));
+
+  if (register.length !== 0) {
+    for (const car of register) {
+      console.log(car);
+    }
+  } else {
+    console.log("Parking Lot is Empty");
+  }
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
