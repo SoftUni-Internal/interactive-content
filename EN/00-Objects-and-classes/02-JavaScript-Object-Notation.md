@@ -66,7 +66,7 @@ let car = {
   Colour:"Blue"
   };  
 
-var data = JSON.stringify(student);  
+var data = JSON.stringify(car);  
 
 console.log(data);
 ```
