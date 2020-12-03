@@ -186,7 +186,6 @@ function solve(input){
         key.sayHello()
     }
 }
-}
 ```
 [/code-editor]
 [task-description]
