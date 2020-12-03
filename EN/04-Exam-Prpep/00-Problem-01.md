@@ -59,15 +59,15 @@ Your password is: icecream\-hot\-mer
 
 # Comments
 
-* First command is `TakeOdd`:
+* The first command is `TakeOdd`:
 
 The initial string is: `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr`
 
-We only take the chars at odd indices 1, 3, 5 etc. and the result is:
+We only take the chars at odd indices 1, 3, 5, etc. and the result is:
 
 `icecream::hot::summer`
 
-* Second command is `Cut 15  3`:
+* The Second command is `Cut 15  3`:
 
 The string is: `icecream::hot::summer`.
 
@@ -77,7 +77,7 @@ Then, on a new line we print the resulting new raw password:
 
 `icecream::hot::mer`
 
-* Thurd command is `Substitute :: -` 
+* The third  command is `Substitute :: -` 
 
 The initial string is: `icecream::hot::summer`
 
@@ -85,7 +85,7 @@ we replace `::` with `-`, and the result is
 
 `icream-hot-summer`
 
-* Fourth command is `Substitute | ^`:
+* The fourth command is `Substitute | ^`:
 
 `|` is not found anywhere in the raw password.
 
