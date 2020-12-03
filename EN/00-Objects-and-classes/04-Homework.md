@@ -98,7 +98,6 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
 [slide]
@@ -203,7 +202,6 @@ a \| 136.45 \| 812.575
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
 [slide]
@@ -600,6 +598,135 @@ Term: anhab \=\> Definition: vgh vgh yt.
 Term: kanhab \=\> Definition: vyvgvgh v yt vty vyt.
 Term: makjad \=\> Definition: gyugvgh vghuy guhvhv
 Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
+
+[slide]
+# Problem: Songs
+[code-task title="Songs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function songs(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Define a class Song, which holds the following information about songs: typeList, name and time.
+
+You will receive the input as an array.
+
+The first element n will be the number of songs. 
+
+Next n elements will be the songs data in the following format: 
+
+`{typeList}_{name}_{time}`, 
+and the the last element will be Type List \/ `all`.
+
+Print only the names of the songs which are from that Type List \/ All songs. 
+
+# Example: 
+**Input** 
+
+`[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']`
+
+**Output** 
+
+DownTown
+Kiss
+Smooth Criminal
+
+# Example: 
+**Input** 
+
+`[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']`
+
+**Output** 
+
+Andalouse
+
+# Example: 
+**Input** 
+
+`[2,'like_Replay_3:15','ban_Photoshop_3:48','all']`
+
+**Output** 
+
+Replay
+Photoshop
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+favourite\_immaterial\_3:24
+ban\_party\_4:45
+like\_smile\_4:25
+like
+[/input]
+[output]
+smile
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+ban
+[/input]
+[output]
+hey
+hello
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+programming
+[/input]
+[output]
+ban
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+all
+[/input]
+[output]
+hey
+ban
+hello
+like
+[/output]
+[/test]
+[test]
+[input]
+2
+list\_song\_3:21
+list2\_song2\_2:58
+list
+[/input]
+[output]
+song
 [/output]
 [/test]
 [/tests]
