@@ -21,10 +21,6 @@ When you are ready, we will be able to create our first repository and make our 
 
 [slide]
 
-[/slide]
-
-[slide]
-
 # Query Methods
 
 When your query is a simple one, you can use the derive mechanism to build your query just by following the naming conventions, while Spring-Data does the rest for us.
