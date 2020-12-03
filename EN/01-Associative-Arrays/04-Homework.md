@@ -943,7 +943,7 @@ Print the company name and each employee's id in the following format:
 
 Input / Constraints
 
-- The input comes **as array of strings**, each in the format: "\{companyName\} \-\> \{employeeId\}".
+- The input comes **as array of strings**, each in the format: \{companyName\} \-\> \{employeeId\}.
 - The input always will be valid.
 
 # Example 1
