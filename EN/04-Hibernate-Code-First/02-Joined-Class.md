@@ -100,4 +100,21 @@ Let's see the result after persist:
 
 [image assetsSrc="Hibernate-Code-First.png" /]
 
+- **Advantages:**
+
+  * No repeating columns in the database tables.
+
+  * No **NULL** values.
+
+  * Reduced changes in schema on superclass changes.
+
+  * Foreign keys involved
+
+- **Disadvantages:**
+
+  * Since the amount of joins in queries grows after each new class in the hierarchy, it can have a negative impact on the performance of reading entities.
+
+
+
+
 [/slide]
