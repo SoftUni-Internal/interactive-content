@@ -734,3 +734,120 @@ song
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Class Vehicle
+[code-task title="Class Vehicle" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function vehicle(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Create a class with name Vehicle that has the following properties:
+- `type` – a string
+-	`model` – a string
+-	`parts` – an object that contains:
+    - `engine` – number (quality of the engine)
+    -	`power` – number
+    -	`quality` – engine \* power
+-	`fuel` – a number
+-	`drive` – a function that receives fuel loss and decreases the fuel of the vehicle by that number
+
+The constructor should receive the type, the model, the parts as an object and the fuel.
+
+In judge post your class (Note: all names should be as described).
+
+
+# Example: 
+**Input** 
+
+`[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']`
+
+**Output** 
+
+DownTown
+Kiss
+Smooth Criminal
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+const Vehicle \= result;
+
+let parts \= \{engine: 2, power: 200\}\;
+let vehicle \= new Vehicle\('c', 'v', parts, 1000\)\;
+vehicle.drive\(200\)\;
+
+expect\(vehicle.fuel\)\.to\.equal\(800\)\;
+expect\(vehicle\.parts\.quality\)\.to\.equal\(400\)\;
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+ban
+[/input]
+[output]
+hey
+hello
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+programming
+[/input]
+[output]
+ban
+[/output]
+[/test]
+[test]
+[input]
+4
+ban\_hey\_3:48
+programming\_ban\_3:42
+ban\_hello\_3:29
+like\_like\_3:05
+all
+[/input]
+[output]
+hey
+ban
+hello
+like
+[/output]
+[/test]
+[test]
+[input]
+2
+list\_song\_3:21
+list2\_song2\_2:58
+list
+[/input]
+[output]
+song
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
