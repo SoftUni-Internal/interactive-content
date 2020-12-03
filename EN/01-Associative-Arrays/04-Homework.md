@@ -1158,20 +1158,17 @@ Q
 [code-editor language=javascript]
 
 ```js
-function resource(input) {
-  let map = new Map();
-
-  for (let i = 0; i < input.length; i += 2) {
-    if (map.has(input[i])) {
-      map.set(input[i], +map.get(input[0]) + +input[i + 1]);
+function foo(arr) {
+  let result = {};
+  for (let i = 0; i < arr.length; i += 1) {
+    if (i % 2 === 0) {
+      if (result[arr[i]] === undefined) result[arr[i]] = 0;
     } else {
-      map.set(input[i], input[i + 1]);
+      result[arr[i - 1]] += Number(arr[i]);
     }
   }
 
-  for (const [resource, quantity] of map) {
-    console.log(`${resource} -> ${quantity}`);
-  }
+  Object.entries(result).forEach((x) => console.log(`${x[0]} -> ${x[1]}`));
 }
 // function solve(input) {
 //   // Write your code here
