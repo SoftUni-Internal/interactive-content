@@ -1,5 +1,4 @@
 [slide]
-
 # Constructors
 
 [vimeo-video]
@@ -395,13 +394,13 @@ The car is: d unknown - -1 HP.
 
 
 [slide]
+# Solution: Car Constructors
 
 [vimeo-video]
 [stream language="EN" videoId="485443792" default /]
 [stream language="RO" videoId="485443792"  /]
 [/video-vimeo]
 
-# Solution: Car Constructors
 
 - Car class:
 

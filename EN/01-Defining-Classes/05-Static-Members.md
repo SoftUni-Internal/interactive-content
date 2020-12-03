@@ -1,11 +1,11 @@
 [slide]
+# Static Members
 
 [vimeo-video]
 [stream language="EN" videoId="485443972" default /]
 [stream language="RO" videoId="485443972"  /]
 [/video-vimeo]
 
-# Static Members
 
 In Java, static members are those which belongs to the class and you can access these members without instantiating the class.
 
@@ -67,13 +67,13 @@ public class Car {
 [/slide]
 
 [slide]
+# Problem: Bank Account
 
 [vimeo-video]
 [stream language="EN" videoId="485444110" default /]
 [stream language="RO" videoId="485444110"  /]
 [/video-vimeo]
 
-# Problem: Bank Account
 [code-task title="Problem: Bank Account" taskId="1dfa7c1b-84b0-4bb3-8ee1-0832b748acb9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
