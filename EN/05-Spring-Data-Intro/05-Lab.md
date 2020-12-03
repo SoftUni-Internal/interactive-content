@@ -285,5 +285,5 @@ If you’ve written everything correctly, an **account_system** database should 
 
 - accounts.
 
--users_accounts.
-[/slide]
+- users_accounts.
+[/slide]]
