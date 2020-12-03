@@ -1210,177 +1210,94 @@ The quantities inputs will be in the range \[1 \.\.\. 2 000 000 000\]
 [tests]
 [test]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> BB12345
-Microsoft \-\> CC12345
-HP \-\> BB12345
+gold
+155
+silver
+10
+copper
+17
 [/input]
 [output]
-HP
-\-\- BB12345
-Microsoft
-\-\- CC12345
-SoftUni
-\-\- AA12345
-\-\- BB12345
+gold \-\> 155
+silver \-\> 10
+copper \-\> 17
 [/output]
 [/test]
 [test]
 [input]
-SoftUni \-\> AA12345
-SoftUni \-\> CC12344
-Lenovo \-\> XX23456
-SoftUni \-\> AA12345
-Movement \-\> DD11111
+gold
+155
+silver
+10
+copper
+17
+gold
+15
 [/input]
 [output]
-Lenovo
-\-\- XX23456
-Movement
-\-\- DD11111
-SoftUni
-\-\- AA12345
-\-\- CC12344
+gold \-\> 170
+silver \-\> 10
+copper \-\> 17
 [/output]
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasads
-M \-\> 12ww
-Z \-\> wqwqw
+silver
+14
+silver
+\-2
+silver
+\-3
 [/input]
 [output]
-A
-\-\- ncsms
-B
-\-\- sasa
-M
-\-\- sasads
-\-\- 12ww
-Z
-\-\- wqwqw
+silver \-\> 9
 [/output]
 [/test]
 [test]
 [input]
-A \-\> ncsms
-B \-\> sasa
-B \-\> sasa
-M \-\> sasgyads
-M \-\> 12gyww
-Z \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
-L \-\> 12vvww
+Gold
+15
+gold
+15
 [/input]
 [output]
-A
-\-\- ncsms
-B
-\-\- sasa
-L
-\-\- sasa
-\-\- sahjksads
-\-\- 12vvww
-M
-\-\- sasgyads
-\-\- 12gyww
-Z
-\-\- wqwqw
+Gold \-\> 15
+gold \-\> 15
 [/output]
 [/test]
 [test]
 [input]
-F \-\> dncsms
-B \-\> sasadd
-B \-\> sasadd
-M \-\> sasgdyads
-M \-\> 12gyww
-F \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+
+12
+
+1
 [/input]
 [output]
-B
-\-\- sasadd
-F
-\-\- dncsms
-\-\- wqwqw
-L
-\-\- sasa
-\-\- sahjksads
-M
-\-\- sasgdyads
-\-\- 12gyww
+\-\> 12
+\-\> 1
 [/output]
 [/test]
 [test]
 [input]
-F \-\> dncsms
-A \-\> sa44sadd
-B \-\> sasadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-L \-\> sasa
-L \-\> sahjksads
+a
+15
+a
+40
+b
+3
+c
+45
+d
+152
 [/input]
 [output]
-A
-\-\- sa44sadd
-B
-\-\- sasadd
-F
-\-\- dncsms
-L
-\-\- sasa
-\-\- sahjksads
-M
-\-\- sas,gdyads
-\-\- 12gnjyww
-N
-\-\- wqwqw
+a \-\> 55
+b \-\> 3
+c \-\> 45
+d \-\> 152
 [/output]
 [/test]
-[test]
-[input]
-F \-\> dnjkcsms
-A \-\> sa44sadd
-B \-\> sanjsadd
-M \-\> sas,gdyads
-M \-\> 12gnjyww
-N \-\> wqwqw
-O \-\> snnasa
-L \-\> sa(\*hjksads
-P \-\> 12gnjyww
-N \-\> wqwqw
-Q \-\> snnasa
-[/input]
-[output]
-A
-\-\- sa44sadd
-B
-\-\- sanjsadd
-F
-\-\- dnjkcsms
-L
-\-\- sa(\*hjksads
-M
-\-\- sas,gdyads
-\-\- 12gnjyww
-N
-\-\- wqwqw
-O
-\-\- snnasa
-P
-\-\- 12gnjyww
-Q
-\-\- snnasa
-[/output]
-[/test]
+
 [/tests]
 [code-io /]
 [/code-task]
