@@ -779,12 +779,6 @@ Smooth Criminal
 [tests]
 [test]
 [input]
-const Vehicle \= result;
-
-let parts \= \{engine: 2, power: 200\}\;
-let vehicle \= new Vehicle\('c'\, 'v'\, parts\, 1000\)\;
-vehicle\.drive\(200\)\;
-
 expect\(vehicle\.fuel\)\.to\.equal\(800\)\;
 expect\(vehicle\.parts\.quality\)\.to\.equal\(400\)\;
 [/input]
