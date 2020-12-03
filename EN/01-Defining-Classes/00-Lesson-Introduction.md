@@ -1,3 +1,5 @@
+# Lesson Introduction
+
 [slide]
 
 # Lesson Introduction
