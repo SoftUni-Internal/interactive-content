@@ -10,7 +10,7 @@ Make sure it has proper connections between the tables and it is populated with 
 
 [slide]
 
-# Books Titles by Age Restriction
+# Problem: Books Titles by Age Restriction
 
 ### Description:
 
@@ -42,7 +42,7 @@ for which the **age restriction** matches the given input (minor, teen or adult)
 
 [slide]
 
-# Golden Books
+# Problem: Golden Books
 
 ### Description:
 
@@ -63,7 +63,7 @@ which have **less than 5000 copies**.
 
 [slide]
 
-# Books by Price
+# Problem: Books by Price
 
 ### Description:
 Write a program that prints **the titles and prices of books** with **price lower than 5 and higher than 40**.
@@ -83,7 +83,7 @@ Write a program that prints **the titles and prices of books** with **price lowe
 
 [slide]
 
-# Not Released Books
+# Problem: Not Released Books
 
 Write a program that prints **the titles** of all books that are **NOT released** in a given year
 
@@ -111,7 +111,7 @@ Write a program that prints **the titles** of all books that are **NOT released*
 
 [slide]
 
-# Books Released Before Date
+# Problem: Books Released Before Date
 
 ### Description:
 
@@ -145,7 +145,7 @@ The date will be in the **format dd-MM-yyyy**.
 
 [slide]
 
-# Authors Search
+# Problem: Authors Search
 
 ### Description:
 
@@ -172,7 +172,7 @@ whose **first name ends with a given string**.
 
 [slide]
 
-# Books Search
+# Problem: Books Search
 
 ### Description:
 
@@ -201,7 +201,7 @@ which **contain a given string** (regardless of the casing).
 
 [slide]
 
-# Book Titles Search
+# Problem: Book Titles Search
 
 ### Description:
 
@@ -234,7 +234,7 @@ Book Title ( Authors first and last name)
 
 [slide]
 
-# Count Books
+# Problem: Count Books
 
 ### Description:
 
@@ -256,7 +256,7 @@ whose **title is longer than a given number**.
 
 [slide]
 
-# Total Book Copies
+# Problem: Total Book Copies
 
 ### Description:
 
@@ -277,7 +277,7 @@ Order the results **descending by total book copies**.
 
 [slide]
 
-# Reduced Book
+# Problem: Reduced Book
 
 ### Description:
 
@@ -297,7 +297,7 @@ When retrieving the book information **select only those fields** and **do NOT i
 
 [slide]
 
-# Increase Book Copies
+# Problem: Increase Book Copies
 
 ### Description:
 
@@ -336,7 +336,7 @@ increase its book copies with the provided number from the second line of the in
 
 [slide]
 
-# Remove Books
+# Problem: Remove Books
 
 ### Description:
 
@@ -350,7 +350,7 @@ Print the** number of books that were deleted** from the database.
 
 [slide]
 
-# Stored Procedure
+# Problem: Stored Procedure
 
 ### Description:
 

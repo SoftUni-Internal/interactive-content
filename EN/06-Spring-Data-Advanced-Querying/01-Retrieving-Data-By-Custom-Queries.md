@@ -120,7 +120,7 @@ List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              //.
 
 [slide]
 
-# Select Shampoos by Size
+# Problem: Select Shampoos by Size
 
 You are given a simpler implementation of the Shampoo Company. 
 
