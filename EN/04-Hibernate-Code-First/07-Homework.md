@@ -152,7 +152,7 @@ The credit card has **card type, expiration month, expiration year.** And the ba
 
 [slide]
 
-# *Football Betting Database
+# Football Betting Database*
 
 Your task is to create a database for the Football Bookmaker System, using the Code First approach. Model the following tables:
 
