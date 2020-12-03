@@ -390,3 +390,197 @@ sss
 [/code-task]
 
 [/slide]
+
+[slide]
+
+# Problem: Party Time
+
+[code-task title="Party Time" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+There is a party at SoftUni. Many guests are invited and they are **two types**: VIP and regular.
+
+When guests come to the party check if he/she **exists** in any of **the two reservation lists**.
+
+The input will come as **array of strings**. You will be given the list with the guests before you receive a command "**PARTY**".
+
+All **VIP numbers start with digit**.
+
+When you receive the command "**PARTY**" the guests start coming.
+
+Output all guest, who didn't come to the party (VIP must be first).
+
+# Example 1
+
+| **Input**                                                                                                   | **Output** |
+| ----------------------------------------------------------------------------------------------------------- | ---------- |
+| `['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']` | 2          |
+|                                                                                                             | 7IK9Yo0h   |
+|                                                                                                             | tSzE5t0p   |
+
+# Example 2
+
+| **Input**                                                                                                                                                                                                                                                                                                                                                   | **Output** |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK', 'PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
+|                                                                                                                                                                                                                                                                                                                                                             | xys2FYzn   |
+|                                                                                                                                                                                                                                                                                                                                                             | MDzcM9ZK   |
+
+[/task-description]
+[tests]
+[test]
+[input]
+7IK9Yo0h
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+tSzE5t0p
+PARTY
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+[/input]
+[output]
+2
+7IK9Yo0h
+tSzE5t0p
+[/output]
+[/test]
+[test]
+[input]
+7IK9Yo0h
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+tSzE5t0p
+PARTY
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+[/input]
+[output]
+2
+7IK9Yo0h
+tSzE5t0p
+[/output]
+[/test]
+[test]
+[input]
+7IK9Yo0h
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+tSzE5t0p
+PARTY
+[/input]
+[output]
+5
+7IK9Yo0h
+9NoBUajQ
+Ce8vwPmE
+SVQXQCbc
+tSzE5t0p
+[/output]
+[/test]
+[test]
+[input]
+7IK9Yo0h
+9NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+6tSzE5t0p
+PARTY
+5SVQXQCbc
+6tSzE5t0p
+[/input]
+[output]
+3
+7IK9Yo0h
+9NoBUajQ
+4Ce8vwPmE
+[/output]
+[/test]
+[test]
+[input]
+IK9Yo0h
+NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+7IK9Yo0h
+9NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+6tSzE5t0p
+PARTY
+9NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+6tSzE5t0p
+[/input]
+[output]
+5
+7IK9Yo0h
+4Ce8vwPmE
+5SVQXQCbc
+IK9Yo0h
+NoBUajQ
+[/output]
+[/test]
+[test]
+[input]
+IK9Yo0h
+NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+6tSzE5t0p
+PARTY
+IK9Yo0h
+NoBUajQ
+4Ce8vwPmE
+5SVQXQCbc
+6tSzE5t0p
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+5IK9Yo0h
+NoBUajQ
+4Ce8vwPmE
+QXQCbc
+6tSzE5t0p
+4ftyfvwPmE
+jghvgyg
+6tSzE5t0p
+PARTY
+4Ce8vwPmE
+6tSzE5t0p
+[/input]
+[output]
+6
+5IK9Yo0h
+4ftyfvwPmE
+6tSzE5t0p
+NoBUajQ
+QXQCbc
+jghvgyg
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
