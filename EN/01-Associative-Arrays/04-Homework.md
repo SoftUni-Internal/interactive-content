@@ -1207,7 +1207,7 @@ The quantities inputs will be in the range \[1 \.\.\. 2 000 000 000\]
 | --------------------------------------------------------------- | -------------- |
 | `['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']` | gold \-\> 170  |
 |                                                                 | silver \-\> 10 |
-|                                                                 | Copper \-\> 17 |
+|                                                                 | copper \-\> 17 |
 
 [/task-description]
 [tests]
