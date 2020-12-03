@@ -205,3 +205,285 @@ a \| 136.45 \| 812.575
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Movies
+[code-task title="Movies" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function movies(input){
+  // Write your code here 
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function that stores information about movies inside an array.
+
+The movies object info must be name, director and date. You can receive several types of input:
+
+* `addMovie {movie name}`: add the movie
+
+* `{movie name} directedBy {director}`: check if the movie exists and then add the director
+* `{movie name} onDate {date}`: check if the movie exists and then add the date
+
+At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
+
+# Example
+
+**Input:** 
+`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']`
+
+ **Output:**
+`{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`
+
+`{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}`
+
+[/task-description]
+[tests]
+[test]
+[input]
+addMovie a
+addMovie b
+a directedBy j
+b directedBy o
+b onDate 12\.34\.1244
+a onDate 30\.07\.2010
+addMovie c
+c directedBy o
+c onDate 12\.01\.1998
+[/input]
+[output]
+\{"name":"a","director":"j","date":"30\.07\.2010"\}
+\{"name":"b","director":"o","date":"12\.34\.1244"\}
+\{"name":"c","director":"o","date":"12\.01\.1998"\}
+[/output]
+[/test]
+[test]
+[input]
+addMovie a
+addMovie b
+a directedBy j
+a onDate 30\.07\.2010
+[/input]
+[output]
+\{"name":"a","director":"j","date":"30.07.2010"\}
+[/output]
+[/test]
+[test]
+[input]
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+c onDate 30\.07\.2010
+c directedBy l
+[/input]
+[output]
+\{"name":"y","director":"j","date":"30\.07\.2010"\}
+[/output]
+[/test]
+[test]
+[input]
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
+addMovie k
+k directedBy l
+y directedBy j
+k onDate 30\.07\.2010
+y onDate 10\.07\.2010
+addMovie n
+x onDate 12\.07\.1994
+y onDate 30\.07\.2018
+n directedBy j
+n onDate 30\.07\.2017
+[/input]
+[output]
+\{"name":"y","director":"j","date":"30\.07\.2018"\}
+\{"name":"k","director":"l","date":"30\.07\.2010"\}
+\{"name":"n","director":"j","date":"30\.07\.2017"\}
+[/output]
+[/test]
+[test]
+[input]
+addMovie y
+addMovie b
+y directedBy j
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
+addMovie k
+k directedBy l
+y directedBy j
+k onDate 30\.07\.2010
+[/input]
+[output]
+\{"name":"y","director":"j","date":"30\.07\.2010"\}
+\{"name":"k","director":"l","date":"30\.07\.2010"\}
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+
+[slide]
+# Problem: Inventory
+[code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function inventory(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Create a function which creates a register for heroes, with their names, level, and items (if they have such). 
+
+The input comes as array of strings. Each element holds data for a hero, in the following format:
+
+`{heroName} / {heroLevel} / {item1}, {item2}, {item3}...`
+
+You must store the data about every hero. The name is a string, the level is a number and the items are all strings.
+
+The output is all of the data for all the heroes you’ve stored sorted ascending by level and the items are sorted alphabetically. 
+
+The data must be in the following format for each hero:
+`Hero: {heroName}`
+`level => {heroLevel}`
+`Items => {item1}, {item2}, {item3}`
+
+
+# Example
+
+**Input** 
+
+`["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` 
+
+**Output** 
+
+`Hero: Hes`
+`level => 1`
+`items => Antara, Desolator, Sentinel`
+`Hero: Derek`
+`level => 12`
+`items => BarrelVest, DestructionSword`
+`Hero: Isacc`
+`level => 25`
+`items => Apple, GravityGun`
+
+[/task-description]
+[tests]
+[test]
+[input]
+a \/ 10 \/ e, n, d, c, f
+k \/ 13 \/ l, m
+a \/ 18 \/ f, e, w
+[/input]
+[output]
+Hero: a
+level \=\> 10
+items \=\> c, d, e, f, n
+Hero: k
+level \=\> 13
+items \=\> l, m
+Hero: a
+level \=\> 18
+items \=\> e, f, w
+[/output]
+[/test]
+[test]
+[input]
+a \/ 10 \/ e, n, d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w
+i \/ 6 \/ q, r, f, e, w
+p \/ 18 \/ w
+f \/ 3 \/ f, p, w
+[/input]
+[output]
+Hero: n
+level \=\> 2
+items \=\> e, f, w
+Hero: f
+level \=\> 3
+items \=\> f, p, w
+Hero: i
+level \=\> 6
+items \=\> e, f, q, r, w
+Hero: a
+level \=\> 10
+items \=\> c, d, e, n
+Hero: k
+level \=\> 13
+items \=\> l, o
+Hero: p
+level \=\> 18
+items \=\> w
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w, a
+f \/ 3 \/ f, p, w
+[/input]
+[output]
+Hero: n
+level \=\> 2
+items \=\> a, e, f, w
+Hero: f
+level \=\> 3
+items \=\> f, p, w
+Hero: l
+level \=\> 10
+items \=\> c, d
+Hero: k
+level \=\> 13
+items \=\> l, o
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, ca, e, q, w, t
+[/input]
+[output]
+Hero: l
+level \=\> 10
+items \=\> ca, d, e, q, t, w
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, ca, e, q, w, t
+q \/ 0 \/ w, r, i, s
+n \/ 5 \/ p, r, y, x
+o \/ 6 \/ w, r, n, s
+[/input]
+[output]
+Hero: q
+level \=\> 0
+items \=\> i, r, s, w
+Hero: n
+level \=\> 5
+items \=\> p, r, x, y
+Hero: o
+level \=\> 6
+items \=\> n, r, s, w
+Hero: l
+level \=\> 10
+items \=\> ca, d, e, q, t, w
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
