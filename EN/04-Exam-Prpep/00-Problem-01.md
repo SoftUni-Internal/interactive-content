@@ -79,7 +79,6 @@ we replace `::` with `-`, and the result is
 
 `icream-hot-summer`
 
-
 * Fourth command is `Substitute | ^`:
 
 `|` is not found anywhere in the raw password.
