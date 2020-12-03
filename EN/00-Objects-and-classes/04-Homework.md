@@ -212,7 +212,7 @@ a \| 136.45 \| 812.575
 [code-editor language=javascript]
 ```
 function movies(input){
-  // Write your code here
+  // Write your code here 
 }
 ```
 [/code-editor]
@@ -234,7 +234,7 @@ At the end print all the movies that have all the info (if the movie has no dire
 **Input:** 
 `['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']`
 
- **Output:** 
+ **Output:**
 `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`
 
 `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}`
@@ -248,16 +248,16 @@ addMovie a
 addMovie b
 a directedBy j
 b directedBy o
-b onDate 12.34.1244
-a onDate 30.07.2010
+b onDate 12\.34\.1244
+a onDate 30\.07\.2010
 addMovie c
 c directedBy o
-c onDate 12.01.1998
+c onDate 12\.01\.1998
 [/input]
 [output]
-\{"name":"a","director":"j","date":"30.07.2010"\}
-\{"name":"b","director":"o","date":"12.34.1244"\}
-\{"name":"c","director":"o","date":"12.01.1998"\}
+\{"name":"a","director":"j","date":"30\.07\.2010"\}
+\{"name":"b","director":"o","date":"12\.34\.1244"\}
+\{"name":"c","director":"o","date":"12\.01\.1998"\}
 [/output]
 [/test]
 [test]
@@ -265,7 +265,7 @@ c onDate 12.01.1998
 addMovie a
 addMovie b
 a directedBy j
-a onDate 30.07.2010
+a onDate 30\.07\.2010
 [/input]
 [output]
 \{"name":"a","director":"j","date":"30.07.2010"\}
@@ -276,12 +276,12 @@ a onDate 30.07.2010
 addMovie y
 addMovie b
 y directedBy j
-y onDate 30.07.2010
-c onDate 30.07.2010
+y onDate 30\.07\.2010
+c onDate 30\.07\.2010
 c directedBy l
 [/input]
 [output]
-\{"name":"y","director":"j","date":"30.07.2010"\}
+\{"name":"y","director":"j","date":"30\.07\.2010"\}
 [/output]
 [/test]
 [test]
@@ -289,23 +289,23 @@ c directedBy l
 addMovie y
 addMovie b
 y directedBy j
-y onDate 30.07.2010
-b onDate 30.17.2015
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
 addMovie k
 k directedBy l
 y directedBy j
-k onDate 30.07.2010
-y onDate 10.07.2010
+k onDate 30\.07\.2010
+y onDate 10\.07\.2010
 addMovie n
-x onDate 12.07.1994
-y onDate 30.07.2018
+x onDate 12\.07\.1994
+y onDate 30\.07\.2018
 n directedBy j
-n onDate 30.07.2017
+n onDate 30\.07\.2017
 [/input]
 [output]
-\{"name":"y","director":"j","date":"30.07.2018"\}
-\{"name":"k","director":"l","date":"30.07.2010"\}
-\{"name":"n","director":"j","date":"30.07.2017"\}
+\{"name":"y","director":"j","date":"30\.07\.2018"\}
+\{"name":"k","director":"l","date":"30\.07\.2010"\}
+\{"name":"n","director":"j","date":"30\.07\.2017"\}
 [/output]
 [/test]
 [test]
@@ -313,16 +313,16 @@ n onDate 30.07.2017
 addMovie y
 addMovie b
 y directedBy j
-y onDate 30.07.2010
-b onDate 30.17.2015
+y onDate 30\.07\.2010
+b onDate 30\.17\.2015
 addMovie k
 k directedBy l
 y directedBy j
-k onDate 30.07.2010
+k onDate 30\.07\.2010
 [/input]
 [output]
-\{"name":"y","director":"j","date":"30.07.2010"\}
-\{"name":"k","director":"l","date":"30.07.2010"\}
+\{"name":"y","director":"j","date":"30\.07\.2010"\}
+\{"name":"k","director":"l","date":"30\.07\.2010"\}
 [/output]
 [/test]
 [/tests]
