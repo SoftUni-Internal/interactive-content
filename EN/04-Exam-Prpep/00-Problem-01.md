@@ -7,11 +7,11 @@ First, you will receive a string and afterwards, until the command `Done` is giv
 
 The commands will be the following:
 
-* Command `TakeOdd`:
+- Command `TakeOdd`:
 
 Takes only the characters at odd indices and concatenates them together to obtain the new raw password and then prints it.
 
-* Command `Cut {index} {length}`:
+- Command `Cut {index} {length}`:
 
 Cuts the substring with the given length starting from the given index and prints it on the console.
 
@@ -19,7 +19,7 @@ Then prints the new raw password itself on a new line.
 
 The given index and length will always be valid.
 
-* Command `Substitute {substring} {substitute}`:
+- Command `Substitute {substring} {substitute}`:
 
 If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result.
 
