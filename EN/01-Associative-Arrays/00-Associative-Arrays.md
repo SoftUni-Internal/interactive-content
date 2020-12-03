@@ -340,7 +340,7 @@ tyuhjk \-\> 0844565344
 
 We can use the following expression to check if a **key** is **present**. 
 
-Use `.hasOwnProperty(key)`
+Use `.hasOwnProperty("key")`
 
 Let us declare an empty object and assign a key to it. Use if statement and the expression from above to see if the key exists.
 
@@ -376,7 +376,7 @@ You can also use somethig called destructuring.
 
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-The `Object. entries()` method returns an array of a given object's own `[ key , value ]` pairs.
+The `Object.entries()` method returns an array of a given object's own `[ key , value ]` pairs.
 
 In the for of loop we declare our **key** and **value** variables.
 
