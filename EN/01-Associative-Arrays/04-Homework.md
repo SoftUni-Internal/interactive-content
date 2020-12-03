@@ -1158,9 +1158,24 @@ Q
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function resource(input) {
+  let map = new Map();
+
+  for (let i = 0; i < input.length; i += 2) {
+    if (map.has(input[i])) {
+      map.set(input[i], +map.get(input[0]) + +input[i + 1]);
+    } else {
+      map.set(input[i], input[i + 1]);
+    }
+  }
+
+  for (const [resource, quantity] of map) {
+    console.log(`${resource} -> ${quantity}`);
+  }
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
