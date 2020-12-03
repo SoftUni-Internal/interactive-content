@@ -329,3 +329,161 @@ k onDate 30\.07\.2010
 [/code-task]
 
 [/slide]
+
+
+[slide]
+# Problem: Inventory
+[code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function inventory(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Create a function which creates a register for heroes, with their names, level, and items (if they have such). 
+
+The input comes as array of strings. Each element holds data for a hero, in the following format:
+
+`{heroName} / {heroLevel} / {item1}, {item2}, {item3}...`
+
+You must store the data about every hero. The name is a string, the level is a number and the items are all strings.
+
+The output is all of the data for all the heroes you’ve stored sorted ascending by level and the items are sorted alphabetically. 
+
+The data must be in the following format for each hero:
+`Hero: {heroName}`
+`level => {heroLevel}`
+`Items => {item1}, {item2}, {item3}`
+
+
+# Example
+
+**Input** 
+
+`["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` 
+
+**Output** 
+
+`Hero: Hes`
+`level => 1`
+`items => Antara, Desolator, Sentinel`
+`Hero: Derek`
+`level => 12`
+`items => BarrelVest, DestructionSword`
+`Hero: Isacc`
+`level => 25`
+`items => Apple, GravityGun`
+
+[/task-description]
+[tests]
+[test]
+[input]
+a \/ 10 \/ e, n, d, c, f
+k \/ 13 \/ l, m
+a \/ 18 \/ f, e, w
+[/input]
+[output]
+Hero: a
+level \=\> 10
+items \=\> c, d, e, f, n
+Hero: k
+level \=\> 13
+items \=\> l, m
+Hero: a
+level \=\> 18
+items \=\> e, f, w
+[/output]
+[/test]
+[test]
+[input]
+a \/ 10 \/ e, n, d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w
+i \/ 6 \/ q, r, f, e, w
+p \/ 18 \/ w
+f \/ 3 \/ f, p, w
+[/input]
+[output]
+Hero: n
+level \=\> 2
+items \=\> e, f, w
+Hero: f
+level \=\> 3
+items \=\> f, p, w
+Hero: i
+level \=\> 6
+items \=\> e, f, q, r, w
+Hero: a
+level \=\> 10
+items \=\> c, d, e, n
+Hero: k
+level \=\> 13
+items \=\> l, o
+Hero: p
+level \=\> 18
+items \=\> w
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, c
+k \/ 13 \/ l, o
+n \/ 2 \/ f, e, w, a
+f \/ 3 \/ f, p, w
+[/input]
+[output]
+Hero: n
+level \=\> 2
+items \=\> a, e, f, w
+Hero: f
+level \=\> 3
+items \=\> f, p, w
+Hero: l
+level \=\> 10
+items \=\> c, d
+Hero: k
+level \=\> 13
+items \=\> l, o
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, ca, e, q, w, t
+[/input]
+[output]
+Hero: l
+level \=\> 10
+items \=\> ca, d, e, q, t, w
+[/output]
+[/test]
+[test]
+[input]
+l \/ 10 \/ d, ca, e, q, w, t
+q \/ 0 \/ w, r, i, s
+n \/ 5 \/ p, r, y, x
+o \/ 6 \/ w, r, n, s
+[/input]
+[output]
+Hero: q
+level \=\> 0
+items \=\> i, r, s, w
+Hero: n
+level \=\> 5
+items \=\> p, r, x, y
+Hero: o
+level \=\> 6
+items \=\> n, r, s, w
+Hero: l
+level \=\> 10
+items \=\> ca, d, e, q, t, w
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
