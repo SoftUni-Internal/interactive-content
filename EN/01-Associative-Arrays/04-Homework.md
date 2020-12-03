@@ -1267,12 +1267,14 @@ gold \-\> 15
 [/test]
 [test]
 [input]
+Gold
 12
+gold
 1
 [/input]
 [output]
-\-\> 12
-\-\> 1
+Gold \-\> 12
+gold \-\> 1
 [/output]
 [/test]
 [test]
