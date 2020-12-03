@@ -1,10 +1,6 @@
 [slide]
 
-# Associative Arrays
-
-## A Key-Value Pair Structure
-
-### What is an Associative Array?
+# What is an Associative Array?
 
 The whole of the JavaScript language is built on one central data structure - the associative array.
 
@@ -12,58 +8,71 @@ Associative arrays are basically objects in JavaScript where indexes are replace
 
 They do not have a length property like normal array and cannot be iterated using normal for loop.
 
-- Arrays indexed by **string keys**.
-- Hold a set of pairs **key** and **value**.
-  - The **key** is a **string**.
-  - The **value** can be of **any** type.
+Arrays are indexed by **string keys** and they hold a set of pairs **key** and **value**.
+
+The **key** is a **string**. The **value** can be of **any** type.
 
 Example:
 
-| **Key**    | **Value**      |
-| ---------- | -------------- |
+| **Key** | **Value** |
+| --- | --- |
 | John Smith | \+1\-555\-8976 |
 | Lisa Smith | \+1\-555\-1234 |
 | Sam Doe    | \+1\-555\-5030 |
 
-### Declartation
+## Declartation
 
-- An associative array in JavaScript is just an object.
-- We can declare it dynamically.
+An associative array in JavaScript is just an object, so we can declare it dynamically.
+
+Let us declare and initialize one:
+
+In this example `one` is the **key** and number `1` is the corresponding **value**.
 
 ```js
-let assocArr = { one: 1, two: 2, three: 3, [key]: 6 }; // Quotes are used if the key contains special characters
+let assocArr = { one: 1 };
 ```
 
 Valid ways to access values through keys.
+
+`"four"` is the **key** and number `4` is the corresponding **value**.
 
 ```js
 assocArr["four"] = 4;
 ```
 
+`five` is the **key** and number `5` is the corresponding **value**.
+
 ```js
 assocArr.five = 5;
 ```
+
+In this example we declare and initialize the **key** first, and after that we use it to assign a **value** to it.
 
 ```js
 let key = "six";
 assocArr[key] = 6;
 ```
 
-### Using for-in
+## Using for-in loop
 
-- We can use **for-in** loop to iterate through the keys.
+We can use **for-in** loop to iterate through the keys.
 
-```js
+First we declare an empty object. Then we assign values to the keys and finally we iterate through the keys using for in loop.
+
+You can see the result below:
+
+```js live
 let assocArr = {};
 assocArr["one"] = 1;
 assocArr["two"] = 2;
 assocArr["three"] = 3;
 for (let key in assocArr) {
-  console.log(key + " = " + assocArr[key]); // The output will be: one = 1 two = 2 three = 3
+  console.log(key + " = " + assocArr[key]);
 }
 ```
 
 [/slide]
+
 [slide]
 
 # Problem: Phone Book
@@ -96,12 +105,12 @@ Try using an **associative array**.
 
 # Example
 
-| **Input**            | **Output**            |
-| -------------------- | --------------------- |
-| `[Tim 0834212554]`   | Tim \-\> 0876566344   |
-| `[Peter 0877547887]` | Peter \-\> 0877547887 |
-| `[Bill 0896543112]`  | Bill \-\> 0896543112  |
-| `[Tim 0876566344]`   |                       |
+| **Input** | **Output** |
+| --- | --- |
+| `['Tim 0834212554', | Tim \-\> 0876566344   |
+| 'Peter 0877547887', | Peter \-\> 0877547887 |
+| 'Bill 0896543112',  | Bill \-\> 0896543112  |
+| 'Tim 0876566344']`  |                       |
 
 [/task-description]
 [tests]
@@ -230,12 +239,12 @@ Try using an **associative array**.
 
 # Example
 
-| **Input**            | **Output**            |
-| -------------------- | --------------------- |
-| `[Tim 0834212554]`   | Tim \-\> 0876566344   |
-| `[Peter 0877547887]` | Peter \-\> 0877547887 |
-| `[Bill 0896543112]`  | Bill \-\> 0896543112  |
-| `[Tim 0876566344]`   |                       |
+| **Input** | **Output** |
+| --- | --- |
+| `['Tim 0834212554', | Tim \-\> 0876566344   |
+| 'Peter 0877547887', | Peter \-\> 0877547887 |
+| 'Bill 0896543112',  | Bill \-\> 0896543112  |
+| 'Tim 0876566344']`  |                       |
 
 [/task-description]
 [tests]
@@ -324,34 +333,57 @@ tyuhjk \-\> 0844565344
 [/code-task]
 
 [/slide]
+
 [slide]
 
 # Manipulating Associative Arrays
 
-- Check if a key is **present**.
+We can use the following expression to check if a **key** is **present**. 
 
-Checking if the **key** exists you can use the following - **.hasOwnProperty(key)**.
+Use `.hasOwnProperty(key)`
 
-```js
-let assocArr = {
-  /* entries */
-};
-if (assocArr.hasOwnProperty("John Smith")) {
-  /* Key found */
+Let us declare an empty object and assign a key to it. Use if statement and the expression from above to see if the key exists.
+
+```js live
+let assocArr = {};
+assocArr.name = "John Smith";
+if (assocArr.hasOwnProperty(name) {
+  console.log(true);
+} else{
+  console.log(false);
 }
 ```
 
-If you try and access a key that doesn't exist then you get the result **undefined**.
+Removing entires is done by using the keyword `delete`.
 
-- Remove entries:
-
-```js
-delete assocArr["John Smith"];
+```js live
+let assocArr = {};
+assocArr.name = "John Smith";
+delete assocArr.name;
+console.log(assocArr);
 ```
 
-- Iterate destructured entries.
+If you try to access a key that doesn't exist then you will get the result **undefined**.
 
-```js
+```js live
+let assocArr = {};
+assocArr.name = "John Smith";
+delete assocArr.name;
+console.log(assocArr.name);
+```
+
+You can also use somethig called destructuring. 
+
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+The `Object. entries()` method returns an array of a given object's own `[ key , value ]` pairs.
+
+In the for of loop we declare our **key** and **value** variables.
+
+```js live
+let assocArr = {};
+assocArr.name = "John Smith";
+assocArr.age = 28;
 for (let [key, value] of Object.entries(assocArr)) {
   console.log(`${key} -> ${value}`);
 }
@@ -387,8 +419,8 @@ At end, print a list of all meetings.
 
 # Example
 
-| **Input**                                                        | **Output**              |
-| ---------------------------------------------------------------- | ----------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
@@ -396,8 +428,8 @@ At end, print a list of all meetings.
 
 ## Final Output
 
-| **Output**          |
-| ------------------- |
+| **Output** |
+| --- |
 | Monday \-\> Peter   |
 | Wednesday \-\> Bill |
 | Friday \-\> Tim     |
@@ -598,8 +630,8 @@ At end, print a list of all meetings.
 
 # Example
 
-| **Input**                                                        | **Output**              |
-| ---------------------------------------------------------------- | ----------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['Monday Peter', 'Wednesday Bill', 'Monday Tim', 'Friday Tim']` | Scheduled for Monday    |
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
@@ -607,8 +639,8 @@ At end, print a list of all meetings.
 
 ## Final Output
 
-| **Output**          |
-| ------------------- |
+| **Output** |
+| --- |
 | Monday \-\> Peter   |
 | Wednesday \-\> Bill |
 | Friday \-\> Tim     |
@@ -773,42 +805,54 @@ Tuesday \-\> Ted
 
 # Sorting Associative Arrays
 
-- Objects **cannot be sorted**. They must be converted first.
-  - Convert to **array** for **sorting**, **filtering** and **mapping**.
+Objects **cannot be sorted**. They must be converted first.
 
-```js
+You will have to convert to **array** for **sorting**, **filtering** and **mapping**.
+
+By using the method `Object.entries()` we will get an array of arrays as a result. 
+
+See the example below.
+
+```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
 let entries = Object.entries(phonebook);
-console.log(entries); // Array of arrays with two elements each
-// [ ['Tim', '0876566344'],
-//   ['Bill', '0896543112'] ]
+console.log(entries);
+```
+
+So, by using indexing we can get the **key** and the **value** of each **entry**.
+
+```js live
+let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let entries = Object.entries(phonebook);
 let firstEntry = entries[0];
-console.log(firstEntry[0]); // Entry key -> 'Tim'
-console.log(firstEntry[1]); // Entry value -> '0876566344'
+console.log(firstEntry[0]);
+console.log(firstEntry[1]);
 ```
 
-## Sorting By Key
+The `sort()` method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending.
 
-- The **entries** array can be **sorted**, using a **Compare function**.
-- To **sort by key**, use the **first element** of each entry.
+The **entries** array from the above example can be **sorted**, using a **Compare function**.
 
-```js
-entries.sort((a, b) => {
-  keyA = a[0];
-  keyB = b[0];
-  // Perform comparison and return negative, 0 or positive
-});
+To **sort by key**, use the **first element** of each entry.
+
+```js live
+let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let entries = Object.entries(phonebook);
+let result = entries.sort((a, b) => {a[0].localeCompare(b[0])});
+console.log(result);
 ```
 
-- You can also destructure the entries.
+To **sort by value**, use the **second element** of each entry.
 
-```js
-entries.sort(([keyA, valueA], [keyB, valueB]) => {
-  // Perform comparison and return negative, 0 or positive
-});
+```js live
+let phonebook = { Tim: "0876566344", Bill: "0896543112" };
+let entries = Object.entries(phonebook);
+let result = entries.sort((a, b) => {a[1].localeCompare(b[1])});
+console.log(result);
 ```
 
 [/slide]
+
 [slide]
 
 # Problem: AddressBook
@@ -829,7 +873,7 @@ function solve(input){
 
 Write a function that reads **names** and **addresses**.
 
-Values will be separated by **":"**.
+Values will be separated by `":"`.
 
 If same name occurs, save the **latest** address.
 
@@ -837,8 +881,8 @@ Print list, **sorted** alphabetically by **name**.
 
 # Example
 
-| **Input**                                                                          | **Output**             |
-| ---------------------------------------------------------------------------------- | ---------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill \-\> Ornery Rd    |
 |                                                                                    | Peter \-\> Carlyle Ave |
 |                                                                                    | Tim \-\> Doe Crossing  |
@@ -1013,7 +1057,7 @@ function solve(input) {
 
 Write a function that reads **names** and **addresses**.
 
-Values will be separated by **":"**.
+Values will be separated by `":"`.
 
 If same name occurs, save the **latest** address.
 
@@ -1021,8 +1065,8 @@ Print list, **sorted** alphabetically by **name**.
 
 # Example
 
-| **Input**                                                                          | **Output**             |
-| ---------------------------------------------------------------------------------- | ---------------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['Tim:Doe Crossing', 'Bill:Nelson Place', 'Peter:Carlyle Ave', 'Bill:Ornery Rd']` | Bill \-\> Ornery Rd    |
 |                                                                                    | Peter \-\> Carlyle Ave |
 |                                                                                    | Tim \-\> Doe Crossing  |
@@ -1172,48 +1216,32 @@ Ted \-\> Dayton Ave
 
 [slide]
 
-# Sorting
+# Nested Data Structures
 
-## Sorting By Value
+The values of associative arrays can be objects, or arrays.
 
-- To **sort by value**, use the **second element** of each entry.
+Once we have a **reference** to the value, we can **manipulate** it like any other object.
 
-```js
-entries.sort((a, b) => {
-  valueA = a[1];
-  valueB = b[1];
-  // Perform comparison and return negative, 0 or positive
-});
-```
-
-- You can also **destructure** the entries.
-
-```js
-entries.sort(([keyA, valueA], [keyB, valueB]) => {
-  // Perform comparison and return negative, 0 or positive
-});
-```
-
-## Nested Data Structures
-
-- The values of associative arrays can be objects, or arrays.
-- Once we have a **reference** to the value, we can **manipulate** it like any other object.
-
-```js
+```js live
 let contacts = {
   Tim: { phone: "0876566344", address: "Doe Crossing" },
   Bill: { phone: "0896543112", address: "Nelson Place" },
 };
-let billsContact = contacts["Bill"]; // Get reference
-console.log(billsContact.phone); // '0896543112'
+let billsContact = contacts["Bill"];
+console.log(billsContact.phone);
 ```
 
 ## Sorting Nested Data Structures
 
-- We can **sort** them by the **property values** of each entry.
-  - Sort a contact book **alphabetically** by person's address.
+We can **sort** them by the **property values** of each entry. In this case we will use destructuring.
 
-```js
+Sort a contact book **alphabetically** by person's address.
+
+```js live
+let contacts = {
+  Tim: { phone: "0876566344", address: "Doe Crossing" },
+  Bill: { phone: "0896543112", address: "Nelson Place" },
+};
 let entries = Object.entries(contacts);
 entries.sort(([keyA, refA], [keyB, refB]) => {
   let addrA = refA.address;
