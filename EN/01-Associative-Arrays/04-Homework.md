@@ -1,5 +1,8 @@
+[slide]
+
 # Homework
 
+[/slide]
 [slide]
 
 # Problem: Word Tracker
