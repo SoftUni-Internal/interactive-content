@@ -141,9 +141,30 @@ c \- 1
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function odd(input) {
+  let map = new Map();
+  let list = input.split(" ").map((x) => x.toLowerCase());
+  let string = "";
+
+  for (const word of list) {
+    if (map.has(word)) {
+      map.set(word, map.get(word) + 1);
+    } else {
+      map.set(word, 1);
+    }
+  }
+
+  for (const [key, value] of map) {
+    if (value % 2 !== 0) {
+      string += key + " ";
+    }
+  }
+
+  console.log(string);
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
