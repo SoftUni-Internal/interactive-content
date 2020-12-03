@@ -196,3 +196,197 @@ a aa ab cccc
 [/code-task]
 
 [/slide]
+
+[slide]
+
+# Problem: Piccolo
+
+[code-task title="Piccolo" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```js
+function solve(input) {
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Write function that:
+
+- Records a car number for every car that enters the parking lot.
+- Removes a car number when the car goes out.
+- Input will be array of strings in format [**direction**, **carNumber**].
+
+Print the output with all car numbers which are in the parking lot **sorted in ascending by number**.
+
+# Example 1
+
+| **Input**                                                                                                                                                             | **Output** |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']` | CA2822UU   |
+|                                                                                                                                                                       | CA2844AA   |
+|                                                                                                                                                                       | CA9876HH   |
+|                                                                                                                                                                       | CA9999TT   |
+
+# Example 2
+
+| **Input**                                                            | **Output**           |
+| -------------------------------------------------------------------- | -------------------- |
+| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']` | Parking Lot is Empty |
+
+[/task-description]
+[tests]
+[test]
+[input]
+IN\, CA2844AA
+IN\, CA1234TA
+OUT\, CA2844AA
+IN\, CA9999TT
+IN\, CA2866HI
+OUT\, CA1234TA
+IN\, CA2844AA
+OUT\, CA2866HI
+IN\, CA9876HH
+IN\, CA2822UU
+[/input]
+[output]
+CA2822UU
+CA2844AA
+CA9876HH
+CA9999TT
+[/output]
+[/test]
+[test]
+[input]
+IN\, CA2844AA
+IN\, CA1234TA
+OUT\, CA2844AA
+OUT\, CA1234TA
+[/input]
+[output]
+Parking Lot is Empty
+[/output]
+[/test]
+[test]
+[input]
+IN\, mmm
+IN\, aaa
+IN\, ccc
+IN\, ggg
+IN\, sss
+IN\, gqq
+[/input]
+[output]
+aaa
+ccc
+ggg
+gqq
+mmm
+sss
+[/output]
+[/test]
+[test]
+[input]
+IN\, mmm
+IN\, aaa
+IN\, ccc
+IN\, ggg
+IN\, sss
+IN\, sss
+IN\, gqq
+[/input]
+[output]
+aaa
+ccc
+ggg
+gqq
+mmm
+sss
+[/output]
+[/test]
+[test]
+[input]
+IN\, mmm
+IN\, aaa
+IN\, ccc
+OUT\, ggg
+IN\, sss
+IN\, mmm
+OUT\, aaa
+IN\, ccc
+OUT\, ggg
+IN\, sss
+IN\, mmm
+IN\, aaa
+OUT\, ccc
+IN\, ggg
+IN\, sss
+IN\, sss
+OUT\, gqq
+[/input]
+[output]
+aaa
+ggg
+mmm
+sss
+[/output]
+[/test]
+[test]
+[input]
+IN\, mmm
+IN\, aaa
+IN\, ccc
+OUT\, ggg
+IN\, sss
+IN\, mmm
+IN\, ggg
+IN\, sss
+IN\, sss
+OUT\, gqq
+[/input]
+[output]
+aaa
+ccc
+ggg
+mmm
+sss
+[/output]
+[/test]
+[test]
+[input]
+IN\, mmm
+IN\, aaa
+IN\, ccc
+OUT\, ggg
+IN\, ll
+IN\, sss
+IN\, mmm
+IN\, kk
+IN\, sss
+IN\, sss
+IN\, sss
+IN\, mmm
+IN\, ggg
+IN\, sss
+IN\, sss
+OUT\, gqq
+[/input]
+[output]
+aaa
+ccc
+ggg
+kk
+ll
+mmm
+sss
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
