@@ -347,7 +347,7 @@ Let us declare an empty object and assign a key to it. Use if statement and the 
 ```js live
 let assocArr = {};
 assocArr.name = "John Smith";
-if (assocArr.hasOwnProperty(name) {
+if (assocArr.hasOwnProperty(name)) {
   console.log(true);
 } else{
   console.log(false);
