@@ -1,21 +1,30 @@
 [slide]
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="485444743" default /]
+[stream language="RO" videoId="485444743"  /]
+[/video-vimeo]
+
 # In this lesson you learnt:
 
 - What are classes in Java?
     - Template from which objects are created
     - Object is an instance of a class
+    - TODO: Example
 
 Class components:
 - Fields 
     - Field is a variable inside a class
+     - TODO: Example
 - Methods 
     - Store executable code that manipulate state
+     - TODO: Example
 - Constructors
     - Special type of method which is used to initialize the object
     - Constructors are invoked when creating new class instances
     - Set object's initial state
+    - TODO: Example
 
 # In the next lesson, you will learn:
 
