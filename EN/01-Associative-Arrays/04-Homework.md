@@ -1267,9 +1267,7 @@ gold \-\> 15
 [/test]
 [test]
 [input]
-
 12
-
 1
 [/input]
 [output]
