@@ -18,7 +18,7 @@ A single variable can only store a single type of data.
 
 If a primitive type is assigned to a variable, we can think of that variable as containing the primitive value:
 
-``` js
+``` js live
 let a = 10;
 let c = a;
 let b = 'abc';

@@ -53,7 +53,7 @@ Functions within a JavaScript object are called methods.
 
 We can define methods using several syntaxes.
 
-First sybtax:
+First syntax:
 
 ``` js
 let person = {
@@ -63,7 +63,7 @@ let person = {
 }
 ```
 
-Second sybtax:
+Second syntax:
 ```js 
 let person = {
   sayHello() {
