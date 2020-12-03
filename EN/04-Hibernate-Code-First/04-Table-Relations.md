@@ -178,3 +178,51 @@ public abstract class BasicIngredient implements Ingredient {
 
 
 [/slide]
+
+[slide]
+
+# Fetch Types
+
+Fetching in hibernate is the process of obtaining data from the database and making it available to the application.
+
+Choosing a fetching strategy is essencial for our application overall performance.
+
+Fetching too much data like values or rows will add unnecessary overhead for both JDBC and ResultSet execution. 
+
+Fetched entities are stored in the **Persistence Context** as cache.
+
+Fetch type supports two types of loading:
+
+- **EAGER** - Eager fetching takes more memory consumption since it fetches the **child** entities along with **parent.**
+
+We use Eager type when we do not have too much relations.
+
+**Eager** is default fetching policy in `@ManyToOne` and `@OneToOne` mapping type.
+
+**Syntax** of Eager loading:
+
+``` java
+@OneToOne(fetch = FetchType.EAGER)
+```
+
+- **LAZY** - Lazy loading retrieves all reachable entity objects **only when fetched entity's getter method is called.**
+
+``` java
+University university = em.find((long) 1); // this.students = null
+
+// The collection holding the students is populated when the getter is called
+university.getStudents();
+```
+
+It improves performance by reducing memory requirements.
+
+We can use lazy fetching with **all types** of hibernate mappings.
+
+**Syntax** of Lazy loading:
+
+``` java
+@OneToOne(fetch = FetchType.LAZY)
+```
+
+
+[/slide]
