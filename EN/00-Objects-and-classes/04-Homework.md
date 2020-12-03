@@ -15,7 +15,7 @@ Let us solve a few problems to exercise what we have learned.
 [code-task title="Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sumEvenNumbers(input){
+function employees(input){
   // Write your code here
 }
 ```
@@ -93,6 +93,111 @@ Name\: Silas Butler \-\- Personal Number\: 12
 Name\: Adnaan Buckley \-\- Personal Number\: 14
 Name\: Juan Peterson \-\- Personal Number\: 13
 Name\: Brendan Villarreal \-\- Personal Number\: 18
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Towns
+[code-task title="Towns" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function towns(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+You're tasked to create and print objects from a text table. 
+
+You will receive the input as an array of strings, where each string represents a table row, with values on the row separated by pipes ` | ` and spaces.
+
+The table will consist of exactly 3 columns `Town`, `Latitude` and `Longitude`. 
+
+The latitude and longitude columns will always contain valid numbers. 
+
+Check the examples to get a better understanding of your task.
+
+The output should be objects. 
+
+Latitude and longitude must be parsed to numbers and formatted to the second decimal point!
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']`|`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
+|| `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
+
+[/task-description]
+[tests]
+[test]
+[input]
+jdk \| 156.45 \| 12.5645
+hjk \| 32.556 \| 134.824
+io \| 87.65 \| 14.929
+op \| 44.76 \| 184.28
+[/input]
+[output]
+\{ town: 'jdk', latitude: '156.45', longitude: '12.56' \}
+\{ town: 'hjk', latitude: '32.56', longitude: '134.82' \}
+\{ town: 'io', latitude: '87.65', longitude: '14.93' \}
+\{ town: 'op', latitude: '44.76', longitude: '184.28' \}
+[/output]
+[/test]
+[test]
+[input]
+jj \| 156.45 \| 12.575
+yu \| 65.65 \| 64.919
+i \| 12.76 \| 184.28
+[/input]
+[output]
+\{ town: 'jj', latitude: '156.45', longitude: '12.57' \}
+\{ town: 'yu', latitude: '65.65', longitude: '64.92' \}
+\{ town: 'i', latitude: '12.76', longitude: '184.28' \}
+[/output]
+[/test]
+[test]
+[input]
+a \| 156.45 \| 12.575
+b \| 1.65 \| 64.8919
+c \| 45.786 \| 184.128
+d \| 9.745 \| 1684.28
+e \| 12.676 \| 1814.28
+[/input]
+[output]
+\{ town: 'a', latitude: '156.45', longitude: '12.57' \}
+\{ town: 'b', latitude: '1.65', longitude: '64.89' \}
+\{ town: 'c', latitude: '45.79', longitude: '184.13' \}
+\{ town: 'd', latitude: '9.74', longitude: '1684.28' \}
+\{ town: 'e', latitude: '12.68', longitude: '1814.28' \}
+[/output]
+[/test]
+[test]
+[input]
+a \| 136.45 \| 12.575
+k \| 1.65 \| 564.19
+l \| 99.545 \| 1684.18
+e \| 112.66 \| 1814.28
+[/input]
+[output]
+\{ town: 'a', latitude: '136.45', longitude: '12.57' \}
+\{ town: 'k', latitude: '1.65', longitude: '564.19' \}
+\{ town: 'l', latitude: '99.55', longitude: '1684.18' \}
+\{ town: 'e', latitude: '112.66', longitude: '1814.28' \}
+[/output]
+[/test]
+[test]
+[input]
+a \| 136.45 \| 812.575
+[/input]
+[output]
+\{ town: 'a', latitude: '136.45', longitude: '812.58' \}
 [/output]
 [/test]
 [/tests]
