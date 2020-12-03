@@ -11,9 +11,30 @@
 [code-editor language=javascript]
 
 ```js
-function solve(input) {
-  // Write your code here
+function occurence(input) {
+  let words = input.shift().split(" ");
+  let wordMap = new Map();
+  for (const word of words) {
+    wordMap.set(word, 0);
+  }
+
+  for (const word of input) {
+    if (wordMap.has(word)) {
+      wordMap.set(word, wordMap.get(word) + 1);
+    }
+  }
+
+  sortedWords = Array.from(wordMap).sort((a, b) => {
+    return b[1] - a[1];
+  });
+
+  for (const [word, count] of sortedWords) {
+    console.log(`${word} - ${count}`);
+  }
 }
+// function solve(input) {
+//   // Write your code here
+// }
 ```
 
 [/code-editor]
