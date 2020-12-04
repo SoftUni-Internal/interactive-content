@@ -1,4 +1,3 @@
-
 [slide]
 # Statements
 
@@ -50,4 +49,5 @@ After we declare a variable, we can assign a value to it.
   ```js
   sum = a + b;
   ```
-[slide]
+  
+[\slide]
