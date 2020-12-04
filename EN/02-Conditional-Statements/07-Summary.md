@@ -19,4 +19,14 @@ In this lesson we learned:
 
 - how to trace the program's bugs using a debugger
 
+In the next lesson we will learn:
+
+- Reading input from array
+
+- How to use nested if-else conditions
+
+- **Switch-case** condition
+
+- Logical operators over boolean conditions
+
 [/slide]
