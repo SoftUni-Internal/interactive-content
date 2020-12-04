@@ -388,9 +388,9 @@ The `Object.entries()` method returns an array of arrays of a given object's own
 
 In the for of loop we declare our **key** and **value** variables.
 
-After destructuring in the first iteration `key` will be equal to `name` and `value` will be eqal to "John Smith".
+After destructuring in the first iteration `key` will be equal to `name` and `value` will be equal to "John Smith".
 
-In the second iteration of the loop `key` will be eqal to `age` and `value` will be eqal to `28`.
+In the second iteration of the loop `key` will be equal to `age` and `value` will be equal to `28`.
 
 ```js live
 let assocArr = {};
@@ -849,6 +849,12 @@ Use `.localeCompare()` method to sort **strings** in JavaScript.
 
 To **sort by key**, use the **first element** of each entry.
 
+Here `a[0]` is the first element and `b[0]` is the second element of the sorting function.
+
+The expression `a[0].localeCompare(b[0])` will sort in ascending order.
+
+If we have `b[0].localeCompare(a[0])` the function will sort in descending order.
+
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
 let entries = Object.entries(phonebook);
@@ -857,6 +863,8 @@ console.log(result);
 ```
 
 To **sort by value**, use the **second element** of each entry.
+
+In this example it is the same as above, the only difference is that we use the second element of the entry.
 
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
