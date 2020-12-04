@@ -1,6 +1,7 @@
-[slide]
-
 # Statements
+
+[slide]
+# Commands in the Computer Programs
 
 [vimeo-video]
 [stream language=EN videoId=486855548/f48e0caa24 default ]
@@ -18,7 +19,7 @@ JavaScript supports **several different** kinds of statements and here are a few
 * **Selection** statements: select one of a number of possible statements
 
 * **Iteration** statements: execute repeatedly an embedded statement
-   
+
 * **Jump** statements: transfer control
   
 Common actions include
@@ -41,7 +42,8 @@ Assigning a value to a variable means storing a value to a variable.
   counter = 1;
   ```
 
-- **Declaring \+ initializing**
+- Declaring \+ initializing
+
   ```js
   let counter = 1;
   ```
