@@ -8,7 +8,7 @@ When talking about bigger applications, the **Service pattern** always finds it'
 
 The service classes are categorized into different layers, depending on the functionality they introduce.
 
-One such category is the **data services**, which much contain only services related to working with the data repositories connected to the database.
+One such category is the **data services**, which must contain only services related to working with the data repositories connected to the database.
 
 The main concept behind the service layer is to not expose any internal processes to the entities.
 

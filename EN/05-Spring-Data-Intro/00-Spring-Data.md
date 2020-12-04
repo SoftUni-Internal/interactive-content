@@ -6,7 +6,7 @@ In programming, everything is related, therefore to truly understand and compreh
 
 - First, we understood how we can connect to the database and execute native SQL in our code through JDBC.
 
-- Secondly, we got a grasp of what is an ORM and why it is so useful, easing our job of mapping the database objects to java ones.
+- Secondly, we got a grasp of what is an ORM and why it is so useful, easing our job of mapping the database tables to java objects.
 
 - Then we had a closer look at one such ORM, Hibernate, and understood the true nature and behavior of an ORM framework.
 
@@ -18,7 +18,7 @@ Now it's time to have a look at another layer in working with the database, **Sp
 
 The first question that may come to mind is "What is **Spring**?", actually **Spring** is a huge open-source modular framework ecosystem developed by **Pivotal Software**. 
 
-Every different module provides us with a range of services which used together to help us build web applications. 
+Every different module provides us with a range of services when used together we can build web applications. 
 
 [image assetsSrc="Spring-data-introduction(1).png" /]
 
@@ -131,4 +131,6 @@ logging.level.org.hibernate.SQL = DEBUG
 logging.level.org.hibernate.type.descriptor = TRACE
 
 ```
+
+Depending on your project you may need different spring.boot files, you can find many alraedy implemeneted in the internet.
 [/slide]
