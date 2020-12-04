@@ -104,9 +104,11 @@ This is a very simple example of an algorithm which finds smallest number in an 
 We will discuss arrays later.
 
 ``` js live no-template
-const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
-const min = Math.min(...arr)
-console.log(min)
+function findMinNumber() {
+  const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
+  const min = Math.min(...arr)
+  console.log(min)
+}
 ```
 [/slide]
 
