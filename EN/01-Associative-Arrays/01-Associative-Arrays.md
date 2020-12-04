@@ -1248,7 +1248,7 @@ In the following example we declare an object which has two properties: "Tim" an
 
 But "Tim" is another object, so is "Bill". To access Bill's contacts we need to have a reference to the object by creating the variable `billsContact`.
 
-Now it is easy access the properties inside the object "Bill". Just use the newlly created variable `billsContact`.
+Now it is easy to access the properties inside the object "Bill". Just use the newlly created variable `billsContact`.
 
 ```js live
 let contacts = {
