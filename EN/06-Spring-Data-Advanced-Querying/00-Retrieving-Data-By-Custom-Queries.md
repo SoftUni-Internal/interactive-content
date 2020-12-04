@@ -20,7 +20,7 @@ When you are ready, we will be able to create our first repository and make our 
 [/slide]
 
 [slide]
-# TODO: DOCUMENTATION LINK???
+
 [/slide]
 
 [slide]
@@ -124,7 +124,7 @@ List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              //.
 
 [slide]
 
-# Problem: Select Shampoos by Size
+# Select Shampoos by Size
 
 You are given a simpler implementation of the Shampoo Company. 
 

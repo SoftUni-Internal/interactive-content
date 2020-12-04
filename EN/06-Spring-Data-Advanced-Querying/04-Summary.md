@@ -8,7 +8,7 @@
 - We can use JPQL to write custom queries.
     - JPQL syntax on entity classes.
 
-- Repositories can be inheritet to reduce code duplication.
+- Repositories can be inherited to reduce code duplication.
 
 - What's the purpose of the **JavaConfig.java** file.
 

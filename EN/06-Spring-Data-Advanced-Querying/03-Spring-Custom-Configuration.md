@@ -4,7 +4,7 @@
 
 In general Spring Framework is made easy to configure. 
 
-So far, we have configured our project with **Spring** application.properties file.
+So far, we have configured our project with  **Spring** application.properties file.
 
 ```java
 //application.properties
@@ -18,9 +18,9 @@ spring.datasource.password = 1234
 
 Further configuration is done through the JavaConfig file.
 
-The **JavaConfig.java** file refers to the annotation based configuration, 
+The **JavaConfig.java** file refers to the annotation-based configuration, 
 
-back in the days instead of this file it was user the original XML based configuration.
+back in the days instead of this file, it was using the original XML based configuration.
 
 The actual JavaConfig component is the one that goes through the class files and annotations to build the configuration (as opposed to going through an XML file to build the configuration) and registers your @Beans.
 
