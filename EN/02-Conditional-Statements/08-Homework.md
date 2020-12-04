@@ -1,17 +1,6 @@
-[slide]
 # Homework
-Welcome to the homework. 
-
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
-
-We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
-[/slide]
-
 [slide]
+
 # Problem: Guess the Password
 [code-task title="Guess the Password" taskId="pb-js-02-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -326,5 +315,11 @@ Invalid ticket type!
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]

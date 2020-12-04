@@ -1,5 +1,11 @@
 [slide]
 # If-Else Conditions
+
+[vimeo-video]
+[stream language="EN" videoId="486879057/c8e3a2cdaa" default /]
+[stream language="RO" videoId="486879057/c8e3a2cdaa"  /]
+[/video-vimeo]
+
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
@@ -32,7 +38,7 @@ For a single statement, the braces are optional but recommended.
 
 The statement or statements in the then-statement and the else-statement can be of any kind, including another if statement nested inside the original if statement.
 
-# Example: Weather
+## Example: Weather
 This is an extended version of the example from the previous slide.
 
 As you can see now we have another case, which will be executed when the condition in the `if` turns out to be **false.**
@@ -49,6 +55,12 @@ function example(input) {
 
 [slide]
 # Block of Code
+
+[vimeo-video]
+[stream language="EN" videoId="486879069/fa69d41600" default /]
+[stream language="RO" videoId="486879069/fa69d41600"  /]
+[/video-vimeo]
+
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
 When we want to execute **block of code** (group of commands), curly brackets are **required**. 
@@ -80,6 +92,12 @@ if (color == "red") {
 
 [slide]
 # Problem: Even or Odd
+
+[vimeo-video]
+[stream language="EN" videoId="486879240/35e90b72ee" default /]
+[stream language="RO" videoId="486879240/35e90b72ee"  /]
+[/video-vimeo]
+
 [code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js

@@ -1,5 +1,11 @@
 [slide]
 # Summary
+
+[vimeo-video]
+[stream language="EN" videoId="486880119/e471e36bc2" default /]
+[stream language="RO" videoId="486880119/e471e36bc2"  /]
+[/video-vimeo]
+
 In this lesson we learned:
 
 - What is a logical Boolean expression. 
@@ -12,6 +18,5 @@ In this lesson we learned:
 - how to make a series of `if-else` conditions.
 
 - how to trace the program's bugs using a debugger
-
 
 [/slide]

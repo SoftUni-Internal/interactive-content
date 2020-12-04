@@ -1,5 +1,11 @@
 [slide]
 # Debugging
+
+[vimeo-video]
+[stream language="EN" videoId="486879791/6f3c715a5b" default /]
+[stream language="RO" videoId="486879791/6f3c715a5b"  /]
+[/video-vimeo]
+
 So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will show a tool that can help us find mistakes more easily: **the debugger**.
 
 # What is "Debugging"?
@@ -10,6 +16,12 @@ We can track **line by line** what happens in our program, what path it follows,
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="486879964/71bacdc0d7" default /]
+[stream language="RO" videoId="486879964/71bacdc0d7"  /]
+[/video-vimeo]
+
 # Debugging in Visual Studio Code
 * With \[F5\] will start the program in debug mode
 * We can go to the next step with \[F10\]

@@ -1,5 +1,11 @@
 [slide]
 # Sequence of If-Else Conditions
+
+[vimeo-video]
+[stream language="EN" videoId="486879402/eb03e7a9d0" default /]
+[stream language="RO" videoId="486879402/eb03e7a9d0"  /]
+[/video-vimeo]
+
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
 In such cases, we can apply the construction `if-else if ... -else` **in series**.
@@ -22,6 +28,12 @@ else {
 
 [slide]
 # Example: Digits in English
+
+[vimeo-video]
+[stream language="EN" videoId="486879419/2d0e9d0270" default /]
+[stream language="RO" videoId="486879419/2d0e9d0270"  /]
+[/video-vimeo]
+
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 
 We can read the digit and then, through a **sequence of conditions** we can print the relevant English word: 
