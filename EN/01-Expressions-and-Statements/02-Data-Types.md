@@ -1,16 +1,30 @@
 
 [slide]
 # Data Types
+
+[vimeo-video]
+[stream language="EN" videoId="486855368/8cbb7ec0db" default /]
+[stream language="RO" videoId="486855368/8cbb7ec0db"  /]
+[/video-vimeo]
+
 There are six primitive data types:
 * Boolean - true or false
 * Null
 * Undefined    
-* Number - 1, 2, 4.5, -2        
-* String - "Hello, World!"
+* Number - `1, 2, 4.5, -2`
+* String - `Hello, World!`
 * Symbol (new in ECMAScript 6)
 * BigInt
+[/slide]
 
+[slide]
 # Data Types are Dynamic
+
+[vimeo-video]
+[stream language="EN" videoId="486855395/6827c0da76" default /]
+[stream language="RO" videoId="486855395/6827c0da76"  /]
+[/video-vimeo]
+
 In JavaScript data types are dynamic
 
 A single variable can be used to hold different data types:
@@ -51,7 +65,7 @@ let UserLoginCount;
 ```
 
 **Snake-case** is another naming convention, which combines words by: 
-* using an underscore as a separator of the words \(_\)
+* using an underscore as a separator of the words `_`
 * removing all spaces
 * each element's initial letter usually lowercased within the compound
 * the first letter either upper or lowercase:
