@@ -134,4 +134,4 @@ convertUsdToEur("5");
 [stream language="RO" videoId="486834720/d1ce0ef921"  /]
 [/video-vimeo]
 
-[slide]
+[/slide]
