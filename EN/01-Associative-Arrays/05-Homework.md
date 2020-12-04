@@ -220,9 +220,9 @@ c \- 1
 [code-editor language=javascript]
 
 ```js
-function odd(input) {
+function solve(input) {
   let map = new Map();
-  let list = input.split(" ").map((x) => x.toLowerCase());
+  let list = input.shift().split(" ").map((x) => x.toLowerCase());
   let string = "";
 
   for (const word of list) {
@@ -257,8 +257,8 @@ The input comes as a **single string**. The words will be **separated by a singl
 
 # Example
 
-| **Input**                                   | **Output**  |
-| ------------------------------------------- | ----------- |
+| **Input** | **Output**  |
+| --- | --- |
 | 'Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#' | c\# php 1 5 |
 
 [/task-description]
