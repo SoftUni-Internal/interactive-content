@@ -1,6 +1,11 @@
 [slide]
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="486836367/d4732dbdec" default /]
+[stream language="RO" videoId="486836367/d4732dbdec"  /]
+[/video-vimeo]
+
 In this lesson we learned: 
 
 - How to **write basic code**

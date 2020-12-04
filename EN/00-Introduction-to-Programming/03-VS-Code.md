@@ -1,7 +1,11 @@
-# Development Environments (IDE)
-
 [slide]
 # Development Environments (IDE)
+
+[vimeo-video]
+[stream language="EN" videoId="486835445/ac9f325729" default /]
+[stream language="RO" videoId="486835445/ac9f325729"  /]
+[/video-vimeo]
+
 In order to program we need an **Integrated Development Environment** (IDE). 
 
 An **Integrated Development Environment** (or IDE) is a combination of some traditional tools for creating software applications.
@@ -36,6 +40,12 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 
 [slide]
 # Installing Node.js and Visual Studio Code
+
+[vimeo-video]
+[stream language="EN" videoId="486835484/98228c39ea" default /]
+[stream language="RO" videoId="486835484/98228c39ea"  /]
+[/video-vimeo]
+
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
 * server-side JS runtime.
@@ -91,6 +101,12 @@ That's all. You are ready to work with Visual Studio Code.
 
 [slide]
 # Development Environments: Desktop and Online
+
+[vimeo-video]
+[stream language="EN" videoId="486835538/7662f7e6ca" default /]
+[stream language="RO" videoId="4486835538/7662f7e6ca"  /]
+[/video-vimeo]
+
 Install Microsoft Visual Studio Code
 
 * [Visual Studio Code](https://code.visualstudio.com/download) 
@@ -104,5 +120,35 @@ Alternative IDE (online)
 * [Python](https://repl.it)
 
 [image assetsSrc="intro-to-programming-1.png" /]
+
+[/slide]
+
+[slide]
+# What is Visual Studio Code
+
+[vimeo-video]
+[stream language="EN" videoId="486835601/f6d36a44eb" default /]
+[stream language="RO" videoId="486835601/f6d36a44eb"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
+# Running VSC and Recommended Extensions
+
+[vimeo-video]
+[stream language="EN" videoId="486835722/828f778f35" default /]
+[stream language="RO" videoId="486835722/828f778f35"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
+# Projects in VSC
+
+[vimeo-video]
+[stream language="EN" videoId="486835793/082e4ffd04" default /]
+[stream language="RO" videoId="486835793/082e4ffd04"  /]
+[/video-vimeo]
 
 [/slide]

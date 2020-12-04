@@ -2,6 +2,11 @@
 
 # What is Coding?
 
+[vimeo-video]
+[stream language="EN" videoId="486831827/419d467fd3" default /]
+[stream language="RO" videoId="486831827/419d467fd3"  /]
+[/video-vimeo]
+
 **To program**, put in simple terms, means to **give commands** to the computer.
 
 Some basic examples are: 
@@ -25,7 +30,12 @@ console.log("Welcome to coding");
 
 [slide]
 # Computer Programs
- 
+
+[vimeo-video]
+[stream language="EN" videoId="486832336/e4188d5010" default /]
+[stream language="RO" videoId="486832336/e4188d5010"  /]
+[/video-vimeo]
+
 Computer programs represent **a sequence of commands** which are written in a certain **programming language**, like: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
 Example of **computer program** in JS: 
@@ -63,6 +73,11 @@ Therefore, we are going to learn the **principles** of writing computer c**ode s
 [slide]
 # Algorithms
 
+[vimeo-video]
+[stream language="EN" videoId="486832885/b0c2ee91e7" default /]
+[stream language="RO" videoId="486832885/b0c2ee91e7"  /]
+[/video-vimeo]
+
 Computer programs usually execute algorithms. 
 
 **Algorithms** are **sequences of steps**, necessary for the completion of a certain task, something like "recipes". 
@@ -91,6 +106,11 @@ For example, we will use **Visual Studio Code.**
 [slide]
 # Console-Based JavaScript Program – Example
 
+[vimeo-video]
+[stream language="EN" videoId="486834408/4266dce8e6" default /]
+[stream language="RO" videoId="486834408/4266dce8e6"  /]
+[/video-vimeo]
+
 Let's look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer, converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
 
 This is a program of 3 consecutive commands: 
@@ -105,3 +125,13 @@ function convertUsdToEur(input) {
 convertUsdToEur("5");
 ```
 [/slide]
+
+[slide]
+# Browser-Based JavaScript Program – Example
+
+[vimeo-video]
+[stream language="EN" videoId="486834720/d1ce0ef921" default /]
+[stream language="RO" videoId="486834720/d1ce0ef921"  /]
+[/video-vimeo]
+
+[slide]

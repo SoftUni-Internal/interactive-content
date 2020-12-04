@@ -1,7 +1,11 @@
-# Console App in VS Code
-
 [slide]
 # Console App in VS Code
+
+[vimeo-video]
+[stream language="EN" videoId="486835903/f8f0434f30" default /]
+[stream language="RO" videoId="486835903/f8f0434f30"  /]
+[/video-vimeo]
+
 We already have Visual Studio Code and we can start it. 
 
 Create a folder for your project and open it from VS Code:
@@ -18,6 +22,12 @@ Create a file hello.js to hold your program's source code:
 
 [slide]
 # Writing the Program Code
+
+[vimeo-video]
+[stream language="EN" videoId="486835933/467020ce79" default /]
+[stream language="RO" videoId="486835933/467020ce79"  /]
+[/video-vimeo]
+
 The source code of the JS program should be written inside a function, which we later invoke in order to run it. 
 
 Press `[Enter]` after **the opening parentheses** `{` and **start writing**.
@@ -44,6 +54,12 @@ This command is very typical in programming: we say a given **object** should be
 
 [slide]
 # Starting the Program
+
+[vimeo-video]
+[stream language="EN" videoId="486836101/b0f9ba7bd8" default /]
+[stream language="RO" videoId="486836101/b0f9ba7bd8"  /]
+[/video-vimeo]
+
 To start the program, press \[Ctrl + F5\]
 
 The result will appear in the \[Debug Console\] tab
@@ -61,3 +77,4 @@ If you have multiple `.js` files in VS Code, you may want to start the current f
 Alternatively, use the "Code Runner" extension
 [image assetsSrc="intro-to-programming-8.png" /]
 [/slide]
+

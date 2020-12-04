@@ -1,12 +1,4 @@
-[slide]
 # Homework
-Welcome to the homework tab. 
-
-Now we are going to create a couple of **console applications**, with which we are going to take a few more steps further into programming. 
-
-We have prepared some problems for you to solve.
-[image assetsSrc="homeowrk.png" /]
-[/slide]
 
 [slide]
 # Problem: Print "Hello JavaScript"
@@ -167,4 +159,10 @@ Prints a square of `7 * 7` stars like this:
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
+
 [/slide]

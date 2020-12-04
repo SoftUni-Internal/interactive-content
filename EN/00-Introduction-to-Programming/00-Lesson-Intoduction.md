@@ -8,16 +8,17 @@
 [/video-vimeo]
 
 ## In this lesson you will learn about:
-1. What is coding?
+
+**1. What is coding?**
 - Writing simple commands and programs
 
-2. Programming Languages
+**2. Programming Languages**
 - First steps in JavaScript language
 
-3. Integrated development environment (IDE)
+**3. Integrated development environment (IDE)**
 - Visual Studio Code
 
-4. Console apps in Visual Studio Code
+**4. Console apps in Visual Studio Code**
 - Creating and running console apps
 
 [/slide]
