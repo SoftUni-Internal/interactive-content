@@ -1,5 +1,11 @@
 [slide]
 # Nested Conditions
+
+[vimeo-video]
+[stream language="EN" videoId="486869737/722ae750dd" default /]
+[stream language="RO" videoId="486869737/722ae750dd"  /]
+[/video-vimeo]
+
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 
 
@@ -62,6 +68,7 @@ Nesting of **more than three conditional statements** inside each other is not c
 
 It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
 [/slide]
+
 [slide]
 # Problem: Marketplace
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -123,6 +130,11 @@ Weekend
 
 [slide]
 # Solution: Marketplace
+[vimeo-video]
+[stream language="EN" videoId="486869990/380a476703" default /]
+[stream language="RO" videoId="486869990/380a476703"  /]
+[/video-vimeo]
+
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -261,6 +273,11 @@ Write a program, which:
 
 [slide]
 # Solution: Biggest Number of Three
+[vimeo-video]
+[stream language="EN" videoId="486870661/f4c774cc7b" default /]
+[stream language="RO" videoId="486870661/f4c774cc7b"  /]
+[/video-vimeo]
+
 [code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
