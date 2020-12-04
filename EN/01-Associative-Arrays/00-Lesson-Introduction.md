@@ -4,7 +4,7 @@
 
 # In this lesson you will learn about:
 
-1. Associative Arrays?
+1. Associative Arrays
 - Definition
 - Iteration
 - Manipulation
