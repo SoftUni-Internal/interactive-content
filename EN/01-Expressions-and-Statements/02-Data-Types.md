@@ -1,3 +1,5 @@
+# Data Types and Ranges of Variables
+
 [slide]
 # Data Types
 
@@ -25,7 +27,7 @@ There are six primitive data types:
 [stream language="RO" videoId="486855395/6827c0da76"  /]
 [/video-vimeo]
 
-In JavaScript data types are dynamic
+In JavaScript data types are dynamic.
 
 A single variable can be used to hold different data types:
 

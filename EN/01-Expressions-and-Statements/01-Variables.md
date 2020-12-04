@@ -11,10 +11,6 @@
 If we think of the variables as boxes that hold information, this is how they would look:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
-Variables can be stored in the program's:
-  * Operational memory - in the execution **stack**
-  * Dynamic memory - in the **heap**
-
 [/slide]
 
 
@@ -46,6 +42,10 @@ The data that they are storing can be read and changed at any time.
 [stream language="RO" videoId="486854948/925f8eaf2d"  /]
 [/video-vimeo]
 
+Variables can be stored in the program's:
+  * Operational memory - in the execution **stack**
+  * Dynamic memory - in the **heap**
+
 Basically **variables** provide means for:
   * **Storing** data
   * **Retrieving** stored data
@@ -66,56 +66,41 @@ let age = 35;
 ```
 [/slide]
 
-
 [slide]
-# Statements
+# Declaration Statements:
 
 [vimeo-video]
 [stream language="EN" videoId="486855151/43dc67876d" default /]
 [stream language="RO" videoId="486855151/43dc67876d"  /]
 [/video-vimeo]
 
-The **actions** that a program takes, are expressed as **statements**. 
+Declaration statements in javascript are: `let`, `var` and `const`
 
-JavaScript supports several different kinds of statements and here are a few of them:
-  * **Declaration statements** - declare local variables and constants
-  * **Expression statements** - evaluate expressions
-  * **Selection statements** - select one of a number of possible statements
-  * **Iteration statements** - execute repeatedly an embedded statement
-  * **Jump statements** - transfer control
-  
-Common actions include:
--  **Declaring** a variable
+* `let`: declares a variable, optionally initializing it
 
-  Declaring a variable means **defining** its **type**.
-  ```js
-  let counter;
-  ```
--  **Assigning** a value
+``` js live
+let age = 25;
+console.log("Age:", age); 
+```
 
-After we declare a variable, we can assign a value to it.
-  
-  Assigning a value to a variable means **storing** a **value** to a variable.
-  ```js
-  counter = 1;
-  ```
+* `var` – similar to `let`, but gives a wider scope
 
-- Declaring + **initializing**
-  ```js
-  let counter = 1;
-  ```
+``` js live
+function example() {
+  console.log(age); 
+  var age = 25;
+  console.log(age); 
+}
+example();
 
-- **Printing** a value
-  ```js
-  console.log(counter);
-  ```
+```
 
-- **Modifying** a value
-  ```js
-  counter++;
-  ```
-  
-  ```js
-  sum = a + b;
-  ```
+* `const` – declares a read-only named constant
+
+``` js live
+const name = "Peter";
+console.log(name);
+
+name = "John";
+```
 [/slide]
