@@ -11,6 +11,7 @@ Now we are going to create a couple of **console applications**, with which we a
 We have prepared some problems for you to solve.
 
 [/slide]
+
 [slide]
 
 # Problem: Word Tracker
@@ -18,8 +19,8 @@ We have prepared some problems for you to solve.
 [code-task title="Word Tracker" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
-function occurence(input) {
+```
+function solve(input) {
   let words = input.shift().split(" ");
   let wordMap = new Map();
   for (const word of words) {
@@ -64,10 +65,13 @@ The words should be **sorted by count in descending**.
 
 # Example
 
-| **Input**                                                                                                                                                                 | **Output**    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| `['this sentence', 'In','this','sentence','you','have','to','count','the','occurances','of','the' ,'words','this','and','sentence','because','this','is','your','task' ]` | this \- 3     |
-|                                                                                                                                                                           | sentence \- 2 |
+**Input**                                                                                                                                                              
+ `['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 
+  'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']`
+
+ **Output**
+ this \- 3 
+ sentence \- 2
 
 [/task-description]
 [tests]
