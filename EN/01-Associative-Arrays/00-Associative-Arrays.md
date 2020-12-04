@@ -1243,11 +1243,12 @@ let contacts = {
   Bill: { phone: "0896543112", address: "Nelson Place" },
 };
 let entries = Object.entries(contacts);
-entries.sort(([keyA, refA], [keyB, refB]) => {
+let result = entries.sort(([keyA, refA], [keyB, refB]) => {
   let addrA = refA.address;
   let addrB = refB.address;
   return addrA.localeCompare(addrB);
 });
+console.log(result);
 ```
 
 [/slide]
