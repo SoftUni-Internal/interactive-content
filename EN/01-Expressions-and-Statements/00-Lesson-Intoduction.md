@@ -9,30 +9,30 @@
 
 ## In this lesson you will learn about:
 
-**1. **Variables:** Declaring, Reading, Modifying
+**1. Variables: Declaring, Reading, Modifying**
 
-    * Create and use variables
+- Create and use variables
 
-**2. **Data Types:** Numbers, Text, Others
+**2. Data Types: Numbers, Text, Others**
 
-    * Different data types in JavaScript
+- Different data types in JavaScript
 
-**3. **Statements** \(Commands\)
+**3. Statements (Commands)**
 
-    * How to write commands
+- How to write commands
 
-**4. Reading **User Input** and Formatting **Output**
+**4. Reading User Input and Formatting Output**
 
-* Print output to the console
+- Print output to the console
 
-**5. Arithmetic Operators: `+`, `-`, `*` and `/`
+**2. Arithmetic Operators: +, -, * and /**
 
-* How to manipulate variables
+- How to manipulate variables
 
-**6. **Expressions**
+**6. Expressions**
 
-* How to combine values and operators
+- How to combine values and operators
 
-**7. **Practical Exercises**
+**7. Practical Exercises**
 
 [/slide]
