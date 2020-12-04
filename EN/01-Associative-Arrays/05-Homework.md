@@ -328,7 +328,8 @@ Print the output with all car numbers which are in the parking lot **sorted in a
 `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 
 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']`
 
-**Output** 
+**Output**
+
 CA2822UU
 
 CA2844AA
@@ -545,7 +546,11 @@ Output all guest, who didn't come to the party (VIP must be first).
 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']`
 
 **Output**
-2                                                                                                                                                                      xys2FYzn
+
+2
+
+xys2FYzn
+
 MDzcM9ZK
 
 [/task-description]
@@ -745,8 +750,11 @@ Finally print out the total value each player has in his hand in the format:
 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` 
 
 **Output**
-Peter\: 167  
+
+Peter\: 167
+
 Tomas\: 175
+
 Andrea\: 197
 
 [/task-description]
