@@ -208,7 +208,7 @@ tyuhjk \-\> 0844565344
 [code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   let contacts = {};
   for (const line of input) {
@@ -340,9 +340,11 @@ tyuhjk \-\> 0844565344
 
 We can use the following expression to check if a **key** is **present**. 
 
-Use `.hasOwnProperty("key")`
+Use the method `.hasOwnProperty("key")`
 
 Let us declare an empty object and assign a key to it. Use if statement and the expression from above to see if the key exists.
+
+The result should be "true".
 
 ```js live
 let assocArr = {};
@@ -354,7 +356,9 @@ if (assocArr.hasOwnProperty("name")) {
 }
 ```
 
-Removing entires is done by using the keyword `delete`.
+Removing entires is done by the keyword `delete`. First declare an empty object and assign a key to.
+
+Next delete the key. The output will be an empty object as you can see from the example.
 
 ```js live
 let assocArr = {};
@@ -364,6 +368,10 @@ console.log(assocArr);
 ```
 
 If you try to access a key that doesn't exist then you will get the result **undefined**.
+
+Try to `console.log()` `assocArr.name` after deleting the property `name`.
+
+See the example below.
 
 ```js live
 let assocArr = {};
@@ -376,9 +384,13 @@ You can also use somethig called destructuring.
 
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-The `Object.entries()` method returns an array of a given object's own `[ key , value ]` pairs.
+The `Object.entries()` method returns an array of arrays of a given object's own `[ key , value ]` pairs.
 
 In the for of loop we declare our **key** and **value** variables.
+
+After destructuring in the first iteration `key` will be equal to `name` and `value` will be eqal to "John Smith".
+
+In the second iteration of the loop `key` will be eqal to `age` and `value` will be eqal to `28`.
 
 ```js live
 let assocArr = {};
@@ -597,7 +609,7 @@ Tuesday \-\> Ted
 [code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   const meetings = {};
   for (const line of input) {
@@ -833,6 +845,8 @@ The `sort()` method sorts the elements of an array in place and returns the sort
 
 The **entries** array from the above example can be **sorted**, using a **Compare function**.
 
+Use `.localeCompare()` method to sort **strings** in JavaScript.
+
 To **sort by key**, use the **first element** of each entry.
 
 ```js live
@@ -1037,7 +1051,7 @@ Ted \-\> Dayton Ave
 [code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   const book = {};
   for (const line of input) {
@@ -1221,6 +1235,12 @@ Ted \-\> Dayton Ave
 The values of associative arrays can be objects, or arrays.
 
 Once we have a **reference** to the value, we can **manipulate** it like any other object.
+
+In the following example we declare an object which has two properties: "Tim" and "Bill".
+
+But "Tim" is another object, so is "Bill". To access Bill's contacts we need to have a reference to the object by creating the variable `billsContact`.
+
+Now it is easy access the properties inside the object "Bill". Just use the newlly created variable `billsContact`.
 
 ```js live
 let contacts = {
