@@ -1,4 +1,5 @@
 [slide]
+
 # Statements
 
 [vimeo-video]
@@ -50,4 +51,4 @@ After we declare a variable, we can assign a value to it.
   sum = a + b;
   ```
   
-[\slide]
+[/slide]
