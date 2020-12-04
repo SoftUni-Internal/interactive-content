@@ -134,13 +134,13 @@ Expand **Book** from UML diagram below:
 | **Book** |
 |- title: String |
 |- year: int |
-|- authors: `List<String>` | 
+|- authors: List\<String\> |
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): `List<String>` |
+|+ getAuthors(): List\<String\> |
 |+ compareTo(Book): int |
 
 
