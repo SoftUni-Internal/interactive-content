@@ -306,6 +306,8 @@ typeMap.map(employeeDto);
 
 [slide]
 
+# Type converting
+
 Sometimes the information we receive from the database can be in different type than we need it.
 
 For these cases, we can tell Model Mapper to try to convert the properties to the type that we need.
