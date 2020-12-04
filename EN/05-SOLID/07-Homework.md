@@ -37,11 +37,11 @@ Whenever a logger is told to **log** something, it calls all of its appenders an
 
 Your library should correctly follow all **SOLID** principles:
 
-- **Single Responsibility Principle** - no class or method should do more than one thing at once
-- **Open-Closed Principle** - the library should be open for extension (i.e. its user should be able to create his own layouts/appenders/loggers)
-- **Liskov Substitution Principle -** children classes should not break the behavior of their parent
-- **Interface Segregation Principle** - the library should provide simple interfaces for the client to implement
-- **Dependency Inversion** - no class/method should directly depend on concretions (only on abstractions)
+- **Single Responsibility Principle** - no class or method should do more than one thing at once.
+- **Open-Closed Principle** - the library should be open for extension (i.e. its user should be able to create his own layouts/appenders/loggers).
+- **Liskov Substitution Principle -** children classes should not break the behavior of their parent.
+- **Interface Segregation Principle** - the library should provide simple interfaces for the client to implement.
+- **Dependency Inversion** - no class/method should directly depend on concretions (only on abstractions).
 
 Avoid code repetition. Name everything accordingly.
 
@@ -49,10 +49,13 @@ Avoid code repetition. Name everything accordingly.
 
 The library should provide the following ready classes for the client:
 
-- **SimpleLayout** - defines the format **"\{date-time\} - \{report level\} - \{message\}"**
-- **ConsoleAppender** - appends a log to the console using the provided layout
+- **SimpleLayout** - defines the format "\{date-time\} - \{report level\} - \{message\}"
+
+- **ConsoleAppender** - appends a log to the console using the provided layout.
+
 - **FileAppender** - appends a log to a file (You need to implement a **CustomFile** class) using
-the provided layout
+the provided layout.
+
 - **LogFile** - a custom file class which logs messages in a string builder using a method `write()`.
 
  It should have a **getter** for its **size** which is the **sum** of the ascii codes of all alphabet characters it contains (e.g. a-z and A-Z).
@@ -75,13 +78,13 @@ logger.logError("3/26/2015 2:08:11 PM", "Error parsing JSON.");
 logger.logInfo("3/26/2015 2:08:11 PM", "User Peter successfully registered.");
 ```
 
-The above code should log the messages both on the **console** and in **LogFile** in the format **SimpleLayout** provides.
+The above code should log the messages, both on the **console**, and in **LogFile** in the format **SimpleLayout** provides.
 
 ### Extensibility
 
 The end-user should be able to add his own **layouts** / **appenders** / **loggers** and use them.
 
-For example, he should be able to create his own **XmlLayout** and make the appenders use it, **without directly editing** the library source code.
+For example, the end user should be able to create his own **XmlLayout** and make the appenders use it, **without directly editing** the library source code.
 
 ## Sample Source Code
 
@@ -145,7 +148,7 @@ Every message should be evaluated by all the appenders and logged if they meet t
 
 Console appenders **should write directly on the console**. 
 
-File appenders write (**save**) the messages but do not print them.
+File appenders write (**save**) the messages, but do not print them.
 
 ### Input
 
@@ -159,7 +162,7 @@ If no report level is provided, the appender should be set to record all message
 
 If there is no report level, value is **INFO**.
 
-Next, until you get the **END** command you will receive messages containing report level, time and message separated by pipe `|`:
+Next, until you get the **END** command, you will receive messages containing report level, time and message separated by pipe `|`:
 
 - `<REPORT LEVEL>|<time>|<message>`
 
@@ -212,8 +215,3 @@ Appender type: FileAppender, Layout type: XmlLayout, Report level: INFO, Message
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

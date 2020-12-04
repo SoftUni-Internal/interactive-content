@@ -18,7 +18,7 @@ Instead, the **details have to be based on abstractions**.​
 
 The goal we are trying to achieve with the abstraction approach is to have **independent modules**.​
 
-​In the following example, we have two classes **Button** and **Lamp**.
+​In the following example, we have two classes: **Button** and **Lamp**.
 
 The **Button** class recieves a `poll()` message that determines whether or not a user has pressed it. 
 
@@ -51,7 +51,7 @@ Furthermore, **Button class is not reusable**: you can’t use it to switch on a
 
 The above code is a violation of the **Dependency Inversion principle**.
 
-To solve the design issue behind the code above, we need to create a **middle-layer** where to define an **abstract interface associated with Button** and implemented by any classes like Lamp:
+To solve the design issue behind the code above, we need to create a **middle-layer** where we can define an **abstract interface associated with Button** and implemented by any classes like Lamp:
 
 ```java
 public interface SwitchableDevice {
@@ -60,7 +60,7 @@ public interface SwitchableDevice {
     void turnOff();
 }
 ```
-Now, the **Button** class depends on the **SwitchableDevice** interface not to the concrete class suchs as **Lamp**:
+Now, the **Button** class depends on the **SwitchableDevice** interface, not on concrete class such as **Lamp**:
 ```java 
 public class Button {
 
@@ -82,7 +82,7 @@ public class Button {
     }
 }
 ```
-The **Lamp** class should implements **SwitchableDevice** interface:
+The **Lamp** class should implement **SwitchableDevice** interface:
 
 ```java
 public class Lamp implements SwitchableDevice {
@@ -99,9 +99,9 @@ public class Lamp implements SwitchableDevice {
 }
 ```
 
-The **Button** class can accepts **any implementation of the SwitchableDevice interface**.
+The **Button** class can accept **any implementation of the SwitchableDevice interface**.
 
-In our case this a **Lamp** but it could be **any other device** which implements the **SwitchableDevice** interface:
+In our case, this a **Lamp**, but it could be **any other device** which implements the **SwitchableDevice** interface:
 ```java
 public class Main {
     public static void main(String[] args) {

@@ -4,7 +4,7 @@
 
 The **Liskov substitution principle**, written by **Barbara Liskov** in 1988, states that functions that reference base classes must be able to use objects of derived (child) classes without knowing it.
 
-In other words, principle defines that objects of a **superclass** shall be **replaceable** with objects of its **subclasses** without breaking the application.
+In other words, the principle defines that objects of a **superclass** shall be **replaceable** with objects of its **subclasses** without breaking the application.
 
 That requires the objects of your subclasses to **behave in the same way** as the objects of your superclass.
 
@@ -58,7 +58,7 @@ public class MotorCar implements Vehicle {
 
 As the above code describes, we have an **engine** that we can **turn on**, and we can **increase the power**.
 
-But what will happen if we want to add an **electric car**.
+But what happens if we want to add an **electric car**.
 
 ```java
 public class ElectricCar implements Vehicle {
@@ -74,7 +74,7 @@ public class ElectricCar implements Vehicle {
 ```
 The electric car is a vehicle, however it does not have an engine and hence, the method `startEngine()` cannot be implemented.
 
-These are the kinds of problems that **violation** of Liskov Substitution Principle leads to, and they can most usually be recognized by a **method that does nothing**, or even **can’t be implemented**.
+These are the kinds of problems that **violations** of the Liskov Substitution Principle leads to, and they can most often be recognized by a **method that does nothing**, or can't even be **implemented.**
 
 The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating interfaces of vehicles with and without engines.
 
@@ -87,10 +87,10 @@ public interface Vehicle {
 }
 ```
 
-Then, we create the **ElectricVehicle** interface which **extends the Vehicle interface** and has his own method - `batteryLife()`
+Then, we create the **ElectricVehicle** interface, which **extends the Vehicle interface**, and has his own method - `batteryLife()`
 
 ```java
-public interface ElectricVehicle extends Vehicle{
+public interface ElectricVehicle extends Vehicle {
 
     int batteryLife();
 }
@@ -98,7 +98,7 @@ public interface ElectricVehicle extends Vehicle{
 So, we create an interface **Car** which extends Vehicle, where is more appropriate to add the `startEngine()` - method.
 
 ```java
-public interface Car extends Vehicle{
+public interface Car extends Vehicle {
     void startEngine();
 }
 ```
@@ -125,7 +125,7 @@ public class MotorCar implements Car {
 And the **ElectricCar** class implements the **ElectricVehicle** interface:
 
 ```java
-public class ElectricCar implements ElectricVehicle{
+public class ElectricCar implements ElectricVehicle {
 
     @Override
     public int batteryLife() {
@@ -139,6 +139,6 @@ public class ElectricCar implements ElectricVehicle{
 }
 ```
 
-Thus our **MotorCar** and **ElectricCar** classes become **more specialized** while **adhering to the Liskov Substitution Principle.**
+Thus, our **MotorCar** and **ElectricCar** classes have become **more specialized**, while **adhering to the Liskov Substitution Principle.**
 
 [/slide]

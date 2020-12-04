@@ -4,32 +4,27 @@
 
 # SOLID Principles Overview
 
-In Java, the classes are the **building blocks** of any application. 
+In Java, classes are the **building blocks** of any application. 
 
-If these blocks are not strong, the building (i.e. the **application**) is going to face a tough time in the future.
+If these blocks are not strong, it might be challenging for the building (i.e the **application**) in the future.
 
-When the developer builds a software following the **bad design**, the code can become inflexible and more brittle, **small changes in the software can result in bugs**.
+When a developer builds a software that follows a **bad design**, the code can become inflexible and more brittle, which means that **small changes in the software can result in bugs**.
 
-For these reasons, we should follow **SOLID** Principles.
+For these reasons, we should follow the **SOLID** Principles.
 
-**SOLID** Principles is a **coding standard** that all developers should have a **clear concept** for developing software in a **proper way** to **avoid a bad design**.
+The **SOLID** Principles are a **coding standard** that all developers should have a **clear concept** for developing software in a **way** that **avoids bad design**.
 
 It was promoted by **Robert Martin** and is used across the object-oriented design spectrum.
 
-When applied properly it makes your code more **extendable**, **logical** and **easier to read**.
+When applied properly, it makes your code more **extendable**, **logical** and **easier to read**.
 
 **S.O.L.I.D** represents five principles of Java which are:
 
-- **S** – **Single responsibility** principle – class should only have one responsibility
-- **O** – **Open–closed** principle – open for extension, but closed for modification
-- **L** – **Liskov substitution** principle – objects should be replaceable with instances of their subtypes without altering the correctness of that program
-- **I** – **Interface segregation** principle – many specific interfaces are better than one general interface
-- **D** – **Dependency inversion** principle – one should depend upon abstractions, not concretions
-
-In the following Lesson, we'll take a deep dive into what each of these principles means.
-
-
-
+- **S** – **Single responsibility** – a class should have only one responsibility.
+- **O** – **Open–closed** - open for extension, but closed for modification.
+- **L** – **Liskov substitution** – objects should be replaceable with instances of their subtypes, without altering the correctness of that program.
+- **I** – **Interface segregation** – many specific interfaces are better than one general interface.
+- **D** – **Dependency inversion** – one should depend upon abstractions, not concretions.
 
 
 [/slide]

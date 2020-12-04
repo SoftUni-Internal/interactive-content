@@ -2,14 +2,14 @@
 
 # Open Closed Principle
 
-"The code shuold be **open for extension**, but **closed for modification**".
+"The code should be **open for extension**, but **closed for modification**".
 
 Software entities (**classes**, **modules**, **methods**, etc.) should be extendable without actually changing the contents of the class you’re extending. 
 
-If we could follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code**.
+If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code**.
 
 
-In the following example, we have the **CalculateArea** class which calculate the area of various shapes.
+In the following example, we have the **CalculateArea** class which calculates the area of various shapes.
 
 - **CalculateArea** class:
 ```java
@@ -51,8 +51,8 @@ public class Circle {
 ```java
 public class Rectangle {
 
-    private  double width;
-    private  double height;
+    private double width;
+    private double height;
     // TODO add getters and setters
 
 }
@@ -60,7 +60,7 @@ public class Rectangle {
 
 If we want to add **square** for example, we have to **modify** the `calculate()` method in the **CalculateArea** class.
 
-**Thus will break the open-closed principle**.
+**Thus, we will break the open-closed principle**.
 
 According to this principle, **we can’t modify**, but **we can extend**.
 
@@ -68,7 +68,7 @@ To overcome this problem, we have to **add abstraction** to the `calculate()` me
 
 We have to **delegate** the responsibility of providing the calculation of the area inside the shape itself.
 
-Each **shape** must have **own logic** to calculate its area.
+Each **shape** must have its **own logic** to calculate its area.
 
 See the solution of the problem in the following code: 
 
@@ -82,7 +82,7 @@ public interface Shape {
 }
 ```
 
-- By implementing the **Shape** Interface, all shapes classes are obligatory to implement the `calculateArea()` method.
+- By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method.
 - **Circle** class:
 
 ```java
@@ -104,8 +104,8 @@ public class Circle implements Shape {
 ```java
 public class Rectangle implements Shape {
 
-    private  double width;
-    private  double height;
+    private double width;
+    private double height;
     // TODO add getters and setters
 
 
@@ -133,7 +133,7 @@ public class Square implements Shape {
 
 ```
 
-- In the end our **CalculateArea** class should look like this:
+- In the end, our **CalculateArea** class should look like this:
 
 ```java
 public class CalculateArea {
@@ -144,11 +144,11 @@ public class CalculateArea {
 }
 ```
 
-By using the **Open-Closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be sure our existing application won't be affected.
+By using the **Open-Closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application won't be affected.
 
 Applying **Open-Closed principle** to our projects limits the need to change source code once it has been written, tested and debugged.
 
-This **reduces the risk of introducing new bugs** to existing code, leading to more robust software.
+This **reduces the risk of introducing new bugs** to existing code, leading to a more robust software.
 
 
 
