@@ -1,5 +1,27 @@
+[slide]
+# Real Live Example
+
+[vimeo-video]
+[stream language="EN" videoId="486854871/0266769f7d" default /]
+[stream language="RO" videoId="486854871/0266769f7d"  /]
+[/video-vimeo]
+
+If we think of the variables as boxes that hold information, this is how they would look:
+[image assetsSrc="expressions-and-statements-boxes.png" /]
+
+Variables can be stored in the program's:
+  * Operational memory - in the execution **stack**
+  * Dynamic memory - in the **heap**
+[/slide]
+
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="486854872/71ae21e1d5" default /]
+[stream language="RO" videoId="486854872/71ae21e1d5"  /]
+[/video-vimeo]
+
 # Variables
 In programming, each **variable** stores a certain value of a particular type. 
 
@@ -15,6 +37,11 @@ Basically **variables** provide means for:
   * **Retrieving** stored data
   * **Modifying** stored data
   
+[vimeo-video]
+[stream language="EN" videoId="486854948/925f8eaf2d" default /]
+[stream language="RO" videoId="486854948/925f8eaf2d"  /]
+[/video-vimeo]
+
 They are characterized by:
   * name (identifier)
   * type (of the information preserved)
@@ -28,11 +55,5 @@ let name = "Bob";
 let employed = true;
 let age = 35;
 ```
-
-If we think of the variables as boxes that hold information, this is how they would look:
-[image assetsSrc="expressions-and-statements-boxes.png" /]
-
-Variables can be stored in the program's:
-  * Operational memory - in the execution **stack**
-  * Dynamic memory - in the **heap**
 [/slide]
+
