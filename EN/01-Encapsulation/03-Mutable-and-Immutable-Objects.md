@@ -85,9 +85,9 @@ public class Main {
 ## Description
 Create a **Team** class. 
 
-Add to this team all person you read. 
+Add to this team all the people you receive. 
 
-All person **younger** than 40 go in **first team**, others go in **reverse team**.
+All person **younger** than 40 go in **first team**, others go in **reserve team**.
 
 At the end print first and reserve team sizes.
 
@@ -1176,5 +1176,7 @@ Test Passed!
 
 [slide]
 # Solution: First and Reserve Team
+
+TODO: Implement after strategy is ready!
 
 [/slide]

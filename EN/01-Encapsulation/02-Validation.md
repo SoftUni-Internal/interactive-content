@@ -13,9 +13,9 @@ private void setSalary(double salary) {
   this.salary = salary;
 }
 ```
-- It is better to throw **exceptions**, rather than printing to the Console
-- Printing with **System.out couples** your class
-- **Client** can **handle** class exceptions
+- It is better to throw **exceptions**, rather than printing to the Console.
+- Printing with **System.out couples** your class.
+- **Client** can **handle** class exceptions.
 
 **Constructors use private setters with validation logic**
 
@@ -28,9 +28,9 @@ public Person(String firstName, String lastName,
   setSalary(salary);
 }
 ```
-- Validation happens inside the setter
-- Guarantees valid state of object in its creation
-- Guarantees valid state for public setters 
+Validation happens inside the setter.
+- Guarantees valid state of object in its creation.
+- Guarantees valid state for public setters.
 
 [/slide]
 
@@ -69,12 +69,6 @@ Don't use `System.out.println()` in **Person** class.
 | Bob Manner 35 300 |  |
 | 20 |  |
 
-| **Input** | **Output** |
-| --- | --- |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 
 [/task-description]
 [code-io /]
@@ -953,5 +947,9 @@ Test Passed!
 
 [slide]
 # Solution: Validation Data
+
+
+TODO: Implement after strategy is ready (unit testing)
+
 
 [/slide]

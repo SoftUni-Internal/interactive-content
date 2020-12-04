@@ -3,7 +3,7 @@
 [slide]
 # Private Access Modifier
 
-With **private access** modifier object **hides data from the outside world** 
+With the **private access** modifier an object **hides data from the outside world.**
 
 ```java
 class Person {
@@ -30,7 +30,7 @@ class Team {
 }
 ```
 
-- **Protected** modifier cannot be applied to classes and interfaces
+- **Protected** modifier cannot be applied to classes and interfaces
 - Prevents a **nonrelated** class from trying to use it
 
 [/slide]
@@ -38,7 +38,7 @@ class Team {
 [slide]
 # Default Access Modifier
 
-Do not explicitly declare an access modifier
+Does not explicitly declare an access modifier
 
 ```java
 class Team {
@@ -366,6 +366,20 @@ Test Passed!
 [slide]
 # Solution: Sort by Name and Age
 
+``` java
+public class Person {
+  private String firstName;
+  private String lastName; private int age;
+  // TODO: Implement Constructor
+  public String getFirstName() { /* TODO */ }
+  public String getLastName() { /* TODO */ }
+  public int getAge() { return age; }
+
+  @Override
+  public String toString() { /* TODO */ }
+}
+```
+
 [/slide]
 
 [slide]
@@ -384,7 +398,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read person with their **names**, **age** and **salary**. 
+Read a person with their **names**, **age** and **salary**. 
 
 Read **percent bonus** to every person salary. 
 
@@ -754,5 +768,7 @@ Test Passed!
 
 [slide]
 # Solution: Salary Increase
+
+TODO: Implement after strategy is ready!
 
 [/slide]
