@@ -12,7 +12,7 @@ Inside of the method body, we only have the implementation of the comparison log
 
 That approach allows us to implement **multiple sorting sequences**. 
 
-Keeping in mind that the Comparator is an external class means that it **won’t affect the original class**.
+Keep in mind that the Comparator is an external class means that it **won’t affect the original class**.
 
 In the following example, we compare **two Student objects** by student age.
 
@@ -20,9 +20,13 @@ Our AgeComparator class implements **Comparator** of type **Student**.
 
 The `compare()` method takes two Student `(Student st1, Student st2)` objects as arguments.
 
-The implementation is simple, we **return a positive number if the first student is bigger**, 
+The implementation is simple, we return:
 
-**negative in the other case**, and **0 when they are the same**.
+- a **positive** number if the first student is bigger.
+
+- **negative** in the other case**.
+
+- **0 when they are the same**.
 
 By using the Comparator, **we could create as many comparators as we need** and used them according to our situation.
 
@@ -85,17 +89,17 @@ Then we would **return 0** which would mean that **the objects are the same**.
 
 In case the **age of the current student is bigger** than the age of the one which we get as an argument, we will **return 1**.
 
-By doing this, we indicate that in by our sorting logic, **the current student is bigger**.
+By doing this, we indicate that in the sorting logic, **the current student is bigger**.
 
 That leaves us with the last case, where we **return -1** because **the current student is less than the one from the arguments**.
 
-I don't know if you have noticed, but while implementing the Comparable interface we placed a **Student generic parameter**.
+By implementing the Comparable interface we placed a **Student generic parameter**.
 
 That allows us to later implement the `compareTo()` method by **accepting a Student as an argument**. 
 
 **Avoiding the generics** will force us to implement the method, **by accepting an Object**. 
 
-**That would make the implementation a bit uglier** because we **won't be able** to directly access the members of the **Student class**.
+**That would make the implementation a bit hard-to-read** because we **would not be able** to directly access the members of the **Student class**.
 
 
 [/slide]
@@ -121,7 +125,7 @@ Expand Book by implementing `Comparable<Book>`.
 
 Book have to be **compared by title**. 
 
-When title is equal, **compare them by year**.
+When the title is equal, **compare them by year**.
 
 Expand **Book** from UML diagram below:
 

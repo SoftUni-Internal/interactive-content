@@ -27,11 +27,11 @@ The Iterable `iterator()` method returns an iterator over elements of type T.
 
 In the following example, we have a List which extends `Iterable<T>`.
 
-The iterator() method of this List returns Iterator of type String.
+The `iterator()` method of this List returns Iterator of type String.
 
 So, we can use all the Iterator methods to iterate over a collection.
 
-The hasNext() - method returns true if the iterator has more elements, and false if not.
+The `hasNext()` - method returns true if the iterator has more elements, and false if not.
 
 So, we pass the `iterator.hasNext()` into the while loop and in this way we begin to iterate over the collection.
 
@@ -78,7 +78,9 @@ names.forEach( (name) -> {
 
 The iterable `spliterator()` method of this List returns Spliterator of type String.
 
-If you observe the output of the following example, you will find `Spliterator.forEachRemaining()` method works in the same way as `ArrayList.foreach()` but it provides **better performance**.
+The following exampl shows `Spliterator.forEachRemaining()` method works in the same way as `ArrayList.foreach()`.
+
+It provides **better performance**.
 
 
 ```java live

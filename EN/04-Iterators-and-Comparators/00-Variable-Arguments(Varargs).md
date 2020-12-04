@@ -12,7 +12,7 @@ To overcome this problem, **Java 5 introduced varargs**.
 
 **Varargs** stands for **variable arguments**.
 
-The varags allows the method to accept **zero** or **multiple** arguments.
+The varags allow the method to accept **zero** or **multiple** arguments.
 
 Let's see the following example:
 
@@ -54,7 +54,7 @@ As you can see, we are invoking this method multiple times by passing a **differ
 
 Varargs are straightforward to use. 
 
-But there're a few rules we have to keep in mind:
+But there are a few rules we have to keep in mind:
 
 - There can be only one **varargs** argument in the method
 
@@ -107,13 +107,13 @@ Create a class Book from UML diagram below:
 | ---- |
 |- title: String |
 |- year: int |
-|- authors: `List<String>` | 
+|- authors: List/<String/> | 
 |- setTitle(String) |
 |- setYear(String) |
 |- setAuthors(String…) |
 |+ getTitle(): String |
 |+ getYear(): int |
-|+ getAuthors(): `List<String>` |
+|+ getAuthors(): List/<String/> |
 
 
 
@@ -332,7 +332,7 @@ public class Book {
 
 In Java, it is also possible to **nest classes** (a class within a class).
 
-The purpose of nested classes is to **group classes that belong together**, which makes your code more maintainable.
+The purpose of nested classes is to **group classes that belong together**, which makes the code more maintainable.
 
 
 - Example of Nested Class:
