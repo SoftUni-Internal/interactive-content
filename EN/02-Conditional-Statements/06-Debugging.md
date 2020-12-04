@@ -34,7 +34,7 @@ We can track **line by line** what happens in our program, what path it follows,
 * We can create / remove **breakpoints** with \[F9\]
 
 
-In this way we check the execution of our program line by line.
+This way we check the execution of our program line by line.
 
 Using debugging makes easier to validate and fix a problem in our program.
 
