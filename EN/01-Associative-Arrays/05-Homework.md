@@ -303,7 +303,7 @@ a aa ab cccc
 [code-task title="Piccolo" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -318,23 +318,23 @@ Write function that:
 
 - Records a car number for every car that enters the parking lot.
 - Removes a car number when the car goes out.
-- Input will be array of strings in format [**direction**, **carNumber**].
+- Input will be array of strings in format `['direction, carNumber']`.
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending by number**.
 
 # Example 1
 
-| **Input**                                                                                                                                                             | **Output** |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']` | CA2822UU   |
-|                                                                                                                                                                       | CA2844AA   |
-|                                                                                                                                                                       | CA9876HH   |
-|                                                                                                                                                                       | CA9999TT   |
+**Input**                                                                                                                                                             
+`['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 
+'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']`
+
+**Output**
+ CA2822UU                                                                                                                                                              CA2844AA                                                                                                                                                              CA9876HH                                                                                                                                                            CA9999TT
 
 # Example 2
 
-| **Input**                                                            | **Output**           |
-| -------------------------------------------------------------------- | -------------------- |
+| **Input** | **Output** |
+| --- | ---|
 | `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'OUT, CA1234TA']` | Parking Lot is Empty |
 
 [/task-description]
@@ -497,7 +497,7 @@ sss
 [code-task title="Party Time" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -512,29 +512,35 @@ There is a party at SoftUni. Many guests are invited and they are **two types**:
 
 When guests come to the party check if he/she **exists** in any of **the two reservation lists**.
 
-The input will come as **array of strings**. You will be given the list with the guests before you receive a command "**PARTY**".
+The input will come as an **array of strings**. You will be given the list with the guests before you receive a command `PARTY`.
 
 All **VIP numbers start with digit**.
 
-When you receive the command "**PARTY**" the guests start coming.
+When you receive the command `PARTY` the guests start coming.
 
 Output all guest, who didn't come to the party (VIP must be first).
 
 # Example 1
 
-| **Input**                                                                                                   | **Output** |
-| ----------------------------------------------------------------------------------------------------------- | ---------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']` | 2          |
 |                                                                                                             | 7IK9Yo0h   |
 |                                                                                                             | tSzE5t0p   |
 
 # Example 2
 
-| **Input**                                                                                                                                                                                                                                                                                                                                                   | **Output** |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK', 'PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
-|                                                                                                                                                                                                                                                                                                                                                             | xys2FYzn   |
-|                                                                                                                                                                                                                                                                                                                                                             | MDzcM9ZK   |
+**Input**                                                                                                                                                              
+`['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', 
+'2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 
+'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK',
+'PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 
+'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 
+'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']`
+
+**Output**
+2                                                                                                                                                                      xys2FYzn
+MDzcM9ZK
 
 [/task-description]
 [tests]
@@ -690,7 +696,7 @@ jghvgyg
 [code-task title="Card Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -705,11 +711,11 @@ You are given a sequence of people and for every person what cards he draws from
 
 The input will be **array of strings**. Each string will be in format:
 
-\{personName\}\: \{PT\, PT\, PT\,\.\.\. PT\}
+`{personName}: {PT, PT, PT,... PT}`
 
-Where P \(2\, 3\, 4\, 5\, 6\, 7\, 8\, 9\, 10\, J\, Q\, K\, A\) is the power of the card and T \(S\, H\, D\, C\) is the type.
+Where P `(2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)` is the power of the card and T `(S, H, D, C)` is the type.
 
-The name can contain any ASCII symbol except '\:'.
+The name can contain any ASCII symbol except `:`.
 
 The input will always be valid and in the format described, there is no need to check it.
 
@@ -719,19 +725,23 @@ The people are playing with multiple decks. Each card has a value that is calcul
 
 Powers 2 to 10 have the same value and J to A are 11 to 14.
 
-Types are mapped to multipliers the following way \(S \-\> 4, H\-\> 3, D \-\> 2, C \-\> 1\).
+Types are mapped to multipliers the following way `(S -> 4, H-> 3, D -> 2, C -> 1)`.
 
 Finally print out the total value each player has in his hand in the format:
 
-\{personName\}\: \{value\}
+`{personName}: {value}`
 
-# Example 1
+# Example
 
-| **Input**                                                                                                                                                                                      | **Output**   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| `[ 'Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` | Peter\: 167  |
-|                                                                                                                                                                                                | Tomas\: 175  |
-|                                                                                                                                                                                                | Andrea\: 197 |
+**Input**                                                                                                                                                              
+`['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 
+'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 
+'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` 
+
+**Output**
+Peter\: 167  
+Tomas\: 175
+Andrea\: 197
 
 [/task-description]
 [tests]
@@ -838,7 +848,7 @@ Pesho\: 22
 [code-task title="Company Users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -859,20 +869,18 @@ When you finish reading data, order the companies by the name in ascending order
 
 Print the company name and each employee's id in the following format:
 
-\{companyName\}
-\-\- \{id1\}
-\-\- \{id2\}
-\-\- \{idN\}
+`{companyName}
+-- {id1}
+-- {id2}
+-- {idN}`
 
-Input / Constraints
-
-- The input comes **as array of strings**, each in the format: \{companyName\} \-\> \{employeeId\}.
+- The input comes **as array of strings**, each in the format: `{companyName} -> {employeeId}`.
 - The input always will be valid.
 
 # Example 1
 
-| **Input**                                                                               | **Output**   |
-| --------------------------------------------------------------------------------------- | ------------ |
+| **Input** | **Output** |
+| --- | --- |
 | `['SoftUni -> AA12345', 'SoftUni -> BB12345', 'Microsoft -> CC12345', 'HP -> BB12345']` | HP           |
 |                                                                                         | \-\- BB12345 |
 |                                                                                         | Microsoft    |
@@ -883,8 +891,8 @@ Input / Constraints
 
 # Example 2
 
-| **Input**                                                                                                        | **Output**   |
-| ---------------------------------------------------------------------------------------------------------------- | ------------ |
+| **Input** | **Output** |
+| --- | --- |
 | `['SoftUni -> AA12345', 'SoftUni -> CC12344', 'Lenovo -> XX23456', 'SoftUni -> AA12345', 'Movement -> DD11111']` | Lenovo       |
 |                                                                                                                  | \-\- XX23456 |
 |                                                                                                                  | Movement     |
@@ -1080,7 +1088,7 @@ Q
 [code-task title="A Miner Task" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -1091,28 +1099,30 @@ function solve(input) {
 
 # Description
 
-You are given an **array of strings**. Every **odd string** is representing a **resource** (e.g. Gold, Silver, Copper, and so on), and **every even – quantity**.
+You are given an **array of strings**. 
+
+Every **odd string** is representing a **resource** (e.g. Gold, Silver, Copper, and so on), and **every even – quantity**.
 
 Your task is to collect the resources and print them each on a new line.
 
 **Print the resources and their quantities in format**:
 
-**\{resource\} –\> \{quantity\}**
+`{resource} –> {quantity}`
 
-The quantities inputs will be in the range \[1 \.\.\. 2 000 000 000\]
+The quantities inputs will be in the range `[1 ... 2 000 000 000]`
 
 # Example 1
 
-| **Input**                                         | **Output**     |
-| ------------------------------------------------- | -------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['Gold', '155', 'Silver', '10', 'Copper', '17']` | Gold \-\> 155  |
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
 # Example 2
 
-| **Input**                                                       | **Output**     |
-| --------------------------------------------------------------- | -------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['gold', '155', 'silver', '10', 'copper', '17', 'gold', '15']` | gold \-\> 170  |
 |                                                                 | silver \-\> 10 |
 |                                                                 | copper \-\> 17 |
