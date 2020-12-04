@@ -213,11 +213,6 @@ public class Main {
 [task-description]
 ## Description
 
-[vimeo-video]
-[stream language="EN" videoId="485443278" default /]
-[stream language="RO" videoId="485443278"  /]
-[/video-vimeo]
-
 Define Car Class.
 
 The class should have the following private fields:
