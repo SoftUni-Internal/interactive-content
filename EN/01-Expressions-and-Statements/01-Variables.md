@@ -67,7 +67,7 @@ let age = 35;
 [/slide]
 
 [slide]
-# Declaration Statements:
+# Declaration Statements
 
 [vimeo-video]
 [stream language="EN" videoId="486855151/43dc67876d" default /]
