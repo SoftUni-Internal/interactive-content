@@ -1,15 +1,4 @@
-[slide]
 # Homework
-Welcome to the homework. 
-
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
-
-We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
-[image assetsSrc="homeowrk.png" /]
-[/slide]
-
 [slide]
 # Problem: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-js-03-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -172,6 +161,11 @@ Consonant
 
 [slide]
 # Problem: Product of 3 Numbers
+[vimeo-video]
+[stream language="EN" videoId="486874673/6eb04e1bbf" default /]
+[stream language="RO" videoId="486874673/6eb04e1bbf"  /]
+[/video-vimeo]
+
 [code-task title="Product of 3 Numbers" taskId="pb-js-03-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -235,6 +229,11 @@ zero
 
 [slide]
 # Problem: Sorted Numbers
+[vimeo-video]
+[stream language="EN" videoId="486875734/a16fef14e3" default /]
+[stream language="RO" videoId="486875734/a16fef14e3"  /]
+[/video-vimeo]
+
 [code-task title="Sorted Numbers" taskId="pb-js-03-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -577,3 +576,8 @@ Write a program to find the biggest among 5 numbers
 
 [/slide]
 
+[slide]
+# Homework Results
+[tasks-results/]
+
+[/slide]
