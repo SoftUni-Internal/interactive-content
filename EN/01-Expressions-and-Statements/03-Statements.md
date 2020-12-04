@@ -4,9 +4,9 @@
 # Commands in the Computer Programs
 
 [vimeo-video]
-[stream language=EN videoId=486855548/f48e0caa24 default ]
-[stream language=RO videoId=486855548/f48e0caa24  ]
-[video-vimeo]
+[stream language="EN" videoId="486855548/f48e0caa24" default /]
+[stream language="RO" videoId="486855548/f48e0caa24"  /]
+[/video-vimeo]
 
 The actions that a program takes, are expressed as **statements**.
 
