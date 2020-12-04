@@ -3,6 +3,11 @@
 [slide]
 # What is an Array? 
 
+[vimeo-video]
+[stream language="EN" videoId="486869174/dcb7c31b0d" default /]
+[stream language="RO" videoId="486869174/dcb7c31b0d"  /]
+[/video-vimeo]
+
 We already know how to store single piece of data in one variable. Arrays allow us to store multiple pieces data, again, in only one variable. 
 
 An array is a **collection** which is **ordered** and **changeable**.
@@ -35,6 +40,11 @@ In this course we **will not** initialize an array, we will only accept arra
 
 [slide]
 # Reading from Arrays
+
+[vimeo-video]
+[stream language="EN" videoId="486869498/f3292af295" default /]
+[stream language="RO" videoId="486869498/f3292af295"  /]
+[/video-vimeo]
 
 Each element in an array has its own **index** (**position**) by which it can be **accessed**.
 
