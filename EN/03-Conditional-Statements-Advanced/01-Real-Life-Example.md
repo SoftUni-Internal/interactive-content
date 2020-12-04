@@ -1,6 +1,11 @@
 [slide]
 
 # Real Life Example: Marketplace
+[vimeo-video]
+[stream language="EN" videoId="486868879/8980d1e816" default /]
+[stream language="RO" videoId="486868879/8980d1e816"  /]
+[/video-vimeo]
+
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
 A market offers different prices for certain products based on the day of the week
@@ -13,8 +18,16 @@ A market offers different prices for certain products based on the day of the we
 | Kiwi   | 2.20        | 3.00    |
 
 We want to calculate the price for a certain product, depending on the day of the week:
+[/slide]
 
+[slide]
 # Pseudocode
+
+[vimeo-video]
+[stream language="EN" videoId="486868933/73495d8863" default /]
+[stream language="RO" videoId="486868933/73495d8863"  /]
+[/video-vimeo]
+
 ```
 Read the input
 If product is banana
