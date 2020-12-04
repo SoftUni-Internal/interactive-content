@@ -1,84 +1,165 @@
-[slide]
-
 # Map
 
-## What is Map?
+[slide]
 
-- A Map collection stores its elements in **insertion order**.
-- A for-of loop returns an array of [key, value] for each iteration.
-- Pure JavaScript objects are like Maps in that both let you:
-  - Assign values to keys.
-  - Detect whether something is stored in a key.
-  - Delete keys.
+# What is Map?
+
+The Map object holds key-value pairs and remembers the original **insertion order** of the keys. 
+
+Any value both objects and primitive values may be used as either a key or a value.
+
+A for-of loop returns an array of `[key, value]` for each iteration.
+
+Pure JavaScript objects are like Maps in that both let you:
+1. Assign values to keys.
+2. Detect whether something is stored in a key.
+3. Delete keys.
 
 ## Adding, Accessing Elements
 
-- .**set**(key, value) – adds a new key-value pair.
+To add a `key-value` pair to a map use the method `.set()`.
 
-```js
+In the example below we create a map first by using the keyword `new Map()`.
+
+Then by using `.set()` method we add a key and a value to the map. First parameter is the key and second parameter is the value.
+
+```js live
 let map = new Map();
-map.set(1, "one"); // key - 1, value - one
-map.set(2, "two"); // key - 2, value - two
+map.set(1, "one");
+map.set(2, "two");
+console.log(map);
 ```
 
-- .**get**(key) – returns the value of the given key.
+To get the value of a given key use the method `.get()`.
 
-```js
-map.get(2); // two
-map.get(1); // one
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+console.log(map.get(2));
 ```
 
-- .**size** – property, holding the number of stored entries.
+The `.size` accessor property returns the number of elements in a Map object.
 
-```js
-map.size(); // 2
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+console.log(map.size);
 ```
 
-- .**has(key)** - checks if the map has the given key.
+To find out if a map has a given key use the method `.has()`. 
 
-```js
-map.has(2); // true
-map.has(4); // false
+The output should be **true** or **false**, because the method `.has()` returns a boolian.
+
+In this case it is true.
+
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+console.log(map.has(1));
 ```
 
-- .**delete(key)** - removes a key-value pair.
+To remove a `key-value` pair use the method `.delete()`.
 
-```js
-map.delete(1); // Removes 1 from the map
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+map.delete(1);
+console.log(map);
 ```
 
-- .**clear()** - removes all key-value pairs.
+And finally use the method `.clear()` to remove all the `key-value` pairs in the map.
+
+The output in this example is 0 after clearing out all the elements in the Map object.
+
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+map.clear();
+console.log(map.size);
+```
 
 ## Iterators
 
-- .**entries()** - returns Iterator - array of [key, value].
-- .**keys()** - returns Iterator with all the keys.
-- .**values()** - returns Iterator with all the values.
+By using iterators we can return an array with `[key-value]` pairs, `keys` or `values`.
 
-```js
-let entries = Array.from(map.entries()); // [ [2, 'two'], [3, 'three'] ]
-let keys = Array.from(map.keys()); // [2, 3]
-let values = Array.from(map.values()); // ['two', 'three']
+To return an array of `[key-value]` pair use the method `.entries()`.
+
+The output will be an array of arrays `[ [ 1, 'one' ], [ 2, 'two' ] ]`
+
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+let entries = Array.from(map.entries());
+console.log(entries);
+```
+
+To return an array of `keys` use the method `.keys()`.
+
+The output will be `[1, 2]`.
+
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+let entries = Array.from(map.keys());
+console.log(entries);
+```
+
+To return an array of `values` use the method `.values()`.
+
+The output will be `[ 'one', 'two' ]`.
+
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+let entries = Array.from(map.values());
+console.log(entries);
 ```
 
 ## Iterating A Map
 
-- To print a map simply use one of the iterators inside a **for-of** loop.
+To print a map simply use a **for-of** loop.
 
-```js
-let iterable = phonebookMap.keys();
-for (let key of iterable) {
-  console.log(`${key} => ${phonebookMap.get(key)}`);
+```js live
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+for (let [key, value] of map.entries()) {
+    console.log(`${key} => ${value}`);
 }
 ```
 
+To print the keys use `.keys()`.
+
 ```js
-for (let [key, value] of phonebookMap) {
-  console.log(`${key} => ${value}`);
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+for (let key of map.keys()) {
+  console.log(key);
+}
+```
+
+To print the values use `.values()`.
+
+```js
+let map = new Map();
+map.set(1, "one");
+map.set(2, "two");
+for (let values of map.values()) {
+  console.log(values);
 }
 ```
 
 [/slide]
+
 [slide]
 
 # Problem: Storage
@@ -109,8 +190,8 @@ Try using a **Map()**.
 
 # Example
 
-| **Input**                                                | **Output**       |
-| -------------------------------------------------------- | ---------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40']` | tomatoes \-\> 10 |
 |                                                          | coffee \-\> 45   |
 |                                                          | olives \-\> 100  |
@@ -208,7 +289,7 @@ coknfee \-\> 350
 [code-task title="Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   let products = new Map();
   input.forEach((line) => {
@@ -242,8 +323,8 @@ Try using a **Map()**.
 
 # Example
 
-| **Input**                                                | **Output**       |
-| -------------------------------------------------------- | ---------------- |
+| **Input** | **Output** |
+| --- | --- |
 | `['tomatoes 10', 'coffee 5', 'olives 100', 'coffee 40']` | tomatoes \-\> 10 |
 |                                                          | coffee \-\> 45   |
 |                                                          | olives \-\> 100  |
@@ -336,12 +417,23 @@ coknfee \-\> 350
 
 [slide]
 
-## Map Sorting
+# Map Sorting
 
-- To **sort** a Map, first transform it into an **array**.
-- Then use the **sort()** method.
+To **sort** a Map, first transform it into an **array**, then use the `sort()` method.
 
-```js
+Here we have a compare function which defines the sort order. 
+
+First element is `a[1]` and second element is `b[1]`. Then the elements are compared.
+
+If we use `a[1] - b[1]` we will sort in ascending order.
+
+If we use `b[1] - a[1]` we will sort in descending order.
+
+The `kvp` variable is our `[key-value]` pair.
+
+`[kvp[0]]` is the **key** and `[kvp[1]]` is the **value**.
+
+```js live
 let map = new Map();
 map.set("one", 1);
 map.set("eight", 8);
@@ -382,8 +474,8 @@ The input comes as **array of strings**.
 
 # Example
 
-| **Input**                                                | **Output**         |
-| -------------------------------------------------------- | ------------------ |
+| **Input** | **Output** |
+| --- | --- |
 | `['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']` | Tammy\: 2\,4\,3    |
 |                                                          | Lilly\: 4\,6\,6\,5 |
 |                                                          | Tim\: 5\,6\,6\,6   |
@@ -495,7 +587,7 @@ Tghj\: 5\, 6\, 6\, 5
 [code-task title="School Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   let students = {};
   input.forEach((line) => {
@@ -533,8 +625,8 @@ The input comes as **array of strings**.
 
 # Example
 
-| **Input**                                                | **Output**         |
-| -------------------------------------------------------- | ------------------ |
+| **Input** | **Output** |
+| --- | --- |
 | `['Lilly 4 6 6 5', 'Tim 5 6', 'Tammy 2 4 3', 'Tim 6 6']` | Tammy\: 2\,4\,3    |
 |                                                          | Lilly\: 4\,6\,6\,5 |
 |                                                          | Tim\: 5\,6\,6\,6   |
