@@ -1,15 +1,4 @@
-
-[slide]
 # Homework
-Welcome to the homework. 
-
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
-
-We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
-[image assetsSrc="homeowrk.png" /]
-[/slide]
 
 [slide]
 # Problem: Calculate a Square Area
@@ -76,6 +65,12 @@ Write a function that gets an integer and calculates the face of a square with s
 
 [slide]
 # Problem: Currency Converter
+
+[vimeo-video]
+[stream language="EN" videoId="486857468/b246ee7ca8" default /]
+[stream language="RO" videoId="486857468/b246ee7ca8"  /]
+[/video-vimeo]
+
 [code-task title="Currency Converter" taskId="pb-js-01-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -209,6 +204,12 @@ Round the result to the nearest integer using `toFixed(0)`.
 
 [slide]
 # Problem: Days to Minutes
+
+[vimeo-video]
+[stream language="EN" videoId="486857308/5e4892a5b8" default /]
+[stream language="RO" videoId="486857308/5e4892a5b8"  /]
+[/video-vimeo]
+
 [code-task title="Days to Minutes" taskId="pb-js-01-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -436,5 +437,11 @@ The discount is: 684.9 dollars.
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]
