@@ -138,7 +138,7 @@ for (let [key, value] of map.entries()) {
 
 To print the keys use `.keys()`.
 
-```js
+```js live
 let map = new Map();
 map.set(1, "one");
 map.set(2, "two");
@@ -149,7 +149,7 @@ for (let key of map.keys()) {
 
 To print the values use `.values()`.
 
-```js
+```js live
 let map = new Map();
 map.set(1, "one");
 map.set(2, "two");
