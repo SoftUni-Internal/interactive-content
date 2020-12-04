@@ -131,6 +131,18 @@ Alternative IDE (online)
 [stream language="RO" videoId="486835601/f6d36a44eb"  /]
 [/video-vimeo]
 
+
+Visual Studio Code is open source-code editor.
+
+It can be used with programming languages like: **Java**, **JavaScript**, **Go**, **Node.js** and many more.
+
+Visual Studio Code allows users to open one or more directories. 
+
+This allows it to operate as a **cross-language** editor for any programming language.
+
+We can **extend** it via extensions, which are available through a central repository.
+
+
 [/slide]
 
 [slide]
@@ -141,6 +153,22 @@ Alternative IDE (online)
 [stream language="RO" videoId="486835722/828f778f35"  /]
 [/video-vimeo]
 
+Visual Studio Code has many extensions that can make our working flow more pleasant.
+
+- **Beautify** - Beautify formats files like HTML. The unformatted code in these files is converted into formatted.
+ 
+We must enable this setting in the VS Code preferences tab and it will automatically format all the code.
+
+- **ESLint** - ESLint analyze our JavaScript code and helps us to fix the errors.
+
+- **JSHint** - JSHint enforce developers to use JavaScript coding convensions.
+
+It helps to detect potential bugs in JavaScript code.
+
+We use different extensions depending on what type of project we are working.
+
+
+
 [/slide]
 
 [slide]
@@ -150,5 +178,18 @@ Alternative IDE (online)
 [stream language="EN" videoId="486835793/082e4ffd04" default /]
 [stream language="RO" videoId="486835793/082e4ffd04"  /]
 [/video-vimeo]
+
+The video above is showing how we can setup a basic project.
+
+First, we need an empty folder. Then, let's drag the folder in to the Visual Studio Code.
+
+The VSC will create a empty project for us.
+
+Next, we must create a new file and name it.
+
+The **extension** .js is important, since Visual Studio Code must know what type of language to use.
+
+After we finished with writing our program, we must execute the code with **Note.js**.
+
 
 [/slide]

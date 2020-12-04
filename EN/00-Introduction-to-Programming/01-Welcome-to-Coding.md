@@ -66,7 +66,7 @@ For now, let's just say that the **JavaScript programming language** requires al
 
 In order to correctly **form our commands**, we should know the **syntax** and the **semantics** of the language which we are working with, in our case – JavaScript.
 
-Therefore, we are going to learn the **principles** of writing computer c**ode step by step**, with the syntax and logic used in JavaScript. 
+Therefore, we are going to learn the **principles** of writing computer **code step by step**, with the syntax and logic used in JavaScript. 
 [/slide]
 
 [slide]
@@ -81,7 +81,7 @@ Computer programs usually execute algorithms.
 
 **Algorithms** are **sequences of steps**, necessary for the completion of a certain task, something like "recipes". 
 
-For example, if we want to boil an egg, we will f**ollow some steps** (an algorithm): 
+For example, if we want to boil an egg, we will **follow some steps** (an algorithm): 
 
 - turn on the stove
 
@@ -93,13 +93,21 @@ For example, if we want to boil an egg, we will f**ollow some steps** (an algori
 
 Similarly, in programming **the computer program executes algorithms**: a sequence of commands, necessary for the completion of a certain task. 
 
-For example, to arrange a sequence of numbers in an **ascending order**, an algorithm is needed to find the **smallest number** and place it at the b**eginning of the sequence**. 
+For example, to arrange a sequence of numbers in an **ascending order**, an algorithm is needed to find the **smallest number** and place it at the **beginning of the sequence**. 
 
 Тhen find the **next smallest one** from the numbers left and put it in **second place** and **repeat these steps** until the algorithm has gone through and ordered all the numbers. 
 
 One very convenient tool when writing **programming code**, used for the execution of programs and many other operations related to programming, is an **integrated development environment**.
 
-For example, we will use **Visual Studio Code.**
+This is a very simple example of an algorithm which finds smallest number in an array.
+
+We will discuss arrays later.
+
+``` js live no-template
+const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
+const min = Math.min(...arr)
+console.log(min)
+```
 [/slide]
 
 [slide]
@@ -132,5 +140,26 @@ convertUsdToEur("5");
 [stream language="EN" videoId="486834720/d1ce0ef921" default /]
 [stream language="RO" videoId="486834720/d1ce0ef921"  /]
 [/video-vimeo]
+
+In this example, we can import and use a function in our web page.
+
+Using the block of code from the example we are creating a text box as in the slide.
+
+``` html
+<html><body>
+  <script src="converter.js"></script>
+  Dollars: <input type="text" id="dollarsBox" />
+  <button onclick="convertUsdToEur()">Convert</button>
+  Euro: <input type="text" id="eurosBox" readonly />
+</body></html>
+```
+
+It is important to insert our `convertUsdToEur()` function in our html script.
+
+Also, we have two text boxes - **Dollars:** and **Euro:**.
+
+
+
+
 
 [/slide]
