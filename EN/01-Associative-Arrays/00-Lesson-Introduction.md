@@ -4,15 +4,15 @@
 
 # In this lesson you will learn about:
 
-**Associative Arrays**
+**1. Associative Arrays**
 - Definition
 - Iteration
 - Manipulation
 
-**Maps**
+**2. Maps**
 - Methods
 - Sorting
 
-**Sets**
+**3. Sets**
 
 [/slide]
