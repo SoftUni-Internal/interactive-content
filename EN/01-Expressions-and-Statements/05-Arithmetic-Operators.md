@@ -1,6 +1,12 @@
 
 [slide]
 # Arithmetic Operations
+
+[vimeo-video]
+[stream language="EN" videoId="486856657/5524b19304" default /]
+[stream language="RO" videoId="486856657/5524b19304"  /]
+[/video-vimeo]
+
 Let's examine the basic **arithmetic operations** in programming. 
 
 We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*` and `/`.
@@ -22,7 +28,16 @@ let b = 7;
 console.log(a - b);
 ```
 
-## Multiplying Numbers
+[/slide]
+
+[slide]
+# Multiplying Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="486856776/0a071915ba" default /]
+[stream language="RO" videoId="486856776/0a071915ba"  /]
+[/video-vimeo]
+
 For **multiplication** of numbers we use the `*` operator:
 ```js live
 let a = 5;
@@ -80,8 +95,16 @@ console.log(i);
 let f = a / 4.0;
 console.log(f);
 ```
+[/slide]
 
-### Remainder
+[slide]
+# Remainder
+
+[vimeo-video]
+[stream language="EN" videoId="486856887/86a313dc61" default /]
+[stream language="RO" videoId="486856887/86a313dc61"  /]
+[/video-vimeo]
+
 The remainder operator `%` computes the remainder after dividing its left-hand operand by its right-hand operand.
 ```js live
 let a = 7;

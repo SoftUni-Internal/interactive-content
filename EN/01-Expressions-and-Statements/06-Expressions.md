@@ -1,6 +1,12 @@
 
 [slide]
 # Expressions
+
+[vimeo-video]
+[stream language="EN" videoId="486856973/6e98d5e813" default /]
+[stream language="RO" videoId="486856973/6e98d5e813"  /]
+[/video-vimeo]
+
 **Expressions** are sequences of operators, literals and variables which are evaluated to a value.
   * Consist of at least one **operand**
   * Can have 1 or more **operators**

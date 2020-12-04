@@ -20,19 +20,126 @@ VS Code has its own console, which we are going to use to read input and print o
 [/slide]
 
 [slide]
-# Printing and Formatting Text and Numbers
+# Log Variables on the Console
 
-## Log Variables on the Console
+[vimeo-video]
+[stream language="EN" videoId="486855670/d118990c90" default /]
+[stream language="RO" videoId="486855670/d118990c90"  /]
+[/video-vimeo]
+
 The console is useful for testing purposes
 
-The **`console.log()`** method writes a message to the console:
-```js
+The `console.log()` method writes a message to the console:
+
+```js live
 let firstNum = 10;
 let secondNum = 5;
-console.log(firstNum + secondNum); // 15
+console.log(firstNum + secondNum);
 ```
 
-## Formatting
+[/slide]
+
+[slide]
+# Reading User Input
+
+[vimeo-video]
+[stream language="EN" videoId="486855737/188e2502e0" default /]
+[stream language="RO" videoId="486855737/188e2502e0"  /]
+[/video-vimeo]
+
+In software systems, the user input could come from many sources, like User Interface (UI) controls.
+
+You have a text box that says `please type your username and type your password`, then you click the login button. 
+
+This is a way to receive user's input.
+
+Programs can also take the user data (input) from some rest API or as parameter in a function.
+[/slide]
+
+[slide]
+# Functions and Parameters
+
+[vimeo-video]
+[stream language="EN" videoId="486855856/06a253a610" default /]
+[stream language="RO" videoId="486855856/06a253a610"  /]
+[/video-vimeo]
+
+Use functions and Invoke the function by name 
+
+``` js live
+function printNum (number) {
+   console.log(number);
+}
+
+//Invoke
+printNum(5);
+printNum(10);
+```
+
+By default, the **input** is **text** – a text line, read from the console.
+- After you read a text from the console, additionally, you can **parse the text** to an number by `Number()`.
+
+- If parsing to a number is not done, **each number** will simply be **text**, and we **cannot do** arithmetic operations with it.
+
+# Example: Home Town
+Let's write a program that asks the user for their home town and prints the text `I am from {homeTown}!`.
+
+```js live
+function town(homeTown) {
+  console.log(`I am from ${homeTown}!`);
+}
+
+town("Buccuresht");
+```
+
+In this case the `{homeTown}` expression is replaced with the value of the input `homeTown`.
+
+When we enter **Buccuresht**, the output will be as follows: `I am from Buccuresht!` 
+
+[/slide]
+
+[slide]
+# Passing Multiple Parameters
+
+[vimeo-video]
+[stream language="EN" videoId="486855964/c2b23e3efb" default /]
+[stream language="RO" videoId="486855964/c2b23e3efb"  /]
+[/video-vimeo]
+
+You can pass m**ultiple parameters to a function.** 
+
+We have a function which **receives two parameters:** `firstNum` and `secondNum` and prints the sum of that calculation to the console. 
+
+Here `firstNum` and `secondNum` exists only **in the function body.**
+
+``` js live
+function printSum(firstNum, secondNum) {
+   console.log(firstNum + secondNum);
+}
+
+printSum(5, 10);
+```
+
+If we try to access firstNum outside of the function body, we'll get an error.
+
+``` js live
+function printSum(firstNum, secondNum) {
+   console.log(firstNum + secondNum);
+}
+
+printSum(5, 10);
+console.log(firstNum);
+```
+[/slide]
+
+[slide]
+# Formatting Output
+
+[vimeo-video]
+[stream language="EN" videoId="486856070/5392c79701" default /]
+[stream language="RO" videoId="486856070/5392c79701"  /]
+[/video-vimeo]
+
 JavaScript allows us to format floating-point numbers.
 
 In the following example we format the number to 2 digits after the decimal point by using the `toFixed(2)` method:
@@ -45,7 +152,7 @@ function calculateSquareArea(input) {
 }
 ```
 
-## Using the Dollar String Interpolation
+# Using the Dollar String Interpolation
 We can format text in JS using also the following $ syntax. It provides simplified text formatting.
 
 Еnclosed by the back-tick (**\` \`**) character instead of double or single quotes
@@ -60,43 +167,13 @@ The `$` prefix before a string in JS enables the so called **string interp
 [/slide]
 
 [slide]
-# Reading User Input
-Use functions:
-```js
-function printNum (number) {
-   console.log(number);
-}
-```
-
-Invoke the function by name
-```js
-printNum(5);  // 5
-printNum(10); //10
-```
-
-By default, the **input** is **text** – a text line, read from the console.
-- After you read a text from the console, additionally, you can **parse the text** to an number by `Number()`.
-- If parsing to a number is not done, **each number** will simply be **text**, and we **cannot do** arithmetic operations with it.
-
-# Example: Home Town
-Let's write a program that asks the user for their home town and prints the text `"I am from {homeTown}!"`.
-
-```js
-function example(homeTown) {
-  console.log(`I am from ${homeTown}!`);
-}
-```
-
-In this case the `{homeTown}` expression is replaced with the value of the input `homeTown`. 
-
-If we enter **"Sofia"**, the output will be as follows:
-```
-I am from Sofia!
-```
-[/slide]
-
-[slide]
 # Reading Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="486856186/d812421fbc" default /]
+[stream language="RO" videoId="486856186/d812421fbc"  /]
+[/video-vimeo]
+
 In order to read a **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
 
 ```js
@@ -183,6 +260,12 @@ Hello, George
 
 [slide]
 # Solution: Greeting
+
+[vimeo-video]
+[stream language="EN" videoId="486856341/87210226f4" default /]
+[stream language="RO" videoId="486856341/87210226f4"  /]
+[/video-vimeo]
+
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -240,50 +323,3 @@ Hello, George
 [/code-task]
 [/slide]
 
-[slide]
-# Concatenating Text and Numbers
-Aside from summing summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
-
-In programming, joining two pieces of text is called **"concatenation"**. 
-
-Here is how we can concatenate text with a number 
-
-```js live
-let firstName = "John";
-let lastName = "Doe";
-let age = 19;
-let str = firstName + " " + lastName + " @ " + age;
-console.log(str);
-```
-There is another way of concatenating strings using the `concat()` method.
-```js live
-let str1 = 'Hello';
-let str2 = 'JS';
-
-console.log(str1.concat(' ', str2));
-
-console.log(str2.concat(', ', str1));
-```
-
-# Examples: Concatenating Text and Numbers
-Here is another **example** of concatenating text and numbers:
-```js live
-let a = 1.5;
-let b = 2.5;
-let sum = "The sum is: " + a + b;
-console.log(sum);
-```
-
-Did you notice **something strange**? Maybe you expected the numbers `a` and `b` to be summed? 
-
-Actually, the concatenation works from right to left and the result above is absolutely correct. 
-
-If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
-```js live
-let a = 1.5;
-let b = 2.5;
-let sum = "The sum is: " + (a + b);
-console.log(sum);
-```
-
-[/slide]
