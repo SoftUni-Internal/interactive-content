@@ -238,7 +238,7 @@ The input comes as an **array** of a **single string**. The words will be **sepa
 
 | **Input** | **Output**  |
 | --- | --- |
-| 'Java C\# Php PHP Java PhP 3 C\# 3 1 5 C\#' | c\# php 1 5 |
+| `['Java C# Php PHP Java PhP 3 C# 3 1 5 C#']` | c\# php 1 5 |
 
 [/task-description]
 [tests]
