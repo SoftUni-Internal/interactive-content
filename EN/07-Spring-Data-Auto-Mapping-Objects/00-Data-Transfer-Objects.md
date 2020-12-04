@@ -20,10 +20,6 @@ An example where services get handy is for instance if we have a web app in prod
 
 The services that we had learned through our study program are data-services, which communicate with the database either directly or through repositories.
 
-Let's concatenate everything in a single sentence.
-
-**DTOs are a way of transmitting aggregated data from entities**
-
 ### How services communicate? 
 
 **Data Transfer Object** also known as DTOs are container classes that carry data between processes.
@@ -35,6 +31,10 @@ In their core, they are simple POJO - "**Plain Old Java Objects**" with no logic
 An example of usage of DTO is when a service method that communicates with the database is called, it would return as an answer (**the return type**) in the form of DTO. 
 
 In our case and for the rest of the lecture when we refer to a DTO we should understand, the return type of our **Services.**
+
+Let's concatenate everything in a single sentence.
+
+**DTOs are a way of transmitting aggregated data from entities**
 
 **Take a note**
 If our app is a really simple one and we communicate with a database and we need the full information of an entity, 
@@ -55,7 +55,7 @@ but also information which is in another table connected with foreign key about 
 
 Our DTO can combine the information and ask for it, which we will receive with a single query and return in a single object instead of two. 
 
-Now let's see the same but with code what a DTO would look like.
+Now let's see what a DTO would look like with code .
 
 ```java
 // Employee.java
