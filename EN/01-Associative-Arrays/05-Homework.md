@@ -219,31 +219,10 @@ c \- 1
 [code-task title="Odd Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
-  let map = new Map();
-  let list = input.shift().split(" ").map((x) => x.toLowerCase());
-  let string = "";
-
-  for (const word of list) {
-    if (map.has(word)) {
-      map.set(word, map.get(word) + 1);
-    } else {
-      map.set(word, 1);
-    }
-  }
-
-  for (const [key, value] of map) {
-    if (value % 2 !== 0) {
-      string += key + " ";
-    }
-  }
-
-  console.log(string);
+  // Write your code here
 }
-// function solve(input) {
-//   // Write your code here
-// }
 ```
 
 [/code-editor]
@@ -253,7 +232,7 @@ function solve(input) {
 
 Write a function that extracts all the elements of a sentence odd number of times (**case-insensitive**).
 
-The input comes as a **single string**. The words will be **separated by a single space**.
+The input comes as an **array** of a **single string**. The words will be **separated by a single space**.
 
 # Example
 
