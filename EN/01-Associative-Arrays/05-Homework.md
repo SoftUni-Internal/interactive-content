@@ -107,7 +107,20 @@ sentence \- 2
 [test]
 [input]
 dara bara mara
-mara mara mara dara bara dara bara data dara rdhfdjkk fhsjksdhjks sdhfsdjfd fhdjk bara bara
+mara 
+mara 
+dara 
+bara 
+dara 
+bara 
+data 
+dara 
+rdhfdjkk 
+fhsjksdhjks 
+sdhfsdjfd 
+fhdjk 
+bara 
+bara
 [/input]
 [output]
 bara \- 4
@@ -118,7 +131,21 @@ mara \- 3
 [test]
 [input]
 dara
-mara mara mara dara bara dara bara data dara rdhfdjkk fhsjksdhjks sdhfsdjfd fhdjk bara bara
+mara 
+mara 
+mara 
+dara 
+bara 
+dara 
+bara 
+data 
+dara 
+rdhfdjkk 
+fhsjksdhjks 
+sdhfsdjfd 
+fhdjk 
+bara 
+bara
 [/input]
 [output]
 dara - 3
@@ -127,7 +154,21 @@ dara - 3
 [test]
 [input]
 dara sara mara
-mara mara mara dara bara dara bara data dara rdhfdjkk fhsjksdhjks sdhfsdjfd fhdjk bara bara
+mara 
+mara 
+mara 
+dara 
+bara 
+dara 
+bara 
+data 
+dara 
+rdhfdjkk 
+fhsjksdhjks 
+sdhfsdjfd 
+fhdjk 
+bara 
+bara
 [/input]
 [output]
 dara \- 3
@@ -138,7 +179,21 @@ sara \- 0
 [test]
 [input]
 dara sara mara bara
-mara mara mara dara bara dara bara data dara rdhfdjkk fhsjksdhjks sdhfsdjfd fhdjk bara bara
+mara 
+mara 
+mara 
+dara 
+bara 
+dara 
+bara 
+data 
+dara 
+rdhfdjkk 
+fhsjksdhjks 
+sdhfsdjfd 
+fhdjk 
+bara 
+bara
 [/input]
 [output]
 bara \- 4
@@ -150,7 +205,19 @@ sara \- 0
 [test]
 [input]
 a b c d
-vdsa a rb b dbs a ss b c d sdn bd d
+vdsa 
+a 
+rb 
+b 
+dbs 
+a 
+ss 
+b 
+c 
+d 
+sdn 
+bd 
+d
 [/input]
 [output]
 a \- 2
@@ -164,6 +231,7 @@ c \- 1
 [/code-task]
 
 [/slide]
+
 [slide]
 
 # Problem: Odd Occurrences
