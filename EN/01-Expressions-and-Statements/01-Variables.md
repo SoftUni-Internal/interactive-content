@@ -1,3 +1,5 @@
+# Variables and Storing Data
+
 [slide]
 # Real Live Example
 
@@ -12,17 +14,18 @@ If we think of the variables as boxes that hold information, this is how they wo
 Variables can be stored in the program's:
   * Operational memory - in the execution **stack**
   * Dynamic memory - in the **heap**
+
 [/slide]
 
 
 [slide]
+# Definition of Variables
 
 [vimeo-video]
 [stream language="EN" videoId="486854872/71ae21e1d5" default /]
 [stream language="RO" videoId="486854872/71ae21e1d5"  /]
 [/video-vimeo]
 
-# Variables
 In programming, each **variable** stores a certain value of a particular type. 
 
 For example, data types can be: 
@@ -36,7 +39,13 @@ Basically **variables** provide means for:
   * **Storing** data
   * **Retrieving** stored data
   * **Modifying** stored data
-  
+
+[/slide]
+
+[slide]
+
+# Creating a Variable
+
 [vimeo-video]
 [stream language="EN" videoId="486854948/925f8eaf2d" default /]
 [stream language="RO" videoId="486854948/925f8eaf2d"  /]
