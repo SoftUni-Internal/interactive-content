@@ -1,5 +1,13 @@
+# Logical Operators
 [slide]
 # More Complex Conditions
+
+
+[vimeo-video]
+[stream language="EN" videoId="486871142/63e6f30a5a" default /]
+[stream language="RO" videoId="486871142/63e6f30a5a"  /]
+[/video-vimeo]
+
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:
@@ -30,6 +38,11 @@ We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||
 
 [slide]
 # Logical "AND"
+[vimeo-video]
+[stream language="EN" videoId="486871442/f9e84d4655" default /]
+[stream language="RO" videoId="486871442/f9e84d4655"  /]
+[/video-vimeo]
+
 As we saw, in some tasks we have to make **many checks at once**. 
 
 What happens when more conditions have to be executed at once, and we don't want to make a negation (else) for each one of them? 
@@ -174,6 +187,11 @@ Write a program that applies bonus to given points
 
 [slide]
 # Solution: Bonus Points
+[vimeo-video]
+[stream language="EN" videoId="486871642/75ebf87fb1" default /]
+[stream language="RO" videoId="486871642/75ebf87fb1"  /]
+[/video-vimeo]
+
 [code-task title="Bonus Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -238,6 +256,12 @@ Write a program that applies bonus to given points
 
 [slide]
 # Logical "OR" Operator
+
+[vimeo-video]
+[stream language="EN" videoId="486871995/8f758b3955" default /]
+[stream language="RO" videoId="486871995/8f758b3955"  /]
+[/video-vimeo]
+
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
 Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
@@ -339,6 +363,7 @@ unknown
 
 [slide]
 # Solution: Food or Drink
+
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -401,6 +426,12 @@ unknown
 
 [slide]
 # Logical "NOT" Operator
+
+
+[vimeo-video]
+[stream language="EN" videoId="486872932/bae112a39e" default /]
+[stream language="RO" videoId="486872932/bae112a39e"  /]
+[/video-vimeo]
 
 Logical negation (operator `!` ) means that a given condition is **not fulfilled.**
 

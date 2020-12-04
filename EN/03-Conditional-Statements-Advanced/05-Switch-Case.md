@@ -1,6 +1,11 @@
 [slide]
 # The Switch-Case Statement
 
+[vimeo-video]
+[stream language="EN" videoId="486873288/8055a584f1" default /]
+[stream language="RO" videoId="486873288/8055a584f1"  /]
+[/video-vimeo]
+
 The switch-case condition works as a sequence of if-else blocks. 
 
 Whenever the work of our program depends on the value of one variable, instead of making consecutive conditions with `if-else` blocks, we can **use** the conditional `switch` statement. 
@@ -28,8 +33,15 @@ switch (selector) {
     break;
 }
 ```
+[/slide]
 
+[slide]
 # The default case
+[vimeo-video]
+[stream language="EN" videoId="486873687/12bb55bdb9" default /]
+[stream language="RO" videoId="486873687/12bb55bdb9"  /]
+[/video-vimeo]
+
 The default case specifies the `switch` section to execute **if the match expression doesn't match any other case label**.
 
 If a default case is not present and the match expression doesn't match any other case label, program flow **falls** through the switch statement.
@@ -86,6 +98,12 @@ switch (day) {
 
 [slide]
 # Multiple Labels
+
+[vimeo-video]
+[stream language="EN" videoId="486873816/db58eac4b4" default /]
+[stream language="RO" videoId="486873816/db58eac4b4"  /]
+[/video-vimeo]
+
 In **JS** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 
 This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective `case` label **there is no code** for execution and a `break` operator. 
@@ -106,12 +124,20 @@ switch (selector) {
         break;
 }
 ```
+[/slide]
 
+[slide]
 # Example: Animal Type
+
+[vimeo-video]
+[stream language="EN" videoId="486873964/be087efd1c" default /]
+[stream language="RO" videoId="486873964/be087efd1c"  /]
+[/video-vimeo]
+
 Write a program that prints the type of the animal depending on its name:
--  dog -> **mammal**
--  crocodile, tortoise, snake -> **reptile**
--  others -> **unknown**
+-  dog \-\> **mammal**
+-  crocodile, tortoise, snake \-\> **reptile**
+-  others \-\> **unknown**
 
 We can solve the task with `switch-case` conditions with multiple labels in the following way:
 ```js live
