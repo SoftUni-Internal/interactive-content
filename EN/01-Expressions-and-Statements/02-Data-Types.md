@@ -17,6 +17,43 @@ There are six primitive data types:
 * String - `Hello, World!`
 * Symbol (new in ECMAScript 6)
 * BigInt
+
+```js
+const isValidated = true; // boolean data type represent one of two values - true or false
+```
+
+```js
+const number = null; // null data type represents empty value
+```
+
+```js
+let firstName;
+console.log(firstName); // returns undefined because data is not assigned
+```
+
+```js
+const number1 = 15; // integer number
+const number2 = 3.433; // floating number
+```
+
+```js
+const name = "George" // strings represent text
+```
+
+```js
+let name = Symbol("Peter");
+let name2 = Symbol("Peter");
+// name == name2 -> false      
+// symbols are guaranteed to be unique. Every symbol have different value
+```
+
+```js
+const value1 = 900723149151234998n; // we use BigInt if we need to represent bigger number than number can store
+```
+
+Everything else is an **object** type.
+
+U will cover **object** types later.
 [/slide]
 
 [slide]

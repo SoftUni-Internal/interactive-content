@@ -15,8 +15,6 @@ Most of our applications need to work with information.
 
 We can use variables to store all kind of data we need.
 
-To create a variable in java, use the `let` keyword.
-
 [/slide]
 
 
