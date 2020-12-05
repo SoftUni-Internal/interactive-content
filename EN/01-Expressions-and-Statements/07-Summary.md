@@ -20,5 +20,13 @@ In this lesson we learned:
 
 - Expression is an operator plus value
 
+In the next lesson we will learn:
+
+- How to compare values using comparison operators
+
+- What conditional statements are
+
+- How to debug in Virtual Studio Code
+
 
 [/slide]

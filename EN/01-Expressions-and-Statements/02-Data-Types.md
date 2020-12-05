@@ -48,7 +48,7 @@ let name2 = Symbol("Peter");
 ```
 
 ```js
-const value1 = 900723149151234998n; // we use BigInt if we need to represent bigger number than number can store
+const value1 = 900723149151234998n; // we use BigInt if we need to represent bigger value than number can store
 ```
 
 Everything else is an **object** type.
