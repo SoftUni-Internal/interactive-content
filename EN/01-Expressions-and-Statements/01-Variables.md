@@ -11,6 +11,12 @@
 If we think of the variables as boxes that hold information, this is how they would look:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
+Most of our applications need to work with information.
+
+We can use variables to store all kind of data we need.
+
+To create a variable in java, use the `let` keyword.
+
 [/slide]
 
 
@@ -87,9 +93,8 @@ console.log("Age:", age);
 
 ``` js live
 function example() {
-  console.log(age); 
-  var age = 25;
-  console.log(age); 
+  var productID = 120491283761;
+  console.log(productID); 
 }
 example();
 
@@ -100,7 +105,5 @@ example();
 ``` js live
 const name = "Peter";
 console.log(name);
-
-name = "John";
 ```
 [/slide]
