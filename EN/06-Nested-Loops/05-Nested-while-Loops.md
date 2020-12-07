@@ -35,6 +35,7 @@ while (row <= 2) {
   while (col <= 3)
   {
     console.log(`  Column: ${col}`);
+    col++;
   }
   row++;
 }
@@ -160,7 +161,7 @@ Write a program, which:
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
-function sum(input) {
+function sum(inputLines) {
   // Write your code here
 }
 ```
@@ -283,8 +284,19 @@ Goodbye
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
-function sum(input) {
-  // Write your code here
+function sum(inputLines) {
+   while (true) {
+    let  = inputLines.shift();
+    if (input === "End") break;
+    let sum = 0;
+    for (let num = Number(input);
+      num > 0; num = Math.floor(num / 10))
+      sum += num % 10;
+    console.log(`Sum of digits: ${sum}`);
+  }
+  console.log("Goodbye");
+
+}
 }
 ```
 [/code-editor]
