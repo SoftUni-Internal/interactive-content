@@ -31,23 +31,6 @@ Then again the input condition is checked and if it is `true` again, the body of
 
 All this is repeated again and again **until at some point the conditional expression returns value** `false`.
 
-# Example: Sequence of Numbers 2k+1
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
-
-Here is how we can solve the problem:
-- We create a num variable for the current number to which we assign an initial **value of 1**.
-- For a loop condition, we put **the current number <= n**.
-- In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
-
-Here is a sample implementation of this idea:
-```js
-let n = Number(input.shift());
-let num = 1;
-while (num <= n) {
-  console.log(num);
-  num = 2 * num + 1;
-}
-```
 [/slide]
 
 [slide]
@@ -159,10 +142,16 @@ Write a program, which:
 
 
 [slide]
-# Problem: Numbers in Range
+# Problem: Sequence 2k + 1
+
+[vimeo-video]
+[stream language="EN" videoId="487120652/4dbc030699" default /]
+[stream language="RO" videoId="487120652/4dbc030699"  /]
+[/video-vimeo]
 
 
-[code-task title="Numbers in Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersInRange (input) {
@@ -172,32 +161,19 @@ function numbersInRange (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
 
-* Reads a **number** from the console
-* Checks if the number is in the range between **1 and 100**
-* If it isn't - it reads a **new one**
-* If it is - **prints the number** and the program stops
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|\-10| 50 |
-|101||
-|50| |
-
+Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
 
 
 [/task-description]
 [tests]
 [test]
 [input]
--10
-101
-60
+3
 [/input]
 [output]
-60
+1
+3
 [/output]
 [/test]
 [/tests]
@@ -207,16 +183,18 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Solution: Numbers in Range
-[code-task title="Numbers in Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Solution: Sequence 2k + 1
+
+[vimeo-video]
+[stream language="EN" videoId="487120683/99149d6f3f" default /]
+[stream language="RO" videoId="487120652/4dbc030699"  /]
+[/video-vimeo]
+
+
+[code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbersInRange (input) {
-  let num = Number(input.shift());
-    while (num < 1 || num > 100){
-      num = Number(input.shift());
-    }
-    console.log(num);
+// TODO: Solution
 }
 ```
 [/code-editor]
@@ -224,28 +202,34 @@ function numbersInRange (input) {
 # Description
 Write a program, which:
 
-* Reads a **number** from the console
-* Checks if the number is in the range between **1 and 100**
-* If it isn't - it reads a **new one**
-* If it is - **prints the number** and the program stops
+Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
 
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|\-10| 50 |
-|101||
-|50| |
+# Solution:
+
+Here is how we can solve the problem:
+- We create a num variable for the current number to which we assign an initial **value of 1**.
+- For a loop condition, we put **the current number <= n**.
+- In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
+
+Here is a sample implementation of this idea:
+```js
+let n = Number(input.shift());
+let num = 1;
+while (num <= n) {
+  console.log(num);
+  num = 2 * num + 1;
+}
+```
 
 [/task-description]
 [tests]
 [test]
 [input]
--10
-101
-60
+3
 [/input]
 [output]
-60
+1
+3
 [/output]
 [/test]
 [/tests]
