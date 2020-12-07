@@ -1,6 +1,17 @@
+# Problem: NxN Matrix
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421821470" default /]
+[stream language="RO" videoId="430366442"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Middle Characters
-[code-task title="Middle Characters" taskId="java-fund-11-Methods-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: NxN Matrix
+[code-task title="NxN Matrix" taskId="java-fund-11-Methods-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -14,127 +25,174 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive a single string.
-
-Write a method that **prints the middle character**.
-
-If the **length** of the string is **even** there are **two middle characters**.
+Write a method that receives a single integer n and prints nxn matrix with that number.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| aString | r |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| someText | eT |
+| 3 | 3 3 3 |
+| | 3 3 3 |
+| | 3 3 3 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-aString
+3
 [/input]
 [output]
-r
-[/output]
-[/test]
-[test open]
-[input]
-someText
-[/input]
-[output]
-eT
+3 3 3
+3 3 3
+3 3 3
 [/output]
 [/test]
 [test]
 [input]
-3245
+7
 [/input]
 [output]
-24
+7 7 7 7 7 7 7	
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
+7 7 7 7 7 7 7
 [/output]
 [/test]
 [test]
 [input]
-invisible
+2
 [/input]
 [output]
-s
+2 2
+2 2
+
 [/output]
 [/test]
 [test]
 [input]
-ornamental
+4
 [/input]
 [output]
-me
+4 4 4 4
+4 4 4 4
+4 4 4 4
+4 4 4 4
 [/output]
 [/test]
 [test]
 [input]
-round
+10
 [/input]
 [output]
-u
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10
 [/output]
 [/test]
 [test]
 [input]
-innocent
+13
 [/input]
 [output]
-oc
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13
 [/output]
 [/test]
 [test]
 [input]
-silver
+9
 [/input]
 [output]
-lv
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
+9 9 9 9 9 9 9 9 9 
 [/output]
 [/test]
 [test]
 [input]
-teen
+1
 [/input]
 [output]
-ee
+1
 [/output]
 [/test]
 [test]
 [input]
-web
+20
 [/input]
 [output]
-e
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 [/output]
 [/test]
 [test]
 [input]
-technologies
+5
 [/input]
 [output]
-ol
+5 5 5 5 5 
+5 5 5 5 5 
+5 5 5 5 5 
+5 5 5 5 5 
+5 5 5 5 5 
 [/output]
 [/test]
 [test]
 [input]
-SoftUni
+6
 [/input]
 [output]
-t
-[/output]
-[/test]
-[test]
-[input]
-freaky
-[/input]
-[output]
-ea
+6 6 6 6 6 6 
+6 6 6 6 6 6 
+6 6 6 6 6 6 
+6 6 6 6 6 6 
+6 6 6 6 6 6 
+6 6 6 6 6 6 
 [/output]
 [/test]
 [/tests]

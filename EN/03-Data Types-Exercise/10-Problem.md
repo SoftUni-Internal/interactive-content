@@ -1,6 +1,17 @@
+# Problem: Snowballs
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="425480088" default /]
+[stream language="RO" videoId="425478382"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Poke Mon
-[code-task title="Poke Mon" taskId="java-fund-05-Data Types-Exercise-problem-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Snowballs
+[code-task title="Snowballs" taskId="java-fund-05-Data Types-Exercise-problem-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,102 +25,103 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keeps **statistics**, about how many pokes it has managed to make.
+Tony and Andi love playing in the snow and having snowball fights, but they always argue which makes the best snowballs. 
 
-The Poke Mon pokes his target, and then proceeds to poke another target. The **distance between his targets reduces his poke power**.
+Тhey have decided to involve you in their fray, by making you write a program which **calculates snowball data**, and outputs the best snowball value.
 
-You will be given the **poke power** the Poke Mon has, **N** – an integer.
+You will receive **N** – an integer, the **number of snowballs being made** by Tony and Andi.
 
-Then you will be given the **distance between the poke targets**, **M** – an integer.
+For each snowball you will receive 3 input lines:
+-	On the first line you will get the **snowballSnow** – an integer.
+-	On the second line you will get the **snowballTime** – an integer.
+-	On the third line you will get the **snowballQuality** – an integer.
 
-Then you will be given the **exhaustionFactor Y** – an integer.
+For each snowball you must calculate its snowballValue by the following formula:
+**(snowballSnow / snowballTime) ^ snowballQuality**
 
-Your task is to start **subtracting M from N until N becomes less than M**, i.e. the Poke Mon does not have enough power to reach the next target. 
+At the end you must **print the highest calculated** snowballValue.
 
-**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. COUNT how many targets you’ve poked – you’ll need that count.
-
-The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is POSSIBLE. This DIVISION is between integers.
-
-If a division is not possible, you should NOT do it. Instead, you should continue subtracting.
-
-After dividing, you should **continue subtracting** from N, until it becomes less than M.
-
-When N becomes less than M, you must take what has remained of N and the count of targets you’ve poked, and print them as output.
-
-NOTE: When you are calculating percentages, you should be PRECISE at maximum.
-
-Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 
 ### Input/ Constraints
--	On the first line you will receive **N** – an integer.
--	On the second line you will receive **M** – an integer.
--	On the third line you will receive **Y** – an integer.
+-	On the first input line you will receive N – the number of snowballs.
+-	On the next N * 3 input lines you will be receiving data about snowballs. 
 
 ### Output
--	On the first line print **what has remained of N**, after subtracting from it.
--	On the second line print the **count of targets**, you’ve managed to poke
+-	As output you must print the **highest calculated snowballValue**, by the formula, specified above. 
+- The output format is: 
+\{snowballSnow\} : \{snowballTime\} = \{snowballValue\} (\{snowballQuality\})
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | 1 |
-| 2 | 2 |
+| 2 | 10 : 2 = 125 (3) |
+| 10 | |
+| 2 | |
 | 3 | |
-
-**Comments**
-- N = 5, M = 2, Y = 3.
-- We start subtracting M from N.
-- N – M = 3. 1 target poked.
-- N – M = 1. 2 targets poked.
-- N < M.
-- We print what has remained of N, which is 1.
-- We print the count of targets, which is 2.
+| 5 | |
+| 5 | |
+| 5 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-5
+2
+10
 2
 3
+5
+5
+5
 [/input]
 [output]
-1
-2
+10 : 2 = 125 (3)
 [/output]
 [/test]
 [test]
 [input]
+3
 10
 5
+7
+16
+4
+2
+20
+2
 2
 [/input]
 [output]
-2
-1
+10 : 5 = 128 (7)
 [/output]
 [/test]
 [test]
 [input]
-1000
-45
 2
-[/input]
-[output]
+50
 10
-22
+4
+5
+5
+10
+[/input]
+[output]
+50 : 10 = 625 (4)
 [/output]
 [/test]
 [test]
 [input]
-100
-19
-1
+2
+5
+5
+5
+15
+3
+5
 [/input]
 [output]
-5
-5
+15 : 3 = 3125 (5)
 [/output]
 [/test]
 [/tests]

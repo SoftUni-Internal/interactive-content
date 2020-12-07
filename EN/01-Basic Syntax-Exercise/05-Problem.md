@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Login
-[code-task title="Login" taskId="java-fund-02-Basic Syntax-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Strong Number
+[code-task title="Strong Number" taskId="java-fund-02-Basic Syntax-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,99 +14,60 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given a string representing a **username**. 
+Write a program to **check** if a given number is a **strong number** or not. 
 
-The **password** will be that **username reversed**. 
+A number is strong if the **sum of the Factorial of each digit is equal to the number**. 
 
-**Until** you receive the **correct** password **print** "Incorrect password. Try again." 
+For example **145** is a strong number, because **1! + 4! + 5! = 145**. 
 
-**When** you receive the **correct** password **print** "User \{username\} logged in." 
-
-If the password is still not correct on the **fourth try** print "User \{username\} blocked!" and **end** the program.
+**Print** "**yes**" if the number is strong and "**no**" if the number is not strong.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| momo | User momo logged in. |
-| omom | |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| sunny | Incorrect password. Try again. |
-| rainy | Incorrect password. Try again. |
-| cloudy | Incorrect password. Try again. |
-| stormy | User sunny blocked! |
-| not sunny | |
+| 40585 | yes |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Acer
-login
-go
-let me in
-recA
+2
 [/input]
 [output]
-Incorrect password. Try again.
-Incorrect password. Try again.
-Incorrect password. Try again.
-User Acer logged in.
+yes
 [/output]
 [/test]
 [test open]
 [input]
-momo
-omom
+3451
 [/input]
 [output]
-User momo logged in.
+no
 [/output]
 [/test]
 [test]
 [input]
-sunny
-rainy
-cloudy
-stormy
-not sunny
+40585
 [/input]
 [output]
-Incorrect password. Try again.
-Incorrect password. Try again.
-Incorrect password. Try again.
-User sunny blocked!
+yes
 [/output]
 [/test]
 [test]
 [input]
-ac
-fg
-df
-ca
+123
 [/input]
 [output]
-Incorrect password. Try again.
-Incorrect password. Try again.
-User ac logged in.
+no
 [/output]
 [/test]
 [test]
 [input]
-bb
-aa
-ss
-dd
-ff
+1
 [/input]
 [output]
-Incorrect password. Try again.
-Incorrect password. Try again.
-Incorrect password. Try again.
-User bb blocked!
+yes
 [/output]
 [/test]
 [/tests]

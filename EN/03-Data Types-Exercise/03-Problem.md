@@ -1,17 +1,6 @@
-# Problem: Elevator
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="425479929" default /]
-[stream language="RO" videoId="425478254"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Elevator
-[code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Sum of Chars
+[code-task title="Sum of Chars" taskId="java-fund-05-Data Types-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -21,70 +10,114 @@ public class Main {
         // Write your code here
     }
 }
-
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-Calculate how many courses will be needed to **elevate n persons** by using an elevator with **capacity of p persons**. 
+Write a program, which **sums the ASCII codes of n characters**. 
 
-The **input** holds **two lines**: 
-- the number of people **n**
-- the capacity **p** of the elevator
+**Print the sum** on the console.
+
+### Input
+-	On the first line, you will receive n – the number of lines, which will follow
+-	On the next n lines – you will receive letters from the Latin alphabet
+
+### Output
+Print the total sum in the following format:
+-   "The sum equals: \{totalSum\}"
 
 ### Example
-| **Input** | **Output** | **Comments**
-| --- | --- | --- |
-| 17 | 6 | 5 courses * 3 people |
-| 3 | | + 1 course * 2 people |
+| **Input** | **Output** |
+| --- | --- |
+| 5 | The sum equals: 399 |
+| A | |
+| b | |
+| C | |
+| d | |
+| E | |
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-17
-3
-[/input]
-[output]
-6
-[/output]
-[/test]
-[test]
-[input]
-4
 5
+A
+b
+C
+d
+E
 [/input]
 [output]
-1
+The sum equals: 399
 [/output]
 [/test]
 [test]
 [input]
-16
-3
+12
+S
+o
+f
+t
+U
+n
+i
+R
+u
+l
+z
+z
 [/input]
 [output]
-6
+The sum equals: 1263
 [/output]
 [/test]
 [test]
 [input]
-16
-4
+10
+H
+e
+l
+l
+o
+B
+u
+d
+d
+y
 [/input]
 [output]
-4
+The sum equals: 1004
 [/output]
 [/test]
 [test]
 [input]
-2
-5
+20
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
 [/input]
 [output]
-1
+The sum equals: 1940
 [/output]
 [/test]
 [/tests]

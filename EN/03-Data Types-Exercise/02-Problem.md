@@ -1,6 +1,17 @@
+# Problem: Elevator
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="425479929" default /]
+[stream language="RO" videoId="425478254"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Sum Digits
-[code-task title="Sum Digits" taskId="java-fund-05-Data Types-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Elevator
+[code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -10,55 +21,67 @@ public class Main {
         // Write your code here
     }
 }
+
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-You will be given a **single** integer. 
+Calculate how many courses will be needed to **elevate n persons** by using an elevator with **capacity of p persons**. 
 
-Your task is to find the **sum of its digits**.
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 245678 | 32 |
+The **input** holds **two lines**: 
+- the number of people **n**
+- the capacity **p** of the elevator
 
 ### Example
-| **Input** | **Output** |
-| --- | --- |
-| 543 | 12 |
+| **Input** | **Output** | **Comments**
+| --- | --- | --- |
+| 17 | 6 | 5 courses * 3 people |
+| 3 | | + 1 course * 2 people |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-245678
+17
+3
 [/input]
 [output]
-32
+6
 [/output]
 [/test]
 [test]
 [input]
-97561
+4
+5
 [/input]
 [output]
-28
-[/output]
-[/test]
-[test open]
-[input]
-543
-[/input]
-[output]
-12
+1
 [/output]
 [/test]
 [test]
 [input]
-1000
+16
+3
+[/input]
+[output]
+6
+[/output]
+[/test]
+[test]
+[input]
+16
+4
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+2
+5
 [/input]
 [output]
 1

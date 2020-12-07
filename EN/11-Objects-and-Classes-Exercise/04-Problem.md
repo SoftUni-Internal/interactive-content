@@ -1,20 +1,10 @@
-# Problem: Students
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421822838" default /]
-[stream language="RO" videoId="433936042"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Students
-[code-task title="Students" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Vehicle Catalogue
+[code-task title="Vehicle Catalogue" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,133 +15,176 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that receives **n count** of students with grades and prints whether they have successfully passed a test.
+Until you receive the **command** "End" you will receive lines of input in the format:
+- \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
 
-If the **grade** is **greater than or equal to 3.00**, the test is **passed**.
+After the "End" command, you will start receiving **models of vehicles**. **Print for every received vehicle** its data in the **format**:
 
-Each student should have **First name** (string), **Last name** (string) and **grade** (floating-point number).
+Type: \{typeOfVehicle\}
 
-### Input
-- First line will be a **number n**
-- Next **n lines** you will get a student info in the **format** 
+Model: \{modelOfVehicle\}
 
-"\{first name\} \{second name\} \{grade\}"
+Color: \{colorOfVehicle\}
 
-### Output
-- If the **test is passed**, print:
+Horsepower: \{horsepowerOfVehicle\}
 
-"\{first name\} \{second name\}: \{PASS\}"
+When you receive the command "Close the Catalogue", stop receiving **input and print the average horsepower** for the cars and for the trucks in the **format**:
 
-- If the **test isn't passed**, print:
+"\{typeOfVehicles\} have average horsepower of \{averageHorsepower\}."
 
-"\{first name\} \{second name\}"
+The average horsepower is **calculated** by **dividing the sum of horsepower for all vehicles of the type by the total count of vehicles from the same type**.
+
+Format the answer to the **second decimal point**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 | Lakia Eason: PASS |
-| Lakia Eason 3.90 | Prince Messing: PASS |
-| Prince Messing 5.49 | Akiko Segers |
-| Akiko Segers 2.85 | Rocco Erben: PASS |
-| Rocco Erben 6.00 | |
+| truck Man red 200 | Type: Car |
+| truck Mercedes blue 300 | Model: Ferrari |
+| car Ford green 120 | Color: red |
+| car Ferrari red 550 | Horsepower: 550 |
+| car Lamborghini orange 570 | Type: Car |
+| End | Model: Ford |
+| Ferrari | Color: green |
+| Ford | Horsepower: 120 |
+| Man | Type: Truck |
+| Close the Catalogue | Model: Man |
+| | Color: red |
+| | Horsepower: 200 |
+| | Cars have average horsepower of: 413.33. |
+| | Trucks have average horsepower of: 250.00. |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-4
-Lakia Eason 3.90
-Prince Messing 5.49
-Akiko Segers 2.85
-Rocco Erben 6.00
+truck Man red 200
+truck Mercedes blue 300
+car Ford green 120
+car Ferrari red 550
+car Lamborghini orange 570
+End
+Ferrari
+Ford
+Man
+Close the Catalogue
 [/input]
 [output]
-Lakia Eason: PASS
-Prince Messing: PASS
-Akiko Segers
-Rocco Erben: PASS
+Type: Car
+Model: Ferrari
+Color: red
+Horsepower: 550
+Type: Car
+Model: Ford
+Color: green
+Horsepower: 120
+Type: Truck
+Model: Man
+Color: red
+Horsepower: 200
+Cars have average horsepower of: 413.33.
+Trucks have average horsepower of: 250.00.
 [/output]
 [/test]
 [test]
 [input]
-4
-Sydnie Britton 5.79
-Amias Mathews 2.30
-Mora Tod 2.78
-Pete Kendrick 2.61
+car Opel green 736
+End
+Close the Catalogue
 [/input]
 [output]
-Sydnie Britton: PASS
-Amias Mathews
-Mora Tod
-Pete Kendrick
+Cars have average horsepower of: 736.00.
+Trucks have average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
 [input]
-3
-Cletus Henry 4.34
-Deena Banks 5.83
-Asher West 5.76
+truck Opel green 248
+End
+Close the Catalogue
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
+Cars have average horsepower of: 0.00.
+Trucks have average horsepower of: 248.00.
 [/output]
 [/test]
 [test]
 [input]
-3
-Cletus Henry 5.50
-Deena Banks 5.33
-Asher West 3.59
+car Lamborghini orange 570
+End
+Lamborghini
+Close the Catalogue
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
+Type: Car
+Model: Lamborghini
+Color: orange
+Horsepower: 570
+Cars have average horsepower of: 570.00.
+Trucks have average horsepower of: 0.00.
 [/output]
 [/test]
 [test]
 [input]
-6
-Sydnie Britton 5.79
-Cletus Henry 5.50
-Deena Banks 5.24
-Asher West 4.59
-Mora Tod 2.78
-Pete Kendrick 2.61
+truck Man red 200
+End
+Man
+Close the Catalogue
 [/input]
 [output]
-Sydnie Britton: PASS
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
-Mora Tod
-Pete Kendrick
+Type: Truck
+Model: Man
+Color: red
+Horsepower: 200
+Cars have average horsepower of: 0.00.
+Trucks have average horsepower of: 200.00.
 [/output]
 [/test]
 [test]
 [input]
-7
-Cletus Henry 5.50
-Deena Banks 5.33
-Asher West 3.59
-Sydnie Britton 5.79
-Amias Mathews 2.30
-Mora Tod 2.78
-Pete Kendrick 2.61
+truck Man red 800
+truck Mercedes blue 300
+car Ford green 400
+car Ferrari red 553
+car Lamborghini orange 570
+End
+Close the Catalogue
 [/input]
 [output]
-Cletus Henry: PASS
-Deena Banks: PASS
-Asher West: PASS
-Sydnie Britton: PASS
-Amias Mathews
-Mora Tod
-Pete Kendrick
+Cars have average horsepower of: 507.67.
+Trucks have average horsepower of: 550.00.
+[/output]
+[/test]
+[test]
+[input]
+truck Man red 354
+truck Mercedes blue 320
+car Jaguar green 480
+car Honda red 220
+car Volvo orange 326
+truck Volkswagen black 423
+End
+Volvo
+Jaguar
+Volkswagen
+Close the Catalogue
+[/input]
+[output]
+Type: Car
+Model: Volvo
+Color: orange
+Horsepower: 326
+Type: Car
+Model: Jaguar
+Color: green
+Horsepower: 480
+Type: Truck
+Model: Volkswagen
+Color: black
+Horsepower: 423
+Cars have average horsepower of: 342.00.
+Trucks have average horsepower of: 365.67.
 [/output]
 [/test]
 [/tests]

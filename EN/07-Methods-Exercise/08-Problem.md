@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Factorial Division
-[code-task title="Factorial Division" taskId="java-fund-11-Methods-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Palindrome Integers
+[code-task title="Palindrome Integers" taskId="java-fund-11-Methods-Exercise-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -14,127 +14,157 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Read **two integer numbers**.
+A palindrome is a number which reads the same **backward as forward,** such as 323 or 1001.
 
-Calculate **factorial** of each number.
-
-**Divide the first result by the second** and print the **division formatted to the second** decimal point.
+Write a program which reads a positive integer numbers **until you receive** "END", for each number **print whether the number is palindrome or not**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | 60.00 |
-| 2 | |
+| 123 | false |
+| 323 | true |
+| 421 | false |
+| 121 | true |
+| END | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-5
+123
+323
+421
+121
+END
+[/input]
+[output]
+false
+true
+false
+true
+[/output]
+[/test]
+[test]
+[input]
+32
 2
+232
+1010
+END
 [/input]
 [output]
-60.00
+false
+true
+true
+false
 [/output]
 [/test]
 [test]
 [input]
-6
-2
+121
+159
+259
+END
 [/input]
 [output]
-360.00
+true
+false
+false
 [/output]
 [/test]
 [test]
 [input]
-2
-2
+121
+528
+891
+622
+271
+602
+117
+489
+END
 [/input]
 [output]
-1.00
+true
+false
+false
+false
+false
+false
+false
+false
 [/output]
 [/test]
 [test]
 [input]
-14
-4
+70
+555
+523
+902
+554
+209
+918
+37
+808
+END
 [/input]
 [output]
-3632428800.00
+false
+true
+false
+false
+false
+false
+false
+false
+true
 [/output]
 [/test]
 [test]
 [input]
-1
-12
+567
+656
+920
+184
+580
+128
+638
+276
+137
+END
 [/input]
 [output]
-0.00
+false
+true
+false
+false
+false
+false
+false
+false
+false
 [/output]
 [/test]
 [test]
 [input]
-5
-3
+123321
+121
+356653
+157
+1001
+666
+159951
+END
 [/input]
 [output]
-20.00
-[/output]
-[/test]
-[test]
-[input]
-11
-3
-[/input]
-[output]
-6652800.00
-[/output]
-[/test]
-[test]
-[input]
-10
-12
-[/input]
-[output]
-0.01
-[/output]
-[/test]
-[test]
-[input]
-14
-13
-[/input]
-[output]
-14.00
-[/output]
-[/test]
-[test]
-[input]
-6
-5
-[/input]
-[output]
-6.00
-[/output]
-[/test]
-[test]
-[input]
-11
-1
-[/input]
-[output]
-39916800.00
-[/output]
-[/test]
-[test]
-[input]
-12
-13
-[/input]
-[output]
-0.08
+true
+true
+true
+false
+true
+true
+true
 [/output]
 [/test]
 [/tests]

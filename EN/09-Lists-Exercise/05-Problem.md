@@ -1,17 +1,6 @@
-# Problem: Bomb Numbers
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421819141" default /]
-[stream language="RO" videoId="432473311"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Bomb Numbers
-[code-task title="Bomb Numbers" taskId="java-fund-14-Lists-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Cards Game
+[code-task title="Cards Game" taskId="java-fund-14-Lists-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -26,113 +15,83 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **sequence of numbers and special bomb number** with a certain power.
+You will be given two hands of cards, which will be **integer numbers**.
 
-Your task is to **detonate every occurrence of the special bomb number** and according to its power **his neighbors from left and right**.
+Assume that you have **two players**.
 
-Detonations are performed **from left to right** and all detonated numbers **disappear**.
+You have to **find** out the **winning deck** and respectively the winner.
 
-Finally **print the sum of the remaining elements** in the sequence.
+You start from the beginning of both hands. **Compare** the cards from the first deck to the cards from the second deck. 
 
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 1 2 2 4 2 2 2 9  | 12 |
-| 4 2 | |
+The player, **who has the bigger card**, takes both cards and puts them at the back of his hand - the second player’s card is last, and the first person’s card (the winning one) is before it (second to last) and the player with the smaller card must remove the card from his deck. 
 
-**Comments:**
-- Special number is 4 with power 2. 
-- After detonation we left with the sequence \[1, 2, 9\] with sum 12.
+If both players’ cards **have the same values** - no one wins, and the two cards must be removed from the decks. 
+
+The **game is over**, when one of the decks is left **without any cards**. 
+
+You have to **print the winner on the console** and **the sum of the left** cards: "\{First/Second\} player wins! Sum: \{sum\}".
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 4 4 2 8 9 1 | 5 |
-| 9 3 | |
-
-**Comments:**
-- Special number is 9 with power 3. 
-- After detonation we left with the sequence \[1, 4\] with sum 5. 
-- Since the 9 has only 1 neighbor from the right we remove just it (one number instead of 3).
+| 20 30 40 50  | First player wins! Sum: 240 |
+| 10 20 30 40 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1 2 2 4 2 2 2 9
-4 2
-
+20 30 40 50
+10 20 30 40
 [/input]
 [output]
-12
-[/output]
-[/test]
-[test open]
-[input]
-1 4 4 2 8 9 1
-9 3
-
-[/input]
-[output]
-5
+First player wins! Sum: 240
 [/output]
 [/test]
 [test]
 [input]
-1 7 7 1 2 3
-7 1
-
+10 20 30 40 50
+50 40 30 30 10
 [/input]
 [output]
-6
+Second player wins! Sum: 50
 [/output]
 [/test]
 [test]
 [input]
-1 1 2 1 1 1 2 1 1 1
-2 1
-
+42 83 37 84 75 47 99
+54 3 20 48 91 25 88
 [/input]
 [output]
-4
-
+First player wins! Sum: 796
 [/output]
 [/test]
 [test]
 [input]
-1 2 1 1 1
-2 3
+21 19 59 47 99 92 87 19 50 34
+14 10 20 51 71 77 82 13 54 50
 [/input]
 [output]
-0
+First player wins! Sum: 969
 [/output]
 [/test]
 [test]
 [input]
-1 1 2 1 1
-2 2
+200 157 300
+100 200 300
 [/input]
 [output]
-0
+Second player wins! Sum: 257
 [/output]
 [/test]
 [test]
 [input]
-8 1 8 1 1 8 1 8 0 0 9
-8 2
+70 92 27 70 56 28 73 10
+53 47 97 89 7 37 18 52
 [/input]
 [output]
-9
-[/output]
-[/test]
-[test]
-[input]
-1 2 1 1 2 1 1 2 2 1
-2 0
-[/input]
-[output]
-6
+Second player wins! Sum: 826
 [/output]
 [/test]
 [/tests]

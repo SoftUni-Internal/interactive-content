@@ -1,17 +1,6 @@
-# Problem: Characters in Range
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421819325" default /]
-[stream language="RO" videoId="430366338"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Characters in Range
-[code-task title="Characters in Range" taskId="java-fund-11-Methods-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Password Validator
+[code-task title="Password Validator" taskId="java-fund-11-Methods-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -25,86 +14,111 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two characters** and prints on a single line all the **characters in between them according to ASCII**.
+Write a program that checks if a given password is **valid**. 
 
-**NOTE:** If the second letter is less than the first one then letters should be swapped.
+Password **rules** are:
+- **6 - 10 characters** (inclusive)
+- Consists **only** of **letters and digits**
+- Have **at least 2 digits** 
+If a password is **valid** print "Password is valid". 
+
+If it is **not valid**, for every unfulfilled rule **print a message**:
+- "Password must be between 6 and 10 characters"
+- "Password must consist only of letters and digits"
+- "Password must have at least 2 digits"
+
+### Hint
+Write a method for each rule.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| a | b c |
-| d | |
+| logIn | Password must be between 6 and 10 characters |
+| | Password must have at least 2 digits |
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| # | $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 |
-| : | |
+| MyPass123 | Password is valid |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-a
-d
+logIn
 [/input]
 [output]
-b c
+Password must be between 6 and 10 characters
+Password must have at least 2 digits
 [/output]
 [/test]
 [test open]
 [input]
-\#
-:
+MyPass123
 [/input]
 [output]
-$ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9
+Password is valid
 [/output]
 [/test]
 [test]
 [input]
-C
-\#
+Pa$s$s
 [/input]
 [output]
-$ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B
+Password must consist only of letters and digits
+Password must have at least 2 digits
 [/output]
 [/test]
 [test]
 [input]
-b
-r
+Acer
 [/input]
 [output]
-c d e f g h i j k l m n o p q
+Password must be between 6 and 10 characters
+Password must have at least 2 digits
 [/output]
 [/test]
 [test]
 [input]
-9
-1
+Picture
 [/input]
 [output]
-2 3 4 5 6 7 8
+Password must have at least 2 digits
 [/output]
 [/test]
 [test]
 [input]
-!
-A
+pesho123\#
 [/input]
 [output]
-" # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @
+Password must consist only of letters and digits
 [/output]
 [/test]
 [test]
 [input]
-z
-A
+gas%2
 [/input]
 [output]
-B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y
+Password must be between 6 and 10 characters
+Password must consist only of letters and digits
+Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+Pesho189
+[/input]
+[output]
+Password is valid
+[/output]
+[/test]
+[test]
+[input]
+SoftUni40
+[/input]
+[output]
+Password is valid
 [/output]
 [/test]
 [/tests]

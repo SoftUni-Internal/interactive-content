@@ -1,17 +1,6 @@
-# Problem: Ages
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421818802" default /]
-[stream language="RO" videoId="423949507"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Ages
-[code-task title="Ages" taskId="java-fund-02-Basic Syntax-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Division
+[code-task title="Division" taskId="java-fund-02-Basic Syntax-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -26,57 +15,43 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that determines whether based on the given age a person is: 
+You will be given an integer and you have to print whether that number is divisible by the following numbers: **2**, **3**, **6**, **7**, **10**. 
 
-**baby**, **child**, **teenager**, **adult**, **elder**. 
+You should always take the **bigger** division. 
 
-The bounders are:
-•	0-2 – baby; 
-•	3-13 – child; 
-•	14-19 – teenager;
-•	20-65 – adult;
-•	>=66 – elder; 
+If the number is divisible by **both 2 and 3** it is also **divisible by 6** and you should **print only the division by 6**. 
 
-All the values are inclusive
+If the number is not divisible by any of the given numbers print "**Not divisible**". 
+
+Otherwise print "The number is divisible by \{number\}".
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 10 | child |
+| 15 | The number is divisible by 3 |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 1643 | Not divisible |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-20
+30
 [/input]
 [output]
-adult
+The number is divisible by 10
 [/output]
 [/test]
 [test open]
 [input]
-15
+1643
 [/input]
 [output]
-teenager
-[/output]
-[/test]
-[test]
-[input]
-90
-[/input]
-[output]
-elder
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-baby
+Not divisible
 [/output]
 [/test]
 [test]
@@ -84,7 +59,15 @@ baby
 10
 [/input]
 [output]
-child
+The number is divisible by 10
+[/output]
+[/test]
+[test]
+[input]
+15
+[/input]
+[output]
+The number is divisible by 3
 [/output]
 [/test]
 [/tests]

@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="java-fund-05-Data Types-Exercise-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Poke Mon
+[code-task title="Poke Mon" taskId="java-fund-05-Data Types-Exercise-problem-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,73 +14,102 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **calculates the total amount of spice** that can be extracted from a source. 
+A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keeps **statistics**, about how many pokes it has managed to make.
 
-The source has a **starting** yield, which indicates how much spice can be mined on the **first day**.
+The Poke Mon pokes his target, and then proceeds to poke another target. The **distance between his targets reduces his poke power**.
 
-After it has been mined for a day, the yield drops by 10, meaning on the **second day it’ll produce 10 less spice** than on the first, on the **third day 10 less than on the second**, and **so on** (see examples). 
+You will be given the **poke power** the Poke Mon has, **N** – an integer.
 
-A source is considered **profitable only while its yield is at least 100** – when less than 100 spice is expected in a day, abandon the source.
+Then you will be given the **distance between the poke targets**, **M** – an integer.
 
-The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. Note that the workers cannot consume more spice than there is in storage. 
+Then you will be given the **exhaustionFactor Y** – an integer.
 
-When the operation is complete, **print on the console on two separate lines** how many **days** the mine has operated and the total **amount** of spice extracted.
+Your task is to start **subtracting M from N until N becomes less than M**, i.e. the Poke Mon does not have enough power to reach the next target. 
 
+**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. COUNT how many targets you’ve poked – you’ll need that count.
 
-### Input
-You will **receive a number**, representing the **starting** yield of the source. 
+The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is POSSIBLE. This DIVISION is between integers.
+
+If a division is not possible, you should NOT do it. Instead, you should continue subtracting.
+
+After dividing, you should **continue subtracting** from N, until it becomes less than M.
+
+When N becomes less than M, you must take what has remained of N and the count of targets you’ve poked, and print them as output.
+
+NOTE: When you are calculating percentages, you should be PRECISE at maximum.
+
+Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
+
+### Input/ Constraints
+-	On the first line you will receive **N** – an integer.
+-	On the second line you will receive **M** – an integer.
+-	On the third line you will receive **Y** – an integer.
 
 ### Output
-Print **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
+-	On the first line print **what has remained of N**, after subtracting from it.
+-	On the second line print the **count of targets**, you’ve managed to poke
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 111 | 2 |
-| | 134 |
+| 5 | 1 |
+| 2 | 2 |
+| 3 | |
 
-**Comments** 
-- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101.
-- Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91.
-- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days.
+**Comments**
+- N = 5, M = 2, Y = 3.
+- We start subtracting M from N.
+- N – M = 3. 1 target poked.
+- N – M = 1. 2 targets poked.
+- N < M.
+- We print what has remained of N, which is 1.
+- We print the count of targets, which is 2.
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-111
+5
+2
+3
+[/input]
+[output]
+1
+2
+[/output]
+[/test]
+[test]
+[input]
+10
+5
+2
 [/input]
 [output]
 2
-134
+1
 [/output]
 [/test]
 [test]
 [input]
-450
-[/input]
-[output] 
-36
-8938
-[/output]
-[/test]
-[test]
-[input]
-200
+1000
+45
+2
 [/input]
 [output]
-11
-1338
+10
+22
 [/output]
 [/test]
 [test]
 [input]
-1234
+100
+19
+1
 [/input]
-[output] 
-114
-73276
+[output]
+5
+5
 [/output]
 [/test]
 [/tests]

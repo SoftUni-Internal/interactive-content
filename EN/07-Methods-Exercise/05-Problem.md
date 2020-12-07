@@ -1,17 +1,6 @@
-# Problem: Add and Subtract
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421818762" default /]
-[stream language="RO" videoId="430366408"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Add and Subtract
-[code-task title="Add and Subtract" taskId="java-fund-11-Methods-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Middle Characters
+[code-task title="Middle Characters" taskId="java-fund-11-Methods-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -25,155 +14,127 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive 3 integers.
+You will receive a single string.
 
-Write a method sum to get the sum of the first two integers and subtract method that subtracts the third integer from the result from the Sum method.
+Write a method that **prints the middle character**.
 
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 23 | 19 |
-| 6 | |
-| 10 | |
+If the **length** of the string is **even** there are **two middle characters**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 | -12 |
-| 17 | |
-| 30 | |
+| aString | r |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| someText | eT |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-23
-6
-10
+aString
 [/input]
 [output]
-19
+r
 [/output]
 [/test]
 [test open]
 [input]
-1
-17
-30
+someText
 [/input]
 [output]
--12
+eT
 [/output]
 [/test]
 [test]
 [input]
-42
-58
-100
+3245
 [/input]
 [output]
-0
+24
 [/output]
 [/test]
 [test]
 [input]
-20
-30
-50
+invisible
 [/input]
 [output]
-0
+s
 [/output]
 [/test]
 [test]
 [input]
-4321
-33
-231
+ornamental
 [/input]
 [output]
-4123
+me
 [/output]
 [/test]
 [test]
 [input]
-162
-33
--23
+round
 [/input]
 [output]
-218
+u
 [/output]
 [/test]
 [test]
 [input]
-16235
-1233
--223
+innocent
 [/input]
 [output]
-17691
+oc
 [/output]
 [/test]
 [test]
 [input]
-20
-20
-10
+silver
 [/input]
 [output]
-30
+lv
 [/output]
 [/test]
 [test]
 [input]
-123
-321
-231
+teen
 [/input]
 [output]
-213
+ee
 [/output]
 [/test]
 [test]
 [input]
--547
-247
-100
+web
 [/input]
 [output]
--400
+e
 [/output]
 [/test]
 [test]
 [input]
--5
--5
-1
+technologies
 [/input]
 [output]
--11
+ol
 [/output]
 [/test]
 [test]
 [input]
-3828
-9348
-12334
+SoftUni
 [/input]
 [output]
-842
+t
 [/output]
 [/test]
 [test]
 [input]
--21
-79
--2
+freaky
 [/input]
 [output]
-60
+ea
 [/output]
 [/test]
 [/tests]

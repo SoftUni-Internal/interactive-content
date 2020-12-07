@@ -1,123 +1,66 @@
 [slide hideTitle]
-# Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="java-fund-05-Data Types-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Print Part of the ASCII Table
+[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-Data Types-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
+  public static void main(String[] args) {
+      // Write code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Description
+Find online more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) and write a program that **prints part of the ASCII table** of characters at the console.  
 
-Write a program, which **sums the ASCII codes of n characters**. 
-
-**Print the sum** on the console.
-
-### Input
--	On the first line, you will receive n – the number of lines, which will follow
--	On the next n lines – you will receive letters from the Latin alphabet
-
-### Output
-Print the total sum in the following format:
--   "The sum equals: \{totalSum\}"
+On the first line of input you will receive the **char index** you should **start** with and on the second line - the index of the **last** character you should print.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | The sum equals: 399 |
-| A | |
-| b | |
-| C | |
-| d | |
-| E | |
-
+| 60 | < = > ? @ A |
+| 65 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-5
-A
-b
-C
-d
-E
+60
+65
 [/input]
 [output]
-The sum equals: 399
+< = > ? @ A
 [/output]
 [/test]
 [test]
 [input]
-12
-S
-o
-f
-t
-U
-n
-i
-R
-u
-l
-z
-z
+69
+79
 [/input]
 [output]
-The sum equals: 1263
+E F G H I J K L M N O
 [/output]
 [/test]
 [test]
 [input]
-10
-H
-e
-l
-l
-o
-B
-u
-d
-d
-y
+97
+104
 [/input]
 [output]
-The sum equals: 1004
+a b c d e f g h
 [/output]
 [/test]
 [test]
 [input]
-20
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+40
+55
 [/input]
 [output]
-The sum equals: 1940
+( ) * + , - . / 0 1 2 3 4 5 6 7
 [/output]
 [/test]
 [/tests]

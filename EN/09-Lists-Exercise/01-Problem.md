@@ -1,21 +1,11 @@
-# Problem: Train
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421823138" default /]
-[stream language="RO" videoId="432473499"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Train
-[code-task title="Train" taskId="java-fund-14-Lists-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Change List
+[code-task title="Change List" taskId="java-fund-14-Lists-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
 import java.util.stream.Collectors;
+
 public class Main {
     public static void main(String[] args) {
         // Write your code here
@@ -25,27 +15,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the first line you will be given a **list of wagons** (integers).
+Write a program, which **reads a list of integers** from the console and receives **commands**, which **manipulate the list**.
 
-Each **integer** represents the **number of passengers** that are currently in each wagon.
-
-On the next line you will get the **max capacity of each wagon** (single integer).
-
-**Until** you receive "end" you will be given two types of input:
-- **Add** \{passengers\} – add a wagon to the end with the given number of passengers.
-- \{passengers\} -  **find an existing wagon** to fit all the passengers (starting from the first wagon).
-At the end **print** the final state of the train (all the wagons separated by a space)
+Your program may receive the following **commands**: 
+•	**Delete** \{element\} – delete all elements in the array, which are equal to the given element
+•	**Insert** \{element\} \{position\} – insert element and the given position
+You should **stop the program** when you receive the command "end". Print all numbers in the array **separated with single whitespace**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 32 54 21 12 4 0 23 | 72 54 21 12 4 75 23 10 0 |
-| 75 | |
-| Add 10 | |
-| Add 0 | |
-| 30 | |
-| 10 | |
-| 75 | |
+| 1 2 3 4 5 5 5 6 | 1 10 2 3 4 6 |
+| Delete 5 | |
+| Insert 10 1 | |
+| Delete 5 | |
 | end | |
 
 [/task-description]
@@ -53,196 +36,126 @@ At the end **print** the final state of the train (all the wagons separated by a
 [tests]
 [test open]
 [input]
-32 54 21 12 4 0 23
-75
-Add 10
-Add 0
-30
-10
-75
+1 2 3 4 5 5 5 6
+Delete 5
+Insert 10 1
+Delete 5
 end
 [/input]
 [output]
-72 54 21 12 4 75 23 10 0
+1 10 2 3 4 6
 [/output]
 [/test]
 [test]
 [input]
-0 0 0 10 2 4
-10
-Add 10
-10
-10
-10
-8
-6
+20 12 4 319 21 31234 2 41 23 4
+Insert 50 2
+Insert 50 5
+Delete 4
 end
 [/input]
 [output]
-10 10 10 10 10 10 10
+20 12 50 319 50 21 31234 2 41 23
 [/output]
 [/test]
 [test]
 [input]
-57 64 60 7 39
-100
-24
-79
-32
-6
-158
+429 816 83 411
+Delete 816
+Delete 83
 end
 [/input]
 [output]
-87 96 60 86 39
+429 411
 [/output]
 [/test]
 [test]
 [input]
-527 64 60 72 349
-589
-254
-791
-322
-65
-1528
+750 747 827 55
+Delete 750
+Delete 750
+Delete 83
+Delete 54
+Delete 55
 end
 [/input]
 [output]
-527 383 382 72 349
+747 827
 [/output]
 [/test]
 [test]
 [input]
-86 23 62 36 23 70 83 90
-300
-4684
-7611
-5029
-740
-6277
-8480
-1235
-349
+56 95
+Insert 198 0 
+Insert 18 2 
+Insert 178 3 
+Insert 8 1 
+Insert 25 0 
 end
 [/input]
 [output]
-86 23 62 36 23 70 83 90
+25 198 8 56 18 178 95
 [/output]
 [/test]
 [test]
 [input]
-4704 7637 5848
-10000
-Add 5755
-Add 3631
-Add 6616
-Add 260
-Add 4457
-Add 3949
-Add 8921
-Add 7992
-Add 2708
-Add 4067
+21 85 29
+Insert 275  0 
+Insert 744  2 
+Insert 73  3 
+Insert 798 1 
+Insert 248 0 
 end
 [/input]
 [output]
-4704 7637 5848 5755 3631 6616 260 4457 3949 8921 7992 2708 4067
+248 275 798 21 744 73 85 29
 [/output]
 [/test]
 [test]
 [input]
-1 2 3
-10
-Add 4
-Add 5
-Add 6
-Add 7
-Add 8
-Add 9
-Add 0
+444 868 119 891 717 755 564 52 246 876
+Delete 119
+Delete 755
+Insert 755 0
+Delete 876
+Insert 666 5
+Insert 949 6
 end
 [/input]
 [output]
-1 2 3 4 5 6 7 8 9 0
+755 444 868 891 717 666 949 564 52 246
 [/output]
 [/test]
 [test]
 [input]
-245 658 123
-1548
-Add 414
-Add 598
+67 26 161 985 709 373 830
+Delete 0
+Delete 26
+Insert 0 0
+Delete 373
+Delete 985
+Insert 666 5
+Insert 949 6
 end
 [/input]
 [output]
-245 658 123 414 598
+0 67 161 709 830
 [/output]
 [/test]
 [test]
 [input]
-10 25 35 9 5 44 15
-80
-26
-100
-200
-58
-Add 80
-Add 80
+216 467 876
+Delete 216
+Delete 876
+Insert 0 0
+Delete 373
+Delete 985
+Insert 13 0
+Insert 468 1
 end
 [/input]
 [output]
-36 25 35 67 5 44 15 80 80
-[/output]
-[/test]
-[test]
-[input]
-25 50 75 100
-100
-75
-50
-Add 0
-25
-100
-end
-[/input]
-[output]
-100 100 100 100 100
-[/output]
-[/test]
-[test]
-[input]
-2 4 8 16 32
-1000
-750
-Add 893
-990
-18
-Add 999
-254
-Add 100
-end
-[/input]
-[output]
-770 994 262 16 32 893 999 100
-[/output]
-[/test]
-[test]
-[input]
-46 28 18 8 7 158
-248
-15
-69
-Add 28
-17
-Add 148
-Add 178
-189
-22
-end
-[/input]
-[output]
-169 217 18 8 7 158 28 148 178
+13 468 0 467
 [/output]
 [/test]
 [/tests]

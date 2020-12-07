@@ -1,17 +1,6 @@
-# Problem: Train
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421823066" default /]
-[stream language="RO" videoId="428055445"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Train
-[code-task title="Train" taskId="java-fund-08-Arrays-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput requiresInput]
+# Problem: Common Elements
+[code-task title="Common Elements" taskId="java-fund-08-Arrays-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -26,114 +15,89 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given a count of wagons in a train **n**. 
+Write a program, which prints **common elements** in **two arrays**.
 
-On the next **n lines** you will receive how many people are going to get on that wagon. 
-
-At the end **print the whole train** and after that the **sum of the people in the train**.
+You have to **compare the elements** of the **second array** to the elements of the **first**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | 13 24 8 |
-| 13 | 45 |
-| 24 | |
-| 8 | |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 1 | 100 |
-| 100 | 100 |
+| Hey hello 2 4 | 4 hello |
+| 10 hey 4 hello | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3
-13
-24
-8
+Hey hello 2 4
+10 hey 4 hello
 [/input]
 [output]
-13 24 8
-45
-[/output]
-[/test]
-[test open]
-[input]
-1
-100
-[/input]
-[output]
-100
-100
+4 hello
 [/output]
 [/test]
 [test]
 [input]
-6
-3
-52
-71
-13
-65
-4
+S of t un i
+of i 10 un
 [/input]
 [output]
-3 52 71 13 65 4
-208
+of i un
 [/output]
 [/test]
 [test]
 [input]
-5
-1
-2
-3
-45
-5
+i love to code
+code i love to
 [/input]
 [output]
-1 2 3 45 5
-56
+code i love to
 [/output]
 [/test]
 [test]
 [input]
-3
--100
--200
--300
+a b c d
+a x e f
 [/input]
 [output]
--100 -200 -300
--600
+a
 [/output]
 [/test]
 [test]
 [input]
-3
-100
-1
-2
+abc def xyz kmn lop
+abc 213 xyz 5406 lop ####
 [/input]
 [output]
-100 1 2
-103
+abc xyz lop
 [/output]
 [/test]
 [test]
 [input]
-3
-1
-1
-1
+aaa bbb ccc ddd eee fff ggg
+aaa xxx yyy zzz 123 ccc ggg
 [/input]
 [output]
-1 1 1
-3
+aaa ccc ggg
+[/output]
+[/test]
+[test]
+[input]
+aaa bbb ddd eee fff ggg
+ggg
+[/input]
+[output]
+ggg
+[/output]
+[/test]
+[test]
+[input]
+111 222 333 444 555
+666 777 888 999 111
+[/input]
+[output]
+111
 [/output]
 [/test]
 [/tests]

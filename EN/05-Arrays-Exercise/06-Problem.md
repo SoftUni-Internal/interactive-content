@@ -1,6 +1,17 @@
+# Problem: Max Sequence of Equal Elements
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421821171" default /]
+[stream language="RO" videoId="428055605"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Equal Sums
-[code-task title="Equal Sums" taskId="java-fund-08-Arrays-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Max Sequence of Equal Elements
+[code-task title="Max Sequence of Equal Elements" taskId="java-fund-08-Arrays-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -15,84 +26,58 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that determines if there **exists an element in the array** such that the **sum of the elements on its left** is **equal** to **the sum of the elements on its right**.
+Write a program that **finds the longest sequence of equal elements in an array** of integers.
 
-If there are **no elements to the left / right**, their **sum is considered to be 0**.
-
-**Print** the **index** that satisfies the required condition or "no" if there is no such index.
+If **several longest sequences exist**, print the **leftmost** one.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 2 3 3 | 2 |
+| 0 1 1 5 2 2 6 3 3 | 1 1 |
 
-### Comments
-At a\[2\] -> left sum = 3, right sum = 3
-
-a\[0\] + a\[1\] = a\[3\]
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 1 1 1 2 3 1 3 3 | 1 1 1 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1 2 3 3
+0 1 1 5 2 2 6 3 3
 [/input]
 [output]
-2
+1 1
+[/output]
+[/test]
+[test open]
+[input]
+1 1 1 2 3 1 3 3
+[/input]
+[output]
+1 1 1
 [/output]
 [/test]
 [test]
 [input]
-1 2
+2 1 1 2 3 3 2 2 2 1
 [/input]
 [output]
-no
+2 2 2
 [/output]
 [/test]
 [test]
 [input]
-1
+4 4 4 4
 [/input]
 [output]
-0
+4 4 4 4
 [/output]
 [/test]
 [test]
 [input]
-1 2 3
-[/input]
-[output]
-no
-[/output]
-[/test]
-[test]
-[input]
-10 5 5 99 3 4 2 5 1 1 4
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
-1 2
-[/input]
-[output]
-no
-[/output]
-[/test]
-[test]
-[input]
-999
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-4 2 2 2 0
+1 2 3 4
 [/input]
 [output]
 1
@@ -100,50 +85,82 @@ no
 [/test]
 [test]
 [input]
-8 1 4 4 5 17
+2 1 1 2 3 3 2 2 2 1
 [/input]
 [output]
-4
+2 2 2
 [/output]
 [/test]
 [test]
 [input]
-1 2 3 4 5 6 7
+1 1 1 2 3 1 3 3
 [/input]
 [output]
-no
+1 1 1
 [/output]
 [/test]
 [test]
 [input]
-1 1 1 1 1 1 1 1 1 1 99999 10
+9 9 9 9 9 9 9 9 9
 [/input]
 [output]
-10
+9 9 9 9 9 9 9 9 9
 [/output]
 [/test]
 [test]
 [input]
-11 555 1 1 1 1 1 1 1 1 1 1 1
+1 2 3 1 1 1 1 1 1 1
 [/input]
 [output]
-1
+1 1 1 1 1 1 1
 [/output]
 [/test]
 [test]
 [input]
--5 1 1 1 1 1 1000
+1 2 2 2 1 2 2 2 3 1 1 1
 [/input]
 [output]
-6
+2 2 2
 [/output]
 [/test]
 [test]
 [input]
-1000 -5 1 1 1 1 1
+0 0 -1 -1 -1 -2 -3 -3 -4 -5
 [/input]
 [output]
-0
+-1 -1 -1
+[/output]
+[/test]
+[test]
+[input]
+1 2 2
+[/input]
+[output]
+2 2
+[/output]
+[/test]
+[test]
+[input]
+3 3 3 1
+[/input]
+[output]
+3 3 3
+[/output]
+[/test]
+[test]
+[input]
+1 1 2 2 3 3 4 4 5 5
+[/input]
+[output]
+1 1
+[/output]
+[/test]
+[test]
+[input]
+0 1 1 1 0 2 2 0 3 3 3 0 4 4 0 5 5 5
+[/input]
+[output]
+1 1 1
 [/output]
 [/test]
 [/tests]

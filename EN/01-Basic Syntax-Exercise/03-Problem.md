@@ -1,17 +1,18 @@
-# Problem: Vacation
+# Problem: Print and Sum
 
 [slide]
 # Video
 
 [vimeo-video]
-[stream language="EN" videoId="421823284" default /]
-[stream language="RO" videoId="423949657"  /]
+[stream language="EN" videoId="421822005" default /]
+[stream language="RO" videoId="423949557"  /]
 [/video-vimeo]
+
 [/slide]
 
 [slide hideTitle]
-# Problem: Vacation
-[code-task title="Vacarion" taskId="java-fund-02-Basic Syntax-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Print and Sum
+[code-task title="Print and Sum" taskId="java-fund-02-Basic Syntax-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -21,93 +22,64 @@ public class Main {
         // Write your code here
     }
 }
-
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-You are given a group of people, type of the group, on which day of the week they are going to stay. 
+Write a program to **display numbers** from given start to given end and their sum. 
 
-Calculate how much they have to pay and print that price. 
+All the numbers will be **integers**. 
 
-Use the table below. In each cell is the price for a single person. 
-
-Print: "Total price: \{price\}". 
-
-Format the price to the second decimal point.
-
-|  | **Friday** | **Saturday** | **Sunday** |
-| --- | --- | --- | --- |
-| **Students** | 8.45 | 9.80 | 10.46 |
-| **Business** | 10.90 | 15.60 | 16 |
-| **Regular** | 15 | 20 | 22.50 |
-
-There are also discounts based on some conditions:
-•	Students – if the group is bigger than or equal to 30 people reduce the total price by 15%
-•	Business – if the group is bigger than or equal to  100 people 10 of them can stay for free
-•	Regular – if the group is bigger than or equal 10 and less than or equal to 20 reduce the total price by 5% 
-
-You should reduce the prices in that EXACT order
+On the **first line** you will receive the **start** number, on the **second** the **end** number.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 40 | Total price: 800.00 |
-| Regular | |
-| Saturday | |
+| 5 | 5 6 7 8 9 10|
+| 10 | Sum: 45 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-30
-Students
-Sunday
-[/input]
-[output]
-Total price: 266.73
-[/output]
-[/test]
-[test open]
-[input]
-40
-Regular
-Saturday
-[/input]
-[output]
-Total price: 800.00
-[/output]
-[/test]
-[test]
-[input]
 5
-Students
-Friday
-[/input]
-[output]
-Total price: 42.25
-[/output]
-[/test]
-[test]
-[input]
 10
-Students
-Saturday
 [/input]
 [output]
-Total price: 98.00
+5 6 7 8 9 10
+Sum: 45
 [/output]
 [/test]
 [test]
 [input]
-30
-Students
-Friday
+0
+26
 [/input]
 [output]
-Total price: 215.47
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+Sum: 351
+[/output]
+[/test]
+[test]
+[input]
+50
+60
+[/input]
+[output]
+50 51 52 53 54 55 56 57 58 59 60
+Sum: 605
+[/output]
+[/test]
+[test]
+[input]
+24
+29
+[/input]
+[output]
+24 25 26 27 28 29
+Sum: 159
 [/output]
 [/test]
 [/tests]

@@ -1,17 +1,6 @@
-# Problem: Beer Kegs
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="425480025" default /]
-[stream language="RO" videoId="425478330"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Beer Kegs
-[code-task title="Beer Kegs" taskId="java-fund-05-Data Types-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Spice Must Flow
+[code-task title="Spice Must Flow" taskId="java-fund-05-Data Types-Exercise-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -25,103 +14,73 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **calculates the volume** of **n** beer kegs. 
+Write a program that **calculates the total amount of spice** that can be extracted from a source. 
 
-You will **receive** in total **3 * n lines**.
+The source has a **starting** yield, which indicates how much spice can be mined on the **first day**.
 
-Each **three lines** will hold information for a **single keg**. 
+After it has been mined for a day, the yield drops by 10, meaning on the **second day it’ll produce 10 less spice** than on the first, on the **third day 10 less than on the second**, and **so on** (see examples). 
 
-**First** up is the **model** of the keg, **after that** is the **radius** (a floating-point number) of the keg, and **lastly** is the **height** of the keg.
+A source is considered **profitable only while its yield is at least 100** – when less than 100 spice is expected in a day, abandon the source.
 
-Calculate the **volume** using the following formula:
+The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. Note that the workers cannot consume more spice than there is in storage. 
 
-π * r^2 * h. 
+When the operation is complete, **print on the console on two separate lines** how many **days** the mine has operated and the total **amount** of spice extracted.
 
-At the end, **print the model of the biggest keg**.
+
+### Input
+You will **receive a number**, representing the **starting** yield of the source. 
+
+### Output
+Print **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 2 | Bigger Keg |
-| Smaller Keg | |
-| 2.41 | |
-| 10 | |
-| Bigger Keg | |
-| 5.12 | |
-| 20 | |
+| 111 | 2 |
+| | 134 |
+
+**Comments** 
+- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101.
+- Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91.
+- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days.
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
+111
+[/input]
+[output]
 2
-Smaller Keg
-2.41
-10
-Bigger Keg
-5.12
-20
-[/input]
-[output]
-Bigger Keg
+134
 [/output]
 [/test]
 [test]
 [input]
-3
-Keg 1
-10
-10
-Keg 2
-20
-20
-Keg 3
-10
-30
+450
 [/input]
-[output]
-Keg 2
+[output] 
+36
+8938
 [/output]
 [/test]
 [test]
 [input]
-3
-Keg 1
-15
-15
-Keg 2
-20
-10
-Keg 3
-10
-20
+200
 [/input]
 [output]
-Keg 2
+11
+1338
 [/output]
 [/test]
 [test]
 [input]
-5
-Keg 1
-10
-10
-Keg 2
-20
-20
-Keg 3
-10
-30
-Keg 4
-213213.123
-1234124124
-Keg 5
-1236.345534
-21321124
+1234
 [/input]
-[output]
-Keg 4
+[output] 
+114
+73276
 [/output]
 [/test]
 [/tests]

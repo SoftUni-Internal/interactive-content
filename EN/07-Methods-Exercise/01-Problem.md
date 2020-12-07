@@ -1,17 +1,6 @@
-# Problem: Smallest of Three Numbers
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421822503" default /]
-[stream language="RO" videoId="430366304"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Smallest of Three Numbers
-[code-task title="Smallest of Three Numbers" taskId="java-fund-11-Methods-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Vowels Count
+[code-task title="Vowels Count" taskId="java-fund-11-Methods-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -25,105 +14,77 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method to **print the smallest of three integer numbers**.
+Write a method that receives a **single string** and **prints the count of the vowels**.
 
-Use an appropriate name for the method.
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 2 | 2 |
-| 5 | |
-| 3 | |
+Use appropriate name for the method.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 25 | -21 |
-| -21 | |
-| 4 | |
+| SoftUni | 3 |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| Cats | 1 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-5
-3
+SoftUni
 [/input]
 [output]
-2
+3
 [/output]
 [/test]
 [test open]
 [input]
-25
--21
-4
+Cats
 [/input]
 [output]
--21
-[/output]
-[/test]
-[test]
-[input]
-600
-600
-123
-[/input]
-[output]
-123
-[/output]
-[/test]
-[test]
-[input]
--5
--10
--100
-[/input]
-[output]
--100
-[/output]
-[/test]
-[test]
-[input]
--1
-0
 1
-[/input]
-[output]
--1
 [/output]
 [/test]
 [test]
 [input]
--12345
+JS
+[/input]
+[output]
 0
-12312
-[/input]
-[output]
--12345
 [/output]
 [/test]
 [test]
 [input]
-5
-5
-5
+SOFTuNI
 [/input]
 [output]
-5
+3
 [/output]
 [/test]
 [test]
 [input]
--5
-5
--5
+Welcome tO SoftwarE
 [/input]
 [output]
--5
+7
+[/output]
+[/test]
+[test]
+[input]
+beer
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non.
+[/input]
+[output]
+22
 [/output]
 [/test]
 [/tests]

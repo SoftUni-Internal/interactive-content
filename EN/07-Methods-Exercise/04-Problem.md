@@ -1,6 +1,17 @@
+# Problem: Add and Subtract
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421818762" default /]
+[stream language="RO" videoId="430366408"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Password Validator
-[code-task title="Password Validator" taskId="java-fund-11-Methods-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Add and Subtract
+[code-task title="Add and Subtract" taskId="java-fund-11-Methods-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -14,111 +25,155 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that checks if a given password is **valid**. 
+You will receive 3 integers.
 
-Password **rules** are:
-- **6 - 10 characters** (inclusive)
-- Consists **only** of **letters and digits**
-- Have **at least 2 digits** 
-If a password is **valid** print "Password is valid". 
-
-If it is **not valid**, for every unfulfilled rule **print a message**:
-- "Password must be between 6 and 10 characters"
-- "Password must consist only of letters and digits"
-- "Password must have at least 2 digits"
-
-### Hint
-Write a method for each rule.
+Write a method sum to get the sum of the first two integers and subtract method that subtracts the third integer from the result from the Sum method.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| logIn | Password must be between 6 and 10 characters |
-| | Password must have at least 2 digits |
+| 23 | 19 |
+| 6 | |
+| 10 | |
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| MyPass123 | Password is valid |
+| 1 | -12 |
+| 17 | |
+| 30 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-logIn
+23
+6
+10
 [/input]
 [output]
-Password must be between 6 and 10 characters
-Password must have at least 2 digits
+19
 [/output]
 [/test]
 [test open]
 [input]
-MyPass123
+1
+17
+30
 [/input]
 [output]
-Password is valid
+-12
 [/output]
 [/test]
 [test]
 [input]
-Pa$s$s
+42
+58
+100
 [/input]
 [output]
-Password must consist only of letters and digits
-Password must have at least 2 digits
+0
 [/output]
 [/test]
 [test]
 [input]
-Acer
+20
+30
+50
 [/input]
 [output]
-Password must be between 6 and 10 characters
-Password must have at least 2 digits
+0
 [/output]
 [/test]
 [test]
 [input]
-Picture
+4321
+33
+231
 [/input]
 [output]
-Password must have at least 2 digits
+4123
 [/output]
 [/test]
 [test]
 [input]
-pesho123\#
+162
+33
+-23
 [/input]
 [output]
-Password must consist only of letters and digits
+218
 [/output]
 [/test]
 [test]
 [input]
-gas%2
+16235
+1233
+-223
 [/input]
 [output]
-Password must be between 6 and 10 characters
-Password must consist only of letters and digits
-Password must have at least 2 digits
+17691
 [/output]
 [/test]
 [test]
 [input]
-Pesho189
+20
+20
+10
 [/input]
 [output]
-Password is valid
+30
 [/output]
 [/test]
 [test]
 [input]
-SoftUni40
+123
+321
+231
 [/input]
 [output]
-Password is valid
+213
+[/output]
+[/test]
+[test]
+[input]
+-547
+247
+100
+[/input]
+[output]
+-400
+[/output]
+[/test]
+[test]
+[input]
+-5
+-5
+1
+[/input]
+[output]
+-11
+[/output]
+[/test]
+[test]
+[input]
+3828
+9348
+12334
+[/input]
+[output]
+842
+[/output]
+[/test]
+[test]
+[input]
+-21
+79
+-2
+[/input]
+[output]
+60
 [/output]
 [/test]
 [/tests]

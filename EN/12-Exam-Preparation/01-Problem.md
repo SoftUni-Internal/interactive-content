@@ -1,17 +1,17 @@
-# National Court
+# Shopping List
 
 [slide]
 # Video
 
 [vimeo-video]
-[stream language="EN" videoId="434990192" default /]
-[stream language="RO" videoId="433962147"  /]
+[stream language="EN" videoId="434990022" default /]
+[stream language="RO" videoId="433962297"  /]
 [/video-vimeo]
 [/slide]
 
 [slide hideTitle]
-# National Court
-[code-task title="National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Shopping List
+[code-task title="Shopping List" taskId="java-fund-18-Exam-Preparation-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -25,209 +25,189 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-There are **3 employees working** on the reception all day long.
+You will receive an **initial list with groceries separated by** "!".
 
-Each of them can handle **different number of people per hour**.
+After that you will be receiving **4 types of commands, until you receive** "Go Shopping!"
+- Urgent \{item\} - **add the item at the start** of the list. 
+    - If the item **already exists, skip this command**.
+- Unnecessary \{item\} - **remove the item with the given name**. 
+    - **Only if it exists in the list**. **Otherwise skip** this command.
+- Correct \{oldItem\} \{newItem\} - **if the item with the given old name exists**, **change its name** with the new one. 
+    - If it **doesn't exist, skip** this command.
+- Rearrange \{item\} - if the grocery **exists in the list**, **remove it from its current** position and **add it at the end of the list**.
 
-Your task is to **calculate how much time it will take to answer all the questions** of a given number of people.
-
-First you will receive **3 lines with integers**, representing the **count of people that each of the employee can help per hou**r. 
-
-On the **next line you will receive the total people** count as a single integer. 
-
-**Every fourth hour all the employees have a one-hour break** before they start working again. 
-
-**Calculate the time needed to answer all people's questions** and **print it in the following format**: "Time needed: \{time\}h."
-
-### Input / Constraints
-- On first 3 lines -  each employee's **efficiency** - an **integer**
-- On the 4th line - people **count** - an **integer**
+### Constraints
+- There won't be any duplicate items in the initial list
 
 ### Output
-- Print a **single line**: 
-    - "Time needed: \{time\}h."
+**Print the list with all the groceries, joined by** ", ".
+- "\{firstGrocery\}, \{secondGrocery\}, … \{nthGrocery\}"
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Time needed: 2h. |
-| 6 | |
-| 4 | |
-| 20 | |
-
-### Comment
-- All employees can answer 15 people per hour.
-- After the first hour there are 5 people left to be answered.
-- All people will be answered in the second hour.
+| Tomatoes!Potatoes!Bread | Tomatoes, Potatoes, Bread |
+| Unnecessary Milk | |
+| Urgent Tomatoes | |
+| Go Shopping! | |
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 | Time needed: 10h. |
-| 2 | |
-| 3 | |
-|45 | |
-
-### Comment
-- All employess can answer 6 people per hour. 
-- In the first 3 hours they have answered 6 \* 3 = 18 people. 
-- Then they have a break for an hour.
-- After the next 3 hours there are 18 + 6 \* 3 = 36 answered people. 
-- After the break for an hour, there are only 9 people to answer.
-- 10th hour - all of the people questions would be answered.
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 3 | Time needed: 5h. |
-| 2 | |
-| 5 | |
-| 40 | |
+| Milk!Pepper!Salt!Water!Banana | Milk, Onion, Salt, Water, Banana |
+| Urgent Salt | |
+| Unnecessary Grapes  | |
+| Correct Pepper Onion | |
+| Rearrange Grapes | |
+| Correct Tomatoes Potatoes | |
+| Go Shopping! | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-5
-6
-4
-20
+Tomatoes!Potatoes!Bread
+Unnecessary Milk
+Urgent Tomatoes
+Go Shopping!
 [/input]
 [output]
-Time needed: 2h.
+Tomatoes, Potatoes, Bread
 [/output]
 [/test]
 [test open]
 [input]
-1
-2
-3
-45
+Milk!Pepper!Salt!Water!Banana
+Urgent Salt
+Unnecessary Grapes 
+Correct Pepper Onion
+Rearrange Grapes
+Correct Tomatoes Potatoes
+Go Shopping!
 [/input]
 [output]
-Time needed: 10h.
-[/output]
-[/test]
-[test open]
-[input]
-3
-2
-5
-40
-[/input]
-[output]
-Time needed: 5h.
+Milk, Onion, Salt, Water, Banana
 [/output]
 [/test]
 [test]
 [input]
-1
-2
-3
-45
+Dustin!William
+Urgent Jon
+Go Shopping!
 [/input]
 [output]
-Time needed: 10h.
+Jon, Dustin, William
 [/output]
 [/test]
 [test]
 [input]
-1
-2
-3
-100
+Mark!Dustin!William
+Urgent George
+Go Shopping!
 [/input]
 [output]
-Time needed: 22h.
+George, Mark, Dustin, William
 [/output]
 [/test]
 [test]
 [input]
-20
-40
-40
-900
+Mark!Dustin!William
+Unnecessary George
+Unnecessary William
+Go Shopping!
 [/input]
 [output]
-Time needed: 11h.
+Mark, Dustin
 [/output]
 [/test]
 [test]
 [input]
-3
-2
-5
-40
+Mark!Dustin!William
+Urgent George
+Urgent Dustin
+Go Shopping!
 [/input]
 [output]
-Time needed: 5h.
+George, Mark, Dustin, William
 [/output]
 [/test]
 [test]
 [input]
-1
-1
-1
-4519
+George!Mark!Dustin!Aaron!Will
+Correct Will William
+Go Shopping!
 [/input]
 [output]
-Time needed: 2009h.
+George, Mark, Dustin, Aaron, William
 [/output]
 [/test]
 [test]
 [input]
-1
-1
-1
-30
+Joshua!Aaron!Walt!Dustin!William
+Correct George Dustin
+Correct Walt Will
+Go Shopping!
 [/input]
 [output]
-Time needed: 13h.
+Joshua, Aaron, Will, Dustin, William
 [/output]
 [/test]
 [test]
 [input]
-2
-4
-4
-70
+Joshua!Aaron!Walt!Dustin!William
+Rearrange Aaron
+Rearrange Joshua
+Go Shopping!
 [/input]
 [output]
-Time needed: 9h.
+Walt, Dustin, William, Aaron, Joshua
 [/output]
 [/test]
 [test]
 [input]
-2
-4
-4
-500
+Joshua!Aaron!Walt!Dustin!William
+Rearrange Aaron
+Rearrange Peter
+Rearrange Dustin
+Go Shopping!
 [/input]
 [output]
-Time needed: 66h.
+Joshua, Walt, William, Aaron, Dustin
 [/output]
 [/test]
 [test]
 [input]
-3
-3
-3
-27
+Joshua!Aaron!Walt!Dustin!William
+Unnecessary Aaron
+Urgent Jon
+Unnecessary Walt
+Urgent Kiro
+Correct Kiro Kiril
+Rearrange Kiril
+Go Shopping!
 [/input]
 [output]
-Time needed: 3h.
+Jon, Joshua, Dustin, William, Kiril
 [/output]
 [/test]
 [test]
 [input]
-3
-3
-3
-0
+Joshua!Aaron!Walt!Dustin!William
+Unnecessary Aaron
+Unnecessary Marcus
+Urgent Jon
+Urgent Walt
+Unnecessary Walt
+Urgent Kiro
+Correct Kiro Kiril
+Correct Kiro Kircata
+Rearrange Kiril
+Rearrange Oliver
+Go Shopping!
 [/input]
 [output]
-Time needed: 0h.
+Jon, Joshua, Dustin, William, Kiril
 [/output]
 [/test]
 [/tests]

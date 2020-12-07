@@ -1,6 +1,17 @@
+# Problem: House Party
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421820479" default /]
+[stream language="RO" videoId="432473385"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Change List
-[code-task title="Change List" taskId="java-fund-14-Lists-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: House Party
+[code-task title="House Party" taskId="java-fund-14-Lists-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -15,147 +26,219 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which **reads a list of integers** from the console and receives **commands**, which **manipulate the list**.
+Write a program that keeps track of the guests that are going to a house party.
 
-Your program may receive the following **commands**: 
-•	**Delete** \{element\} – delete all elements in the array, which are equal to the given element
-•	**Insert** \{element\} \{position\} – insert element and the given position
-You should **stop the program** when you receive the command "end". Print all numbers in the array **separated with single whitespace**.
+On the first input line you are going to **receive how many commands** you are going to have.
+
+On the next lines you are going to receive some of the following inputs: 
+-	"\{name\} is going!"
+-	"\{name\} is not going!"
+
+If you receive the **first** type of input, you have to **add the person if he/she is not in the list**. 
+
+If **he/she is in the list print** on the console: 
+- "\{name\} is already in the list!" 
+
+If you receive the second type of input, you have to remove the person if he/she is in the list. 
+
+If not print: 
+- "\{name\} is not in the list!"
+
+**At the end print all the guests. Each on a new line.**
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 1 2 3 4 5 5 5 6 | 1 10 2 3 4 6 |
-| Delete 5 | |
-| Insert 10 1 | |
-| Delete 5 | |
-| end | |
+| 4 | John is not in the list! |
+| Allie is going! | Allie |
+| George is going! | |
+| John is not going! | |
+| George is not going! | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1 2 3 4 5 5 5 6
-Delete 5
-Insert 10 1
-Delete 5
-end
+4
+Allie is going!
+George is going!
+John is not going!
+George is not going!
 [/input]
 [output]
-1 10 2 3 4 6
+John is not in the list!
+Allie
+
 [/output]
 [/test]
 [test]
 [input]
-20 12 4 319 21 31234 2 41 23 4
-Insert 50 2
-Insert 50 5
-Delete 4
-end
+5
+Tom is going!
+Annie is going!
+Tom is going!
+Garry is going!
+Jerry is going!
 [/input]
 [output]
-20 12 50 319 50 21 31234 2 41 23
+Tom is already in the list!
+Tom
+Annie
+Garry
+Jerry
 [/output]
 [/test]
 [test]
 [input]
-429 816 83 411
-Delete 816
-Delete 83
-end
+5
+Denny is going!
+Annie is going!
+Gregory is going!
+Jack is going!
+Sam is going!
 [/input]
 [output]
-429 411
+Denny
+Annie
+Gregory
+Jack
+Sam
 [/output]
 [/test]
 [test]
 [input]
-750 747 827 55
-Delete 750
-Delete 750
-Delete 83
-Delete 54
-Delete 55
-end
+7
+Denny is going!
+Sofiya is going!
+Rosica is going!
+Ivica is going!
+Kveta is going!
+Giosetta is going!
+Chip is going!
 [/input]
 [output]
-747 827
+Denny
+Sofiya
+Rosica
+Ivica
+Kveta
+Giosetta
+Chip
 [/output]
 [/test]
 [test]
 [input]
-56 95
-Insert 198 0 
-Insert 18 2 
-Insert 178 3 
-Insert 8 1 
-Insert 25 0 
-end
+8
+Adriana is going!
+Posie is going!
+Eldon is going!
+Posie is going!
+Jack is going!
+Adriana is going!
+Nataly is going!
+Jack is going!
 [/input]
 [output]
-25 198 8 56 18 178 95
+Posie is already in the list!
+Adriana is already in the list!
+Jack is already in the list!
+Adriana
+Posie
+Eldon
+Jack
+Nataly
 [/output]
 [/test]
 [test]
 [input]
-21 85 29
-Insert 275  0 
-Insert 744  2 
-Insert 73  3 
-Insert 798 1 
-Insert 248 0 
-end
+5
+Adriana is going!
+Posie is going!
+Eldon is going!
+Adriana is not going!
+Posie is not going!
 [/input]
 [output]
-248 275 798 21 744 73 85 29
+Eldon
 [/output]
 [/test]
 [test]
 [input]
-444 868 119 891 717 755 564 52 246 876
-Delete 119
-Delete 755
-Insert 755 0
-Delete 876
-Insert 666 5
-Insert 949 6
-end
+5
+Adriana is not going!
+Posie is not going!
+Posie is not going!
+Jack is not going!
+Jack is going!
 [/input]
 [output]
-755 444 868 891 717 666 949 564 52 246
+Adriana is not in the list!
+Posie is not in the list!
+Posie is not in the list!
+Jack is not in the list!
+Jack
 [/output]
 [/test]
 [test]
 [input]
-67 26 161 985 709 373 830
-Delete 0
-Delete 26
-Insert 0 0
-Delete 373
-Delete 985
-Insert 666 5
-Insert 949 6
-end
+7
+Adriana is going!
+Nataly is going!
+Posie is not going!
+Nataly is going!
+Jack is not going!
+Nataly is not going!
+Jack is going!
 [/input]
 [output]
-0 67 161 709 830
+Posie is not in the list!
+Nataly is already in the list!
+Jack is not in the list!
+Adriana
+Jack
 [/output]
 [/test]
 [test]
 [input]
-216 467 876
-Delete 216
-Delete 876
-Insert 0 0
-Delete 373
-Delete 985
-Insert 13 0
-Insert 468 1
-end
+9
+Nataly is going!
+Nataly is going!
+Nataly is going!
+Posie is not going!
+Ivan is going!
+Jack is not going!
+Nata is not going!
+Jack is going!
+Pesho is going!
 [/input]
 [output]
-13 468 0 467
+Nataly is already in the list!
+Nataly is already in the list!
+Posie is not in the list!
+Jack is not in the list!
+Nata is not in the list!
+Nataly
+Ivan
+Jack
+Pesho
+[/output]
+[/test]
+[test]
+[input]
+5
+Misho is going!
+Pesho is going!
+Pesho is going!
+Adriana is not going!
+Adriana is going!
+[/input]
+[output]
+Pesho is already in the list!
+Adriana is not in the list!
+Misho
+Pesho
+Adriana
 [/output]
 [/test]
 [/tests]

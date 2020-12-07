@@ -1,6 +1,17 @@
+# Problem: Zig-Zag Arrays
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421823768" default /]
+[stream language="RO" videoId="428055481"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Common Elements
-[code-task title="Common Elements" taskId="java-fund-08-Arrays-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Zig-Zag Arrays
+[code-task title="Zig-Zag Arrays" taskId="java-fund-08-Arrays-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -15,89 +26,107 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which prints **common elements** in **two arrays**.
+Write a program which creates **2 arrays**.
 
-You have to **compare the elements** of the **second array** to the elements of the **first**.
+You will be given an **integer n**.
+
+On the **next n lines** you get **2 integers**.
+
+Form 2 arrays as **shown below**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| Hey hello 2 4 | 4 hello |
-| 10 hey 4 hello | |
+| 2 | 80 19 |
+| 80 23 | 23 31 |
+| 31 19 | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Hey hello 2 4
-10 hey 4 hello
+2
+80 23
+31 19
 [/input]
 [output]
-4 hello
+80 19
+23 31
 [/output]
 [/test]
 [test]
 [input]
-S of t un i
-of i 10 un
+4
+1 5
+9 10
+31 81
+41 20
 [/input]
 [output]
-of i un
+1 10 31 20
+5 9 81 41
 [/output]
 [/test]
 [test]
 [input]
-i love to code
-code i love to
+3
+1 2
+3 4
+5 6
 [/input]
 [output]
-code i love to
+1 4 5
+2 3 6
 [/output]
 [/test]
 [test]
 [input]
-a b c d
-a x e f
+4
+1 2
+3 4
+5 6
+7 8
 [/input]
 [output]
-a
+1 4 5 8
+2 3 6 7
 [/output]
 [/test]
 [test]
 [input]
-abc def xyz kmn lop
-abc 213 xyz 5406 lop ####
+1
+1 2
 [/input]
 [output]
-abc xyz lop
+1
+2
 [/output]
 [/test]
 [test]
 [input]
-aaa bbb ccc ddd eee fff ggg
-aaa xxx yyy zzz 123 ccc ggg
+3
+1 2
+3 2
+4 2
 [/input]
 [output]
-aaa ccc ggg
+1 2 4
+2 3 2
 [/output]
 [/test]
 [test]
 [input]
-aaa bbb ddd eee fff ggg
-ggg
+5
+0 0
+1 1
+2 2
+3 3
+4 4
 [/input]
 [output]
-ggg
-[/output]
-[/test]
-[test]
-[input]
-111 222 333 444 555
-666 777 888 999 111
-[/input]
-[output]
-111
+0 1 2 3 4
+0 1 2 3 4
 [/output]
 [/test]
 [/tests]

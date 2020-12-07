@@ -1,17 +1,6 @@
-# Problem: House Party
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421820479" default /]
-[stream language="RO" videoId="432473385"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: House Party
-[code-task title="House Party" taskId="java-fund-14-Lists-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: List Operations
+[code-task title="List Operations" taskId="java-fund-14-Lists-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -26,219 +15,238 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that keeps track of the guests that are going to a house party.
+You will be given a list of **integer** numbers on the first input line.
 
-On the first input line you are going to **receive how many commands** you are going to have.
+Until you receive "End" you will be given **operations** you have to apply on the list.
 
-On the next lines you are going to receive some of the following inputs: 
--	"\{name\} is going!"
--	"\{name\} is not going!"
+The **possible commands** are:
+- **Add** \{number\} – add number at the end
+- **Insert** \{number\} \{index\}” – insert number at given index
+- **Remove** \{index\} – remove at index
+- **Shift left** \{count\} – first number becomes last 'count' times
+- **Shift right** \{count\} – last number becomes first 'count' times
 
-If you receive the **first** type of input, you have to **add the person if he/she is not in the list**. 
-
-If **he/she is in the list print** on the console: 
-- "\{name\} is already in the list!" 
-
-If you receive the second type of input, you have to remove the person if he/she is in the list. 
-
-If not print: 
-- "\{name\} is not in the list!"
-
-**At the end print all the guests. Each on a new line.**
+**Note**: it is possible that the index given is outside of the bounds of the array. In that case print "Invalid index"
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 | John is not in the list! |
-| Allie is going! | Allie |
-| George is going! | |
-| John is not going! | |
-| George is not going! | |
+| 1 23 29 18 43 21 20  | 43 20 5 1 23 29 18 |
+| Add 5 |  |
+| Remove 5 | |
+| Shift left 3 | |
+| Shift left 1 | |
+| End | |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-4
-Allie is going!
-George is going!
-John is not going!
-George is not going!
+1 23 29 18 43 21 20 
+Add 5
+Remove 5
+Shift left 3
+Shift left 1
+End
 [/input]
 [output]
-John is not in the list!
-Allie
-
+43 20 5 1 23 29 18
 [/output]
 [/test]
 [test]
 [input]
-5
-Tom is going!
-Annie is going!
-Tom is going!
-Garry is going!
-Jerry is going!
+5 12 42 95 32 1
+Insert 3 0
+Remove 10
+Insert 8 6
+Shift right 1
+Shift left 2
+End
 [/input]
 [output]
-Tom is already in the list!
-Tom
-Annie
-Garry
-Jerry
+Invalid index
+5 12 42 95 32 8 1 3
 [/output]
 [/test]
 [test]
 [input]
-5
-Denny is going!
-Annie is going!
-Gregory is going!
-Jack is going!
-Sam is going!
+73 57 29
+Add 15
+Add 58
+Add 17
+Add 97
+End
 [/input]
 [output]
-Denny
-Annie
-Gregory
-Jack
-Sam
+73 57 29 15 58 17 97
 [/output]
 [/test]
 [test]
 [input]
-7
-Denny is going!
-Sofiya is going!
-Rosica is going!
-Ivica is going!
-Kveta is going!
-Giosetta is going!
-Chip is going!
+39 54 66
+Add 1500
+Add 59588
+Add 1718
+Add 9227
+End
 [/input]
 [output]
-Denny
-Sofiya
-Rosica
-Ivica
-Kveta
-Giosetta
-Chip
+39 54 66 1500 59588 1718 9227
 [/output]
 [/test]
 [test]
 [input]
-8
-Adriana is going!
-Posie is going!
-Eldon is going!
-Posie is going!
-Jack is going!
-Adriana is going!
-Nataly is going!
-Jack is going!
+39 54 66
+Insert 1500 1
+Insert 59588 0
+Insert 1718 4
+Insert 9227 2
+End
 [/input]
 [output]
-Posie is already in the list!
-Adriana is already in the list!
-Jack is already in the list!
-Adriana
-Posie
-Eldon
-Jack
-Nataly
+59588 39 9227 1500 54 1718 66
 [/output]
 [/test]
 [test]
 [input]
-5
-Adriana is going!
-Posie is going!
-Eldon is going!
-Adriana is not going!
-Posie is not going!
+25 87
+Insert 23 1
+Insert 1 0
+Insert 22 3
+Insert 0 2
+Insert 80 2
+Insert 15 2
+Insert 52 2
+Insert 16 2
+End
 [/input]
 [output]
-Eldon
+1 25 16 52 15 80 0 23 22 87
 [/output]
 [/test]
 [test]
 [input]
-5
-Adriana is not going!
-Posie is not going!
-Posie is not going!
-Jack is not going!
-Jack is going!
+90 29 49 20 0 84 64 62 50 2
+Remove 0
+Remove 5
+Remove 4
+Remove 6
+Remove 0
+Remove 1
+Remove 3
+Remove 1
+End
 [/input]
 [output]
-Adriana is not in the list!
-Posie is not in the list!
-Posie is not in the list!
-Jack is not in the list!
-Jack
+49 62
 [/output]
 [/test]
 [test]
 [input]
-7
-Adriana is going!
-Nataly is going!
-Posie is not going!
-Nataly is going!
-Jack is not going!
-Nataly is not going!
-Jack is going!
+91 33 11 34 20 23 47 70 53 19 31 25 20 12 50 39 86 94 98 97 30 46 84 79 95 45 89 29 34 4 43 1 81 81 31 18 11 81 52 90 24 92 36 97 6 26 57 74 18 0
+Remove 0
+Remove 25
+Remove 34
+Remove 16
+Remove 10
+Remove 11
+Remove 13
+Remove 24
+End
 [/input]
 [output]
-Posie is not in the list!
-Nataly is already in the list!
-Jack is not in the list!
-Adriana
-Jack
+33 11 34 20 23 47 70 53 19 31 20 50 39 98 97 30 46 84 79 95 45 29 34 4 1 81 81 31 18 81 52 90 24 92 36 97 6 26 57 74 18 0
 [/output]
 [/test]
 [test]
 [input]
-9
-Nataly is going!
-Nataly is going!
-Nataly is going!
-Posie is not going!
-Ivan is going!
-Jack is not going!
-Nata is not going!
-Jack is going!
-Pesho is going!
+67 50 97 67 29
+Shift left 5
+Shift left 5
+Shift left 5
+End
 [/input]
 [output]
-Nataly is already in the list!
-Nataly is already in the list!
-Posie is not in the list!
-Jack is not in the list!
-Nata is not in the list!
-Nataly
-Ivan
-Jack
-Pesho
+67 50 97 67 29
 [/output]
 [/test]
 [test]
 [input]
-5
-Misho is going!
-Pesho is going!
-Pesho is going!
-Adriana is not going!
-Adriana is going!
+58 27 8 43 72
+Shift left 2
+Shift left 7
+Shift left 20
+End
 [/input]
 [output]
-Pesho is already in the list!
-Adriana is not in the list!
-Misho
-Pesho
-Adriana
+72 58 27 8 43
+[/output]
+[/test]
+[test]
+[input]
+58 27 8 43 72
+Shift right 2
+Shift right 7
+Shift right 20
+End
+[/input]
+[output]
+27 8 43 72 58
+[/output]
+[/test]
+[test]
+[input]
+13 764 666 89 27 24
+Shift right 3
+Shift right 17
+Shift right 7
+Shift right 8
+End
+[/input]
+[output]
+764 666 89 27 24 13
+[/output]
+[/test]
+[test]
+[input]
+58 27
+Add 24
+Insert 89 1
+Insert 666 1
+Add 764
+Remove 0
+Remove 185
+Insert 13 4
+Remove -9
+Insert 245 -54
+Shift left 17
+Shift right 7
+End
+[/input]
+[output]
+Invalid index
+Invalid index
+Invalid index
+13 764 666 89 27 24
+[/output]
+[/test]
+[test]
+[input]
+58 27 8 43 72
+Add 24
+Remove 3
+Remove 27
+Insert 13 4
+Insert 9999 -54
+Shift right 20
+Shift left 3
+End
+[/input]
+[output]
+Invalid index
+Invalid index
+27 8 72 13 24 58
 [/output]
 [/test]
 [/tests]

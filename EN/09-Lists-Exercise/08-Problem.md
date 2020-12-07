@@ -1,17 +1,6 @@
-# Problem: Pokemon Don't Go
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421821869" default /]
-[stream language="RO" videoId="432473432"  /]
-[/video-vimeo]
-[/slide]
-
 [slide hideTitle]
-# Problem: Pokemon Don't Go
-[code-task title="Pokemon Don't Go" taskId="java-fund-14-Lists-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: SoftUni Course Planning
+[code-task title="SoftUni Course Planning" taskId="java-fund-14-Lists-Exercise-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -26,272 +15,216 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-In Pokemon Don’t Go, when you walk to a certain pokemon, those closer to you, naturally get further, and those further from you, get closer.
+You are tasked to help planning the next Programing Fundamentals course by keeping track of the lessons, that are going to be included in the course, as well as all the exercises for the lessons.
 
-You will **receive a sequence of integers, separated by spaces** – the **distances** to the pokemons.
+On the first input line you will receive the initial schedule of lessons and exercises that are going to be part of the next course, separated by comma and space ", ". 
 
-Then you will **begin receiving integers**, which will correspond to **indexes** in that sequence.
+But before the course starts, there are some changes to be made. 
 
-**When you receive an index**, you must **remove the element at that index** from the sequence (as if you’ve captured the pokemon).
-- You must INCREASE the value of all elements in the sequence which are **LESS or EQUAL to the removed element**, with the **value** **of the removed element**.
-- You must DECREASE the value of all elements in the sequence which are **GREATER than the removed element**, with the **value of the removed element**.
+Until you receive "course start" you will be given some **commands to modify the course schedule**. 
 
-If the given index is **LESS than 0**, **remove the first element of the sequence**, and **COPY the last element to its place**.
+The **possible commands** are: 
+- Add:\{lessonTitle\} – **add the lesson to the end** of the schedule, if it **does not exist**.
+- Insert:\{lessonTitle\}:\{index\} – **insert** the lesson to the **given index**, if it **does not exist**.
+- Remove:\{lessonTitle\} – **remove the lesson**, if it **exists**.
+- Swap:\{lessonTitle\}:\{lessonTitle\} – **change the place** of the two lessons, **if they exist**.
+- Exercise:\{lessonTitle\} – **add Exercise in the schedule right after the lesson index**, if the lesson exists and there is no exercise already, in the following format: "- - - \{lessonTitle\}-Exercise". 
+    - If the **lesson doesn't exist**, **add** the lesson **in the end** of the course schedule, **followed by the exercise**.
 
-If the given index is **GREATER than the last index of the sequence**, **remove the last element from the sequence**, and **COPY the first element to its place**.
-
-The increasing and decreasing of elements should be done in these cases, also. The element, whose value you should use is the **REMOVED element**.
-
-The **program ends** when the sequence has **no elements**.
-
-### Input
-- On the first line of input you will receive a sequence of integers, separated by spaces.
-- On the next several lines you will receive integers – the indexes.
-
-### Output
-- When the program ends, you must print on the console, the summed up value of all REMOVED elements.
+Each time you **Swap or Remove a lesson,** you should **do the same with the exercises**, if there are any, which follow the lessons.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 5 3 | 14 |
-| 1 | |
-| 1 | |
-| 0 | |
+| Data Types, Objects, Lists | 1.Arrays |
+| Add:Databases | 2.Data Types |
+| Insert:Arrays:0 | 3.Objects |
+| Remove:Lists | 4.Databases |
+| course start | |
 
 **Comments:**
-- The array is \{4, 5, 3\}. The index is 1.
-- We remove 5, and we increase all lower than it and decrease all higher than it.
-- In this case there are no higher than 5.
-- The result is \{9, 8\}.
-- The index is 1. So we remove 8, and decrease all higher than it. 
-- The result is \{1\}. 
-- The index is 0. So we remove 1. 
-- There are no elements left, so we print the sum of all removed elements. 
-- 5 + 8 + 1 = 14.
+- We receive the initial schedule. 
+- Next, we add Databases lesson, because it doesn`t exist. 
+- We Insert at the given index lesson Arrays, because its not present in the schedule. 
+- After receiving the last command and removing lesson Lists, we print the whole schedule.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 10 6 3 5 | 31 |
-| 4 | |
-| 1 | |
-| 1 | |
-| 3 | |
-| 0 | |
-| 0 | |
+| Arrays, Lists, Methods | 1.Methods |
+| Swap:Arrays:Methods | 2.Databases |
+| Exercise:Databases | 3.Databases-Exercise |
+| Swap:Lists:Databases | 4.Arrays |
+| Insert:Arrays:0 | 5.Lists |
+| course start | |
 
 **Comments:**
-- Step 1: \{11, 4, 9, 11\}
-- Step 2: \{22, 15, 20, 22\}
-- Step 3: \{7, 5, 7\}
-- Step 4: \{2, 2\}
-- Step 5: \{4, 4\}
-- Step 6: \{8\}
-- Step 7: \{\} (empty).
-- Result = 6 + 11 + 15 + 5 + 2 + 4 + 8 = 51.
+- We swap the given lessons, because both exist.
+- After receiving the Exercise command, we see that such lesson doesn`t exist, so we add the lesson at the end, followed by the exercise.
+- We swap Lists and Databases lessons, the
+- Databases-Exercise is also moved after the Databases lesson.
+- We skip the next command, because we already have such lesson in our schedule.
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-4 5 3
-1
-1
-0
-
+Data Types, Objects, Lists
+Add:Databases
+Insert:Arrays:0
+Remove:Lists
+course start
 [/input]
 [output]
-14
-
+1.Arrays
+2.Data Types
+3.Objects
+4.Databases
 [/output]
 [/test]
 [test open]
 [input]
-5 10 6 3 5
-2
-4
-1
-1
-3
-0
-0
-
+Arrays, Lists, Methods
+Swap:Arrays:Methods
+Exercise:Databases
+Swap:Lists:Databases
+Insert:Arrays:0
+course start
 [/input]
 [output]
-51
-
+1.Methods
+2.Databases
+3.Databases-Exercise
+4.Arrays
+5.Lists
 [/output]
 [/test]
 [test]
 [input]
-1 2 3 4 5
-2
-0
-2
-1
-0
-
+aa, bb, cc
+Add:dd
+course start
 [/input]
 [output]
-42
-
+1.aa
+2.bb
+3.cc
+4.dd
 [/output]
 [/test]
 [test]
 [input]
-10 5 2 3 104 4 30 2 1
-4
-5
-0
-0
-2
-1
-1
-0
-0
-
+aa, dd, cc
+Add:bb
+course start
 [/input]
 [output]
-31365
-
+1.aa
+2.dd
+3.cc
+4.bb
 [/output]
 [/test]
 [test]
 [input]
-1 1 1 1 1
-4
-3
-2
-1
-0
+aa, bb, cc
+Insert:dd:2
+course start
 [/input]
 [output]
-31
-
+1.aa
+2.bb
+3.dd
+4.cc
 [/output]
 [/test]
 [test]
 [input]
-4 8 15 16 23 42
-0
-1
-3
-1
-0
-0
-
+aa, bb, cc
+Remove:bb
+course start
 [/input]
 [output]
-105
-
+1.aa
+2.cc
 [/output]
 [/test]
 [test]
 [input]
-124 56 93 20 31 40 59 2 11 3 11
-10
-3
-2
-0
-5
-1
-2
-1
-0
-0
-0
-
+aa, bb, cc
+Remove:cc
+course start
 [/input]
 [output]
-995
-
+1.aa
+2.bb
 [/output]
 [/test]
 [test]
 [input]
-1 2 3 4 3 2 1
-3
-2
-2
-1
-1
-0
-0
-
+aa, bb, cc
+Exercise:bb
+course start
 [/input]
 [output]
-427
-
+1.aa
+2.bb
+3.bb-Exercise
+4.cc
 [/output]
 [/test]
 [test]
 [input]
-102 31 24 54
-3
-10
-0
--1
-0
-0
-
+aa, bb, cc
+Exercise:cc
+Exercise:cc
+Exercise:dd
+course start
 [/input]
 [output]
-748
-
+1.aa
+2.bb
+3.cc
+4.cc-Exercise
+5.dd
+6.dd-Exercise
 [/output]
 [/test]
 [test]
 [input]
-123 321
--12491287
-12412831
-0
-0
-
+aa, bb, cc
+Swap:aa:bb
+Swap:aa:dd
+course start
 [/input]
 [output]
-1509
-
+1.bb
+2.aa
+3.cc
 [/output]
 [/test]
 [test]
 [input]
-1 1
-2147483647
--2147483648
-2147483647
--2147483648
-2147483647
--2147483648
-2147483647
--2147483648
-2147483647
--2147483648
-2147483647
--2147483648
-2147483647
--2147483648
-0
-0
-
+aa, bb, cc
+Add:dd
+Insert:dd:2
+Insert:ff:1
+Remove:bb
+Exercise:bb
+Exercise:cc
+Swap:aa:bb
+Swap:aa:dd
+course start
 [/input]
 [output]
-65535
-
-[/output]
-[/test]
-[test]
-[input]
--2 1
-1
-0
-
-[/input]
-[output]
-0
-
+1.bb
+2.bb-Exercise
+3.ff
+4.cc
+5.cc-Exercise
+6.aa
+7.dd
 [/output]
 [/test]
 [/tests]

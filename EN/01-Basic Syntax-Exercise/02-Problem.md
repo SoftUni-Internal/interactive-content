@@ -1,6 +1,17 @@
+# Problem: Vacation
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421823284" default /]
+[stream language="RO" videoId="423949657"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Division
-[code-task title="Division" taskId="java-fund-02-Basic Syntax-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Vacation
+[code-task title="Vacarion" taskId="java-fund-02-Basic Syntax-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -10,30 +21,41 @@ public class Main {
         // Write your code here
     }
 }
+
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-You will be given an integer and you have to print whether that number is divisible by the following numbers: **2**, **3**, **6**, **7**, **10**. 
+You are given a group of people, type of the group, on which day of the week they are going to stay. 
 
-You should always take the **bigger** division. 
+Calculate how much they have to pay and print that price. 
 
-If the number is divisible by **both 2 and 3** it is also **divisible by 6** and you should **print only the division by 6**. 
+Use the table below. In each cell is the price for a single person. 
 
-If the number is not divisible by any of the given numbers print "**Not divisible**". 
+Print: "Total price: \{price\}". 
 
-Otherwise print "The number is divisible by \{number\}".
+Format the price to the second decimal point.
+
+|  | **Friday** | **Saturday** | **Sunday** |
+| --- | --- | --- | --- |
+| **Students** | 8.45 | 9.80 | 10.46 |
+| **Business** | 10.90 | 15.60 | 16 |
+| **Regular** | 15 | 20 | 22.50 |
+
+There are also discounts based on some conditions:
+•	Students – if the group is bigger than or equal to 30 people reduce the total price by 15%
+•	Business – if the group is bigger than or equal to  100 people 10 of them can stay for free
+•	Regular – if the group is bigger than or equal 10 and less than or equal to 20 reduce the total price by 5% 
+
+You should reduce the prices in that EXACT order
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 15 | The number is divisible by 3 |
-
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 1643 | Not divisible |
+| 40 | Total price: 800.00 |
+| Regular | |
+| Saturday | |
 
 [/task-description]
 [code-io /]
@@ -41,33 +63,51 @@ Otherwise print "The number is divisible by \{number\}".
 [test open]
 [input]
 30
+Students
+Sunday
 [/input]
 [output]
-The number is divisible by 10
+Total price: 266.73
 [/output]
 [/test]
 [test open]
 [input]
-1643
+40
+Regular
+Saturday
 [/input]
 [output]
-Not divisible
+Total price: 800.00
+[/output]
+[/test]
+[test]
+[input]
+5
+Students
+Friday
+[/input]
+[output]
+Total price: 42.25
 [/output]
 [/test]
 [test]
 [input]
 10
+Students
+Saturday
 [/input]
 [output]
-The number is divisible by 10
+Total price: 98.00
 [/output]
 [/test]
 [test]
 [input]
-15
+30
+Students
+Friday
 [/input]
 [output]
-The number is divisible by 3
+Total price: 215.47
 [/output]
 [/test]
 [/tests]

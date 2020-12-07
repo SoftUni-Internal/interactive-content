@@ -1,6 +1,17 @@
+# Problem: Append Arrays
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="421818862" default /]
+[stream language="RO" videoId="432473568"  /]
+[/video-vimeo]
+[/slide]
+
 [slide hideTitle]
-# Problem: Cards Game
-[code-task title="Cards Game" taskId="java-fund-14-Lists-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Append Arrays
+[code-task title="Append Arrays" taskId="java-fund-14-Lists-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -15,83 +26,70 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given two hands of cards, which will be **integer numbers**.
-
-Assume that you have **two players**.
-
-You have to **find** out the **winning deck** and respectively the winner.
-
-You start from the beginning of both hands. **Compare** the cards from the first deck to the cards from the second deck. 
-
-The player, **who has the bigger card**, takes both cards and puts them at the back of his hand - the second player’s card is last, and the first person’s card (the winning one) is before it (second to last) and the player with the smaller card must remove the card from his deck. 
-
-If both players’ cards **have the same values** - no one wins, and the two cards must be removed from the decks. 
-
-The **game is over**, when one of the decks is left **without any cards**. 
-
-You have to **print the winner on the console** and **the sum of the left** cards: "\{First/Second\} player wins! Sum: \{sum\}".
+Write a program to **append several arrays** of numbers.
+- **Arrays** are **separated** by '\|'
+- **Values** are **separated** by spaces (' ', one or several)
+- Order the arrays from the last to the first, and their values from left to right
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 20 30 40 50  | First player wins! Sum: 240 |
-| 10 20 30 40 | |
+| 1 2 3 \|4 5 6 \|  7  8  | 7 8 4 5 6 1 2 3 |
+
+### Example
+| **Input** | **Output** |
+| --- | --- |
+| 7 \| 4  5\|1 0\| 2 5 \|3  | 3 2 5 1 0 4 5 7 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-20 30 40 50
-10 20 30 40
+1 2 3 \|4 5 6 \|  7  8
 [/input]
 [output]
-First player wins! Sum: 240
+7 8 4 5 6 1 2 3
+[/output]
+[/test]
+[test open]
+[input]
+7 \| 4  5\|1 0\| 2 5 \|3
+[/input]
+[output]
+3 2 5 1 0 4 5 7
 [/output]
 [/test]
 [test]
 [input]
-10 20 30 40 50
-50 40 30 30 10
+1\| 4 5 6 7 \| 8 9
 [/input]
 [output]
-Second player wins! Sum: 50
+8 9 4 5 6 7 1
 [/output]
 [/test]
 [test]
 [input]
-42 83 37 84 75 47 99
-54 3 20 48 91 25 88
+1 2 3 \|4 5 6 \|  7  8
 [/input]
 [output]
-First player wins! Sum: 796
+7 8 4 5 6 1 2 3
 [/output]
 [/test]
 [test]
 [input]
-21 19 59 47 99 92 87 19 50 34
-14 10 20 51 71 77 82 13 54 50
+1\| 4 5 6 7 \| 8 9
 [/input]
 [output]
-First player wins! Sum: 969
+8 9 4 5 6 7 1
 [/output]
 [/test]
 [test]
 [input]
-200 157 300
-100 200 300
+1 \| \| \|\|\|2   3 \|4   5 6 \| 7 8\| -3 2   1\|\|1 2\|3\|4\|99 77
 [/input]
 [output]
-Second player wins! Sum: 257
-[/output]
-[/test]
-[test]
-[input]
-70 92 27 70 56 28 73 10
-53 47 97 89 7 37 18 52
-[/input]
-[output]
-Second player wins! Sum: 826
+99 77 4 3 1 2 -3 2 1 7 8 4 5 6 2 3 1
 [/output]
 [/test]
 [/tests]

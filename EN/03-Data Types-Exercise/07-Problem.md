@@ -1,17 +1,17 @@
-# Problem: Water Overflow
+# Problem: Beer Kegs
 
 [slide]
 # Video
 
 [vimeo-video]
-[stream language="EN" videoId="425479963" default /]
-[stream language="RO" videoId="425478301"  /]
+[stream language="EN" videoId="425480025" default /]
+[stream language="RO" videoId="425478330"  /]
 [/video-vimeo]
 [/slide]
 
 [slide hideTitle]
-# Problem: Water Overflow
-[code-task title="Water Overflow" taskId="java-fund-05-Data Types-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Beer Kegs
+[code-task title="Beer Kegs" taskId="java-fund-05-Data Types-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -25,24 +25,29 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have a **water tank** with capacity of 255 liters.
+Write a program, which **calculates the volume** of **n** beer kegs. 
 
-On the **first** line, you will receive n.
+You will **receive** in total **3 * n lines**.
 
-On the next **n lines**, you will **receive liters** of water, which you have to **pour in your tank**. 
+Each **three lines** will hold information for a **single keg**. 
 
-If the **capacity is not enough**, print "Insufficient capacity!" and **continue reading** the next line. 
+**First** up is the **model** of the keg, **after that** is the **radius** (a floating-point number) of the keg, and **lastly** is the **height** of the keg.
 
-On the **last** line, **print the liters** in the tank.
+Calculate the **volume** using the following formula:
+
+π * r^2 * h. 
+
+At the end, **print the model of the biggest keg**.
 
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Insufficient capacity! |
-| 20 | 240 |
-| 100 | |
-| 100 | |
-| 100 | |
+| 2 | Bigger Keg |
+| Smaller Keg | |
+| 2.41 | |
+| 10 | |
+| Bigger Keg | |
+| 5.12 | |
 | 20 | |
 
 [/task-description]
@@ -50,72 +55,73 @@ On the **last** line, **print the liters** in the tank.
 [tests]
 [test open]
 [input]
-5
-20
-100
-100
-100
+2
+Smaller Keg
+2.41
+10
+Bigger Keg
+5.12
 20
 [/input]
 [output]
-Insufficient capacity!
-240
+Bigger Keg
 [/output]
 [/test]
 [test]
 [input]
-1
-1000
-[/input]
-[output]
-Insufficient capacity!
-0
-[/output]
-[/test]
-[test]
-[input]
-7
-10
-20
-30
-10
-5
-10
-20
-[/input]
-[output]
-105
-[/output]
-[/test]
-[test]
-[input]
-10
 3
+Keg 1
 10
-12
-50
+10
+Keg 2
+20
+20
+Keg 3
+10
 30
-40
-10
-20
-60
-20
 [/input]
 [output]
-255
+Keg 2
 [/output]
 [/test]
 [test]
 [input]
-4
-100
-150
-5
-1
+3
+Keg 1
+15
+15
+Keg 2
+20
+10
+Keg 3
+10
+20
 [/input]
 [output]
-Insufficient capacity!
-255
+Keg 2
+[/output]
+[/test]
+[test]
+[input]
+5
+Keg 1
+10
+10
+Keg 2
+20
+20
+Keg 3
+10
+30
+Keg 4
+213213.123
+1234124124
+Keg 5
+1236.345534
+21321124
+[/input]
+[output]
+Keg 4
 [/output]
 [/test]
 [/tests]
