@@ -714,13 +714,93 @@ Write a program, which:
 [/slide]
 
 [slide]
-# TEST PROBLEM:  Numbers, Divisible by 9
+# NOT WORKING TEST PROBLEM:  Numbers, Divisible by 9
 
 [code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function powerOfNumbers(n, m) {
-  // Write your code here
+  let outputArr = [];
+        let sum = 0;
+
+        for (let i = +n; i <= +m; i++) {
+            if (i % 9 === 0) {
+                outputArr.push(i);
+                sum += i;
+            }
+        }
+
+        let output = `The sum: ${sum}\n`;
+        output += outputArr.join('\n');
+
+        console.log(output);
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+`Напишете функция, която получава две числа и принтира  на конзолата, всички числа в диапазона, които се делят на 9 без остатък, както и тяхната сума.  На първия ред отпечатайте сумата на числата, а на следващия отговарящите на условието числа с интервал между тях.`
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|100| The sum: 1683 |
+|200|108 117 126 135 144 153 162 171 180 189 198|
+
+[/task-description]
+[tests]
+[test]
+[input]
+100
+200
+[/input]
+[output]
+The sum: 1683
+108
+117
+126
+135
+144
+153
+162
+171
+180
+189
+198
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# WORKING TEST PROBLEM:  Numbers, Divisible by 9
+
+[code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function powerOfNumbers(input) {
+
+  let n = Number(input[0]);
+let m = Number(inpit[1]);
+
+  let outputArr = [];
+        let sum = 0;
+
+        for (let i = +n; i <= +m; i++) {
+            if (i % 9 === 0) {
+                outputArr.push(i);
+                sum += i;
+            }
+        }
+
+        let output = `The sum: ${sum}\n`;
+        output += outputArr.join('\n');
+
+        console.log(output);
 }
 ```
 [/code-editor]
