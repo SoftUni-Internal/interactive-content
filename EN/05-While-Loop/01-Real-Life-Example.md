@@ -1,6 +1,6 @@
 [slide]
 
-# Real-Life Example: Fill a Bucket
+# Real-Life Example: Box of Books
 
 [vimeo-video]
 [stream language="EN" videoId="487120525/72418abb77" default /]
@@ -13,7 +13,7 @@ The specific thing about them is that they repeat a block of commands while a co
 
 As a structure, they differ from `for` loops, and even have a simple syntax.
 
-Before we jump to the lesson, let's cover an example which is from the real life.
+Before we jump to the lesson, let's cover оне море example from the real life.
 
 [image assetsSrc="05-bucket-example.png" /]
 
