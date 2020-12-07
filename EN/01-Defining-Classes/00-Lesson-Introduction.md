@@ -5,8 +5,8 @@
 # Lesson Introduction
 
 [vimeo-video]
-[stream language="EN" videoId="485442088" default /]
-[stream language="RO" videoId="485442088"  /]
+[stream language="EN" videoId="485442088/4502bb1fea" default /]
+[stream language="RO" videoId="485442088/4502bb1fea"  /]
 [/video-vimeo]
 
 ## In this lesson you will learn about:

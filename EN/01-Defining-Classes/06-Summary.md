@@ -11,20 +11,49 @@
 - What are classes in Java?
     - Template from which objects are created
     - Object is an instance of a class
-    - TODO: Example
-
+```java
+class Animal { 
+    
+}
+Animal animal = new Animal();
+```
 Class components:
 - Fields 
     - Field is a variable inside a class
-     - TODO: Example
+```java
+class Animal { 
+    String name;
+    Int age;
+}
+```
 - Methods 
     - Store executable code that manipulate state
-     - TODO: Example
+```java
+class Animal { 
+    String name;
+    Int age;
+
+    void bark(){ ... }
+}
+```
 - Constructors
     - Special type of method which is used to initialize the object
     - Constructors are invoked when creating new class instances
     - Set object's initial state
-    - TODO: Example
+```java
+class Animal { 
+    String name;
+    Int age;
+
+    public Animal(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+    void bark(){ ... }
+}
+Animal animal = new Animal("Rex", 5);
+```
 
 # In the next lesson, you will learn:
 

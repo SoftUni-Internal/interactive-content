@@ -3,8 +3,8 @@
 # Methods
 
 [vimeo-video]
-[stream language="EN" videoId="485442837" default /]
-[stream language="RO" videoId="485442837"  /]
+[stream language="EN" videoId="485442837/72b15114f6" default /]
+[stream language="RO" videoId="485442837/72b15114f6"  /]
 [/video-vimeo]
 
 A method is a collection of statements that perform some specific task and return the result to the caller. 
@@ -36,8 +36,8 @@ class Car {
 # Getters and Setters
 
 [vimeo-video]
-[stream language="EN" videoId="485442925" default /]
-[stream language="RO" videoId="485442925"  /]
+[stream language="EN" videoId="485442925/6a6914cf48" default /]
+[stream language="RO" videoId="485442925/6a6914cf48"  /]
 [/video-vimeo]
 
 In Java **getter** and **setter** are two conventional methods that are used for retrieving and updating the value of a variable.
@@ -111,8 +111,8 @@ The most common use of the `this` keyword is to eliminate the confusion between 
 # ToString() Method
 
 [vimeo-video]
-[stream language="EN" videoId="485443131" default /]
-[stream language="RO" videoId="485443131"  /]
+[stream language="EN" videoId="485443131/756193f8d0" default /]
+[stream language="RO" videoId="485443131/756193f8d0"  /]
 [/video-vimeo]
 
 By using `toString()` method, you can represent any object as a String.
@@ -152,8 +152,8 @@ public class Car {
 # Equals() Method
 
 [vimeo-video]
-[stream language="EN" videoId="485443235" default /]
-[stream language="RO" videoId="485443235"  /]
+[stream language="EN" videoId="485443235/ad08ba7339" default /]
+[stream language="RO" videoId="485443235/ad08ba7339"  /]
 [/video-vimeo]
 
 In java `equals()` method is used to compare equality of two Objects. 
@@ -172,8 +172,8 @@ System.out.println(isCarsEquals);
 # HashCode() Method
 
 [vimeo-video]
-[stream language="EN" videoId="485443247" default /]
-[stream language="RO" videoId="485443247"  /]
+[stream language="EN" videoId="485443247/3be3342b57" default /]
+[stream language="RO" videoId="485443247/3be3342b57"  /]
 [/video-vimeo]
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
@@ -194,8 +194,8 @@ System.out.println(hash);
 # Problem: Car Info
 
 [vimeo-video]
-[stream language="EN" videoId="485443278" default /]
-[stream language="RO" videoId="485443278"  /]
+[stream language="EN" videoId="485443278/abf3282bb7" default /]
+[stream language="RO" videoId="485443278/abf3282bb7"  /]
 [/video-vimeo]
 
 [code-task title="Problem: Car Info" taskId="8bb0524a-5629-4c59-847f-c7b913b41ff3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -419,8 +419,8 @@ The car is: d 2 - 4 HP.
 # Solution: Car Info
 
 [vimeo-video]
-[stream language="EN" videoId="485443434" default /]
-[stream language="RO" videoId="485443434"  /]
+[stream language="EN" videoId="485443434/2e6aff9fbd" default /]
+[stream language="RO" videoId="485443434/2e6aff9fbd"  /]
 [/video-vimeo]
 
 Set access modifiers for the fields:

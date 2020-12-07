@@ -1,12 +1,10 @@
-# Class Data
-
 [slide]
 
 # Fields
 
 [vimeo-video]
-[stream language="EN" videoId="485442485" default /]
-[stream language="RO" videoId="485442485"  /]
+[stream language="EN" videoId="485442485/155d3dbe2c" default /]
+[stream language="RO" videoId="485442485/155d3dbe2c"  /]
 [/video-vimeo]
 
 A Java field is a variable inside a class. 
@@ -36,8 +34,8 @@ public class Car {
 # Problem: Define Car Class
 
 [vimeo-video]
-[stream language="EN" videoId="485442542" default /]
-[stream language="RO" videoId="485442542"  /]
+[stream language="EN" videoId="485442542/b12b87f743" default /]
+[stream language="RO" videoId="485442542/b12b87f743"  /]
 [/video-vimeo]
 
 Create a class named **Car**.
@@ -77,8 +75,8 @@ public class Main {
 # Solution: Define Car Class
 
 [vimeo-video]
-[stream language="EN" videoId="485442701" default /]
-[stream language="RO" videoId="485442701"  /]
+[stream language="EN" videoId="485442701/b871eca10d" default /]
+[stream language="RO" videoId="485442701/b871eca10d"  /]
 [/video-vimeo]
 
 Create a new class and **ensure proper naming!**
@@ -105,8 +103,8 @@ public class Car {
 # Access Modifiers
 
 [vimeo-video]
-[stream language="EN" videoId="485442782" default /]
-[stream language="RO" videoId="485442782"  /]
+[stream language="EN" videoId="485442782/1379d735a9" default /]
+[stream language="RO" videoId="485442782/1379d735a9"  /]
 [/video-vimeo]
 
 Access modifiers determine whether other classes can use a particular field.

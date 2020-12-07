@@ -1,10 +1,9 @@
 [slide]
-
 # Defining Simple Classes
 
 [vimeo-video]
-[stream language="EN" videoId="485442096" default /]
-[stream language="RO" videoId="485442096"  /]
+[stream language="EN" videoId="485442096/a189ddb69d" default /]
+[stream language="RO" videoId="485442096/a189ddb69d"  /]
 [/video-vimeo]
 
 A class is the **basic building block of an object-oriented language** such as Java.
@@ -38,12 +37,43 @@ The **behaviour** associated with a class or object is implemented with **method
 [/slide]
 
 [slide]
+# Naming Classes
 
+[vimeo-video]
+[stream language="EN" videoId="485442154/ee85ed312a" default /]
+[stream language="RO" videoId="485442154/ee85ed312a"  /]
+[/video-vimeo]
+
+Below are the class naming rules of Java programming language. 
+
+They must be followed while developing software in Java for good maintenance and readability of code. 
+
+Class names should be nouns, in mixed case with the first letter of each internal word capitalized. 
+
+For example:
+
+```java
+class CarMaintenanceHistory { ... }
+// Good naminig 
+```
+
+```java
+class Carhp { ... }
+// Bad naming
+```
+
+Try to keep your class names simple and descriptive. 
+
+Use whole word. Avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
+
+[/slide]
+
+[slide]
 # Class Components
 
 [vimeo-video]
-[stream language="EN" videoId="485442219" default /]
-[stream language="RO" videoId="485442219"  /]
+[stream language="EN" videoId="485442219/c2168df12c" default /]
+[stream language="RO" videoId="485442219/c2168df12c"  /]
 [/video-vimeo]
 
 When defining class, it contains only those components of a class declaration that are required.
@@ -75,43 +105,11 @@ class Car {
 [/slide]
 
 [slide]
-# Naming Classes
-
-[vimeo-video]
-[stream language="EN" videoId="485442154" default /]
-[stream language="RO" videoId="485442154"  /]
-[/video-vimeo]
-
-Below are the class naming rules of Java programming language. 
-
-They must be followed while developing software in Java for good maintenance and readability of code. 
-
-Class names should be nouns, in mixed case with the first letter of each internal word capitalized. 
-
-For example:
-
-```java
-class CarMaintenanceHistory { ... }
-// Good naminig 
-```
-
-```java
-class Carhp { ... }
-// Bad naming
-```
-
-Try to keep your class names simple and descriptive. 
-
-Use whole word. Avoid acronyms and abbreviations (unless the abbreviation is much more widely used than the long form, such as URL or HTML).
-
-[/slide]
-
-[slide]
 # Creating an Object
 
 [vimeo-video]
-[stream language="EN" videoId="485442316" default /]
-[stream language="RO" videoId="485442316"  /]
+[stream language="EN" videoId="485442316/481f9548ec" default /]
+[stream language="RO" videoId="485442316/481f9548ec"  /]
 [/video-vimeo]
 
 Creating an object of a defined class is called **instantiation**.
@@ -139,8 +137,8 @@ Car thirdCar = new Car();
 # Object Reference
 
 [vimeo-video]
-[stream language="EN" videoId="485442368" default /]
-[stream language="RO" videoId="485442368"  /]
+[stream language="EN" videoId="485442368/4511d02327" default /]
+[stream language="RO" videoId="485442368/4511d02327"  /]
 [/video-vimeo]
 
 The `new` operator instantiates a Class by allocating memory for a new object and returning a **reference** to that memory. 
@@ -179,8 +177,8 @@ int horsePower=0;
 ## Classes vs. Objects
 
 [vimeo-video]
-[stream language="EN" videoId="485442442" default /]
-[stream language="RO" videoId="485442442"  /]
+[stream language="EN" videoId="485442442/8c17b75c2e" default /]
+[stream language="RO" videoId="485442442/8c17b75c2e"  /]
 [/video-vimeo]
 
 | Classes | Objects |

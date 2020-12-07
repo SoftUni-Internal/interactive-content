@@ -2,8 +2,8 @@
 # Constructors
 
 [vimeo-video]
-[stream language="EN" videoId="485443527" default /]
-[stream language="RO" videoId="485443527"  /]
+[stream language="EN" videoId="485443527/94a5a602a6" default /]
+[stream language="RO" videoId="485443527/94a5a602a6"  /]
 [/video-vimeo]
 
 In Java, a constructor is a block of codes similar to the method. 
@@ -51,8 +51,8 @@ If you implement any constructor then you no longer receive a default constructo
 # Multiple Constructors
 
 [vimeo-video]
-[stream language="EN" videoId="485443588" default /]
-[stream language="RO" videoId="485443588"  /]
+[stream language="EN" videoId="485443588/ec4184d17e" default /]
+[stream language="RO" videoId="485443588/ec4184d17e"  /]
 [/video-vimeo]
 
 You can have multiple constructors in the same class, as long as their signature (the parameters they take) are not the same.
@@ -88,8 +88,8 @@ The first one takes only one parameter and the second one takes two parameters.
 # Object Initial State
 
 [vimeo-video]
-[stream language="EN" videoId="485443647" default /]
-[stream language="RO" videoId="485443647"  /]
+[stream language="EN" videoId="485443647/cd33688269" default /]
+[stream language="RO" videoId="485443647/cd33688269"  /]
 [/video-vimeo]
 
 Constructors set object's initial state.
@@ -131,8 +131,8 @@ Here, we have a constructor with one parameter "brand" in the body of constructo
 # Constructor Chaining
 
 [vimeo-video]
-[stream language="EN" videoId="485443685" default /]
-[stream language="RO" videoId="485443685"  /]
+[stream language="EN" videoId="485443685/4d212391a8" default /]
+[stream language="RO" videoId="485443685/4d212391a8"  /]
 [/video-vimeo]
 
 In Java, it is possible to call a constructor from inside another constructor.
@@ -178,8 +178,8 @@ In this example, it is the first constructor in the class that is being called.
 # Problem: Car Constructors
 
 [vimeo-video]
-[stream language="EN" videoId="485443776" default /]
-[stream language="RO" videoId="485443776"  /]
+[stream language="EN" videoId="485443776/c169d89438" default /]
+[stream language="RO" videoId="485443776/c169d89438"  /]
 [/video-vimeo]
 
 [code-task title="Problem: Car Constructors" taskId="78303c7d-a0e2-46d4-adfa-01d8ff870365" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -397,10 +397,9 @@ The car is: d unknown - -1 HP.
 # Solution: Car Constructors
 
 [vimeo-video]
-[stream language="EN" videoId="485443792" default /]
-[stream language="RO" videoId="485443792"  /]
+[stream language="EN" videoId="485443792/400f44c1bb" default /]
+[stream language="RO" videoId="485443792/400f44c1bb"  /]
 [/video-vimeo]
-
 
 - Car class:
 

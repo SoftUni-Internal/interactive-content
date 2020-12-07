@@ -2,10 +2,9 @@
 # Static Members
 
 [vimeo-video]
-[stream language="EN" videoId="485443972" default /]
-[stream language="RO" videoId="485443972"  /]
+[stream language="EN" videoId="485443972/9db86c189e" default /]
+[stream language="RO" videoId="485443972/9db86c189e"  /]
 [/video-vimeo]
-
 
 In Java, static members are those which belongs to the class and you can access these members without instantiating the class.
 
@@ -70,8 +69,8 @@ public class Car {
 # Problem: Bank Account
 
 [vimeo-video]
-[stream language="EN" videoId="485444110" default /]
-[stream language="RO" videoId="485444110"  /]
+[stream language="EN" videoId="485444110/761b551138" default /]
+[stream language="RO" videoId="485444110/761b551138"  /]
 [/video-vimeo]
 
 [code-task title="Problem: Bank Account" taskId="1dfa7c1b-84b0-4bb3-8ee1-0832b748acb9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
@@ -399,8 +398,8 @@ Account does not exist
 # Solution: Bank Account
 
 [vimeo-video]
-[stream language="EN" videoId="485444208" default /]
-[stream language="RO" videoId="485444208"  /]
+[stream language="EN" videoId="485444208/9655609390" default /]
+[stream language="RO" videoId="485444208/9655609390"  /]
 [/video-vimeo]
 
 - Bank Account class:
