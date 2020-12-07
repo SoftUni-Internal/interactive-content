@@ -2,6 +2,19 @@
 
 [slide]
 # Problem: Building
+
+[vimeo-video]
+[stream language="EN" videoId="488090883/a7c270a8f6" default /]
+[stream language="RO" videoId="488090883/a7c270a8f6"  /]
+[/video-vimeo]
+
+# Solution
+
+[vimeo-video]
+[stream language="EN" videoId="488090919/8b4c1a9e61" default /]
+[stream language="RO" videoId="488090919/8b4c1a9e61"  /]
+[/video-vimeo]
+
 [code-task title="Building" taskId="pb-js-06-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -163,6 +176,19 @@ A10 A11 A12
 
 [slide]
 # Problem: Passwords
+
+[vimeo-video]
+[stream language="EN" videoId="488091064/8c0b8dc12c" default /]
+[stream language="RO" videoId="488091064/8c0b8dc12c"  /]
+[/video-vimeo]
+
+# Solution
+
+[vimeo-video]
+[stream language="EN" videoId="488091095/c49f5f03e5" default /]
+[stream language="RO" videoId="488091095/c49f5f03e5"  /]
+[/video-vimeo]
+
 [code-task title="Passwords" taskId="pb-js-06-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
