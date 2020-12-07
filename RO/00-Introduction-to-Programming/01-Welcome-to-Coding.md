@@ -3,25 +3,26 @@
 [vimeo-video]
 [stream language / fluxul de limbaj = "EN" videoId = "486831827 / 419d467fd3" implicit /]
 [stream language / fluxul de limbaj = "RO" videoId = "486831827 / 419d467fd3" /]
-[/ video-vimeo]
+[/video-vimeo]
 **A programa**, exprimat în termeni simpli, înseamnă a **da comenzi** computerului.
 Câteva exemple de bază sunt:
 - `a crea un sunet`
 - `a lista ceva de pe ecran`
-- `a multiplica două numere`.
+- `a multiplica două numere`
 Când avem o succesiune de comenzi,urmându-se unul pe celalalt- aceasta ar putea fi numită un **program de computer**
 Textul, care este folosit pentru realizarea unui program de computer, se numește **cod de program** sau **cod sursă**, sau adesea doar **cod**.
 Exemplu de comandă al unui computer:
 ```js live
 console.log ("Bine ati venit la codare");
-""
-[/ slide]
+```
+
+[/slide]
 [slide]
 # Programe de calculator
 [vimeo-video]
 [stream language / fluxul de limbaj = "EN" videoId = "486832336 / e4188d5010" implicit /]
 [stream language / fluxul de limbaj = "RO" videoId = "486832336 / e4188d5010" /]
-[/ video-vimeo]
+[/video-vimeo]
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 Exemplu de **program de computer** în JS:
 ```js live fara template
@@ -105,7 +106,7 @@ Folosind blocul de cod din exemplu, creăm o casetă de text ca în diapozitiv.
   <button onclick="convertUsdToEur()">Convert</button>
   Euro: <input type="text" id="eurosBox" readonly />
 </body></html>
-
+```
 Este important să introduceti funcția `convertUsdToEur() în scriptul nostrum de html.
 De asemenea, avem două casete de text - **Dollars:** and **Euro:**.
 

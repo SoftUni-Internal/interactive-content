@@ -29,4 +29,4 @@
 
 - Cum să efectuăm operații simple
 
-[/ slide]
+[/slide]

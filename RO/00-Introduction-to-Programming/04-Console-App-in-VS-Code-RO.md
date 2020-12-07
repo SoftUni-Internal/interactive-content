@@ -38,6 +38,7 @@ Scrieți următoarea comandă:
 
 ```js
 console.log("Hello, JavaScript!");
+```
 
 In așa fel ar trebui să arate programul dvs. în Visual Studio Code:
 
@@ -83,4 +84,3 @@ Alternativ, utilizați extensia „Code Runner”
 [image assetsSrc="intro-to-programming-8.png" /]
 [/slide]
 
-```
