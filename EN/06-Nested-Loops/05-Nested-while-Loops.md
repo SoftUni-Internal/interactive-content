@@ -151,6 +151,12 @@ Write a program, which:
 
 [slide]
 # Problem: Sum of Digits Calculator
+
+[vimeo-video]
+[stream language="EN" videoId="488090779/48452cdf0b" default /]
+[stream language="RO" videoId="488090779/48452cdf0b"  /]
+[/video-vimeo]
+
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
@@ -270,8 +276,8 @@ Goodbye
 # Solution: Sum of Digits Calculator
 
 [vimeo-video]
-[stream language="EN" videoId="488090779/48452cdf0b" default /]
-[stream language="RO" videoId="488090779/48452cdf0b"  /]
+[stream language="EN" videoId="488090853/57ce6f8869" default /]
+[stream language="RO" videoId="488090853/57ce6f8869"  /]
 [/video-vimeo]
 
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
