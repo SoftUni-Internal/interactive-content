@@ -11,5 +11,12 @@ In this lesson we learned:
 - Logical operators run over boolean expressions
 - The **switch-case** statement is an alternative to the **if-else**
 
+In the next lesson we will learn:
+
+- What is for-loop?
+
+- For-loop syntax
+
+
 
 [/slide]
