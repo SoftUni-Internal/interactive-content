@@ -1,6 +1,6 @@
 # For Loop
-[slide]
 
+[slide]
 # Real Life Example: Moving Dishes
 
 [vimeo-video]
@@ -8,16 +8,26 @@
 [stream language="RO" videoId="487119221/9c519c14e8"  /]
 [/video-vimeo]
 
+Let's say you want to fill the dishwasher with plates.
+
+To do that you'll take some of the plates from the pile and you'll put them in.
+
+Then you'll take some more plates and repeat the action until all the plates in the dishwasher.
+
+This is a loop, you repeat an action until you reach a certain condition.
+
+When you reach that condition, you stop the loop.
+
 [/slide]
 
 [slide]
+# For Loop
 
 [vimeo-video]
 [stream language="EN" videoId="487119239/423a548f1b" default /]
 [stream language="RO" videoId="487119239/423a548f1b"  /]
 [/video-vimeo]
 
-# For Loop
 In programming on many occasions, we need to execute a block of commands multiple times. 
 
 To do that, the so-called loops are used. 
@@ -60,7 +70,7 @@ The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …
 
 In the first example, the `i` variable accepts values from 1 to 10 and the **current** value is printed in the body of the loop. 
 
-The loop repeats 10 times and each of these repetitions is called an **"iteration"**.
+The loop repeats 10 times and each of these repetitions is called an **iteration**.
 [/slide]
 
 [slide]
