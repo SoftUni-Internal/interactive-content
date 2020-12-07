@@ -161,7 +161,7 @@ Write a program, which:
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
-function sum(inputLines) {
+function sumOfDigits(inputLines) {
   // Write your code here
 }
 ```
@@ -284,9 +284,9 @@ Goodbye
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
-function sum(inputLines) {
-   while (true) {
-    let  = inputLines.shift();
+function sumOfDigits(inputLines) {
+  while (true) {
+    let input = inputLines.shift();
     if (input === "End") break;
     let sum = 0;
     for (let num = Number(input);
@@ -295,8 +295,6 @@ function sum(inputLines) {
     console.log(`Sum of digits: ${sum}`);
   }
   console.log("Goodbye");
-
-}
 }
 ```
 [/code-editor]
