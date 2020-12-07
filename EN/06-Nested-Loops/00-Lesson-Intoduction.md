@@ -3,8 +3,8 @@
 # Lesson Introduction
 
 [vimeo-video]
-[stream language="EN" videoId="487128591/d7fe678f6f" default /]
-[stream language="RO" videoId="487128591/d7fe678f6f"  /]
+[stream language="EN" videoId="488089815/9d59e2bbf4" default /]
+[stream language="RO" videoId="488089815/9d59e2bbf4"  /]
 [/video-vimeo]
 
 ## In this lesson you will learn about:

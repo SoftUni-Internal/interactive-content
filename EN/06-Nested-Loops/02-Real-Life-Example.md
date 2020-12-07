@@ -1,5 +1,11 @@
 [slide]
 # Real-Life Example: Clock
+
+[vimeo-video]
+[stream language="EN" videoId="488090119/185587dfb3" default /]
+[stream language="RO" videoId="488090119/185587dfb3"  /]
+[/video-vimeo]
+
 [image assetsSrc="06-nested-loops-clock-1159.png" /]
 
 [image assetsSrc="06-nested-loops-clock-1200.png" /]
