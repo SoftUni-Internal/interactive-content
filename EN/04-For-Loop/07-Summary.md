@@ -14,9 +14,19 @@ For-loops are used when we need to execute a block of code multiple times
 
 * Initialization 
 
-   - Condition 
+   - **Condition** 
 
-   - Step 
+   - **Step** 
 
-   - Body 
+   - **Body** 
+
+   In the next lesson we will learn:
+   
+   - **While** Loop
+
+   - Difference between **While** and For **loop**
+
+   - The **Break** Operator
+
+   - **Infinity** Loops
 [/slide]
