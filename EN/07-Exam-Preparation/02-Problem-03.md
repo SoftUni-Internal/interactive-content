@@ -1,5 +1,11 @@
 [slide]
 # Problem 3: Cinema
+
+[vimeo-video]
+[stream language="EN" videoId="487118157/70c5ba1ce8" default /]
+[stream language="RO" videoId="487118157/70c5ba1ce8"  /]
+[/video-vimeo]
+
 ## Description
 For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 

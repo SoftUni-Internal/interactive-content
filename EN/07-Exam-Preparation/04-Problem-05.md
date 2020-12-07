@@ -2,6 +2,11 @@
 
 # Problem 5: TV Series Budget
 
+[vimeo-video]
+[stream language="EN" videoId="487118385/044812fcf3" default /]
+[stream language="RO" videoId="487118385/044812fcf3"  /]
+[/video-vimeo]
+
 ## Description
 You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
 Some of the series have a discount:

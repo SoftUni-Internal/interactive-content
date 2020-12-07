@@ -1,6 +1,11 @@
 [slide]
 # Problem 4: Cinema Income
 
+[vimeo-video]
+[stream language="EN" videoId="487118285/74e8a9a9c7" default /]
+[stream language="RO" videoId="487118285/74e8a9a9c7"  /]
+[/video-vimeo]
+
 ## Description
 
 You have been hired by a cinema to write a program that calculates whether the cinema hall is full and how much will the profit be.

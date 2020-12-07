@@ -1,5 +1,11 @@
 [slide]
 # Problem 6: The Best Movie
+
+[vimeo-video]
+[stream language="EN" videoId="487118452/de8f1dddfb" default /]
+[stream language="RO" videoId="487118452/de8f1dddfb"  /]
+[/video-vimeo]
+
 ## Description
 It is Friday night, and you are wondering which movie to watch. 
 

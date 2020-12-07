@@ -1,5 +1,11 @@
 [slide]
 # Problem 2: Time for Lunch
+
+[vimeo-video]
+[stream language="EN" videoId="487118102/c7f6a5713f" default /]
+[stream language="RO" videoId="487118102/c7f6a5713f"  /]
+[/video-vimeo]
+
 ## Description
 During your lunch break you want to watch an episode of your favorite TV series.
 
