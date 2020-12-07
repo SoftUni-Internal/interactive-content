@@ -118,7 +118,7 @@ Goodbye
 function sumNumbers (input) {
   let sum = 0;
   for (;;) {
-    let num = nums.shift();
+    let num = Number(input.shift());
     if (num == 0) break;
     sum += num;
     console.log(`Sum = ${sum}`);
@@ -138,7 +138,7 @@ Write a function to process numbers from the input parameters and print their su
 |`['5', '3', '2', '0']`| Sum = 5 |
 ||Sum = 8 |
 ||Sum = 10 |
-||Good bye |
+||Goodbye |
 
 [/task-description]
 [tests]
@@ -153,7 +153,7 @@ Write a function to process numbers from the input parameters and print their su
 Sum \= 5
 Sum \= 8
 Sum \= 10
-Good bye
+Goodbye
 [/output]
 [/test]
 [test]

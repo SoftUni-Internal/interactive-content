@@ -416,9 +416,9 @@ Write a program, which:
 6
 [/input]
 [output]
-66.67%
-100.00%
-33.33%
+66.67\%
+100.00\%
+33.33\%
 [/output]
 [/test]
 [/tests]
