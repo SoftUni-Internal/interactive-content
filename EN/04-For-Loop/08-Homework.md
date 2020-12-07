@@ -151,7 +151,7 @@ Min number: -2
 [/slide]
 
 [slide]
-# Problem: Power Of Numbers
+# Problem and Solution: Power Of Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="487119835/67aabd5d33" default /]
@@ -643,7 +643,7 @@ The rollercoaster departures
 [/slide]
 
 [slide]
-# Problem: Multiply
+# Problem and Solution: Multiply
 
 [vimeo-video]
 [stream language="EN" videoId="487119938/9a4818ebf0" default /]
