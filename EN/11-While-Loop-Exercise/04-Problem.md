@@ -1,6 +1,6 @@
 [slide]
-# Problem: Dishwasher
-[code-task title="Dishwasher" taskId="27-05E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Report System
+[code-task title="Report System" taskId="27-05E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,218 +14,235 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
+At a charity event, payments for the purchased products are always **alternated**: **cash payment and card payment**. **Always first payment method is cash**.
 
-Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
+The following payment rules have been established:
+- If the product **exceeds 100 dollars**, it **cannot be paid in cash**
+- If the product is priced **under 10 dollars**, it **cannot be paid by credit card**
 
-It is known that each bottle contains **750 ml.** detergent. 
+The program ends either after we receive the command **"End"**, or after the **funds are collected**.
 
-For 1 **plate** 5 ml is needed, and for a **pots** 15 ml. 
+## Input
+Read from the console:
+- The amount **expected to be collected** from sales - integer in range \[1...10000\] 
 
-Accept that on every **third** filling with vessels, the dishwasher is filled only with pots, and the other times with plates. 
+On each subsequent line, until the **"End"** command is received or until **the necessary funds are collected**: 
+    - **The prices of items** to be purchased - integer in range \[1...500\]
 
-Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
-
-# Input
-Read from the console: 
-- **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
-
-On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
-
-# Output
-- In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
-    - "Detergent was enough!"
-    - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
-    - "Leftover detergent \{amount of detergent remaining\} ml." 
-- If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
-    - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
+## Output
+Print on the console:
+- In case of successful transaction: "Product sold!" 
+- In case of unsuccessful transaction: "Error in transaction!" 
+- If the sum of all purchased products **exceeds or reaches the expected amount**, the program must be completed and **two lines** are printed to the console: 
+    - "Average CS: \{average payment in person's cash\}" 
+    - "Average CC: \{average card payment per person\}"
+    Payments must be **formatted to the second digit after the decimal point**.
+- When the **"End"** command is received, **one line** is written:
+    - "Failed to collect required money for charity."
 
 ## Example
 
 | **Input** | **Output** |
 | --- | --- |
-| 2 | Detergent was enough! |
-| 53 | 118 dishes and 55 pots were washed. |
-| 65 | Leftover detergent 85 ml. |
-| 55 | |
-| End | |
+| 500| Error in transaction!|
+| 120| Error in transaction!|
+| 8| Product sold!|
+| 63| Product sold!|
+| 256| Product sold!|
+| 78| Product sold!|
+| 317| Average CS: 70.50|
+| | Average CC: 286.50|
 
 ### Comments
-- Detergent quantity = 2 \* 750 = 1500 ml.
-- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
-- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
-- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
-- We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+- The condition is rotated first in **cash payment**, then through **credit card**
+- 120 > 100 transaction is rejected 
+- 8 < 10 transaction is rejected 
+- 63 <= 100 => the transaction was successful
+- 256 >= 10 => the transaction was successful 
+- 78 <= 100 => the transaction was successful 
+- 317 >= 10 => the transaction was successful 
+- Total amount collected: 63 + 256 + 78 + 317 = 714 
+- 714 >= 500
+- Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50 
+- Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
 
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| 1 | Not enough detergent, 100 ml. more necessary! |
-| 10 | |
-| 15 | |
-| 10 | |
-| 12 | |
-| 13 | |
-| 30 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-2
-53
-65
-55
-End
+500
+120
+8
+63
+256
+78
+317
 [/input]
 [output]
-Detergent was enough!
-118 dishes and 55 pots were washed.
-Leftover detergent 85 ml.
-[/output]
-[/test]
-[test open]
-[input]
-1
-10
-15
-10
-12
-13
-30
-[/input]
-[output]
-Not enough detergent, 100 ml. more necessary!
+Error in transaction!
+Error in transaction!
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Average CS: 70.50
+Average CC: 286.50
 [/output]
 [/test]
 [test]
 [input]
-2
-53
-65
-55
-End
-[/input]
-[output]
-Detergent was enough!
-118 dishes and 55 pots were washed.
-Leftover detergent 85 ml.
-[/output]
-[/test]
-[test]
-[input]
-1
-10
-15
-10
-12
-13
-30
-[/input]
-[output]
-Not enough detergent, 100 ml. more necessary!
-[/output]
-[/test]
-[test]
-[input]
-2
-25
-50
-75
-End
-[/input]
-[output]
-Detergent was enough!
-75 dishes and 75 pots were washed.
-Leftover detergent 0 ml.
-[/output]
-[/test]
-[test]
-[input]
-2
-25
-50
-75
-1
-[/input]
-[output]
-Not enough detergent, 5 ml. more necessary!
-[/output]
-[/test]
-[test]
-[input]
-3
-66
-33
-99
-End
-[/input]
-[output]
-Detergent was enough!
-99 dishes and 99 pots were washed.
-Leftover detergent 270 ml.
-[/output]
-[/test]
-[test]
-[input]
-3
-38
-47
-59
-75
-31
-29
-[/input]
-[output]
-Not enough detergent, 25 ml. more necessary!
-[/output]
-[/test]
-[test]
-[input]
-4
-25
-39
-31
-20
-49
-66
-33
-25
-End
-[/input]
-[output]
-Detergent was enough!
-191 dishes and 97 pots were washed.
-Leftover detergent 590 ml.
-[/output]
-[/test]
-[test]
-[input]
-1
-32
-33
-45
-[/input]
-[output]
-Not enough detergent, 250 ml. more necessary!
-[/output]
-[/test]
-[test]
-[input]
-4
-52
-3
-13
-39
+600
 86
-50
-49
-37
+150
+98
+227
 End
 [/input]
 [output]
-Detergent was enough!
-266 dishes and 63 pots were washed.
-Leftover detergent 725 ml.
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Failed to collect required money for charity.
+[/output]
+[/test]
+[test]
+[input]
+500
+100
+200
+100
+100
+[/input]
+[output]
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Average CS: 100.00
+Average CC: 150.00
+[/output]
+[/test]
+[test]
+[input]
+100
+101
+9
+80
+20
+[/input]
+[output]
+Error in transaction!
+Error in transaction!
+Product sold!
+Product sold!
+Average CS: 80.00
+Average CC: 20.00
+[/output]
+[/test]
+[test]
+[input]
+5000
+150
+890
+70
+1500
+200
+1000
+End
+[/input]
+[output]
+Error in transaction!
+Product sold!
+Product sold!
+Product sold!
+Error in transaction!
+Product sold!
+Failed to collect required money for charity.
+[/output]
+[/test]
+[test]
+[input]
+4333
+64
+333
+150
+1234
+100
+6
+66
+335
+End
+[/input]
+[output]
+Product sold!
+Product sold!
+Error in transaction!
+Product sold!
+Product sold!
+Error in transaction!
+Product sold!
+Product sold!
+Failed to collect required money for charity.
+[/output]
+[/test]
+[test]
+[input]
+600
+25
+346
+100
+256
+[/input]
+[output]
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Average CS: 62.50
+Average CC: 301.00
+[/output]
+[/test]
+[test]
+[input]
+777
+120
+6
+333
+8
+453
+134
+End
+[/input]
+[output]
+Error in transaction!
+Error in transaction!
+Error in transaction!
+Error in transaction!
+Error in transaction!
+Product sold!
+Failed to collect required money for charity.
+[/output]
+[/test]
+[test]
+[input]
+2983
+35
+995
+94
+937
+38
+593
+End
+[/input]
+[output]
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Product sold!
+Failed to collect required money for charity.
 [/output]
 [/test]
 [/tests]

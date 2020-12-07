@@ -1,6 +1,6 @@
 [slide]
-# Problem: Vegetable Market
-[code-task title="Vegetable Market" taskId="27-01E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Pet Shop
+[code-task title="Pet Shop" taskId="27-01E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,171 +14,139 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Gardener is selling his harvest at the vegetable market. 
+Write a program that calculates the expenses for buying food for dogs and other animals. 
 
-He sells vegetables for N dollars per kilogram and fruits for M dollars per kilogram. 
-
-Write a program that calculates the income from the harvest in euros (1 USD = 0.89 EUR).
+Each package of food for dogs costs 2.5 dollars, and every other that\'s NOT for them - 4 dollars.
 
 ## Input
-The input will be 4 numbers, each on a single line:
-- The price of kilogram vegetables - floating-point number [0.00… 1000.00]
-- The price of kilogram fruits - floating-point number [0.00… 1000.00]
-- The total kilograms of vegetables - integer [0… 1000]
-- The total kilograms of fruits - integer [0… 1000]
+
+The input will be two lines from the console:
+- Number of dogs - integer in range \[0… 100\]
+- Number of the others animals - integer in range \[0… 100\]
 
 ## Output
-Print on the console a single number: the income from all of the fruits and vegetables in euro.
-
-The result should be formatted to the second decimal point.
+Print on the console: "\{total sum\} dollars". The result should be formatted to the second decimal point.
 
 ## Examples
 
-| Input | Output | Comments |
-| --- | --- | --- |
-| 0.194 | 174.39 | The vegetables cost - 0.194$ \* 10kg = 1.94$ |
-| 19.4 | | The fruits cost - 19.4$ \* 10kg  = 194$ |
-| 10 | | Total - 195.94$ = 174.39€ |
-| 10 | | |
+| Input | Output |
+| --- | --- |
+| 5 | 28.50 dollars |
+| 4 | |
+
 
 | Input | Output |
 | --- | --- |
-| 1.5 | 35.60 |
-| 2.5 | |
-| 10 | | 
-| 10 | | 
+| 13 | 68.50 dollars |
+| 9 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-0.194
-19.4
-10
-10
+5
+4
 [/input]
 [output]
-174.39
+28.50 dollars
 [/output]
 [/test]
 [test open]
 [input]
-1.5
-2.5
-10
-10
+13
+9
 [/input]
 [output]
-35.60
+68.50 dollars
 [/output]
 [/test]
 [test]
 [input]
-12.23
-10
-153
+11
+3
+[/input]
+[output]
+39.50 dollars
+[/output]
+[/test]
+[test]
+[input]
+15
+2
+[/input]
+[output]
+45.50 dollars
+[/output]
+[/test]
+[test]
+[input]
+14
 12
 [/input]
 [output]
-1772.16
+83.00 dollars
+[/output]
+[/test]
+[test]
+[input]
+11
+17
+[/input]
+[output]
+95.50 dollars
+[/output]
+[/test]
+[test]
+[input]
+19
+0
+[/input]
+[output]
+47.50 dollars
+[/output]
+[/test]
+[test]
+[input]
+20
+4
+[/input]
+[output]
+66.00 dollars
 [/output]
 [/test]
 [test]
 [input]
 0
 0
-0
-0
 [/input]
 [output]
-0.00
+0.00 dollars
 [/output]
 [/test]
 [test]
 [input]
-1
-1
-1
-1
+6
+15
 [/input]
 [output]
-1.78
+75.00 dollars
 [/output]
 [/test]
 [test]
 [input]
-19.4
-0.0194
-200
-102
+24
+88
 [/input]
 [output]
-3454.96
+412.00 dollars
 [/output]
 [/test]
 [test]
 [input]
-1000
-1000
-1000
-1000
+30
+20
 [/input]
 [output]
-1780000.00
-[/output]
-[/test]
-[test]
-[input]
-999.999
-1929212
-75
-23
-[/input]
-[output]
-39557719.57
-[/output]
-[/test]
-[test]
-[input]
-0.018
-0.217
-546
-897
-[/input]
-[output]
-181.98
-[/output]
-[/test]
-[test]
-[input]
-14.85
-13
-932
-123
-[/input]
-[output]
-13740.89
-[/output]
-[/test]
-[test]
-[input]
-232.21
-329.99
-10
-10
-[/input]
-[output]
-5003.58
-[/output]
-[/test]
-[test]
-[input]
-42
-42
-42
-42
-[/input]
-[output]
-3139.92
+155.00 dollars
 [/output]
 [/test]
 [/tests]

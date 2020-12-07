@@ -1,6 +1,6 @@
 [slide]
-# Problem: Graduation
-[code-task title="Graduation" taskId="27-05E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Stream Of Letters
+[code-task title="Stream Of Letters" taskId="27-05E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,182 +14,476 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+You will receive symbols the "**End**" command. 
 
-Write a program that calculates the **average grade** of a student from his entire education. 
+You skip the **non-letter chars** and the first occurence of **c**, **o**  and **n** (code chars).
+
+When you **first receive** one of these letters, you have to mark it as visited, **but it is not saved in the word**.
+
+After you have found **all three code chars from the command**, you have to print the word with a space and reset the counting of the code chars.
 
 ## Input
-- On the first line you will receive **the name of the student**, and on each following line his annual grades. - The student passes to upper class, if his **annual grade is 4.00 or greater**. 
-- If his grade is less than 4.00, he has to **repeat** the class.
+- Read a sequence of lines with a single symbol each, until you receive the "**End**" command
 
 ## Output
-- If the student graduates **12th** class, you have to print:
-    - "\{student name\} graduated. Average grade: \{average grade from his entire education\}"
-
-**The grade should be formatted to the second decimal point.**
+- Print on the console **every word after the secret command** followed by **space**
 
 ## Example
-
 | **Input** | **Output** |
-| --- | --- | 
-| John | John graduated. Average grade: 5.37 | 
-| 4 | |
-| 5.5 | | 
-| 6 | | 
-| 5.43 | |
-| 4.5 | | 
-| 6 | | 
-| 5.55 | | 
-| 5 | | 
-| 6 | | 
-| 6 | | 
-| 5.43 | |
-| 5 | |
+| --- | --- |
+| H | Hello |
+| n| |
+| e| |
+| l| |
+| l| |
+| o| | 
+| o| |
+| c| |
+| End| |
+
+### Comments
+- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
+- First we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
+- The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
+- We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| % | BooM |
+| \!| |
+|  c|
+| ^| |
+| B| |
+| \`| | 
+| o| |
+| %| |
+| o| |
+| o| |
+| M| |
+| \)| |
+| n| |
+| A| |
+| D| |
+| End| |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| o | Solve me |
+| S | |
+| % | |
+| o | |
+| l | |
+| ^ | |
+| v | |
+| e | |
+| c | |
+| n | |
+| & | |
+| m | |
+| e | |
+| c | |
+| o | |
+| n | |
+| End | |
+
 [/task-description]
 [tests]
 [test open]
 [input]
-David
-4
-5.5
-6
-5.43
-4.5
-6
-5.55
-5
-6
-6
-5.43
-5
-6
+H
+n
+e
+l
+l
+o
+o
+c
+t
+c
+h
+o
+e
+r
+e
+n
+e
+End
 [/input]
 [output]
-David graduated. Average grade: 5.37
+Hello there 
+[/output]
+[/test]
+[test open]
+[input]
+%
+\!
+c
+^
+B
+\`
+o
+%
+o
+o
+M
+\)
+\{
+n
+\\
+A
+D
+End
+[/input]
+[output]
+BooM 
 [/output]
 [/test]
 [test]
 [input]
-Ani
-5
-5.32
-6
-5.43
-5
-6
-5.5
-4.55
-5
-6
-5.56
-6
-5
+o
+S
+%
+o
+l
+^
+v
+e
+c
+n
+&
+m
+e
+c
+o
+n
+End
 [/input]
 [output]
-Ani graduated. Average grade: 5.45
+Solve me 
 [/output]
 [/test]
 [test]
 [input]
-John
-5
-5
-5
-6
-5.5
-5
-6
-5.44
-5
-5
-5
-5
-6
-5.45
+c
+c
+o
+o
+n
+n
+End
 [/input]
 [output]
-John graduated. Average grade: 5.25
+co 
 [/output]
 [/test]
 [test]
 [input]
-Prakash
-5
-5.43
-5.55
-6
-5.87
-5.90
-6
-6
-5.45
-5
-6
-5.76
+%
+$
+\!
+\)
+\(
+\{
+\}
+End
 [/input]
 [output]
-Prakash graduated. Average grade: 5.66
 [/output]
 [/test]
 [test]
 [input]
-Monica
-6
-5.5
-5.75
-6
-6
-5
-6
-5.90
-6
-6
-5
-6
+H
+e
+c
+o
+@
+r
+%
+e
+n
+w
+c
+o
+e
+n
+g
+o
+c
+o
+n
+w
+i
+t
+n
+o
+h
+c
+t
+h
+c
+\*
+o
+e
+n
+s
+i
+g
+&
+n
+n
+s
+@
+c
+o
+%
+n
+End
 [/input]
 [output]
-Monica graduated. Average grade: 5.76
+Here we go with the signs 
 [/output]
 [/test]
 [test]
 [input]
-Alex
-4
-5
-5.5
-3.99
-6
-6
-5
-4.5
-6
-5.56
-6
-6
-4
+o
+n
+C
+c
+n
+c
+O
+o
+c
+o
+N
+n
+End
 [/input]
 [output]
-Alex graduated. Average grade: 5.30
+C O N 
 [/output]
 [/test]
 [test]
 [input]
-Alen
-5.6
-6
-4
-4
-5
-6
-3
-6
-5.4
-4.5
-6
-5.55
-6
+c
+o
+n
+n
+c
+o
+n
+o
+c
+End
 [/input]
 [output]
-Alen graduated. Average grade: 5.34
+   
+[/output]
+[/test]
+[test]
+[input]
+I
+c
+n
+n
+o
+t
+c
+h
+o
+e
+n
+n
+e
+n
+c
+d
+o
+L
+i
+n
+k
+i
+n
+P
+a
+r
+k
+End
+[/input]
+[output]
+In the end 
+[/output]
+[/test]
+[test]
+[input]
+T
+c
+h
+e
+o
+r
+e
+n
+I
+c
+s
+o
+n
+A
+c
+o
+n
+H
+i
+c
+d
+d
+e
+n
+n
+o
+M
+e
+n
+s
+s
+o
+a
+g
+e
+c
+o
+N
+o
+t
+c
+n
+o
+P
+r
+i
+n
+n
+t
+e
+d
+c
+M
+a
+d
+e
+Y
+o
+u
+L
+o
+o
+k
+\!
+End
+[/input]
+[output]
+There Is A Hidden Message Not Printed 
+[/output]
+[/test]
+[test]
+[input]
+O
+u
+t
+%
+O
+f
+%
+I
+d
+e
+a
+s
+End
+[/input]
+[output]
+[/output]
+[/test]
+[test]
+[input]
+I
+c
+o
+n
+$
+L
+c
+i
+k
+o
+e
+n
+^
+c
+N
+o
+a
+r
+u
+t
+o
+n
+%
+a
+n
+d
+^
+t
+h
+i
+n
+k
+&
+t
+h
+a
+t
+\)
+p
+e
+o
+p
+l
+e
+@
+a
+r
+e
+\+
+b
+i
+a
+s
+e
+d
+\(
+t
+o
+w
+a
+r
+d
+s
+\)
+A
+n
+i
+m
+e
+s
+End
+[/input]
+[output]
+I Like Naruto 
 [/output]
 [/test]
 [/tests]

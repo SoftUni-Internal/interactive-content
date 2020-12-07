@@ -1,6 +1,6 @@
 [slide]
-# Problem: Coding
-[code-task title="Coding" taskId="27-06E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+# Problem: Train the Trainers
+[code-task title="Train the Trainers" taskId="27-06E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,220 +14,450 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+The course "Train the trainers" is ending and the final evaluation approaches.
 
-Write a program that reads **an integer N** from the console. The console should print **as many lines as the count of digits N has**. The **first line** corresponds to the **units**, the second to the **tens**, third to the **hundreds** of number, etc., until there are **no more digits** of the number.
+Help the jury which by writing a program to calculate the **average score** of **each presentation** by a student, and the **average of all of them**.
 
-On each line you must print a **symbol**, which meets the following conditions:
+## Input
+- From the console of the first row read the number of people on the jury - **n** - an integer in the range \[1...20\]
+- Then on a separate line read the name of the presentation - **String**
+- For each presentation of the new line is read **n - the number of ratings** - real number in the interval \[2.00 ... 6.00\]
 
-- The symbol, which must be printed, can be found in the \[ASCII\](http://www.asciitable.com/) table. Its **decimal ASCII code** is calculated by adding **33** to the digit of the input number that corresponds to a given line
-- The symbol must be printed **as many times as the digit** corresponding to this line
-- If a given line **matches the digit 0**, on this line is printed "**ZERO**" once
+## Output
+- After calculating the **average score** for a particular presentation, print to the console:   
+   "\{name of the presentation\} \- \{average score\}."
+- After receiving the command "**Finish**" on the console, print:    
+    "Student\'s final assessment is \{average presentations of all presentations\}." and the program ends.
+
+All scores must be formatted to the **second decimal point**.
 
 ## Example
 
 | **Input** | **Output** |
 | --- | --- |
-| 2049 | \*\*\*\*\*\*\*\*\* | 
-| | %%%% |
-| | ZERO |
-| | \#\# |
+| 2 | While-Loop - 5.75. |
+| While-Loop | For-Loop - 5.75. |
+| 6.00 | Student\'s final assessment is 5.75. |
+| 5.50 | |
+| For-Loop | | 
+| 5.84 | |
+| 5.66 | | 
+| Finish | | 
 
-### Comments
-- The number 2049 has four digits so we will print four rows.
-- The first line corresponds to the digit 9. We add 33 to 9 and get 42.
-- This is the decimal ASCII code of the symbol it should be print on the first row.
-- From the ASCII table we know that the corresponding symbol of 42 is '\*'. 
-- Because to the first line corresponds the digit 9 we print '\*' 9 times.
-- For the second line the digit is 4. 4\+33=37. Using ASCII table we find that the symbol to print is '%'. 
-- We print '%' 4 times.
-- The third line matches a digit 0. On this line we print ZERO once.
-- The last digit of the number is 2. 2\+33=35.
-- From the ASCII table we find the symbol to print - '\#' and we print it twice.
-
-### Hints
-- Read the number as a String, save its length in a variable using the **length() method**. Find more **information** about it on the Internet
-- To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable. Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
+## Comments
+- 2 – the number of people on the jury - therefore gain a 2 evaluations of the presentation:
+    - \(6.00 \+ 5.50\) / 2 = 5.75
+    - \(5.84 \+ 5.66\) / 2 = 5.75
+- \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75 
 [/task-description]
 [tests]
 [test open]
 [input]
-2049
+2
+While\-Loop
+6.00
+5.50
+For\-Loop
+5.84
+5.66
+Finish
 [/input]
 [output]
-\*\*\*\*\*\*\*\*\*
-%%%%
-ZERO
-\#\#
+While\-Loop \- 5.75.
+For\-Loop \- 5.75.
+Student\'s final assessment is 5.75.
 [/output]
 [/test]
 [test]
 [input]
-9347439
+3
+Arrays
+4.53
+5.23
+5.00
+Lists
+5.83
+6.00
+5.42
+Finish
 [/input]
 [output]
-\*\*\*\*\*\*\*\*\*
-$$$
-%%%%
-\(\(\(\(\(\(\(
-%%%%
-$$$
-\*\*\*\*\*\*\*\*\*
+Arrays \- 4.92.
+Lists \- 5.75.
+Student's final assessment is 5.34.
 [/output]
 [/test]
 [test]
 [input]
-123456789
+2
+Objects and Classes
+5.77
+4.23
+Dictionaries
+4.62
+5.02
+RegEx
+2.88
+3.42
+Finish
 [/input]
 [output]
-\*\*\*\*\*\*\*\*\*
-\)\)\)\)\)\)\)\)
-\(\(\(\(\(\(\(
-''''''
-&&&&&
-%%%%
-$$$
-\#\#
-"
+Objects and Classes \- 5.00.
+Dictionaries \- 4.82.
+RegEx \- 3.15.
+Student's final assessment is 4.32.
 [/output]
 [/test]
 [test]
 [input]
-1
+3
+Linear Data Structures
+5.43
+6.23
+5.21
+Sets And Maps
+4.24
+2.43
+5.23
+Files And Directories
+4.34
+5.24
+6.00
+String Processing
+3.34
+5.23
+2.54
+Functional Programming
+2.45
+5.34
+5.75
+Stream API
+3.45
+5.34
+3.54
+Finish
 [/input]
 [output]
-"
+Linear Data Structures \- 5.62.
+Sets And Maps \- 3.97.
+Files And Directories \- 5.19.
+String Processing \- 3.70.
+Functional Programming \- 4.51.
+Stream API \- 4.11.
+Student's final assessment is 4.52.
 [/output]
 [/test]
 [test]
 [input]
-1001
+2
+Defining Classes
+5.43
+5.21
+Encapsulation
+4.24
+2.44
+Inheritance
+4.34
+5.24
+Polymorphism
+3.34
+2.54
+Interfaces and Abstraction
+2.45
+5.34
+Finish
 [/input]
 [output]
-"
-ZERO
-ZERO
-"
+Defining Classes \- 5.32.
+Encapsulation \- 3.34.
+Inheritance \- 4.79.
+Polymorphism \- 2.94.
+Interfaces and Abstraction \- 3.90.
+Student's final assessment is 4.06.
 [/output]
 [/test]
 [test]
 [input]
-19557
+3
+Generics
+5.43
+4.34
+5.21
+Iterators and Comparators
+4.24
+5.34
+2.43
+Enumerations and Annotations
+4.34
+5.24
+5.24
+Reflection
+3.34
+5.32
+2.54
+Unit testing
+2.45
+5.34
+5.34
+Finish
 [/input]
 [output]
-\(\(\(\(\(\(\(
-&&&&&
-&&&&&
-\*\*\*\*\*\*\*\*\*
-"
+Generics \- 4.99.
+Iterators and Comparators \- 4.00.
+Enumerations and Annotations \- 4.94.
+Reflection \- 3.73.
+Unit testing \- 4.38.
+Student's final assessment is 4.41.
 [/output]
 [/test]
 [test]
 [input]
-526576543
+4
+Open Closed and Liskov Principle
+5.42
+4.34
+5.21
+4.24
+Object Communication and Events
+4.24
+5.34
+5.43
+2.43
+Exam Preparation I
+4.34
+5.24
+2.43
+5.24
+Exam Preparation II
+3.34
+5.32
+4.23
+2.54
+Exam Preparation III
+2.45
+4.23
+5.34
+5.34
+Finish
 [/input]
 [output]
-$$$
-%%%%
-&&&&&
-''''''
-\(\(\((\(\(\(
-&&&&&
-''''''
-\#\#
-&&&&&
+Open Closed and Liskov Principle \- 4.80.
+Object Communication and Events \- 4.36.
+Exam Preparation I \- 4.31.
+Exam Preparation II \- 3.86.
+Exam Preparation III \- 4.34.
+Student's final assessment is 4.33.
 [/output]
 [/test]
 [test]
 [input]
-100000000
+2
+Data Definition And Data Types
+5.43
+5.21
+Basic CRUD
+4.23
+2.43
+Built\-in Functions
+5.34
+5.99
+Data Aggregation
+5.24
+6.00
+Table Relations
+5.34
+5.23
+Subqueries and JOINs
+5.74
+5.00
+Functions Triggers And Transactions
+5.66
+4.74
+Finish
 [/input]
 [output]
-ZERO
-ZERO
-ZERO
-ZERO
-ZERO
-ZERO
-ZERO
-ZERO
-"
+Data Definition And Data Types \- 5.32.
+Basic CRUD \- 3.33.
+Built\-in Functions \- 5.67.
+Data Aggregation \- 5.62.
+Table Relations \- 5.29.
+Subqueries and JOINs - 5.37.
+Functions Triggers And Transactions \- 5.20.
+Student's final assessment is 5.11.
 [/output]
 [/test]
 [test]
 [input]
-999999999
+3
+Java Basics
+5.43
+5.21
+6.00
+Java OOP Overview
+4.24
+5.43
+6.00
+Java OOP Principles
+5.34
+5.99
+6.00
+Java Fundamentals
+5.24
+6.00
+6.00
+Finish
 [/input]
 [output]
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
+Java Basics \- 5.55.
+Java OOP Overview \- 5.22.
+Java OOP Principles \- 5.78.
+Java Fundamentals \- 5.75.
+Student's final assessment is 5.57.
 [/output]
 [/test]
 [test]
 [input]
-987654321
+3
+HTML and CSS Overview
+5.43
+4.23
+5.21
+HTML Structure
+4.24
+5.56
+2.43
+Introduction To CSS
+5.34
+5.76
+5.99
+CSS In Depth
+5.24
+3.65
+6.00
+CSS Formatting
+5.34
+3.67
+5.23
+CSS Positioning
+5.74
+2.54
+5.00
+Creating Landing Pages
+5.66
+3.43
+4.74
+Finish
 [/input]
 [output]
-"
-\#\#
-$$$
-%%%%
-&&&&&
-''''''
-\(\(\(\(\(\(\(
-\)\)\)\)\)\)\)\)
-\*\*\*\*\*\*\*\*\*
+HTML and CSS Overview \- 4.96.
+HTML Structure \- 4.08.
+Introduction To CSS \- 5.70.
+CSS In Depth \- 4.96.
+CSS Formatting \- 4.75.
+CSS Positioning \- 4.43.
+Creating Landing Pages \- 4.61.
+Student's final assessment is 4.78.
 [/output]
 [/test]
 [test]
 [input]
-20709428
+4
+Introduction to JavaScript
+5.43
+4.65
+4.23
+5.21
+Introduction to DOM and Events
+4.27
+4.70
+5.58
+2.45
+Introduction to jQuery
+5.34
+4.00
+5.76
+5.99
+Introduction to AJAX
+5.24
+3.00
+3.65
+6.00
+Finish
 [/input]
 [output]
-\)\)\)\)\)\)\)\)
-\#\#
-%%%%
-\*\*\*\*\*\*\*\*\*
-ZERO
-\(\(\(\(\(\(\(
-ZERO
-\#\#
+Introduction to JavaScript \- 4.88.
+Introduction to DOM and Events \- 4.25.
+Introduction to jQuery \- 5.27.
+Introduction to AJAX \- 4.47.
+Student's final assessment is 4.72.
 [/output]
 [/test]
 [test]
 [input]
-9037309
+2
+Data Types and Variables
+4.23
+5.21
+Methods, Debugging and Troubleshooting Code
+4.24
+5.56
+Arrays
+5.34
+5.99
+Lists
+5.24
+6.00
+Dictionaries, Lambda and LINQ
+5.34
+5.23
+Finish
 [/input]
 [output]
-\*\*\*\*\*\*\*\*\*
-ZERO
-$$$
-\(\(\(\(\(\(\(
-$$$
-ZERO
-\*\*\*\*\*\*\*\*\*
+Data Types and Variables \- 4.72.
+Methods, Debugging and Troubleshooting Code \- 4.90.
+Arrays \- 5.67.
+Lists \- 5.62.
+Dictionaries, Lambda and LINQ \- 5.29.
+Student's final assessment is 5.24.
 [/output]
 [/test]
 [test]
 [input]
-367377098
+4
+Objects and Classes
+4.23
+2.00
+5.21
+3.38
+Strings and Text Processing
+4.24
+4.23
+5.21
+5.56
+Regular Expressions (RegEx)
+5.34
+4.00
+5.99
+3.45
+Exam Preparation I
+3.46
+5.25
+4.89
+6.00
+Exam Preparation II
+5.36
+3.35
+5.25
+4.44
+Finish
 [/input]
 [output]
-\)\)\)\)\)\)\)\)
-\*\*\*\*\*\*\*\*\*
-ZERO
-\(\(\(\(\(\(\(
-\(\(\(\(\(\(\(
-$$$
-\(\(\(\(\(\(\(
-''''''
-$$$
+Objects and Classes \- 3.71.
+Strings and Text Processing \- 4.81.
+Regular Expressions (RegEx) \- 4.70.
+Exam Preparation I \- 4.90.
+Exam Preparation II \- 4.60.
+Student's final assessment is 4.54.
 [/output]
 [/test]
 [/tests]

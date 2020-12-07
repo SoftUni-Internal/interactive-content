@@ -1,6 +1,6 @@
 [slide]
-# Problem: Walking
-[code-task title="Walking" taskId="27-05E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+# Problem: Dishwasher
+[code-task title="Dishwasher" taskId="27-05E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,225 +14,218 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
+John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
 
-Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
-- "**Goal reached! Good job!**".
+Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
 
-In case she wants to go home **before** reaching the goal, she will enter "**Going home**" command and the **steps** she had **walked** while she was **going home**. 
+It is known that each bottle contains **750 ml.** detergent. 
 
-After that, if she didn\'t manage to reach her goal, you have to print the following massage on the console: 
-- "\{difference in steps\} more steps to reach goal."
+For 1 **plate** 5 ml is needed, and for a **pots** 15 ml. 
 
-## Examples
+Accept that on every **third** filling with vessels, the dishwasher is filled only with pots, and the other times with plates. 
+
+Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
+
+# Input
+Read from the console: 
+- **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
+
+On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
+
+# Output
+- In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
+    - "Detergent was enough!"
+    - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
+    - "Leftover detergent \{amount of detergent remaining\} ml." 
+- If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
+    - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
+
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
-| 1000 | Goal reached! Good job! |
-| 1500| | 
-| 2000| | 
-| 6500| |
+| 2 | Detergent was enough! |
+| 53 | 118 dishes and 55 pots were washed. |
+| 65 | Leftover detergent 85 ml. |
+| 55 | |
+| End | |
 
+### Comments
+- Detergent quantity = 2 \* 750 = 1500 ml.
+- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
+- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
+- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
+- We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
 
+## Example
 | **Input** | **Output** |
 | --- | --- |
-| 1500 | 2500 more steps to reach goal. |
-| 300| |
-| 2500| |
-| 3000| |
-| Going home| |
-| 200| | |
+| 1 | Not enough detergent, 100 ml. more necessary! |
+| 10 | |
+| 15 | |
+| 10 | |
+| 12 | |
+| 13 | |
+| 30 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-1000
-1500
-2000
-6500
+2
+53
+65
+55
+End
 [/input]
 [output]
-Goal reached! Good job!
+Detergent was enough!
+118 dishes and 55 pots were washed.
+Leftover detergent 85 ml.
 [/output]
 [/test]
 [test open]
 [input]
-1500
-300
-2500
-3000
-Going home
-200
-[/input]
-[output]
-2500 more steps to reach goal.
-[/output]
-[/test]
-[test]
-[input]
-1500
-3000
-250
-1548
-2000
-Going home
-2000
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-125
-250
-4000
-30
-2678
-4682
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-Going home
-10000
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-Going home
-2000
-[/input]
-[output]
-8000 more steps to reach goal.
-[/output]
-[/test]
-[test]
-[input]
-1000
-1000
-2333
-1234
-12455
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-10000
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-50
-505
-50
-50
-50
-50
-50
-50
-50
-20
-450
-30
-30
-30
-20
-10
-30
 1
-20
+10
+15
+10
+12
+13
 30
-340
-1000
+[/input]
+[output]
+Not enough detergent, 100 ml. more necessary!
+[/output]
+[/test]
+[test]
+[input]
+2
+53
+65
+55
+End
+[/input]
+[output]
+Detergent was enough!
+118 dishes and 55 pots were washed.
+Leftover detergent 85 ml.
+[/output]
+[/test]
+[test]
+[input]
+1
+10
+15
+10
+12
+13
 30
-40
-200
-30
-200
+[/input]
+[output]
+Not enough detergent, 100 ml. more necessary!
+[/output]
+[/test]
+[test]
+[input]
+2
+25
+50
+75
+End
+[/input]
+[output]
+Detergent was enough!
+75 dishes and 75 pots were washed.
+Leftover detergent 0 ml.
+[/output]
+[/test]
+[test]
+[input]
+2
+25
+50
+75
+1
+[/input]
+[output]
+Not enough detergent, 5 ml. more necessary!
+[/output]
+[/test]
+[test]
+[input]
+3
+66
+33
+99
+End
+[/input]
+[output]
+Detergent was enough!
+99 dishes and 99 pots were washed.
+Leftover detergent 270 ml.
+[/output]
+[/test]
+[test]
+[input]
+3
+38
+47
+59
+75
+31
+29
+[/input]
+[output]
+Not enough detergent, 25 ml. more necessary!
+[/output]
+[/test]
+[test]
+[input]
+4
+25
+39
+31
 20
-20
-1000
-1000
-305
-5066
+49
+66
+33
+25
+End
 [/input]
 [output]
-Goal reached! Good job!
+Detergent was enough!
+191 dishes and 97 pots were washed.
+Leftover detergent 590 ml.
 [/output]
 [/test]
 [test]
 [input]
-100
-100
-200
-3004
-3445
-2344
-Going home
-4000
+1
+32
+33
+45
 [/input]
 [output]
-Goal reached! Good job!
+Not enough detergent, 250 ml. more necessary!
 [/output]
 [/test]
 [test]
 [input]
-1321
-1345
-457
-6577
-Going home
-20
+4
+52
+3
+13
+39
+86
+50
+49
+37
+End
 [/input]
 [output]
-280 more steps to reach goal.
-[/output]
-[/test]
-[test]
-[input]
-Going home
-4500
-[/input]
-[output]
-5500 more steps to reach goal.
-[/output]
-[/test]
-[test]
-[input]
-350
-120
-1204
-1245
-7432
-[/input]
-[output]
-Goal reached! Good job!
-[/output]
-[/test]
-[test]
-[input]
-5000
-344
-234
-2344
-Going home
-200
-[/input]
-[output]
-1878 more steps to reach goal.
+Detergent was enough!
+266 dishes and 63 pots were washed.
+Leftover detergent 725 ml.
 [/output]
 [/test]
 [/tests]

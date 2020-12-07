@@ -1,6 +1,6 @@
 [slide]
-# Problem: Trade Commissions
-[code-task title="Trade Commissions" taskId="27-02AE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Point on Rectangle Border
+[code-task title="Point on Rectangle Border" taskId="27-02AE-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,201 +14,277 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-
-A company pays the following commissions to its employees according to the city they work in and the amount of sales:
-
-| **Sales / City** | London | New York | Sydney|
-| --- | --- | --- | --- | 
-| \[0-500\] | 5% | 4.5% | 5.5% |
-| \[501-1000\] | 7% | 7.5% | 8% | 
-| \[1001-10000\] | 8% | 10% | 12% |
-| > 10000| 12% | 13% | 14.5% |
-
-Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
+Write a program to check if a **point {x, y}** is **on** some of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
 
 ## Input
-Read from the console two lines:
-- Name of a city - String
-- Amount of sales - floating-point number
+The input comes from the console and it consists of **6 rows, introduced from the user: real numbers x1, y1, x2, y2, x and y** (it will be always true that **x1 < x2** and **y1 < y2**).
 
 ## Output
-- Print on the console the calculated value of trade commission.
-- The result should be **formatted to the second decimal point**. 
-- If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
+If the point lies on one of the rectangle's sides:
+- Print "**Border**"
+
+If the point does NOT lie on a side:
+- Print "**Inside / Outside**"
 
 ## Example
-| **Input** | **Output** |  
+| **Input** | **Output** 
 | --- | --- |
-| London | 120.00 | 
-| 1500 | |  
-
+| 2 | Inside / Outside |
+| -3 | |
+| 12 | |
+| 3 | |
+| 8 | |
+| -1 | | 
 
 | **Input** | **Output** | 
-| --- | --- | 
-| Moscow | error |
-| -50 | |
+|  --- | --- |
+| 2 | Border|
+| -3 | |
+| 12 | |
+| 3 | |
+| 12 | |
+| -1 | |
+
+\* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
+
+- **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
+- **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
+
+You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
 [/task-description]
 [tests]
 [test open]
 [input]
-London
-1500
+2
+-3
+12
+3
+8
+-1
 [/input]
 [output]
-120.00
+Inside / Outside
 [/output]
 [/test]
 [test open]
 [input]
-Moscow
--50
+2
+-3
+12
+3
+12
+-1
 [/input]
 [output]
-error
+Border
 [/output]
 [/test]
 [test]
 [input]
-Sydney
-499.99
+2
+-3
+12
+3
+-8
+-1
 [/input]
 [output]
-27.50
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-New York
-3874.50
+2
+-3
+12
+3
+80
+-1
 [/input]
 [output]
-387.45
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Moscow
--50
+2
+-3
+12
+3
+-8
+-10
 [/input]
 [output]
-error
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-London
-0.6
+2
+-3
+12
+3
+8
+100.5
 [/input]
 [output]
-0.03
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-London
-501
+2
+-3
+12
+3
+2
+-1
 [/input]
 [output]
-35.07
+Border
 [/output]
 [/test]
 [test]
 [input]
-London
-10005
+2
+-3
+12
+3
+6.28
+-3
 [/input]
 [output]
-1200.60
+Border
 [/output]
 [/test]
 [test]
 [input]
-New York
-500
+2
+-3
+12
+3
+10
+3
 [/input]
 [output]
-22.50
+Border
 [/output]
 [/test]
 [test]
 [input]
-New York
-1000
+2
+-3
+12
+3
+2
+3
 [/input]
 [output]
-75.00
+Border
 [/output]
 [/test]
 [test]
 [input]
-New York
-9999.9999
+2
+-3
+12
+3
+1
+3
 [/input]
 [output]
-1000.00
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-New York
-350824
+2
+-3
+12
+3
+2
+4
 [/input]
 [output]
-45607.12
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Sydney
-1.25
+2
+-3
+12
+3
+12
+4
 [/input]
 [output]
-0.07
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Sydney
-1000
+2
+-3
+12
+3
+13.456
+3
 [/input]
 [output]
-80.00
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Sydney
-8543.86
+2
+-3
+12
+3
+14
+-3
 [/input]
 [output]
-1025.26
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Sydney
-10000.01
+2
+-3
+12
+3
+12
+-4
 [/input]
 [output]
-1450.00
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Madrid
-1500
+2
+-3
+12
+3
+2
+-5
 [/input]
 [output]
-error
+Inside / Outside
 [/output]
 [/test]
 [test]
 [input]
-Sydney
--20
+2
+-3
+12
+3
+1.43
+-3
 [/input]
 [output]
-error
+Inside / Outside
 [/output]
 [/test]
 [/tests]

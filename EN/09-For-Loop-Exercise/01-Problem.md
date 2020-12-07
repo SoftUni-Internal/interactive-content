@@ -1,6 +1,6 @@
 [slide]
-# Problem: Back to the Past
-[code-task title="Back to the Past" taskId="27-04E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Bills
+[code-task title="Bills" taskId="27-04E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,134 +14,249 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh is 18 years old and receives a legacy that consists of X amount of money and time machine. 
 
-He decided to return until 1800, but he did not know if the money would suffice to live without working.
+Write a program to calculate the average cost per month for a family over a period of time. For each month the costs are as follows:
 
-Write a program that calculates whether Josh will have enough money to not have to work until a certain year. 
-- Assuming that for every even (1800, 1802, etc.) year will spend 12 000 dollars. 
-- For each odd (1801, 1803, etc.) will spend 12 000 + 50 \* \[the years age in a given year\].
+- For electricity - every month the bill is different and will be read from the console
+- For water - 20$
+- For Internet - 15$
+- For others - sum the bills for electricity, water and Internet and add 20%
 
-## Input
-The input is read from the console and contains exactly 2 lines:
-- Legacy money – real number in range \[1.00... 1,000,000.00\] 
-- Year to be lived (inclusive) – integer in range \[1801... 1900\]
+For each bill, you need to calculate how much total is paid for all months.
 
-## Output
-Print on the console a single line. The amount must be formatted to two decimal digits:
-- If the money are enough:
-    - "Yes! He will live a carefree life and will have \{N\} dollars left." – where N are the money that will remain
-- If the money are NOT enough:
-    - "He will need \{М\} dollars to survive." - where M are money he needs
+# Input
+
+The input is read from the console: 
+
+- The months for which the average cost is searched – integer in range \[1... 100\] 
+- For each month – the bill for electricity – a real number in range \[1.00... 1000.00\]
+
+# Output
+Print to the console 5 rows: 
+- "Electricity: \{electricity for all months\} $" 
+- "Water: \{water for all months\} $" 
+- "Internet: \{Internet for all months\} $" 
+- "Other: \{Other for all months\} $" 
+- "Average: \{Average all costs per month\} $ "
+
+All bills sohould be formatted to the 2nd digit after the decimal point.
 
 ## Example
 
 | Input | Output |
 | --- | --- |
-| 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
-| 1802 | |
+| 5 | Electricity: 447.16 $ |
+| 68.63 | Water: 100.00 $ |
+| 89.25 | Internet: 75.00 $ |
+| 132.53 | Other: 746.59 $ |
+| 93.53 | Average: 273.75 $ |
+| 63.22 | |
 
 ### Comments
-- 1800 -> even year;
-    - Josh spends 12000 dollars
-    - 50000 – 12000 = 38000 dollars remain
-- 1801 -> odd year 
-    - he spends 12000 + 19 \* 50 = 12000 + 950 = 12950 dollars
-    - 38000 – 12950 = 25050 dollars remain
-- 1802 -> even year
-    - he spends 12000 dollars
-    - 25050 – 12000 = 13050 dollars remain
+For 5 months:
+- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
+- Water -> 5 months \* 20$ = 100$
+- Internet -> 5 months \* 15$ = 75$
+- Others:
+    - 68.63+20+15) + 20% = 124.356  
+    - (89.25+20+15) + 20% = 149.1
+    - (132.53+20+15) + 20% = 201.036
+    - (93.53+20+15) + 20% = 154.236
+    - (63.22+20+15) + 20% = 117.864
+- Total = 746.592$
+- Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
 
 [/task-description]
 [tests]
 [test open]
 [input]
-50000
-1802
+5
+68.63
+89.25
+132.53
+93.53
+63.22
 [/input]
 [output]
-Yes! He will live a carefree life and will have 13050.00 dollars left.
+Electricity: 447.16 $
+Water: 100.00 $
+Internet: 75.00 $
+Other: 746.59 $
+Average: 273.75 $
 [/output]
 [/test]
 [test]
 [input]
-100000.15
-1808
+8
+123.54
+231.54
+140.23
+100
+122.4
+430
+178.52
+64.2
 [/input]
 [output]
-He will need 12399.85 dollars to survive.
+Electricity: 1390.43 $
+Water: 160.00 $
+Internet: 120.00 $
+Other: 2004.52 $
+Average: 459.37 $
 [/output]
 [/test]
 [test]
 [input]
-1000000
-1860
+10
+123
+321
+123
+321
+123
+321
+123
+321
+123
+321
 [/input]
 [output]
-Yes! He will live a carefree life and will have 196000.00 dollars left.
+Electricity: 2220.00 $
+Water: 200.00 $
+Internet: 150.00 $
+Other: 3084.00 $
+Average: 565.40 $
 [/output]
 [/test]
 [test]
 [input]
-1000000.42
-1874
+50
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
 [/input]
 [output]
-He will need 1749.58 dollars to survive.
+Electricity: 1275.00 $
+Water: 1000.00 $
+Internet: 750.00 $
+Other: 3630.00 $
+Average: 133.10 $
 [/output]
 [/test]
 [test]
 [input]
-1.6
-1800
+23
+123.34
+432.23
+213.12
+231.3
+266.1
+677
+1000
+23
+54
+765
+23
+54
+23
+54
+87
+236
+353
+847
+357
+346
+335
+643
+523
 [/input]
 [output]
-He will need 11998.40 dollars to survive.
+Electricity: 7666.09 $
+Water: 460.00 $
+Internet: 345.00 $
+Other: 10165.31 $
+Average: 810.28 $
 [/output]
 [/test]
 [test]
 [input]
-12000
-1800
+1
+123.34
 [/input]
 [output]
-Yes! He will live a carefree life and will have 0.00 dollars left.
+Electricity: 123.34 $
+Water: 20.00 $
+Internet: 15.00 $
+Other: 190.01 $
+Average: 348.35 $
 [/output]
 [/test]
 [test]
 [input]
-234657.89
-1816
+10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 [/input]
 [output]
-Yes! He will live a carefree life and will have 20257.89 dollars left.
-[/output]
-[/test]
-[test]
-[input]
-50000.99
-1803
-[/input]
-[output]
-Yes! He will live a carefree life and will have 0.99 dollars left.
-[/output]
-[/test]
-[test]
-[input]
-60043.5
-1900
-[/input]
-[output]
-He will need 1321956.50 dollars to survive.
-[/output]
-[/test]
-[test]
-[input]
-234789.5
-1970
-[/input]
-[output]
-He will need 2254960.50 dollars to survive.
+Electricity: 55.00 $
+Water: 200.00 $
+Internet: 150.00 $
+Other: 486.00 $
+Average: 89.10 $
 [/output]
 [/test]
 [/tests]

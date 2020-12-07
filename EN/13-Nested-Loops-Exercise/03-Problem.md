@@ -1,6 +1,6 @@
 [slide]
-# Problem: Combinations
-[code-task title="Combinations" taskId="27-06E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Word Wars
+[code-task title="Word Wars" taskId="27-06E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,131 +14,108 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+Write a program that **calculates the ASCII value of a few words**, as the word with the **highest value** is the winner.
 
-Write a program that calculates **how many solutions in natural numbers (including zero)** has the equation:
+The value of a word is calculated when you sum the **ASCII values of all the letters of which it consists of**. 
 
-```
-x1 + x2 + x3 + x4 + x5 = n
-```
-
-## Input
-- The input consits a single number - n - integer
-
-## Output
-- Print on the console the total number of solutions
+From the console read words until the command "**STOP**", then print:
+- "Winner is \{winner word\} – \{value of the word\}!"
 
 ## Example
-| **Input** | **Output** | **Comments** | 
-| --- | --- | --- |
-| 25 | 23751 | Generate all combinations of 5 digits, the first is: |
-| | | 0\+0\+0\+0\+0=0, but because it is not equal to 25,|
-| | | continuing 0\+0\+0\+0\+1=1 - again, it\'s not 25, etc. |
-| | | We come to the first valid combination: |
-| | | 0\+0\+0\+0\+25=25, expanding the number of valid |
-| | | combinations of 1, the second valid combination is:| 
-| | | 0\+0\+0\+1\+24=25|
-| | | The third: 0\+0\+0\+2\+23=25  etc.|
-| | | After generating all possible combinations,|
-| | | the number of valid combinations is 23751.|
+
+| **Input** | **Output** 
+| --- | --- |
+| House | Winner is Destination - 1154! |
+| Dog | |
+| Destination | |
+| STOP | |
+
+### Comments
+- The first letter is \'H\' and it\'s ASCII value is 72, \'o\' has value 111, \'u\' has value 117, \'s\' has value 115, \'e\' has value 101. Their sum is 516. 
+- Keep doing the same calculations for the other words and get that Destination has the highest value - 1154.
+
 [/task-description]
 [tests]
 [test open]
 [input]
-25
+House
+Dog
+Destination
+STOP
 [/input]
 [output]
-23751
+Winner is Destination - 1154!
 [/output]
 [/test]
 [test]
 [input]
-20
+Cat
+Doll
+Information
+Winner
+STOP
 [/input]
 [output]
-10626
+Winner is Information - 1158!
 [/output]
 [/test]
 [test]
 [input]
-5
+IVAN
+Stoyan
+Kirch0
+STOP
 [/input]
 [output]
-126
+Winner is Stoyan - 638!
 [/output]
 [/test]
 [test]
 [input]
-0
+st0y1n
+Vladimir
+Petur
+STOP
 [/input]
 [output]
-1
+Winner is Vladimir - 824!
 [/output]
 [/test]
 [test]
 [input]
-1
+slavi
+Gosheto
+Aleksandur
+STOP
 [/input]
 [output]
-5
+Winner is Aleksandur - 1034!
 [/output]
 [/test]
 [test]
 [input]
-2
+Mascota
+Destryktor
+STOP
 [/input]
 [output]
-15
+Winner is Destryktor - 1083!
 [/output]
 [/test]
 [test]
 [input]
-3
+marto
+krasi
+Vasil
+Valeri
+Baluchonkata
+STOP
 [/input]
 [output]
-35
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-70
-[/output]
-[/test]
-[test]
-[input]
--1
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-210
-[/output]
-[/test]
-[test]
-[input]
-10
-[/input]
-[output]
-1001
-[/output]
-[/test]
-[test]
-[input]
-13
-[/input]
-[output]
-2380
+Winner is Baluchonkata - 1229!
 [/output]
 [/test]
 [/tests]
-[code-io/]
+[code-io /]
 [/code-task]
 [/slide]

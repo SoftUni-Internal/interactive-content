@@ -1,6 +1,6 @@
 [slide]
-# Problem: Projects Creation
-[code-task title="Project Creation" taskId="27-01E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Trapezoid Area
+[code-task title="Trapezoid Areq" taskId="27-01E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,140 +14,85 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates how many hours will be necessary to an architect to create projects of some construction objects. 
+Write a program that calculates the area of trapezoid with bases b1 and b2 and height h. 
 
-Creating one project takes approximately 3 hours.
+The formula for calculating area of a trapezoid is ((b1 + b2) / 2) * h.
 
 ## Input
-Read two lines from the console:
-- Name of the architect - String
-- Number of projects - integer in range \[0… 100\]
+
+Read three numbers from the console:
+- bases - b1 and b2 - real numbers in range \[1...1000\]
+- height - h - real number in range \[1...1000\]
 
 ## Output
+Print on the console a single number - the area of the trapezoid, formatted to the second decimal point.
 
-Print on the console: 
-
--  "The architect \{name of the architect\} will need \{necessary hours\} hours to complete \{number of projects\} project/s."
-
-## Examples
-
-| Input | Output | 
+## Example
+| Input | Output |
 | --- | --- |
-| George | The architect George will need 12 hours to complete 4 project/s. |
-| 4 | |
-
-| Input | Output |  
-| --- | --- |
-| Sanya | The architect Sanya will need 27 hours to complete 9 project/s. |
-| 9 | |
+| 8 | 73.50 |
+| 13 | |
+| 7 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-George
+8
+13
+7
+[/input]
+[output]
+73.50
+[/output]
+[/test]
+[test]
+[input]
 4
+6
+8
 [/input]
 [output]
-The architect George will need 12 hours to complete 4 project/s.
-[/output]
-[/test]
-[test open]
-[input]
-Sanya
-9
-[/input]
-[output]
-The architect Sanya will need 27 hours to complete 9 project/s.
+40.00
 [/output]
 [/test]
 [test]
 [input]
-Maria
-20
+100
+200
+300
 [/input]
 [output]
-The architect Maria will need 60 hours to complete 20 project/s.
+45000.00
 [/output]
 [/test]
 [test]
 [input]
-Ivan
-11
+3
+4
+5
 [/input]
 [output]
-The architect Ivan will need 33 hours to complete 11 project/s.
+17.50
 [/output]
 [/test]
 [test]
 [input]
-Dimitar
-2
+8
+13
+7
 [/input]
 [output]
-The architect Dimitar will need 6 hours to complete 2 project/s.
+73.50
 [/output]
 [/test]
 [test]
 [input]
-Yana
-14
+1.2
+2.5
+3.7
 [/input]
 [output]
-The architect Yana will need 42 hours to complete 14 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Radi
-24
-[/input]
-[output]
-The architect Radi will need 72 hours to complete 24 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Jivko
-21
-[/input]
-[output]
-The architect Jivko will need 63 hours to complete 21 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Preslava
-40
-[/input]
-[output]
-The architect Preslava will need 120 hours to complete 40 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Alisiya
-37
-[/input]
-[output]
-The architect Alisiya will need 111 hours to complete 37 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Galin
-50
-[/input]
-[output]
-The architect Galin will need 150 hours to complete 50 project/s.
-[/output]
-[/test]
-[test]
-[input]
-Gergana
-22
-[/input]
-[output]
-The architect Gergana will need 66 hours to complete 22 project/s.
+6.85
 [/output]
 [/test]
 [/tests]

@@ -1,6 +1,6 @@
 [slide]
-# Problem: Pet Shop
-[code-task title="Pet Shop" taskId="27-01E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Fishland
+[code-task title="Fishland" taskId="27-01E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,139 +14,199 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates the expenses for buying food for dogs and other animals. 
+George decides to buy tuna, scads and mussels. 
 
-Each package of food for dogs costs 2.5 dollars, and every other that\'s NOT for them - 4 dollars.
+Read from the console prices of mackerel and sprats, the quantity of tuna, scads and mussels in kilograms. 
+
+Calculate how much money will he need to pay his bill, if the prices at the Fishland are:
+- Tuna - 60% more expensive than the mackerel
+- Scads - 80% more expensive than the sprats
+- Mussels - 7.50 dollars per kilogram
 
 ## Input
-
-The input will be two lines from the console:
-- Number of dogs - integer in range \[0… 100\]
-- Number of the others animals - integer in range \[0… 100\]
+You have to read 5 numbers from the console:
+- the price of the mackerel per kilogram - floating-point number in range [0.00…40.00]
+- the price of the sprats per kilogram - floating-point number in range [0.00…30.00]
+- kilograms of tuna - floating-point number in range [0.00…50.00]
+- kilograms of scads - floating-point number in range [0.00…70.00]
+- kilograms of mussels - integer number in range [0...100]
 
 ## Output
-Print on the console: "\{total sum\} dollars". The result should be formatted to the second decimal point.
+Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the second decimal point.
 
-## Examples
-
+## Example
 | Input | Output |
 | --- | --- |
-| 5 | 28.50 dollars |
-| 4 | |
+| 6.90 | 42.96 |
+| 4.20 | |
+| 1.50 | |
+| 2.50 | |
+| 1 | |
 
+### Comments
+- The price of the tuna = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
+- Total sum of tuna = 1.5 \* 11.04 = 16.56
+- The price of the scads = 4.20 + 4.20 \* 0.80 =  7.56$/kg
+- Total sum of scads = 2.5 \* 7.56 = 18.90
+- The total sum of mussels = 1 \* 7.50 = 7.50
+- Bill = 16.56 + 18.90 + 7.50 = 42.96
 
-| Input | Output |
-| --- | --- |
-| 13 | 68.50 dollars |
-| 9 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-5
-4
+6.90
+4.20
+1.5
+2.5
+1
 [/input]
 [output]
-28.50 dollars
+42.96
 [/output]
 [/test]
-[test open]
+[test]
 [input]
-13
+5.55
+3.57
+4.3
+3.6
+7
+[/input]
+[output]
+113.82
+[/output]
+[/test]
+[test]
+[input]
+7.79
+5.35
+9.3
+0
+0
+[/input]
+[output]
+115.92
+[/output]
+[/test]
+[test]
+[input]
+2.22
+2.52
+3
+4
+5
+[/input]
+[output]
+66.30
+[/output]
+[/test]
+[test]
+[input]
+7.5432
+9.432
+0.4
+0.2
 9
 [/input]
 [output]
-68.50 dollars
+75.72
 [/output]
 [/test]
 [test]
 [input]
-11
-3
+10.50
+9.25
+12.2
+13.2
+5
 [/input]
 [output]
-39.50 dollars
+462.24
 [/output]
 [/test]
 [test]
 [input]
-15
+16.121
+26.27
+25
+52
+26
+[/input]
+[output]
+3298.71
+[/output]
+[/test]
+[test]
+[input]
+19.99
+12.24
+23
+29
 2
 [/input]
 [output]
-45.50 dollars
+1389.56
 [/output]
 [/test]
 [test]
 [input]
-14
+27
+22
+10
+10
+10
+[/input]
+[output]
+903.00
+[/output]
+[/test]
+[test]
+[input]
+31
 12
+22.22
+11.11
+43
 [/input]
 [output]
-83.00 dollars
+1664.59
 [/output]
 [/test]
 [test]
 [input]
-11
-17
+29.99
+29.99
+29.99
+29.99
+29
 [/input]
 [output]
-95.50 dollars
+3275.46
 [/output]
 [/test]
 [test]
 [input]
-19
-0
+39.99
+29.99
+39.98
+58.85
+69
 [/input]
 [output]
-47.50 dollars
+6252.42
 [/output]
 [/test]
 [test]
 [input]
-20
-4
+39.99
+29.99
+49.99
+69.99
+99
 [/input]
 [output]
-66.00 dollars
-[/output]
-[/test]
-[test]
-[input]
-0
-0
-[/input]
-[output]
-0.00 dollars
-[/output]
-[/test]
-[test]
-[input]
-6
-15
-[/input]
-[output]
-75.00 dollars
-[/output]
-[/test]
-[test]
-[input]
-24
-88
-[/input]
-[output]
-412.00 dollars
-[/output]
-[/test]
-[test]
-[input]
-30
-20
-[/input]
-[output]
-155.00 dollars
+7719.26
 [/output]
 [/test]
 [/tests]

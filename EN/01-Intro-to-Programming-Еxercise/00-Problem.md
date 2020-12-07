@@ -1,6 +1,6 @@
 [slide]
-# Problem: Rectangle Area
-[code-task title="Rectangle Area" taskId="27-00E-p-02" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Print "Hello SoftUni"
+[code-task title="Print Hello SoftUni" taskId="27-00E-p-01" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -14,11 +14,8 @@ public class Main {
 ## Description
 
 Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
 
-## Output
-* Print the the calculated area
+Prints "Hello SoftUni" on the console
 [/task-description]
 [code-io /]
 [tests]
@@ -26,14 +23,14 @@ Write a program, which:
 [input]
 [/input]
 [output]
-50
+Hello SoftUni
 [/output]
 [/test]
 [test]
 [input]
 [/input]
 [output]
-50
+Hello SoftUni
 [/output]
 [/test]
 [/tests]

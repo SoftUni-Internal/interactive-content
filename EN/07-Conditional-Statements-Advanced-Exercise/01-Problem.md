@@ -1,6 +1,6 @@
 [slide]
-# Problem: Personal Titles
-[code-task title="Personal Titles" taskId="27-02AE-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Fuel Tank
+[code-task title="Fuel Tank" taskId="27-02AE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,176 +14,106 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-
-Write a **console** program that reads **age (floating-point number)** and **gender**("**m**" or "**f**") and and prints an address according to these principles:
-- "**Mr.**" - a man (gender "**m**") of age 16 or more
-- "**Master**" - a boy (gender "**m**") under 16 years old
-- "**Ms.**" - a woman (gender "**f**") of age 16 or more
-- "**Miss**" - a girl (gender "**f**") under 16 years old
+Write a program that knows whether the tank of a vehicle needs refueling or not. 
 
 ## Input
-Entered from the console:
-- age - floating-point number
-- gender - "**m**" or "**f**"
+The input is consists of 2 lines:
+- First you have to read from the console the type of fuel - text with options: "Diesel", "Gasoline" or "Gas"
+- The second line of input reads the fuel in the tank in liters
 
 ## Output
-Print the expected address on a single line.
+- If the fuel is other than the specified print "Invalid fuel!".
+- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
+    - "You have enough \{type of fuel\}."
+    - Type of the fuel should be printed in lower case.
+- Otherwise print:
+    - "Fill your tank with \{type of fuel\}!". 
+    - Type of the fuel should be printed in lower case.
 
-## Example
+### Example
 
-| **Input** | **Output** | 
+| **Input** | **Output** |
 | --- | --- |
-| 25 | Ms. |
-| f | |
+| Diesel | Fill your tank with diesel! |
+| 10 | |
 
-| **Input** | **Output** | 
-| --- |  --- |
-| 13.5 | Master |
-| m | |
+| **Input** | **Output** |
+| --- | --- |
+| Gas | You have enough gas. |
+| 25 | |
+
 [/task-description]
 [tests]
 [test open]
 [input]
-25
-f
+Diesel
+10
 [/input]
 [output]
-Ms.
+Fill your tank with diesel!
 [/output]
 [/test]
 [test open]
 [input]
-13.5
-m
-[/input]
-[output]
-Master
-[/output]
-[/test]
-[test]
-[input]
-12
-f
-[/input]
-[output]
-Miss
-[/output]
-[/test]
-[test]
-[input]
-17
-m
-[/input]
-[output]
-Mr.
-[/output]
-[/test]
-[test]
-[input]
+Gas
 25
-f
 [/input]
 [output]
-Ms.
+You have enough gas.
 [/output]
 [/test]
 [test]
 [input]
-13.5
-m
+Gasoline
+40
 [/input]
 [output]
-Master
+You have enough gasoline.
 [/output]
 [/test]
 [test]
 [input]
-11
-f
+Kerosene
+200
 [/input]
 [output]
-Miss
+Invalid fuel!
 [/output]
 [/test]
 [test]
 [input]
-19
-m
+Diesel
+25
 [/input]
 [output]
-Mr.
+You have enough diesel.
 [/output]
 [/test]
 [test]
 [input]
-30
-f
+Gasoline
+28
 [/input]
 [output]
-Ms.
+You have enough gasoline.
 [/output]
 [/test]
 [test]
 [input]
-14
-m
+Gas
+20
 [/input]
 [output]
-Master
+Fill your tank with gas!
 [/output]
 [/test]
 [test]
 [input]
-4.5
-m
+Kerosene
+20
 [/input]
 [output]
-Master
-[/output]
-[/test]
-[test]
-[input]
-16
-m
-[/input]
-[output]
-Mr.
-[/output]
-[/test]
-[test]
-[input]
-16
-f
-[/input]
-[output]
-Ms.
-[/output]
-[/test]
-[test]
-[input]
-15.9
-m
-[/input]
-[output]
-Master
-[/output]
-[/test]
-[test]
-[input]
-15.9
-f
-[/input]
-[output]
-Miss
-[/output]
-[/test]
-[test]
-[input]
-95.125
-m
-[/input]
-[output]
-Mr.
+Invalid fuel!
 [/output]
 [/test]
 [/tests]

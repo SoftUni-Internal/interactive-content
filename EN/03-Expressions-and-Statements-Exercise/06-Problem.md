@@ -1,6 +1,6 @@
 [slide]
-# Problem: Fishland
-[code-task title="Fishland" taskId="27-01E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Yard Greening
+[code-task title="Yard Greening" taskId="27-01E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,199 +14,145 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-George decides to buy tuna, scads and mussels. 
 
-Read from the console prices of mackerel and sprats, the quantity of tuna, scads and mussels in kilograms. 
+Write a program that calculates the expenses for yard greening. 
 
-Calculate how much money will he need to pay his bill, if the prices at the Fishland are:
-- Tuna - 60% more expensive than the mackerel
-- Scads - 80% more expensive than the sprats
-- Mussels - 7.50 dollars per kilogram
+The price for one square meter is 7.61 dollars with VAT. 
+
+The company offers 18% discount from the total price.
 
 ## Input
-You have to read 5 numbers from the console:
-- the price of the mackerel per kilogram - floating-point number in range [0.00…40.00]
-- the price of the sprats per kilogram - floating-point number in range [0.00…30.00]
-- kilograms of tuna - floating-point number in range [0.00…50.00]
-- kilograms of scads - floating-point number in range [0.00…70.00]
-- kilograms of mussels - integer number in range [0...100]
+
+Single line from the console:
+
+- Square meters which will be greening - float-pointing number in range [0.00… 10000.00]
 
 ## Output
-Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the second decimal point.
+
+Print on the console two lines:   
+- "The final price is: \{total price\} dollars"
+- "The discount is: \{discount\} dollars"
+
+Prices should be formatted to the second decimal point.
 
 ## Example
-| Input | Output |
-| --- | --- |
-| 6.90 | 42.96 |
-| 4.20 | |
-| 1.50 | |
-| 2.50 | |
-| 1 | |
+| Input | | Output |
+| --- | --- | --- |
+| 540 | The final price is: 3369.71 dollars |
+|  | The discount is: 739.69 dollars |
 
 ### Comments
-- The price of the tuna = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
-- Total sum of tuna = 1.5 \* 11.04 = 16.56
-- The price of the scads = 4.20 + 4.20 \* 0.80 =  7.56$/kg
-- Total sum of scads = 2.5 \* 7.56 = 18.90
-- The total sum of mussels = 1 \* 7.50 = 7.50
-- Bill = 16.56 + 18.90 + 7.50 = 42.96
-
+- Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $
+- Calculate the discount: 0.18 \* 4109.40 = 739.69 $
+- Calculate the final price: 4109.40 – 739.69 = 3369.71 $
 [/task-description]
 [tests]
 [test open]
 [input]
-6.90
-4.20
-1.5
-2.5
-1
+540
 [/input]
 [output]
-42.96
+The final price is: 3369.71 dollars
+The discount is: 739.69 dollars
 [/output]
 [/test]
 [test]
 [input]
-5.55
-3.57
-4.3
-3.6
-7
+135
 [/input]
 [output]
-113.82
+The final price is: 842.43 dollars
+The discount is: 184.92 dollars
 [/output]
 [/test]
 [test]
 [input]
-7.79
-5.35
-9.3
-0
-0
+335
 [/input]
 [output]
-115.92
+The final price is: 2090.47 dollars
+The discount is: 458.88 dollars
 [/output]
 [/test]
 [test]
 [input]
-2.22
-2.52
-3
-4
-5
+412
 [/input]
 [output]
-66.30
+The final price is: 2570.96 dollars
+The discount is: 564.36 dollars
 [/output]
 [/test]
 [test]
 [input]
-7.5432
-9.432
-0.4
-0.2
-9
+500
 [/input]
 [output]
-75.72
+The final price is: 3120.10 dollars
+The discount is: 684.90 dollars
 [/output]
 [/test]
 [test]
 [input]
-10.50
-9.25
-12.2
-13.2
-5
+650
 [/input]
 [output]
-462.24
+The final price is: 4056.13 dollars
+The discount is: 890.37 dollars
 [/output]
 [/test]
 [test]
 [input]
-16.121
-26.27
-25
-52
-26
+123
 [/input]
 [output]
-3298.71
+The final price is: 767.54 dollars
+The discount is: 168.49 dollars
 [/output]
 [/test]
 [test]
 [input]
-19.99
-12.24
-23
-29
-2
+811
 [/input]
 [output]
-1389.56
+The final price is: 5060.80 dollars
+The discount is: 1110.91 dollars
 [/output]
 [/test]
 [test]
 [input]
-27
-22
-10
-10
-10
+250
 [/input]
 [output]
-903.00
+The final price is: 1560.05 dollars
+The discount is: 342.45 dollars
 [/output]
 [/test]
 [test]
 [input]
-31
-12
-22.22
-11.11
-43
+211.05
 [/input]
 [output]
-1664.59
+The final price is: 1316.99 dollars
+The discount is: 289.10 dollars
 [/output]
 [/test]
 [test]
 [input]
-29.99
-29.99
-29.99
-29.99
-29
+348.49
 [/input]
 [output]
-3275.46
+The final price is: 2174.65 dollars
+The discount is: 477.36 dollars
 [/output]
 [/test]
 [test]
 [input]
-39.99
-29.99
-39.98
-58.85
-69
+74.44
 [/input]
 [output]
-6252.42
-[/output]
-[/test]
-[test]
-[input]
-39.99
-29.99
-49.99
-69.99
-99
-[/input]
-[output]
-7719.26
+The final price is: 464.52 dollars
+The discount is: 101.97 dollars
 [/output]
 [/test]
 [/tests]

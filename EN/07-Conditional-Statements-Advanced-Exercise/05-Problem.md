@@ -1,6 +1,6 @@
 [slide]
-# Problem: Summer Outfit
-[code-task title="Summer Outfit" taskId="27-02AE-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Prolem: Fishing Boat
+[code-task title="Fishing Boat" taskId="27-02AE-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,153 +14,242 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-It's summer with changeable weather and Victor needs your help. 
 
-Write a program that recommends Victor which clothes to choose **according to the part of day and degrees (Celsius)**. 
+Tony and his friends decided to rent a boat - the rent depends on the **season** and the **number** of fishermen.
 
-Your friend has different plans for every part of the day with different outfits – check the **table** below.
+**The price** on the basis of **season**:
+- **Spring - 3000 $**
+- **Summer and autumn - 4200 $**
+- **Winter - 2600 $**
 
-| **Part of Day / Degrees** | Morning | Afternoon | Evening |
-| --- | --- | --- | --- |
-| 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
-| | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
-| 18 < deg <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
-| | Shoes: Moccasins | Shoes: Sandals | Shoes: Moccasins |
-| deg >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
-| | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
+**The price** on the basis of **number** of fishermen uses **discount:**
+- If the group is **up to 6 people (inclusive) -  10% discount**
+- If the group members are in range \[7…11\] -  **15% discount**
+- If the group is **12 or more people - 25% discount**
+
+The fishermen use another **5 % discount if they are even number** except when it is **NOT** autumn – then they do **NOT** have additional discount.
+
+Write a **program** to **calculate** whether the fishermen will gather **enough** money.
 
 ## Input
-**Read two lines of input:**
-- **Degrees** - an integer in range \[10…42\]
-- **Part of day** - text - possibilities: "Morning", "Afternoon", "Evening"
+The input is consists of exactly **3 lines**:
+- The **budget** of the group - real number in range \[1…8000\]
+- **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
+- **Number** of fishermen - integer in range \[4…18\]
 
 ## Output
-- Print on the console a **single** line:
-    - It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
+Print on the console a **single** line:
+- If the budget **IS** enough: "Yes! You have \{money left\} dollars left."
+- If the budget **IS NOT** enough: "Not enough money! You need \{money needed\} dollars."
+
+**The prices should be formatted to the second decimal point.**
 
 ## Example
 | **Input** | **Output** 
 | --- | --- |
-| 16 | It\'s 16 degrees, get your Sweatshirt and Sneakers. |
-| Morning | |
+| 3000 | Not enough money! You need 570.00 dollars. |
+| Summer | |
+| 11 | |
+
+### Comments
+- In the summer fishing costs 4200$,
+- **11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
+- 3000 <= 3570, hence they need 570.00 $ more
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 2000 | Yes! You have 50.00 dollars left. |
+| Winter | |
+| 13 | |
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+| 3600 | Yes! You have 1035.00 dollars left. |
+| Spring | |
+| 6 | |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-16
-Morning
+3000
+Summer
+11
 [/input]
 [output]
-It's 16 degrees, get your Sweatshirt and Sneakers.
+Not enough money! You need 570.00 dollars.
 [/output]
 [/test]
 [test open]
 [input]
-22
-Afternoon
+3600
+Autumn
+6
 [/input]
 [output]
-It's 22 degrees, get your T-Shirt and Sandals.
+Not enough money! You need 180.00 dollars.
+[/output]
+[/test]
+[test open]
+[input]
+2000
+Winter
+13
+[/input]
+[output]
+Yes! You have 50.00 dollars left.
 [/output]
 [/test]
 [test]
 [input]
-28
-Evening
+3780
+Autumn
+6
 [/input]
 [output]
-It's 28 degrees, get your Shirt and Moccasins.
+Yes! You have 0.00 dollars left.
 [/output]
 [/test]
 [test]
 [input]
-18
-Afternoon
+1949
+Winter
+13
 [/input]
 [output]
-It's 18 degrees, get your Shirt and Moccasins.
+Not enough money! You need 1.00 dollars.
 [/output]
 [/test]
 [test]
 [input]
-24
-Morning
-[/input]
-[output]
-It's 24 degrees, get your Shirt and Moccasins.
-[/output]
-[/test]
-[test]
-[input]
-32
-Evening
-[/input]
-[output]
-It's 32 degrees, get your Shirt and Moccasins.
-[/output]
-[/test]
-[test]
-[input]
-18
-Evening
-[/input]
-[output]
-It's 18 degrees, get your Shirt and Moccasins.
-[/output]
-[/test]
-[test]
-[input]
-25
-Afternoon
-[/input]
-[output]
-It's 25 degrees, get your Swim Suit and Barefoot.
-[/output]
-[/test]
-[test]
-[input]
-25
-Morning
-[/input]
-[output]
-It's 25 degrees, get your T-Shirt and Sandals.
-[/output]
-[/test]
-[test]
-[input]
-10
-Morning
-[/input]
-[output]
-It's 10 degrees, get your Sweatshirt and Sneakers.
-[/output]
-[/test]
-[test]
-[input]
-24
-Afternoon
-[/input]
-[output]
-It's 24 degrees, get your T-Shirt and Sandals.
-[/output]
-[/test]
-[test]
-[input]
-21
-Morning
-[/input]
-[output]
-It's 21 degrees, get your Shirt and Moccasins.
-[/output]
-[/test]
-[test]
-[input]
+3570
+Summer
 11
-Evening
 [/input]
 [output]
-It's 11 degrees, get your Shirt and Moccasins.
+Yes! You have 0.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+4100
+Spring
+15
+[/input]
+[output]
+Yes! You have 1850.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+2860
+Spring
+4
+[/input]
+[output]
+Yes! You have 295.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+2231
+Winter
+6
+[/input]
+[output]
+Yes! You have 8.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+1390
+Winter
+4
+[/input]
+[output]
+Not enough money! You need 833.00 dollars.
+[/output]
+[/test]
+[test]
+[input]
+1000
+Winter
+1
+[/input]
+[output]
+Not enough money! You need 1340.00 dollars.
+[/output]
+[/test]
+[test]
+[input]
+2500
+Winter
+1
+[/input]
+[output]
+Yes! You have 160.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+3650
+Summer
+8
+[/input]
+[output]
+Yes! You have 258.50 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+3650
+Summer
+8
+[/input]
+[output]
+Yes! You have 258.50 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+4100
+Spring
+1
+[/input]
+[output]
+Yes! You have 1400.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+3800
+Summer
+10
+[/input]
+[output]
+Yes! You have 408.50 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+4300
+Spring
+11
+[/input]
+[output]
+Yes! You have 1750.00 dollars left.
+[/output]
+[/test]
+[test]
+[input]
+4300
+Spring
+11
+[/input]
+[output]
+Yes! You have 1750.00 dollars left.
 [/output]
 [/test]
 [/tests]

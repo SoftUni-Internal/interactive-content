@@ -1,6 +1,6 @@
 [slide]
-# Problem: Area of Figures
-[code-task title="Area of Figures" taskId="27-02E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Time + 15 Minutes
+[code-task title="Time + 15 Minutes" taskId="27-02E-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,122 +14,145 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program where user enters type and dimensions of a geometric figure and calculates its area. 
+Write a program that reads from the console an **hour** and **minutes** from 24-hour day, and calculates what will be the time **after 15 minutes**. 
 
-Figures are four types: **square, rectangle, circle and triangle**. 
-
-On the first line of the input you will receive the type of the figure.
-- If it\'s **square**, on the next line you will be given a **number** representing **length** of his size. 
-- If the type is **rectangle**, on the next **two** lines you have to read its **dimensions**. 
-- If it\'s **circle** - on the next line you will receive a single number - the **radius**. 
-- If the figure is **triangle**, on the next **two** lines you will be given the **length** of its size and the **height** to it. 
-
-The input numbers will be floating-point numbers.
+## Input
+The input consists **two** lines:
+- The hours - integer in range \[0...23\]
+- The minutes - integer in range \[0...59\]
 
 ## Output
-
-The result should be **formatted to the third decimal point**.
+Print the result in the following format: "\{hours\}:\{minutes\}".
+- The hours should be formatted **without leading zero**.
+- The minutes should be formatted **with leading zero**.
 
 ## Example
-
 | **Input** | **Output** |
-| --- | --- | 
-| square | 25.000 | 
-| 5 | |
-| | |
+| --- | --- |
+| 11 | 11:23|
+| 08 | |
 
 | **Input** | **Output** |
 | --- | --- |
-| rectangle | 17.500|
-| 7| |
-| 2.5| |
-
-| **Input** | **Output** |
-| --- | --- |
-| circle| 113.097|
-| 6| |
-
-| **Input** | **Output** |
-| --- | --- |
-| triangle | 45.000|
-| 4.5| |
-| 20| |
+| 1 | 2:01 | 
+| 46 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-square
-5
+1
+46
 [/input]
 [output]
-25.000
+2:01
 [/output]
 [/test]
 [test open]
 [input]
-rectangle
-7
-2.5
+0
+01
 [/input]
 [output]
-17.500
-[/output]
-[/test]
-[test open]
-[input]
-circle
-6
-[/input]
-[output]
-113.097
-[/output]
-[/test]
-[test open]
-[input]
-triangle
-4.5
-20
-[/input]
-[output]
-45.000
+0:16
 [/output]
 [/test]
 [test]
 [input]
-square
-7.5
+23
+59
 [/input]
 [output]
-56.250
+0:14
 [/output]
 [/test]
 [test]
 [input]
-rectangle
-17.2
-2.5
+11
+08
 [/input]
 [output]
-43.000
+11:23
 [/output]
 [/test]
 [test]
 [input]
-circle
-8.55
+12
+49
 [/input]
 [output]
-229.658
+13:04
 [/output]
 [/test]
 [test]
 [input]
-triangle
-4.5
-7.5
+0
+0
 [/input]
 [output]
-16.875
+0:15
+[/output]
+[/test]
+[test]
+[input]
+0
+44
+[/input]
+[output]
+0:59
+[/output]
+[/test]
+[test]
+[input]
+0
+45
+[/input]
+[output]
+1:00
+[/output]
+[/test]
+[test]
+[input]
+0
+48
+[/input]
+[output]
+1:03
+[/output]
+[/test]
+[test]
+[input]
+0
+59
+[/input]
+[output]
+1:14
+[/output]
+[/test]
+[test]
+[input]
+8
+30
+[/input]
+[output]
+8:45
+[/output]
+[/test]
+[test]
+[input]
+12
+35
+[/input]
+[output]
+12:50
+[/output]
+[/test]
+[test]
+[input]
+12
+45
+[/input]
+[output]
+13:00
 [/output]
 [/test]
 [/tests]

@@ -1,6 +1,6 @@
 [slide]
-# Problem: Nums from 1 to 10
-[code-task title="Nums from 1 to 10" taskId="27-00E-p-03" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Calculations
+[code-task title="Calculations" taskId="27-00E-p-04" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -8,17 +8,20 @@ public class Main {
         // Write your code here
     }
 }
-
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a program to print numbers from 1 to 10 (inclsuive).
+Write a program, which calculates and prints the value of the following expressions:
 
-## Output
+* 5 + 3 \* 2
+* 4 \* 3 \* 2
+* 12 \/ 3 \* 2
 
-Each number should be on a new line.
+## Output 
+
+Print the result of each expression on a separate line
 [/task-description]
 [code-io /]
 [tests]
@@ -26,32 +29,18 @@ Each number should be on a new line.
 [input]
 [/input]
 [output]
-1
-2
-3
-4
-5
-6
-7
+11
+24
 8
-9
-10
 [/output]
 [/test]
 [test]
 [input]
 [/input]
 [output]
-1
-2
-3
-4
-5
-6
-7
+11
+24
 8
-9
-10
 [/output]
 [/test]
 [/tests]

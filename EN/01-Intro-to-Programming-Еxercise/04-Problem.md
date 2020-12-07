@@ -1,27 +1,29 @@
 [slide]
-# Problem: Calculations
-[code-task title="Calculations" taskId="27-00E-p-04" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Triangle of Stars
+[code-task title="Triangle of Stars" taskId="27-00E-p-05" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
+  public static void main(String[] args) {
+      // Write code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Description
+Write a program, which **prints a triangle** of stars. 
 
-Write a program, which calculates and prints the value of the following expressions:
+You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
 
-* 5 + 3 \* 2
-* 4 \* 3 \* 2
-* 12 \/ 3 \* 2
-
-## Output 
-
-Print the result of each expression on a separate line
+## Output
+```
+*
+**
+***
+****
+*****
+```
 [/task-description]
 [code-io /]
 [tests]
@@ -29,18 +31,22 @@ Print the result of each expression on a separate line
 [input]
 [/input]
 [output]
-11
-24
-8
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
 [/output]
 [/test]
 [test]
 [input]
 [/input]
 [output]
-11
-24
-8
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
 [/output]
 [/test]
 [/tests]

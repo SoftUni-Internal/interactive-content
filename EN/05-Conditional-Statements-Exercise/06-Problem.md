@@ -1,6 +1,6 @@
 [slide]
-# Problem: Pets
-[code-task title="Pets" taskId="27-02E-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Pipes In Pool
+[code-task title="Pipes In Pool" taskId="27-02E-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,203 +14,222 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a **program** calculating the **amount of kilograms** food Martina\'s pets will eat for the time she is **on adventure** and **checks if the food is enough**. 
+A pool with **volume V** has **two pipes** that fill it. 
 
-Each animal eats certain amount food per day.
+**Every pipe has certain flow** (liters water that going through a single pipe per hour). 
+
+The worker turns on the pipes **at the same time** and goes out for **N hours**. 
+
+Write a program that shows the condition of the pool **at the moment the worker comes back**.
 
 ## Input
-Read **five** lines from the console:
-- **number of days** - an integer in range \[1…5000\]
-- **left food in kilograms** - an integer in range \[0…100000\]
-- **food for the dog per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the cat per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the turtle per day in grams** - double in range \[0.00…10000.00\]
+**Four** lines of input:
+- **V** - **The volume of the pool in liters** - integer in range \[1…10000\]
+- **P1** - **flow of the first pipe per hour** - integer in range \[1…5000\]
+- **P2** - **flow of the second pipe per hour** - integer in range \[1…5000\]
+- **H** - **hours the worker is missing** - float-pointing number in range \[1.0…24.00\]
 
 ## Output
-Print on the console a **single** line:
-- If the left food **IS enough**:
-  - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**
-- If the left food **IS NOT enough**:
-  - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**
+Print on the console **one of both possibilities**:
+- How far the pool has been filled and which pipe how much contributed in percentage
+  - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
+- If the pool is overflowing – how many liters are overflowed for the given time
+  - "For \{hours pipes are filling the pool\} hours the pool overflows with \{liters water overflow\} liters."
+- All numbers in the output should be formatted to 2nd digit after the decimal point.
 
 ## Example
-| **Input**  | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-| 2 | 3 kilos of food left. |
-| 10 | |
-| 1 | |
-| 1 | |
-| 1200 | |
+| 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
+| 100 | |
+| 120 | |
+| 3 | |
 
 ### Comments
-- **Food needed for:**
-- **dog** = 2 days \* 1 kg = **2** kg;
-- **cat** = 2 days \* 1 kg = **2** kg;
-- **turtle** = 2 days \* 1200 g = **2.4** kg;
-- **Total amount of food** = 2 + 2 + 2.4 = **6.4** kg;
-- **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg food remain**
+- For 3 hours: The first pipe fills up 300 liters
+- The second pipe fills up 360 liters
+- In total – 660 l < 1000 l => 66% are filled up
+- The first pipe is contributed with 45% (300 of 660 liters).
+- The second pipe is contributed with 54% (360 of 660 liters).
 
 ## Example
-| **Input**  | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-| 5 | 7 more kilos of food are needed. |
-| 10 | |
-| 2.1 | |
-| 0.8 | |
-| 321 | |
+| 100 | For 2.50 hours the pool overflows with 400.00 liters. |
+| 100 | |
+| 100 | |
+| 2.5 | |
 
 ### Comments
-- **Needed food for:**
-- **dog** = **10.5** kg;
-- **cat** = 5 days \* 0.8 kg = **4** kg;
-- **turtle** = 5 days \* 321 g = **1.605** kg;
-- **Total amount of food** = 10.5 + 4 + 1.605 = **16.105** ;
-- 16.105 – 10 = 6.105 -> 7 kg of food are needed
+- For 2.5 hours: The first pipe fills up 250 l 
+- The second pipe fills up 250 l
+- In total – 500 l > 100 l => 400 l are overflowed.
 
 [/task-description]
 [tests]
 [test open]
 [input]
-2
-10
-1
-1
-1200
+1000
+100
+120
+3
 [/input]
 [output]
-3 kilos of food left.
+The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%.
 [/output]
 [/test]
 [test open]
 [input]
+100
+100
+100
+2.5
+[/input]
+[output]
+For 2.50 hours the pool overflows with 400.00 liters.
+[/output]
+[/test]
+[test]
+[input]
+12345
+123
+123
+10
+[/input]
+[output]
+The pool is 19.93% full. Pipe 1: 50.00%. Pipe 2: 50.00%.
+[/output]
+[/test]
+[test]
+[input]
+8685
+3
+3
+100
+[/input]
+[output]
+The pool is 6.91% full. Pipe 1: 50.00%. Pipe 2: 50.00%.
+[/output]
+[/test]
+[test]
+[input]
+3942
+12
+32
 5
-10
-2.1
-0.8
+[/input]
+[output]
+The pool is 5.58% full. Pipe 1: 27.27%. Pipe 2: 72.73%.
+[/output]
+[/test]
+[test]
+[input]
+929
+123
 321
+12
 [/input]
 [output]
-7 more kilos of food are needed.
+For 12.00 hours the pool overflows with 4399.00 liters.
 [/output]
 [/test]
 [test]
 [input]
-2
-8
-1.2
-0.8
-342
-[/input]
-[output]
-3 kilos of food left.
-[/output]
-[/test]
-[test]
-[input]
-4
-8
-3.3
-2.3
-1345
-[/input]
-[output]
-20 more kilos of food are needed.
-[/output]
-[/test]
-[test]
-[input]
-1
-50
-25
-24
-1000
-[/input]
-[output]
-0 kilos of food left.
-[/output]
-[/test]
-[test]
-[input]
-14
-20
-2.5
-1.5
-999
-[/input]
-[output]
-50 more kilos of food are needed.
-[/output]
-[/test]
-[test]
-[input]
-49
-197
-100
-100
-0
-[/input]
-[output]
-9603 more kilos of food are needed.
-[/output]
-[/test]
-[test]
-[input]
-86
-124
-0
-0
-0
-[/input]
-[output]
-124 kilos of food left.
-[/output]
-[/test]
-[test]
-[input]
-512
-2562
-2
-2
-3405
-[/input]
-[output]
-1230 more kilos of food are needed.
-[/output]
-[/test]
-[test]
-[input]
-987
-2345
-1.1
-0.5
-1
-[/input]
-[output]
-764 kilos of food left.
-[/output]
-[/test]
-[test]
-[input]
+10000
 5000
-100000
-2.5
-2.01
-10
+5000
+24
 [/input]
 [output]
-77400 kilos of food left.
+For 24.00 hours the pool overflows with 230000.00 liters.
 [/output]
 [/test]
 [test]
 [input]
-10
-319
+2000
+100
+120
+5.4
+[/input]
+[output]
+The pool is 59.40% full. Pipe 1: 45.45%. Pipe 2: 54.55%.
+[/output]
+[/test]
+[test]
+[input]
+1258
+321
+333
+7.7
+[/input]
+[output]
+For 7.70 hours the pool overflows with 3777.80 liters.
+[/output]
+[/test]
+[test]
+[input]
+5946
+1000
 1
+5
+[/input]
+[output]
+The pool is 84.17% full. Pipe 1: 99.90%. Pipe 2: 0.10%.
+[/output]
+[/test]
+[test]
+[input]
+7869
+1
+12
+23.99
+[/input]
+[output]
+The pool is 3.96% full. Pipe 1: 7.69%. Pipe 2: 92.31%.
+[/output]
+[/test]
+[test]
+[input]
+2
+2
 1
 1
 [/input]
 [output]
-298 kilos of food left.
+For 1.00 hours the pool overflows with 1.00 liters.
+[/output]
+[/test]
+[test]
+[input]
+2
+1
+1
+0.5
+[/input]
+[output]
+The pool is 50.00% full. Pipe 1: 50.00%. Pipe 2: 50.00%.
+[/output]
+[/test]
+[test]
+[input]
+2222
+1111
+1111
+1
+[/input]
+[output]
+The pool is 100.00% full. Pipe 1: 50.00%. Pipe 2: 50.00%.
+[/output]
+[/test]
+[test]
+[input]
+4501
+12
+10
+21.93
+[/input]
+[output]
+The pool is 10.72% full. Pipe 1: 54.55%. Pipe 2: 45.45%.
 [/output]
 [/test]
 [/tests]

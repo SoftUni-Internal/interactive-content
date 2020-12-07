@@ -1,6 +1,6 @@
 [slide]
-# Problem: Square Area
-[code-task title="Square Area" taskId="27-01E-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Projects Creation
+[code-task title="Project Creation" taskId="27-01E-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,67 +14,140 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+Write a program that calculates how many hours will be necessary to an architect to create projects of some construction objects. 
 
-Write a console program that reads an integer \'a\' and calculates the area of a square with size \'a\'.
+Creating one project takes approximately 3 hours.
 
 ## Input
-
-Read from the console:
-- size of the square - integer in range \[1...1000\]
+Read two lines from the console:
+- Name of the architect - String
+- Number of projects - integer in range \[0… 100\]
 
 ## Output
 
-Print on the console the calculated area
+Print on the console: 
+
+-  "The architect \{name of the architect\} will need \{necessary hours\} hours to complete \{number of projects\} project/s."
 
 ## Examples
 
-| Input | Output |
+| Input | Output | 
 | --- | --- |
-| 5 | 25 |
+| George | The architect George will need 12 hours to complete 4 project/s. |
+| 4 | |
 
-| Input | Output |
+| Input | Output |  
 | --- | --- |
-| 6 | 36 |
+| Sanya | The architect Sanya will need 27 hours to complete 9 project/s. |
+| 9 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-5
+George
+4
 [/input]
 [output]
-25
+The architect George will need 12 hours to complete 4 project/s.
+[/output]
+[/test]
+[test open]
+[input]
+Sanya
+9
+[/input]
+[output]
+The architect Sanya will need 27 hours to complete 9 project/s.
 [/output]
 [/test]
 [test]
 [input]
+Maria
+20
+[/input]
+[output]
+The architect Maria will need 60 hours to complete 20 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Ivan
+11
+[/input]
+[output]
+The architect Ivan will need 33 hours to complete 11 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Dimitar
 2
 [/input]
 [output]
-4
+The architect Dimitar will need 6 hours to complete 2 project/s.
 [/output]
 [/test]
 [test]
 [input]
-3
+Yana
+14
 [/input]
 [output]
-9
+The architect Yana will need 42 hours to complete 14 project/s.
 [/output]
 [/test]
 [test]
 [input]
-100
+Radi
+24
 [/input]
 [output]
-10000
+The architect Radi will need 72 hours to complete 24 project/s.
 [/output]
 [/test]
 [test]
 [input]
-1
+Jivko
+21
 [/input]
 [output]
-1
+The architect Jivko will need 63 hours to complete 21 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Preslava
+40
+[/input]
+[output]
+The architect Preslava will need 120 hours to complete 40 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Alisiya
+37
+[/input]
+[output]
+The architect Alisiya will need 111 hours to complete 37 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Galin
+50
+[/input]
+[output]
+The architect Galin will need 150 hours to complete 50 project/s.
+[/output]
+[/test]
+[test]
+[input]
+Gergana
+22
+[/input]
+[output]
+The architect Gergana will need 66 hours to complete 22 project/s.
 [/output]
 [/test]
 [/tests]

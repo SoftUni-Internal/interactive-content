@@ -1,6 +1,6 @@
 [slide]
-# Problem: Rectangle Area
-[code-task title="Rectangle Area" taskId="27-00E-p-02" executionType="tests-execution" executionStrategy="java-code"]
+# Problem: Nums from 1 to 10
+[code-task title="Nums from 1 to 10" taskId="27-00E-p-03" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -8,17 +8,17 @@ public class Main {
         // Write your code here
     }
 }
+
 ```
 [/code-editor]
 [task-description]
 ## Description
 
-Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
+Write a program to print numbers from 1 to 10 (inclsuive).
 
 ## Output
-* Print the the calculated area
+
+Each number should be on a new line.
 [/task-description]
 [code-io /]
 [tests]
@@ -26,14 +26,32 @@ Write a program, which:
 [input]
 [/input]
 [output]
-50
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 [/output]
 [/test]
 [test]
 [input]
 [/input]
 [output]
-50
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 [/output]
 [/test]
 [/tests]

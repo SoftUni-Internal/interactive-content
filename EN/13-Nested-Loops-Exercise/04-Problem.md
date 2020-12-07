@@ -1,6 +1,6 @@
 [slide]
-# Problem: Word Wars
-[code-task title="Word Wars" taskId="27-06E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Coding
+[code-task title="Coding" taskId="27-06E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,105 +14,220 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **calculates the ASCII value of a few words**, as the word with the **highest value** is the winner.
 
-The value of a word is calculated when you sum the **ASCII values of all the letters of which it consists of**. 
+Write a program that reads **an integer N** from the console. The console should print **as many lines as the count of digits N has**. The **first line** corresponds to the **units**, the second to the **tens**, third to the **hundreds** of number, etc., until there are **no more digits** of the number.
 
-From the console read words until the command "**STOP**", then print:
-- "Winner is \{winner word\} – \{value of the word\}!"
+On each line you must print a **symbol**, which meets the following conditions:
+
+- The symbol, which must be printed, can be found in the \[ASCII\](http://www.asciitable.com/) table. Its **decimal ASCII code** is calculated by adding **33** to the digit of the input number that corresponds to a given line
+- The symbol must be printed **as many times as the digit** corresponding to this line
+- If a given line **matches the digit 0**, on this line is printed "**ZERO**" once
 
 ## Example
 
-| **Input** | **Output** 
+| **Input** | **Output** |
 | --- | --- |
-| House | Winner is Destination - 1154! |
-| Dog | |
-| Destination | |
-| STOP | |
+| 2049 | \*\*\*\*\*\*\*\*\* | 
+| | %%%% |
+| | ZERO |
+| | \#\# |
 
 ### Comments
-- The first letter is \'H\' and it\'s ASCII value is 72, \'o\' has value 111, \'u\' has value 117, \'s\' has value 115, \'e\' has value 101. Their sum is 516. 
-- Keep doing the same calculations for the other words and get that Destination has the highest value - 1154.
+- The number 2049 has four digits so we will print four rows.
+- The first line corresponds to the digit 9. We add 33 to 9 and get 42.
+- This is the decimal ASCII code of the symbol it should be print on the first row.
+- From the ASCII table we know that the corresponding symbol of 42 is '\*'. 
+- Because to the first line corresponds the digit 9 we print '\*' 9 times.
+- For the second line the digit is 4. 4\+33=37. Using ASCII table we find that the symbol to print is '%'. 
+- We print '%' 4 times.
+- The third line matches a digit 0. On this line we print ZERO once.
+- The last digit of the number is 2. 2\+33=35.
+- From the ASCII table we find the symbol to print - '\#' and we print it twice.
 
+### Hints
+- Read the number as a String, save its length in a variable using the **length() method**. Find more **information** about it on the Internet
+- To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable. Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
 [/task-description]
 [tests]
 [test open]
 [input]
-House
-Dog
-Destination
-STOP
+2049
 [/input]
 [output]
-Winner is Destination - 1154!
+\*\*\*\*\*\*\*\*\*
+%%%%
+ZERO
+\#\#
 [/output]
 [/test]
 [test]
 [input]
-Cat
-Doll
-Information
-Winner
-STOP
+9347439
 [/input]
 [output]
-Winner is Information - 1158!
+\*\*\*\*\*\*\*\*\*
+$$$
+%%%%
+\(\(\(\(\(\(\(
+%%%%
+$$$
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [test]
 [input]
-IVAN
-Stoyan
-Kirch0
-STOP
+123456789
 [/input]
 [output]
-Winner is Stoyan - 638!
+\*\*\*\*\*\*\*\*\*
+\)\)\)\)\)\)\)\)
+\(\(\(\(\(\(\(
+''''''
+&&&&&
+%%%%
+$$$
+\#\#
+"
 [/output]
 [/test]
 [test]
 [input]
-st0y1n
-Vladimir
-Petur
-STOP
+1
 [/input]
 [output]
-Winner is Vladimir - 824!
+"
 [/output]
 [/test]
 [test]
 [input]
-slavi
-Gosheto
-Aleksandur
-STOP
+1001
 [/input]
 [output]
-Winner is Aleksandur - 1034!
+"
+ZERO
+ZERO
+"
 [/output]
 [/test]
 [test]
 [input]
-Mascota
-Destryktor
-STOP
+19557
 [/input]
 [output]
-Winner is Destryktor - 1083!
+\(\(\(\(\(\(\(
+&&&&&
+&&&&&
+\*\*\*\*\*\*\*\*\*
+"
 [/output]
 [/test]
 [test]
 [input]
-marto
-krasi
-Vasil
-Valeri
-Baluchonkata
-STOP
+526576543
 [/input]
 [output]
-Winner is Baluchonkata - 1229!
+$$$
+%%%%
+&&&&&
+''''''
+\(\(\((\(\(\(
+&&&&&
+''''''
+\#\#
+&&&&&
+[/output]
+[/test]
+[test]
+[input]
+100000000
+[/input]
+[output]
+ZERO
+ZERO
+ZERO
+ZERO
+ZERO
+ZERO
+ZERO
+ZERO
+"
+[/output]
+[/test]
+[test]
+[input]
+999999999
+[/input]
+[output]
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+987654321
+[/input]
+[output]
+"
+\#\#
+$$$
+%%%%
+&&&&&
+''''''
+\(\(\(\(\(\(\(
+\)\)\)\)\)\)\)\)
+\*\*\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+20709428
+[/input]
+[output]
+\)\)\)\)\)\)\)\)
+\#\#
+%%%%
+\*\*\*\*\*\*\*\*\*
+ZERO
+\(\(\(\(\(\(\(
+ZERO
+\#\#
+[/output]
+[/test]
+[test]
+[input]
+9037309
+[/input]
+[output]
+\*\*\*\*\*\*\*\*\*
+ZERO
+$$$
+\(\(\(\(\(\(\(
+$$$
+ZERO
+\*\*\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+367377098
+[/input]
+[output]
+\)\)\)\)\)\)\)\)
+\*\*\*\*\*\*\*\*\*
+ZERO
+\(\(\(\(\(\(\(
+\(\(\(\(\(\(\(
+$$$
+\(\(\(\(\(\(\(
+''''''
+$$$
 [/output]
 [/test]
 [/tests]

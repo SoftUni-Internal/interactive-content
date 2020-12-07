@@ -1,6 +1,6 @@
 [slide]
-# Problem: Day of Week
-[code-task title="Day of Week" taskId="27-02E-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Animal Type
+[code-task title="Animal Type" taskId="27-02E-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -15,97 +15,82 @@ public class Main {
 [task-description]
 ## Description
 
-Write a program that reads an integer from the console and prints **day of the week** (in English) in range \[1…7\] and "**Error**" if the number is **invalid**.
+Write a program that prints the **type** of an animal according to its **name**.
+
+## Input / Output
+- **dog -> mammal**
+- **crocodile, tortoise, snake -> reptile**
+- **others -> unknown**
 
 ## Example
 
 | **Input** | **Output** |
-| --- |  --- |
-| 2 | Tuesday |
+| --- | | --- |
+| dog | mammal |
 
 | **Input** | **Output** |
 | --- | --- |
-| -1 | Error |
+| snake | reptile |
+
+| **Input** | **Output** |
+| --- | --- |
+| cat | unknown |
 [/task-description]
 [tests]
 [test open]
 [input]
-1
+dog
 [/input]
 [output]
-Monday
+mammal
 [/output]
 [/test]
 [test open]
 [input]
--2
+snake
 [/input]
 [output]
-Error
+reptile
+[/output]
+[/test]
+[test open]
+[input]
+cat
+[/input]
+[output]
+unknown
 [/output]
 [/test]
 [test]
 [input]
-1
+crocodile
 [/input]
 [output]
-Monday
+reptile
 [/output]
 [/test]
 [test]
 [input]
-2
+tortoise
 [/input]
 [output]
-Tuesday
+reptile
 [/output]
 [/test]
 [test]
 [input]
-3
+snake
 [/input]
 [output]
-Wednesday
+reptile
 [/output]
 [/test]
 [test]
 [input]
-4
+cat
 [/input]
 [output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Error
+unknown
 [/output]
 [/test]
 [/tests]

@@ -1,6 +1,6 @@
 [slide]
-# Problem: Fuel Tank
-[code-task title="Fuel Tank" taskId="27-02AE-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Trade Commissions
+[code-task title="Trade Commissions" taskId="27-02AE-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,106 +14,201 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that knows whether the tank of a vehicle needs refueling or not. 
+
+A company pays the following commissions to its employees according to the city they work in and the amount of sales:
+
+| **Sales / City** | London | New York | Sydney|
+| --- | --- | --- | --- | 
+| \[0-500\] | 5% | 4.5% | 5.5% |
+| \[501-1000\] | 7% | 7.5% | 8% | 
+| \[1001-10000\] | 8% | 10% | 12% |
+| > 10000| 12% | 13% | 14.5% |
+
+Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
 
 ## Input
-The input is consists of 2 lines:
-- First you have to read from the console the type of fuel - text with options: "Diesel", "Gasoline" or "Gas"
-- The second line of input reads the fuel in the tank in liters
+Read from the console two lines:
+- Name of a city - String
+- Amount of sales - floating-point number
 
 ## Output
-- If the fuel is other than the specified print "Invalid fuel!".
-- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
-    - "You have enough \{type of fuel\}."
-    - Type of the fuel should be printed in lower case.
-- Otherwise print:
-    - "Fill your tank with \{type of fuel\}!". 
-    - Type of the fuel should be printed in lower case.
+- Print on the console the calculated value of trade commission.
+- The result should be **formatted to the second decimal point**. 
+- If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
 
-### Example
-
-| **Input** | **Output** |
+## Example
+| **Input** | **Output** |  
 | --- | --- |
-| Diesel | Fill your tank with diesel! |
-| 10 | |
+| London | 120.00 | 
+| 1500 | |  
 
-| **Input** | **Output** |
-| --- | --- |
-| Gas | You have enough gas. |
-| 25 | |
 
+| **Input** | **Output** | 
+| --- | --- | 
+| Moscow | error |
+| -50 | |
 [/task-description]
 [tests]
 [test open]
 [input]
-Diesel
-10
+London
+1500
 [/input]
 [output]
-Fill your tank with diesel!
+120.00
 [/output]
 [/test]
 [test open]
 [input]
-Gas
-25
+Moscow
+-50
 [/input]
 [output]
-You have enough gas.
+error
 [/output]
 [/test]
 [test]
 [input]
-Gasoline
-40
+Sydney
+499.99
 [/input]
 [output]
-You have enough gasoline.
+27.50
 [/output]
 [/test]
 [test]
 [input]
-Kerosene
-200
+New York
+3874.50
 [/input]
 [output]
-Invalid fuel!
+387.45
 [/output]
 [/test]
 [test]
 [input]
-Diesel
-25
+Moscow
+-50
 [/input]
 [output]
-You have enough diesel.
+error
 [/output]
 [/test]
 [test]
 [input]
-Gasoline
-28
+London
+0.6
 [/input]
 [output]
-You have enough gasoline.
+0.03
 [/output]
 [/test]
 [test]
 [input]
-Gas
-20
+London
+501
 [/input]
 [output]
-Fill your tank with gas!
+35.07
 [/output]
 [/test]
 [test]
 [input]
-Kerosene
-20
+London
+10005
 [/input]
 [output]
-Invalid fuel!
+1200.60
+[/output]
+[/test]
+[test]
+[input]
+New York
+500
+[/input]
+[output]
+22.50
+[/output]
+[/test]
+[test]
+[input]
+New York
+1000
+[/input]
+[output]
+75.00
+[/output]
+[/test]
+[test]
+[input]
+New York
+9999.9999
+[/input]
+[output]
+1000.00
+[/output]
+[/test]
+[test]
+[input]
+New York
+350824
+[/input]
+[output]
+45607.12
+[/output]
+[/test]
+[test]
+[input]
+Sydney
+1.25
+[/input]
+[output]
+0.07
+[/output]
+[/test]
+[test]
+[input]
+Sydney
+1000
+[/input]
+[output]
+80.00
+[/output]
+[/test]
+[test]
+[input]
+Sydney
+8543.86
+[/input]
+[output]
+1025.26
+[/output]
+[/test]
+[test]
+[input]
+Sydney
+10000.01
+[/input]
+[output]
+1450.00
+[/output]
+[/test]
+[test]
+[input]
+Madrid
+1500
+[/input]
+[output]
+error
+[/output]
+[/test]
+[test]
+[input]
+Sydney
+-20
+[/input]
+[output]
+error
 [/output]
 [/test]
 [/tests]
