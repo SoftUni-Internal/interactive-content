@@ -1,5 +1,13 @@
 [slide]
 # While Loop
+
+[vimeo-video]
+[stream language="EN" videoId="487120555/61828bfd47" default /]
+[stream language="RO" videoId="487120555/61828bfd47"  /]
+[/video-vimeo]
+
+
+
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
 By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
@@ -32,7 +40,7 @@ Here is how we can solve the problem:
 - In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
 
 Here is a sample implementation of this idea:
-```js
+```js live
 let n = Number(input.shift());
 let num = 1;
 while (num <= n) {
