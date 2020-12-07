@@ -1,14 +1,3 @@
-# Homework
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="7657" endTimeInSeconds="11030"]
-[stream language="EN" videoId="345011935" default /]
-[stream language="RO" videoId="393861306"  /]
-[/vimeo-video]
-
-[/slide]
 
 [slide]
 # Homework
