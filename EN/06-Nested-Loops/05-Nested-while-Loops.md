@@ -1,5 +1,11 @@
 [slide]
 # Nested while Loops
+
+[vimeo-video]
+[stream language="EN" videoId="488090609/3d873b4b3b" default /]
+[stream language="RO" videoId="488090609/3d873b4b3b"  /]
+[/video-vimeo]
+
 The use of nested `while` loops is very similar to the one of the `for`.
 
 Here is the syntax in JS:
@@ -16,19 +22,21 @@ while (condition) {
 
 # Example
 
-```js live
-let i = 0;
-let n = 5;
-while (i < n) {
-  console.log(`Value of i: ${i}`);
-  let j = 1;
-  i++;
+[vimeo-video]
+[stream language="EN" videoId="488090625/81b4dc254e" default /]
+[stream language="RO" videoId="488090625/81b4dc254e"  /]
+[/video-vimeo]
 
-  while (j < n)
+```js live
+let row = 1;
+while (row <= 2) {
+  console.log(`Row: ${row}`);
+  let col = 1;
+  while (col <= 3)
   {
-    console.log(`  Value of j: ${j}`);
-    j++;
+    console.log(`  Column: ${col}`);
   }
+  row++;
 }
 ```
 [/slide]
@@ -79,6 +87,12 @@ Write a program, which:
 
 [slide]
 # Solution: Triangle of Stars with While
+
+[vimeo-video]
+[stream language="EN" videoId="488090670/32365e006a" default /]
+[stream language="RO" videoId="488090670/32365e006a"  /]
+[/video-vimeo]
+
 [code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
@@ -126,6 +140,247 @@ Write a program, which:
 **
 ***
 ****
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
+[/slide]
+
+
+[slide]
+# Problem: Sum of Digits Calculator
+[code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
+[code-editor language=javascript]
+```
+function sum(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Continuously read numbers until `End` is entered:
+
+* Print the sum of digits for each number
+
+* Finally, print `Goodbye`
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
+||Sum of digits = 13|
+||Sum of digits = 18|
+||Sum of digits = 5|
+||Sum of digits = 15|
+||Goodbye|
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+124
+33
+2
+563
+End
+[/input]
+[output]
+Sum of digits: 7
+Sum of digits: 6
+Sum of digits: 2
+Sum of digits: 14
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+24
+312
+3
+543
+End
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 6
+Sum of digits: 3
+Sum of digits: 12
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+1234
+212
+4
+343
+End
+[/input]
+[output]
+Sum of digits: 10
+Sum of digits: 5
+Sum of digits: 4
+Sum of digits: 10
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+123
+23
+234
+566
+End
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 5
+Sum of digits: 9
+Sum of digits: 17
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+789
+567
+567
+345
+End
+[/input]
+[output]
+Sum of digits: 24
+Sum of digits: 18
+Sum of digits: 18
+Sum of digits: 12
+Goodbye
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Sum of Digits Calculator
+
+[vimeo-video]
+[stream language="EN" videoId="488090779/48452cdf0b" default /]
+[stream language="RO" videoId="488090779/48452cdf0b"  /]
+[/video-vimeo]
+
+[code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
+[code-editor language=javascript]
+```
+function sum(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Continuously read numbers until `End` is entered:
+
+* Print the sum of digits for each number
+
+* Finally, print `Goodbye`
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
+||Sum of digits = 13|
+||Sum of digits = 18|
+||Sum of digits = 5|
+||Sum of digits = 15|
+||Goodbye|
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+124
+33
+2
+563
+End
+[/input]
+[output]
+Sum of digits: 7
+Sum of digits: 6
+Sum of digits: 2
+Sum of digits: 14
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+24
+312
+3
+543
+End
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 6
+Sum of digits: 3
+Sum of digits: 12
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+1234
+212
+4
+343
+End
+[/input]
+[output]
+Sum of digits: 10
+Sum of digits: 5
+Sum of digits: 4
+Sum of digits: 10
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+123
+23
+234
+566
+End
+[/input]
+[output]
+Sum of digits: 6
+Sum of digits: 5
+Sum of digits: 9
+Sum of digits: 17
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+789
+567
+567
+345
+End
+[/input]
+[output]
+Sum of digits: 24
+Sum of digits: 18
+Sum of digits: 18
+Sum of digits: 12
+Goodbye
 [/output]
 [/test]
 [/tests]
