@@ -220,41 +220,55 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Greatest Number
+[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculateMonthSalary (input) {
-   // Write your code here
+function greatestNumber(input) {
+  // Write your code here
 }
-
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Write a program, which: 
 
-* Receives the number of workdays for the current month and the salary per day - integers 
-* Calculates the monthly salary of an employee 
-* Prints the result on the console 
+* Reads `n` - a number representing the amount of following input numbers 
+
+* Reads n numbers 
+
+* Finds and prints the greatest number 
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|2| 300 |
-|100| |
-|200| |
+|3| 90 |
+|40||
+|90||
+|50| |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-100
-300
+3
+30
+80
+40
 [/input]
 [output]
-400
+80
+[/output]
+[/test]
+[test]
+[input]
+3
+-30
+-80
+-40
+[/input]
+[output]
+-30
 [/output]
 [/test]
 [/tests]
@@ -263,53 +277,3 @@ Write a program, which:
 
 [/slide]
 
-[slide]
-# Solution: Calculate Month Salary
-[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function calculateMonthSalary (input) {
-   let days = Number(input.shift());
-   let totalSalary = 0;
-
-   for (let i = 1; i <= days; i += 1) {
-      let salaryPerDay = Number(input.shift());
-      totalSalary += salaryPerDay;
-   }
-
-   console.log(totalSalary);
-}
-
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Receives the number of workdays for the current month and the salary per day - integers 
-* Calculates the monthly salary of an employee 
-* Prints the result on the console 
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|2| 300 |
-|100| |
-|200| |
-[/task-description]
-[tests]
-[test]
-[input]
-2
-100
-300
-[/input]
-[output]
-400
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
