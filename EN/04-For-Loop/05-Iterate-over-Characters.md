@@ -1,5 +1,11 @@
 [slide]
 # Iterating over Characters
+
+[vimeo-video]
+[stream language="EN" videoId="487119574/ea95aca57d" default /]
+[stream language="RO" videoId="487119574/ea95aca57d"  /]
+[/video-vimeo]
+
 It is good to know that **for loops** do not only work with numbers. 
 
 We can also use **for loops** to iterate over **characters**.
@@ -52,6 +58,12 @@ console.log(asciiValue);
 [slide]
 # Problem: Latin Letters
 
+
+[vimeo-video]
+[stream language="EN" videoId="487119629/a9b273defe" default /]
+[stream language="RO" videoId="487119629/a9b273defe"  /]
+[/video-vimeo]
+
 [code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -74,6 +86,12 @@ Write a program, which:
 
 [slide]
 # Solution: Latin Letters
+
+[vimeo-video]
+[stream language="EN" videoId="487119646/6501686e7f" default /]
+[stream language="RO" videoId="487119646/6501686e7f"  /]
+[/video-vimeo]
+
 [code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

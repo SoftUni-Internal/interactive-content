@@ -52,9 +52,9 @@ The body of the loop is usually enclosed in curly brackets `{ }` and represents 
 
 The code block below shows the structure of a `for` loop: 
 
-```
+``` js
 for (initialization; condition; update) {
-  loop's body;
+  //loop's body;
 }
 ```
 

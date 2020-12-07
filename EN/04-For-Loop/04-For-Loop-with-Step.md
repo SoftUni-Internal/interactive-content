@@ -1,5 +1,11 @@
 [slide]
 # For Loop with A step
+
+[vimeo-video]
+[stream language="EN" videoId="487119404/67365f350f" default /]
+[stream language="RO" videoId="487119404/67365f350f"  /]
+[/video-vimeo]
+
 In this section we will get more detail on a particular and very important part of the `for` loop, **namely the step.** 
 
 **The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable. 
@@ -39,6 +45,13 @@ for (let i = 10; i >= 1; i--) {
 
 [slide]
 # Problem: Number Ending with 7
+
+[vimeo-video]
+[stream language="EN" videoId="487119426/15f9ad851f" default /]
+[stream language="RO" videoId="487119426/15f9ad851f"  /]
+[/video-vimeo]
+
+
 [code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -82,6 +95,12 @@ Write a program, which:
 
 [slide]
 # Solution: Number Ending with 7
+
+[vimeo-video]
+[stream language="EN" videoId="487119464/39daf17177" default /]
+[stream language="RO" videoId="487119464/39daf17177"  /]
+[/video-vimeo]
+
 [code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -129,6 +148,12 @@ Write a program, which:
 
 [slide]
 # Problem: Exam Countdown
+
+[vimeo-video]
+[stream language="EN" videoId="487119503/367fcdcc3d" default /]
+[stream language="RO" videoId="487119503/367fcdcc3d"  /]
+[/video-vimeo]
+
 [code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -175,6 +200,12 @@ The exam has come.
 
 [slide]
 # Solution: Exam Countdown
+
+[vimeo-video]
+[stream language="EN" videoId="487119549/e38e542417" default /]
+[stream language="RO" videoId="487119549/e38e542417"  /]
+[/video-vimeo]
+
 [code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
