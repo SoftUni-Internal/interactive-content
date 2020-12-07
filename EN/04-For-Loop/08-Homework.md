@@ -1,14 +1,4 @@
-[slide]
 # Homework
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
-[/slide]
-
 
 [slide]
 # Problem: Greatest Number
@@ -141,6 +131,18 @@ Min number: -2
 
 [slide]
 # Problem: Power Of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="487119835/67aabd5d33" default /]
+[stream language="RO" videoId="487119835/67aabd5d33"  /]
+[/video-vimeo]
+
+# Solution
+[vimeo-video]
+[stream language="EN" videoId="487119870/ef3427abb8" default /]
+[stream language="RO" videoId="487119870/ef3427abb8"  /]
+[/video-vimeo]
+
 [code-task title="Power Of Numbers" taskId="pb-js-04-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -621,6 +623,12 @@ The rollercoaster departures
 
 [slide]
 # Problem: Multiply
+
+[vimeo-video]
+[stream language="EN" videoId="487119938/9a4818ebf0" default /]
+[stream language="RO" videoId="487119938/9a4818ebf0"  /]
+[/video-vimeo]
+
 [code-task title="Multiply" taskId="pb-js-04-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -675,5 +683,11 @@ Write a program, which:
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]
