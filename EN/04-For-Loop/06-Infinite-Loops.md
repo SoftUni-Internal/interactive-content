@@ -37,7 +37,7 @@ for ( ; ; ) {
 [code-editor language=javascript]
 ```
 function sumNumbers (input) {
-   
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -45,6 +45,92 @@ function sumNumbers (input) {
 # Description
 Write a function to process numbers from the input parameters and print their sum until 0 is reached.
 
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['5', '3', '2', '0']`| Sum = 5 |
+||Sum = 8 |
+||Sum = 10 |
+||Good bye |
+
+[/task-description]
+[tests]
+[test]
+[input]
+5
+3
+2
+0
+[/input]
+[output]
+Sum \= 5
+Sum \= 8
+Sum \= 10
+Good bye
+[/output]
+[/test]
+[test]
+[input]
+6
+4
+3
+0
+[/input]
+[output]
+Sum \= 6
+Sum \= 10
+Sum \= 13
+Goodbye
+[/output]
+[/test]
+[test]
+[input]
+9
+7
+5
+0
+[/input]
+[output]
+Sum \= 9
+Sum \= 16
+Sum \= 21
+Goodbye
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
+
+
+[slide]
+# Solution: Sum Numbers Until 0
+
+[vimeo-video]
+[stream language="EN" videoId="487119772/ad088bc30e" default /]
+[stream language="RO" videoId="487119772/ad088bc30e"  /]
+[/video-vimeo]
+
+[code-task title="Sum Numbers Until 0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function sumNumbers (input) {
+  let sum = 0;
+  for (;;) {
+    let num = nums.shift();
+    if (num == 0) break;
+    sum += num;
+    console.log(`Sum = ${sum}`);
+  }
+  console.log('Goodbye');
+}
+
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function to process numbers from the input parameters and print their sum until 0 is reached.
 
 # Example
 | **Input** | **Output** |
