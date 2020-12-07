@@ -1,4 +1,5 @@
 [slide]
+
 # Real-Life Example: Fill a Bucket
 
 [vimeo-video]
@@ -23,5 +24,6 @@ You never know how many mugs of water you will use.
 You will stop when the bucket is full.
 
 In this example, you work until satisfying a given condition.
+
 [/slide]
 
