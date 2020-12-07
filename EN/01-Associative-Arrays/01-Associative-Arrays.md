@@ -437,14 +437,10 @@ At end, print a list of all meetings.
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
 |                                                                  | Scheduled for Friday    |
+|                                                                  | Monday \-\> Peter  |
+|                                                                  | Wednesday \-\> Bill   |
+|                                                                  | Friday \-\> Tim    |
 
-## Final Output
-
-| **Output** |
-| --- |
-| Monday \-\> Peter   |
-| Wednesday \-\> Bill |
-| Friday \-\> Tim     |
 
 [/task-description]
 [tests]
@@ -648,14 +644,10 @@ At end, print a list of all meetings.
 |                                                                  | Scheduled for Wednesday |
 |                                                                  | Conflict on Monday      |
 |                                                                  | Scheduled for Friday    |
+|                                                                  | Monday \-\> Peter  |
+|                                                                  | Wednesday \-\> Bill   |
+|                                                                  | Friday \-\> Tim    |
 
-## Final Output
-
-| **Output** |
-| --- |
-| Monday \-\> Peter   |
-| Wednesday \-\> Bill |
-| Friday \-\> Tim     |
 
 [/task-description]
 [tests]
