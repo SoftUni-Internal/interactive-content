@@ -1,6 +1,31 @@
 [slide]
 # Revision
 
+[vimeo-video]
+[stream language="EN" videoId="487128613/c5e1626acb" default /]
+[stream language="RO" videoId="487128613/c5e1626acb"  /]
+[/video-vimeo]
+
+# Prefix and Postfix Increment or Decrement
+
+* Prefix \+\+ and \-\-
+
+``` js live
+let a = 1;
+
+console.log(--a);
+console.log(a);
+```
+
+* Postfix \+\+ and \-\-
+
+``` js live
+let a = 1;
+
+console.log(a++);
+console.log(a);
+```
+
 # While / Do-While Loops
 The while / do-while loops are repeated while a **condition is true**:
 
