@@ -1,5 +1,11 @@
 [slide]
 # Summary
+
+[vimeo-video]
+[stream language="EN" videoId="487129429/3a15190b39" default /]
+[stream language="RO" videoId="487129429/3a15190b39"  /]
+[/video-vimeo]
+
 In this lesson we larned: 
 
 - **For-loops** can use different **steps**

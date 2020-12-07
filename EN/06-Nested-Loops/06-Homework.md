@@ -1,13 +1,4 @@
-[slide]
 # Homework
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
-[/slide]
 
 [slide]
 # Problem: Building
@@ -796,5 +787,11 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/tests]
 [code-io/]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]
