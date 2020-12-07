@@ -21,12 +21,13 @@ When you reach that condition, you stop the loop.
 [/slide]
 
 [slide]
+# For Loop
+
 [vimeo-video]
 [stream language="EN" videoId="487119239/423a548f1b" default /]
 [stream language="RO" videoId="487119239/423a548f1b"  /]
 [/video-vimeo]
 
-# For Loop
 In programming on many occasions, we need to execute a block of commands multiple times. 
 
 To do that, the so-called loops are used. 
