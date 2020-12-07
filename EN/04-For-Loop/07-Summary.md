@@ -1,5 +1,11 @@
 [slide]
 # Summary
+
+[vimeo-video]
+[stream language="EN" videoId="487119952/6981ade933" default /]
+[stream language="RO" videoId="487119952/6981ade933"  /]
+[/video-vimeo]
+
 In this lesson we learned: 
 
 For-loops are used when we need to execute a block of code multiple times 
