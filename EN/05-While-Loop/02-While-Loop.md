@@ -40,7 +40,7 @@ Here is how we can solve the problem:
 - In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
 
 Here is a sample implementation of this idea:
-```js live
+```js
 let n = Number(input.shift());
 let num = 1;
 while (num <= n) {
@@ -52,6 +52,13 @@ while (num <= n) {
 
 [slide]
 # Problem: Decreasing Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="487120584/cf3fbb855b" default /]
+[stream language="RO" videoId="487120584/cf3fbb855b"  /]
+[/video-vimeo]
+
+
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -97,6 +104,13 @@ Write a program, which:
 
 [slide]
 # Solution: Decreasing Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="487120633/4307d54296" default /]
+[stream language="RO" videoId="487120633/4307d54296"  /]
+[/video-vimeo]
+
+
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -146,6 +160,8 @@ Write a program, which:
 
 [slide]
 # Problem: Numbers in Range
+
+
 [code-task title="Numbers in Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

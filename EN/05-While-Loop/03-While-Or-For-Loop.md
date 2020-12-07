@@ -1,6 +1,12 @@
 [slide]
 # While or For Loop?
 
+[vimeo-video]
+[stream language="EN" videoId="487120722/4b17fd0910" default /]
+[stream language="RO" videoId="487120722/4b17fd0910"  /]
+[/video-vimeo]
+
+
 `while` and `for` loops both **repeat** a block of **code**.
 
 But there are different situations when writing code that require either the first loop, or the other.
@@ -87,6 +93,13 @@ Write a program, which:
 
 [slide]
 # Solution: Odd Number
+
+[vimeo-video]
+[stream language="EN" videoId="487120737/05e8469c7d" default /]
+[stream language="RO" videoId="487120737/05e8469c7d"  /]
+[/video-vimeo]
+
+
 [code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
