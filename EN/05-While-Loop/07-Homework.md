@@ -1,16 +1,27 @@
-[slide]
 # Homework
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
-[/slide]
 
 [slide]
-# Problem: Sum Digits
+# Problem and Solution: Sum Digits
+
+https://vimeo.com/
+
+[vimeo-video]
+[stream language="EN" videoId="487120988/3ae2fabcc6" default /]
+[stream language="RO" videoId="487120988/3ae2fabcc6"  /]
+[/video-vimeo]
+
+# Solution
+
+[vimeo-video]
+[stream language="EN" videoId="487121014/d66f436d41" default /]
+[stream language="RO" videoId="487121014/d66f436d41"  /]
+[/video-vimeo]
+
+
+
+
+
+
 [code-task title="Sum Digits" taskId="pb-js-05-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -89,7 +100,21 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Problem: Favorite Book
+# Problem and Solution: Favorite Book
+
+[vimeo-video]
+[stream language="EN" videoId="487121037/3e8eb3349b" default /]
+[stream language="RO" videoId="487121037/3e8eb3349b"  /]
+[/video-vimeo]
+
+# Solution
+
+[vimeo-video]
+[stream language="EN" videoId="487121070/3eff5ec50f" default /]
+[stream language="RO" videoId="487121070/3eff5ec50f"  /]
+[/video-vimeo]
+
+
 [code-task title="Favorite Book" taskId="pb-js-05-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
