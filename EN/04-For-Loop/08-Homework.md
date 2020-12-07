@@ -719,21 +719,25 @@ Write a program, which:
 [code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function powerOfNumbers(n, m) {
-  let outputArr = [];
-        let sum = 0;
-
-        for (let i = +n; i <= +m; i++) {
-            if (i % 9 === 0) {
-                outputArr.push(i);
-                sum += i;
-            }
+function solve(num1, num2) {
+    num1 = Number(num1);
+    num2 = Number(num2);
+    let sum = 0;
+    let numByNine = '0';
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+            sum += index;
+            
         }
-
-        let output = `The sum: ${sum}\n`;
-        output += outputArr.join('\n');
-
-        console.log(output);
+    }
+    console.log(`The sum: ${sum}`);
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+          console.log(index + " ");  
+            
+        }
+    }
+    
 }
 ```
 [/code-editor]
@@ -770,6 +774,51 @@ The sum: 1683
 198
 [/output]
 [/test]
+[test]
+[input]
+0
+100
+[/input]
+[output]
+The sum: 594
+0
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
+[/output]
+[/test]
+[test]
+[input]
+1
+50
+[/input]
+[output]
+The sum: 135
+9
+18
+27
+36
+45
+[/output]
+[/test]
+[test]
+[input]
+9000
+9008
+[/input]
+[output]
+The sum: 9000
+9000
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -782,25 +831,26 @@ The sum: 1683
 [code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function powerOfNumbers(input) {
-
-  let n = Number(input[0]);
-let m = Number(inpit[1]);
-
-  let outputArr = [];
-        let sum = 0;
-
-        for (let i = +n; i <= +m; i++) {
-            if (i % 9 === 0) {
-                outputArr.push(i);
-                sum += i;
-            }
+function solve(input) {
+  let  num1 = Number(input.shift());
+  let  num2 = Number(input.shift());
+  
+    let sum = 0;
+    let numByNine = '0';
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+            sum += index;
+            
         }
-
-        let output = `The sum: ${sum}\n`;
-        output += outputArr.join('\n');
-
-        console.log(output);
+    }
+    console.log(`The sum: ${sum}`);
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+          console.log(index + " ");  
+            
+        }
+    }
+    
 }
 ```
 [/code-editor]
@@ -835,6 +885,51 @@ The sum: 1683
 180
 189
 198
+[/output]
+[/test]
+[test]
+[input]
+0
+100
+[/input]
+[output]
+The sum: 594
+0
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
+[/output]
+[/test]
+[test]
+[input]
+1
+50
+[/input]
+[output]
+The sum: 135
+9
+18
+27
+36
+45
+[/output]
+[/test]
+[test]
+[input]
+9000
+9008
+[/input]
+[output]
+The sum: 9000
+9000
 [/output]
 [/test]
 [/tests]
