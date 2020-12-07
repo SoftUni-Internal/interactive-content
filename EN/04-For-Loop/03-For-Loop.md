@@ -1,4 +1,22 @@
+# For Loop
 [slide]
+
+# Real Life Example: Moving Dishes
+
+[vimeo-video]
+[stream language="EN" videoId="487119221/9c519c14e8" default /]
+[stream language="RO" videoId="487119221/9c519c14e8"  /]
+[/video-vimeo]
+
+[/slide]
+
+[slide]
+
+[vimeo-video]
+[stream language="EN" videoId="487119239/423a548f1b" default /]
+[stream language="RO" videoId="487119239/423a548f1b"  /]
+[/video-vimeo]
+
 # For Loop
 In programming on many occasions, we need to execute a block of commands multiple times. 
 
@@ -16,7 +34,7 @@ The block of code can be explained with this use case diagram:
 
 The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands. 
 
-# Syntax: For-Loop 
+## Syntax: For-Loop 
 
 Upon declaring the loop, you can specify a **start value** and an **end value.** 
 
@@ -47,6 +65,12 @@ The loop repeats 10 times and each of these repetitions is called an **"iteratio
 
 [slide]
 # Problem: Print Sum of N Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="487119267/15cae043ef" default /]
+[stream language="RO" videoId="487119267/15cae043ef"  /]
+[/video-vimeo]
+
 [code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -111,6 +135,12 @@ Write a program, which:
 
 [slide]
 # Solution: Print Sum of N Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="487119329/778e284f8f" default /]
+[stream language="RO" videoId="487119329/778e284f8f"  /]
+[/video-vimeo]
+
 [code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
