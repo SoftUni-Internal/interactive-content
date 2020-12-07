@@ -221,11 +221,17 @@ Write a program, which:
 
 [slide]
 # Problem: Greatest Number
+
+[vimeo-video]
+[stream language="EN" videoId="487119324/39b9907585" default /]
+[stream language="RO" videoId="487119324/39b9907585"  /]
+[/video-vimeo]
+
 [code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(input) {
-  // Write your code here
+  //Write your code here
 }
 ```
 [/code-editor]
@@ -242,10 +248,8 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| 90 |
-|40||
-|90||
-|50| |
+|`['3', '40', '90', '50']`| 90 |
+
 
 [/task-description]
 [tests]
@@ -271,9 +275,122 @@ Write a program, which:
 -30
 [/output]
 [/test]
+[test]
+[input]
+3
+15
+110
+40
+[/input]
+[output]
+110
+[/output]
+[/test]
+[test]
+[input]
+3
+30
+90
+40
+[/input]
+[output]
+90
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
 
 [/slide]
 
+[slide]
+# Solution: Greatest Number
+
+[vimeo-video]
+[stream language="EN" videoId="487119366/21cddc7cd5" default /]
+[stream language="RO" videoId="487119366/21cddc7cd5"  /]
+[/video-vimeo]
+
+[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function greatestNumber(input) {
+ let max = -Infinity;
+  let n = Number(input.shift());
+  for (let i = 1; i <= n; i++) {
+    let number = Number(input.shift());
+    if (number > max) {
+      max = number;
+    }
+  }
+  console.log(max);
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+
+* Reads `n` - a number representing the amount of following input numbers 
+
+* Reads n numbers 
+
+* Finds and prints the greatest number 
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['3', '40', '90', '50']`| 90 |
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+30
+80
+40
+[/input]
+[output]
+80
+[/output]
+[/test]
+[test]
+[input]
+3
+-30
+-80
+-40
+[/input]
+[output]
+-30
+[/output]
+[/test]
+[test]
+[input]
+3
+15
+110
+40
+[/input]
+[output]
+110
+[/output]
+[/test]
+[test]
+[input]
+3
+30
+90
+40
+[/input]
+[output]
+90
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
