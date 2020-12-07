@@ -1,6 +1,11 @@
 [slide]
 # Nested Loops
 
+[vimeo-video]
+[stream language="EN" videoId="488090283/21d2c907ca" default /]
+[stream language="RO" videoId="488090283/21d2c907ca"  /]
+[/video-vimeo]
+
 A nested loop is a construction with which one loop is placed inside \(inner\) the body of another one \(outer\). 
 
 There can be both nested `for` and `while` loops. 
@@ -36,6 +41,11 @@ This happens the following way:
 
 [slide]
 # Nested Loops – Examples
+
+[vimeo-video]
+[stream language="EN" videoId="488090192/65c460bd1a" default /]
+[stream language="RO" videoId="488090192/65c460bd1a"  /]
+[/video-vimeo]
 
 Here is an **example** that illustrates nested loops. 
 

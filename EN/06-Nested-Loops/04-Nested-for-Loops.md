@@ -1,5 +1,11 @@
 [slide]
 # Nested for Loops
+
+[vimeo-video]
+[stream language="EN" videoId="488090349/1e2b80201d" default /]
+[stream language="RO" videoId="488090349/1e2b80201d"  /]
+[/video-vimeo]
+
 Nested for-loops are statements that consist of several for loops located inside each other 
 
 **Nested for loops** are used:
@@ -30,17 +36,26 @@ for (let i = 1; i <= n; i += 3) {
     }
 }
 ```
+[/slide]
+
+[slide]
 # Example
+
+[vimeo-video]
+[stream language="EN" videoId="488090388/9cb36b2bd2" default /]
+[stream language="RO" videoId="488090388/9cb36b2bd2"  /]
+[/video-vimeo]
+
 Here is an example JavaScript program:
 ```js live
-let a = 3;
-let b = 3;
+let rows = 3;
+let columns = 2;
 
-for (let i = 0; i < a; i++) {
-    console.log(`i = ${i}`);
+for (let r = 0; r <= rows; r++) {
+    console.log(`row = ${r}`);
 
-    for (let j = 0; j < b; j++) {
-        console.log(`  j = ${j}`);
+    for (let c = 0; c < columns; c++) {
+        console.log(`  columns = ${c}`);
     }
 }
 ```
@@ -92,6 +107,12 @@ Write a program, which:
 
 [slide]
 # Solution: Triangle of Stars
+
+[vimeo-video]
+[stream language="EN" videoId="488090539/2eacc8e193" default /]
+[stream language="RO" videoId="488090539/2eacc8e193"  /]
+[/video-vimeo]
+
 [code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
