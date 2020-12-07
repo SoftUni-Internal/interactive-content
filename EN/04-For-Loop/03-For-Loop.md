@@ -311,7 +311,7 @@ Write a program, which:
 [stream language="RO" videoId="487119366/21cddc7cd5"  /]
 [/video-vimeo]
 
-[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greatest Number" taskId="pb-js-04-p-01-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(input) {
