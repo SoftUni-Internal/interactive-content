@@ -1,14 +1,5 @@
 # Summary
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="11030" endTimeInSeconds="11296"]
-[stream language="EN" videoId="345011935" default /]
-[stream language="RO" videoId="393861306"  /]
-[/vimeo-video]
-
-[/slide]
 
 [slide]
 # Summary

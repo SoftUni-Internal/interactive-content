@@ -1,14 +1,6 @@
 # Revision
 
-[slide]
-# Video
 
-[vimeo-video startTimeInSeconds="1028" endTimeInSeconds="1323"]
-[stream language="EN" videoId="343678060" default /]
-[stream language="RO" videoId="391452320"  /]
-[/vimeo-video]
-
-[/slide]
 
 [slide]
 # Revision
