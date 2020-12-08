@@ -558,3 +558,254 @@ end of race
 [/code-task]
 
 [/slide]
+
+[slide]
+
+# Problem: Bar Income
+
+[code-task title="Bar Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function foo(arr) {
+    let data = {
+        names: [],
+        products: [],
+        quantities: [],
+        prices: [],
+    }
+    let totalIncome = 0
+    const regex = {
+        name: new RegExp(/%[A-Z]{1}[a-z]+%/, 'g'),
+        product: new RegExp(/<\w+>/, 'g'),
+        quantity: new RegExp(/\|[0-9]+\|/, 'g'),
+        price: new RegExp(/[0-9]+\.*[0-9]+\$/, 'g'),
+    }
+
+    for (let i = 0; i < arr.length; i += 1) {
+        if (arr[i] === 'end of shift') break;
+        if (arr[i].match(regex.name) && arr[i].match(regex.product) && arr[i].match(regex.quantity) && arr[i].match(regex.price)) {
+            data.names.push(arr[i].match(regex.name)[0].split('%')[1])
+            data.products.push(arr[i].match(regex.product)[0].split('<')[1].split('>')[0])
+            data.quantities.push(Number(arr[i].match(regex.quantity)[0].split('|')[1]))
+            data.prices.push(Number(arr[i].match(regex.price)[0].split('$')[0]))
+        } 
+    }
+
+    for (let i = 0; i < data.names.length; i++) {
+        totalIncome += data.quantities[i] * data.prices[i]
+        console.log(`${data.names[i]}: ${data.products[i]} - ${(data.quantities[i] * data.prices[i]).toFixed(2)}`)
+    }
+    console.log(`Total income: ${totalIncome.toFixed(2)}`)
+}
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+Let's take a break and visit the game bar at SoftUni. 
+
+It is about time for the people behind the bar to go home and you are the person who has to draw the line and calculate the money from the products that were sold throughout the day.
+
+Until you receive a line with text "end of shift" you will be given lines of input. 
+
+But before processing that line you have to do some validations first.
+
+Each valid order should have a customer, product, count and a price:
+- Valid customer's name should be surrounded by `%` and must start with a capital letter, followed by lower-case letters.
+- Valid product contains any word character and must be surrounded by `<` and `>`. 
+- Valid count is an integer, surrounded by `|`.
+- Valid price is any real number followed by `$`.
+
+The parts of a valid order should appear in the order given: customer, product, count and a price.
+
+Between each part there can be other symbols, except `('|', '$', '%' and '.')`.
+
+For each valid line print on the console: `{customerName}: {product} - {totalPrice}`.
+
+When you receive "end of shift" print the total amount of money for the day rounded to 2 decimal places in the following format: 
+
+`Total income: {income}`.
+
+# Example 1
+
+**Input**
+
+`['%George%<Croissant>|2|10.3$',
+  '%Peter%<Gum>|1|1.3$',
+  '%Maria%<Cola>|1|2.4$',
+  'end of shift']`
+
+**Output**
+
+George\: Croissant \- 20\.60
+
+Peter\: Gum \- 1\.30
+
+Maria\: Cola \- 2\.40
+
+Total income\: 24\.30
+
+# Example 2
+
+**Input**
+
+`['%InvalidName%<Croissant>|2|10.3$',
+  '%Peter%<Gum>1.3$',
+  '%Maria%<Cola>|1|2.4',
+  '%Valid%<Valid>valid|10|valid20$',
+  'end of shift']`
+
+**Output**
+
+Valid\: Valid \- 200\.00
+
+Total income\: 200\.00
+
+[/task-description]
+[tests]
+[test]
+[input]
+\%George\%\<Croissant\>\|2\|10\.3\$
+\%Peter\%\<Gum\>\|1\|1\.3\$
+\%Maria\%\<Cola\>\|1\|2\.4\$
+end of shift
+[/input]
+[output]
+George\: Croissant \- 20\.60
+Peter\: Gum \- 1\.30
+Maria\: Cola \- 2\.40
+Total income\: 24\.30
+[/output]
+[/test]
+[test]
+[input]
+\%InvalidName\%\<Croissant\>\|2\|10\.3\$
+\%Peter\%\<Gum\>1\.3\$
+\%Maria\%\<Cola\>\|1\|2\.4
+\%Valid\%\<Valid\>valid\|10\|valid20\$
+end of shift
+[/input]
+[output]
+Valid\: Valid \- 200\.00
+Total income\: 200\.00
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|1\|20\.50\$
+end of shift
+[/input]
+[output]
+Name/: Product /- 20/.50
+Total income/: 20/.50
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product2\>\|1\|20\.50\$
+end of shift
+[/input]
+[output]
+Name\: Product2 \- 20\.50
+Total income\: 20\.50
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%valid\<Product3\>valid\|1\|20\.80\$
+end of shift
+[/input]
+[output]
+Name\: Product3 \- 20\.80
+Total income\: 20\.80
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|2\|20\.50\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 41\.00
+Total income\: 41\.00
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|1\|20\.50\$
+\%Name\%\<Product\>\|1\|9\.50\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 20\.50
+Name\: Product \- 9\.50
+Total income\: 30\.00
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|2\|10\.3\$
+\%Name\%\<Pro\_duct\>\|2\|10\.3\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 20\.60
+Name\: Pro\_duct \- 20\.60
+Total income\: 41\.20
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|2\|10\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 20\.00
+Total income\: 20\.00
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%\<Product\>\|1\|30\.10\$
+\%Name\%\<Product\>\|1\.0\|10\.10\$
+\%Name\%\<Product\>\|1\|10\.10
+\%Name\%Product\|1\|10\.10\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 30\.10
+Total income\: 30\.10
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%ho\<Product\>eins\|1\|10\$
+\%Name\%he\<Product\>zwei\|2\|10\$
+\%Name\%hi\<Product\>drei\|3\|10\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 10\.00
+Name\: Product \- 20\.00
+Name\: Product \- 30\.00
+Total income\: 60\.00
+[/output]
+[/test]
+[test]
+[input]
+\%Name\%sorry for this test\<\>\<\>\<\>\<\>\<Product\>\<\>\<\>\|2\|10\$
+end of shift
+[/input]
+[output]
+Name\: Product \- 20\.00
+Total income\: 20\.00
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
