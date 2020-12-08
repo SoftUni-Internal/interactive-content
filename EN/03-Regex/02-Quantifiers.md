@@ -25,12 +25,10 @@ Example: "Hellooo World! Hello Again!"
 `lo*` will match "l", "looo", "l", "l", "lo".
 
 ```js live
-function solve() {
     var str = "Hellooo World! Hello Again!";
     var pattern = /lo*/g;
     var result = str.match(pattern);
     console.log(result);
-  }
 ```
 
 `+` matches the previous element one or more times.
@@ -40,12 +38,10 @@ Example: "Hellooo World! Hello Again!"
 `o+` will match "ooo", "o", "o".
 
 ```js live
-function solve() {
     var str = "Hellooo World! Hello Again!";
     var pattern = /o+/g;
     var result = str.match(pattern);
     console.log(result);
-  }
 ```
 
 `?` matches the previous element zero or one time.
@@ -55,12 +51,10 @@ Example: "1, 100 or 1000"
 `10?` matches "1", "10" and "10" as a result.
 
 ```js live
-function solve() {
     var str = "1, 100 or 1000";
     var pattern = /10?/g;
     var result = str.match(pattern);
     console.log(result);
-  }
 ```
 
 `{4}` matches the previous element exactly 4 times.
@@ -70,12 +64,10 @@ Example: "1000, 10000 or 100000"
 `\d{4}` matches "1000", "1000", "1000" as a result.
 
 ```js live
-function solve() {
     var str = "1000, 10000 or 100000";
     var pattern = /\d{4}/g;
     var result = str.match(pattern);
     console.log(result);
-  }
 ```
 
 ## Grouping Constructs
@@ -130,7 +122,6 @@ And if there are multiple matches you can iterate over them:
     console.log(match.groups.number);
     match = pattern.exec(str);
     }
-}
 ```
 
 Use this expression for **non-capturing groups** `(?:subexpression)`.
@@ -147,7 +138,6 @@ The pipe symbol `|` in the example means logical "or".
     console.log(result[0]);
     console.log(result[1]);
     }
-}
 ```
 
 ## Backreferences
@@ -169,7 +159,6 @@ To match the second `#` which is after the word "there" use `\1`, where number 1
     const result = str.match(pattern);
     console.log(result[0]);
     }
-}
 ```
 
 [/slide]
