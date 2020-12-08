@@ -111,9 +111,9 @@ The decrypted message is\: howareyou\?
 [test]
 [input]
 aaaaaaaaaaaaaaaa
-ChangeAll|a|b
-Insert|0|abc
-Move|3
+ChangeAll\|a\|b
+Insert\|0\|abc
+Move\|3
 Decode
 [/input]
 [output]
