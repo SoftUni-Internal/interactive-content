@@ -268,13 +268,13 @@ Ivan Ivanov Ivan Ivanov
 ```
 function solve(input) {
     input = input[0];
-    let pattern = /\+359([ |-])2(\1)\d{3}(\1)\d{4}\b/g;
-    let result = [];
-    let phone = null;
-    while ((phone = pattern.exec(input)) !== null) {
-        result.push(phone[0]);
+    let arrResult = [];
+    let pattern = /\b[A-Z][a-z]+ [A-Z][a-z]+\b/g;
+    let validName = null;
+    while ((validName = pattern.exec(input)) !== null) {
+        arrResult.push(validName[0]);
     }
-    console.log(result.join(', '));
+    console.log(arrResult.join(' '));
 }
 ```
 
