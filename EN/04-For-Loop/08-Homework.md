@@ -154,15 +154,10 @@ Min number: -2
 # Problem and Solution: Power Of Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="487119835/67aabd5d33" default /]
-[stream language="RO" videoId="487119835/67aabd5d33"  /]
+[stream language="EN" videoId="488453000/3f94136963" default /]
+[stream language="RO" videoId="488453000/3f94136963"  /]
 [/video-vimeo]
 
-# Solution
-[vimeo-video]
-[stream language="EN" videoId="487119870/ef3427abb8" default /]
-[stream language="RO" videoId="487119870/ef3427abb8"  /]
-[/video-vimeo]
 
 [code-task title="Power Of Numbers" taskId="pb-js-04-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

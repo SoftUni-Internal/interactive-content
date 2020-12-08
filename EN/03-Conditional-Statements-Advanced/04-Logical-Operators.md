@@ -258,9 +258,10 @@ Write a program that applies bonus to given points
 # Logical "OR" Operator
 
 [vimeo-video]
-[stream language="EN" videoId="486871995/8f758b3955" default /]
-[stream language="RO" videoId="486871995/8f758b3955"  /]
+[stream language="EN" videoId="488463195/decef19bc9" default /]
+[stream language="RO" videoId="488463195/decef19bc9"  /]
 [/video-vimeo]
+
 
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
@@ -308,6 +309,14 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 
 [slide]
 # Problem: Food or Drink
+
+[vimeo-video]
+[stream language="EN" videoId="488477836/b40ae06b15" default /]
+[stream language="RO" videoId="488477836/b40ae06b15"  /]
+[/video-vimeo]
+
+
+
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -363,6 +372,12 @@ unknown
 
 [slide]
 # Solution: Food or Drink
+
+[vimeo-video]
+[stream language="EN" videoId="488477876/d4fe816fbd" default /]
+[stream language="RO" videoId="488477876/d4fe816fbd"  /]
+[/video-vimeo]
+
 
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

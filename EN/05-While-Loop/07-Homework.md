@@ -6,19 +6,9 @@
 https://vimeo.com/
 
 [vimeo-video]
-[stream language="EN" videoId="487120988/3ae2fabcc6" default /]
-[stream language="RO" videoId="487120988/3ae2fabcc6"  /]
+[stream language="EN" videoId="488456453/0886f00db0" default /]
+[stream language="RO" videoId="488456453/0886f00db0"  /]
 [/video-vimeo]
-
-# Solution
-
-[vimeo-video]
-[stream language="EN" videoId="487121014/d66f436d41" default /]
-[stream language="RO" videoId="487121014/d66f436d41"  /]
-[/video-vimeo]
-
-
-
 
 
 
@@ -103,16 +93,10 @@ Write a program, which:
 # Problem and Solution: Favorite Book
 
 [vimeo-video]
-[stream language="EN" videoId="487121037/3e8eb3349b" default /]
-[stream language="RO" videoId="487121037/3e8eb3349b"  /]
+[stream language="EN" videoId="488456416/28fe2f16f1" default /]
+[stream language="RO" videoId="488456416/28fe2f16f1"  /]
 [/video-vimeo]
 
-# Solution
-
-[vimeo-video]
-[stream language="EN" videoId="487121070/3eff5ec50f" default /]
-[stream language="RO" videoId="487121070/3eff5ec50f"  /]
-[/video-vimeo]
 
 
 [code-task title="Favorite Book" taskId="pb-js-05-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
