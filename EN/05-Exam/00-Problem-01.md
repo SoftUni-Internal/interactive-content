@@ -125,31 +125,6 @@ The decrypted message is\: bbbbbbbbbbbbbbbbabc
 secretsuper
 Move\|6
 Insert\|11\|message\!
-Insert\|5\| 
-Insert\|12\| 
-Decode
-[/input]
-[output]
-The decrypted message is\: super secret message\!
-[/output]
-[/test]
-[test]
-[input]
-are you how
-Move\|4
-Move\|4
-Insert\|3\|
-Decode
-[/input]
-[output]
-The decrypted message is\: how are you
-[/output]
-[/test]
-[test]
-[input]
-secretsuper
-Move\|6
-Insert\|11\|message\!
 Insert\|5\|
 Insert\|12\|
 Decode
@@ -160,28 +135,40 @@ The decrypted message is\: super secret message\!
 [/test]
 [test]
 [input]
-decrypt\^this\^secret\^message\*
-ChangeAll\|\^\|
-ChangeAll\|\*\|\!
+decrypt^this^secret^message\*
+ChangeAll|^|
+ChangeAll|\*|\!
 Decode
 [/input]
 [output]
-The decrypted message is\: decrypt this secret message\!
+The decrypted message is: decrypt this secret message\!
 [/output]
 [/test]
 [test]
 [input]
-\$\h\%\*\*\#
-ChangeAll\|\%\|e
-ChangeAll\|\*\|l
-ChangeAll\|\#\|o
-ChangeAll\|\$\|\!
-Insert\|6\|there
-Move\|1
+m%&&aged%crypt^thi&^&%cr%t^
+ChangeAll|^|
+ChangeAll|%|e
+ChangeAll|&|s
+Move|7
+Insert|27| if you can
 Decode
 [/input]
 [output]
-The decrypted message is\: hellothere\!
+The decrypted message is: decrypt this secret message if you can
+[/output]
+[/test]
+[test]
+[input]
+owyouh
+Move|2
+Move|3
+Insert|3|are
+Insert|9|?
+Decode
+[/input]
+[output]
+The decrypted message is: howareyou\?
 [/output]
 [/test]
 [/tests]
