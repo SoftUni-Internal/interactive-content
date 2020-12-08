@@ -132,19 +132,19 @@ function train(arr){
 
 You will be given an array of strings.
 
-The first element will be a string containing wagons (numbers).
+The first element will be a string, which contains wagons (numbers).
 
 Each number inside the string represents the number of passengers that are currently in a wagon. 
 
-The second element in the array will be the max capacity of each wagon (single number).
+The second element of the array will be the max capacity of each wagon (single number). 
 
 The rest of the elements will be commands in the following format:
 
-- `Add {passengers}` – add a wagon to the end with the given number of passengers.
+- `Add {passengers}` – add a wagon to the end, with the given number of passengers.
 
 - `{passengers}` -  find an existing wagon to fit all the passengers (starting from the first wagon).
 
-At the end print the final state of the train (all the wagons separated by a space)
+In the end, print the final state of the train (all the wagons, separated by a space).
 
 
 # Example
@@ -266,7 +266,7 @@ You will be given an array of integer numbers on the first line of the input (sp
 
 Remove all repeating elements from the array. 
 
-Print the result elements separated by single space.
+Print the result elements(the remaining ones), separated by a single space. 
 
 # Example
 | Input   | Output | Comments   |
@@ -405,7 +405,7 @@ If you receive the first type of input, you have to **add** the person if he\/sh
 
 If you receive the second type of input, you have to **remove** the person if he\/she is in the list (if not print: `{name} is not in the list!`). 
 
-At the end print all the guests each on a **separate line.**
+In the end, print all the guests, each on a separate line. 
 
 
 # Example
@@ -536,9 +536,9 @@ function sorting(arr){
 [task-description]
 # Description
 
-Write a function that sorts an **array of numbers** so that the first element is the **biggest** one, the second is the smallest one, the third is the **second biggest** one, the fourth is the second smallest one and so on. 
+Write a function that sorts an array of numbers, so that the first element is the greater one, the second is the smallest one, the third is the second greater one, the fourth is the second smallest one, and so on. 
 
-Print the elements on one row, **separated by single space.**
+Print the elements on one line, separated by a single space. 
 
 
 # Example
@@ -649,13 +649,11 @@ function sort(input){
 [task-description]
 # Description
 
-Write a function that orders an **array of strings**, by their **length** in **ascending order** as primary criteria, and by **alphabetical value in ascending order as second criteria.** 
+Write a function that sorts an array of strings, by their length in ascending order, as primary criteria, and by alphabetical value in ascending order, as second criteria. 
 
-The comparison should be **case-insensitive.**
+The input comes as an array of strings. 
 
-The input comes as **array of strings.**
-
-The output is the ordered array of strings.
+The output is the sorted array of strings. 
 
 
 # Example
@@ -676,11 +674,11 @@ The output is the ordered array of strings.
 
 ## Hints
 
-- An array can be **sorted** by passing a comparing function to the `Array.sort()` function
+- An array can be sorted by passing a compare function to the `Array.sort()` function. 
 
-- Creating a comparing function by 2 criteria can be achieved by first comparing by the **main criteria**, if the 2 items are different \(the result of the compare is not 0\) - return the result as the result of the comparing function.
+- Creating a **compare function** by two criterias can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the compare is not 0\) - return the result of the **compare function.** 
 
-If the two items are the same by the main criteria \(the result of the compare is 0\), we need to compare by the **second criteria** and the result of that comparison is the result of the comparing function
+If the two items are the same by the main criteria \(the result of the compare is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
 
 
 [/task-description]
@@ -792,25 +790,25 @@ function arrayManipulations(input){
 
 Write a function that manipulates an array of numbers. 
 
-- `Add {number}`: add a number to the end of the array
+- `Add {number}`: add a number to the end of the array.
 
-- `Remove {number}`: remove number from the array
+- `Remove {number}`: add a number to the end of the array.
 
--	`RemoveAt {index}`: removes number at a given index
+-	`RemoveAt {index}`: add a number to the end of the array.
 
-- `Insert {number} {index}`: inserts a number at a given index
+- `Insert {number} {index}`: insert a number at a given index.
 
 **Note: All the indices will be valid!**
 
-Print the final state of the array (separated by single space).
+Print the final state of the array (separated by a single space). 
 
-The input comes as array of strings.
+The input comes as an array of strings. 
 
-First element will be a string containing the **array to manipulate.**
+The first element will be a string, containing the array to manipulate. 
 
-Every other **command** you receive will also be a string.
+Every other element(command) that we receive, will also be a string. 
 
-The output is the manipulated array printed on the console on a single line, separated by space.
+The output is the manipulated array, which we should print on the console on a single line, separated by a space. 
 
 
 # Example
