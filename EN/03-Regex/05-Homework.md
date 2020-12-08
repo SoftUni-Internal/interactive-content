@@ -699,8 +699,8 @@ Total income\: 200\.00
 end of shift
 [/input]
 [output]
-Name/: Product /- 20/.50
-Total income/: 20/.50
+Name\: Product \- 20\.50
+Total income\: 20\.50
 [/output]
 [/test]
 [test]
