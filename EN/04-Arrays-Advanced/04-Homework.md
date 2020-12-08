@@ -1,14 +1,4 @@
-[slide]
 # Homework
-
-[image assetsSrc="homeowrk.png" /]
-
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-[/slide]
 
 [slide]
 # Problem: List of Products
@@ -915,5 +905,11 @@ Insert 8 3
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]

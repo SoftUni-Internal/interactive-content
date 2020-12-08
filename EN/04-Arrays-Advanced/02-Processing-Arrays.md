@@ -4,11 +4,11 @@
 
 # Transform Elements
 
-Starting from ES5, JavaScript Array type provides the `map()` method that allows you to transform the array elements in a cleaner way.
+Starting from ES5, JavaScript `Array` type provides the `map()` method that allows us to transform the elements of an array in a cleaner way. 
 
-`map()` creates **new array** by applying a **function** to every element.
+The `map()` method creates a new array with the results of calling a function for every element of the array. 
 
-In this example we create a new array using `map()` and there we store the length of each string. 
+In this example, we create a new array using the `map()` method, and we store the length of each string. 
 
 ``` js live
 let myArr = ['one', 'two', 'three', 'four'];
@@ -17,9 +17,9 @@ let lengths = myArr.map(x => x.length);
 console.log(lengths);
 ```
 
-In this example we have a string array and using `map()` we convert each element into a number.
+In this example, we have a `string` array, and by using `map()`, we convert each element into a `number`. 
 
-Using `map()` we increment each number in the array
+Also, by using `map()`, we increment each number in the array. 
 
 ``` js live
 let numsAsStrings = ['5','3','14','-2','8'];
@@ -37,11 +37,11 @@ You can read more about [map()](https://developer.mozilla.org/en-US/docs/Web/Jav
 [slide]
 # Filter Elements
 
-`filter()` creates new array from elements matching predicate.
+The `filter()` method creates a new array, filled with all array elements that pass a given test (provided as a function).
 
-Predicate is a function returning a Boolean value (true or false).
+ShapeIn this example, we use the `filter()` method to create a new array, where the length of each element is greater than three.
 
-In this example, we filter the collection into a new array, where the length of each element is bigger than three.
+In this example, we create a new array, which contains only positive numbers. 
 
 ``` js live
 let myArr = ['one', 'two', 'three', 'four'];
@@ -74,9 +74,9 @@ function oddNumbers(arr){
 
 You are given an array of numbers.
 
-Write a function that prints the elements at **odd positions** from the array, doubled and in reverse order.
+Write a function that prints all the elements at odd positions, doubled, and in reversed order. 
 
-The input comes as **array of number elements.**
+The input comes as an array of `string` elements, holding numbers. 
 
 The output is printed on the c**onsole on a single line**, **separated by space.**
 
@@ -192,9 +192,9 @@ function oddNumbers(arr){
 
 You are given an array of numbers.
 
-Write a function that prints the elements at **odd positions** from the array, doubled and in reverse order.
+Write a function that prints all the elements at odd positions, doubled, and in reversed order.
 
-The input comes as **array of number elements.**
+The input comes as an array of `string` elements, holding numbers.
 
 The output is printed on the c**onsole on a single line**, **separated by space.**
 
@@ -290,13 +290,15 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 
 The `sort()` method sorts the items of an array.
 
-Depending on the provided compare function, sorting can be **alphabetic** or **numeric**, and either **ascending (up)** or **descending (down).**
+Depending on the provided **compare function**, the sort order can either **be alphabetic or numeric**, and either ascending (up) or descending (down). 
 
 By default, the `sort()` method sorts the values as **strings in alphabetical and ascending order.**
 
-If you want to sort numbers or other values, you need to provide the correct compare function.
+If we want to sort numbers or other values, we need to provide a correct **compare function.** 
 
-We have an array of names, calling sort directly on that array without passing in a compare function will, in this case, work correctly and sort the names in ascending alphabetic order
+In this example, we have an array of `names`. 
+
+If we call the `sort()` method directly, without passing a **compare function**, the method will work correctly – it will sort the names in ascending alphabetic order.
 
 ``` js live
 let names = ['Peter','George','Mary'];
@@ -305,11 +307,11 @@ names.sort();
 console.log(names); 
 ```
 
-When the array contains numbers and not strings, the result is unexpected 
+However, if we have an array, which contains `numbers`, not `strings`, the result will be unexpected and incorrect. 
 
-The `sort()` method, without a passed in compare function will treat the array as an array of strings and not numbers. 
+Without a passed `compare function`, the `sort()` method will treat the array as an array of `strings`, not as an array of `numbers`.
 
-So it will sort them as string values. 
+So, it will sort them as `string` values. 
 
 ``` js live
 let numbers = [20, 40, 10, 30, 100, 5];
@@ -323,9 +325,11 @@ console.log(numbers);
 [slide]
 # Compare Functions
 
-The `sort()` method, fortunately, can sort **negative**, **zero**, and **positive** values in the correct order.
+The `sort()` method, fortunately, can sort negative, zero, and positive values in the correct order.
 
-When the `sort()` method compares two values, it sends the values to our compare function and sorts the values according to the returned value.
+When the `sort()` method compares two values, it sends the values to the **compare function**, and sorts the values according to the returned value.  
+
+The result could be: **negative, zero, or positive.** 
 
 - If the result is negative, `a` is sorted before `b`.
 - If the result is positive, `b` is sorted before `a`.
@@ -339,11 +343,11 @@ console.log(nums.join('|'));
 ```
 
 # Sorting String Arrays
-The `localeCompare()` method is used to compare any two characters without regard for the case used.
+The `localeCompare()` method compares two strings in the current locale. 
 
-It's a string method so it can't be used directly on an array.
+It is a string method, so it cannot be applied directly on an array. 
 
-Pass `localeCompare()` as the comparison function:
+In this example, we pass the `localeCompare()` method as a **comparison function**. 
 
 ``` js live
 let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
@@ -365,11 +369,9 @@ function smallestTwoNumbers(arr){
 [/code-editor]
 [task-description]
 
-Write a function that prints the two smallest elements from an array of numbers.
+Write a function that sorts an array in ascending order and prints the first two numbers. 
 
-The input comes as array of number elements.
-
-The output is printed on the console on a single line, separated by space.
+The input comes as an array of `string` elements, holding numbers. 
 
 ## Examples
 | **Input** | **Output** |
@@ -380,7 +382,7 @@ The output is printed on the console on a single line, separated by space.
 # Hints
 
 # Hints
-- You can use the following function to sort the numbers in the array:
+- We can use the following function to sort the elements of the array: 
 
  ```js
 let sortedInAscending = arr.sort((a, b) =>{
@@ -388,8 +390,9 @@ let sortedInAscending = arr.sort((a, b) =>{
 });
  ```
 
-- Afterwards the first two elements in the array are the smallest
-- You can use `slice()` to take the first two numbers
+- Afterwards, the first two elements in the array are the smallest ones. 
+
+- We can use `slice()` method to take the first two elements
 
 
 [/task-description]
@@ -478,11 +481,9 @@ function smallestTwoNumbers(arr){
 [/code-editor]
 [task-description]
 
-Write a function that prints the two smallest elements from an array of numbers.
+Write a function that sorts an array in ascending order and prints the first two numbers. 
 
-The input comes as array of number elements.
-
-The output is printed on the console on a single line, separated by space.
+The input comes as an array of `string` elements, holding numbers. 
 
 ## Examples
 | **Input** | **Output** |
@@ -493,7 +494,7 @@ The output is printed on the console on a single line, separated by space.
 # Hints
 
 # Hints
-- You can use the following function to sort the numbers in the array:
+- We can use the following function to sort the elements of the array: 
 
  ```js
 let sortedInAscending = arr.sort((a, b) =>{
@@ -501,8 +502,9 @@ let sortedInAscending = arr.sort((a, b) =>{
 });
  ```
 
-- Afterwards the first two elements in the array are the smallest
-- You can use `slice()` to take the first two numbers
+- Afterwards, the first two elements in the array are the smallest ones. 
+
+- We can use `slice()` method to take the first two elements
 
 
 [/task-description]

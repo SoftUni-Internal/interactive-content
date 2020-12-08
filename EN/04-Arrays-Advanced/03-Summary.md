@@ -1,14 +1,14 @@
 [slide]
 # Summary
 
-In this lesson you learned:
+In this lesson we learned: 
 
-- Arrays in JavaScript have a lot of **built-in methods**
+* Arrays in JavaScript have a lot of built-in methods. 
 
-- Can **add**, **remove**, **insert** elements at runtime
+* We can add, remove, or insert elements at runtime. 
 
-- Some methods **mutate** the array
+* Some methods mutate the array. 
 
-- Sorting arrays can be done with a **compare function**
+* We can sort an array with a ''compare function''. 
 
 [/slide]
