@@ -373,25 +373,31 @@ Total money spend\: 8593\.09
 [code-editor language=javascript]
 
 ```
-function raceInfo(input) {
-    let participants = input.shift().split(", ");
-    let line = input.shift();
-    let raceList = {};
+function race(input) {
+    let names = input.shift().split(', ')
+    let strings = input.slice(0, input.length - 1).join(' ')
+    let racers = {}
 
-    while (line != "end of race") {
-        let name = line.match(/[A-Za-z]+/g).join("")
-        let distance = line.match(/[\d]/g).map(Number).reduce((a, b) => a + b);
-        if(participants.includes(name)){
-            if(!raceList[name]){
-                raceList[name] = distance;
-            } else {
-                raceList[name] += distance;
-            }
+    let patternClean = /[^a-zA-Z\d\s]+/g
+    let patternNum = /[\d]/g
+    let patternAlpha = /[A-Za-z]/g
+
+    let cleanString = strings.replace(patternClean, '').split(' ')
+
+    for (let i = 0; i < cleanString.length; i++) {
+        const element = cleanString[i]
+        let tempName = element.match(patternAlpha).join('')
+        let tempNum = element.match(patternNum).map(Number).reduce((a, b) => a + b, 0)
+        if (names.includes(tempName)) {
+            racers[tempName] = racers[tempName] ? racers[tempName] + tempNum : tempNum
         }
-        line = input.shift();
     }
-    let sortedParticipants = Object.keys(raceList).sort((p1, p2) => raceList[p2] - raceList[p1]).slice(0, 3);
-    console.log(`1st place: ${sortedParticipants[0]}\n2nd place: ${sortedParticipants[1]}\n3rd place: ${sortedParticipants[2]}`);
+
+    let sortedRacers = Object.entries(racers).sort((a, b) => b[1] - a[1])
+
+    console.log(`1st place: ${sortedRacers[0][0]}`);
+    console.log(`2nd place: ${sortedRacers[1][0]}`);
+    console.log(`3rd place: ${sortedRacers[2][0]}`);
 }
 ```
 
