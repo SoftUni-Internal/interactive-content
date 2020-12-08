@@ -3,35 +3,39 @@
 ## Description
 Until the `Sail` command is given you will be receiving:
 
-* Cities that you and your **crew have targeted**, with their population and gold, separated by `||`.
+* Cities that you and your **crew has targeted**, and each city's population and gold, separated by `||` (vertical bar signs).
 
-* If you receive a city which has been **already received**, you have to increase the population and gold with the given values.
+* If you receive a city which was **already targeted**, you have to increase its population and gold with the given values.
 
-After the `Sail` command, you will start receiving lines of text representing events until the `End` command is given.
+After reaching the `Sail` command, you will start receiving lines of text representing events until the `End` command is given.
 
 Events will be in the following format:
 
 * Command: `Plunder=>{town}=>{people}=>{gold}`
 
-You have successfully attacked and plundered the town, killing the given number of people and stealing the respective amount of gold.
+This means that the crew has successfully attacked and plundered the town, eliminating the given number of people and stealing the respective amount of gold.
 
 For every town you attack print this message: `{town} plundered! {gold} gold stolen, {people} citizens killed.`
 
-If any of those two values (population or gold) reaches zero, the town is disbanded.
+If any of these two values (population or gold) reaches zero, the town is destroyed.
 
 You need to remove it from your collection of targeted cities and print the following message: `{town} has been wiped off the map!`
 
-There will be no case of receiving more people or gold than there is in the city.
+There will be no case exceeding the number people or the amount of gold, which was already specified for each city.
 
 * Command: `Prosper=>{town}=>{gold}`
 
-There has been a dramatic economic growth in the given city, increasing its treasury by the given amount of gold.
+Indicates economic growth in the given city, increasing its treasury by the specified amount of gold.
 
-The gold amount can be a **negative number**, so be careful.
+The amount of gold in this case could be a **negative number**, so be careful.
 
-If a **negative amount** of gold is given print: `Gold added cannot be a negative number!`
+If a **negative amount of gold** is given in the command print:  
 
-If the given **gold is a valid amount**, increase the **town's gold reserves by the respective amount** and print the following message: `{gold added} gold added to the city treasury. {town} now has {total gold} gold.`
+`Gold added cannot be a negative number!`
+
+After receiving the End command if there are any existing settlements on your list of targets, you need to print all of them, sorted by the gold in their possession in descending order, and then by their name in ascending order, in the following format: 
+
+`{gold added} gold added to the city treasury. {town} now has {total gold} gold.`
 
 
 ## Output
@@ -51,10 +55,9 @@ If there are no settlements left to plunder, print:
 
 ## Constraints
 
-* The initial population and gold of the settlements will be valid, 32-bit integers, will never be negative or exceed the respective limits.
+* The initial population and gold of the settlements will be valid, 32-bit integers, which will never be negative or exceed the respective limits.
 
-* The town names in the events will always be valid towns that should be on your list.
-
+* The town names given in the events will always be valid towns that should be on the list.
 
 [code-task title="P!rates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

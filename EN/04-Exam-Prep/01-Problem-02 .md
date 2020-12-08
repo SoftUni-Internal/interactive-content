@@ -3,15 +3,17 @@
 ## Description
 Your task is to determine if the given sequence of characters is a valid barcode or not.
 
-Each line must not contain anything else but a valid barcode. A barcode is valid when:
+Each line must not contain anything else but a valid barcode. 
 
-* Is surrounded with a `@` followed by one or more `#`
+A barcode is valid when it:
+
+* •	Is starts and ends with an `at` sign  `@` followed by one or more hash signs `#`
 
 * Is at least **6 characters long** (without the surrounding `@` or `#`)
 
 * Starts with a capital letter
 
-* Contains **only letters** (lower and upper case) and digits
+* Contains **only letters** (upper and lower case) and digits
 
 * Ends with a **capital letter**
 
@@ -19,7 +21,7 @@ Each line must not contain anything else but a valid barcode. A barcode is valid
 
 Examples of **invalid** barcodes: `##InvaliDiteM##, @InvalidIteM@, @#Invalid_IteM@#`
 
-Next you have to determine the product group of the item from the barcode. The product group is obtained by concatenating all the digits found in the barcode. 
+Next, you will have to determine the `product group` of the item from the barcode. This is done by concatenating all the digits from the barcode.
 
 If there are no digits present in the barcode, the default product group is `00`.
 
@@ -33,7 +35,7 @@ If there are no digits present in the barcode, the default product group is `00`
 
 ## Input
 
-* On the first line you will be given an integer `n` – the count of barcodes that you will be receiving next.
+* On the first line you will be given an integer `n` – representing the number of barcodes that you will be receiving next.
 
 * On the next n lines, you will receive different strings.
 

@@ -1,29 +1,34 @@
 [slide]
 # Problem 1: Password Reset
 ## Description
-Write a password reset program that performs a series of commands upon a predefined string. 
+Write a password reset program that performs a series of commands on a string. 
 
-First, you will receive a string and afterwards, until the command `Done` is given, you will be receiving strings with commands split by a single space. 
+First, you will receive the string, that you have to alter, and afterwards, until the command `Done` is received, you will be given commands in the form of text (a string), split by a single space. 
 
 The commands will be the following:
 
-- `TakeOdd`: Takes only the characters at odd indices and concatenates them together to obtain the new raw password and then prints it.
+* Command `TakeOdd`: 
 
-- `Cut {index} {length}`: Cuts the substring with the given length starting from the given index and prints it on the console.
+Takes only the characters at odd indices and concatenates them together to obtain the new raw password and then prints it.
 
-Then prints the new raw password itself on a new line.
+* Command `Cut {index} {length}`: 
 
-The given index and length will always be valid.
+Cuts а substring with the given length from the original one, starting from the specified index and prints it on the console.
 
-- `Substitute {substring} {substitute}`: If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result.
+Then prints the new raw password on a new line.
+
+The specified index and length will always be valid.
+
+* Command `Substitute {substring} {substitute}`: 
+If the `raw password`  contains the given substring, replaces all of its occurrences with the substitute text given and prints the result.
 
 If it doesn't, prints `Nothing to replace!`
 
 ## Input
 
-* You will be receiving strings until the `Done` command is given. 
+* You will be receiving strings until the `Done` command is received.
 
-* The indexes from the `Cut {index} {length}` command will always be valid.
+* The indexes of the `Cut {index} {length}` command will always be valid.
 
 ## Output
 
