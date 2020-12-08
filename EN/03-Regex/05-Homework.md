@@ -346,31 +346,8 @@ Total money spend\: 8593\.09
 [code-editor language=javascript]
 
 ```
-function race(input) {
-    let names = input.shift().split(', ')
-    let strings = input.slice(0, input.length - 1).join(' ')
-    let racers = {}
-
-    let patternClean = /[^a-zA-Z\d\s]+/g
-    let patternNum = /[\d]/g
-    let patternAlpha = /[A-Za-z]/g
-
-    let cleanString = strings.replace(patternClean, '').split(' ')
-
-    for (let i = 0; i < cleanString.length; i++) {
-        const element = cleanString[i]
-        let tempName = element.match(patternAlpha).join('')
-        let tempNum = element.match(patternNum).map(Number).reduce((a, b) => a + b, 0)
-        if (names.includes(tempName)) {
-            racers[tempName] = racers[tempName] ? racers[tempName] + tempNum : tempNum
-        }
-    }
-
-    let sortedRacers = Object.entries(racers).sort((a, b) => b[1] - a[1])
-
-    console.log(`1st place: ${sortedRacers[0][0]}`);
-    console.log(`2nd place: ${sortedRacers[1][0]}`);
-    console.log(`3rd place: ${sortedRacers[2][0]}`);
+function solve(input) {
+   // Write your code here
 }
 ```
 
