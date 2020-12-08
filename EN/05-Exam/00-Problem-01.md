@@ -122,17 +122,16 @@ The decrypted message is\: bbbbbbbbbbbbbbbbabc
 [/test]
 [test]
 [input]
-\$\h\%\*\*\#
+m\%\&\&aged\%crypt\^thi\&\^\&\%cr\%t\^
+ChangeAll\|\^\|
 ChangeAll\|\%\|e
-ChangeAll\|\*\|l
-ChangeAll\|\#\|o
-ChangeAll\|\$\|\!
-Insert\|6\|there
-Move\|1
+ChangeAll\|\&\|s
+Move\|7
+Insert\|27\| if you can
 Decode
 [/input]
 [output]
-The decrypted message is\: hellothere\!
+The decrypted message is\: decrypt this secret message if you can
 [/output]
 [/test]
 [test]
@@ -173,16 +172,17 @@ The decrypted message is\: decrypt this secret message\!
 [/test]
 [test]
 [input]
-m\%\&\&aged\%crypt\^thi\&\^\&\%cr\%t\^
-ChangeAll\|\^\|
+\$\h\%\*\*\#
 ChangeAll\|\%\|e
-ChangeAll\|\&\|s
-Move\|7
-Insert\|27\| if you can
+ChangeAll\|\*\|l
+ChangeAll\|\#\|o
+ChangeAll\|\$\|\!
+Insert\|6\|there
+Move\|1
 Decode
 [/input]
 [output]
-The decrypted message is\: decrypt this secret message if you can
+The decrypted message is\: hellothere\!
 [/output]
 [/test]
 [/tests]
