@@ -3,7 +3,6 @@
 [slide]
 # Problem and Solution: Sum Digits
 
-https://vimeo.com/
 
 [vimeo-video]
 [stream language="EN" videoId="488456453/0886f00db0" default /]
@@ -488,5 +487,12 @@ Total: ‭165.73‬
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results /]
 
 [/slide]
