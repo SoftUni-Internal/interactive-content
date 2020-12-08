@@ -236,7 +236,7 @@ Prints a square of 7 * 7 stars like this:
 
 [slide]
 # Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="27-00-p-06" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Print Hello SoftUni" taskId="27-00-p-06" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
