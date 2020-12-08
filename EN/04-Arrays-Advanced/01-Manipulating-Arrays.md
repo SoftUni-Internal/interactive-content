@@ -3,11 +3,9 @@
 [slide]
 # Slicing Arrays
 
-The `array.slice()` method creates new array from part of another.
+The `array.slice()` method returns the selected elements in an array, as a new array object.
 
-Gets a range of elements from selected **start** to **end** (exclusive).
-
-Note that the original array will **not be modified.**
+It selects the elements starting at the given start argument, and ends at, but does not include, the given end argument. 
 
 ``` js live
 let myArray = ['one','two','three','four','five'];
@@ -50,17 +48,17 @@ function numbers(arr){
 ```
 [/code-editor]
 [task-description]
-Write a function that prints the first `k` and the last `k` elements from an **array of numbers.**
+Write a function that prints the first `k` and the last `k` elements of an array of numbers. 
 
-The **input** comes as **array of number** elements. 
+The input comes as an array of `string` elements, holding numbers. 
 
-The first element represents the number `k`, all other elements are from the array that needs to be processed.
+The first element represents the number `k`. 
 
-The **output** is printed on the console on two lines. 
+All the other elements form the array that needs to be processed. 
 
-On the first line print the **first k** elements, separated by space. 
+On the first line, print the **first k** elements, separated by space. 
 
-On the second line print the **last k** elements, separated by space.
+On the second line, print the **last k** elements, separated by space. 
 
 
 ## Examples
@@ -190,17 +188,17 @@ function numbers(arr){
 ```
 [/code-editor]
 [task-description]
-Write a function that prints the first `k` and the last `k` elements from an **array of numbers.**
+Write a function that prints the first `k` and the last `k` elements of an array of numbers. 
 
-The **input** comes as **array of number** elements. 
+The input comes as an array of `string` elements, holding numbers. 
 
-The first element represents the number `k`, all other elements are from the array that needs to be processed.
+The first element represents the number `k`. 
 
-The **output** is printed on the console on two lines. 
+All the other elements form the array that needs to be processed. 
 
-On the first line print the **first k** elements, separated by space. 
+On the first line, print the **first k** elements, separated by space. 
 
-On the second line print the **last k** elements, separated by space.
+On the second line, print the **last k** elements, separated by space. 
 
 
 ## Examples
@@ -315,13 +313,15 @@ function numbers(arr){
 ```
 [/code-editor]
 [task-description]
-You are given two integers n and k. Write a function that generates and prints the following sequence:
+You are given two integers: n and k. Write a function that generates and prints the following sequence: 
 
 - The first element is `1`.
-- Every following element equals the sum of the previous `k` elements.
+- Every following element is equals to the sum of the previous `k` elements. 
 - The length of the sequence is `n` elements.
 	
-The **input** comes as two number arguments. The first element represents the number `n`, and the second – the number `k`.
+The input comes as an array of two `string` elements, holding numbers. 
+
+The first element represents the number `n`, and the second – the number `k`.
 
 The output is printed on the console on a single line, separated by space.
 
@@ -334,11 +334,13 @@ The output is printed on the console on a single line, separated by space.
 
 # Hints
 
-The **2nd element (1)** is the sum of the 3 elements before it, but there is only 1, so we take that. 
+The **second element (1)** is equals to the sum of the 3 elements before it, but there is only one element, so we take that. 
 
-The third element, is the s**um of the first 2 (1 and 1)** and the 4th – the sum of 1, 1 and 2. 
+The third element is equals to the sum of the first two elements (1 and 1) . 
 
-The 5th element is the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on.
+The fourth element is equals to the sum of 1, 1 and 2. 
+
+The fifth element is equals to the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on
 
 
 [/task-description]
@@ -420,13 +422,15 @@ function numbers(arr){
 ```
 [/code-editor]
 [task-description]
-You are given two integers n and k. Write a function that generates and prints the following sequence:
+You are given two integers: n and k. Write a function that generates and prints the following sequence: 
 
 - The first element is `1`.
-- Every following element equals the sum of the previous `k` elements.
+- Every following element is equals to the sum of the previous `k` elements. 
 - The length of the sequence is `n` elements.
 	
-The **input** comes as two number arguments. The first element represents the number `n`, and the second – the number `k`.
+The input comes as an array of two `string` elements, holding numbers. 
+
+The first element represents the number `n`, and the second – the number `k`.
 
 The output is printed on the console on a single line, separated by space.
 
@@ -439,11 +443,13 @@ The output is printed on the console on a single line, separated by space.
 
 # Hints
 
-The **2nd element (1)** is the sum of the 3 elements before it, but there is only 1, so we take that. 
+The **second element (1)** is equals to the sum of the 3 elements before it, but there is only one element, so we take that. 
 
-The third element, is the s**um of the first 2 (1 and 1)** and the 4th – the sum of 1, 1 and 2. 
+The third element is equals to the sum of the first two elements (1 and 1) . 
 
-The 5th element is the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on.
+The fourth element is equals to the sum of 1, 1 and 2. 
+
+The fifth element is equals to the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on
 
 
 [/task-description]
