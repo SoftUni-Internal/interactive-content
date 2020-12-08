@@ -85,6 +85,31 @@ The decrypted message is: howareyou?
 [tests]
 [test]
 [input]
+zzHe
+ChangeAll\|z\|l
+Insert\|2\|o
+Move\|3
+Decode
+[/input]
+[output]
+The decrypted message is\: Hello
+[/output]
+[/test]
+[test]
+[input]
+owyouh
+Move\|2
+Move\|3
+Insert\|3\|are
+Insert\|9\|\?
+Decode
+[/input]
+[output]
+The decrypted message is\: howareyou\?
+[/output]
+[/test]
+[test]
+[input]
 aaaaaaaaaaaaaaaa
 ChangeAll\|a\|b
 Insert\|0\|abc
@@ -92,7 +117,7 @@ Move\|3
 Decode
 [/input]
 [output]
-The decrypted message is: bbbbbbbbbbbbbbbbabc
+The decrypted message is\: bbbbbbbbbbbbbbbbabc
 [/output]
 [/test]
 [test]
@@ -132,13 +157,13 @@ Insert\|12\|
 Decode
 [/input]
 [output]
-The decrypted message is\: super secret message\!
+The decrypted message is: super secret message!
 [/output]
 [/test]
 [test]
 [input]
 decrypt\^this\^secret\^message\*
-ChangeAll\|\^\| 
+ChangeAll\|\^\|
 ChangeAll\|\*\|\!
 Decode
 [/input]
