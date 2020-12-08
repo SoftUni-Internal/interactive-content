@@ -932,3 +932,9 @@ The sum: 9000
 [/code-task]
 
 [/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
+
+[/slide]
