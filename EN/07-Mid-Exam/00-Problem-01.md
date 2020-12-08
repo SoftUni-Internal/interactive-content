@@ -2,42 +2,53 @@
 # Problem 1: Archery Tournament
 ## Description
 
-Our hero Peter is going to take part in an archery tournament.
+Peter the archer is going to participate in a tournament.
 
 Your task is to help him calculate his points.
 
-On the first line you will receive integers separated by `|`, representing the targets in the archery field.
+On the first line you will receive an array of integers separated by `|`, representing the targets in an archery range.
 
-On the next lines until you receive `Game over` command, you will receive commands by the Judge of the tournament:
+On the next lines until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
 
-* `Shoot Left@{start index}@{length}`: Peter starts traversing the archery field to the left from `{start index}` with given `{length}`. 
+* Command `Shoot Left@{start index}@{length}`:
 
-If he goes out of the field, he will continue from the end of the field.
+Peter starts moving in the archery range to the left starting from `{start index}` and traveling through as many targets as stated in: `{length}`.
 
-* `Shoot Right@{start index}@{length}`: Peter starts traversing the archery field to the right from `{start index}` with given `{length}`.
+He cannot go out of the archery range, so if he reaches its beginning, he should walk over to its end and continue walking to the left from there.
 
-If he goes out of the field, he will continue from the start of the field.
+* Command `Shoot Right@{start index}@{length}`:
 
-* `Reverse`: Reverse the archery field.
+Peter starts moving in the archery range to the right from `{start index}` going through `{length}` number of targets.
 
-* `Game Over`: Print the archery field and collected points.
+If the length he has to walk through goes beyond the end of the archery range, he has to walk over to its beginning and continue walking from there.
 
-When **he arrives at the target**, he will shoot at it and **increase his points by 5** and **decrease the target by 5 points**, if the **target points are less than 5**, he takes all of them and **decreases it to 0**. 
+* Command `Reverse`:
 
-If the start index is out of range of the field Iskren will have to ignore the command.
+Reverse all targets in the range
+
+* Command `Game Over`:
+
+Print the current state of all targets in the range
+
+Each time Peter reaches a target:
+
+* He will shoot at it and get 5 points, decreasing the target's total point value by 5.
+
+* If the target is worth less than 5 points Peter takes all of its points and decreases the total points of the target to 0.
+
+If the start index, specified in any command is out of range to begin with, Peter will have to ignore this command.
 
 ## Input
 
-* On the first line, you will receive integers separated by `|` representing the targets in the archery field.
+* On the first line, you will receive integers separated by `|` representing the targets in the archery range.
 
-* On the next lines, until the `Game over` command you will receive commands in the format described above.
+* On the next lines, until the `Game over` command is given you will receive commands in the format described above.
 
 ## Output
 
-* Print the field in following format: `{target} - {target} - {target} ….. - {target}`.
+* Print out the state of each target on the field in the following format: `{target} - {target} - {target} ….. - {target}`.
 
 `Peter finished the archery tournament with {points}!`
-
 
 [code-task title="Archery Tournament" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -56,23 +67,19 @@ function solve(input) {
 |`['10|10|10|10|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over']`| 5 \- 5 \- 10 \- 10 \- 10|
 ||Peter finished the archery tournament with 10 points\!|
 
-
-
 ## Comments
 
-* First, Peter receives the `Shoot Left@0@2` command, so he starts traversing the archery field from `index 0` with `length 2` and he stops at `index 3`. 
+* First, Peter receives the `Shoot Left@0@2` command, so he starts walking in the archery range from `index 0` with `length 2` and he stops at `index 3`.
 
 He shoots and the archery filed looks like this: `10 - 10 - 10 - 5 – 10`
 
-His points are `5`.
+At this point he aquires 5 points.
 
-* Then he receives `Shoot Right@4@5` \-\> `10 - 10 - 10 - 5 - 5`
+* Then he receives `Shoot Right@4@5 -> 10 - 10 - 10 - 5 - 5`
 
-* `Shoot Right@6@5` \-\> `Index 6` is out of range of the field, so Peter ignores the command.
+* Shoot `Right@6@5 -> Index 6` is out of range (does not exist in the range), so Peter ignores the command.
 
-* `Reverse` \-\> After that command the field looks like this: `5 - 5 - 10 - 10 - 10`
-
-
+* `Reverse` \-\> The end result should be: `5 - 5 - 10 - 10 - 10`
 
 | **Input** | **Output** |
 | --- | --- |
