@@ -30,7 +30,7 @@ If it doesn't, prints `Nothing to replace!`
 * After the `Done` command is received, print: `Your password is: {password}`
 
 
-[code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Password Reset" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

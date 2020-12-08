@@ -46,7 +46,7 @@ For each barcode that you process, you need to print a message.
 
 * If the barcode is valid: `Product group: {product group}`
 
-[code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Fancy Barcodes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

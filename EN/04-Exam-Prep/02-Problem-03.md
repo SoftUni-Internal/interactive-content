@@ -56,7 +56,7 @@ If there are no settlements left to plunder, print:
 * The town names in the events will always be valid towns that should be on your list.
 
 
-[code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="P!rates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
