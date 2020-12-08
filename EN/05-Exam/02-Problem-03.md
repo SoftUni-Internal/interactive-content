@@ -2,7 +2,7 @@
 # Problem 3: The Pianist
 ## Description
 
-On the first line of the standard input you will receive an **integer** `n` \– the number of pieces that you will initially have.
+On the first line of the standard input you will receive an **integer** `n` – the number of pieces that you will initially have.
 
 On the next `n` lines the pieces themselves will follow with their **composer and key**, separated by `|` in the following format:
 
