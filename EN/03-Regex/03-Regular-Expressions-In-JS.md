@@ -1,4 +1,4 @@
-# Regular Expressions
+# Regular Expressions In JavaScript
 
 [slide]
 
