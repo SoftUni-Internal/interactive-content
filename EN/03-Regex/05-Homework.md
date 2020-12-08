@@ -9,16 +9,7 @@
 
 ```
 function solve(input){
-    input=input[0];
-    let pattern = /\b(?<day>[0-9]{2})([-/.])(?<month>[A-Z]{1}[a-z]{2})\2(?<year>[0-9]{4})/g;
-    let output = [];
-
-    while ((date=pattern.exec(input))!==null) {
-        let day = date.groups["day"];
-        let month = date.groups["month"];
-        let year = date.groups["year"];
-        console.log(`Day: ${day}, Month: ${month}, Year: ${year}`);     
-    }    
+   // Write your code here 
 }
 ```
 
@@ -192,22 +183,8 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 [code-editor language=javascript]
 
 ```
-function solve(args) {
-    let furniture = []
-    let prices = []
-    let quantities = []
-    for (let i = 0; i < args.length; i++) {
-        if (args[i].match(/.+[a-zA-Z]+.+[0-9]+\.?[0-9]*!{1}[0-9]+/g)) {
-            let numbers = args[i].match(/[0-9]+\.?[0-9]*!{1}[0-9]+/g)[0].split('!')
-            furniture.push(args[i].match(/[a-zA-Z]+/g)[0])
-            prices.push(Number(numbers[0]))
-            quantities.push(Number(numbers[1]))
-        }
-    }
-    prices = prices.map((x, i) => x * quantities[i]).reduce((a, v) => a + v, 0)
-    console.log(`Bought furniture: `)
-    furniture.forEach(x => console.log(x))
-    console.log(`Total money spend: ${prices.toFixed(2)}`)
+function solve(input) {
+   // Write youer code here
 }
 ```
 
@@ -563,36 +540,8 @@ end of race
 [code-editor language=javascript]
 
 ```
-function foo(arr) {
-    let data = {
-        names: [],
-        products: [],
-        quantities: [],
-        prices: [],
-    }
-    let totalIncome = 0
-    const regex = {
-        name: new RegExp(/%[A-Z]{1}[a-z]+%/, 'g'),
-        product: new RegExp(/<\w+>/, 'g'),
-        quantity: new RegExp(/\|[0-9]+\|/, 'g'),
-        price: new RegExp(/[0-9]+\.*[0-9]+\$/, 'g'),
-    }
-
-    for (let i = 0; i < arr.length; i += 1) {
-        if (arr[i] === 'end of shift') break;
-        if (arr[i].match(regex.name) && arr[i].match(regex.product) && arr[i].match(regex.quantity) && arr[i].match(regex.price)) {
-            data.names.push(arr[i].match(regex.name)[0].split('%')[1])
-            data.products.push(arr[i].match(regex.product)[0].split('<')[1].split('>')[0])
-            data.quantities.push(Number(arr[i].match(regex.quantity)[0].split('|')[1]))
-            data.prices.push(Number(arr[i].match(regex.price)[0].split('$')[0]))
-        } 
-    }
-
-    for (let i = 0; i < data.names.length; i++) {
-        totalIncome += data.quantities[i] * data.prices[i]
-        console.log(`${data.names[i]}: ${data.products[i]} - ${(data.quantities[i] * data.prices[i]).toFixed(2)}`)
-    }
-    console.log(`Total income: ${totalIncome.toFixed(2)}`)
+function solve(input) {
+    // Write your code here
 }
 ```
 
