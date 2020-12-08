@@ -1,15 +1,28 @@
 [slide]
 # Problem 2: Ad Astra
 ## Description
-On the first line of the input you will be given a text string. You must extract the information about the food and calculate the total calories. 
+
+On the first line of the input you will be given a text string. 
+
+You must extract the information about the food and calculate the total calories. 
+
 First you must extract the food info. It will always follow the same pattern rules:
-•	It will be surrounded by "|" or "#" (only one of the two) in the following pattern: 
-#{item name}#{expiration date}#{calories}#   or 
-|{item name}|{expiration date}|{calories}|
-•	The item name will contain only lowercase and uppercase letters and whitespace
-•	The expiration date will always follow the pattern: {day}/{month}/{year}, where the day, month and year will be exactly two digits long
-•	The calories will be an integer between 0-10000
-Calculate the total calories of all food items and then determine how many days you can last with the food you have. Keep in mind that you need 2000kcal a day.
+
+* It will be surrounded by `|` or `#` (only one of the two) in the following pattern: 
+
+`#{item name}#{expiration date}#{calories}#`
+
+`|{item name}|{expiration date}|{calories}|`
+
+* The item name will contain **only lowercase and uppercase letters and whitespace**
+
+* The expiration date will always follow the pattern: `{day}/{month}/{year}`, **where the day, month and year will be exactly two digits long**
+
+* The calories will be an i**nteger between 0-10000**
+
+Calculate **the total calories of all food items** and then determine **how many days you can last with the food you have.**
+
+Keep in mind that **you need 2000kcal a day.**
 
 ## Input
 
@@ -84,87 +97,86 @@ We have no matches, which means we have no food.
 
 This text `#Invalid food#19/03/20#450` is not a match, since it doesn't have a `#` at the end.
 
-
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-$$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#9000#^#@aswe|Milk|05/09/20|2000|$$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#9000#^#@aswe|Milk|05/09/20|2000|
+\$\$\#\@\@\%\^\&\#Fish#24\/12\/20#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|
 [/input]
 [output]
-You have food to last you for: 19 days!
-Item: Fish, Best before: 24/12/20, Nutrition: 8500
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 9000
-Item: Milk, Best before: 05/09/20, Nutrition: 2000
-Item: Fish, Best before: 24/12/20, Nutrition: 8500
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 9000
-Item: Milk, Best before: 05/09/20, Nutrition: 2000
+You have food to last you for\: 19 days\!
+Item\: Fish, Best before: 24\/12\/20, Nutrition\: 8500
+Item\: Ice Cream, Best before: 03\/10\/21, Nutrition\: 9000
+Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 2000
+Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 8500
+Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 9000
+Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 2000
 [/output]
 [/test]
 [test]
 [input]
-$$#@@%^&#Fish#24/12/20#1000#|Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#1000#^#@aswe|Milk|05/09/20|1000|$$#@@%^&#Fish#24/12/20#1000#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#1000#^#Incorr#Lettuce#24/06/20#1000#
+\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#1000\#\|Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#1000\#\^\#\@aswe\|Milk\|05\/09\/20\|1000\|\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#1000\#\|\#Incorrect\#19.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#1000\#\^\#Incorr\#Lettuce\#24\/06\/20\#1000\#
 [/input]
 [output]
-You have food to last you for: 3 days!
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 1000
-Item: Milk, Best before: 05/09/20, Nutrition: 1000
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 1000
-Item: Lettuce, Best before: 24/06/20, Nutrition: 1000
+You have food to last you for\: 3 days\!
+Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
+Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 1000
+Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 1000
+Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
+Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 1000
+Item\: Lettuce, Best before\: 24\/06\/20, Nutrition\: 1000
 [/output]
 [/test]
 [test]
 [input]
-#Fish#24/12/20#1000#|Milk|05/09/20|1000|#Fish#24/12/20#1000#|#Ice Cream#03/10/21#1000##Lettuce#24/06/20#1000#
+\#Fish\#24\/12\/20\#1000\#\|Milk\|05\/09\/20\|1000\|\#Fish\#24\/12\/20\#1000\#\|\#Ice Cream\#03\/10\/21\#1000\#\#Lettuce\#24\/06\/20\#1000\#
 [/input]
 [output]
-You have food to last you for: 2 days!
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Milk, Best before: 05/09/20, Nutrition: 1000
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 1000
-Item: Lettuce, Best before: 24/06/20, Nutrition: 1000
+You have food to last you for\: 2 days\!
+Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
+Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 1000
+Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
+Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 1000
+Item\: Lettuce, Best before: 24\/06\/20, Nutrition\: 1000
 [/output]
 [/test]
 [test]
 [input]
-|Fish#24/12/20#1000|#Milk#05/09/20#1000||Fis|24/12/20|1000#|Ice Cream#03/10/21#1000##Lettuce/24/06/20#1000#
+\|Fish\#24\/12\/20\#1000\|\#Milk\#05\/09\/20\#1000\|\|Fis\|24\/12\/20\|1000\#\|Ice Cream#03\/10\/21\#1000\#\#Lettuce\/24/06\/20\#1000#
 [/input]
 [output]
-You have food to last you for: 0 days!
+You have food to last you for\: 0 days\!
 [/output]
 [/test]
 [test]
 [input]
-|Fish#24/12/20|1000|
+\|Fish\#24\/12\/20\|1000\|
 [/input]
 [output]
-You have food to last you for: 0 days!
+You have food to last you for\: 0 days\!
 [/output]
 [/test]
 [test]
 [input]
-|Fish|24/12/20|1000||Fish|24/12/20|1000||Fish|24/12/20|1000|||24/12/20|1000||Fish|24/12/2|1000||Fish|24/12/20||
+\|Fish\|24\/12\/20\|1000\|\|Fish\|24\/12\/20\|1000\|\|Fish\|24\/12\/20\|1000\|\|\|24\/12\/20\|1000\|\|Fish\|24\/12\/2\|1000\|\|Fish\|24\/12\/20\|\|
 [/input]
 [output]
-You have food to last you for: 1 days!
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
-Item: Fish, Best before: 24/12/20, Nutrition: 1000
+You have food to last you for\: 1 days\!
+Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
+Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
+Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
 [/output]
 [/test]
 [test]
 [input]
-$$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#9000#^#@aswe|Milk|05/09/20|2000|
+\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|
 [/input]
 [output]
-You have food to last you for: 9 days!
-Item: Fish, Best before: 24/12/20, Nutrition: 8500
-Item: Ice Cream, Best before: 03/10/21, Nutrition: 9000
-Item: Milk, Best before: 05/09/20, Nutrition: 2000
+You have food to last you for\: 9 days\!
+Item\: Fish, Best before: 24\/12\/20, Nutrition\: 8500
+Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 9000
+Item\: Milk, Best before: 05\/09\/20, Nutrition\: 2000
 [/output]
 [/test]
 [/tests]
