@@ -3,11 +3,11 @@
 [slide]
 # Overview
 
-JavaScript has **built in functions** for dealing with arrays that can **simplify the code**, **make it easier to read** and in the end, **make it easier to debug.**
+JavaScript has **built-in functions** for dealing with arrays that **can simplify the code, make it easier to read**, and last but not least, make it easier to debug.
 
-We can use arrow functions in some of these advanced methods.
+We can use arrow functions in some of the advanced methods.
 
-Advanced functionality of the array consists of the following functions:
+Advanced functionality of an array consists of the following functions:
 
 - `push(el)` – adds one or more elements to the end of an array and returns the new length of the array
 
@@ -17,11 +17,11 @@ Advanced functionality of the array consists of the following functions:
 
 - `unshift(el)` – **adds new items to the beginning** of an array, and returns the new **length**
 
-- `includes(el)` – determines whether an **array includes a certain element**, retunes `true` or `false`
+- `includes(el)` – determines whether an **array includes a certain element**, returnes `true` or `false`
 
-- `indexOf(el)` – returns the index of an element, or retunrs -1 if cannot find the element
+- `indexOf(el)` – returns the index of an element, or returns -1, if it cannot find the element
 
-Basically, these methods modify the array and we don't need to write whole bunch of code which saves lots of time.
+Basically, these methods modify the array, and we do not need to write a whole bunch of code, which saves lots of time. 
 
 [/slide]
 
@@ -30,7 +30,7 @@ Basically, these methods modify the array and we don't need to write whole bunch
 
 ## Add at the End, Remove from the End
 
-The `array.push()` function is used to add a new element at the end of the array.
+The `array.push()` method is used to add a new element at the end of the array.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -40,9 +40,9 @@ array.push(5);
 coconsole.log(array);
 ```
 
-The `array.pop()` function is used to obtain and remove the element at the end of the array.
+The `array.pop()` method is used to obtain and remove the element at the end of the array.
 
-If you call `array.pop()` on an empty array, **it returns undefined.**
+If we call `array.pop()` on an empty array, it returns **undefined.** 
 
 ``` js live
 let array = [1, 2, 3, 4, 5];
@@ -53,9 +53,9 @@ coconsole.log(array);
 coconsole.log(number);
 ```
 
-## Add at the Start, Remove from the Start
+## Add to the Beginning, Remove from the Beginning 
 
-The `array.unshift()` function is used to add a new element at the start of an array.
+The `array.unshift()` method is used to add a new element to the beginning of an array.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -65,7 +65,7 @@ array.unshift(0);
 coconsole.log(array);
 ```
 
-The `array.shift()` function is used to obtain and remove the element at the start of the array.
+The `array.shift()` method is used to obtain and remove an element from the beginning of the array.
 
 ``` js live
 let array = [0,1, 2, 3, 4, 5];
@@ -88,11 +88,11 @@ function sumFirstLast(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that calculates and prints the **sum** of the **first** and the last elements in an array.
+Write a function that calculates and prints the sum of the first and the last elements of an array. 
 
-The **input** comes as array of string elements holding numbers.
+The input comes as an array of `string` elements, holding numbers. 
 
-The **output** is the return value of your function.
+The output should be the value, which is returned from the function. 
 
 ## Examples
 | **Input** | **Output** |
@@ -176,11 +176,11 @@ function sumFirstLast(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that calculates and prints the **sum** of the **first** and the last elements in an array.
+Write a function that calculates and prints the sum of the first and the last elements of an array. 
 
-The **input** comes as array of string elements holding numbers.
+The input comes as an array of `string` elements, holding numbers. 
 
-The **output** is the return value of your function.
+The output should be the value, which is returned from the function. 
 
 ## Examples
 | **Input** | **Output** |
@@ -262,7 +262,7 @@ fruits.push('pineapple', 'orange');
 console.log(fruits);
 ```
 
-The `array.shift()` removes the first element of an array:
+The `array.shift()` method removes the first element of an array:
 
 ``` js live
 let myArray = ["one","two","three","four","five"];
@@ -272,7 +272,7 @@ myArray.shift();
 console.log(myArray);
 ```
 
-The `array.unshift()` adds elements to the beginning:
+The `array.unshift()` method adds elements  to the beginning of an array:
 
 ``` js live
 let myArray = ["red","green","blue"];
@@ -295,13 +295,13 @@ function negativePositive(arr){
 [/code-editor]
 [task-description]
 
-Write a function that processes the elements in an **array** one by one and produces a new array.
+Write a function that processes all the elements of an array one by one and creates a new array. 
 
-Prepend each negative element at the front of the result and **append** each **positive** (or 0) element at the end of the result.
+Append each negative element to the beginning, and each positive (or 0) element, to the end of the new array. 
 
-The **input** comes as array of number elements.
+The input comes as an array of `string` elements, holding numbers. 
 
-The **output** is printed on the console, each element on a new line.
+The output has to be printed on the console, each element on a new line. 
 
 
 ## Examples
@@ -462,13 +462,13 @@ function negativePositive(arr){
 [/code-editor]
 [task-description]
 
-Write a function that processes the elements in an **array** one by one and produces a new array.
+Write a function that processes all the elements of an array one by one and creates a new array. 
 
-Prepend each negative element at the front of the result and **append** each **positive** (or 0) element at the end of the result.
+Append each negative element to the beginning, and each positive (or 0) element, to the end of the new array. 
 
-The **input** comes as array of number elements.
+The input comes as an array of `string` elements, holding numbers. 
 
-The **output** is printed on the console, each element on a new line.
+The output has to be printed on the console, each element on a new line.
 
 
 ## Examples
@@ -609,7 +609,7 @@ The **output** is printed on the console, each element on a new line.
 [slide]
 # Find Values
 
-The `array.includes()` returns true if the given value is part of the array
+The `array.includes()` returns true if the given value is part of the array.
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
@@ -621,9 +621,9 @@ console.log(isGeorgeInclude);
 console.log(isJohnInclude);
 ```
 
-The `array.indexOf()` returns the index where the given value is stored.
+The `array.indexOf()` returns the index, where the given value is stored.
 
-Returns `-1` if value is not found.
+It returns `-1` if the value is not found. 
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
