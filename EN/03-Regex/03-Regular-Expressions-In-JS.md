@@ -266,11 +266,12 @@ Ivan Ivanov Ivan Ivanov
 [code-editor language=javascript]
 
 ```
-function solve(string) {
+function solve(input) {
+    input = input[0];
     let pattern = /\+359([ |-])2(\1)\d{3}(\1)\d{4}\b/g;
     let result = [];
     let phone = null;
-    while ((phone = pattern.exec(string)) !== null) {
+    while ((phone = pattern.exec(input)) !== null) {
         result.push(phone[0]);
     }
     console.log(result.join(', '));
