@@ -754,3 +754,11 @@ Total income\: 20\.00
 [/code-task]
 
 [/slide]
+
+[slide]
+
+# Homework Results
+
+[tasks-results/]
+
+[/slide]
