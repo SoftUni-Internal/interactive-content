@@ -2,41 +2,41 @@
 # Problem 2: School Library
 ## Description
 
-On the first line you will receive a String, representing shelf with books in library. Every book is separated with `&`.
+On the first line you will receive a String, representing a bookshelf in library. Every book title is separated by `&`.
 
-On the next lines until you receive `Done` command, you will receive following commands:
+On the next lines until you receive `Done` as a command, you will be receiving the following commands:
 
-* `Add Book | {book name}`: Add a book at first place in the shelf.
+* Command `Add Book | {book name}`: Add the book to the shelf and place it before all others.
 
-If the book already is present on the shelf, ignore the command. 
+If the book is already present on the shelf, ignore the command.
 
-* `Take Book | {book name}`: Remove the book with the given name only if the book is on the shelf, otherwise ignore this command.
+* Command `Take Book | {book name}`: Remove the book with the specified title (only if the book is on the shelf, otherwise ignore this command.)
 
-* `Swap Books | {book1} | {book2}`: If both books are on the shelf, swap their places.
+* Command `Swap Books | {book1} | {book2}`: If both books are on the shelf, swap their places.
 
-* `Insert Book | {book name}`: Add a book at the end of the book collection. 
+* Command `Insert Book | {book name}`: Add a book at the end of the book collection. 
 
-* `Check Book | {index}`: Print the name of the book on the given index the book.
+* Command `Check Book | {index}`: Print the name of the book, present at this index in the list.
 
 If the index is invalid, ignore the command.
 
 
 ## Input
 
-* On the 1st line, you will receive a string, representing book names, separated with `&`.
+* On the first line, you will receive a string, containing book titles, separated by `&`.
 
-* On the next lines, until you receive `Done`, you will receive commands in the format described above.
+* On the next lines, until you receive `Done`, you will get commands in the format described above.
 
 
 ## Output
 
-* Print the collection of books joined by `, `.
+* Print the collection of books joined by  `, `.
 
 `{firstBook}, {secondBook}, …{lastBook}`
 
 ## Constraints
 
-* You won't receive duplicate book names in the initial list of books.
+* You will not receive any duplicate book names in the initial list of books.
 
 [code-task title="School Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
