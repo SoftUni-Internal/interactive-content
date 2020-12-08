@@ -107,7 +107,7 @@ Move\|1
 Decode
 [/input]
 [output]
-The decrypted message is: hellothere!
+The decrypted message is\: hellothere\!
 [/output]
 [/test]
 [test]
@@ -119,7 +119,7 @@ Insert\|3\|
 Decode
 [/input]
 [output]
-The decrypted message is: how are you
+The decrypted message is\: how are you
 [/output]
 [/test]
 [test]
@@ -132,7 +132,7 @@ Insert\|12\|
 Decode
 [/input]
 [output]
-The decrypted message is: super secret message!
+The decrypted message is\: super secret message\!
 [/output]
 [/test]
 [test]
@@ -143,7 +143,7 @@ ChangeAll\|\*\|\!
 Decode
 [/input]
 [output]
-The decrypted message is: decrypt this secret message!
+The decrypted message is\: decrypt this secret message\!
 [/output]
 [/test]
 [test]
@@ -157,7 +157,7 @@ Insert\|27\| if you can
 Decode
 [/input]
 [output]
-The decrypted message is: decrypt this secret message if you can
+The decrypted message is\: decrypt this secret message if you can
 [/output]
 [/test]
 [/tests]
