@@ -138,9 +138,9 @@ The decrypted message is\: hellothere\!
 [test]
 [input]
 are you how
-Move\|\4
-Move\|\4
-Insert\|\3\|
+Move|4
+Move|4
+Insert|3|
 Decode
 [/input]
 [output]
