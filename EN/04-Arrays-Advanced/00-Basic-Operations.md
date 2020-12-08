@@ -37,7 +37,7 @@ let array = [1, 2, 3, 4];
 
 array.push(5);
 
-coconsole.log(array);
+console.log(array);
 ```
 
 The `array.pop()` method is used to obtain and remove the element at the end of the array.
@@ -49,8 +49,8 @@ let array = [1, 2, 3, 4, 5];
 
 let number = array.pop();
 
-coconsole.log(array);
-coconsole.log(number);
+console.log(array);
+console.log(number);
 ```
 
 ## Add to the Beginning, Remove from the Beginning 
@@ -62,7 +62,7 @@ let array = [1, 2, 3, 4];
 
 array.unshift(0);
 
-coconsole.log(array);
+console.log(array);
 ```
 
 The `array.shift()` method is used to obtain and remove an element from the beginning of the array.
@@ -72,8 +72,8 @@ let array = [0,1, 2, 3, 4, 5];
 
 let number = array.shift();
 
-coconsole.log(array);
-coconsole.log(number);
+console.log(array);
+console.log(number);
 ```
 [/slide]
 
