@@ -48,10 +48,10 @@ function solve(input) {
 `['Hawai::Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:1'6, 'Switch:Hawai:Hungary', Travel']`
 
 **Output**
-Hawai::RomeCyprys\-Greece
-Hawai::Rome\-Greece
-Bulgaria::Rome-Greece
-Ready for world tour! Planned stops: Hungary::Rome\-Greece
+Hawai\:\:RomeCyprys\-Greece
+Hawai\:\:Rome\-Greece
+Bulgaria\:\:Rome-Greece
+Ready for world tour\! Planned stops\: Hungary\:\:Rome\-Greece
 
 [/task-description]
 [code-io /]
@@ -141,10 +141,10 @@ Switch:Hawai:Bulgaria
 Travel
 [/input]
 [output]
-Hawai::RomeCyprys\-Greece
-Hawai::Rome\-Greece
-Bulgaria::Rome\-Greece
-Ready for world tour! Planned stops: Bulgaria::Rome\-Greece
+Hawai\:\:RomeCyprys\-Greece
+Hawai\:\:Rome\-Greece
+Bulgaria\:\:Rome\-Greece
+Ready for world tour\! Planned stops: Bulgaria\:\:Rome\-Greece
 [/output]
 [/test]
 [/tests]
