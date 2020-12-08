@@ -137,7 +137,6 @@ The pipe symbol `|` in the example means logical "or".
     const result = regex.exec('Jane Isabell Smith');
     console.log(result[0]);
     console.log(result[1]);
-    }
 ```
 
 ## Backreferences
@@ -158,7 +157,6 @@ To match the second `#` which is after the word "there" use `\1`, where number 1
     const pattern = /(\#)[A-Za-z\s]+\1/;
     const result = str.match(pattern);
     console.log(result[0]);
-    }
 ```
 
 [/slide]
