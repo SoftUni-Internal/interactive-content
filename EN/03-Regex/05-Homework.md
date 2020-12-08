@@ -373,29 +373,25 @@ Total money spend\: 8593\.09
 [code-editor language=javascript]
 
 ```
-function foo(arr) {
-    const participants = arr.shift().split(', ').reduce((a, v) => { a[v] = 0; return a }, {})
-    const places = { 1: '1st', 2: '2nd', 3: '3rd' }
-    arr = arr.map(x => x.split(/[^a-zA-Z0-9]+/g)).map(x => x.filter(X => X !== '')).map(x => x.join(''))
+function raceInfo(input) {
+    let participants = input.shift().split(", ");
+    let line = input.shift();
+    let raceList = {};
 
-    for (let i = 0; i < arr.length; i++) {
-        let name = arr[i].split(/[0-9]+/g).filter(x => x !== '').join('')
-        let distance = arr[i]
-            .split(/[a-zA-Z]+/g)
-            .filter(x => x !== '')
-            .join('')
-            .split('')
-            .map(x => Number(x))
-            .reduce((a, v) => a + v, 0)
-
-        if (Object.keys(participants).includes(name)) {
-            participants[name] += distance
+    while (line != "end of race") {
+        let name = line.match(/[A-Za-z]+/g).join("")
+        let distance = line.match(/[\d]/g).map(Number).reduce((a, b) => a + b);
+        if(participants.includes(name)){
+            if(!raceList[name]){
+                raceList[name] = distance;
+            } else {
+                raceList[name] += distance;
+            }
         }
+        line = input.shift();
     }
-    const finalTable = Object.entries(participants).sort((x, y) => y[1] - x[1])
-    for (let i = 0; i < 3; i++) {
-        console.log(`${places[i + 1]} place: ${finalTable[i][0]}`)
-    }
+    let sortedParticipants = Object.keys(raceList).sort((p1, p2) => raceList[p2] - raceList[p1]).slice(0, 3);
+    console.log(`1st place: ${sortedParticipants[0]}\n2nd place: ${sortedParticipants[1]}\n3rd place: ${sortedParticipants[2]}`);
 }
 ```
 
