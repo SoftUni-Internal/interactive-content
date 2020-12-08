@@ -28,7 +28,7 @@ Basically, these methods modify the array, and we do not need to write a whole b
 [slide]
 # Add and Remove Functions
 
-## Add at the End, Remove from the End
+Add at the End, Remove from the End.
 
 The `array.push()` method is used to add a new element at the end of the array.
 
