@@ -1,38 +1,38 @@
 [slide]
-# Problem 1: The Imitation Game
+# Problem 1: World Tour
 ## Description
 
-On the first line of the input you will receive the encrypted message. 
+You will be given **a string containing all of your stops.** 
 
-After that, until the `Decode` command is given, you will be **receiving strings** with instructions for different operations that need to be **performed upon the concealed message** to interpret it and reveal its true content.
+Until you receive the command `Travel`, you will be given some commands to manipulate that initial string. The commands can be:
 
-There are several types of instructions, split by `|`
+* Command `Add Stop:{index}:{string}`:
 
-* Command: `Move {number of letters}`
+**Rnsert** the given string at that **index** only if the index is valid.
 
-**Moves the first** `n` letters to the **back** of the string.
+* Command `Remove Stop:{start_index}:{end_index}`:
 
-* Command: `Insert {index} {value}`
+**Remove** the elements of the string **from the starting index to the end index (inclusive)**, if both indices are **valid.**
 
-**Inserts** the given **value** before the given **index** in the string.
+* Command `Switch:{old_string}:{new_string}`: 
 
-* Command: `ChangeAll {substring} {replacement}`
+If the **old string is in the initial string**, replace all occurrences with the new one.
 
-**Changes** all occurrences of the given **substring** with the **replacement** text.
+**Note: After each command print the current state of the string**
+
+After the `Travel` command, print the following:
+
+`Ready for world tour! Planned stops: {string}`
 
 ## Input
 
-* On the first line, you will receive a string with message.
-
-* On the next lines, you will be receiving commands, split by `|`
+* You will receive a list of strings
 
 ## Output
 
-* After the `Decode` command is received, print this message:
+* Print the proper output messages in the proper cases as described in the problem description.
 
-`The decrypted message is: {message}`
-
-[code-task title="The Imitation Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="World Tour" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -45,130 +45,106 @@ function solve(input) {
 # Examples
 
  **Input**
-`['zzHe', 'ChangeAll|z|l', 'Insert|2|o', 'Move|3', 'Decode']`
+`['Hawai::Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:1'6, 'Switch:Hawai:Hungary', Travel']`
 
 **Output**
-
-The decrypted message is: Hello
-
-# Comments
-
-* First command: `ChangeAll|z|l`
-
-`zzHe → llHe`
-
-We replace all occurrences of `z` with `l`.
-
-* Second command: `Insert|2|o`
-`llHe → lloHe`
-
-We add an `o` before the character on index 2
-
-* Third command: `Move|3`
-
-`lloHe → Hello` 
-
-We take the first three characters and move them to the end of the string
-
-* Finally, after receiving the `Decode` command, we print the resulting message.
-
-# Examples
-
-**Input**
-`['owyouh', 'Move|2', 'Move|3', 'Insert|3|are', 'Insert|9|?', 'Decode']`
-
-**Output**
-The decrypted message is: howareyou?
+Hawai::RomeCyprys\-Greece
+Hawai::Rome\-Greece
+Bulgaria::Rome-Greece
+Ready for world tour! Planned stops: Hungary::Rome\-Greece
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-zzHe
-ChangeAll\|z\|l
-Insert\|2\|o
-Move\|3
-Decode
+A:B:C
+Add Stop:0:D
+Travel
 [/input]
 [output]
-The decrypted message is\: Hello
+DA:B:C
+Ready for world tour! Planned stops: DA:B:C
 [/output]
 [/test]
 [test]
 [input]
-owyouh
-Move\|2
-Move\|3
-Insert\|3\|are
-Insert\|9\|\?
-Decode
+A:B:C
+Remove Stop:4:4
+Travel
 [/input]
 [output]
-The decrypted message is\: howareyou\?
+A:B:
+Ready for world tour! Planned stops: A:B:
 [/output]
 [/test]
 [test]
 [input]
-aaaaaaaaaaaaaaaa
-ChangeAll\|a\|b
-Insert\|0\|abc
-Move\|3
-Decode
+A:B:C
+Switch:B:D
+Travel
 [/input]
 [output]
-The decrypted message is\: bbbbbbbbbbbbbbbbabc
+A:D:C
+Ready for world tour! Planned stops: A:D:C
 [/output]
 [/test]
 [test]
 [input]
-secretsuper
-Move\|6
-Insert\|11\|message\!
-Insert\|5\|
-Insert\|12\|
-Decode
+A:B:C:D
+Add Stop:6:F
+Remove Stop:7:7
+Travel
 [/input]
 [output]
-The decrypted message is\: super secret message\!
+A:B:C:FD
+A:B:C:F
+Ready for world tour! Planned stops: A:B:C:F
 [/output]
 [/test]
 [test]
 [input]
-decrypt\^this\^secret\^message\*
-ChangeAll\|\^\|
-ChangeAll\|\*\|\!
-Decode
+A:B:C:D
+Remove Stop:0:1
+Remove Stop:9:10
+Switch:C:F
+Travel
 [/input]
 [output]
-The decrypted message is\: decrypt this secret message\!
+B:C:D
+B:C:D
+B:F:D
+Ready for world tour! Planned stops: B:F:D
 [/output]
 [/test]
 [test]
 [input]
-m\%\&\&aged\%crypt\^thi\&\^\&\%cr\%t\^
-ChangeAll\|\^\|
-ChangeAll\|\%\|e
-ChangeAll\|\&\|s
-Move\|7
-Insert\|27\| if you can
-Decode
+A:B:C:D
+Add Stop:3:N
+Remove Stop:4:8
+Switch:A:AA
+Travel
 [/input]
 [output]
-The decrypted message is\: decrypt this secret message if you can
+A:BN:C:D
+A:BN:C:D
+AA:BN:C:D
+Ready for world tour! Planned stops: AA:BN:C:D
 [/output]
 [/test]
 [test]
 [input]
-owyouh
-Move\|2
-Move\|3
-Insert\|3\|are
-Insert\|9\|\?
-Decode
+Hawai::Cyprys-Greece
+Add Stop:7:Rome
+Remove Stop:11:16
+Switch:Hawai:Bulgaria
+Travel
 [/input]
 [output]
-The decrypted message is\: howareyou\?
+Hawai::RomeCyprys\-Greece
+Hawai::Rome\-Greece
+Bulgaria::Rome\-Greece
+Ready for world tour! Planned stops: Bulgaria::Rome\-Greece
 [/output]
 [/test]
 [/tests]
