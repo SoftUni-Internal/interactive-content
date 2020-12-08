@@ -122,16 +122,15 @@ The decrypted message is\: bbbbbbbbbbbbbbbbabc
 [/test]
 [test]
 [input]
-m\%\&\&aged\%crypt\^thi\&\^\&\%cr\%t\^
-ChangeAll\|\^\|
-ChangeAll\|\%\|e
-ChangeAll\|\&\|s
-Move\|7
-Insert\|27\| if you can
+secretsuper
+Move\|6
+Insert\|11\|message\!
+Insert\|5\| 
+Insert\|12\| 
 Decode
 [/input]
 [output]
-The decrypted message is\: decrypt this secret message if you can
+The decrypted message is\: super secret message\!
 [/output]
 [/test]
 [test]
