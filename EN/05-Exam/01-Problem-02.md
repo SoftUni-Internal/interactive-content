@@ -1,28 +1,29 @@
+# Problem 2: Food supply
+
 [slide]
-# Problem 2: Ad Astra
-## Description
+# Description
 
-On the first line of the input you will be given a text string. 
+On the first line of the input you will be given a **text string**, containing the items **currently stored in your fridge.**
 
-You must extract the information about the food and calculate the total calories. 
+You must **extract the information about each one** and calculate its total calories.
 
-First you must extract the food info. It will always follow the same pattern rules:
+First you must **extract the food info.** 
 
-* It will be surrounded by `|` or `#` (only one of the two) in the following pattern: 
+It will always follow the **same pattern** rules:
+
+* Items will be separated by `|` or `#` (only one of the two) in the following format: 
 
 `#{item name}#{expiration date}#{calories}#`
 
 `|{item name}|{expiration date}|{calories}|`
 
-* The item name will contain **only lowercase and uppercase letters and whitespace**
+* The item name may contain only **lowercase**, **uppercase** **letters**, and **spaces.**
 
-* The expiration date will always follow the pattern: `{day}/{month}/{year}`, **where the day, month and year will be exactly two digits long**
+* The expiration date will always follow the pattern: `{day}/{month}/{year}`, t**he day, month and year will consist of two digits**
 
-* The calories will be an i**nteger between 0-10000**
+* The calories will be an **integer in the range: 0-10000**
 
-Calculate **the total calories of all food items** and then determine **how many days you can last with the food you have.**
-
-Keep in mind that **you need 2000kcal a day.**
+Calculate **the total calories of all food items** from the string and then determine how many days you could last with this amount, **assuming that you consume 2000 kcal per day.**
 
 ## Input
 
@@ -30,14 +31,15 @@ Keep in mind that **you need 2000kcal a day.**
 
 ## Output
 
-- First print the amount of days you will be able to last with the food you have:
+- On the first output line, print the number of days that this supply of food would last, before you have to go to the store for more:
 
-`You have food to last you for: {days} days!`
+`You have enough food for {days} days!`
 
-   - The output for each food item should look like this:
+   - After, print each valid item. 
+   The output should look like this:
 `Item: {item name}, Best before: {expiration date}, Nutrition: {calories}`
 
-[code-task title="Ad Astra" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Food supply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -51,7 +53,7 @@ function solve(input) {
  **Input** 
 `['#Bread#19/03/21#4000#|Invalid|03/03.20||Apples|08/10/20|200||Carrots|06/08/20|500||Not right|6.8.20|5|']`
 **Output**
-You have food to last you for: 2 days\!
+You have enough food for 2 days\!
 Item: Bread, Best before: 19\/03\/21, Nutrition: 4000
 Item: Apples, Best before: 08\/10\/20, Nutrition: 200
 Item: Carrots, Best before: 06\/08\/20, Nutrition: 500
@@ -71,7 +73,7 @@ We print each item
 `['$$#@@%^&#Fish#24/12/20#8500#|#Incorrect#19.03.20#450|$5*(@!#Ice Cream#03/10/21#9000#^#@aswe|Milk|05/09/20|2000|']`
 
 **Output**
-You have food to last you for: 9 days\!
+You have enough food for 9 days\!
 Item: Fish, Best before: 24\/12\/20, Nutrition: 8500
 Item: Ice Cream, Best before: 03\/10\/21, Nutrition: 9000
 Item: Milk, Best before: 05\/09\/20, Nutrition: 2000
@@ -103,7 +105,7 @@ This text `#Invalid food#19/03/20#450` is not a match, since it doesn't have a `
 \$\$\#\@\@\%\^\&\#Fish#24\/12\/20#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|
 [/input]
 [output]
-You have food to last you for\: 19 days\!
+You have enough food for 19 days\!
 Item\: Fish, Best before: 24\/12\/20, Nutrition\: 8500
 Item\: Ice Cream, Best before: 03\/10\/21, Nutrition\: 9000
 Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 2000
@@ -117,7 +119,7 @@ Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 2000
 \$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#1000\#\|Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#1000\#\^\#\@aswe\|Milk\|05\/09\/20\|1000\|\$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#1000\#\|\#Incorrect\#19.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#1000\#\^\#Incorr\#Lettuce\#24\/06\/20\#1000\#
 [/input]
 [output]
-You have food to last you for\: 3 days\!
+You have enough food for 3 days\!
 Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
 Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 1000
 Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 1000
@@ -131,7 +133,7 @@ Item\: Lettuce, Best before\: 24\/06\/20, Nutrition\: 1000
 \#Fish\#24\/12\/20\#1000\#\|Milk\|05\/09\/20\|1000\|\#Fish\#24\/12\/20\#1000\#\|\#Ice Cream\#03\/10\/21\#1000\#\#Lettuce\#24\/06\/20\#1000\#
 [/input]
 [output]
-You have food to last you for\: 2 days\!
+You have enough food for 2 days\!
 Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
 Item\: Milk, Best before\: 05\/09\/20, Nutrition\: 1000
 Item\: Fish, Best before\: 24\/12\/20, Nutrition\: 1000
@@ -144,7 +146,7 @@ Item\: Lettuce, Best before: 24\/06\/20, Nutrition\: 1000
 \|Fish\#24\/12\/20\#1000\|\#Milk\#05\/09\/20\#1000\|\|Fis\|24\/12\/20\|1000\#\|Ice Cream#03\/10\/21\#1000\#\#Lettuce\/24/06\/20\#1000#
 [/input]
 [output]
-You have food to last you for\: 0 days\!
+You have enough food for 0 days\!
 [/output]
 [/test]
 [test]
@@ -152,7 +154,7 @@ You have food to last you for\: 0 days\!
 \|Fish\#24\/12\/20\|1000\|
 [/input]
 [output]
-You have food to last you for\: 0 days\!
+You have enough food for 0 days\!
 [/output]
 [/test]
 [test]
@@ -160,7 +162,7 @@ You have food to last you for\: 0 days\!
 \|Fish\|24\/12\/20\|1000\|\|Fish\|24\/12\/20\|1000\|\|Fish\|24\/12\/20\|1000\|\|\|24\/12\/20\|1000\|\|Fish\|24\/12\/2\|1000\|\|Fish\|24\/12\/20\|\|
 [/input]
 [output]
-You have food to last you for\: 1 days\!
+You have enough food for 1 days\!
 Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
 Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
 Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
@@ -171,7 +173,7 @@ Item\: Fish, Best before: 24\/12\/20, Nutrition\: 1000
 \$\$\#\@\@\%\^\&\#Fish\#24\/12\/20\#8500\#\|\#Incorrect\#19\.03\.20\#450\|\$5\*\(\@\!\#Ice Cream\#03\/10\/21\#9000\#\^\#\@aswe\|Milk\|05\/09\/20\|2000\|
 [/input]
 [output]
-You have food to last you for\: 9 days\!
+You have enough food for 9 days\!
 Item\: Fish, Best before: 24\/12\/20, Nutrition\: 8500
 Item\: Ice Cream, Best before\: 03\/10\/21, Nutrition\: 9000
 Item\: Milk, Best before: 05\/09\/20, Nutrition\: 2000
