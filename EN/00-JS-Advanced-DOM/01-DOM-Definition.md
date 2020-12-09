@@ -1,14 +1,9 @@
-# Document with a Logical Tree
+# Document With a Logical Tree
 
 [slide]
 # Document Object Model
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId=""  /]
-[/video-vimeo]
-
-**Document Object Model** (DOM) is an interface, which **connects** JavaScript as a programming language and HTML.
+**Document Object Model** \(DOM\) is an interface, which **connects** JavaScript as a programming language and HTML.
 
 HTML is a text with tags. 
 
@@ -36,7 +31,7 @@ DOM is a standard of how to:
 
 Example of **HTML element**:
 
-```
+``` js
 <h1>Hello World!</h1>
 ```
 
