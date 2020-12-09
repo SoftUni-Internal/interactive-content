@@ -40,10 +40,28 @@ Example of **HTML element**:
 <h1>Hello World!</h1>
 ```
 
-In this examle `<h1>` tell to the browser that this is a titel. 
+In this example `<h1>` tell the browser that this is a title. 
 
 Then we have the text `Hello World!`.
 
-And at the end we close the title with `</h1>`.
+And at the end, we close the title with `</h1>`.
+
+
+[/slide]
+
+[slide]
+# HTML DOM
+
+The HTML DOM is an Object Model for HTML.
+
+It defines:
+
+- HTML elements as objects
+
+- Properties
+
+- Methods
+
+- Events
 
 [/slide]
