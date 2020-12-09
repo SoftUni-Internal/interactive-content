@@ -17,7 +17,7 @@ DOM **methods are actions you can perform on HTML elements**, and change them.
 DOM **properties are information that we can receive or change.**
 [/slide]
 
-[/slide]
+[slide]
 # Example 1: DOM Methods
 
 We can run this example int the browser:
