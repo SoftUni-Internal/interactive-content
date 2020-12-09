@@ -3,11 +3,6 @@
 [slide]
 # Table of Contents
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId=""  /]
-[/video-vimeo]
-
 **1. DOM**
 
 * What is DOM?
