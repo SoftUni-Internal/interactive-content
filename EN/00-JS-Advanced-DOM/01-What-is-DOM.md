@@ -36,7 +36,7 @@ DOM is a standard of how to:
 
 Example of **HTML element**:
 
-``` js
+```
 <h1>Hello World!</h1>
 ```
 
@@ -45,7 +45,6 @@ In this example `<h1>` tell the browser that this is a title.
 Then we have the text `Hello World!`.
 
 And at the end, we close the title with `</h1>`.
-
 
 [/slide]
 
