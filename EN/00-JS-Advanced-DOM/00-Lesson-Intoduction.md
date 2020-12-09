@@ -3,27 +3,33 @@
 [slide]
 # Table of Contents
 
+[vimeo-video]
+[stream language="EN" videoId="" default /]
+[stream language="RO" videoId=""  /]
+[/video-vimeo]
+
 **1. DOM**
 
 * What is DOM?
-  - concept and meaning
+  - Concept and meaning.
+
 * DOM Methods
-  - what are the DOM methods?
+  - What are the DOM methods?
 
 * DOM Manipulations
-  - how we can manipulate HTML elements
+  - How we can manipulate HTML elements.
 
 * Parents and Children Elements
-  - what's are parent and child elements
+  - What's are parent and child elements?
 
 * DOM Properties and HTML Attributes
-  - differens between DOM properties and HTML attributes
+  - Differens between DOM properties and HTML attributes.
 
 * DOM Events Introduction
-  - what's are DOM events and how they work
+  - What's are DOM events and how they work.
 
 **2. BOM**
-  - what browser gives as API
-  - how to interact with the application
+  - What browser gives as API?
+  - how to interact with the application?
 
 [/slide]
