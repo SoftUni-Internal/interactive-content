@@ -32,6 +32,5 @@ Regula standard pentru **priorities** în ceea ce privește operațiile aritmeti
 
 Dacă expresia este scrisă între **brackets**, aceasta va fi calculată **first**, la fel ca la matematică.
 
-[/diapozitiv]
 
 [/slide]
