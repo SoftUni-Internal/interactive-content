@@ -69,7 +69,7 @@ And that way we can print into the browser's console the first title element, wh
 
 HTML DOM property is a value that you can `get` or `set`:
 
-``` js
+``` js live
 <html>
 <head>
     <title>Intro to DOM</title>
