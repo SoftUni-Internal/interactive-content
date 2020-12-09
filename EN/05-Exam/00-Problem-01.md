@@ -1,28 +1,36 @@
 [slide]
-# Problem 1: World Tour
+# Problem 1: Trip
 ## Description
 
-You will be given **a string containing all of your stops.** 
+Some of your friends have decided to go on a rather long trip, however, they are really distracted right now, as they need to prepare for the road.
 
-Until you receive the command `Travel`, you will be given some commands to manipulate that initial string. The commands can be:
+So, they have asked you to help them organize their trip by creating a program to process some changes to their initial travel plan.
+
+You will be given a string containing the initial list of **travel destinations.**
+
+Afterward you will receive **commands** which represent changes to the travel plan.
+
+Until you **receive** this command: `Travel`
+
+The commands may be:
 
 * Command `Add Stop:{index}:{string}`:
 
-**Rnsert** the given string at that **index** only if the index is valid.
+**Insert** the given string at that index, **only if the index is valid.**
 
 * Command `Remove Stop:{start_index}:{end_index}`:
 
-**Remove** the elements of the string **from the starting index to the end index (inclusive)**, if both indices are **valid.**
+**Remove** the elements of the string from the **starting index** to the end index \(inclusive\) if both indices are valid.
 
 * Command `Switch:{old_string}:{new_string}`: 
 
-If the **old string is in the initial string**, replace all occurrences with the new one.
+If the **old string** is currently present in the travel plan string, **replace all occurrences with the new one.**
 
-**Note: After each command print the current state of the string**
+**Note: After each command print the current state of the string.**
 
-After the `Travel` command, print the following:
+After receiving the `Travel` command, print the following:
 
-`Ready for world tour! Planned stops: {string}`
+`Ready for the trip! Planned stops: {string}`
 
 ## Input
 
@@ -32,7 +40,7 @@ After the `Travel` command, print the following:
 
 * Print the proper output messages in the proper cases as described in the problem description.
 
-[code-task title="World Tour" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -50,8 +58,8 @@ function solve(input) {
 **Output**
 Hawai\:\:RomeCyprys\-Greece
 Hawai\:\:Rome\-Greece
-Bulgaria\:\:Rome-Greece
-Ready for world tour\! Planned stops\: Hungary\:\:Rome\-Greece
+Hungary\:\:Rome-Greece
+Ready for the trip\! Planned stops: Hungary\:\:Rome\-Greece
 
 [/task-description]
 [code-io /]
@@ -64,7 +72,7 @@ Travel
 [/input]
 [output]
 DA:B:C
-Ready for world tour! Planned stops: DA:B:C
+Ready for the trip\! Planned stops: DA:B:C
 [/output]
 [/test]
 [test]
@@ -75,7 +83,7 @@ Travel
 [/input]
 [output]
 A:B:
-Ready for world tour! Planned stops: A:B:
+Ready for the trip\! Planned stops: A:B:
 [/output]
 [/test]
 [test]
@@ -86,7 +94,7 @@ Travel
 [/input]
 [output]
 A:D:C
-Ready for world tour! Planned stops: A:D:C
+Ready for the trip\! Planned stops: A:D:C
 [/output]
 [/test]
 [test]
@@ -99,7 +107,7 @@ Travel
 [output]
 A:B:C:FD
 A:B:C:F
-Ready for world tour! Planned stops: A:B:C:F
+Ready for the trip\! Planned stops: A:B:C:F
 [/output]
 [/test]
 [test]
@@ -114,7 +122,7 @@ Travel
 B:C:D
 B:C:D
 B:F:D
-Ready for world tour! Planned stops: B:F:D
+Ready for the trip\! Planned stops: B:F:D
 [/output]
 [/test]
 [test]
@@ -129,7 +137,7 @@ Travel
 A:BN:C:D
 A:BN:C:D
 AA:BN:C:D
-Ready for world tour! Planned stops: AA:BN:C:D
+Ready for the trip\! Planned stops: AA:BN:C:D
 [/output]
 [/test]
 [test]
@@ -144,7 +152,7 @@ Travel
 Hawai\:\:RomeCyprys\-Greece
 Hawai\:\:Rome\-Greece
 Bulgaria\:\:Rome\-Greece
-Ready for world tour\! Planned stops: Bulgaria\:\:Rome\-Greece
+Ready for the trip\! Planned stops: Bulgaria\:\:Rome\-Greece
 [/output]
 [/test]
 [/tests]
