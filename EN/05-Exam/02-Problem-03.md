@@ -1,18 +1,19 @@
-[slide]
 # Problem 3: The Pianist
-## Description
 
-On the first line of the standard input you will receive an **integer** `n` – the number of pieces that you will initially have.
+[slide]
+# Description
 
-On the next `n` lines the pieces themselves will follow with their **composer and key**, separated by `|` in the following format:
+On the first line of the input you will receive an **integer** `n` – representing the number of pieces that you will initially have.
+
+On the next `n` lines you will be receiving the titles of each piece, followed by its **composer and key**, separated by `|` in the following format:
 
 `{piece}|{composer}|{key}`
 
-Then, you will be receiving **different commands**, each on a new line, separated by `|`, until the `Stop` command is given:
+Then, you receive **different commands**, each on a new line, separated by `|`, until the `Stop` command is given:
 
 * Command `Add|{piece}|{composer}|{key}`: 
 
-You need to **add the given piece with the information** about it to the other pieces
+You need to **add the piece with the information** about it to the other pieces.
 
 If the piece is **already in the collection**, print: `{piece} is already in the collection!`
 
@@ -20,16 +21,16 @@ If the **piece is not in the collection**, print: `{piece} by {composer} in {key
 
 * Command `Remove|{piece}`:
 
-If the p**iece is in the collection**, remove it and print: `Successfully removed {piece}!`
+If the **piece is in the collection**, remove it and print: `Successfully removed {piece}!`
 
 If the **piece is not in the collection**, print: `Invalid operation! {piece} does not exist in the collection.`
 
 * Command `ChangeKey|{piece}|{new key}`:
 
-If the **piece is in the collection**, change its key with the given one and print: `Changed the key of {piece} to {new key}!`
-If the piece is not in the collection, print: `Invalid operation! {piece} does not exist in the collection.`
+If the **piece is in the collection**, change its key to the specified one and print: `Changed the key of {piece} to {new key}!`
+If the **piece is not in the collection**, print: `Invalid operation! {piece} does not exist in the collection.`
 
-Upon receiving the `Stop` command you need to print all pieces in your collection, sorted by their **name and by the name of their composer in alphabetical order**, in the following format:
+Upon receiving the `Stop` command you need to print all pieces in the collection, sorted by their **name and by the name of their composer in alphabetical order**, in the following format:
 
 `{Piece} -> Composer: {composer}, Key: {key}`
 
@@ -39,7 +40,7 @@ Upon receiving the `Stop` command you need to print all pieces in your collectio
 
 * For each piece you will receive a single line of text with information about it.
 
-* Then you will receive multiple commands in the way described above, until the command `Stop`.
+* Then you will receive multiple commands in the way described above, until the command  `Stop` is given.
 
 ## Output
 
@@ -75,14 +76,15 @@ After we receive the initial pieces with their info, we start receiving commands
 
 The first two commands are to add a piece to the collection and since the pieces are not already added, we manage to add them.
 
-The third add command, however, attempts to add a piece, which is already in the collection, so we print a special message and don't add the piece.
+The third add command, however, a**ttempts to add a piece**, which is already in the collection, so we **print a the appropriate message** and do not add the piece.
 
-After that, we receive the remove command and since the piece is in the collection, we remove it successfully.
+After that, we receive the **remove command** and since the piece **is in the collection**, we remove it successfully.
 
-Finally, the last command says to change the key of a piece. Since the key is present in the collection, we modify its key.
+The last command **requires us to change the key of a piece.**
 
-We receive the Stop command, print the information about the pieces, sorted in the way described above, and the program ends.
+Since the key is **present in the collection**, we **modify** its key.
 
+We receive the `Stop` command, **print the information about the pieces**, sorted the way described above, and the program ends.
 
  **Input**
 `[ '4', 'Eine kleine Nachtmusik|Mozart|G Major', 'La Campanella|Liszt|G# Minor', 'The Marriage of Figaro|Mozart|G Major', 'Hungarian Dance No.5|Brahms|G Minor', 'Add|Spring|Vivaldi|E Major', 'Remove|The Marriage of Figaro', 'Remove|Turkish March', 'ChangeKey|Spring|C Major', 'Add|Nocturne|Chopin|C# Minor', 'Stop']`

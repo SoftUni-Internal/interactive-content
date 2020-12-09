@@ -1,6 +1,7 @@
-[slide]
 # Problem 1: Trip
-## Description
+
+[slide]
+# Description
 
 Some of your friends have decided to go on a rather long trip, however, they are really distracted right now, as they need to prepare for the road.
 

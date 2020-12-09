@@ -52,6 +52,7 @@ function solve(input) {
 # Examples
  **Input** 
 `['#Bread#19/03/21#4000#|Invalid|03/03.20||Apples|08/10/20|200||Carrots|06/08/20|500||Not right|6.8.20|5|']`
+
 **Output**
 You have enough food for 2 days\!
 Item: Bread, Best before: 19\/03\/21, Nutrition: 4000
