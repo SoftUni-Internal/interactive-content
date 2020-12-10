@@ -1,7 +1,5 @@
 [slide]
 
-
-
 # What is a String?
 
 [vimeo-video]
@@ -29,8 +27,6 @@ console.log(myString.length);
 [/slide]
 
 [slide]
-
-
 
 
 # Strings Are Immutable
@@ -62,8 +58,6 @@ We know we can change the **data held by a variable**, but we can't change symbo
 
 [slide]
 
-
-
 # String Interpolation
 
 [vimeo-video]
@@ -84,7 +78,6 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 
 [slide]
-
 
 
 # Problem: Concantenate Names
@@ -183,8 +176,6 @@ JanpWhite
 [/slide]
 
 [slide]
-
-
 
 # Solution: Concantenate Names
 
@@ -287,8 +278,6 @@ JanpWhite
 
 [slide]
 
-
-
 # Problem: Right Place
 
 [vimeo-video]
@@ -389,8 +378,6 @@ Not Matched
 [/slide]
 
 [slide]
-
-
 
 
 # Solution: Right Place
