@@ -142,7 +142,7 @@ A valid full name has the following characteristics:
 - Each of the two words should be at least two letters long.
 - The two words are separated by a single space.
 
-To help you out, we've outlined several steps:
+To help you out, we have outlined several steps:
 1.	Use an online regex tester like https\:\/\/regex101\.com\/ 
 2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\).
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\).
@@ -432,18 +432,18 @@ Write a regular expression to match a valid phone number from Sofia.
 After you find all valid phones, print them on the console, separated by a comma and a space `, `.
 
 A valid number has the following characteristics:
-- It starts with `"+359"`
+- It starts with `+359`
 - Then, it is followed by the area code `(always 2)`.
 
 After that, it's followed by the number itself:
 - The number consists of 7 digits (separated in two groups of 3 and 4 digits respectively). 
-- The different parts are separated by either a space or a hyphen `('-')`.
+- The different parts are separated by either a space or a hyphen `-`.
 
 You can use the following RegEx properties to help with the matching: 
 - Use quantifiers to match a specific number of digits.
 - Use a capturing group to make sure the delimiter is only one of the allowed characters (space or hyphen) and not a combination of both \(e.g. \+359 2\-111 111 has mixed delimiters, it is invalid\). Use a group backreference to achieve this.
 - Add a word boundary at the end of the match to avoid partial matches (the last example on the right hand side).
-- Ensure that before the `'+'` sign there is either a space or the beginning of the string.
+- Ensure that before the `+` sign there is either a space or the beginning of the string.
 
 # Example
 
@@ -580,18 +580,18 @@ Write a regular expression to match a valid phone number from Sofia.
 After you find all valid phones, print them on the console, separated by a comma and a space `, `.
 
 A valid number has the following characteristics:
-- It starts with `"+359"`
+- It starts with `+359`
 - Then, it is followed by the area code `(always 2)`.
 
 After that, it's followed by the number itself:
 - The number consists of 7 digits (separated in two groups of 3 and 4 digits respectively). 
-- The different parts are separated by either a space or a hyphen `('-')`.
+- The different parts are separated by either a space or a hyphen `-`.
 
 You can use the following RegEx properties to help with the matching: 
 - Use quantifiers to match a specific number of digits.
 - Use a capturing group to make sure the delimiter is only one of the allowed characters (space or hyphen) and not a combination of both \(e.g. \+359 2\-111 111 has mixed delimiters, it is invalid\). Use a group backreference to achieve this.
 - Add a word boundary at the end of the match to avoid partial matches (the last example on the right hand side).
-- Ensure that before the `'+'` sign there is either a space or the beginning of the string.
+- Ensure that before the `+` sign there is either a space or the beginning of the string.
 
 # Example
 

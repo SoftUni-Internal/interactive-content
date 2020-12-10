@@ -65,4 +65,6 @@ In regex, you also have a number of predefined character classes that provide yo
 | \d | Matches any decimal digit | \[0\-9\] |
 | \D | Matches any non-decimal character | \[\^d\] |
 
+If you want to read more about regular expressins: https://www.regular-expressions.info/
+
 [/slide]

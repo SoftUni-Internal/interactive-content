@@ -27,7 +27,7 @@ Every valid date has the following characteristics:
 - Always starts with two digits, followed by a separator.
 - After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar).
 - After that, it has a separator and exactly 4 digits (for the year).
-- The separator could be either of three things: a period `(".")`, a hyphen `("-")` or a forward slash `("/")`.
+- The separator could be either of three things: a period `.`, a hyphen `-` or a forward slash `/`.
 - The separator needs to be the same for the whole date `(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)`.
 
 Use a group backreference to check for this.
@@ -195,7 +195,7 @@ function solve(input) {
 
 Write a function to calculate the total cost of different types of furniture. 
 
-You will be given some lines of input until you receive the line "Purchase". 
+You will be given some lines of input until you receive the line `Purchase`. 
 
 For the line to be valid it should be in the following format:
 
@@ -205,7 +205,7 @@ The price can be floating point number or whole number.
 
 Store the names of the furniture and the total price. 
 
-At the end print the each bought furniture on separate line in the format:
+In the end print out each bought furniture on separate line in the format:
 
 `Bought furniture:
 {1st name}
@@ -360,7 +360,7 @@ Write a function that processes information about a race.
 
 On the first line you will be given list of participants separated by `", "`. 
 
-On the next few lines until you receive a line "end of race" you will be given some info which will be some alphanumeric characters. 
+On the next few lines until you receive a line `end of race` you will be given some info which will be some alphanumeric characters. 
 
 In between them you could have some extra characters which you should ignore. 
 
@@ -374,7 +374,7 @@ Store the information about the person only if the list of racers contains the n
 
 If you receive the same person more than once just add the distance to his old distance. 
 
-At the end print the top 3 racers ordered by distance in descending in the format:
+In the end print out the top 3 racers ordered by distance in descending order in the format:
 
 `1st place: {first racer}
 2nd place: {second racer}
@@ -531,7 +531,7 @@ Let's take a break and visit the game bar at SoftUni.
 
 It is about time for the people behind the bar to go home and you are the person who has to draw the line and calculate the money from the products that were sold throughout the day.
 
-Until you receive a line with text "end of shift" you will be given lines of input. 
+Until you receive a line with text `end of shift` you will be given lines of input. 
 
 But before processing that line you have to do some validations first.
 
@@ -543,7 +543,7 @@ Each valid order should have a customer, product, count and a price:
 
 The parts of a valid order should appear in the order given: customer, product, count and a price.
 
-Between each part there can be other symbols, except `('|', '$', '%' and '.')`.
+Between each part there can be other symbols, except `(|, $, % .)`.
 
 For each valid line print on the console: `{customerName}: {product} - {totalPrice}`.
 

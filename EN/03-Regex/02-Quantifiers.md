@@ -20,7 +20,7 @@ Let's have a look at the examples:
 
 `*` matches the previous element zero or more times.
 
-Example: "Hellooo World! Hello Again!"
+Example: `Hellooo World! Hello Again!`
 
 `lo*` will match "l", "looo", "l", "l", "lo".
 
@@ -33,7 +33,7 @@ Example: "Hellooo World! Hello Again!"
 
 `+` matches the previous element one or more times.
 
-Example: "Hellooo World! Hello Again!"
+Example: `Hellooo World! Hello Again!`
 
 `o+` will match "ooo", "o", "o".
 
@@ -46,7 +46,7 @@ Example: "Hellooo World! Hello Again!"
 
 `?` matches the previous element zero or one time.
 
-Example: "1, 100 or 1000"
+Example: `1, 100 or 1000`
 
 `10?` matches "1", "10" and "10" as a result.
 
@@ -59,7 +59,7 @@ Example: "1, 100 or 1000"
 
 `{4}` matches the previous element exactly 4 times.
 
-Example: "1000, 10000 or 100000"
+Example: `1000, 10000 or 100000`
 
 `\d{4}` matches "1000", "1000", "1000" as a result.
 
@@ -128,7 +128,7 @@ Use this expression for **non-capturing groups** `(?:subexpression)`.
 
 You can use `(?:subexpression)` to not capture groups and drop them from the result.
 
-When you're dealing with complex regular expressions this can be very helpful!
+When you are dealing with complex regular expressions this can be very helpful!
 
 The pipe symbol `|` in the example means logical "or".
 
