@@ -15,10 +15,12 @@ Functions are executed when they are called, is known as **invoking a function
 
 Values can be passed into functions and used within the function.
 
-``` js
+``` js live
 function printStars(count) {
   console.log("*".repeat(count));
 }
+
+printStars(4)
 ```
 
 A function is a **block of code** that is **executed only when called**.

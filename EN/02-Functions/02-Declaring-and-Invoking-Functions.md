@@ -28,7 +28,7 @@ let printText = function(text){
 }
 ```
 
-# Functions with parameters
+## Functions with parameters
 
 **Arguments** can be passed to the function by enclosing the values in a parentheses after the function name.
 
@@ -69,10 +69,15 @@ function hLine() {
 
 Then we can invoke (call) the function by its name:
 
-```js
+```js live
+function hLine() {
+  console.log("----------");
+}
+
 hLine();
 ```
-# Demo
+
+## Demo
 
 [vimeo-video]
 [stream language="EN" videoId="489373310/980f876469" default /]

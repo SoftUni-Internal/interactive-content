@@ -72,7 +72,7 @@ multiply(getMax(5,10), 20);
 
 - Check if **array index** is valid:
 
-``` js
+``` js live
 function isValid(index, arr) {
   if (index < 0 || index >= arr.length) {
     return false;
@@ -80,6 +80,8 @@ function isValid(index, arr) {
     return true;
   }
 }
+
+console.log(isvalid(3, [1,2,3,4,5]));
 ```
 
 When we're working with arrays it's often used for checking if the **index is valid.**
@@ -88,10 +90,12 @@ The result of this function is **boolean**, it will return `true` if the index i
 
 - Does the student pass the exam:
 
-```js
+```js live
 function pass(grade) {
   return grade >= 3;
 }
+
+console.log(pass(5.32))
 ```
 
 [/slide]
