@@ -154,7 +154,7 @@ Write a program, which:
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbersInRange (input) {
+function sequence(input) {
   // Write your code here
 }
 ```
@@ -194,7 +194,13 @@ Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-// TODO: Solution
+function sequence(input) {
+  let k = 1;
+  
+  while(k <= input){
+    console.log(k);
+    k = k * 2 + 1;
+  }
 }
 ```
 [/code-editor]
