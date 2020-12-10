@@ -3,6 +3,11 @@
 [slide]
 # Array Methods
 
+[vimeo-video]
+[stream language="EN" videoId="489372517/068155927c" default /]
+[stream language="RO" videoId="489372517/068155927c"  /]
+[/video-vimeo]
+
 Some operations that work with Arrays could also function with Array-like values. 
 
 An Array-like value is an object that holds the following properties: 
@@ -34,6 +39,16 @@ arr.push(40, 50);
 
 console.log(arr);
 ```
+
+[/slide]
+
+[slide]
+# Usage
+
+[vimeo-video]
+[stream language="EN" videoId="489372490/1ebd778a3f" default /]
+[stream language="RO" videoId="489372490/1ebd778a3f"  /]
+[/video-vimeo]
 
 - `includes()`: Returns `true` if the array contains the value placed in the brackets  searchElement and `false`, otherwise
 

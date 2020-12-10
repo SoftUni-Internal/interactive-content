@@ -596,8 +596,15 @@ Array holding mixed data
 ```js
 let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 ```
+[/slide]
 
+[slide]
 # Adding New Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489372468/1ac4aabd28" default /]
+[stream language="RO" videoId="489372468/1ac4aabd28"  /]
+[/video-vimeo]
 
 We  can add an element to the end of the array:
 ``` js live
