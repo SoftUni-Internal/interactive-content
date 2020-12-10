@@ -30,6 +30,8 @@ console.log(capitals.toString())
 [slide]
 # For-of Loop
 
+## This video should be seprated.
+
 [vimeo-video]
 [stream language="EN" videoId="489372665/d1efc1a241" default /]
 [stream language="RO" videoId="489372665/d1efc1a241"  /]
@@ -453,9 +455,13 @@ dsadaffa dd 0 124543 3jkj3
 [code-editor language=javascript]
 ```
 function reverce(input){
-  let reversed = input.reverse();
-
-  console.log(reversed.join(' '));
+   for (let i = 0; i < arr.length / 2; i++) {
+    let oldElement = arr[i];
+    let previousIndex = arr.length - 1 - i;
+    arr[i] = arr[previousIndex];
+    arr[previousIndex] = oldElement;
+  }
+  console.log(arr.join(' '));
 }
 ```
 [/code-editor]
