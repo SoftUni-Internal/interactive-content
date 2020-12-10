@@ -15,11 +15,11 @@ Notice that the student object is composed by primitive types like `firstName`, 
 To access the `location` objects property `lat` we use the following: `student.location.lat`.
 
 ```js live
-let student = {
-  firstName: 'Maria',
-  lastName: 'Green',
-  age: 22,
-  location: { lat: 52.520, lng: 13.404 }
+let student = {
+    firstName: 'Maria',
+    lastName: 'Green',
+    age: 22,
+    location: { lat: 52.520, lng: 13.404 }
 }
 console.log(student);
 console.log(student.location.lat);
