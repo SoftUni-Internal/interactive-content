@@ -17,9 +17,10 @@ public class Program {
 [task-description]
 ## Description
 Write a program to calculate the speed by time and distance:
-  * Read 2 floating-point numbers: distance and time
-  * Calculate the speed needed to travel a given distance for given time
-  * Print the calculated result
+  * Read 2 floating-point numbers: distance and time.
+  * Calculate the speed needed to travel a given distance for given time.
+  * Print the calculated result.
+  * Use the formula: **speed = distance / time**.
   
 ## Example
 | **Input** | **Output** |
@@ -97,9 +98,9 @@ public class Program {
 [task-description]
 ## Description
 Write a program to convert from USD to EUR:
-  * Read a floating-point number: the dollars to be converted 
-  * Convert dollars to euro (use fixed rate of dollars to euro: 0.88)
-  * Print the converted value in euro
+  * Read a **floating-point number**: the dollars to be converted .
+  * Convert **dollars to euro** (use **fixed rate** of dollars to euro: 0.88).
+  * Print the converted value in euro.
 
 ## Example
 | **Input** | **Output** |
@@ -184,9 +185,9 @@ public class Program {
 ## Description
 Write a program to calculate a triangle area:
 
-  * Read from input a `side a` and `height` - **floating-point numbers**
-  * Calculate the area of the triangle
-  * Print the area, formatted to the 2nd digit after decimal point
+  * Read from input a `side a` and `height` - **floating-point numbers**.
+  * Calculate the area of the triangle.
+  * Print the area, formatted to the 2nd digit after decimal point.
 
   
 ## Example
@@ -265,8 +266,8 @@ public class Program {
 [task-description]
 ## Description
 Write a program, which:
-  * Reads 2 **real numbers** from the console
-  * Performs 4 **arithmetic operations** on the obtained 2 numbers, in the following order: ``+``, ``-``, ``*``, ``/``
+  * Reads 2 **real numbers** from the console.
+  * Performs 4 **arithmetic operations** on the obtained 2 numbers, in the following order: ``+``, ``-``, ``*``, ``/``.
   * Formats and prints the results like this example:
 
 ## Example
@@ -349,10 +350,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to convert from days to minutes:
-  * Read a single integer (the days to be converted)
-  * Convert the days to minutes (use calculations)
-  * Print the minutes
+Write a program to convert from **days** to **minutes**:
+  * Read a **single integer** (the days to be converted).
+  * Convert the days to minutes (use calculations).
+  * **Print** the minutes.
 
 ## Example
 | **Input** | **Output** |
@@ -437,10 +438,10 @@ public class Program {
 [task-description]
 ## Description
 Write a program to calculate a circle area and perimeter:
-  * Read a floating-point number: the radius of a circle
-  * Calculate the area and perimeter of a circle
-  * Print the calculated values
-    * Use the default formatting for floating-point numbers in Java in the output (like in the example below)
+  * Read a **floating-point number**: the radius of a circle.
+  * Calculate the **area and perimeter** of a circle.
+  * Print the calculated values.
+    * Use the **default formatting** for floating-point numbers in Java in the output (like in the example below).
 
 ## Example
 | **Input** | **Output** |
@@ -517,8 +518,8 @@ public class Program {
 [task-description]
 ## Description
 Write a program, which:
-  * Reads 4 lines of strings: first name, last name, country and town 
-  * Prints information about a person in the following format: `"{firstName} {lastName} from {country} - {town}!"`
+  * Reads **4 lines** of strings: first name, last name, country and town.
+  * Prints information about a person in the following format: `"{firstName} {lastName} from {country} - {town}!"`.
 
 ## Example
 | **Input** | **Output** |
@@ -608,7 +609,7 @@ public class Program {
 [task-description]
 ## Description
 Write a program, which:
-  * Reads 3 lines of input: name (string), population and area (integers)
+  * Reads **3 lines** of input: name (**string**), population and area (**integers**).
   * Prints information about a town in the following format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
 ## Example
@@ -692,16 +693,16 @@ public class Main {
 [task-description]
 ## Description
 
-Write a console program that reads an integer \'a\' and calculates the area of a square with size \'a\'.
+Write a console program that reads an **integer** \'a\' and calculates the area of a square with size \'a\'.
 
 ## Input
 
 Read from the console:
-- size of the square - integer in range \[1...1000\]
+- size of the square - **integer** in range \[1...1000\]
 
 ## Output
 
-Print on the console the calculated area
+Print on the console the calculated area.
 
 ## Examples
 
@@ -938,7 +939,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates the area of trapezoid with bases b1 and b2 and height h. 
+Write a program that **calculates** the area of trapezoid with bases **b1** and **b2** and height **h**. 
 
 The formula for calculating area of a trapezoid is ((b1 + b2) / 2) * h.
 
@@ -949,10 +950,10 @@ Read three numbers from the console:
 - height - h - real number in range \[1...1000\]
 
 ## Output
-Print on the console a single number - the area of the trapezoid, formatted to the second decimal point.
+Print on the console a single number - the area of the trapezoid, formatted to the **second decimal point.**
 
 ## Example
-| Input | Output |
+| **Input** | **Output** |
 | --- | --- |
 | 8 | 73.50 |
 | 13 | |
@@ -1046,21 +1047,21 @@ public class Main {
 ## Description
 Gardener is selling his harvest at the vegetable market. 
 
-He sells vegetables for N dollars per kilogram and fruits for M dollars per kilogram. 
+He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram. 
 
-Write a program that calculates the income from the harvest in euros (1 USD = 0.89 EUR).
+Write a program that calculates the income from the harvest in euros (**1 USD = 0.89 EUR**).
 
 ## Input
-The input will be 4 numbers, each on a single line:
-- The price of kilogram vegetables - floating-point number [0.00… 1000.00]
-- The price of kilogram fruits - floating-point number [0.00… 1000.00]
-- The total kilograms of vegetables - integer [0… 1000]
-- The total kilograms of fruits - integer [0… 1000]
+The input will be **4 numbers**, each on a **single** line:
+- The price of kilogram vegetables - **floating-point number** [0.00… 1000.00]
+- The price of kilogram fruits - **floating-point number** [0.00… 1000.00]
+- The total kilograms of vegetables - **integer** [0… 1000]
+- The total kilograms of fruits - **integer** [0… 1000]
 
 ## Output
-Print on the console a single number: the income from all of the fruits and vegetables in euro.
+Print on the console a **single number**: the income from all of the fruits and vegetables in euro.
 
-The result should be formatted to the second decimal point.
+The result should be formatted to the **second decimal point.**
 
 ## Examples
 
@@ -1077,6 +1078,8 @@ The result should be formatted to the second decimal point.
 | 2.5 | |
 | 10 | | 
 | 10 | | 
+
+
 [/task-description]
 [tests]
 [test open]
@@ -1611,15 +1614,15 @@ public class Main {
 
 Write a program that calculates the expenses for yard greening. 
 
-The price for one square meter is 7.61 dollars with VAT. 
+The price for **one square meter** is 7.61 dollars with VAT. 
 
-The company offers 18% discount from the total price.
+The company offers 18% **discount** from the total price.
 
 ## Input
 
 Single line from the console:
 
-- Square meters which will be greening - float-pointing number in range [0.00… 10000.00]
+- Square meters which will be greening - **float-pointing number** in range [0.00… 10000.00]
 
 ## Output
 
@@ -1627,7 +1630,7 @@ Print on the console two lines:
 - "The final price is: \{total price\} dollars"
 - "The discount is: \{discount\} dollars"
 
-Prices should be formatted to the second decimal point.
+Prices should be formatted to the **second decimal point.**
 
 ## Example
 | Input | | Output |
@@ -1639,6 +1642,7 @@ Prices should be formatted to the second decimal point.
 - Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $
 - Calculate the discount: 0.18 \* 4109.40 = 739.69 $
 - Calculate the final price: 4109.40 – 739.69 = 3369.71 $
+
 [/task-description]
 [tests]
 [test open]
