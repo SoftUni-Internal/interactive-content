@@ -1,4 +1,11 @@
 [slide]
+
+
+[vimeo-video]
+[stream language="EN" videoId="489371369/e56b1d1bdf" default /]
+[stream language="RO" videoId="489371369/e56b1d1bdf"  /]
+[/video-vimeo]
+
 # What is a Data Type?
 Data types inform the computer how much information to read **from memory** purely technically.
 
@@ -35,4 +42,30 @@ let person = {name: 'George', age: 25};	 // Object
 let empty = null;					     // Null
 let unknown = undefined;				 // Undefined
 ```
+[/slide]
+
+
+[slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371371/38ee98e956" default /]
+[stream language="RO" videoId="489371371/38ee98e956"  /]
+[/video-vimeo]
+
+
+# Dynamic Typing
+
+Variables in JavaScript are not strictly associated with a particular **value type**.
+
+We can re-assign variables of all types:
+
+``` js
+let var = 15; // var now is a number
+var = "Peter"; // var now is a String
+var = false; // var now is boolean
+ 
+```
+
+
+
 [/slide]

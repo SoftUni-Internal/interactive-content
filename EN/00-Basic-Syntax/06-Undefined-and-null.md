@@ -1,6 +1,13 @@
 # Undefined and Null
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371807/542891a72e" default /]
+[stream language="RO" videoId="489371807/542891a72e"  /]
+[/video-vimeo]
+
+
 ## Undefined
 
 [image assetsSrc="Undefined-Null.png" /]
@@ -28,6 +35,12 @@ console.log(car);
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371851/d2a4d15a1e" default /]
+[stream language="RO" videoId="489371851/d2a4d15a1e"  /]
+[/video-vimeo]
+
 ## Null
 
 Null is an object type, which can be used for any variable that holds an object which we do not want to be undefined.
@@ -51,24 +64,29 @@ console.log(typeof(person));
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371864/d1eeb434fb" default /]
+[stream language="RO" videoId="489371864/d1eeb434fb"  /]
+[/video-vimeo]
+
+
 ## Null and Undefined
 
-И двете са falsy, понеже и двете са в falsy таблицата. 
+**Null** is a value that we set and we know that there is nothing inside, ie. we set the value null explicitly.
 
-Null е стойност, която задаваме и знаем че вътре няма нищо, т.е. задаваме стойност null експлицитно.
+Undefined occurs when the value does not exist or is declared but not set to a value.
 
-Undefined се появява когато стойността не съществува или е декларирана но не ѝ е зададена стойност. 
+Also Undefined is obtained from the execution of the program, ie. we receive implicitly.
 
-Също така Undefined се получава от изпълнениете на програмата, т.е. получаваме инплицитно.
-
-Null and Undefined са от различен тип
+Null and Undefined are of different types.
 
 ``` js live
 console.log(typeof null);
 console.log(typeof undefined);
 ```
 
-Но са равни по идентити оператор
+But they are equal in identity operator.
 
 ``` js live
 console.log(null !== undefined);

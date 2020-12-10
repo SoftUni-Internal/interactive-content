@@ -1,5 +1,13 @@
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371415/8a09c2cbb3" default /]
+[stream language="RO" videoId="489371415/8a09c2cbb3"  /]
+[/video-vimeo]
+
+
 # What is a String?
+
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
 
@@ -15,6 +23,15 @@ let myString = "Hello JavaScript!";
 console.log(myString[0]);
 console.log(myString.length);
 ```
+
+[slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371418/250eaf629b" default /]
+[stream language="RO" videoId="489371418/250eaf629b"  /]
+[/video-vimeo]
+
+
 
 # Strings Are Immutable
 
@@ -34,11 +51,21 @@ console.log(myString);
 
 We know we can change the **data held by a variable**, but we can't change symbols in the string.
 
+
+[/slide]
+
+[slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371467/900551de56" default /]
+[stream language="RO" videoId="489371467/900551de56"  /]
+[/video-vimeo]
+
 # String Interpolation
 
 Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
 
-In JavaScript, the template literals (strings wrapped in backticks \`\`) and `${expression}` as placeholder perform the string interpolation.
+In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as placeholder perform the string interpolation.
 
 ``` js live
 let name = "Rick";
@@ -49,6 +76,12 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 
 [slide]
+
+
+[vimeo-video]
+[stream language="EN" videoId="489371465/3ddd050862" default /]
+[stream language="RO" videoId="489371465/3ddd050862"  /]
+[/video-vimeo]
 # Problem: Concantenate Names
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -139,6 +172,12 @@ JanpWhite
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371497/73837bd2a6" default /]
+[stream language="RO" videoId="489371497/73837bd2a6"  /]
+[/video-vimeo]
+
 # Solution: Concantenate Names
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -233,6 +272,12 @@ JanpWhite
 [/slide]
 
 [slide]
+
+
+[vimeo-video]
+[stream language="EN" videoId="489371500/1d3c01f1f7" default /]
+[stream language="RO" videoId="489371500/1d3c01f1f7"  /]
+[/video-vimeo]
 # Problem: Right Place
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -256,8 +301,8 @@ If they are equals you should print `Matched`, otherwise print `Not Matched`.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Str_ng', 'I', 'Strong']`| Not Matched |
-|`['Str_ng', 'i', 'String']`|Matched|
+|\['Str_ng', 'I', 'Strong'\] | Not Matched |
+|\['Str_ng', 'i', 'String'\] |Matched|
 
 [/task-description]
 [tests]
@@ -327,6 +372,13 @@ Not Matched
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371554/f8c9ad29ff" default /]
+[stream language="RO" videoId="489371554/f8c9ad29ff"  /]
+[/video-vimeo]
+
+
 # Solution: Right Place
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -360,8 +412,8 @@ If they are equals you should print `Matched`, otherwise print `Not Matched`.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Str_ng', 'I', 'Strong']`| Not Matched |
-|`['Str_ng', 'i', 'String']`|Matched|
+|\['Str_ng', 'I', 'Strong'\]| Not Matched |
+|\['Str_ng', 'i', 'String'\]|Matched|
 
 [/task-description]
 [tests]

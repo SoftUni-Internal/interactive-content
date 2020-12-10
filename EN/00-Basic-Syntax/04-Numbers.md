@@ -1,4 +1,12 @@
 [slide]
+
+
+
+[vimeo-video]
+[stream language="EN" videoId="489371556/90a6f7534f" default /]
+[stream language="RO" videoId="489371556/90a6f7534f"  /]
+[/video-vimeo]
+
 # What is a Number?
 The numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
 
@@ -62,6 +70,13 @@ console.log(myVar + 10);
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371609/3a04a5e772" default /]
+[stream language="RO" videoId="489371609/3a04a5e772"  /]
+[/video-vimeo]
+
+
 # Problem: Integer or Float
 [code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -155,6 +170,14 @@ Your task is to find their **sum** and print it to the console with an addition
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489371615/50cc2d6699" default /]
+[stream language="RO" videoId="489371615/50cc2d6699"  /]
+[/video-vimeo]
+
+
+
 # Solution: Integer or Float
 [code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

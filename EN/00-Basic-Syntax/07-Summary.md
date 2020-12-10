@@ -18,4 +18,14 @@ In this lesson you learned:
 
 - `Null` is "nothing",  undefined exists, but is empty
 
+In the next lesson you will learn:
+
+- Arrays definition and syntax
+
+- How we iterate over array
+
+- Alternative ways to iterate using a for-of loop
+
+
+
 [/slide]
