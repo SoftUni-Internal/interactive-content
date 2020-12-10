@@ -24,6 +24,8 @@ console.log(myString[0]);
 console.log(myString.length);
 ```
 
+[/slide]
+
 [slide]
 
 [vimeo-video]
