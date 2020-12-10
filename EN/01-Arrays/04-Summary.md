@@ -1,6 +1,12 @@
 [slide]
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="489372690/1982a43d5b" default /]
+[stream language="RO" videoId="489372690/1982a43d5b"  /]
+[/video-vimeo]
+
+
 What we learned in this lesson: 
 
 - Arrays are sequences of elements 

@@ -3,6 +3,11 @@
 [slide]
 # Printing Arrays On the Console
 
+[vimeo-video]
+[stream language="EN" videoId="489372567/b8ba0e753f" default /]
+[stream language="RO" videoId="489372567/b8ba0e753f"  /]
+[/video-vimeo]
+
 To print all array elements, a for-loop can be used
 
 ``` js live
@@ -25,7 +30,22 @@ console.log(capitals.toString())
 [slide]
 # For-of Loop
 
+[vimeo-video]
+[stream language="EN" videoId="489372665/d1efc1a241" default /]
+[stream language="RO" videoId="489372665/d1efc1a241"  /]
+[/video-vimeo]
+
 The `for..of` loop is used to iterate over any inerrable object but cannot be used to  access the their indexes. 
+
+[/slide]
+
+[slide]
+# Print an Array with For-of
+
+[vimeo-video]
+[stream language="EN" videoId="489372688/6c7e446d04" default /]
+[stream language="RO" videoId="489372688/6c7e446d04"  /]
+[/video-vimeo]
 
 ``` js live
 let arr = [1,2,3,4,5,6];
@@ -38,6 +58,12 @@ for(let num of arr){
 
 [slide]
 # Problem: Reverse an Array of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489372548/0e9743357b" default /]
+[stream language="RO" videoId="489372548/0e9743357b"  /]
+[/video-vimeo]
+
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -173,7 +199,13 @@ Where `n` is the  first element of the array.
 
 
 [slide]
-# Problem: Reverse an Array of Numbers
+# Solution: Reverse an Array of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489372607/8699baf857" default /]
+[stream language="RO" videoId="489372607/8699baf857"  /]
+[/video-vimeo]
+
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -310,6 +342,12 @@ Where `n` is the  first element of the array.
 
 [slide]
 # Problem: Reverse an Array of Strings
+
+[vimeo-video]
+[stream language="EN" videoId="489372618/881c97fdd1" default /]
+[stream language="RO" videoId="489372618/881c97fdd1"  /]
+[/video-vimeo]
+
 [code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -408,6 +446,9 @@ dsadaffa dd 0 124543 3jkj3
 
 [slide]
 # Solution: Reverse an Array of Strings
+
+# Add Video!!
+
 [code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
