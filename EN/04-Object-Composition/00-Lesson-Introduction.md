@@ -1,7 +1,7 @@
 # Lesson Introduction
 
 [slide]
+# Table of Contents
 
-# Table of content
 
 [/slide]
