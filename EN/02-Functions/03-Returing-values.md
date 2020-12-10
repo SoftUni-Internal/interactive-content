@@ -3,6 +3,12 @@
 [slide]
 # The Return Statement
 
+[vimeo-video]
+[stream language="EN" videoId="489373485/8c7c7e9e3c" default /]
+[stream language="RO" videoId="489373485/8c7c7e9e3c"  /]
+[/video-vimeo]
+
+
 The `return` operator is used to return a value from inside a function.
 
 Once a `return` operator is executed, **anything after it inside a function doesn't run.**
@@ -22,7 +28,16 @@ You can only use the `return` operator **inside a function.**
 
 If you try to use it outside of a function, **it will throw an error.**
 
-## Using the Return Values
+[/slide]
+
+[slide]
+# Using the Return Values
+
+[vimeo-video]
+[stream language="EN" videoId="489373490/e62d49a36f" default /]
+[stream language="RO" videoId="489373490/e62d49a36f"  /]
+[/video-vimeo]
+
 
 Return value can be:
 
@@ -43,7 +58,17 @@ const total = getPrice() * quantity * 1.20;
 ``` js
 multiply(getMax(5,10), 20);
 ```
-## Returning Values: Examples
+
+[/slide]
+
+[slide]
+# Returning Values: Examples
+
+[vimeo-video]
+[stream language="EN" videoId="489373540/c9dcb0e5e4" default /]
+[stream language="RO" videoId="489373540/c9dcb0e5e4"  /]
+[/video-vimeo]
+
 
 - Check if **array index** is valid:
 
@@ -73,13 +98,20 @@ function pass(grade) {
 
 [slide]
 # Nested Functions
-[image assetsSrc="Nested-Functions.png" /]
+
+[vimeo-video]
+[stream language="EN" videoId="489373544/4848ba2e9e" default /]
+[stream language="RO" videoId="489373544/4848ba2e9e"  /]
+[/video-vimeo]
+
 
 With a nested function, **the inner function** operates within the scope of the outer function.
 
 The inner fuction **can access** the outer function's variables and arguments.
 
 **BUT outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
+
+[image assetsSrc="Nested-Functions.png" /]
 
 ## Example
 
