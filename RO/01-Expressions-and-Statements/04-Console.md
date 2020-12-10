@@ -131,9 +131,9 @@ function printSum(firstNum, secondNum) {
 printSum(5, 10);
 console.log(firstNum);
 ```
-[/diapozitiv]
+[/slide]
 
-[diapozitiv]
+[slide]
 # Formatarea ieșirii
 
 [vimeo-video]
@@ -167,9 +167,9 @@ console.log(`Hi, ${name}`);
 ```
 Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **string interpolation**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
 
-[/diapozitiv]
+[/slide]
 
-[diapozitiv]
+[slide]
 # Citirea numerelor
 
 [vimeo-video]
@@ -202,10 +202,10 @@ function example(input){
 Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală cu 3:
 
 [image assetsSrc="expressions-and-statements-example.png" /]
-[/diapozitiv]
+[/slide]
 
 
-[diapozitiv]
+[slide]
 # Problemă: Greeting
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
