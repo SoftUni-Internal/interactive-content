@@ -3,6 +3,11 @@
 [slide]
 # Naming Functions
 
+[vimeo-video]
+[stream language="EN" videoId="489373649/847cb6caf0" default /]
+[stream language="RO" videoId="489373649/847cb6caf0"  /]
+[/video-vimeo]
+
 - Function names should **describe their task** in a **clear** and **unambigious** way
  - Their names should be **meaningful and not very long**
  - Should answer the question: "**What does this function do?**"
@@ -43,6 +48,12 @@ p, p1, p2, populate, LastName, lastName
 [slide]
 
 # Best Function Practices
+
+[vimeo-video]
+[stream language="EN" videoId="489373682/d2ab7caa52" default /]
+[stream language="RO" videoId="489373682/d2ab7caa52"  /]
+[/video-vimeo]
+
 
  - Each function should perform a **single**, well-defined task.
  - **Avoid long functions**, **split** them into **several shorter ones**.
@@ -87,6 +98,12 @@ function sum()
 
 [slide]
 # Problem: Simple Calculator
+
+[vimeo-video]
+[stream language="EN" videoId="489373707/dfc94da2ab" default /]
+[stream language="RO" videoId="489373707/dfc94da2ab"  /]
+[/video-vimeo]
+
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -199,6 +216,12 @@ subtract
 
 [slide]
 # Solution: Simple Calculator
+
+[vimeo-video]
+[stream language="EN" videoId="489373791/a1578a4a89" default /]
+[stream language="RO" videoId="489373791/a1578a4a89"  /]
+[/video-vimeo]
+
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

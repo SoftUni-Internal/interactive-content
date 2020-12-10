@@ -95,6 +95,14 @@ function pass(grade) {
 ```
 
 [/slide]
+[slide]
+# Return statement Demo
+
+[vimeo-video]
+[stream language="EN" videoId="489373875/3db9f493f6" default /]
+[stream language="RO" videoId="489373875/3db9f493f6"  /]
+[/video-vimeo]
+[/slide]
 
 [slide]
 # Nested Functions

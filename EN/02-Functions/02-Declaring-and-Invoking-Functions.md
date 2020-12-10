@@ -99,6 +99,15 @@ function printDocument() {
   printContent();
 }
 ```
+[/slide]
+
+[slide]
+# Recursion
+
+[vimeo-video]
+[stream language="EN" videoId="489373783/9258f21dc4" default /]
+[stream language="RO" videoId="489373783/9258f21dc4"  /]
+[/video-vimeo]
 
 We can also invoke a **function** **in its own body (recursion):**
 
@@ -140,6 +149,11 @@ printHeader();
 ```
 
 ## Functions With Parameters
+
+[vimeo-video]
+[stream language="EN" videoId="489373715/065a22dd97" default /]
+[stream language="RO" videoId="489373715/065a22dd97"  /]
+[/video-vimeo]
 
 A function can receive **any number and type of arguments** when invoked:
 
