@@ -81,7 +81,7 @@ function isValid(index, arr) {
   }
 }
 
-console.log(isvalid(3, [1,2,3,4,5]));
+console.log(isValid(3, [1,2,3,4,5]));
 ```
 
 When we're working with arrays it's often used for checking if the **index is valid.**
