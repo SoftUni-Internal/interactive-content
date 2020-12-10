@@ -1,35 +1,38 @@
-[slide]
 # Problem 2: The Lift
-## Description
-Write a program that **finds a place for the tourist on a lift.** 
 
-Every wagon should have a maximum of **4 people on it.**
+[slide]
+# Description
+Write a program that checks for **empty seats on a lift.**
 
-If a wagon is full you should direct the people to the **next one with space available.**
+Each of the cabins of the lift can fit no **more than 4 people.**
+
+If a cabin is full you should direct the people to the next one with available seats.
 
 ## Input
 
-* On the first line you, will receive how many people are waiting to get on the lift
+* On the first line you, will receive the number of people waiting in line to get on the lift.
 
-* On the second line, you will you will receive the current state of the lift separated by ` ` (empty space).
+* On the second line, you will receive the current state of the lift – a string of numbers `(0-4)` each number representing the number of people in each next cabin, separated by an empty space.
 
 ## Output
 
-**When there is no more available space left on the lift,** or **there are no more people in the queue**, you should print on the console the final state of the lift's wagons separated by ` ` (empty space) and one of the following messages:
+When you run out of empty seats, or if there are no more people on the queue you should print out one of the following messages:
 
-* If there are no more people and the lift have empty spots you should print:
+* If there are no more people queueing but there are some seats left on the lift:
 
-`The lift has empty spots!`
+`There is room for more passengers!`
 
-`{wagons separated by ' '}`
+Followed by:
+`{the state of each cabin, separated by ' '}`
 
-* If there are still people on the queue and no more available space, you should print:
+* If there are people left on the queue but no more seats available:
 
-`There isn't enough space! {people} people in a queue!`
+`The lift is full. {people} people currently in line.`
 
-`{wagons separated by ' '}`
+Followed by:
+`{the state of each cabin, separated by ' '}`
 
-* If the lift is full and there are no more people in the queue, you should print only the wagons separated by ` `
+* If the lift is full and there are no more people waiting to get in, you should just print out the state of each cabin separated by a single space.
 
 
 [code-task title="The Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -45,7 +48,7 @@ function solve(input) {
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['15','0 0 0 0 0']`| The lift has empty spaces! |
+|`['15','0 0 0 0 0']`| There is room for more passengers! |
 ||4 4 4 3 0|
 
 ## Comment
@@ -59,7 +62,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`['20','0 2 0']`| There isn't enough space! 10 people in a queue!|
+|`['20','0 2 0']`|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
 ## Comment
@@ -80,7 +83,7 @@ function solve(input) {
 0 2 0 1 3 0 0 0
 [/input]
 [output]
-The lift has empty spots\!
+There is room for more passengers\!
 4 4 4 1 3 0 0 0
 [/output]
 [/test]
@@ -90,7 +93,7 @@ The lift has empty spots\!
 4 4 4 4 4 4 4 4 1 4 4 4
 [/input]
 [output]
-There isn't enough space! 7 people in a queue\!
+The lift is full. 7 people currently in line.
 4 4 4 4 4 4 4 4 4 4 4 4
 [/output]
 [/test]
@@ -100,7 +103,7 @@ There isn't enough space! 7 people in a queue\!
 0 0 4
 [/input]
 [output]
-There isn't enough space\! 12 people in a queue\!
+The lift is full. 12 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -110,7 +113,7 @@ There isn't enough space\! 12 people in a queue\!
 0
 [/input]
 [output]
-The lift has empty spots\!
+There is room for more passengers\!
 2
 [/output]
 [/test]
@@ -129,7 +132,7 @@ The lift has empty spots\!
 0 0 0 0 0 0
 [/input]
 [output]
-The lift has empty spots\!
+There is room for more passengers\!
 4 4 4 3 0 0
 [/output]
 [/test]
@@ -139,7 +142,7 @@ The lift has empty spots\!
 0 2 0
 [/input]
 [output]
-There isn't enough space! 10 people in a queue\!
+The lift is full. 10 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -149,7 +152,7 @@ There isn't enough space! 10 people in a queue\!
 0 0 4
 [/input]
 [output]
-There isn't enough space! 12 people in a queue!
+The lift is full. 12 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -159,7 +162,7 @@ There isn't enough space! 12 people in a queue!
 0 2 0 1 3 4
 [/input]
 [output]
-There isn't enough space! 4 people in a queue\!
+The lift is full. 4 people currently in line.
 4 4 4 4 4 4
 [/output]
 [/test]
