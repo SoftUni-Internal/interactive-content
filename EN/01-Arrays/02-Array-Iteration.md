@@ -25,7 +25,7 @@ console.log(capitals.toString())
 [slide]
 # For-of Loop
 
-`for..of` loop is used to iterate over iterable objects it means the objects which are iterable, but cannot access the current index.
+The `for..of` loop is used to iterate over any inerrable object but cannot be used to  access the their indexes. 
 
 ``` js live
 let arr = [1,2,3,4,5,6];
@@ -52,6 +52,7 @@ Write a program which receives an array of elements.
 Your task is to create a new array with `n` numbers, reverse it and print its elements on a single line, space separated.
 
 Where `n` is the  first element of the array.
+
 
 ## Examples
 | **Input** | **Output** |
@@ -319,9 +320,9 @@ function reverce(input){
 [/code-editor]
 [task-description]
 
-Write a program which receives an **array of strings** (space separated values).
+Write a program which receives an array of strings (space separated values).
 
-Your task is to reverse it and print its elements. **Swap** elements.
+Your task is to reverse it and print its elements.**Swap elements.**
 
 ## Examples
 | **Input** | **Output** |

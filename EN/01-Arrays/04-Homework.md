@@ -1,14 +1,4 @@
-[slide]
 # Homework
-
-[image assetsSrc="homeowrk.png" /]
-
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-[/slide]
 
 [slide]
 # Problem: Sum Even Numbers
@@ -534,9 +524,9 @@ function arrayRotation(arr){
 [task-description]
 # Description
 
-Write a function that receives an **array** and **number of rotations** you have to perform (first element goes at the end).
+Write a function that receives an **array** and number of rotations you have to perform (first element goes at the end).
 
-The first element of the input array is the **number of rotations** you have to perform.
+The first element of the input array is the number of rotations you have to perform, so the array you have to perform the actions with starts on the second element of the initial array.
 
 # Output
 
@@ -757,5 +747,11 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+[tasks-results/]
 
 [/slide]
