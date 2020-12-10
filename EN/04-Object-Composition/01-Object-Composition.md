@@ -16,10 +16,10 @@ To access the `location` objects property `lat` we use the following: `student.l
 
 ```js live
 let student = {
-    firstName: 'Maria',
-    lastName: 'Green',
-    age: 22,
-    location: { lat: 52.520, lng: 13.404 }
+    firstName: 'Maria',
+    lastName: 'Green',
+    age: 22,
+    location: { lat: 52.520, lng: 13.404 }
 }
 console.log(student);
 console.log(student.location.lat);
