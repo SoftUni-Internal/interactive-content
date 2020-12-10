@@ -3,6 +3,11 @@
 [slide]
 # Arrow Functions
 
+[vimeo-video]
+[stream language="EN" videoId="489373607/d385422a18" default /]
+[stream language="RO" videoId="489373607/d385422a18"  /]
+[/video-vimeo]
+
 Arrow functions `=>` were introduced with [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
 
 With the new syntax we can often obtain more concise code.
