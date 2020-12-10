@@ -30,7 +30,9 @@ Print:
 
 `You found {amount} bitcoins.`
 
-* Any other input you get means that you are **facing a monster**, the **word at the beginning of the command** will be the monster name and the **number** \- the **damage that the monster deals to you.**
+* Any other input you get means that you are **facing a monster**. 
+
+The **word at the beginning of the command** will be the monster name and the **number** \- the **damage that the monster deals to you.**
 
 Examples: `rat {number}`, `boss {number}`, there could be other types of monster.
 

@@ -1,26 +1,35 @@
-[slide]
 # Problem 2: Inventory
+
+[slide]
 ## Description
-You will receive a journal with some Collecting items, separated with `, ` (comma and space). 
+You will receive a string, containing the current items in your inventory, separated by a comma and a space `, `.
 
-After that, until receiving `Craft!` you will be receiving different commands. 
+After that, until receiving `Craft!` you will be given different commands.
 
-Commands (split by ` - `):
+The commands are separated by ` - `:
 
-* `Collect - {item}`: Receiving this command, you should add the given item in your inventory.
+* Command `Collect - {item}`: 
 
-If the item already exists, you should skip this line.
+Receiving this command, you should add the given item to your inventory.
 
-* `Drop - {item}`: You should remove the item from your inventory, if it exists.
+If the item already exists, you should skip this command.
 
-* `Combine Items - {oldItem}:{newItem}`: You should check if the old item exists, if so, add the new item after the old one. 
+* Command `Drop - {item}`: 
+
+You should remove the item from your inventory, if you have it.
+
+* Command `Combine Items - {oldItem}:{newItem}`: 
+
+You should check if the first item can be found in your inventory, if so, add the new item after the it.
 
 Otherwise, ignore the command.
 
-* `Renew – {item}`: If the given item exists, you should change its position and put it last in your inventory.
+* Command `Renew – {item}`:
+
+If the given item exists, you should change its position and put it in the last position of your inventory.
 
 ## Output
-After receiving `Craft!` print the items in your inventory, separated by `, ` (comma and space).
+After receiving `Craft!` print out all items in your inventory, separated by `, ` a comma and a space.
 
 [code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
