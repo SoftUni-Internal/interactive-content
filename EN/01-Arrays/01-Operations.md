@@ -3,30 +3,30 @@
 [slide]
 # Array Methods
 
-Some operations that work with Arrays require only the bare minimum: values must only be Array-like.
+Some operations that work with Arrays could also function with Array-like values. 
 
-An Array-like value is an object with the following properties:
+An Array-like value is an object that holds the following properties: 
 
 - `.length`: holds the length of the Array-like object.
 
 - `[0]`: holds the element at `index 0` (etc.).
 
-Note that if you use numbers as property names, they are always coerced to strings. 
+Note that if you use numbers to address properties, they are always coerced to strings.
 
-Therefore, `[0]` retrieves the value of the property whose key is `0`.
+Therefore, `[0]` retrieves the value of the property whose key is `0`. 
 
-They have built-in properties and methods, like length.
+Arrays have built-in properties (methods), one of which is `.length`. 
 
-Methods are written with a dot after the variable name:
+Methods are called by placing a dot after the variable name: 
 
 ``` js live
 let nums = [10, 20, 30];
 console.log(nums.length);
 ```
 
-Other examples if methods:
+Other examples of methods:
 
-- `push()`: appending an element is via the Array method
+- `push()`: appending an element at the end of the array 
 
 ``` js live
 let arr = [10, 20, 30];
@@ -35,7 +35,7 @@ arr.push(40, 50);
 console.log(arr);
 ```
 
-- `includes()`: Returns `true` if the receiver has an element whose value is `searchElement` and `false`, otherwise
+- `includes()`: Returns `true` if the array contains the value placed in the brackets  searchElement and `false`, otherwise
 
 ``` js live
 let arr = [10, 20, 30];
@@ -51,7 +51,7 @@ let arr = [10, 20, 30];
 console.log(arr.toString());
 ```
 
-- `join()`: Creates a string by concatenating string representations of all elements, separating them with separator.
+- `join()`: Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator
 
 ``` js live
 let arr = [10, 20, 30];
