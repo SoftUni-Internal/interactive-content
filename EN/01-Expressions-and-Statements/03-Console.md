@@ -190,19 +190,20 @@ public class Program {
 Write a **program**, which:
 * Reads a user input - **name**, from the console
 * Prints "Hello, \{name\}!", where \{name\} is the user input
-# Example
-## Input
-- Peter
-## Output
-- Hello, Peter
+# Example:
+
+| **Input** | **Output** |
+| --- | --- |
+| Peter | Hello, Peter! |
+|  |  |
 [/task-description]
 [tests]
 [test]
 [input]
-John
+Peter
 [/input]
 [output]
-Hello, John
+Hello, Peter!
 [/output]
 [/test]
 [test]
@@ -210,7 +211,7 @@ Hello, John
 Marie
 [/input]
 [output]
-Hello, Marie
+Hello, Marie!
 [/output]
 [/test]
 [test]
@@ -218,7 +219,7 @@ Hello, Marie
 asd
 [/input]
 [output]
-Hello, asd
+Hello, asd!
 [/output]
 [/test]
 [test]
@@ -226,7 +227,7 @@ Hello, asd
 George
 [/input]
 [output]
-Hello, George
+Hello, George!
 [/output]
 [/test]
 [/tests]
@@ -255,22 +256,22 @@ public class Program {
 [task-description]
 # Description
 Write a **program**, which:
+* Reads a user input - **name**, from the console
+* Prints "Hello, \{name\}!", where \{name\} is the user input
+# Example:
 
-  * Reads a user input: **name**, from the console
-  * Prints "Hello, \{name\}", where {**name**} is the **user input**
-# Example
-## Input
-- Peter
-## Output
-- Hello, Peter
+| **Input** | **Output** |
+| --- | --- |
+| Peter | Hello, Peter! |
+|  |  |
 [/task-description]
 [tests]
 [test]
 [input]
-John
+Peter
 [/input]
 [output]
-Hello, John
+Hello, Peter!
 [/output]
 [/test]
 [test]
@@ -278,7 +279,7 @@ Hello, John
 Marie
 [/input]
 [output]
-Hello, Marie
+Hello, Marie!
 [/output]
 [/test]
 [test]
@@ -286,7 +287,7 @@ Hello, Marie
 asd
 [/input]
 [output]
-Hello, asd
+Hello, asd!
 [/output]
 [/test]
 [test]
@@ -294,7 +295,7 @@ Hello, asd
 George
 [/input]
 [output]
-Hello, George
+Hello, George!
 [/output]
 [/test]
 [/tests]
