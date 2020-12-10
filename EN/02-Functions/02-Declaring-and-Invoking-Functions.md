@@ -3,6 +3,11 @@
 [slide]
 # Declaring a Function
 
+[vimeo-video]
+[stream language="EN" videoId="489373256/dbc8412983" default /]
+[stream language="RO" videoId="489373256/dbc8412983"  /]
+[/video-vimeo]
+
 A function is defined by using the keyword `function` followed by the **name of the function** and a set of **parentheses** to hold parameters or values to be recieved by the function.
 
 Functions can be declared in two ways:
@@ -22,6 +27,7 @@ let printText = function(text){
   console.log(text);
 }
 ```
+
 # Functions with parameters
 
 **Arguments** can be passed to the function by enclosing the values in a parentheses after the function name.
@@ -43,6 +49,12 @@ function printText(text){
 [slide]
 # Invoking a Function
 
+[vimeo-video]
+[stream language="EN" videoId="489373258/bc07c2ad58" default /]
+[stream language="RO" videoId="489373258/bc07c2ad58"  /]
+[/video-vimeo]
+
+
 A function is not executed before it is invoked.
 
 A function can be invoked from **everywhere in the scope**, where it is defined.
@@ -60,6 +72,24 @@ Then we can invoke (call) the function by its name:
 ```js
 hLine();
 ```
+# Demo
+
+[vimeo-video]
+[stream language="EN" videoId="489373310/980f876469" default /]
+[stream language="RO" videoId="489373310/980f876469"  /]
+[/video-vimeo]
+
+
+[/slide]
+
+[slide]
+# Invoking a Function from another function
+
+[vimeo-video]
+[stream language="EN" videoId="489373314/21401d79a4" default /]
+[stream language="RO" videoId="489373314/21401d79a4"  /]
+[/video-vimeo]
+
 
 We can also invoke a **function** from **another function:**
 
@@ -85,6 +115,12 @@ A recursion means that **a functions calls itself**.
 
 [slide]
 # Functions and Parameters
+
+[vimeo-video]
+[stream language="EN" videoId="489373376/28ddf53572" default /]
+[stream language="RO" videoId="489373376/28ddf53572"  /]
+[/video-vimeo]
+
 
 We can have a function **with or without** parameters.
 
@@ -136,6 +172,13 @@ If you pass more arguments then **additional arguments will be ignored.**
 
 [slide]
 # Problem: Grades
+
+[vimeo-video]
+[stream language="EN" videoId="489373386/94e32c3892" default /]
+[stream language="RO" videoId="489373386/94e32c3892"  /]
+[/video-vimeo]
+
+
 [code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -213,6 +256,13 @@ Fail
 
 [slide]
 # Solution: Grades
+
+[vimeo-video]
+[stream language="EN" videoId="489373420/6a36318ce6" default /]
+[stream language="RO" videoId="489373420/6a36318ce6"  /]
+[/video-vimeo]
+
+
 [code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -300,6 +350,13 @@ Fail
 
 [slide]
 # Problem: Math Power
+
+[vimeo-video]
+[stream language="EN" videoId="489373435/cb25361ef7" default /]
+[stream language="RO" videoId="489373435/cb25361ef7"  /]
+[/video-vimeo]
+
+
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -390,6 +447,13 @@ Write a function that **calculates** and returns the value of a number **raised 
 
 [slide]
 # Solution: Math Power
+
+[vimeo-video]
+[stream language="EN" videoId="489373438/64f923b0a0" default /]
+[stream language="RO" videoId="489373438/64f923b0a0"  /]
+[/video-vimeo]
+
+
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
