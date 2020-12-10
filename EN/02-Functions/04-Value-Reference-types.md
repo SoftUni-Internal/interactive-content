@@ -2,7 +2,12 @@
 
 [slide]
 
-# Value vs. Reference Types
+# Value and Reference Types
+
+[vimeo-video]
+[stream language="EN" videoId="489373589/a2a27866c0" default /]
+[stream language="RO" videoId="489373589/a2a27866c0"  /]
+[/video-vimeo]
 
 Value types and reference types are the two main categories of JavaScript types
 
@@ -44,5 +49,15 @@ When an object is passed into a method, the called method can change the content
 let cars = ["NIO", "XPang", "Tesla"];
 let obj = {firstName:"Maria", lastName:"Agarici"};
 ```
+
+[/slide]
+
+[slide]
+# Value and Reference Types: Demo
+
+[vimeo-video]
+[stream language="EN" videoId="489373150/9d47a9faca" default /]
+[stream language="RO" videoId="489373150/9d47a9faca"  /]
+[/video-vimeo]
 
 [/slide]
