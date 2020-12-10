@@ -3,6 +3,11 @@
 [slide]
 # What Are Arrays?
 
+[vimeo-video]
+[stream language="EN" videoId="489372251/f2e6e4672e" default /]
+[stream language="RO" videoId="489372251/f2e6e4672e"  /]
+[/video-vimeo]
+
 You already know how to store **single data in one variable.** 
 
 **Arrays** allow us to store **multiple pieces** of data in the same variable. 
@@ -53,6 +58,11 @@ In this example we have **7 elements.**
 [slide]
 # Creating Arrays
 
+[vimeo-video]
+[stream language="EN" videoId="489372249/6743adf4f6" default /]
+[stream language="RO" videoId="489372249/6743adf4f6"  /]
+[/video-vimeo]
+
 There are two ways to create an array: 
 
 Initialize it using **square brackets** `[]`, if no elements are declared, the array will be empty
@@ -94,6 +104,12 @@ console.log(numbers);
 
 [slide]
 # Problem: Sum First and Last Array Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489372302/7905a8f7f5" default /]
+[stream language="RO" videoId="489372302/7905a8f7f5"  /]
+[/video-vimeo]
+
 [code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -209,6 +225,12 @@ Write a function that receives an **array of strings**, **turns them into number
 
 [slide]
 # Solution: Sum First and Last Array Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489372305/43d632bad4" default /]
+[stream language="RO" videoId="489372305/43d632bad4"  /]
+[/video-vimeo]
+
 [code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -324,7 +346,29 @@ Write a function that receives an **array of strings**, **turns them into number
 [/slide]
 
 [slide]
+# Days of Week: Example
+
+[vimeo-video]
+[stream language="EN" videoId="489372340/6ef0de5d43" default /]
+[stream language="RO" videoId="489372340/6ef0de5d43"  /]
+[/video-vimeo]
+
+This is an example of an array containing strings for the different days of the week.
+
+The first element, Monday, is at index 0 of the array.
+
+The first element, Sunday, is at index 6 of the array.
+
+[/slide]
+
+[slide]
 # Problem: Days of Week
+
+[vimeo-video]
+[stream language="EN" videoId="489372347/856f508476" default /]
+[stream language="RO" videoId="489372347/856f508476"  /]
+[/video-vimeo]
+
 [code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -421,6 +465,12 @@ Invalid day!
 
 [slide]
 # Solution: Days of Week
+
+[vimeo-video]
+[stream language="EN" videoId="489372392/785b1fe99f" default /]
+[stream language="RO" videoId="489372392/785b1fe99f"  /]
+[/video-vimeo]
+
 [code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -525,6 +575,11 @@ Invalid day!
 [slide]
 # Arrays of Different Types
 
+[vimeo-video]
+[stream language="EN" videoId="489372393/3a35572b19" default /]
+[stream language="RO" videoId="489372393/3a35572b19"  /]
+[/video-vimeo]
+
 Arrays can hold different types of elements:
 
 Array holding numbers:
@@ -560,8 +615,15 @@ arr.push(50);
 
 console.log(arr); 
 ```
+[/slide]
 
+[slide]
 # JS Arrays and Invalid Positions
+
+[vimeo-video]
+[stream language="EN" videoId="489372453/ea5fcbe683" default /]
+[stream language="RO" videoId="489372453/ea5fcbe683"  /]
+[/video-vimeo]
 
 If we attempt to assign a value to a non-existent index, JS will fill the missing elements with 'undefined' values and increase its size:
 
