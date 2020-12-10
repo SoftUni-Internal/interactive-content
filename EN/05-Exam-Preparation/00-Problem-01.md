@@ -12,7 +12,9 @@ Each command will contain a word and a number, separated by a space.
 
 The command can be:
 
-* Command `potion`: Restores the specified number of health points to your character.
+* Command `potion`: 
+
+Restores the specified number of health points to your character.
 
 The health points **cannot exceed 100.**
 
@@ -24,7 +26,9 @@ And after that, print your current health:
 
 `Current health: {health} hp.`
 
-* Command `chest`: You have found bitcoins add this number to the value of your current bitcoins.
+* Command `chest`: 
+
+You have found bitcoins add this number to the value of your current bitcoins.
 
 Print:
 
@@ -48,7 +52,9 @@ You should **decrease you champion's health** points by the damage that each mon
 
 **And your quest is over.**
 
-Print the number of the last room you have managed to reach: `Highest level reached: {last room}.`.
+Print the number of the last room you have managed to reach: 
+
+`Highest level reached: {last room}.`.
 
 If you **managed to go through all the rooms in the dungeon**, print on the next three lines:
 
@@ -57,7 +63,6 @@ If you **managed to go through all the rooms in the dungeon**, print on the next
 `Bitcoins: {bitcoins}`
 
 `Health: {health}`
-
 
 ## Input
 A string, separated by a vertical bar `|`.
