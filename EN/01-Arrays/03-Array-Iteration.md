@@ -30,11 +30,9 @@ console.log(capitals.toString())
 [slide]
 # For-of Loop
 
-## This video should be seprated.
-
 [vimeo-video]
-[stream language="EN" videoId="489372665/d1efc1a241" default /]
-[stream language="RO" videoId="489372665/d1efc1a241"  /]
+[stream language="EN" videoId="489453701/2693aea66c" default /]
+[stream language="RO" videoId="489453701/2693aea66c"  /]
 [/video-vimeo]
 
 The `for..of` loop is used to iterate over any inerrable object but cannot be used to  access the their indexes. 
