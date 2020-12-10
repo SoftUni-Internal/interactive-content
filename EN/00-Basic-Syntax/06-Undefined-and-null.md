@@ -2,13 +2,13 @@
 
 [slide]
 
+
+# Undefined
+
 [vimeo-video]
 [stream language="EN" videoId="489371807/542891a72e" default /]
 [stream language="RO" videoId="489371807/542891a72e"  /]
 [/video-vimeo]
-
-
-## Undefined
 
 [image assetsSrc="Undefined-Null.png" /]
 
@@ -36,12 +36,13 @@ console.log(car);
 
 [slide]
 
+
+# Null
+
 [vimeo-video]
 [stream language="EN" videoId="489371851/d2a4d15a1e" default /]
 [stream language="RO" videoId="489371851/d2a4d15a1e"  /]
 [/video-vimeo]
-
-## Null
 
 Null is an object type, which can be used for any variable that holds an object which we do not want to be undefined.
 
@@ -65,13 +66,13 @@ console.log(typeof(person));
 
 [slide]
 
+# Null and Undefined
+
 [vimeo-video]
 [stream language="EN" videoId="489371864/d1eeb434fb" default /]
 [stream language="RO" videoId="489371864/d1eeb434fb"  /]
 [/video-vimeo]
 
-
-## Null and Undefined
 
 **Null** is a value that we set and we know that there is nothing inside, ie. we set the value null explicitly.
 

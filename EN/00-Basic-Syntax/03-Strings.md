@@ -1,12 +1,14 @@
 [slide]
 
+
+
+# What is a String?
+
 [vimeo-video]
 [stream language="EN" videoId="489371415/8a09c2cbb3" default /]
 [stream language="RO" videoId="489371415/8a09c2cbb3"  /]
 [/video-vimeo]
 
-
-# What is a String?
 
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
@@ -28,14 +30,16 @@ console.log(myString.length);
 
 [slide]
 
+
+
+
+# Strings Are Immutable
+
 [vimeo-video]
 [stream language="EN" videoId="489371418/250eaf629b" default /]
 [stream language="RO" videoId="489371418/250eaf629b"  /]
 [/video-vimeo]
 
-
-
-# Strings Are Immutable
 
 Keep in mind that we can only take the individual elements of the string, but we can not change the elements inside the string.
 
@@ -58,12 +62,14 @@ We know we can change the **data held by a variable**, but we can't change symbo
 
 [slide]
 
+
+
+# String Interpolation
+
 [vimeo-video]
 [stream language="EN" videoId="489371467/900551de56" default /]
 [stream language="RO" videoId="489371467/900551de56"  /]
 [/video-vimeo]
-
-# String Interpolation
 
 Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
 
@@ -80,11 +86,14 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [slide]
 
 
+
+# Problem: Concantenate Names
+
 [vimeo-video]
 [stream language="EN" videoId="489371465/3ddd050862" default /]
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
-# Problem: Concantenate Names
+
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -175,12 +184,15 @@ JanpWhite
 
 [slide]
 
+
+
+# Solution: Concantenate Names
+
 [vimeo-video]
 [stream language="EN" videoId="489371497/73837bd2a6" default /]
 [stream language="RO" videoId="489371497/73837bd2a6"  /]
 [/video-vimeo]
 
-# Solution: Concantenate Names
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -276,11 +288,14 @@ JanpWhite
 [slide]
 
 
+
+# Problem: Right Place
+
 [vimeo-video]
 [stream language="EN" videoId="489371500/1d3c01f1f7" default /]
 [stream language="RO" videoId="489371500/1d3c01f1f7"  /]
 [/video-vimeo]
-# Problem: Right Place
+
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -375,13 +390,15 @@ Not Matched
 
 [slide]
 
+
+
+
+# Solution: Right Place
+
 [vimeo-video]
 [stream language="EN" videoId="489371554/f8c9ad29ff" default /]
 [stream language="RO" videoId="489371554/f8c9ad29ff"  /]
 [/video-vimeo]
-
-
-# Solution: Right Place
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

@@ -1,12 +1,13 @@
 [slide]
 
+
+# What is a Boolean?
+
 [vimeo-video]
 [stream language="EN" videoId="489371680/3568705290" default /]
 [stream language="RO" videoId="489371680/3568705290"  /]
 [/video-vimeo]
 
-
-# What is a Boolean?
 
 Boolean values ​​are named after [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician.
 
@@ -29,13 +30,15 @@ Boolean comparisons are most often put in `if` construction, we can also return 
 
 [slide]
 
+
+
+
+# Comparisons and Conditions
+
 [vimeo-video]
 [stream language="EN" videoId="489371693/bb15d255c4" default /]
 [stream language="RO" videoId="489371693/bb15d255c4"  /]
 [/video-vimeo]
-
-
-# Comparisons and Conditions
 
 Examples of comparison operators:
 
@@ -79,11 +82,11 @@ if (number) {
 [slide]
 # True and False
 
-
 [vimeo-video]
 [stream language="EN" videoId="489371697/c3dbb010c9" default /]
 [stream language="RO" videoId="489371697/c3dbb010c9"  /]
 [/video-vimeo]
+
 
 In addition to `true` and `false`, JavaScript has `truthy` and `falsy` (sometimes written `falsey`). 
 
@@ -164,13 +167,16 @@ It is always better to be **explicit** so as not to be ambiguous.
 
 [slide]
 
+
+
+
+# Problem: Amazing Numbers
+
 [vimeo-video]
 [stream language="EN" videoId="489371745/0d75d93049" default /]
 [stream language="RO" videoId="489371745/0d75d93049"  /]
 [/video-vimeo]
 
-
-# Problem: Amazing Numbers
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -282,13 +288,15 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 [slide]
 
+
+
+# Solution: Amazing Numbers
+
 [vimeo-video]
 [stream language="EN" videoId="489371747/54fbdf1eb2" default /]
 [stream language="RO" videoId="489371747/54fbdf1eb2"  /]
 [/video-vimeo]
 
-
-# Solution: Amazing Numbers
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -408,14 +416,16 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 [slide]
 
-[vimeo-video]
-[stream language="EN" videoId="489371799/fe15836811" default /]
-[stream language="RO" videoId="489371799/fe15836811"  /]
-[/video-vimeo]
+
 
 
 
 # The Typeof operator
+
+[vimeo-video]
+[stream language="EN" videoId="489371799/fe15836811" default /]
+[stream language="RO" videoId="489371799/fe15836811"  /]
+[/video-vimeo]
 
 JavaScript itself provides an operator called `typeof` for everything that works in a straightforward way.
 

@@ -1,12 +1,16 @@
 [slide]
 
 
+
+
+# What is a Data Type?
+
 [vimeo-video]
 [stream language="EN" videoId="489371369/e56b1d1bdf" default /]
 [stream language="RO" videoId="489371369/e56b1d1bdf"  /]
 [/video-vimeo]
 
-# What is a Data Type?
+
 Data types inform the computer how much information to read **from memory** purely technically.
 
 In Javascipt we can **change** the content of variables. 
@@ -47,13 +51,13 @@ let unknown = undefined;				 // Undefined
 
 [slide]
 
+
+# Dynamic Typing
+
 [vimeo-video]
 [stream language="EN" videoId="489371371/38ee98e956" default /]
 [stream language="RO" videoId="489371371/38ee98e956"  /]
 [/video-vimeo]
-
-
-# Dynamic Typing
 
 Variables in JavaScript are not strictly associated with a particular **value type**.
 

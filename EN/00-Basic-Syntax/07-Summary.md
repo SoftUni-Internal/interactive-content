@@ -1,6 +1,12 @@
 [slide]
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="489371197/487983cf9f" default /]
+[stream language="RO" videoId="489371197/487983cf9f"  /]
+[/video-vimeo]
+
+
 In this lesson you learned:
 - There are **eight data types** in JavaScript: 
     - Number

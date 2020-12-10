@@ -3,13 +3,12 @@
 [slide]
 
 
+# Var and Let
+
 [vimeo-video]
 [stream language="EN" videoId="489371278/6878e454cb" default /]
 [stream language="RO" videoId="489371278/6878e454cb"  /]
 [/video-vimeo]
-
-
-# Var and Let
 
 Different data types have different **sizes** in computer's memory.
 
@@ -76,13 +75,18 @@ We strongly advise you to use `let` when you **declare a variable**, that way yo
 
 [slide]
 
+
+
+
+# Variable Scope
+
+
+
 [vimeo-video]
 [stream language="EN" videoId="489371276/4ac6b52083" default /]
 [stream language="RO" videoId="489371276/4ac6b52083"  /]
 [/video-vimeo]
 
-
-# Variable Scope
 Scope means the **life** of the variable or where the variable is **visible**. 
 
 Outside this scope, variable cannot be accessed.
@@ -137,13 +141,12 @@ The fourth type of scope is the **object scoup**, which is related to the **impl
 
 [slide]
 
+# Naming Variables
+
 [vimeo-video]
 [stream language="EN" videoId="489371334/07bcadb0ba" default /]
 [stream language="RO" videoId="489371334/07bcadb0ba"  /]
 [/video-vimeo]
-
-
-# Naming Variables
 
 When we create a variable, we use `cammelCase`, which means that the variable starts with a **lowercase letter** and each subsequent word is with a c**apital letter**.
 
