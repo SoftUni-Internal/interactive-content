@@ -1,26 +1,25 @@
-[slide]
 # Problem 1: Array Modifier
-## Description
-You are given an array with integers.
 
-Write a program to modify the elements after receive the commands `swap`, `multiply` or `decrease`.
+[slide]
+# Description
+You are given an array of integers.
 
-* `swap {index1} {index2}`: take two elements and swap their places.
+Write a program to modify the array, the possible alterations are: `swap`, `multiply` or `decrease`.
 
-* `multiply {index1} {index2}`: take element at the 1st index and multiply it with element at 2nd index. 
+* `swap {index1} {index2}`: take the two elements and swap their places.
 
-Save the product at the 1st index.
+* `multiply {index1} {index2}`: take the number from the first specified index and multiply it by the number at the second one.
 
-* `decrease`: decreases all elements in the array with 1.
+Save the product of the two at the index, where the first number was.
 
-
+* `decrease`: decreases all elements in the array by 1.
 
 ## Input
-On the first input line you will be given the initial array values separated by a single space.
+On the first input line you will be given the initial array values, separated by a single space.
 
-On the next lines you will receive commands until you receive the command `end`. 
+On the next lines you will be getting commands until you receive the command end.
 
-The commands are as follow: 
+The commands could be
 
 * `swap {index1} {index2}`
 
@@ -30,17 +29,17 @@ The commands are as follow:
 
 
 ## Output
-The output should be printed on the console and consist element of the modified array – separated by `, ` (comma and single space).
+The final form of the array should be printed out on the console, with each of its elements separated by a comma and a space `, ` (comma and single space).
 
 ## Constraints
 
-* Commands will be: `swap`, `multiply` or `decrease` and `end
+* The commands are limited to: `swap`, `multiply` or `decrease` and `end`
 
-* Elements of the array will be integer numbers in the range `[-231...231]`
+* All elements of the array will be integer numbers in the range `[-231...231]`
 
-* Count of the array elements will be in the range `[2...100]`
+* The number of elements in the array will be in the range `[2...100]`
 
-* Indexes will be always in the range of the array
+* Indexes will always be inside the range of the array
 
 
 
@@ -66,27 +65,27 @@ The initial state of the array: `23 -2 321 87 42 90 -123`
 
 * `swap 1(-2)` and `3(87)`
 
-The state array after the first command: `23 87 321 -2 42 90 -123`
+The state of the array after the first command: `23 87 321 -2 42 90 -123`
 
 * `swap 3(-2)` and `6(-123)` 
 
-The state array after the second command: `23 87 321 -123 42 90 -2`
+The state of the array after the second command: `23 87 321 -123 42 90 -2`
 
 * `swap 1(87)` and `0(23)`
 
-The state array after the third command: `87 23 321 -123 42 90 -2`
+The state of the array after the third command: `87 23 321 -123 42 90 -2`
 
 * `multiply 1(23) 2(321) = 7383`
 
-The state array after the fourth command: `87 7383 321 -123 42 290 -2`
+The state of the array after the fourth command: `87 7383 321 -123 42 290 -2`
 
 * `multiply 2(321) 1(7383) = 2369943` 
 
-The state array after the fifth command: `87 7383 2369943 -123 42 90 -2`
+TThe state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
 
 * `decrease – all - 1`
 
-The state array after the sixth command: `86 7383 2369942 -124 41 89 -3`
+TThe state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
 
 
 | **Input** | **Output** |
