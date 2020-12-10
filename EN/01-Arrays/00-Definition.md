@@ -3,73 +3,73 @@
 [slide]
 # What Are Arrays?
 
-You already know how to store **single data in one variable**. 
+You already know how to store **single data in one variable.** 
 
-**Array** allow us to store **multiple data**, again, in only **one variable**.
+**Arrays** allow us to store **multiple pieces** of data in the same variable. 
 
-An array is a **collection** which is **ordered** and **changeable**.
+An array is an **ordered collection** and the data inside it can be modified. 
 
-Lists are useful for **preserving** a sequence of **data** and **iterating** over it.
+It can be used for **keeping data sequences and iterating** over them. 
 
-They are enclosed in **square brackets** and the values inside it are **separated by a comma**.
+To declare an array, we place the values that it should hold in square brackets, each element of the array should be separated by a comma. 
 
-Creating an array of numbers:
+Creating an array of strings: 
 
 ```js
 let fruit = ["apple", "pear", "cherry"];
 ```
 
-A **single array** can contain variables of **different data types**, for example integers, strings, etc.
+Arrays can contain variables of **different data types**, integers, strings, boolean etc. 
 
-Also, **duplicate** values **can** be stored in it.
+Also, **duplicate** values **can** be stored in it. 
 
 ```js
 let myArray = ["string", 2, 3.33, 2, true];
 ```
 
-The values in an array are called **elements**.
+The values in an array are called **elements.** 
 
-Imagine a **train** which has **wagons**, and each wagon - **passengers**.
+You could think of it as a **train**, each wagon of which **may contain a different type and number of objects**: passengers, cargo, raw materials, the wagon might even be empty. 
 
-Now imagine this as an **array of integers**, **each element** represent a **wagon** and its **value** is the **passengers**.
+Now let us **imagine an array of integers**, each element representing a wagon and each value is the number of passengers. 
 
-Take a look at this picture:
+As in this graphical representation: 
 [image assetsSrc="array-example.png" /]
 
-There are **7 wagons** (**elements**). 
+This one has **7 wagons** (**elements**). 
 
-Each has **passengers** (**a value**)
+Each one has **passengers in it** (a value) 
 
 - `[3, 4, 10, 7, 5, 0, 6]`
 
-Elements are numbered from `0` to `length-1`.
+Array elements are numbered from `0` to `length-1`.
 
-Arrays have **variable size** `Array.length` can be resized.
+By using the `Array.length`method we can get a variable, containing the length of an array.
 
-In this example we have **seven elements**.
+In this example we have **7 elements.**
 
 [/slide]
 
 [slide]
 # Creating Arrays
 
-There are two ways to create a array:
+There are two ways to create an array: 
 
-Initialize it with **square brackets** `[]`, if no elements are declared, the array will be empty
+Initialize it using **square brackets** `[]`, if no elements are declared, the array will be empty
 
 ```js
 let names = [];
 ```
 
-Initialize an array with integer values.
+Initialize an array holding integer values:
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
 ```
 
-When we have an array, we can access each element by index. 
+When we have an array, we can access each element by its index.
 
-The `[n]` operator accesses elements by **index.**
+The `[]` operator is used to access elements of the array by their **index.**
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -78,9 +78,9 @@ console.log(`First number is ${numbers[0]}`);
 console.log(`Last number is ${numbers[numbers.length-1]}`);
 ```
 
-**Assigning values** to the array elements. 
+**We can assign values** to the array elements at a specific index
 
-The **length** holds the number of array elements
+The **length method** can be used to return the number of elements in a string:
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -105,7 +105,7 @@ function sum(input){
 [task-description]
 # Description
 
-Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
@@ -221,7 +221,7 @@ function sum(arr){
 [task-description]
 # Description
 
-Write a function that receives an **array of strings** and prints the sum of **first** and **last** element in that array.
+Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
@@ -336,7 +336,7 @@ function days(input){
 [task-description]
 # Description
 
-Write a program which receives a **number** and prints the corresponding name of the day of week. 
+Write a program which receives a number and prints out the corresponding name of the day of week. 
 
 If the number is NOT a valid day, print `Invalid day!`.
 
@@ -439,7 +439,7 @@ function days(input){
 [task-description]
 # Description
 
-Write a program which receives a **number** and prints the corresponding name of the day of week. 
+Write a program which receives a number and prints out the corresponding name of the day of week. 
 
 If the number is NOT a valid day, print `Invalid day!`.
 
@@ -563,6 +563,8 @@ console.log(arr);
 
 # JS Arrays and Invalid Positions
 
+If we attempt to assign a value to a non-existent index, JS will fill the missing elements with 'undefined' values and increase its size:
+
 ``` js live
 let nums = [10, 20, 30];
 nums[4] = 50; // Will resize the array
@@ -572,7 +574,9 @@ console.log(nums.length);
 console.log(nums[3]);
 ```
 
-Typical erros that we can fase when working with arrays:
+Typical errors that we can face when working with arrays: 
+
+We can actually access indexes which do not exist in the array. 
 
 ``` js live
 let nums = [10, 20, 30];
