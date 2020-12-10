@@ -198,7 +198,7 @@ Write a **program**, which:
 |  |  |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Peter
 [/input]
@@ -266,7 +266,7 @@ Write a **program**, which:
 |  |  |
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Peter
 [/input]
