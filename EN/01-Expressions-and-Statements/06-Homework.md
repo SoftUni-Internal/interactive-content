@@ -1633,8 +1633,8 @@ Print on the console two lines:
 Prices should be formatted to the **second decimal point.**
 
 ## Example
-| Input | | Output |
-| --- | --- | --- |
+| Input |  Output |
+| --- | --- |
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |
 
