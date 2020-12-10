@@ -455,11 +455,11 @@ dsadaffa dd 0 124543 3jkj3
 [code-editor language=javascript]
 ```
 function reverce(input){
-   for (let i = 0; i < arr.length / 2; i++) {
-    let oldElement = arr[i];
-    let previousIndex = arr.length - 1 - i;
-    arr[i] = arr[previousIndex];
-    arr[previousIndex] = oldElement;
+   for (let i = 0; i < input.length / 2; i++) {
+    let oldElement = input[i];
+    let previousIndex = input.length - 1 - i;
+    input[i] = arr[previousIndex];
+    input[previousIndex] = oldElement;
   }
   console.log(arr.join(' '));
 }
