@@ -18,19 +18,20 @@ public class Program {
 ## Description
 Write a program to check a password:
 
-  * Read a string: the password **guess**
-  * Print **"Welcome"** if the password guess is **"s3cr3t!"**
-  * Print **"Wrong password!"** in all other cases 
+  * Read a string: the password **guess**.
+  * Print **"Welcome"** if the password guess is **"s3cr3t!"**.
+  * Print **"Wrong password!"** in all other cases .
 
-## Example
+## Example:
 | **Input** | **Output** |
 | --- | --- |
 | s3cr3t! | Welcome |
+| | |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | qwerty | Wrong password! |
+| | |
 
 [/task-description]
 [tests]
@@ -91,20 +92,21 @@ public class Program {
 ## Description
 Write a program, which checks for hot water: 
 
-  * Read a floating-point number: the water **temperature** (in °C)
-  * Print **"The water is boiling"** if the number **> 100**
-  * Prints **"The water is not hot enough"** in all other cases 
+  * Read a floating-point number: the water **temperature** (in °C).
+  * Print **"The water is boiling"** if the number **> 100**.
+  * Prints **"The water is not hot enough"** in all other cases.
 
   
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 104.8 | The water is boiling |
+| | |
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 29 | The water is not hot enough |
+| | |
 
 [/task-description]
 [tests]
@@ -166,20 +168,21 @@ public class Program {
 ## Description
 Write a program to check for fast / slow speed: 
 
-  * Read the **speed** (a floating-point number)
-  * Print **"Slow"** if the speed **<= 30**
-  * Print **"Fast"** if the speed **> 30**
+  * Read the **speed** (a floating-point number).
+  * Print **"Slow"** if the speed **<= 30**.
+  * Print **"Fast"** if the speed **> 30**.
 
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 30 | Slow |
+| | | 
 
-## Example
 | **Input** | **Output** |
 | --- | --- |
 | 60 | Fast |
+| | | 
 
 [/task-description]
 [tests]
@@ -239,35 +242,38 @@ public class Program {
 [task-description]
 ## Description
 Write a program to calculate the area of different figures:
-  * Reads a string: the figure **type**
-  * Checks if the entered figure is **square**, **rectangle** or **circle**
-  * Reads a number for square and circle or two numbers for rectangle
-    * Numbers will be floating-point
-  * Prints the calculated area **formatted** to the second digit after the decimal point
-  * For unknown figure print **"Unknown figure"**
+  * Reads a string: the figure **type**.
+  * Checks if the entered figure is **square**, **rectangle** or **circle**.
+  * Reads a number for square and circle or two numbers for rectangle.
+    * Numbers will be floating-point.
+  * Prints the calculated area **formatted** to the second digit after the decimal point.
+  * For unknown figure print **"Unknown figure"**.
 
-## Examples
+## Examples:
 
 | **Input** | **Output** |
 | --- | --- |
 | square | 25.00 |
 | 5 |  |
+| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | rectangle | 30.00 |
 | 3 |  |
 | 10 |  |
+| | | 
 
 | **Input** | **Output** |
 | --- | --- |
 | trapezoid | Unknown figure |
+| | | 
 
 | **Input** | **Output** |
 | --- | --- |
 | circle | 19.63 |
 | 2.5 | |
-
+| | | 
 [/task-description]
 [tests]
 [test open]
@@ -364,19 +370,20 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to calculate a ticket price:
+Write a program to **calculate** a ticket price:
 
-  * Read a ticket type: either **student** or **regular**
+  * Read a ticket type: either **student** or **regular**.
   * Print the **price** in the following format "$\{price\}":
-    * The price should be **formatted** to 2nd digit after the decimal point
-  * Student ticket price: **1.00**
-  * Regular ticket price: **1.60**
-  * For invalid type print **"Invalid ticket type!"**
+    * The price should be **formatted** to 2nd digit after the decimal point.
+  * Student ticket price: **1.00**.
+  * Regular ticket price: **1.60**.
+  * For invalid type print **"Invalid ticket type!"**.
   
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | student | $1.00 |
+| | | 
 
 [/task-description]
 [tests]
@@ -453,10 +460,10 @@ public class Program {
 ## Description
 Write a program to calculate the drink price in a coffee shop:
 
-  * Read a drink: either **"coffee"** or **"tea"**
-  * Read an extra: either **"sugar"** or **"no"**
-  * Print the price in format `"Final price: ${price}"`
-    * The price should be **formatted** to 2nd digit after the decimal point
+  * Read a drink: either **"coffee"** or **"tea"**.
+  * Read an extra: either **"sugar"** or **"no"**.
+  * Print the price in format `"Final price: ${price}"`.
+    * The price should be **formatted** to 2nd digit after the decimal point.
   
 Prices:
 
@@ -469,12 +476,14 @@ Prices:
 | --- | --- |
 | coffee | Final price: $1.40 |
 | sugar |  |
+| | |
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | tea | Final price: $0.60 |
 | no |  |
+| | |
 
 [/task-description]
 [tests]
@@ -557,18 +566,19 @@ public class Program {
 ## Description
 Write a program to check if a triangle is valid by its sizes:
 
-  * Read 3 integers: the **sides of a triangle**
-  * Checks if each side is less than the sum of the others 2
-    * Prints **"Valid Triangle"** if the above condition is met
-    * Prints **"Invalid Triangle"** otherwise 
+  * Read 3 integers: the **sides of a triangle**.
+  * Checks if each side is less than the sum of the others 2.
+    * Prints **"Valid Triangle"** if the above condition is met.
+    * Prints **"Invalid Triangle"** otherwise.
 
     
-## Example
+## Example:
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Valid Triangle |
 | 4 |  |
 | 5 |  |
+| | |
 
 [/task-description]
 [tests]
@@ -656,10 +666,10 @@ The entrance is read from the console and consists of exactly 4 rows:
 The following should be printed on the console: 
 -  If the wine produced is less than necessary:
     - "It will be a tough winter! More \{unattainable wine\} liters wine needed."
-        - The result must be rounded to a lower integer
+        - The result must be rounded to a lower integer.
 - If the wine produced is more than or equal to necessary:
     - "Good harvest this year! Total wine: \{Total wine\} liters."
-        - The result must be rounded to a lower integer
+        - The result must be rounded to a lower integer.
     -  "\{remaining wine\} liters left -> \{wine for 1 worker\} liters per person."
         - Both results must be rounded to the higher integer
 
@@ -670,6 +680,7 @@ The following should be printed on the console:
 | 2 | 33 liters left -> 11 liters per person. |
 | 175 | |
 | 3 | |
+| | |
 
 ### Comments
 - Total Grapes: 650 \* 2 = 1300
@@ -684,6 +695,7 @@ The following should be printed on the console:
 | 1.5 | |
 | 425 | |
 | 4 | |
+| | |
 
 [/task-description]
 [tests]
@@ -854,17 +866,20 @@ The result should be **formatted to the third decimal point**.
 | rectangle | 17.500|
 | 7| |
 | 2.5| |
+| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | circle| 113.097|
 | 6| |
+| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | triangle | 45.000|
 | 4.5| |
 | 20| |
+| | |
 [/task-description]
 [tests]
 [test open]
@@ -977,16 +992,18 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 - The hours should be formatted **without leading zero**.
 - The minutes should be formatted **with leading zero**.
 
-## Example
+## Example:
 | **Input** | **Output** |
 | --- | --- |
 | 11 | 11:23|
 | 08 | |
+| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | 1 | 2:01 | 
 | 46 | |
+| | |
 [/task-description]
 [tests]
 [test open]
@@ -1136,10 +1153,12 @@ Write a program that reads an integer from the console and prints **day of the w
 | **Input** | **Output** |
 | --- |  --- |
 | 2 | Tuesday |
+| | |
 
 | **Input** | **Output** |
 | --- | --- |
 | -1 | Error |
+| | |
 [/task-description]
 [tests]
 [test open]
@@ -1253,7 +1272,7 @@ Write a program that prints the **type** of an animal according to its **name**.
 - **crocodile, tortoise, snake -> reptile**
 - **others -> unknown**
 
-## Example
+## Example:
 
 | **Input** | **Output** |
 | --- | | --- |
@@ -1361,9 +1380,9 @@ Read **five** lines from the console:
 ## Output
 Print on the console a **single** line:
 - If the left food **IS enough**:
-  - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**
+  - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**.
 - If the left food **IS NOT enough**:
-  - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**
+  - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**.
 
 ## Example
 | **Input**  | **Output** |
