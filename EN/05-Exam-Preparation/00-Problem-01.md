@@ -1,45 +1,54 @@
-[slide]
 # Problem 1: Mu Online
-## Description
-You have initial health 100 and initial bitcoins 0. You will be given a string, representing the dungeons rooms. Each room is separated with `|` (vertical bar): `room1|room2|room3…`
 
-Each room contains a command and a number, separated by space. 
+[slide]
+# Description
+Your character starts with a **100 health points** and **0 bitcoins.**
+
+You will be given a string, **representing different occurrences**, that you have to process.
+
+Each command is **separated** by a vertical bar `|`.
+
+Each command will contain a word and a number, separated by a space.
 
 The command can be:
 
-* `potion`: You are healed with the number in the second part.
+* Command `potion`: Restores the specified number of health points to your character.
 
-But your health **cannot exceed your initial health (100).**
+The health points **cannot exceed 100.**
 
-First print: 
+After successfully taking a potion, print:
 
-`You healed for {amount} hp.`
+`Healed: {amount} hp.`
 
-After that, print your current health:
+And after that, print your current health:
 
 `Current health: {health} hp.`
 
-* `chest`: You've found some bitcoins, the number in the second part.
+* Command `chest`: You have found bitcoins add this number to the value of your current bitcoins.
 
-Print: 
+Print:
 
 `You found {amount} bitcoins.`
 
-* In any other case you are facing a monster, you are going to fight. 
+* Any other input you get means that you are **facing a monster**, the **word at the beginning of the command** will be the monster name and the **number** \- the **damage that the monster deals to you.**
 
-The second part of the room, contains the attack of the monster. 
+Examples: `rat {number}`, `boss {number}`, there could be other types of monster.
 
-You should remove the monster's attack from your health. 
+You should **decrease you champion's health** points by the damage that each monster deals to them.
 
-* If you are not dead (health \<\= 0) you've slain the monster, and you should print" 
+* If you are not dead (health <= 0) you have defeated the monster, and you should print out:
 
-`You slayed {monster}.`
+`You defeated a {monster}.`
 
-* If you've died, print `You died! Killed by {monster}.` and your quest is over. 
+* If you have died the expected output is:  
 
-Print the best room you've manage to reach: `Best room: {room}`.
+`You died! Killed by {monster}.`
 
-If you managed to go through all the rooms in the dungeon, print on the next three lines: 
+**And your quest is over.**
+
+Print the number of the last room you have managed to reach: `Highest level reached: {last room}.`.
+
+If you **managed to go through all the rooms in the dungeon**, print on the next three lines:
 
 `You've made it!`
 
@@ -49,10 +58,10 @@ If you managed to go through all the rooms in the dungeon, print on the next thr
 
 
 ## Input
-You receive a string, representing the dungeons rooms, separated with `|` (vertical bar): `room1|room2|room3…`.
+A string, separated by a vertical bar `|`.
 
 ## Output
-Print the corresponding messages, described above.
+Print the corresponding messages, as shown in the description.
 
 [code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -66,23 +75,23 @@ function solve(input) {
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000']`| You slayed rat.|
-||You slayed bat.|
+|`['rat 10|bat 20|potion 10|rat 10|chest 100|boss 70|chest 1000']`| You defeated a rat.|
+||You defeated a bat.|
 ||You healed for 10 hp.|
 ||Current health: 80 hp.|
-||You slayed rat.|
+||You defeated a rat.|
 ||You found 100 bitcoins.|
 ||You died! Killed by boss.|
-||Best room: 6|
+||Highest level reached: 6|
 
 | **Input** | **Output** |
 | --- | --- |
-|`[cat 10|potion 30|orc 10|chest 10|snake 25|chest 110]`| You slayed cat.|
+|`[cat 10|potion 30|orc 10|chest 10|snake 25|chest 110]`| You defeated a cat.|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
-||You slayed orc.|
+||You defeated a orc.|
 ||You found 10 bitcoins.|
-||You slayed snake.|
+||You defeated a snake.|
 ||You found 110 bitcoins.|
 ||You've made it!|
 ||Bitcoins: 120|
@@ -96,8 +105,8 @@ function solve(input) {
 rat 10\|bat 20
 [/input]
 [output]
-You slayed rat.
-You slayed bat.
+You defeated a rat.
+You defeated a bat.
 You've made it!
 Bitcoins: 0
 Health: 70
@@ -108,10 +117,10 @@ Health: 70
 rat 10\|bat 20\|cat 30\|dog 39
 [/input]
 [output]
-You slayed rat.
-You slayed bat.
-You slayed cat.
-You slayed dog.
+You defeated a rat.
+You defeated a bat.
+You defeated a cat.
+You defeated a dog.
 You've made it!
 Bitcoins: 0
 Health: 1
@@ -122,11 +131,11 @@ Health: 1
 rat 10\|bat 20\|cat 30\|dog 40
 [/input]
 [output]
-You slayed rat.
-You slayed bat.
-You slayed cat.
+You defeated a rat.
+You defeated a bat.
+You defeated a cat.
 You died! Killed by dog.
-Best room: 4
+Highest level reached: 4
 [/output]
 [/test]
 [test]
@@ -160,7 +169,7 @@ Health: 100
 cat 40\|potion 30
 [/input]
 [output]
-You slayed cat.
+You defeated a cat.
 You healed for 30 hp.
 Current health: 90 hp.
 You've made it!
@@ -173,7 +182,7 @@ Health: 90
 cat 10\|potion 30
 [/input]
 [output]
-You slayed cat.
+You defeated a cat.
 You healed for 10 hp.
 Current health: 100 hp.
 You've made it!
@@ -186,7 +195,7 @@ Health: 100
 dog 10\|potion 30
 [/input]
 [output]
-You slayed dog.
+You defeated a dog.
 You healed for 10 hp.
 Current health: 100 hp.
 You've made it!
@@ -199,15 +208,15 @@ Health: 100
 a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
 [/input]
 [output]
-You slayed a.
-You slayed b.
+You defeated a a.
+You defeated a b.
 You healed for 10 hp.
 Current health: 80 hp.
-You slayed c.
+You defeated a c.
 You found 10 bitcoins.
 You found 1000 bitcoins.
 You died! Killed by d.
-Best room: 7
+Highest level reached: 7
 [/output]
 [/test]
 [test]
@@ -215,18 +224,18 @@ Best room: 7
 cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
 [/input]
 [output]
-You slayed cat.
+You defeated a cat.
 You healed for 10 hp.
 Current health: 100 hp.
-You slayed orc.
+You defeated a orc.
 You found 10 bitcoins.
-You slayed snake.
+You defeated a snake.
 You found 110 bitcoins.
 You found 100 bitcoins.
 You healed for 35 hp.
 Current health: 100 hp.
 You died! Killed by DRAGON.
-Best room: 9
+Highest level reached: 9
 [/output]
 [/test]
 [/tests]
