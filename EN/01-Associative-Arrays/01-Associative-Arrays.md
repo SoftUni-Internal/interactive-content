@@ -4,13 +4,13 @@
 
 # What is an Associative Array?
 
-The whole of the JavaScript language is built on one central data structure - the associative array.
+The JavaScript language is built on one central data structure - the associative array.
 
-Associative arrays are basically objects in JavaScript where indexes are replaced by user defined keys.
+Associative arrays in JavaScript are objects in which, the indexes are replaced by user defined keys.
 
-They do not have a length property like normal array and cannot be iterated using normal for loop.
+They do not have a **length** property like normal array and cannot be iterated using normal for loop.
 
-Arrays are indexed by **string keys** and they hold a set of pairs **key** and **value**.
+Arrays are indexed by **string keys**. They consist of a **key** and a **value**.
 
 The **key** is a **string**. The **value** can be of **any** type.
 
@@ -28,40 +28,40 @@ An associative array in JavaScript is just an object, so we can declare it dynam
 
 Let us declare and initialize one:
 
-In this example `one` is the **key** and number `1` is the corresponding **value**.
+In this example "one" is the **key** and the number 1 is the corresponding **value**.
 
 ```js
 let assocArr = { one: 1 };
 ```
 
-Valid ways to access values through keys.
+You can access the values through their keys.
 
-`"four"` is the **key** and number `4` is the corresponding **value**.
+In this example "four" is the **key** and the number 4 is the corresponding **value**.
 
 ```js
 assocArr["four"] = 4;
 ```
 
-`five` is the **key** and number `5` is the corresponding **value**.
+Here, "five" is the **key** and 5 is the corresponding **value**.
 
 ```js
 assocArr.five = 5;
 ```
 
-In this example we declare and initialize the **key** first, and after that we use it to assign a **value** to it.
+Here is how we declare and initialize the **key** first, and after that use it to assign a **value** to it.
 
 ```js
 let key = "six";
 assocArr[key] = 6;
 ```
 
-## Using for-in loop
+## Using a for-in loop
 
-We can use **for-in** loop to iterate through the keys.
+We can use a **for-in** loop to iterate through the keys.
 
-First we declare an empty object. Then we assign values to the keys and finally we iterate through the keys using for in loop.
+Declare an empty object. Then assign values to the keys and finally, iterate through the keys using a for-in loop.
 
-You can see the result below:
+As shown below:
 
 ```js live
 let assocArr = {};
@@ -93,17 +93,17 @@ function solve(input){
 
 # Description
 
-Write a function that stores information about a **person’s name** and his **phone number**.
+Write a function that stores information about a **person’s name** and their **phone number**.
 
-The input comes as an **array of strings**.
+The input comes in the form of an **array of strings**.
 
-Each string contains the name and the number.
+Each string contains a name and a number.
 
 If you receive the same name twice just replace the number.
 
 At the end print the result **without sorting it**.
 
-Try using an **associative array**.
+Use an **associative array**.
 
 # Example
 
@@ -226,17 +226,17 @@ function solve(input) {
 
 # Description
 
-Write a function that stores information about a **person’s name** and his **phone number**.
+Write a function that stores information about a **person’s name** and their **phone number**.
 
-The input comes as an **array of strings**.
+The input comes in the form of an **array of strings**.
 
-Each string contains the name and the number.
+Each string contains a name and a number.
 
 If you receive the same name twice just replace the number.
 
 At the end print the result **without sorting it**.
 
-Try using an **associative array**.
+Use an **associative array**.
 
 # Example
 
@@ -342,7 +342,7 @@ We can use the following expression to check if a **key** is **present**.
 
 Use the method `.hasOwnProperty("key")`
 
-Let us declare an empty object and assign a key to it. Use if statement and the expression from above to see if the key exists.
+Let us declare an empty object and assign a key to it. Use an if statement and the expression from above to see if the key exists.
 
 The result should be "true".
 
@@ -356,9 +356,9 @@ if (assocArr.hasOwnProperty("name")) {
 }
 ```
 
-Removing entires is done by the keyword `delete`. First declare an empty object and assign a key to.
+Removing entires is done using the keyword `delete`. To test that , we will declare an empty object and assign a key to it.
 
-Next delete the key. The output will be an empty object as you can see from the example.
+Next, we will delete the key. The output is an empty object as you can see from the example.
 
 ```js live
 let assocArr = {};
@@ -367,9 +367,9 @@ delete assocArr.name;
 console.log(assocArr);
 ```
 
-If you try to access a key that doesn't exist then you will get the result **undefined**.
+If you try to access a key that does not exist then you will get the result **undefined**.
 
-Try to `console.log()` `assocArr.name` after deleting the property `name`.
+Try to `console.log()` `assocArr.name` after deleting the `name` property.
 
 See the example below.
 
@@ -382,15 +382,15 @@ console.log(assocArr.name);
 
 You can also use somethig called destructuring. 
 
-The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into separate values.
 
 The `Object.entries()` method returns an array of arrays of a given object's own `[ key , value ]` pairs.
 
-In the for of loop we declare our **key** and **value** variables.
+In the for-of loop in the example below we declare our **key** and **value** variables.
 
-After destructuring in the first iteration `key` will be equal to `name` and `value` will be equal to "John Smith".
+After the first iteration `key` variable will be equal to name and `value` variable will be equal to "John Smith".
 
-In the second iteration of the loop `key` will be equal to `age` and `value` will be equal to `28`.
+On the second iteration of the loop `key` will be equal to age and `value` will be equal to 28.
 
 ```js live
 let assocArr = {};
@@ -421,13 +421,17 @@ function solve(input){
 
 # Description
 
-Write a function that reads **weekdays** and **names**.
+Write a function that receives **weekdays** and **names** as input.
 
-Print a **success** message for every successful appointment.
+Print a message for every successful appointment in the following format.
 
-If the same weekday occurs a second time, print **conflict**.
+`Scheduled for ${day}`
 
-At end, print a list of all meetings.
+If the same weekday occurs a second time, print **conflict** message.
+
+`Conflict on ${day}!`
+
+In the end, print a list containing all successful and conflicting appointments.
 
 # Example
 
@@ -628,13 +632,17 @@ function solve(input) {
 
 # Description
 
-Write a function that reads **weekdays** and **names**.
+Write a function that receives **weekdays** and **names** as input.
 
-Print a **success** message for every successful appointment.
+Print a message for every successful appointment in the following format.
 
-If the same weekday occurs a second time, print **conflict**.
+`Scheduled for ${day}`
 
-At end, print a list of all meetings.
+If the same weekday occurs a second time, print **conflict** message.
+
+`Conflict on ${day}!`
+
+In the end, print a list containing all successful and conflicting appointments.
 
 # Example
 
@@ -809,11 +817,11 @@ Tuesday \-\> Ted
 
 # Sorting Associative Arrays
 
-Objects **cannot be sorted**. They must be converted first.
+Objects **cannot be sorted**. To do so, we must convert them into arrays.
 
-You will have to convert to **array** for **sorting**, **filtering** and **mapping**.
+Then we can **sort**, **filter** and **map** them.
 
-By using the method `Object.entries()` we will get an array of arrays as a result. 
+By using the `Object.entries()` method we get an array of arrays. 
 
 See the example below.
 
@@ -833,19 +841,19 @@ console.log(firstEntry[0]);
 console.log(firstEntry[1]);
 ```
 
-The `sort()` method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending.
+As the name of the `sort()` method suggests, it sorts the elements of an array and returns a sorted array. The default sort order is **ascending**.
 
 The **entries** array from the above example can be **sorted**, using a **Compare function**.
 
-Use `.localeCompare()` method to sort **strings** in JavaScript.
+Use the `.localeCompare()` method to sort **strings** in JavaScript.
 
 To **sort by key**, use the **first element** of each entry.
 
-Here `a[0]` is the first element and `b[0]` is the second element of the sorting function.
+Here `a[0]` is the first element and `b[0]`, the second element of the sorting function.
 
-The expression `a[0].localeCompare(b[0])` will sort in ascending order.
+The expression `a[0].localeCompare(b[0])` will sort the array in ascending order.
 
-If we have `b[0].localeCompare(a[0])` the function will sort in descending order.
+If we have `b[0].localeCompare(a[0])` the function will sort the array in descending order.
 
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
@@ -856,7 +864,7 @@ console.log(result);
 
 To **sort by value**, use the **second element** of each entry.
 
-In this example it is the same as above, the only difference is that we use the second element of the entry.
+In this example it is the same as above, the only difference is that we use the second element as a sorting criteria.
 
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
@@ -885,13 +893,13 @@ function solve(input){
 
 # Description
 
-Write a function that reads **names** and **addresses**.
+Write a function that takes **names** and **addresses** as input.
 
-Values will be separated by `":"`.
+The values will be separated by `":"`.
 
-If same name occurs, save the **latest** address.
+If same name occurs more than once, save the **latest** address.
 
-Print list, **sorted** alphabetically by **name**.
+Print out a list of all entries, **sorted** alphabetically by **name**.
 
 # Example
 
@@ -1069,13 +1077,13 @@ function solve(input) {
 
 # Description
 
-Write a function that reads **names** and **addresses**.
+Write a function that takes **names** and **addresses** as input.
 
-Values will be separated by `":"`.
+The values will be separated by `":"`.
 
-If same name occurs, save the **latest** address.
+If same name occurs more than once, save the **latest** address.
 
-Print list, **sorted** alphabetically by **name**.
+Print out a list of all entries, **sorted** alphabetically by **name**.
 
 # Example
 
@@ -1232,15 +1240,15 @@ Ted \-\> Dayton Ave
 
 # Nested Data Structures
 
-The values of associative arrays can be objects, or arrays.
+The values stored in associative arrays can be objects, or arrays.
 
 Once we have a **reference** to the value, we can **manipulate** it like any other object.
 
 In the following example we declare an object which has two properties: "Tim" and "Bill".
 
-But "Tim" is another object, so is "Bill". To access Bill's contacts we need to have a reference to the object by creating the variable `billsContact`.
+"Tim" is an object, so is "Bill". To access Bill's contacts we need to have a reference to the object by creating the variable `billsContact`.
 
-Now it is easy to access the properties inside the object "Bill". Just use the newly created variable `billsContact`.
+We can access this property from the "Bill" object, using the `billsContact` variable.
 
 ```js live
 let contacts = {
@@ -1253,9 +1261,7 @@ console.log(billsContact.phone);
 
 ## Sorting Nested Data Structures
 
-We can **sort** them by the **property values** of each entry. In this case we will use destructuring.
-
-Sort a contact book **alphabetically** by person's address.
+We can **sort** data structure by the **property values** of each entry. In this case we will use destructuring to sort the contact book **alphabetically** by each person's address.
 
 ```js live
 let contacts = {

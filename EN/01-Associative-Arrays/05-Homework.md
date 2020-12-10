@@ -18,17 +18,17 @@ function solve(input) {
 
 # Description
 
-Write a function that receives an **array of words** and finds **occurrences of given words** in that sentence.
+Write a function that receives an **array of words** and finds **occurrences of each specified word** in a string.
 
-The input will come as **array of strings**.
+The input will come as an **array of strings**.
 
-The **first string** will contain the **words** you will be looking for separated by a **space**.
+The **first string** will contain the **words** you will be looking for, separated by a **space**.
 
-All **strings after that** will be the words you will be looking for.
+All **strings after that** will contain sentences, which you have to check, and count how many times each of the specified words was present.
 
-Print **for each word** how many times it **occurs**.
+Print out **how many** times each of the specified words occured.
 
-The words should be **sorted by count in descending**.
+The words should be **sorted by the number of times they were present in descending order**.
 
 # Example
 
@@ -217,9 +217,9 @@ function solve(input) {
 
 # Description
 
-Write a function that extracts all the elements of a sentence odd number of times (**case-insensitive**).
+Write a function that extracts all the elements of a sentence, which are present in a string an odd number of times (**capitalization should be disregarded**).
 
-The input comes as an **array** of a **single string**. The words will be **separated by a single space**.
+The input is a **single string**. The words will be **separated by a single space**.
 
 # Example
 
@@ -301,13 +301,13 @@ function solve(input) {
 
 # Description
 
-Write function that:
+Write a function that:
 
-- Records a car number for every car that enters the parking lot.
-- Removes a car number when the car goes out.
-- Input will be array of strings in format `['direction, carNumber']`.
+- Records a car license plate for every car that enters the parking lot.
+- Removes the car when it goes out.
+- Input will be an array of strings in the following format `['direction, carNumber']`.
 
-Print the output with all car numbers which are in the parking lot **sorted in ascending by number**.
+Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
 # Example 1
 
@@ -502,17 +502,17 @@ function solve(input) {
 
 # Description
 
-There is a party at SoftUni. Many guests are invited and they are **two types**: VIP and regular.
+There is a party at SoftUni. Many guests are invited and they are **two types of guests**: VIP and regular.
 
 When guests come to the party check if he/she **exists** in any of **the two reservation lists**.
 
-The input will come as an **array of strings**. You will be given the list with the guests before you receive a command `PARTY`.
+The input will be an **array of strings**. You will be given the list with the guests which you have to process until the following command is reached: `PARTY`.
 
-All **VIP numbers start with digit**.
+All **VIP numbers start with a digit**.
 
-When you receive the command `PARTY` the guests start coming.
+When you receive the command: `PARTY` the guests start coming.
 
-Output all guest, who didn't come to the party (VIP must be first).
+Output all guests, who did not come to the party (VIPs must be first).
 
 # Example 1
 
@@ -705,27 +705,27 @@ function solve(input) {
 
 # Description
 
-You are given a sequence of people and for every person what cards he draws from the deck.
+You are given a sequence of people and what cards each one of them draws from the deck.
 
-The input will be **array of strings**. Each string will be in format:
+The input will be an **array of strings**. Each string will be in this format:
 
 `{personName}: {PT, PT, PT,... PT}`
 
 Where P `(2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A)` is the power of the card and T `(S, H, D, C)` is the type.
 
-The name can contain any ASCII symbol except `:`.
+The person's name can contain any ASCII symbol except: `:`.
 
-The input will always be valid and in the format described, there is no need to check it.
+The input will always be in the described format, there is no need to check it.
 
-A single person cannot have more than one card with the same power and type, if he draws such a card he discards it.
+A single person cannot have more than one card of the same power and type, if he draws such a card, he discards it.
 
-The people are playing with multiple decks. Each card has a value that is calculated by the power multiplied by the type.
+The game is played using multiple decks. Each card has a value. The card value is calculated by multiplying its power by its type.
 
-Powers 2 to 10 have the same value and J to A are 11 to 14.
+Powers 2 to 10 have the same value as their number and J, Q, K, A are 11, 12, 13, 14.
 
 Types are mapped to multipliers the following way `(S -> 4, H-> 3, D -> 2, C -> 1)`.
 
-Finally print out the total value each player has in his hand in the format:
+Print out the total card value, that each player has in his hand in the format:
 
 `{personName}: {value}`
 
@@ -862,11 +862,11 @@ function solve(input) {
 
 Write a function which keeps information about companies and their employees.
 
-You will receive array of strings containing company name and employee's id.
+You will receive an array of strings containing company a name and an employee id.
 
-Add each employee to the given company. Keep in mind that a company cannot have two employees with the same id.
+Add each employee to the specified company. Keep in mind that a company cannot have two employees with the same id.
 
-When you finish reading data, order the companies by the name in ascending order.
+When you finish reading the data, order the companies by name in ascending order.
 
 Print the company name and each employee's id in the following format:
 
@@ -875,8 +875,8 @@ Print the company name and each employee's id in the following format:
 -- {id2}
 -- {idN}`
 
-- The input comes **as array of strings**, each in the format: `{companyName} -> {employeeId}`.
-- The input always will be valid.
+- The input is an **array of strings**, each in the format: `{companyName} -> {employeeId}`.
+- The input will always be valid.
 
 # Example 1
 
@@ -1104,13 +1104,13 @@ You are given an **array of strings**.
 
 Every **odd string** is representing a **resource** (e.g. Gold, Silver, Copper, and so on), and **every even – quantity**.
 
-Your task is to collect the resources and print them each on a new line.
+Your task is to collect the resources and print each of them on a new line.
 
-**Print the resources and their quantities in format**:
+**Print the resources and their quantities in this format**:
 
 `{resource} –> {quantity}`
 
-The quantities inputs will be in the range `[1 ... 2 000 000 000]`
+The quantities inputs will be in range `[1 ... 2 000 000 000]`
 
 # Example 1
 

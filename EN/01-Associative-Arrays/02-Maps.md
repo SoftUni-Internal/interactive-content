@@ -2,26 +2,26 @@
 
 [slide]
 
-# What is Map?
+# What is a Map?
 
-The Map object holds key-value pairs and remembers the original **insertion order** of the keys. 
+The Map object holds key-value pairs and keeps the original **insertion order** of the keys. 
 
-Any value both objects and primitive values may be used as either a key or a value.
+Both objects and primitive values may be used as either a key or a value.
 
-A for-of loop returns an array of `[key, value]` for each iteration.
+A for-of loop returns an array of `[key, value]` for each iteration when used on a Map.
 
-Pure JavaScript objects are like Maps in that both let you:
+Pure JavaScript objects are like Maps in that they both let you:
 1. Assign values to keys.
 2. Detect whether something is stored in a key.
 3. Delete keys.
 
 ## Adding, Accessing Elements
 
-To add a `key-value` pair to a map use the method `.set()`.
+To add a key-value pair to a map use the `.set()` method.
 
-In the example below we create a map first by using the keyword `new Map()`.
+In the example below we create a map by using the keyword `new Map()`.
 
-Then by using `.set()` method we add a key and a value to the map. First parameter is the key and second parameter is the value.
+Then by using the `.set()` method we add a key and a value to the map. The first parameter is the key and second parameter is the value.
 
 ```js live
 let map = new Map();
@@ -30,7 +30,7 @@ map.set(2, "two");
 console.log(map);
 ```
 
-To get the value of a given key use the method `.get()`.
+To get the value of a given key use the `.get()` method.
 
 ```js live
 let map = new Map();
@@ -48,11 +48,11 @@ map.set(2, "two");
 console.log(map.size);
 ```
 
-To find out if a map has a given key use the method `.has()`. 
+To find out if a map has a given key use the `.has()` method. 
 
-The output should be **true** or **false**, because the method `.has()` returns a boolian.
+The output should be **true** or **false**, because the `.has()` method returns a **boolian**.
 
-In this case it is true.
+In this case it is **true**.
 
 ```js live
 let map = new Map();
@@ -61,7 +61,7 @@ map.set(2, "two");
 console.log(map.has(1));
 ```
 
-To remove a `key-value` pair use the method `.delete()`.
+To remove a key-value pair use the `.delete()` method.
 
 ```js live
 let map = new Map();
@@ -71,9 +71,9 @@ map.delete(1);
 console.log(map);
 ```
 
-And finally use the method `.clear()` to remove all the `key-value` pairs in the map.
+And finally use the `.clear()` method to remove all the key-value pairs in the map.
 
-The output in this example is 0 after clearing out all the elements in the Map object.
+The output from this example is 0 after clearing out all the elements in the Map object.
 
 ```js live
 let map = new Map();
@@ -85,9 +85,9 @@ console.log(map.size);
 
 ## Iterators
 
-By using iterators we can return an array with `[key-value]` pairs, `keys` or `values`.
+By using iterators, we can return an array containing [key-value] pairs.
 
-To return an array of `[key-value]` pair use the method `.entries()`.
+To return an array of [key-value] pair use the `.entries()` method on a map object.
 
 The output will be an array of arrays `[ [ 1, 'one' ], [ 2, 'two' ] ]`
 
@@ -99,7 +99,7 @@ let entries = Array.from(map.entries());
 console.log(entries);
 ```
 
-To return an array of `keys` use the method `.keys()`.
+To return an array of keys use: `.keys()`.
 
 The output will be `[1, 2]`.
 
@@ -111,7 +111,7 @@ let entries = Array.from(map.keys());
 console.log(entries);
 ```
 
-To return an array of `values` use the method `.values()`.
+To return an array of values use: `.values()`.
 
 The output will be `[ 'one', 'two' ]`.
 
@@ -136,7 +136,7 @@ for (let [key, value] of map.entries()) {
 }
 ```
 
-To print the keys use `.keys()`.
+To print the keys use: `.keys()`.
 
 ```js live
 let map = new Map();
@@ -147,7 +147,7 @@ for (let key of map.keys()) {
 }
 ```
 
-To print the values use `.values()`.
+To print the values use: `.values()`.
 
 ```js live
 let map = new Map();
@@ -182,11 +182,11 @@ Write a function that takes a certain number of **items** and their **quantity**
 
 If the same item appears **more than once**, **add the new amount** to the **existing one**.
 
-At the end print all the items and their amount without sorting them.
+In the end print all the items and their amount without sorting them.
 
-The input comes as **array of strings**.
+The input comes as an **array of strings**.
 
-Try using a **Map()**.
+Use a **Map()**.
 
 # Example
 
@@ -315,11 +315,11 @@ Write a function that takes a certain number of **items** and their **quantity**
 
 If the same item appears **more than once**, **add the new amount** to the **existing one**.
 
-At the end print all the items and their amount without sorting them.
+In the end print all the items and their amount without sorting them.
 
-The input comes as **array of strings**.
+The input comes as an **array of strings**.
 
-Try using a **Map()**.
+Use a **Map()**.
 
 # Example
 
@@ -464,13 +464,13 @@ function solve(input) {
 
 # Description
 
-Write a function to store students with all of their grades.
+Write a function which stores students with all of their grades.
 
 If a student appears more than once, add the new grades.
 
-At the end print the students sorted by average grade.
+In the end print the students sorted by average grade.
 
-The input comes as **array of strings**.
+The input comes as an **array of strings**.
 
 # Example
 
@@ -615,13 +615,13 @@ function solve(input) {
 
 # Description
 
-Write a function to store students with all of their grades.
+Write a function which stores students with all of their grades.
 
 If a student appears more than once, add the new grades.
 
-At the end print the students sorted by average grade.
+In the end print the students sorted by average grade.
 
-The input comes as **array of strings**.
+The input comes as an **array of strings**.
 
 # Example
 
