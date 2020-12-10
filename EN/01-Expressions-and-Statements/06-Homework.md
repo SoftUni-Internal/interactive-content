@@ -106,7 +106,7 @@ Write a program to convert from USD to EUR:
 | --- | --- |
 | 17 | 14.96 |
 
-## Example
+
 | **Input** | **Output** |
 | --- | --- |
 | 87 | 76.56 |
@@ -265,8 +265,8 @@ public class Program {
 [task-description]
 ## Description
 Write a program, which:
-  * Reads 2 real numbers from the console
-  * Performs 4 arithmetic operations on the obtained 2 numbers, in the following order: +, -, *, /
+  * Reads 2 **real numbers** from the console
+  * Performs 4 **arithmetic operations** on the obtained 2 numbers, in the following order: ``+``, ``-``, ``*``, ``/``
   * Formats and prints the results like this example:
 
 ## Example
@@ -609,7 +609,7 @@ public class Program {
 ## Description
 Write a program, which:
   * Reads 3 lines of input: name (string), population and area (integers)
-  * Prints information about a town in the following format: `"Town {name} has population of {population} and area {area} square km."`
+  * Prints information about a town in the following format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
 ## Example
 | **Input** | **Output** |
@@ -782,9 +782,9 @@ Write a program that calculates how many hours will be necessary to an architect
 Creating one project takes approximately 3 hours.
 
 ## Input
-Read two lines from the console:
-- Name of the architect - String
-- Number of projects - integer in range \[0… 100\]
+Read **two lines** from the console:
+- Name of the architect - **String**
+- Number of projects - **integer** in range \[0… 100\]
 
 ## Output
 
@@ -801,7 +801,7 @@ Print on the console:
 
 | Input | Output |  
 | --- | --- |
-| Sanya | The architect Sanya will need 27 hours to complete 9 project/s. |
+| Peter | The architect Peter will need 27 hours to complete 9 project/s. |
 | 9 | |
 [/task-description]
 [tests]
@@ -816,11 +816,11 @@ The architect George will need 12 hours to complete 4 project/s.
 [/test]
 [test open]
 [input]
-Sanya
+Peter
 9
 [/input]
 [output]
-The architect Sanya will need 27 hours to complete 9 project/s.
+The architect Peter will need 27 hours to complete 9 project/s.
 [/output]
 [/test]
 [test]
@@ -1393,23 +1393,23 @@ public class Main {
 ## Description
 George decides to buy tuna, scads and mussels. 
 
-Read from the console prices of mackerel and sprats, the quantity of tuna, scads and mussels in kilograms. 
+Read from the console **prices** of mackerel and sprats, the quantity of tuna, scads and mussels in **kilograms** 
 
-Calculate how much money will he need to pay his bill, if the prices at the Fishland are:
-- Tuna - 60% more expensive than the mackerel
-- Scads - 80% more expensive than the sprats
-- Mussels - 7.50 dollars per kilogram
+**Calculate** how much money will he need to pay his bill, if the prices at the Fishland are:
+- Tuna - **60% more expensive than the mackerel**
+- Scads - **80% more expensive than the sprats**
+- Mussels - **7.50 dollars per kilogram**
 
 ## Input
-You have to read 5 numbers from the console:
-- the price of the mackerel per kilogram - floating-point number in range [0.00…40.00]
-- the price of the sprats per kilogram - floating-point number in range [0.00…30.00]
-- kilograms of tuna - floating-point number in range [0.00…50.00]
-- kilograms of scads - floating-point number in range [0.00…70.00]
-- kilograms of mussels - integer number in range [0...100]
+You have to read **5 numbers** from the console:
+- the price of the mackerel per kilogram - **floating-point** number in range [0.00…40.00]
+- the price of the sprats per kilogram - **floating-point** number in range [0.00…30.00]
+- kilograms of tuna - **floating-point** number in range [0.00…50.00]
+- kilograms of scads - **floating-point** number in range [0.00…70.00]
+- kilograms of mussels - **integer number** in range [0...100]
 
 ## Output
-Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the second decimal point.
+Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the **second decimal point**
 
 ## Example
 | Input | Output |
@@ -1420,7 +1420,7 @@ Print on the console a single number with floating point: the money George will 
 | 2.50 | |
 | 1 | |
 
-### Comments
+### Hints
 - The price of the tuna = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
 - Total sum of tuna = 1.5 \* 11.04 = 16.56
 - The price of the scads = 4.20 + 4.20 \* 0.80 =  7.56$/kg
