@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Guess the Password
-[code-task title="Guess the Password" taskId="27-02-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Guess the Password" taskId="pb-java-Conditional-Statements-guess-the-password" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -75,7 +75,7 @@ Wrong password!
 
 [slide]
 # Problem: Boiling Water
-[code-task title="Boiling Water" taskId="27-02-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -151,7 +151,7 @@ The water is not hot enough
 
 [slide]
 # Problem: Speed Info
-[code-task title="Speed Info" taskId="27-02-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Speed Info" taskId="pb-java-Conditional-Statements-Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -226,7 +226,7 @@ Fast
 
 [slide]
 # Problem: Area of Figures
-[code-task title="Area of Figures" taskId="27-02-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -356,7 +356,7 @@ Unknown figure
 
 [slide]
 # Problem: Tickets
-[code-task title="Tickets" taskId="27-02-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Tickets" taskId="pb-java-Conditional-Statements-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -443,7 +443,7 @@ Invalid ticket type!
 
 [slide]
 # Problem: Coffee Shop
-[code-task title="Coffee Shop" taskId="27-02-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -549,7 +549,7 @@ Final price: $0.60
 
 [slide]
 # Problem: Valid Triangle
-[code-task title="Valid Triangle" taskId="27-02-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Valid Triangle" taskId="pb-java-Conditional-Statements-Valid-triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```java
@@ -630,7 +630,7 @@ Invalid Triangle
 
 [slide]
 # Problem: Harvest
-[code-task title="Harvest" taskId="27-02-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Harvest" taskId="pb-java-Conditional-Statements-Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -821,152 +821,11 @@ It will be a tough winter! More 79 liters wine needed.
 
 
 
-[slide]
-# Problem: Area of Figures
-[code-task title="Area of Figures" taskId="27-02-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program where user enters type and dimensions of a geometric figure and calculates its area. 
-
-Figures are four types: **square, rectangle, circle and triangle**. 
-
-On the first line of the input you will receive the type of the figure.
-- If it\'s **square**, on the next line you will be given a **number** representing **length** of his size. 
-- If the type is **rectangle**, on the next **two** lines you have to read its **dimensions**. 
-- If it\'s **circle** - on the next line you will receive a single number - the **radius**. 
-- If the figure is **triangle**, on the next **two** lines you will be given the **length** of its size and the **height** to it. 
-
-The input numbers will be floating-point numbers.
-
-## Output
-
-The result should be **formatted to the third decimal point**.
-
-## Example
-
-| **Input** | **Output** |
-| --- | --- | 
-| square | 25.000 | 
-| 5 | |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
-| rectangle | 17.500|
-| 7| |
-| 2.5| |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
-| circle| 113.097|
-| 6| |
-| | |
-
-| **Input** | **Output** |
-| --- | --- |
-| triangle | 45.000|
-| 4.5| |
-| 20| |
-| | |
-[/task-description]
-[tests]
-[test open]
-[input]
-square
-5
-[/input]
-[output]
-25.000
-[/output]
-[/test]
-[test open]
-[input]
-rectangle
-7
-2.5
-[/input]
-[output]
-17.500
-[/output]
-[/test]
-[test open]
-[input]
-circle
-6
-[/input]
-[output]
-113.097
-[/output]
-[/test]
-[test open]
-[input]
-triangle
-4.5
-20
-[/input]
-[output]
-45.000
-[/output]
-[/test]
-[test]
-[input]
-square
-7.5
-[/input]
-[output]
-56.250
-[/output]
-[/test]
-[test]
-[input]
-rectangle
-17.2
-2.5
-[/input]
-[output]
-43.000
-[/output]
-[/test]
-[test]
-[input]
-circle
-8.55
-[/input]
-[output]
-229.658
-[/output]
-[/test]
-[test]
-[input]
-triangle
-4.5
-7.5
-[/input]
-[output]
-16.875
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
 
 
 [slide]
 # Problem: Time + 15 Minutes
-[code-task title="Time + 15 Minutes" taskId="27-02-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Time + 15 Minutes" taskId="pb-java-Conditional-Statements-time-15minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1131,7 +990,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="27-02-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1250,7 +1109,7 @@ Error
 
 [slide]
 # Problem: Animal Type
-[code-task title="Animal Type" taskId="27-02-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Animal Type" taskId="pb-java-Conditional-Statements-Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1351,7 +1210,7 @@ unknown
 
 [slide]
 # Problem: Pets
-[code-task title="Pets" taskId="27-02-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1573,7 +1432,7 @@ Print on the console a **single** line:
 
 [slide]
 # Problem: Pipes In Pool
-[code-task title="Pipes In Pool" taskId="27-02-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pipes In Pool" taskId="pb-java-Conditional-Statements-pipes-in-pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
