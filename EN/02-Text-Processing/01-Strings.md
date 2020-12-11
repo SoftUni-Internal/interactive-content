@@ -71,6 +71,7 @@ That will also return `J` because the two ways are identical at the end.
 
 [/slide]
 
+
 [slide]
 # Problem: Print Characters
 
@@ -90,7 +91,7 @@ function printCharacters(input){
 
 [/code-editor]
 [task-description]
-# Description
+## Description
 Write a function that receives a string and prints all the characters on separate lines.
 
 # Example
@@ -105,6 +106,7 @@ Write a function that receives a string and prints all the characters on separat
 [/task-description]
 [code-io /]
 [tests]
+[test open]
 [input]
 AWord
 [/input]
