@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Print "Hello JavaScript"
-[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript-01" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function hello() {
@@ -31,7 +31,7 @@ Hello JavaScript
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print-02" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculate() {
@@ -60,7 +60,7 @@ Write a JavaScript program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="pb-js-introduction-Name-And-Expression" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Name and Expression" taskId="pb-js-introduction-Name-And-Expression-03" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function nameAndExpression() {
@@ -87,7 +87,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations "taskId="pb-js-introduction-Calculation" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculations "taskId="pb-js-introduction-Calculation-04" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
