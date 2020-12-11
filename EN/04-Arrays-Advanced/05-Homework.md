@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: List of Products
-[code-task title="List of Products" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="List of Products" taskId="js-fundamentals-1-Arrays-Advanced-List-of-Products" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function listProducts(input){
@@ -119,7 +119,7 @@ Apples
 
 [slide]
 # Problem: Train
-[code-task title="Train" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Train" taskId="js-fundamentals-1-Arrays-Advanced-Train" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function train(arr){
@@ -251,7 +251,7 @@ Add 10
 
 [slide]
 # Problem: Distinct Array
-[code-task title="Distinct Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Distinct Array" taskId="js-fundamentals-1-Arrays-Advanced-DIstinct-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function distinctArray(arr){
@@ -382,7 +382,7 @@ Print the result elements(the remaining ones), separated by a single space.
 
 [slide]
 # Problem: HouseParty
-[code-task title="HouseParty" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="HouseParty" taskId="js-fundamentals-1-Arrays-Advanced-HouseParty" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function houseParty(arr){
@@ -525,7 +525,7 @@ T
 
 [slide]
 # Problem: Sorting
-[code-task title="Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sorting" taskId="js-fundamentals-1-Arrays-Advanced-Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sorting(arr){
@@ -638,7 +638,7 @@ Print the elements on one line, separated by a single space.
 
 [slide]
 # Problem: Sort an Array by 2 Criteria
-[code-task title="Sort an Array by 2 Criteria" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sort an Array by 2 Criteria" taskId="js-fundamentals-1-Arrays-Advanced-Sort-an-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sort(input){
@@ -777,7 +777,7 @@ Default
 
 [slide]
 # Problem: Array Manipulations
-[code-task title="Array Manipulations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Array Manipulations" taskId="js-fundamentals-1-Arrays-Advanced-Array-Manipulation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function arrayManipulations(input){
