@@ -1,22 +1,11 @@
 
 
-[slide]
 # Homework
-Welcome to the homework. 
-
-Now we are going to write a couple of console applications, by which we are going to make a few more steps into programming. 
-
-We have prepared some problems for you to solve.
-
-Let's solve a few problems to confirm what we have learned.
-
-[image assetsSrc="homeowrk.png" /]
-[/slide]
 
 
 [slide]
 # Problem: Biggest Number
-[code-task title="Biggest Number" taskId="27-04-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Biggest Number" taskId="pb-java-for-loop-biggest-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -86,7 +75,7 @@ Write a program, which:
 
 [slide]
 # Problem: Max and Min Numbers
-[code-task title="Max and Min Numbers" taskId="27-04-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Max and Min Numbers" taskId="pb-java-for-loop-max-and-min" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -176,7 +165,7 @@ Min number: -2
 
 [slide]
 # Problem: Power of Number
-[code-task title="Power of Number" taskId="27-04-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -229,7 +218,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="27-04-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Pairs" taskId="pb-java-for-loop-equal-pairs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -380,7 +369,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="27-04-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="pb-java-for-loop-zig-zag-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -451,7 +440,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="27-04-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="pb-java-for-loop-Divide-without-reminder" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -514,7 +503,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="27-04-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowel Sum" taskId="pb-java-for-loop-vowel-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -613,7 +602,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="27-04-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Rollercoaster" taskId="pb-java-for-loop-rollearcoaster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -715,7 +704,7 @@ The rollercoaster departures
 [slide]
 # Problem: Multiply
 
-[code-task title="Multiply" taskId="27-04-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply" taskId="pb-java-for-loop-multiply executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -791,7 +780,7 @@ Write a program, which:
 
 [slide]
 # Problem: Back to the Past
-[code-task title="Back to the Past" taskId="27-04-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Back to the Past" taskId="pb-java-for-loop-back-to-the-past" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -942,7 +931,7 @@ He will need 2254960.50 dollars to survive.
 
 [slide]
 # Problem: Bills
-[code-task title="Bills" taskId="27-04-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bills" taskId="pb-java-for-loop-bills" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1208,7 +1197,7 @@ Average: 89.10 $
 
 [slide]
 # Problem: Hospital
-[code-task title="Hospital" taskId="27-04-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hospital" taskId="pb-java-for-loop-Hospital" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1392,7 +1381,7 @@ Untreated patients: 29978.
 
 [slide]
 # Problem: Numbers Ending in 7
-[code-task title="Numbers Ending in 7" taskId="27-04-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Numbers Ending in 7" taskId="pb-java-for-loop-Numbers-ending-in-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 public class Main {
@@ -1437,7 +1426,7 @@ Print the numbers on a single line, separated by a single space.
 
 [slide]
 # Problem: Odd / Even Position
-[code-task title="Odd / Even Position" taskId="27-04-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Odd / Even Position" taskId="pb-java-for-loop-odd-even-position" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1683,7 +1672,7 @@ EvenMax=3433.50
 
 [slide]
 # Problem: Grades
-[code-task title="Grades" taskId="27-04-p-15" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="pb-java-for-loop-grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
