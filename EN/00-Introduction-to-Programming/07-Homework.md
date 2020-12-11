@@ -87,7 +87,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="taskId="pb-js-introduction-Calculation" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculations "taskId="pb-js-introduction-Calculation" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
@@ -119,7 +119,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function squareOfStars() {
