@@ -45,7 +45,7 @@ let result = dataArray.reduce((acc, curr, index, array) => {
         } else {
             same.score += curr.score;
         }
-        return acc;
+        return acc;
 }, []);
 console.log(result);
 ```
