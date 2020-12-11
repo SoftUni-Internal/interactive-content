@@ -13,7 +13,7 @@
 - Writing simple commands and programs
 
 **2. Programming Languages**
-- First steps in JavaScript language
+- First steps in JavaScript
 
 **3. Integrated development environment (IDE)**
 - Visual Studio Code
