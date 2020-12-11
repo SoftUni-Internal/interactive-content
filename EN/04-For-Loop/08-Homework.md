@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculate Month Salary" taskId="pb-js-04-p-01 executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function calculateMonthSalary (input) {
