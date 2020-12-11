@@ -113,7 +113,7 @@ rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000
 [/input]
 [output]
 You defeated a rat.
-YYou defeated a bat.
+You defeated a bat.
 You healed for 10 hp.
 Current health: 80 hp.
 You defeated a rat.
@@ -174,7 +174,7 @@ You defeated a rat.
 You defeated a bat.
 You defeated a cat.
 You died! Killed by dog.
-Best room: 4
+Highest level reached: 4
 [/output]
 [/test]
 [test]
@@ -255,7 +255,7 @@ You defeated a c.
 You found 10 bitcoins.
 You found 1000 bitcoins.
 You died! Killed by d.
-Best room: 7
+Highest level reached: 7
 [/output]
 [/test]
 [test]
@@ -274,7 +274,7 @@ You found 100 bitcoins.
 You healed for 35 hp.
 Current health: 100 hp.
 You died! Killed by DRAGON.
-Best room: 9
+Highest level reached: 9
 [/output]
 [/test]
 [/tests]
