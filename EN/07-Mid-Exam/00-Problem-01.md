@@ -1,6 +1,7 @@
-[slide]
 # Problem 1: Archery Tournament
-## Description
+
+[slide]
+# Description
 
 Peter the archer is going to participate in a tournament.
 

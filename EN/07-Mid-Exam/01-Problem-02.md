@@ -1,6 +1,7 @@
-[slide]
 # Problem 2: School Library
-## Description
+
+[slide]
+# Description
 
 On the first line you will receive a String, representing a bookshelf in library. Every book title is separated by `&`.
 
@@ -38,7 +39,7 @@ If the index is invalid, ignore the command.
 
 * You will not receive any duplicate book names in the initial list of books.
 
-[code-task title="School Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="School Library" taskId="js-fundamentals-regular-exam-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -62,9 +63,38 @@ function solve(input) {
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
+Add Book \| The Odyssey
+Take Book \| Don Quixote
+Insert Book \| Alice's Adventures in Wonderland
+Check Book \| 3
+Done
+[/input]
+[output]
+Hamlet
+The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
+[/output]
+[/test]
+[test open]
+[input]
+Anna Karenina&Heart of Darkness&Catch-22& The Stranger
+Add Book \| David Copperfield
+Add Book \| One Thousand and One Nights
+Swap Books \| One Thousand and One Nights \| Catch-22
+Take Book \| David Copperfield
+Insert Book \| The Stories of Anton Chekhov
+Check Book \| 17
+Done
+[/input]
+[output]
+Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The Stranger, The Stories of Anton Chekhov
+[/output]
+[/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Add Book \| The Odyssey
 Done
 [/input]
@@ -74,7 +104,7 @@ The Odyssey, Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Take Book \| Don Quixote
 Done
 [/input]
@@ -84,7 +114,7 @@ The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Insert Book \| Alice's Adventures in Wonderland
 Done
 [/input]
@@ -94,7 +124,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderla
 [/test]
 [test]
 [input]
-abc\&def\&ghi\&jkl
+abc&def&ghi&jkl
 Swap Books \| abc \| jkl
 Done
 [/input]
@@ -104,7 +134,7 @@ jkl, def, ghi, abc
 [/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Add Book \| Hamlet
 Done
 [/input]
@@ -114,7 +144,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Take Book \| Alice's Adventures in Wonderland
 Done
 [/input]
@@ -124,7 +154,7 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet
 [/test]
 [test]
 [input]
-Don Quixote\&The Great Gatsby\&Moby Dick\&Hamlet
+Don Quixote&The Great Gatsby&Moby Dick&Hamlet
 Insert Book \| Hamlet
 Done
 [/input]
@@ -134,11 +164,11 @@ Don Quixote, The Great Gatsby, Moby Dick, Hamlet, Hamlet
 [/test]
 [test]
 [input]
-A\&B\&C\&D
+A&B&C&D
 Add Book \| A
 Add Book \| B
 Add Book \| C
-Take Book | C
+Take Book \| C
 Swap Books \| A \| C
 Check Book \| 1
 Done
@@ -150,7 +180,7 @@ A, B, D
 [/test]
 [test]
 [input]
-A\&B\&C
+A&B&C
 Swap Books \| C \| C
 Add Book \| D
 Insert Book \| G
@@ -165,7 +195,7 @@ M, D, A, B, C, G
 [/test]
 [test]
 [input]
-A\&B\&C
+A&B&C
 Done
 [/input]
 [output]
