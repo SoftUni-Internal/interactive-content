@@ -83,7 +83,7 @@ function solve(input) {
 0 0 0 0
 [/input]
 [output]
-The lift has empty spots!
+There is room for more passengers!
 4 4 4 3
 [/output]
 [/test]
@@ -93,7 +93,7 @@ The lift has empty spots!
 0 2 0
 [/input]
 [output]
-There isn't enough space! 10 people in a queue!
+The lift is full. 10 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -103,7 +103,7 @@ There isn't enough space! 10 people in a queue!
 0 2 0 1 3 0 0 0
 [/input]
 [output]
-The lift has empty spots!
+There is room for more passengers!
 4 4 4 1 3 0 0 0
 [/output]
 [/test]
@@ -113,7 +113,7 @@ The lift has empty spots!
 4 4 4 4 4 4 4 4 1 4 4 4
 [/input]
 [output]
-There isn't enough space! 7 people in a queue!
+The lift is full. 7 people currently in line.
 4 4 4 4 4 4 4 4 4 4 4 4
 [/output]
 [/test]
@@ -123,7 +123,7 @@ There isn't enough space! 7 people in a queue!
 0 0 4
 [/input]
 [output]
-There isn't enough space! 12 people in a queue!
+The lift is full. 12 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -133,7 +133,7 @@ There isn't enough space! 12 people in a queue!
 0
 [/input]
 [output]
-The lift has empty spots!
+There is room for more passengers!
 2
 [/output]
 [/test]
@@ -152,7 +152,7 @@ The lift has empty spots!
 0 0 0 0 0 0
 [/input]
 [output]
-The lift has empty spots!
+There is room for more passengers!
 4 4 4 3 0 0
 [/output]
 [/test]
@@ -162,7 +162,7 @@ The lift has empty spots!
 0 2 0
 [/input]
 [output]
-There isn't enough space! 10 people in a queue!
+The lift is full. 10 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -172,7 +172,7 @@ There isn't enough space! 10 people in a queue!
 0 0 4
 [/input]
 [output]
-There isn't enough space! 12 people in a queue!
+The lift is full. 12 people currently in line.
 4 4 4
 [/output]
 [/test]
@@ -182,7 +182,7 @@ There isn't enough space! 12 people in a queue!
 0 2 0 1 3 4
 [/input]
 [output]
-There isn't enough space! 4 people in a queue!
+The lift is full. 4 people currently in line.
 4 4 4 4 4 4
 [/output]
 [/test]
