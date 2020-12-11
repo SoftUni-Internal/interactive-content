@@ -21,9 +21,9 @@ console.log(sliced);
 
 console.log(myArray.slice(2,4));
 ```
-[slide]
-
 [/slide]
+
+[slide]
 # Splice: Cut and Insert Array Elements
 
 [vimeo-video]
@@ -372,7 +372,6 @@ The fourth element is equals to the sum of 1, 1 and 2.
 
 The fifth element is equals to the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on
 
-
 [/task-description]
 [tests]
 [test]
@@ -486,7 +485,6 @@ The third element is equals to the sum of the first two elements (1 and 1) .
 The fourth element is equals to the sum of 1, 1 and 2. 
 
 The fifth element is equals to the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on
-
 
 [/task-description]
 [tests]
