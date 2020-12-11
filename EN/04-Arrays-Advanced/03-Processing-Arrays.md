@@ -217,7 +217,7 @@ Write a function that prints all the elements at odd positions, doubled, and i
 
 The input comes as an array of `string` elements, holding numbers.
 
-The output is printed on the c**onsole on a single line**, **separated by space.**
+The output is printed on the **console on a single line**, **separated by space.**
 
 
 ## Examples
@@ -372,13 +372,21 @@ nums.sort((a, b) => a-b);
 
 console.log(nums.join('|'));
 ```
+[/slide]
 
+[slide]
 # Sorting String Arrays
+
+[vimeo-video]
+[stream language="EN" videoId="489374405/c099f73018" default /]
+[stream language="RO" videoId="489374405/c099f73018"  /]
+[/video-vimeo]
+
 The `localeCompare()` method compares two strings in the current locale. 
 
 It is a string method, so it cannot be applied directly on an array. 
 
-In this example, we pass the `localeCompare()` method as a **comparison function**. 
+In this example, we pass the `localeCompare()` method as a **comparison function**.
 
 ``` js live
 let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
@@ -389,13 +397,13 @@ console.log(words);
 [/slide]
 
 [slide]
+# Problem: Smallest two Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="489374451/5801e23a89" default /]
 [stream language="RO" videoId="489374451/5801e23a89"  /]
 [/video-vimeo]
 
-# Problem: Smallest two Numbers
 [code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
