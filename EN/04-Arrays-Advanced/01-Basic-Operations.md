@@ -3,6 +3,11 @@
 [slide]
 # Overview
 
+[vimeo-video]
+[stream language="EN" videoId="489374674/6cf27fdbe0" default /]
+[stream language="RO" videoId="489374674/6cf27fdbe0"  /]
+[/video-vimeo]
+
 JavaScript has **built-in functions** for dealing with arrays that **can simplify the code, make it easier to read**, and last but not least, make it easier to debug.
 
 We can use arrow functions in some of the advanced methods.
@@ -27,6 +32,11 @@ Basically, these methods modify the array, and we do not need to write a whole b
 
 [slide]
 # Add and Remove Functions
+
+[vimeo-video]
+[stream language="EN" videoId="489374677/3350dbaf69" default /]
+[stream language="RO" videoId="489374677/3350dbaf69"  /]
+[/video-vimeo]
 
 Add at the End, Remove from the End.
 
@@ -53,7 +63,15 @@ console.log(array);
 console.log(number);
 ```
 
-## Add to the Beginning, Remove from the Beginning 
+[/slide]
+
+[slide]
+# Add to the Beginning, Remove from the Beginning 
+
+[vimeo-video]
+[stream language="EN" videoId="489374731/d3be54a729" default /]
+[stream language="RO" videoId="489374731/d3be54a729"  /]
+[/video-vimeo]
 
 The `array.unshift()` method is used to add a new element to the beginning of an array.
 
@@ -79,6 +97,12 @@ console.log(number);
 
 [slide]
 # Problem: Sum First Last
+
+[vimeo-video]
+[stream language="EN" videoId="489374765/676b788b0c" default /]
+[stream language="RO" videoId="489374765/676b788b0c"  /]
+[/video-vimeo]
+
 [code-task title="Sum First Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -163,6 +187,12 @@ The output should be the value, which is returned from the function.
 
 [slide]
 # Problem: Sum First Last
+
+[vimeo-video]
+[stream language="EN" videoId="489374493/acd64c96be" default /]
+[stream language="RO" videoId="489374493/acd64c96be"  /]
+[/video-vimeo]
+
 [code-task title="Sum First Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -250,7 +280,12 @@ The output should be the value, which is returned from the function.
 [/slide]
 
 [slide]
-# Pushing, Shifting and Unshifting
+# Pushing Into an Array
+
+[vimeo-video]
+[stream language="EN" videoId="489374828/cbd47a4e46" default /]
+[stream language="RO" videoId="489374828/cbd47a4e46"  /]
+[/video-vimeo]
 
 The `array.push()` method adds one or more elements to the end of an array and returns the new length:
 
@@ -261,6 +296,15 @@ fruits.push('pineapple', 'orange');
 
 console.log(fruits);
 ```
+[/slide]
+
+[slide]
+# Shifting and Unshifting Into an Array
+
+[vimeo-video]
+[stream language="EN" videoId="489374831/7be466e53c" default /]
+[stream language="RO" videoId="489374831/7be466e53c"  /]
+[/video-vimeo]
 
 The `array.shift()` method removes the first element of an array:
 
@@ -284,6 +328,12 @@ console.log(myArray);
 
 [slide]
 # Problem: Negative or Positive Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374903/12f02c94ea" default /]
+[stream language="RO" videoId="489374903/12f02c94ea"  /]
+[/video-vimeo]
+
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -608,6 +658,11 @@ The output has to be printed on the console, each element on a new line.
 
 [slide]
 # Find Values
+
+[vimeo-video]
+[stream language="EN" videoId="489374946/5dbb522344" default /]
+[stream language="RO" videoId="489374946/5dbb522344"  /]
+[/video-vimeo]
 
 The `array.includes()` returns true if the given value is part of the array.
 
