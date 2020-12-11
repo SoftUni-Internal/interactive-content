@@ -1,6 +1,7 @@
-[slide]
 # Problem 1: Password Reset
-## Description
+
+[slide]
+# Description
 Write a password reset program that performs a series of commands on a string. 
 
 First, you will receive the string, that you have to alter, and afterwards, until the command `Done` is received, you will be given commands in the form of text (a string), split by a single space. 
@@ -35,7 +36,7 @@ If it doesn't, prints `Nothing to replace!`
 * After the `Done` command is received, print: `Your password is: {password}`
 
 
-[code-task title="Password Reset" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -119,6 +120,40 @@ Your password is: programming\*\*\*is\*\*\*fun
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr 
+TakeOdd
+Cut 15 3
+Substitute :: -
+Substitute \| ^
+Done
+[/input]
+[output]
+icecream::hot::summer
+icecream::hot::mer
+icecream-hot-mer
+Nothing to replace!
+Your password is: icecream-hot-mer
+[/output]
+[/test]
+[test open]
+[input]
+up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy
+TakeOdd
+Cut 18 2
+Substitute ! \*\*\*
+Substitute ? .!.
+Done
+[/input]
+[output]
+programming!is!funny
+programming!is!fun
+programming\*\*\*is\*\*\*fun
+Nothing to replace!
+Your password is: programming\*\*\*is\*\*\*fun
+[/output]
+[/test]
 [test]
 [input]
 abcd
