@@ -17,9 +17,9 @@ class Animal {
 }
 Animal animal = new Animal();
 ```
-Class components:
-- Fields 
-    - Field is a variable inside a class
+- Class components:
+    - Fields 
+        - Field is a variable inside a class
 ```java
 class Animal { 
     String name;
