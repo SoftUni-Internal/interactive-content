@@ -15,7 +15,7 @@
 [stream language="RO" videoId="488090919/8b4c1a9e61"  /]
 [/video-vimeo]
 
-[code-task title="Building" taskId="pb-js-06-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Building" taskId="pb-js-nested-loops-Building" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function building(input) {
@@ -189,7 +189,7 @@ A10 A11 A12
 [stream language="RO" videoId="488091095/c49f5f03e5"  /]
 [/video-vimeo]
 
-[code-task title="Passwords" taskId="pb-js-06-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Passwords" taskId="pb-js-nested-loops-Passwords" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwords(input) {
@@ -261,7 +261,7 @@ Write a program, which:
 
 [slide]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="pb-js-06-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Magic Number" taskId="pb-js-nested-loops-magic-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function magicNumber(input) {
@@ -305,7 +305,7 @@ Write a program, which:
 
 [slide]
 # Problem: Travelling
-[code-task title="Travelling" taskId="pb-js-06-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Travelling" taskId="pb-js-nested-loops-travelling" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function travelling(input) {
@@ -569,7 +569,7 @@ Going to Albania!
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="pb-js-06-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function primeNumbers(input) {
@@ -664,7 +664,7 @@ Write a program, which:
 
 [slide]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="pb-js-06-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Unique PIN Codes" taskId="pb-js-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function uniquePinCodes(input) {
@@ -729,7 +729,7 @@ Write a program, which:
 
 [slide]
 # Problem: Letter Combinations
-[code-task title="Letter Combinations" taskId="pb-js-06-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Letter Combinations" taskId="pb-js-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function letterCombinations(input) {
@@ -775,7 +775,7 @@ aaa aac aca acc caa cac cca ccc 8
 
 [slide]
 # Problem: Happy Numbers
-[code-task title="Happy Numbers" taskId="pb-js-06-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Happy Numbers" taskId="pb-js-nested-loops-Happy-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
