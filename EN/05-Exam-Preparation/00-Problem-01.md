@@ -70,7 +70,7 @@ A string, separated by a vertical bar `|`.
 ## Output
 Print the corresponding messages, as shown in the description.
 
-[code-task title="Mu Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Mu Online" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -107,13 +107,45 @@ function solve(input) {
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000
+[/input]
+[output]
+You slayed rat.
+You slayed bat.
+You healed for 10 hp.
+Current health: 80 hp.
+You slayed rat.
+You found 100 bitcoins.
+You died! Killed by boss.
+Best room: 6
+[/output]
+[/test]
+[test open]
+[input]
+cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110
+[/input]
+[output]
+You slayed cat.
+You healed for 10 hp.
+Current health: 100 hp.
+You slayed orc.
+You found 10 bitcoins.
+You slayed snake.
+You found 110 bitcoins.
+You've made it!
+Bitcoins: 120
+Health: 65
+[/output]
+[/test]
 [test]
 [input]
 rat 10\|bat 20
 [/input]
 [output]
-You defeated a rat.
-You defeated a bat.
+You slayed rat.
+You slayed bat.
 You've made it!
 Bitcoins: 0
 Health: 70
@@ -124,10 +156,10 @@ Health: 70
 rat 10\|bat 20\|cat 30\|dog 39
 [/input]
 [output]
-You defeated a rat.
-You defeated a bat.
-You defeated a cat.
-You defeated a dog.
+You slayed rat.
+You slayed bat.
+You slayed cat.
+You slayed dog.
 You've made it!
 Bitcoins: 0
 Health: 1
@@ -138,11 +170,11 @@ Health: 1
 rat 10\|bat 20\|cat 30\|dog 40
 [/input]
 [output]
-You defeated a rat.
-You defeated a bat.
-You defeated a cat.
+You slayed rat.
+You slayed bat.
+You slayed cat.
 You died! Killed by dog.
-Highest level reached: 4
+Best room: 4
 [/output]
 [/test]
 [test]
@@ -176,7 +208,7 @@ Health: 100
 cat 40\|potion 30
 [/input]
 [output]
-You defeated a cat.
+You slayed cat.
 You healed for 30 hp.
 Current health: 90 hp.
 You've made it!
@@ -189,7 +221,7 @@ Health: 90
 cat 10\|potion 30
 [/input]
 [output]
-You defeated a cat.
+You slayed cat.
 You healed for 10 hp.
 Current health: 100 hp.
 You've made it!
@@ -202,7 +234,7 @@ Health: 100
 dog 10\|potion 30
 [/input]
 [output]
-You defeated a dog.
+You slayed dog.
 You healed for 10 hp.
 Current health: 100 hp.
 You've made it!
@@ -215,15 +247,15 @@ Health: 100
 a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
 [/input]
 [output]
-You defeated a a.
-You defeated a b.
+You slayed a.
+You slayed b.
 You healed for 10 hp.
 Current health: 80 hp.
-You defeated a c.
+You slayed c.
 You found 10 bitcoins.
 You found 1000 bitcoins.
 You died! Killed by d.
-Highest level reached: 7
+Best room: 7
 [/output]
 [/test]
 [test]
@@ -231,18 +263,18 @@ Highest level reached: 7
 cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
 [/input]
 [output]
-You defeated a cat.
+You slayed cat.
 You healed for 10 hp.
 Current health: 100 hp.
-You defeated a orc.
+You slayed orc.
 You found 10 bitcoins.
-You defeated a snake.
+You slayed snake.
 You found 110 bitcoins.
 You found 100 bitcoins.
 You healed for 35 hp.
 Current health: 100 hp.
 You died! Killed by DRAGON.
-Highest level reached: 9
+Best room: 9
 [/output]
 [/test]
 [/tests]
