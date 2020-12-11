@@ -447,19 +447,18 @@ dsadaffa dd 0 124543 3jkj3
 [slide]
 # Solution: Reverse an Array of Strings
 
-# Add Video!!
+[vimeo-video]
+[stream language="EN" videoId="489767886/43c8c03f0e" default /]
+[stream language="RO" videoId="489767886/43c8c03f0e"  /]
+[/video-vimeo]
 
 [code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function reverce(input){
-   for (let i = 0; i < input.length / 2; i++) {
-    let oldElement = input[i];
-    let previousIndex = input.length - 1 - i;
-    input[i] = input[previousIndex];
-    input[previousIndex] = oldElement;
-  }
-  console.log(input.join(' '));
+  let reversed = input.reverse();
+
+  console.log(reversed.join(' '));
 }
 ```
 [/code-editor]
