@@ -2,9 +2,10 @@
 
 # Lesson Introduction
 
+
 [vimeo-video]
-[stream language="EN" videoId="486831795/850c19dbc9" default /]
-[stream language="RO" videoId="486831795/850c19dbc9"  /]
+[stream language="EN" videoId="489879790/8300ace394" default /]
+[stream language="RO" videoId="489879790/8300ace394"  /]
 [/video-vimeo]
 
 ## In this lesson you will learn about:
