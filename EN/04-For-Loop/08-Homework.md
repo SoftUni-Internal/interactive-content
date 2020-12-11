@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" taskId="pb-js-04-p-01 executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function calculateMonthSalary (input) {
@@ -81,7 +81,7 @@ Write a program, which:
 
 [slide]
 # Problem: Number Sequence
-[code-task title="Number Sequence" taskId="pb-js-04-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numberSequence(input) {
@@ -159,7 +159,7 @@ Min number: -2
 [/video-vimeo]
 
 
-[code-task title="Power Of Numbers" taskId="pb-js-04-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function powerOfNumbers(input) {
@@ -202,7 +202,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="pb-js-04-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function equalPairs(input) {
@@ -338,7 +338,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="pb-js-04-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function zigZagSum(input) {
@@ -396,7 +396,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="pb-js-04-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function divideWithoutRemainder(input) {
@@ -410,7 +410,7 @@ Write a program, which:
 
 * Reads `n` and an **n amount** of numbers after it 
 
-* Finds the **percentage** of how many of them can be divided w**ithout a remainder using 2, 3 and 4 as a divisors** 
+* Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3 and 4 as a divisors** 
 
 * Prints the percentages for **p1, p2 and p3**, **formatted** to the second digit 
 
@@ -445,7 +445,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="pb-js-04-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function vowelSum(input) {
@@ -534,7 +534,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="pb-js-04-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rollercoaster(input) {
@@ -645,7 +645,7 @@ The rollercoaster departures
 [stream language="RO" videoId="487119938/9a4818ebf0"  /]
 [/video-vimeo]
 
-[code-task title="Multiply" taskId="pb-js-04-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Multiply" taskId="pb-js-for-loop-Multiply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function multiply(input) {
