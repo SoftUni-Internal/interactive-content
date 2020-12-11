@@ -1,8 +1,12 @@
 # Sets
 
 [slide]
-
 # What is a Set?
+
+[vimeo-video]
+[stream language="EN" videoId="489798942/1e12af5747" default /]
+[stream language="RO" videoId="489798942/1e12af5747"  /]
+[/video-vimeo]
 
 The Set object lets you store **unique** values of any type, whether primitive values or object references.
 

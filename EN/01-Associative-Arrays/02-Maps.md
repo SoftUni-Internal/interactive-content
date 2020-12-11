@@ -1,8 +1,12 @@
 # Map
 
 [slide]
-
 # What is a Map?
+
+[vimeo-video]
+[stream language="EN" videoId="489798657/f9cf526cd8" default /]
+[stream language="RO" videoId="489798657/f9cf526cd8"  /]
+[/video-vimeo]
 
 The Map object holds key-value pairs and keeps the original **insertion order** of the keys. 
 
@@ -14,8 +18,15 @@ Pure JavaScript objects are like Maps in that they both let you:
 1. Assign values to keys.
 2. Detect whether something is stored in a key.
 3. Delete keys.
+[/slide]
 
-## Adding, Accessing Elements
+[slide]
+# Adding, Accessing Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489798724/1030d751f4" default /]
+[stream language="RO" videoId="489798724/1030d751f4"  /]
+[/video-vimeo]
 
 To add a key-value pair to a map use the `.set()` method.
 
@@ -47,6 +58,15 @@ map.set(1, "one");
 map.set(2, "two");
 console.log(map.size);
 ```
+[/slide]
+
+[slide]
+# Containse / Delete
+
+[vimeo-video]
+[stream language="EN" videoId="489798726/3bdccf1504" default /]
+[stream language="RO" videoId="489798726/3bdccf1504"  /]
+[/video-vimeo]
 
 To find out if a map has a given key use the `.has()` method. 
 
@@ -82,8 +102,15 @@ map.set(2, "two");
 map.clear();
 console.log(map.size);
 ```
+[/slide]
 
-## Iterators
+[slide]
+# Iterators
+
+[vimeo-video]
+[stream language="EN" videoId="489798762/eb50153555" default /]
+[stream language="RO" videoId="489798762/eb50153555"  /]
+[/video-vimeo]
 
 By using iterators, we can return an array containing [key-value] pairs.
 
@@ -123,7 +150,15 @@ let entries = Array.from(map.values());
 console.log(entries);
 ```
 
-## Iterating A Map
+[/slide]
+
+[slide]
+# Iterating A Map
+
+[vimeo-video]
+[stream language="EN" videoId="489798765/fa6116356d" default /]
+[stream language="RO" videoId="489798765/fa6116356d"  /]
+[/video-vimeo]
 
 To print a map simply use a **for-of** loop.
 
@@ -163,6 +198,11 @@ for (let values of map.values()) {
 [slide]
 
 # Problem: Storage
+
+[vimeo-video]
+[stream language="EN" videoId="489798824/5773104659" default /]
+[stream language="RO" videoId="489798824/5773104659"  /]
+[/video-vimeo]
 
 [code-task title="Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -285,6 +325,11 @@ coknfee \-\> 350
 [slide]
 
 # Solution: Storage
+
+[vimeo-video]
+[stream language="EN" videoId="489798859/c32c318fc8" default /]
+[stream language="RO" videoId="489798859/c32c318fc8"  /]
+[/video-vimeo]
 
 [code-task title="Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -416,8 +461,12 @@ coknfee \-\> 350
 [/slide]
 
 [slide]
-
 # Map Sorting
+
+[vimeo-video]
+[stream language="EN" videoId="489798851/7c58633974" default /]
+[stream language="RO" videoId="489798851/7c58633974"  /]
+[/video-vimeo]
 
 To **sort** a Map, first transform it into an **array**, then use the `sort()` method.
 
@@ -450,10 +499,15 @@ for (let kvp of sorted) {
 
 # Problem: School Grades
 
+[vimeo-video]
+[stream language="EN" videoId="489798893/fbb50d617a" default /]
+[stream language="RO" videoId="489798893/fbb50d617a"  /]
+[/video-vimeo]
+
 [code-task title="School Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 function solve(input) {
   // Write your code here
 }
@@ -581,8 +635,12 @@ Tghj\: 5\, 6\, 6\, 5
 [/slide]
 
 [slide]
-
 # Solution: School Grades
+
+[vimeo-video]
+[stream language="EN" videoId="489798897/2d3a116709" default /]
+[stream language="RO" videoId="489798897/2d3a116709"  /]
+[/video-vimeo]
 
 [code-task title="School Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
