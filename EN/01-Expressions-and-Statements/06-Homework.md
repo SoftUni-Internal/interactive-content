@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Calculate Speed
-[code-task title="Calculate Speed" taskId="27-01-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -83,7 +83,7 @@ Write a program to calculate the speed by time and distance:
 
 [slide]
 # Problem: Currency Converter
-[code-task title="Currency Converter" taskId="27-01-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -169,7 +169,7 @@ Write a program to convert from USD to EUR:
 
 [slide]
 # Problem: Area of Triangle
-[code-task title="Area of Triangle" taskId="27-01-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Triangle" taskId="pb-java-statements-Area-of-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -251,7 +251,7 @@ Write a program to calculate a triangle area:
 
 [slide]
 # Problem: Four Operations
-[code-task title="Four Operations" taskId="27-01-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -336,7 +336,7 @@ Write a program, which:
 
 [slide]
 # Problem: Days to Minutes
-[code-task title="Days to Minutes" taskId="27-01-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Days to Minutes" taskId="pb-java-statements-Days-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -423,7 +423,7 @@ Write a program to convert from **days** to **minutes**:
 
 [slide]
 # Problem: Circle Area and Perimeter
-[code-task title="Circle Area and Perimeter" taskId="27-01-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Circle Area and Perimeter" taskId="pb-java-statements-Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -503,7 +503,7 @@ Perimeter = 59.061942
 
 [slide]
 # Problem: Person Info
-[code-task title="Person Info" taskId="27-01-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Person Info" taskId="pb-java-statements-Person-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner; 
@@ -594,7 +594,7 @@ A B from C - D!
 
 [slide]
 # Problem: Town Info
-[code-task title="Town Info" taskId="27-01-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Town Info" taskId="pb-java-statements-Town-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -678,7 +678,7 @@ Town A has population of 123456 and area 789 square km.
 
 [slide]
 # Problem: Square Area
-[code-task title="Square Area" taskId="27-01-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Square Area" taskId="pb-java-statements-Square-Areaa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -764,7 +764,7 @@ Print on the console the calculated area.
 
 [slide]
 # Problem: Projects Creation
-[code-task title="Project Creation" taskId="27-01-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -925,7 +925,7 @@ The architect Gergana will need 66 hours to complete 22 project/s.
 
 [slide]
 # Problem: Trapezoid Area
-[code-task title="Trapezoid Areq" taskId="27-01-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Trapezoid Areq" taskId="pb-java-statements-Trapezoid-Areq" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1031,7 +1031,7 @@ Print on the console a single number - the area of the trapezoid, formatted to t
 
 [slide]
 # Problem: Vegetable Market
-[code-task title="Vegetable Market" taskId="27-01-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vegetable Market" taskId="pb-java-statements-Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1221,7 +1221,7 @@ The result should be formatted to the **second decimal point.**
 
 [slide]
 # Problem: Pet Shop
-[code-task title="Pet Shop" taskId="27-01-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pet Shop" taskId="pb-java-statements-Pet-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1380,7 +1380,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 
 [slide]
 # Problem: Fishland
-[code-task title="Fishland" taskId="27-01-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1597,7 +1597,7 @@ Print on the console a single number with floating point: the money George will 
 
 [slide]
 # Problem: Yard Greening
-[code-task title="Yard Greening" taskId="27-01-p-15" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
