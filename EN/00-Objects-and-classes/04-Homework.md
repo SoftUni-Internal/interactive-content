@@ -1,18 +1,11 @@
-[slide]
+
 # Homework
 
-[image assetsSrc="homeowrk.png" /]
 
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-[/slide]
 
 [slide]
 # Problem: Employees
-[code-task title="Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Employees" taskId="js-fundamentals-pt2-objects-and-classes-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function employees(input){
@@ -102,7 +95,7 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 
 [slide]
 # Problem: Towns
-[code-task title="Towns" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Towns" taskId="js-fundamentals-pt2-objects-and-classes-Towns" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function towns(input){
@@ -206,7 +199,7 @@ a \| 136.45 \| 812.575
 
 [slide]
 # Problem: Movies
-[code-task title="Movies" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Movies"taskId="js-fundamentals-pt2-objects-and-classes-Movies" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function movies(input){
@@ -331,7 +324,7 @@ k onDate 30\.07\.2010
 
 [slide]
 # Problem: Inventory
-[code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Inventory"taskId="js-fundamentals-pt2-objects-and-classes-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function inventory(input){
@@ -488,7 +481,7 @@ items \=\> ca, d, e, q, t, w
 
 [slide]
 # Problem: Make a Dictionary
-[code-task title="Make a Dictionarytory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Make a Dictionarytory"taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function dictionary(input){
@@ -607,7 +600,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 
 [slide]
 # Problem: Songs
-[code-task title="Songs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Songs"taskId="js-fundamentals-pt2-objects-and-classes-Songs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function songs(input){
@@ -732,5 +725,12 @@ song
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+# Homework Results
+
+[tasks-results/]
 
 [/slide]
