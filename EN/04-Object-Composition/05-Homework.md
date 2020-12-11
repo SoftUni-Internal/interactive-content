@@ -34,17 +34,25 @@ The input will come ina form of an **array of arrays** - every nested array will
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criteria and by their **width** in **descending** order as a second criteria.  
 
 # Example 1
-| **Input** | **Output** |
-| --- | --- |
-|`[[10,5],[5,12]]`| `[{width:5, height:12, area:function(), compareTo:function(other)},
-{width:10, height:5, area:funciton(),compareTo:function(other)}]` |
+**Input**
+
+`[[10,5],[5,12]]` 
+
+**Output**
+
+`[{width:5, height:12, area:function(), compareTo:function(other)},
+{width:10, height:5, area:funciton(),compareTo:function(other)}]`
 
 # Example 2
-| **Input** | **Output** |
-| --- | --- |
-|`[[10,5], [3,20], [5,12]]`| `[{width:5, height:12, area:function(), compareTo:function(other)},
+**Input**
+
+`[[10,5], [3,20], [5,12]]`
+
+**Output**
+
+`[{width:5, height:12, area:function(), compareTo:function(other)},
 {width:3, height:20, area:funciton(),compareTo:function(other)},
-{width:10, height:5, area:funciton(),compareTo:function(other)}]]` |
+{width:10, height:5, area:funciton(),compareTo:function(other)}]]`
 
 [/task-description]
 [tests]
