@@ -1,8 +1,7 @@
 # Homework
-
 [slide]
 # Problem: Print "Hello Java"
-[code-task title="Print Hello Java" taskId="27-00-p-01" executionStrategy="java-code"]
+[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -43,7 +42,7 @@ Hello Java
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="27-00-p-02" executionStrategy="java-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="pb-java-introduction-Calculate-and-Print" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -85,7 +84,7 @@ Write a Java program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="27-00-p-03" executionStrategy="java-code"]
+[code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -127,7 +126,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="27-00-p-04" executionStrategy="java-code"]
+[code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -174,7 +173,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="27-00-p-05" executionStrategy="java-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -236,7 +235,7 @@ Prints a square of 7 * 7 stars like this:
 
 [slide]
 # Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="27-00-p-06" executionStrategy="java-code"]
+[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -276,7 +275,7 @@ Hello SoftUni
 
 [slide]
 # Problem: Rectangle Area
-[code-task title="Rectangle Area" taskId="27-00-p-07" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Rectangle Area" taskId="pb-java-introduction-Rectangle-area" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -319,7 +318,7 @@ Write a program, which:
 
 [slide]
 # Problem: Nums from 1 to 10
-[code-task title="Nums from 1 to 10" taskId="27-00-p-08" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Nums from 1 to 10" taskId="pb-java-introduction-nums-from-1-to-10" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -378,59 +377,11 @@ Each number should be on a new line.
 [/slide]
 
 
-[slide]
-# Problem: Calculations
-[code-task title="Calculations" taskId="27-00-p-09" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java]
-```
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-Write a program, which calculates and prints the value of the following expressions:
-
-* 5 + 3 \* 2
-* 4 \* 3 \* 2
-* 12 \/ 3 \* 2
-
-## Output 
-
-Print the result of each expression on a separate line
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-[/input]
-[output]
-11
-24
-8
-[/output]
-[/test]
-[test]
-[input]
-[/input]
-[output]
-11
-24
-8
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
 
 
 [slide]
 # Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="27-00-p-10" executionType="tests-execution" executionStrategy="java-code"]
+[code-task title="Triangle of Stars" taskId="pb-java-introduction-Triangle-of-Stars" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
