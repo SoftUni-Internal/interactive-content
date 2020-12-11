@@ -4,7 +4,7 @@
 
 # Problem: Word Tracker
 
-[code-task title="Word Tracker" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Word Tracker" taskId="js-fundamentals-pt2-Associative-Arrays-World-tracker" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -203,7 +203,7 @@ c \- 1
 
 # Problem: Odd Occurrences
 
-[code-task title="Odd Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Odd Occurrences" taskId="js-fundamentals-pt2-Associative-Arrays-odd-occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -287,7 +287,7 @@ a aa ab cccc
 
 # Problem: Piccolo
 
-[code-task title="Piccolo" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Piccolo" taskId="js-fundamentals-pt2-Associative-Arrays-Piccolo" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -488,7 +488,7 @@ sss
 
 # Problem: Party Time
 
-[code-task title="Party Time" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Party Time" taskId="js-fundamentals-pt2-Associative-Arrays-party-time" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -691,7 +691,7 @@ jghvgyg
 
 # Problem: Card Game
 
-[code-task title="Card Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Card Game" taskId="js-fundamentals-pt2-Associative-Arrays-Card-Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -846,7 +846,7 @@ Pesho\: 22
 
 # Problem: Company Users
 
-[code-task title="Company Users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Company Users" taskId="js-fundamentals-pt2-Associative-Arrays-Company-users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -1086,7 +1086,7 @@ Q
 
 # Problem: A Miner Task
 
-[code-task title="A Miner Task" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="A Miner Task" taskId="js-fundamentals-pt2-Associative-Arrays-A-Miner-Task" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
