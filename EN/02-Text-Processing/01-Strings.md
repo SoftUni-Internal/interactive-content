@@ -79,13 +79,15 @@ That will also return `J` because the two ways are identical at the end.
 [stream language="RO" videoId="489817393/3dc5fc66ce"  /]
 [/video-vimeo]
 
-[code-task title="Print Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Characters" taskId="text-processing-lab-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function printCharacters(input){
-   
+  // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
 # Description
@@ -184,8 +186,9 @@ o
 [stream language="RO" videoId="489817402/1b82ef9f2e"  /]
 [/video-vimeo]
 
-[code-task title="Print Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Characters" taskId="text-processing-lab-solution-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function printCharacters(input){
 
