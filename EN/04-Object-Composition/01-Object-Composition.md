@@ -34,12 +34,12 @@ After that we assign those variables to the `town` object.
 And finally we assing the `location` object to the `town` object.
 
 ```js live
-let name = "Berlin";
-let population = 3769495;
-let country = "Germany";
-let town = { name, population, country };
+let name = "Berlin";
+let population = 3769495;
+let country = "Germany";
+let town = { name, population, country };
 console.log(town);
-town.location = { lat: 52.520, lng: 13.404 };
+town.location = { lat: 52.520, lng: 13.404 };
 console.log(town);
 ```
 
@@ -53,17 +53,17 @@ The way we add a function to the object:
 - finally curly braces containing the scope of the function.
 
 ```js live
-let rect = {
-  width: 10,
-  height: 4,
-  grow: function(w, h) { 
-    this.width += w; this.height += h;
-  },
-  print: function() { 
-    console.log(`[${this.width} x ${this.height}]`);
-  }
+let rect = {
+    width: 10,
+    height: 4,
+    grow: function(w, h) {
+        this.width += w; this.height += h;
+        },
+        print: function() {
+            console.log(`[${this.width} x ${this.height}]`);
+            }
 };
-rect.grow(2, 3);
+rect.grow(2, 3);
 rect.print();
 ```
 
@@ -71,15 +71,15 @@ Printing objects using the `ToString()` function:
 
 ```js live
 let rect = {
-  width: 10,
-  height: 4,
-  toString: function() { 
-    return `rect[${this.width} x ${this.height}]`;
-  }
+    width: 10,
+    height: 4,
+    toString: function() {
+        return `rect[${this.width} x ${this.height}]`;
+        }
 };
 console.log(rect);
 console.log(rect.toString());
-console.log('' + rect); 
+console.log('' + rect); 
 ```
 
 [/slide]
