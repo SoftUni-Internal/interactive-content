@@ -1689,6 +1689,6 @@ The pool is 10.72% full. Pipe 1: 54.55%. Pipe 2: 45.45%.
 [slide]
 # Homework Results
 
-[tasks-results /]
+[tasks-results/]
 
 [/slide]

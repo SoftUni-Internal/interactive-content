@@ -2396,5 +2396,5 @@ Student's final assessment is 4.54.
 [slide]
 # Homework Results
 
-[tasks-results /]
+[tasks-results/]
 [/slide]

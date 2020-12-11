@@ -1771,5 +1771,5 @@ The discount is: 101.97 dollars
 [slide]
 # Homework Results
 
-[tasks-results /]
+[tasks-results/]
 [/slide]

@@ -2194,6 +2194,6 @@ Y
 [slide]
 # Homework Results
 
-[tasks-results /]
+[tasks-results/]
 
 [/slide]
