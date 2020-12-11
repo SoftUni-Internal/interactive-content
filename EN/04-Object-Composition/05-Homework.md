@@ -347,7 +347,7 @@ You are given the following HTML for testing purposes\:
 
 # Example
 
-`<!DOCTYPE html>
+```html
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -364,7 +364,7 @@ You are given the following HTML for testing purposes\:
     Subtract</button>
 </body>
 </html>
-`
+```
 
 [/task-description]
 [tests]
