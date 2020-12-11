@@ -35,7 +35,7 @@ Followed by:
 * If the lift is full and there are no more people waiting to get in, you should just print out the state of each cabin separated by a single space.
 
 
-[code-task title="The Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="The Lift" taskId="js-fundamentals-examPreparation-2-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -77,13 +77,33 @@ function solve(input) {
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+15
+0 0 0 0
+[/input]
+[output]
+The lift has empty spots!
+4 4 4 3
+[/output]
+[/test]
+[test open]
+[input]
+20
+0 2 0
+[/input]
+[output]
+There isn't enough space! 10 people in a queue!
+4 4 4
+[/output]
+[/test]
 [test]
 [input]
 10
 0 2 0 1 3 0 0 0
 [/input]
 [output]
-There is room for more passengers\!
+The lift has empty spots!
 4 4 4 1 3 0 0 0
 [/output]
 [/test]
@@ -93,7 +113,7 @@ There is room for more passengers\!
 4 4 4 4 4 4 4 4 1 4 4 4
 [/input]
 [output]
-The lift is full. 7 people currently in line.
+There isn't enough space! 7 people in a queue!
 4 4 4 4 4 4 4 4 4 4 4 4
 [/output]
 [/test]
@@ -103,7 +123,7 @@ The lift is full. 7 people currently in line.
 0 0 4
 [/input]
 [output]
-The lift is full. 12 people currently in line.
+There isn't enough space! 12 people in a queue!
 4 4 4
 [/output]
 [/test]
@@ -113,7 +133,7 @@ The lift is full. 12 people currently in line.
 0
 [/input]
 [output]
-There is room for more passengers\!
+The lift has empty spots!
 2
 [/output]
 [/test]
@@ -132,7 +152,7 @@ There is room for more passengers\!
 0 0 0 0 0 0
 [/input]
 [output]
-There is room for more passengers\!
+The lift has empty spots!
 4 4 4 3 0 0
 [/output]
 [/test]
@@ -142,7 +162,7 @@ There is room for more passengers\!
 0 2 0
 [/input]
 [output]
-The lift is full. 10 people currently in line.
+There isn't enough space! 10 people in a queue!
 4 4 4
 [/output]
 [/test]
@@ -152,7 +172,7 @@ The lift is full. 10 people currently in line.
 0 0 4
 [/input]
 [output]
-The lift is full. 12 people currently in line.
+There isn't enough space! 12 people in a queue!
 4 4 4
 [/output]
 [/test]
@@ -162,7 +182,7 @@ The lift is full. 12 people currently in line.
 0 2 0 1 3 4
 [/input]
 [output]
-The lift is full. 4 people currently in line.
+There isn't enough space! 4 people in a queue!
 4 4 4 4 4 4
 [/output]
 [/test]
