@@ -1,6 +1,7 @@
-[slide]
 # Problem 2: Fancy Barcodes
-## Description
+
+[slide]
+# Description
 Your task is to determine if the given sequence of characters is a valid barcode or not.
 
 Each line must not contain anything else but a valid barcode. 
@@ -48,7 +49,7 @@ For each barcode that you process, you need to print a message.
 
 * If the barcode is valid: `Product group: {product group}`
 
-[code-task title="Fancy Barcodes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -81,10 +82,42 @@ Product group\: 00
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+3
+@\#FreshFisH@\# 
+@\#\#\#Brea0D@\#\#\# 
+@\#\#Che46sE@\#\#
+[/input]
+[output]
+Product group: 00
+Product group: 0
+Product group: 46
+[/output]
+[/test]
+[test open]
+[input]
+6
+@\#\#\#Val1d1teM@\#\#\#
+@\#InvalidIteM@\#
+\#\#InvaliDiteM\#\#
+@InvalidIteM@
+@\#Invalid_IteM@\#
+@\#ValiditeM@\#
+[/input]
+[output]
+Product group: 11
+Product group: 00
+Invalid barcode
+Invalid barcode
+Invalid barcode
+Product group: 00
+[/output]
+[/test]
 [test]
 [input]
 1
-\@\#invalid\@\#
+@\#invalid@\#
 [/input]
 [output]
 Invalid barcode
@@ -93,7 +126,7 @@ Invalid barcode
 [test]
 [input]
 1
-\@\#\#Invalid\@\#\#
+@\#\#Invalid@\#\#
 [/input]
 [output]
 Invalid barcode
@@ -102,7 +135,7 @@ Invalid barcode
 [test]
 [input]
 1
-\@\#invalidBarcodE\@\#
+@\#invalidBarcodE@\#
 [/input]
 [output]
 Invalid barcode
@@ -111,7 +144,7 @@ Invalid barcode
 [test]
 [input]
 1
-\@\#ValiD\@\#
+@\#ValiD@\#
 [/input]
 [output]
 Invalid barcode
@@ -120,7 +153,7 @@ Invalid barcode
 [test]
 [input]
 1
-\@\#\#Xa013mlX\@\#\#
+@\#\#Xa013mlX@\#\#
 [/input]
 [output]
 Product group: 013
@@ -129,118 +162,86 @@ Product group: 013
 [test]
 [input]
 3
-\@\#CucumberS\@\#
-\@\#\#CarrotS\@\#\#
-\@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS\@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+@\#CucumberS@\#
+@\#\#CarrotS@\#\#
+@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#PotatoeS@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 [/input]
 [output]
-Product group\: 00
-Product group\: 00
-Product group\: 00
+Product group: 00
+Product group: 00
+Product group: 00
 [/output]
 [/test]
 [test]
 [input]
 3
-\@\#P1n3Appl3S\@\#
-\@\#\#\#X1x2x3x4x5x6x7x8x9x0X\@\#\#\#
-\@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ\@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+@\#P1n3Appl3S@\#
+@\#\#\#X1x2x3x4x5x6x7x8x9x0X@\#\#\#
+@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#Zzzz987zzz65zzz43zzz210zzZ@\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 [/input]
 [output]
-Product group\: 133
-Product group\: 1234567890
-Product group\: 9876543210
+Product group: 133
+Product group: 1234567890
+Product group: 9876543210
 [/output]
 [/test]
 [test]
 [input]
 1
-\@\#Test4et0O\@\#
+@\#Test4et0O@\#
 [/input]
 [output]
-Product group\: 40
+Product group: 40
 [/output]
 [/test]
 [test]
 [input]
 11
-\@\#\#Aaa1A1aaA\@\#\#
-\@\#Bbbbbb\@\#
-\@\#Ccccc_ccccC\@\#
-\@\#\#\#D2d3d4D\@\#\#\#
-\@\#EfgfE\@\#
-\@\#hhhhhhhH\@\#
-\@\#IIIIIIIII\@\#
-\@\#IIII11IIIII\@\#
-\@\#\#JjjjjJ\@\#
-\@KkkkkkK\@
-\@\#\#Lmn83opq19RsTuV\@\#\#
+@\#\#Aaa1A1aaA@\#\#
+@\#Bbbbbb@\#
+@\#Ccccc_ccccC@\#
+@\#\#\#D2d3d4D@\#\#\#
+@\#EfgfE@\#
+@\#hhhhhhhH@\#
+@\#IIIIIIIII@\#
+@\#IIII11IIIII@\#
+@\#\#JjjjjJ@\#
+@KkkkkkK@
+@\#\#Lmn83opq19RsTuV@\#\#
 [/input]
 [output]
-Product group\: 11
+Product group: 11
 Invalid barcode
 Invalid barcode
-Product group\: 234
+Product group: 234
 Invalid barcode
 Invalid barcode
-Product group\: 00
-Product group\: 11
-Product group\: 00
+Product group: 00
+Product group: 11
+Product group: 00
 Invalid barcode
-Product group\: 8319
+Product group: 8319
 [/output]
 [/test]
 [test]
 [input]
 7
-\@\#Th1sIsTh3T0ughestT3sT\@\#
-\@\#\#\#ItReallyISharD\@\#\#\#
-\@\#\#ItT3stsTh3Wh0l3Match1nG\@\#\#
-\@\#I\`llThrowSomeInvalidCodeS\@\#
-\@\#\#\#AndSomeMorE\@\#\#
-\@\#\#AndFinally\@\#\#
-\@\#\#Th3R34lM0F0T3sT\@\#\#\#
+@\#Th1sIsTh3T0ughestT3sT@\#
+@\#\#\#ItReallyISharD@\#\#\#
+@\#\#ItT3stsTh3Wh0l3Match1nG@\#\#
+@\#I`llThrowSomeInvalidCodeS@\#
+@\#\#\#AndSomeMorE@\#\#
+@\#\#AndFinally@\#\#
+@\#\#Th3R34lM0F0T3sT@\#\#\#
 [/input]
 [output]
-Product group\: 1303
-Product group\: 00
-Product group\: 33031
+Product group: 1303
+Product group: 00
+Product group: 33031
 Invalid barcode
-Product group\: 00
+Product group: 00
 Invalid barcode
-Product group\: 334003
-[/output]
-[/test]
-[test]
-[input]
-3
-\@\#FreshFisH\@\#
-\@\#\#\#Brea0D\@\#\#\#
-\@\#\#Che46sE\@\#\#
-[/input]
-[output]
-Product group\: 00
-Product group\: 0
-Product group\: 46
-[/output]
-[/test]
-[test]
-[input]
-6
-\@\#\#\#Val1d1teM\@\#\#\#
-\@\#InvalidIteM\@\#
-\#\#InvaliDiteM\#\#
-\@InvalidIteM\@
-\@\#Invalid\_IteM\@\#
-\@\#ValiditeM\@\#
-[/input]
-[output]
-Product group\: 11
-Product group\: 00
-Invalid barcode
-Invalid barcode
-Invalid barcode
-Product group\: 00
+Product group: 334003
 [/output]
 [/test]
 [/tests]
