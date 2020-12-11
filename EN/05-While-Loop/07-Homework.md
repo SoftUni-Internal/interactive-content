@@ -11,7 +11,7 @@
 
 
 
-[code-task title="Sum Digits" taskId="pb-js-05-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Digits" taskId="pb-js-while-loop-Sum-Digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumDigits(input) {
@@ -98,7 +98,7 @@ Write a program, which:
 
 
 
-[code-task title="Favorite Book" taskId="pb-js-05-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Favorite Book" taskId="pb-js-while-loop-Favorite-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function favoriteBook(input) {
@@ -145,7 +145,7 @@ Book found! Attempts: 4
 
 [slide]
 # Problem: Find Min and Max
-[code-task title="Find Min and Max" taskId="pb-js-05-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Find Min and Max" taskId="pb-js-while-loop-Find-Min-And-Max" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function minAndMax(input) {
@@ -236,7 +236,7 @@ Min number: 0
 
 [slide]
 # Problem: Special Number
-[code-task title="Special Number" taskId="pb-js-05-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Special Number" taskId="pb-js-while-loop-Special-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function specialNumber(input) {
@@ -285,7 +285,7 @@ Write a program, which:
 
 [slide]
 # Problem: Special Bonus
-[code-task title="Special Bonus" taskId="pb-js-05-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Special Bonus" taskId="pb-js-while-loop-Special-Bonus" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function specialBonus(nums) {
@@ -340,7 +340,7 @@ Write a program, which:
 
 [slide]
 # Problem: Sequence 2k + 1
-[code-task title="Sequence 2k + 1" taskId="pb-js-05-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function specialBonus(nums) {
@@ -442,7 +442,7 @@ Write a program, which:
 
 [slide]
 # Problem: Account Balance
-[code-task title="Account Balance" taskId="pb-js-05-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Account Balance" taskId="pb-js-while-loop-Account-Balance" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function accountBalance(input) {
