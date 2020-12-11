@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Repeat String
-[code-task title="Repeat String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Repeat String" taskId="js-fundamentals-1-Functions-Repeat-String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function repeatString(input){
@@ -88,7 +88,7 @@ StringString
 
 [slide]
 # Problem: Smallest of Three Numbers
-[code-task title="Smallest of Three Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Smallest of Three Numbers" taskId="js-fundamentals-1-Functions-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function smallestNumbers(input){
@@ -180,7 +180,7 @@ Use appropriate name for the function.
 
 [slide]
 # Problem: Add and Subtract
-[code-task title="Add and Subtract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Add and Subtract" taskId="js-fundamentals-1-Functions-Add-and-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function addSubtract(input){
@@ -323,7 +323,7 @@ Write a function `sum()` to get the sum of the first two integers and `subtract(
 
 [slide]
 # Problem: Characters in Range
-[code-task title="Characters in Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Characters in Range" taskId="js-fundamentals-1-Functions-Characters-in-Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function charactersInRange(input){
@@ -409,7 +409,7 @@ b c
 
 [slide]
 # Problem: Odd and Even Sum
-[code-task title="Odd and Even Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Odd and Even Sum" taskId="js-fundamentals-1-Functions-Odd-and-Even-sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddEvenSum(input){
@@ -480,7 +480,7 @@ Odd sum = 30, Even sum = 8
 
 [slide]
 # Problem: Palindrome Integers
-[code-task title="Palindrome Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Palindrome Integers" taskId="js-fundamentals-1-Functions-Palindrom-Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function palindrome(input){
@@ -622,7 +622,7 @@ true
 
 [slide]
 # Problem: Password Validator
-[code-task title="Password Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Password Validator" taskId="js-fundamentals-1-Functions-Password-Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwordValidator(input){
@@ -726,7 +726,7 @@ Password is valid
 
 [slide]
 # Problem: NxN Matrix
-[code-task title="NxN Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function мatrix(input){
@@ -877,7 +877,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 
 [slide]
 # Problem: Perfect Number 
-[code-task title="Perfect Number " executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Perfect Number" taskId="js-fundamentals-1-Functions-Perfect-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function perfectNumber (input){
