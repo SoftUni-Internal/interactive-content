@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="27-05-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Digits" taskId="pb-java-while-loop-sum-digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -84,7 +84,7 @@ Write a program, which:
 
 [slide]
 # Problem: Favorite Book
-[code-task title="Favorite Book" taskId="27-05-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Favorite Book" taskId="pb-java-while-loop-favourite-book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -152,7 +152,7 @@ Book found! Attempts: 12
 
 [slide]
 # Problem: Find Min and Max
-[code-task title="Find Min and Max" taskId="27-05-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Find Min and Max" taskId="pb-java-while-loop-find-min-and-max" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -264,7 +264,7 @@ Min number: 0
 
 [slide]
 # Problem: Special Number
-[code-task title="Special Number" taskId="27-05-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Special Number" taskId="pb-java-while-loop-special-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -344,7 +344,7 @@ Write a program, which:
 
 [slide]
 # Problem: Special Bonus
-[code-task title="Special Bonus" taskId="27-05-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Special Bonus" taskId="pb-java-while-loop-special-bonus" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -412,7 +412,7 @@ Write a program, which:
 
 [slide]
 # Problem: Sequence 2k + 1
-[code-task title="Sequence 2k + 1" taskId="27-05-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="pb-java-while-loop-sequence-2k-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -525,7 +525,7 @@ Write a program, which:
 
 [slide]
 # Problem: Account Balance
-[code-task title="Account Balance" taskId="27-05-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Account Balance" taskId="pb-java-while-loop-account-balance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -589,7 +589,7 @@ Total: ‭165.73‬
 
 [slide]
 # Problem: Old Books
-[code-task title="Old Books" taskId="27-05-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Old Books" taskId="pb-java-while-loop-old-books" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -851,7 +851,7 @@ You checked 1 books.
 
 [slide]
 # Problem: Exam Preparation
-[code-task title="Exam Preparation" taskId="27-05-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Exam Preparation" taskId="pb-java-while-loop-exam-preparation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1207,7 +1207,7 @@ Last problem: Poison
 
 [slide]
 # Problem: Walking
-[code-task title="Walking" taskId="27-05-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+[code-task title="Walking" taskId="pb-java-while-loop-Walking" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1449,7 +1449,7 @@ Going home
 
 [slide]
 # Problem: Dishwasher
-[code-task title="Dishwasher" taskId="27-05-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Dishwasher" taskId="pb-java-while-loop-Dishwasher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1684,7 +1684,7 @@ Leftover detergent 725 ml.
 
 [slide]
 # Problem: Report System
-[code-task title="Report System" taskId="27-05-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Report System" taskId="pb-java-while-loop-Report-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1936,7 +1936,7 @@ Failed to collect required money for charity.
 
 [slide]
 # Problem: Graduation
-[code-task title="Graduation" taskId="27-05-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Graduation" taskId="pb-java-while-loop-graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -2135,7 +2135,7 @@ Alen graduated. Average grade: 5.34
 
 [slide]
 # Problem: Stream Of Letters
-[code-task title="Stream Of Letters" taskId="27-05-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Stream Of Letters" taskId="pb-java-while-loop-stream-of-letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
