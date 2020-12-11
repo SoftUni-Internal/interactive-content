@@ -70,7 +70,7 @@ rect.print();
 Printing objects using the `ToString()` function:
 
 ```js live
-let rect = {
+let rect = {
     width: 10,
     height: 4,
     toString: function() {
