@@ -1,8 +1,12 @@
 # Processing Arrays
 
 [slide]
-
 # Transform Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489374289/c0b4d9c5f7" default /]
+[stream language="RO" videoId="489374289/c0b4d9c5f7"  /]
+[/video-vimeo]
 
 Starting from ES5, JavaScript `Array` type provides the `map()` method that allows us to transform the elements of an array in a cleaner way. 
 
@@ -37,6 +41,11 @@ You can read more about [map()](https://developer.mozilla.org/en-US/docs/Web/Jav
 [slide]
 # Filter Elements
 
+[vimeo-video]
+[stream language="EN" videoId="489374290/1e675608b7" default /]
+[stream language="RO" videoId="489374290/1e675608b7"  /]
+[/video-vimeo]
+
 The `filter()` method creates a new array, filled with all array elements that pass a given test (provided as a function).
 
 ShapeIn this example, we use the `filter()` method to create a new array, where the length of each element is greater than three.
@@ -62,6 +71,12 @@ console.log(positiveNums);
 
 [slide]
 # Problem: Process Odd Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374571/1014b0026b" default /]
+[stream language="RO" videoId="489374571/1014b0026b"  /]
+[/video-vimeo]
+
 [code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -170,6 +185,12 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 
 [slide]
 # Solution: Process Odd Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374571/1014b0026b" default /]
+[stream language="RO" videoId="489374571/1014b0026b"  /]
+[/video-vimeo]
+
 [code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -288,6 +309,11 @@ The output is printed on the c**onsole on a single line**, **separated by space.
 [slide]
 # Sorting Arrays
 
+[vimeo-video]
+[stream language="EN" videoId="489374405/c099f73018" default /]
+[stream language="RO" videoId="489374405/c099f73018"  /]
+[/video-vimeo]
+
 The `sort()` method sorts the items of an array.
 
 Depending on the provided **compare function**, the sort order can either **be alphabetic or numeric**, and either ascending (up) or descending (down). 
@@ -325,6 +351,11 @@ console.log(numbers);
 [slide]
 # Compare Functions
 
+[vimeo-video]
+[stream language="EN" videoId="489374404/c8ee191474" default /]
+[stream language="RO" videoId="489374404/c8ee191474"  /]
+[/video-vimeo]
+
 The `sort()` method, fortunately, can sort negative, zero, and positive values in the correct order.
 
 When the `sort()` method compares two values, it sends the values to the **compare function**, and sorts the values according to the returned value.  
@@ -358,6 +389,12 @@ console.log(words);
 [/slide]
 
 [slide]
+
+[vimeo-video]
+[stream language="EN" videoId="489374451/5801e23a89" default /]
+[stream language="RO" videoId="489374451/5801e23a89"  /]
+[/video-vimeo]
+
 # Problem: Smallest two Numbers
 [code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -464,6 +501,12 @@ let sortedInAscending = arr.sort((a, b) =>{
 
 [slide]
 # Solution: Smallest two Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374613/1127440400" default /]
+[stream language="RO" videoId="489374613/1127440400"  /]
+[/video-vimeo]
+
 [code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
