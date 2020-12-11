@@ -943,3 +943,88 @@ str = String.format('jumps {0} {1}',
 [code-io /]
 [/code-task]
 [/slide]
+
+[slide]
+# Problem: Sorted List
+[code-task title="Sorted List" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+Implement a collection, which keeps a list of numbers, sorted in **ascending** order. 
+
+It must support the following functionality\:
+- `add(elemenent)` adds a new element to the collection.
+- `remove(index)` removes the element at position index.
+- `get(index)` returns the value of the element at position index.
+- `size` number of elements stored in the collection.
+
+The correct order of the element must be kept at all times, regardless of which operation is called. 
+
+**Removing** and **retrieving** elements should not work if the provided index points outside the **length** of the collection \(either throw an error or do nothing\). 
+
+Note the **size** of the collection is **NOT** a function. 
+
+Write your code such that the **first function in your solution** returns an instance of your Sorted List.
+
+
+# Example
+
+```
+function sortedList() {
+    return (function () {
+        let arr = [];
+        let sorting = (a, b) => a - b;
+        let add = function (element) {};
+        let remove = function (index) {};
+        let get = function (index) {};
+        let size = 0;
+        return {add, remove, get, size}
+    })();
+}
+```
+
+[/task-description]
+[tests]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+[/slide]
