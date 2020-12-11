@@ -3,6 +3,11 @@
 [slide]
 # Slicing Arrays
 
+[vimeo-video]
+[stream language="EN" videoId="489374953/4d8a0f208e" default /]
+[stream language="RO" videoId="489374953/4d8a0f208e"  /]
+[/video-vimeo]
+
 The `array.slice()` method returns the selected elements in an array, as a new array object.
 
 It selects the elements starting at the given start argument, and ends at, but does not include, the given end argument. 
@@ -16,8 +21,15 @@ console.log(sliced);
 
 console.log(myArray.slice(2,4));
 ```
+[slide]
 
+[/slide]
 # Splice: Cut and Insert Array Elements
+
+[vimeo-video]
+[stream language="EN" videoId="489374185/fc61ac9758" default /]
+[stream language="RO" videoId="489374185/fc61ac9758"  /]
+[/video-vimeo]
 
 The `array.splice()` adds or removes items to\/from an array, and returns the removed item(s).
 
@@ -39,6 +51,12 @@ console.log(nums.join('|'));
 
 [slide]
 # Problem: First and Last K Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374198/6c535a4be1" default /]
+[stream language="RO" videoId="489374198/6c535a4be1"  /]
+[/video-vimeo]
+
 [code-task title="First and Last K Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -164,6 +182,12 @@ On the second line, print the **last k** elements, separated by space.
 
 [slide]
 # Solution: First and Last K Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="489374505/9ba74796f9" default /]
+[stream language="RO" videoId="489374505/9ba74796f9"  /]
+[/video-vimeo]
+
 [code-task title="First and Last K Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -304,6 +328,12 @@ On the second line, print the **last k** elements, separated by space.
 
 [slide]
 # Problem: Last K Numbers Sequence
+
+[vimeo-video]
+[stream language="EN" videoId="489374248/da5b2345e6" default /]
+[stream language="RO" videoId="489374248/da5b2345e6"  /]
+[/video-vimeo]
+
 [code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -398,6 +428,12 @@ The fifth element is equals to the sum of the 2nd, 3rd and 4th (1, 2 and 4) and 
 
 [slide]
 # Solution: Last K Numbers Sequence
+
+[vimeo-video]
+[stream language="EN" videoId="489374563/74c0604242" default /]
+[stream language="RO" videoId="489374563/74c0604242"  /]
+[/video-vimeo]
+
 [code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
