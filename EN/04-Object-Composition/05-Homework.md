@@ -347,7 +347,7 @@ You are given the following HTML for testing purposes\:
 
 # Example
 
-```html
+```js
 <html lang="en">
 <head>
     <meta charset="UTF-8">
