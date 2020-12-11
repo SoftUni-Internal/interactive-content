@@ -67,93 +67,93 @@ Ready for the trip\! Planned stops: Hungary\:\:Rome\-Greece
 [tests]
 [test open]
 [input]
-Hawai::Cyprys-Greece
-Add Stop:7:Rome
-Remove Stop:11:16
-Switch:Hawai:Bulgaria
+Hawai\:\:Cyprys\-Greece
+Add Stop\:7\:Rome
+Remove Stop\:11\:16
+Switch\:Hawai\:Hungary
 Travel
 [/input]
 [output]
-Hawai::RomeCyprys-Greece
-Hawai::Rome-Greece
-Bulgaria::Rome-Greece
-Ready for world tour! Planned stops: Bulgaria::Rome-Greece
+Hawai\:\:RomeCyprys-Greece
+Hawai\:\:Rome\-Greece
+Hungary\:\:Rome\-Greece
+Ready for world tour\! Planned stops\: Hungary\:\:Rome-Greece
 [/output]
 [/test]
 [test]
 [input]
-A:B:C
-Add Stop:0:D
+A\:B\:C
+Add Stop\:0\:D
 Travel
 [/input]
 [output]
 DA:B:C
-Ready for world tour! Planned stops: DA:B:C
+Ready for world tour\! Planned stops\: DA\:B\:C
 [/output]
 [/test]
 [test]
 [input]
-A:B:C
-Remove Stop:4:4
+A\:B\:C
+Remove Stop\:4\:4
 Travel
 [/input]
 [output]
-A:B:
-Ready for world tour! Planned stops: A:B:
+A\:B\:
+Ready for world tour\! Planned stops\: A\:B\:
 [/output]
 [/test]
 [test]
 [input]
-A:B:C
-Switch:B:D
+A\:B\:C
+Switch\:B\:D
 Travel
 [/input]
 [output]
 A:D:C
-Ready for world tour! Planned stops: A:D:C
+Ready for world tour\! Planned stops\: A\:D\:C
 [/output]
 [/test]
 [test]
 [input]
-A:B:C:D
-Add Stop:6:F
-Remove Stop:7:7
+A\:B\:C\:D
+Add Stop\:6\:F
+Remove Stop\:7\:7
 Travel
 [/input]
 [output]
-A:B:C:FD
-A:B:C:F
-Ready for world tour! Planned stops: A:B:C:F
+A\:B\:C\:FD
+A\:B\:C\:F
+Ready for world tour\! Planned stops\: A\:B\:C\:F
 [/output]
 [/test]
 [test]
 [input]
-A:B:C:D
-Remove Stop:0:1
-Remove Stop:9:10
-Switch:C:F
+A\:B\:C\:D
+Remove Stop\:0\:1
+Remove Stop\:9\:10
+Switch\:C\:F
 Travel
 [/input]
 [output]
 B:C:D
 B:C:D
 B:F:D
-Ready for world tour! Planned stops: B:F:D
+Ready for world tour\! Planned stops\: B\:F\:D
 [/output]
 [/test]
 [test]
 [input]
-A:B:C:D
-Add Stop:3:N
-Remove Stop:4:8
-Switch:A:AA
+A\:B\:C\:D
+Add Stop\:3\:N
+Remove Stop\:4\:8
+Switch\:A\:AA
 Travel
 [/input]
 [output]
-A:BN:C:D
-A:BN:C:D
-AA:BN:C:D
-Ready for world tour! Planned stops: AA:BN:C:D
+A\:BN\:C\:D
+A\:BN\:C\:D
+AA\:BN\:C\:D
+Ready for world tour\! Planned stops\: AA\:BN\:C\:D
 [/output]
 [/test]
 [/tests]
