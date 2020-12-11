@@ -50,7 +50,7 @@ If the start index, specified in any command is out of range to begin with, Pete
 
 `Peter finished the archery tournament with {points}!`
 
-[code-task title="Archery Tournament" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Archery Tournament" taskId="js-fundamentals-regular-exam-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -89,120 +89,148 @@ At this point he aquires 5 points.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-1\|1\|1\|1\|1
-Shoot Left\@0\@2
-Shoot Right\@4\@5
-Shoot Right\@6\@5
+10\|10\|10\|10\|10
+Shoot Left@0@2
+Shoot Right@4@5
+Shoot Right@6@5
 Reverse
 Game over
 [/input]
 [output]
-0 \- 0 \- 1 \- 1 \- 1
-Peter finished the archery tournament with 2 points\!
+5 - 5 - 10 - 10 - 10
+Peter finished the archery tournament with 10 points!
+[/output]
+[/test]
+[test open]
+[input]
+20\|30\|40\|50\|60
+Shoot Left@0@12
+Shoot Right@4@15
+Shoot Left@6@5
+Reverse
+Game over
+[/input]
+[output]
+55 - 45 - 40 - 30 - 20
+Peter finished the archery tournament with 10 points!
 [/output]
 [/test]
 [test]
 [input]
 1\|1\|1\|1\|1
-Shoot Left\@0\@2
-Shoot Left\@0\@2
-Shoot Right\@4\@5
-Shoot Right\@6\@5
+Shoot Left@0@2
+Shoot Right@4@5
+Shoot Right@6@5
 Reverse
 Game over
 [/input]
 [output]
-0 \- 0 \- 1 \- 1 \- 1
-Peter finished the archery tournament with 2 points\!
+0 - 0 - 1 - 1 - 1
+Peter finished the archery tournament with 2 points!
 [/output]
 [/test]
 [test]
 [input]
 1\|1\|1\|1\|1
-Shoot Left\@0\@2
-Shoot Right\@4\@5
-Shoot Right\@4\@5
-Shoot Right\@6\@5
+Shoot Left@0@2
+Shoot Left@0@2
+Shoot Right@4@5
+Shoot Right@6@5
 Reverse
 Game over
 [/input]
 [output]
-0 \- 0 \- 1 \- 1 \- 1
-Peter finished the archery tournament with 2 points\!
+0 - 0 - 1 - 1 - 1
+Peter finished the archery tournament with 2 points!
+[/output]
+[/test]
+[test]
+[input]
+1\|1\|1\|1\|1
+Shoot Left@0@2
+Shoot Right@4@5
+Shoot Right@4@5
+Shoot Right@6@5
+Reverse
+Game over
+[/input]
+[output]
+0 - 0 - 1 - 1 - 1
+Peter finished the archery tournament with 2 points!
 [/output]
 [/test]
 [test]
 [input]
 10\|10\|10\|10\|10
-Shoot Left\@0\@2
-Shoot Right\@4\@5
-Shoot Right\@\-6\@5
+Shoot Left@0@2
+Shoot Right@4@5
+Shoot Right@-6@5
 Reverse
 Game over
 [/input]
 [output]
-5 \- 5 \- 10 \- 10 \- 10
-Peter finished the archery tournament with 10 points\!
+5 - 5 - 10 - 10 - 10
+Peter finished the archery tournament with 10 points!
 [/output]
 [/test]
 [test]
 [input]
 10\|10\|10\|10\|10
-Shoot Left\@3\@0
-Shoot Right\@4\@0
-Shoot Right\@\-6\@5
+Shoot Left@3@0
+Shoot Right@4@0
+Shoot Right@-6@5
 Reverse
 Game over
 [/input]
 [output]
-5 \- 5 \- 10 \- 10 \- 10
-Peter finished the archery tournament with 10 points\!
+5 - 5 - 10 - 10 - 10
+Peter finished the archery tournament with 10 points!
 [/output]
 [/test]
 [test]
 [input]
 3\|1243\|6\|3\|2
-Shoot Right\@0\@2
-Shoot Right\@5\@5
-Shoot Right\@9\@5
+Shoot Right@0@2
+Shoot Right@5@5
+Shoot Right@9@5
 Game over
 [/input]
 [output]
-3 \- 1243 \- 1 \- 3 \- 2
-Peter finished the archery tournament with 5 points\!
+3 - 1243 - 1 - 3 - 2
+Peter finished the archery tournament with 5 points!
 [/output]
 [/test]
 [test]
 [input]
 3\|13\|6\|3\|2\|34\|5\|123\|576
-Shoot Left\@6\@3
+Shoot Left@6@3
 Reverse
-Shoot Right\@5\@7
-Shoot Left\@2\@8
+Shoot Right@5@7
+Shoot Left@2@8
 Game over
 [/input]
 [output]
-576 \- 123 \- 5 \- 24 \- 2 \- 0 \- 6 \- 13 \- 3
-Peter finished the archery tournament with 13 points\!
+576 - 123 - 5 - 24 - 2 - 0 - 6 - 13 - 3
+Peter finished the archery tournament with 13 points!
 [/output]
 [/test]
 [test]
 [input]
 34\|5\|123\|576
 Reverse
-Shoot Left\@6\@3
+Shoot Left@6@3
 Reverse
-Shoot Left\@5\@0
+Shoot Left@5@0
 Reverse
-Shoot Left\@2\@1
+Shoot Left@2@1
 Reverse
 Game over
 [/input]
 [output]
-34 \- 5 \- 118 \- 576
-Peter finished the archery tournament with 5 points\!
+34 - 5 - 118 - 576
+Peter finished the archery tournament with 5 points!
 [/output]
 [/test]
 [test]
@@ -215,8 +243,8 @@ Reverse
 Game over
 [/input]
 [output]
-34 \- 5 \- 123 \- 576
-Peter finished the archery tournament with 0 points\!
+34 - 5 - 123 - 576
+Peter finished the archery tournament with 0 points!
 [/output]
 [/test]
 [test]
@@ -225,8 +253,8 @@ Peter finished the archery tournament with 0 points\!
 Game over
 [/input]
 [output]
-34 \- 5 \- 123 \- 576
-Peter finished the archery tournament with 0 points\!
+34 - 5 - 123 - 576
+Peter finished the archery tournament with 0 points!
 [/output]
 [/test]
 [/tests]
