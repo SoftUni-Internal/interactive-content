@@ -18,8 +18,8 @@ Finally printing out the `department` object we can see that the `employeesCount
 
 ```js live
 const department = {
-        name: "Engineering",
-        data: { employeesCount: 20 }
+    name: "Engineering",
+    data: { employeesCount: 20 }
     }
     const { data } = department;
     console.log(data);
@@ -38,8 +38,8 @@ Now let us change the `obj1.key` to be equal to "John Smith" and print out the `
 We can see that the change has been reflected there too.
 
 ```js live
-const objectList = [ { key: 'value' }, { key: 'value' }, { key: 'value' } ]
-const [ obj1, obj2, obj3 ] = objectList;
+const objectList = [ { key: 'value' }, { key: 'value' }, { key: 'value' } ]
+const [ obj1, obj2, obj3 ] = objectList;
 console.log(obj1);
 console.log(obj2);
 console.log(obj3);
@@ -55,18 +55,18 @@ Use this expression: `const {data: {director}} = department` to create a new var
 Just like in the examples above the new `director` object is referencing the `director` object inside the `data` object.
 
 ```js live
-const department = {
-  name: "Engineering",
-  data: { 
-    director: {
-      name: 'John', 
-      position: 'Engineering Director' 
-    }, 
-    employees: [],
-    company: 'Quick Build' 
-  }
+const department = {
+    name: "Engineering",
+    data: {
+        director: {
+            name: 'John',
+            position: 'Engineering Director'
+        },
+        employees: [],
+        company: 'Quick Build'
+    }
 }
-const {data: {director}} = department;
+const {data: {director}} = department;
 console.log(director);
 director.name = "Peter";
 console.log(department);
@@ -83,8 +83,8 @@ Use square brackets when destructuring arrays.
 Try extracting the data at index 1 and store it in new variables. Then print out the result.
 
 ```js live
-const departments = [['Engineering', ['secretary', 'director', 'worker']], ['Accounting', ['director', 'accountant']]];
-const [[name, positions]] = departments;
+const departments = [['Engineering', ['secretary', 'director', 'worker']], ['Accounting', ['director', 'accountant']]];
+const [[name, positions]] = departments;
 console.log(name);
 console.log(positions);
 ```
@@ -98,8 +98,8 @@ Obviously `name` will be equal to "John".
 Use this expression: `const [{}, {name}] = employees` to assign "Jane" to the `name` variable and print out the result.
 
 ```js live
-const employees = [{name: 'John', position: 'worker'}, {name: 'Jane', position: 'secretary'}];
-const [{name}] = employees;
+const employees = [{name: 'John', position: 'worker'}, {name: 'Jane', position: 'secretary'}];
+const [{name}] = employees;
 console.log(name);
 ```
 
@@ -108,11 +108,11 @@ Destructuring an object containing array or arrays.
 Try printing out the rset of the names yourself.
 
 ```js live
-const company = { 
-  employees: ['John', 'Jane', 'Sam', 'Suzanne'],
-  name: 'Quick Build',
+const company = {
+    employees: ['John', 'Jane', 'Sam', 'Suzanne'],
+    name: 'Quick Build',
 }
-const {employees:[employee]} = company;
+const {employees:[employee]} = company;
 console.log(employee);
 ```
 
