@@ -31,7 +31,7 @@ If the given item exists, you should change its position and put it in the last 
 ## Output
 After receiving `Craft!` print out all items in your inventory, separated by `, ` a comma and a space.
 
-[code-task title="Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Sum Numbers" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -54,12 +54,35 @@ function solve(input) {
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Iron, Wood, Sword
+Collect - Gold
+Drop - Wood
+Craft!
+[/input]
+[output]
+Iron, Sword, Gold
+[/output]
+[/test]
+[test open]
+[input]
+Iron, Sword
+Drop - Bronze
+Combine Items - Sword:Bow
+Renew - Iron
+Craft!
+[/input]
+[output]
+Sword, Bow, Iron
+[/output]
+[/test]
 [test]
 [input]
 A, B, C, D
-Collect \- E
-Collect \- F
-Craft\!
+Collect - E
+Collect - F
+Craft!
 [/input]
 [output]
 A, B, C, D, E, F
@@ -68,9 +91,9 @@ A, B, C, D, E, F
 [test]
 [input]
 A, B, C, D
-Collect \- D
-Collect \- E
-Craft\!
+Collect - D
+Collect - E
+Craft!
 [/input]
 [output]
 A, B, C, D, E
@@ -79,9 +102,9 @@ A, B, C, D, E
 [test]
 [input]
 A, B, C, D
-Drop \- C
-Drop \- D
-Craft\!
+Drop - C
+Drop - D
+Craft!
 [/input]
 [output]
 A, B
@@ -90,9 +113,9 @@ A, B
 [test]
 [input]
 A, B, C, D
-Drop \- D
-Drop \- E
-Craft\!
+Drop - D
+Drop - E
+Craft!
 [/input]
 [output]
 A, B, C
@@ -101,8 +124,8 @@ A, B, C
 [test]
 [input]
 A, B, C, D
-Renew \- C
-Craft\!
+Renew - C
+Craft!
 [/input]
 [output]
 A, B, D, C
@@ -111,10 +134,10 @@ A, B, D, C
 [test]
 [input]
 A, B, C, D
-Renew \- D
-Renew \- E
-Renew \- B
-Craft\!
+Renew - D
+Renew - E
+Renew - B
+Craft!
 [/input]
 [output]
 A, C, D, B
@@ -123,7 +146,7 @@ A, C, D, B
 [test]
 [input]
 A, B, C, D
-Combine Items \- C:C1
+Combine Items - C:C1
 Craft!
 [/input]
 [output]
@@ -133,9 +156,9 @@ A, B, C, C1, D
 [test]
 [input]
 A, B, C, D
-Combine Items \- C:C1
-Combine Items \- E:E1
-Craft\!
+Combine Items - C:C1
+Combine Items - E:E1
+Craft!
 [/input]
 [output]
 A, B, C, C1, D
@@ -144,15 +167,15 @@ A, B, C, C1, D
 [test]
 [input]
 N, S, F, T
-Collect \- U
-Drop \- F
-Renew \- N
-Combine Items \- S:B1
-Combine Items \- B1:O
-Drop \- B1
-Combine Items \- O:F
-Collect \- I
-Craft\!
+Collect - U
+Drop - F
+Renew - N
+Combine Items - S:B1
+Combine Items - B1:O
+Drop - B1
+Combine Items - O:F
+Collect - I
+Craft!
 [/input]
 [output]
 S, O, F, T, U, N, I
