@@ -1,7 +1,7 @@
 # Homework
 [slide]
 # Problem: Print "Hello Java"
-[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionStrategy="java-code"]
+[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -42,7 +42,7 @@ Hello Java
 
 [slide]
 # Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="pb-java-introduction-Calculate-and-Print" executionStrategy="java-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="pb-java-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -84,7 +84,7 @@ Write a Java program, which:
 
 [slide]
 # Problem: Name and Expression
-[code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionStrategy="java-code"]
+[code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -126,7 +126,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionStrategy="java-code"]
+[code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -173,7 +173,7 @@ Write a program, which calculates and prints the value of the following express
 
 [slide]
 # Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionStrategy="java-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -235,7 +235,7 @@ Prints a square of 7 * 7 stars like this:
 
 [slide]
 # Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionStrategy="java-code"]
+[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
