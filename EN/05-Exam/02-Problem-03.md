@@ -46,7 +46,7 @@ Upon receiving the `Stop` command you need to print all pieces in the collection
 
 * All the output messages with the appropriate formats are described in the problem description.
 
-[code-task title="The Pianist" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="The Pianist" taskId="js-fundamentals-2-finaleExam-problem-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -104,6 +104,58 @@ Spring \-\> Composer: Vivaldi, Key: C Major
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+3
+Fur Elise\|Beethoven\|A Minor
+Moonlight Sonata\|Beethoven\|C\# Minor
+Clair de Lune\|Debussy\|C\# Minor
+Add\|Sonata No.2\|Chopin\|B Minor
+Add\|Hungarian Rhapsody No.2\|Liszt\|C\# Minor
+Add\|Fur Elise\|Beethoven\|C\# Minor
+Remove\|Clair de Lune
+ChangeKey\|Moonlight Sonata\|C\# Major
+Stop
+[/input]
+[output]
+Sonata No.2 by Chopin in B Minor added to the collection!
+Hungarian Rhapsody No.2 by Liszt in C\# Minor added to the collection!
+Fur Elise is already in the collection!
+Successfully removed Clair de Lune!
+Changed the key of Moonlight Sonata to C\# Major!
+Fur Elise -\> Composer: Beethoven, Key: A Minor
+Hungarian Rhapsody No.2 -\> Composer: Liszt, Key: C\# Minor
+Moonlight Sonata -\> Composer: Beethoven, Key: C\# Major
+Sonata No.2 -\> Composer: Chopin, Key: B Minor
+[/output]
+[/test]
+[test open]
+[input]
+4
+Eine kleine Nachtmusik\|Mozart\|G Major
+La Campanella\|Liszt\|G\# Minor
+The Marriage of Figaro\|Mozart\|G Major
+Hungarian Dance No.5\|Brahms\|G Minor
+Add\|Spring\|Vivaldi\|E Major
+Remove\|The Marriage of Figaro
+Remove\|Turkish March
+ChangeKey\|Spring\|C Major
+Add\|Nocturne\|Chopin\|C\# Minor
+Stop
+[/input]
+[output]
+Spring by Vivaldi in E Major added to the collection!
+Successfully removed The Marriage of Figaro!
+Invalid operation! Turkish March does not exist in the collection.
+Changed the key of Spring to C Major!
+Nocturne by Chopin in C\# Minor added to the collection!
+Eine kleine Nachtmusik -\> Composer: Mozart, Key: G Major
+Hungarian Dance No.5 -\> Composer: Brahms, Key: G Minor
+La Campanella -\> Composer: Liszt, Key: G\# Minor
+Nocturne -\> Composer: Chopin, Key: C\# Minor
+Spring -\> Composer: Vivaldi, Key: C Major
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -115,20 +167,20 @@ Add\|AAAA\|Vivaldi\|E Major
 Remove\|The Marriage of Figaro
 Remove\|Turkish March
 ChangeKey\|Spring\|C Major
-Add|Nocturne\|Chopin\|C\# Minor
+Add\|Nocturne\|Chopin\|C\# Minor
 Stop
 [/input]
 [output]
-AAAA is already in the collection\!
-Invalid operation\! The Marriage of Figaro does not exist in the collection.
-Invalid operation\! Turkish March does not exist in the collection.
-Invalid operation\! Spring does not exist in the collection.
-Nocturne by Chopin in C# Minor added to the collection!
-AAAA \-\> Composer: Mozart, Key: G Major
-BBBB \-\> Composer: Liszt, Key: G\# Minor
-CC \-\> Composer: Brahms, Key: G Minor
-Nocturne \-\> Composer: Chopin, Key: C\# Minor
-VVVVV \-\> Composer: Mozart, Key: G Major
+AAAA is already in the collection!
+Invalid operation! The Marriage of Figaro does not exist in the collection.
+Invalid operation! Turkish March does not exist in the collection.
+Invalid operation! Spring does not exist in the collection.
+Nocturne by Chopin in C\# Minor added to the collection!
+AAAA -\> Composer: Mozart, Key: G Major
+BBBB -\> Composer: Liszt, Key: G\# Minor
+CC -\> Composer: Brahms, Key: G Minor
+Nocturne -\> Composer: Chopin, Key: C\# Minor
+VVVVV -\> Composer: Mozart, Key: G Major
 [/output]
 [/test]
 [test]
@@ -140,9 +192,9 @@ ACygsv\|CC\|G Major
 Stop
 [/input]
 [output]
-AAAA \-\> Composer: BB, Key: G Major
-ABcshj \-\> Composer: AA, Key: G\# Minor
-ACygsv \-\> Composer: CC, Key: G Major
+AAAA -\> Composer: BB, Key: G Major
+ABcshj -\> Composer: AA, Key: G\# Minor
+ACygsv -\> Composer: CC, Key: G Major
 [/output]
 [/test]
 [test]
@@ -157,36 +209,36 @@ Remove\|Hello
 Stop
 [/input]
 [output]
-Hello by Mozart in C added to the collection\!
-Changed the key of Hello to B Minor!\
-Successfully removed Hello\!
-AAAA \-\> Composer: BB, Key: G Major
-ABcshj \-\> Composer: AA, Key: G\# Minor
-ACygsv \-\> Composer: CC, Key: G Major
+Hello by Mozart in C added to the collection!
+Changed the key of Hello to B Minor!
+Successfully removed Hello!
+AAAA -\> Composer: BB, Key: G Major
+ABcshj -\> Composer: AA, Key: G\# Minor
+ACygsv -\> Composer: CC, Key: G Major
 [/output]
 [/test]
 [test]
 [input]
 0
-Add\|Autumn\|Vivaldi|C
-Add\|Winter\|Vivaldi|C
-Add\|Summer\|Vivaldi|C
-Add\|Spring\|Vivaldi|C
+Add\|Autumn\|Vivaldi\|C
+Add\|Winter\|Vivaldi\|C
+Add\|Summer\|Vivaldi\|C
+Add\|Spring\|Vivaldi\|C
 ChangeKey\|Spring\|B Minor
 ChangeKey\|Summer\|B Minor
 Stop
 [/input]
 [output]
-Autumn by Vivaldi in C added to the collection\!
-Winter by Vivaldi in C added to the collection\!
-Summer by Vivaldi in C added to the collection\!
-Spring by Vivaldi in C added to the collection\!
-Changed the key of Spring to B Minor\!
-Changed the key of Summer to B Minor\!
-Autumn \-\> Composer: Vivaldi, Key: C
-Spring \-\> Composer: Vivaldi, Key: B Minor
-Summer \-\> Composer: Vivaldi, Key: B Minor
-Winter \-\> Composer: Vivaldi, Key: C
+Autumn by Vivaldi in C added to the collection!
+Winter by Vivaldi in C added to the collection!
+Summer by Vivaldi in C added to the collection!
+Spring by Vivaldi in C added to the collection!
+Changed the key of Spring to B Minor!
+Changed the key of Summer to B Minor!
+Autumn -\> Composer: Vivaldi, Key: C
+Spring -\> Composer: Vivaldi, Key: B Minor
+Summer -\> Composer: Vivaldi, Key: B Minor
+Winter -\> Composer: Vivaldi, Key: C
 [/output]
 [/test]
 [test]
@@ -212,23 +264,23 @@ Remove\|Autumn
 Stop
 [/input]
 [output]
-Autumn by Vivaldi in C added to the collection\!
-Winter by Vivaldi in C added to the collection\!
-Summer by Vivaldi in C added to the collection\!
-Spring by Vivaldi in C added to the collection\!
-Changed the key of Spring to B Minor\!
-Changed the key of Summer to B Minor\!
-Successfully removed Nocturne\!
-Successfully removed Concerto\!
-Successfully removed Clavier\!
-Invalid operation\! Clavier does not exist in the collection\.
-Invalid operation\! Piano Sonata does not exist in the collection\.
-Successfully removed Autumn\!
-Emperor \-\> Composer: Beethoven, Key: B Minor
-Piano sonata \-\> Composer: Liszt, Key: B Minor
-Spring \-\> Composer: Vivaldi, Key: B Minor
-Summer \-\> Composer: Vivaldi, Key: B Minor
-Winter \-\> Composer: Vivaldi, Key: C
+Autumn by Vivaldi in C added to the collection!
+Winter by Vivaldi in C added to the collection!
+Summer by Vivaldi in C added to the collection!
+Spring by Vivaldi in C added to the collection!
+Changed the key of Spring to B Minor!
+Changed the key of Summer to B Minor!
+Successfully removed Nocturne!
+Successfully removed Concerto!
+Successfully removed Clavier!
+Invalid operation! Clavier does not exist in the collection.
+Invalid operation! Piano Sonata does not exist in the collection.
+Successfully removed Autumn!
+Emperor -\> Composer: Beethoven, Key: B Minor
+Piano sonata -\> Composer: Liszt, Key: B Minor
+Spring -\> Composer: Vivaldi, Key: B Minor
+Summer -\> Composer: Vivaldi, Key: B Minor
+Winter -\> Composer: Vivaldi, Key: C
 [/output]
 [/test]
 [test]
@@ -238,7 +290,7 @@ Concerto\|Schumann\|C Minor
 Nocturne\|Chopin\|E Major
 Clavier\|Bach\|E Major
 Emperor\|Beethoven\|B Minor
-Piano sonata|Liszt\|B Minor
+Piano sonata\|Liszt\|B Minor
 Add\|Autumn\|Vivaldi\|C
 Add\|Winter\|Vivaldi\|C
 Add\|Summer\|Vivaldi\|C
@@ -254,54 +306,27 @@ ChangeKey\|Turkish March\|B Minor
 Stop
 [/input]
 [output]
-Autumn by Vivaldi in C added to the collection\!
-Winter by Vivaldi in C added to the collection\!
-Summer by Vivaldi in C added to the collection\!
-Spring by Vivaldi in C added to the collection\!
-Changed the key of Spring to B Minor\!
-Changed the key of Summer to B Minor\!
-Changed the key of Winter to B Minor\!
-Changed the key of Autumn to B Minor\!
-Changed the key of Emperor to B Minor\!
-Changed the key of Clavier to B Minor\!
-Invalid operation\! Turkish March does not exist in the collection\.
-Invalid operation\! Turkish March does not exist in the collection\.
-Autumn \-\> Composer: Vivaldi, Key: B Minor
-Clavier \-\> Composer: Bach, Key: B Minor
-Concerto \-\> Composer: Schumann, Key: C Minor
-Emperor \-\> Composer: Beethoven, Key: B Minor
-Nocturne \-\> Composer: Chopin, Key: E Major
-Piano sonata \-\> Composer: Liszt, Key: B Minor
-Spring \-\> Composer: Vivaldi, Key: B Minor
-Summer \-\> Composer: Vivaldi, Key: B Minor
-Winter \-\> Composer: Vivaldi, Key: B Minor
-[/output]
-[/test]
-[test]
-[input]
-4
-Eine kleine Nachtmusik\|Mozart\|G Major
-La Campanella\|Liszt\|G\# Minor
-The Marriage of Figaro\|Mozart\|G Major
-Hungarian Dance No.5\|Brahms\|G Minor
-Add\|Spring\|Vivaldi\|E Major
-Remove\|The Marriage of Figaro
-Remove\|Turkish March
-ChangeKey\|Spring\|C Major
-Add|Nocturne\|Chopin\|C\# Minor
-Stop
-[/input]
-[output]
-Spring by Vivaldi in E Major added to the collection\!
-Successfully removed The Marriage of Figaro\!
-Invalid operation\! Turkish March does not exist in the collection.
-Changed the key of Spring to C Major\!
-Nocturne by Chopin in C\# Minor added to the collection\!
-Eine kleine Nachtmusik \-\> Composer: Mozart, Key: G Major
-Hungarian Dance No.5 \-\> Composer: Brahms, Key: G Minor
-La Campanella \-\> Composer: Liszt, Key: G\# Minor
-Nocturne \-\> Composer: Chopin, Key: C# Minor
-Spring \-\> Composer: Vivaldi, Key: C Major
+Autumn by Vivaldi in C added to the collection!
+Winter by Vivaldi in C added to the collection!
+Summer by Vivaldi in C added to the collection!
+Spring by Vivaldi in C added to the collection!
+Changed the key of Spring to B Minor!
+Changed the key of Summer to B Minor!
+Changed the key of Winter to B Minor!
+Changed the key of Autumn to B Minor!
+Changed the key of Emperor to B Minor!
+Changed the key of Clavier to B Minor!
+Invalid operation! Turkish March does not exist in the collection.
+Invalid operation! Turkish March does not exist in the collection.
+Autumn -\> Composer: Vivaldi, Key: B Minor
+Clavier -\> Composer: Bach, Key: B Minor
+Concerto -\> Composer: Schumann, Key: C Minor
+Emperor -\> Composer: Beethoven, Key: B Minor
+Nocturne -\> Composer: Chopin, Key: E Major
+Piano sonata -\> Composer: Liszt, Key: B Minor
+Spring -\> Composer: Vivaldi, Key: B Minor
+Summer -\> Composer: Vivaldi, Key: B Minor
+Winter -\> Composer: Vivaldi, Key: B Minor
 [/output]
 [/test]
 [/tests]
