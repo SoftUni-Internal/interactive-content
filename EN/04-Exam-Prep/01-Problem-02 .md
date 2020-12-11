@@ -49,7 +49,7 @@ For each barcode that you process, you need to print a message.
 
 * If the barcode is valid: `Product group: {product group}`
 
-[code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Fancy Barcodes" taskId="js-fundamentals-2-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
