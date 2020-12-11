@@ -122,19 +122,19 @@ Your password is: programming\*\*\*is\*\*\*fun
 [tests]
 [test open]
 [input]
-Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr 
+Siiceercaroetavm!\:\?\:ahsott\.\:i\:nstupmomceqr
 TakeOdd
 Cut 15 3
-Substitute :: -
-Substitute \| ^
+Substitute \:\: \-
+Substitute \| \^
 Done
 [/input]
 [output]
-icecream::hot::summer
-icecream::hot::mer
-icecream-hot-mer
-Nothing to replace!
-Your password is: icecream-hot-mer
+icecream\:\:hot\:\:summer
+icecream\:\:hot\:\:mer
+icecream\-hot\-mer
+Nothing to replace\!
+Your password is\: icecream\-hot\-mer
 [/output]
 [/test]
 [test open]
