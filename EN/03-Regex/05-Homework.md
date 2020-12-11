@@ -1,20 +1,10 @@
-[slide]
 # Homework
-
-[image assetsSrc="homeowrk.png" /]
-
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-[/slide]
 
 [slide]
 
 # Problem: Match Dates
 
-[code-task title="Match Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Match Dates" taskId="js-fundamentals-pt2-Regex-Match-Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -189,7 +179,7 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 
 # Problem: Furniture
 
-[code-task title="Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Furniture" taskId="js-fundamentals-pt2-Regex-Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -352,7 +342,7 @@ Total money spend\: 8593\.09
 
 # Problem: Race
 
-[code-task title="Race" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Race" taskId="js-fundamentals-pt2-Regex-Race" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -523,7 +513,7 @@ end of race
 
 # Problem: Bar Income
 
-[code-task title="Bar Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bar Income" taskId="js-fundamentals-pt2-Regex-Bar-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
