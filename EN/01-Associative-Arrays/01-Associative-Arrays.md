@@ -1,8 +1,12 @@
 # Associative Arrays
 
 [slide]
-
 # What is an Associative Array?
+
+[vimeo-video]
+[stream language="EN" videoId="489799053/d484700337" default /]
+[stream language="RO" videoId="489799053/d484700337"  /]
+[/video-vimeo]
 
 The JavaScript language is built on one central data structure - the associative array.
 
@@ -21,8 +25,15 @@ Example:
 | John Smith | \+1\-555\-8976 |
 | Lisa Smith | \+1\-555\-1234 |
 | Sam Doe    | \+1\-555\-5030 |
+[/slide]
 
-## Declartation
+[slide]
+# Declartation
+
+[vimeo-video]
+[stream language="EN" videoId="489799055/f5c3621dae" default /]
+[stream language="RO" videoId="489799055/f5c3621dae"  /]
+[/video-vimeo]
 
 An associative array in JavaScript is just an object, so we can declare it dynamically.
 
@@ -54,8 +65,15 @@ Here is how we declare and initialize the **key** first, and after that use it t
 let key = "six";
 assocArr[key] = 6;
 ```
+[/slide]
 
-## Using a for-in loop
+[slide]
+# Using a for-in loop
+
+[vimeo-video]
+[stream language="EN" videoId="489799112/12f12cff47" default /]
+[stream language="RO" videoId="489799112/12f12cff47"  /]
+[/video-vimeo]
 
 We can use a **for-in** loop to iterate through the keys.
 
@@ -76,8 +94,12 @@ for (let key in assocArr) {
 [/slide]
 
 [slide]
-
 # Problem: Phone Book
+
+[vimeo-video]
+[stream language="EN" videoId="489799126/f74d7e08c7" default /]
+[stream language="RO" videoId="489799126/f74d7e08c7"  /]
+[/video-vimeo]
 
 [code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -202,8 +224,12 @@ tyuhjk \-\> 0844565344
 [/slide]
 
 [slide]
-
 # Solution: Phone Book
+
+[vimeo-video]
+[stream language="EN" videoId="489799132/3c374932c3" default /]
+[stream language="RO" videoId="489799132/3c374932c3"  /]
+[/video-vimeo]
 
 [code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -335,8 +361,12 @@ tyuhjk \-\> 0844565344
 [/slide]
 
 [slide]
-
 # Manipulating Associative Arrays
+
+[vimeo-video]
+[stream language="EN" videoId="489799185/17e719a047" default /]
+[stream language="RO" videoId="489799185/17e719a047"  /]
+[/video-vimeo]
 
 We can use the following expression to check if a **key** is **present**. 
 
@@ -404,8 +434,12 @@ for (let [key, value] of Object.entries(assocArr)) {
 [/slide]
 
 [slide]
-
 # Problem: Meetings
+
+[vimeo-video]
+[stream language="EN" videoId="489799225/6db77ff45a" default /]
+[stream language="RO" videoId="489799225/6db77ff45a"  /]
+[/video-vimeo]
 
 [code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -603,8 +637,12 @@ Tuesday \-\> Ted
 [/slide]
 
 [slide]
-
 # Solution: Meetings
+
+[vimeo-video]
+[stream language="EN" videoId="489799243/559e147fc6" default /]
+[stream language="RO" videoId="489799243/559e147fc6"  /]
+[/video-vimeo]
 
 [code-task title="Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -814,8 +852,12 @@ Tuesday \-\> Ted
 [/slide]
 
 [slide]
-
 # Sorting Associative Arrays
+
+[vimeo-video]
+[stream language="EN" videoId="489799307/dcdb81aea5" default /]
+[stream language="RO" videoId="489799307/dcdb81aea5"  /]
+[/video-vimeo]
 
 Objects **cannot be sorted**. To do so, we must convert them into arrays.
 
@@ -847,6 +889,16 @@ The **entries** array from the above example can be **sorted**, using a **Compar
 
 Use the `.localeCompare()` method to sort **strings** in JavaScript.
 
+[/slide]
+
+[slide]
+# Sorting by Key
+
+[vimeo-video]
+[stream language="EN" videoId="489799327/286d74afc8" default /]
+[stream language="RO" videoId="489799327/286d74afc8"  /]
+[/video-vimeo]
+
 To **sort by key**, use the **first element** of each entry.
 
 Here `a[0]` is the first element and `b[0]`, the second element of the sorting function.
@@ -876,8 +928,12 @@ console.log(result);
 [/slide]
 
 [slide]
-
 # Problem: AddressBook
+
+[vimeo-video]
+[stream language="EN" videoId="489799330/4e7e06a7e1" default /]
+[stream language="RO" videoId="489799330/4e7e06a7e1"  /]
+[/video-vimeo]
 
 [code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -1055,6 +1111,11 @@ Ted \-\> Dayton Ave
 [slide]
 
 # Solution: AddressBook
+
+[vimeo-video]
+[stream language="EN" videoId="489798585/77cb0c32ff" default /]
+[stream language="RO" videoId="489798585/77cb0c32ff"  /]
+[/video-vimeo]
 
 [code-task title="AddressBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -1239,6 +1300,11 @@ Ted \-\> Dayton Ave
 [slide]
 
 # Nested Data Structures
+
+[vimeo-video]
+[stream language="EN" videoId="489798633/dfd36c09a6" default /]
+[stream language="RO" videoId="489798633/dfd36c09a6"  /]
+[/video-vimeo]
 
 The values stored in associative arrays can be objects, or arrays.
 
