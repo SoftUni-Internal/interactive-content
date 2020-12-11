@@ -87,7 +87,7 @@ Catlyn
 
 [slide]
 # Problem: Calculations
-[code-task title="Calculations "taskId="pb-js-introduction-Calculation-04" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculations" taskId="pb-js-introduction-Calculation-04" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
