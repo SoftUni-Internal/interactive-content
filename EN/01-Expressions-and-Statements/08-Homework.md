@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Calculate a Square Area
-[code-task title="Calculate a sqare area" taskId="1c2a64f2-d017-49fe-8293-84f75ba70038" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function calculateSpeed (input) {
@@ -71,7 +71,7 @@ Write a function that gets an integer and calculates the face of a square with s
 [stream language="RO" videoId="486857468/b246ee7ca8"  /]
 [/video-vimeo]
 
-[code-task title="Currency Converter" taskId="pb-js-01-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Currency Converter" taskId="pb-js-expressions-Currency-Converted" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function currencyConverter (input) {
@@ -135,7 +135,7 @@ Write a program to convert from USD to EUR:
 
 [slide]
 # Problem: Convert Radians to Degrees
-[code-task title="Convert Radians to Degrees" taskId="pb-js-01-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Convert Radians to Degrees" taskId="pb-js-expressions-Convert-Radians-To-Degrees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function areaOfTriangle (input) {
@@ -210,7 +210,7 @@ Round the result to the nearest integer using `toFixed(0)`.
 [stream language="RO" videoId="486857308/5e4892a5b8"  /]
 [/video-vimeo]
 
-[code-task title="Days to Minutes" taskId="pb-js-01-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Days to Minutes" taskId="pb-js-expressions-Days-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function daysToMinutes (input) {
@@ -277,7 +277,7 @@ Write a program to convert from days to minutes:
 
 [slide]
 # Problem: Circle Area and Perimeter
-[code-task title="Circle Area and Perimeter" taskId="pb-js-01-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Circle Area and Perimeter" taskId="pb-js-expressions-Circle-Area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function circleArea (input) {
@@ -345,7 +345,7 @@ Perimeter = 59.06
 
 [slide]
 # Problem: Yard Landscaping
-[code-task title="Yard Landscaping" taskId="pb-js-01-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function fourOperations(input){
