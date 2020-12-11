@@ -70,7 +70,7 @@ A string, separated by a vertical bar `|`.
 ## Output
 Print the corresponding messages, as shown in the description.
 
-[code-task title="Mu Online" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Mu Online" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
