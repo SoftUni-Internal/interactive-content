@@ -31,7 +31,7 @@ If the given item exists, you should change its position and put it in the last 
 ## Output
 After receiving `Craft!` print out all items in your inventory, separated by `, ` a comma and a space.
 
-[code-task title="Problem: Sum Numbers" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
