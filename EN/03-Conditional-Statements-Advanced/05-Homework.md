@@ -3,7 +3,7 @@
 
 [slide]
 # Problem: Fruit or Vegetable
-[code-task title="Fruit or Vegetable" taskId="27-02A-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fruit or Vegetable" taskId="pb-java-Conditional-Statements-A-fruit-or-vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -76,7 +76,7 @@ vegetable
 
 [slide]
 # Problem: Day of Week
-[code-task title="Day of Week" taskId="27-02A-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -156,7 +156,7 @@ Sunday
 
 [slide]
 # Problem: Vowel or Consonant
-[code-task title="Vowel or Consonant" taskId="27-02A-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vowel or Consonant" taskId="pb-java-Conditional-Statements-A-vowel-or-consonant" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -227,7 +227,7 @@ Consonant
 
 [slide]
 # Problem: Product of 3 Numbers
-[code-task title="Product of 3 Numbers" taskId="27-02A-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -311,7 +311,7 @@ zero
 
 [slide]
 # Problem: Sorted Numbers
-[code-task title="Sorted Numbers" taskId="27-02A-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sorted Numbers" taskId="pb-java-Conditional-Statements-A-Sorted-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -414,7 +414,7 @@ Descending
 
 [slide]
 # Problem: Vacation Expenses
-[code-task title="Vacation Expenses" taskId="27-02A-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -467,7 +467,7 @@ Hotel
 
 [slide]
 # Problem: Cinema
-[code-task title="Cinema" taskId="27-02A-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Cinema" taskId="pb-java-Conditional-Statements-A-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -519,7 +519,7 @@ Normal
 
 [slide]
 # Problem: Operations with Numbers
-[code-task title="Operations with Numbers" taskId="27-02A-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Operations with Numbers" taskId="pb-java-Conditional-Statements-A-operations-with-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -606,7 +606,7 @@ Write a program to apply an operator for given two numbers:
 
 [slide]
 # Problem: ATM
-[code-task title="ATM" taskId="27-02A-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="ATM" taskId="pb-java-Conditional-Statements-A-ATM" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -661,7 +661,7 @@ The withdraw was successful.
 
 [slide]
 # Problem: Biggest of Five Numbers
-[code-task title="Biggest of Five Numbers" taskId="27-02A-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Biggest of Five Numbers" taskId="pb-java-Conditional-Statements-A-Biggest-of-five-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -721,7 +721,7 @@ Write a program to find the biggest among 5 numbers
 
 [slide]
 # Problem: Personal Titles
-[code-task title="Personal Titles" taskId="27-02A-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Personal Titles" taskId="pb-java-Conditional-Statements-A-Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -914,7 +914,7 @@ Mr.
 
 [slide]
 # Problem: Fuel Tank
-[code-task title="Fuel Tank" taskId="27-02A-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fuel Tank" taskId="pb-java-Conditional-Statements-A-Fuel-tank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1038,7 +1038,7 @@ Invalid fuel!
 
 [slide]
 # Problem: Trade Commissions
-[code-task title="Trade Commissions" taskId="27-02A-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Trade Commissions" taskId="pb-java-Conditional-Statements-A-Trade-Commisions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1256,7 +1256,7 @@ error
 
 [slide]
 # Problem: Point on Rectangle Border
-[code-task title="Point on Rectangle Border" taskId="27-02A-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Borer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1551,7 +1551,7 @@ Inside / Outside
 
 [slide]
 # Problem: Summer Outfit
-[code-task title="Summer Outfit" taskId="27-02A-p-15" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Summer Outfit" taskId="pb-java-Conditional-Statements-A-Summer-Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1721,7 +1721,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 
 [slide]
 # Prolem: Fishing Boat
-[code-task title="Fishing Boat" taskId="27-02A-p-16" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1980,7 +1980,7 @@ Yes! You have 1750.00 dollars left.
 
 [slide]
 # Problem: Flowers
-[code-task title="Flowers" taskId="27-02A-p-17" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
