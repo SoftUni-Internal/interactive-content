@@ -1,18 +1,8 @@
-[slide]
 # Homework
-
-[image assetsSrc="homeowrk.png" /]
-
-Welcome to the homework tab.
-
-Here, we are going to write a couple of console applications together.
-
-Let us solve a few problems to exercise what we have learned.
-[/slide]
 
 [slide]
 # Problem: Gramophone
-[code-task title="Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function gramophone(input){
@@ -121,7 +111,7 @@ The plate was rotated 29 times.
 
 [slide]
 # Problem: Fuel Money
-[code-task title="Fuel Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Fuel Money" taskId="js-fundamentals-1-basic-syntax-Fuel-Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function fuelMoney(input){
@@ -255,7 +245,7 @@ Needed money for that trip is 165.0175 dollars.
 
 [slide]
 # Problem: Centuries to Minutes
-[code-task title="Centuries to Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Centuries to Minutes" taskId="js-fundamentals-1-basic-syntax-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function centuriesToMinutes(input){
@@ -325,7 +315,7 @@ Print the output in the following format:
 
 [slide]
 # Problem: Special Numbers
-[code-task title="Special Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Special Numbers" taskId="js-fundamentals-1-basic-syntax-Special-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function specialNumbers(input){
@@ -455,7 +445,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 
 [slide]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function triplesLatinLetters(input){
@@ -830,7 +820,7 @@ ddd
 
 [slide]
 # Problem: Sum Digits
-[code-task title="Sum Digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Digits" taskId="js-fundamentals-1-basic-syntax-sum-digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumDigits(input){
@@ -932,7 +922,7 @@ Your task is to find the sum of its digits.
 
 [slide]
 # Problem: Reversed Chars
-[code-task title="Reversed Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Reversed Chars" taskId="js-fundamentals-1-basic-syntax-reversed-chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function reversChars(input){
@@ -1031,7 +1021,7 @@ L
 
 [slide]
 # Problem: Calculator
-[code-task title="Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function calculator(input){
