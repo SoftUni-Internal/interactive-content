@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Sum Even Numbers
-[code-task title="Sum Even Numbersmophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumEvenNumbers(input){
@@ -102,7 +102,7 @@ Write a program which receives an array of strings, parse them to numbers and su
 
 [slide]
 # Problem: Even and Odd Subtraction
-[code-task title="Even and Odd Subtraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Even and Odd Subtraction" taskId="js-fundamentals-1-Arrays-Even-and-Odd-Substraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function evenOdd(input){
@@ -247,7 +247,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [slide]
 # Problem: Condense Array to Number
-[code-task title="Condense Array to Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Condense Array to Number" taskId="js-fundamentals-1-Arrays-Condense-Array-To-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function condense(input){
@@ -388,7 +388,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 
 [slide]
 # Problem: Add or Subtract
-[code-task title="Add or Subtract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Add or Subtract"taskId="js-fundamentals-1-Arrays-Add-or-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function addOrSubstract(input){
@@ -513,7 +513,7 @@ On the first line print the **newly modified array**, on the second line print t
 
 [slide]
 # Problem: Array Rotation
-[code-task title="Array Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function arrayRotation(arr){
@@ -630,7 +630,7 @@ Print the resulting array elements separated my single space.
 
 [slide]
 # Problem: Magic Sum
-[code-task title="Magic Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function magicSum(input){
