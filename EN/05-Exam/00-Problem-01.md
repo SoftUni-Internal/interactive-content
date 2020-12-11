@@ -41,7 +41,7 @@ After receiving the `Travel` command, print the following:
 
 * Print the proper output messages in the proper cases as described in the problem description.
 
-[code-task title="Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Trip" taskId="js-fundamentals-2-finaleExam-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -65,6 +65,21 @@ Ready for the trip\! Planned stops: Hungary\:\:Rome\-Greece
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Hawai::Cyprys-Greece
+Add Stop:7:Rome
+Remove Stop:11:16
+Switch:Hawai:Bulgaria
+Travel
+[/input]
+[output]
+Hawai::RomeCyprys-Greece
+Hawai::Rome-Greece
+Bulgaria::Rome-Greece
+Ready for world tour! Planned stops: Bulgaria::Rome-Greece
+[/output]
+[/test]
 [test]
 [input]
 A:B:C
@@ -73,7 +88,7 @@ Travel
 [/input]
 [output]
 DA:B:C
-Ready for the trip\! Planned stops: DA:B:C
+Ready for world tour! Planned stops: DA:B:C
 [/output]
 [/test]
 [test]
@@ -84,7 +99,7 @@ Travel
 [/input]
 [output]
 A:B:
-Ready for the trip\! Planned stops: A:B:
+Ready for world tour! Planned stops: A:B:
 [/output]
 [/test]
 [test]
@@ -95,7 +110,7 @@ Travel
 [/input]
 [output]
 A:D:C
-Ready for the trip\! Planned stops: A:D:C
+Ready for world tour! Planned stops: A:D:C
 [/output]
 [/test]
 [test]
@@ -108,7 +123,7 @@ Travel
 [output]
 A:B:C:FD
 A:B:C:F
-Ready for the trip\! Planned stops: A:B:C:F
+Ready for world tour! Planned stops: A:B:C:F
 [/output]
 [/test]
 [test]
@@ -123,7 +138,7 @@ Travel
 B:C:D
 B:C:D
 B:F:D
-Ready for the trip\! Planned stops: B:F:D
+Ready for world tour! Planned stops: B:F:D
 [/output]
 [/test]
 [test]
@@ -138,22 +153,7 @@ Travel
 A:BN:C:D
 A:BN:C:D
 AA:BN:C:D
-Ready for the trip\! Planned stops: AA:BN:C:D
-[/output]
-[/test]
-[test]
-[input]
-Hawai::Cyprys-Greece
-Add Stop:7:Rome
-Remove Stop:11:16
-Switch:Hawai:Bulgaria
-Travel
-[/input]
-[output]
-Hawai\:\:RomeCyprys\-Greece
-Hawai\:\:Rome\-Greece
-Bulgaria\:\:Rome\-Greece
-Ready for the trip\! Planned stops: Bulgaria\:\:Rome\-Greece
+Ready for world tour! Planned stops: AA:BN:C:D
 [/output]
 [/test]
 [/tests]
