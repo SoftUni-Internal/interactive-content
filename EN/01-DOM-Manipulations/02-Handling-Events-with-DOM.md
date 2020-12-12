@@ -60,7 +60,7 @@ Here are some of the event types used in the DOM.
 | mousedown | touchcancel | dragstart / drop |  |  | reset |
 | mouseup |  |  |  |  |  |
 
-Let us have look at the Event Object now.
+Let us have a look at the Event Object now.
 
 The **event object** is automatically passed to the **event handler function** to provide extra features and information.
 
