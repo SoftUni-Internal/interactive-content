@@ -1,4 +1,4 @@
-# Event Lopp
+# Event Loop
 
 [slide]
 # Don't Make the Thread Wait
