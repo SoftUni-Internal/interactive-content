@@ -128,7 +128,7 @@ Use the `.setInterval()` method to execute a piece of code with a fixed time del
 
 The time delay is specified in milliseconds. In the example below it is 1000 milliseconds or 1 second.
 
-```js live
+```js
 let intervalID = setInterval(
     function() {
         console.log("1 sec. passed");
