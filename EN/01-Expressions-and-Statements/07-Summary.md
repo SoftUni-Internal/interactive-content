@@ -1,32 +1,28 @@
-
 [slide]
 # Summary
 
-Reading a text:
-```java live
-Scanner scanner = new Scanner(System.in);
+In this lesson we learned: 
 
-String input = scanner.nextLine();
-```
+- What are Variables and how we use them
 
-Reading an integer:
-```java live
-Scanner scanner = new Scanner(System.in);
+- Data Types definition
 
-int number = Integer.parseInt(scanner.nextLine());
-```
+- Statements (commands)
 
-Reading a floating-point number:
-```java live
-Scanner scanner = new Scanner(System.in);
+- How to read User **Input** and Formatting **Output**
 
-double number = Double.parseDouble(scanner.nextLine());
-```
+- How to work with simple arithmetical operations
 
-Calculations with numbers and using the suitable arithmetic operators: `+`, `-`, `*`, `/`, `%`.
+- How we use **Expressions** 
 
-Printing a text by placeholders on the console:
-```java live
-System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
-```
+In the next lesson we will learn:
+
+- How we use Comparison Operators
+
+- What are Conditional Statements: **if** and **if-else**
+
+- Blocks and Variable Scope
+
+- What is Code Debugging and how we use them
+
 [/slide]
