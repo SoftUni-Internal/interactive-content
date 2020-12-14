@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Reveal Words
-[code-task title="Problem: Reveal Words" taskId="js-advanced-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Reveal Words" taskId="js-advanced-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function revealWords(input){
@@ -97,8 +97,8 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [/slide]
 
 [slide]
-# Problem: 2.	Modern Times of HashTag
-[code-task title="Problem: Modern Times of HashTag" taskId="js-advanced-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Modern Times of HashTag
+[code-task title="Modern Times of HashTag" taskId="js-advanced-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function modernTimesOfHashTag(input){
@@ -185,7 +185,7 @@ nnj
 
 [slide]
 # Problem: Extract File
-[code-task title="Problem: Extract File" taskId="js-advanced-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Extract File" taskId="js-advanced-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function extractFile(input){
@@ -383,8 +383,9 @@ drashki not found!
 
 [slide]
 # Problem: Replace Repeating Chars
-[code-task title="Problem: Replace Repeating Chars" taskId="js-advanced-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Replace Repeating Chars" taskId="js-advanced-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function replaceRepeatingChars(input){
   // Write your code here
