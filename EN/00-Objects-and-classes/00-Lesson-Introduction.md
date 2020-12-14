@@ -1,6 +1,5 @@
-# Lesson Introduction
-
 [slide]
+# Lesson Introduction
 
 [vimeo-video]
 [stream language="EN" videoId="489795210/483305f49e" default /]
