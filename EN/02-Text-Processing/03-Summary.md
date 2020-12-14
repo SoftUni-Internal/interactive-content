@@ -9,25 +9,29 @@
 ## What you learned in this lesson
 
 -  **Strings** are an immutable series of **characters**
--  They have built-in methods that we use to process them. Some of them are :
-   -  `concat()`
-   ```js live     
+-  They have built-in methods that we use to process them. Some of them are:
+
+   - How to concatenate two strings using `concat()` method:
+
+   ```js live
    let str = "Hello, "
    console.log(str.concat("John!"))
    ```
 
-   -  `split()`
+   - How to split a strings using `split()` method:
+
    ```js live
    let str = "Hello, John"
    console.log(str.split(", "))
    ```
 
-   -  `includes()`
+   - How to find specific string using  `includes()` method:
+
    ```js live
    let str = "Hello, John"
    console.log(str.includes("John"))
    ```
 
--  Most of the methods returns a new string.
+-  Most of the methods return a new string.
 
 [/slide]
