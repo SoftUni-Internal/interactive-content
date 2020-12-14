@@ -134,7 +134,7 @@ Write a program to convert from USD to EUR:
 10.0
 [/input]
 [output]
-8.8
+8.80
 [/output]
 [/test]
 [test]
@@ -142,7 +142,7 @@ Write a program to convert from USD to EUR:
 5.0
 [/input]
 [output]
-4.4
+4.40
 [/output]
 [/test]
 [test]
