@@ -12,15 +12,15 @@ function employees(input){
 [/code-editor]
 [task-description]
 # Description
-You're tasked to create a list of employees and their personal numbers.
+You are tasked to create a list of employees and their personal numbers. 
 
-You will receive an array of strings.
+You will receive an array of strings. 
 
-Each string is an employee name and to assign them a personal number you have to find the **length of the name** (whitespace included).
+Each string is an employee **name** and to **assign a personal number to them** you have to find the length of the name (spaces included). 
 
-Try to use an object.
+Try to use an object. 
 
-At the end print all the list employees in the following format:
+In the end print all the **listed employees** in the following format: 
 
 `Name: {employeeName} -- Personal Number: {personalNum}`
 
@@ -334,13 +334,15 @@ function inventory(input){
 
 Create a function which creates a register for heroes, with their names, level, and items (if they have such). 
 
-The input comes as array of strings. Each element holds data for a hero, in the following format:
+The input comes as an array of strings. Each element holds data for a hero, in the following format: 
 
 `{heroName} / {heroLevel} / {item1}, {item2}, {item3}...`
 
-You must store the data about every hero. The name is a string, the level is a number and the items are all strings.
+You must store the data about every hero.
 
-The output is all of the data for all the heroes you’ve stored sorted ascending by level and the items are sorted alphabetically. 
+The name is a string, the level is a number, and the items are all strings.
+
+The output is all of the data for all the heroes you have stored sorted ascending by level, the items are sorted alphabetically.
 
 The data must be in the following format for each hero:
 `Hero: {heroName}`
@@ -489,17 +491,19 @@ function dictionary(input){
 [task-description]
 # Description
 
-You will receive an array with strings in the form of JSON's. 
+You will receive an array holding strings in the form of JSON's
 
-You have to parse these strings and combine them into one object. Every string from the array will hold terms and a description. 
+You have to parse these strings and **combine them into one object.**
 
-If you receive the same term twice replace it with the new definition.
+Every string from the array will hold terms their descriptions.
 
-Print every term and definition in that dictionary on new line in format:
+If you receive the same term twice replace it with the new definition. 
+
+Print every **term and definition** from the dictionary on a new line in this  format: 
 
 `Term: ${term} => Definition: ${definition}`
 
-Don't forget to sort the dictionary **alphabetically** by the terms as in real dictionaries.
+Do not forget to sort the content **alphabetically** by the terms as in real dictionaries. 
 
 # Example
 
@@ -608,16 +612,16 @@ function songs(input){
 [task-description]
 # Description
 
-Define a class Song, which holds the following information about songs: typeList, name and time.
+Define a class Song, which holds the following information about songs: typeList, name and duration. 
 
-You will receive the input as an array.
+You will receive the input as an array. 
 
 The first element n will be the number of songs. 
 
 Next n elements will be the songs data in the following format: 
 
 `{typeList}_{name}_{time}`, 
-and the the last element will be Type List \/ `all`.
+aand the the last element will be Type List \/ `all`.
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
