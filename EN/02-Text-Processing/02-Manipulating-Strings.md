@@ -154,21 +154,202 @@ console.log(replacedStr);
 [stream language="RO" videoId="489817604/03cd593d45"  /]
 [/video-vimeo]
 
+[code-task title="Problem: Substring" taskId="text-processing-lab-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function substring(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives **a string and two numbers.**
+
+The numbers will be a starting index and count of elements to substring. 
+
+Print the result.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['ASentance', '1', '8']`| Sentance |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+ASentance
+1
+8
+[/input]
+[output]
+Sentance
+[/output]
+[/test]
+[test]
+[input]
+gashajGAHJGAasghaj
+4
+8
+[/input]
+[output]
+ajGAHJGA
+[/output]
+[/test]
+[test]
+[input]
+gasjGAHJAasghaj
+0
+10
+[/input]
+[output]
+gasjGAHJAa
+[/output]
+[/test]
+[test]
+[input]
+gasjGA48HJAasghaj
+5
+1
+[/input]
+[output]
+A
+[/output]
+[/test]
+[test]
+[input]
+gasjGA48HJAahaj
+5
+5
+[/input]
+[output]
+A48HJ
+[/output]
+[/test]
+[test]
+[input]
+jjjasjA48HJAko88/(())haj
+10
+10
+[/input]
+[output]
+JAko88/(()
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
 # Solution: Substring
 
-## Add video
+[vimeo-video]
+[stream language="EN" videoId="489816947/090fda2f05" default /]
+[stream language="RO" videoId="489816947/090fda2f05"  /]
+[/video-vimeo]
 
+[code-task title="Solution: Substring" taskId="text-processing-lab-2-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(index) {
+    let word = index[0];
+    let index1 = index[1];
+    let index2 = index[2];
 
+    let sub = word.substring(index1, index1 + index2)
+    console.log(sub)
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives **a string and two numbers.**
+
+The numbers will be a starting index and count of elements to substring. 
+
+Print the result.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['ASentance', '1', '8']`| Sentance |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+ASentance
+1
+8
+[/input]
+[output]
+Sentance
+[/output]
+[/test]
+[test]
+[input]
+gashajGAHJGAasghaj
+4
+8
+[/input]
+[output]
+ajGAHJGA
+[/output]
+[/test]
+[test]
+[input]
+gasjGAHJAasghaj
+0
+10
+[/input]
+[output]
+gasjGAHJAa
+[/output]
+[/test]
+[test]
+[input]
+gasjGA48HJAasghaj
+5
+1
+[/input]
+[output]
+A
+[/output]
+[/test]
+[test]
+[input]
+gasjGA48HJAahaj
+5
+5
+[/input]
+[output]
+A48HJ
+[/output]
+[/test]
+[test]
+[input]
+jjjasjA48HJAko88/(())haj
+10
+10
+[/input]
+[output]
+JAko88/(()
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
+# Splitting a String
 
-# Splitting, Finding and Repeating
-
-## Splitting a String
+[vimeo-video]
+[stream language="EN" videoId="489816954/24e31211e5" default /]
+[stream language="RO" videoId="489816954/24e31211e5"  /]
+[/video-vimeo]
 
 When we want to separate words in a string, we use the `split()` method.
 
@@ -185,7 +366,7 @@ let divided = str.split(' ');
 console.log(divided);
 ```
 
-## Finding in a String
+# Finding in a String
 
 For finding a specific part of a string, we use the method `includes()`.
 
@@ -206,8 +387,15 @@ let text = 'I love JS';
 console.log(text.includes('JS'));
 console.log(text.includes('js'));
 ```
+[/slide]
 
-## Repeating in a String
+[slide]
+# Repeating in a String
+
+[vimeo-video]
+[stream language="EN" videoId="489817061/4454e2aa76" default /]
+[stream language="RO" videoId="489817061/4454e2aa76"  /]
+[/video-vimeo]
 
 When we want to **repeat** a **string** in JS, we use `repeat()`. That allows us to make a certain number of **copies** of that **string**.
 
@@ -229,22 +417,201 @@ console.log(str.repeat(5));
 [/slide]
 
 [slide]
-
 # Problem: Censored Words
 
+[vimeo-video]
+[stream language="EN" videoId="489817109/c566f94bb4" default /]
+[stream language="RO" videoId="489817109/c566f94bb4"  /]
+[/video-vimeo]
+
+[code-task title="Censored Words" taskId="text-processing-lab-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function censoredWords(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a text as a first parameter  and a single word as a second.
+
+Find all occurrences of that word in the text and **replace them** with the corresponding count of `*`.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+A small sentence with some words
+small
+[/input]
+[output]
+A \*\*\*\*\* sentence with some words
+[/output]
+[/test]
+[test]
+[input]
+soallsentencewithsomewords
+so
+[/input]
+[output]
+\*\*allsentencewith\*\*mewords
+[/output]
+[/test]
+[test]
+[input]
+pesho gosho stamat pesho
+pesho
+[/input]
+[output]
+\*\*\*\*\* gosho stamat \*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+aa bb aa ca pesho gosho stamat pesho
+a
+[/input]
+[output]
+\*\* bb \*\* c\* pesho gosho st\*m\*t pesho
+[/output]
+[/test]
+[test]
+[input]
+repeat word repeat repeat word word repeat
+repeat word
+[/input]
+[output]
+\*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
+[/output]
+[/test]
+[test]
+[input]
+aaa heyyy a heyyy abv hey abc
+heyyy
+[/input]
+[output]
+aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
-
 # Solution: Censored Words
 
+[vimeo-video]
+[stream language="EN" videoId="489817292/f7357145f2" default /]
+[stream language="RO" videoId="489817292/f7357145f2"  /]
+[/video-vimeo]
+
+[code-task title="Censored Words" taskId="text-processing-lab-3-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function censoredWords(input){
+
+    let text = input[0];
+    let word = input[1];
+
+    while (text.indexOf(word) > -1) {
+        text = text.replace(word, '*'.repeat(word.length));
+    }
+    console.log(text);
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a text as a first parameter  and a single word as a second.
+
+Find all occurrences of that word in the text and **replace them** with the corresponding count of `*`.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+A small sentence with some words
+small
+[/input]
+[output]
+A \*\*\*\*\* sentence with some words
+[/output]
+[/test]
+[test]
+[input]
+soallsentencewithsomewords
+so
+[/input]
+[output]
+\*\*allsentencewith\*\*mewords
+[/output]
+[/test]
+[test]
+[input]
+pesho gosho stamat pesho
+pesho
+[/input]
+[output]
+\*\*\*\*\* gosho stamat \*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+aa bb aa ca pesho gosho stamat pesho
+a
+[/input]
+[output]
+\*\* bb \*\* c\* pesho gosho st\*m\*t pesho
+[/output]
+[/test]
+[test]
+[input]
+repeat word repeat repeat word word repeat
+repeat word
+[/input]
+[output]
+\*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
+[/output]
+[/test]
+[test]
+[input]
+aaa heyyy a heyyy abv hey abc
+heyyy
+[/input]
+[output]
+aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
-[slide]
 
+[slide]
 # Trimming Strings
 
-
+[vimeo-video]
+[stream language="EN" videoId="489817107/ed4fac30e5" default /]
+[stream language="RO" videoId="489817107/ed4fac30e5"  /]
+[/video-vimeo]
 
 For removing **whitespaces** we use the `trim()` method.
 
@@ -281,9 +648,12 @@ console.log(str.trimEnd());
 [/slide]
 
 [slide]
-
 # Starts With or Ends With
 
+[vimeo-video]
+[stream language="EN" videoId="489817165/3eb9153a87" default /]
+[stream language="RO" videoId="489817165/3eb9153a87"  /]
+[/video-vimeo]
 
 With `startsWith()`, we can check if a **string** starts with a **specific word**. That we will pass to the method as a parameter. **EndsWith** it's almost the same. The difference between both is that `endsWith()` checks if that string ends with a **certain word**.
 
@@ -319,9 +689,12 @@ On the first **console.log**s, they will return **true**, but on the second ones
 [/slide]
 
 [slide]
-
 # Padding at the Start and End
 
+[vimeo-video]
+[stream language="EN" videoId="489817167/90a1d0997d" default /]
+[stream language="RO" videoId="489817167/90a1d0997d"  /]
+[/video-vimeo]
 
 If we want to **add** a string **a certain number of times** at **the beginning** or the **end** of another string, we can use the `padStart()` or `padEnd()` methods.
 
@@ -350,13 +723,191 @@ console.log(padded);
 [/slide]
 
 [slide]
-
 # Problem: Count String Occurrences
 
+[vimeo-video]
+[stream language="EN" videoId="489817230/bda8e696ff" default /]
+[stream language="RO" videoId="489817230/bda8e696ff"  /]
+[/video-vimeo]
+
+[code-task title="Count String Occurrences" taskId="text-processing-lab-4" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function countStringOccurrences(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a text and a string that you need to search. 
+
+Print all the occurrences of that word in the string.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['This is a word and it also is a sentence','is']`| 2 |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+This is a word and it also is a sentence
+is
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+az ti toi tq to nie vie te az az az
+az
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie te az az az
+toi
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie az az az
+te
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie az az az
+tq
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test]
+[input]
+az tq tq tq tq
+tq
+[/input]
+[output]
+4
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 [/slide]
 
 [slide]
-
 # Solution: Count String Occurrences
 
+[vimeo-video]
+[stream language="EN" videoId="489817236/3a7e106620" default /]
+[stream language="RO" videoId="489817236/3a7e106620"  /]
+[/video-vimeo]
+
+[code-task title="Count String Occurrences" taskId="text-processing-lab-4-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function countStringOccurrences(input){
+
+    let sentence = input[0];
+    let word = input[1];
+    let cWord = '*'.repeat(word.length)
+    
+    while(sentence.includes(word)){
+        sentence = sentence.replace(word, cWord)
+    }
+    console.log(sentence)
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a text and a string that you need to search. 
+
+Print all the occurrences of that word in the string.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['This is a word and it also is a sentence','is']`| 2 |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+This is a word and it also is a sentence
+is
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+az ti toi tq to nie vie te az az az
+az
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie te az az az
+toi
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie az az az
+te
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+az toi ti toi tq to nie vie az az az
+tq
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test]
+[input]
+az tq tq tq tq
+tq
+[/input]
+[output]
+4
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 [/slide]
