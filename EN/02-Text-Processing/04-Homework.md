@@ -382,6 +382,90 @@ drashki not found!
 [/slide]
 
 [slide]
+# Problem: Replace Repeating Chars
+[code-task title="Problem: Replace Repeating Chars" taskId="js-advanced-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function replaceRepeatingChars(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a single string and **replaces** any sequence of the **same letters** with a single corresponding letter.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['aaaaabbbbbcdddeeeedssaa']`| abcdedsa |
+|`['qqqwerqwecccwd']`| qwerqwecwd |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+aaaaabbbbbcdddeeeedssaa
+[/input]
+[output]
+abcdedsa
+[/output]
+[/test]
+[test open]
+[input]
+qqqwerqwecccwd
+[/input]
+[output]
+qwerqwecwd
+[/output]
+[/test]
+[test]
+[input]
+aaaaaaaa
+[/input]
+[output]
+a
+[/output]
+[/test]
+[test]
+[input]
+bbbbbbbbb
+[/input]
+[output]
+b
+[/output]
+[/test]
+[test]
+[input]
+aaaaabbbbbbbcccceeede
+[/input]
+[output]
+abcede
+[/output]
+[/test]
+[test]
+[input]
+kkddidkkgiiggbd
+[/input]
+[output]
+kdidkgigbd
+[/output]
+[/test]
+[test]
+[input]
+asdasdasd
+[/input]
+[output]
+asdasdasd
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
