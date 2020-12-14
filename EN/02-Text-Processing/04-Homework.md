@@ -467,6 +467,106 @@ asdasdasd
 [/slide]
 
 [slide]
+# Problem: Pascal-Case Splitter
+
+[code-task title="Pascal-Case Splitter" taskId="js-advanced-text-processing-Pascal-Case-Splitter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function splitter(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+## Description
+You will receive a **single string.**
+
+This string is written in **PascalCase** format.
+
+Your task here is to split this string by **every word** in it.
+
+Print them joined by **comma and space.**
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['SplitMeIfYouCanHaHaYouCantOrYouCan']`| Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can |
+|`['HoldTheDoor']`| Hold, The, Door |
+|`['ThisIsSoAnnoyingToDo']`| This, Is, So, Annoying, To, Do |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SplitMeIfYouCanHaHaYouCantOrYouCan
+[/input]
+[output]
+Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
+[/output]
+[/test]
+[test open]
+[input]
+HoldTheDoor
+[/input]
+[output]
+Hold, The, Door
+[/output]
+[/test]
+[test open]
+[input]
+ThisIsSoAnnoyingToDo
+[/input]
+[output]
+This, Is, So, Annoying, To, Do
+[/output]
+[/test]
+[test]
+[input]
+BdgshajTgdshDdsadasFF
+[/input]
+[output]
+Bdgshaj, Tgdsh, Ddsadas, F, F
+[/output]
+[/test]
+[test]
+[input]
+AhjbhbBsgasf
+[/input]
+[output]
+Ahjbhb, Bsgasf
+[/output]
+[/test]
+[test]
+[input]
+AhjbhbBsgasfCaXa
+[/input]
+[output]
+Ahjbhb, Bsgasf, Ca, Xa
+[/output]
+[/test]
+[test]
+[input]
+AhjbhbBsgasNNNMfCaXa
+[/input]
+[output]
+Ahjbhb, Bsgas, N, N, N, Mf, Ca, Xa
+[/output]
+[/test]
+[test]
+[input]
+Mhjbhb
+[/input]
+[output]
+Mhjbhb
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
