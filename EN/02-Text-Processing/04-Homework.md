@@ -568,8 +568,9 @@ Mhjbhb
 
 [slide]
 # Problem: Cut and Reverse
-[code-task title="Cut and Reverse" taskId="js-advanced-text-processing-Cut-and-Reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cut and Reverse" taskId="js-advanced-text-processing-cut-and-reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function cutAndReverse(input){
   // Write your code here
@@ -578,6 +579,7 @@ function cutAndReverse(input){
 
 [/code-editor]
 [task-description]
+
 ## Description
 The input will be a **single string.**
 
@@ -586,16 +588,15 @@ Write a function that cuts the given string **into half** and reverse the **two 
 Print each half on a **separate line.**
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |`['tluciffiDsIsihTgnizamAoSsIsihT']`| ThisIsDifficult|
 ||ThisIsSoAmazing|
 
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |`['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']`| IBetYouCantDoThis|
 ||ImSoGoodAtThisJob|
-
 
 [/task-description]
 [code-io /]
@@ -638,20 +639,20 @@ yiuyu
 [/test]
 [test]
 [input]
-DRT2\\$%\#dgh
+DRT2\\$\%\#dgh
 [/input]
 [output]
 \\$2TRD
-hgd\#%
+hgd\#\%
 [/output]
 [/test]
 [test]
 [input]
-DRT2\\$s%\#Adgh
+DRT2\\$s\%\#Adgh
 [/input]
 [output]
 s\\$2TRD
-hgdA\#%
+hgdA\#\%
 [/output]
 [/test]
 [test]
