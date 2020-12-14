@@ -20,7 +20,7 @@ let world = 'John';
 
 sentence += world
 
-console log(sentence)
+console.log(sentence)
 ```
 
 Now let's see how the `concat()` works.
@@ -68,7 +68,7 @@ Now let's try with `js` not `JS`:
 ```js live
 let str = 'I love JS a lot';
 
-console.log(str.indexOf('js')
+console.log(str.indexOf('js'));
 ```
 Now it returns `-1` because **indexOf** is case sensitive and does not detect **js** as **JS** 
 
@@ -255,8 +255,8 @@ JAko88/(()
 ```
 function solve(index) {
     let word = index[0];
-    let index1 = index[1];
-    let index2 = index[2];
+    let index1 = Number(index[1]);
+    let index2 = Number(index[2]);
 
     let sub = word.substring(index1, index1 + index2)
     console.log(sub)
@@ -711,11 +711,11 @@ let padded = sentence.padStart(2, 'Hi!');
 console.log(padded);
 ```
 
-And here is and example of `endsWith()`
+And here is and example of `padEnd()`
 
 ```js live
 let sentence = 'My name is John';
-let padded = sentence.endStart(3, '.');
+let padded = sentence.padEnd(3, '.');
 
 console.log(padded);
 ```
@@ -826,15 +826,16 @@ tq
 
 ```
 function countStringOccurrences(input){
+   let sentence = input[0].split(' ')
+   let keyWord = input[1];
+   let occs = 0
 
-    let sentence = input[0];
-    let word = input[1];
-    let cWord = '*'.repeat(word.length)
-    
-    while(sentence.includes(word)){
-        sentence = sentence.replace(word, cWord)
+    for(word of sentence){
+        if(word === keyWord){
+            occs++
+        }
     }
-    console.log(sentence)
+    console.log(occs)
 }
 ```
 [/code-editor]
