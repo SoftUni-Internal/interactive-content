@@ -8,7 +8,7 @@
 [stream language="RO" videoId="489373256/dbc8412983"  /]
 [/video-vimeo]
 
-A function is defined by using the keyword `function` followed by the **name of the function** and a set of **parentheses** to hold parameters or values to be recieved by the function.
+A function is defined by using the keyword `function` followed by the name of the function and a set of parentheses which hold parameters or values to be received by the function. 
 
 Functions can be declared in two ways:
 
@@ -123,7 +123,7 @@ function countDown(x) {
 }
 ```
 
-A recursion means that **a functions calls itself**.
+Recursion means that a **function calls itself.** 
 
 [/slide]
 
@@ -142,7 +142,7 @@ Function **parameters** behave like local variables inside the **function body.*
 
 ## Functions Without Parameters
 
-If a function do not receive arguments when invoked the **result is always the same** (unless it reads data from outside): 
+If a function does not receive arguments when invoked the **it will always produce the same result** (unless it takes data from outside itself):
 
 ``` js live
 function printHeader() {
@@ -181,11 +181,11 @@ function printName(nameArr) {
 printName(['John', 'Smith']); 
 ```
 
-We can pass **less or more** arguments while incoking a function.
+We can pass **more or less arguments** than expected while invoking a function. 
 
-If we pass less arguments then rest of the parameters will be **undefined.**
+If we pass less arguments, then rest of the parameters will be passed to the function as undefined. 
 
-If you pass more arguments then **additional arguments will be ignored.**
+If we pass more arguments, then additional arguments **will be ignored.** 
 
 [/slide]
 
