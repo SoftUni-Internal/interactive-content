@@ -567,6 +567,107 @@ Mhjbhb
 [/slide]
 
 [slide]
+# Problem: Cut and Reverse
+[code-task title="Cut and Reverse" taskId="js-advanced-text-processing-Cut-and-Reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function cutAndReverse(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+## Description
+The input will be a **single string.**
+
+Write a function that cuts the given string **into half** and reverse the **two halves.**
+
+Print each half on a **separate line.**
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['tluciffiDsIsihTgnizamAoSsIsihT']`| ThisIsDifficult|
+||ThisIsSoAmazing|
+
+  | **Input** | **Output** |
+| --- | --- |
+|`['sihToDtnaCuoYteBIboJsihTtAdooGoSmI']`| IBetYouCantDoThis|
+||ImSoGoodAtThisJob|
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+tluciffiDsIsihTgnizamAoSsIsihT
+[/input]
+[output]
+ThisIsDifficult
+ThisIsSoAmazing
+[/output]
+[/test]
+[test open]
+[input]
+sihToDtnaCuoYteBIboJsihTtAdooGoSmI
+[/input]
+[output]
+IBetYouCantDoThis
+ImSoGoodAtThisJob
+[/output]
+[/test]
+[test]
+[input]
+adahjfvgshfgeegy
+[/input]
+[output]
+gvfjhada
+ygeegfhs
+[/output]
+[/test]
+[test]
+[input]
+uiuyiuyuiy
+[/input]
+[output]
+iyuiu
+yiuyu
+[/output]
+[/test]
+[test]
+[input]
+DRT2\\$%\#dgh
+[/input]
+[output]
+\\$2TRD
+hgd\#%
+[/output]
+[/test]
+[test]
+[input]
+DRT2\\$s%\#Adgh
+[/input]
+[output]
+s\\$2TRD
+hgdA\#%
+[/output]
+[/test]
+[test]
+[input]
+VDSHvdgshVSGDA
+[/input]
+[output]
+gdvHSDV
+ADGSVhs
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
