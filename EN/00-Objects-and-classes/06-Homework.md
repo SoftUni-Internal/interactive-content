@@ -1,7 +1,4 @@
-
 # Homework
-
-
 
 [slide]
 # Problem: Employees
