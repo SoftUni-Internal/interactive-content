@@ -10,25 +10,25 @@
 
 **1. What is a Function?**
 
-- What is it means?
+- Meaning of the term "function" in JavaScript 
 
 **2. Declaring and Invoking Functions**
 
-- syntax and usage
+- Syntax and usage 
 
 **3. Nested Functions**
 
-- write a function inside another function
+- The concept of placing functions inside other functions 
 
 **4. Value and Reference Types**
 
-- differences and similarities
+- Differences and similarities between the two
 
 **5. Arrow Functions**
 
-- syntax and usage
+- Syntax and usage
 
 **6. Naming and Best Practices**
 
-- how to name, write and use functions
+- Naming, creating and the use of functions
 [/slide]

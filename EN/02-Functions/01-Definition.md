@@ -8,12 +8,11 @@
 [stream language="RO" videoId="489373212/52cac3ad3a"  /]
 [/video-vimeo]
 
+A function is a subprogram designed to perform a particular task.
 
-A function is a subprogram designed to perform a particular task.
+Functions are executed when they are called, this is known as **invoking a function.**
 
-Functions are executed when they are called, is known as **invoking a function.**
-
-Values can be passed into functions and used within the function.
+Values can be passed to functions and used within them.
 
 ``` js live
 function printStars(count) {
@@ -23,11 +22,11 @@ function printStars(count) {
 printStars(4)
 ```
 
-A function is a **block of code** that is **executed only when called**.
+A function is a **block of code** which is **executed only when called.**
 
-Data can be **passed to it**, as known as **parameters**.
+Data can be **passed to it**, as parameters.
 
-Functions can **return data too**, as **their result**.
+**Functions can** return data too, as a result.
 [/slide]
 
 [slide]
