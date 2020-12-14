@@ -8,30 +8,33 @@
 
 ## What you learned in this lesson
 
--  **Strings** are an immutable series of **characters**
--  They have built-in methods that we use to process them. Some of them are:
+- **Strings** are an immutable series of **characters**
 
-   - How to concatenate two strings using `concat()` method:
+- They have built-in methods that we use to process them.
 
-   ```js live
-   let str = "Hello, "
-   console.log(str.concat("John!"))
-   ```
+- Examples of build-in methods:
 
-   - How to split a strings using `split()` method:
+Concatenate two strings using `concat()` method:
 
-   ```js live
-   let str = "Hello, John"
-   console.log(str.split(", "))
-   ```
+```js live
+let str = "Hello, "
+console.log(str.concat("John!"))
+```
 
-   - How to find specific string using  `includes()` method:
+Split a strings using `split()` method:
 
-   ```js live
-   let str = "Hello, John"
-   console.log(str.includes("John"))
-   ```
+```js live
+let str = "Hello, John"
+console.log(str.split(", "))
+```
 
--  Most of the methods return a new string.
+Find specific string using  `includes()` method:
+
+```js live
+let str = "Hello, John"
+console.log(str.includes("John"))
+```
+
+- Most of the methods return a new string.
 
 [/slide]
