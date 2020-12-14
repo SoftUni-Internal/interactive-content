@@ -184,6 +184,104 @@ nnj
 [/slide]
 
 [slide]
+# Problem: Extract File
+[code-task title="Problem: Extract File" taskId="js-advanced-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function extractFile(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+## Description
+Write a function that receives a single string - the path to a file (the `\` character is escaped)
+Your task is to subtract the **file name** and its extension. (Beware of files like **template.bak.pptx**, as **template.bak** should be the file name, while pptx is the extension).
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['C:\\Internal\\training-internal\\Template.pptx']`| File name: Template |
+||File extension: pptx|
+
+ | **Input** | **Output** |
+| --- | --- |
+|`['C:\\Projects\\Data-Structures\\LinkedList.cs']`|File name: LinkedList |
+||File extension: cs|
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+C:\Internal\training-internal\Template.pptx
+[/input]
+[output]
+File name: Template
+File extension: pptx
+[/output]
+[/test]
+[test open]
+[input]
+C:\Projects\Data-Structures\LinkedList.cs
+[/input]
+[output]
+File name: LinkedList
+File extension: cs
+[/output]
+[/test]
+[test]
+[input]
+E:\P\JAVA\src\oop\Main.java
+[/input]
+[output]
+File name: Main
+File extension: java
+[/output]
+[/test]
+[test]
+[input]
+E:\EX\csharp\CatShop.sln
+[/input]
+[output]
+File name: CatShop
+File extension: sln
+[/output]
+[/test]
+[test]
+[input]
+E:\P\JAVA\src\oop\Bor.xml
+[/input]
+[output]
+File name: Bor
+File extension: xml
+[/output]
+[/test]
+[test]
+[input]
+E:\Trash\MoreTrash\SoftUniExamsSolutions.txt
+[/input]
+[output]
+File name: SoftUniExamsSolutions
+File extension: txt
+[/output]
+[/test]
+[test]
+[input]
+E:\TECH-SVN\Java\07-Objects-and-Classes\Exercise\07.Objects-and-Classes-Exercise.docx
+[/input]
+[output]
+File name: 07.Objects-and-Classes-Exercise
+File extension: docx
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
