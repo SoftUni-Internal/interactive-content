@@ -282,6 +282,106 @@ File extension: docx
 [/slide]
 
 [slide]
+# Problem: String Substring
+[code-task title="String Substring" taskId="js-advanced-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function stringSubstring(input){
+  // Write your code here
+}
+```
+
+[/code-editor]
+[task-description]
+## Description
+The input will be given as **two** separated strings.
+
+Write a function that checks given text for containing a given word.
+
+The comparison should be **case insensitive.**
+
+Once you find match, print the word and stop the program.
+
+If you don't find the word print `{word} not found!`
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`['javascript', 'JavaScript is the best programming language']`| javascript |
+|`['python','JavaScript is the best programming language']`| python not found\! |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+javascript
+JavaScript is the best programming language
+[/input]
+[output]
+javascript
+[/output]
+[/test]
+[test open]
+[input]
+python
+JavaScript is the best programming language
+[/input]
+[output]
+python not found!
+[/output]
+[/test]
+[test]
+[input]
+java
+Java is the best programming language
+[/input]
+[output]
+java
+[/output]
+[/test]
+[test]
+[input]
+chushki
+Jaba is chushki the best jaba programming language
+[/input]
+[output]
+chushki
+[/output]
+[/test]
+[test]
+[input]
+chushki
+bla bla bla
+[/input]
+[output]
+chushki not found!
+[/output]
+[/test]
+[test]
+[input]
+drashki
+bla bla bla drashki
+[/input]
+[output]
+drashki
+[/output]
+[/test]
+[test]
+[input]
+drashki
+bla bla bla nodrashki
+[/input]
+[output]
+drashki not found!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
