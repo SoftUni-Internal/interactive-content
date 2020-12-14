@@ -435,3 +435,275 @@ After that, when the `Decode and read it` button is clicked, you need to get the
 [/code-task]
 
 [/slide]
+
+[slide]
+# Problem: Table Search Engine
+[code-task title="Table Search Engine" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function that searches in a table by given input.
+
+When the `Search` button is clicked, go through all cells in the table except for the first row, which is the header of the table Student name, Student email and Student course.
+
+Check if the given input has a match, check for both full words and single letters.
+
+If any of the rows contain the submitted string, add a **select class** to that row. 
+
+**Note that more than one row may contain the given string**.
+
+If there is no match, **nothing should happen**.
+
+Note: After every search, **clear the input field** and **remove all already selected classes**, if any exist from the previous search, in order for the **new search** to contain only the **new result**.
+
+# Example
+**Input**
+[image assetsSrc="Table-Search-Engine-Input.png" /]
+
+**Output**
+[image assetsSrc="Table-Search-Engine-Output.png" /]
+
+[/task-description]
+[tests]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Furniture
+[code-task title="Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+You will be given a furniture as an array of objects. 
+
+Each object will have a name, a price and a decoration factor.
+
+When the `Generate` button is **clicked**, add a new row to the table for each piece of furniture with its **image**, **name**, **price** and **decoration factor**.
+
+When the `Buy` button is clicked, get all checkboxes that are marked and show in the result textbox the names of the furnitures that were **checked**, separated by a comma and single space `", "` in the following format\: `Bought furniture: {furniture1} {furniture2}…`.
+
+On the next line, print the total price in format: `Total price: {totalPrice}`, formatted to the second decimal point.
+
+Finally, print the average decoration factor in the format: `Average decoration factor: {decFactor}`.
+
+
+# Example
+**Input**
+`[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
+
+**Output**
+[image assetsSrc="Furniture-Output.png" /]
+
+[/task-description]
+[tests]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Cards
+[code-task title="Cards" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function which checks cards, shows which one is greater and keeps history of all hands.
+
+Firstly, **add click events to all cards**. 
+
+When one of the cards is clicked, the current background card must be changed with the `whiteCard.jpg` picture given in the skeleton.
+
+The card name should be appended to one of the **span** elements in the div with `id="result"`.
+
+If a card from **the top side** is **clicked**, append the card name to the **left span**, first empty the span, otherwise append the card name to the right span, which will be second or last span.
+
+When cards from **both sides are selected**, check which one is **greater**. 
+
+The greater card should have a border `2px solid green` and the other card should have a border `2px solid red`.
+
+You should clear the span elements which hold the current card names when both are selected, and the winner is selected. 
+
+After every hand, push the current card names in the **history div** in the following format:
+`[{top side card name} vs {bottom side card name}]`
+
+
+# Example
+**Input**
+[image assetsSrc="Cards-Input.png" /]
+
+**Output**
+[image assetsSrc="Cards-Output.png" /]
+
+[/task-description]
+[tests]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
