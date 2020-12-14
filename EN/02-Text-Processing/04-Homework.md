@@ -97,6 +97,93 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [/slide]
 
 [slide]
+# Problem: 2.	Modern Times of HashTag
+[code-task title="Problem: Modern Times of HashTag" taskId="js-advanced-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function modernTimesOfHashTag(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+The input will be a **single string.**
+
+Find all special words **starting with** `#`.
+
+Word is invalid if it has **anything** other than **letters**.
+
+Print the words you found without the tag each on a new line.
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|`[''Nowadays everyone uses # to tag a #special word in #socialMedia']`| special
+socialMedia
+ |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Nowadays everyone uses \# to tag a \#special word in \#socialMedia
+[/input]
+[output]
+special
+socialMedia
+[/output]
+[/test]
+[test]
+[input]
+hjahd hasjk ag dwgyw gdyag dgsydwu shusia \#jkdlsa dasjkfjkj \#dsdas
+[/input]
+[output]
+jkdlsa
+dsdas
+[/output]
+[/test]
+[test]
+[input]
+hjag dgsydwu shusia \#545A dasjkfjkj \#sdas
+[/input]
+[output]
+sdas
+[/output]
+[/test]
+[test]
+[input]
+nj kwuei euie ruiw eop oerr \# \#sa
+[/input]
+[output]
+sa
+[/output]
+[/test]
+[test]
+[input]
+nj \#kwuei \#euiAAe \#32432\\$\\$\\$\\$ ruiw eop oerr \# \#sa
+[/input]
+[output]
+kwuei
+euiAAe
+sa
+[/output]
+[/test]
+[test]
+[input]
+nj \#nnj
+[/input]
+[output]
+nnj
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
 # Homework Results
 
 [tasks-results/]
