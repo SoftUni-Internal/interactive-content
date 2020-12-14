@@ -88,7 +88,7 @@ inputField.addEventListener('input', function () {
 
 Here is a more in-depth implementation of the `.addEventListener()` method and the`.removeEventListener()` method.
 
-The first even listener `('focus', focusEvent)`will add **focus** to the password input field if you click inside the field.
+The first event listener `('focus', focusEvent)`will add **focus** to the password input field if you click inside the field.
 
 The second event listener `'blur', (event)` will remove **focus** if you click another input field.
 
