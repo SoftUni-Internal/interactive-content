@@ -93,9 +93,10 @@ We can add a method to an already defined object:
 let person = { name:'Peter', age: 20 };
 person.sayHello = () => console.log('Hi, guys');
 ```
-[slide]
 
 [/slide]
+
+[slide]
 # Built-in Methods
 
 [vimeo-video]
