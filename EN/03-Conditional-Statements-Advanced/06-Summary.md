@@ -1,39 +1,35 @@
-# Summary
-
-
 [slide]
 # Summary
 
-## Nested Conditions
-```java
-if (condition1) {
-    if (condition2)
-        // body; 
-    else
-        // body;
-}
-```
+In this lesson we learned: 
 
-## Complex Conditions with Logical Operators
-```java
-if ((x == left || x == right) && y >= top && y <= bottom)
-    System.out.println(…);
-```
+- What are nested conditional statements
 
-## Switch-Case Conditions
-```java
-switch (selector) {
-    case value1:
-        construction;
-        break;
-    case value2:
-    case value3:
-        construction;
-        break;
-    …
-    default:
-        construction;
-        break;
-}
-```
+  * if-else inside another if-else
+
+- Logical Operators  
+
+  * && , || , ! operators 
+
+- Conditional Statement - **Switch-Case**
+
+  * Multiple Labels in **Switch-Case**
+
+In the next lesson we will learn:
+
+- **Incrementing** and **Decrementing** Operators
+
+- Repeating blocks of code
+
+  * for-loops
+
+- For loop with a **Step**
+
+- Iterating over Characters using loops
+
+- **Infinity** loops
+
+  * How to avoid them
+
+
 [/slide]
