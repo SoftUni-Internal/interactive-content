@@ -10,13 +10,13 @@
 
 Arrow functions `=>` were introduced with [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
 
-With the new syntax we can often obtain more concise code.
+With the new syntax we can often create more concise code. 
 
-In some cases translating multi-line callbacks to one-liners, thanks to features like the implicit return.
+In some cases, translating multi-line callbacks to one-liners, thanks to features like the implicit return. 
 
-Arrow functions cannot replace standard functions everywhere.
+Arrow functions cannot replace standard functions everywhere. 
 
-There are some contexts where we cannot use them, and we will see why.
+There are some contexts where we cannot use them, and we will see why 
 
 Example:
 

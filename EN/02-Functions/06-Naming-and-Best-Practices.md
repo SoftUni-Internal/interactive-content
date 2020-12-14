@@ -28,7 +28,7 @@ If you **cannot** find a **good name** for a function, think about **whether it 
 ## Naming Function Parameters
 
  - Preferred form: `[Noun]` or `[Adjective] + [Noun]`
- - Should **not** have **capital** letters
+ - Should **not contain** **capital** letters
  - Should be **meaningful**
  - Unit of measure should be obvious
 
@@ -75,7 +75,7 @@ Make sure to use correct indentation
 - Always use curly brackets for conditional and loop bodies
 - Avoid long lines and complex expressions
 
-- Example of **well-structured function:**
+- Example of a **well-structured function:**
 
 ```js
 function sum() {
@@ -84,7 +84,7 @@ function sum() {
 }
 ```
 
-- Example of **badly structured function:**
+- Example of a **badly structured function:**
 
 ```js
 function sum()
@@ -104,7 +104,7 @@ function sum()
 [stream language="RO" videoId="489373707/dfc94da2ab"  /]
 [/video-vimeo]
 
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
@@ -113,11 +113,11 @@ function simpleCalculator(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that receives an array of three elements. 
+Write a function that receives an array containing three elements. 
 
-Write an arrow function that calculate result depending of operator. 
+Write an arrow function that calculates the result depending on the specified operator. 
 
-Operator can be: `multiply`, `divide`, `add`, `subtract`.
+The operator could only be one of the following: `multiply`, `divide`, `add` and `subtract`.
 
 ## Examples
 | **Input** | **Output** |
@@ -222,7 +222,7 @@ subtract
 [stream language="RO" videoId="489373791/a1578a4a89"  /]
 [/video-vimeo]
 
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
@@ -252,11 +252,11 @@ function simpleCalculator(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that receives an array of three elements. 
+Write a function that receives an array containing three elements. 
 
-Write an arrow function that calculate result depending of operator. 
+Write an arrow function that calculates the result depending on the specified operator. 
 
-Operator can be: `multiply`, `divide`, `add`, `subtract`.
+The operator could only be one of the following: `multiply`, `divide`, `add` and `subtract`.
 
 ## Examples
 | **Input** | **Output** |
