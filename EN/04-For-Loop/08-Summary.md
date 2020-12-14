@@ -1,34 +1,28 @@
-# Summary
-
 [slide]
 # Summary
 
-We can repeat a code block using a `for` loop:
-```java live
-for (int i = 0; i < 10; i++) {
-  System.out.println(i);
-}
-```
+In this lesson we learned: 
 
-We can read a sequence of `n` numbers from the console this way:
-```java live
-Scanner scanner = new Scanner(System.in);
-for (int i = 0; i < 10; i++) {
-    int number = Integer.parseInt(scanner.nextLine());
-}
-```
+- For loops
+  
+  * Overview of what For loops contains
 
-We can use a different step in the `for` loop:
-```java live
-for (int i = 0; i < 10; i += 2) {
-  System.out.println(i);
-}
-```
+  * For loops repeat a certain block of code
 
-We can iterate over characters:
-```java live
-for (char ch = 'a'; ch <= 'z'; ch++) {
-  System.out.print(ch + " ");
-}
-```
+- For loops with step
+
+- Prefix and Postfix overview
+
+
+In the next lesson we will learn:
+
+- What are **While** loops and how we use them
+
+- Difference between **While** and **For** loops
+
+- The **Break** operator 
+
+- Infinity Loops and how to safe-use them
+
+
 [/slide]

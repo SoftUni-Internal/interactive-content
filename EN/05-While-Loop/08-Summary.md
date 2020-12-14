@@ -1,29 +1,26 @@
-# Summary
-
-
 [slide]
 # Summary
 
-The while loops is repeated while a condition is `true`:
-```java live
-int num = 1;
-while (num <= n) {
-   System.out.println(num++);
-}
-```
+In this lesson we learned: 
 
-If we have to interrupt the loop execution, we do it with the operator `break`:
+- What are **While** loops and how we use them
 
-```java live
-int n = 4096;
-while (true) {
-   if (n < 1024) {
-      break; 
-   }
+- Difference between **While** and **For** loops
 
-   System.out.println("The number is greater than 1024");
-}
+- **Break** operator 
 
-System.out.printf("The number is %d", n);
-```
+- Infinity Loops
+
+In the next lesson we will learn:
+
+- Complex for-loops with special step
+
+- Nested loops and how we use them
+
+  * Loops inside loops
+
+- Combining nested **for** and **while** loops
+
+
+
 [/slide]
