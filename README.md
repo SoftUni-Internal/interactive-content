@@ -1,3 +1,3 @@
-# Use Branches
+# JS Application
 
-Please use **branches** for each course instance!
+
