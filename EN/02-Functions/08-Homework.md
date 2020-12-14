@@ -99,9 +99,9 @@ function smallestNumbers(input){
 [task-description]
 # Description
 
-Write a function which receives three integer numbers to print the **smallest.**
+Write a function which receives three integer and **prints out the smallest.** 
 
-Use appropriate name for the function.
+Use an appropriate name for the function. 
 
 # Example
 | **Input** | **Output** |
@@ -191,9 +191,9 @@ function addSubtract(input){
 [task-description]
 # Description
 
-You will receive **three integer numbers.** 
+You will receive **three integers.**
 
-Write a function `sum()` to get the sum of the first two integers and `subtract()` function that subtracts the third integer from the result.
+Write a function called `sum()` to get the sum of the first two integers and a `subtract()` function that subtracts the third integer from the result.
 
 
 # Example
@@ -334,9 +334,9 @@ function charactersInRange(input){
 [task-description]
 # Description
 
-Write a function that **receives two characters** and prints on a single line all the characters in between them according to the **ASCII** code. 
+Create a function that **receives two characters** and prints on a single line all the characters in between them according to the ASCII table. 
 
-Keep in mind that the **second character code might be before the first one inside the ASCII table.**
+Keep in mind that the second **character's ASCII code might be before the first one in the ASCII table.** 
 
 # Example
 | **Input** | **Output** |
@@ -491,9 +491,9 @@ function palindrome(input){
 [task-description]
 # Description
 
-A palindrome is a number which reads the same **backward** as **forward**, such as 323 or 1001. 
+A palindrome is a number which **reads the same backward as forward**, such as 323 or 1001. 
 
-Write a function which receives an **array of positive integer** and checks if each integer is a palindrome or not. 
+Write a function which receives an array of positive integers and checks if each integer is a palindrome or not. 
 
 # Example
 | **Input** | **Output** |
@@ -888,12 +888,11 @@ function perfectNumber (input){
 [task-description]
 # Description
 
-Write a function that receive a number and return if this number is **perfect** or **NOT**.
+Write a function that receives a number and determines whether **this number is perfect or NOT.**
 
-A perfect number is a **positive** integer that is equal to the **sum** of its **proper positive divisors**.
+A perfect number is a positive integer that is equal to the sum of its proper positive divisors.
 
-That is the sum of its positive divisors excluding the number itself (also known as its **aliquot sum**).
- 
+The sum of its positive divisors excluding the number itself (also known as its aliquot sum.
 
 # Example
 | Input   | Output | Comments   |

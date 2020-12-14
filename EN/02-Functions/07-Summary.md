@@ -6,15 +6,14 @@
 [stream language="RO" videoId="489373802/dc043536a7"  /]
 [/video-vimeo]
 
-In this lesson you learned:
+**In this lesson we learned that:**
 
-- Break large programs into simple functions that solve small sub-problems
+- Functions are often used to break large programs into simple pieces of code
 
-- Consist of **declaration** and **body**
+- They consist of a declaration and a body
 
-- Are invoked by their **name**
+- Functions are invoked by typing in their name in the program code
 
-- Can accept **parameters**
-
+- Functions can accept parameters
 
 [/slide]
