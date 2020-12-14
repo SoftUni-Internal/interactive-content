@@ -9,11 +9,11 @@
 [/video-vimeo]
 
 
-The `return` operator is used to return a value from inside a function.
+The `return` operator is used to return a value and end the execution of the function. 
 
-Once a `return` operator is executed, **anything after it inside a function doesn't run.**
+Once the `return` operator is executed, **anything after it inside a function will not run.**
 
-The directive `return` can be in any place of the function.
+The `return` operator can be placed anywhere in the function. 
 
 ``` js live
 function readFullName(firstName, lastName) {
@@ -39,7 +39,7 @@ If you try to use it outside of a function, **it will throw an error.**
 [/video-vimeo]
 
 
-Return value can be:
+The return value can be: 
 
 - Assigned to a variable
 
@@ -84,11 +84,11 @@ function isValid(index, arr) {
 console.log(isValid(3, [1,2,3,4,5]));
 ```
 
-When we're working with arrays it's often used for checking if the **index is valid.**
+When working with arrays it is often used to check if an **index is valid.**
 
-The result of this function is **boolean**, it will return `true` if the index is inside of the boundary of the array, and return `false` if it's not.
+The result of this function is **boolean**, it will return true if the index is inside of the boundary of the array, and `false` if it is not.
 
-- Does the student pass the exam:
+- In this example, the student would pass the example if they get a grade higher than 3:
 
 ```js live
 function pass(grade) {
@@ -106,6 +106,8 @@ console.log(pass(5.32))
 [stream language="EN" videoId="489373875/3db9f493f6" default /]
 [stream language="RO" videoId="489373875/3db9f493f6"  /]
 [/video-vimeo]
+
+
 [/slide]
 
 [slide]
@@ -116,12 +118,11 @@ console.log(pass(5.32))
 [stream language="RO" videoId="489373544/4848ba2e9e"  /]
 [/video-vimeo]
 
+The nested function operates within the scope of the outer function. 
 
-With a nested function, **the inner function** operates within the scope of the outer function.
+It can access the outer function's variables and arguments. 
 
-The inner fuction **can access** the outer function's variables and arguments.
-
-**BUT outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
+**BUT the outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
 
 [image assetsSrc="Nested-Functions.png" /]
 
@@ -143,7 +144,6 @@ function swapElements(arr) {
 
 swapElements([1,2,3,4,5,6,7,8,9,10]);
 ```
-
 In this example, we create a function `swapElements()`, which receives one argument. 
 
 In the function body, we loop through the array and invoke another function `swap()`, to which we pass three arguments. 
