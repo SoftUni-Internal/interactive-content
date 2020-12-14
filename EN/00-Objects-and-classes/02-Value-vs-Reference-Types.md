@@ -4,6 +4,7 @@
 # Value vs. Reference Types
 
 ## Missing vidios.
+
 [image assetsSrc="Value-vs-Reference-Types(1).gif" /]
 
 # Value Types

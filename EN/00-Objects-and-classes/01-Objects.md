@@ -54,6 +54,7 @@ person["lastName"] = 'Parker';
 person.age = 20;
 person.hairColor = 'black';
 ```
+
 [/slide]
 
 [slide]
@@ -122,6 +123,7 @@ console.log(Object.keys(cat));
 console.log(Object.values(cat));
 
 ```
+
 [/slide]
 
 [slide]
