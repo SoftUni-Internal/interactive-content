@@ -3,6 +3,11 @@
 [slide]
 # What Are Classes ?
 
+[vimeo-video]
+[stream language="EN" videoId="489794985/0c02c8963c" default /]
+[stream language="RO" videoId="489794985/0c02c8963c"  /]
+[/video-vimeo]
+
 A **class** is like a **blueprint** (or template) for creating **objects**.
 
 Classes provide means of **bundling data and functionality** together.
@@ -10,6 +15,15 @@ Classes provide means of **bundling data and functionality** together.
 Each class instance can have **attributes** attached to it.
 
 Class instances can also have **methods** for **modifying its state**, they are its **behavior**.
+[/slide]
+
+[slide]
+# Class Declaration
+
+[vimeo-video]
+[stream language="EN" videoId="489794989/34b7176f44" default /]
+[stream language="RO" videoId="489794989/34b7176f44"  /]
+[/video-vimeo]
 
 Example: 
 
@@ -28,6 +42,11 @@ The `constructor` is a special method for creating and initializing an object.
 
 [slide]
 # Class example
+
+[vimeo-video]
+[stream language="EN" videoId="489795065/d7a673fc0a" default /]
+[stream language="RO" videoId="489795065/d7a673fc0a"  /]
+[/video-vimeo]
 
 The `class` keyword is used to create a class.
 
@@ -51,14 +70,23 @@ This is how we create an **instance** of the `Student` class:
 ```js
 let student = new Student('Peter', 5.50);
 ```
+[/slide]
 
+[slide]
 # Functions in a Class
 
-The ability to modify data is performed by special functions that are a part of the class, which are the methods.
+[vimeo-video]
+[stream language="EN" videoId="489795074/7c855b8347" default /]
+[stream language="RO" videoId="489795074/7c855b8347"  /]
+[/video-vimeo]
 
-The JavaScript classes support both **instance** and **static** methods. 
+The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
 
-Instance methods can access and modify instance data. Instance methods can call other instance methods, as well as any static method. 
+The JavaScript classes support both **instance** and **static** methods.
+
+Instance methods can **access and modify** instance data.
+
+Instance methods can call other instance methods, as well as any static method.
 
 ``` js live
 class Dog {
@@ -77,6 +105,12 @@ dog.speak();
 
 [slide]
 # Problem: Cats
+
+[vimeo-video]
+[stream language="EN" videoId="489795072/b02a97d757" default /]
+[stream language="RO" videoId="489795072/b02a97d757"  /]
+[/video-vimeo]
+
 [code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -159,9 +193,15 @@ huuh, age 9 says Meow
 [code-io /]
 [/code-task]
 [/slide]
-[slide]
 
+[slide]
 # Solution: Cats
+
+[vimeo-video]
+[stream language="EN" videoId="489795144/890591bfdb" default /]
+[stream language="RO" videoId="489795144/890591bfdb"  /]
+[/video-vimeo]
+
 [code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
