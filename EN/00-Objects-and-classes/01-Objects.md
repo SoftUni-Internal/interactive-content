@@ -3,15 +3,20 @@
 [slide]
 # What Are Objects ?
 
-Objects in JavaScript, just as many other programming languages, can be compared to objects in real life. 
+[vimeo-video]
+[stream language="EN" videoId="489795277/32e690031f" default /]
+[stream language="RO" videoId="489795277/32e690031f"  /]
+[/video-vimeo]
+
+Objects in JavaScript, as in **many other programming languages**, can be compared to objects in real life.
 
 The concept of objects in JavaScript can be understood with real life, tangible objects.
 
-An object consists of several variables and functions called properties and method.
+An object consists of several variables and functions called properties and methods.
 
-In JavaScript, at run time you can add and remove properties of any object.
+In JavaScript, at run time you can add and remove properties from any object.
 
-Example:
+Example: 
 
 ``` js live
 let person = { name:'Peter', age: 20 };
@@ -29,7 +34,12 @@ We can access the property value with the name of the class `.` property name.
 [slide]
 # Object Definition 
 
-We can create an object with an object literal, using the following syntax:
+[vimeo-video]
+[stream language="EN" videoId="489795273/ab8664a147" default /]
+[stream language="RO" videoId="489795273/ab8664a147"  /]
+[/video-vimeo]
+
+We can define an empty object and add the properties later:
 
 ``` js
 let person = {name:'Peter', age: 20, hairColor: 'black'};
@@ -48,6 +58,11 @@ person.hairColor = 'black';
 
 [slide]
 # Object Methods
+
+[vimeo-video]
+[stream language="EN" videoId="489795322/e2b71c887b" default /]
+[stream language="RO" videoId="489795322/e2b71c887b"  /]
+[/video-vimeo]
 
 Functions within a JavaScript object are called methods.
 
@@ -78,16 +93,23 @@ We can add a method to an already defined object:
 let person = { name:'Peter', age: 20 };
 person.sayHello = () => console.log('Hi, guys');
 ```
+[slide]
 
-# The Object Methods
+[/slide]
+# Built-in Methods
+
+[vimeo-video]
+[stream language="EN" videoId="489795341/8532941804" default /]
+[stream language="RO" videoId="489795341/8532941804"  /]
+[/video-vimeo]
 
 Methods:
 
-* `Object.entries()`: returns array of tuples all properties and their values of an object 
+* `Object.entries()`: returns an array of tuples, holding all properties and their values
 
-* `Object.keys()`: returns array with all the properties
+* `Object.keys()`: returns array holding all the properties of an object
 
-* `Object.values()`: returns array with all the values of the properties
+* `Object.values()`: returns an array with all the values of the properties of the object
 
 ``` js live
 let cat = { name:'Tom', age: 5 };
@@ -99,10 +121,17 @@ console.log(Object.keys(cat));
 console.log(Object.values(cat));
 
 ```
+[/slide]
 
-We can iterate through keys of an object.
+[slide]
+# Iterate through Keys
 
-Use `for-in` loop to iterate over the object properties by key:
+[vimeo-video]
+[stream language="EN" videoId="489795350/598a1cef8e" default /]
+[stream language="RO" videoId="489795350/598a1cef8e"  /]
+[/video-vimeo]
+
+We can iterate through keys of an object, by using a `for-in` loop to iterate over the object's properties by key:
 
 ``` js live
 let person = { name:'Peter', age:'18', grade:'5.50' };
@@ -117,6 +146,12 @@ for (let key in person) {
 
 [slide]
 # Problem: Person Info
+
+[vimeo-video]
+[stream language="EN" videoId="489795432/3e85c0a88d" default /]
+[stream language="RO" videoId="489795432/3e85c0a88d"  /]
+[/video-vimeo]
+
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -209,6 +244,12 @@ age: 22
 
 [slide]
 # Solution: Person Info
+
+[vimeo-video]
+[stream language="EN" videoId="489795397/a61485a8d9" default /]
+[stream language="RO" videoId="489795397/a61485a8d9"  /]
+[/video-vimeo]
+
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -309,6 +350,12 @@ age: 22
 
 [slide]
 # Problem: City
+
+[vimeo-video]
+[stream language="EN" videoId="489795448/09ea78efff" default /]
+[stream language="RO" videoId="489795448/09ea78efff"  /]
+[/video-vimeo]
+
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -399,6 +446,12 @@ postCode -> 484
 
 [slide]
 # Solution: City
+
+[vimeo-video]
+[stream language="EN" videoId="489795461/ed6a2ec0c8" default /]
+[stream language="RO" videoId="489795461/ed6a2ec0c8"  /]
+[/video-vimeo]
+
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

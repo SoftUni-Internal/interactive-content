@@ -2,6 +2,12 @@
 
 [slide]
 
+[vimeo-video]
+[stream language="EN" videoId="489795210/483305f49e" default /]
+[stream language="RO" videoId="489795210/483305f49e"  /]
+[/video-vimeo]
+
+
 # In this lesson you will learn about:
 
 **1. Objects**
