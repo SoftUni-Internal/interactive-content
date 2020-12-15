@@ -4,7 +4,7 @@
 
 [slide]
 
-Download the resources from here - [Mega.nz](https://mega.nz/file/6VAgTbqT#eTEsCGG6h0WErbhKN9PgO0S5NRk2NCSHhk5uoC-O4YU)
+Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP3-JQhOAxXzwTgD5xxLKlXhoGMGjfQ26kTTfaVM)
 
 [/slide]
 
