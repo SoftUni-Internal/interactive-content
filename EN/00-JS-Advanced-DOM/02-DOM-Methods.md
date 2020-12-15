@@ -76,7 +76,7 @@ And that way, the first title element, which is `Introduction to DOM`, can be pr
 
 HTML DOM properties are values that you can `get` or `set`:
 
-```html live
+```js live
 <html>
   <head>
     <title>Intro to DOM</title>
