@@ -235,16 +235,25 @@ tyuhjk \-\> 0844565344
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  let contacts = {};
-  for (const line of input) {
-    let [name, phone] = line.split(" ");
-    contacts[name] = phone;
-  }
-  Object.keys(contacts).forEach((key) => {
-    console.log(`${key} -> ${contacts[key]}`);
-  });
+//Video code
+
+function solve(input){
+let phoneBook ={};
+
+for(let line of input){
+  let tokens = line.split(' ');
+  let name = tokens[0];
+  let number = tokens[1];
+
+  phoneBook[name] = number;
 }
+
+for(let key in phoneBook){
+  console.log(`${key} -> ${phoneBook[key]}`);
+ }
+}
+
+solve
 ```
 
 [/code-editor]
@@ -648,20 +657,25 @@ Tuesday \-\> Ted
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  const meetings = {};
-  for (const line of input) {
-    const [day, name] = line.split(" ");
-    if (!meetings.hasOwnProperty(day)) {
-      meetings[day] = name;
-      console.log(`Scheduled for ${day}`);
-    } else {
-      console.log(`Conflict on ${day}!`);
-    }
+//Video code
+
+function meetings(input){
+const meetings = {};
+
+for (const line of input) {
+  const [weekDay, name] = line.split(' ');
+
+  if (meetings.hasOwnProperty(weekDay)) {
+    console.log(`Conflict on ${weekDay}!`);
+  } else {
+    meetings[weekDay] = name;
+    console.log(`Scheduled for ${weekDay}`);
   }
-  for (const key in meetings) {
-    console.log(`${key} -> ${meetings[key]}`);
-  }
+}
+
+for (const key in meetings) {
+  console.log(`${key} -> ${meetings[key]}`);
+}
 }
 ```
 
