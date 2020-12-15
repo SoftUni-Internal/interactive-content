@@ -1,13 +1,12 @@
-# Lesson Introduction
-
 [slide]
-
-# In this lesson you will learn about:
+# Lesson Introduction
 
 [vimeo-video]
 [stream language="EN" videoId="489798991/d4ac1eda53" default /]
 [stream language="RO" videoId="489798991/d4ac1eda53"  /]
 [/video-vimeo]
+
+## In this lesson you will learn about:
 
 **1. Associative Arrays**
 - Definition
