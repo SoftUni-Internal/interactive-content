@@ -68,12 +68,12 @@ Let's see what is going on in the code step by step to understand it better:
 1.  Defining a function **foo()** which checks if ``this===global`` (``this===window`` if running it in the browser).
 
 2.  Creating an object **user** with two methods.
-   - ``foo: foo`` - to store the foo function we defined in step 1 inside a method with the same name.
-   -  ``bar: function() { console.log(this === global); }`` the **bar** method checks if ``this===global``
+   * ``foo: foo`` - to store the foo function we defined in step 1 inside a method with the same name.
+   *  ``bar: function() { console.log(this === global); }`` the **bar** method checks if ``this===global``
 
 3. Calling ``user.foo();`` invokes the method belonging to the **user** object. Returns: **false**, because ``this`` is used within an object's method and returns the object itself.
 
-4. ``let func = user.bar;`` now we define a new function to which we assign the method **bar** from the **user** object. Returns **true**, because now ``this`` is called by the function **func** and not from the user object's method. **this** is indeed equal to **global**.
+*  ``let func = user.bar;`` now we define a new function to which we assign the method **bar** from the **user** object. Returns **true**, because now ``this`` is called by the function **func** and not from the user object's method. **this** is indeed equal to **global**.
 
 5. ``user.bar();`` will return **false** because **bar()** is a method of the object **user** and ``this`` will return the object iself like it did with the **foo** method.
 
@@ -103,7 +103,7 @@ When referencing ``this`` from within an event, it returns the element from whic
 
 You test this yourself by creating an HTML file with the following example code:
 
-```html
+```js
 <!DOCTYPE html>
 <html>
 
