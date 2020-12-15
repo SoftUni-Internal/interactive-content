@@ -8,7 +8,7 @@
 
 In this lesson we learned: 
 
-* Arrays in JavaScript have a lot of built-in methods.
+* Arrays in JavaScript have a lot of built\-in methods.
 
 * We can add, remove, or insert elements at runtime.
 
