@@ -8,8 +8,8 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP
 
 [slide]
 # Problem: Sections
-[code-task title="Problem: Sections" taskId="66f5be58-83dd-44d6-a3c6-038ca343a90b" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```js
 function solve(input){
     let content = document.querySelector("#content");
