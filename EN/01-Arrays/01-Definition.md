@@ -81,7 +81,7 @@ When we have an array, we can access each element by its index.
 
 The `[]` operator is used to access elements of the array by their **index.**
 
-```js
+```js live
 let numbers = [1, 2, 3, 4, 5];
 
 console.log(`First number is ${numbers[0]}`); 
@@ -636,10 +636,11 @@ If we attempt to assign a value to a non-existent index, JS will fill the missin
 
 ``` js live
 let nums = [10, 20, 30];
-nums[4] = 50; // Will resize the array
-
 console.log(nums);
+
+nums[4] = 50; // Will resize the array
 console.log(nums.length);
+
 console.log(nums[3]);
 ```
 

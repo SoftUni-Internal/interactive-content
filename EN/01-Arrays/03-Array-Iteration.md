@@ -21,7 +21,7 @@ let capitals = ['Bucuresti', 'Washington', 'London'];
 Another way to print all array elements is using `toString()`
 
 ``` js live
-let capitals = ['Bucuresti', 'Washington', 'London'];
+let capitals = ['Bucharest', 'Washington', 'London'];
 
 console.log(capitals.toString())
 ```
