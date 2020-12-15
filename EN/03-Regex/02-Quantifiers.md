@@ -6,19 +6,17 @@
 
 Quantifiers indicate numbers of characters or expressions to match.
 
-Before using the examples below we need to understand a few things about regular expressions.
-
-We will need a string a pattern and the keyword `.match()`.
+For the examples below we will need a **string** a **pattern** and the `.match()` method.
 
 The pattern looks like this: `/regularExpression/g`
 
-The "g" flag indicates that the regular expression should be tested against all possible matches in a string. 
+The g modifier is used to perform a global match (find all matches rather than stopping after the first match).
 
-Sometimes you will need the global flag, sometimes you will not need it.
+Sometimes we will need the global flag, sometimes we will not.
 
 Let's have a look at the examples:
 
-`*` matches the previous element zero or more times.
+`*` matches the preceding element zero or more times.
 
 Example: `Hellooo World! Hello Again!`
 
@@ -31,7 +29,7 @@ Example: `Hellooo World! Hello Again!`
     console.log(result);
 ```
 
-`+` matches the previous element one or more times.
+`+` matches the preceding element one or more times.
 
 Example: `Hellooo World! Hello Again!`
 
@@ -44,7 +42,7 @@ Example: `Hellooo World! Hello Again!`
     console.log(result);
 ```
 
-`?` matches the previous element zero or one time.
+`?` matches the preceding element zero or one time.
 
 Example: `1, 100 or 1000`
 
@@ -57,7 +55,7 @@ Example: `1, 100 or 1000`
     console.log(result);
 ```
 
-`{4}` matches the previous element exactly 4 times.
+`{4}` matches the preceding element exactly 4 times.
 
 Example: `1000, 10000 or 100000`
 
@@ -81,7 +79,7 @@ That has two effects:
 - It allows to get a part of the match as a separate item in the result array.
 - If we put a quantifier after the parentheses, it applies to the parentheses as a whole.
 
-In the following example we will search for the expression "go".
+In the following example, we will search for the expression "go".
 
 ```js live
     const str = "Here we go now";
@@ -112,7 +110,7 @@ This method returns the matched text if it finds a match, otherwise it returns n
     console.log(match.groups.number);
 ```
 
-And if there are multiple matches you can iterate over them:
+If there are multiple matches, we can iterate over them.
 
 ```js live
     const str = "My telephone number is 0884608975 and yours is 0887468956";
@@ -126,9 +124,9 @@ And if there are multiple matches you can iterate over them:
 
 Use this expression for **non-capturing groups** `(?:subexpression)`.
 
-You can use `(?:subexpression)` to not capture groups and drop them from the result.
+We can use `(?:subexpression)` not to capture groups and drop them from the result.
 
-When you are dealing with complex regular expressions this can be very helpful!
+When we are dealing with complex regular expressions, this can be very helpful.
 
 The pipe symbol `|` in the example means logical "or".
 
@@ -141,15 +139,15 @@ The pipe symbol `|` in the example means logical "or".
 
 ## Backreferences
 
-A group can be referenced in the pattern using `\N`, where N is the group number.
+A group can be referenced in the pattern, using \N, where N is the group number.
 
-To make clear why that's helpful, let's consider a task. Extract a sentence surrounded by `#`.
+To make clear why that is helpful, let's consider a task, which is to extract a sentence, surrounded by #.
 
 The first group in the pattern is `(\#)` and it wil match the first `#`. 
 
-After that we match capital letters, small letters and spaces with `[A-Z,a-z\s]+`
+After that, we match capital letters, small letters and spaces with `[A-Z,a-z\s]+`
 
-To match the second `#` which is after the word "there" use `\1`, where number 1 is the number of the group.
+To match the second `#`, which is after the word "there" use \1, where the number 1 is the number of the group.
 
 
 ```js live
@@ -188,7 +186,7 @@ Every valid date has the following characteristics:
 - Always starts with two digits, followed by a separator.
 - After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar).
 - After that, it has a separator and exactly 4 digits (for the year).
-- The separator could be either of three things: a period `(".")`, a hyphen `("-")` or a forward slash `("/")`.
+- The separator could be\: a period `(".")`, a hyphen `("-")`, or a forward slash `("/")`.
 - The separator needs to be the same for the whole date `(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)`.
 
 Use a group backreference to check for this.
@@ -370,7 +368,7 @@ Every valid date has the following characteristics:
 - Always starts with two digits, followed by a separator.
 - After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar).
 - After that, it has a separator and exactly 4 digits (for the year).
-- The separator could be either of three things: a period `(".")`, a hyphen `("-")` or a forward slash `("/")`.
+- The separator could be\: a period `(".")`, a hyphen `("-")`, or a forward slash `("/")`.
 - The separator needs to be the same for the whole date `(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)`.
 
 Use a group backreference to check for this.

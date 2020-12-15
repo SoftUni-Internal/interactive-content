@@ -4,7 +4,7 @@
 
 # Regex in JS
 
-In JavaScript you can construct a regular expression in two ways:
+In "JavaScript", we can construct a regular expression in two ways:
 
 The first one is called **Regular Expression Literal** and it provides a compilation when the script is loaded. 
 
@@ -24,9 +24,9 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 
 ## Validating string by pattern
 
-The first method we will look at is `.test()`. It simply determines whether there is a match.
+The first method we will look at is the `.test()`. It simply determines whether there is a match.
 
-In the example below we test if we have a valid date. If we do then the result will be **true** otherwise it will be **false**.
+In the example below we test if we have a valid date. If we do, the result will be **true**, otherwise it will be **false**.
 
 ```js live
 let text = 'Today is 2015-05-11';
@@ -37,9 +37,9 @@ console.log(containsValidDate);
 
 ## Checking for matches
 
-Use `.match()` to check for matches. It returns an array, which is easy to iterate.
+Use the `.match()` method to check for matches. It returns an array, which can be iterated easily after that.
 
-In the example we have only two matches.
+In the example, we have only two matches.
 
 ```js live
 let text = 'Peter: 123 Mark: 456';
@@ -52,11 +52,13 @@ console.log(matches[1]);
 
 ## Using the Exec() method
 
-If the match succeeds, the `.exec()` method returns an array with extra properties index and input and updates the lastIndex property of the regular expression object. 
+If the match succeeds, the `.exec()` method returns an array with extra properties\: "index" and "input". 
+
+It updates the "lastIndex" property of the regular expression object. 
 
 The returned array has the matched text as the first item, and then one item for each parenthetical capture group of the matched text.
 
-If the match fails, the `.exec()` method returns **null**, and sets lastIndex to 0.
+If the match fails, the `.exec()` method returns **null**, and sets the "lastIndex" to 0.
 
 It is important to use the global flag `g`.
 
@@ -72,9 +74,9 @@ while (result !== null) {
 
 ## Replacing with regex
 
-You can use the `.replace(regex, stringReplacement)` method with regular expressions.
+We can use the `.replace(regex, stringReplacement)` method with regular expressions.
 
-Replaces all strings that match the pattern with the provided replacement.
+It replaces all strings that match the pattern with the provided replacement.
 
 ```js live
 let text = 'Peter: 123 Mark: 456';
@@ -88,9 +90,9 @@ console.log(result);
 
 The method `.matchAll()` returns an iterator of all results matching a string against a regular expression, including capturing groups.
 
-It works similar to `.exec()` the only difference is that we get all the matches at once in a form of array. 
+It works similar to the `.exec()` method. The only difference is that we get all the matches at once in a form of an array. 
 
-The result is an array of arrays, that is why here we use the spread operator.
+The result is an array of arrays, that is why we use the spread operator in this example.
 
 ```js live
 const regexp = /t(e)(st(\d?))/g;
@@ -131,7 +133,7 @@ function solve(input){
 
 # Description
 
-Write a JavaScript function to match full names from a list of names and print them on the console.
+Write a "JavaScript" function to match full names from a list of names, and print them on the console.
 
 First, write a regular expression to match a valid full name, according to these conditions:
 
@@ -146,8 +148,8 @@ To help you out, we have outlined several steps:
 1.	Use an online regex tester like https\:\/\/regex101\.com\/ 
 2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\).
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\).
-4.	For each word, specify that it should begin with an uppercase letter using a character set. The desired characters are in a range \– from A to Z.
-5.	For each word, specify that what follows the first letter are only lowercase letters, one or more – use another character set and the correct quantifier.
+4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z.
+5.	For each word, specify that the first letter is followed only by lowercase letters, one or more \– use another character set and the correct quantifier.
 6.	To prevent capturing of letters across new lines, put `\b` at the beginning and at the end of your regex. 
 This will ensure that what precedes and what follows the match is a word boundary like a new line.
 
@@ -283,7 +285,7 @@ function solve(input) {
 
 # Description
 
-Write a JavaScript function to match full names from a list of names and print them on the console.
+Write a "JavaScript" function to match full names from a list of names, and print them on the console.
 
 First, write a regular expression to match a valid full name, according to these conditions:
 
@@ -294,12 +296,12 @@ A valid full name has the following characteristics:
 - Each of the two words should be at least two letters long.
 - The two words are separated by a single space.
 
-To help you out, we've outlined several steps:
+To help you out, we have outlined several steps:
 1.	Use an online regex tester like https\:\/\/regex101\.com\/ 
-2.	Check out how to use character sets `(denoted with square brackets - [])`
-3.	Specify that you want two words with a space between them \(the space character \' \'\, and not any whitespace symbol\)
-4.	For each word, specify that it should begin with an uppercase letter using a character set. The desired characters are in a range – from A to Z.
-5.	For each word, specify that what follows the first letter are only lowercase letters, one or more – use another character set and the correct quantifier.
+2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\).
+3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\).
+4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z.
+5.	For each word, specify that the first letter is followed only by lowercase letters, one or more \– use another character set and the correct quantifier.
 6.	To prevent capturing of letters across new lines, put `\b` at the beginning and at the end of your regex. 
 This will ensure that what precedes and what follows the match is a word boundary like a new line.
 
@@ -443,7 +445,7 @@ You can use the following RegEx properties to help with the matching:
 - Use quantifiers to match a specific number of digits.
 - Use a capturing group to make sure the delimiter is only one of the allowed characters (space or hyphen) and not a combination of both \(e.g. \+359 2\-111 111 has mixed delimiters, it is invalid\). Use a group backreference to achieve this.
 - Add a word boundary at the end of the match to avoid partial matches (the last example on the right hand side).
-- Ensure that before the `+` sign there is either a space or the beginning of the string.
+- Ensure that before the `+` sign there is either a space or it is the beginning of the string.
 
 # Example
 
@@ -591,7 +593,7 @@ You can use the following RegEx properties to help with the matching:
 - Use quantifiers to match a specific number of digits.
 - Use a capturing group to make sure the delimiter is only one of the allowed characters (space or hyphen) and not a combination of both \(e.g. \+359 2\-111 111 has mixed delimiters, it is invalid\). Use a group backreference to achieve this.
 - Add a word boundary at the end of the match to avoid partial matches (the last example on the right hand side).
-- Ensure that before the `+` sign there is either a space or the beginning of the string.
+- Ensure that before the `+` sign there is either a space or it is the beginning of the string.
 
 # Example
 
