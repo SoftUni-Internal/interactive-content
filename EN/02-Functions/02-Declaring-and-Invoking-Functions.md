@@ -59,15 +59,7 @@ A function is not executed before it is invoked.
 
 A function can be invoked from **everywhere in the scope**, where it is defined.
 
-You can declare a function:
-
-```js
-function hLine() {
-  console.log("----------");
-}
-```
-
-Then we can invoke (call) the function by its name:
+We can declare a function, and then we can invoke (call) the function by its name:
 
 ```js live
 function hLine() {
@@ -128,19 +120,17 @@ Recursion means that a **function calls itself.**
 [/slide]
 
 [slide]
-# Functions and Parameters
+# Functions Without Parameters
 
 [vimeo-video]
 [stream language="EN" videoId="489373376/28ddf53572" default /]
 [stream language="RO" videoId="489373376/28ddf53572"  /]
 [/video-vimeo]
 
-
 We can have a function **with or without** parameters.
 
 Function **parameters** behave like local variables inside the **function body.**
 
-## Functions Without Parameters
 
 If a function does not receive arguments when invoked the **it will always produce the same result** (unless it takes data from outside itself):
 
@@ -152,8 +142,9 @@ function printHeader() {
 }
 printHeader();
 ```
-
-## Functions With Parameters
+[/slide]
+[slide]
+# Functions With Parameters
 
 [vimeo-video]
 [stream language="EN" videoId="489373715/065a22dd97" default /]
