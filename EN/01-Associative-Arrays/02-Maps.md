@@ -652,25 +652,41 @@ Tghj\: 5\, 6\, 6\, 5
 [code-editor language=javascript]
 
 ```
-function solve(input) {
-  let students = {};
-  input.forEach((line) => {
-    const [name, ...grades] = line.split(` `);
-    if (!students[name]) {
-      students[name] = grades.map(Number);
-    } else {
-      students[name] = students[name].concat(grades.map(Number));
-    }
-  });
-  let sorted = Object.entries(students).sort((a, b) => {
-    let averageA = a[1].reduce((acc, x) => acc + x) / a[1].length;
-    let averageB = b[1].reduce((acc, x) => acc + x) / b[1].length;
+//Video code
 
-    return averageA - averageB;
-  });
-  for (const kvp of sorted) {
-    console.log(`${kvp[0]}: ${kvp[1].join(`, `)}`);
+function solve(input){
+let map = new Map();
+for(let line of input){
+  let tokens = line.split(' ');
+  let name = tokens.shift();
+  let grades = tokens.map(Number);
+
+  if(!map.has(name)){
+    map.set(name, []);
   }
+
+  let existing = map.get(name);
+  for(let grade of grades){
+    existing.push(grade);
+   }
+ }
+
+ let sorted = Array.from(map).sort(compareAvarage);
+
+ for(let[name, grades] of sorted){
+   console.log(`${name}: ${grades.join(', ')}`);
+ }
+
+ function compareAvarage(a, b){
+   let avgA = 0;
+   a[1].forEach(x => avgA += x);
+   avgA /= a[1].length;
+
+   let avgB = 0;
+   b[1].forEach(x => avgB +=x);
+   avgB /= b[1].length;
+   return avgA - avgB;
+ }
 }
 ```
 
