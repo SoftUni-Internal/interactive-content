@@ -63,13 +63,15 @@ Variables in JavaScript are not strictly associated with a particular **value ty
 
 We can re-assign variables of all types:
 
-``` js
-let var = 15; // var now is a number
-var = "Peter"; // var now is a String
-var = false; // var now is boolean
- 
+``` js live
+let variable = 15; 
+console.log(`My variable is ${typeof(varible)}`)
+
+variable = "Peter"; 
+console.log(`My variable is ${typeof(varible)}`)
+
+variable = false;
+console.log(`My variable is ${typeof(varible)}`)
 ```
-
-
 
 [/slide]
