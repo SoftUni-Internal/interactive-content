@@ -12,23 +12,7 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP
 [code-editor language=javascript]
 ```js
 function solve(input){
-    let content = document.querySelector("#content");
-  for (let i = 0; i < input.length; i++) {
-    let p = document.createElement("p");
-    p.innerHTML = input[i];
-    p.style.display = "none";
-    let div = document.createElement("div");
-    div.appendChild(p);
-    content.appendChild(div);
-  }
-  let div = document.querySelectorAll("div");
-  Array.from(div).forEach((d) =>
-    d.addEventListener("click", function (e) {
-      if (e.target !== content) {
-        e.target.children[0].style.display = "block";
-      }
-    })
-  );
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -134,8 +118,8 @@ yes
 
 [slide]
 # Problem: Notification
-[code-task title="Problem: Notification" taskId="cedba082-e905-4713-9e5d-caba83617cb4" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -339,8 +323,8 @@ yes
 
 [slide]
 # Problem: Time Converter
-[code-task title="Problem: Time Converter" taskId="877812a0-7f4d-4662-89ea-7ab7dfdb9390" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -534,8 +518,8 @@ yes
 
 [slide]
 # Problem: Locked Profile
-[code-task title="Problem: Locked Profile" taskId="9fa6c7bd-8f73-460e-862d-9a373bfb5dc3" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profile" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -1404,8 +1388,8 @@ yes
 
 [slide]
 # Problem: Encode And Decode Messages
-[code-task title="Problem: Encode And Decode Messages" taskId="29dec166-5be0-4a96-8b05-abc91dac17bc" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -1645,8 +1629,8 @@ yes
 
 [slide]
 # Problem: Table Search Engine
-[code-task title="Problem: Table Search Engine" taskId="2e1c7a67-3fa1-4a07-bb14-dc79525c02ee" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -2200,8 +2184,8 @@ yes
 
 [slide]
 # Problem: Furniture
-[code-task title="Problem: Furniture" taskId="a9bbdf87-aa6e-4df1-8ebf-401c4b16f535" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
@@ -2703,8 +2687,8 @@ yes
 
 [slide]
 # Problem: Cards
-[code-task title="Problem: Cards" taskId="34b04b11-a040-49f0-8d35-fe398e17ae75" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=js]
+[code-task title="Cards" taskId="Js-Advanced-Dom-Manipulations-Cards" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 ```
 function solve(){
   // Write your code here
