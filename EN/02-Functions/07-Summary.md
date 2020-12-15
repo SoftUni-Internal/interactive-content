@@ -11,9 +11,25 @@
 - Functions are often used to break large programs into simple pieces of code
 
 - They consist of a declaration and a body
-
+```js
+function myFunction(){
+  //function  body
+}
+```
 - Functions are invoked by typing in their name in the program code
+```js live
+function myFunction(){
+  console.log('Hello JavaScript!');
+}
 
+myFunction();
+```
 - Functions can accept parameters
+```js live
+function myFunction(input){
+  console.log(input);
+}
 
+myFunction('Hello JavaScript!');
+```
 [/slide]

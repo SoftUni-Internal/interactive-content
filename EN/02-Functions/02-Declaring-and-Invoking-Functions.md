@@ -159,7 +159,7 @@ In this example we pass **two parameteres** as an argument:
 function multiply(a, b) {
   console.log(a*b);
 }
-multiply(5, 7); // 35
+multiply(5, 7);
 ```
 
 In this example we pass **an array** as an argument:
