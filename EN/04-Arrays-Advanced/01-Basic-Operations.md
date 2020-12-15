@@ -330,8 +330,8 @@ console.log(myArray);
 # Problem: Negative or Positive Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="489374903/12f02c94ea" default /]
-[stream language="RO" videoId="489374903/12f02c94ea"  /]
+[stream language="EN" videoId="491173934/f975ab3bb3" default /]
+[stream language="RO" videoId="491173934/f975ab3bb3"  /]
 [/video-vimeo]
 
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -492,6 +492,14 @@ The output has to be printed on the console, each element on a new line.
 
 [slide]
 # Solution: Negative or Positive Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="491173994/fc9de18c5b" default /]
+[stream language="RO" videoId="491173994/fc9de18c5b"  /]
+[/video-vimeo]
+
+
+
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
