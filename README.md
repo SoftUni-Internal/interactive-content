@@ -1,3 +1,1 @@
-# Use Branches
-
-Please use **branches** for each course instance!
+# JS Fundamentals Mid Exam
