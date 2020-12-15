@@ -1,6 +1,6 @@
-# Usages of "this"
+# Usages of this
 [slide]
-# "This" in a Method
+# This in a Method
 When inside a method ``this`` is used to access information stored in the object that "owns" the object:
 
 ```js live
@@ -35,7 +35,9 @@ info: function() {
 [/slide]
 
 [slide]
-# "This" Refers to the Parent Object
+
+# This Refers to the Parent Object
+
 Consider the below example:
 
 ```js live
