@@ -30,7 +30,7 @@ let numbers = [1, 2, 3, 4, 5];
 let numbers = [1, 2, 3, 4, 5];
 ```
 - Elements can be iterated over with a standard loop or a `for-of` loop 
-``` js 
+``` js live
 let numbers = [1, 2, 3, 4, 5];
 
 for (const number of numbers) {
