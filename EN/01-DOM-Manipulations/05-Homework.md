@@ -1,5 +1,7 @@
 # Homework
 
+_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP3-JQhOAxXzwTgD5xxLKlXhoGMGjfQ26kTTfaVM)
+
 [slide]
 # Problem: Sections
 [code-task title="Sections" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -705,5 +707,13 @@ After every hand, push the current card names in the **history div** in the foll
 [/tests]
 [code-io /]
 [/code-task]
+
+[/slide]
+
+[slide]
+
+# Homework Results
+
+[tasks-results/]
 
 [/slide]
