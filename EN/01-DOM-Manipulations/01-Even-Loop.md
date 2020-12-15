@@ -3,6 +3,8 @@
 [slide]
 # Don't Make the Thread Wait
 
+_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/6VAgTbqT#eTEsCGG6h0WErbhKN9PgO0S5NRk2NCSHhk5uoC-O4YU)
+
 The **event loop** is the fundamental of how JavaSvipt function.
 
 Mostly JavaScript is **executed in the browser.**
