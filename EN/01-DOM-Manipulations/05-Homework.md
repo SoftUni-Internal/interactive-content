@@ -10,9 +10,25 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP
 # Problem: Sections
 [code-task title="Problem: Sections" taskId="66f5be58-83dd-44d6-a3c6-038ca343a90b" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=js]
-```
-function solve(){
-  // Write your code here
+```js
+function solve(input){
+    let content = document.querySelector("#content");
+  for (let i = 0; i < input.length; i++) {
+    let p = document.createElement("p");
+    p.innerHTML = input[i];
+    p.style.display = "none";
+    let div = document.createElement("div");
+    div.appendChild(p);
+    content.appendChild(div);
+  }
+  let div = document.querySelectorAll("div");
+  Array.from(div).forEach((d) =>
+    d.addEventListener("click", function (e) {
+      if (e.target !== content) {
+        e.target.children[0].style.display = "block";
+      }
+    })
+  );
 }
 ```
 [/code-editor]
