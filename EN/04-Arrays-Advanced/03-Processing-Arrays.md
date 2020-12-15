@@ -73,8 +73,8 @@ console.log(positiveNums);
 # Problem: Process Odd Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="489374571/1014b0026b" default /]
-[stream language="RO" videoId="489374571/1014b0026b"  /]
+[stream language="EN" videoId="489374346/bee533f0f2" default /]
+[stream language="RO" videoId="489374346/bee533f0f2"  /]
 [/video-vimeo]
 
 [code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -518,15 +518,12 @@ let sortedInAscending = arr.sort((a, b) =>{
 [code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function smallestTwoNumbers(arr){
-    let smallestTwoNumbers = [];
-    arr.sort((a, b) => a - b);
-
-    for (let i = 0; i < 2; i++) {
-        smallestTwoNumbers[i] = arr[i];
-    }
-
-    console.log(smallestTwoNumbers.join(" "));
+function smallestTwoNumbers(input){
+    input.sort((a, b) => a - b);
+    let firstEl = input.shift();
+    let secondEl = input.shift();
+    
+    console.log(`${firstEl} ${secondEl}`);
 }
 ```
 [/code-editor]
