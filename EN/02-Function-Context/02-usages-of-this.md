@@ -104,7 +104,6 @@ When referencing ``this`` from within an event, it returns the element from whic
 You test this yourself by creating an HTML file with the following example code:
 
 ```js
-<!DOCTYPE html>
 <html>
 
 <body>
@@ -126,7 +125,6 @@ You test this yourself by creating an HTML file with the following example code:
         solve();
     </script>
 </body>
-
 </html>
 ```
 
