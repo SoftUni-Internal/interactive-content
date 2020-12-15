@@ -1,6 +1,10 @@
 # Homework
 
+[slide]
+
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP3-JQhOAxXzwTgD5xxLKlXhoGMGjfQ26kTTfaVM)
+
+[/slide]
 
 [slide]
 # Problem: Sections
