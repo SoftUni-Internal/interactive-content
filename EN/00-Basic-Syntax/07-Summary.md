@@ -45,7 +45,11 @@ In this lesson you learned:
 - `let` has block scope, `var` has function scope
 
 - With `typeof` we can receive the type of a variable
+``` js live
+let cars = ["Nio", "Tesla", "Xpeng"];
 
+console.log(typeof(cars));
+```
 - `Null` is "nothing",  undefined exists, but is empty
 
 In the next lesson you will learn:
