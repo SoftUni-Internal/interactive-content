@@ -77,7 +77,6 @@ Let's see what is going on in the code step by step to understand it better:
 
 - ``user.bar();`` will return **false** because **bar()** is a method of the object **user** and ``this`` will return the object iself like it did with the **foo** method.
 
-___
 
 To summarize: 
  - used in methods, ``this`` references the object to which the method belongs.
