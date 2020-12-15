@@ -103,9 +103,8 @@ When referencing ``this`` from within an event, it returns the element from whic
 
 You test this yourself by creating an HTML file with the following example code:
 
-```js
+```html
 <html>
-
 <body>
 
     <p>Welcome to your code playground!</p>
