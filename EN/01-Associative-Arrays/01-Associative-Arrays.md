@@ -1121,15 +1121,24 @@ Ted \-\> Dayton Ave
 [code-editor language=javascript]
 
 ```
+//Video code
+
 function solve(input) {
-  const book = {};
-  for (const line of input) {
-    const [name, address] = line.split(":");
-    book[name] = address;
+  let addressBook = {};
+
+  for (let line of input) {
+    let [name, address] = line.split(':');
+
+    addressBook[name] = address;
   }
-  Object.keys(book)
-    .sort((a, b) => a.localeCompare(b))
-    .forEach((k) => console.log(`${k} -> ${book[k]}`));
+
+  let sorted = Object.entries(addressBook);
+
+  sorted.sort((a, b) => a[0].localeCompare(b[0]));
+
+  for (let [name, address] of sorted) {
+    console.log(`${name} -> ${address}`);
+  }
 }
 ```
 

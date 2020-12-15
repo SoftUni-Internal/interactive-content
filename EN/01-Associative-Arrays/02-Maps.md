@@ -335,18 +335,24 @@ coknfee \-\> 350
 [code-editor language=javascript]
 
 ```
+//Video code
+
 function solve(input) {
-  let products = new Map();
-  input.forEach((line) => {
-    const [product, quantity] = line.split(` `);
-    if (!products.has(product)) {
-      products.set(product, 0);
+  let map = new Map();
+
+  for(let line of input){
+    let tokens = line.split(' ');
+    let product = tokens[0];
+    let quantity = Number(tokens[1]);
+
+    if(map.has(product)){
+      quantity += map.get(product);
     }
-    products.set(product, products.get(product) + Number(quantity));
-  });
-  let entries = products.entries();
-  for (const kvp of entries) {
-    console.log(`${kvp[0]} -> ${kvp[1]}`);
+    map.set(product, quantity);
+  }
+
+  for(let[product, quantity] of map){
+    console.log(`${product} -> ${quantity}`);
   }
 }
 ```
