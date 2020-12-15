@@ -65,13 +65,13 @@ We can re-assign variables of all types:
 
 ``` js live
 let variable = 15; 
-console.log(`My variable is ${typeof(varible)}`)
+console.log(`My variable is ${typeof(variable)}`)
 
 variable = "Peter"; 
-console.log(`My variable is ${typeof(varible)}`)
+console.log(`My variable is ${typeof(variable)}`)
 
 variable = false;
-console.log(`My variable is ${typeof(varible)}`)
+console.log(`My variable is ${typeof(variable)}`)
 ```
 
 [/slide]

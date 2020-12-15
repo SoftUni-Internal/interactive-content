@@ -1,12 +1,12 @@
-[slide]
+# Strings
 
+[slide]
 # What is a String?
 
 [vimeo-video]
 [stream language="EN" videoId="489371415/8a09c2cbb3" default /]
 [stream language="RO" videoId="489371415/8a09c2cbb3"  /]
 [/video-vimeo]
-
 
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
@@ -70,7 +70,7 @@ Replacing **placeholders** with values inside of a string literal is named strin
 In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as placeholder perform the string interpolation.
 
 ``` js live
-let name = "Rick";
+let name = 'Rick';
 let age = 18;
 console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 ```
@@ -78,8 +78,6 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 
 [slide]
-
-
 # Problem: Concantenate Names
 
 [vimeo-video]

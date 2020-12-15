@@ -2,7 +2,6 @@
 
 [slide]
 
-
 # Undefined
 
 [vimeo-video]
@@ -35,7 +34,6 @@ console.log(car);
 [/slide]
 
 [slide]
-
 
 # Null
 

@@ -1,9 +1,6 @@
+# Numbers
+
 [slide]
-
-
-
-
-
 # What is a Number?
 
 [vimeo-video]
@@ -73,10 +70,6 @@ console.log(myVar + 10);
 [/slide]
 
 [slide]
-
-
-
-
 # Problem: Integer or Float
 
 [vimeo-video]
@@ -176,9 +169,6 @@ Your task is to find their **sum** and print it to the console with an addition
 [/slide]
 
 [slide]
-
-
-
 # Solution: Integer or Float
 
 [vimeo-video]

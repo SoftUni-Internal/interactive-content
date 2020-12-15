@@ -1,5 +1,6 @@
-[slide]
+# Booleans
 
+[slide]
 
 # What is a Boolean?
 
@@ -29,9 +30,6 @@ Boolean comparisons are most often put in `if` construction, we can also return 
 [/slide]
 
 [slide]
-
-
-
 
 # Comparisons and Conditions
 
@@ -167,14 +165,11 @@ It is always better to be **explicit** so as not to be ambiguous.
 
 [slide]
 
-
-
-
 # Problem: Amazing Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="489371745/0d75d93049" default /]
-[stream language="RO" videoId="489371745/0d75d93049"  /]
+[stream language="EN" videoId="489371747/54fbdf1eb2" default /]
+[stream language="RO" videoId="489371747/54fbdf1eb2"  /]
 [/video-vimeo]
 
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -291,27 +286,28 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 
 # Solution: Amazing Numbers
-
 [vimeo-video]
-[stream language="EN" videoId="489371747/54fbdf1eb2" default /]
-[stream language="RO" videoId="489371747/54fbdf1eb2"  /]
+[stream language="EN" videoId="489371745/0d75d93049" default /]
+[stream language="RO" videoId="489371745/0d75d93049"  /]
 [/video-vimeo]
+
 
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function amazingNumbers(input){
- let	num = input.toString();
-let sum = 0;
-	for (let j = 0; j <=num.length - 1; j++) {
-		sum += Number(num[j]);
-	}
-	if (sum.toString().includes('9')) {
-		console.log(`${num} Amazing? True`);
-			} else {
-		console.log(`${num} Amazing? False`);
-	}
+function amazingNumbers(input) {
+  let num = input.toString();
+  let sum = 0;
+  for (let j = 0; j <= num.length - 1; j++) {
+    sum += Number(num[j]);
+  }
+  if (sum.toString().includes('9')) {
+    console.log(`${num} Amazing? True`);
+  } else {
+    console.log(`${num} Amazing? False`);
+  }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -415,10 +411,6 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/slide]
 
 [slide]
-
-
-
-
 
 # The Typeof operator
 
