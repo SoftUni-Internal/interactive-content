@@ -181,6 +181,8 @@ town\: Sofia
 [code-task title="Convert to Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
+//Video code
+
 function convertToObject(input){
    let person = JSON.parse(input);
 
@@ -321,6 +323,8 @@ njnnjk
 [code-task title="Convert to JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
+//Different vido code
+
 function convertToJSON(input){
   let person = {
         name: input[0],

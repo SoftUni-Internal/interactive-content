@@ -205,6 +205,8 @@ huuh, age 9 says Meow
 [code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
+//Different vido code
+
 function solve(input){
     let cats =[]
     class Cat {
