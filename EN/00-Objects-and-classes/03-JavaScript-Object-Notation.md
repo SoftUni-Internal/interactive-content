@@ -182,11 +182,13 @@ town\: Sofia
 [code-editor language=javascript]
 ```
 function convertToObject(input){
-    let object = JSON.parse(input);
+   let person = JSON.parse(input);
 
-    for (let key in object){
-        console.log(`${key}: ${object[key]}`);
-    }
+   let keys = Object.keys(person);
+   
+   for(let key of keys){
+   console.log(`${key}: ${person[key]}`)
+   }
 }
 ```
 [/code-editor]
