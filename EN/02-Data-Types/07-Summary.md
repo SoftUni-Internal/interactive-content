@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-## In this lesson you learnt:
+## In this lesson you learned:
   - Variables – store data
   - Numeral types: 
     - Represent numbers
@@ -20,9 +20,4 @@
 [/slide]
 
 
-[slide]
-# Lab Results
 
-[tasks-results /]
-
-[/slide]

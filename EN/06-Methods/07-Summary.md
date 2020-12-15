@@ -1,20 +1,11 @@
 # Summary
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="9817" endTimeInSeconds="9907"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - Method - **block of code** that can be reused multiple times
 - Methods consist of **declaration** and **body**

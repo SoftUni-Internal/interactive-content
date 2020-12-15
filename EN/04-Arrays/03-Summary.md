@@ -2,7 +2,7 @@
 [slide]
 # Summary
 
-## In this lesson you learnt:
+## In this lesson you learned:
 - Arrays hold a sequence of elements
 - Creating (allocating) an array
 - Accessing array elements by index
@@ -22,9 +22,3 @@
 [/slide]
 
 
-[slide]
-# Lab Results
-
-[tasks-results /]
-
-[/slide]

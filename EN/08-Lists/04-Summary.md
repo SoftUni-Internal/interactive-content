@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-## In this lesson you learnt:
+## In this lesson you learned:
 - List - data structure that holds a sequence of elements
 - Initializing of a List - `new ArrayList<E>()`
 - Lists methods
@@ -21,9 +21,4 @@
     - Methods
 [/slide]
 
-[slide]
-# Lab Results
 
-[tasks-results /]
-
-[/slide]

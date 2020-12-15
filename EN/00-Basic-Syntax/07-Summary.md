@@ -3,7 +3,7 @@
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
   - Declaring Variables
 
@@ -31,9 +31,3 @@
 [/slide]
 
 
-[slide]
-# Lab Results
-
-[tasks-results /]
-
-[/slide]
