@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Order Rectangles
-[code-task title="Order Rectangles" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Order Rectangles" taskId="js-advanced-DOM-Manipulations-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -45,42 +45,186 @@ The output must be an array of **rectangles** objects sorted by their **area** i
 {width:10, height:5, area:funciton(),compareTo:function(other)}]]`
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let sizes = \[\[10,5\],\[5,12\]\];
 
+let sortedRectangles = result(sizes);
+
+expect(sortedRectangles.length).to.exist;
+expect(sortedRectangles).to.have.lengthOf(2,'Returned array had incorrect Length!');
+
+expect(sortedRectangles\[0\].width).to.exist;
+expect(sortedRectangles\[0\].height).to.exist;
+expect(sortedRectangles\[0\].area).to.exist;
+expect(sortedRectangles\[0\].area).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[0\].width).to.equal(5,'Width did not match!');
+expect(sortedRectangles\[0\].height).to.equal(12,'Height did not match!');
+expect(sortedRectangles\[0\].area()).to.equal(60,'Area did not match!');
+
+expect(sortedRectangles\[1\].width).to.exist;
+expect(sortedRectangles\[1\].height).to.exist;
+expect(sortedRectangles\[1\].area).to.exist;
+expect(sortedRectangles\[1\].area).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[1\].width).to.equal(10,'Width did not match!');
+expect(sortedRectangles\[1\].height).to.equal(5,'Height did not match!');
+expect(sortedRectangles\[1\].area()).to.equal(50,'Area did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let sizes = \[\[10,5\],\[3,20\],\[5,12\]\];
 
+let sortedRectangles = result(sizes);
+
+expect(sortedRectangles.length).to.exist;
+expect(sortedRectangles).to.have.lengthOf(3,'Returned array had incorrect Length!');
+
+expect(sortedRectangles\[0\].width).to.exist;
+expect(sortedRectangles\[0\].height).to.exist;
+expect(sortedRectangles\[0\].area).to.exist;
+expect(sortedRectangles\[0\].area).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[0\].width).to.equal(5,'Width did not match!');
+expect(sortedRectangles\[0\].height).to.equal(12,'Height did not match!');
+expect(sortedRectangles\[0\].area()).to.equal(60,'Area did not match!');
+
+expect(sortedRectangles\[1\].width).to.exist;
+expect(sortedRectangles\[1\].height).to.exist;
+expect(sortedRectangles\[1\].area).to.exist;
+expect(sortedRectangles\[1\].area).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[1\].width).to.equal(3,'Width did not match!');
+expect(sortedRectangles\[1\].height).to.equal(20,'Height did not match!');
+expect(sortedRectangles\[1\].area()).to.equal(60,'Area did not match!');
+
+expect(sortedRectangles\[2\].width).to.exist;
+expect(sortedRectangles\[2\].height).to.exist;
+expect(sortedRectangles\[2\].area).to.exist;
+expect(sortedRectangles\[2\].area).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[2\].width).to.equal(10,'Width did not match!');
+expect(sortedRectangles\[2\].height).to.equal(5,'Height did not match!');
+expect(sortedRectangles\[2\].area()).to.equal(50,'Area did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let sizes = \[\[1,1\],\[15,1\],\[1,1\],\[1,15\],\[7,7\],\[25,3\],\[13,3\],\[15,5\]\];
 
+let sortedRectangles = result(sizes);
+
+expect(sortedRectangles.length).to.exist;
+expect(sortedRectangles).to.have.lengthOf(8,'Returned array had incorrect Length!');
+
+expect(sortedRectangles\[0\].width).to.equal(25,'Width did not match!');
+expect(sortedRectangles\[0\].height).to.equal(3,'Height did not match!');
+expect(sortedRectangles\[0\].area()).to.equal(75,'Area did not match!');
+
+expect(sortedRectangles\[1\].width).to.equal(15,'Width did not match!');
+expect(sortedRectangles\[1\].height).to.equal(5,'Height did not match!');
+expect(sortedRectangles\[1\].area()).to.equal(75,'Area did not match!');
+
+expect(sortedRectangles\[2\].width).to.equal(7,'Width did not match!');
+expect(sortedRectangles\[2\].height).to.equal(7,'Height did not match!');
+expect(sortedRectangles\[2\].area()).to.equal(49,'Area did not match!');
+
+expect(sortedRectangles\[3\].width).to.equal(13,'Width did not match!');
+expect(sortedRectangles\[3\].height).to.equal(3,'Height did not match!');
+expect(sortedRectangles\[3\].area()).to.equal(39,'Area did not match!');
+
+expect(sortedRectangles\[4\].width).to.equal(15,'Width did not match!');
+expect(sortedRectangles\[4\].height).to.equal(1,'Height did not match!');
+expect(sortedRectangles\[4\].area()).to.equal(15,'Area did not match!');
+
+expect(sortedRectangles\[5\].width).to.equal(1,'Width did not match!');
+expect(sortedRectangles\[5\].height).to.equal(15,'Height did not match!');
+expect(sortedRectangles\[5\].area()).to.equal(15,'Area did not match!');
+
+expect(sortedRectangles\[6\].width).to.equal(1,'Width did not match!');
+expect(sortedRectangles\[6\].height).to.equal(1,'Height did not match!');
+expect(sortedRectangles\[6\].area()).to.equal(1,'Area did not match!');
+
+expect(sortedRectangles\[7\].width).to.equal(1,'Width did not match!');
+expect(sortedRectangles\[7\].height).to.equal(1,'Height did not match!');
+expect(sortedRectangles\[7\].area()).to.equal(1,'Area did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let sizes = \[\[1,20\],\[20,1\],\[5,3\],\[5,3\]\];
 
+let sortedRectangles = result(sizes);
+
+expect(sortedRectangles.length).to.exist;
+expect(sortedRectangles).to.have.lengthOf(4,'Returned array had incorrect Length!');
+
+expect(sortedRectangles\[0\].compareTo).to.be.an.instanceOf(Function);
+expect(sortedRectangles\[1\].compareTo).to.be.an.instanceOf(Function);
+expect(sortedRectangles\[2\].compareTo).to.be.an.instanceOf(Function);
+
+expect(sortedRectangles\[0\].compareTo(sortedRectangles\[1\])).to.be.below(0,'CompareTo function did not compare correctly or elements were not sorted');
+expect(sortedRectangles\[1\].compareTo(sortedRectangles\[0\])).to.be.above(0,'CompareTo function did not compare correctly or elements were not sorted');
+
+expect(sortedRectangles\[1\].compareTo(sortedRectangles\[2\])).to.be.below(0,'CompareTo function did not compare correctly or elements were not sorted');
+expect(sortedRectangles\[2\].compareTo(sortedRectangles\[1\])).to.be.above(0,'CompareTo function did not compare correctly or elements were not sorted');
+
+expect(sortedRectangles\[2\].compareTo(sortedRectangles\[3\])).to.equal(0,'CompareTo function did not compare correctly or elements were not sorted');
+expect(sortedRectangles\[2\].compareTo(sortedRectangles\[2\])).to.equal(0,'CompareTo function did not compare correctly or elements were not sorted');
 [/input]
 [output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let sizes = \[\[3, 4\], \[5, 3\], \[3, 4\], \[3, 5\], \[12, 1\]\];
 
+let sortedRectangles = result(sizes);
+
+
+expect(sortedRectangles).to.have.lengthOf(5,'Returned array had incorrect Length!');
+
+expect(sortedRectangles\[0\].width).to.equal(5,'Width did not match!');
+expect(sortedRectangles\[0\].height).to.equal(3,'Height did not match!');
+expect(sortedRectangles\[0\].area()).to.equal(15,'Area did not match!');
+
+expect(sortedRectangles\[1\].width).to.equal(3,'Width did not match!');
+expect(sortedRectangles\[1\].height).to.equal(5,'Height did not match!');
+expect(sortedRectangles\[1\].area()).to.equal(15,'Area did not match!');
+
+expect(sortedRectangles\[2\].width).to.equal(12,'Width did not match!');
+expect(sortedRectangles\[2\].height).to.equal(1,'Height did not match!');
+expect(sortedRectangles\[2\].area()).to.equal(12,'Area did not match!');
+
+expect(sortedRectangles\[3\].width).to.equal(3,'Width did not match!');
+expect(sortedRectangles\[3\].height).to.equal(4,'Height did not match!');
+expect(sortedRectangles\[3\].area()).to.equal(12,'Area did not match!');
+
+expect(sortedRectangles\[4\].width).to.equal(3,'Width did not match!');
+expect(sortedRectangles\[4\].height).to.equal(4,'Height did not match!');
+expect(sortedRectangles\[4\].area()).to.equal(12,'Area did not match!');
+[/input]
+[output]
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
