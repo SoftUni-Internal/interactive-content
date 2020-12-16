@@ -1,18 +1,12 @@
 # Arrays
 
 [slide]
-# Video
+# Definition
 
 [vimeo-video startTimeInSeconds="85" endTimeInSeconds="2420"]
 [stream language="EN" videoId="421771481" default /]
 [stream language="RO" videoId="427418768"  /]
 [/vimeo-video]
-
-[/slide]
-
-[slide]
-
-# Definition
 
 You already know how to store single data in one variable. Arrays allow us to store multiple data, again, in only one variable.
 
@@ -107,7 +101,7 @@ If we try to access the element on an invalid index, we get an exception.
 
 [slide hideTitle]
 # Problem: Day of Week
-[code-task title="Problem: Day of Week" taskId="java-fund-07-Arrays-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Day of Week" taskId="java-fund-Arrays-Day-of-Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -253,23 +247,7 @@ import java.util.Scanner;
 
 public class TestTech {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String[] days = {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-        };
-        int day = Integer.parseInt(scanner.nextLine());
-        if (day >= 1 && day <= 7)
-            System.out.println(days[day - 1]);
-        else
-            System.out.println("Invalid day!");
-
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -396,7 +374,7 @@ Invalid day!
 
 [slide hideTitle]
 # Problem: Sum Even Numbers
-[code-task title="Problem: Sum Even Numbers" taskId="java-fund-07-Arrays-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sum Even Numbers" taskId="java-fund-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -501,24 +479,7 @@ import java.util.Scanner;
 
 public class SumEvenNumbers {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        int [] numbers = Arrays.stream(scan.nextLine()
-                .split(" "))
-                .mapToInt(Integer:: parseInt)
-                .toArray();
-
-        int sum = 0;
-
-        for (int number : numbers) {
-            if (number % 2 == 0) {
-                sum += number;
-            }
-
-        }
-        System.out.println(sum);
-
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]

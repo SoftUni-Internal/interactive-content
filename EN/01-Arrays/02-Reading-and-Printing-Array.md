@@ -1,17 +1,14 @@
 # Reading and Printing Array
 
 [slide]
-# Video
+# Reading Arrays From the Console
 
 [vimeo-video startTimeInSeconds="2422" endTimeInSeconds="3075"]
 [stream language="EN" videoId="421771481" default /]
 [stream language="RO" videoId="427418768"  /]
 [/vimeo-video]
 
-[/slide]
 
-[slide]
-# Reading Arrays From the Console
 There is no direct way to take array input in Java using Scanner or any other utility, but it's pretty easy to achieve the same by using standard **Scanner** methods and asking some questions to the user.
 
 For example, if you want to take an **array of string** as input you need the **length** of the array and then you can use a for loop to retrieve that many elements and store them in an array.
@@ -103,7 +100,7 @@ System.out.println(String.join(" ", arr));
 
 [slide hideTitle]
 # Problem: Print Numbers in Reverse Order
-[code-task title="Problem: Print Numbers in Reverse Order" taskId="java-fund-07-Arrays-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Print Numbers in Reverse Order" taskId="java-fund-Arrays-Print-Numbers-in-Reverse-Order" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -225,21 +222,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        int n = Integer.parseInt(scan.nextLine());
-
-        int[] numbers = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            numbers[i] = Integer.parseInt(scan.nextLine());
-        }
-
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.print(numbers[i] + " ");
-        }
-
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -344,7 +327,7 @@ Read n numbers and print them in reverse order, separated by single space.
 
 [slide hideTitle]
 # Problem: Reverse an Array of Strings
-[code-task title="Problem: Reverse an Array of Strings" taskId="java-fund-07-Arrays-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reverse an Array of Strings" taskId="java-fund-Arrays-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -445,20 +428,8 @@ import java.util.*;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        String[] arr = scan.nextLine().split(" ");
-
-        String[] reversed = new String[arr.length];
-        int index = 0;
-        for (int i = arr.length - 1; i >= 0; i--) {
-            reversed[index++] = arr[i];
-        }
-
-        System.out.println(String.join(" ", reversed));
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -543,7 +514,7 @@ f60 e50 d40 c30 b20 a10
 
 [slide hideTitle]
 # Problem: Equal Arrays
-[code-task title="Problem: Equal Arrays" taskId="java-fund-07-Arrays-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -661,37 +632,7 @@ import java.util.Scanner;
 
 public class LabEqualArrays {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        int[] first = Arrays
-                .stream(scan.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e))
-                .toArray();
-        int[] second = Arrays
-                .stream(scan.nextLine().split(" "))
-                .mapToInt(e -> Integer.parseInt(e))
-                .toArray();
-
-        int match = 0;
-        int firstSum = 0;
-        for (int i :
-                first) {
-            firstSum += i;
-        }
-
-        for (int i = 0; i < first.length; i++) {
-            if (first[i] == second[i]) {
-                match++;
-            } else {
-                System.out.printf("Arrays are not identical. Found difference at %d index.", match);
-                break;
-            }
-        }
-
-        if (match == first.length) {
-            System.out.println("Arrays are identical. Sum: " + firstSum);
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]

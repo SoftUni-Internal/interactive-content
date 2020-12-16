@@ -1,17 +1,10 @@
-# For-each Loop
-
 [slide]
-# Video
+# For-each Loop
 
 [vimeo-video startTimeInSeconds="6409" endTimeInSeconds="8192"]
 [stream language="EN" videoId="421771481" default /]
 [stream language="RO" videoId="427418768"  /]
 [/vimeo-video]
-
-[/slide]
-
-[slide]
-# For-each Loop
 
 `For-each` is another array traversing technique like `for` loop, `while` loop, `do-while` loop introduced in Java.
 
@@ -41,7 +34,7 @@ for (int number : numbers) {
 
 [slide hideTitle]
 # Problem: Even and Odd Subtraction
-[code-task title="Problem: Even and Odd Subtraction" taskId="java-fund-07-Arrays-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Even and Odd Subtraction" taskId="java-fund-07-Arrays-Even-and-Odd-Subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -152,31 +145,7 @@ import java.util.Scanner;
 public class EvenAndOddSubtraction {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int[] nums = Arrays
-            .stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(Integer::parseInt)
-            .toArray();
-
-        int oddSum = 0;
-        int evenSum = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (nums[i] % 2 == 0) {
-                evenSum += nums[i];
-            } else {
-                oddSum += nums[i];
-            }
-        }
-
-        int diff = evenSum - oddSum;
-
-        System.out.println(diff);
-
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -270,7 +239,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [slide hideTitle]
 # Problem: Condense Array to Number
-[code-task title="Problem: Condense Array to Number" taskId="java-fund-07-Arrays-problem-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Condense Array to Number" taskId="java-fund-Arrays-Condense-Array-to-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -395,21 +364,7 @@ import java.util.Scanner;
 
 public class P7_Condense_Array_to_Number {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int[] nums = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        while (nums.length > 1)
-        {
-            int[] condensed = new int[nums.length - 1];
-            for (int j = 0; j < condensed.length ; j++)
-            {
-                condensed[j] = nums[j] + nums[j + 1];
-            }
-
-            nums = condensed;
-        }
-        System.out.println(nums[0]);
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
