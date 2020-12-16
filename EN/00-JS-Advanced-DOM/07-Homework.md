@@ -16,7 +16,7 @@
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.
 
 An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
 
@@ -231,7 +231,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.
 
 An **html** file is given and your task is to show **more/less** information by clicking a **\[ADD\] button** (it is not an actual button, but a **span** that has an **onclick** event attached to it).
 
@@ -340,7 +340,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.
 
 Write a **function that orders names alphabetically.**
 
@@ -784,7 +784,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.
 
 Write a **function** to create the functionality of **a chat room.**
 
@@ -1201,7 +1201,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.
 
 Write a function that implements a calculator that has the following functionalities:
 
@@ -1720,7 +1720,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.**_
+Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.
 
 Write a function that **converts** a **decimal number** to **binary** and **hexadecimal**.
 
