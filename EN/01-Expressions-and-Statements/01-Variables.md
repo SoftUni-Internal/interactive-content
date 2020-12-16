@@ -90,12 +90,8 @@ console.log("Age:", age);
 * `var` – similar to `let`, but gives a wider scope
 
 ``` js live
-function example() {
-  var productID = 120491283761;
-  console.log(productID); 
-}
-example();
-
+var productID = 120491283761;
+console.log(productID); 
 ```
 
 * `const` – declares a read-only named constant

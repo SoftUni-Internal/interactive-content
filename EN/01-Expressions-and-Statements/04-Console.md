@@ -106,7 +106,7 @@ When we enter **Buccuresht**, the output will be as follows: `I am from Buccures
 [stream language="RO" videoId="486855964/c2b23e3efb"  /]
 [/video-vimeo]
 
-You can pass m**ultiple parameters to a function.** 
+You can pass **multiple parameters to a function.** 
 
 We have a function which **receives two parameters:** `firstNum` and `secondNum` and prints the sum of that calculation to the console. 
 
@@ -144,12 +144,14 @@ JavaScript allows us to format floating-point numbers.
 
 In the following example we format the number to 2 digits after the decimal point by using the `toFixed(2)` method:
 
-```js
+```js live
 function calculateSquareArea(input) {
   let a = Number(input);
   let area = a * a;
   console.log(area.toFixed(2));
 }
+
+calculateSquareArea(5);
 ```
 
 # Using the Dollar String Interpolation
@@ -158,10 +160,12 @@ We can format text in JS using also the following $ syntax. It provides simplifi
 Еnclosed by the back-tick (**\` \`**) character instead of double or single quotes
 
 May contain placeholders which are indicated by the dollar sign and curly braces (`${expression}`):
-```js
+
+```js live
 let name = "John"; 
 console.log(`Hi, ${name}`);
 ```
+
 The `$` prefix before a string in JS enables the so called **string interpolation**: replacing all expressions,which are placed in curly brackets `{ }` in the text with their values. 
 
 [/slide]
@@ -176,23 +180,29 @@ The `$` prefix before a string in JS enables the so called **string interp
 
 In order to read a **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
 
-```js
+```js live
 function example(input){
   let num = Number(input);
 }
+
+example('25');
 ```
+
 The above line of JS code **reads a number** from the first line on the console.
 
 If we try to assign a non-numeric value to this variable, for example `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
 
 # Example: Calculating a Square Area
 This code demonstrates how we can calculate the area of a square by given length of its side: 
-```js
+
+```js live
 function example(input){
     let a = Number(input);
     let area = a * a;
     console.log(`Square area = ${area}`);
   }
+
+example('8');
 ```
 
 Here is how the program would work if we had a square with a side length equal to 3: 
