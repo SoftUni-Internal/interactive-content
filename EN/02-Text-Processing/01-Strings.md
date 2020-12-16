@@ -71,6 +71,25 @@ That will also return `J` because the two ways are identical at the end.
 
 [/slide]
 
+[slide]
+# Iterate Through a String: Demo
+
+[vimeo-video]
+[stream language="EN" videoId="489817402/1b82ef9f2e" default /]
+[stream language="RO" videoId="489817402/1b82ef9f2e"  /]
+[/video-vimeo]
+
+Iterate Through a String using `for-of` loop:
+
+```js live
+let text = 'Hello, there!'
+
+for(let el of text){
+  console.log(el);
+}
+```
+
+[/slide]
 
 [slide]
 # Problem: Print Characters
@@ -183,10 +202,7 @@ o
 [slide]
 # Solution: Print Characters
 
-[vimeo-video]
-[stream language="EN" videoId="489817402/1b82ef9f2e" default /]
-[stream language="RO" videoId="489817402/1b82ef9f2e"  /]
-[/video-vimeo]
+## Missing Video
 
 [code-task title="Print Characters" taskId="text-processing-lab-solution-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -195,7 +211,7 @@ o
 function solve(input) {
   let word = input[0];
 
-  for (let i =0;i<word.length;i++){
+  for (let i =0; i < word.length; i++){
     console.log(word[i])
  }
 }
