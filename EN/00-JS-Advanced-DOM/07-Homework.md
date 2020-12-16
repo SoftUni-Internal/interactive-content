@@ -16,9 +16,9 @@
 
 # Description
 
-An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
+_**Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.**_
 
-Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.
+An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
 
 ## HTML and JavaScript Code
 
@@ -133,11 +133,11 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) for this task.**_
+
 Your task is to take values from **input** fields with **ids "newItemText"** and **"newItemValue"**.
 
 Then you should create and append an **\<option\>** to the **\<select\>** with **id "menu"**.
-
-Here is a link for the [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) for this task.
 
 ## Example
 
@@ -231,6 +231,8 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.**_
+
 An **html** file is given and your task is to show **more/less** information by clicking a **\[ADD\] button** (it is not an actual button, but a **span** that has an **onclick** event attached to it).
 
 When **\[More\] button** is clicked, it **reveals** the content of a **hidden** div and **changes** the text of the button to **\[Less\]**.
@@ -238,8 +240,6 @@ When **\[More\] button** is clicked, it **reveals** the content of a **hidden** 
 When the same link is clicked **again** (now reading **Less**), **hide** the div and **change** the text of the link to **More**.
 
 Link action should be **toggleable** (you should be able to click the button infinite amount of times).
-
-Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.
 
 ## Example
 
@@ -340,6 +340,8 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.**_
+
 Write a **function that orders names alphabetically.**
 
 [image assetsSrc="JS-Advanced-DOM-Homework-7.jpg" /]
@@ -359,8 +361,6 @@ If you **receive more than one name with the same starting letter**, you should 
 comma and a space **(", ")**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
-
-Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.
 
 [/task-description]
 [code-io /]
@@ -784,6 +784,8 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.**_
+
 Write a **function** to create the functionality of **a chat room.**
 
 [image assetsSrc="JS-Advanced-DOM-Homework-11.jpg" /]
@@ -799,8 +801,6 @@ The **current div** should be appended to the div with an **id="chat_messages".*
 [image assetsSrc="JS-Advanced-DOM-Homework-12.jpg" /]
 
 [image assetsSrc="JS-Advanced-DOM-Homework-13.jpg" /]
-
-Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.
 
 [/task-description]
 [code-io /]
@@ -1201,6 +1201,8 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.**_
+
 Write a function that implements a calculator that has the following functionalities:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-14.jpg" /]
@@ -1232,8 +1234,6 @@ For instance, if we have the following expression:
 And we press **"Clear"**, the expected result should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-20.jpg" /]
-
-Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.
 
 [/task-description]
 [code-io /]
@@ -1720,6 +1720,8 @@ yes
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.**_
+
 Write a function that **converts** a **decimal number** to **binary** and **hexadecimal**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-21.jpg" /]
@@ -1743,8 +1745,6 @@ Also they should have **values ('binary'** and '**hexadecimal**').
 [image assetsSrc="JS-Advanced-DOM-Homework-22.jpg" /]
 
 [image assetsSrc="JS-Advanced-DOM-Homework-23.jpg" /]
-
-Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.
 
 [/task-description]
 [code-io /]

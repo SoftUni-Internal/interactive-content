@@ -143,6 +143,8 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) for this task.**_
+
 In this problem, you should create a JS functionality which creates articles and appends them into an article section.
 
 The programs in this language are called **scripts**. They can be written right in the HTML and **executed automatically** as the page loads.
@@ -150,8 +152,6 @@ The programs in this language are called **scripts**. They can be written right 
 Scripts are provided and executed as a **plain text**. They don't need a special preparation or a compilation to run.
 
 In this aspect, JavaScript is very **different** from another language called Java.
-
-Here is a link for the [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) for this task.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
@@ -180,8 +180,6 @@ Here is a link for the [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3
 [image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
 
 [image assetsSrc="JS-Advanced-DOM-Lab-5.jpg" /]
-
-## Examples
 
 [/task-description]
 [code-io /]
@@ -385,8 +383,6 @@ In this aspect, JavaScript is very **different** from another language called Ja
 [image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
 
 [image assetsSrc="JS-Advanced-DOM-Lab-5.jpg" /]
-
-## Examples
 
 [/task-description]
 [code-io /]
@@ -685,6 +681,8 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Description
 
+_**Here is a link for the [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) for this task.**_
+
 In this problem, you should **create a JS functionality** which **changes the size and the color** of a given **paragraph** on **every click**.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
@@ -694,8 +692,6 @@ In this problem, you should **create a JS functionality** which **changes the si
 Every time when we **click** on the \[**CHANGE**\] button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
 
 **After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
-
-Here is a link for the [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) for this task.
 
 # Example:
 
