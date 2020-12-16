@@ -336,7 +336,7 @@ yes
 
 [slide]
 # Problem: Object Factory
-[code-task title="Object Factory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Object Factory" taskId="js-advanced-DOM-Manipulations-Object-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -365,42 +365,44 @@ You should print the newly created object.
 |`[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]`| `{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true }` |
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
-
+let composer = result;
+let actual = composer(`\[\{"prop1": 1\},\{"prop2":2\},\{"prop3":3\}\]`);
+let expected = \{prop1:1,prop2:2,prop3:3\};
+assert.deepEqual(actual,expected);
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
-
+let composer = result;
+let actual = composer(`\[\{"canFly": true\},\{"canMove":true, "doors": 4\},\{"capacity": 255\},\{"canFly":true, "canLand": true\}\]`);
+let expected = \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \};
+assert.deepEqual(actual,expected);
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
-
+let composer = result;
+let actual = composer('\[\]');
+let expected = \{\};
+assert.deepEqual(actual,expected);
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
