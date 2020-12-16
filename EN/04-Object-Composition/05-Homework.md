@@ -697,7 +697,7 @@ yes
 
 [slide]
 # Problem: Construction Crew
-[code-task title="Construction Crew" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Construction Crew" taskId="js-advanced-DOM-Manipulations-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -776,42 +776,79 @@ Workers who do not have dizziness should not be modified in any way. Return them
   dizziness: false }`
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let worker = result(\{ weight: 80,
+    experience: 1,
+    levelOfHydrated: 0,
+    dizziness: true \}
+);
 
+expect(worker.weight).to.equal(80, "Worker weight was modified.");
+expect(worker.experience).to.equal(1, "Worker experience was modified.");
+expect(worker.levelOfHydrated).to.equal(8, "Worker wasn't given enough water.");
+expect(worker.dizziness).to.equal(false, "Worker's dizziness is still true.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let worker = result(\{ weight: 120,
+    experience: 20,
+    levelOfHydrated: 200,
+    dizziness: true \}
+);
 
+expect(worker.weight).to.equal(120, "Worker weight was modified.");
+expect(worker.experience).to.equal(20, "Worker experience was modified.");
+expect(worker.levelOfHydrated).to.equal(440, "Worker wasn't given enough water.");
+expect(worker.dizziness).to.equal(false, "Worker's dizziness is still true");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let worker = result(\{ weight: 95,
+    experience: 3,
+    levelOfHydrated: 0,
+    dizziness: false \}
+);
 
+expect(worker.weight).to.equal(95, "Worker weight was modified.");
+expect(worker.experience).to.equal(3, "Worker experience was modified.");
+expect(worker.levelOfHydrated).to.equal(0, "Worker was given water.");
+expect(worker.dizziness).to.equal(false, "Worker's dizziness is still true.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let worker = result(\{ weight: 60,
+    experience: 5,
+    levelOfHydrated: 600,
+    dizziness: false \}
+);
 
+expect(worker.weight).to.equal(60, "Worker weight was modified.");
+expect(worker.experience).to.equal(5, "Worker experience was modified.");
+expect(worker.levelOfHydrated).to.equal(600, "Worker was given water.");
+expect(worker.dizziness).to.equal(false, "Worker's dizziness is still true");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
