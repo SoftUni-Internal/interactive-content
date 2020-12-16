@@ -6,7 +6,7 @@
 [stream language="RO" videoId="486836367/d4732dbdec"  /]
 [/video-vimeo]
 
-In this lesson we learned: 
+## In this lesson you learned:
 
 - How to **write basic code**
 

@@ -6,7 +6,7 @@
 [stream language="RO" videoId="487129429/3a15190b39"  /]
 [/video-vimeo]
 
-In this lesson we larned: 
+## In this lesson you learned:
 
 - **For-loops** can use different **steps**
    - E.g. `i += 2` or `i *= 2` or `i = i * i`

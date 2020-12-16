@@ -5,7 +5,8 @@
 [stream language="RO" videoId="486874488/8ad9f383d6"  /]
 [/video-vimeo]
 
-In this lesson we learned: 
+## In this lesson you learned:
+
 - How to read input from an Array
 - An **if-else** statement can be nested within another **if-else**
 - Logical operators run over boolean expressions

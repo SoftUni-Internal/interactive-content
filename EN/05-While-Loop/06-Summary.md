@@ -7,7 +7,8 @@
 [/video-vimeo]
 
 
-In this lesson you learned that:
+## In this lesson you learned:
+
 - **While** loop executes a block of code **multiple** times
    - While the loop condition is true
 

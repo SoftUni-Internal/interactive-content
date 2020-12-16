@@ -24,8 +24,8 @@ See the example:
 ```js live
 let a = 5;
 let b = '5';
-console.log(a == b) //true
-console.log(a === b) //false
+console.log(a == b) 
+console.log(a === b) 
 ```
 
 When compared, the result is a Boolean value `true` or `false`, depending on whether the result of the comparison is `true` or `false`.

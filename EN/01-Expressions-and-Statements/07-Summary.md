@@ -47,4 +47,11 @@ console.log(`I am from ${homeTown}!`);
 let r = (150-20) / 2 + 5;
 ```
 
+In the next lesson we will learn:
+
+- Compare values using comparison operators
+
+- What conditional statements are
+
+- Debugging in VSC
 [/slide]
