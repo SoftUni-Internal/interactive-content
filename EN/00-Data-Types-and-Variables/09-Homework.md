@@ -965,7 +965,6 @@ Insufficient capacity!
 [stream language="EN" videoId="425480025" default /]
 [stream language="RO" videoId="425478330"  /]
 [/video-vimeo]
-[/slide]
 
 [code-task title="Beer Kegs" taskId="java-fund-05-Data Types-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
