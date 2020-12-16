@@ -8,7 +8,7 @@
 [stream language="RO" videoId="425478220"  /]
 [/video-vimeo]
 
-[code-task title="Integer Operations" taskId="java-fund-05-Data Types-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -100,7 +100,7 @@ Read **four integer numbers**.
 
 [slide hideTitle]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="java-fund-05-Data Types-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Digits" taskId="java-fund-05-Data Types-Exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -176,7 +176,7 @@ Your task is to find the **sum of its digits**.
 [stream language="RO" videoId="425478254"  /]
 [/video-vimeo]
 
-[code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -258,7 +258,7 @@ The **input** holds **two lines**:
 
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="java-fund-05-Data Types-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Chars" taskId="java-fund-05-Data Types-Exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -384,7 +384,7 @@ The sum equals: 1940
 
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-Data Types-Exercise-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-Data Types-Exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -453,7 +453,7 @@ a b c d e f g h
 
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" taskId="java-fund-05-Data Types-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="java-fund-05-Data Types-Exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -847,7 +847,7 @@ fff
 [stream language="RO" videoId="425478301"  /]
 [/video-vimeo]
 
-[code-task title="Water Overflow" taskId="java-fund-05-Data Types-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Water Overflow" taskId="java-fund-Data-Types-Exercise-Water-Overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -966,7 +966,7 @@ Insufficient capacity!
 [stream language="RO" videoId="425478330"  /]
 [/video-vimeo]
 
-[code-task title="Beer Kegs" taskId="java-fund-05-Data Types-Exercise-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Beer Kegs" taskId="java-fund-Data-Types-Exercise-Beer-Kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1085,7 +1085,7 @@ Keg 4
 
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="java-fund-05-Data Types-Exercise-problem-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Spice Must Flow" taskId="java-fund-Data-Types-Exercise-Spice-Must-Flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1174,7 +1174,7 @@ Print **two separate lines** how many **days the mine has operated** and the **t
 
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="java-fund-05-Data Types-Exercise-problem-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poke Mon" taskId="java-fund-Data-Types-Exercise-Poke-Mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1298,7 +1298,7 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 [stream language="RO" videoId="425478382"  /]
 [/video-vimeo]
 
-[code-task title="Snowballs" taskId="java-fund-05-Data Types-Exercise-problem-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Snowballs" taskId="java-fund-Data-Types-Exercise-Snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

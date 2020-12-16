@@ -1,16 +1,11 @@
-# Type Conversion
-
 [slide]
-# Video
+# Type Conversion
 
 [vimeo-video startTimeInSeconds="1506" endTimeInSeconds="1740"]
 [stream language="EN" videoId="425081520" default /]
 [stream language="RO" videoId="425084744"  /]
 [/vimeo-video]
-[/slide]
 
-[slide]
-# Type Conversion
 When you assign the value of one data type to another, the two types might not be compatible with each other.
 
 If the data types are compatible, then Java will perform the conversion automatically known as Automatic Type Conversion, and if not then they need to be cast or converted explicitly.
@@ -45,11 +40,10 @@ Here the higher data types \(having larger size\) are converted into lower data 
 
 [/slide]
 
-[slide]
 [slide hideTitle]
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="java-fund-04-Data-Types-problem-8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fund-Data-Types-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -139,7 +133,6 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [/code-task]
 [/slide]
 
-[slide]
 [slide hideTitle]
 # Solution: Centuries to Minutes
 
@@ -151,16 +144,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int centuries = Integer.parseInt(scanner.nextLine());
-        int years = centuries * 100;
-        int days = (int)(years * 365.2422);
-        int hours = days * 24;
-        int minutes = hours * 60;
-
-        System.out.printf("%d centuries = %d years = %d days = %d hours = %d minutes", centuries, years, days, hours, minutes);
-    }
+    // Write your solution here
 }
 ```
 
@@ -243,9 +227,10 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 
 [slide]
 
-# Chars to String
+[slide hideTitle]
+# Problem: Chars to String
 
-[code-task title="Chars to String" taskId="java-fund-04-Data-Types-problem-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Chars to String" taskId="java-fund-Data-Types-Chars-to-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -371,9 +356,139 @@ b
 [/code-task]
 [/slide]
 
-[slide]
-# Lower or Upper
-[code-task title="Chars to String" taskId="java-fund-04-Data-Types-problem-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[slide hideTitle]
+# Solution: Chars to String
+
+[code-task title="Chars to String" taskId="java-fund-Data-Types-Chars-to-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your solution here
+    }
+}
+```
+
+[/code-editor]
+[task-description]
+
+## Description
+
+Write a program that reads 3 lines of input.
+
+On each line you get a single character.
+
+Combine all the characters into one string and print it on the console.
+
+## Examples
+
+| **Input** | **Output** |
+| --- | --- |
+| a         | abc        |
+| b         |            |
+| c         |            |
+
+
+| **Input** | **Output** |
+| --- | --- |
+| %         | %2o        |
+| 2         |            |
+| o         |            |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+a
+b
+c
+[/input]
+[output]
+abc
+[/output]
+[/test]
+[test open]
+[input]
+%
+2
+0
+[/input]
+[output]
+%20
+[/output]
+[/test]
+[test open]
+[input]
+1
+5
+p
+[/input]
+[output]
+15p
+[/output]
+[/test]
+[test]
+[input]
+d
+e
+f
+[/input]
+[output]
+def
+[/output]
+[/test]
+[test]
+[input]
+x
+y
+z
+[/input]
+[output]
+xyz
+[/output]
+[/test]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+123
+[/output]
+[/test]
+[test]
+[input]
+0
+0
+0
+[/input]
+[output]
+000
+[/output]
+[/test]
+[test]
+[input]
+1
+b
+\#
+[/input]
+[output]
+1b\#
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide hideTitle]
+# Problem: Lower or Upper
+[code-task title="Chars to String" taskId="java-fund-Data-Types-Lower-or-Upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -381,6 +496,75 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Write a program that prints whether a given character is upper-case or lower-case.
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+| L | upper-case |
+|  |  |
+
+| **Input** | **Output** |
+| --- | --- |
+| f | lower-case |
+|  |  |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+L
+[/input]
+[output]
+upper-case
+[/output]
+[/test]
+[test open]
+[input]
+f
+[/input]
+[output]
+lower-case
+[/output]
+[/test]
+[test]
+[input]
+A
+[/input]
+[output]
+upper-case
+[/output]
+[/test]
+[test]
+[input]
+a
+[/input]
+[output]
+lower-case
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide hideTitle]
+# Solution: Lower or Upper
+[code-task title="Chars to String" taskId="java-fund-Data-Types-Lower-or-Upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your solution here
     }
 }
 ```

@@ -1,16 +1,11 @@
-# Boolean and Character Types
-
 [slide]
-# Video
+# Boolean and character types
 
 [vimeo-video startTimeInSeconds="1741" endTimeInSeconds="2220"]
 [stream language="EN" videoId="425081520" default /]
 [stream language="RO" videoId="425084744"  /]
 [/vimeo-video]
-[/slide]
 
-[slide]
-# Boolean and character types
 A boolean data type is declared with the **boolean** keyword with two choices of value: **true** or **false**:
 
 ```java live
@@ -61,7 +56,7 @@ It is a code for representing 128 English characters as numbers, with each lette
 
 [slide hideTitle]
 # Problem: Special Numbers
-[code-task title="Problem: Special Numbers" taskId="java-fund-04-Data-Types-problem-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Special Numbers" taskId="java-fund-Data-Types-Special-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -299,24 +294,7 @@ import java.util.Scanner;
 
 public class SpecialNumbers {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = Integer.parseInt(scanner.nextLine());
-        for (int i = 1; i <= n; i++) {
-            int sumOfDigits = 0;
-            int digits = i;
-            while (digits > 0) {
-                sumOfDigits += digits % 10;
-                digits = digits / 10;
-            }
-            if ((sumOfDigits == 5) || (sumOfDigits == 7) || (sumOfDigits == 11)) {
-                System.out.printf("%d -> True%n", i);
-            } else {
-                System.out.printf("%d -> False%n", i);
-            }
-
-        }
-
-    }
+    // Write your solution here
 }
 ```
 [/code-editor]
@@ -539,7 +517,7 @@ To calculate the sum of digits of given number **num**, you might repeat the fol
 
 [slide hideTitle]
 # Problem: Reversed Chars
-[code-task title="Problem: Reversed Chars" taskId="java-fund-04-Data-Types-problem-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reversed Chars" taskId="java-fund-Data-Types-Reversed-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -648,13 +626,7 @@ import java.util.Scanner;
 
 public class Pr7ReversedChars {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    char a = scanner.nextLine().charAt(0);
-    char b = scanner.nextLine().charAt(0);
-    char c = scanner.nextLine().charAt(0);
-
-    System.out.printf("%c %c %c", c, b, a);
-    }
+    // Write your solution here
 }
 ```
 [/code-editor]

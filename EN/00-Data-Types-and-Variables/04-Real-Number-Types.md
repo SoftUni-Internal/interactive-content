@@ -1,18 +1,12 @@
 # Real Number Types
 
 [slide]
-# Video
+# What are Floating-Point Types?
 
 [vimeo-video startTimeInSeconds="1001" endTimeInSeconds="1505"]
 [stream language="EN" videoId="425081520" default /]
 [stream language="RO" videoId="425084744"  /]
 [/vimeo-video]
-
-[/slide]
-
-[slide]
-
-# What are Floating-Point Types?
 
 You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
 
@@ -65,7 +59,7 @@ System.out.println("Double PI is: " + doublePI);
 
 [slide hideTitle]
 # Problem: Pounds to Dollars
-[code-task title="Pounds to Dollars" taskId="java-fund-04-Data-Types-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pounds to Dollars" taskId="java-fund-Data-Types-Pounds-to-Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -166,10 +160,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double dolars = Double.parseDouble(scanner.nextLine());
-        double pounds = dolars * 1.31;
-        System.out.printf("%.3f", pounds);
+        // Write your solution here
     }
 }
 ```
@@ -351,7 +342,7 @@ System.out.println(bigDecimal1);
 
 [slide hideTitle]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Exact Sum of Real Numbers" taskId="java-fund-04-Data-Types-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Exact Sum of Real Numbers" taskId="java-fund-Data-Types-Exact-Sum-of-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -466,17 +457,7 @@ import java.util.Scanner;
 
 public class ExactSum {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = Integer.parseInt(scanner.nextLine());
-        BigDecimal sum = new BigDecimal(0);
-        for (int i = 0; i < n; i++) {
-
-            BigDecimal num = new BigDecimal(scanner.nextLine());
-            sum = sum.add(num);
-
-        }
-        System.out.println(sum);
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]

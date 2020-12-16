@@ -1,17 +1,10 @@
-# Integer types
-
 [slide]
-# Video
+# Integer types
 
 [vimeo-video startTimeInSeconds="543" endTimeInSeconds="1001"]
 [stream language="EN" videoId="425081520" default /]
 [stream language="RO" videoId="425084744"  /]
 [/vimeo-video]
-
-[/slide]
-
-[slide]
-# Integer types
 
 **Integer types** stores whole numbers, positive or negative (such as 123 or -456), without decimals.
 

@@ -1,17 +1,11 @@
-# Strings
-
 [slide]
-# Video
+# Strings
 
 [vimeo-video startTimeInSeconds="2221" endTimeInSeconds="2422"]
 [stream language="EN" videoId="425081520" default /]
 [stream language="RO" videoId="425084744"  /]
 [/vimeo-video]
 
-[/slide]
-
-[slide]
-# Strings
 Strings are used for storing text.
 
 A **String** variable contains a collection of characters surrounded by double quotes and has a default value **null** (no value).
@@ -56,7 +50,7 @@ System.out.printf("Your full name is %s.", fullName);
 
 [slide hideTitle]
 # Problem: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fund-04-Data-Types-problem-16" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Concat Names" taskId="java-fund-Data-Types-Concat-Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -186,14 +180,7 @@ import java.util.Scanner;
 
 public class ConcatNames {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String firstName = scanner.nextLine();
-        String lastName = scanner.nextLine();
-        String deliminter = scanner.nextLine();
-
-        String result = firstName + deliminter + lastName;
-        System.out.println(result);
-    }
+    // Write your solution here
 }
 ```
 [/code-editor]
