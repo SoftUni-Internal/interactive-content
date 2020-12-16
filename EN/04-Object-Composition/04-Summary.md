@@ -2,9 +2,10 @@
 
 # Summary
 
-Object composition combines data and functions into JS objects.
+In this lesson you learned about:
 
-There are three main types of object composition:
+- Object composition combines data and functions into JavaScript objects.
+
 - Aggregation - forming an object from an enumerable collection.
 - Concatenation - adding new properties.
 - Delegation - imitates class inheritance.
