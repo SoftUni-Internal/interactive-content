@@ -1,20 +1,9 @@
-# Summary
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="10870" endTimeInSeconds="10954"]
-[stream language="EN" videoId="421796076" default /]
-[stream language="RO" videoId="435043258"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - Maps hold {`key` -> `value`} pairs
     - Keyset holds a set of unique keys
@@ -24,7 +13,7 @@
 
 
 
-# In the next lesson, you will learn:
+# In the next lesson you will learn:
 
 - What Is a String?
 - Manipulating Strings
