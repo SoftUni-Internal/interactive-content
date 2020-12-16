@@ -1245,7 +1245,7 @@ yes
 
 [slide]
 # Problem: String Extension
-[code-task title="String Extension" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: String Extension" taskId="js-advanced-DOM-Manipulations-String-Extension" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1308,42 +1308,114 @@ str = String.format('jumps {0} {1}',
 'jumps dog {1}'   
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-
+expect(String.prototype.hasOwnProperty('ensureStart')).to.equal(true, "Couldn't find ensureStart() function");
+expect(String.prototype.hasOwnProperty('ensureEnd')).to.equal(true, "Couldn't find ensureEnd() function");
+expect(String.prototype.hasOwnProperty('isEmpty')).to.equal(true, "Couldn't find isEmpty() function");
+expect(String.prototype.hasOwnProperty('truncate')).to.equal(true, "Couldn't find truncate() function");
+expect(String.hasOwnProperty('format')).to.equal(true, "Couldn't find format() function");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
-
+var testString = 'quick brown fox jumps over the lazy dog';
+expect(String.prototype.hasOwnProperty('ensureStart')).to.equal(true, "Couldn't find ensureStart() function");
+var answer = testString.ensureStart('the ');
+expect(answer).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect ensureStart() functionality');
+answer = answer.ensureStart('the ');
+expect(answer).to.equal('the quick brown fox jumps over the lazy dog', 'Ignored existing start of string');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
-
+var testString = 'the quick brown fox jumps over the lazy';
+expect(String.prototype.hasOwnProperty('ensureEnd')).to.equal(true, "Couldn't find ensureEnd() function");
+var answer = testString.ensureEnd(' dog');
+expect(answer).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect ensureEnd() functionality');
+answer = answer.ensureEnd(' dog');
+expect(answer).to.equal('the quick brown fox jumps over the lazy dog', 'Ignored existing end of string');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
-
+var testString = 'the quick brown fox jumps over the lazy dog';
+expect(String.prototype.hasOwnProperty('isEmpty')).to.equal(true, "Couldn't find isEmpty() function");
+expect(testString.isEmpty()).to.equal(false, 'Incorrect isEmpty() functionality');
+''.isEmpty().should.be.true;
 [/input]
 [output]
-
+yes
+[/output]
+[/test]
+[test]
+[input]
+var testString = 'the quick brown fox jumps over the lazy dog';
+expect(String.prototype.hasOwnProperty('truncate')).to.equal(true, "Couldn't find truncate() function");
+expect(testString.truncate(6)).to.equal('the...', 'Incorrect truncate() functionality');
+expect(testString.truncate(12)).to.equal('the quick...', 'Incorrect truncate() functionality');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var testString = 'the quick brown fox jumps over the lazy dog';
+expect(String.prototype.hasOwnProperty('truncate')).to.equal(true, "Couldn't find truncate() function");
+expect(testString.truncate(10)).to.equal('the...', 'Incorrect truncate() functionality 1');
+expect(testString.truncate(25)).to.equal('the quick brown fox...', 'Incorrect truncate() functionality 2');
+expect(testString.truncate(43)).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect truncate() functionality 3');
+expect(testString.truncate(45)).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect truncate() functionality 4');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var testString = 'the \{0\} brown \{1\} jumps over the \{2\} dog';
+expect(String.hasOwnProperty('format')).to.equal(true, "Couldn't find format() function");
+expect(String.format(testString, 'quick')).to.equal('the quick brown \{1\} jumps over the \{2\} dog', 'Incorrect format() functionality');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var testString = 'the \{0\} brown \{1\} jumps over the \{2\} dog';
+expect(String.hasOwnProperty('format')).to.equal(true, "Couldn't find format() function");
+expect(String.format(testString, 'quick', 'fox', 'lazy')).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect format() functionality');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var testString = 'the \{0\} brown \{1\} jumps over the \{2\} dog';
+expect(String.hasOwnProperty('format')).to.equal(true, "Couldn't find format() function");
+expect(String.format(testString, 'quick', 'fox', 'lazy', 'bananas')).to.equal('the quick brown fox jumps over the lazy dog', 'Incorrect format() functionality');
+[/input]
+[output]
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
