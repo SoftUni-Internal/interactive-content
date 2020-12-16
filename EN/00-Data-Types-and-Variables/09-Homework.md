@@ -7,7 +7,6 @@
 [stream language="EN" videoId="425479885" default /]
 [stream language="RO" videoId="425478220"  /]
 [/video-vimeo]
-[/slide]
 
 [code-task title="Integer Operations" taskId="java-fund-05-Data Types-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -176,7 +175,6 @@ Your task is to find the **sum of its digits**.
 [stream language="EN" videoId="425479929" default /]
 [stream language="RO" videoId="425478254"  /]
 [/video-vimeo]
-[/slide]
 
 [code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -848,8 +846,6 @@ fff
 [stream language="EN" videoId="425479963" default /]
 [stream language="RO" videoId="425478301"  /]
 [/video-vimeo]
-[/slide]
-
 
 [code-task title="Water Overflow" taskId="java-fund-05-Data Types-Exercise-problem-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1302,7 +1298,6 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 [stream language="EN" videoId="425480088" default /]
 [stream language="RO" videoId="425478382"  /]
 [/video-vimeo]
-[/slide]
 
 [code-task title="Snowballs" taskId="java-fund-05-Data Types-Exercise-problem-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
