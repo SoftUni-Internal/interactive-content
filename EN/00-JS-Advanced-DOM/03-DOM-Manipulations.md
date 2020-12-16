@@ -151,6 +151,8 @@ Scripts are provided and executed as a **plain text**. They don't need a special
 
 In this aspect, JavaScript is very **different** from another language called Java.
 
+Here is a link for the [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) for this task.
+
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
 # Constraints:
@@ -334,8 +336,207 @@ yes
 
 [slide]
 
-# Solution: 1. Article List
+# Solution: Articles List
 
+[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+In this problem, you should create a JS functionality which creates articles and appends them into an article section.
+
+The programs in this language are called **scripts**. They can be written right in the HTML and **executed automatically** as the page loads.
+
+Scripts are provided and executed as a **plain text**. They don't need a special preparation or a compilation to run.
+
+In this aspect, JavaScript is very **different** from another language called Java.
+
+[image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
+
+# Constraints:
+
+- **Title value** from the **title input** should be a **heading 3 element \<h3\>**
+
+- **Content text** from the **textarea element** should be a **paragraph \<p\>**
+
+- Both new created elements (**h3** and **p**) should be appended to a new **article element \<article\>**
+
+- **The current article element** should be **appended** to the section which has an id articles (**\#articles**)
+
+- You should create new **article element** only if **title** and **content are not empty**
+
+- After the button is pressed you must **clear** the **title value** and **text value**
+
+[image assetsSrc="JS-Advanced-DOM-Lab-2.jpg" /]
+
+### Input
+
+[image assetsSrc="JS-Advanced-DOM-Lab-3.jpg" /]
+
+### Output
+
+[image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-5.jpg" /]
+
+## Examples
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createTitle").value = "JavaScript Title Test";
+document.getElementById("createContent").value = "JavaScript Content Test";
+
+result();
+
+let currArticle = document.querySelectorAll('\#articles article')\[0\];
+
+expect(currArticle.childNodes\[0\].textContent).to.equal("JavaScript Title Test");
+expect(currArticle.childNodes\[1\].textContent).to.equal("JavaScript Content Test");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test open]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createTitle").value = "JavaScript Title Test";
+
+result();
+
+let articlesCount = document.querySelectorAll('\#articles article').length;
+
+expect(articlesCount).to.equal(0);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createTitle").value = "JavaScript";
+document.getElementById("createContent").value = "JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in the HTML and executed automatically as the page loads. Scripts are provided and executed as a plain text. They don’t need a special preparation or a compilation to run.In this aspect, JavaScript is very different from another language called Java";
+
+result();
+
+let currArticle = document.querySelectorAll('\#articles article')\[0\];
+
+expect(currArticle.childNodes\[0\].textContent).to.equal("JavaScript");
+expect(currArticle.childNodes\[1\].textContent).to.equal("JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in the HTML and executed automatically as the page loads. Scripts are provided and executed as a plain text. They don’t need a special preparation or a compilation to run.In this aspect, JavaScript is very different from another language called Java");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createTitle").value = "JavaScript Test Title Field";
+
+result();
+
+let articlesCount = document.querySelectorAll('\#articles article').length;
+
+expect(articlesCount).to.equal(0);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createContent").value = "JavaScript Content Test";
+
+result();
+
+let articlesCount = document.querySelectorAll('\#articles article').length;
+
+expect(articlesCount).to.equal(0);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+result();
+
+let articlesCount = document.querySelectorAll('\#articles article')\[0\] === undefined;
+
+expect(articlesCount).to.equal(true);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+let title = document.getElementById("createTitle");
+let content = document.getElementById("createContent");
+
+title.value = "JavaScript Title Test";
+content.value = "JavaScript Content Test";
+
+result();
+
+expect(title.value).to.equal("");
+expect(content.value).to.equal("");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+
+document.getElementById("createTitle").value = "JavaScript Title Test";
+document.getElementById("createContent").value = "JavaScript Content Test";
+
+result();
+
+document.getElementById("createTitle").value = "JavaScript Title Test 22";
+document.getElementById("createContent").value = "JavaScript Content Test 22";
+
+result();
+
+document.getElementById("createTitle").value = "JavaScript Title Test 33";
+document.getElementById("createContent").value = "JavaScript Content Test 33";
+
+result();
+
+let articlesCount = document.querySelectorAll('\#articles article').length;
+
+expect(articlesCount).to.equal(3);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide]
@@ -473,6 +674,315 @@ h1.classList.remove("first"); //removes the "first" class
 # Problem: Growing Word
 
 [code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+
+```
+
+[/code-editor]
+[task-description]
+
+# Description
+
+In this problem, you should **create a JS functionality** which **changes the size and the color** of a given **paragraph** on **every click**.
+
+[image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-7.jpg" /]
+
+Every time when we **click** on the \[**CHANGE**\] button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
+
+**After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
+
+Here is a link for the [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) for this task.
+
+# Example:
+
+- If we click **once**, the color should be changed to **blue** and the font size should be **2** (First initial size)
+
+- If we click **twice**, the color should be changed to **green** and the font size should be **4** (2 \* 2)
+
+- If we click **three times**, the current color of that paragraph should be changed to **red** and the font size should be **8** (4 \* 2)
+
+- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
+
+[image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-9.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-10.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-11.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
+
+[image assetsSrc="JS-Advanced-DOM-Lab-13.jpg" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+result();
+result();
+
+let fontSize = \\$("\#exercise").find("p")\[0\].style.fontSize;
+
+expect(fontSize).to.equal("8px");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+result();
+result();
+
+let color = \\$("\#exercise").find("p")\[0\].style.color;
+
+expect(color).to.equal("red");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+
+let color = \\$("\#exercise").find("p")\[0\].style.color;
+
+expect(color).to.equal("blue");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+result();
+
+let color = \\$("\#exercise").find("p")\[0\].style.color;
+
+expect(color).to.equal("green");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+result();
+result();
+result();
+result();
+
+let fontSize= \\$("\#exercise").find("p")\[0\].style.fontSize;
+
+expect(fontSize).to.equal("32px");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div class="conditions"\>
+\<h1\>Growing Word\</h1\>
+\<p\>
+Create a functionality which changes the \<strong\>size\</strong\> and the \<strong\>color\</strong\> of a given
+paragraph on every \<strong\>click\</strong\>.
+\</p\>
+\<p\>
+After every click, the current paragraph font size should be changed to the current font size
+\<strong\>multiplied by 2\</strong\>. Also the color of that paragraph should change, depending on the previous
+color.
+\</p\>
+\</div\>
+
+    \<div id="exercise"\>
+        \<div id="colors"\>
+            \<div id="blueDiv"\>Blue\</div\>
+            \<div id="greenDiv"\>Green\</div\>
+            \<div id="redDiv"\>Red\</div\>
+        \</div\>
+        \<div\>
+            \<button type="button"\>CHANGE\</button\>
+        \</div\>
+        \<p\>Growing Word\</p\>
+    \</div\>
+
+`;
+
+result();
+result();
+result();
+result();
+
+let fontSize= \\$("\#exercise").find("p")\[0\].style.fontSize;
+
+expect(fontSize).to.equal("16px");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide]
+
+# Solution: Growing Word
+
+[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -773,12 +1283,6 @@ yes
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-
-# Solution: 2. Growing Word
-
 [/slide]
 
 [slide]

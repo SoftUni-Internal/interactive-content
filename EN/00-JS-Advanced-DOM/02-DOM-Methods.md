@@ -33,7 +33,7 @@ After running this example in the browser:
 </html>
 ```
 
-This is how to get the title `h1`, using Javascript:
+This is how to get the title `h1`, using JavaScript:
 
 ```js
 let h1Element = document.getElementsByTagName("h1")[0];
@@ -43,7 +43,7 @@ let h1Element = document.getElementsByTagName("h1")[0];
 console.log(h1Element);
 ```
 
-Javascript can also be **directly** inserted into the HTML document:
+JavaScript can also be **directly** inserted into the HTML document:
 
 ```js
 <html>

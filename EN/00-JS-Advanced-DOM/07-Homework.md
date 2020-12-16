@@ -18,6 +18,8 @@
 
 An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
 
+Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.
+
 ## HTML and JavaScript Code
 
 Implement the above to provide the following functionality:
@@ -51,11 +53,6 @@ We use the same function to get the **result** element by id and change its **te
 [image assetsSrc="JS-Advanced-DOM-Homework-4.jpg" /]
 
 Our code is ready now. Submit only the **subtract()** function in judge.
-
-## Examples
-
-| **Input** | **Output** |
-| --------- | ---------- |
 
 [/task-description]
 [code-io /]
@@ -140,6 +137,8 @@ Your task is to take values from **input** fields with **ids "newItemText"** and
 
 Then you should create and append an **\<option\>** to the **\<select\>** with **id "menu"**.
 
+Here is a link for the [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) for this task.
+
 ## Example
 
 [image assetsSrc="JS-Advanced-DOM-Homework-5.jpg" /]
@@ -151,11 +150,6 @@ Then you should create and append an **\<option\>** to the **\<select\>** with *
 - Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id **"menu"**.
 
 - Finally, you should **clear** the value of the two **input** fields.
-
-## Examples
-
-| **Input** | **Output** |
-| --------- | ---------- |
 
 [/task-description]
 [code-io /]
@@ -245,6 +239,8 @@ When the same link is clicked **again** (now reading **Less**), **hide** the div
 
 Link action should be **toggleable** (you should be able to click the button infinite amount of times).
 
+Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.
+
 ## Example
 
 [image assetsSrc="JS-Advanced-DOM-Homework-6.jpg" /]
@@ -256,11 +252,6 @@ Link action should be **toggleable** (you should be able to click the button inf
 - After that we should change the **display style** of the div with an **id "extra"**. If the display style is **"none"**, we should **change** it to **"block"** and the **opposite**.
 
 - Along with all of this, we should **change** the text content of the **button** to **\[Less\]/\[More\]**.
-
-## Examples
-
-| **Input** | **Output** |
-| --------- | ---------- |
 
 [/task-description]
 [code-io /]
@@ -369,7 +360,7 @@ comma and a space **(", ")**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
 
-## Examples
+Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.
 
 [/task-description]
 [code-io /]
@@ -809,7 +800,7 @@ The **current div** should be appended to the div with an **id="chat_messages".*
 
 [image assetsSrc="JS-Advanced-DOM-Homework-13.jpg" /]
 
-## Examples
+Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.
 
 [/task-description]
 [code-io /]
@@ -1242,7 +1233,7 @@ And we press **"Clear"**, the expected result should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-20.jpg" /]
 
-## Examples
+Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.
 
 [/task-description]
 [code-io /]
@@ -1753,7 +1744,7 @@ Also they should have **values ('binary'** and '**hexadecimal**').
 
 [image assetsSrc="JS-Advanced-DOM-Homework-23.jpg" /]
 
-## Examples
+Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.
 
 [/task-description]
 [code-io /]

@@ -14,6 +14,12 @@ In this lesson you learned about:
 
 **BOM**
 
-- **Accessing and using** the browser's objects with Javascript
+- **Accessing and using** the browser's objects with JavaScript
+
+In the next lesson you will learn:
+
+**DOM Manipulations**
+
+- A deeper look into **DOM-manipulating operations**
 
 [/slide]

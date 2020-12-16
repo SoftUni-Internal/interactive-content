@@ -8,9 +8,9 @@ Every web page is an HTML document, which consists of plain text and tags.
 
 Having to work **directly** with text at a large website is a tedious task.
 
-The DOM eases working with HTML by **translating it to objects**, which can easily be manipulated by Javascript.
+The DOM eases working with HTML by **translating it to objects**, which can easily be manipulated by JavaScript.
 
-DOM is simply a **link** between HTML documents and the Javascript programming language.
+DOM is simply a **link** between HTML documents and the JavaScript programming language.
 
 Through DOM manipulations the developer can:
 
