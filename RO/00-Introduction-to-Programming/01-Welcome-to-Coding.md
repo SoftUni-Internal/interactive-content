@@ -25,12 +25,11 @@ console.log ("Bine ati venit la codare");
 [/video-vimeo]
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 Exemplu de **program de computer** în JS:
-```js live fara template
-funcția calculateArea () {
- lasam dimensiunea = 5;
-   console.log ("Size = " + size);
-   console.log ("Area = " + size * size);
-}
+```js live
+lasam dimensiunea = 5;
+
+console.log ("Size = " + size);
+console.log ("Area = " + size * size);
 ```
 Programul de mai sus definește o funcție care deține o secvență de **3 comenzi** și o numește după aceea:
 - Declară și atribuie o **variabilă**: `let size = 5`
@@ -64,12 +63,11 @@ Apoi găsiți **cel mai mic numar** din numerele rămase și puneți-l în **loc
 Un instrument foarte convenabil la scrierea **codului de programare**, utilizat pentru executarea programelor și a multor operații legate de programare, este un** mediu de dezvoltare integrat**.
 Acesta este un exemplu foarte simplu de algoritm care găsește cel mai mic număr dintr-o matrice.
 Noi vom discuta referitor la matricele mai târziu.
-``` js live no-template
-function findMinNumber() {
-  const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
-  const min = Math.min(...arr)
-  console.log(min)
-}
+``` js live
+let arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
+let min = Math.min(...arr)
+
+console.log(min)
 ```
 [/slide]
 
