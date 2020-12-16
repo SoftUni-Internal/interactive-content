@@ -177,6 +177,12 @@ To match the second `#`, which is after the word "there" use \1, where the numbe
 
 [slide]
 # Problem: Match Dates
+
+[vimeo-video]
+[stream language="EN" videoId="489818844/8c5a03bb11" default /]
+[stream language="RO" videoId="489818844/8c5a03bb11"  /]
+[/video-vimeo]
+
 Write a regular expression that extracts dates from a text
 Valid date format: `dd-MMM-yyyy`
 Examples: `12-Jun-1999, 3-Nov-1999`
@@ -187,12 +193,9 @@ I am born on `30-Dec-1994`.
 My father is born on the `30-Dec-1994`.
 **01-July-2000** is not a valid date.
 
-- In this example, valid dates format are:
-30-Dec-1994
-30-Dec-1994
+- Valid dates format: `30-Dec-1994` and `30-Dec-1994`
 
-- Invalid date format:
-**01-July-2000**
+- Invalid date format: **01-July-2000**
 
 [/slide]
 
@@ -203,6 +206,38 @@ My father is born on the `30-Dec-1994`.
 [stream language="RO" videoId="489818853/c94449ec19"  /]
 [/video-vimeo]
 
+[/slide]
+
+[slide]
+# Problem: Email Validation
+
+[vimeo-video]
+[stream language="EN" videoId="489818897/c7b03af810" default /]
+[stream language="RO" videoId="489818897/c7b03af810"  /]
+[/video-vimeo]
+
+Write a regular expression that performs simple **email validation.**
+
+An email consists of: username `@` domain name.
+
+- **Usernames** are **alphanumeric**
+
+- **Domain name** consist of **two strings**, separated by a period \(`.`\)
+
+- **Domain name** may contain only **English letters**
+
+- Valid email: `valid123@email.com`
+
+- Invalid email: `invalid*name@emai1.com`
 
 [/slide]
 
+[slide]
+# Solution: Email Validation
+
+[vimeo-video]
+[stream language="EN" videoId="489818221/f14aeb2a1e" default /]
+[stream language="RO" videoId="489818221/f14aeb2a1e"  /]
+[/video-vimeo]
+
+[/slide]
