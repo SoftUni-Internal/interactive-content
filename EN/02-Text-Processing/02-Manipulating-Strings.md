@@ -253,6 +253,7 @@ JAko88/(()
 [code-task title="Solution: Substring" taskId="text-processing-lab-2-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
+// Different vido code
 function solve(index) {
     let word = index[0];
     let index1 = Number(index[1]);
@@ -519,6 +520,8 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [code-editor language=javascript]
 
 ```
+//Different vido code
+
 function censoredWords(input){
 
     let text = input[0];
@@ -825,6 +828,7 @@ tq
 [code-editor language=javascript]
 
 ```
+//Different vido code
 function countStringOccurrences(input){
    let sentence = input[0].split(' ')
    let keyWord = input[1];

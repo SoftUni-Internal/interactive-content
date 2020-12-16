@@ -231,6 +231,7 @@ Write a function that receives a string and prints all the characters on separat
 ||r|
 ||d|
 
+
 [/task-description]
 [code-io /]
 [tests]
