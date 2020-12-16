@@ -1,13 +1,13 @@
-# Lesson Introduction
-
 [slide]
 
-# Table of Contents
+# Lesson Introduction
 
 [vimeo-video]
 [stream language="EN" videoId="" default /]
 [stream language="RO" videoId="" /]
 [/video-vimeo]
+
+## In this lesson you will learn about:
 
 **1. DOM**
 
