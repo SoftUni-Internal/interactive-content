@@ -1097,7 +1097,7 @@ yes
 
 [slide]
 # Problem: Extensible Object
-[code-task title="Extensible Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Extensible Object" taskId="js-advanced-DOM-Manipulations-Extensible-Object" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1147,42 +1147,100 @@ To make a function shared between all instances, it’ll have to be attached to 
 }`
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+var template = \{
+    extensionMethod: function () \{
+        console.log("From extension method")
+    \}
+\};
 
+var testObject = result();
+testObject.extend(template);
+expect(Object.getPrototypeOf(testObject).hasOwnProperty('extensionMethod')).to.equal(true, "Object's prototype was not extended");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+var template = \{
+    extensionMethod: function () \{
+        return 5;
+    \}
+\};
 
+var testObject = result();
+testObject.extend(template);
+expect(testObject.extensionMethod()).to.equal(5, "Extension method wasn't cloned correctly.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+var template = \{
+    health: 100,
+    mana: 50
+\};
 
+var testObject = result();
+testObject.extend(template);
+expect(testObject.hasOwnProperty('health')).to.equal(true, "Template properties were not cloned correctly.");
+expect(testObject.hasOwnProperty('mana')).to.equal(true, "Template properties were not cloned correctly.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+var template = \{
+    fight: function(target) \{ return `object fights with \\$\{target\}` \},
+    health: 100,
+    mana: 50
+\};
 
+var testObject = result();
+testObject.extend(template);
+expect(Object.getPrototypeOf(testObject).hasOwnProperty('fight')).to.equal(true, "Object's prototype was not extended");
+expect(testObject.hasOwnProperty('health')).to.equal(true, "Template properties were not cloned correctly.");
+expect(testObject.hasOwnProperty('mana')).to.equal(true, "Template properties were not cloned correctly.");
+expect(testObject.fight('me')).to.equal('object fights with me', "Extension method wasn't cloned correctly.");
 [/input]
 [output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var template = \{
+    name: '',
+    setName: function (newValue) \{
+        this.name = newValue;
+    \},
+    getName: function () \{
+        return this.name;
+    \}
+\};
 
+var testObject = result();
+testObject.extend(template);
+expect(testObject.hasOwnProperty('name')).to.equal(true, "Template properties were not cloned correctly.");
+testObject.setName('new name');
+expect(testObject.getName()).to.equal('new name', "Extension method didn't work with local context.");
+[/input]
+[output]
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
