@@ -18,6 +18,16 @@ To test our regular expressions we can use the following site:
 
 [Regex101](www.regex101.com)
 
+[/slide]
+
+[slide]
+# Regular Expression Pattern
+
+[vimeo-video]
+[stream language="EN" videoId="489818685/4416e06b0f" default /]
+[stream language="RO" videoId="489818685/4416e06b0f"  /]
+[/video-vimeo]
+
 When working with regular expressions we use paterns to extract only the data we need.
 
 Example of a patern that matches non-empty sequence of digits:
@@ -32,7 +42,16 @@ Example of a patern that matches a name:
 
 `[A-Z][a-z]+ [A-Z][a-z]+` matches "John Smith".
 
-## Character Classes: Ranges
+[/slide]
+
+[slide]
+# Character Classes: Ranges
+
+
+[vimeo-video]
+[stream language="EN" videoId="489818738/683c3c4047" default /]
+[stream language="RO" videoId="489818738/683c3c4047"  /]
+[/video-vimeo]
 
 Use square brackets:
 
@@ -56,7 +75,16 @@ Example:
 
 John is **8** years old.
 
-## Predefined Classes
+[/slide]
+
+[slide]
+# Predefined Classes
+
+
+[vimeo-video]
+[stream language="EN" videoId="489818761/ed44d0ae3b" default /]
+[stream language="RO" videoId="489818761/ed44d0ae3b"  /]
+[/video-vimeo]
 
 In regex, we also have several character classes that provide us with a shorthand notation for commonly used sets of characters.
 
@@ -69,6 +97,16 @@ In regex, we also have several character classes that provide us with a shorthan
 | \d | Matches any decimal digit | \[0\-9\] |
 | \D | Matches any non-decimal character | \[\^d\] |
 
-If you want to read more about regular expressins:[Regular Expressions](https://www.regular-expressions.info/)
+If you want to read more about regular expressins: [Regular Expressions](https://www.regular-expressions.info/)
+
+[/slide]
+
+[slide]
+# Regex101: Demo
+
+[vimeo-video]
+[stream language="EN" videoId="489818656/8342484c8d" default /]
+[stream language="RO" videoId="489818656/8342484c8d"  /]
+[/video-vimeo]
 
 [/slide]
