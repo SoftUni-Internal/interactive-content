@@ -62,7 +62,7 @@ console.log(counter);
   ```
   
   ```js
-  sum = a + b;
+  let sum = a + b;
   ```
   
 [/slide]

@@ -22,8 +22,10 @@ In most of the contexts in which expressions are used, for example in statements
 
 # Numerical expressions
 In programming, we can calculate numerical expressions, for example:
-```js
+```js live
 let r = (150-20) / 2 + 5;
+
+console.log(r);
 ```
 The standard rule for **priorities** of arithmetic operations is applied: multiplication and division are always done before addition and subtraction. 
 

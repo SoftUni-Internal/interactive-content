@@ -183,6 +183,8 @@ In order to read a **number** from the console, we have to **declare a variable*
 ```js live
 function example(input){
   let num = Number(input);
+
+  console.log(num);
 }
 
 example('25');
@@ -202,7 +204,7 @@ function example(input){
     console.log(`Square area = ${area}`);
   }
 
-example('8');
+example('3');
 ```
 
 Here is how the program would work if we had a square with a side length equal to 3: 

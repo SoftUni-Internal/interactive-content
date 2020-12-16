@@ -71,10 +71,11 @@ In this case the quotient is negative.
 * Flooring works the opposite way for negative numbers. An if statement can fix this:
 ```js live
 let result = -5/4;
-if(result >=0)
-    result = Math.floor(result);
-else
-    result = Math.ceil(result);
+if(result >=0){
+  result = Math.floor(result);
+}else{
+  result = Math.ceil(result);
+}
 console.log(result);
 ```
 When it comes to dividing numbers by zero, there are two main cases:
