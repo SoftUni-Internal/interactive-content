@@ -853,7 +853,7 @@ yes
 
 [slide]
 # Problem: Car Factory
-[code-task title="Car Factory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Car Factory" taskId="js-advanced-DOM-Manipulations-Car-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -940,42 +940,159 @@ You will receive an object as an argument to your function. The format will be a
   wheels: [17, 17, 17, 17] }`
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let input = \{
+    model: 'VW Golf II',
+    power: 90,
+    color: 'blue',
+    carriage: 'hatchback',
+    wheelsize: 14
+\};
 
+let expected = \{
+    model: 'VW Golf II',
+    engine: \{
+        power: 90,
+        volume: 1800
+    \},
+    carriage: \{
+        type: 'hatchback',
+        color: 'blue'
+    \},
+    wheels: \[13, 13, 13, 13\]
+\};
+
+let output = result(input);
+
+expect(output.model).to.equal(expected.model, "Car model didn't match.");
+expect(output.engine.power).to.equal(expected.engine.power, "Engine power rating didn't match.");
+expect(output.engine.volume).to.equal(expected.engine.volume, "Engine volume didn't match.");
+expect(output.carriage.type).to.equal(expected.carriage.type, "Carriage type didn't match.");
+expect(output.carriage.color).to.equal(expected.carriage.color, "Car color type didn't match.");
+expect(output.wheels.length).to.equal(4, "Number of wheels didn't match.");
+expect(output.wheels\[0\]).to.equal(expected.wheels\[0\], "Wheel size didn't match.");
+expect(output.wheels\[0\] == output.wheels\[1\] &&
+    output.wheels\[0\] == output.wheels\[2\] &&
+    output.wheels\[0\] == output.wheels\[3\]).to.equal(true, "Wheel size didn't match.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let input = \{
+    model: 'Opel Vectra',
+    power: 110,
+    color: 'grey',
+    carriage: 'coupe',
+    wheelsize: 17
+\};
 
+let expected = \{
+    model: 'Opel Vectra',
+    engine: \{
+        power: 120,
+        volume: 2400
+    \},
+    carriage: \{
+        type: 'coupe',
+        color: 'grey'
+    \},
+    wheels: \[17, 17, 17, 17\]
+\};
+
+let output = result(input);
+
+expect(output.model).to.equal(expected.model, "Car model didn't match.");
+expect(output.engine.power).to.equal(expected.engine.power, "Engine power rating didn't match.");
+expect(output.engine.volume).to.equal(expected.engine.volume, "Engine volume didn't match.");
+expect(output.carriage.type).to.equal(expected.carriage.type, "Carriage type didn't match.");
+expect(output.carriage.color).to.equal(expected.carriage.color, "Car color type didn't match.");
+expect(output.wheels.length).to.equal(4, "Number of wheels didn't match.");
+expect(output.wheels\[0\]).to.equal(expected.wheels\[0\], "Wheel size didn't match.");
+expect(output.wheels\[0\] == output.wheels\[1\] &&
+    output.wheels\[0\] == output.wheels\[2\] &&
+    output.wheels\[0\] == output.wheels\[3\]).to.equal(true, "Wheel size didn't match.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let input = \{
+    model: 'Ferrari',
+    power: 200,
+    color: 'red',
+    carriage: 'coupe',
+    wheelsize: 21
+\};
 
+let expected = \{
+    model: 'Ferrari',
+    engine: \{power: 200, volume: 3500\},
+    carriage: \{type: 'coupe', color: 'red'\},
+    wheels: \[21, 21, 21, 21\]
+\};
+
+let output = result(input);
+
+expect(output.model).to.equal(expected.model, "Car model didn't match.");
+expect(output.engine.power).to.equal(expected.engine.power, "Engine power rating didn't match.");
+expect(output.engine.volume).to.equal(expected.engine.volume, "Engine volume didn't match.");
+expect(output.carriage.type).to.equal(expected.carriage.type, "Carriage type didn't match.");
+expect(output.carriage.color).to.equal(expected.carriage.color, "Car color type didn't match.");
+expect(output.wheels.length).to.equal(4, "Number of wheels didn't match.");
+expect(output.wheels\[0\]).to.equal(expected.wheels\[0\], "Wheel size didn't match.");
+expect(output.wheels\[0\] == output.wheels\[1\] &&
+    output.wheels\[0\] == output.wheels\[2\] &&
+    output.wheels\[0\] == output.wheels\[3\]).to.equal(true, "Wheel size didn't match.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let input = \{
+    model: 'Brichka',
+    power: 65,
+    color: 'white',
+    carriage: 'hatchback',
+    wheelsize: 16
+\};
 
+let expected = \{
+    model: 'Brichka',
+    engine: \{power: 90, volume: 1800\},
+    carriage: \{type: 'hatchback', color: 'white'\},
+    wheels: \[15, 15, 15, 15\]
+\};
+
+let output = result(input);
+
+expect(output.model).to.equal(expected.model, "Car model didn't match.");
+expect(output.engine.power).to.equal(expected.engine.power, "Engine power rating didn't match.");
+expect(output.engine.volume).to.equal(expected.engine.volume, "Engine volume didn't match.");
+expect(output.carriage.type).to.equal(expected.carriage.type, "Carriage type didn't match.");
+expect(output.carriage.color).to.equal(expected.carriage.color, "Car color type didn't match.");
+expect(output.wheels.length).to.equal(4, "Number of wheels didn't match.");
+expect(output.wheels\[0\]).to.equal(expected.wheels\[0\], "Wheel size didn't match.");
+expect(output.wheels\[0\] == output.wheels\[1\] &&
+    output.wheels\[0\] == output.wheels\[2\] &&
+    output.wheels\[0\] == output.wheels\[3\]).to.equal(true, "Wheel size didn't match.");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
