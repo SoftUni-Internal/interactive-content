@@ -32,8 +32,11 @@ It removes previously registered event listener from the target.
 ```js
 addBtn.removeEventListener("click", handler);
 ```
+[/slide]
 
-**Attaching Click Event**
+[slide]
+
+# Attaching Click Event
 
 Here is an example using the "click" type and the "clickMe" function as an event handler.
 
@@ -70,7 +73,11 @@ button.addEventListener('mouseover', function (e) {
 );
 ```
 
-**Attaching Input Events**
+[/slide]
+
+[slide]
+
+# Attaching Input Events
 
 In this example we are using the "input" type to demonstrate how we can enable a button when we type something in the input field.
 
@@ -84,7 +91,11 @@ inputField.addEventListener('input', function () {
 });
 ```
 
-**Remove Events**
+[/slide]
+
+[slide]
+
+# Remove Events
 
 Here is a more in-depth implementation of the `.addEventListener()` method and the`.removeEventListener()` method.
 
@@ -109,7 +120,11 @@ button.addEventListener('click', () => {
 });
 ```
 
-**Multiple Events**
+[/slide]
+
+[slide]
+
+# Multiple Events
 
 We can add multiple events to the same element without overwriting existing events.
 
@@ -120,7 +135,11 @@ element.addEventListener("mouseover", mySecondFunction);
 element.addEventListener("mouseout", myThirdFunction);
 ```
 
-**SetInterval() And ClearInterval()**
+[/slide]
+
+[slide]
+
+# SetInterval() And ClearInterval()
 
 In JavaScript we can **start** or **stop** timers.
 
@@ -145,11 +164,11 @@ clearInterval(intervalID);
 [/slide]
 
 [slide]
-# Problem: Add Delete Items
-[code-task title="Add Delete Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Add Delete
+[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input){
+function solve(){
   // Write your code here
 }
 ```
@@ -162,83 +181,68 @@ Extend the previous problem to display a `[Delete]` link after each list item. C
 [image assetsSrc="Add-Delete-Items.png" /]
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+\<ul id="items"\>
+\</ul\>
+\<input type="text" id="newText" /\>
+\<input type="button" value="Add"  onclick="addItem()"\>
+`;
 
+document.getElementById('newText').value = 'First';
+result();
+
+document.getElementById('newText').value = 'Second';
+result();
+
+let items = \\$('\#items li');
+
+// Verify items where added with delete links
+expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
+expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
+expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+
+// Setup event
+var clickEvent = document.createEvent('MouseEvents');
+clickEvent.initEvent('click', true, true);
+items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
+
+expect(\\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]
 
 [slide]
-# Solution: Add Delete Items
-[code-task title="Add Delete Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Solution: Add Delete
+[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```js
-function solve(){
-    let newElement = document.getElementById("newText").value;
-    let list = document.getElementById("items");
-    if (newElement.length === 0) return;
-    let listItem = document.createElement("li");
-    listItem.textContent = newElement;
-    let remove = document.createElement("a");
-    let linkText = document.createTextNode("[Delete]");
-    remove.appendChild(linkText);
-    remove.href = "#";
-    remove.addEventListener("click", deleteItem);
-    listItem.appendChild(remove);
-    list.appendChild(listItem);
-    function deleteItem() {
-        listItem.remove();
-    }
+function solve() {
+  let item = document.getElementById("newText");
+  let ul = document.getElementById("items");
+  let li = document.createElement("li");
+  let a = document.createElement("a");
+  a.textContent = "[Delete]";
+  a.href = "#";
+  li.textContent = item.value;
+  li.appendChild(a);
+  ul.appendChild(li);
+  a.addEventListener("click", function () {
+    ul.removeChild(li);
+  });
+  item.value = "";
 }
 ```
 [/code-editor]
@@ -250,57 +254,44 @@ Extend the previous problem to display a `[Delete]` link after each list item. C
 [image assetsSrc="Add-Delete-Items.png" /]
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+\<ul id="items"\>
+\</ul\>
+\<input type="text" id="newText" /\>
+\<input type="button" value="Add"  onclick="addItem()"\>
+`;
 
+document.getElementById('newText').value = 'First';
+result();
+
+document.getElementById('newText').value = 'Second';
+result();
+
+let items = \\$('\#items li');
+
+// Verify items where added with delete links
+expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
+expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
+expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
+
+// Setup event
+var clickEvent = document.createEvent('MouseEvents');
+clickEvent.initEvent('click', true, true);
+items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
+
+expect(\\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]
