@@ -155,7 +155,7 @@ let intervalID = setInterval(
 );
 ```
 
-Use `.clearInterval()` method to cancel an existing timer.
+Use the `.clearInterval()` method to cancel an existing timer.
 
 ```js
 clearInterval(intervalID);
