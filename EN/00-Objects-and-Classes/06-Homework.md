@@ -515,6 +515,13 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 [slide hideTitle]
 # Problem: Students
+
+[vimeo-video]
+[stream language="EN" videoId="421822838" default /]
+[stream language="RO" videoId="433936042"  /]
+[/video-vimeo]
+
+
 [code-task title="Students" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -859,6 +866,12 @@ Trucks have average horsepower of: 365.67.
 
 [slide hideTitle]
 # Problem: Person ID
+
+[vimeo-video]
+[stream language="EN" videoId="421821748" default /]
+[stream language="RO" videoId="433932277"  /]
+[/video-vimeo]
+
 [code-task title="Person ID" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
