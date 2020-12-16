@@ -1,14 +1,4 @@
-# Stream API
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="5622" endTimeInSeconds="10868"]
-[stream language="EN" videoId="421796076" default /]
-[stream language="RO" videoId="435043258"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Stream API
@@ -211,7 +201,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [slide]
 # Problem: Word Filter
-[code-task title="Word Filter" taskId="862fa494-90f9-440d-a1cc-4f83cb8dd2c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Filter" taskId="Java-Fundamentals_part-Two-ASsociative-Arrays-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -360,14 +350,7 @@ import java.util.Scanner;
 
 public class WordFilter {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String[] words = Arrays.stream(scanner.nextLine().split(" "))
-                .filter(w->w.length() % 2 == 0).toArray(String[]::new);
-        for (String word : words) {
-            System.out.println(word);
-        }
-    }
+    // Write your solution here
 }
 ```
 [/code-editor]
@@ -626,7 +609,7 @@ courseGrades.entrySet()
 
 [slide]
 # Problem: Largest 3 Numbers
-[code-task title="Largest 3 Numbers" taskId="d49b1d1b-d371-411a-bbd5-98b77b6b62e9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -747,16 +730,7 @@ import java.util.stream.Collectors;
 public class Largest3Numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        List<Integer> nums = Arrays.stream(scanner.nextLine().split(" "))
-                .map(Integer::parseInt).sorted((n1,n2) -> n2.compareTo(n1)).limit(3)
-                .collect(Collectors.toList());
-
-        for (Integer num : nums) {
-            System.out.print(num + " ");
-
-        }
-    }
+// Write your solution here
 }
 ```
 [/code-editor]

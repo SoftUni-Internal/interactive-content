@@ -1,14 +1,4 @@
-# What Is a String?
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="81" endTimeInSeconds="1507"]
-[stream language="EN" videoId="421802353" default /]
-[stream language="RO" videoId="436008840"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # What Is a String?

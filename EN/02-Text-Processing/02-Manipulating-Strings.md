@@ -1,14 +1,3 @@
-# Manipulating Strings
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1507" endTimeInSeconds="6054"]
-[stream language="EN" videoId="421802353" default /]
-[stream language="RO" videoId="436008840"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Concatenating
@@ -135,7 +124,7 @@ System.out.println(replacedText);
 
 [slide]
 # Problem: Repeat strings
-[code-task title="Repeat strings" taskId="390307eb-d652-44d9-b31e-aee43b3982a8" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Repeat strings" taskId="Java-Fundamentals-Part-Two-String-Processing-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -248,22 +237,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String[] words = sc.nextLine().split(" ");
-
-        String result = "";
-
-        for (String word : words) {
-            int repeatTimes = word.length();
-
-            for (int i = 0; i < repeatTimes; i++){
-
-                result += word;
-            }
-        }
-        System.out.println(result);
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]
@@ -361,7 +335,7 @@ linearlinearlinearlinearlinearlinear
 
 [slide]
 # Problem: Substring
-[code-task title="Substring" taskId="7f1f33a4-aa1e-4df3-b15a-bd36b7e25b3d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Substring" taskId="Java-Fundamentals-Part-Two-String-Processing-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -467,21 +441,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String key = sc.nextLine();
-        String text = sc.nextLine();
-
-        int index = text.indexOf(key);
-
-        while (index != -1) {
-            
-            text = text.replace(key, "");
-
-            index = text.indexOf(key);
-        }
-        System.out.println(text);
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]
@@ -573,7 +533,7 @@ stration
 
 [slide]
 # Problem: Text Filter
-[code-task title="Text Filter" taskId="63d4c851-b50e-477f-8aef-5ec3ac015ec7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Text Filter" taskId="Java-Fundamentals-Part-Two-String-Processing-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -675,25 +635,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String[] banWords = sc.nextLine().split(", ");
-        String text = sc.nextLine();
-
-        for (String banWord : banWords) {
-
-            if (text.contains(banWord)) {
-                
-                String replacement = "";
-
-                for (int i = 0; i < banWord.length(); i++) {
-                    replacement += "*";
-                }
-                text = text.replace(banWord, replacement);
-            }
-        }
-        System.out.println(text);
-    }
+  // Write your solution here
 }
 ```
 [/code-editor]

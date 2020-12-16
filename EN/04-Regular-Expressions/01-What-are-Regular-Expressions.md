@@ -1,14 +1,4 @@
-# What are Regular Expressions?
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1003" endTimeInSeconds="2651"]
-[stream language="EN" videoId="421806246" default /]
-[stream language="RO" videoId="435070128"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # What are Regular Expressions?

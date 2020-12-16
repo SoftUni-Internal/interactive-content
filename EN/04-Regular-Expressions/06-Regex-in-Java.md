@@ -1,14 +1,6 @@
 # Regex in Java
 
-[slide]
-# Video
 
-[vimeo-video startTimeInSeconds="9433" endTimeInSeconds="11620"]
-[stream language="EN" videoId="421806246" default /]
-[stream language="RO" videoId="435070128"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Built-In Regex Classes 
@@ -119,7 +111,7 @@ System.out.println(String.join(", ",tokens));
 
 [slide]
 # Problem: Match Full Name
-[code-task title="Match Full Name" taskId="53807843-8e22-4213-97af-c92f4903346c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Full Name" taskId="Java-Fundamentals-Part-Two-Regex-Match-Full-Nmaes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -250,22 +242,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String listOfNames = scanner.nextLine();
-
-        String regex = "\\b[A-Z][a-z]+ [A-Z][a-z]+";
-
-        List<String> validNames = new ArrayList<>();
-
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(listOfNames);
-
-        while (matcher.find()) {
-            validNames.add(matcher.group());
-        }
-
-        System.out.println(String.join(" ", validNames));
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -394,7 +371,7 @@ Ivan Ivanov Ivan Ivanov
 
 [slide]
 # Problem: Match Numbers
-[code-task title="Match Numbers" taskId="8fc7f1de-7cb0-4ab4-b1d0-1de73de6efe3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Match Numbers" taskId="Java-Fundamentals-Part-Two-Regex-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -487,23 +464,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-
-        String regex = "(^|(?<=\\s))-?\\d+(\\.\\d+)?($|(?=\\s))";
-
-        List<String> matchedNumbers = new ArrayList<>();
-
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(input);
-
-        while (matcher.find()) {
-            matchedNumbers.add(matcher.group());
-        }
-
-        System.out.println(String.join(" ", matchedNumbers));
-    }
-}
+      // Write your solution here
 ```
 [/code-editor]
 [task-description]

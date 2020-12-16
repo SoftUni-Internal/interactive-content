@@ -1,14 +1,3 @@
-# StringBuilder - methods
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="7976" endTimeInSeconds="8630"]
-[stream language="EN" videoId="421802353" default /]
-[stream language="RO" videoId="436008840"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Add

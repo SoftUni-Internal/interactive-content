@@ -1,14 +1,4 @@
-# Associative Arrays
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="139" endTimeInSeconds="4406"]
-[stream language="EN" videoId="421796076" default /]
-[stream language="RO" videoId="435043258"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 # Associative Arrays
@@ -251,7 +241,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 
 [slide]
 # Problem: Count Real Numbers
-[code-task title="Count Real Numbers" taskId="2d224614-8c87-43c1-ab6a-873186350cad" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="Java-Fundamentals-part-Two-Associative-arrays-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -392,30 +382,7 @@ import java.util.TreeMap;
 
 public class CountRealNumber {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String[] numberStrings = scanner.nextLine().split(" ");
-        double[] numbers = new double[numberStrings.length];
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = Double.parseDouble(numberStrings[i]);
-        }
-
-        TreeMap<Double, Integer> numberCounts = new TreeMap<>();
-
-        for (double number : numbers) {
-            if(numberCounts.containsKey(number)){
-                Integer currentCount = numberCounts.get(number);
-                numberCounts.put(number, 1 + currentCount);
-            } else {
-                numberCounts.put(number, 1);
-            }
-        }
-
-        for(Map.Entry<Double, Integer> entry : numberCounts.entrySet()){
-            DecimalFormat decimalFormat = new DecimalFormat("#.#######");
-            System.out.printf("%s -> %d%n", decimalFormat.format(entry.getKey()), entry.getValue());
-        }
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]
@@ -537,7 +504,7 @@ Read a **list of real numbers** and print them in **ascending order** along with
 
 [slide]
 # Problem: Word Synonyms
-[code-task title="Word Synonyms" taskId="37dfcf73-dcfa-46ba-91cb-1ee1387c01fc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Synonyms" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -762,31 +729,7 @@ import java.util.stream.Collectors;
 
 public class WordSynonyms {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int numPairs = Integer.parseInt(scanner.nextLine());
-
-        Map<String, List<String>> wordSynonyms = new LinkedHashMap<>();
-
-        for (int i = 0; i < numPairs; i++) {
-            String word = scanner.next();
-            String synonym = scanner.next();
-
-            List<String> currentSynonyms = wordSynonyms.get(word);
-            if (currentSynonyms == null) {
-                currentSynonyms = new ArrayList<>();
-                wordSynonyms.put(word, currentSynonyms);
-            }
-            currentSynonyms.add(synonym);
-        }
-
-        for(Map.Entry<String, List<String>> entry : wordSynonyms.entrySet()){
-            System.out.print(entry.getKey() + " - ");
-            List<String> synonyms = entry.getValue();
-            System.out.print(String.join(", ", synonyms));
-            System.out.println();
-        }
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]
@@ -995,7 +938,7 @@ customer - client, purchaser
 
 [slide]
 # Problem: Odd Occurrences
-[code-task title="Odd Occurrences" taskId="36f87397-888e-4d94-901e-cf29de88de73" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Odd Occurrences" taskId="Odd-Occurences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1115,34 +1058,7 @@ import java.util.Scanner;
 
 public class OddOccurrences {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String[] words = scanner.nextLine().split(" ");
-        LinkedHashMap<String, Integer> counts = new LinkedHashMap<>();
-
-        for (String word : words) {
-            String wordInLowerCase = word.toLowerCase();
-            if(counts.containsKey(wordInLowerCase)){
-                counts.put(wordInLowerCase, counts.get(wordInLowerCase) + 1);
-            } else {
-                counts.put(wordInLowerCase, 1);
-            }
-        }
-
-        ArrayList<String> odds = new ArrayList<>();
-        for (Map.Entry<String, Integer> entry : counts.entrySet()) {
-            if(entry.getValue() % 2 == 1){
-                odds.add(entry.getKey());
-            }
-        }
-
-        for (int i = 0; i < odds.size(); i++) {
-            System.out.print(odds.get(i));
-            if ( i < odds.size() - 1){
-                System.out.print(", ");
-            }
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]

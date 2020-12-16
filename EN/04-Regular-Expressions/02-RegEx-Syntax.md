@@ -1,14 +1,4 @@
-# RegEx Syntax
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2651" endTimeInSeconds="4319"]
-[stream language="EN" videoId="421806246" default /]
-[stream language="RO" videoId="435070128"  /]
-[/video-vimeo]
-
-[/slide]
 
 [slide]
 
