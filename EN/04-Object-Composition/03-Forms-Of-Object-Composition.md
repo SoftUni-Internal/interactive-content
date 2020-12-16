@@ -2,9 +2,7 @@
 
 [slide]
 
-# Three Different Forms Of Object Composition
-
-## Aggregation
+# Aggregation
 
 We have Aggregation when an object is formed from an enumerable collection of subobjects. 
 
@@ -50,7 +48,11 @@ let result = dataArray.reduce((acc, curr, index, array) => {
 console.log(result);
 ```
 
-## Concatenation
+[/slide]
+
+[slide]
+
+# Concatenation
 
 Concatenation is when an object is formed by adding new properties to an existing object.
 
@@ -78,7 +80,11 @@ const result = obj.reduce(concatenate, {});
 console.log(result);
 ```
 
-## Delegation
+[/slide]
+
+[slide]
+
+# Delegation
 
 Delegation is when an object forwards or delegates to another object.
 
