@@ -5,10 +5,6 @@
 # Problem: Furniture
 
 
-[vimeo-video]
-[stream language="EN" videoId="421820196" default /]
-[stream language="RO" videoId="436028909"  /]
-[/video-vimeo]
 
 [code-task title="Furniture" taskId="Java-Fundamentals-Part-Two-Regular-Expressions-Furniture" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
