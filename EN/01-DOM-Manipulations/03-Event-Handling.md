@@ -227,7 +227,7 @@ yes
 # Solution: Add Delete
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function solve() {
   let item = document.getElementById("newText");
   let ul = document.getElementById("items");
