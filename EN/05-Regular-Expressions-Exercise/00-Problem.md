@@ -1,4 +1,4 @@
-# Problem: Furniture
+
 
 [slide]
 # Video
