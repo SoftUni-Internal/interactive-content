@@ -22,6 +22,13 @@ let age = 35;
 
 - How to read and print the user's input
 
+```js
+function town(homeTown) {
+  console.log(`I am from ${homeTown}!`);
+}
+
+town("Buccuresht");
+```
 - How to perform simple arithmetic operations
   ```js
   let sum = 5 + 10;
