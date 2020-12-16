@@ -163,7 +163,65 @@ clearInterval(intervalID);
 
 [/slide]
 
+[slide]
+# Problem: Add Delete
+[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```js
+function solve(){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Extend the previous problem to display a `[Delete]` link after each list item. Clicking ot it, should delete the item with no confirmation.
 
+# Example
+[image assetsSrc="Add-Delete-Items.png" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+document\.body\.innerHTML \= \`
+\<h1\>List of Items\</h1\>
+\<ul id\=\"items\"\>
+\</ul\>
+\<input type\=\"text\" id\=\"newText\" /\>
+\<input type\=\"button\" value\=\"Add\"  onclick\=\"addItem\(\)\"\>
+\`\;
+
+document\.getElementById\(\'newText\'\)\.value \= \'First\';
+result\(\)\;
+
+document\.getElementById\(\'newText\'\)\.value \= \'Second\'\;
+result\(\)\;
+
+let items \= \\$(\'\#items li\'\)\;
+
+// Verify items where added with delete links
+expect\(items\.get\(0\)\.innerHTML\)\.to\.contains(\'First\'\, \"Element wasn\'t added\.\"\)\;
+expect\(items\.get\(0\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
+expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'Second\'\, \"Element wasn\'t added\.\"\)\;
+expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
+
+// Setup event
+var clickEvent \= document\.createEvent\(\'MouseEvents\'\)\;
+clickEvent\.initEvent\(\'click\'\, true\, true\)\;
+items\.eq\(1\)\.find\(\'a\'\)\.get\(0\)\.dispatchEvent\(clickEvent\)\;
+
+expect\(\\$\(\'\#items li\'\)\.length\)\.to\.equal\(1\, \"Correct element wasn\'t deleted\.\"\)\;
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
+[/slide]
 
 [slide]
 
