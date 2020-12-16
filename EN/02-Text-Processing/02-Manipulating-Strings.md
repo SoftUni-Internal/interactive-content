@@ -8,11 +8,13 @@
 [stream language="RO" videoId="489817452/a5c7ddac9c"  /]
 [/video-vimeo]
 
-The **concatenation** in JS is done by the **operators**: `+` and `+=` or by the method `concat()`.
+The **concatenation** in JS is done with the operators: `+` and `+=` or by the `concat()` method.
 
-**Concat** can also be used to **merge** two arrays. What is specific about it is that it **does not change** the **original string or array**, but returns a new one.
+**Concat** can also be used to **merge** two arrays.
 
-Here is an example of how the operators `+` and `+=` works:
+What is specific to it, is that **it does not change the original string** or array, instead it returns a new one. 
+
+Here is an example of how the `+` and `+=` operators work:
 
 ```js live
 let sentence = 'Hello' + ', ';
@@ -23,7 +25,7 @@ sentence += world
 console.log(sentence)
 ```
 
-Now let's see how the `concat()` works.
+Let us see how `concat()` works: 
 
 ```js live
 let greet = 'Hello, ';
@@ -34,7 +36,7 @@ let concatenated = greet.concat(name);
 console.log(concatenated);
 ```
 
-In the end, we see that both ways will return an **identical string**. That's because `+` and `+=` and the `concat()` method do the same thing but in different ways. 
+In the end, we see that both ways will return an **identical string**. That is because `+` and `+=` and the `concat()` method do the same but in different ways. 
 
 [/slide]
 
@@ -46,11 +48,13 @@ In the end, we see that both ways will return an **identical string**. That's be
 [stream language="RO" videoId="489817455/1fa425821a"  /]
 [/video-vimeo]
 
-To **find** a substring, we can use `indexOf()` or `lastIndexOf()`. These two methods are **case sensitive**, so this means that if we search for a word with a capital letter but type it with a lowercase letter, and if they don't find it at all, they will return `-1`.
+To **find** a substring, we can use `indexOf()` or `lastIndexOf()`. 
 
-Both of them can have up to two parameters:
+These two methods are **case sensitive**, this means that if we search for a word including a **capital letter and the string contains its lower-case version**, they will not match the word at all, and will return `-1`. 
 
--  The first one is the word that it searches.
+Both of them can **take up to two parameters:** 
+
+-  The first one is the word that it searches for.
 -  The second one is the starting index.
 
 Here is an example of using `indexOf()`
@@ -63,7 +67,7 @@ console.log(str.indexOf('JS'));
 
 Here `indexOf` returns **7** because this is first index that `JS` appears. 
 
-Now let's try with `js` not `JS`:
+Now let us try with `js` not `JS`:
 
 ```js live
 let str = 'I love JS a lot';
@@ -72,7 +76,9 @@ console.log(str.indexOf('js'));
 ```
 Now it returns `-1` because **indexOf** is case sensitive and does not detect **js** as **JS** 
 
-Let's check `lastIndexOf()`. It is almost the same as **indexOf**, but with the difference that **lastIndexOf** searches for the last appearance. And Let's see how it works:
+Let us check `lastIndexOf()`. It is almost the same as **indexOf**, but with the difference that **lastIndexOf** searches for the last appearance.
+
+And let us see how it works:
 
 ```js live
 let str = 'JS developer';
@@ -124,16 +130,22 @@ Here **subStrOne** will return **to** because this is the part that is in the ra
 [stream language="RO" videoId="489817576/c647cb8ef4"  /]
 [/video-vimeo]
 
-If we want to change a part of a string directly, we will use `replace()`. Also like `substring()`, `replace()` **will not modify** the original string, it will **return a new one**. That means that we need to assign it to a variable.
+If we want to change a part of a string directly, we will use `replace()`. 
 
-**Replace** is a method that needs two parameters:
+Like `substring()`, `replace()` it **will not modify** the original string, it will **return a new one**. 
+
+This means that we need to assign it to a variable.
+
+**Replace** is a method that requires two parameters:
 
 -  pattern
 -  replacement
 
-For the **pattern** part we can use **RegExp** or **string**. And for the **replacement** we can use `function()` or a **string**.
+For the **pattern** part we can use **Regex** or **string**. 
 
-After it matched the pattern, it will change only the first appearance.
+And for the **replacement** we can use `function()` or a **string**.
+
+After it matches the pattern, it will change only its first appearance. 
 
 Here is an example:
 
@@ -354,7 +366,9 @@ JAko88/(()
 
 When we want to separate words in a string, we use the `split()` method.
 
-It divides a **string** into an ordered list from a **pattern**, which is the first parameter and returns an **array**. We have the option to add a second parameter, which is the **limit**. It sets the **limit** of **indexes** in the final **array**.
+It divides a **string** into an ordered list using a pattern \(separator\), which is the first parameter and returns an **array**. 
+
+We have the option to add a second parameter, which is the **limit**. It sets the **limit** of **indexes** in the final **array**.
 
 Here an example on using `split()`
 
@@ -369,16 +383,20 @@ console.log(divided);
 
 # Finding in a String
 
-For finding a specific part of a string, we use the method `includes()`.
+To find a specific part of a string, we use the `includes()` method. 
 
-This method has two parameters:
+This method takes two parameters:
 
--  Searching string.
+-  The string we are searching for. 
 -  Position at which to start searching. This one is optional.
 
-It takes the **string** and searches for it in the main one. It is similar to `indexOf()` but not exactly, after it finds it, this method returns `true` or `false` if not.
+It takes the **string** and searches for it in the main one.
 
-**Includes** is also case sensitive.
+It takes the string and searches for it in the main one.
+
+It is similar to `indexOf()`, but if it finds it, this method returns `true` and `false` if it does not. 
+
+**Includes** is case sensitive.
 
 For example:
 
@@ -616,15 +634,19 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [stream language="RO" videoId="489817107/ed4fac30e5"  /]
 [/video-vimeo]
 
-For removing **whitespaces** we use the `trim()` method.
+To **remove whitespaces** we use the `trim()` method. 
 
 **Trim** will remove all of the **whitespaces** in a string, from both ends.
 
-So that's why we have `trimStart()` and `trimEnd()`. If we want to remove the whitespaces only at the **beginning** or the **end**, we can use one of these.
+So that is why we have `trimStart()` and `trimEnd()`. 
 
-All of these three methods do not affect the value of the original string. So we will have to assign them to a variable.
+If we want to remove the whitespaces only at the **beginning** or the **end**, we can use one of these.
 
-Here is and example of using `trim()`:
+All of these three methods do not affect the value of the original string. 
+
+So we will have to assign them to a variable.
+
+Here is an example of using `trim()`:
 
 ```js live
 let str = '         Some text here              ';
@@ -632,7 +654,7 @@ let str = '         Some text here              ';
 console.log(str.trim());
 ```
 
-Now let's see how `trimStart()` works with the same string:
+Now let us see how `trimStart()` works with the same string:
 
 ```js live
 let str = '         Some text here              ';
@@ -658,18 +680,26 @@ console.log(str.trimEnd());
 [stream language="RO" videoId="489817165/3eb9153a87"  /]
 [/video-vimeo]
 
-With `startsWith()`, we can check if a **string** starts with a **specific word**. That we will pass to the method as a parameter. **EndsWith** it's almost the same. The difference between both is that `endsWith()` checks if that string ends with a **certain word**.
+With `startsWith()`, we can check if a string starts with a specific word, that we will pass to the method as a parameter.
 
-If they found the substring, they will return `true` or `false` if not.
+**EndsWith** it is almost the same. 
 
-**StartsWith** can receive two parameters:
+The difference between them is that `endsWith()` checks if that string ends with a certain word.
+
+If they find the substring, they will return true, and false if they do not.
+
+**StartsWith** can receive two parameters: 
 
 -  The word that it searches for in the string.
 -  And **position** from which index to start. This parameter is optional.
 
-**EndsWith** also can receive two parameters. But the second one is **length** and it's optional again. If given, it will tell from which index to search.
+**EndsWith** also can receive two parameters. 
 
-Here are example on how they work:
+But the second one is **length** and it's optional. 
+
+If the **second parameter is given**, it will tell from which index to search.
+
+Here are some examples on how they work:
 
 ```js live
 let sentence = 'My name is John';
@@ -678,7 +708,7 @@ console.log(sentence.startsWith('My'));
 console.log(sentence.startsWith('My', 3));
 ```
 
-Let's see and how `endsWith()` works:
+Let us see and how `endsWith()` works:
 
 ```js live
 let sentence = 'My name is John';
@@ -687,7 +717,7 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-On the first **console.log**s, they will return **true**, but on the second ones, they will return **false** because the substring won't be in the searching part.
+In the first example the **console.logs**, will return `true`, but in the second one, they will return `false` because the substring will not be in the searching part. 
 
 [/slide]
 
@@ -705,7 +735,7 @@ They will concatenate the substring, which is one of the two parameters that we 
 
 We also need to assign them to a variable because they won't modify the original string.
 
-First let's see how `padStart()` works:
+First let us see how `padStart()` works:
 
 ```js live
 let sentence = 'My name is John';
@@ -744,9 +774,9 @@ function countStringOccurrences(input){
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a text and a string that you need to search. 
+Write a function that receives a piece of text and a string that you need to search for in it. 
 
-Print all the occurrences of that word in the string.
+Print all the occurrences of that word in the string. 
 
 # Example
   | **Input** | **Output** |

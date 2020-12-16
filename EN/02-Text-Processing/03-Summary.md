@@ -6,13 +6,13 @@
 [stream language="RO" videoId="489817252/92c1c7b52f"  /]
 [/video-vimeo]
 
-## In this lesson you learned:
+**In this lesson we learned that:**
 
-- **Strings** are an immutable series of **characters**
+- **Strings** are immutable series of **characters**
 
 - They have built-in methods that we use to process them.
 
-- Examples of build-in methods:
+- Examples of built\-in methods:
 
 Concatenate two strings using `concat()` method:
 

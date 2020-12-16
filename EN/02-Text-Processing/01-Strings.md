@@ -1,17 +1,20 @@
 # String
 
 [slide]
-# What is String
+# What is a String
 
 [vimeo-video]
 [stream language="EN" videoId="489817383/8da2994345" default /]
 [stream language="RO" videoId="489817383/8da2994345"  /]
 [/video-vimeo]
 
-The **strings** are a series of **characters**. They are used for storing text.
-**String**'s most used operation is to check their **length**, which can be done by the `length()` property.
+**Strings** are series of **characters.**
 
-the text is wrapped in three types of quotes. They are:
+They are used for storing text.
+
+**One of their most used properties is** their length, which can be acquired using `.length()` on any string.
+
+The text should be wrapped in quotes, there are three types which can be used: 
 
 -  **Double quotes**
 
@@ -25,7 +28,7 @@ let myString = "Hello !";
 let myString = 'Hello !';
 ```
 
--  **back-ticks**
+-  **Backticks**
 
 ```js
 let myString = `Hello !`;
@@ -45,9 +48,9 @@ console.log(`${concatenated}`);
 # Accessing Strings
 
 
-The **Strings** read-only chain of characters, so this means that we can't change them.
+**Strings** are read-only chains of characters; this means that we cannot change them. 
 
-We **access** them by their index. And we have two ways we can do this.
+We **access** them by their index. There are two ways of doing this .
 
 -  The first one is by using indexing operator `[]`
 
@@ -57,7 +60,7 @@ let hi = 'Hi, JS';
 console.log(hi[4]);
 ```
 
-This example will return `J` because it is the fourth index.
+This one will also return `J` because the two ways of accessing indexes are identical.  
 
 -  We can access a **string** also with the method `charAt()`. And it will look like that:
 
@@ -111,7 +114,7 @@ function printCharacters(input){
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a string and prints all the characters on separate lines.
+Write a function that receives a string and prints its characters on separate lines. 
 
 # Example
   | **Input** | **Output** |
@@ -220,7 +223,7 @@ function solve(input) {
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a string and prints all the characters on separate lines.
+Write a function that receives a string and prints its characters on separate lines. 
 
 # Example
   | **Input** | **Output** |
