@@ -14,11 +14,11 @@ function revealWords(input){
 ## Description
 Write a function, which receives two parameters.
 
-The first parameter will be a string with some words separated by `, `.
+The first parameter will be a **string containing some words** separated by `, `.
 
-The second parameter will be a string which contains templates containing `*`.
+The **second parameter will be a string** which contains templates containing `*`.
 
-Find the word with the exact same length as the template and replace it.
+Find the word with **the exact same length as the template** and replace it.
 
 # Example
   | **Input** | **Output** |
@@ -482,11 +482,11 @@ function splitter(input){
 ## Description
 You will receive a **single string.**
 
-This string is written in **PascalCase** format.
+This string is written using the **PascalCase** format. 
 
-Your task here is to split this string by **every word** in it.
+Your task here is to split **every separate word from the string.** 
 
-Print them joined by **comma and space.**
+Print them joined by **a comma and a space.** 
 
 # Example
   | **Input** | **Output** |
@@ -584,7 +584,7 @@ function cutAndReverse(input){
 ## Description
 The input will be a **single string.**
 
-Write a function that cuts the given string **into half** and reverse the **two halves.**
+Write a function that cuts the given string **in half** and reverse the **two halves.**
 
 Print each half on a **separate line.**
 
