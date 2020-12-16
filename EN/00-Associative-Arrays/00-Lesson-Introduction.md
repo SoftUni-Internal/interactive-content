@@ -34,10 +34,7 @@
 
 - Filter and Sort Collection
 
-**5. DOM Properties and HTML Attributes**
 
-- How are DOM properties different from HTML Attributes
-
-**6. Live Exercises**
+**5. Live Exercises**
 
 [/slide]
