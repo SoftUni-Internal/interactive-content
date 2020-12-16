@@ -229,7 +229,7 @@ yes
 
 [slide]
 # Problem: List Processor
-[code-task title="List Processor" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: List Processor" taskId="js-advanced-DOM-Manipulations-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -261,42 +261,77 @@ The input will be in a form of an array of strings - each string represents a co
 |`['add pesho', 'add george', 'add peter', 'remove peter','print']`| pesho\, george |
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let output = "";
 
+console.log = function (buff) \{
+    output += buff;
+\};
+
+let commands = \['add hello', 'add again', 'remove hello', 'add again', 'print'\];
+result(commands);
+
+expect(output).to.equal('again,again', 'Expected output did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let output = "";
+console.log = function (buff)\{
+    output += buff;
+\};
 
+let commands = \['add stallone', 'remove stallone', 'remove stallone', 'print'\];
+result(commands);
+
+expect(output).to.equal('','Expected output did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let output = "";
+console.log = function (buff)\{
+    output += buff;
+\};
 
+let commands = \['add peter', 'add george', 'add peter', 'remove peter','print'\];
+result(commands);
+
+expect(output).to.equal('george','Expected output did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let output = "";
+console.log = function (buff)\{
+    output += buff;
+    output += '\n';
+\};
 
+let commands = \['add JSFundamentals', 'print', 'add JSAdvanced', 'print','add JSApplications','print'\];
+result(commands);
+
+expect(output).to.equal('JSFundamentals\nJSFundamentals,JSAdvanced\nJSFundamentals,JSAdvanced,JSApplications\n','Expected output did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
