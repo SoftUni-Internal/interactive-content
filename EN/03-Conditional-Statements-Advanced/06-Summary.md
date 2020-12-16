@@ -27,10 +27,10 @@ if (condition1) {
 
 - Logical operators run over boolean expressions
 
-* logical **"AND"** (`&&`)
-* logical **"OR"** (`||`)
-* logical **negation** (`!`)
-* **brackets** (`()`).
+  - logical **"AND"** `&&`
+  - logical **"OR"** `||`
+  - logical **negation** `!`
+  - **brackets** `()`
 
 - The **switch-case** statement is an alternative to the **if-else**
 
