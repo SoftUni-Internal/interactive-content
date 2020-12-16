@@ -407,7 +407,7 @@ yes
 
 [slide]
 # Problem: Cars
-[code-task title="Cars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Cars" taskId="js-advanced-DOM-Manipulations-Cars" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -449,42 +449,46 @@ color\:red
 model\:new\, color\:red
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let commands = \['create c1','create c2 inherit c1','set c1 color red','set c2 model new','print c1','print c2'\];
 
+let text = "";
+console.log = function (buff) \{
+    text += buff;
+    text += '\n';
+\};
+
+result(commands);
+
+expect(text).to.equal('color:red\nmodel:new, color:red\n', 'The expected output did not match!');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let commands = \['create pesho','create gosho inherit pesho','create stamat inherit gosho','set pesho rank number1','set gosho nick goshko','print stamat'\];
 
+let text = "";
+console.log = function (buff) \{
+    text += buff;
+    text += '\n';
+\};
+
+result(commands);
+expect(text).to.equal('nick:goshko, rank:number1\n', 'The expected output did not match!');
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
