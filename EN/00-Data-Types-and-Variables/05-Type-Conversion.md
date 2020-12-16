@@ -359,7 +359,7 @@ b
 [slide hideTitle]
 # Solution: Chars to String
 
-[code-task title="Chars to String" taskId="java-fund-Data-Types-Chars-to-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Chars to String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -556,7 +556,7 @@ lower-case
 
 [slide hideTitle]
 # Solution: Lower or Upper
-[code-task title="Chars to String" taskId="java-fund-Data-Types-Lower-or-Upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Lower or Upper"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
