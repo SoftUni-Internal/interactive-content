@@ -136,7 +136,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [slide hideTitle]
 # Solution: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Centuries to Minutes"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -359,7 +359,7 @@ b
 [slide hideTitle]
 # Solution: Chars to String
 
-[code-task title="Solution: Chars to String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Chars to String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -556,7 +556,7 @@ lower-case
 
 [slide hideTitle]
 # Solution: Lower or Upper
-[code-task title="Solution: Lower or Upper"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Lower or Upper"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
