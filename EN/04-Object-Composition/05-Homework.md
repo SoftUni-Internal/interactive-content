@@ -493,7 +493,7 @@ yes
 
 [slide]
 # Problem: Sum
-[code-task title="Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Sum" taskId="js-advanced-DOM-Manipulations-Sum" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -542,42 +542,53 @@ You are given the following HTML for testing purposes\:
 ```
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+document.body.innerHTML = '\<input type="text" id="num1" /\>' +
+    '\<input type="text" id="num2" /\>' +
+    '\<input type="text" id="result" readonly /\>';
 
+let obj = result();
+
+obj.init("\#num1","\#num2",'\#result');
+let num1 = \\$('\#num1');
+let num2 = \\$('\#num2');
+let res = \\$('\#result');
+num1.val(5);
+num2.val(3);
+obj.add();
+expect(res.val()).to.equal('8',"Incorrect result");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+document.body.innerHTML = '\<input type="text" id="num1" /\>' +
+    '\<input type="text" id="num2" /\>' +
+    '\<input type="text" id="result" readonly /\>';
 
+let obj = result();
+
+obj.init("\#num1","\#num2",'\#result');
+let num1 = \\$('\#num1');
+let num2 = \\$('\#num2');
+let res = \\$('\#result');
+num1.val(-13);
+num2.val(5);
+obj.subtract();
+expect(res.val()).to.equal('-18',"Incorrect result");
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
