@@ -1,13 +1,3 @@
-# Problem: Nether Realms
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421821336" default /]
-[stream language="RO" videoId="436028985"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Problem: Nether Realms

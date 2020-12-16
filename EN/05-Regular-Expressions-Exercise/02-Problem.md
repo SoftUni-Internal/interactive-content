@@ -1,13 +1,4 @@
-# Problem: Bar Income
 
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421818955" default /]
-[stream language="RO" videoId="436029066"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Problem: Bar Income
