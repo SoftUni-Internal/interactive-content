@@ -2,6 +2,10 @@
 [slide]
 # Lesson Introduction
 
+[vimeo-video]
+[stream language="EN" videoId="489818589/f0ee739d40" default /]
+[stream language="RO" videoId="489818589/f0ee739d40"  /]
+[/video-vimeo]
 
 ## In this lesson you will learn about:
 
