@@ -165,7 +165,7 @@ clearInterval(intervalID);
 
 [slide]
 # Problem: Add Delete
-[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -225,7 +225,7 @@ yes
 
 [slide]
 # Solution: Add Delete
-[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```js
