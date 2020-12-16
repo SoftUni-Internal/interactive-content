@@ -1,8 +1,13 @@
 # Regular Expressions In JavaScript
 
 [slide]
-
 # Regex in JS
+
+
+[vimeo-video]
+[stream language="EN" videoId="489818276/f505c53905" default /]
+[stream language="RO" videoId="489818276/f505c53905"  /]
+[/video-vimeo]
 
 In "JavaScript", we can construct a regular expression in two ways:
 
@@ -21,8 +26,15 @@ It is used when the pattern is from another source.
 ```js
 let regExp = new RegExp('[A-Za-z]+', 'g');
 ```
+[/slide]
 
-## Validating string by pattern
+[slide]
+# Validating string by pattern
+
+[vimeo-video]
+[stream language="EN" videoId="489818324/1f73bd06a2" default /]
+[stream language="RO" videoId="489818324/1f73bd06a2"  /]
+[/video-vimeo]
 
 The first method we will look at is the `.test()`. It simply determines whether there is a match.
 
@@ -34,8 +46,15 @@ let regex = /\d{4}-\d{2}-\d{2}/g;
 let containsValidDate = regex.test(text);
 console.log(containsValidDate);
 ```
+[/slide]
 
-## Checking for matches
+[slide]
+# Checking for matches
+
+[vimeo-video]
+[stream language="EN" videoId="489818336/9c43130f55" default /]
+[stream language="RO" videoId="489818336/9c43130f55"  /]
+[/video-vimeo]
 
 Use the `.match()` method to check for matches. It returns an array, which can be iterated easily after that.
 
@@ -49,8 +68,15 @@ console.log(matches.length);
 console.log(matches[0]);
 console.log(matches[1]);
 ```
+[/slide]
 
-## Using the Exec() method
+[slide]
+# Using the Exec() method
+
+[vimeo-video]
+[stream language="EN" videoId="489818381/0d46d8c337" default /]
+[stream language="RO" videoId="489818381/0d46d8c337"  /]
+[/video-vimeo]
 
 If the match succeeds, the `.exec()` method returns an array with extra properties\: "index" and "input". 
 
@@ -71,8 +97,16 @@ while (result !== null) {
     result = regex.exec(text);
 }
 ```
+[/slide]
 
-## Replacing with regex
+
+[slide]
+# Replacing with regex
+
+[vimeo-video]
+[stream language="EN" videoId="489818394/353321baad" default /]
+[stream language="RO" videoId="489818394/353321baad"  /]
+[/video-vimeo]
 
 We can use the `.replace(regex, stringReplacement)` method with regular expressions.
 
@@ -85,8 +119,15 @@ let regex = /\d{3}/g;
 let result = text.replace(regex, replacement);
 console.log(result);
 ```
+[/slide]
 
-## MatchAll method
+[slide]
+# MatchAll method
+
+[vimeo-video]
+[stream language="EN" videoId="489818400/49ac9835cd" default /]
+[stream language="RO" videoId="489818400/49ac9835cd"  /]
+[/video-vimeo]
 
 The method `.matchAll()` returns an iterator of all results matching a string against a regular expression, including capturing groups.
 
@@ -101,8 +142,15 @@ const array = [...str.matchAll(regexp)];
 console.log(array[0][0]);
 console.log(array[1][0]);
 ```
+[/slide]
 
-## Spliting with regex
+
+[slide]
+# Spliting with regex
+[vimeo-video]
+[stream language="EN" videoId="489818451/1a9e36239e" default /]
+[stream language="RO" videoId="489818451/1a9e36239e"  /]
+[/video-vimeo]
 
 The method `.split()` splits the text by pattern and returns an array of strings.
 
@@ -116,8 +164,11 @@ console.log(result);
 [/slide]
 
 [slide]
-
 # Problem: Match Full Name
+[vimeo-video]
+[stream language="EN" videoId="489818467/fd0f9e6999" default /]
+[stream language="RO" videoId="489818467/fd0f9e6999"  /]
+[/video-vimeo]
 
 [code-task title="Match Full Name" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -145,7 +196,7 @@ A valid full name has the following characteristics:
 - The two words are separated by a single space.
 
 To help you out, we have outlined several steps:
-1.	Use an online regex tester like https\:\/\/regex101\.com\/ 
+1.	Use an online regex tester like: [Regex101](https://regex101.com) 
 2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\).
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\).
 4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z.
@@ -156,12 +207,10 @@ This will ensure that what precedes and what follows the match is a word boundar
 # Example
 
 **Input**
-
-`['Ivan Ivanov, Ivan ivanov, ivan Ivanov, IVan Ivanov, Test Testov, Ivan  Ivanov']`
+`['John smith, john smith, john Smith, JOhn Smith, JohN smith, John Smith']`
 
 **Output**
-
-Ivan Ivanov Test Testov
+John Smith
 
 [/task-description]
 [tests]
@@ -261,13 +310,18 @@ Ivan Ivanov Ivan Ivanov
 
 
 [slide]
-
 # Solution: Match Full Name
+
+[vimeo-video]
+[stream language="EN" videoId="489818469/5176096631" default /]
+[stream language="RO" videoId="489818469/5176096631"  /]
+[/video-vimeo]
 
 [code-task title="Match Full Name" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
+// Video code
 function solve(input) {
     input = input[0];
     let arrResult = [];
@@ -297,7 +351,7 @@ A valid full name has the following characteristics:
 - The two words are separated by a single space.
 
 To help you out, we have outlined several steps:
-1.	Use an online regex tester like https\:\/\/regex101\.com\/ 
+1.	Use an online regex tester like: [Regex101](https://regex101.com) 
 2.	Check out how to use character sets \(denoted with square brackets \- \"\[\]\"\).
 3.	Specify that you want two words with a space between them \(the space character \' \', and not any whitespace symbol\).
 4.	For each word, specify that it should begin with an uppercase letter, using a character set. The desired characters are in a range\: from A to Z.
@@ -308,12 +362,10 @@ This will ensure that what precedes and what follows the match is a word boundar
 # Example
 
 **Input**
-
-`['Ivan Ivanov, Ivan ivanov, ivan Ivanov, IVan Ivanov, Test Testov, Ivan  Ivanov']`
+`['John smith, john smith, john Smith, JOhn Smith, JohN smith, John Smith']`
 
 **Output**
-
-Ivan Ivanov Test Testov
+John Smith
 
 [/task-description]
 [tests]
@@ -412,8 +464,11 @@ Ivan Ivanov Ivan Ivanov
 [/slide]
 
 [slide]
-
 # Problem: Match Phone Number
+[vimeo-video]
+[stream language="EN" videoId="489818535/165ce68434" default /]
+[stream language="RO" videoId="489818535/165ce68434"  /]
+[/video-vimeo]
 
 [code-task title="Match Phone Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -556,16 +611,29 @@ You can use the following RegEx properties to help with the matching:
 [slide]
 
 # Solution: Match Phone Number
+[vimeo-video]
+[stream language="EN" videoId="489818538/577d03f267" default /]
+[stream language="RO" videoId="489818538/577d03f267"  /]
+[/video-vimeo]
+
+[vimeo-video]
+[stream language="EN" videoId="489818761/ed44d0ae3b" default /]
+[stream language="RO" videoId="489818761/ed44d0ae3b"  /]
+[/video-vimeo]
 
 [code-task title="Match Phone Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
+// Different video code
 function solve(input) {
-    input=input[0];
-    let pattern = /\+359([ -])2\1[0-9]{3}\1[0-9]{4}\b/g;
+
+   let phoneNumber = input[0];
+
+    let pattern = /\+359([ -])2\1\d{3}\1\d{4}\b/g;
     let answer = [];
-    while ((number = pattern.exec(input)) !== null) {
+
+    while ((number = pattern.exec(phoneNumber)) !== null) {
         answer.push(number[0]);
     }
     console.log(answer.join(", "));
