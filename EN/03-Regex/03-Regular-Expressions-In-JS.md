@@ -616,27 +616,19 @@ You can use the following RegEx properties to help with the matching:
 [stream language="RO" videoId="489818538/577d03f267"  /]
 [/video-vimeo]
 
-[vimeo-video]
-[stream language="EN" videoId="489818761/ed44d0ae3b" default /]
-[stream language="RO" videoId="489818761/ed44d0ae3b"  /]
-[/video-vimeo]
-
 [code-task title="Match Phone Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-// Different video code
+// Video code
 function solve(input) {
-
-   let phoneNumber = input[0];
-
+    let validNumber = [];
     let pattern = /\+359([ -])2\1\d{3}\1\d{4}\b/g;
-    let answer = [];
 
-    while ((number = pattern.exec(phoneNumber)) !== null) {
-        answer.push(number[0]);
+    while ((validNumber = pattern.exec(input)) !== null) {
+        validNumber.push(validNumber[0]);
     }
-    console.log(answer.join(", "));
+    console.log(validNumber.join(", "));
 }
 ```
 
