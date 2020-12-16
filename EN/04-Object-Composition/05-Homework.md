@@ -229,7 +229,7 @@ yes
 
 [slide]
 # Problem: List Processor
-[code-task title="Problem: List Processor" taskId="js-advanced-DOM-Manipulations-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: List Processor" taskId="js-advanced-DOM-Manipulations-List-Processor" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
