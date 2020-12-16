@@ -38,7 +38,7 @@ Between the two tags, there is the text value of the element.
 
 # HTML DOM
 
-The HTML DOM is an Object Model for the HTML document.
+The HTML DOM is an **Object Model** for the HTML document.
 
 It defines:
 
@@ -50,4 +50,7 @@ It defines:
 
 - `Events`
 
+Here is an example of what the HTML DOM looks like:
+
+[image assetsSrc="Js-advanced-DOM-1.png" /]
 [/slide]

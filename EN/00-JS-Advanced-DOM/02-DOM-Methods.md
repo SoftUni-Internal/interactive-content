@@ -76,7 +76,7 @@ And that way, the first title element, which is `Introduction to DOM`, can be pr
 
 HTML DOM properties are values that you can `get` or `set`:
 
-```js live
+```js
 <html>
   <head>
     <title>Intro to DOM</title>
@@ -94,6 +94,10 @@ HTML DOM properties are values that you can `get` or `set`:
   </body>
 </html>
 ```
+
+The given code produces the following result:
+
+[image assetsSrc="screenshot.jpg" /]
 
 With this example ` - DONE` is added to the end of `DOM Properties example` and as a result, there is `DOM Properties example - DONE`.
 
