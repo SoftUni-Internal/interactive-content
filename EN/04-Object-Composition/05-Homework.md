@@ -593,7 +593,7 @@ yes
 
 [slide]
 # Problem: Heroes
-[code-task title="Heroes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Heroes" taskId="js-advanced-DOM-Manipulations-Heroes" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -621,7 +621,6 @@ Mages also have `name`, `health = 100` and `mana = 100`.
 Every mage can cast spells. When a spell is casted the mage's mana decreases by 1 and the following message is printed on the console:
 
 `${mage's name} cast ${spell}`
-
 
 # Example
 **Input**
@@ -653,42 +652,47 @@ Scorcher 2 slashes at the foe\!
 97
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+let create = result();
 
+const scorcher = create.mage("Scorcher");
+scorcher.cast("fireball")
+scorcher.cast("thunder")
+scorcher.cast("light")
+
+let act4 = scorcher.mana;
+let exp4 = 97;
+assert.equal(act4,exp4,"4");
+let act1 = scorcher.health;
+assert.equal(100,act1);
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+let create = result();
+const scorcher2 = create.fighter("Scorcher 2");
+scorcher2.fight();
+let act = scorcher2.stamina;
+let exp = 99;
+assert.equal(act,exp,"2");
 
+let act1 = scorcher2.name;
+let exp1 = "Scorcher 2"
+assert.equal(act1,exp1);
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
