@@ -1,8 +1,11 @@
 # Quantifiers
 
 [slide]
-
 # Quantifiers
+[vimeo-video]
+[stream language="EN" videoId="489818790/4ce49729f2" default /]
+[stream language="RO" videoId="489818790/4ce49729f2"  /]
+[/video-vimeo]
 
 Quantifiers indicate numbers of characters or expressions to match.
 
@@ -67,8 +70,14 @@ Example: `1000, 10000 or 100000`
     var result = str.match(pattern);
     console.log(result);
 ```
+[/slide]
+[slide]
+# Grouping Constructs
 
-## Grouping Constructs
+[vimeo-video]
+[stream language="EN" videoId="489818792/d2321e70c6" default /]
+[stream language="RO" videoId="489818792/d2321e70c6"  /]
+[/video-vimeo]
 
 A part of a pattern can be enclosed in parentheses (...). 
 
@@ -136,8 +145,15 @@ The pipe symbol `|` in the example means logical "or".
     console.log(result[0]);
     console.log(result[1]);
 ```
+[/slide]
+[slide]
+# Backreferences
 
-## Backreferences
+
+[vimeo-video]
+[stream language="EN" videoId="489818270/3eedc1f66f" default /]
+[stream language="RO" videoId="489818270/3eedc1f66f"  /]
+[/video-vimeo]
 
 A group can be referenced in the pattern, using \N, where N is the group number.
 
@@ -160,8 +176,11 @@ To match the second `#`, which is after the word "there" use \1, where the numbe
 [/slide]
 
 [slide]
-
 # Problem: Match Dates
+[vimeo-video]
+[stream language="EN" videoId="489818844/8c5a03bb11" default /]
+[stream language="RO" videoId="489818844/8c5a03bb11"  /]
+[/video-vimeo]
 
 [code-task title="Match Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -196,13 +215,11 @@ Use a group backreference to check for this.
 
 **Input**
 
-`['13/Jul/1928, 10-Nov-1934, 
-, 01/Jan-1951,f 25.Dec.1937 
-23/09/1973, 1/Feb/2016']`
+`['13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 1/Feb/2016']`
 
 **Output**
 
-Day\: 13\, Month\: Jul\, Year\: 1928 
+Day\: 13\, Month\: Jul\, Year\: 1928
 
 Day\: 10\, Month\: Nov\, Year\: 1934
 
@@ -335,8 +352,11 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 [/slide]
 
 [slide]
-
 # Solution: Match Dates
+[vimeo-video]
+[stream language="EN" videoId="489818853/c94449ec19" default /]
+[stream language="RO" videoId="489818853/c94449ec19"  /]
+[/video-vimeo]
 
 [code-task title="Match Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -378,9 +398,7 @@ Use a group backreference to check for this.
 
 **Input**
 
-`['13/Jul/1928, 10-Nov-1934, 
-, 01/Jan-1951,f 25.Dec.1937 
-23/09/1973, 1/Feb/2016']`
+`['13/Jul/1928, 10-Nov-1934, , 01/Jan-1951,f 25.Dec.1937 23/09/1973, 1/Feb/2016']`
 
 **Output**
 
