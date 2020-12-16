@@ -10,7 +10,7 @@ In this lesson we learned:
 
 - How to **write basic code**
 
-- A program consists of **sequences of commands. **
+- A program consists of **sequences of commands.**
 
 - JavaScript is a **dynamic language**, which is executed by an **interpreter** 
 

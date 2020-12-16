@@ -39,12 +39,11 @@ Computer programs represent **a sequence of commands** which are written in a ce
 
 Example of **computer program** in JS: 
 
-```js live no-template
-function calculateArea() {
-  let size = 5;
-  console.log("Size = " + size);
-  console.log("Area = " + size * size);
-}
+```js live
+let size = 5;
+
+console.log("Size = " + size);
+console.log("Area = " + size * size);
 ```
 The above program defines a function which holds a sequence of **3 commands** and calls it afterwards: 
 
@@ -103,12 +102,11 @@ This is a very simple example of an algorithm which finds smallest number in an 
 
 We will discuss arrays later.
 
-``` js live no-template
-function findMinNumber() {
-  const arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4]
-  const min = Math.min(...arr)
-  console.log(min)
-}
+``` js live
+let arr = [15, 2, 42, 55, 123, 8, 52, 67, 75, 4];
+let min = Math.min(...arr);
+
+console.log(min)
 ```
 [/slide]
 
