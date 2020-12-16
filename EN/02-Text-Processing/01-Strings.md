@@ -48,11 +48,11 @@ console.log(`${concatenated}`);
 # Accessing Strings
 
 
-**Strings** are read-only chains of characters; this means that we cannot change them. 
+**Strings** are read-only chains of characters, this means that we cannot change them. 
 
 We **access** them by their index. There are two ways of doing this .
 
--  The first one is by using indexing operator `[]`
+- The first one is by using indexing operator `[]`
 
 ```js live
 let hi = 'Hi, JS';
@@ -62,7 +62,9 @@ console.log(hi[4]);
 
 This one will also return `J` because the two ways of accessing indexes are identical.  
 
--  We can access a **string** also with the method `charAt()`. And it will look like that:
+-  We can access a **string** also with the method `charAt()`.
+
+And it will look like that:
 
 ```js live
 let hi = 'Hi, JS';

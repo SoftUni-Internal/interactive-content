@@ -36,7 +36,9 @@ let concatenated = greet.concat(name);
 console.log(concatenated);
 ```
 
-In the end, we see that both ways will return an **identical string**. That is because `+` and `+=` and the `concat()` method do the same but in different ways. 
+In the end, we see that both ways will return an **identical string**.
+
+That is because `+` and `+=` and the `concat()` method do the same but in different ways.
 
 [/slide]
 
@@ -54,8 +56,8 @@ These two methods are **case sensitive**, this means that if we search for a wor
 
 Both of them can **take up to two parameters:** 
 
--  The first one is the word that it searches for.
--  The second one is the starting index.
+- The first one is the word that it searches for.
+- The second one is the starting index.
 
 Here is an example of using `indexOf()`
 
@@ -76,7 +78,9 @@ console.log(str.indexOf('js'));
 ```
 Now it returns `-1` because **indexOf** is case sensitive and does not detect **js** as **JS** 
 
-Let us check `lastIndexOf()`. It is almost the same as **indexOf**, but with the difference that **lastIndexOf** searches for the last appearance.
+Let us check `lastIndexOf()`. 
+
+It is almost the same as **indexOf**, but with the difference that **lastIndexOf** searches for the last appearance.
 
 And let us see how it works:
 
@@ -87,7 +91,9 @@ console.log(str.lastIndexOf('e'));
 console.log(str.lastIndexOf('a'));
 ```
 
-The first `console.log` returns **10**, because this is the index where **e** last appears. And the second returns `-1` because it will not find anything.
+The first `console.log` returns **10**, because this is the index where **e** last appears. 
+
+And the second returns `-1` because it will not find anything.
 
 [/slide]
 
@@ -101,10 +107,16 @@ The first `console.log` returns **10**, because this is the index where **e** la
 
 To **extract** a substring, we can use `substring()`. This method has two parameters:
 
--  The first one is the start index.
--  The second one is the end index.
+- The first one is the start index.
+- The second one is the end index.
 
-And it will return the part from the **start index** till the **end index**. But if we don't give the **second parameter**, it will return the part between the **start index** and the **end**. **Substring** will not modify the original string, it will return a new one. This means that we need to assign it to a variable to work.
+And it will return the part from the **start index** till the **end index**. 
+
+But if we don't give the **second parameter**, it will return the part between the **start index** and the **end**. 
+
+**Substring** will not modify the original string, it will return a new one. 
+
+This means that we need to assign it to a variable to work.
 
 Here are some examples:
 
@@ -117,8 +129,11 @@ let subStrTwo = str.substring(5)
 console.log(subStrOne);
 console.log(subStrTwo);
 ```
-Here **subStrOne** will return **to** because this is the part that is in the range of the start and end index. But **subStrTwo** returns everything from **to** to the end. That is because we did not give it the second parameter, which is the **end** index.
+Here **subStrOne** will return **to** because this is the part that is in the range of the start and end index.
 
+But **subStrTwo** returns everything from **to** to the end.
+
+That is because we did not give it the second parameter, which is the **end** index.
 
 [/slide]
 
@@ -366,9 +381,11 @@ JAko88/(()
 
 When we want to separate words in a string, we use the `split()` method.
 
-It divides a **string** into an ordered list using a pattern \(separator\), which is the first parameter and returns an **array**. 
+It divides a **string** into an ordered list using a pattern \(separator\), which is the first parameter and returns an **array**.
 
-We have the option to add a second parameter, which is the **limit**. It sets the **limit** of **indexes** in the final **array**.
+We have the option to add a second parameter, which is the **limit**. 
+
+It sets the **limit** of **indexes** in the final **array**.
 
 Here an example on using `split()`
 
@@ -387,8 +404,8 @@ To find a specific part of a string, we use the `includes()` method.
 
 This method takes two parameters:
 
--  The string we are searching for. 
--  Position at which to start searching. This one is optional.
+- The string we are searching for. 
+- Position at which to start searching. This one is optional.
 
 It takes the **string** and searches for it in the main one.
 
@@ -423,7 +440,9 @@ It receives two parameters:
 -  String
 -  Count
 
-After it is called on a specific **string**, **repeat** will take the **string** that we gave and it will **multiply** it by the **number** that we also pass to it. After that, it will **return** a **concatenated string** of all the copies.
+After it is called on a specific **string**, **repeat** will take the **string** that we gave and it will **multiply** it by the **number** that we also pass to it. 
+
+After that, it will **return** a **concatenated string** of all the copies.
 
 Here is an example on how **repeat** works:
 
@@ -642,7 +661,7 @@ So that is why we have `trimStart()` and `trimEnd()`.
 
 If we want to remove the whitespaces only at the **beginning** or the **end**, we can use one of these.
 
-All of these three methods do not affect the value of the original string. 
+All of these three methods do not affect the value of the original string.
 
 So we will have to assign them to a variable.
 
@@ -690,12 +709,12 @@ If they find the substring, they will return true, and false if they do not.
 
 **StartsWith** can receive two parameters: 
 
--  The word that it searches for in the string.
--  And **position** from which index to start. This parameter is optional.
+- The word that it searches for in the string.
+- And **position** from which index to start. This parameter is optional.
 
-**EndsWith** also can receive two parameters. 
+**EndsWith** also can receive two parameters.
 
-But the second one is **length** and it's optional. 
+But the second one is **length** and it is optional.
 
 If the **second parameter is given**, it will tell from which index to search.
 
@@ -731,9 +750,9 @@ In the first example the **console.logs**, will return `true`, but in the second
 
 If we want to **add** a string **a certain number of times** at **the beginning** or the **end** of another string, we can use the `padStart()` or `padEnd()` methods.
 
-They will concatenate the substring, which is one of the two parameters that we pass to them until they reach the length, which is the other parameter that we gave them.
+They will **concatenate the substring**, which is one of the two parameters that we pass to them until they reach the length, which is the other parameter that we gave them.
 
-We also need to assign them to a variable because they won't modify the original string.
+We also need to assign them to a variable because **they will not modify the original string.**
 
 First let us see how `padStart()` works:
 
@@ -774,9 +793,9 @@ function countStringOccurrences(input){
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a piece of text and a string that you need to search for in it. 
+Write a function that receives a piece of text and a string that you need to search for in it.
 
-Print all the occurrences of that word in the string. 
+Print all the occurrences of that word in the string.
 
 # Example
   | **Input** | **Output** |
@@ -875,7 +894,7 @@ function countStringOccurrences(input){
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a text and a string that you need to search. 
+Write a function that receives a text and a string that you need to search.
 
 Print all the occurrences of that word in the string.
 

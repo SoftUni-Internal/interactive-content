@@ -10,7 +10,7 @@
 
 - **Strings** are immutable series of **characters**
 
-- They have built-in methods that we use to process them.
+- They have built\-in methods that we use to process them.
 
 - Examples of built\-in methods:
 
