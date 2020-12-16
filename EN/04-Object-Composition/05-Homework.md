@@ -1420,7 +1420,7 @@ yes
 
 [slide]
 # Problem: Sorted List
-[code-task title="Sorted List" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Sorted List" taskId="js-advanced-DOM-Manipulations-Sorted List" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1465,42 +1465,171 @@ function sortedList() {
 ```
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
+result = result();
+expect(result.hasOwnProperty('add')).to.equal(true, "Function add() was not found");
+expect(result.hasOwnProperty('remove')).to.equal(true, "Function remove() was not found");
+expect(result.hasOwnProperty('get')).to.equal(true, "Function get() was not found");
 
+// Instantiate and test functionality
+var myList = result;
+expect(myList.hasOwnProperty('size')).to.equal(true, "Property size was not found");
+
+myList.add(5);
+expect(myList.get(0)).to.equal(5, "Element wasn't added");
+
+myList.add(3);
+expect(myList.get(0)).to.equal(3, "Collection wasn't sorted");
+
+myList.remove(0);
+expect(myList.get(0)).to.equal(5, "Element wasn't removed");
+expect(myList.size).to.equal(1, "Element wasn't removed");
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+result = result();
+expect(result.hasOwnProperty('add')).to.equal(true, "Function add() was not found");
+expect(result.hasOwnProperty('get')).to.equal(true, "Function get() was not found");
 
+var myList = result;
+expect(myList.hasOwnProperty('size')).to.equal(true, "Property size was not found");
+
+// Generate random list of 20 numbers
+var expectedArray = \[\];
+for (let i = 0; i \< 20; i++) \{
+    expectedArray.push(Math.floor(Math.random() \* 200) - 100);
+\}
+// Add to collection
+for (let i = 0; i \< expectedArray.length; i++) \{
+    myList.add(expectedArray\[i\]);
+\}
+expect(myList.size).to.equal(20, "Elements weren't added");
+// Sort array
+expectedArray.sort((a, b) =\> a - b);
+// Compare with collection
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Array wasn't sorted");
+\}
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+result = result();
+expect(result.hasOwnProperty('remove')).to.equal(true, "Function remove() was not found");
+expect(result.hasOwnProperty('get')).to.equal(true, "Function get() was not found");
 
+var myList = result;
+expect(myList.hasOwnProperty('size')).to.equal(true, "Property size was not found");
+
+for (let i = 0; i \< 10; i++) \{
+    myList.add(i);
+\}
+
+myList.remove(9);
+expect(myList.size).to.equal(9, "Element wasn't removed");
+var expectedArray = \[0, 1, 2, 3, 4, 5, 6, 7, 8\];
+// Compare with collection
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Element wasn't removed");
+\}
+myList.remove(5);
+expect(myList.size).to.equal(8, "Element wasn't removed");
+expectedArray = \[0, 1, 2, 3, 4, 6, 7, 8\];
+// Compare with collection
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Element wasn't removed");
+\}
+myList.remove(0);
+expect(myList.size).to.equal(7, "Element wasn't removed");
+expectedArray = \[1, 2, 3, 4, 6, 7, 8\];
+// Compare with collection
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Element wasn't removed");
+\}
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+var myList = result();
+var failsafe = 'failsafe';
 
+try \{
+    failsafe = myList.get(0) ? myList.get(0) : 'failsafe';
+\} catch (e) \{\}
+
+expect(myList.size).to.equal(0, "Unexpected behaviour with empty collection.");
+expect(failsafe).to.equal('failsafe', "Unexpected behaviour with empty collection.");
+
+try \{
+    myList.remove(0);
+\} catch (e) \{\}
+
+expect(myList.size).to.equal(0, "Unexpected behaviour with empty collection.");
 [/input]
 [output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+var myList = result();
+var failsafe = 'failsafe';
 
+for (let i = 0; i \< 10; i++) \{
+    myList.add(i);
+\}
+
+try \{
+    failsafe = myList.get(-1) ? myList.get(-1) : 'failsafe';
+\} catch (e) \{\}
+expect(myList.size).to.equal(10, "Unexpected behaviour with negative index.");
+expect(failsafe).to.equal('failsafe', "Unexpected behaviour with negative index.");
+
+try \{
+    failsafe = myList.get(11) ? myList.get(11) : 'failsafe';
+\} catch (e) \{\}
+expect(myList.size).to.equal(10, "Unexpected behaviour with index outside of range.");
+expect(failsafe).to.equal('failsafe', "Unexpected behaviour with index outside of range.");
+
+var expectedArray = \[0, 1, 2, 3, 4, 5, 6, 7, 8, 9\];
+try \{
+    myList.remove(-1);
+\} catch (e) \{\}
+
+expect(myList.size).to.equal(10, "Unexpected behaviour with index outside of range.");
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Unexpected behaviour with index outside of range.");
+\}
+
+try \{
+    myList.remove(11);
+\} catch (e) \{\}
+
+expect(myList.size).to.equal(10, "Unexpected behaviour with index outside of range.");
+for (let i = 0; i \< expectedArray.length; i++) \{
+    expect(myList.get(i)).to.equal(expectedArray\[i\], "Unexpected behaviour with index outside of range.");
+\}
+[/input]
+[output]
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide]
