@@ -225,7 +225,6 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [/code-task]
 [/slide]
 
-[slide]
 
 [slide hideTitle]
 # Problem: Chars to String
