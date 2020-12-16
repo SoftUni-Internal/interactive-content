@@ -6,7 +6,7 @@
 [stream language="RO" videoId="489817252/92c1c7b52f"  /]
 [/video-vimeo]
 
-## What you learned in this lesson
+## In this lesson you learned:
 
 - **Strings** are an immutable series of **characters**
 

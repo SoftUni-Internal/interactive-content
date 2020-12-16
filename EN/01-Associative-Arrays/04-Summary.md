@@ -7,6 +7,8 @@
 [stream language="RO" videoId="489798990/f378fc8dd7"  /]
 [/video-vimeo]
 
+## In this lesson you learned:
+
 - We can use both **Objects** and **Maps** to store **key-value** pairs.
 ```js
 let myMap = new Map([
