@@ -1,8 +1,12 @@
 # Regular Expressions
 
 [slide]
-
 # What Are Regular Expressions?
+
+[vimeo-video]
+[stream language="EN" videoId="489818611/b94191c1c8" default /]
+[stream language="RO" videoId="489818611/b94191c1c8"  /]
+[/video-vimeo]
 
 "Regular expressions" are patterns used to match character combinations in strings.
 
@@ -12,7 +16,7 @@ They offer a concise syntax to carry out complex tasks that otherwise would requ
 
 To test our regular expressions we can use the following site:
 
-www.regex101.com
+[Regex101](www.regex101.com)
 
 When working with regular expressions we use paterns to extract only the data we need.
 
@@ -65,6 +69,6 @@ In regex, we also have several character classes that provide us with a shorthan
 | \d | Matches any decimal digit | \[0\-9\] |
 | \D | Matches any non-decimal character | \[\^d\] |
 
-If you want to read more about regular expressins: https://www.regular-expressions.info/
+If you want to read more about regular expressins:[Regular Expressions](https://www.regular-expressions.info/)
 
 [/slide]
