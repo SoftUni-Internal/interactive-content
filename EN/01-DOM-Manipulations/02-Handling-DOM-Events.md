@@ -185,17 +185,11 @@ yes
 
 [slide]
 # Solution: List Of Items
-[code-task title="List Of Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-
-```js
+```
 function solve(input){
-  let item = document.getElementById("newItemText").value;
-  let ul = document.getElementById("items");
-  let li = document.createElement("li");
-  li.innerHTML = item;
-  ul.appendChild(li);
-  document.getElementById("newItemText").value = "";
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -207,57 +201,66 @@ Write a function that **reads** the text inside an input field and **appends** t
 [image assetsSrc="List-Of-Items.png" /]
 
 [/task-description]
+[code-io /]
 [tests]
 [test]
 [input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add" onclick="addItem()"\>
+    \</main\>
+`;
 
+\\$('\#newItemText').val('new mode');
+result();
+
+\\$('\#newItemText').val('Fourth Grade');
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 4, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item contains something different');
 [/input]
 [output]
-
+yes
 [/output]
 [/test]
 [test]
 [input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add""\>
+    \</main\>
+`;
 
+document.getElementById('newItemText').value = 'new mode';
+
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 3, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
 [/input]
 [output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
+yes
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 
 [/slide]
