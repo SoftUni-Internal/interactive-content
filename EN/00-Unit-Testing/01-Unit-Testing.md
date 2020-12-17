@@ -75,12 +75,12 @@ JS Unit Testing:
 - Unit.js
 - Jasmine
 
-Assertion frameworks that perform checks
+Assertion frameworks that perform checks.
 - Chai
 - Assert.js
 - Should.js
 
-Mocking frameworks
+Mocking frameworks.
 - Sinon
 - JMock
 - Mockito
