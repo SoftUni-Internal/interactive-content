@@ -1,4 +1,4 @@
-# Programming Fundamentals with Java
+# JavaScript Fundamentals - Methods and Arrays
 
 ## Description
 This course teaches the **basics of coding**, such as:
