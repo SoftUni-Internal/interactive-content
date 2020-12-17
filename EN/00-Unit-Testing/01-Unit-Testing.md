@@ -2,7 +2,7 @@
 
 [slide]
 
-# What is Unite Testing?
+# What is Unit Testing?
 
 A unit test is a piece of code that checks whether a certain functionality works as expected.
 
