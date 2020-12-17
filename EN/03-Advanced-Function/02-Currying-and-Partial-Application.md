@@ -35,7 +35,7 @@ Some example uses of **currying** include:
 
 Take a look at this example:
 
-```js live
+```js live 
 function add(a, b, c) {
     return a + b + c;
 }
@@ -47,7 +47,7 @@ function partial(func, a, b) {
 }
 
 const newAdd = partial(add, 3);
-newAdd(5, 2);
+console.log(newAdd(5, 2));
 ```
 
 The original `add()` function takes in three parameters.
