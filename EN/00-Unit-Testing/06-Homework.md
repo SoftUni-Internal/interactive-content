@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Even Or Odd
-[code-task title="Problem: Even Or Odd" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -75,10 +75,6 @@ describe("Is Odd Or Even", function(){
     });
 })
 ```
-
-# Examples
-
-## Examples
 
 [/task-description]
 [code-io /]
@@ -174,7 +170,7 @@ Test Passed!
 
 [slide]
 # Problem: Char Lookup
-[code-task title="Problem: Char Lookup" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -273,10 +269,6 @@ describe("Character Look Up", function(){
     });
 })
 ```
-
-# Examples
-
-## Examples
 
 [/task-description]
 [code-io /]
@@ -414,7 +406,7 @@ Test Passed!
 
 [slide]
 # Problem: Math Enforcer
-[code-task title="Problem: Math Enforcer" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -488,10 +480,6 @@ All test cases you write should reference this variable.
 Hints
 - Test how the program behaves when passing in negative values.
 - Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers.
-
-# Examples
-
-## Examples
 
 [/task-description]
 [code-io /]
@@ -898,7 +886,7 @@ Test Passed!
 
 [slide]
 # Problem: String Builder
-[code-task title="Problem: String Builder" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -963,10 +951,6 @@ An instance of the class should support the following operations:
 - Function `remove(startIndex, length)` - removes elements from the storage, starting at the given index (inclusive), length number of characters (there is no need to check if the index is in range).
 - Function `toString()` - returns a string with all elements joined by an empty string.
 - All passed in arguments should be strings. If any of the parameters is not a string, throws a type error with the following message: "Argument must be a string".
-
-# Examples
-
-## Examples
 
 **Input**
 ```js
@@ -1512,7 +1496,7 @@ Test Passed!
 
 [slide]
 # Problem: Payment Package
-[code-task title="Problem: Payment Package" taskId="8a146d85-e504-48a4-8331-5a594f4f988b" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -1612,9 +1596,7 @@ When creating an instance, or changing any of the property values, the parameter
 
 If any of the requirements are not met, the operation must throw an error.
 
-# Examples
-
-## Examples
+# Example
 
 **Input**
 
