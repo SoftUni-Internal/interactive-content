@@ -44,7 +44,7 @@ In **Multilevel inheritance**, we inherited the **main** class through a class i
 
 So we will extend the **parent** and the **grandparent** classes.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance(2).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(2).png" /]
 
 Here is an example:
 
@@ -66,7 +66,7 @@ In **Hierarchical inheritance**, we have **classes** that are extended **multipl
 
 The downside is that if we change something in the **parent** class, we need to change it in all of its **children**.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance(3).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(3).png" /]
 
 Here is an example:
 
@@ -90,6 +90,6 @@ All of them will have the feature that **pet** has.
 
 This is not supported in Javascript.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance(4).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(4).png" /]
 
 [/slide]
