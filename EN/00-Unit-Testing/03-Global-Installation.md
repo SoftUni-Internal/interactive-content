@@ -8,7 +8,7 @@ To install frameworks and libraries globally, use the Windows "CMD" or Visual St
 
 Open an instance of the terminal in Visual Studio Code.
 
-Type in the following commands to instal **Mocha** and **Chai** globally:
+Type in the following commands to install **Mocha** and **Chai** globally:
 
 ```js
 npm install -g mocha
