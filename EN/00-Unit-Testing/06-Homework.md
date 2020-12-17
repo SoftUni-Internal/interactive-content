@@ -1627,17 +1627,17 @@ try {
 
 **Output**
 
-`Error: Value must be a non-negative number`
-`Package: HR Services`
-`- Value (excl. VAT): 1500`
-`- Value (VAT 20%): 1800`
-`Package: Consultation`
-`- Value (excl. VAT): 800`
-`- Value (VAT 20%): 960`
-`Package: Partnership Fee`
-`- Value (excl. VAT): 7000`
-`- Value (VAT 20%): 8400`
-`Error: Active status must be a boolean`
+`Error: Value must be a non-negative number
+Package: HR Services
+\- Value (excl. VAT): 1500
+\- Value (VAT 20%): 1800
+Package: Consultation
+\- Value (excl. VAT): 800
+\- Value (VAT 20%): 960
+Package: Partnership Fee
+\- Value (excl. VAT): 7000
+\- Value (VAT 20%): 8400
+Error: Active status must be a boolean`
 
 
 [/task-description]
