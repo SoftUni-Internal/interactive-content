@@ -952,6 +952,8 @@ An instance of the class should support the following operations:
 - Function `toString()` - returns a string with all elements joined by an empty string.
 - All passed in arguments should be strings. If any of the parameters is not a string, throws a type error with the following message: "Argument must be a string".
 
+# Example
+
 **Input**
 ```js
 let str = new StringBuilder('hello');
