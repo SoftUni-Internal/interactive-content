@@ -14,19 +14,19 @@
 
    -  Literal
 
-   ```js live
+   ```js
    let foo = {
       me: 'Hi!',
       print: function () {
          console.log(this.me);
       },
    };
-   bar.print();
+  
    ```
 
    -  Constructor
 
-   ```js live
+   ```js 
    function Foo() {
       this.me = 'Hi!';
       this.print = function () {
@@ -35,7 +35,6 @@
    }
 
    let test = new Foo();
-   console.log(test.print());
    ```
 
 -  Prototypes are objects that form **hierarchical chain**.

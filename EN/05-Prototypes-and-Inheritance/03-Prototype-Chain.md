@@ -173,7 +173,7 @@ We created Bar with the word **new** and printed it in the console.
 
 [slide]
 
-# **proto** vs Prototype Property
+# Proto vs Prototype Property
 
 There is a difference between `__proto__` and **Prototype Property**. 
 
