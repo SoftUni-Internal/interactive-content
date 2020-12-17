@@ -1,15 +1,11 @@
-# Methods with Parameters
 [slide]
-# Video
+# Method Parameters
 
 [vimeo-video startTimeInSeconds="2556" endTimeInSeconds="3633"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
 
-[/slide]
-[slide]
-# Method Parameters
 Information can be **passed** to methods as a parameter. 
 
 Parameters act as **variables** inside the method.
@@ -53,7 +49,7 @@ public static void printStudent(String name, int age, double grade) {
 
 [slide hideTitle]
 # Problem: Sign of Integer
-[code-task title="Sign of Integer" taskId="96b4c810-b800-4d30-b59b-b1f91901fb80" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sign of Integer" taskId="java-fund-Methods-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -126,20 +122,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int num = Integer.parseInt(scanner.nextLine());
-
-        printNumber(num);
-    }
-    private static void printNumber (int num) {
-        if (num < 0) {
-            System.out.println("The number " + num + " is negative.");
-        } else if (num == 0) {
-            System.out.println("The number " + num + " is zero.");
-        } else {
-            System.out.println("The number " + num + " is positive.");
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -197,7 +180,7 @@ The number 0 is zero.
 
 [slide hideTitle]
 # Problem: Grades
-[code-task title="Grades" taskId="2d3a034f-4f1a-42de-84e7-72a16870a267" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="java-fund-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -316,23 +299,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        printGrade(Double.parseDouble(scan.nextLine()));
-    }
-
-    public static void printGrade(double grade) {
-        if (grade >= 5.50) {
-            System.out.println("Excellent");
-        } else if (grade >= 4.50) {
-            System.out.println("Very good");
-        } else if (grade >= 3.50) {
-            System.out.println("Good");
-        } else if (grade >= 3.0) {
-            System.out.println("Poor");
-        } else {
-            System.out.println("Fail");
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -436,7 +403,7 @@ Fail
 
 [slide hideTitle]
 # Problem: Printing Triangle
-[code-task title="Printing Triangle" taskId="7b6b0e00-c615-421d-b8f0-5c5d00ee8719" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Printing Triangle" taskId="java-fund-Methods-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -624,24 +591,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void printTriangle(int length) {
-        for (int row = 1; row <= length; row++) {
-            for (int col = 1; col <= row; col++) {
-                System.out.print(col + " ");
-            }
-            System.out.println();
-        }
-        for (int row = length - 1; row >= 1; row--) {
-            for (int col = 1; col <= row; col++) {
-                System.out.print(col + " ");
-            }
-            System.out.println();
-        }
-    }
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int length = Integer.parseInt(input.nextLine());
-        printTriangle(length);
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -814,7 +764,7 @@ Create a method for printing triangles as shown below:
 
 [slide hideTitle]
 # Problem: Calculations
-[code-task title="Calculations" taskId="j1ae45194-ff34-4701-82e0-f209e000ff62`" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculations" taskId="java-fund-Methods-Calculations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -933,43 +883,8 @@ multiply
 import java.util.Scanner;
 
 public class Main {
-
-    static void add(int a, int b){
-        System.out.println(a + b);
-    }
-
-    static void subtract(int a, int b){
-        System.out.println(a - b);
-    }
-
-    static void multiply(int a, int b){
-        System.out.println(a * b);
-    }
-
-    static void devide(int a, int b){
-        System.out.println(a / b);
-    }
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String operation = scanner.nextLine();
-        int a = Integer.parseInt(scanner.nextLine());
-        int b = Integer.parseInt(scanner.nextLine());
-        
-        switch (operation){
-            case "add":
-                add(a,b);
-                break;
-            case "multiply":
-                multiply(a,b);
-                break;
-            case "divide":
-                devide(a,b);
-                break;
-            default:subtract(a,b);
-        }
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]

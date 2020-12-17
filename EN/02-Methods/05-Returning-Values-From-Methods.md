@@ -1,15 +1,12 @@
 # Returning Values From Methods
+
 [slide]
-# Video
+# The Return Statement
 
 [vimeo-video startTimeInSeconds="4537" endTimeInSeconds="5783"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
-
-[/slide]
-[slide]
-# The Return Statement
 
 The `return` keyword finishes the execution of a method, and can be used to return a value from a method.
 
@@ -45,10 +42,9 @@ int age = Integer.parseInt(sc.nextLine());
 
 [/slide]
 
-
 [slide hideTitle]
 # Problem: Calculate Rectangle Area
-[code-task title="Problem: Calculate Rectangle Area" taskId="318ace21-8a03-41a6-b537-8809e4aa23ac" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Calculate Rectangle Area" taskId="java-fund-Methods-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -151,18 +147,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int width = Integer.parseInt(scanner.nextLine());
-        int length = Integer.parseInt(scanner.nextLine());
-
-        PrintArea(width, length);
-    }
-
-    private static void PrintArea(int width, int length) {
-
-        System.out.println(width * length);
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -250,7 +235,7 @@ Create a method that calculates and returns the area of a triangle by given widt
 
 [slide hideTitle]
 # Problem: Repeat String
-[code-task title="Problem: Repeat String" taskId="e39e24a2-f942-4855-822d-1601ba84f8ce" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Repeat String" taskId="java-fund-Methods-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -359,21 +344,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String text = scanner.nextLine();
-        int n = Integer.parseInt(scanner.nextLine());
-
-        Print(text, n);
-    }
-
-    private static void Print(String text, int n) {
-
-        for (int i = 0; i < n; i++) {
-
-            System.out.print(text);
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -468,7 +439,7 @@ ivanivan
 
 [slide hideTitle]
 # Problem: Math Power
-[code-task title="Problem: Math Power" taskId="856a60c4-b014-4717-80d8-fb79c0c2f82e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Math Power" taskId="java-fund-Methods-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;
@@ -622,26 +593,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        double number = Double.parseDouble(scanner.nextLine());
-        int power = Integer.parseInt(scanner.nextLine());
-        double result = Power(number, power);
-
-        DecimalFormat fm = new DecimalFormat("###.######");
-
-        System.out.println(fm.format(result));
-    }
-
-
-    private static double Power(double number, int power) {
-
-        double result = 0d;
-
-        result = Math.pow(number, power);
-        return result;
-
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -778,7 +730,7 @@ Create a method that calculates and returns the value of a number raised to a gi
 
 [slide hideTitle]
 # Problem: Orders
-[code-task title="Problem: Orders" taskId="dbdac507-68fa-4b8c-a455-bd9146e433ad" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Orders" taskId="java-fund-Methods-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -897,28 +849,8 @@ import java.util.Scanner;
 public class Orders {
 
     static void order(String product, int quantity){
-        switch (product){
-            case "coffee":
-                System.out.printf("%.2f", quantity * 1.5);
-                break;
-            case "water":
-                System.out.printf("%.2f", (double)quantity);
-                break;
-            case "coke":
-                System.out.printf("%.2f", quantity * 1.4);
-                break;
-            default:
-                System.out.printf("%.2f", (double)quantity * 2);
-                break;
-        }
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String product = scanner.nextLine();
-        int quantity = Integer.parseInt(scanner.nextLine());
-        order(product,quantity);
-    }
+        public static void main(String[] args) {
+            // Write your solution here
 }
 ```
 [/code-editor]

@@ -1,15 +1,13 @@
 # Sorting Lists and Arrays
+
 [slide]
-# Video
+# Sorting Lists
 
 [vimeo-video startTimeInSeconds="8035" endTimeInSeconds="10485"]
 [stream language="EN" videoId="421781852" default /]
 [stream language="RO" videoId="431758884"  /]
 [/video-vimeo]
 
-[/slide]
-[slide]
-# Sorting Lists
 - Sorting Lists of Strings in ascending order using `Collections.sort()`
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -70,7 +68,7 @@ Let's explain what does the code above:
 
 [slide hideTitle]
 # Problem: List of products
-[code-task title="List of products" taskId="java-fund-13-Lists-problem-4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="List of products" taskId="java-fund-Lists-List-of-products" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -192,24 +190,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = Integer.parseInt(sc.nextLine());
-
-        List<String> products = new ArrayList<>();
-        
-        for (int i = 0; i < n; i++) {
-            String currentProduct = sc.nextLine();
-            products.add(currentProduct);
-        }
-
-        Collections.sort(products);
-
-        for (int i = 0; i < products.size(); i++){
-
-            System.out.printf("%d.%s%n", i + 1, products.get(i));
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -316,7 +297,7 @@ d
 
 [slide hideTitle]
 # Problem: Remove Negatives and Reverse
-[code-task title="Remove Negatives and Reverse" taskId="java-fund-13-Lists-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Remove Negatives and Reverse" taskId="java-fund-Lists-Remove-Negatives-and-Reverse" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -440,32 +421,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
-
-        List<Integer> nums = Arrays
-                .stream(sc.nextLine().split(" "))
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
-
-        for (int i = 0; i < nums.size(); i++) {
-
-            if (nums.get(i) < 0) {
-                nums.remove(i--);
-            }
-        }
-
-        Collections.reverse(nums);
-
-        if (nums.size() == 0) {
-
-            System.out.println("empty"); 
-
-        } else {
-
-            System.out.println(nums.toString().replaceAll("[\\[\\],]", ""));
-
-        }
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]

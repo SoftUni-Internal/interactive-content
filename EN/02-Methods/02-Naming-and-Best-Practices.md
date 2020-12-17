@@ -1,25 +1,12 @@
 # Naming and Best Practices
+
 [slide]
-# Video
+# Naming Methods
 
 [vimeo-video startTimeInSeconds="1996" endTimeInSeconds="2053"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
-
-[/slide]
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="9017" endTimeInSeconds="9816"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
-
-[/slide]
-[slide]
-# Naming Methods
 
 The method's name should always be a verb.
 

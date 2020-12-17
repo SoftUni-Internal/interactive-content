@@ -1,15 +1,13 @@
 # What Is a Method
+
 [slide]
-# Video
+# Method
 
 [vimeo-video startTimeInSeconds="199" endTimeInSeconds="1995"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
 
-[/slide]
-[slide]
-# Method
 A method is a block of code that only runs when it is called.
 
 You can pass data, known as parameters, into a method.

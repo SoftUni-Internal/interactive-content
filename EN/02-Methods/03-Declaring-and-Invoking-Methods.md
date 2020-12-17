@@ -1,15 +1,13 @@
 # Declaring and Invoking Methods
+
 [slide]
-# Video
+# Create a Method
 
 [vimeo-video startTimeInSeconds="2054" endTimeInSeconds="2555"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
 
-[/slide]
-[slide]
-## Create a Method
 A method must be declared within a class.
 
 It is defined with the name of the method, followed by parentheses `()`.

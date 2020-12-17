@@ -1,17 +1,13 @@
 # Reading and Printing Lists
 
 [slide]
-# Video
+# Reading Lists 
 
 [vimeo-video startTimeInSeconds="3799" endTimeInSeconds="7434"]
 [stream language="EN" videoId="421781852" default /]
 [stream language="RO" videoId="431758884"  /]
 [/video-vimeo]
 
-[/slide]
-
-[slide]
-# Reading Lists 
 - Reading a List using `for` loop and `scanner.nextLine()`
 ```java 
 Scanner scanner = new Scanner(System.in);
@@ -74,7 +70,7 @@ System.out.println(String.join(" ", list));
 
 [slide hideTitle]
 # Problem: Sum Adjacent Equal Numbers
-[code-task title="Sum Adjacent Equal Numbers" taskId="java-fund-13-Lists-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Adjacent Equal Numbers" taskId="java-fund-Lists-Sum-Adjacent-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -211,36 +207,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        List<Double> numbers = Arrays.stream(sc.nextLine().split(" "))
-                .map(Double::parseDouble).collect(Collectors.toList());
-
-        for (int i = 0; i < numbers.size() - 1; i++)
-
-            if (numbers.get(i).equals(numbers.get(i + 1))) {
-
-                numbers.set(i, numbers.get(i) + numbers.get(i + 1));
-                numbers.remove(i + 1);
-                i = -1;
-            }
-
-        String output = joinElementsByDelimiter(numbers, " ");
-        System.out.println(output);
-
-
-    }
-
-    private static String joinElementsByDelimiter(List<Double> items, String delimiter) {
-        String output = "";
-
-        for (Double item : items){
-            output += (new DecimalFormat("0.#").format(item) + delimiter);
-        }
-
-        return output;
-
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -390,7 +357,7 @@ Write a program to **sum all adjacent equal numbers** in a list of decimal numbe
 
 [slide hideTitle]
 # Problem: Gauss' Trick
-[code-task title="Gauss' Trick" taskId="java-fund-13-Lists-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Gauss' Trick" taskId="java-fund-Lists-Gauss'-Trick" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -495,21 +462,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        List<Integer> numbers = Arrays.stream(sc.nextLine().split(" "))
-                .map(Integer::parseInt).collect(Collectors.toList());
-
-        int size = numbers.size();
-
-        for (int i = 0; i < size / 2; i++) {
-
-            numbers.set(i, numbers.get(i) + numbers.get(numbers.size() - 1));
-
-            numbers.remove(numbers.size() - 1);
-        }
-        System.out.println(numbers.toString().replaceAll("[\\[\\],]", ""));
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -597,7 +550,7 @@ Write a program that sums all numbers in a list in the following order:
 
 [slide hideTitle]
 # Problem: Merging Lists
-[code-task title="Merging Lists" taskId="java-fund-13-Lists-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Merging Lists" taskId="java-fund-Lists-Merging-Lists" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -712,47 +665,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        List<Integer> nums1 = Arrays
-                .stream(scanner.nextLine()
-                .split(" "))
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
-
-        List<Integer> nums2 = Arrays
-                .stream(scanner.nextLine()
-                .split(" ")).map(Integer::parseInt)
-                .collect(Collectors.toList());
-
-        List<Integer> resultNums = new ArrayList<>();
-
-        for (int i = 0; i < Math.min(nums1.size(), nums2.size()); i++) {
-            resultNums.add(nums1.get(i));
-            resultNums.add(nums2.get(i));
-        }
-
-        if (nums1.size() > nums2.size()){
-            
-            resultNums.addAll(getRemainingElements(nums1, nums2));
-        }
-        else if (nums2.size() > nums1.size()){
-
-            resultNums.addAll(getRemainingElements(nums2, nums1));
-        }
-        System.out.println(resultNums.toString().replaceAll("[\\[\\],]", ""));
-
-    }
-
-    public static List<Integer> getRemainingElements(List<Integer> longerList, List<Integer> shorterList) {
-        List<Integer> nums = new ArrayList<>();
-        
-        for (int i = shorterList.size(); i < longerList.size(); i++){
-
-            nums.add(longerList.get(i));
-        }
-        return nums;
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]

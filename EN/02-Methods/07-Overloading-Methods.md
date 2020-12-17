@@ -1,15 +1,12 @@
 # Overloading Methods
+
 [slide]
-# Video
+# Method Signature
 
 [vimeo-video startTimeInSeconds="7460" endTimeInSeconds="9014"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
-
-[/slide]
-[slide]
-# Method Signature
 
 In Java, a method signature is part of the method declaration.
 
@@ -71,7 +68,7 @@ public class MyClass {
 
 [slide hideTitle]
 # Problem: Greater of Two Values
-[code-task title="Problem: Greater of Two Values" taskId="7922a26e-1814-4229-9172-5b3d809264c4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Greater of Two Values" taskId="java-fund-Methods-Greater-of-Two-Values" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -236,49 +233,7 @@ import java.util.Scanner;
 
 public class GreaterOfTwoValues {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String typeValues = scanner.nextLine();
-
-        if (typeValues.equalsIgnoreCase("int")) {
-            int a = Integer.parseInt(scanner.nextLine());
-            int b = Integer.parseInt(scanner.nextLine());
-
-            System.out.println(getMax(a, b));
-        } else if (typeValues.equalsIgnoreCase("char")) {
-            char a = scanner.nextLine().charAt(0);
-            char b = scanner.nextLine().charAt(0);
-            
-            System.out.println(getMax(a, b));
-        } else if (typeValues.equalsIgnoreCase("String")) {
-            String a = scanner.nextLine();
-            String b = scanner.nextLine();
-
-            System.out.println(getMax(a, b));
-        }
-    }
-
-    public static int getMax(int a, int b) {
-        if (a > b) {
-            return a;
-        } else {
-            return b;
-        }
-    }
-    public static char getMax(char a, char b) {
-        if (a > b) {
-            return a;
-        } else {
-            return b;
-        }
-    }
-    public static String getMax(String a, String b) {
-        if (a.compareTo(b) >= 0) {
-            return a;
-        } else {
-            return b;
-        }
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
@@ -428,7 +383,7 @@ int
 
 [slide hideTitle]
 # Problem: Multiply Evens by Odds
-[code-task title="Problem: Multiply Evens by Odds" taskId="0421a3db-de4d-4534-aaeb-aa5cbaebec02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Multiply Evens by Odds" taskId="java-fund-Methods-Multiply-Evens-by-Odds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -561,34 +516,8 @@ Create a program that reads an **integer number** and **multiplies the sum of al
 import java.util.Scanner;
 
 public class MultiplyEvensByOdds {
-
-    static int evenSum(int n){
-        int sum = 0;
-        while (n != 0){
-            if((n % 10) % 2 == 0)
-                sum += (n % 10);
-            n /= 10;
-        }
-        return sum;
-    }
-
-    static int oddSum(int n){
-        int sum = 0;
-        while (n != 0){
-            if((n % 10) % 2 != 0)
-                sum += (n % 10);
-            n /= 10;
-        }
-        return sum;
-    }
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int n = Integer.parseInt(scanner.nextLine());
-
-        System.out.println(evenSum(n) * oddSum(n));
-    }
+       // Write your solution here
 }
 ```
 [/code-editor]

@@ -1,16 +1,13 @@
 # Value and Reference Types
+
 [slide]
-# Video
+
+# Value Types
 
 [vimeo-video startTimeInSeconds="5784" endTimeInSeconds="6540"]
 [stream language="EN" videoId="421775938" default /]
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
-
-[/slide]
-[slide]
-
-# Value Types
 
 A variable of a value \(primitive data\) type contains an instance of the type and hold directly their value. 
 
@@ -80,8 +77,8 @@ public static void increment(int[] nums, int value) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Math operations
-[code-task title="Problem: Math operations" taskId="4aa29fd8-46d3-4a80-9daa-b5376cfe10a6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Math Operations
+[code-task title="Problem: Math operations" taskId="java-fund-Methods-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -202,38 +199,7 @@ import java.util.Scanner;
 
 public class MathOperations {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        double firstNumber = Double.valueOf(sc.nextLine());
-        String operator = sc.nextLine();
-        double secondNumber = Double.valueOf(sc.nextLine());
-        double result = 0;
-
-        switch (operator) {
-            case "+": result = sum(firstNumber, secondNumber); break;
-            case "-": result = subtract(firstNumber, secondNumber); break;
-            case "*": result = multiply(firstNumber, secondNumber); break;
-            case "/": result = divide(firstNumber, secondNumber); break;
-        }
-
-        System.out.printf("%d", (int)result);
-    }
-
-    private static double sum(double a, double b) {
-        return a + b;
-    }
-
-    private static double subtract(double a, double b) {
-        return a - b;
-    }
-
-    private static double multiply(double a, double b) {
-        return a * b;
-    }
-
-    private static double divide(double a, double b) {
-        return a / b;
-    }
+        // Write your solution here
 }
 ```
 [/code-editor]
