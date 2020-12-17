@@ -151,7 +151,7 @@ Test Passed!
 
 [slide]
 # Solution: Sum Of Numbers
-[code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Solution: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```js
