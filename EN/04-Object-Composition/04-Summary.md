@@ -4,7 +4,7 @@
 
 In this lesson you learned about:
 
-- Object composition - combines data and functions into "JavaScript" objects.
+- Object composition: combines data and functions into "JavaScript" objects.
 
 ```js
 let student = {
@@ -15,8 +15,8 @@ let student = {
 }
 ```
 
-- Aggregation - forming an object from an enumerable collection.
-- Concatenation - adding new properties.
-- Delegation - imitates class inheritance.
+- Aggregation: forming an object from an enumerable collection.
+- Concatenation: adding new properties.
+- Delegation: imitates class inheritance.
 
 [/slide]
