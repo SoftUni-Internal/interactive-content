@@ -33,10 +33,13 @@ if (JSON.stringify(nums) === "[-2,2,4,15]") {
 
 **Why do we need Unit Testing?**
 
-- Unit tests make it safer and easier to refactor the code by putting tests into place that make sure refactoring occurs without problems and disruption.
-- Doing unit tests is essentially doing quality assurance of the code. It shows problems and bugs before the product has an integration test.
-- Unit tests make the process of debugging easier.
-- Unite tests force better code and design whether you are using C\#, Java, Python, JavaScript, or Php. It means you have a well-defined code with high cohesion.
+Unit tests make it safer and easier to refactor the code by putting tests into place that make sure refactoring occurs without problems and disruption.
+
+Doing unit tests is essentially doing quality assurance of the code. It shows problems and bugs before the product has an integration test.
+
+Unit tests make the process of debugging easier.
+
+Unite tests force better code and design whether you are using C\#, Java, Python, JavaScript, or Php. It means you have a well-defined code with high cohesion.
 
 **Unit Test Structure**
 
