@@ -883,3 +883,613 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
+
+[slide]
+# Problem: String Builder
+[code-task title="Problem: String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```js
+
+```
+[/code-editor]
+[task-description]
+## Description
+
+You are given the following "JavaScript" class.
+
+```js
+class StringBuilder {
+  constructor(string) {
+    if (string !== undefined) {
+      StringBuilder._vrfyParam(string);
+      this._stringArray = Array.from(string);
+    } else {
+      this._stringArray = [];
+    }
+  }
+
+  append(string) {
+    StringBuilder._vrfyParam(string);
+    for(let i = 0; i < string.length; i++) {
+      this._stringArray.push(string[i]);
+    }
+  }
+
+  prepend(string) {
+    StringBuilder._vrfyParam(string);
+    for(let i = string.length - 1; i >= 0; i--) {
+      this._stringArray.unshift(string[i]);
+    }
+  }
+
+  insertAt(string, startIndex) {
+    StringBuilder._vrfyParam(string);
+    this._stringArray.splice(startIndex, 0, ...string);
+  }
+
+  remove(startIndex, length) {
+    this._stringArray.splice(startIndex, length);
+  }
+
+  static _vrfyParam(param) {
+    if (typeof param !== 'string') throw new TypeError('Argument must be string');
+  }
+
+  toString() {
+    return this._stringArray.join('');
+  }
+}
+```
+
+The above code defines a class that holds characters (strings with length 1) in an array. 
+
+An instance of the class should support the following operations:
+- Can be instantiated with a passed in string argument or without anything.
+- Function `append(string)` - converts the passed in string argument to an array and adds it to the end of the storage.
+- Function `prepend(string)` - converts the passed in string argument to an array and adds it to the beginning of the storage.
+- Function `insertAt(string, index)` - converts the passed in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
+- Function `remove(startIndex, length)` - removes elements from the storage, starting at the given index (inclusive), length number of characters (there is no need to check if the index is in range).
+- Function `toString()` - returns a string with all elements joined by an empty string.
+- All passed in arguments should be strings. If any of the parameters is not a string, throws a type error with the following message: "Argument must be a string".
+
+**Input**
+```js
+let str = new StringBuilder('hello');
+str.append(', there');
+str.prepend('User, ');
+str.insertAt('woop',5 );
+console.log(str.toString());
+str.remove(6, 3);
+console.log(str.toString());
+```
+
+**Output**
+
+User,woop hello, there
+
+User,w hello, there
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+//\<minTestCount\>7\</minTestCount\> - specifies the minimum amount of tests your code should have.
+var StringBuilder = function () \{\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test open]
+[input]
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Data not initialized empty\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        this._stringArray = \[''\];
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for (let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for (let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Data always initializes empty\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        this._stringArray = \[\];
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for (let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for (let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Append missing\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Prepend not implemented\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Insert does not spread array\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Remove has parameter swapped\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(length, startIndex);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>toString missing join parameter\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            StringBuilder._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join();
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Constructor does not verify parameter\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        StringBuilder._vrfyParam(string);
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        StringBuilder._vrfyParam(string);
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    static _vrfyParam(param) \{
+        if (typeof param !== 'string') throw new TypeError('Argument must be string');
+    \}
+
+    toString() \{
+        return this._stringArray.join();
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>append, prepend, insertAt do not verify parameter\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        if (string !== undefined) \{
+            if (typeof string !== 'string') throw new TypeError('Argument must be string');
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+    \}
+
+    append(string) \{
+        for(let i = 0; i \< string.length; i++) \{
+            this._stringArray.push(string\[i\]);
+        \}
+    \}
+
+    prepend(string) \{
+        for(let i = string.length - 1; i \>= 0; i--) \{
+            this._stringArray.unshift(string\[i\]);
+        \}
+    \}
+
+    insertAt(string, startIndex) \{
+        this._stringArray.splice(startIndex, 0, ...string);
+    \}
+
+    remove(startIndex, length) \{
+        this._stringArray.splice(startIndex, length);
+    \}
+
+    toString() \{
+        return this._stringArray.join('');
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+//\<testInfo\>Functions attached to instance\</testInfo\>
+StringBuilder = class StringBuilder \{
+    constructor(string) \{
+        this._vrfyParam = function(param) \{
+            if (typeof param !== 'string') throw new TypeError('Argument must be string');
+        \};
+
+        if (string !== undefined) \{
+            this._vrfyParam(string);
+            this._stringArray = Array.from(string);
+        \} else \{
+            this._stringArray = \[\];
+        \}
+
+        this.append = function(string) \{
+            this._vrfyParam(string);
+            for(let i = 0; i \< string.length; i++) \{
+                this._stringArray.push(string\[i\]);
+            \}
+        \};
+
+        this.prepend = function(string) \{
+            this._vrfyParam(string);
+            for(let i = string.length - 1; i \>= 0; i--) \{
+                this._stringArray.unshift(string\[i\]);
+            \}
+        \};
+
+        this.insertAt = function(string, startIndex) \{
+            this._vrfyParam(string);
+            this._stringArray.splice(startIndex, 0, ...string);
+        \};
+
+        this.remove = function(startIndex, length) \{
+            this._stringArray.splice(startIndex, length);
+        \};
+
+        this.toString = function() \{
+            return this._stringArray.join('');
+        \};
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
