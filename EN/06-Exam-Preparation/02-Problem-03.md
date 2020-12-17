@@ -92,7 +92,7 @@ Customer ID: {personalId}
 Total Money: {totalMoney}$
 Transactions:
 n. {firstName} {lastName} made deposit of {amount}$!
-...`
+...
 2. {firstName} {lastName} withdrew {amount}$!
 1. {firstName} {lastName} made deposit of {amount}$!
 ```
