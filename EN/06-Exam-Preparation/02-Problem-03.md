@@ -6,19 +6,14 @@
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function pressHouse(){
-  // Write your code here
+class Bank {
+    // TODO: implement this class...
 }
 ```
 [/code-editor]
 [task-description]
 # Description
 
-```js
-class Bank {
-    // TODO: implement this class...
-}
-```
 ## Your Task
 
 Write a Class Bank, Which Implements the Following Functionality:
