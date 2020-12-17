@@ -404,3 +404,482 @@ Test Passed!
 [/code-task]
 [/slide]
 
+[slide]
+# Problem: Math Enforcer
+[code-task title="Problem: Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```js
+
+```
+[/code-editor]
+[task-description]
+## Description
+
+Your task is to test an object named **mathEnforcer**, which will have the following functionality.
+- addFive(num) - A function that accepts a **single** parameter.
+    - If the parameter is **NOT** a **number**, the funtion should return **undefined**.
+    - If the parameter is a **number**, **add 5** to it, and return the result.
+- subtractTen(num) - A function that accepts a **single** parameter.
+    - If the parameter is **NOT** a **number**, the function should return **undefined**.
+    - If the parameter is a **number**, **subtract 10** from it, and return the result.
+- sum(num1, num2) - A function that accepts **two** parameters.
+    - If any of the 2 parameters is NOT a number, the function should return undefined.
+    - If **both** parameters are **numbers**, the function should return their **sum**.
+
+You are provided with an implementation of the **mathEnforcer** object.
+
+```js
+let mathEnforcer = {
+    addFive: function (num) {
+        if (typeof(num) !== 'number') {
+            return undefined;
+        }
+        return num + 5;
+    },
+    subtractTen: function (num) {
+        if (typeof(num) !== 'number') {
+            return undefined;
+        }
+        return num - 10;
+    },
+    sum: function (num1, num2) {
+        if (typeof(num1) !== 'number' || typeof(num2) !== 'number') {
+            return undefined;
+        }
+        return num1 + num2;
+    }
+};
+```
+
+The methods should function correctly for positive, negative and floating-point numbers. 
+
+In case of floating-point numbers the result should be considered correct if it is within 0.01 of the correct value.
+
+When testing a more complex object write a **nested describe** for each function as it is shown in the example below.
+
+```js
+describe("Math Enforcer", function(){
+    describe("Add Five", function(){
+        it("should return undefined passing parameter as a string", function(){
+            // To Do
+        });
+    })
+
+    describe("Add Five", function(){
+        it("should return 5 if parameter equals 0", function(){
+            // To Do
+        });
+    })
+})
+```
+
+Your tests will be supplied with a variable named "mathEnforcer" which contains the mentioned logic above. 
+
+All test cases you write should reference this variable.
+
+Hints
+- Test how the program behaves when passing in negative values.
+- Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+//\<minTestCount\>2\</minTestCount\> - specifies the minimum amount of tests your code should have.
+let mathEnforcer = \{\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test open]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 4;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 5;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 - num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return Math.abs(num) + 5;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return Math.abs(num) - 10;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \}, subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \}, sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return Math.abs(num1 - num2);
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return parseInt(num) + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return parseInt(num) - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return parseInt(num1) + num2;
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+mathEnforcer = \{
+    addFive: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num + 5;
+    \},
+    subtractTen: function (num) \{
+        if (typeof(num) !== 'number') \{
+            return undefined;
+        \}
+        return num - 10;
+    \},
+    sum: function (num1, num2) \{
+        if (typeof(num1) !== 'number' \|\| typeof(num2) !== 'number') \{
+            return undefined;
+        \}
+        return num1 + parseInt(num2);
+    \}
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
