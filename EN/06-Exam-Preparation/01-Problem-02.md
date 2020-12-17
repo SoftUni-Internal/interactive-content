@@ -25,8 +25,9 @@ Your need to create several classes for **Press House.**
 
 Should have these 2 properties:
 
-   - title \- string
-   - content \- string  
+title \- string
+
+content \- string  
 
 - `toString()`
 
@@ -41,10 +42,13 @@ Class `ShortReports` inherits class Article.
 
 Should have these **4 properties:**
 
-   - title \- string,  
-   - content \- string, 
-   - originalResearches \- object with properties title and author
-   - comments \- array of strings
+title \- string,
+ 
+content \- string, 
+
+originalResearches \- object with properties title and author
+
+comments \- array of strings
 
 As we create a short reports here we have a length limit for the **content** property \- it should be less than 150 symbols, otherwise throw an error with the next message:
 
@@ -66,7 +70,7 @@ This function should extend the toString method of class Article adding same mor
 
 `Original Research: { title } by { author }`
 
-And if there are any comments you should print on a new line 
+And if there are any comments you should print on a new line
 
 `Comments:`
 
@@ -119,12 +123,10 @@ And if there are any orders you should print all orders each on a new line:
 
 [image assetsSrc="exam-prep-pic6.png" /]
 
-## Examples
-
+# Examples
 This is an example how the code is **intended to be used:**
 
-# Examples
-**Input** 
+**Sample code usage** 
 ```js
 let classes = solveClasses();
 let lorem = new classes.Article("Lorem", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel…");
@@ -141,8 +143,9 @@ console.log(book.addClient("Goodreads", "30 symbols"));
 console.log(book.toString()); 
 ```
 
-**Output**
-```js
+**Corresponding output**
+
+```
 Title: Lorem
 Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel, ultricies est. Phasellus id pellentesque risus. Morbi aliquet at lectus ac malesuada. Morbi eu erat orci. Donec id turpis elit. Donec iaculis sapien odio, sit amet cursus lacus rutrum sit amet. Cras ac urna sapien. Pellentesque porta mauris ac dolor commodo, congue condimentum orci varius. Ut ultrices pretium commodo. Aenean facilisis mattis facilisis.
 ----------------------

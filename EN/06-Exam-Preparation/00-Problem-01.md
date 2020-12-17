@@ -50,7 +50,7 @@ The HTML structure looks like this:
 
 When the `Delete` button is clicked, the Task (whole article) **should be removed from the HTML.**
 
-After clicking the `Finish` button, **the Task will be completed**, and you should move the article in the section `Complete`. 
+After clicking the `Finish` button, **the Task will be completed**, and you should move the article in the section `Complete`.
 
 The buttons with their parent div\-element should be removed.
 
