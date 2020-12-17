@@ -68,10 +68,8 @@ describe("Test group #2", function () {
 [code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
-function solve(input){
-  // Write your code here
-}
+```
+
 ```
 [/code-editor]
 [task-description]
@@ -93,6 +91,8 @@ Your tests will be supplied with a function named `sum()`.
 It should meet the following requirements:
 - Take an array of numbers as argument.
 - Return the sum of the values of all elements inside the array.
+
+# Example
 
 [/task-description]
 [code-io /]
@@ -154,7 +154,7 @@ Test Passed!
 [code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-```js
+```
 
 ```
 [/code-editor]
@@ -177,6 +177,8 @@ Your tests will be supplied with a function named `sum()`.
 It should meet the following requirements:
 - Take an array of numbers as argument.
 - Return the sum of the values of all elements inside the array.
+
+# Example
 
 [/task-description]
 [code-io /]
