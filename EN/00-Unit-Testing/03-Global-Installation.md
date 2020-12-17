@@ -150,4 +150,93 @@ Test Passed!
 [/slide]
 
 
+[slide]
+# Solution: Sum Of Numbers
+[code-task title="Problem: Sum Of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+
+```
+[/code-editor]
+[task-description]
+## Description
+
+Write tests to check the functionality of the following code:
+
+```js
+function sum(arr) {
+    let sum = 0;
+    for (num of arr)
+        sum += Number(num);
+    return sum;
+}
+```
+
+Your tests will be supplied with a function named `sum()`. 
+
+It should meet the following requirements:
+- Take an array of numbers as argument.
+- Return the sum of the values of all elements inside the array.
+
+# Example
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+//\<minTestCount\>3\</minTestCount\> - specifies the minimum amount of tests your code should have.
+let sum = function(arr)\{\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+sum = function(arr) \{
+    let sum = 0;
+    for (let num of arr)
+        sum += Number(num);
+    return sum;
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+sum = function(arr) \{
+    let sum = "0";
+    for (let num of arr)
+        sum += Number(num);
+    return sum;
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+sum = function(arr) \{
+    let sum = 0;
+    for (let i = 0; i \< arr.length - 1; i++)
+        sum += Number(arr\[i\]);
+    return sum;
+\};
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+
+
 
