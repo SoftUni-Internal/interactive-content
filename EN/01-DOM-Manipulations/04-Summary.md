@@ -22,6 +22,5 @@ In this lesson you learned about:
     console.log("Button event listener removed.");
     });
     ```
-
-
+    
 [/slide]
