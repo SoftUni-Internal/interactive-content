@@ -43,7 +43,6 @@ function toUppercase(string) {
 [slide]
 # Types of Errors
 
-
 The three most common types of **errors** are:
 
 - **Syntax Errors**
@@ -108,7 +107,6 @@ try {
 
 [slide]
 # Exception Properties
-
 
 The `Error` object contains multiple properties:
 
