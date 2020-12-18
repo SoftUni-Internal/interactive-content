@@ -3,7 +3,7 @@
 [slide]
 # Description
 
-[code-task title="Task Manager" taskId="js-advanced-exam-pet-me" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="SoftWiki SPA" taskId="js-applications-softwiki-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -18,7 +18,7 @@ function solve(){
 
 You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST and JSON with cloud\-based backend \(Firebase or Kinvey\).
 
-Using libraries like **jQuery**, **Handlebars** and **Sammy** is allowed but is **not obligatory**. 
+Using libraries like **jQuery**, **Handlebars** and **PageJs** is allowed but is **not obligatory**. 
 
 The app keeps **users** and **articles**. 
 
