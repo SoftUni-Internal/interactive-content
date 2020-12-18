@@ -2,6 +2,8 @@
 
 [slide]
 
+# Recourses
+
 Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP3-JQhOAxXzwTgD5xxLKlXhoGMGjfQ26kTTfaVM)
 
 [/slide]
@@ -30,10 +32,10 @@ Finally, you should **append** all divs to the element with an **id** **content*
 
 # Example
 **Input**
-[image assetsSrc="Sections-Input.png" /]
+[image assetsSrc="Dom-Manipulation(5).png" /]
 
 **Output**
-[image assetsSrc="Sections-Output.png" /]
+[image assetsSrc="Dom-Manipulation(6).png" /]
 
 [/task-description]
 [code-io /]
@@ -138,10 +140,10 @@ In the example below, a notification is shown when you click the button.
 
 # Example
 **Input**
-[image assetsSrc="Notification-Input.png" /]
+[image assetsSrc="Dom-Manipulation(7).png" /]
 
 **Output**
-[image assetsSrc="Notification-Output.png" /]
+[image assetsSrc="Dom-Manipulation(8).png" /]
 
 [/task-description]
 [code-io /]
@@ -347,10 +349,10 @@ For example, if we type in 48 hours and click convert the days, the field value 
 
 # Example
 **Input**
-[image assetsSrc="Time-Converter-Input.png" /]
+[image assetsSrc="Dom-Manipulation(9).png" /]
 
 **Output**
-[image assetsSrc="Time-Converter-Output.png" /]
+[image assetsSrc="Dom-Manipulation(10).png" /]
 
 [/task-description]
 [code-io /]
@@ -542,10 +544,10 @@ Otherwise, when the profile is **unlocked** and we click on the `Hide it` button
 
 # Example
 **Input**
-[image assetsSrc="Locked-Profile-Input.png" /]
+[image assetsSrc="Dom-Manipulation(11).png" /]
 
 **Output**
-[image assetsSrc="Locked-Profile-Output.png" /]
+[image assetsSrc="Dom-Manipulation(12).png" /]
 
 [/task-description]
 [code-io /]
@@ -1418,11 +1420,11 @@ After that, when the `Decode and read it` button is clicked, you need to get the
 
 # Example
 **Input**
-[image assetsSrc="Encoding-Messages-Input1.png" /]
-[image assetsSrc="Encoding-Messages-Input2.png" /]
+[image assetsSrc="Dom-Manipulation(13).png" /]
+[image assetsSrc="Dom-Manipulation(14).png" /]
 
 **Output**
-[image assetsSrc="Decoding-Messages-Output.png" /]
+[image assetsSrc="Dom-Manipulation(15).png" /]
 
 [/task-description]
 [code-io /]
@@ -1655,10 +1657,10 @@ Note: After every search, **clear the input field** and **remove all already sel
 
 # Example
 **Input**
-[image assetsSrc="Table-Search-Engine-Input.png" /]
+[image assetsSrc="Dom-Manipulation(16).png" /]
 
 **Output**
-[image assetsSrc="Table-Search-Engine-Output.png" /]
+[image assetsSrc="Dom-Manipulation(17).png" /]
 
 [/task-description]
 [code-io /]
@@ -2212,7 +2214,7 @@ Finally, print the average decoration factor in the format: `Average decoration 
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
 
 **Output**
-[image assetsSrc="Furniture-Output.png" /]
+[image assetsSrc="Dom-Manipulation(18).png" /]
 
 [/task-description]
 [code-io /]
@@ -2719,10 +2721,10 @@ After every hand, push the current card names in the **history div** in the foll
 
 # Example
 **Input**
-[image assetsSrc="Cards-Input.png" /]
+[image assetsSrc="Dom-Manipulation(19).png" /]
 
 **Output**
-[image assetsSrc="Cards-Output.png" /]
+[image assetsSrc="Dom-Manipulation(20).png" /]
 
 [/task-description]
 [code-io /]

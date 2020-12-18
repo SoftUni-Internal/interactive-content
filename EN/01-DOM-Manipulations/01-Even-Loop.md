@@ -44,7 +44,7 @@ The function disappears and the program **goes back to the next function in the 
 
 This is the **synchronous function execution**, this is how we've been executing our programs so far.
 
-[image assetsSrc="stack-execution.gif" /]
+[image assetsSrc="DOM-Manipulation.gif" /]
 
 [/slide]
 
@@ -61,6 +61,6 @@ At some point, **the event creates a new function**, which is a **callback funct
 
 This is a very **brief overview** of the asynchronous code execution.
 
-[image assetsSrc="The-Event-Loop.gif" /]
+[image assetsSrc="DOM-Manipulation(1).gif" /]
 
 [/slide]

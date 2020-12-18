@@ -8,7 +8,7 @@ In the browser we have 3 phases of event propagation:
 - Target phase – the event reaches the target element.
 - Bubbling phase – the event bubbles up from the element.
 
-[image assetsSrc="Event-Propagation.gif" /]
+[image assetsSrc="Dom-Manipulation(2).gif" /]
 
 When clicking on the `<A>` element, the event first goes through the chain down to the element, which is called a **capturing phase**, then it reaches the target and triggers a **target phase**, and then it goes up, which is called a **bubbling phase**, calling handlers on its way up.
 
@@ -116,7 +116,7 @@ function solve(input){
 Write a function that **reads** the text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
-[image assetsSrc="List-Of-Items.png" /]
+[image assetsSrc="Dom-Manipulation(3).png" /]
 
 [/task-description]
 [code-io /]
@@ -183,3 +183,84 @@ yes
 
 [/slide]
 
+[slide]
+# Solution: List Of Items
+[code-task title="List Of Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a function that **reads** the text inside an input field and **appends** the specified text to a list inside an HTML page.
+
+# Example
+[image assetsSrc="Dom-Manipulation(3).png" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add" onclick="addItem()"\>
+    \</main\>
+`;
+
+\\$('\#newItemText').val('new mode');
+result();
+
+\\$('\#newItemText').val('Fourth Grade');
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 4, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item contains something different');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add""\>
+    \</main\>
+`;
+
+document.getElementById('newItemText').value = 'new mode';
+
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 3, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
+[/slide]
