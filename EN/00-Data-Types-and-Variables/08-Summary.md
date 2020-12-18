@@ -2,18 +2,47 @@
 # Summary
 
 ## In this lesson you learned:
+
   - Variables – store data
-  TODO: Add example for different types of variables
+
+
+  ```java
+  int myNum = 3;               // Integer (whole number)
+  float myFloatNum = 2.99f;    // Floating point number
+  char myLetter = 'E';         // Character
+  boolean myBool = false;       // Boolean
+  String myText = "Goodbye";     // String
+  ```
+
+  
   - Numeral types: 
     - Represent numbers
     - Have specific ranges for every type
-  TODO: Add example for different numeric types
+
+
+    ```java
+    int myNum = 100000; // Integer
+    ```
+    
+    ```java
+    double myNum = 19.99;
+    ```
+
+
   - String and text types: 
     - Represent text
     - Sequences of Unicode characters
-  TODO: Add example for string and char types
+
+    ```java
+    char myGrade = 'B';
+    ```
+
+    ```java
+    String text = "Example";
+    ```
+
   - Type conversion: implicit and explicit
-  TODO: Give example for convertions
+
 
 ## In the next lesson, you will learn:
   - Arrays
