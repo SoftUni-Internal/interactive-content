@@ -12,6 +12,7 @@ function solve(){
 ```
 [/code-editor]
 [task-description]
+
 # Description
 
 [Download resources here!](https://mega.nz/file/rdgCzJpC#VAzRE_PzHsl0P4q4sjT_2hHepEfkJlEIr9JjwTscpVg)
@@ -152,4 +153,82 @@ You may modify **href attributes** of links and add **action/method** **attribut
 **2. The SoftWiki- Client-Side Web Application**
 
 **Design** and **implement** a client\-side front-end app (SPA) for managing articles. Implement the functionality described below.
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test open]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+
+[/input]
+[output]
+
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
