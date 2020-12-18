@@ -1,7 +1,6 @@
 # Types of Modules
 
 [slide]
-
 # IIFE Modules
 
 **IIFE Modules** are essential for front-end development.
@@ -43,10 +42,9 @@ The counter itself, however, **cannot be directly accessed**, unless we declare 
 [/slide]
 
 [slide]
-
 # Node.js Modules
 
-In Node.js, **every file has its own scope**.
+In Node\.js, **every file has its own scope**.
 
 Thus, individual files could be considered as **separate modules**.
 
@@ -56,7 +54,7 @@ Thus, individual files could be considered as **separate modules**.
 
 We **import** Node.js modules using the `require()` function.
 
-**Built-in modules** can be imported as follows:
+**Built\-in modules** can be imported as follows:
 
 ```js
 const querystring = require('querystring');
@@ -72,7 +70,7 @@ The path is **relative to the file in which you do the import**.
 
 ## Exporting
 
-To **export** modules in Node.js, we use the `module.exports` object.
+To **export** modules in Node\.js, we use the `module.exports` object.
 
 Whatever you push in the `module.exports` object is made globally available to **other modules**.
 
@@ -104,9 +102,9 @@ module.exports.currencyConverter = {
 ```
 
 
-## Built-in Node.js modules
+## Built\-in Node\.js modules
 
-**Node.js** has many **built-in modules** which you can **include** and **use** in **any of your Node.js files**.
+**Node.js** has many **built\-in modules** which you can **include** and **use** in **any of your Node\.js files**.
 
 Here are some commonly used ones:
 
@@ -137,17 +135,16 @@ let fs = require('fs');
 
 # ES6 Modules
 
-*In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.*
+In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
 
-JavaScript's **built-in module statements always export and import an object**.
+JavaScript's **built\-in module statements always export and import an object**.
 
 ## Importing
 
 
-
 Importing an object can be done in a few ways:
 
-- Importing a **specific function**\:
+- Importing a **specific function**:
 
 ```js
 import convertToUSD from './currencyConverter.js'
