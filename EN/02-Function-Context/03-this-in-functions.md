@@ -14,7 +14,6 @@ let socialMediaUser = {
     }
 }
 socialMediaUser.displayLikes();
-
 ```
 
 Calling ``this.name`` from inside the nested function returns **undefined**. This is because ``this`` in nested functions refers to the global object in the context of nested functions.
@@ -45,6 +44,7 @@ let socialMediaUser = {
 }
 socialMediaUser.displayLikes();
 ```
+
 This time the output is correct and the user's name is no longer **undefined**. The difference between the previous example and this one is that we now used an **arrow function**. This function inherited the context from the enclosing **socialMediaUser** object and so we have:
 
 ```

@@ -10,10 +10,10 @@ Let's look at an example using ``call()``:
 
 ```js live
 function speak(message) {
-  console.log(`My name is ${this.name}. ${message}`);
+    console.log(`My name is ${this.name}. ${message}`);
 }
 
-let person = { name:'John' };
+let person = { name: 'John' };
 
 greet.call(person, "This is my story...");
 ```
@@ -57,7 +57,6 @@ let cat = {
 
 console.log(praise.call(cat,
     'A good companion', 'A goofball'));
-
 ```
 
 In the above example you can see we used the same function that did not belong to either object and bound those objects to it. Every time we used ``call()`` it had a different context for ``this``.
@@ -72,18 +71,21 @@ In the above example you can see we used the same function that did not belong t
 To illustrate this with the previous example:
 
 Using ``call()``:
+
 ```js
 console.log(praise.call(dog,
     'A good boy', 'My best friend'
-    ));
+));
 ```
 
 Using ``apply()``:
+
 ```js
 console.log(praise.apply(dog,
     ['A good boy', 'My best friend']
-    ));
+));
 ```
+
 If your arguments are in an array and you can still use ``call()`` in most situations by using the spread operator on the array.
 
 ```js
@@ -102,23 +104,24 @@ Let's imagine we have a **student** that can ``study()``:
 
 ```js
 let student = {
-  alias: `Motivated student`,
-  subject: 'Web Development',
-  study: function(hours) {
-    console.log(`${this.alias} studies 
-    ${this.subject} ${hours} hours a day`);
-  }
+    alias: `Motivated student`,
+    subject: 'Web Development',
+    study: function (hours) {
+        console.log(`${this.alias} studies 
+      ${this.subject} ${hours} hours a day`);
+    }
 };
 ```
+
 We also have a professor that can ``teach()``:
 
 ```js
 let professor = {
-  alias: `Grumpy professor`,
-  subject: 'Mathematics',
-  teach: function(hours) {
-    console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
-  }
+    alias: `Grumpy professor`,
+    subject: 'Mathematics',
+    teach: function (hours) {
+        console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
+    }
 };
 ```
 
@@ -136,27 +139,176 @@ See it in action:
 
 ```js live
 let student = {
-  alias: `Motivated student`,
-  subject: 'Web Development',
-  study: function(hours) {
-    console.log(`${this.alias} studies 
-    ${this.subject} ${hours} hours a day`);
-  }
+    alias: `Motivated student`,
+    subject: 'Web Development',
+    study: function (hours) {
+        console.log(`${this.alias} studies 
+      ${this.subject} ${hours} hours a day`);
+    }
 };
 
 let professor = {
-  alias: `Grumpy professor`,
-  subject: 'Mathematics',
-  teach: function(hours) {
-    console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
-  }
+    alias: `Grumpy professor`,
+    subject: 'Mathematics',
+    teach: function (hours) {
+        console.log(`${this.alias} teaches ${this.subject} ${hours} hours a day`)
+    }
 };
 
 let teach = professor.teach.bind(student, 2);
 teach();
 ```
+
 This is known as function borrowing in JavaScript. 
 
 [/slide]
+
+
+[slide]
+# Problem: Area and Volume Calculator
+[code-task title="Problem: Area and Volume Calculator" taskId="js-advanced-function-context-lab-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(area, vol, input) {
+    //ToDo....
+}
+```
+[/code-editor]
+[task-description]
+## Description
+
+Write a function which **calculates** the **area** and the **volume** of a figure, which is **defined** by its **coordinates** 
+(**x**, **y**, **z**). 
+
+The functions **area** and **vol** are **passed as parameters** to your function:
+
+```js
+function area() {
+  return this.x * this.y;
+};
+```
+
+```js
+function vol() {
+  return this.x * this.y * this.z;
+};
+```
+
+## Input
+You will receive 3 parameters -  the functions area and vol and a string, which contains the figures' coordinates. 
+
+**For more information check the examples.**
+
+
+## Output
+The output should be **returned** as an **array of objects**. Each object has **two properties**: the figure's **area** and **volume**.
+
+```
+[
+  { area: ${area1}, volume: ${volume1} },
+  { area: ${area2}, volume: ${volume2} },
+  . . .
+]
+
+```
+
+### Note: Submit only the solve function.
+
+## Examples
+| Sample Input  | Output |
+|---|---|
+| area, vol, \'[<br>{\"x\":\"1\",\"y\":\"2\",\"z\":\"10\"},<br>{\"x\":\"7\",\"y\":\"7\",\"z\":\"10\"},<br>{\"x\":\"5\",\"y\":\"2\",\"z\":\"10\"}<br>]\'  | [<br>  { area: 2, volume: 20 },<br>  { area: 49, volume: 490 },<br>  { area: 10, volume: 100 }<br>]  |
+| area, vol, \'[<br>{\"x\":\"10\",\"y\":\"-22\",\"z\":\"10\"},<br>{\"x\":\"47\",\"y\":\"7\",\"z\":\"-5\"},<br>{\"x\":\"55\",\"y\":\"8\",\"z\":\"0\"},<br>{\"x\":\"100\",\"y\":\"100\",\"z\":\"100\"},<br>{\"x\":\"55\",\"y\":\"80\",\"z\":\"250\"}<br>]\'  | [<br>  { area: 220, volume: 2200 },<br>  { area: 329, volume: 1645 },<br>  { area: 440, volume: 0 },<br>  { area: 10000, volume: 1000000 },<br>  { area: 4400, volume: 1100000 }<br>] |
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+function area() \{
+    return this.x \* this.y\*156;
+\};
+function vol() \{
+    return this.x \* this.y \* this.z;
+\};
+let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
+let expected = \[
+  \{ area: 312, volume: 20 \},
+  \{ area: 7644, volume: 490 \},
+  \{ area: 1560, volume: 100 \}
+\];
+assert.deepEqual(actual,expected,"The returned value is not correct")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+function area() \{
+    return this.x \* this.y\*3;
+\};
+function vol() \{
+    return this.x \* this.y \* this.z/16;
+\};
+let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
+let expected = \[
+  \{ area: 6, volume: 1.25 \},
+  \{ area: 147, volume: 30.625 \},
+  \{ area: 30, volume: 6.25 \}
+\]
+assert.deepEqual(actual,expected,"The returned value is not correct")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+function area() \{
+    return this.x \* this.y;
+\};
+function vol() \{
+    return this.x \* this.y \* this.z;
+\};
+let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
+let expected = \[
+  \{ area: 2, volume: 20 \},
+  \{ area: 49, volume: 490 \},
+  \{ area: 10, volume: 100 \}
+\];
+assert.deepEqual(actual,expected,"The returned value is not correct")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+function area() \{
+    return this.x \* this.y;
+\};
+function vol() \{
+    return this.x \* this.y \* this.z;
+\};
+let actual = result(area, vol,'\[\{"x":"10","y":"-22","z":"10"\},\{"x":"47","y":"7","z":"-5"\},\{"x":"55","y":"8","z":"0"\},\{"x":"100","y":"100","z":"100"\},\{"x":"55","y":"80","z":"250"\}\]');
+let expected = \[
+  \{ area: 220, volume: 2200 \},
+  \{ area: 329, volume: 1645 \},
+  \{ area: 440, volume: 0 \},
+  \{ area: 10000, volume: 1000000 \},
+  \{ area: 4400, volume: 1100000 \}
+\];
+assert.deepEqual(actual,expected,"The returned value is not correct")
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
 
 

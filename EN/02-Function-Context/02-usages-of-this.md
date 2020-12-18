@@ -1,9 +1,6 @@
 # Usages of "this"
-
 [slide]
-
 # "This" in a Method
-
 When inside a method ``this`` is used to access information stored in the object that "owns" the object:
 
 ```js live
@@ -11,36 +8,39 @@ let cat = {
     name: "Muffins",
     breed: "British Shorthair",
 
-    info: function() {
+    info: function () {
         return `${this.name} is a ${this.breed}.`
     },
-    whatIsThis: function() { return this }
+    whatIsThis: function () {
+        return this;
+    }
 }
 console.log(cat.info());
 console.log("******************");
 console.log(cat.whatIsThis());
 ```
+
 The above example illustrates how ``this`` is used to retrieve the values stored inside the properties of the **cat** object. Whenever we use ``this`` in a method it references the object itself and hence ``cat.whatIsThis()`` returns the cat object.
 
 You can also retrieve the values of object properties by replacing ``this`` with the object name.
 
 ```js
-info: function() {
-        return `${cat.name} is a ${cat.breed}.`
+info: function () {
+        return `${this.name} is a ${this.breed}.`
     },
-    whatIsThis: function() { return cat }
+    whatIsThis: function () {
+        return cat;
+    }
 ```
  This is not good practice and will make the code harder to maintain. Imagine you want to change the object's name in the future and miss updating it in your methods! 
 
 
-### Note: Attempting to return **name** or **breed** without ``this`` will have unintended consequences. Undefined will be returned if there is no variable with the same name outside the scope of the object, else it will return the value of a variable with the same name that you've already defined if it is in scope.
+### Note: Attempting to return **name** or **breed** without ``this`` will have unintended consequences. Undefined will be returned if there is no variable with the same name outside the scope of the object, else it will return the value of a variable with the same name that you have already defined if it is in scope.
 
 [/slide]
 
 [slide]
-
 # "This" Refers to the Parent Object
-
 Consider the below example:
 
 ```js live
@@ -52,7 +52,7 @@ function foo() {
 let user = {
     count: 10,
     foo: foo,
-    bar: function() { console.log(this === global); }
+    bar: function () { console.log(this === global); }
 }
 
 user.foo();
@@ -65,18 +65,17 @@ user.bar();
 ```
 
 Let's see what is going on in the code step by step to understand it better:
-1.  Defining a function **foo()** which checks if ``this===global`` (``this===window`` if running it in the browser).
+- Defining a function **foo()** which checks if ``this===global`` (``this===window`` if running it in the browser).
 
-2.  Creating an object **user** with two methods.
-   * ``foo: foo`` - to store the foo function we defined in step 1 inside a method with the same name.
-   *  ``bar: function() { console.log(this === global); }`` the **bar** method checks if ``this===global``
+- Creating an object **user** with two methods.
+   - ``foo: foo`` - to store the foo function we defined in step 1 inside a method with the same name.
+   -  ``bar: function() { console.log(this === global); }`` the **bar** method checks if ``this===global``
 
-3. Calling ``user.foo();`` invokes the method belonging to the **user** object. Returns: **false**, because ``this`` is used within an object's method and returns the object itself.
+- Calling ``user.foo();`` invokes the method belonging to the **user** object. Returns: **false**, because ``this`` is used within an object's method and returns the object itself.
 
-*  ``let func = user.bar;`` now we define a new function to which we assign the method **bar** from the **user** object. Returns **true**, because now ``this`` is called by the function **func** and not from the user object's method. **this** is indeed equal to **global**.
+- ``let func = user.bar;`` now we define a new function to which we assign the method **bar** from the **user** object. Returns **true**, because now ``this`` is called by the function **func** and not from the user object's method. **this** is indeed equal to **global**.
 
-5. ``user.bar();`` will return **false** because **bar()** is a method of the object **user** and ``this`` will return the object iself like it did with the **foo** method.
-
+- ``user.bar();`` will return **false** because **bar()** is a method of the object **user** and ``this`` will return the object iself like it did with the **foo** method.
 
 To summarize: 
  - used in methods, ``this`` references the object to which the method belongs.
@@ -93,24 +92,22 @@ If you create an HTML file and attach the below event handler to an element with
 function solve() {
     let button = document.getElementById('button');
 
-    button.addEventListener('click', function(e) {
+    button.addEventListener('click', function (e) {
         console.log(this);
     });
 }
 ```
 
-When referencing ``this`` from within an event, it returns the element from which the event was called. In our casey, it will be the button element that called the ``solve()`` function.
+When referencing ``this`` from within an event, it returns the element from which the event was called. In our case, it will be the button element that called the ``solve()`` function.
 
 You test this yourself by creating an HTML file with the following example code:
 
-```html
+```js
 <html>
 <body>
-
     <p>Welcome to your code playground!</p>
 
     <button id="button">Click me</button>
-
 
     <script>
         function solve() {
@@ -120,7 +117,6 @@ You test this yourself by creating an HTML file with the following example code:
                 console.log(this);
             });
         }
-
         solve();
     </script>
 </body>
