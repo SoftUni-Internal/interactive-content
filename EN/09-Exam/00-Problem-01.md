@@ -154,6 +154,106 @@ You may modify **href attributes** of links and add **action/method** **attribut
 
 **Design** and **implement** a client\-side front-end app (SPA) for managing articles. Implement the functionality described below.
 
+## Navigation Bar (5 Pts)
+
+Navigation links should correctly change the current page (view).
+
+- Clicking on the links in the **Header** should display the view behind the link (views are represented as sections in the HTML code).
+
+- Your application may **hide/show elements** by CSS \(**display**\: **none**\) or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
+
+The Logged-in user navbar should contain the following elements: `[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
+
+[image assetsSrc="js-application-exam-4.png" /]
+
+- The guest users header should contain the following elements:  `[SoftWiki]` which is a link to the Login page and `[Register]`.
+
+[image assetsSrc="js-application-exam-5.png" /]
+
+## Register User (5 Pts)
+
+By given **email** and **password**, the app should register a new user in the system and should **redirect you to the home page.**
+
+- Keep the user local data in the browser's **local/session storage.**
+
+Register once and create/read awesome articles!
+
+[image assetsSrc="js-application-exam-6.png" /]
+
+## Login User / Guest Home Page (5 Pts)
+
+By given **email** and **password**, the app should login an existing user.
+
+- Keep the user local data in the browser's local storage.
+
+- After a successful login **redirect to the home page.** 
+
+You are one step away from awesome articles! 
+
+[image assetsSrc="js-application-exam-7.png" /]
+
+## Home Page (40 Pts)
+
+Successfully logged-in users should be welcomed by the **Home page.**
+
+They should be able to see all created articles. 
+
+[image assetsSrc="js-application-exam-8.png" /]
+
+If there are **NO** such articles, the following view should be displayed:
+
+[image assetsSrc="js-application-exam-9.png" /]
+
+## Create Article (10 Pts)
+
+Logged-in users should be able to Create articles.
+
+Clicking the `[Create]` link in the **NavBar** should display the **Create Article page.**
+
+- **By default**, every newly created article must have additional information:
+
+  - **Creator:** the email of the current user;
+
+- The newly organizer article should be stored in the Firebase\Kinvey collection `articles`.
+
+- After an article is created successfully you should be redirected to the **Home Page.**
+
+[image assetsSrc="js-application-exam-10.png" /]
+
+## Details (15 Pts)
+
+Logged-in users should be able to **view details** about articles.
+
+Clicking the `[Details]` link in of a **particular article** should **display** the **Article Details page.**
+
+- If the currently logged-in user is the creator of the article, the `[Edit]` and `[Delete]` **buttons** should be set to **visible**, otherwise there should be only 1 button `[Back]` which redirects to the Home Page.
+
+[image assetsSrc="js-application-exam-11.png" /]
+
+[image assetsSrc="js-application-exam-12.png" /]
+
+## Edit Article (10 Pts)
+
+Logged-in users should be able to **edit** their **own** articles.
+
+Clicking the `[Edit]` link of a **particular article** on the **Details page** should display the **Edit page:**
+
+- After a successful edit the user should be redirected to the Home page.
+
+[image assetsSrc="js-application-exam-13.png" /]
+
+## Delete Article (5 Pts)
+
+Logged-in users should be able to delete their articles.
+
+Clicking the `[Delete]` **link** of an article (on the **Details page**) should **delete** the **article.**
+
+- After **successful article delete** you should  show the **Home page.**
+
+## (BONUS) Sorting:  (5 Pts)
+
+The articles in the **home page** (for registered users), should be sorted in **descending** order by **title.**
+
 [/task-description]
 [code-io /]
 [tests]
