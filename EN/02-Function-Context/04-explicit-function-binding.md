@@ -226,7 +226,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 **Output**
 
 ``` 
-
+[
   { area: 2, volume: 20 }, 
   { area: 49, volume: 490 },
   { area: 10, volume: 100 }
@@ -409,7 +409,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 **Output**
 
 ``` 
-
+[
   { area: 2, volume: 20 }, 
   { area: 49, volume: 490 },
   { area: 10, volume: 100 }
