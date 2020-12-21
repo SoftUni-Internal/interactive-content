@@ -214,19 +214,22 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 ### Note: Submit only the solve function.
 
-         | \[
-{"x":"1","y":"2","z":"10"}, | { area: 2, volume: 20 },
-{"x":"7","y":"7","z":"10"}, | { area: 49, volume: 490 },
-{"x":"5","y":"2","z":"10"} | { area: 10, volume: 100 }
-\]'                         | \]
+## Examples
+| Sample Input  |
+|---|
+| area, vol, \'[             | 
+{"x":"1","y":"2","z":"10"}, | 
+{"x":"7","y":"7","z":"10"}, | 
+{"x":"5","y":"2","z":"10"} |
+\]' |               
 
 **Output**
 
 ``` 
-|
-  { area: 2, volume: 20 }, |
-  { area: 49, volume: 490 },|
-  { area: 10, volume: 100 }|
+
+  { area: 2, volume: 20 }, 
+  { area: 49, volume: 490 },
+  { area: 10, volume: 100 }
 ]
 ```
 
@@ -397,19 +400,19 @@ The output should be **returned** as an **array of objects**. Each object has **
 ## Examples
 | Sample Input  |
 |---|
-| area, vol, \'[             | \[
-{"x":"1","y":"2","z":"10"}, | { area: 2, volume: 20 },
-{"x":"7","y":"7","z":"10"}, | { area: 49, volume: 490 },
-{"x":"5","y":"2","z":"10"} | { area: 10, volume: 100 }
-\]'                         | \]
+| area, vol, \'[             | 
+{"x":"1","y":"2","z":"10"}, | 
+{"x":"7","y":"7","z":"10"}, | 
+{"x":"5","y":"2","z":"10"} |
+\]' |               
 
 **Output**
 
 ``` 
-|
-  { area: 2, volume: 20 }, |
-  { area: 49, volume: 490 },|
-  { area: 10, volume: 100 }|
+
+  { area: 2, volume: 20 }, 
+  { area: 49, volume: 490 },
+  { area: 10, volume: 100 }
 ]
 ```
 
