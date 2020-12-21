@@ -88,7 +88,7 @@ new Promise(executor);
 In this example we will see how **new Promise** works:
 
 ```js live
-console.log('Before promise');
+console.log('Before promise');
 
 new Promise(function (resolve, reject) {
    setTimeout(function () {
