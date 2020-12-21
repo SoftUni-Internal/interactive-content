@@ -47,21 +47,21 @@ If the request is not successful, or the information is not in the expected form
 
 ## Examples
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(6)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(6).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(7)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(7).png" /]
 
 When the button is clicked, the results are displayed in the corresponding elements:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(8)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(8).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(9)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(9).png" /]
 
 If an error occurs, the stop name changes to Error:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(10)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(10).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(11)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(11).png" /]
 
 ## Hints
 
@@ -240,13 +240,13 @@ function busSchedule(){
 
 You can download the resources for this problem from [here](https://mega.nz/file/SdhmGQBR#XXw-a1o4YZseJGGUr2ivu7_98h-g66VJyFNi7upstTQ).
 
-Write a JS program that tracks the progress of a bus on it’s route and announces it inside an info box.
+Write a JS program that tracks the progress of a bus on it's route and announces it inside an info box.
 
 The program should display which is the upcoming stop and once the bus arrives, to request from the server the name of the next one.
 
 The bus has two states – **moving** and **stopped**.
 
-When it is **stopped**, only the button **“Depart”** is **enabled**, while the info box shows the name of the **current** stop.
+When it is **stopped**, only the button **Depart** is **enabled**, while the info box shows the name of the **current** stop.
 
 When it is **moving**, only the button **Arrive** is **enabled**, while the info box shows the name of the **upcoming** stop. Initially, the info box shows **Not Connected** and the **Arrive** button is **disabled**.
 
@@ -263,13 +263,13 @@ stopId {
 }
 ```
 
-Update the info box with the information from the response, disable the “Depart” button and enable the “Arrive” button.
+Update the info box with the information from the response, disable the `Depart` button and enable the `Arrive` button.
 
 The info box text should look like this \(replace the highlighted part with the relevant value\):
 
 `Next stop {stopName}`
 
-When the "Arrive" button is clicked, update the text, disable the “Arrive” button and enable the “Depart” button.
+When the "Arrive" button is clicked, update the text, disable the `Arrive` button and enable the `Depart` button.
 
 The info box text should look like this (replace the highlighted part with the relevant value):
 
@@ -283,25 +283,25 @@ If invalid data is received, show **Error** inside the info box and **disable** 
 
 Initially, the info box shows “Not Connected” and the arrive button is disabled.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(12)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(12).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(13)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(13).png" /]
 
 When Depart is clicked, a request is made with the first ID.
 
 The info box is updated with the new information and the buttons are changed:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(14)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(14).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(15)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(15).png" /]
 
 Clicking Arrive, changes the info box and swaps the buttons.
 
 This allows Depart to be clicked again, which makes a new request and updates the information:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(16)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(16).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(17)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(17).png" /]
 
 [/task-description]
 [code-io /]
@@ -443,7 +443,7 @@ Write a JS program that records and displays messages.
 
 The user can post a message, supplying a name and content and retrieve all currently recorded messages.
 
-**Firebase url** for the requests \- `https://rest-messanger.firebaseio.com/messanger`.
+**Firebase url** for the requests - `https://rest-messanger.firebaseio.com/messanger`.
 
 When **Send button** is clicked you should create a **new object** and send a **post request** to the firebase url.
 
@@ -456,9 +456,9 @@ Use the following message structure:
 }
 ```
 
-The key associated with each message object is not important \- when making a **POST** request with the message object as parameter, Firebase will automatically assign a random key.
+The key associated with each message object is not important - when making a **POST** request with the message object as parameter, Firebase will automatically assign a random key.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(18)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(18).png" /]
 
 If you click over **Refresh button** you should **get all** messages with **GET request** and display them into the textarea.
 
@@ -468,9 +468,9 @@ Use the following message format:
 
 ## Examples
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(19)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(19).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(20)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(20).png" /]
 
 [/task-description]
 [code-io /]
@@ -599,9 +599,9 @@ The url to which your program should make requests is: 'https://phonebook-nakov.
 
 ## Screenshots:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(21)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(21).png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(22)" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(22).png" /]
 
 [/task-description]
 [code-io /]
