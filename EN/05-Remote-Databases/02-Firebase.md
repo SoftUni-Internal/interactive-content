@@ -306,13 +306,13 @@ Click "continue to console".
 
 Create a databasde.
 
-[image assetsSrc="Remote-Databases(9).png" /]
-
 Click on "Realtime Database".
 
-[image assetsSrc="Remote-Databases(10).png" /]
+[image assetsSrc="Remote-Databases(9).png" /]
 
 Click on "Create Databse".
+
+[image assetsSrc="Remote-Databases(10).png" /]
 
 Click "Next".
 
