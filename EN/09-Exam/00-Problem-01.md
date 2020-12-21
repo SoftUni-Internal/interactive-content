@@ -19,21 +19,21 @@ function solve(){
 
 You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST and JSON with cloud\-based backend \(Firebase or Kinvey\).
 
-Using libraries like **jQuery**, **Handlebars** and **PageJs** is allowed but is **not obligatory**. 
+Using libraries like **jQuery**, **Handlebars** and **PageJs** is allowed but is **not obligatory**.
 
-The app keeps **users** and **articles**. 
+The app keeps **users** and **articles**.
 
-**Users** should be able to **register** and **login**. 
+**Users** should be able to **register** and **login**.
 
-Logged\-in users should be able to view all articles, create articles, see details about an article and **logout**. 
+Logged\-in users should be able to view all articles, create articles, see details about an article and **logout**.
 
 Logged\-in users should also be able to edit or delete the articles they have created. Create a Firebase REST Service.
 
 Register at [Firebase](https://firebase.google.com) and create application to keep your data in the cloud.
 
-Create a collection called **articles**. 
+Create a collection called **articles**.
 
-Each **article** has a **title**, **category**, **content** and **creator.** 
+Each **article** has a **title**, **category**, **content** and **creator.**
 
 [image assetsSrc="js-application-exam-1.png" /]
 
@@ -74,7 +74,6 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 	"content": "Lorem ipsum dolor sit amet, consectetur...",
 	 "creator-email": "peter.smith@email.com"
 }
-
 ```
 
 - Error response: 401 Unauthorized
@@ -142,11 +141,11 @@ Your application may **hide/show elements** by CSS **(display: none)** or **dele
 
 ## Important
 
-Don't change the elements' class names and ids. 
+Don't change the elements' class names and ids.
 
-Don't rename form fields/link names/ids. 
+Don't rename form fields/link names/ids.
 
-You are **allowed** to add **data attributes** to any elements. 
+You are **allowed** to add **data attributes** to any elements.
 
 You may modify **href attributes** of links and add **action/method** **attributes** to **forms**, to allow the use of a routing library.
 
@@ -186,9 +185,9 @@ By given **email** and **password**, the app should login an existing user.
 
 - Keep the user local data in the browser's local storage.
 
-- After a successful login **redirect to the home page.** 
+- After a successful login **redirect to the home page.**
 
-You are one step away from awesome articles! 
+You are one step away from awesome articles!
 
 [image assetsSrc="js-application-exam-7.png" /]
 
@@ -196,7 +195,7 @@ You are one step away from awesome articles!
 
 Successfully logged-in users should be welcomed by the **Home page.**
 
-They should be able to see all created articles. 
+They should be able to see all created articles.
 
 [image assetsSrc="js-application-exam-8.png" /]
 
