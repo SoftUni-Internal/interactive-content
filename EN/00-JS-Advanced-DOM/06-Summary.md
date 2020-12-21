@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson you learned about:
+In this lesson we learned about:
 
 **DOM**
 
