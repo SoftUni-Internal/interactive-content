@@ -475,9 +475,7 @@ yes
 [code-task title="Ex.Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function getArticleGenerator(articles) {
-    // TODO
-}
+
 ```
 [/code-editor]
 [task-description]
@@ -775,7 +773,9 @@ yes
 [code-task title="Ex.Problem: Next Article" taskId="js-advanced-function-context-nextarticle" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-
+function getArticleGenerator(articles) {
+    // TODO
+}
 ```
 [/code-editor]
 [task-description]
@@ -842,10 +842,6 @@ Return a **function** that displays the array elements on the web page.
 [image assetsSrc="function-context-13.png" /]
 
 [image assetsSrc="function-context-14.png" /]
-
-
-
-## Examples
 
 
 [/task-description]

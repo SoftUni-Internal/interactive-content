@@ -334,3 +334,108 @@ yes
 [/tests]
 [/code-task]
 [/slide]
+
+
+[slide]
+# Solution: Person
+[code-task title="Solution: Person" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+
+```
+[/code-editor]
+[task-description]
+## Description
+Write a JS program which takes **first** & **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName** ( **"{firstName} {lastName}"** ) properties which should be all **accessibles**, we discovered that "accessible" also means "mutable". This means that:
+
+- If .**firstName** or .**lastName** have changed, then .**fullName** should also be changed.
+
+- If .**fullName** is changed, then .**firstName** and .**lastName** should also be changed.
+
+- If **fullName** is **invalid**, you should not change the other properties. A **valid** **full name** is in the format: **"{firstName} {lastName}"**
+
+### Note: For more information check the examples below.
+
+## Examples
+
+**Sample Input**
+```js
+let person = new Person("Peter", "Smith");
+console.log(person.fullName);//Peter Smith
+person.firstName = "George";
+console.log(person.fullName);//George Smith
+person.lastName = "Peterson";
+console.log(person.fullName);//George Peterson
+person.fullName = "Nikola Tesla";
+console.log(person.firstName)//Nikola
+console.log(person.lastName)//Tesla
+let person = new Person("Albert", "Simpson");
+console.log(person.fullName);//Albert Simpson
+person.firstName = "Simon";
+console.log(person.fullName);//Simon Simpson
+person.fullName = "Peter";
+console.log(person.firstName) // Simon
+console.log(person.lastName) // Simpson
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+let Person = result;
+let a = new Person("Albert", "Simpson");
+let actual = a.fullName;
+let expected = "Albert Simpson";
+assert.equal(actual,expected);
+a.firstName = "Simon";
+let actualFullName = a.fullName;
+let expectedFullName = "Simon Simpson";
+assert.equal(actualFullName,expectedFullName);
+a.fullName = "Peter";
+let b = a.firstName;
+let expectedB = "Simon"
+assert.equal(b,expectedB);
+let v = a.lastName;
+let expectedV = "Simpson";
+assert.equal(v,expectedV);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let person = new Person("Peter", "Ivanov");
+
+let act1 = person.fullName;
+let exp1 = "Peter Ivanov";
+assert.equal(act1,exp1);
+
+person.firstName = "George";
+let act2 = person.fullName;
+let exp2 = "George Ivanov";
+assert.equal(act2,exp2);
+
+person.lastName = "Peterson";
+let act3 = person.fullName;
+let exp3 = "George Peterson";
+assert.equal(act3,exp3);
+
+person.fullName = "Nikola Tesla";
+let act4 = person.firstName;
+let exp4 = "Nikola";
+assert.equal(act4,exp4);
+
+let act5 = person.lastName;
+let exp5 = "Tesla";
+assert.equal(act5,exp5);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]

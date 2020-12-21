@@ -1,10 +1,6 @@
+[slide]
 # Lesson Introduction
 
-[slide]
-# Table of Contents
-
-
-## In this lesson you will learn about:
 **1. What is "this"?** 
 - What is behind the ``this`` keyword and the meaning of **function context**.
 
