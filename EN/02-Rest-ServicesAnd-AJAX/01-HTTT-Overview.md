@@ -10,7 +10,7 @@ It is a text-based client-server protocol, used for transferring Web resources, 
 
 **HTTP** is **request-response** based.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX.png" /]
 
 As we can see the **client** sends a **request** and the **server** sends a **response**.
 
