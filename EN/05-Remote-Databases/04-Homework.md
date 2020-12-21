@@ -83,7 +83,7 @@ Use the skeleton from the provided resources.
 
 [slide]
 
-# Problem: Wild Wild 
+# Problem: Wild Wild West
 
 **This task is not included in the final result**.
 
