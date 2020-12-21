@@ -4,6 +4,8 @@
 
 # Resources
 
+Download the resources from here - [Mega.nz](https://mega.nz/file/fZgHjC7Z#ai8TEYx_-CtqeRZTyMzFHYEguVHBUEA7heA_3bjXSJ4)
+
 [/slide]
 
 [slide]
