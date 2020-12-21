@@ -15,7 +15,7 @@ function speak(message) {
 
 let person = { name: 'John' };
 
-greet.call(person, "This is my story...");
+speak.call(person, "This is my story...");
 ```
 Normally ``this`` would have pointed back to the **global object** or **window** and returned ``undefined`` for ``this.name``, but because we explicitly bound the object **person** to the ``speak()`` function using ``call()``, it behaves as though ``speak()`` is a method of the person object, even though we see it is an outside function.
 [/slide]
@@ -214,12 +214,44 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 ### Note: Submit only the solve function.
 
-## Examples
+         | \[
+{"x":"1","y":"2","z":"10"}, | { area: 2, volume: 20 },
+{"x":"7","y":"7","z":"10"}, | { area: 49, volume: 490 },
+{"x":"5","y":"2","z":"10"} | { area: 10, volume: 100 }
+\]'                         | \]
 
-| Sample Input  | Output |
-|---|---|
-| area, vol, \'{\"x\":\"1\",\"y\":\"2\",\"z\":\"10\"},<br>{\"x\":\"7\",\"y\":\"7\",\"z\":\"10\"},<br>{\"x\":\"5\",\"y\":\"2\",\"z\":\"10\"}<br>]\'  | <br>  { area: 2, volume: 20 },<br>  { area: 49, volume: 490 },<br>  { area: 10, volume: 100 }<br>  |
-| area, vol, \<br>{\"x\":\"10\",\"y\":\"-22\",\"z\":\"10\"},<br>{\"x\":\"47\",\"y\":\"7\",\"z\":\"-5\"},<br>{\"x\":\"55\",\"y\":\"8\",\"z\":\"0\"},<br>{\"x\":\"100\",\"y\":\"100\",\"z\":\"100\"},<br>{\"x\":\"55\",\"y\":\"80\",\"z\":\"250\"}<br>\'  | <br>  { area: 220, volume: 2200 },<br>  { area: 329, volume: 1645 },<br>  { area: 440, volume: 0 },<br>  { area: 10000, volume: 1000000 },<br>  { area: 4400, volume: 1100000 }<br> |
+**Output**
+
+``` 
+|
+  { area: 2, volume: 20 }, |
+  { area: 49, volume: 490 },|
+  { area: 10, volume: 100 }|
+]
+```
+
+
+| Sample Input |
+| --- |
+| area, vol, \'[  |
+{"x":"10","y":"-22","z":"10"}, |
+{"x":"47","y":"7","z":"-5"}, |
+{"x":"55","y":"8","z":"0"}, |
+{"x":"100","y":"100","z":"100"}, |
+{"x":"55","y":"80","z":"250"} |
+]' |
+
+**Output**
+
+```
+[
+  { area: 220, volume: 2200 },
+  { area: 329, volume: 1645 },
+  { area: 440, volume: 0 },
+  { area: 10000, volume: 1000000 },
+  { area: 4400, volume: 1100000 }
+]
+```
 
 [/task-description]
 [code-io /]
@@ -363,10 +395,47 @@ The output should be **returned** as an **array of objects**. Each object has **
 ### Note: Submit only the solve function. 
 
 ## Examples
-| Sample Input  | Output |
-|---|---|
-| area, vol, \'[{\"x\":\"1\",\"y\":\"2\",\"z\":\"10\"},\{\"x\":\"7\",\"y\":\"7\",\"z\":\"10\"},\{\"x\":\"5\",\"y\":\"2\",\"z\":\"10\"}\]\'  | [\{ area: 2, volume: 20 }, { area: 49, volume: 490 },\{ area: 10, volume: 100 }]  |
-| area, vol, \'{\"x\":\"10\",\"y\":\"-22\",\"z\":\"10\"},{\"x\":\"47\",\"y\":\"7\",\"z\":\"-5\"},\{\"x\":\"55\",\"y\":\"8\",\"z\":\"0\"},\{\"x\":\"100\",\"y\":\"100\",\"z\":\"100\"},\{\"x\":\"55\",\"y\":\"80\",\"z\":\"250\"}\  | [\{ area: 220, volume: 2200 },\{ area: 329, volume: 1645 },  { area: 440, volume: 0 },\ { area: 10000, volume: 1000000 },\ { area: 4400, volume: 1100000 }\] |
+| Sample Input  |
+|---|
+| area, vol, \'[             | \[
+{"x":"1","y":"2","z":"10"}, | { area: 2, volume: 20 },
+{"x":"7","y":"7","z":"10"}, | { area: 49, volume: 490 },
+{"x":"5","y":"2","z":"10"} | { area: 10, volume: 100 }
+\]'                         | \]
+
+**Output**
+
+``` 
+|
+  { area: 2, volume: 20 }, |
+  { area: 49, volume: 490 },|
+  { area: 10, volume: 100 }|
+]
+```
+
+
+| Sample Input |
+| --- |
+| area, vol, \'[  |
+{"x":"10","y":"-22","z":"10"}, |
+{"x":"47","y":"7","z":"-5"}, |
+{"x":"55","y":"8","z":"0"}, |
+{"x":"100","y":"100","z":"100"}, |
+{"x":"55","y":"80","z":"250"} |
+]' |
+
+**Output**
+
+```
+[
+  { area: 220, volume: 2200 },
+  { area: 329, volume: 1645 },
+  { area: 440, volume: 0 },
+  { area: 10000, volume: 1000000 },
+  { area: 4400, volume: 1100000 }
+]
+```
+
 
 [/task-description]
 [code-io /]
