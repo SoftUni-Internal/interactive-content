@@ -47,21 +47,21 @@ If the request is not successful, or the information is not in the expected form
 
 ## Examples
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(6).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(6)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(7).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(7)" /]
 
 When the button is clicked, the results are displayed in the corresponding elements:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(8).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(8)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(9).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(9)" /]
 
 If an error occurs, the stop name changes to Error:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(10).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(10)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(11).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(11)" /]
 
 ## Hints
 
@@ -283,25 +283,25 @@ If invalid data is received, show **Error** inside the info box and **disable** 
 
 Initially, the info box shows “Not Connected” and the arrive button is disabled.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(12).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(12)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(13).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(13)" /]
 
 When Depart is clicked, a request is made with the first ID.
 
 The info box is updated with the new information and the buttons are changed:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(14).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(14)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(15).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(15)" /]
 
 Clicking Arrive, changes the info box and swaps the buttons.
 
 This allows Depart to be clicked again, which makes a new request and updates the information:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(16).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(16)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(17).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(17)" /]
 
 [/task-description]
 [code-io /]
@@ -458,7 +458,7 @@ Use the following message structure:
 
 The key associated with each message object is not important \- when making a **POST** request with the message object as parameter, Firebase will automatically assign a random key.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(18).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(18)" /]
 
 If you click over **Refresh button** you should **get all** messages with **GET request** and display them into the textarea.
 
@@ -468,9 +468,9 @@ Use the following message format:
 
 ## Examples
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(19).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(19)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(20).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(20)" /]
 
 [/task-description]
 [code-io /]
@@ -599,9 +599,9 @@ The url to which your program should make requests is: 'https://phonebook-nakov.
 
 ## Screenshots:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(21).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(21)" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(22).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(22)" /]
 
 [/task-description]
 [code-io /]
