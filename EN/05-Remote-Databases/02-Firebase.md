@@ -270,29 +270,29 @@ Open a browser and type in "firebase console".
 
 [image assetsSrc="Remote-Databases(1).png" /]
 
-Once you are in, you should be able to get to this window:
-
-[image assetsSrc="Remote-Databases(2).png" /]
+Once you are in, you should be able to see to this window:
 
 Create a new project by clicking on "Add project".
 
-[image assetsSrc="Remote-Databases(3).png" /]
+[image assetsSrc="Remote-Databases(2).png" /]
 
 Type in a project name for example "TestApp" and click "Continue".
 
-[image assetsSrc="Remote-Databases(4).png" /]
+[image assetsSrc="Remote-Databases(3).png" /]
 
 Disable google analytics you will not need it for now and click "Create project".
 
-[image assetsSrc="Remote-Databases(5).png" /]
+[image assetsSrc="Remote-Databases(4).png" /]
 
 Click "Continue".
 
+[image assetsSrc="Remote-Databases(5).png" /]
+
 Next we need to add an App.
 
-[image assetsSrc="Remote-Databases(6).png" /]
-
 Click on this sing "</>".
+
+[image assetsSrc="Remote-Databases(6).png" /]
 
 Type in a name for the App, for example "books" and click "Register app".
 
