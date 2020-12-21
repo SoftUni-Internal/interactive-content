@@ -278,7 +278,7 @@ Create a new project by clicking on "Add project".
 
 [image assetsSrc="Remote-Databases(3).png" /]
 
-Type in a project name for example "TestApp" and click **Continue**.
+Type in a project name for example "TestApp" and click "Continue".
 
 [image assetsSrc="Remote-Databases(4).png" /]
 
