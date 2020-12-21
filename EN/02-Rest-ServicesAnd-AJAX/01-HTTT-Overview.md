@@ -6,9 +6,9 @@
 
 **HTTP** which, means **Hyper Text Transfer Protocol**, is an application-layer protocol.
 
-It is a text\-based client\-server protocol, used for transferring Web resources, like HTML files images and etc.
+It is a text-based client-server protocol, used for transferring Web resources, like HTML files images and etc.
 
-**HTTP** is **request\-response** based.
+**HTTP** is **request-response** based.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX" /]
 
@@ -24,13 +24,13 @@ As we can see the **client** sends a **request** and the **server** sends a **re
 
 Here are the most used ones:
 
--  **GET** \- Retrieves or loads a resource.
--  **POST** \- Creates or stores a resource.
--  **PUT** \- Updates a resource.
--  **DELETE** \- Removes a resource.
--  **PATCH** \- Updates partially a resource.
--  **HEAD** \- Retrieves headers of a resource.
--  **OPTIONS** \- Returns the HTTP methods that the server supports for the specified URL
+- **GET** - Retrieves or loads a resource.
+- **POST** - Creates or stores a resource.
+- **PUT** - Updates a resource.
+- **DELETE** - Removes a resource.
+- **PATCH** - Updates partially a resource.
+- **HEAD** - Retrieves headers of a resource.
+- **OPTIONS** - Returns the HTTP methods that the server supports for the specified URL
 
 These methods are case sensitive.
 
@@ -64,7 +64,7 @@ Cache-Control: no-cache
 
 The first line, `GET /users/softuni/repos HTTP/1.1`, is the request line.
 
-After it, we have the **headers** and the **body** \(`<CRLF>`\), which is empty.
+After it, we have the **headers** and the **body** `<CRLF>`, which is empty.
 
 And here is an example of a **POST** request:
 
@@ -132,17 +132,17 @@ Every response has a **status code**, which can tell us if the request is succes
 
 Here are some of the codes:
 
-| Status Code |    Action    | Description |
+| Status Code | Action | Description |
 | :---:  | :---:  | :---:  |
-| 200         |      OK      | The resource is successfully retrieved. |
-| 201         |   Created    | The new resource is created. |
-| 204         |  No Content  | There is nothing to return. |
-| 301 or 302  |    Moved     | The resource is moved or redirected to another location. |
-| 400         | Bad Request  | The request is invalid or there is a syntax error. |
-| 401 or 403  | Unauthorized | Authentication failed or Access Denied. |
-| 404         |  Not Found   | The resource is not valid or not found. |
-| 409         |   Conflict   | There is a conflict in the request, for example: duplicated email. |
-| 500 or 503  | Server Error | There is an Internal server error or the service is unavailable. |
+| `200`         |      `OK`      | The resource is successfully retrieved. |
+| `201`         |   `Created`    | The new resource is created. |
+| `204`         |  `No Content`  | There is nothing to return. |
+| `301 or 302`  |    `Moved`     | The resource is moved or redirected to another location. |
+| `400`         | `Bad Request`  | The request is invalid or there is a syntax error. |
+| `401 or 403`  | `Unauthorized` | Authentication failed or Access Denied. |
+| `404`         |  `Not Found`   | The resource is not valid or not found. |
+| `409`         |   `Conflict`   | There is a conflict in the request, for example: duplicated email. |
+| `500 or 503`  | `Server Error` | There is an Internal server error or the service is unavailable. |
 
 [/slide]
 
@@ -150,15 +150,15 @@ Here are some of the codes:
 
 # Content-Type and Disposition
 
-Every request needs to have a field with **Content\-Type** or **Content\-Disposition**.
+Every request needs to have a field with **Content-Type** or **Content-Disposition**.
 
 This field specifies the format of the request.
 
-We can set the **Content\-Type** to be **JSON\-encoded**.
+We can set the **Content-Type** to be **JSON-encoded**.
 
 It will look like this: `Content-Type: application/json`.
 
-We can also set **Content\-Type** to be `Content-Type: text/html`
+We can also set **Content-Type** to be `Content-Type: text/html`
 
 And if we want to download a pdf, we can set it to:
 
