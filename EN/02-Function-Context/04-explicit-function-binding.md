@@ -360,13 +360,13 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 ```
 
-### Note: Submit only the solve function.
+### Note: Submit only the solve function. 
 
 ## Examples
 | Sample Input  | Output |
 |---|---|
-| area, vol, \'[<br>{\"x\":\"1\",\"y\":\"2\",\"z\":\"10\"},<br>{\"x\":\"7\",\"y\":\"7\",\"z\":\"10\"},<br>{\"x\":\"5\",\"y\":\"2\",\"z\":\"10\"}<br>]\'  | [<br>  { area: 2, volume: 20 },<br>  { area: 49, volume: 490 },<br>  { area: 10, volume: 100 }<br>]  |
-| area, vol, \'[<br>{\"x\":\"10\",\"y\":\"-22\",\"z\":\"10\"},<br>{\"x\":\"47\",\"y\":\"7\",\"z\":\"-5\"},<br>{\"x\":\"55\",\"y\":\"8\",\"z\":\"0\"},<br>{\"x\":\"100\",\"y\":\"100\",\"z\":\"100\"},<br>{\"x\":\"55\",\"y\":\"80\",\"z\":\"250\"}<br>]\'  | [<br>  { area: 220, volume: 2200 },<br>  { area: 329, volume: 1645 },<br>  { area: 440, volume: 0 },<br>  { area: 10000, volume: 1000000 },<br>  { area: 4400, volume: 1100000 }<br>] |
+| area, vol, \'[\<br\>{\"x\":\"1\",\"y\":\"2\",\"z\":\"10\"},\<br\>{\"x\":\"7\",\"y\":\"7\",\"z\":\"10\"},\<br\>{\"x\":\"5\",\"y\":\"2\",\"z\":\"10\"}\<br\>]\'  | [\<br\>  { area: 2, volume: 20 },\<br\>  { area: 49, volume: 490 },\<br\>  { area: 10, volume: 100 }\<br\>]  |
+| area, vol, \'[\<br\>{\"x\":\"10\",\"y\":\"-22\",\"z\":\"10\"},\<br\>{\"x\":\"47\",\"y\":\"7\",\"z\":\"-5\"},\<br\>{\"x\":\"55\",\"y\":\"8\",\"z\":\"0\"},\<br\>{\"x\":\"100\",\"y\":\"100\",\"z\":\"100\"},\<br\>{\"x\":\"55\",\"y\":\"80\",\"z\":\"250\"}\<br\>]\'  | [\<br\>  { area: 220, volume: 2200 },\<br\>  { area: 329, volume: 1645 },\<br\>  { area: 440, volume: 0 },\<br\>  { area: 10000, volume: 1000000 },\<br\>  { area: 4400, volume: 1100000 }\<br\>] |
 
 [/task-description]
 [code-io /]
