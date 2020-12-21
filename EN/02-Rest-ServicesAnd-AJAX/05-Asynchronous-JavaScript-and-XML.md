@@ -69,9 +69,9 @@ Promises have a state.
 
 The states are:
 
--  Pending \- it means that the operation is still running, or it is unfinished.
--  Fulfilled \- this one means that the operation is finished, and the result is available.
--  Failed \- It means that the operation failed, and an error is present.
+- Pending - it means that the operation is still running, or it is unfinished.
+- Fulfilled - this one means that the operation is finished, and the result is available.
+- Failed - It means that the operation failed, and an error is present.
 
 They use **Promise** object.
 
@@ -83,7 +83,7 @@ new Promise(executor);
 
 [slide]
 
-# Promise.then\(\) - Example
+# Promise.then(): Example
 
 In this example we will see how **new Promise** works:
 
@@ -103,7 +103,7 @@ console.log('After promise');
 
 The first and third `console.log()`, are printed first because the promise is not resolved yet.
 
-Once finished, it will console\.log the result as a third `console.log()`.
+Once finished, it will console.log the result as a third `console.log()`.
 
 That is because **new Promise** is asynchronous.
 
