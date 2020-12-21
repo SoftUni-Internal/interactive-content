@@ -2,8 +2,6 @@
 
 # Summary
 
-In this lesson we learned about:
-
 **DOM**
 
 - A programming API for **XML** and **HTML** documents
@@ -16,7 +14,7 @@ In this lesson we learned about:
 
 - **Accessing and using** the browser's objects with JavaScript
 
-In the next lesson you will learn:
+The topic of the next lesson is:
 
 **DOM Manipulations**
 

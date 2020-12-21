@@ -16,7 +16,7 @@
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) _**for this task.**_
 
 An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
 
@@ -40,13 +40,13 @@ We see that the **textboxes** and the **div** have **id** attributes on them.
 
 We can take the numbers directly from the input field by using the **getElementById()** function.
 
-After we have taken the elements from the DOM, it’s time to do the actual work.
+After we have taken the elements from the DOM, it is time to do the actual work.
 
 We get the values of the two **textboxes**, the value of a textbox, as one would expect, is **text**. In order to get a **number**, we need to use a function to **parse them**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-3.jpg" /]
 
-All that’s left now is to append the result to the **div**.
+All that is left now is to append the result to the **div**.
 
 We use the same function to get the **result** element by id and change its **text content** to the result of the **subtraction**.
 
@@ -133,7 +133,7 @@ yes
 
 # Description
 
-_**Here is a link for the [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) for this task.**_
+_**Here is a link to the**_ [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) _**for this task.**_
 
 Your task is to take values from **input** fields with **ids "newItemText"** and **"newItemValue"**.
 
@@ -231,7 +231,7 @@ yes
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) _**for this task.**_
 
 An **html** file is given and your task is to show **more/less** information by clicking a **\[ADD\] button** (it is not an actual button, but a **span** that has an **onclick** event attached to it).
 
@@ -340,7 +340,7 @@ yes
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) _**for this task.**_
 
 Write a **function that orders names alphabetically.**
 
@@ -784,7 +784,7 @@ yes
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) _**for this task.**_
 
 Write a **function** to create the functionality of **a chat room.**
 
@@ -1201,7 +1201,7 @@ yes
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) _**for this task.**_
 
 Write a function that implements a calculator that has the following functionalities:
 
@@ -1720,7 +1720,7 @@ yes
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) _**for this task.**_
 
 Write a function that **converts** a **decimal number** to **binary** and **hexadecimal**.
 

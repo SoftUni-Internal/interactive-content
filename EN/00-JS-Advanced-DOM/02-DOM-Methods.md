@@ -97,7 +97,7 @@ HTML DOM properties are values that you can `get` or `set`:
 
 The given code produces the following result:
 
-[image assetsSrc="screenshot.JPG" /]
+[image assetsSrc="screenshot.jpg" /]
 
 With this example ` - DONE` is added to the end of `DOM Properties example` and as a result, there is `DOM Properties example - DONE`.
 

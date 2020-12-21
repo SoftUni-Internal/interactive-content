@@ -1,15 +1,13 @@
-# Lesson Introduction
-
-
 [slide]
-# Table of Contents
+
+# Lesson Introduction
 
 [vimeo-video]
 [stream language="EN" videoId="" default /]
 [stream language="RO" videoId="" /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## Lesson content:
 
 **1. DOM**
 
@@ -17,7 +15,7 @@
 
 **2. DOM Methods**
 
-- What helpful methods can be used while working with the DOM.
+- What methods can be used while working with the DOM.
 
 **3. DOM Manipulations**
 

@@ -95,7 +95,7 @@ let h1 = document.getElementById("page-title");
 let newH1 = h1.cloneNode(true); //returns a duplicate of the h1 tag above
 ```
 
-It is important to know that even though these elements are created, they **don't exist** in the HTML document.
+It is important to know that even though these elements are created, they **do not exist** in the HTML document.
 
 They are just **Javascript variables**.
 [/slide]
@@ -143,15 +143,15 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) _**for this task.**_
 
-In this problem, you should create a JS functionality which creates articles and appends them into an article section.
+In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
-The programs in this language are called **scripts**. They can be written right in the HTML and **executed automatically** as the page loads.
+The programs in this language are called **scripts**. They can be written directly in the HTML file and **executed automatically** as the page loads.
 
-Scripts are provided and executed as a **plain text**. They don't need a special preparation or a compilation to run.
+Scripts are provided and executed as a **plain text**. They do not need special preparation or compilation to run.
 
-In this aspect, JavaScript is very **different** from another language called Java.
+In this aspect, JavaScript is very **different** from many other languages, which require compilation and additional steps before it such as Java.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
@@ -348,13 +348,13 @@ yes
 
 # Description
 
-In this problem, you should create a JS functionality which creates articles and appends them into an article section.
+In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
-The programs in this language are called **scripts**. They can be written right in the HTML and **executed automatically** as the page loads.
+The programs in this language are called **scripts**. They can be written directly in the HTML file and **executed automatically** as the page loads.
 
-Scripts are provided and executed as a **plain text**. They don't need a special preparation or a compilation to run.
+Scripts are provided and executed as a **plain text**. They do not need special preparation or compilation to run.
 
-In this aspect, JavaScript is very **different** from another language called Java.
+In this aspect, JavaScript is very **different** from many other languages, which require compilation and additional steps before it such as Java.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-1.jpg" /]
 
@@ -541,13 +541,13 @@ yes
 
 Attributes can **define additional** information about the HTML element.
 
-DOM properties, on the other hand, are **properties of the object** the represents an HTML element.
+DOM properties, on the other hand, are **properties of the object** that represents an HTML element.
 
 Even though they might look the same, they **are not**.
 
-There are DOM properties that **don't correspond** to an HTML element and vice versa.
+There are DOM properties that **do not correspond** to an HTML element and vice versa.
 
-**Attributes initialize DOM properties** and although these properties **can change**, an attribute **stays the same**.
+**HTML Attributes initialize DOM properties** and although DOM properties **can change**, an HTML attribute **stays the same**.
 
 [/slide]
 
@@ -681,7 +681,7 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Description
 
-Here is a link for the [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) for this task.
+_**Here is a link to the**_ [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) _**for this task.**_
 
 In this problem, you should **create a JS functionality** which **changes the size and the color** of a given **paragraph** on **every click**.
 
@@ -1350,7 +1350,7 @@ console.log(thirdLi.textContent); //Anne
 
 These properties would also return **null** if there is just one child element.
 
-The last two methods to mention are for adding a child to the **front** and the **back** of a parent element.
+The last two methods to mention are used to add a child to the **front** and the **back** of a parent element.
 
 - `.appendChild`
 
