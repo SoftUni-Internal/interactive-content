@@ -270,7 +270,7 @@ Open a browser and type in "firebase console".
 
 [image assetsSrc="Remote-Databases(1).png" /]
 
-Once you are in, you should be able to see to this window:
+Once you are in, you should be able to see this window:
 
 Create a new project by clicking on "Add project".
 
