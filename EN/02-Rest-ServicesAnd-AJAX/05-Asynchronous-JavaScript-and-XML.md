@@ -16,7 +16,7 @@ There two types of **AJAX**:
 
 Here is an example of AJAX workflow:
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(5).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-5.png" /]
 
 [/slide]
 

@@ -14,7 +14,7 @@ On the resources, we can use the **CRUD** operation.
 
 **CRUD** stands for **create**, **read**, **update** and **delete**.
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-(4).png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-4.png" /]
 
 **RESTful** services provide access to the server\-side resources.
 
