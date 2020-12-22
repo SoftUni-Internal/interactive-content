@@ -18,7 +18,7 @@ This clear **distinction** between **logic and data** makes our code much **easi
 
 [slide]
 
-# Templating Concepts
+# Concepts
 
 The **static** parts of our webpage are stored in the form of **templates**, while the **dynamic** content, such as user data, is being stored **separately**, most often in a database.
 
