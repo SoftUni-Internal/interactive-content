@@ -4,7 +4,7 @@
 
 # What is Templating?
 
-**Templating** is the procedure of separating an **HTML document's structure** from the actual **content**.
+**Templating** is the procedure of separating an **HTML document\'s structure** from the actual **content**.
 
 **Templates** enable the **replication of similar content** in a webpage, **without having to repeat the corresponding markup**.
 
@@ -13,7 +13,6 @@
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
 
 [/slide]
-
 
 
 [slide]
@@ -28,25 +27,29 @@ We will discuss templating engines in a later video.
 
 These are the main **templating concepts**:
 
-- Templates are used to **define the structure** of our website
-    - Isolating **HTML components** from the associated **content**
+- Templates are used to **define the structure** of our website:
 
-- Every **templating system** has its **own syntax**
-    - Generally very **easy to learn**
-    - **Minor differences in syntax** between **templating engines**
+Isolating **HTML components** from the associated **content.**
 
-- **Token replacement** is most commonly used as a placeholder for either **data** or a **partial**
-    - `({{ ... }}, <%...%> etc.)`
+- Every **templating system** has its **own syntax:**
 
-- Every template should be kept as **simple** as possible
-    - **Breaking up into smaller units** whenever possible
+Generally very **easy to learn.**
 
-- Templates are comparable to **pure functions**
-    - The principles of **functional programming** can be applied to templates as well
+**Minor differences in syntax** between **templating engines**
 
+- **Token replacement** is most commonly used as a placeholder for either **data** or a **partial:**
+
+`({{ ... }}, <%...%> etc.)`
+
+- Every template should be kept as **simple** as possible:
+  
+**Breaking up into smaller units** whenever possible.
+
+- Templates are comparable to **pure functions:**
+
+The principles of **functional programming** can be applied to templates as well
 
 [/slide]
-
 
 [slide]
 
@@ -56,22 +59,26 @@ Templates bring a number of **benefits**.
 
 Here are the most prominent ones:
 
-- **Productivity**
-    - Templating results in **less repetitive code**
-    - They make our markup **easier to read** and interpret
+- **Productivity:**
 
-- **Bandwidth Savings**
-    - The **HTML** is sent only **once**
-    - The **templating engine** takes care of similar elements
-    - Only the **data** for a given entity is being sent
+Templating results in **less repetitive code**
+ 
+They make our markup **easier to read** and interpret
 
-- **Composability**
-    - Allows for the use of a **single element on multiple pages**
-    - **Headers**, **Footers** and **Banners** are examples of that
+- **Bandwidth Savings:**
+The **HTML** is sent only **once.**
+
+The **templating engine** takes care of similar elements.
+
+Only the **data** for a given entity is being sent.
+
+- **Composability:**
+
+Allows for the use of a **single element on multiple pages.**
+
+**Headers**, **Footers** and **Banners** are examples of that.
 
 [/slide]
-
-
 
 
 [slide]
@@ -85,6 +92,5 @@ Here are the most prominent ones:
 - Anywhere you need to add new complex **content** to your page
 
 - Anything that requires **client side HTML rendering**
-
 
 [/slide]
