@@ -54,12 +54,36 @@ Pros of a Relational Database:
 - Relationships can be easily defined between data points.
 - Limitless indexing.
 
+One of the major benefits of using a Relational Database is that this type of database allows the user to simply classify the data into different categories and store them efficiently. 
+
+This arrangement can be further fetched using queries and filters. 
+
+After creating the new database, any set of data under different categories can be included in the database, without any alteration to the existing system.
+
+In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps.
+
+As the data is divided amongst the tables of the relational database system, it is possible to make a few tables to be tagged as confidential and others not. 
+
+This segregation is easily implemented with a relational database management system, unlike other databases.
+
+Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
+
 Pros of a Non-Relational Database:
 - Data is not confined to a structured group.
 - You can perform functions that allow for greater flexibility.
 - They scale out horizontally.
 - High availability.
 - Many are **open source**.
+
+NoSQL databases have become popular because they store data in simple straightforward forms that can be easier to understand than the type of data models used in SQL databases.
+
+In addition, NoSQL databases often allow developers to directly change the structure of the data.
+
+They can scale-out “horizontally,” meaning that they run on multiple servers that work together, each sharing part of the load.
+
+High-availability NoSQL databases are systems designed to run without interruption of service. 
+
+Many web-based businesses require data services that are available without interruption.
 
 [/slide]
 
