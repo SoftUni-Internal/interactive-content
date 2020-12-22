@@ -18,6 +18,8 @@ Each row in a table could be marked with a unique identifier called a primary ke
 
 SQL or Structured Query Language is the primary interface used to communicate with Relational Databases.
 
+[image assetsSrc="Remote-Databases(19).png" /]
+
 [/slide]
 
 [slide]
@@ -37,6 +39,8 @@ This ability to organize various types of information side-by-side makes non-rel
 Non-relational databases often perform faster because a query does not have to view several tables in order to deliver an answer, as relational datasets often do. 
 
 Non-relational databases are therefore ideal for storing data that may be changed frequently or for applications that handle many different kinds of data.
+
+[image assetsSrc="Remote-Databases(20).png" /]
 
 [/slide]
 
