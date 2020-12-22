@@ -26,7 +26,7 @@ In this example we will be using a Book database, which is already created for u
 
 Open **Postman** and create a new request. 
 
-Chose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/.json`
 
@@ -62,7 +62,7 @@ As a result we get all the books stored in the database.
 
 Next we will retrieve a single book from the database.
 
-Chose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/books/1.json`
 
@@ -79,7 +79,7 @@ As a result we get the book at position 1 from the books array.
 
 Now let us try and get the author of the book.
 
-Chose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/books/1/author.json`
 
@@ -91,13 +91,13 @@ Click the **Send** button to get the response from the server.
 
 Now we will add a new book to the database using the **POST** method.
 
-Chose **POST** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **POST** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books.json`
 
 Click on the **Body** button and then click on the **raw** button.
 
-Chose **JSON** format in the last column.
+Choose **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
@@ -119,7 +119,7 @@ This is the response from the server for our newly created book.
 
 Let us delete the book we have just created using the **DELETE** method.
 
-Chose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/-MOpe8WgPwqaw7tdKwIN.json`
 
@@ -140,13 +140,13 @@ This means that the book has been deleted.
 
 Next step is to edit a book.
 
-Chose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
 Click on the **Body** button and then click on the **raw** button.
 
-Chose **JSON** format in the last column.
+Choose **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
@@ -168,13 +168,13 @@ This is the response from the server:
 
 If we want to update only specific data, for example change the author of the book then we use the **PATCH** method.
 
-Chose **PATCH** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PATCH** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
 Click on the **Body** button and then click on the **raw** button.
 
-Chose **JSON** format in the last column.
+Choose **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
@@ -195,13 +195,13 @@ This is the response from the server:
 
 Now let us try one more example using the **PUT** method.
 
-Chose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
 Click on the **Body** button and then click on the **raw** button.
 
-Chose **JSON** format in the last column.
+Choose **JSON** format in the last column.
 
 Then copy and paste the following JSON object:
 
@@ -242,7 +242,7 @@ You should be carefull with the **PUT** method. Use the **PATCH** method, it wil
 
 Finally delete the book we created.
 
-Chose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
@@ -324,7 +324,7 @@ Chose the option "Start in test mode" and click "Enable".
 
 The database is now created successfully.
 
-Copy the **base URL** so that you can use it in **Postman** to create books.
+Copy the **database URL** so that you can use it in **Postman** to create books.
 
 [image assetsSrc="Remote-Databases(13).png" /]
 
@@ -334,13 +334,21 @@ Example:
 
 [image assetsSrc="Remote-Databases(14).png" /]
 
-You have to use your base **URL** you received when you created the database plus the name of the **entity**, which is "books" plus ".json".
+To get all books, you have to use the **database URL** you received when you created the database plus the name of the **entity**, which is "books" plus ".json".
 
-`https://your base URL/books.json`
+The method is "GET".
 
-To get all books chose **GET** in Postman and use the following **URL**.
+URL: `https://databaseURL/books.json`
 
-`https://your database URL/.json`
+[/slide]
+
+[slide]
+
+# Problem: Get a Book
+
+To get a book choose "GET" method in Postman and use the following **URL**.
+
+`https://databaseURL/books/bookId.json`
 
 [/slide]
 
@@ -351,6 +359,8 @@ To get all books chose **GET** in Postman and use the following **URL**.
 To create a book, we will have to send a "POST" request and the JSON body should be in the following format:
 
 `{"Author": "Steven King",  "title": "IT"}`
+
+URL: `https://databaseURL/books.json`
 
 [/slide]
 
@@ -366,6 +376,8 @@ The JSON body should be in the following format:
 
 `{"Author": "Steven King",  "year": 1981}`
 
+URL: `https://databaseURL/books/bookId.json`
+
 [/slide]
 
 [slide]
@@ -379,5 +391,7 @@ In our case we have to change the author’s name to "New author was assigned".
 The JSON body should be in the following format:
 
 "New author was assigned".
+
+URL: `https://databaseURL/books/bookId.json`
 
 [/slide]
