@@ -48,7 +48,7 @@ Non-relational databases are therefore ideal for storing data that may be change
 
 # Relational And Non-Relational Pros
 
-Pros of a Relational Database:
+**Pros of a Relational Database:**
 - Data is easily structured into categories.
 - They support **ACID** transactional consistency and support "joins".
 - Relationships can be easily defined between data points.
@@ -68,7 +68,7 @@ This segregation is easily implemented with a relational database management sys
 
 Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
 
-Pros of a Non-Relational Database:
+**Pros of a Non-Relational Database:**
 - Data is not confined to a structured group.
 - You can perform functions that allow for greater flexibility.
 - They scale out horizontally.
