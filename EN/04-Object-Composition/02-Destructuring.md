@@ -2,7 +2,7 @@
 
 [slide]
 
-# What is Destructuring?
+# Destructuring
 
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
@@ -48,6 +48,12 @@ console.log(obj1);
 console.log(objectList);
 ```
 
+[/slide]
+
+[slide]
+
+# Nested destructuring
+
 Now let us have a look at some nested destructuring.
 
 Use this expression: `const {data: {director}} = department` to create a new variable `director` by destructuring `department` object.
@@ -72,6 +78,12 @@ director.name = "Peter";
 console.log(department);
 ```
 
+[/slide]
+
+[slide]
+
+# Destructuring nested arrays
+
 Wehn destructuring nested arrays is important to know the position of what you are looking for.
 
 Also you need to provide a reference variable or comma placeholder for each element up and until the one you are looking for.
@@ -88,6 +100,12 @@ const [[name, positions]] = departments;
 console.log(name);
 console.log(positions);
 ```
+
+[/slide]
+
+[slide]
+
+# Objects and array destructuring
 
 Destructuring an array of objects.
 
