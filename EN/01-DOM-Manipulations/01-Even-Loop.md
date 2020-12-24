@@ -20,6 +20,7 @@ The way JavaScript allows us to start an operation, then to **start another oper
 [/slide]
 
 [slide]
+
 # Stack Execution
 
 In this example, we see the two types of memories that we have: The **stack** and The **heap.**

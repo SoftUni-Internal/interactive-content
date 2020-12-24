@@ -11,6 +11,12 @@ There are 3 ways to register an event:
 - using DOM Element properties.
 - using DOM event handler.
 
+[/slide]
+
+[slide]
+
+# Event Listener
+
 To be able to use our event handler function we need the `.addEventListener()` method.
 
 It accepts 3 parameters. 
@@ -51,6 +57,12 @@ function clickMe(e) {
     target.textContent = Number(targetText) + 1;
 }
 ```
+
+[/slide]
+
+[slide]
+
+# Attaching hover event
 
 Example using the "mouseover" type and a function declaration.
 
