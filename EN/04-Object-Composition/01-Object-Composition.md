@@ -25,6 +25,12 @@ console.log(student);
 console.log(student.location.lat);
 ```
 
+[/slide]
+
+[slide]
+
+# Composing an object
+
 Here is an example of how we can compose an object. 
 
 First we declare and initialize the primitive data types `name`, `population` and `country`.
@@ -42,6 +48,12 @@ console.log(town);
 town.location = { lat: 52.520, lng: 13.404 };
 console.log(town);
 ```
+
+[/slide]
+
+[slide]
+
+# Combining data with functions
 
 We can also combine data using functions, that is because functions are also objects in JavaScript.
 
@@ -66,6 +78,12 @@ let rect = {
 rect.grow(2, 3);
 rect.print();
 ```
+
+[/slide]
+
+[slide]
+
+# Printing objects
 
 Printing objects using the `ToString()` function:
 
