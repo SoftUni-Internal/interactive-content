@@ -20,7 +20,11 @@ describe("title", function () {
 });
 ```
 
-**What is Chai?**
+[/slide]
+
+[slide]
+
+# What is Chai?
 
 **Chai** is a library with many **assertions**.
 
