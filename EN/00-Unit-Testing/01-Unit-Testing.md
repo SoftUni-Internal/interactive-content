@@ -41,7 +41,11 @@ Unit tests make the process of debugging easier.
 
 Unite tests force better code and design whether you are using C\#, Java, Python, JavaScript, or Php. It means you have a well-defined code with high cohesion.
 
-**Unit Test Structure**
+[/slide]
+
+[slide]
+
+# Unit Test Structure
 
 The **AAA** "Arrange-Act-Assert" pattern is almost a standard across the industry. 
 
@@ -68,7 +72,11 @@ if (JSON.stringify(nums) === "[-2,2,4,15]") {
 }
 ```
 
-**Unit Testing Frameworks**
+[/slide]
+
+[slide]
+
+# Unit Testing Frameworks
 
 This a list of some of the unit testing frameworks.
 
