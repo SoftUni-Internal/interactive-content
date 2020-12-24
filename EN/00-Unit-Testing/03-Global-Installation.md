@@ -24,7 +24,11 @@ Check if Mocha is installed.
 mocha --version
 ```
 
-**Node Path Configuration**
+[/slide]
+
+[slide]
+
+# Node Path Configuration
 
 By default "Node.js" does not find its globally installed modules.
 
@@ -64,6 +68,7 @@ describe("Test group #2", function () {
 [/slide]
 
 [slide]
+
 # Problem: Sum Of Numbers
 [code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
