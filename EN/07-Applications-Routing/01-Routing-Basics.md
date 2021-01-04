@@ -1,9 +1,9 @@
 # Routing Basics
 
 [slide]
-# Multi\-Page Applications
+# Multi Page Applications
 
-The multi\-page applications reload the entire page when a user interacts with the app.
+The multi page applications reload the entire page when a user interacts with the app.
 
 Also, the data is exchanged when a new page is **requested**.
 
@@ -15,9 +15,9 @@ We can define that an application is a multi\-page application when the **reload
 
 [slide]
 
-# Multi\-Page Pros and Cons
+# Multi Page Pros and Cons
 
-Let us have a look at some of the **pros** and **cons** of the multi\-page application.
+Let us have a look at some of the **pros** and **cons** of the multi page application.
 
 We will start with the pros:
 
@@ -35,7 +35,7 @@ Now let us have a look at their **cons**:
 
 [slide]
 
-# Single\-Page Application
+# Single Page Application
 
 Single-Page Application or **SPA** is the evolution of the multi page application.
 
@@ -53,7 +53,7 @@ And there are the location\-based SPAs, in which the location is always updating
 
 That means that we can share a link and be sure that anyone can that opens it will see what we see.
 
-Also, location-based ones need a special object called **Router**.
+Also, location\-based ones need a special object called **Router**.
 
 [/slide]
 
