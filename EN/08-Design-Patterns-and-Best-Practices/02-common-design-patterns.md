@@ -32,7 +32,7 @@ The creation of new objects is abstracted behind an interface, which can cause p
 |---|---|
 |+ dynamic object creation   |  - can overcomplicate code (too many sub-classes) |
 |+ abstraction   | - can introduce problems with unit testing  |
-|+ reusability and easier maintenance   | test  |
+|+ reusability and easier maintenance   |  |
 
 One of the biggest benefits of the **factory pattern** is that we can move the object instantiation logic to a single place in the program, which can make the code easier to support. This is the basis behind the **Single Responsibility Principle**.
 
@@ -126,6 +126,7 @@ If you were to use a decorator on top of the Car object in the above example the
 |+ extend functionality without modifying the objects that you are decorating   | - can add too many small objects  |
 |+ add and withdraw responsibilities as needed  | - can cause issues when client relies heavily on the concrete type of components  |
 |+ supports the Open/Closed SOLID principle   | - instantiating the components can become more complicated |
+
 [/slide]
 
 [slide]
@@ -227,7 +228,9 @@ This is a pattern in which an object called **subject** maintains a list of depe
 
 [image assetsSrc="design-patterns-15.png" /]
 
-- **Subject** - contains collection of observers. It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - **subcribe()**, **unsubscribe()**. Sends notifications to the observers attached  to it.
+- **Subject** - contains collection of observers. It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed 
+
+- **subcribe()**, **unsubscribe()**. Sends notifications to the observers attached  to it.
 
 - **Observer** - has an interface that sends updates to objects that need to be notified of a subject's changes of state.
 
@@ -293,4 +296,5 @@ We are declaring a class called **Observable**. This is the Subject. It has a co
 The **subscribe** method is used to add observers to the collection of the observable object. The **unsubscribe** method removes (detaches) and observer from it. The **unsubscribe** method removes (**detaches**) an observer from the subject.
 
 When the ``notify(data)`` method is called we iterate through the observers collection and **send a notification** to **every single observer** that is currently **subscribed** to the observable object.
+
 [/slide]
