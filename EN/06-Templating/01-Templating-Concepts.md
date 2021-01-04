@@ -7,7 +7,7 @@
 
 **Templates** enable the **replication of similar content** in a webpage, **without having to repeat the corresponding markup**.
 
-picture
+[image assetsSrc="JS-Applications-templating-1.png" /]
 
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
 [/slide]
