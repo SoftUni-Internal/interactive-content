@@ -1,10 +1,8 @@
-
-
 [slide]
 
 # Summary
 
-In this lesson we learned:
+# In this session you learnt:
 
 - Templates make our HTML modular
     - Resulting in less repetitive code and fewer data to load

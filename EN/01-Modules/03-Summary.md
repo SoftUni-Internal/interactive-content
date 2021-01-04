@@ -1,10 +1,8 @@
-# Summary
-
 [slide]
 
 # Summary
 
-In this lesson you learned:
+# In this session you learnt:
 
 - What are modules in JavaScript?
 

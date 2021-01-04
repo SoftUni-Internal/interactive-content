@@ -2,6 +2,8 @@
 
 # Summary
 
+# In this session you learnt:
+
 - Unit tests check if certain functionality works as expected.
 ```js
 it('expect sum ([1,2.3] to be 6)', function() {
@@ -10,6 +12,7 @@ it('expect sum ([1,2.3] to be 6)', function() {
     expect(actual).to.equal(expected);
     })
 ```
+
 - Test-driven development (TDD).
     - Tests are written first.
 

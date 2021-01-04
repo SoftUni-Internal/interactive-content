@@ -1,27 +1,24 @@
-[slide]
-
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+[slide]
 
-## Lesson content:
+# Table of Contents
 
-**Asynchronous programming**
+## In this lesson you will learn about:
+
+**1. Asynchronous programming**
 
 - What asynchronous programming is, its benefits, and use case.
 
 - How the event loop works.
 
-**Promises**
+**2. Promises**
 
 - What a JavaScript promise represents.
 
 - Different methods and states of a promise.
 
-**Async / Await**
+**3. Async / Await**
 
 - How "async" functions differ from promises.
 

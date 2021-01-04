@@ -39,7 +39,9 @@ There are **three main ways** to create **modules** in your program:
   
     - Built **directly into JavaScript**;
 
-    - Before the introduction of **ES6** in 2015, modules were not native to JavaScript. You can learn more [here](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_–_ECMAScript_2015).
+    - Before the introduction of **ES6** in 2015, modules were not native to JavaScript. 
+    
+You can learn more [here](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_–_ECMAScript_2015).
 
 
 [/slide]

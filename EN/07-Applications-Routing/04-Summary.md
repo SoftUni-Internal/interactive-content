@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson you learned:
+# In this session you learnt:
 
 - Multi Page Application
 

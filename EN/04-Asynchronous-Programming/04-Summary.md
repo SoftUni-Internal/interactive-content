@@ -2,32 +2,26 @@
 
 # Summary
 
-**Asynchronous programming**
+# In this session you learnt:
 
-- Key differences between **synchronous** and **asynchronous** programming.
+- What is Asynchronous programming
 
-- **Code execution order** in JavaScript.
+   - Key differences between **synchronous** and **asynchronous** programming.
 
-- Escaping JavaScript's **synchronous** nature.
+   - **Code execution order** in JavaScript.
 
-**Promises**
+   - Escaping JavaScript's **synchronous** nature.
 
-- Representing data that will be **received in the future**.
+- Whats are Promises
 
-- **Chaining** promises and utilizing their methods.
+   - Representing data that will be **received in the future**.
 
-**"Async" functions**
+   - **Chaining** promises and utilizing their methods.
 
-- Writing clean and concise asynchronous code with `async` and `await`.
+- What is `async` functions
 
-- **Sequential** and **concurrent** execution.
+    - Writing clean and concise asynchronous code with `async` and `await`.
 
-The topic of the next lesson is:
-
-**Remote Databases**
-
-- **Relational** and **non-relational** databases.
-
-- **BaaS** (Backend-as-a-Service).
+    - **Sequential** and **concurrent** execution.
 
 [/slide]
