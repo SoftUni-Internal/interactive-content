@@ -1,6 +1,6 @@
 # Templating Concepts
 
 [slide]
-# What is Templating?
+# What is Templating
 
 [/slide]
