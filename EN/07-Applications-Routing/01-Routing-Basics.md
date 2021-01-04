@@ -1,24 +1,23 @@
 # Routing Basics
 
 [slide]
+# Multi-Page Applications
 
-# Multi Page Applications
-
-The **multi page applications** reload the entire page when a user interacts with the app.
+The multi\-page applications reload the entire page when a user interacts with the app.
 
 Also, the data is exchanged when a new page is **requested**.
 
 After the server returns a response, the new page is displayed in the browser.
 
-We can define that an application is a **multi-page application** when the **reload** icon is triggered.
+We can define that an application is a multi\-page application when the **reload** icon is triggered.
 
 [/slide]
 
 [slide]
 
-# Multi Page Pros and Cons
+# Multi-Page Pros and Cons
 
-Let us have a look at some of the **pros** and **cons** of the **multi-page application**.
+Let us have a look at some of the **pros** and **cons** of the multi\-page application.
 
 We will start with the pros:
 
@@ -36,21 +35,21 @@ Now let us have a look at their **cons**:
 
 [slide]
 
-# Single Page Application
+# Single-Page Application
 
-**Single Page Application** or **SPA** is the evolution of the multi page application.
+Single-Page Application or **SPA** is the evolution of the multi page application.
 
 SPAs **dynamically update** the content of the page, instead of **reloading** the whole page.
 
 They use **HTML5**, **CSS**, and **AJAX** to create a fluid and responsive user interface, which is operated by the user.
 
-SPA will **re-render** the content in response to the user actions.
+SPA will re\-render the content in response to the user actions.
 
 It can use state from **internal** or **external** source.
 
 The internal state is **limited** to only one entry.
 
-And there are the **location-based** SPAs, in which the location is always updating.
+And there are the location\-based SPAs, in which the location is always updating.
 
 That means that we can share a link and be sure that anyone can that opens it will see what we see.
 
@@ -82,12 +81,11 @@ Now, let us see what are the cons:
 
 - They provide **single sharing link**.
 
-- They can be less secure if the data is stored on the front-end.
+- They can be less secure if the data is stored on the front\-end.
 
 [/slide]
 
 [slide]
-
 # Multi and Single Page Application Lifecycle
 
 We will start with **Multi Page Application's** lifecycle.
