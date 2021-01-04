@@ -13,7 +13,7 @@
 
 Handlebars **expressions** are the **basic unit** of a Handlebars **template**.
 
-We will discuss expressions in-depth later.
+We will discuss expressions in\-depth later.
 
 [/slide]
 
@@ -192,6 +192,7 @@ Lastly, we **call the compiled template** with our variables and save the output
 Using the `#each` **special helper**, we can iterate through an array:
 
 ```
+
 <ul class="people_list">
   {{#each people}}
     <li>{{firstName}} {{lastName}}, {{age}}</li>
@@ -199,6 +200,7 @@ Using the `#each` **special helper**, we can iterate through an array:
     <p class="empty">There are no people</p>
 {{/each}}
 </ul>
+
 ```
 
 As you can see in the above example, we can also add the `{{else}}` section.
@@ -249,7 +251,6 @@ Partials may be precompiled with a new template, which is passed a second parame
 Calling a partial is done by double curly braces,  preceding the name with a `>` sign:
 
 `{{> myPartial }}`
-
 
 [/slide]
 
