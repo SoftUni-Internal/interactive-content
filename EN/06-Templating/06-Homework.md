@@ -17,9 +17,9 @@ You have to create a **separate template** for the contact cards and display all
 
 At the end, the page should look like this:
 
-[image assetsSrc="JS-Applications-templating-4.png" /]
+[image assetsSrc="JS-Applications-templating-4.png" /]
 
-[image assetsSrc="JS-Applications-templating-5.png" /]
+[image assetsSrc="JS-Applications-templating-5.png" /]
 
 ## Hints
 
@@ -60,12 +60,10 @@ Each **town** comes from the **input** field.
 In your `attachEvents()` function you **should** attach a click event to the **button** with **id** `btnLoadTowns` and **render** the **towns** that come from the input field in the **HTML template** with **id** `towns-template`.
 
 ## Screenshots
-
-[image assetsSrc="JS-Applications-templating-6.png" /]
+[image assetsSrc="JS-Applications-templating-6.png" /]
 
 This is how the HTML looks like:
-
-[image assetsSrc="JS-Applications-templating-7.png" /]
+[image assetsSrc="JS-Applications-templating-7.png" /]
 
 [/slide]
 
@@ -94,10 +92,9 @@ Each card block has a **button** that **unveils** status code information **conn
 You should **toggle** the button and change its text from `Show status code` to `Hide status code`.
 
 ## Screenshots
+[image assetsSrc="JS-Applications-templating-8.png" /]
 
-[image assetsSrc="JS-Applications-templating-8.png" /]
-
-[image assetsSrc="JS-Applications-templating-9.png" /]
+[image assetsSrc="JS-Applications-templating-9.png" /]
 
 [/slide]
 
@@ -121,7 +118,6 @@ Each monkey also has a **name** and an **image**.
 Explore the `monkeys.js` file for more details. 
 
 At the end the page should look like this:
-
-[image assetsSrc="JS-Applications-templating-10.png" /]
+[image assetsSrc="JS-Applications-templating-10.png" /]
 
 [/slide]
