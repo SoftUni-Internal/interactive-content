@@ -1,7 +1,7 @@
 # Routing Basics
 
 [slide]
-# Multi-Page Applications
+# Multi\-Page Applications
 
 The multi\-page applications reload the entire page when a user interacts with the app.
 
@@ -15,7 +15,7 @@ We can define that an application is a multi\-page application when the **reload
 
 [slide]
 
-# Multi-Page Pros and Cons
+# Multi\-Page Pros and Cons
 
 Let us have a look at some of the **pros** and **cons** of the multi\-page application.
 
@@ -35,7 +35,7 @@ Now let us have a look at their **cons**:
 
 [slide]
 
-# Single-Page Application
+# Single\-Page Application
 
 Single-Page Application or **SPA** is the evolution of the multi page application.
 
