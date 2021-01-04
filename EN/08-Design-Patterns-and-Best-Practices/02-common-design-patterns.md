@@ -32,7 +32,7 @@ The creation of new objects is abstracted behind an interface, which can cause p
 |---|---|
 |+ dynamic object creation   |  - can overcomplicate code (too many sub-classes) |
 |+ abstraction   | - can introduce problems with unit testing  |
-|+ reusability and easier maintenance   |   |
+|+ reusability and easier maintenance   | test  |
 
 One of the biggest benefits of the **factory pattern** is that we can move the object instantiation logic to a single place in the program, which can make the code easier to support. This is the basis behind the **Single Responsibility Principle**.
 
