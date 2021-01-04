@@ -85,6 +85,10 @@ async function getDbInfo(url) {
 }
 ```
 
+It is important to note that async functions are written **on top of promises** as a way to **ease the process of writing asynchronous code**.
+
+Both examples above **do the same job**, the difference is just in **code readability**.
+
 [/slide]
 
 [slide]
@@ -118,6 +122,9 @@ getinfo.catch((err) => {
 });
 ```
 
+It is **highly recommended** to add a `.catch()` method or a `catch` block even if the function performs a very simple task.
+
+Working with code **always produces errors** and it is **better for user experience** if they are **handled instead of being shown on the screen**.
 [/slide]
 
 [slide]
@@ -131,7 +138,7 @@ When used **before an asynchronous operation**, the rest of the function will **
 Here is an example of sequential code execution:
 
 ```js
-function multplyByTwo(number, seconds) {
+function multiplyByTwo(number, seconds) {
   return new Promise((resolve) => {
     console.log("Entry number: " + number);
 
@@ -143,9 +150,9 @@ function multplyByTwo(number, seconds) {
 }
 
 async function serialFlow() {
-  let result1 = await multplyByTwo(3, 1);
-  let result2 = await multplyByTwo(4, 1);
-  let result3 = await multplyByTwo(5, 1);
+  let result1 = await multiplyByTwo(3, 1);
+  let result2 = await multiplyByTwo(4, 1);
+  let result3 = await multiplyByTwo(5, 1);
 
   let total = result1 + result2 + result3;
   console.log("Total sum: " + total);
@@ -154,6 +161,9 @@ async function serialFlow() {
 serialFlow();
 ```
 
+Sequential execution is best used when **the functions below rely on the data that is being fetched**.
+
+This way **going inside the given function with an undefined variable is impossible**.
 [/slide]
 
 [slide]
@@ -392,7 +402,7 @@ yes
 
 # Solution: Blog
 
-[code-task title="Problem: Blog"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Blog" taskId="js-applications-asynchronous-programming-Blog-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```

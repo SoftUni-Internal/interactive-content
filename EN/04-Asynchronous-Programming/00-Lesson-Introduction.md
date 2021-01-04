@@ -19,7 +19,7 @@
 
 - What a JavaScript promise represents.
 
-- Differend methods and states of a promise.
+- Different methods and states of a promise.
 
 **Async / Await**
 
