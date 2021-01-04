@@ -161,9 +161,12 @@ let decoratedEbook = new DecoratedEbook(eBook, "Kindle");
 eBook.info();
 decoratedEbook.info();
 ```
-[/slide]
+
 
 The decorator accepts a parameter **ebookReader** - the object we want to decorate and a new property **model**. In this way, the decorated ebook reader would have an additional property and the **info()** function has been extended accordingly without modifying the original EbookReader class.
+
+[/slide]
+
 
 [slide]
 # Facade Pattern
@@ -270,6 +273,8 @@ Changes can be broadcast to any number of observers, although the order in which
 [/slide]
 
 [slide]
+
+# Observer Pattern example:
 Here is a simplified example of the **observer pattern**:
 
 ```js
