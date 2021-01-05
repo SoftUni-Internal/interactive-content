@@ -230,6 +230,8 @@ It is used to manage the relations between data, and translate our objects in co
 
 - It provides a straight-forward, **schema-based** solution to **model** your application data.
 
+  * The *schema* describes the fields of the properties.
+
 - Since MongoDB is a schema-less NoSQL document database, we can store **JSON** documents in it.
 
 - Extend the native **queries**.
@@ -240,6 +242,33 @@ To **install** - type in CMD:
 npm install mongoose
 ```
 
+There are some benefits using Mongoose over native MongoDB:
+
+- When using MongooseJS we eliminate the need to use **named collections**, since MongooseJS provides an abstraction layer on top of MongoDB.
+
+- We can incorporate new functions since functions may be attached to **Models** in Mongoose.
+
+- Queries use function chaining. That makes the code more flexible and readable.
+
+
+
+[/slide]
+
+[slide]
+
+# Working with Mongoose in Node.js
+
+To work with MOngoose we must load the following **module**:
+
+```
+const mongoose = require('mongoose')
+```
+
+Then, we connect to the database:
+
+```
+mongoose.connect('mongodb://localhost:27017/unidb')
+```
 
 
 [/slide]
