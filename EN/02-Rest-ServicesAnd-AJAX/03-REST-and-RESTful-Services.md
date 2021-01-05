@@ -44,8 +44,16 @@ They are:
 - Layered system
 - Code on demand - this one is optional.
 - Uniform interface
+[/slide]
 
-So let's consider some theoretical examples.
+[slide]
+# REST and RESTfull Services - Example
+[vimeo-video]
+[stream language="EN" videoId="497191104/a6933d75bc" default /]
+[stream language="RO" videoId="497191104/a6933d75bc"  /]
+[/video-vimeo]
+
+So let us consider some theoretical examples.
 
 If we want to create a new post, we will send a **POST** request to `http://some-service.org/api/posts`.
 
@@ -56,3 +64,4 @@ But if we want to **get** a certain post, we need to add the **ID** of that post
 And if we want to sent **DELETE**, **PUT** or **PATCH** request again, we need the **ID** of that post.
 
 [/slide]
+

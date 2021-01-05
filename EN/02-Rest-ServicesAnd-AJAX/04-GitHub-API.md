@@ -4,6 +4,11 @@
 
 # GitHub API - Example
 
+[vimeo-video]
+[stream language="EN" videoId="497191130/b851b586aa" default /]
+[stream language="RO" videoId="497191130/b851b586aa"  /]
+[/video-vimeo]
+
 To try GitHub's API we need Postman.
 
 In this example we will see **GET** requests to the following URLs:
@@ -19,6 +24,11 @@ In this example we will see **GET** requests to the following URLs:
 
 # GitHub: Labels Issue - Example
 
+[vimeo-video]
+[stream language="EN" videoId="497191186/eea6d5398d" default /]
+[stream language="RO" videoId="497191186/eea6d5398d"  /]
+[/video-vimeo]
+
 To try, we need Postman.
 
 So In this example, we need to get one particular issue from the **js-apps** repository.
@@ -30,6 +40,11 @@ So we need to send a **GET** request and specify the **id** of that issue to the
 [slide]
 
 # GitHub: Create Issue - Example
+
+[vimeo-video]
+[stream language="EN" videoId="497191252/8d95fa288f" default /]
+[stream language="RO" videoId="497191252/8d95fa288f"  /]
+[/video-vimeo]
 
 In this example, we need Postman.
 
