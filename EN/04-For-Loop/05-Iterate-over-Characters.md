@@ -62,9 +62,9 @@ Write a program, which:
 ## Example
 | **Input** | **Output** 
 | --- | --- |
-| a | a |
-| c | b |
-|  | c |
+| a | a b c|
+| c | |
+|  | |
 [/task-description]
 [tests]
 [test]
@@ -121,9 +121,9 @@ Write a program, which:
 ## Example
 | **Input** | **Output** 
 | --- | --- |
-| a | a |
-| c | b |
-|  | c |
+| a | a b c |
+| c |  |
+|  |  |
 [/task-description]
 [tests]
 [test]
