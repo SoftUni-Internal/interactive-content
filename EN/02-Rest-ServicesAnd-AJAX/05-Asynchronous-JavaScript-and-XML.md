@@ -4,6 +4,11 @@
 
 # What is AJAX
 
+[vimeo-video]
+[stream language="EN" videoId="497191274/a7841157ed" default /]
+[stream language="RO" videoId="497191274/a7841157ed"  /]
+[/video-vimeo]
+
 **AJAX** stands for **Asynchronous** **JavaScript** and **XML**, but instead of XML nowadays we use **JSON**.
 
 That is a technique that allows us to **dynamically** **load** and **render** content or data.
@@ -13,6 +18,14 @@ There two types of **AJAX**:
 -  **Partial page rendering**, where we can render an HTML fragment in a `<div>` while the data loads.
 
 -  **JSON service**, where we have a JSON object, and we need to parse it.
+[/slide]
+
+[slide]
+# AJAX Workflow
+[vimeo-video]
+[stream language="EN" videoId="497191306/6c8c746993" default /]
+[stream language="RO" videoId="497191306/6c8c746993"  /]
+[/video-vimeo]
 
 Here is an example of AJAX workflow:
 
@@ -23,6 +36,11 @@ Here is an example of AJAX workflow:
 [slide]
 
 # XMLHttpRequest – Standard API for AJAX
+
+[vimeo-video]
+[stream language="EN" videoId="497191331/aab9a52aae" default /]
+[stream language="RO" videoId="497191331/aab9a52aae"  /]
+[/video-vimeo]
 
 In this example, we will see how to update a web page without reloading the entire page.
 
@@ -61,6 +79,11 @@ button.addEventListener('click', function loadRepos() {
 
 # What is Promise?
 
+[vimeo-video]
+[stream language="EN" videoId="497191378/a55aff23a3" default /]
+[stream language="RO" videoId="497191378/a55aff23a3"  /]
+[/video-vimeo]
+
 We say **Promise** to the result of an **asynchronous action**.
 
 When the promise is **completed**, it can **produce a value**.
@@ -84,6 +107,11 @@ new Promise(executor);
 [slide]
 
 # Promise.then(): Example
+
+[vimeo-video]
+[stream language="EN" videoId="497191409/ff4fc09960" default /]
+[stream language="RO" videoId="497191409/ff4fc09960"  /]
+[/video-vimeo]
 
 In this example we will see how **new Promise** works:
 
@@ -113,6 +141,11 @@ That is because **new Promise** is asynchronous.
 
 # What is Fetch?
 
+[vimeo-video]
+[stream language="EN" videoId="497191438/868f1cd08d" default /]
+[stream language="RO" videoId="497191438/868f1cd08d"  /]
+[/video-vimeo]
+
 **Fetch** is the alternative to **XMLHttpRequest** in nowadays.
 
 The `fetch()` method allows us to make network requests.
@@ -128,10 +161,6 @@ fetch('/api/example.json')
    .then(function (response) {})
    .catch(function (err) {});
 ```
-
-[/slide]
-
-[slide]
 
 # Basic Fetch Request
 
@@ -163,6 +192,11 @@ First, we check the response status, and if it is 200, we continue with parsing 
 
 # Chaining Promises
 
+[vimeo-video]
+[stream language="EN" videoId="497191476/2eee16d66a" default /]
+[stream language="RO" videoId="497191476/2eee16d66a"  /]
+[/video-vimeo]
+
 The beneficial thing about **promises** is that when we use `fetch ()`, the result returned by it can be **separated** into functions.
 
 We can **chain** promises with `then()`.
@@ -187,7 +221,12 @@ If one of the operations is not successful `catch((error) => {});` will handle t
 
 [slide]
 
-# Fetch Requests
+# GET Request
+
+[vimeo-video]
+[stream language="EN" videoId="497191506/ffd06dbce6" default /]
+[stream language="RO" videoId="497191506/ffd06dbce6"  /]
+[/video-vimeo]
 
 The first request with `fetch()` that we are going to have a look at is **GET** request.
 
@@ -211,6 +250,15 @@ After we receive the **response**, we **parse** the data to **JSON**.
 And after the data is **parsed**, we printed it in the **console**.
 
 If there is an error, `catch()` will print it in the console.
+[/slide]
+
+[slide]
+# Post Request
+
+[vimeo-video]
+[stream language="EN" videoId="497191535/cb32a5d9e3" default /]
+[stream language="RO" videoId="497191535/cb32a5d9e3"  /]
+[/video-vimeo]
 
 A **POST** request is almost the same, the difference is that we need to set the **method**, **headers**, and **body**.
 
@@ -234,6 +282,11 @@ In the **body** we set the data, also we need always to `JSON.stringify()` the d
 
 # Body Methods
 
+[vimeo-video]
+[stream language="EN" videoId="497191576/3758785d78" default /]
+[stream language="RO" videoId="497191576/3758785d78"  /]
+[/video-vimeo]
+
 After we fetch a request, it returns a response.
 
 This response object has properties and methods.
@@ -254,16 +307,21 @@ The methods are:
 
 # Response Type
 
-The response types are read- only properties, that shows the type of the response
+[vimeo-video]
+[stream language="EN" videoId="497191609/984e7c1fb1" default /]
+[stream language="RO" videoId="497191609/984e7c1fb1"  /]
+[/video-vimeo]
+
+The response types are read\-only properties, that shows the type of the response
 
 The response type are:
 
 | **Type** | **Description** |
 | --- | --- |
-|basic| Normal, or same origin response |
-|cors| The response is received from valid cross\-origin request |
-|error| Network error or not valid information |
-|opaque| Response for **no-cors** request send to cors resource |
-|opaqueredirect| The request was made with **manual** redirect |
+|`basic`| Normal, or same origin response |
+|`cors`| The response is received from valid cross\-origin request |
+|`error`| Network error or not valid information |
+|`opaque`| Response for **no-cors** request send to cors resource |
+|`opaqueredirect`| The request was made with **manual** redirect |
 
 [/slide]

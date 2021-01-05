@@ -2,6 +2,11 @@
 
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="497191656/3b159f0ccc" default /]
+[stream language="RO" videoId="497191656/3b159f0ccc"  /]
+[/video-vimeo]
+
 ## In this lesson you learned:
 
 -  HTTP is a text-based client-server protocol, used for transferring Web resources.
