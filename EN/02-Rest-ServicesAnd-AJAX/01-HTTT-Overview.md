@@ -1,8 +1,12 @@
 # HTTP Protocol
 
 [slide]
-
 # HTTP Basics
+
+[vimeo-video]
+[stream language="EN" videoId="497191742/5d1c1190a0" default /]
+[stream language="RO" videoId="497191742/5d1c1190a0"  /]
+[/video-vimeo]
 
 **HTTP** which, means **Hyper Text Transfer Protocol**, is an application-layer protocol.
 
@@ -19,6 +23,11 @@ As we can see the **client** sends a **request** and the **server** sends a **re
 [slide]
 
 # HTTP Request Methods
+
+[vimeo-video]
+[stream language="EN" videoId="497191798/2db8518a74" default /]
+[stream language="RO" videoId="497191798/2db8518a74"  /]
+[/video-vimeo]
 
 **HTTP** has **methods** that give us the ability to indicate the desired action to be performed to a given source.
 
@@ -42,7 +51,12 @@ They must be in uppercase.
 
 [slide]
 
-# HTTP Request Examples
+# HTTP GET Request Examples
+
+[vimeo-video]
+[stream language="EN" videoId="497191844/041a07ddb5" default /]
+[stream language="RO" videoId="497191844/041a07ddb5"  /]
+[/video-vimeo]
 
 By default, if we sent a request, it will be **GET**.
 
@@ -65,6 +79,16 @@ Cache-Control: no-cache
 The first line, `GET /users/softuni/repos HTTP/1.1`, is the request line.
 
 After it, we have the **headers** and the **body** `<CRLF>`, which is empty.
+
+[/slide]
+
+[slide]
+# HTTP Post Request Examples
+
+[vimeo-video]
+[stream language="EN" videoId="497191883/abf5823850" default /]
+[stream language="RO" videoId="497191883/abf5823850"  /]
+[/video-vimeo]
 
 And here is an example of a **POST** request:
 
@@ -95,6 +119,11 @@ We use **POST** when we want to store data on the server.
 [slide]
 
 # HTTP Response Example
+
+[vimeo-video]
+[stream language="EN" videoId="497191921/7bfe82a1b9" default /]
+[stream language="RO" videoId="497191921/7bfe82a1b9"  /]
+[/video-vimeo]
 
 After we sent the request, the server will return a **response**.
 
@@ -128,6 +157,11 @@ And finally, we have the **body** it holds the data that we requested.
 
 # HTTP Response Status Codes
 
+[vimeo-video]
+[stream language="EN" videoId="497191947/6cd7004d9e" default /]
+[stream language="RO" videoId="497191947/6cd7004d9e"  /]
+[/video-vimeo]
+
 Every response has a **status code**, which can tell us if the request is successful or not.
 
 Here are some of the codes:
@@ -149,6 +183,11 @@ Here are some of the codes:
 [slide]
 
 # Content-Type and Disposition
+
+[vimeo-video]
+[stream language="EN" videoId="497191983/5228b6f5f4" default /]
+[stream language="RO" videoId="497191983/5228b6f5f4"  /]
+[/video-vimeo]
 
 Every request needs to have a field with **Content-Type** or **Content-Disposition**.
 

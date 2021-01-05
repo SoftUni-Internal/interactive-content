@@ -3,6 +3,11 @@
 [slide]
 # Table of Contents
 
+[vimeo-video]
+[stream language="EN" videoId="497191712/e39ff079e1" default /]
+[stream language="RO" videoId="497191712/e39ff079e1"  /]
+[/video-vimeo]
+
 ## In this lesson you will learn:
 
 **1. What is HTTP**
