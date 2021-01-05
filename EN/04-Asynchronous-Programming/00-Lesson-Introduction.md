@@ -4,6 +4,11 @@
 
 # Table of Contents
 
+[vimeo-video]
+[stream language="EN" videoId="497193095/28dd1c0e7f" default /]
+[stream language="RO" videoId="497193095/28dd1c0e7f"  /]
+[/video-vimeo]
+
 ## In this lesson you will learn about:
 
 **1. Asynchronous programming**

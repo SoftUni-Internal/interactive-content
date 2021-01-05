@@ -2,6 +2,11 @@
 
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="497193050/c4a10ddd91" default /]
+[stream language="RO" videoId="497193050/c4a10ddd91"  /]
+[/video-vimeo]
+
 # In this session you learnt:
 
 - What is Asynchronous programming

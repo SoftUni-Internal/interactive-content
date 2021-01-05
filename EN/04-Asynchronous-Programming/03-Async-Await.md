@@ -4,6 +4,11 @@
 
 # Async Functions
 
+[vimeo-video]
+[stream language="EN" videoId="497192842/2ca52ccfde" default /]
+[stream language="RO" videoId="497192842/2ca52ccfde"  /]
+[/video-vimeo]
+
 "Async" functions, unlike promises and callbacks, are an **easy-to-read way of operating asynchronously**.
 
 They look like regular functions but use the event loop to work asynchronously.
@@ -48,6 +53,11 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 [slide]
 
 # Async/Await vs Promise.then
+
+[vimeo-video]
+[stream language="EN" videoId="497192871/000ab4ac30" default /]
+[stream language="RO" videoId="497192871/000ab4ac30"  /]
+[/video-vimeo]
 
 Async functions a **much more concise** than promises.
 
@@ -95,6 +105,11 @@ Both examples above **do the same job**, the difference is just in **code readab
 
 # Error Handling
 
+[vimeo-video]
+[stream language="EN" videoId="497192906/a41abd1019" default /]
+[stream language="RO" videoId="497192906/a41abd1019"  /]
+[/video-vimeo]
+
 Async functions are **best used with a try/catch block**.
 
 ```js
@@ -130,6 +145,11 @@ Working with code **always produces errors** and it is **better for user experie
 [slide]
 
 # Sequential Execution
+
+[vimeo-video]
+[stream language="EN" videoId="497192957/5a3197138e" default /]
+[stream language="RO" videoId="497192957/5a3197138e"  /]
+[/video-vimeo]
 
 The `await` keyword in "async" functions allows for the **execution of code in sequence**.
 
@@ -170,6 +190,11 @@ This way **going inside the given function with an undefined variable is impossi
 
 # Concurrent Execution
 
+[vimeo-video]
+[stream language="EN" videoId="497193005/b9090ba014" default /]
+[stream language="RO" videoId="497193005/b9090ba014"  /]
+[/video-vimeo]
+
 When the `await` keyword is omitted, operations run **concurrently** or independently from one another.
 
 Here is the code from the previous example, but with **concurrent** execution:
@@ -207,6 +232,8 @@ If the program flow is parallel, the functions that **depend on the asynchronous
 [slide]
 
 # Problem: Blog
+
+## Add video
 
 [code-task title="Problem: Blog" taskId="js-applications-asynchronous-programming-Blog" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

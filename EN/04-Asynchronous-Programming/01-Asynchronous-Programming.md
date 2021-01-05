@@ -4,6 +4,11 @@
 
 # Event Loop
 
+[vimeo-video]
+[stream language="EN" videoId="497193139/39a6d2879a" default /]
+[stream language="RO" videoId="497193139/39a6d2879a"  /]
+[/video-vimeo]
+
 The event loop in JavaScript is **where all the incoming events are processed**.
 
 It queues event handlers in the **Event queue** and executes them in the **Call stack**, producing JS code.
@@ -17,6 +22,11 @@ Here is how the whole process happens:
 [slide]
 
 # Asynchronous Programming in JS
+
+[vimeo-video]
+[stream language="EN" videoId="497193187/781d77b299" default /]
+[stream language="RO" videoId="497193187/781d77b299"  /]
+[/video-vimeo]
 
 As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
 
@@ -68,6 +78,11 @@ It is important to know that the `async` keyword **must be provided in front of 
 
 # Asynchronous Programming
 
+[vimeo-video]
+[stream language="EN" videoId="497193235/5e5e63906b" default /]
+[stream language="RO" videoId="497193235/5e5e63906b"  /]
+[/video-vimeo]
+
 The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a store and a website.
 
 - In the store, people have to **wait in a queue** to buy something. (synchronous programming)
@@ -77,10 +92,6 @@ The easiest way to understand synchronous and asynchronous programming is to ima
 Here is a diagram of some code's run time to better visualize the concept:
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-1.png" /]
-
-[/slide]
-
-[slide]
 
 # Example 1: Asynchronous Programming
 

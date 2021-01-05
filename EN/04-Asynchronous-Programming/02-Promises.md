@@ -4,6 +4,11 @@
 
 # What is a Promise?
 
+[vimeo-video]
+[stream language="EN" videoId="497193252/5a46d55624" default /]
+[stream language="RO" videoId="497193252/5a46d55624"  /]
+[/video-vimeo]
+
 Executing functions that rely on value from foreign sources is a **tedious and slow task**.
 
 Since the information **does not arrive immediately**, the whole function **must be blocked** until some value is present.
@@ -39,6 +44,11 @@ Here is a visual representation of the chaining process:
 [slide]
 
 # Promise Methods
+
+[vimeo-video]
+[stream language="EN" videoId="497193280/a49d93bcb6" default /]
+[stream language="RO" videoId="497193280/a49d93bcb6"  /]
+[/video-vimeo]
 
 Promises offer a variety of useful methods for an easy and effective work process:
 
@@ -148,6 +158,11 @@ Promise.resolve("Operation succeeded!")
 
 # Example 1: Promise.then()
 
+[vimeo-video]
+[stream language="EN" videoId="497192784/74c03a37f9" default /]
+[stream language="RO" videoId="497192784/74c03a37f9"  /]
+[/video-vimeo]
+
 The `.then()` method makes chaining promises possible.
 
 It is used **after a promise has been initialized** and takes **two parameters** :
@@ -179,6 +194,11 @@ As seen above, the `.then()` method **waits for the completion with the previous
 [slide]
 
 # Example 2: Promise.catch()
+
+[vimeo-video]
+[stream language="EN" videoId="497192805/b85fc82d6e" default /]
+[stream language="RO" videoId="497192805/b85fc82d6e"  /]
+[/video-vimeo]
 
 The `.catch()` method is used to **"catch thrown errors" by promises**. It is very useful to **handle possible promise rejections**.
 
