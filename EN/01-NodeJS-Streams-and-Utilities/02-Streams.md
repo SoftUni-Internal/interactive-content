@@ -38,7 +38,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 There are many useful functions that we can use on readable Streams.
 
-The ".read()" method is used to read the data out of the internal buffer. 
+The `.read()` method is used to read the data out of the internal buffer. 
 
 It returns data as a buffer object if no encoding is being specified or if the stream is working in object mode.
 
@@ -50,7 +50,7 @@ If no data exist in the buffer then **null** is returned.
 readable.read( size );
 ```
 
-The ".pause()" method is used to stop the flowing mode from emitting data events. 
+The `.pause()` method is used to stop the flowing mode from emitting data events. 
 
 Any data that becomes accessible will continue to exist in the internal buffer.
 
@@ -60,7 +60,7 @@ This method does not accept any parameters.
 readable.pause();
 ```
 
-The ".resume()" method is used to data that has been paused and can be resumed, so that data can start flowing again.
+The `.resume()` method is used to data that has been paused and can be resumed, so that data can start flowing again.
 
 This method does not accept any parameters.
 
