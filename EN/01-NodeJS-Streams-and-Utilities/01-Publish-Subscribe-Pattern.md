@@ -38,7 +38,7 @@ This means that we will have to face some consequences if we do nothing about th
 
 So we need to remove the subscribed callbacks when they are no longer necessary. 
 
-The most convenient place to implement this is the return value from subscribe.
+The most convenient place to implement this is the return value from the subscribe function.
 
 ```js
 function pubSub() {
