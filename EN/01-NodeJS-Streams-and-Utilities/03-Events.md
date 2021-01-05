@@ -2,6 +2,8 @@
 
 [slide]
 
+# Node.js Events
+
 Node.js has a built-in module, called "Events", where you can create, fire, and listen for your own events.
 
 To include the built-in Events module use the `require()` method. 
