@@ -3,6 +3,11 @@
 [slide]
 # What is a Templating Engine?
 
+[vimeo-video]
+[stream language="EN" videoId="497194973/9364bc0756" default /]
+[stream language="RO" videoId="497194973/9364bc0756"  /]
+[/video-vimeo]
+
 A **templating engine** enables us to use static **template files** in our application.
 
 **At runtime**, the template engine **replaces variables** in the template files with actual **values**.

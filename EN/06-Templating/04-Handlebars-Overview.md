@@ -4,6 +4,11 @@
 
 # What is Handlebars?
 
+[vimeo-video]
+[stream language="EN" videoId="497195006/8d0a49752d" default /]
+[stream language="RO" videoId="497195006/8d0a49752d"  /]
+[/video-vimeo]
+
 **Handlebars** is a simple **templating language**, based on the Mustache specification.
 
 [image assetsSrc="JS-Applications-templating-3.png" /]
@@ -13,11 +18,6 @@
 Handlebars **expressions** are the **basic unit** of a Handlebars **template**.
 
 We will discuss expressions in-depth later.
-
-[/slide]
-
-
-[slide]
 
 # Handlebars Installation and Using
 
@@ -59,11 +59,14 @@ You can also use Handlebars **without installing it locally**, with the help of 
 
 [/slide]
 
-
-
 [slide]
 
 # Expressions
+
+[vimeo-video]
+[stream language="EN" videoId="497195032/770428affc" default /]
+[stream language="RO" videoId="497195032/770428affc"  /]
+[/video-vimeo]
 
 Handlebars expressions use the **double curly brace notation** we discussed earlier: 
 
@@ -94,6 +97,11 @@ You can use any `id` you want, as long as it is **unique**.
 [slide]
 
 # Compilation and Execution
+
+[vimeo-video]
+[stream language="EN" videoId="497194700/1df29e2fa4" default /]
+[stream language="RO" videoId="497194700/1df29e2fa4"  /]
+[/video-vimeo]
 
 ## Compilation
 
@@ -231,7 +239,12 @@ The `#if` helper, followed by a condition is used to achieve this:
 
 [slide]
 
-# Partials
+# Partials and HTML Escaping
+
+[vimeo-video]
+[stream language="EN" videoId="497194727/a51e939ff0" default /]
+[stream language="RO" videoId="497194727/a51e939ff0"  /]
+[/video-vimeo]
 
 Handlebars allows us to **reuse templates** through **partials**. 
 
@@ -247,12 +260,6 @@ Calling a partial is done by double curly braces,  preceding the name with a `>`
 
 `{{> myPartial }}`
 
-
-[/slide]
-
-
-[slide]
-
 # HTML Escaping
 
 As we learned earlier, **double curly braces** are used to **declare** Handlebars **expressions**.
@@ -264,5 +271,15 @@ For example, if the expression contains `&`, then the returned HTML-escaped outp
 If you do not want Handlebars to **escape a value**, you can use the "triple-stash", `{{{`:
 
 `{{{Any symbol inside here will not be escaped}}}`
+
+[/slide]
+
+[slide]
+# Templating: Demo
+
+[vimeo-video]
+[stream language="EN" videoId="497194803/b312568d8a" default /]
+[stream language="RO" videoId="497194803/b312568d8a"  /]
+[/video-vimeo]
 
 [/slide]

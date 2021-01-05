@@ -2,6 +2,11 @@
 
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="497194765/f46f0ca68a" default /]
+[stream language="RO" videoId="497194765/f46f0ca68a"  /]
+[/video-vimeo]
+
 # In this session you learnt:
 
 - Templates make our HTML modular

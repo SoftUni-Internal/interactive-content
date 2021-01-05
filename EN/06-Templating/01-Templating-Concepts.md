@@ -1,7 +1,12 @@
 # Templating Concepts
 
 [slide]
-# What is Templating
+# What is Templating?
+
+[vimeo-video]
+[stream language="EN" videoId="497194934/666338721f" default /]
+[stream language="RO" videoId="497194934/666338721f"  /]
+[/video-vimeo]
 
 **Templating** is the procedure of separating an HTML document's structure from the actual **content**.
 
@@ -10,9 +15,6 @@
 [image assetsSrc="JS-Applications-templating-1.png" /]
 
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
-[/slide]
-
-[slide]
 
 # Concepts
 
@@ -46,10 +48,6 @@ Generally very **easy to learn.**
 
 The principles of **functional programming** can be applied to templates as well
 
-[/slide]
-
-[slide]
-
 # Benefits of Templating
 
 Templates bring a number of **benefits**.
@@ -75,10 +73,6 @@ Allows for the use of a **single element on multiple pages.**
 
 **Headers**, **Footers** and **Banners** are examples of that.
 
-[/slide]
-
-
-[slide]
 # When Should We Use JavaScript Templating
 
 **Templating** is a great solution in many given scenarios:

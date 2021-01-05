@@ -4,6 +4,11 @@
 
 # Table of Contents
 
+[vimeo-video]
+[stream language="EN" videoId="497194912/5c7adc45b" default /]
+[stream language="RO" videoId="497194912/5c7adc45b"  /]
+[/video-vimeo]
+
 ## In this lesson you will learn about
 
 **1. Templating Concepts**
