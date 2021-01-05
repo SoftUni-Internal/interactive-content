@@ -1,5 +1,15 @@
-[slide]
 # Lesson Introduction
+
+[slide]
+# Table of Contents
+
+[vimeo-video]
+[stream language="EN" videoId="497194061/114be0f447" default /]
+[stream language="RO" videoId="497194061/114be0f447"  /]
+[/video-vimeo]
+
+## In this lesson you will learn about:
+
 **1. What is a pattern?** Why are patterns used in coding and how they improve code quality?
 
 **2. Common Design Patterns**
