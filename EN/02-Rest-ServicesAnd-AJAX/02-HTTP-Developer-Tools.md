@@ -4,6 +4,11 @@
 
 # Chrome Developer Tools
 
+[vimeo-video]
+[stream language="EN" videoId="497190983/6fa8bbc679" default /]
+[stream language="RO" videoId="497190983/6fa8bbc679"  /]
+[/video-vimeo]
+
 **Chrome DevTools** is set of tools, that are built in Chrome browser.
 
 We can access DevTools with **F12**.
@@ -21,6 +26,11 @@ You can learn more about DevTools [here](https://developers.google.com/web/tools
 [slide]
 
 # Postman
+
+[vimeo-video]
+[stream language="EN" videoId="497191010/985739ced5" default /]
+[stream language="RO" videoId="497191010/985739ced5"  /]
+[/video-vimeo]
 
 Postman gives us the ability to test an API.
 
