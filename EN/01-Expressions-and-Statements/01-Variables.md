@@ -1,7 +1,7 @@
 # Variables and Storing Data
 
 [slide]
-# Real Live Example
+# Real Life Example
 
 [vimeo-video]
 [stream language="EN" videoId="486854871/0266769f7d" default /]
