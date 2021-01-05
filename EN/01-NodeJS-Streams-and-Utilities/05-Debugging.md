@@ -1,0 +1,18 @@
+# Debugging
+
+[slide]
+
+# Debugging and watching in Node.js
+
+Debugging in Node.js is done by using V8 debugging protocol, which is a JSON based protocol.
+
+Also we can use IDEs with a debugger like:
+- Webstorm
+- Visual Studio Code
+- Node-inspector (not working with latest version)
+
+Use Nodemon to watch for changes in your application.
+
+It helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+[/slide]
