@@ -150,7 +150,7 @@ Some commonly used patterns in this category are:
 
 [image assetsSrc="design-patterns-12.jpg" /]
 
-- design patterns come with consequences and if applied incorrectly or without regard to how the application might change in the future they can cause problems.
+- Design patterns come with consequences and if applied incorrectly or without regard to how the application might change in the future they can cause problems.
 
 - Patterns do not provide us with concrete code to use, they simply provide a possible approach to take when designing applications.
 

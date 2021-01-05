@@ -8,13 +8,13 @@ The **factory design pattern** is a creational pattern and its purpose is creati
 
 This pattern is typically used when:
 
-- the setup of objects requires a high level of complexity. The logic for instantiating objects is encapsulated within the factory object and the client doesn't need to know the actual logic to use it. It calls upon the factory and receives the created object.
+- The setup of objects requires a high level of complexity. The logic for instantiating objects is encapsulated within the factory object and the client doesn't need to know the actual logic to use it. It calls upon the factory and receives the created object.
 
-- when you need to generate different instances of objects depending on the context.
+- When you need to generate different instances of objects depending on the context.
 
-- when working with objects or components that share the same properties
+- When working with objects or components that share the same properties
 
-- when you need to create a **loosely coupled system**.
+- When you need to create a **loosely coupled system**.
 
 
 ## When not to use
@@ -32,11 +32,11 @@ The creation of new objects is abstracted behind an interface, which can cause p
 |---|---|
 |+ dynamic object creation   |  - can overcomplicate code (too many sub-classes) |
 |+ abstraction   | - can introduce problems with unit testing  |
-|+ reusability and easier maintenance   |  |
+|+ reusability and easier maintenance   |   |
 
 One of the biggest benefits of the **factory pattern** is that we can move the object instantiation logic to a single place in the program, which can make the code easier to support. This is the basis behind the **Single Responsibility Principle**.
 
-It also adheres to the **Open/Closed Principle** which states that each software entity should be open for extension, but closed for modification. This is because you can add new types of features without risking breaking the existing client code.
+It also adheres to the **Open/Closed Principle** which states that each software entity should be open for extension but closed for modification. This is because you can add new types of features without risking breaking the existing client code.
 
 [/slide]
 
@@ -74,7 +74,7 @@ digitalMonsters.forEach((digimon) => {
 });
 ```
 
-In the example above we have a **digimonFactory** that is used to create new digital monsters. We then create an empty array and push some digital monsters into it after creating them using the factory. Finally we iterate through the collection and print out the names and special moves of each monster inside the collection.
+In the example above we have a **digimonFactory** that is used to create new digital monsters. We then create an empty array and push some digital monsters into it after creating them using the factory. Finally, we iterate through the collection and print out the names and special moves of each monster inside the collection.
 
 [/slide]
 
@@ -84,8 +84,8 @@ In the example above we have a **digimonFactory** that is used to create new dig
 The **decorator pattern** is a structural design pattern that promotes code reusability and is an alternative to subclassing. With this pattern, extra responsibilities or behaviors can be added to objects during runtime, without breaking the code that uses these objects.
 
 ## When to use
-- when you need to add functionality to an object either dynamically (during runtime) or statically, without affecting the behavior of other objects of the same class.
-- when extension by subclassing is not practical.
+- When you need to add functionality to an object either dynamically (during runtime) or statically, without affecting the behavior of other objects of the same class.
+- When extension by subclassing is not practical.
 
 ## When not to use
 
@@ -124,9 +124,8 @@ If you were to use a decorator on top of the Car object in the above example the
 |  Pros |Cons   |
 |---|---|
 |+ extend functionality without modifying the objects that you are decorating   | - can add too many small objects  |
-|+ add and withdraw responsibilities as needed  | - can cause issues when client relies heavily on the concrete type of components  |
+|+ add and withdraw responsibilities as needed  | - can cause issues when the client relies heavily on the concrete type of components  |
 |+ supports the Open/Closed SOLID principle   | - instantiating the components can become more complicated |
-
 [/slide]
 
 [slide]
@@ -162,7 +161,6 @@ eBook.info();
 decoratedEbook.info();
 ```
 
-
 The decorator accepts a parameter **ebookReader** - the object we want to decorate and a new property **model**. In this way, the decorated ebook reader would have an additional property and the **info()** function has been extended accordingly without modifying the original EbookReader class.
 
 [/slide]
@@ -178,9 +176,9 @@ The **facade pattern** is used a lot in multi-layer applications where only cert
 **Facade** pattern is widely used. It is implemented by creating a "wrapper" class, encapsulating the subsystem. The client is only coupled to the facade and not to the subsystem(s) behind it.
 
 ## When to use
-- when you have a complex system and you need a simple interface to communicate with it
+- When you have a complex system and you need a simple interface to communicate with it
 
-- when you have a lot of tightly coupled code which would require the client to have extensive knowledge on how the system works to use it. In this case, the facade pattern can simplify things.
+- When you have a lot of tightly coupled code which would require the client to have extensive knowledge on how the system works to use it. In this case, the facade pattern can simplify things.
 
 [/slide]
 
@@ -191,7 +189,7 @@ The **facade pattern** is used a lot in multi-layer applications where only cert
 |---|---|
 |+ You can **isolate** your code from the **complexity of** a **subsystem** | - facade can be coupled to too many objects  |
 
-The facade pattern can reduce complexity when there are several modules communicating with each other or when the client needs to use several classes at once.
+The facade pattern can reduce complexity when several modules are communicating with each other or when the client needs to use several classes at once.
 
 [/slide]
 
@@ -231,9 +229,7 @@ This is a pattern in which an object called **subject** maintains a list of depe
 
 [image assetsSrc="design-patterns-15.png" /]
 
-- **Subject** - contains collection of observers. It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed 
-
-- **subcribe()**, **unsubscribe()**. Sends notifications to the observers attached  to it.
+- **Subject** - contains collection of observers. It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - **subscribe()**, **unsubscribe()**. Sends notifications to the observers attached to it.
 
 - **Observer** - has an interface that sends updates to objects that need to be notified of a subject's changes of state.
 
@@ -251,7 +247,7 @@ Messages to the observers are typically sent using a **notify()** method that lo
 When the observer, no longer needs to receive updates from the subject it can be **detached** (removed from the subject's collection).
 
 ## When to use
-- when you have a class that needs to be monitored by other classes in the program and they need to be aware of any changes in its state. An example of this would be on sites like YouTube where you can subscribe to other users, your account would be added to their subscribers and each time they upload a new video, you would be notified, in effect making your account an Observer.
+When you have a class that needs to be monitored by other classes in the program and they need to be aware of any changes in its state. An example of this would be on sites like YouTube where you can subscribe to other users, your account would be added to their subscribers and each time they upload a new video, you would be notified, in effect making your account an Observer.
 
 [/slide]
 
@@ -261,20 +257,19 @@ When the observer, no longer needs to receive updates from the subject it can be
 
 |  Pros |Cons   |
 |---|---|
-|+ broadcast **changes** and **updates** | - can add unnecessary complecity  |
+|+ broadcast **changes** and **updates** | - can add unnecessary complexity  |
 |+ new observers can be added to the subject with no modification to its code | - unpredictable order of sending notifications |
 |+ add and remove observers at any time |  |
 |+ **loose coupling** between subject and observer |  |
 
-By using the observer pattern we introduce **loose coupling** between the subject and its observers. The subject is only aware of the collection of observers it maintains, but is not concerned with the concrete implementation of the observers.
+By using the observer pattern we introduce **loose coupling** between the subject and its observers. The subject is only aware of the collection of observers it maintains but is not concerned with the concrete implementation of the observers.
 
 Changes can be broadcast to any number of observers, although the order in which the notifications are sent can be unpredictable, which might lead to problems.
 
 [/slide]
 
 [slide]
-
-# Observer Pattern example:
+# Example
 Here is a simplified example of the **observer pattern**:
 
 ```js
@@ -301,5 +296,4 @@ We are declaring a class called **Observable**. This is the Subject. It has a co
 The **subscribe** method is used to add observers to the collection of the observable object. The **unsubscribe** method removes (detaches) and observer from it. The **unsubscribe** method removes (**detaches**) an observer from the subject.
 
 When the ``notify(data)`` method is called we iterate through the observers collection and **send a notification** to **every single observer** that is currently **subscribed** to the observable object.
-
 [/slide]
