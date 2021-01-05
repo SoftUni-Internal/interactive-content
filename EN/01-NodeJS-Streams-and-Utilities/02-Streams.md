@@ -14,7 +14,7 @@ There are many stream objects provided by Node.js.
 
 For instance, a request to an HTTP server is a stream instance.
 
-Streams can be Readable, Writable, Duplex or Transform. 
+Streams can be **Readable**, **Writable**, **Duplex** or **Transform**. 
 
 All streams are instances of the "EventEmitter".
 
@@ -38,7 +38,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 There are many useful functions that we can use on readable Streams.
 
-The "readable.read()" method is used to read the data out of the internal buffer. 
+The ".read()" method is used to read the data out of the internal buffer. 
 
 It returns data as a buffer object if no encoding is being specified or if the stream is working in object mode.
 
@@ -50,7 +50,7 @@ If no data exist in the buffer then **null** is returned.
 readable.read( size );
 ```
 
-The "readable.pause()" method is used to stop the flowing mode from emitting data events. 
+The ".pause()" method is used to stop the flowing mode from emitting data events. 
 
 Any data that becomes accessible will continue to exist in the internal buffer.
 
@@ -60,7 +60,7 @@ This method does not accept any parameters.
 readable.pause();
 ```
 
-The "readable.resume()" method is used to data that has been paused and can be resumed, so that data can start flowing again.
+The ".resume()" method is used to data that has been paused and can be resumed, so that data can start flowing again.
 
 This method does not accept any parameters.
 
@@ -127,7 +127,7 @@ http.createServer((req, res) => {
 
 ## Functions
 
-The `writable.write()` method takes three arguments:
+The `.write()` method takes three arguments:
 
 The chunk is usually a buffer, unless we configure the stream differently.
 
@@ -148,7 +148,7 @@ const outStream = new Writable({
 process.stdin.pipe(outStream);
 ```
 
-The `writable.end()` method ends writing data. The arguments chunk and encoding are optional, which will permit one final new chunk of data to be written instantly before closing the stream.
+The `.end()` method ends writing data. The arguments chunk and encoding are optional, which will permit one final new chunk of data to be written instantly before closing the stream.
 
 Moreover, the optional callback function is added as a listener for the **finish** event of the Writable stream.
 
