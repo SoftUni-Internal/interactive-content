@@ -4,6 +4,11 @@
 
 # RESTful Services
 
+[vimeo-video]
+[stream language="EN" videoId="497191038/6224733eff" default /]
+[stream language="RO" videoId="497191038/6224733eff"  /]
+[/video-vimeo]
+
 **REST** means **Re**presentational **S**tate **T**ransfer.
 
 It is **request-response** based architecture style for **client\-server communication** over HTTP.
@@ -23,6 +28,11 @@ On the resources, we can use the **CRUD** operation.
 [slide]
 
 # REST Architectural Constrains
+
+[vimeo-video]
+[stream language="EN" videoId="497191068/9e59640c57" default /]
+[stream language="RO" videoId="497191068/9e59640c57"  /]
+[/video-vimeo]
 
 There are **six architectural constraints** that **REST** makes.
 
