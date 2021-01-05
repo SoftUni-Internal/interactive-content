@@ -3,6 +3,10 @@
 [slide]
 # Table of Contents
 
+[vimeo-video]
+[stream language="EN" videoId="497190340/4e18d6d41f" default /]
+[stream language="RO" videoId="497190340/4e18d6d41f"  /]
+[/video-vimeo]
 
 ## In this lesson you will learn about:
 

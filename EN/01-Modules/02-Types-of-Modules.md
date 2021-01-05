@@ -3,6 +3,11 @@
 [slide]
 # IIFE Modules
 
+[vimeo-video]
+[stream language="EN" videoId="497190428/165032f175" default /]
+[stream language="RO" videoId="497190428/165032f175"  /]
+[/video-vimeo]
+
 **IIFE Modules** are essential for front-end development.
 
 They enable us to **hide certain data and functionality from the global scope**, and have been very commonly used **until ES6 Modules were introduced**.
@@ -43,6 +48,11 @@ The counter itself, however, **cannot be directly accessed**, unless we declare 
 
 [slide]
 # Node.js Modules
+
+[vimeo-video]
+[stream language="EN" videoId="497190452/0853897b4d" default /]
+[stream language="RO" videoId="497190452/0853897b4d"  /]
+[/video-vimeo]
 
 In Node\.js, **every file has its own scope**.
 
@@ -132,8 +142,12 @@ let fs = require('fs');
 [/slide]
 
 [slide]
-
 # ES6 Modules
+
+[vimeo-video]
+[stream language="EN" videoId="497190480/bb0605a541" default /]
+[stream language="RO" videoId="497190480/bb0605a541"  /]
+[/video-vimeo]
 
 In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
 

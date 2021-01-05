@@ -2,7 +2,7 @@
 
 [slide]
 
-# What is Mocha?
+# What is Mocha and Chai?
 
 [vimeo-video]
 [stream language="EN" videoId="497187597/ab33a32f17" default /]
@@ -24,8 +24,6 @@ describe("title", function () {
     it("title", function () { ... });
 });
 ```
-
-# What is Chai?
 
 **Chai** is a library with many **assertions**.
 

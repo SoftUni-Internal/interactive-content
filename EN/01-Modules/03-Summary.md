@@ -2,6 +2,11 @@
 
 # Summary
 
+[vimeo-video]
+[stream language="EN" videoId="497190312/33c101ab06" default /]
+[stream language="RO" videoId="497190312/33c101ab06"  /]
+[/video-vimeo]
+
 # In this session you learnt:
 
 - What are modules in JavaScript?
