@@ -4,6 +4,11 @@
 
 # What is Unit Testing?
 
+[vimeo-video]
+[stream language="EN" videoId="497187486/91a42d34b4" default /]
+[stream language="RO" videoId="497187486/91a42d34b4"  /]
+[/video-vimeo]
+
 A unit test is a piece of code that checks whether a certain functionality works as expected.
 
 It also provides the developers with the necessery information as to why and where errors occur in the code.
@@ -47,6 +52,11 @@ Unite tests force better code and design whether you are using C\#, Java, Python
 
 # Unit Test Structure
 
+[vimeo-video]
+[stream language="EN" videoId="497187562/291e2862b3" default /]
+[stream language="RO" videoId="497187562/291e2862b3"  /]
+[/video-vimeo]
+
 The **AAA** "Arrange-Act-Assert" pattern is almost a standard across the industry. 
 
 It suggests that you should divide your test method into three sections: **arrange**, **act** and **assert**.
@@ -71,10 +81,6 @@ if (JSON.stringify(nums) === "[-2,2,4,15]") {
     console.error("They are equal!");
 }
 ```
-
-[/slide]
-
-[slide]
 
 # Unit Testing Frameworks
 
