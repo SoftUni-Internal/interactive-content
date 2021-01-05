@@ -1,6 +1,10 @@
 [slide]
-
 # Summary
+
+[vimeo-video]
+[stream language="EN" videoId="497187442/eabcce8a84" default /]
+[stream language="RO" videoId="497187442/eabcce8a84"  /]
+[/video-vimeo]
 
 # In this session you learnt:
 

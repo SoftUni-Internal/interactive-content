@@ -4,11 +4,23 @@
 
 # Types of Unit Testing
 
+[vimeo-video]
+[stream language="EN" videoId="497186923/11dd2d2251" default /]
+[stream language="RO" videoId="497186923/11dd2d2251"  /]
+[/video-vimeo]
+
 ## Code First
 
 This is a classical approach. The code is written first then the tests.
+[/slide]
 
-## Test-Driven Development
+[slide]
+# Test-Driven Development
+
+[vimeo-video]
+[stream language="EN" videoId="497186952/c459aec01c" default /]
+[stream language="RO" videoId="497186952/c459aec01c"  /]
+[/video-vimeo]
 
 Tests first approach.
 
@@ -21,8 +33,15 @@ In Test-Driven Development we follow these steps:
 - Run test and fail.
 - Write code to past test.
 - Remove duplication.
+[/slide]
 
-**Why TDD is a better approach?**
+[slide]
+# Why TDD is a better approach?
+
+[vimeo-video]
+[stream language="EN" videoId="497187415/9886bcfa69" default /]
+[stream language="RO" videoId="497187415/9886bcfa69"  /]
+[/video-vimeo]
 
 TDD helps find design issues early and thus avoids reworking.
 

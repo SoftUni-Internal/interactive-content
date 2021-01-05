@@ -4,6 +4,11 @@
 
 # Global Installation
 
+[vimeo-video]
+[stream language="EN" videoId="497187625/794b3d10c7" default /]
+[stream language="RO" videoId="497187625/794b3d10c7"  /]
+[/video-vimeo]
+
 To install frameworks and libraries globally, use the Windows "CMD" or Visual Studio Code "npm".
 
 Open an instance of the terminal in Visual Studio Code.
@@ -24,17 +29,13 @@ Check if Mocha is installed.
 mocha --version
 ```
 
-[/slide]
-
-[slide]
-
 # Node Path Configuration
 
-By default "Node.js" does not find its globally installed modules.
+By default `Node.js` does not find its globally installed modules.
 
-You need to set the "NODE_PATH" environment variable manually.
+You need to set the `NODE_PATH` environment variable manually.
 
-Open the Windows "CMD" console.
+Open the Windows `CMD` console.
 
 To set the path use this peace of code for any future sessions.
 
@@ -68,8 +69,13 @@ describe("Test group #2", function () {
 [/slide]
 
 [slide]
-
 # Problem: Sum Of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="497187668/5cbd6f3899" default /]
+[stream language="RO" videoId="497187668/5cbd6f3899"  /]
+[/video-vimeo]
+
 [code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
@@ -157,6 +163,12 @@ Test Passed!
 
 [slide]
 # Solution: Sum Of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="497186830/02a87caa7f" default /]
+[stream language="RO" videoId="497186830/02a87caa7f"  /]
+[/video-vimeo]
+
 [code-task title="Problem: Sum Of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 

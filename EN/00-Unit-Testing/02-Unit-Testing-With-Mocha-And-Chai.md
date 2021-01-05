@@ -4,6 +4,11 @@
 
 # What is Mocha?
 
+[vimeo-video]
+[stream language="EN" videoId="497187597/ab33a32f17" default /]
+[stream language="RO" videoId="497187597/ab33a32f17"  /]
+[/video-vimeo]
+
 **Mocha** is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. 
 
 Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
@@ -19,10 +24,6 @@ describe("title", function () {
     it("title", function () { ... });
 });
 ```
-
-[/slide]
-
-[slide]
 
 # What is Chai?
 
