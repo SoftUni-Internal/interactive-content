@@ -32,11 +32,11 @@ If it is not, it assumes that this will be the first registered callback for sub
 
 Then, it proceeds to push the callback into the array.
 
-In a real application we might suffer a never ending memory leak if we subscribe many callbacks, and it is especially wasteful if we do not do anything about that.
+In a real application we might have a never ending memory leak if we subscribe many callbacks.
 
-So what we need last is a way for subscribed callbacks to be removed when they are no longer necessary. 
+This means that we will have to face some consequences if we do nothing about that.
 
-What often happens in this case is that some unsubscribe method is placed somewhere. 
+So we need to remove the subscribed callbacks when they are no longer necessary. 
 
 The most convenient place to implement this is the return value from subscribe.
 
