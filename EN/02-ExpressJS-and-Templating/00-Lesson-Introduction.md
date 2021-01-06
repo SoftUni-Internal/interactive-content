@@ -11,13 +11,13 @@
 - Introduction​
 
 - Router​
-   - how does it works
+   - how does it work
 
 - Middleware​
-   - what are middleware
+   - what is a middleware
 
 - Static Files​
-   - how to save and use static files using express
+   - how to save and use static files using Express
    
 **2. View Engines**​
 
@@ -25,5 +25,5 @@
    - we will learn what a template is as a concept
 
 - Handlebars
-  - we will see what handlebars are
+  - introduction and syntax
 [/slide]
