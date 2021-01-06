@@ -177,3 +177,5 @@ The following table showcases some commonly used middleware and their use cases:
 | `errorhandler`        | Enables debugging and error handling in the developer enviroment.                       |
 | `cors`                | Enables cross-origin resource sharing (CORS).                                           |
 | `serve-static`        | Used to serve static files.                                                             |
+
+[/slide]
