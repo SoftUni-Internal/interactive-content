@@ -8,7 +8,7 @@ The Node.js file system module allows you to work with the file system.
 
 To include the File System module, use the `require()` method.
 
-```
+```js
 let fs = require('fs');
 ```
 
@@ -23,11 +23,11 @@ All these functions can be **synchronous** or **asynchronous**.
 
 Example:
 
-```
+```js
 let data = fs.readFileSync('./package.json', 'utf8');
 console.log(data);
 ```
-```
+```js
 let data = fs.readFile('./package.json', 'utf8', (err, data) => {
     console.log(data);
 });
@@ -53,7 +53,7 @@ The second one is **encoding**. It is a string value which specifies which encod
 
 The third one is a callback function.
 
-```
+```js
 let fs = require('fs');
 let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
@@ -62,7 +62,7 @@ If we use the `fs.readdir()` method then the content of a given directory will b
 
 It returns an array of String, Buffer or fs.Dirent objects that contain the files in the directory.
 
-```
+```js
 let fs = require('fs');
 let data = fs.readdir('./myDir', 'utf8', (err, data) => {
     if (err) {
@@ -81,13 +81,13 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
 
 To create a directory synchronously use the `mkdirSync()` nethod.
 
-```
+```js
 fs.mkdirSync('./myDir');
 ```
 
 Use the `mkdir()` method to create a directory asynchronously.
 
-```
+```js
 let fs = require('fs');
 fs.mkdir('./myDir', err => {
     if (err) {
@@ -105,13 +105,13 @@ fs.mkdir('./myDir', err => {
 
 To rename a file or a directory synchronously use the `renameSync()` method.
 
-```
+```js
 fs.renameSync('./oldName', './newName');
 ```
 
 Use the `rename()` method to rename a file or a directory asynchronously.
 
-```
+```js
 let fs = require('fs');
 fs.rename('./oldName', './newName', err => {
     if (err) {
@@ -135,7 +135,7 @@ Use the `writeFileSync()` or `writeFile()` method.
 
 Example:
 
-```
+```js
 let fs = require('fs');
 let filePath = './data.txt';
 let data = 'Some text';
@@ -155,7 +155,7 @@ fs.writeFile(filePath, data, err => {
 
 In case we want to delete a file use the `unlinkSync()` or `unlink()` method.
 
-```
+```js
 let fs = require('fs');
 fs.unlink('./target.txt', err => {
     if (err) {
@@ -167,7 +167,7 @@ fs.unlink('./target.txt', err => {
 
 Similarly we can delete a directory using the `rmdirSync()` or `rmdir()` method.
 
-```
+```js
 let fs = require('fs');
 fs.rmdir('./myDir', err => {
     if (err) {

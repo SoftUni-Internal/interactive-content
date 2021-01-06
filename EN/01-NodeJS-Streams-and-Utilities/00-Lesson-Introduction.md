@@ -2,7 +2,9 @@
 
 [slide]
 
-# In this lesson you will learn about:
+# Table of Content
+
+## In this lesson you will learn about:
 
 **1. Pub/Sub Pattern**
 - Publish-Subscribe Pattern

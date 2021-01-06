@@ -34,7 +34,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 # Readable Stream
 
-## Functions
+**Functions**
 
 There are many useful functions that we can use on readable Streams.
 
@@ -46,7 +46,7 @@ This method accepts single parameter **size**, which specifies the number of byt
 
 If no data exist in the buffer then **null** is returned.
 
-```
+```js
 readable.read( size );
 ```
 
@@ -56,7 +56,7 @@ Any data that becomes accessible will continue to exist in the internal buffer.
 
 This method does not accept any parameters.
 
-```
+```js
 readable.pause();
 ```
 
@@ -64,11 +64,11 @@ The `.resume()` method is used to data that has been paused and can be resumed, 
 
 This method does not accept any parameters.
 
-```
+```js
 readable.resume();
 ```
 
-## Events
+**Events**
 
 All streams are instances of "EventEmitter". They emit events that can be used to read and write data.
 
@@ -125,7 +125,7 @@ http.createServer((req, res) => {
 
 # Writable Stream
 
-## Functions
+**Functions**
 
 The `.write()` method takes three arguments:
 
@@ -137,7 +137,7 @@ The callback is a function that we need to call after we are done processing the
 
 It is what signals whether the write was successful or not. To signal a failure, call the callback with an error object.
 
-```
+```js
 const { Writable } = require('stream');
 const outStream = new Writable({
     write(chunk, encoding, callback) {
@@ -152,11 +152,11 @@ The `.end()` method ends writing data. The arguments chunk and encoding are opti
 
 Moreover, the optional callback function is added as a listener for the **finish** event of the Writable stream.
 
-```
+```js
 writable.end( chunk, encoding, callback);
 ```
 
-## Events
+**Events**
 
 The most important events on a writable stream are:
 
@@ -168,7 +168,7 @@ The **finish** event in a Writable Stream is emitted after the Calling of `writa
 
 Exapmle:
 
-```
+```js
 const stream = require('stream'); 
 const writable = new stream.Writable({ 
   write: function(chunk, encoding, next) { 
@@ -256,7 +256,7 @@ We require "fs" and "zlib" module from Node.js, then we create a readable and wr
 
 Finally using the `.pipe()` method we transfer data from one file to another.
 
-```
+```js
 const fs = require('fs');
 const zlib = require('zlib');
 let readStream = fs.createReadStream('index.js');

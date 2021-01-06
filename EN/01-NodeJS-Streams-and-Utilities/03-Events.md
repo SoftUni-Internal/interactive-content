@@ -20,7 +20,7 @@ Finally we fire the event using the `eventEmitter.emit()` method.
 
 **Important thing to know is that Events are not Asychronous!**
 
-```
+```js
 const events = require('events');
 let eventEmitter = new events.EventEmitter();
 eventEmitter.on('click', (a, b) => {
