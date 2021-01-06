@@ -64,7 +64,7 @@ If some of these scenarios is to happen, make sure the current user is redirecte
 
 **Guest** users can **see** and **access** the following urls:
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-1.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-1.jpg /]
 
 - **Home page (Browse)**
 - **About page**
@@ -76,7 +76,7 @@ and **cannot access** and **see** everyone else...
 
 **Logged** in users can **see** and **access** the following urls:
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-2.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-2.jpg /]
 
 - **Home page (Browse)**
 - **About page**
@@ -94,7 +94,7 @@ Only **authorized** users should see the \[**Edit**\] and \[**Delete**\] buttons
 
 Otherwise, they should be **hidden**.
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-3.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-3.jpg /]
 
 [/slide]
 
@@ -119,19 +119,19 @@ Replace the old **CSS** file with the given one.
 
 ## Login Page
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-4.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-4.jpg /]
 
 ## Register Page
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-5.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-5.jpg /]
 
 ## Edit Cube Page
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-6.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-6.jpg /]
 
 ## Delete Cube Page
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-7.jpg ]
+[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-Homework-7.jpg /]
 
 **Good Luck!**
 
