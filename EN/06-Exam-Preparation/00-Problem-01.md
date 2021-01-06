@@ -2,6 +2,17 @@
 
 [slide]
 # Description
+
+[vimeo-video]
+[stream language="EN" videoId="497664341/656c4f7354" default /]
+[stream language="RO" videoId="497664341/656c4f7354"  /]
+[/video-vimeo]
+
+[vimeo-video]
+[stream language="EN" videoId="497664300/136916d5ee" default /]
+[stream language="RO" videoId="497664300/136916d5ee"  /]
+[/video-vimeo]
+
 You are given an array of integers.
 
 Write a program to modify the array, the possible alterations are: `swap`, `multiply` or `decrease`.

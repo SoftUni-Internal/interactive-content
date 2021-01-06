@@ -2,6 +2,13 @@
 
 [slide]
 # Description
+
+[vimeo-video]
+[stream language="EN" videoId="497664040/da0b1365f9" default /]
+[stream language="RO" videoId="497664040/da0b1365f9"  /]
+[/video-vimeo]
+
+
 Write a program that checks for **empty seats on a lift.**
 
 Each of the cabins of the lift can fit no **more than 4 people.**
