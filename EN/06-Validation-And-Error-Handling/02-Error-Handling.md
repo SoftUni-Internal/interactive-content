@@ -74,6 +74,8 @@ Which can `console.log()` the error, send a message, etc.
 
 [/slide]
 
+[slide]
+
 # Working Asynchronously with Errors
 
 To handle asynchronous errors is almost the same as synchronously, but not exactly.
