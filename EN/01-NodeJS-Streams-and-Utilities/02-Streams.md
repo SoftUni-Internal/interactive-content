@@ -106,7 +106,7 @@ With the "end" event we end the data transfer.
 
 The `.listen()` method creates a listener on the specified port or path.
 
-```
+```js
 const http = require('http');
 http.createServer((req, res) => {
     if (req.method === 'POST') {
@@ -203,7 +203,7 @@ Then we use the `write()` method to write the data inside `src.on()` function.
 
 Finally we use `end()` method to finish writing the data.
 
-```
+```js
 const fs = require('fs');
 const server = require('http').createServer();
 server.on('request', (req, res) => {
@@ -228,7 +228,7 @@ The `pipe()` function allows a readable stream to output directly to a writable 
 
 We read from the './bigfile.txt' and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
 
-```
+```js
 const fs = require('fs');
 const server = require('http').createServer();
 server.on('request', (req, res) => {
