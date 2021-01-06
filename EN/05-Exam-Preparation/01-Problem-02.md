@@ -1,7 +1,13 @@
 # Problem 2: Inventory
 
 [slide]
-## Description
+# Description
+
+[vimeo-video]
+[stream language="EN" videoId="497656637/db5855df33" default /]
+[stream language="RO" videoId="497656637/db5855df33"  /]
+[/video-vimeo]
+
 You will receive a string, containing the current items in your inventory, separated by a comma and a space `, `.
 
 After that, until receiving `Craft!` you will be given different commands.

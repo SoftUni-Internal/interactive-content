@@ -2,6 +2,12 @@
 
 [slide]
 # Description
+
+[vimeo-video]
+[stream language="EN" videoId="497656935/bfde3ae27b" default /]
+[stream language="RO" videoId="497656935/bfde3ae27b"  /]
+[/video-vimeo]
+
 Your character starts with a **100 health points** and **0 bitcoins.**
 
 You will be given a string, **representing different occurrences**, that you have to process.
