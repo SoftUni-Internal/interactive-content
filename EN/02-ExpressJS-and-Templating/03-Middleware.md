@@ -129,3 +129,35 @@ Then we load the cookie-parsing middleware as follows:
 `app.use(cookieParser())`
 
 [/slide]
+
+[slide]
+
+# Custom Middleware
+
+We can create **custom middleware** only for a **specific path**.
+
+The `app.use()` and `app.METHOD()` functions can accept a string-formatted **route** alongside the **middleware function** as parameters:
+
+```js
+app.use("/post/:postId", (req, res, next) => {
+  const postId = req.params.postId;
+
+  let postExists = postId !== undefined;
+
+  if (!postExists) {
+    res.redirect("/home");
+  } else {
+    next();
+  }
+});
+
+app.get("/post/:postId", (req, res) => {
+  res.send("Post details");
+});
+```
+
+In this example we check if a blogpost with a given `postId` exists in a database.
+
+Depending on that, we either redirect the user to the homepage or we show more information about the post.
+
+[/slide]
