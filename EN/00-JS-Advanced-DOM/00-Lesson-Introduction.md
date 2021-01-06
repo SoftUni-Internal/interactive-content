@@ -2,11 +2,6 @@
 
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
-
 ## Lesson content:
 
 **1. DOM**
