@@ -161,3 +161,21 @@ In this example we check if a blogpost with a given `postId` exists in a databas
 Depending on that, we either redirect the user to the homepage or we show more information about the post.
 
 [/slide]
+
+[slide]
+
+# Third-Party Middleware
+
+There is a lot of **third-party middleware**, which enables extra features.
+
+The following table showcases some commonly used middleware and their use cases:
+
+| **Middleware module** | **Description**                                                                         |
+| --- | --- |
+| `body-parser`         | Parses the body of an HTTP request.                                                     |
+| `cookie-parser`       |  Parses the header of a cookie. Populates the `cookies` property of the request object. |
+| `errorhandler`        | Enables debugging and error handling in the developer enviroment.                       |
+| `cors`                | Enables cross-origin resource sharing (CORS).                                           |
+| `serve-static`        | Used to serve static files.                                                             |
+
+[/slide]
