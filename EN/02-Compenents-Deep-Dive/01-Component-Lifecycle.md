@@ -3,13 +3,9 @@
 [slide]
 # Component Lifecycle
 
-Each component goes through three phases of the lifecycle.
+Various changes that the Component undergoes from its creation until it is terminated are called a **lifecycle of the component.**
 
-- **Mounting:** when the first time you access the a web page and the component is rendered.
-
-- **Updating:** is the second phase in which the component is updated.
-
-- **Updating:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
+Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Updating**. 
 
 These are **phases** in which different methods are performed.
 
@@ -20,6 +16,18 @@ All these phases are present only in **class components.**
 Later in this course, we will learn how to implement them with a functional component using hooks.
 
 A component has lifecycle methods that can be **overridden** to run code at times in the process.
+[/slide]
+
+[slide]
+# Lifecycle Methods
+
+They are exactly three lifecycle methods:
+
+- **Mounting:** when the first time you access the a web page and the component is rendered.
+
+- **Updating:** is the second phase in which the component is updated.
+
+- **Updating:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
 
 [image assetsSrc="Compenents-Deep-Dive-1.png" /]
 
@@ -30,5 +38,30 @@ Some methods are performed in a **certain phase.**
 It is important to know the **order** in which these methods are performed.
 
 For example, in the **mounting phase**, the constructor is called first, then the page is rendered, and then `componentDidMount` is called.
+
+[/slide]
+
+[slide]
+# Component Mounting
+
+Each component can go through these three phases of **Mounting**, **Updating**, **Unmounting** at some point of its lifecycle.
+
+But to load a component in the browser, it always goes through **Mounting**.
+
+When a component goes through **Mounting**, these four methods are executed, and they are executed in **a specific order:**
+
+- **Constructor:** this method is called first, and we can place any code that we would want to run when the component is initialized.
+
+- **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor. 
+
+His only job is to take the properties from the constructor and put them in state
+
+- **Render:** this method renders the content in the browser, the HTML that will be displayed. 
+
+This method is mandatory and without it, there is no way to preview a web page.
+
+- **componentDidMount:** after HTML is rendered, we can send functions with which we can fetch data, or to log data in the console. 
+
+This is one of the most widely used methods in ReactJS.
 
 [/slide]
