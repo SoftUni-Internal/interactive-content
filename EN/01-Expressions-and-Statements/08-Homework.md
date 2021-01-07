@@ -12,7 +12,7 @@ function calculateSpeed (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a function that gets an integer and calculates the face of a square with side `a`. 
+Write a function that gets an integer and calculates the area of a square with side `a`. 
 - you get a number in the argument of the function, 
 - multiply it yourself and 
 - print the result in the console.
