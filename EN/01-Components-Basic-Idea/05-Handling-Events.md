@@ -68,7 +68,7 @@ We need to bind **this** value from the function to our class as we know each fu
 
 [slide]
 
-# Event Handling 4
+# Handling Events 4
 
 In this example we define a function called `clickHandler`.
 
