@@ -1,5 +1,5 @@
 [slide]
-# Problem 01
+# Calculator For Tv Series
 [code-task title="Calculator-For-Tv-Series" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

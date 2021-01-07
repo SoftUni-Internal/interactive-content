@@ -1,5 +1,5 @@
 [slide]
-# Problem 02
+# Time For Lunch
 [code-task title="Time-For-Lunch" taskId="27-07-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

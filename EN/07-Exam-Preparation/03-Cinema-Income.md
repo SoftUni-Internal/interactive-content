@@ -1,5 +1,5 @@
 [slide]
-# Problem 04
+# Cinema Income
 [code-task title="Cinema-Income" taskId="27-07-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

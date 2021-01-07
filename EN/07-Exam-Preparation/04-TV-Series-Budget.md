@@ -1,5 +1,5 @@
 [slide]
-# Problem 05
+# Tv-Series-Budget
 [code-task title="Tv-Series-Budget" taskId="27-07-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

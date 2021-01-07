@@ -1,5 +1,5 @@
 [slide]
-# Problem 06
+# The Best Movie
 [code-task title="The-Best-Movie" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
