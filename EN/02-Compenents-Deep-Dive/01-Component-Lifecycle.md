@@ -52,7 +52,7 @@ When a component goes through **Mounting**, these four methods are executed, and
 
 - **Constructor:** this method is called first, and we can place any code that we would want to run when the component is initialized.
 
-- **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor. 
+- **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor.
 
 His only job is to take the properties from the constructor and put them in state
 
@@ -60,7 +60,7 @@ His only job is to take the properties from the constructor and put them in stat
 
 This method is mandatory and without it, there is no way to preview a web page.
 
-- **componentDidMount:** after HTML is rendered, we can send functions with which we can fetch data, or to log data in the console. 
+- **componentDidMount:** after HTML is rendered, we can send functions with which we can fetch data, or to log data in the console.
 
 This is one of the most widely used methods in ReactJS.
 
@@ -99,6 +99,5 @@ Here React does all the cleanups related to the component:
 - Canceling network requests
 
 - Cleaning up any subscriptions
-
 
 [/slide]
