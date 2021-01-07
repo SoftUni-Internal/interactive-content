@@ -69,7 +69,7 @@ As we said earlier we need to implement the `render()` method as it is required.
 
 Inside this method we can use the keyword **this** just like in regular JavaScript to point to the current object.
 
-Example: **<div>{this.props.title}</div>**
+Example: `<div>{this.props.title}</div>`
 
 ```js
 class Book extends React.Component {
