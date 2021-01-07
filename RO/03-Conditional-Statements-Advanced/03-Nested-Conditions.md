@@ -1,0 +1,353 @@
+[slide]
+# Nested Conditions
+
+[vimeo-video]
+[stream language="EN" videoId="486869737/722ae750dd" default /]
+[stream language="RO" videoId="486869737/722ae750dd"  /]
+[/video-vimeo]
+
+Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
+They are called **nested** `if` or `if-else` statements. 
+
+As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
+
+```js
+if (condition1) {
+    if (condition2) {
+        // body; 
+    } else {
+        // body;
+    }
+}
+```
+
+# Example: Personal Titles
+Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
+-  `Mr.` - a man (gender **m**) - 16 or more years old.
+-  `Master` - a boy (gender **m**) - under 16 years. 
+-  `Ms.` - a woman (gender **f**) - 16 or more years old.
+-  `Miss` - a girl (gender **f**) -  under 16 years.
+
+# Solution: Person Titles
+We should notice that the **output** of the program **depends on a few things**. 
+
+**First**, we have to check what is the specified **gender** and **then** to check the **age.** 
+
+Respectively, we are going to use **a few** `if-else` blocks. 
+
+These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
+
+The diagram below illustrates the process in detail:
+
+[image assetsSrc="01.Personal-titles-01.jpg" /]
+
+After reading the input data from the console, the following program logic should be executed:
+
+```js live
+let input = [14, "m"];
+let age = Number(input[0]);
+let gender = input[1];
+
+if (age < 16) {
+    if (gender == "m") {
+        console.log("Master");
+    } else if (gender == "f") {
+        console.log("Miss");
+    }
+} else {
+    if (gender == "m") {
+        console.log("Mr.");
+    } else if (gender == "f") {
+        console.log("Ms.");
+    }
+}
+```
+
+# Deep nesting
+Nesting of **more than three conditional statements** inside each other is not considered a good practice.
+
+It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
+[/slide]
+
+[slide]
+# Problem: Marketplace
+[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function marketPlace(input) {
+    // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
+# Description
+Write a program that: 
+
+- Reads a **product** and a day from the console. 
+
+- Prints the **price**, formatted to 2nd digit, based on the price table below: 
+
+  | Product      | Weekday | Weekend   |
+| :---:       |    :----:   |   :---:     |
+| Banana      | 2.50       | 2.70 |
+| Apple   | 1.30        | 1.60    |
+| Kiwi   | 2.20        | 3.00    |
+
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+| Banana| 2.50 |
+|  Weekday||
+
+
+[/task-description]
+[tests]
+[test]
+[input]
+Banana
+Weekday
+[/input]
+[output]
+2.50
+[/output]
+[/test]
+[test]
+[input]
+Apple
+Weekend
+[/input]
+[output]
+1.60
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Marketplace
+[vimeo-video]
+[stream language="EN" videoId="486869990/380a476703" default /]
+[stream language="RO" videoId="486869990/380a476703"  /]
+[/video-vimeo]
+
+[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function marketPlace(input) {
+  let product = input[0];
+  let dayOfWeek = input[1];
+
+  if (product == "Banana") {
+    if (dayOfWeek == "Weekday") {
+      console.log("2.50");
+    } else
+      console.log("2.70");
+  } else if (product == "Apple") {
+    if (dayOfWeek == "Weekday") {
+      console.log("1.30");
+    } else {
+      console.log("1.60");
+    }
+  } else if (product == "Kiwi") {
+    if (dayOfWeek == "Weekday") {
+      console.log("2.20");
+    } else {
+      console.log("3.00");
+    }
+  }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program that: 
+
+- Reads a **product** and a day from the console. 
+
+- Prints the **price**, formatted to 2nd digit, based on the price table below: 
+
+| Product      | Weekday | Weekend   |
+| :---:       |    :----:   |   :---:     |
+| Banana      | 2.50       | 2.70 |
+| Apple   | 1.30        | 1.60    |
+| Kiwi   | 2.20        | 3.00    |
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+| Banana| 2.50 |
+|  Weekday||
+
+[/task-description]
+[tests]
+[test]
+[input]
+Banana
+Weekday
+[/input]
+[output]
+2.50
+[/output]
+[/test]
+[test]
+[input]
+Apple
+Weekend
+[/input]
+[output]
+1.60
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Biggest Number of Three
+[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function biggestNumberOfThree(input) {
+    // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+  * Reads **3 numbers** from the console
+  * Prints the **greatest** number
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|1| 3 |
+| 2 | |
+|3 | |
+
+[/task-description]
+[tests]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test]
+[input]
+-1
+-5
+-9
+[/input]
+[output]
+-1
+[/output]
+[/test]
+[test]
+[input]
+1
+5
+3
+[/input]
+[output]
+5
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Solution: Biggest Number of Three
+[vimeo-video]
+[stream language="EN" videoId="486870661/f4c774cc7b" default /]
+[stream language="RO" videoId="486870661/f4c774cc7b"  /]
+[/video-vimeo]
+
+[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function biggestNumberOfThree(input) {
+  let first = Number(input[0]);
+  let second = Number(input[1]);
+  let third = Number(input[2]);
+
+  if (first > second)
+    if (first > third) {
+      console.log(first);
+    } else {
+      console.log(third);
+    } else
+    if (second > third) {
+      console.log(second);
+    } else {
+      console.log(third);
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+  * Reads **3 numbers** from the console
+  * Prints the **greatest** number
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|1| 3 |
+| 2 | |
+|3 | |
+
+[/task-description]
+[tests]
+[test]
+[input]
+1
+2
+3
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test]
+[input]
+-1
+-5
+-9
+[/input]
+[output]
+-1
+[/output]
+[/test]
+[test]
+[input]
+1
+5
+3
+[/input]
+[output]
+5
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
