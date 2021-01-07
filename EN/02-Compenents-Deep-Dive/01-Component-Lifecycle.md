@@ -65,3 +65,40 @@ This method is mandatory and without it, there is no way to preview a web page.
 This is one of the most widely used methods in ReactJS.
 
 [/slide]
+
+[slide]
+# Component Updating
+
+This phase starts with the beginning of the react component and expand by receiving new updates
+
+- **static getDerivedStateFromProps:** is invoked just before the render method, both on the initial mount and on following updates.
+
+It should return the updated state of an object, or null which stands for nothing has been updated.
+
+- **shouldComponentUpdate:** is invoked before rendering when new props or state are being received.
+
+The default behavior is to re-render the web page when the state has been changed.
+
+- **render:** render HTML in the web browser.
+
+- **getSnapshotBeforeUpdate:** can be used to see an event before the information is updated, before the componentDidUpdate function is called.
+
+- **componentDidUpdate:** is invoked immediately after updating occurs.
+
+[/slide]
+
+[slide]
+# Component Unmounting
+
+The component is not needed, and the component will get unmounted using `componentWillUnmount()`.
+
+Here React does all the cleanups related to the component:
+
+- Invalidating timers
+
+- Canceling network requests
+
+- Cleaning up any subscriptions
+
+
+[/slide]
