@@ -28,7 +28,7 @@ Use the following syntax:
 
 (open tag, name of component, key value pair, closing tag) - `<Book title="IT" />`
 
-```
+```js
 const BookList = () => {
     return (
         <ul>
@@ -45,7 +45,7 @@ To display the values inside a div for example, we need to wrap our props in cur
 
 In React this is used to provide dynamic binding for our components.
 
-```
+```js
 const Book = (props) => {
     return (
         <li className="book">
@@ -71,7 +71,7 @@ Inside this method we can use the keyword **this** just like in regular JavaScri
 
 Example: **<div>{this.props.title}</div>**
 
-```
+```js
 class Book extends React.Component {
     constructor(props) {
         super(props);
@@ -96,7 +96,7 @@ class Book extends React.Component {
 
 Use the **children** property to access information between opening and closing tags.
 
-```
+```js
 const BookList = () => {
     return (
         <ul>
@@ -114,7 +114,7 @@ Use **{props.children}** inside the **Book** component to display the text "**So
 
 Notice that this is a stateless function that is why we use **props.children** without the keyword **this**.
 
-```
+```js
 const Book = (props) => {
     return (
         <li className="book">
