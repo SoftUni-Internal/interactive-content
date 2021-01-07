@@ -1,36 +1,35 @@
 
 [slide]
 # Console (Terminal)
-În general, **system console** reprezintă un terminal de text, însemnând că acceptă și vizualizează doar   **text**, fără elemente grafice ca butoane, meniuri, etc. 
+Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
-Arată, de obicei, ca o fereastră colorată în negru ca aceasta.
+It usually looks like a black colored window like this one:
 
 [image assetsSrc="00.Console-example.png" /]
 
-In majoritatea cazurilor,  **console** este o aplicație independentă în care putem scrie comenzi în consolă.
+In most operating systems, the **console** is available as a standalone application on which we write console commands. 
 
-Este denumită **Command Prompt** in Windows și **Terminal** în Linux și Mac. 
+It is called a **Command Prompt** in Windows, and a **Terminal** in Linux and Mac. 
 
-Consola rulează aplicații pentru consolă.Ele citesc text din liniile de comandă și imprimă textul pe consolă.
+The console runs console applications. They read text from the command line and print text on the console. 
 
-Vom învăța să programăm, creând **console applications**.
+We are going to learn programming mostly through creating **console applications**.
 
-VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările și pentru a imprima ieșirile. 
-
+VS Code has its own console, which we are going to use to read input and print output:
 [image assetsSrc="expressions-and-statements-console.png" /]
 [/slide]
 
 [slide]
-# Variabilele de logare pe consolă
+# Log Variables on the Console
 
 [vimeo-video]
 [stream language="EN" videoId="486855670/d118990c90" default /]
 [stream language="RO" videoId="486855670/d118990c90"  /]
 [/video-vimeo]
 
-Consola este utilă în scopul testării.
+The console is useful for testing purposes
 
-Metoda `console.log()` scrie un mesaj pe consolă:
+The `console.log()` method writes a message to the console:
 
 ```js live
 let firstNum = 10;
@@ -41,31 +40,31 @@ console.log(firstNum + secondNum);
 [/slide]
 
 [slide]
-# Citirea datelor de la utilizator
+# Reading User Input
 
 [vimeo-video]
 [stream language="EN" videoId="486855737/188e2502e0" default /]
 [stream language="RO" videoId="486855737/188e2502e0"  /]
 [/video-vimeo]
 
-In sistemele software, informațiile de la utilizatori vin din multe surse, ca de exemplu, User Interface(UI).
+In software systems, the user input could come from many sources, like User Interface (UI) controls.
 
-Veți avea o fereastră text care vă va spune `please type your username and type your password`, iar apoi veți putea da click pe un buton de login.
+You have a text box that says `please type your username and type your password`, then you click the login button. 
 
-Este unul dintre modurile de a primi informații de la utilizatori.
+This is a way to receive user's input.
 
-Programele pot, de asemenea, să preia informațiile de la utilizatori(input) prin intermediul rest API sau ca parametri ai unei funcții. a
+Programs can also take the user data (input) from some rest API or as parameter in a function.
 [/slide]
 
 [slide]
-# Funcții și parametri
+# Functions and Parameters
 
 [vimeo-video]
 [stream language="EN" videoId="486855856/06a253a610" default /]
 [stream language="RO" videoId="486855856/06a253a610"  /]
 [/video-vimeo]
 
-Folosiți funcțiile și invocați funcția cu ajutorul numelui său. 
+Use functions and Invoke the function by name 
 
 ``` js live
 function printNum (number) {
@@ -77,13 +76,13 @@ printNum(5);
 printNum(10);
 ```
 
-Din setările inițiale,  **input** este **text** – o linie de text, citită de consolă.
-- După ce citiți un text din consolă, puteți **parse the text** la un numer prin `Number()`.
+By default, the **input** is **text** – a text line, read from the console.
+- After you read a text from the console, additionally, you can **parse the text** to an number by `Number()`.
 
-- Dacă parsarea la un număr nu s-a putut realiza, p **each number** va apărea ca **text**, și vom vedea mesajul **cannot do** operații aritmetice.
+- If parsing to a number is not done, **each number** will simply be **text**, and we **cannot do** arithmetic operations with it.
 
-# Exemplu: orașul natal
-Haideți să scriem un program care îi solicită utilizatorului să introducă numele orașului natal și printează textul. `I am from {homeTown}!`.
+# Example: Home Town
+Let's write a program that asks the user for their home town and prints the text `I am from {homeTown}!`.
 
 ```js live
 function town(homeTown) {
@@ -93,25 +92,25 @@ function town(homeTown) {
 town("Buccuresht");
 ```
 
-În acest caz expresia `{homeTown}`  este înlocuită cu valoarea de intrare `homeTown`.
+In this case the `{homeTown}` expression is replaced with the value of the input `homeTown`.
 
-Dacă introducem **Buccuresht**, ieșirea va fi astfel: `I am from Buccuresht!` 
+When we enter **Buccuresht**, the output will be as follows: `I am from Buccuresht!` 
 
 [/slide]
 
 [slide]
-# Transmiterea Paranetrilor Multipli 
+# Passing Multiple Parameters
 
 [vimeo-video]
 [stream language="EN" videoId="486855964/c2b23e3efb" default /]
 [stream language="RO" videoId="486855964/c2b23e3efb"  /]
 [/video-vimeo]
 
-Puteți transmite m**ultiple parameters to a function.** 
+You can pass **multiple parameters to a function.** 
 
-Avem o funcție care **receives two parameters:** `firstNum` și `secondNum` și imprimă rezultatul sumei numerelor pe consolă.
+We have a function which **receives two parameters:** `firstNum` and `secondNum` and prints the sum of that calculation to the console. 
 
-Aici, `firstNum` și `secondNum` există doar **in the function body.**
+Here `firstNum` and `secondNum` exists only **in the function body.**
 
 ``` js live
 function printSum(firstNum, secondNum) {
@@ -121,7 +120,7 @@ function printSum(firstNum, secondNum) {
 printSum(5, 10);
 ```
 
-Dacă încercăm să accesăm firstNum înafara corpului funcției vom obține o eroare.
+If we try to access firstNum outside of the function body, we'll get an error.
 
 ``` js live
 function printSum(firstNum, secondNum) {
@@ -134,79 +133,87 @@ console.log(firstNum);
 [/slide]
 
 [slide]
-# Formatarea ieșirii
+# Formatting Output
 
 [vimeo-video]
 [stream language="EN" videoId="486856070/5392c79701" default /]
 [stream language="RO" videoId="486856070/5392c79701"  /]
 [/video-vimeo]
 
-JavaScript ne permite să formatăm numerele ca virgule mobile. 
+JavaScript allows us to format floating-point numbers.
 
-In exemplu următor vom formata numărul la două cifre după virgula de zecimale, folosind metoda `toFixed(2)` :
+In the following example we format the number to 2 digits after the decimal point by using the `toFixed(2)` method:
 
-```js
+```js live
 function calculateSquareArea(input) {
   let a = Number(input);
   let area = a * a;
   console.log(area.toFixed(2));
 }
+
+calculateSquareArea(5);
 ```
 
-# Folosirea interpolării șirului Dollar String
-Putem formata text în JS folosind, de asemenea, următoarea sintaxa $ syntax. Aceasta ne oferă  o metodă simplificată de formatare a textului.
+# Using the Dollar String Interpolation
+We can format text in JS using also the following $ syntax. It provides simplified text formatting.
 
-Încadrată de simbolurile back-tick (**\` \`**), în loc să fie scris între virgule sau ghilimele. 
+Еnclosed by the back-tick (**\` \`**) character instead of double or single quotes
 
-Putem folosi simbolul dollarului și acolade
+May contain placeholders which are indicated by the dollar sign and curly braces (`${expression}`):
 
- (`${expression}`):
-```js
+```js live
 let name = "John"; 
 console.log(`Hi, ${name}`);
 ```
-Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **string interpolation**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
+
+The `$` prefix before a string in JS enables the so called **string interpolation**: replacing all expressions,which are placed in curly brackets `{ }` in the text with their values. 
 
 [/slide]
 
 [slide]
-# Citirea numerelor
+# Reading Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="486856186/d812421fbc" default /]
 [stream language="RO" videoId="486856186/d812421fbc"  /]
 [/video-vimeo]
 
-Pentru a putea citi un **number** din consolă, trebuie să  **declare a variable** și să folosim comanda standard **reading a text line** din consola de sistem și după aceea,**convert the text line into a number** folosind `Number(text)`:
+In order to read a **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
 
-```js
+```js live
 function example(input){
   let num = Number(input);
+
+  console.log(num);
 }
+
+example('25');
 ```
-Linia de sus in JS code **reads a number**, este prima linie de pe consolă.
 
-Dacă vrem să alocăm o valoare non-numerică acestei variabile, de exemplu `Hello`, vom primi rezultatul`NaN` care este acronimul de la **Not a number**. 
+The above line of JS code **reads a number** from the first line on the console.
 
-# Exemplu: Calcularea ariei unui pătrat
-Acest cod ne arată cum putem calcula aria unui pătrat în funcție de lungimea laturii acestuia: 
+If we try to assign a non-numeric value to this variable, for example `Hello`, we will receive `NaN` which is the acronym for **Not a number**. 
 
-```js
+# Example: Calculating a Square Area
+This code demonstrates how we can calculate the area of a square by given length of its side: 
+
+```js live
 function example(input){
     let a = Number(input);
     let area = a * a;
     console.log(`Square area = ${area}`);
   }
+
+example('3');
 ```
 
-Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală cu 3:
-
+Here is how the program would work if we had a square with a side length equal to 3: 
 [image assetsSrc="expressions-and-statements-example.png" /]
 [/slide]
 
 
 [slide]
-# Problemă: Greeting
+# Problem: Greeting
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -216,10 +223,10 @@ function sayHello (input) {
 ```
 [/code-editor]
 [task-description]
-# Enunț
-Scrieți o funcție care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
+# Description
+Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
 
-## Exemplu
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Hello, Peter |
@@ -264,7 +271,7 @@ Hello, George
 [/slide]
 
 [slide]
-# Soluție: Greeting
+# Solution: Greeting
 
 [vimeo-video]
 [stream language="EN" videoId="486856341/87210226f4" default /]
@@ -281,13 +288,10 @@ function sayHello (input) {
 ```
 [/code-editor]
 [task-description]
+# Description
+Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
 
-# Enunț
-Scrieți o funcție care citește datele furnizate de utilizator din consolă: numele și apoi, imprimați. 
-
-`Hello, {name}`, unde `{name}` sunt datele furnizate de utilizator.   
-
-## Exemplu
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | Peter | Hello, Peter |
