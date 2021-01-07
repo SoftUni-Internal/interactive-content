@@ -1,6 +1,6 @@
 [slide]
 # Problem 01
-[code-task title="Problem-01" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Calculator-For-Tv-Series" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -36,7 +36,7 @@ You have to print on the console the time needed to watch all of the episodes, r
 ## Example
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |
-| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | Duration of advertisements per episode: 20% от 55 = 11.0 |
+| Lucifer | Total time needed to watch the Lucifer series is 3594 minutes. | Duration of advertisements per episode: 20% of 55 = 11.0 |
 | 3 | | Duration of an episode with the advertisements: 55 + 11 = 66.0 |
 | 18 | | Additional time from the special episode: 3*10 = 30|
 | 55 | | Total time to watch the episodes: 66 * 18 * 3 + 30 = 3594.0 |
