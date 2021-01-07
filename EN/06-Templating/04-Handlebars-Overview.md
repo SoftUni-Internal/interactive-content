@@ -143,6 +143,10 @@ The resulting output looks like this:
 [slide]
 
 # Hello Handlebars
+[vimeo-video]
+[stream language="EN" videoId="497950510/b2f8f5ae83" default /]
+[stream language="RO" videoId="497950510/b2f8f5ae83"  /]
+[/video-vimeo]
 
 This is a brief example of Handlebars in action.
 
@@ -194,6 +198,10 @@ Lastly, we **call the compiled template** with our variables and save the output
 [slide]
 
 # For-Loops
+[vimeo-video]
+[stream language="EN" videoId="497950425/888afea457" default /]
+[stream language="RO" videoId="497950425/888afea457"  /]
+[/video-vimeo]
 
 Using the `#each` **special helper**, we can iterate through an array:
 
@@ -214,8 +222,11 @@ It will be **rendered** in case the given **array** is **empty**.
 [/slide]
 
 [slide]
-
 # Conditional Statements
+[vimeo-video]
+[stream language="EN" videoId="497950460/b05f75e27e" default /]
+[stream language="RO" videoId="497950460/b05f75e27e"  /]
+[/video-vimeo]
 
 Similarly to JavaScript, you can also use **conditional statements** in your **template**.
 
