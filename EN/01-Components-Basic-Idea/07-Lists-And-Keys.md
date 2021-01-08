@@ -18,7 +18,7 @@ Here is how we render multiple components.
 
 Use the `map()` method to create a "li" element with the **current number** inside of it surrounded by curly braces like so: `<li>{number}</li>`.
 
-Then we return an anorderd list  with all the elements in the the "ListItems" variable.
+Then we return an anorderd list with all the elements from the "ListItems" variable.
 
 ```js
 function NumberList(props) {
@@ -103,7 +103,7 @@ ReactDOM.render(
 
 Keys serve as a hint to React but they do not get passed to your components. 
 
-Do not use indexes for keys if the order of components may change! 
+Do not use indexes for keys if the order of the components may change! 
 
 Just work with IDs as we have already mentioned. 
 

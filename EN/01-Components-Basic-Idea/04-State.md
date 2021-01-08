@@ -4,7 +4,7 @@
 
 # Component State Overview
 
-React components has a built-in **state** object.
+React components have a built-in **state** object.
 
 The **state** object is where we store property values that belong to the component.
 
@@ -40,7 +40,7 @@ We can only modify the state of a component from inside the component.
 
 State holds information that can change over time.
 
-Usually this happens as a result of a changes in the user input or the system events.
+Usually this happens as a result of changes in the user input or the system events.
 
 First we initialize the state with `this.state = { count: 0 };` in the constructor.
 
@@ -62,7 +62,7 @@ Inside the `updateCount()` function we update the **state** using the `setState(
 
 **Remember this is the only way in which we can update the state of a component.**
 
-Use "onClic" handler inside the `render()` method to tell React we are expecting a "click" event.
+Use "onClick" handler inside the `render()` method to tell React we are expecting a "click" event.
 
 On each click of the button we will update the count by adding 1 to it.
 
@@ -178,7 +178,7 @@ In this example we have a class called "Input" that extends from React.Component
 
 In the constructor we pass our **props** and we initialize the **state**, which will be an empty string - `this.state = { value: "" };`.
 
-We have a `handleChange()` method that we bind to an event hadler "onChange".
+We have a `handleChange()` method that we bind to an event handler "onChange".
 
 If we do not use this line of code in the constructor:
 

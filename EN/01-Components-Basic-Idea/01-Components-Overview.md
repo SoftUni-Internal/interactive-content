@@ -18,13 +18,13 @@ These are **Functional** components and **Classes** components.
 
 # Functional Component
 
-A Functional component is a JavaScript function which, accepts single argument called props and returns a React element.
+A Functional component is a JavaScript function which, accepts single argument called **props** and returns a React element.
 
 Props stands for **properties** and is a plain JavaScript object.
 
-Here is a simple example of a React function that accepts **props** and return a div elemen.
+Here is a simple example of a React function that accepts **props** and returns a div element.
 
-The div element is a React element and is similar to **HTML** but it is called **JSX** - JavaScript XML.
+This is a React element and is similar to **HTML** element but it is called **JSX** - JavaScript XML.
 
 Using curly braces we can dynamically render the value of `props.name`.
 

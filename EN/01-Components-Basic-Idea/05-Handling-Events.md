@@ -4,7 +4,7 @@
 
 # Handling Events 1
 
-Handling events with React elements is very similar to handling events on DOM elements.
+Handling events with React elements is very similar to handling events in the DOM.
 
 There are some syntax differences though.
 
@@ -42,7 +42,7 @@ One is using **arrow functions** and the other is using the `bind()` method.
 
 As you have probably seen, when we create event handler method, we always need to add **this** to the constructor, to bind **this**.
 
-There is no sense to create constructor method only for binding our methods. 
+There is no need to create constructor method only for binding our methods. 
 
 There should be another solution, and that is using arrow functions.
 

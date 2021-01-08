@@ -6,7 +6,7 @@
 
 React uses the same syntax and conventions for boolean expressions like JavaScript.
 
-We can use "if" statement or "ternary" operator.
+We can use an "if" statement or a "ternary" operator.
 
 In the example we have two components: "UserGreeting" and " GuestGreeting".
 
