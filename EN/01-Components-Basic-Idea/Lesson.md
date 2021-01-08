@@ -1,1 +1,1 @@
-# React Components Basic Idea
+# Components Basic Idea
