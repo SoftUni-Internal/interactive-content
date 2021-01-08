@@ -68,3 +68,56 @@ Result:
 
 [image assetsSrc="Compenents-Deep-Dive-4.png" /]
 [/slide]
+
+[slide]
+# Fetch Services
+
+The basic idea is to isolate the concern of fetching data inside components.
+
+Fetching data logic should separated as service.
+
+```js
+const apiUrl = '...';
+
+export const getData = () => {
+    return fetch(apiUrl)
+        .then(res => res.json())
+        .then(data => data.results)
+        .catch(error => console.error(error))
+};
+
+```
+
+In this example, we have the function `getData` and return a response.
+
+This is the best way we can fetch data because we do not **unnecessarily** contaminate our components.
+
+We separate the logic of data acquisition and creation, where we can use only functions that we need.
+
+[/slide]
+
+[slide]
+# Fetch Services: Usage
+
+When we separate data retrieval in a service, we can insert that service into components and use them.
+
+```js
+import { getData } from 
+'./services/fetching-data-service';
+
+class App extends Component {
+  state = {
+    data: ...
+  };
+  componentDidMount() {
+    getData().then((data) => {
+      this.setState({ data })
+    });
+  }
+  render() {
+    return ...;
+  }
+}
+```
+
+[/slide]
