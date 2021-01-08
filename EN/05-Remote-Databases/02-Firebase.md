@@ -4,7 +4,12 @@
 
 # What is Firebase?
 
-Firebase is a toolset to “build, improve, and grow your app”.
+[vimeo-video]
+[stream language="EN" videoId="498355813/b1d8525738" default /]
+[stream language="RO" videoId="498355813/b1d8525738"  /]
+[/video-vimeo]
+
+Firebase is a toolset to "build, improve, and grow your app”".
 
 The tools it gives you cover a large portion of the services that developers would normally have to build themselves.
 
@@ -18,11 +23,18 @@ The services are hosted in the cloud, and scale with little to no effort on the 
 
 # Firebase REST API CRUD Operations 1
 
+[vimeo-video]
+[stream language="EN" videoId="498355882/b742849899" default /]
+[stream language="RO" videoId="498355882/b742849899"  /]
+[/video-vimeo]
+
 Here are some of the methods we use when working with the database.
 
 In this example we will be using a Book database, which is already created for us on Firebase.
 
-**Note: You may not get the same results as shown in the examples below. This is because as people experiment with the database they can delete or create new books. This way the database will inevitably change.**
+**Note: You may not get the same results as shown in the examples below.** 
+
+**This is because as people experiment with the database they can delete or create new books. This way the database will inevitably change.**
 
 Open **Postman** and create a new request. 
 
@@ -137,6 +149,11 @@ This means that the book has been deleted.
 [slide]
 
 # Firebase REST API CRUD Operations 2
+
+[vimeo-video]
+[stream language="EN" videoId="498355923/fe4483c15f" default /]
+[stream language="RO" videoId="4498355923/fe4483c15f"  /]
+[/video-vimeo]
 
 Next step is to edit a book.
 
@@ -253,7 +270,10 @@ The response from the server will be **200 OK** and in the **body** it will retu
 [slide]
 
 # Authentication vs Authorization
-
+[vimeo-video]
+[stream language="EN" videoId="498356096/3eb775adc0" default /]
+[stream language="RO" videoId="498356096/3eb775adc0"  /]
+[/video-vimeo]
 Authentication is about validating your credentials such as Username, ID and password to verify your identity.
 
 Authorization occurs after your identity is successfully authenticated by the system, which therefore gives you full access to resources such as information, files, databases etc.

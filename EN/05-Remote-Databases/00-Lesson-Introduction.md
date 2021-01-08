@@ -1,6 +1,12 @@
 # Lesson Introduction
 
 [slide]
+# Table of Contents
+
+[vimeo-video]
+[stream language="EN" videoId="498356157/104d8870f4" default /]
+[stream language="RO" videoId="498356157/104d8870f4"  /]
+[/video-vimeo]
 
 # In this lesson you will learn about:
 

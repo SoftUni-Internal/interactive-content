@@ -4,6 +4,11 @@
 
 # Relational Databases
 
+[vimeo-video]
+[stream language="EN" videoId="498356193/5a0918ae93" default /]
+[stream language="RO" videoId="498356193/5a0918ae93"  /]
+[/video-vimeo]
+
 A relational database is a collection of tables with pre-defined relationships between them. 
 
 The data is organized as a set of tables with columns and rows. 
@@ -19,10 +24,6 @@ Each row in a table could be marked with a unique identifier called a primary ke
 SQL or Structured Query Language is the primary interface used to communicate with Relational Databases.
 
 [image assetsSrc="Remote-Databases(19).png" /]
-
-[/slide]
-
-[slide]
 
 # Non-Relational Databases
 
@@ -47,6 +48,11 @@ Non-relational databases are therefore ideal for storing data that may be change
 [slide]
 
 # Relational And Non-Relational Pros
+
+[vimeo-video]
+[stream language="EN" videoId="498356293/48bad932af" default /]
+[stream language="RO" videoId="498356293/48bad932af"  /]
+[/video-vimeo]
 
 **Pros of a Relational Database:**
 - Data is easily structured into categories.
@@ -90,6 +96,11 @@ Many web-based businesses require data services that are available without inter
 [slide]
 
 # What is BaaS?
+
+[vimeo-video]
+[stream language="EN" videoId="498356368/437c121efd" default /]
+[stream language="RO" videoId="498356368/437c121efd"  /]
+[/video-vimeo]
 
 Backend-as-a-Service (BaaS) is a cloud service model in which developers outsource all the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
 
