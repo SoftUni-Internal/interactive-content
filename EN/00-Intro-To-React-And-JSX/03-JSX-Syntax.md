@@ -6,7 +6,7 @@
 
 **JSX** is React's unique approach to combining **HTML and JavaScript** in a single `.js` file.
 
-[image assetsSrc="intro-to-react-and-jsx-9-.png" /]
+[image assetsSrc="intro-to-react-and-jsx-9.png" /]
 
 
 With the help of JSX, you can change both how the **data** is prepared for rendering, as well as control the **flow** and **state** of the component, from **a single file**.
