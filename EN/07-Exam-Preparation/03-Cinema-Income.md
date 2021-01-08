@@ -22,7 +22,7 @@ The price for one ticket is 5$.
 
 If the current count of people that enter the hall can be divided by 3 without remainder, there is 5$. discount of the total price.
 
-If there are not enough free seats for the people that want to enter, it means that the there are no more seats left and the program must stop reading input from the console. 
+If there are not enough free seats for the people that want to enter, it means that there are no more seats left and the program must stop reading input from the console. 
 
 If more people than the available seats try to enter the hall, it is considered full and the program should stop receiving input.
 
