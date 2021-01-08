@@ -73,7 +73,7 @@ React applications typically consist of many files.
 
 This is what a typical file tree looks like:
 
-[image assetsSrc="intro-to-react-and-jsx(2).png" /]
+[image assetsSrc="intro-to-react-and-jsx-2.png" /]
 
 Here are some of the most important files and what they do:
 
@@ -81,19 +81,19 @@ Here are some of the most important files and what they do:
   - Names and version numbers of all dependencies
   - Build actions that can be ran from a terminal instance
 
-[image assetsSrc="intro-to-react-and-jsx(3).png" /]
+[image assetsSrc="intro-to-react-and-jsx-3.png" /]
 
 
 - `index.html` - The main HTML file of our app
   - The `div` with `id="main"` is typically what React uses to output components
 
-[image assetsSrc="intro-to-react-and-jsx(4).png" /]
+[image assetsSrc="intro-to-react-and-jsx-4.png" /]
 
 
 - `index.js` - This file takes care of our startup script
   - Here we also define which HTML element to use for rendering
   
-[image assetsSrc="intro-to-react-and-jsx(5).png" /]
+[image assetsSrc="intro-to-react-and-jsx-5.png" /]
 
 
 **React Component file structure**:
@@ -102,16 +102,16 @@ Let us take a look at the `App` component.
 
 - `App.js` - Stores the component logic
   
-[image assetsSrc="intro-to-react-and-jsx(6).png" /]
+[image assetsSrc="intro-to-react-and-jsx-6.png" /]
 
 
 - `App.css` - Contains all the styles, related to the given component
 
-[image assetsSrc="intro-to-react-and-jsx(7).png" /]
+[image assetsSrc="intro-to-react-and-jsx-7.png" /]
 
 
 - `App.test.js` - Used when testing the component functionality
 
-[image assetsSrc="intro-to-react-and-jsx(8).png" /]
+[image assetsSrc="intro-to-react-and-jsx-8.png" /]
 
 [/slide]
