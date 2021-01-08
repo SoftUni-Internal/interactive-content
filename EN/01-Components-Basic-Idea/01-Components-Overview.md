@@ -28,7 +28,7 @@ This is a React element and is similar to **HTML** element but it is called **JS
 
 Using curly braces we can dynamically render the value of `props.name`.
 
-```
+```js
 function Person(props){
     return <div>My name is {props.name}</div>
 }
@@ -48,7 +48,7 @@ If we need we can have a constructor method, as well, but it is not required.
 
 The only method that is **required** is the `render()` method.
 
-```
+```js
 class Person extends React.Component {
     render() {
         return <h1>My name is {this.props.name}</h1>
@@ -68,7 +68,7 @@ Tags must be closed otherwise our code will not compile.
 
 All the information is passed via the **props** object from the parent to the child component.
 
-```
+```js
 <Dropdown> A dropdown list
     <UserHead name="homeHeader" />
     <Menu>
