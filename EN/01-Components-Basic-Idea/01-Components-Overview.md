@@ -24,7 +24,7 @@ Props stands for **properties** and is a plain JavaScript object.
 
 Here is a simple example of a React function that accepts **props** and returns a div element.
 
-This is a React element and is similar to **HTML** element but it is called **JSX** - JavaScript XML.
+The React **JSX** is similar to **HTML** and stands for JavaScript XML.
 
 Using curly braces we can dynamically render the value of `props.name`.
 
@@ -42,7 +42,7 @@ function Person(props){
 
 To create a class component we need a simple JavaScript class, that extends "React.Component" class.
 
-This way we can have access to all the methods in "React.Component" class.
+This way we can have access to all the methods in the "React.Component" class.
 
 If we need we can have a constructor method, as well, but it is not required.
 
