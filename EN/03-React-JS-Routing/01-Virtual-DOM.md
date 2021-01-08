@@ -1,7 +1,6 @@
 # Virtual DOM
 
 [slide]
-
 # What is Virtual DOM?
 
 The **virtual DOM** is a representation of the real DOM, which is kept in the browser.
@@ -23,5 +22,6 @@ With React, we have **declarative** syntax.
 With this syntax, we only need to describe the result, and it will be shown in the browser.
 
 ReactDOM also keeps the **order** of the operations.
+
 
 [/slide]
