@@ -24,9 +24,9 @@ Props stands for **properties** and is a plain JavaScript object.
 
 Here is a simple example of a React function that accepts **props** and returns a div element.
 
-The React **JSX** is similar to **HTML** and stands for JavaScript XML.
+**JSX** allows us to wright **HTML** in React. **JSX** stands for **JavaScript XML**.
 
-Using curly braces we can dynamically render the value of `props.name`.
+To be able to display variables we use curly braces as shown in the example below.
 
 ```js
 function Person(props){
