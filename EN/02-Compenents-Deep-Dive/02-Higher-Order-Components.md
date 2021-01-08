@@ -1,4 +1,5 @@
 # Higher-Order Components
+
 [slide]
 # Higher-Order Components - Definition
 
@@ -78,7 +79,7 @@ function logged(WrappedComponent) {
 ```
 [/slide]
 
-[/slide]
+[slide]
 # Advantages
 
 Some of the advanteges of using **HOCs** are
