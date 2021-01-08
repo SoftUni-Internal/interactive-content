@@ -5,7 +5,7 @@
 
 Various changes that the Component undergoes from its creation until it is terminated are called a **lifecycle of the component.**
 
-Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Updating**. 
+Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Unmounting**. 
 
 These are **phases** in which different methods are performed.
 
@@ -27,7 +27,7 @@ They are exactly three lifecycle methods:
 
 - **Updating:** is the second phase in which the component is updated.
 
-- **Updating:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
+- **Unmounting:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
 
 [image assetsSrc="Compenents-Deep-Dive-1.png" /]
 

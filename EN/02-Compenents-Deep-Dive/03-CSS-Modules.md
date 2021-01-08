@@ -63,7 +63,7 @@ In this example we have a CSS file named `Button.module.css`:
 }
 ```
 
-Then we import the givven a CSS into our file:
+Then we import the given a CSS into our file:
 
 ```js
 import React, { Component } from 'react';
