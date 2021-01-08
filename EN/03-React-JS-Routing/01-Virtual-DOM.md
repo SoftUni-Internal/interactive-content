@@ -24,4 +24,4 @@ With this syntax, we only need to describe the result, and it will be shown in t
 
 ReactDOM also keeps the **order** of the operations.
 
-[slide]
+[/slide]
