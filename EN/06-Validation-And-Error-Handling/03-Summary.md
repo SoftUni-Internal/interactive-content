@@ -53,4 +53,14 @@
       });
       ```
 
+## In the next lesson you will learn about:
+
+-  Deployment:
+
+   -  Set up.
+
+   -  App preparation.
+
+   -  Deployment.
+
 [/slide]
