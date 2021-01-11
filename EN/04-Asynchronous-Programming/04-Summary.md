@@ -2,31 +2,54 @@
 
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="497193050/c4a10ddd91" default /]
-[stream language="RO" videoId="497193050/c4a10ddd91"  /]
-[/video-vimeo]
+**Asynchronous programming**
 
-# In this session you learnt:
+- Key differences between **synchronous** and **asynchronous** programming.
 
-- What is Asynchronous programming
+- **Code execution order** in JavaScript.
 
-   - Key differences between **synchronous** and **asynchronous** programming.
+- Escaping JavaScript's **synchronous** nature.
 
-   - **Code execution order** in JavaScript.
+**Promises**
 
-   - Escaping JavaScript's **synchronous** nature.
+- Representing data that will be **received in the future**.
 
-- Whats are Promises
+- **Chaining** promises and utilizing their methods.
 
-   - Representing data that will be **received in the future**.
+```js
+new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve("Thomas");
+  }, 1000);
+}).then(function (response) {
+  console.log("My name is: " + response);
+});
+```
 
-   - **Chaining** promises and utilizing their methods.
+**"Async" functions**
 
-- What is `async` functions
+- Writing clean and concise asynchronous code with `async` and `await`.
 
-    - Writing clean and concise asynchronous code with `async` and `await`.
+- **Sequential** and **concurrent** execution.
 
-    - **Sequential** and **concurrent** execution.
+```js
+async function fetchInfo(url) {
+  try {
+    let data = await fetch(url);
+
+    let dataToJSON = await data.json();
+  } catch (err) {
+    console.log(err);
+  }
+}
+```
+
+## The topic of the next lesson is:
+
+**Remote Databases**
+
+- **Relational** and **non-relational** databases.
+
+- **BaaS** (Backend-as-a-Service).
 
 [/slide]
