@@ -2,16 +2,14 @@
 
 # Summary
 
-In this lesson you learned:
+## What you learned in this lesson
 
 -  **Inheritance**, in general, is the ability to **extend** some or all of the functionality of a class to another.
 
    -  Child classes inherit **data** and **methods** from parent.
 
 -  Object in JavaScript have **prototypes**.
-
    -  They have **properties** in their prototype chain.
-
 -  We have two ways to create an object.
 
    -  Literal
@@ -23,12 +21,12 @@ In this lesson you learned:
          console.log(this.me);
       },
    };
-   bar.print();
+  
    ```
 
    -  Constructor
 
-   ```js
+   ```js 
    function Foo() {
       this.me = 'Hi!';
       this.print = function () {
@@ -43,12 +41,11 @@ In this lesson you learned:
 
 ## In the next lesson you will learn about:
 
--  Exam Preparation with three tasks:
+- Exam Preparation with three tasks:
 
-   -  DOM.
+   - DOM
 
-   -  Class Inheritance.
+   - Class Inheritance
 
-   -  Class task with Functionality.
-
+   - Class task with Functionality
 [/slide]
