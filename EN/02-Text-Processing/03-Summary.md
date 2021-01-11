@@ -1,40 +1,46 @@
 [slide]
+
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489817252/92c1c7b52f" default /]
-[stream language="RO" videoId="489817252/92c1c7b52f"  /]
-[/video-vimeo]
+## In this lesson you learned:
 
-**In this lesson we learned that:**
+-  **Strings** are an immutable series of **characters**
 
-- **Strings** are immutable series of **characters**
+-  They have built-in methods that we use to process them, some of them are:
 
-- They have built\-in methods that we use to process them.
+   -  `concat()`
 
-- Examples of built\-in methods:
+   ```js
+   let str = 'Hello, ';
+   let concatenated = str.concat('John!');
+   ```
 
-Concatenate two strings using `concat()` method:
+   -  `split()`
 
-```js live
-let str = "Hello, "
-console.log(str.concat("John!"))
-```
+   ```js
+   let str = 'Hello, John';
+   let spitted = str.split(', ');
+   ```
 
-Split a strings using `split()` method:
+   -  `includes()`
 
-```js live
-let str = "Hello, John"
-console.log(str.split(", "))
-```
+   ```js
+   let str = 'Hello, John';
+   let include = str.includes('John');
+   ```
 
-Find specific string using  `includes()` method:
+-  Most of the methods returns a new string.
 
-```js live
-let str = "Hello, John"
-console.log(str.includes("John"))
-```
+## In the next lesson you will learn about:
 
-- Most of the methods return a new string.
+-  Regular Expressions:
+
+   -  RegExp Syntax.
+
+   -  Quantifiers.
+
+   -  Grouping.
+
+   -  Backreferences.
 
 [/slide]
