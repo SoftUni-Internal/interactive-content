@@ -24,7 +24,7 @@
 
 - **Wrapping** information about requests and responses in a **single object**.
 
-The topic of the next lesson is:
+## The topic of the next lesson is:
 
 **Streams and utilities**
 
