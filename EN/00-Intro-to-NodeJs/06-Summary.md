@@ -20,6 +20,19 @@
 
 - **Creating** a web server.
 
+```js
+const http = require("http");
+
+http
+  .createServer((req, res) => {
+    res.write("This text will be sent to the client.");
+    res.end();
+  })
+  .listen(3000);
+
+console.log("Node.js server running on port 3000");
+```
+
 **Request and response wrappers**
 
 - **Wrapping** information about requests and responses in a **single object**.
