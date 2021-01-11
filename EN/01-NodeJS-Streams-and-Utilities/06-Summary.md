@@ -2,6 +2,8 @@
 
 # Summary
 
+# In this lesson you learned:
+
 - Pub/Sub pattern is used to communicate messages.
 - Node.js has various useful utility modules.
 - Streams allow working with big data.
