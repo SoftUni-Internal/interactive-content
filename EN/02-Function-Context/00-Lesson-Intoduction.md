@@ -16,4 +16,5 @@
 **5. Internal Object Properties**
 - Using internal properties to change property behavior, ``freeze()`` and ``seal()`` and what they do.
 
+
 [/slide]
