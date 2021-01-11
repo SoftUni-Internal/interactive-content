@@ -14,6 +14,6 @@ As a final step you should implement some validation, notification to improve th
 
 # Installing Dependencies
 
-You can use [express\-validator](https://www.npmjs.com/package/express-validator) to do some **validation** and **sanitization** or continue using Mongoose to do validations as well.
+You can use [express-validator](https://www.npmjs.com/package/express-validator) to do some **validation** and **sanitization** or continue using Mongoose to do validations as well.
 
 [/slide]
