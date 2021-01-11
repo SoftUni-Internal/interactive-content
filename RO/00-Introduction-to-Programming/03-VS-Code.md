@@ -3,7 +3,7 @@
 
 [vimeo-video]
 [stream language="EN" videoId="486835445/ac9f325729" default /]
-[stream language="RO" videoId="486835445/ac9f325729"  /]
+[stream language="RO" videoId="499110716/13d2a2a179"  /]
 [/video-vimeo]
 
 In order to program we need an **Integrated Development Environment** (IDE). 
@@ -43,7 +43,7 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 
 [vimeo-video]
 [stream language="EN" videoId="486835484/98228c39ea" default /]
-[stream language="RO" videoId="486835484/98228c39ea"  /]
+[stream language="RO" videoId="499110783/9dd4421b8d"  /]
 [/video-vimeo]
 
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
@@ -104,7 +104,7 @@ That's all. You are ready to work with Visual Studio Code.
 
 [vimeo-video]
 [stream language="EN" videoId="486835538/7662f7e6ca" default /]
-[stream language="RO" videoId="4486835538/7662f7e6ca"  /]
+[stream language="RO" videoId="499110866/259a454bd3"  /]
 [/video-vimeo]
 
 Install Microsoft Visual Studio Code
@@ -128,7 +128,7 @@ Alternative IDE (online)
 
 [vimeo-video]
 [stream language="EN" videoId="486835601/f6d36a44eb" default /]
-[stream language="RO" videoId="486835601/f6d36a44eb"  /]
+[stream language="RO" videoId="499110903/8f613a060d"  /]
 [/video-vimeo]
 
 
@@ -150,7 +150,7 @@ We can **extend** it via extensions, which are available through a central repos
 
 [vimeo-video]
 [stream language="EN" videoId="486835722/828f778f35" default /]
-[stream language="RO" videoId="486835722/828f778f35"  /]
+[stream language="RO" videoId="499110936/772520cc23"  /]
 [/video-vimeo]
 
 Visual Studio Code has many extensions that can make our working flow more pleasant.
@@ -176,7 +176,7 @@ We use different extensions depending on what type of project we are working.
 
 [vimeo-video]
 [stream language="EN" videoId="486835793/082e4ffd04" default /]
-[stream language="RO" videoId="486835793/082e4ffd04"  /]
+[stream language="RO" videoId="499111022/01d8e72d4b"  /]
 [/video-vimeo]
 
 The video above is showing how we can setup a basic project.

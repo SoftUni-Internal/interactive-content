@@ -3,7 +3,7 @@
 
 [vimeo-video]
 [stream language="EN" videoId="486835903/f8f0434f30" default /]
-[stream language="RO" videoId="486835903/f8f0434f30"  /]
+[stream language="RO" videoId="499110987/5d7f8c1a5a"  /]
 [/video-vimeo]
 
 We already have Visual Studio Code and we can start it. 
@@ -25,7 +25,7 @@ Create a file hello.js to hold your program's source code:
 
 [vimeo-video]
 [stream language="EN" videoId="486835933/467020ce79" default /]
-[stream language="RO" videoId="486835933/467020ce79"  /]
+[stream language="RO" videoId="499111063/606637706d"  /]
 [/video-vimeo]
 
 The source code of the JS program should be written inside a function, which we later invoke in order to run it. 
@@ -57,7 +57,7 @@ This command is very typical in programming: we say a given **object** should be
 
 [vimeo-video]
 [stream language="EN" videoId="486836101/b0f9ba7bd8" default /]
-[stream language="RO" videoId="486836101/b0f9ba7bd8"  /]
+[stream language="RO" videoId="499111095/4a075bbe08"  /]
 [/video-vimeo]
 
 To start the program, press \[Ctrl + F5\]

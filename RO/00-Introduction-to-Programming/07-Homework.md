@@ -2,6 +2,7 @@
 
 [slide]
 # Problem: Print "Hello JavaScript"
+
 [code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```

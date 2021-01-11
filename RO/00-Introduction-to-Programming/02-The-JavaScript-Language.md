@@ -4,7 +4,7 @@
 
 [vimeo-video]
 [stream language="EN" videoId="486835179/05cf7da9f0" default /]
-[stream language="RO" videoId="486835179/05cf7da9f0"  /]
+[stream language="RO" videoId="499110573/4a06582bde"  /]
 [/video-vimeo]
 
 A programming language is an **artificial language** for issuing commands that we want the computer to **read**, **process** and **execute**. 
@@ -37,7 +37,7 @@ It **executes the commands** in the program one after another, as it is able to 
 
 [vimeo-video]
 [stream language="EN" videoId="486835254/ca97b0af6b" default /]
-[stream language="RO" videoId="4486835254/ca97b0af6b"  /]
+[stream language="RO" videoId="499110618/a1e668d16c"  /]
 [/video-vimeo]
 
 JavaScript is **prototype-based**, **multi-paradigm**, **dynamic language**. 
@@ -64,7 +64,7 @@ Supports **imperative**, **functional** and **object-oriented** programming with
 
 [vimeo-video]
 [stream language="EN" videoId="486835379/12b65918cb" default /]
-[stream language="RO" videoId="486835379/12b65918cb"  /]
+[stream language="RO" videoId="499110682/21cc4c06dc"  /]
 [/video-vimeo]
 
 As we have already mentioned, a program is a **sequence of commands**. 
