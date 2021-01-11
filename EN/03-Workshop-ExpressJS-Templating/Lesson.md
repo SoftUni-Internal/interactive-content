@@ -1,1 +1,1 @@
-# Cubicle Workshop Part 1
+# Workshop: ExpressJS Templating

@@ -1,6 +1,8 @@
+# Cubicle: Part 1
+
 [slide]
 # Project Setup
-Download the resources for this workshop: [Download from mega.nz.](https://mega.nz/file/3ZR2zJ7T#zNmYjSuGhME6GQMNTqmQtULCrUfhea3sffSDglW7rjM)
+[Download resources here!](https://mega.nz/file/3ZR2zJ7T#zNmYjSuGhME6GQMNTqmQtULCrUfhea3sffSDglW7rjM)
 
 "Cubicle" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
 
