@@ -1,9 +1,10 @@
 [slide]
 # Ce este codarea?
 [vimeo-video]
-[stream language / fluxul de limbaj = "EN" videoId = "486831827 / 419d467fd3" implicit /]
-[stream language / fluxul de limbaj = "RO" videoId = "499111271 / 0fec1b41ce" /]
+[stream language="EN" videoId="486831827/419d467fd3" default /]
+[stream language="RO" videoId="499111271/0fec1b41ce"  /]
 [/video-vimeo]
+
 **A programa**, exprimat în termeni simpli, înseamnă a **da comenzi** computerului.
 Câteva exemple de bază sunt:
 - `a crea un sunet`
@@ -20,9 +21,10 @@ console.log ("Bine ați venit la codare");
 [slide]
 # Programe de calculator
 [vimeo-video]
-[stream language / fluxul de limbaj = "EN" videoId = "486832336 / e4188d5010" implicit /]
-[stream language / fluxul de limbaj = "RO" videoId = "499111302 / acfc1babdc" /]
+[stream language="EN" videoId="486832336/e4188d5010" default /]
+[stream language="RO" videoId="499111302/acfc1babdc"  /]
 [/video-vimeo]
+
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 Exemplu de **program de computer** în JS:
 ```js live no-template
