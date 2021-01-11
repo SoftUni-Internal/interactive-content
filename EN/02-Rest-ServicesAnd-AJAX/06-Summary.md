@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson you learned:
+## In this lesson you learned:
 
 -  HTTP is a text-based client-server protocol, used for transferring Web resources.
 
