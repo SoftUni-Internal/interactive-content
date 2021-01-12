@@ -6,7 +6,7 @@
 [stream language="RO" videoId="487119076/666af1be39"  /]
 [/video-vimeo]
 
-## In thid lesson you will learn about:
+## In this lesson you will learn about:
 
 **1. Increment and Decrement Operators**
 - How to change the value of variable with special operators
