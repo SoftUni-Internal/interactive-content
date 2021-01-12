@@ -53,4 +53,15 @@ class Student {
   }
 }
 ```
+
+## In the next lesson we will learn:
+
+- Maps
+
+- Map methods
+
+- Lambda expressions
+
+- Stream API
+
 [/slide]
