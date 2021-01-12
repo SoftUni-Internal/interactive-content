@@ -6,7 +6,7 @@
 [stream language="RO" videoId="489373802/dc043536a7"  /]
 [/video-vimeo]
 
-**In this lesson we learned that:**
+## In this lesson you learned:
 
 - Functions are often used to break large programs into simple pieces of code
 
@@ -32,4 +32,14 @@ function myFunction(input){
 
 myFunction('Hello JavaScript!');
 ```
+
+## In the next lesson we will learn:
+
+- Basic perations over Arrays
+
+- Manipulating arrays
+
+- Array iteration
+
+- Mapping and sorting arrays
 [/slide]

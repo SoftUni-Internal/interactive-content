@@ -7,7 +7,7 @@
 [/video-vimeo]
 
 
-What we learned in this lesson: 
+## In this lesson you learned:
 
 - Arrays are sequences of elements 
 
@@ -37,4 +37,18 @@ for (const number of numbers) {
     console.log(number);
 }
 ```
+
+## In the next lesson we will learn:
+
+- What is a Function?
+
+- Declaring and Invoking Functions
+
+- Nested Functions
+
+- Value and Reference Types
+
+- Arrow Functions
+
+- Naming and Best Practices
 [/slide]
