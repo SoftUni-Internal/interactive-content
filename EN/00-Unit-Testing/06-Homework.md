@@ -14,7 +14,9 @@
 
 You need to write **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
 
-If the passed parameter is **NOT** a string return **undefined**. If the parameter is a string return either "even" or "odd" based on the length of the string.
+If the passed parameter is **NOT** a string return **undefined**.
+
+If the parameter is a string return either "even" or "odd" based on the length of the string.
 
 You are provided with an implementation of the `isOddOrEven()` function.
 
@@ -32,9 +34,9 @@ function isOddOrEven(input) {
 
 Hints
 We can clearly see there are three outcomes for the function:
-- Returning **undefined**.
-- Returning "even".
-- Returning "odd".
+- Returning `undefined`.
+- Returning `even`.
+- Returning `odd`.
 
 Write one or two tests passing parameters that are **NOT** of type string to the function expecting it to return undefined.
 
@@ -183,8 +185,11 @@ Write **unit tests** for a function that retrieves a character at a given **inde
 
 You are given a function named `lookupChar()`, which has the following functionality:
 - lookupChar(string, index) - accepts a **string** and an **integer**, which is the index of the character we are looking for.
-- If the **first parameter** is **NOT** a string or the **second parameter** is **NOT a number** - return **undefined**.
-- If **both parameters** are of the correct type but the value of the index is incorrect (bigger than or equal to the string length or a negative number) - return "**Incorrect index**". 
+
+- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - return **undefined**.
+
+- If **both parameters** are of the correct type but the value of the index is incorrect (bigger than or equal to the string length or a negative number) - `return Incorrect index`. 
+
 - If both parameters have correct types and values, return the character at the specified index in the string.
 
 You are provided with an implementation of the `lookupChar()` function.
@@ -201,14 +206,14 @@ function lookupChar(string, index) {
 }
 ```
 
-Hints
+# Hints
 
 А good first step in testing a method is usually to determine all exit conditions. 
 
 Reading through the specification or taking a look at the implementation we can easily determine 3 main exit conditions:
-- Returning **undefined**.
-- Returning an **empty string**.
-- Returning the **character at the specified index**.
+- Returning `undefined`.
+- Returning an `empty string`.
+- Returning the `character at the specified index`.
 
 Now that we have our exit conditions we should start checking in what situations we can reach them.
 
@@ -416,13 +421,17 @@ Test Passed!
 ## Description
 
 Your task is to test an object named **mathEnforcer**, which will have the following functionality.
-- addFive(num) - A function that accepts a **single** parameter.
+
+- `addFive(num)`: A function that accepts a **single** parameter.
+
     - If the parameter is **NOT** a **number**, the funtion should return **undefined**.
     - If the parameter is a **number**, **add 5** to it, and return the result.
-- subtractTen(num) - A function that accepts a **single** parameter.
+
+- `subtractTen(num)`: A function that accepts a **single** parameter.
     - If the parameter is **NOT** a **number**, the function should return **undefined**.
     - If the parameter is a **number**, **subtract 10** from it, and return the result.
-- sum(num1, num2) - A function that accepts **two** parameters.
+
+- `sum(num1, num2)`: A function that accepts **two** parameters.
     - If any of the 2 parameters is NOT a number, the function should return undefined.
     - If **both** parameters are **numbers**, the function should return their **sum**.
 
@@ -477,8 +486,10 @@ Your tests will be supplied with a variable named "mathEnforcer" which contains 
 
 All test cases you write should reference this variable.
 
-Hints
+# Hints
+
 - Test how the program behaves when passing in negative values.
+
 - Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers.
 
 [/task-description]
@@ -944,6 +955,7 @@ class StringBuilder {
 The above code defines a class that holds characters (strings with length 1) in an array. 
 
 An instance of the class should support the following operations:
+
 - Can be instantiated with a passed in string argument or without anything.
 - Function `append(string)` - converts the passed in string argument to an array and adds it to the end of the storage.
 - Function `prepend(string)` - converts the passed in string argument to an array and adds it to the beginning of the storage.
@@ -1582,18 +1594,26 @@ class PaymentPackage {
 }
 ```
 
-The above code defines a class that contains information about a payment package. An instance of the class should support the following operations:
+The above code defines a class that contains information about a payment package. 
+
+An instance of the class should support the following operations:
 - Can be instantiated with two parameters - a string name and a number value.
 - Accessor **name** - used to get and set the value of name.
 - Accessor **value** - used to get and set the value of value.
 - Accessor **VAT** - used to get and set the value of VAT.
 - Accessor **active** - used to get and set the value of active.
-- Function `toString()` - return a string, containing an overview of the instance. If the package is not active, append the label "(inactive)" to the printed name.
+- Function `toString()` - return a string, containing an overview of the instance. 
+
+If the package is not active, append the label "(inactive)" to the printed name.
 
 When creating an instance, or changing any of the property values, the parameters are validated. They must follow these rules:
+
 - **name** - a non-empty string.
+
 - **value** - a non-negative number.
+
 - **VAT** - a non-negative number.
+
 - **active** - a Boolean.
 
 If any of the requirements are not met, the operation must throw an error.
