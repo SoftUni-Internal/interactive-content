@@ -7,7 +7,8 @@
 [/video-vimeo]
 
 
-In this lesson you learned:
+## In this lesson you learned:
+
 - There are **eight data types** in JavaScript: 
     - Number
     ```js
@@ -77,4 +78,11 @@ for (const car of cars) {
 }
 ```
 
+## In the next lesson we will learn:
+
+- Arrays
+
+- Array operations
+
+- Array iteration
 [/slide]
