@@ -27,4 +27,12 @@ let car = {type:"Tesla", model:"X", color:"Blue"};
   - They are **iterable**.
   - They have a **size property**.
 
+## In the next lesson we will learn:
+
+- String
+
+- Manipulation strings
+
+- Building and modifying strings
+
 [/slide]
