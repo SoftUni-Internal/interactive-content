@@ -1,10 +1,32 @@
 [slide]
 # Summary
 
-**In this lesson we learned:**
-- **Functional Context** - the object from which the code originated is its default context. 
+## In this lesson we learned:
+
+- **Functional Context:** the object from which the code originated is its default context. 
+
+```js
+const test = {
+  num: 42,
+  func: function() {
+    return this.num;
+  },
+};
+
+console.log(test.func());
+// expected output: 42
+```
 
 - What **this** refers to depends on **where** and **how** the **function** that is being executed **is called**.
+
+```js
+info: function () {
+        return `${this.name} is a ${this.breed}.`
+    },
+    whatIsThis: function () {
+        return cat;
+    }
+```
 
 - The functions **bind**, **apply** and **call** that can all be used to explicitly set the value of **this**.
 
@@ -13,15 +35,16 @@
   - **seal** and **freeze** that deal with the object's **immutability**;
 
 
-**In this the next lesson we will learn:**
-- **Advanced Functions** - what are first-class and higher-order functions.
+## In this the next lesson we will learn:
 
-- **Currying and Partial Application** - function decomposition.
+- Advanced Functions
 
-- **Immediately-Invoked Function Expressions** - anonymous functions.
+- Currying and Partial Application
 
-- **Closure** - understanding function scope.
+- Immediately-Invoked Function Expressions
 
-- **Error Handling** - the concept of error handling, types of errors, and throwing exceptions.
+- Closure
+
+- Error Handling
 
 [/slide]
