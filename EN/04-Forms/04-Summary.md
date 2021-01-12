@@ -1,0 +1,61 @@
+[slide]
+
+# Summary
+
+## In this lesson we learned:
+
+- Forms in React keep an initial state
+
+`state = {value: ''};`
+
+- Controlled forms
+  - State is handled by the component
+  - Using event handlers to take care of changes in state as well as form submissions
+
+
+```js
+class Register extends React.Component {
+  state = {
+    email: '',
+    password: '',
+    repeatPassword: ''
+};
+  changeHandler(event) {
+    this.setState({value: event.target.value});
+  }
+  submitHandler(event) {
+    event.preventDefault();
+    // Doing some AJAX with the data...
+  }
+
+  // render() ...
+}
+
+```
+
+- Uncontrolled forms
+  - Form data is handled by the DOM itself
+  - Done by creating references to DOM elements
+
+
+```js
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+  render() { return <div ref={this.myRef} />; }
+}
+
+```
+
+## In the next lesson we will learn:
+
+- React Hooks
+  - State hook
+  - Effect hook
+  - Custom hooks
+- Rules of hooks
+- `UseContext` and `UseReducer` hooks
+
+[/slide]
