@@ -6,7 +6,7 @@
 [stream language="RO" videoId="429688382" /]
 [/video-vimeo]
 
-Information can be **passed** to methods as a parameter. 
+Information can be **passed** to methods as a parameter.
 
 Parameters act as **variables** inside the method.
 
