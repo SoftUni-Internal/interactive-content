@@ -23,4 +23,15 @@ In this lesson you learned about:
     });
     ```
     
+## In the next lesson we will learn:
+
+- What is `this`?
+
+- Usages of `this` Keyword
+
+- `this` in functions
+
+- Explicit binding
+
+- Internal object properties
 [/slide]
