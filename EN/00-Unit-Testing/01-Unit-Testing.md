@@ -9,15 +9,19 @@
 [stream language="RO" videoId="497187486/91a42d34b4"  /]
 [/video-vimeo]
 
-A unit test is a piece of code that checks whether a certain functionality works as expected.
+A unit test is a piece of code that checks whether a certain **functionality works as expected.**
 
-It also provides the developers with the necessery information as to why and where errors occur in the code.
+It also provides the developers with the **necessery information** as to why and where **errors occur in the code.**
 
-Let us see an example where we will write our own test before we start using some of the known frameworks.
+Let us see an example where we will write our own **test** before we start using some of the known frameworks.
 
-In the example below we have a simple sorting function `sortNums()`. It sorts the numbers inside an array.
+In the example below we have a simple sorting function `sortNums()`. 
 
-In our test we declare and initialize an array with some numbers. Then we sort the array.
+It sorts the numbers inside an array.
+
+In our test we declare and initialize an array with some numbers.
+
+Then we sort the array.
 
 Finally we write an if statement where we check if the array has been sorted as we expected.
 
@@ -36,15 +40,19 @@ if (JSON.stringify(nums) === "[-2,2,4,15]") {
 }
 ```
 
-**Why do we need Unit Testing?**
+# Why do we need Unit Testing?
 
-Unit tests make it safer and easier to refactor the code by putting tests into place that make sure refactoring occurs without problems and disruption.
+Unit tests make it **safer** and **easier** to refactor the code by putting tests into place that make sure **refactoring** occurs without problems and disruption.
 
-Doing unit tests is essentially doing quality assurance of the code. It shows problems and bugs before the product has an integration test.
+Doing unit tests is **essentially** doing quality assurance of the code. 
+
+It shows problems and bugs before the product has an integration test.
 
 Unit tests make the process of debugging easier.
 
-Unite tests force better code and design whether you are using C\#, Java, Python, JavaScript, or Php. It means you have a well-defined code with high cohesion.
+Unite tests force **better code and design** whether you are using C\#, Java, Python, JavaScript, or Php. 
+
+It means you have a well-defined code with high cohesion.
 
 [/slide]
 
