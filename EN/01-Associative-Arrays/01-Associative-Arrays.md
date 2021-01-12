@@ -101,7 +101,7 @@ for (let key in assocArr) {
 [stream language="RO" videoId="489799126/f74d7e08c7"  /]
 [/video-vimeo]
 
-[code-task title="Phone Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -115,7 +115,7 @@ function solve(input){
 
 # Description
 
-Write a function that stores information about a **person’s name** and their **phone number**.
+Write a function that stores information about a **person's name** and their **phone number**.
 
 The input comes in the form of an **array of strings**.
 

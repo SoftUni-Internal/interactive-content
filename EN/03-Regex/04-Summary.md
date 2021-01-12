@@ -14,4 +14,7 @@
 
 - We can utilize character classes, groups, quantifiers and more.
 
+## In the next lesson we will learn:
+
+- How to solve a practical exam
 [/slide]
