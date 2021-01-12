@@ -218,7 +218,7 @@ If we have an **instance** of and array, since we know it is an object, adding n
 
 This however, only adds our new function to this instance. 
 
-To add all functions just one time and have them work on **all arrays** is not much more complicated, we just have to attach them to Array’s **prototype** instead:
+To add all functions just one time and have them work on **all arrays** is not much more complicated, we just have to attach them to Array's **prototype** instead:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(7).png" /]
 
@@ -380,9 +380,9 @@ This one is for you to do.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(12).png" /]
 
-Now that we know how to basically inherit classes. Create the **BirthdayBalloon** class on your own. 
+Now that we know how to basically inherit classes. Create the **BirthdayBalloon** class on your own.
 
-The **BirthdayBalloon** class should extend the **PartyBalloon** class, and should add an **extra property**. 
+The **BirthdayBalloon** class should extend the **PartyBalloon** class, and should add an **extra property**.
 
 It is the same as the previous class.
 
