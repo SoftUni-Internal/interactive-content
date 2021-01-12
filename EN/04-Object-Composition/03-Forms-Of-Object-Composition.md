@@ -92,7 +92,7 @@ Delegation is commonly used to imitate class inheritance in JavaScript.
 
 JavaScript's built-in types use delegation to forward built-in method calls up the prototype chain. 
 
-[].map() delegates to Array.prototype.map(), obj.hasOwnProperty() delegates to Object.prototype.hasOwnProperty() and so on.
+`[].map()` delegates to `Array.prototype.map()`, `obj.hasOwnProperty()` delegates to `Object.prototype.hasOwnProperty()` and so on.
 
 In the example below we use the `.reduceRight()` method.
 
