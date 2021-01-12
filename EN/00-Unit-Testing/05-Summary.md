@@ -20,4 +20,9 @@ it('expect sum ([1,2.3] to be 6)', function() {
 - Test-driven development (TDD).
     - Tests are written first.
 
+## In the next lesson we will learn:
+
+- Modules
+
+- Types of modules
 [/slide]
