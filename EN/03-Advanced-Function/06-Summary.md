@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson we learned:
+## In this lesson we learned:
 
 - That **first class functions**:
   - Can be passed as an **argument**
@@ -13,8 +13,8 @@ function sayHello() {
   return "Hello, ";
 }
 
-function greet(helloFunction, name) {
-  return helloFunction() + name;
+function greet(sayHello, name) {
+  return sayHello() + name;
 }
 ```
 
@@ -42,5 +42,15 @@ greet(); // Output: "Hello"
 })();
 console.log(name) // TypeError
 ```
+
+
+## In the next lesson, you will learn:
+
+- What is object composition?
+- Destructuring
+- Forms of object composition
+  - Aggregation
+  - Concatenation
+  - Delegation
 
 [/slide]
