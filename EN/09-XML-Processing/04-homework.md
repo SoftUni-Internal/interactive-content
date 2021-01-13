@@ -2,7 +2,7 @@
 [slide]
 # Ex.Problem: Seed the Database
 
-**Here is a link to [the resources](https://mega.nz/file/bQw1UYrQ#qi2C3hedASUrYBgLOFx-wLbIfBWy4r-YDMelAYtRtbI) for this task.** The models from the project skeleton will be used for the **Car Dealer Database** exercises and the XML files will be required for all exercises. 
+Here is a link to [the resources](https://mega.nz/file/bQw1UYrQ#qi2C3hedASUrYBgLOFx-wLbIfBWy4r-YDMelAYtRtbI) for this task. The models from the project skeleton will be used for the **Car Dealer Database** exercises and the XML files will be required for all exercises. 
 
 **Import** the data from the provided files (**users.xml**, **products.xml**, **categories.xml**).
 
