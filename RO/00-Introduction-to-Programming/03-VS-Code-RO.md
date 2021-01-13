@@ -95,7 +95,7 @@ La**pornirea VS Code**se afișează vizualizarea principală a Visual Studio Cod
 [image assetsSrc = "intro-to-programming-install-vscode-8.png" /]
 
 Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
-[/ slide]
+[/slide]
 
 [slide]
 # Medii de dezvoltare: desktop și online
@@ -119,7 +119,7 @@ IDE alternativ (online)
 
 [image assetsSrc = "intro-to-programming-1.png" /]
 
-[/ slide]
+[/slide]
 
 [slide]
 # Ce este codul Visual Studio
