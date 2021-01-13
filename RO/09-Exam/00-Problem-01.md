@@ -1,4 +1,0 @@
-[slide]
-# Lesson Introduction
-
-[/slide]
