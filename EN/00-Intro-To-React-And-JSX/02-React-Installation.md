@@ -4,7 +4,7 @@
 
 # Create React App
 
-Developed by Facebook, Create-React-App is a terminal tool, that enables bootstrapping a React project in seconds.
+Developed by Facebook, `Create-React-App` is a command line tool, that enables bootstrapping a **React** project in seconds.
 
 Using `create-react-app` enables a number of benefits:
 
@@ -29,7 +29,7 @@ Make sure you have Node.js installed by typing `node -v`.
 
 If you do not have Node.js, you can download it [here](https://nodejs.org/en/).
 
-Then, in the command-line window type `npx create-react-app my-app` and press Enter.
+Then, in the command-line window type `npx create-react-app my-app` and press [Enter].
 
 You can replace `my-app` with any name you want for your app directory.
 
