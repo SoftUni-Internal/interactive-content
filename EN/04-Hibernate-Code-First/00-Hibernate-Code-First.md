@@ -19,7 +19,7 @@ The following mapping strategies are used to map the entity data to the underlyi
 - **Join** strategy - mapping common fields in a single table.
 
 
-
+Test 123 
 
 [/slide]
 
