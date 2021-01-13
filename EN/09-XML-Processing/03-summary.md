@@ -2,7 +2,7 @@
 # Summary
 
 **In this lesson we learned:**
-- **XML** is another way of transmitting data between web applications and servers. It is extensible and self-describing.
+- **XML** is another format for transmitting data between web applications and servers. It is extensible and self-describing.
 
 - XML documents consist of mark-up (tags) and content elements.
 
