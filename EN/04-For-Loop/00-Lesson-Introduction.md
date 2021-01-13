@@ -26,6 +26,4 @@
 - What are **Infinity Loops** and how to safe-use them
 
 
-test123
-
 [/slide]
