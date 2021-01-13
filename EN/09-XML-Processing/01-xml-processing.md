@@ -37,9 +37,9 @@ The above is called a **prolog** and it defines the XML version and character en
 [slide]
 # XML Structure
 
-When you create XML documents you can write your own elements and by giving them descriptive names, they become self-describing. For instance, if somebody reads through an XML, he would not have to guess what goes into the ``<brandName></brandName>`` tags.
+When you create XML documents you can write your own elements and by giving them descriptive names, they become self-describing. For instance, if somebody reads through an XML, they would not have to guess what goes into the ``<brandName></brandName>`` tags.
 
-XML documents can be most naturally expressed as **element trees**. The XML tree begins with a **root element** and you can have many **sub-elements** that branch off the root element or off each other. Every single element of an XML document can have its own child element(s).
+XML documents can be most naturally expressed as **element trees**. The XML tree begins with a **root element** and you can have many **sub-elements** that branch off the root element or off of each other. Every single element of an XML document can have its own child element(s).
 
 The following example demonstrates a simple tree structure:
 
@@ -64,7 +64,7 @@ The tree structure can be represented like this:
 
 [image assetsSrc="xml-processing-03.png" /]
 
-What about having a bunch of cats added to the above XML tree example? You can do so by adding a wrapper around the objects, essentially creating a collection of them like so:
+What about having a bunch of cats added to the above XML tree example? You can do so by adding a wrapper around the objects, essentially creating a collection of them:
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
