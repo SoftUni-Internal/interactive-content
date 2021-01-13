@@ -26,7 +26,7 @@ Now, let's create our project from the beginning.
 
 [image assetsSrc="Hibernate(2).jpg" /]
 
-- Set up project **name** and **location.** 
+- Set up project **name** and **location.** .
 
 [image assetsSrc="Hibernate(3).png" /]
 
