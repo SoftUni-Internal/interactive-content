@@ -27,4 +27,9 @@ let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
 ```
 
+## In the next lesson we will learn:
+
+- Express​
+- View Engines
+
 [/slide]
