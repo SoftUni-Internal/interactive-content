@@ -1,4 +1,4 @@
-[slide
+[slide]
 
 # Hibernate Code First Entity Relations
 
