@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - What is a Relational Databases.
 
