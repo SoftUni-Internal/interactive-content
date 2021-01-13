@@ -1,7 +1,7 @@
 [slide]
 # JAXB
 
-**JAXB** is an API technology that provides an efficient way of mapping between XML and Java code with a minimal amount of effort and code.
+**JAXB** is an API technology that provides an efficient way of mapping between XML and Java code with a minimal amount of effort and coding.
 
 It processes the XML schema into a set of **Java classes** or vice-versa.
 
@@ -94,7 +94,7 @@ When converted to XML the above will convert to:
 
 This allows you to decide which type of data is exported when JAXB converts the class to XML.
 
-- ``@XmlAccessType.FIELD`` - Bounds every non-static, non-transient field automatically for export. The only excluded fields would be those annotated with ``@XmlTransient``.
+- ``@XmlAccessType.FIELD`` - Binds every non-static, non-transient field automatically for export. The only excluded fields would be those annotated with ``@XmlTransient``.
 - ``@XmlAccessType.PROPERTY`` - Automatically binds any property (getter / setter pair ) for export to XML unless you use ``@XmlTransient`` on it.
 - ``@XmlAccessType.PUBLIC_MEMBER`` -  Every public class member (field or property) will be bound for export.
 - ``@XmlAccessType.NONE`` - No fields or properties will be exported to XML unless you specifically annotate them.
