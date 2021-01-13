@@ -55,7 +55,7 @@ Next, we will look into some of the annotations you can use and what they do.
 [slide]
 # JAXB Annotations
 
-- ``@XmlRootElement `` - defines the XML root object.
+- ``@XmlRootElement`` - defines the XML root object.
 - ``@XmlAccessorType`` - defines the fields and properties that the JAXB engine will use for binding. Possible values:
   - XmlAccessType.**FIELD**
   - XmlAccessType.**PROPERTY**
@@ -90,7 +90,7 @@ When converted to XML the above will convert to:
 ```
 ## @XmlAccessorType
 
-**Scope:** Class or Package
+**Scope:** Class, Package
 
 This allows you to decide which type of data is exported when JAXB converts the class to XML.
 
@@ -124,7 +124,7 @@ The default value of this annotation is **PUBLIC_MEMBER**.
 ## @XmlAttribute
 **Scope:** Field, Property
 
-This will mark the field or property you annotate to an attribute.
+This will mark the field or property you annotate as an XML attribute.
 
 ```java
 @XmlRootElement(name = "cat")
@@ -147,9 +147,9 @@ Result:
 ```
 
 ## @XmlElement
-**Scope:** Field or Property
+**Scope:** Field, Property
 
-Maps a property or field to an XML element. Its name will be derived from the property name or you can set it with ``name=""``.
+Maps a property or a field to an XML element. Its name will be derived from the property name or you can set it with ``name=""``.
 
 ```java
 @XmlRootElement(name = "cat")
@@ -173,9 +173,9 @@ Result:
 </cat>
 ```
 
-Notice how **id** is exported as **catId** as it was given this name explicitly, while the **name** field remained the same. The **breed** field does not appear at all in the XML as it is a private field and it was not annotated with ``@XmlElement``.
+Notice how **id** is exported as **catId** as it was given this name explicitly, while the **name** field remained the same. The **breed** field does not appear at all in the XML as it is a private field. It was not annotated with ``@XmlElement``, we also did not annotate the class with ``@XmlAccessType(XmlAccessType.FIELD)`` so **breed** is ignored. 
 
-## @XmlElementWrapper`` 
+## @XmlElementWrapper
 
 Wraps an array of objects and gives a name of your choosing to the wrapper.
 
@@ -206,7 +206,7 @@ You can see that the List of cars was given the name of **cars** but it could ha
 
 
 ## @XmlTransient
-Scope: Field or Property
+Scope: Field, Property
 
 Fields or properties marked with this annotation will not be exported to XML.
 
@@ -229,7 +229,7 @@ Result:
 </cat>
 ```
 
-Even though the class is annotated with`` @XmlAccessorType(XmlAccessType.FIELD)``, the name field is not exported as it has been marked with ``@XmlTransient``.
+Even though the class is annotated with`` @XmlAccessorType(XmlAccessType.FIELD)``, the **name** field was not exported as it has been marked with ``@XmlTransient``.
 
 [/slide]
 
@@ -241,7 +241,7 @@ Even though the class is annotated with`` @XmlAccessorType(XmlAccessType.FIELD)`
 this.jaxbContext = JAXBContext.newInstance(object.getClass());
 ```
 
-The **JAXBContext** objects are used for XML manipulations. It provides an abstraction for managing XML/Java binding information.
+The **JAXBContext** object is used for XML manipulations. It provides an abstraction for managing XML/Java binding information.
 
 ``JAXBContext.newInstance(object.getClass())`` creates an instance of JAXBContext and ``object.getClass()`` is the class that you want to export or import, for example User, Address, Employee.
 
@@ -278,7 +278,7 @@ Marshaller marshaller = context.createMarshaller();
 marshaller.marshal(user, new File("users.xml"));
 ```
 
-We are setting up a new instance of JAXBContex to work with the **User** class. Then we are creating a **marshaller** from the context. Finally, we are exporting the user object to an xml file with the name **users.xml**.
+We are setting up a new instance of **JAXBContext** to work with the **User** class. Then we are creating a **marshaller** from the context. Finally, we are exporting the user object to an xml file with the name **users.xml**.
 
 Result:
 ```html
@@ -295,7 +295,7 @@ Result:
 [slide]
 # Export Single Object to XML – Example 2
 
-Here is one more scenario where you will see how to 
+Here is one more scenario where you will see how to export to XML in a slightly different way while also formatting the file to be easily readable.
 
 **Student.java**
 
@@ -326,7 +326,7 @@ jaxbMarshaller.marshal(studentDto, bufferedWriter);
 
 Here we are assuming we have received a **studentDto** object that can be a projection from a database call with **name = "Alex"** and **mobilePhoneNumber = "+971 123 123"**.
 
-We are converting it to XML with JAXB only this time we are doing it differently. You already know what the first two lines do. Let us look at the rest of the code.
+We are converting it to XML with JAXB in a slightly different way. You already know what the first two lines do. Let us look at the rest of the code.
 
 ``` java
 jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -341,7 +341,7 @@ Then, we are creating a **FileOutputStream** and set it to output to a file call
 ```
 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
 ```
-A new buffered writer object is created that takes the outputStream we created.
+A new buffered writer object is created that takes the **outputStream** we created.
 
 ```
 jaxbMarshaller.marshal(studentDto, bufferedWriter);
@@ -357,7 +357,7 @@ encoding="UTF-8"?>
 
 ```
 
-Notice how **name** is an attribute of the root element as it was annotated with **@XmlAttribute** and **mobilePhoneNumber** was exported as "mobile" because of ``@XmlElement(name = "mobile")``. Sometimes the service that will be working with your XML will might need tags and attributes to be in a specific format, so it is convenient to be able to rename them with attributes without having to change your classes.
+Notice that **name** is an attribute of the root element as it was annotated with **@XmlAttribute** and **mobilePhoneNumber** was exported as "mobile" because of ``@XmlElement(name = "mobile")``. Sometimes the service that has to work with the XML might need tags and attributes to be in a specific format, so it is convenient to be able to rename them with attributes without having to change your classes.
 
 [/slide]
 
@@ -411,7 +411,7 @@ After **marshalling** this results in:
 [slide]
 # Import a Single Object from XML
 
-You can also import objects from XML to Java by **unmarshalling** them with JAXB. To facilitate this process, you need to have a class that repsresents this object.
+You can also import objects from XML to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that repsresents this object.
 
 **AddressDto.java**
 ```java
@@ -436,7 +436,7 @@ Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 AddressDto addressDto = (AddressDto) unmarshaller.unmarshal(bfr);
 ```
 
-We are creating an input stream from the xml file using ``getClass().getResourceAsStream("/files/input/xml/address.xml")``:
+We are creating an input stream from the XML file using ``getClass().getResourceAsStream("/files/input/xml/address.xml")``:
 ```java
 InputStream inputStream = getClass().getResourceAsStream("/files/input/xml/address.xml");
 ```
@@ -465,7 +465,7 @@ If the format in the XML file matches the class you have previously created, a n
 [slide]
 # Import Multiple Objects to XML
 
-Similarly to how we exported a list of objects, you can also import from XML to Java.
+Similarly to how we exported a list of objects, we can also import from XML to Java.
 
 **XMLParser.java**
 ```java
@@ -478,11 +478,8 @@ AddressesDto addressesDto = (AddressesDto) unmarshaller.unmarshal(bfr);
 
 Once again, you need to have a class that represents the object you want to import.
 
-```java
 
-```
-
-**AddressedDto.java**
+**AddressesDto.java**
 ```java
 @XmlRootElement(name = "addresses")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -491,7 +488,6 @@ public class AddressesDto {
     @XmlElement(name = "address")
     private List<AddressDto> addressDtos;
 }
-
 ```
 
 Each address is  represented as:
