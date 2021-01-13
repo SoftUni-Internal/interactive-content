@@ -3,7 +3,7 @@
 [slide]
 
 # Problemă: Imprimaţi "Hello JavaScript"
-[code-task title="Print Hello Javascript" taskId="pb-js-00-p-01" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function hello() {
@@ -34,7 +34,7 @@ Hello JavaScript
 [slide]
 
 # Problemă: Calculați și imprimați 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="pb-js-00-p-02" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculate() {
@@ -65,7 +65,7 @@ Scrieți un program JavaScript, care:
 [slide]
 
 # Problemă: nume și expresie
-[code-task title="Name and Expression" taskId="pb-js-00-p-03" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Name and Expression" taskId="pb-js-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function nameAndExpression() {
@@ -93,7 +93,7 @@ Catlyn
 [slide]
 
 # Problemă: calcule
-[code-task title="Calculations" taskId="pb-js-00-p-04" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Calculations" taskId="pb-js-introduction-Calculations" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
@@ -127,7 +127,7 @@ Scrieți un program, care calculează și imprimă valoarea următoarelor expres
 [slide]
 
 # Problemă: pătrat de 7 * 7 stele
-[code-task title="Square of 7 * 7 Stars" taskId="pb-js-00-p-05" executionType="tests-execution" executionStrategy="javascript-code"]
+[code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function squareOfStars() {
