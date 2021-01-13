@@ -7,7 +7,7 @@
 
 **1. Increment and Decrement operators**
 
-- How to use Prefix and Postfix **++** and **--**
+- How to use Prefix and Postfix **++** and **-**
 
 **2. For-Loop**
 
