@@ -1,10 +1,9 @@
-[slide]
+[slide] / [diapozitiv]
 # Ce este codarea?
 [vimeo-video]
-[stream language="EN" videoId="486831827/419d467fd3" default /]
-[stream language="RO" videoId="499111271/0fec1b41ce"  /]
+[stream language / fluxul de limbaj = "EN" videoId = "486831827 / 419d467fd3" implicit /]
+[stream language / fluxul de limbaj = "RO" videoId = "486831827 / 419d467fd3" /]
 [/video-vimeo]
-
 **A programa**, exprimat în termeni simpli, înseamnă a **da comenzi** computerului.
 Câteva exemple de bază sunt:
 - `a crea un sunet`
@@ -21,10 +20,9 @@ console.log ("Bine ați venit la codare");
 [slide]
 # Programe de calculator
 [vimeo-video]
-[stream language="EN" videoId="486832336/e4188d5010" default /]
-[stream language="RO" videoId="499111302/acfc1babdc"  /]
+[stream language / fluxul de limbaj = "EN" videoId = "486832336 / e4188d5010" implicit /]
+[stream language / fluxul de limbaj = "RO" videoId = "486832336 / e4188d5010" /]
 [/video-vimeo]
-
 Programele de computer reprezintă **o secvență de comenzi** care sunt scrise într-un anumit **limbaj de programare**, cum ar fi: C #, Java, JavaScript, Python, C ++, PHP, C, Ruby, Swift, Go sau altul.
 Exemplu de **program de computer** în JS:
 ```js live no-template
@@ -51,7 +49,7 @@ De aceea, vom învăța **principiile** de a scrie la computer **cod pas cu pas*
 # Algorithms
 [vimeo-video]
 [stream language="EN" videoId="486832885/b0c2ee91e7" default /]
-[stream language="RO" videoId="499111365/7c560dc46b"  /]
+[stream language="RO" videoId="486832885/b0c2ee91e7"  /]
 [/video-vimeo]
 Programele de calculator execută de obicei algoritmi.
 **Algoritmii ** sunt**secvențe de pași**, necesari pentru finalizarea unei anumite sarcini, ceva de genul "recipes".
@@ -79,7 +77,7 @@ function findMinNumber() {
 Program JavaScript bazat pe console – Exemplu
 [vimeo-video]
 [stream language="EN" videoId="486834408/4266dce8e6" default /]
-[stream language="RO" videoId="499111441/7cbd80b105"  /]
+[stream language="RO" videoId="486834408/4266dce8e6"  /]
 [/video-vimeo]
 
 Să vedem un program simplu care ia **o sumă de bani în dolari SUA (USD)** - un număr întreg, îl convertește în **Euro (EUR)** înmulțindu-l cu cursul de schimb și imprimă rezultatul obținut.
@@ -97,7 +95,7 @@ convertUsdToEur("5");
 # Browser-Based JavaScript Program – Example
 [vimeo-video]
 [stream language="EN" videoId="486834720/d1ce0ef921" default /]
-[stream language="RO" videoId="499110519/46edda425a"  /]
+[stream language="RO" videoId="486834720/d1ce0ef921"  /]
 [/video-vimeo]
 În acest exemplu, putem importa și utiliza o funcție în pagina noastră de web.
 Folosind blocul de cod din exemplu, creăm o casetă de text ca în diapozitiv.

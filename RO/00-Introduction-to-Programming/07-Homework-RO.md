@@ -1,20 +1,21 @@
 # Homework
 
 [slide]
-# Problem: Print "Hello JavaScript"
 
-[code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
+# Problemă: Imprimaţi "Hello JavaScript"
+[code-task title="Print Hello Javascript" taskId="pb-js-00-p-01" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function hello() {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-Write a JavaScript program, which:
 
-Prints `Hello JavaScript` on the console.
+Scrieți un program JavaScript, care:
+
+Imprimă „Hello JavaScript” pe consolă.
 
 [/task-description]
 [code-io /]
@@ -31,20 +32,22 @@ Hello JavaScript
 [/slide]
 
 [slide]
-# Problem: Calculate and Print 5 * 5
-[code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
+
+# Problemă: Calculați și imprimați 5 * 5
+[code-task title="Calculate and Print 5 * 5" taskId="pb-js-00-p-02" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculate() {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-Write a JavaScript program, which:
 
-* Calculates the value of 5 * 5
-* Prints the result
+Scrieți un program JavaScript, care:
+
+* Calculează valoarea de 5 * 5
+* Imprimă rezultatul
 [/task-description]
 [code-io /]
 [tests]
@@ -60,17 +63,18 @@ Write a JavaScript program, which:
 [/slide]
 
 [slide]
-# Problem: Name and Expression
-[code-task title="Name and Expression" taskId="pb-js-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="javascript-code"]
+
+# Problemă: nume și expresie
+[code-task title="Name and Expression" taskId="pb-js-00-p-03" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function nameAndExpression() {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-Write a program to print `Catlyn` on the first line and calculate and print the result of the expression `5 + 3` on the second line
+Scrieți un program pentru a imprima `Catlyn` pe prima linie și calculați și imprimați rezultatul expresiei` 5 + 3` pe a doua linie
 [/task-description]
 [code-io /]
 [tests]
@@ -87,17 +91,19 @@ Catlyn
 [/slide]
 
 [slide]
-# Problem: Calculations
-[code-task title="Calculations" taskId="pb-js-introduction-Calculations" executionType="tests-execution" executionStrategy="javascript-code"]
+
+# Problemă: calcule
+[code-task title="Calculations" taskId="pb-js-00-p-04" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function calculations() {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-Write a program, which calculates and prints the value of the following expressions:
+
+Scrieți un program, care calculează și imprimă valoarea următoarelor expresii:
 
 * `5 + 3 * 2`
 * `4 * (2 + 3)`
@@ -119,19 +125,20 @@ Write a program, which calculates and prints the value of the following express
 [/slide]
 
 [slide]
-# Problem: Square of 7 * 7 Stars
-[code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
+
+# Problemă: pătrat de 7 * 7 stele
+[code-task title="Square of 7 * 7 Stars" taskId="pb-js-00-p-05" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
 function squareOfStars() {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-Write a program, which:
+Scrieți un program care:
 
-Prints a square of `7 * 7` stars like this:
+Imprimă  un pătrat de stele „7 * 7” astfel:
 
 ```
 * * * * * * *
@@ -163,7 +170,8 @@ Prints a square of `7 * 7` stars like this:
 [/slide]
 
 [slide]
-# Homework Results
+# Rezultatele temelor pentru acasă
 [tasks-results/]
 
 [/slide]
+
