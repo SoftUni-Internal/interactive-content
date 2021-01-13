@@ -53,4 +53,12 @@
     }
     ```
 
+## In the next lesson we will learn:
+
+- Component Lifecycle
+- Higher Order Components
+- CSS Modules
+- Fetching Data
+- Context API
+
 [/slide]
