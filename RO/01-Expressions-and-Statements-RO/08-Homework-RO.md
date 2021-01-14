@@ -1,7 +1,7 @@
 # Teme pentru acasă
 
 [slide]
-# Problemă: Calculați aria unui pătrat
+# Problemă: Calculate a square area
 [code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -64,7 +64,7 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 [/slide]
 
 [slide]
-# Problemă: Convertor valutar
+# Problemă: Currency Converter
 
 [vimeo-video]
 [stream language="EN" videoId="486857468/b246ee7ca8" default /]
@@ -134,7 +134,7 @@ Scrieți un program pentru a converti de la USD la EUR:
 [/slide]
 
 [slide]
-# Problemă: Convertiți radianele în grade
+# Problemă: Convert Radians to Degrees
 [code-task title="Convert Radians to Degrees" taskId="pb-js-expressions-Convert-Radians-To-Degrees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -203,7 +203,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [/slide]
 
 [slide]
-# Problemă: Zile în minute
+# Problemă: Days to Minutes
 
 [vimeo-video]
 [stream language="EN" videoId="486857308/5e4892a5b8" default /]
@@ -276,7 +276,7 @@ Scrieți un program care covertează zilele în minute:
 [/slide]
 
 [slide]
-# Problemă: Aria și perimetrul cercului
+# Problemă: Circle Area and Perimeter
 [code-task title="Circle Area and Perimeter" taskId="pb-js-expressions-Circle-Area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -344,7 +344,7 @@ Perimeter = 59.06
 [/slide]
 
 [slide]
-# Problemă: Amenajarea curții
+# Problemă: Yard Landscaping
 [code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
