@@ -58,7 +58,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the area of a triangle by given width and length:
+Create a method that calculates and returns the area of a rectangle by given width and length:
 
 ## Examples
 |**Input**|**Output**|
