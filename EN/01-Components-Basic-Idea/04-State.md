@@ -14,7 +14,7 @@ Each component can maintain its own state, which lives in the **state** object.
 
 Changing the **state** will change how the app looks. 
 
-This way we can create apps that are dynamic and interractive.
+This way we can create apps that are dynamic and interactive.
 
 [/slide]
 
@@ -28,7 +28,7 @@ We use the term "mount" to describe the process of injecting the component into 
 
 After mounting the component we can modify the state as we wish.
 
-Also we can save the state object to a database and retrieve this object later when we need it.
+Also, we can save the state object to a database and retrieve this object later when we need it.
 
 We can only modify the state of a component from inside the component.
 
@@ -38,9 +38,9 @@ We can only modify the state of a component from inside the component.
 
 # Component State Example
 
-State holds information that can change over time.
+The state holds information that can change over time.
 
-Usually this happens as a result of changes in the user input or the system events.
+Usually, this happens as a result of changes in user input or system events.
 
 First we initialize the state with `this.state = { count: 0 };` in the constructor.
 
@@ -64,7 +64,7 @@ Inside the `updateCount()` function we update the **state** using the `setState(
 
 Use "onClick" handler inside the `render()` method to tell React we are expecting a "click" event.
 
-On each click of the button we will update the count by adding 1 to it.
+On each click of the button, we will update the count by adding 1 to it.
 
 ```js
 import React from 'react';
@@ -97,23 +97,23 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 # Working with States
 
-**State** is used only with **class based components**.
+**State** is used only with **class-based components**.
 
 The **state** is set in the **constructor** as we have seen in the previous example.
 
 If we do not set the state, it will be initialized with a default value.
 
-To access state use `console.log(this.state)`.
+To access the state use `console.log(this.state)`.
 
 State must **never** be modified directly, use always the `this.setState()` method instead.
 
-Every time we update the state the component will be rendered again by envoking the `render()` method.
+Every time we update the state the component will be rendered again by invoking the `render()` method.
 
 Calls to the `setState()` method are asynchronous inside event handlers.
 
 With the `setState()` method we can pass a plain JavaScript object or a callback function to perform some action.
 
-In the example below we are passing a callback arrow function that takes the previous state as an argument and increments it by 1.
+In the example below, we are passing a callback arrow function that takes the previous state as an argument and increments it by 1.
 
 Note that we can pass a **reference** of a function to an event handler but not a **function call**! - `<button onClick={this.updateCount}>`.
 
@@ -150,9 +150,11 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 A stateless component is one that has no **state** but only **props**.
 
-It is easy to set and test. They only receive **props**.
+It is easy to set and test. 
 
-We do not expect stateless components to make http requests or anything more complex. 
+They only receive **props**.
+
+We do not expect stateless components to make HTTP requests or anything more complex. 
 
 They just render some data and that is it.
 
@@ -172,9 +174,9 @@ function Show(props) {
 
 Stateful components have both **props** and **state**.
 
-They can make http request, pass data to a database or handle more complex logic.
+They can make HTTP requests, pass data to a database, or handle more complex logic.
 
-In this example we have a class called "Input" that extends from React.Component class.
+In this example, we have a class called "Input" that extends from React.Component class.
 
 In the constructor we pass our **props** and we initialize the **state**, which will be an empty string - `this.state = { value: "" };`.
 
@@ -192,7 +194,7 @@ If you do not want to use the `bind()` method then simply make the function an a
 
 Inside this function we update the state with `setState()` method.
 
-So, now on every "onChange" event we will call `this.handleChange`, and the value we type in the input field will be updated in the paragraph underneath it.
+So, now on every "onChange" event, we will call `this.handleChange`, and the value we type in the input field will be updated in the paragraph underneath it.
 
 ```js
 class Input extends React.Component {

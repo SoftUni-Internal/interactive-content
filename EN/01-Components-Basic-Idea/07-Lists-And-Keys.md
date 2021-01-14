@@ -18,7 +18,7 @@ Here is how we render multiple components.
 
 Use the `map()` method to create a "li" element with the **current number** inside of it surrounded by curly braces like so: `<li>{number}</li>`.
 
-Then we return an anorderd list with all the elements from the "ListItems" variable.
+Then we return an unordered list with all the elements from the "ListItems" variable.
 
 ```js
 function NumberList(props) {
@@ -48,11 +48,11 @@ Although this is not going to cause a problem it is not the way React works.
 
 We should give **unique keys** to the elements inside the array.
 
-This way React can manage their state effectively by keeping track of any changes happening to any particuler element in the collection.
+This way React can manage its state effectively by keeping track of any changes happening to any particular element in the collection.
 
 The best way to pick a key is to use a string that uniquely identifies a list item among its siblings.
 
-Most often we use ID's as keys. They go inside the element, in this case a `<li key={some key}></li>` element.
+Most often we use id's as keys. They go inside the element, in this case a `<li key={some key}></li>` element.
 
 ```js
 const todoItems = todos.map((todo) =>

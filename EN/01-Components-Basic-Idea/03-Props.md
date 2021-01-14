@@ -4,13 +4,17 @@
 
 # Component Props
 
-**props** is short for **properties**. Every component in React has properties.
+**props** is short for **properties**. 
 
-Props are passed from the **parent** to the **children**. Props are immutable.
+Every component in React has properties.
 
-A parent cannot change its own properties but it is possible to create new ones and pass them to the child.
+Props are passed from the **parent** to the **children**. 
 
-There is no limit to the to the amount of nested components that we can have.
+Props are immutable.
+
+A parent cannot change their own properties but it is possible to create new ones and pass them to the child.
+
+There is no limit to the number of nested components that we can have.
 
 [/slide]
 
@@ -22,7 +26,9 @@ This is an example of how we can use nested components to pass data from the par
 
 The "BookList" component is the parent, and the "Book" component is the child.
 
-We **create** our properties in the parent. They should start with **lowercase** letter and consist of a key value pair like so: `title="IT"`.
+We **create** our properties in the parent. 
+
+They should start with **lowercase** letter and consist of a key-value pair like so: `title="IT"`.
 
 Use the following syntax: 
 
@@ -41,9 +47,9 @@ const BookList = () => {
 
 The `Book()` component receives **props** as an argument.
 
-To display the values inside a div for example, we need to wrap our props in curly braces like so: `{props.title}`.
+To display the values inside a div, for example, we need to wrap our props in curly braces like so: `{props.title}`.
 
-In React this is used to provide dynamic binding for our components.
+In React this is used to provide a dynamic binding for our components.
 
 ```js
 const Book = (props) => {
@@ -67,7 +73,7 @@ When composing a class component we receive the **props** inside our **construct
 
 As we said earlier we need to implement the `render()` method as it is required.
 
-Inside this method we can use the keyword **this** just like in regular JavaScript to point to the current object.
+Inside this method, we can use the keyword **this** just like in regular JavaScript to point to the current object.
 
 Example: `<div>{this.props.title}</div>`
 

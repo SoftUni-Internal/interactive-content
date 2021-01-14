@@ -12,7 +12,7 @@ React events are named using camelCase, rather than lowercase.
 
 With JSX we pass a function as an event handler, rather than a string.
 
-**Important: Do not pass a function call but rther a reference to the function.**
+**Important: Do not pass a function call but rather a reference to the function.**
 
 [/slide]
 
@@ -40,13 +40,13 @@ There are two ways in which we can pass arguments to event handlers.
 
 One is using **arrow functions** and the other is using the `bind()` method.
 
-As you have probably seen, when we create event handler method, we always need to add **this** to the constructor, to bind **this**.
+As you have probably seen, when we create an event handler method, we always need to add `this` to the constructor, to bind **this**.
 
-There is no need to create constructor method only for binding our methods. 
+There is no need to create a constructor method only for binding our methods. 
 
 There should be another solution, and that is using arrow functions.
 
-We have created new anonymous function, which automatically binds **this**, that is why we do not need to use the `.bind()` method.
+We have created a new anonymous function, which automatically binds **this**, that is why we do not need to use the `.bind()` method.
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>
@@ -70,7 +70,7 @@ We need to bind **this** value from the function to our class as we know each fu
 
 # Handling Events 4
 
-In this example we define a function called `clickHandler`.
+In this example, we define a function called `clickHandler`.
 
 It sets the value of the variable "currentClicks" to `this.state.clicks`.
 
@@ -136,7 +136,7 @@ function handleChange(e) {
 }
 ```
 
-If we need to access event object’s properties after the event handler has run, we need to call the `e.persist()` method:
+If we need to access the event object's properties after the event handler has run, we need to call the `e.persist()` method:
 
 ```js
 function handleChange(e) {

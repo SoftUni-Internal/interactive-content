@@ -18,9 +18,9 @@ These are **Functional** components and **Classes** components.
 
 # Functional Component
 
-A Functional component is a JavaScript function which, accepts single argument called **props** and returns a React element.
+A Functional component is a JavaScript function which, accepts a single argument called **props** and returns a React element.
 
-Props stands for **properties** and is a plain JavaScript object.
+Props stand for **properties** and is a plain JavaScript object.
 
 Here is a simple example of a React function that accepts **props** and returns a div element.
 
@@ -62,7 +62,7 @@ class Person extends React.Component {
 
 # Component Syntax
 
-Components names always start with PascalCase. 
+Component's names always start with PascalCase. 
 
 Tags must be closed otherwise our code will not compile.
 
