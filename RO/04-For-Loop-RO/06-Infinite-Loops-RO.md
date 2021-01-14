@@ -6,21 +6,21 @@
 [stream language="RO" videoId="487119696/795eeac3a1"  /]
 [/video-vimeo]
 
-Infinite loops can **repeat a block of code an unlimited number of times.** 
+Buclele infinite pot **repeta un bloc de cod de un număr nelimitat.**
 
-Usage in Programming:
+Utilizare în programare:
 
-* They are widely used in game development for drawing the game environment.
+* Sunt utilizate pe scară largă în dezvoltarea jocului pentru a desena mediul jocului.
 
-* For drawing animations. 
+* Pentru desenarea animațiilor.
 
-* In web servers, as they run permanently.
+* Pe serverele web, deoarece acestea rulează permanent.
 
 ```js
 for ( ; ; ) {
   console.log("Hello World");
 }
-// You can skip the initialization, condition and the increment
+// Puteți sări peste inițializare, condiție și increment
 ```
 [/slide]
 
@@ -43,11 +43,11 @@ function sumNumbers (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a function to process numbers from the input parameters and print their sum until 0 is reached.
 
+Scrieți o funcție pentru a procesa numerele din parametrii de intrare și imprimați suma lor până când se ajunge la 0.
 
-# Example
-| **Input** | **Output** |
+# Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |`['5', '3', '2', '0']`| Sum = 5 |
 ||Sum = 8 |
@@ -130,10 +130,11 @@ function sumNumbers (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a function to process numbers from the input parameters and print their sum until 0 is reached.
 
-# Example
-| **Input** | **Output** |
+Scrieți o funcție pentru a procesa numerele din parametrii de intrare și imprimați suma lor până când se ajunge la 0.
+
+# Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |`['5', '3', '2', '0']`| Sum = 5 |
 ||Sum = 8 |

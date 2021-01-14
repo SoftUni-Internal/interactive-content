@@ -1,8 +1,8 @@
-# Homework
+# Temă de acasă
 
 [slide]
 # Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function calculateMonthSalary (input) {
@@ -12,15 +12,15 @@ function calculateMonthSalary (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Receives the number of workdays for the current month and the salary per day - integers 
-* Calculates the monthly salary of an employee 
-* Prints the result on the console 
+* Primește numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
+* Calculează salariul lunar al unui angajat
+* Tipărește rezultatul pe consolă
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| 300 |
 |100| |
@@ -81,7 +81,7 @@ Write a program, which:
 
 [slide]
 # Problem: Number Sequence
-[code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Sequence" taskId="pb-js-04-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numberSequence(input) {
@@ -90,15 +90,15 @@ function numberSequence(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads **n** representing the count of numbers to read next
-* Finds the **max** and the **min numbers**
-* Prints them on the console
+* Citește **n** reprezentând numărul de numere de citit în continuare
+* Găsește numerele **max** și **min**
+* Le imprimă pe consolă
 
-# Example
-| **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |5| Max number: 304 |
 |10|Min number: 0|
@@ -159,7 +159,7 @@ Min number: -2
 [/video-vimeo]
 
 
-[code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Power Of Numbers" taskId="pb-js-04-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function powerOfNumbers(input) {
@@ -168,17 +168,17 @@ function powerOfNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
+# Descriere
+Scrieți un program care:
 
-* Reads `p` – the power and n – the number 
+* Citește `p` - puterea și n - numărul
 
-* Prints the result of `n` to the power of `p` 
+* Tipărește rezultatul lui `n` la puterea lui `p`
 
-* Do not use `Math.Pow()`- not the goal of our exercise 
+* Nu utilizați `Math.Pow()` - nu reprezintă obiectivul exercițiului nostru
 
-# Example
-| **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |5| 32 |
 |2||
@@ -202,7 +202,7 @@ Write a program, which:
 
 [slide]
 # Problem: Equal Pairs
-[code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Equal Pairs" taskId="pb-js-04-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function equalPairs(input) {
@@ -211,16 +211,16 @@ function equalPairs(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads number **n** and **n pairs** of numbers
-* Prints `Yes, value={sum}`, if the **sum of all** pairs is the **same**
-* **Otherwise**, prints `No, maxdiff={diff}`
-* diff is the **max difference** in the sum between two pairs
+* Citește numărul **n** și **n perechi** de numere
+* Tipărește `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
+* **În caz contrar**, imprimă `No, maxdiff={diff}`
+* diff este **diferența maximă** în suma dintre două perechi
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| Yes, value=\-1 |
 |\-1| |
@@ -338,7 +338,7 @@ Yes, value=10
 
 [slide]
 # Problem: Zig Zag Sum
-[code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Zig Zag Sum" taskId="pb-js-04-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function zigZagSum(input) {
@@ -347,17 +347,17 @@ function zigZagSum(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads **n** - number representing amount of input numbers
-* Reads **n numbers** 
-* For every **even** line **adds** the number to the result
-* For every **odd** line **subtracts** the number from the result
-* **Prints** the result
+* Citește **n** - număr reprezentând cantitatea de numere de intrare
+* Citeste **n numere**
+* Pentru fiecare linie  **pară**  **se adaugă** numărul la rezultat
+* Pentru fiecare linie  **impară** linie **se scade** numărul din rezultat
+* **Tipărește** rezultatul
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| 10 |
 |10| |
@@ -396,7 +396,7 @@ Write a program, which:
 
 [slide]
 # Problem: Divide Without Remainder
-[code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Divide Without Remainder" taskId="pb-js-04-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function divideWithoutRemainder(input) {
@@ -405,17 +405,17 @@ function divideWithoutRemainder(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
+# Descriere
+Scrieți un program care:
 
-* Reads `n` and an **n amount** of numbers after it 
+* Citește `n` și o **cantitate n** de numere după acesta
 
-* Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3 and 4 as a divisors** 
+* Găsește **procentul** din câte dintre ele pot fi împărțite **fără un rest folosind 2, 3 și 4 ca divizori**
 
-* Prints the percentages for **p1, p2 and p3**, **formatted** to the second digit 
+* Tipărește procentele pentru **p1, p2 și p3**, **formatate** la a doua cifră după virgulă
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |3| 33.33\% |
 |3| 100.00\%|
@@ -445,7 +445,7 @@ Write a program, which:
 
 [slide]
 # Problem: Vowel Sum
-[code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Vowel Sum" taskId="pb-js-04-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function vowelSum(input) {
@@ -454,22 +454,22 @@ function vowelSum(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
+# Descriere
+Scrieți un program care:
 
-* Reads `n` - the count of characters which the program is going to receive 
+* Citește `n` - numărul de caractere pe care programul urmează să le primească
 
-* If character is a vowel, it adds the characters `value` to the result
+* Dacă caracterul este o vocală, se adaugă caracterele `valoare` la rezultat
 
  | character      | a | e   |i   |o  |u  |
 | :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
 | value  | 1  | 2 |3 |4 |5 |
 
 
-* Prints the result
+* Tipărește rezultatul
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| 1 |
 |a| |
@@ -534,7 +534,7 @@ s
 
 [slide]
 # Problem: Rollercoaster
-[code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Rollercoaster" taskId="pb-js-04-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rollercoaster(input) {
@@ -543,23 +543,23 @@ function rollercoaster(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
+# Descriere
+Scrieți un program care:
 
-* Reads the number of **places** on a rollercoaster 
+* Citește numărul de **locuri** pe un rollercoaster
 
-* The **minimum passenger age** 
+* **Vârsta minimă a pasagerilor**
 
-* After that receives the **number of people** on the queue for this ride 
+* După aceea primește **numărul de persoane** pe coadă pentru această cursă
 
-* Followed by the **age** for each person queuing 
+* Urmat de **vârsta** pentru fiecare persoană de pe coadă
 
-* If all places can be filled, the program prints out: `The rollercoaster departures` 
+* Dacă toate locurile pot fi ocupate, programul tipărește: `The rollercoaster departures` 
 
-* In any other case, prints out:  `Waiting...`
+* În orice alt caz, tipărește: `Waiting...`
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| The rollercoaster departures |
 |10| |
@@ -645,7 +645,7 @@ The rollercoaster departures
 [stream language="RO" videoId="487119938/9a4818ebf0"  /]
 [/video-vimeo]
 
-[code-task title="Multiply" taskId="pb-js-for-loop-Multiply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Multiply" taskId="pb-js-04-p-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function multiply(input) {
@@ -654,17 +654,17 @@ function multiply(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
+# Descriere
+Scrieți un program care:
 
-* Reads `n` – an int 
+* Citește `n` - un int
 
-* Holds a for-loop which prints: `{n} x {i} = {result}` 
+* Deține o buclă for care imprimă: `{n} x {i} = {result}` 
 
-* Where i are the numbers from **1 to 10 (inclusive)** 
+* Unde sunt numerele de la **1 la 10 (inclusiv)**
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| 2 x 1 = 2 |
 ||2 x 2 = 4 |
@@ -739,7 +739,7 @@ function solve(num1, num2) {
 [task-description]
 # Description
 
-`Напишете функция, която получава две числа и принтира  на конзолата, всички числа в диапазона, които се делят на 9 без остатък, както и тяхната сума.  На първия ред отпечатайте сумата на числата, а на следващия отговарящите на условието числа с интервал между тях.`
+`Scrieți o funcție care obține două numere și le imprimă pe consolă, toate numerele din interval care sunt divizibile cu 9 fără rest și suma lor. Pe prima linie tipăriți suma numerelor, iar pe următoarea linie numerele corespunzătoare cu un spațiu între ele.'
 
 # Example
 | **Input** | **Output** |
@@ -852,7 +852,7 @@ function solve(input) {
 [task-description]
 # Description
 
-`Напишете функция, която получава две числа и принтира  на конзолата, всички числа в диапазона, които се делят на 9 без остатък, както и тяхната сума.  На първия ред отпечатайте сумата на числата, а на следващия отговарящите на условието числа с интервал между тях.`
+``Scrieți o funcție care obține două numere și le imprimă pe consolă, toate numerele din intervalul care sunt divizibile cu 9 fără rest și suma lor. Pe prima linie tipăriți suma numerelor, iar pe următoarea linie numerele corespunzătoare cu un spațiu între ele.`
 
 # Example
 | **Input** | **Output** |

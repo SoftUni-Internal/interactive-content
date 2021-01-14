@@ -1,16 +1,17 @@
 [slide]
-# Iterating over Characters
+# Iterația peste caractere
 
 [vimeo-video]
 [stream language="EN" videoId="487119574/ea95aca57d" default /]
 [stream language="RO" videoId="487119574/ea95aca57d"  /]
 [/video-vimeo]
 
-It is good to know that **for loops** do not only work with numbers. 
+Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
-We can also use **for loops** to iterate over **characters**.
+De asemenea, putem folosi **buclele for** pentru a itera peste**caractere**.
 
-Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
+Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
+
 ```js live
  function latinLetters(startChar, endChar) {
   let startValue = startChar.charCodeAt(0);
@@ -25,28 +26,31 @@ Here is an example of how a loop can pass sequentially through some **letters** 
 
 # ASCII Table
 
-**ASCII** stands for American Standard Code for Information Interchange. 
- 
-Computers can only understand numbers, so an **ASCII** code is the numerical representation of a character such as `a` or `@` or an action of some sort. 
+**ASCII** înseamnă American Standard Code for Information Interchange.
 
-This is an example part of the table:
+Calculatoarele pot înțelege numai numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum `a` sau `@` sau o acțiune de un fel.
+
+Acesta este un exemplu de parte a tabelului:
+
 [image assetsSrc="04-for-loop-ascii.png" /]
 
-And here you can check the whole [ASCII Table](http://www.asciitable.com)
+Și aici puteți verifica întregul [Tabel ASCII] (http://www.asciitable.com)
 
-The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
+Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
 
-For example, the decimal value of the character **'a'** is **97** and the one corresponding to `@` is `64`.
+De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare lui `@` este `64`.
 
-# Character Conversions
-Convert an ASCII / Unicode number into a character:
+
+# Conversii de caractere
+
+Convertiți un număr ASCII / Unicode într-un caracter:
 
 ```js live
 let letter = String.fromCharCode(65);
 console.log(letter);
 ```
 
-Convert a character to its ASCII / Unicode code:
+Convertiți un caracter în codul ASCII / Unicode:
 
 ```js live
 let letter = 'A';
@@ -74,10 +78,11 @@ function latinLetters(input) {
 ```
 [/code-editor]
 [task-description]
-Write a program, which:
+Scrieți un program care:
 
-* Reads 2 letters
-* Prints all letters in the given range inclusive
+* Citește 2 litere
+* Imprimă toate literele din intervalul dat inclusiv
+
 [/task-description]
 [code-io /]
 [/code-task]
@@ -111,10 +116,11 @@ function latinLetters(input) {
 ```
 [/code-editor]
 [task-description]
-Write a program, which:
+Scrieți un program care:
 
-* Reads 2 letters
-* Prints all letters in the given range inclusive
+* Citește 2 litere
+* Imprimă toate literele din intervalul dat inclusiv
+
 [/task-description]
 [code-io /]
 [/code-task]

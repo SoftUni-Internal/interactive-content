@@ -1,22 +1,22 @@
-# For Loop
+# Bucla For
 
 [slide]
-# Real Life Example: Moving Dishes
+
+# Exemplu din viața reală: Mutatul vaselor
 
 [vimeo-video]
 [stream language="EN" videoId="487119221/9c519c14e8" default /]
 [stream language="RO" videoId="487119221/9c519c14e8"  /]
 [/video-vimeo]
 
-Let's say you want to fill the dishwasher with plates.
+Să spunem că vreți să umpleți mașina de spălat vase cu farfurii.
 
-To do that you'll take some of the plates from the pile and you'll put them in.
+Pentru a face asta, trebuie să luați niște farfurii și să le puneți înăuntru.
 
-Then you'll take some more plates and repeat the action until all the plates in the dishwasher.
+Apoi veți lua mai multe farfurii și veți repeta acțiunea.
 
-This is a loop, you repeat an action until you reach a certain condition.
-
-When you reach that condition, you stop the loop.
+Asta este o buclă, repetați o acțiune până ce îndepliniți o condiție.
+Când îndepliniți acea condiție, bucla se oprește.
 
 [/slide]
 
@@ -28,29 +28,29 @@ When you reach that condition, you stop the loop.
 [stream language="RO" videoId="487119239/423a548f1b"  /]
 [/video-vimeo]
 
-In programming on many occasions, we need to execute a block of commands multiple times. 
+În programare, de multe ori trebuie executat un bloc de comenzi, în mod repetat. 
 
-To do that, the so-called loops are used. 
+Pentru a face asta, sunt folosite așa-zisele bucle. 
 
-Let us see an example of a for loop that passes sequentially through the numbers from 1 to 10 and prints them to the console. 
+Să vedem un exemplu de buclă care trece separat prin numerele de la 1 la 10 si le afișează. 
+
 ```js live
 for (let i = 1; i <= 10; i += 1) {
   console.log(i);
 }
 ```
 
-The block of code can be explained with this use case diagram:
+Acest bloc de cod poate fi explicat cu ajutorul acestei diagrame:
 [image assetsSrc="for-loop-use-case.png" /]
 
-The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands. 
+Bucla începe cu operatorul `for` și trece prin toate valorile cu ajutorul unei variabile, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi. 
 
-## Syntax: For-Loop 
+## Sintaxa: Bucla For 
 
-Upon declaring the loop, you can specify a **start value** and an **end value.** 
+După ce se declară bucla, se poate specifica o  **valoare inițială** și o **valoare finală.** 
 
-The body of the loop is usually enclosed in curly brackets `{ }` and represents a block of one or multiple commands. 
-
-The code block below shows the structure of a `for` loop: 
+Cuprinsul buclei este cuprins între acolade `{ }` și reprezintă un bloc de una sau mai multe comenzi. 
+Blocul de cod de mai jos ne arată structura buclei `for`: 
 
 ``` js
 for (initialization; condition; update) {
@@ -58,19 +58,20 @@ for (initialization; condition; update) {
 }
 ```
 
-It consists of:
-* an **initialization part** for the counter (in the pattern `let i = 0`)
-* a **boolean** condition (`i < 10`)
-* an expression for **updating** the counter (``i += 1``)
-* body of the loop.
+Acesta constă în:
+* o **parte de inițialzare** pentru numărător (după modelul `let i = 0`)
+* un condiție **booleană** (`i < 10`)
+* o expresie pentru  **a actualiza** numărătorul (``i += 1``)
+* corpul buclei.
 
-In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10). 
+În cele mai multe cazuri, bucla  `for` este cuprinsă între `1` și `n` ori (de exemplu de la 1 la 10). 
 
-The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action. 
+Scopul buclei este să treacă secvențial prin numerele 1, 2, 3, …, n și pentru fiecare să se facă o acțiune. 
 
-In the first example, the `i` variable accepts values from 1 to 10 and the **current** value is printed in the body of the loop. 
+În primul exemplu, variabila `i` acceptă valori de la 1 la 10 și valoarea **curentă** este prelucrată în interiorul buclei. 
 
-The loop repeats 10 times and each of these repetitions is called an **iteration**.
+Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
+
 [/slide]
 
 [slide]
@@ -90,15 +91,16 @@ function printSum (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-* Reads number n from the console
-* **Prints** all numbers from **1** to **n**
-* **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end
+# Descriere
+Scrieți un program care:
 
-# Example
+* Citește numarul n în consolă
+* **Afișează** toate numerele de la **1** la **n**
+* **Adună** toate numerele de la **1** la **n**
+* **Afișează** suma în consolă la sfârșit
+
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |5| 1 |
@@ -167,15 +169,16 @@ function printSum (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-* Reads number n from the console
-* **Prints** all numbers from **1** to **n**
-* **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end
+# Descriere
+Scrie un program care:
 
-# Example
+* citește numărul n în consolă
+* **Afișează** toate numerele de la **1** la **n**
+* **Adună** toate numerele de la **1** la **n**
+* **Afișează** suma la final
+
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |5| 1 |
@@ -236,16 +239,18 @@ function greatestNumber(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
 
-* Reads `n` - a number representing the amount of following input numbers 
+# Descriere
+Scrieți un program care: 
 
-* Reads n numbers 
+* Citește `n` - un număr care reprezintă câte elemente sunt introduse 
 
-* Finds and prints the greatest number 
+* Citește n numere 
 
-# Example
+* Găsește și afișează cel mai mare număr 
+
+# Exemplu
+
 | **Input** | **Output** |
 | --- | --- |
 |`['3', '40', '90', '50']`| 90 |
@@ -328,21 +333,21 @@ function greatestNumber(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which: 
 
-* Reads `n` - a number representing the amount of following input numbers 
+# Descriere
+Scrie un program care: 
 
-* Reads n numbers 
+* Citește `n` - un număr care reprezintă câte elemente sunt introduse 
 
-* Finds and prints the greatest number 
+* Citește n numere 
 
-# Example
+* Găsește și afișează cel mai mare număr 
+
+# Exemplu
+
 | **Input** | **Output** |
 | --- | --- |
 |`['3', '40', '90', '50']`| 90 |
-
-
 [/task-description]
 [tests]
 [test]

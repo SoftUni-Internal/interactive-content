@@ -1,18 +1,17 @@
 [slide]
-# For Loop with A step
+# Bucla For cu un pas
 
 [vimeo-video]
 [stream language="EN" videoId="487119404/67365f350f" default /]
 [stream language="RO" videoId="487119404/67365f350f"  /]
 [/video-vimeo]
 
-In this section we will get more detail on a particular and very important part of the `for` loop, **namely the step.** 
+În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei `for`, ** și anume pasul. **
+**Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale. 
 
-**The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable. 
+Aceasta este declarată ultimă în corpul buclei for
 
-It is declared last in the skeleton of the for loop. 
-
-Very often, it has a size of 1, in this case, instead of writing `i += 1` or `i -= 1`, we can use the `i++` or `i--` operators.
+Foarte des, pasul are dimensiunea 1 și în acest caz, în loc sî scriem `i += 1` sau `i -= 1`, putem folosi operatorii `i++` sau `i--`.
 
 ```js live
 for (let i = 0; i < 10; i++) {
@@ -20,9 +19,9 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
+Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **incrementăm**, folosim `i +=` + operaorul pentru dimensiunea pasului.
 
- With step of 2, the loop would look like this:
+ Cu un pas de 2, bucla ar arăta astfel:
 
 ```js live
 for (let i = 0; i < 10; i += 2) {
@@ -30,9 +29,9 @@ for (let i = 0; i < 10; i += 2) {
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` + step size. 
+S-ar putea să dorim să avem un ** pas descrescător ** - `i - =` + dimensiunea pasului.
 
-In this case we should pay attention to the end condition to **avoid** an **infinite loop**.
+În acest caz, ar trebui să fim atenți la condiția finală pentru a evita ** o ** buclă infinită **.
 
 ```js live
 for (let i = 10; i >= 1; i--) {
@@ -62,10 +61,10 @@ function numbersEndingWith7 (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Scrieți un program care:
 
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+* Citește un număr **n**
+* Imprimă toate numerele de la  **7 până la n**, **care se termină cu 7**
 
 # Example
 | **Input** | **Output** |
@@ -115,10 +114,10 @@ function numbersEndingWith7 (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Scrieți un program care:
 
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+* Citește un număr **n**
+* Imprimă toate numerele de la  **7 până la n**, **care se termină cu 7**
 
 # Example
 |**Input** | **Output** |
@@ -164,11 +163,11 @@ function examCountdown (days) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Scrieți un program care:
 
-* Reads an integer - count of **days before an exam**
-* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
-* At the end prints: `The exam has come.`
+* Citește un număr întreg - numărul de **zile înainte de examen**
+* După fiecare zi trecută, imprimă: `{numberOfDaysLeft} days before the exam`
+* La final imprimă: `The exam has come.`
 
 # Example
 | **Input** | **Output** |
@@ -222,11 +221,9 @@ function examCountdown (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
-
-* Reads an integer - count of **days before an exam**
-* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
-* At the end prints: `The exam has come.`
+* Citește un număr întreg - numărul de **zile înainte de examen**
+* După fiecare zi trecută, imprimă: `{numberOfDaysLeft} days before the exam`
+* La final imprimă: `The exam has come.`
 
 # Example
 | **Input** | **Output** |
