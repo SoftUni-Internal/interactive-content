@@ -1,14 +1,14 @@
 [slide]
-# Nested while Loops
+# Bucle imbricate
 
 [vimeo-video]
 [stream language="EN" videoId="488090609/3d873b4b3b" default /]
 [stream language="RO" videoId="488090609/3d873b4b3b"  /]
 [/video-vimeo]
 
-The use of nested `while` loops is very similar to the one of the `for`.
+Folosirea buclelor imbricate `while` este foarte asemănătiare cu folosirea lui `for`.
 
-Here is the syntax in JS:
+Iată cum arată sintaxa in JS:
 ```js
 while (condition) {
   // Outer Loop 
@@ -20,7 +20,7 @@ while (condition) {
 }
 ```
 
-# Example
+# Exemplu
 
 [vimeo-video]
 [stream language="EN" videoId="488090625/81b4dc254e" default /]
@@ -43,7 +43,7 @@ while (row <= 2) {
 [/slide]
 
 [slide]
-# Problem: Triangle of Stars with While
+# Problem: Triangle With Stars Stelelor With While
 [code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
@@ -53,12 +53,12 @@ function triangleOfStars(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+* Citește **înălțimea** unui triunghi din consolă 
+* Imprimă un **un triunghi de stele**
+# Exemplu
 ## Input
 - 5
 ## Output
@@ -116,12 +116,12 @@ function triangleOfStars(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+* Citește **înălțimea** unui triunghi din consolă 
+* Imprimă un **un triunghi de stele**
+# Exemplu
 ## Input
 - 5
 ## Output
@@ -167,14 +167,14 @@ function sumOfDigits(inputLines) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Continuously read numbers until `End` is entered:
+# Descriere
+Citiți continuu numerele, până când este introdus `End`:
 
-* Print the sum of digits for each number
+* Imprimați suma cifrelor pentru fiecare număr 
 
-* Finally, print `Goodbye`
+* La final, imprimați `Goodbye`
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |`['157', 99', 5', '438', 'End']`|Sum of digits = 13 |
@@ -275,7 +275,6 @@ Goodbye
 
 [slide]
 # Solution: Sum of Digits Calculator
-
 [vimeo-video]
 [stream language="EN" videoId="488090853/57ce6f8869" default /]
 [stream language="RO" videoId="488090853/57ce6f8869"  /]
@@ -299,12 +298,12 @@ function sumOfDigits(inputLines) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Continuously read numbers until `End` is entered:
+# Enunț
+Citiți continuu numere, până când este introdus `End`:
 
-* Print the sum of digits for each number
+* Imprimă suma cifrelor pentru fiecare număr
 
-* Finally, print `Goodbye`
+* În final, imprimă `Goodbye`
 
 # Example
 | **Input** | **Output** |

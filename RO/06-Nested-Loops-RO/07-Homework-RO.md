@@ -1,4 +1,4 @@
-# Homework
+# Temă pentru acasă
 
 [slide]
 # Problem: Building
@@ -15,7 +15,7 @@
 [stream language="RO" videoId="488090919/8b4c1a9e61"  /]
 [/video-vimeo]
 
-[code-task title="Building" taskId="pb-js-nested-loops-Building" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Building" taskId="pb-js-06-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function building(input) {
@@ -24,17 +24,17 @@ function building(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care: 
 
-Prints information about a building: 
-* The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
-* Apartments are indexed with: `A{buildingNum}{apartmentNum}`
-* Offices: `O{floorNum}{officeNum}`
-* Large apartments: `L{buildingNum}{apartmentNum}`
-* The numbers always start from 0
+Imprimă informațiile despre o construcție: 
+* Construcția poate să aibă: **apartments (odd numbered floors)**, **offices (even numbered floors)** și **(on the last floor) Large Apartments** 
+* Apartamentele sunt indexate cu: `A{buildingNum}{apartmentNum}`
+* Birouri: `O{floorNum}{officeNum}`
+* Apartamente mari: `L{buildingNum}{apartmentNum}`
+* Numerele încep de la 0
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |6| L60 L61 L62 L63|
@@ -189,7 +189,7 @@ A10 A11 A12
 [stream language="RO" videoId="488091095/c49f5f03e5"  /]
 [/video-vimeo]
 
-[code-task title="Passwords" taskId="pb-js-nested-loops-Passwords" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Passwords" taskId="pb-js-06-p-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function passwords(input) {
@@ -198,15 +198,15 @@ function passwords(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
-* Reads an integer - **n**
-* Generates custom passwords, which meet the following conditions:
-* The **first** part is an **even** number and should not be greater than **n**
-* The **second** part is an **odd** number and should not be greater than **n**
-* The **last part** is the **product** of the first two
+# Descriere
+Scrieți un program care:
+* Citește un număr întreg - **n**
+* Generează parole specifice, care îndeplinesc următoarele condiții:
+* **Prima** este un număr **par** care nu trebuie să fie mai mare decât **n**
+* **Cea a două**  este un număr **impar** și nu trebuie să fie mai mare decât **n**
+* **Ultima** parte  este un **produs** al primelor două
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |6| 212 236 2510 414 4312 4520 616 6318 6530 |
@@ -261,7 +261,7 @@ Write a program, which:
 
 [slide]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="pb-js-nested-loops-magic-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Magic Number" taskId="pb-js-06-p-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function magicNumber(input) {
@@ -270,12 +270,12 @@ function magicNumber(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
-* Reads a **number - n**, from the console
-* Finds all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to `n` 
+# Descriere
+Scrieți un program care:
+* Citește un **număr - n**, de pe consolă
+* Identifică toate **numerele cu 3 cifre** pentru care este valabil ca produsul inmulțirii cifrelor care formează numărul să fie egal cu `n` 
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |3| 113 |
@@ -305,7 +305,7 @@ Write a program, which:
 
 [slide]
 # Problem: Travelling
-[code-task title="Travelling" taskId="pb-js-nested-loops-travelling" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Travelling" taskId="pb-js-06-p-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function travelling(input) {
@@ -314,14 +314,14 @@ function travelling(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads a **destination** and a **required budget** to visit it 
-* Continues taking numbers - amounts of money, until it is **enough** to take the trip 
-* If we receive the command `End` the program ends
+* Citește o **destinație** și un **buget necesar** pentru o vizită 
+* Continuă să adauge numere-sume de bani, până când este **suficient** pentru a face călătoria
+* Dacă primește comanda `End` programul se termină
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |Philippines| Going to Philippines! |
@@ -569,7 +569,7 @@ Going to Albania!
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Prime Numbers" taskId="pb-js-06-p-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function primeNumbers(input) {
@@ -578,13 +578,13 @@ function primeNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads **two numbers** from the console
-* Prints the **prime** number in that **range**
+* Citește **două numere** de pe  consolă
+* Imprimă numurul **prim** din acest **interval**
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |1| 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
@@ -664,7 +664,7 @@ Write a program, which:
 
 [slide]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="pb-js-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Unique PIN Codes" taskId="pb-js-06-p-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function uniquePinCodes(input) {
@@ -673,18 +673,18 @@ function uniquePinCodes(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads **3 digits** - n1, n2 and n3
-* Generates **unique 3 digit PIN Codes**, which meet the following **conditions**:
-* The **first** digit should not be greater than n1
-* The **second** digit should not be greater than n2
-* The **third** digit should not be greater than n3
-* The **first** and the **third** digit must be even
-* The second digit must be a **prime number** in the range \[2…7\]
+* Citește **3 cifre** - n1, n2 și n3
+* Generează **Coduri PIN unice cu 3 cifre** care îndeplinesc următoarele **condiții**:
+* **Prima** cifră  nu trebuie să fie mai mare decât n1
+* **A doua** cifră nu trebuie să fie mai mare decât n2
+* **A treia** cifră  nu trebuie să fie mai mare decât n3
+* Prima cifra și cea a treia cifră trebuie să fie impare
+* Cea a doua cifră trebuie să fie **primul număr** din interval \[2…7\]
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |3| 222 |
@@ -729,7 +729,7 @@ Write a program, which:
 
 [slide]
 # Problem: Letter Combinations
-[code-task title="Letter Combinations" taskId="pb-js-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Letter Combinations" taskId="pb-js-06-p-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function letterCombinations(input) {
@@ -738,16 +738,16 @@ function letterCombinations(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Prints **letter combinations** and the **number** of generated combinations
+* Imprimă **combinații de litere** și **numere** ale combinațiilor generate 
 
-* You will receive the **range of letters** on the first and second line
+* Veți primi o **serie de litere** pe prima și a doua linie
 
-* On the third line, you will receive a **letter**, which you must **ignore** - do not print combinations with it
+* Pe a treia linie, va primi o **literă**, pe care trebuie să o **ignoreze** - să nu imprimă combinații din care aceasta să facă parte
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |a| aaa aac aca acc caa cac cca ccc 8 |
@@ -775,7 +775,7 @@ aaa aac aca acc caa cac cca ccc 8
 
 [slide]
 # Problem: Happy Numbers
-[code-task title="Happy Numbers" taskId="pb-js-nested-loops-Happy-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Happy Numbers" taskId="pb-js-06-p-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
@@ -784,16 +784,16 @@ function happyNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Decriere
+Scrieți un program care:
 
-Generates all **4 digit numbers** with digits less than n and prints them out if: 
+Generează toate **numerele cu 4 cifre** cu cifre mai mici decât n și le imprimă, dacă: 
 
-* When you split the number in two pairs and add the first digit to the second one of each pair- the result equals `n` 
+* Atunci când impărțim numărul în două perechi și adăugăm prima cifră celei de-a doua din fiecare pereche, rezultatul este egal cu `n` 
 
-* When you add the first two, the result is divisible by n without a remainde
+* Atunci când adunăm primele două cifre, rezultatul este divizibil la n, fără rest
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |3| 1212 1221 2112 2121 |
@@ -817,7 +817,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/slide]
 
 [slide]
-# Homework Results
+# Rezultatele Temei 
 [tasks-results/]
 
 [/slide]

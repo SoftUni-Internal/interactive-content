@@ -1,14 +1,16 @@
 [slide]
-# Complex Loops
+# Bucle complexe
 
 [vimeo-video]
 [stream language="EN" videoId="488089818/dbec289e55" default /]
 [stream language="RO" videoId="488089818/dbec289e55"  /]
 [/video-vimeo]
 
-# For-loops may have different steps
 
-* Reverse for loop: 
+# Buclele  for pot avea pași diferiți
+
+* Bucla for inversată:
+
 
 ``` js live
 for (let i = 5; i >= 0; i--){
@@ -16,7 +18,8 @@ for (let i = 5; i >= 0; i--){
 }
 ```
 
-* For loop with a step of 2
+* Bucla for cu un pas cu 2
+
 
 ``` js live
 for (let j = 1; j <= 10; j += 2) {
@@ -24,7 +27,7 @@ for (let j = 1; j <= 10; j += 2) {
 }
 ```
 
-* For loop which multiplies itself by 2 with each step
+* Bucla for care se înmulțește cu 2 la fiecare pas
 
 ``` js live
 for (let k = 1; k <= 6; k *= 2) {
@@ -32,7 +35,7 @@ for (let k = 1; k <= 6; k *= 2) {
 }
 ```
 
-* For loop which uses a step which divides the variable by 2
+* Bucla for care folosește un pas care împarte variabila la 2
 
 ``` js live
 for (let d = 40; d > 0; d /= 2) {
@@ -53,16 +56,16 @@ function numbersFromNto1(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the numbers from N down to 1.
 
-The function receives a number `n` and prints the numbers from `n` down to 1. 
+# Descriere
+Scrieți o funcție pentru a imprima numerele de la N până la 1.
 
-# Example
+Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
+
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |`5`| 5, 4, 3, 2, 1 |
-
 
 [/task-description]
 [tests]
@@ -137,12 +140,14 @@ function numbersFromNto1(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the numbers from N down to 1.
 
-The function receives a number `n` and prints the numbers from `n` down to 1. 
+# Descriere
+Scrieți o funcție pentru a imprima numerele de la N până la 1.
 
-# Example
+Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
+
+# Exemplu
+
 | **Input** | **Output** |
 | --- | --- |
 |`5`| 5, 4, 3, 2, 1 |
@@ -207,15 +212,15 @@ function numbersFrom1ton(n) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the numbers from 1 to `n` with step 3:
 
-* Receives a number `n`
+# Descriere
+Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 
-* Prints the numbers from 1 to `n` with step 3
+*Primește un număr `n`
 
+*Tipărește numerele de la 1 la `n` cu pasul 3
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |`7`| 1, 4, 7 |
@@ -292,15 +297,15 @@ function numbersFrom1ton(n) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the numbers from 1 to `n` with step 3:
 
-* Receives a number `n`
+# Descriere
+Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 
-* Prints the numbers from 1 to `n` with step 3
+*Primește un număr `n`
 
+*Tipărește numerele de la 1 la `n` cu pasul 3
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |`7`| 1, 4, 7 |
@@ -365,14 +370,15 @@ function evenPowersOfTwo(n) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the even powers of 2:
 
-* Receives a number `n`
+# Descriere
+Scrieți o funcție pentru a imprima puterile pare cu 2:
 
-* Prints the even powers of 2 up to `2n`:
+* Primește un număr `n`
 
-# Example
+* Tipărește puterile uniforme de la 2 până la `2n`:
+
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |`5`| 1, 4, 16 |
@@ -451,14 +457,16 @@ function evenPowersOfTwo(n) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function to print the even powers of 2:
 
-* Receives a number `n`
+# Descriere
+Scrieți o funcție pentru a imprima puterile pare cu 2:
 
-* Prints the even powers of 2 up to `2n`:
+* Primește un număr `n`
 
-# Example
+* Tipărește puterile uniforme de la 2 până la `2n`:
+
+# Exemplu
+
 | **Input** | **Output** |
 | --- | --- |
 |`5`| 1, 4, 16 |

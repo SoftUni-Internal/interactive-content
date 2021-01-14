@@ -1,19 +1,23 @@
 [slide]
-# Nested for Loops
+
+# Bucle for imbricate
+
 
 [vimeo-video]
 [stream language="EN" videoId="488090349/1e2b80201d" default /]
 [stream language="RO" videoId="488090349/1e2b80201d"  /]
 [/video-vimeo]
 
-Nested for-loops are statements that consist of several for loops located inside each other 
 
-**Nested for loops** are used:
+Buclele imbricate sunt instrucțiuni care constă în mai multe bucle for situate una în cealaltă
 
-* To execute an **action**, which **executes** multiple **actions**
-* To make more **complex** calculations and variations
+Buclele for sunt folosite**:
 
-The syntax for a **nested for loop in JS** is as follows:
+* Pentru a executa o **acțiune**, care **execută** mai multe **acțiuni**
+* Pentru a face calcule și variante mai **complexe**
+
+Sintaxa buclei for **imbricate în JS** este după cum urmează:
+
 ```js
 for (variable initialization; condition; increment) {
   // Outer Loop 
@@ -25,7 +29,9 @@ for (variable initialization; condition; increment) {
 }
 ```
 
-Here is an example of 3 `for` loops nested in one another: 
+Iată un exemplu de 3 bucle  `for` imbricate una în alta: 
+
+
 ```js live
 let n = 5;
 for (let i = 1; i <= n; i += 3) {
@@ -39,14 +45,15 @@ for (let i = 1; i <= n; i += 3) {
 [/slide]
 
 [slide]
-# Example
+# Exemplu
 
 [vimeo-video]
 [stream language="EN" videoId="488090388/9cb36b2bd2" default /]
 [stream language="RO" videoId="488090388/9cb36b2bd2"  /]
 [/video-vimeo]
 
-Here is an example JavaScript program:
+Iată un exemplu de program JavaScript:
+
 ```js live
 let rows = 3;
 let columns = 2;
@@ -72,12 +79,14 @@ function triangleOfStars(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+# Descriere
+Scrieți un program care:
+
+* Citește **înălțimea** unui triunghi de pe consolă
+* Tipărește un **triunghi de stele**
+# Exemplu
+
 ## Input
 - 5
 ## Output
@@ -133,12 +142,14 @@ function triangleOfStars(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+# Descriere
+Scrieți un program care:
+
+* Citește **înălțimea** unui triunghi de pe consolă
+* Tipărește un **triunghi de stele**
+# Exemplu
+
 ## Input
 - 5
 ## Output
