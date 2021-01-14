@@ -67,18 +67,22 @@ The text between the curly brackets will be **evaluated at render time**, and th
 
 React has a distinctive set of **features** thst make it stand out from other JavaScript libraries:
 
-- **Open Source** \- By being open-source, React enables anyone to **modify** it to their specific needs.
+- **Open Source**: By being open-source, React enables anyone to **modify** it to their specific needs.
 
-- **Declarative** \- At its core, React is a **collection of JavaScript code**, making it declarative as well, which enables benefits like **easier debugging**.
+- **Declarative**: At its core, React is a **collection of JavaScript code**, making it declarative as well, which enables benefits like **easier debugging**.
 
-- **Component\-Based** \- Components in React have their own **state**, keeping the DOM clean.
+- **Component-Based**: Components in React have their own **state**, keeping the DOM clean.
 
-- **Isomorphic** \- By using Node on the back\-end, JavaScript is running on both the client and the server:
-  - Improving the user experience;
+- **Isomorphic**: By using Node on the back\-end, JavaScript is running on both the client and the server:
+
+  - Improving the user experience.
+
   - Makes code **easier to modify** for all developers.
 
-- **Native Support** \- React is supported **natively** on both **desktop** and **mobile** operating systems, enabling you to have only **one codebase** for all platforms:
-  - With the help of **Electron**, you can create smooth desktop apps;
+- **Native Support**: React is supported **natively** on both **desktop** and **mobile** operating systems, enabling you to have only **one codebase** for all platforms:
+
+  - With the help of **Electron**, you can create smooth desktop apps.
+
   - Using **React Native**, you can build user interfaces for both Android and iOS.
 
 
@@ -88,14 +92,14 @@ React has a distinctive set of **features** thst make it stand out from other Ja
 
 # Advantages
 
-- **Easy to learn** - requires you to just be familiar with JavaScript on an intermediate level.
+- **Easy to learn**: requires you to just be familiar with JavaScript on an intermediate level.
 
-- Fast **performance** \- Since anyone can view the source code, React is very robust and far less vulnerable to security breaches.
+- Fast **performance**: Since anyone can view the source code, React is very robust and far less vulnerable to security breaches.
 
-- Uses all **EcmaScript 6** features \- this includes **promises**, **classes** and **modules**.
+- Uses all **EcmaScript 6** features: this includes **promises**, **classes** and **modules**.
 
-- Compatible with other libraries \- The use of open standards enables **better compatibility** with other libraries, while also making **scalability** a breeze.
+- Compatible with other libraries: The use of open standards enables **better compatibility** with other libraries, while also making **scalability** a breeze.
 
-- Great **error reporting** \- If anything goes wrong while running your app, React will inform you both on the **terminal** instance from which you lauched your app, as well as in the **live version in your browser**.
+- Great **error reporting**: If anything goes wrong while running your app, React will inform you both on the **terminal** instance from which you lauched your app, as well as in the **live version in your browser**.
 
 [/slide]
