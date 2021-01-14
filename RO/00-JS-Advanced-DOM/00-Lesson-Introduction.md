@@ -1,8 +1,9 @@
-[slide]
-
 # Lesson Introduction
+[slide]
+# Table of Contents
 
-## Lesson content:
+
+## In this lesson you will learn about:
 
 **1. DOM**
 

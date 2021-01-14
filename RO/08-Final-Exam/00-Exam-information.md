@@ -4,7 +4,6 @@
 
 [exam-information]
 
-
 [/exam-information]
 
 [/slide]
