@@ -4,7 +4,7 @@
 
 ## ORM Frameworks Overview
 
-- In development programmers use **object relational mapping** frameworks.
+- In development programmers use **object-relational mapping** frameworks.
   - Mapping Java classes and data types to **DB tables** and **SQL data types**.
   - Generate SQL calls and **relieves** the developer from **manual handling**.
 
@@ -28,9 +28,9 @@ dbManager.saveToDB(user);
 - You are given a simple application that:
 
   - Establishes connection with the "**soft_uni**" DB.
-  - Executes simple MySQL statement to retrieve the employees names by **given salary criteria**.
+  - Executes simple MySQL statement to retrieve the employees' names by **given salary criteria**.
 
-- Lets analyze the program:
+- Let us analyze the program:
   - Connection to DB is established by asking the user to give credentials:
 
 ```Java
@@ -67,8 +67,8 @@ ResultSet rs = stmt.executeQuery();  // Runs the SQL statement and returns retri
 
 ```Java
 while(rs.next()) {  // Retrieving data
-	System.out.printf("%s  %s",
-	rs.getString("first_name")
+  System.out.printf("%s  %s",
+  rs.getString("first_name")
     rs.getString("last_name"));  // The ResultSet is a set of table rows
 }
 ```
@@ -77,7 +77,7 @@ while(rs.next()) {  // Retrieving data
 
 - We can access databases on a programmer level
   - No manual actions needed
-- In a bigger applications we can:
+- In bigger applications we can:
   - Encapsulate custom SQL logic in methods
   - Achieve database abstraction
 
