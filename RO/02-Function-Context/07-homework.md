@@ -10,30 +10,31 @@ class Company {
 ```
 [/code-editor]
 [task-description]
-## Your Task
+# Your Task
 Write a Company Class, Which Supports the Described Functionality Below.
 
-### Functionality
-#### Constructor():
-Should have this 1 property:
-- *departments* - empty array
+**1. Functionality**
 
-#### AddEmployee({username}, {Salary}, {Position}, {Department}):
+**Constructor():**
+
+Should have this 1 property: `departments`- empty array
+
+AddEmployee\(`{username}`, `{Salary}`, `{Position}`, `{Department}`\):
 This function should add a new employee to the department with the given name.
 
 - If one of the passed parameters is empty string (""), undefined or null,  this function should throw an error with the following message:
 
-**"Invalid input!"**
+`Invalid input!`
 
 - If salary is less than 0, this function should throw an error with the following message:
 
-**"Invalid input!"**
+`Invalid input!`
 
 - If the new employee is hired successfully, you should add him into the departments array and return the following message:
 
-**"New employee is hired. Name: {name}. Position: {position}"**
+`New employee is hired. Name: {name}. Position: {position}`
 
-#### bestDepartment():
+**3. bestDepartment()**:
 This **function** should print the department with the highest average salary and its employees sorted by their salary by descending and by name in the following format:
 
 ```
@@ -45,12 +46,14 @@ Average salary: {best department's average salary}
 . . ."
 ```
 
-## Submission
+**2. Submission**
 Submit only your **Company class**.
 
-## Examples
+**3. Examples**
 
 This is an example how the code is **intended to be used**:
+
+## Sample code usage 
 ```js
 let c = new Company();
 c.addEmployee("Steven", 2000, "engineer", "Construction");
@@ -63,7 +66,7 @@ c.addEmployee("George", 1350, "HR", "Human resources");
 console.log(c.bestDepartment());
 ```
 
-**Corresponding output**
+## Corresponding output
 
 ```
 Best Department is: Construction
@@ -73,9 +76,6 @@ Steven 2000 engineer
 Peter 1500 electrical engineer
 Sam 500 dyer
 ```
-
-
-
 
 [/task-description]
 [code-io /]
@@ -322,38 +322,39 @@ class Hex {
 [/code-editor]
 [task-description]
 
-## Your Task
+**1. Your Task**
 Write a Hex Class, Which Supports the Described Functionality Below.
 
-## Functionality
+**2. Functionality**
 
-### Constructor({value})
+Constructor(`{value}`)
 
 Should have these **1** property:
  - **value** - number
 
-### ValueOf()
+- `ValueOf()`
 This Function Should Return the Value Property of the Hex Class.
 
-### ToString()
-This function will show its hexidecimal value starting with "0x"
+- `ToString()`
+This function will show its hexidecimal value starting with `0x`
 
-### Plus({number})
+- `Plus({number})`
 This function should add a number or Hex object and return a new Hex object.
 
-### Minus({number})
+- `Minus({number})`
 This function should subtract a number or Hex object and return a new Hex object.
 
-### Parse({string})
+- `Parse({string})`
 Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
 
-### Submission
+**3. Submission**
 Submit only your **Hex class**.
 
-### Examples
+**4. Examples**
 This is an example how the code is **intended to be used**:
 
-**Sample exectuion**
+
+## Input
 
 ```js
 let FF = new Hex(255);
@@ -365,8 +366,7 @@ console.log(a.plus(b).toString());
 console.log(a.plus(b).toString()==='0xF');
 ```
 
-**Output**
-
+## Output
 ```
 0xFF
 0xF
@@ -487,8 +487,7 @@ Use the provided resources file complete this problem. [Download from mega.nz.](
 
 [image assetsSrc="function-context-07.png" /]
 
-
-## Your Task
+**1. Your Task**
 
 Write the missing JavaScript code to make the **Table** application work as expected.
 
@@ -506,7 +505,7 @@ If one of the elements is **clicked** and you click **another** the first elemen
 
 [image assetsSrc="function-context-11.png" /]
 
-### Note: You shouldn't change the head of the table, even if it is clicked.
+**Note: You should not change the head of the table, even if it is clicked.**
 
 [/task-description]
 [code-io /]
@@ -770,7 +769,7 @@ yes
 
 [slide]
 # Ex.Problem: Next Article
-[code-task title="Ex.Problem: Next Article" taskId="js-advanced-function-context-nextarticle" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Ex.Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function getArticleGenerator(articles) {
@@ -784,7 +783,7 @@ Write a JS program that sequentially **displays articles** on a web page when th
 
 You will receive an **array of strings** that will initialize the program. 
 
-You need to return a function that keeps the initial array in its closure and every time it’s called, it takes the first element from the array and displays it on the web page, inside a div with ID "**content**". 
+You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID "**content**". 
 
 If there are no more elements left, your function should do nothing.
 
@@ -820,7 +819,7 @@ You are given the following **HTML** code:
 
 It comes together with the following **JavaScript** code:
 
-**next-article.js**
+`next-article.js`
 
 ```js
 function getArticleGenerator(articles) {
