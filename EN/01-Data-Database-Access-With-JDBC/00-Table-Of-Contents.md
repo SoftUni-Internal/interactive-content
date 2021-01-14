@@ -2,8 +2,7 @@
 
 # Table of contents
 
-change link!!!!!!!
-_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/3IZTXSDR#FHeTo3uqIs6yEfIMQ1AXZh02WgkbUGaDsecPveCrSho)
+_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
 
 1. Application to Database Connection
 2. Application to Database Connection Demo
