@@ -569,7 +569,7 @@ Going to Albania!
 
 [slide]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="pb-js-nested-prime-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function primeNumbers(input) {
