@@ -78,11 +78,11 @@ Props can be just about anything the component needs to function, including **fu
 
 Here are the main advantages of component\-based development;
 
-- **Faster development** \- since a new application can be assembled through existing components, development time will be reduced
+- **Faster development**: since a new application can be assembled through existing components, development time will be reduced
 
-- **Easy to maintain** \- Since a component can be managed individually, it can be done easier and in less time, making **debugging** easier as well
+- **Easy to maintain**: since a component can be managed individually, it can be done easier and in less time, making **debugging** easier as well
 
-- **Scalability** \- You can add additional functionality to a given component, without affecting the rest of the application
+- **Scalability**: you can add additional functionality to a given component, without affecting the rest of the application
 
 [/slide]
 
