@@ -6,11 +6,13 @@
 Now it is time to implement **private** and public **parts** for our app. 
 
 And to make the already existing **forms** to **work**.
+
 # Public Parts
 
 These parts can be accessed by any **guest user** (not logged in).
 
 - **Publications**
+
 Publications view **shows all created posts** from the database.
 
 [image assetsSrc="ReactJS-Workshop-Forms-1.png" /]
