@@ -10,16 +10,16 @@ function fruitOrVegetable(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to check for fruit or vegetable:
+# Descriere
+Scrieți un program pentru a verifica fructele sau legumele:
 
-* Read a single input line: an item from the greengrocery
-* Fruits: banana, apple, kiwi, cherry, lemon, grapes
-* Vegetables: cucumber, pepper, carrot, onion
-* Print: `vegetable`, `fruit` or `unknown`
+* Citiți o singură linie de intrare: un articol din legume
+* Fructe: banana, apple, kiwi, cherry, lemon, grapes
+* Legume: cucumber, pepper, carrot, onion
+* Imprimați: `vegetable`, `fruit` sau  `unknown`
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |lemon| fruit |
 |carrot| vegetable |
@@ -59,15 +59,16 @@ function dayOfWeek(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to print the day of the week as word: 
+# Descriere
+Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-* Read and integer **n**: the **day of the week** in range `[1..7]`
-* Print the name of the day (as word, in English) 
-* Print `Error` if the number is not in the given range
+*Citire și număr întreg **n**: **ziua săptămânii** în intervalul `[1..7]`
+*Tipăriți *numele zilei* (ca un cuvânt, în engleză)
+*Imprimați `Error`, dacă numărul nu se află în intervalul dat
 
-# Example
-  | **Input** | **Output** |
+
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |1| Monday |
 |8| Error |
@@ -115,14 +116,15 @@ function vowelOrConsonant(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to check a letter for vowel or consonant:
+# # Descriere
+Scrieți un program pentru a verifica o literă dacă este o vocală sau o consoană:
 
-* Read a **letter** from the English alphabet
-* Print either `Vowel` or `Consonant`
+*Citiți o **literă** din alfabetul englez
+*Imprimați  `Vowel` sau `Consonant`
 
-# Example
-  | **Input** | **Output** |
+
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |a| Vowel |
 |B| Consonant |
@@ -175,15 +177,16 @@ function productOfThreeNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Calculate the sign of the product of 3 numbers:
+# Descriere
+Calculați semnul produsului de 3 numere:
 
-* Read **3 floating-point** numbers
-* Print the **sign** of the product of the entered 3 numbers: `positive`, `negative` or `zero`
+* Citiți **3 numere în virgulă mobilă** 
+* Imprimați semnul** produsului celor 3 numere introduse: `positive`, `negative` sau `zero`
 
-Try to do this **without multiplying** the 3 numbers
-# Example
-  | **Input** | **Output** |
+Încercați să faceți acest lucru **fără a înmulți** cele 3 numere
+
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |2| negative |
 |3|  |
@@ -243,22 +246,23 @@ function sortedNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which checks for **sorted 3 numbers**:
+# Descriere
+Scrieți un program, care verifică **3 numere sortate**:
 
-* Read 3 real numbers
-* Print `Ascending` if the numbers are in ascending order
-* Print `Descending` if the numbers are in descending order
-* Print `Not sorted` in any other case
+* Citiți 3 numere reale
+* Tipăriți `Ascending` dacă numerele sunt în ordine crescătoare
+* Tipăriți `Descending` dacă numerele sunt în ordine descrescătoare
+* Imprimați `Not sorted` în orice alt caz
 
-# Example
-  | **Input** | **Output** |
+
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |1| Ascending |
 |2|  |
 |3|  |
 
-  | **Input** | **Output** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |3| Not sorted |
 |5|  |
@@ -313,11 +317,12 @@ function vacationExpenses(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which calculates vacation expenses:
+# Descriere
+Scrieți un program, care calculează cheltuielile de vacanță:
 
-* Read a season, an accommodation type and a count of the days 
-* Print the total **expenses**, based on the price table bellow, formatted to the **2nd digit** after the decimal point
+* Citiți sezonul, tipul de cazare și  numărul de zile
+* Imprimați **cheltuielile** totale pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
+
 
  | Season   | Hotel | Camping   | Discount|
 | :---:       |    :----:   |   :---:     |   :---: |
@@ -326,8 +331,8 @@ Write a program, which calculates vacation expenses:
 |Autumn|20|15|30\%|
 |Winter|40|10|10\%|
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |Winter| 180.00 |
 |Hotel|  |
@@ -363,10 +368,11 @@ function cinema(input) {
 [/code-editor]
 [task-description]
 # Description
-Calculate the **price** for all the tickets for a cinema movie:
+Calculați **prețul** pentru toate biletele pentru un film cinematografic:
 
-* Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
-* Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
+*Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
+*Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
+
 
   | **Type** | **Price** |
 | --- | --- |
@@ -374,8 +380,8 @@ Calculate the **price** for all the tickets for a cinema movie:
 |Normal|7.50|
 |Discount|5.00|
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |Normal| 810.00 |
 |12|  |
@@ -410,14 +416,14 @@ function numberOperations(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program to apply an operator for given two numbers:
+Scrieți un program pentru a aplica un operator pentru două numere date:
 
-* Read two integers and a math operator from the console. 
-* The math operator could be: "+", "-", "/", "%" and "*"
-* The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
+* Citiți doi numere întregi și operatorul matematic de pe consolă. 
+* Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
+* IRezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |12| 12 + 10 = 22 |
 |10|  |
@@ -492,22 +498,22 @@ function ATM(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to simulate an ATM withdrawal:
+# Descriere
+Scrieți un program pentru a simula o retragere de numerar de la bancomat
 
-* Read: **balance**, **withdraw** and **limit**
-* Print `The withdraw was successful.` if the balance is enough
-* Print `The daily limit was exceeded.` if the limit is exceeded
-* Print `Insufficient availability.` if the balance isn't enough
+* Citiți: **balance**, **withdraw** și **limit**
+* Imprimați `The withdraw was successful.` Dacă soldul este suficient
+* Imprimați `The daily limit was exceeded.` Dacă limita este depășită
+* Imprimați `Insufficient availability.` dacă soldul nu este sufficient
 
-# Example
-  | **Input** | **Output** |
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |420| The withdraw was successful. |
 |20|  |
 |25|  |
 
-  | **Input** | **Output** |
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |10| The daily limit was exceeded. |
 |50| Insufficient availability. |
@@ -542,12 +548,14 @@ function biggestOfFiveNumbers(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to find the biggest among 5 numbers
-* Read **5 integers**
-* Print the **largest** number. 
+# Descriere
+Scrieți un program pentru a găsi cel mai mare dintre 5 numere
+* Citiți **5 numere întregi**
+* Imprimați cel mai mare**număr.
 
-  | **Input** | **Output** |
+
+# Exemplu
+  | **Intrare** | **Ieșire** |
 | --- | --- |
 |\-1| \-1 |
 |\-2|  |

@@ -1,15 +1,16 @@
 [slide]
-# Nested Conditions
+# Condiții imbricate
 
 [vimeo-video]
 [stream language="EN" videoId="486869737/722ae750dd" default /]
 [stream language="RO" videoId="486869737/722ae750dd"  /]
 [/video-vimeo]
 
-Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
-They are called **nested** `if` or `if-else` statements. 
+Destul de des, logica programului necesită utilizarea declarațiilor `if` sau `if-else`, care sunt cuprinse una în alta.
 
-As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
+Aceste declarații sunt numite declarații **imbricate** `if` sau declarații  `if-else` 
+
+După cum sugerează denumirea **„imbricat”**, acestea sunt declarații `if` sau `if-else` care sunt plasate în interiorul altor declarații `if` sau `else`.
 
 ```js
 if (condition1) {
@@ -21,27 +22,29 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
-Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
--  `Mr.` - a man (gender **m**) - 16 or more years old.
--  `Master` - a boy (gender **m**) - under 16 years. 
--  `Ms.` - a woman (gender **f**) - 16 or more years old.
--  `Miss` - a girl (gender **f**) -  under 16 years.
+# Exemplu: Titluri de persoană
 
-# Solution: Person Titles
-We should notice that the **output** of the program **depends on a few things**. 
+În funcție de vârstă (număr zecimal) și sexul (**m** / **f**) al unei persoane, tipăriți un titlu:
+- `Mr.` - un bărbat (sex **m**) - 16 ani sau mai mult.
+- `Master` - un băiat (sex **m**) - sub 16 ani.
+- `Ms.` - o femeie (sex **f**) - 16 ani sau mai mult.
+- `Miss` - o fată (sex **f**) - sub 16 ani.
 
-**First**, we have to check what is the specified **gender** and **then** to check the **age.** 
+# Soluție: Titluri de persoană
 
-Respectively, we are going to use **a few** `if-else` blocks. 
+Ar trebui să observăm că **rezultatul**  programului **depinde de câteva lucruri**.
 
-These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
+**în primul rând**, trebuie să verificăm care este **genul** specificat și apoi **să verificăm vârsta.**
 
-The diagram below illustrates the process in detail:
+Respectiv, vom folosi **câteva** blocuri `if-else`.
+
+Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, vom **defini** care dintre **celelalte** să executăm.
+
+Diagrama de mai jos ilustrează procesul în detaliu:
 
 [image assetsSrc="01.Personal-titles-01.jpg" /]
 
-After reading the input data from the console, the following program logic should be executed:
+După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
 
 ```js live
 let input = [14, "m"];
@@ -63,45 +66,47 @@ if (age < 16) {
 }
 ```
 
-# Deep nesting
-Nesting of **more than three conditional statements** inside each other is not considered a good practice.
+# Imbricare adâncă
 
-It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
+Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul altor instrucțiuni nu este considerată o bună practică.
+
+**Trebuie sa fie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de instrucțiune condițională.
+
 [/slide]
 
 [slide]
-# Problem: Marketplace
+
+# Problemă: Marketplace
+
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
-    // Write your code here
+    // Scrieți codul aici
 }
 ```
 [/code-editor]
 [task-description]
 
-# Description
-Write a program that: 
+# Descriere
+Scrieți un program care:
 
-- Reads a **product** and a day from the console. 
+- Citește un **produs** și o zi de pe consolă
 
-- Prints the **price**, formatted to 2nd digit, based on the price table below: 
+- Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos:
 
-  | Product      | Weekday | Weekend   |
+ | Produs      | Ziua lucratoare| Weekend   |
 | :---:       |    :----:   |   :---:     |
-| Banana      | 2.50       | 2.70 |
-| Apple   | 1.30        | 1.60    |
-| Kiwi   | 2.20        | 3.00    |
+| Banana      | 2.50        | 2.70 |
+| Mere        | 1.30        | 1.60    |
+| Kiwi        | 2.20        | 3.00    |
 
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Banana| 2.50 |
-|  Weekday||
-
-
+| Weekday|
 [/task-description]
 [tests]
 [test]
@@ -129,7 +134,7 @@ Weekend
 [/slide]
 
 [slide]
-# Solution: Marketplace
+# Soluție: Marketplace
 [vimeo-video]
 [stream language="EN" videoId="486869990/380a476703" default /]
 [stream language="RO" videoId="486869990/380a476703"  /]
@@ -164,20 +169,20 @@ function marketPlace(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program that: 
+# Descriere
+Scrieți un program care:
 
-- Reads a **product** and a day from the console. 
+- Citește un **produs** și o zi de pe consolă
 
-- Prints the **price**, formatted to 2nd digit, based on the price table below: 
+- Imprimă **prețul**, formatat la două decimele, pe baza tabelului de mai jos:
 
 | Product      | Weekday | Weekend   |
 | :---:       |    :----:   |   :---:     |
 | Banana      | 2.50       | 2.70 |
-| Apple   | 1.30        | 1.60    |
-| Kiwi   | 2.20        | 3.00    |
+| Apple       | 1.30        | 1.60    |
+| Kiwi        | 2.20        | 3.00    |
 
-# Example
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Banana| 2.50 |
@@ -210,23 +215,25 @@ Weekend
 [/slide]
 
 [slide]
-# Problem: Biggest Number of Three
+# Problemă: Biggest Number of Three
+
 [code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-  * Reads **3 numbers** from the console
-  * Prints the **greatest** number
+# Descriere
+Scrieți un program care:
 
-# Example
+  * Citește **3 numere** de pe consolă
+  * Tipărește cel mai mare număr
+
+# Exepmlu
 | **Input** | **Output** |
 | --- | --- |
 |1| 3 |
@@ -272,7 +279,9 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Solution: Biggest Number of Three
+
+# Soluție: Biggest Number of Three
+
 [vimeo-video]
 [stream language="EN" videoId="486870661/f4c774cc7b" default /]
 [stream language="RO" videoId="486870661/f4c774cc7b"  /]
@@ -301,13 +310,14 @@ function biggestNumberOfThree(input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
 
-  * Reads **3 numbers** from the console
-  * Prints the **greatest** number
+# Descriere
+Scrieți un program care:
 
-# Example
+  * Citește **3 numere** de pe consolă
+  * Tipărește cel mai mare număr
+
+# Exemplu
 | **Input** | **Output** |
 | --- | --- |
 |1| 3 |
