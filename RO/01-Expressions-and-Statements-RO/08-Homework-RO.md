@@ -1,7 +1,7 @@
-# Homework
+# Teme pentru acasă
 
 [slide]
-# Problem: Calculate a Square Area
+# Problemă: Calculați aria unui pătrat
 [code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -11,13 +11,13 @@ function calculateSpeed (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a function that gets an integer and calculates the face of a square with side `a`. 
-- you get a number in the argument of the function, 
-- multiply it yourself and 
-- print the result in the console.
+# Descriere
+Scrieți o funcție care obține un număr întreg și calculează aria unui pătrat cu latura `a`.
+- obțineți un număr în argumentul funcției,
+- multiplicați-l și
+- tipăriți rezultatul în consolă.
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 25 |
@@ -64,7 +64,7 @@ Write a function that gets an integer and calculates the face of a square with s
 [/slide]
 
 [slide]
-# Problem: Currency Converter
+# Problemă: Convertor valutar
 
 [vimeo-video]
 [stream language="EN" videoId="486857468/b246ee7ca8" default /]
@@ -81,12 +81,12 @@ function currencyConverter (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program to convert from USD to EUR:
-  * Read a **floating-point number**: the **dollars** to be converted 
-  * Convert dollars to euro (use fixed rate of dollars to euro: **0.88**)
-  * Print the converted value in **euro**
+Scrieți un program pentru a converti de la USD la EUR:
+   * Citiți un ** număr cu virgulă mobilă **: ** dolari ** care urmează să fie convertiți
+   * Convertiți dolari în euro (utilizați rata fixă ​​de dolari în euro: ** 0,88 **)
+   * Imprimați valoarea convertită în ** euro **
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 17 | 14.96 |
@@ -134,7 +134,7 @@ Write a program to convert from USD to EUR:
 [/slide]
 
 [slide]
-# Problem: Convert Radians to Degrees
+# Problemă: Convertiți radianele în grade
 [code-task title="Convert Radians to Degrees" taskId="pb-js-expressions-Convert-Radians-To-Degrees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -145,16 +145,16 @@ function areaOfTriangle (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a function that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+Scrieți o funcție care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
-Use the formula: 
-- `degrees = radians * 180 / π` 
+Utilizați formula: 
+- `grade = radiane * 180 / π` 
 
-The number of **π** in JavaScript programs is available through `Math.PI`. 
-Round the result to the nearest integer using `toFixed(0)`.
+Numărul **π** în programele JavaScript poate fi accesat prun `Math.PI`. 
+Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 3.1416 | 180 |
@@ -203,7 +203,7 @@ Round the result to the nearest integer using `toFixed(0)`.
 [/slide]
 
 [slide]
-# Problem: Days to Minutes
+# Problemă: Zile în minute
 
 [vimeo-video]
 [stream language="EN" videoId="486857308/5e4892a5b8" default /]
@@ -220,15 +220,15 @@ function daysToMinutes (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program to convert from days to minutes:
+Scrieți un program care covertează zilele în minute:
 
-* Read a single **integer** (the **days** to be converted)
+* Citiți un număr **întreg** (**zilele** care trebuie să fie convertite)
 
-* Convert the days to minutes (use calculations)
+* Convertiți zilele în minute (utilizați operațiile de calcul)
 
-* Print the **minutes**
+* Imprimați **minutele**
 
-  ## Example
+  ## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 2 | 2880 |
@@ -276,7 +276,7 @@ Write a program to convert from days to minutes:
 [/slide]
 
 [slide]
-# Problem: Circle Area and Perimeter
+# Problemă: Aria și perimetrul cercului
 [code-task title="Circle Area and Perimeter" taskId="pb-js-expressions-Circle-Area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -286,11 +286,11 @@ function circleArea (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to calculate a **circle** area and perimeter:
-  * Read a floating-point number: the **radius** of a circle
-  * Calculate the **area** and **perimeter** of a circle
-  * Print the calculated values **formatted** to 2 digits after the decimal point 
+# Descriere
+Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
+  * Citiți numărul în virgulă mobilă: **raza** cercului
+  * Calculați **aria** și **perimetrul** cercului
+  * Imprimați valorile calculate **formatate** până la 2 cifre după punctul zecimal
 
   ## Example
 | **Input** | **Output** |
@@ -344,7 +344,7 @@ Perimeter = 59.06
 [/slide]
 
 [slide]
-# Problem: Yard Landscaping
+# Problemă: Amenajarea curții
 [code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
@@ -354,39 +354,37 @@ function fourOperations(input){
 ```
 [/code-editor]
 [task-description]
-# Description
-Peter wants to landscape the back yard, so he hired a **company** to do it for him.
-Write a function that **calculates** the necessary funds that Peter will have to **pay** for the job. 
-The price per square meter is **7.61 dollars** with VAT. 
-As Peter's yard is quite **large**, the contractor company offers an **18 percent** discount on the final price.
-
+# Descriere
+Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o ** companie ** care să o facă pentru el.
+Scrieți o funcție care ** calculează ** fondurile necesare pe care Peter va trebui să le ** plătească ** pentru acest serviciu
+Prețul pe metru pătrat este de ** 7,61 dolari ** cu TVA.
+Deoarece curtea lui Peter este destul de ** mare **, firma contractantă oferă o reducere de ** 18% ** la prețul final.
 ## Input
-The function receives one argument:
-- Square meters, which will be landscaped - a real number in the interval \[0.00… 10000.00\]
+Funcția primește un argument:
+- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
 
 ## Output
- Two lines are printed on the console:
+ Două linii sunt imprimate pe consolă:
 
 - `The final price is: {final price of the service} dollars.`
 
 - `The discount is: {discount} dollars.`
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 550 | The final price is: 3432.11 dollars. |
 |  | The discount is: 753.39 dollars. |
 
-## Explanations
-We calculate the price for landscaping the whole yard:
-
+## Explicații
+Calculăm prețul pentru amenajarea întregi curți:
 - `550 * 7.61 = $4185.5`
 
-We deduct the discount from the total amount:
+Reducem reducerea din suma totală:
 
 - `0.18 * 4185.5 = $753.39`
 
-We calculate the final price of the service:
+Calculăm prețul final al serivicului:
 
 - `4185.5 – 753.39 -> $3432.11`
 
