@@ -7,32 +7,32 @@
 [stream language="RO" videoId="487118385/044812fcf3"  /]
 [/video-vimeo]
 
-## Description
-You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
-Some of the series have a discount:
-- Thrones – 50\%
+## Descriere
+Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. Veți primi un număr, reprezentând bugetul clientului, numărul total de titluri de seriale pe care clientul ar vrea să le cumpere și, după aceea, prețul fiecăruia dintre seriale.Unele seriale au aplicate reduceri:
+
+- Game of Thrones – 50\%
 - Lucifer – 40\%	
 - Protector – 30\%
 - TotalDrama – 20\%
 - Area – 10\%
 
-## Input
-You receive from the console:
-- Budget - real number in the range \[10.0… 100.0\]
-- Count series - n – whole number in the range \[1… 10\]
+## Intrare
+Primiți de pe consolă:
+- Buget- un număr întreg în intervalul \[10.0… 100.0\]
+- Numărul de seriale - n – un număr întreg în intervalul \[1… 10\]
 
-For each series you receive two lines:
-- Name of the series - string
-- Price for a series - real number in the range \[1.0… 15.0\]
+Pentru fiecare serial primiți 2 linii
+- Numele serialului - un șir
+- Prețul serialului - un număr real în intervalul \[1.0… 15.0\]
 
-## Output
-Print one line on the console:
+## Ieșire
+Imprimați o linie pe consolă:
 
-- If your budget is greater than or equal to the price of the series: `You bought all the series and have {money left}$ left.`
+- Dacă bugetul dvs. este mai mare sau egal cu prețul serialelor:`You bought all the series and have {money left}$ left.`
 
-- If your budget is less than the price of the series: `You need {money needed}$ more to buy the series!`
+- Dacă bugetul dvs. este mai mic decât prețul serialelor: `You need {money needed}$ more to buy the series!`
 
-The result must be formatted to two digits after the decimal point.
+Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 [code-task title="TV Series Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -63,17 +63,17 @@ Price for the third one - 2
 You bought all the series and have 0.50$ left.
 
 ## Comments
-You receive budget – 10$ and count of series - 3.
+Primiți bugetul– 10$ și numărul de seriale - 3.
 
-The first series is Thrones with price 5$, which has 50\% discount from the price `5 - 50% = 2.50$`. 
+Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% din preț `5 - 50% = 2.50$`. 
 
-The second series is Riverdale, which does not have a discount on the price. 
+Al doilea serial este Riverdale, care nu are nicio reducere aplicată prețului.
 
-The third series also does not have a discount. 
+Al treilea serial nu are, de asemenea, nicio reducere.
 
-Price of series is `2.50 + 5 + 2 = 9.50$`. 
+Prețul serialului este `2.50 + 5 + 2 = 9.50$`. 
 
-Your budget is bigger than the price of series, so you can buy them.
+Bugetul este mai mare decât prețul serialelor, deci veți putea să le cumpărați.
 [/task-description]
 [code-io /]
 [tests]

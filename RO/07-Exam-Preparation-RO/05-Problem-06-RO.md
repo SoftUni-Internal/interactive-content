@@ -6,34 +6,34 @@
 [stream language="RO" videoId="487118452/de8f1dddfb"  /]
 [/video-vimeo]
 
-## Description
-It is Friday night, and you are wondering which movie to watch. 
+## Descriere
 
-You decide to write a program to choose it for you. 
+Este vineri seara, vă întrebați la ce film să vă uitați. 
 
-Until receiving the command `STOP` you will be given the titles of some of your favorite movies. 
+V-ați decis să scrieți un program care să aleagă în locul vostru. 
+Până când veți primi comanda `STOP`, veți primi titlurile unora dintre cele mai preferate filme.
 
-The best movie for you will be the one that has the most points. 
+Filmul ideal pentru voi va fi cel care a primit cele mai multe puncte.
 
-The points are calculated by the sum of the ASCII character values in the movie title. 
+Punctele sunt calculate din suma valorilor literelor ASCII din titlul filmului.
 
-There will not be a case where we have two films have an equal amount of points
+Nu va exista situația în care două filme să aibă un număr egal de puncte. 
 
-Keep in mind the following:
-- For each lowercase letter from the title, you must subtract from the sum the length of the movie title multiplied by 2.
+Rețineți următoarele:
+- Pentru fiecare literă mică din titlu, veți extrage din sumă, lungimea titlului înmulțită cu 2.
 
-- For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
+- Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă. 
 
-- You can have a maximum of 7 movie titles.
+- Puteți avea maxim 7 titluri de filme 
 
-## Input
-You receive multiple lines from the console until the command `STOP` or until the limit of 7 movies is reached:
-- Movie title – string;
+## Intrare
+Primiți mai multe linii de pe consolă, până ce primiți comanda `STOP` sau până la atingerea limitei de 7 filme:
+- Numele filmului – un șir;
 
-## Output
-Print on the console:
-- If you have reached the limit of 7 movies you must print: `Title limit has been reached.`
-- Print the best movie for you: `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
+## Ieșire
+Imprimați pe consolă:
+- Dacă ați atins limita de 7 filme, trebuie să imprimați: `Title limit has been reached.`
+- Imprimați numele celui mai bun fim: `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
 [code-task title="The Best Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -56,13 +56,13 @@ STOP
 The best movie for you is Breaking bad its ASCII sum is: 878.
 ## Comments
 
-First we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title `77 - 6 = 71`.
+Mai întâi vom primi **Matrix**, prima literă este M cu valoarea de 77f, este o literă majusculă, așa că vom scădea din aceasta lungimea titlului `77 - 6 = 71`.
 
-The second letter has a value of 97 and we subtract from its title length *2 from the sum `97 - 12 = 85`.
+A doua literă are valoarea 97 și scădem lungimea titlului *2 din suma `97 - 12 = 85`.
 
-Similarly, we proceed with each subsequent letter until we receive the final amount of 563.
+În mod similar, procedăm cu fiecare literă care urmează, până ajungem la rezultatul final de 563.
 
-Upon receiving the `STOP` command, we print the title with the highest value, which is **Breaking** bad with a sum of 878.
+După ce am primit comanda `STOP` , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
 
 [/task-description]
 [code-io /]

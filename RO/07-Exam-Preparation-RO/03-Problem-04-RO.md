@@ -6,35 +6,35 @@
 [stream language="RO" videoId="487118285/74e8a9a9c7"  /]
 [/video-vimeo]
 
-## Description
+## Descriere
 
-You have been hired by a cinema to write a program that calculates whether the cinema hall is full and how much will the profit be.
+Ați fost angajat de un cinematograf să scrieți un program care să calculeze profitul obținut în cazul în care sala este plină. 
 
-You are going to receive the count of seats in the hall and on the next console lines until the command `Movie time!` Is entered, you will get a number of newly arriving viewers.
+Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda `Movie time!`, veți primi un număr de spectatori noi.
 
-If the number of people currently entering the hall can be divided by 3 without a remainder, there is $5 discount on the total price.
+Dacă numărul de oameni care intră în sală poate fi împărțit la trei fără să avem un rest, atunci se va aplica o reducere de $5 la prețul total.
 
-If there are no more free seats in the hall, the program must stop reading input from the console.
+Dacă nu mai rămân locuri libere în sală, programul trebuie să oprească citirea datelor de intrare de pe consolă. 
 
-If the number of entering viewers, exceeds the number of seats left in the hall, it should be considered full and the program should finish.
+Dacă numărul de spectatori care intră, depășește numărul de locuri rămase în sală, sala  trebuie să fie considerată ca fiind plină și programul trebuie să se oprească. 
 
 
-# Input
-Read from the console:
+# Intrare
+Citiți de pe consolă:
 
-- First line – the hall capacity – whole number in the range  \[50... 150\]
+- Lini 1– capacitatea sălii – un număr întreg în intervalul  \[50... 150\]
 
-- On each of the next line until the command is  `Movie time!`:
-	- Number of people entering the cinema - whole number in the range  \[1… 15\]
+- Pe fiecare linie următoare, până când comana este  `Movie time!`:
+	- Numărul de oameni care intră în cinematograf - un număr întreg în intervalul  \[1… 15\]
 
 ## Output
 First, print on of these lines:
 
-- If you have received the command `Movie time!`: `There are {seats left} seats left in the cinema.`
+- Dacă ați primit comanda `Movie time!`: `There are {seats left} seats left in the cinema.`
 
-- If there are no more free seats in the hall: `The cinema is full.`
+- În cazul în care nu mai sunt locuri libere în sală: `The cinema is full.`
 
-- Afterwards, print: `Cinema income - {income}$`
+- Pe urmă imprimați: `Cinema income - {income}$`
 
 [code-task title="Cinema Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -67,15 +67,15 @@ There are 6 seats left in the cinema.
 Cinema income - 255$
 
 ## Comments
-The hall's capacity is 60 seats. 
+Capacitatea sălii este de 60 locuri.
 
-On the next line we receive the number of people that have entered the hall – 10. 
+Pe următoarea linie, vom primi numărul de oameni care au intrat în sală-10. 
 
-The price that they will pay is `10 * 5 = 50$`. 
+Prețul pe care îl vor plăti este `10 * 5 = 50$`. 
 
-After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. 
+După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu 5$ mai puțin. 
 
-We continue until we receive the command `Movie time!` and then we print a suitable output.
+Continuăm până ce primim comanda `Movie time!` și apoi imprimăm datele de ieșire corespunzătoare.
 [/task-description]
 [code-io /]
 [tests]

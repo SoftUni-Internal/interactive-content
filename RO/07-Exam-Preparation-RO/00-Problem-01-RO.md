@@ -6,25 +6,24 @@
 [stream language="RO" videoId="487118037/76e61cd949"  /]
 [/video-vimeo]
 
-## Description
-Write a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
+## Descriere
+Scrieți un program care calculează cât timp vă va lua să vedeți toate episoadele unui serial TV, în minute.
 
-As input, you will receive the number of seasons, the number of episodes per season and the duration of each episode.
+Ca date de intrare, veți primi un număr de episoade, numărul de episoade din fiecare sezon și durata fiecărui episod. 
 
-In every episode there are advertisements, which increase its duration by `20%`.
+In fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului cu `20%`.
 
-You should also keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual.
+Trebuie să rețineți și faptul că fiecare sezon se încheie cu un episod special care este mai lung cu 10 minute decât celelalte.
 
-## Input
-As input you will receive 4 console lines:
-- Name of the series - String
-- Number of seasons – int in the range \[1… 10\]
-- Number of episodes – int in the range \[10… 80\]
-- Duration of a standard episode without the advertisements – double in the range \[40.0… 65.0\]
-
-## Output
-Print out on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
-- `Total time needed to watch the {name of the series} series is {time} minutes.`
+## Intrare
+Ca intrare veți primi 4 linii de pe consolă:
+- Numele serialului - un șir
+- Numărul sezoanelor – un număr întreg în intervalul \[1… 10\]
+- Numărul episoadelor – un număr întreg în intervalul \[10… 80\]
+Durata unui episod standard fără reclame - dublă în intervalul \ [40,0 ... 65,0 \]
+## Ieșire
+Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
+- `Timpul total necesar pentru a viziona seria {numele seriei} este de {timp} minute.`
 
 [code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -48,13 +47,12 @@ Duration of an episode – 55
 Total time needed to watch the Lucifer series is 3594 minutes.
 
 ## Comments 
-Duration of advertisements per episode: `20% from 55 = 11.0`
+Durata reclamelor din fiecare episod: `20% from 55 = 11.0`
+Durata unui episod cu publicitate: `55 + 11 = 66.0`
 
-Duration of an episode with the advertisements: `55 + 11 = 66.0`
+Timp adăugat pentru episoadele speciale: `3*10 = 30`
 
-Additional time to be added, because of the specials: `3*10 = 30`
-
-Total time needed to watch the episodes: `66 * 18 * 3 + 30 = 3594.0`  
+Timpul total necesar pentru a vedea toate episoadele: `66 * 18 * 3 + 30 = 3594.0`  
 [/task-description]
 [code-io /]
 [tests]

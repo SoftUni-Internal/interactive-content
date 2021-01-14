@@ -6,8 +6,8 @@
 [stream language="RO" videoId="487118157/70c5ba1ce8"  /]
 [/video-vimeo]
 
-## Description
-For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
+## Descriere
+Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
 | | John Wick      | Star Wars | Jumanji   |
 |:---:    | :---:       |    :----:   |   :---:     |
@@ -15,23 +15,23 @@ For the upcoming premieres of three highly expected productions a local cinema h
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
-Write a program that calculates what is the total price to be paid by the customer. 
+Scrieți un program care calculează care este prețul total pe care trebuie să-l plătească un client. 
 
-There are also promotional discounts available for two of the movies:
+Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
-- If the chosen movie is `Star Wars` and at least four tickets are bought, there is a `30%` family discount.
+- Dacă filmul ales este `Star Wars` și sunt cumpărate cel puțin patru bilete, este aplicată o reducere de `30%` pe familie.
 
-- If the chosen movie is `Jumanji` and exactly 2 tickets are bought, there is `15%` discount for two.
+- Dacă filmul ales este `Jumanji` și sunt cumpărate exact 2 bilete, se aplică o reducere de `15%` pe cuplu.
 
-## Input
-You receive 3 lines from the console:
-- First line - movie - string: `John Wick`, `Star Wars` or `Jumanji`
-- Second line - offer - string: `Drink`, `Popcorn` or `Menu`
-- Third line – number of tickets  – whole number in the range \[1… 30\]
+## Intrare
+Primiți 3 lii de pe consolă:
+- Linia 1 - film - șir: `John Wick`, `Star Wars` sau `Jumanji`
+- Linia 2  - ofertă - șir: `Drink`, `Popcorn` sau `Menu`
+- Linia 3 – număr de bilete  – un număr întreg în intevalul \[1… 30\]
 
-## Output
-Print one line on the console: `Your bill is {total price}$`
- * The price must be formatted to two digits after the decimal point.
+## Ieșire
+Imprimați o linie pe consolă: `Your bill is {total price}$`
+ * Prețul ar trebui fomratat la două cifre după punctul zecimal
 
 [code-task title="Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -53,13 +53,13 @@ Count tickets – 6
 Your bill is 72.00$
 
 ## Comments
-The movie is John Wick and drink is chosen.
+Filmul este John Wick și este aleasă o băutura.
 
-The price for one ticket is 12\$
+Prețul unui bilet este de 12\$
 
-6 tickets each `12$ -> 72$`
+6 bilete la fiecare `12$ -> 72$`
 
-For this movie there is no discount, total price is `72.00$`. 
+Pentru acest film nu se aplică discount, prețul total este de`72.00$`. 
 
 [/task-description]
 [code-io /]
