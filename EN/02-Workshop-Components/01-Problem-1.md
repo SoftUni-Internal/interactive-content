@@ -1,4 +1,4 @@
-# Database
+# Database, Initialize and Implementation
 
 [slide]
 # Database 
@@ -12,9 +12,6 @@ Each **Post** should have a post **description (string)** and a **post author (o
 
 Use **Postman** to create some entities or use "mongoimport" to [import the data](https://stackoverflow.com/questions/15171622/mongoimport-of-json-file) that is provided to you.
 
-[/slide]
-
-[slide]
 # Initialize the App
 
 Use the `npx create-react-app origami-workshop` command to create a new React App.
@@ -29,7 +26,7 @@ The server will listen on port **9999** by default.
 
 To fetch the data that you fed in the database, you will have to make a **get request** on `localhost:9999/api/origami/`.
 
-## Implementation
+# Implementation
 Make sure you assign every **required attribute** to each Component, so the result is the same as the example above. 
 
 If at some point something is not right, be free to check the structure picture for each element or directly to the provided CSS. 
