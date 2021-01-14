@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson you learned about:
+## In this lesson you learned about:
 
 - Object composition: combines data and functions into "JavaScript" objects.
 
@@ -18,5 +18,13 @@ let student = {
 - Aggregation: forming an object from an enumerable collection.
 - Concatenation: adding new properties.
 - Delegation: imitates class inheritance.
+
+## In the next lesson we will learn:
+
+- Inheritance
+
+- Classical Inheritance
+
+- Prototype Chain
 
 [/slide]

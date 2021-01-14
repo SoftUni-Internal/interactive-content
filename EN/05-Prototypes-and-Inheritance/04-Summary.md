@@ -39,4 +39,13 @@
 
 -  Prototypes are objects that form **hierarchical chain**.
 
+## In the next lesson you will learn about:
+
+- Exam Preparation with three tasks:
+
+   - DOM
+
+   - Class Inheritance
+
+   - Class task with Functionality
 [/slide]
