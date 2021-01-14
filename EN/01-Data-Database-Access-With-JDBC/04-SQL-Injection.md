@@ -1,6 +1,6 @@
 [slide]
 
-# What is SQL Injection and how to prevent it?
+# What is SQL Injection?
 
 In the previous part of the lesson, we learned how to send raw SQL statements to the database.
 

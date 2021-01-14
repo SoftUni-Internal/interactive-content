@@ -1,6 +1,6 @@
 [slide]
 
-# Transactions and DAO pattern.
+# Transactions.
 
 After finishing the lesson we will have a look over a bit more advanced topics: Transactions.
 
