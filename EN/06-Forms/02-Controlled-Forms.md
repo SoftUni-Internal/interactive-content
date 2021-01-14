@@ -206,7 +206,7 @@ This is how the same menu looks in React:
 <select value={this.state.value} onChange={this.handleChange}>
   <option value="paris">Paris</option>
   <option value="london">London</option>
-  <option selected value="bucharest">Bucharest</option>
+  <option value="bucharest">Bucharest</option>
 </select>
 
 ```
