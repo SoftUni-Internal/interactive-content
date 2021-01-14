@@ -40,13 +40,13 @@ There are two ways in which we can pass arguments to event handlers.
 
 One is using **arrow functions** and the other is using the `bind()` method.
 
-As you have probably seen, when we create an event handler method, we always need to add `this` to the constructor, to bind **this**.
+As you have probably seen, when we create an event handler method, we always need to add `this` to the constructor, to bind `this`.
 
 There is no need to create a constructor method only for binding our methods. 
 
 There should be another solution, and that is using arrow functions.
 
-We have created a new anonymous function, which automatically binds **this**, that is why we do not need to use the `.bind()` method.
+We have created a new anonymous function, which automatically binds `this`, that is why we do not need to use the `.bind()` method.
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>
@@ -56,7 +56,7 @@ We have created a new anonymous function, which automatically binds **this**, th
 
 Using the `bind()` method on the other hand is necessary simply because `onClick={ this.deleteRow }` will not work.
 
-We need to bind **this** value from the function to our class as we know each function creates its own environment.
+We need to bind `this` value from the function to our class as we know each function creates its own environment.
 
 ```js
 <button onClick={this.deleteRow.bind(this, id)}>

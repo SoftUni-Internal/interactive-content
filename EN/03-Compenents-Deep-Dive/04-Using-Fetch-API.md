@@ -5,7 +5,7 @@
 
 The **Fetch API** provides an interface for accessing and manipulating requests to servers from web browsers.
 
-`fetch()` function which provides easy way to access data from an API asynchronously.
+`fetch()` function which provides an easy way to access data from an API asynchronously.
 
 Functionality like this was previously achieved using `XMLHttpRequest`.
 
@@ -50,7 +50,7 @@ Result:
 
 Fetch can be used **asynchronously**, it is depending on us what to use asynchronously or not.
 
-Best practice to use `async` `await` so we can take advantage of the better performance.
+The best practice to use `async` `await` so we can take advantage of the better performance.
 
 ```js
 (async () => {
@@ -74,7 +74,7 @@ Result:
 
 The basic idea is to isolate the concern of fetching data inside components.
 
-Fetching data logic should separated as service.
+Fetching data logic should be separated as service.
 
 ```js
 const apiUrl = '...';

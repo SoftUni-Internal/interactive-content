@@ -23,7 +23,7 @@ A component has lifecycle methods that can be **overridden** to run code at time
 
 They are exactly three lifecycle methods:
 
-- **Mounting:** when the first time you access the a web page and the component is rendered.
+- **Mounting:** when the first time you access a web page and the component is rendered.
 
 - **Updating:** is the second phase in which the component is updated.
 
@@ -69,7 +69,7 @@ This is one of the most widely used methods in ReactJS.
 [slide]
 # Component Updating
 
-This phase starts with the beginning of the react component and expand by receiving new updates
+This phase starts with the beginning of the react component and expands by receiving new updates:
 
 - **static getDerivedStateFromProps:** is invoked just before the render method, both on the initial mount and on following updates.
 
@@ -81,7 +81,7 @@ The default behavior is to re-render the web page when the state has been change
 
 - **render:** render HTML in the web browser.
 
-- **getSnapshotBeforeUpdate:** can be used to see an event before the information is updated, before the componentDidUpdate function is called.
+- **getSnapshotBeforeUpdate:** can be used to see an event before the information is updated before the componentDidUpdate function is called.
 
 - **componentDidUpdate:** is invoked immediately after updating occurs.
 

@@ -44,7 +44,7 @@ Usually, this happens as a result of changes in user input or system events.
 
 First we initialize the state with `this.state = { count: 0 };` in the constructor.
 
-Then we use the `bind()` method on `updateCount()` function otherwise the **this** keyword will be **undefined**.
+Then we use the `bind()` method on `updateCount()` function otherwise the `this` keyword will be **undefined**.
 
 If you do not want to use the `bind()` method in the constructor simply remove this line of code:
 
@@ -188,7 +188,7 @@ If we do not use this line of code in the constructor:
 
 we will get a "TypeError: this is undefined". 
 
-So we always **bind** the `handleChange()` function to **this**, which is the instance of the class.
+So we always **bind** the `handleChange()` function to `this`, which is the instance of the class.
 
 If you do not want to use the `bind()` method then simply make the function an arrow function expression, for example - `handleChange = () => {}`.
 

@@ -16,6 +16,7 @@ Use the provided **styles** to **create** a page with the following structure:
 
 - **Link**
 Each Link Component inside the header navigation should have the class name called listItem and the following structure.
+
 [image assetsSrc="ReactJs-Workshop-Components-4.png" /]
 
 # Aside
@@ -55,12 +56,14 @@ Each post component is consisting of:
 
 - Image which is provided with the resources (the origami logo)
 - Paragraph with class name "description" which holds the current post description
-- Div wrapper for a span which holds the current post author
+- Div wrapper for a span that holds the current post author
 
 **Try to separate the styles and the structure for (div wrapper) into another component called postAuthor or something like that.**
 
 # Footer
+
 The Footer component should have a "Footer" class name.
+
 [image assetsSrc="ReactJs-Workshop-Components-13.png" /]
 [image assetsSrc="ReactJs-Workshop-Components-14.png" /]
 

@@ -73,7 +73,7 @@ When composing a class component we receive the **props** inside our **construct
 
 As we said earlier we need to implement the `render()` method as it is required.
 
-Inside this method, we can use the keyword **this** just like in regular JavaScript to point to the current object.
+Inside this method, we can use the keyword `this` just like in regular JavaScript to point to the current object.
 
 Example: `<div>{this.props.title}</div>`
 
@@ -118,7 +118,7 @@ const BookList = () => {
 
 Use `{props.children}` inside the "Book" component to display the text "Some value here" from the "BookList" component.
 
-Notice that this is a stateless function that is why we use `props.children` without the keyword **this**.
+Notice that this is a stateless function that is why we use `props.children` without the keyword `this`.
 
 ```js
 const Book = (props) => {

@@ -9,7 +9,7 @@ A higher-order component or **HOC** is an advanced technique in React for reusin
 
 **HOCs** are similar to higher-order functions, which can take a function as an argument and produce another function.
 
-**HOCs** basically incorporate the don't-repeat-yourself or **DRY** principle of programming, which means less code less bugs.
+**HOCs** basically incorporate the don't-repeat-yourself or **DRY** principle of programming, which means less code fewer bugs.
 
 **HOCs** are not part of the React API, it is part of a software design pattern.
 
@@ -18,9 +18,9 @@ A higher-order component or **HOC** is an advanced technique in React for reusin
 [slide]
 # Example: Reducer Function
 
-In JavaScript we have a `reduce()` function, to which we pass t**wo parameters**, a function and an array.
+In JavaScript we have a `reduce()` function, to which we pass **two parameters**, a function and an array.
 
-What reduce does is to g**o through each element of the array** and apply the function we have submitted and **update** the array and returns **the changed array as a result.**
+What reduce does is to **go through each element of the array** and apply the function we have submitted and **update** the array and returns **the changed array as a result.**
 
 ```js live
 function reduce(arr, func) {
@@ -82,7 +82,7 @@ function logged(WrappedComponent) {
 [slide]
 # Advantages
 
-Some of the advanteges of using **HOCs** are
+Some of the advantages of using **HOCs** are
 
 - Greater code reuse: which leads to lesser errors.
 

@@ -41,7 +41,7 @@ This lets you subscribe to a context within a function component.
 
 - `Context.displayName`: says what the name of the context itself is. 
 
-It is ofthe used for debugging purposes. 
+It is often used for debugging purposes. 
 
 Also, each component has a display name, that we could change if we need to.
 
@@ -66,7 +66,7 @@ In these cases, we can **safely use props.**
 
 Creates a Context object, while rendering will read the current context value from the closest matching provider above it in the tree.
 
-The default value is used only when a component does not have a matching provider above it in the tree
+The default value is used only when a component does not have a matching provider above it in the tree.
 
 ```js
 const someContext = React.createContext(defaultValue);
