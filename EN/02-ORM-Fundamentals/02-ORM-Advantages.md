@@ -8,23 +8,23 @@ These are some of the categories where they really shine:
 
 - **Productivity**
 
-  - **Faster development** due to removed **repetitive code**.
-  - **Automatically-generated** SQL queries.
+  - **Faster development** due to removed **repetitive code**
+  - **Automatically-generated** SQL queries
 
 - **Maintainability**
 
-  - **ORMs** require **fewer lines** of code which significantly **improves maintainability**.
-  - The **object model** is easier to **modify**.
+  - **ORMs** require **fewer lines** of code which significantly **improves maintainability**
+  - The **object model** is easier to **modify**
 
 - **Perforamnce**
 
-  - They use **lazy-loading** which loads resources only when **needed**.
-  - The allow **caching** which saves data that **does not change often** in the **memory**.
+  - They use **lazy-loading** which loads resources only when **needed**
+  - The allow **caching** which saves data that **does not change often** in the **memory**
 
 - **Database vendor independence**
 
-  - They **do not depend** on the database. **Changing the database** is, therefore, **easier**.
-  - Can be **configured outside the application**.
+  - They **do not depend** on the database. **Changing the database** is, therefore, **easier**
+  - Can be **configured outside the application**
 
 [/slide]
 
@@ -38,16 +38,16 @@ This is where **ORMs** fall behind:
 
 - **Reduced performance**
 
-  - When **SQL** queries become **bigger** and **more complex** the **auto-generated** queries become a **double-edged** sword.
+  - When **SQL** queries become **bigger** and **more complex** the **auto-generated** queries become a **double-edged** sword
 
-  - **Overhead** can also slow down an application.
+  - **Overhead** can also slow down an application
 
 - **Reduces flexibility**
 
-  - Not all operations are **possible** to perform with **ORMs**. Searching for an alternative increases **development time** and reduces **flexibility**.
+  - Not all operations are **possible** to perform with **ORMs**. Searching for an alternative increases **development time** and reduces **flexibility**
 
 - **Losing understanding**
 
-  - By using **auto-generated** queries, the developer **loses control** and eventually - **understanding** of what is happening with the queries.
+  - By using **auto-generated** queries, the developer **loses control** and eventually - **understanding** of what is happening with the queries
 
 [/slide]
