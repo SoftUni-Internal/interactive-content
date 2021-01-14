@@ -1,6 +1,6 @@
 [slide]
 
-# Statement, PreparedStatement, CallableStatement
+# Statement types.
 
 Once we obtain the connection, it is time to interact with the database. 
 

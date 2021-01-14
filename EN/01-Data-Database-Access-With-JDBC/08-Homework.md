@@ -1,6 +1,8 @@
 [slide]
 
-# 1. Initial Setup 
+# Homework
+
+## 1. Initial Setup 
 
 Be familiar with database "**minions_db**". Here is an ER diagram:
 

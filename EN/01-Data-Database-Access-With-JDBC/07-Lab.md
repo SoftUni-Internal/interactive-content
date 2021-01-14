@@ -1,6 +1,8 @@
 [slide]
 
-# Database Apps Introduction
+# Lab
+
+## Database Apps Introduction
 
 ## Part 0: Inspect SoftUni DB.
 
