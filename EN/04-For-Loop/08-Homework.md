@@ -1,45 +1,76 @@
 # Homework
+
 [slide]
-# Problem: Fruit or Vegetable
-[code-task title="Fruit or Vegetable" taskId="pb-js-Conditions-Advanced-Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Calculate Month Salary
+[code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function fruitOrVegetable(input) {
-    // Write your code here
+function calculateMonthSalary (input) {
+   // Write your code here
 }
+
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program to check for fruit or vegetable:
+Write a program, which:
 
-* Read a single input line: an item from the greengrocery
-* Fruits: banana, apple, kiwi, cherry, lemon, grapes
-* Vegetables: cucumber, pepper, carrot, onion
-* Print: `vegetable`, `fruit` or `unknown`
+* Receives the number of workdays for the current month and the salary per day - integers 
+* Calculates the monthly salary of an employee 
+* Prints the result on the console 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|lemon| fruit |
-|carrot| vegetable |
+|2| 300 |
+|100| |
+|200| |
 
 [/task-description]
 [tests]
 [test]
 [input]
-lemon
+2
+100
+300
 [/input]
 [output]
-fruit
+400
 [/output]
 [/test]
 [test]
 [input]
-carrot
+3
+100
+300
+50
 [/input]
 [output]
-vegetable
+450
+[/output]
+[/test]
+[test]
+[input]
+5
+100
+100
+100
+100
+100
+[/input]
+[output]
+500
+[/output]
+[/test]
+[test]
+[input]
+3
+10
+20
+30
+[/input]
+[output]
+60
 [/output]
 [/test]
 [/tests]
@@ -49,176 +80,254 @@ vegetable
 [/slide]
 
 [slide]
-# Problem: Day of Week
-[code-task title="Day of Week" taskId="pb-js-Conditions-Advanced-Day-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem: Number Sequence
+[code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function dayOfWeek(input) {
-    // Write your code here
+function numberSequence(input) {
+  // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program to print the day of the week as word: 
+Write a program, which:
 
-* Read and integer **n**: the **day of the week** in range `[1..7]`
-* Print the name of the day (as word, in English) 
-* Print `Error` if the number is not in the given range
+* Reads **n** representing the count of numbers to read next
+* Finds the **max** and the **min numbers**
+* Prints them on the console
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|1| Monday |
-|8| Error |
+|5| Max number: 304 |
+|10|Min number: 0|
+|304||
+|0| |
+|0| |
+|50| |
 
 [/task-description]
 [tests]
 [test]
 [input]
-1
+4
+100
+200
+0
+300
 [/input]
 [output]
-Monday
+Max number: 300
+Min number: 0
+[/output]
+[/test]
+[test]
+[input]
+1
+100
+[/input]
+[output]
+Max number: 100
+Min number: 100
+[/output]
+[/test]
+[test]
+[input]
+3
+-1
+-2
+0
+[/input]
+[output]
+Max number: 0
+Min number: -2
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem and Solution: Power Of Numbers
+
+[vimeo-video]
+[stream language="EN" videoId="488453000/3f94136963" default /]
+[stream language="RO" videoId="488453000/3f94136963"  /]
+[/video-vimeo]
+
+
+[code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function powerOfNumbers(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+
+* Reads `p` – the power and n – the number 
+
+* Prints the result of `n` to the power of `p` 
+
+* Do not use `Math.Pow()`- not the goal of our exercise 
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|5| 32 |
+|2||
+
+[/task-description]
+[tests]
+[test]
+[input]
+5
+2
+[/input]
+[output]
+32
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Equal Pairs
+[code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function equalPairs(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+* Reads number **n** and **n pairs** of numbers
+* Prints `Yes, value={sum}`, if the **sum of all** pairs is the **same**
+* **Otherwise**, prints `No, maxdiff={diff}`
+* diff is the **max difference** in the sum between two pairs
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|2| Yes, value=\-1 |
+|\-1| |
+|0| |
+|0| |
+|\-1| |
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+1
+2
+0
+3
+4
+\-1
+[/input]
+[output]
+Yes, value=3
+[/output]
+[/test]
+[test]
+[input]
+2
+1
+2
+2
+2
+[/input]
+[output]
+No, maxdiff=1
+[/output]
+[/test]
+[test]
+[input]
+4
+1
+1
+3
+1
+2
+2
+0
+0
+[/input]
+[output]
+No, maxdiff=4
+[/output]
+[/test]
+[test]
+[input]
+1
+5
+5
+[/input]
+[output]
+Yes, value=10
+[/output]
+[/test]
+[test]
+[input]
+2
+\-1
+0
+0
+\-1
+[/input]
+[output]
+Yes, value=\-1
+[/output]
+[/test]
+[test]
+[input]
+2
+\-1
+2
+0
+\-1
+[/input]
+[output]
+No, maxdiff=2
 [/output]
 [/test]
 [test]
 [input]
 8
-[/input]
-[output]
-Error
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Vowel or Consonant
-[code-task title="Vowel or Consonant" taskId="pb-js-Conditions-Advanced-Vowel-or-Consonant" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function vowelOrConsonant(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to check a letter for vowel or consonant:
-
-* Read a **letter** from the English alphabet
-* Print either `Vowel` or `Consonant`
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|a| Vowel |
-|B| Consonant |
-
-[/task-description]
-[tests]
-[test]
-[input]
-a
-[/input]
-[output]
-Vowel
-[/output]
-[/test]
-[test]
-[input]
-E
-[/input]
-[output]
-Vowel
-[/output]
-[/test]
-[test]
-[input]
-b
-[/input]
-[output]
-Consonant
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Product of 3 Numbers
-[vimeo-video]
-[stream language="EN" videoId="486874673/6eb04e1bbf" default /]
-[stream language="RO" videoId="486874673/6eb04e1bbf"  /]
-[/video-vimeo]
-
-[code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function productOfThreeNumbers(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Calculate the sign of the product of 3 numbers:
-
-* Read **3 floating-point** numbers
-* Print the **sign** of the product of the entered 3 numbers: `positive`, `negative` or `zero`
-
-Try to do this **without multiplying** the 3 numbers
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|2| negative |
-|3|  |
-|-1|  |
-
-[/task-description]
-[tests]
-[test]
-[input]
--2
-3
-1
-[/input]
-[output]
-negative
-[/output]
-[/test]
-[test]
-[input]
--3
--4
 5
-[/input]
-[output]
-positive
-[/output]
-[/test]
-[test]
-[input]
-1
+5
+70
+\-60
+3
+7
 2
+8
+20
+\-10
+15
+\-5
+0
+10
+10
 0
 [/input]
 [output]
-zero
+Yes, value=10
 [/output]
 [/test]
 [/tests]
@@ -228,121 +337,363 @@ zero
 [/slide]
 
 [slide]
-# Problem: Sorted Numbers
+# Problem: Zig Zag Sum
+[code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function zigZagSum(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which:
+
+* Reads **n** - number representing amount of input numbers
+* Reads **n numbers** 
+* For every **even** line **adds** the number to the result
+* For every **odd** line **subtracts** the number from the result
+* **Prints** the result
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|2| 10 |
+|10| |
+|20| |
+|| |
+
+[/task-description]
+[tests]
+[test]
+[input]
+4
+20
+20
+20
+20
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+2
+10
+20
+[/input]
+[output]
+10
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Divide Without Remainder
+[code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function divideWithoutRemainder(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+
+* Reads `n` and an **n amount** of numbers after it 
+
+* Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3 and 4 as a divisors** 
+
+* Prints the percentages for **p1, p2 and p3**, **formatted** to the second digit 
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|3| 33.33\% |
+|3| 100.00\%|
+|6|0.00\% |
+|9| |
+
+[/task-description]
+[tests]
+[test]
+[input]
+3
+12
+27
+6
+[/input]
+[output]
+66.67\%
+100.00\%
+33.33\%
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Vowel Sum
+[code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function vowelSum(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+
+* Reads `n` - the count of characters which the program is going to receive 
+
+* If character is a vowel, it adds the characters `value` to the result
+
+ | character      | a | e   |i   |o  |u  |
+| :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
+| value  | 1  | 2 |3 |4 |5 |
+
+
+* Prints the result
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|2| 1 |
+|a| |
+|g| |
+|| |
+
+[/task-description]
+[tests]
+[test]
+[input]
+2
+i
+u
+[/input]
+[output]
+8
+[/output]
+[/test]
+[test]
+[input]
+5
+a
+u
+n
+m
+s
+[/input]
+[output]
+6
+[/output]
+[/test]
+[test]
+[input]
+1
+a
+[/input]
+[output]
+1
+[/output]
+[/test]
+[test]
+[input]
+8
+a
+e
+i
+o
+u
+a
+a
+s
+[/input]
+[output]
+17
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem: Rollercoaster
+[code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function rollercoaster(input) {
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Write a program, which: 
+
+* Reads the number of **places** on a rollercoaster 
+
+* The **minimum passenger age** 
+
+* After that receives the **number of people** on the queue for this ride 
+
+* Followed by the **age** for each person queuing 
+
+* If all places can be filled, the program prints out: `The rollercoaster departures` 
+
+* In any other case, prints out:  `Waiting...`
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|2| The rollercoaster departures |
+|10| |
+|2| |
+|15| |
+|24| |
+
+[/task-description]
+[tests]
+[test]
+[input]
+2
+10
+2
+15
+24
+[/input]
+[output]
+The rollercoaster departures
+[/output]
+[/test]
+[test]
+[input]
+2
+25
+5
+10
+15
+18
+5
+30
+[/input]
+[output]
+Waiting...
+[/output]
+[/test]
+[test]
+[input]
+4
+18
+10
+15
+57
+14
+35
+68
+45
+23
+14
+24
+26
+[/input]
+[output]
+The rollercoaster departures
+[/output]
+[/test]
+[test]
+[input]
+3
+21
+5
+25
+45
+34
+12
+24
+[/input]
+[output]
+The rollercoaster departures
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# Problem and Solution: Multiply
+
 [vimeo-video]
-[stream language="EN" videoId="486875734/a16fef14e3" default /]
-[stream language="RO" videoId="486875734/a16fef14e3"  /]
+[stream language="EN" videoId="487119938/9a4818ebf0" default /]
+[stream language="RO" videoId="487119938/9a4818ebf0"  /]
 [/video-vimeo]
 
-[code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Multiply" taskId="pb-js-for-loop-Multiply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sortedNumbers(input) {
-    // Write your code here
+function multiply(input) {
+  // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a program, which checks for **sorted 3 numbers**:
+Write a program, which: 
 
-* Read 3 real numbers
-* Print `Ascending` if the numbers are in ascending order
-* Print `Descending` if the numbers are in descending order
-* Print `Not sorted` in any other case
+* Reads `n` – an int 
+
+* Holds a for-loop which prints: `{n} x {i} = {result}` 
+
+* Where i are the numbers from **1 to 10 (inclusive)** 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|1| Ascending |
-|2|  |
-|3|  |
-
-  | **Input** | **Output** |
-| --- | --- |
-|3| Not sorted |
-|5|  |
-|2|  |
+|2| 2 x 1 = 2 |
+||2 x 2 = 4 |
+|| 2 x 3 = 6|
+|| 2 x 4 = 8|
+||2 x 5 = 10 |
+|| 2 x 6 = 12|
+||2 x 7 = 14 |
+||2 x 8 = 16 |
+|| 2 x 9 = 18|
+|| 2 x 10 = 20|
 
 [/task-description]
 [tests]
 [test]
 [input]
-1
-2
-3
-[/input]
-[output]
-Ascending
-[/output]
-[/test]
-[test]
-[input]
-3
-1
-2
-[/input]
-[output]
-Not sorted
-[/output]
-[/test]
-[test]
-[input]
-3
-2
-1
-[/input]
-[output]
-Descending
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Vacation Expenses
-[code-task title="Vacation Expenses" taskId="pb-js-Conditions-Advanced-Vacation-Expenses" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function vacationExpenses(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which calculates vacation expenses:
-
-* Read a season, an accommodation type and a count of the days 
-* Print the total **expenses**, based on the price table bellow, formatted to the **2nd digit** after the decimal point
-
- | Season   | Hotel | Camping   | Discount|
-| :---:       |    :----:   |   :---:     |   :---: |
-|Spring|30|10|20\%|
-|Summer|50|30|0\%|
-|Autumn|20|15|30\%|
-|Winter|40|10|10\%|
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|Winter| 180.00 |
-|Hotel|  |
-|5|  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Winter
-Hotel
 5
 [/input]
 [output]
-180.00
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
 [/output]
 [/test]
 [/tests]
@@ -352,222 +703,222 @@ Hotel
 [/slide]
 
 [slide]
-# Problem: Cinema
-[code-task title="Cinema" taskId="pb-js-Conditions-Advanced-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# NOT WORKING TEST PROBLEM:  Numbers, Divisible by 9
+
+[code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function cinema(input) {
-    // Write your code here
+function solve(num1, num2) {
+    num1 = Number(num1);
+    num2 = Number(num2);
+    let sum = 0;
+    let numByNine = '0';
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+            sum += index;
+            
+        }
+    }
+    console.log(`The sum: ${sum}`);
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+          console.log(index + " ");  
+            
+        }
+    }
+    
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Calculate the **price** for all the tickets for a cinema movie:
 
-* Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
-* Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
-
-  | **Type** | **Price** |
-| --- | --- |
-|Premiere|12.00|
-|Normal|7.50|
-|Discount|5.00|
+`Напишете функция, която получава две числа и принтира  на конзолата, всички числа в диапазона, които се делят на 9 без остатък, както и тяхната сума.  На първия ред отпечатайте сумата на числата, а на следващия отговарящите на условието числа с интервал между тях.`
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|Normal| 810.00 |
-|12|  |
-|9|  |
+|100| The sum: 1683 |
+|200|108 117 126 135 144 153 162 171 180 189 198|
 
 [/task-description]
 [tests]
 [test]
 [input]
-Normal
-12
+100
+200
+[/input]
+[output]
+The sum: 1683
+108
+117
+126
+135
+144
+153
+162
+171
+180
+189
+198
+[/output]
+[/test]
+[test]
+[input]
+0
+100
+[/input]
+[output]
+The sum: 594
+0
 9
-[/input]
-[output]
-810.00
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
 [/output]
 [/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
-
-[slide]
-# Problem: Operations with Numbers
-[code-task title="Operations with Numbers" taskId="pb-js-Conditions-Advanced-Operation-With-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function numberOperations(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to apply an operator for given two numbers:
-
-* Read two integers and a math operator from the console. 
-* The math operator could be: "+", "-", "/", "%" and "*"
-* The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|12| 12 + 10 = 22 |
-|10|  |
-|\+|  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-10
-12
-\+
-[/input]
-[output]
-10 + 12 = 22
-[/output]
-[/test]
-[test]
-[input]
-12
-10
-\-
-[/input]
-[output]
-12 \- 10 = 2
-[/output]
-[/test]
-[test]
-[input]
-10
-12
-\*
-[/input]
-[output]
-10 \* 12 = 120
-[/output]
-[/test]
-[test]
-[input]
-6
-2
-\/
-[/input]
-[output]
-6 \/ 2 = 3
-[/output]
-[/test]
-[test]
-[input]
-5
-2
-\%
-[/input]
-[output]
-5 \% 2 = 1
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: ATM
-[code-task title="ATM" taskId="pb-js-Conditions-Advanced-ATM" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function ATM(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to simulate an ATM withdrawal:
-
-* Read: **balance**, **withdraw** and **limit**
-* Print `The withdraw was successful.` if the balance is enough
-* Print `The daily limit was exceeded.` if the limit is exceeded
-* Print `Insufficient availability.` if the balance isn't enough
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|420| The withdraw was successful. |
-|20|  |
-|25|  |
-
-  | **Input** | **Output** |
-| --- | --- |
-|10| The daily limit was exceeded. |
-|50| Insufficient availability. |
-|20|  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-420
-20
-25
-[/input]
-[output]
-The withdraw was successful.
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Problem: Biggest of Five Numbers
-[code-task title="Biggest of Five Numbers" taskId="pb-js-Conditions-Advanced-Biggest-of-Five-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function biggestOfFiveNumbers(input) {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program to find the biggest among 5 numbers
-* Read **5 integers**
-* Print the **largest** number. 
-
-  | **Input** | **Output** |
-| --- | --- |
-|\-1| \-1 |
-|\-2|  |
-|\-3|  |
-|\-4|  |
-|\-5|  |
-
-
-[/task-description]
-[tests]
 [test]
 [input]
 1
-2
-3
-4
-5
+50
 [/input]
 [output]
-5
+The sum: 135
+9
+18
+27
+36
+45
+[/output]
+[/test]
+[test]
+[input]
+9000
+9008
+[/input]
+[output]
+The sum: 9000
+9000
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
+# WORKING TEST PROBLEM:  Numbers, Divisible by 9
+
+[code-task title="Divisible by 9"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+  let  num1 = Number(input.shift());
+  let  num2 = Number(input.shift());
+  
+    let sum = 0;
+    let numByNine = '0';
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+            sum += index;
+            
+        }
+    }
+    console.log(`The sum: ${sum}`);
+    for (let index = num1; index <= num2; index++) {
+        if (index % 9 == 0) {
+          console.log(index + " ");  
+            
+        }
+    }
+    
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
+`Напишете функция, която получава две числа и принтира  на конзолата, всички числа в диапазона, които се делят на 9 без остатък, както и тяхната сума.  На първия ред отпечатайте сумата на числата, а на следващия отговарящите на условието числа с интервал между тях.`
+
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|100| The sum: 1683 |
+|200|108 117 126 135 144 153 162 171 180 189 198|
+
+[/task-description]
+[tests]
+[test]
+[input]
+100
+200
+[/input]
+[output]
+The sum: 1683
+108
+117
+126
+135
+144
+153
+162
+171
+180
+189
+198
+[/output]
+[/test]
+[test]
+[input]
+0
+100
+[/input]
+[output]
+The sum: 594
+0
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
+[/output]
+[/test]
+[test]
+[input]
+1
+50
+[/input]
+[output]
+The sum: 135
+9
+18
+27
+36
+45
+[/output]
+[/test]
+[test]
+[input]
+9000
+9008
+[/input]
+[output]
+The sum: 9000
+9000
 [/output]
 [/test]
 [/tests]
