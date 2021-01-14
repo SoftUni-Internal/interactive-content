@@ -1,5 +1,5 @@
 [slide]
-# While Loop
+# Bucla While
 
 [vimeo-video]
 [stream language="EN" videoId="487120555/61828bfd47" default /]
@@ -8,33 +8,34 @@
 
 
 
-In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+În programare, **bucla** `while` este utilizată atunci când dorim să **repetăm** execuția unei anumite logici cât timp se îndeplinește o anumită condiție. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+Prin **"condiție"**, înțelegem orice **expresie** care returnează `true` sau `false`. Când **condiția** nu e **îndeplinită**, bucla while este **întreruptă**, programul **continuă** să execute codul de după buclă.
+ 
 [image assetsSrc="05-use-case-while.png" /]
-The while loop looks like this:
+Bucla while arată în felul următor:
 ```js
 while (condition) {
   loop body;
 }
 ```
 
-In the code example above, condition is any **expression that returns a Boolean result** – `true` or `false`. 
+În exemplul de cod de mai sus, condiția este orice **expresie care returnează un rezultat de tip boolean** – `true` sau `false`. 
 
-It determines how long the loop body will be repeated and is called `loop condition`. 
+Aceasta determină de câte ori se va repeta conținutul buclei și se numește `condiția de repetiție`. 
 
-In this example the `loop body` is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
+În acest exemplu, `conținutul blocului repetitiv` este codul executat la fiecare iterație a buclei, cu alte cuvinte, oricând condiția dată este îndeplinită.
 
-In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
+În bucla while, mai întâi este evaluată expresia booleană, iar dacă aceasta e `true`, secvența de operații din conținutul buclei este executată. 
 
-Then again the input condition is checked and if it is `true` again, the body of the loop is executed. 
+Apoi, se verifică din nou condiția dată și dacă e din nou `true`, se execută conținutul buclei. 
 
-All this is repeated again and again **until at some point the conditional expression returns value** `false`.
+Toată această parte se repetă din nou **până într-un anumit punct în care condiția buclei returnează valoarea** `false`.
 
 [/slide]
 
 [slide]
-# Problem: Decreasing Numbers
+# Problemă: Decreasing Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="487120584/cf3fbb855b" default /]
@@ -51,13 +52,13 @@ function decreasingNumbers (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Cerință
+Scrieți un program care:
 
-* Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
+* Citește un număr de pe consolă
+* Imprimă numerele începând de la numărul respectiv și până la 1 (**inclusiv**)
 
-# Example
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |4| 4 |
@@ -86,7 +87,7 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Solution: Decreasing Numbers
+# Soluție: Decreasing Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="487120633/4307d54296" default /]
@@ -108,12 +109,12 @@ function decreasingNumbers (input) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Cerință
+Scrieți un program care:
 
-* Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
-# Example
+* Citește un număr de pe consolă
+* Imprimă numerele începând de la numărul respectiv până la 1 (**inclusiv**)
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |4| 4 |
@@ -142,7 +143,7 @@ Write a program, which:
 
 
 [slide]
-# Problem: Sequence 2k + 1
+# Problemă: Sequence 2k + 1
 
 [vimeo-video]
 [stream language="EN" videoId="487120652/4dbc030699" default /]
@@ -154,15 +155,15 @@ Write a program, which:
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sequence(input) {
+function numbersInRange (input) {
   // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-# Description
+# Cerință
 
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
 
 
 [/task-description]
@@ -183,7 +184,7 @@ Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 
 [/slide]
 
 [slide]
-# Solution: Sequence 2k + 1
+# Soluție: Sequence 2k + 1
 
 [vimeo-video]
 [stream language="EN" videoId="487120683/99149d6f3f" default /]
@@ -194,30 +195,24 @@ Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sequence(input) {
-  let k = 1;
-  
-  while(k <= input){
-    console.log(k);
-    k = k * 2 + 1;
-  }
+// TODO: Solution
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+[task-description]
+# Cerință
 
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
 
-# Solution:
+# Soluție:
 
-Here is how we can solve the problem:
-- We create a num variable for the current number to which we assign an initial **value of 1**.
-- For a loop condition, we put **the current number <= n**.
-- In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
+Problema poate fi rezolvată în felul următor:
+- Creăm o variabilă num pentru numărul curent, căreia îi asignăm o **valoare inițială egală cu 1**.
+- Drept condiție de repetiție, scriem **numărul curent <= n**.
+- În **conținutul buclei**: imprimăm valoarea numărului curent și incrementăm numărul curent utilizând formula din cerința problemei.
 
-Here is a sample implementation of this idea:
+Aceasta este o implementare a acestei idei:
 ```js
 let n = Number(input.shift());
 let num = 1;

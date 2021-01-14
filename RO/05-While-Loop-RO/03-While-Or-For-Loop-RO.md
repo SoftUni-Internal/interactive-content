@@ -1,5 +1,5 @@
 [slide]
-# While or For Loop?
+# Bucla While sau Bucla For?
 
 [vimeo-video]
 [stream language="EN" videoId="487120722/4b17fd0910" default /]
@@ -7,26 +7,26 @@
 [/video-vimeo]
 
 
-`while` and `for` loops both **repeat** a block of **code**.
+Buclele `while` și `for` **repetă** un bloc de **cod**.
 
-But there are different situations when writing code that require either the first loop, or the other.
+Dar există situații diferite în procesul scrierii de cod în care ni se recomandă să folosim primul tip sau cel al doilea.
 
-When you know **exactly how many times** you want to loop through a block of code, use the `for` loop.
+Când știți **exact de câte ori** doriți să repetați un bloc de cod, utilizați bucla `for`.
 ```js live
 for (let i = 0; i <= 5; i++) {
     console.log(i);
 }
 ```
 
-It is usually appropriate for loops in which the initialization and increment are single statements and logically related. 
+Este de obicei potrivit să folosiți bucle for în cazurile în care inițializarea și incrementarea sunt instrucțiuni unice  și sunt legate în mod logic.
 
-It is more compact than `while` and it keeps the loop control statements together in one place.
+Este o buclă mai compactă în comparație cu bucla `while` și menține instrucțiunile de control ale buclei în același loc.
 
-But, there could be many **complex** problems where the number of iterations depends in these **situations** and can't be predicated beforehand. 
+Dar ar putea exista mai multe probleme **complexe** în care numărul de iterații depinde de anumite **situații** și nu pot fi anticipate. 
 
-That means we don't know in advance **how many times** to repeat a loop.
+Ceea ce înseamnă că nu știm exact dinainte **de câte ori** trebuie să repetăm o buclă.
 
-In those situation it is better to use `while` loop.
+În acele situații, este recomandată utilizarea unei bucle `while`.
 ```js
 let command = input.shift();
 let number = Number(input.shift());
@@ -48,7 +48,7 @@ console.log(number);
 [/slide]
 
 [slide]
-# Problem: Odd Number
+# Problemă: Odd Number
 [code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -58,13 +58,13 @@ function oddNumber(numbers) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Cerință
+Scrieți un program care:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
+* Citește numere de pe consolă până la obținerea unui **număr impar**
+* Imprimă **numărul impar** 
 
-# Example
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |2| 3 |
@@ -92,7 +92,7 @@ Write a program, which:
 [/slide]
 
 [slide]
-# Solution: Odd Number
+# Soluție: Odd Number
 
 [vimeo-video]
 [stream language="EN" videoId="487120737/05e8469c7d" default /]
@@ -113,12 +113,12 @@ function oddNumber(numbers) {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Cerință
+Scrieți un program care:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
-# Example
+* Citește numere dde pe in consolă până la obținerea unui **număr impar**
+* Imprimă **numărul impar**
+# Exemplu
   | **Input** | **Output** |
 | --- | --- |
 |2| 3 |

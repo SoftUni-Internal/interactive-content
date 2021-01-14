@@ -1,5 +1,5 @@
 [slide]
-# Infinite While Loop
+# Bucla infinită While
 
 [vimeo-video]
 [stream language="EN" videoId="487120926/1516b4fb70" default /]
@@ -7,9 +7,9 @@
 [/video-vimeo]
 
 
-We call an infinite loop one that repeats infinitely the performance of its body. 
+Folosim denumirea de buclă infinită pentru o buclă care repetă la nesfârșit condiția din corpul său.
 
-In `while` and `do-while` loops the end check is a conditional expression that always returns `true`. 
+În cazul buclelor `while` și `do-while`, capătul este o expresie condițională care returnează întotdeauna variabila `true`. 
 
 ```js
 while (true) {
@@ -21,7 +21,7 @@ while (true) {
 
 [slide]
 
-# Example: Infinite While Loop (Bug)
+# Exemplu: Bucla infinită While (Bug)
 
 [vimeo-video]
 [stream language="EN" videoId="487120943/858eb0fc69" default /]
@@ -36,9 +36,9 @@ while (command !== "End") {
 }
 ```
 
-In the example above, the condition is always `true` because it is never changed.
+În exemplul de mai sus, condiția este mereu adevărată (`true`), pentru că nu se schimbă niciodată.
 
-# Example: Finite Loop (Bug Fixed)
+# Exemplu: Bucla finită (Depanarea bug-ului)
 ```js
 let command = "Add";
 while (command != "End") {
@@ -48,5 +48,5 @@ while (command != "End") {
 }
 ```
 
-Here, the value of the variable `command` is changed at each iteration and the **infinite loop** is avoided. 
+În acest caz, valoarea variabilei `command` s-a modificat cu fiecare iterație, iar apariția **buclei infinite** a fost evitată. 
 [/slide]
