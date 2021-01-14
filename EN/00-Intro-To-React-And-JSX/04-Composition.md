@@ -28,7 +28,7 @@ This can be used to achieve **encapsulation**, as well as **loose coupling**.
 
 **Encapsulating** React components enables us to **hide the internal state** of the components from the outside.
 
-**Loose coupling**, on the other hand, means that each of the the nested components has very little to no knowledge about the state of the neighbouring components.
+**Loose coupling**, on the other hand, means that each of the nested components has very little to no knowledge about the state of the neighboring components.
 
 [/slide]
 

@@ -4,15 +4,15 @@
 
 # Create React App
 
-Developed by Facebook, `Create-React-App` is a command line tool, that enables bootstrapping a **React** project in seconds.
+Developed by Facebook, `Create-React-App` is a command-line tool, that enables bootstrapping a **React** project in seconds.
 
-Using `create-react-app` enables a number of benefits:
+Using `create-react-app` enables several benefits:
 
 - Once you **save a change** in your codebase, React automatically **recompiles** your app and **reloads the page** instantly, resulting in less waiting time.
 
 - Under the hood, it uses **Babel** and **webpack**, which it takes care of by itself.
 
-- Deploying to production is a easy as running the `npm run build` command.
+- Deploying to production is as easy as running the `npm run build` command.
 
 [/slide]
 
@@ -23,7 +23,7 @@ Using `create-react-app` enables a number of benefits:
 
 Let us create our first React application.
 
-First open a terminal instance in a directory of your choice.
+First, open a terminal instance in a directory of your choice.
 
 Make sure you have Node.js installed by typing `node -v`.
 
@@ -56,7 +56,7 @@ To learn more information about React, you can [visit their official website: re
 
 You can also [view the detailed documentation](https://reactjs.org/docs/installation.html).
 
-CodeSandbox is an online environment in which you can experiment with your code and see the results in real time.
+CodeSandbox is an online environment in which you can experiment with your code and see the results in real-time.
 
 You can visit it [here](https://codesandbox.io/).
 
@@ -79,7 +79,7 @@ Here are some of the most important files and what they do:
 
 - `package.json`: Stores the project configuration
   - Names and version numbers of all dependencies
-  - Build actions that can be ran from a terminal instance
+  - Build actions that can be run from a terminal instance
 
 [image assetsSrc="intro-to-react-and-jsx-3.png" /]
 

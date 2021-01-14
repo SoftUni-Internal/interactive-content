@@ -4,7 +4,7 @@
 
 # What is React.js?
 
-React is a JavaScript **library**, made for building **user intefaces**.
+React is a JavaScript **library**, made for building **user interfaces**.
 
 In the world of programming, **a library is a collection of prewritten code**, from which you can use as much, or as little as you would like.
 
@@ -65,7 +65,7 @@ The text between the curly brackets will be **evaluated at render time**, and th
 
 # Features
 
-React has a distinctive set of **features** thst make it stand out from other JavaScript libraries:
+React has a distinctive set of **features** that make it stand out from other JavaScript libraries:
 
 - **Open Source**: By being open-source, React enables anyone to **modify** it to their specific needs.
 
@@ -75,7 +75,7 @@ React has a distinctive set of **features** thst make it stand out from other Ja
 
 - **Isomorphic**: By using Node on the back\-end, JavaScript is running on both the client and the server:
 
-  - Improving the user experience.
+  - Improving user experience.
 
   - Makes code **easier to modify** for all developers.
 
@@ -83,7 +83,7 @@ React has a distinctive set of **features** thst make it stand out from other Ja
 
   - With the help of **Electron**, you can create smooth desktop apps.
 
-  - Using **React Native**, you can build user interfaces for both Android and iOS.
+  - Using **to React Native**, you can build user interfaces for both Android and iOS.
 
 
 [/slide]
@@ -100,6 +100,6 @@ React has a distinctive set of **features** thst make it stand out from other Ja
 
 - Compatible with other libraries: The use of open standards enables **better compatibility** with other libraries, while also making **scalability** a breeze.
 
-- Great **error reporting**: If anything goes wrong while running your app, React will inform you both on the **terminal** instance from which you lauched your app, as well as in the **live version in your browser**.
+- Great **error reporting**: If anything goes wrong while running your app, React will inform you both on the **terminal** instance from which you launched your app, as well as in the **live version in your browser**.
 
 [/slide]

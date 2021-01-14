@@ -8,7 +8,7 @@
   - Makes it easy to build user interfaces
   - Components are its main building blocks
 
-- Create-React-App initialises a project in a matter of seconds
+- Create-React-App initializes a project in a matter of seconds
   - Just type `npx create-react-app my-app` in the terminal
 
 
@@ -16,7 +16,7 @@
   - Enables embedding HTML inside JavaScript, and vice versa
 
 - Composing React components defines views
-  - Encapsulation keeps data accesible only to its component
+  - Encapsulation keeps data accessible only to its component
 
 
 ## In the next lesson we will learn:

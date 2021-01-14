@@ -85,7 +85,7 @@ There are some rules and good practices you have to follow:
 
 # Compilation
 
-**JSX compiles to plain JavaScript**, resulting in less boilerplate code, while also letting developers to focus on the task itself.
+**JSX compiles to plain JavaScript**, resulting in less boilerplate code, while also letting developers focus on the task itself.
 
 At compile time, the following line will be converted to a `React.createElement()` call:
 
