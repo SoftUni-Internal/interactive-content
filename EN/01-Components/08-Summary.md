@@ -2,6 +2,8 @@
 
 # Summary
 
+## In this lesson you learned:
+
 - Each component has its own template.
 ```js
 @Component({ 
