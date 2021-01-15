@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Calculator For TV Series
 [code-task title="Calculator For Tv Series" taskId="java-pb-exam-prep-Calculator-For-TV-Series" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
