@@ -397,14 +397,15 @@ Export the data in the formats specified below.
 ### Order them by tickets count in descending order, then by email
 
 - Extract from the database, the first name, last name, email, phone and count of tickets. 
-  Order them first by tickets count in descending order then by email alphabetically.
+
+  - Order them first by tickets count in descending order then by email alphabetically.
 
 - Return the information in this format:
 
 **"Passenger {firstName}  {lastName}**
-	Email - {email}
+  **Email - {email}**
 **Phone - {phoneNumber}**
-	Number of tickets - {number of tickets}
+  **Number of tickets - {number of tickets}**
 **. . ."**
 
 [/slide]
