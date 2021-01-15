@@ -1226,8 +1226,3 @@ d \-\> 152
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
