@@ -228,7 +228,7 @@ Copy the following html inside "article.component.html":
 </li>
 ```
 
-Inside the html markup we will show a detailed description of each article (**title**, **description** and **image**). 
+Inside the html markup we will show a detailed description of each article - **title**, **description** and **image**. 
 
 We have a total of **3 buttons**, and each has an **onclick** handler function. 
 
