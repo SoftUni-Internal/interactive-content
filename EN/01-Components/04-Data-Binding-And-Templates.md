@@ -23,7 +23,7 @@ They can be both **inline** or in a **separate file**.
 
 [slide]
 
-# Render An Array Using \*NgFor
+# Render An Array Using NgFor
 
 Here is aн example of a class called "GamesComponent" and an HTML associated with it.
 
@@ -57,7 +57,7 @@ Notice that the `*` symbol is required before the "ngFor" keyword.
 
 [slide]
 
-# Conditional Statements Using \*ngIf
+# Conditional Statements Using ngIf
 
 Using the same example:
 
