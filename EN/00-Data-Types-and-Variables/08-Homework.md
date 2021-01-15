@@ -1125,8 +1125,3 @@ Print the **result of the calculation** to the console formatted to the **second
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
