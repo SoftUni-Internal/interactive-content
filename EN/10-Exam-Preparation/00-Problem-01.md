@@ -4,6 +4,8 @@
 
 # Football Information
 
+Download the resources from here - [Mega.nz](https://mega.nz/file/iF4B1KzL#aGQcAQuqnKBJ9TuynjcDC0_0SEEpB_F5rzPsd-sEpi4)
+
 You have been employed by the Next Level Technologies Ltd. to finish the database layer, which supports basic functionality like importing data and exporting some results.
 
 ## Description
