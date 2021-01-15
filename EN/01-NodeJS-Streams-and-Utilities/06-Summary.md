@@ -7,6 +7,7 @@
 - Pub/Sub pattern is used to communicate messages.
 - Node.js has various useful utility modules.
 - Streams allow working with big data.
+
 ```js
 const http = require('http');
 http.createServer((req, res) => {
@@ -19,8 +20,11 @@ http.createServer((req, res) => {
     }
 }).listen(5000);
 ```
+
 - Events simplify communication within a large application.
+
 - The fs module gives you access to the file system.
+
 ```js
 let fs = require('fs');
 let data = fs.readdirSync('./myDir', 'utf8');
