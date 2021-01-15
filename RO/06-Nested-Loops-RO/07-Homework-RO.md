@@ -816,8 +816,3 @@ Generează toate **numerele cu 4 cifre** cu cifre mai mici decât n și le impri
 
 [/slide]
 
-[slide]
-# Rezultatele Temei 
-[tasks-results/]
-
-[/slide]

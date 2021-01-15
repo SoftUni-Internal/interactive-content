@@ -318,8 +318,3 @@ Invalid ticket type!
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

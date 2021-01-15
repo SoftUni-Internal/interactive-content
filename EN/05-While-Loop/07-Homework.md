@@ -490,9 +490,3 @@ Total: ‭165.73‬
 
 [/slide]
 
-[slide]
-# Homework Results
-
-[tasks-results /]
-
-[/slide]

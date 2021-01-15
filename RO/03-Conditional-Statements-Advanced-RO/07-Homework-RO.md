@@ -584,8 +584,3 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

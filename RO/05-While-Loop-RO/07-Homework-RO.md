@@ -490,9 +490,3 @@ Total: ‭165.73‬
 
 [/slide]
 
-[slide]
-# Rezultatele problemelor din tema pentru acasă
-
-[tasks-results /]
-
-[/slide]

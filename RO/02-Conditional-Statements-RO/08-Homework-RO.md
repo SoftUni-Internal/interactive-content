@@ -321,8 +321,3 @@ Invalid ticket type!
 
 [/slide]
 
-[slide]
-# Rezultatele temei
-[tasks-results/]
-
-[/slide]

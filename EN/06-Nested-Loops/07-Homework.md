@@ -816,8 +816,3 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

@@ -438,8 +438,3 @@ The discount is: 684.9 dollars.
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
