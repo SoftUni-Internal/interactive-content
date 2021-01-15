@@ -12,7 +12,7 @@ It maps regular **objects** to **rows** in **relational databases' tables**.
 
 The following picture illustrates how **ORM** works:
 
-[image assetsSrc="Java-ORM-Fundamentals-1.jpg" /]
+[image assetsSrc="Java-ORM-Fundamentals-1.png" /]
 
 [/slide]
 
@@ -42,17 +42,17 @@ Each of them is better than the other in different ways.
 
 JDBC's **strengths** are:
 
-- It is easy to learn.
+- It is easy to learn
 
-- Its performance is a little better.
+- Its performance is a little better
 
 ORMs beat JDBC in the following categories:
 
-- They make application maintenance easier.
+- They make application maintenance easier
 
-- The focus is on the business logic instead of the database structure.
+- The focus is on the business logic instead of the database structure
 
-- They are good for scaling.
+- They are good for scaling
 
 Overall, it can be said that **JDBC** is good for **small applications**.
 
@@ -72,15 +72,15 @@ With it, data can be **directly presented from the database**.
 
 In this type of architecture, there are **four** layers:
 
-- `Presentation Layer` - This is what the users of the application **see**.
+- `Presentation Layer` - This is what the users of the application **see**
 
-- `Service layer`- Where all the **business logic** is **stored** and **operates** from.
+- `Service layer`- Where all the **business logic** is **stored** and **operates** from
 
-- `Persistence layer (ORM)` - Stores **handler functions** that connect the **service layer** to the **database layer**.
+- `Persistence layer (ORM)` - Stores **handler functions** that connect the **service layer** to the **database layer**
 
-- `Database layer` - All the **data** for the application is stored **here**.
+- `Database layer` - All the **data** for the application is stored **here**
 
-[image assetsSrc="Java-ORM-Fundamentals-2.jpg" /]
+[image assetsSrc="Java-ORM-Fundamentals-2.png" /]
 
 [/slide]
 
@@ -96,9 +96,9 @@ Most of those frameworks also protect from **simple, direct SQL injection** atta
 
 Working with **ORM** can happen in two different ways:
 
-- `Database-first approach` - This approach creates all the **entities** from an **existing database**.
+- `Database-first approach` - This approach creates all the **entities** from an **existing database**
 
-- `Code-first approach` - In the **code-first approach** classes are created **first** and then **migrated** to the **database**.
+- `Code-first approach` - In the **code-first approach** classes are created **first** and then **migrated** to the **database**
 
 [/slide]
 
@@ -178,7 +178,7 @@ This approach lets the **business logic** drive the application, instead of the 
 
 The following picture illustrates how the **code-first** approach works:
 
-[image assetsSrc="Java-ORM-Fundamentals-3.jpg" /]
+[image assetsSrc="Java-ORM-Fundamentals-3.png" /]
 
 [/slide]
 

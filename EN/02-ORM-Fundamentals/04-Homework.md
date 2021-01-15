@@ -68,11 +68,11 @@ Create new package **“orm”** and **class Connector** in it that generates a 
 
 In order to achieve this, we would require the following parameters:
 
-- **Username** – database username.
+- **Username** – database username
 
-- **Password** – database password.
+- **Password** – database password
 
-- **Database Name** – the current database for the project. We need to create one manually.
+- **Database Name** – the current database for the project. We need to create one manually
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-5.jpg" /]
 
@@ -86,15 +86,15 @@ It’s time to create an interface that will define the operations we can perfor
 
 Name your **interface** and defined the following methods in it.
 
-- **boolean** **persist**(**E entity**) – it will insert or update an entity depending if it is attached to the context.
+- **boolean** **persist**(**E entity**) – it will insert or update an entity depending if it is attached to the context
 
-- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**) – returns collection of all entity objects of type **E**.
+- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**) – returns collection of all entity objects of type **E**
 
-- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**, **String** **where**) – returns collection of all entity objects of type **T** matching the criteria given in **“where”**.
+- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**, **String** **where**) – returns collection of all entity objects of type **T** matching the criteria given in **“where”**
 
-- **E** **findFirst**(**Class**\<**E**\> **table**) – returns the first entity object of type **E**.
+- **E** **findFirst**(**Class**\<**E**\> **table**) – returns the first entity object of type **E**
 
-- **E** **findFirst**(**Class**\<**E**\> **table**, **String** **where**) – returns the first entity object of type **E** matching the criteria given in “where”.
+- **E** **findFirst**(**Class**\<**E**\> **table**, **String** **where**) – returns the first entity object of type **E** matching the criteria given in “where”
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-6.jpg" /]
 
@@ -160,9 +160,9 @@ If the returned value is null we need to do an insert, otherwise, update. So far
 
 We need to implement 2 more methods:
 
-- **private** **boolean** **doInsert**(**E entity, Field primary**).
+- **private** **boolean** **doInsert**(**E entity, Field primary**)
 
-- **private** **boolean** **doUpdate**(**E entity, Field primary**).
+- **private** **boolean** **doUpdate**(**E entity, Field primary**)
 
 Both methods would prepare query statements and execute them.
 
@@ -172,25 +172,25 @@ The **Id** is generated on a database level. Both methods return whether the ent
 
 Here are some tips for the Insert method:
 
-- Get the table name you will be inserting into.
+- Get the table name you will be inserting into
 
-- Start joining the components of your query – **INSERT** clause, table name + fields, **VALUES** and the corresponding values for the insertion.
+- Start joining the components of your query – **INSERT** clause, table name + fields, **VALUES** and the corresponding values for the insertion
 
 **HINT**: Iterate over entity’s fields.
 
-- Prepare and execute statement via the connection.
+- Prepare and execute statement via the connection
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-14.jpg" /]
 
 And some tips for the update method:
 
-- Get the table name you will be updating into.
+- Get the table name you will be updating into
 
-- Start joining the components of your query – **UPDATE** clause, table name, **SET**, **WHERE** and the given predicate.
+- Start joining the components of your query – **UPDATE** clause, table name, **SET**, **WHERE** and the given predicate
 
-**HINT**: Iterate over entity’s fields and add “id = \{entity’s id value\}” to **WHERE** clause.
+**HINT**: Iterate over entity’s fields and add “id = \{entity’s id value\}” to **WHERE** clause
 
-- Prepare and execute a statement via the connection.
+- Prepare and execute a statement via the connection
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-15.jpg" /]
 
