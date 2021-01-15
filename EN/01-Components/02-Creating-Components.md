@@ -14,7 +14,9 @@ A component contains 3 parts:
 - TypeScript File: a Model
 - Style File: style CSS
 
-To create a component we need the **Component Decorator**. It provides metadata and tells Angular that we are creating a **Component** and not an ordinary class.
+To create a component we need the **Component Decorator**. 
+
+It provides metadata and tells Angular that we are creating a **Component** and not an ordinary class.
 
 First of all, we import **Component** from the `@angular/core` library, so we can create an Angular Component.
 

@@ -6,7 +6,9 @@
 
 A component controls a **patch** of screen called a **view**.
 
-We define a component's **application logic** or what it does to support the view inside a class. Each component has its own **HTML** and **CSS** template.
+We define a component's **application logic** or what it does to support the view inside a class. 
+
+Each component has its own **HTML** and **CSS** template.
 
 The class interacts with the view through an **API** of **properties** and **methods**.
 
