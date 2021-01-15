@@ -20,7 +20,7 @@ Look at the pictures below to see what must happen:
 
 - Home page before importing anything:
 
- [image assetsSrc="Final-Exam.png" /]
+[image assetsSrc="Final-Exam.png" /]
 
 - Import JSON page before importing anything:
 
@@ -403,9 +403,9 @@ Export the data in the formats specified below.
 - Return the information in this format:
 
 **"Passenger {firstName}  {lastName}**
-  **Email - {email}**
-**Phone - {phoneNumber}**
-  **Number of tickets - {number of tickets}**
+   **Email - {email}**
+   **Phone - {phoneNumber}**
+   **Number of tickets - {number of tickets}**
 **. . ."**
 
 [/slide]
