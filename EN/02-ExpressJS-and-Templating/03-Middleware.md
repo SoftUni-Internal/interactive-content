@@ -24,7 +24,7 @@ We use middleware functions to:
 
 ## How to load a Middleware
 
-To load **our middleware**, we utilise the `app.use()` method which accepts our function as a parameter.
+To load **our middleware**, we utilize the `app.use()` method which accepts our function as a parameter.
 
 Here is a simple example:
 
@@ -44,7 +44,7 @@ Then we create a new instance of the **app object**.
 
 We hand over our middleware function to the `app.use()` method.
 
-In the function body we have called the console.log() method with a simple string.
+In the function body we have called the `console.log()` method with a simple string.
 
 We call the **next function**, if such exists in the **middleware stack**, with the help of `next()`.
 
@@ -87,7 +87,7 @@ router.use((req, res, next) => {
 
 We define **error-handling middleware** functions in mostly the same fashion as other middleware functions.
 
-A main characteristic of error-handling functions is that they accept a fourth argument \- the `error` object:
+The main characteristic of error-handling functions is that they accept a fourth argument \- the `error` object:
 
 ```js
 app.use(function (err, req, res, next) {
@@ -96,7 +96,7 @@ app.use(function (err, req, res, next) {
 });
 ```
 
-In this example we call the `console.error()` with the error stack as a parameter.
+In this example, we call the `console.error()` with the error stack as a parameter.
 
 We also assign a status of `404 - Not Found` to the response object.
 
@@ -108,7 +108,7 @@ We install third-party middleware as any other **Node.js module**:
 
 `npm install name-of-middleware-module`
 
-After it finishes installing, we have to **import it**, either at application level or at the router level.
+After it finishes installing, we have to **import it**, either at the application level or at the router level.
 
 We will use the `cookie-parser` module as an example:
 

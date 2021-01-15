@@ -36,10 +36,10 @@ app.get('/', (req, res) => {
 })
 ```
 
-When we receive `GET` request, this handler will be called and will return the corresponding responce.
+When we receive a `GET` request, this handler will be called and will return the corresponding response.
 
 In this case `200` and` Welcome to Express.js! `, which means that our request has been processed.
 
-Finally, we call `app.listen`, on which we pass the port on which our application will listen and callback function, which says that` Express running on port: $ {port} ... `.
+Finally, we call `app.listen`, on which we pass the port on which our application will listen and a callback function, which says that` Express running on port: $ {port} ... `.
 
 [/slide]

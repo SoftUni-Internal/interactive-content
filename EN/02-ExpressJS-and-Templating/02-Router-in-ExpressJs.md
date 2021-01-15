@@ -9,7 +9,6 @@ Example:
 
 `app.METHOD(PATH, HANDLER)`
 
-
 In this example:
 
 - `app` is an instance of express.
@@ -27,7 +26,7 @@ In this example:
 
 In this example, there are different requests as well as their path.
 
-The type of requests is `GET`, `POST` and `PUT`, and each of the requests has its own **route**.
+The type of requests is `GET`, `POST`, and `PUT`, and each of the requests has its own **route**.
 
 ```js
 // GET method route
@@ -44,7 +43,7 @@ app.put('/', (req, res) => {
 })
 ```
 
-The arrangement of routes is important, because when we have two get routs at the same address, the program will enter the first one it comes across.
+The arrangement of routes is important because when we have two get routs at the same address, the program will enter the first one it comes across.
 
 [/slide]
 
@@ -64,7 +63,7 @@ app.all('/about', (req, res, next) => {
   res.send('Show about page.')
 })
 ```
-In this example we tap route `app.all` and the function with which we print `Middleware execution..` to the console.
+In this example, we tap the route `app.all` and the function with which we print `Middleware execution..` to the console.
 
 Then, thanks to `next` with a separate function we return a response, which in this case is `Show about page.`
 [/slide]
@@ -77,6 +76,7 @@ Routes are not strictly defined.
 We can create a path using regex.
 
 In this example, we perform this function on all routes that end in `fly`.
+
 ```js
 app.get('*',(req, res) => {
   res.send('Matches everything')
@@ -87,6 +87,7 @@ app.get('/ab*cd', (req, res) => {
 app.get(/.*fly$/, (req, res) => {
   res.send('butterfly, dragonfly') })
 ```
+
 [/slide]
 
 [slide]
@@ -110,10 +111,9 @@ app.get('/users/:userId(\\d+)', (req, res) => {
   res.send(paramsObj) })
 ```
 
-In this way we can validate the route.
+In this way, we can validate the route.
 
-In this case, if route is not just numbers, then we will get an error `Not Found`.
-
+In this case, if the route does not just number, then we will get an error `Not Found`.
 [/slide]
 
 [slide]
@@ -147,11 +147,11 @@ app.get('/pdf', (req, res) => {
   res.download('FULL PATH TO PDF') })
 ```
 
-- `res.end` \- end the response process
+- `res.end`: end the response process
 
-- `res.json` \- send a JSON response
+- `res.json`: send a JSON response
 
-- `res.redirect` \- redirect a request (to another page)
+- `res.redirect`: redirect a request (to another page)
 
 ```js
 app.get('/about/old', (req, res) => {
@@ -159,7 +159,7 @@ app.get('/about/old', (req, res) => {
 
 ```
 
-- `res.sendFile` \- send a file as an **octet stream**
+- `res.sendFile`: send a file as an **octet stream**
 
 ```js
 app.get('/file/:fileName', (req, res) => {
@@ -167,7 +167,7 @@ app.get('/file/:fileName', (req, res) => {
   res.sendFile("PATH TO FILE" + fileName) })
 ```
 
-- `res.render` \- render a view template, index HTML or other template
+- `res.render`: render a view template, index HTML or other template
 [/slide]
 
 [slide]
