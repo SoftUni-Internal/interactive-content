@@ -37,7 +37,7 @@ console.log("Node.js server running on port 3000");
 
 - **Wrapping** information about requests and responses in a **single object**.
 
-## The topic of the next lesson is:
+## In the next lesson we will learn:
 
 **Streams and utilities**
 

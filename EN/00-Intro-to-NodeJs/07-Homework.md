@@ -1,7 +1,6 @@
 # Homework: Cat Shelter
 
 [slide]
-
 # Description
 
 _**Here is a**_ [link](https://mega.nz/file/nNhD1IBA#x5MaZXnKvOaHsgzcyirIoEXlMRZ741Ko0XkgcoASI0k) _**to the resources for this task**_.
@@ -18,7 +17,11 @@ Design and implement a "**Cat Shelter**" **web application** (containing routing
 
 It must contain the following functionality:
 
-## Functionality
+[/slide]
+
+[slide]
+
+# Functionality
 
 - **Add Cat Breed**
 
@@ -44,7 +47,7 @@ It must contain the following functionality:
 - **Search Cat**
   - Search in cat "database" by some **query string** and shows the results if any
 
-## Examples
+# Examples
 
 - Home page `/`, where **all** created **cats** in the database are **shown**
 
@@ -62,7 +65,11 @@ Currently, these 5 breeds are created (**Bombay Cat**, **American Bobtail Cat**,
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-4.jpg" /]
 
-## Expected Behavior
+
+[/slide]
+
+[slide]
+# Expected Behavior
 
 Adding a new cat breed called "**Persian cat**"
 
@@ -78,7 +85,7 @@ After clicking the `[ADD CAT]` **button**, a **redirect** should be followed and
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-8.jpg" /]
 
-For instance, if we click over **Jerry's \[Change Info\] button**, the following page should be shown:
+For instance, if we click over Jerry's `[Change Info]` button, the following page should be shown:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-9.jpg" /]
 
@@ -104,24 +111,27 @@ If we use the search bar to check all Persian cats, the result should be:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-15.jpg" /]
 
-## Routing
+[/slide]
+
+[slide]
+# Routing
+
 
 There will be different views, which are displayed based on the routing (the URL).
 
 There are no strict rules of how the current application routing should look like but there are some common set of rules to follow:
 
 - Use **short** and **clear** URL's
-  - Good examples
-    - `/cats/add`
-    - `/cats/edit/3`
-  - Bad examples
-    - `/catAddInfo.html`
-    - `showAllProductsByCategoryName/{categoryName}`
+  - Good examples: `/cats/add`, `/cats/edit/3`
+
+  - Bad examples: `/catAddInfo.html`, `showAllProductsByCategoryName/{categoryName}`
+
 - Follow the **HTTP standards**
   - Proper usage of HTTP methods (GET, POST, PUT, etc.)
+
   - Follow the GET – POST – Redirect pattern
 
-## Models
+# Models
 
 **Cat**
 
@@ -138,10 +148,7 @@ There are no strict rules of how the current application routing should look lik
 [/slide]
 
 [slide]
-
-# Laying the Project Fundamentals
-
-## Setup IDE
+# Setup IDE
 
 For starters, configure your IDE or text editor.
 
@@ -151,7 +158,7 @@ Other popular choices are **Atom** and **WebStorm**.
 
 Before you continue with the next step make sure everything about your IDE is configured and you are up and ready to go.
 
-## Initial Setup
+# Initial Setup
 
 First, let us create our project:
 
@@ -169,7 +176,9 @@ This will open the editor for you.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-19.jpg" /]
 
-Now let's create the initial project folder structure. It may look like this:
+Now let us create the initial project folder structure. 
+
+It may look like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-20.jpg" /]
 
@@ -184,7 +193,6 @@ And move all **views** into the **views folder** like this:
 [/slide]
 
 [slide]
-
 # Start the Server
 
 Go to the `index.js` file and start implementing the server.
@@ -201,10 +209,10 @@ When you do that, just open the Terminal with **(Ctrl + `)** and run the server 
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-25.jpg" /]
 
+
 [/slide]
 
 [slide]
-
 # Display the Home Page
 
 We will start implementing the logic for application in the following steps.
@@ -241,13 +249,15 @@ Now we should tell the server when the home handler will handle the request (whe
 
 If we could not handle the current request, we will notify the server of that by returning true (is a request not handled - true)
 
-What is left is to find the HTML5 page read it and send it as a response – here is how it could be done:
+What is left is to find the HTML5 page read it and send it as a response – here is how it could be done.
+[/slide]
 
-## Hints
+[slide]
+# Hints
 
 Inside the if statement above we should locate the local index.html file (our home page) and store the path to it into a variable called **filePath** for instance.
 
-Use **path.normalize** and **path.join** functions and \_\_**dirname property** to achieve that.
+Use **path.normalize** and **path.join** functions and `__`**dirname property** to achieve that.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-31.jpg" /]
 
@@ -294,7 +304,6 @@ Our **index.html** file but **without any styles**, if you open the **network ta
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-38.jpg" /]
 
 In other words, the server does not have the functionality to serve static files. We will take care of that in the next section.
-
 [/slide]
 
 [slide]
@@ -350,9 +359,10 @@ Start the web application again:
 
 [/slide]
 
+
 [slide]
 
-# Implement "Database"
+# Implement Database
 
 As we mentioned early, we will use **json files**.
 
@@ -374,7 +384,7 @@ At the beginning, they will be an **empty array** (both files) but when we start
 
 A new handler should be created for the cat logic.
 
-Create "**cat.js**" inside the "**handlers**" folder.
+Create `cat.js` inside the "**handlers**" folder.
 
 The handler will be responsible for displaying the (HTML) form **or** parsing the data from it and add a new cat inside the **json** file:
 
@@ -418,7 +428,7 @@ Restart the server and go to the `localhost:3000/cats/add-cat`
 
 To create a new cat, first we should create the cat breeds functionality, because they will be listed in **addCat page** as **options elements** inside the **select menu**.
 
-Handle the post request in /**cats**/**add-breed**, save the given breed inside the **breeds.json** file and when the **addCat.html** file is loaded we should use the breeds inside that **json** file, so they could be picked when a new cat is added to our application.
+Handle the post request in `/cats/add-breed`, save the given breed inside the **breeds.json** file and when the **addCat.html** file is loaded we should use the breeds inside that **json** file, so they could be picked when a new cat is added to our application.
 
 To handle **POST request**, the logic is similar:
 
@@ -428,11 +438,11 @@ You have to:
 
 - **Parse** the **incoming data** from the **form**
 
-- **Read** the **breeds.json** file
+- **Read** `the breeds.json` file
 
-- **Modify** the **breeds.json** file
+- **Modify** the `breeds.json` file
 
-- **Update** the **breeds.json** file
+- **Update** `the breeds.json` file
 
 - **Redirect** to the home page `/` and **end** the **response**
 
@@ -465,14 +475,13 @@ The next step is to visualize all breeds from this json file, into the **select 
 [/slide]
 
 [slide]
-
 # Making Custom Templates
 
 To continue, we must create **2 templates**.
 
 One for all created **breeds** inside the json file and one for all listed **cats** into the home page.
 
-Let's start with the simple one (breeds) because we can't create a new cat yet.
+Let us start with the simple one (breeds) because we can not create a new cat yet.
 
 Here is the structure:
 
@@ -512,7 +521,9 @@ But here comes the funny part, because they add a new cat form that contains the
 
 That means this time we must process the incoming data differently.
 
-We will use **formidable**. You can check how this library works, but simply you can use the following code structure:
+We will use **formidable**. 
+
+You can check how this library works, but simply you can use the following code structure:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-65.jpg" /]
 
@@ -528,19 +539,24 @@ Just get the **old** and the **new path** on that file and pass them as argument
 
 And via `readFile()` and `writeFile()` functions in `fs module` you can get all cats inside `json.file`, modify them and write them back to the json file where the new cat will be included.
 
+[/slide]
+
+[slide]
+# Making Custom Templates: Example
+
 Here is the example:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-67.jpg" /]
 
-This time if we open the **cats.json** file it won't be an empty array anymore.
+This time if we open the `cats.json` file it will not be an empty array anymore.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-68.jpg" /]
 
 Now we already can create new cats.
 
-To fully check if the entire logic is working, you can check the /**content**/**images**/.
+To fully check if the entire logic is working, you can check the `/content/images/`.
 
-If the uploaded picture from you is there, everything is fine. So, we can use the given template and render all cats inside the **cats.json file**.
+If the uploaded picture from you is there, everything is fine. So, we can use the given template and render all cats inside the `cats.json` file.
 
 Here is the cat structure:
 
@@ -548,21 +564,21 @@ Here is the cat structure:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-70.jpg" /]
 
-When rendering the **index.html** page we should loop through all cats inside **cats.json** and use the placeholder from above to change and include them into the HTML file before it is rendered.
+When rendering the `index.html` page we should loop through all cats inside `cats.json` and use the placeholder from above to change and include them into the HTML file before it is rendered.
 
 Here is how that work can be done:
 
-Go to **home.js**, because there is the logic we should change. There we load **index.html file** but with static data.
+Go to `home.js`, because there is the logic we should change. There we load `index.html` file but with static data.
 
 Change it to this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-71.jpg" /]
 
-Loop through all cats inside the **cats.json** file and use the given from the skeleton placeholder to fill every single cat information into the right place.
+Loop through all cats inside the `cats.json` file and use the given from the skeleton placeholder to fill every single cat information into the right place.
 
 Do not forget to `write()` and `end()` the response.
 
-Do not forget to change the **index.html** as well.
+Do not forget to change the `index.html` as well.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-72.jpg" /]
 
@@ -572,7 +588,7 @@ Now, if you restart the server and check the home page `localhost:3000`, the res
 
 The picture is not visualized on the page.
 
-The reason behind that is because when we serve static files, we don't think about all edge cases.
+The reason behind that is because when we serve static files, we do not think about all edge cases.
 
 To solve this problem, we should extend our `static-handler.js` logic.
 
@@ -586,16 +602,15 @@ The only difference between them is the **encoding** which is the second argumen
 
 When some of the following files are served, there should be no encoding or at least no **utf8** (**png**, **jpg**, **jpeg** etc...).
 
-You should just **check** when the **pathname starts with** '/**content**' and the **request method** is '**GET**', and also the **pathname ends with** some of the image extension, read the file, pass the **pathname** and the **callback** as arguments that's it.
+You should just **check** when the **pathname starts with** `/content` and the **request method** is `GET`, and also the **pathname ends with** some of the image extension, read the file, pass the **pathname** and the **callback** as arguments that is it.
 
-In any other cases, no matter the **pathname** ending you should put the encoding ('**utf8**') for now.
+In any other cases, no matter the **pathname** ending you should put the encoding `utf8` for now.
 
 As it is done above in the picture.
 
 If you do that the result will be:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-75.jpg" /]
-
 [/slide]
 
 [slide]
@@ -610,17 +625,17 @@ So, the missing logic we should implement is:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-76.jpg" /]
 
-When some of the `[Change info]` buttons are clicked, you should check the **cat id** which is provided into the **url**, search that cat in the **cat.json file** and use templates to replace the static data with the current cat information.
+When some of the `[Change info]` buttons are clicked, you should check the **cat id** which is provided into the **url**, search that cat in the `cat.json` file and use templates to replace the static data with the current cat information.
 
-If you check **home.js handler**, you will see this:
+If you check `home.js` handler, you will see this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-77.jpg" /]
 
-This is our **cat template**. When you get the current cat from the **json.file**, you can use the logic from above to get the file and render it and just apply the template:
+This is our **cat template**. When you get the current cat from the `json.file`, you can use the logic from above to get the file and render it and just apply the template:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-78.jpg" /]
 
-Also **do not forget** to change the **editCat.html** file as well:
+Also **do not forget** to change the `editCat.html` file as well:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-79.jpg" /]
 
@@ -628,7 +643,7 @@ The logic after clicking over `[New Home]` button is the same:
 
 - Check the **url** to get the current **cat id**.
 
-- **Search** through **cat.json** file that id.
+- **Search** through `cat.json` file that id.
 
 - **Replace** editCat.html with the current cat information like above.
 
@@ -636,15 +651,15 @@ The logic after clicking over `[New Home]` button is the same:
 
 With the simple difference when you **edit** some of the cat information you **change** that cat inside json file instead of creating a new one (change it with the incoming information from the form). 
 
-And **delete** the current cat from the shelter (**cats.json file**).
+And **delete** the current cat from the shelter `cats.json` file.
 
 The steps are the same:
 
 - **Parse** the incoming data from the form (if you are editing the cat's information).
 
-- **Read** the **cats.json** file via the **fs** module update the cats (edit the cat or deleting it).
+- **Read** the `cats.json` file via the **fs** module update the cats (edit the cat or deleting it).
 
-- **Rewrite** the **cats.json** file with the applied changes.
+- **Rewrite** the `cats.json` file with the applied changes.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-80.jpg" /]
 
@@ -652,7 +667,7 @@ The steps are the same:
 
 [slide]
 
-# Search\*
+# Search
 
 Having a web page with cats is fun but sometimes you want to filter them by some criteria.
 
@@ -663,3 +678,4 @@ After submitting the form, all the cats containing such text or having the same 
 **Good luck!**
 
 [/slide]
+
