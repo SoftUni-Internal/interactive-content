@@ -45,8 +45,6 @@ There are two ways to execute Node.js code:
 - Running it **directly from the terminal**.
 
 ```js live
-node 
-
 function greeting() {
     console.log("Hello Node.js!");
 }
