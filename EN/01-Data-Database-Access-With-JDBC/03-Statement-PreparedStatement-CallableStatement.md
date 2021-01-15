@@ -62,6 +62,7 @@ END //
 
 DELIMITER
 
+//Call with JAVA
 String sql =  "{CALL GetAllEmployeesWithName(?)}";
 CallableStatement stmt = con.prepareCall(sql);
 

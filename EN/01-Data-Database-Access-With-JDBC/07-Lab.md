@@ -175,6 +175,19 @@ Get the user’s **username** and **password** and change the connection string 
 
 [slide]
 
+# 2. Username and statement
+
+## Description
+
+Ask the user for a username, which you will use to retrieve the desired info. Write a proper SQL statement to get the result.
+
+[image assetsSrc="Spring-Data-Database-Access-With-JDBC-Lab(3).png" /]
+
+
+[/slide]
+
+[slide]
+
 # 3.Output
 
 ## Description 
@@ -183,6 +196,6 @@ Consider that the input may be invalid – **user with given username might not 
 
 If so, print **“No such user exists”**, otherwise, print the **user_name**, **first** and **last names** and the total **count** of games a user has played
 
-[image assetsSrc="Spring-Data-Database-Access-With-JDBC-Lab(3).png" /]
+[image assetsSrc="Spring-Data-Database-Access-With-JDBC-Lab(4).png" /]
 
 [/slide]
