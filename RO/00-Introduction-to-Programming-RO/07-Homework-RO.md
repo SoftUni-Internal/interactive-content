@@ -169,9 +169,4 @@ Imprimă  un pătrat de stele „7 * 7” astfel:
 [/code-task]
 [/slide]
 
-[slide]
-# Rezultatele temelor pentru acasă
-[tasks-results/]
-
-[/slide]
 
