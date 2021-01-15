@@ -1,10 +1,10 @@
-[slide]
-
 # Lab
 
-## Database Apps Introduction
+[slide]
 
-## Part 0: Inspect SoftUni DB.
+# Part 0: Inspect SoftUni DB.
+
+## Database Apps Introduction
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC-Lab.png" /]
 

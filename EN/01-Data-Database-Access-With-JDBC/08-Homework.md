@@ -1,6 +1,6 @@
-[slide]
-
 # Homework
+
+[slide]
 
 ## 1. Initial Setup 
 
@@ -85,7 +85,7 @@ Print appropriate messages after each operation – see the examples.
 | Minion: Robert 14 Berlin Villain: Gru | Villain Gru was added to the database. Successfully added Robert to be minion of Gru. |
 | Minion: Cathleen 20 Liverpool Villain: Gru | Town Liverpool was added to the database. Successfully added Cathleen to be minion of Gru.  |
 | Minion: Mars 23 Sofia Villain: Poppy  | Villain Poppy was added to the database. Successfully added Mars to be minion of Poppy  |
-| Minion: Carry 20 Eindhoven Villain: Jimmy  | Town Eindhoven was added to the database. Villain Jimmy was added to the database. Successfully added Carry to be minion of Jimmy  |
+| Minion: Carry 20 Eindhoven Villain: Jimmy  | асд  |
 |   |   |
 
 [/slide]
