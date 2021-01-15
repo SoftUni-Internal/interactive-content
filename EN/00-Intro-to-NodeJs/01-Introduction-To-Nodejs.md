@@ -44,24 +44,24 @@ There are two ways to execute Node.js code:
 
 - Running it **directly from the terminal**.
 
-```js
+```js live
 node 
 
 function greeting() {
     console.log("Hello Node.js!");
 }
 
-greeting();     // Hello Node.js!
+greeting(); 
 ```
 
 - Writing the code in a file and opening it with the `node` command.
 
-```js
+```js live
 function sumNumbers(x, y){
     console.log(x + y);
 }
 
-sumNumbers(25, 55);     // 80
+sumNumbers(25, 55);    
 ```
 
 Suppose the code from above is saved in an `app.js` file.
@@ -122,7 +122,7 @@ This is some of the information that could be found in a `package.json` file:
 
 - `scripts`
 
-Here is how a `package.json` file looks like: 
+Here is how a `package.json` file looks like:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-1.jpg" /]
 [/slide]
