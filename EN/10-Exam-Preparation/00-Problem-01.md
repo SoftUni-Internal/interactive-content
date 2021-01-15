@@ -1,8 +1,8 @@
-# Football Information
+# 1. Functionality Overview
 
 [slide]
 
-# 1. Functionality Overview
+# Football Information
 
 You have been employed by the Next Level Technologies Ltd. to finish the database layer, which supports basic functionality like importing data and exporting some results.
 
