@@ -18,11 +18,11 @@ They start with **use**, and after that is the name of the function.
 
 For example:
 
--  `useState()`,
+- `useState()`
 
--  `useContext()`,
+- `useContext()`
 
--  `useEffect()`.
+- `useEffect()`
 
 The main idea is to use the class functionality into functions components.
 

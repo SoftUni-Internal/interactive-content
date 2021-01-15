@@ -2,7 +2,7 @@
 
 # Summary
 
-In this lesson you learned:
+## In this lesson you learned:
 
 -  What are Hooks.
 
@@ -30,7 +30,7 @@ In this lesson you learned:
 
 -  Custom Hooks.
 
-   -  We can have re\-usable logic without adding more components to the tree.
+   -  We can have re-usable logic without adding more components to the tree.
 
    -  Every custom hook need to start with **use**.
 
@@ -56,8 +56,8 @@ In this lesson you learned:
 
    -  Unit Testing with JEST and Enzyme.
 
-   -  How to test Asynchronous code.
+   -  How to test the asynchronous code.
 
-   -  Server\-side rendering with React.
+   -  Server-side rendering with React.
 
 [/slide]
