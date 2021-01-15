@@ -8,9 +8,9 @@
 
 -  What is Routing.
 
-   -  Client\-Side.
+   -  Client-Side.
 
-   -  Server\-Side
+   -  Server-Side
 
 -  What is React Router.
 
@@ -58,12 +58,12 @@
 
 ## In the next lesson you will learn about:
 
--  Forms
+- Forms
 
-   -  Controlled Forms
+   - Controlled Forms
 
-   -  Uncontrolled Forms
+   - Uncontrolled Forms
 
-   -  How to validate them.
+   - How to validate them.
 
 [/slide]

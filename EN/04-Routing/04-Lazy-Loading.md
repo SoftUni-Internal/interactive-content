@@ -26,7 +26,7 @@ After everything is bundled, WebPack will go to the Navigation again and continu
 
 # Dynamic Import
 
-We use **dynamic import**, also called **code\-splitting** is a React syntax used for not loading everything on the first request.
+We use **dynamic import**, also called **code-splitting** is a React syntax used for not loading everything on the first request.
 
 That can be useful when we have really big components, which can be loaded if only we need them.
 

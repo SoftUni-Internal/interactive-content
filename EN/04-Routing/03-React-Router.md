@@ -6,7 +6,7 @@
 
 **React Router** is an **API** library for React apps.
 
-It supports **client\-side** rendering and **server\-side** rendering.
+It supports **client-side** rendering and **server-side** rendering.
 
 This router uses **component structure**.
 
@@ -41,13 +41,13 @@ To setup the router, we need to import some components.
 
 They are:
 
--  Route
+- Route
 
--  Link
+- Link
 
--  BrowserRouter
+- BrowserRouter
 
--  Switch
+- Switch
 
 The importing will look like this:
 
@@ -119,13 +119,13 @@ We use the `to=''` attribute to set the path.
 
 The **BrowserRouter** has different objects like:
 
--  Match
+- Match
 
--  Location
+- Location
 
--  History
+- History
 
-The **BrowserRouter** works like a **HOC** \(Higher Order Component\), which injects these objects inside the components.
+The **BrowserRouter** works like a **HOC** (Higher Order Component), which injects these objects inside the components.
 
 They are injected as props.
 
@@ -133,13 +133,13 @@ The **match** object stores information about the URL.
 
 For example:
 
--  **params** \- If there are any **params**, like keys or values.
+- **params**: If there are any **params**, like keys or values.
 
--  **isExact** \- If the whole URL is matched.
+- **isExact**: If the whole URL is matched.
 
--  **path** \- The used pattern to match the URL.
+- **path**: The used pattern to match the URL.
 
--  **URL** \- The path that is matched from the URL.
+- **URL**: The path that is matched from the URL.
 
 The **Location** object stores where the app was, where we want it to go, and where it is now.
 
@@ -151,15 +151,15 @@ It provides us the whole browser history, and we can modify it.
 
 We can:
 
--  See the **length**.
+- See the **length**.
 
--  See what is the **action** type.
+- See what is the **action** type.
 
--  To **push**
+- To **push**
 
--  To **replace**
+- To **replace**
 
--  And many more.
+- And many more.
 
 [/slide]
 
@@ -239,7 +239,7 @@ NavLink has attributes that help us with styling when it is active.
 
 This attributes are **activeStyle** and **activeClassName**.
 
-The **activeStyle** one is for in\-line css.
+The **activeStyle** one is for in-line css.
 
 We use the **activeClassName** when we use classes, which is the better option.
 
@@ -263,7 +263,7 @@ Now let us have a look at **activeClassName**:
 
 **ActiveClassName** is almost the as **activeStyle**.
 
-But with the difference that instead of in\-line CSS, we put the name of the class.
+But with the difference that instead of in-line CSS, we put the name of the class.
 
 [/slide]
 
