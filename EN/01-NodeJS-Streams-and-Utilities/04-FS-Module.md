@@ -49,7 +49,9 @@ The method accepts two parameters:
 
 The first one is the **path** to the file we are reading from.
 
-The second one is **encoding**. It is a string value which specifies which encoding would be used for the filenames given to the callback argument. The default value is "utf8".
+The second one is **encoding**. It is a string value that specifies which encoding would be used for the filenames given to the callback argument. 
+
+The default value is `utf8`.
 
 The third one is a callback function.
 
@@ -60,7 +62,7 @@ console.log(data);
 ```
 If we use the `fs.readdir()` method then the content of a given directory will be read asynchronously. 
 
-It returns an array of String, Buffer or fs.Dirent objects that contain the files in the directory.
+It returns an array of String, Buffer, or `fs.Dirent` objects that contain the files in the directory.
 
 ```js
 let fs = require('fs');
@@ -79,7 +81,7 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
 
 # Create a directory
 
-To create a directory synchronously use the `mkdirSync()` nethod.
+To create a directory synchronously use the `mkdirSync()` method.
 
 ```js
 fs.mkdirSync('./myDir');
@@ -129,7 +131,7 @@ fs.rename('./oldName', './newName', err => {
 
 When writing data to a file we need to specify the path to the file first.
 
-After that we can use synchronous or asynchronous methods to write the data to the file.
+After that, we can use synchronous or asynchronous methods to write the data to the file.
 
 Use the `writeFileSync()` or `writeFile()` method.
 

@@ -8,17 +8,17 @@ Node.js has a built-in module, called "Events", where you can create, fire, and 
 
 To include the built-in Events module use the `require()` method. 
 
-In addition, all event properties and methods are an instance of an EventEmitter object. 
+Besides, all event properties and methods are an instance of an EventEmitter object. 
 
 To be able to access these properties and methods, create an EventEmitter object.
 
-With the EventEmitter object we can assign handlers to our own events.
+With the EventEmitter object, we can assign handlers to our own events.
 
 In this example we use the `eventEmitter.on()` method to assign the event handler to an event called "click".
 
-Finally we fire the event using the `eventEmitter.emit()` method.
+Finally, we fire the event using the `event emitter.emit()` method.
 
-**Important thing to know is that Events are not Asychronous!**
+**Important thing to know is that Events are not Asynchronous!**
 
 ```js
 const events = require('events');
