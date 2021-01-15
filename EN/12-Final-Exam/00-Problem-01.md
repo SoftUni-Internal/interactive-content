@@ -24,48 +24,48 @@ Look at the pictures below to see what must happen:
 
 - Home page before importing anything:
 
- [image assetsSrc="Final-Exam.png" /]
+ [image assetsSrc="Final-Exam.jpg" /]
 
 
 - Import JSON page before importing anything:
 
- [image assetsSrc="Final-Exam(1).png" /]
+ [image assetsSrc="Final-Exam(1).jpg" /]
 
 - Import Towns first:
 
- [image assetsSrc="Final-Exam(2).png" /]
+ [image assetsSrc="Final-Exam(2).jpg" /]
 
 
 - Import Passengers second:
 
- [image assetsSrc="Final-Exam(3).png" /]
+ [image assetsSrc="Final-Exam(3).jpg" /]
 
 - Import JSON page after importing both files:
 
- [image assetsSrc="Final-Exam(4).png" /]
+ [image assetsSrc="Final-Exam(4).jpg" /]
 
 - Import XML page before importing the given data:
 
- [image assetsSrc="Final-Exam(5).png" /]
+ [image assetsSrc="Final-Exam(5).jpg" /]
 
 - Import Planes data:
 
- [image assetsSrc="Final-Exam(6).png" /]
+ [image assetsSrc="Final-Exam(6).jpg" /]
 
 - Import Tickets data:
 
- [image assetsSrc="Final-Exam(7).png" /]
+ [image assetsSrc="Final-Exam(7).jpg" /]
 
 - Import XML page after importing the data:
 
- [image assetsSrc="Final-Exam(8).png" /]
+ [image assetsSrc="Final-Exam(8).jpg" /]
 
 - Home page after the data is imported:
 
- [image assetsSrc="Final-Exam(9).png" /]
+ [image assetsSrc="Final-Exam(9).jpg" /]
 
 - Export passengers by tickets count descending, then by email:
 
- [image assetsSrc="Final-Exam(10).png" /] 
+ [image assetsSrc="Final-Exam(10).jpg" /] 
 
 [/slide]
