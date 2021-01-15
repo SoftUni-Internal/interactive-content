@@ -58,6 +58,6 @@ Look at the pictures below to see what must happen:
 
 - Export players with salary bigger than 100000:
 
-[image assetsSrc="Exam-Preparation(10).png" /]
+ [image assetsSrc="Exam-Preparation(10).png" /]
 
 [/slide]

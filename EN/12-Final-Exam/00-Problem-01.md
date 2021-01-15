@@ -24,7 +24,8 @@ Look at the pictures below to see what must happen:
 
 - Home page before importing anything:
 
-[image assetsSrc="Final-Exam.png" /]
+ [image assetsSrc="Final-Exam.png" /]
+
 
 - Import JSON page before importing anything:
 
@@ -34,8 +35,8 @@ Look at the pictures below to see what must happen:
 
  [image assetsSrc="Final-Exam(2).png" /]
 
-- Import Passengers second:
 
+- Import Passengers second:
 
  [image assetsSrc="Final-Exam(3).png" /]
 
