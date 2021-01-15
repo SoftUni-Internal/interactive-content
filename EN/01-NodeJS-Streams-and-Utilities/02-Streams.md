@@ -6,7 +6,7 @@
 
 A stream is an abstract interface for working with streaming data in Node.js. 
 
-It is a collections of data that is not available at once.
+It is a collection of data that is not available at once.
 
 Data may come continuously in chunks.
 
@@ -42,12 +42,12 @@ The `.read()` method is used to read the data out of the internal buffer.
 
 It returns data as a buffer object if no encoding is being specified or if the stream is working in object mode.
 
-This method accepts single parameter **size**, which specifies the number of bytes to be read from the internal buffer.
+This method accepts a single parameter **size**, which specifies the number of bytes to be read from the internal buffer.
 
 If no data exist in the buffer then **null** is returned.
 
 ```js
-readable.read( size );
+readable.read(size);
 ```
 
 The `.pause()` method is used to stop the flowing mode from emitting data events. 
@@ -60,7 +60,7 @@ This method does not accept any parameters.
 readable.pause();
 ```
 
-The `.resume()` method is used to data that has been paused and can be resumed, so that data can start flowing again.
+The `.resume()` method is used to data that has been paused and can be resumed so that data can start flowing again.
 
 This method does not accept any parameters.
 
@@ -70,7 +70,9 @@ readable.resume();
 
 **Events**
 
-All streams are instances of "EventEmitter". They emit events that can be used to read and write data.
+All streams are instances of "EventEmitter". 
+
+They emit events that can be used to read and write data.
 
 The most important events on a readable stream are:
 
@@ -90,13 +92,13 @@ An HTTP request is an instance of a readable stream.
 
 Take a look at the following example.
 
-To be able to create a server we need to require the "http" module from Node.js.
+To be able to create a server we need to require the "HTTP" module from Node.js.
 
 Then we use the `createServer()` method to create a server on your computer.
 
 This is a function that receives two callbacks - **req** and **res**.
 
-**req** stands for request and **res** stands for response.
+**req** stands for request and **res** stands for the response.
 
 The `req.on()` method binds an event to an object and adds a listener function for a specified event.
 
@@ -129,13 +131,15 @@ http.createServer((req, res) => {
 
 The `.write()` method takes three arguments:
 
-The chunk is usually a buffer, unless we configure the stream differently.
+The chunk is usually, a buffer unless we configure the stream differently.
 
 The encoding argument is needed in that case, but usually we can ignore it.
 
 The callback is a function that we need to call after we are done processing the data chunk.
 
-It is what signals whether the write was successful or not. To signal a failure, call the callback with an error object.
+It is what signals whether the write was successful or not. 
+
+To signal a failure, call the callback with an error object.
 
 ```js
 const { Writable } = require('stream');
@@ -195,13 +199,13 @@ An HTTP response is an instance of a writable stream.
 
 Take a look at the following example.
 
-First we require the "fs" module from Node.js, then we create a server, which will be listening on port 5000.
+First, we require the "fs" module from Node.js, then we create a server, which will be listening on port 5000.
 
-We start reading from a file called './bigfile.txt', which is the name of the file in this example.
+We start reading from a file called `./bigfile.txt`, which is the name of the file in this example.
 
 Then we use the `write()` method to write the data inside `src.on()` function.
 
-Finally we use `end()` method to finish writing the data.
+Finally, we use `end()` method to finish writing the data.
 
 ```js
 const fs = require('fs');
@@ -226,7 +230,7 @@ Here is an example of how we can transfer data using pipes.
 
 The `pipe()` function allows a readable stream to output directly to a writable stream.
 
-We read from the './bigfile.txt' and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
+We read from the `./bigfile.txt` and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
 
 ```js
 const fs = require('fs');
@@ -244,15 +248,15 @@ server.listen(5000);
 
 # Duplex and Transform Streams
 
-A duplex stream is one which is both readable and writable similar to a Transform stream. 
+A duplex stream is one that is both readable and writable similar to a Transform stream. 
 
-However most often a Duplex stream is usually referring to a stream which actually has two full independent streams embedded in it, one flowing out and one flowing in.
+However, most often a Duplex stream is usually referring to a stream that actually has two full independent streams embedded in it, one flowing out and one flowing in.
 
 A transform stream is a special kind of duplex stream where the output is a transformed version of the input.
 
-In the following example we read from 'index.js' and then we compress it to 'index.js.gz'.
+In the following example we read from `index.js` and then we compress it to `index.js.gz`.
 
-We require "fs" and "zlib" module from Node.js, then we create a readable and writable streams.
+We require "fs" and "zlib" modules from Node.js, then we create a readable and writable stream.
 
 Finally using the `.pipe()` method we transfer data from one file to another.
 
