@@ -750,8 +750,3 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

@@ -906,8 +906,3 @@ Insert 8 3
 
 [/slide]
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

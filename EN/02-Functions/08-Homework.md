@@ -962,9 +962,3 @@ We have a perfect number!
 [/code-task]
 
 [/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
