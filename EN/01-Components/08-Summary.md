@@ -15,7 +15,7 @@
     - from model to view.
     - from view to model.
     - two-way binding.
-
+    
 - We can intersect the lifecycle of a component.
 ```js
 ngOnInit() { this.data = 'Retrieve data'};
