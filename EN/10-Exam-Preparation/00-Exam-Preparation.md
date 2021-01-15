@@ -168,9 +168,9 @@ The **Football info** have prepared some XML data for you to import.
 <pictures/>
 
 // Result:
-//Successfully imported picture - google.pictures#1
-//Invalid picture
-//Successfully imported picture - google.pictures#2
+Successfully imported picture - google.pictures#1
+Invalid picture
+Successfully imported picture - google.pictures#2
 ```
 
 ### Team (teams.xml)
@@ -204,9 +204,9 @@ The **Football info** have prepared some XML data for you to import.
 
 
 // Result:
-//Successfully imported - West Valley
-//Invalid team
-//Invalid team
+Successfully imported - West Valley
+Invalid team
+Invalid team
 ```
 
 ## JSON Import
@@ -246,10 +246,10 @@ The **Football info** have prepared some XML data for you to import.
     . . .
 
 //Result:
-//Invalid player
-//Invalid player
-//Invalid player
-//Successfully imported player: Rubin Star
-//Successfully imported player: Serj Smokey
+Invalid player
+Invalid player
+Invalid player
+Successfully imported player: Rubin Star
+Successfully imported player: Serj Smokey
 ```
 [/slide]
