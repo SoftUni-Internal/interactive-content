@@ -16,7 +16,7 @@ Publications view, which shows all created posts ever.
 [slide]
 # Second Path
 
-Share your thoughts view, where the user can see the textarea where the post will be created and the last 3 posts ever.
+Share your thoughts view, where the user can see the tex tarea where the post will be created and the last 3 posts ever.
 
 [image assetsSrc="ReactJS-Workshop-Routing-4.png" /]
 

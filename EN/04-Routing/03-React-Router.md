@@ -37,7 +37,7 @@ We can install **React Router** from npm.
 
 We can do that by writing the following command in the terminal: `npm install react-router-dom --save`.
 
-To setup the router, we need to import some components.
+To set up the router, we need to import some components.
 
 They are:
 

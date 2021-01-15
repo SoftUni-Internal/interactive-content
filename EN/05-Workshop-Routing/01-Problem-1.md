@@ -16,14 +16,15 @@ Use **Postman** to create some entities or use "**mongoimport**" to [import the 
 
 Use the provided server to fetch all posts and list them into the front-end.
 
-The server will listen on port **9999** by default. 
+The server will listen on port **9999** by default.
 
 In order to fetch the data that you fed in the database you will have to make a **get request** on `localhost:9999/api/origami/`
 
 # Implementation
-Make sure you assign every **required attribute** to each Component, so the result is the same as the example above. 
 
-If at some point something is not right, be free to check the structure picture for each element or directly to the provided CSS. 
+Make sure you assign every **required attribute** to each Component, so the result is the same as the example above.
+
+If at some point something is not right, be free to check the structure picture for each element or directly to the provided CSS.
 
 **Also be free to extends the workshop as much as you want!**
 
