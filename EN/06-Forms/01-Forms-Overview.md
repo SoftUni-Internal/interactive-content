@@ -12,7 +12,7 @@ Form elements in React work a little differently from the rest of the HTML eleme
 
 That is because in React, form elements always keep some **internal state**.
 
-From the moment a component **renders**, it is equpped with an **initial state**.
+From the moment a component **renders**, it is equipped with an **initial state**.
 
 The following example illustrates a simple form.
 
@@ -28,9 +28,9 @@ The following example illustrates a simple form.
 
 **By default**, when pressing on the `Submit` button, you will be either **redirected** or the **current page** will **reload**.
 
-If this is the behaviour you are looking for, React supports it completely.
+If this is the behavior you are looking for, React supports it completely.
 
-However, since most React applications are **single page applications**, a common practice is to create a JavaScript **function which handles the form submission and accesses the user-entered data**.
+However, since most React applications are **single page applications**, a common practice is to create a JavaScript **function that handles the form submission and accesses the user-entered data**.
 
 There are two ways to handle forms in React:
 

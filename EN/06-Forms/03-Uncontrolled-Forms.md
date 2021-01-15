@@ -6,11 +6,11 @@
 
 There are instances in which handling data by the component itself does not suffice.
 
-**Uncotrolled components** are the alternative solution.
+**Uncontrolled components** are the alternative solution.
 
 In uncontrolled components, form data is **handled by the DOM itself**.
 
-Instead of writing an **event handler** for changing the **state**, in uncontrolled components we use a `ref`.
+Instead of writing an **event handler** for changing the **state**, in uncontrolled components, we use a `ref`.
 
 Refs are created using the `React.createRef()` method.
 
@@ -61,7 +61,7 @@ On the input field, we put a `ref` attribute, which points to the variable:
 
 `<input type="text" ref={this.input} />`
 
-Since the state is handled by the DOM, there is neither a `onChange` attribute, nor a change handler.
+Since the state is handled by the DOM, there is neither an `onChange` attribute nor a change handler.
 
 [/slide]
 

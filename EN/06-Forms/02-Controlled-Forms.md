@@ -10,10 +10,10 @@ In **controlled components**, form data is handled by their **internal state**.
 
 By default in HTML, form elements maintain their state by themselves, updating it on user input.
 
-In React however, we handle data inside the component:
+In React, however, we handle data inside the component:
 
 - The values of input elements are stored within the state
-- We use custom handlers for change or submit events
+- We use custom handlers to change or submit events
   - The `setState()` function is called in the event of state change
   - Using a custom function, we handle the form submission
 
@@ -62,7 +62,7 @@ export default SimpleForm;
 
 ```
 
-First, we create a class\-based component `SimpleForm`.
+First, we create a class-based component `SimpleForm`.
 
 In our return statement, we render a simple form with a **textbox** and a `Submit` button.
 
@@ -103,7 +103,7 @@ submitHandler(event) {
 
 It is very important to invoke the `event.preventDefault()` method.
 
-It **overrides** the default behaviour of HTML form submission, like **redirecting**.
+It **overrides** the default behavior of HTML form submission, like **redirecting**.
 
 Lastly, when using a class component we must `bind` our handlers so that `this` always points to the current component instance: 
 
@@ -124,7 +124,7 @@ constructor(props) {
 
 # Controlled Component
 
-There are some important keypoints to remember about controlled components:
+There are some important  key points to remember about controlled components:
 
 - You should always use `setState()` to modify the state
   - Directly modifying the state can result in losing data or the component not displaying changes
@@ -133,7 +133,7 @@ There are some important keypoints to remember about controlled components:
 
 - When the `value` attribute is set on a form element, the displayed value will always equal `this.state.value`
 
-- On every keystroke, `changeHandler` updates the state and the display value updates accordingly
+- On every keystroke, `changeHandler` updates the state, and the display value updates accordingly
 
 - Every type of state mutation has an associated handler
   - Like `changeHandler` and `submitHandler`, for example
@@ -164,9 +164,9 @@ The whole data flow of the form is managed by the developer:
 
 # Unified Unit Approach
 
-React handles all form inputs in a similar fashion.
+React similarly handles all form inputs.
 
-## The textarea element
+## The text area element
 
 A `<textarea>` element defines its text by its children in HTML:
 
@@ -176,7 +176,7 @@ A `<textarea>` element defines its text by its children in HTML:
 </textarea>
 ```
 
-Similar to an `<input>` element, in React, a `<textarea>` uses a value attribute which means it can be written identically to a form that uses a single\-line input.
+Similar to an `<input>` element, in React, a `<textarea>` uses a value attribute which means it can be written identically to a form that uses a single-line input.
 
 ``` js
 <form onSubmit={this.submitHandler}>
