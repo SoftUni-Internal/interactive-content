@@ -4,7 +4,7 @@
 
 # What is Pub/Sub?
 
-It is an architectural design pattern, used to communicate messages between different system components without them knowing anything about each other’s identity.
+It is an architectural design pattern, used to communicate messages between different system components without them knowing anything about each other's identity.
 
 Senders (publishers), do not program the messages to be sent directly to specific receivers (subscribers).
 
@@ -28,7 +28,7 @@ Next, we will define the **subscribe** method, which will be responsible for ins
 
 it checks to see if the "eventName" property in the subscribers storage is already an array. 
 
-If it is not, it assumes that this will be the first registered callback for subscribers[eventName] and initializes it into an array. 
+If it is not, it assumes that this will be the first registered callback for `subscribers[eventName]` and initializes it into an array. 
 
 Then, it proceeds to push the callback into the array.
 
