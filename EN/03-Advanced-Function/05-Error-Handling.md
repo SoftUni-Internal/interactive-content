@@ -9,7 +9,7 @@ A function should either:
 
 - Do what it is intended to;
 
-- Indicate a problem
+- Indicate a problem;
 
 Any other behavior is **incorrect** and is subject to **error handling**.
 
@@ -49,20 +49,20 @@ The three most common types of **errors** are:
   
   - Every programming language has a set of **grammar rules** which, if mistaken, cause problems
   
-  - Most [IDEs](https://en.wikipedia.org/wikiIntegrated_development_environment) come with the ability to warn you about **Syntax Errors** at the time of writing your code
+  - Most [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) have with the ability to warn you about **Syntax Errors** at the time of writing your code.
   
 
 - **Runtime Errors**
   
   - Runtime Errors happen after compilation, as a **user is executing your application**
   
-  - Making use of [frameworks](https://en.wikipedia.org/wiki/Software_framework) can significatly lower the chance of such errors
+  - Making use of [software frameworks](https://en.wikipedia.org/wiki/Software_framework) can significantly lower the chance of such errors.
 
 - **Logical errors**
   
-  - They occur when a mistake has been made in the**logic of the script** and the **expected result is incorrect**
+  - They occur when a mistake has been made in the **logic of the script** and the **expected result is incorrect**.
   
-  - They are most commonly known as **bugs**
+  - They are most commonly known as **bugs**.
 
 [/slide]
 
@@ -81,7 +81,7 @@ function isEven(num) {
 }
 ```
 
-If the `TypeError` is thrown, the rest of the code **will not** be executed.
+If ``TypeError`` is thrown, the rest of the code **will not** be executed.
 
 [/slide]
 
@@ -112,8 +112,8 @@ The `Error` object contains multiple properties:
 
 - `Error.prototype.name` - **name** of the error;
 
-- `Error.prototype.message` - an error **message**;
+- `Error.prototype.message` - the error **message**;
 
-- `Error.prototype.stack` - The [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the exception.
+- `Error.prototype.stack` - the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the exception.
   
 [/slide]
