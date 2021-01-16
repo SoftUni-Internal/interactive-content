@@ -14,11 +14,11 @@ function solution() {
 [task-description]
 ## Description
 
-Write a program that keeps a number **inside its context** and **returns** new function that **adds** a **given** number to the previous one.
+Write a program that keeps a number **inside its context** and **returns** a new function that **adds** a **given** number to the previous one.
 
 ## Input
 
-Check the **examples below** to see how your code will be executed
+Check the **examples below** to see how your code will be executed.
 
 ## Output
 
@@ -116,7 +116,7 @@ function currencyFormatter(separator, symbol, symbolFirst, value) {
 
 Write a **higher-order** function that fixes some of the parameters of another function. 
 
-Your program will receive a function that **takes 4 parameters** and **returns a formatted string** \(a monetary value with currency symbol\).
+Your program will receive a function that **takes 4 parameters** and **returns a formatted string** \(a monetary value with a currency symbol\).
 
 Your task is to return another function that only **takes one parameter** and **returns** the **same formatted string**.
 
@@ -136,11 +136,11 @@ The final parameter **value** is the one that the returned function will receive
 
 ## Input
 
-You will receive a **function** parameter
+You will receive a **function** parameter.
 
 ## Output
 
-You need to **return a function** that takes one parameter - **value**
+You need to **return a function** that takes one parameter - **value**.
 
 ## Examples
 
@@ -233,17 +233,17 @@ You should  print the result in a specific format.
 
 You will receive **2** parameters \(`data`, `criteria`\). 
 
-You should **parse** the input, find all employees that fullfil the citeria and print them.
+You should **parse** the input, find all employees that fulfills the criteria and print these employees.
 
 ## Input
 
-You will receive a **string** with all the employees, and a **criteria** by which you should sort the employees.
+You will receive a **string** with all the employees, and the **criteria** by which you should sort the employees.
 
 If the criteria is **"all"** print all the employees in the given format.
 
 ## Output
 
-The output should be the **printed** on the console.
+The output should be the **printed** to the console.
 
 For more information check the examples.
 
@@ -336,7 +336,7 @@ gender-Female
 [task-description]
 ## Description
 
-Write a function that **sorts an array** with **numeric** values in **ascending** or **descending** order, depending on an **argument** that is passed to it. 
+Write a function that **sorts an array** with **numeric** values in **ascending** or **descending** order, depending on the **argument** that is passed to it. 
 
 You will receive a **numeric array** and a **string** as arguments to the first function in your code. 
 
@@ -437,7 +437,7 @@ Write a function that displays **information** about the **arguments** which are
 
 `{argument type}: {argument value}`
 
-Print **each** argument description on a **new line**. At the end print a **tally** with counts for each type in **descending order**, each on a new line in the following format:
+Print **each** argument description on a **new line**. At the end print a **summary** with counts for each type in **descending order**, each on a new line in the following format:
 
 `{type} = {count}`
 
@@ -451,7 +451,7 @@ You will receive a series of arguments **passed** to your function.
 
 ## Output
 
-**Print on the console** the **type** and **value** of each argument passed into your function.
+**Print to the console** the **type** and **value** of each argument passed into your function.
 
 ## Example
 
@@ -649,7 +649,7 @@ yes
 
 [slide]
 # Soluton: Argument Info
-[code-task title="Soluton: Argument Info" taskId="js-advanced-advanced-functions-homework-soluton-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Soluton: Argument Info" taskId="js-advanced-advanced-functions-homework-soluton-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solution() {
@@ -665,7 +665,7 @@ Write a function that displays **information** about the **arguments** which are
 
 `{argument type}: {argument value}`
 
-Print **each** argument description on a **new line**. At the end print a **tally** with counts for each type in **descending order**, each on a new line in the following format:
+Print **each** argument description on a **new line**. At the end print a **summary** with counts for each type in **descending order**, each on a new line in the following format:
 
 `{type} = {count}`
 
@@ -679,7 +679,7 @@ You will receive a series of arguments **passed** to your function.
 
 ## Output
 
-**Print on the console** the **type** and **value** of each argument passed into your function.
+**Print to the console** the **type** and **value** of each argument passed into your function.
 
 ## Example
 
@@ -878,7 +878,7 @@ yes
 
 [slide]
 # Problem: Personal BMI
-[code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-problem-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-problem-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 
@@ -887,7 +887,7 @@ yes
 [task-description]
 ## Description
 
-A wellness clinic has contacted you with an offer - they want you to write a program that composes **patient charts** and performs some preliminary evaluation of their condition. 
+A wellness clinic has contacted you with an offer - they want you to write a program that creates **patient charts** and performs some preliminary evaluation of their condition. 
 
 The data comes in the form of **several arguments**, describing a person - their **name**, **age**, **weight** in kilograms and **height** in centimeters. 
 
@@ -895,11 +895,11 @@ Your program must compose this information into an **object** and **return** it 
 
 The patient chart object must contain the following properties:
 
-- **name**
+- **name**;
   
-- **personalInfo**, which is an object holding their age, weight and height as properties
+- **personalInfo** which is an object holding the patient's age, weight, and height as properties;
   
-- **BMI** - body mass index. You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index)
+- **BMI** - body mass index. You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
   
 - **status**
   
@@ -924,7 +924,7 @@ Your function needs to take four arguments - **name**, **age**, **weight** and *
 
 ## Output
 
-Your function needs to **return** an **object with properties** as described earlier. 
+Your function needs to **return** an **object with the properties** described earlier. 
 
 All numeric values should be **rounded** to the nearest whole number. 
 
@@ -1043,7 +1043,7 @@ yes
 
 [slide]
 # Problem: Vector Math
-[code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-problem-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-problem-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 
@@ -1090,7 +1090,7 @@ Implement the following functions:
 
 [image assetsSrc="advanced-functions-12.png" /] 
 
-The math-savvy may notice that the given cross product formula results in a scalar, instead of a vector - we are only measuring the length of the resulting vector, since cross product is not possible in 2D, it will exist purely in the z-dimension. 
+The math-savvy may notice that the given cross product formula results in a scalar, instead of a vector - we are only measuring the length of the resulting vector since cross product is not possible in 2D, it will exist purely in the z-dimension. 
 
 If you do not know what this all means, ignore this paragraph, it is irrelevant to the solution.
 
@@ -1100,11 +1100,11 @@ Each separate function in your namespace will be tested with individual values.
 
 It must expect **one or two arguments**, as described above, and **return** a value.
 
-Vectors will be 2D arrays with format \[x, y\].
+Vectors will be 2D arrays in the format \[x, y\].
 
 ## Output
 
-Your function needs to **return** an **object with properties** as described earlier. 
+Your function needs to **return** an **object with the properties** described earlier. 
 
 All numeric values should be **rounded** to the nearest whole number. 
 
@@ -1247,7 +1247,7 @@ yes
 
 [slide]
 # Problem: Breakfast Robot
-[code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-problem-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-problem-09" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 
@@ -1257,14 +1257,14 @@ yes
 ## Description
 
 *It is finally the future!*
-*Robots take care of everything and man has been freed from the mundane tasks of living.*
-*There is still worked to be done though, since those robots need to be programmed first - we may have robot chefs, but we do not yet have robot software developers.*
+*Robots take care of everything and man has been freed from the mundane tasks of everyday life.*
+*There is still work to be done though since those robots need to be programmed first. We may have robot chefs, but we do not yet have robot software developers.*
 
-Your task is to write the management software for a breakfast chef robot - it needs to **take orders**, keep track of available **ingredients** and output an **error** if something’s wrong. 
+Your task is to write the management software for a breakfast chef robot. It needs to **take orders**, keep track of available **ingredients** and output an **error** if something is wrong. 
 
 The cooking instructions have already been installed, so your module needs to **plug into** the system and only take care of **orders** and **ingredients**. 
 
-And since this is the future and food is printed with nano-particle beams, all ingredients are microelements - **protein**, **carbohydrates**, **fat** and **flavours**. 
+Since this is the future and food is printed with nano-particle beams, all ingredients are microelements - **protein**, **carbohydrates**, **fat** and **flavours**. 
 
 The library of recipes includes the following meals:
 
@@ -1283,7 +1283,7 @@ The library of recipes includes the following meals:
 - **Turkey**
     - made with **10 protein**, **10 carb**, **10 fat** and **10 flavour**
 
-The robot receives instructions either to **restock** the supply, **cook** a meal or **report** statistics.
+The robot receives instructions either to **restock** the supply, **cook** a meal, or **report** statistics.
 
 The input consists of one of the following commands:
 
@@ -1294,7 +1294,7 @@ The input consists of one of the following commands:
 - `report` - returns information about the stored microelements, in the order described below, including zero elements
 
 
-The robot is equipped with a quantum field storage, so it can hold an **unlimited quantity** of ingredients, but there is no guarantee there will be enough available to prepare a recipe, in which case an **error message** should be returned. 
+The robot is equipped with quantum field storage, so it can hold an **unlimited quantity** of ingredients, but there is no guarantee there will be enough available to prepare a recipe, in which case an **error message** should be returned. 
 
 Their availability is checked in the **order** in which they **appear** in the recipe, so the error should reflect the first requirement that was not met.
 
@@ -1306,17 +1306,17 @@ The management function takes one parameter.
 
 Instructions are passed as a string argument to your management function. 
 
-It will be called several times per session, so internal state must be preserved throughout the entire session.
+It will be called several times per session, so the internal state must be preserved throughout the entire session.
 
 ## Output
 
 The **return** value of each operation is one of the following strings:
 
-- `Success` - when restocking or completing cooking without errors
+- `Success` - when restocking or completing cooking without errors;
 
-- `Error: not enough <ingredient> in stock` - when the robot could not muster enough microelements
+- `Error: not enough <ingredient> in stock` - when the robot could not muster enough microelements;
 
-- `protein={qty} carbohydrate={qty} fat={qty} flavour={qty}` - when a report is requested, in a single string
+- `protein={qty} carbohydrate={qty} fat={qty} flavour={qty}` - when a report is requested, in a single string;
 
 Look at the sample output for more information.
 
