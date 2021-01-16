@@ -3,24 +3,23 @@
 [slide]
 # Table of Contents
 
-
 ## In this lesson you will learn about:
 
-**1. Advanced Fuctions**
-- What first\-class and higher-order functions are
+**1. Advanced Functions**
+- First-class and higher-order functions.
 
 **2. Currying and Partial Application**
-- How to decompose functions
+- How to decompose functions.
 
 **3. Immediately-Invoked Function Expressions**
-- Defining functions anonymously
+- Defining functions anonymously.
 
 **4. Closure**
-- Understanding function scope
+- Understanding function scope.
 
 **5. Error Handling**
-- How to handle unexpected results 
-   - Concept of error handling
+- How to handle unexpected results:
+   - Error handling
    - Types of errors
    - Throwing exceptions
 
