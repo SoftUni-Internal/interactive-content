@@ -36,7 +36,11 @@ function toUppercase(string) {
 
   return string.toUpperCase();
 }
+
+toUppercase(5);
 ```
+
+The toUppercase function will throw a TypeError, because it is invoked with a number, instead of a string.
 
 [/slide]
 
