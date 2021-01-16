@@ -9,13 +9,13 @@ A **closure** is JavaScript feature where the **inner function scope** includes 
 
 A **closure** has three scope chains:
 
-- it has access to **its own scope** — variables enclosed by its own function body;
+- it has access to **its own scope** — variables enclosed by its own function body.
   
-- it has access to the **outer function**’s variables;
+- it has access to the **outer function**’s variables.
 
 - it has access to the **global** variables.
 
-Let's take a look at a simple example:
+Let us take a look at a simple example:
 
 ```js
 function outerFunc() {
@@ -33,7 +33,7 @@ The above example has two functions:
 
 - `outerFunc()` function which has a variable b, and returns the `innerFunc()` function;
 
-- `innerFunc()` function which has a variable called `a`, and accesses an outer variable \- `b`, within its function body.
+- `innerFunc()` function which has a variable called `a`, and accesses an outer variable \- `b` within its function body.
 
 When a function **finishes execution**, any variables that were defined **inside** the function scope **no longer exist**.
 
