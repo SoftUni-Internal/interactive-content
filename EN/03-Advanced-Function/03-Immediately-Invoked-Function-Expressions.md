@@ -9,7 +9,7 @@ An **Immediately-Invoked Function Expression** is a JavaScript **function** that
 
 - Defined **anonymously**
 
-- Invoked **immediately** after they are declared;
+- Invoked **immediately** after they are declared
 
 To create an **IIFE**, we put the function declaration between **round brackets**, after which we invoke it **immediately**:
 
