@@ -36,18 +36,16 @@ Some example uses of **currying** include:
 Take a look at this example:
 
 ```js live 
-function add(a, b, c) {
-    return a + b + c;
+function add(a, b) {
+    return a + b;
 }
 
-function partial(func, a, b) {
-     return function(c) {
-        func(a, b, c);
-     }
+function partial(func, a) {
+     return (b) => func(a, b);
 }
 
-const newAdd = partial(add, 3);
-console.log(newAdd(5, 2));
+const newAdd = partial(add, 2);
+console.log(newAdd(5));
 ```
 
 The original `add()` function takes in three parameters.
