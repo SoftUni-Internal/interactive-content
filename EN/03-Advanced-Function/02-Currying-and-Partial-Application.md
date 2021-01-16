@@ -63,9 +63,9 @@ The resulting function takes in **two**, instead of **three** parameters.
 
 The main difference between **currying** and **partial application** are:
 
-- **Currying** is turning a function with **multiple arguments** into a **chain of single-argument functions**.
+- **Currying** is turning a function with **multiple arguments** into a **chain of single-argument functions**
 
-- To **partially apply** means to pass **fewer arguments to a function than it has in its declaration**.
+- To **partially apply** means to pass **fewer arguments to a function than it has in its declaration**
 
 Currying is **not** the same as partial application.
 
