@@ -1,9 +1,9 @@
 # Immediately-Invoked Function Expressions
 
 [slide]
-# What is Immediately-Invoked Function Expressions (IIFE)?
+# Definition
 
-An **Immediately-Invoked Function Expression** is a JavaScript **function** that **runs at the same time it is defined**.
+An **Immediately-Invoked Function Expression** is a JavaScript **function** that **runs instantly after it is defined**.
 
 **Immediately-Invoked Function Expressions** are:
 
