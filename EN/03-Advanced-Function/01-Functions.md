@@ -174,9 +174,9 @@ In the end, the result is stored in the **sum** variable.
 
 A pure function always returns the same result if the same arguments are passed to it:
 
-- It must **only depend** on its **input arguments**.
+- It must **only depend** on its **input arguments**
 
-- It **does not depend** on any state or data **change during execution**.
+- It **does not depend** on any state or data **change during execution**
 
 A function is **pure** when it is **free from side-effects**:
 
