@@ -3,7 +3,7 @@
 [slide]
 # Currying
 
-We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with **single argument**.
+We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with a **single argument**.
 
 ```js live
 function sumOfThreeNums(a) {
@@ -31,7 +31,7 @@ Some example uses of **currying** include:
 [slide]
 # Partial Application
 
-**Reducing** the number of a function's **parameters** by converting it to a **new function with less parameters**, is called **Partial Application**.
+**Reducing** the number of function **parameters** by converting it to a **new function with fewer parameters**, is called **Partial Application**.
 
 Take a look at this example:
 
@@ -63,14 +63,14 @@ The resulting function takes in **two**, instead of **three** parameters.
 [slide]
 # Currying vs Partial Application
 
-The main difference is as follows:
+The main difference between **currying** and **partial application** are:
 
 - **Currying** is turning a function with **multiple arguments** into a **chain of single-argument functions**.
 
-- To **partially apply** means to pass to a function **fewer arguments than it has in its declaration**.
+- To **partially apply** means to pass **fewer arguments to a function than it has in its declaration**.
 
 Currying is **not** the same as partial application.
 
-It, however, **can be implemented** using partial application.
+However, currying **can be implemented** by using partial application.
 
 [/slide]
