@@ -6,13 +6,13 @@
 
 The main difference between Server and Client Side Rendering lies in where the application is being rendered.
 
-## Client-Side Rendering
+## Server Side Rendering
 
-**Server-side rendering**, as the name implies, takes our JavaScript code and renders it to static HTML and CSS **on the server** before sending it to the client.
+**Server side rendering**, as the name implies, takes our JavaScript code and renders it to static HTML and CSS **on the server** before sending it to the client.
 
 It is the more commonly used approach for rendering a page, outside React.
 
-In short, server-side rendering works as follows:
+In short, server side rendering works as follows:
 
 - A user tries to access a website, [most often by using a browser](https://en.wikipedia.org/wiki/User_agent)
    
@@ -48,9 +48,11 @@ Client side rendering works in the following order:
 
 # Server Side Rendering
 
-Some of the benefits of **server-side rendering** include:
+Some of the benefits of **server side rendering** include:
 
 - **Shorter page load time** which results in a better user experience
+
+- Consistent **SEO performance**
 
 - Users with slow internet connections benefit from **less waiting time**
 
@@ -65,7 +67,7 @@ Some of the benefits of **server-side rendering** include:
 
 ## Search Engine Optimization
 
-Server-side rendering plays an important role in **search engine optimization** \(SEO\).
+Server side rendering plays an important role in **search engine optimization** \(SEO\).
 
 Search engines like **Google** tend to favor websites that **load faster**.
 
@@ -77,5 +79,5 @@ When a user requests a page, they do not have to wait for JavaScript to **load**
 
 This results in a **better user experience**, but application interactivity will only occur when JavaScript and React are **loaded properly**.
 
-However, if the server is **busy**, server-side rendering can also have a **negative** effect on performance.
+However, if the server is **busy**, server side rendering can also have a **negative** effect on performance.
 [/slide]
