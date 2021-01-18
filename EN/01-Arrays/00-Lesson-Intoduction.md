@@ -6,7 +6,7 @@
 [stream language="RO" videoId="489372226/26eeb00a96"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Definition**
 
