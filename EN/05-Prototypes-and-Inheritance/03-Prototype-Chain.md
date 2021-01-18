@@ -23,7 +23,7 @@ myDog.breed = 'shepherd';
 myDog.printInfo();
 ```
 
-In this example, we declare an object called **dog** with a **name** property and a method - **printInfo**. 
+In this example, we declare an object called **dog** with a **name** property and a **printInfo** method. 
 
 After that we create a new object - **myDog** with `Object.create()`, using **dog** as a prototype. 
 
