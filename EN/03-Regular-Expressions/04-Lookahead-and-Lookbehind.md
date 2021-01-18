@@ -1,5 +1,3 @@
-
-
 [slide]
 # Lookahead and Lookbehind
 

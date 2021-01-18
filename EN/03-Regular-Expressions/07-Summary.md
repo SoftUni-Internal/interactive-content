@@ -1,7 +1,6 @@
-
 [slide]
-# Summary
 
+# Summary
 
 # In this lesson you learned:
 

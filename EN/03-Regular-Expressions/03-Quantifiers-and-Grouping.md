@@ -1,6 +1,7 @@
 # Quantifiers and Grouping
 
 [slide]
+
 # Quantifiers 
 **Quantifiers** specify **how many** instances of a **character**, **group**, or **character class** must be **present** in the input for a match to be found.
 

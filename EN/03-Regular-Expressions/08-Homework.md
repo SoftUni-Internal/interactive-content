@@ -1,7 +1,7 @@
 # Homework
 
-
 [slide hideTitle]
+
 # Problem: Furniture
 
 

@@ -1,4 +1,3 @@
-
 [slide]
 # Objects
 
@@ -49,6 +48,7 @@ public class Main {
     }
 }
 ```
+
 [/slide]
 
 

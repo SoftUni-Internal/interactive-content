@@ -1,4 +1,3 @@
-
 [slide]
 # Summary
 
@@ -35,8 +34,6 @@ class Dice {
     - Mapping
     - Ordering
     
-
-
 [/slide] 
 
 

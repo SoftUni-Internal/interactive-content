@@ -1,7 +1,7 @@
 # Homework
 
-
 [slide hideTitle]
+
 # Problem: Count Chars in a String
 [code-task title="Count Chars in a String" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Count-Char-In-A-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

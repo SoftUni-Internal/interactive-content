@@ -1,5 +1,3 @@
-
-
 [slide]
 # Built-in Classes
 

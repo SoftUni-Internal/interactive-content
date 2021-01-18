@@ -1,5 +1,3 @@
-
-
 [slide]
 # What Is a String?
 
@@ -57,4 +55,5 @@ String greeting = new String (charArr);
 
 System.out.println(greeting);
 ```
+
 [/slide]

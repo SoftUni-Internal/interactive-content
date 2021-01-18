@@ -1,7 +1,7 @@
 # Homework
 
-
 [slide hideTitle]
+
 # Problem: Valid Usernames
 [code-task title="Valid Usernames" taskId="Java-Fundamentals-Part-Two-Text-Processing-Valid-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

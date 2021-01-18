@@ -1,8 +1,7 @@
 # Regex in Java
 
-
-
 [slide]
+
 # Built-In Regex Classes 
 For advanced regular expressions the `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used.
 

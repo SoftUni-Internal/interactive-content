@@ -1,5 +1,3 @@
-
-
 [slide]
 # Defining Simple Classes
 
@@ -94,6 +92,7 @@ public class Animal {
     }
 }
 ```
+
 [/slide]
 
 [slide]
@@ -129,6 +128,7 @@ public class Animal {
     }
 }
 ```
+
 [/slide]
 
 [slide]
@@ -151,5 +151,6 @@ class Animal {
     }
 }
 ```
+
 [/slide]
 

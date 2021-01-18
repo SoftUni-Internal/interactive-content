@@ -1,5 +1,7 @@
 # Homework
+
 [slide hideTitle]
+
 # Problem: Articles
 [code-task title="Articles" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

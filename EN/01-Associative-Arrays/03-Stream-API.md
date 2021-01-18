@@ -1,5 +1,3 @@
-
-
 [slide]
 # Stream API
 

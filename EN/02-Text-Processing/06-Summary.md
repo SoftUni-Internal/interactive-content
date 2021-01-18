@@ -1,5 +1,3 @@
-
-
 [slide]
 # Summary
 
@@ -44,6 +42,5 @@ System.out.println(result); // "Hello, SoftUni!"
 - Lookahead and Lookbehind
 - Backreferences
 - Regex in Java
-
 
 [/slide]

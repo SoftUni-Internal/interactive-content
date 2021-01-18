@@ -1,5 +1,3 @@
-
-
 [slide]
 # StringBuilder: How It Works?
 Just like the String the `StringBuilder` is a **sequence of characters**. 
@@ -51,6 +49,7 @@ StringBuilder sb = new StringBuilder(25);
 
 System.out.println(sb.capacity()); // 25 
 ```
+
 [/slide]
 
 

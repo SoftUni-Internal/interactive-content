@@ -1,5 +1,3 @@
-
-
 [slide]
 # What are Regular Expressions?
 
@@ -20,8 +18,6 @@
 
     - [regexr.com](regexr.com)
     - [regex101.com](regex101.com)
-
-
 
 [/slide]
 

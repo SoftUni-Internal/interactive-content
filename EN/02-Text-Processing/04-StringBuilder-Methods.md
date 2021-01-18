@@ -1,4 +1,3 @@
-
 [slide]
 # Add
 - `append()` - **appends** a string value **to the end** of the current sequence of characters

@@ -1,6 +1,5 @@
 [slide]
 
-
 # In this lesson you will learn about:
 
 **1. RegEx**

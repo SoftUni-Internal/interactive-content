@@ -1,5 +1,3 @@
-
-
 [slide]
 # Lambda Expressions
 
