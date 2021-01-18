@@ -1,1 +1,1 @@
-# Advanced Function
+# Advanced Functions

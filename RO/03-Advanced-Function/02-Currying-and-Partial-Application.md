@@ -3,7 +3,7 @@
 [slide]
 # Currying
 
-We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with **single argument**.
+We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with a **single argument**.
 
 ```js live
 function sumOfThreeNums(a) {
@@ -31,46 +31,44 @@ Some example uses of **currying** include:
 [slide]
 # Partial Application
 
-**Reducing** the number of a function's **parameters** by converting it to a **new function with less parameters**, is called **Partial Application**.
+**Reducing** the number of function **parameters** by converting it to a **new function with fewer parameters**, is called **Partial Application**.
 
 Take a look at this example:
 
 ```js live 
-function add(a, b, c) {
-    return a + b + c;
+function add(a, b) {
+    return a + b;
 }
 
-function partial(func, a, b) {
-     return function(c) {
-        func(a, b, c);
-     }
+function partial(func, a) {
+     return (b) => func(a, b);
 }
 
-const newAdd = partial(add, 3);
-console.log(newAdd(5, 2));
+const newAdd = partial(add, 2);
+console.log(newAdd(5));
 ```
 
-The original `add()` function takes in three parameters.
+The original `add()` function takes in two parameters.
 
-The `partial()` function takes in a **function** and **2 additional parameters**. 
+The `partial()` function takes in a **function** and **an additional parameter**. 
 
-After that, it **creates and returns a new function** that takes **another argument**, and **appends** it to the arguments that were **already passed in**.
+After that, it **creates and returns a new function** that takes **another argument**, and **appends** it to the argument that were **already passed in**.
 
-The resulting function takes in **two**, instead of **three** parameters.
+The resulting function takes in **one**, instead of **two** parameters.
 
 [/slide]
 
 [slide]
 # Currying vs Partial Application
 
-The main difference is as follows:
+The main differences between **currying** and **partial application** are:
 
-- **Currying** is turning a function with **multiple arguments** into a **chain of single-argument functions**.
+- **Currying** is the process of turning a function with **multiple arguments** into a **chain of single-argument functions**
 
-- To **partially apply** means to pass to a function **fewer arguments than it has in its declaration**.
+- To **partially apply** means to pass **fewer arguments to a function than it has in its declaration**
 
 Currying is **not** the same as partial application.
 
-It, however, **can be implemented** using partial application.
+However, currying **can be implemented** by using partial application.
 
 [/slide]

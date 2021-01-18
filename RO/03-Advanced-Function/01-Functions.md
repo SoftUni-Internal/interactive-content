@@ -34,7 +34,7 @@ let greet = function (name) {
 console.log(greet(Johnny));
 ```
 
-We **invoke** the function by adding **parentheses** after the variable name.
+We **invoke** the function by adding **parentheses** after the function's name.
 
 - **Returned** from functions
 
@@ -75,7 +75,7 @@ const greet = sayHello();
 greet();
 ```
 
-When invoked, the `sayHello` function returns another function, which is then assigned to the `greet` variable.
+When invoked, the `sayHello` function returns another function, which is then assigned to the `greet` constant.
 
 [/slide]
 
@@ -91,7 +91,9 @@ function lessThanFive(num) {
   return num < 5;
 }
 
-lessThanFive(5);
+let number = 5;
+let result = lessThanFive(number);
+console.log(result);
 ```
 
 The `lessThanFive` function takes a number as an input and checks if it is **smaller than five**.
@@ -102,7 +104,7 @@ It returns a **boolean**, meaning it is a **predicate**.
 
 [slide]
 
-# Built-in Higher Order Functions
+# Built-in Higher-Order Functions
 
 Built\-in higher-order functions accept a **callback function** as an argument, which is called on **every element** in an array.
 
@@ -146,7 +148,7 @@ The `reduce()` method executes the callback function on **each member of a given
 
 It accepts two parameters:
 
-- The **reducer** callback function, which itself accepts an `accumulator` and a `currentValue`
+- The **reducer** callback function, which accepts an `accumulator` and a `currentValue`
 - An `initialValue`, which is optional
 
 Here you can see **reduce** in action:
@@ -160,9 +162,9 @@ const sum = arr.reduce(function (accumulator, currentValue) {
 console.log(sum);
 ```
 
-When the **reducer** function is called on **each value** in the array, the **accumulator** keeps the result of previous operation returned from the reducer function, and **currentValue** is set to the current value of the array.
+When the **reducer** function is called on **each value** in the array, the **accumulator** keeps the result of the previous operation returned from the reducer function, and **currentValue** is set to the current value of the array.
 
-In the end the result is stored in the **sum** variable.
+In the end, the result is stored in the **sum** variable.
 
 [/slide]
 
@@ -170,11 +172,11 @@ In the end the result is stored in the **sum** variable.
 
 # Pure Functions
 
-A pure function always returns the same result if the same arguments are passed in:
+A pure function always returns the same result if the same arguments are passed to it:
 
-- It must **only depend** on its **input arguments**.
+- It must **only depend** on its **input arguments**
 
-- It **does not depend** on any state or data **change during execution**.
+- It **does not depend** on any state or data **change during execution**
 
 A function is **pure** when it is **free from side-effects**:
 
