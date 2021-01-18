@@ -1,4 +1,4 @@
-# Lesson Introduction
+
 
 [slide hideTitle]
 
