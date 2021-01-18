@@ -435,12 +435,3 @@ You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for
 [/slide]
 
 
-
-
-
-[slide]
-# Homework Results
-
-[tasks-results /]
-
-[/slide]
