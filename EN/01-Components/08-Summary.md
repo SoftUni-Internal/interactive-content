@@ -2,7 +2,7 @@
 
 # Summary
 
-## In this lesson you learned:
+## In this lesson you learnt:
 
 - Each component has its own template.
 ```js
@@ -25,7 +25,7 @@ ngOnInit() { this.data = 'Retrieve data'};
 @Output() fromChild = new EventEmitter<boolen>();
 ```
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
 - Change Detection Strategy​.
 - SOLID Principles​.

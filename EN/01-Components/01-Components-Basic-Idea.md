@@ -2,7 +2,7 @@
 
 [slide]
 
-# The Idea Behind Components 1
+# The Idea Behind Components - 1
 
 A component controls a **patch** of screen called a **view**.
 
@@ -38,7 +38,7 @@ export class AppComponent { title = 'App Title'; }
 
 [slide]
 
-# The Idea Behind Components 2
+# The Idea Behind Components - 2
 
 Views are typically arranged hierarchically, allowing you to modify or show and hide entire UI sections or pages as a unit. 
 

@@ -58,6 +58,6 @@ export class GamesComponent implements OnInit, OnDestroy {
 
 `ngAfterViewChecked()` is called after `ngAfterContentInit()`.
 
-More at: https://angular.io/guide/lifecycle-hooks
+More about [lifecycle hooks](https://angular.io/guide/lifecycle-hooks) 
 
 [/slide]
