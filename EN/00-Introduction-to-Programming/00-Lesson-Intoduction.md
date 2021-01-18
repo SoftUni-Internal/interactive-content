@@ -1,15 +1,16 @@
+# Lesson Introduction
 [slide]
 
-# Lesson Introduction
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="489879790/8300ace394" default /]
 [stream language="RO" videoId="489879790/8300ace394"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
-**1. What is coding?**
+**1. What is coding**
 - Writing simple commands and programs
 
 **2. Programming Languages**
