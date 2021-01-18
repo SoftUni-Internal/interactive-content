@@ -19,7 +19,7 @@ The next step is to **protect the routes**
 
 # Public Parts
 
-This parts can be accessed by any **guest user** (not logged in).
+These parts can be accessed by any **guest user** (not logged in).
 
 - **Publications**
 
