@@ -1,3 +1,4 @@
+# Lesson Introduction
 
 [slide hideTitle]
 
