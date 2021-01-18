@@ -25,9 +25,9 @@ myDog.printInfo();
 
 In this example, we declare an object called **dog** with a **name** property and a **printInfo** method. 
 
-After that we create a new object - **myDog** with `Object.create()`, using **dog** as a prototype. 
+After that we create a new **myDog** object with `Object.create()`, using **dog** as a prototype. 
 
-We set the **name** property of **myDog** and we also add a new property - **breed** which was not present in the **dog** object.
+We set the **name** property of **myDog** and we also add a new property called **breed** which was not present in the **dog** object.
 
 [/slide]
 
@@ -35,10 +35,11 @@ We set the **name** property of **myDog** and we also add a new property - **bre
 
 # What is Prototype
 
--  The prototype is an **object**.
--  All objects have an **internal property** that is used for implementing **prototype-based inheritance** and **shared properties**.
+-  The prototype is an **object**
 
--  When we have **prototype-based inheritance** the methods and properties that are inherited are inherited by reference, they still belong to the prototype they came from but they can be used by the new object. This creates a link between the prototype and the object that inherits from it. In other words, properties and methods are **not copied** but inherited **by reference**.
+-  All objects have an **internal property** that is used for implementing **prototype-based inheritance** and **shared properties**
+
+-  When we have **prototype-based inheritance** methods and properties are inherited by reference. They still belong to the prototype they came from but they can be used by the new object. This creates a link between the prototype and the object that inherits from it. In other words, properties and methods are **not copied** but inherited **by reference**.
 
 All the inherited **properties** and **methods** come from the **prototype** property. 
 
@@ -63,7 +64,7 @@ let person = new Person('Joe', 'Jones', 20);
 person.nationality('British');
 ```
 
-In this example we have a **Person** function and we add **nationality** function to its **prototype** property.
+Here we have a **Person** function and we add **nationality** to its **prototype** property.
 
 [/slide]
 
@@ -94,11 +95,9 @@ let sum = rect.area();
 console.log(sum);
 ```
 
-In this example, we have a function called **rectangle** which takes some parameters. 
+We have a function called **rectangle** which takes some parameters and we attach another function called **area** to the **rectangle** prototype, which **returns** the product from the multiplication of the **width** and **height** parameters.
 
-And we attach another function called **area** to the **rectangle** prototype, which **returns** the **width** and **height** parameters **multiplied**.
-
-And let's see how it will look like after ES6:
+This is how the same thing looks like after ES6:
 
 ```js live
 class Rectangle {
@@ -117,7 +116,6 @@ let sum = rect.area();
 
 console.log(sum);
 ```
-
 [/slide]
 
 [slide]
@@ -126,7 +124,7 @@ console.log(sum);
 
 There are two ways to create an object. The first one is **Literal** creation, and the second is **Constructor** creation.
 
-With **constructor** creation, we will have a reference to the value of the constructor's prototype property, and also, we will get an internal link to the `__proto__` property of the object. `__proto__` is a property that points at the prototype that has been set.
+With **constructor** creation, we have a reference to the value of the constructor's prototype property, and also, we get an internal link to the `__proto__` property of the object. `__proto__` is a property that points at the prototype that has been set.
 
 Here is an example of **literal creation**:
 
@@ -141,7 +139,7 @@ let bar = {
 bar.speak();
 ```
 
-In this example, we created the object **bar** with two properties, which are **name** and **speak**. 
+We created the object **bar** with two properties, which are **name** and **speak**. 
 
 **Speak** is a function that prints to the console.
 
@@ -160,7 +158,7 @@ let b1 = new Bar('b1');
 console.log(b1.speak());
 ```
 
-In this example, we created a **function Bar**, which is is a constructor. 
+In this example, we created a **function Bar**, which is a constructor. 
 
 In this function, we set the **properties** of the object, which are **name** and **speak**. 
 
@@ -176,9 +174,9 @@ We instantiated **Bar** using the **new** keyword  and invoked its **speak()** f
 
 There is a difference between `__proto__` and **Prototype Property**. 
 
-The first one, `__proto__`, is the **accessor** property of the object and **exposes** its **internal prototype**.
+`__proto__`, is the **accessor** property of the object and **exposes** its **internal prototype**.
 
-We should not use `__proto__` directly in our code, it is now **deprecated**.
+We should not use `__proto__` directly in our code, it is **deprecated**.
 
 The **Prototype** property is a property of a function that is set if the object is created by a **constructor function**.
 
@@ -190,11 +188,11 @@ Objects **do not** have the **prototype** property.
 
 # Accessing Private Properties
 
-We prefix properties with `#` to make them private.
+We prefix properties with `#` to mark them as private.
 
 For getting private properties we use **object.prototype.get**NameOfProperty. 
 
-For setting it is almost the same, but instead of **get** we write **set**, here is how it will look:
+Setting properties is similar but instead of **get** we write **set**:
 
  **object.prototype.set**NameOfProperty.
 
@@ -233,11 +231,11 @@ let sum = new Sum(10);
 console.log(sum.calculate(15));
 ```
 
-We create a function **Sum** with parameter **y**. 
+We create a function **Sum** with a parameter **y**. 
 
 We then attach a property **x** and a method **calculate**, which sums **x**, **y** and **z**.
 
-After that we instantiate **Sum** and print the result of the **calculate** function to the console.
+After that, we instantiate **Sum** and print the result of the **calculate** function to the console.
 
 [/slide]
 
