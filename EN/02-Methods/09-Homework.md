@@ -1839,10 +1839,3 @@ Write a program to print all master numbers in the range [1…n].
 [/tests]
 [/code-task]
 [/slide]
-
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

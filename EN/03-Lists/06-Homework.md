@@ -1765,9 +1765,3 @@ course start
 [/slide]
 
 
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

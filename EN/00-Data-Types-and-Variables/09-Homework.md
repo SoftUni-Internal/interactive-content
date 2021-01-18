@@ -1415,10 +1415,3 @@ At the end you must **print the highest calculated** snowballValue.
 [/code-task]
 [/slide]
 
-
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
