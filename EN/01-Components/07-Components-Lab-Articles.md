@@ -36,7 +36,7 @@ This will build the angular application and open a new window in your default br
 
 Your app should look like this:
 
-[image assetsSrc="Components(1).png" /]
+[image assetsSrc="Angular-Components(1).png" /]
 
 [/slide]
 
@@ -301,7 +301,7 @@ If the new length is **less** than the actual, we have to **change** the descrip
 
 The following image is blurred, try to implement the logic yourself:
 
-[image assetsSrc="Components(2).png" /]
+[image assetsSrc="Angular-Components(2).png" /]
 
 [/slide]
 
@@ -313,7 +313,7 @@ Each time we click on "**Show Image**" we have to switch the boolean property to
 
 If the content is "**Hide Image**" we have to do the opposite.
 
-[image assetsSrc="Components(3).png" /]
+[image assetsSrc="Angular-Components(3).png" /]
 
 [/slide]
 
@@ -323,7 +323,7 @@ If the content is "**Hide Image**" we have to do the opposite.
 
 This function should **reset** the description to show the description length counter and also **switch** both buttons.
 
-[image assetsSrc="Components(4).png" /]
+[image assetsSrc="Angular-Components(4).png" /]
 
 [/slide]
 
@@ -403,6 +403,6 @@ If everything went smoothly you can test your application and try out all of the
 
 It should look like this:
 
-[image assetsSrc="Components(5).png" /]
+[image assetsSrc="Angular-Components(5).png" /]
 
 [/slide]

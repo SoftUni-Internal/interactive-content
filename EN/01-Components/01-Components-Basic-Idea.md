@@ -46,6 +46,6 @@ The template immediately associated with a component defines that component's ho
 
 The component can also define a view hierarchy, which contains embedded views, hosted by other components.
 
-[image assetsSrc="Components.png" /]
+[image assetsSrc="Angular-Components.png" /]
 
 [/slide]
