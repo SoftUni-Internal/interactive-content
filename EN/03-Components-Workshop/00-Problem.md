@@ -58,6 +58,10 @@ After that, type the command "**npm start**".
 
 In order to fetch the themes, you will have to make a GET request on `localhost:3000/api/themes`.
 
+Here are the REST API endpoints specifications:
+
+[image assetsSrc="Components-Workshop(3).png" /]
+
 **Logged Unlogged User**
 
 **NOTE: Because we have not covered authentication yet, you can hardcode it with a variable.**
@@ -76,7 +80,7 @@ The themes in the main section should be sorted by the subscribers in descending
 
 Each theme should have a title, date of creation, the username of the creator and the count of the subscribers of the theme. 
 
-[image assetsSrc="Components-Workshop(3).png" /]
+[image assetsSrc="Components-Workshop(4).png" /]
 
 [/slide]
 
@@ -92,7 +96,7 @@ The posts will be returned from the REST API **sorted by the time of creation**.
 
 Each component should have a **title**, which is the title of the theme, a **username** of the user, whom the last comment in the theme belongs to, and the **time** the post was created.
 
-[image assetsSrc="Components-Workshop(4).png" /]
+[image assetsSrc="Components-Workshop(5).png" /]
 
 [/slide]
 
