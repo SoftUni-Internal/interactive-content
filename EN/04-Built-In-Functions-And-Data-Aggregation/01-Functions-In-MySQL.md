@@ -22,7 +22,4 @@ Let's review the **built-in functions** provided in MySQL:
 
 Besides this, we have more **built-in functions**, but for the purposes of this lesson, let's take a look at the functions above:
 
-
-
 [/slide]
-

@@ -9,7 +9,13 @@
     ```
 - MySQL is a multiplatform RDBMS using SQL.
 - Table columns have a fixed type.
-    - Example: VARCHAR(50), INT etc.
+    - Example: 
+        ```java
+        email VARCHAR(50) NOT NULL
+        first_name VARCHAR(50)
+        last_name VARCHAR(50)
+        ```
+
 - We can use GUI Clients to create and customize tables.
     - MySQL Workbench, phpMyAdmin etc.
 - SQL provides greater control.

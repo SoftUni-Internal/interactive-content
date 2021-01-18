@@ -23,8 +23,6 @@ Let's take a look at some **Math** functions:
 
 - `PI()` - This SQL function returns the PI value. It has 15 digit precision.
 
-
-
 - `ABS()` - It returns the absolute value of an number.
 
 ``` java
