@@ -23,11 +23,11 @@ myDog.breed = 'shepherd';
 myDog.printInfo();
 ```
 
-In this example we have object **dog** with **name** and print info. 
+In this example, we declare an object called **dog** with a **name** property and a method - **printInfo**. 
 
-After that we create **myDog** with `Object.create()` from **dog**. 
+After that we create a new object - **myDog** with `Object.create()`, using **dog** as a prototype. 
 
-We set to **myDog** change the name from **Sparky** to **Max** and we add breed which was not in the **dog** in first place.
+We set the **name** property of **myDog** and we also add a new property - **breed** which was not present in the **dog** object.
 
 [/slide]
 
@@ -36,14 +36,13 @@ We set to **myDog** change the name from **Sparky** to **Max** and we add breed 
 # What is Prototype
 
 -  The prototype is an **object**.
--  They have an **internal** **property** that is used for implementing **prototype**.
-   -  based inheritance
-   -  shared properties
--  They have **references** because they are **not** separated or disconnected, bu they are **linked**.
+-  All objects have an **internal property** that is used for implementing **prototype-based inheritance** and **shared properties**.
 
-The inherited **properties** and **methods** come from **prototype** property. 
+-  When we have **prototype-based inheritance** the methods and properties that are inherited are inherited by reference, they still belong to the prototype they came from but they can be used by the new object. This creates a link between the prototype and the object that inherits from it. In other words, properties and methods are **not copied** but inherited **by reference**.
 
-This property allows us to add more **properties** to the **constructors**.
+All the inherited **properties** and **methods** come from the **prototype** property. 
+
+This property allows us to add new **properties** to object **constructors**.
 
 For example:
 
@@ -64,7 +63,7 @@ let person = new Person('Joe', 'Jones', 20);
 person.nationality('British');
 ```
 
-In this example we have function **Person** and add to its **prototype** function **nationality**.
+In this example we have a **Person** function and we add **nationality** function to its **prototype** property.
 
 [/slide]
 
@@ -72,7 +71,7 @@ In this example we have function **Person** and add to its **prototype** functio
 
 # Prototype Methods
 
-Before ES6 or also called ES2015, all classes were composed manually, through functions. 
+Before ES6 (ES2015) all classes were composed manually, through functions. 
 
 After ES6, we have the sugar syntax with classes.
 
@@ -95,9 +94,9 @@ let sum = rect.area();
 console.log(sum);
 ```
 
-In this example we have function **rectangle** with some parameters. 
+In this example, we have a function called **rectangle** which takes some parameters. 
 
-And we attach to the **rectangle** prototype another function called **area**, which **returns** the **width** and **height** parameters **multiplied**.
+And we attach another function called **area** to the **rectangle** prototype, which **returns** the **width** and **height** parameters **multiplied**.
 
 And let's see how it will look like after ES6:
 
@@ -125,9 +124,9 @@ console.log(sum);
 
 # Object Creation
 
-We have two ways to create an object. The first one is **Literal** creation, and the second is **Constructor** creation.
+There are two ways to create an object. The first one is **Literal** creation, and the second is **Constructor** creation.
 
-With **constructor** creation, we will have reference to the value of the constructor's prototype property, and also, we will get an internal link for `__proto__` of the object.
+With **constructor** creation, we will have a reference to the value of the constructor's prototype property, and also, we will get an internal link to the `__proto__` property of the object. `__proto__` is a property that points at the prototype that has been set.
 
 Here is an example of **literal creation**:
 
@@ -144,9 +143,9 @@ bar.speak();
 
 In this example, we created the object **bar** with two properties, which are **name** and **speak**. 
 
-**Speak** is the function that prints.
+**Speak** is a function that prints to the console.
 
-And Here is one with **Constructor creation**:
+Here is an example with **Constructor creation**:
 
 ```js live
 function Bar(name) {
@@ -161,13 +160,13 @@ let b1 = new Bar('b1');
 console.log(b1.speak());
 ```
 
-In this example, we created a **function Bar**, which is the constructor. 
+In this example, we created a **function Bar**, which is is a constructor. 
 
 In this function, we set the **properties** of the object, which are **name** and **speak**. 
 
-**Speak** is a function that **returns** the result. 
+**Speak** is a function that **returns** the result by printing it to the console. 
 
-We created Bar with the word **new** and printed it in the console.
+We instantiated **Bar** using the **new** keyword  and invoked its **speak()** function.
 
 [/slide]
 
@@ -177,13 +176,13 @@ We created Bar with the word **new** and printed it in the console.
 
 There is a difference between `__proto__` and **Prototype Property**. 
 
-The first one, `__proto__`, is the **accessor** property of the object and **exposes** the **internal** **prototype** of it. 
+The first one, `__proto__`, is the **accessor** property of the object and **exposes** its **internal prototype**.
 
-We should not use `__proto__` directly in our code, it is also **deprecated**.
+We should not use `__proto__` directly in our code, it is now **deprecated**.
 
-Prototype Property is a property of a function that is set if the object is Constructor created. 
+The **Prototype** property is a property of a function that is set if the object is created by a **constructor function**.
 
-Also object do not have prototype property.
+Objects **do not** have the **prototype** property.
 
 [/slide]
 
@@ -191,13 +190,15 @@ Also object do not have prototype property.
 
 # Accessing Private Properties
 
-To have private properties, we use the prefix `#`.
+We prefix properties with `#` to make them private.
 
-For getting private properties we use **object.property.get**NameOfProperty. 
+For getting private properties we use **object.prototype.get**NameOfProperty. 
 
-For setting it is almost the same, but instead of **get** we write **set**, here is how it will look: **object.property.set** NameOfProperty.
+For setting it is almost the same, but instead of **get** we write **set**, here is how it will look:
 
-Here how both of them will look like:
+ **object.prototype.set**NameOfProperty.
+
+Here is an example of **prototype.get** and **prototype.set**:
 
 ```js
 Point.prototype.getX = function () {
@@ -217,8 +218,6 @@ Point.prototype.setX = function (x) {
 
 # Example of Prototype Chain
 
-Here is a simple example of prototype chain:
-
 ```js live
 function Sum(y) {
    this.y = y;
@@ -234,11 +233,11 @@ let sum = new Sum(10);
 console.log(sum.calculate(15));
 ```
 
-Firstly we create a function **Sum** with parameter **y**. 
+We create a function **Sum** with parameter **y**. 
 
-To it we attach property **x** and method **calculate**, which sums **x**, **y** and **z**.
+We then attach a property **x** and a method **calculate**, which sums **x**, **y** and **z**.
 
-After that we call **Sum** and `console.log()` **calculate**.
+After that we instantiate **Sum** and print the result of the **calculate** function to the console.
 
 [/slide]
 
@@ -261,13 +260,13 @@ function extendPrototype(classToExtend) {
 
 ## Description
 
-Write a function which receives a **class** and attaches to it a property **species** and a function `toSpeciesString()`.
+Write a function which receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 
-When called, the function returns a string with format:
+When called, the function returns a string in the format:
 
 `I am a <species>. <toString()>`
 
-The function `toString()` is called from the current instance (call using **this**).
+The function `toString()` is called from the current instance (use the **this** keyword to call it).
 
 ## Input and Output
 
@@ -433,13 +432,13 @@ function extendPrototype(classToExtend) {
 
 ## Description
 
-Write a function which receives a **class** and attaches to it a property **species** and a function `toSpeciesString()`.
+Write a function which receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 
-When called, the function returns a string with format:
+When called, the function returns a string in the format:
 
 `I am a <species>. <toString()>`
 
-The function `toString()` is called from the current instance (call using **this**).
+The function `toString()` is called from the current instance (use the **this** keyword to call it).
 
 ## Input and Output
 
