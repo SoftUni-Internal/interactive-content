@@ -3,7 +3,7 @@
 [slide]
 # Table of Contents
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Advanced Functions**
 - First-class and higher-order functions
