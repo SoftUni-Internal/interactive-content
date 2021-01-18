@@ -1758,18 +1758,3 @@ The discount is: 101.97 dollars
 [/code-task]
 [/slide]
 
-
-
-
-
-
-
-
-
-
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-[/slide]
