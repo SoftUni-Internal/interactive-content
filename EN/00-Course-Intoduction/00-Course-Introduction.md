@@ -1,10 +1,9 @@
-[slide]
+# Lesson Introduction
 
-# MySQL
+[slide hideTitle]
 
-## Course Introduction
+# Lesson Content
 
-### Table of Contents
 
 1. Course Objectives & Program
 2. Course Organization

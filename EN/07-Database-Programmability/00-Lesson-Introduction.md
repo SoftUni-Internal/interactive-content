@@ -1,6 +1,8 @@
-[slide]
+# Lesson Introduction
 
-# Lesson introduction
+[slide hideTitle]
+
+# Lesson Content
 
 ## In this lesson you will learn:
 

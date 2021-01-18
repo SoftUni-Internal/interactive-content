@@ -1,8 +1,10 @@
-[slide]
-
 # Lesson Introduction
 
-## In this lesson you will learn about:
+[slide hideTitle]
+
+# Lesson Content
+
+## In this lesson you will learn:
 
 1. The Query basics.
  - What the acronym **CRUD** stands for?

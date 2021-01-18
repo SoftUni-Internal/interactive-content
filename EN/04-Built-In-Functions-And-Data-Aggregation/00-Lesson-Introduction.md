@@ -1,8 +1,10 @@
-[slide]
+# Lesson Introduction
 
-# Lesson introduction
+[slide hideTitle]
 
-## In this lesson you will learn
+# Lesson Content
+
+## In this lesson you will learn:
 
 1. **Functions in MySQL**
     - How to manipulate the entries in our database by the integrated functions in MySQL
