@@ -93,5 +93,5 @@ On the next lines, we have:
 
 The **body** is after the **headers**.
 
-[image assetsSrc="Angular.png" /]
+[image assetsSrc="Blank diagram.png" /]
 [/slide]
