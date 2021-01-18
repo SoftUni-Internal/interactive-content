@@ -204,7 +204,7 @@ They help us to create a set of individual cases
 
 TypeScript provides both **numeric** and **string-based** enums.
 
-Here is example of numeric and string-based enums:
+Here is an example of numeric and string-based enums:
 
 -  Numeric:
 

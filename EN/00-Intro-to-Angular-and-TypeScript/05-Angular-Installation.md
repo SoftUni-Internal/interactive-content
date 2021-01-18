@@ -30,7 +30,7 @@ You can find more information on [Official Website](https://angular.io/https://a
 
 Most of the modern IDEs support TypeScript or have **plugins** that we can install.
 
-For example, **Visual Studio Code** fully supports TypeScript, without the need of any plugins.
+For example, **Visual Studio Code** fully supports TypeScript, without the need for any plugins.
 
 Also, with **Angular CLI**, **everything** is included.
 

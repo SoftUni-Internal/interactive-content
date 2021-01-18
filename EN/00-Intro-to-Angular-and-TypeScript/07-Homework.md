@@ -76,7 +76,7 @@ The ticket descriptions have the following format:
 
 Store each ticket and at the end of execution **return** a sorted summary of all tickets, sorted by either **destination**, **price** or **status**, depending on the **second parameter** that your program received.
 
-Always sort in ascending order \(default behavior for **alphabetical** sort\).
+Always sort in ascending order \(the default behavior for **alphabetical** sort\).
 
 If two tickets compare the same, use order of appearance.
 
@@ -88,7 +88,7 @@ Your program will receive two parameters – an array of strings and a single st
 
 ## Output
 
-**Return** a **sorted array** of all the tickets that where registered.
+**Return** a **sorted array** of all the tickets that were registered.
 
 ## Examples
 
@@ -105,11 +105,11 @@ Your program will receive two parameters – an array of strings and a single st
 
 Define several TS classes, that represent a company's employee records.
 
-Every employee has a **name** and **age**, a **salary** and a list of **tasks**, while every position has specific properties not present in the others.
+Every employee has a **name** and **age**, a **salary**, and a list of **tasks**, while every position has specific properties not present in the others.
 
 Place all common functionality in a **parent abstract** class.
 
-Follow the diagram bellow:
+Follow the diagram below:
 
 [image assetsSrc="Angular-Introduction-7.png" /]
 
@@ -117,15 +117,15 @@ Every position has different tasks.
 
 In addition to all common properties, the manager position has a **dividend** he can collect along with his salary.
 
-All employees have a **work** function that when called cycles trough the list responsibilities for that position and prints the current one.
+All employees have a **work** function that when called cycles through the list responsibilities for that position and prints the current one.
 
 When all tasks have been printed, the list starts over from the beginning.
 
 Employees can also **collect salary**, which outputs the amount, plus any **bonuses**.
 
-Your program needs to expose a module, containing the three classes **Junior**, **Senior** and **Manager**.
+Your program needs to expose a module, containing the three classes **Junior**, **Senior**, and **Manager**.
 
-The properties **name** and **age** are set trough the constructor, while the **salary** and a manager’s **dividend** are initially set to zero and can be changed later.
+The properties **name** and **age** are set through the constructor, while the **salary** and a manager’s **dividend** are initially set to zero and can be changed later.
 
 The list of **tasks** is filled by each position.
 
@@ -152,7 +152,7 @@ And when `collectSalary()` is called, print the following:
 
 We should begin by creating a parent class, that will hold all properties, shared among the different positions.
 
-Looking at the problem description, we see the following structure for out parent object:
+Looking at the problem description, we see the following structure for our parent object:
 
 [image assetsSrc="Angular-Introduction-8.png" /]
 
@@ -166,7 +166,7 @@ Why should the class be abstract?
 
 [image assetsSrc="Angular-Introduction-9.png" /]
 
-The `work()` function has to cycle trough the list of tasks and print the current one.
+The `work()` function has to cycle through the list of tasks and print the current one.
 
 The easiest way to do this is to shift the first element from the array and push it at the end.
 
@@ -174,11 +174,11 @@ The easiest way to do this is to shift the first element from the array and push
 
 Printing the salary is pretty straightforward.
 
-However, since the manager has an additional bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
+However, since the manager has an added bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
 
 [image assetsSrc="Angular-Introduction-11.png" /]
 
-Now any objects that inherit from Employee will have all of its properties as well as anything new that’s defined in their declaration.
+Now any objects that inherit from Employee will have all of their properties as well as anything new that’s defined in their declaration.
 
 To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
 
@@ -202,7 +202,7 @@ His definition also needs to override the `getSalary()` function we added to the
 
 # The Elements
 
-If Watermelons exist, Firemelons, Earthmelons and Airmelons should also exist.
+If Watermelons exist, Firemelons, Earthmelons, and Airmelons should also exist.
 
 Create **classes** for **the 4 Elemelons**.
 
@@ -225,12 +225,12 @@ The property should have only a **getter**.
 All of the classes should hold a `toString()` function, which returns the following result for them:
 
 ```
-“Element: {Water/Fire/Earth/Air}”
-“Sort: {elemelonSort}”
-“Element Index: {elemelonElementIndex}”
+"Element: {Water/Fire/Earth/Air}"
+"Sort: {elemelonSort}"
+"Element Index: {elemelonElementIndex}"
 ```
 
-Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elemelons, regardless of which**.
+Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elements, regardless of which**.
 
 The Melolemonmelon **has no element**, but it can **morph** into any of the others. Implement a function `morph()`, which **changes the current element** of the Melolemonmelon, **each time** it is called.
 
@@ -258,7 +258,7 @@ It should have two public methods and a getter:
 
 -  `remove()`
 
--  **count \- getter**
+-  **count - getter**
 
 Adding should add on top of its contents.
 
@@ -288,7 +288,7 @@ Remove should get the topmost element.
 
 # KeyValuePairs
 
-Create a generic class which can store a key and value of any type.
+Create a generic class that can store a key and value of any type.
 
 It should have the following public methods:
 
@@ -302,7 +302,7 @@ It should have the following public methods:
 | --- | --- |
 | `let kvp = new KeyValuePair<number, string>();` | `key = 1, value = Steve` |
 | `kvp.setKeyValue(1, "Steve");`||
-| `kvp.display(); `||
+| `kvp.display();`||
 
 [image assetsSrc="Angular-Introduction-16.png" /]
 

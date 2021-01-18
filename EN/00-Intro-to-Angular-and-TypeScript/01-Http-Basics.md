@@ -4,7 +4,7 @@
 
 # What is HTTP?
 
-**HTTP** which, means **Hyper Text Transfer Protocol**, is an application-layer protocol.
+**HTTP** which, means **HyperText Transfer Protocol**, is an application-layer protocol.
 
 It is a text\-based client\-server protocol used for transferring Web resources, like HTML files, images, and more.
 
@@ -93,5 +93,4 @@ On the next lines, we have:
 
 The **body** is after the **headers**.
 
-[image assetsSrc="Blank diagram.png" /]
 [/slide]
