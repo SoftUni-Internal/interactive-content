@@ -7,7 +7,7 @@
 
 **1. Variables**
 
-- How to declare, Read or Modify variable?
+- How to declare, Read or Modify variable
 
 **2. Data Types**
 
@@ -25,7 +25,7 @@
 
 **6. Expressions** 
 
-- What are expressions?
+- What are expressions
 
 **7. Practical Coding Exercises**
 

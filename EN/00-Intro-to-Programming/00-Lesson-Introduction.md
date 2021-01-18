@@ -3,7 +3,7 @@
 
 # Lesson Introduction
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. What is Coding?**
 
