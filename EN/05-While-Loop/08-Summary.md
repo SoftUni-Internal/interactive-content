@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-In this lesson we learned: 
+## In this lesson we learned: 
 
 - What are **While** loops and how we use them
 
@@ -30,7 +30,7 @@ while (true) {
 
 - Infinity Loops
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - Complex for-loops with special step
 

@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-In this lesson we learned: 
+## In this lesson we learned: 
 
 - What are nested conditional statements
 
@@ -47,7 +47,7 @@ switch (selector) {
 
   * Multiple Labels in **Switch-Case**
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - **Incrementing** and **Decrementing** Operators
 

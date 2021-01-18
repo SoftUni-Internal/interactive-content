@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-In this lesson we learned: 
+## In this lesson we learned: 
 
 - What are Variables and how we use them
 
@@ -46,7 +46,7 @@ System.out.println(f);
 int r = (150-20) / 2 + 5;
 ```
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - How we use Comparison Operators
 

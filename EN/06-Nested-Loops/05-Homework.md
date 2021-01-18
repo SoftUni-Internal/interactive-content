@@ -2392,9 +2392,3 @@ Student's final assessment is 4.54.
 [code-io /]
 [/code-task]
 [/slide]
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-[/slide]

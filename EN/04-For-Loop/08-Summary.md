@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-In this lesson we learned: 
+## In this lesson we learned: 
 
 - For loops
   
@@ -34,7 +34,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 - Prefix and Postfix overview
 
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - What are **While** loops and how we use them
 

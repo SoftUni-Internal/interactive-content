@@ -3,7 +3,7 @@
 [slide]
 # Summary
 
-In this lesson we learned: 
+## In this lesson we learned: 
 
 - Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 
@@ -39,7 +39,7 @@ if (condition) {
 
 - How to debug code. Using Breakpoints
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - **Nested if-else** Statements
 

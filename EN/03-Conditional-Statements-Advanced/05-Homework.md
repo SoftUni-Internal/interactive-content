@@ -2185,15 +2185,3 @@ Y
 
 
 
-
-
-
-
-
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

@@ -1669,26 +1669,3 @@ The pool is 10.72% full. Pipe 1: 54.55%. Pipe 2: 45.45%.
 [/code-task]
 [/slide]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

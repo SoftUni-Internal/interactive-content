@@ -2830,9 +2830,3 @@ Average: 4.05
 [/code-task]
 [/slide]
 
-[slide]
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

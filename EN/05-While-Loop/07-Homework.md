@@ -2626,10 +2626,3 @@ I Like Naruto
 [/code-task]
 [/slide]
 
-
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-[/slide]
