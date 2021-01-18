@@ -1,6 +1,6 @@
 [slide]
-# Cinema
-[code-task title="Cinema" taskId="27-07-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem 03
+[code-task title="02-Cinema" taskId="27-07-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-For the upcoming premiere of three popular productions a local cinema has hired you to write a software that calculates the price, which the clients have to pay, depending on the movie and the offer they have chosen.
+For the upcoming premiere of three popular productions a local cinema has hired you to write software that calculates the price, which the clients should to pay, depending on the movie and the offer they have choose.
 
 |   | John Wick | Star Wars | Jumanji |
 |---|---|---|---|
@@ -22,9 +22,9 @@ For the upcoming premiere of three popular productions a local cinema has hired 
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
-Write a program that calculates the price that has to be paid.
+Create a program that calculates the total price of the tickets.
 
-Keep in mind that there are discounts:
+Discounts should be applied in the following cases:
 - If the chosen movie is "Star Wars" and at least four tickets are bought, there is 30% family discount.
 - If the chosen movie is "Jumanji" and the tickets bought are exactly two, there is 15% discount for two.
 
@@ -32,11 +32,11 @@ Keep in mind that there are discounts:
 You receive 3 lines from the console:
 - First line - movie - string: "John Wick", "Star Wars" or "Jumanji"
 - Second line - offer - string:"Drink", "Popcorn" or "Menu"
-- Third line - count tickets – whole number in the range [1… 30]
+- Third line - number of tickets – whole number in the range [1… 30]
 
 ## Output
-Print one line on the console: "Your bill is \{total price\}$"
- * The price must be formatted to two digits after the decimal point.
+Print out on a single line: "Your bill is \{total price\}$"
+ * The price must be formatted to two decimal places.
 
 ## Example
 | **Input** | **Output** | **Comments** |

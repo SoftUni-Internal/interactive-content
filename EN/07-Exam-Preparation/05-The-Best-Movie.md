@@ -1,6 +1,6 @@
 [slide]
-# The Best Movie
-[code-task title="The-Best-Movie" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem 06
+[code-task title="05-The-Best-Movie" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,27 +14,28 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Until the command "STOP" you will be receiving titles of your favorite movies.
+Until the command "STOP" you will be receiving movie titles.
 
 The best movie for you will be the one that has the most points.
 
-Points are calculated as the sum of the ASCII character values in the movie title.
+Points are calculated by adding all of the ASCII character values in the movie title.
 
-There will not be a case where we have two films with an equal number of points.
+There will not be a case in which there are two films with an equal number of points.
 
 Keep in mind the following:
-- For each lowercase letter in the title, you must subtract from the sum twice the length of the movie title.
-- For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
-You can have a maximum of 7 movie titles.
+- For each lowercase letter in the movie title, you must subtract twice the length of the movie title from the final sum.
+- For each uppercase letter in the title, the length of the movie title should be subtracted from the final sum.
+There can be a maximum of 7 movie titles.
 
 ## Input
-You receive multiple lines from the console until the command "STOP" or until the limit of 7 movies is reached:
+You receive multiple lines from the console until the command "STOP" is recieved or until the limit of 7 movies is reached:
 - Movie title – string;
 
 ## Output
-Print on the console:
-- If you have reached the limit of 7 movies you must print: "The limit is reached."
-- Print the best movie for you: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
+Print out on the console:
+
+- If you have reached the limit of 7 movies you should print out: "The limit is reached."
+- Print out the movie, holding the highest score: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
 
 ## Example
 | **Input** | **Output** | **Comments** |

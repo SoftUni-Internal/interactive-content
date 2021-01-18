@@ -1,6 +1,6 @@
 [slide]
-# Tv Series Budget
-[code-task title="Tv-Series-Budget" taskId="27-07-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem 05
+[code-task title="04-TV-Series-Budget" taskId="27-07-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,13 +14,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are hired by a TV company to write a program that calculate whether it is possible for customers to purchase the desired series. 
+You are hired by a TV company to create a program that calculates whether it is possible for customers to purchase access to some TV series which they would like to watch. 
 
-You have a budget and number of series that the user will want to purchase.
+You receive a budget the number of series that the user will want to purchase.
 
-Each series has a title and price.
+Each item has a title and price.
 
-Some of the series have a discount:
+There are discounts for some of the titles:
 - Thrones – 50%
 - Lucifer – 40%	
 - Protector – 30%
@@ -30,18 +30,18 @@ Some of the series have a discount:
 ## Input
 You receive from the console:
 - Budget - real number in the range [10.0… 100.0]
-- Count series - n – whole number in the range [1… 10]
+- Number of series - n – whole number in range [1… 10]
 
 For each series you receive two lines:
-- Name of the series - string
-- Price for a series - real number in the range [1.0… 15.0]
+- Title of the series - string
+- Price for the series - real number in range [1.0… 15.0]
 
 ## Output
-Print one line on the console:
-- If your budget is greater than or equal to the price of the series: "You bought all the series and left with \{money left\}$"
-- If your budget is less than the price of the series: "You need \{money needed\}$ more to buy the series!"
+Print a single line on the console:
+- If the budget is greater than or equal to the price of the series: "You bought all the series and left with \{money left\}$"
+- If the budget is less than the price of the series: "You need \{money needed\}$ more to buy the series!"
 
-The result must be formatted to two digits after the decimal point.
+The result must be formatted to two decimal places.
 
 ## Example
 | **Input** | **Output** | **Comments** |

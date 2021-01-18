@@ -1,6 +1,6 @@
 [slide]
-# Cinema Income
-[code-task title="Cinema-Income" taskId="27-07-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem 04
+[code-task title="03-Cinema-Income" taskId="27-07-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,30 +14,30 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have been hired by a cinema to write a program that calculates whether a movie showing will be enough so that the cinema hall is filled and how much money will the profit be. 
+You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what the income of the event would be. 
 
-You are going to receive the count of seats in the hall and on the next lines until the command "Movie time!", how many people enter the hall. 
+On the first line you are going to receive the number of seats in the hall, and on the following lines until the command "Movie time!", how many people enter the hall.
 
-The price for one ticket is 5$. 
+The price for a ticket is 5$. 
 
-If the current count of people that enter the hall can be divided by 3 without remainder, there is 5$. discount of the total price.
+If the current number of people that enter the hall can be divided by 3 without remainder, there is 5$. discount on the total price.
 
-If there are not enough free seats for the people that want to enter, it means that there are no more seats left and the program must stop reading input from the console. 
+If there are no more free seats for the people that want to enter, the program must stop reading input from the console. 
 
 If more people than the available seats try to enter the hall, it is considered full and the program should stop receiving input.
 
 ## Input
 Read from the console:
-- First line – hall's capacity – whole number in the range [50... 150]
+- First line – hall capacity – whole number in range [50... 150]
 
-On each of the next lines until the command "Movie time!":
-- Count of people entering the cinema - whole number in the range [1… 15]
+On each of the next line until the command "Movie time!":
+- Number of people entering the cinema - integer in range [1… 15]
 
 ## Output
-First, print on the console one line:
+A single line on the console:
 - If you have received the command "Movie time!": "There are \{seats left\} seats left in the cinema."
 - If there are no more free seats in the hall: "The cinema is full."
-- Afterwards, print: "Cinema income - \{income\}$"
+- Afterwards, print out: "Cinema income - \{income\}$"
 
 ## Example
 | **Input** | **Output** | **Comments** |

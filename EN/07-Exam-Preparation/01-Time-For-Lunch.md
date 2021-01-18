@@ -1,6 +1,6 @@
 [slide]
-# Time For Lunch
-[code-task title="Time-For-Lunch" taskId="27-07-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem 02
+[code-task title="01-Time-For-Lunch" taskId="27-07-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -14,24 +14,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-During the lunch break you want to watch an episode from your favorite series. 
+During your lunch break you want to watch an episode from your favorite series. 
 
-Your task is to write a program that will help you determine whether you have enough time to watch the episode. 
+Your task is to create a program that will help you determine whether you have enough time to watch the episode. 
 
-In the lunch break you spend time to have lunch and to unwind. 
+During your lunch break you also spend time to have lunch and unwind. 
 
-The time for lunch will be 1/8 of the break time and the time for relaxing will be 1/4 of the break time.
+The time you need for lunch will be 1/8 of your overall break time and the time you need to relax will be 1/4 of the break time.
 
 ## Input
 You receive 3 lines from the console:
 - Name of the series - string
-- Duration of an episode - whole number in the range [10… 90]
-- Duration of the break - whole number in the range [10… 120]
+- Duration of an episode - whole number in range [10… 90]
+- Duration of the break - whole number in range [10… 120]
 
 ## Output
-Print on the console one line:
-- If the time is enough to watch the episode: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
-- If the time is not enough: "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
+The output should consist of a single line in the following form:
+
+- If there is enough time  to watch the episode: "You have enough time to watch \{name of the series\} and left with \{time left\} minutes free time."
+- If there is not enough time : "You don't have enough time to watch \{name of the series\}, you need \{time needed\} more minutes."
     - Round the time up to the nearest whole number.
 
 ## Example
