@@ -122,7 +122,7 @@ Your task is to return another function that only **takes one parameter** and **
 
 You will receive the following function:
 
-[image assetsSrc="advanced-functions-01.png" /]
+[image assetsSrc="advanced-functions-01.png" /]
 
 Set the following parameters to fixed values:
 
@@ -249,9 +249,9 @@ For more information check the examples.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-02.png" /]
+[image assetsSrc="advanced-functions-02.png" /]
 
-[image assetsSrc="advanced-functions-03.png" /]
+[image assetsSrc="advanced-functions-03.png" /]
 
 
 [/task-description]
@@ -330,7 +330,9 @@ gender-Female
 [code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-problem-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-
+function solution() {
+    // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
@@ -354,7 +356,7 @@ The output should be the **sorted array**.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-04.png" /]
+[image assetsSrc="advanced-functions-04.png" /]
 
 [/task-description]
 [code-io /]
@@ -455,7 +457,7 @@ You will receive a series of arguments **passed** to your function.
 
 ## Example
 
-[image assetsSrc="advanced-functions-05.png" /]
+[image assetsSrc="advanced-functions-05.png" /]
 
 [/task-description]
 [code-io /]
@@ -652,7 +654,9 @@ yes
 [code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-problem-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-
+function solution() {
+    // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
@@ -670,7 +674,7 @@ The patient chart object must contain the following properties:
   
 - **personalInfo** which is an object holding the patient's age, weight, and height as properties;
   
-- **BMI** - body mass index. You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
+- **BMI** \- body mass index. You can find information about how to calculate it [here](https://en.wikipedia.org/wiki/Body_mass_index);
   
 - **status**
   
@@ -705,7 +709,7 @@ Look at the sample output for more information.
 
 ## Example
 
-[image assetsSrc="advanced-functions-06.png" /]
+[image assetsSrc="advanced-functions-06.png" /]
 
 [/task-description]
 [code-io /]
@@ -817,7 +821,9 @@ yes
 [code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-problem-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-
+function solution() {
+    // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
@@ -885,7 +891,7 @@ Look at the sample output for more information.
 
 ## Example
 
-[image assetsSrc="advanced-functions-13.png" /]
+[image assetsSrc="advanced-functions-13.png" /]
 [/task-description]
 [code-io /]
 [tests]
@@ -1021,7 +1027,9 @@ yes
 [code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-problem-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-
+function solution() {
+    // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
@@ -1098,11 +1106,11 @@ Look at the sample output for more information.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-14.png" /]
+[image assetsSrc="advanced-functions-14.png" /]
 
-[image assetsSrc="advanced-functions-15.png" /]
+[image assetsSrc="advanced-functions-15.png" /]
 
-[image assetsSrc="advanced-functions-16.png" /]
+[image assetsSrc="advanced-functions-16.png" /]
 
 [/task-description]
 [code-io /]
