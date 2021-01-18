@@ -1,9 +1,9 @@
 # Lesson Introduction
 
 [slide]
-# Table of Contents
+# Lesson Contents
 
-# In this lesson you will learn:
+## In this lesson you will learn:
 
 **1. Event Loop**
 
