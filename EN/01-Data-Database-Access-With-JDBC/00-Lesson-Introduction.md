@@ -1,6 +1,6 @@
 [slide]
 
-# Table of contents
+# Lesson introduction
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
 
