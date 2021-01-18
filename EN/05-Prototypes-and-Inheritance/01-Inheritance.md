@@ -85,7 +85,7 @@ All of them will have the feature that **pet** has.
 
 # Multiple Inheritance
 
-**Multiple Inheritance** is when we want to inherit from more than one parent class directly.
+**Multiple Inheritance** is when we want to directly inherit from more than one parent class.
 
 This is not supported in JavaScript.
 
