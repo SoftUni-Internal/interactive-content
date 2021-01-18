@@ -976,10 +976,3 @@ Margie with ID: 17098 is 46 years old.
 [/code-task]
 [/slide]
 
-
-[slide]
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

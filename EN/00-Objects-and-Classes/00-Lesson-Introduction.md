@@ -11,7 +11,7 @@
 
 **1. Classes**
 
-- What Classes represents?
+- What Classes represents
 
 - How to define simple class
 
@@ -19,7 +19,7 @@
 
 **2. Objects**
 
-- What are Objects?
+- What are Objects
 
 - Object Values
 

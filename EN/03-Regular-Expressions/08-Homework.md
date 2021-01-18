@@ -1099,9 +1099,3 @@ info-bg@software-university.software.academy
 [/code-task]
 [/slide]
 
-[slide]
-# Homework Results
-
-[tasks-results/]
-
-[/slide]
