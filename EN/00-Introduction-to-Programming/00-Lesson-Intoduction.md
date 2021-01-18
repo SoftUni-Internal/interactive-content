@@ -1,4 +1,5 @@
 # Lesson Introduction
+
 [slide hideTitle]
 
 # Lesson Content
@@ -8,7 +9,7 @@
 [stream language="RO" videoId="489879790/8300ace394"  /]
 [/video-vimeo]
 
-## In this lesson you will learn:
+## In this lesson you will learn about:
 
 **1. What is coding**
 - Writing simple commands and programs
@@ -23,3 +24,8 @@
 - Creating and running console apps
 
 [/slide]
+
+
+
+
+
