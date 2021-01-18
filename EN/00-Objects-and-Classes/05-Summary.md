@@ -37,6 +37,6 @@ class Dice {
     
 
 
-[/slide]
+[/slide] 
 
 
