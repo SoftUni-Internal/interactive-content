@@ -16,35 +16,13 @@
 
 - **Chaining** promises and utilizing their methods.
 
-```js
-new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    resolve("Thomas");
-  }, 1000);
-}).then(function (response) {
-  console.log("My name is: " + response);
-});
-```
-
 **"Async" functions**
 
 - Writing clean and concise asynchronous code with `async` and `await`.
 
 - **Sequential** and **concurrent** execution.
 
-```js
-async function fetchInfo(url) {
-  try {
-    let data = await fetch(url);
-
-    let dataToJSON = await data.json();
-  } catch (err) {
-    console.log(err);
-  }
-}
-```
-
-## The topic of the next lesson is:
+The topic of the next lesson is:
 
 **Remote Databases**
 
