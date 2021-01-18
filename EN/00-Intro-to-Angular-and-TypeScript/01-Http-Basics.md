@@ -24,7 +24,7 @@ The most important qualities that HTTP has are:
 
 [slide]
 
-# Request\-Response Model
+# Request-Response Model
 
 With the **request-response** model, we have client and server.
 
