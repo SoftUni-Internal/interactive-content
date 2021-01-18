@@ -2,6 +2,8 @@
 
 # Summary
 
+## In this lesson you learnt:
+
 - Components are reusable elements.
     - They are Functional and Class-based.
     ```js
@@ -53,7 +55,7 @@
     }
     ```
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
 - Component Lifecycle
 - Higher Order Components
