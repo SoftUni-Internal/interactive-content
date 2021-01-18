@@ -12,7 +12,7 @@
 
 **2. Event Types**
 
-- What are event types
+- What are some of the event types in JavaScript
 - How to use them
 
 **3. Event Object Properties and Methods**
