@@ -31,7 +31,7 @@ In the above example `helloFunction` acts as a placeholder for the `sayHello()` 
 let greet = function (name) {
   return `Hello, ${name}`;
 };
-console.log(greet(Johnny));
+console.log(greet('Johnny'));
 ```
 
 We **invoke** the function by adding **parentheses** after the function's name.
