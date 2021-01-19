@@ -1,27 +1,27 @@
 # Lesson Introduction
 
 [slide]
-# Table of Contents
+# Lesson Contents
 
-# In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Event Loop**
 
-- what is an event loop
-- how even loop works
+- What is an event loop
+- How does the event loop work
 
 **2. Event Types**
 
-- which are the event types
-- how to use them
+- What are some of the event types in JavaScript
+- How to use them
 
 **3. Event Object Properties and Methods**
 
-- what is an even object
-
-- what properties does it have
+- What is an event object
+- The properties of event objects
 
 **4. Handling Events**
 
-- how to handle events when working with DOM
+- How to handle events when working with the DOM
+
 [/slide]
