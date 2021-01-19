@@ -159,7 +159,7 @@ This is the theme comments URL `localhost:4200/themes/:themeId`, where the user 
 
 # Theme comments - Logged in
 
-**Logged in** user can write new comment or like other user's posts.
+**Logged in** user can write new comments or like other user's posts.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(9).png" /]
 
