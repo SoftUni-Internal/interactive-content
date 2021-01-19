@@ -1,16 +1,4 @@
-# Integrated Development Environments
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="6481" endTimeInSeconds="7114"]
-[stream language="EN" videoId="384741142" default /]
-[stream language="RO" videoId="390421925"  /]
-[/video-vimeo]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Integrated Development Environments (IDE)
 In order to program we need an **Integrated Development Environment** (IDE). 
 
@@ -35,7 +23,7 @@ This an example how a development IDE may look (IntelliJ IDEA IDE for Java):
 [image assetsSrc="intro-to-programming-hello-world.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Installing IntelliJ IDEA
 We begin with the installation of the integrated environment **IntelliJ IDEA** (Community, version 2019.2.1, latest as of August 2019). 
 
@@ -81,7 +69,7 @@ Press the `[Start using IntelliJ IDEA]` button and the main view of IntelliJ IDE
 That's all. You are ready to work with IntelliJ IDEA.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Project Solutions and Projects in IntelliJ IDEA
 Before we start working with IntelliJ IDEA, it is necessary to get familiar with the concepts of a **IntelliJ IDEA Project** and a **IntelliJ IDEA Modules**, which are an inevitable part of it.
 
@@ -110,7 +98,7 @@ The hierarchical organization is much more convenient with more serious projects
 For **smaller projects** IntelliJ Projects and IntelliJ Modules are **complicating the work**, rather than helping, but you will get used to it quickly.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Development Environments: Desktop and Online
 Install JetBrains IntelliJ IDEA Community
 
