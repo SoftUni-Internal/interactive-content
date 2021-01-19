@@ -1,51 +1,41 @@
-[slide]
-
+# Summary
+[slide hideTitle]
 # Summary
 
-## What you learned in this lesson
+# In this lesson you learnt:
 
--  **Inheritance**, in general, is the ability to **extend** some or all of the functionality of a class to another.
+-  **Inheritance** makes it possible to create a new class that **extends** some or all of the functionality of a class by inheriting from it. Child classes inherit **data** and **methods** from their parent
 
-   -  Child classes inherit **data** and **methods** from parent.
+-  Objects in JavaScript have **prototypes**
 
--  Object in JavaScript have **prototypes**.
-   -  They have **properties** in their prototype chain.
--  We have two ways to create an object.
+-  They have **properties** in their prototype chain
 
-   -  Literal
+- There are two ways to create an object:
 
-   ```js
-   let foo = {
-      me: 'Hi!',
-      print: function () {
-         console.log(this.me);
-      },
-   };
-  
-   ```
+**Literal creation**
 
-   -  Constructor
+```js
+let foo = {
+  me: 'Hi!',
+  print: function () {
+    console.log(this.me);
+  },
+};
+```
 
-   ```js 
-   function Foo() {
-      this.me = 'Hi!';
-      this.print = function () {
-         return `${this.me}`;
-      };
-   }
+**Constructor creation**
 
-   let test = new Foo();
-   ```
+```js 
+function Foo() {
+  this.me = 'Hi!';
+  this.print = function () {
+    return `${this.me}`;
+  };
+}
 
--  Prototypes are objects that form **hierarchical chain**.
+let test = new Foo();
+```
 
-## In the next lesson you will learn about:
+-  Prototypes are objects that form **hierarchical chain**
 
-- Exam Preparation with three tasks:
-
-   - DOM
-
-   - Class Inheritance
-
-   - Class task with Functionality
 [/slide]
