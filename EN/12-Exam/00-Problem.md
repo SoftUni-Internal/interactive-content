@@ -4,7 +4,7 @@
 
 # Exam Rules:
 
-[Download resources here!](https://mega.nz/file/zR5GGTpB#KKAkJYDcNKWJxYJ_MWCPM5g6l-S2H4CCyob0PrI_U1Q)
+[Download resources here!](https://mega.nz/file/2M5VGaAA#5sRZMsVki9oEhwa6QSTc6WASG3GKXFELO-kxCgD0qAk)
 
 - You have 4 hours
 

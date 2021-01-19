@@ -4,7 +4,7 @@
 
 # User
 
-The Database of the Tutorials application needs to support 2 entities
+The Database of the Theater application needs to support 2 entities
 
 - Username: string (required), unique
 
