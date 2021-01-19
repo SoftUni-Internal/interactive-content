@@ -1,9 +1,10 @@
-[slide]
-
-
 # Lesson Introduction
+[slide hideTitle]
 
-## In this lesson you will learn about:
+
+# Lesson Content
+
+## In this lesson you will learn:
 
 **1. Logical Expressions**
 

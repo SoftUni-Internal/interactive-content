@@ -1,16 +1,6 @@
 # Logical Expressions
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1628" endTimeInSeconds="2292"]
-[stream language="EN" videoId="341539841/456a08950e" default /]
-[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Comparison Operators
 In programming, we can compare values using the following operators:
 
@@ -26,7 +16,7 @@ In programming, we can compare values using the following operators:
 When compared, the result is a Boolean value `true` or `false`, depending on whether the result of the comparison is `true` or `false`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Examples for Comparing Numbers
 Examples of such an expression are as follows:
 ```java live
@@ -54,7 +44,7 @@ The expressions on both sides of the comparison operator are evaluated, and the 
 If the value of the expression on the left side is greater than or equal to the value of the expression on the right, the entire expression evaluates to `true`, otherwise, it evaluates to `false`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # String Comparison
 Comparing text using the `equals()` method.
 

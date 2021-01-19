@@ -1,16 +1,6 @@
 # Real-Life Example
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1519" endTimeInSeconds="1627"]
-[stream language="EN" videoId="341539841/456a08950e" default /]
-[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Real Life Example: Watering Plants
 [image assetsSrc="02-coditional-statements-1.png" /]
 
