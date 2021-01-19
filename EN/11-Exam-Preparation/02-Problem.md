@@ -63,7 +63,7 @@ In the Details of a play section, you should load play **name** and **descriptio
 
 ## Not Liked Play (Logged in User) 
 
-If the user did not like the play, you should display **Like button.**  
+If the user did not like the play, you should display the **Like button.**  
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-8.png" /]
 
