@@ -274,7 +274,7 @@ yes
 
 [slide]
 # Solution: List Of Items
-[code-task title="List Of Items-solution" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
