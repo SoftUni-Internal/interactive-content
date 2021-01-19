@@ -3,25 +3,23 @@
 [slide]
 # Traditional Classes
 
-Classes are **design patterns**. They are a kind of **blueprint**, so they **copy** themselves. 
+Classes are **blueprints** for creating objects.
 
-That means after they are **instantiated**, they make a **copy** of the class to the **instance**. 
+That means after they are **instantiated**, a **copy** of the class is created and this becomes a new object **instance**. 
 
-And when they are **inherited**, they make a **copy** from the **parent** to the **child**.
+When a class **inherits** from another class, the properties and methods of the parent class are inherited.
 
 ## Class Inheritance
 
-So classes **inherit**, also called **extend** other classes. 
+The **extends** keyword is used to create a child class from the parent class.
 
-When they **extend** a class, they **inherit** its data and methods. To do that, we use the keyword **extends**.
+When a class **extends** a parent, they **inherit** its data and methods.
 
-Child class can:
+Child classes can:
 
 -  Add **properties**, also called **data**.
 -  Add or replace **methods**.
 -  Add or replace **accessor** properties.
-
-By replace, we mean that it is more likely shadowing because we can not override the original part.
 
 Here is an example:
 
@@ -49,7 +47,7 @@ console.log(`Teacher: ${t.name} (${t.email}), teaches ${t.subject}`);
 
 In this example, we create two classes. The **Person** class is the **parent** one, and the Teacher is the **child** class. 
 
-In the first `console.log`, we see the **person** with its parameters which are, **name** and **email**.
+In the first `console.log`, we output the **person** with its parameters which are, **name** and **email**.
 
 In the second class, we inherit the parent's class parameters and add a third one, which is **subject**.
 
@@ -61,17 +59,13 @@ In the second class, we inherit the parent's class parameters and add a third on
 
 Classes in JavaScript are **based** on **prototype** **inheritance**.
 
-And they are **sugary** **syntax** over the existing one.
+They **do** **not** introduce a new inheritance model to JavaScript. Classes in JavaScript **delegate** rather than create **blueprints**. When inheriting not all methods are copied. 
 
-They **do** **not** introduce a new inheritance model to JS. Classes in JS **delegate** rather than making **blueprints**.
+Parent classes **delegate** the methods to their children, and if a method is not **declared** in the child instance, it is called from the **parent** instance. 
 
-The classes in JS does not make a **copy** of all **inherited** methods.
+**Keys** and **values** are shared by **reference**.
 
-They **delegate** them, and if it is not **pre-declared** in this instance, it is called from the **parent** instance. 
-
-The **keys** and the **values** are shared by **references**
-
-here is an example of using classes:
+Here is an example of using classes:
 
 ```js live
 class Foo {
@@ -100,13 +94,13 @@ b2.speak();
 
 In this example, we have two classes: `Foo` and `Bar`. 
 
-`Bar` inherits `Foo`. 
+`Bar` inherits from `Foo`. 
 
-From `Bar`, we can access `Foo's` parameters and method. 
+We can access `Foo's` parameters and methods from `Bar`. 
 
-As you can see, we use the identify method, which is from foo.
+As you can see, we use the `identify()` method from `Foo`.
 
-And now let's see how it will be with functions:
+Now let us see how it works when it comes to functions:
 
 ```js live
 function Foo(who) {
@@ -132,14 +126,14 @@ b1.speak();
 b2.speak();
 ```
 
-In this example, we create the function **foo** with parameter **who**. 
+In this example, we create the function **foo** with a parameter **who**. 
 
-To its prototype, we attach another function, called **identify**. 
+We attach another function called **identify** to its prototype. 
 
-After that, we created the **Bar** function. 
+After that, we create the **Bar** function. 
 
-We continue with **inheriting** the foo's prototype from `Bar` and attaching a function to the `Bar` prototype, called **speak**.
+We continue with **inheriting** `Foo's` prototype from `Bar` and attaching a function to the `Bar` prototype, called **speak**.
 
-In the end, we see that in both ways the result will be identical.
+The result is identical to the classes and inheritance example we saw before.
 
 [/slide]
