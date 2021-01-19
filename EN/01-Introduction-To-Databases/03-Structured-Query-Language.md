@@ -37,7 +37,13 @@ SQL is subdivided into several language elements:
 
 Here is an example:
 
-[image assetsSrc="Introduction-To-Databases(4).png" /]
+`UPDATE employees` is a update clause, `salary * 1.1` is an expression, `job_title = "Cashier"` is a predicate and finally the intire piece of code is a statement.
+
+```java
+UPDATE employees
+SET salary = salary * 1.1
+WHERE job_title = "Cashier";
+```
 
 [/slide]
 
