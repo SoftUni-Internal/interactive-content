@@ -64,9 +64,9 @@ System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 
 The placeholders `%d` is replaced by the expressions, given after the text.
 
-[/slide hideTitle]
+[/slide]
 
-[slide]
+[slide hideTitle]
 # Reading User Input
 To read a **text** (string) from the console, again, we have to **declare a new variable** and use the standard **command for reading a text from the console**:
 ```java 
