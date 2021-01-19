@@ -1,7 +1,8 @@
+# Lesson Introduction
+
 [slide hideTitle]
 
-
-# Lesson Introduction
+# Lesson Content
 
 ## In this lesson you will learn:
 
@@ -21,8 +22,5 @@
 
 
 **5. Practical Coding Exercises**
-
-
-
 
 [/slide]

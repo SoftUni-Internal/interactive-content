@@ -1,17 +1,6 @@
-# What is Coding?
+[slide hideTitle]
+# What is Coding
 
-[slide]
-
-# Video
-[vimeo-video startTimeInSeconds="4243" endTimeInSeconds="5570"]
-[stream language="EN" videoId="384741142" default /]
-[stream language="RO" videoId="390421925"  /]
-[/video-vimeo]
-
-[/slide]
-
-[slide]
-# What is Coding?
 **To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
 
 When the commands are one after another, they are called **a computer program**. 
@@ -24,7 +13,7 @@ System.out.println("I am coding");
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Computer Programs
 Computer programs represent **a sequence of commands** that are written in certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
@@ -59,7 +48,7 @@ In order to write commands, we should know **the syntax and the semantics of the
 Therefore, we are going to get familiar with the syntax and the semantics of the language Java, and with programming generally, by learning step by step code writing from the simpler to the more complex programming constructions.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Algorithms
 Computer programs usually execute some algorithm. 
 
@@ -78,7 +67,7 @@ For example, to arrange a sequence of numbers in an ascending order, an algorith
 For convenience when creating programs, for writing programming code, for execution of programs and other operations related to programming, we need a **development environment**, for example IntelliJ IDEA.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Console-Based Java Program – Example
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 
