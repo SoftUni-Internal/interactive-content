@@ -34,7 +34,7 @@ After the successful installation your database will be empty, so you can load t
 3. Open a new command line and in the console write the following command:
     - mongorestore -d forum C:\Users\Name\Desktop\forum
 
-Note: C:\Users\Name\Desktop\forum – replace it with the path of the folder "forum" in your computer!
+Note: C:\Users\Name\Desktop\forum – replace it with the path of the folder "forum" on your computer!
 
 On the console you will see something like this:
 
