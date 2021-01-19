@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Person and Teacher
 
@@ -30,7 +30,7 @@ Write a class **Person** and a class **Teacher** which extends **Person**.
 
 ## Input and Output
 
-There will be **NO** input. Your function should return an object containing the classes **Person** and **Teacher**.
+There will be **NO** input. Your function should return an object containing the classes **Person**, and **Teacher**.
 
 [/task-description]
 [code-io /]
@@ -84,7 +84,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Inheriting and Replacing ToString
 
@@ -108,9 +108,9 @@ function personAndTeacher() {
 
 ## Description
 
-Extend the **Person** and **Teacher** from the previous task and add a class **Student** inheriting from **Person**. 
+Extend the **Person** and **Teacher** classes from the previous task and add a class **Student** inheriting from **Person**. 
 
-Add `toString()` functions to all classes, the formats should be as follows:
+Add `toString()` functions to all classes, the format should be as follows:
 
 - **Person** - returns `Person (name: {name}, email: {email})`
 - **Student** - returns `Student (name: {name}, email: {email}, course: {course})`
@@ -120,7 +120,7 @@ Try to reuse code by using the `toString()` function of the base class.
 
 ## Input and Output
 
-here will be **NO** input. Your function should return an object containing the classes **Person**, **Teacher** and **Student**.
+There will be **NO** input. Your function should return an object containing the classes **Person**, **Teacher** and **Student**.
 
 [/task-description]
 [code-io /]
@@ -174,7 +174,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Array Extension
 
@@ -192,7 +192,7 @@ function аrrayExtension() {
 
 ## Description
 
-Extend the build-in **Array** object with additional functionality. 
+Extend the built-in **Array** object with additional functionality. 
 
 Implement the following functionality:
 
@@ -204,7 +204,7 @@ Implement the following functionality:
 
 ## Input and Output
 
-Input for functions that expect it will be passed as valid parameters. Output from functions should be their **return** value.
+The input for functions that expect it will be passed as valid parameters. The output from functions should be their **return** value.
 
 ## Constrains
 
@@ -212,17 +212,17 @@ Structure your code as an **IIFE**.
 
 ## Hints
 
-If we have an **instance** of and array, since we know it is an object, adding new properties to it is pretty straightforward:
+If we have an **instance** of an array, since we know it is an object, adding new properties to it is pretty straightforward:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(6).png" /]
 
-This however, only adds our new function to this instance. 
+However, this only adds our new function to this instance. 
 
-To add all functions just one time and have them work on **all arrays** is not much more complicated, we just have to attach them to Array's **prototype** instead:
+To add all functions just one time and have them work on **all arrays**, we just have to attach them to Array's **prototype** instead:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(7).png" /]
 
-With such a declaration, we gain access to the context of the calling instance via **this**. 
+With such a declaration, we gain access to the context of the calling instance via the `this` keyword. 
 
 We can then easily access indexes and other existing properties. 
 
@@ -230,15 +230,15 @@ Do not forget we do not want to modify the exiting array, but to create a new on
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(8).png" /]
 
-Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, and exception will be thrown, so take care when using them, or add your own validation. 
+Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your own validation. 
 
 The last two functions require a little bit of arithmetic to be performed:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(9).png" /]
 
-To test our program in the Judge, we need to wrap it in an `IIFE`, like it is shown on the right. 
+To test our program in Judge, we need to wrap it in an `IIFE`. 
 
-There is **no return value**, since the code execution results in functionality being added to and existing object, so they take effect instantly. We are ready to submit our solution.
+There is **no return value** since the code execution results in functionality being added to and existing object. We are ready to submit our solution.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(10).png" /]
 
@@ -332,7 +332,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Balloons
 
@@ -350,7 +350,7 @@ function balloons() {
 
 ## Description
 
-You have been tasked to create several classes for balloons.
+You have been tasked with creating several classes for balloons.
 
 Implement a class **Balloon**, which is initialized with a **color** (String) and **gasWeight** (Number). 
 
@@ -360,7 +360,7 @@ Implement another class **PartyBalloon**, which inherits the **Balloon** class a
 
 The **PartyBalloon** class should have a **property ribbon**, which is an object with **color** and **length** - the ones given upon initialization. The ribbon property should have a **getter**.
 
-Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). The **text** should be a property and should have a **getter**.
+Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). The **text** should be a property and should have a **getter**
 
 ## Hints
 
@@ -380,13 +380,13 @@ This one is for you to do.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(12).png" /]
 
-Now that we know how to basically inherit classes. Create the **BirthdayBalloon** class on your own.
+Now that we know how to inherit classes, create the **BirthdayBalloon** class on your own.
 
-The **BirthdayBalloon** class should extend the **PartyBalloon** class, and should add an **extra property**.
+The **BirthdayBalloon** class should extend the **PartyBalloon** class and should add an **extra property**.
 
 It is the same as the previous class.
 
-Lastly, we need to return an object, containing all of our classes, so that the Judge can work with them.
+Lastly, we need to return an object containing all of our classes so that Judge can work with them.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(13).png" /]
 
@@ -564,7 +564,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: People
 
@@ -582,29 +582,29 @@ function people() {
 
 ## Description
 
-Define several classes, that represent a company’s employee records. 
+Define several classes that represent a company's employee records. 
 
-Every employee has a **name** and **age**, a **salary** and a list of **tasks**, while every position has specific properties not present in the others. 
+Every employee has a **name** and **age**, a **salary**, and a list of **tasks**, while every position has specific properties not present in the others. 
 
-Place all common functionality in a **parent abstract** class. 
+Place all common functionality in an **abstract parent** class. 
 
-Follow the diagram bellow:
+Follow the diagram below:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(14).png" /]
 
 Every position has different tasks. In addition to all common properties, the manager position has a **dividend** he can collect along with his salary.
 
-All employees have a `work()` function that when called cycles trough the list responsibilities for that position and prints the current one. 
+All employees have a `work()` function that when called cycles through the list of responsibilities for that position and prints the current one. 
 
-When all tasks have been printed, the list starts over from the beginning. Employees can also collect **salary**, which outputs the amount, plus any **bonuses**.
+When all tasks have been printed, the list starts over from the beginning. Employees can also collect **salary**, which outputs the amount plus any **bonuses**.
 
-Your program needs to expose a module, containing the three classes **Junior**, **Senior** and **Manager**. 
+Your program needs to expose a module, containing the three classes **Junior**, **Senior**, and **Manager**. 
 
-The properties **name** and **age** are set trough the constructor, while the **salary** and a manager's **dividend** are initially set to zero and can be changed later.
+The properties **name** and **age** are set through the constructor, while the **salary** and a manager's **dividend** are initially set to zero and can be changed later.
 
 The list of tasks is filled by each position. The resulting objects also expose the functions `work()` and `collectSalary()`. 
 
-When `work()` is called, one of the following lines is printed on the console, depending on the current task in the list:
+When `work()` is called, one of the following lines is printed to the console depending on the current task in the list:
 
 - `{employee name} is working on a simple task.`
 - `{employee name} is working on a complicated task.`
@@ -613,25 +613,25 @@ When `work()` is called, one of the following lines is printed on the console, d
 - `{employee name} scheduled a meeting.`
 - `{employee name} is preparing a quarterly report.`
 
-And when `collectSalary()` is called, print the following:
+When `collectSalary()` is called, print the following:
 
 - `{employee name} received {salary + bonuses} this month.`
 
 ## Input and Output
 
-Any input will be passed as valid arguments, where applicable. 
+Any input will be passed as valid arguments where applicable. 
 
 Print any output that is required to the console as a **string**.
 
 Submit your code as a revealing module, containing the **three classes**. 
 
-Any definitions need to be named exactly as described above.
+All definitions need to be named exactly as described above.
 
 ## Hints
 
-We should begin by creating a parent class, that will hold all properties, shared among the different positions. 
+We should begin by creating a parent class that will hold all properties shared among the different positions. 
 
-Looking at the problem description, we see the following structure for out parent object:
+Looking at the problem description, we see the following structure for our parent object:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(15).png" /]
 
@@ -651,9 +651,9 @@ Using the **new.target** keyword we can check whether the object was created fro
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(17).png" /]
 
-The `work()` function has to cycle trough the list of tasks and print the current one. 
+The `work()` function has to cycle through the list of tasks and print the current one. 
 
-The easiest way to do this is to shift the first element from the array and push it at the end.
+The easiest way to do this is to shift the first element from the array and push it to the end.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(18).png" /]
 
@@ -661,7 +661,7 @@ Printing the salary is pretty straightforward. However, since the manager has an
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(19).png" /]
 
-Now any objects that inherit from **Employee** will have all of its properties as well as anything new that is defined in their declaration. 
+Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
 
 To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
 
@@ -675,13 +675,13 @@ Child classes will call the parent with any parameters that are needed and push 
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(21).png" /]
 
-The **Manager** is not much different, with the exception that his constructor has to attach a **divident** property that is initially set to zero. 
+The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero. 
 
 His definition also needs to override the `getSalary()` function we added to the base class earlier, so it includes the bonus.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(22).png" /]
 
-After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace, and to be submitted to the Judge:
+After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace, and to be submitted to Judge:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(23).png" /]
 
@@ -765,16 +765,16 @@ yes
 [input]
 result = result();
 
-var guy1 = new result.Junior('dragan', 23);
-var guy2 = new result.Senior('petkan', 24);
-var guy3 = new result.Manager('bojan', 25);
+var guy1 = new result.Junior('Don', 23);
+var guy2 = new result.Senior('Peter', 24);
+var guy3 = new result.Manager('Jake', 25);
 
-expect(guy1.name).to.equal('dragan', "Junior's name not set trough constructor");
-expect(guy1.age).to.equal(23, "Junior's age not set trough constructor");
-expect(guy2.name).to.equal('petkan', "Senior's name not set trough constructor");
-expect(guy2.age).to.equal(24, "Senior's age not set trough constructor");
-expect(guy3.name).to.equal('bojan', "Manager's name not set trough constructor");
-expect(guy3.age).to.equal(25, "Manager's age not set trough constructor");
+expect(guy1.name).to.equal('Don', "Junior's name not set through constructor");
+expect(guy1.age).to.equal(23, "Junior's age not set through constructor");
+expect(guy2.name).to.equal('Peter', "Senior's name not set through constructor");
+expect(guy2.age).to.equal(24, "Senior's age not set through constructor");
+expect(guy3.name).to.equal('Jake', "Manager's name not set through constructor");
+expect(guy3.age).to.equal(25, "Manager's age not set through constructor");
 [/input]
 [output]
 yes
@@ -784,11 +784,11 @@ yes
 [input]
 result = result();
 
-var guy1 = new result.Junior('dragan', 23);
+var guy1 = new result.Junior('Don', 23);
 var guy1parent = Object.getPrototypeOf(Object.getPrototypeOf(guy1));
-var guy2 = new result.Senior('petkan', 24);
+var guy2 = new result.Senior('Peter', 24);
 var guy2parent = Object.getPrototypeOf(Object.getPrototypeOf(guy2));
-var guy3 = new result.Manager('bojan', 25);
+var guy3 = new result.Manager('Jake', 25);
 var guy3parent = Object.getPrototypeOf(Object.getPrototypeOf(guy3));
 
 expect(guy1parent === Object.prototype).to.equal(false, "Prototype chain was broken from Junior.");
@@ -799,16 +799,16 @@ expect(guy1parent === guy2parent).to.equal(true, "Junior and Senior aren't relat
 expect(guy2parent === guy3parent).to.equal(true, "Senior and Manager aren't related (parent class not the same).");
 expect(guy1parent === guy3parent).to.equal(true, "Junior and Manager aren't related (parent class not the same).");
 
-expect(guy1.salary).to.equal(0, "Salary not initialized trough constructor on Junior.");
+expect(guy1.salary).to.equal(0, "Salary not initialized through constructor on Junior.");
 guy1.salary = 1000;
 expect(guy1.salary).to.equal(1000, "Salary could not be changed at runtime on Junior.");
 
-expect(guy2.salary).to.equal(0, "Salary not initialized trough constructor on Senior.");
+expect(guy2.salary).to.equal(0, "Salary not initialized through constructor on Senior.");
 guy2.salary = 2000;
 expect(guy2.salary).to.equal(2000, "Salary could not be changed at runtime on Senior.");
 
-expect(guy3.salary).to.equal(0, "Salary not initialized trough constructor on Manager.");
-expect(guy3.dividend).to.equal(0, "Dividend not initialized trough constructor on Manager.");
+expect(guy3.salary).to.equal(0, "Salary not initialized through constructor on Manager.");
+expect(guy3.dividend).to.equal(0, "Dividend not initialized through constructor on Manager.");
 guy3.salary = 3000;
 guy3.dividend = 500;
 expect(guy3.salary).to.equal(3000, "Salary could not be changed at runtime on Manager.");
@@ -822,11 +822,11 @@ yes
 [input]
 result = result();
 
-var guy1 = new result.Junior('dragan', 23);
+var guy1 = new result.Junior('Don', 23);
 var guy1parent = Object.getPrototypeOf(Object.getPrototypeOf(guy1));
-var guy2 = new result.Senior('petkan', 24);
+var guy2 = new result.Senior('Peter', 24);
 var guy2parent = Object.getPrototypeOf(Object.getPrototypeOf(guy2));
-var guy3 = new result.Manager('bojan', 25);
+var guy3 = new result.Manager('Jake', 25);
 var guy3parent = Object.getPrototypeOf(Object.getPrototypeOf(guy3));
 
 expect(guy1parent === Object.prototype).to.equal(false, "Prototype chain was broken from Junior.");
@@ -850,9 +850,9 @@ guy1.work();
 guy1.work();
 
 var expectedGuy1Output = \[
-'dragan is working on a simple task.',
-'dragan is working on a simple task.',
-'dragan is working on a simple task.'
+'Don is working on a simple task.',
+'Don is working on a simple task.',
+'Don is working on a simple task.'
 \];
 
 compareArrays(expectedGuy1Output, log, "Junior's work wasn't logged.");
@@ -870,15 +870,15 @@ guy2.work();
 guy2.work();
 
 var expectedGuy2Output = \[
-'petkan is working on a complicated task.',
-'petkan is taking time off work.',
-'petkan is supervising junior workers.',
-'petkan is working on a complicated task.',
-'petkan is taking time off work.',
-'petkan is supervising junior workers.',
-'petkan is working on a complicated task.',
-'petkan is taking time off work.',
-'petkan is supervising junior workers.'
+'Peter is working on a complicated task.',
+'Peter is taking time off work.',
+'Peter is supervising junior workers.',
+'Peter is working on a complicated task.',
+'Peter is taking time off work.',
+'Peter is supervising junior workers.',
+'Peter is working on a complicated task.',
+'Peter is taking time off work.',
+'Peter is supervising junior workers.'
 \];
 
 compareArrays(expectedGuy2Output, log, "Senior's work wasn't logged.");
@@ -893,12 +893,12 @@ guy3.work();
 guy3.work();
 
 var expectedGuy3Output = \[
-'bojan scheduled a meeting.',
-'bojan is preparing a quarterly report.',
-'bojan scheduled a meeting.',
-'bojan is preparing a quarterly report.',
-'bojan scheduled a meeting.',
-'bojan is preparing a quarterly report.'
+'Jake scheduled a meeting.',
+'Jake is preparing a quarterly report.',
+'Jake scheduled a meeting.',
+'Jake is preparing a quarterly report.',
+'Jake scheduled a meeting.',
+'Jake is preparing a quarterly report.'
 \];
 
 compareArrays(expectedGuy3Output, log, "Manager's work wasn't logged.");
@@ -921,11 +921,11 @@ yes
 [input]
 result = result();
 
-var guy1 = new result.Junior('dragan', 23);
+var guy1 = new result.Junior('Don', 23);
 var guy1parent = Object.getPrototypeOf(Object.getPrototypeOf(guy1));
-var guy2 = new result.Senior('petkan', 24);
+var guy2 = new result.Senior('Peter', 24);
 var guy2parent = Object.getPrototypeOf(Object.getPrototypeOf(guy2));
-var guy3 = new result.Manager('bojan', 25);
+var guy3 = new result.Manager('Jake', 25);
 var guy3parent = Object.getPrototypeOf(Object.getPrototypeOf(guy3));
 
 expect(guy1parent === Object.prototype).to.equal(false, "Prototype chain was broken from Junior.");
@@ -945,18 +945,18 @@ log.push(string);
 
 guy1.salary = 1000;
 guy1.collectSalary();
-expect(log\[0\]).to.equal('dragan received 1000 this month.', "Junior's salary was not logged.");
+expect(log\[0\]).to.equal('Don received 1000 this month.', "Junior's salary was not logged.");
 
 guy2.salary = 2000;
 guy2.collectSalary();
-expect(log\[1\]).to.equal('petkan received 2000 this month.', "Senior's salary was not logged.");
+expect(log\[1\]).to.equal('Peter received 2000 this month.', "Senior's salary was not logged.");
 
 guy3.salary = 3000;
 guy3.collectSalary();
-expect(log\[2\]).to.equal('bojan received 3000 this month.', "Manager's salary was not logged.");
+expect(log\[2\]).to.equal('Jake received 3000 this month.', "Manager's salary was not logged.");
 guy3.dividend = 500;
 guy3.collectSalary();
-expect(log\[3\]).to.equal('bojan received 3500 this month.', "Manager's dividend was not logged.");
+expect(log\[3\]).to.equal('Jake received 3500 this month.', "Manager's dividend was not logged.");
 
 // Restore the console
 console.log = oldConsole;
@@ -971,7 +971,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Posts
 
@@ -989,14 +989,14 @@ function posts() {
 
 ## Description
 
-Your need to create several classes for **Posts**.
+You need to create several classes for **Posts**.
 
 Implement the following classes:
 
 - **Post**, which is initialized with **title** (String) and **content** (String).
 
    - The **2** arguments should be **public members**
-   - The **Post** class should also have `toString()` function which returns the following result:
+   - The **Post** class should also have a `toString()` function which returns the following result:
       - `Post: {postTitle}`
       - `Content: {postContent}`
 
@@ -1004,7 +1004,7 @@ Implement the following classes:
 
    - **comments**(Strings) - an array of strings.
 
-   - **addComment**(comment)- a function, which **adds** comments to that array.
+   - **addComment**(comment)- a function which **adds** comments to that array.
 
    - The class should extend the `toString()` function of the **Post** class, and should return the following result:
 
@@ -1017,13 +1017,13 @@ Implement the following classes:
        _ {comment2}
     ```
 
-In case **there are no comments**, return information only about the **title**, **content** and **rating** of the **post**.
+In case **there are no comments**, return information only about the **title**, **content**, and the **rating** of the **post**.
 
 - **BlogPost**, which inherits the **Post** class:
 
    - The **BlogPost** class should be initialized with **1 additional argument** - **views**(Number).
 
-   - The **BlogPost** class should hold: `view()` - which **increments** the **views** of the object with **1**, every time it is called. The function should **return the object**, so that **chaining is supported**.
+   - The **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object** so that **chaining is supported**.
 
    - The **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result:
 
@@ -1205,7 +1205,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Computer
 
@@ -1223,52 +1223,53 @@ function computer() {
 
 ## Description
 
-You need to implement the class hierarchy for a computer business, here are the classes you should create and support:
+You need to implement the class hierarchy for a computer business.
 
 Implement the following classes:
 
-- **Keyboard** class that contains:
+- A **Keyboard** class that contains:
 
-   - **manufacturer** - string property for the name of the manufacturer.
-   - **responseTime** - number property for the response time of the Keyboard.
+   - **manufacturer** - a string property for the name of the manufacturer
+   - **responseTime** - a number property for the response time of the keyboard
 
-- **Monitor** class that contains:
+- A **Monitor** class that contains:
 
-   - **manufacturer** - string property for the name of the manufacturer.
-   - **width** - number property for the width of the screen.
-   - **height** - number property for the height of the screen.
+   - **manufacturer** - a string property for the name of the manufacturer
+   - **width** - a number property for the width of the screen
+   - **height** - a number property for the height of the screen
 
-- **Battery** class that contains:
+- A **Battery** class that contains:
 
-   - **manufacturer** - string property for the name of the manufacturer.
-   - **expectedLife** - number property for the expected years of life of the battery.
+   - **manufacturer** - a string property for the name of the manufacturer
+   - **expectedLife** - a number property for the expected years battery life
 
-- **Computer** - **abstract** class that contains:
+- **Computer** - an **abstract** class that contains:
 
-   - **manufacturer** - string property for the name of the manufacturer.
-   - **processorSpeed** - a number property containing the speed of the processor in GHz.
-   - **ram** - a number property containing the RAM of the computer in Gigabytes.
-   - **hardDiskSpace** - a number property containing the hard disk space in Terabytes.
+   - **manufacturer** - a string property for the name of the manufacturer
+   - **processorSpeed** - a number property containing the speed of the processor in GHz
+   - **ram** - a number property containing the RAM of the computer in Gigabytes
+   - **hardDiskSpace** - a number property containing the hard disk space in Terabytes
 
-- **Laptop** - class **extending** the **Computer** class that contains:
+- A **Laptop** class **extending** the **Computer** class that contains:
 
-   - **weight** - a number property containing the weight of the Laptop in Kilograms.
-   - **color** - a string property containing the color of the Laptop.
-   - **battery** - an instance of the **Battery** class containing the laptop's battery. 
+   - **weight** - a number property containing the weight of the laptop in Kilograms
+   - **color** - a string property containing the color of the laptop
+   - **battery** - an instance of the **Battery** class containing the laptop's battery
    
-There should be a **getter** and a **setter** for the property and validation that the passed in argument is actually an instance of the Battery class.
+There should be a **getter** and a **setter** for the property and validation  to ensure the argument that is passed in is an instance of the Battery class.
 
-- **Desktop** - concrete class **extending** the **Computer** class that contains:
+- **Desktop** - a concrete class **extending** the **Computer** class that contains:
 
-   - **keyboard** - an instance of the **Keyboard** class containing the Desktop PC's Keyboard. 
+   - **keyboard** - an instance of the **Keyboard** class containing the Desktop PC's Keyboard.
 
-There should be a **getter** and a **setter** for the property and validation that the passed in argument is actually an instance of the **Keyboard** class.
+There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Keyboard** class.
 
-   - **monitor** - an instance of the **Monitor** class containing the Desktop PC's Monitor. 
+   - **monitor** - an instance of the **Monitor** class containing the Desktop PC's Monitor.
    
-There should be a **getter** and a **setter** for the property and validation that the passed in argument is an instance of the **Monitor** class.
+There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Monitor** class.
 
-Attempting to instantiate an abstract class should throw an **Error**, attempting to pass an object that is not of the expected instance (ex. an object that is not an instance of Battery to the laptop as a battery) should throw a **TypeError**.
+- Attempting to instantiate an abstract class should throw an **Error**
+- Attempting to pass an object that is not of the expected instance (ex. an object that is not an instance of Battery to the laptop as a battery) should throw a **TypeError**
 
 ## Example
 
@@ -1278,7 +1279,7 @@ You are asked to submit **ONLY the function** that returns an object containing 
 
 ## Bonus
 
-In order to achieve a better code reuse, it is a good idea to have a base abstract class containing common information - check the classes, what common characteristics do they share that can be grouped in a common base class.
+To achieve code reusability, it is a good idea to have a base abstract class containing common information. Check the classes, what common characteristics do they share that can be grouped in a common base class?
 
 [/task-description]
 [code-io /]
@@ -1458,4 +1459,3 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-
