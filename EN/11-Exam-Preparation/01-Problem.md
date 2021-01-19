@@ -26,7 +26,7 @@ The Database of the Theater application needs to support 2 entities
 
 - Users Liked: a collection of Users
 
-Implement the entities with the correct datatypes.
+Implement the entities with the **correct datatypes.**
 
 [/slide]
 

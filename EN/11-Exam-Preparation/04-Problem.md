@@ -7,9 +7,9 @@ The application should notify the users about the result of their actions.
 
 You should make the following validations:
 
-- The username should be at **least 3 characters** long and should consist only **English letters** and **digits**
+- The username should be **at least 3 characters** long and should consist only **English letters** and **digits**
 
-- The password should be at **least 3 characters** long and should consist only **English letters** and **digits**
+- The password should be **at least 3 characters** long and should consist only **English letters** and **digits**
 
 - The **repeat password** should be **equal to the password**
 

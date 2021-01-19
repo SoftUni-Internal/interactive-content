@@ -4,7 +4,9 @@
 
 # Security
 
-The Security Requirements are mainly access requirements. Configurations about which users can access specific functionalities and pages.
+The **Security Requirements** are mainly access requirements. 
+
+Configurations about which users can access specific functionalities and pages.
 
 - **Guest** (not logged in) users can access **Home** page and functionality.
 
@@ -12,11 +14,11 @@ The Security Requirements are mainly access requirements. Configurations about w
 
 - **Guest** (not logged in) users can access **Register** page and functionality.
 
-- **Users** (logged in) can access **Home page** (**Listed all Plays**)page and functionality.
+- **Users** (logged in) can access **Home page** (**Listed all Plays**) page and functionality.
 
 - **Users** (logged in) can access **Play Details** page and functionality.
 
-    - **Users** (not play creator) can **Like** a play once 
+    - **Users** (not play creator) can **Like** a play **once** 
 
     - **Users** (play creator) can **Edit** and **Delete** the current play
 

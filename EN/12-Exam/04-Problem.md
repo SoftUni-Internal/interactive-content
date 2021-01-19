@@ -20,7 +20,7 @@ You should make the following validations:
 
 You should make the following validations while **creating** or **editing a course**:
 
-- The **title** should be a**t least 4 characters**
+- The **title** should be **at least 4 characters**
 
 - The **description** should be **at least 20 characters** long
 

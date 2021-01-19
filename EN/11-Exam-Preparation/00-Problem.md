@@ -10,7 +10,7 @@
 
 - When you are ready, delete the node_modules folder, make sure all dependencies are listed in the package.json file and submit your archived project
 
-- You are provided with HTML & CSS resources, which you CAN modify
+- You are provided with HTML and CSS resources, which you CAN modify
 
 - Use Express.js as a back-end framework
 
@@ -31,7 +31,7 @@ Get familiar with the provided **HTML** and **CSS** and create an application fo
 
 The **Functionality Requirements** describe the functionality that the **Application** must support.
 
-- **Guest** **(Not Logged In)**
+- **Guest (Not Logged In)**
 
 The **application** should provide **Guest** (not logged in) users with the functionality to **login**, **register** and **view** the **Guest Home page.**
 
