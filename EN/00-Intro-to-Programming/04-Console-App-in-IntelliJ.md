@@ -1,15 +1,4 @@
-# Console App in IntelliJ IDEA
-
-[slide]
-# Video
-[vimeo-video startTimeInSeconds="7116" endTimeInSeconds="8404"]
-[stream language="EN" videoId="384741142" default /]
-[stream language="RO" videoId="390421925"  /]
-[/video-vimeo]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Console App in IntelliJ IDEA
 We already have IntelliJ IDEA and we can start it.
 
@@ -31,7 +20,7 @@ Click [New] and locate your JDK installation:
 [image assetsSrc="intro-to-programming-5.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Writing the Program Code
 The commands of the program are written in `main(String[] args)`, between the opening and the closing parentheses `{ }`.
 
@@ -61,7 +50,7 @@ This command is very typical in programming: we say a given **object** should be
 More technically explained, `out` is a static member in the `System` class, being an instance of PrintStream. And println is a normal (overloaded) method of the PrintStream class and we give as a parameter to it a text literal `"Hello Java"`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Starting the Program
 To start the program, press `[Ctrl + Shift + F10]`. If there aren't any errors, the program will be executed. 
 
