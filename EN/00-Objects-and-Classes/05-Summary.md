@@ -14,7 +14,8 @@ LocalDate birthday =
 LocalDate.of(2018, 5, 5);
 System.out.println(birthday);
 ```
-    - Instance of a class
+
+- Instance of a class
 
 ``` java
 class Dice {
