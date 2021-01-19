@@ -60,7 +60,29 @@ In order to fetch the themes, you will have to make a GET request on `localhost:
 
 Here are the REST API endpoints specifications:
 
-
+| **HTTP Method** | **Description** | **Endpoint** | **Expect** | **Login Required** |
+|:---:|:---:|:---:|:---:|:---:|
+| POST   | Signing up            | /users/register                 | username    | No  |
+|        |                       |                                 | email       | No  |
+|        |                       |                                 | password    | No  |
+|        |                       |                                 | rePassword  | No  |
+|        |                       |                                 | tel         | No  |
+| POST   | Signing in            | /users/login                    | username    | No  |
+|        |                       |                                 | password    | No  |
+| POST   | Logging out           | /users/logout                   |             | Yes |
+| GET    | Get all themes        | /themes                         |             | No  |
+| POST   | Post new theam        | /themes                         | themeName   | Yes |
+|        |                       |                                 | postText    | Yes |
+| POST   | Post comment in theme | /themes/:themeId                | postText    | Yes |
+| PUT    | Subscribe to theme    | /themes/:themeId                |             | Yes |
+| GET    | Get latest posts      | /posts?limit=5                  |             | No  |
+| PUT    | Edit post             | /themes/:themeId/posts/:postId  | postText    | Yes |
+| DELETE | Delete post           | /themes/:themeId/posts/:postId  |             | Yes |
+| PUT    | Like a post           | /likes/:postId                  |             | Yes |
+| GET    | Get user info         | /users/profile                  |             | Yes |
+| PUT    | Update user info      | /users/profile                  | username    | Yes |
+|        |                       |                                 | email       | Yes |
+|        |                       |                                 | tel         | Yes |
 
 Note: **Edit post** and **Delete post** can be done only by the **user** who has created the post!
 
