@@ -1,6 +1,8 @@
+# Summary
+
 [slide]
 
-# Summary
+# In this lesson we learned:
 
 **Internet**
 
