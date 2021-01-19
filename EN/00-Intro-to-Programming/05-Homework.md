@@ -1,5 +1,5 @@
 # Homework
-[slide]
+[slide hideTitle]
 # Problem: Print "Hello Java"
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -40,7 +40,7 @@ Hello Java
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Calculate and Print 5 * 5
 [code-task title="Calculate and Print 5 * 5" taskId="pb-java-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -82,7 +82,7 @@ Write a Java program, which:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Name and Expression
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -124,7 +124,7 @@ Catlyn
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Calculations
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -171,7 +171,7 @@ Write a program, which calculates and prints the value of the following express
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Square of 7 * 7 Stars
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -233,7 +233,7 @@ Prints a square of 7 * 7 stars like this:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Print "Hello SoftUni"
 [code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello-1" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -273,7 +273,7 @@ Hello SoftUni
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Rectangle Area
 [code-task title="Rectangle Area" taskId="pb-java-introduction-Rectangle-area" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -316,7 +316,7 @@ Write a program, which:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Nums from 1 to 10
 [code-task title="Nums from 1 to 10" taskId="pb-java-introduction-nums-from-1-to-10" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
@@ -379,7 +379,7 @@ Each number should be on a new line.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="pb-java-introduction-Triangle-of-Stars" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]

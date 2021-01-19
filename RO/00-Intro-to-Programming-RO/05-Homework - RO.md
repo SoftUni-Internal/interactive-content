@@ -1,6 +1,6 @@
-# Homework
-[slide]
-# Problem: Print "Hello Java"
+# Tema pentru acasă
+[slide hideTitle]
+# Problemă: Print Hello Java
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -14,11 +14,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a Java program, which:
+Scrieți un program în limbajul Java care să execute următoarele:
 
-Prints "Hello Java" on the console
+Tipărește "Hello Java" pe consolă
 [/task-description]
 [code-io /]
 [tests]
@@ -40,8 +40,8 @@ Hello Java
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Calculate and Print 5 * 5
+[slide hideTitle]
+# Problemă: Calculate and Print 5 * 5
 [code-task title="Calculate and Print 5 * 5" taskId="pb-java-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -55,12 +55,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a Java program, which:
+Scrieți un program în limbajul Java care să execute următoarele:
 
-* Calculates the value of 5 * 5
-* Prints the result
+* Calculează valoarea înmulțirii 5 * 5
+* Tipărește rezultatul
 [/task-description]
 [code-io /]
 [tests]
@@ -82,8 +82,8 @@ Write a Java program, which:
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Name and Expression
+[slide hideTitle]
+# Problemă: Name and Expression
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -98,9 +98,9 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression 5 + 3 on the second line
+Scrieți un program care să tipărească 'Catlyn' pe prima linie și să calculeze și să imprimă rezultatul expresiei 5 + 3 pe cea de-a doua linie
 [/task-description]
 [tests]
 [test open]
@@ -124,8 +124,8 @@ Catlyn
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Calculations
+[slide hideTitle]
+# Problemă: Calculations
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -139,9 +139,9 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program, which calculates and prints the value of the following expressions:
+Scrieți un program care să calculeze și sa printeze valoarea următoarelor expresii:
 
 * 5 + 3 \* 2
 * 4 \* (2 + 3)
@@ -171,8 +171,8 @@ Write a program, which calculates and prints the value of the following express
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Square of 7 * 7 Stars
+[slide hideTitle]
+# Problemă: Square of 7 * 7 Stars
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -186,11 +186,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program, which:
+Scrieți un program care să execute următoarele:
 
-Prints a square of 7 * 7 stars like this:
+Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 * * * * * * *
 * * * * * * *
@@ -233,9 +233,9 @@ Prints a square of 7 * 7 stars like this:
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello-1" executionType="tests-execution" executionStrategy="java-code"]
+[slide hideTitle]
+# Problemă: Print Hello SoftUni
+[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
 public class Main {
@@ -246,11 +246,11 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program, which:
+Scrieți un program care să execute următoarele:
 
-Prints "Hello SoftUni" on the console
+Imprimă "Hello SoftUni" pe consolă
 [/task-description]
 [code-io /]
 [tests]
@@ -273,8 +273,8 @@ Hello SoftUni
 [/slide]
 
 
-[slide]
-# Problem: Rectangle Area
+[slide hideTitle]
+# Problemă: Rectangle Area
 [code-task title="Rectangle Area" taskId="pb-java-introduction-Rectangle-area" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -286,14 +286,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program, which:
-* Calculates the area of the rectangle
-* Sides of the rectangle are 5 and 10
+Scrieți un program care să execute următoarele:
+* Calculează suprafața dreptunghiului
+* Laturile dreptunghiului au valorile 5 și 10
 
-## Output
-* Print the the calculated area
+## Rezultat
+* Printează suprafața calculată
 [/task-description]
 [code-io /]
 [tests]
@@ -316,8 +316,8 @@ Write a program, which:
 [/slide]
 
 
-[slide]
-# Problem: Nums from 1 to 10
+[slide hideTitle]
+# Problemă: Nums from 1 to 10
 [code-task title="Nums from 1 to 10" taskId="pb-java-introduction-nums-from-1-to-10" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -330,13 +330,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program to print numbers from 1 to 10 (inclsuive).
+Scrieți un program care să tipărească numerele de la 1 la 10 (inclusiv).
 
-## Output
+## Rezultat
 
-Each number should be on a new line.
+Fiecare număr ar trebui să fie pe o linie nouă.
 [/task-description]
 [code-io /]
 [tests]
@@ -379,8 +379,8 @@ Each number should be on a new line.
 
 
 
-[slide]
-# Problem: Triangle of Stars
+[slide hideTitle]
+# Problemă: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="pb-java-introduction-Triangle-of-Stars" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -392,12 +392,12 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which **prints a triangle** of stars. 
+## Descriere 
+Scrieți un program care să **imprime un triunghi** format din steluțe. 
 
-You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for the second row and so on for five rows. 
+Veți imprima un simbol asterisc \(\*\) pe primul rând, două simboluri asterisc pe al doilea rând, și așa mai departe, pentru un total de 5 rânduri. 
 
-## Output
+## Rezultat
 ```
 *
 **
@@ -433,5 +433,4 @@ You print one asteriks symbol \(\*\) for the first row, two asteriks symbols for
 [/tests]
 [/code-task]
 [/slide]
-
 
