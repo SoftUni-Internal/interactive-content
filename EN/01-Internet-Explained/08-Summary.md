@@ -50,7 +50,7 @@
 
 - A Network Interface Card allows a computer to access the internet
 
-## The topic of the next lesson is:
+# The topic of the next lesson is:
 
 **Hypertext Transfer Protocol**
 
