@@ -8,15 +8,15 @@
 
 - You have 4 hours to complete the task
 
-- When you are ready, delete the node_modules folder, make sure all dependencies are listed in the package.json file and submit your archived project
+- When you are ready, **delete** the `node_modules` folder, make sure all dependencies are listed in the `package.json` file and submit your archived project
 
-- You are provided with HTML and CSS resources, which you CAN modify
+- You are provided with **HTML and CSS** resources, which you **CAN modify**
 
-- Use Express.js as a back-end framework
+- Use `Express.js` as a back-end framework
 
-- Use MongoDB as a database with mongoose
+- Use **MongoDB** as a database with **mongoose**
 
-- You can use whatever view engine you like (Handlebars, EJS, Pug, etc...)
+- You can use whatever **view engine** you like (Handlebars, EJS, Pug, etc...)
 
 - Keep in mind that the points listed below, are the maximum point you can receive for a given functionality!
 

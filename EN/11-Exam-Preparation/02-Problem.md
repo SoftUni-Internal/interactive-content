@@ -78,6 +78,7 @@ If the user did not like the play, you should display **Like button.**
 The creator of the play should see `[Delete]` `[Edit]`. 
 
 The creator should NOT be able to like his plays! 
+[image assetsSrc="JS-BackEnd-Exam-Preparation-10.png" /]
 
 ## Delete Play (Logged in User) 
 
@@ -87,5 +88,5 @@ Upon deleting a play (clicking over `[Delete]` **button**, you should be **redir
 
 All form fields should be **filled automatically** with the corresponding information of the selected play. 
 
-[image assetsSrc="JS-BackEnd-Exam-Preparation-10.png" /]
+[image assetsSrc="JS-BackEnd-Exam-Preparation-11.png" /]
 [/slide]

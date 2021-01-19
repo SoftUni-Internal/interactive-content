@@ -1,11 +1,11 @@
 # Database Models: 10 Pts
 
 [slide hideTitle]
+# Database Models
 
-# User
+The **Database** of the **Theater** application needs to support **two entities:**
 
-The Database of the Theater application needs to support 2 entities
-
+## User
 - Username: string (required), unique
 
 - Password: string (required)
