@@ -1,15 +1,4 @@
-# Programming Languages
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="5572" endTimeInSeconds="6480"]
-[stream language="EN" videoId="384741142" default /]
-[stream language="RO" videoId="390421925"  /]
-[/video-vimeo]
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Programming Languages
 A programming language is an artificial language (syntax for expression), meant for giving commands that we want the computer to **read**, **process** and **execute**.
 
@@ -32,7 +21,7 @@ The **interpreter** is "a **program for executing programs**", written in some p
 It executes the commands in the program **one after another**, as it understands not only a single command and sequences of commands, but also other language constructions.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # The Java Language
 **Java** is modern, general purpose programming language.
 
@@ -47,7 +36,7 @@ Combines **procedural**, **object-oriented** and **functional programming** with
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Java Compilation and Execution
 As we have already mentioned, a program is **a sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to obtain certain result.
 
