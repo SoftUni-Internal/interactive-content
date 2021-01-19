@@ -29,12 +29,11 @@ You can find an installation guide [here](https://mega.nz/file/bMZC3ThT#1F--LRBi
 
 After the successful installation your database will be empty, so you can load the provided data in the database as follows:
 
-1. Use the provided folder named "forum" from resources.
+1. Use the provided folder named `from` resources.
 2. You have to have mongod running on a separate system command line.
-3. Open a new command line and in the console write the following command:
-    - mongorestore -d forum C:\Users\Name\Desktop\forum
+3. Open a new command line and in the console write the following command: `mongorestore -d forum C:\Users\Name\Desktop\forum`
 
-Note: C:\Users\Name\Desktop\forum – replace it with the path of the folder "forum" on your computer!
+Note: `C:\Users\Name\Desktop\forum`: replace it with the path of the folder `forum` on your computer!
 
 On the console you will see something like this:
 
@@ -52,9 +51,9 @@ This is it! Now you can check if the **db** is in your **dbs** using the followi
 
 You are also provided with a REST API. Download it from [here](https://mega.nz/file/yN4k0RoS#pGmJUZli5wta8YIUC496T10bSv45sgbm62MeIX8vKmQ)
 
-Inside the REST API folder you should first install the dependencies using the command "**npm install**". 
+Inside the REST API folder you should first install the dependencies using the command `npm install`. 
 
-After that, type the command "**npm start**". 
+After that, type the command `npm start`. 
 
 In order to fetch the themes, you will have to make a GET request on `localhost:3000/api/themes`.
 
@@ -62,27 +61,20 @@ Here are the REST API endpoints specifications:
 
 | **HTTP Method** | **Description** | **Endpoint** | **Expect** | **Login Required** |
 |:---:|:---:|:---:|:---:|:---:|
-| POST   | Signing up            | /users/register                 | username    | No  |
-|        |                       |                                 | email       | No  |
-|        |                       |                                 | password    | No  |
-|        |                       |                                 | rePassword  | No  |
-|        |                       |                                 | tel         | No  |
-| POST   | Signing in            | /users/login                    | username    | No  |
-|        |                       |                                 | password    | No  |
-| POST   | Logging out           | /users/logout                   |             | Yes |
-| GET    | Get all themes        | /themes                         |             | No  |
-| POST   | Post new theam        | /themes                         | themeName   | Yes |
-|        |                       |                                 | postText    | Yes |
-| POST   | Post comment in theme | /themes/:themeId                | postText    | Yes |
-| PUT    | Subscribe to theme    | /themes/:themeId                |             | Yes |
-| GET    | Get latest posts      | /posts?limit=5                  |             | No  |
-| PUT    | Edit post             | /themes/:themeId/posts/:postId  | postText    | Yes |
-| DELETE | Delete post           | /themes/:themeId/posts/:postId  |             | Yes |
-| PUT    | Like a post           | /likes/:postId                  |             | Yes |
-| GET    | Get user info         | /users/profile                  |             | Yes |
-| PUT    | Update user info      | /users/profile                  | username    | Yes |
-|        |                       |                                 | email       | Yes |
-|        |                       |                                 | tel         | Yes |
+| `POST`   | Signing up            | `/users/register`                 | `username`, `email`, `password`, `rePassword`, `tel` - optional     | No  |
+| `POST`   | Signing in            | `/users/login`                  | `username`, `password`  | No  |
+| `POST`   | Logging out           | `/users/logout`                  |             | Yes |
+| `GET`    | Get all themes        | `/themes`                        |             | No  |
+| `POST`   | Post new theam        | `/themes`                        | `themeName`, `postText`   | Yes |
+| `POST`   | Post comment in theme | `/themes/:themeId`                | `postText`    | Yes |
+| `PUT`    | Subscribe to theme    | `/themes/:themeId`               |             | Yes |
+| `GET`    | Get latest posts      | `/posts?limit=5`                 |             | No  |
+| `PUT`    | Edit post             | `/themes/:themeId/posts/:postId`  | `postText`    | Yes |
+| `DELETE` | Delete post           | `/themes/:themeId/posts/:postId` |             | Yes |
+| `PUT`    | Like a post           |`/likes/:postId`                |             | Yes |
+| `GET`    | Get user info / **Verify if user is logged in** | `/users/profile`                  |             | Yes |
+| `PUT`    | Update user info      | `/users/profile`                 | `username`, `email`, `tel` - optional  | Yes |
+
 
 Note: **Edit post** and **Delete post** can be done only by the **user** who has created the post!
 
