@@ -1,6 +1,7 @@
 # Inheritance
 
 [slide]
+
 # What is Inheritance
 
 **Inheritance** in JavaScript is the ability of an object to **delegate** some or all of its functionality to another. 
@@ -19,6 +20,7 @@ It is a type of **dependence**.
 
 
 [slide]
+
 # Simple Inheritance
 
 **Simple inheritance** is when a **child** class **inherits** the features of the **parent** class. This type of inheritance is when you are only **extending** the parent class.
