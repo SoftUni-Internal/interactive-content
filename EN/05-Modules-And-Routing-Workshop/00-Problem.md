@@ -69,7 +69,7 @@ We can reuse the **Welcome** component here.
 
 All "**users**" can access this page when they visit the forum. 
 
-Here is how it looks like before user has loged in:
+Here is how it looks like before user has logged in:
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(2).png" /]
 
