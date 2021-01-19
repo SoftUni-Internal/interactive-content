@@ -8,7 +8,7 @@
 
 - You have 4 hours to complete the task
 
-- When you are ready, delete the `node_modules` folder, make sure all dependencies are listed in the `package.json` file and submit your archived project
+- When you are ready, delete the `node_modules` folder, make sure all dependencies are listed in the `package.json` file, and submit your archived project
 
 - You are provided with **HTML and CSS** resources, which you can **modify**
 

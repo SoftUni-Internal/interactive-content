@@ -40,7 +40,7 @@ These are the **templates** and **functionalities**, accessible by **Users** (lo
 
 ## Home Page (Logged in User)
 
-List **all publi**c courses sorted in **ascending order** by the **created time** with a button **Details** which leads to a **course details page.**
+List **all public**c courses sorted in **ascending order** by the **created time** with a button **Details** which leads to a **course details page.**
 
 [image assetsSrc="JS-BackEnd-Exam-5.png" /]
 
@@ -52,7 +52,7 @@ If there are no courses in the database yet, display `No courses...`
 
 Enter course **title**, **description**, **image URL** and duration.
 
-After the course is created successfully, you should **redirect to Home page.**
+After the course is created successfully, you should **redirect to the Home page.**
 
 [image assetsSrc="JS-BackEnd-Exam-7.png" /]
 
@@ -62,7 +62,7 @@ In the Details of a course section, you should load course **name** and **descri
 
 ## Not Enrolled in Course (Logged in User)
 
-If the user is **not enrolled** in the course, you should display **Enroll button.** 
+If the user is **not enrolled** in the course, you should display the **Enroll button.**  
 
 [image assetsSrc="JS-BackEnd-Exam-8.png" /]
 
