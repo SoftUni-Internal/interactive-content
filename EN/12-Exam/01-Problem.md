@@ -1,10 +1,11 @@
 # Database Models: 10 Pts
 
 [slide hideTitle]
-
-# User
+# Database
 
 The **Database** of the **Tutorials** application needs to support:
+
+## User
 
 - Username: string (required), unique
 

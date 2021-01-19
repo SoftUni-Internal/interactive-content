@@ -4,7 +4,9 @@
 
 # Security
 
-The Security Requirements are mainly access requirements. Configurations about which users can access specific functionalities and pages.
+The **Security Requirements** are mainly **access** requirements. 
+
+Configurations about which users can access specific functionalities and pages.
 
 - **Guest** (not logged in) users can access **Home** page and functionality.
 

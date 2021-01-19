@@ -6,7 +6,7 @@
 
 [Download resources here!](https://mega.nz/file/2M5VGaAA#5sRZMsVki9oEhwa6QSTc6WASG3GKXFELO-kxCgD0qAk)
 
-- You have 4 hours
+- You have 4 hours to complete the task
 
 - When you are ready, delete the `node_modules` folder, make sure all dependencies are listed in the `package.json` file and submit your archived project
 

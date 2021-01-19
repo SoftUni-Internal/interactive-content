@@ -1,9 +1,11 @@
 # Validation and Error Handling: 10 Pts
 
 [slide hideTitle]
-# Login / Register
+# Validation and Error Handling
 
 The application should notify the users about the result of their actions.
+
+## Login / Register
 
 You should make the following validations:
 
