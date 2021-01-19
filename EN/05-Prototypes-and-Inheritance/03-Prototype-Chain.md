@@ -95,6 +95,12 @@ let sum = rect.area();
 console.log(sum);
 ```
 
+[/slide]
+
+[slide]
+
+# Comparison with the New Syntax 
+
 We have a function called **rectangle** which takes some parameters and we attach another function called **area** to the **rectangle** prototype, which **returns** the product from the multiplication of the **width** and **height** parameters.
 
 This is how the same thing looks like after ES6:
@@ -125,6 +131,12 @@ console.log(sum);
 There are two ways to create an object. The first one is **Literal** creation, and the second is **Constructor** creation.
 
 With **constructor** creation, we have a reference to the value of the constructor's prototype property, and also, we get an internal link to the `__proto__` property of the object. `__proto__` is a property that points at the prototype that has been set.
+
+[/slide]
+
+[slide]
+
+# Javascript Objects
 
 Here is an example of **literal creation**:
 

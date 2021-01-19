@@ -101,6 +101,27 @@ functionName.call(thisContext, ...[yourArray]);
 ```
 [/slide]
 
+
+[slide]
+
+# Apply() - Example
+
+```js
+js
+const firstPerson = {
+    name: "Peter",
+    prof: "Fisherman",
+    shareInfo: function () {
+        console.log(`${this.name} works as a ${this.prof}`);
+    }
+};
+const secondPerson = { name: "George", prof: "Manager" };
+firstPerson.shareInfo.apply(secondPerson);
+// George works as a Manager
+```
+
+[/slide]
+
 [slide]
 # Changing the Context: Bind
 
@@ -173,6 +194,23 @@ This is known as function borrowing in JavaScript.
 
 [/slide]
 
+[slide]
+
+# Bind() - Example
+
+```js
+const x = 42;
+const getX = function () {
+    return this.x;
+}
+const module = { x, getX };
+const unboundGetX = module.getX;
+console.log(unboundGetX()); // undefined
+const boundGetX = unboundGetX.bind(module);
+console.log(boundGetX()); // 42
+```
+
+[/slide]
 
 [slide]
 # Problem: Area and Volume Calculator

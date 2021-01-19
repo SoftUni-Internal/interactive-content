@@ -279,3 +279,108 @@ Limitations
 - May add CPU load
 
 [/slide]
+
+[slide]
+# Solution: Add Delete
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```js
+function solve(){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+Extend the previous problem to display a `[Delete]` link after each list item. Clicking ot it, should delete the item with no confirmation.
+
+# Example
+[image assetsSrc="Dom-Manipulation(4).png" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+document\.body\.innerHTML \= \`
+\<h1\>List of Items\</h1\>
+\<ul id\=\"items\"\>
+\</ul\>
+\<input type\=\"text\" id\=\"newText\" /\>
+\<input type\=\"button\" value\=\"Add\"  onclick\=\"addItem\(\)\"\>
+\`\;
+
+document\.getElementById\(\'newText\'\)\.value \= \'First\'\;
+result\(\)\;
+
+document\.getElementById\(\'newText\'\)\.value \= \'Second\'\;
+result\(\)\;
+
+let items \= \\$(\'\#items li\'\)\;
+
+\/\/ Verify items where added with delete links
+expect\(items\.get\(0\)\.innerHTML\)\.to\.contains(\'First\'\, \"Element wasn\'t added\.\"\)\;
+expect\(items\.get\(0\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
+expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'Second\'\, \"Element wasn\'t added\.\"\)\;
+expect\(items\.get\(1\)\.innerHTML\)\.to\.contains\(\'\<a href\=\"\#\"\>\[Delete\]\</a\>\'\, \"Delete link wasn\'t added\.\"\)\;
+
+\/\/ Setup event
+var clickEvent \= document\.createEvent\(\'MouseEvents\'\)\;
+clickEvent\.initEvent\(\'click\'\, true\, true\)\;
+items\.eq\(1\)\.find\(\'a\'\)\.get\(0\)\.dispatchEvent\(clickEvent\)\;
+
+expect\(\\$\(\'\#items li\'\)\.length\)\.to\.equal\(1\, \"Correct element wasn\'t deleted\.\"\)\;
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
+[/slide]
+
+[slide]
+
+# Event Delegation
+
+Capturing and bubbling allow us to implement an event handling pattern called **event delegation**.
+
+If we have a lot of elements handled in one and the same way, then instead of assigning a handler to each of them, we can put a single handler on their common ancestor.
+
+In the handler we use `event.target` to see where the event actually happened and handle it.
+
+In the example we add an event listener to our parent, which is the `<ul>` element.
+
+Then in the if statement we add a condition, so that if we click on a `<li>` element the `console.log()` method will display a message telling us exactly on which element we clicked.
+
+```html
+<ul id="parent-list">
+    <li id="post-1">Item 1</li>
+    <li id="post-2">Item 2</li>
+</ul>
+```
+
+```js
+document.getElementById("parent-list")
+    .addEventListener("click", function(event) {
+        if(event.target && event.target.nodeName == "LI") {
+            console.log(
+                "List item ", event.target.id, 
+                " was clicked!");
+            }
+});
+```
+
+**Pros and Cons**
+
+Benefits
+- Simplifies initialization
+- Saves memory
+- Less code
+
+Limitations
+- Event must be bubbling
+- May add CPU load
+
+[/slide]

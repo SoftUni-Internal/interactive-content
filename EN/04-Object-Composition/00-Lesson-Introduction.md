@@ -1,7 +1,7 @@
 # Lesson Introduction
 
 [slide]
-# Table of Contents
+# Lesson Content
 
 # In this lesson you will learn about:
 

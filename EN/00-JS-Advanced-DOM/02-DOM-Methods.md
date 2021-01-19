@@ -12,9 +12,10 @@ DOM properties are **information, that can be received and changed.**
 
 [/slide]
 
+# DOM Methods: Examples
 [slide]
 
-# Example 1: DOM Methods
+# Example 1:
 
 After running this example in the browser:
 
@@ -68,11 +69,7 @@ In this example, a script is inserted into the HTML document by using the `<scri
 
 And that way, the first title element, which is `Introduction to DOM`, can be printed into the browser's console.
 
-[/slide]
-
-[slide]
-
-# Example 2: DOM Methods
+# Example 2:
 
 HTML DOM properties are values that you can `get` or `set`:
 

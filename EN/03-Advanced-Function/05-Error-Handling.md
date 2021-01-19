@@ -1,5 +1,3 @@
-
-
 [slide]
 # Error Handling
 
@@ -40,7 +38,7 @@ function toUppercase(string) {
 toUppercase(5);
 ```
 
-The toUppercase function will throw a TypeError, because it is invoked with a number, instead of a string.
+The `toUppercase()` function will throw a TypeError, because it is invoked with a number, instead of a string.
 
 [/slide]
 
@@ -69,6 +67,66 @@ The three most common types of **errors** are:
   - They are most commonly known as **bugs**
 
 [/slide]
+
+[slide]
+
+# Error Handling - Exceptions
+
+An exception occurs when a function is unable to do execute its task successfully resulting in an error.
+
+
+**RangeError**
+
+```js live
+let arr = new Array(-1);
+```
+
+```js live
+let bigArr = new Array(9999999999); // RangeError
+```
+
+**TypeError** 
+
+```js live
+let index = undefined.indexOf("hi"); // TypeError
+```
+
+```js live
+console.print('hi');   // Uncaught TypeError
+```
+
+**ReferenceError**
+
+```js live
+console.log(George);   // Uncaught ReferenceError
+```
+
+[/slide]
+
+[slide]
+
+# Error Handling - Special Values
+
+
+```js live
+let sqrt = Math.sqrt(-1); // NaN (special value)
+```
+
+```js live
+let sub = "hello".substring(2, 1000); // llo
+let sub = "hello".substring(-100, 100); // hello
+// Soft error - substring still does its job: takes all available chars
+
+```
+
+```js live
+let invalid = new Date("Christmas"); // Invalid Date
+let date = invalid.getDate(); // NaN
+```
+
+
+[/slide]
+
 
 [slide]
 # Throwing Exceptions

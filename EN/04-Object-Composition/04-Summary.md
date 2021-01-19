@@ -2,7 +2,7 @@
 
 # Summary
 
-## In this lesson you learned about:
+## In this lesson you learnt:
 
 - Object composition: combines data and functions into "JavaScript" objects.
 
@@ -19,7 +19,7 @@ let student = {
 - Concatenation: adding new properties.
 - Delegation: imitates class inheritance.
 
-## In the next lesson we will learn:
+# In the next lesson you will learn:
 
 - Inheritance
 

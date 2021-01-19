@@ -9,7 +9,10 @@ That means after they are **instantiated**, a **copy** of the class is created a
 
 When a class **inherits** from another class, the properties and methods of the parent class are inherited.
 
-## Class Inheritance
+[/slide]
+
+[slide]
+# Class Inheritance
 
 The **extends** keyword is used to create a child class from the parent class.
 
@@ -51,7 +54,7 @@ In the first `console.log`, we output the **person** with its parameters which a
 
 In the second class, we inherit the parent's class parameters and add a third one, which is **subject**.
 
-[/slide]
+   [/slide]
 
 [slide]
 
@@ -91,6 +94,14 @@ let b2 = new Bar('b2');
 b1.speak();
 b2.speak();
 ```
+
+
+[/slide]
+
+
+[slide]
+
+# Prototype Inheritance
 
 In this example, we have two classes: `Foo` and `Bar`. 
 

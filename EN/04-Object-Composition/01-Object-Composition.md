@@ -61,7 +61,7 @@ The way we add a function to the object:
 - first we have the function name `grow`.
 - followed by `:`.
 - then the keyword `function`.
-- parameters(if such exsit) inside parenteses of the function.
+- parameters(if such exists) inside parentheses of the function.
 - finally curly braces containing the scope of the function.
 
 ```js live

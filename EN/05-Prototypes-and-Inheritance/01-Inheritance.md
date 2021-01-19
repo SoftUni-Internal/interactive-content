@@ -39,6 +39,10 @@ In this example, we **extended** the **class pet** with a **class dog**.
 
 The **dog class** will **inherit** all of the features that the **class pet** has.
 
+[/slide]
+
+[slide]
+
 # Multilevel Inheritance
 
 In **Multilevel inheritance**, we inherit the **main** class through another class in the **middle**, and we also obtain its features. 
@@ -61,6 +65,9 @@ In this example, we extended the **pet class** with a **class dog**, and after t
 
 The breed class will **obtain** all of the methods that dog and pet classes have.
 
+[/slide]
+
+[slide]
 # Hierarchical Inheritance
 
 In **Hierarchical inheritance**, we have **classes** that are extended **multiple** times. 
@@ -84,7 +91,9 @@ class breed3 extends pet {}
 In this example, we extended the **pet class** with **breed1**, **breed2** and **breed3**. 
 
 All of them will have the feature that **pet** has.
+[/slide]
 
+[slide]
 # Multiple Inheritance
 
 **Multiple Inheritance** is when we want to directly inherit from more than one parent class.

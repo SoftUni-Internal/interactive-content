@@ -17,7 +17,7 @@ To create an **IIFE**, we put the function declaration between **round brackets*
 (function () { let name = "Noah"; });
 console.log(name); 
 ```
-As you can see in this example, an **IIFE**'s variables are **only accesible inside the function scope**.
+As you can see in this example, an **IIFE**'s variables are **only accessible inside the function scope**.
 
 The **return value** of an **Immediately-Invoked Function Expression** has to be saved in a variable, otherwise it is **purged from memory right after execution**:
 

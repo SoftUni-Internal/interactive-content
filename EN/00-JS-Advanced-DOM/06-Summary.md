@@ -2,6 +2,8 @@
 
 # Summary
 
+# In this lesson you learnt: 
+
 **DOM**
 
 - A programming API for **XML** and **HTML** documents
@@ -37,7 +39,7 @@ document.location = "https://softuni.org";
 history.back();
 ```
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 **DOM Manipulations**
 

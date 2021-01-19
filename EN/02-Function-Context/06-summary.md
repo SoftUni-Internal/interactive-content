@@ -1,7 +1,7 @@
 [slide]
 # Summary
 
-**In this lesson we learned:**
+# In this lesson you learnt:
 
 **Functional Context** - the object from which the code originated is its default context. 
 
@@ -30,7 +30,7 @@ console.log(praise.apply(dog,
   - **seal** and **freeze** that deal with the object's **immutability**;
 
 
-**In the next lesson we will learn:**
+## In the next lesson you will learn:
 - **Advanced Functions** - what are first-class and higher-order functions.
 
 - Currying and Partial Application

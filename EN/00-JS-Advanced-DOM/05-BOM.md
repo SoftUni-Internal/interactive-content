@@ -1,6 +1,8 @@
+# Browser Object Model
+
 [slide]
 
-# Browser Object Model (BOM)
+# BOM
 
 The **Browser Object Model** acts as a connection just like the **Document Object Model**.
 

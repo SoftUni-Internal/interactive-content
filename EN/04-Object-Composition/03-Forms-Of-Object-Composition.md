@@ -52,6 +52,27 @@ console.log(result);
 
 [slide]
 
+# Aggregation Example
+
+```js live
+let dataArray = [{ id: "a", score: 1 }, { id: "b", score: 2 },
+{ id: "c", score: 5 }, { id: "a", score: 3 }, { id: "c", score: 2 },];
+let res1 = dataArray.reduce((acc, curr, index, array) => {
+    let same = acc.find(e => e.id === curr.id);
+    if (!same) {
+        acc.push(curr);
+    } else {
+        same.score += curr.score;
+    }
+    return acc;
+}, []);
+console.log(res1);
+```
+
+[/slide]
+
+[slide]
+
 # Concatenation
 
 Concatenation is when an object is formed by adding new properties to an existing object.
@@ -78,6 +99,24 @@ const obj = [
 const concatenate = (acc, curr) => ({...acc, ...curr});
 const result = obj.reduce(concatenate, {});
 console.log(result);
+```
+
+[/slide]
+
+[slide]
+
+# Concatenation Example
+
+```js live
+const objs = [
+    { name: 'Peter', age: 35 },
+    { age: 22 },
+    { name: "Steven" },
+    { height: 180 }
+];
+const concatenate = (a, o) => ({ ...a, ...o });
+const c = objs.reduce(concatenate, {});
+console.log(c);
 ```
 
 [/slide]
@@ -121,4 +160,21 @@ console.log(result);
 console.log(result.height);
 ```
 
+[/slide]
+
+[slide]
+
+# Delegation Example
+
+```js live
+const objs = [
+    { name: 'Peter', age: 35 },
+    { age: 22 },
+    { name: "Steven" },
+    { height: 180 }
+];
+const concatenate = (a, o) => ({ ...a, ...o });
+const c = objs.reduce(concatenate, {});
+console.log(c);// { name: 'Steven', age: 22, height: 180 }
+```
 [/slide]

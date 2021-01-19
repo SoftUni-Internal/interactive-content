@@ -19,7 +19,7 @@ Functions can be called in several different ways:
 # What is "this"?
 The value of `this` is always a reference to an object - the object from which it was called. In other words - `this` references the object that is executing the current function.
 
-The goal of current lesson will be to understand how `this` behaves in **non-strict mode**, but just keep in mind that in **strict mode** there are differences and `this` can be any value.
+The goal of the current lesson will be to understand how `this` behaves in **non-strict mode**, but just keep in mind that in **strict mode** there are differences and `this` can be any value.
 
 The object referenced by `this`, **changes** when the execution context is changed.
 
@@ -39,7 +39,9 @@ console.log(solve() === global);
 When run, the above example returns **true**, meaning that `this` is indeed equal to the global object.
 
 [/slide]
+
 [slide]
+
 # "this" in the Browser
 The **global object** in the browser is the **window**. 
 

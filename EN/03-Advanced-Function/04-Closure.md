@@ -41,6 +41,30 @@ When a function **finishes execution**, any variables that were defined **inside
 
 
 [slide]
+
+# Functions Returning Functions
+
+A **state** is preserved in the outer function (closure):
+
+```js live
+const f = (function () {
+    let counter = 0;
+    return function () {
+        console.log(++counter);
+    }
+})();
+
+f(); //1
+f(); //2
+f(); //3
+```
+
+Every time we call the function `f()` the counter will be output to the console and it will be incremented by one. 
+
+
+[/slide]
+
+[slide]
 # Problem: Command Processor
 
 [code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-problem-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

@@ -2,7 +2,7 @@
 
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learnt:
 
 - **First-class functions**:
   - Can be passed as an **argument**
@@ -44,7 +44,7 @@ console.log(name) // TypeError
 ```
 
 
-## ## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What is object composition?
 - Destructuring

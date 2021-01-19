@@ -84,7 +84,7 @@ console.log(department);
 
 # Destructuring nested arrays
 
-Wehn destructuring nested arrays is important to know the position of what you are looking for.
+When destructuring nested arrays is important to know the position of what you are looking for.
 
 Also you need to provide a reference variable or comma placeholder for each element up and until the one you are looking for.
 
@@ -123,7 +123,7 @@ console.log(name);
 
 Destructuring an object containing array or arrays.
 
-Try printing out the rset of the names yourself.
+Try printing out the rest of the names yourself.
 
 ```js live
 const company = {

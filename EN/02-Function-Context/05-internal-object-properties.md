@@ -265,7 +265,7 @@ To prevent this we can also **freeze** the object property and then the value in
 ## Description
 Write a JS program which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
 
-Properties which should be all **accessibles**, we discovered that "accessible" also means "mutable". 
+Properties which should all be **accessible**, we discovered that "accessible" also means "mutable". 
 
 This means that:
 
@@ -377,7 +377,7 @@ yes
 ## Description
 Write a JS program which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
 
-Properties which should be all **accessibles**, we discovered that "accessible" also means "mutable". 
+Properties which should all be **accessible**, we discovered that "accessible" also means "mutable". 
 
 This means that:
 
