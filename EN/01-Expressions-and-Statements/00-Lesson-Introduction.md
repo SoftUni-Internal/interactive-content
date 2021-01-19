@@ -3,7 +3,7 @@
 
 # Lesson Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Variables**
 
