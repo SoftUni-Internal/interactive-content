@@ -1,5 +1,5 @@
 [slide hideTitle]
-Operații aritmetice
+# Operații aritmetice
 
 Să examinăm **operațiile aritmetice de bază** din programare.
 
