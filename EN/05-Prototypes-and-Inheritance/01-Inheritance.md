@@ -9,8 +9,6 @@ It is a type of **dependence**.
 
 ## Types of Inheritance
 
-The types of Inheritance are:
-
 -  **Simple** Inheritance
 -  **Multilevel** Inheritance
 -  **Hierarchal** Inheritance
@@ -19,10 +17,11 @@ The types of Inheritance are:
 
 [/slide]
 
+# Types of Inheritance
 [slide]
 # Simple Inheritance
 
-**Simple inheritance** is when a **child** class **inherits** the **parent** class features. This type is just **extending** the parent class.
+**Simple inheritance** is when a **child** class **inherits** the features of the **parent** class. This type of inheritance is when you are only **extending** the parent class.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance.png" /]
 
@@ -38,9 +37,9 @@ In this example, we **extended** the **class pet** with a **class dog**.
 
 The **dog class** will **inherit** all of the features that the **class pet** has.
 
-## Multilevel Inheritance
+# Multilevel Inheritance
 
-In **Multilevel inheritance**, we inherited the **main** class through a class in the **middle**, and we also obtain its features. 
+In **Multilevel inheritance**, we inherit the **main** class through another class in the **middle**, and we also obtain its features. 
 
 So we will extend the **parent** and the **grandparent** classes.
 
@@ -60,7 +59,7 @@ In this example, we extended the **pet class** with a **class dog**, and after t
 
 The breed class will **obtain** all of the methods that dog and pet classes have.
 
-## Hierarchical Inheritance
+# Hierarchical Inheritance
 
 In **Hierarchical inheritance**, we have **classes** that are extended **multiple** times. 
 
@@ -84,11 +83,11 @@ In this example, we extended the **pet class** with **breed1**, **breed2** and *
 
 All of them will have the feature that **pet** has.
 
-## Multiple Inheritance
+# Multiple Inheritance
 
-**Multiple Inheritance** is when we want to inherit **many** parent classes to **one** child.
+**Multiple Inheritance** is when we want to directly inherit from more than one parent class.
 
-This is not supported in Javascript.
+This is not supported in JavaScript.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(4).png" /]
 
