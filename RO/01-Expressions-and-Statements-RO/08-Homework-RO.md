@@ -1,6 +1,6 @@
-# Homework
+# Teme pentru acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Calculate Speed
 [code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -9,20 +9,20 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-    // Write code here
+    // Scrieți codul aici
   }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate the speed by time and distance:
-  * Read 2 floating-point numbers: distance and time.
-  * Calculate the speed needed to travel a given distance for given time.
-  * Print the calculated result.
-  * Use the formula: **speed = distance / time**.
+## Descriere
+Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
+  * Citește 2 numere cu virgulă mobilă: distanță și timp.
+  * Calculează viteza necesară pentru a parcurge o distanță dată pentru un anumit timp.
+  * Imprima rezultatul calculat.
+  * Folosește formula: **viteză = distanță/timp**.
   
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 15 | 7.5 |
@@ -81,7 +81,7 @@ Write a program to calculate the speed by time and distance:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Currency Converter
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -90,19 +90,19 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to convert from USD to EUR:
-  * Read a **floating-point number**: the dollars to be converted .
-  * Convert **dollars to euro** (use **fixed rate** of dollars to euro: 0.88).
-  * Print the converted value in euro.
+## Descriere
+Scrieți un program pentru convertirea din USD la EUR:
+  * Citește **numărul cu virgulă mobilă**: dolarii care urmează să fie convertite.
+  * Convertează **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88).
+  * Imprima valoarea convertită în euro.
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 17 | 14.96 |
@@ -134,7 +134,7 @@ Write a program to convert from USD to EUR:
 10.0
 [/input]
 [output]
-8.80
+8.8
 [/output]
 [/test]
 [test]
@@ -142,7 +142,7 @@ Write a program to convert from USD to EUR:
 5.0
 [/input]
 [output]
-4.40
+4.4
 [/output]
 [/test]
 [test]
@@ -167,7 +167,7 @@ Write a program to convert from USD to EUR:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Area of Triangle
 [code-task title="Area of Triangle" taskId="pb-java-statements-Area-of-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -176,21 +176,20 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate a triangle area:
+## Descriere
+Scrieți un program pentru a calcula aria triunghiului:
 
-  * Read from input a `side a` and `height` - **floating-point numbers**.
-  * Calculate the area of the triangle.
-  * Print the area, formatted to the 2nd digit after decimal point.
-
+   * Citește din intrarea a `laturii a` și `înălțime` - **numere în virgulă mobilă**.
+   * Calculeaza aria triunghiului.
+   * Imprima aria, formatată la a doua cifră după punctul zecimal.
   
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 25.00 |
@@ -249,7 +248,7 @@ Write a program to calculate a triangle area:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Four Operations
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -258,19 +257,19 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
-  * Reads 2 **real numbers** from the console.
-  * Performs 4 **arithmetic operations** on the obtained 2 numbers, in the following order: ``+``, ``-``, ``*``, ``/``.
-  * Formats and prints the results like this example:
+## Descriere
+Scrieți un program care:
+  * Citește 2 **numere reale** de pe consolă.
+  * Efectuează 4 **operații aritmetice** pe cele 2 numere obținute, în următoarea ordine:``+``, ``-``, ``*``, ``/``.
+  * * Formatează și imprimă rezultatele ca în acest exemplu:
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 5.00 + 10.00 = 15.00 |
@@ -334,7 +333,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Days to Minutes
 [code-task title="Days to Minutes" taskId="pb-java-statements-Days-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -343,24 +342,24 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to convert from **days** to **minutes**:
-  * Read a **single integer** (the days to be converted).
-  * Convert the days to minutes (use calculations).
-  * **Print** the minutes.
+## Descriere
+Scrieți un program pentru a converti **zile** în **minute**:
+  * Citește un **singur întreg** (zilele vor fi transformate).
+  * Transforma zilele în minute (utilizați calcule).
+  * **Imprima** minutele.
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 2 | 2880 |
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 5 | 7200 |
@@ -421,7 +420,7 @@ Write a program to convert from **days** to **minutes**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Circle Area and Perimeter
 [code-task title="Circle Area and Perimeter" taskId="pb-java-statements-Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -430,20 +429,20 @@ import java.util.Scanner;
  
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate a circle area and perimeter:
-  * Read a **floating-point number**: the radius of a circle.
-  * Calculate the **area and perimeter** of a circle.
-  * Print the calculated values.
-    * Use the **default formatting** for floating-point numbers in Java in the output (like in the example below).
+## Descriere
+Scrieți un program pentru a calcula aria și perimetrul cercului:
+  * Citește un **număr cu virgulă mobilă**: raza unui cerc.
+  * Calculeaza **aria și perimetrul** unui cerc.
+  * Imprima valorile calculate.
+  * Utilizați **formatarea implicită** pentru numerele cu virgulă mobilă în Java în ieșire (ca în exemplul de mai jos).
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 7 | Area = 153.938040 |
@@ -501,7 +500,7 @@ Perimeter = 59.061942
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Person Info
 [code-task title="Person Info" taskId="pb-java-statements-Person-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -510,18 +509,19 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
-  * Reads **4 lines** of strings: first name, last name, country and town.
-  * Prints information about a person in the following format: `"{firstName} {lastName} from {country} - {town}!"`.
 
-## Example
+## Descriere
+Scrieți un program care:
+* Citește **4 rânduri** de șiruri: nume, prenume, țară și oraș.
+* Tipărește informațiile despre o persoană în următorul format: `"{firstName} {lastName} from {country} - {town}!"`.
+
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Kelly | Kelly Smith from Ireland - Cork! |
@@ -592,7 +592,7 @@ A B from C - D!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Town Info
 [code-task title="Town Info" taskId="pb-java-statements-Town-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -601,18 +601,18 @@ import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
-  * Reads **3 lines** of input: name (**string**), population and area (**integers**).
-  * Prints information about a town in the following format: "Town \{name\} has population of \{population\} and area \{area\} square km."
+## Descriere
+Scrieți un program care:
+  * Citește **3 rânduri** de intrare: nume (**string**), populație și zonă (**integers**)..
+  * Tipărește informațiile despre un oraș în următorul format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Berlin | Town Berlin has population of 3675000 and area 984 square km. |
@@ -676,7 +676,7 @@ Town A has population of 123456 and area 789 square km.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Square Area
 [code-task title="Square Area" taskId="pb-java-statements-Square-Areaa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -684,27 +684,27 @@ Town A has population of 123456 and area 789 square km.
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // Write your code here
+    public static void main(String[] args) {r
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a console program that reads an **integer** \'a\' and calculates the area of a square with size \'a\'.
+Scrieți un program de consolă care citește un **integer** \'a\' și calculează aria pătratului cu dimensiunea \'a\'.
 
-## Input
+## Intrare
 
-Read from the console:
-- size of the square - **integer** in range \[1...1000\]
+Citiți de pe consolă:
+- dimensiunea pătratului - **interger** în intervalul \ [1 ... 1000 \
 
-## Output
+## Ieșire
 
-Print on the console the calculated area.
+Imprimați pe consolă aria calculată.
 
-## Examples
+## Exemple
 
 | Input | Output |
 | --- | --- |
@@ -762,7 +762,7 @@ Print on the console the calculated area.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Projects Creation
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -771,29 +771,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that calculates how many hours will be necessary to an architect to create projects of some construction objects. 
+## Descriere
+Scrieți un program care să calculeze câte ore va fi necesar unui arhitect pentru a crea proiecte ale unor obiecte de construcție.
 
-Creating one project takes approximately 3 hours.
+Crearea unui proiect durează aproximativ 3 ore.
 
-## Input
-Read **two lines** from the console:
-- Name of the architect - **String**
-- Number of projects - **integer** in range \[0… 100\]
+## Intrare
+Citiți **două rânduri** de pe consolă:
+- Numele arhitectului - **String**
+- Numărul de proiecte - **integer** în intervalul \ [0 ... 100 \]
 
-## Output
+## Ieșire
 
-Print on the console: 
+Imprimați pe consolă:
 
 -  "The architect \{name of the architect\} will need \{necessary hours\} hours to complete \{number of projects\} project/s."
 
-## Examples
+## Exemple
 
 | Input | Output | 
 | --- | --- |
@@ -920,39 +920,37 @@ The architect Gergana will need 66 hours to complete 22 project/s.
 [/slide]
 
 
-
-
-
-[slide]
+[slide hideTitle]
 # Problem: Trapezoid Area
-[code-task title="Trapezoid Areq" taskId="pb-java-statements-Trapezoid-Areq" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Trapezoid Area" taskId="pb-java-statements-Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that **calculates** the area of trapezoid with bases **b1** and **b2** and height **h**. 
+## Descriere
+Scrieți un program care **calculează** aria trapezului cu bazele **b1** și **b2** și înălțimea **h**.
 
-The formula for calculating area of a trapezoid is ((b1 + b2) / 2) * h.
+Formula pentru calcularea ariei unui trapez este ((b1 + b2)/2) * h.
 
-## Input
+## Intrare
 
-Read three numbers from the console:
-- bases - b1 and b2 - real numbers in range \[1...1000\]
-- height - h - real number in range \[1...1000\]
+Citiți trei numere de pe consolă:
+- baze - b1 și b2 - numere reale în intervalul\ [1 ... 1000 \]
+- înălțime - h - număr real în intervalul\ [1 ... 1000 \]
 
-## Output
-Print on the console a single number - the area of the trapezoid, formatted to the **second decimal point.**
+## Ieșire
 
-## Example
+Imprimați pe consolă un singur număr - aria trapezului, formatat la **a doua zecimală**.
+
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 8 | 73.50 |
@@ -1029,7 +1027,7 @@ Print on the console a single number - the area of the trapezoid, formatted to t
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Vegetable Market
 [code-task title="Vegetable Market" taskId="pb-java-statements-Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1038,32 +1036,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Gardener is selling his harvest at the vegetable market. 
+## Descriere
+Grădinarul își vinde recolta la piața de legume.
 
-He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram. 
+El vinde legume cu **N dolari** pe kilogram și fructe cu **M dolari** pe kilogram.
 
-Write a program that calculates the income from the harvest in euros (**1 USD = 0.89 EUR**).
+Scrieți un program care calculează veniturile din recoltă în euro (**1 USD = 0.89 EUR**).
 
 ## Input
-The input will be **4 numbers**, each on a **single** line:
-- The price of kilogram vegetables - **floating-point number** [0.00… 1000.00]
-- The price of kilogram fruits - **floating-point number** [0.00… 1000.00]
-- The total kilograms of vegetables - **integer** [0… 1000]
-- The total kilograms of fruits - **integer** [0… 1000]
+Input-ul va fi de **4 numere**, fiecare pe o **singură linie**:
+- Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
+- Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
+- Kilograme in total de legume - **integer** [0… 1000]
+- Kilograme in total de fructe - **integer** [0… 1000]
 
 ## Output
-Print on the console a **single number**: the income from all of the fruits and vegetables in euro.
+Imprimați pe consolă un **număr unic**: venitul din toate fructele și legumele în euro.
 
-The result should be formatted to the **second decimal point.**
+Rezultatul ar trebui formatat la **a doua zecimală**.
 
-## Examples
+## Exemple
 
 | Input | Output | Comments |
 | --- | --- | --- |
@@ -1219,7 +1217,7 @@ The result should be formatted to the **second decimal point.**
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Pet Shop
 [code-task title="Pet Shop" taskId="pb-java-statements-Pet-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1228,27 +1226,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that calculates the expenses for buying food for dogs and other animals. 
+## Descriere
 
-Each package of food for dogs costs 2.5 dollars, and every other that\'s NOT for them - 4 dollars.
+Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale.
 
+Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru ei - 4 dolari.
 ## Input
-
-The input will be two lines from the console:
-- Number of dogs - integer in range \[0… 100\]
-- Number of the others animals - integer in range \[0… 100\]
+Input va fi două linii de pe consolă:
+- Număr de câini - număr întreg în intervalul \ [0 ... 100 \]
+- Numărul de celelalte animale - număr întreg în intervalul \ [0 ... 100 \]
 
 ## Output
-Print on the console: "\{total sum\} dollars". The result should be formatted to the second decimal point.
+Imprimați pe consolă: "\{total sum\} dollars". Rezultatul trebuie să fie formatat la al doilea punct zecimal.
 
-## Examples
+## Exemple
 
 | Input | Output |
 | --- | --- |
@@ -1378,7 +1375,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Fishland
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1387,34 +1384,35 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-George decides to buy tuna, scads and mussels. 
+## Descriere
+George decide să cumpere ton, scaduri și midii.
 
-Read from the console **prices** of mackerel and sprats, the quantity of tuna, scads and mussels in **kilograms** 
+Ciiți de la consola **prețurile** de macrou și șprot, cantitatea de ton, scads și midii în **kilograme**.
 
-**Calculate** how much money will he need to pay his bill, if the prices at the Fishland are:
-- Tuna - **60% more expensive than the mackerel**
-- Scads - **80% more expensive than the sprats**
-- Mussels - **7.50 dollars per kilogram**
+**Calculați** de  câți bani va avea nevoie ca să plătească factura, în cazul în care prețurile la Fishland sunt:
+- Ton - **cu 60% mai scump decât macroul**
+- Scads - **cu 80% mai scumpe decât șprot**
+- Midii - **7.50 dolari pe kilogram**
 
 ## Input
-You have to read **5 numbers** from the console:
-- the price of the mackerel per kilogram - **floating-point** number in range [0.00…40.00]
-- the price of the sprats per kilogram - **floating-point** number in range [0.00…30.00]
-- kilograms of tuna - **floating-point** number in range [0.00…50.00]
-- kilograms of scads - **floating-point** number in range [0.00…70.00]
-- kilograms of mussels - **integer number** in range [0...100]
+Trebuie să citiți **5 numere** de pe consolă:
+- prețul macrouului pe kilogram - **în virgulă mobilă** număr în intervalul [0.00… 40.00]
+- prețul șproturilor pe kilogram - **în virgulă mobilă** număr în intervalul [0.00 ... 30.00]
+- kilograme de ton - **în virgulă mobilă** număr în intervalul [0.00 ... 50.00]
+- kilograme de scaduri - **număr în virgulă mobilă** în intervalul [0.00 ... 70.00]
+- kilograme de midii - **număr întreg** în intervalul [0 ... 100]
 
 ## Output
-Print on the console a single number with floating point: the money George will need to pay the bill, formatted to the **second decimal point**
 
-## Example
+Imprimați pe consolă un singur număr cu virgulă mobilă: banii pe care George îi va trebui să plătească factura, formatate la **a doua zecimală**.
+
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 6.90 | 42.96 |
@@ -1423,13 +1421,13 @@ Print on the console a single number with floating point: the money George will 
 | 2.50 | |
 | 1 | |
 
-### Hints
-- The price of the tuna = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
-- Total sum of tuna = 1.5 \* 11.04 = 16.56
-- The price of the scads = 4.20 + 4.20 \* 0.80 =  7.56$/kg
-- Total sum of scads = 2.5 \* 7.56 = 18.90
-- The total sum of mussels = 1 \* 7.50 = 7.50
-- Bill = 16.56 + 18.90 + 7.50 = 42.96
+### Sugestii
+- Prețul tonului = 6.90 + 6.90 \* 0.60 = 11.04 $/kg
+- Suma totală de ton = 1.5 \* 11.04 = 16.56
+- Prețul scadului = 4.20 + 4.20 \* 0.80 =  7.56$/kg
+- Suma totală de scaduri = 2.5 \* 7.56 = 18.90
+- Suma totală a midiilor = 1 \* 7.50 = 7.50
+- Factură = 16.56 + 18.90 + 7.50 = 42.96
 
 [/task-description]
 [tests]
@@ -1595,7 +1593,7 @@ Print on the console a single number with floating point: the money George will 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Yard Greening
 [code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1610,38 +1608,38 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program that calculates the expenses for yard greening. 
+Scrieți un program care să calculeze cheltuielile pentru ecologizarea curții.
 
-The price for **one square meter** is 7.61 dollars with VAT. 
+Prețul pentru **un metru pătrat** este de 7.61 dolari cu TVA. 
 
-The company offers 18% **discount** from the total price.
+Compania oferă 18% **reducere** din prețul total.
 
 ## Input
 
-Single line from the console:
+Singură linie de la consolă:
 
-- Square meters which will be greening - **float-pointing number** in range [0.00… 10000.00]
+- Metri pătrați care vor fi verzi - **număr cu virgulă mobila** în intervalul [0.00 ... 10000.00
 
 ## Output
 
-Print on the console two lines:   
-- "The final price is: \{total price\} dollars"
-- "The discount is: \{discount\} dollars"
+PrImprimați pe consolă două linii:   
+- "Prețul final este: \{total price\} dollars"
+- "Reducerea este: \{discount\} dollars"
 
-Prices should be formatted to the **second decimal point.**
+Prețurile trebuie să fie formatate la **a doua zecimală**.
 
-## Example
+## Examplu
 | Input |  Output |
 | --- | --- |
 | 540 | The final price is: 3369.71 dollars |
 |  | The discount is: 739.69 dollars |
 
-### Comments
-- Calculate the price for greening the whole yard: 540 \* 7.61 = 4109.40 $
-- Calculate the discount: 0.18 \* 4109.40 = 739.69 $
-- Calculate the final price: 4109.40 – 739.69 = 3369.71 $
+### Comentarii
+- Calculați prețul pentru ecologizarea întregii curți: 540 \* 7.61 = 4109.40 $
+- Calculați reducerea: 0.18 \* 4109.40 = 739.69 $
+- Calculați prețul final: 4109.40 – 739.69 = 3369.71 $
 
 [/task-description]
 [tests]

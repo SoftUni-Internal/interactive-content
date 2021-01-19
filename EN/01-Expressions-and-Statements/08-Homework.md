@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Calculate Speed
 [code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -81,7 +81,7 @@ Write a program to calculate the speed by time and distance:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Currency Converter
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -167,7 +167,7 @@ Write a program to convert from USD to EUR:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Area of Triangle
 [code-task title="Area of Triangle" taskId="pb-java-statements-Area-of-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -249,7 +249,7 @@ Write a program to calculate a triangle area:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Four Operations
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -334,7 +334,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Days to Minutes
 [code-task title="Days to Minutes" taskId="pb-java-statements-Days-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -421,7 +421,7 @@ Write a program to convert from **days** to **minutes**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Circle Area and Perimeter
 [code-task title="Circle Area and Perimeter" taskId="pb-java-statements-Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -501,7 +501,7 @@ Perimeter = 59.061942
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Person Info
 [code-task title="Person Info" taskId="pb-java-statements-Person-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -592,7 +592,7 @@ A B from C - D!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Town Info
 [code-task title="Town Info" taskId="pb-java-statements-Town-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -676,7 +676,7 @@ Town A has population of 123456 and area 789 square km.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Square Area
 [code-task title="Square Area" taskId="pb-java-statements-Square-Areaa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -762,7 +762,7 @@ Print on the console the calculated area.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Projects Creation
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -923,9 +923,9 @@ The architect Gergana will need 66 hours to complete 22 project/s.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Trapezoid Area
-[code-task title="Trapezoid Areq" taskId="pb-java-statements-Trapezoid-Areq" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Trapezoid Area" taskId="pb-java-statements-Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1029,7 +1029,7 @@ Print on the console a single number - the area of the trapezoid, formatted to t
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Vegetable Market
 [code-task title="Vegetable Market" taskId="pb-java-statements-Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1219,7 +1219,7 @@ The result should be formatted to the **second decimal point.**
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Pet Shop
 [code-task title="Pet Shop" taskId="pb-java-statements-Pet-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1378,7 +1378,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Fishland
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1595,7 +1595,7 @@ Print on the console a single number with floating point: the money George will 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Yard Greening
 [code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
