@@ -236,7 +236,7 @@ The last two functions require a little bit of arithmetic to be performed:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(9).png" /]
 
-To test our program in Judge, we need to wrap it in an `IIFE`. 
+To be able to submit the solution, we need to wrap our program in an `IIFE`. 
 
 There is **no return value** since the code execution results in functionality being added to and existing object. We are ready to submit our solution.
 
@@ -386,7 +386,7 @@ The **BirthdayBalloon** class should extend the **PartyBalloon** class and shoul
 
 It is the same as the previous class.
 
-Lastly, we need to return an object containing all of our classes so that Judge can work with them.
+Lastly, we need to return an object containing all of our classes so we can submit the solution.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(13).png" /]
 
@@ -681,7 +681,7 @@ His definition also needs to override the `getSalary()` function we added to the
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(22).png" /]
 
-After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace, and to be submitted to Judge:
+After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(23).png" /]
 
