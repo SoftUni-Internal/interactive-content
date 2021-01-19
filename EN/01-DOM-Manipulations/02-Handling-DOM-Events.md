@@ -1,6 +1,7 @@
 # Handling DOM Events
 
 [slide]
+
 # Event Propagation
 
 In the browser we have 3 phases of event propagation:
@@ -107,7 +108,7 @@ The `stopImmediatePropagation()` method of the event prevents other listeners of
 
 [/slide]
 
-
+[slide]
 # Problem: List Of Items
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
