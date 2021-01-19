@@ -17,7 +17,7 @@ It is a type of **dependence**.
 
 [/slide]
 
-# Types of Inheritance
+
 [slide]
 # Simple Inheritance
 
