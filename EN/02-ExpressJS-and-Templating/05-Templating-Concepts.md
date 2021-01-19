@@ -50,12 +50,12 @@ This means that applications with server-side rendering **are not real SPAs**.
 
 Many templating engines support Express:
 
-- **express-handlebars** \- Adaptation of the Handlebars engine, tailored to work better with Express.
+- **express-handlebars**: Adaptation of the Handlebars engine, tailored to work better with Express.
   
-- **Pug** \- Haml\-inspired template engine (formerly called Jade).
+- **Pug**: Haml\-inspired template engine (formerly called Jade).
   
-- **express-views-dom** \- A DOM view engine for Express.
+- **express-views-dom**: A DOM view engine for Express.
 
-- **rivets-server** \- Renders [Rivets.js](http://rivetsjs.com) templates on the server.
+- **rivets-server**: Renders [Rivets.js](http://rivetsjs.com) templates on the server.
 
 [/slide]

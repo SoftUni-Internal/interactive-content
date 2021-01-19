@@ -6,7 +6,7 @@
 
 "Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
 
-U can download the resources for this workshop from [here](https://mega.nz/file/yZZxWCRZ#qtrqKxoR13XEWX4Cyttr-nUQVH13aviswK6QoTki4hA)
+You can download the resources for this workshop from [here](https://mega.nz/file/yZZxWCRZ#qtrqKxoR13XEWX4Cyttr-nUQVH13aviswK6QoTki4hA)
 
 # Main Task
 

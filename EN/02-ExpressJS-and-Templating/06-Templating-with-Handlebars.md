@@ -116,7 +116,7 @@ It will be **rendered** in case the given **array** is **empty**.
 [slide]
 # Conditional Statements
 
-Similarly to JavaScript, you can also use **conditional statements** in your **template**.
+Similar to JavaScript, you can also use **conditional statements** in your **template**.
 
 The `#if` helper, followed by a condition is used to achieve this:
 
@@ -141,7 +141,7 @@ Handlebars allows us to **reuse templates** through **partials**.
 
 **Partials** are normal Handlebars **templates** that can be called directly by **other templates**.
 
-In order to use a partial, we must register it using the `Handlebars.registerPartial()` method:
+To use a partial, we must register it using the `Handlebars.registerPartial()` method:
 
 `Handlebars.registerPartial('myPartial', '{{newVar}}');`
 
@@ -160,7 +160,7 @@ As we learned earlier, **double curly braces** are used to **declare** Handlebar
 
 In Handlebars, the values returned by the `{{expression}}` are HTML\-escaped.
 
-For example, if the expression contains \&, then the returned HTML-escaped output is genarated as `&amp;`.
+For example, if the expression contains \&, then the returned HTML-escaped output is generated as `&amp;`.
 
 If you do not want Handlebars to **escape a value**, you can use the "triple-stash", `{{{`:
 

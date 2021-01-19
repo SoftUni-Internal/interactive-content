@@ -7,7 +7,7 @@ In order to serve **static files** like images, CSS and JavaScript files, we use
 
 `app.use(express.static('public'))`
 
-The `static()` middleware function accepts the **relative path** to directory in which static files reside.
+The `static()` middleware function accepts the **relative path** to the directory in which static files reside.
 
 The **path** provided to the function is **relative** to the directory in which the node process is executed. 
 
