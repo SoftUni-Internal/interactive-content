@@ -1,16 +1,4 @@
-# Variables
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1040" endTimeInSeconds="1777 "]
-[stream language="EN" videoId="341522009/063bddc415" default /]
-[stream language="RO" videoId="386049133/766a425069"  /]
-[/video-vimeo]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Variables
 In programming, each **variable** stores a certain value of a particular type. 
 

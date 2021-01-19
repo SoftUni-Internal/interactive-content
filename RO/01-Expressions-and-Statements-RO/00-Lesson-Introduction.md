@@ -1,7 +1,7 @@
-[slide]
-
-
 # Lesson Introduction
+[slide hideTitle]
+
+# Lesson Content
 
 ## In this lesson you will learn about:
 
@@ -17,7 +17,7 @@
 
 **4. Reading User Input and Formatting Output**
 
-- How to read and user input
+- How to read and format user input
 
 **5. Simple Operators**
 
@@ -28,8 +28,5 @@
 - What are expressions
 
 **7. Practical Coding Exercises**
-
-
-
 
 [/slide]

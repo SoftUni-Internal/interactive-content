@@ -1,16 +1,4 @@
-# Data Types
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1778" endTimeInSeconds="2358 "]
-[stream language="EN" videoId="341522009/063bddc415" default /]
-[stream language="RO" videoId="386049133/766a425069"  /]
-[/video-vimeo]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Data Types
 In Java we can use data types to define variables as follows:
   * **int** – an integer number: 1, 2, 3…
@@ -37,7 +25,7 @@ The are characterized by:
   * **Default value** - Example: 0
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Naming Conventions
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
