@@ -70,13 +70,13 @@ If the user is **not enrolled** in the course, you should display **Enroll butto
 
 After the user has enrolled in the course, the `You are already enrolled` **span element** should be **shown instead of the** `[Enroll]` **button.**
 
-[image assetsSrc="JS-BackEnd-Exam-9.png" /]
+[image assetsSrc="JS-BackEnd-Exam-09.png" /]
 
 ## Course Creator (Logged in User)
 
 The creator of the course should see `[Delete]` `[Edit]`.
 
-[image assetsSrc="JS-BackEnd-Exam-10.png" /]
+[image assetsSrc="JS-BackEnd-Exam-9.png" /]
 
 ## Delete Course (Logged in User)
 
@@ -88,6 +88,6 @@ All form fields should be **filled** with the corresponding information of the s
 
 When a put request is sent (clicking over `[Edit]` **button**), you should be **redirected to the Details page.**
 
-[image assetsSrc="JS-BackEnd-Exam-11.png" /]
+[image assetsSrc="JS-BackEnd-Exam-10.png" /]
 
 [/slide]
