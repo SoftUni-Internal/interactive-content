@@ -1,16 +1,4 @@
-# Console (Terminal)
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2901" endTimeInSeconds="6281 "]
-[stream language="EN" videoId="341522009/063bddc415" default /]
-[stream language="RO" videoId="386049133/766a425069"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Console (Terminal)
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
@@ -29,7 +17,7 @@ The console runs console applications. They read text from the command line and 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Printing and Formatting Text and Numbers
 
 ## Using `System.out.print(…)` and `System.out.println(…)`
@@ -76,7 +64,7 @@ System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 
 The placeholders `%d` is replaced by the expressions, given after the text.
 
-[/slide]
+[/slide hideTitle]
 
 [slide]
 # Reading User Input
@@ -108,7 +96,7 @@ I am from Sofia!
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Reading Integers
 In order to read an **integer** (not a float) **number** from the console, we have to **declare a variable**, declare the **number type** and use the standard command for **reading a text line** from the system console `scanner.nextLine()` and after that **convert the text line into an integer number** using `Integer.parseInt(text)`:
 
@@ -141,7 +129,7 @@ Here is how the program would work if we had a square with a side length equal t
 [image assetsSrc="expressions-and-statements-console-example-area.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Reading Floating-Point Numbers
 To read a **floating-point number** (fractional number, non-integer) from the console use the following command:
 ```java
@@ -170,9 +158,9 @@ Note that if you enter and **invalid number**, e.g. **"asfd"**, the program will
 We will learn how to handle exceptions in later courses.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Greeting
-[code-task title="Greeting" executionStrategy="java-code" requiresInput]
+[code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
 ```java
 import java.util.Scanner;
@@ -236,7 +224,7 @@ Hello, George!
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Greeting
 [code-task title="Greeting" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -303,7 +291,7 @@ Hello, George!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Concatenating Text and Numbers
 Besides for summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
 
