@@ -10,18 +10,18 @@
 
 - When you are ready, delete the `node_modules` folder, make sure all dependencies are listed in the `package.json` file and submit your archived project
 
-- You are provided with **HTML and CSS** resources, which you can modify
+- You are provided with **HTML and CSS** resources, which you can **modify**
 
 - Use `Express.js` as a back-end framework
 
-- Use **MongoDB** as a database with mongoose
+- Use **MongoDB** as a database with **mongoose**
 
 - You can use whatever **view engine** you like (Handlebars, EJS, Pug, etc...)
 
 
 ## Application Overview
 
-Get familiar with the provided **HTML and CSS** and create an application for **tutorials**, **courses** and course **lectures.**
+Get familiar with the provided **HTML and CSS** and create an application for **tutorials**, **courses** and **course lectures.**
 
 [/slide]
 
