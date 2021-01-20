@@ -19,7 +19,7 @@ function solve(){
 
 Use the `index.html` and `app.js` files to solve this problem.
 
-You **must not** directly change anything in the given HTML code (the `index.html` file). 
+You **must not** directly change anything in the `index.html` file. 
 
 [image assetsSrc="exam-prep-pic1.png" /]
 
