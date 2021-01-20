@@ -92,7 +92,7 @@ The `BookReview` class inherits from the `Article` class.
    - **book** \- an object with properties **name** and **author**
    - **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
 
-`addcustomer(customerName,  orderDescription)`: 
+`addCustomer(customerName,  orderDescription)`: 
 
 This **function** should receive `customerName` and `orderDescription` as strings.  
 
@@ -143,8 +143,8 @@ short.addComment("In the end the JavaScript features are executed in C++ - the u
 console.log(short.toString()); 
 ------------------------------
 let book = new classes.BookReview("The Great Gatsby is so much more than a love story", "The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...", { name: "The Great Gatsby", author: "F. Scott Fitzgerald" });
-console.log(book.addcustomer("The Guardian", "100 symbols"));
-console.log(book.addcustomer("Goodreads", "30 symbols"));
+console.log(book.addCustomer("The Guardian", "100 symbols"));
+console.log(book.addCustomer("Goodreads", "30 symbols"));
 console.log(book.toString()); 
 ```
 
@@ -218,8 +218,8 @@ yes
 //BookReview toString test
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        output = book.addcustomer('The Guardian', '100 symbols');
-        output += '\n' + book.addcustomer('Goodreads', '30 symbols');
+        output = book.addCustomer('The Guardian', '100 symbols');
+        output += '\n' + book.addCustomer('Goodreads', '30 symbols');
         output += '\n' + book.toString();
         expectedOutput = `The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
@@ -306,9 +306,9 @@ yes
 // BookReview throw -- This customer has already ordered this review.
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        book.addcustomer('The Guardian', '100 symbols');
+        book.addCustomer('The Guardian', '100 symbols');
                
-        expect(function()\{ book.addcustomer('The Guardian', '100 symbols'); \}).to.throw(Error, `This customer has already ordered this review.`)
+        expect(function()\{ book.addCustomer('The Guardian', '100 symbols'); \}).to.throw(Error, `This customer has already ordered this review.`)
 [/input]
 [output]
 yes
