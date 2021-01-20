@@ -1,9 +1,7 @@
+[slide hideTitle]
 # Summary
 
-[slide]
-# Summary
-
-## In this lesson we learned: 
+# In this lesson we learned: 
 
 - Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 

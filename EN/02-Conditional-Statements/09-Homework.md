@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Guess the Password
 [code-task title="Guess the Password" taskId="pb-java-Conditional-Statements-guess-the-password" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -73,7 +73,7 @@ Wrong password!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Boiling Water
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -149,7 +149,7 @@ The water is not hot enough
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Speed Info
 [code-task title="Speed Info" taskId="pb-java-Conditional-Statements-Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -224,7 +224,7 @@ Fast
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Area of Figures
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -354,7 +354,7 @@ Unknown figure
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Tickets
 [code-task title="Tickets" taskId="pb-java-Conditional-Statements-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -441,7 +441,7 @@ Invalid ticket type!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Coffee Shop
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -547,7 +547,7 @@ Final price: $0.60
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Valid Triangle
 [code-task title="Valid Triangle" taskId="pb-java-Conditional-Statements-Valid-triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -628,7 +628,7 @@ Invalid Triangle
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Harvest
 [code-task title="Harvest" taskId="pb-java-Conditional-Statements-Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -823,7 +823,7 @@ It will be a tough winter! More 79 liters wine needed.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Time + 15 Minutes
 [code-task title="Time + 15 Minutes" taskId="pb-java-Conditional-Statements-time-15minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -988,7 +988,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1107,7 +1107,7 @@ Error
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Animal Type
 [code-task title="Animal Type" taskId="pb-java-Conditional-Statements-Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1208,7 +1208,10 @@ unknown
 [/slide]
 
 
-[slide]
+
+
+
+[slide hideTitle]
 # Problem: Pets
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1430,7 +1433,7 @@ Print on the console a **single** line:
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Pipes In Pool
 [code-task title="Pipes In Pool" taskId="pb-java-Conditional-Statements-pipes-in-pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

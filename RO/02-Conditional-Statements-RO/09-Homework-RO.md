@@ -1,6 +1,6 @@
-# Homework
+# Teme pentru acasa
 
-[slide]
+[slide hideTitle]
 # Problem: Guess the Password
 [code-task title="Guess the Password" taskId="pb-java-Conditional-Statements-guess-the-password" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -9,20 +9,20 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to check a password:
+## Descriere
+Scrieți un program pentru a verifica o parolă:
 
-  * Read a string: the password **guess**.
-  * Print **"Welcome"** if the password guess is **"s3cr3t!"**.
-  * Print **"Wrong password!"** in all other cases .
+  * Citește un șir: parola **ghici**.
+  * Imprima **"Welcome"** acă presupunerea parolei este **"s3cr3t!"**.
+  * PImprima **"Wrong password!"** în toate celelalte cazuri.
 
-## Example:
+## Exemplu:
 | **Input** | **Output** |
 | --- | --- |
 | s3cr3t! | Welcome |
@@ -73,7 +73,7 @@ Wrong password!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Boiling Water
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -83,21 +83,21 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which checks for hot water: 
+## Descriere
+Scrieți un program care să verifice dacă este apă caldă:
 
-  * Read a floating-point number: the water **temperature** (in °C).
-  * Print **"The water is boiling"** if the number **> 100**.
-  * Prints **"The water is not hot enough"** in all other cases.
+  * Citește un număr în virgulă mobilă: **temperatura** a apei (în ° C).
+  * Imprima **"The water is boiling"** dacă numărul este **> 100**.
+  * Imprima **"The water is not hot enough"** în toate celelalte cazuri.
 
   
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 104.8 | The water is boiling |
@@ -149,7 +149,7 @@ The water is not hot enough
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Speed Info
 [code-task title="Speed Info" taskId="pb-java-Conditional-Statements-Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -159,21 +159,21 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to check for fast / slow speed: 
+## Descriere
+Scrieți un program pentru a verifica viteza rapidă/lentă:
 
-  * Read the **speed** (a floating-point number).
-  * Print **"Slow"** if the speed **<= 30**.
-  * Print **"Fast"** if the speed **> 30**.
+  * Citește **speed** (un număr în virgulă mobilă).
+  * Imprima **"Slow"** dacă viteza este **<= 30**.
+  * Imprima **"Fast"** dacă viteza este **> 30**.
 
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 30 | Slow |
@@ -224,7 +224,7 @@ Fast
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Area of Figures
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -234,22 +234,22 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+   // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate the area of different figures:
-  * Reads a string: the figure **type**.
-  * Checks if the entered figure is **square**, **rectangle** or **circle**.
-  * Reads a number for square and circle or two numbers for rectangle.
-    * Numbers will be floating-point.
-  * Prints the calculated area **formatted** to the second digit after the decimal point.
-  * For unknown figure print **"Unknown figure"**.
+## Descriere
+Scrieți un program pentru a calcula aria diferitelor figuri:
+  * Citește un șir: figura ** tip **.
+  * Verifică dacă cifra introdusă este **square**, **rectangle** sau **circle**.
+  * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi.
+    * Numerele vor fi în virgulă mobilă.
+  * Imprimă zona calculată **formatată** la a doua cifră după punctul zecimal.
+  * * Pentru figura necunoscută imprima **"Unknown figure"**.
 
-## Examples:
+## Exemple:
 
 | **Input** | **Output** |
 | --- | --- |
@@ -354,7 +354,7 @@ Unknown figure
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Tickets
 [code-task title="Tickets" taskId="pb-java-Conditional-Statements-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -363,23 +363,24 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to **calculate** a ticket price:
 
-  * Read a ticket type: either **student** or **regular**.
-  * Print the **price** in the following format "$\{price\}":
-    * The price should be **formatted** to 2nd digit after the decimal point.
-  * Student ticket price: **1.00**.
-  * Regular ticket price: **1.60**.
-  * For invalid type print **"Invalid ticket type!"**.
+## Descriere
+Scrieți un program pentru a **calcula** prețul biletului:
+
+  * Citește tipul biletului: fie **student**, fie **obișnuit**
+  * Imprima **prețul** în următorul format "$\{price\}":
+    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
+  * Prețul biletului de tip student: **1.00**.
+  * Prețul biletului d etip regulat: **1.60**.
+  * Pentru un tip nevalid imprima **"Invalid ticket type!"**.
   
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | student | $1.00 |
@@ -441,7 +442,7 @@ Invalid ticket type!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Coffee Shop
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -451,27 +452,27 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate the drink price in a coffee shop:
+## Descriere
+Scrieți un program pentru a calcula prețul băuturii într-o cafenea:
 
-  * Read a drink: either **"coffee"** or **"tea"**.
-  * Read an extra: either **"sugar"** or **"no"**.
-  * Print the price in format `"Final price: ${price}"`.
-    * The price should be **formatted** to 2nd digit after the decimal point.
+  * Citește o băutură: fie **"cafea"** ori **"ceai"**.
+  * Citește adăugare: fie **"zahăr"** sau **"no"**.
+  * Imprima prețul în formatul`"Final price: ${price}"`.
+    * Prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
   
-Prices:
+Prețuri:
 
-  * Coffee price: **1.00**
-  * Tea price: **0.60**
+  * Preţul de cafea: **1.00**
+  * Preţul de ceai: **0.60**
   * Sugar price: **0.40**
 
-## Example
+## Exemple
 | **Input** | **Output** |
 | --- | --- |
 | coffee | Final price: $1.40 |
@@ -547,7 +548,7 @@ Final price: $0.60
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Valid Triangle
 [code-task title="Valid Triangle" taskId="pb-java-Conditional-Statements-Valid-triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -557,22 +558,22 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to check if a triangle is valid by its sizes:
+## Descriere
+Scrieți un program pentru a verifica dacă un triunghi este valid după dimensiunile sale:
 
-  * Read 3 integers: the **sides of a triangle**.
-  * Checks if each side is less than the sum of the others 2.
-    * Prints **"Valid Triangle"** if the above condition is met.
-    * Prints **"Invalid Triangle"** otherwise.
+  * Citește 3 numere întregi: the **laturile unui triunghi**.
+  * Verifică dacă fiecare parte este mai mică decât suma celorlalte 2.
+    * Imprima **"Valid Triangle"** dacă condiția de mai sus este îndeplinită.
+    * Imprima **"Invalid Triangle"** în caz contrar.
 
     
-## Example:
+## Exemplu:
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Valid Triangle |
@@ -628,7 +629,7 @@ Invalid Triangle
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Harvest
 [code-task title="Harvest" taskId="pb-java-Conditional-Statements-Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -637,43 +638,44 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-40 % of the wine-making crop is allocated from a vineyard of X square meters. 
 
-From 1 square meter vineyard are earn **Y kilos of grapes**. 
+# Descriere
+40% din cultura vinicolă este alocată dintr-o vie de X metri pătrați.
 
-For 1 liter of wine are needed **2.5 kg grapes**. 
+Din via de  1 metru pătrat se câștigă **Y kilograme de struguri**. 
 
-The desired amount of wine for sale is **Z liters**. 
+Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
 
-Write a program that calculates how much wine can be produced and whether this quantity is enough. 
-- If sufficient, the remainder is divided equally between the workers of the vineyard.
+Cantitatea dorită de vin pentru vânzare este de **Z litri**. 
+
+Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă.
+- - Dacă este suficient, restul este împărțit în mod egal între lucrătorii viei.
 
 ## Input
-The entrance is read from the console and consists of exactly 4 rows:
-- **X sq. m is the vineyard** - integer in range \[10 … 5000\]
-- **Y grapes for one sq. m** - floating-point number in range \[0.00 … 10.00\]
-- **Z need liters of wine** - integer in range \[10 … 600\]
-- **Number of workers** - integer in range \[1 … 20\]
+Intrarea este citită de pe consolă și constă din exact 4 rânduri:
+- **X metru pătrat este via** - număr întreg în intervalul \[10 ... 5000 \]
+- **struguri Y pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 … 10.00\]
+- **Z litre necesare pentru vin** - număr întreg în intervalul \[10 ... 600 \]
+- **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
 ## Output
-The following should be printed on the console: 
--  If the wine produced is less than necessary:
+Următoarele ar trebui să fie tipărite pe consolă: 
+-  Dacă vinul produs este mai mic decât este necesar:
     - "It will be a tough winter! More \{unattainable wine\} liters wine needed."
-        - The result must be rounded to a lower integer.
-- If the wine produced is more than or equal to necessary:
+        - Rezultatul trebuie rotunjit la un număr întreg
+- Dacă vinul produs este mai mare sau egal cu ceea ce era necesar:
     - "Good harvest this year! Total wine: \{Total wine\} liters."
-        - The result must be rounded to a lower integer.
+        - Rezultatul trebuie rotunjit la un număr întreg
     -  "\{remaining wine\} liters left -> \{wine for 1 worker\} liters per person."
-        - Both results must be rounded to the higher integer
+        - Ambele rezultate trebuie rotunjite la numărul întreg superior
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 650 | Good harvest this year! Total wine: 208 liters. |
@@ -682,13 +684,13 @@ The following should be printed on the console:
 | 3 | |
 | | |
 
-### Comments
-- Total Grapes: 650 \* 2 = 1300
-- Wine = 40% \* 1300/2.5 = 208
+### Comentarii
+- Struguri in total: 650 \* 2 = 1300
+- Vin = 40% \* 1300/2.5 = 208
 - 208 > 175 
-- 208 \- 175 = 33 liters remain \-> 11 liters per person
+- 208 \- 175 = 33 de litre rămân \-> 11 litre pentru persoana
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- |  --- |
 | 1020 | It will be a tough winter! More 180 liters wine needed.|
@@ -823,7 +825,7 @@ It will be a tough winter! More 79 liters wine needed.
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Time + 15 Minutes
 [code-task title="Time + 15 Minutes" taskId="pb-java-Conditional-Statements-time-15minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -832,26 +834,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that reads from the console an **hour** and **minutes** from 24-hour day, and calculates what will be the time **after 15 minutes**. 
+## Descriere
+Scrieți un program care citește de pe consolă **oră** și **minute** dintr-o zi de 24 de ore
 
 ## Input
-The input consists **two** lines:
-- The hours - integer in range \[0...23\]
-- The minutes - integer in range \[0...59\]
+
+Intrarea constă în **două** linii:
+- Ore - numere întregi în intervalul \[0...23\]
+- Minute - numere întregi în intervalul \[0...59\]
 
 ## Output
-Print the result in the following format: "\{hours\}:\{minutes\}".
-- The hours should be formatted **without leading zero**.
-- The minutes should be formatted **with leading zero**.
+Imprima rezultatul în următorul format:"\{hours\}:\{minutes\}".
+- Orele trebuie să fie formatate **fără zero**.
+- Minutele trebuie trebuie să fie formatate **cu zero**.
 
-## Example:
+## Exemplu:
 | **Input** | **Output** |
 | --- | --- |
 | 11 | 11:23|
@@ -988,7 +991,7 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -997,17 +1000,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program that reads an integer from the console and prints **day of the week** (in English) in range \[1…7\] and "**Error**" if the number is **invalid**.
+Scrieți un program care citește un număr întreg de pe consolă și imprima **ziua săptămânii** (în engleză) în intervalul\ [1 ... 7 \] și "**Error**" dacă numărul este **nevalid**.
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- |  --- |
@@ -1107,7 +1110,7 @@ Error
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Animal Type
 [code-task title="Animal Type" taskId="pb-java-Conditional-Statements-Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1116,22 +1119,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program that prints the **type** of an animal according to its **name**.
+Scrieți un program care imprima **tipul** unui animal în funcție de **numele său**.
 
 ## Input / Output
 - **dog -> mammal**
 - **crocodile, tortoise, snake -> reptile**
 - **others -> unknown**
 
-## Example:
+## Exemplu:
 
 | **Input** | **Output** |
 | --- | | --- |
@@ -1208,8 +1211,8 @@ unknown
 [/slide]
 
 
-[slide]
-# Problem: Pets
+[slide hideTitle]
+# Problem: Pets 
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1217,33 +1220,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a **program** calculating the **amount of kilograms** food Martina\'s pets will eat for the time she is **on adventure** and **checks if the food is enough**. 
+## Descriere
 
-Each animal eats certain amount food per day.
+Scrieți un **program** care să calculeze **cantitatea de kilograme** de mâncare animalelor ale Martinei care vor mânca in timp ce ea este **în aventură** și **verifică dacă mâncarea este suficientă**.
+Fiecare animal mănâncă o anumită cantitate de mâncare pe zi.
 
 ## Input
-Read **five** lines from the console:
-- **number of days** - an integer in range \[1…5000\]
-- **left food in kilograms** - an integer in range \[0…100000\]
-- **food for the dog per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the cat per day in kilograms** - double in range \[0.00…100.00\]
-- **food for the turtle per day in grams** - double in range \[0.00…10000.00\]
+Citește **cinci** rânduri de pe consolă:
+- **numărul de zile** - un număr întreg în intervalul \[1 ... 5000 \]
+- ** mâncare rămasă în kilograme** - un număr întreg în intervalul \[0 ... 100000 \]
+- **mâncare pentru câine pe zi în kilograme** -  dublă în intervalul \[0.00…100.00\]
+- **mâncare pentru pisică pe zi în kilograme** - dublă în intervalul \[0.00…100.00\]
+- **mâncare pentru broască țestoasă pe zi în grame** - dublă în intervalul \[0.00…10000.00\]
 
 ## Output
-Print on the console a **single** line:
-- If the left food **IS enough**:
-  - "\{kilograms remain\} kilos of food left." The result should be **rounded to the nearest lower integer**.
-- If the left food **IS NOT enough**:
-  - "\{kilograms needed\} more kilos of food are needed.". The result should be **rounded to the nearest higher integer**.
+Imprima pe consolă o linie **unică**:
+- Dacă mâncarea rămasă **este suficientă**:
+  - "\{kilograms remain\} kilos of food left." Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
+- Dacă mâncarea rămasă **nu este suficientă**:
+  - "\{kilograms needed\} more kilos of food are needed." Rezultatul trebui să fie **rotunjit la cel mai apropiat număr întreg superior**.
 
-## Example
+## Exeamplu
 | **Input**  | **Output** |
 | --- | --- |
 | 2 | 3 kilos of food left. |
@@ -1252,15 +1255,15 @@ Print on the console a **single** line:
 | 1 | |
 | 1200 | |
 
-### Comments
-- **Food needed for:**
-- **dog** = 2 days \* 1 kg = **2** kg;
-- **cat** = 2 days \* 1 kg = **2** kg;
-- **turtle** = 2 days \* 1200 g = **2.4** kg;
-- **Total amount of food** = 2 + 2 + 2.4 = **6.4** kg;
-- **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg food remain**
+### Comentarii
+- ** Mâncare necesară pentru: **
+- **câine** = 2 zile \* 1 kg = **2** kg;
+- **pisica** = 2 zile \* 1 kg = **2** kg;
+- **broască-ţestoasă** = 2 zile \* 1200 g = **2.4** kg;
+- **Cantitatea totală de mâncare** = 2 + 2 + 2.4 = **6.4** kg;
+- **6.4 < 10** => 10 - 6.4 = **3.6** -> **3 kg de mâncare rămân**
 
-## Example
+## Exemplu
 | **Input**  | **Output** |
 | --- | --- |
 | 5 | 7 more kilos of food are needed. |
@@ -1269,13 +1272,13 @@ Print on the console a **single** line:
 | 0.8 | |
 | 321 | |
 
-### Comments
+### Comentarii
 - **Needed food for:**
 - **dog** = **10.5** kg;
-- **cat** = 5 days \* 0.8 kg = **4** kg;
-- **turtle** = 5 days \* 321 g = **1.605** kg;
-- **Total amount of food** = 10.5 + 4 + 1.605 = **16.105** ;
-- 16.105 – 10 = 6.105 -> 7 kg of food are needed
+- **pisica** = 5 zile \* 0.8 kg = **4** kg;
+- **broască-ţestoasă** = 5 zile \* 321 g = **1.605** kg;
+- **Cantitatea totală de mâncare** = 10.5 + 4 + 1.605 = **16.105** ;
+- 16.105 – 10 = 6.105 -> 7 kg de mâncare sunt necesare
 
 [/task-description]
 [tests]
@@ -1430,7 +1433,7 @@ Print on the console a **single** line:
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Pipes In Pool
 [code-task title="Pipes In Pool" taskId="pb-java-Conditional-Statements-pipes-in-pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1439,37 +1442,37 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-A pool with **volume V** has **two pipes** that fill it. 
+## Descriere
+O piscină cu **volum V** are **două țevi** care o umplu.
 
-**Every pipe has certain flow** (liters water that going through a single pipe per hour). 
+**Fiecare țeava are un anumit flux cert** (litri de apapă care trec printr-o singură țeava pe oră). 
 
-The worker turns on the pipes **at the same time** and goes out for **N hours**. 
+Muncitorul aprinde conductele **în același timp** și iese **N ore**.
 
-Write a program that shows the condition of the pool **at the moment the worker comes back**.
+Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
 ## Input
-**Four** lines of input:
-- **V** - **The volume of the pool in liters** - integer in range \[1…10000\]
-- **P1** - **flow of the first pipe per hour** - integer in range \[1…5000\]
-- **P2** - **flow of the second pipe per hour** - integer in range \[1…5000\]
-- **H** - **hours the worker is missing** - float-pointing number in range \[1.0…24.00\]
+** Patru ** linii de intrare:
+- **V** - **Volumul piscinei în litri** - numere întregi în intervalul \[1…10000\]
+- **P1** - **fluxul primei țevi pe oră** - numere întregi în intervalul \[1…5000\]
+- **P2** - **fluxul celei de-a doua țevi pe oră** - numere întregi în intervalul \[1…5000\]
+- **H** - **ore lucrătorului in timp ce lipsește** - număr cu virgulă mobilă în intervalul \[1.0…24.00\]
 
 ## Output
-Print on the console **one of both possibilities**:
-- How far the pool has been filled and which pipe how much contributed in percentage
+Imprima pe consolă **una dintre ambele posibilități**:
+- Cât de mult a fost umplută piscina și care dintre țevile cât a contribuit în procente
   - "The pool is \{occupancy of the pool in percent\}% full. Pipe 1: \{percent water from the first pipe\}%. Pipe 2: \{percent water from the second pipe\}%."
-- If the pool is overflowing – how many liters are overflowed for the given time
+- Dacă piscina este debordantă - câți litri sunt debordați pentru timpul dat
   - "For \{hours pipes are filling the pool\} hours the pool overflows with \{liters water overflow\} liters."
-- All numbers in the output should be formatted to 2nd digit after the decimal point.
+- Toate numerele din ieșire trebuie formatate la a doua cifră după punctul zecimal.
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
@@ -1477,14 +1480,14 @@ Print on the console **one of both possibilities**:
 | 120 | |
 | 3 | |
 
-### Comments
-- For 3 hours: The first pipe fills up 300 liters
-- The second pipe fills up 360 liters
-- In total – 660 l < 1000 l => 66% are filled up
-- The first pipe is contributed with 45% (300 of 660 liters).
-- The second pipe is contributed with 54% (360 of 660 liters).
+### Commentarii
+- Pentru 3 ore: Prima țeavă se umple cu 300 de  litri
+- A doua țeavă se umple cu 360 de litri
+- In total – 660 l < 1000 l => 66% sunt umplute
+- Prima țeavă a contribuit cu 45% (300 din  660 litri).
+- A doua țeavă a contribuit cu 54% (360 din 660 litri).
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 100 | For 2.50 hours the pool overflows with 400.00 liters. |
@@ -1492,10 +1495,10 @@ Print on the console **one of both possibilities**:
 | 100 | |
 | 2.5 | |
 
-### Comments
-- For 2.5 hours: The first pipe fills up 250 l 
-- The second pipe fills up 250 l
-- In total – 500 l > 100 l => 400 l are overflowed.
+### Comentarii
+- Pentru 2.5 ore: Prima țeavă se umple cu 300 de  litri
+- A doua țeavă se umple cu 250 de litri
+- In total – 500 l > 100 l => 400 de litre sunt debordate.
 
 [/task-description]
 [tests]
