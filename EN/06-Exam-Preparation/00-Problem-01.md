@@ -1,6 +1,7 @@
 # Problem 1: Task Manager
 
-[slide]
+[slide hideTitle]
+
 # Description
 
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -18,7 +19,7 @@ function solve(){
 
 Use the `index.html` and `app.js` files to solve this problem.
 
-You have **NO permission** to directly change the given HTML code (`index.html` file). 
+You **must not** directly change anything in the given HTML code (the `index.html` file). 
 
 [image assetsSrc="exam-prep-pic1.png" /]
 
@@ -28,9 +29,9 @@ Write the **missing JavaScript code** to make the Task Manager Functionality wor
 
 When the `Add` button is clicked, **first you need to validate the inputs.**
 
-If any of the input fields is empty, **the function does not make anything.**
+If any of the input fields are empty, **the function should not do anything.**
 
-After validating the input fields, **you need to add the new task (article)** in `Open` section.
+After validating the input fields, **you need to add the new task (article)** to the `Open` section.
 
 The HTML structure looks like this:
 
@@ -38,9 +39,9 @@ The HTML structure looks like this:
 
 The article should have two buttons `Start` and `Delete`. 
 
-Be **careful to set the classes for the buttons** and the parent\-div.
+Be **careful to set the classes for the buttons** and the parent `div`.
 
-When the `Start` button is clicked, **you need to move the Task** in the section `In Progress`. 
+When the `Start` button is clicked, **you need to move the Task** to the `In Progress` section. 
 
 **Be careful with the buttons!** 
 
@@ -50,15 +51,15 @@ The HTML structure looks like this:
 
 When the `Delete` button is clicked, the Task (whole article) **should be removed from the HTML.**
 
-After clicking the `Finish` button, **the Task will be completed**, and you should move the article in the section `Complete`.
+After clicking the `Finish` button, **the Task will be completed**, and you should move the article to the `Complete` section.
 
-The buttons with their parent div\-element should be removed.
+The buttons, including their parent `div` element should be removed.
 
 [image assetsSrc="exam-prep-pic4.png" /]
 
 [image assetsSrc="exam-prep-pic5.png" /]
 
-**Submit your solution into a function.**
+**Submit your solution in the body of the `solve()`` function.**
 
 [/task-description]
 [code-io /]
