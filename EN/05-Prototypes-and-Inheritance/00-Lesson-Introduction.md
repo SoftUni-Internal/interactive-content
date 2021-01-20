@@ -9,7 +9,7 @@
 
 **1. Inheritance**
 
--  What is inheritance and the different types of inheritance
+-  What is inheritance and what are the different types of inheritance
 
 **2. Classical Inheritance**
 
