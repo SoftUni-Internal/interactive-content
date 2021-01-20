@@ -1,6 +1,7 @@
 # Currying and Partial Application
 
-[slide]
+[slide hideTitle]
+
 # Currying
 
 We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with a **single argument**.
@@ -28,7 +29,7 @@ Some example uses of **currying** include:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Partial Application
 
 **Reducing** the number of function **parameters** by converting it to a **new function with fewer parameters**, is called **Partial Application**.
@@ -58,7 +59,7 @@ The resulting function takes in **one**, instead of **two** parameters.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Currying vs Partial Application
 
 The main differences between **currying** and **partial application** are:
