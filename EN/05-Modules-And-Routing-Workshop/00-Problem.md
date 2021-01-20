@@ -35,7 +35,7 @@ The mini nav-bar includes:
 
 The nav-bar below the logo of the SoftUni forum includes:
 
-**Home** - a tag that leads tp the **Home** page `localhost:4200/home`.
+**Home** - a tag that leads to the **Home** page `localhost:4200/home`.
 
 **Themes** - a tag that leads to all **Theams** page `localhost:4200/themes`.
 
