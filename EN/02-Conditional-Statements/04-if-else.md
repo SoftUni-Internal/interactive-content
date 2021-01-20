@@ -1,17 +1,5 @@
-# If-Else Conditions
+[slide hideTitle]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2681" endTimeInSeconds="3553"]
-[stream language="EN" videoId="341539841/456a08950e" default /]
-[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
-[/vimeo-video]
-
-[/slide]
-
-
-[slide]
 # If-Else Conditions
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
@@ -62,7 +50,7 @@ if (weather.equals("rainy")) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Block of Code
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
@@ -93,9 +81,9 @@ if (color.equals("red")) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even or Odd
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -154,7 +142,7 @@ even
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Even or Odd
 [code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -163,13 +151,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int num = Integer.parseInt(scanner.nextLine());
-        if (num % 2 == 0) {
-            System.out.println("even");
-        } else {
-            System.out.println("odd");
-        }
+      // Write code here
     }
 }
 ```
@@ -221,9 +203,9 @@ even
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Greater Numbers
-[code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -285,7 +267,7 @@ Greater number: 2
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Greater Numbers
 [code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -294,14 +276,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int num1 = Integer.parseInt(scanner.nextLine());
-        int num2 = Integer.parseInt(scanner.nextLine());
-        if (num1 > num2) {
-            System.out.println("Greater number: " + num1);
-        } else {
-            System.out.println("Greater number: " + num2);
-        }
+      // Write code here
     }
 }
 ```
