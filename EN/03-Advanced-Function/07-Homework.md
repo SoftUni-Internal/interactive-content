@@ -29,7 +29,7 @@ Your function should **return** the final result.
 | **Sample Input** | **Output** |
 | --- | --- |
 | `let add5 = solution(5);` | 7 |
-| `console.log(add5(2));` | 8 |
+| `console.log(add5(2));` | 8 |
 | `console.log(add5(3));` |  |
 
 | **Sample Input** | **Output** |
@@ -122,7 +122,14 @@ Your task is to return another function that only **takes one parameter** and **
 
 You will receive the following function:
 
-[image assetsSrc="advanced-functions-01.png" /]
+```js
+function currencyFormatter(separator, symbol, symbolFirst, value) {
+    let result = Math.trunc(value) + separator;
+    result += value.toFixed(2).substr(-2,2);
+    if (symbolFirst) return symbol + ' ' + result;
+    else return result + ' ' + symbol;
+}
+```
 
 Set the following parameters to fixed values:
 
@@ -142,14 +149,16 @@ You will receive a **function** parameter.
 
 You need to **return a function** that takes one parameter - **value**.
 
-## Examples
+## Example
 
-| **Sample Input**          |
-| ------------------------- |
-| `let dollarFormatter = result(currencyFormatter);` |
-| `console.log(dollarFormatter(5345));   // $ 5345,00` |
-| `console.log(dollarFormatter(3.1429)); // $ 3,14` | 
-| `console.log(dollarFormatter(2.709));  // $ 2,71` | 
+**Input\:**
+
+```js
+let dollarFormatter = result(currencyFormatter);
+console.log(dollarFormatter(5345));   // $ 5345,00
+console.log(dollarFormatter(3.1429)); // $ 3,14
+console.log(dollarFormatter(2.709));  // $ 2,71
+```
 
 [/task-description]
 [code-io /]
@@ -249,9 +258,77 @@ For more information check the examples.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-02.png" /]
+**Sample Input\:**
 
-[image assetsSrc="advanced-functions-03.png" /]
+```
+`[{
+    "id": "1",
+    "first_name": "Ardine",
+    "last_name": "Bassam",
+    "email": "abassam0@cnn.com",
+    "gender": "Female"
+  }, {
+    "id": "2",
+    "first_name": "Kizzee",
+    "last_name": "Jost",
+    "email": "kjost1@forbes.com",
+    "gender": "Female"
+  },  
+{
+    "id": "3",
+    "first_name": "Evanne",
+    "last_name": "Maldin",
+    "email": "emaldin2@hostgator.com",
+    "gender": "Male"
+  }]`, 
+'gender-Female'
+```
+
+**Output\:**
+
+```
+0. Ardine Bassam - abassam0@cnn.com
+1. Kizzee Jost - kjost1@forbes.com
+```
+
+**Sample Input\:**
+
+```
+`[{
+    "id": "1",
+    "first_name": "Kaylee",
+    "last_name": "Johnson",
+    "email": "k0@cnn.com",
+    "gender": "Female"
+  }, {
+    "id": "2",
+    "first_name": "Kizzee",
+    "last_name": "Johnson",
+    "email": "kjost1@forbes.com",
+    "gender": "Female"
+  }, {
+    "id": "3",
+    "first_name": "Evanne",
+    "last_name": "Maldin",
+    "email": "emaldin2@hostgator.com",
+    "gender": "Male"
+  }, {
+    "id": "4",
+    "first_name": "Evanne",
+    "last_name": "Johnson",
+    "email": "ev2@hostgator.com",
+    "gender": "Male"
+  }]`,
+ 'last_name-Johnson'
+```
+
+**Output\:**
+
+```
+0. Kaylee Johnson - k0@cnn.com
+1. Kizzee Johnson - kjost1@forbes.com
+2. Evanne Johnson - ev2@hostgator.com
+```
 
 
 [/task-description]
@@ -356,7 +433,10 @@ The output should be the **sorted array**.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-04.png" /]
+|**Input**|**Output**|
+|---|---|
+|`[14, 7, 17, 6, 8], 'asc'`|`[6, 7, 8, 14, 17]`|
+|`[14, 7, 17, 6, 8], 'asc'`|`[6, 7, 8, 14, 17]`|
 
 [/task-description]
 [code-io /]
@@ -457,7 +537,22 @@ You will receive a series of arguments **passed** to your function.
 
 ## Example
 
-[image assetsSrc="advanced-functions-05.png" /]
+**Input\:**
+
+```js
+'cat', 42, function () { console.log('Hello world!'); }
+```
+
+**Output\:**
+
+```
+string: cat
+number: 42
+function: function () { console.log('Hello world!'); }
+string = 1
+number = 1
+function = 1
+```
 
 [/task-description]
 [code-io /]
@@ -709,7 +804,32 @@ Look at the sample output for more information.
 
 ## Example
 
-[image assetsSrc="advanced-functions-06.png" /]
+**Input:**
+
+`“Peter”, 29, 75, 182`
+
+**Output:**
+
+```
+{ name: 'Peter',
+  personalInfo: {
+    age: 29,
+    weight: 75,
+    height: 182
+  }
+  BMI: 23
+  status: 'normal' }
+```
+
+**Input:**
+
+`“Honey Boo Boo”, 9, 57, 137`
+
+**Output:**
+
+```
+{ name: 'Honey Boo Boo', personalInfo: { age: 9, weight: 57, height: 137 }, BMI: 30, status: 'obese', recommendation: 'admission required' }
+```
 
 [/task-description]
 [code-io /]
@@ -829,7 +949,7 @@ function solution() {
 [task-description]
 ## Description
 
-Write several functions for peрforming **calculations** with **vectors** in 2D space 
+Write several functions for performing **calculations** with **vectors** in 2D space 
 
 [image assetsSrc="advanced-functions-07.png" /] 
 
@@ -891,7 +1011,14 @@ Look at the sample output for more information.
 
 ## Example
 
-[image assetsSrc="advanced-functions-13.png" /]
+|**Input**|**Output**|**Explanation**|
+|---|---|---|
+|`solution.add([1, 1], [1, 0]);`|`[2, 1]`|`[1 + 1, 1 + 0] = [2, 1]`|
+|`solution.multiply([3.5, -2], 2);`|`[7, -4]`|`[3.5 * 2, (-2) * 2] = [7, -4]`|
+|`solution.length([3, -4]);`|`5`|`sqrt(3 * 3 + (-4) * (-4)) = 5`|
+|`solution.dot([1, 0], [0, -1]);`|`0`|`1 * 0 + 0 * (-1) = 0`|
+|`solution.cross([3, 7], [1, 0]);`|`-7`|`3 * 0 – 7 * 1 = -7`|
+
 [/task-description]
 [code-io /]
 [tests]
@@ -1106,11 +1233,34 @@ Look at the sample output for more information.
 
 ## Examples
 
-[image assetsSrc="advanced-functions-14.png" /]
+**Execution\:**
+```js
+let manager = solution();
+manager("restock flavour 50");  // Success
+manager("prepare lemonade 4");  // Error: not enough carbohydrate in stock
+```
 
-[image assetsSrc="advanced-functions-15.png" /]
+|**Input**|**Output**|
+|---|---|
+|`restock carbohydrate 10`|`Success`|
+|`restock flavour 10`|`Success`|
+|`prepare apple 1`|`Success`|
+|`restock fat 10`|`Success`|
+|`prepare burger 1`|`Success`|
+|`report`|`protein=0 carbohydrate=4 fat=3 flavour=5`|
 
-[image assetsSrc="advanced-functions-16.png" /]
+|**Input**|**Output**|
+|---|---|
+|`prepare turkey 1`|`Error: not enough protein in stock`|
+|`restock protein 10`|`Success`|
+|`prepare turkey 1`|`Error: not enough carbohydrate in stock`|
+|`restock carbohydrate 10`|`Success`|
+|`prepare turkey 1`|`Error: not enough fat in stock`|
+|`restock fat 10`|`Success`|
+|`prepare turkey 1`|`Error: not enough flavour in stock`|
+|`restock flavour 10`|`Success`|
+|`prepare turkey 1`|`Success`|
+|`report`|`protein=0 carbohydrate=0 fat=0 flavour=0`|
 
 [/task-description]
 [code-io /]
@@ -1367,5 +1517,4 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-
 
