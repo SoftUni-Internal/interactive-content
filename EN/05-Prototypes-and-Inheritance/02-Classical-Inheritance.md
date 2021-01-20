@@ -1,6 +1,7 @@
 # Classical Inheritance
 
-[slide]
+[slide hideTitle]
+
 # Traditional Classes
 
 Classes are **blueprints** for creating objects.
@@ -11,7 +12,7 @@ When a class **inherits** from another class, the properties and methods of the 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Class Inheritance
 
 The **extends** keyword is used to create a child class from the parent class.
@@ -56,7 +57,7 @@ In the second class, we inherit the parent's class parameters and add a third on
 
    [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Classes in JavaScript
 
@@ -99,7 +100,7 @@ b2.speak();
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Prototype Inheritance
 
