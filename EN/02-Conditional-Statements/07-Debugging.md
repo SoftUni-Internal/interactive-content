@@ -1,4 +1,4 @@
-[slide hidetitle]
+[slide hideTitle]
 
 # Debugging
 
