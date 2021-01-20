@@ -1,6 +1,6 @@
 # Prototype Chain
 
-[slide]
+[slide hideTitle]
 
 # Object Create
 
@@ -31,7 +31,7 @@ We set the **name** property of **myDog** and we also add a new property called 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is Prototype
 
@@ -68,7 +68,7 @@ Here we have a **Person** function and we add **nationality** to its **prototype
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Prototype Methods
 
@@ -97,7 +97,7 @@ console.log(sum);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Comparison with the New Syntax 
 
@@ -124,7 +124,7 @@ console.log(sum);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Object Creation
 
@@ -134,7 +134,7 @@ With **constructor** creation, we have a reference to the value of the construct
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Javascript Objects
 
@@ -180,7 +180,7 @@ We instantiated **Bar** using the **new** keyword  and invoked its **speak()** f
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Proto vs Prototype Property
 
@@ -196,7 +196,7 @@ Objects **do not** have the **prototype** property.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Accessing Private Properties
 
@@ -224,7 +224,7 @@ Point.prototype.setX = function (x) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Example of Prototype Chain
 
@@ -252,7 +252,7 @@ After that, we instantiate **Sum** and print the result of the **calculate** fun
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Extending Prototype
 
@@ -270,7 +270,7 @@ function extendPrototype(classToExtend) {
 
 ## Description
 
-Write a function which receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
+Write a function that receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 
 When called, the function returns a string in the format:
 
@@ -424,7 +424,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Extending Prototype
 
@@ -442,7 +442,7 @@ function extendPrototype(classToExtend) {
 
 ## Description
 
-Write a function which receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
+Write a function that receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 
 When called, the function returns a string in the format:
 
