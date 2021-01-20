@@ -19,7 +19,7 @@ public class Main {
 
 # Setup
 
-- Download the resources from here - [mega.nz](https://mega.nz/file/aJhzACoK#3A-jxtTKRhj8tyZXSSlM3LprWL6kstyKfl1y0xB0eL4)
+- Download the resources from here - [mega.nz](https://testvideos.softuni.org/demo/CDN-Video-Uploader-backup-18-dec-2020-13-15.zip)
 - Upload **only the santaWorkshop package** in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**
