@@ -1,6 +1,6 @@
 # Problem 3: Bank
 
-[slide]
+[slide hideTitle]
 # Description
 
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -20,7 +20,7 @@ Write a **Bank** class that implements the following functionality:
 
 ## Functionality
 
-- `constructor (bankName)` - receives **1 parameter** at initialization of the class (**bankName**), and should be set as private property.
+- `constructor (bankName)` - receives **1 parameter** at initialization of the class (**bankName**).
 
 The **Bank** class should have these **2 properties:**
 
@@ -41,7 +41,7 @@ Check if the given **personalId** corresponds to a customer in the **customers a
 
 `We have no customer with this ID!`
 
-Otherwise add the amount to the corresponding customer in a property named **totalMoney** and store **the transaction information** (see the example for more clarity). After this **return the total money** of the corresponding customer and a dollar sign:
+Otherwise, add the amount to the corresponding customer in a property named **totalMoney** and store **the transaction information** (see the example for more clarity). After this, **return the total money** of the corresponding customer and a dollar sign:
 
 `{totalMoney}$`
 
@@ -67,7 +67,7 @@ Check if the given **personalId** corresponds to a customer in the customers arr
 
 `We have no customer with this ID!`
 
-Otherwise, return the whole information for the customer in the following format:
+Otherwise, return all the customer information in the following format:
 
 ```
 Bank name: {bankName}
