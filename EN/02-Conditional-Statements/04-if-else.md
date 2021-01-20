@@ -102,14 +102,12 @@ Write a program, which checks if a number is **even** or **odd**
   * If it's even, print "**even**"
   * If it's odd, print "**odd**"
 # Example
-## Input
-- 4
-## Output
-- even
-## Input
-- 7
-## Output
-- odd
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | even|
+| 7 | odd |
+
 [/task-description]
 [tests]
 [test]
@@ -163,14 +161,12 @@ Write a program, which checks if a number is **even** or **odd**
   * If it's even, print "**even**"
   * If it's odd, print "**odd**"
 # Example
-## Input
-- 4
-## Output
-- even
-## Input
-- 7
-## Output
-- odd
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | even|
+| 7 | odd |
+
 [/task-description]
 [tests]
 [test]
@@ -225,11 +221,11 @@ Write a program, which finds the greater of two numbers:
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
 # Example
-## Input
-- 4
-- 8
-## Output
-- Greater number: 8
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | Greater number: 8 |
+| 8 |
 
 [/task-description]
 [tests]
@@ -289,11 +285,12 @@ Write a program, which finds the greater of two numbers:
   * Find the greater number
   * Print `"Greater number: "` + the **greater** number
 # Example
-## Input
-- 4
-- 8
-## Output
-- Greater number: 8
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | Greater number: 8 |
+| 8 |
+
 [/task-description]
 [tests]
 [test]

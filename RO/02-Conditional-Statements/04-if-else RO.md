@@ -102,14 +102,12 @@ Scrieți un program, care verifică dacă un număr este **even** sau **odd**
    * Dacă este even, tipăriți **even**
    * Dacă este odd, tipăriți **odd**
 # Exemplu
-## Input
-- 4
-## Output
-- even
-## Input
-- 7
-## Output
-- odd
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | even|
+| 7 | odd |
+
 [/task-description]
 [tests]
 [test]
@@ -163,14 +161,12 @@ Scrieți un program, care verifică dacă un număr este **even** sau **odd**
    * Dacă este even, tipăriți **even**
    * Dacă este odd, tipăriți **odd**
 # Examplu
-## Input
-- 4
-## Output
-- even
-## Input
-- 7
-## Output
-- odd
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | even|
+| 7 | odd |
+
 [/task-description]
 [tests]
 [test]
@@ -225,11 +221,11 @@ Scrieți un program, care găsește cel mai mare dintre două numere:
    * Găsiți numărul mai mare
    * Imprimați `Greater number: ` + numărul **mai mare**
 # Exemplu
-## Input
-- 4
-- 8
-## Output
-- Greater number: 8
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | Greater number: 8 |
+| 8 |
 
 [/task-description]
 [tests]
@@ -289,11 +285,12 @@ Scrieți un program, care găsește cel mai mare dintre două numere:
    * Găsiți numărul mai mare
    * Imprimați `Greater number: ` + numărul **mai mare**
 # Exemplu
-## Input
-- 4
-- 8
-## Output
-- Greater number: 8
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| 4 | Greater number: 8 |
+| 8 |
+
 [/task-description]
 [tests]
 [test]

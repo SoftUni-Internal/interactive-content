@@ -45,14 +45,12 @@ Scrieți un program pentru a verifica vremea rece:
   * Citește o temperatură în Celsius (un număr real reprezentat în virgulă mobilă cu simplă precizie (float))
   * Tipăriți `Freezing weather!`, dacă temperatura este **egală** sau **mai mică de 0**
   # Exemplu
-## Input
-- -2
-## Output
-- Freezing weather!
-## Input
-- 4
-## Output
-- (no output)
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| -2 | Freezing weather!|
+| 4 | (no output)
+
 [/task-description]
 [tests]
 [test]
@@ -106,14 +104,12 @@ Scrieți un program pentru a verifica vremea rece:
   * Citește o temperatură în Celsius (un număr real reprezentat în virgulă mobilă cu simplă precizie (float))
   * Tipăriți `Freezing weather!`, dacă temperatura este **egală** sau **mai mică de 0**
   # Exemplu
-## Input
-- -2
-## Output
-- Freezing weather!
-## Input
-- 4
-## Output
-- (no output)
+
+| **Input** | **Output** | 
+| ---- | ---- |
+| -2 | Freezing weather!|
+| 4 | (no output)
+
 [/task-description]
 [tests]
 [test]
