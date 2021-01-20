@@ -1,21 +1,22 @@
 # Lesson Introduction
 
-[slide]
-# Table of Contents
+[slide hideTitle]
+
+# Lesson Contents
 
 
 ## In this lesson you will learn:
 
 **1. Inheritance**
 
--  What Inheritance in JS
+-  What is inheritance and what are the different types of inheritance
 
 **2. Classical Inheritance**
 
--  What is Inheritance in general
+-  A look at class inheritance and prototype inheritance
 
-**2. Prototype Chain**
+**3. Prototype Chain**
 
--  What is Prototype Chain
+-  What is the Prototype Chain
 
 [/slide]
