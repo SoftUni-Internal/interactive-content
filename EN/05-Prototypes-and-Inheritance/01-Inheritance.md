@@ -1,6 +1,6 @@
 # Inheritance
 
-[slide]
+[slide hideTitle]
 
 # What is Inheritance
 
@@ -19,7 +19,7 @@ It is a type of **dependence**.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Simple Inheritance
 
@@ -30,18 +30,18 @@ It is a type of **dependence**.
 Here is a basic example:
 
 ```js
-class pet {}
+class Pet {}
 
-class dog extends pet {}
+class Dog extends Pet {}
 ```
 
-In this example, we **extended** the **class pet** with a **class dog**. 
+In this example, we **extended** the **class Pet** with a **class Dog**. 
 
-The **dog class** will **inherit** all of the features that the **class pet** has.
+The **Dog class** will **inherit** all of the features that the **class Pet** has.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Multilevel Inheritance
 
@@ -54,11 +54,11 @@ So we will extend the **parent** and the **grandparent** classes.
 Here is an example:
 
 ```js
-class pet {}
+class Pet {}
 
-class dog extends pet {}
+class Dog extends Pet {}
 
-class breed extends dog {}
+class Breed extends Dog {}
 ```
 
 In this example, we extended the **pet class** with a **class dog**, and after that, we inherited the **breed class** from the **dog** one. 
@@ -67,7 +67,7 @@ The breed class will **obtain** all of the methods that dog and pet classes have
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Hierarchical Inheritance
 
 In **Hierarchical inheritance**, we have **classes** that are extended **multiple** times. 
@@ -79,24 +79,25 @@ The downside is that if we change something in the **parent** class, we need to 
 Here is an example:
 
 ```js
-class pet {}
+class Pet {}
 
-class breed1 extends pet {}
+class Breed1 extends Pet {}
 
-class breed2 extends pet {}
+class Breed2 extends Pet {}
 
-class breed3 extends pet {}
+class Breed3 extends Pet {}
 ```
 
-In this example, we extended the **pet class** with **breed1**, **breed2** and **breed3**. 
+In this example, we extended the **Pet class** with **Breed1**, **Breed2** and **Breed3**. 
 
-All of them will have the feature that **pet** has.
+All of them will have the properties and methods of **Pet**.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multiple Inheritance
 
-**Multiple Inheritance** is when we want to directly inherit from more than one parent class.
+We have **Multiple Inheritance** when we are directly inheriting from more than one parent class.
 
 This is not supported in JavaScript.
 
