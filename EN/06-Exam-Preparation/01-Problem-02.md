@@ -90,19 +90,19 @@ The `BookReview` class inherits from the `Article` class.
    - **title** \- string
    - **content** \- string
    - **book** \- an object with properties **name** and **author**
-   - **clients** \- an array of **client** objects. Each **client** object should have the following structure `{clientName, orderDescription}`
+   - **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
 
-`addClient(clientName,  orderDescription)`: 
+`addcustomer(customerName,  orderDescription)`: 
 
-This **function** should receive `clientName` and `orderDescription` as strings.  
+This **function** should receive `customerName` and `orderDescription` as strings.  
 
-Here you should check the **clients array** and the same order has already been placed by the same client, throw an error with the following message: 
+Here you should check the **customers array** and the same order has already been placed by the same customer, throw an error with the following message: 
 
-`This client has already ordered this review.`
+`This customer has already ordered this review.`
 
-Otherwise, add the **client** object into the **clients array** and return this message:
+Otherwise, add the **customer** object into the **customers array** and return this message:
 
-`{ clientName } has ordered a review for { book name }`
+`{ customerName } has ordered a review for { book name }`
 
 `toString()`: 
 
@@ -114,9 +114,9 @@ Additionally, if there are **any orders** you should print each of them on a new
 
 ```
 Orders:
-{ clientName } - { orderDescription }.
-{ clientName } - { orderDescription }.
-{ clientName } - { orderDescription }.
+{ customerName } - { orderDescription }.
+{ customerName } - { orderDescription }.
+{ customerName } - { orderDescription }.
 //and so on
 ```
 
@@ -143,8 +143,8 @@ short.addComment("In the end the JavaScript features are executed in C++ - the u
 console.log(short.toString()); 
 ------------------------------
 let book = new classes.BookReview("The Great Gatsby is so much more than a love story", "The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...", { name: "The Great Gatsby", author: "F. Scott Fitzgerald" });
-console.log(book.addClient("The Guardian", "100 symbols"));
-console.log(book.addClient("Goodreads", "30 symbols"));
+console.log(book.addcustomer("The Guardian", "100 symbols"));
+console.log(book.addcustomer("Goodreads", "30 symbols"));
 console.log(book.toString()); 
 ```
 
@@ -218,8 +218,8 @@ yes
 //BookReview toString test
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        output = book.addClient('The Guardian', '100 symbols');
-        output += '\n' + book.addClient('Goodreads', '30 symbols');
+        output = book.addcustomer('The Guardian', '100 symbols');
+        output += '\n' + book.addcustomer('Goodreads', '30 symbols');
         output += '\n' + book.toString();
         expectedOutput = `The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
@@ -303,12 +303,12 @@ yes
 [/test]
 [test]
 [input]
-// BookReview throw -- This client has already ordered this review.
+// BookReview throw -- This customer has already ordered this review.
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        book.addClient('The Guardian', '100 symbols');
+        book.addcustomer('The Guardian', '100 symbols');
                
-        expect(function()\{ book.addClient('The Guardian', '100 symbols'); \}).to.throw(Error, `This client has already ordered this review.`)
+        expect(function()\{ book.addcustomer('The Guardian', '100 symbols'); \}).to.throw(Error, `This customer has already ordered this review.`)
 [/input]
 [output]
 yes
