@@ -27,9 +27,9 @@ You **must not** directly change anything in the `index.html` file.
 
 Write the **missing JavaScript code** to make the Task Manager Functionality works as follows:
 
-When the `Add` button is clicked, **first you need to validate the inputs.**
+When the `Add` button is clicked, the first thing you need to do is **validate the inputs**.
 
-If any of the input fields are empty, **the function should not do anything.**
+If any of the input fields are empty, **the function should not do anything**.
 
 After validating the input fields, **you need to add the new task (article)** to the `Open` section.
 
@@ -49,7 +49,7 @@ The HTML structure looks like this:
 
 [image assetsSrc="exam-prep-pic3.png" /]
 
-When the `Delete` button is clicked, the Task (whole article) **should be removed from the HTML.**
+When the `Delete` button is clicked, the Task (the whole article) **should be removed from the HTML.**
 
 After clicking the `Finish` button, **the Task will be completed**, and you should move the article to the `Complete` section.
 
