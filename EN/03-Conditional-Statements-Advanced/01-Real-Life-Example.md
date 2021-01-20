@@ -1,16 +1,6 @@
 # Real-Life Example
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1345" endTimeInSeconds="1458"]
-[stream language="EN" videoId="341582556" default /]
-[stream language="RO" videoId="388314290"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Real Life Example: Marketplace
 A market offers different prices for certain products based on the day of the week
 

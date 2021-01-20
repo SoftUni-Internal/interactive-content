@@ -1,9 +1,9 @@
-[slide hideTitle]
-# Nested Conditions
-Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
-They are called **nested** `if` or `if-else` statements. 
+[slide hideTitle]     
+# Condiții imbricate
+Destul de des, logica programului necesită utilizarea instrucțiunilor  `if` sau `if-else`, care sunt conținute una în alta.
+Se numesc instrucțiuni **imbricate** `if` sau `if-else`.
 
-As implied by the title **"nested"**, these are `if` or `if-else` statements that are placed inside other `if` or `else` statements.
+După cum sugerează titlul **`imbricat`**, acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
 
 ```java
 if (condition1) {
@@ -15,27 +15,27 @@ if (condition1) {
 }
 ```
 
-# Example: Personal Titles
-Depending on **age** (decimal number and **gender** (**m** / **f**), print a personal title:
--  "Mr." – a man (gender "m") – 16 or more years old.
--  "Master" – a boy (gender "m") under 16 years.
--  "Ms." – a woman (gender "f") – 16 or more years old.
--  "Miss" – a girl (gender "f") under 16 years.
+# Exemplu: titluri personale
+În funcție de **vârstă**(număr zecimal și **sex**(**m**/**f**), tipăriți un titlu personal:
+- "Mr." - un bărbat (sex "m") - 16 ani sau mai mult.
+- "Master" - un băiat (sex "m") sub 16 ani.
+- "Ms." - o femeie (sex "f") - 16 ani sau mai mult.
+- "Miss" - o fată (sex "f") sub 16 ani.
 
-# Solution: Person Titles
-We should notice that the **output** of the program **depends on a few things**. 
+# Soluție: Titluri de persoană
+Ar trebui să observăm că **rezultatul**  programului **depinde de câteva lucruri**.
 
-**First**, we have to check what is the entered **gender** and **then** check the **age**. 
+**Mai întâi**, trebuie să verificăm care este **genul** introdus și **apoi** să verificăm **vârsta**.
 
-Respectively, we are going to use **a few** `if-else` blocks. 
+Respectiv, vom folosi **câteva** blocuri `if-else`.
 
-These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
+Aceste blocuri vor fi **imbricate**, adică din **rezultatul** primului, urmează să **definim** care dintre **celelalte** să executăm.
 
-The diagram below illustrates the process in detail:
+Diagrama de mai jos ilustrează în detaliu procesul:
 
 [image assetsSrc="01.Personal-titles-01.jpg" /]
 
-After reading the input data from the console, the following program logic should be executed:
+După citirea datelor de intrare de pe consolă, ar trebui executată următoarea logică a programului:
 ```java
 Scanner scanner = new Scanner(System.in);
 int age = Integer.parseInt(scanner.nextLine());
@@ -56,10 +56,10 @@ if (age < 16) {
 }
 ```
 
-# Deep nesting
-Nesting of **more than three conditional statements** inside each other is not considered a good practice.
+# Imbricare adânca
+Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul unei alte intrucțiuni nu este considerată o bună practică.
 
-It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
+**Trebuie evitată**, mai ales prin optimizarea structurii / algoritmului codului și / sau prin utilizarea unui alt tip de declarație condițională.
 [/slide]
 
 [slide hideTitle]
@@ -72,25 +72,25 @@ import java.util.Scanner;
 public class Main
 {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program which:
-  * Reads a **product** and **day** from the console
-  * Prints the **price**, formatted to 2nd digit, based on the price table below
+# Descriere
+Scrieți un program care:
+   * Citește un **produs** și **o zi** de pe consolă
+   * Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
 
 |Product|Weekday|Weekend| 
 |-------|-------|-------|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
-# Example
+# Exemplu
 
-| Input | Output |
+| Intrare | Ieșire |
 | ------- | ------- |
 | Banana | 2.50 |
 | Weekday |
@@ -130,25 +130,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program which:
-  * Reads a **product** and **day** from the console
-  * Prints the **price**, formatted to 2nd digit, based on the price table below
+# Descriere
+Scrieți un program care:
+   * Citește un **produs** și **o zi** de pe consolă
+   * Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
 
 |Product|Weekday|Weekend| 
 |-------|-------|-------|
 |Banana|2.50|2.70|
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
-# Example
+# Exemplu
 
-| Input | Output |
+| Intrare | Ieșire |
 | ------- | ------- |
 | Banana | 2.50 |
 | Weekday |
@@ -188,20 +188,20 @@ import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-      // Write code here
+      // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-  * Reads **3 numbers** from the console
-  * Prints **the biggest** number
-# Example
+   * Citește **3 numere** de pe consolă
+   * Tipărește **cel mai mare** număr
+# Exemplu
 
-| Input | Output |
+| Intrare | Ieșire |
 | ------- | ------- |
 | 1 | 3 |
 | 2 |
@@ -254,20 +254,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write code here
+        // Scrieți codul aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
+   * Citește **3 numere** de pe consolă
+   * Tipărește **cel mai mare** număr
+# Exemplu
 
-  * Reads **3 numbers** from the console
-  * Prints **the biggest** number
-# Example
-
-| Input | Output |
+| Intrare | Ieșire |
 | ------- | ------- |
 | 1 | 3 |
 | 2 |

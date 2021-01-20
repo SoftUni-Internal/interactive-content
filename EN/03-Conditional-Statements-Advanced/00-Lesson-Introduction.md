@@ -1,9 +1,9 @@
-[slide]
-
-
 # Lesson Introduction
+[slide hideTitle]
 
-## In this lesson you will learn about:
+# Lesson Content
+
+## In this lesson you will learn:
 
 **1. Nested if-else Statements**
 
@@ -18,8 +18,5 @@
 - Multiple labels in Switch-Case
 
 **4. Practical Coding Exercises**
-
-
-
 
 [/slide]
