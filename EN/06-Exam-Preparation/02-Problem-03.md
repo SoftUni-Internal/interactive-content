@@ -16,69 +16,58 @@ class Bank {
 
 ## Your Task
 
-Write a Class Bank, Which Implements the Following Functionality:
+Write a **Bank** class that implements the following functionality:
 
 ## Functionality
 
-- `constructor (bankName)`
+- `constructor (bankName)` - receives **1 parameter** at initialization of the class (**bankName**), and should be set as private property.
 
-Receives **1 parameter** at initialization of the class (bankName), and should be set as private property.
+The **Bank** class should have these **2 properties:**
 
-Should have these **2 properties:**
+- bankName \- a **private** property of type string
+- allCustomers \- initially an empty array
 
-bankName \- private property of type string
-allCustomers \- initially an empty array
 
-- `newCustomer (customer)`
+`newCustomer (customer)`: the **customer** is of type object `{firstName, lastName, personalId}`.
 
-**The customer is of type object** `{firstName, lastName, personalId}`.
-
-Check if the customer is already a customer of the bank. 
-
-If so you should throw an Error:
+Check if they are already a customer of the bank. If they are already a customer throw an error:
 `{firstName} {lastName} is already our customer!`
 
-Otherwise this function should add the customer as new one and return the customer details.
+Otherwise, this function should add a new customer with the provided details.
 
-- `depositMoney (personalId, amount)`
+`depositMoney (personalId, amount)`: **personalId** and **amount** should be numbers
 
-Both the `personalId` and the **amount are numbers.**
-
-Check if the given personalId corresponds to a customer in the customers array, if not throw a new error:
+Check if the given **personalId** corresponds to a customer in the **customers array**, if not throw a new error:
 
 `We have no customer with this ID!`
 
-Otherwise add the amount to the corresponding customer in a property named `totalMoney` and store **the transaction information** to this customer (for more clarity see the example below and the hints), then **return the total money** of the corresponding customer and a dollar sign:
+Otherwise add the amount to the corresponding customer in a property named **totalMoney** and store **the transaction information** (see the example for more clarity). After this **return the total money** of the corresponding customer and a dollar sign:
 
 `{totalMoney}$`
 
-- `withdrawMoney (personalId, amount)`
+`withdrawMoney (personalId, amount)`:  **personalId** and **amount** should be numbers.
 
-Both the `personalId` and the **amount are numbers.**
-
-Check if the given personalId corresponds to a customer **in the customers array**, if not **throw a new error:**
+Check if the given **personalId** corresponds to a customer **in the customers array**, if not **throw a new error:**
 
 `We have no customer with this ID!`
 
-If there is a customer with the given `personalId`, check if the customer **has enough money** in his account, to withdraw the given amount. 
+If there is a customer with the given **personalId**, check if the customer **has enough money** to withdraw the given amount from his account. 
 
 If the money is not enough **throw a new error:**
 
 `{firstName} {lastName} does not have enough money to withdraw that amount!`
 
-Otherwise subtract the **amount** from the `totalMoney` of the customer and store the t**ransaction information** to this customer, then **return the total money** of the corresponding customer and a dollar sign:
+Otherwise subtract the **amount** from the `totalMoney` of the customer and store the **transaction information**, then **return the total money** of the corresponding customer and a dollar sign:
 
 `{totalMoney}$`
 
-- `customerInfo (personalId)`
+`customerInfo (personalId)`: **personalId** is of **type number**
 
-The `personalId` is of **type number.**
-
-Check if the given personalId corresponds to a customer in the customers array, if not throw a new error:
+Check if the given **personalId** corresponds to a customer in the customers array, if not throw a new error:
 
 `We have no customer with this ID!`
 
-Otherwise return the whole information for the customer in the following format:
+Otherwise, return the whole information for the customer in the following format:
 
 ```
 Bank name: {bankName}
@@ -92,21 +81,22 @@ n. {firstName} {lastName} made deposit of {amount}$!
 1. {firstName} {lastName} made deposit of {amount}$!
 ```
 
-**Transaction information** contains information about:
+The **transaction information** contains information about:
 
-- number of the transaction in descending order;
+- the number of the transaction in descending order
 
-- names (`firstName`, `lastName`);
+- the customer's name (`firstName`, `lastName`)
 
-- if the transaction is **deposit/withdraw;**
+- if the transaction is a **deposit** or **withdraw** action
 
-- **amount** of the transaction.
+- the **amount** of the transaction
 
 
 # Examples
-This is an example how the code is **intended to be used:**
+This is an example how the code is **intended to be used**:
 
 **Sample code usage** 
+
 ```js
 let bank = new Bank("SoftUni Bank");
 
@@ -136,8 +126,8 @@ Customer ID: 6233267
 Total Money: 375$
 Transactions:
 3. Svetlin Nakov withdrew 125$!
-2. Svetlin Nakov made depostit of 250$!
-1. Svetlin Nakov made depostit of 250$!
+2. Svetlin Nakov made adepostit of 250$!
+1. Svetlin Nakov made a depostit of 250$!
 
 ```
 
@@ -178,8 +168,8 @@ Customer ID: 1111111
 Total Money: 375\\$
 Transactions:
 3. Svetlin Nakov withdrew 125\\$!
-2. Svetlin Nakov made deposit of 250\\$!
-1. Svetlin Nakov made deposit of 250\\$!`;
+2. Svetlin Nakov made a deposit of 250\\$!
+1. Svetlin Nakov made a deposit of 250\\$!`;
 expect(expectedOutput).to.be.equal(output, 'Incorrect output');
 [/input]
 [output]
@@ -387,8 +377,8 @@ Total Money: 300\\$
 Transactions:
 4. Svetlin Nakov withdrew 133\\$!
 3. Svetlin Nakov withdrew 150\\$!
-2. Svetlin Nakov made deposit of 333\\$!
-1. Svetlin Nakov made deposit of 250\\$!`;
+2. Svetlin Nakov made a deposit of 333\\$!
+1. Svetlin Nakov made a deposit of 250\\$!`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
@@ -421,10 +411,10 @@ Total Money: 337\\$
 Transactions:
 6. Svetlin Nakov withdrew 25\\$!
 5. Svetlin Nakov withdrew 125\\$!
-4. Svetlin Nakov made deposit of 356\\$!
+4. Svetlin Nakov made a deposit of 356\\$!
 3. Svetlin Nakov withdrew 111\\$!
-2. Svetlin Nakov made deposit of 21\\$!
-1. Svetlin Nakov made deposit of 221\\$!`;
+2. Svetlin Nakov made a deposit of 21\\$!
+1. Svetlin Nakov made a deposit of 221\\$!`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
