@@ -14,7 +14,7 @@ function solve(){
 [task-description]
 # Description
 
-[Download resource here!](https://testvideos.softuni.org/demo/CDN-Video-Uploader-backup-18-dec-2020-13-15.zip)
+[Download resource here!](https://mega.nz/file/zMRB1aJA#nJM2avdLVJbpTq2Gdmxc_3hq8cuh5SQVbRwYRQMlTpo)
 
 Use the `index.html` and `app.js` files to solve this problem.
 
