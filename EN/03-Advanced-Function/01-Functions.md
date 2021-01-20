@@ -1,6 +1,6 @@
 # Functions
 
-[slide]
+[slide hideTitle]
 
 # First-Class Functions
 
@@ -56,7 +56,7 @@ In short, first-class functions **support all the operations** available to any 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Higher-Order Functions
 
@@ -79,7 +79,7 @@ When invoked, the `sayHello` function returns another function, which is then as
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Predicates
 
@@ -102,7 +102,7 @@ It returns a **boolean**, meaning it is a **predicate**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Built-in Higher-Order Functions
 
@@ -168,7 +168,7 @@ In the end, the result is stored in the **sum** variable.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Pure Functions
 
@@ -193,7 +193,7 @@ No matter how many times you run the function with the **same input**, it will *
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Referential Transparency
 
