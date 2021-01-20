@@ -1,16 +1,4 @@
-# More Complex Conditions
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2834" endTimeInSeconds="4109"]
-[stream language="EN" videoId="341582556" default /]
-[stream language="RO" videoId="388314290"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # More Complex Conditions
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
@@ -39,7 +27,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Logical AND
 As we saw, in some tasks we have to make **many checks at once**. 
 
@@ -128,9 +116,9 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Bonus Points
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -149,10 +137,11 @@ Write a program that applies bonus to given points
   * If points are between **4** and **6**, adds **15**
   * If points are between **7** and **9**, adds **20**
 # Example
-## Input
-- 4
-## Output
-- 19
+
+| Input | Output |
+| --- | --- |
+| 4 | 19 |
+
 [/task-description]
 [tests]
 [test]
@@ -185,7 +174,7 @@ Write a program that applies bonus to given points
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Bonus Points
 [code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -194,17 +183,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int points = Integer.parseInt(scanner.nextLine());
-        if (points >= 0 && points <= 3) {
-            points += 5;
-        } else if (points >= 4 && points <= 6) {
-            points += 15;
-        } else if (points >= 7 && points <= 9) {
-            points += 20;
-        }
-        
-        System.out.println(points);
+        // Write code here
     }
 }
 ```
@@ -216,10 +195,11 @@ Write a program that applies bonus to given points
   * If points are between **4** and **6**, adds **15**
   * If points are between **7** and **9**, adds **20**
 # Example
-## Input
-- 4
-## Output
-- 19
+
+| Input | Output |
+| --- | --- |
+| 4 | 19 |
+
 [/task-description]
 [tests]
 [test]
@@ -252,7 +232,7 @@ Write a program that applies bonus to given points
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Logical OR Operator
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
@@ -294,9 +274,9 @@ The programs **checks** `a`, accepts that it has a value `false` and continues.
 Reaching `b`, it understands that it has a `true` value and the whole **expression** is calculated as `true`, without having to check `c` or `d`, because their values **wouldn't change** the result of the expression.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Food or Drink
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -355,7 +335,7 @@ unknown
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Food or Drink
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -364,18 +344,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-
-        if (input.equals("curry") || input.equals("noodles") ||
-                input.equals("sushi") || input.equals("spaghetti")) {
-            System.out.println("food");
-        } else if (input.equals("tea") || input.equals("water") ||
-                input.equals("coffee")) {
-            System.out.println("drink");
-        } else {
-            System.out.println("unknown");
-        }
+        // Write code here
     }
 }
 ```
@@ -429,7 +398,7 @@ unknown
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Logical NOT Operator
 Logical negation (operator **!**) means a given condition is **not fulfilled**.
 

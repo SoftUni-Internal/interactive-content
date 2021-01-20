@@ -1,16 +1,5 @@
 # The Switch-Case Statement
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="4110" endTimeInSeconds="4779"]
-[stream language="EN" videoId="341582556" default /]
-[stream language="RO" videoId="388314290"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # The Switch-Case Statement
 The switch-case condition works as a sequence of **if-else** blocks. 
 
@@ -98,7 +87,7 @@ switch (day) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multiple Labels
 In **Java** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 
