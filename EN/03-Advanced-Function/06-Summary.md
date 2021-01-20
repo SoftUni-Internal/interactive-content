@@ -1,4 +1,6 @@
-[slide]
+# Summary
+
+[slide hideTitle]
 
 # Summary
 
