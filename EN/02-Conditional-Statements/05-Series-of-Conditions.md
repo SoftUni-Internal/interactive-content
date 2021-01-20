@@ -1,16 +1,5 @@
-# Sequence of If-Else Conditions
+[slide hideTitle]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="3554" endTimeInSeconds="4003"]
-[stream language="EN" videoId="341539841/456a08950e" default /]
-[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
 # Sequence of If-Else Conditions
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
@@ -32,7 +21,7 @@ else {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example: Digits in English
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 

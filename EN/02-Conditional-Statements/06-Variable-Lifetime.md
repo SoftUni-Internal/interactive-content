@@ -1,16 +1,5 @@
-# Variable Scope
+[slide hideTitle]
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="4005" endTimeInSeconds="4209"]
-[stream language="EN" videoId="341539841/456a08950e" default /]
-[stream language="RO" videoId="387657941/b7f1ede8f0"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
 # Variable Scope
 Each variable has a range in which it exists, called **variable scope**. 
 
