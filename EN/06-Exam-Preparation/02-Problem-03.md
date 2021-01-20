@@ -1,6 +1,7 @@
 # Problem 3: Bank
 
-[slide hideTitle]
+[slide hiteTitle]
+
 # Description
 
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -57,7 +58,7 @@ If the money is not enough **throw a new error:**
 
 `{firstName} {lastName} does not have enough money to withdraw that amount!`
 
-Otherwise subtract the **amount** from the `totalMoney` of the customer and store the **transaction information**, then **return the total money** of the corresponding customer and a dollar sign:
+Otherwise, subtract the **amount** from the `totalMoney` of the customer and store the **transaction information**, then **return the total money** of the corresponding customer and a dollar sign:
 
 `{totalMoney}$`
 
@@ -87,13 +88,13 @@ The **transaction information** contains information about:
 
 - the customer's name (`firstName`, `lastName`)
 
-- if the transaction is a **deposit** or **withdraw** action
+- if the transaction is a **deposit** or **withdrawal** action
 
 - the **amount** of the transaction
 
 
 # Examples
-This is an example how the code is **intended to be used**:
+This is an example of how the code is **intended to be used**:
 
 **Sample code usage** 
 
