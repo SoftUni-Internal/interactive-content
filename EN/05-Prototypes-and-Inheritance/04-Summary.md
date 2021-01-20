@@ -15,7 +15,7 @@
 **Literal creation**
 
 ```js
-let foo = {
+let Foo = {
   me: 'Hi!',
   print: function () {
     console.log(this.me);
