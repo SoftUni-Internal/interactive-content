@@ -6,7 +6,7 @@
 
 -  HTTP is a text-based client-server protocol, used for transferring Web resources.
 
--  REST is **request-response** based architecture style for **client\-server communication**.
+-  REST is **request-response** based architecture style for **client-server communication**.
 
 -  REST requests are:
 

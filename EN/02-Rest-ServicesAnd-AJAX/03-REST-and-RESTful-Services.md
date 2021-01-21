@@ -11,7 +11,7 @@
 
 **REST** means **Re**presentational **S**tate **T**ransfer.
 
-It is **request-response** based architecture style for **client\-server communication** over HTTP.
+It is **request-response** based architecture style for **client-server communication** over HTTP.
 
 Every request is made to**URI**, which stands for **Uniform Resource Identifier**.
 
