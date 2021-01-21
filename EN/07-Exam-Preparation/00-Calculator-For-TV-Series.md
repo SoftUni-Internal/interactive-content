@@ -1,6 +1,6 @@
-[slide]
-# Problem 01
-[code-task title="00-Calculator-For-TV-Series" taskId="27-07-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem: Calculator For TV Series
+[code-task title="Calculator For TV Series" taskId="java-basics-exam-prep-Calculator-For-TV-Series" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

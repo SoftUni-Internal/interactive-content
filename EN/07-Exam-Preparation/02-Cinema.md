@@ -1,6 +1,6 @@
-[slide]
-# Problem 03
-[code-task title="02-Cinema" taskId="27-07-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem: Cinema
+[code-task title="Cinema" taskId="java-basics-exam-prep-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
