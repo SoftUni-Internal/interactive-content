@@ -161,7 +161,7 @@ Declare a template veriable to the form.
 
 Angular will automatically attach a **NgForm Directive**.
 
-The **NgForm Directive** will also add additional fewtures like:
+The **NgForm Directive** will also add additional features like:
 - It can monitor properties.
 - It can validate properties.
 - It holds a **valid** property which is **true** only if **all controlls** are valid.
