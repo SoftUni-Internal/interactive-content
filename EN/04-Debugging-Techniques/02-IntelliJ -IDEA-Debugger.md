@@ -1,6 +1,6 @@
 # IntelliJ IDEA Debugger
 
-[slide]
+[slide hideTitle]
 
 # How to Debug a Process
 
@@ -72,7 +72,7 @@
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Breakpoints
 
@@ -98,4 +98,5 @@ Ability to stop execution based on certain criteria is key when debugging.
     - Open Breakpoints window - **Ctrl + Shift + F8**
 
 [image assetsSrc="debugging-techniques-example(2).png" /]
+
 [/slide]

@@ -1,6 +1,6 @@
 # Introduction to Debugging
 
-[slide]
+[slide hideTitle]
 
 # What is Debugging?
 

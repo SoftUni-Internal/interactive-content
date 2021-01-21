@@ -1,6 +1,6 @@
 # Data Inspection
 
-[slide]
+[slide hideTitle]
 
 # IntelliJ Data Inspection
 
@@ -39,7 +39,7 @@
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Finding a Defect
 
