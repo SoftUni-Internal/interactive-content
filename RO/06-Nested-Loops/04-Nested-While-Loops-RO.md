@@ -1,8 +1,9 @@
 [slide hideTitle]
-# Nested while Loops
-The use of nested `while` loops is very similar to the one of the `for`.
 
-Here is the syntax in Java:
+# Bucle Imbricate  While
+Utilizarea buclelor imbricate  `while` este foarte similară cu cea a buclelor imbricate `for`.
+
+Aceasta este sintaxa în Java:
 ```java
 while (condition) {
   // Outer Loop 
@@ -14,7 +15,7 @@ while (condition) {
 }
 ```
 
-# Example
+# Exemplu
 
 ```java live
 int i = 0;
@@ -33,7 +34,7 @@ while (i < n) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Triangle of Stars with While
+# Problemă: Triangle of Stars with While
 [code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -47,14 +48,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+* Citește **înălțimea** unui triunghi din consolă
+* Imprimă un **triunghi din stele**
+# Exemplu
 
-| **Input** |**Output**|
+| **Date de intrare** |**Date de ieșire**|
 | ----- | ----- |
 | 5 | \* |
 || \*\* |
@@ -82,7 +83,7 @@ Write a program, which:
 [/slide]
 
 [slide hideTitle]
-# Solution: Triangle of Stars with While
+# Soluție: Triangle of Stars with While
 [code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -96,14 +97,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+* Citește **înălțimea** unui triunghi din consolă
+* Imprimă un **triunghi din stele**
+# Exemplu
 
-| **Input** |**Output**|
+| **Date de intrare** |**Date de ieșire**|
 | ----- | ----- |
 | 5 | \* |
 || \*\* |

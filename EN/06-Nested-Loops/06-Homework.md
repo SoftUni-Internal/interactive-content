@@ -1,9 +1,8 @@
-
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Building
-[code-task title="Building" taskId="27-06-p-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Building" taskId="java-basics-nested-loops-building" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -179,9 +178,9 @@ A10 A11 A12
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Passwords
-[code-task title="Passwords" taskId="27-06-p-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Passwords" taskId="java-basics-nested-loops-passwords" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -263,9 +262,9 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Magic Number
-[code-task title="Magic Number" taskId="27-06-p-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Magic Number" taskId="java-basics-nested-loops-magic-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -321,9 +320,9 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Travelling
-[code-task title="Travelling" taskId="27-06-p-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Travelling" taskId="java-basics-nested-loops-travelling" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -659,9 +658,9 @@ Going to Albania!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Prime Numbers
-[code-task title="Prime Numbers" taskId="27-06-p-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Prime Numbers" taskId="java-basics-nested-loops-prime-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -766,9 +765,9 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Unique PIN Codes
-[code-task title="Unique PIN Codes" taskId="27-06-p-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Unique PIN Codes" taskId="java-basics-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -850,9 +849,9 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Letter Combinations
-[code-task title="Letter Combinations" taskId="27-06-p-07" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Letter Combinations" taskId="java-basics-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -906,9 +905,9 @@ aaa aac aca acc caa cac cca ccc 8
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Happy Numbers
-[code-task title="Happy Numbers" taskId="27-06-p-08" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Happy Numbers" taskId="java-basics-nested-loops-happy-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -959,9 +958,9 @@ Write a program, which:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Clock
-[code-task title="Clock" taskId="27-06-p-09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Clock" taskId="java-basics-nested-loops-clock" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1144,9 +1143,9 @@ The input is consists of **2** lines:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Clock - Part 2
-[code-task title="Clock - Part 2" taskId="27-06-p-10" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Clock - Part 2" taskId="java-basics-nested-loops-clock-part2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1422,9 +1421,9 @@ The input is entered from the console as **3** lines:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Combinations
-[code-task title="Combinations" taskId="27-06-p-11" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Combinations" taskId="java-basics-nested-loops-combinations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1567,9 +1566,9 @@ x1 + x2 + x3 + x4 + x5 = n
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Word Wars
-[code-task title="Word Wars" taskId="27-06-p-12" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Word Wars" taskId="java-basics-nested-loops-word-wars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1689,9 +1688,9 @@ Winner is Baluchonkata - 1229!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Coding
-[code-task title="Coding" taskId="27-06-p-13" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
+[code-task title="Coding" taskId="java-basics-nested-loops-coding" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1926,9 +1925,9 @@ $$$
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Train the Trainers
-[code-task title="Train the Trainers" taskId="27-06-p-14" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Train the Trainers" taskId="java-basics-nested-loops-train-the-trainers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
