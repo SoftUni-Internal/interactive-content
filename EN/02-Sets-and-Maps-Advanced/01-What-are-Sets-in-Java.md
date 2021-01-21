@@ -3,7 +3,15 @@
 [slide hideTitle]
 # What are Sets in Java?
 
-The Java **Collection Framework** contains numerous **\*interfaces**, one of which is the **Set** Interface.
+The Java **Collection Framework** contains numerous **interfaces**, one of which is the **Set** Interface, that provides the features of the mathematical set in Java.
+
+The **Set** extends the **Collection** interface.
+
+**Interfaces** in Java represent **behavior**, without specifying any sort of **implementation**.
+
+What the interface does is specify that **certain methods** with particular behavior exist and any class implements them.
+
+**Interfaces** are not in the **scope of this course**, we are going to learn in-depth about Interfaces in the Java OOP course.
 
 **There are three different types of Sets:**
 - `HashSet<E>`
@@ -27,7 +35,6 @@ The Java **Collection Framework** contains numerous **\*interfaces**, one of whi
 -  to store **numbers in random order**, etc.
 
 
-\* Interfaces form a contract between the class and the outside world. 
 
 You can find out more about Interfaces [here](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html#:~:text=Interfaces%20form%20a%20contract%20between,the%20class%20will%20successfully%20compile.).
 
