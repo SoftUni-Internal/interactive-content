@@ -44,7 +44,7 @@
     queue.poll()
     ```
     - `peek()`
-    ```java live
+    ```java
     ArrayDeque<Integer> queue = new ArrayDeque<>();
     queue.add(5);
 
@@ -57,12 +57,10 @@
 ## In the next lesson you will learn:
 
 - Arrays in Java
-- What is Multidimensional Array?
+- What is a Multidimensional Array?
 - Declaring and Creating Multidimensional Arrays
 - Initializing Multidimensional Arrays
 - Accessing Elements
 - Reading and Printing a Matrix
-
-
 
 [/slide]

@@ -237,14 +237,14 @@ Each command is one of the following types:
 
 ## Input
 
-- The first line of input contains an integer **N** , where `1 ≤ N ≤ 10 ^ 5`
+- The first line of input contains an integer **N**, where `1 ≤ N ≤ 10 ^ 5`
 - The next  **N** lines contain commands. All commands will be valid and in the format described
-- The element **X** will be in range `1 ≤ X ≤ 10 ^ 9`
-- The **type of the command** will be in range `1 ≤ Type ≤ 3`
+- The element **X** will be in the range `1 ≤ X ≤ 10 ^ 9`
+- The **type of the command** will be in the range `1 ≤ Type ≤ 3`
 
 ## Output
 
-- For each command of type `3` , **print the maximum element** in the stack on a new line.
+- For each command of type `3`, **print the maximum element** in the stack on a new line.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
@@ -1605,7 +1605,7 @@ Your task is to implement **4 types of commands** related to manipulating the te
 
 ### Input
 
-- The first line contains **N** , the number of operations, where `1 ≤ N ≤`  **105**
+- The first line contains **N**, the number of operations, where `1 ≤ N ≤`  **105**
 - Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`.
 - **The length of the text** will not exceed **1000000**
 - All input characters are **English letters**
@@ -1870,7 +1870,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Mathematical expressions are **written in an infix notations** , for example `5 / ( 3 + 2 )`.
+Mathematical expressions are **written in an infix notations**, for example `5 / ( 3 + 2 )`.
 
 However, this kind of notation is **not efficient for computer processing** , as you first need to evaluate the expression inside the brackets, so there is a lot of back and forth movement.
 
@@ -2012,7 +2012,7 @@ Each of these plants has been added with some amount of pesticide.
 
 After each day, if any plant has **more pesticide** than the plant at **its left**, being weaker (more GMO) than the left one, **it dies**.
 
-You are given the initial values of the pesticide and position of each plant.
+You are given the initial values of the pesticide and the position of each plant.
 
 Print the number of days **after** which no plant dies, i.e. the time after which there are no plants with more pesticide content than the plant to their left.
 

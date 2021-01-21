@@ -54,7 +54,7 @@ System.out.println(queue);
 
 - `poll()` or `remove()`: both methods remove the first element from the queue
 
-    - `remove()`: throws exception if queue is empty
+    - `remove()`: throws exception if the queue is empty
 
     - `poll()`: returns null if queue is empty, otherwise returns the removed element
 
@@ -128,7 +128,7 @@ queueOfCars.push("Lucid Air");
 System.out.println(queueOfCars.contains("BMW 7"));
 ```
 
-# Overview of All Operations 
+## Overview of All Operations 
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
 
@@ -152,7 +152,7 @@ public class Main {
 ## Description
 Hot potato is a game in which **children form a circle and start passing a hot potato**.
 
-The counting starts with the fist kid.
+The counting starts with the first kid.
 
 **Every n-th toss the child left with the potato leaves the game**.
 
@@ -164,7 +164,7 @@ Create a program that simulates the game of Hot Potato.
 
 **Print every kid that is removed from the circle**.
 
-In the end, **print the kid that is left last**.
+In the end, **print the kid that is left the last**.
 
 ## Examples
 | **Input** | **Output** |
@@ -348,7 +348,7 @@ public class Main {
 ## Description
 Hot potato is a game in which **children form a circle and start passing a hot potato**.
 
-The counting starts with the fist kid.
+The counting starts with the first kid.
 
 **Every n-th toss the child left with the potato leaves the game**.
 
@@ -360,7 +360,7 @@ Create a program that simulates the game of Hot Potato.
 
 **Print every kid that is removed from the circle**.
 
-In the end, **print the kid that is left last**.
+In the end, **print the kid that is left the last**.
 
 ## Examples
 | **Input** | **Output** |

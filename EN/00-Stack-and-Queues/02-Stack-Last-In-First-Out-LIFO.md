@@ -72,7 +72,7 @@ System.out.println(element);
 [slide hideTitle]
 # Utility Methods
 
-- `size()`: returns the number of elements in deque
+- `size()`: returns the number of elements in the deque
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -123,17 +123,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which takes 2 types of browser instructions:
+Write a program that takes 2 types of browser instructions:
 
 - Normal navigation: a URL is set, given by a string
 
 - The string `back` that sets the current URL to the last set URL
 
-After each instruction the program should **print the current URL**. 
+After each instruction, the program should **print the current URL**. 
 
 If the **back** instruction can not be executed, print `no previous URLs`.
 
-The input **ends** with `Home` command, then simply you have to **stop the program**.
+The input **ends** with the `Home` command, then simply you have to **stop the program**.
 
 
 ## Examples
@@ -342,17 +342,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which takes 2 types of browser instructions:
+Write a program that takes 2 types of browser instructions:
 
 - Normal navigation: a URL is set, given by a string
 
 - The string `back` that sets the current URL to the last set URL
 
-After each instruction the program should **print the current URL**. 
+After each instruction, the program should **print the current URL**. 
 
 If the **back** instruction can not be executed, print `no previous URLs`.
 
-The input **ends** with `Home` command, then simply you have to **stop the program**.
+The input **ends** with the `Home` command, then simply you have to **stop the program**.
 
 
 ## Examples
