@@ -1,7 +1,7 @@
-# Homework
+# Temă
 
-[slide]
-# Problem: Sum Digits
+[slide hideTitle]
+# Problemă: Sum Digits
 [code-task title="Sum Digits" taskId="pb-java-while-loop-sum-digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -15,14 +15,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads a number from the console
-* **Sums** the **digits** of a number
-* Prints the sum
+* Citește un număr de pe  consolă
+* **Adună** toate **cifrele** unui număr
+* Imprimă suma
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 5634 | 18 |
@@ -82,8 +82,8 @@ Write a program, which:
 
 [/slide]
 
-[slide]
-# Problem: Favorite Book
+[slide hideTitle]
+# Problemă: Favorite Book
 [code-task title="Favorite Book" taskId="pb-java-while-loop-favourite-book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -97,14 +97,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Descriere
+Scrieți un program care: 
 
-* Reads a **book's name** from the console
-* Receives names until it gets **book with the same name as the first one**
-* Prints "Book found! Attempts: \{attemptsCount\}" and stops afterwards
+* Citește **numele cărții** de pe consolă
+* Primește numele până ce ajunge la **cartea cu același nume ca prima**
+* Imprimă "Book found! Attempts: \{attemptsCount\}" și după aceea se  oprește
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | Alice in Wonderland | Book found! Attempts: 3 |
@@ -150,8 +150,8 @@ Book found! Attempts: 12
 
 [/slide]
 
-[slide]
-# Problem: Find Min and Max
+[slide hideTitle]
+# Problemă: Find Min and Max
 [code-task title="Find Min and Max" taskId="pb-java-while-loop-find-min-and-max" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -165,15 +165,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Descirere
+Scrieți un program care: 
 
-* Receives integers until **"END"**
-* Prints the **biggest** and the **smallest** integer in the following format:
+* Primește numere întregi până la mesajul **"END"**
+* Imprimă **cel mai mare** și **cel mai mic** număr întreg in următorul format:
    * Max number: \{max number\}
    * Min number: \{min number\}
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 10 | Max number: 304 |
@@ -262,8 +262,8 @@ Min number: 0
 
 [/slide]
 
-[slide]
-# Problem: Special Number
+[slide hideTitle]
+# Problemă: Special Number
 [code-task title="Special Number" taskId="pb-java-while-loop-special-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -277,20 +277,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Special number is number **divisible by all of its digits** without remainder. 
+## Desciere
+Numărul special este un număr**divisible by all of its digits** fără rest. 
 
-Write a program, which: 
-* Receives integer
-* **Prints** "\{num\} is special", if the number is special
-* Otherwise, prints "\{num\} is not special"
+Scrieți un program care: 
+* Primește un număr întreg
+* **Prints** "\{num\} is special", dacă numărul este special
+* În celelalte situații, imprimă "\{num\} is not special"
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 23 | 23 is not special |
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 404 | 404 is special |
@@ -340,10 +340,10 @@ Write a program, which:
 [code-io/]
 [/code-task]
 
-[/slide]
+[/slide hideTitle]
 
 [slide]
-# Problem: Special Bonus
+# Problemă: Special Bonus
 [code-task title="Special Bonus" taskId="pb-java-while-loop-special-bonus" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -357,14 +357,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Desciere
+Scrieți un program care: 
 
-* Reads an **integer** number from the console
-* Keeps reading integers until it finds the **same one as the first one**
-* When it finds it, it increases the value of the **previous** number **before it** with 100% and prints it
+* Citește un număr **întreg** de pe consolă
+* Continuă să citrescă numerele întregi până ce ajunge la **același număr ca primul**
+* Când îl găsește, crește valoarea ** numărului ** anterior ** dinaintea lui ** cu 100% și îl imprimă
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 25 | 60 |
@@ -410,8 +410,8 @@ Write a program, which:
 
 [/slide]
 
-[slide]
-# Problem: Sequence 2k + 1
+[slide hideTitle]
+# Problemă: Sequence 2k + 1
 [code-task title="Sequence 2k + 1" taskId="pb-java-while-loop-sequence-2k-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -425,14 +425,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Enunț
+Scrieți un program care: 
 
-* Reads a number **n** from the console
-* Prints a **sequence** of numbers, which are **<= n** and satisfy the following condition:
-* Each number is equal to the previous one multiplied by **2** plus **1**
+* Citește un număr **n** de pe consolă
+* Imprimă o **secvență** de numere care sunt **<= n** și îndeplinesc următoarea condiție:
+* Fiecare dintre numere este egal cu numărul aflat imediat inaintea sa, multiplicat cu **2** plus **1**
 
-## Example
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 8 | 1 |
@@ -523,8 +523,8 @@ Write a program, which:
 
 [/slide]
 
-[slide]
-# Problem: Account Balance
+[slide hideTitle]
+# Problemă: Account Balance
 [code-task title="Account Balance" taskId="pb-java-while-loop-account-balance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -538,14 +538,13 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Enunț
+Scrieți un program care: 
 
-* Receives the **amount of money** for each transaction untill **"END"**
-* **Adds** the money to the **balance** and **prints**: "Increase: \{money\}", format `money` to the **2nd digit** after the decimal point
-* After **"END"** calculates and **prints** the total balance: "Total: \{balance\}", format `balance` to the **2nd digit** after the decimal point
-
-## Example
+* Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
+* * Adaugă ** banii în ** soldul ** și ** tipărește **: "Increase: \{money\}", formatează `banii` la **a două cifră** după virgula de zecimale 
+* După **"END"** calculează și **prints** suma totală din cont: "Total: \{balance\}", formatează `balance` până la **2nd digit** după punctul zecimal
+## Exemplu
 | Input | Output |
 | --- | --- |
 | 5.51 | Increase: 5.51 |
@@ -587,8 +586,8 @@ Total: ‭165.73‬
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Old Books
+[slide hideTitle]
+# Problemă: Old Books
 [code-task title="Old Books" taskId="pb-java-while-loop-old-books" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -602,28 +601,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Andreea goes to her home town after being a long time abroad. 
+## Descriere
+Andreea merge acasă după ce a fost plecată mult timp în afara țării. 
 
-When she comes home, she sees her grandmother\'s library and remembers her favourite book. 
+Când ajunge acasă, ea vede biblioteca bunicii și își amintește de cartea sa preferată.
 
-Help Andreea writing a program in which Andreea enters the name of the **book** she\'s searching for (**String**) and the **capacity** of the library (**integer**). 
+Ajutați-o pe Andreea scriind un program în care Andreea să pună titlul unei **cărți** pe care o caută  (**un șir**) și **capacitatea** bibliotecii(**un număr întreg**). 
 
-**Until** Andreea finds her favourite book **or** doesn\'t check all books in the library, the program have to reads every time the name of the next book on a separate line.
+**Până ce** Andreea găsește cartea sa preferată **sau** nu verifică toate cărțile din bibliotecă, programul trebuie să citească de fiecare dată titlul următoarei cărți pe o linie separată.
 
 ## Input
-- First line of input is the name of the book Andreea's searching for - string
-- Second line is the capacity of the library - integer
-- On every nex line - name of book from library - string
+- Prima linie de intrare este titlul cărții pe care o caută Andreea - un șir
+- A doua linie este capacitatea bibliotecii - un număr întreg
+- Pe fiecare dintre liniile următoare - titlul unei cărți din bibliotecă - un șir
 
 ## Output
-- If Andreea **does not** find the book, print **two** lines:
+- Dacă Andreea **nu** găsește cartea, imprimă **doup** linii:
   - "The book you search is not here!"
   - "You checked \{count\} books."
-- If Andreea **finds** the book, print a **single** line:
+- Dacă Andreea **găsește** cartea, imprimă o **singură** linie:
   - "You checked \{count\} books and found it."
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | Troy | You checked 2 books and found it. |
@@ -632,11 +631,11 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 | Life Style | |
 | Troy | |
 
-### Comments
-- Andreea is searching for a book with name "Troy", and the library\'s capacity is 8 books.
-- The first book is "Stronger", the second one is "Life Style", the third one is desired - "Troy" and the program ends.
+### Comentarii
+- Andreea caută o carte cu titlul "Troy",iar capacitatea bibliotecii este de 8 cărți.
+- Prima carte este "Stronger", a doua carte este "Life Style", a treia este cea căutată - "Troy" și programul se încheie.
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | The Spot | The book you search is not here! |
@@ -646,10 +645,10 @@ Help Andreea writing a program in which Andreea enters the name of the **book** 
 | Torronto | | 
 | Spotify | | 
 
-### Comments
-- Andreea is searching for a book with name "The Spot". The library contains 4 books.
-- The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify"
-- Since there aren\'t other books in the library, reading names is stopped. Andreea didn\'t find the book.
+### Comentarii
+- Andreea caută o carte cu titlul "The Spot". Biblioteca conține 4 cărți.
+- Prima carte este "Hunger Games", a doua - "Harry Potter", a treia - "Torronto", a patra - "Spotify"
+- Cum nu mai sunt alte cărți în bibliotecă, citirea titlurilor se încheie. Andreea nu a găsit cartea.
 [/task-description]
 [tests]
 [test open]
@@ -849,8 +848,8 @@ You checked 1 books.
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Exam Preparation
+[slide hideTitle]
+# Problemă: Exam Preparation
 [code-task title="Exam Preparation" taskId="pb-java-while-loop-exam-preparation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -864,30 +863,29 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description 
-Write a program in which Martin solves problems for exams until he receives message from his trainer: "**Enough**". 
+## Descriere
+Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său, mesajul: "**Enough**". 
 
-Every time he solves a problem, he get a grade. **The program should ends either** Martin receives "Enough" command, **or obtain the number of poor grades**. 
+De fiecare dată când rezolvă o problemă, primește o notă. **Programul ar trebui să se oprească ori cînd** Martin primește comanda "Enough" **primește numărul de note slabe**. 
 
-A poor grade is a grade less or equal to 4.00.
+O notă slabe este mai mică sau egală cu 4.00.
 
 ## Input
-- On the first line – **number of poor grades** – integer in range \[1…5\]
-- **After that repeatedly two lines**:
-  - **Name of a problem - text**
-  - **Grade** - integer in range \[2…6\]
+- Pe prima linie – **număr de note bune** – un număr întreg în intervalul \[1…5\]
+- **După aceea în mod repetat două linii**:
+  - **Numele problemei - text**
+  - **Notă** - un număr întreg în intervalul\[2…6\]
 
 ## Output
-- If Martin reaches "**Enough**" command, print **3** lines:
-  - "Average score: \{average grade\}"
-  - "Number of problems: \{number of ALL problems\}"
-  - "Last problem: \{last problem\'s name\}"
-- **If he gets the specified number of poor grades**:
-  - "You need a break, \{number poor grades\} poor grades."
+- Dacă Martin ajunge la comanda **Enough**", imprimă **3** linii:
+  - "Scor mediu: \{nota medie\}"
+  - "Numărul problemelor: \{numărul TUTUROR problemelor\}"
+  - "Ultima problemă: \{numele ultimei probleme\}"
+- **Dacă obține numărul specificat de note slabe **:
+   - „Aveți nevoie de o pauză, \ {număr note slabe \} note slabe.”
 
-**The average grade should be formatted to the second decimal point.**
-
-## Example
+** Nota medie ar trebui să fie formatată la a doua zecimală. **
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 3 | Average score: 5.25 |
@@ -901,18 +899,18 @@ A poor grade is a grade less or equal to 4.00.
 | 6 | |
 | Enough | |
 
-### Comments
-- The number of allowed poor grades is 3.
-- First problem\'s name is Money, Martin\'s grade is 6.
-- Second problem - Story, grade - 4.
-- Third problem - Spring Time, grade - 5.
-- Fourth problem - Bus, grade - 6.
-- Next command is Enough, the program ends.
-- Average grade: 21 / 4 = 5.25
-- Number of solved problems: 4
-- Last problem: Bus
+### Comentarii
+- Numărul de note slabe este 3.
+- Numele primei probleme este Money, nota lui Martin este 6.
+- A doua problemă - Story, nota - 4.
+- A treia problemă - Spring Time, nota - 5.
+- A patra problemă - Bus, nota - 6.
+- Următoarea comandă este Enough, programul se încheie.
+- Media notelor: 21 / 4 = 5.25
+- Numărul problemelor rezolvate: 4
+- Ultima problemă: Bus
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 2| You need a break, 2 poor grades. |
@@ -923,12 +921,12 @@ A poor grade is a grade less or equal to 4.00.
 | Best Player| |
 | 4| |
 
-### Comments
-- The number of allowed poor grades is 2.
-- The first problem\'s name is Income, Martin\' grade is 3.
-- Second problem - Game Info, grade - 6.
-- Third problem - Best Player, grade - 4.
-- Martin reaches the number of allowed poor grades, it is time for break.
+### Comentarii
+- Numărul permis de note mici este 2.
+- Numele primei probleme este Income, nota lui Martin este 3.
+- A doua problemă - Game Info, nota - 6.
+- A treia problemă - Best Player, nota - 4.
+- Martin atinge numărul de note mici permise, este timpul pentru break.
 [/task-description]
 [tests]
 [test open]
@@ -1205,8 +1203,8 @@ Last problem: Poison
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Walking
+[slide hideTitle]
+# Problemă: Walking
 [code-task title="Walking" taskId="pb-java-while-loop-Walking" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
 ```
@@ -1220,18 +1218,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Gaby wants to start healthy life and she sets a goal to walk **10000 steps** a **day**.
+## Descriere
+Gaby vrea să înceapă o viață sănătoasă și își propune să meargă **10000 de pași** pe **zi**.
 
-Write a program **that reads from the console how many steps** Gaby walks every time she is out and **when she reaches the set goal**, print a message: 
+Scrieți un program **care citește de pe consolă câte pași** Gaby merge de fiecare dată când iese și **când ajunge obiectivul stabilit**, printează mesajul: 
 - "**Goal reached! Good job!**".
 
-In case she wants to go home **before** reaching the goal, she will enter "**Going home**" command and the **steps** she had **walked** while she was **going home**. 
+In cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **mers** în timp ce **gmerge acasă**. 
 
-After that, if she didn\'t manage to reach her goal, you have to print the following massage on the console: 
+După aceea, dacă nu ajunge să atingă obiectivul, va trebui să imprime mesajul următor pe consolă: 
 - "\{difference in steps\} more steps to reach goal."
 
-## Examples
+## Exemple
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1447,8 +1445,8 @@ Going home
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Dishwasher
+[slide hideTitle]
+# Problemă: Dishwasher
 [code-task title="Dishwasher" taskId="pb-java-while-loop-Dishwasher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1462,34 +1460,34 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-John works in a restaurant and is responsible for loading the dishwasher at the end of the day. 
+## Descriere
+John lucrează la un restaurant și este responsabil de încărcarea mașinii de spălat vase, la finalul zilei.
 
-Your task is to write a program that calculates **whether** a purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
+Tema este să scriem un program care să calculeze **dacă** o cantitate de sticle și detergent este  **suficientă** pentru spălarea unui anumit număr de vase.
 
-It is known that each bottle contains **750 ml.** detergent. 
+Știm că fiecare sticlă conține **750 ml.** de detergent. 
 
-For 1 **plate** 5 ml is needed, and for a **pots** 15 ml. 
+Pentru un număr de 1 **farfurie** sunt necesari 5 ml , iar pentru 1 **cană** 15 ml. 
 
-Accept that on every **third** filling with vessels, the dishwasher is filled only with pots, and the other times with plates. 
+Este acceptat ca la fiecare **a treia** umplere cu vase, mașina de spălat vase este plină doar cu căni, iar în celelalte cazuri cu farfurii. 
 
-Until you get the command **"END"** you will continue to receive the number of vessels that need to be washed.
+Până la primirea comenzii **"END"** veți continua să primiți numărul de vase care este necesar să fie spălate.
 
 # Input
-Read from the console: 
-- **Number of bottles of detergent** that will be used for washing of plates - integer in range \[1...10\] 
+Citim din consolă: 
+- **Number of bottles of detergent** care vor fi utilizate pentru spălarea farfuriilor - un număr întreg în gama\[1...10\] 
 
-On each **subsequent** line, until the command **"End"** or until **the amount of detergent is not run out**, the **number of vessels** that need to be washed - integer in range \[1...100\]
+Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în gama \[1...100\]
 
 # Output
-- In case that the amount of detergent **was sufficient** for the washing of the vessels, print three lines of output: 
+- In cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, printează trei linii de ieșire: 
     - "Detergent was enough!"
     - "\{Number of clean plates\} dishes and \{number of clean pots\} pots were washed."
     - "Leftover detergent \{amount of detergent remaining\} ml." 
-- If the amount of detergent **was not sufficient** for the washing of the vessels, print the following line: 
+- Dacă cantitatea de detergent **nu a fost suficientă** pentru spălarea vaselor, imprimă următoarea linie: 
     - "Not enough detergent, \{quantity not reached detergent\} ml. more necessary!"
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1499,14 +1497,14 @@ On each **subsequent** line, until the command **"End"** or until **the amount o
 | 55 | |
 | End | |
 
-### Comments
-- Detergent quantity = 2 \* 750 = 1500 ml.
-- 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (residue)
-- 65 plates = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (residue)
-- 55 pots = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (residue)
-- We receive the command "End", therefore the quantity is reached and the corresponding message is printed: number of plates = 53 \+ 65 = 118. Number of pots = 55
+### Comentarii
+- Cantitatea de detergent = 2 \* 750 = 1500 ml.
+- 53 farfurii încărcate = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (rest)
+- 65 farfurii = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (rest)
+- 55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rest)
+- Primim comanda "End", iar când cantitatea este atinsă, mesajul corespunzător este imprimat: number of plates = 53 \+ 65 = 118. Number of pots = 55
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | 1 | Not enough detergent, 100 ml. more necessary! |
@@ -1682,8 +1680,8 @@ Leftover detergent 725 ml.
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Report System
+[slide hideTitle]
+# Problemă: Report System
 [code-task title="Report System" taskId="pb-java-while-loop-Report-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1697,34 +1695,34 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-At a charity event, payments for the purchased products are always **alternated**: **cash payment and card payment**. **Always first payment method is cash**.
+## Descriere
+La un eveniment caritabil, plarra  pentru produsele cumpărate este întotdeauna **alternată**: **plată în numerar și plată cu cardul**. **Întotdeauna prima metodă de plată este în numerar**.
 
-The following payment rules have been established:
-- If the product **exceeds 100 dollars**, it **cannot be paid in cash**
-- If the product is priced **under 10 dollars**, it **cannot be paid by credit card**
+Următoarele reguli de plată au fost stabilite:
+- Dacă produsul **depășește 100 de dolari**, atunci **atunci nu poate fi achitat în numerar**
+- Dacă produsul are prețul **sub 10 dolari**, acesta **acesta nu poate fi achitat cu cardul**
 
-The program ends either after we receive the command **"End"**, or after the **funds are collected**.
+Programul se încheie după ce primim comanda **"End"**, sau după ce **fondurile au fost adunate**.
 
 ## Input
-Read from the console:
-- The amount **expected to be collected** from sales - integer in range \[1...10000\] 
+Citește din consolă:
+- Suma **așteptată de a fi adunată** din vânzări - un număr întreg în intervalul \[1...10000\] 
 
-On each subsequent line, until the **"End"** command is received or until **the necessary funds are collected**: 
-    - **The prices of items** to be purchased - integer in range \[1...500\]
+Pe fiecare linie urmptoare  până la comanda **"End"** sau până la   **adunarea fondurilor necesare**: 
+    - **Prețurile produselor** de cumpărat - un număr întreg în intervalul \[1...500\]
 
 ## Output
-Print on the console:
-- In case of successful transaction: "Product sold!" 
-- In case of unsuccessful transaction: "Error in transaction!" 
-- If the sum of all purchased products **exceeds or reaches the expected amount**, the program must be completed and **two lines** are printed to the console: 
+Imprimă pe consolă:
+- In cazul unei tranzacții reușite: "Product sold!" 
+- In cazul unei tranzacții eșuate: "Error in transaction!" 
+- Dacă suma tuturor produselor cumpărate **depășește sau ajunge la suma expectată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
     - "Average CS: \{average payment in person's cash\}" 
     - "Average CC: \{average card payment per person\}"
-    Payments must be **formatted to the second digit after the decimal point**.
-- When the **"End"** command is received, **one line** is written:
+    Plățile trebuie **formatate la a două cifră după punctul zecimal**.
+- Când am primit comanda **"End"** , se scrie **o linie**:
     - "Failed to collect required money for charity."
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1737,18 +1735,18 @@ Print on the console:
 | 317| Average CS: 70.50|
 | | Average CC: 286.50|
 
-### Comments
-- The condition is rotated first in **cash payment**, then through **credit card**
-- 120 > 100 transaction is rejected 
-- 8 < 10 transaction is rejected 
-- 63 <= 100 => the transaction was successful
-- 256 >= 10 => the transaction was successful 
-- 78 <= 100 => the transaction was successful 
-- 317 >= 10 => the transaction was successful 
-- Total amount collected: 63 + 256 + 78 + 317 = 714 
+### Comentarii
+- Condiția este rulată prima oară în **cash payment**, apoi prin **credit card**
+- 120 > 100 tranzacția a fost respinsă 
+- 8 < 10 tranzacție respinsă
+- 63 <= 100 => tranzacție reușită
+- 256 >= 10 => tranzacție reușită
+- 78 <= 100 => tranzacție reușită
+- 317 >= 10 => tranzacție reușită
+- Suma totală colectată: 63 + 256 + 78 + 317 = 714 
 - 714 >= 500
-- Total cash: 63 + 78 = 141;  Average cash: 141/2 = 70.50 
-- Total credit cards: 256 \+ 317 = 573; Average credit cards: 573/2 = 286.50
+- Suma totală cash: 63 + 78 = 141;  Suma medie cash: 141/2 = 70.50 
+- Totalul din credit cards: 256 \+ 317 = 573; Suma medie din credit card: 573/2 = 286.50
 
 [/task-description]
 [tests]
@@ -1934,8 +1932,8 @@ Failed to collect required money for charity.
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Graduation
+[slide hideTitle]
+# Problemă: Graduation
 [code-task title="Graduation" taskId="pb-java-while-loop-graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1949,21 +1947,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## DSescriere
 
-Write a program that calculates the **average grade** of a student from his entire education. 
+Scrieți un program care să calculeze **nota medie** a unui student în întreaga sa perioadă de educație.
 
 ## Input
-- On the first line you will receive **the name of the student**, and on each following line his annual grades. - The student passes to upper class, if his **annual grade is 4.00 or greater**. 
-- If his grade is less than 4.00, he has to **repeat** the class.
+- Pe prima linie, veți primi **numele studentului**, pe fiecare linie următoare sunt notele pe ani. - Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare**. 
+- Dacă nota sa este mai mică decât 4.00, el trebuie să **repetă** clasa.
 
 ## Output
-- If the student graduates **12th** class, you have to print:
+- Dacă studentul promovează clasa **12-ea** trebuie să imprime:
     - "\{student name\} graduated. Average grade: \{average grade from his entire education\}"
 
-**The grade should be formatted to the second decimal point.**
+**Nota trebuie să fie formatată la a două cifră după punctul zecimal.**
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | --- | --- | 
@@ -2133,8 +2131,8 @@ Alen graduated. Average grade: 5.34
 [/code-task]
 [/slide]
 
-[slide]
-# Problem: Stream Of Letters
+[slide hideTitle]
+# Problemă: Stream Of Letters
 [code-task title="Stream Of Letters" taskId="pb-java-while-loop-stream-of-letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -2148,22 +2146,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You will receive symbols the "**End**" command. 
+## Descriere
+Omiteți cele ** fără litere ** și prima apariție a ** c **, ** o ** și ** n ** (caractere cu cod).
 
-You skip the **non-letter chars** and the first occurence of **c**, **o**  and **n** (code chars).
+Când ** primiți prima dată ** una dintre aceste litere, trebuie să o marcați ca vizitată, ** dar nu este salvată în cuvânt **.
 
-When you **first receive** one of these letters, you have to mark it as visited, **but it is not saved in the word**.
-
-After you have found **all three code chars from the command**, you have to print the word with a space and reset the counting of the code chars.
+După ce ați găsit ** toate cele trei caractere de cod din comandă **, trebuie să imprimați cuvântul cu un spațiu și să resetați numărarea caracterelor de cod.
 
 ## Input
-- Read a sequence of lines with a single symbol each, until you receive the "**End**" command
+- Citiți o secvență de linii cu un singur simbol pe linie, până veți primi comanda "**End**"
 
 ## Output
-- Print on the console **every word after the secret command** followed by **space**
+- Imprimați pe consolă **fiecare cuvânt după comanda secretă** urmată de **spațiu**
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | H | Hello |
@@ -2177,12 +2173,12 @@ After you have found **all three code chars from the command**, you have to prin
 | End| |
 
 ### Comments
-- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" are all read letters.
-- First we read "**H**" and we add it to the word. The next symbol is "**n**". It\'s part of the command and we **do not add it to the word as we meet it for the first time**.
-- The next symbols are "**e**", "**l**", "**l**" and we add them to the word. We read "**o**" and we mark it as visited, but again we do **not** add it to the word. The next letter is "**o**" again and it\'s added. The next is "**c**" and all three symbols for the secret command are available.
-- We print "**Hello** " and we recieve "End" command and the programs ends. The result is "Hello ".
+- "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate litere citite.
+- Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu-l adăugăm la cuvânt când îl întâlnim pentru prima dată **.
+- Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu-l** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile .
+- Imprimăm "**Hello** ",  primim comanda  "End" și progrmaul se încheie. Rezultatul este "Hello ".
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | % | BooM |
@@ -2202,7 +2198,7 @@ After you have found **all three code chars from the command**, you have to prin
 | D| |
 | End| |
 
-## Example
+## Exemplu
 | **Input** | **Output** |
 | --- | --- |
 | o | Solve me |
@@ -2626,3 +2622,10 @@ I Like Naruto
 [/code-task]
 [/slide]
 
+
+
+[slide]
+# Rezultatele Temei
+
+[tasks-results/]
+[/slide]

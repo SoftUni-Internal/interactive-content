@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Digits
 [code-task title="Sum Digits" taskId="pb-java-while-loop-sum-digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -82,7 +82,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Favorite Book
 [code-task title="Favorite Book" taskId="pb-java-while-loop-favourite-book" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -150,7 +150,7 @@ Book found! Attempts: 12
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Find Min and Max
 [code-task title="Find Min and Max" taskId="pb-java-while-loop-find-min-and-max" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -262,7 +262,7 @@ Min number: 0
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Special Number
 [code-task title="Special Number" taskId="pb-java-while-loop-special-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -342,7 +342,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Special Bonus
 [code-task title="Special Bonus" taskId="pb-java-while-loop-special-bonus" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -410,7 +410,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sequence 2k + 1
 [code-task title="Sequence 2k + 1" taskId="pb-java-while-loop-sequence-2k-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -523,7 +523,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Account Balance
 [code-task title="Account Balance" taskId="pb-java-while-loop-account-balance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -587,7 +587,7 @@ Total: ‭165.73‬
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Old Books
 [code-task title="Old Books" taskId="pb-java-while-loop-old-books" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -849,7 +849,7 @@ You checked 1 books.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Exam Preparation
 [code-task title="Exam Preparation" taskId="pb-java-while-loop-exam-preparation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1205,7 +1205,7 @@ Last problem: Poison
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Walking
 [code-task title="Walking" taskId="pb-java-while-loop-Walking" executionType="tests-execution" executionStrategy="java-code" requiresInput ]
 [code-editor language=java]
@@ -1447,7 +1447,7 @@ Going home
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Dishwasher
 [code-task title="Dishwasher" taskId="pb-java-while-loop-Dishwasher" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1682,7 +1682,7 @@ Leftover detergent 725 ml.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Report System
 [code-task title="Report System" taskId="pb-java-while-loop-Report-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1934,7 +1934,7 @@ Failed to collect required money for charity.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Graduation
 [code-task title="Graduation" taskId="pb-java-while-loop-graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -2133,7 +2133,7 @@ Alen graduated. Average grade: 5.34
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Stream Of Letters
 [code-task title="Stream Of Letters" taskId="pb-java-while-loop-stream-of-letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

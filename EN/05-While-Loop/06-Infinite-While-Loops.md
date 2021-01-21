@@ -1,16 +1,4 @@
-# Infinite While Loop
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2951" endTimeInSeconds="3185"]
-[stream language="EN" videoId="343678060" default /]
-[stream language="RO" videoId="391452320"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Infinite While Loop
 We call an infinite loop one that repeats infinitely the performance of its body. 
 

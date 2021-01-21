@@ -1,16 +1,4 @@
-# The break Statement
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2496" endTimeInSeconds="2950"]
-[stream language="EN" videoId="343678060" default /]
-[stream language="RO" videoId="391452320"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # The break Statement
 The `break` statement stops the execution of a loop at the time it is called and continues from the first line after the end of the loop.
 
