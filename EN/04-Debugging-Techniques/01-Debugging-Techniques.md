@@ -13,7 +13,11 @@ Steps to debug a program are:
 
 **Debugging tools** (called **debuggers**) help identify coding errors at various development stages.
 
-## Debugging vs. Testing
+[slide]
+
+[slide hideTitle]
+
+# Debugging vs. Testing
 
 - Testing
     - Is about initial detection of errors
