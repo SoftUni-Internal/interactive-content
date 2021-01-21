@@ -1,26 +1,26 @@
-[slide hideTitle
+[slide hideTitle]
 # While or For Loop?
 
-`while` and `for` loops both **repeat** a block of **code**.
+Buclele `while` și `for` **repeat** o secvență de **code**.
 
-But there are different situations when writing code that require either the first loop, or the other.
+Dar există diverse situații în care scrierea codului necesită fie prima buclă, fie celelalte. 
 
-When you know **exactly how many times** you want to loop through a block of code, use the `for` loop.
+Atunci când știm ** de câte ori exact** vrem să repetăm bucla într-o anumită secvență de cod, folosim bucla  `for`.
 ```java live
 for (int i = 0; i <= 5; i++) {
     System.out.println(i);
 }
 ```
 
-It is usually appropriate for loops in which the initialization and increment are single statements and logically related. 
+Este, de obicei, potrivit pentru buclele a căror inițializare și incrementare sunt instrucțiuni simple și înrudite ca logică. 
 
-It is more compact than `while` and it keeps the loop control statements together in one place.
+Este mult mai compactă decât bucla `while` și adună declarațiile care controlează bucla în același loc. 
 
-But, there could be many **complex** problems where number of iterations depend upon a certain **condition** and can't be predicated beforehand. 
+Dar apar mai multe probleme **complexe** atunci când numărul iterațiilor  depinde de o anumită **condiție** și nu pot fi prevăzute dinainte.
 
-That means we don't know in advance **how many times** to repeat a loop.
+Aceasta înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
 
-In those situation it is better to use `while` loop.
+In această situație este mai bine să folosim bucla `while`.
 ```java live
 Scanner scanner = new Scanner(System.in);
 String command = scanner.nextLine();
@@ -43,7 +43,7 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Problem: Odd Number
+# Problemă: Număr impar
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -57,61 +57,13 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
+*  Citește numerele din consolă până ajunge la un **număr imnpar**
+* Imprimă numărul **impar** 
 
-## Example
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 2 | 3 |
-| 4 |
-| 8 |
-| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-2
-4
-8
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Odd Number
-[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-     // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | ---- | ---- |
@@ -140,7 +92,55 @@ Write a program, which:
 [/slide]
 
 [slide hideTitle]
-# Problem: Number Processor
+# Soluție: Odd Number
+[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+     // Write code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Descriere
+Scrieți un program care:
+
+* Citește numerele de pe  consolă până ce primește **un număr impar**
+* Imprimă acel număr  **impar** 
+## Exemplu
+
+| **Input** | **Output** |
+| ---- | ---- |
+| 2 | 3 |
+| 4 |
+| 8 |
+| 3 |
+
+[/task-description]
+[tests]
+[test]
+[input]
+2
+4
+8
+5
+[/input]
+[output]
+5
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
+[/slide]
+
+[slide hideTitle]
+# Problemă: Procesor numeric
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -154,16 +154,16 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads a number from the console
-* Reads the following commands:
-* **Add** - Аdds 1 to the number
-* **Subtract** - Subtracts 1 from the number
-* **END** -  Prints the number and stops the program
+* Citește un număr de pe consolă 
+* Citește următoarele comenzi:
+* **Add** - Аdaugă 1 numărului
+* **Subtract** - Scade 1 din număr
+* **END** -  Imprimă numărul și oprește programul
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | ---- | ---- |
@@ -171,12 +171,6 @@ Write a program, which:
 | Add |
 | END |
 
-### Input
-- 5
-- Add
-- END
-### Output
-- 6
 [/task-description]
 [tests]
 [test]
@@ -218,7 +212,7 @@ END
 [/slide]
 
 [slide hideTitle]
-# Solution: Number Processor
+# Soluție: Procesor numeric
 [code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -232,16 +226,16 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Enunț
+Scrieți un program care:
 
-* Reads a number from the console
-* Reads the following commands:
-* **Add** - Аdds 1 to the number
-* **Subtract** - Subtracts 1 from the number
-* **END** -  Prints the number and stops the program
+* Citește un număr de pe  consolă
+* Citește următoarele comenzi:
+* **Add** - Аdaugă 1 numărului
+* **Subtract** - Scade 1 din număr
+* **END** -  Imprimă numărul și oprește programul
 
-## Example
+## Exemplu
 
 | **Input** | **Output** |
 | ---- | ---- |

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Do-While Loop
 The next type of loops we will get familiar with are the `do-while` loops. 
 
@@ -27,7 +27,7 @@ If the condition is true, the flow of control jumps back up to `do`, and the sta
 This process repeats until the given condition becomes false.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example: Calculating Factorial
 For natural n number, calculate **n! = 1 * 2 * 3 * … * n**. 
 
