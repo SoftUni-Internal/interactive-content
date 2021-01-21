@@ -5,11 +5,17 @@
 # IntelliJ Data Inspection
 
 - Debugging is all about **data inspection**
-    - What are the local **variables**?
-    - What is in **memory**?
-    - What is the **code flow**?
-    - In general - What is the state of the process right now and how did it get there?
-- As such, the ease of data inspection is key to quick resolution of problems.
+    - What are the local **variables**
+    - What is in **memory**
+    - What is the **code flow**
+    - In general - What is the state of the process right now and how did it get there
+- As such, the ease of data inspection is key to quick resolution of problems
+
+[/slide]
+
+[slide hideTitle]
+
+# Data Inspection
 
 - IntelliJ offers great data inspection features
     - **Variables**
@@ -19,7 +25,11 @@
 
 [image assetsSrc="debugging-techniques-example(3).png" /]
 
-## Variables and Watches Windows
+[/slide]
+
+[slide hideTitle]
+
+# Variables and Watches Windows
 
 - Allows you to inspect various states of your application
 - Several different kinds of "predefined" watches windows
@@ -28,7 +38,11 @@
     - Right click on the variable and select "Add to Watches"
     - Write the variable name in Watches window
 
-## Evaluate Expression Window
+[/slide]
+
+[slide hideTitle]
+
+# Evaluate Expression Window
 
 - Enables to evaluate expressions and code fragments in the context of a stack frame
 - Also evaluate operator expressions, lambda expressions, and anonymous classes
@@ -52,7 +66,10 @@
 - Test the fix
 - Look for similar errors
 
-## Tips for Finding Defects
+[/slide]
+
+[slide hideTitle]
+# Tips for Finding Defects
 
 - Use all available data
 - Refine the test cases
@@ -71,7 +88,12 @@
 - Talk to someone else about the problem
 - Take a break from the problem
 
-## Fixing a Defect
+
+[/slide]
+
+[slide hideTitle]
+
+# Fixing a Defect
 
 - Understand the problem before you fix it
 - Understand the program, not just the problem
@@ -83,7 +105,10 @@
 - Add a unit test that expose the defect
 - Look for similar defects
 
-## Psychological Considerations
+[/slide]
+
+[slide hideTitle]
+# Psychological Considerations
 
 - Your ego tells you that your code is good and doesn't have a defect 
 even when you've seen that it has

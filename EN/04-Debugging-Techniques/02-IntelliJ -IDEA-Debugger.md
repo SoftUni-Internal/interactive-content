@@ -13,7 +13,11 @@
 - Debugging **multithreaded programs**
 - And many more…
 
-## Starting a process of debugging
+[slide]
+
+[slide hideTitle]
+
+# Starting a process of debugging
 
 - Starting a process under the IntelliJ debugger
 - Attaching to an already running process
@@ -23,7 +27,12 @@
 
 [image assetsSrc="debugging-techniques-example(1).png" /]
 
-## Debugging a Project
+
+[slide]
+
+
+[slide hideTitle]
+# Debugging a Project
 
 - Right click in **main** method, Debug `{class}.main()`
     - **Shift + F9** is a shortcut

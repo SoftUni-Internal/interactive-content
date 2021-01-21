@@ -22,9 +22,13 @@ Steps to debug a program are:
 - Testing
     - Is about initial detection of errors
 - Debugging
-    - Means of diagnosing and correcting the root causes of errors that have already been detected.
+    - Means of diagnosing and correcting the root causes of errors that have already been detected
 
-## Importance of Debugging
+[slide]
+
+[slide hideTitle]
+
+# Importance of Debugging
 
 - Legacy code
     - You should be able to debug code that is written years ago
@@ -36,7 +40,11 @@ Steps to debug a program are:
 
 E.g. the Cluster Spacecraft Failure was caused by a bug.
 
-## Debugging Philosophy
+[slide]
+
+[slide hideTitle]
+
+# Debugging Philosophy
 
 **Debugging** can be viewed as one big decision tree.
 
