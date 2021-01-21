@@ -388,6 +388,7 @@ For Example: Password and Confirm Password.
 <div
     ngModelGroup="passData"
     #passData="ngModelGroup">
+</div>
 ```
 
 ```html
