@@ -1,6 +1,7 @@
 # Closure
 
-[slide]
+[slide hideTitle]
+
 # What is a closure?
 
 A **closure** is JavaScript feature where the **inner function scope** includes that of the **outer (enclosing) function**.
@@ -40,7 +41,7 @@ When a function **finishes execution**, any variables that were defined **inside
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Functions Returning Functions
 
@@ -64,7 +65,7 @@ Every time we call the function `f()` the counter will be output to the console 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Command Processor
 
 [code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-problem-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -158,7 +159,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Command Processor
 
 [code-task title="Solution: Command Processor" taskId="js-advanced-advanced-functions-lab-solution-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
