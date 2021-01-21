@@ -1,16 +1,6 @@
 # Real-Life Example
 
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1336" endTimeInSeconds="1405"]
-[stream language="EN" videoId="343678060" default /]
-[stream language="RO" videoId="391452320"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Real-Life Example: Fill a Bucket
 The next type of loops that we will get familiar with are called `while` loops. 
 

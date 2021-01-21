@@ -1,9 +1,9 @@
-[slide]
-
-
 # Lesson Introduction
+[slide hideTitle]
 
-## In this lesson you will learn about:
+# Lesson Content
+
+## In this lesson you will learn:
 
 **1. The While-Loop in Java**
 
@@ -23,8 +23,6 @@
 - What are **Infinity Loops** and how to safe-use them
 
 **6. Practical Exercises**
-
-
 
 
 [/slide]
