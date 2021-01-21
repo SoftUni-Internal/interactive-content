@@ -1,16 +1,4 @@
-# Real-Life Example
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="2914" endTimeInSeconds="3142"]
-[stream language="EN" videoId="345011935" default /]
-[stream language="RO" videoId="393861306"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Real-Life Example: Clock
 [image assetsSrc="06-nested-loops-clock-1159.png" /] 
 

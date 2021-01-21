@@ -1,16 +1,4 @@
-# Nested Loops
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1315" endTimeInSeconds="2900"]
-[stream language="EN" videoId="345011935" default /]
-[stream language="RO" videoId="393861306"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Nested Loops
 A **nested loop** is a construction where **in the body of one loop** (outer one) **stays another loop** (inner one). 
 
@@ -38,7 +26,7 @@ This happens the following way:
 * This is repeated until the variable of the outer loop meets the condition to **end the loop**
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Nested Loops – Examples
 
 Here is an **example** that illustrates nested loops. 

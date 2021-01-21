@@ -1,9 +1,9 @@
+# Lesson Introduction
 [slide]
 
+# Lesson Content
 
-# Lesson Introduction
-
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. More complex For-loops with a Special Step**
 

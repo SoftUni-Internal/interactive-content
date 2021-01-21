@@ -1,13 +1,13 @@
 [slide hideTitle]
-# Nested for Loops
-Statements that consist of several **for loops** located **inside each other**
+# Bucle Imbricate de Tip For
+Instrucțiuni care consta în câteva **bucle for** localizate **una în interiorul celeilalte**
 
-**Nested for loops** are used:
+**Buclele imbricate de tip for** sunt utilizate pentru:
 
-* To execute an **action**, which **executes** multiple **actions**
-* To make more **complex** calculations and variations
+* a executa o **acțiune**, care **execută** multiple **acțiuni**
+* a face calcule și variații mai **complexe** 
 
-The syntax for a **nested for loop in Java** is as follows:
+Sintaxa unei **bucle imbricate for în Java** este după cum urmează:
 ```java
 for (variable initialization; condition; increment) {
   // Outer Loop 
@@ -18,7 +18,7 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-These are 3 `for` loops nested in one another:
+Acestea sunt 3 bucle `for` imbricate una în cealaltă:
 ```java live
 int n = 5;
 for (int i = 1; i <= n; i += 3) {
@@ -29,8 +29,8 @@ for (int i = 1; i <= n; i += 3) {
     }
 }
 ```
-# Example
-Here is an example Java program:
+# Exemplu
+Aici se află un exemplu de program în Java:
 ```java live
 int a = 3;
 int b = 3;
@@ -47,7 +47,7 @@ for (int i = 0; i < a; i++) {
 
 
 [slide hideTitle]
-# Problem: Triangle of Stars
+# Problemă: Triangle of Stars
 [code-task title="Triangle of Stars" taskId="java-basics-nested-loops-triangle-of-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -61,14 +61,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
+* Citește **înălțimea** unui triunghi din consolă
+* Imprimă un **triunghi format din stele**
+# Exemplu
 
-| **Input** |**Output**|
+| **Date de intrare** |**Date de ieșire**|
 | ----- | ----- |
 | 5 | \* |
     | \*\* |
@@ -76,14 +76,6 @@ Write a program, which:
     | \*\*\*\* |
     | \*\*\*\*\* |
 
-## Input
-- 5
-## Output
-- \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
@@ -104,10 +96,9 @@ Write a program, which:
 [/slide]
 
 [slide hideTitle]
-# Solution: Triangle of Stars
+# Soluție: Triangle of Stars
 [code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-
 ```
 import java.util.Scanner;
 
@@ -119,15 +110,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
-## Input
+* Citește **înălțimea** unui triunghi din consolă
+* Imprimă un **triunghi format din stele**
+# Exemplu
+## Date de intrare
 - 5
-## Output
+## Date de ieșire
 - \*
 - \*\*
 - \*\*\*
