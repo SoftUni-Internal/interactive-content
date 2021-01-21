@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Template-Driven Forms
 

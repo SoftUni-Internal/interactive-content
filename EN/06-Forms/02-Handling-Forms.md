@@ -1,6 +1,6 @@
 # Handling Forms
 
-[slide]
+[slide hideTitle]
 
 # Forms Overview
 

@@ -1,6 +1,6 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
 # Table of contents
 

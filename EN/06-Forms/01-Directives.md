@@ -1,6 +1,6 @@
 # Directives
 
-[slide]
+[slide hideTitle]
 
 # Directives Overview
 
