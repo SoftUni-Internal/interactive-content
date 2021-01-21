@@ -11,7 +11,7 @@
 
 **2. Operatorii logici**
 
-- Cum folosim operatorii logici în  Java - **&&, ||, !**
+- Cum folosim operatorii logici în  Java - `&&`, `||`, `!`
 
 **3. Switch-case**
 
