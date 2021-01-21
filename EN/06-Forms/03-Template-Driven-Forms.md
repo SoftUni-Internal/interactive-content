@@ -272,7 +272,7 @@ input.ng-invalid.ng-touched {
 
 Add **HTML 5 attributes** to input fields for validation.
 
-Angular tracks most attributes and changes the state depending on what the user input.
+Angular tracks most attributes and changes the state depending on the user input.
 
 ```js
 <input type="text" class="form-control"
