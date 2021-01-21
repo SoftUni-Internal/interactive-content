@@ -36,7 +36,7 @@ Printing on the console depends on the results:
 
 The result must be **formatted** to the second digit after the decimal point
 
-[code-task title="Mountain Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Mountain Run" taskId="js-pb-final-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

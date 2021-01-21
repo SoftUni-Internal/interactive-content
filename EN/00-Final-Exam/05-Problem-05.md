@@ -25,7 +25,7 @@ One line is printed on the console:
 - If the amount of food is **not enough** to print: `Food is not enough. You need {need the amount of food grams more.`
 
 
-[code-task title="Care of Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Care of Puppy" taskId="js-pb-final-exam-Care-of-Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

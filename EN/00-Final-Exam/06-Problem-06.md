@@ -41,7 +41,7 @@ Finally, one line is printed:
 The money should be **formatted to the second digit after the decimal point.**
 
 
-[code-task title="Tournament of Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Tournament of Christmas" taskId="js-pb-final-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
