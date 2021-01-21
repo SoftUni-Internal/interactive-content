@@ -1,6 +1,6 @@
 # Real-Life Example
 
-[slide]
+[slide hideTitle]
 # Real-Life Example: Moving Dishes
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
 
