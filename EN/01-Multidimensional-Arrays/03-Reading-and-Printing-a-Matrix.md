@@ -1,9 +1,11 @@
-
-[slide]
-
 # Reading and Printing a Matrix
 
+[slide hideTitle]
+
+# Reading a Matrix
+
 - Reading a Matrix
+
 ```java
 // Enter rows and cols 
 int rows = Integer.parseInt(scanner.nextLine());
@@ -25,8 +27,13 @@ for (int row = 0; row < rows; row++) {
     }
 }
 ```
+[/slide]
+
+[slide hideTitle]
+# Printing a Matrix
 
 - Printing a Matrix
+
 ```java live
 int[][] matrix = {{1, 2, 3, 4},
                   {5, 6, 7, 8}};

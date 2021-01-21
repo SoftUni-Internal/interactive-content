@@ -1,10 +1,8 @@
-
-
-[slide]
-
 # Types of Sets
 
-**HashSet**
+[slide hideTitle]
+
+# HashSet
 
 The **HashSet** class implements the **Set** interface, backed by a **Hash Table**.
 
@@ -13,21 +11,42 @@ It makes **no guarantees** about **the sequence of the elements** when you itera
 The **HashSet** class offers **constant** time performance for the basic operations - `add()`, `remove()`, `contains()` and `size()`.
 
 - Initialization:
+
 ```java
 Set<String> hash = new HashSet<String>();
 ```
-- Adding Elements 
+
+- Adding Element
+
 ```java live
-Set<Integer> hash = new HashSet<>();
+Set<String> hash = new HashSet<>();
 
-List<Integer> data = Arrays.asList(40,20,30,10,50,10,10,10);
-
-hash.addAll(data);
+hash.add("Peter");
+hash.add("Alice");
+hash.add("George");
 
 System.out.println(hash);
 ```
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-1.gif" /]
 
-**TreeSet**
+- Removing Element
+
+```java live
+Set<String> hash = new HashSet<>();
+
+hash.add("Peter");
+hash.add("Alice");
+hash.add("George");
+
+hash.remove("Alice");
+
+System.out.println(hash);
+```
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-2.gif" /]
+[/slide]
+
+[slide hideTitle]
+# TreeSet
 
 The elements are ordered using their **natural ordering**.
 
@@ -40,18 +59,23 @@ The TreeSet provides guaranteed **log(n)** time cost for the basic operations - 
 Set<String> tree = new TreeSet<>();
 ```
 
-- Adding Elements 
+- Adding Element
+
 ```java live
-Set<Integer> tree = new TreeSet<>();
+Set<String> tree = new TreeSet<>();
 
-List<Integer> data = Arrays.asList(40,20,30,10,50,10,10,10);
-
-tree.addAll(data);
+tree.add("Peter");
+tree.add("Alice");
+tree.add("George");
 
 System.out.println(tree);
 ```
 
-**LinkedHashSet**
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-3.gif" /]
+[/slide]
+
+[slide hideTitle]
+# LinkedHashSet
 
 A **LinkedHashSet** is an **ordered version of HashSet** that maintains a doubly-linked List across all elements.
 
@@ -66,18 +90,20 @@ Set<String> linkedHashSet = new LinkedHashSet<>();
 
 - Adding Elements 
 ```java live
-Set<Integer> linkedHashSet = new LinkedHashSet<>();
+Set<String> linkedHashSet = new LinkedHashSet<>();
 
-List<Integer> data = Arrays.asList(40,20,30,10,50,10,10,10);
-
-linkedHashSet.addAll(data);
+linkedHashSet.add("George");
+linkedHashSet.add("Peter");
+linkedHashSet.add("Alice");
 
 System.out.println(linkedHashSet);
 ```
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-4.gif" /]
+
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # How to iterate over the Set
 
 - Using `Iterator<E>` 
@@ -85,6 +111,7 @@ System.out.println(linkedHashSet);
 Iterators are used in Collection framework in Java to retrieve elements **one by one**.
 
 You can see how to use it for iterating over the set in the following example:
+
 ```java live
 Set<Integer> hash = new HashSet<>(Arrays.asList(40,20,30,10,50));
 

@@ -1,6 +1,6 @@
 # Arrays in Java
 
-[slide]
+[slide hideTitle]
 
 # What is Array?
 
@@ -12,14 +12,14 @@ Each **item** in an array is called an **element**, and **each element is access
 
 The following illustration explains an **integer array with 5 elements**:
 
-[image assetsSrc="matrices-example(1).png" /]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-2.png" /]
 
 As shown in the illustration above, **the numbering of elements starts with 0**, therefore the **first element** can be accessed at **index 0** and the **last at index 4**.
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Working with Arrays
 

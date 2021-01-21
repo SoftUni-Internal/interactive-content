@@ -15,7 +15,8 @@ It is important to note that the elements of a priority queue **may not be sorte
 
 However, elements are **always retrieved in sorted order**.
 
-Let's see the following example:
+Let us see the following example:
+
 ```java live
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
         
@@ -31,7 +32,9 @@ PriorityQueue<Integer> numbers = new PriorityQueue<>();
         System.out.println(numbers.poll());
     }
 ```
+
 As you can see, we retrieve numbers through ascending orders, despite their order of insertion.
 
+[image assetsSrc="Java-Advanced-Stack-and-Queues-12.png" /]
 
 [/slide]

@@ -1,6 +1,6 @@
-# What is Multidimensional Array?
+# Multidimensional Array
 
-[slide]
+[slide hideTitle]
 
 # What is Multidimensional Array?
 
@@ -16,7 +16,7 @@ If you have 6 rows and 5 columns then your spreadsheet can hold 30 numbers.
 
 It might look like this:
 
-[image assetsSrc="matrices-example(2).png" /]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-1.png" /]
 
 
 
@@ -24,11 +24,7 @@ It might look like this:
 
 [slide hideTitle]
 
-# Creating and Initializing Multidimensional Arrays
-
-
-
-### Creating Multidimensional Arrays
+# Declaring and Creating Multidimensional Arrays
 
 Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as `2D` and `3D` array, anything above is rare.
 
@@ -39,9 +35,11 @@ int[][] intMatrix = new int[3][];
 
 String[][][] stringCube = new String[5][5][5];
 ```
+[/slide]
 
+[slide hideTitle]
 
-### Initializing Multidimensional Arrays
+# Initializing Multidimensional Arrays
 
 - Creating and **Initializing** two-dimensional array with shortcut syntax
 ```java
@@ -50,7 +48,9 @@ int[][] matrix = {
   {5, 6, 7, 8}  // row 1 values
 };
 ```
+
 - **Initializing** two-dimensional array with `for-loop`
+
 ```java
 int[][] matrix = new int[2][4];
 
@@ -66,9 +66,9 @@ for (int i = 0; i < 2; i++) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Manipulating a Matrix
+# Accessing Elements
 
 - Accessing Elements of `2D Array`
 
@@ -93,7 +93,6 @@ int element = matrix[1][2];
 System.out.println(element);
 
 ```
-
 
 - Setting Element Value:
 

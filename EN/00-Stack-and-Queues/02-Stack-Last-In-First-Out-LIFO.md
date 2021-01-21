@@ -1,6 +1,6 @@
-# Stack - Last In First Out - LIFO
+# Stack: Last In First Out (LIFO)
 
-[slide]
+[slide hideTitle]
 # Stack Functionality
 
 A Stack is a data structure where you add elements to the **top** of the stack, and also remove elements from the **top** again.
@@ -11,19 +11,21 @@ This is also referred to as the "Last In First Out" - **LIFO** principle.
     - Popping element from the top of the stack
     - Getting(**Peek**) the topmost element without removing it
 
-[image assetsSrc="stacksAndQueues-example(1).png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
 [/slide]
 
-[slide]
-# Stack Implementation and Built-In Methods
-
+[slide hideTitle]
+# Java Stack Implementation and Built-In Methods
+ 
 - Stack Implementation using `ArrayDeque<E>`
+
 ```java
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 ```
 
-- `push(element)` - adding elements at the top of the stack
+- `push(element)`: adding elements at the top of the stack
+
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -33,7 +35,8 @@ stack.push(10);
 stack.forEach(System.out::println);
 ```
 
-- `pop()` - removing the topmost element
+- `pop()`: removing the topmost element
+
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -46,7 +49,8 @@ stack.pop();
 stack.forEach(System.out::println);
 ```
 
-- `peek()` - getting the value of the topmost element
+- `peek()`: getting the value of the topmost element
+
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 stack.push(2);
@@ -58,19 +62,54 @@ Integer element = stack.peek();
 
 System.out.println(element);
 ```
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-10.png" /]
+
+[/slide]
+
+
+
+[slide hideTitle]
 # Utility Methods
 
-- `size()` - returns the number of elements in deque
+- `size()`: returns the number of elements in deque
 
-- `isEmpty()` - checks whether the deque is empty or not
+```java live
+ArrayDeque<String> stackOfCars = new ArrayDeque<>();
+stackOfCars.push("Tesla Model S");
+stackOfCars.push("Nio ES8");
+stackOfCars.push("Lucid Air");
 
-- `contains()` - checks whether a deque contains the element or not
+System.out.println("The size is: " + stackOfCars.size());
+```
+
+- `isEmpty()`: checks whether the deque is empty or not
+
+```java live
+ArrayDeque<String> stackOfCars = new ArrayDeque<>();
+stackOfCars.push("Tesla Model S");
+stackOfCars.push("Nio ES8");
+stackOfCars.push("Lucid Air");
+
+System.out.println("Is the Stack empty? " + stackOfCars.isEmpty());
+```
+
+- `contains()`: checks whether a deque contains the element or not
+
+```java live
+ArrayDeque<String> stackOfCars = new ArrayDeque<>();
+stackOfCars.push("Tesla Model S");
+stackOfCars.push("Nio ES8");
+stackOfCars.push("Lucid Air");
+
+System.out.println(stackOfCars.contains("BMW M3"));
+```
 
 [/slide]
 
 [slide hideTitle]
 # Problem: Browser History
-[code-task title="Browser History" taskId="f1c2adae-8f12-4f70-94b4-2df7b1453714" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Browser History" taskId="java-advanced-lab-stack-and-queue-Browser-History" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -85,26 +124,30 @@ public class Main {
 [task-description]
 ## Description
 Write a program which takes 2 types of browser instructions:
+
 - Normal navigation: a URL is set, given by a string
-- The string "**back**" that sets the current URL to the last set URL
+
+- The string `back` that sets the current URL to the last set URL
 
 After each instruction the program should **print the current URL**. 
-If the **back** instruction can’t be executed, print "**no previous URLs**".
-The input **ends** with "**Home**" command, then simply you have to **stop the program**.
+
+If the **back** instruction can not be executed, print `no previous URLs`.
+
+The input **ends** with `Home` command, then simply you have to **stop the program**.
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| https//softuni.org/ | https//softuni.org/ |
-| back | no previous URLs |
-| https//softuni.org/trainings/courses | https//softuni.org/trainings/courses |
-| back | https//softuni.org/ |
-| https//softuni.org/trainings/2056 | https//softuni.org/trainings/2056 |
-| back | https//softuni.org/ |
-| https//softuni.org/trainings/live | https//softuni.org/trainings/live |
-| https//softuni.org/trainings/live/details | https//softuni.org/trainings/live/details |
-| Home |  |
+| `https//softuni.org/` | `https//softuni.org/` |
+| `back` | `no previous URLs` |
+| `https//softuni.org/trainings/courses` | `https//softuni.org/trainings/courses`|
+| `back` | `https//softuni.org/` |
+| `https//softuni.org/trainings/2056` | `https//softuni.org/trainings/2056` |
+| `back` | `https//softuni.org/` |
+| `https//softuni.org/trainings/live` | `https//softuni.org/trainings/live` |
+| `https//softuni.org/trainings/live/details` | `https//softuni.org/trainings/live/details` |
+| `Home` |  |
 
 ## Hints
 - Use `ArrayDeque<>`
@@ -263,7 +306,7 @@ Go
 
 [slide hideTitle]
 # Solution: Browser History
-[code-task title="Browser History"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Browser History" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -300,26 +343,30 @@ public class Main {
 [task-description]
 ## Description
 Write a program which takes 2 types of browser instructions:
+
 - Normal navigation: a URL is set, given by a string
-- The string "**back**" that sets the current URL to the last set URL
+
+- The string `back` that sets the current URL to the last set URL
 
 After each instruction the program should **print the current URL**. 
-If the **back** instruction can’t be executed, print "**no previous URLs**".
-The input **ends** with "**Home**" command, then simply you have to **stop the program**.
+
+If the **back** instruction can not be executed, print `no previous URLs`.
+
+The input **ends** with `Home` command, then simply you have to **stop the program**.
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| https//softuni.org/ | https//softuni.org/ |
-| back | no previous URLs |
-| https//softuni.org/trainings/courses | https//softuni.org/trainings/courses |
-| back | https//softuni.org/ |
-| https//softuni.org/trainings/2056 | https//softuni.org/trainings/2056 |
-| back | https//softuni.org/ |
-| https//softuni.org/trainings/live | https//softuni.org/trainings/live |
-| https//softuni.org/trainings/live/details | https//softuni.org/trainings/live/details |
-| Home |  |
+| `https//softuni.org/` | `https//softuni.org/` |
+| `back` | `no previous URLs` |
+| `https//softuni.org/trainings/courses` | `https//softuni.org/trainings/courses`|
+| `back` | `https//softuni.org/` |
+| `https//softuni.org/trainings/2056` | `https//softuni.org/trainings/2056` |
+| `back` | `https//softuni.org/` |
+| `https//softuni.org/trainings/live` | `https//softuni.org/trainings/live` |
+| `https//softuni.org/trainings/live/details` | `https//softuni.org/trainings/live/details` |
+| `Home` |  |
 
 ## Hints
 - Use `ArrayDeque<>`
@@ -477,7 +524,7 @@ Go
 
 [slide hideTitle]
 # Problem: Simple Calculator 
-[code-task title="Simple Calculator " taskId="3c41a4c0-ac7a-4de0-aeb7-7188ce402388" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Simple Calculator" taskId="java-advanced-lab-stack-and-queue-Simple-Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -579,7 +626,7 @@ Solve the problem **using a Stack**.
 
 [slide hideTitle]
 # Solution: Simple Calculator 
-[code-task title="Simple Calculator " executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -702,7 +749,7 @@ Solve the problem **using a Stack**.
 
 [slide hideTitle]
 # Problem: Decimal to Binary Converter
-[code-task title="Simple Calculator " taskId="1f9e646a-8a8f-4f6a-9710-0b1743bd5ef5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Decimal to Binary Converter" taskId="java-advanced-lab-stack-and-queue-Decimal-to-Binary-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*; 
@@ -733,12 +780,14 @@ Implement an elegant solution **using a Stack**.
 ## Hints
 - If the given number is 0, just print 0
 - Else, while the number is greater than zero, divide it by 2 and push the reminder into the stack
+
 ```java
 while (decimal != 0) {
     stack.push(decimal % 2);
     decimal /= 2;
 }
 ```
+
 - When you are done dividing, pop all reminders from the stack, that is the binary representation
 
 
@@ -807,7 +856,7 @@ while (decimal != 0) {
 
 [slide hideTitle]
 # Solution: Decimal to Binary Converter
-[code-task title="Simple Calculator " executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Decimal to Binary Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*; 
@@ -855,12 +904,14 @@ Implement an elegant solution **using a Stack**.
 ## Hints
 - If the given number is 0, just print 0
 - Else, while the number is greater than zero, divide it by 2 and push the reminder into the stack
+
 ```java
 while (decimal != 0) {
     stack.push(decimal % 2);
     decimal /= 2;
 }
 ```
+
 - When you are done dividing, pop all reminders from the stack, that is the binary representation
 
 
@@ -929,7 +980,7 @@ while (decimal != 0) {
 
 [slide hideTitle]
 # Problem: Matching Brackets
-[code-task title="Matching Brackets" taskId="69a9ca82-bf00-49c7-a284-2d296ed138ce" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Matching Brackets" taskId="java-advanced-lab-stack-and-queue-Matching-Brackets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -950,15 +1001,15 @@ Scan through the string and **extract** each **sub-expression**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5 | (2 + 3) |
-|  | (3 + 1) |
-|  | (2 - (2 + 3) * 4 / (3 + 1)) |
+| `1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5` | `(2 + 3)` |
+|  | `(3 + 1)` |
+|  | `(2 - (2 + 3) * 4 / (3 + 1))` |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| (2 + 3) - (2 + 3) | (2 + 3) |
-|  | (2 + 3) |
+| `(2 + 3) - (2 + 3)` | `(2 + 3)` |
+|  | `(2 + 3)` |
 
  ## Hints 
  - Use a stack, namely an `ArrayDeque()`
@@ -1080,15 +1131,15 @@ Scan through the string and **extract** each **sub-expression**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5 | (2 + 3) |
-|  | (3 + 1) |
-|  | (2 - (2 + 3) * 4 / (3 + 1)) |
+| `1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5` | `(2 + 3)` |
+|  | `(3 + 1)` |
+|  | `(2 - (2 + 3) * 4 / (3 + 1))` |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| (2 + 3) - (2 + 3) | (2 + 3) |
-|  | (2 + 3) |
+| `(2 + 3) - (2 + 3)` | `(2 + 3)` |
+|  | `(2 + 3)` |
 
 ## Hints 
 - Use a stack, namely an `ArrayDeque()` 

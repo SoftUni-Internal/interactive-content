@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Fill the Matrix
-[code-task title="Problem: Fill the Matrix" taskId="b4e6942a-bdb5-4a0a-bb66-1b843fd70dd4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Fill the Matrix" taskId="java-advanced-multidimensional-arrays-Fill-the-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -178,7 +178,7 @@ Write two **methods** that **fill** a **matrix** of size  **N x N** in **two** d
 
 [slide hideTitle]
 # Problem: Matrix of Palindromes
-[code-task title="Problem: Matrix of Palindromes" taskId="74a5c710-6bb2-4a63-928a-c97f4022a2b7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Matrix of Palindromes" taskId="java-advanced-multidimensional-arrays-Matrix-of-Palindromes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -192,18 +192,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to generate the following **matrix of palindromes**. There must be a palindrome of **3 letters** on each position. Each palindrome has **the same first and last** letter. The **middle letter** of the palindrome changes **in every column**. **Rows** define **the first and the last** letter. **Columns** define **the middle** letter.
+Write a program to generate the following **matrix of palindromes**. 
+
+There must be a palindrome of **3 letters** on each position. 
+
+Each palindrome has **the same first and last** letter. The **middle letter** of the palindrome changes **in every column**. 
+
+**Rows** define **the first and the last** letter. 
+
+**Columns** define **the middle** letter.
 
 For example:
-- On `row 0` the palindromes start and end with **"a"**,  on `row 1` -> **"b"**, on `row 2` -> **"c"** ...
-- On `row 0 column 0` the middle letter is **"a"**, on `row 0 column 1` -> **"b"**, on `row 0 column 2` -> **"c"** ...
-- On `row 1 column 0` the middle letter is **"b"**, on `row 1 column 1` -> **"c"**, on `row 1 column 2` -> **"d"** ... 
+- On `row 0` the palindromes start and end with `a`,  on `row 1` - `b`, on `row 2` - `c` ...
+- On `row 0 column 0` the middle letter is `a`, on `row 0 column 1` - `b`, on `row 0 column 2` - `c` ...
+- On `row 1 column 0` the middle letter is `b`, on `row 1 column 1` - `c`, on `row 1 column 2` - `d` ... 
 
 ## Input
 
 - The numbers **r** and **c** stay at the first line at the input.
-- **r** and **c** are integers in the range [1 ... 26].
-- **r** + **c** <= 27
+- **r** and **c** are integers in the range `[1 ... 26]`.
+- `r + c <= 27`
 
 ## Examples
 | **Input** | **Output** |
@@ -343,7 +351,7 @@ nnn non npn nqn nrn nsn ntn nun nvn nwn nxn nyn nzn
 
 [slide hideTitle]
 # Problem: Diagonal Difference
-[code-task title="Problem: Diagonal Difference" taskId="bb9083d2-94d1-4e24-997e-dfa9b838847e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Diagonal Difference" taskId="java-advanced-multidimensional-arrays-Diagonal-Difference" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -359,27 +367,27 @@ public class Main {
 ## Description
 Write a program that finds the **difference between the sums of the square matrix diagonals** (absolute value).
 
-[image assetsSrc="diagonal-difference.png"/]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png"/]
 
 ## Input
 
-- The **first line** holds a number **n** – the size of the matrix.
-- The next **n**  **lines** hold the **values for every row** – **n** numbers separated by a space.
+- The **first line** holds a number **n** - the size of the matrix.
+- The next **n**  **lines** hold the **values for every row** - **n** numbers separated by a space.
 
 ## Hints
 
 - Use a **single** loop i = [1 ... n] to sum the diagonals.
 
-- The **primary diagonal** holds all cells { **row** , **col** } where **row** == **col** == **i**.
-- The **secondary diagonal** holds all cells { **row** , **col** } where **row** == **i** and **col** == **n - 1 - i**.
+- The **primary diagonal** holds all cells `{row,col}` where `row == col == i`.
+- The **secondary diagonal** holds all cells `{row,col}` where `row == i` and `col == n - 1 - i`.
 
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
-| 3 | 15 | **Primary diagonal:** sum = 11 + 5 + (-12) = 4  |
-| 11 2 4 |  | **Secondary diagonal:** sum = 4 + 5 + 10 = 19  |
-| 4 5 6 |  | **Difference:** 4 - 19 = 15  |
+| :---: | :---: | :---: |
+| 3 | 15 | **Primary diagonal:** `sum = 11 + 5 + (-12) = 4`  |
+| 11 2 4 |  | **Secondary diagonal:** `sum = 4 + 5 + 10 = 19`  |
+| 4 5 6 |  | **Difference:** `4 - 19 = 15`  |
 | 10 8 -12 |  |  |
 
 [/task-description]
@@ -499,7 +507,7 @@ Write a program that finds the **difference between the sums of the square matri
 
 [slide hideTitle]
 # Problem: Maximal Sum
-[code-task title="Problem: Maximal Sum" taskId="39222da7-dc7c-44ed-ba09-9458d9454bca" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Maximal Sum" taskId="java-advanced-multidimensional-arrays-Maximal-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -533,7 +541,7 @@ Print the **elements** of the 3 x 3 square as a matrix, along with their **sum**
 
 ## Comments
 
-[image assetsSrc="maximal-sum.png"/]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-4.png"/]
 
 [/task-description]
 [code-io /]
@@ -716,7 +724,7 @@ Sum = 132
 
 [slide hideTitle]
 # Problem: Matrix Shuffling
-[code-task title="Problem: Matrix Shuffling" taskId="52ef2b01-c6e8-42ca-bb12-7fa69625f36a" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Matrix Shuffling" taskId="java-advanced-multidimensional-arrays-Matrix-Shuffling" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -732,15 +740,15 @@ public class Main {
 ## Description
 Write a program that reads a string matrix from the console and performs certain operations with its elements.
 
-User input is provided in a similar way as in the problems above – first you read the **dimensions** and then the **data**.
+User input is provided in a similar way as in the problems above - first you read the **dimensions** and then the **data**.
 
-Your program should then receive commands in format: **"swap row1 col1 row2c col2"** where row1, row2, col1, col2 are **coordinates** in the matrix. 
+Your program should then receive commands in format: `swap row1 col1 row2c col2` where row1, row2, col1, col2 are **coordinates** in the matrix. 
 
 For a command to be valid, it should start with the **"swap"** keyword along with **four valid coordinates** (no more, no less). 
 
-You should **swap the values** at the given coordinates (cell [row1, col1] with cell [row2, col2]) **and print the matrix at each step** (thus you will be able to check if the operation was performed correctly).
+You should **swap the values** at the given coordinates `cell [row1, col1] with cell [row2, col2]` **and print the matrix at each step** (thus you will be able to check if the operation was performed correctly).
 
-If the **command is not valid** (does not contain the keyword "swap", has fewer or more coordinates entered or the given coordinates do not exist), print **"Invalid input!"** and move on to the next command. Your program should finish when the string **"END"** is entered.
+If the **command is not valid** (does not contain the keyword `swap`, has fewer or more coordinates entered or the given coordinates do not exist), print `Invalid input!` and move on to the next command. Your program should finish when the string `END` is entered.
 
 ## Hints
 
@@ -1069,7 +1077,7 @@ Invalid input!
 
 [slide hideTitle]
 # Problem: String Matrix Rotation
-[code-task title="Problem: String Matrix Rotation" taskId="b2188470-e920-4c37-a906-b36702dd7f89" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: String Matrix Rotation" taskId="java-advanced-multidimensional-arrays-String-Matrix-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1089,21 +1097,23 @@ Assume these text lines form a **matrix of characters** (pad the missing positio
 
 Write a program to **rotate the matrix** by 90, 180, 270, 360, … degrees.
 
-Print the result at the console as a sequence of strings after receiving the **"END"** command.
+Print the result at the console as a sequence of strings after receiving the `END` command.
 
 ## Example
 
-[image assetsSrc="string-matrix-rotation.png"/]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-5.png"/]
 
 ## Input
 
 The input is read from the console:
 
-- The first line holds the command in format **"Rotate(X)"** where **X** are the degrees of the requested rotation.
+- The first line holds the command in format `Rotate(X)` where **X** are the degrees of the requested rotation.
 - The next lines contain the **lines of the matrix** for rotation.
-- The input ends with the command **"END"**.
+- The input ends with the command `END`.
 
-The input data will always be valid and in the format described. There is no need to check it explicitly.
+The input data will always be valid and in the format described. 
+
+There is no need to check it explicitly.
 
 ## Output
 
@@ -1111,9 +1121,9 @@ Print at the console the **rotated matrix** as a sequence of text lines.
 
 ## Constraints
 
-- The rotation **degrees** is positive integer in the range [0 ... 90000], where **degrees** is **multiple of 90**.
-- The number of matrix lines is in the range [1 ... 1 000].
-- The matrix lines are **strings** of length [1 ... 1 000].
+- The rotation **degrees** is positive integer in the range `[0 ... 90000]`, where **degrees** is **multiple of 90**.
+- The number of matrix lines is in the range `[1 ... 1 000]`.
+- The matrix lines are **strings** of length `[1 ... 1 000]`.
 
 
 ## Examples
@@ -1274,35 +1284,35 @@ END
 [/input]
 [output]
 fafsgfaaa
-gf afabb 
-fg fsdcc 
+gf afabb
+fg fsdcc
 fg sjjd  
 gf fkke  
 da sgjf  
-fg ffe   
-gf gjr   
-dg fjj   
-ff fgg   
-sa ffh   
-g  gjj   
-f  dgh   
-g   ff   
-d   jg   
-s   gf   
-g   fs   
-f   s    
-s   j    
-s   h    
-f   g    
-d   j    
-    f    
-    h    
-    s    
-    j    
-    h    
-    k    
-    f    
-    s    
+fg ffe
+gf gjr
+dg fjj
+ff fgg
+sa ffh
+g  gjj
+f  dgh
+g   ff
+d   jg
+s   gf
+g   fs
+f   s
+s   j
+s   h
+f   g
+d   j
+    f
+    h
+    s
+    j
+    h
+    k
+    f
+    s
     d
 [/output]
 [/test]
@@ -1520,7 +1530,7 @@ creation of desktop and mobile applications.
 
 [slide hideTitle]
 # Problem: Crossfire
-[code-task title="Problem: Crossfire" taskId="73dfdb49-3a03-4139-91bf-026f30aef2ad" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Crossfire" taskId="java-advanced-multidimensional-arrays-Crossfire" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1538,9 +1548,9 @@ You will receive **two integers** which represent the **dimensions** of a **matr
 
 Then, you must **fill the matrix** with **increasing integers** starting from 1, and continuing on every row, like this:
 
-first row: 1, 2, 3, ..., n
-second row: n + 1, n + 2, n + 3, ..., n + n
-third row: 2 \* n + 1, 2 \* n + 2, ..., 2 \* n + n
+first row: `1, 2, 3, ..., n`
+second row: `n + 1, n + 2, n + 3, ..., n + n`
+third row: `2 * n + 1, 2 * n + 2, ..., 2 * n + n`
 
 You will also receive several commands in the form of **3 integers** separated by a space. 
 
@@ -1550,19 +1560,21 @@ You must then **destroy** the cells which correspond to those arguments **cross-
 
 **Destroying** a cell means that **the current cell** becomes completely **nonexistent** in the matrix.
 
-Destroying cells **cross-like** means that you form a **cross figure** with a center point - equal to the cell with coordinates – the **given row** and **column**, and **lines** with length equal to the **given radius**. 
+Destroying cells **cross-like** means that you form a **cross figure** with a center point - equal to the cell with coordinates - the **given row** and **column**, and **lines** with length equal to the **given radius**. 
 
 See the examples for more info.
 
-The **input ends** when you receive the command **"Nuke it from orbit"**. 
+The **input ends** when you receive the command `Nuke it from orbit`. 
 
 When that happens, you must print what has remained from the initial matrix.
 
 ## Input
 
 - On the first line, you will receive the dimensions of the matrix. You must then fill the matrix according to those dimensions
-- On the next several lines you will begin receiving 3 integers separated by a single **space**, which represents the row, col, and radius. You must then destroy cells according to those coordinates
-- When you receive the command **"Nuke it from orbit"** the input ends
+- On the next several lines you will begin receiving 3 integers separated by a single **space**, which represents the row, col, and radius.
+
+You must then destroy cells according to those coordinates
+- When you receive the command `Nuke it from orbit` the input ends
 
 ## Output
 
@@ -1571,9 +1583,9 @@ When that happens, you must print what has remained from the initial matrix.
 
 ## Constraints
 
-- The dimensions of the matrix will be integers in the range [2, 100]
-- The given rows and columns will be valid integers in the range [-2 ^ 31 + 1, 2 ^ 31 - 1]
-- The radius will be in the range [0, 2 ^ 31 - 1]
+- The dimensions of the matrix will be integers in the range `[2, 100]`
+- The given rows and columns will be valid integers in the range `[-2 ^ 31 + 1, 2 ^ 31 - 1]`
+- The radius will be in the range `[0, 2 ^ 31 - 1]`
 
 
 ## Examples
@@ -1587,7 +1599,7 @@ When that happens, you must print what has remained from the initial matrix.
 
 ### Comments
 
-[image assetsSrc="crossfire.png"/]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-6.png"/]
 
 
 | **Input** | **Output** |
@@ -2036,7 +2048,7 @@ Nuke it from orbit
 
 [slide hideTitle]
 # Problem: Parking System
-[code-task title="Problem: Parking System" taskId="577fbe15-c817-4701-b2be-a889976e6158" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Parking System" taskId="java-advanced-multidimensional-arrays-Parking-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2066,15 +2078,21 @@ A car can **pass** through a used parking spot.
 
 Your task is to calculate the distance traveled by each car to its parking spot.
 
-Example: A car enters the parking at row 1. It wants to go to cell 2, 2 so it moves through **exactly four** cells to reach its parking spot.
+Example: A car enters the parking at row 1. 
 
-[image assetsSrc="parking-system.png"/]
+It wants to go to cell 2, 2 so it moves through **exactly four** cells to reach its parking spot.
+
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png"/]
 
 ## Input
 
 - On the first line of input, you are given the integers **R** and **C**, defining the dimensions of the parking lot
+
 - On the next several lines, you are given the integers **Z, X, Y** where **Z** is the entry row and **X, Y** are the coordinates of the desired parking spot
-- The input stops with the command **"stop"**. All integers are separated by a **single** space
+
+- The input stops with the command `stop`. 
+
+All integers are separated by a **single** space
 
 ## Output
 
@@ -2083,7 +2101,7 @@ Example: A car enters the parking at row 1. It wants to go to cell 2, 2 so it mo
 
 ## Constraints
 
-- 2 <= R,C <= 10000
+- `2 <= R,C <= 10000`
 - Z, X, Y are inside the dimensions of the matrix. Y is never on the first column
 - There are no more than 1000 input lines
 
@@ -2531,7 +2549,7 @@ stop
 
 [slide hideTitle]
 # Problem: Radioactive Mutant Vampire Bunnies
-[code-task title="Problem: Radioactive Mutant Vampire Bunnies" taskId="dde93238-e1ea-4fda-ba5a-a39c4c921bb0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Radioactive Mutant Vampire Bunnies" taskId="java-advanced-multidimensional-arrays-Radioactive-Mutant-Vampire-Bunnies" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2557,17 +2575,17 @@ The last thing that is left is the algorithm that decides if the player will esc
 
 First, you will receive a line holding integers **N** and **M** , which represent the rows and columns in the lair. 
 
-Then you receive **N** strings that can **only** consist of **"."**, **"B"** , **"P"**. 
+Then you receive **N** strings that can **only** consist of `.`, `B` , `P`. 
 
-The **bunnies** are marked with **"B"**, the **player** is marked with **"P"**, and **everything** else is free space, marked with a dot **"."**. 
+The **bunnies** are marked with `B`, the **player** is marked with `P`, and **everything** else is free space, marked with a dot `.`. 
 
 They represent the initial state of the lair. 
 
 There will be **only** one player. 
 
-Then you will receive a string with **commands** such as **LLRRUUDD** – where each letter represents the next **move** of the player (Left, Right, Up, Down).
+Then you will receive a string with **commands** such as `LLRRUUDD*` - where each letter represents the next **move** of the player (Left, Right, Up, Down).
 
-**After** each step of the player, each of the bunnies spread to the up, down, left, and right (neighboring cells marked as "." **changes** their value to B). 
+**After** each step of the player, each of the bunnies spread to the up, down, left, and right (neighboring cells marked as `.` **changes** their value to `B`). 
 
 If the player **moves** to a bunny cell or a bunny **reaches** the player, the player has died. 
 
@@ -2587,19 +2605,25 @@ Row and col are the coordinates of the cell where the player has died or the las
 
 ## Input
 
-- On the first line of input, the numbers **N** and **M** are received – the number of **rows** and **columns** in the lair
-- On the next N lines, each row is received in the form of a string. The string will contain only ".", "B", "P". All strings will be the same length. There will be only one "P" for all the input
-- On the last line, the directions are received in the form of a string, containing "R", "L", "U", "D"
+- On the first line of input, the numbers **N** and **M** are received - the number of **rows** and **columns** in the lair
+
+- On the next N lines, each row is received in the form of a string. The string will contain only `.`, `B` , `P`. 
+
+All strings will be the same length. 
+
+There will be only one `P` for all the input
+
+- On the last line, the directions are received in the form of a string, containing `R`, `L`, `U`, `D`
 
 ## Output
 
 - On the first N lines, print the final state of the bunny lair
-- On the last line, print the outcome – "won:" or "dead:" + `{row} {col}`
+- On the last line, print the outcome – `won:` or `dead:` + `{row} {col}`
 
 ## Constraints
 
-- The dimensions of the lair are in the range [3 ... 20]
-- The directions string length is in the range [1 ... 20]
+- The dimensions of the lair are in the range `[3 ... 20]`
+- The directions string length is in the range `[1 ... 20]`
 
 ## Examples
 | **Input** | **Output** |
@@ -2895,7 +2919,7 @@ dead: 2 7
 
 [slide hideTitle]
 # Problem: Reverse Matrix Diagonals
-[code-task title="Problem: Reverse Matrix Diagonals" taskId="5eb5b2f3-007d-45b0-b5a9-6140deb66781" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Reverse Matrix Diagonals" taskId="java-advanced-multidimensional-arrays-Reverse-Matrix-Diagonals" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2929,7 +2953,7 @@ The output should consist of R lines, each consisting of exactly C characters, s
 
 ## Constraints
 
-All the integers will be in the range [1 ... 1000]
+All the integers will be in the range `[1 ... 1000]`
 
 ## Examples
 | **Input** | **Output** |
@@ -3272,7 +3296,7 @@ All the integers will be in the range [1 ... 1000]
 
 [slide hideTitle]
 # Problem: The Matrix
-[code-task title="Problem: The Matrix" taskId="250961da-1f32-4b0b-a551-bb5137d0e282" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: The Matrix" taskId="java-advanced-multidimensional-arrays-The-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -3286,14 +3310,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a matrix (2D array) of lowercase alphanumeric characters ( **a-z** , **0-9** ), a starting position – defined by a start row `startRow` and a start column `startCol` – and a filling symbol `fillChar`.
+You are given a matrix (2D array) of lowercase alphanumeric characters ( `a-z` , `0-9` ), a starting position – defined by a start row `startRow` and a start column `startCol` - and a filling symbol `fillChar`.
 
 Let's call the symbol originally at `startRow` and `startCol` the `startChar`.
 
 Write a program, which, starting from the symbol at `startRow` and `startCol`, changes to `fillChar` every symbol in the matrix which:
 
-- is equal to **startChar**
-- can be reached from **startChar** by going up ( **row – 1** ), down ( **row + 1** ), left ( **col – 1** ) and right ( **col + 1** ) and "stepping" ONLY on symbols equal **startChar**
+- is equal to `startChar`
+- can be reached from `startChar` by going up ( `row – 1` ), down ( `row + 1` ), left ( `col – 1` ) and right ( `col + 1` ) and `stepping` ONLY on symbols equal `startChar`
 
 Start from `startRow` and `startCol` and move either by changing the **row** or **column** (not both at once, i.e. you can not go diagonally) by **1**, and can only go to positions which have the `startChar` written on them. 
 
@@ -3305,9 +3329,9 @@ On the first line, two integers will be entered – the number **R** of rows and
 
 On each of the next **R** lines, **C** characters separated by single spaces will be entered – the symbols of the **R** row of the matrix, starting from the **0** column and ending at the **C - 1** column.
 
-On the next line, a single character – the `fillChar` – will be entered.
+On the next line, a single character - the `fillChar` - will be entered.
 
-On the last line, two integers – `startRow` and `startCol` – separated by a single space, will be entered.
+On the last line, two integers - `startRow` and `startCol` - separated by a single space, will be entered.
 
 ## Output
 
@@ -3315,11 +3339,11 @@ The output should consist of **R** lines, each consisting of exactly **C** chara
 
 ## Constraints
 
-**0 < R, C < 20**
-**0 <= startRow < R**
-**0 <= startCol < C**
+`0 < R, C < 20`
+`0 <= startRow < R`
+`0 <= startCol < C`
 
-All symbols in the input matrix will be lowercase alphanumerics ( **a-z** , **0-9** ). The `fillChar` will also be alphanumeric and lowercase.
+All symbols in the input matrix will be lowercase alphanumerics ( `a-z` , `0-9` ). The `fillChar` will also be alphanumeric and lowercase.
 
 
 ## Hints
@@ -3716,9 +3740,3 @@ ba
 [/code-task]
 [/slide]
 
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

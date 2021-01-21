@@ -1,8 +1,8 @@
-# Problems
+# Lab Problems
 
-[slide]
+[slide hideTitle]
 # Problem: Compare Matrices
-[code-task title="Compare Matrices" taskId="e13fd83f-0adb-47b0-b590-e27920a40259" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Compare Matrices" taskId="java-advanced-lab-multidimensional-arrays-Compare-Matrices" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -20,7 +20,7 @@ Write a program that reads two integer matrices - `2D arrays` from the console a
 
 For better code reusability, you could do the comparison in a method, which returns **true** if they are equal and **false** if not.
 
-Each matrix definition on the console will contain a line with a positive integer number `R` – the number of rows in the matrix and `C` – the number of columns – followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**.
+Each matrix definition on the console will contain a line with a positive integer number `R` - the number of rows in the matrix and `C` - the number of columns - followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**.
 
 The matrices will have at most **10** rows and at most **10** columns.
 
@@ -194,7 +194,7 @@ not equal
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Compare Matrices
 [code-task title="Compare Matrices" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -268,7 +268,7 @@ Write a program that reads two integer matrices - `2D arrays` from the console a
 
 For better code reusability, you could do the comparison in a method, which returns **true** if they are equal and **false** if not.
 
-Each matrix definition on the console will contain a line with a positive integer number `R` – the number of rows in the matrix and `C` – the number of columns – followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**
+Each matrix definition on the console will contain a line with a positive integer number `R` - the number of rows in the matrix and `C` - the number of columns - followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**
 
 The matrices will have at most **10** rows and at most **10** columns.
 
@@ -442,9 +442,9 @@ not equal
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Positions Of
-[code-task title="Positions of" taskId="3b2a4b78-bea2-4aac-b344-c5c029b566aa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Positions of" taskId="java-advanced-lab-multidimensional-arrays-Positions-Of" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -460,12 +460,12 @@ public class Main {
 ## Description
 Write a program that reads a **matrix of integers from the console**, then a number and prints all the positions at which that number appears in the matrix.
 
-The matrix definition on the console will contain a line with two **positive integer numbers** `R` and `C` – the number of rows and columns in the matrix – followed by `R` lines, each containing `C` numbers (**separated by spaces**), representing each row of the matrix.
+The matrix definition on the console will contain a line with two **positive integer numbers** `R` and `C` - the number of rows and columns in the matrix - followed by `R` lines, each containing `C` numbers (**separated by spaces**), representing each row of the matrix.
 
 The number you will need to find the positions of will be entered on a single line, after the matrix.
 
-You should print each position on a single line – first print the row, then the column at which the number appears.
-If the number does not appear in the matrix, print '**not found**'.
+You should print each position on a single line - first print the row, then the column at which the number appears.
+If the number does not appear in the matrix, print `not found`.
 
 
 ## Examples
@@ -615,7 +615,7 @@ not found
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Positions Of
 [code-task title="Positions of" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -672,12 +672,12 @@ public class Main {
 ## Description
 Write a program that reads a **matrix of integers from the console**, then a number and prints all the positions at which that number appears in the matrix.
 
-The matrix definition on the console will contain a line with two **positive integer numbers** `R` and `C` – the number of rows and columns in the matrix – followed by `R` lines, each containing `C` numbers (**separated by spaces**), representing each row of the matrix.
+The matrix definition on the console will contain a line with two **positive integer numbers** `R` and `C` - the number of rows and columns in the matrix - followed by `R` lines, each containing `C` numbers (**separated by spaces**), representing each row of the matrix.
 
 The number you will need to find the positions of will be entered on a single line, after the matrix.
 
-You should print each position on a single line – first print the row, then the column at which the number appears.
-If the number does not appear in the matrix, print '**not found**'.
+You should print each position on a single line - first print the row, then the column at which the number appears.
+If the number does not appear in the matrix, print `not found`.
 
 
 ## Examples
@@ -827,9 +827,9 @@ not found
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum of All Elements of Matrix
-[code-task title="Sum of All Elements of Matrix" taskId="e74d7380-4bc4-4f7b-8f47-9f0c80e3c0ae" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of All Elements of Matrix" taskId="java-advanced-lab-multidimensional-arrays-Sum-of-All-Elements-of-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -964,7 +964,7 @@ On the **next lines**, you will get the elements for each row **separated with a
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Sum of All Elements of Matrix
 [code-task title="Sum of All Elements of Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1134,9 +1134,9 @@ On the **next lines**, you will get the elements for each row **separated with a
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Maximum Sum of 2X2 Submatrix
-[code-task title="Maximum Sum of 2X2 Submatrix" taskId="3db5aaed-42d5-499b-8360-71b881d33e3c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Maximum Sum of 2X2 Submatrix" taskId="java-advanced-lab-multidimensional-arrays-Maximum-Sum-of-2X2-Submatrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1180,8 +1180,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 4, 6, 7, 9, 1, 0
 [/input]
 [output]
-9 8 
-7 9 
+9 8
+7 9
 33
 [/output]
 [/test]
@@ -1192,8 +1192,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 14, 15, 16, 17
 [/input]
 [output]
-12 13 
-16 17 
+12 13
+16 17
 58
 [/output]
 [/test]
@@ -1207,8 +1207,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 16, 17, 18, -19
 [/input]
 [output]
--13 14 
-17 18 
+-13 14
+17 18
 36
 [/output]
 [/test]
@@ -1219,8 +1219,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 4, 5
 [/input]
 [output]
-0 -1 
-4 5 
+0 -1
+4 5
 8
 [/output]
 [/test]
@@ -1233,8 +1233,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 25, 24, 22, 24, 25
 [/input]
 [output]
-20 24 
-24 25 
+20 24
+24 25
 93
 [/output]
 [/test]
@@ -1246,8 +1246,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 0, 0, 0
 [/input]
 [output]
-0 0 
-0 1 
+0 0
+0 1
 1
 [/output]
 [/test]
@@ -1261,8 +1261,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 16, 1700, 18, -19
 [/input]
 [output]
--13 14 
-1700 18 
+-13 14
+1700 18
 1719
 [/output]
 [/test]
@@ -1270,7 +1270,7 @@ On the **next lines**, you will get the elements for each row **separated with a
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Maximum Sum of 2X2 Submatrix
 [code-task title="Maximum Sum of 2X2 Submatrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1360,8 +1360,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 4, 6, 7, 9, 1, 0
 [/input]
 [output]
-9 8 
-7 9 
+9 8
+7 9
 33
 [/output]
 [/test]
@@ -1372,8 +1372,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 14, 15, 16, 17
 [/input]
 [output]
-12 13 
-16 17 
+12 13
+16 17
 58
 [/output]
 [/test]
@@ -1387,8 +1387,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 16, 17, 18, -19
 [/input]
 [output]
--13 14 
-17 18 
+-13 14
+17 18
 36
 [/output]
 [/test]
@@ -1399,8 +1399,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 4, 5
 [/input]
 [output]
-0 -1 
-4 5 
+0 -1
+4 5
 8
 [/output]
 [/test]
@@ -1413,8 +1413,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 25, 24, 22, 24, 25
 [/input]
 [output]
-20 24 
-24 25 
+20 24
+24 25
 93
 [/output]
 [/test]
@@ -1426,8 +1426,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 0, 0, 0
 [/input]
 [output]
-0 0 
-0 1 
+0 0
+0 1
 1
 [/output]
 [/test]
@@ -1441,8 +1441,8 @@ On the **next lines**, you will get the elements for each row **separated with a
 16, 1700, 18, -19
 [/input]
 [output]
--13 14 
-1700 18 
+-13 14
+1700 18
 1719
 [/output]
 [/test]

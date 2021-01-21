@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Reverse Number with a Stack
-[code-task title="Reverse Number with a Stack" taskId="3189c7ab-dd3f-435b-9c04-6519c65bd773" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse Number with a Stack" taskId="java-advanced-stack-and-queue-Reverse-Number-with-a-Stack" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class Main {
 ## Description
 Write a program that reads **N integers** from the console and **reverses them using a stack**.
 
-Use the **ArrayDeque < Integer >** class.
+Use the `ArrayDeque <Integer>` class.
 
 Just put the input numbers in the stack and pop them.
 
@@ -90,7 +90,7 @@ Just put the input numbers in the stack and pop them.
 
 [slide hideTitle]
 # Problem: Basic Stack Operations
-[code-task title="Basic Stack Operations" taskId="10bea7e5-eab5-4110-828f-ec56851bb090" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Basic Stack Operations" taskId="java-advanced-stack-and-queue-Basic-Stack-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -122,12 +122,12 @@ If it is not, print the smallest element currently present in the stack.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 5 2 13 | true | We have to **push 5** elements. Then we **pop 2** of them. Finally, we have to check whether 13 is present in the stack. Since it is we print **true**. |
 | 1 13 45 32 4 |  |  |
 
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 4 1 666 | 13 | Pop one element (666) and then check if 666 is present in the stack. It is not, so print the smallest element (13) |
 | 420 69 13 666 |  |  |
 
@@ -213,7 +213,7 @@ true
 
 [slide hideTitle]
 # Problem: Maximum Element
-[code-task title="Maximum Element" taskId="9a85ddc4-cc9d-4760-a871-b3d3c3b75233" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Maximum Element" taskId="java-advanced-stack-and-queue-Maximum-Element" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -231,24 +231,24 @@ You have an empty sequence, and you will be given  **N**  commands.
 
 Each command is one of the following types:
 
-- **"1 X"** - **Push** the element **X** into the stack.
-- **"2"** - **Delete** the element present at the top of the stack.
-- **"3"** - **Print** the maximum element in the stack.
+- `1 X` - **Push** the element **X** into the stack.
+- `2` - **Delete** the element present at the top of the stack.
+- `3` - **Print** the maximum element in the stack.
 
 ## Input
 
-- The first line of input contains an integer **N** , where **1 ≤ N ≤ 10 ^ 5**
+- The first line of input contains an integer **N** , where `1 ≤ N ≤ 10 ^ 5`
 - The next  **N** lines contain commands. All commands will be valid and in the format described
-- The element **X** will be in range **1 ≤ X ≤ 10 ^ 9**
-- The **type of the command** will be in range **1 ≤ Type ≤ 3**
+- The element **X** will be in range `1 ≤ X ≤ 10 ^ 9`
+- The **type of the command** will be in range `1 ≤ Type ≤ 3`
 
 ## Output
 
-- For each command of **type "3"** , **print the maximum element** in the stack on a new line.
+- For each command of type `3` , **print the maximum element** in the stack on a new line.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 9 | 26 | 9 commands |
 | 1 97 | 91 | Push 97 |
 | 2 |  | Pop an element |
@@ -454,7 +454,7 @@ Each command is one of the following types:
 
 [slide hideTitle]
 # Problem: Basic Queue Operations
-[code-task title="Basic Queue Operations" taskId="bd0b9605-7801-417d-9cc0-ab3caa08a8ea" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Basic Queue Operations" taskId="java-advanced-stack-and-queue-Basic-Queue-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -474,7 +474,7 @@ If it is print **true** on the console, if it is not **print the smallest elemen
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 5 2 32 | true | We have to **push 5** elements.  |
 | 1 13 45 32 4 |  | Then we **pop 2** of them.  |
 |  |  | Finally, we have to check whether 13 is present in the stack. Since it is we print **true**.  |
@@ -564,7 +564,7 @@ true
 
 [slide hideTitle]
 # Problem: Robotics
-[code-task title="Robotics" taskId="31ac9f55-2ed1-4c9e-83b5-5abe32b54c87" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Robotics" taskId="java-advanced-stack-and-queue-Robotics" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -588,7 +588,7 @@ When a **robot is free** it should **take a product for processing** and log his
 
 Each robot **processes a product coming from the assembly line**. 
 
-A **product is coming** from the line **each second** (so the first product should appear at [start time + 1 second]). 
+A **product is coming** from the line **each second** (so the first product should appear at `[start time + 1 second]`). 
 
 If a product passes the line and **there is not a free robot** to take it, it should be **queued at the end of the line again**.
 
@@ -1294,7 +1294,7 @@ SARS - sock \[22:09:02\]
 
 [slide hideTitle]
 # Problem: Balanced Parentheses
-[code-task title="Balanced Parentheses" taskId="76ac9c4c-07e3-4a40-9e66-c9d3190f0e1e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Balanced Parentheses" taskId="java-advanced-stack-and-queue-Balanced-Parentheses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1308,44 +1308,45 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
 **Given a sequence consisting of parentheses**, determine **whether the expression is balanced**.
 
 A sequence of parentheses **is balanced if** every open parenthesis can be paired uniquely with a closing parenthesis that occurs after the former.
 
 Also, **the interval between them must be balanced**.
 
-You will be given three types of parentheses: **(**,  **{**, and **\[**.
+You will be given three types of parentheses: `(`,  `{`, and `[`.
 
-{\[()\]} - This is a balanced parenthesis.
+`{[()]}` - This is a balanced parenthesis.
 
-{\[(\])} - This is not a balanced parenthesis.
+`{[(])}` - This is not a balanced parenthesis.
 
 ## Input
 
 - Each input consists of a single line, the sequence of parentheses.
-- **1 ≤ Length of sequence ≤ 1000**
-- Each character of the sequence will be one of the following:  **{**, **}**, **(**, **)**, **[**, **]**.
+- `1 ≤ Length of sequence ≤ 1000`
+- Each character of the sequence will be one of the following:  `{`, `}`, `(`, `)`, `[`, `]`.
 
 ## Output
 
-- For each test case, print on a new line **"YES"** if the parentheses are balanced. Otherwise, print **"NO"**.
+- For each test case, print on a new line `YES` if the parentheses are balanced. Otherwise, print `NO`.
 
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| {[()]} | YES |
+| `{[()]}` | YES |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| {[(])} | NO |
+| `{[(])}` | NO |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| {{[[(())]]}} | YES |
+| `{{[[(())]]}}` | YES |
 
 [/task-description]
 [code-io /]
@@ -1429,7 +1430,7 @@ YES
 
 [slide hideTitle]
 # Problem: Recursive Fibonacci
-[code-task title="Recursive Fibonacci" taskId="426b0bb7-d61b-48d0-bde3-8a141d87e84c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Recursive Fibonacci" taskId="java-advanced-stack-and-queue-Recursive-Fibonacci" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1451,18 +1452,20 @@ Therefore the sequence goes like 1, 1, 2, 3, 5, 8, 13, 21, 34…
 
 The following sequence can be generated with an array, but that is easy, so **your task is to implement it recursively**.
 
-If the function **getFibonacci(n)** returns the nth Fibonacci number, we can express it using 
-**getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)**.
+If the function `getFibonacci(n)` returns the nth Fibonacci number, we can express it using 
+`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
 
 However, this will never end and in a few seconds, a Stack Overflow Exception is thrown. 
 
 For the recursion to be stoped, it has to have a "bottom". 
 
-The bottom of the recursion is getFibonacci(1), and should return 1. The same goes for getFibonacci(0).
+The bottom of the recursion is `getFibonacci(1)`, and should return 1. 
+
+The same goes for getFibonacci(0)`.
 
 ## Input
 
-- On a single line the user should enter the wanted Fibonacci number N where 1 <= N <= 49
+- On a single line the user should enter the wanted Fibonacci number N where `1 <= N <= 49`
 
 ## Output
 
@@ -1470,7 +1473,7 @@ The bottom of the recursion is getFibonacci(1), and should return 1. The same go
 
 ## Hint
 
-For the n-th Fibonacci number, we calculate the N - 1st and the N - 2nd number, but for the calculation of N - 1st number we calculate the N - 1 - 1st(N - 2nd) and the N - 1 - 2nd number, so we have a lot of repeated calculations.
+For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations.
 
 If you want to figure out how to skip those unnecessary calculations, you can search for a technique called [memoization](https://en.wikipedia.org/wiki/Memoization).
 
@@ -1577,7 +1580,7 @@ If you want to figure out how to skip those unnecessary calculations, you can se
 
 [slide hideTitle]
 # Problem: Simple Text Editor
-[code-task title="Simple Text Editor" taskId="4e4ddd79-3e4b-4215-b529-50a0f652da09" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Simple Text Editor" taskId="java-advanced-stack-and-queue-Simple-Text-Editor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1595,26 +1598,26 @@ You are given an empty text.
 
 Your task is to implement **4 types of commands** related to manipulating the text:
 
-- 1 \[string\] - **appends** \[string\] to the end of the text
-- 2 \[count\] - **erases** the last \[count\] elements from the text
-- 3 \[index\] - **returns** the element at position \[index\] from the text
+- 1 `[string]` - **appends** `[string]` to the end of the text
+- 2 `[count]` - **erases** the last `[count]` elements from the text
+- 3 `[index]` - **returns** the element at position `[index]` from the text
 - 4 - **undoes** the last not-undone command of type 1 or 2 and returns the text to the state before that operation
 
 ### Input
 
-- The first line contains **N** , the number of operations, where **1 ≤ N ≤**  **105**
-- Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format **"command argument"**.
+- The first line contains **N** , the number of operations, where `1 ≤ N ≤`  **105**
+- Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`.
 - **The length of the text** will not exceed **1000000**
 - All input characters are **English letters**
 - It is **guaranteed** that the sequence of **input operation is possible to perform**
 
 ### Output
 
-- For each operation of type **"3"** print a **single line with the returned character of that operation**.
+- For each operation of type `3` print a **single line with the returned character of that operation**.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 8 | c | There are 8 operations. Initially, the text is empty.  |
 | 1 abc | y | Append "abc" |
 | 3 3 | a | Print third character |
@@ -1853,7 +1856,7 @@ a
 
 [slide hideTitle]
 # Problem: Infix to Postfix
-[code-task title="Infix to Postfix" taskId="f7d51cf8-541d-48fd-bd9f-795d70200d50" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Infix to Postfix" taskId="java-advanced-stack-and-queue-Infix-to-Postfix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1867,18 +1870,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Mathematical expressions are **written in an infix notations** , for example "5 / ( 3 + 2 )".
+Mathematical expressions are **written in an infix notations** , for example `5 / ( 3 + 2 )`.
 
 However, this kind of notation is **not efficient for computer processing** , as you first need to evaluate the expression inside the brackets, so there is a lot of back and forth movement.
 
-A more suitable approach is to **convert it in the so-called postfix notations** (also called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), in which the **expression is evaluated from left to right** , for example "3 2 + 5 /".
+A more suitable approach is to **convert it in the so-called postfix notations** (also called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), in which the **expression is evaluated from left to right** , for example `3 2 + 5 /`.
 
-Implement an **algorithm that converts** the mathematical expression **from infix notation into a postfix notation**. Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
+Implement an **algorithm that converts** the mathematical expression **from infix notation into a postfix notation**. 
+
+Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
 ## Input
 
 - You will **receive an expression on a single line, consisting of tokens**
-- Tokens could be numbers 0-9, variables a-z, operators +, -, \*, /, and brackets ( or )
+- Tokens could be numbers 0-9, variables a-z, operators `+, -, *, /,` and brackets ( or )
 - Each token is **separated by exactly one space**
 
 ## Output
@@ -1888,22 +1893,22 @@ Implement an **algorithm that converts** the mathematical expression **from infi
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 5 / ( 3 + 2 ) | 5 3 2 + / |
+| `5 / ( 3 + 2 )` | `5 3 2 + /` |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| 1 + 2 + 3 | 1 2 + 3 + |
+| `1 + 2 + 3` | `1 2 + 3 +` |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| 7 + 13 / ( 12 - 4 ) | 7 13 12 4 - / + |
+| `7 + 13 / ( 12 - 4 )` | `7 13 12 4 - / +` |
 
 
 | **Input** | **Output** |
 | --- | --- |
-| ( 3 + x ) - y | 3 x + y - |
+| `( 3 + x ) - y` | `3 x + y -` |
 
 [/task-description]
 [code-io /]
@@ -1987,7 +1992,7 @@ Implement an **algorithm that converts** the mathematical expression **from infi
 
 [slide hideTitle]
 # Problem: Poisonous Plants
-[code-task title="Poisonous Plants" taskId="6ab9ac86-35f0-40ba-828e-48272be42cca" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poisonous Plants" taskId="java-advanced-stack-and-queue-Poisonous-Plants" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -2014,7 +2019,7 @@ Print the number of days **after** which no plant dies, i.e. the time after whic
 ### Input
 
 - The input consists of an integer  **N** representing the number of plants.
-- The next **single line** consists of  **N**  integers, where every integer represents the position and amount of pesticides of each plant. 1 ≤ N ≤ 100000
+- The next **single line** consists of  **N**  integers, where every integer represents the position and amount of pesticides of each plant. `1 ≤ N ≤ 100000`
 - Pesticides amount on a plant is between 0 and 1000000000
 
 ### Output
@@ -2023,15 +2028,15 @@ Print the number of days **after** which no plant dies, i.e. the time after whic
 
 ## Examples
 | **Input** | **Output** | **Comments** |
-| --- | --- | --- |
+| :---: | :---: | :---: |
 | 7 | 2 | Initially all plants are alive.  |
-| 6 5 8 4 7 10 9 |  | Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}  |
-|  |  | Plants[k] = (i, j) => jth plant has pesticide amount = i.  |
+| 6 5 8 4 7 10 9 |  | `Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}`  |
+|  |  | `Plants[k] = (i, j)` \=\> jth plant has pesticide amount \= i.  |
 |  |  | After the 1st day, 4 plants remain as plants 3, 5, and 6 die.  |
-|  |  | Plants = {(6, 1), (5, 2), (4, 4), (9, 7)}  |
-|  |  | After the 2nd day, 3 plants survive as plant 7 dies. Plants = {(6, 1), (5, 2), (4, 4)}  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
+|  |  | After the 2nd day, 3 plants survive as plant 7 dies. `Plants = {(6, 1), (5, 2), (4, 4)}` |
 |  |  | After the 3rd day, 3 plants survive and no more plants die.  |
-|  |  | Plants = {(6, 1), (5, 2), (4, 4)}  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4)}`  |
 |  |  | After the 2nd day the plants stop dying.  |
 
 [/task-description]
@@ -2113,9 +2118,3 @@ Print the number of days **after** which no plant dies, i.e. the time after whic
 [/code-task]
 [/slide]
 
-
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]

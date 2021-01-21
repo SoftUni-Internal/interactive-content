@@ -1,40 +1,44 @@
-# Queue - First In First Out - FIFO
+# Queue: First In First Out (FIFO)
 
-[slide]
+[slide hideTitle]
 # Queue Functionality
 
-A Queue is a "First In First Out" - **FIFO** data structure. 
+A Queue is a "First In First Out" - **FIFO** data structure.
+
 It models a **queue** in **real-life**, you might have seen in front of a cinema, a shopping mall, a metro, or a bus.
 
 Just like queues in real life, **new elements** in a Queue data structure are added **at the back** and **removed from the front**. 
 
-# Queues provide the following functionality:
+# Queue: Abstract Data Type
 
 - Adding an element at the end of the queue
 
-[image assetsSrc="queue-example(1).png" /]
-    
+[image assetsSrc="Java-Advanced-Stack-and-Queues-4.png" /]
+
 - Removing the first element from the queue
 
-[image assetsSrc="queue-example(2).png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-5.png" /]
 
 - Getting the first element of the queue without removing it
 
-[image assetsSrc="queue-example(3).png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-6.png" /]
 
 
 [/slide]
 
-[slide]
-# Queue Implementation and Built-In Methods
+[slide hideTitle]
+# Java Queue Implementation and Built-In Methods
 
 - Queue Implementation using `ArrayDeque<E>`
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 ```
-- `offer(element)` or `add(element)` - both methods add elements at the end of the queue
-    - `add()` – throws exception if queue is full
-    - `offer()` – returns false if queue is full
+
+- `offer(element)` or `add(element)`: both methods add elements at the end of the queue
+
+    - `add()`:throws exception if queue is full
+
+    - `offer()`: returns false if queue is full
 
 ```java live 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -46,9 +50,13 @@ queue.offer(10);
 System.out.println(queue);
 ```
 
-- `poll()` or `remove()` - both methods remove the first element from the queue
-    - `remove()` - throws exception if queue is empty
-    - `poll()` - returns null if queue is empty, otherwise returns the removed element
+[image assetsSrc="Java-Advanced-Stack-and-Queues-7.png" /]
+
+- `poll()` or `remove()`: both methods remove the first element from the queue
+
+    - `remove()`: throws exception if queue is empty
+
+    - `poll()`: returns null if queue is empty, otherwise returns the removed element
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -61,7 +69,10 @@ queue.offer(10);
 System.out.println("Removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
-- `peek()` - getting the value of the first element
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-8.png" /]
+
+- `peek()`:getting the value of the first element
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -72,20 +83,60 @@ queue.offer(10);
 
 System.out.println("First element is: " + queue.peek());
 ```
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-9.png" /]
+
+[/slide]
+
+[slide hideTitle]
 # Utility Methods
 
 - `size()` - returns the number of elements in deque
 
+```java live
+ArrayDeque<String> queueOfCars = new ArrayDeque<>();
+queueOfCars.add("Tesla Model S");
+queueOfCars.add("Nio ES8");
+queueOfCars.add("Lucid Air");
+
+System.out.println("The size is: " + queueOfCars.size());
+```
+
 - `toArray()` - converts the queue to an array
+
+```java live
+ArrayDeque<String> queueOfCars = new ArrayDeque<>();
+queueOfCars.add("Tesla Model S");
+queueOfCars.add("Nio ES8");
+queueOfCars.add("Lucid Air");
+
+Integer[] arr = queueOfCars.toArray();
+
+ for (String element: arr) {
+        System.out.println(element);
+    }
+```
 
 - `contains()` - checks whether a deque contains the element or not
 
+```java live
+ArrayDeque<String> queueOfCars = new ArrayDeque<>();
+queueOfCars.push("Tesla Model S");
+queueOfCars.push("Nio ES8");
+queueOfCars.push("Lucid Air");
+
+System.out.println(queueOfCars.contains("BMW 7"));
+```
+
+# Overview of All Operations 
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-11.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problem: Hot Potato
-[code-task title="Hot Potato" taskId="593ba36b-55ea-4b9f-950d-52c68e196f70" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hot Potato" taskId="java-advanced-lab-stack-and-queue-Hot-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -462,7 +513,7 @@ Last is 2
 
 [slide hideTitle]
 # Problem: Math Potato
-[code-task title="Math Potato" taskId="f983175c-d555-43e2-8cc4-8b8fa8581ad1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Math Potato" taskId="java-advanced-lab-stack-and-queue-Math-Potato" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -476,12 +527,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** 
-(cycles start from 1).
+Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** (cycles start from 1).
+
 If a **cycle is prime**, just **print the child's name**.
+
 As before, print the name of the child that is left last.
  
-
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
@@ -688,9 +739,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** 
-(cycles start from 1).
+Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** (cycles start from 1).
+
 If a **cycle is prime**, just **print the child's name**.
+
 As before, print the name of the child that is left last.
 
 
