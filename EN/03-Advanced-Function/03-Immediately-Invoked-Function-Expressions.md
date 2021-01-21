@@ -1,6 +1,7 @@
 # Immediately-Invoked Function Expressions
 
-[slide]
+[slide hideTitle]
+
 # Definition
 
 An **Immediately-Invoked Function Expression** is a JavaScript **function** that **runs instantly after it is defined**.
