@@ -71,19 +71,11 @@ Write a program, which:
 | **Input** |**Output**|
 | ----- | ----- |
 | 5 | \* |
-    | \*\* |
-    | \*\*\* |
-    | \*\*\*\* |
-    | \*\*\*\*\* |
+|| \*\* |
+|| \*\*\* |
+|| \*\*\*\* |
+|| \*\*\*\*\* |
 
-## Input
-- 5
-## Output
-- \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
 [/task-description]
 [tests]
 [test]
@@ -125,14 +117,15 @@ Write a program, which:
 * Reads the **height** of a triangle from the console
 * Prints a **triangle of stars**
 # Example
-## Input
-- 5
-## Output
-- \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
+
+| **Input** |**Output**|
+| ----- | ----- |
+| 5 | \* |
+|| \*\* |
+|| \*\*\* |
+|| \*\*\*\* |
+|| \*\*\*\*\* |
+
 [/task-description]
 [tests]
 [test]
