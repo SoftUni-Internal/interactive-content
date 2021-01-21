@@ -1,7 +1,8 @@
 # Homework
+
 [slide hideTitle]
 # Problem: Unique Usernames
-[code-task title="Problem: Unique Usernames" taskId="ff894dc0-6258-47e0-8267-87efe4851e1c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Unique Usernames" taskId="java-advanced-sets-and-maps-advanced-Unique-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -399,7 +400,7 @@ c&&c&che
 
 [slide hideTitle]
 # Problem: Sets of Elements
-[code-task title="Problem: Sets of Elements" taskId="2ebfb89c-b1ab-44a3-a8f6-3767d98bc225" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sets of Elements" taskId="java-advanced-sets-and-maps-advanced-Sets-of-Elements" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -419,11 +420,11 @@ On the **next n + m** lines, there are **n numbers that are in the first set** a
 
 Find all **non-repeating elements** that appear in **both** of them, and print them in **the same order** at the console:
 
-Set with length n = 4: {1, **3** , **5** , 7}
+Set with length `n = 4: {1, 3 , 5 , 7}`
 
-Set with length m = 3: { **3** , 4, **5** }
+Set with length `m = 3: { 3 , 4, 5 }`
 
-Set that contains all repeating elements -> { **3** , **5** }
+Set that contains all repeating elements \-\> `{ 3 , 5 }`
 
 ## Examples
 | **Input** | **Output** |
@@ -626,7 +627,7 @@ Set that contains all repeating elements -> { **3** , **5** }
 
 [slide hideTitle]
 # Problem: Periodic Table
-[code-task title="Problem: Periodic Table" taskId="3cdc56cd-58c0-49aa-aa7f-49105f144cca" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Periodic Table" taskId="java-advanced-sets-and-maps-advanced-Periodic-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -754,7 +755,7 @@ As Ba Co Cs Kr Ni Sn W Y Zn
 
 [slide hideTitle]
 # Problem: Count Symbols
-[code-task title="Problem: Count Symbols" taskId="7075fd90-4715-4d84-bb4e-7185a33822d3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Symbols" taskId="java-advanced-sets-and-maps-advanced-Count-Symbols" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -965,7 +966,7 @@ y: 3 time/s
 
 [slide hideTitle]
 # Problem: Phonebook
-[code-task title="Problem: Phonebook" taskId="9530e974-a298-483a-a529-354207c85293" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Phonebook" taskId="java-advanced-sets-and-maps-advanced-Phonebook" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -995,17 +996,17 @@ The program should end when receiving the **command** `stop`.
 | **Input** | **Output** |
 | --- | --- |
 | John-00359888080808 | Contact Maria does not exist. |
-| search | John -> 00359888080808 |
+| search | John \-\> 00359888080808 |
 | Maria |  |
 | John |  |
 | stop |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| John-00359888001122 | Samuel -> 0047123123123 |
+| John-00359888001122 | Samuel \-\> 0047123123123 |
 | Peter-0040333111000 | Contact samuel does not exist. |
 | George-0049112233 | Contact PeTeR does not exist. |
-| Samuel-0047123123123 | Peter -> 0040333111000 |
+| Samuel-0047123123123 | Peter \-\> 0040333111000 |
 | search |  |
 | Samuel |  |
 | samuel |  |
@@ -1147,7 +1148,7 @@ Oliver -\> 004455667788
 
 [slide hideTitle]
 # Problem: A Miner Task
-[code-task title="Problem: A Miner Task" taskId="bad4cdeb-97fa-4c60-8bd2-41da26365e05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="A Miner Task" taskId="java-advanced-sets-and-maps-advanced-A-Miner-Task" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1173,14 +1174,14 @@ Your task is to **collect** the resources and to print them each on a **new line
 
 `{resource} –> {quantity}`
 
-The quantities inputs will be in the **range** [1 ... 2 000 000 000]
+The quantities inputs will be in the **range** \[1 ... 2 000 000 000\]
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| Gold | Gold -> 155 |
-| 155 | Silver -> 10 |
-| Silver | Copper -> 17 |
+| Gold | Gold \-\> 155 |
+| 155 | Silver \-\> 10 |
+| Silver | Copper \-\> 17 |
 | 10 |  |
 | Copper |  |
 | 17 |  |
@@ -1412,7 +1413,7 @@ Cooper -\> 2000000000
 
 [slide hideTitle]
 # Problem: Fix Emails
-[code-task title="Problem: Fix Emails" taskId="080f5e63-4e55-4682-9d06-f2017b86419d" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fix Emails" taskId="java-advanced-sets-and-maps-advanced-Fix-Emails" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1439,8 +1440,8 @@ Print in the following format: `{name} –> {email}`
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| John | John -> johnDoe@softuni.org |
-| johnDoe@softuni.org | Peter Smith -> smith.peter@softuni.org |
+| John | John \-\> johnDoe@softuni.org |
+| johnDoe@softuni.org | Peter Smith \-\> smith.peter@softuni.org |
 | Peter Smith |  |
 | smith.peter@softuni.org |  |
 | Taylor Baker |  |
@@ -1449,7 +1450,7 @@ Print in the following format: `{name} –> {email}`
 
 | **Input** | **Output** |
 | --- | --- |
-| Peter Adamas | Duke Jenkins -> jenkins.duke@softuni.org |
+| Peter Adamas | Duke Jenkins \-\> jenkins.duke@softuni.org |
 | peter_adams@gmail.com |  |
 | Anna Foster |  |
 | foster.anna@yahoo.com |  |
@@ -1569,7 +1570,7 @@ Cindy -\> cindy@gmail.de
 
 [slide hideTitle]
 # Problem: Hands Of Cards
-[code-task title="Problem: Hands Of Cards" taskId="e2bf2871-f2e7-44de-950e-0363166d4557" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hands Of Cards" taskId="java-advanced-sets-and-maps-advanced-Hands-Of-Cards" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1589,9 +1590,9 @@ The input will be **separate** lines in the **format**:
 
 `{personName}: {PT, PT, PT,… PT}`
 
-Where P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) is the power of the card, and T (S, H, D, C) is the type. The input ends when a **"JOKER"** is drawn. 
+Where P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) is the power of the card, and T (S, H, D, C) is the type. The input ends when a `JOKER` is drawn. 
 
-The name can contain any ASCII symbol except **":"**. 
+The name can contain any ASCII symbol except `:`. 
 
 The input will always be valid and in the format described, there is no need to check it.
 
@@ -1603,7 +1604,7 @@ Each card has a value that is **calculated** by the power multiplied by the type
 
 Powers **2 to 10** have the same value and **J to A** are **11 to 14**. 
 
-Types are mapped to multipliers the following way (**S -> 4, H-> 3, D -> 2, C -> 1**).
+Types are mapped to multipliers the following way (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
 
 Finally, print out the **total value each player** has in his hand in the format:
 
@@ -1682,7 +1683,7 @@ JOKER
 
 [slide hideTitle]
 # Problem: User Logs
-[code-task title="Problem: User Logs" taskId="b541fef2-5fe6-4107-aedf-588697d7a672" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="User Logs" taskId="java-advanced-sets-and-maps-advanced-User-Logs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1727,7 +1728,9 @@ destroyer:
 
 The username destroyer has sent a message from IP 192.23.30.40 once.
 
-Check the examples below. They will further clarify the assignment.
+Check the examples below. 
+
+They will further clarify the assignment.
 
 ## Input
 
@@ -1753,31 +1756,31 @@ The IP addresses must be split with a comma, and each line of IP addresses must 
 - The number of commands will be in the range [1 ... 50]
 - The IP addresses will be in the format of either **IPv4** or **IPv6.**
 - The messages will be in the format: **This&is&a&message**
-- The username will be a string with length in the range [3 ... 50]
+- The username will be a string with length in the range \[3 ... 50\]
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| IP=192.23.30.40 message='Hello&derps.' user=destroyer | destroyer:  |
-| IP=192.23.30.41 message='Hello&yall.' user=destroyer | 192.23.30.40 => 2, 192.23.30.41 => 1, 192.23.30.42 => 1. |
-| IP=192.23.30.40 message='Hello&hi.' user=destroyer |  |
-| IP=192.23.30.42 message='Hello&People.' user=destroyer |  |
+| `IP=192.23.30.40 message='Hello&derps.' user=destroyer` | destroyer:  |
+| `IP=192.23.30.41 message='Hello&yall.' user=destroyer` | 192.23.30.40 \=\> 2, 192.23.30.41 \=\> 1, 192.23.30.42 \=\> 1. |
+| `IP=192.23.30.40 message='Hello&hi.' user=destroyer` |  |
+| `IP=192.23.30.42 message='Hello&People.' user=destroyer` |  |
 | end |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother | child0:  |
-| IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1. |
-| IP=192.23.30.40 message='Hi&from&me&too' user=child1 | child1:  |
-| IP=192.23.30.42 message='spam' user=destroyer | 192.23.30.40 => 1. |
-| IP=192.23.30.42 message='spam' user=destroyer | destroyer:  |
-| IP=192.23.50.40 message='' user=yetAnotherUsername | 192.23.30.42 => 2. |
-| IP=192.23.50.40 message='comment' user=yetAnotherUsername | mother:  |
-| IP=192.23.155.40 message='Hello.' user=unknown | FE80:0000:0000:0000:0202:B3FF:FE1E:8329 => 1. |
+| `IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother` | child0:  |
+| `IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1.` |
+| `IP=192.23.30.40 message='Hi&from&me&too' user=child1` | child1:  |
+| `IP=192.23.30.42 message='spam' user=destroyer`| 192.23.30.40 \=\> 1. |
+| `IP=192.23.30.42 message='spam' user=destroyer` | destroyer:  |
+| `IP=192.23.50.40 message='' user=yetAnotherUsername` | 192.23.30.42 \=\> 2. |
+| `IP=192.23.50.40 message='comment' user=yetAnotherUsername` | mother:  |
+| `IP=192.23.155.40 message='Hello.' user=unknown`| FE80:0000:0000:0000:0202:B3FF:FE1E:8329 \=\> 1. |
 | end | unknown:  |
-|  | 192.23.155.40 => 1. |
+|  | 192.23.155.40 \=\> 1. |
 |  | yetAnotherUsername:  |
-|  | 192.23.50.40 => 2. |
+|  | 192.23.50.40 \=\> 2. |
 
 [/task-description]
 [code-io /]
@@ -2155,7 +2158,7 @@ zzzzzzzzzzz:
 
 [slide hideTitle]
 # Problem: Population Counter
-[code-task title="Problem: User Logs" taskId="95df95ee-46f0-4cd1-bb0f-183d99ed9fe2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Population Counter" taskId="java-advanced-sets-and-maps-advanced-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2169,13 +2172,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-So many people! It's hard to count them all.
+So many people! It is hard to count them all.
 
-But that's your job as a statistician.
+But that is your job as a statistician.
 
 You get raw data for a given city and you need to aggregate it.
 
-On each input line, you'll be given data in the format: `city|country|population`. 
+On each input line, you will be given data in the format: `city|country|population`. 
 
 There will be **no redundant whitespaces anywhere** in the input. 
 
@@ -2205,17 +2208,19 @@ Follow the output **format strictly**!
 ## Constraints
 
 - The name of the city, country and the population count will be separated from each other by **a pipe** `|`.
-- The **number of input lines** will be in the range [2 ... 50].
+- The **number of input lines** will be in the range \[2 ... 50\].
 - A city-country pair will not be repeated.
-- The **population count** of each city will be an integer in the range [0 ... 2 000 000 000].
-- Allowed working time for your program: 0.1 seconds. Allowed memory: 16 MB.
+- The **population count** of each city will be an integer in the range \[0 ... 2 000 000 000\].
+- Allowed working time for your program: 0.1 seconds. 
+
+Allowed memory: 16 MB.
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| Sofia\|Bulgaria\|1000000 | Bulgaria (total population: 1000000) |
-| report | =>Sofia: 1000000 |
+| Bucharest\|Romania\|2000000 | Bulgaria (total population: 2000000) |
+| report | \=\>Bucharest: 2000000 |
 
 | **Input** | **Output** |
 | --- | --- |
@@ -2232,12 +2237,12 @@ Follow the output **format strictly**!
 [tests]
 [test open]
 [input]
-Sofia\|Bulgaria\|1000000
+Bucharest\|Romania\|2000000
 report
 [/input]
 [output]
-Bulgaria (total population: 1000000)
-=\>Sofia: 1000000
+Romania (total population: 2000000)
+=\>Bucharest: 2000000
 [/output]
 [/test]
 [test open]
@@ -2886,7 +2891,7 @@ United States (total population: 466762961)
 
 [slide hideTitle]
 # Problem: Logs Aggregator
-[code-task title="Problem: Logs Aggregator" taskId="8e468d5a-5145-4713-85f5-4d7f41f70f72" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Logs Aggregator" taskId="java-advanced-sets-and-maps-advanced-Logs-Aggregator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2945,7 +2950,7 @@ There is no need to check it explicitly.
 
 Print **single line for each user** (order users alphabetically). 
 
-For each user print the sum of durations and all of his session IPs, ordered alphabetically in format 
+For each user print the sum of durations and all of his session IPs, ordered alphabetically in format
 
 `< user >: < duration > [< IP1 >, < IP2 >, ...]`. 
 
@@ -2953,18 +2958,18 @@ Remove any duplicated values in the IP addresses.
 
 ## Constraints
 
-- The **count** of the lines **n** is in the range [1 ... 1000].
-- The **< IP >** is a standard IP address in format **a.b.c.d** where **a**, **b**, **c** and **d** are integers in the range [0 ... 255].
-- The **< user >** consists only of **Latin characters**, with length of [1 .... 20].
-- The **< duration >** is an integer number in the range [1 ... 1000].
+- The **count** of the lines **n** is in the range \[1 ... 1000\].
+- The `< IP >` is a standard IP address in format **a.b.c.d** where **a**, **b**, **c** and **d** are integers in the range [0 ... 255].
+- The `< user >` consists only of **Latin characters**, with length of \[1 .... 20\].
+- The `< duration >` is an integer number in the range \[1 ... 1000\].
 - Time limit: 0.3 sec. Memory limit: 16 MB.
 
 ## Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| 7 | alex: 62 [10.10.17.33, 212.50.118.81] |
-| 192.168.0.11 peter 33 | peter: 303 [10.10.17.34, 10.10.17.35, 192.168.0.11] |
+| 7 | alex: 62 \[10.10.17.33, 212.50.118.81\] |
+| 192.168.0.11 peter 33 | peter: 303 \[10.10.17.34, 10.10.17.35, 192.168.0.11\] |
 | 10.10.17.33 alex 12 |  |
 | 10.10.17.35 peter 30 |  |
 | 10.10.17.34 peter 120 |  |
@@ -2974,7 +2979,7 @@ Remove any duplicated values in the IP addresses.
 
 | **Input** | **Output** |
 | --- | --- |
-| 2 | john: 60 [84.238.140.178] |
+| 2 | john: 60 \[84.238.140.178\] |
 | 84.238.140.178 john 25 |  |
 | 84.238.140.178 john 35 |  |
 
@@ -3369,7 +3374,7 @@ test: 698 \[10.10.10.1, 10.10.10.10, 10.10.10.103, 10.140.10.10, 105.10.10.10\]
 
 [slide hideTitle]
 # Problem: Legendary Farming
-[code-task title="Problem: Legendary Farming" taskId="e542724b-ef67-4d42-a4d0-03fbbbc41fd2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Legendary Farming" taskId="java-advanced-sets-and-maps-advanced-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -3387,12 +3392,12 @@ You've beaten all the content and the last thing left to accomplish is own a leg
 
 However, it's a tedious process and requires quite a bit of farming.
 
-Anyway, you are not too pretentious – any legendary will do.
+Anyway, you are not too pretentious - any legendary will do.
 
 The possible items are:
-- **Shadowmourne** – requires **250 Shards**;
-- **Valanyr** – requires **250 Fragments**;
-- **Dragonwrath** – requires **250 Motes**;
+- **Shadowmourne** - requires **250 Shards**;
+- **Valanyr** - requires **250 Fragments**;
+- **Dragonwrath** - requires **250 Motes**;
 
 **Shards, Fragments**, and **Motes** are the **key materials**, the others are **junk**. 
 
@@ -3428,7 +3433,7 @@ Finally, print the collected **junk** items, in **alphabetic** order.
 ## Constraints
 
 - The quantity-material pairs are between 1 and 25 per line.
-- The number of lines is in the range [1 ... 10]
+- The number of lines is in the range \[1 ... 10\]
 - All materials are case-insensitive.
 - Allowed working time: 0.25s
 - Allowed memory: 16 MB
@@ -3657,7 +3662,7 @@ linen: 1420
 
 [slide hideTitle]
 # Problem: Dragon Army
-[code-task title="Problem: Dragon Army" taskId="edc53bdc-36c2-48f3-b89e-065386a43101" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Dragon Army" taskId="java-advanced-sets-and-maps-advanced-Dragon-Army" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -3677,7 +3682,7 @@ Everyone loves it and everyone plays it all the time.
 
 John is no exclusion to this rule.
 
-His favorite units in the game are all **types** of dragons – black, red, gold, azure, etc... 
+His favorite units in the game are all **types** of dragons - black, red, gold, azure, etc... 
 
 He likes them so much that he gives them **names** and keeps logs of their **stats** : **damage, health**, and **armor**.
 
@@ -3734,30 +3739,30 @@ Two dragons are considered **equal** if they match by **both** name and type.
 
 ### Constraints
 
-- N is in the range [1 ... 100]
+- N is in the range \[1 ... 100\]
 - The dragon type and name are one word only, starting with a capital letter.
-- Damage health and armor are integers in the range [0 ... 100000] or **null**
+- Damage health and armor are integers in the range \[0 ... 100000\] or **null**
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
 | 5 | Red::(160.00/2350.00/30.00) |
-| Red Bazgargal 100 2500 25 | -Bazgargal -> damage: 100, health: 2500, armor: 25 |
-| Black Dargonax 200 3500 18 | -Obsidion -> damage: 220, health: 2200, armor: 35 |
+| Red Bazgargal 100 2500 25 | \-Bazgargal \-\> damage: 100, health: 2500, armor: 25 |
+| Black Dargonax 200 3500 18 | \-Obsidion \-\> damage: 220, health: 2200, armor: 35 |
 | Red Obsidion 220 2200 35 | Black::(200.00/3500.00/18.00) |
-| Blue Kerizsa 60 2100 20 | -Dargonax -> damage: 200, health: 3500, armor: 18 |
+| Blue Kerizsa 60 2100 20 | \-Dargonax \-\> damage: 200, health: 3500, armor: 18 |
 | Blue Algordox 65 1800 50 | Blue::(62.50/1950.00/35.00) |
-|  | -Algordox -> damage: 65, health: 1800, armor: 50 |
-|  | -Kerizsa -> damage: 60, health: 2100, armor: 20 |
+|  | -Algordox \-\> damage: 65, health: 1800, armor: 50 |
+|  | -Kerizsa \-\> damage: 60, health: 2100, armor: 20 |
 
 
 | **Input** | **Output** |
 | --- | --- |
 | 4 | Gold::(223.75/826.25/17.50) |
-| Gold Zzazx null 1000 10 | -Ardrax -> damage: 100, health: 1055, armor: 50 |
-| Gold Traxx 500 null 0 | -Traxx -> damage: 500, health: 250, armor: 0 |
-| Gold Xaarxx 250 1000 null | -Xaarxx -> damage: 250, health: 1000, armor: 10 |
-| Gold Ardrax 100 1055 50 | -Zzazx -> damage: 45, health: 1000, armor: 10 |
+| Gold Zzazx null 1000 10 | \-Ardrax \-\> damage: 100, health: 1055, armor: 50 |
+| Gold Traxx 500 null 0 | \-Traxx \-\> damage: 500, health: 250, armor: 0 |
+| Gold Xaarxx 250 1000 null | \-Xaarxx \-\> damage: 250, health: 1000, armor: 10 |
+| Gold Ardrax 100 1055 50 | \-Zzazx \-\> damage: 45, health: 1000, armor: 10 |
 
 [/task-description]
 [code-io /]
@@ -4195,8 +4200,3 @@ Green::(100.00/1000.00/10.00)
 [/slide]
 
 
-[slide]
-# Homework Results
-[tasks-results/]
-
-[/slide]
