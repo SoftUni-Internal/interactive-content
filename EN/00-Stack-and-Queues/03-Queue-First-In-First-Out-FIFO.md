@@ -50,7 +50,7 @@ queue.offer(10);
 System.out.println(queue);
 ```
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-7.png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
 - `poll()` or `remove()`: both methods remove the first element from the queue
 
@@ -70,7 +70,7 @@ System.out.println("Removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-8.png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-8.gif" /]
 
 - `peek()`:getting the value of the first element
 
@@ -84,7 +84,7 @@ queue.offer(10);
 System.out.println("First element is: " + queue.peek());
 ```
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-9.png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-9.gif" /]
 
 [/slide]
 
@@ -130,7 +130,7 @@ System.out.println(queueOfCars.contains("BMW 7"));
 
 # Overview of All Operations 
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-11.png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
 
 [/slide]
 
