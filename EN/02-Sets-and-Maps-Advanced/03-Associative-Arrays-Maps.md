@@ -1,6 +1,7 @@
-[slide]
+# Associative Arrays
 
-# Associative Arrays - Maps
+[slide hideTitle]
+# Associative Arrays: Maps
 
 You learned that Arrays store items as an ordered collection, and you have to access them with an index number - **int type**.
 
@@ -14,14 +15,18 @@ They must be specified with the equivalent wrapper class: Integer, Double, Boole
 
 The type of `Key` and `Value` can be the same or different, depends on the case.
 
-In Java, associative arrays are called Map. A Map **can not contain duplicate Keys**, each **Key** can map to at most one Value.
+In Java, associative arrays are called Map. 
 
-But **the values can be duplicated**. For one Key only one Value can be stored in the same Map instance.
+A Map **can not contain duplicate Keys**, each **Key** can map to at most one Value.
+
+But **the values can be duplicated**. 
+
+For one Key only one Value can be stored in the same Map instance.
 
 **For Example:**
 
 | *Products* | *Prices* |
-| ------- | --------- |
+| --- | --- |
 | **Key** | **Value** |
 | Tomatoes | 12.50 |
 | Bananas | 6.50 |

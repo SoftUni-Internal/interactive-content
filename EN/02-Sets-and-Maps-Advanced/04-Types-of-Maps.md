@@ -1,37 +1,55 @@
-[slide]
-
 # Types of Maps
 
-## HashMap <Key, Value>
+[slide hideTitle]
+# HashMap
 
-HashMap is implemented as a **Hash Table**, and there is **no ordering on keys or values**.
+`HashMap<Key, Value>` is implemented as a **Hash Table**, and there is **no ordering on keys or values**.
 
 It implements all of the **Map** operations and **allows null values** and **one null key**. 
 
 Consider to use a **HashMap** when **order does not matter and nulls are acceptable**.
 
 - Initialization:
+
 ```java
 Map<String, Integer> hashMap = new HashMap<>();
 ```
 - Adding Elements 
 ```java live
-Map<String, Integer> hashMap = new HashMap<>();
+Map<String, String> hashMap = new HashMap<>();
 
-hashMap.put("BMW", 5);
-hashMap.put("Mercedes", 3);
-hashMap.put("Opel", 4);
-hashMap.put("Dacia", 10);
+hashMap.put("BMW", "M5");
+hashMap.put("Mercedes", "AMG");
+hashMap.put("Dacia", "Duster");
 
 hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
-## TreeMap <Key, Value> 
 
-**TreeMap** is **sorted** according to the **natural ordering of its keys**.
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-5.gif" /]
+
+- Removing Elements 
+
+```java live
+Map<String, String> hashMap = new HashMap<>();
+
+hashMap.put("Mercedes", "AMG");
+hashMap.put("Dacia", "Duster");
+
+hashMap.remove("Mercedes");
+
+hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
+```
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-5.gif" /]
+[/slide]
+
+[slide hideTitle]
+# TreeMap 
+
+`TreeMap <Key, Value>` is **sorted** according to the **natural ordering of its keys**.
 
 **TreeMap** in Java **does not allow null keys**.
 
-It's better to use a **TreeMap** when you want **a Map sorts its key-value pairs by the natural order of the keys** (e.g. **alphabetic** order or **numeric** order).
+It is better to use a **TreeMap** when you want **a Map sorts its key-value pairs by the natural order of the keys** (e.g. **alphabetic** order or **numeric** order).
 
 - Initialization:
 ```java
@@ -48,16 +66,18 @@ treeMap.put("Dacia", 10);
 
 treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
+[/slide]
 
-## LinkedHashMap <Key, Value>
+[slide hideTitle]
+# LinkedHashMap 
 
-**LinkedHashMap** also maps a `Key` and a `Value`.
+`LinkedHashMap <Key, Value>` also maps a `Key` and a `Value`.
 
 It inherits HashMap class, but **maintains insertion order**.
 
 **Keeps the Keys in order of addition.**
 
-It's better to use a **LinkedHashMap** when you want **a Map with its key-value pairs are sorted by their insertion order.**
+It is better to use a **LinkedHashMap** when you want **a Map with its key-value pairs are sorted by their insertion order.**
 
 - Initialization:
 ```java
@@ -173,7 +193,9 @@ System.out.println(airplanes.isEmpty());
 [slide]
 # Iterating over a Map
 
-Iterating through objects of type **Map.Entry <K, V>**. **Cannot modify** the collection(read-only).
+Iterating through objects of type `Map.Entry <K, V>`. 
+
+**Cannot modify** the collection(read-only).
 
 There are several ways to iterate the Keys stored in a Map.
 
@@ -246,7 +268,7 @@ cars.forEach((key, value) -> System.out.println(key + " - " + value));
 
 - Sorting according to Keys in ascending order
 
-```java live no-template
+```java live
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -336,7 +358,7 @@ cars.entrySet()
 
 [slide]
 # Problem: Count Real Numbers
-[code-task title="Count Real Numbers" taskId="652e7421-f805-48bb-ac97-88e91f56fcc4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-advanced-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -361,19 +383,19 @@ All numbers must be formatted to **one digit after the decimal point**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| -2.5 4 3 -2.5 -5.5 4 3 3 -2.5 3 | -2.5 -> 3 |
-|  | 4.0 -> 2 |
-|  | 3.0 -> 4 |
-|  | -5.5 -> 1 |
+| \-2.5 4 3 \-2.5 \-5.5 4 3 3 \-2.5 3 | \-2.5 \-\> 3 |
+|  | 4.0 \-\> 2 |
+|  | 3.0 \-\> 4 |
+|  | \-5.5 \-\> 1 |
 |  |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 2.3 4.5 4.5 5.5 5.5 2.3 3.0 3.0 4.5 4.5 3.0 3.0 4.0 3.0 5.5 3.0 2.3 5.5 4.5 3.0 | 2.3 -> 3 |
-|  | 4.5 -> 5 |
-|  | 5.5 -> 4 |
-|  | 3.0 -> 7 |
-|  | 1.0	-> 1 |
+| 2.3 4.5 4.5 5.5 5.5 2.3 3.0 3.0 4.5 4.5 3.0 3.0 4.0 3.0 5.5 3.0 2.3 5.5 4.5 3.0 | 2.3 \-\> 3 |
+|  | 4.5 \-\> 5 |
+|  | 5.5 \-\> 4 |
+|  | 3.0 \-\> 7 |
+|  | 1.0 \-\> 1 |
 
 [/task-description]
 [code-io /]
@@ -507,19 +529,19 @@ All numbers must be formatted to **one digit after the decimal point**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| -2.5 4 3 -2.5 -5.5 4 3 3 -2.5 3 | -2.5 -> 3 |
-|  | 4.0 -> 2 |
-|  | 3.0 -> 4 |
-|  | -5.5 -> 1 |
+| \-2.5 4 3 \-2.5 \-5.5 4 3 3 \-2.5 3 | \-2.5 \-\> 3 |
+|  | 4.0 \-\> 2 |
+|  | 3.0 \-\> 4 |
+|  | \-5.5 \-\> 1 |
 |  |  |
 
 | **Input** | **Output** |
 | --- | --- |
-| 2.3 4.5 4.5 5.5 5.5 2.3 3.0 3.0 4.5 4.5 3.0 3.0 4.0 3.0 5.5 3.0 2.3 5.5 4.5 3.0 | 2.3 -> 3 |
-|  | 4.5 -> 5 |
-|  | 5.5 -> 4 |
-|  | 3.0 -> 7 |
-|  | 1.0	-> 1 |
+| 2.3 4.5 4.5 5.5 5.5 2.3 3.0 3.0 4.5 4.5 3.0 3.0 4.0 3.0 5.5 3.0 2.3 5.5 4.5 3.0 | 2.3 \-\> 3 |
+|  | 4.5 \-\> 5 |
+|  | 5.5 \-\> 4 |
+|  | 3.0 \-\> 7 |
+|  | 1.0 \-\> 1 |
 
 [/task-description]
 [code-io /]
@@ -611,7 +633,7 @@ All numbers must be formatted to **one digit after the decimal point**.
 
 [slide]
 # Problem: Academy Graduation
-[code-task title="Academy Graduation" taskId="93d00f25-e775-4e57-b4f3-1e3c287550dd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -630,7 +652,7 @@ Write a program that:
 - Reads on **pair of rows**:
       - First line is the **name of student**
       - Second line is his **score** for different number of courses
-- Print on console "{**name**} is graduated with {**average scores**)"
+- Print on console `{name}` is graduated with `{average scores}`
 
 ## Examples
 | **Input** | **Output** |
@@ -848,7 +870,7 @@ Write a program that:
 - Reads on **pair of rows**:
       - First line is the **name of student**
       - Second line is his **score** for different number of courses
-- Print on console "{**name**} is graduated with {**average scores**)"
+- Print on console `{name}` is graduated with `{average scores}`
 
 ## Examples
 | **Input** | **Output** |

@@ -1,6 +1,4 @@
 # Homework
-
-
 [slide hideTitle]
 # Problem: Unique Usernames
 [code-task title="Problem: Unique Usernames" taskId="ff894dc0-6258-47e0-8267-87efe4851e1c" executionType="tests-execution" executionStrategy="java-code" requiresInput]

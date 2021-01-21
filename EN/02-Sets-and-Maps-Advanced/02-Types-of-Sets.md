@@ -104,52 +104,8 @@ System.out.println(linkedHashSet);
 
 
 [slide hideTitle]
-# How to iterate over the Set
-
-- Using `Iterator<E>` 
-
-Iterators are used in Collection framework in Java to retrieve elements **one by one**.
-
-You can see how to use it for iterating over the set in the following example:
-
-```java live
-Set<Integer> hash = new HashSet<>(Arrays.asList(40,20,30,10,50));
-
-// creating an Iterator object by calling iterator() method present in Collection Interface
-Iterator<Integer> iterator = hash.iterator();
-
-// checking the next element availability
-while (iterator.hasNext()){
-
-    // moving cursor to the next element and returning it
-    int currentElement = iterator.next();
-    System.out.println(currentElement);
-}
-```
-
-- Using `For-each` loop
-
-```java live
-Set<Integer> hash = new HashSet<>(Arrays.asList(40,20,30,10,50));
-
-for (Integer element : hash) {
-    System.out.println(element);
-}
-```
-- Using `ForEach()` - method
-
-```java live
- Set<Integer> hash = new HashSet<>(Arrays.asList(40,20,30,10,50));
-
- hash.forEach(System.out::println);
-```
-
-[/slide]
-
-
-[slide]
 # Problem: Parking Lot
-[code-task title="Parking Lot" taskId="3a94dfc6-efac-41fb-a81a-1e09ddb41e79" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Parking Lot" taskId="java-advanced-sets-and-maps-advanced-Parking-Lot" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -166,11 +122,13 @@ public class Main {
 Write a program that:
  - Records car number for every car that enter in the parking lot
  - Removes car number when the car goes out
+
 ## Input
-The input will be string in format [direction, carNumber]
-The input ends with string "**END**"
+The input will be string in format [direction, carNumber].
+The input ends with string `END`.
+
 ## Output
-Print the output with all car numbers which are in parking lot 
+Print the output with all car numbers which are in parking lot.
 
 ## Examples
 | **Input** | **Output** |
@@ -339,7 +297,7 @@ CA2822UU
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Parking Lot
 [code-task title="Parking Lot" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -377,11 +335,13 @@ public class Main {
 Write a program that:
  - Records car number for every car that enter in the parking lot
  - Removes car number when the car goes out
+
 ## Input
-The input will be string in format [direction, carNumber]
-The input ends with string "**END**"
+The input will be string in format [direction, carNumber].
+The input ends with string `END`.
+
 ## Output
-Print the output with all car numbers which are in parking lot 
+Print the output with all car numbers which are in parking lot.
 
 ## Examples
 | **Input** | **Output** |
@@ -550,9 +510,9 @@ CA2822UU
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: SoftUni Party
-[code-task title="SoftUni Party" taskId="9731adb3-e6c2-449b-9e28-79d29de7caa4" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Party" taskId="java-advanced-sets-and-maps-advanced-SoftUni-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -575,14 +535,16 @@ All reservation numbers will be with 8 chars.
 All VIP numbers start with digit.
 
 ## Input
-- Until **PARTY** command, you will receive guest invitations.
-- Until **END** command, you will receive a second list with guests that actually cаme to the party.
+
+- Until `PARTY` command, you will receive guest invitations.
+
+- Until `END` command, you will receive a second list with guests that actually cаme to the party.
+
 ## Output 
-- On the first line print the count of the guests who didn't come to the party.
-- On the next lines print all guests, who didn't come to the party (**VIP must be first**).
 
+- On the first line print the count of the guests who did not come to the party.
 
-
+- On the next lines print all guests, who did not come to the party (**VIP must be first**).
 
 ## Examples
 | **Input** | **Output** |
@@ -841,7 +803,7 @@ xys2FYzn
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: SoftUni Party
 [code-task title="SoftUni Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -892,13 +854,16 @@ All reservation numbers will be with 8 chars.
 All VIP numbers start with digit.
 
 ## Input
-- Until **PARTY** command, you will receive guest invitations.
-- Until **END** command, you will receive a second list with guests that actually cаme to the party.
+
+- Until `PARTY` command, you will receive guest invitations.
+
+- Until `END` command, you will receive a second list with guests that actually cаme to the party.
+
 ## Output 
-- On the first line print the count of the guests who didn't come to the party.
-- On the next lines print all guests, who didn't come to the party (**VIP must be first**).
 
+- On the first line print the count of the guests who did not come to the party.
 
+- On the next lines print all guests, who did not come to the party (**VIP must be first**).
 
 ## Examples
 | **Input** | **Output** |
@@ -1157,9 +1122,9 @@ xys2FYzn
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Card Game
-[code-task title=""War" - Number Game" taskId="dbb3fd50-530f-4843-88f4-ad596cfd8960" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Game" taskId="java-advanced-sets-and-maps-advanced-Card-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1263,9 +1228,9 @@ Second player win!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Card Game
-[code-task title=""War" - Number Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

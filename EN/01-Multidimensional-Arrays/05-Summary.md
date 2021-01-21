@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+## In this lesson you learnt:
 
 - What is Multidimensional Array?
     - Arrays can have more than one dimension, e.g. matrices
