@@ -1,7 +1,8 @@
 # Lesson Introduction
 
-[slide]
-# Table of Contents
+[slide hideTitle]
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="497191712/e39ff079e1" default /]
@@ -10,24 +11,29 @@
 
 ## In this lesson you will learn:
 
-**1. What is HTTP**
+**1. The HTTP Overview​**
 
--  Overview of HTTP
+- HTTP Protocol
 
 **2. HTTP Developer Tools**
 
--  Browser Dev Tools
--  Postman
+- Chrome Dev Tools
+- Fiddler
+- Postman
 
-**3. REST**
+**3. REST and RESTful Services​**
 
--  RESTful services in JavaScript
+- Definition
+- REST Architectural Constraints
 
-**4. Accessing GitHub API**
+**4. Accessing the GitHub API**
+
+- Labels Issue
+- Create an Issue
 
 **5. AJAX**
 
--  Fetch API
 -  Promises Basics
+-  Fetch AP
 
 [/slide]
