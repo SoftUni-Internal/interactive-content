@@ -1,6 +1,6 @@
 # Problem 2: Press House
 
-[slide]
+[slide hideTitle]
 # Description
 
 [code-task title="Task Manager" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -14,7 +14,7 @@ function pressHouse(){
 [task-description]
 # Description
 
-Your need to create several classes for **Press House.**
+You need to create several classes for **Press House**.
 
 **Implement** the following classes:
 `Article`, `ShortReports`, `BookReview`.
@@ -23,97 +23,102 @@ Your need to create several classes for **Press House.**
 
 - `constructor(title, content)` 
 
-Should have these 2 properties:
+The **Article** class should have **2 properties**:
 
-title \- string
+- **title** \- string
 
-content \- string  
+- **content** \- string  
 
-- `toString()`
 
-This function should return the title and the content:
-`Title: {title}`
-`Content: {content}`
+
+The `toString()` function should return the title and the content:
+
+```
+Title: {title}
+Content: {content}
+```
 
 ## ShortReports
-Class `ShortReports` inherits class Article.
+The `ShortReports` class inherits from the **Article** class.
 
 - `constructor(title, content, originalResearch)`
 
-Should have these **4 properties:**
+**ShortReports** should have **4 properties:**
 
-title \- string,
+- **title** \- string
  
-content \- string, 
+- **content** \- string
 
-originalResearches \- object with properties title and author
+- **originalResearches** \- an object with properties **title** and **author**
 
-comments \- array of strings
+- **comments** \- an array of strings
 
-As we create a short reports here we have a length limit for the **content** property \- it should be less than 150 symbols, otherwise throw an error with the next message:
+The goal is to create short reports. You should limit the length of characters that can be stored in the **content** property. It should accept a report of **less than 150 symbols**. If the submitted content exceeds the limit you should throw an error with the following message:
 
-`Short reports content should be less then 150 symbols.`
+`Short reports content should be less than 150 symbols.`
 
-The property should have the both required properties, otherwise throw error with this message:
+The **originalResearches** object is should contain both **author** and **title**. If it does not then throw an error with the following message:
 
 `The original research should have author and title.`
 
-- `addComment(comment)`
-
-This function should receive single comment like string, add it to the comments array and return a message:
+- `addComment(comment)`. This function should receive a single comment as a string, add it to the **comments array** and return this message: 
 
 `The comment is added.`
 
-- `toString()`
-
-This function should extend the toString method of class Article adding same more lines like:
+- `toString()`. This function should extend the `toString()` method of the  **Article** class by adding some additional lines:
 
 `Original Research: { title } by { author }`
 
-And if there are any comments you should print on a new line
-
-`Comments:`
-
-and then all comments each on a new line.
+And if there are any comments then print them in this format:
+```
+Comments:
+Comment content goes here
+Comment content goes here
+//and so on
+```
 
 **Note: For more information see the examples below!**
 
 ## BookReview
 
-Class `BookReview` inherits class `Article`.
+The `BookReview` class inherits from the `Article` class.
 
 - `constructor(title, content, book)`
 
-Should have these **4 properties:**
+**BookReview** should have **4 properties:**
 
-   - title \- string,  
-   - content \- string, 
-   - book \- object with properties name and author,
-   - clients \- array of objects,
+   - **title** \- string
+   - **content** \- string
+   - **book** \- an object with properties **name** and **author**
+   - **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
 
-The client object should have the following structure `{clientName, orderDescription}`.
+`addCustomer(customerName,  orderDescription)`: 
 
-- `addClient(clientName,  orderDescription)`
+This **function** should receive `customerName` and `orderDescription` as strings.  
 
-This **function** should receive `clientName` and `orderDescription` as strings. 
+Here you should check the **customers array** and the same order has already been placed by the same customer, throw an error with the following message: 
 
-Here you should check our clients array and if we already have this order from the same client throw error with next message: 
+`This customer has already ordered this review.`
 
-`This client has already ordered this review.`
+Otherwise, add the **customer** object into the **customers array** and return this message:
 
-Otherwise we add our client object into the clients array and return a message:
+`{ customerName } has ordered a review for { book name }`
 
-`{ clientName } has ordered a review for { book name }`
+`toString()`: 
 
-- `toString()` 
-
-This **function** should extend the `toString()` method of class `Article` adding same more lines like:
+This **function** should extend the `toString()` method of the `Article` class by adding some more lines:
 
 `Book: { book name }`
 
-And if there are any orders you should print all orders each on a new line:
-`Orders:`
-`{ clientName } - { orderDescription }.`
+Additionally, if there are **any orders** you should print each of them on a new line:
+
+```
+Orders:
+{ customerName } - { orderDescription }.
+{ customerName } - { orderDescription }.
+{ customerName } - { orderDescription }.
+//and so on
+```
 
 **Note:  For more information see the examples below!**
 
@@ -124,7 +129,7 @@ And if there are any orders you should print all orders each on a new line:
 [image assetsSrc="exam-prep-pic6.png" /]
 
 # Examples
-This is an example how the code is **intended to be used:**
+This is an example of how the code is **intended to be used:**
 
 **Sample code usage** 
 ```js
@@ -132,14 +137,14 @@ let classes = solveClasses();
 let lorem = new classes.Article("Lorem", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel…");
 console.log(lorem.toString()); 
 ------------------------------
-let short = new classes.ShortReports("SpaceX and Javascript", "Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?", { title: "Dragon 2", author: "wikipedia.org" });
-console.log(short.addComment("Thank god they didn't use java."))
-short.addComment("In the end JavaScript"s features are executed in C++ — the underlying language.")
+let short = new classes.ShortReports("SpaceX and Javascript", "Yes, it is true that in its recent launch, the SpaceX Dragon 2 Flight used technology based on Chromium and JavaScript. What are your views on this?", { title: "Dragon 2", author: "wikipedia.org" });
+console.log(short.addComment("Thank God they didn't use Java."))
+short.addComment("In the end the JavaScript features are executed in C++ - the underlying language.")
 console.log(short.toString()); 
 ------------------------------
-let book = new classes.BookReview("The Great Gatsby is so much more than a love story", "The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...", { name: "The Great Gatsby", author: "F Scott Fitzgerald" });
-console.log(book.addClient("The Guardian", "100 symbols"));
-console.log(book.addClient("Goodreads", "30 symbols"));
+let book = new classes.BookReview("The Great Gatsby is so much more than a love story", "The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...", { name: "The Great Gatsby", author: "F. Scott Fitzgerald" });
+console.log(book.addCustomer("The Guardian", "100 symbols"));
+console.log(book.addCustomer("Goodreads", "30 symbols"));
 console.log(book.toString()); 
 ```
 
@@ -151,11 +156,11 @@ Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tort
 ----------------------
 The comment is added.
 Title: SpaceX and Javascript
-Content: Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?
+Content: Yes, it is true that in its recent launch, the SpaceX Dragon 2 Flight used technology based on Chromium and JavaScript. What are your views on this?
 Original Research: Dragon 2 by wikipedia.org
 Comments:
-Thank god they didn't use java.
-In the end JavaScript's features are executed in C++ \- the underlying language.
+Thank god they didn't use Java.
+In the end the JavaScript features are executed in C++ - the underlying language.
 ----------------------
 The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
@@ -213,8 +218,8 @@ yes
 //BookReview toString test
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        output = book.addClient('The Guardian', '100 symbols');
-        output += '\n' + book.addClient('Goodreads', '30 symbols');
+        output = book.addCustomer('The Guardian', '100 symbols');
+        output += '\n' + book.addCustomer('Goodreads', '30 symbols');
         output += '\n' + book.toString();
         expectedOutput = `The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
@@ -237,7 +242,7 @@ let classes = result()
 let longContent = 'Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?'
          
 expect(function()\{new classes.ShortReports('SpaceX and Javascript', longContent, \{ title: 'Dragon 2', author: 'wikipedia.org' \})\})
-        .to.throw(Error, 'Short reports content should be less then 150 symbols.')
+        .to.throw(Error, 'Short reports content should be less than 150 symbols.')
 [/input]
 [output]
 yes
@@ -298,12 +303,12 @@ yes
 [/test]
 [test]
 [input]
-// BookReview throw -- This client has already ordered this review.
+// BookReview throw -- This customer has already ordered this review.
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        book.addClient('The Guardian', '100 symbols');
+        book.addCustomer('The Guardian', '100 symbols');
                
-        expect(function()\{ book.addClient('The Guardian', '100 symbols'); \}).to.throw(Error, `This client has already ordered this review.`)
+        expect(function()\{ book.addCustomer('The Guardian', '100 symbols'); \}).to.throw(Error, `This customer has already ordered this review.`)
 [/input]
 [output]
 yes
