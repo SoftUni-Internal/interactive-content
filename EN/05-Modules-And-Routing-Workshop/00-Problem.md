@@ -7,9 +7,9 @@
 
 So far, we have created one dynamic page which lists all the themes sorted by two different criteria. 
 
-The next step is to implement few more pages and route between them. 
+The next step is to implement a few more pages and routes between them. 
 
-You will be provided with **HTML** and **CSS** skeleton for all other additional pages that you must create. 
+Use the **HTML** and the **CSS** skeleton for all other additional pages that you must create. 
 
 There is one catch, half of these pages require **authentication**. 
 
@@ -119,11 +119,11 @@ For now, we do not have a database with user registration, so make sure each reg
 
 # Themes page - Not Logged in
 
-This is the themes page URL `localhost:4200/themes`. This is the page we already have. 
+This is the themes page URL `localhost:4200/themes`.
 
 All "**users**" can access this page when they visit the main forum page. 
 
-By clicking the title of a theme, you will be redirect to the theme content view. 
+By clicking the title of a theme, you will be redirected to the theme content view. 
 
 There are several differences between the logged and anonymous user. 
 
@@ -169,11 +169,11 @@ This is the theme comments URL `localhost:4200/themes/:themeId`, where the user 
 
 # Create New Theme - Logged in only
 
-This is the create new theme page URL `localhost:4200/themes` where each logged in user can create his or her own theme.
+This is the create new theme page URL `localhost:4200/themes` where each logged-in user can create a theme.
 
 When "**Post**" button is clicked, you can try to make "**POST**" request to `localhost:4200/themes` with the given theme information. 
 
-After successful creation, redirect the current "**user**" to the theme comments page of his or her new created theme.
+After successful creation, redirect the current "**user**" to the theme comments page.
 
 When "**Cancel**" button is clicked, redirect the user to the **Home** page.
 
@@ -187,11 +187,11 @@ When "**Cancel**" button is clicked, redirect the user to the **Home** page.
 
 This is the profile page URL `localhost:4200/profile`. 
 
-This page will show the information about the currently logged in user. 
+This page will show the information about the currently logged-in user. 
 
-For now, the data in this page will be static, except if you create more than the fake **isLoggedIn** property. 
+For now, the data on this page will be static, except if you create more than the fake **isLoggedIn** property. 
 
-The "**Edit**" button will replace the information fields with input fields, but this will be made in the next workshop, when you learn more about handling forms.
+The "**Edit**" button will replace the information fields with input fields, but this will be made in the next workshop when you learn more about handling forms.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(11).png" /]
 
