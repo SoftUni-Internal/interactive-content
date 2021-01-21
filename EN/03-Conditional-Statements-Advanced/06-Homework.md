@@ -1,7 +1,6 @@
 # Homework
 
-
-[slide]
+[slide hideTitle]
 # Problem: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-java-Conditional-Statements-A-fruit-or-vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -74,7 +73,7 @@ vegetable
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -154,7 +153,7 @@ Sunday
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel or Consonant
 [code-task title="Vowel or Consonant" taskId="pb-java-Conditional-Statements-A-vowel-or-consonant" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -225,7 +224,7 @@ Consonant
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Product of 3 Numbers
 [code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -309,7 +308,7 @@ zero
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sorted Numbers
 [code-task title="Sorted Numbers" taskId="pb-java-Conditional-Statements-A-Sorted-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -412,7 +411,7 @@ Descending
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -465,7 +464,7 @@ Hotel
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cinema
 [code-task title="Cinema" taskId="pb-java-Conditional-Statements-A-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -517,7 +516,7 @@ Normal
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Operations with Numbers
 [code-task title="Operations with Numbers" taskId="pb-java-Conditional-Statements-A-operations-with-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -604,7 +603,7 @@ Write a program to apply an operator for given two numbers:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: ATM
 [code-task title="ATM" taskId="pb-java-Conditional-Statements-A-ATM" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -659,7 +658,7 @@ The withdraw was successful.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Biggest of Five Numbers
 [code-task title="Biggest of Five Numbers" taskId="pb-java-Conditional-Statements-A-Biggest-of-five-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -719,7 +718,7 @@ Write a program to find the biggest among 5 numbers
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Personal Titles
 [code-task title="Personal Titles" taskId="pb-java-Conditional-Statements-A-Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -912,7 +911,7 @@ Mr.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Fuel Tank
 [code-task title="Fuel Tank" taskId="pb-java-Conditional-Statements-A-Fuel-tank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1036,7 +1035,7 @@ Invalid fuel!
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Trade Commissions
 [code-task title="Trade Commissions" taskId="pb-java-Conditional-Statements-A-Trade-Commisions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1254,9 +1253,9 @@ error
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Point on Rectangle Border
-[code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Borer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Border" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1549,7 +1548,7 @@ Inside / Outside
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Summer Outfit
 [code-task title="Summer Outfit" taskId="pb-java-Conditional-Statements-A-Summer-Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1719,7 +1718,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Prolem: Fishing Boat
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1978,7 +1977,7 @@ Yes! You have 1750.00 dollars left.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Flowers
 [code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -1,7 +1,6 @@
 # Homework
 
-
-[slide]
+[slide hideTitle]
 # Problem: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-java-Conditional-Statements-A-fruit-or-vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -16,21 +15,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to check for fruit or vegetable:
+## Descriere
+Scrieți un program pentru a verifica fructele sau legumele:
 
-* Read a single input line: an item from the greengrocery
-* Fruits: banana, apple, kiwi, cherry, lemon, grapes
-* Vegetables: cucumber, pepper, carrot, onion
-* Print: **"vegetable"**, **"fruit"** or **"unknown"**
+* Citiți o singură linie de intrare: un articol din legume
+* Fructe: banana, apple, kiwi, cherry, lemon, grapes
+* Legume: cucumber, pepper, carrot, onion
+* Imprimați: **"vegetable"**, **"fruit"** sau **"unknown"**
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | lemon | fruit |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | carrot | vegetable |
 
@@ -74,7 +73,7 @@ vegetable
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Day of Week
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -89,20 +88,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to print the day of week as words:
+## Descriere
+Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-* Read and integer **n**: the **day of the week** in range [1..7]
-* Print the **name of the day** (as words, in English)
-* Print **"Error"** if the number is not in the given range
+* Citire și număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
+* Imprimați **numele zilei** (ca un cuvânt, în engleză)
+* Imprimați **"Error"**, dacă numărul nu se află în intervalul dat
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Monday |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 8 | Error |
 
@@ -154,7 +153,7 @@ Sunday
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel or Consonant
 [code-task title="Vowel or Consonant" taskId="pb-java-Conditional-Statements-A-vowel-or-consonant" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -169,19 +168,18 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to check a letter for vowel or consonant:
+# Descriere
+Scrieți un program pentru a verifica o literă pentru vocală sau consoană:
 
-* Read a **letter** from the English alphabet
-* Print either **"Vowel"** or **"Consonant"**
+* Citiți o **literă** din alfabetul englez
+* Imprimați **"Vowel"** sau **"Consonant"**
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | a | Vowel |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
 | --- | --- |
 | B | Consonant |
 
@@ -225,7 +223,7 @@ Consonant
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Product of 3 Numbers
 [code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -240,22 +238,22 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Calculate the sign of the product of 3 numbers:
+# Descriere
+Calculați semnul produsului de 3 numere:
 
-* Read **3 floating-point** numbers
-* Print the **sign** of the product of the entered 3 numbers: **positive**, **negative** or **zero**
-* Try to do this **without multiplying** the numbers
+* Citiți **3 numere în virgulă mobilă**
+* Imprimați semnul al produsului celor 3 numere introduse: **positive**, **negative** sau **zero**
+* Încercați să faceți acest lucru **fără a înmulți** numerele
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | negative |
 | 3 |  |
 | -1 |  |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 2 | positive |
 | 3 |  |
@@ -309,7 +307,7 @@ zero
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sorted Numbers
 [code-task title="Sorted Numbers" taskId="pb-java-Conditional-Statements-A-Sorted-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -324,31 +322,31 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which checks for **sorted 3 numbers**:
+# Descriere
+Scrieți un program, care verifică **3 numere sortate**:
 
-* Read 3 real numbers
-* Print **"Ascending"** if the numbers are in ascending order
-* Print **"Descending"** if the numbers are in descending order
-* Print **"Not sorted"** in any other case
+* Citiți 3 numere reale
+* Tipăriți **"Ascending"** dacă numerele sunt în ordine crescătoare
+* Tipăriți **"Descending"** dacă numerele sunt în ordine descrescătoare
+* Tipăriți **"Not sorted"** în orice alt caz
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Ascending |
 | 2 |  |
 | 3 |  |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Not sorted |
 | 5 |  |
 | 2 |  |
 
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+|**Intrare** |**Ieșire**|
 | --- | --- |
 | 5 | Descending |
 | 4 |  |
@@ -412,7 +410,7 @@ Descending
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -427,21 +425,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which calculates vacation expenses:
+# Descriere
+Scrieți un program, care calculează cheltuielile de vacanță:
 
-* Read season, accommodation type and count of the days
-* Print the total expenses, based on the price table bellow,formatted to the 2nd * digit after the decimal point
+* Citiți sezonul, tipul de cazare și numărul zilelor
+* Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră ** după punctul zecimal
 
-|Season|Hotel|Camping|Discount|
+| Sezon | Hotel | Camping | Reducere |
 |-----|------|-------|--------|
 |Spring|30|10|20%|
 |Summer|50|30|0%|
 |Autumn|20|15|30%|
 |Winter|40|10|10%|
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Winter | 180.00 |
 | Hotel |  |
@@ -465,7 +463,7 @@ Hotel
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cinema
 [code-task title="Cinema" taskId="pb-java-Conditional-Statements-A-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -480,11 +478,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Calculate the **price** for all the tickets for a cinema movie:
-
-* Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
-* Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
+# Descriere
+Calculați **prețul** pentru toate biletele pentru un film cinematografic:
+* Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
+* Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
 
 |Type|Price|
 |-----|----|
@@ -492,8 +489,8 @@ Calculate the **price** for all the tickets for a cinema movie:
 |Normal|7.50|
 |Discount|5.00|
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Normal | 810.00 |
 | 12 |  |
@@ -517,7 +514,7 @@ Normal
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Operations with Numbers
 [code-task title="Operations with Numbers" taskId="pb-java-Conditional-Statements-A-operations-with-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -532,15 +529,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to apply an operator for given two numbers:
+# Descriere
+Scrieți un program pentru a aplica un operator pentru două numere date:
 
-* Read **two integers** and **math operator** from the console
-* The math operator could be: "+", "-", "/", "%" and "*"
-* The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
+* Citiți **două numere întregi** și **operatorul matematic** de pe consolă
+* Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
+* Rezultatul trebuie să fie în următorul **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 12 | 12 + 10 = 22 |
 | 10 |  |
@@ -604,7 +601,7 @@ Write a program to apply an operator for given two numbers:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: ATM
 [code-task title="ATM" taskId="pb-java-Conditional-Statements-A-ATM" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -619,23 +616,23 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to simulate an ATM withdrawal:
+# Descriere
+Scrieți un program pentru a simula retragerea unui bancomat:
 
-* Read: **balance**, **withdraw** and **limit**
-* Print **"The withdraw was successful."** if the balance is enough
-* Print **"The daily limit was exceeded."** if the limit is exceeded
-* Print **"Insufficient availability."** if the balance isn't enough
+Citiți: **balance**, **withdraw** și **limit**
+* Imprimați `The withdraw was successful.` Dacă soldul este suficient
+* Imprimați `The daily limit was exceeded.` Dacă limita este depășită
+* Imprimați `Insufficient availability.` dacă soldul nu este sufficient
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 420 | The withdraw was successful. |
 | 20 |  |
 | 25 |  |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 | The daily limit was exceeded. |
 | 50 | Insufficient availability. |
@@ -659,7 +656,7 @@ The withdraw was successful.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Biggest of Five Numbers
 [code-task title="Biggest of Five Numbers" taskId="pb-java-Conditional-Statements-A-Biggest-of-five-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -674,13 +671,13 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program to find the biggest among 5 numbers
-* Read **5 integers**
-* Print the **biggest** number
+# Descriere
+Scrieți un program pentru a găsi cel mai mare dintre 5 numere
+* Citiți **5 numere întregi**
+* Imprimați cel mai mare număr.
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | -1 | -1 |
 | -2 |  |
@@ -719,7 +716,7 @@ Write a program to find the biggest among 5 numbers
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Personal Titles
 [code-task title="Personal Titles" taskId="pb-java-Conditional-Statements-A-Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -734,30 +731,31 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a **console** program that reads **age (floating-point number)** and **gender**("**m**" or "**f**") and and prints an address according to these principles:
-- "**Mr.**" - a man (gender "**m**") of age 16 or more
-- "**Master**" - a boy (gender "**m**") under 16 years old
-- "**Ms.**" - a woman (gender "**f**") of age 16 or more
-- "**Miss**" - a girl (gender "**f**") under 16 years old
+Scrieți un program **consolă** care să citească **vârstă (număr în virgulă mobilă)** și **sex** ("**m**" sau "**f**") și să imprime o adresă în funcție de aceste principii:
+- "**Mr.**" - un bărbat (sex "**m**") cu vârsta de 16 ani sau mai mult
+- "**Master**" - un băiat (sex "**m**") sub 16 ani
+- "**Ms.**" - o femeie (sex "**f**") cu vârsta de 16 ani sau mai mult
+- "**Miss**" - o fată (sex "**f**") sub 16 ani
 
-## Input
-Entered from the console:
-- age - floating-point number
-- gender - "**m**" or "**f**"
+## Intrare
+Intrat de pe consolă:
+- vârstă - număr în virgulă mobilă
+- sex - "**m**"sau "**f**"
 
-## Output
-Print the expected address on a single line.
+## Ieșire
+Imprimați adresa așteptată pe o singură linie.
 
-## Example
 
-| **Input** | **Output** | 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 25 | Ms. |
 | f | |
 
-| **Input** | **Output** | 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- |  --- |
 | 13.5 | Master |
 | m | |
@@ -912,7 +910,7 @@ Mr.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Fuel Tank
 [code-task title="Fuel Tank" taskId="pb-java-Conditional-Statements-A-Fuel-tank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -927,31 +925,31 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that knows whether the tank of a vehicle needs refueling or not. 
+## Descriere
+Scrieți un program care să știe dacă rezervorul unui vehicul necesită realimentare sau nu.
 
-## Input
-The input is consists of 2 lines:
-- First you have to read from the console the type of fuel - text with options: "Diesel", "Gasoline" or "Gas"
-- The second line of input reads the fuel in the tank in liters
+## Intrare
+Intrarea este formată din 2 linii:
+- Mai întâi trebuie să citiți de pe consolă tipul de combustibil - text cu opțiuni: "Diesel", "Gasoline" sau "Gas"
+- A doua linie de intrare citește combustibilul din rezervor în litri
 
-## Output
-- If the fuel is other than the specified print "Invalid fuel!".
-- Otherwise if the fuel in the tank is more than or equal to 25 liters print:
-    - "You have enough \{type of fuel\}."
-    - Type of the fuel should be printed in lower case.
-- Otherwise print:
-    - "Fill your tank with \{type of fuel\}!". 
-    - Type of the fuel should be printed in lower case.
+## Ieșire
+- Dacă combustibilul este altul decât tipărirea specificată "Invalid fuel!".
+- În caz contrar, dacă combustibilul din rezervor este mai mare sau egal cu 25 litri de imprimare:
+     - "You have enough \{type of fuel\}."
+     - Tipul de combustibil trebuie imprimat cu litere mici.
+- Altfel tipăriți:
+     - "Fill your tank with \{type of fuel\}!". 
+     - Tipul de combustibil trebuie imprimat cu litere mici.
 
-### Example
+### Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Diesel | Fill your tank with diesel! |
 | 10 | |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Gas | You have enough gas. |
 | 25 | |
@@ -1036,7 +1034,8 @@ Invalid fuel!
 [/slide]
 
 
-[slide]
+
+[slide hideTitle]
 # Problem: Trade Commissions
 [code-task title="Trade Commissions" taskId="pb-java-Conditional-Statements-A-Trade-Commisions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1051,37 +1050,37 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-A company pays the following commissions to its employees according to the city they work in and the amount of sales:
+O companie plătește angajaților săi următoarele comisioane în funcție de orașul în care lucrează și de valoarea vânzărilor:
 
-| **Sales / City** | London | New York | Sydney|
+| **Vânzări / Oraș** | London | New York | Sydney|
 | --- | --- | --- | --- | 
 | \[0-500\] | 5% | 4.5% | 5.5% |
 | \[501-1000\] | 7% | 7.5% | 8% | 
 | \[1001-10000\] | 8% | 10% | 12% |
 | > 10000| 12% | 13% | 14.5% |
 
-Write a console program that reads as input the **name of a city** and the **amount of sales** and calculates the value of the **trade commission**. 
+Scrieți un program de consolă care să citească ca intrare **numele unui oraș** și **suma vânzărilor** și să calculeze valoarea **comisionului comercial**.
 
-## Input
-Read from the console two lines:
-- Name of a city - String
-- Amount of sales - floating-point number
+## Intrare
+Citiți de pe consolă două linii:
+- Numele unui oraș - Șir
+- Valoarea vânzărilor - număr în virgulă mobilă
 
-## Output
-- Print on the console the calculated value of trade commission.
-- The result should be **formatted to the second decimal point**. 
-- If you receive **invalid** name of city **or** amount of sales (negative number), print "**error**".
+## Ieșire
+- Tipăriți pe consolă valoarea calculată a comisionului comercial.
+- Rezultatul ar trebui să fie **formatat cu a doua zecimală**.
+- Dacă primiți **invalid** numele orașului **sau** suma vânzărilor (număr negativ), tipăriți "**error**".
 
-## Example
-| **Input** | **Output** |  
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | London | 120.00 | 
 | 1500 | |  
 
 
-| **Input** | **Output** | 
+| **Intrare** | **Ieșire** |
 | --- | --- | 
 | Moscow | error |
 | -50 | |
@@ -1254,9 +1253,9 @@ error
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Point on Rectangle Border
-[code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Borer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Border" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1269,21 +1268,21 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to check if a **point {x, y}** is **on** some of the sides of a rectangle **{x1, y1} – {x2, y2}**.  
+## Descriere
+Scrieți un program pentru a verifica dacă un **punct {x, y}** este **pe** una dintre laturile unui dreptunghi **{x1, y1} - {x2, y2}**.
 
-## Input
-The input comes from the console and it consists of **6 rows, introduced from the user: real numbers x1, y1, x2, y2, x and y** (it will be always true that **x1 < x2** and **y1 < y2**).
+## Intrare
+Intrarea provine de pe consolă și constă din **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că**x1 < x2** și **y1 < y2**).
 
-## Output
-If the point lies on one of the rectangle's sides:
-- Print "**Border**"
+## Ieșire
+Dacă punctul se află pe una dintre laturile dreptunghiului:
+- Tipăriți "**Border**"
 
-If the point does NOT lie on a side:
-- Print "**Inside / Outside**"
+Dacă punctul NU se află pe o latură:
+- Tipăriți "**Inside / Outside**"
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** 
 | --- | --- |
 | 2 | Inside / Outside |
 | -3 | |
@@ -1292,7 +1291,7 @@ If the point does NOT lie on a side:
 | 8 | |
 | -1 | | 
 
-| **Input** | **Output** | 
+| **Intrare** | **Ieșire** 
 |  --- | --- |
 | 2 | Border|
 | -3 | |
@@ -1301,12 +1300,13 @@ If the point does NOT lie on a side:
 | 12 | |
 | -1 | |
 
-\* **Hint**: use one or more conditional **if** statements with logical operations. A point **{x, y}** lies on aside of a rectangle **{x1, y1} – {x2, y2}**, if one of the specified conditions is fulfilled:
+\* **Sugestie**: utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află lângă un dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
 
-- **x** equals **x1** or **x2** and at the same time **y** is between **y1** and **y2**
-- **y** equals **y1** or **y2** and at the same time **x** is between **x1** and **x2**
+- **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
+- **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
 
-You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
+Puteți verifica condițiile de mai sus folosind o construcție mai complicată **if** - **else** sau folosind câteva instrucțiuni condiționale mai simple sau **instrucțiunilor imbricate if-else**.
+
 [/task-description]
 [tests]
 [test open]
@@ -1549,7 +1549,7 @@ Inside / Outside
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Summer Outfit
 [code-task title="Summer Outfit" taskId="pb-java-Conditional-Statements-A-Summer-Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1564,14 +1564,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-It's summer with changeable weather and Victor needs your help. 
+## Descriere
+Este vară cu vreme schimbătoare și Victor are nevoie de ajutorul vostru.
 
-Write a program that recommends Victor which clothes to choose **according to the part of day and degrees (Celsius)**. 
+Scrieți un program care să-i recomande lui Victor ce haine să aleagă **în funcție de partea de zi și de grade (Celsius)**.
 
-Your friend has different plans for every part of the day with different outfits – check the **table** below.
+Prietenul vostru are planuri diferite pentru fiecare parte a zilei, cu ținute diferite - vedeți **tabelul** de mai jos.
 
-| **Part of Day / Degrees** | Morning | Afternoon | Evening |
+| **O parte din zi / Grade** | Morning | Afternoon | Evening |
 | --- | --- | --- | --- |
 | 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
 | | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
@@ -1580,17 +1580,18 @@ Your friend has different plans for every part of the day with different outfits
 | deg >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
 | | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
 
-## Input
-**Read two lines of input:**
-- **Degrees** - an integer in range \[10…42\]
-- **Part of day** - text - possibilities: "Morning", "Afternoon", "Evening"
 
-## Output
-- Print on the console a **single** line:
+## Intrare
+**Citiți două linii de intrare:**
+- **grade** - un număr întreg în intervalul \[10…42\]
+- **O parte din zi**- text - posibilități: "Morning", "Afternoon", "Evening"
+
+## Ieșire
+- Imprimați pe consolă o linie **unică**:
     - It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 16 | It\'s 16 degrees, get your Sweatshirt and Sneakers. |
 | Morning | |
@@ -1719,7 +1720,7 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Prolem: Fishing Boat
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1734,58 +1735,58 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Tony and his friends decided to rent a boat - the rent depends on the **season** and the **number** of fishermen.
+Tony și prietenii săi au decis să închirieze o barcă - chiria depinde de **sezon** și de **numărul** de pescari.
 
-**The price** on the basis of **season**:
-- **Spring - 3000 $**
-- **Summer and autumn - 4200 $**
-- **Winter - 2600 $**
+**Prețul** pe baza **sezonului**:
+- **Primăvară - 3000 $**
+- **Vara și toamna - 4200 $**
+- **Iarna - 2600 $**
 
-**The price** on the basis of **number** of fishermen uses **discount:**
-- If the group is **up to 6 people (inclusive) -  10% discount**
-- If the group members are in range \[7…11\] -  **15% discount**
-- If the group is **12 or more people - 25% discount**
+**Prețul** pe baza **numărului** de pescari utilizează **reducere:**
+- Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
+- Dacă membrii grupului se află în intervalul \[7…11\] -  **15% reducere**
+- Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
-The fishermen use another **5 % discount if they are even number** except when it is **NOT** autumn – then they do **NOT** have additional discount.
+Pescarii folosesc încă o reducere de **5% dacă sunt un număr par**, cu excepția cazului în care **NU** este toamna - atunci **NU** au reducere suplimentară.
 
-Write a **program** to **calculate** whether the fishermen will gather **enough** money.
+Scrieți un **program** pentru ** a calcula** dacă pescarii vor strânge **suficienți** bani.
 
-## Input
-The input is consists of exactly **3 lines**:
-- The **budget** of the group - real number in range \[1…8000\]
-- **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
-- **Number** of fishermen - integer in range \[4…18\]
+## Intrare
+Intrarea este alcătuită exact din **3 linii**:
+- **bugetul** al grupului - număr real în intervalul \[1…8000\]
+- **Sezon** - Șir: "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
+- **Numărul** de pescari - număr întreg în intervalul \[4…18\]
 
-## Output
-Print on the console a **single** line:
-- If the budget **IS** enough: "Yes! You have \{money left\} dollars left."
-- If the budget **IS NOT** enough: "Not enough money! You need \{money needed\} dollars."
+## Ieșire
+Imprimați pe consolă o linie **unică**:
+- Dacă bugetul **ESTE** suficient: "Yes! You have \{money left\} dollars left."
+- Dacă bugetul **NU este** suficient: "Not enough money! You need \{money needed\} dollars."
 
-**The prices should be formatted to the second decimal point.**
+**Prețurile trebuie formatate cu a doua zecimală.**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3000 | Not enough money! You need 570.00 dollars. |
 | Summer | |
 | 11 | |
 
-### Comments
-- In the summer fishing costs 4200$,
-- **11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
-- 3000 <= 3570, hence they need 570.00 $ more
+### Comentarii
+- Vara, pescuitul costă 4200 USD,
+- **11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
+- 3000 <= 3570, deci au nevoie de 570,00 $ mai mult
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2000 | Yes! You have 50.00 dollars left. |
 | Winter | |
 | 13 | |
 
-## Example
-| **Input** | **Output** |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3600 | Yes! You have 1035.00 dollars left. |
 | Spring | |
@@ -1978,7 +1979,7 @@ Yes! You have 1750.00 dollars left.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Flowers
 [code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1993,43 +1994,41 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-A flower market offers **3 types of flowers: lilia**, **roses** and **tulips**. The prices depend on the season:
+O piață de flori oferă **3tipuri de flori: lilia**, **trandafiri** și **lalele**. Prețurile depind de sezon:
 
 | **Season** | **Lilia** | **Rose** | **Tulip** |
 | --- | --- | --- | --- |
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
 | **Autumn / Winter** | **3.75$** | **4.50$** | **4.15$** |
 
-On holidays the prices of all flowers **increase by 15%**.
+La sărbători prețurile tuturor florilor **cresc cu 15%**.
 
-The market offers the following **discounts**:
-- If you buy **7 or more tulips during the spring** - **5% of the price of the whole bouquet**
-- If you buy **10 or more roses during the winter** - **10% of the price of the whole bouquet**
-- If you buy **more than 20 flowers in total during ALL seasons - 20% of the price of the whole bouquet**
+Piața oferă următoarele **reduceri**:
+- Dacă cumpărați **7 sau mai multe lalele în timpul primăverii** - **5% din prețul întregului buchet**
+- Dacă cumpărați **10 sau mai mulți trandafiri în timpul iernii** - **10% din prețul întregului buchet**
+- Dacă cumpărați **mai mult de 20 de flori în total în TOATE anotimpurile - 20% din prețul întregului buchet**
 
-**The discounts are applied in the specified order above and can be superimposed!**
+**Toate reducerile trebuie aplicate după creșterea prețurilor în vacanță!**
 
-**All of the discounts should be applied after the increasing of the prices in holidays!**
+Prețul aranjamentului buchetului este **întotdeauna** 2 dolari.
 
-The price of the bouquet arrangement is **always** 2 dollars. 
+Scrieți un program pentru a **calcula** prețul unui buchet.
 
-Write a program to **calculate** the price of a bouquet.
+## Intrare
+Intrarea este citită din **consola** și este exact **5 linii**:
+- Numărul **liliilor** cumpărate - număr întreg în intervalul \[0 ... 200\]
+- Numărul de **trandafiri** cumpărați - număr întreg în intervalul \[0 ... 200\]
+- Numărul de **lalele** cumpărate - număr întreg în intervalul \[0 ... 200\]
+- **Sezon** - \[Spring, Summer, Аutumn, Winter\]
+- Dacă ziua este **de sărbătoare** - \[Y - yes / N - no\]
 
-## Input
-The input is read from the **console** and is exactly **5 lines**:
-- Count of the bought **lilias** - integer in range \[0 ... 200\]
-- Count of the bought **roses** - integer in range \[0 ... 200\]
-- Count of the bought **tulips** - integer in range \[0 ... 200\]
-- **Season** - \[Spring, Summer, Аutumn, Winter\]
-- If the day is **holiday** - \[Y - yes / N - no\]
+## Ieșire
+Imprimați pe consolă un **număr unic** - prețul florilor, **formatat la a doua zecimală**.
 
-## Output
-Print on the console a **single number** - the price of the flowers, **formatted to the second decimal point**.
-
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | 46.14 |
 | 4 | |
@@ -2037,12 +2036,12 @@ Print on the console a **single number** - the price of the flowers, **formatted
 | Spring | |
 | Y | |
 
-### Comments
-- **Price: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
-- **Holiday** 40.40 + **15%** = 46.46 $
-- **5% discount for more than 7 tulips during the spring** - 44.14
-- In total the flowers are 20 or less - there **isn't a discount**
-- **44.14 + 2 for arrangement = 46.14 $** 
+### Comentarii
+- **Preț: 2\*2.00 + 4\*4.10 + 8\*2.50 = 40.40 $** 
+- **Vacanță** 40.40 + **15%** = 46.46 $
+- **Reducere de 5% pentru mai mult de 7 lalele în primăvară** - 44.14
+- În total florile sunt de 20 sau mai puțin - nu există **o reducere**
+- **44.14 + 2 pentru aranjament = 46.14 $** 
 
 [/task-description]
 [tests]
@@ -2185,3 +2184,15 @@ Y
 
 
 
+
+
+
+
+
+
+[slide]
+# Homework Results
+
+[tasks-results/]
+
+[/slide]

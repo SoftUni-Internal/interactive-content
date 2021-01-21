@@ -1,7 +1,7 @@
-[slide]
+[slide hideTitle]
 # Summary
 
-## In this lesson we learned: 
+# In this lesson we learned: 
 
 - What are nested conditional statements
 
@@ -54,12 +54,6 @@ switch (selector) {
 - Repeating blocks of code
 
   * for-loops
-
-```java live
-for (int i = 1; i <= 10; i += 1) {
-  System.out.println(i);
-}
-```
 
 - For loop with a **Step**
 
