@@ -1,5 +1,8 @@
-[slide]
 # Error Handling
+
+[slide hideTitle]
+
+# Definition
 
 **Error handling** comprises of the **response** and **recovery procedures** from error conditions in an application.
 
@@ -42,7 +45,7 @@ The `toUppercase()` function will throw a TypeError, because it is invoked with 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Types of Errors
 
 The three most common types of **errors** are:
@@ -68,7 +71,7 @@ The three most common types of **errors** are:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Error Handling - Exceptions
 
@@ -103,7 +106,7 @@ console.log(George);   // Uncaught ReferenceError
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Error Handling - Special Values
 
@@ -128,7 +131,7 @@ let date = invalid.getDate(); // NaN
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Throwing Exceptions
 
 We use the `throw` statement to manually throw an exception:
@@ -147,7 +150,7 @@ If ``TypeError`` is thrown, the rest of the code **will not** be executed.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Try-Catch
 
 The **try-catch** construct consists of two main blocks: 
@@ -167,7 +170,7 @@ try {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exception Properties
 
 The `Error` object contains multiple properties:
