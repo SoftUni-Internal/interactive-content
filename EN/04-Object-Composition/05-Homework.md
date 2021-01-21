@@ -2,7 +2,7 @@
 
 [slide]
 # Problem: Order Rectangles
-[code-task title="Problem: Order Rectangles" taskId="js-advanced-DOM-Manipulations-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -229,7 +229,7 @@ yes
 
 [slide]
 # Problem: List Processor
-[code-task title="Problem: List Processor" taskId="js-advanced-DOM-Manipulations-List-Processor" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -336,7 +336,7 @@ yes
 
 [slide]
 # Problem: Object Factory
-[code-task title="Problem: Object Factory" taskId="js-advanced-DOM-Manipulations-Object-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -407,7 +407,7 @@ yes
 
 [slide]
 # Problem: Cars
-[code-task title="Problem: Cars" taskId="js-advanced-DOM-Manipulations-Cars" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -493,7 +493,7 @@ yes
 
 [slide]
 # Problem: Sum
-[code-task title="Problem: Sum" taskId="js-advanced-DOM-Manipulations-Sum" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -593,7 +593,7 @@ yes
 
 [slide]
 # Problem: Heroes
-[code-task title="Problem: Heroes" taskId="js-advanced-DOM-Manipulations-Heroes" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -697,7 +697,7 @@ yes
 
 [slide]
 # Problem: Construction Crew
-[code-task title="Problem: Construction Crew" taskId="js-advanced-DOM-Manipulations-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -853,7 +853,7 @@ yes
 
 [slide]
 # Problem: Car Factory
-[code-task title="Problem: Car Factory" taskId="js-advanced-DOM-Manipulations-Car-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Car Factory" taskId="js-advanced-object-composition-Car-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1097,7 +1097,7 @@ yes
 
 [slide]
 # Problem: Extensible Object
-[code-task title="Problem: Extensible Object" taskId="js-advanced-DOM-Manipulations-Extensible-Object" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1245,7 +1245,7 @@ yes
 
 [slide]
 # Problem: String Extension
-[code-task title="Problem: String Extension" taskId="js-advanced-DOM-Manipulations-String-Extension" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
@@ -1420,7 +1420,7 @@ yes
 
 [slide]
 # Problem: Sorted List
-[code-task title="Problem: Sorted List" taskId="js-advanced-DOM-Manipulations-Sorted List" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
