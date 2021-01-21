@@ -13,7 +13,7 @@ Steps to debug a program are:
 
 **Debugging tools** (called **debuggers**) help identify coding errors at various development stages.
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 
@@ -24,7 +24,7 @@ Steps to debug a program are:
 - Debugging
     - Means of diagnosing and correcting the root causes of errors that have already been detected
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 
@@ -40,7 +40,7 @@ Steps to debug a program are:
 
 E.g. the Cluster Spacecraft Failure was caused by a bug.
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 

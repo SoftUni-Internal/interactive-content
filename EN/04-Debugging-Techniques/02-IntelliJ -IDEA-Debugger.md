@@ -13,7 +13,7 @@
 - Debugging **multithreaded programs**
 - And many more…
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 
@@ -28,7 +28,7 @@
 [image assetsSrc="debugging-techniques-example(1).png" /]
 
 
-[slide]
+[/slide]
 
 
 [slide hideTitle]
