@@ -104,7 +104,7 @@ import { Renderer2 } from '@angular/core'
 
 [/slide]
 
-[slidee]
+[slide]
 
 # Renderer2 Usage
 
