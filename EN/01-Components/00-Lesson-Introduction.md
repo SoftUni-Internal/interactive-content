@@ -4,7 +4,7 @@
 
 # Table Of Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Components Basic Idea**
 
