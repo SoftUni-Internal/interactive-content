@@ -1,6 +1,6 @@
 # Softuni Forum Workshop: Part 2
 
-[slide]
+[slide hideTitle]
 
 # Task Requirements
 [Download resources here!](https://mega.nz/file/Sc532CZD#_xp-APUjJZCaLc--5pm8cuFspbfakoPp86-NLzGwqVw)
