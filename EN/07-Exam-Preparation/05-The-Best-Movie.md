@@ -1,6 +1,6 @@
-[slide]
-# Problem 06
-[code-task title="05-The-Best-Movie" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem: The Best Movie
+[code-task title="The Best Movie" taskId="java-basics-exam-prep-the-best-movie" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -13,44 +13,44 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-You are hired by a TV company to create a program that calculates whether it is possible for customers to purchase access to some TV series which they would like to watch. 
+## Descriere
+Sunteți angajat intr-o companie TV pentru a scrie un program care să calculeze dacă este posibil ca clienții să cumpere seria dorită.
 
-You receive a budget the number of series that the user will want to purchase.
+Aveți un buget și un număr de serii pe care utilizatorul va dori să le achiziționeze.
 
-Each item has a title and price.
+Fiecare serie are un titlu și un preț.
 
-There are discounts for some of the titles:
-- Thrones – 50%
-- Lucifer – 40%	
-- Protector – 30%
-- TotalDrama – 20%
+Unele dintre serii au o reducere:
+- Thrones - 50%
+- Lucifer - 40%
+- Protector - 30%
+- TotalDrama - 20%
 - Area – 10%
 
-## Input
-You receive from the console:
-- Budget - real number in the range [10.0… 100.0]
-- Number of series - n – whole number in range [1… 10]
+## Intrare
+Primiți de pe consolă:
+- Buget - număr real în intervalul \[10.0 ... 100.0\]
+- Numărați seria - n - un număr întreg în intervalul \[1 ... 10\]
 
-For each series you receive two lines:
-- Title of the series - string
-- Price for the series - real number in range [1.0… 15.0]
+Pentru fiecare serie primiți două rânduri:
+- Numele seriei - șir
+- Preț pentru o serie - un număr readl în intervalul \[1.0… 15.0\]
 
-## Output
-Print a single line on the console:
-- If the budget is greater than or equal to the price of the series: "You bought all the series and left with \{money left\}$"
-- If the budget is less than the price of the series: "You need \{money needed\}$ more to buy the series!"
+## Ieșire
+Imprimați o linie pe consolă:
+- Dacă bugetul dvs. este mai mare sau egal cu prețul seriei: "You bought all the series and left with \{money left\}$"
+- Dacă bugetul dvs. este mai mic decât prețul seriei: "You need \{money needed\}$ more to buy the series!"
 
-The result must be formatted to two decimal places.
+Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
-## Example
-| **Input** | **Output** | **Comments** |
+## Exemplu
+|**Intrare**|**Ieșire**|**Comentarii**|
 | --- | --- | --- |
-| 10 | You bought all the series and left with 0.50$ | You receive budget – 10$ and count of series - 3. |
-| 3 | | The first series is Thrones with price 5$, which has 50% discount from the price 5 - 50% = 2.50$. |
-| Thrones | | The second series is Riverdale, which does not have a discount on the price. |
-| 5 | | The third series also does not have a discount. |
-| Riverdale | | Price of series is 2.50 + 5 + 2 = 9.50$. Your budget is bigger than the price of series, so you can buy them.|
+| 10 | You bought all the series and left with 0.50$ | Primești buget - 10 $ și număr de serii - 3. |
+| 3 | | Prima serie este Thrones cu prețul de 5 $, care are 50% reducere din prețul 5 - 50% = 2,50 $. |
+| Thrones | | A doua serie este Riverdale, care nu are reducere la preț. |
+| 5 | | A treia serie, de asemenea, nu are reducere. |
+| Riverdale | | Prețul seriei este de 2,50 + 5 + 2 = 9,50 $. Bugetul dvs. este mai mare decât prețul seriilor, astfel încât să le puteți.|
 | 5 | | |
 | Gotham | | |
 | 2 | | |

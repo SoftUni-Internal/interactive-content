@@ -1,6 +1,6 @@
-[slide]
-# Problem 06
-[code-task title="05-The-Best-Movie" taskId="27-07-06" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Problem: The Best Movie
+[code-task title="The Best Movie" taskId="java-basics-exam-prep-the-best-movie" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -13,37 +13,36 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Until the command "STOP" you will be receiving movie titles.
+## Descriere
+Până la comanda "STOP" veți primi titlurile filmelor voastre preferate.
 
-The best movie for you will be the one that has the most points.
+Cel mai bun film pentru voi va fi cel care are cele mai multe puncte.
 
-Points are calculated by adding all of the ASCII character values in the movie title.
+Punctele sunt calculate ca suma valorilor caracterelor ASCII din titlul filmului.
 
-There will not be a case in which there are two films with an equal number of points.
+Nu va exista un caz în care să avem două filme cu un număr egal de puncte.
 
-Keep in mind the following:
-- For each lowercase letter in the movie title, you must subtract twice the length of the movie title from the final sum.
-- For each uppercase letter in the title, the length of the movie title should be subtracted from the final sum.
-There can be a maximum of 7 movie titles.
+Rețineți următoarele:
+- Pentru fiecare literă minusculă din titlu, trebuie să scădem din sumă de două ori lungimea titlului filmului.
+- Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă.
+Puteți avea maximum 7 titluri de film.
 
-## Input
-You receive multiple lines from the console until the command "STOP" is recieved or until the limit of 7 movies is reached:
-- Movie title – string;
+## Intrare
+Primiți mai multe linii de pe consolă până la comanda "STOP" sau până la atingerea limitei de 7 filme:
+- Titlul filmului - un șir;
 
-## Output
-Print out on the console:
+## Ieșire
+Imprimați pe consolă:
+- Dacă ați atins limita de 7 filme, trebuie să imprimați: "The limit is reached."
+- Imprimați cel mai bun film pentru dvs.: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
 
-- If you have reached the limit of 7 movies you should print out: "The limit is reached."
-- Print out the movie, holding the highest score: "The best movie for you is \{movie title\} with \{sum of symbols\} ASCII sum."
-
-## Example
-| **Input** | **Output** | **Comments** |
+## Exemplu
+|**Intrare**|**Ieșire**|**Comentarii** |
 | --- | --- | --- |
-| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | First we get Matrix, the first letter is M with a value of 77, but it is a capital letter and we subtract from it the length of the title: 77 - 6 = 71. |
-| Breaking bad | | The second letter is a with a value of 97 and we subtract twice the movie title: 97 - 12 = 85.|
-| Legend | | Similarly, we proceed with each subsequent letter and receive an amount of 563. |
-| STOP | | Upon receiving the STOP command, we print the title with the highest value, which is Breaking bad with sum of 878. |
+| Matrix | The best movie for you is Breaking bad with 878 ASCII sum. | Mai întâi obținem Matrix, prima literă este M cu o valoare de 77, dar este o literă mare și scădem din ea lungimea titlului: 77 - 6 = 71. |
+| Breaking bad | | A doua literă este a cu o valoare de 97 și scădem de două ori titlul filmului: 97 - 12 = 85. |
+| Legend | | În mod similar, continuăm cu fiecare literă ulterioară și primim o sumă de 563. |
+| STOP | | La primirea comenzii STOP, imprimăm titlul cu cea mai mare valoare, care este Breaking bad cu suma de 878. |
 
 [/task-description]
 [code-io /]
