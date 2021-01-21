@@ -16,7 +16,7 @@ Follow these steps when building a form by writing templates using the Angular t
 
 [slide]
 
-# Problem: Create A Template-Driven Form
+# Problem: Create a Template-Driven Form
 
 Create a **Template-Driven** form that looks like this:
 
@@ -69,7 +69,7 @@ export class AppModule { }
 
 [slide]
 
-# Create A Form Component
+# Create a Form Component
 
 An Angular form has two parts: An **HTML** based **template** and a component class to handle data.
 
@@ -120,10 +120,9 @@ Use the following HTML to create the template.
                 </option>
             </select>
     </div>
+    <button type="submit" class="btn btn-success">Submit</button>
   </form>
 </div>
-
-<button type="submit" class="btn btn-success">Submit</button>
 ```
 
 [/slide]
@@ -189,7 +188,7 @@ export class LaptopFormComponent implements AfterViewInit {
 
 [slide]
 
-# Submit A Form
+# Submit a Form
 
 To submit a form bind **ngSubmit** event property to form component's `onSubmit()` method.
 
@@ -251,7 +250,7 @@ This pair of classes defines the state of the control whether its value is valid
 
 [slide]
 
-# Add Custom CSS For A Visual Feedback
+# Add Custom CSS For a Visual Feedback
 
 You can mark **required** fields and **invalid** data at the same time with a **colored** bar on the **left** of the **input box**.
 
@@ -281,6 +280,152 @@ Angular tracks most attributes and changes the state depending on the user input
     minLength="5"
     ngModel
     name="processor">
+```
+
+[/slide]
+
+[slide]
+
+# Third-party Validators
+
+Angular comes with the following [validators](https://angular.io/api/forms/Validators).
+
+For **template-driven** forms you will need the following [directives](https://angular.io/api?type=directive).
+
+And here you can find some npm packages with [custom validators](https://www.npmjs.com/package/ng5-validation).
+
+[/slide]
+
+[slide]
+
+# Displaying Error Messages - 1
+
+In case of error the user should receive a proper message with some explanation what went wrong.
+
+Use the control's state to reveal a helpful message.
+
+Add a template reference variable in the input.
+
+```html
+<input type="text" class="form-control"
+    id="processor"
+    required
+    ngModel
+    name="processor"
+    #processor="ngModel">
+```
+
+[/slide]
+
+[slide]
+
+# Displaying Error Messages - 2
+
+Create a div and display it only when the control state is **invalid**.
+
+Use the reference variable to check the state.
+
+Add a helpful message inside the **div**.
+
+```html
+<div *ngIf="processor.invalid && proccer.touched" alert alert-danger>
+    Processor is required!
+</div>
+```
+
+[/slide]
+
+[slide]
+
+# Form Overall Validity
+
+We can bind the form's overall validity using the reference variable declared in the `<form>` tag.
+
+Block the **submit** button in case a control has **invalid state**.
+
+```html
+<button type="submit" class="btn btn-success" [disabled]="f.invalid">
+    Submit
+</button>
+```
+
+[/slide]
+
+[slide]
+
+# Two-way Data Binding
+
+Instantly react to any changes using two-way data binding.
+
+```html
+<input type="text" class="form-control"
+    id="processor"
+    required
+    [(ngModel)]="laptop.processor"
+    name="processor"
+    #processor="ngModel">
+```
+
+```js
+constructor() {
+    this.laptop = new Laptop();
+}
+```
+
+[/slide]
+
+[slide]
+
+# The NgModelGroup Directive
+
+Group similar input fields using **ngModelGroup Directive**.
+
+It is useful for input fields that have the same validation.
+
+For Example: Password and Confirm Password.
+
+```html
+<div
+    ngModelGroup="passData"
+    #passData="ngModelGroup">
+```
+
+```html
+<div *ngIf="passData.invalid && passData.touched">
+    Both passwords must be valid!
+</div>
+```
+
+[/slide]
+
+[slide]
+
+# Setting and Patching a Form Value
+
+Use `setValue()` or `patchValue()` to change the form from inside the component or add default values.
+
+```js
+changeInput() {this.laptopForm.form.patchValue({
+    ram: '16 GB'
+    processor: 'Intel Core i7'
+    });
+}
+```
+
+[/slide]
+
+[slide]
+
+# Resseting the Form
+
+After a form is submitted resetting is necessary to clear all input fields and reset the track state.
+
+```js
+onSubmit() {
+    const body = this.form.value;
+    // Send body to an API
+    this.form.reset();
+}
 ```
 
 [/slide]
