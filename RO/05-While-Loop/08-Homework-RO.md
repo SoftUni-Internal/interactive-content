@@ -340,9 +340,9 @@ Scrieți un program care:
 [code-io/]
 [/code-task]
 
-[/slide hideTitle]
+[/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Special Bonus
 [code-task title="Special Bonus" taskId="pb-java-while-loop-special-bonus" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
