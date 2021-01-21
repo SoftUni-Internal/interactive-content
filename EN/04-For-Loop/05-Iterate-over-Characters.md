@@ -1,16 +1,4 @@
-# Iterating over Characters
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="3555" endTimeInSeconds="4281"]
-[stream language="EN" videoId="342471604" default /]
-[stream language="RO" videoId="389927500"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Iterating over Characters
 It is good to know that the **for loops** don't only work with numbers. 
 
@@ -39,9 +27,9 @@ The columns that you would most probably use for the purposes of this course are
 For example, the decimal value of the character **'a'** is **97** and the one corresponding to **'@'** is **64**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Latin Letters
-[code-task title="Latin Letters" executionStrategy="java-code" requiresInput]
+[code-task title="Latin Letters" taskId="java-basics-for-loop-numbers-latin-letters" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -100,13 +88,7 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        char firstLetter = scanner.nextLine().charAt(0);
-        char secondLetter = scanner.nextLine().charAt(0);
-
-        for (char i = firstLetter; i <= secondLetter; i++) {
-            System.out.print(i + " ");
-        }
+        // Write code here
     }
 }
 ```

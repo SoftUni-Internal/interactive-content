@@ -1,31 +1,29 @@
 [slide hideTitle]
-# For Loop with Step
-In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
+# Bucla For cu Pas
+În această secțiune vom acorda atenție unei părți particulare și foarte importante a buclei `for`, și anume **pasul**.
 
-**The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable. 
+**Pasul** este acea **parte** a construcției buclei `for` care indică ** cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
 
-It is declared last in the **skeleton** of the for loop.
+Este declarat ultima în **structura** buclei for.
 
-Most often, we have **a size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1`, we can use for a shorter syntax the `i++` or `i--` operators.
-
+Cel mai adesea, avem **o dimensiune de** `1` și, în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi pentru o sintaxă mai scurtă `i++`sau operatorii `i--`.
 ```java live
 for (int i = 0; i < 10; i++) {
   System.out.println(i);
 }
 ```
+Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **creștem**, vom folosi operatorul `i + =` + step size.
 
-If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
-
- With step of 2, the loop would look like this:
+  Cu pasul 2, bucla ar arăta astfel:
 ```java live
 for (int i = 0; i < 10; i += 2) {
   System.out.println(i);
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` + step size. 
+S-ar putea să dorim să avem un **pas descrescător** - `i-=` + dimensiunea pasului.
 
-In this case we should pay attention to the end condition to **avoid** an **infinite loop**.
+În acest caz, ar trebui să fim atenți la condiția finală pentru a evita o **buclă infinită**.
 
 ```java live
 for (int i = 10; i >= 1; i--) {
@@ -49,14 +47,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+*Citește un număr **n**
+*Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 30 | 7 |
 |  | 17 |
@@ -95,14 +93,14 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+*Citește un număr **n**
+*Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+|**Intrare**|**Ieșire** |
 | --- | --- |
 | 30 | 7 |
 |  | 17 |
@@ -141,15 +139,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads an integer - count of **days before an exam**
-* For **each day** prints: "\{currentDay\} days before the exam"
-* At the end prints: **"The exam has come"**
+* Citește un număr întreg - numărul de **zile înainte de un examen**
+* Pentru **fiecare zi** imprimă: "\{currentDay\} days before the exam"
+* La final imprimă: **"The exam has come"**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+|**Intrare**| **Ieșire** |
 | --- | --- |
 | 3 | 3 days before the exam |
 |  | 2 days before the exam |
@@ -190,15 +188,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-# Description
-Write a program, which:
+# Descriere
+Scrieți un program care:
 
-* Reads an integer - count of **days before an exam**
-* For **each day** prints: "\{currentDay\} days before the exam"
-* At the end prints: **"The exam has come"**
+* Citește un număr întreg - numărul de **zile înainte de un examen**
+* Pentru **fiecare zi** imprimă: "\{currentDay\} days before the exam"
+* La final imprimă: "The exam has come"**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+|**Intrare**| **Ieșire** |
 | --- | --- |
 | 3 | 3 days before the exam |
 |  | 2 days before the exam |

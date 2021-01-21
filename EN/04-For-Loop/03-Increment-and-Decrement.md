@@ -1,16 +1,4 @@
-# Increment and Decrement Operators
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="1179" endTimeInSeconds="1461"]
-[stream language="EN" videoId="342471604" default /]
-[stream language="RO" videoId="389927500"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Increment and Decrement Operators
 The unary increment operator `++` increments its operand by 1, while the unary decrement operator `--` decrements it by 1.
 
