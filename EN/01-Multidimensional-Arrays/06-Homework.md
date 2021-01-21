@@ -740,9 +740,9 @@ public class Main {
 ## Description
 Write a program that reads a string matrix from the console and performs certain operations with its elements.
 
-User input is provided in a similar way as in the problems above - first you read the **dimensions** and then the **data**.
+User input is provided in a similar way as in the problems above - first, you read the **dimensions** and then the **data**.
 
-Your program should then receive commands in format: `swap row1 col1 row2c col2` where row1, row2, col1, col2 are **coordinates** in the matrix. 
+Your program should then receive commands in the format: `swap row1 col1 row2c col2` where row1, row2, col1, col2 are **coordinates** in the matrix. 
 
 For a command to be valid, it should start with the **"swap"** keyword along with **four valid coordinates** (no more, no less). 
 
@@ -1095,7 +1095,7 @@ You are given a **sequence of text lines**.
 
 Assume these text lines form a **matrix of characters** (pad the missing positions with spaces to build a rectangular matrix).
 
-Write a program to **rotate the matrix** by 90, 180, 270, 360, … degrees.
+Write a program to ** rotates the matrix** by 90, 180, 270, 360, … degrees.
 
 Print the result at the console as a sequence of strings after receiving the `END` command.
 
@@ -1107,7 +1107,7 @@ Print the result at the console as a sequence of strings after receiving the `EN
 
 The input is read from the console:
 
-- The first line holds the command in format `Rotate(X)` where **X** are the degrees of the requested rotation.
+- The first line holds the command in the format `Rotate(X)` where **X** are the degrees of the requested rotation.
 - The next lines contain the **lines of the matrix** for rotation.
 - The input ends with the command `END`.
 
@@ -2080,7 +2080,7 @@ Your task is to calculate the distance traveled by each car to its parking spot.
 
 Example: A car enters the parking at row 1. 
 
-It wants to go to cell 2, 2 so it moves through **exactly four** cells to reach its parking spot.
+It wants to go to cells 2, 2 so it moves through **exactly four** cells to reach its parking spot.
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png"/]
 
@@ -2943,7 +2943,7 @@ Print each diagonal on a new line.
 
 On the first line, single integer the number **R** of rows in the matrix. 
 
-On each of the next **R** lines, **C** numbers separated by single spaces. 
+On each of the next **R** lines, **C** numbers are separated by single spaces. 
 
 Note that **R** and **C** may have different values.
 
@@ -3312,14 +3312,14 @@ public class Main {
 ## Description
 You are given a matrix (2D array) of lowercase alphanumeric characters ( `a-z` , `0-9` ), a starting position – defined by a start row `startRow` and a start column `startCol` - and a filling symbol `fillChar`.
 
-Let's call the symbol originally at `startRow` and `startCol` the `startChar`.
+Let us call the symbol originally at `startRow` and `startCol` the `startChar`.
 
 Write a program, which, starting from the symbol at `startRow` and `startCol`, changes to `fillChar` every symbol in the matrix which:
 
 - is equal to `startChar`
 - can be reached from `startChar` by going up ( `row – 1` ), down ( `row + 1` ), left ( `col – 1` ) and right ( `col + 1` ) and `stepping` ONLY on symbols equal `startChar`
 
-Start from `startRow` and `startCol` and move either by changing the **row** or **column** (not both at once, i.e. you can not go diagonally) by **1**, and can only go to positions which have the `startChar` written on them. 
+Start from `startRow` and `startCol` and move either by changing the **row** or **column** (not both at once, i.e. you can not go diagonally) by **1**, and can only go to positions that have the `startChar` written on them. 
 
 Once you find all those positions, you change them to `fillChar`.
 

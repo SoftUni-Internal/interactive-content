@@ -22,9 +22,9 @@ For better code reusability, you could do the comparison in a method, which retu
 
 Each matrix definition on the console will contain a line with a positive integer number `R` - the number of rows in the matrix and `C` - the number of columns - followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**.
 
-The matrices will have at most **10** rows and at most **10** columns.
+The matrices will have at most **10** rows and most **10** columns.
 
-Print **equal** if the matrices match, and **not equal** if they don’t match.
+Print **equal** if the matrices match, and **not equal** if they do not match.
 
 
 ## Examples
@@ -270,9 +270,9 @@ For better code reusability, you could do the comparison in a method, which retu
 
 Each matrix definition on the console will contain a line with a positive integer number `R` - the number of rows in the matrix and `C` - the number of columns - followed by `R` lines containing the `C` numbers, separated by spaces - **each line will have an equal amount of numbers**
 
-The matrices will have at most **10** rows and at most **10** columns.
+The matrices will have at most **10** rows and most **10** columns.
 
-Print **equal** if the matrices match, and **not equal** if they don’t match.
+Print **equal** if the matrices match, and **not equal** if they do not match.
 
 
 ## Examples
@@ -1156,7 +1156,7 @@ Then find the biggest sum of a **2x2 submatrix**.
 
 **Print the submatrix and its sum.**
 
-On the **first line**, you will get the **dimensions** of the matrix `rows` and `columns` **separated with a comma and space**. 
+On the **first line**, you will get the **dimensions** of the matrix `rows` and `columns` **separated with a comma and space**.
 
 On the **next lines**, you will get the elements for each row **separated with a comma and space**.
 

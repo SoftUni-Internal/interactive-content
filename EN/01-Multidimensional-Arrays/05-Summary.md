@@ -7,16 +7,17 @@
     - Arrays can have more than one dimension, e.g. matrices
 
 ```java
-int[][] matrix = {
-  {1, 2, 3, 4}, // row 0 values
-  {5, 6, 7, 8}  // row 1 values
-};
+int[][] intMatrix = new int[3][];
+
 ```
 
 - Creating and Initializing
 
 ```java 
-int[][] intMatrix = new int[3][];
+int[][] matrix = {
+  {1, 2, 3, 4}, // row 0 values
+  {5, 6, 7, 8}  // row 1 values
+};
 ```
 
 - Manipulating a Matrix

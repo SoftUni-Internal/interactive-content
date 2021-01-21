@@ -4,9 +4,9 @@
 
 # What is Multidimensional Array?
 
-The arrays you have been using so far have only held one column of data.
+The arrays we have been using so far have only held one column of data.
 
-But you can set up an array to hold more than one column.
+But we can set up an array to hold more than one column.
 
 These are called **multi-dimensional arrays**.
 
@@ -17,7 +17,6 @@ If you have 6 rows and 5 columns then your spreadsheet can hold 30 numbers.
 It might look like this:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-1.png" /]
-
 
 
 [/slide]
@@ -32,16 +31,31 @@ Two of the **most used** multi-dimensional arrays are **two and three-dimensiona
 
 ```java 
 int[][] intMatrix = new int[3][];
+```
+In this example, we declare an empty two-dimensional array of integers. We use `int[][]` to tell the compiler that we want a two-dimensional array.
 
+As same as in the one-dimensional array we use `new` to allocate memory into the heap for our array. 
+
+Notice that we need to provide a size for our multidimensional array and in this case, our row will contain three elements.
+
+By default, this array will contain only zeros.
+
+```java
 String[][][] stringCube = new String[5][5][5];
 ```
+
+We can create a multidimensional array with any of the known data types.
+
+Here we create a three-dimensional array of strings. 
+
 [/slide]
 
 [slide hideTitle]
 
 # Initializing Multidimensional Arrays
 
-- Creating and **Initializing** two-dimensional array with shortcut syntax
+- Creating and **Initializing** two-dimensional array with shortcut syntax, using curly brackets:
+
 ```java
 int[][] matrix = {
   {1, 2, 3, 4}, // row 0 values
@@ -88,7 +102,7 @@ int[][] matrix = {
   {5, 6, 7, 8}  // row 1 values
 };
 
-// the second element of the first row is 7
+// the third element of the first row is 7
 int element = matrix[1][2]; 
 System.out.println(element);
 

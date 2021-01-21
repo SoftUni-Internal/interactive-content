@@ -7,9 +7,10 @@
 - Reading a Matrix
 
 ```java
-// Enter rows and cols 
+// Enter the length 
 int rows = Integer.parseInt(scanner.nextLine());
 int cols = Integer.parseInt(scanner.nextLine());
+
 // Initializing a new matrix
 int[][] matrix = new int[rows][cols];
 
@@ -27,6 +28,15 @@ for (int row = 0; row < rows; row++) {
     }
 }
 ```
+
+- First, we read the length of the rows and columns of the array
+- Next, we initialize an integer array with the given row and column length
+- Next, we create a for loop to traverse through the row of a one-dimensional array
+- Next, we read the elements which will go inside of our two-dimensional.
+- Next, we need an inner loop that will traverse through the column of a particular one-dimensional array
+- At the end we set the actual value of our matrix
+
+
 [/slide]
 
 [slide hideTitle]
@@ -41,12 +51,18 @@ int[][] matrix = {{1, 2, 3, 4},
 // Printing the matrix
 for (int row = 0; row < matrix.length; row++) {
     for (int col = 0; col < matrix[row].length; col++) {
+
+        //access the element
         int element = matrix[row][col];
+
         System.out.print(element + " ");
     }
+
     System.out.println();
 }
 ```
+This is a standard way to print a two-dimensional array.
 
+We access each element of the array one by one and make them print separated by a space.
 [/slide]
 
