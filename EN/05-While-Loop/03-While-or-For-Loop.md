@@ -1,4 +1,4 @@
-[slide hideTitle
+[slide hideTitle]
 # While or For Loop?
 
 `while` and `for` loops both **repeat** a block of **code**.
