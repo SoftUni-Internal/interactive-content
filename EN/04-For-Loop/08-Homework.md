@@ -1,9 +1,6 @@
-
-
 # Homework
 
-
-[slide]
+[slide hideTitle]
 # Problem: Biggest Number
 [code-task title="Biggest Number" taskId="pb-java-for-loop-biggest-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -73,7 +70,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Max and Min Numbers
 [code-task title="Max and Min Numbers" taskId="pb-java-for-loop-max-and-min" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -163,7 +160,7 @@ Min number: -2
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Power of Number
 [code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -216,7 +213,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Equal Pairs
 [code-task title="Equal Pairs" taskId="pb-java-for-loop-equal-pairs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -367,7 +364,7 @@ Yes, value=10
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Zig Zag Sum
 [code-task title="Zig Zag Sum" taskId="pb-java-for-loop-zig-zag-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -438,7 +435,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Divide Without Remainder
 [code-task title="Divide Without Remainder" taskId="pb-java-for-loop-Divide-without-reminder" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -501,7 +498,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel Sum
 [code-task title="Vowel Sum" taskId="pb-java-for-loop-vowel-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -600,7 +597,7 @@ s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Rollercoaster
 [code-task title="Rollercoaster" taskId="pb-java-for-loop-rollearcoaster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -701,10 +698,10 @@ The rollercoaster departures
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Multiply
 
-[code-task title="Multiply" taskId="pb-java-for-loop-multiply executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply" taskId="pb-java-for-loop-multiply" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -778,7 +775,7 @@ Write a program, which:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Back to the Past
 [code-task title="Back to the Past" taskId="pb-java-for-loop-back-to-the-past" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -929,7 +926,7 @@ He will need 2254960.50 dollars to survive.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Bills
 [code-task title="Bills" taskId="pb-java-for-loop-bills" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1195,7 +1192,7 @@ Average: 89.10 $
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Hospital
 [code-task title="Hospital" taskId="pb-java-for-loop-Hospital" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1379,7 +1376,7 @@ Untreated patients: 29978.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Numbers Ending in 7
 [code-task title="Numbers Ending in 7" taskId="pb-java-for-loop-Numbers-ending-in-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1424,7 +1421,7 @@ Print the numbers on a single line, separated by a single space.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Odd / Even Position
 [code-task title="Odd / Even Position" taskId="pb-java-for-loop-odd-even-position" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1670,7 +1667,7 @@ EvenMax=3433.50
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Grades
 [code-task title="Grades" taskId="pb-java-for-loop-grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

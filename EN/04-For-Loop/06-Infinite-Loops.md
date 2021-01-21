@@ -1,16 +1,4 @@
-# Infinite Loops
-
-[slide]
-# Video
-
-[vimeo-video startTimeInSeconds="4288" endTimeInSeconds="4751"]
-[stream language="EN" videoId="342471604" default /]
-[stream language="RO" videoId="389927500"  /]
-[/vimeo-video]
-
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Infinite Loops
 So far, we were introduced to `for` loop, learning what structure it has and how it is applied. 
 

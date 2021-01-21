@@ -1,9 +1,6 @@
-
-
 # Homework
 
-
-[slide]
+[slide hideTitle]
 # Problem: Biggest Number
 [code-task title="Biggest Number" taskId="pb-java-for-loop-biggest-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -18,15 +15,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **n** - number representing amount of input numbers
-* Reads **n integer numbers**
-* Finds and prints the **biggest number**
+* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n numere întregi**
+* Găsește și imprimă **cel mai mare număr**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 90 |
 | 40 | |
@@ -73,7 +70,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Max and Min Numbers
 [code-task title="Max and Min Numbers" taskId="pb-java-for-loop-max-and-min" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -88,17 +85,17 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **n** representing the count of numbers to read next
-* Finds the **max** and the **min numbers**
-* Prints them on the console in the following format:
+* Citește **n** reprezentând numărul de numere de citit în continuare
+* Găsește numerele **max** și **min**
+* Le imprimă pe consolă în următorul format:
    - Max number: \{max number\}
    - Min number: \{min number\}
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | Max number: 304 |
 | 10 | Min number: 0 |
@@ -163,7 +160,7 @@ Min number: -2
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Power of Number
 [code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -178,15 +175,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **p – the power** and **n – the number**
-* Prints the result of n powered by p
-* Don't use `Math.pow()`
+* Citește **p - puterea** și **n - numărul**
+* Tipărește rezultatul lui n alimentat de p
+* Nu utilizați `Math.pow ()`
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | 32 |
 | 2 | |
@@ -216,7 +213,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Equal Pairs
 [code-task title="Equal Pairs" taskId="pb-java-for-loop-equal-pairs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -231,16 +228,16 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads number **n** and **n pairs** of numbers
-* Prints "Yes, value=\{sum\}", if the **sum of all** pairs is the **same**
-* **Otherwise**, prints "No, maxdiff=\{diff\}"
-* diff is the **max difference** in the sum between two pairs
+* Citește numărul **n** și **n perechi** de numere
+* Tipărește "Yes, value=\{sum\}", dacă **suma tuturor** perechilor este **aceeași**
+* **În caz contrar**, imprimă "No, maxdiff=\{diff\}"
+* diff este **diferența maximă** în suma dintre două perechi
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | Yes, value=-1 |
 | -1 | |
@@ -367,7 +364,7 @@ Yes, value=10
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Zig Zag Sum
 [code-task title="Zig Zag Sum" taskId="pb-java-for-loop-zig-zag-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -382,18 +379,18 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **n** - number representing amount of input numbers
-* Reads **n integers** 
-   * For every **even** line **adds** the number to the result
-   * For every **odd** line **subtracts** the number from the result
-   * The counting starts from 1.
-* **Prints** the result
+* Citește **n** - număr care reprezintă cantitatea de numere de intrare
+* Citește **n numere întregi**
+    * Pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
+    * Pentru fiecare linie  **impară**  **se scade** numărul din rezultat
+    * Numărarea începe de la 1.
+* **Tipărește** rezultatul
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | 10 |
 | 10 | |
@@ -438,7 +435,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Divide Without Remainder
 [code-task title="Divide Without Remainder" taskId="pb-java-for-loop-Divide-without-reminder" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -453,15 +450,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **n** and **n numbers**
-* Finds in **percentage** how many of them can **divide without remainder** at **2**, **3** and **4**
-* Prints percentages p1, p2 and p3, **formatted** to the second digit
+* Citește **n** și **n numere**
+* Găsește în **procente** câte dintre acetea pot fi **împărțite fără rest** la **2**, **3** și **4**
+* Imprimă procentele p1, p2 and p3, **formatate** până la a două zecimală
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 | 33.33% |
 | 3 | 100.00% |
@@ -501,7 +498,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel Sum
 [code-task title="Vowel Sum" taskId="pb-java-for-loop-vowel-sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -516,20 +513,20 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads **n** - the count of characters:
-* If character is **vowel** adds its value to the result
+* Citește **n**- numărul de caractere:
+* Dacă caracterul este o **vocală** își adaugă valoarea rezultatului
 
-|character|a|e|i|o|u|
+|caracter|a|e|i|o|u|
 |---------|-|-|-|-|-|
-|value|1|2|3|4|5|
+|valoare|1|2|3|4|5|
 
-* Prints the result
+* Tipărește rezultatul
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | 1 |
 | a | |
@@ -600,7 +597,7 @@ s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Rollercoaster
 [code-task title="Rollercoaster" taskId="pb-java-for-loop-rollearcoaster" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -615,15 +612,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which:
+## Descriere
+Scrieți un program care:
 
-* Reads rollercoaster **places**, **minimum age**, **count of people** on the queue and **age** for each person
-* If all places are taken, prints - **"The rollercoaster departures"**
-* In other case, prints **"Waiting..."**
+* Citește **locuri** rollercoaster, **vârsta minimă**, **numărul de persoane** la coadă și **vârsta** pentru fiecare persoană
+* Dacă toate locurile sunt luate, tipăriți - **"Plecările cu valul montan"**
+* Într-un alt caz, tipărește **"În așteptare ..."**
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | The rollercoaster departures |
 | 10 | |
@@ -701,10 +698,10 @@ The rollercoaster departures
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Multiply
 
-[code-task title="Multiply" taskId="pb-java-for-loop-multiply executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiply" taskId="pb-java-for-loop-multiply" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -717,15 +714,15 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program, which: 
+## Descriere
+Scrieți un program care:
 
-* Reads **n** 
-* Prints **n's multiples** in the format "\{n\} x \{i\} = \{result\}"
-* Where i are the numbers from **1 to 10** (**inclusive**)
+* Citește **n**
+* Tipărește **multiplii n** în formatul "\{n\} x \{i\} = \{result\}"
+* Unde sunt i sunt numerele de la **1 până la 10**(**inclusiv**)
 
-## Example
-| **Input** | **Output** 
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 | 2 x 1 = 2 |
 | | 2 x 2 = 4 |
@@ -778,7 +775,7 @@ Write a program, which:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Back to the Past
 [code-task title="Back to the Past" taskId="pb-java-for-loop-back-to-the-past" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -794,43 +791,43 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Josh is 18 years old and receives a legacy that consists of X amount of money and time machine. 
+Josh are 18 ani și primește o moștenire care constă din suma de bani X și mașina timpului.
 
-He decided to return until 1800, but he did not know if the money would suffice to live without working.
+A decis să se întoarcă până în 1800, dar nu știa dacă banii ar fi suficienți pentru a trăi fără să muncească.
 
-Write a program that calculates whether Josh will have enough money to not have to work until a certain year. 
-- Assuming that for every even (1800, 1802, etc.) year will spend 12 000 dollars. 
-- For each odd (1801, 1803, etc.) will spend 12 000 + 50 \* \[the years age in a given year\].
+Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentru a nu fi nevoit să lucreze până la un anumit an.
+- Presupunând că pentru fiecare an (1800, 1802 etc.) se vor cheltui 12 000 de dolari.
+- Pentru fiecare an impar (1801, 1803 etc.) se vor cheltui 12 000 + 50 \* \[vârsta de abni într-un anumit an\].
 
-## Input
-The input is read from the console and contains exactly 2 lines:
-- Legacy money – real number in range \[1.00... 1,000,000.00\] 
-- Year to be lived (inclusive) – integer in range \[1801... 1900\]
+## Intrare
+Intrarea este citită de pe consolă și conține exact 2 linii:
+- Banii vechi - număr real în intervalul \[1,00 ... 1,000,000,00\]
+- An de trăit (inclusiv) - un număr întreg în intervalul \[1801 ... 1900\]
 
-## Output
-Print on the console a single line. The amount must be formatted to two decimal digits:
-- If the money are enough:
-    - "Yes! He will live a carefree life and will have \{N\} dollars left." – where N are the money that will remain
-- If the money are NOT enough:
-    - "He will need \{М\} dollars to survive." - where M are money he needs
 
-## Example
+## Ieșire
+Imprimați pe consolă o singură linie. Suma trebuie formatată cu două cifre zecimale:
+- Dacă banii sunt suficienți:
+     - "Yes! He will live a carefree life and will have \{N\} dollars left." - unde N sunt banii care vor rămâne
+- Dacă banii NU sunt suficienți:
+     - "He will need \{М\} dollars to survive." - unde M sunt bani de care are nevoie
 
-| Input | Output |
+## Exemplu
+| Intrare | Ieșire |
 | --- | --- |
 | 50000 | Yes! He will live a carefree life and will have 13050.00 dollars left. |
 | 1802 | |
 
-### Comments
-- 1800 -> even year;
-    - Josh spends 12000 dollars
-    - 50000 – 12000 = 38000 dollars remain
-- 1801 -> odd year 
-    - he spends 12000 + 19 \* 50 = 12000 + 950 = 12950 dollars
-    - 38000 – 12950 = 25050 dollars remain
-- 1802 -> even year
-    - he spends 12000 dollars
-    - 25050 – 12000 = 13050 dollars remain
+### Comentarii
+- 1800 -> an par;
+     - Josh cheltuie 12000 de dolari
+     - 50000 - 12000 = rămân 38000 de dolari
+- 1801 -> an impar
+     - cheltuie 12000 + 19 \* 50 = 12000 + 950 = 12950 dolari
+     - 38000 - 12950 = rămân 25050 de dolari
+- 1802 -> an par
+     - el cheltuie 12000 de dolari
+     - 25050 - 12000 = 13050 dolari rămân
 
 [/task-description]
 [tests]
@@ -929,7 +926,7 @@ He will need 2254960.50 dollars to survive.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Bills
 [code-task title="Bills" taskId="pb-java-for-loop-bills" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -944,37 +941,36 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program to calculate the average cost per month for a family over a period of time. For each month the costs are as follows:
+Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o perioadă de timp. Pentru fiecare lună, costurile sunt următoarele:
 
-- For electricity - every month the bill is different and will be read from the console
-- For water - 20$
-- For Internet - 15$
-- For others - sum the bills for electricity, water and Internet and add 20%
+- Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
+- Pentru apă - 20 $
+- Pentru internet - 15 $
+- Pentru altele - suma facturilor pentru electricitate, apă și Internet și adăugați 20%
 
-For each bill, you need to calculate how much total is paid for all months.
+Pentru fiecare factură, trebuie să calculați suma totală plătită pentru toate lunile.
 
-# Input
+# Intrare
 
-The input is read from the console: 
+Intrarea este citită de pe consolă:
 
-- The months for which the average cost is searched – integer in range \[1... 100\] 
-- For each month – the bill for electricity – a real number in range \[1.00... 1000.00\]
+- Lunile pentru care se caută costul mediu - număr întreg în intervalul \[1 ... 100 \]
+- Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
 
-# Output
-Print to the console 5 rows: 
+# Ieșire
+Imprimați pe consolă 5 rânduri:
 - "Electricity: \{electricity for all months\} $" 
 - "Water: \{water for all months\} $" 
 - "Internet: \{Internet for all months\} $" 
 - "Other: \{Other for all months\} $" 
 - "Average: \{Average all costs per month\} $ "
 
-All bills sohould be formatted to the 2nd digit after the decimal point.
+Toate facturile ar trebui să fie formatate la a doua cifră după punctul zecimal.
 
-## Example
-
-| Input | Output |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | Electricity: 447.16 $ |
 | 68.63 | Water: 100.00 $ |
@@ -983,19 +979,19 @@ All bills sohould be formatted to the 2nd digit after the decimal point.
 | 93.53 | Average: 273.75 $ |
 | 63.22 | |
 
-### Comments
-For 5 months:
-- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
-- Water -> 5 months \* 20$ = 100$
-- Internet -> 5 months \* 15$ = 75$
-- Others:
+### Comentarii
+Pentru 5 luni:
+- Electricitate -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
+- Apă -> 5 luni \* 20$ = 100$
+- Internet -> 5 luni \* 15$ = 75$
+- Alții:
     - 68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
     - (132.53+20+15) + 20% = 201.036
     - (93.53+20+15) + 20% = 154.236
     - (63.22+20+15) + 20% = 117.864
-- Total = 746.592$
-- Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
+- Totalul = 746.592$
+- Facturi medii pe lună = (447.16+100+75+746.592)/5 = 273.7504$
 
 [/task-description]
 [tests]
@@ -1195,7 +1191,7 @@ Average: 89.10 $
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Hospital
 [code-task title="Hospital" taskId="pb-java-for-loop-Hospital" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1210,32 +1206,31 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-For a period of time, patients are arriving every day in the hospital for examination. 
+## Descriere
+Pentru o perioadă de timp, pacienții ajung în fiecare zi la spital pentru examinare.
 
-It has initially 7 doctors. 
+ASpitalul are inițial 7 medici.
 
-Each doctor can only review one patient per day, but sometimes there is a shortage of doctors, so other patients are sent to other hospitals. 
+Fiecare medic poate examina doar un pacient pe zi, dar uneori există un deficit de medici, astfel încât alți pacienți sunt trimiși la alte spitale.
 
-Every third day the hospital makes calculations and if the number of unreviewed patients is greater than the number of reviewed, one more doctor is appointed. 
+La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul de revizuit, este numit încă un medic.
 
-As the appointment of the doctor occurs before the intake of patients for the day. 
+Deoarece numirea medicului are loc înainte de administrarea pacienților pentru o zi.
 
-Write a program that calculates the number of reviewed and unreviewed patients for the given period.
+Scrieți un program care să calculeze numărul de pacienți examinați și neexaminați pentru perioada dată.
 
-## Input
-The input is read from the console and contains: 
+## Intrare
+Intrarea este citită de pe consolă și conține:
 
-- The period for which you need to perform calculations - integer in range \[1... 1000\] 
-- On the following lines (equal to the number of days) – the number of patients arriving for review for the current day - integer in range \[0... 10 000\]
+- Perioada pentru care trebuie să efectuați calcule - număr întreg în intervalul \[1... 1000\] 
+-În rândurile următoare (egal cu numărul de zile) - numărul de pacienți care sosesc pentru examinare pentru ziua curentă - un număr întreg în intervalul \[0... 10 000\]
 
-Print on the console 2 lines:
-- First line: "Treated patients: \{Number of patients reviewed\}." 
-- Second line: "Untreated patients: \{Number of unreviewed patients\}."
+Imprimați pe consolă 2 linii:
+- Prima linie: "Treated patients: \{Number of patients reviewed\}." 
+- A doua linie: "Untreated patients: \{Number of unreviewed patients\}."
 
-## Example
-
-| Input | Output |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 | Treated patients: 23. |
 | 7 | Untreated patients: 21. |
@@ -1243,12 +1238,12 @@ Print on the console 2 lines:
 | 9 | |
 | 1 | |
 
-### Comments
-- Day 1: 7 treated and 0 untreated patients for the day 
-- Day 2: 7 treated and 20 untreated patients for the day 
-- Day 3: Until now, the patients treated were 14 and untreated – 20 – > A new doctor is appointed – > 8 treated and 1 untreated patient for the day 
-- Day 4: 1 treated and 0 untreated patient for the day 
-- Total: 23 treated and 21 untreated patients
+### Comentarii
+- Ziua 1: 7 pacienți tratați și 0 pacienți netratați pentru ziua respectivă
+- Ziua 2: 7 pacienți tratați și 20 de pacienți netratați pentru ziua respectivă
+- Ziua 3: Până în prezent, pacienții tratați erau 14 și cei netratați - 20 -> Se numește un nou medic -> 8 pacienți tratați și 1 pacient netratat pentru ziua respectivă
+- Ziua 4: 1 pacient tratat și 0 pacienți netratați pentru ziua respectivă
+- Total: 23 pacienți tratați și 21 pacienți netratați
 
 [/task-description]
 [tests]
@@ -1379,7 +1374,7 @@ Untreated patients: 29978.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Numbers Ending in 7
 [code-task title="Numbers Ending in 7" taskId="pb-java-for-loop-Numbers-ending-in-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1392,15 +1387,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 
-Write a program that prints the numbers in the range \[1...1000\], which end in 7. 
+Scrieți un program care tipărește numerele din intervalul \[1...1000\], care se termină cu 7.
 
-Print the numbers on a single line, separated by a single space.
+Imprimați numerele pe o singură linie, separate printr-un singur spațiu.
 
-## Example
-
-| Input | | Output |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- | --- |
 | (no input) | | 7 17 27 ... 997 |
 [/task-description]
@@ -1424,7 +1418,10 @@ Print the numbers on a single line, separated by a single space.
 [/code-task]
 [/slide]
 
-[slide]
+
+
+
+[slide hideTitle]
 # Problem: Odd / Even Position
 [code-task title="Odd / Even Position" taskId="pb-java-for-loop-odd-even-position" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1439,17 +1436,17 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program that reads the n - count of numbers entered by the user, and calculates the amount of the minimum and maximum numbers of odd and even positions (counting from 1). 
+## Descriere
+Scrieți un program care citește n - numărul din numerele introduse de utilizator și calculează suma numărului minim și maxim de poziții impar si par (numărând de la 1). 
 
-If there is not minimum/maximum element print "No".
+Dacă nu există element minim / maxim tipăriți "No".
 
-## Input
-- On the first input line read count of numbers - N - integer \[0...100\]
-- On every next line read a number - floating-point number \[-100...100\]
+## Intrare
+- Pe prima linie de intrare citiți numărul din numerele - N - întreg \[0 ... 100\]
+- La fiecare rând următor, citiți un număr - număr cu floating-point \[-100...100\]
 
-## Output
-The output should be formatted in the following form:
+## Ieșire
+Rezultatul trebuie formatat în următoarea formă:
 
 - "OddSum=" + \{sum of the numbers on odd positions\},
 - "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
@@ -1457,11 +1454,10 @@ The output should be formatted in the following form:
 - "EvenSum=" + \{sum of the numbers of even positions\},
 - "EvenMin=" + \{minimum value of the numbers of even positions\} / \{"No"\},
 - "EvenMax=" + \{maximum value of the numbers of even positions\} / \{"No"\}
-- Each number should be formatted to the second decimal point.
+- Fiecare număr trebuie formatat la a doua zecimală.
 
-## Example
-
-| Input | Output |   
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | OddSum=8.00, |
 | 3 | OddMin=-3.00, |
@@ -1470,7 +1466,8 @@ The output should be formatted in the following form:
 | 11 | EvenMin=-2.00, |
 | -3 | EvenMax=11.00 |
 
-| Input | Output |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 0 | OddSum=0.00, |
 | | OddMin=No, |
@@ -1670,7 +1667,7 @@ EvenMax=3433.50
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Grades
 [code-task title="Grades" taskId="pb-java-for-loop-grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1685,32 +1682,32 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a program to calculate statistics of the exam grades. 
+## Descriere
+Scrieți un program pentru a calcula statisticile notelor examenului.
 
-In the beginning, the program receives the number of students attended the examination and its grade for each student. 
+La început, programul primește numărul de elevi care au participat la examen și nota obținută de fiecare elev.
 
-In the end, the program should print the percentage of students with grade between 2.00 and 2.99, between 3.00 and 3.99, 4.00 and 4.99, and between 5.00 or more. 
+În cele din urmă, programul ar trebui să imprime procentul de elevi cu nota cuprinsă între 2,00 și 2,99, între 3,00 și 3,99, 4,00 și 4,99 și între 5,00 sau mai mult.
 
-Also the average grade of the exam.
+De asemenea, nota medie a examenului.
 
-## Input
-Read from the console a series of numbers, each on a separate line:
-- The first line - number of students attended the exam - an integer in the range \[1 ... 1000\]
-- For each student on a separate line - grade of the exam - real number in the range \[2.00 ... 6.00\]
+## Intrare
+Citiți de pe consolă o serie de numere, fiecare pe o linie separată:
+- Prima linie - numărul de elevi care au participat la examen - un număr întreg în intervalul \[1 ... 1000\]
+- Pentru fiecare elev pe o linie separată - nota examenului - număr real în intervalul \[2.00 ... 6.00\]
 
-## Output
-Print on the console 5 rows that contain the following information:
+## Ieșire
+Imprimați pe consolă 5 linii care conțin următoarele informații:
 - "Top students: \{percent student with grade 5.00 or more\}%"
 - "Between 4.00 and 4.99: \{between 4.00 and 4.99 inclusive\}%"
 - "Between 3.00 and 3.99: \{between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{less than 3.00\}%"
 - "Average: \{average grade\}"
 
-All numbers must be formatted to the second decimal place.
+Toate numerele trebuie formatate la a doua zecimală.
 
-## Example
-| Input | Output |
+## Exemplu
+| **Intrare** | **Ieșire** |
 | --- | --- | 
 | 10 | Top students: 30.00% |
 | 3.00 | Between 4.00 and 4.99: 30.00% |
