@@ -63,7 +63,7 @@ Integer element = stack.peek();
 System.out.println(element);
 ```
 
-[image assetsSrc="Java-Advanced-Stack-and-Queues-10.png" /]
+[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
 
 [/slide]
 
