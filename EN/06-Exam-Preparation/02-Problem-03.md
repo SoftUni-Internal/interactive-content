@@ -1,6 +1,6 @@
 # Problem 3: Bank
 
-[slide hiteTitle]
+[slide hideTitle]
 
 # Description
 
