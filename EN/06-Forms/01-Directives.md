@@ -30,7 +30,7 @@ Here are some of the built-in structural directives: **NgIf**, **NgFor** and **N
 
 They are easy to recognize. An asterisk `*` precedes the directive attribute name as in this example.
 
-```html
+```js
 <div *ngIf="hero" class="name">{{hero.name}}</div>
 ```
 
