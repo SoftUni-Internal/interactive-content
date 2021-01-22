@@ -9,27 +9,25 @@
 [stream language="RO" videoId="498356193/5a0918ae93"  /]
 [/video-vimeo]
 
-A relational database is a collection of tables with pre-defined relationships between them. 
+Relational databases maintain data in tables, providing an efficient and flexible way to store and access structured information. 
 
-The data is organized as a set of tables with columns and rows. 
+Tables consist of columns containing one or more data categories, and rows, also known as table records, are a set of data defined by the category.
 
-Tables are used to hold information about the objects represented in the database. 
+Each table has a **unique** identifier called, **primary key**, which identifies the information in the table.
 
-Each column in a table holds a certain kind of data.
+The logical connection between different tables is established with  **foreign keys** -  a field in a table that connects with the **primary key** data of another table.
 
-The rows in the table represent a collection of related values of one object or entity. 
+**SQL** or **Structured Query Language** is the primary interface used to communicate with Relational Databases.
 
-Each row in a table could be marked with a unique identifier called a primary key, and rows among multiple tables can be made related using foreign keys. 
+[/slide]
 
-SQL or Structured Query Language is the primary interface used to communicate with Relational Databases.
-
-[image assetsSrc="Remote-Databases(19).png" /]
+[slide]
 
 # Non-Relational Databases
 
 The main difference between relational and non-relational databases is how they store their information.
 
-Non-relational databases (often called NoSQL databases) are different from traditional relational databases in that they store their data in a non-tabular form. 
+Non-relational databases, often called NoSQL databases are different from traditional relational databases in that they store their data in a non-tabular form. 
 
 Non-relational databases might be based on data structures like documents. 
 
@@ -40,8 +38,6 @@ This ability to organize various types of information side-by-side makes non-rel
 Non-relational databases often perform faster because a query does not have to view several tables in order to deliver an answer, as relational datasets often do. 
 
 Non-relational databases are therefore ideal for storing data that may be changed frequently or for applications that handle many different kinds of data.
-
-[image assetsSrc="Remote-Databases(20).png" /]
 
 [/slide]
 
@@ -57,20 +53,17 @@ Non-relational databases are therefore ideal for storing data that may be change
 **Pros of a Relational Database:**
 - Data is easily structured into categories.
 - They support **ACID** transactional consistency and support "joins".
-- Relationships can be easily defined between data points.
+- Built-in data integrity and a large eco-system.
+- Relationships in this system have constraints.
 - Limitless indexing.
 
 One of the major benefits of using a Relational Database is that this type of database allows the user to simply classify the data into different categories and store them efficiently. 
 
-This arrangement can be further fetched using queries and filters. 
+In computer science, **ACID** (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, etc.
 
-After creating the new database, any set of data under different categories can be included in the database, without any alteration to the existing system.
+Key constraint specifies that in any relation all the values of a primary key must be unique.
 
-In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps.
-
-As the data is divided amongst the tables of the relational database system, it is possible to make a few tables to be tagged as confidential and others not. 
-
-This segregation is easily implemented with a relational database management system, unlike other databases.
+Also the value of a primary key must not be **null**.
 
 Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
 
@@ -102,10 +95,10 @@ Many web-based businesses require data services that are available without inter
 [stream language="RO" videoId="498356368/437c121efd"  /]
 [/video-vimeo]
 
-Backend-as-a-Service (BaaS) is a cloud service model in which developers outsource all the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
+Backend-as-a-Service or **BaaS** is a cloud service model in which developers outsource all the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
 
-BaaS vendors provide pre-written software for activities that take place on servers, such as user authentication, database management, remote updating, and push notifications (for mobile apps), as well as cloud storage and hosting.
+**BaaS** vendors provide pre-written software for activities that take place on servers, such as user **authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
 
-There are two types of BaaS. One is Cloud BaaS and the other is Open source BaaS.
+There are two types of BaaS. One is **Cloud BaaS** and the other is **Open source BaaS**.
 
 [/slide]
