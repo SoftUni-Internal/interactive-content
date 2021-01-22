@@ -1,6 +1,6 @@
 # Asynchronous JavaScript and XML
 
-[slide]
+[slide hideTitle]
 
 # What is AJAX
 
@@ -9,19 +9,24 @@
 [stream language="RO" videoId="497191274/a7841157ed"  /]
 [/video-vimeo]
 
-**AJAX** stands for **Asynchronous** **JavaScript** and **XML**, but instead of XML nowadays we use **JSON**.
+**AJAX** abbreviation stands for **Asynchronous** **JavaScript** and **XML**. 
 
-That is a technique that allows us to **dynamically** **load** and **render** content or data.
+Nowadays, instead of **XML**, we use **JSON**.
 
-There two types of **AJAX**:
+This technique allows us to **dynamically** **load** and **render** content or data.
 
--  **Partial page rendering**, where we can render an HTML fragment in a `<div>` while the data loads.
+There are two types of **AJAX**:
 
--  **JSON service**, where we have a JSON object, and we need to parse it.
+-  **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads.
+
+-  **JSON service**, has a JSON object, which we need to parse.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # AJAX Workflow
+
 [vimeo-video]
 [stream language="EN" videoId="497191306/6c8c746993" default /]
 [stream language="RO" videoId="497191306/6c8c746993"  /]
@@ -31,9 +36,15 @@ Here is an example of AJAX workflow:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-5.png" /]
 
+In this example, we can see how the **client** sent a request, and the **server** returns a response with the requested page.
+
+After the **initial load** of the page, the **server** will return only **JSON** or **HTML** file.
+
+That allows us to load the content **without** page reload.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # XMLHttpRequest – Standard API for AJAX
 
@@ -42,21 +53,21 @@ Here is an example of AJAX workflow:
 [stream language="RO" videoId="497191331/aab9a52aae"  /]
 [/video-vimeo]
 
-In this example, we will see how to update a web page without reloading the entire page.
+Here we can see how to update a web page without page reloading.
 
-For this example, we will use **XMLHttpRequest object** to request data from the server.
+For this example, we will use **XMLHttpRequest object** to request the data from the server.
 
-First, we need to create a **button** and a **div**.
+We need to create a **button** and a **div**.
 
 ```
 <button id="load">Load Repos</button>
 <div id="res"></div>
 ```
 
-And the function will look like this:
+The function will look like this:
 
 ```js
-let button = document.querySelector('#load');
+let button = document.getElementById('#load');
 
 button.addEventListener('click', function loadRepos() {
    let url = 'https://api.github.com/users/softuni/repos';
@@ -75,7 +86,7 @@ button.addEventListener('click', function loadRepos() {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is Promise?
 
@@ -84,27 +95,21 @@ button.addEventListener('click', function loadRepos() {
 [stream language="RO" videoId="497191378/a55aff23a3"  /]
 [/video-vimeo]
 
-We say **Promise** to the result of an **asynchronous action**.
+**Promise** is the result of an **asynchronous action**.
 
-When the promise is **completed**, it can **produce a value**.
+When the Promise is **completed**, it  **produces value**.
 
-Promises have a state.
+They have states, which are:
 
-The states are:
+- **Pending** means that the operation is still running, or it is unfinished.
+- **Fulfilled** means that the operation is finished, and the result is available.
+- **Failed** means the operation failed, and an error is present.
 
-- Pending - it means that the operation is still running, or it is unfinished.
-- Fulfilled - this one means that the operation is finished, and the result is available.
-- Failed - It means that the operation failed, and an error is present.
-
-They use **Promise** object.
-
-```js
-new Promise(executor);
-```
+To create a **Promise**, we use **Promise object** : `new Promise(executor);`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Promise.then(): Example
 
@@ -113,31 +118,36 @@ new Promise(executor);
 [stream language="RO" videoId="497191409/ff4fc09960"  /]
 [/video-vimeo]
 
-In this example we will see how **new Promise** works:
+In this example we will see how the **new Promise** works:
 
 ```js live
-console.log('Before promise');
+let first = 'Before promise'
+console.log(first);
 
 new Promise(function (resolve, reject) {
    setTimeout(function () {
       resolve('done');
    }, 500);
 }).then(function (res) {
-   console.log('Then returned: ' + res);
+   let second = 'Then returned: ' + res
+   console.log(second);
 });
 
-console.log('After promise');
+let third = 'After promise'
+console.log(third);
 ```
 
-The first and third `console.log()`, are printed first because the promise is not resolved yet.
+Printed first will be the variables called  **first** and **third**.
 
-Once finished, it will console.log the result as a third `console.log()`.
+That is because the Promise is not resolved yet.
+
+The **second** will be printed in the console when the Promise is resolved.
 
 That is because **new Promise** is asynchronous.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is Fetch?
 
@@ -146,15 +156,13 @@ That is because **new Promise** is asynchronous.
 [stream language="RO" videoId="497191438/868f1cd08d"  /]
 [/video-vimeo]
 
-**Fetch** is the alternative to **XMLHttpRequest** in nowadays.
+**Fetch** is an alternative of **XMLHttpRequest**.
 
-The `fetch()` method allows us to make network requests.
+The `fetch()` method allows us to make network requests using Promises.
 
 It makes the code more **maintainable** and more **readable** with **simpler** and **cleaner** API.
 
-**Fetch** uses **Promises**.
-
-Here is an example of how fetch looks like:
+Here is an example of how `fetch()` works:
 
 ```js
 fetch('/api/example.json')
@@ -166,7 +174,7 @@ fetch('/api/example.json')
 
 **Fetch** returns a response, which is a **Stream** object.
 
-We read that stream asynchronously with `then()`.
+We read it asynchronously with `then()`.
 
 When we call the `json()` method, it will return a promise.
 
@@ -174,21 +182,21 @@ When we call the `json()` method, it will return a promise.
 
 If not, we should **handle** the error.
 
-Here is a basic example of that action:
+Here is an example of that action:
 
 ```js
 if (response.status !== 200) {
-   // handle error
+   console.error('Request failed')
 }
 
 response.json().then(function (data) {});
 ```
 
-First, we check the response status, and if it is 200, we continue with parsing the response.
+We check the response status, and if it is **200**, we continue with parsing the response.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Chaining Promises
 
@@ -207,19 +215,22 @@ Here is a basic example:
 
 ```js
 fetch('example.json')
-   .then(status)
-   .then(json)
-   .then((data) => {})
-   .catch((error) => {});
+   .then(res => res.json())
+   .then(data => {
+      console.log(data)
+   })
+   .catch(err => {
+      console.error('Request Failed');
+   });
 ```
 
-In this example, the `then(json)` will be executed if only the status succeeds.
+In this example, we parse the response to JSON, and we print the parsed date in the console.
 
-If one of the operations is not successful `catch((error) => {});` will handle throw an error.
+If one of the operations is not successful, `catch()` will print an error.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # GET Request
 
@@ -228,11 +239,11 @@ If one of the operations is not successful `catch((error) => {});` will handle t
 [stream language="RO" videoId="497191506/ffd06dbce6"  /]
 [/video-vimeo]
 
-The first request with `fetch()` that we are going to have a look at is **GET** request.
+The first request with `fetch()` that we are going to have a look at is a **GET** request.
 
 By default, **Fetch API** sends a **GET** request.
 
-GET request with fetch will look like this:
+Here is an example:
 
 ```js
 fetch('https://api.github.com/users/softuni/repos')
@@ -243,16 +254,16 @@ fetch('https://api.github.com/users/softuni/repos')
 
 To see how it works, run it into the Chrome DevTools console.
 
-First, we **fetch** the URL.
+We **fetch** the URL and we **parse** the received **response** to **JSON**.
 
-After we receive the **response**, we **parse** the data to **JSON**.
+After the data is **parsed**, we print it in the **console**.
 
-And after the data is **parsed**, we printed it in the **console**.
+If there is an error, `catch()` will print an error.
 
-If there is an error, `catch()` will print it in the console.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Post Request
 
 [vimeo-video]
@@ -260,25 +271,27 @@ If there is an error, `catch()` will print it in the console.
 [stream language="RO" videoId="497191535/cb32a5d9e3"  /]
 [/video-vimeo]
 
-A **POST** request is almost the same, the difference is that we need to set the **method**, **headers**, and **body**.
+The **POST** request is different from the **GET** request. 
+
+When we send a **POST** request, we need to set the **method**, the **headers**, and the **body**.
 
 It will look like this:
 
 ```js
-fetch('/url', {
+fetch('https://api.github.com/repos/softni/js-apps/issues', {
    method: 'POST',
    headers: { 'Content-type': 'application/json' },
    body: JSON.stringify(data),
 });
 ```
 
-In the **headers** section we set keys like **Content\-type**, authentication and etc.
+The **Content\-type** or the authentication are set in the **headers** section.
 
-In the **body** we set the data, also we need always to `JSON.stringify()` the data.
+In the **body**, we set the data, and it should be **JSON stringified**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Body Methods
 
@@ -287,23 +300,23 @@ In the **body** we set the data, also we need always to `JSON.stringify()` the d
 [stream language="RO" videoId="497191576/3758785d78"  /]
 [/video-vimeo]
 
-After we fetch a request, it returns a response.
+After the fetch request is done, a response should be returned.
 
-This response object has properties and methods.
+The response object has properties and methods.
 
 The methods are:
 
-- `clone()` \- **Clone** will create a clone of the response.
-- `json()` \- This one will parse the response to JSON.
-- `redirect()` \- It will create a copy of the response, but with a new name.
-- `text()` \- **Text** will parse the response to text.
-- `arrayBuffer()` \- It will return a promise that resolve with an **ArrayBuffer**.
-- `blob()` \- This one will take the response and return a promise that resolves with **Blob**
-- `formData()` \- **FormData** promise that resolves with a **FormData** object
+- `clone()` will create a **clone** of the response.
+- `json()` will **parse** the response to JSON.
+- `redirect()` will create a copy of the response, but with a new name.
+- `text()` will **parse** the response to a text.
+- `arrayBuffer()` will return a promise that resolves with an **ArrayBuffer**.
+- `blob()` will take the response and return a promise that resolves with **Blob**
+- `formData()` will return a promise that resolves with a **FormData** object
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Response Type
 
@@ -312,9 +325,9 @@ The methods are:
 [stream language="RO" videoId="497191609/984e7c1fb1"  /]
 [/video-vimeo]
 
-The response types are read\-only properties, that shows the type of the response
+The **response types** are **read-only** properties, 
 
-The response type are:
+They show the type of the response.
 
 | **Type** | **Description** |
 | --- | --- |
