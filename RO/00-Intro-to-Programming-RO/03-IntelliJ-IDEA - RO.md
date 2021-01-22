@@ -1,5 +1,9 @@
 [slide hideTitle]
 # Mediile integrate de dezvoltare (IDE)
+
+test
+
+
 Pentru a programa, avem nevoie de un mediu integrat de dezvoltare (**Integrated Development Environment**), prescurtat **IDE** (IDE). 
 
 **Un mediu de dezvoltare** (Integrated Development Environment – **IDE**) este o combinație de instrumente tradiționale de dezvoltare a aplicațiilor software. 
