@@ -3,6 +3,8 @@
 
 # Conținutul lecției
 
+test
+
 ## În această lecție veți învăța:
 
 **1. Ce reprezintă codificarea**
