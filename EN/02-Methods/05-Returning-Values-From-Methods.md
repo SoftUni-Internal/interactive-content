@@ -459,6 +459,8 @@ Create a method that calculates and returns the value of a number raised to a gi
 ## Hint
 Use **BigDecimal**.
 
+Test 123
+
 ## Examples
 |**Input**|**Output**|
 | --- | --- |
