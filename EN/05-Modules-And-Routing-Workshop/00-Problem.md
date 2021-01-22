@@ -19,7 +19,7 @@ Because we do not know yet how to manipulate forms properly or the real case wit
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Logged in navigation bar
 
@@ -43,7 +43,7 @@ The nav-bar below the logo of the SoftUni forum includes:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Not logged in navigation bar
 
@@ -59,7 +59,7 @@ The mini nav-bar includes:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Home page - Not Logged in
 
@@ -75,7 +75,7 @@ Here is how it looks like before user has logged in:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Home page - Logged in
 
@@ -85,7 +85,7 @@ Logged in users will see the following view:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Register - Not Logged in
 
@@ -101,7 +101,7 @@ This way each of them can be logged in successfully.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Login - Not Logged in
 
@@ -115,7 +115,7 @@ For now, we do not have a database with user registration, so make sure each reg
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Themes page - Not Logged in
 
@@ -133,7 +133,7 @@ The anonymous user should see the following:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Themes page - Logged in
 
@@ -145,7 +145,7 @@ Note: Because you are still not really logged in, you can **hardcode** this user
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Theme comments - Not Logged in
 
@@ -155,7 +155,7 @@ This is the theme comments URL `localhost:4200/themes/:themeId`, where the user 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Theme comments - Logged in
 
@@ -165,7 +165,7 @@ This is the theme comments URL `localhost:4200/themes/:themeId`, where the user 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create New Theme - Logged in only
 
@@ -181,7 +181,7 @@ When "**Cancel**" button is clicked, redirect the user to the **Home** page.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Profile - Logged in
 
@@ -197,7 +197,7 @@ The "**Edit**" button will replace the information fields with input fields, but
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Invalid routes
 
@@ -209,7 +209,7 @@ Use it if an invalid path or wrong one is accessed.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Protected routes
 
