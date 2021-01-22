@@ -26,7 +26,7 @@ Create a **Template-Driven** form that looks like this:
 
 [slide]
 
-# Solution: Create A Template-Driven Form
+# Import Bootstrap
 
 First install Bootstrap. 
 
@@ -71,7 +71,7 @@ export class AppModule { }
 
 # Create a Form Component
 
-An Angular form has two parts: An **HTML** based **template** and a component class to handle data.
+An Angular form has two parts: An **HTML** based **template** and a component **class** to handle data.
 
 ```js
 @Component({…})
@@ -143,6 +143,8 @@ To do this use the **ngModel** directive.
 
 Note that this directive will not work without a **name attribute**!
 
+So, we need to include this in our html template.
+
 ```html
 <input name="processor"/>
 ```
@@ -153,7 +155,7 @@ Note that this directive will not work without a **name attribute**!
 
 # The NgForm Directive
 
-Declare a template veriable to the form.
+Declare a template veriable inside the form.
 
 ```html
 <form #f="ngForm">
@@ -161,7 +163,7 @@ Declare a template veriable to the form.
 
 Angular will automatically attach a **NgForm Directive**.
 
-The **NgForm Directive** will also add additional features like:
+The **NgForm Directive** will also add additional features:
 - It can monitor properties.
 - It can validate properties.
 - It holds a **valid** property which is **true** only if **all controlls** are valid.
@@ -170,7 +172,9 @@ The **NgForm Directive** will also add additional features like:
 
 [slide]
 
-# Access The Local Reference
+# Access the Local Reference
+
+In Angular we can easily fetch a value of any input through local references.
 
 Use `@ViewChild` to access the local reference.
 
@@ -190,7 +194,7 @@ export class LaptopFormComponent implements AfterViewInit {
 
 # Submit a Form
 
-To submit a form bind **ngSubmit** event property to form component's `onSubmit()` method.
+To submit a form bind **ngSubmit** event property to the form component's `onSubmit()` method.
 
 ```html
 <form (ngSubmit)="onSubmit()" #f="ngForm">
@@ -216,9 +220,9 @@ The **NgForm Directive** tracks if:
 - The user has changed the control.
 - The control is valid.
 
-The NgForm Directive does not just track the state of the form control.
+The **NgForm Directive** does not just track the state of the form control.
 
-It can also update the control with special Angular CSS classes and leverage those class names to change appearance.
+It can also **update** the control with special Angular CSS classes and leverage those class names to change appearance.
 
 [/slide]
 
@@ -269,7 +273,7 @@ input.ng-invalid.ng-touched {
 
 # Add Validation
 
-Add **HTML 5 attributes** to input fields for validation.
+Add **HTML 5 attributes** to the input fields for validation.
 
 Angular tracks most attributes and changes the state depending on the user input.
 
@@ -321,7 +325,7 @@ Add a template reference variable in the input.
 
 # Displaying Error Messages - 2
 
-Create a div and display it only when the control state is **invalid**.
+Create a **div** and display it **only** when the control state is **invalid**.
 
 Use the reference variable to check the state.
 
@@ -357,6 +361,8 @@ Block the **submit** button in case a control has **invalid state**.
 
 Instantly react to any changes using two-way data binding.
 
+Use two-way binding syntax - a combination of square brackets and parentheses, `[()]`.
+
 ```html
 <input type="text" class="form-control"
     id="processor"
@@ -378,7 +384,9 @@ constructor() {
 
 # The NgModelGroup Directive
 
-Group similar input fields using **ngModelGroup Directive**.
+This directive can only be used as a child of **NgForm** within `<form>` tags.
+
+Use it to validate a sub-group of your form separately from the rest of your form.
 
 It is useful for input fields that have the same validation.
 
