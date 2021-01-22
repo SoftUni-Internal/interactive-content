@@ -1,14 +1,16 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learned:
 
--  HTTP is a text-based client-server protocol, used for transferring Web resources.
+-  HTTP is a **text-based client-server protocol** used for transferring Web resources
 
--  REST is **request-response** based architecture style for **client-server communication**.
+-  REST is an architecture style for **client-server communication**
 
--  REST requests are:
+   -  Based on **request-response**
+
+-  **REST requests:**
 
    -  GET
 
@@ -65,9 +67,9 @@
    token: example
    ```
 
--  **RESTful** services provide **CRUD** operations over HTTP.
+-  **RESTful** services provide **CRUD** operations over HTTP
 
--  **AJAX** allows us to load dynamic content in background.
+-  **AJAX** allows us to load dynamic content in the background
 
    -  **XMLHttpRequest**
 
@@ -88,7 +90,7 @@
       .catch((err) => {});
    ```
 
-## In the next lesson you will learn about:
+## In the next lesson, you will learn:
 
 -  Asynchronous Programming and Promises:
 
