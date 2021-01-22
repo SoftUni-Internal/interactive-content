@@ -3,7 +3,7 @@
 
 # Conținutul lecției
 
-## În această lecție veți învăța
+## În această lecție veți învăța:
 
 **1. Ce reprezintă codificarea**
 
