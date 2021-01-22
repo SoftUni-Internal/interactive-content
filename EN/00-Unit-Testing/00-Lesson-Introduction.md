@@ -1,14 +1,14 @@
 # Lesson Introduction
 
-[slide]
-# Table of Contents
+[slide hideTitle]
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="497187463/27e13c8c22" default /]
 [stream language="RO" videoId="497187463/27e13c8c22"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Unit Testing**
 
@@ -17,4 +17,5 @@
 **2. Unit Testing With Mocha And Chai**
 
 - What is a framework for testing
+
 [/slide]
