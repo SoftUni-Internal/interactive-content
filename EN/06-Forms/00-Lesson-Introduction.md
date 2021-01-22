@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Lesson content
+# Lesson Content
 
 ## In this lesson you will learn:
 
