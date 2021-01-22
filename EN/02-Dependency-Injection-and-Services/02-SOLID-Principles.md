@@ -11,7 +11,7 @@ The **SOLID** principles, introduced by American software engineer and instructo
 **SOLID** is an acronym for:
 
 - **S**: Single responsibility principle;
-- **O**: Open\-closed principle;
+- **O**: Open-closed principle;
 - **L**: Liskov substitution principle;
 - **I**: Interface segregation principle;
 - **D**: Dependency inversion principle.
