@@ -5,13 +5,13 @@
 
 ## În această lecție veți învăța:
 
-**1. Ce reprezintă codificarea?**
+**1. Ce reprezintă codificarea**
 
 - Cum să scrieți comenzi și programe simple 
 
 **2.  Limbajul Java**
 
-- Cum este structurat limbajul Java?
+- Cum este structurat limbajul Java
 
 **3. Medii de dezvoltare (IDEs) pentru Java**
 
