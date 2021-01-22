@@ -15,11 +15,11 @@ function solve(){
 [task-description]
 # Description
 
-[Download resource here!](https://mega.nz/file/zMRB1aJA#nJM2avdLVJbpTq2Gdmxc_3hq8cuh5SQVbRwYRQMlTpo)
+[Download the resource here!](https://mega.nz/file/zMRB1aJA#nJM2avdLVJbpTq2Gdmxc_3hq8cuh5SQVbRwYRQMlTpo)
 
 Use the `index.html` and `app.js` files to solve this problem.
 
-You **must not** directly change anything in the `index.html` file. 
+**Note: You must complete this task without changing anything in the given HTML file (index.html)**.
 
 [image assetsSrc="exam-prep-pic1.png" /]
 
