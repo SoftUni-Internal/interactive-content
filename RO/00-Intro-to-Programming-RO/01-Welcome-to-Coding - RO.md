@@ -2,7 +2,6 @@
 # Ce reprezintă codificarea
 **A programa** înseamnă  **a transmite comenzi** computerului, de exemplu, *"să emită un sunet"*, *"să imprime ceva pe ecran"* sau *"să înmulțească două numere"*. 
 
-test 123
 
 Când comenzile se succed una după alta, ele se numesc **program de calculator**. 
 
