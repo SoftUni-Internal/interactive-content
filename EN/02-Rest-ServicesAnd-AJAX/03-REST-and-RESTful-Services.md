@@ -44,6 +44,9 @@ They are:
 - Layered system architecture
 - Code on demand - this one is optional.
 - Uniform interface
+
+You can read more about REST Architectural Constraints [here](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf?fbclid=IwAR0vzDHFwDYLG_uarrsMbxwhgvnmgE6s-7jk37y0agkxxgqvXM7y-wCiZXQ).
+
 [/slide]
 
 [slide hideTitle]
