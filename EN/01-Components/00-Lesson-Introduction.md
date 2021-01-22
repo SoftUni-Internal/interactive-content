@@ -1,8 +1,8 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table Of Content
+# Lesson content
 
 ## In this lesson you will learn:
 

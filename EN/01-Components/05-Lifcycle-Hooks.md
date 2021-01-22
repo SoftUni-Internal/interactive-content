@@ -1,6 +1,6 @@
 # Lifecycle Hooks
 
-[slide]
+[slide hideTitle]
 
 # Lifecycle Overview
 

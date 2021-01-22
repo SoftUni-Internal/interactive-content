@@ -1,6 +1,6 @@
 # Component Interaction
 
-[slide]
+[slide hideTitle]
 
 # From Parent To Child
 

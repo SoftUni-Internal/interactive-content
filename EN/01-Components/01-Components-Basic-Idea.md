@@ -1,6 +1,6 @@
 # Components Basic Idea
 
-[slide]
+[slide hideTitle]
 
 # The Idea Behind Components - 1
 

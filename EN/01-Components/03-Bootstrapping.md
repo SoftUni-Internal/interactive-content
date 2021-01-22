@@ -1,8 +1,8 @@
 # Bootstrapping
 
-[slide]
+[slide hideTitle]
 
-# Bootstrapping An Application
+# Bootstrapping an Application
 
 An **NgModule** describes how the application parts fit together. 
 

@@ -1,6 +1,6 @@
 # Creating Components
 
-[slide]
+[slide hideTitle]
 
 # Creating Components Manually 1
 

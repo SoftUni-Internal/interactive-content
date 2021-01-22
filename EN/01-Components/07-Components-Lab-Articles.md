@@ -1,6 +1,6 @@
 # Components Lab: Articles
 
-[slide]
+[slide hideTitle]
 
 # Create Angular App
 

@@ -1,8 +1,8 @@
 # Data Bindings And Templates
 
-[slide]
+[slide hideTitle]
 
-# Templates And Data Binding Overview
+# Templates and Data Binding Overview
 
 We define a component's view with its template. A template is a form of HTML that tells Angular how to render the component.
 
