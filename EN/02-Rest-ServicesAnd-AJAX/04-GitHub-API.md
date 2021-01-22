@@ -1,6 +1,6 @@
 # GitHub API
 
-[slide]
+[slide hideTitle]
 
 # GitHub API - Example
 
@@ -9,55 +9,57 @@
 [stream language="RO" videoId="497191130/b851b586aa"  /]
 [/video-vimeo]
 
-To try GitHub's API we need Postman.
+To try the GitHub's API we need Postman.
 
-In this example we will see **GET** requests to the following URLs:
+In this examples we will see a **GET** requests to the following URLs:
 
--  To list all public repositories, the URL that we need is https://api.github.com/users/SoftUni/repos.
--  To list all commits from a public repository, the URL that we need is https://api.github.com/repos/softuni/js-apps/commits.
--  To get the issues from a public repository the, URL that we need is https://api.github.com/repos/softuni/js-apps/issues.
--  To get the first issue from a public repository, the URL that we need is https://api.github.com/repos/softuni/js-apps/issues/1.
+-  To list all public repositories, the URL we need is: `https://api.github.com/users/SoftUni/repos`.
+-  To list all commits from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/commits`.
+-  To get the issues from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues`.
+-  To get the first issue from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues/1`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# GitHub: Labels Issue - Example
+# GitHub: Labels Issue: Example
 
 [vimeo-video]
 [stream language="EN" videoId="497191186/eea6d5398d" default /]
 [stream language="RO" videoId="497191186/eea6d5398d"  /]
 [/video-vimeo]
 
-To try, we need Postman.
+We need Postman if we want to try GitHub's API.
 
-So In this example, we need to get one particular issue from the **js-apps** repository.
+In this example, we need to get a particular issue from the **js-apps** repository.
 
-So we need to send a **GET** request and specify the **id** of that issue to the following URL: https://api.github.com/repos/softni/js-apps/issues/1.
+We need to specify the **id** of the issue and send a **GET** request to the following URL: `https://api.github.com/repos/softni/js-apps/issues/1`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# GitHub: Create Issue - Example
+# GitHub: Create Issue: Example
 
 [vimeo-video]
 [stream language="EN" videoId="497191252/8d95fa288f" default /]
 [stream language="RO" videoId="497191252/8d95fa288f"  /]
 [/video-vimeo]
 
-In this example, we need Postman.
+For these examples, we need Postman.
 
-Firstly, we will get the label of a certain issue.
+We need to get the label of a specific issue.
 
-To do this, we need to send a GET request to the following URL: https://api.github.com/repos/softni/js-apps/issues/1/labels.
+To do that, we need to send a **GET** request to the following URL: `https://api.github.com/repos/softni/js-apps/issues/1/labels`.
 
-And now, let's try to create an issue to a certain repository.
+Let us try to create an issue in a repository.
 
-So we need to send a **POST** request to the following URL: https://api.github.com/repos/softni/js-apps/issues.
+We need to send a **POST** request to the following URL: `https://api.github.com/repos/softni/js-apps/issues`.
 
-And we also need in **Authorization** we have to choose **Basic Authentication** and in the fields **Username** and **Password** we need to enter our GitHub credentials.
+We also need to choose a **Basic Authentication** in the **Authorization** header. 
 
-We also need to pass a JSON object to the body of that request.
+In the fields for **Username** and **Password**, we need to enter our GitHub credentials.
+
+The last steps is to pass a JSON object to the body of the request.
 
 [/slide]
