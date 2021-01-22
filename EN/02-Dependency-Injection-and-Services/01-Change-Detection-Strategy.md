@@ -56,7 +56,7 @@ We will learn what `onPush` means in the next video.
 
 [slide hideTitle]
 
-# Change Detection Strategy \- Members
+# Change Detection Strategy - Members
 
 `ChangeDetectionStrategy` has two members:
 
