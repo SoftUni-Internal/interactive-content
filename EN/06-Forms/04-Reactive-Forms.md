@@ -14,7 +14,7 @@ Reactive forms also make testing easy, this way we are assured that our data is 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Reactive Forms Module
 
@@ -32,7 +32,7 @@ After importing the **Reactive Forms Module** we have access to all the needed d
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Component Class
 
@@ -57,7 +57,7 @@ this.laptopForm = new FormGroup({
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Template
 
@@ -77,7 +77,7 @@ Here **formControlName** is the name of the key instance.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Accessing Form Model Properties
 
@@ -91,7 +91,7 @@ The idea is to shorten the template and transfer such logic in the component whe
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Using Form Builder
 

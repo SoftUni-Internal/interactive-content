@@ -36,7 +36,7 @@ They are easy to recognize. An asterisk `*` precedes the directive attribute nam
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Directives Comparison
 
@@ -50,7 +50,7 @@ Examples: `*ngIf`, `*ngFor`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Simple Attribute Directive
 
@@ -75,7 +75,7 @@ export class HighlightDirective {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Attach Styles To Referenced Elements
 
@@ -104,7 +104,7 @@ import { Renderer2 } from '@angular/core'
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Renderer2 Usage
 
@@ -123,7 +123,7 @@ ngOnInit() {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Respond To Events
 
@@ -150,7 +150,7 @@ Use the **HostListener** decorator.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Using HostBinding
 
