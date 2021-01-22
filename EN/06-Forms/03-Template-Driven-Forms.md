@@ -14,7 +14,7 @@ Follow these steps when building a form by writing templates using the Angular t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Create a Template-Driven Form
 
@@ -24,7 +24,7 @@ Create a **Template-Driven** form that looks like this:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Import Bootstrap
 
@@ -45,7 +45,7 @@ Create **containers**, **form-groups**, **form-controls**, **style buttons** and
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Introducing Forms Module
 
@@ -67,7 +67,7 @@ export class AppModule { }
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create a Form Component
 
@@ -86,7 +86,7 @@ export class LaptopFormComponent {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Initial HTML Template
 
@@ -127,7 +127,7 @@ Use the following HTML to create the template.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The NgModel Directive
 
@@ -151,7 +151,7 @@ So, we need to include this in our html template.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The NgForm Directive
 
@@ -170,7 +170,7 @@ The **NgForm Directive** will also add additional features:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Access the Local Reference
 
@@ -190,7 +190,7 @@ export class LaptopFormComponent implements AfterViewInit {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Submit a Form
 
@@ -211,7 +211,7 @@ onSubmit() {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Tracking Form State
 
@@ -226,7 +226,7 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Track Control State
 
@@ -252,7 +252,7 @@ This pair of classes defines the state of the control whether its value is valid
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Add Custom CSS For a Visual Feedback
 
@@ -269,7 +269,7 @@ input.ng-invalid.ng-touched {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Add Validation
 
@@ -288,7 +288,7 @@ Angular tracks most attributes and changes the state depending on the user input
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Third-party Validators
 
@@ -300,7 +300,7 @@ And here you can find some npm packages with [custom validators](https://www.npm
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Displaying Error Messages - 1
 
@@ -321,7 +321,7 @@ Add a template reference variable in the input.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Displaying Error Messages - 2
 
@@ -339,7 +339,7 @@ Add a helpful message inside the **div**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Form Overall Validity
 
@@ -355,7 +355,7 @@ Block the **submit** button in case a control has **invalid state**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Two-way Data Binding
 
@@ -380,7 +380,7 @@ constructor() {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The NgModelGroup Directive
 
@@ -404,7 +404,7 @@ For Example: Password and Confirm Password.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Setting and Patching a Form Value
 
@@ -420,7 +420,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Resseting the Form
 
