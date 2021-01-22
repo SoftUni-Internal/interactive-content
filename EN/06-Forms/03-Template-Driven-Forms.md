@@ -363,7 +363,7 @@ Instantly react to any changes using two-way data binding.
 
 Use two-way binding syntax - a combination of square brackets and parentheses `[()]`.
 
-```js
+```html
 <input type="text" class="form-control"
     id="processor"
     required
@@ -393,10 +393,7 @@ It is useful for input fields that have the same validation.
 For Example: Password and Confirm Password.
 
 ```html
-<div
-    ngModelGroup="passData"
-    #passData="ngModelGroup">
-</div>
+<div ngModelGroup="passData" #passData="ngModelGroup"></div>
 ```
 
 ```html
