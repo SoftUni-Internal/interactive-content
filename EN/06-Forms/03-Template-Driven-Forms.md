@@ -361,7 +361,7 @@ Block the **submit** button in case a control has **invalid state**.
 
 Instantly react to any changes using two-way data binding.
 
-Use two-way binding syntax - a combination of square brackets and parentheses, `[()]`.
+Use two-way binding syntax - a combination of square brackets and parentheses `[()]`.
 
 ```html
 <input type="text" class="form-control"
