@@ -1,6 +1,6 @@
 # Softuni Forum Workshop: Part 1
 
-[slide]
+[slide hideTitle]
 
 # Task Requirements
 [Download resources here!](https://mega.nz/file/Oc4BTa5B#kopKiHP4-KPlYK7si4ecujloS1PxIhVJG_ULMZmhpKo)
@@ -19,7 +19,7 @@ Be careful when you structure the components.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # MongoDB
 
@@ -45,7 +45,7 @@ This is it! Now you can check if the **db** is in your **dbs** using the followi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # REST API
 
@@ -86,7 +86,7 @@ Logged out users see the Login and the Register buttons or links.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implementation of the Main Section
 
@@ -100,7 +100,7 @@ Each theme should have a title, date of creation, the username of the creator an
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implementation of the Aside Section
 
