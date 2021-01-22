@@ -14,7 +14,7 @@ A directive has the same set of lifecycle hooks, minus the hooks that are specif
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # NgOnInit And NgOnDestroy
 
@@ -42,7 +42,7 @@ export class GamesComponent implements OnInit, OnDestroy {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Other Lifecycle Hooks
 

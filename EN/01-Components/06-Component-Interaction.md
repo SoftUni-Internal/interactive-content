@@ -35,7 +35,7 @@ export class GameComponent {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # From Child To Parent
 

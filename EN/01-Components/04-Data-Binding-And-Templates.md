@@ -21,7 +21,7 @@ They can be both **inline** or in a **separate file**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Render An Array Using NgFor
 
@@ -55,7 +55,7 @@ Notice that the `*` symbol is required before the "ngFor" keyword.
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Conditional Statements Using ngIf
 
@@ -89,7 +89,7 @@ We create **if** statements using the `*ngIf` keyword as shown in the HTML below
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Attach Events
 
@@ -118,7 +118,7 @@ export class GamesComponent {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Binding Attributes
 
@@ -145,7 +145,7 @@ export class GamesComponent {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Binding CSS Classes
 
@@ -175,7 +175,7 @@ Angular adds the class when the bound expression, `isSpecial` is **truthy**, and
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Binding Styles
 
@@ -213,7 +213,7 @@ Alternativly it sets the font-size in "%" unit if `isSpecial` is falsy.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Reference And Null-Safe Operator
 
@@ -260,7 +260,7 @@ When "game" is diferent than **null** or **undefined**, then it will bind `game.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Template Expressions
 
@@ -280,7 +280,7 @@ JavaScript expressions that have or promote side effects are **prohibited**, inc
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Types Of Data Binding
 

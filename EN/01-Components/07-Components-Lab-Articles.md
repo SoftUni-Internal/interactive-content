@@ -40,7 +40,7 @@ Your app should look like this:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create Article Model
 
@@ -65,7 +65,7 @@ export class Article{
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create Article Data
 
@@ -136,7 +136,7 @@ Later on we will learn more about real services and injectables and how to imple
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create Article Component
 
@@ -211,7 +211,7 @@ It will receive **two properties** that need to be **transferred** from the pare
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create The HTML Markup
 
@@ -248,7 +248,7 @@ All the properties inside the `*ngIf` directive are controlled in our article co
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create The Needed Properties
 
@@ -291,7 +291,7 @@ We can also do this in the `ngOnInit` lifecycle hook.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implement The Read More Function
 
@@ -305,7 +305,7 @@ The following image is blurred, try to implement the logic yourself:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implement The ToggleImage Function
 
@@ -317,7 +317,7 @@ If the content is "**Hide Image**" we have to do the opposite.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implement The HideDesc Function
 
@@ -327,7 +327,7 @@ This function should **reset** the description to show the description length co
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create Articles Component
 
@@ -346,7 +346,7 @@ ul {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Implement Component Logic
 
@@ -370,7 +370,7 @@ export class ArticlesComponent implements OnInit {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create The HTML Markup
 
@@ -395,7 +395,7 @@ Only thing left is to place the articles selector inside "app.component.html" us
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Test The Application
 

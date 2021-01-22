@@ -62,7 +62,7 @@ export class AppComponent{}
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Creating Components Manually 3
 
@@ -84,7 +84,7 @@ Without this declaration, a component would not be able to use directives and pi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Creating Components With The CLI
 

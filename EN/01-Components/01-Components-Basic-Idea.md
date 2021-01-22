@@ -36,7 +36,7 @@ export class AppComponent { title = 'App Title'; }
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Idea Behind Components - 2
 

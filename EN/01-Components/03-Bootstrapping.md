@@ -12,7 +12,7 @@ By convention this **NgModule** is named **AppModule** but we can give it any ot
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Initial Module
 
@@ -39,7 +39,7 @@ export class AppModule { }
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Initial Module Properties
 
