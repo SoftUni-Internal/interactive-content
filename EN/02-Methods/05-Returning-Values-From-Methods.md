@@ -460,6 +460,7 @@ Create a method that calculates and returns the value of a number raised to a gi
 Use **BigDecimal**.
 
 Test 123
+Test 312
 
 ## Examples
 |**Input**|**Output**|
