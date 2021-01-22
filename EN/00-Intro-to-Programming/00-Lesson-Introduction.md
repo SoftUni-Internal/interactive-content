@@ -6,13 +6,13 @@
 
 ## In this lesson you will learn:
 
-**1. What is Coding?**
+**1. What is Coding**
 
 - How to write a simple Commands and Programs
 
 **2. Java Language**
 
-- How is structured the Java language?
+- How is structured the Java language
 
 **3. Development Environments (IDEs) for Java**
 
