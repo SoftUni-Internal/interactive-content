@@ -12,7 +12,7 @@ They are built around observable streams, where form inputs and values are provi
 
 Reactive forms also make testing easy, this way we are assured that our data is consistent and predictable when requested.
 
-[slide]
+[/slide]
 
 [slide]
 
