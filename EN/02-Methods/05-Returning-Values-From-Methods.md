@@ -10,7 +10,6 @@
 
 The `return` keyword finishes the execution of a method, and can be used to return a value from a method.
 
-Тест 123
 
 ```java live no-template
 public class MyClass {
