@@ -456,6 +456,9 @@ public class Main {
 ## Description
 Create a method that calculates and returns the value of a number raised to a given power:
 
+## Hint
+Use **BigDecimal**.
+
 ## Examples
 |**Input**|**Output**|
 | --- | --- |
@@ -600,6 +603,9 @@ public class Main {
 [task-description]
 ## Description
 Create a method that calculates and returns the value of a number raised to a given power:
+
+## Hint
+Use **BigDecimal**.
 
 ## Examples
 |**Input**|**Output**|
