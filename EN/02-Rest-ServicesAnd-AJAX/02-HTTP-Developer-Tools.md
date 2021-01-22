@@ -21,6 +21,7 @@ Here is how it looks:
 
 You can learn more about DevTools [here](https://developers.google.com/web/tools/chrome-devtools).
 
+
 [/slide]
 
 [slide hideTitle]
