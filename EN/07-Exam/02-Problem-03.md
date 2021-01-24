@@ -58,7 +58,7 @@ An **array** of strings that stores the procedures that need to be performed on 
 
 **You know that a pet is currently a patient of the clinic when one or more procedures are recorded in their list of procedures.**
 
-When the pet is healed and leaves the clinic, **its array of procedures must be emptied** so when the pet comes back again it can be listed with new procedures.
+When the pet is healed and leaves the clinic, **its array of procedures must be emptied** so if the pet comes back again it can be listed with new procedures.
 
 **Before registering:**
 
