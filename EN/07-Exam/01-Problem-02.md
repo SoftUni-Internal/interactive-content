@@ -18,7 +18,7 @@ function solveClasses(){
 
 Implement the following classes: `Pet`, `Cat`, `Dog`.
 
-## Class Pet 
+## Pet Class
 
 - `constructor(owner, name)`
 
@@ -30,11 +30,11 @@ comments – array;
 
 - `addComment(comment)`
 
-This function should receive single **comment** like string, add it to the **comments** array and return a message:
+This function should receive a single **comment** as a string, add it to the **comments** array and return a message:
 
 `Comment is added.`
 
-If comment is **already added** to the comments array throw an error with:
+If the the same comment was **already added** to the comments array, throw an error:
 
 `This comment is already added!`
 
@@ -45,18 +45,18 @@ This **function** should **return** a simple message:
 
 - `toString()`
 
-This **function** should **return** string:
+This **function** should **return** a string:
 
 `Here is { owner }'s pet { name }.`
 
-If there are any **comments** then add on a new line:
+If there are any **comments** then add them on a new line:
 
 `Special requirements: { comment1 }, { comment2 }, { comment3 ...}`
 
 
-## Class Cat
+## Cat Class
 
-Class `Cat` inherits class `Pet`.
+The `Cat` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
@@ -67,28 +67,27 @@ scratching – boolean,
 
 - `feed()`
 
-This function should inherit the `feed()` method of class `Pet` and extend the **returned** message adding this at the same line at the end:
+This function should inherit the `feed()` method of the `Pet` class and extend the **returned** message adding this to the end of the same line:
 
 `, happy and purring.`
 
 - `toString()`
 
-This function should extend the `toString()` method of class `Pet`, returning the **message** with some more lines at the end which are:
-
+This function should extend the `toString()` method of the `Pet` class, returning the **message** with some more lines at the end which are:
 
 `Main information:`
 `{ name } is a cat with { insideHabits }`
 
 
-And if **scrathing** prоperty is **true** you should add this at the end: 
+And if the value of the **scratching** prоperty is **true** you should add this at the end: 
 
 `, but beware of scratches.`  
 
 **Note: For more information see the examples below!**
 
-## Class Dog
+## Dog Class
 
-Class `Dog` inherits class `Pet`.
+The `Dog` class inherits from `Pet`.
 
 - `constructor(owner, name, runningNeeds, trainability)`
 
@@ -100,11 +99,11 @@ runningNeeds – string
 trainability – string 
 
 - `feed()`
-This **function** should inherit the `feed()` method of class `Pet` and extend the returned message adding this at the end:
+This **function** should inherit the `feed()` method of the `Pet` class and extend the returned message adding this at the end:
 `, happy and wagging tail.`
 
 - `toString()`
-This **function** should extend the `toString()` method of class `Pet` returning the message with some more lines at the end which are:
+This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end which are:
 
 `Main information:`
 `{ name } is a dog with need of { runningNeeds }km running every day and { trainability } trainability.`
