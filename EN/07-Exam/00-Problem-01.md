@@ -14,60 +14,60 @@ function solve(){
 [task-description]
 # Description
 
-[Download resource here!](https://mega.nz/file/CdQn3aQK#5vUL-hIF1uHQ9L0C4O8iLXj2j3WMJU2_nbr6KodjtDU)
+[Download the resource here!](https://mega.nz/file/CdQn3aQK#5vUL-hIF1uHQ9L0C4O8iLXj2j3WMJU2_nbr6KodjtDU)
 
-Use the **given skeleton** to solve this problem.
+Use the **provided project skeleton** to solve this problem.
 
-**Note: You have NO permission to change directly the given HTML (index.html file).**
+**Note: You must complete this task without changing anything in the given HTML file (index.html)**.
 
 [image assetsSrc="exam-pic1.png" /]
 
 ## Your task
 
-Write the missing JavaScript code to make the Pet Me application work as expected.
+Write the missing JavaScript code to make the **Pet Me** application work as expected.
 
-Each new registered pet must have `Name`, `Age`, `Kind` and `Current Owner`.
+Each new registered pet must have the following properties: `Name`, `Age`, `Kind` and `Current Owner`.
 
-When you click the `[Add]` button and **only** if all inputs are **filled** and the age is a number, then a new **list item** should be added to the section with id `adoption`.
+When the `[Add]` button is clicked a new **list** item should be added to the section with id `adoption`. Do not add anything if **any of the input fields are empty** or if the age entered is not a number.
 
-Do not forget to **clear the inputs** when you add a new pet.
+Do not forget to **clear the inputs** after a new pet is added or in case of invalid input (see above).
 
-## Already added pets
+## Existing pets
 
 [image assetsSrc="exam-pic2.png" /]
 
-The new item should have the **following structure:**
+Any new item that is added should have the **following structure:**
 
 [image assetsSrc="exam-pic3.png" /]
 
-You should create a `li` element that contains **paragraph** element with the name, age and kind of the new pet, follow the format `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are in a strong elements inside the paragraph. 
+You should create a **list** element that contains a **paragraph** element with the name, age, and kind of the new pet (cat, dog, parrot, and so on). 
 
-After that we have `span` element with `Owner: { owner name }` and a button `[Contact with owner]`.
+Format: `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are inside **\<strong>** elements within the paragraph. 
 
-When you click the `[Contact with owner]` button an input appears and the button changes to `[ Yes! I take it! ]` like this:
+After the list element, we have a **span** element with `Owner: { owner name }` and a `[Contact Owner]`  button.
+
+When the `[Contact Owner]` button is clicked, an input appears and the button changes to `[ Yes! I will take it! ]` like this:
 
 [image assetsSrc="exam-pic4.png" /]
 
-The new elements are into a `div` element and **structure is changed like this:**
+The new elements should be placed inside a `div` element and ** the structure changes like so:**
 
 [image assetsSrc="exam-pic5.png" /]
 
 ## Moving pets into the new home section
 
-When you click the `[Yes! I take it!]` button **if there is entered name** you should **move the current list item** to the **adopted section.**
+When the `[Yes! I will take it!]` button is clicked, **if a name is entered**, you should **move the current list item** to the **adopted section.**
 
 [image assetsSrc="exam-pic6.png" /]
 [image assetsSrc="exam-pic7.png" /]
 
-Here we have changed the **owner name** with the new one.
+Here we have changed the **owner's name** to the new one.
 
-And the button is `[Checked]`.
-
-We have the next HTML structure:
+We also have a `[Checked]` button:
 
 [image assetsSrc="exam-pic8.png" /]
 
-And in the end button `[Checked]` must **delete** the current list item.
+When clicked, the `[Checked]` button must **delete** the current list item.
 
 [/task-description]
 [code-io /]
@@ -130,7 +130,7 @@ const form = document.getElementById('container');
         expect(strongAge.textContent).to.be.equal("0.3", 'Pet age should be Main'); 
         expect(strongKind.textContent).to.be.equal("cat", 'Pet kind should be 12.00');  
         expect(p.textContent).to.be.equal("Tom is a 0.3 year old cat", 'P element must contains - Tom is a 0.3 year old cat'); 
-        expect(btn.textContent).to.be.equal("Contact with owner", 'Button text content must be - Contact with owner');  
+        expect(btn.textContent).to.be.equal("Contact Owner", 'Button text content must be - Contact Owner');  
         expect(span.textContent).to.be.equal("Owner: Jim King", 'Span must contains - Owner: Jim King');
 [/input]
 [output]
@@ -187,8 +187,8 @@ result();
         expect(newInput.tagName).to.be.equal("INPUT", 'New DIV element shoud appear');
         expect(newBtn.tagName).to.be.equal("BUTTON", 'New DIV element shoud appear');
 
-        expect(newInput.placeholder).to.be.equal("Enter your names", 'Check input placeholder - Enter your names');
-        expect(newBtn.textContent).to.be.equal("Yes! I take it!", 'The new button name is Yes! I take it!');
+        expect(newInput.placeholder).to.be.equal("Enter your name", 'Check input placeholder - Enter your name');
+        expect(newBtn.textContent).to.be.equal("Yes! I will take it!", 'The new button name is Yes! I will take it!');
 [/input]
 [output]
 yes
@@ -608,7 +608,7 @@ const form = document.getElementById('container');
         expect(strongAge.textContent).to.be.equal("0.3", 'Pet age should be Main'); 
         expect(strongKind.textContent).to.be.equal("cat", 'Pet kind should be 12.00');  
         expect(p.textContent).to.be.equal("Tom is a 0.3 year old cat", 'P element must contains - Tom is a 0.3 year old cat'); 
-        expect(btn.textContent).to.be.equal("Contact with owner", 'Button text content must be - Contact with owner');  
+        expect(btn.textContent).to.be.equal("Contact Owner", 'Button text content must be - Contact Owner');  
         expect(span.textContent).to.be.equal("Owner: Jim King", 'Span must contains - Owner: Jim King');
 [/input]
 [output]
@@ -665,8 +665,8 @@ result();
         expect(newInput.tagName).to.be.equal("INPUT", 'New DIV element shoud appear');
         expect(newBtn.tagName).to.be.equal("BUTTON", 'New DIV element shoud appear');
 
-        expect(newInput.placeholder).to.be.equal("Enter your names", 'Check input placeholder - Enter your names');
-        expect(newBtn.textContent).to.be.equal("Yes! I take it!", 'The new button name is Yes! I take it!');
+        expect(newInput.placeholder).to.be.equal("Enter your name", 'Check input placeholder - Enter your name');
+        expect(newBtn.textContent).to.be.equal("Yes! I will take it!", 'The new button name is Yes! I will take it!');
 [/input]
 [output]
 yes
