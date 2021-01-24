@@ -84,7 +84,7 @@ Then check if the given `petName` is registered under this `ownerName`, if not o
 
 `Sorry, there are no procedures for { petName }!`
 
-Otherwise, on leaving **generate** the current customer bill, add it to the total clinic profit and save the data. Calculate the bill knowing that each procedure cost `500.00$`. 
+Otherwise, on leaving **generate** bill of the current customer, add it to the total profit of the clinic and save the data. Calculate the bill knowing that each procedure cost `500.00$`. 
 
 Do not forget to **update** the current **workload**. 
 
