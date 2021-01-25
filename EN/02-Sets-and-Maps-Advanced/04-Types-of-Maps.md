@@ -7,7 +7,7 @@
 
 It implements all of the **Map** operations and **allows null values** and **one null key**. 
 
-Consider to use a **HashMap** when **order does not matter and nulls are acceptable**.
+Consider using a **HashMap** when **order does not matter and nulls are acceptable**.
 
 - Initialization:
 
@@ -73,7 +73,7 @@ treeMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 `LinkedHashMap <Key, Value>` also maps a `Key` and a `Value`.
 
-It inherits HashMap class, but **maintains insertion order**.
+It inherits the HashMap class, but **maintains insertion order**.
 
 **Keeps the Keys in order of addition.**
 
@@ -101,7 +101,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide]
 # Built-in methods
 
-- `put(K key, V value)` - **add items** (insert an entry) in the map. 
+- `put(K key, V value)`: **add items** (insert an entry) in the map. 
 
 Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. 
 
@@ -115,7 +115,7 @@ airplanes.put("Boeing 737", 130);
 airplanes.put("Airbus A320", 150);
 ```
 
-- `putIfAbsent(K key, V value)` - insert the specified Value with the specified Key in the Map only if it is **not already existing**
+- `putIfAbsent(K key, V value)`: insert the specified Value with the specified Key in the Map only if it is **not already existing**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -124,7 +124,7 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` - **access a Value** in the Map using its Key and **return the Value** object
+- `get(K key)`: **access a Value** in the Map using its Key and **return the Value** object
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -132,7 +132,7 @@ int peopleCount = airplanes.get("Boeing 737");
 System.out.println(peopleCount);
 ```
 
-- `remove(K key)` - **delete** an item (entry) **using its Key**
+- `remove(K key)`: **delete** an item (entry) **using its Key**
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -140,7 +140,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - remove all items (entries) in the map, reset the Map
+- `clear()`: remove all items (entries) in the map, reset the Map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -150,7 +150,7 @@ System.out.println(airplanes.get("Boeing 737"));
 System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - return the **number of items (entries)** in the Map
+- `size()`: return the **number of items (entries)** in the Map
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
@@ -158,7 +158,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - check **if there is such Key object** in the Map and if there is return `true`, else return `false`
+- `containsKey(K key)`: check **if there is such Key object** in the Map and if there is return `true`, else return `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -167,7 +167,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - check **if there is such Value object** in the Map and if there is return `true`, else return `false`
+- `containsValue(V value)`: check **if there is such Value object** in the Map and if there is return `true`, else return `false`
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Airbus A320", 150);
@@ -175,7 +175,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - return `true` if the Map is **empty** and `false` if it contains **at least one Key**
+- `isEmpty()`: return `true` if the Map is **empty** and `false` if it contains **at least one Key**
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
 System.out.println(airplanes.isEmpty());
@@ -201,7 +201,7 @@ There are several ways to iterate the Keys stored in a Map.
 
 - Iterating through the items of a map using a **for-each** loop
 
-- `keySet()` - obtain only the keys
+- `keySet()`: obtain only the keys
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -216,7 +216,7 @@ for (String car : cars.keySet()) {
 }
 ```
 
-- `values()` - obtain only the values
+- `values()`: obtain only the values
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -232,8 +232,8 @@ for (Integer number : cars.values()) {
 ```
 
 - Iterating through the items of a map using the built-in method `entrySet()`
-  - `entry.getKey()` - obtain the Keys
-  - `entry.getValue()` - obtain the Values
+  - `entry.getKey()`: obtain the Keys
+  - `entry.getValue()`: obtain the Values
 
 ```java live
 Map<String, Integer> cars = new LinkedHashMap<>();
@@ -358,7 +358,7 @@ cars.entrySet()
 
 [slide]
 # Problem: Count Real Numbers
-[code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-advanced-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-lab-advanced-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -633,7 +633,7 @@ All numbers must be formatted to **one digit after the decimal point**.
 
 [slide]
 # Problem: Academy Graduation
-[code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-lab-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -651,7 +651,7 @@ Write a program that:
 - Reads from console **number of students** for a track
 - Reads on **pair of rows**:
       - First line is the **name of student**
-      - Second line is his **score** for different number of courses
+      - Second-line is his **score** for different number of courses
 - Print on console `{name}` is graduated with `{average scores}`
 
 ## Examples
@@ -869,7 +869,7 @@ Write a program that:
 - Reads from console **number of students** for a track
 - Reads on **pair of rows**:
       - First line is the **name of student**
-      - Second line is his **score** for different number of courses
+      - Second-line is his **score** for different number of courses
 - Print on console `{name}` is graduated with `{average scores}`
 
 ## Examples

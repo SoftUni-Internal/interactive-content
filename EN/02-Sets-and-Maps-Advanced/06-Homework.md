@@ -420,11 +420,11 @@ On the **next n + m** lines, there are **n numbers that are in the first set** a
 
 Find all **non-repeating elements** that appear in **both** of them, and print them in **the same order** at the console:
 
-Set with length `n = 4: {1, 3 , 5 , 7}`
+Set with length `n = 4:{1, 3 , 5 , 7}`
 
-Set with length `m = 3: { 3 , 4, 5 }`
+Set with length `m = 3:{3 , 4, 5}`
 
-Set that contains all repeating elements \-\> `{ 3 , 5 }`
+Set that contains all repeating elements \-\> `{3, 5}`
 
 ## Examples
 | **Input** | **Output** |
@@ -641,7 +641,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given **n** number of **chemical compounds**.
+You are given the **n** number of **chemical compounds**.
 
 You need to **keep track of all chemical elements** used in the compounds and at the end print all **unique ones in ascending order**.
 
@@ -1427,15 +1427,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a sequence of strings, each on a new line, **until you receive "stop" command**.
+You are given a sequence of strings, each on a new line, until you receive the `stop` command.
 
 The first string is a **name** of a person.
 
 On the second line, you receive his **email**.
 
-Your task is to **collect** their names and emails and **remove** emails whose domain ends with "us", "uk" or "com" (case insensitive).
+Your task is to **collect** their names and emails and **remove** emails whose domain ends with "US", "UK" or "com" (case insensitive).
 
-Print in the following format: `{name} –> {email}`
+Print in the following format: `{name} -> {email}`
 
 ## Examples
 | **Input** | **Output** |
@@ -1734,7 +1734,7 @@ They will further clarify the assignment.
 
 ## Input
 
-The input comes from the console as **varying number** of lines. 
+The input comes from the console as a **varying number** of lines. 
 
 You have to parse every command until the `end` command. 
 
@@ -2207,7 +2207,7 @@ Follow the output **format strictly**!
 
 ## Constraints
 
-- The name of the city, country and the population count will be separated from each other by **a pipe** `|`.
+- The name of the city, country, and the population count will be separated from each other by **a pipe** `|`.
 - The **number of input lines** will be in the range \[2 ... 50\].
 - A city-country pair will not be repeated.
 - The **population count** of each city will be an integer in the range \[0 ... 2 000 000 000\].
@@ -2905,7 +2905,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a sequence of access logs in format 
+You are given a sequence of access logs in the format 
 
 `< IP > < user > < duration >`.
 
@@ -2938,7 +2938,7 @@ The input comes from the console.
 
 At the first line is a number **n** - the count of the following lines. 
 
-Each of the next n lines holds a log information in format 
+Each of the next n lines holds log information in the format 
 
 `< IP > < user > < duration >`. 
 
@@ -2950,7 +2950,7 @@ There is no need to check it explicitly.
 
 Print **single line for each user** (order users alphabetically). 
 
-For each user print the sum of durations and all of his session IPs, ordered alphabetically in format
+For each user print, the sum of durations and all of his session IPs ordered alphabetically in format
 
 `< user >: < duration > [< IP1 >, < IP2 >, ...]`. 
 
@@ -3388,9 +3388,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You've beaten all the content and the last thing left to accomplish is own a legendary item.
+You have beaten all the content and the last thing left to accomplish is to own a legendary item.
 
-However, it's a tedious process and requires quite a bit of farming.
+However, it is a tedious process and requires quite a bit of farming.
 
 Anyway, you are not too pretentious - any legendary will do.
 
@@ -3426,9 +3426,9 @@ Finally, print the collected **junk** items, in **alphabetic** order.
 - On the next three lines, print the remaining key materials in descending order by quantity
   - If two key materials have the same quantity, print them in alphabetical order
 - On the final several lines, print the junk items in alphabetical order
-  - All materials are printed in format 
+  - All materials are printed in the format  
   `{material}: {quantity}`
-  - All outputs should be in **lower case** , except the first letter of the legendary
+  - All outputs should be in **lower case**, except the first letter of the legendary
 
 ## Constraints
 
@@ -3688,7 +3688,7 @@ He likes them so much that he gives them **names** and keeps logs of their **sta
 
 The process of aggregating all the data is quite tedious, so he would like to have a program doing it.
 
-Since he is no programmer, it's your task to help him.
+Since he is no programmer, it is your task to help him.
 
 You need to categorize dragons by their **type**. 
 
@@ -3732,7 +3732,7 @@ Two dragons are considered **equal** if they match by **both** name and type.
 
 `{Type}::({damage}/{health}/{armor})`
 
-- Damage, health and armor should be rounded to two digits after the decimal separator
+- Damage, health, and armor should be rounded to two digits after the decimal separator
 - For each dragon, print its stats in format 
 
 `-{Name} -> damage: {damage}, health: {health}, armor: {armor}`
