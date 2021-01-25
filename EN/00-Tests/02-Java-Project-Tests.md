@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Person
-[code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="tests-execution" executionStrategy="java-unit-tests"]
+[code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
