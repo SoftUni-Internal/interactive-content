@@ -15,9 +15,9 @@ They must be specified with the equivalent wrapper class: Integer, Double, Boole
 
 The type of `Key` and `Value` can be the same or different, depends on the case.
 
-In Java, associative arrays are called Map. 
+In Java, associative arrays are called maps. 
 
-A Map **can not contain duplicate Keys**, each **Key** can map to at most one Value.
+A Map **can not contain duplicate Keys**, each **Key** can map to at most one value.
 
 But **the values can be duplicated**. 
 
