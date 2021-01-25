@@ -1,6 +1,6 @@
 # Getting the Query Basics
 
-[slide]
+[slide hideTitle]
 
 # Getting the Query Basics
 
