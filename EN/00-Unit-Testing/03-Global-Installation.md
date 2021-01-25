@@ -37,11 +37,11 @@ You need to set the `NODE_PATH` environment variable manually.
 
 Open the Windows `CMD` console.
 
-To set the path use this peace of code for any future sessions.
+To set the path use this piece of code for any future sessions.
 
 `setx NODE_PATH %AppData%\npm\node_modules`
 
-Use this peace of code to set the path for the current session.
+Use this piece of code to set the path for the current session.
 
 `set NODE_PATH=%AppData%\npm\node_modules`
 
@@ -76,7 +76,7 @@ describe("Test group #2", function () {
 [stream language="RO" videoId="497187668/5cbd6f3899"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Sum Of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -100,8 +100,8 @@ function sum(arr) {
 Your tests will be supplied with a function named `sum()`. 
 
 It should meet the following requirements:
-- Take an array of numbers as argument.
-- Return the sum of the values of all elements inside the array.
+- Take an array of numbers as an argument
+- Return the sum of the values of all elements inside the array
 
 # Example
 
@@ -193,8 +193,8 @@ function sum(arr) {
 Your tests will be supplied with a function named `sum()`. 
 
 It should meet the following requirements:
-- Take an array of numbers as argument.
-- Return the sum of the values of all elements inside the array.
+- Take an array of numbers as an argument
+- Return the sum of the values of all elements inside the array
 
 # Example
 

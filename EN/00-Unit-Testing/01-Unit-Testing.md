@@ -67,11 +67,11 @@ It means you have a well-defined code with high cohesion.
 
 The **AAA** "Arrange-Act-Assert" pattern is almost a standard across the industry. 
 
-It suggests that you should divide your test method into three sections: **arrange**, **act** and **assert**.
+It suggests that you should divide your test method into three sections: **arrange**, **act**, and **assert**.
 
 Each one of them is only responsible for the part in which they are named after.
 
-In the arrange section we only have code required to setup a specific test. 
+In the arrange section we only have the code required to set up a specific test. 
 
 Here objects would be created and potentially expectations would be set.
 

@@ -11,7 +11,9 @@
 
 ## Code First
 
-This is a classical approach. The code is written first then the tests.
+This is a classical approach, where the functionality is implemented and then the tests are written.
+
+
 [/slide]
 
 [slide hideTitle]
@@ -22,17 +24,20 @@ This is a classical approach. The code is written first then the tests.
 [stream language="RO" videoId="497186952/c459aec01c"  /]
 [/video-vimeo]
 
-Tests first approach.
+Tests first approach means we write the tests before actual code. 
+
+We can keep the tests running, and that way we will know does our code produces the expected result.
 
 In Test-Driven Development we follow these steps:
-- Create a test list.
-- Pick a test.
-- Write a test.
-- Compile and fail.
-- Write enough code to compile.
-- Run test and fail.
-- Write code to past test.
-- Remove duplication.
+- Create a test list
+- Pick a test
+- Write a test
+- Compile and fail
+- Write enough code to compile
+- Run test and fail
+- Write code to past test
+- Remove duplication
+
 [/slide]
 
 [slide hideTitle]
@@ -43,10 +48,10 @@ In Test-Driven Development we follow these steps:
 [stream language="RO" videoId="497187415/9886bcfa69"  /]
 [/video-vimeo]
 
-TDD helps find design issues early and thus avoids reworking.
+- TDD helps find issues in an early stage of the project and thus avoids reworking
 
-Writing code to satisfy a test is a focused activity, with less chance of error.
+- We avoid writing a code to satisfy the test, and our focus switch to writing better quality code
 
-Tests will be more comprehensive than if they are written after the code.
+- Tests will be more comprehensive than if they are written after the code
 
 [/slide]
