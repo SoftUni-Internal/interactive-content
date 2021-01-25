@@ -1,6 +1,6 @@
 # JS Applications Exam: Shoe Shelf SPA
 
-[slide]
+[slide hideTitle]
 # Description
 
 [code-task title="Shoe Shelf SPA" taskId="js-applications-exam-preparation-shoe-shelf-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -23,7 +23,7 @@ Using libraries like  **Handlebars** and **Sammy** is allowed but is not obligat
 
 The app keeps **users** and **shoes.**
 
-**Guests** should be able to register and login.
+**Guests** should be able to register and log in.
 
 Logged\-in users should be able to view **all shoes**, **add shoes**, **buy shoes**, see **details** about a **shoes** and **logout**.
 
@@ -31,7 +31,7 @@ Logged-in users should also be able to **edit** or **delete** the **shoes they h
 
 **1. Create a REST Service**
 
-Use any cloud-based database and create application to keep your data in the cloud.
+Use any cloud-based database and create an application to keep your data in the cloud.
 
 Create a collection called **shoes.**
 
@@ -74,7 +74,7 @@ Implement the functionality described below.
 
 [image assetsSrc="js-apps-exam-prep-1.png" /]
 
-- he guest users navbar should contain the following elements: **Shoe Shelf** with the logo inbetween.
+- The guest users navbar should contain the following elements: **Shoe Shelf** with the logo in-between.
 
 [image assetsSrc="js-apps-exam-prep-2.png" /]
 
@@ -105,11 +105,11 @@ By given **email** and **password**, the app should register a new user in the s
 
 ## Login User (5 Pts)
 
-By given **email** and **password**, the app should login an existing user.
+By given **email** and **password**, the app should log in as an existing user.
 
 - Keep the user data in the browser's **session or locale storage.**
 
-- After a **successful login** redirect to Home page.
+- After a **successful login** redirect to the Home page.
 
 - In case of **error**, nothing happens, the user should be able to fill in the login form again.
 
@@ -119,7 +119,7 @@ By given **email** and **password**, the app should login an existing user.
 
 Successfully logged in users should be able to logout from the app.
 
-- The `logout` **REST** **service** at the back-end  must be called at logout.
+- The `logout` **REST** **service** at the back-end must be called at logout.
 
 - All local information in the browser \(**user session data**\) about the current user should be deleted.
 
@@ -149,7 +149,7 @@ Clicking the `[Create new offer]` button in the navbar should **display** the **
 
    - **By default**, every newly created offer must have additional information:
 
-`Creator`: string representing the current user;
+`Creator`: a string representing the current user;
 
 `People bought it`: keeping data of users bought the shoes;
 
@@ -175,7 +175,7 @@ Clicking on a **particular offer** should display the **Details page.**
 
 Logged-in users should be able to **edit** offers, added by them.
 
-Clicking the `[Edit]` button of a particular offer on the **Details page** should **display** the **Edit page** inserting the additional information of the shoes in the input feelds:
+Clicking the `[Edit]` button of a particular offer on the **Details page** should **display** the **Edit page** inserting the additional information of the shoes in the input fields:
 
 [image assetsSrc="js-apps-exam-prep-11.png" /]
 
@@ -183,17 +183,17 @@ Clicking the `[Edit]` button of a particular offer on the **Details page** shoul
 
 ## Buy Shoes (10 Pts)
 
-Logged-in users should be able to **buy** shoes, added by other user.
+Logged-in users should be able to **buy** shoes, added by another user.
 
-**NOTE: A user should NOT be able to buy offer, created by himself.**
+**NOTE: A user should NOT be able to buy an offer, created by himself.**
 
-Clicking the `[Buy]` **button** (on the Details page) should **add the current user email to the property People bougth it**.
+Clicking the `[Buy]` **button** (on the Details page) should **add the current user email to the property People bought it**.
 
 After successfully buying:
 
 - Display the updated Details page
 
-- By click `[Buy]` button changes to `[You bought it]` span so users can't **buy an item** multiple times.
+- By clicking the `[Buy]` button changes to `[You bought it]` span so users can't **buy an item** multiple times.
 
 [image assetsSrc="js-apps-exam-prep-12.png" /]
 
@@ -205,11 +205,11 @@ Logged-in users should be able to **delete their offers.**
 
 Clicking the `[Delete]` **button** of an offer (on the Details page) should delete the **offer.**
 
-- After **successful delete** \- **Home page** should be **shown.**
+- After **successful delete** - **Home page** should be **shown.**
 
 ## (BONUS) Order: (5 Pts)
 
-**Home page** for logged user shoud display offers in **descending orderd by count** of **people bought** the item.
+**Home page** for a logged user should display offers in **descending order by count** of **people bought** the item.
 
 [/task-description]
 [code-io /]
