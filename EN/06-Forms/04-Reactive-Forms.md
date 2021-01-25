@@ -115,3 +115,95 @@ this.laptopForm = this.fb.group({
 ```
 
 [/slide]
+
+[slide hideTitle]
+
+# Validation
+
+Angular gives us the posibility to **add** or **remove** validators dynamically in reactive forms based on some user action.
+
+- **Cross-field** validation: It is validating one form control based on the value of another.
+- We can also create custom validators with parameters:
+
+For that we create a **factory function**, which accepts the **parameter**. The **factory function** returns the **validator function**.
+- We can ajust rules at runtime.
+
+[/slide]
+
+[slide hideTitle]
+
+# Setting Up Build-in Validation
+
+Defining our **FormGroup** with a **FormBuilder** allows us to add an array of validations using the **Validators** class.
+
+```js
+this.laptopForm = this.fb.group({
+    processor : [
+        'Intel core i7', [
+            Validators.required,
+            Validators.minLength(10)
+        ]
+    ]
+});
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Ajust the Template
+
+The **formGroup** directive has an errors property which can be used to **show** errors only when needed.
+
+```html
+<div *ngIf="(laptopForm.get('processor').touched 
+|| laptopForm.get('processor').dirty) 
+&& laptopForm.get('processor').errors" class="alert alert-danger">
+<span *ngIf="laptopForm.get('processor').errors.required">
+  Processor is required!
+</span>
+<span *ngIf="laptopForm.get('processor').errors.minlength">
+  Processor should be at least 10 symbols long!
+</span>
+</div>
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Watching and Reacting to Changes
+
+Using **Reactive Forms** we have the ability to **watch** and **react** to changes on form **groups** and form **controls**.
+
+Whenever a **value** of an input **changes** we can **subscribe** to that event and handle the **observable**.
+
+```js
+this.laptopForm.get('os')
+.valueChanges
+.subscribe(console.log);
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Reactive Transformation Example
+
+Import **throttleTIme** from the following library.
+
+```js
+import { throttleTime } 'rxjs/operators';
+```
+
+Attach the **throttleTIme** function to a form control's **valueChanges** event.
+
+```js
+processorControl.valueChanges
+.pipe(throttleTime(1500))
+.subscribe(value => {
+    console.log(value);
+});
+```
+
+[/slide]
