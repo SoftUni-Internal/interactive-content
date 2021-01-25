@@ -1,6 +1,6 @@
 # Unit Testing Approaches
 
-[slide]
+[slide hideTitle]
 
 # Types of Unit Testing
 
@@ -14,7 +14,7 @@
 This is a classical approach. The code is written first then the tests.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Test-Driven Development
 
 [vimeo-video]
@@ -35,7 +35,7 @@ In Test-Driven Development we follow these steps:
 - Remove duplication.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Why TDD is a better approach?
 
 [vimeo-video]

@@ -1,6 +1,6 @@
 # Unit Testing
 
-[slide]
+[slide hideTitle]
 
 # What is Unit Testing?
 
@@ -11,19 +11,19 @@
 
 A unit test is a piece of code that checks whether a certain **functionality works as expected.**
 
-It also provides the developers with the **necessery information** as to why and where **errors occur in the code.**
+It also provides the developers with the **necessary information** as to why and where **errors occur in the code.**
 
 Let us see an example where we will write our own **test** before we start using some of the known frameworks.
 
-In the example below we have a simple sorting function `sortNums()`. 
+In the example below, we have a simple sorting function `sortNums()`. 
 
 It sorts the numbers inside an array.
 
-In our test we declare and initialize an array with some numbers.
+In our test, we declare and initialize an array with some numbers.
 
 Then we sort the array.
 
-Finally we write an if statement where we check if the array has been sorted as we expected.
+Finally, we write an if statement where we check if the array has been sorted as we expected.
 
 Use the `JSON.stringify()` method to convert to a string and compare it with the expected output, which is `[-2,2,4,15]`.
 
@@ -56,7 +56,7 @@ It means you have a well-defined code with high cohesion.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Unit Test Structure
 

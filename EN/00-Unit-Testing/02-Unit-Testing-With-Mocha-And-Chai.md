@@ -1,6 +1,6 @@
 # Unit Testing With Mocha And Chai
 
-[slide]
+[slide hideTitle]
 
 # What is Mocha and Chai?
 

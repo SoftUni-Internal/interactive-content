@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Even Or Odd
 [code-task title="Problem: Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -14,7 +14,7 @@
 
 You need to write **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
 
-If the passed parameter is **NOT** a string return **undefined**.
+If the passed parameter is **NOT** a string returns **undefined**.
 
 If the parameter is a string return either "even" or "odd" based on the length of the string.
 
@@ -32,7 +32,7 @@ function isOddOrEven(input) {
 }
 ```
 
-Hints
+# Hints
 We can clearly see there are three outcomes for the function:
 - Returning `undefined`.
 - Returning `even`.
@@ -66,7 +66,7 @@ describe("Is Odd Or Even", function(){
 })
 ```
 
-Finally make an extra test passing multiple strings in a row to ensure the function works correctly.
+Finally, make an extra test passing multiple strings in a row to ensure the function works correctly.
 
 ```js
 describe("Is Odd Or Even", function(){
@@ -170,7 +170,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Char Lookup
 [code-task title="Problem: Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -232,9 +232,9 @@ describe("Character Look Up", function(){
 
 If we take a closer look at the implementation, we see that the check uses `Number.isInteger()` instead of `typeof(index === number)` to check the index. 
 
-While **typeof** would protect us from getting passed an **index** that is a **non-number**, it will not protect us from being passed a **floating-point number**. 
+While `typeof` would protect us from getting passed an **index** that is a **non-number**, it will not protect us from being passed a **floating-point number**. 
 
-The specification says that the index needs to be an **integer**, since floating point numbers will not be valid indexes.
+The specification says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
 
 ```js
 describe("Character Look Up", function(){
@@ -246,7 +246,7 @@ describe("Character Look Up", function(){
 
 Moving on to the next exit condition - returning an empty string.
 
-if we get passed an index that is a negative number or an index which is outside of the bounds of the string.
+If we get passed an index that is a negative number or an index that is outside of the bounds of the string.
 
 ```js
 describe("Character Look Up", function(){
@@ -409,7 +409,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Math Enforcer
 [code-task title="Problem: Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -460,9 +460,9 @@ let mathEnforcer = {
 };
 ```
 
-The methods should function correctly for positive, negative and floating-point numbers. 
+The methods should function correctly for positive, negative, and floating-point numbers. 
 
-In case of floating-point numbers the result should be considered correct if it is within 0.01 of the correct value.
+In the case of floating-point numbers, the result should be considered correct if it is within 0.01 of the correct value.
 
 When testing a more complex object write a **nested describe** for each function as it is shown in the example below.
 
@@ -895,7 +895,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: String Builder
 [code-task title="Problem: String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -957,12 +957,14 @@ The above code defines a class that holds characters (strings with length 1) in 
 An instance of the class should support the following operations:
 
 - Can be instantiated with a passed in string argument or without anything.
-- Function `append(string)` - converts the passed in string argument to an array and adds it to the end of the storage.
-- Function `prepend(string)` - converts the passed in string argument to an array and adds it to the beginning of the storage.
-- Function `insertAt(string, index)` - converts the passed in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
-- Function `remove(startIndex, length)` - removes elements from the storage, starting at the given index (inclusive), length number of characters (there is no need to check if the index is in range).
-- Function `toString()` - returns a string with all elements joined by an empty string.
-- All passed in arguments should be strings. If any of the parameters is not a string, throws a type error with the following message: "Argument must be a string".
+- Function `append(string)`: converts the passed in string argument to an array and adds it to the end of the storage.
+- Function `prepend(string)`: converts the passed in string argument to an array and adds it to the beginning of the storage.
+- Function `insertAt(string, index)`: converts the passed in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
+- Function `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range).
+- Function `toString()`: returns a string with all elements joined by an empty string.
+- All passed in arguments should be strings. 
+
+If any of the parameters is not a string, throws a type error with the following message: `Argument must be a string`.
 
 # Example
 
@@ -979,9 +981,9 @@ console.log(str.toString());
 
 **Output**
 
-User,woop hello, there
+User, Woop hello, there
 
-User,w hello, there
+User,w Hello, there
 
 [/task-description]
 [code-io /]
@@ -1508,7 +1510,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Payment Package
 [code-task title="Problem: Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -1597,24 +1599,26 @@ class PaymentPackage {
 The above code defines a class that contains information about a payment package. 
 
 An instance of the class should support the following operations:
-- Can be instantiated with two parameters - a string name and a number value.
-- Accessor **name** - used to get and set the value of name.
-- Accessor **value** - used to get and set the value of value.
-- Accessor **VAT** - used to get and set the value of VAT.
-- Accessor **active** - used to get and set the value of active.
-- Function `toString()` - return a string, containing an overview of the instance. 
+- Can be instantiated with two parameters: a string name and a number value.
+- Accessor **name**: used to get and set the value of the name.
+- Accessor **value**: used to get and set the value of value.
+- Accessor **VAT**: used to get and set the value of VAT.
+- Accessor **active**: used to get and set the value of active.
+- Function `toString()`: return a string, containing an overview of the instance. 
 
-If the package is not active, append the label "(inactive)" to the printed name.
+If the package is not active, append the label `(inactive)` to the printed name.
 
-When creating an instance, or changing any of the property values, the parameters are validated. They must follow these rules:
+When creating an instance, or changing any of the property values, the parameters are validated. 
 
-- **name** - a non-empty string.
+They must follow these rules:
 
-- **value** - a non-negative number.
+- **name**: a non-empty string.
 
-- **VAT** - a non-negative number.
+- **value**: a non-negative number.
 
-- **active** - a Boolean.
+- **VAT**: a non-negative number.
+
+- **active**: a Boolean.
 
 If any of the requirements are not met, the operation must throw an error.
 

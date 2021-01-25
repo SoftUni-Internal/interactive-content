@@ -1,6 +1,6 @@
 # Installing Mocha And Chai Globally
 
-[slide]
+[slide hideTitle]
 
 # Global Installation
 
@@ -68,7 +68,7 @@ describe("Test group #2", function () {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Of Numbers
 
 [vimeo-video]
@@ -161,7 +161,7 @@ Test Passed!
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Sum Of Numbers
 
 [vimeo-video]
