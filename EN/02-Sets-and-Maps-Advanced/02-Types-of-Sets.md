@@ -199,7 +199,7 @@ linkedHashSet.add("Alice");
 linkedHashSet.add("George");
 
 System.out.println(linkedHashSet.contains("Alice"));
-System.out.println(linkedHashSet.contains("Peter"));
+System.out.println(linkedHashSet.contains("Ana"));
 ```
 
 [/slide]

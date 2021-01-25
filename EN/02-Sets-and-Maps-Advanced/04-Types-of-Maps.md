@@ -39,7 +39,7 @@ hashMap.remove("Mercedes");
 
 hashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 ```
-[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-5.gif" /]
+[image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-6.gif" /]
 [/slide]
 
 [slide hideTitle]
@@ -98,7 +98,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Built-in methods
 
 - `put(K key, V value)`: **add items** (insert an entry) in the map. 
@@ -190,7 +190,7 @@ System.out.println(airplanes.isEmpty());
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Iterating over a Map
 
 Iterating through objects of type `Map.Entry <K, V>`. 
@@ -262,7 +262,7 @@ cars.forEach((key, value) -> System.out.println(key + " - " + value));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Sorting a Map
 
@@ -356,9 +356,9 @@ cars.entrySet()
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Count Real Numbers
-[code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-lab-advanced-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Count Real Numbers" taskId="java-advanced-sets-and-maps-advanced-lab-Count-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -484,7 +484,7 @@ All numbers must be formatted to **one digit after the decimal point**.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Count Real Numbers
 [code-task title="Count Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -631,7 +631,7 @@ All numbers must be formatted to **one digit after the decimal point**.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Academy Graduation
 [code-task title="Academy Graduation" taskId="java-advanced-sets-and-maps-advanced-lab-Academy-Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -826,7 +826,7 @@ Trendafilka is graduated with 4.288333333333333
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Academy Graduation
 [code-task title="Academy Graduation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
