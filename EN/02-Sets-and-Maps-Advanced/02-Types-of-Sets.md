@@ -16,7 +16,7 @@ The **HashSet** class offers **constant** time performance for the basic operati
 Set<String> hash = new HashSet<String>();
 ```
 
-- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+- `add()`: adds element into the `HashSet`, and returns `true` if the element is successfully added.
 
 If the set already contains the element, the set reminds unchanged and returns `false`.
 
@@ -45,6 +45,8 @@ hash.add("George");
 System.out.println(hash.remove("Alice"));
 
 System.out.println(hash);
+
+System.out.println(hash.remove("Ana"));
 ```
 
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-2.gif" /]
@@ -83,18 +85,18 @@ System.out.println(hash.size());
 
 The elements are ordered using their **natural ordering**.
 
-The TreeSet provides guaranteed **log(n)** time cost for the basic operations - `add()`, `remove()` and `contains()`.
+The `TreeSet` provides guaranteed **log(n)** time cost for the basic operations - `add()`, `remove()` and `contains()`.
 
-**Null values** are **not accepted** by the TreeSet.
+**Null values** are **not accepted** by the `TreeSet`.
 
 - Initialization:
 ```java
 Set<String> tree = new TreeSet<>();
 ```
 
-- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+- `add()`: adds element into the `TreeSet`, and returns `true` if the element is successfully added.
 
-If the set already contains the element, the set reminds unchanged and returns `false`.
+If the set already contains the element, the `TreeSet` reminds unchanged and returns `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -108,7 +110,7 @@ System.out.println(tree);
 
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-3.gif" /]
 
-- `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
+- `remove()`: search for an element and returns `true` if the specified element exists in the `TreeSet`, otherwise, it returns `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -123,7 +125,7 @@ System.out.println(tree.remove("Ana"));
 System.out.println(tree);
 ```
 
-- `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+- `contains()`: returns `true` if the element exists in the `TreeSet`, otherwise, it returns `false`
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -142,7 +144,7 @@ System.out.println(tree.contains("Ana"));
 
 A **LinkedHashSet** is an **ordered version of HashSet** that maintains a doubly-linked List across all elements.
 
-A **LinkedHashSet** provides **constant** time performance for the basic operations - `add()`, `contains()` and `remove()`.
+A **LinkedHashSet** provides **constant** time performance for the basic operations - `add()`, `remove()`, `contains()`.
 
 A LinkedHashSet allows maximum **one null element**.
 
@@ -152,7 +154,7 @@ A LinkedHashSet allows maximum **one null element**.
 Set<String> linkedHashSet = new LinkedHashSet<>();
 ```
 
-- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+- `add()`: adds element into the `LinkedHashSet`, and returns `true` if the element is successfully added.
 
 If the set already contains the element, the set reminds unchanged and returns `false`.
 
@@ -161,6 +163,7 @@ Set<String> linkedHashSet = new LinkedHashSet<>();
 
 linkedHashSet.add("Peter");
 linkedHashSet.add("Alice");
+
 System.out.println(linkedHashSet.add("George"));
 
 System.out.println(linkedHashSet);
@@ -170,7 +173,7 @@ System.out.println(linkedHashSet.add("Alice"));
 
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-4.gif" /]
 
-- `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
+- `remove()`: search for an element and returns `true` if the specified element exists in the `LinkedHashSet`, otherwise, it returns `false`.
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
@@ -186,7 +189,7 @@ System.out.println(linkedHashSet);
 
 ```
 
-- `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+- `contains()`: returns `true` if the element exists in the `LinkedHashSet`, otherwise, it returns `false`
 
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
