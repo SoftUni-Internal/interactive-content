@@ -65,7 +65,7 @@ To get all posts, we will send a **GET** request to the same endpoint.
 
 But if we want to **get** a certain post, we need to add the **ID** of that post, and the endpoint will look like this: `http://some-service.org/api/posts/17`.
 
-Also, we need the **ID** of that post, if  we want to sent a **DELETE**, a **PUT** or a **PATCH** request.
+Also, we need the **ID** of that post, if we want to send a **DELETE**, a **PUT**, or a **PATCH** request.
 
 The endpoint will look like this: `http://some-service.org/api/posts/17`.
 

@@ -11,7 +11,7 @@
 
 **Hypertext Transfer Protocol** (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
 
-**HTTP** ensures that the communication between web browser and server.
+**HTTP** ensures that the communication between the web browser and server.
 
 HTTP follows a classical **client-server model**, where only the client, which is most often is a **web browser**, can send a request, and when the server receives the request it is mandatory to send back a **response**.
 
@@ -65,7 +65,7 @@ They must be in uppercase.
 
 By default, if we sent a request, it will be **GET**.
 
-We send a **GET** request, when we want to obtain data from the server.
+We send a **GET** request when we want to obtain data from the server.
 
 Here is an example:
 
@@ -83,7 +83,7 @@ Cache-Control: no-cache
 
 The first line, `GET /users/softuni/repos HTTP/1.1`, is called a **request line**.
 
-After it, are the **headers** and the **body** `<CRLF>`.
+After it is the **headers** and the **body** `<CRLF>`.
 
 [/slide]
 
@@ -181,9 +181,8 @@ These are some of the codes:
 |`400`| `Bad Request`| The request is invalid or there is a syntax error. |
 |`401` or `403`| `Unauthorized`| Authentication failed or Access Denied. |
 |`404`| `Not Found`| The resource is not valid or not found. |
-|`409`| `Conflict`| There is a conflict in the request, for example: duplicated email. |
+|`409`| `Conflict`| There is a conflict in the request, for example, duplicated email. |
 |`500` or `503`| `Server Error` | There is an Internal server error or the service is unavailable. |
-
 [/slide]
 
 [slide hideTitle]
@@ -197,7 +196,7 @@ These are some of the codes:
 
 Every request needs to have a field for **Content-Type** or **Content-Disposition**.
 
-These fields specifies the format of the request.
+These fields specify the format of the request.
 
 We can set the **Content-Type** to be **JSON-encoded**.
 

@@ -9,7 +9,7 @@
 [stream language="RO" videoId="497191130/b851b586aa"  /]
 [/video-vimeo]
 
-To try the GitHub's API we need Postman.
+To try GitHub's API we need Postman.
 
 In this examples we will see a **GET** requests to the following URLs:
 
@@ -48,7 +48,7 @@ We need to specify the **id** of the issue and send a **GET** request to the fol
 
 For these examples, we need Postman.
 
-We need to get the label of a specific issue.
+We should get the label of a specific issue.
 
 To do that, we need to send a **GET** request to the following URL: `https://api.github.com/repos/softni/js-apps/issues/1/labels`.
 
@@ -60,6 +60,6 @@ We also need to choose a **Basic Authentication** in the **Authorization** heade
 
 In the fields for **Username** and **Password**, we need to enter our GitHub credentials.
 
-The last steps is to pass a JSON object to the body of the request.
+The last step is to pass a JSON object to the body of the request.
 
 [/slide]

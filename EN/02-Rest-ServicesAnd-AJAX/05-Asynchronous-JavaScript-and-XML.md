@@ -285,7 +285,7 @@ fetch('https://api.github.com/repos/softni/js-apps/issues', {
 });
 ```
 
-The **Content\-type** or the authentication are set in the **headers** section.
+The **Content-type** or the authentication are set in the **headers** section.
 
 In the **body**, we set the data, and it should be **JSON stringified**.
 
@@ -327,12 +327,12 @@ The methods are:
 
 The **response types** are **read-only** properties, 
 
-They show the type of the response.
+They show the type of response.
 
 | **Type** | **Description** |
 | --- | --- |
-|`basic`| Normal, or same origin response |
-|`cors`| The response is received from valid cross\-origin request |
+|`basic`| Normal, or same-origin response |
+|`cors`| The response is received from valid cross-origin request |
 |`error`| Network error or not valid information |
 |`opaque`| Response for **no-cors** request send to cors resource |
 |`opaqueredirect`| The request was made with **manual** redirect |
