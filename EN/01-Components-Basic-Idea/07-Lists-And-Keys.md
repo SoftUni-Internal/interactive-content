@@ -1,10 +1,10 @@
 # Lists And Keys
 
-[slide]
+[slide hideTitle]
 
 # Lists
 
-When we work with lists or collections of data we will use the `map()` method.
+When we work with lists or collections of data, we will use the `map()` method.
 
 Here is an example of using the `map()` method on a collection.
 
@@ -34,21 +34,21 @@ function NumberList(props) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Keys
 
 What is important to know is that we should give the elements of the collection **unique keys**.
 
-If we do not do that we will see a warning message in the browser.
+If we do not do that, we will see a warning message in the browser.
 
 Our application will be working and the data will be displayed successfully.
 
-Although this is not going to cause a problem it is not the way React works.
+Although this is not going to cause a problem, it is not the way React works.
 
 We should give **unique keys** to the elements inside the array.
 
-This way React can manage its state effectively by keeping track of any changes happening to any particular element in the collection.
+In this way, React can manage its state effectively by keeping track of any changes happening to any particular element in the collection.
 
 The best way to pick a key is to use a string that uniquely identifies a list item among its siblings.
 
@@ -64,7 +64,7 @@ const todoItems = todos.map((todo) =>
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Extracting Components with Keys
 
@@ -97,15 +97,15 @@ ReactDOM.render(
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Keys and indexes
 
-Keys serve as a hint to React but they do not get passed to your components. 
+Keys serve as a hint to React, but they do not get passed to your components. 
 
 Do not use indexes for keys if the order of the components may change! 
 
-Just work with IDs as we have already mentioned. 
+Just work with IDs, as we have already mentioned. 
 
 If you need the same value in your component, pass it explicitly as a prop with a different name.
 

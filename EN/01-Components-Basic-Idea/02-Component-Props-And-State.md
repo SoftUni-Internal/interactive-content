@@ -1,6 +1,6 @@
 # Component Props And State
 
-[slide]
+[slide hideTitle]
 
 # Props And State Overview
 
@@ -12,7 +12,7 @@ The state is internal to every component and is basically data that we can manip
 
 Props are immutable to the component receiving them. You do not change props passed to a component from within the component.
 
-The state is changeable, React uses the `setState()` method to update the state of a component, which we will see in a bit. 
+The state is changeable. React uses the `setState()` method to update the state of a component, which we will see in a bit. 
 
 A state can only be mutated by the component that contains the state.
 
