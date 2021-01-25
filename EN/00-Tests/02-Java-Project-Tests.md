@@ -63,28 +63,28 @@ public class Main {
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T00_TestClassesExists \{
+public class T00_TestClassesExists {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
 
     @Test
-    public void validateTypesExist() \{
-        String\[\] classTypesToAssert = new String\[\]\{
+    public void validateTypesExist() {
+        String\[\] classTypesToAssert = new String\[\]{
                 "Person",
                 "Child"
-        \};
+        };
 
-        for (String classType : classTypesToAssert) \{
+        for (String classType : classTypesToAssert) {
             String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
             Assert.assertNotNull(message, getType(classType));
-        \}
-    \}
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -97,52 +97,52 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 
-public class T00_TestConstructors \{
+public class T00_TestConstructors {
     private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present or args are invalid";
 
-    private class ExpConstructor \{
+    private class ExpConstructor {
         String className;
         Class\[\] constructorTypes;
 
-        ExpConstructor(String className, Class\[\] constructorTypes) \{
+        ExpConstructor(String className, Class\[\] constructorTypes) {
             this.className = className;
             this.constructorTypes = constructorTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateFields() throws NoSuchMethodException \{
+    public void validateFields() throws NoSuchMethodException {
         Class aClass = getType("Person");
 
-        ExpConstructor\[\] constructorsWithClasses = new ExpConstructor\[\]\{
-                new ExpConstructor("Person", new Class\[\]\{String.class, Integer.TYPE\}),
-                new ExpConstructor("Child", new Class\[\]\{String.class, Integer.TYPE\}),
-        \};
+        ExpConstructor\[\] constructorsWithClasses = new ExpConstructor\[\]{
+                new ExpConstructor("Person", new Class\[\]{String.class, Integer.TYPE}),
+                new ExpConstructor("Child", new Class\[\]{String.class, Integer.TYPE}),
+        };
 
 
-        for (ExpConstructor constructorWithClass : constructorsWithClasses) \{
+        for (ExpConstructor constructorWithClass : constructorsWithClasses) {
             assertConstructorExists(constructorWithClass);
-        \}
-    \}
+        }
+    }
 
-    private void assertConstructorExists(ExpConstructor constructorArgs) throws NoSuchMethodException \{
+    private void assertConstructorExists(ExpConstructor constructorArgs) throws NoSuchMethodException {
         Class clazz = Classes.allClasses.get(constructorArgs.className);
         Constructor constructor = null;
 
-        try \{
+        try {
             constructor = clazz.getDeclaredConstructor(constructorArgs.constructorTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
         Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, constructorArgs.className), constructor);
 
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -156,34 +156,34 @@ import org.junit.Test;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T00_TestMethods \{
+public class T00_TestMethods {
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
 
-    private class ExpMethod \{
+    private class ExpMethod {
         String name;
         Class\<?\>\[\] parameterTypes;
 
-        public ExpMethod(String name, Class\<?\>... parameterTypes) \{
+        public ExpMethod(String name, Class\<?\>... parameterTypes) {
             this.name = name;
             this.parameterTypes = parameterTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateMethods() \{
+    public void validateMethods() {
         Class astronautClazz = getType("Person");
 
-        ExpMethod\[\] astronautMethods = new ExpMethod\[\]\{
+        ExpMethod\[\] astronautMethods = new ExpMethod\[\]{
                 new ExpMethod("getName"),
                 new ExpMethod("getAge"),
-        \};
+        };
 
-        for (ExpMethod method : astronautMethods) \{
+        for (ExpMethod method : astronautMethods) {
             ValidateMethod(astronautClazz, method);
-        \}
-    \}
+        }
+    }
 
-    private void ValidateMethod(Class clazz, ExpMethod expMethod) \{
+    private void ValidateMethod(Class clazz, ExpMethod expMethod) {
         String expectedName = expMethod.name;
         Class\<?\>\[\] expectedParameterTypes = expMethod.parameterTypes;
 
@@ -192,53 +192,53 @@ public class T00_TestMethods \{
         // Tests whether the method exist
         String actualMethodsParametersMessage = null;
 
-        if (actualMethod == null) \{
+        if (actualMethod == null) {
             actualMethodsParametersMessage = findMethodFromMethods(clazz, expectedName);
-        \}
+        }
 
         String existMessage = String.format(METHOD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName, actualMethodsParametersMessage, arrayToString(expectedParameterTypes));
         Assert.assertNotNull(existMessage, actualMethod);
-    \}
+    }
 
-    private String arrayToString(Class\<?\>\[\] array) \{
+    private String arrayToString(Class\<?\>\[\] array) {
         String\[\] stringArray = Arrays.stream(array).map(Class::getName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
-    \}
+    }
 
-    private String findMethodFromMethods(Class\<?\> clazz, String methodName) \{
+    private String findMethodFromMethods(Class\<?\> clazz, String methodName) {
         Method\[\] methods = clazz.getMethods();
 
         Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method : methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) {
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
-        \}
+            sb.append("{ " + parameterTypes + " } ");
+        }
 
         return sb.toString().trim();
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -251,32 +251,32 @@ import org.junit.Test;
 
 import java.lang.reflect.Field;
 
-public class T00_TestPersonFields \{
+public class T00_TestPersonFields {
     private static final String FIELD_NOT_PRESENT_ERROR_MESSAGE = "The field '%s.%s' does not exist!";
 
-    private class ExpField \{
+    private class ExpField {
         String name;
 
-        public ExpField(String name) \{
+        public ExpField(String name) {
             this.name = name;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void ValidateAstronautFields() \{
+    public void ValidateAstronautFields() {
         Class astronautClazz = getType("Person");
 
-        ExpField\[\] astronautFields = new ExpField\[\]\{
+        ExpField\[\] astronautFields = new ExpField\[\]{
                 new ExpField("name"),
                 new ExpField("age"),
-        \};
+        };
 
-        for (ExpField field : astronautFields) \{
+        for (ExpField field : astronautFields) {
             validateField(astronautClazz, field);
-        \}
-    \}
+        }
+    }
 
-    private void validateField(Class clazz, ExpField expField) \{
+    private void validateField(Class clazz, ExpField expField) {
         String expectedName = expField.name;
 
         // Returns null if the field does not exist
@@ -285,24 +285,24 @@ public class T00_TestPersonFields \{
         // Tests whether the field exist
         String nameMessage = String.format(FIELD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName);
         Assert.assertNotNull(nameMessage, actualField);
-    \}
+    }
 
-    private Field getField(Class clazz, String expectedName) \{
+    private Field getField(Class clazz, String expectedName) {
         Field field = null;
-        try \{
+        try {
             field = clazz.getDeclaredField(expectedName);
-        \} catch (NoSuchFieldException e) \{
-        \}
+        } catch (NoSuchFieldException e) {
+        }
 
         return field;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -313,12 +313,12 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T01_TestParent \{
+public class T01_TestParent {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String ERROR_MESSAGE = "Class '%s' should inherit from class '%s'";
 
     @Test
-    public void testChildParent() \{
+    public void testChildParent() {
         String parentClassName = "Person";
         String childClassName = "Child";
 
@@ -331,8 +331,8 @@ public class T01_TestParent \{
 
         Assert.assertTrue(String.format(ERROR_MESSAGE, childClassName, parentClassName)
                 , parent.getSimpleName().equals(parentClassName));
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -345,52 +345,52 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 
-public class T02_TestConstructors \{
+public class T02_TestConstructors {
     private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present or args are invalid";
 
-    private class ExpConstructor \{
+    private class ExpConstructor {
         String className;
         Class\[\] constructorTypes;
 
-        ExpConstructor(String className, Class\[\] constructorTypes) \{
+        ExpConstructor(String className, Class\[\] constructorTypes) {
             this.className = className;
             this.constructorTypes = constructorTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateFields() throws NoSuchMethodException \{
+    public void validateFields() throws NoSuchMethodException {
         Class aClass = getType("Person");
 
-        ExpConstructor\[\] constructorsWithClasses = new ExpConstructor\[\]\{
-                new ExpConstructor("Person", new Class\[\]\{String.class, Integer.TYPE\}),
-                new ExpConstructor("Child", new Class\[\]\{String.class, Integer.TYPE\}),
-        \};
+        ExpConstructor\[\] constructorsWithClasses = new ExpConstructor\[\]{
+                new ExpConstructor("Person", new Class\[\]{String.class, Integer.TYPE}),
+                new ExpConstructor("Child", new Class\[\]{String.class, Integer.TYPE}),
+        };
 
 
-        for (ExpConstructor constructorWithClass : constructorsWithClasses) \{
+        for (ExpConstructor constructorWithClass : constructorsWithClasses) {
             assertConstructorExists(constructorWithClass);
-        \}
-    \}
+        }
+    }
 
-    private void assertConstructorExists(ExpConstructor constructorArgs) throws NoSuchMethodException \{
+    private void assertConstructorExists(ExpConstructor constructorArgs) throws NoSuchMethodException {
         Class clazz = Classes.allClasses.get(constructorArgs.className);
         Constructor constructor = null;
 
-        try \{
+        try {
             constructor = clazz.getDeclaredConstructor(constructorArgs.constructorTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
         Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, constructorArgs.className), constructor);
 
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -404,34 +404,34 @@ import org.junit.Test;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T03_TestMethods \{
+public class T03_TestMethods {
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
 
-    private class ExpMethod \{
+    private class ExpMethod {
         String name;
         Class\<?\>\[\] parameterTypes;
 
-        public ExpMethod(String name, Class\<?\>... parameterTypes) \{
+        public ExpMethod(String name, Class\<?\>... parameterTypes) {
             this.name = name;
             this.parameterTypes = parameterTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateMethods() \{
+    public void validateMethods() {
         Class astronautClazz = getType("Person");
 
-        ExpMethod\[\] astronautMethods = new ExpMethod\[\]\{
+        ExpMethod\[\] astronautMethods = new ExpMethod\[\]{
                 new ExpMethod("getName"),
                 new ExpMethod("getAge"),
-        \};
+        };
 
-        for (ExpMethod method : astronautMethods) \{
+        for (ExpMethod method : astronautMethods) {
             ValidateMethod(astronautClazz, method);
-        \}
-    \}
+        }
+    }
 
-    private void ValidateMethod(Class clazz, ExpMethod expMethod) \{
+    private void ValidateMethod(Class clazz, ExpMethod expMethod) {
         String expectedName = expMethod.name;
         Class\<?\>\[\] expectedParameterTypes = expMethod.parameterTypes;
 
@@ -440,53 +440,53 @@ public class T03_TestMethods \{
         // Tests whether the method exist
         String actualMethodsParametersMessage = null;
 
-        if (actualMethod == null) \{
+        if (actualMethod == null) {
             actualMethodsParametersMessage = findMethodFromMethods(clazz, expectedName);
-        \}
+        }
 
         String existMessage = String.format(METHOD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName, actualMethodsParametersMessage, arrayToString(expectedParameterTypes));
         Assert.assertNotNull(existMessage, actualMethod);
-    \}
+    }
 
-    private String arrayToString(Class\<?\>\[\] array) \{
+    private String arrayToString(Class\<?\>\[\] array) {
         String\[\] stringArray = Arrays.stream(array).map(Class::getName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
-    \}
+    }
 
-    private String findMethodFromMethods(Class\<?\> clazz, String methodName) \{
+    private String findMethodFromMethods(Class\<?\> clazz, String methodName) {
         Method\[\] methods = clazz.getMethods();
 
         Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method : methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) {
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
-        \}
+            sb.append("{ " + parameterTypes + " } ");
+        }
 
         return sb.toString().trim();
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -499,32 +499,32 @@ import org.junit.Test;
 
 import java.lang.reflect.Field;
 
-public class T04_TestPersonFields \{
+public class T04_TestPersonFields {
     private static final String FIELD_NOT_PRESENT_ERROR_MESSAGE = "The field '%s.%s' does not exist!";
 
-    private class ExpField \{
+    private class ExpField {
         String name;
 
-        public ExpField(String name) \{
+        public ExpField(String name) {
             this.name = name;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void ValidateAstronautFields() \{
+    public void ValidateAstronautFields() {
         Class astronautClazz = getType("Person");
 
-        ExpField\[\] astronautFields = new ExpField\[\]\{
+        ExpField\[\] astronautFields = new ExpField\[\]{
                 new ExpField("name"),
                 new ExpField("age"),
-        \};
+        };
 
-        for (ExpField field : astronautFields) \{
+        for (ExpField field : astronautFields) {
             validateField(astronautClazz, field);
-        \}
-    \}
+        }
+    }
 
-    private void validateField(Class clazz, ExpField expField) \{
+    private void validateField(Class clazz, ExpField expField) {
         String expectedName = expField.name;
 
         // Returns null if the field does not exist
@@ -533,24 +533,24 @@ public class T04_TestPersonFields \{
         // Tests whether the field exist
         String nameMessage = String.format(FIELD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName);
         Assert.assertNotNull(nameMessage, actualField);
-    \}
+    }
 
-    private Field getField(Class clazz, String expectedName) \{
+    private Field getField(Class clazz, String expectedName) {
         Field field = null;
-        try \{
+        try {
             field = clazz.getDeclaredField(expectedName);
-        \} catch (NoSuchFieldException e) \{
-        \}
+        } catch (NoSuchFieldException e) {
+        }
 
         return field;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -566,16 +566,16 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T05_TestGettersInstance \{
+public class T05_TestGettersInstance {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "'%s.%s' returns invalid data (actual: '%s'; expected: '%s')!";
 
     @Test
-    public void validateAstronautInstance() \{
+    public void validateAstronautInstance() {
         // Arrange
         Object expectedName = "Peter";
         Object expectedAge = 10;
 
-        Object\[\] childArgs = new Object\[\] \{expectedName, expectedAge\};
+        Object\[\] childArgs = new Object\[\] {expectedName, expectedAge};
         Class\<?\> childClass = getType("Child");
         Object childObject = createObjectInstance(childClass, childArgs);
 
@@ -589,78 +589,78 @@ public class T05_TestGettersInstance \{
         String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, childClass.getName(), "getAge", actualAge, expectedAge);
         Assert.assertEquals(nameMessage, expectedName, actualName);
         Assert.assertEquals(ageMessage, expectedAge, actualAge);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) \{
+    private Object getMethodValue(Object object, Class\<?\> clazz, String methodName, Object\[\] methodArgs, Class\<?\>... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) \{
+    private Object createObjectInstance(Class\<?\> clazz, Object\[\] arguments) {
         Class\<?\>\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
 
         Constructor\<?\> ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\<?\>\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
+    private void mapIntegerToInt(Class\<?\>\[\] types) {
+        for (int i = 0; i \< types.length; i++) {
+            if (types\[i\].getName().equals(Integer.class.getName())) {
                 types\[i\] = int.class;
-            \}
-        \}
-    \}
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class\<?\>... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
