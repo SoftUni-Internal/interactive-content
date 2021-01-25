@@ -1,6 +1,6 @@
 [slide]
 # Problem: Construction Crew
-[code-task title="Problem: Construction Crew" taskId="js-advanced-Object-Composition-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Construction Crew" taskId="js-advanced-Object-Composition-Construction-Crew" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
 function  solve(input) {

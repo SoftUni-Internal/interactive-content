@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Person
-[code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="java-unit-tests" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

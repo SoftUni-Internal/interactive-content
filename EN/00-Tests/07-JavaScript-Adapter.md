@@ -131,8 +131,7 @@ function solve(input) {
     console.log(`The sum: ${sum}`);
     for (let index = num1; index <= num2; index++) {
         if (index % 9 == 0) {
-          console.log(index + " ");  
-            
+          console.log(index + " ");  ava-code
         }
     }
     
@@ -190,8 +189,7 @@ The sum: 594
 72
 81
 90
-99
-[/output]
+99a
 [/test]
 [test]
 [input]

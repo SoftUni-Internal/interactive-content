@@ -2,7 +2,7 @@
 # Problem: Opinion Poll
 
 
-[code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
