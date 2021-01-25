@@ -59,7 +59,7 @@ hash.add("Alice");
 hash.add("George");
 
 System.out.println(hash.contains("Alice"));
-System.out.println(hash.contains("Peter"));
+System.out.println(hash.contains("Ana"));
 ```
 
 - `size()`: returns how many elements (size) exists in the `HashSet`:
@@ -103,26 +103,24 @@ tree.add("Peter");
 tree.add("Alice");
 tree.add("George");
 
-System.out.println(tree.remove("Alice"));
-
 System.out.println(tree);
 ```
 
-
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-3.gif" /]
-
 
 - `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
 
-hash.add("Peter");
-hash.add("Alice");
-hash.add("George");
+tree.add("Peter");
+tree.add("Alice");
+tree.add("George");
 
-System.out.println(hash.size());
+System.out.println(tree.remove("Alice"));
+System.out.println(tree.remove("Ana"));
 
+System.out.println(tree);
 ```
 
 - `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
@@ -135,7 +133,7 @@ tree.add("Alice");
 tree.add("George");
 
 System.out.println(tree.contains("Alice"));
-System.out.println(tree.contains("Peter"));
+System.out.println(tree.contains("Ana"));
 ```
 [/slide]
 
@@ -149,6 +147,7 @@ A **LinkedHashSet** provides **constant** time performance for the basic operati
 A LinkedHashSet allows maximum **one null element**.
 
 - Initialization:
+
 ```java
 Set<String> linkedHashSet = new LinkedHashSet<>();
 ```
@@ -180,7 +179,10 @@ linkedHashSet.add("Peter");
 linkedHashSet.add("Alice");
 linkedHashSet.add("George");
 
-System.out.println(linkedHashSet.size());
+System.out.println(linkedHashSet.remove("Alice"));
+System.out.println(linkedHashSet.remove("Ana"));
+
+System.out.println(linkedHashSet);
 
 ```
 
