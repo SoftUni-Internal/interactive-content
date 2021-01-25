@@ -2,10 +2,8 @@
 
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+[video src="https://testvideos.softuni.org/hls/demo/01-PB-JavaScript-expressions-and-statements-1-2-Introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="https://awesomeposter.jpg" \]
+
 
 ## Lesson content:
 
