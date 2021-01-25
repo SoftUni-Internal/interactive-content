@@ -1,6 +1,6 @@
 # Types of Modules
 
-[slide]
+[slide hideTitle]
 # IIFE Modules
 
 [vimeo-video]
@@ -10,7 +10,7 @@
 
 **IIFE Modules** are essential for front-end development.
 
-They enable us to **hide certain data and functionality from the global scope**, and have been very commonly used **until ES6 Modules were introduced**.
+They enable us to **hide certain data and functionality from the global scope** and have been very commonly used **until ES6 Modules were introduced**.
 
 We will learn about ES6 modules in a later video.
 
@@ -36,7 +36,7 @@ This module contains the `count` variable and `increase()` function.
 
 As you may know, variables defined with `var` are **available globally** by default.
 
-**IIFE Modules** can override this behaviour.
+**IIFE Modules** can override this behavior.
 
 The object that is returned contains the functionality and data that we make globally accessible.
 
@@ -46,7 +46,7 @@ The counter itself, however, **cannot be directly accessed**, unless we declare 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Node.js Modules
 
 [vimeo-video]
@@ -58,13 +58,13 @@ In Node\.js, **every file has its own scope**.
 
 Thus, individual files could be considered as **separate modules**.
 
-**The modules we create manually have to be exported**, before they could be required.
+**The modules we create manually have to be exported** before they could be required.
 
 ## Importing
 
 We **import** Node.js modules using the `require()` function.
 
-**Built\-in modules** can be imported as follows:
+**Built-in modules** can be imported as follows:
 
 ```js
 const querystring = require('querystring');
@@ -112,14 +112,14 @@ module.exports.currencyConverter = {
 ```
 
 
-## Built\-in Node\.js modules
+## Built-in Node.js modules
 
-**Node.js** has many **built\-in modules** which you can **include** and **use** in **any of your Node\.js files**.
+**Node.js** has many **built-in modules** which you can **include** and **use** in **any of your Node.js files**.
 
 Here are some commonly used ones:
 
 - The `http` module:
-    - Used to create an **HTTP server**\:
+    - Used to create an **HTTP server**:
 
 ```js
 let http = require('http');
@@ -141,7 +141,7 @@ let fs = require('fs');
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # ES6 Modules
 
 [vimeo-video]
@@ -151,7 +151,7 @@ let fs = require('fs');
 
 In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
 
-JavaScript's **built\-in module statements always export and import an object**.
+JavaScript's **built-in module statements always export and import an object**.
 
 ## Importing
 
@@ -192,7 +192,7 @@ Using the `default` keyword we can later import the value with **any given name*
 export default greetFunction;
 ```
 
-Think of the next code block as a different file, in which we import `myFunction`\:
+Think of the next code block as a different file, in which we import `myFunction`:
 
 ```js
 import hello from './test.js';
@@ -201,7 +201,5 @@ import hello from './test.js';
 Keep in mind that **default** exporting **does not allow** us to export more than one value.
 
 The modules we export are in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) **by default**.
-
-
 
 [/slide]

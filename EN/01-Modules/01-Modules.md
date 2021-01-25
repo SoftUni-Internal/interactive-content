@@ -1,6 +1,6 @@
 # Modules
 
-[slide]
+[slide hideTitle]
 
 # What are Modules?
 

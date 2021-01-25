@@ -1,7 +1,7 @@
 # Lesson Introduction
 
-[slide]
-# Table of Contents
+[slide hideTitle]
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="497190340/4e18d6d41f" default /]
