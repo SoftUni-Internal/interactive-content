@@ -1,7 +1,6 @@
 # Lesson Introduction
 
 [slide hideTitle]
-
 # Lesson Content
 
 [vimeo-video]

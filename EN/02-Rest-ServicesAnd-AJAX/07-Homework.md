@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Bus Stop
 
@@ -220,7 +220,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Bus Schedule
 
@@ -240,15 +240,15 @@ function busSchedule(){
 
 You can download the resources for this problem from [here](https://mega.nz/file/SdhmGQBR#XXw-a1o4YZseJGGUr2ivu7_98h-g66VJyFNi7upstTQ).
 
-Write a JS program that tracks the progress of a bus on its route and announces it inside an info box.
+Write a JS program that tracks the progress of a bus on its route and announces it inside an infobox.
 
 The program should display which is the upcoming stop and once the bus arrives, request from the server the name of the next one.
 
 The bus has two states – **moving** and **stopped**.
 
-When it is **stopped**, only the button **Depart** is **enabled**, while the info box shows the name of the **current** stop.
+When it is **stopped**, only the button **Depart** is **enabled**, while the infobox shows the name of the **current** stops.
 
-When it is **moving**, only the button **Arrive** is **enabled**, while the info box shows the name of the **upcoming** stop. Initially, the info box shows **Not Connected**, and the **Arrive** button is **disabled**.
+When it is **moving**, only the button **Arrive** is **enabled**, while the infobox shows the name of the **upcoming** stops. Initially, the info box shows **Not Connected**, and the **Arrive** button is **disabled**.
 
 The ID of the first stop is **depot**.
 
@@ -263,25 +263,25 @@ stopId {
 }
 ```
 
-Update the info box with the response information, disable the `Depart` button, and enable the `Arrive` button.
+Update the infobox with the response information, disable the `Depart` button, and enable the `Arrive` button.
 
-The info box text should look like this \(replace the highlighted part with the relevant value\):
+The infobox text should look like this \(replace the highlighted part with the relevant value\):
 
 `Next stop {stopName}`
 
 When the "Arrive" button is clicked, update the text, disable the `Arrive` button and enable the `Depart` button.
 
-The info box text should look like this (replace the highlighted part with the relevant value):
+The infobox text should look like this (replace the highlighted part with the relevant value):
 
 `Arriving at {stopName}`
 
 Successfully clicking the buttons will cycle through the entire schedule.
 
-If invalid data is received, show **Error** inside the info box and **disable** both buttons.
+If invalid data is received, show **Error** inside the infobox and **disable** both buttons.
 
 ## Examples
 
-Initially, the info box shows “Not Connected” and the arrive button is disabled.
+Initially, the info box shows `Not Connected` and they arrive button is disabled.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-12.png" /]
 
@@ -289,13 +289,13 @@ Initially, the info box shows “Not Connected” and the arrive button is disab
 
 When Depart is clicked, a request is made with the first ID.
 
-The info box is updated with the new information and the buttons are changed:
+The infobox is updated with the new information and the buttons are changed:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-14.png" /]
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-15.png" /]
 
-Clicking Arrive, changes the info box and swaps the buttons.
+Clicking Arrive changes the infobox and swaps the buttons.
 
 This allows Depart to be clicked again, which makes a new request and updates the information:
 
@@ -419,7 +419,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Messenger
 
@@ -542,7 +542,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: PhoneBook
 
@@ -706,5 +706,4 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-
 

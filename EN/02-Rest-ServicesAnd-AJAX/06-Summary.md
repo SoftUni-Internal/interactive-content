@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learned:
+# In this lesson you learnt:
 
 -  HTTP is a **text-based client-server protocol** used for transferring Web resources
 
@@ -90,7 +90,7 @@
       .catch((err) => {});
    ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 -  Asynchronous Programming and Promises:
 
