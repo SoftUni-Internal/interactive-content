@@ -16,20 +16,24 @@ The **HashSet** class offers **constant** time performance for the basic operati
 Set<String> hash = new HashSet<String>();
 ```
 
-- Adding Element
+- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+
+If the set already contains the element, the set reminds unchanged and returns `false`.
 
 ```java live
 Set<String> hash = new HashSet<>();
 
 hash.add("Peter");
 hash.add("Alice");
-hash.add("George");
+System.out.println(hash.add("George"));
 
 System.out.println(hash);
+
+System.out.println(hash.add("Alice"));
 ```
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-1.gif" /]
 
-- Removing Element
+- `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
 
 ```java live
 Set<String> hash = new HashSet<>();
@@ -38,11 +42,40 @@ hash.add("Peter");
 hash.add("Alice");
 hash.add("George");
 
-hash.remove("Alice");
+System.out.println(hash.remove("Alice"));
 
 System.out.println(hash);
 ```
+
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-2.gif" /]
+
+- `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+
+```java live
+Set<String> hash = new HashSet<>();
+
+hash.add("Peter");
+hash.add("Alice");
+hash.add("George");
+
+System.out.println(hash.contains("Alice"));
+System.out.println(hash.contains("Peter"));
+```
+
+- `size()`: returns how many elements (size) exists in the `HashSet`:
+
+```java live
+Set<String> hash = new HashSet<>();
+
+hash.add("Peter");
+hash.add("Alice");
+hash.add("George");
+
+System.out.println(hash.size());
+
+```
+
+
 [/slide]
 
 [slide hideTitle]
@@ -59,7 +92,9 @@ The TreeSet provides guaranteed **log(n)** time cost for the basic operations - 
 Set<String> tree = new TreeSet<>();
 ```
 
-- Adding Element
+- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+
+If the set already contains the element, the set reminds unchanged and returns `false`.
 
 ```java live
 Set<String> tree = new TreeSet<>();
@@ -68,10 +103,40 @@ tree.add("Peter");
 tree.add("Alice");
 tree.add("George");
 
+System.out.println(tree.remove("Alice"));
+
 System.out.println(tree);
 ```
 
+
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-3.gif" /]
+
+
+- `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
+
+```java live
+Set<String> tree = new TreeSet<>();
+
+hash.add("Peter");
+hash.add("Alice");
+hash.add("George");
+
+System.out.println(hash.size());
+
+```
+
+- `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+
+```java live
+Set<String> tree = new TreeSet<>();
+
+tree.add("Peter");
+tree.add("Alice");
+tree.add("George");
+
+System.out.println(tree.contains("Alice"));
+System.out.println(tree.contains("Peter"));
+```
 [/slide]
 
 [slide hideTitle]
@@ -88,24 +153,56 @@ A LinkedHashSet allows maximum **one null element**.
 Set<String> linkedHashSet = new LinkedHashSet<>();
 ```
 
-- Adding Elements 
+- `add()`: adds element into the set, and returns `true` if the element is successfully added.
+
+If the set already contains the element, the set reminds unchanged and returns `false`.
+
 ```java live
 Set<String> linkedHashSet = new LinkedHashSet<>();
 
-linkedHashSet.add("George");
 linkedHashSet.add("Peter");
 linkedHashSet.add("Alice");
+System.out.println(linkedHashSet.add("George"));
 
 System.out.println(linkedHashSet);
+
+System.out.println(linkedHashSet.add("Alice"));
 ```
+
 [image assetsSrc="Java-Advanced-Sets-and-Maps-Advanced-4.gif" /]
+
+- `remove()`: search for an element and returns `true` if the specified element exists in the `HashSet`, otherwise, it returns `false`.
+
+```java live
+Set<String> linkedHashSet = new LinkedHashSet<>();
+
+linkedHashSet.add("Peter");
+linkedHashSet.add("Alice");
+linkedHashSet.add("George");
+
+System.out.println(linkedHashSet.size());
+
+```
+
+- `contains()`: returns `true` if the element exists in the `HashSet`, otherwise, it returns `false`
+
+```java live
+Set<String> linkedHashSet = new LinkedHashSet<>();
+
+linkedHashSet.add("Peter");
+linkedHashSet.add("Alice");
+linkedHashSet.add("George");
+
+System.out.println(linkedHashSet.contains("Alice"));
+System.out.println(linkedHashSet.contains("Peter"));
+```
 
 [/slide]
 
 
 [slide hideTitle]
 # Problem: Parking Lot
-[code-task title="Parking Lot" taskId="java-advanced-sets-and-maps-advanced-Parking-Lot" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Parking Lot" taskId="java-advanced-sets-and-maps-advanced-lab-Parking-Lot" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -120,15 +217,15 @@ public class Main {
 [task-description]
 ## Description
 Write a program that:
- - Records car number for every car that enter in the parking lot
+ - Records car number for every car that enters the parking lot
  - Removes car number when the car goes out
 
 ## Input
-The input will be string in format [direction, carNumber].
-The input ends with string `END`.
+The input will be a string in format [direction, carNumber].
+The input ends with the string `END`.
 
 ## Output
-Print the output with all car numbers which are in parking lot.
+Print the output with all car numbers which are in the parking lot.
 
 ## Examples
 | **Input** | **Output** |
@@ -333,15 +430,15 @@ public class Main {
 [task-description]
 ## Description
 Write a program that:
- - Records car number for every car that enter in the parking lot
+ - Records car number for every car that enters the parking lot
  - Removes car number when the car goes out
 
 ## Input
-The input will be string in format [direction, carNumber].
-The input ends with string `END`.
+The input will be a string in format [direction, carNumber].
+The input ends with the string `END`.
 
 ## Output
-Print the output with all car numbers which are in parking lot.
+Print the output with all car numbers which are in the parking lot.
 
 ## Examples
 | **Input** | **Output** |
@@ -512,7 +609,7 @@ CA2822UU
 
 [slide hideTitle]
 # Problem: SoftUni Party
-[code-task title="SoftUni Party" taskId="java-advanced-sets-and-maps-advanced-SoftUni-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="SoftUni Party" taskId="java-advanced-sets-and-maps-advanced-lab-SoftUni-Party" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -528,17 +625,17 @@ public class Main {
 ## Description
 There is a party in SoftUni. Many guests are invited, and they are two types: **VIP** and **regular**.
 
-When guest comes, you have to check if he/she exist in any of two reservation lists.
+When a guest comes, you have to check if he/she exists in any of the two reservation lists.
 
 All reservation numbers will be with 8 chars.
 
-All VIP numbers start with digit.
+All VIP numbers start with a digit.
 
 ## Input
 
-- Until `PARTY` command, you will receive guest invitations.
+- Until the `PARTY` command, you will receive guest invitations.
 
-- Until `END` command, you will receive a second list with guests that actually cаme to the party.
+- Until the `END` command, you will receive a second list with guests that actually cаme to the party.
 
 ## Output 
 
@@ -847,17 +944,17 @@ public class Main {
 ## Description
 There is a party in SoftUni. Many guests are invited, and they are two types: **VIP** and **regular**.
 
-When guest comes, you have to check if he/she exist in any of two reservation lists.
+When a guest comes, you have to check if he/she exists in any of the two reservation lists.
 
 All reservation numbers will be with 8 chars.
 
-All VIP numbers start with digit.
+All VIP numbers start with a digit.
 
 ## Input
 
-- Until `PARTY` command, you will receive guest invitations.
+- Until the `PARTY` command, you will receive guest invitations.
 
-- Until `END` command, you will receive a second list with guests that actually cаme to the party.
+- Until the `END` command, you will receive a second list with guests that actually cаme to the party.
 
 ## Output 
 
@@ -1124,7 +1221,7 @@ xys2FYzn
 
 [slide hideTitle]
 # Problem: Card Game
-[code-task title="Card Game" taskId="java-advanced-sets-and-maps-advanced-Card-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Game" taskId="java-advanced-sets-and-maps-advanced-lab-Card-Game" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1143,9 +1240,9 @@ Write a program that:
   - Every player can **hold only unique numbers** 
 Each Round both players get the top number from their own deck.
 
-Player with the bigger number get both numbers and add it on the bottom of his own sequence.
+A player with the bigger number get both numbers and add them to the bottom of his own sequence.
 
-Game ends after 50 rounds or if any player lose all of his numbers
+The game ends after 50 rounds or if any player loses all of his numbers
 
 ## Examples
 | **Input** | **Output** |
@@ -1290,9 +1387,9 @@ Write a program that:
   - Every player can **hold only unique numbers** 
 Each Round both players get the top number from their own deck.
 
-Player with the bigger number get both numbers and add it on the bottom of his own sequence.
+A player with the bigger number get both numbers and add them to the bottom of his own sequence.
 
-Game ends after 50 rounds or if any player lose all of his numbers
+The game ends after 50 rounds or if any player loses all of his numbers
 
 ## Examples
 | **Input** | **Output** |
