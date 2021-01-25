@@ -5,7 +5,7 @@
 # Task Requirements
 [Download resources here!](https://mega.nz/file/Sc532CZD#_xp-APUjJZCaLc--5pm8cuFspbfakoPp86-NLzGwqVw)
 
-So far, we have created one dynamic page which lists all the themes sorted by two different criteria. 
+We have created one dynamic page which lists all the themes sorted by two different criteria. 
 
 The next step is to implement a few more pages and routes between them. 
 
@@ -69,7 +69,7 @@ We can reuse the **Welcome** component here.
 
 All "**users**" can access this page when they visit the forum. 
 
-Here is how it looks like before user has logged in:
+Here is how it looks like before the user has logged in:
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(2).png" /]
 
@@ -139,7 +139,7 @@ The anonymous user should see the following:
 
 This is the themes page URL `localhost:4200/themes` for logged in users.
 
-Note: Because you are still not really logged in, you can **hardcode** this userId `5fa64b162183ce1728ff371d` in your service to write your logic for subscribed users - **Red** and **Green** buttons.
+Note: Because you are still not logged in, you can **hardcode** this userId `5fa64b162183ce1728ff371d` in your service to write your logic for subscribed users - **Red** and **Green** buttons.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(7).png" /]
 
@@ -149,7 +149,7 @@ Note: Because you are still not really logged in, you can **hardcode** this user
 
 # Theme comments - Not Logged in
 
-This is the theme comments URL `localhost:4200/themes/:themeId`, where the user can see all the posts for the selected theme.
+Note: Because you are still not logged in, you can **hardcode** this userId `5fa64b162183ce1728ff371d` in your service to write your logic regarding the subscribed users - **Red** and **Green** buttons.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(8).png" /]
 
@@ -169,13 +169,13 @@ This is the theme comments URL `localhost:4200/themes/:themeId`, where the user 
 
 # Create New Theme - Logged in only
 
-This is the create new theme page URL `localhost:4200/themes` where each logged-in user can create a theme.
+Create the new theme page URL `localhost:4200/themes` where each logged-in user can create a theme.
 
-When "**Post**" button is clicked, you can try to make "**POST**" request to `localhost:4200/themes` with the given theme information. 
+When the "**Post**" button is clicked, you can try to make the "**POST**" request to `localhost:4200/themes` with the given theme information. 
 
 After successful creation, redirect the current "**user**" to the theme comments page.
 
-When "**Cancel**" button is clicked, redirect the user to the **Home** page.
+When the "**Cancel**" button is clicked, redirect the user to the **Home** page.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(10).png" /]
 
@@ -201,7 +201,7 @@ The "**Edit**" button will replace the information fields with input fields, but
 
 # Invalid routes
 
-This is the page URL for all invalid routes `localhost:4200/??????`. 
+The page URL for all invalid routes `localhost:4200/??????`. 
 
 Use it if an invalid path or wrong one is accessed.
 
@@ -213,9 +213,9 @@ Use it if an invalid path or wrong one is accessed.
 
 # Protected routes
 
-Make sure all logged in users pages are protected. 
+Make sure all logged-in user pages are protected. 
 
-That means if your fake "**isLoggedIn**" property is **false** the logged in pages cannot be accessed. 
+That means if your fake "**isLoggedIn**" property is **false** the logged-in pages cannot be accessed. 
 
 Create authentication guards.
 
