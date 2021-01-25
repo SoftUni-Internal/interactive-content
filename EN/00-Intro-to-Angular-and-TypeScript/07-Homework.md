@@ -2,7 +2,7 @@
 
 [slide]
 
-# Lab: TypeScript Playground
+# TypeScript playground
 
 Install typescript with the `npm install typescript -g`.
 
@@ -22,7 +22,7 @@ tsc {filename}.ts
 node {filename}
 ```
 
-[image assetsSrc="Angular-Introduction-6.png" /]
+[image assetsSrc="Angular-Introduction-6.jpg" /]
 
 [/slide]
 
