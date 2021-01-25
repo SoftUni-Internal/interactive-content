@@ -4,18 +4,18 @@
 
 # Templates and Data Binding Overview
 
-We define a component's view with its template. A template is a form of HTML that tells Angular how to render the component.
+We define a component's view with its template. A template is a form of HTML that tells Angular how to render a component.
 
 The template is immediately associated with a component and defines that component's view.
 
-Views are arranged hierarchically, allowing you to modify or show and hide entire UI sections or pages as a unit. 
+The arrangement of the views is hierarchical, allowing you to modify or show and hide entire UI sections or pages as a unit. 
 
-Inside a template we can use:
+Inside a template, we can use:
 
-- render array properties using the `*ngFor` repeater.
-- render nested properties of an object.
-- condition statements using `*ngIf`.
-- attach events and handle them in the component.
+- render array properties using the `*ngFor` repeater
+- render nested properties of an object
+- condition statements using `*ngIf`
+- attach events and handle them in the component
 
 They can be both **inline** or in a **separate file**.
 
@@ -25,7 +25,7 @@ They can be both **inline** or in a **separate file**.
 
 # Render An Array Using NgFor
 
-Here is aн example of a class called "GamesComponent" and an HTML associated with it.
+Here is an example of a class called "GamesComponent" and an HTML associated with it.
 
 ```js
 export class GamesComponent {
@@ -70,7 +70,7 @@ export class GamesComponent {
 }
 ```
 
-We create **if** statements using the `*ngIf` keyword as shown in the HTML below.
+We create **if** statements using the `*ngIf` keyword, as shown in the HTML below.
 
 ```html
 <h1>Games List</h1>
@@ -95,7 +95,7 @@ We create **if** statements using the `*ngIf` keyword as shown in the HTML below
 
 Showing additional content could be done with Event handlers.
 
-This is an HTML example of how to do the Angular event binding syntax:
+Here we have an HTML example of how to do the Angular event binding syntax:
 
 ```html
 <button (click)="showContent($event)">Show Content</button>
@@ -122,9 +122,9 @@ export class GamesComponent {
 
 # Binding Attributes
 
-It is recommended setting an element property with a property binding whenever possible. 
+It is a recommendation, setting an element property with a property binding whenever possible. 
 
-If there is no an element property to bind use **attribute binding**.
+If there is no element property to bind, use **attribute binding**.
 
 Attribute binding syntax is similar to property binding, but instead of an element property between brackets, use the name of the attribute with the prefix **attr**, followed by a **dot**. 
 
@@ -181,7 +181,7 @@ Angular adds the class when the bound expression, `isSpecial` is **truthy**, and
 
 ## Binding to the style attribute
 
-To create a single style binding, use the prefix style followed by a dot and the name of the CSS style property.
+If you need to create a single style binding, use the prefix style followed by a dot and the name of the CSS style property.
 
 For example: `[style.color]="isSpecial ? 'red' : 'green'"`. 
 
@@ -196,11 +196,11 @@ Angular sets the property to the value of the bound expression, which is usually
 
 ## Binding to style with units
 
-The styles like font-size, width etc, have unit extension. 
+The styles like font-size, width, etc, have a unit extension. 
 
 The following example conditionally sets the font-size in "em" unit if `isSpecial` is truthy.
 
-Alternativly it sets the font-size in "%" unit if `isSpecial` is falsy.
+Alternatively, it sets the font-size in "%" unit if `isSpecial` is falsy.
 
 ```html
 <button [style.font-size.em]="isSpecial ? 3 : 1">
@@ -217,7 +217,7 @@ Alternativly it sets the font-size in "%" unit if `isSpecial` is falsy.
 
 # Reference And Null-Safe Operator
 
-Variables can be used from one part of a template in another part of the template.
+Use variables from one part of a template to another part of the template.
 
 A template variable can refer to the following:
 
@@ -227,7 +227,7 @@ A template variable can refer to the following:
 - TemplateRef.
 - a web component.
 
-In the template use the hash symbol `#` to declare a template variable. 
+In the template, use the hash symbol `#` to declare a template variable. 
 
 The following template variable `#phone` declares a phone variable on an `<input>` element.
 
@@ -243,11 +243,11 @@ Here a `<button>` refers to the phone variable.
 <button (click)="callPhone(phone.value)">Call</button>
 ```
 
-In the example below Angular renders the "game" view before "game" got a value assigned.
+In the example below, Angular renders the "game" view before "game" got a value assigned.
 
-This will causes an exception. 
+This will cause an exception. 
 
-`?` stops evaluating when "game" is **null** or **undefined**, which usually happens when data is fetched async, for example from the server which can take some time.
+`?` stops evaluating when "game" is **null** or **undefined**, which usually happens when data is fetched async, for example, from the server, which can take some time.
 
 ```html
 <div>The current hero's name is {{game?.title}}</div>
@@ -256,7 +256,7 @@ This will causes an exception.
 
 The next time when change is detected, the bindings will be re-evaluated. 
 
-When "game" is diferent than **null** or **undefined**, then it will bind `game.title`.
+When "game" is different than **null** or **undefined**, then it will bind `game.title`.
 
 [/slide]
 
@@ -266,9 +266,9 @@ When "game" is diferent than **null** or **undefined**, then it will bind `game.
 
 A template expression produces a value. Angular executes the expression and assigns it to a property of a binding target.
 
-Expressions are placed between braces like so `{{1 + 1}}`. The target could be an HTML element, a component, or a directive.
+Put the expressions between braces like so `{{1 + 1}}`. The target could be an HTML element, a component, or a directive.
 
-These template expressions look almost like JavaScript but they are not pure JavaScript. 
+These template expressions look almost like JavaScript, but they are not pure JavaScript. 
 
 Many JavaScript expressions are legal template expressions, but not all.
 
@@ -298,7 +298,7 @@ bind-target="expression"
 
 **From View To Data-Source**
 
-Data binding from view to the component can be achieved by using the event binding technique.
+We can perform data binding from a view to a component by using the event binding technique.
 
 ```js
 (target)="statement"
@@ -307,11 +307,11 @@ on-target="statement"
 
 **Two-Way Data Binding**
 
-Data binding in Angular is synchronized between the model and the view.
+Synchronize data binding in Angular between the model and the view.
 
 When data in the model changes, the view changes as well, and when data in the view changes, the model is updated as well. 
 
-This happens automatically, which makes sure that the model and the view are updated at all times.
+It happens automatically, which makes sure that the model and the view are updated at all times.
 
 The "ng-model" directive provides a two-way binding between the model and the view.
 

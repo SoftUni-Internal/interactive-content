@@ -6,7 +6,7 @@
 
 Generate a new angular app using the command "ng new articles-app". 
 
-After that change the title of your site to "Article Site" in "app.component.ts" and replace the html in "app.component.html" with the following:
+After that, change the title of your site to "Article Site" in "app.component.ts" and replace the HTML in "app.component.html" with the following:
 
 ```html
 <div style="text-align:center">
@@ -16,7 +16,7 @@ After that change the title of your site to "Article Site" in "app.component.ts"
 </div>
 ```
 
-Change the header css in "app.component.css" like this:
+Change the header CSS in "app.component.css" like this:
 
 ```js
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -50,7 +50,7 @@ Each article has title - а string, description - а string, author - а string,
 
 Create a folder **models** in `src/app` and inside of it create a file "article.model.ts". 
 
-We also have to **export** the class in order to use it in whichever file we want.
+We also have to **export** the class to use it in whichever file we want.
 
 ```js
 export class Article{
@@ -73,9 +73,9 @@ We have to create a seed file to hold our **dummy data** that we will display la
 
 Create a folder called **data** in `src/app` and inside of it generate a new file called "seed.ts", which will hold an array of objects. 
 
-After that export the array. 
+After that, export the array. 
 
-You can change the information inside the objects as you wish, just do not change the property names.
+You can change the information inside the objects if you wish, but do not change the property names.
 
 ```js
 const data = [{
@@ -114,9 +114,9 @@ export { data };
 
 We also need a fake **service** class. 
 
-Inside we will **map** each object to an **article instance** and return a new array of articles. 
+Inside, we will **map** each object to an **article instance** and return a new array of articles. 
 
-Create a new file in **data** called "data.ts", import the article model and the data from "seed.ts" and write the following class:
+Create a new file in **data** called "data.ts" import the article model and the data from "seed.ts" and write the following class:
 
 ```js
 export class ArticleData {
@@ -130,9 +130,10 @@ export class ArticleData {
 }
 ```
 
-The data has a `getData()` function which iterates through all data objects and creates instances of articles which are saved in an array and returned from the function. 
+The data has a `getData()` function that iterates through all data objects and creates instances of articles.
+These are saved in an array and returned from the function. 
 
-Later on we will learn more about real services and injectables and how to implement this the correct way.
+Later we will learn more about real services and injectables and how to implement this the correct way.
 
 [/slide]
 
@@ -142,13 +143,13 @@ Later on we will learn more about real services and injectables and how to imple
 
 Generate an article component using the command "ng generate component article". 
 
-You can also create it **yourself without** using the **CLI**, but note that you have to create a **typescript file** to hold the component logic, an **html file** to hold the markup and a **css file** that is strictly for this component. 
+You can also create it **yourself without** using the **CLI**, but note that you have to create a **typescript file** to hold the component logic, an **HTML file** for the markup, and a **CSS file** that is strictly for this component. 
 
-Also, if you create the component yourself, you have to remember to import it in the **declarations array** inside the main app module. 
+Remember to import the component you created into the **declarations array** inside the main app module. 
 
 The CLI does all that work for us. 
 
-Copy the following css inside "article.component.css":
+Copy the following CSS inside "article.component.css":
 
 ```js
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -215,7 +216,7 @@ It will receive **two properties** that need to be **transferred** from the pare
 
 # Create The HTML Markup
 
-Copy the following html inside "article.component.html":
+Copy the following HTML inside "article.component.html":
 
 ```html
 <li>
@@ -238,7 +239,7 @@ Each time we click on "**Read More**" 250 more symbols of the article descriptio
 
 The moment our description ends we have to show "**Hide Desc**". 
 
-Clicking "**Hide Desc**" should remove all the description inside and reset the counter.
+Clicking "**Hide Desc**" should remove all the descriptions inside and reset the counter.
 
 Both buttons have an attached function to them – `readMore()` and `hideDesc()`. 
 
@@ -252,7 +253,7 @@ All the properties inside the `*ngIf` directive are controlled in our article co
 
 # Create The Needed Properties
 
-Inside "article.component.ts" we have to declare the following properties which we showcased in the previous section:
+Inside the `article.component.ts` we have to declare the following properties which we showcased in the previous section:
 
 ```js
 export class ArticleComponent {
@@ -277,11 +278,11 @@ Both **article** and **aricleDesc** will come from **above** in the **articles c
 
 This is why we use the `@Input` decorator that we need to import. 
 
-We need a property to show the current description which can vary from **0 symbols** until the end. 
+We need a property to show the current description, which can vary from **0 symbols** until the end. 
 
 The article description length is a **counter** which controls how many symbols to show. 
 
-The **3 boolean** properties are used inside the `*ngIf` directive to determine whether or not to show or hide a button. 
+The **3 boolean** properties are used inside the `*ngIf` directive to determine whether to show or hide a button. 
 
 Also, the content of the image button is switched between "**Show Image**" and "**Hide Image**".
 
@@ -295,11 +296,11 @@ We can also do this in the `ngOnInit` lifecycle hook.
 
 # Implement The Read More Function
 
-Each time we click on `readMore()` we have to **increase** the article description length with 250 symbols and if the new length is **more** than the **actual** description length, we have to change **both boolean** properties accordingly. 
+Each time we click on `readMore()` we have to **increase** the article description length with 250 symbols and, if the new length is **more** than the **actual** description length, we have to change **both boolean** properties accordingly. 
 
 If the new length is **less** than the actual, we have to **change** the description to show. 
 
-The following image is blurred, try to implement the logic yourself:
+The following image is blurred. Try to implement the logic yourself:
 
 [image assetsSrc="Angular-Components(2).png" /]
 
@@ -321,7 +322,7 @@ If the content is "**Hide Image**" we have to do the opposite.
 
 # Implement The HideDesc Function
 
-This function should **reset** the description to show the description length counter and also **switch** both buttons.
+This function should **reset** the description to show the description length counter and **switch** both buttons.
 
 [image assetsSrc="Angular-Components(4).png" /]
 
@@ -333,7 +334,7 @@ This function should **reset** the description to show the description length co
 
 After we have created the child component the only thing left is to create the articles component and pass the array of data from the **parent** to the **child**.
 
-Create articles component using "ng generate component articles" and copy the following css inside "articles.component.css":
+Create articles component using "ng generate component articles" and copy the following CSS inside "articles.component.css":
 
 ```js
 ul {
@@ -350,9 +351,9 @@ ul {
 
 # Implement Component Logic
 
-Inside the articles component we need an array property which will hold our articles and we need to initialize the array inside the `ngOnInit` hook. 
+Inside the articles component we need an array property, which will hold our articles and we need to initialize the array inside the `ngOnInit` hook. 
 
-In this case we create an **instance** of our article data.
+In this case, we create an **instance** of our article data.
 
 **Note:** This is not recommended since Angular has **integrated dependency injection** which is always a good practice to use, but since we do not know how to implement it yet this will do for now.
 
@@ -374,11 +375,11 @@ export class ArticlesComponent implements OnInit {
 
 # Create The HTML Markup
 
-Now we have to create the html markup for the articles component. 
+Now we have to create the HTML markup for the articles component. 
 
 We have to **iterate** through all articles using the `*ngFor` directive and **pass** each article and article description to the **child** article component using the square brackets. 
 
-Also use the article component **selector** inside.
+Also, use the article component **selector** inside.
 
 ```html
 <ul>
@@ -389,7 +390,7 @@ Also use the article component **selector** inside.
 </ul>
 ```
 
-Only thing left is to place the articles selector inside "app.component.html" using both tags:
+The only thing left is to place the articles selector inside "app.component.html" using both tags:
 
 `<app-articles></app-articles>`
 
@@ -399,7 +400,7 @@ Only thing left is to place the articles selector inside "app.component.html" us
 
 # Test The Application
 
-If everything went smoothly you can test your application and try out all of the functionality. Show/Hide the description and Show/Hide the image. 
+If everything went smoothly, you can test your application and try out all of the functionality. Show/Hide the description and Show/Hide the image. 
 
 It should look like this:
 

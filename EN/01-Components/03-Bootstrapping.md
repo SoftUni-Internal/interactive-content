@@ -4,11 +4,11 @@
 
 # Bootstrapping an Application
 
-An **NgModule** describes how the application parts fit together. 
+A **NgModule** describes how the application parts fit together. 
 
-Every application has at least one Angular module, the root module, which must be present for **bootstrapping** or in other words **starting** the application on launch. 
+Every application has at least one Angular module, the root module, which must be present for **bootstrapping**, or in other words, **starting** the application on launch. 
 
-By convention this **NgModule** is named **AppModule** but we can give it any other meaningful name as well.
+By convention, the **NgModule** is called **AppModule**, but we can give it any other meaningful name.
 
 [/slide]
 
@@ -45,17 +45,17 @@ export class AppModule { }
 
 The module's **declarations array** tells Angular which components belong to that module. Newly created components are added to **declarations**.
 
-Declare a component in exactly one **NgModule** class. Using a component without declaring it, will result in an error message.
+Declare a component in one **NgModule** class. Using a component without declaring it will result in an error message.
 
 The module's **imports array** appears only in the `@NgModule` metadata object. It tells Angular about other **NgModules** that this particular module needs to function properly.
 
-In this case, the component is **AppComponent**, which references components, directives, or pipes in **BrowserModule**.
+In this case, the component is **AppComponent**, which references components directives or pipes in **BrowserModule**.
 
 The **providers array** is where are listed the services the app needs. The services listed here are available app-wide.
 
-The application launches by bootstrapping the root **AppModule**, which is also referred to as an **entryComponent**. 
+The application launches by bootstrapping the root **AppModule**, also known as an **entryComponent**. 
 
-Among other things, the bootstrapping process creates the components listed in the bootstrap array and inserts each one into the browser DOM.
+The bootstrapping also creates the components listed in the bootstrap array and inserts each one of them into the browser DOM.
 
 The default application created by the Angular CLI only has one component, **AppComponent**, so it is in both the **declarations** and the **bootstrap** arrays.
 

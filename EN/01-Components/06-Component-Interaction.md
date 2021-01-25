@@ -41,9 +41,9 @@ export class GameComponent {
 
 Another way for sharing data is to emit data from the child. 
 
-This approach is useful when you want to share data changes that occur on things like button clicks, form entires, and other user events.
+This approach is useful when you want to share data changes that occur on things like button clicks, form entries, and other user events.
 
-In the child, declare a **onReacted** variable with the **Output decorator** and set it equal to a new event emitter. 
+In the child, declare an **onReacted** variable with the **Output decorator** and set it equal to a new event emitter.
 
 ```js
 import { Output, EventEmitter } from '@angular/core';
