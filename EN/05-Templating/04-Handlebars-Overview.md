@@ -1,6 +1,6 @@
 # Handlebars Overview
 
-[slide]
+[slide hideTitle]
 
 # What is Handlebars?
 
@@ -13,7 +13,7 @@
 
 [image assetsSrc="JS-Applications-templating-3.png" /]
 
-**Handlebars templates** look like regular text with embedded Handlebars **expressions**.
+**Handlebars templates** look like a regular text with embedded Handlebars **expressions**.
 
 Handlebars **expressions** are the **basic unit** of a Handlebars **template**.
 
@@ -38,7 +38,7 @@ You can then use Handlebars using `require` in the target file:
 
 ## Including Handlebars in your markup
 
-If you want to use the **precompiler**, it is recommended to use one of the **browser builds** of **Handlebars**, located in `node_modules/handlebars/dist/`.
+If you want to use the **precompiler**, it is recommended to use one of the **browsers builds** of **Handlebars**, located in `node_modules/handlebars/dist/`.
 
 To do so, you have to **include Handlebars in your HTML, using the script tag**, as follows:
 
@@ -94,7 +94,7 @@ You can use any `id` you want, as long as it is **unique**.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Compilation and Execution
 
@@ -140,7 +140,7 @@ The resulting output looks like this:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Hello Handlebars
 [vimeo-video]
@@ -170,23 +170,23 @@ This is a brief example of Handlebars in action.
 
 Right after the `title` in our `head` section, we must include our **handlebars distribution**.
 
-In this case, we retrieve Handlebars from an o**nline CDN**.
+In this case, we retrieve Handlebars from an **online CDN**.
 
 In the `body` tag we have declared a `div` with the `app` tag. 
 
-This is the place where our **templating engine** will output the compiled **templates**, when we invoke them.
+This is the place where our **templating engine** will output the compiled **templates** when we invoke them.
 
 We can either **import** our JavaScript logic from an **external file** or put it **directly into our HTML**, using the `<script>` tag.
 
-For this example we will use the latter.
+For this example, we will use the latter.
 
 First, we compile our simple **HTML template** with the help of the `Handlebars.compile()` method.
 
-`let template = Handlebars.compile('<h1>Hello {{name}}</h1>');`
+`let template = Handlebars.compile('<h1>Hello {{name}}</h1>');`
 
 Then, we specify the HTML **element**, in which we want to **render our template**.
 
-`let container = document.getElementById('app');`
+`let container = document.getElementById('app');`
 
 Lastly, we **call the compiled template** with our variables and save the output in the element:
 

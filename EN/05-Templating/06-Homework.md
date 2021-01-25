@@ -1,13 +1,13 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Contacts Book
 
-You can download the needed resources here: [mega.nz](https://mega.nz/file/jBwA3JoD#S5ElXOYUuWdVomVljkBOCcxPqdHEoxr3qUn4koDBXWg)
+You can download the resources for this problem from [here](https://mega.nz/file/jBwA3JoD#S5ElXOYUuWdVomVljkBOCcxPqdHEoxr3qUn4koDBXWg).
 
 Create a simple page containing some cards with contacts. 
 
-Each card should have a **name** and a **button \"Details\"**. 
+Each card should have a **name** and a button `Details\`. 
 
 Each time the button is pressed, you have to **toggle a div** containing more detailed information about the corresponding contact.
 
@@ -15,7 +15,7 @@ You are provided with the **HTML, CSS** and a **JavaScript** file with all the c
 
 You have to create a **separate template** for the contact cards and display all of them on the main page. 
 
-At the end, the page should look like this:
+In the end, the page should look like this:
 
 [image assetsSrc="JS-Applications-templating-4.png" /]
 
@@ -23,7 +23,7 @@ At the end, the page should look like this:
 
 ## Hints
 
-First, create a **separate html file**, where you will put your **contact cards**:
+First, create a **separate HTML file**, where you will put your **contact cards**:
 
 **Loop through all the contacts** and **render the data** about each of them
 
@@ -44,14 +44,15 @@ The next step is to create the functionality for displaying all cards:
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: List Towns
 
-You can download the needed resources here: [mega.nz](https://mega.nz/file/CB5QTADY#uwW4VNiAJqkMrEK5Zm886g84ED9JZT-Qjaa5lR0nQlo)
+You can download the resources for this problem from [here](https://mega.nz/file/CB5QTADY#uwW4VNiAJqkMrEK5Zm886g84ED9JZT-Qjaa5lR0nQlo).
 
-You are a given an **input field** with a button. 
 
-In the input field you should enter **elements separated** by comma and whitespace `(", ")`. 
+You are given an **input field** with a button. 
+
+In the input field, you should enter **elements separated** by comma and whitespace `, `. 
 
 Your task is to create a simple **template** that defines a **list** of towns. 
 
@@ -70,10 +71,10 @@ This is how the HTML looks like:
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: HTTP Status Cats
 
-You can download the needed resources here: [mega.nz](https://mega.nz/file/bAwUBKSD#LOHaTm_vVULJk5i-51iNOo53J1xhfiWM2VmvWJd33HU)
+You can download the resources for this problem from [here](https://mega.nz/file/bAwUBKSD#LOHaTm_vVULJk5i-51iNOo53J1xhfiWM2VmvWJd33HU).
 
 *We all love cats.*
 
@@ -102,10 +103,10 @@ You should **toggle** the button and change its text from `Show status code` to 
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Popular Monkeys
 
-You can download the needed resources here: [mega.nz](https://mega.nz/file/7Qog0YyZ#ucLotmvpR6EBaFpQY3wlUerqAgC8BpBXHqWr4AepVnM)
+You can download the resources for this problem from [here](https://mega.nz/file/7Qog0YyZ#ucLotmvpR6EBaFpQY3wlUerqAgC8BpBXHqWr4AepVnM).
 
 You are provided with a **skeleton**. 
 

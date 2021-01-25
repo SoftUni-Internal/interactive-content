@@ -1,6 +1,6 @@
 # Templating Concepts
 
-[slide]
+[slide hideTitle]
 # What is Templating?
 
 [vimeo-video]
@@ -46,11 +46,11 @@ Generally very **easy to learn.**
 
 - Templates are comparable to **pure functions:**
 
-The principles of **functional programming** can be applied to templates as well
+The principles of **functional programming** can be applied to templates as well.
 
 # Benefits of Templating
 
-Templates bring a number of **benefits**.
+Templates bring several **benefits**.
 
 Here are the most prominent ones:
 
@@ -81,6 +81,6 @@ Allows for the use of a **single element on multiple pages.**
 
 - Anywhere you need to add new complex **content** to your page
 
-- Anything that requires **client side HTML rendering**
+- Anything that requires **client-side HTML rendering**
 
 [/slide]

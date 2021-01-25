@@ -1,6 +1,6 @@
 # Templating Engines
 
-[slide]
+[slide hideTitle]
 # What is a Templating Engine?
 
 [vimeo-video]
@@ -21,7 +21,7 @@ There are many different types of templating engines, each with a distinct set o
 - **Handlebars**
     - Logic\-less templates
     - Easy access to global helpers and variables
-    - Requires server side JavaScript \(**Node.js**, for example\) to render on the server
+    - Requires server-side JavaScript \(**Node.js**, for example\) to render on the server
 
 We will discuss Handlebars in a later video.
 
@@ -42,7 +42,7 @@ We will discuss Handlebars in a later video.
 - **Vue**
     - Combines the best features from React and Angular
     - Focuses on simplicity and flexibility
-    - Highly customisable
+    - Highly customizable
 
 - **Web Components**
     - A suite of different technologies

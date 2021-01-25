@@ -1,13 +1,13 @@
-[slide]
-
+[slide hideTitle]
 # Summary
+
 
 [vimeo-video]
 [stream language="EN" videoId="497194765/f46f0ca68a" default /] 
 [stream language="RO" videoId="497194765/f46f0ca68a" /]
 [/video-vimeo]
 
-## In this lesson you learned:
+# In this lesson you learnt:
 
 - Templates make our HTML modular
     - Resulting in less repetitive code and fewer data to load
@@ -48,7 +48,7 @@
 </ul>
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What are Single Page Applications \(SPAs\) and Multi Page Apps?
   - Lifecycles

@@ -1,15 +1,14 @@
 # Lesson Introduction
 
-[slide]
-
-# Table of Contents
+[slide hideTitle]
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="497194912/5c7adc45b8" default /]
 [stream language="RO" videoId="497194912/5c7adc45b8"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about
+## In this lesson you will learn:
 
 **1. Templating Concepts**
 
