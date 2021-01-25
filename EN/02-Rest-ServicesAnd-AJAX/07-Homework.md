@@ -215,11 +215,6 @@ yes
 
 
 
-
-
-
-
-
 [slide hideTitle]
 
 # Problem: Bus Schedule
@@ -423,7 +418,7 @@ yes
 
 # Problem: Messenger
 
-[code-task title="Problem: Messenger" taskId="js-applications-rest-services-and-ajax-messenger" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Messenger" taskId="js-applications-rest-services-and-ajax-Messenger" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -591,7 +586,7 @@ Example format:
 }
 ```
 
-The URL to which your program should make requests is: 'https://phonebook-nakov.firebaseio.com/phonebook'.
+The URL to which your program should make requests is: `https://phonebook-nakov.firebaseio.com/phonebook`.
 
 **GET** and **POST** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook.json`, while **DELETE** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook/<key>.json`, where `<key>` is the unique key of the entry \(you can find out the **key** from the key property in the **GET** request\)
 

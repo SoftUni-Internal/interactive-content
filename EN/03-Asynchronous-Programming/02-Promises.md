@@ -1,6 +1,6 @@
 # Promises
 
-[slide]
+[slide hideTitle]
 
 # What is a Promise?
 
@@ -15,15 +15,15 @@ Since the information **does not arrive immediately**, the whole function **must
 
 Synchronously getting resources from a database, for example, can **block an entire web page**.
 
-Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carry on with the execution**.
+Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carries on with the execution**.
 
 These states are:
 
-- `Fulfilled` - The operation was completed with success.
+- `Fulfilled`: The operation was completed with success.
 
-- `Rejected` - The operation has failed.
+- `Rejected`: The operation has failed.
 
-- `Pending` - This is the state, in which a promise is initialized. It means the promise is neither resolved, nor rejected.
+- `Pending`: This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected.
 
 Promises are initialized with the `Promise` object;
 
@@ -65,7 +65,9 @@ Promise.reject("There was an error!").then(
 );
 ```
 
-- `Promise.resolve(value)` - Returns a **resolved** `Promise` object with the provided value. If the value is a promise - **returns the promise**.
+- `Promise.resolve(value)`: Returns a **resolved** `Promise` object with the provided value.
+
+If the value is a promise - **returns the promise**.
 
 ```js live
 Promise.resolve("Operation was successful!").then(
@@ -78,7 +80,9 @@ Promise.resolve("Operation was successful!").then(
 );
 ```
 
-- `Promise.all(iterable)` - Takes an array of promises and returns a single `Promise`, which **resolves** to an array of values, **if all the given promises are resolved**. Otherwise, it would **reject immediately**.
+- `Promise.all(iterable)`: Takes an array of promises and returns a single `Promise`, which **resolves** to an array of values, **if all the given promises are resolved**. 
+
+Otherwise, it would **reject immediately**.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
@@ -92,7 +96,7 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object only after all of the given promises are **either resolved or rejected**.
+- `Promise.allSettled(iterable)`: Takes an array of promises and returns a `Promise` object only after all of the given promises are **either resolved or rejected**.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
@@ -114,7 +118,7 @@ Promise.allSettled([firstPromise, secondPromise]).then((data) => {
 });
 ```
 
-- `Promise.race(iterable)` - Takes an array of promises and after the first one is **either resolved or rejected**, returns a `Promise` object that resolves or rejects with its value.
+- `Promise.race(iterable)`: Takes an array of promises and after the first one is **either resolved or rejected**, returns a `Promise` object that resolves or rejects with its value.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
@@ -140,7 +144,7 @@ Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.finally(function)` - Takes a callback function to be executed **after the promise is settled**.
+- `Promise.finally(function)`: Takes a callback function to be executed **after the promise is settled**.
 
 ```js live
 Promise.resolve("Operation succeeded!")
@@ -200,7 +204,9 @@ As seen above, the `.then()` method **waits for the completion with the previous
 [stream language="RO" videoId="497192805/b85fc82d6e"  /]
 [/video-vimeo]
 
-The `.catch()` method is used to **"catch thrown errors" by promises**. It is very useful to **handle possible promise rejections**.
+The `.catch()` method is used to **"catch thrown errors" by promises**. 
+
+It is very useful to **handle possible promise rejections**.
 
 Here is how this method is used with the code from the previous example:
 
@@ -222,6 +228,8 @@ new Promise(function (resolve, reject) {
 console.log("This will appear second");
 ```
 
-It is good to know that another `.then()` method can be placed **after** `.catch()`. It will execute **whether the promise is rejected or not**.
+It is good to know that another `.then()` method can be placed **after** `.catch()`. 
+
+It will execute **whether the promise is rejected or not**.
 
 [/slide]

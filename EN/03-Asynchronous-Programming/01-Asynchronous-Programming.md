@@ -1,6 +1,6 @@
 # Asynchronous Programming
 
-[slide]
+[slide hideTitle]
 
 # Event Loop
 
@@ -19,7 +19,7 @@ Here is how the whole process happens:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Asynchronous Programming in JS
 
@@ -51,7 +51,7 @@ function outer(callback) {
 outer(calculateTax); // outer is called with calculateTax as a callback
 ```
 
-- `promises` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data.
+- `promises`: A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data.
 
 ```js
 let promise = new Promise(function (resolve, reject) {
@@ -59,7 +59,7 @@ let promise = new Promise(function (resolve, reject) {
 });
 ```
 
-- `"Async" functions` - Fundamentally **built on promises**, but much easier to use. Allow for a **cleaner and more readable code**.
+- `Async` functions: Fundamentally **built on promises**, but much easier to use. Allow for a **cleaner and more readable code**.
 
 ```js
 async function getData(url) {
@@ -74,7 +74,7 @@ It is important to know that the `async` keyword **must be provided in front of 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Asynchronous Programming
 

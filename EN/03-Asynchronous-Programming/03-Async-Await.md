@@ -1,6 +1,6 @@
 # Async / Await
 
-[slide]
+[slide hideTitle]
 
 # Async Functions
 
@@ -10,9 +10,9 @@ They look like regular functions but use the event loop to work asynchronously.
 
 "Async" functions consist of two parts:
 
-- `async` keyword - Placed in **front of the function's declaration**. Specifies that the `await` keyword might be used with asynchronous operations inside the function.
+- `async` keyword: Placed in **front of the function's declaration**. Specifies that the `await` keyword might be used with asynchronous operations inside the function.
 
-- `await` keyword - **Used only in "async functions"**. If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
+- `await` keyword: **Used only in "async functions"**. If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
 
 Here is an example of how "async" functions are structured:
 
@@ -45,7 +45,7 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Async/Await vs Promise.then
 
@@ -91,7 +91,7 @@ Both examples above **do the same job**, the difference is just in **code readab
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Error Handling
 
@@ -127,11 +127,11 @@ It is **highly recommended** to add a `.catch()` method or a `catch` block even 
 Working with code **always produces errors** and it is **better for user experience** if they are **handled instead of being shown on the screen**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Sequential Execution
 
-The `await` keyword in "async" functions allows for the **execution of code in sequence**.
+The `await` keyword in `async` functions allows for the **execution of code in sequence**.
 
 When used **before an asynchronous operation**, the rest of the function will **pause and wait for the operation's return value**.
 
@@ -166,7 +166,7 @@ Sequential execution is best used when **the functions below rely on the data th
 This way **going inside the given function with an undefined variable is impossible**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Concurrent Execution
 

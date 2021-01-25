@@ -1,15 +1,14 @@
 # Lesson Introduction
 
-[slide]
-
-# Table of Contents
+[slide hideTitle]
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="497193095/28dd1c0e7f" default /]
 [stream language="RO" videoId="497193095/28dd1c0e7f"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Asynchronous programming**
 
@@ -25,8 +24,8 @@
 
 **3. Async / Await**
 
-- How "async" functions differ from promises.
+- How `async` functions differ from promises.
 
-- Benefits of "async" functions and when to use them.
+- Benefits of `async` functions and when to use them.
 
 [/slide]
