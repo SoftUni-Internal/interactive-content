@@ -12,13 +12,13 @@ Angular components are a subset of directives, always associated with a template
 
 Only one component can be instantiated for a given element in a template.
 
-A component must belong to an **NgModule** in order for it to be available to another component or application.
+A component must belong to a **NgModule** in order for it to be available to another component or application.
 
 **Attribute Directives**
 
-They change the appearance or behavior of an **element**, **component** or another **directive**.
+They change the appearance or behavior of an **element**, **component**, or another **directive**.
 
-For example the built-in **NgStyle** directive can change several element styles at the same time.
+For example, the built-in **NgStyle** directive can change several element styles at the same time.
 
 **Structural Directives**
 
@@ -26,7 +26,7 @@ Structural directives are responsible for the **HTML** layout.
 
 They change the DOM's structure, usually by **adding**, **removing**, or **manipulating** elements.
 
-Here are some of the built-in structural directives: **NgIf**, **NgFor** and **NgSwitch**.
+Here are some of the built-in structural directives: **NgIf**, **NgFor**, and **NgSwitch**.
 
 They are easy to recognize. An asterisk `*` precedes the directive attribute name as in this example.
 
@@ -40,7 +40,7 @@ They are easy to recognize. An asterisk `*` precedes the directive attribute nam
 
 # Directives Comparison
 
-Attribute directives look like **HTML** attributes and they only change the element they are added to.
+Attribute directives look like **HTML** attributes, and they only change the element they are added to.
 
 Examples: **ngStyle**, **ngClass**.
 
@@ -54,13 +54,13 @@ Examples: `*ngIf`, `*ngFor`.
 
 # Simple Attribute Directive
 
-An attribute directive requires building of a controller class annotated with `@Directive` decorator.
+An attribute directive requires the building of a controller class annotated with `@Directive` decorator.
 
 ```js
 import { Directive } from '@angular/core'
 ```
 
-Then the directive can be imported in the declarations array.
+Then the directive can be imported into the declarations array.
 
 The **selector** is surrounded with **square brackets** as in the example.
 
@@ -79,7 +79,7 @@ export class HighlightDirective {
 
 # Attach Styles To Referenced Elements
 
-Inject the referenced element and change its background color as it is shown in the example below.
+Inject the referenced element and change its background color as in the example below.
 
 ```js
 export class HighlightDirective implements OnInit {
@@ -92,7 +92,9 @@ export class HighlightDirective implements OnInit {
 
 **Note:** It is not a good practice to directly access DOM elements via **ElementRef**.
 
-Angular is not limited to run only on the browser, it can also run with **service workers**.
+Angular is not limited to run only on the browser. 
+
+Иt can also run with **service workers**.
 
 **Services Worker** is an environment where the DOM is **inaccessible**.
 
@@ -108,7 +110,7 @@ import { Renderer2 } from '@angular/core'
 
 # Renderer2 Usage
 
-To use **Renderer2** first inject it so that we can access its methods to change the DOM.
+To be able to use **Renderer2** inject it. This way, we can access its methods to change the DOM.
 
 ```js
 constructor( private renderer: Renderer2) { }

@@ -8,9 +8,11 @@ Reactive forms provide a model-driven approach to handling form inputs whose val
 
 Reactive forms are immutable. A change to the form state returns a new state, which maintains the integrity of the model between changes. 
 
-They are built around observable streams, where form inputs and values are provided as streams of input values, which can be accessed synchronously.
+They are built around observable streams, where form inputs and values are provided, as streams of input values, which can be accessed synchronously.
 
-Reactive forms also make testing easy, this way we are assured that our data is consistent and predictable when requested.
+Reactive forms also make testing easy.
+
+This way, we are assured that our data is consistent and predictable when requested.
 
 [/slide]
 
@@ -18,13 +20,13 @@ Reactive forms also make testing easy, this way we are assured that our data is 
 
 # Reactive Forms Module
 
-In order to use reactive forms we need the **Reactive Forms Module**.
+To use reactive forms, we need the **Reactive Forms Module**.
 
 ```js
 import { ReactiveFormsModule } from '@angular/forms'
 ```
 
-After importing the **Reactive Forms Module** we have access to all the needed directives like:
+After importing the **Reactive Forms Module**, we have access to all the needed directives like:
 - **formGroup**
 - **formControl** and **formControlName**
 - **formGroupName**
@@ -36,7 +38,7 @@ After importing the **Reactive Forms Module** we have access to all the needed d
 
 # The Component Class
 
-In the component class create instances of **FormGroup** and **FormControl** that we will bind later in the template.
+In the component class, create instances of **FormGroup** and **FormControl** that we will bind later in the template.
 
 By creating these controls in our component class, we get immediate access to listen for, **update**, and **validate** the state of the form input.
 
@@ -61,7 +63,7 @@ this.laptopForm = new FormGroup({
 
 # The Template
 
-In the template we have to mark the main **formGroup** and after that add **formControlName** to each form control.
+In the template, we have to mark the main **formGroup** and after that add **formControlName** to each form control.
 
 Here **formControlName** is the name of the key instance.
 
@@ -120,13 +122,13 @@ this.laptopForm = this.fb.group({
 
 # Validation
 
-Angular gives us the posibility to **add** or **remove** validators dynamically in reactive forms based on some user action.
+Angular gives us the possibility to **add** or **remove** validators dynamically in reactive forms based on some user action.
 
 - **Cross-field** validation: It is validating one form control based on the value of another.
 - We can also create custom validators with parameters:
 
-For that we create a **factory function**, which accepts the **parameter**. The **factory function** returns the **validator function**.
-- We can ajust rules at runtime.
+For that, we create a **factory function**, which accepts the **parameter**. The **factory function** returns the **validator function**.
+- We can adjust rules at runtime.
 
 [/slide]
 
@@ -153,7 +155,7 @@ this.laptopForm = this.fb.group({
 
 # Ajust the Template
 
-The **formGroup** directive has an errors property which can be used to **show** errors only when needed.
+The **formGroup** directive has an errors property, which can be used to **show** errors only when needed.
 
 ```html
 <div *ngIf="(laptopForm.get('processor').touched 
@@ -176,7 +178,7 @@ The **formGroup** directive has an errors property which can be used to **show**
 
 Using **Reactive Forms** we have the ability to **watch** and **react** to changes on form **groups** and form **controls**.
 
-Whenever a **value** of an input **changes** we can **subscribe** to that event and handle the **observable**.
+Whenever a **value** of an input **changes**, we can **subscribe** to that event and handle the **observable**.
 
 ```js
 this.laptopForm.get('os')

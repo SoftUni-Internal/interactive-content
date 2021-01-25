@@ -95,7 +95,9 @@ Clearing the errors is done with `setErrors(null)`.
 
 Create a new component **register-form-reactive** and build the same form using the reactive approach.
 
-Create your own **form groups** and **form controls**, optionally you can inject the **form builder**. 
+Create your own **form groups** and **form controls**. 
+
+Optionally you can inject the **form builder**. 
 
 Validate the fields using **Validators**.
 

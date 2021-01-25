@@ -28,9 +28,9 @@ Create a **Template-Driven** form that looks like this:
 
 # Import Bootstrap
 
-First install Bootstrap. 
+First, install Bootstrap. 
 
-It is the most popular open-source front-end framework for designing web sites and web apps.
+It is the most popular open-source front-end framework for designing websites and web apps.
 
 Install via **npm** and import it inside `angular.json` file.
 
@@ -49,7 +49,7 @@ Create **containers**, **form-groups**, **form-controls**, **style buttons** and
 
 # Introducing Forms Module
 
-Angular is module based and to handle forms, we need **Forms Module**.
+Angular is module-based, and to handle forms, we need **Forms Module**.
 
 Import the following in `app.module.ts`.
 
@@ -155,7 +155,7 @@ So, we need to include this in our html template.
 
 # The NgForm Directive
 
-Declare a template veriable inside the form.
+Declare a template variable inside the form.
 
 ```html
 <form #f="ngForm">
@@ -174,7 +174,7 @@ The **NgForm Directive** will also add additional features:
 
 # Access the Local Reference
 
-In Angular we can easily fetch a value of any input through local references.
+In Angular, we can easily fetch a value of any input through local references.
 
 Use `@ViewChild` to access the local reference.
 
@@ -216,9 +216,9 @@ onSubmit() {
 # Tracking Form State
 
 The **NgForm Directive** tracks if:
-- The user has touched the control.
-- The user has changed the control.
-- The control is valid.
+- The user has touched the control
+- The user has changed the control
+- The control is valid
 
 The **NgForm Directive** does not just track the state of the form control.
 
@@ -232,21 +232,21 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 Angular provides three pairs of classes for the state of the form control.
  
-First pair is **ng-touched** and **ng-untouched**.
+The first one is **ng-touched** and **ng-untouched**.
 
-This pair of classes defines the state of the control whether it has been touched or not.
+This pair of classes define the state of the control whether it has been touched or not.
 
 **ng-touched** will be applied if the condition is **true** and **ng-untouched** will be applied if **false**.
 
-Second pair is **ng-dirty** and **ng-pristine**.
+The second one is **ng-dirty** and **ng-pristine**.
 
-This pair of classes defines the state of the control whether its value has been changed or not.
+This pair of classes define the state of the control whether its value has been changed or not.
  
 **ng-dirty** will be applied if the condition is **true** and **ng-pristine** will be applied if **false**.
  
-Third pair is **ng-valid** and **ng-invalid**.
+The third one is **ng-valid** and **ng-invalid**.
 
-This pair of classes defines the state of the control whether its value is valid or not.
+This pair of classes define the state of the control, whether its value is valid or not.
  
 **ng-valid** will be applied if the condition is **true** and **ng-invalid** will be applied if **false**.
 
@@ -256,7 +256,7 @@ This pair of classes defines the state of the control whether its value is valid
 
 # Add Custom CSS For a Visual Feedback
 
-You can mark **required** fields and **invalid** data at the same time with a **colored** bar on the **left** of the **input box**.
+You can mark **required** fields and **invalid** data, at the same time with a **colored** bar on the **left** of the **input box**.
 
 ```css
 input.ng-valid {
@@ -275,7 +275,7 @@ input.ng-invalid.ng-touched {
 
 Add **HTML 5 attributes** to the input fields for validation.
 
-Angular tracks most attributes and changes the state depending on the user input.
+Angular tracks the attributes and changes the state depending on the user input.
 
 ```js
 <input type="text" class="form-control"
@@ -304,7 +304,7 @@ And here you can find some npm packages with [custom validators](https://www.npm
 
 # Displaying Error Messages - 1
 
-In case of error the user should receive a proper message with some explanation what went wrong.
+In case of error, the user should receive a proper message with some explanation of what went wrong.
 
 Use the control's state to reveal a helpful message.
 
@@ -390,7 +390,7 @@ Use it to validate a sub-group of your form separately from the rest of your for
 
 It is useful for input fields that have the same validation.
 
-For Example: Password and Confirm Password.
+For Example, Password and Confirm Password.
 
 ```html
 <div ngModelGroup="passData" #passData="ngModelGroup"></div>
@@ -424,7 +424,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 # Resseting the Form
 
-After a form is submitted resetting is necessary to clear all input fields and reset the track state.
+After a form is submitted, resetting is necessary to clear all input fields and reset the track state.
 
 ```js
 onSubmit() {
