@@ -2,7 +2,7 @@
 # Problem: Time Converter
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
-```
+\`\`\`
 function attachEventsListeners() {
     const inputDays = document.getElementById('days');
     const inputHours = document.getElementById('hours');
@@ -48,13 +48,13 @@ function attachEventsListeners() {
         inputSeconds.value = seconds;
     }
 }
-```
+\`\`\`
 [/code-editor]
 [task-description]
 # Description
 Create a program that **converts** different time units. 
 
-Your task is to add a **click** event listener to all `CONVERT` buttons. 
+Your task is to add a **click** event listener to all \`CONVERT\` buttons. 
 
 When a button is **clicked**, read the **corresponding** input field and **display** the rest of the values inside the other three inputs.
 
@@ -76,7 +76,7 @@ For example, if we type in 48 hours and click convert the days, the field value 
 [tests]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<main\>
         \<h1\>Time Converter\</h1\>
         \<div\>
@@ -100,7 +100,7 @@ document.body.innerHTML = `
             \<input id="secondsBtn" type="button" value="Convert"\>
         \</div\>
     \</main\>
-`;
+\`;
 
 result();
 \\$('\#days').val('1');
@@ -115,7 +115,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<main\>
         \<h1\>Time Converter\</h1\>
         \<div\>
@@ -139,7 +139,7 @@ document.body.innerHTML = `
             \<input id="secondsBtn" type="button" value="Convert"\>
         \</div\>
     \</main\>
-`;
+\`;
 
 result();
 \\$('\#hours').val('36');
@@ -154,7 +154,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<main\>
         \<h1\>Time Converter\</h1\>
         \<div\>
@@ -178,7 +178,7 @@ document.body.innerHTML = `
             \<input id="secondsBtn" type="button" value="Convert"\>
         \</div\>
     \</main\>
-`;
+\`;
 
 result();
 \\$('\#minutes').val('2880');
@@ -193,7 +193,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<main\>
         \<h1\>Time Converter\</h1\>
         \<div\>
@@ -217,7 +217,7 @@ document.body.innerHTML = `
             \<input id="secondsBtn" type="button" value="Convert"\>
         \</div\>
     \</main\>
-`;
+\`;
 
 result();
 \\$('\#seconds').val('388800');
