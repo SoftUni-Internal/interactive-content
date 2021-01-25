@@ -3,6 +3,7 @@
 [slide hideTitle]
 # Problem: Person
 [code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="java-unit-tests" executionStrategy="java-code" requiresInput]
+[code-upload allowedMemory="30" /]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -66,7 +67,6 @@ public class Main {
 | 10 | 10 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
