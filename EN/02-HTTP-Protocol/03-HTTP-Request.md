@@ -2,9 +2,7 @@
 
 # HTTP Request
 
-We already mentioned what is an **HTTP Request** but now let's have a look at it again in greater detail.
-
-A Request message sent by the client consist of several things:
+A **Request** message sent by the client consist of several things:
 
 1. **HTTP Request line**
     - Request method (GET / POST / PUT / DELETE / ...).
@@ -25,6 +23,10 @@ A Request message sent by the client consist of several things:
 (empty line)​
 <body>
 ```
+
+[/slide]
+
+[slide hideTitle]
 
 An example of an **HTTP GET** Request: 
 
@@ -47,4 +49,5 @@ username=mente&password=top*secret!​                //Http Request body.
 ```
 
 
-[/slide]
+
+[slide]

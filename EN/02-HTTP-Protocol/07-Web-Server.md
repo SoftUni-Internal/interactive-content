@@ -2,7 +2,7 @@
 
 # Web Server
 
-Now let's see what is a **WEB Server** and what job it does.
+What is a **WEB Server** and what job it does?
 
 A web server is a computer system that processes **HTTP requests** and returns **HTTP Responses based on the Requests**.
 

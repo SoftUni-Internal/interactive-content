@@ -85,7 +85,6 @@ User-Agent: Gecko/20100115 Firefox/3.6​
 <CRLF>
 ```
 
-
 - The following HTTP response (**301 Moved Permanently**) tells the browser to request another URL:
 
 ```java

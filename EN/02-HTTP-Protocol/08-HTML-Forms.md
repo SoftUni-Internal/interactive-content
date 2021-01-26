@@ -21,9 +21,11 @@ Example:
   <input type="submit" value="Go to homepage"/>
 </form>
 ```
+[/slide]
 
+[slide hideTitle]
 
-## Method Attribute
+# Method Attribute
 
 The method attribute defines the HTTP method used to send the form-data.
 
@@ -62,7 +64,11 @@ Content-Length: 10
 name=George
 ```
 
-## URL Encoded Form Data - Example
+[/slide]
+
+[slide hideTitle]
+
+# URL Encoded Form Data - Example
 
 ```java
 <form method="post">

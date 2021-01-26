@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Hypertext Transfer Protocol
+# HTTP Basics
 
 In the last lesson when we learned about the OSI Model, we mentioned HTTP and the fact that it works on the last **Application layer** of the protocol. 
 
@@ -17,12 +17,18 @@ Further, the server reads the **Request** gathers the needed data, and sends a *
 For instance, when we want to open a given page, the first request will be sent, asking the server to send us the **HTML** for the front page, the server will read our request and give us a **Response** with the needed **HTML** to load the page.
 
 One thing that we will mention but we will not cover is that **HTTP** is **stateless** meaning it can not make a connection between two **Requests**, there is a way for solving this problem but we will look at it in our next lesson.
+[/slide]
+
+[slide]
+
+# Hyper Text Tranfer Protocol
 
 Let's have a look at this graphic and try to remind ourselves about the different layers in the **OSI Model** and how they work together. 
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP.png" /]
 
 Just as the model suggests, every time that we want to communicate with the server as clients we send an **HTTP Request**, this request, following the different **OSI Model levels** reaches our server, using the same schema for translating back to human-readable **HTTP**.
+
 [/slide]
 
 [slide hideTitle]
@@ -64,8 +70,6 @@ Content-Length: 54​
 <html><title>Hello</title>​
 Welcome to our site</html>
 ```
-
-
 
 If you  start exploring the different data we send through the network when we communicate with a given website you will learn the methods faster. 
 

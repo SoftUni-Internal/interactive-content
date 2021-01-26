@@ -18,8 +18,6 @@ As of April 2020, 43.7% of all the websites support HTTP/2 (W3Techs statistics).
 
 # What's new? 
 
-Now, let's dive in and see the new features in **HTTP/2.0**
-
 The first thing to understand is that HTTP/2 is times faster than HTTP/1.1.
 
 This is achieved through several fundamental changes.
