@@ -18,12 +18,4 @@
 - Integrating GitHub with Heroku enables automatic deploys
   - The live version of your application automatically updates with the latest changes
 
-## In the next lesson you will learn:
-
-- Exam Preparation - Building a Single Page Application using:
-  - Express
-  - MongoDB 
-  - Mongoose 
-  - JWT
-
 [/slide]
