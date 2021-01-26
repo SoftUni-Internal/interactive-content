@@ -1,6 +1,6 @@
 # Homework: Cat Shelter
 
-[slide]
+[slide hideTitle]
 # Description
 
 _**Here is a**_ [link](https://mega.nz/file/nNhD1IBA#x5MaZXnKvOaHsgzcyirIoEXlMRZ741Ko0XkgcoASI0k) _**to the resources for this task**_.
@@ -19,7 +19,7 @@ It must contain the following functionality:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Functionality
 
@@ -68,7 +68,7 @@ Currently, these 5 breeds are created (**Bombay Cat**, **American Bobtail Cat**,
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Expected Behavior
 
 Adding a new cat breed called "**Persian cat**"
@@ -113,7 +113,7 @@ If we use the search bar to check all Persian cats, the result should be:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Routing
 
 
@@ -147,7 +147,7 @@ There are no strict rules of how the current application routing should look lik
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Setup IDE
 
 For starters, configure your IDE or text editor.
@@ -192,7 +192,7 @@ And move all **views** into the **views folder** like this:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Start the Server
 
 Go to the `index.js` file and start implementing the server.
@@ -212,7 +212,7 @@ When you do that, just open the Terminal with **(Ctrl + `)** and run the server 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Display the Home Page
 
 We will start implementing the logic for application in the following steps.
@@ -252,7 +252,7 @@ If we could not handle the current request, we will notify the server of that by
 What is left is to find the HTML5 page read it and send it as a response – here is how it could be done.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Hints
 
 Inside the if statement above we should locate the local index.html file (our home page) and store the path to it into a variable called **filePath** for instance.
@@ -306,7 +306,7 @@ Our **index.html** file but **without any styles**, if you open the **network ta
 In other words, the server does not have the functionality to serve static files. We will take care of that in the next section.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Serve Static Files
 
@@ -360,7 +360,7 @@ Start the web application again:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Implement Database
 
@@ -378,7 +378,7 @@ At the beginning, they will be an **empty array** (both files) but when we start
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Accessing All Views
 
@@ -422,7 +422,7 @@ Restart the server and go to the `localhost:3000/cats/add-cat`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Handling Post
 
@@ -474,7 +474,7 @@ The next step is to visualize all breeds from this json file, into the **select 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Making Custom Templates
 
 To continue, we must create **2 templates**.
@@ -541,7 +541,7 @@ And via `readFile()` and `writeFile()` functions in `fs module` you can get all 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Making Custom Templates: Example
 
 Here is the example:
@@ -613,7 +613,7 @@ If you do that the result will be:
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-75.jpg" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Edit and Delete
 
@@ -665,7 +665,7 @@ The steps are the same:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Search
 
