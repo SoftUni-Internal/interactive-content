@@ -26,6 +26,11 @@ function solve(num1, num2) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => c(...i);
+```
+[/code-adapter]
 [task-description]
 # Description
 

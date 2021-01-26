@@ -2,7 +2,7 @@
 # Problem: Time Converter
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
-\`\`\`
+```
 function attachEventsListeners() {
     const inputDays = document.getElementById('days');
     const inputHours = document.getElementById('hours');
@@ -48,7 +48,7 @@ function attachEventsListeners() {
         inputSeconds.value = seconds;
     }
 }
-\`\`\`
+```
 [/code-editor]
 [task-description]
 # Description
