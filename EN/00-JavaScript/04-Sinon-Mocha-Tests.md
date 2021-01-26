@@ -2,11 +2,7 @@
 
 # javascript-code-against-unit-tests-with-mocha
 [code-task title="Problem: Repository" taskId="Js-Advanced-Repository" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
-[code-editor language=javascript]
-```
 
-```
-[/code-editor]
 [task-description]
 ## Description
 Problem 2.
