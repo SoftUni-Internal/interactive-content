@@ -1,10 +1,10 @@
 # Routing with page.js
 
-[slide]
+[slide hideTitle]
 
 # Introduction to page.js
 
-`Page.js` is a client-side router, which uses **string\-to\-regexp** conversion.
+`Page.js` is a client-side router, which uses **string-to-regexp** conversion.
 
 With pageJs, we can pass multiple parameters.
 

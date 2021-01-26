@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Team Manager
 
@@ -8,7 +8,7 @@ You can download the resources for this problem from [here](https://mega.nz/file
 
 Create a JS application for managing teams.
 
-Use Handlebars for rendering, `page.js` for routing and a remote database as a backend provider.
+Use Handlebars for rendering, `page.js` for routing, and a remote database as a backend provider.
 
 Structure your work so that it is easy to manage.
 
@@ -16,15 +16,15 @@ The example is styled using [Bootstrap](https://getbootstrap.com/).
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # App Structure
 
-- **Home Page** \- show relevant info, depending on the status of the user.
+- **Home Page**: show relevant info, depending on the status of the user.
 
-- **Catalog** \- a list of all registered teams.
+- **Catalog**: a list of all registered teams.
 
-- **About** \- dummy page that would hold information about the app.
+- **About**: dummy page that would hold information about the app.
 
 - **Register User**
 
@@ -32,17 +32,17 @@ The example is styled using [Bootstrap](https://getbootstrap.com/).
 
 - **Edit Team**
 
-- **View Team Details** \- a detailed page that shows all members of the team and management controls.
+- **View Team Details**:- a detailed page that shows all members of the team and management controls.
 
 Create a header that is shared across all pages and place links to the relevant sections in it.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # CRUD Operations
 
-The app must support user registration, login and logout.
+The app must support user registration, login, and logout.
 
 Store the user credential in **session storage**.
 
@@ -58,10 +58,10 @@ He **cannot** create a team **again** unless he leaves the newly created team.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Entity Structure
 
-A team has a **name** and a **comment** that are displayed while browsing.
+A team has a **name** and a **comment** that is displayed while browsing.
 
 A **user** has a username.
 
@@ -82,7 +82,7 @@ When determining whether a person is the owner of a team, look at the property `
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Screenshots
 
@@ -116,7 +116,7 @@ Create team and edit team forms are identical.
 
 [image assetsSrc="JS-Applications-Routing-10.png" /]
 
-Team details with option to join the team and a list of all current members.
+Team details with the option to join the team and a list of all current members.
 
 [image assetsSrc="JS-Applications-Routing-11.png" /]
 
