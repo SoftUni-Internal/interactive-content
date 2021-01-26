@@ -8,7 +8,7 @@
 [stream language="RO" videoId="497190340/4e18d6d41f"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Modules**
 - Exporting and importing parts of an application

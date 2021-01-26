@@ -1,5 +1,4 @@
 [slide hideTitle]
-
 # Summary
 
 [vimeo-video]
@@ -7,7 +6,7 @@
 [stream language="RO" videoId="497190312/33c101ab06"  /]
 [/video-vimeo]
 
-# In this lesson you learned:
+# In this lesson you learnt:
 
 - What are modules in JavaScript?
 
@@ -54,7 +53,7 @@ module.exports = 'Hello world!';
 import * as myModule from './myModule.js'
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - What is HTTP
 
