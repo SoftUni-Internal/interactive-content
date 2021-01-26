@@ -67,3 +67,9 @@ De fapt, rezultatul din program este următorul mesaj text:
 Hello Java
 ```
 [/slide]
+
+[slide hideTitle]
+
+# Exemplu: Crearea unei aplicații pentru consolă în Intellij IDEA
+
+[/slide]

@@ -1,5 +1,10 @@
 [slide hideTitle]
+
 # Programming Languages
+Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
+
+0:00 - 1:20
+
 A programming language is an artificial language (syntax for expression), meant for giving commands that we want the computer to **read**, **process** and **execute**.
 
 Using programming languages, we write **sequences of commands** (programs), which define what the computer should do. 
@@ -10,12 +15,12 @@ These languages differ in their philosophy, syntax, purpose, programming constru
 
 The execution of computer programs can be done with a **compiler** or with an **interpreter**.
 
-# Compilers
+## Compilers
 The **compiler** translates the code from programming language to **machine code**, as for each of the constructions (commands) in the code it chooses a proper, previously prepared fragment of machine code and in the meantime it **checks** the text of the program for **errors**. 
 
 Together, the compiled fragments comprise the program into a machine code, as the microprocessor of the computer expects it.
 
-# Interpreters
+## Interpreters
 The **interpreter** is "a **program for executing programs**", written in some programming language. 
 
 It executes the commands in the program **one after another**, as it understands not only a single command and sequences of commands, but also other language constructions.
@@ -23,6 +28,11 @@ It executes the commands in the program **one after another**, as it understands
 
 [slide hideTitle]
 # The Java Language
+
+Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
+
+1:21 - 2:28
+
 **Java** is modern, general purpose programming language.
 
 Extremely versatile. You can create everything: from Web and mobile apps to games, back-end functionality.
@@ -38,6 +48,11 @@ Combines **procedural**, **object-oriented** and **functional programming** with
 
 [slide hideTitle]
 # Java Compilation and Execution
+
+Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
+
+2:29 - 3:38
+
 As we have already mentioned, a program is **a sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to obtain certain result.
 
 A Java program is written in a text format, and the text of the program is called a **source code**. 
@@ -48,8 +63,15 @@ The process of **compilation** of the code before its execution is used only in 
 
 With **scripts and interpreted languages**, like JavaScript, Python and PHP, the source code gets executed step by step by an interpreter.
 
+[/slide]
+
+[slide hideTitle]
+
 # JDK and JRE
-JDK – Java Development Toolkit
+
+Java-basics-introduction-to-programming-14-15-JDK-JRE
+
+## JDK – Java Development Toolkit
 
 * Java software development kit (Java SDK) – toolset for developers
 * Includes a **virtual machine** (JVM), a **Java compiler** (javac) and other developer tools

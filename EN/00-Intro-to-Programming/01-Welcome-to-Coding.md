@@ -1,6 +1,13 @@
 [slide hideTitle]
 # What is Coding
 
+Video-Java-basics-introduction-to-programming-3-4-What-is-coding
+
+Video-Java-basics-introduction-to-programming-3-4-What-is-coding-Demo-1 +
+
+Video-Java-basics-introduction-to-programming-3-4-What-is-coding-Demo-2 +
+
+
 **To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
 
 When the commands are one after another, they are called **a computer program**. 
@@ -14,7 +21,27 @@ System.out.println("I am coding");
 [/slide]
 
 [slide hideTitle]
+
+# Example: Simple Commands
+
+Java-basics-introduction-to-programming-5-Commands-in-Java-examples +
+
+Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-1 + 
+
+Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-2 + 
+
+Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-3
+
+
+[/slide]
+
+[slide hideTitle]
 # Computer Programs
+
+Java-basics-introduction-to-programming-7-Computer-program-example +
+
+Java-basics-introduction-to-programming-7-Computer-program-example-demo-1 + 
+
 Computer programs represent **a sequence of commands** that are written in certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
 Example of **computer program** in Java:
@@ -49,7 +76,20 @@ Therefore, we are going to get familiar with the syntax and the semantics of the
 [/slide]
 
 [slide hideTitle]
+
+# Example: Complete Computer Program
+
+Java-basics-introduction-to-programming-8-complete-computer-program + 
+
+Java-basics-introduction-to-programming-8-complete-computer-program-Demo-1
+
+[/slide]
+
+[slide hideTitle]
 # Algorithms
+
+Java-basics-introduction-to-programming-6-programming-and-algorithms
+
 Computer programs usually execute some algorithm. 
 
 **Algorithms** are a **sequence of steps**, necessary for the completion of a certain task and for gaining some expected result, something like a "recipe".
@@ -69,6 +109,11 @@ For convenience when creating programs, for writing programming code, for execut
 
 [slide hideTitle]
 # Console-Based Java Program – Example
+
+Java-basics-introduction-to-programming-9-console-based-java-program-example + 
+
+Java-basics-introduction-to-programming-9-console-based-java-program-example-demo-1
+
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 
 This is a program of 3 consecutive commands:

@@ -1,5 +1,10 @@
 [slide hideTitle]
 # Integrated Development Environments (IDE)
+
+Java-basics-introduction-to-programming-16-19-IDEs
+
+0:00 - 1:35
+
 In order to program we need an **Integrated Development Environment** (IDE). 
 
 **An environment for development** (Integrated Development Environment – **IDE**) is a combination of traditional tools for development of software applications. 
@@ -25,6 +30,11 @@ This an example how a development IDE may look (IntelliJ IDEA IDE for Java):
 
 [slide hideTitle]
 # Installing IntelliJ IDEA
+
+Java-basics-introduction-to-programming-16-19-IDEs
+
+0:00 - 0:53
+
 We begin with the installation of the integrated environment **IntelliJ IDEA** (Community, version 2019.2.1, latest as of August 2019). 
 
 Installing later versions of IntelliJ IDEA (like IntelliJ IDEA 2020 and IntelliJ IDEA 2021) should be very similar.
@@ -71,6 +81,11 @@ That's all. You are ready to work with IntelliJ IDEA.
 
 [slide hideTitle]
 # Project Solutions and Projects in IntelliJ IDEA
+
+Java-basics-introduction-to-programming-16-19-IDEs
+
+0:54 - 1:12
+
 Before we start working with IntelliJ IDEA, it is necessary to get familiar with the concepts of a **IntelliJ IDEA Project** and a **IntelliJ IDEA Modules**, which are an inevitable part of it.
 
 [image assetsSrc="intro-to-programming-modules-and-projects.png" /]
@@ -100,6 +115,11 @@ For **smaller projects** IntelliJ Projects and IntelliJ Modules are **complicati
 
 [slide hideTitle]
 # Development Environments: Desktop and Online
+
+Java-basics-introduction-to-programming-16-19-IDEs
+
+1:36 - 2:14
+
 Install JetBrains IntelliJ IDEA Community
 
 * https://www.jetbrains.com/idea/download/

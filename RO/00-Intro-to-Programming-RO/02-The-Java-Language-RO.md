@@ -1,5 +1,6 @@
 [slide hideTitle]
 # Limbajele de programare
+
 Un limbaj de programare este un limbaj artificial (sintaxa pentru expresii), care are ca scop să dea comenzi pe care vrem să le **citească**, **proceseze** și **execute** computerul.
 
 Utilizând limbajele de programare, scriem **secvențe de comenzi** (programe), care definesc ceea ce ar trebui să facă computerul. 
@@ -10,12 +11,12 @@ Aceste limbaje diferă din perspectiva filosofiei lor, a sintaxei, a scopului, a
 
 Execuția unui program de computer poate fi realizată cu un **compilator** (**compiler**) sau cu un **interpret** (**interpreter**).
 
-# Compilatorii
+## Compilatorii
 **Compilatorul** traduce codul din limbajul de programare într-un **cod de mașină**, iar pentru fiecare dintre construcții (comenzi) din codul respectiv alege un fragment de cod al mașinii adecvat, pregătit dinainte și între timp **verifică** textul programului pentru a identifica **erori**.
 
 Împreună, fragmentele compilate transformă programul într-un cod mașină, așa cum se așteaptă microprocesorul computerului să îl primească.
 
-# Interpreții
+## Interpreții
 **Interpretul** este un **program pentru executarea de programe**", scris într-un anumit limbaj de programare. 
 
 El execută comenzile din program **una după cealaltă**, întrucât înțelege nu doar o singură comandă sau secvență de comenzi, ci înțelege, de asemenea, și alte construcții de limbaj.
@@ -47,6 +48,10 @@ Acesta este compilat într-un **fișier executabil** sau este **executat direct*
 Procesul **compilării** codului înainte de executarea sa este utilizat doar în limbaje compilate precum C#, Java and C++. 
 
 Cu **scripturi și limbaje interpretate**, precum JavaScript, Python și PHP, codul sursă se execută pas cu pas de un interpret.
+
+[/slide]
+
+[slide hideTitle]
 
 # JDK și JRE
 JDK este prescurtarea pentru Java Development Toolkit - kitul de dezvoltare în Java

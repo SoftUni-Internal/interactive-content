@@ -1,5 +1,10 @@
 [slide hideTitle]
 # Console App in IntelliJ IDEA
+
+Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
+
+0:00 - 1:12
+
 We already have IntelliJ IDEA and we can start it.
 
 Create new Console Application in IntelliJ IDEA: `[New Project]` -> `[Java]` -> `[Template Command Line App]` -> `[Finish]`
@@ -22,6 +27,11 @@ Click [New] and locate your JDK installation:
 
 [slide hideTitle]
 # Writing the Program Code
+
+Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
+
+1:13 - 2:05
+
 The commands of the program are written in `main(String[] args)`, between the opening and the closing parentheses `{ }`.
 
 This is the main method (action), that is being executed with the start of a Java program.
@@ -52,6 +62,11 @@ More technically explained, `out` is a static member in the `System` class, bein
 
 [slide hideTitle]
 # Starting the Program
+
+Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
+
+2:06 - 2:46
+
 To start the program, press `[Ctrl + Shift + F10]`. If there aren't any errors, the program will be executed. 
 
 The result will appear in the console (terminal window):
@@ -66,4 +81,11 @@ Actually, the output from the program is the following text message:
 ```
 Hello Java
 ```
+[/slide]
+
+[slide hideTitle]
+# Example: Creating Console App in IntelliJ IDEA
+
+Java-basics-introduction-to-programming-26-30-Console-app-in-inteliJ-IDEA-demo
+
 [/slide]

@@ -11,7 +11,16 @@ Exemple de comenzi pentru calculator:
 ```java live
 System.out.println("I am coding");
 ```
+
 [/slide]
+
+[slide hideTitle]
+
+# Example: Simple Commands
+
+
+[/slide]
+
 
 [slide hideTitle]
 # Programele de calculator
@@ -46,6 +55,12 @@ Acum, să presupunem că limbajul Java ne cere întreg codul de mai sus pentru a
 Pentru a scrie comenzi, ar trebui să cunoaștem **sintaxa și semantica limbajului** cu care lucrăm, în cazul nostru – **Java**. 
 
 Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și cu ale programării în general, învățând pas cu pas să scriem de la cele mai simple construcții de programare până la cele mai complexe.
+[/slide]
+
+[slide hideTitle]
+
+# Example: Complete Computer Program
+
 [/slide]
 
 [slide hideTitle]
