@@ -1,6 +1,6 @@
 # Programmability
 
-[slide]
+[slide hideTitle]
 
 # Indexes
 
@@ -8,25 +8,27 @@ A database index is a data structure that improves the speed of operations in a 
 
 Indexes can be created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records.
 
-While creating index, it should be taken into consideration which of the columns will be used to make SQL queries and create one or more indexes on those columns.
+While creating an index, it should be taken into consideration which of the columns will be used to make SQL queries and create one or more indexes on those columns.
 
 There are two types of indexes: **Clustered** and **Non-Clustered**.
 
-**Clustered** indexes are bound to the **primary key** and they are used to physically sort data.
+**Clustered** indexes are bound to the **primary key** and are used to physically sort data.
 
-**Non-Clustered** indexes can be bound to any field and they are used to reference the primary index.
+**Non-Clustered** indexes can be bound to any field, and they are used to reference the primary index.
 
 [image assetsSrc="Introduction-To-Databases(12).png" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Views
 
-Views are prepared queries for displaying sections of our data. To create a new view use the `CREATE VIEW` statement.
+Views are prepared queries for displaying sections of our data. 
 
-Once we execute the `CREATE VIEW` statement, MySQL creates the view and stores it in the database, so we can use it later if we need it.
+Use the `CREATE VIEW` statement to create a new view.
+
+Once we execute the `CREATE VIEW` statement, MySQL creates the view and stores it in the database so we can use it later if we need it.
 
 Example of create view statement:
 
@@ -41,11 +43,11 @@ SELECT * FROM v_employee_names
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Procedures, FunctionsAnd Triggers
 
-A database can further be customized with reusable code and for this we can use **Procedures**, **Functions** and **Triggers**.
+A database can be customized, with reusable code, and for this, we can use **Procedures**, **Functions**, and **Triggers**.
 
 A procedure is like a subprogram in a regular scripting language, stored in a database. A MySQL procedure has a **name**, a **parameter list**, and **SQL statement(s)**.
 

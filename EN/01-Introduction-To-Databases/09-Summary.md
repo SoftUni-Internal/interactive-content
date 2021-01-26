@@ -1,6 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
+
+## In this lesson you learnt:
 
 - We communicate with the DB engine via SQL.
     ```Java
@@ -20,7 +22,7 @@
     - MySQL Workbench, phpMyAdmin etc.
 - SQL provides greater control.
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Data Types in MySQL Server​
 - Database Modeling​

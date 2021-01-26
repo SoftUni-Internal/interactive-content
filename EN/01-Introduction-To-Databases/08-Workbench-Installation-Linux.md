@@ -1,6 +1,6 @@
 # Workbench
 
-[slide]
+[slide hideTitle]
 
 # Installation Guidelines For Linux
 
@@ -10,7 +10,7 @@ This document consists of guidelines for installing MySQL server.
 
 Open the terminal and write the following:
 - sudo apt update
-- sudo apt install mysql-server
+- sudo apt install MySQL-server
 - sudo mysql_secure_installation
 
 After writing the last command, it will ask you for a password. 

@@ -1,6 +1,6 @@
 # MySQL
 
-[slide]
+[slide hideTitle]
 
 # MySQL
 
@@ -21,7 +21,7 @@ Here are some links for downloading MySQL Server:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # MySQL Server Architecture
 
@@ -31,21 +31,21 @@ Thus, although there are different capabilities across different storage engines
 
 The MySQL storage engine architecture enables us to select a specialized storage engine for a particular application need while being completely shielded from the need to manage any specific application coding requirements. 
 
-In the logical storage we have our instances, each one consisting of a database with its tables.
+In the logical storage, we have our instances, each one consisting of a database with its tables.
 
-In the phisical storage we have our data files and logs.
+In the physical storage, we have our data files and logs.
 
 [image assetsSrc="Introduction-To-Databases(5).png" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Database Table Elements
 
-The table is the main building block of any database, where each row is called record or entity. Columns define the type of data they contain.
+The table is the main building block of any database, where each row is called a record or entity. Columns define the type of data they contain.
 
-Additionaly in a relational database such as MySQL we have **primary** keys and **secondary** keys which we use to define the relation between the tables.
+Additionally, in a relational database such as MySQL, we have **primary** keys and **secondary** keys, which we use to define the relationship between the tables.
 
 In the example below we have **Customer** table with **primary** key **customer_id** and **secondary** key **city_id**.
 

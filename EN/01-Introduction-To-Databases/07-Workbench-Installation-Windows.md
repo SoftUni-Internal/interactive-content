@@ -1,6 +1,6 @@
 # Workbench
 
-[slide]
+[slide hideTitle]
 
 # Installation Guidelines For Windows
 
@@ -8,9 +8,9 @@ This document consists of guidelines for installing MySQL server. The installati
 
 **Step 1. Download MySQL Community Server**
 
-Go to the MySQL web site and download MySQL Community Server. 
+Go to the MySQL website, and download MySQL Community Server. 
 
-The link given above should redirect you to the official MySQL webpage where you can find a link to downloading the MySQL Community Server Installer.
+The link given above should redirect you to the official MySQL webpage, where you can find a link to downloading the MySQL Community Server Installer.
 
 Click the "Download" button corresponding to your OS.
 
@@ -18,7 +18,7 @@ Click the "Download" button corresponding to your OS.
 
 **Step 2. Install the MySQL Community Server**
 
-Open installation file and choose the **Setup type** to be **Custom**. Then click **Next**.
+Open the installation file and choose the **Setup type** to be **Custom**. Then click **Next**.
 
 [image assetsSrc="Introduction-To-Databases(14).png" /]
 
@@ -28,7 +28,7 @@ All other features are optional and will not be needed for that course.
 
 [image assetsSrc="Introduction-To-Databases(15).png" /]
 
-Just click **Execute** and the setup will install these features.
+Just click **Execute**, and the setup will install these features.
 
 [image assetsSrc="Introduction-To-Databases(16).png" /]
 
@@ -44,9 +44,9 @@ Set password to the Root account.
 
 [image assetsSrc="Introduction-To-Databases(19).png" /]
 
-Here you can set the **MySQL Server** to run as **Windows Service** and to start automatically at Windows start up. 
+Here you can set the **MySQL Server** to run as **Windows Service** and to start automatically at Windows startup. 
 
-This is the recommended way. Otherwise you must start up MySQL every time before working with the database.
+This is the recommended way. Otherwise, you must start up MySQL every time before working with the database.
 
 [image assetsSrc="Introduction-To-Databases(20).png" /]
 

@@ -1,6 +1,6 @@
 # Structured Query Language
 
-[slide]
+[slide hideTitle]
 
 # Structured Query Language 1
 
@@ -23,7 +23,7 @@ With SQL we can:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Structured Query Language 2
 
@@ -37,7 +37,7 @@ SQL is subdivided into several language elements:
 
 Here is an example:
 
-`UPDATE employees` is a update clause, `salary * 1.1` is an expression, `job_title = "Cashier"` is a predicate and finally the intire piece of code is a statement.
+`UPDATE employees` is an update clause, `salary * 1.1` is an expression, `job_title = "Cashier"` is a predicate, and finally, the entire piece of code is a statement.
 
 ```java
 UPDATE employees
@@ -47,7 +47,7 @@ WHERE job_title = "Cashier";
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Structured Query Language 3
 
@@ -64,28 +64,28 @@ We can logically divide SQL in four sections:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Structured Query Language 4
 
 **DDL**
 
-Specifies the schema of each relation, attributes it carry and also specifies the domain of those attributes.
+Specifies the schema of each relation, attributes it carry, also specifies the domain of those attributes.
 
-Specifies the integrity constraint which makes sure that any changes made to the database will not affect the consistency of data.
+Specifies the integrity constraint, which makes sure that any changes made to the database will not affect the consistency of the data.
 
-Maintains the set of indices for each relation which let you retrieve the records from the database quickly.
+Maintains the set of indices for each relation, and lets you retrieve the records from the database quickly.
 
-Maintains the information about the security of data in the database and it also keeps the information regarding the authorization for each relation in the database.
+Maintains the information about the security of data in the database, and keeps the information regarding the authorization for each relation in the database.
 
 It also describes the storage structure of each relation on the hard disk.
 
 Examples of DDL commands:
 
-- Create - Creates a new table in a database.
-- Alter - Modifies a table in a database.
-- Drop - Drop a column or a table from an existing database.
-- Truncate - Erase all rows in a table.
+- **Create** - Creates a new table in a database.
+- **Alter** - Modifies a table in a database.
+- **Drop** - Drop a column or a table from an existing database.
+- **Truncate** - Erase all rows in a table.
 
 **DML**
 
@@ -93,18 +93,18 @@ The SQL commands that deals with the manipulation of data present in the databas
 
 Examples of DML commands:
 
-- INSERT - Used to insert data into a table.
-- UPDATE - Used to update existing data within a table.
-- DELETE - Used to delete records from a database table.
+- **INSERT** - Used to insert data into a table.
+- **UPDATE** - Used to update existing data within a table.
+- **DELETE** - Used to delete records from a database table.
 
 **DCL**
 
-DCL includes commands such as **GRANT**, **REVOKE** and **DENY** which mainly deal with the rights, permissions and other controls of the database system.
+DCL includes commands such as, **GRANT**, **REVOKE** and **DENY** which mainly deal with the rights, permissions and other controls of the database system.
 
 Examples of DCL commands:
 
-- GRANT - Gives user’s access privileges to database.
-- REVOKE - Withdraw user’s access privileges given by using the **GRANT** command.
+- **GRANT** - Gives user’s access privileges to database.
+- **REVOKE** - Withdraw user’s access privileges given by using the **GRANT** command.
 
 **TCL**
 
@@ -112,8 +112,8 @@ TCL commands deal with the transaction within the database.
 
 Examples of TCL commands:
 
-- COMMIT - Commits a Transaction.
-- ROLLBACK - Rollbacks a transaction in case of any error occurs.
-- SAVEPOINT - Sets a savepoint within a transaction.
+- **COMMIT** - Commits a Transaction.
+- **ROLLBACK** - Rollbacks a transaction in case of any error occurs.
+- **SAVEPOINT** - Sets a savepoint within a transaction.
 
 [/slide]
