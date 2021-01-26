@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# HTTP2
+# HTTP/2
 
 **HTTP/2.0** is the first and major revision of the Hypertext Transfer Protocol since 1997 when we received the HTTP/1.1 version.
 
@@ -28,11 +28,11 @@ At its core **HTTP/2** is meant to erase the need of maintaining complex server 
 
 **HTTP/2** has a binary framing layer which **encodes the requests/responses into binary format and cuts them into smaller packets of information**, 
 
-    which greatly increases the flexibility of data transfer, 
+which greatly increases the flexibility of data transfer, 
 
-    whereas in HTTP/1.1 the whole **response/request** is send together with a new line delimiter.
+whereas in HTTP/1.1 the whole **response/request** is send together with a new line delimiter.
 
-    [image assetsSrc="02-Java-Spring-Fund-HTTP(14).png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP(14).png" /]
 
 
 The updated protocol has several new important elements:
