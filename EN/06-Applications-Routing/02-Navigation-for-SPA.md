@@ -1,6 +1,6 @@
 # Navigation for SPA
 
-[slide]
+[slide hideTitle]
 # How Routers Work
 
 The main job of a **router** is to load the right content for a specific location, also called URL.
@@ -15,15 +15,15 @@ When we are using the **router**, we can give the **user** a better **experience
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hash Based Routing
 
-We use **hash based** routing when we want to deep link a section of an application.
+We use **hash-based** routing when we want to deep link a section of an application.
 
 This type of navigation simulates the loading of different content.
 
-Also, **hash based routing** does **not** reload the page.
+Also, **hash-based routing** does **not** reload the page.
 
 To extract hash from the url we use:
 
@@ -86,22 +86,21 @@ After that, we set a **timeout** to 200ms, at which the function to be called.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Push Based Routing
 
-The push based routing is the more modern way to handle navigation.
+Push-based routing is the more modern way to handle navigation.
 
 This way allows us to show real **server-side data** this can help with SEO and Facebook Open Graph.
 
-The push based routing helps with **analytics** and also fix **hash tag issues**.
+The push-based routing helps with **analytics** and also fix **hashtag issues**.
 
-In this way, we can use the hash tag for what it is made, for the deep linking of sections of a long page.
+In this way, we can use the hashtag for what it is made, for the deep linking of sections of a long page.
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # History API
 
 The History API provides access to the browser **history** object.
@@ -118,7 +117,7 @@ They work in combination with the **popstate** event.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The PushState Method
 
@@ -132,20 +131,20 @@ This method takes three parameters.
 
 - The second parameter is **Title** this one is ignored by most of the browser nowadays.
 
-- The third one is the **URL**, which is the new history entry, and it must be from the **same origin** as the current URL.
+- The third one is the **URL**, which is the new history entry, and it must be from the **same-origin** as the current URL.
 
 ```js
 let stateObj = { facNum: '56789123' };
 history.pushState(stateObj, '', 'student.html');
 ```
 
-In this example we have an object, which is the first parameter.
+In this example, we have an object, which is the first parameter.
 
 And After we call the `history.pushState()` method and pass the parameters.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The ReplaceState Method
 
@@ -172,13 +171,13 @@ let stateObj = { facNum: '56789123' };
 history.replaceState(stateObj, '', 'newStudent.html');
 ```
 
-In this example we have an object, which is the first parameter.
+In this example, we have an object, which is the first parameter.
 
 And After we call the `history.replaceState()` method and pass the parameters, it will update the current entry.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Popstate Event
 

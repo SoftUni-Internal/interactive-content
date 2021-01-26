@@ -1,9 +1,9 @@
 # Routing Basics
 
-[slide]
-# Multi Page Applications
+[slide hideTitle]
+# Multi-Page Applications
 
-The multi page applications reload the entire page when a user interacts with the app.
+The multi-page applications reload the entire page when a user interacts with the app.
 
 Also, the data is exchanged when a new page is **requested**.
 
@@ -13,11 +13,11 @@ We can define that an application is a multi\-page application when the **reload
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Multi Page Pros and Cons
+# Multi-Page Pros and Cons
 
-Let us have a look at some of the **pros** and **cons** of the multi page application.
+Let us have a look at some of the **pros** and **cons** of the multi-page application.
 
 We will start with the pros:
 
@@ -33,11 +33,11 @@ Now let us have a look at their **cons**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Single Page Application
 
-Single-Page Application or **SPA** is the evolution of the multi page application.
+Single-Page Application or **SPA** is the evolution of the multi-page application.
 
 SPAs **dynamically update** the content of the page, instead of **reloading** the whole page.
 
@@ -57,7 +57,7 @@ Also, location\-based ones need a special object called **Router**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SPA Pros and Cons
 
@@ -85,14 +85,14 @@ Now, let us see what are the cons:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multi and Single Page Application Lifecycle
 
-We will start with **Multi Page Application's** lifecycle.
+We will start with **Multi-Page Application's** lifecycle.
 
 [image assetsSrc="JS-Applications-Routing.png" /]
 
-In this image, we see that the user sends a request, and the server responses with HTML.
+In this image, we see that the user sends a request and the server responses with HTML.
 
 But on every response, the page reloads.
 
@@ -108,7 +108,7 @@ The page updates itself without reloading, which is a lot faster.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Navigation Types
 
@@ -116,7 +116,7 @@ The types of navigation are the standard and the navigation using **Routing**.
 
 In the standard navigation, we use hyperlinks.
 
-And we are using it in **Multi Page Applications** because the standard navigation reloads the page.
+And we are using it in **Multi-Page Applications** because the standard navigation reloads the page.
 
 [image assetsSrc="JS-Applications-Routing-2.png" /]
 
@@ -132,7 +132,7 @@ That is why on user's actions, the **reload icon** does not get triggered.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Query Parameters
 
@@ -158,6 +158,6 @@ The first part is the **protocol** that is used.
 
 After we have the **hostname** and the **pathname**.
 
-After them are the query parameters, in this case, they are the key, its value, and the tag that indicates that the item is trending.
+After they are the query parameters, in this case, they are the key, its value, and the tag that indicates that the item is trending.
 
 [/slide]

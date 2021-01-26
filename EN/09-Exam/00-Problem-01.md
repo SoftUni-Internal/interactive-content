@@ -1,6 +1,6 @@
 # JS Applications Exam: the SoftWiki SPA
 
-[slide]
+[slide hideTitle]
 # Description
 
 [code-task title="SoftWiki SPA" taskId="js-applications-exam-softwiki-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

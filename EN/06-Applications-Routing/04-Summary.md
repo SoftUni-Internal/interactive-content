@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson you learned:
+
+# In this lesson you learnt:
 
 -  Multi Page Application
 
@@ -34,7 +34,7 @@
 
       -  it gives us also methods like `back()`, `forward()`, `go()` and etc.
 
-## In the next lesson you will learn about:
+## In the next lesson you will learn:
 
 -  Design Patterns:
 
