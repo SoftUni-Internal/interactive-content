@@ -1,6 +1,5 @@
-# Summary
-
 [slide hideTitle]
+# Summary
 
 ## In this lesson you learnt:
 
