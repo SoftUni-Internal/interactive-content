@@ -2,6 +2,7 @@
 
 [slide hideTitle]
 # How does Templating work?
+
 [vimeo-video]
 [stream language="EN" videoId="497948726/d3414251b3" default /]
 [stream language="RO" videoId="497948726/d3414251b3"  /]

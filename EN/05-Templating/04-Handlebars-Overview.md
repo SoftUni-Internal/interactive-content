@@ -59,7 +59,7 @@ You can also use Handlebars **without installing it locally**, with the help of 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Expressions
 
@@ -195,7 +195,7 @@ Lastly, we **call the compiled template** with our variables and save the output
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # For-Loops
 [vimeo-video]
@@ -221,7 +221,7 @@ It will be **rendered** in case the given **array** is **empty**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Conditional Statements
 [vimeo-video]
 [stream language="EN" videoId="497950460/b05f75e27e" default /]
@@ -248,7 +248,7 @@ The `#if` helper, followed by a condition is used to achieve this:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Partials and HTML Escaping
 
@@ -285,7 +285,7 @@ If you do not want Handlebars to **escape a value**, you can use the "triple-sta
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Templating: Demo
 
 [vimeo-video]
