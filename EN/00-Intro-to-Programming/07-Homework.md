@@ -1,6 +1,11 @@
 # Homework
 [slide hideTitle]
-# Problem: Print "Hello Java"
+# Problem with Solution: Print "Hello Java"
+
+Java-basics-introduction-to-programming-36-37-Problem-Solving-Print-Hello-Java + 
+
+Java-basics-introduction-to-programming-37-problem-print-hello-java-solution
+
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -83,7 +88,12 @@ Write a Java program, which:
 [/slide]
 
 [slide hideTitle]
-# Problem: Name and Expression
+# Problem with Solution: Name and Expression
+
+Java-basics-introduction-to-programming-41-problem-name-and-expression + 
+
+Java-basics-introduction-to-programming-41-problem-name-and-expression-solution
+
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -125,7 +135,12 @@ Catlyn
 [/slide]
 
 [slide hideTitle]
-# Problem: Calculations
+# Problem with Solution: Calculations
+
+Java-basics-introduction-to-programming-43-problem-calculations + 
+
+Java-basics-introduction-to-programming-43-problem-calculations-solution
+
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -172,7 +187,12 @@ Write a program, which calculates and prints the value of the following express
 [/slide]
 
 [slide hideTitle]
-# Problem: Square of 7 * 7 Stars
+# Problem with Solution: Square of 7 * 7 Stars
+
+Java-basics-introduction-to-programming-45-problem-square-of-7-by-7-stars + 
+
+Java-basics-introduction-to-programming-45-problem-square-of-7-by-7-stars-solution
+
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -227,45 +247,6 @@ Prints a square of 7 * 7 stars like this:
 \* \* \* \* \* \* \*
 \* \* \* \* \* \* \*
 \* \* \* \* \* \* \*
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Print "Hello SoftUni"
-[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java]
-```
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-Write a program, which:
-
-Prints "Hello SoftUni" on the console
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-[/input]
-[output]
-Hello SoftUni
-[/output]
-[/test]
-[test]
-[input]
-[/input]
-[output]
-Hello SoftUni
 [/output]
 [/test]
 [/tests]
@@ -375,8 +356,6 @@ Each number should be on a new line.
 [/tests]
 [/code-task]
 [/slide]
-
-
 
 
 [slide hideTitle]

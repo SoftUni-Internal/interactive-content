@@ -1,7 +1,9 @@
 [slide hideTitle]
 # Summary
 
-In this lesson we learned: 
+Java-basics-introduction-to-programming-47-Summary
+
+# In this lesson we learned: 
 
 - What is Coding
 
@@ -13,7 +15,7 @@ In this lesson we learned:
 
 - How to create a project, files, and simple applications in IntelliJ
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - Data Types
 

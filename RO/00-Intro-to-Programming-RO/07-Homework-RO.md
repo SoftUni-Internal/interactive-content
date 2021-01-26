@@ -1,6 +1,6 @@
 # Tema pentru acasă
 [slide hideTitle]
-# Problemă: Print Hello Java
+# O problemă cu soluție: Print Hello Java
 [code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -83,7 +83,7 @@ Scrieți un program în limbajul Java care să execute următoarele:
 [/slide]
 
 [slide hideTitle]
-# Problemă: Name and Expression
+# O problemă cu soluție: Name and Expression
 [code-task title="Name and Expression" taskId="pb-java-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -125,7 +125,7 @@ Catlyn
 [/slide]
 
 [slide hideTitle]
-# Problemă: Calculations
+# O problemă cu soluție: Calculations
 [code-task title="Calculations" taskId="pb-java-introduction-Calculations" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -172,7 +172,7 @@ Scrieți un program care să calculeze și sa printeze valoarea următoarelor ex
 [/slide]
 
 [slide hideTitle]
-# Problemă: Square of 7 * 7 Stars
+# O problemă cu soluție: Square of 7 * 7 Stars
 [code-task title="Square of 7 * 7 Stars" taskId="pb-java-introduction-Square-of-7x7" executionType="tests-execution" executionStrategy="java-code"]
 [code-editor language=java]
 ```
@@ -233,44 +233,6 @@ Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Problemă: Print Hello SoftUni
-[code-task title="Print Hello SoftUni" taskId="pb-java-introduction-Print-hello" executionType="tests-execution" executionStrategy="java-code"]
-[code-editor language=java]
-```
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-
-Scrieți un program care să execute următoarele:
-
-Imprimă "Hello SoftUni" pe consolă
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-[/input]
-[output]
-Hello SoftUni
-[/output]
-[/test]
-[test]
-[input]
-[/input]
-[output]
-Hello SoftUni
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
 
 
 [slide hideTitle]
