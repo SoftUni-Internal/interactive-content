@@ -1,5 +1,6 @@
 # Common Design Patterns
-[slide]
+
+[slide hideTitle]
 # Factory Pattern
 
 [vimeo-video]
@@ -7,7 +8,9 @@
 [stream language="RO" videoId="497193746/ad30cc2f41"  /]
 [/video-vimeo]
 
-The **factory design pattern** is a creational pattern and its purpose is creating objects. It is just like an actual factory in real life. 
+The **factory design pattern** is a creational pattern and its purpose is creating objects. 
+
+It is just like an actual factory in real life. 
 
 It produces products (objects) based on business requirements. 
 
@@ -21,7 +24,7 @@ This pattern is typically used when:
 
 - The setup of objects requires a high level of complexity.
 
-The logic for instantiating objects is encapsulated within the factory object and the client doesn't need to know the actual logic to use it.
+The logic for instantiating objects is encapsulated within the factory object and the client does not need to know the actual logic to use it.
 
 It calls upon the factory and receives the created object.
 
@@ -42,7 +45,7 @@ The creation of new objects is abstracted behind an interface, which can cause p
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pros and Cons
 
 [vimeo-video]
@@ -66,7 +69,7 @@ This is because you can add new types of features without risking breaking the e
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example
 
 [vimeo-video]
@@ -113,7 +116,7 @@ Finally, we iterate through the collection and print out the names and special m
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Decorator Pattern
 
 [vimeo-video]
@@ -126,8 +129,9 @@ The **decorator pattern** is a structural design pattern that promotes code reus
 With this pattern, extra responsibilities or behaviors can be added to objects during runtime, without breaking the code that uses these objects.
 
 ## When to use
-- When you need to add functionality to an object either dynamically (during runtime) or statically, without affecting the behavior of other objects of the same class.
-- When extension by subclassing is not practical.
+- When you need to add functionality to an object either dynamically (during runtime) or statically, without affecting the behavior of other objects of the same class
+
+- When extension by subclassing is not practical
 
 ## When not to use
 
@@ -160,7 +164,7 @@ If you were to use a decorator on top of the Car object in the above example the
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pros and Cons of the Decorator Pattern
 
 [vimeo-video]
@@ -175,7 +179,7 @@ If you were to use a decorator on top of the Car object in the above example the
 | supports the Open/Closed SOLID principle   | instantiating the components can become more complicated |
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example of the Decorator Pattern
 
 [vimeo-video]
@@ -215,12 +219,12 @@ decoratedEbook.info();
 
 The decorator accepts a parameter **ebookReader** - the object we want to decorate and a new property **model**. 
 
-In this way, the decorated ebook reader would have an additional property and the **info()** function has been extended accordingly without modifying the original EbookReader class.
+In this way, the decorated ebook reader would have an additional property and the `info()` function has been extended accordingly without modifying the original EbookReader class.
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Facade Pattern
 
 [vimeo-video]
@@ -243,13 +247,13 @@ The client is only coupled to the facade and not to the subsystem(s) behind it.
 ## When to use
 - When you have a complex system and you need a simple interface to communicate with it
 
-- When you have a lot of tightly coupled code which would require the client to have extensive knowledge on how the system works to use it. 
+- When you have a lot of tightly coupled code which would require the client to have extensive knowledge on how the system works to use it
 
 In this case, the facade pattern can simplify things.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pros and Cons of the Facade Pattern
 
 [vimeo-video]
@@ -265,7 +269,7 @@ The facade pattern can reduce complexity when several modules are communicating 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example of the Facade Pattern
 
 [vimeo-video]
@@ -290,14 +294,14 @@ class ComplaintRegistry {
 
 ```
 
-**ServiceComplaints()** and **ProductComplaints()** are complex subsystems, but the client need not be concerned with their implementation. 
+`ServiceComplaints()` and `ProductComplaints()` are complex subsystems, but the client need not be concerned with their implementation. 
 
 The facade simply takes the **customer**, **type** and **details** and adds the complaint to either the service registry if the type received is **service** or a product complaint if it is of any other type by invoking **addComplaint** on the registry that was created.
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Observer Pattern
 
 [vimeo-video]
@@ -307,29 +311,29 @@ The facade simply takes the **customer**, **type** and **details** and adds the 
 
 This is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods. 
 
-The **Observer** pattern facilitates good object-oriented design and promotes loose coupling.
+The **Observer** pattern facilitates a good object-oriented design and promotes loose coupling.
 
 # Common Participants
 
-[image assetsSrc="design-patterns-15.png" /]
+[image assetsSrc="js-application-design-patterns-15.png" /]
 
-- **Subject** - contains collection of observers. 
+- **Subject**: contains a collection of observers. 
 
-It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - **subscribe()**, **unsubscribe()**. 
+It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - `subscribe()`, `unsubscribe()`. 
 
 Sends notifications to the observers attached to it.
 
-- **Observer** - has an interface that sends updates to objects that need to be notified of a subject's changes of state.
+- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state.
 
 # Concept 
 
-[image assetsSrc="design-patterns-10.png" /]
+[image assetsSrc="js-application-design-patterns-10.png" /]
 
 The concept behind the **observer** pattern is that we have one subject, which can have one or more observers. 
 
 It maintains a collection of observers and notifies them when a change to its state occurs.
 
-Messages to the observers are typically sent using a **notify()** method that loops through the subject's list of observers and inside the loop each observer's **update method** is invoked.
+Messages to the observers are typically sent using a `notify()` method that loops through the subject's list of observers and inside the loop each observer's **update method** is invoked.
 
 When the observer, no longer needs to receive updates from the subject it can be **detached** (removed from the subject's collection).
 
@@ -340,7 +344,7 @@ An example of this would be on sites like YouTube where you can subscribe to oth
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pros and Cons of the Observer Pattern
 
 [vimeo-video]
@@ -361,7 +365,7 @@ Changes can be broadcast to any number of observers, although the order in which
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example of the Observer Pattern
 
 [vimeo-video]
@@ -392,11 +396,11 @@ class Observable {
 
 We are declaring a class called **Observable**. 
 
-This is the Subject. It has a constructor that initializes a collection of **observers** with ``this.observers = []``. 
+This is the Subject. It has a constructor that initializes a collection of **observers** with `this.observers = []`. 
 
 The **subscribe** method is used to add observers to the collection of the observable object. The **unsubscribe** method removes (detaches) and observer from it. 
 
 The **unsubscribe** method removes (**detaches**) an observer from the subject.
 
-When the ``notify(data)`` method is called we iterate through the observers collection and **send a notification** to **every single observer** that is currently **subscribed** to the observable object.
+When the `notify(data)` method is called we iterate through the observers' collection and **send a notification** to **every single observer** that is currently **subscribed** to the observable object.
 [/slide]
