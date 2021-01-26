@@ -14,12 +14,9 @@ public class Main {
         double totalPrice=pricePerM*areaSqm;
         double discount = percent*totalPrice;
         double finalPrice = totalPrice-discount;
-        System.out.printf("The final price is: %.2f lv. \nThe discount is: %.2f lv.",finalPrice,discount);
-
-    
-}
-
+        System.out.printf("The final price is: %.2f dollars\nThe discount is: %.2f dollars",finalPrice,discount);
     }
+}
 
 ```
 [/code-editor]

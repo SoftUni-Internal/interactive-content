@@ -1,11 +1,6 @@
 [slide hideTitle]
 # javascript-code
-[vimeo-video]
-[stream language="EN" videoId="486869990/380a476703" default /]
-[stream language="RO" videoId="486869990/380a476703"  /]
-[/video-vimeo]
-
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Marketplace" taskId="random-id-for-testing-1238219309123" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {

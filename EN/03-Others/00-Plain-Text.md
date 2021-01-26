@@ -3,13 +3,7 @@
 [code-task title="Problem: Find All Information About Departments" taskId="ff777793-c543-4504-8b1d-461a3a1351b2" executionType="tests-execution" executionStrategy="plaintext" requiresInput]
 [code-editor language=java]
 ```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-
-        1
+1
 Engineering
 12
 2
@@ -57,8 +51,6 @@ Shipping and Receiving
 16
 Executive
 109
-    }
-}
 ```
 [/code-editor]
 [task-description]
