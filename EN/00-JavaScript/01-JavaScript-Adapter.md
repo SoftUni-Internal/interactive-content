@@ -25,12 +25,12 @@ function solve(num1, num2) {
     
 }
 ```
+[/code-editor]
 [code-adapter]
 ```
 (input, code) => code(...input);
 ```
 [/code-adapter]
-[/code-editor]
 [task-description]
 # Description
 
