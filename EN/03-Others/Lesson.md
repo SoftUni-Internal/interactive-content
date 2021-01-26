@@ -1,1 +1,1 @@
-# Strategy Tests
+# Other Strategies

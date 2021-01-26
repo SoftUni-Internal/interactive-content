@@ -1,1 +1,1 @@
-# Strategy Tests
+# JavaScript Strategies

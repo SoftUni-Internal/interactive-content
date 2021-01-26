@@ -1,1 +1,1 @@
-# Strategy Tests
+# Java Strategies
