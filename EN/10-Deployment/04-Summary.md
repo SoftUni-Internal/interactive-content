@@ -1,0 +1,29 @@
+[slide hideTitle]
+
+# Summary
+
+# In this lesson you learnt:
+
+- Heroku is Plaform-as-a-Service solution
+  - Heroku CLI is used together with Git to manage and scale applications, provision add\-ons and many more features
+
+`heroku create my-node-app`
+
+
+- Procfiles are used to make sure our NodeJS application runs as intended
+  - They hold bootstrap commands
+
+`web: node index.js`
+
+- Integrating GitHub with Heroku enables automatic deploys
+  - The live version of your application automatically updates with the latest changes
+
+## In the next lesson you will learn:
+
+- Exam Preparation \- Building a Single Page Application using:
+  - Express
+  - MongoDB 
+  - Mongoose 
+  - JWT
+
+[/slide]
