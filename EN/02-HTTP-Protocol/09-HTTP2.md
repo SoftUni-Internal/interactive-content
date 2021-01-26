@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# HTTP/2
+# HTTP2
 
 **HTTP/2.0** is the first and major revision of the Hypertext Transfer Protocol since 1997 when we received the HTTP/1.1 version.
 
