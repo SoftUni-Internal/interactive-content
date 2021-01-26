@@ -3,7 +3,7 @@
 [slide]
 # Description
 
-[code-task title="SoftWiki SPA" taskId="js-applications-softwiki-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="SoftWiki SPA" taskId="js-applications-exam-softwiki-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -17,7 +17,7 @@ function solve(){
 
 [Download resources here!](https://mega.nz/file/rdgCzJpC#VAzRE_PzHsl0P4q4sjT_2hHepEfkJlEIr9JjwTscpVg)
 
-You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST and JSON with cloud\-based backend \(Firebase or Kinvey\).
+You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with cloud\-based backend \(Firebase or Kinvey\).
 
 Using libraries like **jQuery**, **Handlebars** and **PageJs** is allowed but is **not obligatory**.
 
@@ -25,11 +25,11 @@ The app keeps **users** and **articles**.
 
 **Users** should be able to **register** and **login**.
 
-Logged\-in users should be able to view all articles, create articles, see details about an article and **logout**.
+Logged\-in users should be able to view all articles, create articles, see details about an article, and **logout**.
 
 Logged\-in users should also be able to edit or delete the articles they have created. Create a Firebase REST Service.
 
-Register at [Firebase](https://firebase.google.com) and create application to keep your data in the cloud.
+Register at [Firebase](https://firebase.google.com) and create an application to keep your data in the cloud.
 
 Create a collection called **articles**.
 
@@ -45,7 +45,7 @@ Then go to the **rules** and **edit** them to look like this:
 
 **1. Test the Firebase REST Services**
 
-Using **Postman** or other HTTP client tool, test the REST service end points:
+Using **Postman** or other HTTP client tool, test the REST service endpoints:
 
 ## List All Articles
 
@@ -58,10 +58,10 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 - Request body:
 ```
 {
-	"title": "Arrays",
-	"category": "JavaScript",
-	"content": "Lorem ipsum dolor sit amet, consectetur...",
-	"creator-email": "peter.georgiev@email.com"
+    "title": "Arrays",
+    "category": "JavaScript",
+    "content": "Lorem ipsum dolor sit amet, consectetur...",
+    "creator-email": "peter.georgiev@email.com"
 }
 
 ```
@@ -69,14 +69,14 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 
 ```
 {Key}:{
-	"title": "Arrays",
-	"category": "JavaScript",
-	"content": "Lorem ipsum dolor sit amet, consectetur...",
-	 "creator-email": "peter.smith@email.com"
+    "title": "Arrays",
+    "category": "JavaScript",
+    "content": "Lorem ipsum dolor sit amet, consectetur...",
+     "creator-email": "peter.smith@email.com"
 }
 ```
 
-- Error response: 401 Unauthorized
+- Error response: `401 Unauthorized`
 
 
 ```
@@ -90,25 +90,25 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 
 ```
 {
-	"title": "Arrays",
-	"category": "JavaScript",
-	"content": "Lorem ipsum dolor sit amet, consectetur...",
+    "title": "Arrays",
+    "category": "JavaScript",
+    "content": "Lorem ipsum dolor sit amet, consectetur...",
       "creator-email": "peter.smith@email.com"
 }
 ```
 
-- Response: 200 Ok
+- Response: `200 OK`
 
 ```
 {key}:{
-	"title": "Arrays",
-	"category": "JavaScript",
-	"content": "Lorem ipsum dolor sit amet, consectetur...",
+    "title": "Arrays",
+    "category": "JavaScript",
+    "content": "Lorem ipsum dolor sit amet, consectetur...",
     "creator-email": "peter.georgiev@email.com"
 }
 ```
 
-- Error response: 401 Unauthorized
+- Error response: `401 Unauthorized`
 
 ```
 { "error": "InvalidCredentials", "description": "Invalid credentials. Please retry your request with correct credentials", "debug": "" }
@@ -117,13 +117,13 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 
 **DELETE** `https://{apiKey}.com/articles/{id}`
 
-- Error response: 404 Not Found
+- Error response: `404 Not Found`
 
 ```
 { "error": "EntityNotFound", "description": "This entity not found in the collection", "debug": "" }
 ```
 
-- Error response: 401 Unauthorized
+- Error response: `401 Unauthorized`
 
 ```
 { "error": "InvalidCredentials", "description": "Invalid credentials. Please retry your request with correct credentials", "debug": "" }
@@ -133,7 +133,7 @@ Using **Postman** or other HTTP client tool, test the REST service end points:
 
 You have been given the web design of the application as **HTML** \+ **CSS** files.
 
-- Initially all views and forms are shown by the HTML. 
+- Initially, all views and forms are shown by the HTML. 
 
 Your application may **hide/show elements** by CSS **(display: none)** or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
 
@@ -141,9 +141,9 @@ Your application may **hide/show elements** by CSS **(display: none)** or **dele
 
 ## Important
 
-Don't change the elements' class names and ids.
+Do not change the elements' class names and ids.
 
-Don't rename form fields/link names/ids.
+Do not rename form fields/link names/ids.
 
 You are **allowed** to add **data attributes** to any elements.
 
@@ -159,7 +159,7 @@ Navigation links should correctly change the current page (view).
 
 - Clicking on the links in the **Header** should display the view behind the link (views are represented as sections in the HTML code).
 
-- Your application may **hide/show elements** by CSS \(**display**\: **none**\) or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
+- Your application may **hide/show elements** by CSS (**display**: **none**) or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
 
 The Logged-in user navbar should contain the following elements: `[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
 
@@ -181,9 +181,9 @@ Register once and create/read awesome articles!
 
 ## Login User / Guest Home Page (5 Pts)
 
-By given **email** and **password**, the app should login an existing user.
+By given **email** and **password**, the app should log in as an existing user.
 
-- Keep the user local data in the browser's local storage.
+- Keep the user's local data in the browser's local storage.
 
 - After a successful login **redirect to the home page.**
 
@@ -205,7 +205,7 @@ If there are **NO** such articles, the following view should be displayed:
 
 ## Create Article (10 Pts)
 
-Logged-in users should be able to Create articles.
+Logged-in users should be able to create articles.
 
 Clicking the `[Create]` link in the **NavBar** should display the **Create Article page.**
 
@@ -247,7 +247,7 @@ Logged-in users should be able to delete their articles.
 
 Clicking the `[Delete]` **link** of an article (on the **Details page**) should **delete** the **article.**
 
-- After **successful article delete** you should  show the **Home page.**
+- After **successful article delete** you should show the **Home page.**
 
 ## (BONUS) Sorting:  (5 Pts)
 
