@@ -14,9 +14,9 @@
 
 You need to write **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
 
-If the passed parameter is **NOT** a string returns **undefined**.
+If the passed parameter is **NOT** a string, it returns **undefined**.
 
-If the parameter is a string return either "even" or "odd" based on the length of the string.
+If the parameter is a string, it returns either "**even**" or "**odd**" based on the length of the string.
 
 You are provided with an implementation of the `isOddOrEven()` function.
 
@@ -33,7 +33,7 @@ function isOddOrEven(input) {
 ```
 
 # Hints
-We can clearly see there are three outcomes for the function:
+We can see there are three outcomes for the function:
 - Returning `undefined`.
 - Returning `even`.
 - Returning `odd`.
@@ -51,9 +51,11 @@ describe("Is Odd Or Even", function(){
 })
 ```
 
-After we have checked the validation it is time to check whether the function works correctly with valid arguments. 
+After we check the validation, it is time to check whether the function works correctly with valid arguments. 
 
-Write a test for each of the cases, one where we pass a string with even length and another where we pass a string with an odd length.
+Write a test for each of the cases. 
+
+In the first test, we pass a string with an **even** length, and a second one where we pass a string with an **odd** length.
 
 ```js
 describe("Is Odd Or Even", function(){
@@ -66,7 +68,7 @@ describe("Is Odd Or Even", function(){
 })
 ```
 
-Finally, make an extra test passing multiple strings in a row to ensure the function works correctly.
+Finally, make a test passing multiple strings in a row to ensure the function works correctly.
 
 ```js
 describe("Is Odd Or Even", function(){
@@ -181,18 +183,18 @@ Test Passed!
 [task-description]
 ## Description
 
-Write **unit tests** for a function that retrieves a character at a given **index** from a passed in **string**.
+Write **unit tests** for a function that retrieves a character at a given **index** from a **string**.
 
-You are given a function named `lookupChar()`, which has the following functionality:
+You have a function called `lookupChar()` that has the following functionality:
 - lookupChar(string, index) - accepts a **string** and an **integer**, which is the index of the character we are looking for.
 
 - If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - return **undefined**.
 
-- If **both parameters** are of the correct type but the value of the index is incorrect (bigger than or equal to the string length or a negative number) - `return Incorrect index`. 
+- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length or a negative number - `return Incorrect index`. 
 
 - If both parameters have correct types and values, return the character at the specified index in the string.
 
-You are provided with an implementation of the `lookupChar()` function.
+Here is the implementation of the `lookupChar()` function.
 
 ```js
 function lookupChar(string, index) {
@@ -210,14 +212,14 @@ function lookupChar(string, index) {
 
 А good first step in testing a method is usually to determine all exit conditions. 
 
-Reading through the specification or taking a look at the implementation we can easily determine 3 main exit conditions:
+Reading through the specification or taking a look at the implementation, we can determine three main exit conditions:
 - Returning `undefined`.
 - Returning an `empty string`.
 - Returning the `character at the specified index`.
 
-Now that we have our exit conditions we should start checking in what situations we can reach them.
+Now that we have our exit conditions, we start checking in what situations we can reach them.
 
-If any of the parameters are of **incorrect type**, **undefined** should be returned. 
+If any of the parameters are of **incorrect type**,  we return  **undefined**.
 
 ```js
 describe("Character Look Up", function(){
@@ -246,7 +248,7 @@ describe("Character Look Up", function(){
 
 Moving on to the next exit condition - returning an empty string.
 
-If we get passed an index that is a negative number or an index that is outside of the bounds of the string.
+This is the case when we pass an index that is a negative number or an index that is outside of the bounds of the string.
 
 ```js
 describe("Character Look Up", function(){
@@ -420,7 +422,7 @@ Test Passed!
 [task-description]
 ## Description
 
-Your task is to test an object named **mathEnforcer**, which will have the following functionality.
+Your task is to test an object called **mathEnforcer**, which will have the following functionality.
 
 - `addFive(num)`: A function that accepts a **single** parameter.
 
@@ -435,7 +437,7 @@ Your task is to test an object named **mathEnforcer**, which will have the follo
     - If any of the 2 parameters is NOT a number, the function should return undefined.
     - If **both** parameters are **numbers**, the function should return their **sum**.
 
-You are provided with an implementation of the **mathEnforcer** object.
+Here is the implementation of the **mathEnforcer** object.
 
 ```js
 let mathEnforcer = {
@@ -462,9 +464,9 @@ let mathEnforcer = {
 
 The methods should function correctly for positive, negative, and floating-point numbers. 
 
-In the case of floating-point numbers, the result should be considered correct if it is within 0.01 of the correct value.
+When using floating-point numbers, the result should be considered correct if it is within 0.01 of the correct value.
 
-When testing a more complex object write a **nested describe** for each function as it is shown in the example below.
+When testing a more complex object, write a **nested describe** for each function shown in the example below. 
 
 ```js
 describe("Math Enforcer", function(){
@@ -482,7 +484,7 @@ describe("Math Enforcer", function(){
 })
 ```
 
-Your tests will be supplied with a variable named "mathEnforcer" which contains the mentioned logic above. 
+Your tests will be supplied with a variable called "mathEnforcer" which contains the mentioned logic above. 
 
 All test cases you write should reference this variable.
 
@@ -906,7 +908,7 @@ Test Passed!
 [task-description]
 ## Description
 
-You are given the following "JavaScript" class.
+Use the following "JavaScript" class.
 
 ```js
 class StringBuilder {
@@ -956,13 +958,13 @@ The above code defines a class that holds characters (strings with length 1) in 
 
 An instance of the class should support the following operations:
 
-- Can be instantiated with a passed in string argument or without anything.
-- Function `append(string)`: converts the passed in string argument to an array and adds it to the end of the storage.
-- Function `prepend(string)`: converts the passed in string argument to an array and adds it to the beginning of the storage.
-- Function `insertAt(string, index)`: converts the passed in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
+- Can be instantiated with a passed-in string argument or without anything.
+- Function `append(string)`: converts the passed-in string argument to an array and adds it to the end of the storage.
+- Function `prepend(string)`: converts the passed-in string argument to an array and adds it to the beginning of the storage.
+- Function `insertAt(string, index)`: converts the passed-in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
 - Function `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range).
 - Function `toString()`: returns a string with all elements joined by an empty string.
-- All passed in arguments should be strings. 
+- All passed-in arguments should be strings. 
 
 If any of the parameters is not a string, throws a type error with the following message: `Argument must be a string`.
 
@@ -1521,7 +1523,7 @@ Test Passed!
 [task-description]
 ## Description
 
-You are given the following "JavaScript" class.
+Use the following "JavaScript" class.
 
 ```js
 class PaymentPackage {
@@ -1600,15 +1602,15 @@ The above code defines a class that contains information about a payment package
 
 An instance of the class should support the following operations:
 - Can be instantiated with two parameters: a string name and a number value.
-- Accessor **name**: used to get and set the value of the name.
-- Accessor **value**: used to get and set the value of value.
-- Accessor **VAT**: used to get and set the value of VAT.
-- Accessor **active**: used to get and set the value of active.
-- Function `toString()`: return a string, containing an overview of the instance. 
+- Accessor **name**: gets and sets the value of "name".
+- Accessor **value**: gets and sets the value of "value".
+- Accessor **VAT**: gets and sets the value of "VAT".
+- Accessor **active**: gets and sets the value of "active".
+- Function `toString()`: returns a string containing an overview of the instance. 
 
 If the package is not active, append the label `(inactive)` to the printed name.
 
-When creating an instance, or changing any of the property values, the parameters are validated. 
+When creating an instance or changing any of the property values, the parameters are validated. 
 
 They must follow these rules:
 

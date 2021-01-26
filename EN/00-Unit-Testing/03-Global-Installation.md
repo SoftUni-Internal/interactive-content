@@ -47,7 +47,7 @@ Use this piece of code to set the path for the current session.
 
 You may need to restart your IDE after changing the "NODE_PATH".
 
-To load a library first we need to **require** it like in the example below.
+To load a library first, we need to **require** it, like in the example below.
 
 `const expect = require("chai").expect;`
 
@@ -97,7 +97,7 @@ function sum(arr) {
 }
 ```
 
-Your tests will be supplied with a function named `sum()`. 
+In your tests, use a function called `sum()`. 
 
 It should meet the following requirements:
 - Take an array of numbers as an argument
@@ -190,7 +190,7 @@ function sum(arr) {
 }
 ```
 
-Your tests will be supplied with a function named `sum()`. 
+In your tests, use a function called `sum()`. 
 
 It should meet the following requirements:
 - Take an array of numbers as an argument

@@ -11,7 +11,7 @@
 
 ## Code First
 
-This is a classical approach, where the functionality is implemented and then the tests are written.
+This is a classical approach, where the functionality, is implemented and then the tests are written.
 
 
 [/slide]
@@ -26,7 +26,7 @@ This is a classical approach, where the functionality is implemented and then th
 
 Tests first approach means we write the tests before actual code. 
 
-We can keep the tests running, and that way we will know does our code produces the expected result.
+We can keep the tests running, and that way, we will know does our code produces the expected result.
 
 In Test-Driven Development we follow these steps:
 - Create a test list

@@ -14,11 +14,11 @@
 
 Mocha tests run serially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases.
 
-It provides common testing functions including `it`, `describe`, and the main function that runs tests.
+It provides common testing functions including, `it`, `describe` and, the main function that runs tests.
 
 Mocha is usually used together with **Chai**.
 
-For more information here is a [link](https://mochajs.org/) to the developer's web page.
+For more information, here is a [link](https://mochajs.org/) to the developer's web page.
 
 ```js
 describe("title", function () {
@@ -30,11 +30,11 @@ describe("title", function () {
 
 It allows the usage of a lot of different assertions such as `assert.equal`.
 
-Before using **Chai** we need to import the required module using the keyword `require`.
+Before using **Chai**, we need to import the required module using the following keyword - `require`.
 
 This is done in the first line of code: `let assert = require("chai").assert;`
 
-For more information here is a [link](https://www.chaijs.com/api/) to the developer's web page.
+For more information, here is a [link](https://www.chaijs.com/api/) to the developer's web page.
 
 ```js
 let assert = require("chai").assert;
