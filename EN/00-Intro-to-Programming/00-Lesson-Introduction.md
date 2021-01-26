@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-Video-Java-basics-introduction-to-programming-1-2-Introduction-Table-of-contents
-
 # Lesson Content
+
+Video-Java-basics-introduction-to-programming-1-2-Introduction-Table-of-contents
 
 ## In this lesson you will learn:
 
