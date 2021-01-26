@@ -1,15 +1,10 @@
-# Homework
-
 [slide hideTitle]
-# Problem: Person
+# java-project-tests
 [code-task title="Problem: Person" taskId="6149ff73-1837-40fc-96c1-08df5397cd19" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
-You are asked to model an application for storing data about people. 
-
-You should be able to have a **Person** and a **Child**. 
+## DescriptionJavaScript code
 
 The child derives from the person. 
 

@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Opinion Poll
+# java-zip-file-code
 
 
 [code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]

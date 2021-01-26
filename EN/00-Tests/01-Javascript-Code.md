@@ -1,5 +1,5 @@
-[slide]
-# Solution: Marketplace
+[slide hideTitle]
+# javascript-code
 [vimeo-video]
 [stream language="EN" videoId="486869990/380a476703" default /]
 [stream language="RO" videoId="486869990/380a476703"  /]

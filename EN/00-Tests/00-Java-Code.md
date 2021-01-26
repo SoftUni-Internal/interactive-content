@@ -1,5 +1,5 @@
-[slide hideTitle]
-# Problem: Yard Greening
+[slide]
+# java-code
 [code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

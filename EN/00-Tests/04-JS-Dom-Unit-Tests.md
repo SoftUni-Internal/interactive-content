@@ -1,5 +1,5 @@
 [slide]
-# Problem: Time Converter
+# javascript-js-dom-unit-tests
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```

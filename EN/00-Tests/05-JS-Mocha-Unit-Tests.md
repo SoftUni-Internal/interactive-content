@@ -1,5 +1,5 @@
 [slide]
-# Problem: Construction Crew
+# javascript-unit-tests-with-mocha
 [code-task title="Problem: Construction Crew" taskId="js-advanced-Object-Composition-Construction-Crew" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```

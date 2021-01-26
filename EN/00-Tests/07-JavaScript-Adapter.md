@@ -1,5 +1,5 @@
 [slide]
-# NOT WORKING TEST PROBLEM:  Numbers, Divisible by 9
+# javascript-code with adapter
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -26,11 +26,6 @@ function solve(num1, num2) {
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => c(...i);
-```
-[/code-adapter]
 [task-description]
 # Description
 
