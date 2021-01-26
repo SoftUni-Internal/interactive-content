@@ -1,7 +1,7 @@
 [slide]
 # python-project-unit-tests
 
-[code-task title="Yard Greening" taskId="pb-python-statements-Yard-Greening" executionType="tests-execution" executionStrategy="python-project-tests" requiresInput]
+[code-task title="Yard Greening" taskId="pb-python-project-unit-tests" executionType="tests-execution" executionStrategy="python-project-unit-tests" requiresInput]
 [code-upload /]
 
 [task-description]
