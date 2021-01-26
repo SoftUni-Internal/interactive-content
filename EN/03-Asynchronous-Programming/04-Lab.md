@@ -2,7 +2,7 @@
 
 # Problem: Blog
 
-[code-task title="Problem: Blog" taskId="js-applications-asynchronous-programming-Blog" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Blog" taskId="js-applications-asynchronous-programming-lab-Blog" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
