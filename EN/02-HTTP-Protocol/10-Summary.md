@@ -1,28 +1,23 @@
+# Summary
+
 [slide]
 
-# Summary
+# In this lesson we learned:
 
 **HTTP**
 
-- **HTMP** Forms and Actions
-
+- **HTML** Forms and Actions
     <form action="home.html" method="POST">
     <input type="submit" value="Go to homepage"/>
     </form>
-
 - **URLs**
     *Example*: **http://www.google.bg/search?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enBG369BG369&q=http+get+vs+post**.
-
 - **Request**
-
     *Example of HTTP GET:*
-
     GET /index.html HTTP/1.1 
     Host: localhost​
     <CRLF>
-
 - **Response**
-
     *Example:*
     HTTP/1.1 404 Not Found​
     Date: Fri, 17 Nov 2014 16:09:18 GMT+2​
@@ -46,3 +41,5 @@
 - HTTP Session
 
 - Session in a HTTP Server
+
+[/slide]
