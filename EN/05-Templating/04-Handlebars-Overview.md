@@ -151,18 +151,18 @@ The resulting output looks like this:
 This is a brief example of Handlebars in action.
 
 ```
-<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
-  <meta charset="UTF-8">
-  <title>Hello Handlebars</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" </script>
+  <meta charset="UTF-8">
+  <title>Hello Handlebars</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" </script>
 </head>
 <body>
-<div id="app"></div>
+<div id="app"></div>
 <script>
-  let template = Handlebars.compile('<h1>Hello {{name}}</h1>');
-  let container = document.getElementById('app');
-  container.innerHTML = template({ name: 'Handlebars' });
+  let template = Handlebars.compile('<h1>Hello {{name}}</h1>');
+  let container = document.getElementById('app');
+  container.innerHTML = template({ name: 'Handlebars' });
 </script>
 </body>
 </html>
@@ -190,7 +190,7 @@ Then, we specify the HTML **element**, in which we want to **render our template
 
 Lastly, we **call the compiled template** with our variables and save the output in the element:
 
-`container.innerHTML = template({ name: 'Handlebars' });`
+`container.innerHTML = template({ name: 'Handlebars' });`
 
 [/slide]
 
@@ -228,7 +228,7 @@ It will be **rendered** in case the given **array** is **empty**.
 [stream language="RO" videoId="497950460/b05f75e27e"  /]
 [/video-vimeo]
 
-Similarly to JavaScript, you can also use **conditional statements** in your **template**.
+Similar to JavaScript, you can also use **conditional statements** in your **template**.
 
 The `#if` helper, followed by a condition is used to achieve this:
 
@@ -261,7 +261,7 @@ Handlebars allows us to **reuse templates** through **partials**.
 
 **Partials** are normal Handlebars **templates** that can be called directly by **other templates**.
 
-In order to use a partial, we must register it using the `Handlebars.registerPartial()` method:
+To use a partial, we must register it using the `Handlebars.registerPartial()` method:
 
 `Handlebars.registerPartial('myPartial', '{{newVar}}');`
 
@@ -277,7 +277,7 @@ As we learned earlier, **double curly braces** are used to **declare** Handlebar
 
 In Handlebars, the values returned by the `{{expression}}` are HTML\-escaped. 
 
-For example, if the expression contains `&`, then the returned HTML-escaped output is genarated as `&amp;`. 
+For example, if the expression contains `&`, then the returned HTML-escaped output is generated as `&amp;`. 
 
 If you do not want Handlebars to **escape a value**, you can use the "triple-stash", `{{{`:
 

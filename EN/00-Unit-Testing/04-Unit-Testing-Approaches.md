@@ -34,7 +34,7 @@ In Test-Driven Development we follow these steps:
 - Write a test
 - Compile and fail
 - Write enough code to compile
-- Run test and fail
+- Run a test and fail
 - Write code to past test
 - Remove duplication
 
