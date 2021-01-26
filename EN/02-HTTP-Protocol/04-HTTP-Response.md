@@ -71,8 +71,12 @@ Content-Type: text/html​
 </body></html>
 <CRLF>
 ```
+[/slide]
 
-An another example with a browser redirection.
+[slide hideTitle]
+
+Browser redirection example. 
+
 ```java
 - **HTTP GET** requesting a **moved** URL:
 GET / HTTP/1.1​
@@ -93,6 +97,7 @@ HTTP/1.1 301 Moved Permanently​
 Location: https://softuni.org​
 …
 ```
+
 [/slide]
 
 [slide hideTitle]

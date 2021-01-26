@@ -4,7 +4,7 @@
 
 In the last lesson when we learned about the OSI Model, we mentioned HTTP and the fact that it works on the last **Application layer** of the protocol. 
 
-Now let's expand our knowledge by having a closer look at the **HTTP - Hypertext Transfer Protocol** and try to understand why is so important for every developer to know how to work with this protocol in great detail.
+Let's a closer look at the **HTTP - Hypertext Transfer Protocol** and try to understand why is so important for every developer to know how to work with this protocol in great detail.
 
 The HTTP is a text-based protocol that allows us to fetch resources such **HTML Documents, Pictures, Files, etc**. over the internet.
 
@@ -22,14 +22,14 @@ Let's have a look at this graphic and try to remind ourselves about the differen
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP.png" /]
 
-Can you notice is, just as the model suggests, every time that we want to communicate with the server as clients we send an **HTTP Request**, this request, following the different **OSI Model levels** reaches our server, using the same schema for translating back to human-readable **HTTP**.
+Just as the model suggests, every time that we want to communicate with the server as clients we send an **HTTP Request**, this request, following the different **OSI Model levels** reaches our server, using the same schema for translating back to human-readable **HTTP**.
 [/slide]
 
 [slide hideTitle]
 
 # HTTP Request Methods
 
-Now let's have a close look in **HTTP Requests** and learn what methods each **Request** can define.
+Let's examine the **HTTP Requests** and learn what methods each **Request** can define.
 
 The protocol defines a set of request methods to indicate the desired action to be performed for a chosen resource.
 
@@ -66,9 +66,8 @@ Welcome to our site</html>
 ```
 
 
-We will explore the **Request** and **Response** in-depth in the next slides,
 
-but you will get to know the methods faster if you start exploring the different data we send through the network when we communicate with a given website. 
+If you  start exploring the different data we send through the network when we communicate with a given website you will learn the methods faster. 
 
 You can do that by checking the **Developer's Toolbar** by pressing **F12 for the most browsers** and choosing the **Network Tab** this is where all the HTTP communication can be seen.
 

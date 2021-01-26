@@ -22,7 +22,7 @@ The **URL** is a formatted string consisting of several key parts, now let's hav
 
         That is why the first part of every **URL** is the protocol by which the machines will be communicating.
 
-        Now we are learning about the **HTTP** protocol, but there is also an **HTTPS**.
+        We are learning about the **HTTP** protocol, but there is also an **HTTPS**.
 
         As you know, when we send data from our computer to the server it's transferred through different routers.
 
@@ -89,6 +89,12 @@ Let's have some examples:
 
 An URL encoded string:
 **%D0%9D%D0%B0%D0%BA%D0%BE%D0%B2-%E7%88%B1-SoftUni​**
+
+[/slide]
+
+[slide hideTitle]
+
+# Valid and Invalid URLs
 
 Let's have a look at few valid and invalid examples of **URLs**.
 

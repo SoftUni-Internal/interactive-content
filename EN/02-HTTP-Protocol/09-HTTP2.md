@@ -26,14 +26,13 @@ This is achieved through several fundamental changes.
 
 At its core **HTTP/2** is meant to erase the need of maintaining complex server infrastructure to perform well.
 
-**HTTP/2** has a binary framing layer which **encodes the requests/responses into binary format and cuts them into smaller packets of information**, 
+**HTTP/2** has a binary framing layer which **encodes the requests/responses into binary format and cuts them into smaller packets of information**.
 
-which greatly increases the flexibility of data transfer, 
+This greatly increases the flexibility of data transfer.
 
-whereas in HTTP/1.1 the whole **response/request** is send together with a new line delimiter.
+We can compare it to HTTP/1.1 where the whole **response/request** is send together with a new line delimiter.
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP(14).png" /]
-
 
 The updated protocol has several new important elements:
 
