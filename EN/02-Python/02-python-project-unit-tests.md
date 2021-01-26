@@ -487,3 +487,5 @@ Test Passed!
 [/tests]
 
 [/code-task]
+
+[/slide]
