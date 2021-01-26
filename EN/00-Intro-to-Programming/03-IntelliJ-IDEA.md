@@ -31,7 +31,7 @@ This an example how a development IDE may look (IntelliJ IDEA IDE for Java):
 [slide hideTitle]
 # Installing IntelliJ IDEA
 
-Java-basics-introduction-to-programming-16-19-IDEs
+Java-basics-introduction-to-programming-21-25-InteliJ-IDEA
 
 0:00 - 0:53
 
@@ -82,7 +82,7 @@ That's all. You are ready to work with IntelliJ IDEA.
 [slide hideTitle]
 # Project Solutions and Projects in IntelliJ IDEA
 
-Java-basics-introduction-to-programming-16-19-IDEs
+Java-basics-introduction-to-programming-21-25-InteliJ-IDEA
 
 0:54 - 1:12
 
