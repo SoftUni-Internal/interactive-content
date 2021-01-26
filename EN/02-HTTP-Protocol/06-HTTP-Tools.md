@@ -18,14 +18,14 @@ Whereas when you want to create custom HTTP Requests and see how the server is r
 ### Insomnia Rest
 [image assetsSrc="02-Java-Spring-Fund-HTTP(4).png" /]
 
-### Insomnia Rest
-[image assetsSrc="02-Java-Spring-Fund-HTTP(6).png" /]
-
 ### Postman
 [image assetsSrc="02-Java-Spring-Fund-HTTP(5).png" /]
 
 ### RESTClient
 [image assetsSrc="02-Java-Spring-Fund-HTTP(6).png" /]
+
+### Insomnia Rest - Dekstop
+[image assetsSrc="02-Java-Spring-Fund-HTTP-Insomnia-Rest-Window.png" /]
 
 
 [/slide]

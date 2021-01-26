@@ -47,10 +47,10 @@ Each method type implements a different meaning, but they also share common feat
 
 Let's see an example of a typical HTTP Conversation:
 
-```
+```java
 //HTTP REQUEST
 GET /courses/javascript HTTP/1.1​
-Host: www.softuni.bg​
+Host: www.softuni.org
 User-Agent: Mozilla/5.0​
 <CRLF> //The empty line denotes the end of the request header.
 
