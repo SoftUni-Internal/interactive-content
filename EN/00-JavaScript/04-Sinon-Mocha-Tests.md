@@ -18,7 +18,7 @@ Repository
 Test the strategy "Javascript-Sinon-Mocha-Unit-Tests" with that task
 
 [/task-description]
-[code-io /]
+[code-upload /]
 [tests]
 [test open]
 [input]
