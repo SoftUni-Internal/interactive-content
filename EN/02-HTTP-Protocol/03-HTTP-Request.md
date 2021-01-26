@@ -28,12 +28,15 @@ A Request message sent by the client consist of several things:
 
 An example of an **HTTP GET** Request: 
 
+```java
 GET /index.html HTTP/1.1    // HTTP request line​
 Host: localhost​             // Http request headers
 <CRLF>                      //Body, in this case the body is empty.
+```
 
 An example of an **HTTP POST** Request:
 
+```java
 POST /login.html HTTP/1.1​                          //Request line
 Host: localhost​                                    //Http Request headers
 Content-Length: 59​                                 
@@ -41,6 +44,7 @@ Content-Type: application/x-www-form-urlencoded​
 <CRLF>​                                             //Empty line to indicate beginning of the body.
 username=mente&password=top*secret!​                //Http Request body.
 <CRLF>                                             //Empty line to indicate the end of the requests.
+```
 
 
 [/slide]
