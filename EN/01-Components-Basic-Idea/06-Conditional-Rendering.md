@@ -1,6 +1,6 @@
 # Conditional Rendering
 
-[slide]
+[slide hideTitle]
 
 # Using if operator
 
@@ -10,13 +10,13 @@ We can use an "if" statement or a "ternary" operator.
 
 In the example, we have two components: "UserGreeting" and " GuestGreeting".
 
-As we know they can take **props** as a parameter and return JSX.
+As we know, they can take **props** as a parameter and return JSX.
 
 We also need another function called "Greeting", which also takes **props** as a parameter.
 
 Inside this function, we will write our logic.
 
-If we are logged in we return the "UserGreeting" component otherwise we return the "GuestGreeting" component.
+If we are logged-in, we return the "UserGreeting" component otherwise we return the "GuestGreeting" component.
 
 ```js
 function UserGreeting(props) {
@@ -39,7 +39,7 @@ function Greeting(props) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Using ternary operator
 

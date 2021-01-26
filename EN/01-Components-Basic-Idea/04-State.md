@@ -1,6 +1,6 @@
 # State
 
-[slide]
+[slide hideTitle]
 
 # Component State Overview
 
@@ -10,15 +10,15 @@ The **state** object is where we store property values that belong to the compon
 
 When the state object changes, the component re-renders.
 
-Each component can maintain its own state, which lives in the **state** object.
+Each component can maintain its state, which lives in the **state** object.
 
 Changing the **state** will change how the app looks. 
 
-This way we can create apps that are dynamic and interactive.
+This way, we can create apps that are dynamic and interactive.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # State
 
@@ -26,15 +26,15 @@ The state of a component is always initialized with a **default** value when the
 
 We use the term "mount" to describe the process of injecting the component into the DOM tree.
 
-After mounting the component we can modify the state as we wish.
+After mounting the component, we can modify the state as we wish.
 
-Also, we can save the state object to a database and retrieve this object later when we need it.
+We can also save the state object to a database and retrieve this object later when we need it.
 
 We can only modify the state of a component from inside the component.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Component State Example
 
@@ -93,7 +93,7 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Working with States
 
@@ -103,17 +103,17 @@ The **state** is set in the **constructor** as we have seen in the previous exam
 
 If we do not set the state, it will be initialized with a default value.
 
-To access the state use `console.log(this.state)`.
+To access the state, use `console.log(this.state)`.
 
 State must **never** be modified directly, use always the `this.setState()` method instead.
 
-Every time we update the state the component will be rendered again by invoking the `render()` method.
+Every time we update the state, the component will be rendered again by invoking the `render()` method.
 
 Calls to the `setState()` method are asynchronous inside event handlers.
 
-With the `setState()` method we can pass a plain JavaScript object or a callback function to perform some action.
+With the `setState()` method, we can pass a JavaScript object or a callback function to perform some action.
 
-In the example below, we are passing a callback arrow function that takes the previous state as an argument and increments it by 1.
+In the example below, we pass a callback arrow function that takes the previous state as an argument and increments it by 1.
 
 Note that we can pass a **reference** of a function to an event handler but not a **function call**! - `<button onClick={this.updateCount}>`.
 
@@ -144,7 +144,7 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Stateless Component
 
@@ -156,7 +156,7 @@ They only receive **props**.
 
 We do not expect stateless components to make HTTP requests or anything more complex. 
 
-They just render some data and that is it.
+They only render some data, and that is it.
 
 ```js
 function Show(props) {
@@ -168,7 +168,7 @@ function Show(props) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Stateful Component
 

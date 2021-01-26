@@ -1,10 +1,10 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table Of Content
+# Lesson Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Components Overview**
 - Functional vs Class Components

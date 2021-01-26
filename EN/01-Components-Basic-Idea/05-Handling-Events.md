@@ -1,6 +1,6 @@
 # Handling Events
 
-[slide]
+[slide hideTitle]
 
 # Handling Events 1
 
@@ -16,13 +16,13 @@ With JSX we pass a function as an event handler, rather than a string.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Handling Events 2
 
-With React we do not need to call the `addEventListener()` method to add listeners to a DOM element.
+In React, we do not need to call the `addEventListener()` method to add listeners to a DOM element.
 
-We simply provide a listener as it is shown in the example:
+We simply provide a listener as shown in the example:
 
 ```js
 <button onClick={this.clickHandler}>
@@ -32,13 +32,13 @@ We simply provide a listener as it is shown in the example:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Handling Events 3
 
 There are two ways in which we can pass arguments to event handlers.
 
-One is using **arrow functions** and the other is using the `bind()` method.
+We can use **arrow functions**, or we can do it with the `bind()` method.
 
 As you have probably seen, when we create an event handler method, we always need to add `this` to the constructor, to bind `this`.
 
@@ -46,7 +46,9 @@ There is no need to create a constructor method only for binding our methods.
 
 There should be another solution, and that is using arrow functions.
 
-We have created a new anonymous function, which automatically binds `this`, that is why we do not need to use the `.bind()` method.
+We have created a new anonymous function, which automatically binds `this`.
+
+That is why we do not need to use the `.bind()` method.
 
 ```js
 <button onClick={(e) => this.deleteRow(id, e)}>
@@ -66,7 +68,7 @@ We need to bind `this` value from the function to our class as we know each func
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Handling Events 4
 
@@ -99,7 +101,7 @@ When we click the button, we will call the "clickHandler" function, update the s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SynteticEvent
 
@@ -117,7 +119,7 @@ function onClick(event) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event Pooling
 
@@ -125,7 +127,7 @@ The SyntheticEvent objects are pooled.
 
 This means that the SyntheticEvent object will be reused and all properties will be nullified after the event handler has been called. 
 
-For example, this will not work, because we cannot access the event in **async** way.
+For example, this will not work because we cannot access the event in **async** way.
 
 ```js
 function handleChange(e) {

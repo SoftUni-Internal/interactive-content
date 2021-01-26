@@ -1,12 +1,12 @@
 # Components Overview
 
-[slide]
+[slide hideTitle]
 
 # Components
 
-Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+Components let you split the UI into independent, reusable pieces and think about each piece in isolation.
 
-Each component has its own logic and controls its own rendering, and can be reused wherever you need them.
+Each component has its logic, controls its rendering, and can be reused wherever you need them.
 
 There are two types of components that we can define.
 
@@ -14,7 +14,7 @@ These are **Functional** components and **Classes** components.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Functional Component
 
@@ -26,7 +26,7 @@ Here is a simple example of a React function that accepts **props** and returns 
 
 **JSX** allows us to wright **HTML** in React. **JSX** stands for **JavaScript XML**.
 
-To be able to display variables we use curly braces as shown in the example below.
+To be able to display variables, we use curly braces shown in the example below.
 
 ```js
 function Person(props){
@@ -36,11 +36,11 @@ function Person(props){
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Class Component
 
-To create a class component we need a simple JavaScript class, that extends `React.Component` class.
+To create a class component we need a simple JavaScript class, that extends the `React.Component` class.
 
 This way we can have access to all the methods in the "React.Component" class.
 
@@ -58,7 +58,7 @@ class Person extends React.Component {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Component Syntax
 
