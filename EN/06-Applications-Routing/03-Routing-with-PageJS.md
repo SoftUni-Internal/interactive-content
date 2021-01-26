@@ -4,25 +4,17 @@
 
 # Introduction to page.js
 
-`Page.js` is a client-side router, which uses **string-to-regexp** conversion.
+**Page.js** is a client-side router, which uses **string-to-regexp** conversion.
 
-With pageJs, we can pass multiple parameters.
+We need to install it from **npm** with the following command: `npm install page`.
 
-To use pageJs, we need to install it from the **package manager**.
+We can pass multiple parameters to **page.js**.
 
-We will use **npm**, so to install it, you need to write the following command: `npm install page`.
+Defining a route is done with **callbacks**.
 
-Define a route mapping is done with **callbacks**.
+Every callback is called with **context** and **next** parameters.
 
-Every callback is called with two parameters.
-
-They are:
-
-- **context**
-
-- **next**
-
-When we call the next callback, it will invoke the next registered one with the given path.
+When we pass the **next** callback, it will instantiate the next registered callback from the path.
 
 Here is an example:
 
@@ -31,21 +23,19 @@ page('/', user.list);
 page('/user/:id', user.load, user.show);
 ```
 
-In this example, we are setting the URL and the callback.
+In this example, we set the URL and the callbacks: `user.load` and `user.show`.
 
-Which are `user.load` and `user.show`.
+After the `user.load` is ready, the `user.show` will be executed.
 
-After the `user.load` is done it will execute `user.show`.
+## Redirecting with PageJS
 
-Now let us see how we can redirect with page.js.
+To redirect we can call `page.redirect()`.
 
-For redirecting we can call `page.redirect()`.
+This method receives only the **path** as a parameter.
 
-This method receives only one parameter, which is the **path**.
+It waits for the state of the current route and replaces it with a new one.
 
-It waits to see the state of the current route, and after that, it replaces it with a new one.
-
-After the redirect, it will leave the browser history object clean.
+After the redirect, it will leave the **browser history object** clean.
 
 Here is how `redirect()` looks:
 
@@ -59,8 +49,10 @@ page('/default', function () {
 });
 ```
 
-In this example, in the callback, we check if the user is an admin or not.
+In this example, we check if the user is an **admin** or **not**.
 
-If the user is admin, it will redirect to `/admin`. But if not, it will redirect to `/guest`.
+If it is admin, it will redirect to the `/admin` page.
+
+If not, it will redirect to `/guest`.
 
 [/slide]

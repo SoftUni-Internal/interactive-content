@@ -1,35 +1,35 @@
 # Routing Basics
 
 [slide hideTitle]
-# Multi-Page Applications
+# Multi Page Applications
 
-The multi-page applications reload the entire page when a user interacts with the app.
+**Multi Page Applications** reload the entire page when a user interacts with the app.
 
-Also, the data is exchanged when a new page is **requested**.
+We exchange data when a new page is **requested**.
 
-After the server returns a response, the new page is displayed in the browser.
+After the server returns a response, a new page is displayed in the browser.
 
-We can define that an application is a multi\-page application when the **reload** icon is triggered.
+We can define an application as a **Multi Page Application** when the **reload** icon gets triggered.
 
 [/slide]
 
 [slide hideTitle]
 
-# Multi-Page Pros and Cons
+# Multi Page Pros and Cons
 
-Let us have a look at some of the **pros** and **cons** of the multi-page application.
+**Multi Page Application** have **pros** and **cons** .
 
-We will start with the pros:
+Let us check some of the **pros**:
 
 - They perform very well in **search engines**.
 
 - They provide a **visual map** of the application when shared through a link in social media.
 
-Now let us have a look at their **cons**:
+Now have a look at the **cons**:
 
 - They are **complex to develop**.
 
-- The Front-End and the Back-End are coupled.
+- The Front-End and the Back-End are **coupled**.
 
 [/slide]
 
@@ -37,23 +37,25 @@ Now let us have a look at their **cons**:
 
 # Single Page Application
 
-Single-Page Application or **SPA** is the evolution of the multi-page application.
+**SPA** is an abbreviation for **Single-Page Application**.
 
-SPAs **dynamically update** the content of the page, instead of **reloading** the whole page.
+They are an evolution of the **Multi Page Application**.
 
-They use **HTML5**, **CSS**, and **AJAX** to create a fluid and responsive user interface, which is operated by the user.
+**SPA**s **dynamically updates** the page content, instead of **refreshing** it.
 
-SPA will re\-render the content in response to the user actions.
+They **re-render** the content in response to the user's actions.
 
-It can use state from **internal** or **external** source.
+**SPA**s use **HTML5**, **CSS**, and **AJAX** to create a fluid and responsive user interface operated by the user.
+
+To create that experience, SPAs use state from **internal** or **external** sources.
 
 The internal state is **limited** to only one entry.
 
-And there are the location\-based SPAs, in which the location is always updating.
+We also have location-based **SPA**s, in which the location is always updating.
 
-That means that we can share a link and be sure that anyone can that opens it will see what we see.
+That means that we can share a link and be sure that anyone that opens it will see the wanted page.
 
-Also, location\-based ones need a special object called **Router**.
+Location-based SPAs need a special object called **Router**.
 
 [/slide]
 
@@ -61,50 +63,55 @@ Also, location\-based ones need a special object called **Router**.
 
 # SPA Pros and Cons
 
-So what are the Single Page Applications pros and cons?
+**Single Page Applications** also have **pros** and **cons**.
 
-First, let us have a look at the pros:
+Here are the **pros**:
 
 - They are a lot faster.
 
-- They load all scripts **only once**.
+- They load all of the needed scripts at **once**.
 
-- We can use browser **history** with them.
+- With SPAs, we can use the browser **history**.
 
-- They have better **UX**
+- They provide better **UX**
 
-Now, let us see what are the cons:
+Let us see the cons:
 
 - They are not good at **SEO**.
 
-   - The solution is **server-side rendering**.
+   - The solution is the **server-side rendering**.
 
-- They provide **single sharing link**.
+- They provide a **single sharing link**.
 
-- They can be less secure if the data is stored on the front\-end.
+- If we store data on the front-end, they can be less secure
 
 [/slide]
 
 [slide hideTitle]
+
 # Multi and Single Page Application Lifecycle
 
-We will start with **Multi-Page Application's** lifecycle.
+Both **Multi Page Application's** and **Single Page Application** have their lifecycle.
+
+On this image is the **Multi Page Application's** lifecycle.
 
 [image assetsSrc="JS-Applications-Routing.png" /]
 
-In this image, we see that the user sends a request and the server responses with HTML.
+We see that when a user **sends a request**, the server **responds with HTML**.
 
-But on every response, the page reloads.
+After every response, the page **reloads**.
 
-Now, let us have a look at the **Single Page Application** lifecycle.
+Let us have a look at the **Single Page Application** lifecycle.
 
 [image assetsSrc="JS-Applications-Routing-1.png" /]
 
-Here we see that on the initial request, the server responds with HTML.
+In this image, we see that on the **initial request**, the server responds with HTML.
 
-But every other request is made with AJAX, and the response is a JSON.
+But on every other request, the response is a **JSON**. 
 
-The page updates itself without reloading, which is a lot faster.
+That is because we made the requests with **AJAX**.
+
+The page updates itself without refreshing, which gives the feeling for a lot faster application.
 
 [/slide]
 
@@ -112,23 +119,25 @@ The page updates itself without reloading, which is a lot faster.
 
 # Navigation Types
 
-The types of navigation are the standard and the navigation using **Routing**.
+There are two types of navigation: a **standard** one and navigation using **Routing**.
 
-In the standard navigation, we use hyperlinks.
+The standard navigation is used in the **Multi Page Applications**. 
 
-And we are using it in **Multi-Page Applications** because the standard navigation reloads the page.
+It uses **hyperlinks** to navigate through the application.
+
+Because it uses **hyperlinks**, the standard navigation reloads the entire page.
 
 [image assetsSrc="JS-Applications-Routing-2.png" /]
 
-We use the **Routing** navigation in SPAs because it simulates the standard one without the reloading part.
+The other type is the **Routing** navigation. 
+
+We use it in **SPA**s because it simulates the standard one without refreshing the page.
 
 [image assetsSrc="JS-Applications-Routing-3.png" /]
 
-This navigation allows us after everything is rendered, to update the content and the URL.
+The **Routing** navigation allows us to update the URL and the content after everything is rendered.
 
-With this type of navigation, the app will not reload unless we press `F5`.
-
-That is why on user's actions, the **reload icon** does not get triggered.
+The **reload icon** will not get triggered unless the user refreshes the page by clicking `F5`.
 
 [/slide]
 
@@ -136,28 +145,30 @@ That is why on user's actions, the **reload icon** does not get triggered.
 
 # Query Parameters
 
-The **query parameters** are a set of parameters attached to the end of the URL.
+The **query parameters** are a set of parameters attached to the end of a URL.
 
-They give us the ability to personalize the request to the API.
+They give us the ability to **personalize** the sent request to the API.
 
-Some common use cases are:
+Here are some use cases to use query parameters:
 
-- When we want to filter.
+- If we want to filter.
 
-- When we want to sort.
+- If we want to sort.
 
-- When we want to display the current page number in the pagination collection.
+- If we want to display the current page number in a pagination collection.
 
-Let us have a look at this example:
+Have a look at this example:
 
 [image assetsSrc="JS-Applications-Routing-4.png" /]
 
 In this example, we have an URL.
 
-The first part is the **protocol** that is used.
+The **protocol** is the first part of the URL.
 
-After we have the **hostname** and the **pathname**.
+After the protocol, we have the **hostname** and the **pathname**.
 
-After they are the query parameters, in this case, they are the key, its value, and the tag that indicates that the item is trending.
+In this case, the query parameters are in the end. 
+
+They are the **key**, its **value**, and the **tag**, which indicates that the item is trending.
 
 [/slide]

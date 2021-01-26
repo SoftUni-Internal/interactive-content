@@ -1,18 +1,14 @@
 [slide hideTitle]
+
 # Summary
 
+# In this lesson you learned:
 
-# In this lesson you learnt:
+- **Multi Page Application** reloads the entire page when the user interacts with the app.
 
--  Multi Page Application
+-  **Single Page Application** dynamically updates the page content without refreshing the application.
 
-   -  reloads the entire page when a user interacts with the it.
-
--  Single Page Application
-
-   -  **dynamically update** the content of the page, instead of **reloading** it.
-
--  What is **Routing**
+-  Types of **Routing**
 
    -  Hash-Based
 
@@ -32,7 +28,7 @@
 
    -  The History API provides access to the browser **history** object.
 
-      -  it gives us also methods like `back()`, `forward()`, `go()` and etc.
+      -  It provides methods like `back()`, `forward()`, `go()` and etc.
 
 ## In the next lesson you will learn:
 

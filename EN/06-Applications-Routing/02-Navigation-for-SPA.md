@@ -1,17 +1,16 @@
 # Navigation for SPA
 
 [slide hideTitle]
+
 # How Routers Work
 
-The main job of a **router** is to load the right content for a specific location, also called URL.
+The **Router** loads the right content for a specific location, also called URL.
 
-We do this so that the user can change the location **manually**.
+We should **update** the address bar on **every change** in the content of the page.
 
-Or to change the location when a user **clicks on a link**.
+The **Router** allows the user to change the location **manually** or by clicking a **link**
 
-That means every change in the content should be indicated in the address bar.
-
-When we are using the **router**, we can give the **user** a better **experience**.
+It gives the **user** a better **experience**.
 
 [/slide]
 
@@ -19,25 +18,23 @@ When we are using the **router**, we can give the **user** a better **experience
 
 # Hash Based Routing
 
-We use **hash-based** routing when we want to deep link a section of an application.
+We use **hash-based** routing to deep link a section of a page.
 
 This type of navigation simulates the loading of different content.
 
-Also, **hash-based routing** does **not** reload the page.
+**Hash-based routing** does **not** reload the page.
 
-To extract hash from the url we use:
+To extract the hash from the URL, we use:
 
 ```js
 window.location.href.split('#')[1] || '';
 ```
 
-`Window.location.href` will return us the whole URL.
+If we use only `window.location.href`, we will retrieve the whole URL.
 
-So that is why, after we got the URL, we are using `split()`.
+To extract the hash, we need to use `split('#')`.
 
-After we split with `#` the URL, we got the hash.
-
-If we want to change the path, it will look like this:
+We can change the location like this:
 
 ```js
 let changePath = function (path) {
@@ -46,13 +43,19 @@ let changePath = function (path) {
 };
 ```
 
-In this example, first, we got the **URL**.
+We set the current URL in a variable called **currentPath**
 
-And after that, we set `window.location.href` to the same URL but with a changed hash.
+After, we set `window.location.href` to the same URL but with a changed hash.
 
-We pass the hash to the function's parameter **path**.
+[/slide]
 
-And now let us see how to subscribe for changes:
+[slide hideTitle]
+
+# Subscribing for Changes
+
+We can subscribe for changes in the url.
+
+The subscribing looks like this:
 
 ```js
 let url = undefined;
@@ -72,17 +75,15 @@ let listen = function () {
 listen();
 ```
 
-In this example, we have two functions.
+We have two functions, `getCurrent()` and `listen()`, `getCurrent()` returns the **hash**.
 
-The first one returns the **hash**, and the other one **listens** for a change.
+The function that we are interested in is the `listen()` function.
 
-The function that we are interested in is the second one.
+In this function, we check if the current hash is different.
 
-In the second function, first, we get the current hash and check if it is different.
+If not, we assign the hash to the **URL** variable.
 
-If not, we assign it to the **URL** variable.
-
-After that, we set a **timeout** to 200ms, at which the function to be called.
+After, we set a **timeout** to 200ms, at which the function to be called.
 
 [/slide]
 
@@ -90,28 +91,31 @@ After that, we set a **timeout** to 200ms, at which the function to be called.
 
 # Push Based Routing
 
-Push-based routing is the more modern way to handle navigation.
+The **push-based** routing is a more modern way to handle navigation.
 
-This way allows us to show real **server-side data** this can help with SEO and Facebook Open Graph.
+It allows us to show real **server-side data**. 
 
-The push-based routing helps with **analytics** and also fix **hashtag issues**.
+That can help with **SEO** and **Facebook Open Graph**.
 
-In this way, we can use the hashtag for what it is made, for the deep linking of sections of a long page.
+The **push-based** routing helps with **analytics** and fix **hashtag issues**.
+
+This routing allows us to use the **hash-based** routing as intended.
 
 [/slide]
 
 [slide hideTitle]
+
 # History API
 
 The History API provides access to the browser **history** object.
 
-With history object we can use methods like `back()`, `forward()`, `go()` and etc.
+With history object we can use methods like `back()`, `forward()` and `go()`.
 
 This method allows us to have the native navigation that users want.
 
-In **HTML5** are introduced `history.pushState()` and `history.replaceState()`.
+In **HTML5** were introduced `history.pushState()` and `history.replaceState()`.
 
-These methods allow us to add and modify the **history object entries**.
+These methods can modify and add to the **history object entries**.
 
 They work in combination with the **popstate** event.
 
@@ -121,26 +125,28 @@ They work in combination with the **popstate** event.
 
 # The PushState Method
 
-Firstly, we will have a look at the `pushState()` method.
+We will have a look at the `pushState()` method.
 
-The **PushState** method adds a new entry to the browser's history object.
+The **PushState** method adds a new entry to the **history object** of the browser.
 
 This method takes three parameters.
 
-- The first one is the **state**, which is associated with the new entry.
+- The **state** is associated with the new entry.
 
-- The second parameter is **Title** this one is ignored by most of the browser nowadays.
+- The **Title** is ignored by most of the browser nowadays.
 
-- The third one is the **URL**, which is the new history entry, and it must be from the **same-origin** as the current URL.
+- The **URL** is the new history entry, and it must be from the **same origin** as the current URL.
+
+Here is an example:
 
 ```js
-let stateObj = { facNum: '56789123' };
-history.pushState(stateObj, '', 'student.html');
+let productId = { productId: '56789123' };
+history.pushState(productId, '', 'product.html');
 ```
 
-In this example, we have an object, which is the first parameter.
+We call the `history.pushState()` method and pass the parameters.
 
-And After we call the `history.pushState()` method and pass the parameters.
+The browsers ignores the second parameter, and that is why it is an empty string.
 
 [/slide]
 
@@ -148,32 +154,24 @@ And After we call the `history.pushState()` method and pass the parameters.
 
 # The ReplaceState Method
 
-Let's examine `replaceState()`.
+Let us examine `replaceState()`.
 
-**ReplaceState**, unlike **pushState**, does not create a new entry but modifies the current one.
+**ReplaceState** modifies the current entry.
 
-It takes three parameters.
+It takes **State**, **Title**, and **URL** as parameters.
 
-Which are:
+The **Title** parameter will be ignored, by most of the browsers.
 
-- State
-
-- Title
-
-- URL
-
-This method is useful when we want to update the **state object** or the **URL**, not to create a new one.
+**ReplaceState** is useful if we want to update the **state object** or the **URL**.
 
 Here is an example of `replaceState()`:
 
 ```js
-let stateObj = { facNum: '56789123' };
-history.replaceState(stateObj, '', 'newStudent.html');
+let student = { studentId: '56789123' };
+history.replaceState(student, '', 'newStudent.html');
 ```
 
-In this example, we have an object, which is the first parameter.
-
-And After we call the `history.replaceState()` method and pass the parameters, it will update the current entry.
+After we instantiate the `replaceState()` method, it will modify the current history entry.
 
 [/slide]
 
@@ -183,11 +181,12 @@ And After we call the `history.replaceState()` method and pass the parameters, i
 
 The **popstate event** listens for changes in the state.
 
-When the active history object changes, this event is triggered.
+The event will trigger when the history object changes.
 
-It updates the current entry to the last that the user has visited.
+**Popstate event** will update the current entry to the last that the user has visited.
 
-This event listener contains a copy of the history entry\'s object, if we use `pushState()` or `replaceState()`.
+if we use `pushState()` or `replaceState()`, the **event listener** will store a copy of the history object.
 
-We can read the state of the current history object, without waiting for the **popstate** event which is using `history.state.property`.
+We can read the current history object with `history.state.property` without waiting for the **popstate** event.
+
 [/slide]
