@@ -37,7 +37,7 @@ Create a collection called **shoes.**
 
 Each shoes has a **name**, **price**, **imageUrl**, **description**, **brand**, **creator** and **people bought it.**
 
-**2. mCreate Shoes Application**
+**2. Create Shoes Application**
 
 ## HTML and CSS
 You have been given the web design of the application as **HTML** \+ **CSS** files.
