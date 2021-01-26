@@ -2,11 +2,7 @@
 
 # What is SQL Injection?
 
-In the previous part of the lesson, we learned how to send raw SQL statements to the database.
-
-This practice leaves us in danger of an SQL injection attack.
-
-It's a technique with which they insert malicious SQL statements into a user input field.
+SQL Injection is a technique with is used to insert malicious SQL statements into a user input field.
 
 This way the abuser can harvest information directly from our database, which is a huge problem for our web applications.
 
