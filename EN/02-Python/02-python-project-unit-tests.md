@@ -10,8 +10,6 @@
 ... 
 [/task-description]
 
-[/slide]
-
 [tests]
 [test open]
 [input]
