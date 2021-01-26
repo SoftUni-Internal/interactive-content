@@ -231,7 +231,7 @@ In this way, the decorated ebook reader would have an additional property and th
 [stream language="RO" videoId="497193882/25a78c5ed5"  /]
 [/video-vimeo]
 
-[image assetsSrc="design-patterns-14.png" /]
+[image assetsSrc="js-application-design-patterns-14.png" /]
 
 The **facade pattern** is used a lot in multi-layer applications where only certain logic and functionality need to be exposed to different clients, shielding them from any complex business logic that clients do not need to be concerned with. 
 
