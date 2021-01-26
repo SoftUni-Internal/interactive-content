@@ -75,7 +75,7 @@ HTTP/2 requires for both parties to keep an updated indexed list of all **Header
 
 The process is essentially a de-duplication, rather than compression.
 
-[image assetsSrc="02-Java-Spring-Fund-HTTP(16).png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP(16).jpg" /]
 
 [/slide]
 
@@ -95,7 +95,7 @@ That is why in HTTP/2.0 the server can push its resources without the client ask
 
 This brings is additional performance benefits.
 
-[image assetsSrc="02-Java-Spring-Fund-HTTP(17).png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP(17).jpg" /]
 
 [/slide]
 
