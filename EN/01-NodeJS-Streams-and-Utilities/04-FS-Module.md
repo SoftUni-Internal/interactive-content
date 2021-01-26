@@ -1,6 +1,6 @@
 # FS Module
 
-[slide]
+[slide hideTitle]
 
 # Working with the File System
 
@@ -35,15 +35,15 @@ let data = fs.readFile('./package.json', 'utf8', (err, data) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # List files in a directory
 
-The `readdirSync()` method is used to synchronously read the contents of a given directory.
+Use the `readdirSync()` method to read the contents of a given directory synchronously.
 
 The method returns an array with all the file names or objects in the directory. 
 
-The options argument can be used to change the format in which the files are returned from the method.
+Use the options argument to change the format in which the files are returned from the method.
 
 The method accepts two parameters:
 
@@ -77,11 +77,11 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create a directory
 
-To create a directory synchronously use the `mkdirSync()` method.
+Use the `mkdirSync()` method to create a directory synchronously.
 
 ```js
 fs.mkdirSync('./myDir');
@@ -101,11 +101,11 @@ fs.mkdir('./myDir', err => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Rename file or directory
 
-To rename a file or a directory synchronously use the `renameSync()` method.
+Use the `renameSync()` method to rename a file or a directory synchronously.
 
 ```js
 fs.renameSync('./oldName', './newName');
@@ -125,11 +125,11 @@ fs.rename('./oldName', './newName', err => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Write to a file
 
-When writing data to a file we need to specify the path to the file first.
+When writing data to a file, we need to specify the path to the file first.
 
 After that, we can use synchronous or asynchronous methods to write the data to the file.
 
@@ -151,7 +151,7 @@ fs.writeFile(filePath, data, err => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Delete a file
 

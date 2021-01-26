@@ -1,6 +1,6 @@
 # Streams
 
-[slide]
+[slide hideTitle]
 
 # Stream
 
@@ -24,13 +24,13 @@ All streams are instances of the "EventEmitter".
 
 **Duplex** - both **readable** and **writable**.
 
-**Transform** - it is a Duplex stream where the output is in some way related to the input.
+**Transform** - it is a Duplex stream where the output is, in some way, related to the input.
 
 Like all Duplex streams, Transform streams implement both the Readable and Writable interfaces.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Readable Stream
 
@@ -38,19 +38,19 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 There are many useful functions that we can use on readable Streams.
 
-The `.read()` method is used to read the data out of the internal buffer. 
+Use the `.read()` method to read the data out of the internal buffer. 
 
 It returns data as a buffer object if no encoding is being specified or if the stream is working in object mode.
 
 This method accepts a single parameter **size**, which specifies the number of bytes to be read from the internal buffer.
 
-If no data exist in the buffer then **null** is returned.
+If no data exist in the buffer, then **null** is returned.
 
 ```js
 readable.read(size);
 ```
 
-The `.pause()` method is used to stop the flowing mode from emitting data events. 
+Use the `.pause()` method to stop the flowing mode from emitting data events. 
 
 Any data that becomes accessible will continue to exist in the internal buffer.
 
@@ -60,7 +60,7 @@ This method does not accept any parameters.
 readable.pause();
 ```
 
-The `.resume()` method is used to data that has been paused and can be resumed so that data can start flowing again.
+Use the `.resume()` method for data that has been paused and can be resumed so that data can start flowing again.
 
 This method does not accept any parameters.
 
@@ -72,19 +72,19 @@ readable.resume();
 
 All streams are instances of "EventEmitter". 
 
-They emit events that can be used to read and write data.
+They emit events used to read and write data.
 
 The most important events on a readable stream are:
 
-The **data** event is emitted whenever the stream passes a chunk of data to the consumer.
+The **data** event - is emitted whenever the stream passes a chunk of data to the consumer.
 
-The **end** event is emitted when there is no more data to be received from the stream.
+The **end** event - is emitted when there is no more data to be received from the stream.
 
-The **error** event is emitted when there is an error receiving data.
+The **error** event - is emitted when there is an error receiving data.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Readable Stream Example
 
@@ -92,19 +92,19 @@ An HTTP request is an instance of a readable stream.
 
 Take a look at the following example.
 
-To be able to create a server we need to require the "HTTP" module from Node.js.
+To create a server, we need to require the "HTTP" module from Node.js.
 
 Then we use the `createServer()` method to create a server on your computer.
 
 This is a function that receives two callbacks - **req** and **res**.
 
-**req** stands for request and **res** stands for the response.
+**req** stands for request, and **res** stands for the response.
 
-The `req.on()` method binds an event to an object and adds a listener function for a specified event.
+The `req.on()` method binds an event to an object and adds a listener function for a specific event.
 
-With the "data" event we attach the data to the `body` variable.
+With the "data" event, we attach the data to the `body` variable.
 
-With the "end" event we end the data transfer.
+With the "end" event, we end the data transfer.
 
 The `.listen()` method creates a listener on the specified port or path.
 
@@ -123,7 +123,7 @@ http.createServer((req, res) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Writable Stream
 
@@ -131,13 +131,13 @@ http.createServer((req, res) => {
 
 The `.write()` method takes three arguments:
 
-The chunk is usually, a buffer unless we configure the stream differently.
+The chunk is a buffer unless we configure the stream differently.
 
-The encoding argument is needed in that case, but usually we can ignore it.
+We need the encoding argument in that case, but usually, we can ignore it.
 
 The callback is a function that we need to call after we are done processing the data chunk.
 
-It is what signals whether the write was successful or not. 
+It is what signals whether the writing was successful or not. 
 
 To signal a failure, call the callback with an error object.
 
@@ -191,7 +191,7 @@ The **error** event is emitted when there is an error writing data.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Writable Stream Example
 
@@ -205,7 +205,7 @@ We start reading from a file called `./bigfile.txt`, which is the name of the fi
 
 Then we use the `write()` method to write the data inside `src.on()` function.
 
-Finally, we use `end()` method to finish writing the data.
+Finally, we use the `end()` method to finish writing the data.
 
 ```js
 const fs = require('fs');
@@ -220,7 +220,7 @@ server.listen(5000);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Piping Streams
 
@@ -230,7 +230,7 @@ Here is an example of how we can transfer data using pipes.
 
 The `pipe()` function allows a readable stream to output directly to a writable stream.
 
-We read from the `./bigfile.txt` and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
+We read from the `./bigfile.txt`, and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
 
 ```js
 const fs = require('fs');
@@ -244,13 +244,13 @@ server.listen(5000);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Duplex and Transform Streams
 
 A duplex stream is one that is both readable and writable similar to a Transform stream. 
 
-However, most often a Duplex stream is usually referring to a stream that actually has two full independent streams embedded in it, one flowing out and one flowing in.
+However, most often a Duplex stream is usually referring to a stream that has two independent streams embedded in it, one flowing out and one flowing in.
 
 A transform stream is a special kind of duplex stream where the output is a transformed version of the input.
 

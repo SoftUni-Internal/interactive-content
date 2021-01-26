@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learnt:
 
 - Pub/Sub pattern is used to communicate messages.
 - Node.js has various useful utility modules.
@@ -31,7 +31,7 @@ let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
 ```
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
 - Express​
 - View Engines

@@ -1,10 +1,10 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table of Content
+# Lesson Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Pub/Sub Pattern**
 - Publish-Subscribe Pattern
