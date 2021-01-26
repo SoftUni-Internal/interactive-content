@@ -1,7 +1,7 @@
 [slide]
 
-# Java Unit Tests
-[code-task title="Java Unit Tests" taskId="Java-Unit-Tests" executionType="tests-execution" executionStrategy="Java-code" requiresInput]
+# java-unit-tests
+[code-task title="Java Unit Tests" taskId="Java-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 [code-editor language=java-code]
 ```
 
