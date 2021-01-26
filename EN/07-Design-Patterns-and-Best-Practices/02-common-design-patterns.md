@@ -34,7 +34,6 @@ It calls upon the factory and receives the created object.
 
 - When you need to create a **loosely coupled system**.
 
-
 ## When not to use
 
 If applied incorrectly it can introduce a lot of unnecessary complexity into the code. 
