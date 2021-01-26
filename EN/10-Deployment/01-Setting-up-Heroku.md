@@ -14,13 +14,13 @@ Open a command\-line window and type in:
 
 If the output shows a **version number**, you are **ready to go**.
 
-In case your command goes **unrecognised**, proceed to the following steps.
+In case your command goes ** unrecognized**, proceed to the following steps.
 
 ## Installing on Windows
 
 To install Git on **Windows**, [click here](https://git-scm.com/download/win).
 
-Choose the Git build for your version of Windows (**32-bit** or **64-bit**), and **download** it.
+Choose the Git to build for your version of Windows (**32-bit** or **64-bit**), and **download** it.
 
 Then, **open the installation file** and go through the **setup process**.
 
@@ -28,7 +28,7 @@ Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), wh
 
 ## Installing on macOS
 
-Installing Git on **macOS** requres **Homebrew**.
+Installing Git on **macOS** requires **Homebrew**.
 
 To install Homebrew, open **Terminal** and paste in:
 
@@ -76,7 +76,7 @@ This command will open a **login page** in your default browser.
 
 If you **do not have** a Heroku account, click on `Sign up`.
 
-After **registering** and **confirming your e-mail**, you will be requred to create a **password**.
+After **registering** and **confirming your e-mail**, you will be required to create a **password**.
 
 Once that is done, you will be **automatically** logged into Heroku CLI.
 

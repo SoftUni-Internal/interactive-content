@@ -4,8 +4,8 @@
 
 # In this lesson you learnt:
 
-- Heroku is Plaform-as-a-Service solution
-  - Heroku CLI is used together with Git to manage and scale applications, provision add\-ons and many more features
+- Heroku is a Platform-as-a-Service solution
+  - Heroku CLI is used together with Git to manage and scale applications, provision add-ones and many more features
 
 `heroku create my-node-app`
 
@@ -20,7 +20,7 @@
 
 ## In the next lesson you will learn:
 
-- Exam Preparation \- Building a Single Page Application using:
+- Exam Preparation - Building a Single Page Application using:
   - Express
   - MongoDB 
   - Mongoose 

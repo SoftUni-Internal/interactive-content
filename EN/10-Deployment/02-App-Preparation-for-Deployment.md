@@ -4,11 +4,11 @@
 
 # App Preparation
 
-## Track your codebase in a Git repostiory
+## Track your codebase in a Git repository
 
-To **initialise a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
+To ** initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
 
-It is recommended to exclude **non-essential files and directories** that **take up space** from being commited to our repository.
+It is recommended to exclude **non-essential files and directories** that **take up space** from being committed to our repository.
 
 Create a file, called `.gitignore` and paste the following code inside:
 
@@ -63,7 +63,7 @@ Next, **deploy** your application using `git push heroku master`
 
 To make sure there is at least **one active instance** of the app, type `heroku ps:scale web=1`
 
-We have created a **new process**, called `web`, which will r**eceive web traffic** when deployed.
+We have created a **new process**, called `web`, which will **receive web traffic** when deployed.
 
 You can visit your newly created app by simply typing `heroku open` or visiting `name_of_your_heroku_project.herokuapp.com`.
 
@@ -81,7 +81,7 @@ If you have created a `start` script in `package.json`, paste the following code
 
 `web: npm start`
 
-Otherwise you can just **run your main file**, most often `index.js` or `server.js`, using `node`:
+Otherwise, you can just **run your main file**, most often `index.js` or `server.js`, using `node`:
 
 `web: node index.js`
 
@@ -120,7 +120,7 @@ Heroku uses Linux containers called **dynos** to run your code.
 
 If your application stores **data** in the local filesystem, you will need to set up a **database**.
 
-Assumming your application uses **MongoDB** or a **similar relational database**, you are **ready to go**.
+Assuming your application uses **MongoDB** or a **similar relational database**, you are **ready to go**.
 
 Another popular solution is **Heroku Postgres**, which you can learn more about [here](https://devcenter.heroku.com/articles/heroku-postgresql).
 
