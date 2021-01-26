@@ -12,7 +12,7 @@ To include the File System module, use the `require()` method.
 let fs = require('fs');
 ```
 
-Commonly useed functions for the File System module:
+Commonly used functions for the File System module:
 - Read files
 - Create files
 - Update files
