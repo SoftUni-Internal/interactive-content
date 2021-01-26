@@ -25,7 +25,7 @@ Whereas when you want to create custom HTTP Requests and see how the server is r
 [image assetsSrc="02-Java-Spring-Fund-HTTP(6).png" /]
 
 ### Insomnia Rest - Dekstop
-[image assetsSrc="02-Java-Spring-Fund-HTTP(7).png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP(7).jpg" /]
 
 
 [/slide]
