@@ -12,7 +12,7 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/fZgHjC7Z#ai8TE
 
 # Problem: Books
 
-Use thge database of your choice, **Firebase** or **Backendless**.
+Use thе database of your choice, **Firebase** or **Backendless**.
 
 Create a collection called **books** where each book have a **title**, an **author**, an **isbn**.
 
@@ -24,7 +24,7 @@ You have to implement the following functionality:
 
 **List All Books**.
 
-Use the skeleton provided in resources folder. Add an **AJAX** call that takes all books from your application as **JSON** object and **displays** them when the page loads.
+Use the skeleton provided in the resources folder. Add an **AJAX** call that takes all books from your application as **JSON** object and **displays** them when the page loads.
 
 **Create a Book**.
 
@@ -40,7 +40,7 @@ By clicking the "Edit" button, the book data should be updated at the server sid
 
 Implement "Delete a Book" functionality. Each book should have a "Delete" button. Clicking on it should delete the book at the server side with an **AJAX request**.
 
-This is how the web page will look like when initialized for the first time.
+Here is how the web page will look like when initialized for the first time.
 
 [image assetsSrc="Remote-Databases(15).png" /]
 
@@ -61,7 +61,7 @@ Each student has:
 - FacultyNumber - a string of numbers, non-empty.
 - Grade - a number, non-empty.
 
-You need to write functionality for creating students. 
+Write functionality for creating students. 
 
 When creating a new student, make sure you name the properties accordingly. 
 
@@ -87,9 +87,9 @@ Use the skeleton from the provided resources.
 
 **This task is not included in the final result**.
 
-Write a REST services for a simple Western game. 
+Write REST services for a simple Western game. 
 
-Create a collection called "players", each player having a name, money and bullets to hold information about the players in the game.
+Create a collection called "players", each player having a name, money, and bullets to hold information about the players in the game.
 
 - name - a string representing the name of the current player.
 - money - an integer number representing the current player’s money.
@@ -121,9 +121,9 @@ Pressing the "Play" button on a player should:
 - Call the "Save" button.
 - Display the canvas, "Save" and "Reload" buttons.
 - Call the "loadCanvas()" function from the "loadCanvas.js" file.
-- Pass to it the **new player** as an **object**, containing those properties name, money and bullets.
+- Pass to it the **new player** as an **object**, containing those properties name, money, and bullets.
 
-When a player’s "Delete" button is pressed, the player should be deleted, both from the HTML and from the server.
+When a player’s "Delete" button is pressed, the player should be deleted, both from the HTML and the server.
 
 [image assetsSrc="Remote-Databases(17).png" /]
 
