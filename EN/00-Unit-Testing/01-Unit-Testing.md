@@ -52,7 +52,7 @@ It shows problems and bugs before the product has an integration test.
 
 Unit tests make the process of debugging easier.
 
-Unite tests force **better code and design** whether you are using C\#, Java, Python, JavaScript, or Php. 
+They force **better code and design** whether you are using C\#, Java, Python, JavaScript, or Php. 
 
 It means you have a well-defined code with high cohesion.
 
