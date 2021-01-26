@@ -16,7 +16,7 @@ System.out.println("I am coding");
 
 [slide hideTitle]
 
-# Example: Simple Commands
+# Exemplu: Comenzi simple 
 
 
 [/slide]
@@ -59,7 +59,7 @@ Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și c
 
 [slide hideTitle]
 
-# Example: Complete Computer Program
+# Exemplu: Program de calculator complet
 
 [/slide]
 
