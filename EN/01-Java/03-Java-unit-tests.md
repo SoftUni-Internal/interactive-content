@@ -15,6 +15,7 @@ Test the Java-Unit-Tests with that task
 [tests]
 [test]
 [input]
+
 ~~!!!==\#==!!!~~
 //christmas/Present.java
 package christmas;
@@ -92,7 +93,7 @@ public class PresentBag \{
                 .orElse(null);
 
         return present;
-    \}#130-0
+    \}
     public Present getPresent(String name) \{
         Present present = this.data
                 .stream()
@@ -293,7 +294,7 @@ public class PresentBag \{
     \}
     public Present getPresent(String name) \{
         Present present = this.data
-                .stream()#130-0
+                .stream()
                 .filter(p -\> p.getName().equals(name))
                 .findFirst()
                 .orElse(null);
