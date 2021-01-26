@@ -80,7 +80,7 @@ Choose **GET** for the method. For the **URL** copy and paste the following line
 
 Click the **Send** button to get the response from the server.
 
-As a result, we get the book at position 1 from the books array.
+As a result, we get the book at position 1 from the book's array.
 
 ```js
 {
@@ -167,7 +167,7 @@ Then copy and paste the following JSON object:
 
 `{"title":"Edited", "year":1980, "ISBN":"954X"}`
 
-If the book **already exist** in the database, it will be updated and the new JSON data will replace the old data.
+If the book **already exists** in the database, it will be updated and the new JSON data will replace the old data.
 
 If the book **does not exist** in the database it will be **created**.
 
