@@ -1,6 +1,6 @@
 # Remote Databases
 
-[slide]
+[slide hideTitle]
 
 # Relational Databases
 
@@ -13,7 +13,7 @@ Relational databases maintain data in tables, providing an efficient and flexibl
 
 Tables consist of columns containing one or more data categories, and rows, also known as table records, are a set of data defined by the category.
 
-Each table has a **unique** identifier called, **primary key**, which identifies the information in the table.
+Each table has a **unique** identifier called **primary key**, which identifies the information in the table.
 
 The logical connection between different tables is established with  **foreign keys** -  a field in a table that connects with the **primary key** data of another table.
 
@@ -21,7 +21,7 @@ The logical connection between different tables is established with  **foreign k
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Non-Relational Databases
 
@@ -29,19 +29,19 @@ The main difference between relational and non-relational databases is how they 
 
 Non-relational databases, often called NoSQL databases are different from traditional relational databases in that they store their data in a non-tabular form. 
 
-Non-relational databases might be based on data structures like documents. 
+Non-relational databases are based on data structures like documents. 
 
 A document can be highly detailed while containing a range of different types of information in different formats. 
 
 This ability to organize various types of information side-by-side makes non-relational databases much more flexible than relational databases.
 
-Non-relational databases often perform faster because a query does not have to view several tables in order to deliver an answer, as relational datasets often do. 
+Non-relational databases often perform faster because a query does not have to view several tables to deliver an answer, as relational datasets often do. 
 
-Non-relational databases are therefore ideal for storing data that may be changed frequently or for applications that handle many different kinds of data.
+Non-relational databases are ideal for storing data that may be changed frequently or for applications that handle many different kinds of data.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Relational And Non-Relational Pros
 
@@ -51,32 +51,32 @@ Non-relational databases are therefore ideal for storing data that may be change
 [/video-vimeo]
 
 **Pros of a Relational Database:**
-- Data is easily structured into categories.
+- Data structured into categories.
 - They support **ACID** transactional consistency and support "joins".
 - Built-in data integrity and a large eco-system.
 - Relationships in this system have constraints.
 - Limitless indexing.
 
-One of the major benefits of using a Relational Database is that this type of database allows the user to simply classify the data into different categories and store them efficiently. 
+One of the benefits of using a Relational Database is that this type of database allows the user to classify the data into different categories and store them efficiently. 
 
 In computer science, **ACID** (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, etc.
 
-Key constraint specifies that in any relation all the values of a primary key must be unique.
+Key constraint specifies that in any relation, all the values of a primary key must be unique.
 
-Also the value of a primary key must not be **null**.
+The value of a primary key must not be **null**.
 
-Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
+Use indexes to quickly locate data without searching every row in a database table every time a database table is accessed.
 
 **Pros of a Non-Relational Database:**
 - Data is not confined to a structured group.
 - You can perform functions that allow for greater flexibility.
-- They scale out horizontally.
+- Scale-out horizontally.
 - High availability.
 - Many are **open source**.
 
-NoSQL databases have become popular because they store data in simple straightforward forms that can be easier to understand than the type of data models used in SQL databases.
+NoSQL databases have become popular because they store data in straightforward forms that can be easier to understand than the type of data models used in SQL databases.
 
-In addition, NoSQL databases often allow developers to directly change the structure of the data.
+NoSQL databases often allow developers to change the structure of the data.
 
 They can scale-out “horizontally,” meaning that they run on multiple servers that work together, each sharing part of the load.
 
@@ -86,7 +86,7 @@ Many web-based businesses require data services that are available without inter
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is BaaS?
 
