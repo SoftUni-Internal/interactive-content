@@ -28,6 +28,8 @@ A **Request** message sent by the client consist of several things:
 
 [slide hideTitle]
 
+# HTTP Request Examples
+
 An example of an **HTTP GET** Request: 
 
 ```java
