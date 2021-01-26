@@ -1,6 +1,6 @@
 # Event Loop
 
-[slide]
+[slide hideTitle]
 
 # The Event Loop
 
@@ -18,7 +18,7 @@ Here is a visual representation of how the event loop operates:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Stack Calls
 

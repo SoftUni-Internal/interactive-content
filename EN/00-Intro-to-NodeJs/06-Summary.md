@@ -1,24 +1,26 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-**Event Loop**
 
-- **Order of execution** for called functions.
+# In this lesson you learnt:
 
-**Modules**
+- Event Loop
 
-- **Core**, **Local** and **Third-Party** modules and their differences.
+    - **Order of execution** for called functions.
 
-- **Installing** a third-party module.
+- Modules
 
-- **Using modules** in a program.
+    - **Core**, **Local** and **Third-Party** modules and their differences.
+    
+    - **Installing** a third-party module.
+    
+    - **Using modules** in a program.
 
-**Web servers**
+- Web servers
 
-- **What** a web server does.
+   - **What** a web server does.
 
-- **Creating** a web server.
+   - **Creating** a web server.
 
 ```js
 const http = require("http");
@@ -33,13 +35,13 @@ http
 console.log("Node.js server running on port 3000");
 ```
 
-**Request and response wrappers**
+- Request and response wrappers
 
-- **Wrapping** information about requests and responses in a **single object**.
+   - **Wrapping** information about requests and responses in a **single object**.
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
-**Streams and utilities**
+- Streams and utilities
 
 - **Continuous streaming** of data.
 

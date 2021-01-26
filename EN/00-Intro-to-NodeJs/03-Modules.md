@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Modules
 
@@ -28,7 +28,7 @@ In Node.js there are three types of modules:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Local Modules
 
@@ -76,7 +76,7 @@ VAT -> 100$
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Third-Party Modules
 
@@ -126,7 +126,7 @@ const express = require("express");
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Core Modules
 
@@ -170,7 +170,7 @@ const stream = require("stream");
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # URL Module
 
@@ -208,7 +208,7 @@ console.log(query); // ?year=2017&month=february
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Query String Module
 

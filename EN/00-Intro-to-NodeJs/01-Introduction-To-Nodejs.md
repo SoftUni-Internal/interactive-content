@@ -1,6 +1,6 @@
 # Introduction to Node.js
 
-[slide]
+[slide hideTitle]
 
 # Node.js Overview
 
@@ -20,7 +20,7 @@ Here are some of the benefits that come along with it:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Installation
 
@@ -36,7 +36,7 @@ node -v
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Environment Setup
 
@@ -72,7 +72,7 @@ node app.js
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # NPM Packages
 
@@ -100,7 +100,7 @@ npm init -y
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Configuration (package.json)
 
