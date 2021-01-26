@@ -15,6 +15,7 @@ Repository
 
 ## Examples
 
+Test the strategy "Javascript-Sinon-Mocha-Unit-Tests" with that task
 
 [/task-description]
 [code-io /]
