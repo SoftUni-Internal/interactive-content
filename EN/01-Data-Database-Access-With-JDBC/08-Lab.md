@@ -1,6 +1,6 @@
 # Lab
 
-[slide]
+[slide hideTitle]
 
 # Part 0: Inspect SoftUni DB.
 
@@ -10,7 +10,7 @@
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 1: Accessing Database via Simple Java Application - Demo/
 
@@ -32,7 +32,7 @@ The exercise shows briefly the usage of the java.sql package and the MySQL Conne
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 1. Connection and Connection Properties
 
@@ -82,7 +82,7 @@ Remember that the user and the password are already included in the **Properties
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 2. Preparing and Executing Statements.
 
@@ -111,7 +111,7 @@ Therefore, we use **PreparedStatement**, **setDouble** and **Double.parseDouble*
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 3. Iterating over the Result
 
@@ -139,7 +139,7 @@ while(rs.next()) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 2: Writing your own data retrieval application
 
@@ -161,7 +161,7 @@ We are going to use the **“diablo”** database from the previous course.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 1. Establish a connection to the database
 
@@ -173,7 +173,7 @@ Get the user’s **username** and **password** and change the connection string 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 2. Username and statement
 
@@ -186,7 +186,7 @@ Ask the user for a username, which you will use to retrieve the desired info. Wr
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 3.Output
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Transactions.
 
@@ -16,7 +16,7 @@ We can turn-off auto commit in one line:
 connection.setAutoCommit(false);
 ```
 
-Now let's see the JDBC Transaction pattern with some pseudo-code:
+Let's see the JDBC Transaction pattern with some pseudo-code:
 
 ```java
 try {

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Client Access To A Database
 
@@ -10,6 +10,10 @@
   - Creating and executing **SQL** queries in the database.
   - Viewing & Modifying the resulting records.
 
+[/slide]
+
+[slide hideTitle]
+
 ## JDBC Architecture
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC.png" /]
@@ -19,7 +23,11 @@
   - Supports multiple drivers connected to different types of databases.
 - JDBC **Driver** - handles the communications with the database.
 
-**JDBC API**
+[/slide]
+
+[slide hideTitle]
+
+# JDBC API
 
 - JDBC API provides several interfaces and classes:
   - DriverManager – matches requests from the application with the proper DB driver
@@ -29,7 +37,11 @@
   - ResultSet – retrieved data (set of table rows)
   - SQLException
 
-## JDBC API - ResultSet Class
+[/slide]
+
+[slide hideTitle]
+
+# JDBC API - ResultSet Class
 
 - ResultSet maintains a **cursor** pointing to its current row of data
   - Not updatable
@@ -53,6 +65,10 @@ Example:
 
 The driver converts the underlying data to the Java type.
 
+[/slide]
+
+[slide hideTitle]
+
 ## Java.sql and MySQL Driver
 
 - The java.sql package provides all previously mentioned JDBC classes.
@@ -60,6 +76,10 @@ The driver converts the underlying data to the Java type.
 - It can be found on the following webpage:
 
 https://dev.mysql.com/downloads/connector/j/
+
+[/slide]
+
+[slide hideTitle]
 
 ## MySQL Driver Connection
 
@@ -73,7 +93,12 @@ Connection c = DriverManager.getConnection(
 "jdbc:mysql://localhost:3306/soft_uni", props);  // soft_uni is a database name, props are credentials
 ```
 
+[/slide]
+
+[slide hideTitle]
+
 ## Setting Up The Driver In IntelliJ IDEA
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC(1).png" /]
+
 [/slide]
