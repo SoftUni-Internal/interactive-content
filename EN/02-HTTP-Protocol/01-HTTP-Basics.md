@@ -47,7 +47,7 @@ Each method type implements a different meaning, but they also share common feat
 
 Let's see an example of a typical HTTP Conversation:
 
-
+```
 //HTTP REQUEST
 GET /courses/javascript HTTP/1.1​
 Host: www.softuni.bg​
@@ -63,7 +63,7 @@ Content-Length: 54​
 <CRLF>​ //The empty line denotes the end of the request header.
 <html><title>Hello</title>​
 Welcome to our site</html>
-
+```
 
 
 We will explore the **Request** and **Response** in-depth in the next slides,
