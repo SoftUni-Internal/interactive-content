@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Resources
 
@@ -8,7 +8,7 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/fZgHjC7Z#ai8TE
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Books
 
@@ -46,7 +46,7 @@ This is how the web page will look like when initialized for the first time.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Students
 
@@ -81,7 +81,7 @@ Use the skeleton from the provided resources.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Wild Wild West
 
