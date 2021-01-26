@@ -60,7 +60,7 @@ For this example, we will use **XMLHttpRequest object** to request the data from
 We need to create a **button** and a **div**.
 
 ```
-<button id="load">Load Repos</button>
+<button id="load">Load Repos</button>
 <div id="res"></div>
 ```
 
@@ -88,7 +88,7 @@ button.addEventListener('click', function loadRepos() {
 
 [slide hideTitle]
 
-# What is Promise?
+# What is a Promise?
 
 [vimeo-video]
 [stream language="EN" videoId="497191378/a55aff23a3" default /]
@@ -129,11 +129,11 @@ new Promise(function (resolve, reject) {
       resolve('done');
    }, 500);
 }).then(function (res) {
-   let second = 'Then returned: ' + res
+   let second = 'Then returned: ' + res
    console.log(second);
 });
 
-let third = 'After promise'
+let third = 'After promise'
 console.log(third);
 ```
 
