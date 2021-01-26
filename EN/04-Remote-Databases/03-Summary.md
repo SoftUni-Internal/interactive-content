@@ -1,8 +1,8 @@
-[slide]
-
 # Summary
 
-## In this lesson you learned:
+[slide hideTitle]
+
+## In this lesson you learnt:
 
 - What is a Relational Databases.
 

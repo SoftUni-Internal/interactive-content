@@ -1,6 +1,6 @@
-[slide hideTitle]
-# Summary
 
+# Summary
+[slide hideTitle]
 
 [vimeo-video]
 [stream language="EN" videoId="497187442/eabcce8a84" default /]
@@ -21,7 +21,7 @@ it('expect sum ([1,2.3] to be 6)', function() {
 - Test-driven development (TDD).
     - Tests are written first.
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - Modules
 

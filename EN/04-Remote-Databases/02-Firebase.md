@@ -1,6 +1,6 @@
 # Firebase
 
-[slide]
+[slide hideTitle]
 
 # What is Firebase?
 
@@ -9,17 +9,17 @@
 [stream language="RO" videoId="498355813/b1d8525738"  /]
 [/video-vimeo]
 
-Firebase is a toolset to "build, improve, and grow your app”".
+Firebase is a toolset to build, improve, and grow your app.
 
-The tools it gives you cover a large portion of the services that developers would normally have to build themselves.
+It gives us the tools to work, with a large portion of the services, that developers would normally have to build themselves.
 
 This includes things like analytics, authentication, databases, configuration, file storage, push messaging, and the list goes on. 
 
-The services are hosted in the cloud, and scale with little to no effort on the part of the developer.
+The services are hosted in the cloud and scale with little to no effort on the part of the developer.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Firebase REST API CRUD Operations 1
 
@@ -30,15 +30,15 @@ The services are hosted in the cloud, and scale with little to no effort on the 
 
 Here are some of the methods we use when working with the database.
 
-In this example we will be using a Book database, which is already created for us on Firebase.
+In this example, we will be using a Book database, which has already been created for us on Firebase.
 
 **Note: You may not get the same results as shown in the examples below.** 
 
-**This is because as people experiment with the database they can delete or create new books. This way the database will inevitably change.**
+**This is because as people experiment with the database, they can delete or create new books. This way, the database will inevitably change.**
 
 Open **Postman** and create a new request. 
 
-Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/.json`
 
@@ -48,7 +48,7 @@ or use the one below, the result will be the same:
 
 Click the **Send** button to get the response from the server.
 
-As a result we get all the books stored in the database.
+As a result, we get all the books stored in the database.
 
 ```js
 {
@@ -72,15 +72,15 @@ As a result we get all the books stored in the database.
 }
 ```
 
-Next we will retrieve a single book from the database.
+Next, we will retrieve a single book from the database.
 
-Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method. For the **URL** copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/books/1.json`
 
 Click the **Send** button to get the response from the server.
 
-As a result we get the book at position 1 from the books array.
+As a result, we get the book at position 1 from the books array.
 
 ```js
 {
@@ -91,7 +91,7 @@ As a result we get the book at position 1 from the books array.
 
 Now let us try and get the author of the book.
 
-Choose **GET** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **GET** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/books/1/author.json`
 
@@ -103,7 +103,7 @@ Click the **Send** button to get the response from the server.
 
 Now we will add a new book to the database using the **POST** method.
 
-Choose **POST** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **POST** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books.json`
 
@@ -115,13 +115,13 @@ Then copy and paste the following JSON object:
 
 `{"title":"New title", "author":"New author"}`
 
-This is an example of how it should look in **Postman**.
+Here is an example of how it should look in **Postman**.
 
 [image assetsSrc="Remote-Databases.png" /]
 
 The response from the server will be an **ID**, which is a **random string**.
 
-This is the response from the server for our newly created book.
+Here is the response from the server for our newly created book.
 
 ```js
 {
@@ -131,7 +131,7 @@ This is the response from the server for our newly created book.
 
 Let us delete the book we have just created using the **DELETE** method.
 
-Choose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **DELETE** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/-MOpe8WgPwqaw7tdKwIN.json`
 
@@ -139,14 +139,12 @@ Choose **DELETE** for the method and for the **URL** copy and paste the followin
 
 **When you create a book, you will get a different ID. Use The ID you received from the server for the example.**
 
-The response from the server will be **200 OK** and it will return **null**.
-
-This means that the book has been deleted.
+The response from the server will be **200 OK**.  It also will return **null**.
 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Firebase REST API CRUD Operations 2
 
@@ -155,9 +153,9 @@ This means that the book has been deleted.
 [stream language="RO" videoId="4498355923/fe4483c15f"  /]
 [/video-vimeo]
 
-Next step is to edit a book.
+The next step is to edit a book.
 
-Choose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PUT** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
@@ -183,9 +181,9 @@ This is the response from the server:
 }
 ```
 
-If we want to update only specific data, for example change the author of the book then we use the **PATCH** method.
+If we want to update only specific data, for example, change the author of the book, we use the **PATCH** method.
 
-Choose **PATCH** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PATCH** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
@@ -197,11 +195,11 @@ Then copy and paste the following JSON object:
 
 `{"year":1981, "author":"Author Changed"}`
 
-With the **PATCH** method we will only update the data we are targeting with the **JSON** object.
+With the **PATCH** method, we will only update the data we target with the **JSON** object.
 
-In this example the year will change from **1980** to **1981** and a new property **author** will be created as well.
+In this example, the year will change from **1980** to **1981** and a new property **author** will be created as well.
 
-This is the response from the server:
+Here is the response from the server:
 
 ```js
 {
@@ -212,7 +210,7 @@ This is the response from the server:
 
 Now let us try one more example using the **PUT** method.
 
-Choose **PUT** for the method and for the **URL** copy and paste the following line into **Postman**:
+Choose **PUT** for the method. For the **URL**,v copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
@@ -224,13 +222,13 @@ Then copy and paste the following JSON object:
 
 "New author was assigned"
 
-This is the response from the server:
+Here is the response from the server:
 
 ```js
 "New author was assigned"
 ```
 
-Now if we send a **GET** request to the server, we will get the following response:
+Now, if we send a **GET** request to the server, we will get the following response:
 
 ```js
 {
@@ -255,36 +253,38 @@ Now if we send a **GET** request to the server, we will get the following respon
 }
 ```
 
-You should be carefull with the **PUT** method. Use the **PATCH** method, it will update only the data passed with the JSON object.
+Be careful with the **PUT** method. Use the **PATCH** method instead.
 
-Finally delete the book we created.
+It will update only the data passed with the JSON object.
 
-Choose **DELETE** for the method and for the **URL** copy and paste the following line into **Postman**:
+Finally, delete the book we created.
+
+Choose **DELETE** for the method. For the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
-The response from the server will be **200 OK** and in the **body** it will return **null**.
+The response from the server will be, **200 OK** and in the **body** it will return **null**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Authentication vs Authorization
 [vimeo-video]
 [stream language="EN" videoId="498356096/3eb775adc0" default /]
 [stream language="RO" videoId="498356096/3eb775adc0"  /]
 [/video-vimeo]
-Authentication is about validating your credentials such as Username, ID and password to verify your identity.
+Authentication is about validating your credentials such as Username, ID, and password to verify your identity.
 
-Authorization occurs after your identity is successfully authenticated by the system, which therefore gives you full access to resources such as information, files, databases etc.
+Authorization occurs after your identity is successfully authenticated by the system, which, therefore, gives you full access to resources such as information, files, databases, etc.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: All Books
 
-Make sure you have gmail account and you are signed in.
+Make sure you have a Gmail account and you are signed in.
 
 Open a browser and type in "firebase console".
 
@@ -308,29 +308,29 @@ Click "Continue".
 
 [image assetsSrc="Remote-Databases(5).png" /]
 
-Next we need to add an App.
+Next, we need to add an App.
 
 Click on this sing "</>".
 
 [image assetsSrc="Remote-Databases(6).png" /]
 
-Type in a name for the App, for example "books" and click "Register app".
+Type in a name for the App, for example, "books" and click "Register app".
 
 [image assetsSrc="Remote-Databases(7).png" /]
 
-We will get a script, which we will use later when working with the firebase SDK.
+We will get a script, which we will use later when working with the Firebase SDK.
 
 Click "continue to console".
 
 [image assetsSrc="Remote-Databases(8).png" /]
 
-Create a databasde.
+Create a database.
 
 Click on "Realtime Database".
 
 [image assetsSrc="Remote-Databases(9).png" /]
 
-Click on "Create Databse".
+Click on "Create Database".
 
 [image assetsSrc="Remote-Databases(10).png" /]
 
@@ -362,21 +362,21 @@ URL: `https://databaseURL/books.json`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Get a Book
 
-To get a book choose "GET" method in Postman and use the following **URL**.
+To get a book, choose the "GET" method in Postman and use the following **URL**.
 
 `https://databaseURL/books/bookId.json`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Create Books
 
-To create a book, we will have to send a "POST" request and the JSON body should be in the following format:
+To create a book, we will have to send a "POST" request, and the JSON body should be in the following format:
 
 `{"Author": "Steven King",  "title": "IT"}`
 
@@ -384,7 +384,7 @@ URL: `https://databaseURL/books.json`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Patch Book
 
@@ -400,13 +400,13 @@ URL: `https://databaseURL/books/bookId.json`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Change Book Author
 
-The next task is to execute a "PUT" command. 
+The next task is to execute the "PUT" command. 
 
-In our case we have to change the author’s name to "New author was assigned".
+In our case, we have to change the author’s name to "New author was assigned".
 
 The JSON body should be in the following format:
 
