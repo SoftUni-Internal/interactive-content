@@ -50,6 +50,4 @@ username=mente&password=top*secret!​                //Http Request body.
 <CRLF>                                             //Empty line to indicate the end of the requests.
 ```
 
-
-
-[slide]
+[/slide]
