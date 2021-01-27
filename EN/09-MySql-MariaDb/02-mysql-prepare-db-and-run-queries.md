@@ -543,8 +543,7 @@ insert into players (id, first_name, last_name, age, position, salary, hire_date
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (19, 'Gwendolen', 'Semple', 17, 'D', 407582.09, NULL, 94, NULL);
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (20, 'Launce', 'Perchard', 44, 'A', 899242.3, '2013-09-13 14:16:39', 70, 17);
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (21, 'Vasili', 'Grigorescu', 45, 'M', 46428.66, '2013-12-13 07:18:46', 91, 90);
-insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (22, 'Esta', 'Ingarfill', 48, 'D', 663175.46, '2013-10-17 12:28:11', 94, 62);
-insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (23, 'Kalvin', 'Bewley', 19, 'A', 550420.42, NULL, 15, NULL);
+insert into players (id,result first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (23, 'Kalvin', 'Bewley', 19, 'A', 550420.42, NULL, 15, NULL);
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (24, 'Goldi', 'Gouly', 20, 'A', 914066.1, '2016-06-12 22:08:30', 75, 90);
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (25, 'Isaak', 'Duncombe', 47, 'D', 586243.8, '2015-01-18 14:33:08', 17, 83);
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (26, 'Bartlett', 'Rigglesford', 22, 'M', 414010.4, '2016-11-30 19:14:19', 45, 45);
