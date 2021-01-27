@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Retrieving Data by Custom Queries
 
@@ -19,7 +19,7 @@ We will do it in three easy steps, just follow the pictures.
 When you are ready, we will be able to create our first repository and make our first queries.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Query Methods
 
@@ -118,7 +118,7 @@ List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              //.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Select Shampoos by Size
 
@@ -148,7 +148,7 @@ Example:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Select Shampoos by Size
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Spring Custom Configuration
 
@@ -15,6 +15,10 @@ spring.datasource.url = jdbc:mysql://localhost:3306/shampoo_company?useSSL=false
 spring.datasource.username = root
 spring.datasource.password = 1234
 ```
+
+[slide hideTitle]
+
+# Java-Based Configuration
 
 Further configuration is done through the JavaConfig file.
 

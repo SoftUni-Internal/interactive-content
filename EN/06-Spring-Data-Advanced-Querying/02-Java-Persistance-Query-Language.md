@@ -1,6 +1,6 @@
-[slide]
+[slide hideTitle]
 
-# Java Persistence Query Language
+# Java Persistence Query Language - JPQL
 
 JPQL is a tool used when either our queries get too complex and query method names are just not enough or the method name gets too ugly.
 
@@ -13,6 +13,12 @@ JPQL is similar to SQL except for a few differences.
 - The biggest and most important difference is that we interact and make queries with the entities, not with the tables from the DB.
 - It won't affect the database directly.
 
+[/slide]
+
+[slide hideTitle]
+
+# JPQL Functionalities
+
 The JPQL functionalities include:
 
 [image assetsSrc="Spring-Data-Advanced(3).png" /]
@@ -22,7 +28,11 @@ The functionalities include:
 - UPDATE clauses, you can also do bulk UPDATE.
 - DELETE clauses and bulk DELETE. 
 
-### Syntax
+[/slide]
+
+[slide hideTitle]
+
+# Syntax
 
 The syntax of JPQL is pretty intuitive as long as we have worked with SQL before, it's pretty similar to it.
 
@@ -43,26 +53,9 @@ SELECT b FROM Ingredient AS b WHERE b.name IN names
 2. The entity we want to work with.. don't forget it's a java class, not the table itself.
 3. Allias or how the table should be referred to as.
 4. The filtration clause, where we use the entity's properties... bonus we get to have **CodeCompletion**.
+[/slide]
 
-```java
-//A Batch Update clause
-
-UPDATE Ingredients AS b         1.
-SET b.price = b,price * 1.10    2.
-WHERE b.name in names          3.
-```
-
-1. The UPDATE keyword and pointing the entity with an alias.
-2. What should be updated.
-3. The filtration clause.
-
-```java
-DELETE FROM Ingredient AS b     1. 
-WHERE b.name = :name            2.
-```
-
-1. The DELETE clause plus the entity by choice and an alias
-2. The filtration for the batch DELETE.
+[slide hideTitle]
 
 ### JOINS
 
@@ -87,8 +80,33 @@ SELECT s.name                           //We choose what we want from the table 
 ```
 [/slide]
 
+[slide hideTitle]
 
-[slide]
+# Update and Delete
+
+```java
+//A Batch Update clause
+
+UPDATE Ingredients AS b         1.
+SET b.price = b,price * 1.10    2.
+WHERE b.name in names          3.
+```
+
+1. The UPDATE keyword and pointing the entity with an alias.
+2. What should be updated.
+3. The filtration clause.
+
+```java
+DELETE FROM Ingredient AS b     1. 
+WHERE b.name = :name            2.
+```
+
+1. The DELETE clause plus the entity by choice and an alias
+2. The filtration for the batch DELETE.
+
+[/slide]
+
+[slide hideTitle]
 
 # Problem: Select Shampoos by Ingredients
 
@@ -112,7 +130,7 @@ Write a method that selects all shampoos with ingredients in a given list
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Select Shampoos by Ingredients
 
