@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
@@ -1196,7 +1196,7 @@ log_id
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Homework Results
 [tasks-results/]
 

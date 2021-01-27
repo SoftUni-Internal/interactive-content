@@ -1,10 +1,16 @@
-[slide]
+[slide hideTitle]
 
 # Triggers
 
 Triggers are small named programs in our database, which wait for a given event to occur.
 
 We don't call triggers explicitly, they are attached to our database and called only when a specific event, which is set on trigger creation occurs.
+
+[/slide]
+
+[slide hideTitle]
+
+# MySQL Types of Triggers
 
 These triggers can happen **BEFORE** the **event**.
 
@@ -14,6 +20,11 @@ Or **AFTER** the given **event**.
 
 [image assetsSrc="Database-Programabillity(1).png" /]
 
+[/slide]
+
+[slide hideTitle]
+
+# Events
 
 The events that can activate the **Triggers** can either be **INSERT**, **UPDATE** or **DELETE** queries.
 
@@ -95,7 +106,7 @@ Seamans
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Triggered
 

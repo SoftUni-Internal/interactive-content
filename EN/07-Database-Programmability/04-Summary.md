@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 # In this lesson we learned:

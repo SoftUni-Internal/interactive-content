@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Stored Procedures
 
@@ -20,6 +20,12 @@ When to use it:
 
 If you have repatative task like looping, multiple statements and no user interaction do it with a single call of a stored procedure or the database server.
 
+[/slide]
+
+[slide hideTitle]
+
+# Creating Stored Procedure
+
 Now let's see how you can create one: 
 
 ```java
@@ -40,6 +46,12 @@ CREATE PROCEDURE usp_procedure_name                             //Creating param
 parameter_2_name parameter_type,…)
 ```
 
+[/slide]
+
+[slide hideTitle]
+
+# Defining Parameterized Procedure
+
 Example of parameterized procedure.
 ```java
 DELIMITER $$
@@ -53,6 +65,12 @@ BEGIN
 END $$
 CALL usp_select_employees_by_seniority(15);
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Returning Values Using Output Parameters
 
 You can also return values with a stored procedure.
 ```java
@@ -123,7 +141,7 @@ Candy
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Employees Promotion
 
@@ -171,7 +189,7 @@ Submit your queries using the "**MySQL Run Skeleton, run queries and check DB**"
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Employees Promotion by ID
 

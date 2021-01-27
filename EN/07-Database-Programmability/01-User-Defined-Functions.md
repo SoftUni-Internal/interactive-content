@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # User-Defined Functions
 
@@ -97,7 +97,7 @@ The following example is given with employees living in **Sofia**.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Count Employees by Town
 
