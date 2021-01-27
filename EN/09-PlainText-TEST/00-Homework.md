@@ -2,7 +2,7 @@
 
 # Homework
 
-Test<sup>TEODOREIZVINQVAI</sup>
+Test\<sup\>TEODOREIZVINQVAI\</sup\>
 
 [/slide]
 
