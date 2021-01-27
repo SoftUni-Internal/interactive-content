@@ -10,11 +10,11 @@ Senders or also called publishers, do not program the messages that are sent dir
 
 Subscribers express interest in one or more events and only receive messages that are of interest.
 
-There is an intermediary called a "message broker" or "event bus".
+There is an intermediary called a "message broker" or "Event Bus".
 
 The "event bus" receives messages from the "Publisher" and then sends them to the "Subscriber".
 
-[image assetsSrc="Streams-And-Utilities.png" /]
+[image assetsSrc="JS-Back-End-Streams-And-Utilities.png" /]
 
 [/slide]
 

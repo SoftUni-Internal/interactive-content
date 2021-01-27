@@ -34,7 +34,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 # Readable Stream
 
-**Functions**
+- **Functions**
 
 There are many useful functions that we can use on readable Streams.
 
@@ -68,7 +68,7 @@ This method does not accept any parameters.
 readable.resume();
 ```
 
-**Events**
+- **Events**
 
 All streams are instances of "EventEmitter". 
 
@@ -127,7 +127,7 @@ http.createServer((req, res) => {
 
 # Writable Stream
 
-**Functions**
+- **Functions**
 
 The `.write()` method takes three arguments:
 
@@ -160,7 +160,7 @@ Moreover, the optional callback function is added as a listener for the **finish
 writable.end( chunk, encoding, callback);
 ```
 
-**Events**
+- **Events**
 
 The most important events on a writable stream are:
 
