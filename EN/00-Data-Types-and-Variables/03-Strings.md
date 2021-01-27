@@ -197,11 +197,6 @@ console.log(`${firstName}${delimiter}${lastName}`);
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
