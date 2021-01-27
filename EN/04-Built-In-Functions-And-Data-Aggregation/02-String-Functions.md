@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 
 # String Functions
 
@@ -275,7 +275,7 @@ The Adventures of Tom Bombadil
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # REPLACE Function
 
@@ -498,7 +498,7 @@ Retrieve data about the updated titles. **Order the result by id**. Submit your 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # LTRIM & RTRIM Functions
 
@@ -537,7 +537,7 @@ Softuni rocks!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # CHAR_LENGTH & LENGTH Functions
 
@@ -578,7 +578,7 @@ As we see here, the `LENGTH()` function will return the result of **2**, and the
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # LEFT & RIGHT Functions
 
@@ -618,7 +618,7 @@ ction
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # LOWER & UPPER Functions
 
@@ -652,7 +652,7 @@ I AM UPPER CASE
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # REVERSE & REPEAT Functions
 
@@ -687,7 +687,7 @@ softuni softuni softuni
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # LOCATE & INSERT Functions
 

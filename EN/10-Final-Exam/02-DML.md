@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Data Manipulation Language 
 
@@ -288,7 +288,7 @@ Leigh,2159.55,2002-07-11,20
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exam Results
 [tasks-results/]
 

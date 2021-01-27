@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # TODO: FIX THE EXAM 
 
@@ -8,7 +8,7 @@
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Exam-Preparation
 

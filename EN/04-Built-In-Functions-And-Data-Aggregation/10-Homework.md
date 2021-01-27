@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
@@ -3241,7 +3241,7 @@ Kulov
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 2 - Queries for Geography Database
 
@@ -3970,7 +3970,7 @@ vihrenile
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 3 - Queries from Diablo Database
 
@@ -4661,7 +4661,7 @@ sweethorseman
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 4 - Date Functions Queries
 
@@ -4849,7 +4849,7 @@ Tomat65434foe23gfhgsPep
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Part 5 - Use "gringotts" database.
 
@@ -6142,7 +6142,7 @@ Your query should return:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Homework Results
 

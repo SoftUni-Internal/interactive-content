@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
@@ -12153,7 +12153,7 @@ Wizard
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Homework Results
 [tasks-results/]
 

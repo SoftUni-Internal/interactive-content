@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
@@ -809,7 +809,7 @@ Orlovets
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Homework Results
 [tasks-results/]
 

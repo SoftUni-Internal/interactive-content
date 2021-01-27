@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Aggregate Functions
 
@@ -50,7 +50,7 @@ After knowing this, let's take a look at the functions and their syntax:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # COUNT Function
 
@@ -93,7 +93,7 @@ GROUP BY e.`department_id`;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SUM Function
 
@@ -124,7 +124,7 @@ GROUP BY e.`department_id`;
 | ..... | ...... |
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # MAX Function
 
@@ -155,7 +155,7 @@ FROM `employees` AS e
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # MIN Function
 
@@ -185,7 +185,7 @@ GROUP BY e.`department_id`;
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # AVG Function
 

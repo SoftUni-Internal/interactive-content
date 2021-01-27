@@ -107,7 +107,7 @@ Kutelo
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Delete Mountains
 

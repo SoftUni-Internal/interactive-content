@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Functions in MySQL
 

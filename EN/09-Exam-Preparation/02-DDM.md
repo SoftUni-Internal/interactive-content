@@ -1,10 +1,10 @@
-[slide]
+[slide hideTitle]
 
 # Data Manipulation Language (DML)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Data Manipulation Language (DML) – 30 Pts
 

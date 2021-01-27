@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Querying
 
@@ -1542,7 +1542,7 @@ In quis justo. Maecenas rhoncu...
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exam-Prep Results
 [tasks-results/]
 

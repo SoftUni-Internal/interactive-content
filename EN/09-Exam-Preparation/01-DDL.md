@@ -1,11 +1,11 @@
-[slide]
+[slide hideTitle]
 
 # Data Definition Language (DDL)
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Database Overview
 

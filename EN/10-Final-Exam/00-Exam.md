@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Triple S – SoftUni Stores System
 

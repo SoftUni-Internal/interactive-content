@@ -1,10 +1,10 @@
-[slide]
+[slide hideTitle]
 
 # Data Definition Language (DDL)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Database Overview
 
@@ -44,7 +44,7 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Table Design
 

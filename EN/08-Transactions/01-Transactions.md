@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Executing Operations As a Whole
 
@@ -29,7 +29,7 @@ All changes in a transaction are **temporary**, and they are persisted when **CO
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Transaction Examples
 

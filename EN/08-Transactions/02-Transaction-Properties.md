@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Transaction Properties
 
@@ -52,7 +52,7 @@ Even if there is a system failure our **recovery-management component** of datab
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Employee Promotion by ID
 
@@ -70,7 +70,7 @@ If not, **no changes** should be made.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Employee Promotion by ID
 
