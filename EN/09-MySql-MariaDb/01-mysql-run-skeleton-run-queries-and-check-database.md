@@ -5,385 +5,635 @@
 [code-task title="Problem: Find All Information About Departments" taskId="mysql-run-skeleton-run-queries-and-check-database" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-INSERT INTO Planets ([Name]) VALUES
-('Mars'),
-('Earth'),
-('Jupiter'),
-('Saturn')
-
-
-INSERT INTO Spaceships ([Name], Manufacturer, LightSpeedRate) VALUES
-('Golf',	'VW',	3),
-('WakaWaka',	'Wakanda',	4),
-('Falcon9',	'SpaceX',	1),
-('Bed',	'Vidolov',	6)
+INSERT INTO coaches (first_name, last_name, salary, coach_level)
+SELECT p.first_name AS first_name, p.last_name AS last_name, p.salary * 2 AS salary,
+CHAR_LENGTH(p.first_name) AS coach_level
+FROM players AS p
+WHERE age >= 45
 ```
 [/code-editor]
 [code-adapter]
-CREATE TABLE Planets
-(
-	Id INT PRIMARY KEY IDENTITY,
-	Name VARCHAR(30) NOT NULL
-)
+CREATE TABLE countries(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(45) NOT NULL
+);
 
-CREATE TABLE Spaceports
-(
-	Id INT PRIMARY KEY IDENTITY,
-	Name VARCHAR(50) NOT NULL,
-	PlanetId INT FOREIGN KEY REFERENCES Planets(Id)
-)
+CREATE TABLE towns(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(45) NOT NULL,
+    country_id INT NOT NULL,
+    
+    CONSTRAINT fk_towns_countries
+    FOREIGN KEY (country_id)
+    REFERENCES countries(id)
+);
 
-CREATE TABLE Spaceships
-(
-	Id INT PRIMARY KEY IDENTITY,
-	Name VARCHAR(50) NOT NULL,
-	Manufacturer VARCHAR(30) NOT NULL,
-	LightSpeedRate INT DEFAULT(0)	
-)
+CREATE TABLE stadiums(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(45) NOT NULL,
+    capacity INT NOT NULL,
+    town_id INT NOT NULL,
+    
+    CONSTRAINT fk_stadiums_towns
+    FOREIGN KEY (town_id)
+    REFERENCES towns(id)
+);
 
-CREATE TABLE Colonists
-(
-	Id INT PRIMARY KEY IDENTITY,
-	FirstName VARCHAR(20) NOT NULL,
-	LastName VARCHAR(20) NOT NULL,
-	Ucn VARCHAR(10) UNIQUE NOT NULL,
-	BirthDate DATE NOT NULL
-)
+CREATE TABLE teams(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(45) NOT NULL,
+    established DATE NOT NULL,
+    fan_base BIGINT NOT NULL DEFAULT 0,
+    stadium_id INT NOT NULL,
+    
+    CONSTRAINT fk_teams_stadiums
+    FOREIGN KEY (stadium_id)
+    REFERENCES stadiums(id)
+);
 
-CREATE TABLE Journeys
-(
-	Id INT PRIMARY KEY IDENTITY,
-	JourneyStart DATETIME NOT NULL,
-	JourneyEnd DATETIME NOT NULL,
-	Purpose VARCHAR(11) CHECK (Purpose = 'Medical' OR Purpose = 'Technical' OR Purpose = 'Educational' OR Purpose = 'Military'),
-	DestinationSpaceportId INT FOREIGN KEY REFERENCES Spaceports(Id),
-	SpaceshipId INT FOREIGN KEY REFERENCES Spaceships(Id)
-)
+CREATE TABLE skills_data (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    dribbling INT DEFAULT 0,
+    pace INT DEFAULT 0,
+    passing INT DEFAULT 0,
+    shooting INT DEFAULT 0,
+    speed INT DEFAULT 0,
+    strength INT DEFAULT 0
+);
 
-CREATE TABLE TravelCards
-(
-	Id INT PRIMARY KEY IDENTITY,
-	CardNumber VARCHAR(10) UNIQUE NOT NULL,
-	JobDuringJourney VARCHAR(8) CHECK 
-	(JobDuringJourney = 'Pilot' OR 
-	JobDuringJourney = 'Engineer' OR
-	 JobDuringJourney = 'Trooper' OR 
-	 JobDuringJourney = 'Cleaner' OR 
-	 JobDuringJourney = 'Cook'),
-	 ColonistId INT FOREIGN KEY REFERENCES Colonists(Id),
-	 JourneyId INT FOREIGN KEY REFERENCES Journeys(Id),
-)
+CREATE TABLE coaches(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(10) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+	salary DECIMAL(10,2) NOT NULL DEFAULT 0,
+    coach_level INT NOT NULL DEFAULT 0
+);
 
-SET IDENTITY_INSERT Planets ON;
+CREATE TABLE players(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(10) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+	age INT NOT NULL DEFAULT 0,
+    position CHAR(1) NOT NULL,
+    salary DECIMAL(10,2) NOT NULL DEFAULT 0,
+    hire_date DATETIME,
+    skills_data_id INT NOT NULL,
+    team_id INT,
+    
+    CONSTRAINT fk_players_skills_data
+    FOREIGN KEY (skills_data_id)
+    REFERENCES skills_data(id),
+    
+    CONSTRAINT fk_players_teams
+    FOREIGN KEY (team_id)
+    REFERENCES teams(id)
+);
 
-INSERT INTO Planets (Id, Name) VALUES 
-(1, 'Otroyphus'),
-(2, 'Suthiyclite'),
-(3, 'Lescore'),
-(4, 'Wescapus'),
-(5, 'Teutera'),
-(6, 'Wueyama'),
-(7, 'Slagonope'),
-(8, 'Chumeter'),
-(9, 'Whora'),
-(10, '5Q5'),
-(11, 'Gleshan'),
-(12, 'WR8'),
-(13, 'Feblunus'),
-(14, 'Aswuenerth'),
-(15, 'Kascarth'),
-(16, 'Casmadus'),
-(17, 'Jeayama'),
-(18, 'Eipra'),
-(19, 'Pleceliv'),
-(20, 'Stenurilia')
+CREATE TABLE players_coaches(
+	player_id INT,
+    coach_id INT,
+    
+    CONSTRAINT pk_players_coaches
+    PRIMARY KEY (player_id, coach_id),
+    
+    CONSTRAINT fk_players_coaches_players
+    FOREIGN KEY (player_id)
+    REFERENCES players(id),
+    
+    CONSTRAINT fk_players_coaches_coaches
+    FOREIGN KEY (coach_id)
+    REFERENCES coaches(id)
+);
 
-SET IDENTITY_INSERT Planets OFF;
+insert into countries (id, name) values (1, 'Morocco');
+insert into countries (id, name) values (2, 'China');
+insert into countries (id, name) values (4, 'Russia');
+insert into countries (id, name) values (5, 'Indonesia');
+insert into countries (id, name) values (6, 'Bangladesh');
+insert into countries (id, name) values (8, 'Ireland');
+insert into countries (id, name) values (11, 'Poland');
+insert into countries (id, name) values (12, 'Ghana');
+insert into countries (id, name) values (13, 'Armenia');
+insert into countries (id, name) values (15, 'Nigeria');
+insert into countries (id, name) values (17, 'Canada');
+insert into countries (id, name) values (19, 'Cameroon');
+insert into countries (id, name) values (22, 'Malaysia');
+insert into countries (id, name) values (24, 'Colombia');
+insert into countries (id, name) values (28, 'Botswana');
+insert into countries (id, name) values (31, 'Syria');
+insert into countries (id, name) values (32, 'United States');
+insert into countries (id, name) values (33, 'Japan');
+insert into countries (id, name) values (34, 'Philippines');
+insert into countries (id, name) values (35, 'Ethiopia');
+insert into countries (id, name) values (36, 'Macedonia');
+insert into countries (id, name) values (38, 'Finland');
+insert into countries (id, name) values (39, 'France');
+insert into countries (id, name) values (40, 'Thailand');
+insert into countries (id, name) values (43, 'Liechtenstein');
+insert into countries (id, name) values (45, 'Portugal');
+insert into countries (id, name) values (47, 'Sweden');
+insert into countries (id, name) values (48, 'Sudan');
+insert into countries (id, name) values (49, 'Afghanistan');
+insert into countries (id, name) values (50, 'Iran');
+insert into countries (id, name) values (51, 'Mexico');
+insert into countries (id, name) values (56, 'Denmark');
+insert into countries (id, name) values (61, 'Israel');
+insert into countries (id, name) values (63, 'Greece');
+insert into countries (id, name) values (66, 'Peru');
+insert into countries (id, name) values (72, 'Central African Republic');
+insert into countries (id, name) values (76, 'Netherlands');
+insert into countries (id, name) values (77, 'Guatemala');
+insert into countries (id, name) values (78, 'Argentina');
+insert into countries (id, name) values (80, 'Aruba');
+insert into countries (id, name) values (83, 'Kosovo');
+insert into countries (id, name) values (91, 'Vietnam');
+insert into countries (id, name) values (97, 'New Zealand');
+insert into countries (id, name) values (92, 'Brazil');
+insert into countries (id, name) values (93, 'Germany');
+insert into countries (id, name) values (94, 'Italy');
+insert into countries (id, name) values (95, 'Spain');
 
-SET IDENTITY_INSERT Spaceports ON;
 
-INSERT INTO Spaceports(Id, Name, PlanetId) values 
-(1, 'Miracle Colony', 15),
-(2, 'Horus Colony', 18),
-(3, 'Torus Base', 5),
-(4, 'Rebus Station', 10),
-(5, 'Zeus Colony', 5),
-(6, 'Sol', 11),
-(7, 'Epitome Station', 17),
-(8, 'Olympus Terminal', 19),
-(9, 'Minerva Station', 16),
-(10, 'Illume', 7),
-(11, 'Themis', 5),
-(12, 'Epiphany Colony', 10),
-(13, 'Artemis', 19),
-(14, 'Borealis Colony', 7),
-(15, 'Juno Station', 3),
-(16, 'Phantom Station', 19),
-(17, 'Orphan Station', 17),
-(18, 'Ark Terminal', 18),
-(19, 'Nemo Colony', 13),
-(20, 'Hypnos', 12),
-(21, 'Nebula Base', 1),
-(22, 'Inception Station', 2),
-(23, 'Tartarus', 3),
-(24, 'Phantom Colony', 20),
-(25, 'Yggdrasil Station', 15),
-(26, 'Fable Terminal', 17),
-(27, 'Paradox Station', 15),
-(28, 'Zion Terminal', 9),
-(29, 'Angel Station', 15),
-(30, 'Aeris', 1)
 
-SET IDENTITY_INSERT Spaceports OFF;
+insert into towns (id, name, country_id) values (1, 'Samsan', 2);
+insert into towns (id, name, country_id) values (2, 'Saint Petersburg', 4);
+insert into towns (id, name, country_id) values (3, 'Gaoliban', 2);
+insert into towns (id, name, country_id) values (4, 'Bangbayang Kaler', 5);
+insert into towns (id, name, country_id) values (5, 'Porto Seguro', 92);
+insert into towns (id, name, country_id) values (6, 'Lameira', 45);
+insert into towns (id, name, country_id) values (8, 'Bromma', 47);
+insert into towns (id, name, country_id) values (9, 'Irákleia', 63);
+insert into towns (id, name, country_id) values (10, 'Santa Catalina', 34);
+insert into towns (id, name, country_id) values (11, 'Dongqianhu', 2);
+insert into towns (id, name, country_id) values (12, 'Raoshi', 2);
+insert into towns (id, name, country_id) values (13, 'Jönköping', 47);
+insert into towns (id, name, country_id) values (14, 'Riachão das Neves', 92);
+insert into towns (id, name, country_id) values (16, 'Zongjia', 2);
+insert into towns (id, name, country_id) values (17, 'Mākū', 50);
+insert into towns (id, name, country_id) values (18, 'Łobez', 11);
+insert into towns (id, name, country_id) values (19, 'Novotroitskaya', 4);
+insert into towns (id, name, country_id) values (20, 'Pashkovskiy', 4);
+insert into towns (id, name, country_id) values (21, 'Junbu', 2);
+insert into towns (id, name, country_id) values (22, 'Smolensk', 4);
+insert into towns (id, name, country_id) values (23, 'Ipoh', 22);
+insert into towns (id, name, country_id) values (24, 'Lühua', 2);
+insert into towns (id, name, country_id) values (25, 'Santa Helena de Goiás', 92);
+insert into towns (id, name, country_id) values (26, 'Passos', 92);
+insert into towns (id, name, country_id) values (27, 'Nierumai', 2);
+insert into towns (id, name, country_id) values (28, 'Coronel Fabriciano', 92);
+insert into towns (id, name, country_id) values (29, 'Tomioka', 33);
+insert into towns (id, name, country_id) values (32, 'Nevers', 39);
+insert into towns (id, name, country_id) values (33, 'Ribeira Grande', 45);
+insert into towns (id, name, country_id) values (36, 'Gon’ba', 4);
+insert into towns (id, name, country_id) values (37, 'Ban Talat Bueng', 40);
+insert into towns (id, name, country_id) values (38, 'Montréal-Ouest', 17);
+insert into towns (id, name, country_id) values (39, 'Svalöv', 47);
+insert into towns (id, name, country_id) values (40, 'Jeponkrajan', 5);
+insert into towns (id, name, country_id) values (41, 'Priozërsk', 4);
+insert into towns (id, name, country_id) values (42, 'Genteng', 5);
+insert into towns (id, name, country_id) values (43, 'Chilliwack', 17);
+insert into towns (id, name, country_id) values (44, 'Qinnan', 2);
+insert into towns (id, name, country_id) values (45, 'Dalubian', 2);
+insert into towns (id, name, country_id) values (48, 'Santo Antônio do Amparo', 92);
+insert into towns (id, name, country_id) values (49, 'Rajal Norte', 34);
+insert into towns (id, name, country_id) values (50, 'Alvaro Obregon', 51);
+insert into towns (id, name, country_id) values (52, 'Montbéliard', 39);
+insert into towns (id, name, country_id) values (53, 'Fredrikstad', 11);
+insert into towns (id, name, country_id) values (54, 'Wushan', 2);
+insert into towns (id, name, country_id) values (55, 'Połomia', 11);
+insert into towns (id, name, country_id) values (56, 'Usuki', 33);
+insert into towns (id, name, country_id) values (57, 'Pikalëvo', 4);
+insert into towns (id, name, country_id) values (58, 'Dresden', 93);
+insert into towns (id, name, country_id) values (62, 'Bobolice', 11);
+insert into towns (id, name, country_id) values (63, 'Huanuni', 92);
+insert into towns (id, name, country_id) values (68, 'Bagacay', 34);
+insert into towns (id, name, country_id) values (71, 'Pueblo Nuevo', 91);
+insert into towns (id, name, country_id) values (72, 'Thị Trấn Mường Khương', 91);
+insert into towns (id, name, country_id) values (73, 'Korsakovo', 4);
+insert into towns (id, name, country_id) values (75, 'Genova', 94);
+insert into towns (id, name, country_id) values (76, 'Maurole', 5);
+insert into towns (id, name, country_id) values (77, 'Ulanov', 4);
+insert into towns (id, name, country_id) values (78, 'Lubomierz', 11);
+insert into towns (id, name, country_id) values (79, 'Yeroẖam', 61);
+insert into towns (id, name, country_id) values (80, 'Kaltan', 4);
+insert into towns (id, name, country_id) values (82, 'Três Passos', 92);
+insert into towns (id, name, country_id) values (83, 'Hongshi', 2);
+insert into towns (id, name, country_id) values (84, 'Piskivka', 4);
+insert into towns (id, name, country_id) values (85, 'Lianzhou', 2);
+insert into towns (id, name, country_id) values (86, 'Nirasaki', 33);
+insert into towns (id, name, country_id) values (87, 'Dimayon', 34);
+insert into towns (id, name, country_id) values (88, 'Vostochnyy', 4);
+insert into towns (id, name, country_id) values (90, 'Meijiang', 2);
+insert into towns (id, name, country_id) values (91, 'Podbuzh', 4);
+insert into towns (id, name, country_id) values (92, 'Francisco Beltrão', 92);
+insert into towns (id, name, country_id) values (93, 'Taraju', 5);
+insert into towns (id, name, country_id) values (94, 'Przeworsk', 11);
+insert into towns (id, name, country_id) values (95, 'Sacsamarca', 66);
+insert into towns (id, name, country_id) values (96, 'Cacequi', 92);
+insert into towns (id, name, country_id) values (97, 'Almeria', 95);
+insert into towns (id, name, country_id) values (99, 'Zavolzh’ye', 4);
+insert into towns (id, name, country_id) values (100, 'Bascaron', 34);
 
-SET IDENTITY_INSERT Colonists ON;
 
-INSERT INTO Colonists (Id, FirstName, LastName, Ucn, BirthDate) VALUES 
-(1, 'Llywellyn', 'Gethouse', '4339438960', '1970-07-17'),
-(2, 'Ginny', 'de Zamora', '5915319416', '1958-12-06'),
-(3, 'Gabie', 'Burthom', '1762102897', '1961-03-03'),
-(4, 'Mitchell', 'Cortez', '8511063943', '1983-12-29'),
-(5, 'Kiah', 'Saywood', '1602343357', '1971-11-28'),
-(6, 'Clark', 'Cowan', '3675463850', '1956-03-31'),
-(7, 'Donny', 'Rosewarne', '9303158830', '1993-09-16'),
-(8, 'Sheffie', 'Stovine', '0591855062', '1982-08-13'),
-(9, 'Irv', 'Hargate', '3738050981', '1958-03-10'),
-(10, 'Bink', 'Uccelli', '0309591317', '1957-06-01'),
-(11, 'Ximenez', 'Piggot', '0887173071', '1974-09-02'),
-(12, 'Nicolai', 'Pering', '9032193457', '1994-10-03'),
-(13, 'Angeline', 'Sibley', '6739912092', '1972-01-20'),
-(14, 'Mic', 'Westbury', '1277343942', '1951-04-26'),
-(15, 'Filippo', 'Scutter', '4702812238', '1973-10-31'),
-(16, 'Ronalda', 'Mowsley', '1893106179', '1957-09-21'),
-(17, 'Roslyn', 'Gatus', '3407200129', '1996-12-06'),
-(18, 'Wald', 'Bim', '5432110725', '1990-01-04'),
-(19, 'Brigg', 'Paulo', '1923893793', '1965-04-04'),
-(20, 'Marillin', 'Pagen', '8648568714', '1956-10-25'),
-(21, 'Edita', 'Leiden', '4378763079', '1957-10-29'),
-(22, 'Brenna', 'Gidley', '8702130203', '1959-12-31'),
-(23, 'Bernelle', 'Nobes', '9570880503', '1984-06-24'),
-(24, 'Joaquin', 'Gheeraert', '5477599685', '1965-10-18'),
-(25, 'Hale', 'O''Doireidh', '2977107460', '1951-05-09'),
-(26, 'Timi', 'Blacksell', '1329244257', '1991-07-25'),
-(27, 'Winn', 'Moehle', '1021140996', '1964-01-27'),
-(28, 'Oberon', 'Filyakov', '1057711896', '1959-02-05'),
-(29, 'Annabelle', 'Okker', '9101545213', '1956-06-23'),
-(30, 'Arel', 'Power', '0930849914', '1980-03-14'),
-(31, 'Vilma', 'Ferriday', '2097283276', '1985-10-17'),
-(32, 'Kerr', 'Lody', '7735485093', '1953-04-24'),
-(33, 'Cart', 'Lyptrade', '9262146426', '1996-03-02'),
-(34, 'Philly', 'Randalston', '9875674540', '1977-08-07'),
-(35, 'Aigneis', 'McConville', '9225403496', '1991-12-01'),
-(36, 'Bradley', 'Cattow', '8115624241', '1987-02-19'),
-(37, 'Puff', 'Woods', '7888873006', '1968-07-26'),
-(38, 'Michell', 'Chapman', '4374713298', '1952-02-04'),
-(39, 'Fionnula', 'Jankiewicz', '9608520029', '1975-07-03'),
-(40, 'Mahmud', 'Satford', '1715614321', '1952-11-16'),
-(41, 'Laurie', 'Askin', '2713419093', '1954-04-05'),
-(42, 'Domeniga', 'De Pero', '0818480742', '1969-05-03'),
-(43, 'Michal', 'Abilowitz', '7650649482', '1988-03-25'),
-(44, 'Tobit', 'McCorkell', '7537611815', '1992-07-07'),
-(45, 'Constanta', 'Mardlin', '2145571876', '1965-06-06'),
-(46, 'Tessi', 'Oylett', '4568989884', '1972-11-25'),
-(47, 'Barrie', 'Drinkhall', '4410917234', '1983-07-11'),
-(48, 'Lezley', 'Fleischer', '5461541003', '1992-05-23'),
-(49, 'Elka', 'Kayley', '5642134000', '1973-12-11'),
-(50, 'Royal', 'Cuerdale', '6530389628', '1995-12-14'),
-(51, 'Skipp', 'Scrivner', '7605680473', '1951-04-06'),
-(52, 'Esmaria', 'Orrah', '5715982049', '1996-09-09'),
-(53, 'Gwendolyn', 'Spataro', '3333684268', '1988-03-25'),
-(54, 'Mollie', 'Renish', '3927497282', '1995-06-25'),
-(55, 'Dare', 'Coogan', '9721652350', '1980-12-05'),
-(56, 'Emmaline', 'McCabe', '6672282874', '1958-01-04'),
-(57, 'Tania', 'Trinbey', '2936617863', '1975-09-22'),
-(58, 'Karie', 'Dewing', '6257353688', '1969-09-04'),
-(59, 'Auria', 'Bernadot', '6077478105', '1989-06-10'),
-(60, 'Sioux', 'Temblett', '7865206178', '1952-03-26'),
-(61, 'Reid', 'Kiera', '8944188416', '1981-07-06'),
-(62, 'Christophe', 'Kench', '7520063968', '1997-01-21'),
-(63, 'Klara', 'Fratson', '5145463413', '1991-11-16'),
-(64, 'Cazzie', 'Stag', '8231774920', '1982-11-22'),
-(65, 'Nanon', 'Davydychev', '7731782581', '1959-08-10'),
-(66, 'Ralph', 'Elderfield', '0368613577', '1989-01-13'),
-(67, 'Barbara-anne', 'Telfer', '8149737006', '1956-04-24'),
-(68, 'Lynde', 'Bleue', '7047489932', '1966-11-13'),
-(69, 'Ezequiel', 'Lownsbrough', '6203647039', '1995-08-30'),
-(70, 'Town', 'Warcop', '9111417641', '1985-08-14'),
-(71, 'Roselia', 'Croce', '5268822853', '1967-06-06'),
-(72, 'Millisent', 'Girardini', '1440409919', '1961-09-26'),
-(73, 'Celia', 'Punshon', '2945848996', '1964-08-07'),
-(74, 'Sherilyn', 'Cantor', '7082752296', '1950-08-05'),
-(75, 'Natal', 'Adel', '5026822223', '1986-05-06'),
-(76, 'Reinwald', 'Greenwell', '7777836307', '1995-04-16'),
-(77, 'Gerry', 'Zorzin', '6088954132', '1996-08-14'),
-(78, 'Belva', 'Nend', '9589437826', '1994-04-25'),
-(79, 'Nerta', 'Leonardi', '1646136039', '1961-09-17'),
-(80, 'Rollins', 'Ivison', '9378662773', '1959-07-10'),
-(81, 'Kennith', 'Teasell', '0361925158', '1967-06-27'),
-(82, 'Hettie', 'Ord', '5878469642', '1992-08-17'),
-(83, 'Gretta', 'Adds', '4495697269', '1993-01-05'),
-(84, 'Sheena', 'Oleszkiewicz', '0516669745', '1959-08-09'),
-(85, 'Ive', 'Bowkett', '6334466569', '1973-11-18'),
-(86, 'Jock', 'Holbie', '4434406051', '1952-07-15'),
-(87, 'Tierney', 'Shrimptone', '4384489900', '1988-04-17'),
-(88, 'Norbie', 'Dallaway', '8110968600', '1952-09-11'),
-(89, 'Mora', 'Kristiansen', '5850225161', '1960-11-07'),
-(90, 'Mickey', 'Satterfitt', '5939528198', '1984-10-20'),
-(91, 'Faulkner', 'Daye', '2745264443', '1955-06-19'),
-(92, 'Althea', 'Kelinge', '9998159318', '1957-03-23'),
-(93, 'Kirstin', 'Steade', '7311418755', '1959-06-29'),
-(94, 'Chantalle', 'Filipputti', '0934906106', '1952-12-25'),
-(95, 'Far', 'Shrieves', '8673439787', '1956-04-07'),
-(96, 'Benito', 'Freke', '1458369730', '1994-02-19'),
-(97, 'Roxi', 'Restieaux', '2886137715', '1981-05-22'),
-(98, 'Nicolai', 'Creasey', '9690600435', '1970-09-06'),
-(99, 'Bern', 'Goldsack', '5733358580', '1963-01-25'),
-(100, 'Eadmund', 'Le Gall', '1986195685', '1967-01-01')
+insert into stadiums (id, name, capacity, town_id) values (1, 'Demimbu', 21998, 68);
+insert into stadiums (id, name, capacity, town_id) values (2, 'Mybuzz', 9347, 8);
+insert into stadiums (id, name, capacity, town_id) values (3, 'Jayo', 77956, 50);
+insert into stadiums (id, name, capacity, town_id) values (4, 'Cogibox', 53572, 28);
+insert into stadiums (id, name, capacity, town_id) values (6, 'BlogXS', 1530, 85);
+insert into stadiums (id, name, capacity, town_id) values (7, 'Brainsphere', 97725, 52);
+insert into stadiums (id, name, capacity, town_id) values (8, 'Innojam', 80645, 53);
+insert into stadiums (id, name, capacity, town_id) values (9, 'Roomm', 52456, 3);
+insert into stadiums (id, name, capacity, town_id) values (10, 'Gabcube', 91778, 28);
+insert into stadiums (id, name, capacity, town_id) values (11, 'Wikido', 82541, 38);
+insert into stadiums (id, name, capacity, town_id) values (14, 'Jaxspan', 10076, 99);
+insert into stadiums (id, name, capacity, town_id) values (15, 'Zoomcast', 43803, 5);
+insert into stadiums (id, name, capacity, town_id) values (16, 'Chatterbridge', 44401, 26);
+insert into stadiums (id, name, capacity, town_id) values (17, 'Riffpedia', 83548, 14);
+insert into stadiums (id, name, capacity, town_id) values (18, 'Tagchat', 87630, 27);
+insert into stadiums (id, name, capacity, town_id) values (19, 'Realfire', 50446, 16);
+insert into stadiums (id, name, capacity, town_id) values (20, 'Kamba', 57210, 1);
+insert into stadiums (id, name, capacity, town_id) values (21, 'Kimia', 97795, 26);
+insert into stadiums (id, name, capacity, town_id) values (22, 'Skippad', 50321, 96);
+insert into stadiums (id, name, capacity, town_id) values (24, 'InnoZ', 31402, 72);
+insert into stadiums (id, name, capacity, town_id) values (25, 'Edgeblab', 97227, 62);
+insert into stadiums (id, name, capacity, town_id) values (26, 'Photospace', 45816, 95);
+insert into stadiums (id, name, capacity, town_id) values (27, 'Cogidoo', 68002, 44);
+insert into stadiums (id, name, capacity, town_id) values (28, 'Dabjam', 86041, 22);
+insert into stadiums (id, name, capacity, town_id) values (29, 'Zoombeat', 84070, 4);
+insert into stadiums (id, name, capacity, town_id) values (30, 'Browsebug', 28123, 4);
+insert into stadiums (id, name, capacity, town_id) values (31, 'Vitz', 65484, 49);
+insert into stadiums (id, name, capacity, town_id) values (32, 'Feedfire', 97762, 40);
+insert into stadiums (id, name, capacity, town_id) values (33, 'Vidoo', 59493, 39);
+insert into stadiums (id, name, capacity, town_id) values (34, 'Feedmix', 51604, 17);
+insert into stadiums (id, name, capacity, town_id) values (36, 'Buzzbean', 56063, 4);
+insert into stadiums (id, name, capacity, town_id) values (37, 'Kwimbee', 25939, 27);
+insert into stadiums (id, name, capacity, town_id) values (38, 'Fivechat', 71732, 58);
+insert into stadiums (id, name, capacity, town_id) values (40, 'Kaymbo', 85718, 56);
+insert into stadiums (id, name, capacity, town_id) values (41, 'Bluezoom', 97346, 4);
+insert into stadiums (id, name, capacity, town_id) values (42, 'Einti', 62201, 73);
+insert into stadiums (id, name, capacity, town_id) values (43, 'Skimia', 9147, 42);
+insert into stadiums (id, name, capacity, town_id) values (44, 'Edgetag', 81952, 2);
+insert into stadiums (id, name, capacity, town_id) values (45, 'Zazio', 85645, 25);
+insert into stadiums (id, name, capacity, town_id) values (46, 'JumpXS', 54109, 45);
+insert into stadiums (id, name, capacity, town_id) values (47, 'Blogpad', 24940, 26);
+insert into stadiums (id, name, capacity, town_id) values (48, 'Topicstorm', 51470, 14);
+insert into stadiums (id, name, capacity, town_id) values (50, 'Kare', 86490, 24);
+insert into stadiums (id, name, capacity, town_id) values (51, 'Quinu', 84837, 11);
+insert into stadiums (id, name, capacity, town_id) values (52, 'Oba', 64364, 49);
+insert into stadiums (id, name, capacity, town_id) values (53, 'Youspan', 89397, 2);
+insert into stadiums (id, name, capacity, town_id) values (54, 'Meemm', 59073, 57);
+insert into stadiums (id, name, capacity, town_id) values (55, 'Tavu', 49969, 38);
+insert into stadiums (id, name, capacity, town_id) values (56, 'Yotz', 88681, 79);
+insert into stadiums (id, name, capacity, town_id) values (57, 'Realpoint', 99933, 96);
+insert into stadiums (id, name, capacity, town_id) values (58, 'Blogtags', 97294, 6);
+insert into stadiums (id, name, capacity, town_id) values (59, 'Eare', 70126, 87);
+insert into stadiums (id, name, capacity, town_id) values (60, 'Skippad', 65372, 53);
+insert into stadiums (id, name, capacity, town_id) values (61, 'Jaloo', 14002, 3);
+insert into stadiums (id, name, capacity, town_id) values (63, 'Eire', 28968, 10);
+insert into stadiums (id, name, capacity, town_id) values (64, 'Mymm', 67757, 37);
+insert into stadiums (id, name, capacity, town_id) values (65, 'Quaxo', 26706, 94);
+insert into stadiums (id, name, capacity, town_id) values (66, 'Kazio', 39267, 49);
+insert into stadiums (id, name, capacity, town_id) values (67, 'Eamia', 85236, 99);
+insert into stadiums (id, name, capacity, town_id) values (68, 'Agivu', 26828, 18);
+insert into stadiums (id, name, capacity, town_id) values (69, 'Zoovu', 18090, 8);
+insert into stadiums (id, name, capacity, town_id) values (70, 'Trudoo', 83935, 58);
+insert into stadiums (id, name, capacity, town_id) values (71, 'Wordware', 39600, 72);
+insert into stadiums (id, name, capacity, town_id) values (72, 'Dabvine', 71041, 68);
+insert into stadiums (id, name, capacity, town_id) values (73, 'Avaveo', 42490, 52);
+insert into stadiums (id, name, capacity, town_id) values (74, 'Topiczoom', 51142, 2);
+insert into stadiums (id, name, capacity, town_id) values (75, 'Thoughtbeat', 12302, 29);
+insert into stadiums (id, name, capacity, town_id) values (76, 'Flipstorm', 92857, 62);
+insert into stadiums (id, name, capacity, town_id) values (79, 'Trilith', 93996, 72);
+insert into stadiums (id, name, capacity, town_id) values (80, 'Eadel', 73873, 83);
+insert into stadiums (id, name, capacity, town_id) values (81, 'Viva', 98698, 62);
+insert into stadiums (id, name, capacity, town_id) values (83, 'Mydeo', 47344, 94);
+insert into stadiums (id, name, capacity, town_id) values (84, 'Linkbuzz', 14802, 88);
+insert into stadiums (id, name, capacity, town_id) values (85, 'Innotype', 49692, 58);
+insert into stadiums (id, name, capacity, town_id) values (86, 'Izio', 79836, 14);
+insert into stadiums (id, name, capacity, town_id) values (87, 'Edgeify', 61464, 100);
+insert into stadiums (id, name, capacity, town_id) values (88, 'Divape', 24058, 24);
+insert into stadiums (id, name, capacity, town_id) values (89, 'Realblab', 50504, 97);
+insert into stadiums (id, name, capacity, town_id) values (90, 'Dazzlesphere', 25051, 23);
+insert into stadiums (id, name, capacity, town_id) values (91, 'Jaxworks', 95281, 13);
+insert into stadiums (id, name, capacity, town_id) values (94, 'Pixonyx', 18757, 75);
+insert into stadiums (id, name, capacity, town_id) values (96, 'Voolith', 35062, 33);
+insert into stadiums (id, name, capacity, town_id) values (97, 'Zooveo', 39163, 99);
+insert into stadiums (id, name, capacity, town_id) values (98, 'Leexo', 10848, 55);
+insert into stadiums (id, name, capacity, town_id) values (99, 'Linklinks', 54085, 75);
+insert into stadiums (id, name, capacity, town_id) values (100, 'Twitterbridge', 28230, 49);
 
-SET IDENTITY_INSERT Colonists OFF;
 
-SET IDENTITY_INSERT Spaceships ON;
 
-INSERT INTO Spaceships (Id, Name, Manufacturer, LightSpeedRate) VALUES 
-(1, 'USS Templar', 'Oyoba', 1),
-(2, 'Anarchy', 'Fivebridge', 6),
-(3, 'LWSS Romulus', 'Camimbo', 2),
-(4, 'LWSS Dark Phoenix', 'Quimba', 4),
-(5, 'BC The Commissioner', 'Jamaika', 5),
-(6, 'BS Saratoga', 'Realbridge', 7),
-(7, 'SC Serpent', 'Agivu', 9),
-(8, 'Katherina', 'Skiba', 1),
-(9, 'Messenger', 'Leenti', 3),
-(10, 'SSE Priestess', 'Zoovu', 10),
-(11, 'Mercenary Star', 'Realbridge', 1),
-(12, 'Judgment', 'Quimba', 3),
-(13, 'Fade', 'Camimbo', 5),
-(14, 'Adder', 'Fivebridge', 7),
-(15, 'CS Hannibal', 'Oyoba', 9)
+insert into teams (id, name, established, fan_base, stadium_id) values (1, 'Skyble', '1953-11-14', 5381600486852672412, 69);
+insert into teams (id, name, established, fan_base, stadium_id) values (2, 'Skajo', '1947-01-13', 3060821043074282055, 94);
+insert into teams (id, name, established, fan_base, stadium_id) values (3, 'Yadel', '1944-03-01', 6386246859904901308, 51);
+insert into teams (id, name, established, fan_base, stadium_id) values (4, 'Devpoint', '1961-02-22', 6215350118892605178, 85);
+insert into teams (id, name, established, fan_base, stadium_id) values (6, 'Roombo', '1977-12-26', 7073663598690561405, 80);
+insert into teams (id, name, established, fan_base, stadium_id) values (8, 'Realcube', '2006-01-04', 7021566034033315258, 25);
+insert into teams (id, name, established, fan_base, stadium_id) values (9, 'Feednation', '1915-03-16', 3982306259829591228, 40);
+insert into teams (id, name, established, fan_base, stadium_id) values (10, 'Wikizz', '1904-05-26', 1436596681261571018, 45);
+insert into teams (id, name, established, fan_base, stadium_id) values (13, 'Tanoodle', '1904-12-27', 3287399043417734666, 50);
+insert into teams (id, name, established, fan_base, stadium_id) values (14, 'Photolist', '2005-06-05', 876656133954277640, 36);
+insert into teams (id, name, established, fan_base, stadium_id) values (15, 'Pixope', '1992-09-23', 1729201483122224567, 40);
+insert into teams (id, name, established, fan_base, stadium_id) values (16, 'Bubbletube', '1918-05-18', 7140299616505850269, 38);
+insert into teams (id, name, established, fan_base, stadium_id) values (17, 'Jetwire', '1945-08-28', 5375286698890587231, 38);
+insert into teams (id, name, established, fan_base, stadium_id) values (21, 'Photobean', '2002-05-21', 8178357466089602342, 58);
+insert into teams (id, name, established, fan_base, stadium_id) values (22, 'Divape', '1922-07-11', 6963522629534850779, 48);
+insert into teams (id, name, established, fan_base, stadium_id) values (23, 'Dablist', '1997-10-24', 794437919525920573, 54);
+insert into teams (id, name, established, fan_base, stadium_id) values (24, 'Fadeo', '1905-02-09', 3698680202724931601, 32);
+insert into teams (id, name, established, fan_base, stadium_id) values (25, 'Myworks', '1982-01-09', 7780349345745097505, 26);
+insert into teams (id, name, established, fan_base, stadium_id) values (26, 'Feedmix', '2013-02-19', 5138699256958311659, 91);
+insert into teams (id, name, established, fan_base, stadium_id) values (27, 'Voolith', '1914-11-24', 7043720697648815633, 89);
+insert into teams (id, name, established, fan_base, stadium_id) values (28, 'Yata', '1932-01-30', 1268602933821301763, 56);
+insert into teams (id, name, established, fan_base, stadium_id) values (29, 'Flipopia', '2008-04-24', 6672653436110284307, 22);
+insert into teams (id, name, established, fan_base, stadium_id) values (30, 'Fiveclub', '1997-07-01', 1536691600011844615, 6);
+insert into teams (id, name, established, fan_base, stadium_id) values (31, 'Voomm', '1978-01-10', 4105417083349095755, 46);
+insert into teams (id, name, established, fan_base, stadium_id) values (32, 'Skyvu', '2004-05-26', 1160854837502637250, 1);
+insert into teams (id, name, established, fan_base, stadium_id) values (33, 'Tagcat', '2018-07-03', 5826937455976510417, 1);
+insert into teams (id, name, established, fan_base, stadium_id) values (34, 'Trilith', '1940-05-03', 8216613172238695440, 16);
+insert into teams (id, name, established, fan_base, stadium_id) values (35, 'Dabtype', '2014-03-18', 911369134867223134, 38);
+insert into teams (id, name, established, fan_base, stadium_id) values (36, 'Voolia', '1918-09-08', 1333656558698142583, 89);
+insert into teams (id, name, established, fan_base, stadium_id) values (37, 'Shuffletag', '1960-08-18', 8190843914298347287, 21);
+insert into teams (id, name, established, fan_base, stadium_id) values (38, 'Pixonyx', '1976-04-27', 319927746577385011, 28);
+insert into teams (id, name, established, fan_base, stadium_id) values (40, 'Skiptube', '1961-11-04', 8935340069190771592, 52);
+insert into teams (id, name, established, fan_base, stadium_id) values (41, 'Quinu', '1994-06-12', 5876435157776002083, 94);
+insert into teams (id, name, established, fan_base, stadium_id) values (43, 'Realbridge', '1969-01-05', 4541229891367264937, 34);
+insert into teams (id, name, established, fan_base, stadium_id) values (44, 'Fatz', '1983-05-05', 4790331150070136719, 69);
+insert into teams (id, name, established, fan_base, stadium_id) values (45, 'Ntags', '1981-06-05', 3508984270641351110, 16);
+insert into teams (id, name, established, fan_base, stadium_id) values (46, 'Browsebug', '1930-09-08', 1801270536254666585, 55);
+insert into teams (id, name, established, fan_base, stadium_id) values (48, 'Skivee', '1931-02-05', 736740182984678619, 56);
+insert into teams (id, name, established, fan_base, stadium_id) values (49, 'Katz', '1913-09-29', 5012189250438264342, 40);
+insert into teams (id, name, established, fan_base, stadium_id) values (50, 'Dabfeed', '1940-04-28', 1819467455864248592, 48);
+insert into teams (id, name, established, fan_base, stadium_id) values (52, 'Twinte', '1994-04-22', 9146216041973848053, 27);
+insert into teams (id, name, established, fan_base, stadium_id) values (53, 'Eire', '1927-03-06', 5482061253080674936, 14);
+insert into teams (id, name, established, fan_base, stadium_id) values (54, 'Edgetag', '1907-05-14', 6158211782371509093, 81);
+insert into teams (id, name, established, fan_base, stadium_id) values (55, 'Yakitri', '1980-11-25', 7105240609489291112, 27);
+insert into teams (id, name, established, fan_base, stadium_id) values (56, 'Yodoo', '1944-01-03', 3469901618101059464, 84);
+insert into teams (id, name, established, fan_base, stadium_id) values (57, 'Vinte', '2014-05-21', 4388010667399843460, 59);
+insert into teams (id, name, established, fan_base, stadium_id) values (58, 'Jamia', '1951-02-27', 5742547975482276839, 72);
+insert into teams (id, name, established, fan_base, stadium_id) values (59, 'Miboo', '1971-08-02', 30087062078800256, 27);
+insert into teams (id, name, established, fan_base, stadium_id) values (60, 'Cogilith', '1905-03-06', 8494896707349423124, 90);
+insert into teams (id, name, established, fan_base, stadium_id) values (61, 'Meembee', '1920-09-19', 3623803303972110845, 72);
+insert into teams (id, name, established, fan_base, stadium_id) values (62, 'Ailane', '1963-08-20', 6711237100133852778, 91);
+insert into teams (id, name, established, fan_base, stadium_id) values (63, 'Zoombox', '1928-06-23', 5587047626464497328, 83);
+insert into teams (id, name, established, fan_base, stadium_id) values (64, 'Wikibox', '1936-12-10', 7279586585838963694, 61);
+insert into teams (id, name, established, fan_base, stadium_id) values (65, 'Browsetype', '1925-08-17', 5292240404387586366, 21);
+insert into teams (id, name, established, fan_base, stadium_id) values (66, 'Ntag', '2000-09-27', 7755181941187484930, 51);
+insert into teams (id, name, established, fan_base, stadium_id) values (67, 'Buzzbean', '2018-11-15', 666316370089900538, 29);
+insert into teams (id, name, established, fan_base, stadium_id) values (68, 'Skaboo', '1984-01-19', 2615683851634869122, 52);
+insert into teams (id, name, established, fan_base, stadium_id) values (69, 'Livetube', '1944-08-07', 5735345547221813220, 48);
+insert into teams (id, name, established, fan_base, stadium_id) values (70, 'Divavu', '1922-09-16', 244790118398382264, 65);
+insert into teams (id, name, established, fan_base, stadium_id) values (71, 'Meetz', '1902-05-21', 2285861017794534935, 69);
+insert into teams (id, name, established, fan_base, stadium_id) values (72, 'Tagopia', '1968-06-08', 2067286362619260830, 84);
+insert into teams (id, name, established, fan_base, stadium_id) values (73, 'Zoonoodle', '1910-02-05', 4705666461892628623, 87);
+insert into teams (id, name, established, fan_base, stadium_id) values (74, 'Kanoodle', '2013-05-23', 5695178504367952624, 76);
+insert into teams (id, name, established, fan_base, stadium_id) values (75, 'Tagchat', '1907-12-12', 2153317859111089038, 27);
+insert into teams (id, name, established, fan_base, stadium_id) values (78, 'Vinder', '1983-08-28', 5521362466164868088, 61);
+insert into teams (id, name, established, fan_base, stadium_id) values (79, 'Yombu', '1974-11-12', 2242657548817015598, 88);
+insert into teams (id, name, established, fan_base, stadium_id) values (80, 'Photobug', '1985-02-07', 6590272482775810761, 65);
+insert into teams (id, name, established, fan_base, stadium_id) values (81, 'Gabtype', '2001-08-10', 5538742810653865932, 79);
+insert into teams (id, name, established, fan_base, stadium_id) values (82, 'Meevee', '1900-11-09', 3089350741966143308, 11);
+insert into teams (id, name, established, fan_base, stadium_id) values (83, 'Thoughtstorm', '1975-05-22', 2713385532319684164, 11);
+insert into teams (id, name, established, fan_base, stadium_id) values (84, 'Eamia', '1911-03-15', 4143670135638409582, 51);
+insert into teams (id, name, established, fan_base, stadium_id) values (86, 'Mymm', '2014-08-05', 1590890837666208012, 88);
+insert into teams (id, name, established, fan_base, stadium_id) values (87, 'Tekfly', '1911-12-12', 664362306291639287, 24);
+insert into teams (id, name, established, fan_base, stadium_id) values (88, 'Dabshots', '1997-11-08', 2430628559570464120, 36);
+insert into teams (id, name, established, fan_base, stadium_id) values (89, 'Abatz', '1973-04-06', 7761143031795602215, 70);
+insert into teams (id, name, established, fan_base, stadium_id) values (90, 'Shufflester', '1982-04-25', 7180824955244215528, 33);
+insert into teams (id, name, established, fan_base, stadium_id) values (91, 'Gabcube', '2010-03-08', 9081583761206262386, 33);
+insert into teams (id, name, established, fan_base, stadium_id) values (92, 'Skipstorm', '1943-05-09', 7026806565631068300, 91);
+insert into teams (id, name, established, fan_base, stadium_id) values (93, 'Dabshots', '1933-12-06', 1315623029582223186, 14);
+insert into teams (id, name, established, fan_base, stadium_id) values (94, 'Snaptags', '1903-02-23', 2925448464723899669, 30);
+insert into teams (id, name, established, fan_base, stadium_id) values (95, 'Trupe', '2002-11-09', 8657673499207692507, 63);
+insert into teams (id, name, established, fan_base, stadium_id) values (96, 'Fivespan', '1937-12-13', 1367828221665223895, 15);
+insert into teams (id, name, established, fan_base, stadium_id) values (97, 'Plajo', '1952-06-14', 7105974836341759099, 15);
+insert into teams (id, name, established, fan_base, stadium_id) values (98, 'Jabbercube', '1904-04-04', 8046368032925194865, 91);
+insert into teams (id, name, established, fan_base, stadium_id) values (99, 'Devify', '1921-10-23', 6988886166251943170, 18);
+insert into teams (id, name, established, fan_base, stadium_id) values (100, 'Demizz', '2018-12-14', 3696633192817061145, 55);
 
-SET IDENTITY_INSERT Spaceships OFF;
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (1, 95, 65, 11, 98, 72, 54);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (2, 15, 94, 3, 27, 69, 97);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (3, 17, 46, 35, 84, 59, 89);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (4, 99, 38, 42, 44, 40, 22);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (5, 59, 46, 1, 29, 92, 48);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (6, 80, 69, 49, 9, 67, 37);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (7, 3, 71, 55, 64, 70, 34);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (8, 34, 21, 97, 8, 10, 20);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (9, 13, 40, 74, 21, 71, 4);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (10, 8, 62, 41, 68, 57, 7);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (11, 26, 54, 16, 9, 22, 21);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (12, 62, 14, 76, 63, 97, 24);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (13, 59, 56, 61, 73, 41, 52);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (14, 29, 34, 94, 47, 4, 92);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (15, 27, 37, 29, 74, 3, 68);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (16, 72, 30, 86, 8, 43, 64);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (17, 78, 11, 9, 43, 28, 74);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (18, 3, 9, 69, 3, 34, 51);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (19, 77, 26, 86, 15, 86, 6);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (20, 89, 89, 15, 53, 19, 16);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (21, 77, 1, 89, 19, 42, 42);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (22, 10, 54, 68, 38, 4, 76);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (23, 2, 36, 39, 34, 2, 21);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (24, 10, 94, 94, 73, 7, 3);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (25, 14, 27, 58, 5, 61, 7);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (26, 56, 78, 13, 92, 18, 55);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (27, 56, 26, 4, 29, 48, 87);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (28, 11, 77, 76, 15, 6, 7);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (29, 26, 77, 94, 50, 51, 67);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (30, 72, 63, 7, 49, 69, 67);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (31, 36, 37, 49, 20, 65, 26);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (32, 57, 36, 13, 8, 66, 22);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (33, 99, 77, 90, 24, 57, 60);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (34, 68, 41, 6, 75, 86, 77);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (35, 37, 20, 72, 27, 22, 56);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (36, 14, 81, 58, 77, 33, 7);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (37, 39, 70, 37, 47, 10, 14);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (38, 23, 6, 97, 94, 19, 84);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (39, 71, 37, 22, 3, 73, 87);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (40, 74, 29, 39, 72, 49, 55);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (41, 32, 4, 94, 73, 50, 18);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (42, 35, 86, 69, 56, 23, 97);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (43, 80, 81, 18, 23, 94, 7);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (44, 33, 4, 19, 9, 92, 62);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (45, 14, 82, 1, 68, 92, 9);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (46, 54, 72, 84, 44, 88, 73);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (47, 75, 67, 50, 77, 56, 8);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (48, 97, 46, 26, 1, 11, 61);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (49, 90, 49, 3, 16, 48, 24);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (50, 41, 67, 84, 52, 83, 97);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (51, 49, 82, 8, 11, 98, 86);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (52, 9, 53, 11, 66, 29, 52);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (53, 28, 22, 67, 89, 2, 66);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (54, 52, 90, 70, 33, 84, 13);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (55, 84, 51, 99, 51, 22, 5);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (56, 6, 86, 23, 33, 16, 46);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (57, 72, 43, 79, 83, 52, 60);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (58, 71, 32, 16, 18, 42, 27);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (59, 78, 49, 70, 67, 51, 25);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (60, 28, 2, 62, 43, 54, 63);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (61, 51, 48, 87, 9, 63, 13);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (62, 16, 93, 57, 99, 5, 27);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (63, 4, 37, 32, 50, 37, 68);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (64, 41, 63, 82, 37, 97, 86);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (65, 70, 98, 44, 91, 89, 65);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (66, 50, 4, 92, 67, 5, 17);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (67, 17, 91, 31, 34, 88, 91);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (68, 44, 43, 4, 44, 65, 44);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (69, 93, 88, 76, 79, 18, 43);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (70, 68, 3, 53, 21, 86, 50);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (71, 14, 57, 18, 57, 14, 63);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (72, 33, 17, 11, 5, 84, 58);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (73, 68, 67, 90, 93, 90, 13);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (74, 18, 31, 74, 17, 92, 53);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (75, 26, 70, 46, 55, 47, 55);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (76, 53, 70, 73, 97, 59, 54);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (77, 48, 61, 11, 87, 41, 8);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (78, 11, 2, 82, 45, 36, 5);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (79, 97, 83, 6, 22, 24, 14);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (80, 95, 94, 55, 66, 42, 2);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (81, 43, 24, 45, 58, 43, 34);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (82, 1, 24, 5, 88, 47, 53);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (83, 27, 24, 7, 42, 25, 99);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (84, 13, 17, 18, 38, 70, 79);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (85, 75, 1, 35, 56, 65, 51);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (86, 91, 71, 35, 95, 9, 89);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (87, 83, 32, 40, 85, 33, 9);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (88, 23, 79, 6, 8, 2, 30);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (89, 19, 26, 70, 32, 66, 90);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (90, 57, 41, 42, 10, 14, 57);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (91, 24, 7, 82, 32, 89, 62);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (92, 79, 87, 47, 7, 40, 5);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (93, 95, 25, 23, 88, 20, 62);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (94, 40, 43, 22, 99, 80, 11);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (95, 95, 67, 48, 38, 63, 36);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (96, 92, 57, 75, 39, 24, 40);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (97, 66, 99, 42, 29, 13, 63);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (98, 85, 43, 27, 31, 15, 29);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (99, 72, 82, 50, 73, 87, 51);
+insert into skills_data (id, dribbling, pace, passing, shooting, speed, strength) values (100, 56, 40, 54, 87, 67, 32);
 
-SET IDENTITY_INSERT Journeys ON;
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (1, 'Alden', 'Wrettum', 21, 'A', 32283.83, NULL, 87, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (2, 'Dayna', 'Halesworth', 23, 'M', 897853.69, '2020-01-15 07:26:33', 88, 91);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (3, 'Estelle', 'Aldred', 46, 'D', 937362.62, '2014-06-08 10:27:48', 4, 91);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (4, 'Bibbye', 'O''Lunney', 44, 'A', 961275.08, '2019-04-11 22:55:37', 40, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (5, 'Lin', 'Teasdale-Markie', 47, 'M', 920520.47, '2018-12-05 03:42:21', 36, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (6, 'Walther', 'Olenchenko', 28, 'D', 796695.25, NULL, 68, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (7, 'Harlie', 'Sandells', 50, 'M', 790427.89, '2011-02-25 04:35:48', 59, 37);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (8, 'Urbanus', 'Costin', 26, 'A', 479024.79, '2019-11-25 18:40:55', 6, 86);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (9, 'Jorrie', 'Huguenet', 20, 'D', 753355.32, NULL, 55, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (10, 'Lammond', 'Lightbowne', 27, 'A', 862676.3, '2013-12-13 11:32:38', 18, 98);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (11, 'Curry', 'Brando', 17, 'M', 511422.9, '2019-08-16 16:02:01', 34, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (12, 'Thor', 'Serrels', 24, 'D', 455601.67, '2013-03-19 15:23:23', 47, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (13, 'Berkie', 'Maryin', 45, 'A', 698230.79, '2016-12-27 13:45:05', 65, 91);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (14, 'Kiersten', 'Maidlow', 29, 'M', 791199.55, '2015-05-04 19:21:41', 15, 83);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (15, 'Barnabas', 'Micah', 46, 'A', 565713.54, '2019-09-09 12:43:08', 87, 43);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (16, 'Eldin', 'Gravet', 35, 'D', 821422.57, '2019-03-23 11:24:11', 69, 64);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (17, 'Glory', 'Crosetti', 28, 'A', 394462.27, '2010-08-05 19:01:14', 13, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (18, 'Doretta', 'Rignold', 42, 'M', 665969.43, '2015-09-18 11:43:44', 40, 79);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (19, 'Gwendolen', 'Semple', 17, 'D', 407582.09, NULL, 94, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (20, 'Launce', 'Perchard', 44, 'A', 899242.3, '2013-09-13 14:16:39', 70, 17);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (21, 'Vasili', 'Grigorescu', 45, 'M', 46428.66, '2013-12-13 07:18:46', 91, 90);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (22, 'Esta', 'Ingarfill', 48, 'D', 663175.46, '2013-10-17 12:28:11', 94, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (23, 'Kalvin', 'Bewley', 19, 'A', 550420.42, NULL, 15, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (24, 'Goldi', 'Gouly', 20, 'A', 914066.1, '2016-06-12 22:08:30', 75, 90);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (25, 'Isaak', 'Duncombe', 47, 'D', 586243.8, '2015-01-18 14:33:08', 17, 83);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (26, 'Bartlett', 'Rigglesford', 22, 'M', 414010.4, '2016-11-30 19:14:19', 45, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (27, 'Halsy', 'Scales', 40, 'A', 12794.6, '2015-05-31 23:18:49', 46, 43);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (28, 'Sisely', 'Feares', 20, 'A', 413707.4, '2017-10-09 12:03:13', 28, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (29, 'Dav', 'Durber', 31, 'D', 745029.69, '2016-09-22 06:04:47', 50, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (30, 'Perren', 'Widdowes', 27, 'M', 11423.39, '2012-11-10 07:08:59', 48, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (31, 'Stacy', 'de Copeman', 36, 'A', 156851.33, '2018-11-09 07:12:33', 52, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (32, 'Roosevelt', 'Frape', 36, 'D', 725185.0, '2019-09-03 19:43:30', 76, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (33, 'Ada', 'Doumic', 41, 'M', 271526.17, '2014-11-02 22:11:50', 46, 54);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (34, 'Carolin', 'Petyanin', 49, 'D', 128940.13, '2013-12-12 04:53:00', 14, 34);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (35, 'Blanch', 'Dast', 29, 'A', 138262.58, '2010-12-10 19:29:34', 64, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (36, 'Steffie', 'Emberton', 48, 'A', 72310.29, '2015-09-08 23:55:27', 71, 95);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (37, 'Saw', 'Riste', 29, 'M', 35822.1, '2016-04-03 12:55:50', 81, 36);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (38, 'Ricca', 'Lawrance', 28, 'A', 231233.93, '2019-09-21 17:24:59', 47, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (39, 'Camey', 'Michurin', 27, 'D', 53172.2, '2018-04-08 06:46:25', 14, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (40, 'Carlen', 'Hadny', 18, 'A', 336677.23, NULL, 85, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (41, 'Mollie', 'Duerdin', 24, 'M', 966079.07, '2010-04-18 06:10:43', 13, 40);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (42, 'Myer', 'Daenen', 16, 'A', 109521.1, '2017-06-19 08:25:13', 3, 100);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (43, 'Jacqueline', 'Mowat', 16, 'A', 78877.68, '2014-08-05 10:03:53', 91, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (44, 'Harmon', 'Phette', 31, 'D', 117039.21, '2010-05-28 12:25:24', 67, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (45, 'Georgie', 'Fildes', 28, 'A', 898257.96, '2011-09-16 12:29:29', 47, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (46, 'Cecilla', 'Clausen-Thue', 36, 'A', 369418.03, '2011-02-06 23:04:31', 99, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (47, 'Ayn', 'Tomsu', 19, 'A', 817970.65, NULL, 8, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (48, 'Ashley', 'Noyce', 31, 'A', 460354.93, '2019-12-29 10:48:10', 11, 3);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (49, 'Gordan', 'Tuxsell', 21, 'M', 637799.93, '2012-12-14 18:33:29', 24, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (50, 'Millard', 'Danahar', 38, 'D', 118710.45, '2018-01-08 11:19:36', 9, 43);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (51, 'Cristian', 'Tamas', 34, 'A', 56839.58, '2017-04-03 13:32:59', 57, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (52, 'Malissa', 'Paylie', 27, 'A', 397352.27, '2012-05-01 07:52:22', 17, 48);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (53, 'Gerhardine', 'Dow', 39, 'D', 623042.86, '2015-03-27 15:49:01', 30, 52);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (54, 'De witt', 'Blodgett', 35, 'A', 519212.34, '2013-01-27 19:57:56', 17, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (55, 'Tadd', 'Gorbell', 48, 'M', 456460.8, '2015-01-19 02:34:29', 98, 30);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (56, 'Eileen', 'Sowte', 20, 'D', 414352.39, '2010-12-15 05:32:20', 18, 15);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (57, 'Simmonds', 'Brockest', 18, 'A', 522570.7, '2017-03-06 18:24:13', 19, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (58, 'Perl', 'Dawidsohn', 17, 'A', 888546.65, NULL, 48, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (59, 'Nettle', 'Lund', 38, 'M', 680019.08, '2015-03-07 16:51:02', 25, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (60, 'Marni', 'McDonald', 42, 'D', 298219.2, '2012-04-08 23:10:52', 63, 96);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (61, 'Roxane', 'Lestrange', 33, 'A', 152195.68, '2014-02-13 17:02:02', 97, 57);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (62, 'Akim', 'Rathe', 31, 'M', 982188.88, '2015-04-23 22:36:03', 21, 96);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (63, 'Jonis', 'Kibel', 49, 'D', 851683.55, '2015-02-22 15:16:17', 27, 92);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (64, 'Brendis', 'Sauvage', 46, 'A', 786921.96, '2012-01-08 03:05:39', 54, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (65, 'Kirstyn', 'Menego', 47, 'D', 257056.58, '2013-03-11 22:20:31', 68, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (66, 'Chickie', 'Pellatt', 34, 'A', 704831.0, '2011-07-10 19:00:10', 71, 86);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (67, 'Flemming', 'Tuffey', 17, 'M', 644275.94, NULL, 21, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (68, 'Fredrika', 'Kobierra', 36, 'D', 532527.47, '2012-09-26 06:56:11', 85, 81);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (69, 'Kinna', 'Tryhorn', 19, 'A', 188978.96, '2012-02-25 02:35:51', 67, 81);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (70, 'Elenore', 'Ventura', 31, 'A', 622814.15, '2011-08-11 01:03:48', 50, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (71, 'Maryl', 'Angelini', 25, 'M', 371245.5, '2013-10-28 14:03:43', 25, 31);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (72, 'Bobette', 'McGenis', 24, 'D', 163624.46, '2013-05-28 13:11:29', 54, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (73, 'Tonnie', 'Hanburry', 38, 'A', 790860.06, '2011-06-25 11:27:16', 55, 83);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (74, 'Zuzana', 'Kempstone', 34, 'M', 1620.25, '2019-10-05 20:09:24', 57, 96);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (75, 'Aldon', 'Spadazzi', 40, 'D', 631331.47, '2016-08-16 00:43:07', 81, 70);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (76, 'Grethel', 'Checchetelli', 45, 'A', 95594.73, '2015-12-01 15:18:49', 94, 38);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (77, 'Jemie', 'Coniff', 40, 'A', 840606.23, '2010-04-29 22:32:55', 45, 45);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (78, 'Alethea', 'Lednor', 21, 'M', 719049.22, NULL, 31, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (79, 'Roscoe', 'Durkin', 29, 'D', 452790.68, '2016-02-29 18:24:54', 1, 33);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (80, 'Royal', 'Deakes', 19, 'A', 49162.77, '2012-12-02 04:22:43', 44, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (81, 'Elysee', 'Dunstone', 33, 'M', 817944.93, '2016-04-03 00:38:48', 4, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (82, 'Carola', 'Alelsandrovich', 32, 'A', 512204.06, '2011-06-08 12:39:58', 31, 1);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (83, 'Roxi', 'Stanyland', 22, 'A', 876807.09, NULL, 2, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (84, 'Chrisse', 'Piser', 20, 'D', 949206.14, '2016-10-06 00:35:33', 97, 62);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (85, 'Carlynne', 'Padillo', 49, 'M', 316299.71, '2012-05-16 13:59:35', 7, 96);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (86, 'Lyell', 'Scrowton', 43, 'M', 117038.47, '2018-05-27 22:56:39', 20, 43);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (87, 'Pet', 'Malzard', 19, 'D', 487243.87, NULL, 95, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (88, 'Seth', 'Samme', 20, 'A', 547008.09, '2017-07-15 02:07:39', 14, 58);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (89, 'Renault', 'Keighly', 24, 'A', 984113.71, '2014-12-15 08:15:47', 45, 86);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (90, 'Melodee', 'McVey', 22, 'A', 578112.19, '2018-02-11 08:41:37', 99, 26);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (91, 'Helen', 'Ell', 32, 'M', 213091.23, '2012-03-07 10:15:22', 30, 55);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (92, 'Shamus', 'Illingsworth', 39, 'D', 5735.23, '2012-09-12 21:57:07', 11, 44);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (93, 'Curtis', 'Lawrenceson', 41, 'A', 37071.45, '2013-06-21 15:31:00', 96, 96);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (94, 'Gaby', 'Yare', 45, 'A', 690051.9, '2015-06-11 17:08:01', 29, 52);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (95, 'Marquita', 'Sigert', 27, 'D', 619853.74, '2017-02-19 23:07:14', 46, 92);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (96, 'Kate', 'Taylder', 36, 'M', 495908.54, '2013-11-23 16:47:29', 61, 99);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (97, 'Gianni', 'Morrow', 16, 'A', 762456.74, NULL, 45, NULL);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (98, 'Meredith', 'Duffett', 46, 'D', 77373.25, '2015-10-30 16:20:42', 26, 64);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (99, 'Miranda', 'Frichley', 45, 'A', 307130.04, '2019-06-20 16:31:41', 53, 29);
+insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (100, 'Jorrie', 'Lumsden', 50, 'M', 508035.44, '2010-09-19 11:52:56', 4, 65);
 
-INSERT INTO Journeys (Id, JourneyStart, JourneyEnd, purpose, DestinationSpaceportId, SpaceshipId) VALUES 
-(1, '2019-02-09 17:02:46', '2049-04-20 22:39:54', 'Educational', 25, 10),
-(2, '2019-01-28 20:27:45', '2049-11-21 00:08:27', 'Educational', 30, 11),
-(3, '2019-02-21 22:06:34', '2049-01-03 11:00:22', 'Military', 9, 1),
-(4, '2019-02-08 13:38:42', '2049-05-13 00:55:53', 'Educational', 23, 9),
-(5, '2019-02-11 19:14:50', '2049-05-04 00:01:03', 'Technical', 19, 15),
-(6, '2019-02-23 03:26:28', '2049-10-26 03:38:15', 'Military', 21, 8),
-(7, '2019-01-04 23:44:40', '2049-12-09 04:00:54', 'Military', 21, 13),
-(8, '2019-02-13 20:56:47', '2049-11-21 08:26:34', 'Medical', 19, 14),
-(9, '2019-02-22 08:37:15', '2049-04-25 13:52:19', 'Educational', 18, 12),
-(10, '2019-02-04 20:11:09', '2049-11-12 23:12:16', 'Medical', 25, 4),
-(11, '2019-02-13 20:20:05', '2049-01-17 04:59:17', 'Medical', 3, 6),
-(12, '2019-02-23 06:20:49', '2049-03-15 22:56:39', 'Military', 23, 2),
-(13, '2019-02-19 16:40:06', '2049-02-22 02:52:23', 'Educational', 10, 5),
-(14, '2019-01-31 18:12:01', '2049-03-22 20:54:18', 'Medical', 30, 3),
-(15, '2019-02-26 17:52:04', '2049-02-28 05:32:46', 'Technical', 2, 7)
+insert into coaches (id, first_name, last_name, coach_level) values (1, 'Anollie', 'Phelip', 4);
+insert into coaches (id, first_name, last_name, coach_level) values (2, 'Aster', 'Krolak', 1);
+insert into coaches (id, first_name, last_name, coach_level) values (3, 'Aesra', 'Simoneton', 4);
+insert into coaches (id, first_name, last_name, coach_level) values (4, 'Acad', 'Clyne', 1);
+insert into coaches (id, first_name, last_name, coach_level) values (5, 'Arcos', 'Chettle', 8);
+insert into coaches (id, first_name, last_name, coach_level) values (6, 'Reynard', 'Gravenor', 2);
+insert into coaches (id, first_name, last_name, coach_level) values (7, 'Mickey', 'Dabernott', 7);
+insert into coaches (id, first_name, last_name, coach_level) values (8, 'Chilton', 'Cookley', 4);
+insert into coaches (id, first_name, last_name, coach_level) values (9, 'Rudie', 'Gorgl', 2);
+insert into coaches (id, first_name, last_name, coach_level) values (10, 'Lewes', 'Dymocke', 7);
 
-SET IDENTITY_INSERT Journeys OFF;
-
-SET IDENTITY_INSERT TravelCards ON;
-
-INSERT INTO TravelCards (ID, CardNumber, JobDuringJourney, ColonistId, JourneyId) VALUES 
-(1, '8146587399', 'Trooper', 46, 10),
-(2, '2118029497', 'Engineer', 90, 7),
-(3, '9344537232', 'Trooper', 16, 9),
-(4, '9486883343', 'Trooper', 53, 1),
-(5, '1376917726', 'Engineer', 77, 15),
-(6, '6203185566', 'Trooper', 65, 5),
-(7, '7213731939', 'Trooper', 38, 12),
-(8, '0916463753', 'Cook', 4, 3),
-(9, '3171574225', 'Cleaner', 78, 14),
-(10, '7052651017', 'Trooper', 5, 3),
-(11, '6485601252', 'Trooper', 21, 5),
-(12, '1259573990', 'Pilot', 39, 2),
-(13, '8094792329', 'Engineer', 73, 5),
-(14, '6625314714', 'Trooper', 79, 13),
-(15, '9424426321', 'Cleaner', 17, 7),
-(16, '8828605863', 'Pilot', 54, 7),
-(17, '2159992313', 'Cook', 52, 5),
-(18, '3485558516', 'Trooper', 86, 2),
-(19, '2986646980', 'Cleaner', 91, 14),
-(20, '6684972129', 'Cook', 32, 9),
-(21, '4124832877', 'Pilot', 40, 13),
-(22, '6235688229', 'Pilot', 18, 10),
-(23, '0696213079', 'Pilot', 68, 3),
-(24, '4013832577', 'Cleaner', 34, 15),
-(25, '7294888914', 'Engineer', 11, 1),
-(26, '2452199249', 'Engineer', 44, 5),
-(27, '8109770304', 'Cook', 47, 10),
-(28, '0065437969', 'Engineer', 59, 6),
-(29, '2027180494', 'Cleaner', 19, 15),
-(30, '7428446880', 'Cook', 89, 9),
-(31, '9887148008', 'Pilot', 31, 7),
-(32, '7217275873', 'Trooper', 51, 13),
-(33, '2107121109', 'Cleaner', 83, 6),
-(34, '6762392385', 'Pilot', 6, 10),
-(35, '7283381686', 'Engineer', 66, 1),
-(36, '9136252824', 'Trooper', 27, 11),
-(37, '1245875957', 'Engineer', 70, 4),
-(38, '6672774165', 'Cook', 41, 10),
-(39, '3195824760', 'Trooper', 62, 6),
-(40, '1747094374', 'Cook', 43, 7),
-(41, '7027727544', 'Cleaner', 85, 3),
-(42, '2171192356', 'Engineer', 35, 10),
-(43, '5954191700', 'Cleaner', 8, 7),
-(44, '4095388420', 'Cleaner', 92, 14),
-(45, '9314496627', 'Cook', 2, 11),
-(46, '1773187996', 'Pilot', 30, 6),
-(47, '8355604253', 'Trooper', 50, 12),
-(48, '2988992428', 'Trooper', 49, 15),
-(49, '1659856329', 'Cook', 80, 14),
-(50, '0044135076', 'Trooper', 63, 2),
-(51, '9516474373', 'Cleaner', 14, 6),
-(52, '4157082869', 'Cleaner', 55, 9),
-(53, '8642394846', 'Pilot', 94, 8),
-(54, '7519103471', 'Cook', 56, 7),
-(55, '1438175310', 'Cleaner', 12, 15),
-(56, '9204929723', 'Engineer', 74, 14),
-(57, '2593519746', 'Cleaner', 23, 10),
-(58, '1668303752', 'Trooper', 75, 14),
-(59, '5216557148', 'Cook', 28, 2),
-(60, '3947076819', 'Engineer', 71, 1),
-(61, '9289794623', 'Cook', 3, 14),
-(62, '6742541032', 'Cleaner', 7, 5),
-(63, '1199734136', 'Engineer', 37, 6),
-(64, '2868171206', 'Engineer', 29, 6),
-(65, '4584707200', 'Trooper', 33, 4),
-(66, '9383154640', 'Trooper', 42, 14),
-(67, '6664373122', 'Trooper', 10, 10),
-(68, '4084900842', 'Cleaner', 69, 15),
-(69, '2601229160', 'Trooper', 13, 15),
-(70, '9893913284', 'Pilot', 81, 8),
-(71, '8132506049', 'Cleaner', 88, 4),
-(72, '0801743184', 'Cleaner', 1, 6),
-(73, '0129851787', 'Cleaner', 25, 7),
-(74, '0032031181', 'Engineer', 67, 14),
-(75, '9551949137', 'Pilot', 82, 12),
-(76, '8086387313', 'Pilot', 95, 4),
-(77, '1958989509', 'Cleaner', 93, 8),
-(78, '5284322916', 'Cook', 87, 7),
-(79, '4505522830', 'Cleaner', 57, 13),
-(80, '2193535426', 'Cleaner', 72, 15),
-(81, '6318403418', 'Cleaner', 26, 4),
-(82, '0157800563', 'Pilot', 64, 3),
-(83, '3190011672', 'Trooper', 20, 6),
-(84, '6339112293', 'Trooper', 45, 1),
-(85, '8070064854', 'Cook', 58, 6),
-(86, '2053374160', 'Pilot', 84, 7),
-(87, '6506342986', 'Cook', 15, 15),
-(88, '2689944235', 'Cook', 9, 11),
-(89, '0037637193', 'Engineer', 24, 12),
-(90, '2733009753', 'Engineer', 22, 7),
-(91, '2716188963', 'Cook', 48, 15),
-(92, '7933701663', 'Cleaner', 60, 2),
-(93, '8779697844', 'Cook', 76, 12),
-(94, '0870475649', 'Cleaner', 36, 11),
-(95, '1349628603', 'Pilot', 61, 8)
-
-SET IDENTITY_INSERT TravelCards OFF;
+insert into players_coaches(player_id , coach_id) VALUE (1, 1);
+insert into players_coaches(player_id , coach_id) VALUE (54, 2);
+insert into players_coaches(player_id , coach_id) VALUE (17, 5);
+insert into players_coaches(player_id , coach_id) VALUE (33, 4);
+insert into players_coaches(player_id , coach_id) VALUE (24, 8);
+insert into players_coaches(player_id , coach_id) VALUE (66, 10);
+insert into players_coaches(player_id , coach_id) VALUE (90, 5);
+insert into players_coaches(player_id , coach_id) VALUE (4, 6);
+insert into players_coaches(player_id , coach_id) VALUE (39, 10);
+insert into players_coaches(player_id , coach_id) VALUE (71, 8);
 [/code-adapter]
 [task-description]
 ## Description
@@ -394,98 +644,109 @@ Description ...
 [tests]
 [test open]
 [input]
-SELECT COUNT(*) FROM Planets;
+SELECT COUNT(id) FROM coaches;
 [/input]
 [output]
-24
+30
 [/output]
 [/test]
 
 [test]
 [input]
-SELECT COUNT(*) FROM Spaceships;
+SELECT c.id,c.first_name,coach_level FROM coaches as c
+ORDER BY c.id;
 [/input]
 [output]
+1
+Anollie
+4
+2
+Aster
+1
+3
+Aesra
+4
+4
+Acad
+1
+5
+Arcos
+8
+6
+Reynard
+2
+7
+Mickey
+7
+8
+Chilton
+4
+9
+Rudie
+2
+10
+Lewes
+7
+11
+Estelle
+7
+12
+Lin
+3
+13
+Harlie
+6
+14
+Berkie
+6
+15
+Barnabas
+8
+16
+Vasili
+6
+17
+Esta
+4
+18
+Isaak
+5
 19
-[/output]
-[/test]
-[test]
-[input]
-SELECT Name FROM Planets
-ORDER BY Id DESC
-[/input]
-[output]
-Saturn
-Jupiter
-Earth
-Mars
-Stenurilia
-Pleceliv
-Eipra
-Jeayama
-Casmadus
-Kascarth
-Aswuenerth
-Feblunus
-WR8
-Gleshan
-5Q5
-Whora
-Chumeter
-Slagonope
-Wueyama
-Teutera
-Wescapus
-Lescore
-Suthiyclite
-Otroyphus
-[/output]
-[/test]
-
-[test]
-[input]
-SELECT Name, Manufacturer FROM Spaceships
-ORDER BY Id
-[/input]
-[output]
-USS Templar
-Oyoba
-Anarchy
-Fivebridge
-LWSS Romulus
-Camimbo
-LWSS Dark Phoenix
-Quimba
-BC The Commissioner
-Jamaika
-BS Saratoga
-Realbridge
-SC Serpent
-Agivu
-Katherina
-Skiba
-Messenger
-Leenti
-SSE Priestess
-Zoovu
-Mercenary Star
-Realbridge
-Judgment
-Quimba
-Fade
-Camimbo
-Adder
-Fivebridge
-CS Hannibal
-Oyoba
-Golf
-VW
-WakaWaka
-Wakanda
-Falcon9
-SpaceX
-Bed
-Vidolov
+Carolin
+7
+20
+Steffie
+7
+21
+Tadd
+4
+22
+Jonis
+5
+23
+Brendis
+7
+24
+Kirstyn
+7
+25
+Grethel
+7
+26
+Carlynne
+8
+27
+Gaby
+4
+28
+Meredith
+8
+29
+Miranda
+7
+30
+Jorrie
+6
 [/output]
 [/test]
 [/tests]
