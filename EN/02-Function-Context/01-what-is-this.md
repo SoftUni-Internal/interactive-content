@@ -9,7 +9,7 @@
 Functions can be called in several different ways:
  - Global invoke: `func()` - `this` is a global function
  - `object.function()` - `this` is a method, excuted within the context of an object
- - `domElement.event()` - invoked on a DOM element.
+ - `domElement.event()` - invoked on a DOM element
 
  We can manually change the context of a function by using `call()`, `apply()` and `bind()`.
 
