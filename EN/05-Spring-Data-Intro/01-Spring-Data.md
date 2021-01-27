@@ -46,7 +46,9 @@ Few of the tools we get when working with **Spring data** are:
 
 [slide hideTitle]
 
-# Extra layer of abstraction over the used ORM
+# Extra Layer of Abstraction Over the ORM
+
+Spring Data's Role is just an extra layer of abstraction over the used ORM
 
 [image assetsSrc="Spring-data-introduction(2).png" /]
 
@@ -81,6 +83,8 @@ No need for code generation and no requirement for XML configurations.
 [/slide]
 
 [slide hideTitle]
+
+# Dependencies
 
 Most spring boots need almost no configuration.
 

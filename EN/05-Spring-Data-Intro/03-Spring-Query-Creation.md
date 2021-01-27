@@ -30,7 +30,7 @@ Further **Spring Data JPA** will do a property check and traverse nested propert
 
 [slide hideTitle]
 
-# Query lookup strategies.
+# Query Lookup Strategies
 
 | **Keyword**  | **Sample**  | **JPQL**  |
 |---|---|---|
