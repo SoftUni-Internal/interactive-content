@@ -1,6 +1,6 @@
 # Middleware
 
-[slide]
+[slide hideTitle]
 
 # What is a Middleware?
 
@@ -50,7 +50,7 @@ We call the **next function**, if such exists in the **middleware stack**, with 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Types of Middleware
 
@@ -120,7 +120,7 @@ const app = express();
 app.use(cookieParser()));
 ```
 
-Assuming we have already ran `npm install cookie-parser`, our next step is to import it in our file:
+Assuming we have already run `npm install cookie-parser`, our next step is to import it into our file:
 
 `const cookieParser = require('cookie-parser');`
 
@@ -130,7 +130,7 @@ Then we load the cookie-parsing middleware as follows:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Custom Middleware
 
@@ -156,13 +156,13 @@ app.get("/post/:postId", (req, res) => {
 });
 ```
 
-In this example we check if a blogpost with a given `postId` exists in a database.
+In this example, we check if a blogpost with a given `postId` exists in a database.
 
-Depending on that, we either redirect the user to the homepage or we show more information about the post.
+Depending on that, we either redirect the user to the homepage or show more information about the post.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Third-Party Middleware
 
@@ -173,8 +173,8 @@ The following table showcases some commonly used middleware and their use cases:
 | **Middleware module** | **Description**                                                                         |
 | --- | --- |
 | `body-parser`         | Parses the body of an HTTP request.                                                     |
-| `cookie-parser`       |  Parses the header of a cookie. Populates the `cookies` property of the request object. |
-| `errorhandler`        | Enables debugging and error handling in the developer enviroment.                       |
+| `cookie-parser`       |  Parses the header of a cookie. Populates the `cookies` property of the request object. |
+| `errorhandler`        | Enables debugging and error handling in the developer environment.                       |
 | `cors`                | Enables cross-origin resource sharing (CORS).                                           |
 | `serve-static`        | Used to serve static files.                                                             |
 
