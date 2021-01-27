@@ -524,9 +524,8 @@ yes
 [code-editor language=javascript]
 
 ```
-function solve(){
-  // Write your code here
-}
+
+
 ```
 [/code-editor]
 [task-description]
