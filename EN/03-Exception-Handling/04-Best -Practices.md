@@ -1,8 +1,8 @@
-[slide]
-
 # Best Practices
 
-## Using Catch Block
+[slide hideTitle]
+
+# Using Catch Block
 
 - **Catch** blocks should: 
 
