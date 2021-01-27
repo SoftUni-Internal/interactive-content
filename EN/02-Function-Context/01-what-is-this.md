@@ -1,4 +1,4 @@
-# What is "this"?
+# The "This" Keyword
 
 [slide hideTitle]
 
@@ -19,7 +19,7 @@ Functions can be called in several different ways:
 
 [slide hideTitle]
 
-# What is "this"?
+# What is "This"?
 
 The value of `this` is always a reference to an object - the object from which it was called. In other words - `this` references the object that is executing the current function.
 
