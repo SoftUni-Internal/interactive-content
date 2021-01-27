@@ -17,7 +17,6 @@
 
 - You can use whatever **view engine** you like (Handlebars, EJS, Pug, etc...)
 
-
 - **Application Overview**
 
 Get familiar with the provided **HTML and CSS** and create an application for **tutorials**, **courses** and **course lectures.**
@@ -47,25 +46,25 @@ The **Database** of the **Tutorials** application needs to support:
 
 ## User
 
-- Username: string (required), unique
+- **Username**: string (required), unique
 
-- Password: string (required)
+- **Password**: string (required)
 
-- Enrolled Courses: a collection of Courses 
+- **Enrolled Courses**: a collection of Courses 
 
 ## Course
 
-- Title: string (required), unique
+- **Title**: string (required), unique
 
-- Description: string (required), max length of 50 symbols,
+- **Description**: string (required), max length of 50 symbols,
 
-- Image Url: string (required),
+- **Image Url**: string (required),
 
-- Duration: string (required),
+- **Duration**: string (required),
 
-- Created at: Date or String, (required),
+- **Created at**: Date or String, (required),
 
-- Users Enrolled: a collection of Users
+- **Users Enrolled**: a collection of Users
 
 Implement the entities with the **correct datatypes.**
 
