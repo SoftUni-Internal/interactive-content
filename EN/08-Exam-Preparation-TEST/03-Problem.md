@@ -1,17 +1,7 @@
 [slide]
 # Problem: Easter Races Unit Tests
-[code-task title="Problem: Easter Races Unit Tests" taskId="5849c64b-145e-4719-8d5a-648d35325c96" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Java Unit Tests" taskId="Java-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 # Task 3: Unit Testing (100 Points)
 
@@ -25,7 +15,7 @@ Cover the whole class with unit test to make sure that the class is working as i
 
 
 [/task-description]
-[code-io /]
+[code-upload /]
 [tests]
 [test]
 [input]
