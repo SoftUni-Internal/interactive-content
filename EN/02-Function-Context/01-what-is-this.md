@@ -1,5 +1,7 @@
 # What is "this"?
-[slide]
+
+[slide hideTitle]
+
 # Function Context
 
 **Function context** refers to the object that **owns** the code, which is currently being executed. The context depends on the way the function is invoked. 
@@ -15,19 +17,25 @@ Functions can be called in several different ways:
  
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # What is "this"?
+
 The value of `this` is always a reference to an object - the object from which it was called. In other words - `this` references the object that is executing the current function.
 
-The goal of the current lesson will be to understand how `this` behaves in **non-strict mode**, but just keep in mind that in **strict mode** there are differences and `this` can be any value.
+The goal of the current lesson will be to understand how `this` behaves in **non-strict mode**. 
 
-The object referenced by `this`, **changes** when the execution context is changed.
+Keep in mind that in **strict mode** there are differences and `this` can be any value.
+
+The object referenced by `this` **changes** when the execution context is changed.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # "this" Referring to the Global Object
-If `this` is used on its own it always returns the global object - `Object [global]`
+
+If `this` is used on its own, it always returns the global object - `Object [global]`
 
 ```js live
 function solve() {
@@ -40,12 +48,13 @@ When run, the above example returns **true**, meaning that `this` is indeed equa
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # "this" in the Browser
+
 The **global object** in the browser is the **window**. 
 
-Run the below examples in your browser's console to see them in action!
+Run the following examples in your browser's console to see them in action!
 
 ```js
 function foo() {
@@ -53,21 +62,21 @@ function foo() {
     console.log(this === window);
 }
 foo();
-  //returns true
+  //prints true
 ```
 
 [image assetsSrc="function-context-01.png" /]
 
-The above illustrates that `this` is equal to the **window** object.
+The above example illustrates that `this` is equal to the **window** object.
 
 ```js
 let name = "Arthur";
 console.log("My name is", this.name);
 ```
 
-Running the above code outputs **undefined** to the console.
+Running the code above outputs **undefined** to the console.
 
-This is because variables declared with `let` have limited scope and are not attached to the global object.
+This is because variables, declared with `let`, have limited scope and are not attached to the global object.
 
 [image assetsSrc="function-context-02.png" /]
 
@@ -76,7 +85,7 @@ var anotherName = "Chris";
 console.log("My name is ", this.anotherName);
 ```
 
-`this.anotherName` returns the value of **anotherName**, because variables declared with `var` have a wider scope and are attached to the global object (in this case to **window**).
+`this.anotherName` returns the value of **anotherName**, because variables, declared with `var`, have a wider scope and are attached to the global object (in this case to **window**).
 
 [image assetsSrc="function-context-03.png" /]
 
