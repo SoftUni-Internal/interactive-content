@@ -1,5 +1,6 @@
 # Internal Object Properties
-[slide]
+
+[slide hideTitle]
 
 # Internal Properties
 [image assetsSrc="function-context-06.png" /]
@@ -29,22 +30,22 @@ Output:
 }
 ```
 
-- **Enumerable**: We can enumerate object properties that are set to **enumerable:true** with `for..in` loop or list them by using the ``Object.keys()`` method.
+- **Enumerable**: We can enumerate object properties that are set to **enumerable:true** with `for..in` loop or list them by using the ``Object.keys()`` method
 
 
-- **Configurable** - used to modify the behavior of the property. 
+- **Configurable** - used to modify the behavior of the property
 
 Setting **configurable: false** makes it so that the property  cannot be deleted. 
 
 Only properties that are **configurable**  can be deleted.
 
-- **Writable** - properties marked as **writable:true** can be modified and their values can be updated by simply assigning a new value to them.
+- **Writable** - properties marked as **writable:true** can be modified and their values can be updated by simply assigning a new value to them
 
-- **Value** - allows you to change the value of the property even when it is set to **writable:false** by using `Object.defineProperty()`.
+- **Value** - allows you to change the value of the property even when it is set to **writable:false** by using `Object.defineProperty()`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Non-enumerable Properties
 Run the code below:
 
@@ -121,7 +122,7 @@ Printing the object itself with ``console.log(person)`` will not print out the *
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Non-writable Properties
 
 Values of **non-writable** properties cannot be changed using assignments.
@@ -147,7 +148,7 @@ Original value: 2
 New value: 2
 ```
 
-If you modify the above code and set writable to **true** like it is by default, then you'd be able to assign the value **1000** to **anotherProperty** and the output would be:
+If you modify the code above and set writable to **true**, as it is by default, then you would be able to assign the value **1000** to **anotherProperty**. The output would be:
 
 ```
 Original value: 2
@@ -157,7 +158,8 @@ New value: 1000
 If the **non-writable** property is an object then the reference of the object will not be writable, but the object itself can be modified by assigning it a new value.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Non-configurable Properties
 
 If you set **configurable:false** for any property you will only be able to modify the **writable** property if it is true to false and nothing else. 
@@ -174,12 +176,15 @@ Object.defineProperty(ob, 'a', { writable: true }); // throws a TypeErr
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Object Freeze and Seal
+
 Syntax: `Object.freeze(obj)` and `Object.seal(obj)`
 
 ## Object Freeze
-`Object.freeze()`- doesn't allow adding new properties to the passed object and properties will all be **non-writable**.
+
+`Object.freeze()`- does not allow adding new properties to the passed object and properties will all be **non-writable**.
 
 Let us see an example:
 
@@ -207,7 +212,7 @@ The reference does not change but the value of **innerProperty** can be assigned
 frozenObj.property3.innerProperty = 'something else';
 ```
 
-To prevent this from happening you can **freeze** the object property:
+To prevent this from happening, you can **freeze** the object property:
 
 ```js
 Object.freeze(frozenObj.property3);
@@ -245,15 +250,18 @@ You can check if an object is sealed with ``Object.isFrozen(someObject)``.
 
 Both **freeze** and **seal** deal with the object's immutability. 
 
-In the case of `Object.freeze()` we cannot assign new values to the properties and with `Object.seal()` we cannot add new properties or remove existing properties but you can assign new values to them.
+When using `Object.freeze()` new values cannot be assigned to the properties. 
 
-In any case, if you have a property that is also an object, only its reference cannot be changed, but the value can even if it is **non-writable**. 
+`Object.seal()` makes it so that new properties cannot be added and existing properties cannot be removed, but you can assign new values to them.
 
-To prevent this we can also **freeze** the object property and then the value inside it will not be writable.
+In any case, if you have a property that is also an object, only its reference cannot be changed, but the value can, even if it is **non-writable**. 
+
+To prevent this, we can also **freeze** the object property and then the value inside it will not be writable.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Problem: Person
 [code-task title="Problem: Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -265,19 +273,19 @@ To prevent this we can also **freeze** the object property and then the value in
 ## Description
 Write a JS program which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
 
-Properties which should all be **accessible**, we discovered that "accessible" also means "mutable". 
+Properties should all be **accessible**. We discovered that "accessible" also means "mutable". 
 
 This means that:
 
-- If **firstName** or **lastName** have changed, then **fullName** should also be changed.
+- If **firstName** or **lastName** have changed, then **fullName** should also be changed
 
-- If **fullName** is changed, then **firstName** and **lastName** should also be changed.
+- If **fullName** is changed, then **firstName** and **lastName** should also be changed
 
-- If **fullName** is **invalid**, you should not change the other properties. 
+- If **fullName** is **invalid**, you should not change the other properties
 
 A **valid** **full name** is in the format: `{firstName} {lastName}`
 
-Note: For more information check the examples below.
+Note: Check the examples below for more information.
 
 ## Examples
 
@@ -365,7 +373,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Person
 [code-task title="Solution: Person" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -381,15 +389,15 @@ Properties which should all be **accessible**, we discovered that "accessible" a
 
 This means that:
 
-- If **firstName** or **lastName** have changed, then **fullName** should also be changed.
+- If **firstName** or **lastName** have changed, then **fullName** should also be changed
 
-- If **fullName** is changed, then **firstName** and **lastName** should also be changed.
+- If **fullName** is changed, then **firstName** and **lastName** should also be changed
 
-- If **fullName** is **invalid**, you should not change the other properties. 
+- If **fullName** is **invalid**, you should not change the other properties
 
 A **valid** **full name** is in the format: `{firstName} {lastName}`
 
-Note: For more information check the examples below.
+Note: Check the examples below for more information.
 
 ## Examples
 
