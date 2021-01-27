@@ -14,7 +14,6 @@
 [input]
 from project.card.card_repository import CardRepository
 import unittest
-
 class TestStructure(unittest.TestCase):
     def test_card_repository_structure(self):
         cr = CardRepository()
