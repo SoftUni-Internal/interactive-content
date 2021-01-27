@@ -2,9 +2,7 @@
 
 # Retrieving Data by Custom Queries
 
-As now we have heard of Spring-Data Framework, it's time to dig deep in the theory and 
-
-see how we can really interact with it in the best way possible, in order to get the best result possible.
+It's time to have closer look in Spring-Data Framework, learn how to use it propertly and recieve the results we need.
 
 First let's start with the creation of our first Spring-Project.
 
