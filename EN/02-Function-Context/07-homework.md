@@ -1,5 +1,5 @@
 # Homework
-[slide]
+[slide hideTitle]
 # Ex.Problem: Company
 [code-task title="Ex.Problem: Person" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -17,12 +17,12 @@ Write a Company Class, Which Supports the Described Functionality Below.
 
 **Constructor():**
 
-Should have this 1 property: `departments`- empty array
+Should have this 1 property: `departments`- an empty array
 
 AddEmployee\(`{username}`, `{Salary}`, `{Position}`, `{Department}`\):
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is empty string (""), undefined or null,  this function should throw an error with the following message:
+- If one of the passed parameters is an empty string (""), undefined or null,  this function should throw an error with the following message:
 
 `Invalid input!`
 
@@ -35,7 +35,7 @@ This function should add a new employee to the department with the given name.
 `New employee is hired. Name: {name}. Position: {position}`
 
 **3. bestDepartment()**:
-This **function** should print the department with the highest average salary and its employees sorted by their salary by descending and by name in the following format:
+This **function** should print the department with the highest average salary and its employees, sorted by their salary by descending and by name in the following format:
 
 ```
 "Best department is: {best department's name}
@@ -190,7 +190,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Ex.Problem: Fibonacci
 [code-task title="Ex.Problem: Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -200,7 +200,7 @@ yes
 [/code-editor]
 [task-description]
 ## Description
-Write a JS function that when called, returns the next Fibonacci number, starting at 0, 1. 
+Write a JS function that returns the next Fibonacci number, starting from 0, 1. 
 
 Use a **closure** to keep the current number.
 
@@ -310,7 +310,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Ex.Problem: HEX
 [code-task title="Ex.Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -329,23 +329,24 @@ Write a Hex Class, Which Supports the Described Functionality Below.
 
 Constructor(`{value}`)
 
-Should have these **1** property:
- - **value** - number
+Should have **1** property:
+- **value** - number
 
+Functions:
 - `ValueOf()`
-This Function Should Return the Value Property of the Hex Class.
+This Function Should Return the Value Property of the Hex Class
 
 - `ToString()`
 This function will show its hexidecimal value starting with `0x`
 
 - `Plus({number})`
-This function should add a number or Hex object and return a new Hex object.
+This function should add a number or a Hex object and return a new Hex object
 
 - `Minus({number})`
-This function should subtract a number or Hex object and return a new Hex object.
+This function should subtract a number or a Hex object and return a new Hex object
 
 - `Parse({string})`
-Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
+Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers
 
 **3. Submission**
 Submit only your **Hex class**.
@@ -470,7 +471,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Ex.Problem: Table
 [code-task title="Ex.Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -483,7 +484,7 @@ yes
 
 Use the provided resources file complete this problem. [Download from mega.nz.](https://mega.nz/file/iZJ0WTbQ#MHeZVUY8tKo-Luzt_gWUOfj5hX5TRPGkZcKhufqNZTQ)
 
-**Note: You Have NO Permission make any changes to the HTML code directly! (Index.html File).**
+**Note: You must complete this task without changing anything in the given HTML file (index.html).**
 
 [image assetsSrc="function-context-07.png" /]
 
@@ -491,17 +492,17 @@ Use the provided resources file complete this problem. [Download from mega.nz.](
 
 Write the missing JavaScript code to make the **Table** application work as expected.
 
-When you **click** on an item from the table you should change its **background color** to **"#413f5e"**. 
+When you **click** on an item from the table, you should change its **background color** to **"#413f5e"**. 
 
 [image assetsSrc="function-context-08.png" /]
 
 [image assetsSrc="function-context-09.png" /]
 
-If the item you've clicked **already** has a **style** property you should **remove** it. 
+If the item you've clicked **already** has a **style** property, you should **remove** it. 
 
 [image assetsSrc="function-context-10.png" /]
 
-If one of the elements is **clicked** and you click **another** the first element's style property should be **removed** and you should **change** the **background color** of the **newly clicked** item.
+If one of the elements is **clicked** and you click **another**, the first element's style property should be **removed** and you should **change** the **background color** of the **newly clicked** item.
 
 [image assetsSrc="function-context-11.png" /]
 
@@ -767,10 +768,12 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Ex.Problem: Next Article
+
 [code-task title="Ex.Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function getArticleGenerator(articles) {
     // TODO
@@ -836,12 +839,12 @@ You will receive and **array** of strings.
 Return a **function** that displays the array elements on the web page.
 
 ## Examples
+
 [image assetsSrc="function-context-12.png" /]
 
 [image assetsSrc="function-context-13.png" /]
 
 [image assetsSrc="function-context-14.png" /]
-
 
 [/task-description]
 [code-io /]
