@@ -1,6 +1,6 @@
 # Introduction to ExpressJs
 
-[slide]
+[slide hideTitle]
 
 # Introduction
 

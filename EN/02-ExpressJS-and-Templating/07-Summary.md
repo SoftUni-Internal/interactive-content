@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson we learned:
+
+# In this lesson you learnt:
 
 - ExpressJS is a server framework
   - Used with Node.js
@@ -58,7 +58,7 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - Relational and NoSQL Databases
 - What is MongoDB?
