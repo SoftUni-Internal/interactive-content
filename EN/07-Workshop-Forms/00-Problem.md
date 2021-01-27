@@ -1,6 +1,6 @@
 # Origami Platform Workshop: Part 3
 
-[slide]
+[slide hideTitle]
 # Overview
 
 Now it is time to implement **private** and public **parts** for our app. 
@@ -31,7 +31,7 @@ The login form should also make a **post request** with the given data to the **
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Private Parts
 
 Private parts should be accessed only by **logged in users** (**authorized with jwt token from the given API**).
@@ -62,7 +62,7 @@ Also, this view shows the **top 3 recent posts** from the database.
 [image assetsSrc="ReactJS-Workshop-Forms-6.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Database
 
 Use the provided **REST API** build with **Express.js** and **MongoDB**
