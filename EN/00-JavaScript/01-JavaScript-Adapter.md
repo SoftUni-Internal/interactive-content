@@ -28,7 +28,7 @@ function solve(num1, num2) {
 [/code-editor]
 [code-adapter]
 ```
-return code(input[0], input[1], input[2]);
+(input, code) => code(...input);
 ```
 [/code-adapter]
 [task-description]
