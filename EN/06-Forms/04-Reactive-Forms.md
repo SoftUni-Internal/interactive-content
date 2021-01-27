@@ -65,7 +65,7 @@ this.laptopForm = new FormGroup({
 
 In the template, we have to mark the main **formGroup** and after that add **formControlName** to each form control.
 
-Here **formControlName** is the name of the key instance.
+Here the **formControlName** is the name of the key instance.
 
 ```html
 <form (ngSubmit)="save()" [formGroup]="laptopForm">

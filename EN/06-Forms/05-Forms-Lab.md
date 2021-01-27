@@ -22,7 +22,7 @@ Go to [fontawesome](fontawesome.com) and add the provided HTML link inside `inde
 
 [slide hideTitle]
 
-# Template-Driveb Form
+# Template-Driven Form
 
 Generate a **register-form** component and use the provided **HTML** to create a **template-driven** form. 
 
@@ -30,7 +30,7 @@ Attach all the needed directives like **ngForm** and **ngModel**.
 
 Use `@ViewChild` to reference the **NgForm** inside the component.
 
-Handle **submitting** of the form. Inside the handler function **reset** the form.
+Handle ** submission** of the form. Inside the handler function **reset** the form.
 
 Define the options for both select lists as an **array of strings** and loop through the arrays inside the template. 
 
@@ -77,7 +77,7 @@ Add another input field containing an **image URL** to a profile picture, use 'f
 
 Validate this input field by writing your own **attribute directive**.
 
-The directive should listen to **input** events and validate if the input value **starts with http** and ends with **jpg** or **png**.
+The directive should listen to **input** events and validate if the input value **starts with HTTP** and ends with **jpg** or **png**.
 
 Use **Renderer2** to set the border-left **styling** of the field to either red or green. 
 

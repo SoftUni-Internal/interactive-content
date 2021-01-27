@@ -143,7 +143,7 @@ To do this use the **ngModel** directive.
 
 Note that this directive will not work without a **name attribute**!
 
-So, we need to include this in our html template.
+So, we need to include this in our HTML template.
 
 ```html
 <input name="processor"/>
@@ -166,7 +166,7 @@ Angular will automatically attach a **NgForm Directive**.
 The **NgForm Directive** will also add additional features:
 - It can monitor properties.
 - It can validate properties.
-- It holds a **valid** property which is **true** only if **all controlls** are valid.
+- It holds a **valid** property which is **true** only if **all controls** are valid.
 
 [/slide]
 
@@ -222,7 +222,7 @@ The **NgForm Directive** tracks if:
 
 The **NgForm Directive** does not just track the state of the form control.
 
-It can also **update** the control with special Angular CSS classes and leverage those class names to change appearance.
+It can also **update** the control with special Angular CSS classes and leverage those class names to change the appearance.
 
 [/slide]
 

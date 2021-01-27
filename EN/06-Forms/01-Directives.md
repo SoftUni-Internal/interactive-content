@@ -12,7 +12,7 @@ Angular components are a subset of directives, always associated with a template
 
 Only one component can be instantiated for a given element in a template.
 
-A component must belong to a **NgModule** in order for it to be available to another component or application.
+A component must belong to a **NgModule** for it to be available to another component or application.
 
 **Attribute Directives**
 
@@ -52,7 +52,7 @@ Examples: `*ngIf`, `*ngFor`.
 
 [slide hideTitle]
 
-# Simple Attribute Directive
+# Build a Simple Attribute Directive
 
 An attribute directive requires the building of a controller class annotated with `@Directive` decorator.
 
@@ -110,7 +110,9 @@ import { Renderer2 } from '@angular/core'
 
 # Renderer2 Usage
 
-To be able to use **Renderer2** inject it. This way, we can access its methods to change the DOM.
+To be able to use **Renderer2** inject it. 
+
+This way, we can access its methods to change the DOM.
 
 ```js
 constructor( private renderer: Renderer2) { }
