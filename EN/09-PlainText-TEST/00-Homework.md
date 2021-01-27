@@ -4,7 +4,7 @@
 
 asadssdssa
 
-Testing <sub>subscript</sub> and <sup>superscript</sup>
+Testing \<sub\>subscript\</sub\> and \<sup\>superscript\</sup\>
 
 Testing <sub>subscript <sub>subscript level 2</sub></sub>
 
