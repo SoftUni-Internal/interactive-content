@@ -85,7 +85,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate names" taskId="pb-js-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -182,7 +182,7 @@ JanpWhite
 [stream language="RO" videoId="489371497/73837bd2a6"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate names" taskId="pb-js-concatenating-names-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 
