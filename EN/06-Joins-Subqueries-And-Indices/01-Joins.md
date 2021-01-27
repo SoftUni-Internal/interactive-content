@@ -1,6 +1,6 @@
-[slide]
+# Joins
 
-# Joins, Subqueries and Indices
+[slide hideTitle]
 
 In this lesson we will have a look at **Joins**, **Subqueries** and **Indices**.
 
@@ -8,11 +8,9 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Joins
-
-## Gathering data from multiple tables
+# Gathering data from multiple tables
 
 As you may know a relational database consists of multiple related tables.
 
@@ -22,7 +20,11 @@ A JOIN clause is used to combine rows from two or more tables, based on a relate
 
 The related column is a column which exists as a primery key in the first table and as a secondary key in the second table.
 
-### Cartesian Product
+[/slide]
+
+[slide hideTitle]
+
+# Cartesian Product
 
 This example will produce Cartesian product:
 
@@ -48,7 +50,11 @@ The result:
 | Gilbert       | Sales               |
 | Brown         | Sales               |
 
-### Joins
+[/slide]
+
+[slide hideTitle]
+
+# Joins
 
 - **JOINS** - used to collect data from **two** or **more** tables.
 - Types:
@@ -58,7 +64,11 @@ The result:
   - OUTER(UNION) JOIN
   - CROSS JOIN
 
-**INNER JOIN**:
+[/slide]
+
+[slide hideTitle]
+
+# Tables
 
 Have a look at the example below.
 
@@ -86,6 +96,12 @@ Table courses:
 | 4      | PHP        |
 | 5      | MySQL      |
 
+[/slide]
+
+[slide hideTitle]
+
+# Inner join
+
 ```Java
 SELECT students.name, courses.name
 FROM students
@@ -112,7 +128,11 @@ Produces a set of records which **match in both tables**!
 
 [image assetsSrc="Joins-Subqueries-And-Indices(1).png" /]
 
-**LEFT JOIN**:
+[/slide]
+
+[slide hideTitle]
+
+# Left join
 
 The LEFT JOIN returns all the rows from the table on the left even if no matching rows have been found in the table on the right.
 
@@ -141,7 +161,11 @@ There was no match found for Emma, so we have **NULL** in the courses_name colum
 
 [image assetsSrc="Joins-Subqueries-And-Indices(2).png" /]
 
-**RIGHT JOIN**:
+[/slide]
+
+[slide hideTitle]
+
+# Right join
 
 RIGHT JOIN is the opposite of LEFT JOIN.
 
@@ -173,7 +197,11 @@ So as a result we have **NULL** for **JavaScript** and **PHP**.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(3).png" /]
 
-**OUTER (FULL JOIN)**:
+[/slide]
+
+[slide hideTitle]
+
+# Outer join - Full join
 
 Returns all records in both tables regardless of **any** match.
 
@@ -182,7 +210,11 @@ Returns all records in both tables regardless of **any** match.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(4).png" /]
 
-**UNION of LEFT and RIGHT JOIN**:
+[/slide]
+
+[slide hideTitle]
+
+# Union of Left and Right Join
 
 ```Java
 SELECT students.name, courses.name
@@ -210,7 +242,11 @@ And this is the resulting table:
 | NULL              | JavaScript       |
 | NULL              | PHP              |
 
-**CROSS JOIN**
+[/slide]
+
+[slide hideTitle]
+
+# Cross join
 
 In MySQL, the CROSS JOIN produced a result set which is the product of rows of two associated tables when no **WHERE** clause is used with CROSS JOIN.
 
@@ -231,7 +267,11 @@ Have a look at the following example below:
 
 [image assetsSrc="Joins-Subqueries-And-Indices(5).png" /]
 
-**Join Overview**
+[/slide]
+
+[slide hideTitle]
+
+# Join overview
 
 To be able to implement joins we need a relation between tables.
 
@@ -241,7 +281,11 @@ In this case **department_id** is a secondary key in **employees** table, it is 
 
 [image assetsSrc="Joins-Subqueries-And-Indices(6).png" /]
 
-INNER JOIN
+[/slide]
+
+[slide hideTitle]
+
+# Join overv iew: Inner join
 
 The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns.
 
@@ -249,7 +293,11 @@ If there are records in the "employees" table that do not have matches in "depar
 
 [image assetsSrc="Joins-Subqueries-And-Indices(7).png" /]
 
-LEFT JOIN
+[/slide]
+
+[slide hideTitle]
+
+# Join overview: Left join
 
 The LEFT JOIN keyword returns all records from the left table, and the matched records from the right table.
 
@@ -257,7 +305,11 @@ The result is **NULL** in the right table, if there is no match.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(8).png" /]
 
-RIGHT JOIN
+[/slide]
+
+[slide hideTitle]
+
+# Join overview: Right join
 
 The RIGHT JOIN keyword returns all records from the right table, and the matched records from the left table.
 

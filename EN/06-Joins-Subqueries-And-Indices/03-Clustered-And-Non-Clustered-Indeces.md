@@ -1,4 +1,6 @@
-[slide]
+# Clustered and Non-Clustered Indices
+
+[slide hideTitle]
 
 # Indices
 
@@ -14,11 +16,11 @@ Indexes are used to find rows with specific column values quickly.
 
 Without an index, MySQL must begin with the first row and then read through the entire table to find the relevant rows.
 
-The larger the table, the more this costs. If the table has an index for the columns in question, MySQL can quickly determine the position to seek to in the middle of the data file without having to look at all the data.
+The larger the table, the more this costs. 
+
+If the table has an index for the columns in question, MySQL can quickly determine the position to seek to in the middle of the data file without having to look at all the data.
 
 This is much faster than reading every row sequentially.
-
-## Clustered and Non-Clustered Indices
 
 Indices are:
 
@@ -29,7 +31,11 @@ Indices are:
 - Adding and deleting records in indexed table is slower!
   - Indeces should be used for big tables only (e.g. 50000 rows).
 
-### Clustered Indeces
+[/slide]
+
+[slide hideTitle]
+
+# Clustered Indeces
 
 When you define a PRIMARY KEY on your table, the database uses it as a clustered index.
 
@@ -42,7 +48,11 @@ Define a primary key for each table that you create!
 
 [image assetsSrc="Joins-Subqueries-And-Indices(10).png" /]
 
-### Non-Clustered Indices
+[/slide]
+
+[slide hideTitle]
+
+# Non-Clustered Indices
 
 A non-clustered index doesn’t sort the physical data inside the table.
 
@@ -68,7 +78,11 @@ From the discussion we find following differences between clustered and non-clus
 3. Non-clustered indexes are stored in a separate place from the actual table claiming more storage space.
 4. Clustered indexes are faster than non-clustered indexes since they don’t involve any extra lookup step.
 
-### Indices Syntax
+[/slide]
+
+[slide hideTitle]
+
+# Indices Syntax
 
 ```Java
 CREATE INDEX

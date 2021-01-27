@@ -1,8 +1,8 @@
-[slide]
+# Query Manipulation on Multiple Levels
+
+[slide hideTitle]
 
 # Subqueries
-
-## Query Manipulation On Multiple Levels
 
 A subquery is a query nested within another query such as **SELECT**, **INSERT**, **UPDATE** or **DELETE**.
 

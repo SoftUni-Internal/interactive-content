@@ -1,6 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
+
+## In this lesson you learnt:
 
 - Joins
     ```Java
@@ -26,5 +28,13 @@
     CREATE INDEX ix_users_first_name_last_name​
     ON users(first_name, last_name);
     ```
+
+## In the next lesson, you will learn:
+
+- What is UDF and where to use it
+
+- Triggers and their usage
+
+- Stored procedure, their differences with UDF and usage
 
 [/slide]
