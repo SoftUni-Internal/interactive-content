@@ -1,44 +1,34 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Opinion Poll
-[code-task title="Opinion Poll" taskId="ff6d1ff1-daef-4e93-b24d-14c878e40e96" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Company Roster" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2gads" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
-Create Person class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
+Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
 
-**Note:** you can use `stream()` to filter the people.
+\{name\} - \{age\}
 
-## Examples
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | John - 48 |
-| Peter 12 | Steven – 31 |
-| Steven 31 |  |
-| John 48 |  |
+| 3 | John - 31 | 
+| Peter 12 | Steven - 48 |
+| John 31 | |
+| Steven 48 | |
 
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Robert - 44 |
-| Sofia 33 | Sofia - 33 |
-| Thomas 88 | Thomas - 88 |
-| Camilla 22 |  |
-| Robert 44 |  |
-| Owen 11 |  |
+| 5 | Nick - 33 | 
+| Nick 33 | John - 88 |
+| John 88 | Leo - 44 |
+| George 22 | |
+| Leo 44 | |
+| Peter 11 | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
