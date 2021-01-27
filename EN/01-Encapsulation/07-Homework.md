@@ -4432,7 +4432,7 @@ Team Angliq does not exist.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Homework Results
 [tasks-results/]
 

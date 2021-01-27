@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 # In this lesson you learnt:
@@ -7,9 +7,20 @@
     - Hides implementation
     - Reduces complexity
     - Ensures that structural changes remain local
+
+```java
+  public String getName() {…}
+  protected String getName () {…}
+  private String name;
+```
+
 - **Mutable** and **Immutable** objects
+
 - Keyword **final**
 
+```java
+public final class Mammal extends Animal {}
+```
 
 
 # In the next lesson, you will learn:

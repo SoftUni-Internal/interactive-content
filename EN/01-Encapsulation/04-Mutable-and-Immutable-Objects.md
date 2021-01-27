@@ -1,42 +1,75 @@
-# Validation
-[slide]
-# Data validation 
+# Mutable and Immutable Objects
+[slide hideTitle]
+# Mutable vs Immutable Objects
 
-**Data validation happens in setters**
-
-```java
-private void setSalary(double salary) {
-  if (salary < 460) {
-    throw new IllegalArgumentException("Message");
-  }
-  
-  this.salary = salary;
-}
-```
-- It is better to throw **exceptions**, rather than printing to the Console.
-- Printing with **System.out couples** your class.
-- **Client** can **handle** class exceptions.
-
-**Constructors use private setters with validation logic**
+The contents of **mutable** objects **can be altered**
 
 ```java
-public Person(String firstName, String lastName, 
-              int age, double salary) {
-  setFirstName(firstName);
-  setLastName(lastName);
-  setAge(age);
-  setSalary(salary);
-}
-```
-Validation happens inside the setter.
-- Guarantees valid state of object in its creation.
-- Guarantees valid state for public setters.
+Point myPoint = new Point(0, 0); myPoint.setLocation(1.0, 0.0);
+System.out.println(myPoint);
 
+//java.awt.Point[1.0, 0.0]
+```
+The contents of **immutable** objects **can not be altered**
+
+```java
+String str = new String("old String");
+System.out.println(str);
+str.replaceAll("old", "new");
+System.out.println(str);
+```
 [/slide]
 
-[slide]
-# Problem: Validation Data
-[code-task title="Problem: Validation Data" taskId="3900f966-ff12-4a8d-a3c0-8c8fb499ae1c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Mutable and Immutable Fields
+
+**Private mutable fields are not fully encapsulated**
+
+```java
+class Team {
+  private String name;
+  private List<Person> players;
+
+  public List<Person> getPlayers() {
+    return this.players;
+  }
+} 
+```
+- In this case **getter is like setter too**
+
+Example:
+
+```java
+Team team = new Team();
+Person person = new Person("David", "Adams", 22);
+team.getPlayers().add(person);
+System.out.println(team.getPlayers().size());  // 1
+team.getPlayers().clear();
+System.out.println(team.getPlayers().size());  // 0
+```
+
+**Imutable Fields**
+- For securing our collection we can return `Collections.unmodifiableList()`
+
+```java
+class Team {
+  private List<Person> players;
+  public void addPlayer(Person person) {
+    this.players.add(person);
+    //Add new methods for functionality over list
+
+  }
+  public List<Person> getPlayers() {
+    return Collections.unmodifiableList(players);
+    //Returns a safe collections
+  }
+} 
+```
+[/slide]
+
+[slide hideTitle]
+# Problem: First and Reserve Team
+[code-task title="Problem: First and Reserve Team" taskId="7487e124-4256-4f02-842d-9356ff0c9038" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -50,25 +83,60 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Expand **Person** with proper validation for every field:
-- Names must be at least 3 symbols
-- Age must not be zero or negative
-- Salary can't be less than 460.0 
-Print proper message to end user (look at example for messages). 
-Don't use `System.out.println()` in **Person** class.
+Create a **Team** class. 
 
+Add to this team all the people you receive. 
+
+All person **younger** than 40 go in **first team**, others go in **reserve team**.
+
+At the end print first and reserve team sizes.
+
+The class should have **private fields** for:
+- **name: String**
+- **firstTeam: List(Person)**
+- **reserveTeam: List(Person)**
+
+The class should have **constructors**:
+- **Team(String name)**
+
+The class should also have private method for setName and public methods for:
+- **getName(): String**
+- **addPlayer(Person person): void**
+- **getFirstTeam(): List(Person) (Collections.unmodifiableList)**
+- **getReserveTeam(): List(Person) (Collections.unmodifiableList)**
+
+## You should be able to use the class like this:
+```java
+Team team = new Team ( name: "Black Eagles");
+for (Person player : players) {
+    team.addPlayer (player);
+}
+
+System.out.println("First team have" + team.getFirstTeam().size() + "players");
+System.out.println("Reserve team have" + team.getReserveTeam ().size() + "players");
+```
+## You should NOT be able to use the class like this:
+```java
+Team team = new Team ( name: "Black Eagles");
+
+for (Person player : players) {
+    if (player.getAge() < 40) {
+        team.getFirstTeam () .add (player);
+    } else {
+        team.getReserveTeam () .add (player);
+    }
+}
+```
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Age cannot be zero or negative integer |
-| George Air -6 2200 | First name cannot be less than 3 symbols |
-| Peter Pan 57 3333 | Last name cannot be less than 3 symbols |
-| Lee Parker 27 600 | Salary cannot be less than 460 euro |
-| Jr Johnson 44 666.66 | Lee Parker gets 660.0 euro |
-| Bob Manner 35 300 |  |
-| 20 |  |
-
+| 5 | First team have 4 players |
+| George Air 20 2200 | Reserve team have 1 players |
+| Anderson Paak 57 3333 |  |
+| Lee Parker 27 600 |  |
+| Grigor Dimitrov 25 666.66 |  |
+| Bob Manner 35 555 |  |
 
 [/task-description]
 [code-io /]
@@ -78,17 +146,57 @@ Don't use `System.out.println()` in **Person** class.
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.\*;
+
+public class T01TestAllClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+
+    private static final String\[\] classNames = new String\[\] \{
+            "Person",
+            "Team",
+    \};
+
+    @Test
+    public void test() \{
+        assertExistingClasses(classNames);
+    \}
+
+    private void assertExistingClasses(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertClassExists(className);
+        \}
+    \}
+
+    private void assertClassExists(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.lang.reflect.Field;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-public class T01TestFieldsExists \{
-
+public class T02TestFieldsExists \{
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
 
-    private static final String\[\] classNames = new String\[\]\{"Person"\};
-    private static final String\[\] allNeededFields = new String\[\]\{
-            "firstName", "lastName", "age", "salary"\};
+    private static final String\[\] classNames = new String\[\]\{"Person", "Team"\};
+    private static final Map\<String, String\[\]\> allNeededFields =
+            new HashMap\<String, String\[\]\>() \{\{
+                put("Person", new String\[\]\{"firstName", "lastName", "age", "salary"\});
+                put("Team", new String\[\]\{"name", "firstTeam", "reserveTeam"\});
+            \}\};
 
     @Test
     public void test() \{
@@ -108,7 +216,7 @@ public class T01TestFieldsExists \{
         Class cl = Classes.allClasses.get(className);
         Field\[\] fields = cl.getDeclaredFields();
 
-        for (String field : allNeededFields) \{
+        for (String field : allNeededFields.get(className)) \{
             Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field),
                     Arrays.stream(fields)
                             .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
@@ -128,14 +236,20 @@ import org.junit.Test;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 
-public class T02TestConstructor \{
-    private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor %s not present";
+public class T03TestConstructors \{
+
+    private static final String CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE = "Constructor '%s' not present";
+
+
     private static final String\[\] classNames = new String\[\]\{
-            "Person"
+            "Person",
+            "Team"
     \};
 
-    private static final HashMap\<String, Class\[\]\> constructorParameter = new HashMap\<String, Class\[\]\>() \{\{
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
         put("Person", new Class\[\]\{String.class, String.class, int.class, double.class\});
+        put("Team", new Class\[\]\{String.class\});
+
     \}\};
 
     @Test
@@ -151,56 +265,16 @@ public class T02TestConstructor \{
 
     private void assertConstructorExists(String className) throws NoSuchMethodException \{
         Class cl = Classes.allClasses.get(className);
+
         Constructor constructor = null;
+
         try \{
-            constructor =
-                    cl.getDeclaredConstructor(constructorParameter.get(className));
-        \}catch (Exception e)\{
+            constructor = cl.getDeclaredConstructor(constructorParameters.get(className));
+        \} catch (Exception e) \{
             constructor = null;
         \}
-
         Assert.assertNotNull(String.format(CONSTRUCTOR_NOT_PRESENT_ERROR_MESSAGE, className), constructor);
-    \}
-\}
-[/input]
-[output]
-Test Passed!
-[/output]
-[/test]
-[test]
-[input]
-import org.junit.Assert;
-import org.junit.Test;
 
-import java.lang.reflect.Method;
-
-public class T03TestToStringOverride \{
-    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class %s not present";
-
-    private static final String\[\] classNames = new String\[\]\{"Person"\};
-
-    private static final String\[\] methodNames = new String\[\]\{"toString"\};
-
-
-    @Test
-    public void test() throws NoSuchMethodException \{
-        assertExistingMethodsInClasses(classNames, methodNames);
-    \}
-
-    private void assertExistingMethodsInClasses(String\[\] classNames, String\[\] methodNames) throws NoSuchMethodException \{
-        for (String className : classNames) \{
-            for (String methodName : methodNames) \{
-                assertMethodExist(className, methodName);
-            \}
-        \}
-    \}
-
-    private void assertMethodExist(String className, String methodName) throws NoSuchMethodException \{
-        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
-               Classes.allClasses.containsKey(className));
-
-        Class cl = Classes.allClasses.get(className);
-        Method toString = cl.getDeclaredMethod(methodName);
     \}
 \}
 [/input]
@@ -221,10 +295,10 @@ public class T04TestForNonPrivateFields \{
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
 
-    private static final String\[\] classNames = new String\[\] \{"Person"\};
+    private static final String\[\] classNames = new String\[\]\{"Person"\};
 
     @Test
-    public void test()\{
+    public void test() \{
         assertPrivateFields(classNames);
     \}
 
@@ -238,7 +312,7 @@ public class T04TestForNonPrivateFields \{
         Class cl = getClass(className);
         Field\[\] fields = cl.getDeclaredFields();
         long nonPrivateFieldsCount = Stream.of(fields)
-                .filter(x-\>!Modifier.isPrivate(x.getModifiers()))
+                .filter(x -\> !Modifier.isPrivate(x.getModifiers()))
                 .count();
 
         Assert.assertEquals(String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className)
@@ -264,40 +338,36 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
-import java.util.Arrays;
+import java.lang.reflect.Method;
 
-public class T05TestHaveAllFields \{
-    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
-    private static final String FIELD_IS_MISSING_ERROR_MESSAGE = "Field '%s' is missing";
+public class T05TestToStringOverride \{
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class %s not present";
 
     private static final String\[\] classNames = new String\[\]\{"Person"\};
-    private static final String\[\] allNeededFields = new String\[\]\{
-            "firstName", "lastName", "age", "salary"\};
+
+    private static final String\[\] methodNames = new String\[\]\{"toString"\};
+
 
     @Test
-    public void test() \{
-        assertHaveAllFields(classNames);
+    public void test() throws NoSuchMethodException \{
+        assertExistingMethodsInClasses(classNames, methodNames);
     \}
 
-    private void assertHaveAllFields(String\[\] classNames) \{
+    private void assertExistingMethodsInClasses(String\[\] classNames, String\[\] methodNames) throws NoSuchMethodException \{
         for (String className : classNames) \{
-            haveAllFields(className);
+            for (String methodName : methodNames) \{
+                assertMethodExist(className, methodName);
+            \}
         \}
     \}
 
-    private void haveAllFields(String className) \{
+    private void assertMethodExist(String className, String methodName) throws NoSuchMethodException \{
         Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
                 Classes.allClasses.containsKey(className));
 
         Class cl = Classes.allClasses.get(className);
-        Field\[\] fields = cl.getDeclaredFields();
-
-        for (String field : allNeededFields) \{
-            Assert.assertTrue(String.format(FIELD_IS_MISSING_ERROR_MESSAGE, field),
-                    Arrays.stream(fields)
-                            .anyMatch(x -\> x.getName().equalsIgnoreCase(field)));
-        \}
+        Method toString = cl.getDeclaredMethod(methodName);
     \}
 \}
 [/input]
@@ -311,61 +381,75 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class T06TestHaveAllMethods \{
+public class T06TestAllMethodsExists \{
+
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
     private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
 
-    private static final String PERSON = "Person";
-
-
-    private static final String\[\] methodNames = new String\[\]\{
-            "getSalary",
-            "setSalary",
-            "setFirstName",
-            "setLastName",
-            "setAge",
-            "increaseSalary"
+    private static final String\[\] classNames = new String\[\]\{
+            "Person", "Team"
     \};
 
+
+    private static final Map\<String, String\[\]\> methodsInClass =
+            new HashMap\<String, String\[\]\>() \{\{
+                put("Person", new String\[\]\{
+                        "setSalary",
+                        "setFirstName",
+                        "setLastName",
+                        "setAge",
+                \});
+                put("Team", new String\[\]\{
+                        "getFirstTeam",
+                        "getReserveTeam"\});
+            \}\};
+
     private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
-        put("getSalary", double.class);
         put("setSalary", void.class);
         put("setFirstName", void.class);
         put("setLastName", void.class);
         put("setAge", void.class);
-        put("increaseSalary", void.class);
+        put("getFirstTeam", List.class);
+        put("getReserveTeam",  List.class);
     \}\};
 
     private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("getSalary", new Class\[\]\{\});
         put("setSalary", new Class\[\]\{double.class\});
         put("setFirstName", new Class\[\]\{String.class\});
         put("setLastName", new Class\[\]\{String.class\});
         put("setAge", new Class\[\]\{int.class\});
-        put("increaseSalary", new Class\[\]\{double.class\});
+        put("getFirstTeam", new Class\[\]\{\});
+        put("getReserveTeam",  new Class\[\]\{\});
     \}\};
 
     @Test
     public void test() throws NoSuchMethodException \{
-        assertExistingMethods(methodNames);
+        assertExistingMethods(classNames);
     \}
 
-    private void assertExistingMethods(String\[\] methodNames) throws NoSuchMethodException \{
-        Class cl = getClass(PERSON);
-        for (String methodName : methodNames) \{
-            Method method =
-                    methodParameters.get(methodName).length == 0
-                            ? cl.getDeclaredMethod(methodName)
-                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
-            Assert.assertTrue(
-                    String.format(METHOD_RETURN_TYPE_ERROR,
-                            methodName,
-                            PERSON,
-                            methodReturnTypes.get(methodName)),
-                    returnType.equals(methodReturnTypes.get(methodName)));
+    private void assertExistingMethods(String\[\] classNames) throws NoSuchMethodException \{
+        for (String className : classNames) \{
+
+            Class cl = getClass(className);
+            for (String methodName : methodsInClass.get(className)) \{
+                Method method =
+                        methodParameters.get(methodName).length == 0
+                                ? cl.getDeclaredMethod(methodName)
+                                : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
+                Class\<?\> returnType = method.getReturnType();
+                Assert.assertTrue(
+                        String.format(METHOD_RETURN_TYPE_ERROR,
+                                methodName,
+                                className,
+                                methodReturnTypes.get(methodName)),
+                        returnType.equals(methodReturnTypes.get(methodName)));
+            \}
+
         \}
     \}
 
@@ -387,104 +471,131 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class T07TestIncreaseSalary \{
-    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
-    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
-    private static final String WRONG_SALARY_IS_SET = "Wrong salary is set";
-    private static final String FIRST_NAME = "firstName";
-    private static final String SECOND_NAME = "secondName";
-    private static final String NAME_OF_FIELD_SALARY = "salary";
-    private static final int YOUNG_PERSON_AGE = 20;
-    private static final int OLD_PERSON_AGE = 40;
-    private static final double PERSON_SALARY = 500D;
-    private static final double PERSON_BONUS = 20D;
+public class T07TestUnmodifiableCollections \{
 
-    private static final String PERSON = "Person";
+    private static final String CLASS_NOT_PRESENT_ERROR = "Class '%s' not present";
+    private static final String HAS_NON_PRIVATE_FIELDS_ERROR = "Class '%s' contains non private fields";
 
 
-    private static final String\[\] methodNames = new String\[\]\{
-            "increaseSalary"
+    private static final String\[\] classNames = new String\[\]\{
+            "Team"
     \};
 
-    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
-        put("increaseSalary", void.class);
+    private static final HashMap\<String, Class\[\]\> constructorParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put("Team", new Class\[\] \{String.class\});
     \}\};
 
-    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
-        put("increaseSalary", new Class\[\]\{double.class\});
+    static final Map\<Class\<?\>, Object\> defaultValues = new HashMap\<Class\<?\>, Object\>() \{\{
+        put(boolean.class, Boolean.FALSE);
+        put(byte.class, (byte) 0);
+        put(short.class, (short) 0);
+        put(int.class, 0);
+        put(long.class, 0L);
+        put(char.class, '\0');
+        put(float.class, 0.0F);
+        put(double.class, 0.0);
+        put(Boolean.class, Boolean.FALSE);
+        put(Byte.class, (byte) 0);
+        put(Short.class, (short) 0);
+        put(Integer.class, 0);
+        put(Long.class, 0L);
+        put(Character.class, 0L);
+        put(Float.class, 0L);
+        put(Double.class, 0L);
     \}\};
 
     @Test
-    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
-        assertExistingMethods(methodNames);
+    public void test() throws Exception \{
+        assertPrivateFields(classNames);
+        assertModifiableCollections(classNames);
     \}
 
-    private void assertExistingMethods(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
-        Class cl = getClass(PERSON);
-        for (String methodName : methodNames) \{
-            Method method =
-                    methodParameters.get(methodName).length == 0
-                            ? cl.getDeclaredMethod(methodName)
-                            : cl.getDeclaredMethod(methodName, methodParameters.get(methodName));
-            Class\<?\> returnType = method.getReturnType();
-            Assert.assertTrue(
-                    String.format(METHOD_RETURN_TYPE_ERROR,
-                            methodName,
-                            PERSON,
-                            methodReturnTypes.get(methodName)),
-                    returnType.equals(methodReturnTypes.get(methodName)));
-
-            Assert.assertTrue(WRONG_SALARY_IS_SET,
-                    assertIncreaseSalaryCorrect(method, cl));
+    private void assertModifiableCollections(String\[\] classNames) throws Exception \{
+        for (String className : classNames) \{
+            assertClassForModifiableCollection(className);
         \}
     \}
 
-    private boolean assertIncreaseSalaryCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
-        return correctIncreaseSalaryOfYoungPerson(method, cl)
-                && correctIncreaseSalaryOfOldPerson(method, cl);
+    private void assertClassForModifiableCollection(String className) throws Exception \{
+        Class cl = getClass(className);
+        List\<Method\> nonPrivateMethods = Stream.of(cl.getMethods())
+                .filter(m -\> !Modifier.isPrivate(m.getModifiers()))
+                .filter(m -\> m.getParameterCount() == 0)
+                .collect(Collectors.toList());
+
+        for (Method nonPrivateMethod : nonPrivateMethods) \{
+
+            Class returnType = nonPrivateMethod.getReturnType();
+
+            if (Iterable.class.isAssignableFrom(returnType)) \{
+                if (returnType.getSimpleName().equals(Iterable.class.getSimpleName())) \{
+                    continue; // iterable cannot be modified
+                \}
+
+                Constructor c = cl.getConstructor(constructorParameters.get(className));
+                Class\<?\>\[\] parameterTypes = constructorParameters.get(className);
+                Object\[\] arguments = getArguments(parameterTypes);
+                Object o = c.newInstance(arguments);
+                Collection collection = (Collection) nonPrivateMethod.invoke(o);
+                try \{
+                    collection.clear(); // \*\* should throw
+                    throw new Exception("modifiable collection");
+                \} catch (UnsupportedOperationException uoe) \{
+                    // no problem
+                \}
+            \} else if (Map.class.isAssignableFrom(returnType)) \{
+                Constructor c = cl.getConstructor(constructorParameters.get(className));
+                Class\<?\>\[\] parameterTypes = constructorParameters.get(className);
+                Object\[\] arguments = getArguments(parameterTypes);
+                Object o = c.newInstance(arguments);
+                Map map = (Map) nonPrivateMethod.invoke(o);
+                try \{
+                    map.clear(); // \*\* should throw
+                    throw new Exception("Method returns a modifiable collection");
+                \} catch (UnsupportedOperationException uoe) \{
+                    // no problem
+                \}
+            \}
+        \}
     \}
 
-    private boolean correctIncreaseSalaryOfOldPerson(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
-        Constructor constructor = cl.getDeclaredConstructor(String.class, String.class,
-                int.class, double.class);
-        constructor.setAccessible(true);
-        Object person = constructor.newInstance(FIRST_NAME, SECOND_NAME,
-                OLD_PERSON_AGE, PERSON_SALARY);
+    private Object\[\] getArguments(Class\<?\>\[\] parameterTypes) \{
+        Object\[\] parameters = new Object\[parameterTypes.length\];
+        for (int i = 0; i \< parameterTypes.length; i++) \{
+            parameters\[i\] = defaultValues.get(parameterTypes\[i\]);
+        \}
 
-        method.invoke(person, PERSON_BONUS);
-
-        Field fieldSalary = person.getClass().getDeclaredField(NAME_OF_FIELD_SALARY);
-        fieldSalary.setAccessible(true);
-        double salary = (double) fieldSalary.get(person);
-
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 100.0;
+        return parameters;
     \}
 
-    private boolean correctIncreaseSalaryOfYoungPerson(Method method, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
-
-        Constructor constructor = cl.getDeclaredConstructor(String.class, String.class,
-                int.class, double.class);
-        constructor.setAccessible(true);
-        Object person = constructor.newInstance(FIRST_NAME, SECOND_NAME,
-                YOUNG_PERSON_AGE, PERSON_SALARY);
-
-        method.invoke(person, PERSON_BONUS);
-
-        Field fieldSalary = person.getClass().getDeclaredField(NAME_OF_FIELD_SALARY);
-        fieldSalary.setAccessible(true);
-        double salary = (double) fieldSalary.get(person);
-
-        return salary == PERSON_SALARY + PERSON_SALARY \* PERSON_BONUS / 200.0;
+    private void assertPrivateFields(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertHasNoPrivateFields(className);
+        \}
     \}
 
     private Class getClass(String className) \{
-        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR, className),
                 Classes.allClasses.containsKey(className));
         return Classes.allClasses.get(className);
+    \}
+
+    private void assertHasNoPrivateFields(String className) \{
+        Class cl = getClass(className);
+        Field\[\] fields = cl.getDeclaredFields();
+        long nonPrivateFieldsCount = Stream.of(fields).filter(f -\> !Modifier.isPrivate(f.getModifiers())).count();
+        Assert.assertTrue(
+                String.format(HAS_NON_PRIVATE_FIELDS_ERROR, className),
+                nonPrivateFieldsCount == 0);
     \}
 \}
 [/input]
@@ -941,15 +1052,131 @@ public class T11TestSetAge \{
 Test Passed!
 [/output]
 [/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+import org.mockito.Mockito;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.List;
+
+public class T12TestAddPlayer \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String TEAM_NAME = "TeamName";
+    private static final String PERSON_CLASS_NAME = "Person";
+    private static final String PERSON_METHOD_GET_AGE_NAME = "getAge";
+    private static final String NAME_OF_FIELD_RESERVE_TEAM = "reserveTeam";
+    private static final String NAME_OF_FIELD_FIRST_TEAM = "firstTeam";
+    private static final int YOUNG_PERSON_AGE = 20;
+    private static final int OLD_PERSON_AGE = 40;
+
+    private static final String PERSON = "Team";
+
+
+    private static final String\[\] methodNames = new String\[\]\{
+            "addPlayer"
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put("addPlayer", void.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put("addPlayer", new Class\[\]\{Object.class\});
+    \}\};
+    private static final String CANNOT_ADD_PLAYER = "Can not add player";
+
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertExistingMethodsAndWorksCorrect(methodNames);
+    \}
+
+    private void assertExistingMethodsAndWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(PERSON);
+        for (String methodName : methodNames) \{
+            Method method = cl.getDeclaredMethod(methodName, Classes.allClasses.get(PERSON_CLASS_NAME));
+            Class\<?\> returnType = method.getReturnType();
+            Assert.assertTrue(
+                    String.format(METHOD_RETURN_TYPE_ERROR,
+                            methodName,
+                            PERSON,
+                            methodReturnTypes.get(methodName)),
+                    returnType.equals(methodReturnTypes.get(methodName)));
+
+            Assert.assertTrue(CANNOT_ADD_PLAYER,
+                    assertAddPlayerCorrect(method, cl));
+        \}
+    \}
+
+    private boolean assertAddPlayerCorrect(Method method, Class cl) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException \{
+        return correctAddYoungPlayer(method, cl)
+                && correctAddOldPlayer(method, cl);
+    \}
+
+    private boolean correctAddOldPlayer(Method addPlayer, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        Constructor constructor = cl.getDeclaredConstructor(String.class);
+        constructor.setAccessible(true);
+        Object team = constructor.newInstance(TEAM_NAME);
+
+        Object person = Mockito.mock(Classes.allClasses.get(PERSON_CLASS_NAME));
+        Method getAge = person.getClass().getDeclaredMethod(PERSON_METHOD_GET_AGE_NAME);
+        getAge.setAccessible(true);
+        Mockito.when(getAge.invoke(person)).thenReturn(OLD_PERSON_AGE);
+
+        addPlayer.invoke(team, person);
+
+        Field reserveTeamField = team.getClass().getDeclaredField(NAME_OF_FIELD_RESERVE_TEAM);
+        reserveTeamField.setAccessible(true);
+        List\<?\> reserveTeam = (List\<?\>) reserveTeamField.get(team);
+
+        return reserveTeam.size() \> 0;
+    \}
+
+    private boolean correctAddYoungPlayer(Method addPlayer, Class cl) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+
+        Constructor constructor = cl.getDeclaredConstructor(String.class);
+        constructor.setAccessible(true);
+        Object team = constructor.newInstance(TEAM_NAME);
+
+        Object person = Mockito.mock(Classes.allClasses.get(PERSON_CLASS_NAME));
+        Method getAge = person.getClass().getDeclaredMethod(PERSON_METHOD_GET_AGE_NAME);
+        getAge.setAccessible(true);
+        Mockito.when(getAge.invoke(person)).thenReturn(YOUNG_PERSON_AGE);
+
+        addPlayer.invoke(team, person);
+
+        Field firstTeamField = team.getClass().getDeclaredField(NAME_OF_FIELD_FIRST_TEAM);
+        firstTeamField.setAccessible(true);
+        List\<?\> firstTeam = (List\<?\>) firstTeamField.get(team);
+
+        return firstTeam.size() \> 0;
+    \}
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
 
-[slide]
-# Solution: Validation Data
+[slide hideTitle]
+# Solution: First and Reserve Team
 
-
-TODO: Implement after strategy is ready (unit testing)
-
+TODO: Implement after strategy is ready!
 
 [/slide]

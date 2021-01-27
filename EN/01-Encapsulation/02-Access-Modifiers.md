@@ -1,6 +1,7 @@
 # Access Modifiers
 
-[slide]
+[slide hideTitle]
+
 # Private Access Modifier
 
 With the **private access** modifier an object **hides data from the outside world.**
@@ -18,7 +19,7 @@ class Person {
 - Data can be **accessed only within the declared class** itself
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Protected Access Modifier
 
 Grants **access to subclasses**
@@ -35,7 +36,8 @@ class Team {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Default Access Modifier
 
 Does not explicitly declare an access modifier
@@ -56,7 +58,7 @@ System.out.println(real.getName());
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Public Access Modifier
 
 Grants access to **any class** belonging to the **Java Universe**
@@ -72,7 +74,7 @@ public class Team {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sort by Name and Age
 [code-task title="Problem: Sort by Name and Age" taskId="fc07458b-3b86-4698-af22-a54efa5e87c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -363,7 +365,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Sort by Name and Age
 
 ``` java
@@ -382,7 +384,7 @@ public class Person {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Salary Increase
 [code-task title="Problem: Salary Increase" taskId="ede80230-10bc-44f8-a87a-d53f09a25042" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -766,7 +768,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Salary Increase
 
 TODO: Implement after strategy is ready!

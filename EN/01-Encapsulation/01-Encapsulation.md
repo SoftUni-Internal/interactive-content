@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Encapsulation
 
 **Encapsulation is a process of wrapping code and data together into a single unit**
@@ -21,8 +21,13 @@ class Person {
   public int getAge()
   public void setAge(int age)
 }
+
+[/slide]
+
+[slide hideTitle]
+
 ```
-## Example:
+# Encapsulation Example
 
 Fields should be **private** (-)
 
@@ -44,10 +49,10 @@ Accessors and Mutators should be **public** (+)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Keyword This 
 
-- `this` is a reference to the current object.
+- `.this` is a reference to the current object.
 
 It can refer to current class instance.
 
@@ -57,7 +62,7 @@ public Person(String name) {
 }
 ```
 
-- `this` can invoke current class method.
+- `.this` can invoke current class method.
 
 ```java
 public String fullName() {
@@ -65,7 +70,7 @@ public String fullName() {
 }
 ```
 
-- `this` can invoke current class constructor.
+- `.this` can invoke current class constructor.
 
 ```java
 public Person(String name) {

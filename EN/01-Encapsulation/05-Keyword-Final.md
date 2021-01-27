@@ -1,17 +1,17 @@
 # Keyword Final
-[slide]
+[slide hideTitle]
 # Keyword Final
 
-**Final class can't be extended**
+**Final class can not be extended**
 
 ```java
 public class Animal {}
 public final class Mammal extends Animal {}
 public class Cat extends Mammal {}
-// Can't be done
+// Can not be done
 ```
 
-**Final method can't be overridden**
+**Final method can not be overridden**
 
 ```java
 public final void move(Point point) {}
@@ -19,10 +19,10 @@ public class Mammal extends Animal {
   @Override 
   public void move() {}
 }
-// Can't be done
+// Can not be done
 ```
 
-**Final variable value can't be changed once it is set**
+**Final variable value can not be changed once it is set**
 
 ```java
 private final String name;
