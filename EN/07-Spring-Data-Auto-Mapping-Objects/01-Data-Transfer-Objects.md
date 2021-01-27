@@ -51,9 +51,7 @@ Here is a scheme of how the normal communication with the database in a Web Appl
 
 One more benefit of DTOs is that they bring the information we need.
 
-For instance, if we need information about our DB entity **Person** like his **name and age**,
-
-but also information which is in another table connected with foreign key about his **address city**.
+For instance, if we need information about our DB entity **Person** like his **name and age**, but also information which is in another table connected with foreign key about his **address city**.
 
 Our DTO can combine the information and ask for it, which we will receive with a single query and return in a single object instead of two. 
 
