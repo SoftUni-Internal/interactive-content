@@ -6,7 +6,7 @@ After learning how to write queries and get our data from the database, now it's
 
 In our Spring-Data-Intro lesson, we learned what is **Spring-Service** and what's the purpose of **Services** in general.
 
-Now it's time to re-visit this module and learn how **the services** communicate with the rest of the app.
+It's time to re-visit this module and learn how **the services** communicate with the rest of the app.
 
 Let's first remind ourselves what is a **service**.
 
@@ -43,11 +43,7 @@ Let's concatenate everything in a single sentence.
 # Entity Usage
 
 **Take a note**
-If our app is a really simple one and we communicate with a database and we need the full information of an entity, 
-
-it's fine if we communicate without a DTO but directly with the entity, 
-
-otherwise, we accomplish nothing but replication of the object entity.
+If our app is a really simple one and we communicate with a database and we need the full information of an entity, it's fine if we communicate without a DTO but directly with the entity, otherwise, we accomplish nothing but replication of the object entity.
 
 Here is a scheme of how the normal communication with the database in a Web Application happens.
 
@@ -55,9 +51,7 @@ Here is a scheme of how the normal communication with the database in a Web Appl
 
 One more benefit of DTOs is that they bring the information we need.
 
-For instance, if we need information about our DB entity **Person** like his **name and age**,
-
-but also information which is in another table connected with foreign key about his **address city**.
+For instance, if we need information about our DB entity **Person** like his **name and age**, but also information which is in another table connected with foreign key about his **address city**.
 
 Our DTO can combine the information and ask for it, which we will receive with a single query and return in a single object instead of two. 
 

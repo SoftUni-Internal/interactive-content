@@ -86,9 +86,7 @@ Model mapping is an easy way to convert one model to another.
 
 It is based purely on conventions and as long as we keep this convention it will save us from writing a lot of monotonous code.
 
-In our case, as we are mapping entities from the database to DTOs,
-
-what will happen is that the Model Mapper will stand between them creating the query and make a projection and map it for us. 
+In our case, as we are mapping entities from the database to DTOs, what will happen is that the Model Mapper will stand between them creating the query and make a projection and map it for us. 
 
 The use of conventions is to determine how property and values are mapped to each other.
 
@@ -129,9 +127,9 @@ EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
 
 # Simple Mapping Entity to DTO
 
-Model Mapper's power won't stop at mapping just the simple properties, like string, int BigDecimal, etc.,
+Model Mapper's power won't stop at mapping just the simple properties, like string, int BigDecimal, etc., with it you can map even nested properties. 
 
-with it, you can map even nested properties. Let's take for instance.
+Let's take for instance.
 
 ```java
 @Entity
@@ -170,7 +168,7 @@ public class EmployeeDto {
 
 As you have seen Model Mapper is a really powerful tool and using just conventions we can achieve mapping even of nested objects properties.
 
-But of course, it has its limitations, as sometimes fields differ too much or they are from different types then the mapping can't be done.
+It has its limitations, as sometimes fields differ too much or they are from different types then the mapping can't be done.
 
 In this case, some manual mapping is needed.
 
@@ -290,11 +288,9 @@ To fix the exception we have to check if every property is named by convention o
 
 # Skipping Properties
 
-Sometimes when we are lazy and we decide to re-use already existing DTO, 
+Sometimes when we are lazy and we decide to re-use already existing DTO, we may face the problem of not needing some of the properties.
 
-then we may face the problem of not needing some of the properties.
-
-In order not to include the properties in our query we can create a custom configuration where we name the properties that we don't want to be mapped.
+To not include the properties in our query we can create a custom configuration where we name the properties that we don't want to be mapped.
 
 With code.
 ```java
