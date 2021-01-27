@@ -1,6 +1,6 @@
 # React Overview
 
-[slide]
+[slide hideTitle]
 
 # What is React.js?
 
@@ -61,7 +61,7 @@ The text between the curly brackets will be **evaluated at render time**, and th
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Features
 
@@ -88,7 +88,7 @@ React has a distinctive set of **features** that make it stand out from other Ja
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Advantages
 
