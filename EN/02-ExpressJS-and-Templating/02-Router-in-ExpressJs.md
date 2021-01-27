@@ -1,6 +1,6 @@
 # Router in ExpressJs
 
-[slide]
+[slide hideTitle]
 # Router
 
 Routing is done by using the `app.METHOD()` function, which receives the **path** and a **handler** callback function as parameters.
@@ -21,7 +21,7 @@ In this example:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Route Methods
 
 In this example, there are different requests as well as their path.
@@ -47,7 +47,7 @@ The arrangement of routes is important because when we have two get routs at the
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Route Methods
 
 There is another parameter in handlers that is called `next`.
@@ -68,7 +68,7 @@ In this example, we tap the route `app.all` and the function with which we print
 Then, thanks to `next` with a separate function we return a response, which in this case is `Show about page.`
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Router Paths
 
 Routes are not strictly defined.
@@ -90,7 +90,7 @@ app.get(/.*fly$/, (req, res) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Extracting Parameters
 
 Paths can have parameters.
@@ -116,7 +116,7 @@ In this way, we can validate the route.
 In this case, if the route does not just number, then we will get an error `Not Found`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Chainable Routes
 
 You can create chainable route handlers using `app.route()`
@@ -133,14 +133,14 @@ app.route('/home')
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Router Responses
 
 As a response, we can send many things.
 
 We can use:
 
-- `res.download` \- if we want to return a file, which the user can download.
+- `res.download`: if we want to return a file, which the user can download.
 
 ```js
 app.get('/pdf', (req, res) => {
@@ -170,7 +170,7 @@ app.get('/file/:fileName', (req, res) => {
 - `res.render`: render a view template, index HTML or other template
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Modular Routers
 
 You can use `express.Router` for modular route handlers.
