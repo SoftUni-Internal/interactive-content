@@ -4,7 +4,7 @@
 
 # Problem: Subtraction
 
-[code-task title="Substraction" taskId="Js-Advanced-Dom-Manipulations-Substraction" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
+[code-task title="Problem: Subtraction" taskId="js-advanced-DOM-Subtraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
