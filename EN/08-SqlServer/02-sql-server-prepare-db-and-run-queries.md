@@ -405,7 +405,6 @@ Teutera
 1
 [/output]
 [/test]
-
 [test]
 [input]
 CREATE TABLE Planets
@@ -465,86 +464,7 @@ CREATE TABLE TravelCards
 SET IDENTITY_INSERT Planets ON;
 
 INSERT INTO Planets (Id, Name) VALUES 
-(1, 'Otroyphus')
-[test]
-[input]
-SELECT Name FROM Planets
-ORDER BY Id DESC
-[/input]
-[output]
-Saturn
-Jupiter
-Earth
-Mars
-Stenurilia
-Pleceliv
-Eipra
-Jeayama
-Casmadus
-Kascarth
-Aswuenerth
-Feblunus
-WR8
-Gleshan
-5Q5
-Whora
-Chumeter
-Slagonope
-Wueyama
-Teutera
-Wescapus
-Lescore
-Suthiyclite
-Otroyphus
-[/output]
-[/test]
-
-[test]
-[input]
-SELECT Name, Manufacturer FROM Spaceships
-ORDER BY Id
-[/input]
-[output]
-USS Templar
-Oyoba
-Anarchy
-Fivebridge
-LWSS Romulus
-Camimbo
-LWSS Dark Phoenix
-Quimba
-BC The Commissioner
-Jamaika
-BS Saratoga
-Realbridge
-SC Serpent
-Agivu
-Katherina
-Skiba
-Messenger
-Leenti
-SSE Priestess
-Zoovu
-Mercenary Star
-Realbridge
-Judgment
-Quimba
-Fade
-Camimbo
-Adder
-Fivebridge
-CS Hannibal
-Oyoba
-Golf
-VW
-WakaWaka
-Wakanda
-Falcon9
-SpaceX
-Bed
-Vidolov
-[/output]
-[/test],
+(1, 'Otroyphus'),
 (2, 'Suthiyclite'),
 (3, 'Lescore'),
 (4, 'Wescapus'),
@@ -823,86 +743,7 @@ INSERT INTO TravelCards (ID, CardNumber, JobDuringJourney, ColonistId, JourneyId
 (67, '6664373122', 'Trooper', 10, 10),
 (68, '4084900842', 'Cleaner', 69, 15),
 (69, '2601229160', 'Trooper', 13, 15),
-(70, '9893913284
-[test]
-[input]
-SELECT Name FROM Planets
-ORDER BY Id DESC
-[/input]
-[output]
-Saturn
-Jupiter
-Earth
-Mars
-Stenurilia
-Pleceliv
-Eipra
-Jeayama
-Casmadus
-Kascarth
-Aswuenerth
-Feblunus
-WR8
-Gleshan
-5Q5
-Whora
-Chumeter
-Slagonope
-Wueyama
-Teutera
-Wescapus
-Lescore
-Suthiyclite
-Otroyphus
-[/output]
-[/test]
-
-[test]
-[input]
-SELECT Name, Manufacturer FROM Spaceships
-ORDER BY Id
-[/input]
-[output]
-USS Templar
-Oyoba
-Anarchy
-Fivebridge
-LWSS Romulus
-Camimbo
-LWSS Dark Phoenix
-Quimba
-BC The Commissioner
-Jamaika
-BS Saratoga
-Realbridge
-SC Serpent
-Agivu
-Katherina
-Skiba
-Messenger
-Leenti
-SSE Priestess
-Zoovu
-Mercenary Star
-Realbridge
-Judgment
-Quimba
-Fade
-Camimbo
-Adder
-Fivebridge
-CS Hannibal
-Oyoba
-Golf
-VW
-WakaWaka
-Wakanda
-Falcon9
-SpaceX
-Bed
-Vidolov
-[/output]
-[/test]', 'Pilot', 81, 8),
+(70, '9893913284', 'Pilot', 81, 8),
 (71, '8132506049', 'Cleaner', 88, 4),
 (72, '0801743184', 'Cleaner', 1, 6),
 (73, '0129851787', 'Cleaner', 25, 7),
@@ -950,6 +791,8 @@ Teutera
 1
 [/output]
 [/test]
+
+
 [/tests]
 [/code-task]
 [/slide]
