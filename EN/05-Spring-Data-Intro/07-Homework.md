@@ -1,10 +1,10 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Bookshop system
 
@@ -40,7 +40,7 @@ The final schema of the database should look like that:
 [image assetsSrc="Spring-data-intro-hw.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Seed Data into the Database
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Spring Data Services
 
@@ -14,7 +14,19 @@ The main concept behind the service layer is to not expose any internal processe
 
 The developers should be aiming of making the services re-usable, so any other future application that may need these services can make use of them with little to non-configuration. 
 
+[/slide]
+
+[slide hideTitle]
+
+# Spring Data Architecture
+
 [image assetsSrc="Spring-Data-Service.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Services
 
 Now let's have some code examples.
 
@@ -51,6 +63,12 @@ public class StudentServiceImpl implements StudentService {     //Then we have a
 ```
 
 Now let's use the service that we just created. 
+
+[/slide]
+
+[slide hideTitle]
+
+# Entry Point
 
 Firstly we will need an entry point for our **Spring Application**.
 

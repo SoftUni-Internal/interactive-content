@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Lab: Spring Data – Account System
 
@@ -10,7 +10,7 @@ The goal is to implement services and repositories
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Project Setup.
 
@@ -62,7 +62,7 @@ Start splitting the java directory into packages. Create several ones to help yo
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Database Models
 
@@ -90,7 +90,7 @@ Start by setting up the database models. Each one of them will be as follows:
 Set up appropriate tables, columns, column properties and table relations.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Repositories
 
@@ -146,7 +146,7 @@ for example **getByUsername(String username)** in the **UserRepository** interfa
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Services
 
@@ -230,7 +230,7 @@ The implementation of the methods is up to you. Here are some several tips:
     -	**User registration** – should only happen if user does not exist in the database
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # ConsoleRunner and Application
 
@@ -256,7 +256,7 @@ public class ConsoleRunner implements CommandLineRunner{
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Test
 

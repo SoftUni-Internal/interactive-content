@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Spring Data
 
@@ -22,7 +22,11 @@ Every different module provides us with a range of services when used together w
 
 [image assetsSrc="Spring-data-introduction(1).png" /]
 
-### Spring data
+[/slide]
+
+[slide hideTitle]
+
+# Spring data
 
 Spring data the module of **Spring**, which is responsible for operating with the database, as mentioned above, it's combined with an ORM such as **Hibernate**, giving us full access over our database and providing us with another level of abstraction over our JPA provider.
 
@@ -38,13 +42,17 @@ Few of the tools we get when working with **Spring data** are:
 
 - And many more... 
 
-**Extra layer of abstraction over the used ORM.**
+[/slide]
+
+[slide hideTitle]
+
+# Extra layer of abstraction over the used ORM
 
 [image assetsSrc="Spring-data-introduction(2).png" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Spring Boot
 
@@ -70,6 +78,10 @@ It will automatically configure **Spring** whenever possible.
 
 No need for code generation and no requirement for XML configurations.
 
+[/slide]
+
+[slide hideTitle]
+
 Most spring boots need almost no configuration.
 
 Let's have an **example**:
@@ -90,6 +102,15 @@ Let's have an **example**:
         <version>8.0.21</version>
         </dependency>
     </dependencies>
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Build
+
+```java
  <build>
         <plugins>
             <plugin>
@@ -103,8 +124,13 @@ Let's have an **example**:
             </plugin>
         </plugins>
     </build>
-
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Configuration
 
 The configuration for the spring application is held in the application.properties.
 
@@ -133,4 +159,5 @@ logging.level.org.hibernate.type.descriptor = TRACE
 ```
 
 Depending on your project you may need different spring.boot files, you can find many alraedy implemeneted in the internet.
+
 [/slide]
