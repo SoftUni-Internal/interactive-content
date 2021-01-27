@@ -22,7 +22,7 @@ In this example:
 [/slide]
 
 [slide hideTitle]
-# Route Methods
+# Route Methods - 1
 
 In this example, there are different requests as well as their path.
 
@@ -48,7 +48,7 @@ The arrangement of routes is important because when we have two get routs at the
 [/slide]
 
 [slide hideTitle]
-# Route Methods
+# Route Methods - 2
 
 There is another parameter in handlers that is called `next`.
 
