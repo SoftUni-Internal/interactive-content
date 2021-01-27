@@ -184,6 +184,13 @@ JanpWhite
 
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
+[code-adapter]
+```
+return code(input[0], input[1], input[2]);
+```
+[/code-adapter]
+
 ```
 function concatNames(input){
 let firstName = input[0];
