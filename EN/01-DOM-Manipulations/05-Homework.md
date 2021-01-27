@@ -324,11 +324,7 @@ yes
 [/slide]
 
 [slide]
-<<<<<<< HEAD
-# Time Converter
-=======
 # Problem: Time Converter
->>>>>>> 6f4bda8b95353be3b4c23a607bc853b5164ea5df
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
