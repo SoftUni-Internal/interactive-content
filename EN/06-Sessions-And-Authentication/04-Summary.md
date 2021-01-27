@@ -1,14 +1,13 @@
 [slide hideTitle]
 # Summary
 
-
 # In this lesson you learnt:
 
-**Cookies and sessions**
+- **Cookies and sessions**
 
-- Differences between **cookies** and **sessions**.
+    - Differences between **cookies** and **sessions**.
 
-- **When** to use each of them.
+    - **When** to use each of them.
 
 ```js
 const cookieParser = require("cookie-parser");
@@ -25,13 +24,13 @@ app.get("/receiveCookie", (req, res) => {
 });
 ```
 
-**Authentication concepts**
+- **Authentication concepts**
 
-- How **authentication** is done and what it is.
+    - How **authentication** is done and what it is.
 
-- How to use **bcrypt**.
+    - How to use **bcrypt**.
 
-- Differences between **authentication** and **authorization**
+    - Differences between **authentication** and **authorization**
 
 ```js
 const bcrypt = require("bcrypt");
@@ -46,13 +45,13 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 });
 ```
 
-**JWT**
+- **JWT**
 
-- What **JWT** is.
+    - What **JWT** is.
 
-- The **structure** of a JSON Web Token.
+    - The **structure** of a JSON Web Token.
 
-- **When** and **How** to use JWT.
+    - **When** and **How** to use JWT.
 
 ```js
 const jwt = require("jsonwebtoken");
@@ -68,10 +67,10 @@ console.log(token);
 
 ## In the next lesson you will learn:
 
-**Validation and Error Handling**
+- **Validation and Error Handling**
 
-- **Validating** and **sanitizing** data.
+    - **Validating** and **sanitizing** data.
 
-- **Different types** of errors and how to handle them.
+    - **Different types** of errors and how to handle them.
 
 [/slide]

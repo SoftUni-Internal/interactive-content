@@ -1,6 +1,6 @@
 # JWT
 
-[slide]
+[slide hideTitle]
 
 # What is JWT?
 
@@ -10,9 +10,9 @@ JWT is secure because of a digital signature.
 
 There are two ways to digitally sign a token:
 
-- `secret` - Signing with a secret, using the `HMAC` algorithm.
+- `secret`: Signing with a secret, using the `HMAC` algorithm.
 
-- `public/private key` - Signing with a public/private key, using the **RSA** or **ECDSA** algorithms.
+- `public/private key`: Signing with a public/private key, using the **RSA** or **ECDSA** algorithms.
 
 Signing the token prevents the notorious **man-in-the-middle** cyberattack.
 
@@ -24,7 +24,7 @@ The two people that their communication is private, however, the whole conversat
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # When to use JWT?
 
@@ -50,17 +50,17 @@ Being able to transfer information in a **safe** and **secure** manner makes JWT
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JWT Structure
 
 A JSON Web Token consists of **three** parts:
 
-- `Header` - Specifies the **type of token** and **signature algorithm**.
+- `Header`: Specifies the **type of token** and **signature algorithm**.
 
-- `Payload` - Contains the data transferred in a `base64` format.
+- `Payload`: Contains the data transferred in a `base64` format.
 
-- `Signature` - Contains the verification value.
+- `Signature`: Contains the verification value.
 
 Here is JWT and its parts visualized:
 
@@ -68,7 +68,7 @@ Here is JWT and its parts visualized:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JWT Usage
 
