@@ -325,7 +325,7 @@ yes
 
 [slide]
 # Problem: Time Converter
-[code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
