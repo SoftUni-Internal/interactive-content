@@ -8,8 +8,8 @@ Using Mongoose you can perform all CRUD operations wherever you want in your cod
 
 **CRUD** stands for - Create, Retrieve, Update, Delete.
 
-- **Create (Persist Data)**
-`save()` is used to insert a record in the collection. 
+- **Create (Persist Data)**: `save()` is used to insert a record in the collection.
+
 We have to create a Modal Object first.
 
 ``` js
@@ -60,7 +60,6 @@ Student.remove({name: studentName})
 
 # Create Example
 
-
 ``` js
 const mongoose = require('mongoose');
 const connectionStr = 'mongodb://localhost:27017/unidb';
@@ -82,7 +81,7 @@ This is a simple example of connecting to the database, creating a schema, and c
 
 Inside the model, we insert a new Student with a name and age.
 
-Then we save the model using the save() method.
+Then we save the model using the `save()` method.
 
 At the final, we print the added student.
 
@@ -92,7 +91,6 @@ At the final, we print the added student.
 [slide hideTitle]
 
 # Read Example
-
 
 ``` js
 Student
@@ -111,7 +109,9 @@ The first command finds all of the students inside the database and print them.
 
 Second, find all students by the name we pass and print them in the console.
 
-The third example is used to find the first student with the name Peter. If there are more students with that name, using `FindOne()` will not print all of them.
+The third example is used to find the first student with the name Peter. 
+
+If there are more students with that name, using `FindOne()` will not print all of them.
 
 Do not forget to always handle errors.
 
@@ -148,8 +148,7 @@ Student
 
 # Remove & Count Example
 
-Syntax:
-* `remove(conditions, [callback])`
+- Syntax: `remove(conditions, [callback])`
 
 Note that if the condition is not passed or empty then all the records will be removed.
 
@@ -167,4 +166,3 @@ userModel.remove()
 ```
 
 [/slide]
-

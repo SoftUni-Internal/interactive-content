@@ -18,9 +18,9 @@ It is used to manage the relations between data, and translate our objects into 
 
 To **install** - type in CMD:
 
-```js
-npm install mongoose
-```
+
+`npm install mongoose`
+
 
 There are some benefits using Mongoose over native MongoDB:
 
@@ -40,15 +40,11 @@ There are some benefits using Mongoose over native MongoDB:
 
 To work with MOngoose we must load the following **module**:
 
-```
-const mongoose = require('mongoose')
-```
+`const mongoose = require('mongoose')`
 
 Then, we connect to the database:
 
-```
-mongoose.connect('mongodb://localhost:27017/unidb')
-```
+`mongoose.connect('mongodb://localhost:27017/unidb')`
 
 
 [/slide]

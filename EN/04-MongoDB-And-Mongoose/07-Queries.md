@@ -51,7 +51,7 @@ const docs = await query;
 
 Mongoose supports many different queries:
 
-- For equality / Non-equality
+- **For equality / Non-equality**
 
 ``` js
 Student.findOne({'lastName':'Higgins'})
@@ -65,13 +65,13 @@ Student.find({}).where('age').gt(7).lt(14)
 Student.find({}).where('facultyNumber').equals('12399')
 ```
 
-- Selection of some properties
+- **Selection of some properties**
 
 ```js
 Student.findOne({'lastName':'Smith'}).select('name age')
 ```
 
-- Sort
+- **Sort**
 
 To get sorted a result we need to use another function name `sort()`.
 
@@ -81,7 +81,7 @@ Student.find({}).sort({age:-1})
 
 The **keywords** or you can say values are: **asc**, **desc**, **ascending**, **descending**, **1**, **-1**
 
-- Limit & Skip
+- **Limit & Skip**
 
 ```js
 Student.find({}).sort({age:-1}).skip(10).limit(10)
@@ -154,14 +154,13 @@ Student.findOne({ name: 'Peter' })
 
 Let us take a look at some notes about `populate()`:
 
-- If no document is found, then the field will be **null**.
+- If no document is found, then the field will be **null**
 
-- We can chain populate method for populating **multiple** fields.
+- We can chain populate method for populating **multiple** fields
 
-- If we have an array of documents and the documents are not found, it will return an empty array.
+- If we have an array of documents and the documents are not found, it will return an empty array
 
-- If there are two populate methods, populate the same field, the second populate will override the first one.
-
+- If there are two populate methods, populate the same field, the second populate will override the first one
 
 We can populate based on a **condition**:
 

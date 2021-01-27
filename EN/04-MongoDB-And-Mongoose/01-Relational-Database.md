@@ -27,15 +27,7 @@ Some of the most popular RDBMS are:
 
 - SQLite
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Relational Database - Example
-
 [image assetsSrc="MongoDB-And-Mongoose.png" /]
-
 
 [/slide]
 
