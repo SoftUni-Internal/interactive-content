@@ -15,7 +15,7 @@
 - Implementing stacks in Java
 - Overview of all stack operations
 
-**3. Queues - First In First Out(FIFO)**
+**3. Queues - First In First Out (FIFO)**
 - Queue functionality
 - Implementing queues in Java
 - An overview of all queue operations
