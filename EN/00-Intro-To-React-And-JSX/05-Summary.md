@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson you learned:
+
+# In this lesson you learnt:
 
 - React is a JavaScript Library
   - Makes it easy to build user interfaces
@@ -60,7 +60,7 @@ function ComponentBlender() { 
 ```
 
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Components Overview
   
