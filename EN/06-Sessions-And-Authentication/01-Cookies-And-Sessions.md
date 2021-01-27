@@ -1,6 +1,6 @@
 # Cookies and Sessions
 
-[slide]
+[slide hideTitle]
 
 # HTTP Communication
 
@@ -27,7 +27,7 @@ Data can also be stored on the server when necessary with **session cookies**.
 Session cookies allow for some **state** to be kept **between many requests**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Session vs. Cookie
 
@@ -57,7 +57,7 @@ Sessions, however, **cannot be modified** by the client which makes them **more 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Using Cookies
 
@@ -94,7 +94,7 @@ app.get("/receiveCookie", (req, res) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Using Sessions
 
