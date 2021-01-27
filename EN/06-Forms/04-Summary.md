@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson we learned:
+
+# In this lesson you learnt:
 
 - Forms in React keep an initial state
 
@@ -49,7 +49,7 @@ class MyComponent extends React.Component {
 
 ```
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - React Hooks
   - State hook

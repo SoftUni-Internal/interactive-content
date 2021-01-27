@@ -1,6 +1,6 @@
 # Forms Overview
 
-[slide]
+[slide hideTitle]
 
 # Forms in React
 

@@ -1,6 +1,6 @@
 # Origami Platform Workshop: Part 1
 
-[slide]
+[slide hideTitle]
 # Task Requirements
 [Download resources here!](https://mega.nz/file/nNpnwASQ#XEaZFlQWft2XTibJanDnteYBiju_r9I3MAMrijj0vvQ)
 
@@ -75,7 +75,7 @@ Each Link Component inside the footer navigation should have the class name call
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Database 
 
 Use the provided **REST API** build with **Express.js** and **MongoDB.**

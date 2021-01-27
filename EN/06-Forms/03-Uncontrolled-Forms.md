@@ -1,7 +1,6 @@
 # Uncontrolled Forms
 
-[slide]
-
+[slide hideTitle]
 # Uncontrolled Components
 
 There are instances in which handling data by the component itself does not suffice.
@@ -67,19 +66,17 @@ Since the state is handled by the DOM, there is neither an `onChange` attribute 
 
 
 
-[slide]
+[slide hideTitle]
 
 # When to Use Refs?
 
 Refs have many use cases, more specifically when performing [imperative](https://en.wikipedia.org/wiki/Imperative_programming) actions like:
-
 
 - Working with imperative animations
 
 - Managing text selection, focus, or media playback
 
 - Integrating React and non-React code
-
 
 For better consistency, avoid using refs for stuff that can be done in a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) way.
 

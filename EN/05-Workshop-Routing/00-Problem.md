@@ -1,6 +1,6 @@
 # Origami Platform Workshop: Part 2
 
-[slide]
+[slide hideTitle]
 # First Path
 
 Publications view, which shows all created posts ever.
@@ -13,7 +13,7 @@ Publications view, which shows all created posts ever.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Second Path
 
 Share your thoughts view, where the user can see the text area where the post will be created and the last 3 posts ever.
@@ -26,7 +26,7 @@ Share your thoughts view, where the user can see the text area where the post wi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Third Path
 
 Register view, where the users will be registered.
@@ -37,7 +37,7 @@ Register view, where the users will be registered.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Fourth Path
 
 Login view, where the users will be logged.
@@ -52,7 +52,7 @@ Use these styles for Login and Register views.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Fifth Path
 
 Profile view, where the user can see his own account information and his top 3 recent posts.
@@ -65,7 +65,7 @@ Profile view, where the user can see his own account information and his top 3 r
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Sixth Path
 
 404 view for any invalid path.
@@ -78,7 +78,7 @@ Profile view, where the user can see his own account information and his top 3 r
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Database 
 
 Use the provided **REST API** build with **Express.js** and **MongoDB.**

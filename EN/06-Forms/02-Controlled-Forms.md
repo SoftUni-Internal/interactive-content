@@ -1,6 +1,6 @@
 # Controlled Forms
 
-[slide]
+[slide hideTitle]
 
 # Controlled Components
 
@@ -20,7 +20,7 @@ In React, however, we handle data inside the component:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Form Component Declaration and Rendering
 
@@ -120,7 +120,7 @@ constructor(props) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Controlled Component
 
@@ -146,7 +146,7 @@ changeHandler(event) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Controlled Forms
 
@@ -160,7 +160,7 @@ The whole data flow of the form is managed by the developer:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Unified Unit Approach
 
