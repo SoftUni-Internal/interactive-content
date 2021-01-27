@@ -10,7 +10,7 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP
 
 [slide]
 # Problem: Sections
-[code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```js
 function solve(input){
