@@ -1,6 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
+
+
+# In this lesson you learnt:
 
 **Cookies and sessions**
 
@@ -64,7 +66,7 @@ const token = jwt.sign(payload, secret, options);
 console.log(token);
 ```
 
-## The topic of the next lesson is:
+## In the next lesson you will learn:
 
 **Validation and Error Handling**
 

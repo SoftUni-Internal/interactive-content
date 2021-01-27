@@ -1,13 +1,9 @@
-[slide]
-
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+[slide hideTitle]
+# Lesson Content
 
-## Lesson content:
+## In this lesson you will learn:
 
 **Cookies and Sessions**
 
