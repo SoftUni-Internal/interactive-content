@@ -51,25 +51,25 @@ The **Database** of the **Theater** application needs to support **two entities:
 
 ## User
 
-- Username: string (required), unique
+- **Username**: string (required), unique
 
-- Password: string (required)
+- **Password**: string (required)
 
-- Liked Plays: a collection of Plays 
+- **Liked Plays**: a collection of Plays 
 
 ## Play
 
-- Title: string (required), unique
+- **Title**: string (required), unique
 
-- Description: string (required), max length of 50 symbols,
+- **Description**: string (required), max length of 50 symbols,
 
-- Image Url: string (required),
+- **Image Url**: string (required),
 
-- Is Public: boolean, default - false,
+- **Is Public**: boolean, default - false,
 
-- Created at: Date or String, required
+- **Created at**: Date or String, required
 
-- Users Liked: a collection of Users
+- **Users Liked**: a collection of Users
 
 Implement the entities with the **correct datatypes.**
 
@@ -96,9 +96,7 @@ Register a user inside the database with **username** and **password.**
 
 Both **passwords** must **match!** 
 
-
 [image assetsSrc="JS-BackEnd-Exam-Preparation-3.png" /]
-
 
 - **Login Page (Logged Out User)**
 
@@ -114,7 +112,7 @@ These are the **templates** and **functionalities**, accessible by **Users** (lo
 
 - **Home Page (Logged in User)**
 
-List **all public** plays sorted in **descending order** by the **created time** with a button **Details** which leads to a **play details page.** 
+List **all public** plays sorted in **descending order** by the **created time** with a button **Details** which leads to a **play details page.**
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-5.png" /]
 
@@ -136,7 +134,7 @@ You have to convert the received value as Boolean **true** or **false** and save
 
 In the Details of a play section, you should load play **name** and **description**. 
 
-- **Not Liked Play (Logged in User) **
+- **Not Liked Play (Logged in User)**
 
 If the user did not like the play, you should display the **Like button.**  
 
@@ -157,7 +155,7 @@ The creator should NOT be able to like his plays!
 
 - **Delete Play (Logged in User)**
 
-Upon deleting a play (clicking over `[Delete]` **button**, you should be **redirected to the home page.** 
+Upon deleting a play (clicking over `[Delete]` **button**, you should be **redirected to the home page.**
 
 - **Edit Play (Logged in User)**
 
@@ -237,6 +235,5 @@ You should make the following validations while **creating** or **editing a play
 - `[Sort by Date]`: Sort all plays by date from newest to oldest
 
 [image assetsSrc="JS-BackEnd-Exam-Preparation-15.png" /]
-
 
 [/slide]
