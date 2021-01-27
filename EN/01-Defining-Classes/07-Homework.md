@@ -214,12 +214,8 @@ Annie - 31
 
 [slide hideTitle]
 # Company Roster
-[code-task title="Company Roster" taskId="Java-OOP-Basics-Defining-Classes-Company-Roster" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+[code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-3" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-```
-
-```
-[/code-editor]
 [task-description]
 ## Description
 Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
