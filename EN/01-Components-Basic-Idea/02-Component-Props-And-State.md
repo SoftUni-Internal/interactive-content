@@ -4,9 +4,13 @@
 
 # Props And State Overview
 
-In React `this.props` and `this.state` are JavaScript objects. It is data that we can render.
+In React `this.props` and `this.state` are JavaScript objects. 
 
-Props are data that is passed from the parent to the child. It is like passing an argument to a function.
+It is data that we can render.
+
+Props are data that is passed from the parent to the child. 
+
+It is like passing an argument to a function.
 
 The state is internal to every component and is basically data that we can manipulate to change what the users see.
 

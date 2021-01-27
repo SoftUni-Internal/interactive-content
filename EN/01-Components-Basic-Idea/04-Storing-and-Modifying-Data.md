@@ -1,4 +1,4 @@
-# State
+# Storing and Modifying Data
 
 [slide hideTitle]
 

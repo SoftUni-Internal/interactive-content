@@ -42,7 +42,7 @@ function Person(props){
 
 To create a class component we need a simple JavaScript class, that extends the `React.Component` class.
 
-This way we can have access to all the methods in the "React.Component" class.
+This way we can have access to all the methods in the `React.Component` class.
 
 If we need we can have a constructor method, as well, but it is not required.
 

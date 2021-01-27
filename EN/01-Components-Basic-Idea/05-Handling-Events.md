@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Handling Events 1
+# Handling Events - 1
 
 Handling events with React elements is very similar to handling events in the DOM.
 
@@ -18,7 +18,7 @@ With JSX we pass a function as an event handler, rather than a string.
 
 [slide hideTitle]
 
-# Handling Events 2
+# Handling Events - 2
 
 In React, we do not need to call the `addEventListener()` method to add listeners to a DOM element.
 
@@ -34,7 +34,7 @@ We simply provide a listener as shown in the example:
 
 [slide hideTitle]
 
-# Handling Events 3
+# Handling Events - 3
 
 There are two ways in which we can pass arguments to event handlers.
 
@@ -70,7 +70,7 @@ We need to bind `this` value from the function to our class as we know each func
 
 [slide hideTitle]
 
-# Handling Events 4
+# Handling Events - 4
 
 In this example, we define a function called `clickHandler`.
 
@@ -105,7 +105,7 @@ When we click the button, we will call the "clickHandler" function, update the s
 
 # SynteticEvent
 
-The event handlers will be passed instances of SyntheticEvent, a cross-browser wrapper around the browser’s native event. 
+The event handlers will be passed instances of SyntheticEvent, a cross-browser wrapper around the browser's native event. 
 
 It has the same interface as the browser’s native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers.
 
@@ -127,7 +127,7 @@ The SyntheticEvent objects are pooled.
 
 This means that the SyntheticEvent object will be reused and all properties will be nullified after the event handler has been called. 
 
-For example, this will not work because we cannot access the event in **async** way.
+For example, this will not work because we cannot access the event in the **async** way.
 
 ```js
 function handleChange(e) {

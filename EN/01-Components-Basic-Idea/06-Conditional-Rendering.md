@@ -41,7 +41,7 @@ function Greeting(props) {
 
 [slide hideTitle]
 
-# Using ternary operator
+# Using the ternary operator
 
 In this example, which is the same as the previous example we use the ternary operator.
 
