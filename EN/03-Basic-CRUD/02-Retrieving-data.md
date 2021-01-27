@@ -1,7 +1,8 @@
-[slide]
+[slide hideTitle]
+
 # Retrieving data
 
-Now let's have a look over one of the most common (if not the most) operations when we are talking about databases.
+Let's have a look over one of the most common (if not the most) operations when we are talking about databases.
 
 
 Retrieving data is the action where we demand records from our tables, through the keyword **SELECT**, which further gives us several possibilities: 
@@ -179,17 +180,19 @@ Housekeeping
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Solution: Select Employee Information
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Concatenation of columns
 
 ### concat()
 As you may already know SQL is not only a tool for storing and retrieving data, but you can also use its built-in functions.
 
-Now we will teach you how to use one of the basic string functions, **Concatenation**.
+Let's learn one of the basic string functions, **Concatenation**.
 
 ```Java
 SELECT
@@ -371,13 +374,15 @@ Housekeeping
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Solution: Select Employees with Filter
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Filtering the selected rows
-Now we know how to take the information that we need and present it the way we want.
+We know how to take the information that we need and present it the way we want.
 
 Let's have a look at how we can filter these results to get only the results that we desire.
 
@@ -422,7 +427,8 @@ AND `course` = "Java Advanced"       //The keyword "AND" is used to combine cond
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Other comparison conditions
 
 Few other comparison conditions make our lives easier as developers and make our queries easier to read.
@@ -439,7 +445,7 @@ The keyword **NOT** is powerful, but you may have already used in your Java proj
 Following the same logic, the keyword **AND** is equal to the **&& operator** in Java.
 
 
-Now let's have a look over the keyword 'OR'.
+Let's have a look over the keyword 'OR'.
 
 ```java
 SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`       //Now we want only the full_name
@@ -449,7 +455,7 @@ WHERE `course_name` = 'JS Basics' AND 'Java Basics'                   //where th
 The keyword equivalent of **OR** in Java would be **'||' operator**.
 
 
-Now let's have a look over a few operators that are native only to SQL.
+Let's have a look over a few operators that are native only to SQL.
 
 
 ### BETWEEN
@@ -563,11 +569,13 @@ Housekeeping
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Solution: Employees by Multiple Filters
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Comparison with NULL
 
 One tricky part of SQL is the **NULL** value, it may sometimes surprise you until you finally get the hang of it.
@@ -613,7 +621,8 @@ SELECT 3 - NULL // = NULL
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Sorting the results
 
 When we finish with selecting the information we need, filtering it, and before visualizing it the way we want we should consider ordering it the right way.
@@ -640,7 +649,8 @@ ORDER BY `age` DESC, `first_name`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Usage of Views
 
 Views are virtual tables that do not store information by themselves.
@@ -725,7 +735,8 @@ Front Desk Supervisor
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Solution: Top Paid Employee
 

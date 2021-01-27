@@ -1,4 +1,5 @@
-[slide]
+[slide hideTitle]
+
 # Writing data in tables
 
 Let's continue with our lesson about **CRUD** operations, now it's time to learn how to **Create** records in our database.
@@ -28,7 +29,8 @@ VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications'),
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 ## Reusing existing data.
 
 As MySQL is vast and full of possibilities, it gives us the chance to re-use already persisted records or part of records in our other tables.

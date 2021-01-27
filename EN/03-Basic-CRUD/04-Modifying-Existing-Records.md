@@ -1,9 +1,5 @@
-[slide]
-# Modyfing Existing Records
+[slide hideTitle]
 
-[/slide]
-
-[slide]
 # Updating data
 
 Persisting our records in the database is the first step, but we also want to keep this data up to date, to always receive the results we expect and need.
@@ -113,15 +109,15 @@ Housekeeping
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Update Employees Salary
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Deleting data
+# Deleting Data
 
 Keeping our data in check and removing the records we don't need anymore is as important as persisting our records. 
 
@@ -285,7 +281,7 @@ Housekeeping
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Delete from Table
 
