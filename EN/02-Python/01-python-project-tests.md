@@ -20,7 +20,7 @@ class TestStructure(unittest.TestCase):
         cr = CardRepository()
         self.assertTrue("add" in dir(cr))
         self.assertTrue("remove" in dir(cr))
-        self.assertTrue("find" in dir(cr))   
+        self.assertTrue("find" in dir(cr))
 
 if __name__ == "__main__":
     unittest.main()
