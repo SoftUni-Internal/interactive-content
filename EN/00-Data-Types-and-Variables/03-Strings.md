@@ -185,11 +185,7 @@ JanpWhite
 [code-task title="Concantenate names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
+
 
 ```
 function concatNames(input){
@@ -201,6 +197,11 @@ console.log(`${firstName}${delimiter}${lastName}`);
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
