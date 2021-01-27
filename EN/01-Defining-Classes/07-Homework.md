@@ -207,8 +207,7 @@ Anntoanette - 39
 [slide hideTitle]
 # Problem: Company Roster
 [code-task title="Company Roster" taskId="76597424-6663-4f2d-b5d1-cb23dff0383e" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
-[code-editor language=java]
-[code-upload allowedMemory="30" /]
+
 ```
 import java.util.*;
 
@@ -253,7 +252,7 @@ The **salary** should be printed to **two decimal places** after the separator.
 | Peyton 130.3333 Sailor SpinachGroup peyton@softuni.org |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
