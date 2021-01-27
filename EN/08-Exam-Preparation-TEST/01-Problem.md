@@ -1,17 +1,8 @@
 [slide]
 # Problem: Easter Races
-[code-task title="Problem: Easter Races" taskId="02afca4d-cbfe-43f7-b654-93aa86bdb73e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Easter Races" timeLimit=5000 taskId="Java-OOP-Advanced-Final-Exam-Easter-Races-1" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 - Upload **only the easterRaces** package in every task **except Unit Tests**
@@ -180,7 +171,6 @@ Create **CarRepository**, **DriverRepository** and **RaceRepository** repositori
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
