@@ -1,8 +1,60 @@
 [slide hideTitle]
 # sql-server-run-queries-and-check-database
 [code-task title="Problem: Find All Information About Departments" taskId="sql-server-run-queries-and-check-database" executionType="tests-execution" executionStrategy="sql-server-run-queries-and-check-database" requiresInput]
-[code-editor language=java]
+[code-editor language=sql]
 ```
+CREATE TABLE Planets
+(
+ Id INT PRIMARY KEY IDENTITY CHECK(Id > 0),
+ [Name] VARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Spaceports
+(
+ Id INT PRIMARY KEY IDENTITY CHECK(Id > 0),
+ [Name] VARCHAR(50) NOT NULL,
+ PlanetId INT FOREIGN KEY REFERENCES Planets(Id) NOT NULL
+)
+
+CREATE TABLE Spaceships
+(
+ Id INT PRIMARY KEY IDENTITY,
+ [Name] VARCHAR(50) NOT NULL,
+ Manufacturer VARCHAR(30) NOT NULL,
+LightSpeedRate INT DEFAULT 0
+)
+
+CREATE TABLE Colonists
+(
+ Id INT PRIMARY KEY IDENTITY CHECK(Id > 0),
+ FirstName VARCHAR(20) NOT NULL,
+LastName VARCHAR(20) NOT NULL,
+Ucn VARCHAR(10) UNIQUE NOT NULL,
+BirthDate DATE NOT NULL
+)
+
+
+CREATE TABLE Journeys
+(
+ Id INT PRIMARY KEY IDENTITY CHECK(Id > 0),
+JourneyStart DateTIME NOT NULL,
+JourneyEnd DateTIME NOT NULL,
+Purpose VARCHAR(11) 
+	CHECK(Purpose LIKE 'Medical' OR Purpose LIKE 'Technical' OR Purpose LIKE 'Educational' OR Purpose LIKE 'Military') NOT NULL,
+DestinationSpaceportId INT FOREIGN KEY REFERENCES Spaceports(Id) NOT NULL,
+SpaceshipId INT FOREIGN KEY REFERENCES Spaceships(Id) NOT NULL
+)
+
+
+CREATE TABLE TravelCards
+(
+ Id INT PRIMARY KEY IDENTITY CHECK(Id > 0),
+CardNumber CHAR(10) UNIQUE NOT NULL,
+JobDuringJourney VARCHAR(8) 
+	CHECK(JobDuringJourney LIKE 'Pilot' OR JobDuringJourney LIKE 'Cleaner' OR JobDuringJourney LIKE 'Trooper' OR JobDuringJourney LIKE 'Cook' OR JobDuringJourney LIKE 'Engineer') NOT NULL,
+ColonistId INT FOREIGN KEY REFERENCES Colonists(Id) NOT NULL,
+JourneyId INT FOREIGN KEY REFERENCES Journeys(Id) NOT NULL
+)
 ```
 [/code-editor]
 [task-description]
@@ -62,6 +114,8 @@ JourneyId
 [/output]
 [/test]
 
+[test]
+[input]
 BEGIN TRY
 -- Insert valid values
 
