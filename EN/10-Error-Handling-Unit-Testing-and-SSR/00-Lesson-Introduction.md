@@ -1,10 +1,9 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
+# Lesson Content
 
-# Table of Contents
-
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Error Boundaries**
 - Components used for handling errors during rendering

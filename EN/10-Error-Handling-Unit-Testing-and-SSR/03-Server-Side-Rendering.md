@@ -1,8 +1,8 @@
 # Server Side Rendering with React
 
-[slide]
+[slide hideTitle]
 
-# Client Side versus Server Side
+# Client Side versus Server-Side
 
 The main difference between Server and Client Side Rendering lies in where the application is being rendered.
 
@@ -24,27 +24,27 @@ In short, server-side rendering works as follows:
 
 - Lastly, the browser downloads the scripts, and by running them, enables user interaction on the site
 
-## Client Side Rendering
+## Client-Side Rendering
 
-As opposed to its counterpart, **client side rendering** does most of the work on the client's machine.
+As opposed to its counterpart, **client-side rendering** does most of the work on the client's machine.
 
-True **Single Page Applications** use client side rendering and, as a result, it is the **default rendering method in React**, as well as Angular and Vue.
+True **Single Page Applications** use client-side rendering and, as a result, it is the **default rendering method in React**, as well as Angular and Vue.
 
-Client side rendering works in the following order:
+Client-side rendering works in the following order:
 
-- The browser makes a request to the website
+- The browser requests the website
 
 - Static files like HTML and CSS are served to the client with the help of a Content Delivery Network \(CDN\)
 
 - The user agent downloads the HTML and JavaScript, while the user sees a loading animation
 
-- Once the JavaScript is fetched, using AJAX it makes request to an API, continously fetching dynamic content, which is then rendered
+- Once the JavaScript is fetched, using AJAX it requests an API, continuously fetching dynamic content, which is then rendered
 
 - Once the needed content is downloaded, the browser renders our components by using DOM Processing
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Server Side Rendering
 
@@ -59,7 +59,7 @@ Some of the benefits of **server-side rendering** include:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # When to use Server Side Rendering?
 

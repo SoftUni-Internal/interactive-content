@@ -1,6 +1,6 @@
 # Error Boundaries
 
-[slide]
+[slide hideTitle]
 
 # Whar are Error Boundaries?
 
@@ -31,7 +31,7 @@ It is important to remember that error boundaries **will not** catch errors for:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Creating an Error Boundary
 
@@ -77,7 +77,7 @@ export default ErrorBoundary;
 
 We create our `ErrorBoundary` component by declaring our constructor first.
 
-Then, inside the constructor, we create a state object with the boolean `hasError`, initialised to `false`.
+Then, inside the constructor, we create a state object with the boolean `hasError`, initialized to `false`.
 
 For a class component to become an error boundary it **must** define **at least one** of the following methods:
 
@@ -101,7 +101,7 @@ To use an error boundary, we simply wrap our existing components:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Error Boundaries
 

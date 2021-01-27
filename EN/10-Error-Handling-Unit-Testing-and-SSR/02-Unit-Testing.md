@@ -1,12 +1,12 @@
 # Unit Testing with Jest and Enzyme
 
-[slide]
+[slide hideTitle]
 
 # What is Jest?
 
 **Jest** is a JavaScript testing framework, created by Facebook.
 
-Jest acts as a **test runner**, **assertion library** and **mocking library**.
+Jest acts as a **test runner**, **assertion library** and **mocking library**.
 
 While it is most often used in combination with React, it is a **general-purpose testing framework**, meaning it is not limited in regards to what you can use it with.
 
@@ -22,7 +22,7 @@ Install Jest by typing `npm install --save-dev Jest` in a command-line tool, ope
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is Enzyme?
 
@@ -34,7 +34,7 @@ Made by Airbnb, Enzyme enables **utility methods** not available in Jest, such a
 - Finding elements
 - Interacting with elements
 
-Enzyme can only be used with React.
+The enzyme can only be used with React.
 
 You can [learn more about Enzyme here](https://airbnb.io/enzyme/).
 
@@ -46,8 +46,8 @@ You can [learn more about Enzyme here](https://airbnb.io/enzyme/).
 
 This table summarises the main differences between Jest and Enzyme.
 
-| **Feature**           | **Jest**                                       | **Enzyme**                                        |
-| --- | --- | --- |
+| **Feature**       | **Jest**     | **Enzyme**            |
+| :---: | :---: | :---: |
 | **Definition**    | Test runner, assertion and mocking library | Testing utility with additional functionality |
 | **Usage**         | Defining test case and assertion           | Used for selective rendering                  |
 | **Compatibility** | Any app                                    | React only                                    |
@@ -57,7 +57,7 @@ Using Jest and Enzyme together makes testing React components much easier, and m
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Mounting
 
@@ -73,7 +73,7 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Shallow
 
@@ -87,7 +87,7 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Render
 
@@ -99,7 +99,7 @@ Here is how the `render` method works:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Setting up Enzyme
 
@@ -132,9 +132,8 @@ The `__tests__` name is the recommended folder naming convention adopted in Jest
 
 [/slide]
 
-[/slide]
 
-[slide]
+[slide hideTitle]
 
 # Testing Stateless Components
 
