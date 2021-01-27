@@ -1,6 +1,0 @@
-[slide]
-
-# SlideTest
-
-
-[/slide]
