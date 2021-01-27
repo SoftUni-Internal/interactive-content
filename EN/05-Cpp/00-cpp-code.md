@@ -1,5 +1,6 @@
 [slide]
 # cpp-code
+
 [code-task title="Yard Greening" taskId="cpp-code-statements-Yard-Greening" executionType="tests-execution" executionStrategy="cpp-code" requiresInput]
 [code-editor language=cpp]
 ```
