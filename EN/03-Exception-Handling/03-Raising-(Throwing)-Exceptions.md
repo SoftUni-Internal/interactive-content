@@ -1,7 +1,8 @@
-
-[slide]
-
 # Raising (Throwing) Exceptions
+
+[slide hideTitle]
+
+# How to Raise an Exceptions
 
 Exceptions are thrown (raised) by the **throw** keyword.
 
@@ -66,7 +67,8 @@ public static void main(String[] args) {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
+
 
 # Problem: Valid Person
 
@@ -78,7 +80,8 @@ Define a simple class **Person**, which has the following fields:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Solution: Valid Person
 

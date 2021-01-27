@@ -1,6 +1,6 @@
 # Exception Handling
 
-[slide]
+[slide hideTitle]
 
 # "try-catch" Construction
 
@@ -72,7 +72,8 @@ Hint: Trace out the exceptions hierarchy. Be cautious witch exception is main an
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # "try-finally" Statement
 
@@ -113,7 +114,8 @@ static void testTryFinally() {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Problem: Square Root
 
@@ -128,7 +130,8 @@ Use **try-catch-finally.**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Solution: Square Root
 
@@ -166,7 +169,8 @@ If the user enters an invalid number, make the user enter all of them again.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Problem: Fixing
 
@@ -197,7 +201,8 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Solution: Fixing
 

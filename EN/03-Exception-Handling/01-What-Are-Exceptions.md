@@ -1,6 +1,9 @@
-[slide]
-
 # What are Exceptions in Java?
+
+[slide hideTitle]
+
+# Exceptions: Defenition
+
 Exceptions in Java are **objects**. 
 
 Exception objects have detailed information about the error.
@@ -49,7 +52,8 @@ Below **Throwable** are:
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 
 # Exception Hierarchy 
 
