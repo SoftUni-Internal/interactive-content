@@ -16,6 +16,8 @@ spring.datasource.username = root
 spring.datasource.password = 1234
 ```
 
+[/slide]
+
 [slide hideTitle]
 
 # Java-Based Configuration
