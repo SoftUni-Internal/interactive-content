@@ -214,18 +214,8 @@ Annie - 31
 
 [slide hideTitle]
 # Problem: Company Roster
-[code-task title="Company Roster" taskId="76597424-6663-4f2d-b5d1-cb23dff0383e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Company Roster" taskId="Java-OOP-Basics-Defining-Classes-Company-Roster" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
 [task-description]
 ## Description
 Define a class **Employee** that holds the following information: **name, salary, position, department, email** and **age**.
@@ -260,7 +250,7 @@ The **salary** should be printed to **two decimal places** after the separator.
 | Peyton 130.3333 Sailor SpinachGroup peyton@softuni.org |  |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
