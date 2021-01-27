@@ -1,15 +1,15 @@
 
 # Relational and NoSQL Database
 
-[slide]
+[slide hideTitle]
 
 # Relational Database
 
-A relational database is collection of information. 
+A relational database is a collection of information.
 
 The tables used in relational databases store information about the objects.
 
-Tables contains rows that holds information, which has unique identifier - known as a **key**.
+Tables contain rows that hold information, which has a unique identifier - known as a **key**.
 
 Each column contains the attributes of the data.
 
@@ -30,7 +30,7 @@ Some of the most popular RDBMS are:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Relational Database - Example
 
@@ -39,22 +39,24 @@ Some of the most popular RDBMS are:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Non-relational Database (NoSQL)
 
-A Non-relational databases are different from traditional relational databases. They store data differently than relational databases do.
+Non-relational databases are different from traditional relational databases. 
 
-The Non-Relational database is more flexible than the traditional, since it stores data in a non-tabular form.
+They store data differently than relational databases do.
 
-They might be based on structures like documents. Most of the times, the document files can be highly detailed while containing a range of different types of information.
+The Non-Relational database is more flexible than the traditional one since it stores data in a non-tabular form.
 
-**NoSQL** databases are ofter used when large and complex data needed to be organized.
+They might be based on structures like documents. Most of the time, the document files can be highly detailed while containing a range of different types of information.
+
+**NoSQL** databases are often used when large and complex data needed to be organized.
 
 Here is a simple example of a table in a **relational database:**
 
-| id | name | price | quantity | department |
-| --- | --- | --- | --- | --- |
+| **id** | **name** | **price** | **quantity** | **department** |
+| :---: | :---: | :---: | :---: | :---: |
 | 1 | Milk | 1.49 | 50 | Dairy |
 | 2 | Muesli | 2.30 | 120 | Cereal |
 | 3 | Apples | 0.60 | 80 | Fruits |
@@ -86,9 +88,9 @@ The **same** data in a **non-relational database:**
 
 ```
 
-The main difference is that in the **non-relational database** we can add other entry without need to have the same **key**.
+The main difference is that in the **non-relational database** we can add other entries without the need to have the same **key**.
 
-So, new product with different properties can be added:
+So, a new product with different properties can be added:
 
 ``` 
 {
@@ -98,17 +100,17 @@ So, new product with different properties can be added:
 },
 ```
 
-In this example, we add new entry (item) in our table without previous fields.
+In this example, we add a new entry (item) in our table without previous fields.
 
-As we see, the new product does not have a **price** , **department** or **quantity** field.
+As we see, the new product does not have a **price**, **department**, or **quantity** field.
 
 Instead, it has a new field called **rating**.
 
-This is the main difference. In Non-Relational database we does not relie on a schema that defines the fields beforehands.
+This is the main difference. 
+
+In a Non-Relational database, we do not rely on a schema that defines the fields beforehand.
 
 This adds a **huge** flexibility.
-
-
 
 [/slide]
 

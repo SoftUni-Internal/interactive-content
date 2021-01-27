@@ -1,8 +1,9 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
+# Lesson Content
 
-# In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Relational and Non-Relational Databases**
 - Difference between Relational and Non-Relational Databases
@@ -22,8 +23,5 @@
 
 **5. Mongoose Querying**
 - Querying and Conditions
-
-
-
 
 [/slide]

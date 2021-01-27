@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson we learned:
+
+# In this lesson you learnt:
 
 - NoSQL databases provide superior performance
 - Mongoose gives us a schema-based solution
