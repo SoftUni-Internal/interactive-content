@@ -1,6 +1,6 @@
 # JSX Syntax
 
-[slide]
+[slide hideTitle]
 
 # JSX Overview
 
@@ -8,17 +8,13 @@
 
 [image assetsSrc="intro-to-react-and-jsx-9.png" /]
 
-
 With the help of JSX, you can change both how the **data** is prepared for rendering, as well as control the **flow** and **state** of the component, from **a single file**.
 
 It is also what enables the great **error reporting**, which React is known for.
 
 [/slide]
 
-
-
-
-[slide]
+[slide hideTitle]
 
 # JSX Syntax
 
@@ -52,36 +48,26 @@ It takes in two parameters \- the element we want to render, and the `root` HTML
 
 [/slide]
 
-
-
-
-[slide]
+[slide hideTitle]
 
 # JSX Rules and Principles
 
 There are some rules and good practices you have to follow:
 
-
 - **Standard HTML elements** are **always** written in **lowercase**
   - Elements like `div`, `p`, `h1`, `form` and so on.
   
-
 - For our **custom components**, we should always use **Pascal case**
   - `LoginForm`, `Greeting`, `CustomHeader`
 
-
 - The **names** of components **cannot be expressions**, but we can use **variables**
 
-
 - There must always be a **root** element
-
 
 [/slide]
 
 
-
-
-[slide]
+[slide hideTitle]
 
 # Compilation
 

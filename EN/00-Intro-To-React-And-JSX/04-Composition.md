@@ -1,26 +1,25 @@
 # Composition
 
-[slide]
-
+[slide hideTitle]
 # Composition Overview
 
 Just like DOM Elements, React components can be **nested**.
 
 ```js
-function Greet(props) {
-  return <h1>Hello, my name is {props.name}!</h1>; 
+function Greet(props) {
+  return <h1>Hello, my name is {props.name}!</h1>; 
 }
-function Hometown(props) {
-  return <h2>I am from {props.town}.</h2>;
+function Hometown(props) {
+  return <h2>I am from {props.town}.</h2>;
 }
-function Combine(props) { 
-  return (
-    <div>
-      <Greet />
-      <Hometown />
-    </div>
-  );
-} 
+function Combine(props) { 
+  return (
+    <div>
+      <Greet />
+      <Hometown />
+    </div>
+  );
+} 
 
 ```
 
@@ -32,21 +31,19 @@ This can be used to achieve **encapsulation**, as well as **loose coupling**.
 
 [/slide]
 
-
-
-[slide]
+[slide hideTitle]
 
 # Component Syntax
 
 Here is what the syntax of nested components looks like:
 
 ```js
-<Dropdown> Choose Your Color 
-  <Menu> 
+<Dropdown> Choose Your Color 
+  <Menu> 
     <MenuItem>Red</MenuItem>
-    <MenuItem>Green</MenuItem> 
-    <MenuItem>Blue</MenuItem> 
-  </Menu> 
+    <MenuItem>Green</MenuItem> 
+    <MenuItem>Blue</MenuItem> 
+  </Menu> 
 </Dropdown>
 
 ```
@@ -57,9 +54,9 @@ Nested inside the `Menu` components are three `MenuItem`
 
 As you can see, each component has its own **opening** and **closing** tag. 
 
-You can also use self closing tags, as shown here:
+You can also use self-closing tags, as shown here:
 
-`<UserHead name='homeHeader' />`
+`<UserHead name='homeHeader' />`
 
 Information in components is passed via the `props` object we discussed earlier.
 
@@ -69,10 +66,7 @@ Props can be just about anything the component needs to function, including **fu
 
 [/slide]
 
-
-
-
-[slide]
+[slide hideTitle]
 
 # Advantages
 

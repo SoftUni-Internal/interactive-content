@@ -9,13 +9,13 @@
   - Components are its main building blocks
   
 ```js
-const HelloMessage = (props) => (
-  <div>Hello {props.name}</div>
+const HelloMessage = (props) => (
+  <div>Hello {props.name}</div>
 );
 
 ReactDOM.render(
-  <HelloMessage name="Maria" />,
-  document.getElementById('root')
+  <HelloMessage name="Maria" />,
+  document.getElementById('root')
 );
 
 ```
@@ -30,32 +30,32 @@ ReactDOM.render(
    
 ```js
 // JSX Syntax
-<div className="red">Children Text</div>
+<div className="red">Children Text</div>
 
 // Compiles to plain JavaScript
 React.createElement("div",
-  { className: "red" },
-  "Children Text"
+  { className: "red" },
+  "Children Text"
 );
 ```
 
-- Component compositon defines views
+- Component composition defines views
   - Encapsulation keeps data accessible only to the component it belongs to
   
 ```js
-function Welcome() {
-  return <h1>Hello, from React</h1>; 
+function Welcome() {
+  return <h1>Hello, from React</h1>; 
 }
-function Cya() {
-  return <h1>C ya, from React</h1>;
+function Cya() {
+  return <h1>C ya, from React</h1>;
 }
-function ComponentBlender() { 
-  return (
-    <div>
-      <Welcome />
-      <Cya />
-    </div>
-  );
+function ComponentBlender() { 
+  return (
+    <div>
+      <Welcome />
+      <Cya />
+    </div>
+  );
 } 
 ```
 
