@@ -1,6 +1,6 @@
 # Authentication Concepts
 
-[slide]
+[slide hideTitle]
 
 # Application Security
 
@@ -26,7 +26,7 @@ This is a simplified diagram of how authentication happens:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Bcrypt
 
@@ -89,7 +89,7 @@ Note that `compare` also runs **asynchronously** to **avoid blocking the code ex
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Authentication vs. Authorization
 
@@ -111,7 +111,7 @@ It happens by providing certain credentials like:
 
 These are some of the cases where **authorization** is needed:
 
-- Determining whether a user has the privileges of a **guest user**, a **registered user** or an **admin**.
+- Determining whether a user has the privileges of a **guest user**, a **registered user**, or an **admin**.
 
 - **Hiding** or **showing** certain resources to some users.
 
