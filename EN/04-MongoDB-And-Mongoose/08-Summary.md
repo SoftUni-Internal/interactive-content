@@ -22,13 +22,10 @@ Student.find({}).where('firstName').equals('george').where('age').gt(18).lt(65).
 
 ## In the next lesson you will learn:
 
-- What are Cookies
-
-- HTTP Communication
-
+- Cookies and Sessions
 - Authentication Concepts
-
 - JSON Web Token
+
 
 
 [/slide]
