@@ -58,7 +58,7 @@
 ## In the next lesson, you will learn:
 
 - Component Lifecycle
-- Higher Order Components
+- Higher-Order Components
 - CSS Modules
 - Fetching Data
 - Context API
