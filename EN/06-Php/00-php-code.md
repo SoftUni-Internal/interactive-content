@@ -2,6 +2,7 @@
 # php-code
 
 [code-task title="Yard Greening" taskId="php-code-statements-Yard-Greening" executionType="tests-execution" executionStrategy="php-code" requiresInput]
+[code-io /]
 [code-editor language=php]
 ```
 <?php
@@ -44,6 +45,5 @@ February
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]

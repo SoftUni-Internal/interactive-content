@@ -1,1 +1,1 @@
-# Other Strategies
+# Plaintext Strategies
