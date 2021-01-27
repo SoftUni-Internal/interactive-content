@@ -1,6 +1,6 @@
 [slide]
 # Problem: Easter Races
-[code-task title="Easter Races" timeLimit=12000 taskId="Java-OOP-Advanced-Final-Exam-Easter-Races-1" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Easter Races" timeLimit=5000 taskId="Java-OOP-Advanced-Final-Exam-Easter-Races-1" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
