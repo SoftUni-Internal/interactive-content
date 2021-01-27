@@ -11,9 +11,9 @@ If you missed some of these parts, **go back and complete them before you contin
 
 The next step is to **protect the routes**
 
-   - If a guest user tries to access some of the **private parts**, he should be **redirected** to the publications or **404 page.**
+   - If a guest user tries to access some of the **private parts**, he should be **redirected** to the publications or **404 pages.**
 
-   - If some of them **already logged** **in user tries to access the public parts**, he should be **redirected** to the publications or **404 page.**
+   - If some of them **already logged** **in user tries to access the public parts**, he should be **redirected** to the publications or **404 pages.**
 
 - Refactor **all class components** to **functional components** that work with **hooks.**
 
@@ -49,7 +49,6 @@ Private parts should be accessed only by **logged in users** (**authorized with 
 - **Publications**
 Publications view s**hows all created posts** from the database
 
-
 [image assetsSrc="ReactJS-Workshop-Hooks-4.png" /]
 
 - **Profile**
@@ -69,7 +68,6 @@ In the Post view, the form with the text area should be able to make a **post re
 If that happens, the user should be redirected to the **publication view.**
 
 Also, this view shows the **top 3 recent posts** from the database.
-
 
 [image assetsSrc="ReactJS-Workshop-Hooks-6.png" /]
 [/slide]
