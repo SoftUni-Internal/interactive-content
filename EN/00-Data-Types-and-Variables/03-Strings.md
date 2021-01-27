@@ -216,7 +216,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 John
 Smith
