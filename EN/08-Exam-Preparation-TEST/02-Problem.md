@@ -1,17 +1,9 @@
 [slide]
 # Problem: Easter Races Business Logic
-[code-task title="Problem: Easter Races Business Logic" taskId="3bb7e31a-2b9c-4def-9ebe-61db9103e1f2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Business Logic" timeLimit=5000 taskId="Java-OOP-Advanced-Final-Exam-Easter-Races-2" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+
 [task-description]
 # Task 2: Business Logic (150 points)
 
@@ -314,7 +306,6 @@ Print the output from each command when issued. If an exception is thrown during
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test]
 [input]
