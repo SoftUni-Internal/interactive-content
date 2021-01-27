@@ -1,8 +1,8 @@
-# Usages of "this"
+# Using "This"
 
 [slide hideTitle]
 
-# "this" in a Method
+# "Тhis" in a Method
 
 When inside a method, `this` is used to access information, stored in the object, that "owns" the object:
 
@@ -48,7 +48,7 @@ If there is no variable with the same name outside the scope of the project, the
 
 [slide hideTitle]
 
-# "this" Refers to the Parent Object
+# "Тhis" Refers to the Parent Object
 
 Consider the example below:
 
