@@ -4,7 +4,7 @@
 
 # Indices
 
-Before you start learning about anything on indexing, it is imperative that you understand how data is organized physically inside of files.
+Before we start learning about anything on indexing, you must understand how data is organized physically inside of files.
 
 The organizations can be divided into two types:
 
@@ -56,7 +56,7 @@ Define a primary key for each table that you create!
 
 A non-clustered index doesn’t sort the physical data inside the table.
 
-In fact, a non-clustered index is stored at one place and table data is stored in another place.
+A non-clustered index is stored at one place and table data is stored in another place.
 
 This is similar to a textbook where the book content is located in one place and the index is located in another.
 

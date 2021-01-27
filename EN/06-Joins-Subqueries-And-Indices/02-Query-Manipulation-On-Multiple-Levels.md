@@ -4,11 +4,11 @@
 
 # Subqueries
 
-A subquery is a query nested within another query such as **SELECT**, **INSERT**, **UPDATE** or **DELETE**.
+A subquery is a query nested within another query such as **SELECT**, **INSERT**, **UPDATE**, or **DELETE**.
 
 A subquery can also be nested inside another subquery.
 
-The subquery is called an inner query while the query that contains the subquery is called an outer query.
+The subquery is called an inner query, while the query that contains the subquery is called an outer query.
 
 A subquery can be used anywhere that expression is used and must be closed in parentheses.
 

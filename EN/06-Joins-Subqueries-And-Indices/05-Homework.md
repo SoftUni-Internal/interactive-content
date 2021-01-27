@@ -127,7 +127,9 @@ Write a query that selects:
 - **town**
 - **address_text**
 
-Sort the result by **first_name** in ascending order then by **last_name**. Select first 5 employees.
+Sort the result by **first_name** in ascending order then by **last_name**. 
+
+Select the first **five** employees.
 
 ## Examples
 
@@ -1686,10 +1688,3 @@ Argentina
 [/code-task]
 [/slide]
 
-[slide]
-
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

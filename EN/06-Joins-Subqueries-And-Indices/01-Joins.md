@@ -12,13 +12,13 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 # Gathering data from multiple tables
 
-As you may know a relational database consists of multiple related tables.
+As you may know, a relational database consists of multiple related tables.
 
-And sometimes you need to combine data from several tables into a new table.
+Sometimes you need to combine data from several tables into a new table.
 
 A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 
-The related column is a column which exists as a primery key in the first table and as a secondary key in the second table.
+The related column is a column, which exists as a primary key in the first table and as a secondary key in the second table.
 
 [/slide]
 
@@ -26,7 +26,7 @@ The related column is a column which exists as a primery key in the first table 
 
 # Cartesian Product
 
-This example will produce Cartesian product:
+The following example will produce Cartesian product:
 
 ```Java
 SELECT last_name, name, AS department_name
@@ -113,7 +113,7 @@ The inner JOIN is used to return rows from both tables that satisfy a given cond
 
 In this case the condition is **students.course_id = courses.id**.
 
-If you want to get list of students and their courses, you can simply use an INNER JOIN for that, which returns rows from both tables that satisfy the condition above.
+If you want to get a list of students and their courses, you can use an INNER JOIN for that, which returns rows from both tables that satisfy the condition above.
 
 The resulting table would be:
 
@@ -155,7 +155,7 @@ And this is the resulting table:
 | David             | MySQL            |
 | Emma              | NULL             |
 
-Matches every entry in **left** table regardless of match in the **right**.
+Matches, every entry in the **left** table, regardless of the match in the **right** one.
 
 There was no match found for Emma, so we have **NULL** in the courses_name column.
 
@@ -191,9 +191,9 @@ And this is the resulting table:
 | NULL              | PHP              |
 | David             | MySQL            |
 
-Matches every entry in **right** table regardless of match in the **left**.
+Matches every entry in the **right** table regardless of the match in the **left** one.
 
-So as a result we have **NULL** for **JavaScript** and **PHP**.
+As a result, we have **NULL** for **JavaScript** and **PHP**.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(3).png" /]
 
@@ -248,18 +248,18 @@ And this is the resulting table:
 
 # Cross join
 
-In MySQL, the CROSS JOIN produced a result set which is the product of rows of two associated tables when no **WHERE** clause is used with CROSS JOIN.
+In MySQL, the CROSS JOIN produced a result set which is the product of rows of two associated tables when no **WHERE** clause is used with a CROSS JOIN.
 
 - Produces a set of associated rows of two tables.
   - Multiplication of each row in the first table with each in second.
-  - The result is a **Cartesian** product, when there's **no condition** in the **WHERE** clause.
+  - The result is a **Cartesian** product when there's **no condition** in the **WHERE** clause.
 
 ```Java
 SELECT * FROM courses AS c
 CROSS JOIN students AS s;  // No Join Condition
 ```
 
-Cross JOIN is a simplest form of JOIN which matches each row from one database table to all rows of another.
+Cross JOIN is the simplest form of JOIN, which matches each row from one database table to all rows of another.
 
 In MySQL, the CROSS JOIN behaves like JOIN and INNER JOIN without using any condition.
 
@@ -273,7 +273,7 @@ Have a look at the following example below:
 
 # Join overview
 
-To be able to implement joins we need a relation between tables.
+To be able to implement joins, we need a relation between tables.
 
 The relationships between tables are done by primary keys and secondary keys.
 
@@ -289,7 +289,7 @@ In this case **department_id** is a secondary key in **employees** table, it is 
 
 The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns.
 
-If there are records in the "employees" table that do not have matches in "departments" table, these will not be shown!
+If there are records in the "employees" table that do not have matches in the "departments" table, these will not be shown!
 
 [image assetsSrc="Joins-Subqueries-And-Indices(7).png" /]
 
@@ -299,9 +299,9 @@ If there are records in the "employees" table that do not have matches in "depar
 
 # Join overview: Left join
 
-The LEFT JOIN keyword returns all records from the left table, and the matched records from the right table.
+The LEFT JOIN keyword returns all records from the left table and the matched records from the right table.
 
-The result is **NULL** in the right table, if there is no match.
+The result is **NULL** in the right table if there is no match.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(8).png" /]
 
@@ -311,9 +311,9 @@ The result is **NULL** in the right table, if there is no match.
 
 # Join overview: Right join
 
-The RIGHT JOIN keyword returns all records from the right table, and the matched records from the left table.
+The RIGHT JOIN keyword returns all records from the right table and the matched records from the left table.
 
-The result is **NULL** in the left table, if there is no match.
+The result is **NULL** in the left table if there is no match.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(9).png" /]
 
@@ -519,7 +519,7 @@ public class Main {
 
 ## Description
 
-Write a query to get information about the **addresses** in the database, which are in **San Francisco**, **Sofia** or **Carnation**.
+Write a query to get information about the **addresses** in the database that are in **San Francisco**, **Sofia**, or **Carnation**.
 
 Retrieve **town_id**, **town_name**, **address_text**.
 
@@ -619,7 +619,7 @@ public class Main {
 
 ## Description
 
-Write a query to get information about the **addresses** in the database, which are in **San Francisco**, **Sofia** or **Carnation**.
+Write a query to get information about the **addresses** in the database that are in **San Francisco**, **Sofia**, or **Carnation**.
 
 Retrieve **town_id**, **town_name**, **address_text**.
 
