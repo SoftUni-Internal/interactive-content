@@ -5,18 +5,11 @@
 [code-task title="Problem: Find All Information About Departments" taskId="sql-server-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="sql-server-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
-INSERT INTO Planets ([Name]) VALUES
-('Mars'),
-('Earth'),
-('Jupiter'),
-('Saturn')
-
-
-INSERT INTO Spaceships ([Name], Manufacturer, LightSpeedRate) VALUES
-('Golf',	'VW',	3),
-('WakaWaka',	'Wakanda',	4),
-('Falcon9',	'SpaceX',	1),
-('Bed',	'Vidolov',	6)
+SELECT DISTINCT p.[Name] as PlanetName, COUNT(j.DestinationSpaceportId) as JourneysCount FROM Journeys as j
+JOIN Spaceports as s ON j.DestinationSpaceportId = s.Id
+JOIN Planets as p ON s.PlanetId = p.Id
+GROUP BY p.[Name]
+ORDER BY JourneysCount DESC, p.[Name] ASC
 ```
 [/code-editor]
 [task-description]
