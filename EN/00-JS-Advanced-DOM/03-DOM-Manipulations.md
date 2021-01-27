@@ -336,7 +336,7 @@ yes
 
 # Solution: Articles List
 
-[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List-solution" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 
 ```
