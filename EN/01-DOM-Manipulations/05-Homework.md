@@ -520,8 +520,9 @@ yes
 
 [slide]
 # Problem: Locked Profile
-[code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profile" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
