@@ -57,7 +57,7 @@ You can also let Heroku **generate a name** by **not passing it in** as a parame
 
 `heroku create`
 
-In order to **confirm** that a remote named `heroku` has been **set** for your app, use the `git remote -v` command.
+To **confirm** that a remote named `heroku` has been **set** for your app, use the `git remote -v` command.
 
 Next, **deploy** your application using `git push heroku master`
 
