@@ -1,0 +1,2 @@
+# Js Adapter Bug
+
