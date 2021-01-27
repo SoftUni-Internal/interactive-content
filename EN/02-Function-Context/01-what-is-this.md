@@ -33,7 +33,7 @@ The object referenced by `this` **changes** when the execution context is change
 
 [slide hideTitle]
 
-# "this" Referring to the Global Object
+# "This" Referring to the Global Object
 
 If `this` is used on its own, it always returns the global object - `Object [global]`
 
@@ -50,7 +50,7 @@ When run, the above example returns **true**, meaning that `this` is indeed equa
 
 [slide hideTitle]
 
-# "this" in the Browser
+# "This" in the Browser
 
 The **global object** in the browser is the **window**. 
 
