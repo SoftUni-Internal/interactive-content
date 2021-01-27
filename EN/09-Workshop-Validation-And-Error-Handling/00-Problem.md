@@ -23,23 +23,23 @@ You can use [express-validator](https://www.npmjs.com/package/express-validator)
 
 Before some user register or login, implement the following validations:
 
--  Username
+- Username
 
-   -  Should be **unique** \(add `unique: true` property to each **User Model** username\).
+   - Should be **unique** \(add `unique: true` property to each **User Model** username\).
 
-   -  Should consist only with **English letters** and **digits**.
+   - Should consist only with **English letters** and **digits**.
 
-   -  Should be at least **5 characters** long.
+   - Should be at least **5 characters** long.
 
--  Password
+- Password
 
-   -  Should consist only with **English letters** and **digits**.
+   - Should consist only with **English letters** and **digits**.
 
-   -  Should be at least **8 characters** long.
+   - Should be at least **8 characters** long.
 
--  Re\-Password
+- Re\-Password
 
-   -  Should be the **same** as the given password.
+   - Should be the **same** as the given password.
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-1.png" /]
 
@@ -53,17 +53,17 @@ Before some user register or login, implement the following validations:
 
 The **cube** and **accessory** forms also should have some validation:
 
--  **Name**:
+- **Name**:
 
-   -  At least **5 characters** long, who could be **English letters**, **digits** and **whitespaces**.
+   - At least **5 characters** long, who could be **English letters**, **digits** and **whitespaces**.
 
--  **Description**:
+- **Description**:
 
-   -  At least 20 characters, who could be **English letters**, **digits** and **whitespaces**.
+   - At least 20 characters, who could be **English letters**, **digits** and **whitespaces**.
 
--  **ImageUrl**:
+- **ImageUrl**:
 
-   -  Referring to actual picture \(starts with `http://...` or `https://...`\).
+   - Referring to actual picture \(starts with `http://...` or `https://...`\).
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-3.png" /]
 
