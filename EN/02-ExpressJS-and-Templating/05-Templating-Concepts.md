@@ -1,6 +1,6 @@
 # Templating Concepts
 
-[slide]
+[slide hideTitle]
 
 # What is Templating?
 
@@ -12,7 +12,7 @@ This clear **distinction** between **logic and data** makes our code much **easi
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Templating Concepts
 
@@ -36,7 +36,7 @@ These are the main **templating concepts**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Server View Engines
 

@@ -1,6 +1,6 @@
 # Static Files
 
-[slide]
+[slide hideTitle]
 # Static Files
 
 In order to serve **static files** like images, CSS and JavaScript files, we use the `express.static()` function, built into ExpressJS:

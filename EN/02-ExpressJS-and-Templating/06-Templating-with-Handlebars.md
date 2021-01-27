@@ -1,11 +1,11 @@
 # Templating with Handlebars
 
-[slide]
+[slide hideTitle]
 # What is Handlebars?
 
 **Handlebars** is a simple **templating language**, based on the Mustache specification.
 
-**Handlebars templates** look like regular text with embedded Handlebars **expressions**.
+**Handlebars templates** look like a regular text with embedded Handlebars **expressions**.
 
 ## Expressions
 
@@ -19,7 +19,7 @@ When the template is **executed**, these expressions are **replaced** with the *
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Integration in Express
 
 Here is a simple web server with a Handlebars integration:
@@ -85,7 +85,7 @@ The method serves the body of our page to the `index.hbs` container.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # For-Loops
 
 Using the `#each` **special helper**, we can iterate through an array:
@@ -113,7 +113,7 @@ It will be **rendered** in case the given **array** is **empty**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Conditional Statements
 
 Similar to JavaScript, you can also use **conditional statements** in your **template**.
@@ -134,7 +134,7 @@ If its argument returns `false`, `undefined`, `null`, `""`, `0`, or `[]`, then H
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Partials
 
 Handlebars allows us to **reuse templates** through **partials**.
@@ -153,14 +153,14 @@ Calling a partial is done by double curly braces, preceding the name with a `>` 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # HTML Escaping
 
 As we learned earlier, **double curly braces** are used to **declare** Handlebars **expressions**.
 
 In Handlebars, the values returned by the `{{expression}}` are HTML\-escaped.
 
-For example, if the expression contains \&, then the returned HTML-escaped output is generated as `&amp;`.
+For example, if the expression contains `&`, then the returned HTML-escaped output is generated as `&amp;`.
 
 If you do not want Handlebars to **escape a value**, you can use the "triple-stash", `{{{`:
 

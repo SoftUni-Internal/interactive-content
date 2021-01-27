@@ -34,25 +34,25 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
 ```
-<div class="entry">
-  <h1>My New Post</h1>
-  <div class="body">
-    This is my first post!
-  </div>
+<div class="entry">
+  <h1>My New Post</h1>
+  <div class="body">
+    This is my first post!
+  </div>
 </div>
 
 ```
 
-- Handlebars is a templating engine with a lot of features
+- Handlebar is a templating engine with a lot of features
   - For-Loops
   - Conditional Statements
   - Partials
 
 ```
-{{#if sunny}}
-  The sky is clear
+{{#if sunny}}
+  The sky is clear
 {{else}}
-  The sky is overcast
+  The sky is overcast
 {{/if}}
 
 ```
