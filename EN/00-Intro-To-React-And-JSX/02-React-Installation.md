@@ -1,6 +1,6 @@
 # React Installation
 
-[slide]
+[slide hideTitle]
 
 # Create React App
 
@@ -16,8 +16,7 @@ Using `create-react-app` enables several benefits:
 
 [/slide]
 
-
-[slide]
+[slide hideTitle]
 
 # Install and Run the React App Creator
 
@@ -47,8 +46,7 @@ In case it does not open, just click [this link](http://localhost:3000) or open 
 
 [/slide]
 
-
-[slide]
+[slide hideTitle]
 
 # Finding Information
 
@@ -62,10 +60,7 @@ You can visit it [here](https://codesandbox.io/).
 
 [/slide]
 
-
-
-
-[slide]
+[slide hideTitle]
 
 # React App Structure
 
@@ -83,18 +78,15 @@ Here are some of the most important files and what they do:
 
 [image assetsSrc="intro-to-react-and-jsx-3.png" /]
 
-
 - `index.html`: The main HTML file of our app
   - The `div` with `id="main"` is typically what React uses to output components
 
 [image assetsSrc="intro-to-react-and-jsx-4.png" /]
 
-
 - `index.js`: This file takes care of our startup script
   - Here we also define which HTML element to use for rendering
   
 [image assetsSrc="intro-to-react-and-jsx-5.png" /]
-
 
 **React Component file structure**:
 
@@ -104,11 +96,9 @@ Let us take a look at the `App` component.
   
 [image assetsSrc="intro-to-react-and-jsx-6.png" /]
 
-
 - `App.css`: Contains all the styles, related to the given component
 
 [image assetsSrc="intro-to-react-and-jsx-7.png" /]
-
 
 - `App.test.js`: Used when testing the component functionality
 
