@@ -1385,6 +1385,8 @@ yes
 [/code-task]
 [/slide]
 
+[slide]
+
 # Problem: Encode And Decode Messages
 [code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
