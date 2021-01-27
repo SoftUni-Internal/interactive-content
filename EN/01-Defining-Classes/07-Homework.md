@@ -213,41 +213,37 @@ Annie - 31
 
 
 [slide hideTitle]
-# Problem: Company Roster
+# Company Roster
 [code-task title="Company Roster" taskId="Java-OOP-Basics-Defining-Classes-Company-Roster" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
+```
+
+```
+[/code-editor]
 [task-description]
 ## Description
-Define a class **Employee** that holds the following information: **name, salary, position, department, email** and **age**.
+Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
 
-The **name, salary, position** and **department** are **mandatory** while the rest are **optional**.
+\{name\} - \{age\}
 
-Your task is to write a program which takes **N** lines of information about employees from the console and calculates the department with the highest average salary and prints for each employee in that department his **name, salary, email and age** - **sorted by salary in descending order**. 
-
-If an employee **does not have** an **email** – in place of that field you should print **"n/a"** instead, if he does not have an **age** – print **"-1"** instead. 
-
-The **salary** should be printed to **two decimal places** after the separator.
-
-**Hint**: you can define a **Department** class that holds a list of employees.
-
-## Examples
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 4 | Highest Average Salary: Development |
-| Peter 2200.00 Dev Development peter@softuni.org 28 | John 4400.20 john@john.com -1 |
-| Tom 3300.00 Manager Marketing 33 | Peter 2200.00 peter@softuni.org 28 |
-| John 4400.20 ProjectLeader Development john@john.com |  |
-| Philip 0.20 Freelancer Nowhere 18 |  |
+| 3 | John - 31 | 
+| Peter 12 | Steven - 48 |
+| John 31 | |
+| Steven 48 | |
 
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 6 | Highest Average Salary: Sales |
-| Stan 4960.37 Temp Coding stan@yahoo.com | Jimmy 6100.13 n/a -1 |
-| Jimmy 6100.13 Manager Sales | Alex 6090.99 alex@softuni.org 44 |
-| Alex 6090.99 Manager Sales alex@softuni.org 44 |  |
-| Victoria 0.02 Director BeerDrinking victoria@gmail.com 23 |  |
-| Andrew 7000.00 Director Coding |  |
-| Peyton 130.3333 Sailor SpinachGroup peyton@softuni.org |  |
+| 5 | Nick - 33 | 
+| Nick 33 | John - 88 |
+| John 88 | Leo - 44 |
+| George 22 | |
+| Leo 44 | |
+| Peter 11 | |
+
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -255,129 +251,128 @@ The **salary** should be printed to **two decimal places** after the separator.
 [test open]
 [input]
 4
-Peter 2200.00 Dev Development peter@softuni.org 28
-Tom 3300.00 Manager Marketing 33
-John 4400.20 ProjectLeader Development john@john.com
-Philip 0.20 Freelancer Nowhere 18
+George 120.00 Dev Development George@abv.bg 28
+Alex 333.33 Manager Marketing 33
+Bob 840.20 ProjectLeader Development Bob@ivan.com
+Phil 0.20 Freeloader Nowhere 18
 [/input]
 [output]
 Highest Average Salary: Development
-John 4400.20 john@john.com -1
-Peter 2200.00 peter@softuni.org 28
+Bob 840.20 Bob@Bob.com -1
+George 120.00 George@abv.bg 28
 [/output]
 [/test]
 [test open]
 [input]
 6
-Stan 4960.37 Temp Coding stan@yahoo.com
-Jimmy 6100.13 Manager Sales
-Alex 6090.99 Manager Sales alex@softuni.org 44
-Victoria 0.02 Director BeerDrinking victoria@gmail.com 23
-Andrew 7000.00 Director Coding
-Peyton 130.3333 Sailor SpinachGroup peyton@softuni.org
+Lukas 496.37 Temp Coding stancho@yahoo.com
+Loid 610.13 Manager Sales
+Liran 609.99 Manager Sales Liran@abv.bg 44	
+Vel 0.02 Director BeerDrinking beer@beer.br 23
+Andy 700.00 Director Coding
+Popeye 13.3333 Sailor SpinachGroup popeye@pop.ey
 [/input]
 [output]
 Highest Average Salary: Sales
-Jimmy 6100.13 n/a -1
-Alex 6090.99 alex@softuni.org 44
+Loid 610.13 n/a -1
+Liran 609.99 Liran@abv.bg 44
 [/output]
 [/test]
 [test]
 [input]
 6
-Michael 1300.01 Dev Development michael@softuni.org 28
-Jeremy 1200.01 QA Testing jeremy@softuni.org 21
-Trevor 1300.01 QA Testing trevor@gmail.com 23
-Bethany 1300.02 QA Testing bethany@bethany.net 19
-Stiven 1200.43 Dev Development stiven@yahoo.com 28
-Sofia 1200.23 Dev Development sofia@softuni.org 28
+Pesho 130.01 Dev Development pesho@abv.bg 28
+Gosho 1200.01 QA Testing gosho@av.bg 21
+Mitko 130.01 QA Testing mitko@kk.bg 23
+Encho 130.02 QA Testing en@en.bg 19
+Svlien 120.43 Dev Development pesho@abv.bg 28
+Sliven 120.23 Dev Development pesho@abv.bg 28
 [/input]
 [output]
 Highest Average Salary: Testing
-Bethany 1300.02 bethany@bethany.net 19
-Trevor 1300.01 trevor@gmail.com 23
-Jeremy 1200.01 jeremy@softuni.org 21
+Gosho 1200.01 gosho@av.bg 21
+Encho 130.02 en@en.bg 19
+Mitko 130.01 mitko@kk.bg 23
 [/output]
 [/test]
 [test]
 [input]
 6
-Jacob 8400.20 ProjectLeader Development jacob@jacob.com
-Bishop 1230.31 Manager Marketing bishop@gmail.com
-Derek 3210.23 QA Testing derek@yahoo.com
-Bobby 310.1 ProjectLeader Testing bobby@bobby.net
-Phil 0.23 NoWhere StreetWork kodko@street.bg
-Ed 11000.33 Dev Development ed@softuni.org
+Ivan 840.20 ProjectLeader Development ivan@ivan.com
+Gosho 123.31 Manager Marketing g@g.com
+Toshko 321.23 QA Testing tosh_ko@ab.vbg
+Joro 31.1 ProjectLeader Testing joro@joro.bgg
+Kodko 0.23 NoWhere StreetWork kodko@street.bg
+Lodko 1100.33 Dev Development lodko-kotko@boat.bg
 [/input]
 [output]
 Highest Average Salary: Development
-Ed 11000.33 ed@softuni.org -1
-Jacob 8400.20 jacob@jacob.com -1
+Lodko 1100.33 lodko-kotko@boat.bg -1
+Ivan 840.20 ivan@ivan.com -1
 [/output]
 [/test]
 [test]
 [input]
 7
-Ben 8400.20 ProjectLeader Development 123
-Clark 1230.31 Manager Marketing  123
-Wendy 3210.23 QA Testing 22
-Andy 3100.1 ProjectLeader Testing 14
-Sarah 0.23 NoWhere StreetWork 13
-Abbigail 1100.33 Dev Development 12
-Robert 9999.98 QADev Testing 13
+Ivan 840.20 ProjectLeader Development 123
+Gosho 123.31 Manager Marketing  123
+Toshko 321.23 QA Testing 22
+Joro 31.1 ProjectLeader Testing 14
+Kodko 0.23 NoWhere StreetWork 13
+Lodko 1100.33 Dev Development 12
+Mincho 9999.98 QADev Testing 13
 [/input]
 [output]
 Highest Average Salary: Testing
-Robert 9999.98 n/a 13
-Wendy 3210.23 n/a 22
-Andy 3100.10 n/a 14
+Mincho 9999.98 n/a 13
+Toshko 321.23 n/a 22
+Joro 31.10 n/a 14
 [/output]
 [/test]
 [test]
 [input]
 3
-Ed 1223.32 Dev Development email@email.em
-Edward 1993.32 Dev Development 22
-Edison 1223931.32 Dev Development email@email.em 44
+Mincho 1223.32 Dev Development email@email.em
+Minka 1993.32 Dev Development 22
+Maca 1223931.32 Dev Development email@email.em 44
 [/input]
 [output]
 Highest Average Salary: Development
-Edison 1223931.32 email@email.em 44
-Edward 1993.32 n/a 22
-Ed 1223.32 email@email.em -1
+Maca 1223931.32 email@email.em 44
+Minka 1993.32 n/a 22
+Mincho 1223.32 email@email.em -1
 [/output]
 [/test]
 [test]
 [input]
 18
-Stan 49665.37 Temp Coding stan@yahoo.com
-Yasmin 610.1653 Manager Sales
-Teodor 60659.99 Manager Sales teodor@tdr.com 44
-Benjamin 0.0652 Trainer Training benjamin@ben.org 23
-Penny 700.0650 Director Coding
-Popeye 13.335433 Sailor Shipping popeye@pop.eu
-Murphy 496.3734 Temp Coding murphy@yahoo.com
-Kurt 610.13 Manager Sales kurt@gmail.com
-Teodor 609.993 Manager Sales teodor@gmail.com 44
-Victor 0.032 Director Sales sales@uni.eu 23
-Andrew 700.03305 Director Coding
-Popeye2 13.333333 Sailor Shipping popeye@pop.eu
-Simon 496.3437 Temp Coding simon@yahoo.com
+Stanimir 49665.37 Temp Coding stancho@yahoo.com
+Yovcho 610.1653 Manager Sales
+Toshko 60659.99 Manager Sales toshko@abv.bg 44
+Venci 0.0652 Director BeerDrinking beer@beer.br 23
+Andrei 700.0650 Director Coding
+Popeye 13.335433 Sailor SpinachGroup popeye@pop.ey
+Stanimir 496.3734 Temp Coding stancho@yahoo.com
+Yovcho1 610.13 Manager Sales gmail.com@ah.bg
+Toshko2 609.993 Manager Sales toshko@abv.bg 44
+Venci1 0.032 Director BeerDrinking beer@beer.br 23
+Andrei1 700.03305 Director Coding
+Popeye2 13.333333 Sailor SpinachGroup popeye@pop.ey
+Trump 496.3437 Temp Coding stancho@yahoo.com
 Donald 620.133333 Manager Sales 12
-Duck 609.99 Manager Sales duck@gmail.com 44
-Daffy 0.02 Director Training daffy@uni.eu 23
-Duckk 702.00 Director Coding
-Christopher 13.3333 Sailor SpinachGroup robin@pop.eu
+Duck 609.99 Manager Sales toshko@abv.bg 44
+Trifon 0.02 Director BeerDrinking beer@beer.br 23
+Scrudge 702.00 Director Coding
+DDuck 13.3333 Sailor SpinachGroup popeye@pop.ey
 [/input]
 [output]
 Highest Average Salary: Sales
-Teodor 60659.99 teodor@tdr.com 44
+Toshko 60659.99 toshko@abv.bg 44
 Donald 620.13 n/a 12
-Yasmin 610.17 n/a -1
-Kurt 610.13 kurt@gmail.com -1
-Teodor 609.99 teodor@gmail.com 44
-Duck 609.99 duck@gmail.com 44
-Victor 0.03 sales@uni.eu 23
+Yovcho 610.17 n/a -1
+Yovcho1 610.13 gmail.com@ah.bg -1
+Toshko2 609.99 toshko@abv.bg 44
+Duck 609.99 toshko@abv.bg 44
 [/output]
 [/test]
 [/tests]
