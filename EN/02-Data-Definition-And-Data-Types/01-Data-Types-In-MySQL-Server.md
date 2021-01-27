@@ -1,4 +1,6 @@
-[slide]
+# Data Types in MySQL Server
+
+[slide hideTitle]
 
 # Data Types
 
@@ -10,11 +12,15 @@ There are several data types in MySQL:
 - **String**
 - **Date**
 
-Let's start with **Numeric** data type:
+[/slide]
 
-The important thing you should know about **Numeric** data types is that they have a **range**!
+[slide hideTitle]
 
-Depending on the range they can be **Signed** and **Unsigned** except for the **BIT** type:
+# Numeric data types
+
+The important thing, you should know about **Numeric** data types is that they have a **range**!
+
+Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** type:
 
 Here is an example for Signed and Unsigned **INT**:
 
@@ -49,7 +55,11 @@ DOUBLE[(M, D)][UNSIGNED];  //  "M" is the count of digits stored for the value
                            //  Example: DOUBLE[5, 2] - 999.99
 ```
 
-Next is **String** data type:
+[/slide]
+
+[slide hideTitle]
+
+# String data types
 
 The following table shows the summary of string types in MySQL:
 
@@ -77,13 +87,15 @@ String column definitions include attributes that specify the **CHARACTER SET** 
 
 A character set is a set of symbols and encodings. A collation is a set of rules for comparing characters in a character set.
 
-For example, a subset of a character set could consist of the letters A , B and C . A default collation could define these as appearing in an ascending order of A, B, C.
+For example, a subset of a character set could consist of the letters, A  B, and C. 
+
+A default collation could define these as appearing in ascending order of A, B, C.
 
 CHARACTER SET(Encoding) - "Where Encoding coud be for example 'utf8', 'ucs2' etc."
 
 CHARACTER COLLATION - "latin1_general_cs, Traditional_Spanish_ci_ai etc."
 
-Character Set and collation can be defined at the database, table or column level.
+Character Set and collation can be defined in the database, table, or column level.
 
 `CHAR` vs `VARCHAR`
 
@@ -93,6 +105,12 @@ Character Set and collation can be defined at the database, table or column leve
 | 'ab'       | 'ab'        | 4 bytes              | 'ab'           | 5 bytes              |
 | 'abcd'     | 'abcd'      | 4 bytes              | 'abcd'         | 5 bytes              |
 | 'abcdefgh' | 'abcd'      | 4 bytes              | 'abcd'         | 5 bytes              |
+
+[/slide]
+
+[slide hideTitle]
+
+# Date data types
 
 Finally **Date** data type:
 

@@ -1,6 +1,8 @@
-[slide]
+# Table Customization
 
-# Custom Column Properties
+[slide hideTitle]
+
+# Custom column properties
 
 ## Primary Key
 
@@ -26,7 +28,11 @@ EMAIL varchar(50) UNIQUE
 balance DECIMAL(10, 2) DEFAULT 0 // Default value set to 0
 ```
 
-## Problem: Create Table and Insert data into it
+[/slide]
+
+[slide hideTitle]
+
+## Problems: Create and Insert
 
 1. Create new database called `gamebar`
 2. Create Tables:
@@ -62,7 +68,7 @@ public class Main {
 
 When we create tables, we specify the database we want to add them to.
 
-This is done by using the "**USE**" clause.
+Use the "**USE**" clause.
 
 **Run your query statements & submit the output from the queries as plain text**.
 
@@ -158,7 +164,7 @@ public class Main {
 
 When we create tables, we specify the database we want to add them to.
 
-This is done by using the "**USE**" clause.
+Use the "**USE**" clause.
 
 **Run your query statements & submit the output from the queries as plain text**.
 
@@ -254,7 +260,9 @@ public class Main {
 
 Inserting data can be done with a query too.
 
-To do that we use the "**INSERT**" clause. Populate the "**employees**" table with 3 test values.
+To do that, use the "**INSERT**" clause. 
+
+Populate the "**employees**" table with 3 test values.
 
 [/task-description]
 [code-io /]
@@ -295,7 +303,9 @@ public class Main {
 
 Inserting data can be done with a query too.
 
-To do that we use the "**INSERT**" clause. Populate the "**employees**" table with 3 test values.
+To do that, use the "**INSERT**" clause. 
+
+Populate the "**employees**" table with 3 test values.
 
 [/task-description]
 [code-io /]

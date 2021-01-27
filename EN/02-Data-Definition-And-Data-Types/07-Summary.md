@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson we learned:
+## In this lesson you learnt:
 
 - What is Numeric Data Type
     
@@ -38,7 +38,7 @@
     DROP CONSTRAINT pk_id;
     ```
 
-## In the next lesson you will learn
+## In the next lesson, you will learn:
 
 - The query basics 
 

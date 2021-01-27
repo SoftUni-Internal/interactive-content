@@ -23,11 +23,11 @@ public class Main {
 
 ## Description
 
-You now know how to create database using the GUI of the Workbench.
+You now know how to create a database using the GUI of the Workbench.
 
 Now it's time to create it using SQL queries.
 
-In that task (and the several following it) you will be required to create the database from the previous exercise **using only SQL queries**.
+In that task, and the several following it, you will have to create a database from the previous exercise **using only SQL queries**.
 
 Firstly, just **create new database** named **minions**.
 
@@ -59,7 +59,7 @@ public class Main {
 
 ## Description
 
-In the newly created database Minions add table **minions (id, name, age)**.
+In the newly created database, "Minions" add table **minions (id, name, age)**.
 
 Then add new table **towns (town_id, name)**.
 
@@ -122,7 +122,7 @@ public class Main {
 
 Before continuing with the next assignments, **rename the town_id** to **id** using Workbench's GUI.
 
-Change the structure of the Minions table to have **new column town_id** that would be of the same type as the **id** column of **towns table**.
+Change the structure of the "Minions" table to have **new column town_id** that would be of the same type as the **id** column of **towns table**.
 
 Add **new constraint** that makes **town_id foreign key** and references to **id** column of **towns** table.
 
@@ -568,7 +568,7 @@ public class Main {
 
 Using **SQL queries** modify table **users**.
 
-Remove **username** field from the primary key so only the field **id** would be primary key.
+Remove, **username** field from the primary key so only the **id** would be the primary key.
 
 Now **add unique constraint** to the **username** field.
 
@@ -614,7 +614,7 @@ Set most **appropriate data types** for each column.
 
 **Set primary key** to each table. Populate each table with **5 records**.
 
-Make sure the columns that are present in 2 tables would be of the **same data type**.
+Make sure, the columns that are present in the two tables are of the **same data type**.
 
 Consider which fields are always required and which are optional.
 
@@ -658,7 +658,7 @@ Set most **appropriate data types** for each column.
 
 Populate each table with **3 records**.
 
-Make sure the columns that are present in 2 tables would be of the **same data type**.
+Make sure, the columns that are present in the two tables are of the **same data type**.
 
 Consider which fields are always required and which are optional.
 
@@ -699,6 +699,8 @@ id
 
 ## Description
 
+
+
 Using **SQL queries** create **Hotel** database with the following entities:
 
 - **employees (id, first_name, last_name, title, notes)**
@@ -716,7 +718,7 @@ Set most **appropriate data types** for each column.
 
 Populate each table with **3 records**.
 
-Make sure the columns that are present in 2 tables would be of the **same data type**.
+Make sure, the columns that are present in the two tables are of the **same data type**.
 
 Consider which fields are always required and which are optional.
 
@@ -746,16 +748,16 @@ public class Main {
 
 ## Description
 
-Now create bigger database called soft_uni.
+Now create a bigger database called soft_uni.
 
-You will use database in the future tasks. It should hold information about
+You will use a database in future tasks. It should hold information about
 
 - towns (id, name)
 - addresses (id, address_text, town_id)
 - departments (id, name)
 - employees (id, first_name, middle_name, last_name, job_title, department_id, hire_date, salary, address_id)
 
-Id columns are auto incremented starting from 1 and increased by 1 (1, 2, 3, 4…).
+Id columns are auto-incremented starting from 1 and increased by 1 (1, 2, 3, 4…).
 
 Make sure you use appropriate data types for each column.
 
@@ -1072,7 +1074,7 @@ public class Main {
 
 ## Description
 
-Modify queries from previous problem by sorting:
+Modify queries from the previous problem by sorting:
 
 - **towns** - alphabetically by name
 - **departments** - alphabetically by name
@@ -1239,7 +1241,7 @@ public class Main {
 
 ## Description
 
-Modify queries from previous problem to show only **some of the columns**.
+Modify queries from the previous problem to show the **some of the columns**.
 
 For table:
 
@@ -1344,9 +1346,9 @@ public class Main {
 
 ## Description
 
-Use **softuni** database and **increase the salary** of all employees by **10%**.
+Use, **softuni** database and **increase the salary** of all employees by **10%**.
 
-Then select **only salary** column from the **employees** table.
+Then select, **only salary** column from the **employees** table.
 
 **Run your query statements & submit the output from the queries as plain text**.
 
@@ -1420,10 +1422,3 @@ Select **only tax_rate** column from the **payments** table.
 [/code-task]
 [/slide]
 
-[slide]
-
-# Homework Results
-
-[tasks-results/]
-
-[/slide]

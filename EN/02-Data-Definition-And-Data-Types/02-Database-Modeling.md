@@ -1,25 +1,33 @@
-[slide]
-
 # Database Modeling
 
-## Working with IDEs
+[slide hideTitle]
+
+# Working with IDEs
 
 We will manage databases with MySQL Workbench, which will allow us to:
 
 - create a new database
-- create objects in the database(tables, stored procedures, relationships and others)
+- create objects in the database(tables, stored procedures, relationships, and others)
 - change properties of an object
 - enter records into tables
 
-## Creating a new Database
+[/slide]
 
-Select Create new schema from the command menu.
+[slide hideTitle]
+
+# Creating a new Database
+
+Select "**Create**" new schema from the command menu.
 
 [image assetsSrc="Data-Definition-And-Data-Types(4).png" /]
 
-## Creating Tables
+[/slide]
 
-Right click on "Tables" Select Create Table.
+[slide hideTitle]
+
+# Creating Tables
+
+Right-click on "Tables" and select "**Create Table**".
 
 [image assetsSrc="Data-Definition-And-Data-Types(5).png" /]
 
@@ -33,7 +41,7 @@ Auto increment – on the "Default" field.
 
 We can **add**, **modify** and **read** records with GUI Clients.
 
-To insert or edit a record, click inside the cell
+To insert or edit a record, click inside the cell.
 
 [image assetsSrc="Data-Definition-And-Data-Types(8).png" /]
 
