@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Stack Functionality
 
-**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle or **Last In First Out**. When you add an element, it is always placed **on top** of the stack and removing an element also removes it **from the top** of the stack.
+**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle or **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
 
 - Stacks provide the following functionality:
     - Pushing an element to the top of the stack
@@ -151,7 +151,7 @@ The input **ends** with the `Home` command. **Stop the program** when you receiv
 ## Hints
 - Use `ArrayDeque<>`
 - Use `String` to store the current URL
-- Use `push()`, when moving to next URL
+- Use `push()`, when moving to the next URL
 - Use `pop()`, when going back
 
 
@@ -369,7 +369,7 @@ The input **ends** with the `Home` command. **Stop the program** when you receiv
 ## Hints
 - Use `ArrayDeque<>`
 - Use `String` to store the current URL
-- Use `push()`, when moving to next URL
+- Use `push()`, when moving to the next URL
 - Use `pop()`, when going back
 
 
