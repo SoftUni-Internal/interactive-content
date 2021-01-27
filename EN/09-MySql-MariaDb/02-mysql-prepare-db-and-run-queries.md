@@ -24,7 +24,7 @@ Description ...
 [tests]
 [test open]
 [input]
-untries (id, name) values (61, 'Israel');
+insert into countries (id, name) values (61, 'Israel');
 insert into countries (id, name) values (63, 'Greece');
 insert into countries (id, name) values (66, 'Peru');
 insert into countries (id, name) values (72, 'Central African Republic');
@@ -645,7 +645,7 @@ United States
 [/test]
 [test]
 [input]
-untries (id, name) values (61, 'Israel');
+insert into countries (id, name) values (61, 'Israel');
 insert into countries (id, name) values (63, 'Greece');
 insert into countries (id, name) values (66, 'Peru');
 insert into countries (id, name) values (72, 'Central African Republic');
