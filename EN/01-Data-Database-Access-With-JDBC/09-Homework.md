@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 ## 1. Initial Setup 
 
@@ -12,7 +12,7 @@ Execute the SQL file that was given to you.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 2. Get Villains’ Names
 
@@ -31,7 +31,7 @@ Carl 16  |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 3. Get Minion Names
 
@@ -65,7 +65,7 @@ For the output, use the formats given in the examples.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 4. Add Minion
 
@@ -90,7 +90,7 @@ Print appropriate messages after each operation – see the examples.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 5. Change Town Names Casing
 
@@ -110,7 +110,7 @@ On the next line **print** the **names that were changed**, separated by comma a
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 6. Remove Villain
 
@@ -135,7 +135,7 @@ For the output use the format given in the examples.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 7. Print All Minion Names
 
@@ -163,7 +163,7 @@ Write a program that **prints all minion** names from the minion's table **in or
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 8.Increase Minions Age
 
@@ -203,7 +203,7 @@ See the examples below.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 9. Increase Age Stored Procedure
 

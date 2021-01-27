@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Statement types.
 
@@ -12,7 +12,11 @@ These interfaces provide you with the methods and properties used to send SQL st
 
 Each of the interfaces is used on a different occasion, now let's have a look at each one of them, learn what they are used for, and have some examples. 
 
-## Statement
+[/slide]
+
+[slide hideTitle]
+
+# Statement
 We use this interface for general-purpose access to our database. 
 
 It's useful when we are using static SQL statements at runtime as this interface **cannot** accept parameters.
@@ -26,8 +30,11 @@ Boolean ret = stmt.execute(sql);
 System.out.prinln("Is employee updated = " + ret.toString())
 ```
 
+[/slide]
 
-## PreparedStatement
+[slide hideTitle]
+
+# PreparedStatement
 This interface is used when you intend to call a given statement several times. 
 
 This interface **can accept** parameters.
@@ -42,7 +49,11 @@ stmt.setDouble(1, Double.parseDouble(salary));
 
 ```
 
-## CallableStatement
+[/slide]
+
+[slide hideTitle]
+
+# CallableStatement
 We use this statement when we need to access the database's stored procedures. 
 
 This method **does accept** parameters.
@@ -70,4 +81,5 @@ int employeeId = 101;
 stmt.setInt(1, employeeId);
 stmt.execute();
 ```
+
 [/slide]

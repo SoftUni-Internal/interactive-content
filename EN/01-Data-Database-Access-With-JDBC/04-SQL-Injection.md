@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # What is SQL Injection?
 
@@ -18,7 +18,7 @@ It automatically escapes all the bad characters that can interact with our state
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SQL Injection example.
 

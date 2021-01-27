@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # What is SQL Injection?
 
@@ -6,23 +6,21 @@ In the previous part of the lesson, we learned how to send raw SQL statements to
 
 This practice leaves us in danger of an SQL injection attack.
 
-It's a technique with which they insert malicious SQL statements into a user input field.
+It's a technique with which a user with bad intentions can insert malicious SQL statements into a user input field.
 
 This way the abuser can harvest information directly from our database, which is a huge problem for our web applications.
 
-If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attacks,
-
-which means that our customer's data will not be protected from leaking.
+If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attacks, which means that our customer's data will not be protected from leaking.
 
 To protect our application from SQL injections we should use SQL parameters.
 
-When we have parameters in our SQL statements, to protect our database we should always use the "PreparedStatement" interface.
+When we have parameters in our SQL statements, to protect our database we should always use the **"PreparedStatement"** interface.
 
 It automatically escapes all the bad characters that can interact with our statement, keeping us safe from malicious SQL.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SQL Injection example.
 
@@ -30,7 +28,7 @@ SQL injection is best explained through an example. Now let's have one and see w
 
 Our applications are used by people, that is why we are accepting custom data from the users all the time.
 
-Now imagine we are having a simple login form, we ask the user to input username and password in fields. 
+Imagine we are having a simple login form, we ask the user to input username and password in fields. 
 
 **Username = "example_user"**
 **Password = "12345"**
@@ -42,9 +40,7 @@ SELECT id FROM users
 WHERE username = 'example_user' AND password = '12345';
 ```
 
-Of course, we don't save our passwords raw, we are hashing them with hashing algorithms, 
-
-but we will talk about it further in our lessons. 
+Of course, we don't save our passwords raw, we are hashing them with hashing algorithms, but we will talk about it further in our lessons. 
 
 But you get the point they can type anything they want in there even SQL queries.
 
