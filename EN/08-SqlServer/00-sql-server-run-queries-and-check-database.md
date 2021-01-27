@@ -116,6 +116,7 @@ JourneyId
 
 [test]
 [input]
+DECLARE @HasErrors BIT = 0
 BEGIN TRY
 -- Insert valid values
 
