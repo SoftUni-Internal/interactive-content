@@ -1,6 +1,6 @@
 [slide hideTitle]
 # sql-server-run-queries-and-check-database
-[code-task title="Problem: Find All Information About Departments" taskId="ff777793-c543-4504-8b1d-461a3a1351b2" executionType="tests-execution" executionStrategy="sql-server-run-queries-and-check-database" requiresInput]
+[code-task title="Problem: Find All Information About Departments" taskId="sql-server-run-queries-and-check-database" executionType="tests-execution" executionStrategy="sql-server-run-queries-and-check-database" requiresInput]
 [code-editor language=java]
 ```
 ```
