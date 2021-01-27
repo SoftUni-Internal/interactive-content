@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Table Relations
 
@@ -23,7 +23,7 @@ There are several things you must know before creating your first relation.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## One-To-Many
 
@@ -50,6 +50,7 @@ REFERENCES mountains(mountain_id);      //Referencing the unique identifier in a
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Mountains and Peaks
 [code-task title="Problem: Mountains and Peaks" taskId="fdf83a27-ac8d-42f0-9f7b-5571c41ccf6b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -129,13 +130,13 @@ mountain_id
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Mountains and Peaks
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Many to many
 
@@ -176,7 +177,7 @@ CREATE TABLE employees_projects(`employee_id` INT, `project_id` INT,    //Create
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## One to One
 
@@ -192,6 +193,12 @@ It's achieved by two records referencing eachother.
 
 [image assetsSrc="Table-Relations(2).png" /]
 
+[/slide]
+
+
+[slide hideTitle]
+
+# Setup
 
 The setup for it would be as follows:
 

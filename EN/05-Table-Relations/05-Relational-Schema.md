@@ -20,6 +20,12 @@ The relational schemas describe the structure of our database.
 
 - It contains only **metadata**, no entity records.
 
+[/slide]
+
+[slide hideTitle]
+
+# E/R Schema
+
 The schemas are meant to display graphicly the entities and their relations and nothing more than that.
 
 Now let's have a step-by-step guide on how to create the schemas. 

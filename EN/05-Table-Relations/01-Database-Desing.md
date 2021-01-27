@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Database Design and Rules
 
@@ -31,7 +31,7 @@ There are a few fundamental steps when creating a database, which we should cons
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Identification of Entities
 
@@ -59,7 +59,7 @@ Did you notice it, the nouns from our specification became our entities.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Identification of the Columns
 
@@ -84,7 +84,7 @@ From the second skimming through the specification, we managed to figure out tha
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Choosing a primary key.
 
@@ -115,13 +115,11 @@ If you want a unique primary key, which is harder to guess, you should consider 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Identification of Relationships
 
-As you know MySQL is a relational database 
-
-and that means it keeps the entities in its database and keeps track of them by making relations between different tables.
+As you know MySQL is a relational database and that means it keeps the entities in its database and keeps track of them by making relations between different tables.
 
 **Relationships are dependencies between the entities.**
 
