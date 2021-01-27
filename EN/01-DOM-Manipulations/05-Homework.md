@@ -515,6 +515,8 @@ yes
 [/code-task]
 
 [/slide]
+
+[slide]
 # Problem: Locked Profile
 [code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
