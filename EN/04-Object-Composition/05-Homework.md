@@ -853,7 +853,7 @@ yes
 
 [slide]
 # Problem: Car Factory
-[code-task title="Problem: Car Factory" taskId="js-advanced-object-composition-Car-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Problem: Car Factory" taskId="js-advanced-Object-Composition-Car-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input){
