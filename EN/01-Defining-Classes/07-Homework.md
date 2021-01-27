@@ -1,70 +1,64 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Opinion Poll
-[code-task title="Opinion Poll" taskId="ff6d1ff1-daef-4e93-b24d-14c878e40e96" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+# Opinion Poll
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+[code-task title="Opinion Poll" taskId="java-fund-17-Objects-and-Classes-Exercise-problem-2" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
+
 [task-description]
 ## Description
-Create Person class with two fields `String name` and `int age`, write a program that reads from the console **N** lines of personal information, and then prints all people whose **age** is **more than 30** years, **sorted in alphabetical order**.
+Using the **Person class**, write a program that reads from the console **N lines of personal information** and then **prints all people** whose **age is more than 30 years** in the following **format**:
 
-**Note:** you can use `stream()` to filter the people.
+\{name\} - \{age\}
 
-## Examples
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 3 | John - 48 |
-| Peter 12 | Steven – 31 |
-| Steven 31 |  |
-| John 48 |  |
+| 3 | John - 31 | 
+| Peter 12 | Steven - 48 |
+| John 31 | |
+| Steven 48 | |
 
+### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Robert - 44 |
-| Sofia 33 | Sofia - 33 |
-| Thomas 88 | Thomas - 88 |
-| Camilla 22 |  |
-| Robert 44 |  |
-| Owen 11 |  |
+| 5 | Nick - 33 | 
+| Nick 33 | John - 88 |
+| John 88 | Leo - 44 |
+| George 22 | |
+| Leo 44 | |
+| Peter 11 | |
 
 [/task-description]
-[code-io /]
+[code-upload allowedMemory="30" /]
 [tests]
 [test open]
 [input]
 3
 Peter 12
-Steven 31
-John 48
+John 31
+Steven 48
 [/input]
 [output]
-John - 48
-Steven - 31
+John - 31
+Steven - 48
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 5
-Sofia 33
-Thomas 88
-Camilla 22
-Robert 44
-Owen 11
+Nikolai 33
+Yordan 88
+Tosho 22
+Lyubo 44
+Stanislav 11
+
 [/input]
 [output]
-Robert - 44
-Sofia - 33
-Thomas - 88
+Nikolai - 33
+Yordan - 88
+Lyubo - 44
+
 [/output]
 [/test]
 [test]
@@ -73,53 +67,54 @@ Thomas - 88
 A 40
 B 43
 C 54
-D 31
-E 99
-M 32
-N 123
-O 100
-P 321534
-S 3213
-Z 32131
+Dencho 31
+Encho 99
+Mincho 32
+Noncho 123
+Oncho 100
+Pesho 321534
+Suzi 3213
+Zuzi 32131
 [/input]
 [output]
 A - 40
 B - 43
 C - 54
-D - 31
-E - 99
-M - 32
-N - 123
-O - 100
-P - 321534
-S - 3213
-Z - 32131
+Dencho - 31
+Encho - 99
+Mincho - 32
+Noncho - 123
+Oncho - 100
+Pesho - 321534
+Suzi - 3213
+Zuzi - 32131
+
 [/output]
 [/test]
 [test]
 [input]
 11
-Z 32
-S 12
-P 0
-O 100
-N 123
-M 32
-E 99
-D 1
-C 54
-B 43
 A 40
+B 43
+C 54
+Dencho 1
+Encho 99
+Mincho 32
+Noncho 123
+Oncho 100
+Pesho 0
+Suzi 12
+Zuzi 32131
 [/input]
 [output]
 A - 40
 B - 43
 C - 54
-E - 99
-M - 32
-N - 123
-O - 100
-Z - 32
+Encho - 99
+Mincho - 32
+Noncho - 123
+Oncho - 100
+Zuzi - 32131
 [/output]
 [/test]
 [test]
@@ -136,9 +131,12 @@ D 13
 [/test]
 [test]
 [input]
-10
+13
 A 31
+W 45
 B 76
+C 87
+D 453
 E 645
 Z 55
 K 53
@@ -150,38 +148,47 @@ F 88
 [/input]
 [output]
 A - 31
+W - 45
 B - 76
+C - 87
+D - 453
 E - 645
-F - 88
-H - 76
+Z - 55
+K - 53
 I - 43
 J - 543
-K - 53
 P - 67
-Z - 55
+H - 76
+F - 88
 [/output]
 [/test]
 [test]
 [input]
-10
-Andrew 31
-Ben 76
-Edward 645
-Felix 11
-Harley 76
-Ivy 12
-Joanna 0
-Kylie 30
-Poppy 67
-Zoie 55
+13
+Astor 45
+Asto 31
+Borko 76
+Ceco 87
+Dido 453
+Encho 645
+Focker 11
+Haplio 76
+Ivo 12
+Julien 0
+Kodkoslav 30
+Pencho 67
+Zoro 55
 [/input]
 [output]
-Andrew - 31
-Ben - 76
-Edward - 645
-Harley - 76
-Poppy - 67
-Zoie - 55
+Astor - 45
+Asto - 31
+Borko - 76
+Ceco - 87
+Dido - 453
+Encho - 645
+Haplio - 76
+Pencho - 67
+Zoro - 55
 [/output]
 [/test]
 [test]
@@ -193,15 +200,16 @@ An 33
 Annie 31
 [/input]
 [output]
-An - 33
 Ann - 31
-Annie - 31
 Anntoanette - 39
+An - 33
+Annie - 31
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
+
 
 
 [slide hideTitle]
