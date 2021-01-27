@@ -1,1 +1,1 @@
-# C++ Strategies
+# Cpp Strategies
