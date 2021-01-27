@@ -49,11 +49,15 @@ Configures the app to work with Express JS and to use the routes that are set up
 
 Each cube should have the following properties (for now it could be an ES6 class):
 
-- **id**: number
-- **name**: string
-- **description**: string
-- **imageUrl**: string
-- **difficultyLevel**: number
+**id**: number
+
+**name**: string
+
+**description**: string
+
+**imageUrl**: string
+
+**difficultyLevel**: number
 
 - **Storage** 
 
