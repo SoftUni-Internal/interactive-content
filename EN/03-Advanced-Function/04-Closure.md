@@ -4,7 +4,9 @@
 
 # What is a closure?
 
-A **closure** is JavaScript feature where the **inner function scope** includes that of the **outer (enclosing) function**.
+In a **closure**, the **inner function scope** includes that of the **outer (enclosing) function**.
+
+
 
 ## Scope chain
 
