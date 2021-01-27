@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Data Transfer Objects
 
@@ -36,6 +36,12 @@ Let's concatenate everything in a single sentence.
 
 **DTOs are a way of transmitting aggregated data from entities**
 
+[/slide]
+
+[slide hideTitle]
+
+# Entity Usage
+
 **Take a note**
 If our app is a really simple one and we communicate with a database and we need the full information of an entity, 
 
@@ -54,6 +60,13 @@ For instance, if we need information about our DB entity **Person** like his **n
 but also information which is in another table connected with foreign key about his **address city**.
 
 Our DTO can combine the information and ask for it, which we will receive with a single query and return in a single object instead of two. 
+
+[/slide]
+
+
+[slide hideTitle]
+
+# DTO Usage
 
 Now let's see what a DTO would look like with code .
 

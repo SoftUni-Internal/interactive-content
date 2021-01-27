@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Model Mapping
 
@@ -74,7 +74,11 @@ public class StudentServiceImpl implements StudentService {
 
 Do you see how monotonous this job is? 
 
-### Model Mapper
+[/slide]
+
+[slide hideTitle]
+
+# Model Mapper
 
 Luckily, we have a tool which can do the job for us.
 
@@ -119,6 +123,11 @@ EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
 //2. Desitnation object(DTO).
 ```
 
+[/slide]
+
+[slide hideTitle]
+
+# Simple Mapping Entity to DTO
 
 Model Mapper's power won't stop at mapping just the simple properties, like string, int BigDecimal, etc.,
 
@@ -155,7 +164,7 @@ public class EmployeeDto {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Explicit Mapping
 
@@ -223,6 +232,12 @@ modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
 There is a difference in the syntax **explicit mapping** in Java 7 and Java 8. 
 
+[/slide]
+
+[slide hideTitle]
+
+# Explicit Mapping DTO to Entity - Java 8
+
 ```java
 //Java 8
 //ConsoleRunner.java
@@ -233,10 +248,9 @@ typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirtsName));
 typeMap.map(employeeDto);
 ```
 
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Validation 
 
@@ -269,9 +283,10 @@ ModelMapper modelMapper = new ModelMapper();
 ```
 
 To fix the exception we have to check if every property is named by convention or create a custom configuration.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Skipping Properties
 
@@ -304,7 +319,7 @@ typeMap.map(employeeDto);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Type converting
 
@@ -340,6 +355,12 @@ modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
 Again there is a difference in the syntax between Java 7 and Java 8
 
+[/slide]
+
+[slide hideTitle]
+
+# Converting Properties - Java 8
+
 ```java
 //Java 8 
 ModelMapper modelMapper = new ModelMapper();
@@ -348,4 +369,5 @@ TypeMap<EmployeeDto, Employee> typeMap =
 mapper.createTypeMap(EmployeeDto.class, Employee.class).addMappings(mapper -> mapper.using(toUppercase).map(EmployeeDto::getName, Employee::setFirstName));
 typeMap.map(employeeDto);
 ```
+
 [/slide]
