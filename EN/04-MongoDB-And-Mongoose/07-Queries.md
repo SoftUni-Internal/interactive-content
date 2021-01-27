@@ -1,8 +1,9 @@
-[slide]
-
 # Mongoose Queries
 
-The **Mongoose Query** class provides a interface for finding, updating and deleting documents.
+[slide hideTitle]
+# Queries
+
+The **Mongoose Query** class provides an interface for finding, updating, and deleting documents.
 
 Mongoose defines all queries of the native MongoDB driver in a more **clear** and **understandable** way.
 
@@ -28,7 +29,7 @@ Do:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Mongoose Queries Example
 
@@ -48,7 +49,7 @@ query instanceof mongoose.Query; // true
 const docs = await query;
 ```
 
-Mongoose supports many diffrent queries:
+Mongoose supports many different queries:
 
 - For equality / Non-equality
 
@@ -96,16 +97,16 @@ We can **stack** different methods one upon the others.
 
 ``` js
 Student.find({})
-	.where('firstName').equals(George')
-	.where('age').gt(18).lt(65)
-	.sort({age:-1})
-	.skip(10)
-	.limit(10)
+  .where('firstName').equals(George')
+  .where('age').gt(18).lt(65)
+  .sort({age:-1})
+  .skip(10)
+  .limit(10)
 ```
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Model Population
 
@@ -129,7 +130,7 @@ const Student = mongoose.model('Student', studentSchema);
 const Subject = mongoose.model('Subject', subjectSchema);
 ```
 
-In this exampole, we are creating two models that reference each other.
+In this example, we are creating two models that reference each other.
 
 To load all the data referenced with the entity use `populate()` method.
 
@@ -151,7 +152,7 @@ Student.findOne({ name: 'Peter' })
       console.log(student.subjects)   })
 ```
 
-Let's take some look at some notes about `populate()`:
+Let us take a look at some notes about `populate()`:
 
 - If no document is found, then the field will be **null**.
 
@@ -159,7 +160,7 @@ Let's take some look at some notes about `populate()`:
 
 - If we have an array of documents and the documents are not found, it will return an empty array.
 
-- If there are two populate methods, populate same field, second populate will override the first one.
+- If there are two populate methods, populate the same field, the second populate will override the first one.
 
 
 We can populate based on a **condition**:
@@ -175,6 +176,6 @@ Subject.
   })
 ```
 
-U can read more about population [Here](mongoosejs.com/docs/populate.html)
+You can read more about population [Here](mongoosejs.com/docs/populate.html)
 
 [/slide]

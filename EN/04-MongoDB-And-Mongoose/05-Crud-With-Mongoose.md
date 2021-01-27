@@ -1,6 +1,8 @@
-[slide]
+# CRUD with Mongoose
 
-# Crud with Mongoose
+[slide hideTitle]
+
+# CRUD
 
 Using Mongoose you can perform all CRUD operations wherever you want in your code.
 
@@ -42,7 +44,7 @@ Student
 
 We must first find the student by their id.
 
-After that we update and save the new values in the model.
+After that, we update and save the new values in the model.
 
 - **Delete (Remove Data)**
 
@@ -54,7 +56,7 @@ Student.remove({name: studentName})
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Create Example
 
@@ -76,9 +78,9 @@ mongoose.connect(connectionStr).then(() => {
 });
 ```
 
-This is simple example of connecting to the database, creating a schema and constructing a model.
+This is a simple example of connecting to the database, creating a schema, and constructing a model.
 
-Inside the model, we insert a new Student a with name and age.
+Inside the model, we insert a new Student with a name and age.
 
 Then we save the model using the save() method.
 
@@ -87,7 +89,7 @@ At the final, we print the added student.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Read Example
 
@@ -105,9 +107,9 @@ Student
     .then(student => console.log(student))
 ```
 
-The first command, finds all of the students inside the database and print them.
+The first command finds all of the students inside the database and print them.
 
-The second, find all students by the name we pass and print them in the console.
+Second, find all students by the name we pass and print them in the console.
 
 The third example is used to find the first student with the name Peter. If there are more students with that name, using `FindOne()` will not print all of them.
 
@@ -115,7 +117,7 @@ Do not forget to always handle errors.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Update Example
 
@@ -142,14 +144,14 @@ Student
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Remove & Count Example
 
 Syntax:
-**remove(conditions, \[callback\])
+* `remove(conditions, [callback])`
 
-Note that if condition not passed or empty then all the records will be removed.
+Note that if the condition is not passed or empty then all the records will be removed.
 
 Take a look at the following example:
 
@@ -166,64 +168,3 @@ userModel.remove()
 
 [/slide]
 
-# Mongoose Middleware
-
-[slide]
-
-# Pre Middleware
-
-Middleware are functions which are passed control during execution of asynchronous functions.
-
-They are executed before or after a certain function that we specify.
-
-- Pre Middleware
-
-Pre middleware functions are executed one after another. We use them when:
-
-- We have a complex validation
-
-- To remove dependent documents
-
-- When we have asynchronous tasks that a certain action triggers
-
-As the name suggests, pre middlewares get executed **before** some other method execution on some documents.
-
-``` js
-const schema = new Schema(..);
-schema.pre('save', function() { 
-  return hashPassword()
-    .then(() => validateData());
-  });
-```
-
-
-[/slide]
-
-
-[slide]
-
-# Post Middleware
-
-Post middleware are executed once all the pre-hooks have been executed and after the original method has been executed.
-
-```
-pre-hooks -> method -> post-hooks
-```
-
-An example would help:
-
-``` js
-const schema = new Schema(..);
-
-schema.post('save', function(doc) { 
-  console.log('It has been saved', doc._id); 
-}); 
-
-schema.post('remove', function(doc) { 
-  console.log('It has been removed', doc._id); 
-});
-```
-
-
-
-[/slide]
