@@ -15,7 +15,7 @@
 **2. Matrice**
 - Citirea intrărilor dintr-o matrice
 
-**3. Operatorii logici &&, ||, ! și ()**
+**3. Operatorii logici**
 - Primii pași în limbajul JavaScript
 
 **4. Instrucțiunea condițională switch-case**
