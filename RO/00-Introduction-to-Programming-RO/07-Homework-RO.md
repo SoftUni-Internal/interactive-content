@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Print Hello "JavaScript"
 [code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
@@ -31,7 +31,7 @@ Hello JavaScript
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Calculate and Print 5 * 5
 [code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
@@ -62,7 +62,7 @@ Scrieți un program JavaScript, care:
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Name and Expression
 [code-task title="Name and Expression" taskId="pb-js-introduction-Name-and-Expression" executionType="tests-execution" executionStrategy="javascript-code"]
@@ -90,7 +90,7 @@ Catlyn
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Calculations
 [code-task title="Calculations" taskId="pb-js-introduction-Calculations" executionType="tests-execution" executionStrategy="javascript-code"]
@@ -124,7 +124,7 @@ Scrieți un program, care calculează și imprimă valoarea următoarelor expres
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Square of 7 * 7 Stars
 [code-task title="Square of 7 * 7 Stars" taskId="pb-js-introduction-SquareOf7x7" executionType="tests-execution" executionStrategy="javascript-code"]
