@@ -1,6 +1,6 @@
 # Lecție introductivă
 
-[slide hideTitle]
+[slide]
 
 # Conținutul lecției
 
