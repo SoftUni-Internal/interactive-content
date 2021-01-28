@@ -27,7 +27,8 @@ console.log("Welcome to coding");
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Computer Programs
 
 [vimeo-video]
@@ -68,7 +69,7 @@ In order to correctly **form our commands**, we should know the **syntax** and t
 Therefore, we are going to learn the **principles** of writing computer **code step by step**, with the syntax and logic used in JavaScript. 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Algorithms
 
 [vimeo-video]
@@ -110,7 +111,7 @@ console.log(min)
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Console-Based JavaScript Program – Example
 
 [vimeo-video]
@@ -133,7 +134,7 @@ convertUsdToEur("5");
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Browser-Based JavaScript Program – Example
 
 [vimeo-video]

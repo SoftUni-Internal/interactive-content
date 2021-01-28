@@ -17,7 +17,7 @@ console.log ("Bine ați venit la codare");
 ```
 
 [/slide]
-[slide]
+[slide hideTitle]
 # Programe de calculator
 [vimeo-video]
 [stream language / fluxul de limbaj = "EN" videoId = "486832336 / e4188d5010" implicit /]
@@ -45,7 +45,7 @@ Deocamdată, să spunem doar că **limbajul de programare JavaScript** necesită
 Pentru a **forma corect comenzile**, ar trebui să cunoaștem **sintaxa** și **semantica** a limbii cu care lucrăm, în cazul nostru - JavaScript.
 De aceea, vom învăța **principiile** de a scrie la computer **cod pas cu pas**, cu sintaxa și logica utilizate în JavaScript.
 [/slide]
-[slide]
+[slide hideTitle]
 # Algorithms
 [vimeo-video]
 [stream language="EN" videoId="486832885/b0c2ee91e7" default /]
@@ -73,8 +73,8 @@ function findMinNumber() {
 ```
 [/slide]
 
-[slide]
-Program JavaScript bazat pe console – Exemplu
+[slide hideTitle]
+# Program JavaScript bazat pe console – Exemplu
 [vimeo-video]
 [stream language="EN" videoId="486834408/4266dce8e6" default /]
 [stream language="RO" videoId="486834408/4266dce8e6"  /]
@@ -91,7 +91,7 @@ functia convertUsdToEur(input) {
 convertUsdToEur("5");
 ```
 [/slide]
-[slide]
+[slide hideTitle]
 # Browser-Based JavaScript Program – Example
 [vimeo-video]
 [stream language="EN" videoId="486834720/d1ce0ef921" default /]
