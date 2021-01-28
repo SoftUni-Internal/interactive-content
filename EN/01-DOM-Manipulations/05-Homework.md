@@ -42,9 +42,9 @@ Finally, you should **append** all divs to the element with an **id** **content*
 [tests]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="content"\>
-\</div\>`;
+\</div\>\`;
 
 let sentences = \['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet'\];
 result(sentences);
@@ -64,9 +64,9 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="content"\>
-\</div\>`;
+\</div\>\`;
 
 result(\['Section 1', 'Section 2', 'Section 3', 'Section 4'\]);
 
@@ -87,9 +87,9 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="content"\>
-\</div\>`;
+\</div\>\`;
 
 // Setup event
 let clickEvent = document.createEvent('MouseEvents');
