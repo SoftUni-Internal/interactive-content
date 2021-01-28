@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Medii de dezvoltare (IDE) 
 
 [vimeo-video]
@@ -36,7 +36,7 @@ Acesta este un exemplu al modului în care arată acest IDE (codul Visual Studio
 [image assetsSrc = "intro-to-programming-6.png" /]
 
 [/slide]
-[slide]
+[slide hideTitle]
 # Instalare Node.js and Visual Studio Code
 
 [vimeo-video]
@@ -97,7 +97,7 @@ La**pornirea VS Code**se afișează vizualizarea principală a Visual Studio Cod
 Asta e tot. Sunteți gata să lucrați cu Visual Studio Code.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Medii de dezvoltare: desktop și online
 
 [vimeo-video]
@@ -121,7 +121,7 @@ IDE alternativ (online)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Ce este codul Visual Studio
 
 [vimeo-video]
@@ -141,7 +141,7 @@ Acest lucru îi permite să funcționeze ca un editor **cross-language** pentru 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Rularea VSC și a extensiilor recomandate
 
 [vimeo-video]
@@ -165,7 +165,7 @@ Noi folosim diferite extensii în funcție de tipul de proiect la care lucrăm.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Proiecte în VSC
 
 [vimeo-video]

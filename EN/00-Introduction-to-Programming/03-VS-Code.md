@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Development Environments (IDE)
 
 [vimeo-video]
@@ -38,7 +38,7 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Installing Node.js and Visual Studio Code
 
 [vimeo-video]
@@ -99,7 +99,7 @@ Upon **starting VS Code** the main view of Visual Studio Code is displayed.
 That's all. You are ready to work with Visual Studio Code.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Development Environments: Desktop and Online
 
 [vimeo-video]
@@ -123,7 +123,7 @@ Alternative IDE (online)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # What is Visual Studio Code
 
 [vimeo-video]
@@ -145,7 +145,7 @@ We can **extend** it via extensions, which are available through a central repos
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Running VSC and Recommended Extensions
 
 [vimeo-video]
@@ -171,7 +171,7 @@ We use different extensions depending on what type of project we are working.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Projects in VSC
 
 [vimeo-video]
