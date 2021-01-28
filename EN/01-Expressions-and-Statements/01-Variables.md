@@ -1,6 +1,6 @@
 # Variables and Storing Data
 
-[slide]
+[slide hideTitle]
 # Real Life Example
 
 [vimeo-video]
@@ -18,7 +18,7 @@ We can use variables to store all kind of data we need.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Definition of Variables
 
 [vimeo-video]
@@ -38,7 +38,7 @@ We can imagine **variables** as containers for data or named areas in the memory
 The data that they are storing can be read and changed at any time.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Creating a Variable
 
 [vimeo-video]
@@ -70,7 +70,7 @@ let age = 35;
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Declaration Statements
 
 [vimeo-video]

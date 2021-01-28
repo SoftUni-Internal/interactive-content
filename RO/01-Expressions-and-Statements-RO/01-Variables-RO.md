@@ -1,6 +1,6 @@
 # Variabilele și stocarea datelor
 
-[slide]
+[slide hideTitle]
 # Exemplu din viața reală
 
 [vimeo-video]
@@ -18,7 +18,7 @@ Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevo
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Definiția variabilelor
 
 [vimeo-video]
@@ -38,7 +38,7 @@ Ne putem imagina **variabilele** ca niște containere de date sau ca niște zone
 Datele stocate de acestea pot fi citite și modificate în orice moment. 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Crearea unei variabile
 
 [vimeo-video]
@@ -70,7 +70,7 @@ let age = 35;
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Instrucțiuni de declarare a variabilelor
 
 [vimeo-video]

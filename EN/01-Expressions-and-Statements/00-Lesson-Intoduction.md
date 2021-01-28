@@ -1,6 +1,6 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
 # Expressions and Statements
 
