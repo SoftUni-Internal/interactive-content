@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Console App in VS Code
 
 [vimeo-video]
@@ -20,7 +20,7 @@ Create a file hello.js to hold your program's source code:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Writing the Program Code
 
 [vimeo-video]
@@ -52,7 +52,7 @@ This command is very typical in programming: we say a given **object** should be
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Starting the Program
 
 [vimeo-video]

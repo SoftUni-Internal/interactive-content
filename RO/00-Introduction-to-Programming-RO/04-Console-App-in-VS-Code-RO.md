@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Console App in VS Code
 
 [vimeo-video]
@@ -19,7 +19,7 @@ Creați un fișier hello.js pentru a organiza codul sursă al programului dumnea
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Writing the Program Code
 
 [vimeo-video]
@@ -54,7 +54,7 @@ Această comandă este foarte tipică în programare: deci, ar trebui să găsim
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Starting the Program
 
 [vimeo-video]
