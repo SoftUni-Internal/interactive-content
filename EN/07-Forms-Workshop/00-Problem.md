@@ -10,7 +10,9 @@ Now that we have our forms, it is time to edit them, so that the given informati
 Implement the following **validation**, **notification** and **styling** rules for each form.
 
 By default:
-- The input fields are **neutral** (neither valid nor invalid). If some of the fields are **touched**, you should determine the status of validation from the given data inside it.
+- The input fields are **neutral** (neither valid nor invalid). 
+
+If some of the fields are **touched**, you should determine the status of validation from the given data inside it.
 
 - Each input field is **required**.
 
@@ -20,10 +22,17 @@ The notification **below each button** should display the **status** of the **fo
 
 - If the status is **untouched** or **valid** the **left border** of the input field must be **green**, else **red**.
 
-- If the status is **invalid**, use - "**You can't continue until you provide a valid data**" as text or the default text provided from the skeleton. The **color** inside that paragraph should be "**red**" and the **button** should be **disabled**.
-- If the status is **valid** just **remove** the **notification** and **enable** the **button**.
+- If the status is **invalid**:
 
-Check the examples below each form for more clarity.
+Use - "**You can't continue until you provide a valid data**" as text or the default text provided from the skeleton. 
+
+The **color** inside that paragraph should be "**red**" and the **button** should be **disabled**.
+
+- If the status is **valid**:
+
+Just **remove** the **notification** and **enable** the **button**.
+
+For more clarity check the examples below each form.
 
 [/slide]
 
