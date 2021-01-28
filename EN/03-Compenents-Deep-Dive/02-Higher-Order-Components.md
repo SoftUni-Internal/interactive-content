@@ -1,7 +1,7 @@
 # Higher-Order Components
 
-[slide]
-# Higher-Order Components - Definition
+[slide hideTitle]
+# Definition
 
 **React 16.8** introduces the concept of higher-order components.
 
@@ -9,13 +9,14 @@ A higher-order component or **HOC** is an advanced technique in React for reusin
 
 **HOCs** are similar to higher-order functions, which can take a function as an argument and produce another function.
 
-**HOCs** basically incorporate the don't-repeat-yourself or **DRY** principle of programming, which means less code fewer bugs.
+**HOCs** basically incorporate the don-not-repeat-yourself or **DRY** principle of programming, which means less code fewer bugs.
 
 **HOCs** are not part of the React API, it is part of a software design pattern.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Example: Reducer Function
 
 In JavaScript we have a `reduce()` function, to which we pass **two parameters**, a function and an array.
@@ -39,12 +40,13 @@ In this example, we pass an **array of numbers** and in one case we apply an add
 And in other cases the multiplication function is applicable, multiplying each element.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Higher-Order Functions 
 
 Components are the primary unit of code reuse.
 
-- Some patterns aren't straightforward for traditional components
+- Some patterns are not straightforward for traditional components
 
 Whereas as component transforms props into UI.
 
@@ -57,7 +59,8 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # HOC Example
 
 In this example, we have a **logger function** that accepts the created component, and this function **returns another class component** to which `componentDidMount` is attached.
@@ -79,7 +82,8 @@ function logged(WrappedComponent) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Advantages
 
 Some of the advantages of using **HOCs** are
