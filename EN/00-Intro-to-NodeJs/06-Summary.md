@@ -6,21 +6,21 @@
 
 - Event Loop
 
-    - **Order of execution** for called functions.
+    - **Order of execution** for called functions
 
 - Modules
 
-    - **Core**, **Local** and **Third-Party** modules and their differences.
+    - **Core**, **Local** and **Third-Party** modules and their differences
     
-    - **Installing** a third-party module.
+    - **Installing** a third-party module
     
-    - **Using modules** in a program.
+    - **Using modules** in a program
 
 - Web servers
 
-   - **What** a web server does.
+   - **What** a web server does
 
-   - **Creating** a web server.
+   - **Creating** a web server
 
 ```js
 const http = require("http");
@@ -43,10 +43,10 @@ console.log("Node.js server running on port 3000");
 
 - Streams and utilities
 
-- **Continuous streaming** of data.
+- **Continuous streaming** of data
 
-- Working with the **file system**.
+- Working with the **file system**
 
-- **Debugging** a Node.js application.
+- **Debugging** a Node.js application
 
 [/slide]
