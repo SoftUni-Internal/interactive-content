@@ -15,7 +15,7 @@
 **2. Arrays**
 - Read input from an Array
 
-**3. Logical Operators `&&`, `||`, `!` and `()`**
+**3. Logical Operators &&, ||, ! and ()**
 - First steps in JavaScript language
 
 **4. Conditional Statement switch-case**
