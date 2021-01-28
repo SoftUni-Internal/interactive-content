@@ -1,52 +1,58 @@
 # Authentication Concepts
 
-[slide]
+[slide hideTitle]
 
 # Types of Errors
 
-Wen we have errors in our app, we have to handle them properly.
+When we have errors in our app, we have to handle them properly.
 
-The types of errors are:
+There are several types of errors:
 
--  **Technical** or **Network** errors.
+- **Technical** or **Network** errors:
 
-   -  An example of **technical** or **network** error is when the server is down.
+   - An example of these errors is when the server is down.
 
--  **Usual** or **Expected** errors are the predictable ones.
+- **Usual** or **Expected** errors:
 
-   -  Example of **usual** or **expected** is when a database operation fails or cannot read a file.
+   - They are predictable.
 
--  **Bugs** or **Logical** errors are not predictable because, with these errors, the software does not work how we expected.
+   - Example of a **usual** or **expected** error is when a database request fails.
 
-   -  Example of **bugs** or **logical** is trying to call something that does not exist.
+- **Bugs** or **Logical** errors:
 
-   -  Also, these errors are our fault, and we should fix them through the development process.
+   - These errors are not predictable because the software does not work as expected
+
+   - Example of **bugs** or **logical** error is trying to call a function that does not exist.
+
+   - These errors are our fault, and we should fix them through the development process.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Working with Errors
 
-We have built\-in error object from node.js.
+There is a **built-in error** object in **node.js**.
 
-This error object is a **technical** one, and it can be thrown.
+We can thrown the  **technical** object in case of an error.
 
-For synchronous coding, we use **try\-catch**.
+To catch errors in synchronous code, we need to use **try-catch**.
 
-But for asynchronous code we need to use `then().catch()`.
+For asynchronous code we use `then().catch()`.
 
-Also, we can handle the errors directly or to use the **ExpressJS** tools.
+We can handle the errors directly with **try-catch** or `then().catch()`. 
 
-When we want to use the **ExpressJS** functionality, we need to use the `next()` functions, which calls a middleware.
+But if we want, we can use the **ExpressJS** tools.
+
+When we use the **ExpressJS** functionality, we need to use the `next()` functions, which calls a middleware.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Working Synchronously with Errors
 
-To handle synchronous errors, we use the standard **try\-catch** block statement.
+We use the **try-catch** block statement with **async** and **await** to handle errors synchronously.
 
 Here is an example:
 
@@ -57,34 +63,33 @@ async (req, res, next) => {
     const { username, password } = req.body;
     try{
 	const currentUser = await User.findOne({ username });
-	// Login...
-    } catch (e) {
-    // Handle error...
+	   console.log(username)
+    } catch (error) {
+      console.error(error)
     }
 };
 ```
 
 Because it is synchronous, we use `try{}catch(error){}` block statement.
 
-In the `try{}` statement, we write the logic which we want to be executed.
+In the `try{}` statement, we print the **username** in the console.
 
-And in the `catch(error){}` statement we write the error handling logic.
-
-Which can `console.log()` the error, send a message, etc.
+In the `catch(error){}` statement we print the **error** in the console.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Working Asynchronously with Errors
 
-To handle asynchronous errors is almost the same as synchronously, but not exactly.
+We can handle asynchronous errors with `.then().catch()` block statement.
 
 Have a look at this example:
 
 ```js
-Post.findById(postId)
-   .then((post) => {
-      // Some logic
+Post.findById(productId)
+   .then((product) => {
+      console.log(product)
    })
    .catch((error) => {
       if (!error.statusCode) {
@@ -94,38 +99,36 @@ Post.findById(postId)
    });
 ```
 
-For asynchronous coding we use `then().catch()`.
+In the `then()` statement, we print the **product** in the console.
 
-In the `then()` statement we put the logic that we want to execute.
+But if the product is missing, it will be executed the `catch()` statement.
 
-But if something goes wrong, we will execute the `catch()` statement.
+In this case, we check the **status code**.
 
-In this case, first we check the status code, and after that we call the `next()` function.
+If it is missing, we set it to **500**.
 
-Which calls an error middleware.
+After that, we pass the **error** to the `next()` middleware.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Error Handling
 
-In the end, when an errors shows up, we need to handle it.
+When an error shows up, we need to handle it.
 
-While we are doing that, we need to make a good user experience.
+While we are doing that, we need to make a good **user experience**.
 
-There are several things that we can do to improve the UX in this moments.
+There are several things that we can do to improve the **UX** in moments like this.
 
-Some of them are:
+For example:
 
--  To return an error page.
+- We can **redirect** to an error page.
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling.png" /]
 
--  To return every response with error information and specific status code.
+- Every response from the API should have a **specific status code** and **well-described information** about the error.
 
--  To **redirect** to a specific error page
-
--  To return a error notification.
+- We can display an error notification.
 
 [/slide]
