@@ -43,7 +43,7 @@ Variables can be stored in the program's:
 
 [slide hideTitle]
 
-# Exemplu: Declararea unei variabile
+# Example: Declaring a variable
 
 interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo
 
