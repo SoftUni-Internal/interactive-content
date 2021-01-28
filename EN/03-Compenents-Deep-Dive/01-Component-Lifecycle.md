@@ -1,11 +1,11 @@
 # Component Lifecycle
 
-[slide]
+[slide hideTitle]
 # Component Lifecycle
 
 Various changes that the Component undergoes from its creation until it is terminated are called a **lifecycle of the component.**
 
-Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Unmounting**. 
+Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Unmounting**.
 
 These are **phases** in which different methods are performed.
 
@@ -18,7 +18,8 @@ Later in this course, we will learn how to implement them with a functional comp
 A component has lifecycle methods that can be **overridden** to run code at times in the process.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Lifecycle Methods
 
 They are exactly three lifecycle methods:
@@ -29,7 +30,7 @@ They are exactly three lifecycle methods:
 
 - **Unmounting:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
 
-[image assetsSrc="Compenents-Deep-Dive-1.png" /]
+[image assetsSrc="ReactJs-Compenents-Deep-Dive-1.png" /]
 
 Each component in ReactJS, each phase of this component lifecycle has different **methods** that are performed.
 

@@ -1,9 +1,9 @@
 # Lesson Introduction
 
-[slide]
-# Table of Contents
+[slide hideTitle]
+# Lesson Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Component Lifecycle**
 - A fundamental concept to learn ReactJS
