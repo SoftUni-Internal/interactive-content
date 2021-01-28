@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Expresii
 
 [vimeo-video]
