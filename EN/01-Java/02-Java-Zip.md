@@ -33,14 +33,18 @@ Using the **Person class**, write a program that reads from the console **N line
 [tests]
 [test open]
 [input]
+```
 3
 Peter 12
 John 31
 Steven 48
+```
 [/input]
 [output]
+```
 John - 31
 Steven - 48
+```
 [/output]
 [/test]
 [test]
@@ -64,6 +68,7 @@ Lyubo - 44
 [/test]
 [test]
 [input]
+```
 11
 A 40
 B 43
@@ -76,8 +81,10 @@ Oncho 100
 Pesho 321534
 Suzi 3213
 Zuzi 32131
+```
 [/input]
 [output]
+```
 A - 40
 B - 43
 C - 54
@@ -87,10 +94,12 @@ Mincho - 32
 Noncho - 123
 Oncho - 100
 Pesho - 321534790-0
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 11
 A 40
 B 43
@@ -103,8 +112,10 @@ Oncho 100
 Pesho 0
 Suzi 12
 Zuzi 32131
+```
 [/input]
 [output]
+```
 A - 40
 B - 43
 C - 54
@@ -113,19 +124,23 @@ Mincho - 32
 Noncho - 123
 Oncho - 100
 Zuzi - 32131
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 4
 A 10
 B 11790-0
+```
 [output]
 
 [/output]
 [/test]
 [test]
 [input]
+```
 13
 A 31
 W 45
@@ -140,8 +155,10 @@ J 543
 P 67
 H 76
 F 88
+```
 [/input]
 [output]
+```
 A - 31
 W - 45
 B - 76
@@ -155,10 +172,12 @@ J - 543
 P - 67
 H - 76
 F - 88
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 13
 Astor 45
 Asto 31
@@ -173,8 +192,10 @@ Julien 0
 Kodkoslav 30
 Pencho 67
 Zoro 55
+```
 [/input]
 [output]
+```
 Astor - 45
 Asto - 31
 Borko - 76
@@ -184,6 +205,7 @@ Encho - 645
 Haplio - 76
 Pencho - 67
 Zoro - 55
+```
 [/output]
 [/test]
 [test]
