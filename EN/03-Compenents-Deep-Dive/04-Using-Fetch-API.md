@@ -1,7 +1,8 @@
 # Fetch API
 
-[slide]
-# Fetch API: Description
+[slide hideTitle]
+
+# Definition
 
 The **Fetch API** provides an interface for accessing and manipulating requests to servers from web browsers.
 
@@ -19,7 +20,8 @@ For more information, see the fetch [documentation](https://developer.mozilla.or
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Fetch API: Example
 
 In this example we access GitHub API, we can only access publicly open routs.
@@ -45,7 +47,8 @@ Result:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Fetch API: Example(2)
 
 Fetch can be used **asynchronously**, it is depending on us what to use asynchronously or not.
@@ -69,7 +72,8 @@ Result:
 [image assetsSrc="Compenents-Deep-Dive-4.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Fetch Services
 
 The basic idea is to isolate the concern of fetching data inside components.
@@ -96,7 +100,8 @@ We separate the logic of data acquisition and creation, where we can use only fu
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Fetch Services: Usage
 
 When we separate data retrieval in a service, we can insert that service into components and use them.

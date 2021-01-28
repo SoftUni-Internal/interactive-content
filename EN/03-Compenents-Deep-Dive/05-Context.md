@@ -1,7 +1,8 @@
 # Context
 
-[slide]
-# Context: Definition
+[slide hideTitle]
+
+# Definition
 
 In a typical React application, data is passed from parent to child elements via **props**.
 
@@ -20,7 +21,8 @@ We should apply context only in cases where we can not solve the specific proble
 If we want to avoid passing props through nested levels, we should use component composition as a simpler solution.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Context APIs
 
 The context offers us several functions that we can use:
@@ -47,7 +49,8 @@ Also, each component has a display name, that we could change if we need to.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Context Usage
 
 It is important how we break **down the components** so that we can use the context correctly.
@@ -61,7 +64,8 @@ In these cases, we can **safely use props.**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # React.createContext
 
 Creates a Context object, while rendering will read the current context value from the closest matching provider above it in the tree.
@@ -74,7 +78,8 @@ const someContext = React.createContext(defaultValue);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Context.Provider
 
 Every Context object comes with a Provider React component.
@@ -90,7 +95,8 @@ One Provider can be connected to many consumers.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Class.contextType
 
 Property that can be assigned a Context object created by `React.createContext`.
@@ -102,7 +108,8 @@ You can reference this in any of the lifecycle methods including the render func
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Context.Consumer
 
 A React component that **subscribes** to context changes.
@@ -120,7 +127,8 @@ Requires a function as a child:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Context.displayName
 
 React DevTools uses this string to determine what to display for the context.
@@ -136,7 +144,8 @@ MyContext.displayName = 'MyDisplayName';
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Without Using Context
 
 This example shows how to present information without using context.
@@ -162,7 +171,8 @@ class ThemedButton extends React.Component {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Using Context
 
 With context, all we have to do is create context and give it value.

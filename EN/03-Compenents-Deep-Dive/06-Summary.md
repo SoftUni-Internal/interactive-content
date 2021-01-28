@@ -1,8 +1,8 @@
-[slide]
-
+[slide hideTitle]
 # Summary
 
-## In this lesson you learned:
+
+# In this lesson you learnt:
 
 - Component Lifecycle
 
@@ -37,7 +37,7 @@ fetch('https://api.github.com/users/k1r1L')
 
 - **Context API** provides way to pass data through the component **without passing** the props manually
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - Virtual DOM​
 

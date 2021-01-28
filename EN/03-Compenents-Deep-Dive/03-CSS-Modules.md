@@ -1,7 +1,8 @@
 # CSS Modules
 
-[slide]
-# CSS Modules: Definition
+[slide hideTitle]
+
+# Definition
 
 A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
 
@@ -20,7 +21,8 @@ The other option is to use CSS modules, which puts a unique id on the class and 
 Something else that CSS modules do is to bundle **several** CSS together and **display** it as one CSS.
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # CSS Modules: Example
 
 We can name the CSS classes as we wish.
@@ -49,7 +51,8 @@ This way ReactJS will know that this is a CSS module
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Import CSS Modules
 
 CSS Modules let you use the same CSS class name in a different file without worrying about naming clashes.

@@ -1,8 +1,8 @@
+[slide hideTitle]
 # Summary
 
-[slide hideTitle]
 
-## In this lesson you learnt:
+# In this lesson you learnt:
 
 - Components are reusable elements.
     - They are Functional and Class-based.
