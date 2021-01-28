@@ -17,15 +17,15 @@ You know, that the time you need to finish your lunch takes up precisely `1/8`(a
 
 
 ## Input
-YYou will receive 3 lines from the console:
+You will receive 3 lines from the console:
 - Name of the series - string
-- Duration of an episode - whole number in the range \[10… 90\]
-- Break duration - whole number in the range \[10… 120\]
+- Duration of an episode - a whole number in the range \[10… 90\]
+- Break duration - a whole number in the range \[10… 120\]
 
 ## Output
 The output should consist of one line:
 
-- If there is enough time to watch an episode: 
+- If there is enough time to watch the episode: 
 
 `You have enough time to watch {name of the series} and would be left with {time left} minutes of free time.`
 
