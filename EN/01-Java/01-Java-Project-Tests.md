@@ -6,6 +6,9 @@
 [task-description]
 ## DescriptionJavaScript code
 
+**TEST THE PROBLEM WITH THAT SOLUTION - 100 / 100* 
+[Solution100/100](https://videos.softuni.org/resources/Strategies-Solution/Person-Test-100-100.zip)
+
 The child derives from the person. 
 
 Every person has a **name**, and an **age**. 
