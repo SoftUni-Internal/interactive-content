@@ -207,7 +207,7 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 
 [slide hideTitle]
 # Problemă: Greeting
-[code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greeting" taskId="pb-js-expression-and-statements-lab-Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sayHello (input) {

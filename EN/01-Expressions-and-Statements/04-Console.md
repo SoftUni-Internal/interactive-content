@@ -214,7 +214,7 @@ Here is how the program would work if we had a square with a side length equal t
 
 [slide hideTitle]
 # Problem: Greeting
-[code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greeting" taskId="pb-js-expression-and-statements-lab-Greeting"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sayHello (input) {
