@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Operatorii aritmetici
 
 [vimeo-video]
@@ -30,7 +30,7 @@ console.log(a - b);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Înmulțirea numerelor
 
 [vimeo-video]
@@ -98,7 +98,7 @@ console.log(f);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Aminitire
 
 [vimeo-video]

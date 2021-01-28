@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Arithmetic Operations
 
 [vimeo-video]
@@ -30,7 +30,7 @@ console.log(a - b);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multiplying Numbers
 
 [vimeo-video]
@@ -98,7 +98,7 @@ console.log(f);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Remainder
 
 [vimeo-video]
