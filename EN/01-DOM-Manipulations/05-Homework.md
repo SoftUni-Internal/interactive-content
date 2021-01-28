@@ -1629,7 +1629,7 @@ yes
 
 [slide]
 # Problem: Table Search Engine
-[code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -1659,7 +1659,6 @@ Note: After every search, **clear the input field** and **remove all already sel
 
 **Output**
 [image assetsSrc="Dom-Manipulation(17).png" /]
-
 [/task-description]
 [code-io /]
 [tests]
