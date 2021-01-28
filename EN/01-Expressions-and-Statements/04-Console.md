@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Console (Terminal)
+
+interactive-programming-basics-with-java-expressions-and-statements-13-14-reading-user-input-and-formatting-output
+
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
 It usually looks like a black colored window like this one:
@@ -19,6 +22,8 @@ The console runs console applications. They read text from the command line and 
 
 [slide hideTitle]
 # Printing and Formatting Text and Numbers
+
+interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output
 
 ## Using `System.out.print(…)` and `System.out.println(…)`
 Working with these methods is easy because they can print all the basic types (string, numeric and primitive types).
@@ -67,7 +72,18 @@ The placeholders `%d` is replaced by the expressions, given after the text.
 [/slide]
 
 [slide hideTitle]
+
+# Example: Formatting Text and Numbers
+
+interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo
+
+[/slide]
+
+[slide hideTitle]
 # Reading User Input
+
+interactive-programming-basics-with-java-expressions-and-statements-15-reading-user-input
+
 To read a **text** (string) from the console, again, we have to **declare a new variable** and use the standard **command for reading a text from the console**:
 ```java 
 Scanner scanner = new Scanner(System.in);
@@ -95,9 +111,22 @@ I am from Sofia!
 ```
 [/slide]
 
+[slide hideTitle]
+
+# Example: Reading User Input
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
+
+[/slide]
+
 
 [slide hideTitle]
 # Reading Integers
+
+interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers 
+
 In order to read an **integer** (not a float) **number** from the console, we have to **declare a variable**, declare the **number type** and use the standard command for **reading a text line** from the system console `scanner.nextLine()` and after that **convert the text line into an integer number** using `Integer.parseInt(text)`:
 
 ```java
@@ -112,8 +141,13 @@ Try to write a wrong number, for example **"hello"**.
 You will get an error message during runtime (exception). This is normal. 
 
 Later on, we will find out how we can catch these kinds of errors and make the user enter a number again.
+[/slide]
 
+[slide hideTitle]
 # Example: Calculating a Square Area
+
+interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-demo
+
 This code demonstrates how we can calculate the square area by the given length of the side:
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -131,6 +165,9 @@ Here is how the program would work if we had a square with a side length equal t
 
 [slide hideTitle]
 # Reading Floating-Point Numbers
+
+interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers
+
 To read a **floating-point number** (fractional number, non-integer) from the console use the following command:
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -138,9 +175,15 @@ double num = Double.parseDouble(scanner.nextLine());
 ```
 The above Java code first reads a **text line** from the console, then converts (parses) it to a **floating-point number**.
 
+[/slide]
+
+[slide hideTitle]
 # Example: Converting Inches into Centimeters
+
+interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo
+
 Let's write a program that reads a floating-point number in inches and converts it to centimeters:
-```cs
+```java
 Scanner scanner = new Scanner(System.in);
 System.out.print("Inches = ");              
 double inches = Double.parseDouble(scanner.nextLine());
@@ -160,6 +203,9 @@ We will learn how to handle exceptions in later courses.
 
 [slide hideTitle]
 # Problem: Greeting
+
+interactive-programming-basics-with-java-expressions-and-statements-20-problem-greeting
+
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
 ```java
@@ -226,6 +272,9 @@ Hello, George!
 
 [slide hideTitle]
 # Solution: Greeting
+
+interactive-programming-basics-with-java-expressions-and-statements-21-problem-greeting-solution
+
 [code-task title="Greeting" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -293,6 +342,8 @@ Hello, George!
 
 [slide hideTitle]
 # Concatenating Text and Numbers
+
+
 Besides for summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
 
 In programming, joining two pieces of text is called **"concatenation"**. 

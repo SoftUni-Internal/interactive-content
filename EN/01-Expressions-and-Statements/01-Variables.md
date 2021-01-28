@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Variables
+
+interactive-programming-basics-with-java-expressions-and-statements-3-7-variables
+
 In programming, each **variable** stores a certain value of a particular type. 
 
 For example, data types can be: number, letter, text (string), date, color, image, list and others. Here are some examples of data types:
@@ -36,4 +39,12 @@ If you think of the variables as boxes that hold information, this is how they w
 Variables can be stored in the program's:
   * Operational memory - in the execution **stack**
   * Dynamic memory - in the **heap**
+[/slide]
+
+[slide hideTitle]
+
+# Exemplu: Declararea unei variabile
+
+interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo
+
 [/slide]

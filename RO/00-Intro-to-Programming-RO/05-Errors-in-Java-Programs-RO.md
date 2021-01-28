@@ -5,23 +5,23 @@ Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistake
 
 IntelliJ has a way to show us most of the basics errors we can make.
 
-It underlines the wrong code that cannot be compiled.
+Acesta ubliniază codul greșit care nu poate fi compilat.
 
-Some of the basic common mistakes we can face:
+Unele dintre greșelile de bază pe care le putem întâlni:
 
-- Mixing of lowercase and uppercase letters in syntax.
+- Amestecarea de litere minuscule cu cele majuscule în sintaxă.
 
-- Wrong Syntax.
+- O sintaxă greșită.
 
-- Missing quotes " " or bracket ( ).
+- Citate lipsă "" sau paranteză ().
 
-- Confusing Addition and Concatenation.
+- Să confundați adunarea cu concatenarea.
 
-The "+" operator has two functionalities.
+Operatorul "+" are două funcționalități:
 
-- Addition is for numbers.
+- Adunarea se folosește pentru numere.
 
-- Concatenation is for strings.
+- Concatenarea se folosește pentru șiruri.
 
 Confusing the assignment (=) and equality (==, ===) operators.
 

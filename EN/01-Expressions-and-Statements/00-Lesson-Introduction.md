@@ -3,6 +3,8 @@
 
 # Lesson Content
 
+interactive-programming-basics-with-java-expressions-and-statements-1-2-introduction-and-table-of-contents
+
 ## In this lesson you will learn:
 
 **1. Variables**

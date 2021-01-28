@@ -63,7 +63,17 @@ Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println (..
 System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 ```
 
-Substituentii „% d” se înlocuiesc cu expresiile date după text.
+Substituentii `%d` se înlocuiesc cu expresiile date după text.
+
+[/slide]
+
+[/slide]
+
+[slide hideTitle]
+
+# Example: Formatting Text and Numbers
+
+interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo
 
 [/slide]
 
@@ -96,6 +106,26 @@ I am from Sofia!
 ```
 [/slide]
 
+[slide hideTitle]
+
+# Example: Reading User Input
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
+
+[/slide]
+
+[slide hideTitle]
+
+# Example: Reading User Input
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
+
+interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
+
+[/slide]
+
 
 [slide hideTitle]
 # Citirea întregilor
@@ -112,7 +142,9 @@ Linia de mai sus a codului Java **citește un număr întreg** din prima linie d
 Veți primi un mesaj de eroare în timpul rulării (excepție). Asta este normal.
 
 Mai târziu, vom afla cum putem găsi aceste tipuri de erori și putem determina utilizatorului să introducă din nou un număr.
+[/slide]
 
+[slide hideTitle]
 # Exemplu: Calcularea unei suprafețe pătrate
 
 Acest cod demonstrează modul în care putem calcula suprafața pătrată după lungimea dată a laturii:
@@ -130,6 +162,9 @@ Mai jos vom vedea cum ar funcționa programul dacă am avea un pătrat cu o lung
 [/slide]
 
 [slide hideTitle]
+
+
+
 # Citirea numerelor reale reprezentate în virgulă mobilă cu simplă precizie (float)
 
 Pentru a citi un **număr real reprezentat în virgulă mobilă cu simplă precizie (float)** (număr fracțional, neîntreg) de pe consolă, utilizați următoarea comandă:

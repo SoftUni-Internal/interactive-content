@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Data Types
+
+interactive-programming-basics-with-java-expressions-and-statements-8-10-data-types
+
 In Java we can use data types to define variables as follows:
   * **int** – an integer number: 1, 2, 3…
   * **double** – a floating-point: -0.5, 3.14, …
@@ -27,6 +30,7 @@ The are characterized by:
 
 [slide hideTitle]
 # Naming Conventions
+
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
 In Java the convention for naming variables are used ***"camel-case"***. 

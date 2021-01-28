@@ -38,3 +38,11 @@ Variabilele pot fi stocate în programеlе:
    * Memorie operațională - în execuție **stivă**
    * Memorie dinamică - în **heap**
 [/slide]
+
+[slide hideTitle]
+
+# Example: Declaring a variable
+
+interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo
+
+[/slide]
