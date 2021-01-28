@@ -6,13 +6,13 @@ Modules in Node.js are groups of files, **providing certain functionality**.
 
 Modules are great because they:
 
-- Improve code **accessibility** and **reusability**.
+- Improve code **accessibility** and **reusability**
 
-- Operate within **their** own context, **independently of each other**.
+- Operate within **their** own context, **independently of each other**
 
-- Make a project look more **structured** and **easy-to-read**.
+- Make a project look more **structured** and **easy-to-read**
 
-- Can be used **within each other**.
+- Can be used **within each other**
 
 In other words, modules are **like different branches of a company** - small, neatly-organized, and responsible for their task.
 
