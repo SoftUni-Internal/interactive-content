@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Calculate a Square Area
 [code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -63,7 +63,7 @@ Write a function that gets an integer and calculates the area of a square with s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Currency Converter
 
 [vimeo-video]
@@ -133,7 +133,7 @@ Write a program to convert from USD to EUR:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Convert Radians to Degrees
 [code-task title="Convert Radians to Degrees" taskId="pb-js-expressions-Convert-Radians-To-Degrees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -202,7 +202,7 @@ Round the result to the nearest integer using `toFixed(0)`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Days to Minutes
 
 [vimeo-video]
@@ -275,7 +275,7 @@ Write a program to convert from days to minutes:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Circle Area and Perimeter
 [code-task title="Circle Area and Perimeter" taskId="pb-js-expressions-Circle-Area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -343,7 +343,7 @@ Perimeter = 59.06
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Yard Landscaping
 [code-task title="Yard Landscaping" taskId="pb-js-expressions-Yard-Landscaping" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
