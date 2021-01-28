@@ -70,7 +70,7 @@ Valid credentials in this case are:
 
 - **Email address**: 
 
-Must be at least **6 characters** long, followed by the "At" symbol `@`. 
+Must be at least **6 characters** long, followed by the "At" symbol - `@`. 
 
 The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
 
@@ -98,19 +98,33 @@ Must be at least **5 characters** long.
 
 The register form expects as input: **username**, **email**, **password**, **repeat password** and **telephone number** (not required).
 
-Username validation:
-- Should have at least **5 symbols** and is **required**.
+- Username validation:
 
-Email validation is the same as the log in case:
-- Should have at least **6 symbols**, after that the symbol of `@` is followed. The valid **domain name** is only "**gmail**" again followed by "**.**". **Top-level** domain can be "**bg**" or "**com**".
-    - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
-    - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+Must be at least **5 characters** long and is **required**.
+
+- Email validation:
+
+Must be at least **6 characters** long, followed by the "At" symbol - `@`.
+
+The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
+
+**Top-level** domain can be "**bg**" or "**com**".
+
+- **Valid** email addresses: 
+
+`testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
+
+- **Invalid** email addresses: 
+
+`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
 
 **Both passwords** should be grouped in the "**passwords**" group. 
 
-Password validation:
-- The given **password** should be at least **5 characters** (any English letter and digits are allowed).
-- The given **repeat password** should be the **same** as the given **password**.
+- Password validation:
+
+The given **password** must be at least **5 characters** long (any English letter and digits are allowed).
+
+The given **repeat password** must be the **same** as the given **password**.
 
 **Both fields** are considered **invalid** if some of them **do not cover** the described validation. 
 
@@ -136,13 +150,15 @@ Use the template-driven approach to build create a new theme and change user inf
 
 The new theme form expects as input: **theme name**, **post text**.
 
-Valid data:
-- Theme name - should be at least **5 characters** long
-- Post text - should be at least **10 characters** long
+- Valid data:
 
-The "**Post**" button should be **disabled** if the inputs are **NOT** valid.
+Theme name - must be at least **5 characters** long.
+
+Post text - must be at least **10 characters** long.
 
 [image assetsSrc="Angular-Forms-Workshop(2).png" /]
+
+The "**Post**" button should be **disabled** if the inputs are **NOT** valid.
 
 [image assetsSrc="Angular-Forms-Workshop(3).png" /]
 
@@ -162,13 +178,25 @@ The input fields should have the current information of the user.
 
 [image assetsSrc="Angular-Forms-Workshop(5).png" /]
 
-Username validation is the same as the register case:
-- Should have at least **5 symbols** and is **required**.
+- Username validation:
 
-Email validation is the same as the login and register cases:
-- Should have at least **6 symbols**, after that the symbol of `@` is followed. The valid **domain name** is only "**gmail**" again followed by "**.**". Top-level domain can be "**bg**" or "**com**".
-    - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `somethingelse@gmail.com`
-    - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+Must be at least **5 characters** long and is **required**.
+
+- Email validation:
+
+Must be at least **6 characters** long, followed by the "At" symbol - `@`. 
+
+The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
+
+Top-level domain can be "**bg**" or "**com**".
+
+- **Valid** email addresses: 
+
+`testing@gmail.com`, `testing@gmail.bg`, `somethingelse@gmail.com`
+
+- **Invalid** email addresses: 
+
+`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
 
 If the validation passes, the "**Save**" button should be **enabled**, and the user can make a post request to change the information.
 
