@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Console (Terminal)
 În general, **system console** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizualizează doar **text**, fără elemente grafice ca butoane, meniuri, etc. 
 
@@ -20,7 +20,7 @@ VS Code are propria sa consolă pe care o vom folosi pentru a citi intrările ș
 [image assetsSrc="expressions-and-statements-console.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Variabilele de logare pe consolă
 
 [vimeo-video]
@@ -40,7 +40,7 @@ console.log(firstNum + secondNum);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Citirea datelor de la utilizator
 
 [vimeo-video]
@@ -57,7 +57,7 @@ Este unul dintre modurile de a primi informații de la utilizatori.
 Programele pot, de asemenea, să preia informațiile de la utilizatori(input) prin intermediul rest API sau ca parametri ai unei funcții. a
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Funcții și parametri
 
 [vimeo-video]
@@ -99,7 +99,7 @@ Dacă introducem **București**, ieșirea va fi astfel: `I am from București!`
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Transmiterea Paranetrilor Multipli 
 
 [vimeo-video]
@@ -131,9 +131,9 @@ function printSum(firstNum, secondNum) {
 printSum(5, 10);
 console.log(firstNum);
 ```
-[/diapozitiv]
+[/slide]
 
-[diapozitiv]
+[slide hideTitle]
 # Formatarea ieșirii
 
 [vimeo-video]
@@ -167,9 +167,9 @@ console.log(`Hi, ${name}`);
 ```
 Prefixul `$` înaintea unui șir în JS ne ajută să facem așa-numita **string interpolation**: înlocuirea tuturor expresiilor care sunt plasate între acolade  `{ }` în text, cu valorile lor.
 
-[/diapozitiv]
+[/slide]
 
-[diapozitiv]
+[slide hideTitle]
 # Citirea numerelor
 
 [vimeo-video]
@@ -202,10 +202,10 @@ function example(input){
 Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală cu 3:
 
 [image assetsSrc="expressions-and-statements-example.png" /]
-[/diapozitiv]
+[/slide]
 
 
-[diapozitiv]
+[slide hideTitle]
 # Problemă: Greeting
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -263,7 +263,7 @@ Hello, George
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Greeting
 
 [vimeo-video]

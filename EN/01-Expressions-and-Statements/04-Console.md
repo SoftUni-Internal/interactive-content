@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Console (Terminal)
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
@@ -19,7 +19,7 @@ VS Code has its own console, which we are going to use to read input and print o
 [image assetsSrc="expressions-and-statements-console.png" /]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Log Variables on the Console
 
 [vimeo-video]
@@ -39,7 +39,7 @@ console.log(firstNum + secondNum);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Reading User Input
 
 [vimeo-video]
@@ -56,7 +56,7 @@ This is a way to receive user's input.
 Programs can also take the user data (input) from some rest API or as parameter in a function.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Functions and Parameters
 
 [vimeo-video]
@@ -98,7 +98,7 @@ When we enter **Buccuresht**, the output will be as follows: `I am from Buccures
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Passing Multiple Parameters
 
 [vimeo-video]
@@ -132,7 +132,7 @@ console.log(firstNum);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Formatting Output
 
 [vimeo-video]
@@ -170,7 +170,7 @@ The `$` prefix before a string in JS enables the so called **string interp
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Reading Numbers
 
 [vimeo-video]
@@ -212,7 +212,7 @@ Here is how the program would work if we had a square with a side length equal t
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Greeting
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -270,7 +270,7 @@ Hello, George
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Greeting
 
 [vimeo-video]

@@ -1,6 +1,6 @@
 # Statements
 
-[slide]
+[slide hideTitle]
 # Commands in the Computer Programs
 
 [vimeo-video]

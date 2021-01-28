@@ -1,6 +1,6 @@
 # Declarații
 
-[slide]
+[slide hideTitle]
 # Comenzile în programele de computer
 
 [vimeo-video]
