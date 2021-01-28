@@ -1,5 +1,7 @@
 # Explicit Function Binding
-[slide]
+
+[slide hideTitle]
+
 # Explicit Binding
 
 Binding allows us to modify the context of a function, essentially changing what the `this` keyword points to.
@@ -23,12 +25,17 @@ speak.call(person, "This is my story...");
 ```
 Normally `this` would have pointed back to the **global object** or **window** and returned `undefined` for `this.name`.
 
-Here we explicitly bound the object **person** to the `speak()` function using `call()`, it behaves as though `speak()` is a method of the person object, even though we see it is an outside function.
+We explicitly bound the object **person** to the `speak()` function using `call()`.
+
+It is an outside function but still behaves as though `speak()` is a method that belongs to the person object.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Changing the Context: Call
-Calls a function with a given value of `this` and optional arguments. It changes the context of the function to the given object.
+
+`call()` calls a function with a given value of `this` and optional arguments. It changes the context of the function to the given object.
 
 ```js
 functionName.call(objectToBind, additionalArguments);
@@ -36,7 +43,7 @@ functionName.call(objectToBind, additionalArguments);
 
 You can have 0, 1 or more arguments and when calling the object you can add them like so `function.call(object, argument1, argument2, argumentN)`;
 
-The `call()` method doesn't make a copy of the function, it simply executes it right away.
+The `call()` method does not make a copy of the function, it immediately executes it.
 
 ```js live
 let praise = function (...praises) {
@@ -65,13 +72,14 @@ console.log(praise.call(cat,
     'A good companion', 'A goofball'));
 ```
 
-In the above example you can see we used the same function that did not belong to either object and bound those objects to it. 
+In the example above, you can see we used the same function that did not belong to either object and bound those objects to it.
 
-Every time we used `call()` it had a different context for `this`.
+Every time we used `call()` the context of `this` was different.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Changing the Context: Apply
 
 `apply()` and `call()` serve the same purpose. However, `call()` takes a list of arguments, while `apply()` takes an array.
@@ -94,15 +102,16 @@ console.log(praise.apply(dog,
 ));
 ```
 
-If your arguments are in an array and you can still use `call()` in most situations by using the spread operator on the array.
+If you have an array of arguments, you can still use `call()` by using the spread operator:
 
 ```js
 functionName.call(thisContext, ...[yourArray]);
 ```
+
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Apply() - Example
 
@@ -122,7 +131,8 @@ firstPerson.shareInfo.apply(secondPerson);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Changing the Context: Bind
 
 `bind()` creates a **new function** and has `this` set to whatever value we provided. 
@@ -194,7 +204,7 @@ This is known as function borrowing in JavaScript.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Bind() - Example
 
@@ -212,8 +222,10 @@ console.log(boundGetX()); // 42
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Problem: Area and Volume Calculator
+
 [code-task title="Problem: Area and Volume Calculator" taskId="js-advanced-function-context-lab-Area-and-Volume-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -400,8 +412,10 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
+
 # Solution: Area and Volume Calculator
+
 [code-task title="Solution: Area and Volume Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
