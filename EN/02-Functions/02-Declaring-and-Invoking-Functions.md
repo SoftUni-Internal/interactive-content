@@ -466,6 +466,12 @@ Write a function that **calculates** and returns the value of a number **raised 
 
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
+
 ```
 function mathPower(input){
   let num = Number(input[0]);
