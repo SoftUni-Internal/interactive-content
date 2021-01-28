@@ -1,6 +1,6 @@
 # Data Types and Ranges of Variables
 
-[slide]
+[slide hideTitle]
 # Data Types
 
 [vimeo-video]
@@ -56,7 +56,7 @@ Everything else is an **object** type.
 U will cover **object** types later.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Data Types are Dynamic
 
 [vimeo-video]
@@ -86,7 +86,7 @@ The are characterized by:
 * **Default value** - Example: 0
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Naming Conventions
 
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.

@@ -1,6 +1,6 @@
 # Tipurile de date și gama de variabile
 
-[slide]
+[slide hideTitle]
 # Tipurile de date
 
 [vimeo-video]
@@ -56,7 +56,7 @@ Toate celelalte sunt tipuri de **obiecte**.
 Veți aprofunda tipurile de **obiecte** mai târziu în cadrul cursului.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Tipurile de date sunt dinamice
 
 [vimeo-video]
@@ -86,7 +86,7 @@ Ele se pot caracteriza prin:
 * **Valoare inițială sau default** - Exemplu: 0
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Convenții referitoare la denumire
 
 În programarea computerizată, convențiile privind nume sunt reprezentate de un set de **reguli** pentru alegerea numelor variabilelor.
