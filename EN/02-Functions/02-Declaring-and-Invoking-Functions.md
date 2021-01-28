@@ -375,6 +375,11 @@ function mathPower(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 Write a function that **calculates** and returns the value of a number **raised to a given power:**
 
