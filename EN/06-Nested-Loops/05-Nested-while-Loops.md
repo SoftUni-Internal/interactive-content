@@ -60,13 +60,13 @@ Write a program, which:
 * Prints a **triangle of stars**
 # Example
 ## Input
-- 5
+5
 ## Output
 \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
 [/task-description]
 [tests]
 [test]
