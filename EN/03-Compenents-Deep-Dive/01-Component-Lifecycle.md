@@ -42,7 +42,8 @@ For example, in the **mounting phase**, the constructor is called first, then th
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Component Mounting
 
 Each component can go through these three phases of **Mounting**, **Updating**, **Unmounting** at some point of its lifecycle.
@@ -55,7 +56,7 @@ When a component goes through **Mounting**, these four methods are executed, and
 
 - **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor.
 
-His only job is to take the properties from the constructor and put them in state
+His only job is to take the properties from the constructor and put them in state.
 
 - **Render:** this method renders the content in the browser, the HTML that will be displayed. 
 
@@ -67,7 +68,8 @@ This is one of the most widely used methods in ReactJS.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Component Updating
 
 This phase starts with the beginning of the react component and expands by receiving new updates:
@@ -88,7 +90,8 @@ The default behavior is to re-render the web page when the state has been change
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Component Unmounting
 
 The component is not needed, and the component will get unmounted using `componentWillUnmount()`.
