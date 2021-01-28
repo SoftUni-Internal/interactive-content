@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Typical Errors In JavaScript Programs
 
 [vimeo-video]

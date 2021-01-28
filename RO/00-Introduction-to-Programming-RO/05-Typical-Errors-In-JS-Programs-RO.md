@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Erori tipice în programele JavaScript
 
 [vimeo-video]
