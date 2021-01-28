@@ -120,7 +120,7 @@ yes
 
 [slide]
 # Problem: Notification
-[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -150,7 +150,7 @@ In the example below, a notification is shown when you click the button.
 [tests]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<div id="container"\>
         \<header class="header"\>
             \<h1\>Welcome to our site\</h1\>
@@ -172,7 +172,7 @@ document.body.innerHTML = `
         \</div\>
         \<div id="notification"\>\</div\>
     \</div\>
-`;
+\`;
 
 result('Something happened!');
 
@@ -186,7 +186,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<div id="container"\>
         \<header class="header"\>
             \<h1\>Welcome to our site\</h1\>
@@ -208,7 +208,7 @@ document.body.innerHTML = `
         \</div\>
         \<div id="notification"\>\</div\>
     \</div\>
-`;
+\`;
 
 result('Boop!');
 let toast = document.getElementById("notification");
@@ -221,7 +221,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<div id="container"\>
         \<header class="header"\>
             \<h1\>Welcome to our site\</h1\>
@@ -243,7 +243,7 @@ document.body.innerHTML = `
         \</div\>
         \<div id="notification"\>\</div\>
     \</div\>
-`;
+\`;
 
 // Stub timers
 let clock = sinon.useFakeTimers();
@@ -270,7 +270,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<div id="container"\>
         \<header class="header"\>
             \<h1\>Welcome to our site\</h1\>
@@ -292,7 +292,7 @@ document.body.innerHTML = `
         \</div\>
         \<div id="notification"\>\</div\>
     \</div\>
-`;
+\`;
 
 // Stub timers
 let clock = sinon.useFakeTimers();
@@ -553,7 +553,7 @@ Otherwise, when the profile is **unlocked** and we click on the `Hide it` button
 [test open]
 [input]
 // click when locked, click when unlocked
-document.body.innerHTML = `
+document.body.innerHTML = \`
 <div id="container">
 		<main id="main">
 			<div class="profile">
@@ -574,7 +574,6 @@ document.body.innerHTML = `
 				</div>
 				<button>Show more</button>
 			</div>
-
 			<div class="profile">
 				<img src="./iconProfile2.png" class="userIcon" />
 				<label>Lock</label>
@@ -593,7 +592,6 @@ document.body.innerHTML = `
 				</div>
 				<button>Show more</button>
 			</div>
-
 			<div class="profile">
 				<img src="./iconProfile2.png" class="userIcon" />
 				<label>Lock</label>
@@ -614,7 +612,7 @@ document.body.innerHTML = `
 			</div>
 		</main>
 	</div>
-`;
+\`;
 
 result();
 
@@ -640,7 +638,7 @@ yes
 [test]
 [input]
 // click when unlocked, lock, click again
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -661,7 +659,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -680,7 +677,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -701,7 +697,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -728,7 +724,7 @@ yes
 [test]
 [input]
 // value of button
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -749,7 +745,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -768,7 +763,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -789,7 +783,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -807,7 +801,7 @@ yes
 [test]
 [input]
 // value of button after locking
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -828,7 +822,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -847,7 +840,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -868,7 +860,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -888,7 +880,7 @@ yes
 [test]
 [input]
 // click when unlocked, lock, click again
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -909,7 +901,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -928,7 +919,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -949,7 +939,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -976,7 +966,7 @@ yes
 [test]
 [input]
 // value of button
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -997,7 +987,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1016,7 +1005,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1037,7 +1025,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -1055,7 +1043,7 @@ yes
 [test]
 [input]
 // value of button after locking
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -1076,7 +1064,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1095,7 +1082,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1116,7 +1102,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -1136,7 +1122,7 @@ yes
 [test]
 [input]
 // click when unlocked, lock, click again
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -1157,7 +1143,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1176,7 +1161,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1197,7 +1181,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -1224,7 +1208,7 @@ yes
 [test]
 [input]
 // value of button
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -1245,7 +1229,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1264,7 +1247,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1285,7 +1267,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -1303,7 +1285,7 @@ yes
 [test]
 [input]
 // value of button after locking
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
 		\<main id="main"\>
 			\<div class="profile"\>
@@ -1324,7 +1306,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1343,7 +1324,6 @@ document.body.innerHTML = `
 				\</div\>
 				\<button\>Show more\</button\>
 			\</div\>
-
 			\<div class="profile"\>
 				\<img src="./iconProfile2.png" class="userIcon" /\>
 				\<label\>Lock\</label\>
@@ -1364,7 +1344,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 
@@ -1388,7 +1368,7 @@ yes
 [slide]
 
 # Problem: Encode And Decode Messages
-[code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -1430,7 +1410,7 @@ After that, when the `Decode and read it` button is clicked, you need to get the
 [test open]
 [input]
 // decoding single message and clearing the textarea
-document.body.innerHTML = `
+document.body.innerHTML = \`
 	\<div id="container"\>
 		\<main id="main"\>
 			\<div\>
@@ -1445,7 +1425,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 \\$("textarea")\[0\].value = "pesho";
@@ -1464,7 +1444,7 @@ yes
 [test]
 [input]
 // decoding single message then encoding
-document.body.innerHTML = `
+document.body.innerHTML = \`
 	\<div id="container"\>
 		\<main id="main"\>
 			\<div\>
@@ -1479,7 +1459,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 \\$("textarea")\[0\].value = "pesho";
@@ -1497,7 +1477,7 @@ yes
 [test]
 [input]
 // decoding 2 messages
-document.body.innerHTML = `
+document.body.innerHTML = \`
 	\<div id="container"\>
 		\<main id="main"\>
 			\<div\>
@@ -1512,7 +1492,7 @@ document.body.innerHTML = `
 			\</div\>
 		\</main\>
 	\</div\>
-`;
+\`;
 
 result();
 \\$("textarea")\[0\].value = "hello";
@@ -1531,7 +1511,7 @@ yes
 [test]
 [input]
 // clearing textarea
-document.body.innerHTML = `\<div id="container"\>
+document.body.innerHTML = \`\<div id="container"\>
         \<nav id="navigation"\>
             \<div id="navigation-text"\>
                 \<p id="lecture-name"\>Intro to DOM\</p\>
@@ -1558,7 +1538,7 @@ document.body.innerHTML = `\<div id="container"\>
             \<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
             \</p\>
         \</footer\>
-    \</div\>`;
+    \</div\>\`;
 
 result();
 \\$("textarea")\[0\].value = "hello";
@@ -1577,7 +1557,7 @@ yes
 [test]
 [input]
 // clearing textarea and decoding 2 messages
-document.body.innerHTML = `\<div id="container"\>
+document.body.innerHTML = \`\<div id="container"\>
         \<nav id="navigation"\>
             \<div id="navigation-text"\>
                 \<p id="lecture-name"\>Intro to DOM\</p\>
@@ -1604,7 +1584,7 @@ document.body.innerHTML = `\<div id="container"\>
             \<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
             \</p\>
         \</footer\>
-    \</div\>`;
+    \</div\>\`;
 
 result();
 \\$("textarea")\[0\].value = "hello";
@@ -1665,7 +1645,7 @@ Note: After every search, **clear the input field** and **remove all already sel
 [test open]
 [input]
 // Search for John Dan - First table row must be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  <table class="container">
         <thead>
             <tr>
@@ -1711,7 +1691,7 @@ document.body.innerHTML = `
         </tbody>
     </table>
     <div id="result"></div>
-`;
+\`;
 
 result();
 
@@ -1739,7 +1719,7 @@ yes
 [test]
 [input]
 // Search for Sam Lima - Fourth table row must be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -1785,7 +1765,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -1813,7 +1793,7 @@ yes
 [test]
 [input]
 // Search for .bg - Second and Third table row should be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -1859,7 +1839,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -1887,7 +1867,7 @@ yes
 [test]
 [input]
 // Search for com - First, Fourth, Fifth row should be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -1933,7 +1913,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -1961,7 +1941,7 @@ yes
 [test]
 [input]
 // Search for "-" - Every row except the last one should be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -2007,7 +1987,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -2035,7 +2015,7 @@ yes
 [test]
 [input]
 // Search for @ - Every row should be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -2081,7 +2061,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -2107,7 +2087,7 @@ yes
 [test]
 [input]
 // Search for no-existing string - No one from the rows should be selected
-document.body.innerHTML = `
+document.body.innerHTML = \`
  \<table class="container"\>
         \<thead\>
             \<tr\>
@@ -2153,7 +2133,7 @@ document.body.innerHTML = `
         \</tbody\>
     \</table\>
     \<div id="result"\>\</div\>
-`;
+\`;
 
 result();
 
@@ -2183,7 +2163,7 @@ yes
 
 [slide]
 # Problem: Furniture
-[code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(){
@@ -2219,13 +2199,12 @@ Finally, print the average decoration factor in the format: `Average decoration 
 [test open]
 [input]
 // Adding 1 furniture
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<div id="container"\>
         \<div id="exercise"\>
             \<h1\>Furniture List\</h1\>
             \<textarea rows="5" cols="50"\>\</textarea\>
             \<button\>Generate\</button\>
-
             \<div class="wrapper"\>
                 \<div class="card-wrapper"\>
                     \<div class="row"\>
@@ -2264,12 +2243,11 @@ document.body.innerHTML = `
                     \</div\>
                 \</div\>
             \</div\>
-
             \<textarea rows="4" cols="50" disabled\>\</textarea\>
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result();
 
@@ -2302,13 +2280,12 @@ yes
 [test]
 [input]
 // Adding 1 furniture
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<div id="container"\>
         \<div id="exercise"\>
             \<h1\>Furniture List\</h1\>
             \<textarea rows="5" cols="50"\>\</textarea\>
             \<button\>Generate\</button\>
-
             \<div class="wrapper"\>
                 \<div class="card-wrapper"\>
                     \<div class="row"\>
@@ -2347,12 +2324,11 @@ document.body.innerHTML = `
                     \</div\>
                 \</div\>
             \</div\>
-
             \<textarea rows="4" cols="50" disabled\>\</textarea\>
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result();
 
@@ -2385,13 +2361,12 @@ yes
 [test]
 [input]
 // Adding 2 furniture, buy just 1
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<div id="container"\>
         \<div id="exercise"\>
             \<h1\>Furniture List\</h1\>
             \<textarea rows="5" cols="50"\>\</textarea\>
             \<button\>Generate\</button\>
-
             \<div class="wrapper"\>
                 \<div class="card-wrapper"\>
                     \<div class="row"\>
@@ -2430,12 +2405,11 @@ document.body.innerHTML = `
                     \</div\>
                 \</div\>
             \</div\>
-
             \<textarea rows="4" cols="50" disabled\>\</textarea\>
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result();
 
@@ -2480,13 +2454,12 @@ yes
 [test]
 [input]
 // Adding 2 furniture, buy the both
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<div id="container"\>
         \<div id="exercise"\>
             \<h1\>Furniture List\</h1\>
             \<textarea rows="5" cols="50"\>\</textarea\>
             \<button\>Generate\</button\>
-
             \<div class="wrapper"\>
                 \<div class="card-wrapper"\>
                     \<div class="row"\>
@@ -2525,12 +2498,11 @@ document.body.innerHTML = `
                     \</div\>
                 \</div\>
             \</div\>
-
             \<textarea rows="4" cols="50" disabled\>\</textarea\>
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result();
 
@@ -2576,13 +2548,12 @@ yes
 [test]
 [input]
 // Adding 3 furniture, buy all of them
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<div id="container"\>
         \<div id="exercise"\>
             \<h1\>Furniture List\</h1\>
             \<textarea rows="5" cols="50"\>\</textarea\>
             \<button\>Generate\</button\>
-
             \<div class="wrapper"\>
                 \<div class="card-wrapper"\>
                     \<div class="row"\>
@@ -2626,7 +2597,7 @@ document.body.innerHTML = `
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result();
 
@@ -2729,7 +2700,7 @@ After every hand, push the current card names in the **history div** in the foll
 [test open]
 [input]
 // clicking 2 cards, adding history, coloring
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
@@ -2747,13 +2718,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -2766,7 +2735,7 @@ document.body.innerHTML = `
     \</div\>
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -2787,7 +2756,7 @@ yes
 [test]
 [input]
 // Clicking 4 cards - History Check
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
@@ -2805,13 +2774,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -2822,10 +2789,9 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="13"/\>
         \<img src="images/card.jpg" name="3"/\>
     \</div\>
-
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -2846,13 +2812,12 @@ yes
 [test]
 [input]
 // clicking 1 cards, empty history
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
-
 \<section class="cards"\>
     \<div id="player1Div"\>
         \<img src="images/card.jpg" name="2"/\>
@@ -2864,13 +2829,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -2881,10 +2844,9 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="13"/\>
         \<img src="images/card.jpg" name="3"/\>
     \</div\>
-
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -2905,13 +2867,12 @@ yes
 [test]
 [input]
 // clicking 1 cards, empty history
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
-
 \<section class="cards"\>
     \<div id="player1Div"\>
         \<img src="images/card.jpg" name="2"/\>
@@ -2923,13 +2884,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -2940,10 +2899,9 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="13"/\>
         \<img src="images/card.jpg" name="3"/\>
     \</div\>
-
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -2964,7 +2922,7 @@ yes
 [test]
 [input]
 // clicking 2 cards - Checking the loosing one
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
@@ -2982,13 +2940,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -3001,7 +2957,7 @@ document.body.innerHTML = `
     \</div\>
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -3021,7 +2977,7 @@ yes
 [test]
 [input]
 // clicking 1 card, checking the background
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
@@ -3039,13 +2995,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -3058,7 +3012,7 @@ document.body.innerHTML = `
     \</div\>
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
@@ -3075,7 +3029,7 @@ yes
 [test]
 [input]
 // clicking 2 cards, adding history, coloring
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
     one is greater and keeps history of all hands.
@@ -3093,13 +3047,11 @@ document.body.innerHTML = `
         \<img src="images/card.jpg" name="8"/\>
         \<img src="images/card.jpg" name="9"/\>
     \</div\>
-
     \<div id="result"\>
         \<span\>\</span\>
         \<span\>vs\</span\>
         \<span\>\</span\>
     \</div\>
-
     \<div id="player2Div"\>
         \<img src="images/card.jpg" name="10"/\>
         \<img src="images/card.jpg" name="14"/\>
@@ -3112,7 +3064,7 @@ document.body.innerHTML = `
     \</div\>
     \<div id="history"\>\</div\>
 \</section\>
-`;
+\`;
 
 result();
 
