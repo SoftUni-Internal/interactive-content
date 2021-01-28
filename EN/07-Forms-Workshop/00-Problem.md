@@ -60,24 +60,30 @@ In this case the left border should be **green** again.
 
 [slide hideTitle]
 
-# Reactive Forms
+# Reactive Forms Login
 
 Use the model-driven **reactive** approach to build the **login** and the **register** form.
-
-# Login
 
 The login form expects as input **email** and **password**.
 
 Valid credentials in this case are:
+
 - **Email address**: 
 
 Must be at least **6 characters** long, followed by `@`. 
 
-The valid **domain name** is only "**gmail**", followed by "**.**". 
+The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
 
 **Top-level** domain can be "**bg**" or "**com**".
-    - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
-    - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+
+**Valid** email addresses: 
+
+`testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
+
+**Invalid** email addresses: 
+
+`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+
 - **Password**: 
 
 Must be at least **5 characters** long.
@@ -88,7 +94,7 @@ Must be at least **5 characters** long.
 
 [slide hideTitle]
 
-# Register
+# Reactive Forms Register
 
 The register form expects as input: **username**, **email**, **password**, **repeat password** and **telephone number** (not required).
 
