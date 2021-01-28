@@ -629,6 +629,7 @@ insert into players (id, first_name, last_name, age, position, salary, hire_date
 insert into players (id, first_name, last_name, age, position, salary, hire_date, skills_data_id, team_id) values (100, 'Jorrie', 'Lumsden', 50, 'M', 508035.44, '2010-09-19 11:52:56', 4, 65);
 [/input]
 [output]
+```
 97
 Smolensk
 92
@@ -707,6 +708,7 @@ Santa Helena de Goiás
 Vostochnyy
 
 Zavolzh’ye
+```
 [/output]
 [/test]
 
