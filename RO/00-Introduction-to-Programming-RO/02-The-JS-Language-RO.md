@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Limbaje de programare
 
 [vimeo-video]
@@ -30,7 +30,7 @@ Interpretul este `un program pentru executarea programelor`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Limba JavaScript
 
@@ -56,7 +56,7 @@ Este, de asemenea, **ușor de învățat**JavaScript prin setul excelent de tuto
 Suportă programarea **imperativă**, **funcțională** și **orientată pe obiecte**, cu o sintaxă clară și concisă.
 
 [/slide]
-[slide]
+[slide hideTitle]
 # Execuție JavaScript
 [vimeo-video]
 [stream language="EN" videoId="486835379/12b65918cb" default /]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Programming Languages
 
@@ -31,7 +31,7 @@ It **executes the commands** in the program one after another, as it is able to 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The JavaScript Language
 
@@ -58,7 +58,7 @@ Supports **imperative**, **functional** and **object-oriented** programming with
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JavaScript Execution
 
