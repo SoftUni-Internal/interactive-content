@@ -82,7 +82,12 @@ Write a program to calculate the speed by time and distance:
 [/slide]
 
 [slide hideTitle]
-# Problem: Currency Converter
+# Problem with Solution: Currency Converter
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor + 
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor-solution
+
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -251,6 +256,11 @@ Write a program to calculate a triangle area:
 
 [slide hideTitle]
 # Problem: Four Operations
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations + 
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-solution
+
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -764,6 +774,11 @@ Print on the console the calculated area.
 
 [slide hideTitle]
 # Problem: Projects Creation
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation +
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-solution
+
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -1380,6 +1395,11 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 
 [slide hideTitle]
 # Problem: Fishland
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland + 
+
+interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-solution
+
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

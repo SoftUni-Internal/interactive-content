@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+interactive-programming-basics-with-java-expressions-and-statements-47-summary
+
 ## In this lesson we learned: 
 
 - What are Variables and how we use them

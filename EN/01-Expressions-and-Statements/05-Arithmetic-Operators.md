@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Arithmetic Operations
+
+interactive-programming-basics-with-java-expressions-and-statements-23-27-arithmetic-operators
+
 Let's examine the basic **arithmetic operations** in programming. 
 
 We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*` and `/`.
@@ -98,5 +101,46 @@ See the following example:
 ```java live
 System.out.println(3 % 2);
 System.out.println(4 % 2);
+```
+[/slide]
+
+[slide hideTitle]
+# Concatenating Text and Numbers
+
+interactive-programming-basics-with-java-expressions-and-statements-22-concatenating-text-and-numbers
+
+Besides for summing up numbers, the operator `+` is also used for **joining pieces of text** (concatenation of two strings one after another). 
+
+In programming, joining two pieces of text is called **"concatenation"**. 
+
+Here is how we can concatenate a text with a number by the `+` operator:
+
+```java live
+String firstName = "John";
+String lastName = "Doe";
+int age = 19;
+String str = firstName + " " + lastName + " @ " + age;
+System.out.println(str);  // John Doe @ 19
+```
+
+# Examples: Concatenating Text and Numbers
+Here is another **example** of concatenating text and numbers:
+```java live
+double a = 1.5;
+double b = 2.5;
+String sum = "The sum is: " + a + b;
+System.out.println(sum);  // The sum is: 1.52.5
+```
+
+Did you notice **something strange**? Maybe you expected the numbers `a` and `b` to be summed? 
+
+Actually, the concatenation works from right to left and the result above is absolutely correct. 
+
+If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
+```java live
+double a = 1.5;
+double b = 2.5;
+String sum = "The sum is: " + (a + b);
+System.out.println(sum);  // The sum is: 4
 ```
 [/slide]
