@@ -65,7 +65,7 @@ System.out.printf("%d + %d = %d", 3, 5, 3 + 5);
 
 Substituentii `%d` se înlocuiesc cu expresiile date după text.
 
-[/slide]
+
 
 [/slide]
 
