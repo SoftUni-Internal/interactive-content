@@ -1,23 +1,28 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learned:
 
--  What is validation.
+-  What is validation?
 
-   -  **How** and **why** you should validate the data that you are receiving.
+   - **Preventing** the user to enter **incorrect** data.
 
-   -  How to **validate** and **sanitize** data with **express\-validator**.
+   - **express-validator**:
 
-   ```js
-   const { body } = require('express-validator');
+      - **Validating** data
 
-   body('email').isEmail().normalizeEmail();
-   body('password').isLength({ min: 5 }).isAlphanumeric().trim();
-   ```
+      ```js
+      body('email').isEmail()
+      ```
 
-   -  How mongoose validator works.
+      - **Sanitizing** data
+
+      ```js
+      body('email').isEmail().normalizeEmail();
+      ```
+
+   - Mongoose validator
 
    ```js
    schema.pre('validate', () => {});
@@ -26,19 +31,25 @@
    schema.post('save', () => {});
    ```
 
--  How to handle errors.
+- Handle errors:
 
-   -  Different types of errors.
+   - Types of errors:
 
-   -  Different ways to handle them.
+      - **Technical** errors
 
-      -  Try\-catch:
+      - **Expected** errors
+
+      - **Bugs**
+
+   -  Ways to handle errors:
+
+      -  **Try-catch**:
 
       ```js
       try {
-         // Logic...
-      } catch (e) {
-         // Error Handling...
+         console.log('Hello')
+      } catch (error) {
+         console.error(error)
       }
       ```
 
@@ -46,21 +57,21 @@
 
       ```js
       .then((example) => {
-      // Logic...
+         console.log('Hello')
       })
       .catch((error) => {
-      // Error Handling...
+         console.error(error)
       });
       ```
 
-## In the next lesson you will learn about:
+## In the next lesson, you will learn:
 
 -  Deployment:
 
-   -  Set up.
+   -  Set up
 
-   -  App preparation.
+   -  App preparation
 
-   -  Deployment.
+   -  Deployment
 
 [/slide]
