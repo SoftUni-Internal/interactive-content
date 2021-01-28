@@ -45,19 +45,21 @@ Steven - 48
 [/test]
 [test]
 [input]
+```
 5
 Nikolai 33
 Yordan 88
 Tosho 22
 Lyubo 44
 Stanislav 11
-
+```
 [/input]
 [output]
+```
 Nikolai - 33
 Yordan - 88
 Lyubo - 44
-
+```
 [/output]
 [/test]
 [test]
