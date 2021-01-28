@@ -86,10 +86,7 @@ Encho - 99
 Mincho - 32
 Noncho - 123
 Oncho - 100
-Pesho - 321534
-Suzi - 3213
-Zuzi - 32131
-
+Pesho - 321534790-0
 [/output]
 [/test]
 [test]
@@ -122,10 +119,7 @@ Zuzi - 32131
 [input]
 4
 A 10
-B 11
-C 12
-D 13
-[/input]
+B 11790-0
 [output]
 
 [/output]
@@ -194,17 +188,21 @@ Zoro - 55
 [/test]
 [test]
 [input]
+```
 4
 Ann 31
 Anntoanette 39
 An 33
 Annie 31
+```
 [/input]
 [output]
+```
 Ann - 31
 Anntoanette - 39
 An - 33
 Annie - 31
+```
 [/output]
 [/test]
 [/tests]
