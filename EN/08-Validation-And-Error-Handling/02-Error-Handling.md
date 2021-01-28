@@ -34,7 +34,7 @@ There are several types of errors:
 
 There is a **built-in error** object in **node.js**.
 
-We can thrown the  **technical** object in case of an error.
+We can be thrown the  **technical** object in case of an error.
 
 To catch errors in synchronous code, we need to use **try-catch**.
 
@@ -62,8 +62,8 @@ const User = require('../models/User/);
 async (req, res, next) => {
     const { username, password } = req.body;
     try{
-	const currentUser = await User.findOne({ username });
-	   console.log(username)
+   const currentUser = await User.findOne({ username });
+      console.log(username)
     } catch (error) {
       console.error(error)
     }
