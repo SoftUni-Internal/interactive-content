@@ -1,11 +1,12 @@
-[slide]
+[slide hideTitle]
+
 # Summary
 
 # In this lesson you learnt:
 
 **Functional Context** - the object from which the code originated is its default context. 
 
-What **this** refers to depends on **where** and **how** the **function** that is being executed **is called**.
+What **this** refers, to depends on **where** and **how** the **function** that is being executed **is called**.
 
 The functions **bind**, **apply** and **call** that can all be used to explicitly set the value of **this**.
 
