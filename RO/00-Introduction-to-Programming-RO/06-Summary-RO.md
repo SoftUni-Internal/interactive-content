@@ -1,5 +1,5 @@
 
-[slide]
+[slide hideTitle]
 # Rezumat
 
 [vimeo-video]
@@ -19,7 +19,7 @@
 
 - Cum să creăm un proiect, fișiere și aplicații de consolă în VSCode.
 
-În lecția următoare vom învăța:
+## În lecția următoare vom învăța:
 
 - Tipuri de date
 

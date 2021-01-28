@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -18,7 +18,7 @@
 
 - How to create a project, files, and console applications in VSCode. 
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - Data Types
 
