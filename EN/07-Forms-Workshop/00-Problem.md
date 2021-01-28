@@ -38,25 +38,23 @@ For more clarity check the examples below each form.
 
 [slide hideTitle]
 
-# Invalid Cases
+# Valid or Invalid Cases
 
-In case some of the input fields аrе **invalid**, the following **input field** should be styled with class **input-error**, which has the following style:
+In case some of the input fields аrе **invalid**, the following **input field** should be styled with class **input-error**.
+
+Use the following style:
 
 ```css
 border-left-color: red;
 ```
 
-And **notification** should be shown with information about the validation. 
+**Notification** should be shown with information about the validation. 
 
 The text inside that paragraph also should be **red**.
 
-[/slide]
+When the input field is filled with **valid** information, the class **input-error** should be **disabled**.
 
-[slide hideTitle]
-
-# Valid Cases
-
-When the input field is filled with **valid** information, the class **input-error** should be **disabled** so that the left border should be **green** again.
+In this case the left border should be **green** again.
 
 [/slide]
 
@@ -66,19 +64,23 @@ When the input field is filled with **valid** information, the class **input-err
 
 Use the model-driven **reactive** approach to build the **login** and the **register** form.
 
-[/slide]
-
-[slide hideTitle]
-
 # Login
 
 The login form expects as input **email** and **password**.
 
 Valid credentials in this case are:
-- **Email address**: must have at least **6 symbols**, after that the symbol `@` is followed. The valid **domain name** is only "**gmail**" again followed by ".". **Top-level** domain can be "**bg**" or "**com**".
+- **Email address**: 
+
+Must be at least **6 characters** long, followed by `@`. 
+
+The valid **domain name** is only "**gmail**", followed by "**.**". 
+
+**Top-level** domain can be "**bg**" or "**com**".
     - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
     - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
-- **Password**: should be at least **5 symbols** long.
+- **Password**: 
+
+Must be at least **5 characters** long.
 
 [image assetsSrc="Angular-Forms-Workshop.png" /]
 
