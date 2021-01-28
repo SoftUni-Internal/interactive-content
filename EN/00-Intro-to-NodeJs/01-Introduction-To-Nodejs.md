@@ -10,13 +10,13 @@ Node.js is a **runtime environment** that allows writing JavaScript **on the ser
 
 Here are some of the benefits that come along with it:
 
-- Node.js is **very easy to learn** as it uses just **regular JavaScript**.
+- Node.js is **very easy to learn** as it uses just **regular JavaScript**
 
-- It has a **high performance** thanks to **Google's V8 engine**, which compiles code **fast and efficiently**.
+- It has a **high performance** thanks to **Google's V8 engine**, which compiles code **fast and efficiently**
 
-- Node.js has a **great package manager** with **over a million free packages**.
+- Node.js has a **great package manager** with **over a million free packages**
 
-- Its community is very **large and active** which means bug-fixes and updates on packages are happening **very often**.
+- Its community is very **large and active** which means bug-fixes and updates on packages are happening **very often**
 
 [/slide]
 
@@ -42,7 +42,7 @@ node -v
 
 There are two ways to execute Node.js code:
 
-- Running it **directly from the terminal**.
+- Running it **directly from the terminal**
 
 ```js live
 function greeting() {
@@ -52,7 +52,7 @@ function greeting() {
 greeting(); 
 ```
 
-- Writing the code in a file and opening it with the `node` command.
+- Writing the code in a file and opening it with the `node` command
 
 ```js live
 function sumNumbers(x, y){
@@ -86,11 +86,11 @@ To initialize a personal Node.js project:
 npm init
 ```
 
-- Define the project's key characteristics.
+- Define the project's key characteristics
 
-- Wait for the `package.json` configuration file to be created.
+- Wait for the `package.json` configuration file to be created
 
-- Open an editor and start coding.
+- Open an editor and start coding
 
 To **go around** all the questions about the project's characteristics just type: 
 
