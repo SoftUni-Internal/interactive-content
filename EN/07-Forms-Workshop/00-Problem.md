@@ -70,17 +70,17 @@ Valid credentials in this case are:
 
 - **Email address**: 
 
-Must be at least **6 characters** long, followed by `@`. 
+Must be at least **6 characters** long, followed by the "At" symbol `@`. 
 
 The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
 
 **Top-level** domain can be "**bg**" or "**com**".
 
-**Valid** email addresses: 
+- **Valid** email addresses: 
 
 `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
 
-**Invalid** email addresses: 
+- **Invalid** email addresses: 
 
 `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
 
