@@ -5,14 +5,18 @@
 [code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
-select c.name, count(p.id) as `total_count_of_players`, sum(p.salary) as `total_sum_of_salaries`
-from players p join teams ts on
-p.team_id = ts.id join stadiums s on
-s.id = ts.stadium_id join towns t on
-t.id = s.town_id right join countries c on
-c.id = t.country_id
-group by c.name
-order by total_count_of_players desc, c.name;
+SELECT MAX(`sd`.`speed`) AS `max_speed`,`t`.`name` AS `town_name` FROM `skills_data` AS `sd`
+RIGHT JOIN `players` AS `p`
+ON `sd`.`id` = `p`.`skills_data_id`
+RIGHT JOIN `teams` AS `te`
+ON `p`.`team_id` = `te`.`id`
+RIGHT JOIN `stadiums` AS `st`
+ON `te`.`stadium_id` = `st`.`id`
+RIGHT JOIN `towns` AS `t`
+ON `st`.`town_id` = `t`.`id`
+WHERE `te`.`name` != 'Devify'
+GROUP BY `t`.`name`
+ORDER BY `max_speed` DESC, `t`.`name`;
 ```
 [/code-editor]
 [task-description]
