@@ -1,23 +1,25 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table of contents
+# Lesson Content
 
 ## In this lesson you will learn:
 
 **1. What is Validation**
 
--  Why to validate data.
+- Validating Data
 
--  How to validate data.
+- Sanitizing and validating data with **express-validator**
 
--  How to sanitize and validate data with express\-validator.
-
--  Mongoose validation.
+- Mongoose validation
 
 **2. What is Error Handling**
 
--  How to handle different types of errors.
+-  How to handle different types of errors
+
+- **try-catch**
+
+- **then-catch**
 
 [/slide]
