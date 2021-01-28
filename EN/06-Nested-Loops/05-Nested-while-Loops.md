@@ -62,7 +62,7 @@ Write a program, which:
 ## Input
 - 5
 ## Output
-- \*
+\*
 - \*\*
 - \*\*\*
 - \*\*\*\*
