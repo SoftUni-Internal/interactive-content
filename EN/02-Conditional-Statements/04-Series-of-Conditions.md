@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Sequence of If-Else Conditions
 
 [vimeo-video]
@@ -26,7 +26,7 @@ else {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example: Digits in English
 
 [vimeo-video]

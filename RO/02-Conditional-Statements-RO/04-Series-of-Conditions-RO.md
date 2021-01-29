@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Secvența condițiilor If-Else
 
@@ -27,7 +27,7 @@ else {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exemplu: cifre în engleză
 [vimeo-video]
 [stream language="EN" videoId="486879419/2d0e9d0270" default /]
