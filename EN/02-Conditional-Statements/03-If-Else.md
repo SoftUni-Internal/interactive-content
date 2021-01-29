@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # If-Else Conditions
 
 [vimeo-video]
@@ -53,7 +53,7 @@ function example(input) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Block of Code
 
 [vimeo-video]
@@ -90,15 +90,9 @@ if (color == "red") {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even or Odd
-
-[vimeo-video]
-[stream language="EN" videoId="486879240/35e90b72ee" default /]
-[stream language="RO" videoId="486879240/35e90b72ee"  /]
-[/video-vimeo]
-
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Even or Odd" taskId="pb-js-conditional-statements-lab-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
@@ -110,8 +104,8 @@ function evenOrOdd(input) {
 # Description
 Write a program, which checks if a number is **even** or **odd**
 
-  * If it's even, print `even`
-  * If it's odd, print `odd`
+  * If it is even, print `even`
+  * If it is odd, print `odd`
 
 # Example
 
@@ -153,18 +147,19 @@ even
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Even or Odd
+
+[vimeo-video]
+[stream language="EN" videoId="486879240/35e90b72ee" default /]
+[stream language="RO" videoId="486879240/35e90b72ee"  /]
+[/video-vimeo]
+
 [code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
-  let num = Number(input.shift());
-   if (num % 2 === 0) {
-      console.log("even");
-   } else {
-      console.log("odd");
-   }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -172,8 +167,8 @@ function evenOrOdd(input) {
 # Description
 Write a program, which checks if a number is **even** or **odd**
 
-  * If it's even, print `even`
-  * If it's odd, print `odd`
+  * If it is even, print `even`
+  * If it is odd, print `odd`
 
 # Example
 

@@ -74,7 +74,7 @@ function example(input) {
 [slide hideTitle]
 
 # Problemă: Freezing Weather
-[code-task title="Freezing weather" taskId="pb-js-conditional-statements-lab-Freezing Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Freezing weather" taskId="pb-js-conditional-statements-lab-Freezing-Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function freezingWeather(input) {
