@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Internet Protocol
 
@@ -16,7 +16,7 @@ Even today, people are working on **newer** versions of the protocol, which will
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # IP Address
 
@@ -42,7 +42,7 @@ The following IP address has two distinct parts:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # IPv4
 
@@ -78,7 +78,7 @@ This was not an option, so the **IPv6** was created as an alternative to **IPv4*
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # IPv6
 
@@ -114,7 +114,7 @@ The zeroes can be **replaced** with another **colon** to shorten the address lik
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is a DNS?
 
@@ -140,7 +140,7 @@ When entered in the **browser**, a **request** is made to a **Domain Name Server
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # DNS Example
 

@@ -1,12 +1,17 @@
+[slide hideTitle]
+
 # Summary
 
-[slide]
+[vimeo-video]
+[stream language="EN" videoId="" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
 
-# In this lesson we learned:
+# In this lesson you learned:
 
 **Internet**
 
-- The internet consists of thousands of computer networks connected with each other
+- The internet consists of thousands of computer networks that are connected with each other
 
 - Establishes communication via protocols
 
@@ -34,7 +39,7 @@
 
 - TCP is more reliable as it performs more complex error checking and reorders packets
 
-- UDP is lightweight, faster but less secure than TCP
+- UDP is lightweight and fast, but less secure than TCP
 
 **The OSI Model**
 
@@ -50,7 +55,7 @@
 
 - A Network Interface Card allows a computer to access the internet
 
-# The topic of the next lesson is:
+## The topic of the next lesson is:
 
 **Hypertext Transfer Protocol**
 

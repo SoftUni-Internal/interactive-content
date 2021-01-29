@@ -1,6 +1,6 @@
 # The OSI Model
 
-[slide]
+[slide hideTitle]
 
 # What is The OSI Model?
 
@@ -18,7 +18,7 @@ Being familiar with it also makes it easier for **troubleshooting** and **error 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # OSI Layers
 
@@ -44,7 +44,7 @@ The following picture is a visual representation of these **layers** and their *
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # TCP/IP model mapping to OSI
 
@@ -56,7 +56,7 @@ Here is how it happens:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Application Layer - 7
 
@@ -78,13 +78,13 @@ The following protocols work on the application layer:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Presentation Layer - 6
 
 The **presentation layer** is in the Operating System.
 
-This is the final place, the data has to pass, before reaching the **application layer**.
+This is the final place the data has to pass, before reaching the **application layer**.
 
 It is responsible for data **translation** between **network** and **application formats**.
 
@@ -104,7 +104,7 @@ All of this is done by the **presentation layer**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Session Layer - 5
 
@@ -124,7 +124,7 @@ An example of a **session layer structure** is a **network socket**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Transport Layer - 4
 
@@ -144,7 +144,7 @@ Here are two protocols that work on the **transport layer**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Network Layer - 3
 
@@ -166,7 +166,7 @@ The following protocols work on the **network layer**:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Data Link Layer - 2
 
@@ -178,7 +178,7 @@ This layer can also **detect and fix** errors in the **physical layer**.
 
 The **data link** layer has two sublayers:
 
-- **Medium Access Control** - Controls the **access** to the **network layer** and **transmission permissions**
+- **Medium Access Control** - Controls the **access** to the **network layer** and the **transmission permissions**
 
 - **Logical Link Control** - Responsible for **error checking** and network layer **protocol detection**
 
@@ -186,13 +186,13 @@ The following protocols work on the **data link** layer:
 
 - `ATM` - Asynchronous Transfer Mode
 
-- `Ethernet`
+- `Ethernet` - LAN technology
 
-- `MAC`
+- `MAC` - Medium Access Protocol
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Physical Layer - 1
 

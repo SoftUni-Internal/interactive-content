@@ -1,6 +1,6 @@
 # Reliability and TCP
 
-[slide]
+[slide hideTitle]
 
 # Reliability
 
@@ -18,7 +18,7 @@ It can be said that **TCP** brings **reliability** of packet transfers.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Transmission Control Protocol - TCP
 
@@ -44,13 +44,13 @@ It is then **merged** into the **original file**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # User Datagram Protocol
 
 **UDP** is a simple transaction protocol.
 
-Data delivery with the **User Datagram Protocol** is **not guaranteed** and neither is **order** or good **error checking**.
+Data delivery with the **User Datagram Protocol** is **not guaranteed**, and neither is **correct order** or proper **error checking**.
 
 **UDP** is preferred when data needs to be transferred within a **short time frame**.
 
@@ -60,7 +60,7 @@ With it, it does not matter if the data was successfully transferred.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # TCP vs UDP
 
@@ -68,13 +68,13 @@ With it, it does not matter if the data was successfully transferred.
 
 Here are a few categories in which one outshines the other:
 
-- `Reliability` - **TCP** is the clear winner here as packets are **neatly-organised** and **checked for errors**
+- `Reliability` - **TCP** is the clear winner here as packets are **neatly-organised** and **checked for errors**.
 
-- `Speed` - **UDP** is faster than **TCP** as it does not lose time to **recover errors**
+- `Speed` - **UDP** is faster than **TCP** as it does not lose time to **recover errors**.
 
-- `Header size` - Headers in **UDP** are **8 bytes**, that is 250% lighter than **TCP** headers (**20 bytes**)
+- `Header size` - Headers in **UDP** are **8 bytes**, that is 250% lighter than **TCP** headers (**20 bytes**).
 
-- `Data integrity` - **TCP** uses **handshaking protocols** to ensure the integrity of the data and **UDP does not**.
+- `Data integrity` - **TCP** uses **handshaking protocols** to ensure the integrity of the data, while **UDP does not**.
 
 Even though most of the data is transmitted with **TCP**, **UDP** still has some use cases.
 

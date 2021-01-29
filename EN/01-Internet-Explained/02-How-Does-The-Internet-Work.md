@@ -1,6 +1,6 @@
 # How does the Internet work?
 
-[slide]
+[slide hideTitle]
 
 # Web Server Work Model
 
@@ -18,27 +18,27 @@ The following image illustrates how web servers link **browsers** and **database
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Important Definitions
 
 The **internet** is a very difficult concept to learn.
 
-Like everything else, however, nothing is impossible with good **foundations**.
+However, nothing is impossible with good **foundations**.
 
 Here are some of the **basic definitions**, needed to understand the internet:
 
-- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the internet. The **server** is a software that connects the **client** to a database, stored **away** from the user's machine
+- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the internet. The **server** is a software that connects the **client** to a database, stored **away** from the user's machine.
 
-- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the internet
+- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the internet.
 
-- `Packets` - A packet is a simple **unit of data**, transferred through the internet
+- `Packets` - A packet is a simple **unit of data**, transferred through the internet.
 
-- `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**
+- `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Servers and Clients
 
@@ -50,19 +50,19 @@ The **servers** make sure to get that **data** from wherever it is stored and re
 
 The whole **client-server** relationship is very similar to the **consumer-producer** one in the real world.
 
-The **consumers**, not unline **clients**, always need something and make requests for different **services**.
+The **browsers**, like the **consumers**, always need something and make requests for different **services**.
 
-The **producers**, or **servers**, are the ones, providing every **service** a consumer needs.
+The **servers**, like the **producers**, are the ones, providing the **services** a browser needs.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Network Protocol
 
 As covered in a previous part of the lesson, **network protocols** set the rules for data transfer on the internet.
 
-A **network protocol** takes the large **communication process** and divides it into smaller ones, each responsible for a different task.
+A **network protocol** takes the whole **communication process** and divides it into smaller ones, each responsible for a different task.
 
 This **separation of tasks** is known as the **OSI** model and will be covered later on in the lesson.
 

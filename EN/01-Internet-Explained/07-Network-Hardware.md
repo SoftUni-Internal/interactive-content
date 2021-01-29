@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Network Hardware
 
@@ -10,7 +10,7 @@ Every year, billions of dollars are invested in **research** and **development**
 
 The better the hardware is, the **faster** and **more-secure** the **internet connection** is.
 
-Here are some of the **physical components**, that make up the internet:
+Here are some of the **physical components** that make up the internet:
 
 - Cables
 
@@ -26,7 +26,7 @@ Here are some of the **physical components**, that make up the internet:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Cables and Routers
 
@@ -56,13 +56,13 @@ However, there are **larger** and **more elaborate** **enterprise routers**, lin
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Repeaters, Hubs and Switches
 
 **Repeaters, hubs, and switches** are **network-linking** devices, which can be part of one **big component**.
 
-- Repeaters - Receive a signal from a router and resend it. Used when the distance, that the data travels, is too long
+- Repeaters - Receive a **signal** from a router and **resend** it. Used when the distance that the data travels, is too long
 
 - Hub - A **hub** can link **Ethernet devices**. It has **several ports**, where each of them is plugged in. When a signal appears as an **input** in one of the ports, it is **output** in the other ports.
 
@@ -70,7 +70,7 @@ However, there are **larger** and **more elaborate** **enterprise routers**, lin
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Bridges and Gateways
 
@@ -94,7 +94,7 @@ They take the role of a **Firewall**, **controlling** the **access** to the netw
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Network Interface Cards - NIC
 

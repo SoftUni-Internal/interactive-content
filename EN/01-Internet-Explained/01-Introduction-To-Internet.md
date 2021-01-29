@@ -1,6 +1,6 @@
 # Introduction to Internet
 
-[slide]
+[slide hideTitle]
 
 # Internet - History
 
@@ -8,13 +8,13 @@ The internet is a relatively **new** technology that has been going through **ra
 
 Very **different** from what it is today, the internet marks its **beginning** in the **1960s**.
 
-Back then, the basic idea was for it to **link** computers in a **network** and to allow some kind of **data transfer**.
+Back then, the basic idea for it was to **link** computers in a **network** and to allow some kind of **data transfer**.
 
-**TCP/IP** became a reality in the 70s. Computers were now **linked independently** of each other.
+**TCP/IP** became a reality in the 70s. Computers were **linked independently** of each other.
 
 The first **LANs** and **domains** were created in the 1980s.
 
-The 90s were very big in internet history. They mark the creation of **HTML**, **Java**, **the first internet virus**, major companies like **Google**,
+The 90s were very important in internet history. They mark the creation of **HTML**, **Java**, **the first internet virus**, major companies like **Google**,
 **Apple**, **Amazon**, and **eBay**.
 
 At the beginning of the new century, the **dotcom** bubble burst and some companies got erased. Other companies, like **Google**, became giants.
@@ -23,7 +23,7 @@ At the beginning of the new century, the **dotcom** bubble burst and some compan
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Internet - Introduction
 
@@ -43,7 +43,7 @@ They then connect the users **indirectly**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # What is a Network?
 
@@ -65,13 +65,13 @@ In contrast, **data centers** can be **thousands of devices**, sharing **tons of
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Networks and Internet
 
 It was established that a **network** consists of **many connected devices**.
 
-The internet consists of **thousands of networks** and therefore -** billions of devices**.
+The internet consists of **thousands of networks** and therefore - **billions of devices**.
 
 Those networks **communicate** through the **exchange** of **small data units** (**packets**).
 
@@ -85,7 +85,7 @@ However, **no single organization** can claim **ownership** of the internet.
 
 This **connection** of people has changed the world a lot in a **relatively short time**.
 
-There are now **platforms** for people to do anything they want or watch other people do it.
+Nowadays, there are **platforms** for people to do anything they want or watch other people do it.
 
 A lot of **businesses are thriving** because of the **great advertising opportunities** the internet provides.
 

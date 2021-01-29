@@ -1,10 +1,17 @@
-[slide]
-
 # Lesson Introduction
 
-## Lesson content:
+[slide hideTitle]
 
-**Introduction to the Internet**
+# Lesson Content
+
+[vimeo-video]
+[stream language="EN" videoId="" default /]
+[stream language="RO" videoId="" /]
+[/video-vimeo]
+
+## In this lesson you will learn:
+
+**1. Introduction to the Internet**
 
 - A brief history of the Internet
 
@@ -12,7 +19,7 @@
 
 - How the internet links different networks together
 
-**How does the internet work?**
+**2. How does the internet work?**
 
 - What Web Servers are
 
@@ -20,13 +27,13 @@
 
 - Definition of a Network Protocol
 
-**Sending and receiving information**
+**3. Sending and receiving information**
 
 - What packets are
 
 - How the packets travel from one user to another
 
-**Internet Protocol**
+**4. Internet Protocol**
 
 - What an IP address is
 
@@ -34,20 +41,20 @@
 
 - Understanding the Domain Name System (DNS)
 
-**Reliability and TCP**
+**5. Reliability and TCP**
 
 - Looking into different transfer protocols
 
 - Comparing TCP and UDP
 
-**The OSI Model**
+**6. The OSI Model**
 
 - What the OSI model does
 
 - Different layers of the OSI model
 
-**Network hardware**
+**7. Network hardware**
 
-- Learning about the hardware parts that make up networks
+- What the hardware parts that make up networks are
 
 [/slide]

@@ -1,6 +1,6 @@
 # Sending and Receiving Information
 
-[slide]
+[slide hideTitle]
 
 # Packets
 
@@ -8,7 +8,7 @@ It is commonly known that computers break down information into **bits**.
 
 **Packets** are the internet's way of dividing data into **small** pieces.
 
-Imagine that Tom wants to buy a new bed for her apartment on the 6th floor.
+Imagine that Tom wants to buy a new bed for his apartment on the 6th floor.
 
 It would be very difficult for him to bring it to the top of the building in one piece.
 
@@ -32,7 +32,7 @@ For **packets** to work properly, the carry some **crucial information** with th
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Travelling on the Packets in the Network
 
