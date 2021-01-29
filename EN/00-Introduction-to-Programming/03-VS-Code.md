@@ -187,7 +187,7 @@ The VSC will create a empty project for us.
 
 Next, we must create a new file and name it.
 
-The **extension** .js is important, since Visual Studio Code must know what type of language to use.
+The **extension** `.js` is important, since Visual Studio Code must know what type of language to use.
 
 After we finished with writing our program, we must execute the code with **Note.js**.
 
