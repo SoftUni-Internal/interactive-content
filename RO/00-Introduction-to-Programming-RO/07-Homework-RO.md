@@ -15,7 +15,7 @@ function hello() {
 
 Scrieți un program JavaScript, care:
 
-Imprimă „Hello JavaScript” pe consolă.
+Imprimă `Hello JavaScript` pe consolă.
 
 [/task-description]
 [code-io /]
@@ -138,7 +138,7 @@ function squareOfStars() {
 [task-description]
 Scrieți un program care:
 
-Imprimă  un pătrat de stele „7 * 7” astfel:
+Imprimă  un pătrat de stele `7 * 7` astfel:
 
 ```
 * * * * * * *
