@@ -9,13 +9,13 @@
 
 În această lecție am învățat:
 
-- Cum să ** scriem codul de bază **
+- Cum să **scriem codul de bază**
 
-- Programul constă din ** secvențe de comenzi. **
+- Programul constă din **secvențe de comenzi.**
 
-- JavaScript este un ** limbaj dinamic **, care este executat de un ** interpret **
+- JavaScript este un **limbaj dinamic**, care este executat de un **interpret**
 
-- Cum se ** instalează ** rulează ** VSCode ** și ** Node.js **
+- Cum se **instalează** rulează **VSCode** și **Node.js**
 
 - Cum să creăm un proiect, fișiere și aplicații de consolă în VSCode.
 
