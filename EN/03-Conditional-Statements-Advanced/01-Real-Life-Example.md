@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Real Life Example: Marketplace
 [vimeo-video]
@@ -11,7 +11,7 @@
 A market offers different prices for certain products based on the day of the week
 
 
-| Product      | Weekday | Weekend   |
+| **Product**      | **Weekday** | **Weekend**   |
 | :---:       |    :----:   |   :---:     |
 | Banana      | 2.50       | 2.70 |
 | Apple   | 1.30        | 1.60    |

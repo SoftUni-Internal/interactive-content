@@ -1,6 +1,6 @@
 # Citiți dintr-o matrice
 
-[slide]
+[slide hideTitle]
 # Ce este o matrice?
 
 [vimeo-video]
@@ -33,11 +33,11 @@ Avem **7 vagoane** (**elemente**). Fiecare are **pasageri** (**o valoare**). `[3
 
 Primul element al matricei este situat la indexul `0`, iar ultimul element al matricei este situat la indexul`lungime-1`.
 
-În acest curs ** nu vom** inițializa o matrice, dar vom accepta matricile ca parametri pentru funcția noastră.
+În acest curs **nu vom** inițializa o matrice, dar vom accepta matricile ca parametri pentru funcția noastră.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Citirea dintr-o matrice
 
 [vimeo-video]
@@ -66,7 +66,7 @@ console.log(`Ultimul element este ${train[train.length-1]}`);
 
 - **Primul** element al matricei este situat la **index zero** `train[0]`
 
--  **Cel de-al doilea** element al matricei este situat la **indexul unu** `train[1]`
+- **Cel de-al doilea** element al matricei este situat la **indexul unu** `train[1]`
 
 - **Al treilea** element al matricei este situat la **indexul doi** `train[2]`
 

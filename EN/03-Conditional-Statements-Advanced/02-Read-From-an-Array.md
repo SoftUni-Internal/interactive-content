@@ -1,6 +1,6 @@
 # Read From an Array
 
-[slide]
+[slide hideTitle]
 # What is an Array? 
 
 [vimeo-video]
@@ -38,7 +38,7 @@ In this course we **will not** initialize an array, we will only accept arra
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Reading from Arrays
 
 [vimeo-video]
