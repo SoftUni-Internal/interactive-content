@@ -44,7 +44,7 @@
 
 - When raising an exception, always pass a **good explanation message** to the constructor 
 
-  The exception message should explain what causes the problem and how to solve it.
+The exception message should explain what causes the problem and how to solve it.
 
    - **Good**: "Size should be integer in range \[1…15\]"
    - **Good**: "Invalid state. First call Initialize()"
