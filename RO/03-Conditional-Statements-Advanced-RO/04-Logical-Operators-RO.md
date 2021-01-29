@@ -1,6 +1,6 @@
 # Operatori logici
 
-[slide]
+[slide hideTitle]
 # Condiții mai complexe
 [vimeo-video]
 [stream language="EN" videoId="486871142/63e6f30a5a" default /]
@@ -33,7 +33,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 Vom explica operatorii logici ** **"ȘI"** (`&&`), **"SAU"** (`||`) și **"NU"** (`!`) în următoarele secțiuni, împreună cu exemple și exerciții.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Operatorul logic "ȘI" 
 [vimeo-video]
 [stream language="EN" videoId="486871442/f9e84d4655" default /]
@@ -48,7 +48,7 @@ Opțiunea cu `if` **imbricate** este validă, dar codul ar părea foarte neordon
 Logica **"ȘI"** (operator `&&`) înseamnă că trebuie îndeplinite simultan câteva condiții.
 
 Se aplică următorul tabel al veridicității:
-| Operandul unu | Operandul doi | ȘI |
+| **Operandul unu** | **Operandul doi** | **ȘI** |
 | : ---: | : ----: | : ---: |
 | adevărat | adevărat | adevărat |
 | adevărat | fals | fals |
@@ -77,20 +77,29 @@ console.log(result);
 ```
 
 Programul va rula în modul **următor**:
-- Începe verificarea de la `a`, îl citeste și acceptă că are o valoare reală. După aceea verifică `b`.
-- După ce **a acceptat** că `a` și `b` se schimba in `true`, **el verifică următorul** argument.
-- Se ajunge la `c` și vede că variabila are o valoare `false`.
-- După ce programul acceptă că argumentul `c` are o valoare `false`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`.
+
+- Începe verificarea de la `a`, îl citeste și acceptă că are o valoare reală. După aceea verifică `b`
+
+- După ce **a acceptat** că `a` și `b` se schimba in `true`, **el verifică următorul** argument
+
+- Se ajunge la `c` și vede că variabila are o valoare `false`
+
+- După ce programul acceptă că argumentul `c` are o valoare `false`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`
+
 - De aceea evaluarea lui `d` este **sărita** și întreaga expresie este calculată ca `false`.
 
 # Exemplu: Punct într-un dreptunghi
-Verifică dacă **`punctul {x, y}`** este plasat **în interiorul dreptunghiului {x1, y1} - {x2, y2}**.
+
+Verifică dacă `punctul {x, y}` este plasat în interiorul dreptunghiului `{x1, y1} - {x2, y2}`.
 
 [image assetsSrc = "03.Point-in-rectangle-01.png" /]
 
 Datele de intrare sunt citite de pe consolă și constă din 6 linii:
+
 - numerele zecimale `x1`,` y1`, `x2`,` y2`, `x` și` y` (deoarece se garantează că `x1 <x2` și` y1 <y2`).
+
 ## Eșantion de intrare și ieșire
+
   |**Intrare**|**Iesire**|
 | --- | --- |
 |2|Inside|
@@ -101,10 +110,14 @@ Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 |-1||
 
 ## Soluție
-- Punctul este plasat în dreapta din partea stângă a dreptunghiului.
-- Punctul este plasat în stânga din partea dreaptă a dreptunghiului.
-- Punctul este plasat în jos din partea superioară a dreptunghiului.
-- Punctul este plasat în sus din partea de jos a dreptunghiului.
+
+- Punctul este plasat în dreapta din partea stângă a dreptunghiului
+
+- Punctul este plasat în stânga din partea dreaptă a dreptunghiului
+
+- Punctul este plasat în jos din partea superioară a dreptunghiului
+
+- Punctul este plasat în sus din partea de jos a dreptunghiului
 
 
 ```js live
@@ -124,10 +137,10 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Bonus Points
 
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-lab-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function bonusPoints(input) {
@@ -138,12 +151,14 @@ function bonusPoints(input) {
 [task-description]
 # Descriere
 Scrieți un program care aplică un bonus punctelor date
-   * Dacă punctele sunt între **0** și **3**, se adaugă **5**
-   * Dacă punctele sunt între **4** și **6**, se adaugă **15**
-   * Dacă punctele sunt între **7** și **9**, se adaugă **20**
+* Dacă punctele sunt între **0** și **3**, se adaugă **5**
+
+* Dacă punctele sunt între **4** și **6**, se adaugă **15**
+
+* Dacă punctele sunt între **7** și **9**, se adaugă **20**
 
 # Exemplu
-   | ** Intrare ** | ** Ieșire ** |
+   | **Intrare** | **Ieșire** |
 | --- | --- |
 |4| 19 |
 
@@ -179,7 +194,7 @@ Scrieți un program care aplică un bonus punctelor date
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Bonus Points
 [vimeo-video]
 [stream language="EN" videoId="486871642/75ebf87fb1" default /]
@@ -209,12 +224,15 @@ function bonusPoints (input) {
 [task-description]
 # Descriere
 Scrieți un program care aplică un bonus punctelor date
-   * Dacă punctele sunt între **0** și **3**, se adaugă **5**
-   * Dacă punctele sunt între **4** și **6**, se adaugă **15**
-   * Dacă punctele sunt între **7** și **9**, se adaugă **20**
+
+* Dacă punctele sunt între **0** și **3**, se adaugă **5**
+
+* Dacă punctele sunt între **4** și **6**, se adaugă **15**
+
+* Dacă punctele sunt între **7** și **9**, se adaugă **20**
 
 # Exemplu
-   | ** Intrare ** | ** Ieșire ** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |4| 19 |
 
@@ -250,7 +268,7 @@ Scrieți un program care aplică un bonus punctelor date
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Operator logic "SAU" 
 
 [vimeo-video]
@@ -264,14 +282,16 @@ Similar cu operatorul `&&`, **OR** logic acceptă câteva argumente de tip **boo
 
 Putem afla cu ușurință că **obținem** o valoare `true` de fiecare dată când cel puțin unul dintre argumente are o valoare `true`.
 
-| Operand unu | Operandul doi | SAU |
+| **Operand unu** | **Operandul doi** | **SAU** |
 | : ---: | : ----: | : ---: |
 | adevărat | adevărat | adevărat |
 | adevărat | fals | adevărat |
 | fals | adevărat | adevărat |
 | fals | fals | fals |
 
-La școală, profesorul spune: "Ioan sau Petru ar trebui să curățe tabla". Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie doar ca Ioan s-o curățe, fie doar ca Petru s-o curățe, sau ambii s-o facă.
+La școală, profesorul spune: "Ioan sau Petru ar trebui să curățe tabla". 
+
+Pentru a îndeplini această condiție (pentru a curăța tabla), este posibil fie doar ca Ioan s-o curățe, fie doar ca Petru s-o curățe, sau ambii s-o facă.
 
 # Cum funcționează operatorul `||`?
 Am învățat deja ce reprezintă logica **SAU**. Dar cum se realizează de fapt?
@@ -294,12 +314,13 @@ let result = a || b || c || d;
 
 console.log(result);
 ```
+
 Programele **verifică** `a`, acceptă că are o valoare`false` și continuă.
 
 Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **expresie** este calculată ca `adevărată`, fără a fi nevoie de bifat`c` sau `d`, deoarece valorile lor **nu ar fi modificat** rezultatul expresiei.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Food or Drink
 
 [vimeo-video]
@@ -307,7 +328,7 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 [stream language="RO" videoId="488477836/b40ae06b15"  /]
 [/video-vimeo]
 
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-lab-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
@@ -318,14 +339,17 @@ function foodOrDrink(input) {
 [task-description]
 # Descriere
 Scrieți un program care:
-  *Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
-   *Alimente: curry, fidea, sushi, spaghete
-   *Băuturi: ceai, apă, cafea
-   *Orice altceva este necunoscut
+
+* Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
+
+* Alimente: curry, fidea, sushi, spaghete
+
+* Băuturi: ceai, apă, cafea
+
+* Orice altceva este necunoscut
 
 # Exemplu
-   |**Intrare**|**Ieșire**|
-
+|**Intrare**|**Ieșire**|
 | --- | --- |
 |curry| food |
 |flower| unknown |
@@ -361,7 +385,7 @@ unknown
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Food or Drink
 
 [vimeo-video]
@@ -388,14 +412,17 @@ function foodOrDrink(input) {
 [task-description]
 # Descriere
 Scrieți un program care:
-   *Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
-   *Alimente: curry, fidea, sushi, spaghete
-   *Băuturi: ceai, apă, cafea
-   *Orice altceva este necunoscut
+
+* Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
+
+* Alimente: curry, fidea, sushi, spaghete
+
+* Băuturi: ceai, apă, cafea
+
+* Orice altceva este necunoscut
 
 # Exemplu
-   | **Intrare** | **Ieșire** |
-
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | curry | mâncare |
 | floare | necunoscut |
@@ -431,7 +458,7 @@ unknown
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Operator logic "NU"
 
 [vimeo-video]
@@ -441,7 +468,7 @@ unknown
 
 Negarea logică (operator `!`) înseamnă că o condiție dată nu este** îndeplinită.**
 
-| a | ! a |
+| **a** | **!a**|
 | --- | --- |
 | adevărat | fals |
 
@@ -462,7 +489,7 @@ if (!inRange) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Operatorul de paranteză
 La fel ca și restul operatorilor din programare, operatorii `&&` și `||` au prioritate, ca în acest caz: `&&` are prioritate mai mare decât `||`.
 
@@ -478,26 +505,3 @@ if (x < 0 || ((x >= 5) && (x <= 10)) || x > 20) {
 }
 ```
 [/slide]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
