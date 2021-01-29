@@ -206,17 +206,7 @@ Scrieți un program care aplică un bonus punctelor date
 
 ```
 function bonusPoints (input) {
-     let points = Number (input);
-
-     if (points > = 0 && puncte <= 3) {
-       points  + = 5;
-     } else if (points > = 4 && points  <= 6) {
-       puncte + = 15;
-     } else if (points > = 7 && points  <= 9) {
-       points  + = 20;
-    }
-
-    console.log(points);
+ // Scrieți codul dvs. aici
 }
 ```
 
@@ -349,9 +339,13 @@ Scrieți un program care:
 * Orice altceva este necunoscut
 
 # Exemplu
-|**Intrare**|**Ieșire**|
+| ***Intrare** | **Ieșire** |
 | --- | --- |
 |curry| food |
+
+
+| **Intrare** | **Ieșire** |
+| --- | --- |
 |flower| unknown |
 
 [/task-description]
@@ -398,14 +392,7 @@ unknown
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
-    let product = input;
-    if (product == "curry" || product == "noodles" || product == "sushi" || product == "spaghetti") {
-      console.log("food");
-    } else if (product == "tea" || product == "water" || product == "coffee") {
-      console.log("drink");
-    } else {
-      console.log("unknown");
-    }
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -422,10 +409,14 @@ Scrieți un program care:
 * Orice altceva este necunoscut
 
 # Exemplu
+| ***Intrare** | **Ieșire** |
+| --- | --- |
+|curry| food |
+
+
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| curry | mâncare |
-| floare | necunoscut |
+|flower| unknown |
 
 [/task-description]
 [tests]

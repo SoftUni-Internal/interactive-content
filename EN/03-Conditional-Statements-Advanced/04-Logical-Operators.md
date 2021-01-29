@@ -211,17 +211,7 @@ Write a program that applies bonus to given points
 [code-editor language=javascript]
 ```
 function bonusPoints(input) {
-    let points = Number(input);
-
-    if (points >= 0 && points <= 3) {
-      points += 5;
-    } else if (points >= 4 && points <= 6) {
-      points += 15;
-    } else if (points >= 7 && points <= 9) {
-      points += 20;
-    }
-
-    console.log(points);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -358,9 +348,13 @@ Write a program, which:
 * Everything else is unknown
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |curry| food |
+
+
+| **Input** | **Output** |
+| --- | --- |
 |flower| unknown |
 
 [/task-description]
@@ -407,14 +401,7 @@ unknown
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
-    let product = input;
-    if (product == "curry" || product == "noodles" || product == "sushi" || product == "spaghetti") {
-      console.log("food");
-    } else if (product == "tea" || product == "water" || product == "coffee") {
-      console.log("drink");
-    } else {
-      console.log("unknown");
-    }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -434,6 +421,10 @@ Write a program, which:
 | **Input** | **Output** |
 | --- | --- |
 |curry| food |
+
+
+| **Input** | **Output** |
+| --- | --- |
 |flower| unknown |
 
 [/task-description]
