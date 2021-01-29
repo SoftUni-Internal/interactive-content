@@ -98,8 +98,7 @@ Write a program that:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| Banana| 2.50 |
-|  Weekday||
+| `['Banana', 'Weekday']`| 2.50 |
 
 
 [/task-description]
@@ -139,27 +138,7 @@ Weekend
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
-  let product = input[0];
-  let dayOfWeek = input[1];
-
-  if (product == "Banana") {
-    if (dayOfWeek == "Weekday") {
-      console.log("2.50");
-    } else
-      console.log("2.70");
-  } else if (product == "Apple") {
-    if (dayOfWeek == "Weekday") {
-      console.log("1.30");
-    } else {
-      console.log("1.60");
-    }
-  } else if (product == "Kiwi") {
-    if (dayOfWeek == "Weekday") {
-      console.log("2.20");
-    } else {
-      console.log("3.00");
-    }
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -180,8 +159,7 @@ Write a program that:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| Banana| 2.50 |
-|  Weekday||
+| `['Banana', 'Weekday']`| 2.50 |
 
 [/task-description]
 [tests]
@@ -229,9 +207,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 3 |
-| 2 | |
-|3 | |
+|`['1', '2', '3']`| 3 |
 
 [/task-description]
 [tests]
@@ -282,21 +258,7 @@ Write a program, which:
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
-  let first = Number(input[0]);
-  let second = Number(input[1]);
-  let third = Number(input[2]);
-
-  if (first > second)
-    if (first > third) {
-      console.log(first);
-    } else {
-      console.log(third);
-    } else
-    if (second > third) {
-      console.log(second);
-    } else {
-      console.log(third);
-    }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -310,9 +272,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 3 |
-| 2 | |
-|3 | |
+|`['1', '2', '3']`| 3 |
 
 [/task-description]
 [tests]
