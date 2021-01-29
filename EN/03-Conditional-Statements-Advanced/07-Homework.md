@@ -348,16 +348,11 @@ Hotel
 [code-task title="Cinema" taskId="pb-js-Conditions-Advanced-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function cinema(input) {
+function numberOperations(typeOfMovie, rows, seatsPerRow) {
     // Write your code here
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
 [task-description]
 # Description
 Calculate the **price** for all the tickets for a cinema movie:
@@ -400,7 +395,7 @@ Normal
 [code-task title="Operations with Numbers" taskId="pb-js-Conditions-Advanced-Operation-With-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numberOperations(typeOfMovie, rows, seatsPerRow) {
+function operationswithNumbers(input) {
     // Write your code here
 }
 ```
