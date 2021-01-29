@@ -74,12 +74,6 @@ function example(input) {
 [slide hideTitle]
 
 # Problemă: Freezing Weather
-
-[vimeo-video]
-[stream language="EN" videoId="486878462/5c6107ff66" default /]
-[stream language="RO" videoId="486878462/5c6107ff66"  /]
-[/video-vimeo]
-
 [code-task title="Freezing weather" taskId="pb-js-conditional-statements-lab-Freezing Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
@@ -136,14 +130,17 @@ Freezing weather!
 
 [slide hideTitle]
 # Soluție: Freezing Weather
+
+[vimeo-video]
+[stream language="EN" videoId="486878462/5c6107ff66" default /]
+[stream language="RO" videoId="486878462/5c6107ff66"  /]
+[/video-vimeo]
+
 [code-task title="Freezing weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function freezingWeather(input) {
-  let temperature = Number(input.shift());
-  if (temperature <= 0) {
-    console.log("Freezing weather!");
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
