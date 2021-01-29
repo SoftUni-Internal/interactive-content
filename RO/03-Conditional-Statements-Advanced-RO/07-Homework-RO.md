@@ -746,8 +746,9 @@ Scrieți un program pentru a simula o retragere de numerar de la bancomat
 |20|  |
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 420
 20
@@ -756,6 +757,7 @@ Scrieți un program pentru a simula o retragere de numerar de la bancomat
 [output]
 The withdraw was successful.
 [/output]
+[/test]
 [test]
 [input]
 124
@@ -776,6 +778,7 @@ The withdraw was successful.
 The daily limit was exceeded.
 Insufficient availability.
 [/output]
+[/test]
 [test]
 [input]
 10
@@ -786,6 +789,7 @@ Insufficient availability.
 The daily limit was exceeded.
 Insufficient availability.
 [/output]
+[/test]
 [test]
 [input]
 342
@@ -795,8 +799,19 @@ Insufficient availability.
 [output]
 The withdraw was successful.
 [/output]
+[/test]
+[test]
+[input]
+The daily limit was exceeded.
+Insufficient availability.
+[/input]
+[output]
+10
+50
+20
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
 [/slide]
 
