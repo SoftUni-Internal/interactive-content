@@ -353,6 +353,11 @@ function numberOperations(typeOfMovie, rows, seatsPerRow) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Calculate the **price** for all the tickets for a cinema movie:

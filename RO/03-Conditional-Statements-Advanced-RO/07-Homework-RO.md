@@ -357,6 +357,11 @@ function numberOperations(typeOfMovie, rows, seatsPerRow) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Calculați **prețul** pentru toate biletele pentru un film cinematografic:
