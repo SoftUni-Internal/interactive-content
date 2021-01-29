@@ -1,5 +1,5 @@
 # Homework
-[slide]
+[slide hideTitle]
 # Problem: Fruit or Vegetable
 [code-task title="Fruit or Vegetable" taskId="pb-js-Conditions-Advanced-Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -48,7 +48,7 @@ vegetable
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Day of Week
 [code-task title="Day of Week" taskId="pb-js-Conditions-Advanced-Day-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -104,7 +104,7 @@ Sunday
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel or Consonant
 [code-task title="Vowel or Consonant" taskId="pb-js-Conditions-Advanced-Vowel-or-Consonant" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -159,7 +159,7 @@ Consonant
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Product of 3 Numbers
 [vimeo-video]
 [stream language="EN" videoId="486874673/6eb04e1bbf" default /]
@@ -227,7 +227,7 @@ zero
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sorted Numbers
 [vimeo-video]
 [stream language="EN" videoId="486875734/a16fef14e3" default /]
@@ -302,7 +302,7 @@ Descending
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vacation Expenses
 [code-task title="Vacation Expenses" taskId="pb-js-Conditions-Advanced-Vacation-Expenses" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -327,7 +327,7 @@ Write a program, which calculates vacation expenses:
 |Winter|40|10|10\%|
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |Winter| 180.00 |
 |Hotel|  |
@@ -351,7 +351,7 @@ Hotel
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cinema
 [code-task title="Cinema" taskId="pb-js-Conditions-Advanced-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -398,7 +398,7 @@ Normal
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Operations with Numbers
 [code-task title="Operations with Numbers" taskId="pb-js-Conditions-Advanced-Operation-With-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -481,7 +481,7 @@ Write a program to apply an operator for given two numbers:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: ATM
 [code-task title="ATM" taskId="pb-js-Conditions-Advanced-ATM" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -531,7 +531,7 @@ The withdraw was successful.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Biggest of Five Numbers
 [code-task title="Biggest of Five Numbers" taskId="pb-js-Conditions-Advanced-Biggest-of-Five-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
