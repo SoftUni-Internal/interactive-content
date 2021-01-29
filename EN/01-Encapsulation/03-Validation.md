@@ -1,6 +1,7 @@
 # Validation
 [slide hideTitle]
-# Data validation 
+
+## Data validation 
 
 **Data validation happens in setters**
 
@@ -14,7 +15,7 @@ private void setSalary(double salary) {
 }
 ```
 - It is better to throw **exceptions**, rather than printing to the Console.
-- Printing with **System.out couples** your class.
+- Printing with `System.out` **couples** your class.
 - **Client** can **handle** class exceptions.
 
 **Constructors use private setters with validation logic**

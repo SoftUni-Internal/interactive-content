@@ -4,7 +4,9 @@
 
 # Private Access Modifier
 
-With the **private access** modifier an object **hides data from the outside world.**
+With the **private access** modifier an object can hide it's data from the rest of the objects in our program.
+
+We choose to make a **field or method** private when we want to presrve the interal logic of our object, so nobody can mess it up.
 
 ```java
 class Person {
@@ -17,12 +19,14 @@ class Person {
 
 - Classes and interfaces **cannot** be private
 - Data can be **accessed only within the declared class** itself
+
 [/slide]
 
 [slide hideTitle]
+
 # Protected Access Modifier
 
-Grants **access to subclasses**
+When we declare a unit with the access modifier **protected** we say that only members of the **class hierchy** (the current class and it's children) can see and access the given unit.
 
 ```java
 class Team {
@@ -61,7 +65,7 @@ System.out.println(real.getName());
 [slide hideTitle]
 # Public Access Modifier
 
-Grants access to **any class** belonging to the **Java Universe**
+The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program.
 
 ```java
 public class Team {
