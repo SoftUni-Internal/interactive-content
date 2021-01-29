@@ -10,11 +10,11 @@ We already have Visual Studio Code and we can start it.
 
 Create a folder for your project and open it from VS Code:
 
-\[File\] -> \[Open Folder\]
+`[File] -> [Open Folder]`
 
 [image assetsSrc="intro-to-programming-4.png" /]
 
-Create a file hello.js to hold your program's source code:
+Create a file `hello.js` to hold your program's source code:
 
 [image assetsSrc="intro-to-programming-5.png" /]
 
@@ -46,7 +46,7 @@ The command `console.log("Hello JS")` in JavaScript means to print something out
  
 In order to clarify that this is a text. 
 
-In the end of each command in the JavaScript language the symbol `;` is being put and it says that the current command ends (it doesn't continue on the next line). 
+In the end of each command in the JavaScript language the symbol `;` is being put and it says that the current command ends (it does not continue on the next line). 
 
 This command is very typical in programming: we say a given **object** should be found (in this case the console) and some **action** should be executed in it (in this case it is printing the text in the brackets).
 
@@ -60,18 +60,19 @@ This command is very typical in programming: we say a given **object** should be
 [stream language="RO" videoId="486836101/b0f9ba7bd8"  /]
 [/video-vimeo]
 
-To start the program, press \[Ctrl + F5\]
+To start the program, press `[Ctrl + F5]`
 
-The result will appear in the \[Debug Console\] tab
+The result will appear in the `[Debug Console]` tab
 [image assetsSrc="intro-to-programming-6.png" /]
 
 As you can see the output of the program is the following text message:
 ```
 Hello, JavaScript!
 ```
-In VS Code \[F5\] / \[Ctrl+F5\] keys runs your earliest created `.js` file
+In VS Code `[F5]`/`[Ctrl+F5]` keys runs your earliest created `.js` file
 
-If you have multiple `.js` files in VS Code, you may want to start the current file with \[F5\] / \[Ctrl + F5\] \-\> edit the launch configuration
+If you have multiple `.js` files in VS Code, you may want to start the current file with `[F5]`/`[Ctrl + F5]` \-\> edit the launch configuration
+
 [image assetsSrc="intro-to-programming-7.png" /]
 
 Alternatively, use the "Code Runner" extension
