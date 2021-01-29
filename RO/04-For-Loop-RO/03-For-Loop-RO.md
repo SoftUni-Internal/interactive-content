@@ -92,7 +92,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 [code-editor language=javascript]
 ```
 function printSum (input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -163,14 +163,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function printSum (input) {
-   let n = Number(input);
-   let sum = 0;
-   for (let i = 1; i <= n; i += 1) {
-      console.log(i)
-      sum += i;
-   }
-   
-   console.log(sum);
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -239,17 +232,22 @@ Scrie un program care:
 [code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(input) {
-  //Write your code here
+function greatestNumber(n, numbers) {
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
 Scrieți un program care: 
 
-* Citește `n` - un număr care reprezintă câte elemente sunt introduse 
+* Citește `n`: un număr care reprezintă câte elemente sunt introduse 
 
 * Citește n numere 
 
@@ -259,7 +257,7 @@ Scrieți un program care:
 
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '40', '90', '50']`| 90 |
+|`3, ['40', '90', '50']`| 90 |
 
 
 [/task-description]
@@ -325,25 +323,22 @@ Scrieți un program care:
 [code-task title="Greatest Number" taskId="pb-js-04-p-01-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(input) {
- let max = -Infinity;
-  let n = Number(input.shift());
-  for (let i = 1; i <= n; i++) {
-    let number = Number(input.shift());
-    if (number > max) {
-      max = number;
-    }
-  }
-  console.log(max);
+function greatestNumber(n, numbers) {
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
 Scrie un program care: 
 
-* Citește `n` - un număr care reprezintă câte elemente sunt introduse 
+* Citește `n`: un număr care reprezintă câte elemente sunt introduse 
 
 * Citește n numere 
 
@@ -353,7 +348,8 @@ Scrie un program care:
 
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '40', '90', '50']`| 90 |
+|`3, ['40', '90', '50']`| 90 |
+
 [/task-description]
 [tests]
 [test]

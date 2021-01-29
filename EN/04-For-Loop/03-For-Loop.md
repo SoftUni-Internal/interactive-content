@@ -161,14 +161,7 @@ Write a program, which:
 [code-editor language=javascript]
 ```
 function printSum (input) {
-   let n = Number(input);
-   let sum = 0;
-   for (let i = 1; i <= n; i += 1) {
-      console.log(i)
-      sum += i;
-   }
-   
-   console.log(sum);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -236,16 +229,21 @@ Write a program, which:
 [code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(input) {
-  //Write your code here
+function greatestNumber(n, numbers) {
+ // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
 
-* Reads `n` - a number representing the amount of following input numbers 
+* Reads `n`: a number representing the amount of following input numbers 
 
 * Reads n numbers 
 
@@ -254,7 +252,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '40', '90', '50']`| 90 |
+|`3, ['40', '90', '50']`| 90 |
 
 
 [/task-description]
@@ -320,24 +318,21 @@ Write a program, which:
 [code-task title="Greatest Number" taskId="pb-js-04-p-01-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(input) {
- let max = -Infinity;
-  let n = Number(input.shift());
-  for (let i = 1; i <= n; i++) {
-    let number = Number(input.shift());
-    if (number > max) {
-      max = number;
-    }
-  }
-  console.log(max);
+function greatestNumber(n, numbers) {
+ // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
 
-* Reads `n` - a number representing the amount of following input numbers 
+* Reads `n`: a number representing the amount of following input numbers 
 
 * Reads n numbers 
 
@@ -346,7 +341,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '40', '90', '50']`| 90 |
+|`3, ['40', '90', '50']`| 90 |
 
 
 [/task-description]
