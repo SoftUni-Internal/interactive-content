@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Operatori de comparație
 
@@ -31,7 +31,7 @@ console.log(a === b) // false
 Atunci când este comparat, rezultatul este o valoare booleană `adevărat` sau `fals`, în funcție de rezultatul comparației este `true` sau `false`.
 
 [/slide]
-[slide]
+[slide hideTitle]
 
 # Compararea valorii
 

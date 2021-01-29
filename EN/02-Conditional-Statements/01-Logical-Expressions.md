@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Comparison Operators
 
 [vimeo-video]
@@ -31,7 +31,7 @@ console.log(a === b)
 When compared, the result is a Boolean value `true` or `false`, depending on whether the result of the comparison is `true` or `false`.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Value Comparison
 
 [vimeo-video]

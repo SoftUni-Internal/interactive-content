@@ -1,5 +1,5 @@
 # Condiții simple if
-[slide]
+[slide hideTitle]
 # Exemplu din viață reală: Udarea plantelor 
 
 [vimeo-video]
@@ -38,7 +38,7 @@ dacă umiditatea este mai mare de 90%
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Condiții simple if
 
@@ -71,7 +71,7 @@ function example(input) {
 }
 ```
 [/slide]
-[slide]
+[slide hideTitle]
 
 # Problemă: Freezing Weather
 
@@ -80,7 +80,7 @@ function example(input) {
 [stream language="RO" videoId="486878462/5c6107ff66"  /]
 [/video-vimeo]
 
-[code-task title="Freezing weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Freezing weather" taskId="pb-js-conditional-statements-lab-Freezing Weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function freezingWeather(input) {
@@ -134,7 +134,7 @@ Freezing weather!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Freezing Weather
 [code-task title="Freezing weather" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
