@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Domeniul de aplicare variabil
 
 [vimeo-video]
