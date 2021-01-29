@@ -1,6 +1,6 @@
 # Citirea unei matrice
 
-[slide]
+[slide hideTitle]
 # Ce este o matrice? 
 
 [vimeo-video]

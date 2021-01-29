@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Bucla For cu un pas
 
 [vimeo-video]
@@ -29,9 +29,9 @@ for (let i = 0; i < 10; i += 2) {
 }
 ```
 
-S-ar putea să dorim să avem un ** pas descrescător ** - `i - =` + dimensiunea pasului.
+S-ar putea să dorim să avem un **pas descrescător** - `i - =` + dimensiunea pasului.
 
-În acest caz, ar trebui să fim atenți la condiția finală pentru a evita ** o ** buclă infinită **.
+În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o** buclă infinită **.
 
 ```js live
 for (let i = 10; i >= 1; i--) {
@@ -42,7 +42,7 @@ for (let i = 10; i >= 1; i--) {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Number Ending with 7
 
 [vimeo-video]
@@ -92,7 +92,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Number Ending with 7
 
 [vimeo-video]
@@ -145,7 +145,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Exam Countdown
 
 [vimeo-video]
@@ -197,7 +197,7 @@ The exam has come.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Exam Countdown
 
 [vimeo-video]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # For Loop with A step
 
 [vimeo-video]
@@ -43,7 +43,7 @@ for (let i = 10; i >= 1; i--) {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Number Ending with 7
 
 [vimeo-video]
@@ -93,7 +93,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Number Ending with 7
 
 [vimeo-video]
@@ -146,7 +146,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Exam Countdown
 
 [vimeo-video]
@@ -198,7 +198,7 @@ The exam has come.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Exam Countdown
 
 [vimeo-video]

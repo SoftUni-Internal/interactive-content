@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Operatori de incrementare și decrementare
 
 [vimeo-video]

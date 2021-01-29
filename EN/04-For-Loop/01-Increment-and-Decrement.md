@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Increment and Decrement Operators
 
 [vimeo-video]

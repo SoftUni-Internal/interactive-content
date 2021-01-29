@@ -1,6 +1,6 @@
 # Bucla For
 
-[slide]
+[slide hideTitle]
 
 # Exemplu din viața reală: Mutatul vaselor
 
@@ -20,7 +20,7 @@ Când îndepliniți acea condiție, bucla se oprește.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # For Loop
 
 [vimeo-video]
@@ -74,7 +74,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Print Sum of N Numbers
 
 [vimeo-video]
@@ -145,7 +145,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Print Sum of N Numbers
 
 [vimeo-video]
@@ -222,7 +222,7 @@ Scrie un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Greatest Number
 
 [vimeo-video]
@@ -308,7 +308,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Greatest Number
 
 [vimeo-video]

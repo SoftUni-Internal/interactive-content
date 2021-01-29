@@ -1,7 +1,7 @@
 
 # Read From an Array
 
-[slide]
+[slide hideTitle]
 # What is an Array? 
 
 [vimeo-video]

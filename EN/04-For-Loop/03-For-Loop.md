@@ -1,6 +1,6 @@
 # For Loop
 
-[slide]
+[slide hideTitle]
 # Real Life Example: Moving Dishes
 
 [vimeo-video]
@@ -20,7 +20,7 @@ When you reach that condition, you stop the loop.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # For Loop
 
 [vimeo-video]
@@ -73,7 +73,7 @@ In the first example, the `i` variable accepts values from 1 to 10 and the **cur
 The loop repeats 10 times and each of these repetitions is called an **iteration**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Print Sum of N Numbers
 
 [vimeo-video]
@@ -143,7 +143,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Print Sum of N Numbers
 
 [vimeo-video]
@@ -219,7 +219,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Greatest Number
 
 [vimeo-video]
@@ -303,7 +303,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Greatest Number
 
 [vimeo-video]
