@@ -6,16 +6,19 @@
 [code-editor language="javascript"]
 ```
 function calculateSpeed (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
 Scrieți o funcție care obține un număr întreg și calculează aria unui pătrat cu latura `a`.
-- obțineți un număr în argumentul funcției,
+
+- obțineți un număr în argumentul funcției
+
 - multiplicați-l și
-- tipăriți rezultatul în consolă.
+
+- tipăriți rezultatul în consolă
 
 ## Exemplu
 | **Input** | **Output** |
@@ -75,16 +78,20 @@ Scrieți o funcție care obține un număr întreg și calculează aria unui pă
 [code-editor language="javascript"]
 ```
 function currencyConverter (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Description
+
 Scrieți un program pentru a converti de la USD la EUR:
-   * Citiți un ** număr cu virgulă mobilă **: ** dolari ** care urmează să fie convertiți
-   * Convertiți dolari în euro (utilizați rata fixă ​​de dolari în euro: ** 0,88 **)
-   * Imprimați valoarea convertită în ** euro **
+
+* Citiți un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
+
+* Convertiți dolari în euro (utilizați rata fixă ​​de dolari în euro: **0,88**)
+
+* Imprimați valoarea convertită în **euro**
 
 ## Exemplu
 | **Input** | **Output** |
@@ -139,7 +146,7 @@ Scrieți un program pentru a converti de la USD la EUR:
 [code-editor language="javascript"]
 ```
 function areaOfTriangle (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -148,6 +155,7 @@ function areaOfTriangle (input) {
 Scrieți o funcție care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Utilizați formula: 
+
 - `grade = radiane * 180 / π` 
 
 Numărul **π** în programele JavaScript poate fi accesat prun `Math.PI`. 
@@ -214,12 +222,13 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [code-editor language="javascript"]
 ```
 function daysToMinutes (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Description
+
 Scrieți un program care covertează zilele în minute:
 
 * Citiți un număr **întreg** (**zilele** care trebuie să fie convertite)
@@ -281,16 +290,19 @@ Scrieți un program care covertează zilele în minute:
 [code-editor language="javascript"]
 ```
 function circleArea (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
 Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
-  * Citiți numărul în virgulă mobilă: **raza** cercului
-  * Calculați **aria** și **perimetrul** cercului
-  * Imprimați valorile calculate **formatate** până la 2 cifre după punctul zecimal
+
+* Citiți numărul în virgulă mobilă: **raza** cercului
+
+* Calculați **aria** și **perimetrul** cercului
+
+* Imprimați valorile calculate **formatate** până la 2 cifre după punctul zecimal
 
   ## Example
 | **Input** | **Output** |
@@ -349,19 +361,23 @@ Perimeter = 59.06
 [code-editor language="javascript"]
 ```
 function fourOperations(input){
-    // Write code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o ** companie ** care să o facă pentru el.
-Scrieți o funcție care ** calculează ** fondurile necesare pe care Peter va trebui să le ** plătească ** pentru acest serviciu
-Prețul pe metru pătrat este de ** 7,61 dolari ** cu TVA.
-Deoarece curtea lui Peter este destul de ** mare **, firma contractantă oferă o reducere de ** 18% ** la prețul final.
+Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o **companie** care să o facă pentru el.
+
+Scrieți o funcție care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
+
+Prețul pe metru pătrat este de **7,61 dolari** cu TVA.
+
+Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o reducere de **18%** la prețul final.
+
 ## Input
 Funcția primește un argument:
-- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
+- Metri pătrați, care vor fi amenajați - un număr real în intervalul `[0.00… 10000.00]`
 
 ## Output
  Două linii sunt imprimate pe consolă:
