@@ -8,10 +8,11 @@
 
 Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el, corect? Acum vom arăta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
 
-# Ce este „Depanare”?
+# Ce este "Depanare"?
 
 
-**Depanarea** este procesul de „**atașare**” la execuția programului, care ne permite să **urmărim pas cu pas procesul**.
+**Depanarea** este procesul de "**atașare**" la execuția programului, care ne permite să **urmărim pas cu pas procesul**.
+
 [image assetsSrc="image32.png" /]
 
 [/slide]
@@ -25,18 +26,15 @@ Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el
 [stream language="RO" videoId="486879964/71bacdc0d7"  /]
 [/video-vimeo]
 
+* Cu `[F5]` va porni programul în modul de depanare
 
-* Cu \ [F5 \] va porni programul în modul de depanare
+* Putem trece la pasul următor cu `[F10]`
 
-* Putem trece la pasul următor cu \ [F10 \]
-
-* Putem crea / elimina **puncte de întrerupere** cu \ [F9 \]
-
+* Putem crea / elimina **puncte de întrerupere** cu `[F9]`
 
 Astfel verificăm execuția programului nostru linie cu linie.
 
 Utilizarea depanării simplifică validarea și remedierea unei probleme din programul nostru.
-
 
 [image assetsSrc="debugging-demo.png" /]
 

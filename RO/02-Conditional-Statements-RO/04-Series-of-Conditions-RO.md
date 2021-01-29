@@ -62,7 +62,9 @@ if (num == 1) {
     console.log("number too big");
 }
 ```
+
 Logica programului din exemplul de mai sus **compară secvențial** numărul de intrare de pe consolă cu cifrele de la 1 la 9, când **fiecare comparație următoare se efectuează numai în cazul în care comparația anterioară nu este adevărată**.
 
 În cele din urmă, dacă niciuna dintre instrucțiunile `if` nu este adevărată, ultima **clauză** `else` este efectuată.
+
 [/slide]
