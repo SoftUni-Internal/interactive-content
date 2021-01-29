@@ -161,7 +161,7 @@ Use **try-catch-finally.**
 ```
 [/slide]
 
-[slide hiseTitle]
+[slide hideTitle]
 
 # Problem: Enter Numbers
 
