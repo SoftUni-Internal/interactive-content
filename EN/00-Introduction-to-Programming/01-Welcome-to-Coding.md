@@ -146,7 +146,7 @@ In this example, we can import and use a function in our web page.
 
 Using the block of code from the example we are creating a text box as in the slide.
 
-``` html
+```
 <html><body>
   <script src="converter.js"></script>
   Dollars: <input type="text" id="dollarsBox" />
