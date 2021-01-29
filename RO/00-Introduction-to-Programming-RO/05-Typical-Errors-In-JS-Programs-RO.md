@@ -9,25 +9,25 @@
 
 Virtual Studio Code are o modalitate de a ne arăta majoritatea erorilor de bază pe care le putem face.
 
-** Subliniază ** codul greșit care nu poate fi compilat.
+**Subliniază** codul greșit care nu poate fi compilat.
 
 Unele dintre greșelile obișnuite de bază cu care ne putem confrunta:
 
-- Amestecarea literelor ** minuscule ** și ** majuscule ** în sintaxă.
+- Amestecarea literelor **minuscule** și **majuscule** în sintaxă
 
-- Sintaxă greșită.
+- Sintaxă greșită
 
-- Lipsă citatelor ** "** sau parantezelor ** (sau) **.
+- Lipsă citatelor  `"` sau parantezelor `(` sau `)`
 
-- Confuzia sensului ** Addition ** și ** Concatenation **.
+- Confuzia sensului **Addition** și **Concatenation**
 
-Operatorul "+" are două funcționalități.
+Operatorul `+` are două funcționalități.
 
-** Adăugarea ** este pentru numere.
+**Adăugarea** este pentru numere.
 
-** ** Concatenarea este pentru șiruri de caractere.
+**Concatenarea** este pentru șiruri de caractere.
 
-- Confuzia operatorilor ** assignment ** (=) și ** equality ** (==, ===).
+- Confuzia operatorilor **assignment** (`=`) și **equality** (`==`, `===`).
 
 În JavaScript semnurile dublu egal și triplu egal sunt numiți operatori de comparație.
 

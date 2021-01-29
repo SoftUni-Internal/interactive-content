@@ -16,17 +16,17 @@ Some of the basic common mistakes we can face:
 
 - Wrong Syntax.
 
-- Missing quotes **"** or bracket **( or )**.
+- Missing quotes `"` or bracket `(` or `)`.
 
 - Confusing **Addition** and **Concatenation**.
 
-The "+" operator has two functionalities.
+The `+` operator has two functionalities.
 
 **Addition** is for numbers.
 
 **Concatenation** is for strings.
 
-- Confusing the **assignment** (=) and **equality** (==, ===) operators.
+- Confusing the **assignment** (`=`) and **equality** (`==`, `===`) operators.
 
 In JavaScript double equal and tripple equal sign are called comparison operators.
 
