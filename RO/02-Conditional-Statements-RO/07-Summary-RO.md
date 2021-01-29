@@ -17,6 +17,18 @@ In această lecție am învățat:
    - `if-else-if`
 - cum să construim o serie de condiții `if-else` 
 
+```js
+if (num == 1) {
+    console.log("one");
+} else if (num == 2) {
+    console.log("two");
+} else if (num == 3) {
+    console.log("three");
+} else if (num == 4) {
+    console.log("four");
+}
+```
+
 - cum să identificăm bug-urile din program, folosind un debugger
 
 ## In lecția următoare vom învăța:

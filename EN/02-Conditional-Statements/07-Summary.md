@@ -16,6 +16,7 @@
    - `if-else`
    - `if-else-if`
 - how to make a series of `if-else` conditions.
+
 ```js
 if (num == 1) {
     console.log("one");
@@ -27,6 +28,7 @@ if (num == 1) {
     console.log("four");
 }
 ```
+
 - how to trace the program's bugs using a debugger
 
 ## In the next lesson we will learn:
