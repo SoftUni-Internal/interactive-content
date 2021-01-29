@@ -282,8 +282,7 @@ Hello, George
 [code-editor language=javascript]
 ```
 function sayHello (input) {
-  let user = input.shift();
-  console.log(`Hello, ${user}`);
+   // Write your code here
 }
 ```
 [/code-editor]
