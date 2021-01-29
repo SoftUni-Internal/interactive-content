@@ -708,11 +708,16 @@ Write a program to apply an operator for given two numbers:
 [code-task title="ATM" taskId="pb-js-Conditions-Advanced-ATM" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function ATM(input) {
+function atm(balance, withdraw, limit) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program to simulate an ATM withdrawal:
@@ -720,7 +725,7 @@ Write a program to simulate an ATM withdrawal:
 * Read: **balance**, **withdraw** and **limit**
 * Print `The withdraw was successful.` if the balance is enough
 * Print `The daily limit was exceeded.` if the limit is exceeded
-* Print `Insufficient availability.` if the balance isn't enough
+* Print `Insufficient availability.` if the balance is not enough
 
 # Example
   | **Input** | **Output** |
@@ -746,10 +751,49 @@ Write a program to simulate an ATM withdrawal:
 [output]
 The withdraw was successful.
 [/output]
+[test]
+[input]
+124
+32
+66
+[/input]
+[output]
+The withdraw was successful.
+[/output]
 [/test]
+[test]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[test]
+[input]
+10
+4565
+345
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[test]
+[input]
+342
+2
+3
+[/input]
+[output]
+The withdraw was successful.
+[/output]
 [/tests]
 [code-io /]
 [/code-task]
+[/slide]
 
 [/slide]
 

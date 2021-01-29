@@ -713,11 +713,16 @@ Scrieți un program pentru a aplica un operator pentru două numere date:
 [code-task title="ATM" taskId="pb-js-Conditions-Advanced-ATM" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function ATM(input) {
+function atm(balance, withdraw, limit) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program pentru a simula o retragere de numerar de la bancomat
@@ -751,11 +756,48 @@ Scrieți un program pentru a simula o retragere de numerar de la bancomat
 [output]
 The withdraw was successful.
 [/output]
+[test]
+[input]
+124
+32
+66
+[/input]
+[output]
+The withdraw was successful.
+[/output]
 [/test]
+[test]
+[input]
+10
+50
+20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[test]
+[input]
+10
+4565
+345
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
+[/output]
+[test]
+[input]
+342
+2
+3
+[/input]
+[output]
+The withdraw was successful.
+[/output]
 [/tests]
 [code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
