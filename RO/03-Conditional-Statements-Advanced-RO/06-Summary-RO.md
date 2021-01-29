@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Recapitulare
 [vimeo-video]
 [stream language="EN" videoId="486874488/8ad9f383d6" default /]
@@ -44,7 +44,7 @@ switch (selector) {
 }
 ```
 
-În cadrul lecței următoare veți afla:
+## În cadrul lecței următoare veți afla:
 
 - Ce este bucla for?
 

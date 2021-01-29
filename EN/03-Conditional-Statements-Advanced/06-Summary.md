@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 [vimeo-video]
 [stream language="EN" videoId="486874488/8ad9f383d6" default /]
@@ -45,7 +45,7 @@ switch (selector) {
 }
 ```
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - What is for-loop?
 
