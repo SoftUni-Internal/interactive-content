@@ -14,9 +14,9 @@ function guessThePassword(input) {
 # Description
 Write a program to check a password:
 
-  * Read a string: the password **guess**
-  * Print `Welcome` if the password guess is `s3cr3t!`
-  * Print `Wrong password!` in all other cases 
+* Read a string: the password **guess**
+* Print `Welcome` if the password guess is `s3cr3t!`
+* Print `Wrong password!` in all other cases 
 
 # Example
 
@@ -63,9 +63,9 @@ function boilingWater(input) {
 # Description
 Write a program, which checks for hot water: 
 
-  * Read a floating-point number: the water **temperature** (in °C)
-  * Print `The water is boiling` if the number `> 100`
-  * Prints `The water is not hot enough` in all other cases 
+* Read a floating-point number: the water **temperature** (in °C)
+* Print `The water is boiling` if the number `> 100`
+* Prints `The water is not hot enough` in all other cases 
 
   # Example
 
@@ -112,9 +112,9 @@ function speedInfo(input) {
 # Description
 Write a program to check for fast / slow speed: 
 
-  * Read the **speed** (a floating-point number)
-  * Print `Slow` if the speed `<= 30`
-  * Print `Fast` if the speed `> 30`
+* Read the **speed** (a floating-point number)
+* Print `Slow` if the speed `<= 30`
+* Print `Fast` if the speed `> 30`
 
   # Example
 
@@ -272,12 +272,16 @@ function tickets(input) {
 # Description
 Write a program to calculate a ticket price:
 
-  * Read a ticket type: either **student** or **regular**
-  * Print the **price** in the following format `${price}`:
+* Read a ticket type: either **student** or **regular**
+
+* Print the **price** in the following format `${price}`:
     * The price should be **formatted** to 2nd digit after the decimal point
-  * Student ticket price: **1.00**
-  * Regular ticket price: **1.60**
-  * For invalid type print `Invalid ticket type!`
+
+* Student ticket price: **1.00**
+
+* Regular ticket price: **1.60**
+
+* For invalid type print `Invalid ticket type!`
 
 # Example
 
