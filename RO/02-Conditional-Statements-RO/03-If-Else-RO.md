@@ -9,7 +9,9 @@
 Construcția`if`poate conține,de asemenea,o clauză`else`pentru a da o acțiune specifică în cazul în care expresia booleană(care este setată la început`if(expresia bool)`)se schimba in rezultat negativ(`false`).
 
 Construită astfel, **instrucțiunea condițională** se numește `if-else` și comportamentul său este după cum urmează:
+
 * dacă rezultatul declarației este pozitiv (`true`)- efectuăm unele acțiuni
+
 * atunci când este negativ (`false`) - altele.
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
@@ -32,7 +34,7 @@ După ce instrucțiunea 'then'  sau instrucțiunea `else` rulează, controlul es
 
 Dacă condiția este `false`, controlul este transferat la următoarea instrucțiune după instrucțiunea if.
 
-Atât ce instrucțiunea 'then'  cât și instrucțiunea `else` pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{ }`.
+Atât ce instrucțiunea 'then'  cât și instrucțiunea `else` pot consta dintr-o singură instrucțiune sau mai multe instrucțiuni care sunt încadrate între paranteze `{}`.
 
 Pentru o singură instrucțiune, parantezele sunt opționale, dar recomandate.
 
@@ -69,6 +71,7 @@ Când vrem să executăm un  **bloc de cod** (un grup de comenzi), parantezele c
 În cazul în care le eliminăm, **numai prima linie** după **clauza if** va fi executată. 
 
 Iată un exemplu în care **omiterea** parantezelor cretate duce la o **confuzie:**
+
 ```js live
 let color = "red";
 if (color == "red") 
@@ -79,6 +82,7 @@ console.log("lemon");
 ```
 
 Cu acolade:
+
 ```js live
 let color = "red";
 if (color == "red") {
@@ -98,7 +102,7 @@ if (color == "red") {
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -106,8 +110,8 @@ function evenOrOdd(input) {
 # Descriere
 Scrieți un program, care verifică dacă un număr este **par sau impar**
 
-  * Dacă este par, tipăriți  `Even`
-  * Dacă este impar, tipăriți `Odd`
+* Dacă este par, tipăriți  `Even`
+* Dacă este impar, tipăriți `Odd`
 
 # Exemplu
 | **Input** | **Output** |
@@ -160,7 +164,7 @@ even
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
- // Write your code here
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -168,8 +172,8 @@ function evenOrOdd(input) {
 # Descriere 
 Scrieți un program, care verifică dacă un număr este **egal** sau **impar**
 
-  * Daca este egal,tipariti   `Even`
-  * Dacă este impar, tipariti `Odd`
+* Daca este egal,tipariti   `Even`
+* Dacă este impar, tipariti `Odd`
 
 # Exemplu
 | **Input** | **Output** |
