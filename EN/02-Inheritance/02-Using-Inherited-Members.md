@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Using Inherited Members
 
 **You can access inherited members**
@@ -14,28 +14,57 @@ student.sleep();
 Employee employee = new Employee();
 employee.sleep();
 ```
+[/slide]
 
-## Reusing Constructors
+[slide hideTitle]
+
+# Reusing Constructors
 
 **Constructors are not inherited**
 
-They can be **reused** by the child classes
+When a **parent class** declares a **constructor** with parameters everybody that inherites from this class **directly** must implement a **constructor** with the same parameters.
+
+Because the base constructor gets called automatically when the derived class is created.
+
+The parameter from the **constructor** of the derived class must be passed to the parent **constructor** with the keyword super.
+
+Here is an example of a constructor chaining.
 
 ```java
+class Person{
+    private String name;
+    
+    public Person(String name){
+        this.name = name;
+    }
+}
+
 class Student extends Person {
   private School school;
   public Student(String name, School school) {
-    super(name); //Constructor call should be first
+    super(name); //Best practises says that constructor call should be called first
     this.school = school;
   }
+
+//You can also furfill the parent constructor with some default values, just like this.
+  public Student(School school){ 
+      String defaultName = "John Doe";
+      super(defaultName);
+      this.school = school;
+  }
+
 }
+
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Thinking about Inheritance – Extends
 
-- A derived class instance **contains** an instance of its base class
+What happens with the memory when a class **inherites** another one.
+
+As you can see in the image below, when we inherit the memory for the **Parent** is allocated plus the new needed memory for the **SubClass**.
 
 [image assetsSrc="inheritance-example(6).png" /]
 
@@ -51,12 +80,14 @@ class CollegeStudent extends Student { … }
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multiple Inheritance
 
-**In Java there is no multiple inheritance**
+**In Java multiple inheritance is now allowed**
 
-Only **multiple interfaces can be implemented**
+Instead if you need one class to be from few families you can implement many **interfaces** on a single class.
+
+**Interfaces** will be covered further in our lessons.
 
 [image assetsSrc="inheritance-example(8).png" /]
 
@@ -80,9 +111,9 @@ public class Main {
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
 
-**Animal** with a single public method `eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**
 
-**Dog** with a single public method `bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**
 
 Puppy with a single public method weep() that prints: **"weeping…"**
 
@@ -147,12 +178,12 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Multiple Inheritance
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Access to Base Class Members
 
 To access the base class members, use the `super` keyword
@@ -188,11 +219,11 @@ public class Main {
 ## Description
 Create three classes named **Animal**, **Dog** and **Cat**. 
 
-**Animal** with a single public method `eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**
 
-**Dog** with a single public method `bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**
 
-**Cat** with a single public method `meow()` that prints: **"meowing…"**
+**Cat** with a single public method `.meow()` that prints: **"meowing…"**
 
 **Dog** and **Cat** should inherit from **Animal**.
 
@@ -245,7 +276,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Hierarchical Inheritance
 

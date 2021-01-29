@@ -1,11 +1,11 @@
 # Reusing Classes
 
-[slide]
+[slide hideTitle]
 # Access Modifiers and Shadowing Variables
 
 - Derived classes **can access all public** and **protected** members
 - Derived classes can access **default** members **if in same package**
-- **Private** fields **aren't inherited** in subclasses (can't be accesssed)
+- **Private** fields **aren't inherited** in subclasses (can not be accesssed)
 
 ```java
 class Person {
@@ -31,7 +31,11 @@ class Patient extends Person {
 }
 ```
 
-## Shadowing Variables – Access
+[/slide]
+
+[slide hideTitle]
+
+# Shadowing Variables – Access
 
 - Use **super** and **this** to specify member access
 
@@ -46,20 +50,25 @@ class Patient extends Person {
     super.weight = 1; //Base class member
   }
 }
+
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Overriding Derived Methods
 
-A **child class** can redefine existing methods
+Overriding is a mechanism in which we can give custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
+
+It's am imporant tool as it is connected to another pillar of the OOP **Polymorphism**.
+
 
 ```java
-public class Person {   public void sleep() { 
+public class Person {  
+  public void sleep() { 
 	System.out.println("Person sleeping"); } 
 }
 ```
-- Method in base class **must not be final**
+- A method that we want to override should not be set as `final`
 
 ```java
 public class Student extends Person {
@@ -70,9 +79,15 @@ public class Student extends Person {
 ```
 - Signature and return type **should match**
 
-## Final Methods and Classes
+[/slide]
 
-- **final** – defines a method that **can't be overridden**
+[slide hideTitle]
+
+# Final Methods and Classes
+
+- `final` – defines a method that **can not be overridden**.
+  We should use this tool when we want to preserve our method implementation down the class hierarchy.
+  Final can be declared in any derived class and it gets in power for the classes children down the hierarchy.
 
 ```java
 public class Animal {
@@ -100,12 +115,15 @@ public class MyMath extends Math { }     // Error…
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
 # Inheritance Benefits 
 
 ## Abstraction
 
-- One approach for providing abstraction
+- With inheritance we can provide abstraction to the classes we use.
+- We can re-use logic, ;ess code less bugs.
+- We can achieve **Polymorphism**
 
 ```java
 Person person = new Person();
@@ -116,13 +134,12 @@ List<Person> people = new ArrayList();
 people.add(person);
 people.add(student);
 ```
-- Focus on **common properties**
 
 [image assetsSrc="inheritance-example(13).png" /]
 
 ## Extension
 
-- We can **extend a class** that we **can't otherwise change**
+- We can extend a class that we can't otherwise change, implementing the custom logic we need.
 
 [image assetsSrc="inheritance-example(14).png" /]
 
@@ -198,7 +215,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Random Array List
 
 [/slide]

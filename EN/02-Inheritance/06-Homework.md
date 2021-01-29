@@ -3199,7 +3199,7 @@ Test Passed!
 
 
 
-[slide]
+[slide hideTitle]
 # Homework Results
 [tasks-results/]
 

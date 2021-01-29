@@ -1,20 +1,33 @@
 # Types of Class Reuse
 
-[slide]
+[slide hideTitle]
 # Extension
 
-**Duplicate code is error prone**
-- **Reuse classes** through **extension**
-- Sometimes this is the only way
+Extension of class is called **IS-A** relationship.
+
+**Student IS-A Person**
+```java
+public Student extends Person{}
+```
+
+- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we used this code in order to fix it.
+- **Reuse classes** through **extension** and add custom logic to it.
+- When a class is not from our library and we don't know its implementation we can only extend the given class to add custom logic to it.
 
 [image assetsSrc="inheritance-example(15).png" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Composition
 
-**Using classes to define classes**
+Composition is a different type of relationship, in composition we contain the given object in our class.
+
+This relationship is called **HAS-A**
+
+**The Laptop HAS-A Monitior**
+**The Laptop HAS-A Touchpad**
+**The Laptop HAS-A Keyboard**
 
 ```java
 class Laptop {
@@ -28,24 +41,30 @@ class Laptop {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Delegation
 
 **Delegation is a process of passing attributes between objects**
-- Alternative to inheritance.
+This way we can give a common interface for the client to work with as he doesn't really care of the implementation underneath.
 
 ```java
 class Laptop {
   Monitor monitor;
-  void incrBrightness() {
-    monitor.brighten();
-  }
+  void incrBrightness() {           //In our class Laptop we provide a method for increasing the brigthness
+    monitor.brighten();             //although that undearneath we are calling the monior's method
+  }                                 //we give an interface to our class, without specifying the code that does the job
+                                    //this way we can also combine several methods from differnet classed under just one method.
 
+
+
+
+                                    
   void decrBrightness() {
     monitor.dim();
   } 
 }
 ```
+
 [image assetsSrc="inheritance-example(17).png" /]
 
 [/slide]
@@ -204,12 +223,12 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Stack of Strings
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # When to Use Inheritance
 
 - Classes share **IS-A** relationship

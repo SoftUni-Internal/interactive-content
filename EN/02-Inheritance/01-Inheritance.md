@@ -1,38 +1,46 @@
-[slide]
+[slide hideTitle]
 # Inheritance
 
-**Inheritance is a mechanism by which it is possible to inherit attributes and methods from one class to another.**
+**Inheritance is a mechanism by which it is possible to inherit properties and methods from a parent object to a child object**
 
-- The class **giving its members** to its child class is called **Superclass** (Base Class, Parent class)
-- The class **taking members** from its base class is called **Subclass** (Child class, Derived Class)
+- The class **passing its members** to its child class is called **Superclass** (Base Class, Parent class)
+
+- The class **recieving members** from its base class is called **Subclass** (Child class, Derived Class)
+
+The idea behind using **Inheritance** is that you can build classes upon already existing classes.
 
 [image assetsSrc="inheritance-example(1).png" /]
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Class Hierarchies
 
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
+
+A real life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leafes we have it's children and their chidren etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Class Hierarchies – Java Collection
 
-`Object` is at the root of Java Class Hierarchy
+`Object` is a universal superclass that is defined to be root of the entire class hierarchy in Java.
+
+This means that every object that we create is implicitly a child of the class `Object` without us specifying it.
 
 [image assetsSrc="inheritance-example(3).png" /]
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Inheritance in Java
 
-Java supports inheritance through **extends** keyword
+We can **Inherite** a given class through the keyowrd **extends**, placed right after the name of the given subclass, further setting the parent.
 
 ```java
 class Person { … }
@@ -67,9 +75,9 @@ public class Main {
 ## Description
 Create two classes named **Animal** and **Dog**.
 
-**Animal** with a single public method `eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**
 
-**Dog** with a single public method `bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**
 
 **Dog** should inherit from **Animal**.
 
@@ -693,7 +701,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Single Inheritance
 
 [/slide]
