@@ -810,12 +810,16 @@ Insufficient availability.
 [code-task title="Biggest of Five Numbers" taskId="pb-js-Conditions-Advanced-Biggest-of-Five-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function biggestOfFiveNumbers(input) {
+function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
     // Write your code here
 }
 ```
 [/code-editor]
-[task-description]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 # Descriere
 Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 * Citiți **5 numere întregi**
@@ -833,22 +837,80 @@ Scrieți un program pentru a găsi cel mai mare dintre 5 numere
 
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-1
-2
-3
-4
-5
+-1
+-2
+-3
+-4
+-5
 [/input]
 [output]
+-1
+[/output]
+[/test]
+[test]
+[input]
 5
+-2
+-3
+9
+-8
+[/input]
+[output]
+9
+[/output]
+[/test]
+[test]
+[input]
+-1
+4
+3
+-4
+1
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+4
+2
+5
+43
+1
+[/input]
+[output]
+43
+[/output]
+[/test]
+[test]
+[input]
+234234
+2345
+56756
+67867
+3453
+[/input]
+[output]
+234234
+[/output]
+[/test]
+[test]
+[input]
+3452
+54756
+6786
+3453
+4
+[/input]
+[output]
+54756
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
-
