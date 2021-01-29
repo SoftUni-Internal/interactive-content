@@ -755,16 +755,6 @@ The withdraw was successful.
 [/test]
 [test]
 [input]
-124
-32
-66
-[/input]
-[output]
-The withdraw was successful.
-[/output]
-[/test]
-[test]
-[input]
 10
 50
 20
