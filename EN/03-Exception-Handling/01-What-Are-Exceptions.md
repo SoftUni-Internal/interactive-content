@@ -20,11 +20,15 @@ They allow the problematic situations to be processed at multiple levels and sim
 
 # The Throwable Class
 
+The superclass of all errors and exceptions in the Java language is the **throwable class**.
+
+Only objects that are instances of this class (or one of its subclasses) are thrown by the Java Virtual Machine.
+
 The **Throwable** class is a base for all exceptions in JVM. 
 
-Contains **information** for the **cause of the error**.
-- **Message** – a text description of the exception
-- **StackTrace** – the snapshot of the stack at the moment of exception throwing
+A throwable contains a snapshot of the execution stack of its thread at the time it was created.
+
+It can also contain a message string that gives more information about the error.
 
 [/slide]
 
