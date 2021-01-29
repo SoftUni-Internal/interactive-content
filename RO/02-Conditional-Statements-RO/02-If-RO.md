@@ -19,11 +19,11 @@ Aveți câteva plante în grădină care au nevoie de apa.
 
 **Dacă** plouă:
 
-  * Nu vom uda plantele din grădină.
+* Nu vom uda plantele din grădină.
 
 **Altfel**:
 
-  * Va trebui să le udăm
+* Va trebui să le udăm
 
 Această situație concretă are doar două opțiuni din care să alegeți, dar în viața reală, precum și în programare, ați putea avea mai multe.
 
@@ -78,7 +78,7 @@ function example(input) {
 [code-editor language=javascript]
 ```js
 function freezingWeather(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -87,8 +87,8 @@ function freezingWeather(input) {
 # Descriere
 Scrieți un program pentru a verifica vremea înghețată:
 
-   *Citiți o temperatură în Celsius (a floating-point number)
-   *Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
+* Citiți o temperatură în Celsius (a floating-point number)
+* Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
 
 # Exemplu
 
@@ -140,7 +140,7 @@ Freezing weather!
 [code-editor language=javascript]
 ```js
 function freezingWeather(input) {
-  // Write your code here
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -148,8 +148,8 @@ function freezingWeather(input) {
 # Descriere
 Scrieți un program pentru a verifica vremea înghețată:
 
-  *Citiți o temperatură în Celsius (un număr cu virgulă mobilă)
-  *Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
+* Citiți o temperatură în Celsius (a floating-point number)
+* Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
   
 # Exemplu
 | **Input** | **Output** |
