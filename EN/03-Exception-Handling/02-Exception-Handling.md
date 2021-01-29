@@ -45,9 +45,9 @@ try {
   // Handle the caught arithmetic exception
 }
 ```
-- The code in the example handles `IndexOutOfBoundsException` and its descendants: 
-    - `ArrayIndexOutOfBoundsException`
-    - `StringIndexOutOfBoundsException`
+The code in the example handles **IndexOutOfBoundsException** and its descendants: 
+- **ArrayIndexOutOfBoundsException**
+- **StringIndexOutOfBoundsException**
 
 Example: Find the Mistake.
 
