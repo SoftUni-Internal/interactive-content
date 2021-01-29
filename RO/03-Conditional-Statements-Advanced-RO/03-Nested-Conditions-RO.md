@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Condiții imbricate
 
 [vimeo-video]
@@ -8,7 +8,7 @@
 
 Destul de des, logica programului necesită utilizarea declarațiilor `if` sau `if-else`, care sunt cuprinse una în alta.
 
-Aceste declarații sunt numite declarații **imbricate** `if` sau declarații  `if-else` 
+Aceste declarații sunt numite declarații **imbricate** `if` sau declarații  `if-else`.
 
 După cum sugerează denumirea **„imbricat”**, acestea sunt declarații `if` sau `if-else` care sunt plasate în interiorul altor declarații `if` sau `else`.
 
@@ -25,10 +25,14 @@ if (condition1) {
 # Exemplu: Titluri de persoană
 
 În funcție de vârstă (număr zecimal) și sexul (**m** / **f**) al unei persoane, tipăriți un titlu:
-- `Mr.` - un bărbat (sex **m**) - 16 ani sau mai mult.
-- `Master` - un băiat (sex **m**) - sub 16 ani.
-- `Ms.` - o femeie (sex **f**) - 16 ani sau mai mult.
-- `Miss` - o fată (sex **f**) - sub 16 ani.
+
+- `Mr.`: un bărbat (sex **m**) - 16 ani sau mai mult
+
+- `Master`: un băiat (sex **m**) - sub 16 ani
+
+- `Ms.`: o femeie (sex **f**) - 16 ani sau mai mult
+
+- `Miss`: o fată (sex **f**) - sub 16 ani
 
 # Soluție: Titluri de persoană
 
@@ -74,15 +78,15 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul alt
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problemă: Marketplace
 
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-lab-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
-    // Scrieți codul aici
+  // Scrieți codul aici
 }
 ```
 [/code-editor]
@@ -133,7 +137,7 @@ Weekend
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Marketplace
 [vimeo-video]
 [stream language="EN" videoId="486869990/380a476703" default /]
@@ -142,6 +146,7 @@ Weekend
 
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function marketPlace(input) {
   let product = input[0];
@@ -214,10 +219,10 @@ Weekend
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Biggest Number of Three
 
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-lab-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
@@ -278,7 +283,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Soluție: Biggest Number of Three
 
@@ -314,8 +319,9 @@ function biggestNumberOfThree(input) {
 # Descriere
 Scrieți un program care:
 
-  * Citește **3 numere** de pe consolă
-  * Tipărește cel mai mare număr
+* Citește **3 numere** de pe consolă
+
+* Tipărește cel mai mare număr
 
 # Exemplu
 | **Input** | **Output** |

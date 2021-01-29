@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Nested Conditions
 
 [vimeo-video]
@@ -23,10 +23,10 @@ if (condition1) {
 
 # Example: Personal Titles
 Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
--  `Mr.` - a man (gender **m**) - 16 or more years old.
--  `Master` - a boy (gender **m**) - under 16 years. 
--  `Ms.` - a woman (gender **f**) - 16 or more years old.
--  `Miss` - a girl (gender **f**) -  under 16 years.
+- `Mr.`: a man (gender **m**) - 16 or more years old.
+- `Master`: a boy (gender **m**) - under 16 years. 
+- `Ms.`: a woman (gender **f**) - 16 or more years old.
+- `Miss`: a girl (gender **f**) -  under 16 years.
 
 # Solution: Person Titles
 We should notice that the **output** of the program **depends on a few things**. 
@@ -69,9 +69,9 @@ Nesting of **more than three conditional statements** inside each other is not c
 It **has to be avoided**, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Marketplace
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-lab-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
@@ -128,7 +128,7 @@ Weekend
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Marketplace
 [vimeo-video]
 [stream language="EN" videoId="486869990/380a476703" default /]
@@ -209,9 +209,9 @@ Weekend
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Biggest Number of Three
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-lab-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
@@ -271,7 +271,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Biggest Number of Three
 [vimeo-video]
 [stream language="EN" videoId="486870661/f4c774cc7b" default /]
