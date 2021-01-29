@@ -357,6 +357,11 @@ function cinema(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Calculați **prețul** pentru toate biletele pentru un film cinematografic:
@@ -400,7 +405,7 @@ Normal
 [code-task title="Operations with Numbers" taskId="pb-js-Conditions-Advanced-Operation-With-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numberOperations(input) {
+function numberOperations(typeOfMovie, rows, seatsPerRow) {
     // Write your code here
 }
 ```
