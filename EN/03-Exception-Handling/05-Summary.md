@@ -15,7 +15,7 @@
     - Using Catch Block
     - Choosing the Exception Type 
 
-## In the next lesson you will learn:
+## In the next lesson, you will learn:
 
 - What is Debugging?
     - Working with Debugging tools (`debuggers`)

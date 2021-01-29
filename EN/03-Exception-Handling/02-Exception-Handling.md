@@ -4,7 +4,7 @@
 
 # "try-catch" Construction
 
-In Java exceptions can be handled by the **try-catch** construction.
+In Java, we handle exceptions by using the **try-catch** construction.
 
 ```java 
 try {
@@ -13,7 +13,7 @@ try {
 // Handle the caught exception
 }
 ```
-- **Catch** blocks can be used multiple times to process different exception types.
+Use the **Catch** blocks multiple times to process different exception types.
 
 **Example:**
 
@@ -28,8 +28,15 @@ try {
 }
 ```
 
-**When catching an exception of a particular class, all its inheritors (child exceptions) are caught too.**
-See the following  example:
+[/slide]
+
+[slide hideTitle]
+
+# Handling Exceptions
+
+**Catching an exception of a particular class causes the caption of all its inheritors (child exceptions), as well.**
+
+See the following example:
 
 ```java 
 try {
@@ -41,18 +48,6 @@ try {
 - The code in the example handles `IndexOutOfBoundsException` and its descendants: 
     - `ArrayIndexOutOfBoundsException`
     - `StringIndexOutOfBoundsException`
-
-## Unmanaged code can throw **other exceptions**.
-
-For **handling all exceptions** (even unmanaged) use the construction:
-
-```java
-try {
-  // Do some work that can raise any exception
-} catch (Exception ex) {
-  // Handle the caught exception
-}
-``` 
 
 Example: Find the Mistake.
 
@@ -68,18 +63,35 @@ try {
 }
 ```
 
-Hint: Trace out the exceptions hierarchy. Be cautious witch exception is main and witch is inheritor.
+[/slide]
+
+[slide hideTitle]
+
+# Handling all Exceptions
+
+## Unmanaged code can throw **other exceptions**.
+
+For **handling all exceptions** (even unmanaged) use the construction:
+
+```java
+try {
+  // Do some work that can raise any exception
+} catch (Exception ex) {
+  // Handle the caught exception
+}
+``` 
+
+Hint: Trace out the exceptions hierarchy. Be cautious witch exception is the main and which is the inheritor.
 
 [/slide]
 
 [slide hideTitle]
 
+# "Try-finally" Statement
 
-# "try-finally" Statement
+The **"try-finally"** statement ensures **execution** of a given block **in all cases** when an exception is raised or not in the try block.
 
-The **"try-finally"** statement ensures **execution** of a given block **in all cases**, when exception is raised or not in the try block.
-
-Used for execution of cleaning-up code, e.g. releasing resources.
+It helps the execution for cleaning-up code, e.g. releasing resources.
 
 ```java 
 try {
@@ -89,11 +101,7 @@ try {
 }
 ```
 
-[image assetsSrc="exception-handling-example(2).png" /]
-
-
 **Example:**
-
 
 ```java 
 static void testTryFinally() {
@@ -116,6 +124,19 @@ static void testTryFinally() {
 
 [slide hideTitle]
 
+# How Do Exceptions Work?
+
+In the **try block**, we run the code we want to check.
+
+The **catch block** must handle the **checked exceptions** thrown by **try block**, as well as any possible **unchecked exceptions**.
+
+The **finally block** gives us a chance to run the code which we want to execute every time a **try-catch block is completed** - either with errors or without any error.
+
+[image assetsSrc="exception-handling-example(2).png" /]
+
+[/slide]
+
+[slide hideTitle]
 
 # Problem: Square Root
 
@@ -123,37 +144,34 @@ Write a program that reads an integer **number** and **calculates** and **prints
 
 If the number is invalid, print **"Invalid number"**. 
 
-In all cases finally print **"Good bye"**. 
+In all cases, finally, print **"Goodbye"**. 
 
 Use **try-catch-finally.**
-
 
 [/slide]
 
 [slide hideTitle]
 
-
 # Solution: Square Root
 
-**TODO: Take the solution from Dimo's presentation, because to be the same.**
+**TODO: Take the solution from Dimo's presentation because it is the same.**
 
 ```java live
 
 ```
 [/slide]
 
-[slide]
+[slide hiseTitle]
 
 # Problem: Enter Numbers
 
-Write a method **printNumbers(int start, int end)** that prints an integer numbers in a given range **\[start...end\]**. 
+Write a method **printNumbers(int start, int end)** that prints integer numbers in a given range **\[start...end\]**. 
 
-If an **invalid number** or a **non-number** text is entered, the method should **throw an exception**. 
+If we have an **invalid number** or a **non-number** as input, the method should **throw an exception**. 
 
 Using this method write a program that enters **start** and **end:** **1 < start < end < 100**. 
 
 If the user enters an invalid number, make the user enter all of them again.
-
 
 [/slide]
 
@@ -161,7 +179,7 @@ If the user enters an invalid number, make the user enter all of them again.
 
 # Solution: Enter Numbers
 
-**TODO: Take the solution from Dimo's presentation, because to be the same.**
+**TODO: Take the solution from Dimo's presentation because it is the same.**
 
 ```java live
 
@@ -171,12 +189,11 @@ If the user enters an invalid number, make the user enter all of them again.
 
 [slide hideTitle]
 
-
 # Problem: Fixing
 
 This program is throwing an **ArrayIndexOutOfBoundsException**. 
 
-Using your skills, fix this problem using a try catch block.
+Using your skills, fix this problem using a try-catch block.
 
 ```java
 
@@ -203,18 +220,12 @@ public static void main(String[] args) {
 
 [slide hideTitle]
 
-
 # Solution: Fixing
 
-**TODO: Take the solution from Dimo's presentation, because to be the same.**
+**TODO: Take the solution from Dimo's presentation because it is the same.**
 
 ```java live
 
 ```
 
 [/slide]
-
-
-
-
-

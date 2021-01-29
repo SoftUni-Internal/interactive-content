@@ -8,14 +8,18 @@ Exceptions are thrown (raised) by the **throw** keyword.
 
 They are used to notify the calling code in case of an error or unusual situation.
 
-**When an exception is thrown:**
+**When we have an exception:**
 - The program execution stops
 - The exception travels over the stack
    - Until a matching catch block is reached to handle it
    
 Unhandled exceptions display an error message.
 
-## Using Throw Keyword
+[/slide]
+
+[slide hideTitle]
+
+# Using Throw Keyword
 
 - Throwing an exception with an error message:
 
@@ -31,9 +35,13 @@ try {
   throw new IllegalStateException("Cannot save invoice.", sqlEx);
 }
 ```
-**Note:** if the original exception is not passed, the initial cause of the exception is lost
+**Note:** If the original exception is not passed, the initial cause of the exception is lost
 
-## Re-Throwing Exceptions
+[/slide]
+
+[slide hideTitle]
+
+# Re-Throwing Exceptions
 
 - Caught exceptions can be re-thrown again:
 
@@ -46,7 +54,6 @@ try {
 }
 ```
 **Example:**
-
 
 ```java
 public static double sqrt(double value) {
@@ -69,7 +76,6 @@ public static void main(String[] args) {
 
 [slide hideTitle]
 
-
 # Problem: Valid Person
 
 Define a simple class **Person**, which has the following fields:
@@ -82,13 +88,12 @@ Define a simple class **Person**, which has the following fields:
 
 [slide hideTitle]
 
-
 # Solution: Valid Person
 
 ## Step 1. Create a Class Person
 
 Create a class **Person**. The class should contain the following fields: 
-**first name (String), last name (String) and age (int)**.
+**first name (String), last name (String), and age (int)**.
 
 All fields are **required**, meaning you should have one constructor accepting all three as **parameters**. 
 
@@ -122,11 +127,11 @@ To check this, use the `string.IsNullOrEmpty()` method.
 
 The **age** must be in the range **[0 … 120].**
 
-If invalid data is entered, **throw** appropriate exceptions with descriptive **messages**. 
+If data is **invalid**, **throw** appropriate exceptions with descriptive **messages**
 
-For example, if an empty name is entered, an appropriate exception may be **IllegalArgumentException**.
+For example, if the **name** is an **empty string**, an appropriate exception may be **IllegalArgumentException**.
 
-Example for validating the **first name** (last name is analagous):
+Example for validating the **first name** (the last name is analogous):
 
 ```java
 private void setFirstName (String firstName) {
@@ -160,14 +165,19 @@ public Person (String firstName, String lastName, int age) {
 ```
 
 ## Step 3. Test the Person Class
-In your main program, test whether your class behaves properly. 
+
+In your main program, test whether your class behaves correctly. 
 
 Create several objects of type Person – one with **valid data**, one with an **empty first name**, 
 one with **null as last name**, one with **negative age** and one with **age > 120**. 
 
-Check whether executing the code results in errors, when bad data is provided. 
+Check whether executing the code results in errors in case data is invalid. 
 
-Test the invalid cases one by one by commenting out the other invalid lines of code (your program will stop executing when the first error is encountered).
+Test the invalid cases one by one.
+
+Comment out the other invalid lines of code.
+
+Your program will stop executing when the first error occurs.
 
 ```java
 public static void main(String[] args) {
@@ -184,9 +194,8 @@ public static void main(String[] args) {
 
 To prevent the program from blowing up, surround the invalid lines in **try-catch** blocks. 
 
-It’s a good practice to put different catch blocks for the different types of errors you anticipate the operation might throw. 
+It is good practice to put different catch blocks for different types of errors you anticipate the operation might throw. 
 
-Print the **message** of the exception in the catch block.
 
 Example:
 

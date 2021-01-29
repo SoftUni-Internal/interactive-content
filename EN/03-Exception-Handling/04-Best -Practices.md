@@ -8,15 +8,18 @@
 
    - Begin with the exceptions lowest in the hierarchy.
    - Continue with the more general exceptions.
-   - Otherwise a compilation error will occur.
+   - Otherwise, a compilation error will occur.
 
-- Each **catch** block should handle only these exceptions which it expects
+- Each **catch** block should handle only these exceptions, which it expects
 
    - If a method is not competent to handle an exception, it should leave it unhandled
-   - Handling all exceptions disregarding their type is a popular bad practice (anti-pattern)!
+   - Handling all exceptions disregarding their type is a bad practice (anti-pattern)!
 
+[/slide]
 
-## Choosing the Exception Type 
+[slide hideTitle]
+
+# Choosing the Exception Type 
 
 - When an application attempts to use **null** in a case where an object is required:
    - **NullPointerException**
@@ -24,7 +27,7 @@
    - **ArrayIndexOutOfBoundsException**
 - An index is either negative or greater than the size of the string: 
    - **StringIndexOutOfBoundsException**
-- Attempts to convert a inappropriate string to one of the numeric types: 
+- Attempts to convert an inappropriate string to one of the numeric types: 
    - **NumberFormatException**
 - When an exceptional arithmetic condition has occurred
    - **ArithmeticException**
@@ -33,10 +36,13 @@
 - A method has been passed an illegal or inappropriate argument
    - **IllegalArgumentException**
 
+[/slide]
 
-## Best Practices 
+[slide hideTitle]
 
-- When raising an exception, always pass to the constructor a **good explanation message.**
+# Best Practices 
+
+- When raising an exception, always pass a **good explanation message** to the constructor 
 
   The exception message should explain what causes the problem and how to solve it.
 
@@ -47,7 +53,7 @@
 
 - Exceptions can decrease the application performance.
 
-   - Throw exceptions only in situations which are really exceptional and should be handled.
+   - Throw exceptions only in exceptional situations
    - Do not throw exceptions in the normal program control flow
    - JVM could throw exceptions at any time with no way to predict them
      **E.g. StackOverflowError**

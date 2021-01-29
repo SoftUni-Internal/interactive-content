@@ -10,11 +10,23 @@ Exception objects have detailed information about the error.
 
 They allow the problematic situations to be processed at multiple levels and simplify code construction and maintenance.
 
+[/slide]
+
+[slide hideTitle]
+
+# The Throwable Class
+
 The **Throwable** class is a base for all exceptions in JVM. 
 
 Contains **information** for the **cause of the error**.
 - **Message** – a text description of the exception
 - **StackTrace** – the snapshot of the stack at the moment of exception throwing
+
+[/slide]
+
+[slide hideTitle]
+
+# Types of Exceptions
 
 Below **Throwable** are:
 
@@ -25,6 +37,12 @@ Below **Throwable** are:
 - **Error**
     - Not expected to be caught under normal circumstances from the program
     - Example - "StackOverflowError"
+
+[/slide]
+
+[slide hideTitle]
+
+# Exceptions
 
 **Exceptions** are two types:
 
@@ -37,7 +55,6 @@ Below **Throwable** are:
     FileReader fr = new FileReader(file);
   } //File not found Exception
 ```
- 
 
 - **Unchecked** - an exception that occurs at the time of execution
     - Also called as **Runtime Exceptions**
@@ -53,7 +70,6 @@ Below **Throwable** are:
 [/slide]
 
 [slide hideTitle]
-
 
 # Exception Hierarchy 
 
