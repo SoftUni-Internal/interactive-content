@@ -9,6 +9,7 @@
 [/video-vimeo]
 
 If we think of the variables as boxes that hold information, this is how they would look:
+
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
 Most of our applications need to work with information.
@@ -29,8 +30,11 @@ We can use variables to store all kind of data we need.
 In programming, each **variable** stores a certain value of a particular type. 
 
 For example, data types can be: 
-* a number: 1, 2, 3.14, -1, 1.5e38 etc.
-* text (string): 'Hello', "Hi", "How are you?" etc.
+
+* a number: 1, 2, 3.14, -1, 1.5e38 etc
+
+* text (string): 'Hello', "Hi", "How are you?" etc
+
 * boolean: true or false
 
 We can imagine **variables** as containers for data or named areas in the memory. 
@@ -47,27 +51,37 @@ The data that they are storing can be read and changed at any time.
 [/video-vimeo]
 
 Variables can be stored in the program's:
-  * Operational memory - in the execution **stack**
-  * Dynamic memory - in the **heap**
+
+* Operational memory: in the execution **stack**
+
+* Dynamic memory: in the **heap**
 
 Basically **variables** provide means for:
-  * **Storing** data
-  * **Retrieving** stored data
-  * **Modifying** stored data
+
+* **Storing** data
+
+* **Retrieving** stored data
+
+* **Modifying** stored data
 
 They are characterized by:
-  * name (identifier)
-  * type (of the information preserved)
-  * value (stored information)
+
+* name (identifier)
+
+* type (of the information preserved)
+
+* value (stored information)
 
 Each of the variables in JavaScript has a name, a type and a value. 
 
 Here is how we would declare a variable and assign it with a value at the same time:
+
 ```js
 let name = "Bob";
 let employed = true;
 let age = 35;
 ```
+
 [/slide]
 
 [slide hideTitle]
@@ -87,14 +101,14 @@ let age = 25;
 console.log("Age:", age); 
 ```
 
-* `var` – similar to `let`, but gives a wider scope
+* `var`: similar to `let`, but gives a wider scope
 
 ``` js live
 var productID = 120491283761;
 console.log(productID); 
 ```
 
-* `const` – declares a read-only named constant
+* `const`: declares a read-only named constant
 
 ``` js live
 const name = "Peter";
