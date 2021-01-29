@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Exemplu de viață reală: Piață
 [vimeo-video]
@@ -11,7 +11,7 @@
 Piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii
 
 
-| Produs      | Ziua lucrătoare | Weekend   |
+| **Produs**      | **Ziua lucrătoare** | **Weekend**   |
 | :---:       |    :----:   |   :---:     |
 | Banane        |2.50       | 2.70 |
 | Mere          | 1.30        | 1.60    |

@@ -1,5 +1,4 @@
-[slide]
-
+[slide hideTitle]
 # Lesson Introduction
 
 [vimeo-video]
