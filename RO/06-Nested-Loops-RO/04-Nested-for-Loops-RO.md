@@ -86,15 +86,13 @@ Scrieți un program care:
 * Citește **înălțimea** unui triunghi de pe consolă
 * Tipărește un **triunghi de stele**
 # Exemplu
-
-## Input
-- 5
-## Output
-- \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
+| **Input** | **Output**| 
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+|  | \*\*\*\* |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
@@ -149,15 +147,13 @@ Scrieți un program care:
 * Citește **înălțimea** unui triunghi de pe consolă
 * Tipărește un **triunghi de stele**
 # Exemplu
-
-## Input
-- 5
-## Output
-- \*
-- \*\*
-- \*\*\*
-- \*\*\*\*
-- \*\*\*\*\*
+| **Input** | **Output**| 
+| --- | --- |
+| 5 | \* |
+| | \*\* |
+| | \*\*\* |
+|  | \*\*\*\* |
+| | \*\*\*\*\* |
 [/task-description]
 [tests]
 [test]
