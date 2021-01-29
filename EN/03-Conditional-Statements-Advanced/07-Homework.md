@@ -760,14 +760,14 @@ The withdraw was successful.
 66
 [/input]
 [output]
-The withdraw was successful.
+10
+50
+20
 [/output]
 [/test]
 [test]
 [input]
-10
-50
-20
+The withdraw was successful.
 [/input]
 [output]
 The daily limit was exceeded.
@@ -797,13 +797,13 @@ The withdraw was successful.
 [/test]
 [test]
 [input]
-The daily limit was exceeded.
-Insufficient availability.
-[/input]
-[output]
 10
 50
 20
+[/input]
+[output]
+The daily limit was exceeded.
+Insufficient availability.
 [/output]
 [/test]
 [/tests]
