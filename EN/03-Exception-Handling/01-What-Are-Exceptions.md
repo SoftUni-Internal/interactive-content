@@ -4,9 +4,13 @@
 
 # Exceptions: Defenition
 
-Exceptions in Java are **objects**. 
+An exception is an event, which occurs during the execution of a program.
 
-Exception objects have detailed information about the error.
+When an Exception occurs the normal flow of the program is disrupted and the program terminates, which is not recommended, therefore, these exceptions are to be handled.
+
+Some of the exception are caused by the user or by the programmer error, and sometimes by physical resources that have failed in some way.
+
+In Java exceptions are objects and have detailed information about the error.
 
 They allow the problematic situations to be processed at multiple levels and simplify code construction and maintenance.
 
