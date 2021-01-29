@@ -188,9 +188,7 @@ Calculați semnul produsului de 3 numere:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2| negative |
-|3|  |
-|-1|  |
+|`['2', '3', '-1']`| negative |
 
 [/task-description]
 [tests]
@@ -258,15 +256,8 @@ Scrieți un program, care verifică **3 numere sortate**:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|1| Ascending |
-|2|  |
-|3|  |
-
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|3| Not sorted |
-|5|  |
-|2|  |
+|`['1', '2', '3']`| Ascending |
+|`['3', '5', '2']`| Not sorted |
 
 [/task-description]
 [tests]

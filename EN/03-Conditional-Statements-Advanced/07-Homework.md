@@ -19,7 +19,7 @@ Write a program to check for fruit or vegetable:
 * Print: `vegetable`, `fruit` or `unknown`
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |lemon| fruit |
 |carrot| vegetable |
@@ -67,7 +67,7 @@ Write a program to print the day of the week as word:
 * Print `Error` if the number is not in the given range
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |1| Monday |
 |8| Error |
@@ -185,9 +185,8 @@ Try to do this **without multiplying** the 3 numbers
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| negative |
-|3|  |
-|-1|  |
+|`['2', '3', '-1']`| negative |
+
 
 [/task-description]
 [tests]
@@ -252,17 +251,10 @@ Write a program, which checks for **sorted 3 numbers**:
 * Print `Not sorted` in any other case
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|1| Ascending |
-|2|  |
-|3|  |
-
-  | **Input** | **Output** |
-| --- | --- |
-|3| Not sorted |
-|5|  |
-|2|  |
+|`['1', '2', '3']`| Ascending |
+|`['3', '5', '2']`| Not sorted |
 
 [/task-description]
 [tests]
