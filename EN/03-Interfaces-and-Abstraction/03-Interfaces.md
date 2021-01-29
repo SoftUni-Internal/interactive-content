@@ -10,7 +10,9 @@ An **interface** can have all the methods and variables like the class do, but t
 
 We use **interfaces** when we want to achieve **security**.
 
-As we know, Java does not support "**multiple inheritance**". However, we can achieve this easy with **interfaces**, because the class can **implement** multiple interfaces.
+As we know, Java does not support "**multiple inheritance**". 
+
+However, we can achieve this easy with **interfaces**, because the class can **implement** multiple interfaces.
 
 In this **example** we can see how **implementation** of `print()` is provided in class `Document`
 
@@ -31,6 +33,67 @@ class Document implements Printable {
   }
 }
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Static Methods in Interfaces
+
+The **Static Methods** in the interfaces are those methods which are defined with the keyword **Static**.
+
+The difference between the rest of the methods and the static methods is that we have to declare complete definition of the **static method**.
+
+Further, when a given class implements our interface, it can't change the implementation of the given **static method**.
+
+Now let's see an **Example**:
+
+```java
+// Implementation Class 
+public class Test implements TestInterface {
+
+    public static void main(String[] args) {
+        Test testInterfaceDemo = new Test();
+
+        // Calling the static method of interface 
+        TestInterface.hello();
+
+        // Calling the abstract method of interface 
+        testInterfaceDemo.overrideMethod("Hello, Override Method here");
+    }
+
+    // Implementing interface method 
+
+    @Override
+    public void overrideMethod(String str) {
+        System.out.println(str);
+    }
+}
+
+//Interface
+interface TestInterface {
+
+    // static method 
+    static void hello()
+    {
+        System.out.println("Hello, Test Static Method Here");
+    }
+
+    // Public and abstract method of Interface 
+    void overrideMethod(String str);
+}
+
+//OUTPUT
+Hello, New Static Method Here
+Hello, Override Method here
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Extend Interface
+
 In Java, interface can **extend another interface**.
 
 ``` java
@@ -44,6 +107,8 @@ public interface Printable extends Callable {
     void print();
 }
 ```
+
+**Class which implements an interface must provide implementation for parent interface as well.**
 
 [/slide]
 
