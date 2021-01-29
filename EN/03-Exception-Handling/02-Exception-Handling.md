@@ -128,7 +128,7 @@ static void testTryFinally() {
 
 In the **try block**, we run the code we want to check.
 
-The **catch block** must handle the **checked exceptions** thrown by тхе **try block**, as well as any possible **unchecked exceptions**.
+The **catch block** must handle the **checked exceptions** thrown by the **try block**, as well as any possible **unchecked exceptions**.
 
 The **finally block** gives us a chance to run the code which we want to execute every time a **try-catch block is completed** - either with errors or without any error.
 
