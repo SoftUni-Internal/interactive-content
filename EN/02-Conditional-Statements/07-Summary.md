@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -29,7 +29,7 @@ if (num == 1) {
 ```
 - how to trace the program's bugs using a debugger
 
-In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - Reading input from array
 

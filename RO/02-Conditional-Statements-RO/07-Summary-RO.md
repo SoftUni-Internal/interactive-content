@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Recapitulare
 
 [vimeo-video]
@@ -19,7 +19,7 @@ In această lecție am învățat:
 
 - cum să identificăm bug-urile din program, folosind un debugger
 
-In lecția următoare vom învăța:
+## In lecția următoare vom învăța:
 
 - Cum să citim datele de intrare dintr-un array
 
