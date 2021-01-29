@@ -1,13 +1,14 @@
 # Temă
-[slide]
+[slide hideTitle]
 
 # Problemă: Guess the Password
  
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```js
 function guessThePassword(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -50,24 +51,26 @@ Wrong password!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Boiling Water
 
 [code-task title="Boiling Water" taskId="pb-js-Conditions-Boiling-Water" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function boilingWater(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Enunț
-Scrieți un program care caută apă la fierbere : 
+Scrieți un program care caută apă la fierbere: 
 
-  * Citiți un număr în virgulă mobilă: temperatura  **temperature** (in °C)
-  * Imprimați `The water is boiling` dacă numărul este`> 100`
-  * Imprimați `The water is not hot enough` în orice altă situație
+* Citiți un număr în virgulă mobilă: temperatura  **temperature** (in °C)
+
+* Imprimați `The water is boiling` dacă numărul este `>100`
+
+* Imprimați `The water is not hot enough` în orice altă situație
 
   # Exemplu
 
@@ -100,14 +103,14 @@ The water is not hot enough
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Speed Info
 
 [code-task title="Speed Info" taskId="pb-js-Conditions-Speed-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function speedInfo(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -115,9 +118,11 @@ function speedInfo(input) {
 # Enunț
 Scrieți un program pentru a verifica viteza mare/mică: 
 
-  * Citiți  **speed** (un număr floating-point)
-  * Imprimați `Slow` dacă viteza este `<= 30`
-  * Imprimați `Fast` dacă viteza este `> 30`
+* Citiți  **speed** (un număr floating-point)
+
+* Imprimați `Slow` dacă viteza este `<= 30`
+
+* Imprimați `Fast` dacă viteza este `> 30`
 
   # Exemplu
 
@@ -150,18 +155,19 @@ Fast
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Bonus Score
 [code-task title="Bonus Score" taskId="pb-js-Conditions-Bonus-Score" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function bonusScore(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 # Enunț
+
 Avem un integer cu datele ințiale **number** de puncte.
 
 **Bonus points** sunt oferite, în funcție de regulile descrise mai jos. 
@@ -261,13 +267,13 @@ Punctele adiționale din bonus, sunt obținute separat din cele anterioare:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Tickets
 [code-task title="Tickets" taskId="pb-js-Conditions-Tickets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function tickets(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -275,12 +281,17 @@ function tickets(input) {
 # Enunț
 Scrieți un program care să calculeze prețul unui bilet:
 
-  * Citiți tipul de bilet: fie **student** fie **regular**
-  * Imprimați **price** în formatul următor`${price}`:
+* Citiți tipul de bilet: fie **student** fie **regular**
+
+* Imprimați **price** în formatul următor`${price}`:
+
     * Prețul trebuie să fie **formatted** cu 2 cifre după punctul de zecimale 
-  * Prețul unui bilet de student: **1.00**
-  * Prețul unui bilet obișnuit: **1.60**
-  * Pentru un tip nevalid, imprimați `Invalid ticket type!`
+
+* Prețul unui bilet de student: **1.00**
+
+* Prețul unui bilet obișnuit: **1.60**
+
+* Pentru un tip nevalid, imprimați `Invalid ticket type!`
 
 # Exemplu
 
