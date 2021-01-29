@@ -10,11 +10,11 @@
 
 Există șase tipuri primitive de date:
 
-* datele de tip boolean - true or false (adevărat sau fals)
+* datele de tip boolean: true or false (adevărat sau fals)
 * datele de tip Null
 * datele de tip nedefinit (Undefined)
-* datele numerice (numere întregi) - `1, 2, 4.5, -2`
-* datele de tip text (string) - `Hello, World!`
+* datele numerice (numere întregi): `1, 2, 4.5, -2`
+* datele de tip text (string): `Hello, World!`
 * datele de tip simbol (simboluri) (o noutate a ECMAScript 6)
 * datele de tip BigInt
 
@@ -81,9 +81,9 @@ Ele se pot caracteriza prin:
 
 * **Nume / Denumire**
 
-* **Mărime** (capacitatea de memorie utilizată) - Exemplu: 4 biți
+* **Mărime** (capacitatea de memorie utilizată): Exemplu: 4 biți
 
-* **Valoare inițială sau default** - Exemplu: 0
+* **Valoare inițială sau default**: Exemplu: 0
 [/slide]
 
 [slide hideTitle]

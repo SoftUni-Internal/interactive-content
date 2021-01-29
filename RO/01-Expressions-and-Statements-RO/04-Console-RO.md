@@ -1,6 +1,7 @@
 
 [slide hideTitle]
 # Console (Terminal)
+
 În general, **system console** reprezintă un terminal de text, ceea ce înseamnă că acceptă și vizualizează doar **text**, fără elemente grafice ca butoane, meniuri, etc. 
 
 Arată, de obicei, ca o fereastră colorată în negru ca aceasta.

@@ -12,7 +12,9 @@ Haideți să examinăm **operațiile aritmetice** de bază în pragramare.
 Putem aduna,scădea, înmulți și împărți, folosind operatorii `+`, `-`, `*` și `/`.
 
 ## Adunarea numerelor
+
 Putem **aduna** numere, utilizând operatorul  `+`:
+
 ```js live
 let a = 5;
 let b = 7;
@@ -21,7 +23,9 @@ console.log(sum);
 ```
 
 ## Scăderea numerelor
+
 **Scăderea** numereleor se efectuează prin utilizarea operatorului `-`:
+
 ```js live
 let a = 15;
 let b = 7;
@@ -39,6 +43,7 @@ console.log(a - b);
 [/video-vimeo]
 
 Pentru **înmulțirea** nuemrelor folosim operatorul `*`:
+
 ```js live
 let a = 5;
 let b = 7;
@@ -46,29 +51,43 @@ console.log(a * b);
 ```
 
 ## Împărțirea numerleor
+
 **Împărțirea** numerelor se efectuează prin utilizarea operatorului `/`.
 
+
 Tipul numerelor reprezintă **atât** numerele întregi  (integer), cât și cele în virgulă mobilă (floating point number). Nu este  **împărțire întreagă implicită**.
+
 * If you do this: 
+
 ```js live
 let result = 5/4;
 console.log(result);
 ```
+
 rezultatul așteptat este 1, dar răspunsul este 1.25.
 
 Împărțirea întreagă poate fi atinsă foarte ușor prin rotunjirea în jos a rezultatului împărțirii, utilizând `Math.floor()`:
+
 ```js live
 let result = Math.floor(5/4);
 console.log(result);
 ```
-Aceasta însă duce la o problemă. Ce se întâmplă, dacă avem o astfel de situație: 
+
+Aceasta însă duce la o problemă. 
+
+Ce se întâmplă, dacă avem o astfel de situație: 
+
 ```js live
 let result = Math.floor(-5/4);
 console.log(result);
 ```
+
 În acest caz rezultatul este negativ. 
+
 * Răspunsul așteptat este -1, dar veți obține -2, în schimb.
+
 * Rotunjirea în jos funcționează în sensul opus pentru numerele negative. O instrucțiune if poate poate repara aceasta problemă:
+
 ```js live
 let result = -5/4;
 if(result >=0){
@@ -78,11 +97,14 @@ if(result >=0){
 }
 console.log(result);
 ```
+
 Atunci când trebuie să împărțim un număr la zero, avem două situații principale:
+
 ```js live
 let result = 0/0;
 console.log(result);
 ```
+
 ```js live
 let result = 1/0;
 console.log(result);
