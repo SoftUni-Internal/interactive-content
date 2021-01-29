@@ -8,8 +8,9 @@
 [/video-vimeo]
 
 În programare, putem compara valorile folosind următorii operatori:
-| Operatori | Desemnare |
-|---------|-----------|
+
+| **Operatori** | **Desemnare** |
+|---|---|
 | Egal cu (valoare) |   **==** |
 | Nu este egal cu (valoare) |   **!=** |
 | Egal cu  (valaore&tip) |   **===** |
@@ -21,6 +22,7 @@
 
 Rețineți diferența dintre `===` and`==`.
 Vedeți exemplul:
+
 ```js live
 let a = 5;
 let b = '5';
@@ -61,7 +63,7 @@ x / 45 * (y +17)> = Math.sqrt (z) / (p - (x * 16))
 
 Expresia complexă precedentă include **literale**, **variabile** și **apeluri de funcții.**
 
-Expresiile de pe ambele părți ale operatorului de comparație sunt **evaluate**. Apoi, valorile date sunt **comparate** utilizând operatorul de comparație >=.
+Expresiile de pe ambele părți ale operatorului de comparație sunt **evaluate**. Apoi, valorile date sunt **comparate** utilizând operatorul de comparație `>=`.
 
 Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoarea expresiei din dreapta, întreaga expresie se evaluează la `true`, în caz contrar, se evaluează la `false`.
 
@@ -70,6 +72,7 @@ Dacă valoarea expresiei din partea stângă este mai mare sau egală cu valoare
 Compararea textului utilizând operatorul de egalitate (`==`).
 
 Doi operanzi de șir sunt egali atunci când ambii sunt `null` sau ambii au aceeași lungime și au caractere identice în fiecare poziție de caracter:
+
 ```js live
 let a = "Examplе";
 let b = a;

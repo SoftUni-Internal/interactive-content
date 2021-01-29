@@ -18,7 +18,7 @@
 
 - Declarația `if`                           
 - Declarația  `if-else`                   
--  Declarația `if-else-if-else`- ...    
+- Declarația `if-else-if-else`- ...    
 
 **3. Depanare**
 
