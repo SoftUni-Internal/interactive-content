@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Depanare
 
 [vimeo-video]
@@ -16,7 +16,7 @@ Până acum, am scris o mulțime de coduri și au aparut câteva greșeli în el
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Depanarea in Visual Studio Code
 
