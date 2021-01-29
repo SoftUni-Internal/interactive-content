@@ -4,16 +4,17 @@
 
 # Using Catch Block
 
-- **Catch** blocks should: 
+**Catch** blocks should: 
 
-   - Begin with the exceptions lowest in the hierarchy.
-   - Continue with the more general exceptions.
-   - Otherwise, a compilation error will occur.
+- Begin with the exceptions lowest in the hierarchy.
+- Continue with the more general exceptions.
+- Otherwise, a compilation error will occur.
 
-- Each **catch** block should handle only these exceptions, which it expects
+Each **catch** block should handle only these exceptions, which it expects:
 
-   - If a method is not competent to handle an exception, it should leave it unhandled
-   - Handling all exceptions disregarding their type is a bad practice (anti-pattern)!
+- If a method is not competent to handle an exception, it should leave it unhandled
+
+- Handling all exceptions disregarding their type is a bad practice (anti-pattern)!
 
 [/slide]
 
@@ -21,20 +22,32 @@
 
 # Choosing the Exception Type 
 
-- When an application attempts to use **null** in a case where an object is required:
-   - **NullPointerException**
-- An array has been accessed with an illegal index:
-   - **ArrayIndexOutOfBoundsException**
-- An index is either negative or greater than the size of the string: 
-   - **StringIndexOutOfBoundsException**
-- Attempts to convert an inappropriate string to one of the numeric types: 
-   - **NumberFormatException**
-- When an exceptional arithmetic condition has occurred
-   - **ArithmeticException**
-- Attempts to cast an object to a subclass of which it is not an instance
-   - **ClassCastException**
-- A method has been passed an illegal or inappropriate argument
-   - **IllegalArgumentException**
+When an application attempts to use **null** in a case where an object is required:
+- **NullPointerException**
+
+An array has been accessed with an illegal index:
+
+- **ArrayIndexOutOfBoundsException**
+
+An index is either negative or greater than the size of the string:
+
+- **StringIndexOutOfBoundsException**
+
+Attempts to convert an inappropriate string to one of the numeric types:
+
+- **NumberFormatException**
+
+When an exceptional arithmetic condition has occurred
+
+- **ArithmeticException**
+
+Attempts to cast an object to a subclass of which it is not an instance
+
+- **ClassCastException**
+
+A method has been passed an illegal or inappropriate argument
+
+- **IllegalArgumentException**
 
 [/slide]
 
@@ -42,20 +55,22 @@
 
 # Best Practices 
 
-- When raising an exception, always pass a **good explanation message** to the constructor 
+When raising an exception, always pass a **good explanation message** to the constructor.
+
+When throwing an exception try to give a good description of the problem.
 
 The exception message should explain what causes the problem and how to solve it.
 
-   - **Good**: "Size should be integer in range \[1…15\]"
-   - **Good**: "Invalid state. First call Initialize()"
-   - **Bad**: "Unexpected error"
-   - **Bad**: "Invalid argument"
+- **Good**: "Size should be integer in range \[1…15\]"
+- **Good**: "Invalid state. First call Initialize()"
+- **Bad**: "Unexpected error"
+- **Bad**: "Invalid argument"
 
-- Exceptions can decrease the application performance.
+Exceptions can decrease the application performance.
 
-   - Throw exceptions only in exceptional situations
-   - Do not throw exceptions in the normal program control flow
-   - JVM could throw exceptions at any time with no way to predict them
-     **E.g. StackOverflowError**
+- Throw exceptions only in exceptional situations
+- Do not throw exceptions in the normal program control flow
+- JVM could throw exceptions at any time with no way to predict them
+  **E.g. StackOverflowError**
 
 [/slide]
