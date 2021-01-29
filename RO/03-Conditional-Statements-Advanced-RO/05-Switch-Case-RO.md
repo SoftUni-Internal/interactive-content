@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Instrucțiunea Switch-case
 [vimeo-video]
 [stream language="EN" videoId="486873288/8055a584f1" default /]
@@ -33,7 +33,7 @@ switch (selector) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Cazul implicit
 [vimeo-video]
 [stream language="EN" videoId="486873687/12bb55bdb9" default /]
@@ -92,7 +92,7 @@ switch (day) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Etichete multiple
 [vimeo-video]
 [stream language="EN" videoId="486873816/db58eac4b4" default /]
@@ -120,16 +120,16 @@ switch (selector) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exemplu: Tipul de animal
 [vimeo-video]
 [stream language="EN" videoId="486873964/be087efd1c" default /]
 [stream language="RO" videoId="486873964/be087efd1c"  /]
 [/video-vimeo]
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
--  dog -> **mammal**
--  crocodile, tortoise, snake -> **reptile**
--  others -> **unknown**
+- dog \-\> **mammal**
+- crocodile, tortoise, snake \-\> **reptile**
+- others \-\> **unknown**
 
 Putem rezolva sarcina cu condiții de `switch-case` cu mai multe etichete în felul următor:
 ```js live
@@ -150,24 +150,3 @@ switch (animal) {
 }
 ```
 [/slide]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

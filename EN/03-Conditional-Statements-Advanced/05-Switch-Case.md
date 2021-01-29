@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # The Switch-Case Statement
 
 [vimeo-video]
@@ -35,7 +35,7 @@ switch (selector) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # The default case
 [vimeo-video]
 [stream language="EN" videoId="486873687/12bb55bdb9" default /]
@@ -96,7 +96,7 @@ switch (day) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Multiple Labels
 
 [vimeo-video]
@@ -126,7 +126,7 @@ switch (selector) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example: Animal Type
 
 [vimeo-video]
