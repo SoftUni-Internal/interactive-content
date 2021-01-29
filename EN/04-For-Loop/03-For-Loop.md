@@ -8,11 +8,11 @@
 [stream language="RO" videoId="487119221/9c519c14e8"  /]
 [/video-vimeo]
 
-Let's say you want to fill the dishwasher with plates.
+Let us say you want to fill the dishwasher with plates.
 
-To do that you'll take some of the plates from the pile and you'll put them in.
+To do that you will take some of the plates from the pile and you will put them in.
 
-Then you'll take some more plates and repeat the action until all the plates in the dishwasher.
+Then you will take some more plates and repeat the action until all the plates in the dishwasher.
 
 This is a loop, you repeat an action until you reach a certain condition.
 
@@ -40,6 +40,7 @@ for (let i = 1; i <= 10; i += 1) {
 ```
 
 The block of code can be explained with this use case diagram:
+
 [image assetsSrc="for-loop-use-case.png" /]
 
 The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands. 
@@ -59,18 +60,23 @@ for (initialization; condition; update) {
 ```
 
 It consists of:
+
 * an **initialization part** for the counter (in the pattern `let i = 0`)
+
 * a **boolean** condition (`i < 10`)
+
 * an expression for **updating** the counter (``i += 1``)
+
 * body of the loop.
 
-In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10). 
+In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10).
 
-The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action. 
+The purpose of the loop is to pass sequentially through the numbers 1, 2, 3, …, n and for each of them to perform a particular action.
 
-In the first example, the `i` variable accepts values from 1 to 10 and the **current** value is printed in the body of the loop. 
+In the first example, the `i` variable accepts values from 1 to 10 and the **current** value is printed in the body of the loop.
 
 The loop repeats 10 times and each of these repetitions is called an **iteration**.
+
 [/slide]
 
 [slide hideTitle]
@@ -81,7 +87,7 @@ The loop repeats 10 times and each of these repetitions is called an **iteration
 [stream language="RO" videoId="487119267/15cae043ef"  /]
 [/video-vimeo]
 
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-lab-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function printSum (input) {
@@ -227,7 +233,7 @@ Write a program, which:
 [stream language="RO" videoId="487119324/39b9907585"  /]
 [/video-vimeo]
 
-[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(input) {

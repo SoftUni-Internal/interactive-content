@@ -16,6 +16,7 @@ Pentru a face asta, trebuie să luați niște farfurii și să le puneți înău
 Apoi veți lua mai multe farfurii și veți repeta acțiunea.
 
 Asta este o buclă, repetați o acțiune până ce îndepliniți o condiție.
+
 Când îndepliniți acea condiție, bucla se oprește.
 
 [/slide]
@@ -41,6 +42,7 @@ for (let i = 1; i <= 10; i += 1) {
 ```
 
 Acest bloc de cod poate fi explicat cu ajutorul acestei diagrame:
+
 [image assetsSrc="for-loop-use-case.png" /]
 
 Bucla începe cu operatorul `for` și trece prin toate valorile cu ajutorul unei variabile, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi. 
@@ -59,16 +61,20 @@ for (initialization; condition; update) {
 ```
 
 Acesta constă în:
+
 * o **parte de inițialzare** pentru numărător (după modelul `let i = 0`)
+
 * un condiție **booleană** (`i < 10`)
+
 * o expresie pentru  **a actualiza** numărătorul (``i += 1``)
-* corpul buclei.
 
-În cele mai multe cazuri, bucla  `for` este cuprinsă între `1` și `n` ori (de exemplu de la 1 la 10). 
+* corpul buclei
 
-Scopul buclei este să treacă secvențial prin numerele 1, 2, 3, …, n și pentru fiecare să se facă o acțiune. 
+În cele mai multe cazuri, bucla  `for` este cuprinsă între `1` și `n` ori (de exemplu de la 1 la 10).
 
-În primul exemplu, variabila `i` acceptă valori de la 1 la 10 și valoarea **curentă** este prelucrată în interiorul buclei. 
+Scopul buclei este să treacă secvențial prin numerele 1, 2, 3, …, n și pentru fiecare să se facă o acțiune.
+
+În primul exemplu, variabila `i` acceptă valori de la 1 la 10 și valoarea **curentă** este prelucrată în interiorul buclei.
 
 Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 
@@ -82,7 +88,7 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 [stream language="RO" videoId="487119267/15cae043ef"  /]
 [/video-vimeo]
 
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-lab-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function printSum (input) {
@@ -230,7 +236,7 @@ Scrie un program care:
 [stream language="RO" videoId="487119324/39b9907585"  /]
 [/video-vimeo]
 
-[code-task title="Greatest Number" taskId="pb-js-04-p-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(input) {

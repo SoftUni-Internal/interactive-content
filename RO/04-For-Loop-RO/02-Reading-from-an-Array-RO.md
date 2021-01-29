@@ -35,6 +35,7 @@ Sunt **7 vagoane** (**elemente**). Fiecare are **pasageri** (**o valoare**). `[3
 Primul element din matrice se află pe poziția `0`, și ultimul se află pe poziția `length-1`. 
 
 În acest curs **nu vom** inițializa o matrice, doar vom accepta vectorul ca un parametru al funcției.
+
 # Citirea dintr-un vector
 
 Fiecare element dintr-o matrice are un **index** (**poziție**) după care poate fi **accesat**.
