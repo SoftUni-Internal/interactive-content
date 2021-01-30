@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Stack Functionality
 
-**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle or **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
+**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
 
 - Stacks provide the following functionality:
     - **Pushing** an element to the top of the stack
@@ -1014,8 +1014,8 @@ Scan through the string and **extract** each **sub-expression**.
 ## Hints 
 - Use a stack, implemented with`ArrayDeque()` 
 - Scan through the expression searching for brackets 
-   - If you find an opening brackets, push the index into the stack 
-   - If you find a closing brackets pop the top element from the stack. This is the index of the opening brackets. 
+   - If you find an opening bracket, push the index into the stack 
+   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket. 
    - Use the current and the popped index to extract the sub-expression 
 [/task-description]
 [code-io /]
@@ -1143,8 +1143,8 @@ Scan through the string and **extract** each **sub-expression**.
 ## Hints 
 - Use a stack, implemented with`ArrayDeque()` 
 - Scan through the expression searching for brackets 
-   - If you find an opening brackets, push the index into the stack 
-   - If you find a closing brackets pop the top element from the stack. This is the index of the opening brackets. 
+   - If you find an opening bracket, push the index into the stack 
+   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket. 
    - Use the current and the popped index to extract the sub-expression 
 
 [/task-description]
