@@ -12,16 +12,15 @@
 
 **2. Stacks - Last In First Out (LIFO)**
 - Stack functionality
-- Implementing stacks in Java
+- Implementing stacks using ArrayDeque
 - Overview of all stack operations
 
 **3. Queues - First In First Out (FIFO)**
 - Queue functionality
-- Implementing queues in Java
-- An overview of all queue operations
+- Implementing queues using ArrayDeque
+- Overview of all queue operations
 
 **4. Priority Queue**
-- What they are 
-- Retrieving priority queue elements
+- A different kind of queue and its implementation
 
 [/slide]
