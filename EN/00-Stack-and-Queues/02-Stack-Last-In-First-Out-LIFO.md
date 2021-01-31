@@ -61,9 +61,6 @@ Integer element = stack.peek();
 
 System.out.println(element);
 ```
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
-
 [/slide]
 
 
@@ -103,6 +100,15 @@ stackOfCars.push("Lucid Air");
 
 System.out.println(stackOfCars.contains("BMW M3"));
 ```
+
+[/slide]
+
+[slide hideTitle]
+# Overview of All Operations
+
+The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
 
 [/slide]
 
