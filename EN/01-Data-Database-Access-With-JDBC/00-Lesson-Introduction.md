@@ -21,9 +21,8 @@
 - What is SQL Injection and how to protect our data from it
 
 **6. Advanced Concepts**
-- Differnt advanced topics
+- Differеnt advanced topics
 
-_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
 
 [/slide]
 
