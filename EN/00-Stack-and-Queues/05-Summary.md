@@ -2,7 +2,7 @@
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - Calculating **algorithmic complexity** with Big O Notation.
 
