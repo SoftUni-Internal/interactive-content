@@ -36,11 +36,16 @@ for ( ; ; ) {
 [code-task title="Sum Numbers Until 0" taskId="pb-js-for-loop-lab-Sum-Numbers-Until-0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sumNumbers (input) {
-   // Write your code here
+function sumNumbers(nums) {
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -49,7 +54,7 @@ Scrieți o funcție pentru a procesa numerele din parametrii de intrare și impr
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['5', '3', '2', '0']`| Sum = 5 |
+|`[5, 3, 2, 0]`| Sum = 5 |
 ||Sum = 8 |
 ||Sum = 10 |
 ||Good bye |
@@ -115,19 +120,17 @@ Goodbye
 [code-task title="Sum Numbers Until 0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sumNumbers (input) {
-  let sum = 0;
-  for (;;) {
-    let num = Number(input.shift());
-    if (num == 0) break;
-    sum += num;
-    console.log(`Sum = ${sum}`);
-  }
-  console.log('Goodbye');
+function sumNumbers(nums) {
+ // Scrieți codul dvs. aici
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -136,7 +139,7 @@ Scrieți o funcție pentru a procesa numerele din parametrii de intrare și impr
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['5', '3', '2', '0']`| Sum = 5 |
+|`[5, 3, 2, 0]`| Sum = 5 |
 ||Sum = 8 |
 ||Sum = 10 |
 ||Goodbye |
