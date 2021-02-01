@@ -257,7 +257,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 3
 30
@@ -268,7 +268,7 @@ Write a program, which:
 80
 [/output]
 [/test]
-[test]
+[test  open]
 [input]
 3
 -30
