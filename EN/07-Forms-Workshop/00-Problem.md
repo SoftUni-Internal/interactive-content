@@ -3,7 +3,8 @@
 [slide hideTitle]
 
 # Task Requirements
-[Download resources here!](https://mega.nz/file/qJIX3CSB#n--FyDbN_rx51ZZ6wKKLV6tSTbCczMbdubt-RLqaWJ0)
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
 
 Now that we have our forms, it is time to edit them, so that the given information is processed as expected. 
 
