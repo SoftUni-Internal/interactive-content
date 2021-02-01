@@ -76,7 +76,7 @@ Travel
 [output]
 Hawai:RomeCyprys-Greece
 Hawai:Rome-Greece
-Bulgaria::Rome-Greece
+Bulgaria:Rome-Greece
 Ready for world tour! Planned stops: Bulgaria::Rome-Greece
 [/output]
 [/test]
