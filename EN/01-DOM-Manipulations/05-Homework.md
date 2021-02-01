@@ -8,7 +8,7 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sections
 [code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -20,6 +20,9 @@ function solve(input){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **for this task.**
+
 You will receive an **array** of strings. 
 
 For each string, create a **div** with a **paragraph** with the string in it. 
@@ -118,7 +121,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Notification
 [code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -130,6 +133,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **for this task.**
+
 Write a **function** that receives a string **message** and **displays** it inside a div with an **id notification** for 2 seconds. 
 
 The div is initially **hidden** and when the function is called, it must be shown. 
@@ -323,7 +329,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Time Converter
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -333,6 +339,9 @@ yes
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **for this task.**
+
 Create a program that **converts** different time units. 
 
 Your task is to add a **click** event listener to all \`CONVERT\` buttons. 
@@ -516,7 +525,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Locked Profile
 [code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -528,6 +537,9 @@ yes
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
+
 In this problem, you should **create a JS functonality** which **shows** and **hides** the additional information about users.
 
 When the `Show more` button is clicked, the **hiden information** inside the div should
@@ -1365,7 +1377,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Encode And Decode Messages
 [code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
@@ -1378,6 +1390,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **for this task.**
+
 In this problem, create a JS functonality which encodes and decodes some messages, which travel to the network.
 
 The program should contain two functionalities.
@@ -1607,7 +1622,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Table Search Engine
 [code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -1619,6 +1634,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
+
 Write a function that searches in a table by given input.
 
 When the `Search` button is clicked, go through all cells in the table except for the first row, which is the header of the table Student name, Student email and Student course.
@@ -2161,7 +2179,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Furniture
 [code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
@@ -2173,6 +2191,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **for this task.**
+
 You will be given a furniture as an array of objects. 
 
 Each object will have a name, a price and a decoration factor.
@@ -2655,7 +2676,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cards
 [code-task title="Cards" taskId="Js-Advanced-Dom-Manipulations-Cards" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -2667,6 +2688,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
+
 Write a function which checks cards, shows which one is greater and keeps history of all hands.
 
 Firstly, **add click events to all cards**. 
