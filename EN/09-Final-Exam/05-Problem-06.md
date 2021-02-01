@@ -3,6 +3,7 @@
 [slide hideTitle]
 
 # Description
+
 Write a program that tracks your team's performance at a Christmas charity tournament. 
 
 Every day you get game names next to the `Finish` command. 
@@ -18,25 +19,33 @@ At the **end of the tournament**, if you have been the winner most days, you **w
 You will never have an equal number of won and lost games.
 
 
-# Input
-Initially, **the number of days of the tournament is read from the console** - an integer in the interval \[1… 20\]
+## Input
 
-Until you receive the `Finish` command, read:
+**The input comes as an array of elements:**
 
-- Sport – string
+- **First Element:**
 
-**For each sport read:**
+ **The number of days of the tournament is read from the console**: an integer in the interval \[1… 20\]
 
-- Result - text with possibilities:  `win` or `lose`
+- **Until you receive the** `Finish` **command, read:**
 
+**Sport** – string
 
-# Output
+- **For each sport read:**
+
+**Result** - text with possibilities:  `win` or `lose`
+
+## Output
 
 Finally, one line is printed:
 
-- If you won, the tournament: `You won the tournament! Total raised money: {the money earned}`
+- If you won, the tournament: 
 
-- If you lost, the tournament: `You lost the tournament! Total raised money: {the money earned}`
+`You won the tournament! Total raised money: {the money earned}`
+
+- If you lost, the tournament: 
+
+`You lost the tournament! Total raised money: {the money earned}`
 
 The money should be **formatted to the second digit after the decimal point.**
 
@@ -55,7 +64,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`["2", "volleyball", "win", "football","lose", "basketball", "win", "Finish", "golf", "win", "tennis", "win", "badminton", "win", "Finish"]` | You won the tournament! Total raised money: 132.00 |
+|`['2', 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']` | You won the tournament! Total raised money: 132.00 |
 
 # Comments
 
@@ -89,16 +98,32 @@ Earned money from both days: `44 + 66 = $ 110`
 
 Because we have more wins than losses, we win the tournament and increase the money by `20% -> $132`
 
-# More Examples
-
-| **Input** | **Output** |
-| --- | --- |
-|`["2", "sport","lose","Finish", "sport", "lose", "Finish"]` | You lost the tournament! Total raised money: 0.00|
- 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
+[input]
+2
+volleyball
+win
+football
+lose
+basketball
+win
+Finish
+golf
+win
+tennis
+win
+badminton
+win
+Finish
+[/input]
+[output]
+You won the tournament! Total raised money: 132.00
+[/output]
+[/test]
+[test open]
 [input]
 3
 darts
@@ -125,6 +150,20 @@ Finish
 [/input]
 [output]
 You lost the tournament! Total raised money: 84.00
+[/output]
+[/test]
+[test]
+[input]
+2
+sport
+lose
+Finish
+sport
+lose
+Finish
+[/input]
+[output]
+You lost the tournament! Total raised money: 0.00
 [/output]
 [/test]
 [test]
