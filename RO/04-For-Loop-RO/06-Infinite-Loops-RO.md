@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Infinite Loops
 
 [vimeo-video]
@@ -25,7 +25,7 @@ for ( ; ; ) {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Numbers Until 0
 
 [vimeo-video]
@@ -33,7 +33,7 @@ for ( ; ; ) {
 [stream language="RO" videoId="487119738/e0db9467e8"  /]
 [/video-vimeo]
 
-[code-task title="Sum Numbers Until 0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Numbers Until 0" taskId="pb-js-for-loop-lab-Sum-Numbers-Until-0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumNumbers (input) {
@@ -104,7 +104,7 @@ Goodbye
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Sum Numbers Until 0
 
 [vimeo-video]
