@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Abstract Classes
 
@@ -269,7 +269,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Shapes
 
 [/slide]
@@ -650,7 +650,7 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Animals
 
 [/slide]

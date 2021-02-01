@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # What is Polymorphism?
 
@@ -8,6 +8,16 @@
 Polymorphism is one of the four OOP pillars in **object-oriented** languages.
 
 It allows us to perform a single action in many different ways.
+
+Giving us the chance to change the behaviour of the classes runtime.
+
+It lays on the concept that objects of different types can be accessed through the same interface or abstract class.
+
+Each type will provide it's own implementation of the behaviour.
+
+[/slide]
+
+[slide hideTitle]
 
 For example, lets say we have **superclass** called `Mammal` that has method called `makeSound()`. 
 
@@ -64,7 +74,7 @@ Meow Meow...
 ```
 [/slide]
 
-[slide]
+[slide hideTitle
 
 # instanceOf Operator
 
@@ -133,7 +143,7 @@ That output shows the `instanceOf` operator works of the **is-a relationship** c
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Types of Polymorphism
 
@@ -374,12 +384,12 @@ Test Passed!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: MathOperation
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Rules for Overriding and Overloading methods
 
