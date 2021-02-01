@@ -6,7 +6,7 @@
 
 ## Track your codebase in a Git repository
 
-To ** initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
+To **initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
 
 It is recommended to exclude **non-essential files and directories** that **take up space** from being committed to our repository.
 
