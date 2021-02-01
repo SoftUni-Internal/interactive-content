@@ -128,6 +128,11 @@ function sumNumbers (input) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function to process numbers from the input parameters and print their sum until 0 is reached.
