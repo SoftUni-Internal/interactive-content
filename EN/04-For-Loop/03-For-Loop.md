@@ -318,8 +318,16 @@ Write a program, which:
 [code-task title="Greatest Number" taskId="pb-js-04-p-01-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(n, numbers) {
- // Write your code here
+function greatestNumber(n, ...numbers) {
+let max = -Infinity;
+
+for(let i = 1; i <=n; i++){
+    let number = Number(numbers.shift());
+    if(number > max){
+        max = number;
+    }
+}
+console.log(max);
 }
 ```
 [/code-editor]
