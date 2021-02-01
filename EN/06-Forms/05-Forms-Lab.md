@@ -4,7 +4,7 @@
 
 # Initial Setup
 
-[Download resources here!](https://mega.nz/file/TEBXXKiB#0mdYlUvqGyoRApqOvRaOQ9wr7zNCL211a3QuuSVKpII)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
 
 Create a new angular application. 
 
