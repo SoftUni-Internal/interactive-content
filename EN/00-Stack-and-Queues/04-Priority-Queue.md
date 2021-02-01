@@ -1,21 +1,16 @@
 # Priority Queue
 
-[slide]
+[slide hideTitle]
+
 # Priority Queue
 
-Unlike normal queues, **priority queue** elements are **retrieved in sorted order**.
+**Priority Queues** are a special type of queue. Their elements are **retrieved in sorted order**. 
 
-Suppose, we want to **retrieve elements** in the **ascending order**.
+This is based on the natural order of the data type contained inside the queue. The smallest element will always be at the head of the queue when retrieved.
 
-In this case, **the head of the priority queue will be the smallest element**.
+Imagine we want to remove an integer from a Priority Queue filled with numbers. Each time you remove an element, **the smallest number** will be retrieved first and then the next one until the queue is empty.
 
-Once this element is retrieved, **the next smallest element will be the head of the queue**.
-
-It is important to note that the elements of a priority queue **may not be sorted**.
-
-However, elements are **always retrieved in sorted order**.
-
-Let us see the following example:
+It is important to note that the elements of a Priority Queue **might not be internally stored** in any particular order, but they will always be retrieved in sorted order.
 
 ```java live
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
@@ -33,8 +28,55 @@ PriorityQueue<Integer> numbers = new PriorityQueue<>();
     }
 ```
 
-As you can see, we retrieve numbers through ascending orders, despite their order of insertion.
+As you can see, the numbers are retrieved in ascending order, despite their order of insertion.
+
+## Custom Comparators
+
+You can specify your own ordering by passing a **custom Comparator** to the Priority Queue. 
+
+```java live
+Comparator<Integer> integerComparator = (a, b) -> {
+            if (a < b) {
+                return 1;
+            }
+            return -1;
+        };
+
+PriorityQueue<Integer> numbers = new PriorityQueue<>(integerComparator);
+        
+    numbers.add(5);
+    numbers.add(4);
+    numbers.add(2);
+    numbers.add(7);
+    numbers.add(1);
+    numbers.add(6);
+    numbers.add(3);
+
+    while (numbers.size() > 0){
+        System.out.println(numbers.poll());
+    }
+```
+
+This example receives the same numbers as the previous one, but they are now returned in **descending order** because we added our own Comparator.
+
+Here is an example with strings:
+
+
+```java live
+PriorityQueue<String> strings = new PriorityQueue<>();
+    strings.add("Anna");
+    strings.add("T");
+    strings.add("A");
+    strings.add("George");
+
+    while (strings.size() > 0){
+        System.out.println(strings.poll());
+    }
+```
+
+In the example above, the elements are removed based on the natural order of strings, which is alphabetical order. When two strings start with the same character, their lengths are compared and the shortest one is removed first.
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-12.png" /]
+
 
 [/slide]
