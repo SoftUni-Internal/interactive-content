@@ -1,6 +1,6 @@
 # Problem 1: Study Materials
 
-[slide]
+[slide hideTitle]
 
 # Description
 The school year has already started and Annie has to buy a certain number of **packets of pencils**, **packets of markers**, and a **detergent** for cleaning the board. 

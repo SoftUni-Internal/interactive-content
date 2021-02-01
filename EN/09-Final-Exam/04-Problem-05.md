@@ -1,6 +1,6 @@
 # Problem 5: Care of Puppy
 
-[slide]
+[slide hideTitle]
 
 # Description
 Annie finds a puppy to take care of until someone is found to adopt him.

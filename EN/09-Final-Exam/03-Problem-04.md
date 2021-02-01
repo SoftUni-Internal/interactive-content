@@ -1,6 +1,6 @@
 # Problem 4: Food for Pets
 
-[slide]
+[slide hideTitle]
 
 # Description
 Annie has two pets - a dog and a cat. 

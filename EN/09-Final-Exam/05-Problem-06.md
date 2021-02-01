@@ -1,6 +1,6 @@
 # Problem 6: Tournament of Christmas 
 
-[slide]
+[slide hideTitle]
 
 # Description
 Write a program that tracks your team's performance at a Christmas charity tournament. 

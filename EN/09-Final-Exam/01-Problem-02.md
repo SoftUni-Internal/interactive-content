@@ -1,6 +1,6 @@
 # Problem 2: Mountain Run
 
-[slide]
+[slide hideTitle]
 
 # Description
 

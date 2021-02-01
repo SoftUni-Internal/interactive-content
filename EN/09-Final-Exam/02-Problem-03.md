@@ -1,6 +1,6 @@
 # Problem 3: Energy Booster
 
-[slide]
+[slide hideTitle]
 
 # Description
 
