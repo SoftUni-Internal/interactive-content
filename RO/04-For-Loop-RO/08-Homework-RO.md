@@ -1,6 +1,6 @@
 # Temă de acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Calculate Month Salary
 [code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -79,7 +79,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Number Sequence
 [code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -150,7 +150,7 @@ Min number: -2
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem and Solution: Power Of Numbers
 
 [vimeo-video]
@@ -200,7 +200,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Equal Pairs
 [code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -336,7 +336,7 @@ Yes, value=10
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Zig Zag Sum
 [code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -394,7 +394,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Divide Without Remainder
 [code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -443,7 +443,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Vowel Sum
 [code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -532,7 +532,7 @@ s
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Rollercoaster
 [code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -637,7 +637,7 @@ The rollercoaster departures
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem and Solution: Multiply
 
 [vimeo-video]
@@ -702,7 +702,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # NOT WORKING TEST PROBLEM:  Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -814,7 +814,7 @@ The sum: 9000
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # WORKING TEST PROBLEM:  Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
