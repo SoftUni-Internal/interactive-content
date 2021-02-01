@@ -4,9 +4,9 @@
 
 # Project Setup
 
-"Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/05-Sessions-and-Authentication-Workshop-Resources.zip) **for this task.**
 
-You can download the resources for this workshop from [here](https://mega.nz/file/yZZxWCRZ#qtrqKxoR13XEWX4Cyttr-nUQVH13aviswK6QoTki4hA)
+"Cubicle" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
 
 # Main Task
 
