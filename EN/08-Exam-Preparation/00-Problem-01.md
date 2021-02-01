@@ -15,7 +15,7 @@ function solve(){
 
 # Description
 
-[Download resources here!](https://mega.nz/file/TZQjTSrR#5GpCJ1i5TtPw3zGn1rG95c6NSHV0ivw6lZpBV7QXg5o)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Js-Applications-Exam-prep.zip) **for this task.**
 
 You are assigned to implement a **Single Web Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** with cloud-based backend ([Firebase](https://firebase.google.com), **Backendless** or other).
 
