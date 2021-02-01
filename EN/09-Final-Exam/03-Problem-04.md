@@ -22,11 +22,15 @@ Your program should print **statistics about the amount of cookies they ate**.
 
 ## Input
 
-**Initially, one line is read:**
+**The input comes as an array of numbers:**
 
-- Number of days: a number in the range \[1…30\]
+- **First Number:**
 
-- Total amount of food: a number in the range \[0.00…10000.00\]
+Number of days: a number in the range \[1…30\]
+
+- **Second Number:**
+
+Total amount of food: a number in the range \[0.00…10000.00\]
 
 **Then for each day it is read:**
 
