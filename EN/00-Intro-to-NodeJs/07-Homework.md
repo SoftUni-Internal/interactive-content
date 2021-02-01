@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Description
 
-_**Here is a**_ [link](https://mega.nz/file/nNhD1IBA#x5MaZXnKvOaHsgzcyirIoEXlMRZ741Ko0XkgcoASI0k) _**to the resources for this task**_.
+**Here is a** [link](https://videos.softuni.org/resources/javascript/javascript-backend/01-Intro-To-Nodejs-Homework-Resources.zip) **to the resources for this task.**
 
 The exercise itself will be distributed into several parts each containing more concrete information and guide steps on how to develop the functionality specified below.
 
