@@ -14,7 +14,7 @@ function solve(){
 [task-description]
 # Description
 
-[Download the resource here!](https://mega.nz/file/CdQn3aQK#5vUL-hIF1uHQ9L0C4O8iLXj2j3WMJU2_nbr6KodjtDU)
+[Download the resource here!](https://videos.softuni.org/resources/javascript/javascript-advanced/03-JS-Advanced-Exam.zip)
 
 Use the **provided project skeleton** to solve this problem.
 
