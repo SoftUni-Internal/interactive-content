@@ -4,7 +4,7 @@
 
 # Team Manager
 
-You can download the resources for this problem from [here](https://mega.nz/file/zd4FBIwa#uHrLIhO03dlB5-FAhSF3YarA9xFEk4fOt1socps_5kA).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/07-JS-Applications-Routing.zip) **for this task.**
 
 Create a JS application for managing teams.
 
