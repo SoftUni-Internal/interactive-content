@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Iterating over Characters
 
 [vimeo-video]
@@ -55,7 +55,7 @@ console.log(asciiValue);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Latin Letters
 
 
@@ -64,7 +64,7 @@ console.log(asciiValue);
 [stream language="RO" videoId="487119629/a9b273defe"  /]
 [/video-vimeo]
 
-[code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function latinLetters(input) {
@@ -84,7 +84,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Latin Letters
 
 [vimeo-video]

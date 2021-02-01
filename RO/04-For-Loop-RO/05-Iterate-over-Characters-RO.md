@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Iterația peste caractere
 
 [vimeo-video]
@@ -34,11 +34,11 @@ Acesta este un exemplu de parte a tabelului:
 
 [image assetsSrc="04-for-loop-ascii.png" /]
 
-Și aici puteți verifica întregul [Tabel ASCII] (http://www.asciitable.com)
+Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
 
 Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
 
-De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare lui `@` este `64`.
+De exemplu, valoarea zecimală a caracterului **a** este **97** și cea corespunzătoare lui `@` este `64`.
 
 
 # Conversii de caractere
@@ -59,7 +59,7 @@ console.log(asciiValue);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Latin Letters
 
 
@@ -68,7 +68,7 @@ console.log(asciiValue);
 [stream language="RO" videoId="487119629/a9b273defe"  /]
 [/video-vimeo]
 
-[code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function latinLetters(input) {
@@ -89,7 +89,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Latin Letters
 
 [vimeo-video]
