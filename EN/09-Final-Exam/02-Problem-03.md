@@ -28,18 +28,23 @@ For orders:
 
 - Over **$1,000 there is a 50\%** discount.
 
-# Input
+## Input
 
-Three lines are read from the console
+The input comes as an **array of which contains three elements:**
 
-- Fruit - text with possibilities: `Watermelon`, `Mango`, `Pineapple` or `Raspberry`
+- **First Element:**  
 
-- The size of the set - text with options: `small` or `big`
+Fruit, text with possibilities: `Watermelon`, `Mango`, `Pineapple` or `Raspberry`
 
-- Number of ordered sets - integer in the interval \[1 … 10000\]
+- **Second Element:** 
 
+The size of the set: text with options: `small` or `big`
 
-# Output
+- **Third Element:** 
+
+Number of ordered sets: integer in the interval \[1 … 10000\]
+
+## Output
 
 **One line** is printed on the console:
 
@@ -60,7 +65,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`["Watermelon", "big", "4"]` | 487.90 dollars. |
+|`['Watermelon', 'big', '4']` | 487.90 dollars. |
 
 # Comments
 
@@ -74,18 +79,49 @@ function solve(input) {
 
 - Final price: `574 - 86.1 = $487.9`
 
-
-# More Examples
-
-| **Input** | **Output** |
-| --- | --- |
-|`["Pineapple", "small", "1"]` | 84.20 dollars. |
-|`["Raspberry", "small", "50"]` | 1000.00 dollars. |
-|`["Mango", "big", "8"]` | 1000.00 dollars. |
-
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+Watermelon
+big
+4
+[/input]
+[output]
+487.90 lv.
+[/output]
+[/test]
+[test open]
+[input]
+Pineapple
+small
+1
+[/input]
+[output]
+84.20 lv.
+[/output]
+[/test]
+[test open]
+[input]
+Raspberry
+small
+50
+[/input]
+[output]
+1000.00 lv.
+[/output]
+[/test]
+[test open]
+[input]
+Mango
+big
+8
+[/input]
+[output]
+666.40 lv.
+[/output]
+[/test]
 [test]
 [input]
 Raspberry
@@ -114,6 +150,16 @@ big
 [/input]
 [output]
 3157.00 dollars.
+[/output]
+[/test]
+[test]
+[input]
+Pineapple
+small
+2
+[/input]
+[output]
+168.40 dollars.
 [/output]
 [/test]
 [test]
@@ -174,16 +220,6 @@ small
 [/input]
 [output]
 421000.00 dollars.
-[/output]
-[/test]
-[test]
-[input]
-Mango
-big
-8
-[/input]
-[output]
-666.40 dollars.
 [/output]
 [/test]
 [/tests]
