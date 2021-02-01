@@ -18,12 +18,7 @@ Using the **Person class**, write a program that reads from the console **N line
 | John 31 | |
 | Steven 48 | |
 
-### Example
-| **Input** | **Output** |
-| --- | --- |
-| 5 | Nick - 33 | 
-| Nick 33 | John - 88 |
-| John 88 | Leo - 44 |
+### Exampinput | Leo - 44 |
 | George 22 | |
 | Leo 44 | |
 | Peter 11 | |
@@ -93,7 +88,9 @@ Encho - 99
 Mincho - 32
 Noncho - 123
 Oncho - 100
-Pesho - 321534790-0
+Pesho - 321534790
+Suzi - 3213
+Zuzi - 32131
 ```
 [/output]
 [/test]
@@ -125,17 +122,6 @@ Noncho - 123
 Oncho - 100
 Zuzi - 32131
 ```
-[/output]
-[/test]
-[test]
-[input]
-```
-4
-A 10
-B 11790-0
-```
-[output]
-
 [/output]
 [/test]
 [test]
