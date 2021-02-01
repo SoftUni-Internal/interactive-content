@@ -123,16 +123,11 @@ function sumNumbers (input) {
     sum += num;
     console.log(`Sum = ${sum}`);
   }
-  console.log('Goodbye');
+  console.log('Good bye');
 }
 
 ```
 [/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
 [task-description]
 # Description
 Write a function to process numbers from the input parameters and print their sum until 0 is reached.
@@ -143,7 +138,7 @@ Write a function to process numbers from the input parameters and print their su
 |`['5', '3', '2', '0']`| Sum = 5 |
 ||Sum = 8 |
 ||Sum = 10 |
-||Goodbye |
+||Good bye |
 
 [/task-description]
 [tests]
@@ -158,7 +153,7 @@ Write a function to process numbers from the input parameters and print their su
 Sum \= 5
 Sum \= 8
 Sum \= 10
-Goodbye
+Good bye
 [/output]
 [/test]
 [test]
@@ -172,7 +167,7 @@ Goodbye
 Sum \= 6
 Sum \= 10
 Sum \= 13
-Goodbye
+Good bye
 [/output]
 [/test]
 [test]
@@ -186,7 +181,7 @@ Goodbye
 Sum \= 9
 Sum \= 16
 Sum \= 21
-Goodbye
+Good bye
 [/output]
 [/test]
 [/tests]
