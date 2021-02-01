@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # 1. Products Shop
 
@@ -10,11 +10,11 @@ A products shop holds **users**, **products**, and **categories for the products
 
 Users can **sell** and **buy** products.
 
-- Users have an **id**, **first name** (optional) and **last name** (at least 3 characters) and **age** (optional).
+- Users have an **id**, **first name** (optional) and **last name** (at least 3 characters) and **age** (optional)
 
-- Products have an **id**, **name** (at least 3 characters), **price**, **buyerId** (optional) and **sellerId** as IDs of users.
+- Products have an **id**, **name** (at least 3 characters), **price**, **buyerId** (optional) and **sellerId** as IDs of users
 
-- Categories have an **id** and **name** (from **3** to **15** characters).
+- Categories have an **id** and **name** (from **3** to **15** characters)
 
 Using Code First approach create a database following the above description.
 
@@ -22,17 +22,17 @@ Using Code First approach create a database following the above description.
 
 Configure the following relations in your models:
 
-- **Users** should have **many products sold** and **many products bought**.
+- **Users** should have **many products sold** and **many products bought**
 
-- **Products** should have **many categories**.
+- **Products** should have **many categories**
 
-- **Categories** should have **many products**.
+- **Categories** should have **many products**
 
-- **Users** should have **many friends** (i.e. users).
+- **Users** should have **many friends** (i.e. users)
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 2. Seed the Database
 
@@ -46,7 +46,7 @@ Randomly **generate categories** for each product from the existing categories.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 3. Query and Export Data
 
@@ -216,21 +216,21 @@ Export the results to **JSON**. Follow the format below to better understand how
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 4. Car Dealer
 
 A car dealer needs information about cars, their parts, parts suppliers, customers, and sales.
 
-- **Cars** have **make**, **model**, **and travelled distance** in kilometers.
+- **Cars** have **make**, **model**, **and travelled distance** in kilometers
 
-- **Parts** have **name**, **price**, and **quantity**.
+- **Parts** have **name**, **price**, and **quantity**
 
-- Part **suppliers** have a **name** and info about whether he **uses imported parts**.
+- Part **suppliers** have a **name** and info about whether he **uses imported parts**
 
-- **Customer** has a **name**, **date of birth**, and info about whether he/she **is a young driver** (Young driver is a driver that has **less than 2 years of experience**. Those customers get an **additional 5% off** for the sale.).
+- **Customer** has a **name**, **date of birth**, and info about whether he/she **is a young driver** (Young driver is a driver that has **less than 2 years of experience**. Those customers get an **additional 5% off** for the sale.)
 
-- **Sale** has a **car**, a **customer**, and a **discount percentage**.
+- **Sale** has a **car**, a **customer**, and a **discount percentage**
 
 A **price of a car** is formed by the **total price of its parts**.
 
@@ -240,17 +240,17 @@ Using Code First approach create a database following the above description.
 
 Configure the following relations in your models:
 
-- A **car** has **many parts** and **one part** can be placed in **many cars**.
+- A **car** has **many parts** and **one part** can be placed in **many cars**
 
-- **One supplier** can supply **many parts** and each **part** can be delivered by **only one supplier**.
+- **One supplier** can supply **many parts** and each **part** can be delivered by **only one supplier**
 
-- In **one sale**, only **one car** can be sold.
+- In **one sale**, only **one car** can be sold
 
-- **Each sale** has **one customer** and **a customer** can buy **many cars**.
+- **Each sale** has **one customer** and **a customer** can buy **many cars**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 5. Car Dealer Import Data
 
@@ -266,7 +266,7 @@ Finally, import the **sales records** by **randomly** selecting a **car**, **cus
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # 6. Car Dealer Query and Export Data
 
