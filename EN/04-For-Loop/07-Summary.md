@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -19,19 +19,19 @@ for (initialization; condition; update) {
 ```
 * Initialization 
 
-   - **Condition** 
+   - **Condition**
 
-   - **Step** 
+   - **Step**
 
-   - **Body** 
+   - **Body**
 
-   In the next lesson we will learn:
+## In the next lesson we will learn:
    
-   - **While** Loop
+- **While** Loop
 
-   - Difference between **While** and For **loop**
+- Difference between **While** and For **loop**
 
-   - The **Break** Operator
+- The **Break** Operator
 
-   - **Infinity** Loops
+- **Infinity** Loops
 [/slide]

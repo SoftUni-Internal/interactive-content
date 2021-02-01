@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Recapitulare
 
 [vimeo-video]
@@ -6,11 +6,17 @@
 [stream language="RO" videoId="487119952/6981ade933"  /]
 [/video-vimeo]
 
-În această lecție am învățat:
+## În această lecție am învățat:
 
 Buclele for sunt folosite atunci când trebuie să executăm un bloc de cod de mai multe ori
 
 * Sintaxa buclei este formată din:
+
+``` js
+for (initialization; condition; update) {
+  //loop's body;
+}
+```
 
 * Inițializare
 
@@ -20,14 +26,14 @@ Buclele for sunt folosite atunci când trebuie să executăm un bloc de cod de m
 
     - **Corp**
 
-    În lecția următoare vom învăța:
+## În lecția următoare vom învăța:
    
-    -Bucla **While** 
+- Bucla **While** 
 
-    - Diferența dintre bucla **While** și Bucla **For**
+- Diferența dintre bucla **While** și Bucla **For**
 
-    - Operatorul **Break**
+- Operatorul **Break**
 
-    - Buclele **Infinite** 
+- Buclele **Infinite** 
 
 [/slide]
