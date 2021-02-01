@@ -1,23 +1,33 @@
 # Problem 2: School Library
 
-[slide]
+[slide hideTitle]
 # Description
 
-On the first line you will receive a String, representing a bookshelf in library. Every book title is separated by `&`.
+On the first line, you will receive a String, representing a bookshelf in the library. Every book title is separated by `&`.
 
 On the next lines until you receive `Done` as a command, you will be receiving the following commands:
 
-* Command `Add Book | {book name}`: Add the book to the shelf and place it before all others.
+* Command `Add Book | {book name}`: 
+
+Add the book to the shelf and place it before all others.
 
 If the book is already present on the shelf, ignore the command.
 
-* Command `Take Book | {book name}`: Remove the book with the specified title (only if the book is on the shelf, otherwise ignore this command.)
+* Command `Take Book | {book name}`: 
 
-* Command `Swap Books | {book1} | {book2}`: If both books are on the shelf, swap their places.
+Remove the book with the specified title (only if the book is on the shelf, otherwise ignore this command.)
 
-* Command `Insert Book | {book name}`: Add a book at the end of the book collection. 
+* Command `Swap Books | {book1} | {book2}`: 
 
-* Command `Check Book | {index}`: Print the name of the book, present at this index in the list.
+If both books are on the shelf, swap their places.
+
+* Command `Insert Book | {book name}`: 
+
+Add a book at the end of the book collection. 
+
+* Command `Check Book | {index}`: 
+
+Print the name of the book, present it at this index in the list.
 
 If the index is invalid, ignore the command.
 
@@ -39,11 +49,11 @@ If the index is invalid, ignore the command.
 
 * You will not receive any duplicate book names in the initial list of books.
 
-[code-task title="School Library" taskId="js-fundamentals-regular-exam-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="School Library" taskId="js-fundamentals-regular-exam-School-Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+   // Write your code here
 }
 ```
 [/code-editor]
