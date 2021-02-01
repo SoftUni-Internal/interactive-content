@@ -17,7 +17,7 @@ Write a program that calculates how much money Annie will have to **save** to pa
 
 ## Input
 
-The input comes as an **array of numbers**:
+The input comes as an **array of which contains four numbers**:
 
 - **First Number:** 
 

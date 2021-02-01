@@ -17,22 +17,33 @@ Write a program that calculates **whether he has coped with the task**, given th
 When **calculating how much times George will slow down** as a result of the slope of the field, the result should be **rounded down to the nearest whole number.**
 
 
-# Input
-Three lines are read from the console
+## Input
 
-- The record in seconds - a real number in the interval \[0.00 … 100000.00\]
+The input comes as an **array of which contains three numbers**:
 
-- The distance in meters - a real number in the interval \[0.00 … 100000.00\]
+- **First Number:**  
 
-- The time in seconds for which he climbs 1 meter - a real number in the interval \[0.00 … 1000.00\]
+The record in seconds, a real number in the interval \[0.00 … 100000.00\]
 
-# Output
+- **Second Number:** 
+
+The distance in meters, a real number in the interval \[0.00 … 100000.00\]
+
+-  **Third Number:**
+
+The time in seconds for which he climbs 1 meter, a real number in the interval \[0.00 … 1000.00\]
+
+## Output
 
 Printing on the console depends on the results:
 
-- If George has improved the record we print: `Yes! The new record is { George's time} seconds.`
+- If George has improved the record we print: 
 
-- If it has NOT improved the record we print: `No! He was {time need} seconds slower.` 
+`Yes! The new record is {George's time} seconds.`
+
+- If it has NOT improved the record we print: 
+
+`No! He was {time need} seconds slower.` 
 
 The result must be **formatted** to the second digit after the decimal point
 
@@ -44,16 +55,21 @@ function solve(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-|`["10164", "1400", "25"]` | No! He was 25676.00 seconds slower. |
+|`[10164, 1400, 25]` | No! He was 25676.00 seconds slower. |
 
 
-# Comments
+## Comments
 
 - George has to **climb 1400 m.**:  `1400 * 25 = 35000 seconds`
 
@@ -63,18 +79,42 @@ function solve(input) {
 
 - But because `10164 < 35840`, it did not **improve the record.**
 
-- He **didn't have enough time** to improve the record: `35840 - 10164 = 25676 seconds`
+- He **did not have enough time** to improve the record: `35840 - 10164 = 25676 seconds`
 
-# More Examples
-
-| **Input** | **Output** |
-| --- | --- |
-|`["5554.36", "1340", "3.23"]` | Yes! The new record is 5108.20 seconds. |
-|`["1377", "389", "3"]` | No! He was 0.00 seconds slower. |
 
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+10164
+1400
+25
+[/input]
+[output]
+No! He was 25676.00 seconds slower.
+[/output]
+[/test]
+[test open]
+[input]
+5554.36
+1340
+3.23
+[/input]
+[output]
+Yes! The new record is 5108.20 seconds.
+[/output]
+[/test]
+[test open]
+[input]
+1377
+389
+3
+[/input]
+[output]
+No! He was 0.00 seconds slower.
+[/output]
+[/test]
 [test]
 [input]
 1052
