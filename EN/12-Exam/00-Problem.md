@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Exam Rules:
 
-[Download resources here!](https://mega.nz/file/2M5VGaAA#5sRZMsVki9oEhwa6QSTc6WASG3GKXFELO-kxCgD0qAk)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/09-Exam.zip) **for this task.**
 
 - You have 4 hours to complete the task
 
