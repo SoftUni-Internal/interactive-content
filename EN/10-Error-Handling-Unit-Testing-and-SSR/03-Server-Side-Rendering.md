@@ -1,12 +1,12 @@
-# Server Side Rendering with React
+# Server-Side Rendering with React
 
 [slide hideTitle]
 
-# Client Side versus Server-Side
+# Client-Side versus Server-Side
 
-The main difference between Server and Client Side Rendering lies in where the application is being rendered.
+The main difference between Server and Client-Side Rendering lies in where the application is being rendered.
 
-## Client-Side Rendering
+## Server-Side Rendering
 
 **Server-side rendering**, as the name implies, takes our JavaScript code and renders it to static HTML and CSS **on the server** before sending it to the client.
 
@@ -46,7 +46,7 @@ Client-side rendering works in the following order:
 
 [slide hideTitle]
 
-# Server Side Rendering
+# Server-Side Rendering
 
 Some of the benefits of **server-side rendering** include:
 
@@ -61,7 +61,7 @@ Some of the benefits of **server-side rendering** include:
 
 [slide hideTitle]
 
-# When to use Server Side Rendering?
+# When to use Server-Side Rendering?
 
 ## Search Engine Optimization
 
