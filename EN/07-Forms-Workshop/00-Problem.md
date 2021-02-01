@@ -4,7 +4,7 @@
 
 # Task Requirements
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/08-Forms-Workshop.zip) **for this task.**
 
 Now that we have our forms, it is time to edit them, so that the given information is processed as expected. 
 
