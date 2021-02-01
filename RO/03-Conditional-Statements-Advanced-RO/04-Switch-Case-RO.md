@@ -52,38 +52,25 @@ switch (selector) {
     break;
 }
 ```
+[/slide]
 
-# Exemplu: Ziua săptămânii
-Să scriem un program care tipărește **ziua săptămânii** (în limba engleză) în funcție de **numărul dat** (1 ... 7) sau **"Error!"** dacă este dată o intrare nevalidă.
+[slide hideTitle]
+# Exemplu: "Yes" or "No"
+Să scriem un program care tipărește **"Yes" or "No"** (în limba engleză) în funcție de **numărul dat** (Y, N) sau **"Invalid response"** dacă este dată o intrare nevalidă.
 
 ```java
 Scanner scanner = new Scanner(System.in);
-int day = Integer.parseInt(scanner.nextLine());
-switch (day) {
-    case 1:
-      System.out.println("Monday");
-      break;
-    case 2:
-      System.out.println("Tuesday");
-      break;
-    case 3:
-      System.out.println("Wednesday");
-      break;
-    case 4:
-      System.out.println("Thursday");
-      break;
-    case 5:
-      System.out.println("Friday");
-      break;
-    case 6:
-      System.out.println("Saturday");
-      break;
-    case 7:
-      System.out.println("Sunday");
-      break;
-    default:
-      System.out.println("Error!");
-      break;
+String choice = scanner.nextLine();
+switch (choice) {
+  case "Y":
+    System.out.println("Yes");
+    break;
+  case "N":
+    System.out.println("No");
+    break;
+  default:
+    System.out.println("Invalid response");
+    break;
 }
 ```
 [/slide]

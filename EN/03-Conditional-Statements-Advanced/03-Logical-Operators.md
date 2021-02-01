@@ -1,5 +1,8 @@
 [slide hideTitle]
 # More Complex Conditions
+
+interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators
+
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:
@@ -29,6 +32,9 @@ We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the 
 
 [slide hideTitle]
 # Logical AND
+
+interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and
+
 As we saw, in some tasks we have to make **many checks at once**. 
 
 But what happens when in order to execute some code **more** conditions have to be executed and we **don't want** to make a **negation** (`else`) for each one of them? 
@@ -118,6 +124,9 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 
 [slide hideTitle]
 # Problem: Bonus Points
+
+interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points
+
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -176,6 +185,9 @@ Write a program that applies bonus to given points
 
 [slide hideTitle]
 # Solution: Bonus Points
+
+interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points-solution
+
 [code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -234,6 +246,9 @@ Write a program that applies bonus to given points
 
 [slide hideTitle]
 # Logical OR Operator
+
+interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or
+
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
 Similar to the operator `&&`, the logical **OR** accepts a few arguments of **bool** (conditional) type and returns `true` or `false`. 
@@ -276,6 +291,9 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 
 [slide hideTitle]
 # Problem: Food or Drink
+
+interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink
+
 [code-task title="Food or Drink" taskId="java-basics-logical-opators-food-ot-drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -336,9 +354,13 @@ unknown
 [/slide]
 
 [slide hideTitle]
+
+interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink-solution
+
 # Solution: Food or Drink
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -400,6 +422,9 @@ unknown
 
 [slide hideTitle]
 # Logical NOT Operator
+
+interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not
+
 Logical negation (operator **!**) means a given condition is **not fulfilled**.
 
 | a | !a |
@@ -425,6 +450,9 @@ if (!inRange) {
 
 [slide]
 # The Parenthesis  Operator
+
+interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo
+
 Like the rest of the operators in programming, the operators `&&` and `||` have a priority, as in the case `&&` is with higher priority than `||`. 
 
 The operator `()` serves for **changing the priority of operators** and is being calculated first, just like in maths. 

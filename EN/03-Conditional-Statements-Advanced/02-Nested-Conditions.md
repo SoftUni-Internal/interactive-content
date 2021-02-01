@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Nested Conditions
+
+interactive-programming-basics-with-java-conditional-statements-advanced-11-nested-conditional-statements-2
+
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 
 
@@ -64,6 +67,9 @@ It **has to be avoided**, mostly through optimization of the structure/the algor
 
 [slide hideTitle]
 # Problem: Marketplace
+
+interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace
+
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -123,6 +129,9 @@ Weekend
 
 [slide]
 # Solution: Marketplace
+
+interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace-solution
+
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -181,6 +190,9 @@ Weekend
 
 [slide hideTitle]
 # Problem: Biggest Number of Three
+
+interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three
+
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -247,6 +259,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Biggest Number of Three
+
+interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three-solution
+
 [code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

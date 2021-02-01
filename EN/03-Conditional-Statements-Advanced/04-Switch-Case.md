@@ -1,6 +1,9 @@
 # The Switch-Case Statement
 [slide hideTitle]
 # The Switch-Case Statement
+
+interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case
+
 The switch-case condition works as a sequence of **if-else** blocks. 
 
 Whenever the work of our program depends on the value of one variable, instead of making consecutive conditions with `if-else` blocks, we can **use** the conditional `switch` statement. 
@@ -51,44 +54,39 @@ switch (selector) {
     break;
 }
 ```
+[/slide]
 
-# Example: Day of the Week
-Let's write a program that prints **the day of the week** (in English) depending on the **given number** (1 … 7) or **"Error!"** if an invalid input is given.
+[slide hideTitle]
+# Example: "Yes" or "No"
+
+interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example + 
+
+interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-demo
+
+Let's write a program that prints **"Yes" or "No"** (in English) depending on the **given command** (Y, N) or **"Invalid response"** if an invalid input is given.
 
 ```java
 Scanner scanner = new Scanner(System.in);
-int day = Integer.parseInt(scanner.nextLine());
-switch (day) {
-    case 1:
-      System.out.println("Monday");
-      break;
-    case 2:
-      System.out.println("Tuesday");
-      break;
-    case 3:
-      System.out.println("Wednesday");
-      break;
-    case 4:
-      System.out.println("Thursday");
-      break;
-    case 5:
-      System.out.println("Friday");
-      break;
-    case 6:
-      System.out.println("Saturday");
-      break;
-    case 7:
-      System.out.println("Sunday");
-      break;
-    default:
-      System.out.println("Error!");
-      break;
+String choice = scanner.nextLine();
+switch (choice) {
+  case "Y":
+    System.out.println("Yes");
+    break;
+  case "N":
+    System.out.println("No");
+    break;
+  default:
+    System.out.println("Invalid response");
+    break;
 }
 ```
 [/slide]
 
 [slide hideTitle]
 # Multiple Labels
+
+interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case
+
 In **Java** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 
 This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective `case` label **there is no code** for execution and a `break` operator. 
