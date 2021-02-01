@@ -5,7 +5,7 @@
 [code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculateMonthSalary (input) {
+function calculateMonthSalary (days, salaryPerDay) {
    // Scrieți codul dvs. aici
 }
 
@@ -84,7 +84,7 @@ Scrieți un program care:
 [code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numberSequence(input) {
+function numberSequence (n, numbers) {
   // Scrieți codul dvs. aici
 }
 ```
@@ -162,7 +162,7 @@ Min number: -2
 [code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function powerOfNumbers(input) {
+function powerOfNumbers(n, p) {
   // Scrieți codul dvs. aici
 }
 ```
@@ -699,6 +699,91 @@ Scrieți un program care:
 5 x 8 = 40
 5 x 9 = 45
 5 x 10 = 50
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+[/output]
+[/test]
+[test]
+[input]
+4
+[/input]
+[output]
+4 x 1 = 4
+4 x 2 = 8
+4 x 3 = 12
+4 x 4 = 16
+4 x 5 = 20
+4 x 6 = 24
+4 x 7 = 28
+4 x 8 = 32
+4 x 9 = 36
+4 x 10 = 40
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+6 x 10 = 60
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+8 x 4 = 32
+8 x 5 = 40
+8 x 6 = 48
+8 x 7 = 56
+8 x 8 = 64
+8 x 9 = 72
+8 x 10 = 80
 [/output]
 [/test]
 [/tests]
