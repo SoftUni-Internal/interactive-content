@@ -1,6 +1,6 @@
 # Homework: DOM
 
-[slide]
+[slide hideTitle]
 
 # Problem: Subtraction
 
@@ -117,7 +117,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Fill Dropdown
 
@@ -133,7 +133,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/WcBUHRrD#747XyL7lImGXCx5lgQwv0dBhgOLYHL__Wy6JvWtqq64) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **for this task.**
 
 Your task is to take values from **input** fields with **ids "newItemText"** and **"newItemValue"**.
 
@@ -215,7 +215,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Accordion
 
@@ -231,7 +231,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/rNYyiRLK#iut07FT3FKWmut5cDBzta1aId0R7hvPw2t_DJ_mdzzg) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Accordion.zip) **for this task.**
 
 An **html** file is given and your task is to show **more/less** information by clicking a **\[ADD\] button** (it is not an actual button, but a **span** that has an **onclick** event attached to it).
 
@@ -324,7 +324,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Order the names
 
@@ -340,7 +340,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/6ZRw2JpL#SZqLDb4PrvVDs0x2NikXXyfIpvFn9RWwgK0oUu62yD8) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Order-the-Names.zip) **for this task.**
 
 Write a **function that orders names alphabetically.**
 
@@ -768,7 +768,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Chat Room
 
@@ -784,7 +784,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/GcQSFDqD#Q73Smj4yxGQwySEN5y2eonnkFcR-KjDMWzqwWeNeed0) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Chat-Room.zip) **for this task.**
 
 Write a **function** to create the functionality of **a chat room.**
 
@@ -1185,7 +1185,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Numpad Calculator
 
@@ -1201,7 +1201,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/LIBWkDQb#PyLr8eRk8wABDc8aDTV4SMf1l6uwZwBhFwMGOrtfgSI) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Numpad-Calculator.zip) **for this task.**
 
 Write a function that implements a calculator that has the following functionalities:
 
@@ -1704,7 +1704,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Number Convertor
 
@@ -1720,7 +1720,7 @@ yes
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/CFIEjbga#XJrH0wNWnOUb1Tkxg4FeN5FZsclhc165HD1lu_57Rec) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Number-Convertor.zip) **for this task.**
 
 Write a function that **converts** a **decimal number** to **binary** and **hexadecimal**.
 
