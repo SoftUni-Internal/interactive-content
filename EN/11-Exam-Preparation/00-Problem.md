@@ -4,7 +4,7 @@
 
 # Exam Rules:
 
-[Download resources here!](https://mega.nz/file/fVgUAL4B#rQeXaRcVuIN-_eDiBjHQwZzhVXvbdOa5kK5UlwrUI-8)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/08-Exam-Preparation.zip) **for this task.**
 
 - You have 4 hours to complete the task
 
