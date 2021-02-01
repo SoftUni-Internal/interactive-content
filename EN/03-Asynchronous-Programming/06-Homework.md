@@ -16,7 +16,7 @@
 
 # Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/jBJxUYqa#epYRw83cYrEAQirIotxCdnuD-WSVlOPrzjx8DzBVNzs).
+You can download the resources for this problem from [here](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Applications-Asynchronous-Programming-Homework-Resources.zip).
 
 Write a program that **requests** a weather report **from a server** and **displays** it to the user.
 
