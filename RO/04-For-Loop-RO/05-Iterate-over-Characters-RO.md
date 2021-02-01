@@ -71,19 +71,67 @@ console.log(asciiValue);
 [code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function latinLetters(input) {
+function latinLetters(startChar, endChar) {
     // Write your code here...
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 Scrieți un program care:
 
 * Citește 2 litere
 * Imprimă toate literele din intervalul dat inclusiv
 
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|'a', 'c'| a b c  |
+
 [/task-description]
+[tests]
+[test]
+[input]
+d
+u
+[/input]
+[output]
+d e f g h i j k l m n o p q r s t u
+[/output]
+[/test]
+[test]
+[input]
+a
+d
+[/input]
+[output]
+a b c d
+[/output]
+[/test]
+[test]
+[input]
+b
+p
+[/input]
+[output]
+b c d e f g h i j k l m n o p
+[/output]
+[/test]
+[test]
+[input]
+p
+t
+[/input]
+[output]
+p q r s t
+[/output]
+[/test]
+[/tests]
 [code-io /]
 [/code-task]
 
@@ -100,28 +148,67 @@ Scrieți un program care:
 [code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function latinLetters(input) {
-  let startChar = input[0];
-  let endChar = input[1];
-  
-  let startValue = startChar.charCodeAt(0);
-  let endValue = endChar.charCodeAt(0);
-  let result = '';
-  for (let i = startValue; i <= endValue; i++) {
-    result += String.fromCharCode(i) + ' ';
-  }
-  console.log(result);
+function latinLetters(startChar, endChar) {
+  // Scrieți codul dvs. aici
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 Scrieți un program care:
 
 * Citește 2 litere
 * Imprimă toate literele din intervalul dat inclusiv
 
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|'a', 'c'| a b c  |
+
 [/task-description]
+[tests]
+[test]
+[input]
+d
+u
+[/input]
+[output]
+d e f g h i j k l m n o p q r s t u
+[/output]
+[/test]
+[test]
+[input]
+a
+d
+[/input]
+[output]
+a b c d
+[/output]
+[/test]
+[test]
+[input]
+b
+p
+[/input]
+[output]
+b c d e f g h i j k l m n o p
+[/output]
+[/test]
+[test]
+[input]
+p
+t
+[/input]
+[output]
+p q r s t
+[/output]
+[/test]
+[/tests]
 [code-io /]
 [/code-task]
 
