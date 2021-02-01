@@ -257,7 +257,7 @@ Write a program, which:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 30
