@@ -67,15 +67,15 @@ function solve(input) {
 [tests]
 [test open]
 [input]
-Hawai::Cyprys-Greece
+Hawai:Cyprys-Greece
 Add Stop:7:Rome
 Remove Stop:11:16
 Switch:Hawai:Bulgaria
 Travel
 [/input]
 [output]
-Hawai::RomeCyprys-Greece
-Hawai::Rome-Greece
+Hawai:RomeCyprys-Greece
+Hawai:Rome-Greece
 Bulgaria::Rome-Greece
 Ready for world tour! Planned stops: Bulgaria::Rome-Greece
 [/output]
