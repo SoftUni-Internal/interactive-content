@@ -482,7 +482,7 @@ yes
 [task-description]
 ## Description
 
-Use the provided resources file complete this problem. [Download from mega.nz.](https://mega.nz/file/iZJ0WTbQ#MHeZVUY8tKo-Luzt_gWUOfj5hX5TRPGkZcKhufqNZTQ)
+Use the provided resources file complete this problem. [Download from mega.nz.](https://videos.softuni.org/resources/javascript/javascript-advanced/04-JS-Advanced-Function-Context-Homework-Resources.zip)
 
 **Note: You must complete this task without changing anything in the given HTML file (index.html).**
 
