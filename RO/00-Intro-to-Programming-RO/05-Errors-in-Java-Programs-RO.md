@@ -1,9 +1,9 @@
 [slide hideTitle]
-# Typical Errors and Mistakes in Java Programing
+# Erori și greșeli tipice în Programare cu Java
 
 Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java
 
-IntelliJ has a way to show us most of the basics errors we can make.
+IntelliJ are o modalitate de a ne arăta erorile de bază pe care le putem face.
 
 Acesta ubliniază codul greșit care nu poate fi compilat.
 
@@ -23,12 +23,12 @@ Operatorul "+" are două funcționalități:
 
 - Concatenarea se folosește pentru șiruri.
 
-Confusing the assignment (=) and equality (==, ===) operators.
+Să confundăm operatorii de  asignare (=) cu cei de egalitate (==, ===).
 
 [/slide]
 
 [slide hideTitle]
-# Example: Typical Errors and Mistakes in Java Programing
+# Exemplu: Erori și greșeli tipice în Programare cu Java
 
 Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java-Demo
 

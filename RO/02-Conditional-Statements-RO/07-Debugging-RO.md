@@ -13,6 +13,10 @@ Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce cale
 [image assetsSrc="conditional-statements-breakpoint.png" /]
 [image assetsSrc="conditional-statements-variables-watch.png" /]
 
+[/slide]
+
+[slide hideTitle]
+
 # Depanare in IntelliJ IDEA 
 Apăsând butonul `[Shift + F9]`, rulăm programul în **modul de depanare**. Trecem la **următoarea linie** cu `[F7]`.
 

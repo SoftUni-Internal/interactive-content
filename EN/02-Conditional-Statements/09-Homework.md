@@ -74,7 +74,12 @@ Wrong password!
 [/slide]
 
 [slide hideTitle]
-# Problem: Boiling Water
+# Problem with Solution: Boiling Water
+
+interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water + 
+
+interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water-solution
+
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -225,7 +230,12 @@ Fast
 [/slide]
 
 [slide hideTitle]
-# Problem: Area of Figures
+# Problem with Solution: Area of Figures
+
+interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures + 
+
+interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures-solution
+
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -443,6 +453,11 @@ Invalid ticket type!
 
 [slide hideTitle]
 # Problem: Coffee Shop
+
+interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop + 
+
+interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop-solution
+
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -1208,11 +1223,13 @@ unknown
 [/slide]
 
 
-
-
-
 [slide hideTitle]
-# Problem: Pets
+# Problem with Solution: Pets
+
+interactive-programming-basics-with-java-conditional-statements-47-problem-pets + 
+
+interactive-programming-basics-with-java-conditional-statements-47-problem-pets-solution
+
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

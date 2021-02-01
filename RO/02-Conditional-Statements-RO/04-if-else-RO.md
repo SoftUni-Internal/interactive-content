@@ -33,8 +33,12 @@ Atât declarația then, cât și declarația else pot consta dintr-o singură de
 Pentru o singură declarație, parantezele sunt opționale, dar recomandate.
 
 Declarația sau declarațiile din declarația then și declarația else pot fi de orice fel, inclusiv de alta dacă declarația care  este imbricată în  interiorul declarației originale if.
+[/slide]
 
+[slide hideTitle]
 # Exemplu: vreme
+
+
 Aceasta este o versiune extinsă a exemplului din slide-ul anterior.
 
 După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din declarați `if` se dovedește  sa fie ** false **.

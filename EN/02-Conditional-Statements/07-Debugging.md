@@ -2,6 +2,8 @@
 
 # Debugging
 
+interactive-programming-basics-with-java-conditional-statements-32-34-debugging
+
 So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will show a tool that can help us find mistakes more easily: **the debugger**.
 
 # What is "Debugging"?
@@ -11,6 +13,11 @@ We can track **line by line** what happens in our program, what path it follows,
 
 [image assetsSrc="conditional-statements-breakpoint.png" /]
 [image assetsSrc="conditional-statements-variables-watch.png" /]
+[/slide]
+
+[slide hideTitle]
+
+interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo
 
 # Debugging in IntelliJ IDEA 
 By pressing the `[Shift + F9]` button, we run the program in **debug mode**. We move to **the next line** with `[F7]`.

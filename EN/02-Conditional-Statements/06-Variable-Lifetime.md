@@ -1,6 +1,9 @@
 [slide hideTitle]
 
 # Variable Scope
+
+interactive-programming-basics-with-java-conditional-statements-30-31-variable-scope
+
 Each variable has a range in which it exists, called **variable scope**. 
 
 This range specifies where a variable can be used and how long is its **lifetime**. 
@@ -8,8 +11,14 @@ This range specifies where a variable can be used and how long is its **lifetime
 In the Java language, the scope in which a variable exists, starts from the line in which we **defined it** and ends with the first closing curly bracket `}` (of the method, the **if statement**, etc.).
 
 Thus, it is important to know that **any variable defined inside the body of certain** `if` **statement will not be available outside of it**, unless we have defined it higher in the code.
+[/slide]
 
-# Variable Scope – Example
+[slide hideTitle]
+
+# Example: Variable Lifetime
+
+interactive-programming-basics-with-java-conditional-statements-30-31-variable-scope-demo
+
 In the example below, on the last line we are trying to print the variable `salary` that is defined in the `if` statement, we will get an **error** because we don't have access to it.
 
 ```java

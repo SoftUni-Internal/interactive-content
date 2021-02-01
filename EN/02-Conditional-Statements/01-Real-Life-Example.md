@@ -2,6 +2,11 @@
 
 [slide hideTitle]
 # Real Life Example: Watering Plants
+
+interactive-programming-basics-with-java-conditional-statements-8-9-real-life-example-watering-plants
+
+interactive-programming-basics-with-java-conditional-statements-8-9-real-life-example-watering-plants-demo
+
 [image assetsSrc="02-coditional-statements-1.png" /]
 
 Every day we are faced with decisions, which we make based on conditions that may or may not depend on us.

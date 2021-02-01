@@ -1,6 +1,9 @@
 [slide hideTitle]
 
 # If-Else Conditions
+
+interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else
+
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
 Built this way, **the conditional statement** is called `if-else` and its behavior is as follows: 
@@ -33,8 +36,14 @@ Both the then-statement and the else-statement can consist of a single statement
 For a single statement, the braces are optional but recommended.
 
 The statement or statements in the then-statement and the else-statement can be of any kind, including another if statement nested inside the original if statement.
+[/slide]
+
+[slide hideTitle]
 
 # Example: Weather
+
+interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-demo
+
 This is an extended version of the example from the previous slide.
 
 As you can see now we have another case, which will be executed when the condition in the `if` statement turns out **false**.
@@ -52,6 +61,9 @@ if (weather.equals("rainy")) {
 
 [slide hideTitle]
 # Block of Code
+
+interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code
+
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
 When we want to execute **block of code** (group of commands), curly brackets are **required**. 
@@ -83,6 +95,9 @@ if (color.equals("red")) {
 
 [slide hideTitle]
 # Problem: Even or Odd
+
+interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd
+
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -142,6 +157,9 @@ even
 
 [slide hideTitle]
 # Solution: Even or Odd
+
+interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd-solution
+
 [code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -201,6 +219,9 @@ even
 
 [slide hideTitle]
 # Problem: Greater Numbers
+
+interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers
+
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -265,6 +286,9 @@ Greater number: 2
 
 [slide hideTitle]
 # Solution: Greater Numbers
+
+interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers-solution
+
 [code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

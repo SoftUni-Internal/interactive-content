@@ -8,8 +8,11 @@ Această gamă specifică unde poate fi utilizată o variabilă și cât de lung
 În limbajul JavaScript, domeniul în care există o variabilă, începe de la linia în care am **definit-o** și se termină cu prima paranteză închisă `}` (a metodei, declarație **if**)
 
 Astfel, este important să știm că **orice variabilă definită în interiorul unei anumite declarații** `if` **nu va fi disponibilă în afara acesteia**, cu excepția cazului în care am definit-o anterior într-un domeniu mai înalt în codificare.
+[/slide]
 
-## Domeniul de aplicare variabil-Exemplu 
+[slide hideTitle]
+
+## Example: Variable Lifetime
 
 În exemplul de mai jos, pe ultima linie încercăm să imprimăm variabila `salariu` care este definită în declarația `if`, vom primi o **eroare** deoarece nu avem acces la ea.
 ```js

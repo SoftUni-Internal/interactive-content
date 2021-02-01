@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+interactive-programming-basics-with-java-conditional-statements-50-summary
+
 # In this lesson we learned: 
 
 - Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )

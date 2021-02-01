@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Comparison Operators
+
+interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions
+
 In programming, we can compare values using the following operators:
 
 |Operators|Designation|
@@ -17,6 +20,9 @@ When compared, the result is a Boolean value `true` or `false`, depending on whe
 [/slide]
 
 [slide hideTitle]
+
+interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo
+
 # Examples for Comparing Numbers
 Examples of such an expression are as follows:
 ```java live
@@ -46,6 +52,9 @@ If the value of the expression on the left side is greater than or equal to the 
 
 [slide hideTitle]
 # String Comparison
+
+interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-2
+
 Comparing text using the `equals()` method.
 
 Two string operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:

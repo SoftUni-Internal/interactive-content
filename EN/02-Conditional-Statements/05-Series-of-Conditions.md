@@ -1,6 +1,9 @@
 [slide hideTitle]
 
 # Sequence of If-Else Conditions
+
+interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions
+
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
 In such cases, we can apply the construction `if-else if ... -else` **in series**.
@@ -23,6 +26,9 @@ else {
 
 [slide hideTitle]
 # Example: Digits in English
+
+interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo
+
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 
 We can read the digit and then, through a **sequence of conditions** we print the relevant English word:
