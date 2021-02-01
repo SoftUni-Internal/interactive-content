@@ -24,9 +24,9 @@ Write a program that c**alculates the amount to be paid** for the order.
 
 For orders:
 
-- From **$400 to $1.000 inclusive there is a 15\%** discount.
+- From **$400 to $1000 inclusive there is a 15%** discount.
 
-- Over **$1,000 there is a 50\%** discount.
+- Over **$1000 there is a 50%** discount.
 
 ## Input
 
@@ -89,7 +89,7 @@ big
 4
 [/input]
 [output]
-487.90 lv.
+487.90 dollars.
 [/output]
 [/test]
 [test open]
@@ -99,7 +99,7 @@ small
 1
 [/input]
 [output]
-84.20 lv.
+84.20 dollars.
 [/output]
 [/test]
 [test open]
@@ -109,7 +109,7 @@ small
 50
 [/input]
 [output]
-1000.00 lv.
+1000.00 dollars.
 [/output]
 [/test]
 [test open]
@@ -119,7 +119,7 @@ big
 8
 [/input]
 [output]
-666.40 lv.
+666.40 dollars.
 [/output]
 [/test]
 [test]
