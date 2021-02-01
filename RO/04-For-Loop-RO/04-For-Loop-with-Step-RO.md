@@ -243,8 +243,8 @@ Scrieți un program care:
 [code-task title="Exam Countdown" taskId="pb-js-for-loop-lab-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function examCountdown (days) {
-   // Write your code here
+function examCountdown(days) {
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -278,6 +278,48 @@ Scrieți un program care:
 The exam has come.
 [/output]
 [/test]
+[test]
+[input]
+5
+[/input]
+[output]
+5 days before the exam
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+6 days before the exam
+5 days before the exam
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+7 days before the exam
+6 days before the exam
+5 days before the exam
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -295,14 +337,8 @@ The exam has come.
 [code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function examCountdown (input) {
-   let days = Number(input.shift());
-
-   for (let i = days; i >= 1; i -= 1) {
-      console.log(`${i} days before the exam`);
-   }
-   
-   console.log("The exam has come.");
+function examCountdown(days) {
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -327,6 +363,48 @@ function examCountdown (input) {
 4
 [/input]
 [output]
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+5 days before the exam
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+6 days before the exam
+5 days before the exam
+4 days before the exam
+3 days before the exam
+2 days before the exam
+1 days before the exam
+The exam has come.
+[/output]
+[/test]
+[test]
+[input]
+7
+[/input]
+[output]
+7 days before the exam
+6 days before the exam
+5 days before the exam
 4 days before the exam
 3 days before the exam
 2 days before the exam
