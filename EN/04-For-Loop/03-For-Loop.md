@@ -333,7 +333,7 @@ console.log(max);
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => code(input.unshift(), input);
 ```
 [/code-adapter]
 [task-description]
