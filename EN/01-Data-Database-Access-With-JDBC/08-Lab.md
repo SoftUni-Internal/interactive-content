@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
-
 # Part 0: Inspect SoftUni DB.
+
+_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
 
 ## Database Apps Introduction
 
