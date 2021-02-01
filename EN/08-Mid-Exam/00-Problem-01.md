@@ -7,7 +7,7 @@ Peter the archer is going to participate in a tournament.
 
 Your task is to help him calculate his points.
 
-On the first line you will receive an array of integers separated by `|`, representing the targets in an archery range.
+On the first line, you will receive an array of integers separated by `|`, representing the targets in an archery range.
 
 On the next lines until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
 
@@ -37,7 +37,7 @@ Each time Peter reaches a target:
 
 * If the target is worth less than 5 points Peter takes all of its points and decreases the total points of the target to 0.
 
-If the start index, specified in any command is out of range to begin with, Peter will have to ignore this command.
+If the start index, specified in any command is out of range, to begin with, Peter will have to ignore this command.
 
 ## Input
 
