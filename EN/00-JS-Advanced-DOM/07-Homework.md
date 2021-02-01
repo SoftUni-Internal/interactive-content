@@ -16,7 +16,7 @@
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/TBAEQBbB#SK4IzellJvgovh6jJkt9UtQp9Tv1oPgDWEwrJc9BXBw) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-JS-Advanced-DOM-Homework-Resources.zip) **for this task.**
 
 An HTML page holds **two text fields** with ids "**firstNumber**" and "**secondNumber**". Write a function to **subtract** the values from these text fields and display the result in the **div** named "**result**".
 
