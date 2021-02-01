@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Queue Functionality
+# Queues
 
 **Queues** are data structures similar to **stacks**. It keeps its elements in sorted order. Queue elements are ordered based on the **FIFO** principle - **First In First Out**. When you add an element, it is always placed **at the bottom** of the queue. Removing an element removes it from **the top** of the queue.
 
@@ -48,15 +48,11 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
     - `offer()` - returns **false** if the queue is full
 
 
-
-
-
 - `poll()` and `remove()` - both methods remove the first (the top) element from the queue:
 
     - `remove()` - throws **exception** if the queue is empty
 
     - `poll()` - **returns null** if the queue is empty, otherwise returns the removed element
-
 
 
 - `peek()` - gets the value of the first element
@@ -65,7 +61,9 @@ ArrayDeque<Integer> queue = new ArrayDeque<>();
 
 [slide hideTitle]
 
-# Add() / Offer()
+# Queue Operations
+
+## Add() / Offer()
 
 Both functions are used for adding elements to the top of the queue.
 
@@ -88,11 +86,7 @@ They are used in different scenarios:
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
 
-[/slide]
-
-[slide hideTitle]
-
-# Remove() / Poll()
+## Remove() / Poll()
 
 Both functions remove the first/top element of the queue, removing it from the queue.
 
@@ -134,11 +128,7 @@ Running the last piece of code should result in a **NoSuchElementException**.
 [image assetsSrc="Java-Advanced-Stack-and-Queues-8.gif" /]
 
 
-[/slide]
-
-[slide hideTitle]
-
-# Peek()
+## Peek()
 
 This function returns the first element of the queue (the bottom element), without removing it.
 
