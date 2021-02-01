@@ -143,7 +143,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Description
 
-_**Here is a link to the**_ [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) **for this task.**
 
 In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
@@ -681,7 +681,7 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/bAY2kThS#PuRzxdapTaM_8vOZoxuuUWNDp2GCRMCBiQfbDb5Jl_c) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Growing_word_problem.zip) **for this task.**
 
 In this problem, you should **create a JS functionality** which **changes the size and the color** of a given **paragraph** on **every click**.
 
