@@ -1,26 +1,27 @@
-[slide]
-
 # Lesson Introduction
 
+[slide hideTitle]
 
-## Lesson content:
+# Lesson Content
 
-**JSON**
+## In this lesson you will learn:
+
+**1. JSON**
 
 test 1235
 
-- What the JSON format is.
+- What the JSON format is
 
-- How to transfer data as JSON.
+- How to transfer data as JSON
 
 [video src="https://testvideos.softuni.org/hls/demo/01-PB-JavaScript-expressions-and-statements-1-2-Introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster=" " \]
 
 
-**GSON**
+**2. GSON**
 
-- How to install GSON and use it with Java.
+- How to install GSON and use it with Java
 
-- How to transform Java objects to JSON and vice versa.
+- How to transform Java objects to JSON and vice versa
 
 
 [/slide]
