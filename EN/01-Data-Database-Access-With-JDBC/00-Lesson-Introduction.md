@@ -24,5 +24,3 @@
 - Differеnt advanced topics
 
 
-[/slide]
-
