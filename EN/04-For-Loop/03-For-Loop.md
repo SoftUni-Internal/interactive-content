@@ -333,7 +333,11 @@ console.log(max);
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(input.unshift(), input);
+(input, code) => {
+  input = input.filter(e => e != '');
+  const d = input.pop();
+  return code(input, d);
+}
 ```
 [/code-adapter]
 [task-description]
