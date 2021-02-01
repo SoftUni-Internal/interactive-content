@@ -15,7 +15,7 @@ function solve(){
 
 # Description
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Js-Application-Exam.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Exam-Resources.zip) **for this task.**
 
 You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with cloud\-based backend \(Firebase or Kinvey\).
 
