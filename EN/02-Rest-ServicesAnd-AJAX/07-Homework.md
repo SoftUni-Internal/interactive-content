@@ -18,7 +18,7 @@ function busStop(){
 
 ## Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/LIoi3D4b#nyXdp7v9QUUXuRztMjPXSyUVUJGEckoReHMFP7JlWbE).
+You can download the resources for this problem from [here](https://videos.softuni.org/resources/javascript/javascript-applications/03-JS-Applications-REST-Services-and-AJAX-Homework.zip).
 
 Write a JS program that displays arrival times for all buses by a given bus stop ID when a button is clicked.
 
