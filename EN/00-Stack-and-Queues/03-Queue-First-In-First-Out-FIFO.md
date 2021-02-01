@@ -188,6 +188,8 @@ queueOfCars.push("Boiler");
 System.out.println(queueOfCars.contains("BMW 7"));
 ```
 
+[/slide]
+
 [slide hideTitle]
 # Overview of All Operations
 
