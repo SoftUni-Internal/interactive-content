@@ -6,10 +6,11 @@
 [stream language="RO" videoId="487119404/67365f350f"  /]
 [/video-vimeo]
 
-În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei `for`, ** și anume pasul. **
+În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei `for`, **și anume pasul.**
+
 **Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale. 
 
-Aceasta este declarată ultimă în corpul buclei for
+Aceasta este declarată ultimă în corpul buclei for.
 
 Foarte des, pasul are dimensiunea 1 și în acest caz, în loc sî scriem `i += 1` sau `i -= 1`, putem folosi operatorii `i++` sau `i--`.
 
@@ -31,7 +32,7 @@ for (let i = 0; i < 10; i += 2) {
 
 S-ar putea să dorim să avem un **pas descrescător** - `i - =` + dimensiunea pasului.
 
-În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o** buclă infinită **.
+În acest caz, ar trebui să fim atenți la condiția finală pentru a evita **o** buclă infinită.
 
 ```js live
 for (let i = 10; i >= 1; i--) {
