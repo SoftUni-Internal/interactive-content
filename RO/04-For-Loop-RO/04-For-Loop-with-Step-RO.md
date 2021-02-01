@@ -55,8 +55,8 @@ for (let i = 10; i >= 1; i--) {
 [code-task title="Number Ending with 7" taskId="pb-js-for-loop-lab-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbersEndingWith7 (input) {
-   // Write your code here
+function numbersEndingWith7(n) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -87,6 +87,51 @@ Scrieți un program care:
 37
 [/output]
 [/test]
+[test]
+[input]
+35
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
+[test]
+[input]
+80
+[/input]
+[output]
+7
+17
+27
+37
+47
+57
+67
+77
+[/output]
+[/test]
+[test]
+[input]
+130
+[/input]
+[output]
+7
+17
+27
+37
+47
+57
+67
+77
+87
+97
+107
+117
+127
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -104,12 +149,8 @@ Scrieți un program care:
 [code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbersEndingWith7 (input) {
-   let n = Number(input.shift());
-
-   for (let i = 7; i <= n; i += 10) {
-      console.log(i);
-   }
+function numbersEndingWith7(n) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -138,6 +179,51 @@ Scrieți un program care:
 17
 27
 37
+[/output]
+[/test]
+[test]
+[input]
+35
+[/input]
+[output]
+7
+17
+27
+[/output]
+[/test]
+[test]
+[input]
+80
+[/input]
+[output]
+7
+17
+27
+37
+47
+57
+67
+77
+[/output]
+[/test]
+[test]
+[input]
+130
+[/input]
+[output]
+7
+17
+27
+37
+47
+57
+67
+77
+87
+97
+107
+117
+127
 [/output]
 [/test]
 [/tests]
