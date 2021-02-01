@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function calculateMonthSalary (input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 
 ```
@@ -85,7 +85,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function numberSequence(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -163,7 +163,7 @@ Min number: -2
 [code-editor language=javascript]
 ```
 function powerOfNumbers(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -211,7 +211,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function equalPairs(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -347,7 +347,7 @@ Yes, value=10
 [code-editor language=javascript]
 ```
 function zigZagSum(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -405,7 +405,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function divideWithoutRemainder(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -454,7 +454,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function vowelSum(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -543,7 +543,7 @@ s
 [code-editor language=javascript]
 ```
 function rollercoaster(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -654,7 +654,7 @@ The rollercoaster departures
 [code-editor language=javascript]
 ```
 function multiply(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -708,30 +708,13 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# NOT WORKING TEST PROBLEM:  Numbers, Divisible by 9
+# Problem:  Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(num1, num2) {
-    num1 = Number(num1);
-    num2 = Number(num2);
-    let sum = 0;
-    let numByNine = '0';
-    for (let index = num1; index <= num2; index++) {
-        if (index % 9 == 0) {
-            sum += index;
-            
-        }
-    }
-    console.log(`The sum: ${sum}`);
-    for (let index = num1; index <= num2; index++) {
-        if (index % 9 == 0) {
-          console.log(index + " ");  
-            
-        }
-    }
-    
+function solve(firstNumber, secondNumber) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -750,8 +733,8 @@ Pe prima linie tipăriți suma numerelor, iar pe următoarea linie numerele core
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|100| The sum: 1683 |
-|200|108 117 126 135 144 153 162 171 180 189 198|
+|100, 200| The sum: 1683 |
+||108 117 126 135 144 153 162 171 180 189 198|
 
 [/task-description]
 [tests]
