@@ -22,7 +22,7 @@ Your program should print **statistics about the amount of cookies they ate**.
 
 ## Input
 
-Initially, one line is read:
+**Initially, one line is read:**
 
 - Number of days: a number in the range \[1…30\]
 
@@ -43,7 +43,7 @@ Print four lines on the console:
 
 - `{percentage of food eaten}% of the food has been eaten.`
 
-- `{percentage of food eaten by the dog }% eaten from the dog.`
+- `{percentage of food eaten by the dog}% eaten from the dog.`
 
 - `{percentage of food eaten by the cat}% eaten from the cat.`
 
@@ -82,15 +82,15 @@ We have **3 days** and a total amount of food: **1000 grams.**
 
 **On the first day:**
 
-- The dog eats 300 g, the cat eats 20 grams
+- The dog eats 300 grams, the cat eats 20 grams
 
 **On the second day:**
 
-- The dog eats 100 g, the cat eats 30 grams
+- The dog eats 100 gramsg, the cat eats 30 grams
 
 **On the third day:**
 
-- The dog eats 110 g, the cat eats 40 grams
+- The dog eats 110 gramsg, the cat eats 40 grams
 
 On this day they should also **receive a prize - cookies:**
 
