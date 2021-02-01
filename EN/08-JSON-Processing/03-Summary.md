@@ -1,10 +1,12 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
+# In this lesson you learned:
+
 **JSON**
 
-- An **easy-to-read** format for data transferring.
+- An **easy-to-read** format for data transferring
 
 - Based on **JavaScript** but **language-independent**
 
@@ -21,14 +23,14 @@
 
 - A **Java library** used to convert objects to JSON and vice versa
 
-- Using the `toJson` and `fromJson` methods.
+- Using the `toJson` and `fromJson` methods
 
 ## The topic of the next lesson is:
 
 **XML Processing**
 
-- What XML is and where it is used.
+- What XML is and where it is used
 
-- How to work with JAXB.
+- How to work with JAXB
 
 [/slide]
