@@ -23,4 +23,4 @@
 **6. Advanced Concepts**
 - Differеnt advanced topics
 
-
+[/slide]
