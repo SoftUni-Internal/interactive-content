@@ -167,6 +167,11 @@ function powerOfNumbers(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
