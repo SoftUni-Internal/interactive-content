@@ -236,7 +236,11 @@ function greatestNumber(n, numbers) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
 ```
 [/code-adapter]
 [task-description]
