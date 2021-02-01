@@ -53,14 +53,14 @@ function solve(input) {
 
 # Examples
 
- **Input**
+**Input**
 `['Hawai::Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawai:Bulgaria', 'Travel']`
 
 **Output**
-Hawai::RomeCyprys-Greece
-Hawai::Rome-Greece
-Bulgaria::Rome-Greece
-Ready for world tour! Planned stops: Bulgaria::Rome-Greece
+`Hawai::RomeCyprys-Greece`
+`Hawai::Rome-Greece`
+`Bulgaria::Rome-Greece`
+`Ready for world tour! Planned stops: Bulgaria::Rome-Greece`
 
 [/task-description]
 [code-io /]
