@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Contacts Book
 
-You can download the resources for this problem from [here](https://mega.nz/file/jBwA3JoD#S5ElXOYUuWdVomVljkBOCcxPqdHEoxr3qUn4koDBXWg).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/06-JS-Applications-Templating-Homework-Resources.zip) **for this task.**
 
 Create a simple page containing some cards with contacts. 
 
