@@ -4,8 +4,6 @@
 
 # In this lesson you learned:
 
-- Calculating **algorithmic complexity** with Big O Notation.
-
 - **Stacks** - Last In First Out (LIFO)
 
     - `push()`
