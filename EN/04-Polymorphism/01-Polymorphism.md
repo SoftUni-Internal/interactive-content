@@ -74,7 +74,7 @@ Meow Meow...
 ```
 [/slide]
 
-[slide hideTitle
+[slide hideTitle]
 
 # instanceOf Operator
 
