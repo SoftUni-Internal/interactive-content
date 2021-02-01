@@ -143,7 +143,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Description
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/KFAGVbDK#ShurUyzcUv6jnn3FU-aUGsOaLNyxLUNix3-VxjQAQRs) _**for this task.**_
+_**Here is a link to the**_ [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) _**for this task.**_
 
 In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
