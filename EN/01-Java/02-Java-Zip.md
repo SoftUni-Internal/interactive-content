@@ -88,7 +88,7 @@ Encho - 99
 Mincho - 32
 Noncho - 123
 Oncho - 100
-Pesho - 321534790
+Pesho - 321534
 Suzi - 3213
 Zuzi - 32131
 ```
