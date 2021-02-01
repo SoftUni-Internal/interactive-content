@@ -3,7 +3,8 @@
 [slide hideTitle]
 
 # Task Requirements
-[Download resources here!](https://mega.nz/file/Oc4BTa5B#kopKiHP4-KPlYK7si4ecujloS1PxIhVJG_ULMZmhpKo)
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/04-Components-Workshop.zip) **for this task.**
 
 In the resources, you will find the skeleton **HTML** and **CSS**. 
 
