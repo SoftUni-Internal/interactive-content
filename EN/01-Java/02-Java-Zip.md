@@ -55,9 +55,9 @@ Stanislav 11
 [/input]
 [output]
 ```
+Lyubo - 44
 Nikolai - 33
 Yordan - 88
-Lyubo - 44
 ```
 [/output]
 [/test]
@@ -146,18 +146,18 @@ F 88
 [output]
 ```
 A - 31
-W - 45
 B - 76
 C - 87
 D - 453
 E - 645
-Z - 55
-K - 53
+F - 88
+H - 76
 I - 43
 J - 543
+K - 53
 P - 67
-H - 76
-F - 88
+W - 45
+Z - 55
 ```
 [/output]
 [/test]
@@ -182,8 +182,8 @@ Zoro 55
 [/input]
 [output]
 ```
-Astor - 45
 Asto - 31
+Astor - 45
 Borko - 76
 Ceco - 87
 Dido - 453
@@ -206,10 +206,10 @@ Annie 31
 [/input]
 [output]
 ```
-Ann - 31
-Anntoanette - 39
 An - 33
+Ann - 31
 Annie - 31
+Anntoanette - 39
 ```
 [/output]
 [/test]
