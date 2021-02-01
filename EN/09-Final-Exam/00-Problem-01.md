@@ -15,20 +15,39 @@ Write a program that calculates how much money Annie will have to **save** to pa
 
 - A **liter of detergent**: $1.20 
 
-# Input
-Four numbers are read from the console:
+## Input
 
-- Count pencil packages. Integer in the interval \[0 ... 100\]
+The input comes as an **array of numbers**:
 
-- Count marker packages. Integer in the interval \[0 ... 100\]
+- **First Number:** 
 
-- Liters of detergent for cleaning the board. Real number in the interval \[0.00… 50.00\]
+Count pencil packages. 
 
-- The percentage discount. Integer in the interval \[0 ... 100\]
+Integer in the interval \[0 ... 100\]
 
-# Output
+- **Second Number:**
 
-Print on the console how much money Annie will need to pay her bill. The result should be **formatted** to the third decimal place.
+Count marker packages. 
+
+Integer in the interval \[0 ... 100\]
+
+- **Third Number:**
+
+Liters of detergent for cleaning the board. 
+
+Real number in the interval \[0.00… 50.00\]
+
+- **Fourth Number:**
+
+The percentage discount. 
+
+Integer in the interval \[0 ... 100\]
+
+## Output
+
+Print on the console how much money Annie will need to pay her bill. 
+
+The result should be **formatted** to the third decimal place.
 
 [code-task title="Study materials" taskId="js-pb-final-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -38,13 +57,18 @@ function solve(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 
 # Example
 
 | **Input** | **Output** |
 | --- | --- |
-|`["2", "3", "2.5", "25"]` | 27.150 |
+|`[2, 3, 2.5, 25]` | 27.150 |
 
 # Comments
 
@@ -57,17 +81,43 @@ function solve(input) {
 - **Total price:** `11.60 + 21.60 + 3.00 = 36.20`
 
 - **Price with discount:** `36.20 – ((36.20 * 25) / 100) = 27.150`
-
-# More Examples
-
-| **Input** | **Output** |
-| --- | --- |
-|`["4", "2", "5", "13"]` | 37.932 |
-|`["7, "8", "0.5", "45"]` | 54.340 |
  
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+2
+3
+2.5
+25
+[/input]
+[output]
+27.150
+[/output]
+[/test]
+[test open]
+[input]
+4
+2
+5
+13
+[/input]
+[output]
+37.932
+[/output]
+[/test]
+[test open]
+[input]
+7
+8
+0.5
+45
+[/input]
+[output]
+54.340
+[/output]
+[/test]
 [test]
 [input]
 1
