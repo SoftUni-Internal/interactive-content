@@ -3,7 +3,8 @@
 [slide hideTitle]
 
 # Task Requirements
-[Download resources here!](https://mega.nz/file/Sc532CZD#_xp-APUjJZCaLc--5pm8cuFspbfakoPp86-NLzGwqVw)
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/06-Modules-And-Routing-Workshop.zip) **for this task.**
 
 We have created one dynamic page which lists all the themes sorted by two different criteria. 
 
