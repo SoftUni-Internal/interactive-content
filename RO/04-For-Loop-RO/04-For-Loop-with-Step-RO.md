@@ -21,7 +21,7 @@ for (let i = 0; i < 10; i++) {
 
 Dacă dorim ca pasul nostru să fie **diferit de 1**, atunci când **incrementăm**, folosim `i +=` + operaorul pentru dimensiunea pasului.
 
- Cu un pas de 2, bucla ar arăta astfel:
+Cu un pas de 2, bucla ar arăta astfel:
 
 ```js live
 for (let i = 0; i < 10; i += 2) {
@@ -51,7 +51,7 @@ for (let i = 10; i >= 1; i--) {
 [/video-vimeo]
 
 
-[code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Ending with 7" taskId="pb-js-for-loop-lab-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersEndingWith7 (input) {
@@ -153,7 +153,7 @@ Scrieți un program care:
 [stream language="RO" videoId="487119503/367fcdcc3d"  /]
 [/video-vimeo]
 
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Exam Countdown" taskId="pb-js-for-loop-lab-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function examCountdown (days) {

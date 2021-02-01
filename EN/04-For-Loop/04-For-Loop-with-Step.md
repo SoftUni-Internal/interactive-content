@@ -52,7 +52,7 @@ for (let i = 10; i >= 1; i--) {
 [/video-vimeo]
 
 
-[code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Ending with 7" taskId="pb-js-for-loop-lab-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersEndingWith7 (input) {
@@ -154,7 +154,7 @@ Write a program, which:
 [stream language="RO" videoId="487119503/367fcdcc3d"  /]
 [/video-vimeo]
 
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Exam Countdown" taskId="pb-js-for-loop-lab-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function examCountdown (days) {
