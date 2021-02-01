@@ -7,6 +7,8 @@
 ## Description
 Test the Java-Unit-Tests with that task
 
+[Solution100-100](https://videos.softuni.org/resources/Strategies-Solution/Java-Unit-Tests-100-100.zip)
+
 ## Examples
 Test the Java-Unit-Tests with that task
 
