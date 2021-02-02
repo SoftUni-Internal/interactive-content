@@ -205,7 +205,7 @@ yes
 
 # Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/bBZVmQDY#HtUoXzWAc5EG0evnj_87seQcAOYIvbw-1sz9S719oMA).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Asynchronous-Programming-Homework-02.Fisher-Game.zip) **for this task.**
 
 
 - **angler**: **string** representing the name of the person who caught the fish
