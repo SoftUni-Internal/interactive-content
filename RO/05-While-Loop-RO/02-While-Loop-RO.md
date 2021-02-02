@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Bucla While
 
 [vimeo-video]
@@ -20,7 +20,7 @@ while (condition) {
 }
 ```
 
-În exemplul de cod de mai sus, condiția este orice **expresie care returnează un rezultat de tip boolean** – `true` sau `false`. 
+În exemplul de cod de mai sus, condiția este orice **expresie care returnează un rezultat de tip boolean** - `true` sau `false`. 
 
 Aceasta determină de câte ori se va repeta conținutul buclei și se numește `condiția de repetiție`. 
 
@@ -34,7 +34,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Decreasing Numbers
 
 [vimeo-video]
@@ -43,7 +43,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [/video-vimeo]
 
 
-[code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Decreasing Numbers" taskId="pb-js-while-loop-lab-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
@@ -86,7 +86,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Decreasing Numbers
 
 [vimeo-video]
@@ -142,7 +142,7 @@ Scrieți un program care:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problemă: Sequence 2k + 1
 
 [vimeo-video]
@@ -151,8 +151,7 @@ Scrieți un program care:
 [/video-vimeo]
 
 
-
-[code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-lab-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersInRange (input) {
@@ -183,7 +182,7 @@ Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7,
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Sequence 2k + 1
 
 [vimeo-video]
