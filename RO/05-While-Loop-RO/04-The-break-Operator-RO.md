@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Operatorul Break
 
 [vimeo-video]
@@ -16,7 +16,7 @@ Dacă folosiți bucle imbricate, enunțul acesta va opri executarea buclei celei
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 
 # Exemplu de funcționare a lui Break

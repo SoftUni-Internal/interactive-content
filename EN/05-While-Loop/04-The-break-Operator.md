@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # The break Statement
 
 [vimeo-video]
@@ -16,7 +16,7 @@ If you are using nested loops, this statement will stop the execution of the inn
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 
 # Break Function Example
@@ -37,5 +37,6 @@ while (true) {
   }
 }
 ```
+
 When it comes to using infinite loops intentionally, `break` will terminate the loop when a given condition is met.
 [/slide]
