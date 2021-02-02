@@ -1,6 +1,6 @@
-﻿[slide]
-# Problem 03
-[code-task title="Problem-03" taskId="pb-java-march-exam-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+﻿[slide hideTitle]
+# Coffee Machine
+[code-task title="Coffee Machine" taskId="pb-java-march-exam-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
