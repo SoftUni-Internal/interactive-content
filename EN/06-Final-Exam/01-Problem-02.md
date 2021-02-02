@@ -7,7 +7,7 @@ On the first line of the input you will be given a **text string**, containing t
 
 You must **extract the information about each one** and calculate its total calories.
 
-First you must **extract the food info.** 
+First, you must **extract the food info.** 
 
 It will always follow the **same pattern** rules:
 
@@ -19,7 +19,7 @@ It will always follow the **same pattern** rules:
 
 * The item name may contain only **lowercase**, **uppercase** **letters**, and **spaces.**
 
-* The expiration date will always follow the pattern: `{day}/{month}/{year}`, **the day, month and year will consist of two digits**
+* The expiration date will always follow the pattern: `{day}/{month}/{year}`, **the day, month, and year will consist of two digits**
 
 * The calories will be an **integer in the range: 0-10000**
 
@@ -31,7 +31,7 @@ Calculate **the total calories of all food items** from the string and then dete
 
 ## Output
 
-- On the first output line, print the number of days that this supply of food would last, before you have to go to the store for more:
+- On the first output line, print the number of days that this supply of food would last before you have to go to the store for more:
 
 `You have enough food for {days} days!`
 
