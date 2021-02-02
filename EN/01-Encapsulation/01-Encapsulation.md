@@ -21,12 +21,11 @@ class Person {
   public int getAge()
   public void setAge(int age)
 }
-
+```
 [/slide]
 
 [slide hideTitle]
 
-```
 # Encapsulation Example
 
 Fields should be **private** (-)

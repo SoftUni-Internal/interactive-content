@@ -4431,9 +4431,3 @@ Team Angliq does not exist.
 [/tests]
 [/code-task]
 [/slide]
-
-[slide hideTitle]
-# Homework Results
-[tasks-results/]
-
-[/slide]
