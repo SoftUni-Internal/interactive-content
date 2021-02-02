@@ -1,16 +1,5 @@
 [slide hideTitle]
 # Iterația peste caractere
-Este bine de știut că **buclele for** nu funcționează doar cu numere.
-
-De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
-
-Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
-
-```java live
-for (char ch = 'a'; ch <= 'd'; ch++) {
-  System.out.print(ch + " ");
-}
-```
 
 # ASCII Table
 Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum 'a' sau '@' sau o acțiune de un fel.
@@ -25,6 +14,18 @@ Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt c
 
 De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare **'@'** este **64**.
 
+# Iterația peste caractere
+Este bine de știut că **buclele for** nu funcționează doar cu numere.
+
+De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
+
+Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
+
+```java live
+for (char ch = 'a'; ch <= 'd'; ch++) {
+  System.out.print(ch + " ");
+}
+```
 
 [/slide]
 

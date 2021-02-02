@@ -1,5 +1,10 @@
 [slide hideTitle]
 # For Loop
+
+interactive-programming-basics-with-java-for-loops-12-13-for-loop-example + 
+
+interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-demo
+
 In programming it is often required to perform a block of commands multiple times. 
 
 In order to do that, the so-called **loops** are used. 
@@ -16,8 +21,13 @@ The block of code can be explained with this use case diagram:
 [image assetsSrc="04-for-loop-use-case.png" /]
 
 The loop starts with the `for` operator and passes through all values for a particular variable in a given range, for example the numbers from 1 to 10 (included), and for each value it performs a series of commands.
+[/slide]
 
+[slide hideTitle]
 # Syntax: For-Loop
+
+interactive-programming-basics-with-java-for-loops-14-for-loop
+
 Upon declaring the loop, you can specify a **start value** and an **end value**. 
 
 The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**. 
@@ -47,6 +57,9 @@ The loop repeats 10 times and each of these repetitions is called an **"iteratio
 
 [slide hideTitle]
 # Problem: Print Sum of N Numbers
+
+interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers
+
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -114,6 +127,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Print Sum of N Numbers
+
+interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers-solution
+
 [code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -179,95 +195,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" taskId="java-basics-for-loop-calculate-month-salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads n - the number of working days in the current month. 
-* On the next n lines reads an integer - the salary for each particular day.
-* **Calculates** the salary for the month.
-* **Prints** the result on the console.
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| 2 | 300 |
-| 100 |  |
-| 200 |  |
-[/task-description]
-[tests]
-[test]
-[input]
-2
-100
-300
-[/input]
-[output]
-400
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Calculate Month Salary
-[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads n - the number of working days in the current month. 
-* On the next n lines reads an integer - the salary for each particular day.
-* **Calculates** the salary for the month.
-* **Prints** the result on the console.
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| 2 | 300 |
-| 100 |  |
-| 200 |  |
-[/task-description]
-[tests]
-[test]
-[input]
-2
-100
-300
-[/input]
-[output]
-400
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

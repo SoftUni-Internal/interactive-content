@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+interactive-programming-basics-with-java-for-loops-54-summary
+
 ## In this lesson we learned: 
 
 - For loops

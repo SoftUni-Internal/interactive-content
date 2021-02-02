@@ -1,5 +1,10 @@
-[slide hideTitle]
+  [slide hideTitle]
 # For Loop with Step
+
+interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-a-step + 
+
+interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-demo
+
 In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
 
 **The step** is that **part** of the `for` loop construction that tells **how** much to **increase** or **decrease** the value of its **leading** variable. 
@@ -36,6 +41,9 @@ for (int i = 10; i >= 1; i--) {
 
 [slide hideTitle]
 # Problem: Numbers Ending with 7 
+
+interactive-programming-basics-with-java-for-loops-21-problem-numbers-ending-with-seven
+
 [code-task title="Numbers Ending with 7" taskId="java-basics-for-loop-numbers-ending-with-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -82,6 +90,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Numbers Ending with 7 
+
+interactive-programming-basics-with-java-for-loops-21-problem-numbers-ending-with-seven-solution
+
 [code-task title="Numbers Ending with 7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -128,6 +139,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Problem: Exam Countdown
+
+interactive-programming-basics-with-java-for-loops-23-problem-exam-countdown
+
 [code-task title="Exam Countdown" taskId="java-basics-for-loop-exam-countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -177,6 +191,9 @@ The exam has come
 
 [slide hideTitle]
 # Solution: Exam Countdown
+
+interactive-programming-basics-with-java-for-loops-23-problem-exam-countdown-solution
+
 [code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

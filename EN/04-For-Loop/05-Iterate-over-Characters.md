@@ -1,17 +1,14 @@
+
 [slide hideTitle]
+
 # Iterating over Characters
-It is good to know that the **for loops** don't only work with numbers. 
 
-We can also use **for loops** to iterate over **characters**.
+interactive-programming-basics-with-java-for-loops-25-26-the-ascii-table + 
 
-Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
-```java live
-for (char ch = 'a'; ch <= 'd'; ch++) {
-  System.out.print(ch + " ");
-}
-```
+interactive-programming-basics-with-java-for-loops-27-the-ascii-table
 
 # ASCII Table
+
 **ASCII** stands for American Standard Code for Information Interchange. 
  
 Computers can only understand numbers, so an **ASCII** code is the numerical representation of a character such as 'a' or '@' or an action of some sort. 
@@ -25,10 +22,28 @@ And here you can check the whole **ASCII Table**: **http://www.asciitable.com**
 The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
 
 For example, the decimal value of the character **'a'** is **97** and the one corresponding to **'@'** is **64**.
+
+# Iterating over Characters
+
+interactive-programming-basics-with-java-for-loops-27-the-ascii-table
+
+It is good to know that the **for loops** don't only work with numbers. 
+
+We can also use **for loops** to iterate over **characters**.
+
+Here is an example of how a loop can pass sequentially through some **letters** in the English alphabet:
+```java live
+for (char ch = 'a'; ch <= 'd'; ch++) {
+  System.out.print(ch + " ");
+}
+```
 [/slide]
 
 [slide hideTitle]
 # Problem: Latin Letters
+
+interactive-programming-basics-with-java-for-loops-28-problem-latin-letters
+
 [code-task title="Latin Letters" taskId="java-basics-for-loop-numbers-latin-letters" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -81,6 +96,9 @@ f g h i j k l
 
 [slide]
 # Solution: Latin Letters
+
+interactive-programming-basics-with-java-for-loops-28-problem-latin-letters-solution
+
 [code-task title="Latin Letters" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

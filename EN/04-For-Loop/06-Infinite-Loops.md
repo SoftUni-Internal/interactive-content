@@ -1,5 +1,12 @@
 [slide hideTitle]
 # Infinite Loops
+
+interactive-programming-basics-with-java-for-loops-30-31-infinite-loops + 
+
+interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming + 
+
+interactive-programming-basics-with-java-for-loops-30-31-infinite-loops-demo
+
 So far, we were introduced to `for` loop, learning what structure it has and how it is applied. 
 
 Now, we need to understand what an **infinite loop** is and when it occurs.

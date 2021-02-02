@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Real-Life Example: Moving Dishes
+
+interactive-programming-basics-with-java-for-loops-10-11-for-loop-and-for-loop-example-dishes
+
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
 
 [image assetsSrc="04.For-Loop-Real-Life-Example-Dishes.png" /]

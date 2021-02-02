@@ -16,7 +16,9 @@ Blocul de cod poate fi explicat cu această diagramă de caz de utilizare:
 [image assetsSrc="04-for-loop-use-case.png" /]
 
 Bucla începe cu operatorul `for` și trece prin toate valorile pentru o anumită variabilă dintr-un interval dat, de exemplu numerele de la 1 la 10 (incluse) și pentru fiecare valoare efectuează o serie de comenzi.
+[/slide]
 
+[slide hideTitle]
 # Sintaxă: For-Loop
 La declararea buclei, puteți specifica o **valoare inițială** și o **valoare finală**.
 
@@ -178,95 +180,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Problem: Calculate Month Salary
-[code-task title="Calculate Month Salary" taskId="java-basics-for-loop-calculate-month-salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-* Citește n - numărul de zile lucrătoare din luna curentă.
-* În următoarele n linii citește un număr întreg - salariul pentru fiecare zi aparte.
-* **Calculează** salariul lunar.
-* **Tipărește** rezultatul pe consolă.
-
-## Exemplu
-| **Intrare** | **Ieșire** |
-| --- | --- |
-| 2 | 300 |
-| 100 |  |
-| 200 |  |
-[/task-description]
-[tests]
-[test]
-[input]
-2
-100
-300
-[/input]
-[output]
-400
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Calculate Month Salary
-[code-task title="Calculate Month Salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-* Citește n - numărul de zile lucrătoare din luna curentă.
-* În următoarele n linii citește un număr întreg - salariul pentru fiecare zi aparte.
-* **Calculează** salariul lunar.
-* **Tipărește** rezultatul pe consolă.
-
-## Exemplu
-| **Intrare** | **Ieșire** |
-| --- | --- |
-| 2 | 300 |
-| 100 |  |
-| 200 |  |
-[/task-description]
-[tests]
-[test]
-[input]
-2
-100
-300
-[/input]
-[output]
-400
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

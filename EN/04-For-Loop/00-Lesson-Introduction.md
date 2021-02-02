@@ -3,6 +3,8 @@
 
 # Lesson Content
 
+interactive-programming-basics-with-java-for-loops-1-2-introduction-and-table-of-contents
+
 ## In this lesson you will learn:
 
 **1. Increment and Decrement operators**
