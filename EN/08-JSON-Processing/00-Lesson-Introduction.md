@@ -8,8 +8,6 @@
 
 **JSON**
 
-test 1235
-
 - What the JSON format is.
 
 - How to transfer data as JSON.
