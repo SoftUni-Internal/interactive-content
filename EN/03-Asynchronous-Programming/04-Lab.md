@@ -14,7 +14,7 @@
 
 # Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/qIRBRaDR#mJQb9tyUP9oPhRFlTzA1MDNvXI_T8EB1iF064WCIJpo).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Asynchronous-Programming-Lab-Resources.zip) **for this task.**
 
 Write a program for reading blog content.
 
