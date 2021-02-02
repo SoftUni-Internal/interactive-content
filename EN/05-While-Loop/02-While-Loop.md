@@ -50,6 +50,11 @@ function decreasingNumbers (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {code(Number(input[0]))}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
