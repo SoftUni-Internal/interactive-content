@@ -7,15 +7,33 @@
 [/video-vimeo]
 
 
-În cadrul acestei lecții ați învățat că:
+## În cadrul acestei lecții ați învățat că:
 - Bucla **While** execută un bloc de cod de mai **multe** ori
    - Cât timp  condiția din buclă este adevărată
-
+```js
+while (condition) {
+  loop body;
+}
+```
 - Utilizăm bucla **for** atunci când cunoaștem de la început numărul de repetiții, iar bucla **while** în restul cazurilor
 - Buclele **While** pot fi **infinite**
-     - Folosim operatorul **break** pentru a ieși dintr-o buclă, la îndeplinirea unei anumite condiții
+```js
+while (true) {
+  // Commands
+}
+```
+     
+   - Folosim operatorul **break** pentru a ieși dintr-o buclă, la îndeplinirea unei anumite condiții
 
-În lecția următoare veți învăța despre:
+```js
+while (true) {
+  if (number % 2 === 0) {
+    break;
+  }
+}
+```
+
+## În lecția următoare veți învăța despre:
 
 - Buclele **imbricate**
 

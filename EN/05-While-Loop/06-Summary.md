@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -33,7 +33,8 @@ while (true) {
   }
 }
 ```
-In the next lesson you will learn:
+
+## In the next lesson you will learn:
 
 - **Nested** Loops
 
