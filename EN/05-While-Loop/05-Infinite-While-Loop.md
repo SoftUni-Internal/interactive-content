@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Infinite While Loop
 
 [vimeo-video]
@@ -19,7 +19,7 @@ while (true) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Example: Infinite While Loop (Bug)
 

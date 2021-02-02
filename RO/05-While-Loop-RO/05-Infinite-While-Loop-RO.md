@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Bucla infinită While
 
 [vimeo-video]
@@ -19,7 +19,7 @@ while (true) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Exemplu: Bucla infinită While (Bug)
 
