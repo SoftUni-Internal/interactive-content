@@ -142,6 +142,8 @@ public void multiplyingWordsShouldThrow() {
 
 # Problem: Test Axe
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **for this task.**
+
 [/slide]
 
 [slide hideTitle]
