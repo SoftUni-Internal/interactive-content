@@ -13,7 +13,11 @@ function calculateMonthSalary (days, salaryPerDay) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(Number(input.unshift()), input);
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
 ```
 [/code-adapter]
 [task-description]
