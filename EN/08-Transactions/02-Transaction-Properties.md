@@ -56,11 +56,9 @@ Even if there is a system failure our **recovery-management component** of datab
 
 # Problem: Employee Promotion by ID
 
-**Use soft_uni database**
-
-[Download Link](https://mega.nz/file/PIJXWaRZ#s4x7gN5hOng6QXNw60Ku2COWk__M8X4zWFa5GtDYpjY)
-
 ## Description:
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/07.MySQL-Database-Programmability-Lab-Resource.zip) **for this task.**
 
 Write a **transaction** that **raises** an employee's salary by **id** only **if the employee exists in the database.**
 
