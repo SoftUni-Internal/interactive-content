@@ -18,7 +18,7 @@ function busStop(){
 
 ## Description
 
-You can download the resources for this problem from [here](https://videos.softuni.org/resources/javascript/javascript-applications/03-JS-Applications-REST-Services-and-AJAX-Homework.zip).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for this task.**
 
 Write a JS program that displays arrival times for all buses by a given bus stop ID when a button is clicked.
 
@@ -233,7 +233,7 @@ function busSchedule(){
 
 ## Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/SdhmGQBR#XXw-a1o4YZseJGGUr2ivu7_98h-g66VJyFNi7upstTQ).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-02.BUS-SCHEDULE.zip) **for this task.**
 
 Write a JS program that tracks the progress of a bus on its route and announces it inside an infobox.
 
@@ -432,7 +432,7 @@ function messenger(){
 
 ## Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/fdBHmQ7b#Z730DTvjcuaVb5pMNiAWTJshx7beI__eApUCiqg9hoA).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-03.MESSENGER.zip) **for this task.**
 
 Write a JS program that records and displays messages.
 
@@ -555,7 +555,7 @@ function phoneBook(){
 
 ## Description
 
-You can download the resources for this problem from [here](https://mega.nz/file/XMJDXQjL#VSvQJ_4MOas82BnYrF3X2dt356VbrT9jrEiD7kNgJvI).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-04.PHONEBOOK.zip) **for this task.**
 
 Write a JS program that can load, create and delete entries from a PhoneBook.
 
