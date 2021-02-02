@@ -96,6 +96,15 @@ function numberSequence (n, numbers) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -107,12 +116,8 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|5| Max number: 304 |
-|10|Min number: 0|
-|304||
-|0| |
-|0| |
-|50| |
+|`5, ['10', '304', '0', '0', '50']`| Max number: 304 |
+||Min number: 0|
 
 [/task-description]
 [tests]
