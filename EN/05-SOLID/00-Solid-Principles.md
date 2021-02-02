@@ -1,8 +1,10 @@
 # SOLID Principles
 
-[slide]
+[slide hideTitle]
 
 # SOLID Principles Overview
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/05.Java-OOP-Advanced-S.O.L.I.D-Lab-Skeleton.zip) **for this lesson.**
 
 In Java, classes are the **building blocks** of any application. 
 
