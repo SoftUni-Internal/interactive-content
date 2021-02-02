@@ -37,7 +37,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Download resources [here](https://mega.nz/file/6cQTBSqA#tfQolRssrMqXK005D3dFmQ7uixDA6ij31vcp5FDcqgY).
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Camp-Db-Lab.zip) **for this task.**
 
 Write a query to retrieve information about SoftUni camp's transportation organization. 
 
