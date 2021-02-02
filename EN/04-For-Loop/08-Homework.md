@@ -276,9 +276,7 @@ function equalPairs(n, numbers) {
 [/code-editor]
 [code-adapter]
 ```
-```
 (input, code) => code(Number(input.unshift()), input);
-```
 ```
 [/code-adapter]
 [task-description]
@@ -293,7 +291,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`2, ['-1', '0', '0', '-1']`| Yes, value=\-1 |
+|`2, ['2', '-1', '0', '0', '-1']`| Yes, value=\-1 |
 
 
 [/task-description]
