@@ -15,7 +15,7 @@ public class Main {
 [task-description]
 # Task 3: Unit Testing (100 Points)
 
-Download the skeleton from here [mega.nz](https://mega.nz/file/2BwikYCL#1mBhMzd6XeSo-RVEULyleUogP7CjlwsLZ9Tu1llpgzk)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Unit-Testing.zip) **for this task.**
 
 You will receive a skeleton with one class inside. 
 
