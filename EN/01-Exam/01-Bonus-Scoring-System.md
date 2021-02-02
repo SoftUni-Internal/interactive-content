@@ -1,6 +1,6 @@
-[slide]
-# Problem 1. Bonus Scoring System
-[code-task title="Problem 1. Bonus Scoring System" taskId="fd255115-00ef-4481-a5ae-19df12bdd3db" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Bonus Scoring System
+[code-task title="Problem 1. Bonus Scoring System" taskId="Java-Fundamentals-Part-1-Exam-Bonus-Scoring-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

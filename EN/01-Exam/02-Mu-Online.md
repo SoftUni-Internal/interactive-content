@@ -1,6 +1,6 @@
-[slide]
-# Problem 2. Mu Online
-[code-task title="Problem 2. Mu Online" taskId="21e09168-9697-44e1-bf1c-b912db629dbd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Mu Online
+[code-task title="Problem 2. Mu Online" taskId="Java-Fundamentals-Part-1-Mu-Online" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

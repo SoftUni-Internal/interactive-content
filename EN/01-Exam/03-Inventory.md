@@ -1,6 +1,6 @@
-[slide]
-# Problem 3. Inventory
-[code-task title="Problem 3. Inventory" taskId="b0c26cae-6fca-4aaa-918f-73367041a0de" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Inventory
+[code-task title="Problem 3. Inventory" taskId="Java-Fundamentals-Part-1-Inventory" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
