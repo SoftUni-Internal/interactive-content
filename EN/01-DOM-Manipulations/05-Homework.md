@@ -1,39 +1,37 @@
 # Homework
 
-[slide]
-
-# Resources
-
-Download the resources from here - [Mega.nz](https://mega.nz/file/XERQhZwI#wnASP3-JQhOAxXzwTgD5xxLKlXhoGMGjfQ26kTTfaVM)
-
-[/slide]
-
 [slide hideTitle]
+
 # Problem: Sections
+
 [code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```js
-function solve(input){
-    // Write your code here
+function solve(input) {
+  // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Sections.zip) **for this task.**
 
-You will receive an **array** of strings. 
+You will receive an **array** of strings.
 
-For each string, create a **div** with a **paragraph** with the string in it. 
+For each string, create a **div** with a **paragraph** with the string in it.
 
-Each paragraph is initially **hidden** having the display attribute to `display:none`. 
+Each paragraph is initially **hidden** having the display attribute to `display:none`.
 
-Add a **click event listener** to each **div** that displays the hidden paragraph. 
+Add a **click event listener** to each **div** that displays the hidden paragraph.
 
 Finally, you should **append** all divs to the element with an **id** **content**.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(5).png" /]
 
@@ -58,7 +56,7 @@ let sections = container.children;
 expect(sections.length).to.equal(5, "Number of sections inside container is incorrect.");
 
 for (let i = 0; i \< sections.length; i++) \{
-    expect(sections\[i\].textContent).to.contains(sentences\[i\], 'Section text is incorrect.');
+expect(sections\[i\].textContent).to.contains(sentences\[i\], 'Section text is incorrect.');
 \}
 [/input]
 [output]
@@ -79,9 +77,9 @@ let sections = container.children;
 expect(sections.length).to.equal(4, "Number of sections inside container is incorrect.");
 
 for (let i = 0; i \< sections.length; i++) \{
-    let para = sections\[i\].firstChild;
-    expect(para.tagName.toLowerCase()).to.equal('p', "Text must be placed inside \<p\>.");
-    expect(para.textContent).to.contains('Section ' + (i + 1), 'Section text is incorrect.');
+let para = sections\[i\].firstChild;
+expect(para.tagName.toLowerCase()).to.equal('p', "Text must be placed inside \<p\>.");
+expect(para.textContent).to.contains('Section ' + (i + 1), 'Section text is incorrect.');
 \}
 [/input]
 [output]
@@ -106,10 +104,10 @@ let sections = container.children;
 expect(sections.length).to.equal(3, "Sections not found inside container.");
 
 for (let i = 0; i \< sections.length; i++) \{
-    let para = sections\[i\].firstChild;
-    expect(para.style.display).to.equal('none', "Initial paragraph state must be hidden.");
-    sections\[i\].dispatchEvent(clickEvent);
-    expect(para.style.display).to.not.equal('none', "Paragraph must be revealed on click.");
+let para = sections\[i\].firstChild;
+expect(para.style.display).to.equal('none', "Initial paragraph state must be hidden.");
+sections\[i\].dispatchEvent(clickEvent);
+expect(para.style.display).to.not.equal('none', "Paragraph must be revealed on click.");
 \}
 [/input]
 [output]
@@ -122,29 +120,35 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Notification
+
 [code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Notification.zip) **for this task.**
 
-Write a **function** that receives a string **message** and **displays** it inside a div with an **id notification** for 2 seconds. 
+Write a **function** that receives a string **message** and **displays** it inside a div with an **id notification** for 2 seconds.
 
-The div is initially **hidden** and when the function is called, it must be shown. 
+The div is initially **hidden** and when the function is called, it must be shown.
 
-After 2 seconds, **hide** the div. 
+After 2 seconds, **hide** the div.
 
 In the example below, a notification is shown when you click the button.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(7).png" /]
 
@@ -157,27 +161,27 @@ In the example below, a notification is shown when you click the button.
 [test]
 [input]
 document.body.innerHTML = \`
- \<div id="container"\>
-        \<header class="header"\>
-            \<h1\>Welcome to our site\</h1\>
-        \</header\>
-        \<div id="content"\>
-            \<article class="post"\>
-                \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.\</p\>
-                \<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.\</p\>
-            \</article\>
-            \<button\>Get notified\</button\>
-        \</div\>
-        \<div id="notification"\>\</div\>
-    \</div\>
+\<div id="container"\>
+\<header class="header"\>
+\<h1\>Welcome to our site\</h1\>
+\</header\>
+\<div id="content"\>
+\<article class="post"\>
+\<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip
+ex ea commodo consequat.\</p\>
+\<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est
+laborum.\</p\>
+\</article\>
+\<button\>Get notified\</button\>
+\</div\>
+\<div id="notification"\>\</div\>
+\</div\>
 \`;
 
 result('Something happened!');
@@ -193,27 +197,27 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
- \<div id="container"\>
-        \<header class="header"\>
-            \<h1\>Welcome to our site\</h1\>
-        \</header\>
-        \<div id="content"\>
-            \<article class="post"\>
-                \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.\</p\>
-                \<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.\</p\>
-            \</article\>
-            \<button\>Get notified\</button\>
-        \</div\>
-        \<div id="notification"\>\</div\>
-    \</div\>
+\<div id="container"\>
+\<header class="header"\>
+\<h1\>Welcome to our site\</h1\>
+\</header\>
+\<div id="content"\>
+\<article class="post"\>
+\<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip
+ex ea commodo consequat.\</p\>
+\<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est
+laborum.\</p\>
+\</article\>
+\<button\>Get notified\</button\>
+\</div\>
+\<div id="notification"\>\</div\>
+\</div\>
 \`;
 
 result('Boop!');
@@ -228,27 +232,27 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
- \<div id="container"\>
-        \<header class="header"\>
-            \<h1\>Welcome to our site\</h1\>
-        \</header\>
-        \<div id="content"\>
-            \<article class="post"\>
-                \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.\</p\>
-                \<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.\</p\>
-            \</article\>
-            \<button\>Get notified\</button\>
-        \</div\>
-        \<div id="notification"\>\</div\>
-    \</div\>
+\<div id="container"\>
+\<header class="header"\>
+\<h1\>Welcome to our site\</h1\>
+\</header\>
+\<div id="content"\>
+\<article class="post"\>
+\<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip
+ex ea commodo consequat.\</p\>
+\<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est
+laborum.\</p\>
+\</article\>
+\<button\>Get notified\</button\>
+\</div\>
+\<div id="notification"\>\</div\>
+\</div\>
 \`;
 
 // Stub timers
@@ -277,27 +281,27 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
- \<div id="container"\>
-        \<header class="header"\>
-            \<h1\>Welcome to our site\</h1\>
-        \</header\>
-        \<div id="content"\>
-            \<article class="post"\>
-                \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.\</p\>
-                \<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.\</p\>
-            \</article\>
-            \<button\>Get notified\</button\>
-        \</div\>
-        \<div id="notification"\>\</div\>
-    \</div\>
+\<div id="container"\>
+\<header class="header"\>
+\<h1\>Welcome to our site\</h1\>
+\</header\>
+\<div id="content"\>
+\<article class="post"\>
+\<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip
+ex ea commodo consequat.\</p\>
+\<p\>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+est
+laborum.\</p\>
+\</article\>
+\<button\>Get notified\</button\>
+\</div\>
+\<div id="notification"\>\</div\>
+\</div\>
 \`;
 
 // Stub timers
@@ -330,31 +334,37 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Time Converter
+
 [code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-Time-Converter.zip) **for this task.**
 
-Create a program that **converts** different time units. 
+Create a program that **converts** different time units.
 
-Your task is to add a **click** event listener to all \`CONVERT\` buttons. 
+Your task is to add a **click** event listener to all \`CONVERT\` buttons.
 
 When a button is **clicked**, read the **corresponding** input field and **display** the rest of the values inside the other three inputs.
 
-One day is equal to 24 hours, 1440 minutes, 86400 seconds. 
+One day is equal to 24 hours, 1440 minutes, 86400 seconds.
 
-Whichever button we click, the input fields should change depending on the added value on the left. 
+Whichever button we click, the input fields should change depending on the added value on the left.
 
 For example, if we type in 48 hours and click convert the days, the field value should change to 2.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(9).png" /]
 
@@ -367,29 +377,29 @@ For example, if we type in 48 hours and click convert the days, the field value 
 [test]
 [input]
 document.body.innerHTML = \`
-    \<main\>
-        \<h1\>Time Converter\</h1\>
-        \<div\>
-            \<label for="days"\>Days: \</label\>
-            \<input type="text" id="days"\>
-            \<input id="daysBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="hours"\>Hours: \</label\>
-            \<input type="text" id="hours"\>
-            \<input id="hoursBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="minutes"\>Minutes: \</label\>
-            \<input type="text" id="minutes"\>
-            \<input id="minutesBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="seconds"\>Seconds: \</label\>
-            \<input type="text" id="seconds"\>
-            \<input id="secondsBtn" type="button" value="Convert"\>
-        \</div\>
-    \</main\>
+\<main\>
+\<h1\>Time Converter\</h1\>
+\<div\>
+\<label for="days"\>Days: \</label\>
+\<input type="text" id="days"\>
+\<input id="daysBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="hours"\>Hours: \</label\>
+\<input type="text" id="hours"\>
+\<input id="hoursBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="minutes"\>Minutes: \</label\>
+\<input type="text" id="minutes"\>
+\<input id="minutesBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="seconds"\>Seconds: \</label\>
+\<input type="text" id="seconds"\>
+\<input id="secondsBtn" type="button" value="Convert"\>
+\</div\>
+\</main\>
 \`;
 
 result();
@@ -406,29 +416,29 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
-    \<main\>
-        \<h1\>Time Converter\</h1\>
-        \<div\>
-            \<label for="days"\>Days: \</label\>
-            \<input type="text" id="days"\>
-            \<input id="daysBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="hours"\>Hours: \</label\>
-            \<input type="text" id="hours"\>
-            \<input id="hoursBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="minutes"\>Minutes: \</label\>
-            \<input type="text" id="minutes"\>
-            \<input id="minutesBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="seconds"\>Seconds: \</label\>
-            \<input type="text" id="seconds"\>
-            \<input id="secondsBtn" type="button" value="Convert"\>
-        \</div\>
-    \</main\>
+\<main\>
+\<h1\>Time Converter\</h1\>
+\<div\>
+\<label for="days"\>Days: \</label\>
+\<input type="text" id="days"\>
+\<input id="daysBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="hours"\>Hours: \</label\>
+\<input type="text" id="hours"\>
+\<input id="hoursBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="minutes"\>Minutes: \</label\>
+\<input type="text" id="minutes"\>
+\<input id="minutesBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="seconds"\>Seconds: \</label\>
+\<input type="text" id="seconds"\>
+\<input id="secondsBtn" type="button" value="Convert"\>
+\</div\>
+\</main\>
 \`;
 
 result();
@@ -445,29 +455,29 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
-    \<main\>
-        \<h1\>Time Converter\</h1\>
-        \<div\>
-            \<label for="days"\>Days: \</label\>
-            \<input type="text" id="days"\>
-            \<input id="daysBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="hours"\>Hours: \</label\>
-            \<input type="text" id="hours"\>
-            \<input id="hoursBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="minutes"\>Minutes: \</label\>
-            \<input type="text" id="minutes"\>
-            \<input id="minutesBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="seconds"\>Seconds: \</label\>
-            \<input type="text" id="seconds"\>
-            \<input id="secondsBtn" type="button" value="Convert"\>
-        \</div\>
-    \</main\>
+\<main\>
+\<h1\>Time Converter\</h1\>
+\<div\>
+\<label for="days"\>Days: \</label\>
+\<input type="text" id="days"\>
+\<input id="daysBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="hours"\>Hours: \</label\>
+\<input type="text" id="hours"\>
+\<input id="hoursBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="minutes"\>Minutes: \</label\>
+\<input type="text" id="minutes"\>
+\<input id="minutesBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="seconds"\>Seconds: \</label\>
+\<input type="text" id="seconds"\>
+\<input id="secondsBtn" type="button" value="Convert"\>
+\</div\>
+\</main\>
 \`;
 
 result();
@@ -484,29 +494,29 @@ yes
 [test]
 [input]
 document.body.innerHTML = \`
-    \<main\>
-        \<h1\>Time Converter\</h1\>
-        \<div\>
-            \<label for="days"\>Days: \</label\>
-            \<input type="text" id="days"\>
-            \<input id="daysBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="hours"\>Hours: \</label\>
-            \<input type="text" id="hours"\>
-            \<input id="hoursBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="minutes"\>Minutes: \</label\>
-            \<input type="text" id="minutes"\>
-            \<input id="minutesBtn" type="button" value="Convert"\>
-        \</div\>
-        \<div\>
-            \<label for="seconds"\>Seconds: \</label\>
-            \<input type="text" id="seconds"\>
-            \<input id="secondsBtn" type="button" value="Convert"\>
-        \</div\>
-    \</main\>
+\<main\>
+\<h1\>Time Converter\</h1\>
+\<div\>
+\<label for="days"\>Days: \</label\>
+\<input type="text" id="days"\>
+\<input id="daysBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="hours"\>Hours: \</label\>
+\<input type="text" id="hours"\>
+\<input id="hoursBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="minutes"\>Minutes: \</label\>
+\<input type="text" id="minutes"\>
+\<input id="minutesBtn" type="button" value="Convert"\>
+\</div\>
+\<div\>
+\<label for="seconds"\>Seconds: \</label\>
+\<input type="text" id="seconds"\>
+\<input id="secondsBtn" type="button" value="Convert"\>
+\</div\>
+\</main\>
 \`;
 
 result();
@@ -526,7 +536,9 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Locked Profile
+
 [code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 
@@ -534,8 +546,10 @@ yes
 
 
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
@@ -543,16 +557,17 @@ yes
 In this problem, you should **create a JS functonality** which **shows** and **hides** the additional information about users.
 
 When the `Show more` button is clicked, the **hiden information** inside the div should
-be shown, only if **the profile is not locked**! 
+be shown, only if **the profile is not locked**!
 
 If the current profile is **locked**, nothing should happen.
 
 If the hidden information is displayed and we lock the profile again, the `Hide it` button
-**should not be working**! 
+**should not be working**!
 
 Otherwise, when the profile is **unlocked** and we click on the `Hide it` button, the fields must hide again.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(11).png" /]
 
@@ -566,6 +581,7 @@ Otherwise, when the profile is **unlocked** and we click on the `Hide it` button
 [input]
 // click when locked, click when unlocked
 document.body.innerHTML = \`
+
 <div id="container">
 		<main id="main">
 			<div class="profile">
@@ -652,63 +668,63 @@ yes
 // click when unlocked, lock, click again
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -738,63 +754,63 @@ yes
 // value of button
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -815,63 +831,63 @@ yes
 // value of button after locking
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -894,63 +910,63 @@ yes
 // click when unlocked, lock, click again
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -980,63 +996,63 @@ yes
 // value of button
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1057,63 +1073,63 @@ yes
 // value of button after locking
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1136,63 +1152,63 @@ yes
 // click when unlocked, lock, click again
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1222,63 +1238,63 @@ yes
 // value of button
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1299,63 +1315,63 @@ yes
 // value of button after locking
 document.body.innerHTML = \`
 \<div id="container"\>
-		\<main id="main"\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user1Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
-				\<div id="user1HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user1Age" value="18" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user2Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
-				\<div id="user2HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user2Age" value="25" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-			\<div class="profile"\>
-				\<img src="./iconProfile2.png" class="userIcon" /\>
-				\<label\>Lock\</label\>
-				\<input type="radio" name="user3Locked" value="lock" checked\>
-				\<label\>Unlock\</label\>
-				\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
-				\<hr\>
-				\<label\>Username\</label\>
-				\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
-				\<div id="user3HiddenFields"\>
-					\<hr\>
-					\<label\>Email:\</label\>
-					\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
-					\<label\>Age:\</label\>
-					\<input type="email" name="user3Age" value="23" disabled readonly /\>
-				\</div\>
-				\<button\>Show more\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<main id="main"\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user1Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user1Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user1Username" value="User 1 Userov" disabled readonly /\>
+\<div id="user1HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user1Email" value="user1-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user1Age" value="18" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user2Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user2Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user2Username" value="User 2 Userov" disabled readonly /\>
+\<div id="user2HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user2Email" value="user2-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user2Age" value="25" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\<div class="profile"\>
+\<img src="./iconProfile2.png" class="userIcon" /\>
+\<label\>Lock\</label\>
+\<input type="radio" name="user3Locked" value="lock" checked\>
+\<label\>Unlock\</label\>
+\<input type="radio" name="user3Locked" value="unlock"\>\<br\>
+\<hr\>
+\<label\>Username\</label\>
+\<input type="text" name="user3Username" value="User 3 Userov" disabled readonly /\>
+\<div id="user3HiddenFields"\>
+\<hr\>
+\<label\>Email:\</label\>
+\<input type="email" name="user3Email" value="user3-userov@users.bg" disabled readonly /\>
+\<label\>Age:\</label\>
+\<input type="email" name="user3Age" value="23" disabled readonly /\>
+\</div\>
+\<button\>Show more\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1380,15 +1396,19 @@ yes
 [slide hideTitle]
 
 # Problem: Encode And Decode Messages
+
 [code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/05-Encode-and-Decode-Messages.zip) **for this task.**
@@ -1401,17 +1421,20 @@ The first one is to encode the given message and send it to the receiver.
 
 The second one is to decode the received message and display it.
 
-When the `Encode and send it` button is clicked, you should get the given message from the first textarea. 
+When the `Encode and send it` button is clicked, you should get the given message from the first textarea.
 
 When you get the current message, you should encode it as follows:
+
 - Change the ASCII CODE on every single character in that message by adding 1 to the current ASCII NUMBER, that represent the current character in that message.
 - Clear the sender textarea and append the encoded message to the receiver textarea.
 
 After that, when the `Decode and read it` button is clicked, you need to get the encoded message from the receiver textarea and do the opposite logic:
+
 - Subtract 1 from the current ASCII NUMBER, that represents the current character in that message.
 - Replace the encoded message with your decoded message in the receiver textrea to make it readable.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(13).png" /]
 [image assetsSrc="Dom-Manipulation(14).png" /]
@@ -1426,20 +1449,20 @@ After that, when the `Decode and read it` button is clicked, you need to get the
 [input]
 // decoding single message and clearing the textarea
 document.body.innerHTML = \`
-	\<div id="container"\>
-		\<main id="main"\>
-			\<div\>
-				\<p\>Message\</p\>
-				\<textarea placeholder="Write your message here..."\>\</textarea\>
-				\<button\>Encode and send it\</button\>
-			\</div\>
-			\<div\>
-				\<p\>Last received message\</p\>
-				\<textarea disabled placeholder="No messages..."\>\</textarea\>
-				\<button\>Decode and read it\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<div id="container"\>
+\<main id="main"\>
+\<div\>
+\<p\>Message\</p\>
+\<textarea placeholder="Write your message here..."\>\</textarea\>
+\<button\>Encode and send it\</button\>
+\</div\>
+\<div\>
+\<p\>Last received message\</p\>
+\<textarea disabled placeholder="No messages..."\>\</textarea\>
+\<button\>Decode and read it\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1460,20 +1483,20 @@ yes
 [input]
 // decoding single message then encoding
 document.body.innerHTML = \`
-	\<div id="container"\>
-		\<main id="main"\>
-			\<div\>
-				\<p\>Message\</p\>
-				\<textarea placeholder="Write your message here..."\>\</textarea\>
-				\<button\>Encode and send it\</button\>
-			\</div\>
-			\<div\>
-				\<p\>Last received message\</p\>
-				\<textarea disabled placeholder="No messages..."\>\</textarea\>
-				\<button\>Decode and read it\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<div id="container"\>
+\<main id="main"\>
+\<div\>
+\<p\>Message\</p\>
+\<textarea placeholder="Write your message here..."\>\</textarea\>
+\<button\>Encode and send it\</button\>
+\</div\>
+\<div\>
+\<p\>Last received message\</p\>
+\<textarea disabled placeholder="No messages..."\>\</textarea\>
+\<button\>Decode and read it\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1493,20 +1516,20 @@ yes
 [input]
 // decoding 2 messages
 document.body.innerHTML = \`
-	\<div id="container"\>
-		\<main id="main"\>
-			\<div\>
-				\<p\>Message\</p\>
-				\<textarea placeholder="Write your message here..."\>\</textarea\>
-				\<button\>Encode and send it\</button\>
-			\</div\>
-			\<div\>
-				\<p\>Last received message\</p\>
-				\<textarea disabled placeholder="No messages..."\>\</textarea\>
-				\<button\>Decode and read it\</button\>
-			\</div\>
-		\</main\>
-	\</div\>
+\<div id="container"\>
+\<main id="main"\>
+\<div\>
+\<p\>Message\</p\>
+\<textarea placeholder="Write your message here..."\>\</textarea\>
+\<button\>Encode and send it\</button\>
+\</div\>
+\<div\>
+\<p\>Last received message\</p\>
+\<textarea disabled placeholder="No messages..."\>\</textarea\>
+\<button\>Decode and read it\</button\>
+\</div\>
+\</main\>
+\</div\>
 \`;
 
 result();
@@ -1527,33 +1550,33 @@ yes
 [input]
 // clearing textarea
 document.body.innerHTML = \`\<div id="container"\>
-        \<nav id="navigation"\>
-            \<div id="navigation-text"\>
-                \<p id="lecture-name"\>Intro to DOM\</p\>
-                \<p id="problem-name"\>Encode and Decode Messages\</p\>
-            \</div\>
-            \<img id="logo-img" src="SoftUniFoundation_Logo_OneLine_White@2x.png" alt="logo"\>
-        \</nav\>
-        \<main id="main"\>
-            \<div id="exercise"\>
-                \<div\>
-                    \<p\>Message\</p\>
-                    \<textarea placeholder="Write your message here..."\>\</textarea\>\<br\>
-                    \<button\>Encode and send it\</button\>
-                \</div\>
-                \<div\>
-                    \<p\>Last received message\</p\>
-                    \<textarea disabled placeholder="No messages..."\>\</textarea\>\<br\>
-                    \<button\>Decode and read it\</button\>
-                \</div\>
-            \</div\>
-            \<img id="softUni-person-img" src="cw_2_New_Logo.png" alt="softUni-person"\>
-        \</main\>
-        \<footer id="footer"\>
-            \<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
-            \</p\>
-        \</footer\>
-    \</div\>\`;
+\<nav id="navigation"\>
+\<div id="navigation-text"\>
+\<p id="lecture-name"\>Intro to DOM\</p\>
+\<p id="problem-name"\>Encode and Decode Messages\</p\>
+\</div\>
+\<img id="logo-img" src="SoftUniFoundation_Logo_OneLine_White@2x.png" alt="logo"\>
+\</nav\>
+\<main id="main"\>
+\<div id="exercise"\>
+\<div\>
+\<p\>Message\</p\>
+\<textarea placeholder="Write your message here..."\>\</textarea\>\<br\>
+\<button\>Encode and send it\</button\>
+\</div\>
+\<div\>
+\<p\>Last received message\</p\>
+\<textarea disabled placeholder="No messages..."\>\</textarea\>\<br\>
+\<button\>Decode and read it\</button\>
+\</div\>
+\</div\>
+\<img id="softUni-person-img" src="cw_2_New_Logo.png" alt="softUni-person"\>
+\</main\>
+\<footer id="footer"\>
+\<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
+\</p\>
+\</footer\>
+\</div\>\`;
 
 result();
 \\$("textarea")\[0\].value = "hello";
@@ -1573,33 +1596,33 @@ yes
 [input]
 // clearing textarea and decoding 2 messages
 document.body.innerHTML = \`\<div id="container"\>
-        \<nav id="navigation"\>
-            \<div id="navigation-text"\>
-                \<p id="lecture-name"\>Intro to DOM\</p\>
-                \<p id="problem-name"\>Encode and Decode Messages\</p\>
-            \</div\>
-            \<img id="logo-img" src="SoftUniFoundation_Logo_OneLine_White@2x.png" alt="logo"\>
-        \</nav\>
-        \<main id="main"\>
-            \<div id="exercise"\>
-                \<div\>
-                    \<p\>Message\</p\>
-                    \<textarea placeholder="Write your message here..."\>\</textarea\>\<br\>
-                    \<button\>Encode and send it\</button\>
-                \</div\>
-                \<div\>
-                    \<p\>Last received message\</p\>
-                    \<textarea disabled placeholder="No messages..."\>\</textarea\>\<br\>
-                    \<button\>Decode and read it\</button\>
-                \</div\>
-            \</div\>
-            \<img id="softUni-person-img" src="cw_2_New_Logo.png" alt="softUni-person"\>
-        \</main\>
-        \<footer id="footer"\>
-            \<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
-            \</p\>
-        \</footer\>
-    \</div\>\`;
+\<nav id="navigation"\>
+\<div id="navigation-text"\>
+\<p id="lecture-name"\>Intro to DOM\</p\>
+\<p id="problem-name"\>Encode and Decode Messages\</p\>
+\</div\>
+\<img id="logo-img" src="SoftUniFoundation_Logo_OneLine_White@2x.png" alt="logo"\>
+\</nav\>
+\<main id="main"\>
+\<div id="exercise"\>
+\<div\>
+\<p\>Message\</p\>
+\<textarea placeholder="Write your message here..."\>\</textarea\>\<br\>
+\<button\>Encode and send it\</button\>
+\</div\>
+\<div\>
+\<p\>Last received message\</p\>
+\<textarea disabled placeholder="No messages..."\>\</textarea\>\<br\>
+\<button\>Decode and read it\</button\>
+\</div\>
+\</div\>
+\<img id="softUni-person-img" src="cw_2_New_Logo.png" alt="softUni-person"\>
+\</main\>
+\<footer id="footer"\>
+\<p id="footer-text"\>Check your solution here: \<span id="check-judge"\>https://judge.softuni.bg/Contests/356\</span\>
+\</p\>
+\</footer\>
+\</div\>\`;
 
 result();
 \\$("textarea")\[0\].value = "hello";
@@ -1623,16 +1646,21 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Table Search Engine
+
 [code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
@@ -1643,7 +1671,7 @@ When the `Search` button is clicked, go through all cells in the table except fo
 
 Check if the given input has a match, check for both full words and single letters.
 
-If any of the rows contain the submitted string, add a **select class** to that row. 
+If any of the rows contain the submitted string, add a **select class** to that row.
 
 **Note that more than one row may contain the given string**.
 
@@ -1652,6 +1680,7 @@ If there is no match, **nothing should happen**.
 Note: After every search, **clear the input field** and **remove all already selected classes**, if any exist from the previous search, in order for the **new search** to contain only the **new result**.
 
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(16).png" /]
 
@@ -1664,6 +1693,7 @@ Note: After every search, **clear the input field** and **remove all already sel
 [input]
 // Search for John Dan - First table row must be selected
 document.body.innerHTML = \`
+
  <table class="container">
         <thead>
             <tr>
@@ -1738,51 +1768,51 @@ yes
 [input]
 // Search for Sam Lima - Fourth table row must be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -1812,51 +1842,51 @@ yes
 [input]
 // Search for .bg - Second and Third table row should be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -1886,51 +1916,51 @@ yes
 [input]
 // Search for com - First, Fourth, Fifth row should be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -1960,51 +1990,51 @@ yes
 [input]
 // Search for "-" - Every row except the last one should be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -2034,51 +2064,51 @@ yes
 [input]
 // Search for @ - Every row should be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -2106,51 +2136,51 @@ yes
 [input]
 // Search for no-existing string - No one from the rows should be selected
 document.body.innerHTML = \`
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+\<table class="container"\>
+\<thead\>
+\<tr\>
+\<th\>Student name\</th\>
+\<th\>Student email\</th\>
+\<th\>Student course\</th\>
+\</tr\>
+\</thead\>
+\<tfoot\>
+\<tr\>
+\<td colspan="3"\>
+\<input type="text" id="searchField" /\>
+\<button type="button" id="searchBtn"\>Search\</button\>
+\</td\>
+\</tr\>
+\</tfoot\>
+\<tbody\>
+\<tr\>
+\<td\>John Dan\</td\>
+\<td\>john@john-dan.com\</td\>
+\<td\>JS-CORE\</td\>
+\</tr\>
+\<tr\>
+\<td\>Max Peterson\</td\>
+\<td\>max@softuni.bg\</td\>
+\<td\>JS-WEB\</td\>
+\</tr\>
+\<tr\>
+\<td\>Philip Anderson\</td\>
+\<td\>philip@softuni.bg\</td\>
+\<td\>FRONT-END\</td\>
+\</tr\>
+\<tr\>
+\<td\>Sam Lima\</td\>
+\<td\>sam@gmail.com\</td\>
+\<td\>TECH-JS\</td\>
+\</tr\>
+\<tr\>
+\<td\>Eva Longoria\</td\>
+\<td\>eva@gmail.com\</td\>
+\<td\>All possible courses\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\<div id="result"\>\</div\>
 \`;
 
 result();
@@ -2180,21 +2210,26 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Furniture
+
 [code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/07-Furniture.zip) **for this task.**
 
-You will be given a furniture as an array of objects. 
+You will be given a furniture as an array of objects.
 
 Each object will have a name, a price and a decoration factor.
 
@@ -2206,8 +2241,8 @@ On the next line, print the total price in format: `Total price: {totalPrice}`, 
 
 Finally, print the average decoration factor in the format: `Average decoration factor: {decFactor}`.
 
-
 # Example
+
 **Input**
 `[{"name": "Sofa", "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg", "price": 150, "decFactor": 1.2}]`
 
@@ -2221,53 +2256,53 @@ Finally, print the average decoration factor in the format: `Average decoration 
 [input]
 // Adding 1 furniture
 document.body.innerHTML = \`
-    \<div id="container"\>
-        \<div id="exercise"\>
-            \<h1\>Furniture List\</h1\>
-            \<textarea rows="5" cols="50"\>\</textarea\>
-            \<button\>Generate\</button\>
-            \<div class="wrapper"\>
-                \<div class="card-wrapper"\>
-                    \<div class="row"\>
-                        \<div class="col-md-12"\>
-                            \<table class="table"\>
-                                \<thead\>
-                                    \<tr\>
-                                        \<th scope="col"\>Image\</th\>
-                                        \<th scope="col"\>Name\</th\>
-                                        \<th scope="col"\>Price\</th\>
-                                        \<th scope="col"\>Decoration factor\</th\>
-                                        \<th scope="col"\>Mark\</th\>
-                                    \</tr\>
-                                \</thead\>
-                                \<tbody\>
-                                    \<tr\>
-                                        \<td\>
-                                            \<img
-                                                src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>Office chair\</p\>
-                                        \<td\>
-                                            \<p\>160\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>0.5\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<input type="checkbox" disabled /\>
-                                        \</td\>
-                                    \</tr\>
-                                \</tbody\>
-                            \</table\>
-                        \</div\>
-                    \</div\>
-                \</div\>
-            \</div\>
-            \<textarea rows="4" cols="50" disabled\>\</textarea\>
-            \<button\>Buy\</button\>
-        \</div\>
-    \</div\>
+\<div id="container"\>
+\<div id="exercise"\>
+\<h1\>Furniture List\</h1\>
+\<textarea rows="5" cols="50"\>\</textarea\>
+\<button\>Generate\</button\>
+\<div class="wrapper"\>
+\<div class="card-wrapper"\>
+\<div class="row"\>
+\<div class="col-md-12"\>
+\<table class="table"\>
+\<thead\>
+\<tr\>
+\<th scope="col"\>Image\</th\>
+\<th scope="col"\>Name\</th\>
+\<th scope="col"\>Price\</th\>
+\<th scope="col"\>Decoration factor\</th\>
+\<th scope="col"\>Mark\</th\>
+\</tr\>
+\</thead\>
+\<tbody\>
+\<tr\>
+\<td\>
+\<img
+src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
+\</td\>
+\<td\>
+\<p\>Office chair\</p\>
+\<td\>
+\<p\>160\</p\>
+\</td\>
+\<td\>
+\<p\>0.5\</p\>
+\</td\>
+\<td\>
+\<input type="checkbox" disabled /\>
+\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\</div\>
+\</div\>
+\</div\>
+\</div\>
+\<textarea rows="4" cols="50" disabled\>\</textarea\>
+\<button\>Buy\</button\>
+\</div\>
+\</div\>
 \`;
 
 result();
@@ -2302,53 +2337,53 @@ yes
 [input]
 // Adding 1 furniture
 document.body.innerHTML = \`
-    \<div id="container"\>
-        \<div id="exercise"\>
-            \<h1\>Furniture List\</h1\>
-            \<textarea rows="5" cols="50"\>\</textarea\>
-            \<button\>Generate\</button\>
-            \<div class="wrapper"\>
-                \<div class="card-wrapper"\>
-                    \<div class="row"\>
-                        \<div class="col-md-12"\>
-                            \<table class="table"\>
-                                \<thead\>
-                                    \<tr\>
-                                        \<th scope="col"\>Image\</th\>
-                                        \<th scope="col"\>Name\</th\>
-                                        \<th scope="col"\>Price\</th\>
-                                        \<th scope="col"\>Decoration factor\</th\>
-                                        \<th scope="col"\>Mark\</th\>
-                                    \</tr\>
-                                \</thead\>
-                                \<tbody\>
-                                    \<tr\>
-                                        \<td\>
-                                            \<img
-                                                src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>Office chair\</p\>
-                                        \<td\>
-                                            \<p\>160\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>0.5\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<input type="checkbox" disabled /\>
-                                        \</td\>
-                                    \</tr\>
-                                \</tbody\>
-                            \</table\>
-                        \</div\>
-                    \</div\>
-                \</div\>
-            \</div\>
-            \<textarea rows="4" cols="50" disabled\>\</textarea\>
-            \<button\>Buy\</button\>
-        \</div\>
-    \</div\>
+\<div id="container"\>
+\<div id="exercise"\>
+\<h1\>Furniture List\</h1\>
+\<textarea rows="5" cols="50"\>\</textarea\>
+\<button\>Generate\</button\>
+\<div class="wrapper"\>
+\<div class="card-wrapper"\>
+\<div class="row"\>
+\<div class="col-md-12"\>
+\<table class="table"\>
+\<thead\>
+\<tr\>
+\<th scope="col"\>Image\</th\>
+\<th scope="col"\>Name\</th\>
+\<th scope="col"\>Price\</th\>
+\<th scope="col"\>Decoration factor\</th\>
+\<th scope="col"\>Mark\</th\>
+\</tr\>
+\</thead\>
+\<tbody\>
+\<tr\>
+\<td\>
+\<img
+src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
+\</td\>
+\<td\>
+\<p\>Office chair\</p\>
+\<td\>
+\<p\>160\</p\>
+\</td\>
+\<td\>
+\<p\>0.5\</p\>
+\</td\>
+\<td\>
+\<input type="checkbox" disabled /\>
+\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\</div\>
+\</div\>
+\</div\>
+\</div\>
+\<textarea rows="4" cols="50" disabled\>\</textarea\>
+\<button\>Buy\</button\>
+\</div\>
+\</div\>
 \`;
 
 result();
@@ -2383,53 +2418,53 @@ yes
 [input]
 // Adding 2 furniture, buy just 1
 document.body.innerHTML = \`
-    \<div id="container"\>
-        \<div id="exercise"\>
-            \<h1\>Furniture List\</h1\>
-            \<textarea rows="5" cols="50"\>\</textarea\>
-            \<button\>Generate\</button\>
-            \<div class="wrapper"\>
-                \<div class="card-wrapper"\>
-                    \<div class="row"\>
-                        \<div class="col-md-12"\>
-                            \<table class="table"\>
-                                \<thead\>
-                                    \<tr\>
-                                        \<th scope="col"\>Image\</th\>
-                                        \<th scope="col"\>Name\</th\>
-                                        \<th scope="col"\>Price\</th\>
-                                        \<th scope="col"\>Decoration factor\</th\>
-                                        \<th scope="col"\>Mark\</th\>
-                                    \</tr\>
-                                \</thead\>
-                                \<tbody\>
-                                    \<tr\>
-                                        \<td\>
-                                            \<img
-                                                src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>Office chair\</p\>
-                                        \<td\>
-                                            \<p\>160\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>0.5\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<input type="checkbox" disabled /\>
-                                        \</td\>
-                                    \</tr\>
-                                \</tbody\>
-                            \</table\>
-                        \</div\>
-                    \</div\>
-                \</div\>
-            \</div\>
-            \<textarea rows="4" cols="50" disabled\>\</textarea\>
-            \<button\>Buy\</button\>
-        \</div\>
-    \</div\>
+\<div id="container"\>
+\<div id="exercise"\>
+\<h1\>Furniture List\</h1\>
+\<textarea rows="5" cols="50"\>\</textarea\>
+\<button\>Generate\</button\>
+\<div class="wrapper"\>
+\<div class="card-wrapper"\>
+\<div class="row"\>
+\<div class="col-md-12"\>
+\<table class="table"\>
+\<thead\>
+\<tr\>
+\<th scope="col"\>Image\</th\>
+\<th scope="col"\>Name\</th\>
+\<th scope="col"\>Price\</th\>
+\<th scope="col"\>Decoration factor\</th\>
+\<th scope="col"\>Mark\</th\>
+\</tr\>
+\</thead\>
+\<tbody\>
+\<tr\>
+\<td\>
+\<img
+src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
+\</td\>
+\<td\>
+\<p\>Office chair\</p\>
+\<td\>
+\<p\>160\</p\>
+\</td\>
+\<td\>
+\<p\>0.5\</p\>
+\</td\>
+\<td\>
+\<input type="checkbox" disabled /\>
+\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\</div\>
+\</div\>
+\</div\>
+\</div\>
+\<textarea rows="4" cols="50" disabled\>\</textarea\>
+\<button\>Buy\</button\>
+\</div\>
+\</div\>
 \`;
 
 result();
@@ -2476,53 +2511,53 @@ yes
 [input]
 // Adding 2 furniture, buy the both
 document.body.innerHTML = \`
-    \<div id="container"\>
-        \<div id="exercise"\>
-            \<h1\>Furniture List\</h1\>
-            \<textarea rows="5" cols="50"\>\</textarea\>
-            \<button\>Generate\</button\>
-            \<div class="wrapper"\>
-                \<div class="card-wrapper"\>
-                    \<div class="row"\>
-                        \<div class="col-md-12"\>
-                            \<table class="table"\>
-                                \<thead\>
-                                    \<tr\>
-                                        \<th scope="col"\>Image\</th\>
-                                        \<th scope="col"\>Name\</th\>
-                                        \<th scope="col"\>Price\</th\>
-                                        \<th scope="col"\>Decoration factor\</th\>
-                                        \<th scope="col"\>Mark\</th\>
-                                    \</tr\>
-                                \</thead\>
-                                \<tbody\>
-                                    \<tr\>
-                                        \<td\>
-                                            \<img
-                                                src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>Office chair\</p\>
-                                        \<td\>
-                                            \<p\>160\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>0.5\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<input type="checkbox" disabled /\>
-                                        \</td\>
-                                    \</tr\>
-                                \</tbody\>
-                            \</table\>
-                        \</div\>
-                    \</div\>
-                \</div\>
-            \</div\>
-            \<textarea rows="4" cols="50" disabled\>\</textarea\>
-            \<button\>Buy\</button\>
-        \</div\>
-    \</div\>
+\<div id="container"\>
+\<div id="exercise"\>
+\<h1\>Furniture List\</h1\>
+\<textarea rows="5" cols="50"\>\</textarea\>
+\<button\>Generate\</button\>
+\<div class="wrapper"\>
+\<div class="card-wrapper"\>
+\<div class="row"\>
+\<div class="col-md-12"\>
+\<table class="table"\>
+\<thead\>
+\<tr\>
+\<th scope="col"\>Image\</th\>
+\<th scope="col"\>Name\</th\>
+\<th scope="col"\>Price\</th\>
+\<th scope="col"\>Decoration factor\</th\>
+\<th scope="col"\>Mark\</th\>
+\</tr\>
+\</thead\>
+\<tbody\>
+\<tr\>
+\<td\>
+\<img
+src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
+\</td\>
+\<td\>
+\<p\>Office chair\</p\>
+\<td\>
+\<p\>160\</p\>
+\</td\>
+\<td\>
+\<p\>0.5\</p\>
+\</td\>
+\<td\>
+\<input type="checkbox" disabled /\>
+\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\</div\>
+\</div\>
+\</div\>
+\</div\>
+\<textarea rows="4" cols="50" disabled\>\</textarea\>
+\<button\>Buy\</button\>
+\</div\>
+\</div\>
 \`;
 
 result();
@@ -2570,54 +2605,55 @@ yes
 [input]
 // Adding 3 furniture, buy all of them
 document.body.innerHTML = \`
-    \<div id="container"\>
-        \<div id="exercise"\>
-            \<h1\>Furniture List\</h1\>
-            \<textarea rows="5" cols="50"\>\</textarea\>
-            \<button\>Generate\</button\>
-            \<div class="wrapper"\>
-                \<div class="card-wrapper"\>
-                    \<div class="row"\>
-                        \<div class="col-md-12"\>
-                            \<table class="table"\>
-                                \<thead\>
-                                    \<tr\>
-                                        \<th scope="col"\>Image\</th\>
-                                        \<th scope="col"\>Name\</th\>
-                                        \<th scope="col"\>Price\</th\>
-                                        \<th scope="col"\>Decoration factor\</th\>
-                                        \<th scope="col"\>Mark\</th\>
-                                    \</tr\>
-                                \</thead\>
-                                \<tbody\>
-                                    \<tr\>
-                                        \<td\>
-                                            \<img
-                                                src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>Office chair\</p\>
-                                        \<td\>
-                                            \<p\>160\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<p\>0.5\</p\>
-                                        \</td\>
-                                        \<td\>
-                                            \<input type="checkbox" disabled /\>
-                                        \</td\>
-                                    \</tr\>
-                                \</tbody\>
-                            \</table\>
-                        \</div\>
-                    \</div\>
-                \</div\>
-            \</div\>
+\<div id="container"\>
+\<div id="exercise"\>
+\<h1\>Furniture List\</h1\>
+\<textarea rows="5" cols="50"\>\</textarea\>
+\<button\>Generate\</button\>
+\<div class="wrapper"\>
+\<div class="card-wrapper"\>
+\<div class="row"\>
+\<div class="col-md-12"\>
+\<table class="table"\>
+\<thead\>
+\<tr\>
+\<th scope="col"\>Image\</th\>
+\<th scope="col"\>Name\</th\>
+\<th scope="col"\>Price\</th\>
+\<th scope="col"\>Decoration factor\</th\>
+\<th scope="col"\>Mark\</th\>
+\</tr\>
+\</thead\>
+\<tbody\>
+\<tr\>
+\<td\>
+\<img
+src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg"\>
+\</td\>
+\<td\>
+\<p\>Office chair\</p\>
+\<td\>
+\<p\>160\</p\>
+\</td\>
+\<td\>
+\<p\>0.5\</p\>
+\</td\>
+\<td\>
+\<input type="checkbox" disabled /\>
+\</td\>
+\</tr\>
+\</tbody\>
+\</table\>
+\</div\>
+\</div\>
+\</div\>
+\</div\>
 
             \<textarea rows="4" cols="50" disabled\>\</textarea\>
             \<button\>Buy\</button\>
         \</div\>
     \</div\>
+
 \`;
 
 result();
@@ -2677,23 +2713,28 @@ yes
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Cards
+
 [code-task title="Cards" taskId="Js-Advanced-Dom-Manipulations-Cards" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 
 Write a function which checks cards, shows which one is greater and keeps history of all hands.
 
-Firstly, **add click events to all cards**. 
+Firstly, **add click events to all cards**.
 
 When one of the cards is clicked, the current background card must be changed with the `whiteCard.jpg` picture given in the skeleton.
 
@@ -2701,17 +2742,17 @@ The card name should be appended to one of the **span** elements in the div with
 
 If a card from **the top side** is **clicked**, append the card name to the **left span**, first empty the span, otherwise append the card name to the right span, which will be second or last span.
 
-When cards from **both sides are selected**, check which one is **greater**. 
+When cards from **both sides are selected**, check which one is **greater**.
 
 The greater card should have a border `2px solid green` and the other card should have a border `2px solid red`.
 
-You should clear the span elements which hold the current card names when both are selected, and the winner is selected. 
+You should clear the span elements which hold the current card names when both are selected, and the winner is selected.
 
 After every hand, push the current card names in the **history div** in the following format:
 `[{top side card name} vs {bottom side card name}]`
 
-
 # Example
+
 **Input**
 [image assetsSrc="Dom-Manipulation(19).png" /]
 
@@ -2727,37 +2768,37 @@ After every hand, push the current card names in the **history div** in the foll
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -2768,7 +2809,6 @@ result();
 
 let history = \\$("\#history")\[0\].innerHTML;
 let firstCardStyle = \\$("img\[name='7'\]")\[0\].style.border;
-
 
 expect(history).to.equal("\[2 vs 7\] ");
 expect(firstCardStyle).to.equal("2px solid green");
@@ -2783,37 +2823,37 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -2839,36 +2879,36 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -2894,36 +2934,36 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -2949,37 +2989,37 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -3004,37 +3044,37 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
@@ -3056,37 +3096,37 @@ yes
 document.body.innerHTML = \`
 \<section class="description"\>
 \<h2\>Create a functonality which checks all cards, shows which
-    one is greater and keeps history of all hands.
+one is greater and keeps history of all hands.
 \</h2\>
 \</section\>
 
 \<section class="cards"\>
-    \<div id="player1Div"\>
-        \<img src="images/card.jpg" name="2"/\>
-        \<img src="images/card.jpg" name="15"/\>
-        \<img src="images/card.jpg" name="4"/\>
-        \<img src="images/card.jpg" name="12"/\>
-        \<img src="images/card.jpg" name="6"/\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="8"/\>
-        \<img src="images/card.jpg" name="9"/\>
-    \</div\>
-    \<div id="result"\>
-        \<span\>\</span\>
-        \<span\>vs\</span\>
-        \<span\>\</span\>
-    \</div\>
-    \<div id="player2Div"\>
-        \<img src="images/card.jpg" name="10"/\>
-        \<img src="images/card.jpg" name="14"/\>
-        \<img src="images/card.jpg" name="9"/\>
-        \<img src="images/card.jpg" name="7"/\>
-        \<img src="images/card.jpg" name="11"/\>
-        \<img src="images/card.jpg" name="5"/\>
-        \<img src="images/card.jpg" name="13"/\>
-        \<img src="images/card.jpg" name="3"/\>
-    \</div\>
-    \<div id="history"\>\</div\>
+\<div id="player1Div"\>
+\<img src="images/card.jpg" name="2"/\>
+\<img src="images/card.jpg" name="15"/\>
+\<img src="images/card.jpg" name="4"/\>
+\<img src="images/card.jpg" name="12"/\>
+\<img src="images/card.jpg" name="6"/\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="8"/\>
+\<img src="images/card.jpg" name="9"/\>
+\</div\>
+\<div id="result"\>
+\<span\>\</span\>
+\<span\>vs\</span\>
+\<span\>\</span\>
+\</div\>
+\<div id="player2Div"\>
+\<img src="images/card.jpg" name="10"/\>
+\<img src="images/card.jpg" name="14"/\>
+\<img src="images/card.jpg" name="9"/\>
+\<img src="images/card.jpg" name="7"/\>
+\<img src="images/card.jpg" name="11"/\>
+\<img src="images/card.jpg" name="5"/\>
+\<img src="images/card.jpg" name="13"/\>
+\<img src="images/card.jpg" name="3"/\>
+\</div\>
+\<div id="history"\>\</div\>
 \</section\>
 \`;
 
