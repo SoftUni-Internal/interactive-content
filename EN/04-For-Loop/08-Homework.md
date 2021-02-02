@@ -204,8 +204,9 @@ Write a program, which:
 
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 5
 2
@@ -214,10 +215,62 @@ Write a program, which:
 32
 [/output]
 [/test]
+[test]
+[input]
+4
+7
+[/input]
+[output]
+16384
+[/output]
+[/test]
+[test]
+[input]
+3
+12
+[/input]
+[output]
+531441
+[/output]
+[/test]
+[test]
+[input]
+3
+7
+[/input]
+[output]
+2187
+[/output]
+[/test]
+[test]
+[input]
+8
+3
+[/input]
+[output]
+512
+[/output]
+[/test]
+[test]
+[input]
+2
+8
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test]
+[input]
+3
+5
+[/input]
+[output]
+243
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
