@@ -21,6 +21,8 @@ public class Main {
 [task-description]
 ## Description
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/03.MySQL-Basic-CRUD-Databases-Homework.zip) **for this task.**
+
 Download and get familiar with the **soft_uni, diablo and geography** database schemas and tables. 
 
 You will use them in this and the following exercises to write queries. 
