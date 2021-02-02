@@ -2,11 +2,9 @@
 
 # Homework
 
-*U will need the databases from "built-in-functions-data-aggregation part one from 1 to 16 problem, and the built-in-functions-data-aggregation part two for the rest problems*
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Exercise.zip) **for this homework.**
 
-[Download Link Part One](https://mega.nz/file/LAZXDaqa#9Ka2J-5VPzTCQvigBwmNem8lxP-bqCtGuTytoe3SBjk)
-
-[Download Link Part Two](https://mega.nz/file/rMZHDSyR#qTU1_wWO9IU6mXd9CnistjB7WHcHVQvJMJvvR9taxik)
+*You will need the databases from "built-in-functions-data-aggregation" for the first 16 problems, and the "built-in-functions-data-aggregation" resources for the rest of the problems.*
 
 # Part 1 - Queries from SoftUni Database
 
