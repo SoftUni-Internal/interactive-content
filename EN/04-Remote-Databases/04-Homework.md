@@ -12,6 +12,8 @@ Download the resources from here - [Mega.nz](https://mega.nz/file/fZgHjC7Z#ai8TE
 
 # Problem: Books
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-BOOKS.zip) **for this task.**
+
 Use thе database of your choice, **Firebase** or **Backendless**.
 
 Create a collection called **books** where each book have a **title**, an **author**, an **isbn**.
@@ -50,6 +52,8 @@ Here is how the web page will look like when initialized for the first time.
 
 # Problem: Students
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-STUDENTS.zip) **for this task.**
+
 Your task is to create functionality for creating and listing students from a database. 
 
 Create a new collection called "students".
@@ -84,6 +88,8 @@ Use the skeleton from the provided resources.
 [slide hideTitle]
 
 # Problem: Wild Wild West
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-WILD-WILD-WEST.zip) **for this task.**
 
 **This task is not included in the final result**.
 
