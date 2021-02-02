@@ -47,7 +47,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -124,13 +124,8 @@ Scrieți un program care:
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function decreasingNumbers (input) {
-  let inputNumber = Number(input.shift());
-  
-  while (inputNumber >= 1) {
-    console.log(inputNumber);
-    inputNumber--;
-  }
+function decreasingNumbers(input) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -207,8 +202,8 @@ Scrieți un program care:
 [code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-lab-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbersInRange (input) {
-  // Write your code here
+function sequence (input) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -247,7 +242,8 @@ Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7,
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-// TODO: Solution
+function sequence (input) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

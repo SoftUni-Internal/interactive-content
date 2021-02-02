@@ -244,12 +244,7 @@ Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 
 [code-editor language=javascript]
 ```
 function sequence(input) {
-  let k = 1;
-  
-  while(k <= input){
-    console.log(k);
-    k = k * 2 + 1;
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
