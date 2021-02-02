@@ -11,6 +11,11 @@ function calculateMonthSalary (days, salaryPerDay) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(Number(input.unshift()), input);
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -22,9 +27,7 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2| 300 |
-|100| |
-|200| |
+|`2, ['100', '200']`| 300 |
 
 [/task-description]
 [tests]

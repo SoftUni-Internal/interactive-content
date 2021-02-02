@@ -11,20 +11,24 @@ function calculateMonthSalary (days, salaryPerDay) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(Number(input.unshift()), input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
 
-* Receives the number of workdays for the current month and the salary per day - integers 
-* Calculates the monthly salary of an employee 
-* Prints the result on the console 
+* Receives the number of workdays for the current month and the salary per day - integers
+* Calculates the monthly salary of an employee
+* Prints the result on the console
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| 300 |
-|100| |
-|200| |
+|`2, ['100', '200']`| 300 |
+
 
 [/task-description]
 [tests]
