@@ -406,11 +406,20 @@ Yes, value=10
 [code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function zigZagSum(input) {
+function zigZagSum(n, numbers) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -424,10 +433,8 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2| 10 |
-|10| |
-|20| |
-|| |
+|2, `['10', '20']`| 10 |
+
 
 [/task-description]
 [tests]
@@ -451,6 +458,74 @@ Scrieți un program care:
 [/input]
 [output]
 10
+[/output]
+[/test]
+[test]
+[input]
+5
+213
+645
+234
+547
+3
+[/input]
+[output]
+742
+[/output]
+[/test]
+[test]
+[input]
+7
+3
+4
+3
+2
+5
+345
+657
+[/input]
+[output]
+317
+[/output]
+[/test]
+[test]
+[input]
+8
+45
+5
+654
+4
+5
+345
+123
+2
+[/input]
+[output]
+471
+[/output]
+[/test]
+[test]
+[input]
+3
+3453
+456456
+547546
+[/input]
+[output]
+94543
+[/output]
+[/test]
+[test]
+[input]
+5
+4564
+345
+456
+4563
+234
+[/input]
+[output]
+346
 [/output]
 [/test]
 [/tests]
