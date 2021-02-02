@@ -15,7 +15,7 @@ function solve(){
 [task-description]
 # Description
 
-[Download the resource here!](https://videos.softuni.org/resources/javascript/javascript-advanced/03-JS-Advanced-Exam-Preparation-Resources.zip)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-JS-Advanced-Exam-Preparation-Resources.zip) **for this task.**
 
 Use the `index.html` and `app.js` files to solve this problem.
 
