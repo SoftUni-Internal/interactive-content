@@ -702,11 +702,20 @@ Scrieți un program care:
 [code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function vowelSum(input) {
+function vowelSum(n, chars) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -715,9 +724,9 @@ Scrieți un program care:
 
 * Dacă caracterul este o vocală, se adaugă caracterele `valoare` la rezultat
 
- | character      | a | e   |i   |o  |u  |
+ | **character**      | **a** | **e**   |**i**   |**o**  |**u**  |
 | :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
-| value  | 1  | 2 |3 |4 |5 |
+| **value**  | 1  | 2 |3 |4 |5 |
 
 
 * Tipărește rezultatul
@@ -725,10 +734,8 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2| 1 |
-|a| |
-|g| |
-|| |
+|`2, ['a', 'g']`| 1 |
+
 
 [/task-description]
 [tests]
@@ -778,6 +785,48 @@ s
 [/input]
 [output]
 17
+[/output]
+[/test]
+[test]
+[input]
+5
+a
+g
+c
+q
+i
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+6
+a
+e
+c
+q
+i
+u
+[/input]
+[output]
+11
+[/output]
+[/test]
+[test]
+[input]
+7
+a
+e
+c
+q
+i
+u
+o
+[/input]
+[output]
+15
 [/output]
 [/test]
 [/tests]

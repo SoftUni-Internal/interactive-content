@@ -707,11 +707,20 @@ Write a program, which:
 [code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function vowelSum(input) {
+function vowelSum(n, chars) {
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
@@ -720,9 +729,9 @@ Write a program, which:
 
 * If character is a vowel, it adds the characters `value` to the result
 
- | character      | a | e   |i   |o  |u  |
+ | **character**      | **a** | **e**   |**i**   |**o**  |**u**  |
 | :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
-| value  | 1  | 2 |3 |4 |5 |
+| **value**  | 1  | 2 |3 |4 |5 |
 
 
 * Prints the result
@@ -730,10 +739,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| 1 |
-|a| |
-|g| |
-|| |
+|`2, ['a', 'g']`| 1 |
 
 [/task-description]
 [tests]
@@ -783,6 +789,48 @@ s
 [/input]
 [output]
 17
+[/output]
+[/test]
+[test]
+[input]
+5
+a
+g
+c
+q
+i
+[/input]
+[output]
+4
+[/output]
+[/test]
+[test]
+[input]
+6
+a
+e
+c
+q
+i
+u
+[/input]
+[output]
+11
+[/output]
+[/test]
+[test]
+[input]
+7
+a
+e
+c
+q
+i
+u
+o
+[/input]
+[output]
+15
 [/output]
 [/test]
 [/tests]
