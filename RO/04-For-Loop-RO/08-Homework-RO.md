@@ -303,7 +303,7 @@ Scrieți un program care:
 0
 3
 4
-\-1
+-1
 [/input]
 [output]
 Yes, value=3
@@ -350,22 +350,22 @@ Yes, value=10
 [test]
 [input]
 2
-\-1
+-1
 0
 0
-\-1
+-1
 [/input]
 [output]
-Yes, value=\-1
+Yes, value=-1
 [/output]
 [/test]
 [test]
 [input]
 2
-\-1
+-1
 2
 0
-\-1
+-1
 [/input]
 [output]
 No, maxdiff=2
@@ -377,15 +377,15 @@ No, maxdiff=2
 5
 5
 70
-\-60
+-60
 3
 7
 2
 8
 20
-\-10
+-10
 15
-\-5
+-5
 0
 10
 10

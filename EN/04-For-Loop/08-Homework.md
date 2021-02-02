@@ -416,6 +416,15 @@ function zigZagSum(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
@@ -429,10 +438,8 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| 10 |
-|10| |
-|20| |
-|| |
+|2, `['10', '20']`| 10 |
+
 
 [/task-description]
 [tests]
