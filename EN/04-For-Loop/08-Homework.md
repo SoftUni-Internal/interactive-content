@@ -276,11 +276,9 @@ function equalPairs(n, numbers) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
-}
+```
+(input, code) => code(Number(input.unshift()), input);
+```
 ```
 [/code-adapter]
 [task-description]
