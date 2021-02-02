@@ -276,7 +276,11 @@ function equalPairs(n, numbers) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(Number(input.unshift()), input);
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
 ```
 [/code-adapter]
 [task-description]
@@ -291,7 +295,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`2, ['2', '-1', '0', '0', '-1']`| Yes, value=\-1 |
+|`2, ['-1', '0', '0', '-1']`| Yes, value=\-1 |
 
 
 [/task-description]
