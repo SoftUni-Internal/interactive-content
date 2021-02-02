@@ -20,6 +20,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
+
 Create two tables as follows. Use appropriate data types.
 
 **Insert the data from the example below.**
@@ -149,6 +152,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
 Create two tables as follows. Use appropriate data types.
 
@@ -301,6 +306,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
+
 Create three tables as follows. Use appropriate data types.
 
 **Insert the data from the example above**.
@@ -483,6 +491,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
+
 Create a single table as follows. Use appropriate data types.
 
 **Insert the data from the example above**.
@@ -590,6 +601,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
+
 Create a new database and design the following structure:
 
 Submit your queries by using "**MySQL run queries & check DB" strategy**".
@@ -752,6 +766,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/05.Table-Relations-Geography-Db-Exercise.zip) **for this task.**
 
 Display all peaks for "**Rila**" **mountain_range**. Include:
 
