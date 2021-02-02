@@ -271,12 +271,12 @@ Write a program, which:
 [test  open]
 [input]
 3
--30
--80
--40
+30
+80
+40
 [/input]
 [output]
--30
+80
 [/output]
 [/test]
 [test]
@@ -368,12 +368,12 @@ Write a program, which:
 [test]
 [input]
 3
--30
--80
--40
+30
+80
+40
 [/input]
 [output]
--30
+80
 [/output]
 [/test]
 [test]
