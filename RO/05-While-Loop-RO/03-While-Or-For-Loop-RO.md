@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Bucla While sau Bucla For?
 
 [vimeo-video]
@@ -47,13 +47,13 @@ console.log(number);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Odd Number
-[code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
+[code-task title="Odd Number" taskId="pb-js-while-loop-lab-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -91,7 +91,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Soluție: Odd Number
 
 [vimeo-video]
@@ -104,11 +104,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
-  let num = Number(numbers.shift());
-  while (num % 2 === 0) {
-    num = Number(numbers.shift());
-  }
-  console.log(num);
+ // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]

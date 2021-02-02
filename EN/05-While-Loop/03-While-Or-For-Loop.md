@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # While or For Loop?
 
 [vimeo-video]
@@ -47,9 +47,9 @@ console.log(number);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Odd Number
-[code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
+[code-task title="Odd Number" taskId="pb-js-while-loop-lab-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
@@ -91,7 +91,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Odd Number
 
 [vimeo-video]
@@ -104,11 +104,7 @@ Write a program, which:
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
-  let num = Number(numbers.shift());
-  while (num % 2 === 0) {
-    num = Number(numbers.shift());
-  }
-  console.log(num);
+   // Write your code here
 }
 ```
 [/code-editor]
