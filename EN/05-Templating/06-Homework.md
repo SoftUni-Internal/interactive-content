@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Contacts Book
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/06-JS-Applications-Templating-Homework-Resources.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Templating-Homework-01.Contacts-Book.zip) **for this task.**
 
 Create a simple page containing some cards with contacts. 
 
@@ -47,7 +47,8 @@ The next step is to create the functionality for displaying all cards:
 [slide hideTitle]
 # Problem: List Towns
 
-You can download the resources for this problem from [here](https://mega.nz/file/CB5QTADY#uwW4VNiAJqkMrEK5Zm886g84ED9JZT-Qjaa5lR0nQlo).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Templating-Homework-02.List-Towns.zip) **for this task.**
+
 
 
 You are given an **input field** with a button. 
@@ -74,7 +75,7 @@ This is how the HTML looks like:
 [slide hideTitle]
 # Problem: HTTP Status Cats
 
-You can download the resources for this problem from [here](https://mega.nz/file/bAwUBKSD#LOHaTm_vVULJk5i-51iNOo53J1xhfiWM2VmvWJd33HU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Templating-Homework-03.HTTP-Status-Cats.zip) **for this task.**
 
 *We all love cats.*
 
@@ -106,7 +107,7 @@ You should **toggle** the button and change its text from `Show status code` to 
 [slide hideTitle]
 # Problem: Popular Monkeys
 
-You can download the resources for this problem from [here](https://mega.nz/file/7Qog0YyZ#ucLotmvpR6EBaFpQY3wlUerqAgC8BpBXHqWr4AepVnM).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Templating-Homework-04.Popular-Monkeys.zip) **for this task.**
 
 You are provided with a **skeleton**. 
 
