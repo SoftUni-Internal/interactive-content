@@ -2,14 +2,6 @@
 
 [slide hideTitle]
 
-# Resources
-
-Download the resources from here - [Mega.nz](https://mega.nz/file/fZgHjC7Z#ai8TEYx_-CtqeRZTyMzFHYEguVHBUEA7heA_3bjXSJ4)
-
-[/slide]
-
-[slide hideTitle]
-
 # Problem: Books
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-BOOKS.zip) **for this task.**
@@ -19,6 +11,7 @@ Use thе database of your choice, **Firebase** or **Backendless**.
 Create a collection called **books** where each book have a **title**, an **author**, an **isbn**.
 
 You have to implement the following functionality:
+
 - List all books.
 - Create a new book.
 - Update a book.
@@ -54,28 +47,29 @@ Here is how the web page will look like when initialized for the first time.
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-STUDENTS.zip) **for this task.**
 
-Your task is to create functionality for creating and listing students from a database. 
+Your task is to create functionality for creating and listing students from a database.
 
 Create a new collection called "students".
 
 Each student has:
+
 - ID - a number, non-empty.
 - FirstName - a string, non-empty.
 - LastName - a string, non-empty.
 - FacultyNumber - a string of numbers, non-empty.
 - Grade - a number, non-empty.
 
-Write functionality for creating students. 
+Write functionality for creating students.
 
-When creating a new student, make sure you name the properties accordingly. 
+When creating a new student, make sure you name the properties accordingly.
 
 Create at least one student to test your code.
 
-You will also need to extract students. 
+You will also need to extract students.
 
-You will be given an **HTML template** with a table in it. 
+You will be given an **HTML template** with a table in it.
 
-Create an **AJAX request** that extracts all the students. 
+Create an **AJAX request** that extracts all the students.
 
 Upon fetching all students from the database, add them to the table each on a new row, **sorted in ascending order by ID**.
 
@@ -93,7 +87,7 @@ Use the skeleton from the provided resources.
 
 **This task is not included in the final result**.
 
-Write REST services for a simple Western game. 
+Write REST services for a simple Western game.
 
 Create a collection called "players", each player having a name, money, and bullets to hold information about the players in the game.
 
@@ -103,17 +97,18 @@ Create a collection called "players", each player having a name, money, and bull
 
 HTML and JS
 
-You will be provided with a skeleton project containing an **HTML template** and some **JS files**. 
+You will be provided with a skeleton project containing an **HTML template** and some **JS files**.
 
 The "loadCanvas.js" is a simple implementation for the game and your job is to **attach events** to all the buttons and make the needed **AJAX requests**.
 
-When the page is loaded a **GET** request should be sent to the server to get all players and load them in the div with ID **players**. 
+When the page is loaded a **GET** request should be sent to the server to get all players and load them in the div with ID **players**.
 
 An example entry is left in the HTML to demonstrate the representation of a player and their placement.
 
 Whenever the "Save" button is pressed, the progress of the current player, if any should be saved.
 
 Use a **PUT** request to update the data on the server:
+
 - The **canvas** and the buttons "Save" and "Reload" should be hidden.
 - The **clearInterval** should be called on the "canvas.intervarId" property, used for the main loop of the game.
 
@@ -124,6 +119,7 @@ Whenever the "Add Player" button is clicked, a new Player with the name specifie
 Each new player **starts** with **500 Money** and **6 bullets**.
 
 Pressing the "Play" button on a player should:
+
 - Call the "Save" button.
 - Display the canvas, "Save" and "Reload" buttons.
 - Call the "loadCanvas()" function from the "loadCanvas.js" file.
