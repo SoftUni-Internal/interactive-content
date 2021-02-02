@@ -25,7 +25,7 @@ Use **BufferedReader** in combination with **FileReader**.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -96,7 +96,7 @@ Use **BufferedReader** in combination with **FileReader**.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -152,7 +152,7 @@ Use **BufferedReader** and **PrintWriter**.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -227,7 +227,7 @@ Use **BufferedReader** and **PrintWriter**.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -282,7 +282,7 @@ The result should be written to **another** text file – **output.txt**.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -355,7 +355,7 @@ Sort the words by frequency in **descending order**.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -407,7 +407,7 @@ Write a program that reads the contents of **two** text files (**inputOne.txt** 
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -470,7 +470,7 @@ Use Folder **Exercises Resources** in Resources - Folder.
 ## Guidelines
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the resources folder [here](https://mega.nz/file/nIwjSaKQ#KQpc5igeWhk70YWHwrA7QRqqyAySVW5xap-dxwFULgU).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources.zip) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
