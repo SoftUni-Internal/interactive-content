@@ -433,7 +433,7 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2, `['10', '20']`| 10 |
+|`2, ['10', '20']`| 10 |
 
 
 [/task-description]
@@ -539,11 +539,20 @@ Scrieți un program care:
 [code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function divideWithoutRemainder(input) {
+function divideWithoutRemainder(n, numbers)) {
   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -557,10 +566,10 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|3| 33.33\% |
-|3| 100.00\%|
-|6|0.00\% |
-|9| |
+|`3, ['3', '6', '9']`]| 33.33\% |
+|| 100.00\%|
+||0.00\% |
+|| |
 
 [/task-description]
 [tests]

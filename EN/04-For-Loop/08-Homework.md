@@ -438,7 +438,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2, `['10', '20']`| 10 |
+|`2, ['10', '20']`| 10 |
 
 
 [/task-description]
@@ -544,11 +544,20 @@ Write a program, which:
 [code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function divideWithoutRemainder(input) {
+function divideWithoutRemainder(n, numbers) {
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
@@ -562,10 +571,10 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|3| 33.33\% |
-|3| 100.00\%|
-|6|0.00\% |
-|9| |
+|`3, ['3', '6', '9']`]| 33.33\% |
+|| 100.00\%|
+||0.00\% |
+|| |
 
 [/task-description]
 [tests]
