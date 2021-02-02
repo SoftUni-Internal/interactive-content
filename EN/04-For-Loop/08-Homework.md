@@ -182,14 +182,16 @@ function powerOfNumbers(n, p) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]))
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
 
-* Reads `p` – the power and n – the number 
+* Reads `p` - the power and n – the number 
 
 * Prints the result of `n` to the power of `p` 
 
