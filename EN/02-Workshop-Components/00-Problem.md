@@ -2,7 +2,8 @@
 
 [slide hideTitle]
 # Task Requirements
-[Download resources here!](https://mega.nz/file/nNpnwASQ#XEaZFlQWft2XTibJanDnteYBiju_r9I3MAMrijj0vvQ)
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-react/React-Js-Components.zip) **for this task.**
 
 Use the provided **styles** to **create** a page with the following structure:
 
