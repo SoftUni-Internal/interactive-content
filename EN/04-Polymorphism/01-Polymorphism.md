@@ -19,6 +19,8 @@ Each type will provide it's own implementation of the behaviour.
 
 [slide hideTitle]
 
+# Superclass
+
 For example, lets say we have **superclass** called `Mammal` that has method called `makeSound()`. 
 
 **Subclasses** of our class Mammal could be **Cats**, **Dogs**, **Pigs**, **Horses** - And they also have their individual implementation for making sound.
