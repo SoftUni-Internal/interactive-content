@@ -868,11 +868,8 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| The rollercoaster departures |
-|10| |
-|2| |
-|15| |
-|24| |
+|`['2', '10', '2', '15', '24']`| The rollercoaster departures |
+
 
 [/task-description]
 [tests]
@@ -936,6 +933,36 @@ The rollercoaster departures
 [/input]
 [output]
 The rollercoaster departures
+[/output]
+[/test]
+[test]
+[input]
+3
+10
+5
+10
+15
+18
+5
+30
+[/input]
+[output]
+The rollercoaster departures
+[/output]
+[/test]
+[test]
+[input]
+10
+10
+5
+12
+9
+8
+1
+23
+[/input]
+[output]
+Waiting...
 [/output]
 [/test]
 [/tests]
