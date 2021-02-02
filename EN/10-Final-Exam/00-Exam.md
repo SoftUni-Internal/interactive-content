@@ -2,6 +2,8 @@
 
 # Triple S – SoftUni Stores System
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/10.Final-Exam-Resources.zip) **for this exam.**
+
 Because of the fact that the students in the Java Track are the best in SoftUni, 
 
 with а look into the future, they decided to create databases for all eventually future businesses of the SoftUni. 
