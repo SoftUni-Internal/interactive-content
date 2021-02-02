@@ -269,11 +269,20 @@ Write a program, which:
 [code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function equalPairs(input) {
+function equalPairs(n, numbers) {
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
@@ -286,11 +295,8 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| Yes, value=\-1 |
-|\-1| |
-|0| |
-|0| |
-|\-1| |
+|`2, ['-1', '0', '0', '-1']`| Yes, value=\-1 |
+
 
 [/task-description]
 [tests]
