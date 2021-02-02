@@ -84,6 +84,7 @@ Write a program, which:
 1
 [/output]
 [/test]
+[test]
 [input]
 4
 [/input]
@@ -94,6 +95,7 @@ Write a program, which:
 1
 [/output]
 [/test]
+[test]
 [input]
 3
 [/input]
@@ -160,6 +162,7 @@ Write a program, which:
 1
 [/output]
 [/test]
+[test]
 [input]
 4
 [/input]
@@ -170,6 +173,7 @@ Write a program, which:
 1
 [/output]
 [/test]
+[test]
 [input]
 3
 [/input]

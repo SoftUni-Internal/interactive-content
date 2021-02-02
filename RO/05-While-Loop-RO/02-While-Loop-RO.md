@@ -85,6 +85,7 @@ Scrieți un program care:
 1
 [/output]
 [/test]
+[test]
 [input]
 4
 [/input]
@@ -95,6 +96,7 @@ Scrieți un program care:
 1
 [/output]
 [/test]
+[test]
 [input]
 3
 [/input]
@@ -165,6 +167,7 @@ Scrieți un program care:
 1
 [/output]
 [/test]
+[test]
 [input]
 4
 [/input]
@@ -175,6 +178,7 @@ Scrieți un program care:
 1
 [/output]
 [/test]
+[test]
 [input]
 3
 [/input]
