@@ -318,16 +318,8 @@ Write a program, which:
 [code-task title="Greatest Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function greatestNumber(n, ...numbers) {
-let max = -Infinity;
-
-for(let i = 1; i <=n; i++){
-    let number = Number(numbers.shift());
-    if(number > max){
-        max = number;
-    }
-}
-console.log(max);
+function greatestNumber(n, numbers) {
+  // Write your code here
 }
 ```
 [/code-editor]
