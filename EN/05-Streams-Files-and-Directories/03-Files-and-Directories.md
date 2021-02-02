@@ -87,7 +87,7 @@ Use **Path** and **Files** Classes.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -224,7 +224,7 @@ Create a program that lists the names and file sizes (**in bytes**) of all files
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
