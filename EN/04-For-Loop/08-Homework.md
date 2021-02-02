@@ -1159,17 +1159,7 @@ On the first line print the sum of the numbers, and on the next line the corresp
 [/input]
 [output]
 The sum: 1683
-108
-117
-126
-135
-144
-153
-162
-171
-180
-189
-198
+108 117 126 135 144 153 162 171 180 189 198
 [/output]
 [/test]
 [test]
@@ -1179,18 +1169,7 @@ The sum: 1683
 [/input]
 [output]
 The sum: 594
-0
-9
-18
-27
-36
-45
-54
-63
-72
-81
-90
-99
+0 9 18 27 36 45 54 63 72 81 90 99
 [/output]
 [/test]
 [test]
@@ -1200,11 +1179,7 @@ The sum: 594
 [/input]
 [output]
 The sum: 135
-9
-18
-27
-36
-45
+9 18 27 36 45
 [/output]
 [/test]
 [test]
@@ -1215,6 +1190,46 @@ The sum: 135
 [output]
 The sum: 9000
 9000
+[/output]
+[/test]
+[test]
+[input]
+1000
+1300
+[/input]
+[output]
+The sum: 38016
+1008 1017 1026 1035 1044 1053 1062 1071 1080 1089 1098 1107 1116 1125 1134 1143 1152 1161 1170 1179 1188 1197 1206 1215 1224 1233 1242 1251 1260 1269 1278 1287 1296
+[/output]
+[/test]
+[test]
+[input]
+500
+630
+[/input]
+[output]
+The sum: 8505
+504 513 522 531 540 549 558 567 576 585 594 603 612 621 630
+[/output]
+[/test]
+[test]
+[input]
+200
+260
+[/input]
+[output]
+The sum: 1377
+207 216 225 234 243 252
+[/output]
+[/test]
+[test]
+[input]
+120
+260
+[/input]
+[output]
+The sum: 2835
+126 135 144 153 162 171 180 189 198 207 216 225 234 243 252
 [/output]
 [/test]
 [/tests]
