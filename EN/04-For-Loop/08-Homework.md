@@ -120,7 +120,6 @@ Write a program, which:
 |`5, ['10', '304', '0', '0', '50']`| Max number: 304 |
 ||Min number: 0|
 
-
 [/task-description]
 [tests]
 [test]
@@ -199,8 +198,8 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 32 |
-|2||
+|5, 2| 32 |
+
 
 [/task-description]
 [tests]

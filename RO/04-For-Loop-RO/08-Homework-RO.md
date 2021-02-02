@@ -197,8 +197,7 @@ Scrieți un program care:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|5| 32 |
-|2||
+|5, 2| 32 |
 
 [/task-description]
 [tests]
