@@ -84,6 +84,25 @@ Write a program, which:
 1
 [/output]
 [/test]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
+[input]
+3
+[/input]
+[output]
+3
+2
+1
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -103,15 +122,15 @@ Write a program, which:
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
-  let inputNumber = Number(input.shift());
-  
-  while (inputNumber >= 1) {
-    console.log(inputNumber);
-    inputNumber--;
-  }
+ // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {code(Number(input[0]))}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
@@ -136,6 +155,25 @@ Write a program, which:
 [output]
 5
 4
+3
+2
+1
+[/output]
+[/test]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
+[input]
+3
+[/input]
+[output]
 3
 2
 1

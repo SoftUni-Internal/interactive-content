@@ -51,6 +51,11 @@ function decreasingNumbers (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {code(Number(input[0]))}
+```
+[/code-adapter]
 [task-description]
 # Cerință
 Scrieți un program care:
@@ -75,6 +80,25 @@ Scrieți un program care:
 [output]
 5
 4
+3
+2
+1
+[/output]
+[/test]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
+[input]
+3
+[/input]
+[output]
 3
 2
 1
@@ -108,6 +132,11 @@ function decreasingNumbers (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {code(Number(input[0]))}
+```
+[/code-adapter]
 [task-description]
 # Cerință
 Scrieți un program care:
@@ -121,6 +150,7 @@ Scrieți un program care:
 ||3 |
 ||2 |
 || 1|
+
 [/task-description]
 [tests]
 [test]
@@ -130,6 +160,25 @@ Scrieți un program care:
 [output]
 5
 4
+3
+2
+1
+[/output]
+[/test]
+[input]
+4
+[/input]
+[output]
+4
+3
+2
+1
+[/output]
+[/test]
+[input]
+3
+[/input]
+[output]
 3
 2
 1
