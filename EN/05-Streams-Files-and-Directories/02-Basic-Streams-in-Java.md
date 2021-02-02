@@ -43,7 +43,7 @@ Write every space or new line as it is, e.g. as a space or a new line.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -222,7 +222,7 @@ A valid integer is **surrounded with white spaces**.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -330,7 +330,7 @@ Line numbers **start from one**.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
