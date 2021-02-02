@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Homework
 
-Download the resources: [mega.nz](https://mega.nz/file/GMB1SIoS#t1uL18rgy0jW9rOcspgLbV_kL0xUt9q2_zBXR2Bz0ZE)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Exercise-Resources.zip) **for this task.**
 
 # Problem: Database
 
@@ -38,7 +38,7 @@ Do not forget to **test the constructor(s).** They are methods too!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Extended Database
 
@@ -82,7 +82,7 @@ Do not forget to test the constructor(s). They are methods too!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Iterator Test
 
@@ -136,7 +136,7 @@ Create tests, so you are sure all methods in the class ListIterator are working 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Problem: Custom Linked List
 
@@ -153,7 +153,7 @@ You are given a data structure that needs to be tested. Use the Java file **Cust
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Tire Pressure Monitoring System
 
