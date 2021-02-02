@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Refactoring
 
@@ -39,7 +39,7 @@ class OutputFormatter { public static void print() { … } }
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Student System
 [code-task title="Problem: Student System" taskId="ee31d215-7910-4bd0-83f9-b336496d283b" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -55,6 +55,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-basics/01-Java-OOP-basics-More-OOP-Concepts-Lab-Resources.zip) **for this task.**
+
 You are given a **working project** for a small **Student System**, but the code is very poorly organized. Break up the code **logically** into **smaller functional units – methods** and **classes** and don’t break the functionality.
 
 The program supports the following commands:
@@ -64,8 +67,6 @@ The program supports the following commands:
 - “**Exit**” – closes the program.
 
 **Do not** add any **extra validation** or **functionality** to the app!
-
-Download the resources folder [here](https://mega.nz/file/7JgGDZzD#L37q5RDXatFRTFlsQiRZnSJPlNvXoSydMGlRl0xUWiM)
 
 ## Submit
 Submit .zip
@@ -154,7 +155,7 @@ Stamat is 12 years old. Excellent student.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 ## Solution: Student System
 
