@@ -76,11 +76,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/03.MySQL-Basic-CRUD-Databases-Lab.zip) **for this task.**
+
 Download and get familiar with the **hotel** database schemas and tables. 
 
 You will use it in the following exercises to write queries.
-
-Download resources [here](https://mega.nz/file/PN4TTaSD#TxOn0RfSAhh7oLmediuFI6qbfS0A5y43yxqdx5PTCw4).
 
 Write a query to select all employees and retrieve information about their **id, first_name, last_name, and job_title ordered by id.**
 
