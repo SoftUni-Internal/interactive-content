@@ -206,15 +206,6 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
-[input]
-5
-2
-[/input]
-[output]
-32
-[/output]
-[/test]
 [test]
 [input]
 4
