@@ -1,21 +1,25 @@
 # Queue: First In First Out (FIFO)
 
 [slide hideTitle]
-# Queue Functionality
 
-A Queue is a "First In First Out" - **FIFO** data structure.
+# Queues
 
-It models a **queue** in **real-life**, you might have seen in front of a cinema, a shopping mall, a metro, or a bus.
+**Queues** are data structures similar to **stacks**. It keeps its elements in sorted order. Queue elements are ordered based on the **FIFO** principle - **First In First Out**. When you add an element, it is always placed **at the bottom** of the queue. Removing an element removes it from **the top** of the queue.
 
-Just like queues in real life, **new elements** in a Queue data structure are added **at the back** and **removed from the front**. 
+This data structure is modeled based on queues in real life, where the person who comes first is served before everyone else.
+
+[/slide]
+
+[slide hideTitle]
 
 # Queue: Abstract Data Type
 
-- Adding an element at the end of the queue
+
+- Adding an element to the the end of the queue (the bottom of the queue)
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-4.png" /]
 
-- Removing the first element from the queue
+- Removing the first element from the queue (the first element is the element at the top)
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-5.png" /]
 
@@ -27,18 +31,41 @@ Just like queues in real life, **new elements** in a Queue data structure are ad
 [/slide]
 
 [slide hideTitle]
-# Java Queue Implementation and Built-In Methods
+
+# Implementing Queue with ArrayDeque
+
 
 - Queue Implementation using `ArrayDeque<E>`
+
 ```java
 ArrayDeque<Integer> queue = new ArrayDeque<>();
 ```
 
-- `offer(element)` or `add(element)`: both methods add elements at the end of the queue
+- `offer(element)` and `add(element)` - both methods add elements to the end of the queue. The difference between them is that:
 
-    - `add()`:throws exception if queue is full
+    - `add()` - throws **exception** if the queue is full
 
-    - `offer()`: returns false if queue is full
+    - `offer()` - returns **false** if the queue is full
+
+
+- `poll()` and `remove()` - both methods remove the first (the top) element from the queue:
+
+    - `remove()` - throws **exception** if the queue is empty
+
+    - `poll()` - **returns null** if the queue is empty, otherwise returns the removed element
+
+
+- `peek()` - gets the value of the first element
+
+[/slide]
+
+[slide hideTitle]
+
+# Queue Operations
+
+## Add() / Offer()
+
+Both functions are used for adding elements to the top of the queue.
 
 ```java live 
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -50,13 +77,23 @@ queue.offer(10);
 System.out.println(queue);
 ```
 
+They are used in different scenarios:
+
+- if the queue has no size restriction (unlimited capacity queue) - then you can use either of the two functions
+
+- if the queue is capacity-restricted, it is generally better to use `offer()` because if the function fails, it simply returns  **false**. If you use `add()` with a capacity-restricted queue and it failed, this would result in an **IllegalStateException** that has to be handled
+
 [image assetsSrc="Java-Advanced-Stack-and-Queues-7.gif" /]
 
-- `poll()` or `remove()`: both methods remove the first element from the queue
 
-    - `remove()`: throws exception if the queue is empty
+## Remove() / Poll()
 
-    - `poll()`: returns null if queue is empty, otherwise returns the removed element
+Both functions remove the first/top element of the queue, removing it from the queue.
+
+The main difference between the two is that when used on an empty queue `poll()` returns **null**, while `remove()` throws a **NoSuchElementException**.
+
+
+Here is an example with `poll()`:
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -66,13 +103,34 @@ queue.add(5);
 queue.offer(10);
 
 // remove
-System.out.println("Removed element is: " + queue.poll());
+System.out.println("The removed element is: " + queue.poll());
 queue.forEach(element -> System.out.print(element + " "));
 ```
+It does not matter if we use **remove** or **poll** here. Both would do exactly the same, because the queue contains some elements.
+
+Things are different when working with an empty queue:
+
+``java live
+ArrayDeque<Integer> queue = new ArrayDeque<>();
+System.out.println("The removed element is: " + queue.poll());
+```
+
+The above results in **null** but if you try using `remove()` in the same scenario, you end up with an error:
+
+``java live
+ArrayDeque<Integer> queue = new ArrayDeque<>();
+System.out.println(queue.remove());
+```
+
+Running the last piece of code should result in a **NoSuchElementException**.
+
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-8.gif" /]
 
-- `peek()`:getting the value of the first element
+
+## Peek()
+
+This function returns the first element of the queue (the bottom element), without removing it.
 
 ```java live
 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -81,34 +139,36 @@ queue.offer(2);
 queue.add(5);
 queue.offer(10);
 
-System.out.println("First element is: " + queue.peek());
+System.out.println("The first element is: " + queue.peek());
+queue.forEach(element -> System.out.print(element + " "));
 ```
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-9.gif" /]
 
 [/slide]
 
+
 [slide hideTitle]
 # Utility Methods
 
-- `size()` - returns the number of elements in deque
+- `size()` - returns the number of elements in the queue
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Tesla Model S");
-queueOfCars.add("Nio ES8");
-queueOfCars.add("Lucid Air");
+queueOfCars.add("Of Mice and Men");
+queueOfCars.add("The Great Escape");
+queueOfCars.add("A Guide in Lucid Dreaming");
 
-System.out.println("The size is: " + queueOfCars.size());
+System.out.println("The size of this queue is: " + queueOfCars.size());
 ```
 
 - `toArray()` - converts the queue to an array
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.add("Tesla Model S");
-queueOfCars.add("Nio ES8");
-queueOfCars.add("Lucid Air");
+queueOfCars.add("Rocket");
+queueOfCars.add("Paper");
+queueOfCars.add("Tank");
 
 Integer[] arr = queueOfCars.toArray();
 
@@ -117,18 +177,23 @@ Integer[] arr = queueOfCars.toArray();
     }
 ```
 
-- `contains()` - checks whether a deque contains the element or not
+- `contains(element)` - checks if the queue contains the element or not. Returns **true** if the element is found and **false** if it is not found.
 
 ```java live
 ArrayDeque<String> queueOfCars = new ArrayDeque<>();
-queueOfCars.push("Tesla Model S");
-queueOfCars.push("Nio ES8");
-queueOfCars.push("Lucid Air");
+queueOfCars.push("Plush Bear");
+queueOfCars.push("Ridiculous Rabbit");
+queueOfCars.push("Boiler");
 
 System.out.println(queueOfCars.contains("BMW 7"));
 ```
 
-## Overview of All Operations 
+[/slide]
+
+[slide hideTitle]
+# Overview of All Operations
+
+The animation below illustrates all the queue operations that we can use for solving the upcoming programming problems.
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-11.gif" /]
 
@@ -150,11 +215,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Hot potato is a game in which **children form a circle and start passing a hot potato**.
+Hot potato is a game in which **kids form a circle and start passing a hot potato**.
 
 The counting starts with the first kid.
 
-**Every n-th toss the child left with the potato leaves the game**.
+**Every n-th toss, the kid left holding the potato leaves the game**.
 
 When a kid leaves the game, it passes the potato forward.
 
@@ -162,9 +227,9 @@ This continues repeating **until there is only one kid left**.
 
 Create a program that simulates the game of Hot Potato.
 
-**Print every kid that is removed from the circle**.
+**Print the name of every kid that is removed from the circle**.
 
-In the end, **print the kid that is left the last**.
+In the end, **print the name of the last kid**.
 
 ## Examples
 | **Input** | **Output** |
@@ -325,13 +390,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] children = scanner.nextLine().split("\\s+");
+        String[] kidren = scanner.nextLine().split("\\s+");
         int n = Integer.parseInt(scanner.nextLine());
 
         ArrayDeque<String> queue = new ArrayDeque<>();
 
-        for (String child : children) {
-            queue.offer(child);
+        for (String kid : kidren) {
+            queue.offer(kid);
         }
         while (queue.size() > 1) {
             for (int i = 1; i < n; i++) {
@@ -346,11 +411,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Hot potato is a game in which **children form a circle and start passing a hot potato**.
+Hot potato is a game in which **kids form a circle and start passing a hot potato**.
 
 The counting starts with the first kid.
 
-**Every n-th toss the child left with the potato leaves the game**.
+**Every n-th toss, the kid left holding the potato leaves the game**.
 
 When a kid leaves the game, it passes the potato forward.
 
@@ -358,9 +423,9 @@ This continues repeating **until there is only one kid left**.
 
 Create a program that simulates the game of Hot Potato.
 
-**Print every kid that is removed from the circle**.
+**Print the name of every kid that is removed from the circle**.
 
-In the end, **print the kid that is left the last**.
+In the end, **print the name of the last kid**.
 
 ## Examples
 | **Input** | **Output** |
@@ -527,11 +592,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** (cycles start from 1).
+Rework the previous problem so that a **kid is removed only on a composite (not prime) cycle** (cycles start from 1).
 
-If a **cycle is prime**, just **print the child's name**.
+If a **cycle is prime**, just **print the kid's name**.
 
-As before, print the name of the child that is left last.
+As before, print the name of the last remaining kid.
  
 ## Examples
 | **Input** | **Output** |
@@ -701,13 +766,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] children = scanner.nextLine().split("\\s+");
+        String[] kidren = scanner.nextLine().split("\\s+");
         int n = Integer.parseInt(scanner.nextLine());
 
         ArrayDeque<String> queue = new ArrayDeque<>();
 
-        for (String child : children) {
-            queue.offer(child);
+        for (String kid : kidren) {
+            queue.offer(kid);
         }
         int cycle = 1;
 
@@ -739,11 +804,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Rework the previous problem so that a **child is removed only on a composite (not prime) cycle** (cycles start from 1).
+Rework the previous problem so that a **kid is removed only on a composite (not prime) cycle** (cycles start from 1).
 
-If a **cycle is prime**, just **print the child's name**.
+If a **cycle is prime**, just **print the kid's name**.
 
-As before, print the name of the child that is left last.
+As before, print the name of the last remaining kid.
 
 
 ## Examples

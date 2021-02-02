@@ -1,22 +1,21 @@
-# Stack: Last In First Out (LIFO)
+# Stacks: Last In First Out (LIFO)
 
 [slide hideTitle]
 # Stack Functionality
 
-A Stack is a data structure where you add elements to the **top** of the stack, and also remove elements from the **top** again.
-This is also referred to as the "Last In First Out" - **LIFO** principle. 
+**Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
 
 - Stacks provide the following functionality:
-    - Pushing an element at the top of the stack
-    - Popping element from the top of the stack
-    - Getting(**Peek**) the topmost element without removing it
+    - **Pushing** an element to the top of the stack
+    - **Popping** an element from the top of the stack
+    - Getting (**peeking at**) the top element without removing it
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Java Stack Implementation and Built-In Methods
+# Implementing Stack with ArrayDeque
  
 - Stack Implementation using `ArrayDeque<E>`
 
@@ -24,7 +23,7 @@ This is also referred to as the "Last In First Out" - **LIFO** principle.
 ArrayDeque<Integer> stack = new ArrayDeque<>();
 ```
 
-- `push(element)`: adding elements at the top of the stack
+- `push(element)` - adds an element to the top of the stack:
 
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -35,7 +34,7 @@ stack.push(10);
 stack.forEach(System.out::println);
 ```
 
-- `pop()`: removing the topmost element
+- `pop()` - removes the top element from the stack:
 
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -49,7 +48,7 @@ stack.pop();
 stack.forEach(System.out::println);
 ```
 
-- `peek()`: getting the value of the topmost element
+- `peek()`: gets the value of the top element in the stack:
 
 ```java live
 ArrayDeque<Integer> stack = new ArrayDeque<>();
@@ -62,9 +61,6 @@ Integer element = stack.peek();
 
 System.out.println(element);
 ```
-
-[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
-
 [/slide]
 
 
@@ -72,7 +68,7 @@ System.out.println(element);
 [slide hideTitle]
 # Utility Methods
 
-- `size()`: returns the number of elements in the deque
+- `size()` - returns the number of elements in the stack
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -83,7 +79,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("The size is: " + stackOfCars.size());
 ```
 
-- `isEmpty()`: checks whether the deque is empty or not
+- `isEmpty()` - checks whether the stack is empty or not
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -94,7 +90,7 @@ stackOfCars.push("Lucid Air");
 System.out.println("Is the Stack empty? " + stackOfCars.isEmpty());
 ```
 
-- `contains()`: checks whether a deque contains the element or not
+- `contains(element)` - checks whether a stack contains a specific element. Returns **true** if it does, otherwise it returns **false**
 
 ```java live
 ArrayDeque<String> stackOfCars = new ArrayDeque<>();
@@ -104,6 +100,15 @@ stackOfCars.push("Lucid Air");
 
 System.out.println(stackOfCars.contains("BMW M3"));
 ```
+
+[/slide]
+
+[slide hideTitle]
+# Overview of All Operations
+
+The animation below illustrates all the stack operations that we can use for solving the upcoming programming problems.
+
+[image assetsSrc="Java-Advanced-Stack-and-Queues-10.gif" /]
 
 [/slide]
 
@@ -123,17 +128,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that takes 2 types of browser instructions:
+Write a program that takes 2 types of browser commands:
 
-- Normal navigation: a URL is set, given by a string
+- Normal navigation: a **URL**, provided in **string format**
 
-- The string `back` that sets the current URL to the last set URL
+- **back** - command that sets the current URL to the last set URL
 
-After each instruction, the program should **print the current URL**. 
+After each command, the program should **print the current URL**. 
 
-If the **back** instruction can not be executed, print `no previous URLs`.
+If the **back** command can not be executed, print: `no previous URLs`.
 
-The input **ends** with the `Home` command, then simply you have to **stop the program**.
+The input **ends** with the `Home` command and the program **stops** at that point.
 
 
 ## Examples
@@ -151,8 +156,8 @@ The input **ends** with the `Home` command, then simply you have to **stop the p
 
 ## Hints
 - Use `ArrayDeque<>`
-- Use `String` to keep current page
-- Use `push()`, when moving to next page
+- Use `String` to store the current URL
+- Use `push()`, when moving to the next URL
 - Use `pop()`, when going back
 
 
@@ -342,18 +347,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that takes 2 types of browser instructions:
+Write a program that takes 2 types of browser commands:
 
-- Normal navigation: a URL is set, given by a string
+- Normal navigation: a **URL**, provided in **string format**
 
-- The string `back` that sets the current URL to the last set URL
+- **back** - command that sets the current URL to the last set URL
 
-After each instruction, the program should **print the current URL**. 
+After each command, the program should **print the current URL**. 
 
-If the **back** instruction can not be executed, print `no previous URLs`.
+If the **back** command can not be executed, print: `no previous URLs`.
 
-The input **ends** with the `Home` command, then simply you have to **stop the program**.
-
+The input **ends** with the `Home` command and the program **stops** at that point.
 
 ## Examples
 | **Input** | **Output** |
@@ -370,8 +374,8 @@ The input **ends** with the `Home` command, then simply you have to **stop the p
 
 ## Hints
 - Use `ArrayDeque<>`
-- Use `String` to keep current page
-- Use `push()`, when moving to next page
+- Use `String` to store the current URL
+- Use `push()`, when moving to the next URL
 - Use `pop()`, when going back
 
 
@@ -538,9 +542,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-**Create a simple calculator** that can **evaluate simple expressions** that will not hold any operator different from addition and subtraction.
+**Create a calculator** to **evaluate simple expressions**. It should work with only two operations - addition (+) and subtraction (-).
 
-There will not be parentheses or operator precedence.
+There will be no operations placed in brackets and implementing operator precedence **is not** required.
 
 Solve the problem **using a Stack**.
 
@@ -554,9 +558,9 @@ Solve the problem **using a Stack**.
 | 2 - 2 + 5 | 5 |
 
 ## Hints
-- Use an `ArrayDeque<>`
+- Use `ArrayDeque<>`
 - Consider using the `add()` method
-- You can either 
+- You can either:
     - add the elements and then pop them out 
     - or push them and reverse the stack
 
@@ -661,9 +665,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-**Create a simple calculator** that can **evaluate simple expressions** that will not hold any operator different from addition and subtraction.
+**Create a calculator** to **evaluate simple expressions**. It should work with only two operations - addition (+) and subtraction (-).
 
-There will not be parentheses or operator precedence.
+There will be no operations placed in brackets and implementing operator precedence **is not** required.
 
 Solve the problem **using a Stack**.
 
@@ -677,12 +681,11 @@ Solve the problem **using a Stack**.
 | 2 - 2 + 5 | 5 |
 
 ## Hints
-- Use an `ArrayDeque<>`
+- Use `ArrayDeque<>`
 - Consider using the `add()` method
-- You can either 
+- You can either:
     - add the elements and then pop them out 
     - or push them and reverse the stack
-
 
 [/task-description]
 [code-io /]
@@ -764,8 +767,10 @@ public class Main {
 [task-description]
 ## Description
 Create a simple program that **can convert a decimal number to its binary representation**.
+
 Implement an elegant solution **using a Stack**.
-**Print the binary representation** back at the terminal.
+
+**Print the binary representation** to the console.
 
 ## Examples
 | **Input** | **Output** |
@@ -778,7 +783,7 @@ Implement an elegant solution **using a Stack**.
 | 1024 | 10000000000 |
 
 ## Hints
-- If the given number is 0, just print 0
+- If the given number is 0, print 0
 - Else, while the number is greater than zero, divide it by 2 and push the reminder into the stack
 
 ```java
@@ -788,7 +793,7 @@ while (decimal != 0) {
 }
 ```
 
-- When you are done dividing, pop all reminders from the stack, that is the binary representation
+- When you are done dividing, pop all reminders from the stack. This is the binary representation.
 
 
 [/task-description]
@@ -888,8 +893,10 @@ public class Main {
 [task-description]
 ## Description
 Create a simple program that **can convert a decimal number to its binary representation**.
+
 Implement an elegant solution **using a Stack**.
-**Print the binary representation** back at the terminal.
+
+**Print the binary representation** to the console.
 
 ## Examples
 | **Input** | **Output** |
@@ -902,7 +909,7 @@ Implement an elegant solution **using a Stack**.
 | 1024 | 10000000000 |
 
 ## Hints
-- If the given number is 0, just print 0
+- If the given number is 0, print 0
 - Else, while the number is greater than zero, divide it by 2 and push the reminder into the stack
 
 ```java
@@ -912,8 +919,7 @@ while (decimal != 0) {
 }
 ```
 
-- When you are done dividing, pop all reminders from the stack, that is the binary representation
-
+- When you are done dividing, pop all reminders from the stack. This is the binary representation.
 
 [/task-description]
 [code-io /]
@@ -1011,13 +1017,12 @@ Scan through the string and **extract** each **sub-expression**.
 | `(2 + 3) - (2 + 3)` | `(2 + 3)` |
 |  | `(2 + 3)` |
 
- ## Hints 
- - Use a stack, namely an `ArrayDeque()`
- - Scan through the expression searching for brackets 
+## Hints 
+- Use a stack, implemented with`ArrayDeque()` 
+- Scan through the expression searching for brackets 
    - If you find an opening bracket, push the index into the stack 
-   - If you find a closing bracket pop the topmost element from the stack. This is the index of the opening bracket. 
+   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket. 
    - Use the current and the popped index to extract the sub-expression 
-
 [/task-description]
 [code-io /]
 [tests]
@@ -1142,10 +1147,10 @@ Scan through the string and **extract** each **sub-expression**.
 |  | `(2 + 3)` |
 
 ## Hints 
-- Use a stack, namely an `ArrayDeque()` 
+- Use a stack, implemented with`ArrayDeque()` 
 - Scan through the expression searching for brackets 
    - If you find an opening bracket, push the index into the stack 
-   - If you find a closing bracket pop the topmost element from the stack. This is the index of the opening bracket. 
+   - If you find a closing bracket, pop the top element from the stack. This is the index of the opening bracket. 
    - Use the current and the popped index to extract the sub-expression 
 
 [/task-description]

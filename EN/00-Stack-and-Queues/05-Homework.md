@@ -16,11 +16,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads **N integers** from the console and **reverses them using a stack**.
+Write a program that receives an input of **N integers** from the console and **reverses their order using a stack**.
 
-Use the `ArrayDeque <Integer>` class.
+Use the `ArrayDeque<Integer>` class.
 
-Just put the input numbers in the stack and pop them.
+Add the input numbers to a stack and **pop** them.
 
 ## Examples
 | **Input** | **Output** |
@@ -104,26 +104,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given an integer **N** representing the **number of elements to push onto the stack**, an integer **S** representing the **number of elements to pop from the stack** and finally an integer **X** , an element **that you should check whether is present in the stack**.
+You will be given an integer **N** representing the **number of elements to push onto the stack**, an integer **S** representing the **number of elements to pop from the stack**, and finally an integer **X**. Check if the **X** element is present in the stack or not.
 
-If it is, print **true** on the console.
+If it is, print **true** to the console.
 
 If it is not, print the smallest element currently present in the stack.
 
 ## Input
 
-- On the first line, you will be given **N** , **S** and **X** separated by a single space.
-- On the next line, you will be given a line of numbers **separated by one or more white spaces**.
+- On the first line, you will be given **N**, **S** and **X** separated by a single space
+- On the next line, you will be given a line of numbers **separated by one or more white spaces**
 
 ## Output
 
-- On a single line print either **true** if **X** is present in the stack otherwise **print the smallest** element in the stack.
-- If the stack is empty print 0.
+- Print **true** if **X** is present in the stack, otherwise **print the smallest** element in the stack
+- If the stack is empty print 0
 
 ## Examples
 | **Input** | **Output** | **Comments** |
 | :---: | :---: | :---: |
-| 5 2 13 | true | We have to **push 5** elements. Then we **pop 2** of them. Finally, we have to check whether 13 is present in the stack. Since it is we print **true**. |
+| 5 2 13 | true | We have to **push 5** elements. Then we **pop 2** of them. Finally, we have to check whether 13 is present in the stack. Since it is, we print **true**. |
 | 1 13 45 32 4 |  |  |
 
 | **Input** | **Output** | **Comments** |
@@ -227,13 +227,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have an empty sequence, and you will be given  **N**  commands.
+You have an empty sequence, and you will be given **N**  commands.
 
 Each command is one of the following types:
 
-- `1 X` - **Push** the element **X** into the stack.
-- `2` - **Delete** the element present at the top of the stack.
-- `3` - **Print** the maximum element in the stack.
+- `1 X` - **Push** the element **X** into the stack
+- `2` - **Delete** the element present at the top of the stack
+- `3` - **Print** the maximum element in the stack to the console
 
 ## Input
 
@@ -249,16 +249,16 @@ Each command is one of the following types:
 ## Examples
 | **Input** | **Output** | **Comments** |
 | :---: | :---: | :---: |
-| 9 | 26 | 9 commands |
-| 1 97 | 91 | Push 97 |
+| 9 |  | 9 commands |
+| 1 97 |  | Push 97 |
 | 2 |  | Pop an element |
 | 1 20 |  | Push 20 |
 | 2 |  | Pop an element |
 | 1 26 |  | Push 26 |
 | 1 20 |  | Push 20 |
-| 3 |  | Print the maximum element (26) |
+| 3 | 26 | Print the maximum element (26) |
 | 1 91 |  | Push 91 |
-| 3 |  | Print the maximum element (91) |
+| 3 |91 | Print the maximum element (91) |
 
 [/task-description]
 [code-io /]
@@ -468,16 +468,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will be given an integer **N** representing the **number of elements to enqueue** (add), an integer **S** representing the **number of elements to dequeue** (remove/poll) from the queue and finally an integer **X**, an element that you should **check whether is present in the queue**.
+You will be given an integer **N** representing the **number of elements to enqueue** (add), an integer **S** representing the **number of elements to dequeue** (remove/poll) from the queue and finally an integer **X**. **Check whether X is present in the queue**.
 
-If it is print **true** on the console, if it is not **print the smallest element currently present in the queue**.
+If it is, print **true** to the console, if it is not **print the smallest element currently present in the queue**.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
 | :---: | :---: | :---: |
 | 5 2 32 | true | We have to **push 5** elements.  |
 | 1 13 45 32 4 |  | Then we **pop 2** of them.  |
-|  |  | Finally, we have to check whether 13 is present in the stack. Since it is we print **true**.  |
+|  |  | Finally, we have to check whether 13 is present in the stack. Since it is, we print **true**.  |
 
 
 | **Input** | **Output** |
@@ -578,27 +578,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Somewhere in the future, there is a robotics factory.
+Somewhere in the future, a factory is created where the assembly line workers are all robots.
 
-The current project is assembly-line robots.
+Each robot has **processing time**, which is the time it needs to process a product. 
 
-Each robot has a **processing time**, the time it needs to process a product. 
-
-When a **robot is free** it should **take a product for processing** and log his name, product, and processing start time.
+When a **robot is free** it should **take a product for processing**, log the robot's name, product, and processing start time.
 
 Each robot **processes a product coming from the assembly line**. 
 
 A **product is coming** from the line **each second** (so the first product should appear at `[start time + 1 second]`). 
 
-If a product passes the line and **there is not a free robot** to take it, it should be **queued at the end of the line again**.
+If a product passes the line and **no robot is currently free** to take it, it should be **queued at the end of the line again**.
 
-The robots are **standing on the line in the order of their appearance**.
+The robots are **standing at the assembly line in the order of their appearance**.
 
 ## Input
 
-- On the first line, you will get the names of the robots and their processing times in format `robotName-processTime;robotName-processTime;robotName-processTime`
-- On the second line, you will get the starting time in format `hh:mm:ss`
-- Next, until the `End` command, you will get a product on each line.
+- On the first line, you will receive the names of the robots and their processing times in the format `robotName-processTime;robotName-processTime;robotName-processTime`
+- On the second line, you will receive the starting time in the format `hh:mm:ss`
+- Next, until the `End` command is received, you will get a product on each line.
 
 ## Examples
 | **Input** | **Output** |
@@ -1311,26 +1309,25 @@ public class Main {
 
 **Given a sequence consisting of parentheses**, determine **whether the expression is balanced**.
 
-A sequence of parentheses **is balanced if** every open parenthesis can be paired uniquely with a closing parenthesis that occurs after the former.
+A sequence of parentheses **is balanced if** every open parenthesis can be paired uniquely with a closing parenthesis that occurs after the opening parenthesis.
 
 Also, **the interval between them must be balanced**.
 
 You will be given three types of parentheses: `(`,  `{`, and `[`.
 
-`{[()]}` - This is a balanced parenthesis.
+`{[()]}` - these are balanced parenthesis.
 
-`{[(])}` - This is not a balanced parenthesis.
+`{[(])}` - these are not balanced parenthesis.
 
 ## Input
 
 - Each input consists of a single line, the sequence of parentheses.
 - `1 ≤ Length of sequence ≤ 1000`
-- Each character of the sequence will be one of the following:  `{`, `}`, `(`, `)`, `[`, `]`.
+- Each character of the sequence will be one of the following:  `{`, `}`, `(`, `)`, `[`, `]`
 
 ## Output
 
-- For each test case, print on a new line `YES` if the parentheses are balanced. Otherwise, print `NO`.
-
+- For each test case, print `YES` on a new line if the parentheses are balanced. Otherwise, print `NO`.
 
 
 ## Examples
@@ -1444,20 +1441,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Each member of the **Fibonacci sequence** is calculated from the **sum of the two previous members**.
+Each element of the **Fibonacci sequence** is calculated from the **sum of the two previous elements**.
 
 The first two elements are 1, 1.
 
-Therefore the sequence goes like 1, 1, 2, 3, 5, 8, 13, 21, 34…
+Therefore the sequence goes like 1, 1, 2, 3, 5, 8, 13, 21, 34...
 
 The following sequence can be generated with an array, but that is easy, so **your task is to implement it recursively**.
 
 If the function `getFibonacci(n)` returns the nth Fibonacci number, we can express it using 
 `getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
 
-However, this will never end and in a few seconds, a Stack Overflow Exception is thrown. 
+However, this function would never stop, resulting in a Stack Overflow Exception.
 
-For the recursion to be stoped, it has to have a "bottom". 
+In order to stop the recursion, it has to have a "bottom". 
 
 The bottom of the recursion is `getFibonacci(1)`, and should return 1. 
 
@@ -1465,17 +1462,17 @@ The same goes for getFibonacci(0)`.
 
 ## Input
 
-- On a single line the user should enter the wanted Fibonacci number N where `1 <= N <= 49`
+- You will receive the wanted Fibonacci number N on a single line.  It will always be in the range `1 <= N <= 49` 
 
 ## Output
 
-- The output should be the n-th Fibonacci number counting from 0.
+- The output should be the n-th Fibonacci number counting from 0
 
 ## Hint
 
-For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations.
+For the n-th Fibonacci number, we calculate the `N - 1st` and the `N - 2nd` number, but for the calculation of `N - 1st` number we calculate the `N - 1 - 1st(N - 2nd)` and the `N - 1 - 2nd` number, so we have a lot of repeated calculations
 
-If you want to figure out how to skip those unnecessary calculations, you can search for a technique called [memoization](https://en.wikipedia.org/wiki/Memoization).
+If you want to figure out how to skip those unnecessary calculations, you can learn about a technique called [memoization](https://en.wikipedia.org/wiki/Memoization).
 
 ## Examples
 | **Input** | **Output** |
@@ -1594,39 +1591,39 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given an empty text.
+You are given a task to create  a simple text editor.
 
-Your task is to implement **4 types of commands** related to manipulating the text:
+Your task is to implement **4 types of commands** for text manipulation:
 
-- 1 `[string]` - **appends** `[string]` to the end of the text
-- 2 `[count]` - **erases** the last `[count]` elements from the text
-- 3 `[index]` - **returns** the element at position `[index]` from the text
-- 4 - **undoes** the last not-undone command of type 1 or 2 and returns the text to the state before that operation
+- 1 **[string]** - **appends** a given string to the end of the text
+- 2 **[count]** - **erases** the last **count** elements from the text
+- 3 **[index]** - **returns** the element at position **index** from the text
+- 4 - **undoes** the last command of type 1 or 2 and returns the text to the state before that operation
 
 ### Input
 
-- The first line contains **N**, the number of operations, where `1 ≤ N ≤`  **105**
-- Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`.
+- The first line contains **N**, the number of operations, where `1 ≤ N ≤ 105`
+- Each of the following **N** lines contains the name of the operation, followed by the command argument, if any, separated by space in the following format `command argument`
 - **The length of the text** will not exceed **1000000**
-- All input characters are **English letters**
-- It is **guaranteed** that the sequence of **input operation is possible to perform**
+- All input characters will be **English letters**
+- It is **guaranteed** that the sequence of **input operations is possible to perform**
 
 ### Output
 
-- For each operation of type `3` print a **single line with the returned character of that operation**.
+- For each operation of type `3` print a **single line with the character returned by this operation**.
 
 ## Examples
 | **Input** | **Output** | **Comments** |
 | :---: | :---: | :---: |
-| 8 | c | There are 8 operations. Initially, the text is empty.  |
-| 1 abc | y | Append "abc" |
-| 3 3 | a | Print third character |
+| 8 |  | There are 8 operations. Initially, there is no text.  |
+| 1 abc |  | Append "abc" |
+| 3 3 | c | Print the third character |
 | 2 3 |  | Erase 3 characters |
 | 1 xy |  | Append "xy" |
-| 3 2 |  | Print second character |
-| 4 |  | Undo last command - text is now "" |
-| 4 |  | Undo last command - text is now "abc" |
-| 3 1 |  | Print first character |
+| 3 2 | y | Print the second character |
+| 4 |  | Undo the last command - the text is now "" |
+| 4 |  | Undo the last command - the text is now "abc" |
+| 3 1 | a | Print the first character |
 
 [/task-description]
 [code-io /]
@@ -1870,20 +1867,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Mathematical expressions are **written in an infix notations**, for example `5 / ( 3 + 2 )`.
+**Infix** notation is a way of writing mathematical expressions such as `5 / ( 3 + 2 )`.
 
-However, this kind of notation is **not efficient for computer processing** , as you first need to evaluate the expression inside the brackets, so there is a lot of back and forth movement.
+However, this kind of notation is **not efficient for computer processing**, as you first need to evaluate the expression inside the brackets, so there is a lot of back and forth movement.
 
-A more suitable approach is to **convert it in the so-called postfix notations** (also called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), in which the **expression is evaluated from left to right** , for example `3 2 + 5 /`.
+A more suitable approach is to **convert it to postfix notation** (also called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), where the **expression is evaluated from left to right**. For example, `3 2 + 5 /`.
 
-Implement an **algorithm that converts** the mathematical expression **from infix notation into a postfix notation**. 
+Implement an **algorithm that converts** a mathematical expression **from infix to postfix notation**. 
 
 Use the famous [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
 ## Input
 
 - You will **receive an expression on a single line, consisting of tokens**
-- Tokens could be numbers 0-9, variables a-z, operators `+, -, *, /,` and brackets ( or )
+- Tokens could be numbers 0-9, variables a-z, operators `+, -, *, /,` and brackets **(** or **)**
 - Each token is **separated by exactly one space**
 
 ## Output
@@ -2006,20 +2003,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given  **N**  plants in a garden.
+You are given **N** number of plants in a garden.
 
-Each of these plants has been added with some amount of pesticide.
+Some amount of pesticide has been added to each of these plants.
 
-After each day, if any plant has **more pesticide** than the plant at **its left**, being weaker (more GMO) than the left one, **it dies**.
+After each day, if any plant has **more pesticide** than the plant on **its left**, it is considered weaker than the left one, so **it dies**.
 
 You are given the initial values of the pesticide and the position of each plant.
 
-Print the number of days **after** which no plant dies, i.e. the time after which there are no plants with more pesticide content than the plant to their left.
+Print the number of days **after** which no plant dies. This is the number of days after which there are no plants with more pesticide content than the plant to their left.
 
 ### Input
 
-- The input consists of an integer  **N** representing the number of plants.
-- The next **single line** consists of  **N**  integers, where every integer represents the position and amount of pesticides of each plant. `1 ≤ N ≤ 100000`
+- The input consists of an integer **N** representing the number of plants
+- The next **single line** consists of  **N** integers, where every integer represents the position and amount of pesticides of each plant. `1 ≤ N ≤ 100000`
 - Pesticides amount on a plant is between 0 and 1000000000
 
 ### Output
