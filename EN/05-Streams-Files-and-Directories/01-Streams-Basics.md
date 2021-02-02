@@ -129,7 +129,7 @@ You are given a file named "**input.txt**" (from the Resources - Folder).
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
@@ -235,7 +235,7 @@ Skip the following symbols: `,`, `.`, `!`, `?`.
 
 There is one zipped folder with resources for all exercises, that you need to use. 
 
-Download the **resources folder** [here](https://mega.nz/file/7YgFUaxb#759BYR32eIMTbn2BiXWIs0s6ip0ZahlwUOuOuFu221Y).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Lab-Resources.zip ) **that you will need.**
 
 For each exercise submit only the **output** of your program, **not the code**.
 
