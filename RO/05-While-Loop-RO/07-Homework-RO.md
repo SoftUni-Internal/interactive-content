@@ -117,11 +117,9 @@ Scrieți un program care îndeplinește următoarele cerințe:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|Alice in Wonderland| Book Found! Attempts: 3 |
-|Winnie the Pooh||
-|Peter Pan| |
-|Alice in Wonderland| |
-
+|`Alice in Wonderland, ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
+||Invalid book: Peter Pan|
+||Book found!|
 
 [/task-description]
 [tests]
@@ -134,7 +132,85 @@ Book3
 Fav Book
 [/input]
 [output]
-Book found! Attempts: 4
+Invalid book: Book1
+Invalid book: Book2
+Invalid book: Book3
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+B
+Book1
+Book2
+B
+Fav Book
+[/input]
+[output]
+Invalid book: Book1
+Invalid book: Book2
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AB
+Hello
+AB
+B
+Book
+[/input]
+[output]
+Invalid book: Hello
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AD
+SE
+GFG
+B
+RTE
+AD
+[/input]
+[output]
+Invalid book: SE
+Invalid book: GFG
+Invalid book: B
+Invalid book: RTE
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AD
+dfg
+GFG
+AD
+dfg
+dfg
+[/input]
+[output]
+Invalid book: dfg
+Invalid book: GFG
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+RD
+sdf
+gfh
+er
+RD
+dfg
+[/input]
+[output]
+Invalid book: sdf
+Invalid book: gfh
+Invalid book: er
+Book found!
 [/output]
 [/test]
 [/tests]

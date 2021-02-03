@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem and Solution: Sum Digits
 
 
@@ -88,7 +88,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem and Solution: Favorite Book
 
 [vimeo-video]
@@ -96,32 +96,38 @@ Write a program, which:
 [stream language="RO" videoId="488456416/28fe2f16f1"  /]
 [/video-vimeo]
 
-
-
 [code-task title="Favorite Book" taskId="pb-js-while-loop-Favorite-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function favoriteBook(input) {
+function favoriteBook(favoditeBook, books) {
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = input[0]
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
 
-* Reads a **book's name** from the console
-* Receives names until it gets **book with the same name as the first one**
-* Prints `Book found! Attempts: {attemptsCount}` and stops afterwards
+* Receives a favorite **book's name**
+* Receives book names until it reaches the favorite book
+* Prints `Invalid book: {book name}` for all invalid books
+* Prints `Book found!`, when finds the book and program stops
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|Alice in Wonderland| Book Found! Attempts: 3 |
-|Winnie the Pooh||
-|Peter Pan| |
-|Alice in Wonderland| |
-
+|`Alice in Wonderland, ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
+||Invalid book: Peter Pan|
+||Book found!|
 
 [/task-description]
 [tests]
@@ -134,7 +140,85 @@ Book3
 Fav Book
 [/input]
 [output]
-Book found! Attempts: 4
+Invalid book: Book1
+Invalid book: Book2
+Invalid book: Book3
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+B
+Book1
+Book2
+B
+Fav Book
+[/input]
+[output]
+Invalid book: Book1
+Invalid book: Book2
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AB
+Hello
+AB
+B
+Book
+[/input]
+[output]
+Invalid book: Hello
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AD
+SE
+GFG
+B
+RTE
+AD
+[/input]
+[output]
+Invalid book: SE
+Invalid book: GFG
+Invalid book: B
+Invalid book: RTE
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+AD
+dfg
+GFG
+AD
+dfg
+dfg
+[/input]
+[output]
+Invalid book: dfg
+Invalid book: GFG
+Book found!
+[/output]
+[/test]
+[test]
+[input]
+RD
+sdf
+gfh
+er
+RD
+dfg
+[/input]
+[output]
+Invalid book: sdf
+Invalid book: gfh
+Invalid book: er
+Book found!
 [/output]
 [/test]
 [/tests]
