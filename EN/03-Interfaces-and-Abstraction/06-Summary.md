@@ -2,10 +2,12 @@
 # Summary
 
 
-# In this lesson we learned:
+## In this lesson we learned:
 
 - Inheritance and Interfaces
+
 - How we achieve Abstraction
+
 - What are Interfaces
 
 ``` java
@@ -27,7 +29,9 @@ class Document implements Printable {
 ```
 
 - Differences between `implement` and `extends`
+
 - `default` and `static` methods
+
 - What is the concept behind abstract classes
 
 ``` java
@@ -61,11 +65,10 @@ class Main extends Device {
 
 - Interfaces vs Abstract Classes overview
 
-
-
 ## In the next lesson we will learn:
 
 - What is the concept behind `Polymorphism`
+
 - How we achieve `Polymorphism`
 
 

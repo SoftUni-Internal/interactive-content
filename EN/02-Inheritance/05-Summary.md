@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+## In this lesson you learnt:
 
 - Inheritance is a powerful tool for **code reuse**
 
@@ -37,18 +37,23 @@ public class Student extends Person {
 ```
 
 - Look for classes with the **same role**
+
 - Look for **IS-A** and **IS-A-SUBSTITUT**E for relationship
+
 - Consider **Composition** and **Delegation** instead
 
 
 ## In the next lesson we will learn:
 
-- **Encapsulation**:
-    - Hides implementation
-    - Reduces complexity
-    - Ensures that structural changes remain local
-- **Mutable** and **Immutable** objects
-- Keyword **final**
 
+- What are Inheritance and Interfaces
+
+- Abstraction as an OOP Principle
+
+- How to use Interfaces
+
+- What are Abstract Classes
+
+- Interfaces vs Abstract Classes
 
 [/slide]

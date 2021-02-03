@@ -25,10 +25,15 @@ public final class Mammal extends Animal {}
 
 ## In the next lesson we will learn:
 
+
 - What Inheritance is
+
 - **Override** methods
+
 - Look for classes with the **same role**
+
 - Look for **IS-A** and **IS-A-SUBSTITUT**E for relationship
+
 - Consider **Composition** and **Delegation** instead
 
 [/slide]
