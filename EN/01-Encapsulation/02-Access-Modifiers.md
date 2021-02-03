@@ -1121,13 +1121,6 @@ public static void main(String[] args) throws IOException {
 | Bob Manner 35 559.4 |  |
 | 20 |  |
 
-| **Input** | **Output** |
-| --- | --- |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
-
 [/task-description]
 [code-io /]
 [tests]
