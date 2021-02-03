@@ -4,7 +4,7 @@
 
 # 1. Products Shop
 
-_**Here is a link to the**_ [resources](https://mega.nz/file/TExm0JKR#iEivx7T5-IZkLfIq_7U1kJmFh56ywyFLh9JP1x2L5PA) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) **for this task.**
 
 A products shop holds **users**, **products**, and **categories for the products**.
 
