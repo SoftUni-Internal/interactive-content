@@ -363,8 +363,11 @@ function specialNumber(input) {
 Special number is number **divisible by all of its digits** without remainder. 
 
 Write a program, which: 
+
 * Receives integer
+
 * **Prints** `{num} is special`, if the number is special
+
 * Otherwise, prints `{num} is not special`
 
 # Example
@@ -385,10 +388,50 @@ Write a program, which:
 [/test]
 [test]
 [input]
-43
+22
 [/input]
 [output]
-43 is not special
+22 is special
+[/output]
+[/test]
+[test]
+[input]
+73
+[/input]
+[output]
+73 is not special
+[/output]
+[/test]
+[test]
+[input]
+41
+[/input]
+[output]
+41 is not special
+[/output]
+[/test]
+[test]
+[input]
+32
+[/input]
+[output]
+32 is special
+[/output]
+[/test]
+[test]
+[input]
+4545232
+[/input]
+[output]
+4545232 is not special
+[/output]
+[/test]
+[test]
+[input]
+88
+[/input]
+[output]
+88 is special
 [/output]
 [/test]
 [/tests]
