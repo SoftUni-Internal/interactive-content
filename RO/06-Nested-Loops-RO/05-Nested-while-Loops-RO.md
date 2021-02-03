@@ -69,23 +69,54 @@ Scrieți un program care:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
 [input]
-4
+5
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -100,20 +131,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  let height = Number(input.shift());
-  let row = 1;
-  while (row <= height) {
-    let col = 1;
-
-    let rowLine = '';
-    while (col <= row) {
-      rowLine += '*';
-      col++;
-    }
-
-    row++;
-    console.log(rowLine);
-  }
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -131,25 +149,55 @@ Scrieți un program care:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
 [input]
-4
+5
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
-
 
 [slide hideTitle]
 # Problem: Sum of Digits Calculator
@@ -163,7 +211,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function sumOfDigits(inputLines) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -285,16 +333,7 @@ Goodbye
 [code-editor language=javascript]
 ```
 function sumOfDigits(inputLines) {
-  while (true) {
-    let input = inputLines.shift();
-    if (input === "End") break;
-    let sum = 0;
-    for (let num = Number(input);
-      num > 0; num = Math.floor(num / 10))
-      sum += num % 10;
-    console.log(`Sum of digits: ${sum}`);
-  }
-  console.log("Goodbye");
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
