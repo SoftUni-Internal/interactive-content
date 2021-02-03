@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Nested for Loops
+
+interactive-programming-basics-with-java-nested-loops-23-25-nested-for-loops
+
 Statements that consist of several **for loops** located **inside each other**
 
 **Nested for loops** are used:
@@ -48,6 +51,9 @@ for (int i = 0; i < a; i++) {
 
 [slide hideTitle]
 # Problem: Triangle of Stars
+
+interactive-programming-basics-with-java-nested-loops-26-problem-triangle-of-stars
+
 [code-task title="Triangle of Stars" taskId="java-basics-nested-loops-triangle-of-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -97,6 +103,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Triangle of Stars
+
+interactive-programming-basics-with-java-nested-loops-26-problem-triangle-of-stars-solution
+
 [code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 

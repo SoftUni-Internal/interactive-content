@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Nested Loops
+
+interactive-programming-basics-with-java-nested-loops-21-nested-loops
+
 A **nested loop** is a construction where **in the body of one loop** (outer one) **stays another loop** (inner one). 
 
 There are nested `for` and `while` loops.
@@ -27,7 +30,11 @@ This happens the following way:
 [/slide]
 
 [slide hideTitle]
-# Nested Loops – Examples
+# Example: Rectangle of Stars
+
+interactive-programming-basics-with-java-nested-loops-19-20-nested-loops + 
+
+interactive-programming-basics-with-java-nested-loops-19-20-nested-loops-demo
 
 Here is an **example** that illustrates nested loops. 
 
@@ -55,4 +62,26 @@ After **the inner** loop **finishes** executing at the first iteration of the ou
 **After that**, the variable of **the first** loop will be **renewed** and the whole **second** loop will be executed again. 
 
 The inner loop will execute as many times as the body of the outer loop executes, in this case `n` times.
+[/slide]
+
+[slide hideTitle]
+
+# Multiple Levels of Nested Loops
+
+interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops + interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-demo
+
+It is possible to have more than one nested loop.
+
+The only restriction is that can not be used the same names of initial variables.
+
+```java
+for (int hour = 0; hour <= 23; hour++) {
+  for (int minute = 0; minute < 59; minute++) {
+    for (int second = 0; second < 59; second++) {
+      
+    }
+  }
+}
+```
+
 [/slide]

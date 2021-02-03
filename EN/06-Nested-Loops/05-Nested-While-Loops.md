@@ -1,5 +1,8 @@
 [slide hideTitle]
 # Nested while Loops
+
+interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops
+
 The use of nested `while` loops is very similar to the one of the `for`.
 
 Here is the syntax in Java:
@@ -14,7 +17,7 @@ while (condition) {
 }
 ```
 
-# Example
+# Example:
 
 ```java live
 int i = 0;
@@ -34,6 +37,9 @@ while (i < n) {
 
 [slide hideTitle]
 # Problem: Triangle of Stars with While
+
+interactive-programming-basics-with-java-nested-loops-31-problem-triangle-of-stars
+
 [code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -83,6 +89,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Triangle of Stars with While
+
+interactive-programming-basics-with-java-nested-loops-31-problem-triangle-of-stars-solution
+
 [code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

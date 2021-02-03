@@ -1,5 +1,10 @@
 [slide hideTitle]
 # Real-Life Example: Clock
+
+interactive-programming-basics-with-java-nested-loops-17-18-nested-loops-real-life-example
+
+interactive-programming-basics-with-java-nested-loops-17-18-nested-loops-real-life-example
+
 [image assetsSrc="06-nested-loops-clock-1159.png" /] 
 
 [image assetsSrc="06-nested-loops-clock-1200.png" /]
@@ -23,3 +28,4 @@ for h which is in range from 0 to 23
         print h and m in format similar to the clock
 ```
 [/slide]
+

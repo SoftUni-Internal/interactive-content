@@ -57,3 +57,25 @@ După ce **bucla interioară** își **termină execuția** la prima iterație a
 
 Bucla interioară se va executa de câte ori se execută conținutul buclei exterioare, în acest caz, de `n` ori.
 [/slide]
+
+[slide hideTitle]
+
+# Multiple Levels of Nested Loops
+
+
+
+It is possible to have more than one nested loop.
+
+The only restriction is that can not be used the same names of initial variables.
+
+```java
+for (int hour = 0; hour <= 23; hour++) {
+  for (int minute = 0; minute < 59; minute++) {
+    for (int second = 0; second < 59; second++) {
+      
+    }
+  }
+}
+```
+
+[/slide]
