@@ -1,7 +1,8 @@
-[slide]
-
-
 # Lesson Introduction
+[slide hideTitle]
+
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="489371250/830c70eee7" default /]
@@ -9,31 +10,31 @@
 [/video-vimeo]
 
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Let vs Var**
 
-- What is the difference between **Let** and **Var**?
+- What is the difference between **Let** and **Var**
 
 **2. Data Type**
 
-- What is Data-Type?
+- What is a Data Type
 
 **3. Strings**
 
-- Reading and working with Strings.
+- Reading and working with Strings
 
 **4. Numberings**
 
-- How to work with **Numbers**.
+- How to work with **Numbers**
 
 **5. Booleans**
 
-- What represents boolean properties?
+- What represents boolean properties
 
 **6. TypeOf operator**
 
-- TypeOf operator overview.
+- TypeOf operator overview
 
 
 [/slide]
