@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Complex Loops
 
 [vimeo-video]
@@ -42,9 +42,9 @@ for (let d = 40; d > 0; d /= 2) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Numbers from N down to 1
-[code-task title="Numbers from N down to 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
@@ -112,7 +112,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Numbers from N down to 1
 
 [vimeo-video]
@@ -196,9 +196,9 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Numbers from 1 to N with Step 3
-[code-task title="Numbers from 1 to N with Step 3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
@@ -269,7 +269,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Numbers from 1 to N with Step 3
 
 [vimeo-video]
@@ -354,9 +354,9 @@ Write a function to print the numbers from 1 to `n` with step 3:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even Powers of 2
-[code-task title="Even Powers of 2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
@@ -426,7 +426,7 @@ Write a function to print the even powers of 2:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Even Powers of 2
 
 [vimeo-video]
