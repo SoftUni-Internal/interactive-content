@@ -2,7 +2,6 @@
 # Summary
 
 # In this lesson you learned:
-
 - **Encapsulation**:
     - Hides implementation
     - Reduces complexity
