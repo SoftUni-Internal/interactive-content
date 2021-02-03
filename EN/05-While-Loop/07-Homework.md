@@ -241,17 +241,15 @@ function minAndMax(input) {
 # Description
 Write a program, which: 
 
-* Receives integers until **"END"**
+* Receives integers until `END`
 * Prints the **biggest** and the **smallest** integer
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|10| Max number: 304 |
-|20|Min number: 0|
-|304| |
-|0| |
-|50| |
+|`['10', '20', '304', '0', '50', 'END']`| Max number: 304 |
+||Min number: 0|
+
 
 [/task-description]
 [tests]
@@ -310,6 +308,38 @@ END
 [output]
 Max number: 5
 Min number: 0
+[/output]
+[/test]
+[test]
+[input]
+10
+20
+304
+0
+50
+400
+END
+1000
+[/input]
+[output]
+Max number: 400
+Min number: 0
+[/output]
+[/test]
+[test]
+[input]
+10
+20
+304
+-5
+50
+END
+400
+1000
+[/input]
+[output]
+Max number: 304
+Min number: -5
 [/output]
 [/test]
 [/tests]

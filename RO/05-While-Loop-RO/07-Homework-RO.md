@@ -119,12 +119,13 @@ function favoriteBook(favoditeBook, books) {
 # Descriere
 Scrieți un program care îndeplinește următoarele cerințe: 
 
-* Citește **titlul cărții** de pe consolă
-* Primește titluri de cărți până când se ajunge la o condiție de tipul **cartea cu același titlu ca și prima înregistrare**
-* Tipărește `Book found! Attempts: {attemptsCount}` și se oprește imediat după aceea
+* Primește numele cărții preferate
+* Primește numele unor cărți, până ce ajunge la cartea preferată
+* Imprimă `Invalid book: {book name}` pentru toate cărțile nevalide
+* Imprimă `Book found!`, atunci când găsește cartea și programul se oprește.
 
-# Example
-| **Input** | **Output** |
+# Exemplu
+  | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
 |`Alice in Wonderland, ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
@@ -242,17 +243,15 @@ function minAndMax(input) {
 # Descriere
 Scrieți un program care să îndeplinească următoarele cerințe: 
 
-* Primește numere întregi până când ajungem la **sfârșit** (**"END"**)
+* Primește numere întregi până când ajungem la **sfârșit** `END`
 * Printează **cel mai mare** și cel mai **mic** număr întreg
 
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|10| Max number: 304 |
-|20|Min number: 0|
-|304| |
-|0| |
-|50| |
+|`['10', '20', '304', '0', '50', 'END']`| Max number: 304 |
+||Min number: 0|
+
 
 [/task-description]
 [tests]
@@ -311,6 +310,38 @@ END
 [output]
 Max number: 5
 Min number: 0
+[/output]
+[/test]
+[test]
+[input]
+10
+20
+304
+0
+50
+400
+END
+1000
+[/input]
+[output]
+Max number: 400
+Min number: 0
+[/output]
+[/test]
+[test]
+[input]
+10
+20
+304
+-5
+50
+END
+400
+1000
+[/input]
+[output]
+Max number: 304
+Min number: -5
 [/output]
 [/test]
 [/tests]
