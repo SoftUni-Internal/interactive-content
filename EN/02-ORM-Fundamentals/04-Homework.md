@@ -144,7 +144,7 @@ Create 3 annotations **Entity**, **Column**, and **Id**.
 
 **Id Annotation**:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" 
+[image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" /]
 
 **Column Annotation**
 
