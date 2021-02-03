@@ -68,7 +68,11 @@ As you can see in the image below, when we inherit the memory for the **Parent**
 
 [image assetsSrc="inheritance-example(6).png" /]
 
-## Inheritance has a transitive relation
+[/slide]
+
+[slide hideTitle]
+
+# Inheritance has a transitive relation
 
 ```java
 class Person { … }
@@ -91,6 +95,24 @@ Instead if you need one class to be from few families you can implement many **i
 
 [image assetsSrc="inheritance-example(8).png" /]
 
+[/slide]
+
+[slide hideTitle]
+# Access to Base Class Members
+
+To access the base class members, use the `super` keyword
+
+```java
+class Person { … }
+
+class Employee extends Person { 
+  public void fire(String reasons) { 
+    System.out.println(
+        super.name + 
+        " got fired because " + reasons);
+  }
+}
+```
 [/slide]
 
 [slide hideTitle]
@@ -261,24 +283,6 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide hideTitle]
-# Access to Base Class Members
-
-To access the base class members, use the `super` keyword
-
-```java
-class Person { … }
-
-class Employee extends Person { 
-  public void fire(String reasons) { 
-    System.out.println(
-        super.name + 
-        " got fired because " + reasons);
-  }
-}
-```
 [/slide]
 
 [slide hideTitle]

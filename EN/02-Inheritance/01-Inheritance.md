@@ -9,10 +9,16 @@
 
 The idea behind using **Inheritance** is that you can build classes upon already existing classes.
 
+[/slide]
+
+
+[slide hideTitle]
+
+# Inheritance Example
+
 [image assetsSrc="inheritance-example(1).png" /]
 
 [/slide]
-
 
 [slide hideTitle]
 # Class Hierarchies
@@ -49,12 +55,16 @@ class Student extends Person { … }
 class Employee extends Person { … }
 ```
 [image assetsSrc="inheritance-example(4).png" /]
+[/slide]
 
-## Derived Class
+[slide hideTitle]
+
+# Derived Class
 
 **Derived class taking all members from it's base class**
 
 [image assetsSrc="inheritance-example(5).png" /]
+
 [/slide]
 
 [slide hideTitle]

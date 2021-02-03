@@ -16,7 +16,11 @@ class Person {
 }
 ```
 
-## Shadowing Variables
+[/slide]
+
+[slide hideTitle]
+
+# Shadowing Variables
 
 - Derived classes **can hide** superclass variables
 
@@ -137,11 +141,16 @@ people.add(student);
 
 [image assetsSrc="inheritance-example(13).png" /]
 
-## Extension
+[/slide]
+
+[slide hideTitle]
+
+# Extension
 
 - We can extend a class that we can't otherwise change, implementing the custom logic we need.
 
 [image assetsSrc="inheritance-example(14).png" /]
+
 
 [/slide]
 

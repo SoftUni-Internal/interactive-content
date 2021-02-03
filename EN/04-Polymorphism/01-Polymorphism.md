@@ -155,6 +155,40 @@ There are **two** types of **Polymorphism** in Java:
 
 - Static Polymorphism
 
+## Static Polymorphism
+
+One of the way Java supports **Static Polymorphism** or also reffered to as **Compile-Time Polymorphism** is by "**Method overloading**".
+
+**Method overloading** allows us to have two or more **methods** with the same name, but different **signature**.
+
+The method signature contains:
+- **Method name**
+- **Parameters**
+
+We can overload a method by changing the parameter types, the count of parameters or the order of the parameters.
+
+We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
+
+Lets see this simple example:
+
+``` java
+class Calculation {  
+  void sum(int a,int b) {
+  System.out.println(a+b);
+  }  
+  
+  void sum(int a,int b,int c){
+  System.out.println(a+b+c);
+  }  
+
+  public static void main(String args[]) {  
+    Calculation calculator = new Calculation();  
+    obj.sum(5,10,15);  // 30
+    obj.sum(20,40);   // 60
+  }  
+}  
+```
+
 ## Dynamic Polymorphism
 
 **Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
@@ -204,39 +238,6 @@ Animals can eat
 Dogs can eat meat
 ```
 
-## Static Polymorphism
-
-One of the way Java supports **Static Polymorphism** or also reffered to as **Compile-Time Polymorphism** is by "**Method overloading**".
-
-**Method overloading** allows us to have two or more **methods** with the same name, but different **signature**.
-
-The method signature contains:
-- **Method name**
-- **Parameters**
-
-We can overload a method by changing the parameter types, the count of parameters or the order of the parameters.
-
-We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
-
-Lets see this simple example:
-
-``` java
-class Calculation {  
-  void sum(int a,int b) {
-  System.out.println(a+b);
-  }  
-  
-  void sum(int a,int b,int c){
-  System.out.println(a+b+c);
-  }  
-
-  public static void main(String args[]) {  
-    Calculation calculator = new Calculation();  
-    obj.sum(5,10,15);  // 30
-    obj.sum(20,40);   // 60
-  }  
-}  
-```
 [/slide]
 
 [slide hideTitle]

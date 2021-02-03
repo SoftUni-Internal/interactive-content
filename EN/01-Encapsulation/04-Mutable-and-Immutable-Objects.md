@@ -21,7 +21,7 @@ System.out.println(str);
 [/slide]
 
 [slide hideTitle]
-# Mutable and Immutable Fields
+# Mutable Fields
 
 **Private mutable fields are not fully encapsulated**
 
@@ -36,6 +36,11 @@ class Team {
 } 
 ```
 - In this case **getter is like setter too**
+[/slide]
+
+[slide hideTitle]
+
+# Muttable Fields Example
 
 Example:
 
@@ -47,8 +52,12 @@ System.out.println(team.getPlayers().size());  // 1
 team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
+[/slide]
 
-**Imutable Fields**
+[slide hideTitle]
+
+# Imutable Fields
+
 - For securing our collection we can return `Collections.unmodifiableList()`
 
 ```java
@@ -65,6 +74,7 @@ class Team {
   }
 } 
 ```
+
 [/slide]
 
 [slide hideTitle]
