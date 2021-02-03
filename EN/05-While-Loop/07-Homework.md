@@ -125,7 +125,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`Alice in Wonderland, ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
+|`'Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
 ||Book found!|
 
@@ -369,7 +369,7 @@ Special number is number **divisible by all of its digits** without remainder.
 
 Write a program, which: 
 
-* Receives integer
+* Receives a number as a string
 
 * **Prints** `{num} is special`, if the number is special
 
@@ -378,7 +378,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|23| 23 is not special |
+|'23'| 23 is not special |
 
 
 [/task-description]

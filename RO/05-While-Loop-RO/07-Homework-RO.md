@@ -127,7 +127,7 @@ Scrieți un program care îndeplinește următoarele cerințe:
 # Exemplu
   | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|`Alice in Wonderland, ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
+|`'Alice in Wonderland', ['Winnie the Pooh', 'Peter Pan', 'Alice in Wonderland']`| Invalid book: Winnie the Pooh |
 ||Invalid book: Peter Pan|
 ||Book found!|
 
@@ -365,14 +365,17 @@ function specialNumber(input) {
 Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
 
 Scrieți un program cu următoarele caracteristici: 
-* Primește un număr întreg
+
+* Primește un șir
+
 * **Tipărește** `{num} is special`, dacă numărul este special
+
 * Altfel, printează `{num} is not special` (numărul nu este special)
 
 # Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|23| 23 nu este un număr special |
+|'23'| 23 is not special |
 
 
 [/task-description]
@@ -387,10 +390,50 @@ Scrieți un program cu următoarele caracteristici:
 [/test]
 [test]
 [input]
-43
+22
 [/input]
 [output]
-43 is not special
+22 is special
+[/output]
+[/test]
+[test]
+[input]
+73
+[/input]
+[output]
+73 is not special
+[/output]
+[/test]
+[test]
+[input]
+41
+[/input]
+[output]
+41 is not special
+[/output]
+[/test]
+[test]
+[input]
+32
+[/input]
+[output]
+32 is special
+[/output]
+[/test]
+[test]
+[input]
+4545232
+[/input]
+[output]
+4545232 is not special
+[/output]
+[/test]
+[test]
+[input]
+88
+[/input]
+[output]
+88 is special
 [/output]
 [/test]
 [/tests]
