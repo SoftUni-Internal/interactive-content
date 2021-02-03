@@ -92,6 +92,8 @@ public class Main {
 [task-description]
 # Description
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Lab.zip) **for this task.**
+
 Write a SQL query to find **books which titles start with "The".** 
 
 **Order the result by id.** 
