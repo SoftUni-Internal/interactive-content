@@ -138,9 +138,15 @@ One thing that can help us is **Annotations**.
 
 Create 3 annotations **Entity**, **Column**, and **Id**.
 
+**Entity Annotation**:
+
 [image assetsSrc="Java-ORM-Fundamentals-Homework-8.jpg" /]
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" /]
+**Id Annotation**:
+
+[image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" 
+
+**Column Annotation**
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-10.jpg" /]
 
