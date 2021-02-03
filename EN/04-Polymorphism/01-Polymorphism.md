@@ -84,19 +84,19 @@ We can use the `instanceOf` operator in Java to check if an **object** is an ins
 
 Lets take a look now at the different examples:
 
-First, lets declare our Map:
+1. First, lets declare our Map
 
 ```java
  Map<Object, Object> map = new HashMap();
 ```
 
-Then, lets create a `boolean` type to evaluate our result:
+2. Then, lets create a `boolean` type to evaluate our result
 
 ```java
 boolean result = map instanceof Object;
 ```
 
-Finally we can print the result:
+3. Finally we can print the result
 
 ```java
 System.out.println("Map is instance of Object: " + result);
@@ -139,8 +139,6 @@ true
 ```
 
 That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
-
-
 
 [/slide]
 
@@ -197,7 +195,9 @@ Therefore the **behavior** of the **method** is decided at **runtime**.
 
 **Dynamic Polymorphism** can be achieved using **method overriding**.
 
-We can declare a method in our **sub-class** while the method is already present in the **parent class**. That is called **method overriding**.
+We can declare a method in our **sub-class** while the method is already present in the **parent class**. 
+
+That is called **method overriding**.
 
 This way, a **child class** can give its own **implementation/property** to a method which is already provided by the **parent class**.
 
@@ -560,26 +560,26 @@ Test Passed!
 
 ## Rules for Overriding methods:
 
-- We can Override method in **sub-class**.
+- We can Override method in **sub-class**
 
-- Parameters must be the same as parameters in **parent method**.
+- Parameters must be the same as parameters in **parent method**
 
-- The overriding method must have **same return type**.
+- The overriding method must have **same return type**
 
-- We cannot override **private**, **static** or **final** methods.
+- We cannot override **private**, **static** or **final** methods
 
-- Overriding methods cannot throw **checked Exception** which is higher in hierarchy, than **checked Exception** thrown by overridden method.
+- Overriding methods cannot throw **checked Exception** which is higher in hierarchy, than **checked Exception** thrown by overridden method
 
 ## Rules for Overloading methods:
 
-- We can **overload** method that take place in the **same class** or in its **sub-class**.
+- We can **overload** method that take place in the **same class** or in its **sub-class**
 
-- We can **overload Constructors** in Java.
+- We can **overload Constructors** in Java
 
-- Overloaded methods can have the **same** or **different** **return** types.
+- Overloaded methods can have the **same** or **different** **return** types
 
-- Overloaded methods must have **different argument list**.
+- Overloaded methods must have **different argument list**
 
-- Overloaded method should always be the part of the same class, with **same name** but **different parameters**.
+- Overloaded method should always be the part of the same class, with **same name** but **different parameters**
 
 [/slide]

@@ -25,7 +25,7 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
 
-A real life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leafes we have it's children and their chidren etc.
+A real life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leafes we have it is children and their chidren etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
@@ -61,7 +61,7 @@ class Employee extends Person { … }
 
 # Derived Class
 
-**Derived class taking all members from it's base class**
+**Derived class taking all members from it is base class**
 
 [image assetsSrc="inheritance-example(5).png" /]
 

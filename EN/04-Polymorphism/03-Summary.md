@@ -4,7 +4,7 @@
 
 ## In this lesson we learned:
 
-- Polymorphism - Definition and Types.
+- Polymorphism - Definition and Types
 
 ``` java
 class Mammal {
@@ -43,7 +43,7 @@ class Main {
 }
 ```
 
-- Overriding Methods.
+- Overriding Methods
 
 ``` java
 class Animal {
@@ -87,9 +87,9 @@ class Calculation {
 }  
 ```
 
-- Abstraction.
+- Abstraction
 
-- Abstract classes.
+- Abstract classes
 
 ```java
 public abstract class Animal {} // Can not be instantiated
@@ -116,9 +116,9 @@ public class Cat extends Animal{
 
 ## In the next lesson, we will learn:
 
-- S.O.L.I.D Principles.
+- S.O.L.I.D Principles
 
-- How to structure our Project.
+- How to structure our Project
 
 
 

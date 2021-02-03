@@ -9,10 +9,10 @@
 
 ```java
 class Person {
-  protected String address;
-  public void sleep();
-  String name; //Can be accessed through other methods
-  private String id;
+  protected String address;   //Can be accessed from it's SubClasses.
+  public void sleep();        //Access from everywhere in the project.
+  String name;                //Can be accessed through other methods.
+  private String id;          //It can be accessed only from the class delegator itself.
 }
 ```
 
@@ -22,15 +22,15 @@ class Person {
 
 # Shadowing Variables
 
-- Derived classes **can hide** superclass variables
+- Derived classes **can hide/shadow** superclass variables by implementing a unit with the same name by itself
 
 ```java
 class Person { protected int weight; }
 
 class Patient extends Person {
-  protected float weight; //hides int weight
+  protected float weight; //hides/shadows int weight.
   public void method() {
-    double weight = 0.5d; //hides both
+    double weight = 0.5d; //As it is more concrete, it hides both but only inside the method brackets.
   }
 }
 ```
@@ -69,16 +69,16 @@ It's an imporant tool as it is connected to another pillar of the OOP **Polymorp
 ```java
 public class Person {  
   public void sleep() { 
-	System.out.println("Person sleeping"); } 
+	System.out.println("Person sleeping"); } //Here we declare a method.
 }
 ```
 - A method that we want to override should not be set as `final`
 
 ```java
 public class Student extends Person {
-  @Override 
+  @Override                                   //The Attribute @Override means that this method is being given new/extended implementation.
   public void sleep(){
-	System.out.println("Student sleeping"); }
+	System.out.println("Student sleeping"); }   //Between the brackets we declare the new implementation.
 }
 ```
 - Signature and return type **should match**
@@ -89,9 +89,9 @@ public class Student extends Person {
 
 # Final Methods and Classes
 
-- `final` – defines a method that **can not be overridden**.
-  We should use this tool when we want to preserve our method implementation down the class hierarchy.
-  `final` can be declared in any derived class and it gets in power for the classes children down the hierarchy.
+- `final` – defines a method that **can not be overridden**
+  - We should use this tool when we want to preserve our method implementation down the class hierarchy
+  - `final` can be declared in any derived class and it gets in power for the classes children down the hierarchy
 
 ```java
 public class Animal {
@@ -125,8 +125,8 @@ public class MyMath extends Math { }     // Error…
 
 ## Abstraction
 
-- With inheritance we can provide abstraction to the classes we use.
-- We can re-use logic, less code means less bugs.
+- With inheritance we can provide abstraction to the classes we use
+- We can re-use logic, less code means less bugs
 - We can achieve **Polymorphism**
 
 ```java
@@ -147,7 +147,7 @@ people.add(student);
 
 # Extension
 
-- We can extend a class that we can't otherwise change, implementing the custom logic we need.
+- We can extend a class that we can't otherwise change, implementing the custom logic we need
 
 [image assetsSrc="inheritance-example(14).png" /]
 

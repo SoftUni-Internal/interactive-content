@@ -2,8 +2,7 @@
 
 # Abstraction
 
-Abstraction is a process of **hiding** the implementation details and providing only pure functionality to the
-user.
+Abstraction is a process of **hiding** the implementation details and providing only pure functionality to the user.
 
 In Java, abstraction is achieved by using the **abstract** keyword for classes and interfaces.
 
@@ -16,9 +15,9 @@ It is one of the most important concepts of OOPs.
 
 There are 2 ways we can achieve **abstraction** in Java:
 
-- Using `abstract` classes.
+- Using **abstract** classes
 
-- Using `interfaces`.
+- Using **interfaces**
 
 [/slide]
 

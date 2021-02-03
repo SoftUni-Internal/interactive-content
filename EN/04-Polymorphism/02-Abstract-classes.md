@@ -2,7 +2,7 @@
 
 # Abstract Classes
 
-Lets take a look now at **Abstract classes** in Java!
+Lets take a look at **Abstract classes** in Java!
 
 We know from the last lesson that **abstract classes cannot** be instanciated.
 
@@ -21,7 +21,7 @@ An **abstract class** has an "**IS-A**" type relationship with our subclasses.
 
 So for instance, we could have an **abstract** class `Animal` which has stuff any animal has (like a **eat** or **walk** function), and then a class `Cat`. 
 
-Every cat is a animal, but not all animals are cats.
+**Every cat is a animal, but not all animals are cats.**
 
 The main goal of an abstract class is to provide shared implementation of common behaviour - promoting the **reuse of code**.
 

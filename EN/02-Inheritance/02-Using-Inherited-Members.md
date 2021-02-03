@@ -75,10 +75,12 @@ As you can see in the image below, when we inherit the memory for the **Parent**
 # Inheritance has a transitive relation
 
 ```java
-class Person { … }
-class Student extends Person { … }
-class CollegeStudent extends Student { … }
+class Person { … }                              //Base class with some functionallity.
+class Student extends Person { … }              //Student will get all the functionallity from Person and add more to it.
+class CollegeStudent extends Student { … }      //CollegeStudent will inherit all the functionallity from Student and from Person.
 ```
+
+That's what transitive relation is, a **SubClass** gets all the functionallity from it's super classes up the hierachy.
 
 [image assetsSrc="inheritance-example(7).png" /]
 
@@ -100,7 +102,7 @@ Instead if you need one class to be from few families you can implement many **i
 [slide hideTitle]
 # Access to Base Class Members
 
-To access the base class members, use the `super` keyword
+To access the base class members, use the `super` keyword.
 
 ```java
 class Person { … }
@@ -108,7 +110,7 @@ class Person { … }
 class Employee extends Person { 
   public void fire(String reasons) { 
     System.out.println(
-        super.name + 
+        super.name +                        //We use the `super` keyword to access the SuperClass/Inherited class members.
         " got fired because " + reasons);
   }
 }
@@ -133,11 +135,11 @@ public class Main {
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
 
-**Animal** with a single public method `.eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**.
 
-**Dog** with a single public method `.bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**.
 
-Puppy with a single public method weep() that prints: **"weeping…"**
+Puppy with a single public method weep() that prints: **"weeping…"**.
 
 **Dog** should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
 
@@ -218,11 +220,11 @@ public class Main {
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
 
-**Animal** with a single public method `.eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**.
 
-**Dog** with a single public method `.bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**.
 
-Puppy with a single public method weep() that prints: **"weeping…"**
+Puppy with a single public method weep() that prints: **"weeping…"**.
 
 **Dog** should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
 

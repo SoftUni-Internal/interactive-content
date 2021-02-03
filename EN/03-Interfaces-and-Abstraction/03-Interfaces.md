@@ -2,7 +2,7 @@
 
 # Interfaces
 
-`Interfaces` in Java may look like a **class**, but they are not classses. 
+`Interface` in Java may look like a **class**, but it is not a class. 
 
 An **interface** can have all the methods and variables like the class do, but the **methods** in the interface are **abstract** by default.
 
@@ -17,18 +17,18 @@ However, we can achieve this easy with **interfaces**, because the class can **i
 In this **example** we can see how **implementation** of `print()` is provided in class `Document`
 
 ``` java
-public interface Printable {
+public interface Printable {        //The interface declares a method print
     void print();
 }
 ```
 
 ``` java
-class Document implements Printable {  
+class Document implements Printable {   //And by implementing the interface the class signs a contract which promises to implement the method
   public void print() { 
-    System.out.println("Hello"); 
+    System.out.println("Hello");        //Further the class gives the method its own implementation
     }
   public static void main(String args[]) {
-    Printable doc = new Document();  // We achieve Polymorphism
+    Printable doc = new Document();     // We achieve Polymorphism
     doc.print();  // Hello
   }
 }

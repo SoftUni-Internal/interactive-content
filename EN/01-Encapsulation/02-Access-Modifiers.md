@@ -4,9 +4,9 @@
 
 # Private Access Modifier
 
-With the **private access** modifier an object can hide it's data from the rest of the objects in our program.
+With the **private access** modifier an object can hide it is data from the rest of the objects in our program.
 
-We choose to make a **field or method** private when we want to presrve the interal logic of our object, so nobody can mess it up.
+We choose to make a **field or method** private when we want to presrve the interal logic of our object, so nobody can mess it up:
 
 ```java
 class Person {
@@ -26,7 +26,7 @@ class Person {
 
 # Protected Access Modifier
 
-When we declare a unit with the access modifier **protected** we say that only members of the **class hierchy** (the current class and it's children) can see and access the given unit.
+When we declare a unit with the access modifier **protected** we say that only members of the **class hierchy** (the current class and it is children) can see and access the given unit:
 
 ```java
 class Team {
@@ -52,7 +52,7 @@ class Team {
   void setName(String name) {…}
 }
 ```
-**Available** to any other class in the same **package**
+**Available** to any other class in the same **package**:
 
 ```java
 Team real = new Team("Real");
@@ -65,7 +65,7 @@ System.out.println(real.getName());
 [slide hideTitle]
 # Public Access Modifier
 
-The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program.
+The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program:
 
 ```java
 public class Team {
@@ -367,22 +367,6 @@ Test Passed!
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide hideTitle]
-# Public Access Modifier
-
-The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program.
-
-```java
-public class Team {
-  public String getName() {…}
-  public void setName(String name) {…}
-}
-```
-- Import a package if you need to use a class
-- The `main()` method of an application must be **public**
-
 [/slide]
 
 [slide hideTitle]
@@ -735,13 +719,6 @@ public static void main(String[] args) throws IOException {
 | George Lee 44 666.66 | Bob Manner gets 671.28 euro |
 | Bob Manner 35 559.4 |  |
 | 20 |  |
-
-| **Input** | **Output** |
-| --- | --- |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 
 [/task-description]
 [code-io /]
@@ -1121,12 +1098,6 @@ public static void main(String[] args) throws IOException {
 | Bob Manner 35 559.4 |  |
 | 20 |  |
 
-| **Input** | **Output** |
-| --- | --- |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
 
 [/task-description]
 [code-io /]

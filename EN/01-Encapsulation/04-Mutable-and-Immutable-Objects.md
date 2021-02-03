@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Mutable vs Immutable Objects
 
-The contents of **mutable** objects **can be altered**
+The contents of **mutable** objects **can be altered**:
 
 ```java
 Point myPoint = new Point(0, 0); myPoint.setLocation(1.0, 0.0);
@@ -10,7 +10,7 @@ System.out.println(myPoint);
 
 //java.awt.Point[1.0, 0.0]
 ```
-The contents of **immutable** objects **can not be altered**
+The contents of **immutable** objects **can not be altered**:
 
 ```java
 String str = new String("old String");
@@ -23,7 +23,7 @@ System.out.println(str);
 [slide hideTitle]
 # Mutable Fields
 
-**Private mutable fields are not fully encapsulated**
+**Private mutable fields are not fully encapsulated:**
 
 ```java
 class Team {
@@ -52,13 +52,20 @@ System.out.println(team.getPlayers().size());  // 1
 team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
+
+In this case our field is not safely encapsulated and it still can me changed.
+
+The reason behind it is because as we know the `List<>` is a refference type, that is why when we pass it with the `getter` we actually give the refference to the List's memory.
+
+What happens is that although we do not have a setter, the list is still muttable.
+
 [/slide]
 
 [slide hideTitle]
 
 # Imutable Fields
 
-- For securing our collection we can return `Collections.unmodifiableList()`
+- For securing our collection we can return `Collections.unmodifiableList()`:
 
 ```java
 class Team {

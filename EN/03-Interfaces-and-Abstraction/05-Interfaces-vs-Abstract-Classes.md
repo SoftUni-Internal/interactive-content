@@ -10,7 +10,9 @@ Once again, lets see the main differences between `Interfaces` and `Abstract` cl
 
 From that chart we can assume that we can use `interfaces` when we need to achieve **multiple inheritance**, **full abstraction** by implementing all methods declared in the interface by a class which implements the interface.
 
-We use `abstraction` when some classes need to share few lines of code. We can put these lines of code in an abstract class and extend by all other related classes.
+We use `abstraction` when some classes need to share few lines of code. 
+
+We can put these lines of code in an abstract class and extend by all other related classes.
 
 [/slide]
 
@@ -30,13 +32,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Model an application which contains a **class Ferrar**i and an **interface**. 
+Model an application which contains a **class Ferrari** and an **interface**. 
 
 Your task is simple, you have a **car - Ferrari**, its model is "**488-Spider**" and it has a **driver**. 
 
 Your Ferrari should have functionality to **use brakes** and **push the gas pedal**. 
 
-When the **brakes** are pushed down **print "Brakes!"**, and when the **gas peda**l is pushed down - **"Gas!"**. 
+When the **brakes** are pushed down **print "Brakes!"**, and when the **gas pedal** is pushed down - **"Gas!"**. 
 
 As you may have guessed this functionality is typical for all cars, so you should **implement an interface** to describe it.
 
@@ -593,13 +595,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Model an application which contains a **class Ferrar**i and an **interface**. 
+Model an application which contains a **class Ferrari** and an **interface**. 
 
 Your task is simple, you have a **car - Ferrari**, its model is "**488-Spider**" and it has a **driver**. 
 
 Your Ferrari should have functionality to **use brakes** and **push the gas pedal**. 
 
-When the **brakes** are pushed down **print "Brakes!"**, and when the **gas peda**l is pushed down - **"Gas!"**. 
+When the **brakes** are pushed down **print "Brakes!"**, and when the **gas pedal** is pushed down - **"Gas!"**. 
 
 As you may have guessed this functionality is typical for all cars, so you should **implement an interface** to describe it.
 
