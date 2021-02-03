@@ -1,6 +1,6 @@
 # Handling DOM Events
 
-[slide]
+[slide hideTitle]
 
 # Event Propagation
 
@@ -47,7 +47,7 @@ In this example `body.onclick` doesn’t work if you click on `<button>`.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event Types In The DOM API
 
@@ -63,7 +63,7 @@ Here are some of the event types used in the DOM.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event object properties and methods
 
@@ -108,7 +108,7 @@ The `stopImmediatePropagation()` method of the event prevents other listeners of
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: List Of Items
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -120,6 +120,9 @@ function solve(input){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **for this task.**
+
 Write a function that **reads** the text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
@@ -191,7 +194,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: List Of Items
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
