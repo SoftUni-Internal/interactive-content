@@ -53,7 +53,7 @@ On the **single input line**, you will be given the **driver's name**.
 
 ## Output
 On the **single output line**, print the model, the messages from the brakes and gas pedal methods and the driver's name. In the following format:
-**"{model}/{brakes}/{gas pedal}/{driver's name}"**
+`**"{model}/{brakes}/{gas pedal}/{driver's name}"**`
 
 ## Constraints
 The input will always be valid, no need to check it explicitly! The Driver's name may contain any ASCII characters.
@@ -616,7 +616,7 @@ On the **single input line**, you will be given the **driver's name**.
 
 ## Output
 On the **single output line**, print the model, the messages from the brakes and gas pedal methods and the driver's name. In the following format:
-**"{model}/{brakes}/{gas pedal}/{driver's name}"**
+`**"{model}/{brakes}/{gas pedal}/{driver's name}"**`
 
 ## Constraints
 The input will always be valid, no need to check it explicitly! The Driver's name may contain any ASCII characters.
