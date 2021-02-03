@@ -87,23 +87,55 @@ Write a program, which:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-4
+5
 [/input]
 [output]
 \*
 \*\*
 \*\*\*
 \*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -147,21 +179,56 @@ Write a program, which:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-4
+5
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
+[/slide]
 
 [/slide]
