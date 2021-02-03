@@ -63,7 +63,8 @@ for (let row = 1; row <= n; row++) {
 console.log(rowLine);
 ```
 
-Let's look at the example above. 
+Let us look at the example above. 
+
 After initializing **the first (outer) loop**, its **body**, which contains **the second (nested) loop** starts running. 
 
 It prints an n number of stars on a row. 

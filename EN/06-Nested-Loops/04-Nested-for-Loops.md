@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Nested for Loops
+# Nested "for" Loops
 
 [vimeo-video]
 [stream language="EN" videoId="488090349/1e2b80201d" default /]
@@ -76,7 +76,9 @@ function triangleOfStars(input) {
 Write a program, which:
 
 * Reads the **height** of a triangle from the console
+
 * Prints a **triangle of stars**
+
 # Example
 | **Input** | **Output**| 
 | --- | --- |
@@ -92,10 +94,10 @@ Write a program, which:
 4
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
 [/output]
 [/test]
 [/tests]
