@@ -51,6 +51,8 @@ public class Main {
 
 ## Description
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/06.MySQL-Joins-Subqueries-and-Indices-Lab-Resources.zip) **for this task.**
+
 Write a query to count the number of employees who receive **salary** higher than the **average**.
 
 **Run your query statements & submit the output from the queries as plain text**.
