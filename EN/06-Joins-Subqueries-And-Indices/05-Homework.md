@@ -2,7 +2,7 @@
 
 # Homework
 
-_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/uJZhjCBT#Z0mRwfZ5GJQorDXWjlKEEkah57NG4S9o6tmpqELcPz8)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/06.MySQL-Joins-Subqueries-and-Indices-Exercise-Resources.zip) **for the homework.**
 
 [/slide]
 
