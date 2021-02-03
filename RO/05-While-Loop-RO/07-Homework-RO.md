@@ -15,7 +15,7 @@
 [code-editor language=javascript]
 ```
 function sumDigits(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -101,11 +101,20 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 [code-task title="Favorite Book" taskId="pb-js-while-loop-Favorite-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function favoriteBook(input) {
-  // Write your code here
+function favoriteBook(favoditeBook, books) {
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = input[0]
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care îndeplinește următoarele cerințe: 
