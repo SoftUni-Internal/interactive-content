@@ -235,7 +235,7 @@ Book found!
 [code-editor language=javascript]
 ```
 function minAndMax(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -356,10 +356,15 @@ Min number: -5
 [code-editor language=javascript]
 ```
 function specialNumber(input) {
-  // Write your code here 
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Numărul special este numărul **divizibil la toate cifrele sale componente** fără rest. 
@@ -447,12 +452,21 @@ Scrieți un program cu următoarele caracteristici:
 [code-task title="Special Bonus" taskId="pb-js-while-loop-Special-Bonus" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function specialBonus(nums) {
-  // Write your code here
+function specialBonus(n, numbers) {
+  // Scrieți codul dvs. aici
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care să îndeplinească următoarele sarcini: 
@@ -464,10 +478,9 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 # Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-|25| 60 |
-|20||
-|30| |
-|25| |
+| --- | --- |
+|`25, ['20', '30', '25']`| 60 |
+
 
 [/task-description]
 [tests]
@@ -491,6 +504,75 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 40
 [/output]
 [/test]
+[test]
+[input]
+45
+34
+23
+45456
+45
+23
+[/input]
+[output]
+90912
+[/output]
+[/test]
+[test]
+[input]
+20
+5675
+5467
+45646
+20
+65756
+2567563
+[/input]
+[output]
+91292
+[/output]
+[/test]
+[test]
+[input]
+1234
+20
+567
+5675
+25673
+5675
+1234
+[/input]
+[output]
+11350
+[/output]
+[/test]
+[test]
+[input]
+456
+20
+45
+2353
+345
+56
+456
+23
+[/input]
+[output]
+112
+[/output]
+[/test]
+[test]
+[input]
+11
+345
+546546756
+11
+456
+456
+[/input]
+[output]
+1093093512
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -503,7 +585,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 [code-editor language=javascript]
 ```
 function specialBonus(nums) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```
@@ -605,7 +687,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function accountBalance(input) {
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```

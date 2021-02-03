@@ -450,12 +450,21 @@ Write a program, which:
 [code-task title="Special Bonus" taskId="pb-js-while-loop-Special-Bonus" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function specialBonus(nums) {
+function specialBonus(n, numbers) {
   // Write your code here
 }
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
@@ -467,10 +476,8 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|25| 60 |
-|20||
-|30| |
-|25| |
+|`25, ['20', '30', '25']`| 60 |
+
 
 [/task-description]
 [tests]
@@ -492,6 +499,75 @@ Write a program, which:
 [/input]
 [output]
 40
+[/output]
+[/test]
+[test]
+[input]
+45
+34
+23
+45456
+45
+23
+[/input]
+[output]
+90912
+[/output]
+[/test]
+[test]
+[input]
+20
+5675
+5467
+45646
+20
+65756
+2567563
+[/input]
+[output]
+91292
+[/output]
+[/test]
+[test]
+[input]
+1234
+20
+567
+5675
+25673
+5675
+1234
+[/input]
+[output]
+11350
+[/output]
+[/test]
+[test]
+[input]
+456
+20
+45
+2353
+345
+56
+456
+23
+[/input]
+[output]
+112
+[/output]
+[/test]
+[test]
+[input]
+11
+345
+546546756
+11
+456
+456
+[/input]
+[output]
+1093093512
 [/output]
 [/test]
 [/tests]
