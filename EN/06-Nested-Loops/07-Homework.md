@@ -735,11 +735,18 @@ Going to Albania!
 [code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function primeNumbers(input) {
+function primeNumbers(firstNumber, secondNumber) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]))
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
@@ -750,10 +757,8 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
-|50|  |
-||  |
- 
+|1, 50| 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+
 [/task-description]
 [tests]
 [test]
