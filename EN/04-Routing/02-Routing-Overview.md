@@ -1,41 +1,39 @@
 # Routing Overview
 
-[slide]
+[slide hideTitle]
 
 # What is Client-Side Routing?
 
-We have two methods for routing, **server-side**, and **client-side**.
+There are two methods for routing, **server-side** and **client-side**.
 
-The **client-side** routing is the main element of the **Single page applications**, also called **SPA**.
+The **client-side** routing is the main element of the **Single page applications**, called **SPA**.
 
-This routing downloads the entire app on the first load.
+This routing downloads the entire app on the first load of the application.
 
-And When the URL changes, it only updates the component, which is different.
+When the URL changes, it only updates the modified component.
 
-This is possible by the virtual DOM.
+That is possible by the **virtual DOM**.
 
 The **client-side** routing gives us a faster application, which benefits for better UX.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Single Page Application
 
-When the location is changed, the router will load the correct resource.
+The Router will load the correct resource when the **location is changed**.
 
-This location change will be represented in the URL.
+The change represents itself in the **URL**.
 
-With this type of routing, we get many benefits.
+With this type of routing, we get many **benefits**:
 
-Some of them are:
-
-- The resources for the app are load only once.
+- The resources are loaded only once.
 
 - The state is maintainable across all pages.
 
-- We can use **browser history**.
+- We access the **browser history**.
 
-- Fast UI.
+- Better and quicker UX.
 
 [/slide]

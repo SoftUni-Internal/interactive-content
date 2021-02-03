@@ -1,55 +1,46 @@
 # React Router
 
-[slide]
+[slide hideTitle]
 
 # What is React Router?
 
 **React Router** is an **API** library for React apps.
 
-It supports **client-side** rendering and **server-side** rendering.
+It supports **client-side** and **server-side** routing and it uses **component structure**.
 
-This router uses **component structure**.
-
-Which look like this:
+For example:
 
 ```js
-const App = (
-   <div>
-      <Route path='/catalog' component={Catalog} />
-      <Route path='/about' component={About} />
-   </div>
-);
-ReactDOM.render(
-   <BrowserRouter>
-      <App />
-   </BrowserRouter>,
-   document.getElementById('root')
-);
+const Navigation = () => {
+  return (
+    <BrowserRouter>
+        <Route path="/" component={HomePage} />
+    </BrowserRouter>
+  );
+};
 ```
+
+We set the **path** and the **component**, which we want to be rendered, in the **Route** component.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Installation and Setup
 
-We can install **React Router** from npm.
+We can install **React Router** by entering in the terminal the following command: `npm install react-router-dom --save`.
 
-We can do that by writing the following command in the terminal: `npm install react-router-dom --save`.
+To set up the Router, we need to import the following components:
 
-To set up the router, we need to import some components.
+- **Route** component
 
-They are:
+- **Link** component
 
-- Route
+- **BrowserRouter** component
 
-- Link
+- **Switch** component
 
-- BrowserRouter
-
-- Switch
-
-The importing will look like this:
+It looks like this:
 
 ```js
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -59,35 +50,37 @@ import { Switch } from 'react-router-dom';
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Adding More Scenes
 
-In React, we can wrap components and attached them to a certain path.
+In React, we can wrap components and attached them to an exact path.
 
 For example:
 
 ```js
-<Router history={hashHistory}>
+<BrowserRouter history={hashHistory}>
    <Route path='/' exact component={App} />
    <Route path='/catalog' component={Catalog} />
    <Route path='/about' component={About} />
-</Router>
+</BrowserRouter>
 ```
 
-In this example, into the **BrowserRouter** component, which is called **Router** in this case, we have other components.
+We wrap the **Route** components into a **BrowserRouter** one.
 
 Every one of them is attached to a specific path.
 
+When the application is on that location, a specific component is rendered.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Switch and Link
 
-If we have two **Routes** that match, by default, they both will be rendered.
+By default, if two routes match, they will be both rendered.
 
-So if we want to render only the first one, we use **Switch**.
+If we want to render only the first one, we need to use **Switch**.
 
 Here is an example of **Switch**:
 
@@ -99,7 +92,9 @@ Here is an example of **Switch**:
 </Switch>
 ```
 
-In this example, if we do not use **switch**, we will have the about page rendered twice.
+In this example, if we do not use **Switch**, we will have the about page rendered twice.
+
+## Navigating with Link
 
 **Link** is a component that replaces the `<a>` tag and automatically prevents the **page reload**.
 
@@ -113,81 +108,67 @@ We use the `to=''` attribute to set the path.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # BrowserRouter as Router
 
-The **BrowserRouter** has different objects like:
+The **BrowserRouter** has different objects:
 
-- Match
+- **Match**
 
-- Location
+- **Location**
 
-- History
+- **History**
 
-The **BrowserRouter** works like a **HOC** (Higher Order Component), which injects these objects inside the components.
-
-They are injected as props.
+The **BrowserRouter** works like a **HOC** (Higher Order Component), which injects these objects inside the components as **props**.
 
 The **match** object stores information about the URL.
 
 For example:
 
-- **params**: If there are any **params**, like keys or values.
+- **params** stores **parameters**, like keys and values.
 
-- **isExact**: If the whole URL is matched.
+- **isExact** matches the whole URL.
 
-- **path**: The used pattern to match the URL.
+- **path** uses a pattern to match the URL.
 
-- **URL**: The path that is matched from the URL.
+- **URL** matches the path from the URL.
 
 The **Location** object stores where the app was, where we want it to go, and where it is now.
 
 We cannot modify the **Location** object.
 
-And last but not least, the **History** object.
+Last but not least is the **History** object.
 
 It provides us the whole browser history, and we can modify it.
 
-We can:
-
-- See the **length**.
-
-- See what is the **action** type.
-
-- To **push**
-
-- To **replace**
-
-- And many more.
+We can see the **length**, the **action** type, to **push**, to **replace** and many more.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # URL Params
 
-When we want to make a URL that looks like this: `/catalog/electronics/XYZ5538`.
+When we want to make a URL to look like this: `/catalog/electronics/XYZ5538`.
 
 We need to configure the parameters of this route.
 
-So we do this by adding them to the path of the route.
+So we do this by adding them to the path in this format `:parameter`.
 
-We add parameters in this format: `:parameter`.
-
-it will look like this:
+It will look like this:
 
 ```js
-<Route path='/catalog/:category/:userId' component={Catalog} />
+<Route path='/catalog/:category/:productId' component={Catalog} />
 ```
 
-In this example, in the `path=''` attribute after the catalog, we set parameters for the category and userId.
+In this example, in the `path=''` attribute after the catalog, we set parameters for the **category** and **productId**.
 
-After we added them to the route, we access them from the component.
+After we set them to the route, we can access them from the component.
 
 They are stored in `this.props`.
 
-We need to match them from `this.props`, with `match.params`.
+We need to match them from `this.props` with `match.params`.
 
 Here is how it will look:
 
@@ -197,11 +178,11 @@ this.props.match.params.category;
 
 Here we access only the **category** parameter because we added `.category` to the `match.params`.
 
-With `match.params`, we access all parameters.
+With `match.params`, we access all of the parameters.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Redirecting
 
@@ -209,7 +190,7 @@ With React Router, we can **redirect** the user to a different path.
 
 That can happen by rendering a different component.
 
-The redirecting is very useful, for example, when the user tries to access a page that is only for logged in users.
+The redirecting is very useful, for example, when the user tries to access a page for **logged-in** users only.
 
 It looks like this:
 
@@ -219,31 +200,29 @@ It looks like this:
 </Route>
 ```
 
-So in this example, we check if the user is **logged in**.
+In this example, we check if the user is **logged in**.
 
-If so, he will be redirected to the **MyProfilePage** component.
+If so, the application will navigate to the **MyProfilePage** component.
 
-But if he is **not logged in**, he will be **redirected** to the **Login** page.
+If he is **not logged in**, he will be **redirected** to the **Login** page.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Active Links
 
-The **NavLink** component makes the styling easier.
+The **NavLink** component makes the styling more effortless.
 
-It knows when the user is on that path, and NavLink is **active**.
+It knows when the user is on a specific path, and **NavLink** is **active**.
 
-NavLink has attributes that help us with styling when it is active.
+**NavLink** has attributes that help us with styling when it is active.
 
-This attributes are **activeStyle** and **activeClassName**.
+They are **activeStyle** and **activeClassName**.
 
-The **activeStyle** one is for in-line css.
+The **activeStyle** attribute is for **in-line css** and **activeClassName** is for classes.
 
-We use the **activeClassName** when we use classes, which is the better option.
-
-NavLink with **activeStyle** looks like this:
+**NavLink** with **activeStyle** looks like this:
 
 ```js
 <NavLink to='/catalog' activeStyle={{ color: 'red' }}>
@@ -251,33 +230,31 @@ NavLink with **activeStyle** looks like this:
 </NavLink>
 ```
 
-With **activeStyle** we put the CSS in the component.
+With **activeStyle** we put the CSS directly in the component.
 
 Now let us have a look at **activeClassName**:
 
 ```js
-<NavLink to='/catalog' activeClassName='activeNav'>
-   Catalog
+<NavLink to='/my-profile' activeClassName='navigation'>
+   MyProfile
 </NavLink>
 ```
 
-**ActiveClassName** is almost the as **activeStyle**.
+**ActiveClassName** is almost the same as **activeStyle**.
 
-But with the difference that instead of in-line CSS, we put the name of the class.
+The difference between both is that instead of **in-line CSS**, we use **classes**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Nested Routes
 
-We can also have nested routes.
+We can have **nested** routes.
 
-For example, if we have a page where we have tabs in.
+If we have a page where there are tabs, we can attach them to the URL.
 
-These tabs can be attached to the URL.
-
-To do that, we need to match the current URL and concatenate it with the new location.
+To do that, we need to match the **current URL** and **concatenate** it with the **new location**.
 
 Here is an example:
 
@@ -290,6 +267,6 @@ const About = ({ match }) => (
 );
 ```
 
-In this example, we match the about page URL and concatenate it with the contact page.
+In this example, we match the **About page** URL and concatenate it with the **Contact page**.
 
 [/slide]

@@ -1,20 +1,22 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learned:
 
--  What is Virtual DOM.
+- Virtual DOM:
 
--  What is Routing.
+   - representation of the real DOM.
 
-   -  Client-Side.
+- Routing:
 
-   -  Server-Side
+   - **Client-Side**
 
--  What is React Router.
+   - **Server-Side**
 
-   -  **react-router-dom**
+- React Router:
+
+   - **react-router-dom**
 
    ```js
    const App = (
@@ -30,19 +32,29 @@
    );
    ```
 
-   -  **BrowserRouter**
+   - **BrowserRouter**
+      
+      - **Location** object
 
-      -  Has different object: **Match**, **Location** and **History**.
+      ```js
+      this.props.location
+      ```
+      
+      - **History** object
 
--  Lazy loading and suspense with React
+      ```js
+      this.props.history
+      ```
 
-   -  **React.lazy**
+- Lazy loading with React:
+
+   - **React.lazy**
 
    ```js
    const OtherComponent = React.lazy(() => import('./OtherComponent'));
    ```
 
-   -  **Suspense**
+   - **Suspense**
 
    ```js
    function MyComponent() {
@@ -56,7 +68,7 @@
    }
    ```
 
-## In the next lesson you will learn about:
+## In the next lesson, you will learn:
 
 - Forms
 

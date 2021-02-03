@@ -1,88 +1,86 @@
 # React Lazy and Suspense
 
-[slide]
+[slide hideTitle]
 
 # Bundling
 
-On the first load of the app or a refresh, the user downloads the whole application.
+The whole application will download itself on the first load or a refresh.
 
-That is possible because the files are **bundled**, from tools like **WebPack**, **Browserify**, or others.
+That is possible because the files are **bundled**, from tools like **WebPack**, **Parcel**, or others.
 
-These tools have a **stating point** which is the root file, and after that, they bundle every imported component.
+They have a **starting point** which is the root file, and after that, they bundle every imported component.
 
-The idea is to merge all files into one.
+The idea is to merge all files into one file.
 
-And when they are merged, the whole app to be loaded at once.
+The application will load all of the bundled files at once when they are ready.
 
 For example, if we imported a **HomePage** component in the **Navigation** file, WebPack will bundle it.
 
-It will also bundle the components, which are imported in the **HomePage**.
+It will also bundle the components imported in the **HomePage**.
 
-After everything is bundled, WebPack will go to the Navigation again and continue to bundle in tree structures.
+After WebPack bundles everything from the **HomePage**, it will go to the Navigation again and continue to bundle in **tree structures**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Dynamic Import
 
-We use **dynamic import**, also called **code-splitting** is a React syntax used for not loading everything on the first request.
+**Dynamic import**, also called **code-splitting**, is a React syntax used for not loading the whole application on the first request.
 
-That can be useful when we have really big components, which can be loaded if only we need them.
+**code-splitting** is useful for loading complex components only if we need them.
 
-It is done by `import.then()`.
+We can **Dynamically import** function or components with: `import.then()`.
 
 For example:
 
 ```js
-import('./math').then((math) => {
-   console.log(math.add(16, 26));
+import('./product').then((product) => {
+   console.log(product.id);
 });
 ```
 
-When WebPack sees the **dynamic import**, it will bundle the function inside it, but it will not execute it.
+When WebPack sees a **dynamic import**, it will bundle the function inside it but it will not execute it.
 
-The idea is for the app to load faster.
+The idea is for the application to load faster.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # React.lazy
 
-**React.lazy** gives us the ability to import a component dynamically, like a regular one.
+**React.lazy** gives us the ability to import a component dynamically, almost like a regular one.
 
 To use it, we pass a callback function, in which we import the component.
 
-it looks like this:
+It looks like this:
 
 ```js
-const OtherComponent = React.lazy(() => import('./OtherComponent'));
+const ExamplePage = React.lazy(() => import('./ExamplePage '));
 
 function MyComponent() {
    return (
       <div>
-         <OtherComponent />
+         <ExamplePage />
       </div>
    );
 }
 ```
 
-After the component is imported, we can use it as a regular one.
-
-But we need to wrap the component with **Suspense**.
+After the `React.lazy(`) import, we can use the **ExamplePage** as a regular component.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Suspense
 
-**Suspense** is a component that accepts a **fallback** while waiting for another component to load.
+**Suspense** is a component that accepts a **fallback** while waiting for another one to load.
 
-In the fallback, we can pass a loading page component.
+In the **fallback**, we can pass a **Loading page** component.
 
-The fallback will be rendered while we wait for the other component.
+It will be displayed while we wait for the other component.
 
 Here is an example:
 
@@ -90,24 +88,24 @@ Here is an example:
 function MyComponent() {
    return (
       <div>
-         <Suspense fallback={<div>Loading...</div>}>
-            <OtherComponent />
+         <Suspense fallback={<LoadingPage />}>
+            <ExamplePage />
          </Suspense>
       </div>
    );
 }
 ```
 
-In this example, while **OtherComponent** renders, will be displayed a div.
+In this example, while **ExamplePage** renders, the **LoadingPage** will be displayed.
 
-With **Suspense**, we can also setup route\-based code splitting.
+With **Suspense**, we can also setup **route-based** code splitting.
 
 It will look like this:
 
 ```js
 const App = () => (
    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<LoadingPage />}>
          <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
@@ -117,6 +115,6 @@ const App = () => (
 );
 ```
 
-While these components are loading, will be shown a div with a message.
+While these components are loading, the **LoadingPage** component will be displayed.
 
 [/slide]
