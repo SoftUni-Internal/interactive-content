@@ -446,22 +446,59 @@ Scrieți un program care:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Maldives
-2500
+Greece
 1000
-340
-50
-50
-50
-50
-700
-700
+200
+200
+300
+100
+150
+240
+Spain
+1200
+300
+500
+193
+423
 End
 [/input]
 [output]
-Going to Maldives!
+Going to Greece!
+Going to Spain!
+[/output]
+[/test]
+[test open]
+[input]
+France
+2000
+300
+300
+200
+400
+190
+258
+360
+Portugal
+1450
+400
+400
+200
+300
+300
+Egypt
+1900
+1000
+280
+300
+500
+End
+[/input]
+[output]
+Going to France!
+Going to Portugal!
+Going to Egypt!
 [/output]
 [/test]
 [test]
@@ -482,6 +519,24 @@ End
 [output]
 Going to Bulgaria!
 Going to Austria!
+[/output]
+[/test]
+[test]
+[input]
+Maldives
+2500
+1000
+340
+50
+50
+50
+50
+700
+700
+End
+[/input]
+[output]
+Going to Maldives!
 [/output]
 [/test]
 [test]
