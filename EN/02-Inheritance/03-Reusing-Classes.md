@@ -59,7 +59,7 @@ class Patient extends Person {
 
 Overriding is a mechanism in which we can give custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
 
-It's am imporant tool as it is connected to another pillar of the OOP **Polymorphism**.
+It's an imporant tool as it is connected to another pillar of the OOP **Polymorphism**.
 
 
 ```java
@@ -87,7 +87,7 @@ public class Student extends Person {
 
 - `final` – defines a method that **can not be overridden**.
   We should use this tool when we want to preserve our method implementation down the class hierarchy.
-  Final can be declared in any derived class and it gets in power for the classes children down the hierarchy.
+  `final` can be declared in any derived class and it gets in power for the classes children down the hierarchy.
 
 ```java
 public class Animal {
@@ -122,7 +122,7 @@ public class MyMath extends Math { }     // Error…
 ## Abstraction
 
 - With inheritance we can provide abstraction to the classes we use.
-- We can re-use logic, ;ess code less bugs.
+- We can re-use logic, less code means less bugs.
 - We can achieve **Polymorphism**
 
 ```java
