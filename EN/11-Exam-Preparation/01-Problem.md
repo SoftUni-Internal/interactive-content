@@ -20,7 +20,8 @@ In this exam, you need to build an online shop project, which has **peripherals*
 
 # Setup
 
-- Download skeleton from [mega.nz](https://mega.nz/file/KZ5m3bIS#PgRRE2bS6oa4pbjjS0-QKBbjbWmvRqDMFqCdVo8MR3c)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **for this task.**
+
 - Upload **only the onlineShop** package in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**

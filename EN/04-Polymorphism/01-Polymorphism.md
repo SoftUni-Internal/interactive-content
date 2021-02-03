@@ -84,19 +84,19 @@ We can use the `instanceOf` operator in Java to check if an **object** is an ins
 
 Lets take a look now at the different examples:
 
-First, lets declare our Map:
+1. First, lets declare our Map
 
 ```java
  Map<Object, Object> map = new HashMap();
 ```
 
-Then, lets create a `boolean` type to evaluate our result:
+2. Then, lets create a `boolean` type to evaluate our result
 
 ```java
 boolean result = map instanceof Object;
 ```
 
-Finally we can print the result:
+3. Finally we can print the result
 
 ```java
 System.out.println("Map is instance of Object: " + result);
@@ -140,8 +140,6 @@ true
 
 That output shows the `instanceOf` operator works of the **is-a relationship** concept that is based on a class **inheritance** or **interface implementation**.
 
-
-
 [/slide]
 
 
@@ -155,6 +153,40 @@ There are **two** types of **Polymorphism** in Java:
 
 - Static Polymorphism
 
+## Static Polymorphism
+
+One of the way Java supports **Static Polymorphism** or also reffered to as **Compile-Time Polymorphism** is by "**Method overloading**".
+
+**Method overloading** allows us to have two or more **methods** with the same name, but different **signature**.
+
+The method signature contains:
+- **Method name**
+- **Parameters**
+
+We can overload a method by changing the parameter types, the count of parameters or the order of the parameters.
+
+We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
+
+Lets see this simple example:
+
+``` java
+class Calculation {  
+  void sum(int a,int b) {
+  System.out.println(a+b);
+  }  
+  
+  void sum(int a,int b,int c){
+  System.out.println(a+b+c);
+  }  
+
+  public static void main(String args[]) {  
+    Calculation calculator = new Calculation();  
+    obj.sum(5,10,15);  // 30
+    obj.sum(20,40);   // 60
+  }  
+}  
+```
+
 ## Dynamic Polymorphism
 
 **Dynamic Polymorphism** is a Polymorphism that is exhibited at runtime.
@@ -163,7 +195,9 @@ Therefore the **behavior** of the **method** is decided at **runtime**.
 
 **Dynamic Polymorphism** can be achieved using **method overriding**.
 
-We can declare a method in our **sub-class** while the method is already present in the **parent class**. That is called **method overriding**.
+We can declare a method in our **sub-class** while the method is already present in the **parent class**. 
+
+That is called **method overriding**.
 
 This way, a **child class** can give its own **implementation/property** to a method which is already provided by the **parent class**.
 
@@ -204,44 +238,11 @@ Animals can eat
 Dogs can eat meat
 ```
 
-## Static Polymorphism
-
-One of the way Java supports **Static Polymorphism** or also reffered to as **Compile-Time Polymorphism** is by "**Method overloading**".
-
-**Method overloading** allows us to have two or more **methods** with the same name, but different **signature**.
-
-The method signature contains:
-- **Method name**
-- **Parameters**
-
-We can overload a method by changing the parameter types, the count of parameters or the order of the parameters.
-
-We can not have two methods with the same name and the same parameters, **the name of parameters does not matter**!
-
-Lets see this simple example:
-
-``` java
-class Calculation {  
-  void sum(int a,int b) {
-  System.out.println(a+b);
-  }  
-  
-  void sum(int a,int b,int c){
-  System.out.println(a+b+c);
-  }  
-
-  public static void main(String args[]) {  
-    Calculation calculator = new Calculation();  
-    obj.sum(5,10,15);  // 30
-    obj.sum(20,40);   // 60
-  }  
-}  
-```
 [/slide]
 
 [slide hideTitle]
 # Problem: Math Operation
-[code-task title="Problem: Math Operation" taskId="a898bac9-1770-4018-a322-76e7030af153" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Math Operation" taskId="a898bac9-1770-4018-a322-76e7030af153" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -396,9 +397,161 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Solution: MathOperation
+# Solution: Math Operation
+[code-task title="Math Operation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a class **MathOperation**, which should have method `add()`. 
+
+Method `add()` have to be invoked with **two**, **three** or **four** **Integers**.
+
+**You should be able to use the class like this:**
+```java
+public static void main(String[] args) throws IOException {
+    MathOperation math = new MathOperation();
+    System.out.println(math.add(2, 2));
+    System.out.println(math.add(3, 3, 3));
+    System.out.println(math.add(4, 4, 4, 4));
+}
+```
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|  | 4 |
+|  | 9 |
+|  | 16 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class T01TestAllClassesExists \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+
+    private static final String\[\] classNames = new String\[\]\{
+            "MathOperation"
+    \};
+
+    @Test
+    public void test() \{
+        assertExistingClasses(classNames);
+    \}
+
+    private void assertExistingClasses(String\[\] classNames) \{
+        for (String className : classNames) \{
+            assertClassExists(className);
+        \}
+    \}
+
+    private void assertClassExists(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+
+public class T02TestAddMethod \{
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String METHOD_RETURN_TYPE_ERROR = "Method '%s' in class '%s' should have return type '%s'";
+    private static final String TEST_METHOD_NAME = "add";
+    private static final String CLASS_NAME = "MathOperation";
+
+
+
+    private static final String\[\] methodNames = new String\[\]\{
+            TEST_METHOD_NAME
+    \};
+
+    private static final HashMap\<String, Class\> methodReturnTypes = new HashMap\<String, Class\>() \{\{
+        put(TEST_METHOD_NAME, int.class);
+    \}\};
+
+    private static final HashMap\<String, Class\[\]\> methodParameters = new HashMap\<String, Class\[\]\>() \{\{
+        put(TEST_METHOD_NAME, new Class\[\]\{int.class,int.class\});
+    \}\};
+
+    private Object clazz;
+
+    @Test
+    public void test() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException \{
+        assertAddMethodWorksCorrect(methodNames);
+    \}
+
+    private void assertAddMethodWorksCorrect(String\[\] methodNames) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchFieldException \{
+        Class cl = getClass(CLASS_NAME);
+        Constructor constructor = cl.getConstructor();
+        constructor.setAccessible(true);
+        clazz = constructor.newInstance();
+
+        Assert.assertEquals(String.format(METHOD_RETURN_TYPE_ERROR,
+                    "add",
+                    CLASS_NAME,
+                    methodReturnTypes.get("add")), int.class, methodReturnTypes.get("add"));
+
+            Method first =cl.getDeclaredMethod("add",int.class,int.class);
+            Method second =cl.getDeclaredMethod("add",int.class,int.class,int.class);
+            Method third =cl.getDeclaredMethod("add",int.class,int.class,int.class,int.class);
+            first.setAccessible(true);
+
+
+                int result = (int)first.invoke(clazz, 2, 2);
+                int result1 = (int)second.invoke(clazz, 3,3,3);
+                int result2 = (int)third.invoke(clazz, 4,4,4,4);
+
+            Assert.assertTrue("add not implemented correctly",result==4);
+            Assert.assertTrue("add not implemented correctly",result1==9);
+            Assert.assertTrue("add not implemented correctly",result2==16);
+
+
+
+    \}
+
+
+    private Class getClass(String className) \{
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+        return Classes.allClasses.get(className);
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
+
 
 [slide hideTitle]
 
@@ -407,26 +560,26 @@ Test Passed!
 
 ## Rules for Overriding methods:
 
-- We can Override method in **sub-class**.
+- We can Override method in **sub-class**
 
-- Parameters must be the same as parameters in **parent method**.
+- Parameters must be the same as parameters in **parent method**
 
-- The overriding method must have **same return type**.
+- The overriding method must have **same return type**
 
-- We cannot override **private**, **static** or **final** methods.
+- We cannot override **private**, **static** or **final** methods
 
-- Overriding methods cannot throw **checked Exception** which is higher in hierarchy, than **checked Exception** thrown by overridden method.
+- Overriding methods cannot throw **checked Exception** which is higher in hierarchy, than **checked Exception** thrown by overridden method
 
 ## Rules for Overloading methods:
 
-- We can **overload** method that take place in the **same class** or in its **sub-class**.
+- We can **overload** method that take place in the **same class** or in its **sub-class**
 
-- We can **overload Constructors** in Java.
+- We can **overload Constructors** in Java
 
-- Overloaded methods can have the **same** or **different** **return** types.
+- Overloaded methods can have the **same** or **different** **return** types
 
-- Overloaded methods must have **different argument list**.
+- Overloaded methods must have **different argument list**
 
-- Overloaded method should always be the part of the same class, with **same name** but **different parameters**.
+- Overloaded method should always be the part of the same class, with **same name** but **different parameters**
 
 [/slide]

@@ -19,7 +19,8 @@ public class Main {
 
 # Setup
 
-- Download the resources from here - [mega.nz](https://mega.nz/file/aJhzACoK#3A-jxtTKRhj8tyZXSSlM3LprWL6kstyKfl1y0xB0eL4)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/10-Java-OOP-Advanced-Exam-Preparation.zip) **for this task.**
+
 - Upload **only the santaWorkshop package** in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**

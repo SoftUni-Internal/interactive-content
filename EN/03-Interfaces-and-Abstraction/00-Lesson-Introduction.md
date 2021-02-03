@@ -4,19 +4,26 @@
 
 # Lesson Content
 
-## In this Lesson you will learn:
+## In this lesson you will learn:
 
-1. **Inheritance and Interfaces**
-    - What is Interface
-    - What is Abstract class 
+**1. Inheritance and Interfaces**
 
-2. **Abstraction**
-    - Abstraction as an Object-Oriented-Principle
-    - Benefits of Abstraction
-    - How do we achieve Abstraction
+- What is Interface
 
-3. **Interfaces**
-    - How to declare default methods
-    - How to declare static methods
+- What is Abstract class 
+
+**2. Abstraction**
+
+- Abstraction as an Object-Oriented-Principle
+
+- Benefits of Abstraction
+
+- How do we achieve Abstraction
+
+**3. Interfaces**
+
+- How to declare default methods
+
+- How to declare static methods
     
-    [/slide]
+[/slide]

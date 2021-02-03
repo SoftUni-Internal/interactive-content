@@ -1,16 +1,16 @@
 [slide hideTitle]
 # Using Inherited Members
 
-**You can access inherited members**
+**You can access inherited members.**
 
 ```java
 class Person { public void sleep() { … } }
-class Student extends Person { … }
+class Student extends Person { … }          //As we extend the class Person, we derive all it's members
 class Employee extends Person { … }
 ```
 ```java
 Student student = new Student();
-student.sleep();
+student.sleep();                            //Here we can use the derived classes
 Employee employee = new Employee();
 employee.sleep();
 ```
@@ -20,7 +20,7 @@ employee.sleep();
 
 # Reusing Constructors
 
-**Constructors are not inherited**
+**Constructors are not inherited.**
 
 When a **parent class** declares a **constructor** with parameters everybody that inherites from this class **directly** must implement a **constructor** with the same parameters.
 
@@ -68,13 +68,19 @@ As you can see in the image below, when we inherit the memory for the **Parent**
 
 [image assetsSrc="inheritance-example(6).png" /]
 
-## Inheritance has a transitive relation
+[/slide]
+
+[slide hideTitle]
+
+# Inheritance has a transitive relation
 
 ```java
-class Person { … }
-class Student extends Person { … }
-class CollegeStudent extends Student { … }
+class Person { … }                              //Base class with some functionallity.
+class Student extends Person { … }              //Student will get all the functionallity from Person and add more to it.
+class CollegeStudent extends Student { … }      //CollegeStudent will inherit all the functionallity from Student and from Person.
 ```
+
+That's what transitive relation is, a **SubClass** gets all the functionallity from it's super classes up the hierachy.
 
 [image assetsSrc="inheritance-example(7).png" /]
 
@@ -94,8 +100,26 @@ Instead if you need one class to be from few families you can implement many **i
 [/slide]
 
 [slide hideTitle]
+# Access to Base Class Members
+
+To access the base class members, use the `super` keyword.
+
+```java
+class Person { … }
+
+class Employee extends Person { 
+  public void fire(String reasons) { 
+    System.out.println(
+        super.name +                        //We use the `super` keyword to access the SuperClass/Inherited class members.
+        " got fired because " + reasons);
+  }
+}
+```
+[/slide]
+
+[slide hideTitle]
 # Problem: Multiple Inheritance
-[code-task title="Problem: Multiple Inheritance" taskId="5cf868e8-02f2-4b35-9377-f7b81085064e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Multiple Inheritance" taskId="5cf868e8-02f2-4b35-9377-f7b81085064e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -111,11 +135,11 @@ public class Main {
 ## Description
 Create three classes named **Animal, Dog** and **Puppy**. 
 
-**Animal** with a single public method `.eat()` that prints: **"eating…"**
+**Animal** with a single public method `.eat()` that prints: **"eating…"**.
 
-**Dog** with a single public method `.bark()` that prints: **"barking…"**
+**Dog** with a single public method `.bark()` that prints: **"barking…"**.
 
-Puppy with a single public method weep() that prints: **"weeping…"**
+Puppy with a single public method weep() that prints: **"weeping…"**.
 
 **Dog** should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
 
@@ -180,30 +204,92 @@ Test Passed!
 
 [slide hideTitle]
 # Solution: Multiple Inheritance
+[code-task title="Multiple Inheritance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
-[/slide]
-
-[slide hideTitle]
-# Access to Base Class Members
-
-To access the base class members, use the `super` keyword
-
-```java
-class Person { … }
-
-class Employee extends Person { 
-  public void fire(String reasons) { 
-    System.out.println(
-        super.name + 
-        " got fired because " + reasons);
-  }
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
 }
 ```
+[/code-editor]
+[task-description]
+## Description
+Create three classes named **Animal, Dog** and **Puppy**. 
+
+**Animal** with a single public method `.eat()` that prints: **"eating…"**.
+
+**Dog** with a single public method `.bark()` that prints: **"barking…"**.
+
+Puppy with a single public method weep() that prints: **"weeping…"**.
+
+**Dog** should inherit from **Animal**. **Puppy** should inherit from **Dog**. 
+
+[image assetsSrc="inheritance-example(10).png" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Method;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+public class TestPuppy \{
+    @Test
+    public void testPuppyClass() \{
+        Assert.assertTrue("Class 'Puppy' not found", Classes.allClasses.containsKey("Puppy"));
+
+        Class puppy = Classes.allClasses.get("Puppy");
+        Method\[\] methods = puppy.getDeclaredMethods();
+        Optional\<Method\> weepMethod = Stream.of(methods).filter(m -\> m.getName().equals("weep")).findFirst();
+        Assert.assertTrue("Method 'weep' not found", weepMethod.isPresent());
+        Assert.assertTrue("Method 'weep' has incorrect return type", weepMethod.get().getReturnType().equals(Void.TYPE));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TestSuperClass \{
+    @Test
+    public void testDogParent() \{
+        Assert.assertTrue("Class 'Puppy' not found", Classes.allClasses.containsKey("Puppy"));
+
+        Class puppy = Classes.allClasses.get("Puppy");
+
+        Class dog = puppy.getSuperclass();
+        Assert.assertTrue("Class 'Puppy' should inherit from class 'Dog'", dog.getSimpleName().equals("Dog"));
+
+        Class animal = dog.getSuperclass();
+        Assert.assertTrue("Class 'Dog' should inherit from class 'Animal'", animal.getSimpleName().equals("Animal"));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
 # Problem: Hierarchical Inheritance
-[code-task title="Problem: Hierarchical Inheritance" taskId="8688e808-529e-4532-be86-b62a8cdc42fc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Hierarchical Inheritance" taskId="8688e808-529e-4532-be86-b62a8cdc42fc" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -277,9 +363,78 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-
 # Solution: Hierarchical Inheritance
+[code-task title="Hierarchical Inheritance" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create three classes named **Animal**, **Dog** and **Cat**. 
+
+**Animal** with a single public method `.eat()` that prints: **"eating…"**
+
+**Dog** with a single public method `.bark()` that prints: **"barking…"**
+
+**Cat** with a single public method `.meow()` that prints: **"meowing…"**
+
+**Dog** and **Cat** should inherit from **Animal**.
+
+[image assetsSrc="inheritance-example(11).png" /]
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TestCatParent \{
+
+    @Test
+    public void testCatParent() \{
+        Assert.assertTrue("Class 'Cat' not found", Classes.allClasses.containsKey("Cat"));
+        Class cat = Classes.allClasses.get("Cat");
+        Class catParent = cat.getSuperclass();
+        Assert.assertTrue("Class 'Cat' should inherit from class 'Animal'", catParent.getSimpleName().equals("Animal"));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TestDogParent \{
+
+    @Test
+    public void testCatParent() \{
+        Assert.assertTrue("Class 'Dog' not found", Classes.allClasses.containsKey("Dog"));
+        Class dog = Classes.allClasses.get("Dog");
+        Class dogParent = dog.getSuperclass();
+        Assert.assertTrue("Class 'Dog' should inherit from class 'Animal'", dogParent.getSimpleName().equals("Animal"));
+    \}
+\}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 

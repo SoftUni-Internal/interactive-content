@@ -3192,15 +3192,4 @@ Test Passed!
 [/tests]
 [/code-task]
 
-
-
-[/slide]
-
-
-
-
-[slide hideTitle]
-# Homework Results
-[tasks-results/]
-
 [/slide]

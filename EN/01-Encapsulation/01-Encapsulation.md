@@ -2,12 +2,12 @@
 # Encapsulation
 
 **Encapsulation is a process of wrapping code and data together into a single unit**
-- Increase flexibility and extensibility of the code.
-- Reduce complexity.
-- Structural changes remain local.
-- Allow validation and data binding.
+- Increase flexibility and extensibility of the code
+- Reduce complexity
+- Structural changes remain local
+- Allow validation and data binding
 
-**Objects fields must be private**
+**Objects fields must be private**:
 
 ```java
 class Person {
@@ -51,9 +51,9 @@ Accessors and Mutators should be **public** (+)
 [slide hideTitle]
 # Keyword This 
 
-- `.this` is a reference to the current object.
+- `.this` is a reference to the current object
 
-It can refer to current class instance.
+It can refer to current class instance:
 
 ```java
 public Person(String name) {
@@ -61,7 +61,7 @@ public Person(String name) {
 }
 ```
 
-- `.this` can invoke current class method.
+- `.this` can invoke current class method
 
 ```java
 public String fullName() {
@@ -69,7 +69,7 @@ public String fullName() {
 }
 ```
 
-- `.this` can invoke current class constructor.
+- `.this` can invoke current class constructor
 
 ```java
 public Person(String name) {
