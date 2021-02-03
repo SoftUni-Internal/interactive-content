@@ -7,7 +7,7 @@
 
 ```java
 private void setSalary(double salary) {
-  if (salary < 460) {
+  if (salary < 460) {   //Validation happens here
     throw new IllegalArgumentException("Message");
   }
   
