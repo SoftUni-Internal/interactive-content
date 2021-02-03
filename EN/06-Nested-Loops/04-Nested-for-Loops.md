@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Nested for Loops
 
 [vimeo-video]
@@ -38,7 +38,7 @@ for (let i = 1; i <= n; i += 3) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Example
 
 [vimeo-video]
@@ -61,9 +61,9 @@ for (let r = 0; r <= rows; r++) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Triangle of Stars
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-lab-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
@@ -104,7 +104,7 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Triangle of Stars
 
 [vimeo-video]

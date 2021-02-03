@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Bucle for imbricate
 
@@ -44,7 +44,7 @@ for (let i = 1; i <= n; i += 3) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Exemplu
 
 [vimeo-video]
@@ -68,9 +68,9 @@ for (let r = 0; r <= rows; r++) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Triangle of Stars
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-lab-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
@@ -112,7 +112,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Triangle of Stars
 
 [vimeo-video]
