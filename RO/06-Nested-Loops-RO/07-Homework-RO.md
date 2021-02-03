@@ -19,7 +19,7 @@
 [code-editor language=javascript]
 ```
 function building(floors, rooms) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -202,7 +202,7 @@ A10 A11 A12
 [code-editor language=javascript]
 ```
 function passwords(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -290,7 +290,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function magicNumber(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -422,7 +422,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function travelling(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -741,7 +741,7 @@ Going to Albania!
 [code-editor language=javascript]
 ```
 function primeNumbers(firstNumber, secondNumber) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -840,11 +840,18 @@ Scrieți un program care:
 [code-task title="Unique PIN Codes" taskId="pb-js-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function uniquePinCodes(input) {
-    // Write your code here
+function uniquePinCodes(firstNumber, secondNumber, thirdNumber) {
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]))
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -860,9 +867,9 @@ Scrieți un program care:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|3| 222 |
-|5| 224 |
-|5| 232 |
+|3, 5, 5| 222 |
+|| 224 |
+|| 232 |
 || 234 |
 || 252 |
 || 254 |
@@ -894,6 +901,132 @@ Scrieți un program care:
 828
 [/output]
 [/test]
+[test]
+[input]
+2
+4
+6
+[/input]
+[output]
+222
+224
+226
+232
+234
+236
+[/output]
+[/test]
+[test]
+[input]
+3
+6
+9
+[/input]
+[output]
+222
+224
+226
+228
+232
+234
+236
+238
+252
+254
+256
+258
+[/output]
+[/test]
+[test]
+[input]
+2
+2
+3
+[/input]
+[output]
+222
+[/output]
+[/test]
+[test]
+[input]
+1
+1
+1
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+7
+8
+9
+[/input]
+[output]
+222
+224
+226
+228
+232
+234
+236
+238
+252
+254
+256
+258
+272
+274
+276
+278
+422
+424
+426
+428
+432
+434
+436
+438
+452
+454
+456
+458
+472
+474
+476
+478
+622
+624
+626
+628
+632
+634
+636
+638
+652
+654
+656
+658
+672
+674
+676
+678
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+5
+[/input]
+[output]
+222
+224
+232
+234
+[/output]
+[/test]
 [/tests]
 [code-io/]
 [/code-task]
@@ -906,7 +1039,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function letterCombinations(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -952,7 +1085,7 @@ aaa aac aca acc caa cac cca ccc 8
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
