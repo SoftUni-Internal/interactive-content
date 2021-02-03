@@ -40,7 +40,7 @@ This means that every object that we create is implicitly a child of the class `
 [slide hideTitle]
 # Inheritance in Java
 
-We can **Inherite** a given class through the keyowrd **extends**, placed right after the name of the given subclass, further setting the parent.
+We can **Inherite** a given class through the keyword **extends**, placed right after the name of the given subclass, further setting the parent.
 
 ```java
 class Person { … }
