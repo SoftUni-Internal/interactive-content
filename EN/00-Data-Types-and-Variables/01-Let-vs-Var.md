@@ -1,6 +1,6 @@
 # Local vs. Global
 
-[slide]
+[slide hideTitle]
 
 
 # Var and Let
@@ -12,7 +12,7 @@
 
 Different data types have different **sizes** in computer's memory.
 
-Everything in computers is **units and zeros**, for example int is 32bit, which means that in order to write int in the computer's memory, **thirty-two units and zeros are needed.**
+Everything in computers is **ones and zeros**, for example `int` is 32-bit, which means that in order to write `int` in the computer's memory, **thirty-two ones and zeros are needed.**
 
 Thus, we tell the computer that it must set aside thirty-two bits, in order to read our number.
 
@@ -26,16 +26,16 @@ A literal in programming means to write a variable with such a value that the in
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) or ES6 introduced two new ways to create variables – `let` and `const`. Before that, only `var` was used.
 
-`Var` is a variable that works in the so-called functional scope
+`Var` is a variable that works in the so-called functional scope.
 
-``` JavaScript
+```js
 {
      var x = 2;
 }
 console.log(x); // 2
 ```
 
-Using `var`, we can access a variable, before we declare it.:
+Using `var`, we can access a variable, before we declare it.
 
 ``` js live
 console.log(myVar);
@@ -43,9 +43,9 @@ console.log(myVar);
 var myVar = 'Peter';
 ```
 
-Here we get undefined, because we don't know the value of the variable, nor can we access it. 
+Here we get undefined, because we do not know the value of the variable, nor can we access it. 
 
-But, it's important that no error is shown and the program works. 
+But, it is important that no error is shown and the program works. 
 
 That could lead to unexpected results in our program.
 
@@ -53,27 +53,27 @@ Whereas when we declare a variable with `let`, this variable is available in **b
 
 Everything that is enclosed in **curly brackets** `{}` is a block where variables live. 
 
-This can be the body of some `if` constructions, loops, or the body of a functionс
+This can be the body of some `if` constructions, loops, or the body of a function.
 
-``` JavaScript
+```js
 {
     let x = 2;
 }
 console.log(x) // undefined
 ```
 
-When we declare a varible with let, we can't access it, if we try to acces that varible, we receive an arror.
+When we declare a variable with `let`, we cannot access it, if we try to access that variable, we receive an error.
 
 ``` js live
 console.log(myVar);
 
 let myVar = 'Peter';
 ```
-We strongly advise you to use `let` when you **declare a variable**, that way you're going to protect yourself from unwanted behaviour of the program.
+We strongly advise you to use `let` when you **declare a variable**, that way you are going to protect yourself from unwanted behavior of the program.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 
@@ -89,15 +89,17 @@ We strongly advise you to use `let` when you **declare a variable**, that way yo
 
 Scope means the **life** of the variable or where the variable is **visible**. 
 
-Outside this scope, variable cannot be accessed.
+Outside this scope, variables cannot be accessed.
 
 We have **four types of scope**, and we will go through them in more detail in the JavaScript Advanced course.
 
 # Global scope
 
-- all the variables we have defined at the top level. These are usually our functions
+All the variables we have defined at the top level.
 
-``` JavaScript
+These are usually our functions.
+
+```js
 var carName = "Volvo";
   // Code here can use carName
 function myFunction() {
@@ -105,23 +107,26 @@ function myFunction() {
  }
 ```
 
-In this example, we define the variable `carName` in the global scope, outside the function. Therefore, we can access it in all functions.
+In this example, we define the variable `carName` in the global scope, outside the function.
 
-# Function Scope
+Therefore, we can access it in all functions.
+
+## Function Scope
 
 Functional scope is the **body of the function**, and each variable defined in the function lives only in the body of the function.
 
-``` JavaScript
+```js
 function myFunction() {
    var carName = "Volvo";
    // Only here, the code can use carName
  }
  ```
 
-# Block Scope 
+## Block Scope 
 
 We also have a third type of scope – **Block Scope**. That is any body, defined in curly braces `{}`.
-``` JavaScript
+
+```js
 {
   let x = 2;
 } 
@@ -133,13 +138,15 @@ From the programming basics course we know that we can embed an `if-else` constr
 
 So we put one block of code into another block of code.
 
-# Object Scoup
+## Object Scope
 
-The fourth type of scope is the **object scoup**, which is related to the **implementation of the functions**. We will talk about object scoup in more detail in the advanced course.
+The fourth type of scope is the **object scope**, which is related to the **implementation of the functions**. 
+
+We will talk about object scope in more detail in the Advanced course.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Naming Variables
 
@@ -148,9 +155,9 @@ The fourth type of scope is the **object scoup**, which is related to the **impl
 [stream language="RO" videoId="489371334/07bcadb0ba"  /]
 [/video-vimeo]
 
-When we create a variable, we use `cammelCase`, which means that the variable starts with a **lowercase letter** and each subsequent word is with a c**apital letter**.
+When we create a variable, we use `camelCase`, which means that the variable starts with a **lowercase letter** and each subsequent word begins with a **capital letter**.
 
-Names are also case sensitive.
+Names are also case-sensitive.
 
 To be valid, the variable must start with either a **letter** or an **underscore**, but cannot begin with a number.
 
@@ -170,5 +177,5 @@ Because in the future we can add some **functionality** to the function and we h
 
 This rule applies less to functions because it is **not a good practice to change** the functionality of the function.
 
-But this rule applies in full force to the **classes**, because a class can g**row a lot over time** and the name we have given is initially not good.
+But this rule applies in full force to the **classes**, because a class can **grow a lot over time** and the name we have given initially is not good.
 [/slide]
