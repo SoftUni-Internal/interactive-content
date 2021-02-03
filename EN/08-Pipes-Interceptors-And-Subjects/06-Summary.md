@@ -30,7 +30,7 @@ export class ShortenPipe implements PipeTransform {
   - This information can be verified and trusted because it is digitally signed
   - They consist of a Header, Payload and Signature, separated by dots
 
-- Interceptors are most often used to automatically attach authentication information to requests
+- Interceptors are most often used to automatically attach authentication information to requests
   - Implemented since Angular 4 using `HttpInterceptor`
 
 ```js
@@ -55,7 +55,7 @@ export class TokenInterceptor implements HttpInterceptor {
 
 - Lazy Loading improves page load time
   - Downloads applications in pieces
-  - Done by organizing the application into separate modules
+  - Done by organizing the application into separate modules
 
 ```js
 const furnitureRoutes = [ { path: '', children: […] } ]
