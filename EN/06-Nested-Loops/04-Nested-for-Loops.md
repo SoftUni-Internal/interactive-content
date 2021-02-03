@@ -230,5 +230,3 @@ Write a program, which:
 [/tests]
 [/code-task]
 [/slide]
-
-[/slide]
