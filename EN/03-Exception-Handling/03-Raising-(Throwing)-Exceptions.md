@@ -90,7 +90,7 @@ Define a simple class **Person**, which has the following fields:
 
 # Solution: Valid Person
 
-## Step 1. Create a Class Person
+- **Step 1: Create a Class Person**
 
 Create a class **Person**. The class should contain the following fields: 
 **first name (String), last name (String), and age (int)**.
@@ -115,7 +115,7 @@ public class Person {
 }
 ```
 
-## Step 2. Add Getters and Setters and Validate the Data
+- **Step 2: Add Getters and Setters and Validate the Data**
 
 Add **getters and setters** for each of the fields. 
 
@@ -164,7 +164,7 @@ public Person (String firstName, String lastName, int age) {
 }
 ```
 
-## Step 3. Test the Person Class
+- **Step 3: Test the Person Class**
 
 In your main program, test whether your class behaves correctly. 
 
@@ -190,7 +190,7 @@ public static void main(String[] args) {
 }
 ```
 
-## Step 4. Add Try-Catch Blocks
+- **Step 4: Add Try-Catch Blocks**
 
 To prevent the program from blowing up, surround the invalid lines in **try-catch** blocks. 
 

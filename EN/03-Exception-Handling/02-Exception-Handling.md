@@ -69,7 +69,7 @@ try {
 
 # Handling all Exceptions
 
-## Unmanaged code can throw **other exceptions**.
+- Unmanaged code can throw **other exceptions**.
 
 For **handling all exceptions** (even unmanaged) use the construction:
 
