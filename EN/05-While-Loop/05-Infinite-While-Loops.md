@@ -1,8 +1,15 @@
 [slide hideTitle]
 # Infinite While Loop
+
+Java-While-Loops-21-22-Infinite-While-loops + 
+
+Java-While-Loops-23-24-Infinite-loops + 
+
+Java-While-Loops-25-Example-Infinite-Loop-with-Break
+
 We call an infinite loop one that repeats infinitely the performance of its body. 
 
-In `while` and `do-while` loops the end check is a conditional expression that always returns `true`. 
+In `while` loop the end check is a conditional expression that always returns `true`. 
 
 ```java
 while (true) {

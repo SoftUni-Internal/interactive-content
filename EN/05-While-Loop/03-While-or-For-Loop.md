@@ -1,6 +1,8 @@
 [slide hideTitle]
 # While or For Loop?
 
+Java-While-Loops-12-13-While-or-for
+
 `while` and `for` loops both **repeat** a block of **code**.
 
 But there are different situations when writing code that require either the first loop, or the other.
@@ -44,6 +46,9 @@ System.out.println(number);
 
 [slide hideTitle]
 # Problem: Odd Number
+
+Java-While-Loops-14-Problem-Odd-Number
+
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -91,8 +96,11 @@ Write a program, which:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Odd Number
+
+Java-While-Loops-15-Solution-Odd-Number
+
 [code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -141,6 +149,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Problem: Number Processor
+
+Java-While-Loops-16-Problem-Number-Processor
+
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -219,6 +230,9 @@ END
 
 [slide hideTitle]
 # Solution: Number Processor
+
+Java-While-Loops-17-Solution-Number-Processor
+
 [code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java

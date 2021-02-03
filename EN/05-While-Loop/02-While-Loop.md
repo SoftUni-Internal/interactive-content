@@ -1,5 +1,10 @@
 [slide hideTitle]
 # While Loop
+
+Java-While-Loops-5-6-While-loops + 
+
+Java-While-Loops-7-While-Loops-Example
+
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
 By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
@@ -47,6 +52,9 @@ while (num <= n) {
 
 [slide hideTitle]
 # Problem: Decreasing Numbers
+
+Java-While-Loops-8-Problem-Decreasing-Numbers + 
+
 [code-task title="Decreasing Numbers" taskId="java-basics-while-loop-decreasing-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -96,6 +104,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Decreasing Numbers
+
+Java-While-Loops-8-Solution-Decreasing-Numbers
+
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -145,6 +156,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Problem: Number in Range
+
+Java-While-Loops-10-Problem-Number-in-range
+
 [code-task title="Number in Range" taskId="java-basics-while-loop-number-in-range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -194,6 +208,9 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Number in Range
+
+Java-While-Loops-11-Solution-Number-In-range
+
 [code-task title="Number in Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
