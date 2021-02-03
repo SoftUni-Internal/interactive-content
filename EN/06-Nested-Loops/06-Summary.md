@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -11,6 +11,7 @@
 - **For-loops** can use different **steps**
    - E.g. `i += 2` or `i *= 2` or `i = i * i`
 - **Nested loops** are loops, placed **within another loop**
+
 ```js
 
 while (condition) {
