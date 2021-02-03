@@ -358,6 +358,11 @@ function specialNumber(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Special number is number **divisible by all of its digits** without remainder. 
