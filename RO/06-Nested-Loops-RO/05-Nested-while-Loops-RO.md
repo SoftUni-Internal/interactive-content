@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Bucle imbricate
 
 [vimeo-video]
@@ -9,6 +9,7 @@
 Folosirea buclelor imbricate `while` este foarte asemănătiare cu folosirea lui `for`.
 
 Iată cum arată sintaxa in JS:
+
 ```js
 while (condition) {
   // Outer Loop 
@@ -19,7 +20,9 @@ while (condition) {
   }
 }
 ```
+[/slide]
 
+[slide hideTitle]
 # Exemplu
 
 [vimeo-video]
@@ -42,9 +45,9 @@ while (row <= 2) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Triangle With Stars Stelelor With While
-[code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
+[code-task title="Triangle of Stars with While" taskId="pb-js-nested-loops-lab-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
@@ -85,7 +88,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Triangle of Stars with While
 
 [vimeo-video]
@@ -148,7 +151,7 @@ Scrieți un program care:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Sum of Digits Calculator
 
 [vimeo-video]
@@ -156,7 +159,7 @@ Scrieți un program care:
 [stream language="RO" videoId="488090779/48452cdf0b"  /]
 [/video-vimeo]
 
-[code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
+[code-task title="Sum of Digits Calculator" taskId="pb-js-nested-loops-lab-Sum-of-Digits-Calculator"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
 ```
 function sumOfDigits(inputLines) {
@@ -271,7 +274,7 @@ Goodbye
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Sum of Digits Calculator
 [vimeo-video]
 [stream language="EN" videoId="488090853/57ce6f8869" default /]
