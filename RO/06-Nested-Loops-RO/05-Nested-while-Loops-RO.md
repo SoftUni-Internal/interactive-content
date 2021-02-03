@@ -156,7 +156,7 @@ Scrieți un program care:
 [tests]
 [test]
 [input]
-5
+6
 [/input]
 [output]
 \*
@@ -169,7 +169,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-6
+7
 [/input]
 [output]
 \*
@@ -183,7 +183,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
+9
 [/input]
 [output]
 \*
@@ -199,7 +199,7 @@ Scrieți un program care:
 [/test]
 [/tests]
 [/code-task]
-[/slide]
+[/slide]]
 
 [slide hideTitle]
 # Problem: Sum of Digits Calculator

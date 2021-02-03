@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Nested while Loops
+# Nested "while" Loops
 
 [vimeo-video]
 [stream language="EN" videoId="488090609/3d873b4b3b" default /]
@@ -74,7 +74,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-5
+6
 [/input]
 [output]
 \*
@@ -87,7 +87,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-6
+7
 [/input]
 [output]
 \*
@@ -101,7 +101,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-8
+9
 [/input]
 [output]
 \*
@@ -155,7 +155,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-5
+6
 [/input]
 [output]
 \*
@@ -168,7 +168,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-6
+7
 [/input]
 [output]
 \*
@@ -182,7 +182,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-8
+9
 [/input]
 [output]
 \*
