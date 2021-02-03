@@ -4,7 +4,7 @@
 
 # Setup
 
-Download the resources from [mega.nz](https://mega.nz/file/2YpUBZyL#xIwqPxLv07H5ZXjFBDnNrSwWgKo2EsXEdoWNVX7YBQo)
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/03-Java-ORM-And-Spring-Data-introtohibernate_resources.zip) **for this task.**
 
 Use the **provided skeleton** to create **soft_uni** database. 
 
