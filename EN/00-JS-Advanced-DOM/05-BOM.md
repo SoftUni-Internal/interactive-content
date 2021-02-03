@@ -1,6 +1,6 @@
 # Browser Object Model
 
-[slide]
+[slide hideTitle]
 
 # BOM
 
@@ -43,7 +43,7 @@ window.printYear();
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Playing with BOM
 

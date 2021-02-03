@@ -1,6 +1,6 @@
 # DOM Manipulations
 
-[slide]
+[slide hideTitle]
 
 # Selection of Elements
 
@@ -20,7 +20,7 @@ Here are the four ways to select an element:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # CSS Selectors
 
@@ -40,7 +40,7 @@ Here are a few ways to utilize them:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # DOM Manipulations
 
@@ -75,7 +75,7 @@ h1.style.color = "blue"; // .color selects the CSS property to be changed and "b
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Creating DOM Elements
 
@@ -100,7 +100,7 @@ It is important to know that even though these elements are created, they **do n
 They are just **Javascript variables**.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Deleting DOM Elements
 
@@ -127,7 +127,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Articles List
 
@@ -332,7 +332,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Articles List
 
@@ -535,7 +535,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Properties vs. Attributes
 
@@ -551,7 +551,7 @@ There are DOM properties that **do not correspond** to an HTML element and vice 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # DOM Properties
 
@@ -593,7 +593,7 @@ console.log(input.value); //logs the value of the input field
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # HTML Attributes and Methods
 
@@ -665,7 +665,7 @@ h1.classList.remove("first"); //removes the "first" class
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Growing Word
 
@@ -974,7 +974,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Growing Word
 
@@ -1281,7 +1281,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Parents and Child Elements
 
@@ -1375,7 +1375,7 @@ list.prependChild(firstLi); //adds the "firstLi" element to the front of the lis
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # NodeList vs. HTMLCollection
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # DOM Methods
 
@@ -12,10 +12,10 @@ DOM properties are **information, that can be received and changed.**
 
 [/slide]
 
-# DOM Methods: Examples
-[slide]
 
-# Example 1:
+[slide hideTitle]
+
+# Example 1: DOM Methods
 
 After running this example in the browser:
 
@@ -69,7 +69,11 @@ In this example, a script is inserted into the HTML document by using the `<scri
 
 And that way, the first title element, which is `Introduction to DOM`, can be printed into the browser's console.
 
-# Example 2:
+[/slide]
+
+[slide hideTitle]
+
+# Example 2: DOM Methods
 
 HTML DOM properties are values that you can `get` or `set`:
 
@@ -94,7 +98,7 @@ HTML DOM properties are values that you can `get` or `set`:
 
 The given code produces the following result:
 
-[image assetsSrc="screenshot.jpg" /]
+[image assetsSrc="screenshot.JPG" /]
 
 With this example ` - DONE` is added to the end of `DOM Properties example` and as a result, there is `DOM Properties example - DONE`.
 

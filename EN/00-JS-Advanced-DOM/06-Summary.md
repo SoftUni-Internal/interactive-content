@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-# In this lesson you learnt: 
+## In this lesson you learned: 
 
 **DOM**
 
