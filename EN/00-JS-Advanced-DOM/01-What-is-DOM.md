@@ -1,6 +1,6 @@
 # What is DOM?
 
-[slide]
+[slide hideTitle]
 
 # Document Object Model
 
@@ -34,7 +34,7 @@ Between the two tags, there is the text value of the element.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # HTML DOM
 
