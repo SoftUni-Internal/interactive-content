@@ -73,6 +73,7 @@ Scrieți un program care:
 [/task-description]
 [code-io /]
 [tests]
+[test]
 [input]
 5
 [/input]
@@ -153,6 +154,7 @@ Scrieți un program care:
 [/task-description]
 [code-io /]
 [tests]
+[test]
 [input]
 5
 [/input]

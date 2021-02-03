@@ -91,6 +91,7 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
+[test]
 [input]
 5
 [/input]
@@ -172,6 +173,7 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
+[test]
 [input]
 5
 [/input]
