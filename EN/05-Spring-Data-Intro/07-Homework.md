@@ -10,6 +10,8 @@
 
 ### Description
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/05-Spring-Data-Intro-Homework-Resources.zip) **for this task.**
+
 Create database for a **Bookshop System**. 
 
 A bookshop keeps **books**. 
