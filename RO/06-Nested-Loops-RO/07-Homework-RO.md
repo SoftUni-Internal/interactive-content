@@ -1,6 +1,6 @@
 # Temă pentru acasă
 
-[slide]
+[slide hideTitle]
 # Problem: Building
 
 [vimeo-video]
@@ -18,11 +18,20 @@
 [code-task title="Building" taskId="pb-js-nested-loops-Building" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function building(input) {
+function building(floors, rooms) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+  let a = Number(input[0]);
+  let b = Number(input[1]);
+  return code(a, b);
+}
+```
+[/code-adapter
 [task-description]
 # Descriere
 Scrieți un program care: 
@@ -37,8 +46,8 @@ Imprimă informațiile despre o construcție:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|6| L60 L61 L62 L63|
-|4| A50 A51 A52 A53|
+|6, 4| L60 L61 L62 L63|
+|| A50 A51 A52 A53|
 ||O40 O41 O42 O43 |
 ||A30 A31 A32 A33 |
 ||O20 O21 O22 O23 |
@@ -174,7 +183,7 @@ A10 A11 A12
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Passwords
 
 [vimeo-video]
@@ -259,7 +268,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Magic Number
 [code-task title="Magic Number" taskId="pb-js-nested-loops-magic-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -303,7 +312,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Travelling
 [code-task title="Travelling" taskId="pb-js-nested-loops-travelling" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -567,7 +576,7 @@ Going to Albania!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Prime Numbers
 [code-task title="Prime Numbers" taskId="pb-js-nested-prime-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -662,7 +671,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Unique PIN Codes
 [code-task title="Unique PIN Codes" taskId="pb-js-nested-loops-unique-pin-codes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -727,7 +736,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Letter Combinations
 [code-task title="Letter Combinations" taskId="pb-js-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -773,7 +782,7 @@ aaa aac aca acc caa cac cca ccc 8
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Happy Numbers
 [code-task title="Happy Numbers" taskId="pb-js-nested-loops-Happy-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
