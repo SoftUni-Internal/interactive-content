@@ -1,6 +1,6 @@
 # Temă pentru acasă
 
-[slide]
+[slide hideTitle]
 # Problemă și soluție: Sum Digits
 
 
@@ -88,7 +88,7 @@ Scrieți un program care trebuie să îndeplinească urmăatoarele cerințe:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă și soluție: Favorite Book
 
 [vimeo-video]
@@ -229,7 +229,7 @@ Book found!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Find Min and Max
 [code-task title="Find Min and Max" taskId="pb-js-while-loop-Find-Min-And-Max" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -350,7 +350,7 @@ Min number: -5
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Special Number
 [code-task title="Special Number" taskId="pb-js-while-loop-Special-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -399,7 +399,7 @@ Scrieți un program cu următoarele caracteristici:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Special Bonus
 [code-task title="Special Bonus" taskId="pb-js-while-loop-Special-Bonus" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -454,7 +454,7 @@ Scrieți un program care să îndeplinească următoarele sarcini:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Sequence 2k + 1
 [code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -556,7 +556,7 @@ Scrieți un program care:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problemă: Account Balance
 [code-task title="Account Balance" taskId="pb-js-while-loop-Account-Balance" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
