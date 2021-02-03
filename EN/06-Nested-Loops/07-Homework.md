@@ -1038,6 +1038,11 @@ function letterCombinations(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
