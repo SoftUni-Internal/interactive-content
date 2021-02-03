@@ -120,13 +120,15 @@ List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              //.
 
 # Problem: Select Shampoos by Size
 
+## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Quering-Resources.zip) **for this task.**
+
 You are given a simpler implementation of the Shampoo Company. 
 
 Now it's time to start writing some query methods to retrieve data. 
 
 Before you start, insert the data from the "shampoo-company-insert.sql" file!
-
-## Description
 
 Create a method that selects all shampoos with a given size, ordered by shampoo id.
 
