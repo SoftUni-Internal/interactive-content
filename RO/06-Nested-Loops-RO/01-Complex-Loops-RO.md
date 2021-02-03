@@ -39,7 +39,7 @@ for (let k = 1; k <= 6; k *= 2) {
 
 ``` js live
 for (let d = 40; d > 0; d /= 2) {
-   console.log(i);
+   console.log(d);
 }
 ```
 
@@ -51,7 +51,7 @@ for (let d = 40; d > 0; d /= 2) {
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -65,7 +65,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 5, 4, 3, 2, 1 |
+|5| 5, 4, 3, 2, 1 |
 
 [/task-description]
 [tests]
@@ -127,14 +127,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
-  let n = Number(input);
-  let result = '';
-  for (let i = n; i >= 1; i--) {
-    if (i < n)
-      result += ", ";
-    result += i;
-  }
-  console.log(result);
+ // Scrieți codul dvs. aici
 }
 
 ```
@@ -150,7 +143,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 5, 4, 3, 2, 1 |
+|5| 5, 4, 3, 2, 1 |
 
 
 [/task-description]
@@ -207,7 +200,7 @@ Funcția primește un număr `n` și imprimă numerele de la `n` până la 1.
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -223,8 +216,8 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|`7`| 1, 4, 7 |
-|`10`| 1, 4, 7, 10 |
+|7| 1, 4, 7 |
+|10| 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
@@ -286,13 +279,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-    let result = '';
-  for (let i = 1; i <= n; i += 3) {
-    if (i > 1)
-      result += ", ";
-    result += i;
-  }
-  console.log(result);
+  // Scrieți codul dvs. aici;
 }
 ```
 [/code-editor]
@@ -308,8 +295,8 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|`7`| 1, 4, 7 |
-|`10`| 1, 4, 7, 10 |
+|7| 1, 4, 7 |
+|10| 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
@@ -365,7 +352,7 @@ Scrieți o funcție pentru a imprima numerele de la 1 la `n` cu pasul 3:
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -381,8 +368,8 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 1, 4, 16 |
-|`10`| 1, 4, 16, 64, 256, 1024 |
+|5| 1, 4, 16 |
+|10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
@@ -444,15 +431,7 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-  let num = 1;
-  let result = '';
-  for (let i = 0; i <= n; i += 2) {
-    if (i > 0)
-      result += ", ";
-    result += num;
-    num = num * 2 * 2;
-  }
-  console.log(result);
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -469,8 +448,8 @@ Scrieți o funcție pentru a imprima puterile pare cu 2:
 
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 1, 4, 16 |
-|`10`| 1, 4, 16, 64, 256, 1024 |
+|5| 1, 4, 16 |
+|10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]

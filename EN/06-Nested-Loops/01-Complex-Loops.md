@@ -36,7 +36,7 @@ for (let k = 1; k <= 6; k *= 2) {
 
 ``` js live
 for (let d = 40; d > 0; d /= 2) {
-   console.log(i);
+   console.log(d);
 }
 ```
 
@@ -48,7 +48,7 @@ for (let d = 40; d > 0; d /= 2) {
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
-    // Write your code here
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -61,7 +61,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 5, 4, 3, 2, 1 |
+|5| 5, 4, 3, 2, 1 |
 
 
 [/task-description]
@@ -124,14 +124,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [code-editor language=javascript]
 ```
 function numbersFromNto1(input) {
-  let n = Number(input);
-  let result = '';
-  for (let i = n; i >= 1; i--) {
-    if (i < n)
-      result += ", ";
-    result += i;
-  }
-  console.log(result);
+  // Write your code here
 }
 
 ```
@@ -145,7 +138,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 5, 4, 3, 2, 1 |
+|5| 5, 4, 3, 2, 1 |
 
 
 [/task-description]
@@ -202,7 +195,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-    // Write your code here
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -218,8 +211,8 @@ Write a function to print the numbers from 1 to `n` with step 3:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`7`| 1, 4, 7 |
-|`10`| 1, 4, 7, 10 |
+|7| 1, 4, 7 |
+|10| 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
@@ -281,13 +274,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [code-editor language=javascript]
 ```
 function numbersFrom1ton(n) {
-    let result = '';
-  for (let i = 1; i <= n; i += 3) {
-    if (i > 1)
-      result += ", ";
-    result += i;
-  }
-  console.log(result);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -303,8 +290,8 @@ Write a function to print the numbers from 1 to `n` with step 3:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`7`| 1, 4, 7 |
-|`10`| 1, 4, 7, 10 |
+|7| 1, 4, 7 |
+|10| 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
@@ -360,7 +347,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-    // Write your code here
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -375,8 +362,8 @@ Write a function to print the even powers of 2:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 1, 4, 16 |
-|`10`| 1, 4, 16, 64, 256, 1024 |
+|5| 1, 4, 16 |
+|10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
@@ -438,15 +425,7 @@ Write a function to print the even powers of 2:
 [code-editor language=javascript]
 ```
 function evenPowersOfTwo(n) {
-  let num = 1;
-  let result = '';
-  for (let i = 0; i <= n; i += 2) {
-    if (i > 0)
-      result += ", ";
-    result += num;
-    num = num * 2 * 2;
-  }
-  console.log(result);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -461,8 +440,8 @@ Write a function to print the even powers of 2:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`5`| 1, 4, 16 |
-|`10`| 1, 4, 16, 64, 256, 1024 |
+|5| 1, 4, 16 |
+|10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
