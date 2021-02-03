@@ -1107,9 +1107,3 @@ The total memory allowed for use by your program is **16MB**
 [/tests]
 [/code-task]
 [/slide]
-
-[slide hideTitle]
-# Homework Results
-[tasks-results/]
-
-[/slide]
