@@ -199,7 +199,7 @@ Scrieți un program care:
 [/test]
 [/tests]
 [/code-task]
-[/slide]]
+[/slide]
 
 [slide hideTitle]
 # Problem: Sum of Digits Calculator
