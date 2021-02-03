@@ -840,6 +840,13 @@ function uniquePinCodes(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]))
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
@@ -855,9 +862,9 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| 222 |
-|5| 224 |
-|5| 232 |
+|3, 5, 5| 222 |
+|| 224 |
+|| 232 |
 || 234 |
 || 252 |
 || 254 |
