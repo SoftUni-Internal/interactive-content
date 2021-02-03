@@ -1,8 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
-- **Encapsulation**:
+## In this lesson you learned:
+
+- **Encapsulation**
     - Hides implementation
     - Reduces complexity
     - Ensures that structural changes remain local

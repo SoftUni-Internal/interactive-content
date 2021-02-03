@@ -14,7 +14,7 @@ class Person {
   private int age;
 } 
 ```
-- Use **getters** and **setters** for **data access**:
+- Use **getters** and **setters** for **data access**
 
 ```java
 class Person {

@@ -1,16 +1,16 @@
 [slide hideTitle]
 # Using Inherited Members
 
-**You can access inherited members**
+**You can access inherited members.**
 
 ```java
 class Person { public void sleep() { … } }
-class Student extends Person { … }
+class Student extends Person { … }          //As we extend the class Person, we derive all it's members
 class Employee extends Person { … }
 ```
 ```java
 Student student = new Student();
-student.sleep();
+student.sleep();                            //Here we can use the derived classes
 Employee employee = new Employee();
 employee.sleep();
 ```
@@ -20,7 +20,7 @@ employee.sleep();
 
 # Reusing Constructors
 
-**Constructors are not inherited**
+**Constructors are not inherited.**
 
 When a **parent class** declares a **constructor** with parameters everybody that inherites from this class **directly** must implement a **constructor** with the same parameters.
 

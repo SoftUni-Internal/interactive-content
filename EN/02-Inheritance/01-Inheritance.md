@@ -16,6 +16,8 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 # Inheritance Example
 
+When we use inheritance, we can have more than one **SubClass**.
+
 [image assetsSrc="inheritance-example(1).png" /]
 
 [/slide]
@@ -61,7 +63,7 @@ class Employee extends Person { … }
 
 # Derived Class
 
-**Derived class taking all members from it is base class**
+**Derived class taking all members from it is base class.**
 
 [image assetsSrc="inheritance-example(5).png" /]
 
