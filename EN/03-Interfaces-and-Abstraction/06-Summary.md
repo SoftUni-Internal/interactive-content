@@ -63,7 +63,7 @@ class Main extends Device {
 
 
 
-# In the next lesson, we will learn:
+## In the next lesson we will learn:
 
 - What is the concept behind `Polymorphism`
 - How we achieve `Polymorphism`

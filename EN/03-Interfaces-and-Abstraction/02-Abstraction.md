@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Abstraction
 
@@ -23,7 +23,7 @@ There are 2 ways we can achieve **abstraction** in Java:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 ## Example: Java Abstract Class
 
 Lets see how we can use that abstract classes.
@@ -63,7 +63,7 @@ Woof, Woof
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 ## Example: Java Interface
 
 We can use interfaces too.
@@ -102,7 +102,7 @@ Walking....
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Abstraction vs Encapsulation
 
 [image assetsSrc="Interfaces-and-Abstraction-example(2).png" /]
