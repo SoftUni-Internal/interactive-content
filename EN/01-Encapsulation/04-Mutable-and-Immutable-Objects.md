@@ -69,7 +69,7 @@ class Team {
 
 [slide hideTitle]
 # Problem: First and Reserve Team
-[code-task title="Problem: First and Reserve Team" taskId="7487e124-4256-4f02-842d-9356ff0c9038" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="First and Reserve Team" taskId="7487e124-4256-4f02-842d-9356ff0c9038" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1176,7 +1176,7 @@ Test Passed!
 
 [slide hideTitle]
 # Solution: First and Reserve Team
-[code-task title="Solution: First and Reserve Team" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="First and Reserve Team" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

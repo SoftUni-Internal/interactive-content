@@ -80,7 +80,7 @@ public class Team {
 
 [slide hideTitle]
 # Problem: Sort by Name and Age
-[code-task title="Problem: Sort by Name and Age" taskId="fc07458b-3b86-4698-af22-a54efa5e87c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sort by Name and Age" taskId="fc07458b-3b86-4698-af22-a54efa5e87c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -388,7 +388,7 @@ public class Team {
 [slide hideTitle]
 # Solution: Sort by Name and Age
 
-[code-task title="Solution: Sort by Name and Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sort by Name and Age" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -679,7 +679,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Salary Increase
-[code-task title="Problem: Salary Increase" taskId="ede80230-10bc-44f8-a87a-d53f09a25042" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Salary Increase" taskId="ede80230-10bc-44f8-a87a-d53f09a25042" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1064,7 +1064,7 @@ Test Passed!
 [slide hideTitle]
 # Solution: Salary Increase
 
-[code-task title="Solution: Salary Increase" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Salary Increase" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
