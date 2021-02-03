@@ -4,7 +4,7 @@
 
 # Lesson Content
 
-## In this Lesson you will learn:
+## In this lesson you will learn:
 
 **1. Inheritance and Interfaces**
 
