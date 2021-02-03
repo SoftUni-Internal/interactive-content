@@ -1,6 +1,6 @@
 # Event Handling
 
-[slide]
+[slide hideTitle]
 
 # Event Handler
 
@@ -13,7 +13,7 @@ There are 3 ways to register an event:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event Listener
 
@@ -40,7 +40,7 @@ addBtn.removeEventListener("click", handler);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Attaching Click Event
 
@@ -60,7 +60,7 @@ function clickMe(e) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Attaching hover event
 
@@ -87,7 +87,7 @@ button.addEventListener('mouseover', function (e) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Attaching Input Events
 
@@ -105,7 +105,7 @@ inputField.addEventListener('input', function () {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Remove Events
 
@@ -134,7 +134,7 @@ button.addEventListener('click', () => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Multiple Events
 
@@ -149,7 +149,7 @@ element.addEventListener("mouseout", myThirdFunction);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # SetInterval() And ClearInterval()
 
@@ -175,7 +175,7 @@ clearInterval(intervalID);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add Delete
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -187,6 +187,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **for this task.**
+
 Extend the previous problem to display a `[Delete]` link after each list item. Clicking ot it, should delete the item with no confirmation.
 
 # Example
@@ -235,7 +238,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event Delegation
 
@@ -280,7 +283,7 @@ Limitations
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Add Delete
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -340,7 +343,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Event Delegation
 
