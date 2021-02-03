@@ -700,10 +700,10 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|5.51| Increase: 5.51 |
-|69.42|Increase: 69.42|
-|100|Increase: 100.00 |
-|END| Total: 174.93 |
+|`['5.51', '69.42', '100', 'END']`| Increase: 5.51 |
+||Increase: 69.42|
+||Increase: 100.00 |
+|| Total: 174.93 |
 
 
 [/task-description]
@@ -720,6 +720,101 @@ Increase: 5.50
 Increase: 60.23
 Increase: 100.00
 Total: ‭165.73‬
+[/output]
+[/test]
+[test]
+[input]
+69.42
+100
+123
+234
+END
+[/input]
+[output]
+Increase: 69.42
+Increase: 100.00
+Increase: 123.00
+Increase: 234.00
+Total: 526.42
+[/output]
+[/test]
+[test]
+[input]
+5675
+5675.42
+5675
+END
+[/input]
+[output]
+Increase: 5675.00
+Increase: 5675.42
+Increase: 5675.00
+Total: 17025.42
+[/output]
+[/test]
+[test]
+[input]
+45641
+0
+4564
+345
+END
+465
+[/input]
+[output]
+Increase: 45641.00
+Increase: 0.00
+Increase: 4564.00
+Increase: 345.00
+Total: 50550.00
+[/output]
+[/test]
+[test]
+[input]
+5.51
+345345
+69.42
+100
+END
+END
+[/input]
+[output]
+Increase: 5.51
+Increase: 345345.00
+Increase: 69.42
+Increase: 100.00
+Total: 345519.93
+[/output]
+[/test]
+[test]
+[input]
+1
+1
+0.55
+0.457
+END
+[/input]
+[output]
+Increase: 1.00
+Increase: 1.00
+Increase: 0.55
+Increase: 0.46
+Total: 3.01
+[/output]
+[/test]
+[test]
+[input]
+345
+3.42
+543.3
+END
+34
+[/input]
+[output]
+Increase: 345.00
+Increase: 3.42
+Increase: 543.30
+Total: 891.72
 [/output]
 [/test]
 [/tests]
