@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Exemplu din viața reală: Ceas
 

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Bucle imbricate
 
@@ -42,7 +42,7 @@ Acest lucru se întâmplă în felul următor:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Bucle imbricate - Exemple
 
@@ -53,7 +53,7 @@ Acest lucru se întâmplă în felul următor:
 
 Iată un **exemplu** care ilustrează buclele imbricate.
 
-Scopul este din nou de a imprima un dreptunghi format din stele `n` * ` n`, în care pentru fiecare linie o buclă iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată din **1** până la*`n`:
+Scopul este din nou de a imprima un dreptunghi format din stele `n * n`, în care pentru fiecare linie o buclă iterează de la **1** la `n`, iar pentru fiecare coloană se execută o buclă imbricată din **1** până la `* n`:
 
 ```js live
 let n = 3;
@@ -66,7 +66,6 @@ for (let row = 1; row <= n; row++) {
 }
 console.log(rowLine);
 ```
-
 
 Să vedem exemplul de mai sus.
 

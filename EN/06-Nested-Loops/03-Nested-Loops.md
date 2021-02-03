@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Nested Loops
 
 [vimeo-video]
@@ -39,7 +39,7 @@ This happens the following way:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Nested Loops – Examples
 
 [vimeo-video]
@@ -49,7 +49,7 @@ This happens the following way:
 
 Here is an **example** that illustrates nested loops. 
 
-The aim is again to print a rectangle made of `n` * `n` stars, in which for each row a loop iterates from **1** to `n`, and for each column a nested loop is executed from **1** to * `n`:
+The aim is again to print a rectangle made of `n * n` stars, in which for each row a loop iterates from **1** to `n`, and for each column a nested loop is executed from **1** to `* n`:
 
 ```js live
 let n = 3;

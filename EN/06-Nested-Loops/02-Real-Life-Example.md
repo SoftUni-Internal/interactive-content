@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Real-Life Example: Clock
 
 [vimeo-video]
