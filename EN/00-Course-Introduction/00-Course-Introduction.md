@@ -8,7 +8,7 @@ Welcome to the Java OOP Advanced module!
 
 **Here, we will take a look at what knowledge we will acquire after completing this module!**
 
-As u all know, Java is **strong-typed OOP language**.
+As u all know, Java is a **strong-typed OOP language**.
 
 It implements all the **object-oriented concepts**.
 
@@ -79,7 +79,7 @@ These concepts often represents ideas, not a particular implementation.
 
 Using the design patterns, we make our code less complicated, more reusable and maintainable. 
 
-**Now, lets begin!**
+**Lets dive in!**
 
 
 

@@ -145,7 +145,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Download resources [here](https://mega.nz/file/2QJWVDCb#pex92_mdocrpJ-mg3FYMdmBL28je6xbzF3ZVgkiOF3o).
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/06.Java-OOP-Advanced-Reflection-and-Annotations-Lab.zip) **for this task.**
 
 Import "**Reflection.java**" to your "**src**" folder in your project. 
 

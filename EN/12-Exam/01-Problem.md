@@ -14,6 +14,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/12-Java-OOP-Advanced-Final-Exam-Business-Logic.zip) **for this task.**
+
 - Upload **only the easterRaces** package in every task **except Unit Tests**
 - **Do not modify the interfaces or their packages**
 - Use **strong cohesion** and **loose coupling**

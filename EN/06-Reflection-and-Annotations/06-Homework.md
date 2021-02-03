@@ -16,9 +16,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a **RichSoilLand** class with lots of fields. 
 
-Download skeleton [here](https://mega.nz/file/WZpyWaIb#Ynu0xByYsMp9COr7EwkKo4Xp04-X9Y7VNBY4WH3CSYs).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-harvestingFields.zip) **for this task.**
+
+You are given a **RichSoilLand** class with lots of fields. 
 
 Like the good farmer you are, you must harvest them. 
 
@@ -478,7 +479,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Download resources [here](https://mega.nz/file/2BgwhSIY#4UZLrzaBZTZIidTq2J5ejPPVd4rKdMwcfKYdB_Hd38s).
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-blackBoxInteger.zip) **for this task.**
 
 You are helping a buddy of yours who is still in the OOP Basics course.
 
@@ -704,9 +706,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a small console based project called Barracks. 
 
-Download skeleton [here](https://mega.nz/file/fQ5xxKza#yB7v92dBu62SHmOfn_omGnwgTqnkIo9EEWE_yRyu1ug).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Reflection-and-Annotations-barracksWars.zip) **for this task.**
+
+You are given a small console based project called Barracks. 
 
 The general functionality the project has is adding new units to its repository and printing a report with statistics about the units currently in the repository. 
 

@@ -762,9 +762,9 @@ public class Main {
 [task-description]
 ## Description
 
-You are given the skeleton of a word-processing program (like MS Word, OpenOffice Writer, etc.). 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Polymorphism-Word.zip) **for this task.**
 
-**Download skeleton** [here](https://mega.nz/file/mUYG2TaD#MYw7zKplb7fVGmH2UQ8Rl-6p0EbG-ISb7VgqNS_KTqM).
+You are given the skeleton of a word-processing program (like MS Word, OpenOffice Writer, etc.). 
 
 The program reads a line of text from the console, then starts reading commands for editing (text-transform) and executing them on the text. 
 
@@ -980,9 +980,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given the skeleton of a calculator program (like the **Calculator** app in Windows, or the calculator on your smartphone, etc.).
 
-**Download skeleton** [here](https://mega.nz/file/3EZEmBqD#b8IkXTFmGKlB8vpA83imkeh9VtUPlGd8LUSPz-SvnRk).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/Java-OOP-Advanced-Polymorphism-Calculator.zip) **for this task.**
+
+You are given the skeleton of a calculator program (like the **Calculator** app in Windows, or the calculator on your smartphone, etc.).
 
 The program reads numbers and operations from the console and executes those operations on the numbers.
 
