@@ -41,7 +41,7 @@ public class Student extends Person {
 - Consider **Composition** and **Delegation** instead
 
 
-## In the next lesson, you will learn:
+## In the next lesson we will learn:
 
 - **Encapsulation**:
     - Hides implementation
