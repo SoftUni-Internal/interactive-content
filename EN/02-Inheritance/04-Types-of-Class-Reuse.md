@@ -53,12 +53,7 @@ class Laptop {
   void incrBrightness() {           //In our class Laptop we provide a method for increasing the brigthness
     monitor.brighten();             //although that undearneath we are calling the monior's method
   }                                 //we give an interface to our class, without specifying the code that does the job
-                                    //this way we can also combine several methods from differnet classed under just one method.
-
-
-
-
-                                    
+                                    //this way we can also combine several methods from differnet classed under just one method.                            
   void decrBrightness() {
     monitor.dim();
   } 
@@ -231,9 +226,14 @@ Test Passed!
 [slide hideTitle]
 # When to Use Inheritance
 
+We can use inheritance when we meet one of the following:
+
 - Classes share **IS-A** relationship
+
 - Derived class **IS-A-SUBSTITUTE** for the base class
+
 - Share the **same role**
+
 - Derived class is the **same as the base class** but adds a **little bit more functionality**
 
 [/slide]
