@@ -1481,7 +1481,7 @@ Niger
 
 # Problem: Continents and Currencies
 
-[code-task title="Problem: \*Continents and Currencies" taskId="288b18a9-e2b7-4bc7-b91e-c4412fe19b13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Continents and Currencies" taskId="288b18a9-e2b7-4bc7-b91e-c4412fe19b13" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
