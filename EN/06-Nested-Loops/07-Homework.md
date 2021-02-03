@@ -23,6 +23,15 @@ function building(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+  let a = Number(input[0]);
+  let b = Number(input[1]);
+  return code(a, b);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which:
