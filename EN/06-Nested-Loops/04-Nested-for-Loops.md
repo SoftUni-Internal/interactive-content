@@ -91,7 +91,6 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
 [input]
 5
 [/input]
@@ -150,18 +149,7 @@ Write a program, which:
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  let size = Number(input.shift());
-  let result = '';
-
-  for (let row = 1; row <= size; row++) {
-    for (let col = 1; col <= row; col++) {
-      result += "*";
-    }
-
-    result += '\n';
-  }
-  
-  console.log(result);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -184,7 +172,6 @@ Write a program, which:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
 [input]
 5
 [/input]

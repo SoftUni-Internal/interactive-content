@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Bucle for imbricate
+# Bucle "for" imbricate
 
 
 [vimeo-video]
@@ -74,7 +74,7 @@ for (let r = 0; r <= rows; r++) {
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-    // Write your code here
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -93,23 +93,54 @@ Scrieți un program care:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
 [input]
-4
+5
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -124,18 +155,7 @@ Scrieți un program care:
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
-  let size = Number(input.shift());
-  let result = '';
-
-  for (let row = 1; row <= size; row++) {
-    for (let col = 1; col <= row; col++) {
-      result += "*";
-    }
-
-    result += '\n';
-  }
-  
-  console.log(result);
+  // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -154,21 +174,52 @@ Scrieți un program care:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+
 [/task-description]
+[code-io /]
 [tests]
-[test]
 [input]
-4
+5
 [/input]
 [output]
-*
-**
-***
-****
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+6
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+\*\*\*\*\*
+\*\*\*\*\*\*
+\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
-[code-io/]
 [/code-task]
-
 [/slide]
