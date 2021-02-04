@@ -38,7 +38,7 @@ The output should consist of one line:
 
 Round the time up to the nearest whole number.
 
-[code-task title="Time for Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

@@ -31,7 +31,7 @@ Print out on the console the time needed to watch all of the episodes, rounded d
 
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
 
-[code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

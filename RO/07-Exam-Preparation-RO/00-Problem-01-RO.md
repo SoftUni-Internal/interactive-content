@@ -33,7 +33,7 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 
 - `Total time needed to watch the {numele seriei} series is {timp} minutes.`
 
-[code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

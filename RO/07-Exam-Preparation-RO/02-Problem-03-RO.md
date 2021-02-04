@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 3: Cinema
 
 [vimeo-video]
@@ -9,7 +9,7 @@
 ## Descriere
 Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
-| | John Wick      | Star Wars | Jumanji   |
+|  **John Wick**      | **Star Wars** | **Jumanji**   |
 |:---:    | :---:       |    :----:   |   :---:     |
 | Drink | 12$ | 18$ | 9$ |
 | Popcorn | 15$ | 25$ | 11$ |
@@ -25,34 +25,34 @@ Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
 ## Intrare
 Primiți 3 lii de pe consolă:
-- Linia 1 - film - șir: `John Wick`, `Star Wars` sau `Jumanji`
-- Linia 2  - ofertă - șir: `Drink`, `Popcorn` sau `Menu`
-- Linia 3 – număr de bilete  – un număr întreg în intevalul \[1… 30\]
+
+- Linia 1: film - șir: `John Wick`, `Star Wars` sau `Jumanji`
+
+- Linia 2: ofertă - șir: `Drink`, `Popcorn` sau `Menu`
+
+- Linia 3: număr de bilete  – un număr întreg în intevalul \[1… 30\]
 
 ## Ieșire
 Imprimați o linie pe consolă: `Your bill is {total price}$`
+
  * Prețul ar trebui fomratat la două cifre după punctul zecimal
 
-[code-task title="Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-## Input
-Movie - John Wick
 
-Offer - Drink
+# Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['John Wick', 'Drink', '6']`| Your bill is 72.00$|
 
-Count tickets – 6
-
-## Output
-Your bill is 72.00$
-
-## Comments
+**Comments**
 Filmul este John Wick și este aleasă o băutura.
 
 Prețul unui bilet este de 12\$
@@ -64,7 +64,7 @@ Pentru acest film nu se aplică discount, prețul total este de`72.00$`.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John Wick
 Drink

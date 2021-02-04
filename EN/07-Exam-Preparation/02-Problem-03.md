@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 3: Cinema
 
 [vimeo-video]
@@ -9,7 +9,7 @@
 ## Description
 For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 
-| | John Wick      | Star Wars | Jumanji   |
+|  **John Wick**      | **Star Wars** | **Jumanji**   |
 |:---:    | :---:       |    :----:   |   :---:     |
 | Drink | 12$ | 18$ | 9$ |
 | Popcorn | 15$ | 25$ | 11$ |
@@ -25,15 +25,20 @@ There are also promotional discounts available for two of the movies:
 
 ## Input
 You receive 3 lines from the console:
-- First line - movie - string: `John Wick`, `Star Wars` or `Jumanji`
-- Second line - offer - string: `Drink`, `Popcorn` or `Menu`
-- Third line – number of tickets  – whole number in the range \[1… 30\]
+
+- First line: movie - string: `John Wick`, `Star Wars` or `Jumanji`
+
+- Second line: offer - string: `Drink`, `Popcorn` or `Menu`
+
+- Third line: number of tickets  – whole number in the range \[1… 30\]
 
 ## Output
+
 Print one line on the console: `Your bill is {total price}$`
+
  * The price must be formatted to two digits after the decimal point.
 
-[code-task title="Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -42,17 +47,12 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Input
-Movie - John Wick
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['John Wick', 'Drink', '6']`| Your bill is 72.00$|
 
-Offer - Drink
-
-Count tickets – 6
-
-## Output
-Your bill is 72.00$
-
-## Comments
+**Comments**
 The movie is John Wick and drink is chosen.
 
 The price for one ticket is 12\$
@@ -64,7 +64,7 @@ For this movie there is no discount, total price is `72.00$`.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John Wick
 Drink
