@@ -4,17 +4,19 @@
 
 # Description
 
-The season for climbing alpine peaks begins and all climbers stock up on energy bars for climbing.
+The season for climbing alpine peaks begins, and all climbers stock up on energy bars for climbing.
 
-The company offers **small** and **large** cuts with **2 pcs.** and **5 pcs.** energy bars, the price of one bar depends on the fruit from which it is made.
+The company offers **small** and **large** cuts with two or five energy bars. 
 
-Depending on the **size of the cut**, the price per number of an energy bar is different.
+The price of one bar depends on its flavor.
 
-From the console are read the fruits, the size of the package `(small) 2 pcs.` or `(big) 5 pcs.`.
+The cut size(small or big) affects the price of a bar as well.
 
-Also, you will receive the **count of cuts that are ordered.**
+The flavor and cut size are read from the console.
 
-Write a program that c**alculates the amount to be paid** for the order.
+You will also receive the number of cuts in the order.
+
+Create a function that calculates the total amount for the order.
 
 
 | \- | Watermelon  | Mango | Pineapple   | Raspberry |
@@ -26,7 +28,7 @@ For orders:
 
 - From **$400 to $1000 inclusive there is a 15%** discount.
 
-- Over **$1000 there is a 50%** discount.
+- If the amount is over $1,000, there is a 50% discount.
 
 ## Input
 
@@ -34,15 +36,15 @@ The input comes as an **array of which contains three elements:**
 
 - **First Element:**  
 
-Fruit, text with possibilities: `Watermelon`, `Mango`, `Pineapple` or `Raspberry`
+Flavor, text with possibilities: `Watermelon`, `Mango`, `Pineapple` or `Raspberry`
 
 - **Second Element:** 
 
-The size of the set: text with options: `small` or `big`
+Cut size, text with options: `small` or `big`
 
 - **Third Element:** 
 
-Number of ordered sets: integer in the interval \[1 … 10000\]
+Number of ordered cuts: integer in the interval \[1 … 10000\]
 
 ## Output
 

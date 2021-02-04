@@ -3,7 +3,7 @@
 [slide hideTitle]
 
 # Description
-The school year has already started and Annie has to buy a certain number of **packets of pencils**, **packets of markers**, and a **detergent** for cleaning the board. 
+The school year has already started and Annie has to buy a certain number of **packets of pencils**, **markers**, and a **detergent** for cleaning the board. 
 
 She is a regular customer of a bookstore, and there is a **discount** for her, which represents a **percentage** of the total.
 
@@ -33,7 +33,7 @@ Integer in the interval \[0 ... 100\]
 
 - **Third Number:**
 
-Liters of detergent for cleaning the board. 
+Liters of detergent. 
 
 Real number in the interval \[0.00… 50.00\]
 

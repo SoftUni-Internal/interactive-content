@@ -4,11 +4,11 @@
 
 # Description
 
-Write a program that tracks your team's performance at a Christmas charity tournament. 
+Create a function that tracks your team's performance at a Christmas charity tournament. 
 
-Every day you get game names next to the `Finish` command. 
+Every day you get game names until the `Finish` command. 
 
-By winning each game you win **$20 for charity**. 
+By winning each game, you win **$20 for the charity**. 
 
 You need to calculate how much **money you earned at the end of the day**. 
 
@@ -21,29 +21,31 @@ You will never have an equal number of won and lost games.
 
 ## Input
 
-**The input comes as an array of elements:**
+**The input comes as an array of elements.** 
+
+Until you receive the `Finish` command, you receive:
 
 - **First Element:**
 
- **The number of days of the tournament is read from the console**: an integer in the interval \[1… 20\]
+**The number of days of the tournament**: an integer in the interval \[1… 20\]
 
 - **Until you receive the** `Finish` **command, read:**
 
-**Sport** – string
+**Sport** - String
 
 - **For each sport read:**
 
-**Result** - text with possibilities:  `win` or `lose`
+**Result** - Text with possibilities:  `win` or `lose`
 
 ## Output
 
 Finally, one line is printed:
 
-- If you won, the tournament: 
+- If you won the tournament:
 
 `You won the tournament! Total raised money: {the money earned}`
 
-- If you lost, the tournament: 
+- If you lost the tournament:
 
 `You lost the tournament! Total raised money: {the money earned}`
 

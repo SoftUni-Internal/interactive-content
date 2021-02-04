@@ -3,11 +3,11 @@
 [slide hideTitle]
 
 # Description
-Annie finds a puppy to take care of until someone is found to adopt him.
+Annie finds a puppy to take care of until she finds someone to adopt it.
 
 It eats a certain amount of food daily.
 
-Write a program that checks if the **amount of food purchased for the puppy** will be enough **until the puppy is adopted.**
+Create a function that checks if the **amount of food purchased for the puppy** will be enough **until the puppy is adopted.**
 
 ## Input
 
@@ -23,11 +23,11 @@ Purchased **amount of food for the puppy in kilograms**: an integer in the inter
 
 One line is printed on the console:
 
-- If the amount of food **is enough** to print:
+- If the amount of food **is enough**, print:
 
   `Food is enough! Leftovers: {leftover food} grams.` 
 
-- If the amount of food is **not enough** to print:
+- If the amount of food is **not enough**, print:
 
  `Food is not enough. You need {need the amount of food} grams more.`
 

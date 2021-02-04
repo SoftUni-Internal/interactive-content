@@ -5,17 +5,17 @@
 # Description
 Annie has two pets - a dog and a cat. 
 
-Write a program that compiles **statistics** on pet food for a certain number of days. 
+Create a function that compiles **statistics** on pet food for a certain number of days. 
 
-Every day the dog and the cat eat a **different amount** of their common food. 
+Every day the dog and the cat eat a **different amount** of their preferred food. 
 
 Every **third day they receive a prize** - cookies. 
 
 The amount of cookies is **10%** of the total food eaten for the day.
 
-Your program should print **statistics about the amount of cookies they ate**.
+Your function should print **statistics about the amount of cookies they ate**.
 
-- What **percentage of the original amount** of total food they ate.
+- What **percentage** of total food they ate.
 
 - What **percentage of the food the dog ate** and how much the cat ate.
 
@@ -34,9 +34,9 @@ Total amount of food: a number in the range \[0.00…10000.00\]
 
 **Then for each day it is read:**
 
-- Amount of food eaten by the dog: a number in the range \[10…500\]
+- The amount of food eaten by the dog: a number in the range \[10…500\]
 
-- Amount of food eaten by the cat: a number in the rang \[10…500\]
+- The amount of food eaten by the cat: a number in the rang \[10…500\]
 
 
 ## Output

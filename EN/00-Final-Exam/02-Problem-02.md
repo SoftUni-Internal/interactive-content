@@ -6,15 +6,15 @@
 
 George decides to improve the record for the fastest climb to Mont Blanc.
 
-The console introduces the record in seconds that Georgi has to improve, the distance in meters he has to climb, and the time in seconds he has to climb 1 meter.
+The input consists of the record George has to improve in seconds, the distance - in meters, and the time it takes for one meter - in seconds.
 
-Write a program that calculates **whether he has coped with the task**, given that:
+Create a function that determines **whether he has coped with the task**, given that:
 
-- The slope of the terrain **slows him down** every **50 meters by 30 seconds**.
+- The slope of the terrain **slows him down by 30** seconds for **every 50 meters**.
 
-**Calculate** the time in seconds for which George will climb the **distance** to the top and the **difference from the record.**
+**Calculate** the seconds George will need to climb the **distance** to the top and the time **difference from the record**.
 
-When **calculating how much times George will slow down** as a result of the slope of the field, the result should be **rounded down to the nearest whole number.**
+When **calculating how many times George will slow down** as a result of the slope of the field's slope, the result should be **rounded down to the nearest whole number.**
 
 
 ## Input
@@ -23,29 +23,29 @@ The input comes as an **array of which contains three numbers**:
 
 - **First Number:**  
 
-The record in seconds, a real number in the interval \[0.00 … 100000.00\]
+The record in seconds, floating-point  in the interval \[0.00 … 100000.00\]
 
 - **Second Number:** 
 
-The distance in meters, a real number in the interval \[0.00 … 100000.00\]
+The distance in meters, floating-point in the interval \[0.00 … 100000.00\]
 
--  **Third Number:**
+- **Third Number:**
 
-The time in seconds for which he climbs 1 meter, a real number in the interval \[0.00 … 1000.00\]
+The time in seconds for which he climbs 1 meter, floating-point in the interval \[0.00 … 1000.00\]
 
 ## Output
 
 Printing on the console depends on the results:
 
-- If George has improved the record we print: 
+- If George has improved the record, print: 
 
 `Yes! The new record is {George's time} seconds.`
 
-- If it has NOT improved the record we print: 
+- If he has NOT improved the record, print: 
 
-`No! He was {time need} seconds slower.` 
+`No! He was {time needed} seconds slower.` 
 
-The result must be **formatted** to the second digit after the decimal point
+The result must be **formatted** to the second digit after the decimal point.
 
 [code-task title="Mountain Run" taskId="js-pb-final-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
