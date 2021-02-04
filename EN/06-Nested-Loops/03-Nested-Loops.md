@@ -70,9 +70,9 @@ The inner loop will execute as many times as the body of the outer loop executes
 
 interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops + interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-demo
 
-It is possible to have more than one nested loop.
+It is possible to have more than one level of nested loops.
 
-The only restriction is that can not be used the same names of initial variables.
+Note, that loop variables must use different names on each next loop level.
 
 ```java
 for (int hour = 0; hour <= 23; hour++) {

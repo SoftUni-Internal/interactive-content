@@ -62,8 +62,6 @@ Bucla interioară se va executa de câte ori se execută conținutul buclei exte
 
 # Multiple Levels of Nested Loops
 
-
-
 It is possible to have more than one nested loop.
 
 The only restriction is that can not be used the same names of initial variables.

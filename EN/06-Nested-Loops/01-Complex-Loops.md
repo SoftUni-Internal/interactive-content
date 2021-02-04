@@ -5,16 +5,11 @@ interactive-programming-basics-with-java-nested-loops-8-9-complex-loops +
 
 interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-demo
 
-There is more than one way to execute iterating over for-loop.
+When using for-loops, the loop variable can be modified in more than one way.
 
-Except increase or decrease, we can use multiplication or division operators.
-
-Also it is not nessesery to step only with one.
-
-We can set different steps to iterate over the loop.
+In addition to incrementation and decrementation, it can be altered using more complex logic, such as division and multiplication.
 
 For example:
-
 ``` java
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
@@ -46,7 +41,7 @@ interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-
 
 interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one-solution
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 # Example: Numbers from 1 to N with Step 3
@@ -55,7 +50,7 @@ interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-on
 
 interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three-solution
 
-[slide]
+[/slide]
 
 [slide hideTitle]
 # Example: Problem: Even Powers of 2
@@ -64,4 +59,4 @@ interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-
 
 interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two-solution
 
-[slide]
+[/slide]

@@ -138,3 +138,14 @@ Write a program, which:
 [/code-task]
 
 [/slide]
+
+[slide hideTitle]
+
+# Example: Combining while and for Loops
+
+interactive-programming-basics-with-java-nested-loops-33-nesting-while-and-for-loops + 
+
+interactive-programming-basics-with-java-nested-loops-34-problem-and-solution-sum-digits-calcuulator
+
+
+[/slide]
