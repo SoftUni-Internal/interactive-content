@@ -1,24 +1,24 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 # Lesson Contents
 
-## In this lesson you will learn:
+## In this lesson we will learn:
 
 **1. Event Loop**
 
-- What is an event loop
-- How does the event loop work
+- What an event loop is
+- How the "Event" loop works
 
 **2. Event Types**
 
-- What are some of the event types in JavaScript
-- How to use them
+- The different types of Events in "JavaScript"
+- How we can use them
 
 **3. Event Object Properties and Methods**
 
-- What is an event object
-- The properties of event objects
+- What an "Event" object is
+- Properties that are common to all еvents
 
 **4. Handling Events**
 
