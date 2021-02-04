@@ -165,7 +165,7 @@ Jim Jones with:
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 //Zero test 1 - 3 new costomer, get all cats, one leaving
 let VeterinaryClinic = result;
@@ -185,7 +185,7 @@ Jim Jones
 yes
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 //Zero test 2 - same + toString
 let VeterinaryClinic = result;
@@ -209,7 +209,7 @@ Jim Jones with:
 yes
 [/output]
 [/test]
-[test open]
+[test]
 [input]
 // Test 10 - If pet is registered and with no procedures
 let VeterinaryClinic = result;
