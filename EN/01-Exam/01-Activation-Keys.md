@@ -1,6 +1,6 @@
-[slide]
-# Problem 1. Activation Keys
-[code-task title="Problem 1. Activation Keys" taskId="a711074e-87ab-436e-89fd-bfe15b215cab" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Activation Keys
+[code-task title="Activation Keys" taskId="Java-Fundamentals-Part-Two-Activations-Keys" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
