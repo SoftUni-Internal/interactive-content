@@ -1,6 +1,6 @@
-[slide]
-# Problem 2. Fancy Barcodes
-[code-task title="Problem 2. Fancy Barcodes" taskId="5add60e6-fcaf-413c-9c3b-f5b16c316224" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Fancy Barcodes
+[code-task title="Fancy Barcodes" taskId="Java-Fundamentals-Part-Two-Exam-Fancy-Barcodes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
