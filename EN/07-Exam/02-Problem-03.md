@@ -197,10 +197,10 @@ let VeterinaryClinic = result;
         let string = \`SoftCare is 20% busy today!
 Total profit: 500.00\\$
 Anna Morgan with:
----Max - a dog that needs: SK456, DFG45, KS456
+\-\-\-Max \- a dog that needs: SK456, DFG45, KS456
 Jim Jones with:
----Tiny - a cat that needs:
----Tom - a cat that needs: A154B, 2C32B, 12CDB\`;
+\-\-\-Tiny \- a cat that needs:
+\-\-\-Tom \- a cat that needs: A154B, 2C32B, 12CDB\`;
         expect(clinic.toString()).to.be.equal(string, 'Incorrect output');
 [/input]
 [output]
