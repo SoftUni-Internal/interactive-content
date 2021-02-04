@@ -108,7 +108,7 @@ For convenience when creating programs, for writing programming code, for execut
 [/slide]
 
 [slide hideTitle]
-# Console-Based Java Program – Example
+# Example: Console-Based Java Program
 
 Java-basics-introduction-to-programming-9-console-based-java-program-example + 
 
