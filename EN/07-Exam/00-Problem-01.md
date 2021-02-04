@@ -288,7 +288,7 @@ yes
 [test]
 [input]
 //Add pet with empty inputs;
-document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
+document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
     \<p\>Want to adopt a pet or need to rehome a dog or cat?\</p\>
     \<p\>Here we can help!\</p\>
     \<form id="add"\>
@@ -309,23 +309,18 @@ document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
         \<h2\>Buddies with a new home:\</h2\>
         \<ul\>\</ul\> 
     \</section\>
-    \<script\>document.onload = solve();\</script\>`
-
+    \<script\>document.onload = solve();\</script\>\`
 result();
     // fill inputs
         const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children);
- 
-    // click add
+     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input'); 
-
         name.value = '1';
         age.value = '';
         kind.value = '';
         owner.value = '';
-
-
     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input'); 
@@ -333,7 +328,6 @@ result();
         age.value = '1';
         kind.value = '';
         owner.value = '';
-
     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input');
@@ -341,16 +335,13 @@ result();
         age.value = '';
         kind.value = '1';
         owner.value = '';
-
     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input');  
-
         name.value = '';
         age.value = '';
         kind.value = '';
         owner.value = '1';
-
     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input');
@@ -362,7 +353,7 @@ yes
 [test]
 [input]
 //Age must be number;
-document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
+document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
     \<p\>Want to adopt a pet or need to rehome a dog or cat?\</p\>
     \<p\>Here we can help!\</p\>
     \<form id="add"\>
@@ -383,19 +374,15 @@ document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
         \<h2\>Buddies with a new home:\</h2\>
         \<ul\>\</ul\> 
     \</section\>
-    \<script\>document.onload = solve();\</script\>`
-
+    \<script\>document.onload = solve();\</script\>\`
 result();
     // fill inputs
         const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children); 
-
         name.value = 'x';
         age.value = 'x';
         kind.value = 'x';
         owner.value = 'x';
-
-
     // click add
     addBtn.click();
     expect(Array.from(document.querySelector("\#adoption \> ul").children).length).to.be.equal(0,'Incorrect input - age must be number');
@@ -407,7 +394,7 @@ yes
 [test]
 [input]
 //Adopt pet;
-document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
+document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
     \<p\>Want to adopt a pet or need to rehome a dog or cat?\</p\>
     \<p\>Here we can help!\</p\>
     \<form id="add"\>
@@ -428,31 +415,24 @@ document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
         \<h2\>Buddies with a new home:\</h2\>
         \<ul\>\</ul\> 
     \</section\>
-    \<script\>document.onload = solve();\</script\>`
-
+    \<script\>document.onload = solve();\</script\>\`
 result();
     // fill inputs
     const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children);
-
         name.value = 'Tom';
         age.value = '0.3';
         kind.value = 'cat';
         owner.value = 'Jim King';
-
     // click add
     addBtn.click();
-
     // fill contact btn
     let newLiItem = Array.from(document.querySelector("\#adoption \> ul").children)\[0\];
     let \[p, span, btn\] = Array.from(newLiItem.children); // \[p, span, btn\]               
     btn.click();
-
     // fill new input  
     document.querySelector("\#adoption \> ul \> li \> div \> button").click(); 
-    
     let countLi = document.querySelector("\#adopted \> ul").children.length;
-      
     expect(countLi).to.be.equal(0,'Fill the new owner name');
 [/input]
 [output]
@@ -462,7 +442,7 @@ yes
 [test]
 [input]
 //Add 3 New Pets and adopt 1
-document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
+document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
     \<p\>Want to adopt a pet or need to rehome a dog or cat?\</p\>
     \<p\>Here we can help!\</p\>
     \<form id="add"\>
@@ -483,41 +463,30 @@ document.body.innerHTML = `\<h1\>Pet Me!\</h1\>
         \<h2\>Buddies with a new home:\</h2\>
         \<ul\>\</ul\> 
     \</section\>
-    \<script\>document.onload = solve();\</script\>`;
-
-
+    \<script\>document.onload = solve();\</script\>\`;
 result();
-
 const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children);
-
         name.value = 'Tom';
         age.value = '0.3';
         kind.value = 'cat';
         owner.value = 'Jim King';
-
         addBtn.click(); 
-
         name.value = '2';
         age.value = '0.32';
         kind.value = 'cat';
         owner.value = 'Jim King2';
-
         addBtn.click(); 
-
         name.value = '3';
         age.value = '0.323';
         kind.value = 'cat';
         owner.value = 'Jim King3';
-
         addBtn.click(); 
         document.querySelector("\#adoption \> ul \> li:nth-child(2) \> button").click()
         document.querySelector("\#adoption \> ul \> li:nth-child(2) \> div \> input").value = 'new';
         document.querySelector("\#adoption \> ul \> li:nth-child(2) \> div \> button").click();
- 
         expect(document.querySelector("\#adopted \> ul").children.length).to.be.equal(1,'New adopted');  
         expect(document.querySelector("\#adoption \> ul").children.length).to.be.equal(2,'New adopted');  
-
         expect(document.querySelector("\#adopted \> ul \> li \> p").textContent).to.be.equal("2 is a 0.32 year old cat",'New adopted');
 [/input]
 [output]
