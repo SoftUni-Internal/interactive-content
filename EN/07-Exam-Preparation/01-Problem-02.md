@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 2: Time for Lunch
 
 [vimeo-video]
@@ -18,9 +18,12 @@ You know, that the time you need to finish your lunch takes up precisely `1/8`(a
 
 ## Input
 You will receive 3 lines from the console:
-- Name of the series - string
-- Duration of an episode - a whole number in the range \[10… 90\]
-- Break duration - a whole number in the range \[10… 120\]
+
+- Name of the series: string
+
+- Duration of an episode: a whole number in the range \[10… 90\]
+
+- Break duration: a whole number in the range \[10… 120\]
 
 ## Output
 The output should consist of one line:
@@ -32,6 +35,7 @@ The output should consist of one line:
 - If there is not enough time: 
 
 `You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
+
 Round the time up to the nearest whole number.
 
 [code-task title="Time for Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -44,28 +48,28 @@ function solve(input) {
 [/code-editor]
 [task-description]
 ## Input
-Name of the series - Game of Thrones
 
-Duration of an episode - 60
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['Game of Thrones', '60', '96']`| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
-Duration of the break - 96
+**Comments**
 
-## Output
-You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.
-## Comments
 Time for lunch: `96 * 1/8 = 12.0`
 
 Time to relax: `96 * 1/4 = 24.0`
 
 Time left: `96 - 12 - 24 = 60`
 
-In this case, the time you would have left is more than or equal to the duration of the episode. 
+In this case, the time you would have left is more than or equal to the duration of the episode.
 
 Make sure that the right output is printed out.
+
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Riverdale
 57

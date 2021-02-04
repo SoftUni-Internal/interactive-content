@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problema 2: Time for Lunch
 
 [vimeo-video]
@@ -18,9 +18,9 @@ Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să 
 
 ## Intrare
 Veți primi 3 linii de pe consolă:
-- Numele serialului - un șir
-- Durata unui episod - un număr întreg în intervalul \[10… 90\]
-- Durata pauzei - un număr întreg în intervalul \[10… 120\]
+- Numele serialului: un șir
+- Durata unui episod: un număr întreg în intervalul \[10… 90\]
+- Durata pauzei: un număr întreg în intervalul \[10… 120\]
 
 ## Ieșire
 Rezultatul ar trebui să fie format dintr-o singură linie:
@@ -38,21 +38,18 @@ Round the time up to the nearest whole number.
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-## Intrare
-Numele serialului - Game of Thrones
+# Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['Game of Thrones', '60', '96']`| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
-Durata unui episod - 60
 
-Durata pauzei - 96
-
-## Ieșire
-Aveți timp suficient pentru a viziona Game of Thrones și vă vor rămâne 0 minute de timp.
-## Comments
+**Comments**
 Timp pentru masă: `96 * 1/8 = 12.0`
 
 Timp pentru odihnă: `96 * 1/4 = 24.0`
@@ -65,7 +62,7 @@ Asigurați-vă că este imprimat rezultatul corect.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Riverdale
 57
