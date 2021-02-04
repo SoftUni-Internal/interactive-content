@@ -217,7 +217,7 @@ let VeterinaryClinic = result;
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom'); 
 
-   expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(\`Welcome Tom!\`);
+   expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(`Welcome Tom!`);
 [/input]
 [output]
 yes
