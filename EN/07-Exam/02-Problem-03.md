@@ -194,8 +194,8 @@ let VeterinaryClinic = result;
         clinic.newCustomer('Anna Morgan', 'Max', 'Dog', \['SK456', 'DFG45', 'KS456'\])
         clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', \['A154B'\])
         clinic.onLeaving('Jim Jones', 'Tiny');
-        let string = \`SoftCare is 20% busy today!
-Total profit: 500.00\\$
+        let string = \`SoftCare is 20% busy today\!
+Total profit: 500.00\$
 Anna Morgan with:
 \-\-\-Max \- a dog that needs: SK456, DFG45, KS456
 Jim Jones with:
