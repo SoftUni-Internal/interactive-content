@@ -201,7 +201,7 @@ Anna Morgan with:
 ---Max - a dog that needs: SK456, DFG45, KS456
 Jim Jones with:
 ---Tiny - a cat that needs: 
----Tom - a cat that needs: A154B, 2C32B, 12CDB`;
+---Tom - a cat that needs: A154B, 2C32B, 12CDB\`;
         expect(clinic.toString()).to.be.equal(string, 'Incorrect output');
 
 [/input]
@@ -326,7 +326,7 @@ yes
 Total profit: 1500.00$
 Jim Jones with:
 ---A - a cat that needs: 
----B - a cat that needs: A154B, 2C32B, 12CDB`);  
+---B - a cat that needs: A154B, 2C32B, 12CDB\`);  
 [/input]
 [output]
 yes
@@ -389,7 +389,7 @@ Jim Jones with:
 ---B - a cat that needs: 
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Max with:
----A - a cat that needs: A154B, 2C32B, 12CDB`);
+---A - a cat that needs: A154B, 2C32B, 12CDB\`);
 [/input]
 [output]
 yes
