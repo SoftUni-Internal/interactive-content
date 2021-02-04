@@ -3,8 +3,8 @@
 [slide]
 # Description
 
-[code-task title="Task Manager" taskId="js-advanced-exam-pet-me" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Pet Me" taskId="js-advanced-exam-pet-me" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
 ```
 function solve(){
   // Write your code here
