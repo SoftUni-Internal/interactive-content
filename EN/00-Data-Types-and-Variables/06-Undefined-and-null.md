@@ -1,6 +1,6 @@
 # Undefined and Null
 
-[slide]
+[slide hideTitle]
 
 # Undefined
 
@@ -13,7 +13,7 @@
 
 When we declare a variable **without value**, it is undefined.
 
-We can **set a varibale** to undefined later stage in our code.
+We can **set a variable** to undefined in our code at a later stage.
 
 If something exists **but is not given a value it is undefined**. 
 
@@ -24,7 +24,7 @@ let car;
 console.log(car);
 ```
 
-Another possibility to have undefined is when we **manually set the value of a variable.**
+Another possibility to receive undefined is when we **manually set the value of a variable.**
 
 ``` js live
 let car = undefined;  
@@ -33,7 +33,7 @@ console.log(car);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Null
 
@@ -42,11 +42,11 @@ console.log(car);
 [stream language="RO" videoId="489371851/d2a4d15a1e"  /]
 [/video-vimeo]
 
-Null is an object type, which can be used for any variable that holds an object which we do not want to be undefined.
+**Null** is an **object type** which can be used for any variable that **holds an object** which we do not want to be undefined.
 
-For example, when we have the function to **return an object**, or a function that needs to read something from the **database and return an object**.
+For example, when we have a function that **returns an object**, or a function that needs to read something from the **database and return an object**.
 
-In case the function **does not find what it is looking for**, we tell it to return null, and then we can check if the function returns null. 
+In case the function **does not find what it is looking for**, we tell it to return `null`, and then we can check if the function returns null. 
 
 ``` js live
 let person = {
@@ -62,7 +62,7 @@ console.log(typeof(person));
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Null and Undefined
 
@@ -72,20 +72,20 @@ console.log(typeof(person));
 [/video-vimeo]
 
 
-**Null** is a value that we set and we know that there is nothing inside, ie. we set the value null explicitly.
+**Null** is a value that we set so we know that there is **nothing** inside, i.e. we set the value null **explicitly**.
 
-Undefined occurs when the value does not exist or is declared but not set to a value.
+Undefined occurs when the value **does not exist** or is **declared but not set to a value**.
 
-Also Undefined is obtained from the execution of the program, ie. we receive implicitly.
+Also Undefined is **obtained** from the execution of the program, i.e. we receive it **implicitly**.
 
-Null and Undefined are of different types.
+Null and Undefined are of different types:
 
 ``` js live
 console.log(typeof null);
 console.log(typeof undefined);
 ```
 
-But they are equal in identity operator.
+But they are equal in identity operator:
 
 ``` js live
 console.log(null !== undefined);
