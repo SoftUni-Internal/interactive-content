@@ -248,9 +248,12 @@ yes
 // Test 10 - If pet is registered and with no procedures
 let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]); 
+        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom'); 
-        expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B'\])).to.eq(\`Welcome Tom!\`);
+
+        expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(`Welcome Tom!`);
+   
+    
 [/input]
 [output]
 yes
