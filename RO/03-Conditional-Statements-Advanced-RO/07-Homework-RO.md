@@ -172,7 +172,7 @@ Consonant
 [code-editor language=javascript]
 ```
 function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -285,11 +285,18 @@ zero
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sortedNumbers(input) {
+function sortedNumbers(firstNumber, secondNumber, thirdNumber) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program, care verifică **3 numere sortate**:
@@ -303,12 +310,12 @@ Scrieți un program, care verifică **3 numere sortate**:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['1', '2', '3']`| Ascending |
-|`['3', '5', '2']`| Not sorted |
+|1, 2, 3| Ascending |
+|3, 5, 2]| Not sorted |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 1
 2
@@ -333,6 +340,46 @@ Not sorted
 3
 2
 1
+[/input]
+[output]
+Descending
+[/output]
+[/test]
+[test]
+[input]
+4
+3
+2
+[/input]
+[output]
+Descending
+[/output]
+[/test]
+[test]
+[input]
+2
+3
+4
+[/input]
+[output]
+Ascending
+[/output]
+[/test]
+[test]
+[input]
+4
+5
+3
+[/input]
+[output]
+Not sorted
+[/output]
+[/test]
+[test]
+[input]
+10
+9
+8
 [/input]
 [output]
 Descending
