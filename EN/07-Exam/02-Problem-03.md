@@ -190,7 +190,7 @@ yes
 //Zero test 2 - same + toString
 let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]);          
+        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]);
         clinic.newCustomer('Anna Morgan', 'Max', 'Dog', \['SK456', 'DFG45', 'KS456'\])
         clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', \['A154B'\])
         clinic.onLeaving('Jim Jones', 'Tiny');
@@ -199,7 +199,7 @@ Total profit: 500.00\\$
 Anna Morgan with:
 ---Max - a dog that needs: SK456, DFG45, KS456
 Jim Jones with:
----Tiny - a cat that needs: 
+---Tiny - a cat that needs:
 ---Tom - a cat that needs: A154B, 2C32B, 12CDB\`;
         expect(clinic.toString()).to.be.equal(string, 'Incorrect output');
 [/input]
@@ -212,11 +212,11 @@ yes
 //Zero test 3 - same + new dog, all procedures again and toString
 let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]);          
+        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]);
         clinic.newCustomer('Anna Morgan', 'Max', 'Dog', \['SK456', 'DFG45', 'KS456'\]);
         clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', \['A154B'\]);
         clinic.onLeaving('Jim Jones', 'Tiny');
-        clinic.newCustomer('Jim Jones', 'Sara', 'Dog', \['A154B'\]);              
+        clinic.newCustomer('Jim Jones', 'Sara', 'Dog', \['A154B'\]);
         let string = \`SoftCare is 30% busy today!
 Total profit: 500.00\\$
 Anna Morgan with:
@@ -338,7 +338,7 @@ yes
 [/test]
 [test]
 [input]
-// Test 8 - toString with more data 
+// Test 8 - toString with more data
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'A', 'Cat', \['A154B', '2C32B', '12CDB'\]);
@@ -368,7 +368,7 @@ yes
 [/test]
 [test]
 [input]
-//Test 9 - toString with more data 
+//Test 9 - toString with more data
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'A', 'Cat', \['A154B', '2C32B', '12CDB'\]);
@@ -378,7 +378,7 @@ yes
         clinic.newCustomer('Ann', 'B', 'Cat', \['A154B', '2C32B', '12CDB'\]);
         clinic.newCustomer('Ann', 'Ba', 'Cat', \['A154B', '2C32B', '12CDB'\]);
         clinic.newCustomer('Jill', 'C', 'Cat', \['A154B', '2C32B', '12CDB'\]);  
-        clinic.onLeaving('Jim Jones', 'B');        
+        clinic.onLeaving('Jim Jones', 'B');
         expect(clinic.toString()).to.be.eq(\`SoftCare is 60% busy today!
 Total profit: 1500.00\\$
 Ann with:
@@ -388,7 +388,7 @@ Jill with:
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Jim Jones with:
 ---A - a cat that needs: A154B, 2C32B, 12CDB
----B - a cat that needs: 
+---B - a cat that needs:
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Max with:
 ---A - a cat that needs: A154B, 2C32B, 12CDB\`);
