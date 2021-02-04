@@ -1038,11 +1038,16 @@ Scrieți un program care:
 [code-task title="Letter Combinations" taskId="pb-js-nested-loops-letter-combinations" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function letterCombinations(input) {
+function letterCombinations(firstLetter, lastLetter,  missedLetter) {
     // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care:
@@ -1056,10 +1061,7 @@ Scrieți un program care:
 # Exemplu
 | **Input** | **Output** |
 | --- | --- |
-|a| aaa aac aca acc caa cac cca ccc 8 |
-|c|  |
-|b|  |
-
+|'a', 'c', 'b'| aaa aac aca acc caa cac cca ccc 8 |
 
 [/task-description]
 [tests]
@@ -1071,6 +1073,76 @@ b
 [/input]
 [output]
 aaa aac aca acc caa cac cca ccc 8
+[/output]
+[/test]
+[test]
+[input]
+r
+w
+m
+[/input]
+[output]
+rrr rrs rrt rru rrv rrw rsr rss rst rsu rsv rsw rtr rts rtt rtu rtv rtw rur rus rut ruu ruv ruw rvr rvs rvt rvu rvv rvw rwr rws rwt rwu rwv rww srr srs srt sru srv srw ssr sss sst ssu ssv ssw str sts stt stu stv stw sur sus sut suu suv suw svr svs svt svu svv svw swr sws swt swu swv sww trr trs trt tru trv trw tsr tss tst tsu tsv tsw ttr tts ttt ttu ttv ttw tur tus tut tuu tuv tuw tvr tvs tvt tvu tvv tvw twr tws twt twu twv tww urr urs urt uru urv urw usr uss ust usu usv usw utr uts utt utu utv utw uur uus uut uuu uuv uuw uvr uvs uvt uvu uvv uvw uwr uws uwt uwu uwv uww vrr vrs vrt vru vrv vrw vsr vss vst vsu vsv vsw vtr vts vtt vtu vtv vtw vur vus vut vuu vuv vuw vvr vvs vvt vvu vvv vvw vwr vws vwt vwu vwv vww wrr wrs wrt wru wrv wrw wsr wss wst wsu wsv wsw wtr wts wtt wtu wtv wtw wur wus wut wuu wuv wuw wvr wvs wvt wvu wvv wvw wwr wws wwt wwu wwv www 216
+[/output]
+[/test]
+[test]
+[input]
+y
+v
+z
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+q
+z
+n
+[/input]
+[output]
+qqq qqr qqs qqt qqu qqv qqw qqx qqy qqz qrq qrr qrs qrt qru qrv qrw qrx qry qrz qsq qsr qss qst qsu qsv qsw qsx qsy qsz qtq qtr qts qtt qtu qtv qtw qtx qty qtz quq qur qus qut quu quv quw qux quy quz qvq qvr qvs qvt qvu qvv qvw qvx qvy qvz qwq qwr qws qwt qwu qwv qww qwx qwy qwz qxq qxr qxs qxt qxu qxv qxw qxx qxy qxz qyq qyr qys qyt qyu qyv qyw qyx qyy qyz qzq qzr qzs qzt qzu qzv qzw qzx qzy qzz rqq rqr rqs rqt rqu rqv rqw rqx rqy rqz rrq rrr rrs rrt rru rrv rrw rrx rry rrz rsq rsr rss rst rsu rsv rsw rsx rsy rsz rtq rtr rts rtt rtu rtv rtw rtx rty rtz ruq rur rus rut ruu ruv ruw rux ruy ruz rvq rvr rvs rvt rvu rvv rvw rvx rvy rvz rwq rwr rws rwt rwu rwv rww rwx rwy rwz rxq rxr rxs rxt rxu rxv rxw rxx rxy rxz ryq ryr rys ryt ryu ryv ryw ryx ryy ryz rzq rzr rzs rzt rzu rzv rzw rzx rzy rzz sqq sqr sqs sqt squ sqv sqw sqx sqy sqz srq srr srs srt sru srv srw srx sry srz ssq ssr sss sst ssu ssv ssw ssx ssy ssz stq str sts stt stu stv stw stx sty stz suq sur sus sut suu suv suw sux suy suz svq svr svs svt svu svv svw svx svy svz swq swr sws swt swu swv sww swx swy swz sxq sxr sxs sxt sxu sxv sxw sxx sxy sxz syq syr sys syt syu syv syw syx syy syz szq szr szs szt szu szv szw szx szy szz tqq tqr tqs tqt tqu tqv tqw tqx tqy tqz trq trr trs trt tru trv trw trx try trz tsq tsr tss tst tsu tsv tsw tsx tsy tsz ttq ttr tts ttt ttu ttv ttw ttx tty ttz tuq tur tus tut tuu tuv tuw tux tuy tuz tvq tvr tvs tvt tvu tvv tvw tvx tvy tvz twq twr tws twt twu twv tww twx twy twz txq txr txs txt txu txv txw txx txy txz tyq tyr tys tyt tyu tyv tyw tyx tyy tyz tzq tzr tzs tzt tzu tzv tzw tzx tzy tzz uqq uqr uqs uqt uqu uqv uqw uqx uqy uqz urq urr urs urt uru urv urw urx ury urz usq usr uss ust usu usv usw usx usy usz utq utr uts utt utu utv utw utx uty utz uuq uur uus uut uuu uuv uuw uux uuy uuz uvq uvr uvs uvt uvu uvv uvw uvx uvy uvz uwq uwr uws uwt uwu uwv uww uwx uwy uwz uxq uxr uxs uxt uxu uxv uxw uxx uxy uxz uyq uyr uys uyt uyu uyv uyw uyx uyy uyz uzq uzr uzs uzt uzu uzv uzw uzx uzy uzz vqq vqr vqs vqt vqu vqv vqw vqx vqy vqz vrq vrr vrs vrt vru vrv vrw vrx vry vrz vsq vsr vss vst vsu vsv vsw vsx vsy vsz vtq vtr vts vtt vtu vtv vtw vtx vty vtz vuq vur vus vut vuu vuv vuw vux vuy vuz vvq vvr vvs vvt vvu vvv vvw vvx vvy vvz vwq vwr vws vwt vwu vwv vww vwx vwy vwz vxq vxr vxs vxt vxu vxv vxw vxx vxy vxz vyq vyr vys vyt vyu vyv vyw vyx vyy vyz vzq vzr vzs vzt vzu vzv vzw vzx vzy vzz wqq wqr wqs wqt wqu wqv wqw wqx wqy wqz wrq wrr wrs wrt wru wrv wrw wrx wry wrz wsq wsr wss wst wsu wsv wsw wsx wsy wsz wtq wtr wts wtt wtu wtv wtw wtx wty wtz wuq wur wus wut wuu wuv wuw wux wuy wuz wvq wvr wvs wvt wvu wvv wvw wvx wvy wvz wwq wwr wws wwt wwu wwv www wwx wwy wwz wxq wxr wxs wxt wxu wxv wxw wxx wxy wxz wyq wyr wys wyt wyu wyv wyw wyx wyy wyz wzq wzr wzs wzt wzu wzv wzw wzx wzy wzz xqq xqr xqs xqt xqu xqv xqw xqx xqy xqz xrq xrr xrs xrt xru xrv xrw xrx xry xrz xsq xsr xss xst xsu xsv xsw xsx xsy xsz xtq xtr xts xtt xtu xtv xtw xtx xty xtz xuq xur xus xut xuu xuv xuw xux xuy xuz xvq xvr xvs xvt xvu xvv xvw xvx xvy xvz xwq xwr xws xwt xwu xwv xww xwx xwy xwz xxq xxr xxs xxt xxu xxv xxw xxx xxy xxz xyq xyr xys xyt xyu xyv xyw xyx xyy xyz xzq xzr xzs xzt xzu xzv xzw xzx xzy xzz yqq yqr yqs yqt yqu yqv yqw yqx yqy yqz yrq yrr yrs yrt yru yrv yrw yrx yry yrz ysq ysr yss yst ysu ysv ysw ysx ysy ysz ytq ytr yts ytt ytu ytv ytw ytx yty ytz yuq yur yus yut yuu yuv yuw yux yuy yuz yvq yvr yvs yvt yvu yvv yvw yvx yvy yvz ywq ywr yws ywt ywu ywv yww ywx ywy ywz yxq yxr yxs yxt yxu yxv yxw yxx yxy yxz yyq yyr yys yyt yyu yyv yyw yyx yyy yyz yzq yzr yzs yzt yzu yzv yzw yzx yzy yzz zqq zqr zqs zqt zqu zqv zqw zqx zqy zqz zrq zrr zrs zrt zru zrv zrw zrx zry zrz zsq zsr zss zst zsu zsv zsw zsx zsy zsz ztq ztr zts ztt ztu ztv ztw ztx zty ztz zuq zur zus zut zuu zuv zuw zux zuy zuz zvq zvr zvs zvt zvu zvv zvw zvx zvy zvz zwq zwr zws zwt zwu zwv zww zwx zwy zwz zxq zxr zxs zxt zxu zxv zxw zxx zxy zxz zyq zyr zys zyt zyu zyv zyw zyx zyy zyz zzq zzr zzs zzt zzu zzv zzw zzx zzy zzz 1000
+[/output]
+[/test]
+[test]
+[input]
+l
+p
+g
+[/input]
+[output]
+lll llm lln llo llp lml lmm lmn lmo lmp lnl lnm lnn lno lnp lol lom lon loo lop lpl lpm lpn lpo lpp mll mlm mln mlo mlp mml mmm mmn mmo mmp mnl mnm mnn mno mnp mol mom mon moo mop mpl mpm mpn mpo mpp nll nlm nln nlo nlp nml nmm nmn nmo nmp nnl nnm nnn nno nnp nol nom non noo nop npl npm npn npo npp oll olm oln olo olp oml omm omn omo omp onl onm onn ono onp ool oom oon ooo oop opl opm opn opo opp pll plm pln plo plp pml pmm pmn pmo pmp pnl pnm pnn pno pnp pol pom pon poo pop ppl ppm ppn ppo ppp 125
+[/output]
+[/test]
+[test]
+[input]
+a
+d
+j
+[/input]
+[output]
+aaa aab aac aad aba abb abc abd aca acb acc acd ada adb adc add baa bab bac bad bba bbb bbc bbd bca bcb bcc bcd bda bdb bdc bdd caa cab cac cad cba cbb cbc cbd cca ccb ccc ccd cda cdb cdc cdd daa dab dac dad dba dbb dbc dbd dca dcb dcc dcd dda ddb ddc ddd 64
+[/output]
+[/test]
+[test]
+[input]
+b
+i
+l
+[/input]
+[output]
+bbb bbc bbd bbe bbf bbg bbh bbi bcb bcc bcd bce bcf bcg bch bci bdb bdc bdd bde bdf bdg bdh bdi beb bec bed bee bef beg beh bei bfb bfc bfd bfe bff bfg bfh bfi bgb bgc bgd bge bgf bgg bgh bgi bhb bhc bhd bhe bhf bhg bhh bhi bib bic bid bie bif big bih bii cbb cbc cbd cbe cbf cbg cbh cbi ccb ccc ccd cce ccf ccg cch cci cdb cdc cdd cde cdf cdg cdh cdi ceb cec ced cee cef ceg ceh cei cfb cfc cfd cfe cff cfg cfh cfi cgb cgc cgd cge cgf cgg cgh cgi chb chc chd che chf chg chh chi cib cic cid cie cif cig cih cii dbb dbc dbd dbe dbf dbg dbh dbi dcb dcc dcd dce dcf dcg dch dci ddb ddc ddd dde ddf ddg ddh ddi deb dec ded dee def deg deh dei dfb dfc dfd dfe dff dfg dfh dfi dgb dgc dgd dge dgf dgg dgh dgi dhb dhc dhd dhe dhf dhg dhh dhi dib dic did die dif dig dih dii ebb ebc ebd ebe ebf ebg ebh ebi ecb ecc ecd ece ecf ecg ech eci edb edc edd ede edf edg edh edi eeb eec eed eee eef eeg eeh eei efb efc efd efe eff efg efh efi egb egc egd ege egf egg egh egi ehb ehc ehd ehe ehf ehg ehh ehi eib eic eid eie eif eig eih eii fbb fbc fbd fbe fbf fbg fbh fbi fcb fcc fcd fce fcf fcg fch fci fdb fdc fdd fde fdf fdg fdh fdi feb fec fed fee fef feg feh fei ffb ffc ffd ffe fff ffg ffh ffi fgb fgc fgd fge fgf fgg fgh fgi fhb fhc fhd fhe fhf fhg fhh fhi fib fic fid fie fif fig fih fii gbb gbc gbd gbe gbf gbg gbh gbi gcb gcc gcd gce gcf gcg gch gci gdb gdc gdd gde gdf gdg gdh gdi geb gec ged gee gef geg geh gei gfb gfc gfd gfe gff gfg gfh gfi ggb ggc ggd gge ggf ggg ggh ggi ghb ghc ghd ghe ghf ghg ghh ghi gib gic gid gie gif gig gih gii hbb hbc hbd hbe hbf hbg hbh hbi hcb hcc hcd hce hcf hcg hch hci hdb hdc hdd hde hdf hdg hdh hdi heb hec hed hee hef heg heh hei hfb hfc hfd hfe hff hfg hfh hfi hgb hgc hgd hge hgf hgg hgh hgi hhb hhc hhd hhe hhf hhg hhh hhi hib hic hid hie hif hig hih hii ibb ibc ibd ibe ibf ibg ibh ibi icb icc icd ice icf icg ich ici idb idc idd ide idf idg idh idi ieb iec ied iee ief ieg ieh iei ifb ifc ifd ife iff ifg ifh ifi igb igc igd ige igf igg igh igi ihb ihc ihd ihe ihf ihg ihh ihi iib iic iid iie iif iig iih iii 512
+[/output]
+[/test]
+[test]
+[input]
+b
+e
+k
+[/input]
+[output]
+bbb bbc bbd bbe bcb bcc bcd bce bdb bdc bdd bde beb bec bed bee cbb cbc cbd cbe ccb ccc ccd cce cdb cdc cdd cde ceb cec ced cee dbb dbc dbd dbe dcb dcc dcd dce ddb ddc ddd dde deb dec ded dee ebb ebc ebd ebe ecb ecc ecd ece edb edc edd ede eeb eec eed eee 64
 [/output]
 [/test]
 [/tests]
@@ -1085,7 +1157,7 @@ aaa aac aca acc caa cac cca ccc 8
 [code-editor language=javascript]
 ```
 function happyNumbers(input) {
-    // Scrieți codul dvs. aici
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
