@@ -1,7 +1,7 @@
-[slide]
+# Data Types
 
 
-
+[slide hideTitle]
 
 # What is a Data Type?
 
@@ -13,7 +13,7 @@
 
 Data types inform the computer how much information to read **from memory** purely technically.
 
-In Javascipt we can **change** the content of variables. 
+In JavaScript we can **change** the content of variables. 
 
 For example, if we have declared a variable as a number, we can easily change its value:
 
@@ -26,11 +26,11 @@ console.log(`I love ${myVar}!`);
 ```
 Although we can change a variable's value, it is not a good practice.
 
-Variables in Javascript **do not have** a type, we can **store** whatever types of data we want, but the data has a type.
+Variables in JavaScript **do not have** a type, we can **store** whatever types of data we want, but the data has a type.
 
-In JavaScript, we have **seven primitive** data types and one composite type, also called a reference type.
+In JavaScript, we have **seven primitive** data types and one composite type, also called a **reference type**.
 
-The **primitive** data types are: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol`, `BigInt`.
+The **primitive** data types are: `Boolean`, `Null`, `Undefined`, `Number`, `String`, `Symbol` and `BigInt`.
 
 The **reference** data types are: `objects` and `arrays`.
 
@@ -49,7 +49,7 @@ let unknown = undefined;				 // Undefined
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 
 # Dynamic Typing
@@ -61,7 +61,7 @@ let unknown = undefined;				 // Undefined
 
 Variables in JavaScript are not strictly associated with a particular **value type**.
 
-We can re-assign variables of all types:
+We can reassign variables of all types:
 
 ``` js live
 let variable = 15; 
