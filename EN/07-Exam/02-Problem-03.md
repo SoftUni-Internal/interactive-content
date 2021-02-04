@@ -3,8 +3,8 @@
 [slide]
 # Description
 
-[code-task title="Task Manager" taskId="js-advanced-exam-veterinary-clinic" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Veterinary Clinic" taskId="js-advanced-exam-veterinary-clinic" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
 class VeterinaryClinic {
     // TODO: implement this class...
