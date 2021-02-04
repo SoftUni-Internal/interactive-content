@@ -40,7 +40,7 @@ First, print on of these lines:
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Scrieți codul dvs. aici
+	// Write your code here
 }
 ```
 [/code-editor]
