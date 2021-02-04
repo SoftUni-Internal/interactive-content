@@ -32,9 +32,13 @@ For each series you receive two lines:
 ## Output
 Print one line on the console:
 
-- If your budget is greater than or equal to the price of the series: `You bought all the series and have {money left}$ left.`
+- If your budget is greater than or equal to the price of the series: 
 
-- If your budget is less than the price of the series: `You need {money needed}$ more to buy the series!`
+`You bought all the series and have {money left}$ left.`
+
+- If your budget is less than the price of the series: 
+
+`You need {money needed}$ more to buy the series!`
 
 The result must be formatted to two digits after the decimal point.
 

@@ -30,11 +30,17 @@ Read from the console:
 ## Output
 First, print on of these lines:
 
-- If you have received the command `Movie time!`: `There are {seats left} seats left in the cinema.`
+- If you have received the command `Movie time!`: 
 
-- If there are no more free seats in the hall: `The cinema is full.`
+`There are {seats left} seats left in the cinema.`
 
-- Afterwards, print: `Cinema income - {income}$`
+- If there are no more free seats in the hall: 
+
+`The cinema is full.`
+
+- Afterwards, print: 
+
+`Cinema income - {income}$`
 
 [code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
