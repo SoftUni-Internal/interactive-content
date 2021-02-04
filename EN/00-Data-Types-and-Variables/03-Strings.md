@@ -85,7 +85,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate Names" taskId="js-fundamentals-data-types-and-variables-lab-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" taskId="js-fundamentals-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -286,7 +286,7 @@ JanpWhite
 [stream language="RO" videoId="489371500/1d3c01f1f7"  /]
 [/video-vimeo]
 
-[code-task title="Right Place" taskId="js-fundamentals-data-types-and-variables-lab-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Right Place" taskId="js-fundamentals-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rightPlace(input){
@@ -298,7 +298,7 @@ function rightPlace(input){
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
 
-First string will be a word with a **missing char** replaced with a underscore `_`.
+First string will be a word with a **missing char** replaced with an underscore `_`.
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
@@ -409,7 +409,7 @@ function rightPlace(input){
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
 
-First string will be a word with a **missing char** replaced with a underscore `_`.
+First string will be a word with a **missing char** replaced with an underscore `_`.
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
