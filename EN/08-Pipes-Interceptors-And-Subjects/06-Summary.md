@@ -5,7 +5,7 @@
 ## In this lesson you learned:
 
 - Pipes in Angular are used to transform data in the template
-  - They take integers, strings, arrays and date as input separated with \(|\) to be converted
+  - They take integers, strings, arrays and date as input separated with \(\|\) to be converted
 
 ```js
 @Pipe({
