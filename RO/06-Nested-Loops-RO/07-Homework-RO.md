@@ -1175,8 +1175,7 @@ Generează toate **numerele cu 4 cifre** cu cifre mai mici decât n și le impri
 | **Input** | **Output** |
 | --- | --- |
 |3| 1212 1221 2112 2121 |
-||  |
-||  |
+
 
 [/task-description]
 [tests]

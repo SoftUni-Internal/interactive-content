@@ -1170,12 +1170,11 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 | **Input** | **Output** |
 | --- | --- |
 |3| 1212 1221 2112 2121 |
-||  |
-||  |
+
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 3
 [/input]
