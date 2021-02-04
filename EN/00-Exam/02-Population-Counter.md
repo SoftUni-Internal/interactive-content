@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Population Counter
-[code-task title="Problem: Population Counter" taskId="advanced-java-exam-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Population Counter" taskId="java-advanced-exam-Population-Counter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
