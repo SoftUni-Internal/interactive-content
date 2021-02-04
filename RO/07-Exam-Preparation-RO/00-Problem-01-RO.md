@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 1: Calculator for TV series
 
 [vimeo-video]
@@ -16,47 +16,50 @@ In fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului 
 Trebuie să rețineți și faptul că fiecare sezon se încheie cu un episod special care este mai lung cu 10 minute decât celelalte.
 
 ## Intrare
+
 Ca intrare veți primi 4 linii de pe consolă:
-- Numele serialului - un șir
-- Numărul sezoanelor – un număr întreg în intervalul \[1… 10\]
-- Numărul episoadelor – un număr întreg în intervalul \[10… 80\]
-Durata unui episod standard fără reclame - dublă în intervalul \ [40,0 ... 65,0 \]
+
+- Numele serialului: un șir
+
+- Numărul sezoanelor: un număr întreg în intervalul \[1… 10\]
+
+- Numărul episoadelor: un număr întreg în intervalul \[10… 80\]
+
+- Durata unui episod standard fără reclame: dublă în intervalul \ [40.0 ... 65.0 \]
+
 ## Ieșire
+
 Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
-- `Timpul total necesar pentru a viziona seria {numele seriei} este de {timp} minute.`
+
+- `Total time needed to watch the {numele seriei} series is {timp} minutes.`
 
 [code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-## Input
-Name of the series - Lucifer
 
-Number seasons – 3
+# Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['Lucifer', '3', '18', '55']`| Total time needed to watch the Lucifer series is 3594 minutes.|
 
-Number episodes  – 18
+**Comments** 
 
-Duration of an episode – 55
-
-## Output
-Total time needed to watch the Lucifer series is 3594 minutes.
-
-## Comments 
 Durata reclamelor din fiecare episod: `20% from 55 = 11.0`
 Durata unui episod cu publicitate: `55 + 11 = 66.0`
 
-Timp adăugat pentru episoadele speciale: `3*10 = 30`
+Timp adăugat pentru episoadele speciale: `3 * 10 = 30`
 
 Timpul total necesar pentru a vedea toate episoadele: `66 * 18 * 3 + 30 = 3594.0`  
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Flash
 5

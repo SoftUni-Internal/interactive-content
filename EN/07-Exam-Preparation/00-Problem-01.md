@@ -17,13 +17,18 @@ You should also keep in mind that every season ends with a special episode, whic
 
 ## Input
 As input you will receive 4 console lines:
-- Name of the series - String
-- Number of seasons – int in the range \[1… 10\]
-- Number of episodes – int in the range \[10… 80\]
-- Duration of a standard episode without the advertisements – double in the range \[40.0… 65.0\]
+
+- Name of the series: String
+
+- Number of seasons: int in the range \[1… 10\]
+
+- Number of episodes: int in the range \[10… 80\]
+
+- Duration of a standard episode without the advertisements: double in the range \[40.0… 65.0\]
 
 ## Output
 Print out on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
+
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
 
 [code-task title="Calculator for TV series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -35,30 +40,26 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Input
-Name of the series - Lucifer
 
-Number seasons – 3
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['Lucifer', '3', '18', '55']`| Total time needed to watch the Lucifer series is 3594 minutes.|
 
-Number episodes  – 18
+**Comments** 
 
-Duration of an episode – 55
-
-## Output
-Total time needed to watch the Lucifer series is 3594 minutes.
-
-## Comments 
 Duration of advertisements per episode: `20% from 55 = 11.0`
 
 Duration of an episode with the advertisements: `55 + 11 = 66.0`
 
 Additional time to be added, because of the specials: `3*10 = 30`
 
-Total time needed to watch the episodes: `66 * 18 * 3 + 30 = 3594.0`  
+Total time needed to watch the episodes: `66 * 18 * 3 + 30 = 3594.0` 
+
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 Flash
 5
