@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Bee
-[code-task title="Problem: Bee" taskId="advanced-java-exam-Bee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Bee" taskId="java-advanced-exam-Bee" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
