@@ -14,11 +14,11 @@ The inheritance in JavaScript is a type of **dependence**.
 
 ## Types of Inheritance
 
--  **Simple** Inheritance
--  **Multilevel** Inheritance
--  **Hierarchal** Inheritance
--  **Multiple** Inheritance
--  **Hybrid** Inheritance
+- **Simple** Inheritance
+- **Multilevel** Inheritance
+- **Hierarchal** Inheritance
+- **Multiple** Inheritance
+- **Hybrid** Inheritance
 
 [/slide]
 
@@ -132,7 +132,7 @@ Here is an example:
     }
 ```
 
-In this example, the **Dog**and the **Cat**classes extend the **Pet**class.
+In this example, the **Dog** and the **Cat** classes extend the **Pet** class.
 
 All of them will have the properties and methods that the **Pet** class has.
 

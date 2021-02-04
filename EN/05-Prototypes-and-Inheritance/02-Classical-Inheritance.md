@@ -30,9 +30,9 @@ When a class **extends** a parent, they **inherit** its data and methods.
 
 Child classes can:
 
--  Add **properties**.
--  Add or replace **methods**.
--  Add or replace **accessor** properties.
+- Add **properties**
+- Add or replace **methods**
+- Add or replace **accessor** properties
 
 Here is an example:
 
