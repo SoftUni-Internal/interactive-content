@@ -31,7 +31,20 @@ Computers can only understand numbers, so an **ASCII** code is the numerical rep
 
 This is an example part of the table:
 
-[image assetsSrc="04-for-loop-ascii.png" /]
+| **Dec**|**Hex** |**Char** |**Dec**|**Hex**|**Char**|
+|:---: | :---:|:---: | :---:|:---:|:---: |
+|64|40|\@|96|60| \` |
+|65|41| A |97|61|a|
+|66|42|B|98|62|b|
+|67|43|C|99|63|c|
+|68|44|D|100|64|d|
+|69|45|E|101|65|e|
+|70|46|F|102|66|f|
+|71|47|G|103|67|g|
+|72|48|H|104|68|h|
+|73|49|I|105|69|i|
+|74|4A|J|106|6A|j|
+
 
 And here you can check the whole [ASCII Table](http://www.asciitable.com)
 
