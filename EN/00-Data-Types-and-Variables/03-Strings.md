@@ -1,6 +1,6 @@
 # Strings
 
-[slide]
+[slide hideTitle]
 # What is a String?
 
 [vimeo-video]
@@ -11,7 +11,7 @@
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
 
-Each symbol has a **position** in the string and when we connect them, **a text is obtained.**
+Each symbol has a **position** in the string and when we connect them, **text is obtained.**
 
 We can take the individual **symbols** from the string.
 
@@ -26,7 +26,7 @@ console.log(myString.length);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 # Strings Are Immutable
@@ -37,7 +37,7 @@ console.log(myString.length);
 [/video-vimeo]
 
 
-Keep in mind that we can only take the individual elements of the string, but we can not change the elements inside the string.
+Keep in mind that we can only take the individual elements of the string, but we cannot change the elements inside the string.
 
 Strings are immutable. 
 
@@ -47,16 +47,16 @@ In this example we try to change the fourth symbol which is `o`:
 let myString = "Hello JavaScript!";
 console.log(myString);
 
-myString[4] = 'Change fourth symbol!';
+myString[4] = 'Change the symbol on the fourth index!';
 console.log(myString);  
 ```
 
-We know we can change the **data held by a variable**, but we can't change symbols in the string.
+We know we can change the **data held by a variable**, but we cannot change symbols in the string.
 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # String Interpolation
 
@@ -65,9 +65,9 @@ We know we can change the **data held by a variable**, but we can't change symbo
 [stream language="RO" videoId="489371467/900551de56"  /]
 [/video-vimeo]
 
-Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
+Replacing **placeholders** with values inside of a string literal is called string **interpolation**. 
 
-In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as placeholder perform the string interpolation.
+In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as а placeholder perform the string interpolation.
 
 ``` js live
 let name = 'Rick';
@@ -77,7 +77,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Concantenate Names
 
 [vimeo-video]
@@ -85,7 +85,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" taskId="pb-js-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -100,7 +100,7 @@ Write a program, which:
 - Prints the names joined by the delimiter
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |`['John', 'Smith', '->']`| John\-\>Smith |
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
@@ -173,7 +173,7 @@ JanpWhite
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Concantenate Names
 
@@ -182,18 +182,14 @@ JanpWhite
 [stream language="RO" videoId="489371497/73837bd2a6"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" taskId="pb-js-concatenating-names-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 
 
 ```
 function concatNames(input){
-let firstName = input[0];
-let lastName = input[1];
-let delimiter = input[2];
-
-console.log(`${firstName}${delimiter}${lastName}`);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -277,7 +273,7 @@ JanpWhite
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Right Place
 
@@ -286,7 +282,7 @@ JanpWhite
 [stream language="RO" videoId="489371500/1d3c01f1f7"  /]
 [/video-vimeo]
 
-[code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rightPlace(input){
@@ -298,11 +294,11 @@ function rightPlace(input){
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
 
-First string will be a word with a **missing char** replaced with a underscore `_`.
+First string will be a word with a **missing char** replaced with an underscore `_`.
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
-If they are equals you should print `Matched`, otherwise print `Not Matched`.
+If they are equal you should print `Matched`, otherwise print `Not Matched`.
 
 
 # Example
@@ -378,7 +374,7 @@ Not Matched
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 # Solution: Right Place
@@ -391,17 +387,7 @@ Not Matched
 [code-editor language=javascript]
 ```
 function rightPlace(input){
-  let underScopedString = input[0];
-  let char = input[1];
-  let string = input[2];
-  
-  let newString = underScopedString.replace('_', char);
-
-  if (newString === string) {
-    console.log('Matched');
-  } else {
-    console.log('Not Matched');
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -409,11 +395,11 @@ function rightPlace(input){
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
 
-First string will be a word with a **missing char** replaced with a underscore `_`.
+First string will be a word with a **missing char** replaced with an underscore `_`.
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
-If they are equals you should print `Matched`, otherwise print `Not Matched`.
+If they are equal you should print `Matched`, otherwise print `Not Matched`.
 
 
 # Example
