@@ -5,7 +5,7 @@
 [code-editor language=javascript]
 ```
 function fruitOrVegetable(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -54,7 +54,7 @@ vegetable
 [code-editor language=javascript]
 ```
 function dayOfWeek(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -111,7 +111,7 @@ Sunday
 [code-editor language=javascript]
 ```
 function vowelOrConsonant(input) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -286,7 +286,7 @@ zero
 [code-editor language=javascript]
 ```
 function sortedNumbers(firstNumber, secondNumber, thirdNumber) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -512,7 +512,7 @@ Camping
 [code-editor language=javascript]
 ```
 function cinema(typeOfMovie, rows, seatsPerRow) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -896,7 +896,7 @@ Scrieți un program pentru a aplica un operator pentru două numere date:
 [code-editor language=javascript]
 ```
 function atm(balance, withdraw, limit) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -994,29 +994,31 @@ Insufficient availability.
 [code-editor language=javascript]
 ```
 function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]), , Number(input[3]), , Number(input[4]));
+}
 ```
 [/code-adapter]
+
 # Descriere
+
 Scrieți un program pentru a găsi cel mai mare dintre 5 numere
+
 * Citiți **5 numere întregi**
+
 * Imprimați cel mai mare**număr.
 
 
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|\-1| \-1 |
-|\-2|  |
-|\-3|  |
-|\-4|  |
-|\-5|  |
+|\-1, \-2, \-3, \-4, \-5 | \-1 |
 
 
 [/task-description]

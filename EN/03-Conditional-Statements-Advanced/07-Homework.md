@@ -991,7 +991,9 @@ function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]), , Number(input[3]), , Number(input[4]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -1002,11 +1004,7 @@ Write a program to find the biggest among 5 numbers
 
   | **Input** | **Output** |
 | --- | --- |
-|\-1| \-1 |
-|\-2|  |
-|\-3|  |
-|\-4|  |
-|\-5|  |
+|\-1, \-2, \-3, \-4, \-5 | \-1 |
 
 
 [/task-description]
