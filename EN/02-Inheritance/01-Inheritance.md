@@ -30,6 +30,7 @@ But also extend the functionality by adding a `String Company` parameter.
 
 Respectively we do the same for the `Student`, but with its internal logic which it has to add.
 
+
 [image assetsSrc="inheritance-example(1).png" /]
 
 
