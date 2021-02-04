@@ -85,7 +85,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" taskId="pb-js-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" taskId="js-fundamentals-data-types-and-variables-lab-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -100,7 +100,7 @@ Write a program, which:
 - Prints the names joined by the delimiter
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |`['John', 'Smith', '->']`| John\-\>Smith |
 |`['Jan', 'White', '<->']`|Jan\<\-\>White|
@@ -182,7 +182,7 @@ JanpWhite
 [stream language="RO" videoId="489371497/73837bd2a6"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate names" taskId="pb-js-concatenating-names-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 
@@ -286,7 +286,7 @@ JanpWhite
 [stream language="RO" videoId="489371500/1d3c01f1f7"  /]
 [/video-vimeo]
 
-[code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Right Place" taskId="js-fundamentals-data-types-and-variables-lab-concatenating-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rightPlace(input){
