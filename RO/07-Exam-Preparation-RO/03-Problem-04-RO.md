@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 4: Cinema Income
 
 [vimeo-video]
@@ -22,10 +22,10 @@ Dacă numărul de spectatori care intră, depășește numărul de locuri rămas
 # Intrare
 Citiți de pe consolă:
 
-- Lini 1– capacitatea sălii – un număr întreg în intervalul  \[50... 150\]
+- Lini 1– capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
 - Pe fiecare linie următoare, până când comana este  `Movie time!`:
-	- Numărul de oameni care intră în cinematograf - un număr întreg în intervalul  \[1… 15\]
+	- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
 ## Output
 First, print on of these lines:
@@ -36,7 +36,7 @@ First, print on of these lines:
 
 - Pe urmă imprimați: `Cinema income - {income}$`
 
-[code-task title="Cinema Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -45,41 +45,27 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Input
-Capacity - 60
+# Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
+||Cinema income - 255$|
 
-People entering the cinema:
-10
+**Comments**
 
-6
-
-3
-
-20
-
-15
-
-Movie time!
-
-## Output
-There are 6 seats left in the cinema.
-
-Cinema income - 255$
-
-## Comments
 Capacitatea sălii este de 60 locuri.
 
 Pe următoarea linie, vom primi numărul de oameni care au intrat în sală-10. 
 
 Prețul pe care îl vor plăti este `10 * 5 = 50$`. 
 
-După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu 5$ mai puțin. 
+După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu `5$` mai puțin. 
 
 Continuăm până ce primim comanda `Movie time!` și apoi imprimăm datele de ieșire corespunzătoare.
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 140
 15

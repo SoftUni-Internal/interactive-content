@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 4: Cinema Income
 
 [vimeo-video]
@@ -22,10 +22,10 @@ If the number of entering viewers, exceeds the number of seats left in the hall,
 # Input
 Read from the console:
 
-- First line – the hall capacity – whole number in the range  \[50... 150\]
+- First line: the hall capacity – whole number in the range  \[50... 150\]
 
 - On each of the next line until the command is  `Movie time!`:
-	- Number of people entering the cinema - whole number in the range  \[1… 15\]
+	- Number of people entering the cinema: whole number in the range  \[1… 15\]
 
 ## Output
 First, print on of these lines:
@@ -36,50 +36,38 @@ First, print on of these lines:
 
 - Afterwards, print: `Cinema income - {income}$`
 
-[code-task title="Cinema Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-## Input
-Capacity - 60
 
-People entering the cinema:
-10
+# Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
+||Cinema income - 255$|
 
-6
+**Comments**
 
-3
-
-20
-
-15
-
-Movie time!
-
-## Output
-There are 6 seats left in the cinema.
-
-Cinema income - 255$
-
-## Comments
 The hall's capacity is 60 seats. 
 
-On the next line we receive the number of people that have entered the hall – 10. 
+On the next line we receive the number of people that have entered the hall: 10. 
 
 The price that they will pay is `10 * 5 = 50$`. 
 
-After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay 5$ less. 
+After that we receive that 6 people enter the hall and 6 can be divided by 3, so they pay `5$` less. 
 
 We continue until we receive the command `Movie time!` and then we print a suitable output.
+
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 140
 15
