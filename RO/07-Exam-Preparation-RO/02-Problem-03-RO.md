@@ -9,7 +9,7 @@
 ## Descriere
 Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
-|  **John Wick**      | **Star Wars** | **Jumanji**   |
+| \- | **John Wick**      | **Star Wars** | **Jumanji**   |
 |:---:    | :---:       |    :----:   |   :---:     |
 | Drink | 12$ | 18$ | 9$ |
 | Popcorn | 15$ | 25$ | 11$ |
