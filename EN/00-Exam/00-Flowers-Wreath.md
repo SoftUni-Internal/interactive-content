@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Flower Wreaths
-[code-task title="Problem: Flower Wreaths" taskId="advanced-java-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Flower Wreaths" taskId="java-advanced-exam-Flower-Wreaths" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
