@@ -45,7 +45,6 @@ This is an example part of the table:
 |73|49|I|105|69|i|
 |74|4A|J|106|6A|j|
 
-
 And here you can check the whole [ASCII Table](http://www.asciitable.com)
 
 The columns that you would most probably use for the purposes of this course are the **decimal** and **character** ones.
