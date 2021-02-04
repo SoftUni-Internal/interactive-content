@@ -222,12 +222,12 @@ yes
 [/test]
 [test]
 [input]
-// Test 1 - instance properties check
+// Test 2 - If capacity is exhausted throw an Error
 let VeterinaryClinic = result;
-        let clinic = new VeterinaryClinic('SoftCare', 10);        
-        expect(clinic.clinicName).to.be.equal('SoftCare', 'Incorrect clinicName');
-        expect(clinic.capacity).to.be.equal(10, 'Incorrect clinicName'); 
-        expect(clinic.clients.length).to.be.equal(0, 'Incorrect clinicName');
+        let clinic = new VeterinaryClinic('SoftCare', 1);
+        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
+        expect(function() {clinic.newCustomer('Jim', 'Tom', 'Cat', ['A154B'])} ).to.throw('Sorry, we are not able to accept more patients!');
+   
 [/input]
 [output]
 yes
