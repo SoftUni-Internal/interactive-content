@@ -67,10 +67,7 @@ Scrieți un program care:
 # Exemplu
   | **Input** | **Output** |
 | --- | --- |
-|2| 3 |
-|4||
-|8| |
-|3| |
+|`['2', '4', '8', '3']`| 3 |
 
 [/task-description]
 [tests]
@@ -117,10 +114,8 @@ Scrieți un program care:
 # Exemplu
   | **Input** | **Output** |
 | --- | --- |
-|2| 3 |
-|4||
-|8| |
-|3| |
+|`['2', '4', '8', '3']`| 3 |
+
 [/task-description]
 [tests]
 [test]
