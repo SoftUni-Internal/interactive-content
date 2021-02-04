@@ -1,6 +1,6 @@
 # Strings
 
-[slide]
+[slide hideTitle]
 # What is a String?
 
 [vimeo-video]
@@ -11,7 +11,7 @@
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
 
-Each symbol has a **position** in the string and when we connect them, **a text is obtained.**
+Each symbol has a **position** in the string and when we connect them, **text is obtained.**
 
 We can take the individual **symbols** from the string.
 
@@ -26,7 +26,7 @@ console.log(myString.length);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 # Strings Are Immutable
@@ -37,7 +37,7 @@ console.log(myString.length);
 [/video-vimeo]
 
 
-Keep in mind that we can only take the individual elements of the string, but we can not change the elements inside the string.
+Keep in mind that we can only take the individual elements of the string, but we cannot change the elements inside the string.
 
 Strings are immutable. 
 
@@ -47,16 +47,16 @@ In this example we try to change the fourth symbol which is `o`:
 let myString = "Hello JavaScript!";
 console.log(myString);
 
-myString[4] = 'Change fourth symbol!';
+myString[4] = 'Change the symbol on the fourth index!';
 console.log(myString);  
 ```
 
-We know we can change the **data held by a variable**, but we can't change symbols in the string.
+We know we can change the **data held by a variable**, but we cannot change symbols in the string.
 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # String Interpolation
 
@@ -65,9 +65,9 @@ We know we can change the **data held by a variable**, but we can't change symbo
 [stream language="RO" videoId="489371467/900551de56"  /]
 [/video-vimeo]
 
-Replacing **placeholders** with values inside of a string literal is named string **interpolation**. 
+Replacing **placeholders** with values inside of a string literal is called string **interpolation**. 
 
-In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as placeholder perform the string interpolation.
+In JavaScript, the template literals (strings wrapped in backticks) and `${expression}` as а placeholder perform the string interpolation.
 
 ``` js live
 let name = 'Rick';
@@ -77,7 +77,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Concantenate Names
 
 [vimeo-video]
@@ -173,7 +173,7 @@ JanpWhite
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Solution: Concantenate Names
 
@@ -277,7 +277,7 @@ JanpWhite
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Right Place
 
@@ -302,7 +302,7 @@ First string will be a word with a **missing char** replaced with a underscore `
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
-If they are equals you should print `Matched`, otherwise print `Not Matched`.
+If they are equal you should print `Matched`, otherwise print `Not Matched`.
 
 
 # Example
@@ -378,7 +378,7 @@ Not Matched
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 # Solution: Right Place
@@ -413,7 +413,7 @@ First string will be a word with a **missing char** replaced with a underscore `
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
-If they are equals you should print `Matched`, otherwise print `Not Matched`.
+If they are equal you should print `Matched`, otherwise print `Not Matched`.
 
 
 # Example
