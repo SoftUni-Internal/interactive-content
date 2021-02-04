@@ -396,11 +396,18 @@ Descending
 [code-task title="Vacation Expenses" taskId="pb-js-Conditions-Advanced-Vacation-Expenses" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function vacationExpenses(input) {
-    // Write your code here
+function vacationExpenses(season, building, days){
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (input[0], input[1], Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program, care calculează cheltuielile de vacanță:
@@ -419,13 +426,11 @@ Scrieți un program, care calculează cheltuielile de vacanță:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|Winter| 180.00 |
-|Hotel|  |
-|5|  |
+|'Winter', 'Hotel', 5| 180.00 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Winter
 Hotel
@@ -433,6 +438,66 @@ Hotel
 [/input]
 [output]
 180.00
+[/output]
+[/test]
+[test]
+[input]
+Winter
+Camping
+10
+[/input]
+[output]
+90.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+6
+[/input]
+[output]
+63.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+7
+[/input]
+[output]
+350.00
+[/output]
+[/test]
+[test]
+[input]
+Spring
+Camping
+8
+[/input]
+[output]
+64.00
+[/output]
+[/test]
+[test]
+[input]
+Summer
+Hotel
+9
+[/input]
+[output]
+450.00
+[/output]
+[/test]
+[test]
+[input]
+Autumn
+Camping
+10
+[/input]
+[output]
+105.00
 [/output]
 [/test]
 [/tests]
