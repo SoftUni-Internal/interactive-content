@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 6: The Best Movie
 
 [vimeo-video]
@@ -20,6 +20,7 @@ The points are calculated by the sum of the ASCII character values in the movie 
 There will not be a case where we have two films have an equal amount of points
 
 Keep in mind the following:
+
 - For each lowercase letter from the title, you must subtract from the sum the length of the movie title multiplied by 2.
 
 - For each uppercase letter in the title, the length of the film's title should be subtracted from the sum.
@@ -27,14 +28,24 @@ Keep in mind the following:
 - You can have a maximum of 7 movie titles.
 
 ## Input
+
 You receive multiple lines from the console until the command `STOP` or until the limit of 7 movies is reached:
-- Movie title – string;
+
+- Movie title: string;
 
 ## Output
+
 Print on the console:
-- If you have reached the limit of 7 movies you must print: `Title limit has been reached.`
-- Print the best movie for you: `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
-[code-task title="The Best Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+- If you have reached the limit of 7 movies you must print: 
+
+`Title limit has been reached.`
+
+- Print the best movie for you: 
+
+`The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
+
+[code-task title="The Best Movie" taskId="js-pb-exam-preparation-The-Best-Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -43,18 +54,13 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Input
-Matrix
 
-Breaking bad
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['Matrix', 'Breaking bad', 'Legend', 'STOP']`| The best movie for you is Breaking bad its ASCII sum is: 878.|
 
-Legend
-
-STOP
-
-## Output
-The best movie for you is Breaking bad its ASCII sum is: 878.
-## Comments
+**Comments**
 
 First we get **Matrix**, the first letter is M with a value of 77, it is a capital letter so we subtract from it the length of the title `77 - 6 = 71`.
 
@@ -67,7 +73,7 @@ Upon receiving the `STOP` command, we print the title with the highest value, wh
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 The maze
 School story 2
