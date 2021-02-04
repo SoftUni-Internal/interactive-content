@@ -124,8 +124,9 @@ if (5 == true) {
 }
 
 ```
+The result of this expression will be `not`, and this is expected behavior.
 
-The result of this expression will be `not`, and this is expected behavior:
+The result of this expression:
 ``` js live
 if (1 == true) {
   console.log('same');
