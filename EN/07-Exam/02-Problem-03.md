@@ -171,11 +171,11 @@ Jim Jones with:
 let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         let output = clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']);
-        let expectedOutput = \`Welcome Tom!\`;
+        let expectedOutput = `Welcome Tom!`;
         expect(expectedOutput).to.be.equal(output, 'Incorrect output');
         expect(clinic.newCustomer('Anna Morgan', 'Max', 'Dog', ['SK456', 'DFG45', 'KS456'])).to.be.equal('Welcome Max!', 'Incorrect output')
         expect(clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', ['A154B'])).to.be.equal('Welcome Tiny!', 'Incorrect output');
-        let allProcedures = \`All procedures by pet kind "CAT"
+        let allProcedures = `All procedures by pet kind "CAT"
 Jim Jones
 - Tom with need of: A154B, 2C32B, 12CDB
 - Tiny with need of: A154B` 
@@ -286,7 +286,7 @@ yes
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
-        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(\`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.\`);
+        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.`);
    
 [/input]
 [output]
@@ -299,7 +299,7 @@ yes
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
-        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(\`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.\`);
+        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.`);
    
 [/input]
 [output]
@@ -326,8 +326,8 @@ yes
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom');
-        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(\`Sorry, there are no procedures for TomX!\`);
-        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(\`Sorry, there are no procedures for Tom!\`);   
+        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(`Sorry, there are no procedures for TomX!`);
+        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there are no procedures for Tom!`);   
     
 [/input]
 [output]
