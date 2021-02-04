@@ -299,7 +299,7 @@ yes
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
-        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.`);
+        expect(function() {clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])} ).to.throw(\`This pet is already registered under Jim Jones name! Tom is on our lists, waiting for A154B, 2C32B, 12CDB.\`);
    
 [/input]
 [output]
@@ -326,8 +326,8 @@ yes
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom');
-        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(`Sorry, there are no procedures for TomX!`);
-        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there are no procedures for Tom!`);   
+        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(\`Sorry, there are no procedures for TomX!\`);
+        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(\`Sorry, there are no procedures for Tom!\`);   
     
 [/input]
 [output]
@@ -343,11 +343,11 @@ yes
         clinic.newCustomer('Jim Jones', 'B', 'Cat', ['A154B', '2C32B', '12CDB']); 
 
         clinic.onLeaving('Jim Jones', 'A');        
-        expect(clinic.toString()).to.be.eq(\`SoftCare is 10% busy today!
+        expect(clinic.toString()).to.be.eq(`SoftCare is 10% busy today!
 Total profit: 1500.00$
 Jim Jones with:
 ---A - a cat that needs: 
----B - a cat that needs: A154B, 2C32B, 12CDB\`);  
+---B - a cat that needs: A154B, 2C32B, 12CDB`);  
 [/input]
 [output]
 yes
