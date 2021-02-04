@@ -1,15 +1,15 @@
 # Reusing Classes
 
 [slide hideTitle]
-# Access Modifiers and Shadowing Variables
+# Access Modifiers
 
 - Derived classes **can access all public** and **protected** members
 - Derived classes can access **default** members **if in same package**
-- **Private** fields **aren't inherited** in subclasses (can not be accesssed)
+- **Private** fields can not be accessed from the **subclasses** but they are instantiated as our **Parent** need them for its internal logic
 
 ```java
 class Person {
-  protected String address;   //Can be accessed from it's SubClasses.
+  protected String address;   //Can be accessed from it is subclasses.
   public void sleep();        //Access from everywhere in the project.
   String name;                //Can be accessed through other methods.
   private String id;          //It can be accessed only from the class delegator itself.
@@ -23,14 +23,17 @@ class Person {
 # Shadowing Variables
 
 - Derived classes **can hide/shadow** superclass variables by implementing a unit with the same name by itself
+- When you are using **shadowing** you can rebase an entire method, this means changing its parameters and return type. 
 
 ```java
-class Person { protected int weight; }
+class Person { 
+  protected int weight; 
+  }
 
 class Patient extends Person {
-  protected float weight; //hides/shadows int weight.
+  protected float weight; //hides (shadows) int weight.
   public void method() {
-    double weight = 0.5d; //As it is more concrete, it hides both but only inside the method brackets.
+    double weight = 0.5d; //As it is more concrete, it hides both but it lives only inside the method brackets.
   }
 }
 ```
@@ -61,15 +64,19 @@ class Patient extends Person {
 [slide hideTitle]
 # Overriding Derived Methods
 
-Overriding is a mechanism in which we can give custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
+Overriding is a mechanism in which we can give a custom implementation of a given class method down the hierarchy, we can achieve it with the keyword `@Override`.
 
-It's an imporant tool as it is connected to another pillar of the OOP **Polymorphism**.
+It is an important tool as it is connected to another pillar of the OOP **Polymorphism**.
+
+The difference between **Shadowing** and **Overriding** is that when you override you can not change the return type or the parameters.
+
+Other than that, when we have a **variable of a base class type** and we hold a **subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the subclass overriding it**, whereas if you use the **shadowing** it will always call the **base class implementation**.
 
 
 ```java
 public class Person {  
   public void sleep() { 
-	System.out.println("Person sleeping"); } //Here we declare a method.
+  System.out.println("Person sleeping"); } //Here we declare a method.
 }
 ```
 - A method that we want to override should not be set as `final`
@@ -78,7 +85,7 @@ public class Person {
 public class Student extends Person {
   @Override                                   //The Attribute @Override means that this method is being given new/extended implementation.
   public void sleep(){
-	System.out.println("Student sleeping"); }   //Between the brackets we declare the new implementation.
+  System.out.println("Student sleeping"); }   //Between the brackets we declare the new implementation.
 }
 ```
 - Signature and return type **should match**
@@ -105,7 +112,7 @@ public class Dog extends Animal {
 }
 ```
 
-- **Inheriting from a final classes is forbidden**
+- **Inheriting from a final class is forbidden**
 
 ```java
 public final class Animal {
@@ -125,9 +132,11 @@ public class MyMath extends Math { }     // Error…
 
 ## Abstraction
 
-- With inheritance we can provide abstraction to the classes we use
-- We can re-use logic, less code means less bugs
+- With inheritance, we can provide an abstraction to the classes we use
+- We can re-use code, less code means fewer bugs
 - We can achieve **Polymorphism**
+- Inheritance provides a clear model structure, which is easy to understand.
+- With inheritance, if we have a bug in the parent class, we can fix it for all child classes as well.
 
 ```java
 Person person = new Person();
@@ -148,6 +157,8 @@ people.add(student);
 # Extension
 
 - We can extend a class that we can't otherwise change, implementing the custom logic we need
+
+If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can't see the original implementation, we can write more methods or parameters to our custom class, thus expanding the original class's logic.
 
 [image assetsSrc="inheritance-example(14).png" /]
 

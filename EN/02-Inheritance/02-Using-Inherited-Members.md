@@ -1,28 +1,42 @@
 [slide hideTitle]
 # Using Inherited Members
 
-**You can access inherited members.**
+**You can access inherited members**
+
+As we mention we can access the inherited members, we do it as we normally call class members.
+
+Create an object of the derived class and when we call it we can access all **non-private** members derived or declared.
 
 ```java
 class Person { public void sleep() { … } }
-class Student extends Person { … }          //As we extend the class Person, we derive all it's members
+class Student extends Person { … }
 class Employee extends Person { … }
 ```
 ```java
 Student student = new Student();
-student.sleep();                            //Here we can use the derived classes
+student.sleep();
 Employee employee = new Employee();
 employee.sleep();
 ```
+
+We can also hold a reference to an object of the derived class in the base class variable.
+
+```java
+Person student = new Student(); // The baseclass variable holds the object of the subclass type.
+Person employee = new Employee();
+```
+
+What changes here is that we will only have access to the base class members, as we use the `Student` as a `Person`;
+
 [/slide]
 
 [slide hideTitle]
 
 # Reusing Constructors
 
-**Constructors are not inherited.**
+**Constructors are not inherited**
 
-When a **parent class** declares a **constructor** with parameters everybody that inherites from this class **directly** must implement a **constructor** with the same parameters.
+When a **parent class** declares a **constructor** with parameters everybody that inherits from this class must fulfill the **Parent class's** constructor.
 
 Because the base constructor gets called automatically when the derived class is created.
 
@@ -33,7 +47,7 @@ Here is an example of a constructor chaining.
 ```java
 class Person{
     private String name;
-    
+    // If we don't have parameterized constructor in the parent class, we can skip calling it in the subclass.
     public Person(String name){
         this.name = name;
     }
@@ -41,12 +55,12 @@ class Person{
 
 class Student extends Person {
   private School school;
-  public Student(String name, School school) {
+  public Student(String name, School school) {  // If we don't call our SuperClass's constructor a compile-time error will be thrown.
     super(name); //Best practises says that constructor call should be called first
     this.school = school;
   }
 
-//You can also furfill the parent constructor with some default values, just like this.
+//You can also fulfill the parent constructor with some default values, just like this.
   public Student(School school){ 
       String defaultName = "John Doe";
       super(defaultName);
@@ -62,9 +76,11 @@ class Student extends Person {
 
 # Thinking about Inheritance – Extends
 
-What happens with the memory when a class **inherites** another one.
+What happens with the memory when a class **inherits** another one.
 
-As you can see in the image below, when we inherit the memory for the **Parent** is allocated plus the new needed memory for the **SubClass**.
+As you can see in the image below, when we inherit, the memory for the **Parent** is allocated plus the new needed memory for the **Derived class**.
+
+That is because all the members of the **Parent** are declared as well as all the new members from the **Derived class**.
 
 [image assetsSrc="inheritance-example(6).png" /]
 
@@ -80,7 +96,7 @@ class Student extends Person { … }              //Student will get all the fun
 class CollegeStudent extends Student { … }      //CollegeStudent will inherit all the functionallity from Student and from Person.
 ```
 
-That's what transitive relation is, a **SubClass** gets all the functionallity from it's super classes up the hierachy.
+That's what transitive relation is, a **subclass** gets all the functionality from it is superclasses up the hierarchy.
 
 [image assetsSrc="inheritance-example(7).png" /]
 
@@ -89,9 +105,9 @@ That's what transitive relation is, a **SubClass** gets all the functionallity f
 [slide hideTitle]
 # Multiple Inheritance
 
-**In Java multiple inheritance is now allowed**
+**In Java multiple inheritances is now allowed**
 
-Instead if you need one class to be from few families you can implement many **interfaces** on a single class.
+Instead, if you need one class to be from few families you can implement many **interfaces** on a single class.
 
 **Interfaces** will be covered further in our lessons.
 
@@ -102,10 +118,20 @@ Instead if you need one class to be from few families you can implement many **i
 [slide hideTitle]
 # Access to Base Class Members
 
+Sometimes we need to access the base class members.
+
 To access the base class members, use the `super` keyword.
 
+We can also re-use some of the logic, like this.
+
 ```java
-class Person { … }
+class Person {
+    protected String name;
+    
+    public Person(String name){
+        this.name = name;
+    }
+ }
 
 class Employee extends Person { 
   public void fire(String reasons) { 

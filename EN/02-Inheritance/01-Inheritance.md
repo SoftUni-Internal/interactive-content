@@ -5,9 +5,9 @@
 
 - The class **passing its members** to its child class is called **Superclass** (Base Class, Parent class)
 
-- The class **recieving members** from its base class is called **Subclass** (Child class, Derived Class)
+- The class **receiving members** from its base class is called **subclass** (Child class, Derived Class)
 
-The idea behind using **Inheritance** is that you can build classes upon already existing classes.
+The idea behind using **Inheritance** is that you can build classes upon already existing classes, thus reusing code and one of the golden rules in programming is Less code, fewer bugs.
 
 [/slide]
 
@@ -16,9 +16,22 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 # Inheritance Example
 
-When we use inheritance, we can have more than one **SubClass**.
+When we use inheritance, we can have more than one **subclass**.
+
+In this example we create a base class `Person`, this person has properties which every person must have like `String Name` and `String Address`.
+
+When we create another object of type `Employee` our employee also needs to know its **name and address**.
+
+That is why there is **Inheritance**, instead of creating the same properties for our `Employee` we can just `extend` the class `Person` and we will receive and use its properties.
+
+That is why we call it a **derived** class.
+
+But also extend the functionality by adding a `String Company` parameter.
+
+Respectively we do the same for the `Student`, but with its internal logic which it has to add.
 
 [image assetsSrc="inheritance-example(1).png" /]
+
 
 [/slide]
 
@@ -27,7 +40,7 @@ When we use inheritance, we can have more than one **SubClass**.
 
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
 
-A real life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leafes we have it is children and their chidren etc.
+A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leaves, we have it is children and their children, etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
@@ -37,9 +50,9 @@ A real life analog of **class hierarchies** is a  **family tree**, we have one c
 [slide hideTitle]
 # Class Hierarchies – Java Collection
 
-`Object` is a universal superclass that is defined to be root of the entire class hierarchy in Java.
+`Object` is a universal superclass that is defined to be the root of the entire class hierarchy in Java.
 
-This means that every object that we create is implicitly a child of the class `Object` without us specifying it.
+This means that every class that we create is implicitly a child of the class `Object` without us specifying it.
 
 [image assetsSrc="inheritance-example(3).png" /]
 
@@ -48,7 +61,13 @@ This means that every object that we create is implicitly a child of the class `
 [slide hideTitle]
 # Inheritance in Java
 
-We can **Inherite** a given class through the keyword **extends**, placed right after the name of the given subclass, further setting the parent.
+We can **Inherited** a given class through the keyword **extends**, placed right after the name of the given subclass, further setting the parent.
+
+We will know that we have to use **Inheritance** when we need to re-use some logic.
+
+But in Java there is a rule, we can inherit **only one** parent per class.
+
+That is why we say that in Java we have **Single-Inheritence**.
 
 ```java
 class Person { … }
@@ -56,7 +75,9 @@ class Person { … }
 class Student extends Person { … }
 class Employee extends Person { … }
 ```
+
 [image assetsSrc="inheritance-example(4).png" /]
+
 [/slide]
 
 [slide hideTitle]
@@ -64,6 +85,10 @@ class Employee extends Person { … }
 # Derived Class
 
 **Derived class taking all members from it is base class.**
+
+The **Derived** classes can inherit and call all the **non-private** members of the class.
+
+If a unit is declared as private, the memory for it is declared as well when we create the class, but we can not call it through our **Derived** class.
 
 [image assetsSrc="inheritance-example(5).png" /]
 

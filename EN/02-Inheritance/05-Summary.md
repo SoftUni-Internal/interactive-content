@@ -15,7 +15,7 @@ class Employee extends Person { … }
 - **Subclass inherits** members from **Superclass**
 
 ```java
-class Person { … } // BaseClass/ParentClass
+class Person { … } // baseclass/ParentClass
 
 class Student extends Person { … }  //SubClass/Child
 class Employee extends Person { … } //SubClass/Child
