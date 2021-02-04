@@ -174,6 +174,13 @@ function productOfThreeNumbers(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Calculate the sign of the product of 3 numbers:
