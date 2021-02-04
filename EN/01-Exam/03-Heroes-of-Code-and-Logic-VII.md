@@ -1,6 +1,6 @@
-[slide]
-# Problem 3. Heroes of Code and Logic VII
-[code-task title="Problem 3. Heroes of Code and Logic VII" taskId="85860f3a-cef6-45a9-9042-a5a0baeb0b5e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[slide hideTitle]
+# Heroes of Code and Logic VII
+[code-task title="Heroes of Code and Logic VII" taskId="Java-Fund-Part-Two-Exam-Heroes-Of-Code-And-Logic" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
