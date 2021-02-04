@@ -24,6 +24,7 @@ Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 - Dacă filmul ales este `Jumanji` și sunt cumpărate exact 2 bilete, se aplică o reducere de `15%` pe cuplu.
 
 ## Intrare
+
 Primiți 3 lii de pe consolă:
 
 - Linia 1: film - șir: `John Wick`, `Star Wars` sau `Jumanji`
@@ -33,9 +34,12 @@ Primiți 3 lii de pe consolă:
 - Linia 3: număr de bilete  – un număr întreg în intevalul \[1… 30\]
 
 ## Ieșire
-Imprimați o linie pe consolă: `Your bill is {total price}$`
 
- * Prețul ar trebui fomratat la două cifre după punctul zecimal
+Imprimați o linie pe consolă: 
+
+`Your bill is {total price}$`
+
+* Prețul ar trebui fomratat la două cifre după punctul zecimal
 
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

@@ -20,19 +20,27 @@ Veți primi un număr, reprezentând bugetul clientului, numărul total de titlu
 
 ## Intrare
 Primiți de pe consolă:
+
 - Buget: un număr întreg în intervalul \[10.0… 100.0\]
+
 - Numărul de seriale: n – un număr întreg în intervalul \[1… 10\]
 
 Pentru fiecare serial primiți 2 linii
+
 - Numele serialului: un șir
+
 - Prețul serialului: un număr real în intervalul \[1.0… 15.0\]
 
 ## Ieșire
 Imprimați o linie pe consolă:
 
-- Dacă bugetul dvs. este mai mare sau egal cu prețul serialelor:`You bought all the series and have {money left}$ left.`
+- Dacă bugetul dvs. este mai mare sau egal cu prețul serialelor:
 
-- Dacă bugetul dvs. este mai mic decât prețul serialelor: `You need {money needed}$ more to buy the series!`
+`You bought all the series and have {money left}$ left.`
+
+- Dacă bugetul dvs. este mai mic decât prețul serialelor: 
+
+`You need {money needed}$ more to buy the series!`
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 
@@ -64,6 +72,7 @@ Al treilea serial nu are, de asemenea, nicio reducere.
 Prețul serialului este `2.50 + 5 + 2 = 9.50$`. 
 
 Bugetul este mai mare decât prețul serialelor, deci veți putea să le cumpărați.
+
 [/task-description]
 [code-io /]
 [tests]

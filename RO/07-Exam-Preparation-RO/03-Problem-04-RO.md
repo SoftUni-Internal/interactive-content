@@ -22,7 +22,7 @@ Dacă numărul de spectatori care intră, depășește numărul de locuri rămas
 # Intrare
 Citiți de pe consolă:
 
-- Lini 1– capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
+- Lini 1: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
 - Pe fiecare linie următoare, până când comana este  `Movie time!`:
 	- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
@@ -30,17 +30,23 @@ Citiți de pe consolă:
 ## Output
 First, print on of these lines:
 
-- Dacă ați primit comanda `Movie time!`: `There are {seats left} seats left in the cinema.`
+- Dacă ați primit comanda `Movie time!`: 
 
-- În cazul în care nu mai sunt locuri libere în sală: `The cinema is full.`
+`There are {seats left} seats left in the cinema.`
 
-- Pe urmă imprimați: `Cinema income - {income}$`
+- În cazul în care nu mai sunt locuri libere în sală: 
+
+`The cinema is full.`
+
+- Pe urmă imprimați:
+
+ `Cinema income - {income}$`
 
 [code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -62,6 +68,7 @@ Prețul pe care îl vor plăti este `10 * 5 = 50$`.
 După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu `5$` mai puțin. 
 
 Continuăm până ce primim comanda `Movie time!` și apoi imprimăm datele de ieșire corespunzătoare.
+
 [/task-description]
 [code-io /]
 [tests]

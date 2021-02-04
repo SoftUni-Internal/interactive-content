@@ -35,9 +35,11 @@ Primiți mai multe linii de pe consolă, până ce primiți comanda `STOP` sau p
 
 ## Ieșire
 Imprimați pe consolă:
+
 - Dacă ați atins limita de 7 filme, trebuie să imprimați: 
 
 `Title limit has been reached.`
+
 - Imprimați numele celui mai bun fim: 
 
 `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`

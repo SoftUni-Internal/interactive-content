@@ -25,13 +25,13 @@ Ca intrare veți primi 4 linii de pe consolă:
 
 - Numărul episoadelor: un număr întreg în intervalul \[10… 80\]
 
-- Durata unui episod standard fără reclame: dublă în intervalul \ [40.0 ... 65.0 \]
+- Durata unui episod standard fără reclame: dublă în intervalul \[40.0 ... 65.0 \]
 
 ## Ieșire
 
 Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
 
-- `Total time needed to watch the {numele seriei} series is {timp} minutes.`
+`Total time needed to watch the {numele seriei} series is {timp} minutes.`
 
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -51,11 +51,13 @@ function solve(input) {
 **Comments** 
 
 Durata reclamelor din fiecare episod: `20% from 55 = 11.0`
+
 Durata unui episod cu publicitate: `55 + 11 = 66.0`
 
 Timp adăugat pentru episoadele speciale: `3 * 10 = 30`
 
-Timpul total necesar pentru a vedea toate episoadele: `66 * 18 * 3 + 30 = 3594.0`  
+Timpul total necesar pentru a vedea toate episoadele: `66 * 18 * 3 + 30 = 3594.0` 
+
 [/task-description]
 [code-io /]
 [tests]

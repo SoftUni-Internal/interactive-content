@@ -32,6 +32,7 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 - În cazul în care nu este timp suficient: 
 
 `You don't have enough time to watch {name of the series}, you need {time needed} more minutes.`
+
 Round the time up to the nearest whole number.
 
 [code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -59,6 +60,7 @@ Timp rămas: `96 - 12 - 24 = 60`
 In acest caz, timpul care vă rămâne este mai mare sau egal cu durata unui episod.
 
 Asigurați-vă că este imprimat rezultatul corect.
+
 [/task-description]
 [code-io /]
 [tests]
