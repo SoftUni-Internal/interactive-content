@@ -5,11 +5,11 @@
 
 - Derived classes **can access all public** and **protected** members
 - Derived classes can access **default** members **if in same package**
-- **Private** fields can not be accessed from the **subclasses** but they are instantiated as our **Parent** need them for its internal logic
+- **Private** fields can not be accessed from the **Subclasses** but they are instantiated as our **Parent** need them for its internal logic
 
 ```java
 class Person {
-  protected String address;   //Can be accessed from it is subclasses.
+  protected String address;   //Can be accessed from it is Subclasses.
   public void sleep();        //Access from everywhere in the project.
   String name;                //Can be accessed through other methods.
   private String id;          //It can be accessed only from the class delegator itself.
@@ -22,8 +22,8 @@ class Person {
 
 # Shadowing Variables
 
-- Derived classes **can hide/shadow** superclass variables by implementing a unit with the same name by itself
-- When you are using **shadowing** you can rebase an entire method, this means changing its parameters and return type. 
+- Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
+- When you are using **shadowing** you can rebase an entire method, this means changing its parameters and logic inside, but not its return type. 
 
 ```java
 class Person { 
@@ -68,9 +68,9 @@ Overriding is a mechanism in which we can give a custom implementation of a give
 
 It is an important tool as it is connected to another pillar of the OOP **Polymorphism**.
 
-The difference between **Shadowing** and **Overriding** is that when you override you can not change the return type or the parameters.
+The difference between **Shadowing** and **Overriding** is that when you override you can not change the parameters.
 
-Other than that, when we have a **variable of a base class type** and we hold a **subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the subclass overriding it**, whereas if you use the **shadowing** it will always call the **base class implementation**.
+Other than that, when we have a **variable of a base class type** and we hold a **Subclass object** if we have an overridden class member and we call it, it will use **the logic declared by the Subclass overriding it**, whereas if you use the **shadowing** it will always call the **base class implementation**.
 
 
 ```java
@@ -130,8 +130,6 @@ public class MyMath extends Math { }     // Error…
 
 # Inheritance Benefits 
 
-## Abstraction
-
 - With inheritance, we can provide an abstraction to the classes we use
 - We can re-use code, less code means fewer bugs
 - We can achieve **Polymorphism**
@@ -156,9 +154,9 @@ people.add(student);
 
 # Extension
 
-- We can extend a class that we can't otherwise change, implementing the custom logic we need
+- We can extend a class that we can not otherwise change, implementing the custom logic we need
 
-If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can't see the original implementation, we can write more methods or parameters to our custom class, thus expanding the original class's logic.
+If we take notice of the picture, we see an extension of the `Lists<>` logic, when we derive, although we can not see the original implementation, we can write more methods or parameters to our custom class, thus expanding the original class's logic.
 
 [image assetsSrc="inheritance-example(14).png" /]
 

@@ -17,8 +17,8 @@ class Employee extends Person { … }
 ```java
 class Person { … } // baseclass/ParentClass
 
-class Student extends Person { … }  //SubClass/Child
-class Employee extends Person { … } //SubClass/Child
+class Student extends Person { … }  //Subclass/Child
+class Employee extends Person { … } //Subclass/Child
 ```
 
 - Subclass can **override** methods

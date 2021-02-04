@@ -5,7 +5,7 @@
 
 - The class **passing its members** to its child class is called **Superclass** (Base Class, Parent class)
 
-- The class **receiving members** from its base class is called **subclass** (Child class, Derived Class)
+- The class **receiving members** from its base class is called **Subclass** (Child class, Derived Class)
 
 The idea behind using **Inheritance** is that you can build classes upon already existing classes, thus reusing code and one of the golden rules in programming is Less code, fewer bugs.
 
@@ -16,7 +16,7 @@ The idea behind using **Inheritance** is that you can build classes upon already
 
 # Inheritance Example
 
-When we use inheritance, we can have more than one **subclass**.
+When we use inheritance, we can have more than one **Subclass**.
 
 In this example we create a base class `Person`, this person has properties which every person must have like `String Name` and `String Address`.
 
@@ -40,7 +40,7 @@ Respectively we do the same for the `Student`, but with its internal logic which
 
 **Inheritance leads to hierarchies of classes and/or interfaces in an application:**
 
-A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leaves, we have it is children and their children, etc.
+A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the leaves, we have its children and their children, etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
@@ -50,7 +50,7 @@ A real-life analog of **class hierarchies** is a  **family tree**, we have one c
 [slide hideTitle]
 # Class Hierarchies – Java Collection
 
-`Object` is a universal superclass that is defined to be the root of the entire class hierarchy in Java.
+`Object` is a universal **Superclass** that is defined to be the root of the entire class hierarchy in Java.
 
 This means that every class that we create is implicitly a child of the class `Object` without us specifying it.
 
@@ -61,7 +61,7 @@ This means that every class that we create is implicitly a child of the class `O
 [slide hideTitle]
 # Inheritance in Java
 
-We can **Inherited** a given class through the keyword **extends**, placed right after the name of the given subclass, further setting the parent.
+We can **Inherite** a given class through the keyword **extends**, placed right after the name of the given **Subclass**, further setting the parent.
 
 We will know that we have to use **Inheritance** when we need to re-use some logic.
 
@@ -84,7 +84,7 @@ class Employee extends Person { … }
 
 # Derived Class
 
-**Derived class taking all members from it is base class.**
+**Derived class taking all members from its base class**
 
 The **Derived** classes can inherit and call all the **non-private** members of the class.
 

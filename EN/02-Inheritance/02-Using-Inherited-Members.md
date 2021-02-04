@@ -22,7 +22,7 @@ employee.sleep();
 We can also hold a reference to an object of the derived class in the base class variable.
 
 ```java
-Person student = new Student(); // The baseclass variable holds the object of the subclass type.
+Person student = new Student(); // The baseclass variable holds the object of the Subclass type.
 Person employee = new Employee();
 ```
 
@@ -47,7 +47,7 @@ Here is an example of a constructor chaining.
 ```java
 class Person{
     private String name;
-    // If we don't have parameterized constructor in the parent class, we can skip calling it in the subclass.
+    // If we don't have parameterized constructor in the parent class, we can skip calling it in the Subclass.
     public Person(String name){
         this.name = name;
     }
@@ -55,7 +55,7 @@ class Person{
 
 class Student extends Person {
   private School school;
-  public Student(String name, School school) {  // If we don't call our SuperClass's constructor a compile-time error will be thrown.
+  public Student(String name, School school) {  // If we don't call our Superclass's constructor a compile-time error will be thrown.
     super(name); //Best practises says that constructor call should be called first
     this.school = school;
   }
@@ -96,7 +96,7 @@ class Student extends Person { … }              //Student will get all the fun
 class CollegeStudent extends Student { … }      //CollegeStudent will inherit all the functionallity from Student and from Person.
 ```
 
-That's what transitive relation is, a **subclass** gets all the functionality from it is superclasses up the hierarchy.
+That's what transitive relation is, a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
 
 [image assetsSrc="inheritance-example(7).png" /]
 
@@ -122,7 +122,9 @@ Sometimes we need to access the base class members.
 
 To access the base class members, use the `super` keyword.
 
-We can also re-use some of the logic, like this.
+We can also re-use some of the logic.
+
+Example:
 
 ```java
 class Person {
@@ -136,7 +138,7 @@ class Person {
 class Employee extends Person { 
   public void fire(String reasons) { 
     System.out.println(
-        super.name +                        //We use the `super` keyword to access the SuperClass/Inherited class members.
+        super.name +                        //We use the `super` keyword to access the Superclass/Inherited class members.
         " got fired because " + reasons);
   }
 }
@@ -205,7 +207,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestSuperClass \{
+public class TestSuperclass \{
     @Test
     public void testDogParent() \{
         Assert.assertTrue("Class 'Puppy' not found", Classes.allClasses.containsKey("Puppy"));
@@ -290,7 +292,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestSuperClass \{
+public class TestSuperclass \{
     @Test
     public void testDogParent() \{
         Assert.assertTrue("Class 'Puppy' not found", Classes.allClasses.containsKey("Puppy"));
