@@ -367,19 +367,21 @@ yes
 [/test]
 [test]
 [input]
-//Test 9 - toString with more data
+//Test 9 - toString with more data 
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'A', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Jim Jones', 'B', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Jim Jones', 'C', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Max', 'A', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Ann', 'B', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Ann', 'Ba', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Jill', 'C', 'Cat', \['A154B', '2C32B', '12CDB'\]);  
-        clinic.onLeaving('Jim Jones', 'B');
-        expect(clinic.toString()).to.be.eq(\`SoftCare is 60% busy today!
-Total profit: 1500.00\\$
+        clinic.newCustomer('Jim Jones', 'A', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Jim Jones', 'B', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Jim Jones', 'C', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Max', 'A', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Ann', 'B', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Ann', 'Ba', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Jill', 'C', 'Cat', ['A154B', '2C32B', '12CDB']);  
+        clinic.onLeaving('Jim Jones', 'B'); 
+        
+
+        expect(clinic.toString()).to.be.eq(`SoftCare is 60% busy today!
+Total profit: 1500.00$
 Ann with:
 ---B - a cat that needs: A154B, 2C32B, 12CDB
 ---Ba - a cat that needs: A154B, 2C32B, 12CDB
@@ -387,10 +389,10 @@ Jill with:
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Jim Jones with:
 ---A - a cat that needs: A154B, 2C32B, 12CDB
----B - a cat that needs:
+---B - a cat that needs: 
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Max with:
----A - a cat that needs: A154B, 2C32B, 12CDB\`);
+---A - a cat that needs: A154B, 2C32B, 12CDB`);
 [/input]
 [output]
 yes
