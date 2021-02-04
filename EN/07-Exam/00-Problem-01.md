@@ -97,10 +97,7 @@ document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
         \<ul\>\</ul\> 
     \</section\>
     \<script\>document.onload = solve();\</script\>\`;
-
-
 result();
-
 const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children);
         name.value = 'Tom';
@@ -157,8 +154,6 @@ document.body.innerHTML = \`\<h1\>Pet Me!\</h1\>
         \<ul\>\</ul\> 
     \</section\>
     \<script\>document.onload = solve();\</script\>\`;
-
-
 result();
         const form = document.getElementById('container');
         let \[name, age, kind, owner, addBtn\] = Array.from(form.children);
