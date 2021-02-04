@@ -1,6 +1,6 @@
 # Booleans
 
-[slide]
+[slide hideTitle]
 
 # What is a Boolean?
 
@@ -10,11 +10,11 @@
 [/video-vimeo]
 
 
-Boolean values ​​are named after [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician.
+**Boolean** values are named after [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician.
 
-Boolean values ​​represent some **logical value**.
+Boolean values represent some **logical value**.
 
-They can only have two values `​​true` or `false`.
+They can only have two values `true` or `false`.
 
 We can give this value as a **literal** or we can get it from the result of a **given expression**.
 
@@ -23,13 +23,13 @@ let myBool = 10 > 9;
 console.log(myBool);
 ```
 
-Boolean comparisons are most often put in `if` construction, we can also return a Boolean value as a **result from a function.**
+Boolean comparisons are most often put in an `if` construction, but we can also return a Boolean value as a **result from a function.**
 
 **Extremely rarely** do we write `true` or `false` explicitly.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Comparisons and Conditions
 
@@ -51,19 +51,19 @@ Examples of comparison operators:
 | `>=` | greater than or equal to(no type) | `if (6 >= 6)` |
 | `<=` | less than or equal to(no type) | `if(6 <= 6)` |
 
-# Booleans examples:
+## Boolean examples
 
-Everything with a "value" is `true`:
+Everything **with a value** is `true`:
 
 ``` js live
-let number=1;
+let number = 1;
 
 if (number) {
   console.log(number);
 }
 ```
 
-- Everything without a "value" is `false`
+Everything **without a value** is `false`:
 
 ``` js live
 let number;
@@ -77,7 +77,7 @@ if (number) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # True and False
 
 [vimeo-video]
@@ -88,11 +88,11 @@ if (number) {
 
 In addition to `true` and `false`, JavaScript has `truthy` and `falsy` (sometimes written `falsey`). 
 
-These are values ​​that are **not** `true` or `false`, but when we turn them into a Boolean value they give `true` or `false`.
+These are values that are **not** `true` or `false`, but when we turn them into a Boolean value they give `true` or `false`.
 
-In JavaScript is **loosely typed language** and we do not have types of variables. 
+JavaScript is **loosely typed language** and we do not have types of variables. 
 
-This does not prevent an if expression which tries to compare variables that store values with different types. 
+This does not prevent an `if` expression which tries to compare variables that store values with different types. 
 
 In this example: 
 
@@ -100,7 +100,7 @@ In this example:
 console.log(5 == '5');
 ```
 
-we pass values ​​of different types, using the operator `==` or`!=`. 
+we pass values of different types, using the operator `==` or`!=`. 
 
 In this case, the interpreter will make the so-called **implicit casting**. 
 
@@ -108,41 +108,39 @@ This means that the default interpreter will **convert** one value to **another*
 
 By giving a **string** and a **number**, for example, **the number becomes a string** and the interpreter compares the strings.
 
-If we use `===` the interpreter **does not convert the number to a string**, so **the number five is not the same as string five** and this expression returns `false`.
+If we use `===` the interpreter **does not convert the number to a string**, so **the number five is not the same as string five** and this expression returns `false`:
 
 ``` js live
 console.log(5 === '5');
 ```
 
-Regarding `truthy` and `falsy` values, for example in `if` construction we can compare with different types of data.
+When it comes to `truthy` and `falsy` values, for example, we can use them in an `if` construction to compare different types of data:
 
 ``` js live
 if (5 == true) {
   console.log('same');
-}else{
+} else {
   console.log('not');
 }
 
 ```
 
-The result of this expression will be `not`, and this is expected behavior.
-
-The result of this expression:
+The result of this expression will be `not`, and this is expected behavior:
 ``` js live
 if (1 == true) {
   console.log('same');
-}else{
+} else {
   console.log('not');
 }
 ```
 
-Is the `same`, because the interpreter sees them as `1 == true` and turns this  into a **Boolean value.**
+is  `same`, because the interpreter sees them as `1 == true` and turns this into a **Boolean value.**
 
-The values ​​`0` and `1` become the Boolean value `0 false`, `1 true`.
+The values `0` and `1` become the Boolean values `0 false` and `1 true`.
 
-The other numeric values ​​become Boolean values, and they are `false`.
+The other numeric values become Boolean values, and they are `false`.
 
-In javascript we have eight values ​​that are assumed to be `falsy`:
+In JavaScript we have eight values that are assumed to be `falsy`:
 
 | Value | Description | 
 | :---:       |    :----:   |   
@@ -155,7 +153,7 @@ In javascript we have eight values ​​that are assumed to be `falsy`:
 | `undefined` | `undefined` - the primitive value | 
 | `NaN` |  	`NaN` - not a number | 
 
-All other values ​​are `true`, for example an empty array `[]` and an empty object `{}` are true.
+All other values are `true`, for example an empty array `[]` and an empty object `{}` are true.
 
 Nevertheless, in a loop, if a construction always submits the Boolean value, it will never submit anything other than a Boolean value.  
 
@@ -163,7 +161,7 @@ It is always better to be **explicit** so as not to be ambiguous.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Amazing Numbers
 
@@ -172,7 +170,7 @@ It is always better to be **explicit** so as not to be ambiguous.
 [stream language="RO" videoId="489371747/54fbdf1eb2"  /]
 [/video-vimeo]
 
-[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function amazingNumbers(input){
@@ -185,11 +183,11 @@ function amazingNumbers(input){
 
 Write a function which as input will receive a **number.**
  
-Check and print whether it is amazing or not into the following format: 
+Check and print whether it is **amazing** or not into the following format: 
 
 `{number} Amazing? {result}`
 
-An amazing number is one that includes the **digit 9** in the sum of its digits. 
+An **amazing** number is one that includes the **digit 9** in the sum of its digits. 
 
 Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
 
@@ -281,7 +279,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 
 
@@ -296,16 +294,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [code-editor language=javascript]
 ```
 function amazingNumbers(input) {
-  let num = input.toString();
-  let sum = 0;
-  for (let j = 0; j <= num.length - 1; j++) {
-    sum += Number(num[j]);
-  }
-  if (sum.toString().includes('9')) {
-    console.log(`${num} Amazing? True`);
-  } else {
-    console.log(`${num} Amazing? False`);
-  }
+  // Write your code here
 }
 
 ```
@@ -315,11 +304,11 @@ function amazingNumbers(input) {
 
 Write a function which as input will receive a **number.**
  
-Check and print whether it is amazing or not into the following format: 
+Check and print whether it is **amazing** or not into the following format: 
 
 `{number} Amazing? {result}`
 
-An amazing number is one that includes the **digit 9** in the sum of its digits. 
+An **amazing** number is one that includes the **digit 9** in the sum of its digits. 
 
 Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
 
@@ -410,7 +399,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Typeof operator
 
@@ -421,9 +410,9 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 JavaScript itself provides an operator called `typeof` for everything that works in a straightforward way.
 
-`Typeof` **returns a string** of what a values data type is, so for an object `object` is returned and for a string `string`.
+`Typeof` **returns a string** of what a value's data type is, so for an object `object` is returned and for a string - `string`.
 
-However JavaScript data types and the `typeof` operator aren't exactly perfect.
+However JavaScript data types and the `typeof` operator are not exactly perfect.
 
 For example, for arrays and `null`, `object` is returned. For `NaN` and `Infinity` – number.
 
@@ -438,7 +427,7 @@ console.log(typeof true);
 console.log(typeof {Name: "Peter", Age: 3})
 ```
 
-We can use typeof in `if` construction:
+We can use `typeof` in an `if` construction:
 
 ``` js live
 let n = 5;
