@@ -322,14 +322,15 @@ yes
 //Test 7 - onLeaving - clear the procedures  
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'A', 'Cat', \['A154B', '2C32B', '12CDB'\]);
-        clinic.newCustomer('Jim Jones', 'B', 'Cat', \['A154B', '2C32B', '12CDB'\]); 
+        clinic.newCustomer('Jim Jones', 'A', 'Cat', ['A154B', '2C32B', '12CDB']);
+        clinic.newCustomer('Jim Jones', 'B', 'Cat', ['A154B', '2C32B', '12CDB']); 
+
         clinic.onLeaving('Jim Jones', 'A');        
-        expect(clinic.toString()).to.be.eq(\`SoftCare is 10% busy today!
-Total profit: 1500.00\\$
+        expect(clinic.toString()).to.be.eq(`SoftCare is 10% busy today!
+Total profit: 1500.00$
 Jim Jones with:
 ---A - a cat that needs: 
----B - a cat that needs: A154B, 2C32B, 12CDB\`);
+---B - a cat that needs: A154B, 2C32B, 12CDB`);  
 [/input]
 [output]
 yes
