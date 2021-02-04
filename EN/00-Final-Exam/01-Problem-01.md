@@ -13,7 +13,7 @@ Write a program that calculates how much money Annie will have to **save** to pa
 
 - **Markers:** $7.20
 
-- A **liter of detergent**: $1.20 
+- **A liter of detergent**: $1.20 
 
 ## Input
 
