@@ -189,11 +189,7 @@ JanpWhite
 
 ```
 function concatNames(input){
-let firstName = input[0];
-let lastName = input[1];
-let delimiter = input[2];
-
-console.log(`${firstName}${delimiter}${lastName}`);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -391,17 +387,7 @@ Not Matched
 [code-editor language=javascript]
 ```
 function rightPlace(input){
-  let underScopedString = input[0];
-  let char = input[1];
-  let string = input[2];
-  
-  let newString = underScopedString.replace('_', char);
-
-  if (newString === string) {
-    console.log('Matched');
-  } else {
-    console.log('Not Matched');
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
