@@ -895,7 +895,9 @@ function atm(balance, withdraw, limit) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -910,15 +912,12 @@ Write a program to simulate an ATM withdrawal:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|420| The withdraw was successful. |
-|20|  |
-|25|  |
+|420, 20, 25| The withdraw was successful. |
 
   | **Input** | **Output** |
 | --- | --- |
-|10| The daily limit was exceeded. |
-|50| Insufficient availability. |
-|20|  |
+|10, 50, 20| The daily limit was exceeded. |
+|| Insufficient availability. |
 
 [/task-description]
 [code-io /]

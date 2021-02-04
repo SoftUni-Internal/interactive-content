@@ -902,7 +902,9 @@ function atm(balance, withdraw, limit) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -917,15 +919,14 @@ Scrieți un program pentru a simula o retragere de numerar de la bancomat
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|420| The withdraw was successful. |
-|20|  |
-|25|  |
+|420, 20, 25| The withdraw was successful. |
+
 
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|10| The daily limit was exceeded. |
-|50| Insufficient availability. |
-|20|  |
+|10, 50, 20| The daily limit was exceeded. |
+|| Insufficient availability. |
+
 
 [/task-description]
 [code-io /]
