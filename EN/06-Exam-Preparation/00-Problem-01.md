@@ -15,13 +15,13 @@ function solve(){
 [task-description]
 # Description
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/03-JS-Advanced-Exam-Preparation-Resources.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-Exam-Preparation-First-Task-Resources.zip) **for this task.**
 
 Use the `index.html` and `app.js` files to solve this problem.
 
 **Note: You must complete this task without changing anything in the given HTML file (index.html)**.
 
-[image assetsSrc="exam-prep-pic1.png" /]
+[image assetsSrc="exam-prep-pic1-1.png" /]
 
 # Your task
 
