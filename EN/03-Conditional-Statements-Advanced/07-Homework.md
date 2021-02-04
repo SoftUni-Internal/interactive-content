@@ -398,6 +398,13 @@ function vacationExpenses(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (input[0], input[1], Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which calculates vacation expenses:
