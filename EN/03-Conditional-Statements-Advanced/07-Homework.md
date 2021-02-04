@@ -991,9 +991,7 @@ function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]), , Number(input[3]), , Number(input[4]));
-}
+(input, code) => code(...input);
 ```
 [/code-adapter]
 [task-description]
