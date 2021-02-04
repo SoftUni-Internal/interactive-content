@@ -85,7 +85,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [stream language="RO" videoId="489371465/3ddd050862"  /]
 [/video-vimeo]
 
-[code-task title="Concantenate Names" taskId="js-fundamentals-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function concatNames(input){
@@ -286,7 +286,7 @@ JanpWhite
 [stream language="RO" videoId="489371500/1d3c01f1f7"  /]
 [/video-vimeo]
 
-[code-task title="Right Place" taskId="js-fundamentals-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function rightPlace(input){
