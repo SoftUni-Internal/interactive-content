@@ -198,7 +198,7 @@ Additional bonus points, accrued separately from the previous ones:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 20
 [/input]
