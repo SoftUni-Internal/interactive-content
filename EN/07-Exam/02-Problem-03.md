@@ -165,7 +165,7 @@ Jim Jones with:
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 //Zero test 1 - 3 new costomer, get all cats, one leaving
 let VeterinaryClinic = result;
@@ -185,31 +185,28 @@ Jim Jones
 yes
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-//Zero test 2 - same + toString
 let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
-        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']);          
-        clinic.newCustomer('Anna Morgan', 'Max', 'Dog', ['SK456', 'DFG45', 'KS456'])
-        clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', ['A154B'])
+        clinic.newCustomer('Jim Jones', 'Tom', 'Cat', \['A154B', '2C32B', '12CDB'\]);
+        clinic.newCustomer('Anna Morgan', 'Max', 'Dog', \['SK456', 'DFG45', 'KS456'\])
+        clinic.newCustomer('Jim Jones', 'Tiny', 'Cat', \['A154B'\])
         clinic.onLeaving('Jim Jones', 'Tiny');
-        
-   let string = \`SoftCare is 20% busy today!
-Total profit: 500.00$
+        let string = \`SoftCare is 20\% busy today\!
+Total profit: 500.00\\$
 Anna Morgan with:
 ---Max - a dog that needs: SK456, DFG45, KS456
 Jim Jones with:
----Tiny - a cat that needs: 
+---Tiny - a cat that needs:
 ---Tom - a cat that needs: A154B, 2C32B, 12CDB\`;
         expect(clinic.toString()).to.be.equal(string, 'Incorrect output');
-
 [/input]
 [output]
 yes
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 // Test 10 - If pet is registered and with no procedures
 let VeterinaryClinic = result;
@@ -217,7 +214,7 @@ let VeterinaryClinic = result;
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom'); 
 
-   expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(`Welcome Tom!`);
+        expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(`Welcome Tom!`);
 [/input]
 [output]
 yes
@@ -244,7 +241,7 @@ let VeterinaryClinic = result;
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom'); 
 
-  expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(\`Welcome Tom!\`);
+        expect(clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B'])).to.eq(`Welcome Tom!`);
    
     
 [/input]
@@ -321,12 +318,12 @@ yes
         clinic.newCustomer('Jim Jones', 'A', 'Cat', ['A154B', '2C32B', '12CDB']);
         clinic.newCustomer('Jim Jones', 'B', 'Cat', ['A154B', '2C32B', '12CDB']); 
 
-   clinic.onLeaving('Jim Jones', 'A');        
-   expect(clinic.toString()).to.be.eq(\`SoftCare is 10% busy today!
+        clinic.onLeaving('Jim Jones', 'A');        
+        expect(clinic.toString()).to.be.eq(`SoftCare is 10% busy today!
 Total profit: 1500.00$
 Jim Jones with:
 ---A - a cat that needs: 
----B - a cat that needs: A154B, 2C32B, 12CDB\`);  
+---B - a cat that needs: A154B, 2C32B, 12CDB`);  
 [/input]
 [output]
 yes
@@ -377,7 +374,7 @@ yes
         clinic.onLeaving('Jim Jones', 'B'); 
         
 
-   expect(clinic.toString()).to.be.eq(\`SoftCare is 60% busy today!
+        expect(clinic.toString()).to.be.eq(`SoftCare is 60% busy today!
 Total profit: 1500.00$
 Ann with:
 ---B - a cat that needs: A154B, 2C32B, 12CDB
@@ -389,7 +386,7 @@ Jim Jones with:
 ---B - a cat that needs: 
 ---C - a cat that needs: A154B, 2C32B, 12CDB
 Max with:
----A - a cat that needs: A154B, 2C32B, 12CDB\`);
+---A - a cat that needs: A154B, 2C32B, 12CDB`);
 [/input]
 [output]
 yes
