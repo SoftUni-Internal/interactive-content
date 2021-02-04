@@ -326,8 +326,8 @@ yes
         let clinic = new VeterinaryClinic('SoftCare', 10);
         clinic.newCustomer('Jim Jones', 'Tom', 'Cat', ['A154B', '2C32B', '12CDB']); 
         clinic.onLeaving('Jim Jones', 'Tom');
-        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(`Sorry, there are no procedures for TomX!`);
-        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there are no procedures for Tom!`);   
+        expect(function() {clinic.onLeaving('Jim Jones', 'TomX')} ).to.throw(\`Sorry, there are no procedures for TomX!\`);
+        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(\`Sorry, there are no procedures for Tom!\`);   
     
 [/input]
 [output]
