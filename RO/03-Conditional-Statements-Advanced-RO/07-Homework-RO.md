@@ -171,11 +171,18 @@ Consonant
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function productOfThreeNumbers(input) {
+function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Calculați semnul produsului de 3 numere:
@@ -188,11 +195,12 @@ Calculați semnul produsului de 3 numere:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['2', '3', '-1']`| negative |
+|2, 3, -1| negative |
+
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -2
 3
@@ -214,6 +222,46 @@ positive
 [/test]
 [test]
 [input]
+2
+-9
+5
+[/input]
+[output]
+negative
+[/output]
+[/test]
+[test]
+[input]
+4
+0
+-10
+[/input]
+[output]
+zero
+[/output]
+[/test]
+[test]
+[input]
+5
+2
+2
+[/input]
+[output]
+positive
+[/output]
+[/test]
+[test]
+[input]
+-5
+2
+-2
+[/input]
+[output]
+positive
+[/output]
+[/test]
+[test]
+[input]
 1
 2
 0
@@ -227,7 +275,6 @@ zero
 [/code-task]
 
 [/slide]
-
 [slide hideTitle]
 # Problem: Sorted Numbers
 [vimeo-video]

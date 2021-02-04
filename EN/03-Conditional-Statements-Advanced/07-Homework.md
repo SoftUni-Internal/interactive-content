@@ -169,7 +169,7 @@ Consonant
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function productOfThreeNumbers(input) {
+function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
     // Write your code here
 }
 ```
@@ -192,12 +192,12 @@ Try to do this **without multiplying** the 3 numbers
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['2', '3', '-1']`| negative |
+|2, 3, -1| negative |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 -2
 3
@@ -212,6 +212,46 @@ negative
 -3
 -4
 5
+[/input]
+[output]
+positive
+[/output]
+[/test]
+[test]
+[input]
+2
+-9
+5
+[/input]
+[output]
+negative
+[/output]
+[/test]
+[test]
+[input]
+4
+0
+-10
+[/input]
+[output]
+zero
+[/output]
+[/test]
+[test]
+[input]
+5
+2
+2
+[/input]
+[output]
+positive
+[/output]
+[/test]
+[test]
+[input]
+-5
+2
+-2
 [/input]
 [output]
 positive
