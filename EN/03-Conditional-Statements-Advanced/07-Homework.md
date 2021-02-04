@@ -514,7 +514,9 @@ function cinema(typeOfMovie, rows, seatsPerRow) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (input[0], Number(input[1]), Number(input[2]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -533,9 +535,8 @@ Calculate the **price** for all the tickets for a cinema movie:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|Normal| 810.00 |
-|12|  |
-|9|  |
+|'Normal', 12, 9| 810.00 |
+
 
 [/task-description]
 [code-io /]
@@ -786,7 +787,9 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), input[2]);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -794,19 +797,17 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 Write a program to apply an operator for given two numbers:
 
 * Read two integers and a math operator from the console. 
-* The math operator could be: "+", "-", "/", "%" and "*"
+* The math operator could be: `+`, `-`, `/`, `%` și `*`
 * The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|12| 12 + 10 = 22 |
-|10|  |
-|\+|  |
+|12, 10, '\+'| 12 + 10 = 22 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 12
@@ -854,6 +855,26 @@ Write a program to apply an operator for given two numbers:
 [/input]
 [output]
 5 \% 2 = 1
+[/output]
+[/test]
+[test]
+[input]
+2
+2
+\-
+[/input]
+[output]
+2 \- 2 = 0
+[/output]
+[/test]
+[test]
+[input]
+2
+2
+\+
+[/input]
+[output]
+2 \+ 2 = 4
 [/output]
 [/test]
 [/tests]

@@ -518,7 +518,9 @@ function cinema(typeOfMovie, rows, seatsPerRow) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (input[0], Number(input[1]), Number(input[2]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -785,13 +787,15 @@ Discount
 [code-editor language=javascript]
 ```
 function operationswithNumbers(firstNumber, secondNumber, operation) {
-    // Write your code here
+    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), input[2]);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -799,19 +803,18 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 Scrieți un program pentru a aplica un operator pentru două numere date:
 
 * Citiți doi numere întregi și operatorul matematic de pe consolă. 
-* Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
+* Operatorul aritmetic ar putea fi: `+`, `-`, `/`, `%` și `*`
 * IRezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
 
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|12| 12 + 10 = 22 |
-|10|  |
-|\+|  |
+|12, 10, '\+'| 12 + 10 = 22 |
+
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 12
@@ -859,6 +862,26 @@ Scrieți un program pentru a aplica un operator pentru două numere date:
 [/input]
 [output]
 5 \% 2 = 1
+[/output]
+[/test]
+[test]
+[input]
+2
+2
+\-
+[/input]
+[output]
+2 \- 2 = 0
+[/output]
+[/test]
+[test]
+[input]
+2
+2
+\+
+[/input]
+[output]
+2 \+ 2 = 4
 [/output]
 [/test]
 [/tests]
