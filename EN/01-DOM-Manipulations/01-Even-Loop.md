@@ -1,21 +1,22 @@
 # Event Loop
 
 [slide]
-# Don't Make the Thread Wait
+# Reduce a thread's waiting time with callbacks
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/6VAgTbqT#eTEsCGG6h0WErbhKN9PgO0S5NRk2NCSHhk5uoC-O4YU)
 
-The **event loop** is the fundamental of how JavaSvipt function.
+First of all, **JavaScript** is executed mostly **in the browser.**
 
-Mostly JavaScript is **executed in the browser.**
+The **event loop** is a fundamental concept in JavaScript asynchronous programming.
 
-JavaScript is a s**ingle thread language**, it works only on **one thread.**
+**JavaScript** executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. 
 
-Besides that JavaScipt can work on **several tasks** at the same time, using a **callback**.
+JavaScript is an **event-driven** language. 
 
-The callback is **one or more functions that can be invoked in the future**, that way it's possible to execute parallel operations.
+This means that instead of waiting for a response before moving on, **JavaScript** will keep executing while listening for other events, and that is why we need callbacks.
 
-The way JavaScript allows us to start an operation, then to **start another operation**, and in some time into the future to go back and collect the information from the first operation.
+A **callback** function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
 
 [/slide]
 
@@ -23,27 +24,28 @@ The way JavaScript allows us to start an operation, then to **start another oper
 
 # Stack Execution
 
-In this example, we see the two types of memories that we have: The **stack** and The **heap.**
+In this example, we can see the two types of memories: the **Stack** and the **Heap**.
 
-In the stack, everything is **organized in scopes.**
+**The Heap** is the place where objects are stored when we define variables.
 
-Each function in the stack **has its own scope.**
+**The Stacks** holds our function calls. 
 
-The function in the stack **can invoke another function.**
+On each new function call, it is pushed on top of the stack.
 
-The second function **goes into the stack** as well with its own function scope.
+In the **Stack**, everything is **organized in scopes**, so that each function in the stack **has its own scope.**
 
-That way each function with its **scope goes into the stack.** 
+**The Call stack** is a mechanism "JavaScript" uses to keep track of functions.
 
-And yet we can invoke another function.
+When we call a function, "JavaScript" will **add** that function to the **call stack**. 
+ 
+If this function calls another function, "JavaScript" will add that function to the **call stack** as well, above the first function.
 
-When we hit the `return` statement, we go back to the previous function.
+This process will repeat with any other function that will be called by the previous function. 
 
-When the function scope finishes its execution then t**here is no more reference.**
+When one function is finished, "JavaScript" will **remove** that function from the **call stack**.
 
-The function disappears and the program **goes back to the next function in the stack** and so on until there are no more functions in the stack.
+There is an example:
 
-This is the **synchronous function execution**, this is how we've been executing our programs so far.
 
 [image assetsSrc="DOM-Manipulation.gif" /]
 
@@ -52,16 +54,15 @@ This is the **synchronous function execution**, this is how we've been executing
 [slide]
 # The Event Loop
 
-In this example, **we have again a function**, which invokes another function.
+In this example, **we have a function**, which invokes another function, but this time the function creates an **event into the event queue**.
 
-But this time the function creates an **event into the event queue.**
+We continue with the standard **synchronous operations** until the Stack goes empty.
 
-We continue with the s**tandard synchronous operations** until the stack goes empty.
+At some point, **the event creates a new function** that is a **callback function**, which goes into the Stack, where it is executed.
 
-At some point, **the event creates a new function**, which is a **callback function**, which goes into the stack, and this function is executed.
+This is a **brief overview** of the asynchronous code execution.
 
-This is a very **brief overview** of the asynchronous code execution.
 
-[image assetsSrc="DOM-Manipulation(1).gif" /]
+[image assetsSrc="Dom-Manipulation(1).gif" /]
 
 [/slide]
