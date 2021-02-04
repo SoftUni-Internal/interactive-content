@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Activation Keys
-[code-task title="Activation Keys" taskId="Java-Fundamentals-Part-Two-Activations-Keys" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Activation Keys" taskId="Java-Fundamentals-Part-Two-Exam-Activations-Keys" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
