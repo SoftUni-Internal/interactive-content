@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Problem 5: TV Series Budget
 
@@ -8,22 +8,26 @@
 [/video-vimeo]
 
 ## Description
-You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
+You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. 
+
+You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
+
 Some of the series have a discount:
-- Thrones – 50\%
-- Lucifer – 40\%	
-- Protector – 30\%
-- TotalDrama – 20\%
-- Area – 10\%
+
+- **Thrones**: 50\%
+- **Lucifer**: 40\%	
+- **Protector**: 30\%
+- **TotalDrama**: 20\%
+- **Area**:10\%
 
 ## Input
 You receive from the console:
-- Budget - real number in the range \[10.0… 100.0\]
-- Count series - n – whole number in the range \[1… 10\]
+- Budget: real number in the range \[10.0… 100.0\]
+- Count series: `n` – whole number in the range \[1… 10\]
 
 For each series you receive two lines:
-- Name of the series - string
-- Price for a series - real number in the range \[1.0… 15.0\]
+- Name of the series: string
+- Price for a series: real number in the range \[1.0… 15.0\]
 
 ## Output
 Print one line on the console:
@@ -33,7 +37,8 @@ Print one line on the console:
 - If your budget is less than the price of the series: `You need {money needed}$ more to buy the series!`
 
 The result must be formatted to two digits after the decimal point.
-[code-task title="TV Series Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -42,28 +47,15 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Input
-Budget - 10
 
-Total number of TV series - 3
+# Example
+| **Input** | **Output** |
+| --- | --- |
+|`['3', 'Thrones', '5', 'Riverdale', '5', 'Gotham', '2']`| You bought all the series and have 0.50$ left.|
 
-First title - Thrones
+**Comments**
 
-Price for the first one - 5
-
-Second title - Riverdale
-
-Price for the second one - 5
-
-Third title - Gotham
-
-Price for the third one - 2
-
-## Output
-You bought all the series and have 0.50$ left.
-
-## Comments
-You receive budget – 10$ and count of series - 3.
+You receive budget: 10$ and count of series - 3.
 
 The first series is Thrones with price 5$, which has 50\% discount from the price `5 - 50% = 2.50$`. 
 
@@ -74,10 +66,11 @@ The third series also does not have a discount.
 Price of series is `2.50 + 5 + 2 = 9.50$`. 
 
 Your budget is bigger than the price of series, so you can buy them.
+
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 25
 2

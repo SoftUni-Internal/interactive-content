@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Problem 5: TV Series Budget
 
@@ -8,22 +8,24 @@
 [/video-vimeo]
 
 ## Descriere
-Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. Veți primi un număr, reprezentând bugetul clientului, numărul total de titluri de seriale pe care clientul ar vrea să le cumpere și, după aceea, prețul fiecăruia dintre seriale.Unele seriale au aplicate reduceri:
+Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. 
 
-- Game of Thrones – 50\%
-- Lucifer – 40\%	
-- Protector – 30\%
-- TotalDrama – 20\%
-- Area – 10\%
+Veți primi un număr, reprezentând bugetul clientului, numărul total de titluri de seriale pe care clientul ar vrea să le cumpere și, după aceea, prețul fiecăruia dintre seriale.Unele seriale au aplicate reduceri:
+
+- **Thrones**: 50\%
+- **Lucifer**: 40\%	
+- **Protector**: 30\%
+- **TotalDrama**: 20\%
+- **Area**: 10\%
 
 ## Intrare
 Primiți de pe consolă:
-- Buget- un număr întreg în intervalul \[10.0… 100.0\]
-- Numărul de seriale - n – un număr întreg în intervalul \[1… 10\]
+- Buget: un număr întreg în intervalul \[10.0… 100.0\]
+- Numărul de seriale: n – un număr întreg în intervalul \[1… 10\]
 
 Pentru fiecare serial primiți 2 linii
-- Numele serialului - un șir
-- Prețul serialului - un număr real în intervalul \[1.0… 15.0\]
+- Numele serialului: un șir
+- Prețul serialului: un număr real în intervalul \[1.0… 15.0\]
 
 ## Ieșire
 Imprimați o linie pe consolă:
@@ -33,37 +35,25 @@ Imprimați o linie pe consolă:
 - Dacă bugetul dvs. este mai mic decât prețul serialelor: `You need {money needed}$ more to buy the series!`
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
-[code-task title="TV Series Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
-## Input
-Budget - 10
 
-Total number of TV series - 3
+# Example
 
-First title - Thrones
-
-Price for the first one - 5
-
-Second title - Riverdale
-
-Price for the second one - 5
-
-Third title - Gotham
-
-Price for the third one - 2
-
-## Output
-You bought all the series and have 0.50$ left.
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|`['3', 'Thrones', '5', 'Riverdale', '5', 'Gotham', '2']`| You bought all the series and have 0.50$ left.|
 
 ## Comments
-Primiți bugetul– 10$ și numărul de seriale - 3.
+Primiți bugetul: 10$ și numărul de seriale - 3.
 
 Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% din preț `5 - 50% = 2.50$`. 
 
@@ -77,7 +67,7 @@ Bugetul este mai mare decât prețul serialelor, deci veți putea să le cumpăr
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 25
 2
