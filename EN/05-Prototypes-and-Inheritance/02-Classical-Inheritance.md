@@ -6,13 +6,22 @@
 
 Classes are **blueprints** for creating objects.
 
-That means after they are **instantiated**, a **copy** of the class is created and this becomes a new object **instance**. 
+When they are **instantiated**, a **copy** of the class is created and becomes the current instance. 
 
-When a class **inherits** from another class, the properties and methods of the parent class are inherited.
+Classes can **inherit** each other the parent class is **copied** to the child one.
+
+They have properties and methods that can be **public**, **private**, or **protected**.
+
+When the properties are **public** they are visible from everywhere in the code.
+
+If they are **private** they are visible only in the class scope.
+
+We can use **protected** properties in the class scope and its children.
 
 [/slide]
 
 [slide hideTitle]
+
 # Class Inheritance
 
 The **extends** keyword is used to create a child class from the parent class.
@@ -21,41 +30,49 @@ When a class **extends** a parent, they **inherit** its data and methods.
 
 Child classes can:
 
--  Add **properties**, also called **data**.
+-  Add **properties**.
 -  Add or replace **methods**.
 -  Add or replace **accessor** properties.
 
 Here is an example:
 
 ```js live
-class Person {
-   constructor(name, email) {
-      this.name = name;
-      this.email = email;
+   class Person {
+      constructor(name, email) {
+         this.name = name;
+         this.email = email;
+     }
    }
-}
 
-class Teacher extends Person {
-   constructor(name, email, subject) {
-      super(name, email);
-      this.subject = subject;
+   class Teacher extends Person {
+      constructor(name, email, subject) {
+         super(name, email);
+         this.subject = subject;
+      }
    }
-}
 
-let p = new Person('John', 'john@gmail.com');
-console.log(`Person: ${p.name} (${p.email})`);
+   let person = new Person('John', 'john@gmail.com');
+   console.log(`Person: ${person.name} (${person.email})`);
 
-let t = new Teacher('Joe', 'joe@yahoo.com', 'JavaScript');
-console.log(`Teacher: ${t.name} (${t.email}), teaches ${t.subject}`);
+   let teacher = new Teacher('Joe', 'joe@yahoo.com', 'JavaScript');
+   console.log(`Teacher: ${teacher.name} (${teacher.email}), teaches ${teacher.subject}`);
 ```
 
-In this example, we create two classes. The **Person** class is the **parent** one, and the Teacher is the **child** class. 
+In this example, we create two classes. 
 
-In the first `console.log`, we output the **person** with its parameters which are, **name** and **email**.
+The **Person** class is the **parent** one, and the **Teacher** class is the **child**. 
 
-In the second class, we inherit the parent's class parameters and add a third one, which is **subject**.
+The **Person** class has a **name** and **email** parameters.
 
-   [/slide]
+In the **Teacher** class, we inherit the parameters from the **Person** class. 
+
+Also, add another parameter to the **Teacher** class, called **subject**. 
+
+In the first `console.log`, we output the **Person** with its parameters, **name** and **email**.
+
+In the second, we printed in the console the **Teacher** object with its parameters.
+
+[/slide]
 
 [slide hideTitle]
 
@@ -63,39 +80,49 @@ In the second class, we inherit the parent's class parameters and add a third on
 
 Classes in JavaScript are **based** on **prototype** **inheritance**.
 
-They **do** **not** introduce a new inheritance model to JavaScript. Classes in JavaScript **delegate** rather than create **blueprints**. When inheriting not all methods are copied. 
+They **do** **not** introduce a new inheritance model to JavaScript. 
 
-Parent classes **delegate** the methods to their children, and if a method is not **declared** in the child instance, it is called from the **parent** instance. 
+Classes in JavaScript **delegate** rather than create **blueprints**.
 
-**Keys** and **values** are shared by **reference**.
+Not all methods will be copied when a class is inherited.  
+
+Parent classes **delegate** the methods to their children, and the **keys** and their **values** are shared by **reference**.
+
+If a method is not **declared** in the child instance, we will call it from the **parent** instance. 
 
 Here is an example of using classes:
 
+
 ```js live
-class Foo {
-   constructor(who) {
-      this.me = who;
+   class Person {
+      constructor(who) {
+         this.me = who;
+      }
+      identify() {
+         return 'I am ' + this.me;
+      }
    }
-   identify() {
-      return 'I am ' + this.me;
-   }
-}
 
-class Bar extends Foo {
-   constructor(who) {
-      super(who);
+   class Man extends Person {
+      constructor(who) {
+         super(who);
+      }
+      speak() {
+         console.log('Hello, ' + this.identify() + '.');
+      }
    }
-   speak() {
-      console.log('Hello, ' + this.identify() + '.');
-   }
-}
 
-let b1 = new Bar('b1');
-let b2 = new Bar('b2');
-b1.speak();
-b2.speak();
+   let John = new Man('John');
+   let Joe = new Man('Joe');
+   John.speak();
+   Joe.speak();
 ```
 
+In this example, the **Man** class inherited the properties and the methods that the **Person** has.
+
+From `Man`, we can access the parameters and methods of **Person**. 
+
+In the `speak()` method, we use the **identify** method inherited from the **Person** class.
 
 [/slide]
 
@@ -104,48 +131,40 @@ b2.speak();
 
 # Prototype Inheritance
 
-In this example, we have two classes: `Foo` and `Bar`. 
-
-`Bar` inherits from `Foo`. 
-
-We can access `Foo's` parameters and methods from `Bar`. 
-
-As you can see, we use the `identify()` method from `Foo`.
-
-Now let us see how it works when it comes to functions:
+Let us see how it will look with functions:
 
 ```js live
-function Foo(who) {
-   this.me = who;
-}
-Foo.prototype.identify = function () {
-   return 'I am ' + this.me;
-};
+   function Person(who) {
+      this.me = who;
+   }
+   Person.prototype.identify = function () {
+      return 'I am ' + this.me;
+   };
 
-function Bar(who) {
-   Foo.call(this, who);
-}
+   function Man(who) {
+      Person.call(this, who);
+   }
 
-Bar.prototype = Object.create(Foo.prototype);
+   Man.prototype = Object.create(Person.prototype);
 
-Bar.prototype.speak = function () {
-   console.log('Hello, ' + this.identify() + '.');
-};
+   Man.prototype.speak = function () {
+      console.log('Hello, ' + this.identify() + '.');
+   };
 
-let b1 = new Bar('b1');
-let b2 = new Bar('b2');
-b1.speak();
-b2.speak();
+   let john = new Man('John');
+   let joe = new Man('Joe');
+   john.speak();
+   joe.speak();
 ```
 
-In this example, we create the function **foo** with a parameter **who**. 
+In this example, we create a **Person** with a parameter **who**. 
 
-We attach another function called **identify** to its prototype. 
+We attach another function called **identify** to the **Person** prototype. 
 
-After that, we create the **Bar** function. 
+After that, we create the **Man** function, and **inherited** the **Person** prototype from the `Man` function. 
 
-We continue with **inheriting** `Foo's` prototype from `Bar` and attaching a function to the `Bar` prototype, called **speak**.
+We attach a function called **speak** to the prototype of `Man`.
 
-The result is identical to the classes and inheritance example we saw before.
+In the end, the result is identical to the classes and inheritance example we saw before.
 
 [/slide]

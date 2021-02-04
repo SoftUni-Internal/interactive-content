@@ -1,41 +1,47 @@
 # Summary
+
 [slide hideTitle]
+
 # Summary
 
-# In this lesson you learnt:
+## In this lesson you learned:
 
--  **Inheritance** makes it possible to create a new class that **extends** some or all of the functionality of a class by inheriting from it. Child classes inherit **data** and **methods** from their parent
+- What is Inheritance:
 
--  Objects in JavaScript have **prototypes**
+    - **Inheritance** is the ability of a class to copy the functions of another class
 
--  They have **properties** in their prototype chain
+    - The class that inherits is called **Child** and the inherited one is called **Parent**
+
+- Objects have an **internal property** used for implementing **prototype-based inheritance**
+
+    - **Methods** and **properties** are inherited by reference
+
+- The **properties** in the **prototype chain** form a **hierarchical chain**
 
 - There are two ways to create an object:
 
-**Literal creation**
+  - **Literal creation**
 
-```js
-let Foo = {
-  me: 'Hi!',
-  print: function () {
-    console.log(this.me);
-  },
-};
-```
+  ```js
+    let Greet = {
+      greet: 'Hi!',
+      print: function () {
+        console.log(this.greet);
+      },
+    };
+  ```
 
-**Constructor creation**
+  - **Constructor creation**
 
-```js 
-function Foo() {
-  this.me = 'Hi!';
-  this.print = function () {
-    return `${this.me}`;
-  };
-}
+  ```js 
+    function Greet() {
+      this.greet = 'Hi!';
+      this.print = function () {
+        return `${this.greet}`;
+      };
+    }
 
-let test = new Foo();
-```
-
--  Prototypes are objects that form **hierarchical chain**
+    let greet = new Greet();
+  ```
 
 [/slide]

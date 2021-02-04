@@ -4,9 +4,13 @@
 
 # What is Inheritance
 
-**Inheritance** in JavaScript is the ability of an object to **delegate** some or all of its functionality to another. 
+Inheritance is the ability of a class to copy the functions of a parent class.
 
-It is a type of **dependence**.
+In JavaScript, **inheritance** can also be called **Delegation Behavior**.
+
+Because the functionality from one object is delegated to another one, 
+
+The inheritance in JavaScript is a type of **dependence**.
 
 ## Types of Inheritance
 
@@ -23,21 +27,32 @@ It is a type of **dependence**.
 
 # Simple Inheritance
 
-**Simple inheritance** is when a **child** class **inherits** the features of the **parent** class. This type of inheritance is when you are only **extending** the parent class.
+A **child** class **inherits** the features of the **parent** class, it is called **Simple inheritance**. 
+
+This type of inheritance is only for **extending** the parent class.
 
 [image assetsSrc="JS-Advanced-Prototypes-and-Inheritance.png" /]
 
 Here is a basic example:
 
 ```js
-class Pet {}
+    class Pet {
+        constructor(name) {
+            this.name = name;
+        }
+    }
 
-class Dog extends Pet {}
+    class Dog extends Pet {
+         constructor(name, breed) {
+             super(color);
+             this.breed = breed;
+          }
+    }
 ```
 
 In this example, we **extended** the **class Pet** with a **class Dog**. 
 
-The **Dog class** will **inherit** all of the features that the **class Pet** has.
+The **Dog** class will **inherit** all features of the **Pet** class.
 
 [/slide]
 
@@ -45,62 +60,95 @@ The **Dog class** will **inherit** all of the features that the **class Pet** ha
 
 # Multilevel Inheritance
 
-In **Multilevel inheritance**, we inherit the **main** class through another class in the **middle**, and we also obtain its features. 
+In **Multilevel inheritance**, the **parent** class is inherited from the **grandchild** one through a **child** class.
 
-So we will extend the **parent** and the **grandparent** classes.
+The **grandchild** class will obtain the features of the **parent** and the **child** one.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(2).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-1.png" /]
 
 Here is an example:
 
 ```js
-class Pet {}
+    class Pet {
+        constructor(name) {
+             this.name = name;
+          }
+    }
 
-class Dog extends Pet {}
+    class Dog extends Pet {
+         constructor(name, age) {
+             super(name);
+             this.age = age;
+          }
+    }
 
-class Breed extends Dog {}
+    class Breed extends Dog {
+        constructor(name, age, breed) {
+             super(name, age);
+             this.breed = breed;
+          }
+    }
 ```
 
-In this example, we extended the **pet class** with a **class dog**, and after that, we inherited the **breed class** from the **dog** one. 
+In this example, we extended the **Pet** class with a class **Dog**. 
 
-The breed class will **obtain** all of the methods that dog and pet classes have.
+After that, we inherited the **Dog** class with the **Breed** one. 
+
+The **Breed** class will **obtain** all of the methods that **Dog** and **Pet** classes have.
 
 [/slide]
 
 [slide hideTitle]
+
 # Hierarchical Inheritance
 
-In **Hierarchical inheritance**, we have **classes** that are extended **multiple** times. 
+In **Hierarchical inheritance**, the **classes** are inherited **multiple** times. 
 
 The downside is that if we change something in the **parent** class, we need to change it in all of its **children**.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(3).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-2.png" /]
 
 Here is an example:
 
 ```js
-class Pet {}
+    class Pet {
+        constructor(name) {
+            this.name = name;
+         }
+    }
 
-class Breed1 extends Pet {}
+    class Dog extends Pet {
+         constructor(name, age) {
+             super(name);
+             this.age = age;
+          }
+    }
 
-class Breed2 extends Pet {}
-
-class Breed3 extends Pet {}
+    class Cat extends Pet {
+        constructor(name, age) {
+            super(name);
+            this.age = age;
+          }
+    }
 ```
 
-In this example, we extended the **Pet class** with **Breed1**, **Breed2** and **Breed3**. 
+In this example, the **Dog**and the **Cat**classes extend the **Pet**class.
 
-All of them will have the properties and methods of **Pet**.
+All of them will have the properties and methods that the **Pet** class has.
 
 [/slide]
 
 [slide hideTitle]
 # Multiple Inheritance
 
-We have **Multiple Inheritance** when we are directly inheriting from more than one parent class.
+**Multiple Inheritance** is a directly inheriting feature from more than one parent class.
 
-This is not supported in JavaScript.
+The problem with this type of inheritance comes when there are methods with the same names in both parent classes. 
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(4).png" /]
+The compiler will not know which one to prioritize, and the application will fail.
+
+**Multiple Inheritance is not supported in JavaScript.**
+
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-3.png" /]
 
 [/slide]

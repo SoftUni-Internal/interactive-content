@@ -8,14 +8,14 @@
 [code-editor language=javascript]
 
 ```
-function personAndTeacher() {
-    // TODO:
+   function personAndTeacher() {
+      // TODO:
 
-    return {
-        Person,
-        Teacher
-    }
-}
+      return {
+         Person,
+         Teacher
+      }
+   }
 ```
 
 [/code-editor]
@@ -30,7 +30,7 @@ Write a class **Person** and a class **Teacher** which extends **Person**.
 
 ## Input and Output
 
-There will be **NO** input. Your function should return an object containing the classes **Person**, and **Teacher**.
+There will be **NO** input. Your function should return an object containing the classes **Person** and **Teacher**.
 
 [/task-description]
 [code-io /]
@@ -92,15 +92,15 @@ yes
 [code-editor language=javascript]
 
 ```
-function personAndTeacher() {
-    // TODO:
+   function toStringExtension() {
+      // TODO:
 
-    return {
-        Person,
-        Teacher
-    }
-}
-
+      return {
+         Person,
+         Teacher,
+         Student
+       }
+   }
 ```
 
 [/code-editor]
@@ -120,7 +120,7 @@ Try to reuse code by using the `toString()` function of the base class.
 
 ## Input and Output
 
-There will be **NO** input. Your function should return an object containing the classes **Person**, **Teacher** and **Student**.
+There will be **NO** input. Your function should return an object containing the classes **Person**, **Teacher**, and **Student**.
 
 [/task-description]
 [code-io /]
@@ -182,9 +182,9 @@ yes
 [code-editor language=javascript]
 
 ```
-function аrrayExtension() {
-    // TODO:
-}
+   function аrrayExtension() {
+      // TODO:
+   }
 ```
 
 [/code-editor]
@@ -204,9 +204,9 @@ Implement the following functionality:
 
 ## Input and Output
 
-The input for functions that expect it will be passed as valid parameters. The output from functions should be their **return** value.
+The input for functions that expect it will be passed as valid parameters. The output should be their **return** value.
 
-## Constrains
+## Constraints
 
 Structure your code as an **IIFE**.
 
@@ -214,33 +214,93 @@ Structure your code as an **IIFE**.
 
 If we have an **instance** of an array, since we know it is an object, adding new properties to it is pretty straightforward:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(6).png" /]
+```js
+let myArr = [1, 2, 3]
+
+myArr.last = function () {
+   //TODO
+};
+```
 
 However, this only adds our new function to this instance. 
 
-To add all functions just one time and have them work on **all arrays**, we just have to attach them to Array's **prototype** instead:
+To add all functions just one time and have them work on **all arrays**, we have to attach them to array's **prototype** instead:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(7).png" /]
+```js
+   Array.prototype.last = function () {
+      //TODO
+   };
+```
 
 With such a declaration, we gain access to the context of the calling instance via the `this` keyword. 
 
 We can then easily access indexes and other existing properties. 
 
-Do not forget we do not want to modify the exiting array, but to create a new one:
+Do not forget we do not want to modify the exiting array but to create a new one:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(8).png" /]
+```js
+   Array.prototype.last = () => {
+    return this[this.length - 1];
+   };
 
-Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your own validation. 
+   Array.prototype.skip = (n) => {
+      let result = [];
+
+      for (let i = n; i < this.length; i++){
+         result.push(this[i]);
+      }
+
+      return result;
+   };
+
+   Array.prototype.take = (n) => {
+    let result = [];
+
+      for (let i = n; i < n; i++){
+       result.push(this[i]);
+      }
+
+    return result;
+   };
+```
+
+Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your validation. 
 
 The last two functions require a little bit of arithmetic to be performed:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(9).png" /]
+```js
+   Array.prototype.sum = () => {
+      let sum = 0;
+
+      for (let i = 0; i < this.length; i++){
+         sum += this[i]
+      }
+
+      return sum;
+   };
+
+   Array.prototype.average = () => {
+      return this. sum() / this.length;
+   };
+```
 
 To be able to submit the solution, we need to wrap our program in an `IIFE`. 
 
-There is **no return value** since the code execution results in functionality being added to and existing object. We are ready to submit our solution.
+There is **no return value** since the code execution results in functionality being added to an existing object. We are ready to submit our solution.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(10).png" /]
+```js
+   (function solve() {
+      Array.prototype.last = () => {};
+
+      Array.prototype.skip = () => {};
+
+      Array.prototype.take = () => {};
+
+      Array.prototype.sum = () => {};
+
+      Array.prototype.average = () => {};
+   }, ());
+```
 
 [/task-description]
 [code-io /]
@@ -340,9 +400,9 @@ yes
 [code-editor language=javascript]
 
 ```
-function balloons() {
-    // TODO:
-}
+   function balloons() {
+      // TODO:
+   }
 ```
 
 [/code-editor]
@@ -358,7 +418,7 @@ These two arguments should be **public members**.
 
 Implement another class **PartyBalloon**, which inherits the **Balloon** class and is initialized with **2 additional parameters** - **ribbonColor** (String) and **ribbonLength** (Number).
 
-The **PartyBalloon** class should have a **property ribbon**, which is an object with **color** and **length** - the ones given upon initialization. The ribbon property should have a **getter**.
+The **PartyBalloon** class should have a **property ribbon** which is an object with **color** and **length** - the ones given upon initialization. The ribbon property should have a **getter**.
 
 Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). The **text** should be a property and should have a **getter**
 
@@ -366,29 +426,78 @@ Implement another class **BirthdayBalloon**, which inherits the **PartyBalloon**
 
 First, we need to create a function, which will hold our classes. 
 
-We create a simple function and we add the first class, the base class for all Balloons to it.
+We create a simple function and, we add the first class, the base class for all Balloons to it.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(11).png" /]
+```js
+   function solve() {
+      class Ballon {
+         constructor (color, gasWeight) {
+            this.color = color;
+            this. gasWeight = gasWeight;
+         }
+      }
+   }
+```
 
 Now that we have our base class, we can create the first child class - the **PartyBalloon**, which extends the base **Balloon** class.
 
-Upon inheriting the **Balloon** class, the constructor of the **PartyBalloon** class will require the use of the `super()` method, to initialize the **Balloon** base constructor.
+Upon inheriting the **Balloon** class, the constructor of the **PartyBalloon** class will require the use of the `super()` method to initialize the **Balloon** base constructor.
 
 We also need to add the **ribbon** object property in the constructor of the **PartyBalloon** class. 
 
 This one is for you to do.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(12).png" /]
+```js
+   function solve() {
+      class Ballon {
+         constructor (color, gasWeight) {
+            this.color = color;
+            this. gasWeight = gasWeight;
+         }
+      }
+
+      class PartyBallon extends Ballon { 
+         constructor (color, gasWeight, ribbonColor, ribbonLength) {
+            super(color, gasWeight);
+            //TODO: Initialize ribbon object
+         }
+
+         get ribbon() {
+            return this._ribbon;
+         }
+      }
+
+      return {
+         Ballon: Ballon,
+         PartyBallon: PartyBallon, 
+         BirthdayBallon: BirthdayBallon
+      }
+   }
+```
 
 Now that we know how to inherit classes, create the **BirthdayBalloon** class on your own.
 
-The **BirthdayBalloon** class should extend the **PartyBalloon** class and should add an **extra property**.
+The **BirthdayBalloon** class should extend the **PartyBalloon** class and add an **extra property**.
 
 It is the same as the previous class.
 
-Lastly, we need to return an object containing all of our classes so we can submit the solution.
+Lastly, we need to return an object containing all of our classes, so we can submit the solution.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(13).png" /]
+```js
+   function solve() {
+      class Ballon {}
+
+      class PartyBallon extends Ballon {}
+
+      class BirthdayBallon extends PartyBallon {}
+
+      return {
+         Ballon: Ballon,
+         PartyBallon: PartyBallon, 
+         BirthdayBallon: BirthdayBallon
+      }
+   }
+```
 
 Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
 
@@ -572,9 +681,9 @@ yes
 [code-editor language=javascript]
 
 ```
-function people() {
-    // TODO:
-}
+   function people() {
+      // TODO:
+   }
 ```
 
 [/code-editor]
@@ -590,15 +699,15 @@ Place all common functionality in an **abstract parent** class.
 
 Follow the diagram below:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(14).png" /]
+[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-4.png" /]
 
 Every position has different tasks. In addition to all common properties, the manager position has a **dividend** he can collect along with his salary.
 
-All employees have a `work()` function that when called cycles through the list of responsibilities for that position and prints the current one. 
+All employees have a `work()` function when called cycles through the list of responsibilities for that position and prints the current one. 
 
 When all tasks have been printed, the list starts over from the beginning. Employees can also collect **salary**, which outputs the amount plus any **bonuses**.
 
-Your program needs to expose a module, containing the three classes **Junior**, **Senior**, and **Manager**. 
+Your program needs to expose a module containing the three classes **Junior**, **Senior**, and **Manager**. 
 
 The properties **name** and **age** are set through the constructor, while the **salary** and a manager's **dividend** are initially set to zero and can be changed later.
 
@@ -625,7 +734,7 @@ Print any output that is required to the console as a **string**.
 
 Submit your code as a revealing module, containing the **three classes**. 
 
-All definitions need to be named exactly as described above.
+All definitions need to be named as described above.
 
 ## Hints
 
@@ -633,7 +742,16 @@ We should begin by creating a parent class that will hold all properties shared 
 
 Looking at the problem description, we see the following structure for our parent object:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(15).png" /]
+```js
+   {
+      age: Number,
+      name: String,
+      salary: Number,
+      tasks: [],
+      work: Function,
+      collectSalary: Function
+   }
+```
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**. 
 
@@ -641,49 +759,136 @@ Any properties that need to be initialized at instantiation time are defined as 
 
 Functions are defined inside the class body.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(16).png" /]
+```js
+   class Employee {
+      constructor(name, age) {
+         this.name = name;
+         this.age = age;
+         this.salary = 0;
+         this.tasks = [];
+      }
+
+      work() {
+         // TODO cycle tasks
+      }
+
+      collectSalary() {
+         //TODO get paid
+      }
+   }  
+```
 
 The problem description requires that the **parent** class is **abstract**. 
 
 To achieve this, we have to add a condition in the constructor which prevents its direct instantiation. 
 
-Using the **new.target** keyword we can check whether the object was created from the abstract constructor or through a child class.
+Using the **new.target** keyword, we can check whether the object is created from the abstract constructor or through a child class.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(17).png" /]
+```js
+   constructor(name, age) {
+      if (new.target === Employee) {
+         throw new Error("Cannot instantiate directly.")
+      }
+      this.name = name;
+      this.age = age;
+      this.salary = 0;
+      this.tasks = [];
+   }
+```
 
 The `work()` function has to cycle through the list of tasks and print the current one. 
 
 The easiest way to do this is to shift the first element from the array and push it to the end.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(18).png" /]
+```js
+   work() {
+      let currentTask = this.tasks.shift();
+      console.log(this.name + currentTask);
+      this.tasks.push(currentTask)
+   }  
+```
 
-Printing the salary is pretty straightforward. However, since the manager has an additional bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
+Printing the salary is pretty straightforward. However, since the manager has a bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(19).png" /]
+```js
+   collectSalary() {
+      console.log(`${this.name} received ${this.getSalary()} this month`);
+   }
+
+   getSalary() { 
+      return this.salary;
+   }
+```
 
 Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
 
 To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
 
-They also have to call the parent constructor from their own constructor, so the prototype chain is established. 
+They also have to call the parent constructor from their constructor, so the prototype chain is established. 
 
 For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class. 
 
 Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(20).png" /]
+```js
+   class Junior extends Employee {
+      constructor(name, age) { 
+         super(name, age);
+         this.tasks.push(' is working on simple task.')
+      }
+   }
+```
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(21).png" /]
+```js
+   class Senior extends Employee {
+      constructor(name, age) {
+         super(name, age);
+         this.tasks.push(' is working on a complicated task.');
+         this.tasks.push(' is taking time off work.');
+         this.tasks.push(' is supervising junior workers.');
+      }
+   }
+```
 
 The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero. 
 
-His definition also needs to override the `getSalary()` function we added to the base class earlier, so it includes the bonus.
+His definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(22).png" /]
+```js
+  class Manager extends Employee {
+      constructor(name, age) {
+         super(name, age);
+         this.dividend = 0;
+         this.tasks.push(' scheduled a meeting.');
+         this.tasks.push(' is preparing a quarterly report.');
+      }
+      getSalary() {
+         return this.salary + this.dividend;
+      }
+   }
+```
 
 After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(23).png" /]
+```js
+   function solve() {
+
+   class Employee {}
+
+   class Junior extends Employee {}
+
+   class Senior extends Employee {}
+
+   class Manager extends Employee {}
+
+   return {
+      Employee,
+      Junior,
+      Senior,
+      Manager,
+   };
+}
+```
 
 [/task-description]
 [code-io /]
@@ -979,9 +1184,9 @@ yes
 [code-editor language=javascript]
 
 ```
-function posts() {
-    // TODO:
-}
+   function posts() {
+       // TODO:
+   }
 ```
 
 [/code-editor]
@@ -1023,7 +1228,7 @@ In case **there are no comments**, return information only about the **title**, 
 
    - The **BlogPost** class should be initialized with **1 additional argument** - **views**(Number).
 
-   - The **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object** so that **chaining is supported**.
+   - The **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**.
 
    - The **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result:
 
@@ -1035,7 +1240,30 @@ In case **there are no comments**, return information only about the **title**, 
 
 ## Example
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(24).png" /]
+```js
+   let post = new Post("Post", "Content");
+
+   console.log(post.toString());
+
+   // Post: Post
+   // Content: Content
+
+   let scm = new SocialMediaPost("TestTitle", "TestContent", 25, 30);
+
+   scm.addComment("Good post");
+   scm.addComment("Very good post");
+   scm.addComment("Wow!");
+
+   console.log(scm.toString());
+
+   // Post: TestTitle
+   // Content: TestContent
+   // Rating: -5
+   // Comments:
+   //  * Good post
+   //  * Very good post
+   //  * Wow!
+```
 
 Submit a **function (NOT IIFE)**, which holds all classes, and returns them as an object.
 
@@ -1213,9 +1441,9 @@ yes
 [code-editor language=javascript]
 
 ```
-function computer() {
-    // TODO:
-}
+   function computer() {
+      // TODO:
+   }
 ```
 
 [/code-editor]
@@ -1223,7 +1451,7 @@ function computer() {
 
 ## Description
 
-You need to implement the class hierarchy for a computer business.
+Implement the class hierarchy for a computer business.
 
 Implement the following classes:
 
@@ -1256,7 +1484,7 @@ Implement the following classes:
    - **color** - a string property containing the color of the laptop
    - **battery** - an instance of the **Battery** class containing the laptop's battery
    
-There should be a **getter** and a **setter** for the property and validation  to ensure the argument that is passed in is an instance of the Battery class.
+There should be a **getter** and a **setter** for the property and validation to ensure the argument that is passed in is an instance of the Battery class.
 
 - **Desktop** - a concrete class **extending** the **Computer** class that contains:
 
@@ -1269,17 +1497,30 @@ There should be a **getter** and a **setter** for the property and validation en
 There should be a **getter** and a **setter** for the property and validation ensuring the argument that is passed in is an instance of the **Monitor** class.
 
 - Attempting to instantiate an abstract class should throw an **Error**
-- Attempting to pass an object that is not of the expected instance (ex. an object that is not an instance of Battery to the laptop as a battery) should throw a **TypeError**
+- Attempting to pass an object that is not of the expected instance (ex. object that is not an instance of Battery to the laptop as a battery) should throw a **TypeError**
 
 ## Example
 
-[image assetsSrc="JS-Advanced-Prototypes-and-Inheritance-(25).png" /]
+```js
+   function createComputerHierarchy() {
+       //TODO: implement all the classes, with their properties
 
-You are asked to submit **ONLY the function** that returns an object containing the above-mentioned classes.
+       return {
+           Battery,
+           Keyboard,
+           Monitor,
+           Computer,
+           Laptop,
+           Desktop
+       }
+   }
+```
+
+You are asked to submit **ONLY the function** that returns an object containing the mentioned above classes.
 
 ## Bonus
 
-To achieve code reusability, it is a good idea to have a base abstract class containing common information. Check the classes, what common characteristics do they share that can be grouped in a common base class?
+To achieve code reusability, it is a good idea to have an abstract class containing common information. Check the classes, for common characteristics share that can be grouped in a base class?
 
 [/task-description]
 [code-io /]
