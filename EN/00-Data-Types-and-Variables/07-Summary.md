@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -7,7 +7,7 @@
 [/video-vimeo]
 
 
-## In this lesson you learned:
+# In this lesson you learned:
 
 - There are **eight data types** in JavaScript: 
     - Number
@@ -51,15 +51,20 @@ let cars = ["Nio", "Tesla", "Xpeng"];
 
 console.log(typeof(cars));
 ```
-- `Null` is "nothing",  undefined exists, but is empty
+- `Null` is "nothing", while `undefined` exists, but is empty
 
-In the next lesson you will learn:
 
-- Arrays definition and syntax
+## In the next lesson, you will learn:
+
+- Arrays
+  - Definition and syntax
 ``` js
 let cars = ["Nio", "Tesla", "Xpeng"];
 ```
-- How we iterate over array
+
+- Array iteration
+  - How we iterate over array
+  - Alternative ways to iterate using a for-of loop
 
 ``` js live
 let cars = ["Nio", "Tesla", "Xpeng"];
@@ -68,7 +73,6 @@ for (let i = 0; i < cars.length; i++) {
     console.log(cars[i]);
 }
 ```
-- Alternative ways to iterate using a for-of loop
 
 ``` js live
 let cars = ["Nio", "Tesla", "Xpeng"];
@@ -78,11 +82,6 @@ for (const car of cars) {
 }
 ```
 
-## In the next lesson we will learn:
-
-- Arrays
-
 - Array operations
 
-- Array iteration
 [/slide]
