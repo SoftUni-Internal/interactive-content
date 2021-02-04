@@ -1,6 +1,6 @@
 # Numbers
 
-[slide]
+[slide hideTitle]
 # What is a Number?
 
 [vimeo-video]
@@ -8,15 +8,15 @@
 [stream language="RO" videoId="489371556/90a6f7534f"  /]
 [/video-vimeo]
 
-The numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
+Numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
 
-We have a type that is **numbers.**
+We have a type that is `number`.
 
-The largest number we can store is `2^54 +-1`
+The largest number we can store is `2^54 +-1`.
 
-We have special values ​​that are:
+We have special values that are:
 
-- `+Infinity` and `–Infinity`  we get when we divide by zero
+- `+Infinity` and `–Infinity` that we get when dividing by zero:
 
 ``` js live
 console.log(5 / 0);
@@ -25,7 +25,9 @@ console.log(-5 / 0);
 
 We get Infinity in order not to get a **compile time error.**
 
+
 - `NaN` (not-a-number):  we can get NaN when we try to parse a string that cannot be parsed or when we try to divide by zero:
+
 
 ``` js live
 let nanVar = Number('not a number');
@@ -43,25 +45,25 @@ let nanVar = Number('not a number');
 console.log(5 + nanVar);
 ```
 
-# Parsing Numbers
+## Parsing Numbers
 
 Number parsing can be done in several ways:
 
-- `parseInt`: we take only the whole part of the number, do not round it:
+- `parseInt`: we take only the whole part of the number, without rounding it:
 
 ``` js live
 let myVar = parseInt('3.14');
 console.log(myVar);
 ```
 
-- `parseFloat`: we take the number together with the floating point
+- `parseFloat`: we take the number together with the floating point:
 
 ``` js live
 let myVar = parseFloat('3.14');
 console.log(myVar);
 ```
 
-- `Number`: parse string to number
+- `Number`: parse a string to a number:
 
 ``` js live
 let myVar = Number('10');
@@ -69,7 +71,7 @@ console.log(myVar + 10);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Integer or Float
 
 [vimeo-video]
@@ -77,7 +79,7 @@ console.log(myVar + 10);
 [stream language="RO" videoId="489371609/3a04a5e772"  /]
 [/video-vimeo]
 
-[code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function integerOrFloat(input){
@@ -89,13 +91,13 @@ function integerOrFloat(input){
 # Description
 You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with an addition 
+Your task is to find their **sum** and print it to the console with an addition:
 
 `{number} - Integer or Float`
 
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |`['9', '100', '1.1']`| 110.1 - Float |
 |`['100', '200', '303']`|603 - Integer|
@@ -168,7 +170,7 @@ Your task is to find their **sum** and print it to the console with an addition
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Integer or Float
 
 [vimeo-video]
@@ -180,17 +182,7 @@ Your task is to find their **sum** and print it to the console with an addition
 [code-editor language=javascript]
 ```
 function integerOrFloat(input){
- let firstNumber = Number(input[0]);
- let secondNumber = Number(input[1]);
- let thirdNumber = Number(input[2]);
-
- let sum = firstNumber + secondNumber + thirdNumber;
-    if (sum % 1 === 0) {
-        console.log(`${sum} - Integer`);
-    }
-    else{
-        console.log(`${sum} - Float`);
-    }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -198,7 +190,7 @@ function integerOrFloat(input){
 # Description
 You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with an addition 
+Your task is to find their **sum** and print it to the console with an addition:
 
 `{number} - Integer or Float`
 
