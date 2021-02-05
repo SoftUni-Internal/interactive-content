@@ -358,7 +358,7 @@ function reverse(input){
 
 Write a program which receives an array of strings (space separated values).
 
-Your task is to reverse it and print its elements.**Swap elements.**
+Your task is to reverse it and print its elements. **Swap elements.**
 
 ## Examples
 | **Input** | **Output** |
