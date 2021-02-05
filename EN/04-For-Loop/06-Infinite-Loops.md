@@ -28,3 +28,11 @@ An infinite loop is not dangerous. It can, however, be annoying when it occurs.
 
 So you have to be careful not to cause one by accident.
 [/slide]
+
+[slide hideTitle]
+
+# Example: Infinite for Loop in Programming
+
+interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo
+
+[/slide]

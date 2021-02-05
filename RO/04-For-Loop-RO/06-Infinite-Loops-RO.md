@@ -22,3 +22,11 @@ O buclă infinită nu este periculoasă. Totuși, poate fi enervant atunci când
 
 Deci, trebuie să aveți grijă să nu provocați apariția sa în mod accidental.
 [/slide]
+
+[slide hideTitle]
+
+# Example: Infinite for Loop in Programming
+
+interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo
+
+[/slide]
