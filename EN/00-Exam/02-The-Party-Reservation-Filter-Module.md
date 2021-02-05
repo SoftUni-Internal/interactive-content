@@ -1,6 +1,6 @@
 [slide hideTitle]
 # The Party Reservation Filter Module 
-[code-task title="The Party Reservation Filter Module " taskId="Java-OOP-Basics-Exam-The-Party-Reservation-Filter-Module" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="The Party Reservation Filter Module " taskId="Java-OOP-Basics-Exam-The-Party-Reservation-Filter-Module" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
 ```
 
