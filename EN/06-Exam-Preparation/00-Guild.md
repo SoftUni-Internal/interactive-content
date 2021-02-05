@@ -55,11 +55,11 @@ Implement the following features:
 - Method **report()** - **returns a String** in the following **format**:
 
 ```
- "Players in the guild: \{guildName\}:
+ "Players in the guild: {guildName}:
 
-\{Player1\}
+{Player1}
 
-\{Player2\}
+{Player2}
 
 (…)"
 ```
