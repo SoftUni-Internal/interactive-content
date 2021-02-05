@@ -1,13 +1,3 @@
-# National Court
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="434990192" default /]
-[stream language="RO" videoId="433962147"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # National Court

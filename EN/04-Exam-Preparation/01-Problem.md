@@ -1,13 +1,3 @@
-# Shopping List
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="434990022" default /]
-[stream language="RO" videoId="433962297"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Shopping List

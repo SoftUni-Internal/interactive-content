@@ -1,13 +1,3 @@
-# Heart Delivery
-
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="434990115" default /]
-[stream language="RO" videoId="433962598"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Heart Delivery
