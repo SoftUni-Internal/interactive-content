@@ -1,6 +1,6 @@
 # Operations
 
-[slide]
+[slide hideTitle]
 # Array Methods
 
 [vimeo-video]
@@ -31,7 +31,7 @@ console.log(nums.length);
 
 Other examples of methods:
 
-- `push()`: appending an element at the end of the array 
+- `push()` - appending an element at the end of the array:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -42,7 +42,7 @@ console.log(arr);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Usage
 
 [vimeo-video]
@@ -50,7 +50,7 @@ console.log(arr);
 [stream language="RO" videoId="489372490/1ebd778a3f"  /]
 [/video-vimeo]
 
-- `includes()`: Returns `true` if the array contains the value placed in the brackets  searchElement and `false`, otherwise
+- `includes()` - Returns `true` if the array contains the value placed in the brackets  searchElement and `false` otherwise:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -58,7 +58,7 @@ console.log(arr.includes(20));
 console.log(arr.includes(0));
 ```
 
-- `toString()`: Converts all elements to strings via `String()`, concatenates them and returns the result
+- `toString()` - Converts all elements to strings via `String()`, concatenates them and returns the result:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -66,7 +66,7 @@ let arr = [10, 20, 30];
 console.log(arr.toString());
 ```
 
-- `join()`: Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator
+- `join()` - Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
 
 ``` js live
 let arr = [10, 20, 30];
