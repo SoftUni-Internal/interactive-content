@@ -12,7 +12,9 @@ So let's have a quick sneak peek inside it and help  Santa rearrange it.
 ## Preparation
 Pay attention to name the package (christmas), all the classes, their fields and methods exactly the same way they are presented in the following document. 
 
-It is also important to keep the project structure as described above. 
+It is also important to keep the project structure as)described above. 
+
+Download Resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
 ## Problem description
 
