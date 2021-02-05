@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-In this lesson you learned about:
+## In this lesson we learned:
 
 - Event Loop
 - Event Types: `document.addEventListener('click', getEventType);`
@@ -25,11 +25,11 @@ In this lesson you learned about:
     
 ## In the next lesson we will learn:
 
-- What is `this`?
+- What `this` is
 
-- Usages of `this` Keyword
+- Some usages of the `this` keyword
 
-- `this` in functions
+- How to use `this` in functions
 
 - Explicit binding
 
