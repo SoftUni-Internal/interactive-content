@@ -1,4 +1,4 @@
-# Java OOP Advanced
+# Java OOP Basics
 
 ## Description
 This course teaches the **basics of coding**, such as:
