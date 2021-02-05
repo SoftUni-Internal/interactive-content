@@ -1,11 +1,8 @@
 [slide hideTitle]
 # Problem: Santa's Bag of Presents
-[code-task title="Problem: Santa's Bag of Presents" taskId="Java-OOP-Basics-Exam-Santa's-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
+[code-task title="Santa's Bag of Presents" timeLimit=5000 taskId="Java-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-```
-[/code-editor]
 [task-description]
 # Description
 Can you imagine Santa without his special bag that carries presents for so many children? Neither can we. 
@@ -124,7 +121,6 @@ System.out.println(bag.report());
 Submit **single .zip file**, containing **christmas package, with the classes inside (Present, Bag and the Main class)**, there is no specific content required inside the Main class e. g. you can do any kind of local testing of you program there. However there should be **main(String[] args)** method inside. 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
