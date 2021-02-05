@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Guild
-[code-task title="Guild" taskId="Java-OOP-Basics-Exam-Preparation-Guild" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=java-code]
+[code-task title="Guild timeLimit=5000 taskId="Java-OOP-Basics-Exam-Prep-Guild" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 ```
 
 ```
