@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Gramophone
 [code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -109,7 +109,7 @@ The plate was rotated 29 times.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Fuel Money
 [code-task title="Fuel Money" taskId="js-fundamentals-1-basic-syntax-Fuel-Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -243,7 +243,7 @@ Needed money for that trip is 165.0175 dollars.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Centuries to Minutes
 [code-task title="Centuries to Minutes" taskId="js-fundamentals-1-basic-syntax-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -313,7 +313,7 @@ Print the output in the following format:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Special Numbers
 [code-task title="Special Numbers" taskId="js-fundamentals-1-basic-syntax-Special-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -443,7 +443,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Triples of Latin Letters
 [code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -818,7 +818,7 @@ ddd
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Digits
 [code-task title="Sum Digits" taskId="js-fundamentals-1-basic-syntax-sum-digits" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -920,7 +920,7 @@ Your task is to find the sum of its digits.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Reversed Chars
 [code-task title="Reversed Chars" taskId="js-fundamentals-1-basic-syntax-reversed-chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -1019,7 +1019,7 @@ L
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Calculator
 [code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
