@@ -31,7 +31,7 @@ If the **old string** is currently present in the travel plan string, **replace 
 
 After receiving the `Travel` command, print the following:
 
-`Ready for the trip! Planned stops: {string}`
+`Ready for world tour! Planned stops: {string}`
 
 ## Input
 
