@@ -4,15 +4,11 @@
 
 # Task Requirements
 
-Last time we saw what JWT (JSON WEB TOKEN) is the INTERCEPTORS concept. 
+Last time we saw what JWT (JSON WEB TOKEN) is the **INTERCEPTORS** concept. 
 
-Try to intercept the requests and responses between the front-end part and the back-end.
+Try to intercept the **requests** and **responses** between the front-end part and the back-end.
 
-[/slide]
-
-[slide hideTitle]
-
-# Auth Interceptor
+- **Auth Interceptor**
 
 When a user is registered or is trying to log in, the API should return a cookie, which holds JSON WEB TOKEN (JWT). 
 
@@ -69,11 +65,7 @@ You can use, **404** page to show **error** info or put a **paragraph** `<p>` el
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Lazy Loading
+## Lazy Loading
 
 Lazy Loading helps us download the web pages in chunks. 
 
