@@ -1,14 +1,18 @@
-[slide]
+[slide hideTitle]
 
 # Liskov Substitution
 
 The **Liskov substitution principle**, written by **Barbara Liskov** in 1988, states that functions that reference base classes must be able to use objects of derived (child) classes without knowing it.
 
-In other words, the principle defines that objects of a **superclass** shall be **replaceable** with objects of its **subclasses** without breaking the application.
+In other words, the principle defines that objects of a **Superclass** shall be **replaceable** with objects of its **Subclasses** without breaking the application.
 
-That requires the objects of your subclasses to **behave in the same way** as the objects of your superclass.
+That requires the objects of your Subclasses to **behave in the same way** as the objects of your Superclass.
 
-## OCP vs LSP​
+[/slide]
+
+[slide hideTitle]
+
+# OCP vs LSP​
 
 The Liskov substitution principle is just an **extension** of the **Open-closed** principle. 
 
@@ -16,17 +20,21 @@ That means that we are able to implement the Open-closed principle through **add
 
 We must make sure that new derived classes are extending the base classes **without changing their behavior**. 
 
-## LSP – Violations and Solutions​
+[/slide]
 
-The **LSP** is applicable when there’s a **supertype-subtype inheritance** relationship by either **extending** a class or **implementing** an interface. 
+[slide hideTitle]
+
+# LSP – Violations and Solutions​
+
+The **LSP** is applicable when there’s a **Supertype-Subtype inheritance** relationship by either **extending** a class or **implementing** an interface. 
 
 We can think of the methods defined in the supertype as **defining a contract**.
 
 Every subtype is expected to **stick** to **this contract**. 
 
-If a subclass does not adhere to the superclass’s contract, it’s **violating the LSP**.
+If a Subclass does not adhere to the Superclass’s contract, it’s **violating the LSP**.
 
-This code snippet shows what violates LSP and how we can fix it:
+This code snippet shows what violates LSP and how we can fix it
 
 ```java
 public interface Vehicle {
@@ -37,7 +45,7 @@ public interface Vehicle {
 ```
 Above, we define a simple **Vehicle** Interface with a couple of methods that all vehicles should be able to fulfill – turning on the engine, and accelerating forward.
 
-The MotorCar class implements the Vehicle Interface and its methods `startEngine()` and `accelerate()`.
+The `MotorCar` class implements the `Vehicle` Interface and its methods `startEngine()` and `accelerate()`.
 
 ```java
 public class MotorCar implements Vehicle {
@@ -139,6 +147,6 @@ public class ElectricCar implements ElectricVehicle {
 }
 ```
 
-Thus, our **MotorCar** and **ElectricCar** classes have become **more specialized**, while **adhering to the Liskov Substitution Principle.**
+Thus, our `MotorCar` and `ElectricCar` classes have become **more specialized**, while **adhering to the Liskov Substitution Principle.**
 
 [/slide]

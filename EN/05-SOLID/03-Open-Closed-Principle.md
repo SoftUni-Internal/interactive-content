@@ -1,13 +1,20 @@
-[slide]
+[slide hideTitle]
 
 # Open Closed Principle
 
 "The code should be **open for extension**, but **closed for modification**".
 
-Software entities (**classes**, **modules**, **methods**, etc.) should be extendable without actually changing the contents of the class you’re extending. 
+Software entities (**classes, modules, methods, etc.**) should be extendable without actually changing the contents of the class you are extending. 
 
-If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code**.
+If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code** and adding new functionallities to our classes would only be by adding new code, not fixing old one.
 
+This principle does not count if we are fixing bugs, only than we can modify the existing code.
+
+[/slide]
+
+[slide hideTitle]
+
+# Open Closed Principal - Example
 
 In the following example, we have the **CalculateArea** class which calculates the area of various shapes.
 
@@ -62,7 +69,7 @@ If we want to add **square** for example, we have to **modify** the `calculate()
 
 **Thus, we will break the open-closed principle**.
 
-According to this principle, **we can’t modify**, but **we can extend**.
+According to this principle, **we can’t modify the existing code**, but **we can extend by adding more code**.
 
 To overcome this problem, we have to **add abstraction** to the `calculate()` method.
 
@@ -144,12 +151,53 @@ public class CalculateArea {
 }
 ```
 
-By using the **Open-Closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application won't be affected.
+By using the **Open-Closed principle**, we can add a square's area **without modifying** the CalculateArea class, so we can be certain that our existing application will not be affected.
 
 Applying **Open-Closed principle** to our projects limits the need to change source code once it has been written, tested and debugged.
 
-This **reduces the risk of introducing new bugs** to existing code, leading to a more robust software.
+This principle is imporant to follow because if we change the already existing logic of our classes we can brake our client's code.
+
+As well as applying it **reduces the risk of introducing new bugs** to existing code, leading to a more robust software.
 
 
+[/slide]
+
+
+[slide hideTitle]
+
+# OCP - Violations
+
+Not following the Open-Close Principle will lead to problems.
+
+**- Cascading changes through modules**
+  If we change the code in our class, everybody that uses this class will change their behaviour implicitly, it does not matter if the clients are  inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
+
+**- Re-testing**
+  Our code needs testing to validate it's correctness, this is an inevitable part of our jobs, imagine if every time we want to add new feature and do it throgh changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
+
+**- Logic depends on conditional statements**
+  Some parts of our code depened on conditional statements logic, changing our old code may brake the conditional statements, changing the behaviour of our program, which may lead to bugs which will be hard to find.
+
+[/slide]
+
+[slide hideTitle]
+
+# Open Close Principle - Soultions
+
+
+- Inheritance / Abstraction
+    As we did in the example we can level up an abstraction, giving a solution to our current problem, this way we will be able to keep the **OCP**
+    
+- Design Patterns
+    When we need to solve any design problems, we can look up the common design patterns.
+
+    They have tested solutions, which give us an abstract way to solve a given problem.
+
+    The ones that can help us keep the **Open-Close-Principle** are:
+    - Template Method Pattern
+    - Strategy Pattern
+    - Decorator Pattern
+
+Later in the course, we will learn about the different design patterns.
 
 [/slide]

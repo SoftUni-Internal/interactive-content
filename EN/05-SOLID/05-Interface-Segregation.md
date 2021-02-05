@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Interface Segregation
 
@@ -15,6 +15,12 @@ This is because if we have a large interface it would be **difficult to deliver 
 In this way we also **violate the abstraction**.​
 
 A better practice is to make use of **a large number of interfaces** that define a **single action** rather than to operate with a single interface that defines many non-directly related behaviors.
+
+[/slide]
+
+[slide hideTitle]
+
+# Fat Interfaces
 
 In the following example, we will take a closer look at what the problem with “fat” interfaces is:
 
@@ -56,7 +62,45 @@ But let’s see what happens when a class **Robot** implements the same interfac
 
 The **Robot** class can implement the `work()` method, but the `sleep()` one is not appropriate for this class. 
 
-The problem here is that we force the **Robot** class to implement a method that it shouldn't.​
+The problem here is that we force the **Robot** class to implement a method that it should not.​
+
+You saw what problems the Fat Interfaces can bring, let's list them our and their solutions and figure out a method to fix our problem.
+
+[/slide]
+
+[slide hideTitle]
+
+# Fat Interfaces - consequences
+
+Having fat interfaces may lead to few consequences which we should be aware of.
+
+When we see an interface with more than 5-6 members we should ask ourselves if it is not two interfaces or more.
+
+- Classes have methods they do not use
+
+- Increase coupling between the interface and the classes
+
+- Because of the increased coupling we reduce the flexibility
+
+- It's harder to maintain a highly coupled code
+
+[/slide]
+
+[slide hideTitle]
+
+# How to ISP
+
+The solution to interface segregation is simple.
+
+Just keep your interfaces small but with strong cohesion.
+
+Applying the **Single-Responsibility** will help you make sure that your interfaces serve one role only.
+
+[/slide]
+
+[slide hideTitle]
+
+# Cohesive Interfaces
 
 The solution to this problem is separating the `sleep()` method into another interface:
 
@@ -85,7 +129,5 @@ public class Robot implements Worker {​
   }​
 }
 ```
-
-​
 
 [/slide]

@@ -1,7 +1,7 @@
 
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Logger
 

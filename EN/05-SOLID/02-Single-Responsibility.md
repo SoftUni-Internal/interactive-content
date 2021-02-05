@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Single Responsibility
 
@@ -63,8 +63,10 @@ The **Single Responsibility principle** doesn’t mean that our classes should o
 
 The key is that the code that is inside the class must be **directly related to the main purpose** of the class and the work it does. 
 
-It is good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations it is normal to have to write more lines of conde inside the methods.
+It is good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we can not keep the this principle.
 
 Thanks to the **Single Responsibility principle**, we can easily detect and eliminate bugs in the software.​
+
+When all the methods in one class are aimed to serve one goal only we say that this class has **strong cohension**.
 
 [/slide]
