@@ -1,6 +1,6 @@
 # Array Iteration
 
-[slide]
+[slide hideTitle]
 # Printing Arrays On the Console
 
 [vimeo-video]
@@ -8,17 +8,17 @@
 [stream language="RO" videoId="489372567/b8ba0e753f"  /]
 [/video-vimeo]
 
-To print all array elements, a for-loop can be used
+To print all array elements, a for-loop can be used:
 
 ``` js live
-let capitals = ['Bucuresti', 'Washington', 'London'];
+let capitals = ['Bucharest', 'Washington', 'London'];
 
   for (let i = 0; i < capitals.length; i++){
  console.log(capitals[i]);
   }
 ```
 
-Another way to print all array elements is using `toString()`
+Another way to print all array elements is using `toString()`:
 
 ``` js live
 let capitals = ['Bucharest', 'Washington', 'London'];
@@ -27,7 +27,7 @@ console.log(capitals.toString())
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # For-of Loop
 
 [vimeo-video]
@@ -35,11 +35,11 @@ console.log(capitals.toString())
 [stream language="RO" videoId="489453701/2693aea66c"  /]
 [/video-vimeo]
 
-The `for..of` loop is used to iterate over any inerrable object but cannot be used to  access the their indexes. 
+The `for..of` loop is used to iterate over any iterable object but cannot be used to  access its indexes. 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Print an Array with For-of
 
 [vimeo-video]
@@ -56,7 +56,7 @@ for(let num of arr){
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Reverse an Array of Numbers
 
 [vimeo-video]
@@ -64,10 +64,10 @@ for(let num of arr){
 [stream language="RO" videoId="489372548/0e9743357b"  /]
 [/video-vimeo]
 
-[code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Reverse an Array of Numbers" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverce(input){
+function reverse(input){
   // Write your code here
 }
 ```
@@ -198,7 +198,7 @@ Where `n` is the  first element of the array.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Solution: Reverse an Array of Numbers
 
 [vimeo-video]
@@ -209,10 +209,8 @@ Where `n` is the  first element of the array.
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(arr){
-    let num = arr.shift();
-    arr.length = num;
-    console.log(arr.reverse().join(' '));
+function reverse(input){
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -340,7 +338,7 @@ Where `n` is the  first element of the array.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Reverse an Array of Strings
 
 [vimeo-video]
@@ -348,10 +346,10 @@ Where `n` is the  first element of the array.
 [stream language="RO" videoId="489372618/881c97fdd1"  /]
 [/video-vimeo]
 
-[code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Reverse an Array of Strings" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverce(input){
+function reverse(input){
   // Write your code here
 }
 ```
@@ -444,7 +442,7 @@ dsadaffa dd 0 124543 3jkj3
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Reverse an Array of Strings
 
 [vimeo-video]
@@ -455,10 +453,8 @@ dsadaffa dd 0 124543 3jkj3
 [code-task title="Reverse an Array of Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverce(input){
-  let reversed = input.reverse();
-
-  console.log(reversed.join(' '));
+function reverse(input){
+  // Write your code here
 }
 ```
 [/code-editor]
