@@ -56,7 +56,7 @@ The amount of **cookies eaten must be rounded to the nearest whole number.**
 The percentage of food **must be formatted to the second digit after the decimal point.**
 
 
-[code-task title="Food for Pets" taskId="js-pb-final-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

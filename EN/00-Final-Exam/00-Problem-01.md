@@ -49,7 +49,7 @@ Print on the console how much money Annie will need to pay her bill.
 
 The result should be **formatted** to the third decimal place.
 
-[code-task title="Study materials" taskId="js-pb-final-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {

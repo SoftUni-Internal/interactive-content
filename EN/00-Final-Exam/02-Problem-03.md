@@ -53,7 +53,7 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 - The **price to be paid**, **formatted to the second digit after decimal point**, in the following format: `{price} dollars.`
 
 
-[code-task title="Energy Booster" taskId="js-pb-final-exam-Energy-Booster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Energy Booster" taskId="JavaScript-Programming-Basics-Energy-Booster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
