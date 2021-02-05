@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Loot Box
-[code-task title="Loot Box" taskId="a83d9d2c-abf2-46c7-976b-9a491441bcba" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Loot Box" taskId="Java-Advanced-Exam-Preparation-Loot-Box" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

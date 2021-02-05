@@ -3,7 +3,13 @@
 [code-task title="Legendary Farming" taskId="Java-Advanced-Exam-Preparation-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
 ```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
