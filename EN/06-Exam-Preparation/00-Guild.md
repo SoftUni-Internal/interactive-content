@@ -1,11 +1,8 @@
 [slide hideTitle]
 # Guild
-[code-task title="Guild" taskId="Java-OOP-Basics-Exam-Preparation-Guild" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=java-code]
-```
+[code-task title="Guild" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Prep-Guild" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-upload allowedMemory="30" /]
 
-```
-[/code-editor]
 [task-description]
 ## Preparation 
 
@@ -28,11 +25,11 @@ The class **constructor** should receive **name and clazz**.
 
 You need to create the appropriate **getters and setters**. Override the **toString()** method in the following format:
 
-"Player {name}: {clazz}
+"Player \{name\}: \{clazz\}
 
-Rank: {rank}
+Rank: \{rank\}
 
-Description: {description}"
+Description: \{description\}"
 
 ## Guild
 
@@ -133,7 +130,6 @@ public class Main {
 ```
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
