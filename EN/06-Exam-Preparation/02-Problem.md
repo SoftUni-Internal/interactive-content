@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Predicate Party
+# Legendary Farming
 [code-task title="Legendary Farming" taskId="Java-Advanced-Exam-Preparation-Legendary-Farming" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
 ```
