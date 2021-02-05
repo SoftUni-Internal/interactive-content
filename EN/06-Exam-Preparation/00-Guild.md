@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Guild
-[code-task title="Guild timeLimit=5000 taskId="Java-OOP-Basics-Exam-Prep-Guild" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Guild" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Prep-Guild" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
