@@ -28,11 +28,11 @@ The class **constructor** should receive **name and clazz**.
 
 You need to create the appropriate **getters and setters**. Override the **toString()** method in the following format:
 
-"Player {name}: {clazz}
+"Player \{name\}: \{clazz\}
 
-Rank: {rank}
+Rank: \{rank\}
 
-Description: {description}"
+Description: \{description\}"
 
 ## Guild
 
