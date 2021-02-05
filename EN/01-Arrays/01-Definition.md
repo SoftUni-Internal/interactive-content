@@ -579,12 +579,12 @@ Array holding numbers:
 let numbers = [10, 20, 30, 40, 50];
 ```
 
-Array holding strings
+Array holding strings:
 ``` js
 let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
-Array holding mixed data
+Array holding mixed data:
 ```js
 let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 ```
@@ -599,6 +599,7 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [/video-vimeo]
 
 We  can add an element to the end of the array:
+
 ``` js live
 let arr = [10, 20, 30];
 arr[arr.length] = 40;
