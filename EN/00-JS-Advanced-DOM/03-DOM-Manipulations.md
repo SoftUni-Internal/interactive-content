@@ -54,6 +54,7 @@ Here are some of the **methods** and **properties** which are used in the proces
 
 - `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute.
 
+
 - `.style` - A property, used to **directly** update the **CSS** of an element.
 
 ```js
