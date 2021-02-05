@@ -8,11 +8,11 @@ Event registration is done by providing a callback function.
 
 There are 3 ways to register an event:
 
-- with HTML Attributes
+- using HTML Attributes.
 
-- using DOM Element properties
+- using a DOM event handler.
 
-- using DOM event handler
+- using DOM event handler.
 
 [/slide]
 
@@ -20,15 +20,24 @@ There are 3 ways to register an event:
 
 # Event Listener
 
-To be able to use our event handler function we need the `.addEventListener()` method.
+To be able to use our **event handler function**, we need the `.addEventListener()` method.
 
-It accepts 3 parameters. 
+The first one is the **type**, which is a case sensitive string representing the event type to listen for.
 
-First one is the type, which is a case sensitive string representing the event type to listen for.
+The second one is our **handler** function. 
 
-Second one is our handler function.
+It specifies the function to run when the event occurs.
 
-And the third parameter is optional. Default value is **false**.
+The third parameter is optional. 
+
+It is a Boolean value that specifies whether the event should be executed in the capturing or in the bubbling phase. 
+
+Its default value is false.
+
+Another useful method that we should know is the `.removeEventListener()` method.
+
+It removes an event handler that has been previously attached with the `addEventListener()` method.
+
 
 ```js
 addBtn.addEventListener("click", handler, false);
@@ -49,7 +58,7 @@ addBtn.removeEventListener("click", handler);
 
 Here is an example using the "click" type and the "clickMe" function as an event handler.
 
-On each click of the button the number will increment with one.
+On each click of the button, the "number" will be incremented by one.
 
 ```js
 const button = document.getElementsByTagName('button')[0];
@@ -67,11 +76,11 @@ function clickMe(e) {
 
 # Attaching hover event
 
-Example using the "mouseover" type and a function declaration.
+Here is an example of using the "mouseOver" type and a function declaration.
 
-The code will run if we mouse over the button.
+The code will run if we **mouse hover** the button. 
 
-The result will be a change of the background color of the button and a change of the color of the text content of the button.
+The result will be a change of the background color of the button, and a change of the color of the text content of the button
 
 ```js
 const button = document.getElementsByTagName('div')[0];
@@ -94,9 +103,11 @@ button.addEventListener('mouseover', function (e) {
 
 # Attaching Input Events
 
-In this example we are using the "input" type to demonstrate how we can enable a button when we type something in the input field.
+In this example, we use the "input" type to demonstrate how we can enable a button when we type something in the input field.
 
-The button is **desabled** by default in the HTML. As soon as we type anyting in the input field the button will be **enabled** because of the following line of code in the handler function `button.setAttribute('disabled', 'false');`.
+By default, the button is **disabled** in the HTML. 
+
+As soon as we type anything in the input field, the button will be **enabled** because of the following line of code in the handler function: `button.setAttribute('disabled', 'false');`.
 
 ```js
 const inputField = document.getElementsByTagName('input')[0];
@@ -112,13 +123,16 @@ inputField.addEventListener('input', function () {
 
 # Remove Events
 
-Here is a more in-depth implementation of the `.addEventListener()` method and the`.removeEventListener()` method.
+Here is a more in-depth implementation of the `.addEventListener()` and the `.removeEventListener()` methods.
 
-The first event listener `('focus', focusEvent)`will add **focus** to the password input field if you click inside the field.
+The first event listener (`focus`, `focusEvent`) will add focus to the password input field if we click on this field.
 
-The second event listener `'blur', (event)` will remove **focus** if you click another input field.
+The second event listener `blur`, (event) will remove **focus** if we click on another input field.
 
-Finally the third event listener attached to the button will remove the first event listener when the button is clicked and we lose the **focus** effect at that point.
+Finally, the third event listener attached to the button will remove the first event listener when the button is clicked. 
+
+At this point, we lose the **focus** effect.
+
 
 ```js
 const password = document.querySelector('input[type="password"]');
@@ -156,11 +170,16 @@ element.addEventListener("mouseout", myThirdFunction);
 
 # SetInterval() And ClearInterval()
 
-In JavaScript we can **start** or **stop** timers.
+In JavaScript, we can **start** or **stop** timers.
 
-Use the `.setInterval()` method to execute a piece of code with a fixed time delay.
+The `setInterval()` method calls a function or evaluates an expression at specified intervals (in milliseconds).
 
-The time delay is specified in milliseconds. In the example below it is 1000 milliseconds or 1 second.
+The `setInterval()` method will continue calling the function until `clearInterval()` is called, or the window is closed.
+
+In the example below, the interval is 1000 milliseconds or 1 second.
+
+The `clearInterval()` method clears a timer set with the `setInterval()` method.
+
 
 ```js
 let intervalID = setInterval(
@@ -193,7 +212,9 @@ function solve(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-02.Add-Delete.zip) **for this task.**
 
-Extend the previous problem to display a `[Delete]` link after each list item. Clicking ot it, should delete the item with no confirmation.
+Extend the previous problem to display a `[Delete]` link after each list item. 
+
+Clicking on it should delete the item with no confirmation.
 
 # Example
 [image assetsSrc="Dom-Manipulation(4).png" /]
@@ -241,50 +262,7 @@ yes
 
 [/slide]
 
-[slide hideTitle]
 
-# Event Delegation
-
-Capturing and bubbling allow us to implement an event handling pattern called **event delegation**.
-
-If we have a lot of elements handled in one and the same way, then instead of assigning a handler to each of them, we can put a single handler on their common ancestor.
-
-In the handler we use `event.target` to see where the event actually happened and handle it.
-
-In the example we add an event listener to our parent, which is the `<ul>` element.
-
-Then in the if statement we add a condition, so that if we click on a `<li>` element the `console.log()` method will display a message telling us exactly on which element we clicked.
-
-```html
-<ul id="parent-list">
-    <li id="post-1">Item 1</li>
-    <li id="post-2">Item 2</li>
-</ul>
-```
-
-```js
-document.getElementById("parent-list")
-    .addEventListener("click", function(event) {
-        if(event.target && event.target.nodeName == "LI") {
-            console.log(
-                "List item ", event.target.id, 
-                " was clicked!");
-            }
-});
-```
-
-**Pros and Cons**
-
-Benefits
-- Simplifies initialization
-- Saves memory
-- Less code
-
-Limitations
-- Event must be bubbling
-- May add CPU load
-
-[/slide]
 
 [slide hideTitle]
 # Solution: Add Delete
@@ -298,7 +276,9 @@ function solve(){
 [/code-editor]
 [task-description]
 # Description
-Extend the previous problem to display a `[Delete]` link after each list item. Clicking ot it, should delete the item with no confirmation.
+Extend the previous problem to display a `[Delete]` link after each list item. 
+
+Clicking on it should delete the item with no confirmation.
 
 # Example
 [image assetsSrc="Dom-Manipulation(4).png" /]
@@ -352,15 +332,16 @@ yes
 
 Capturing and bubbling allow us to implement an event handling pattern called **event delegation**.
 
-If we have a lot of elements handled in one and the same way, then instead of assigning a handler to each of them, we can put a single handler on their common ancestor.
+If we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them, we put a single handler on their common ancestor.
 
-In the handler we use `event.target` to see where the event actually happened and handle it.
+In the handler, we use `event.target` to see where the event actually happened, and we handle it.
 
-In the example we add an event listener to our parent, which is the `<ul>` element.
+In the example, we add an event listener to our parent, which is the `<ul>` element.
 
-Then in the if statement we add a condition, so that if we click on a `<li>` element the `console.log()` method will display a message telling us exactly on which element we clicked.
+Then, in the 'if' statement, we add a condition, so that if we click on a `<li>` element, the `console.log()` method will display a message telling us exactly on which element we clicked.
 
-```html
+
+```
 <ul id="parent-list">
     <li id="post-1">Item 1</li>
     <li id="post-2">Item 2</li>
@@ -380,13 +361,23 @@ document.getElementById("parent-list")
 
 **Pros and Cons**
 
-Benefits
-- Simplifies initialization
-- Saves memory
-- Less code
+Advantages:
+- Code quality
 
-Limitations
-- Event must be bubbling
-- May add CPU load
+- Saving memory
+
+- Better performance
+
+- Less DOM manipulations
+
+Disadvantages:
+
+- Not all events bubble up
+
+- The child stops propagation
+
+- May cause high CPU load
+
 
 [/slide]
+
