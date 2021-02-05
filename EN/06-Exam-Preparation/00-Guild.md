@@ -1,92 +1,79 @@
 [slide hideTitle]
-# Problem: Guild
-[code-task title="Guild" taskId="ebe69476-a484-4c52-9d12-dd5d26b13854" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+# Guild
+[code-task title="Guild" taskId="Java-OOP-Basics-Exam-Preparation-Guild" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-editor language=java-code]
 ```
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
 ```
 [/code-editor]
 [task-description]
-## Preparation
+## Preparation 
 
-Download the provided [skeleton](https://mega.nz/file/yQBBmCAY#3yPBdO0qi9r7yhPgRgAMpfLZ6W-2YGGfJLw-J9iER2U).
+**Pay attention to name the package guild, all the classes, their fields and methods the same way they are presented in the following document.**
 
+**It is also important to keep the project structure as described.**
 
-**Do not** change the **packages**!
-
-**Pay attention to name the package guild, all the classes, their fields, and methods the same way they are presented in the following document. It is also important to keep the project structure as described.**
-
-## Problem description
-
-Your task is to create a repository that stores players by creating the classes described below.
+## Description
+Your task is to create a repository which stores players by creating the classes described below.
 
 ## Player
 
-First, write a Java class `Player` with the following fields:
-
-- `name: String`
-- `clazz: String`
-- `rank: String – "Trial" by default`
-- `description: String – "n/a" by default`
+First, write a Java class **Player** with the following fields:
+- name: String
+- clazz: String
+- rank: String – "Trial" by default
+- description: String – "n/a" by default
 
 The class **constructor** should receive **name and clazz**. 
 
-You need to create the appropriate **getters and setters**. 
+You need to create the appropriate **getters and setters**. Override the **toString()** method in the following format:
 
-Override the `toString()` method in the following format:
+"Player {name}: {clazz}
 
-`Player {name}: {clazz}`
+Rank: {rank}
 
-`Rank: {rank}`
-
-`Description: {description}`
+Description: {description}"
 
 ## Guild
 
 **Next**, write a Java class **Guild** that has a **roster** (a collection which stores **Player** entities). 
 
-All entities inside the repository have the **same**  **fields**. 
+All entities inside the repository have the **same fields**. 
 
 Also, the **Guild** class should have those **fields**:
 
-- `name: String`
-- `capacity: int`
-
-The class **constructor** should receive **name** and **capacity**, also it should initialize the **roster** with a new instance of the collection.
+The class **constructor** should receive **name** and **capacity**, also it should initialize the **roster** with a new instance of the collection. 
 
 Implement the following features:
 
-- Method `addPlayer(Player player)` - **adds** an **entity** to the roster **if there is room** for it
-- Method `removePlayer(String name)` - removes a player by **given name**, if such **exists**, and **returns boolean**
-- Method `promotePlayer(String name)` - **promote** (**set his rank to "Member"**) the **first**  **player** with the **given name**. If the player is **already** a "Member", **do nothing**.
-- Method `demotePlayer(String name)` - **demote (set his rank to "Trial")** the first player with the **given** name. If the player is **already** a "Trial", **do nothing**.
-- Method `kickPlayersByClass(String clazz)` - removes all the players by the given class and returns **all removed players** from that **class as an array**
-- Method `count()` - **returns** the **number** of players
-- Method `report()` - **returns** a **String** in the following **format**:
+- Method **addPlayer(Player player)** - **adds** an **entity** to the roster **if there is room** for it
+- Method **removePlayer(String name)** - removes a player by **given name**, if such **exists**, and **returns boolean**
+- Method **promotePlayer(String name)** - **promote (set his rank to "Member")** the **first player** with the **given name**. If the player is **already** a "Member", **do nothing.**
+- Method **demotePlayer(String name)- demote (set his rank to "Trial")** the first player with the **given** name. If the player is **already** a "Trial",  **do nothing**.
+- Method **kickPlayersByClass(String clazz)** - removes all the players by the given class and returns **all removed players** from that **class as an array**
+- Method **count() - returns** the **number** of players
+- Method **report()** - **returns a String** in the following **format**:
 
 ```
-Players in the guild: {guildName}:
+ "Players in the guild: {guildName}:
+
 {Player1}
+
 {Player2}
-(...)
+
+(…)"
 ```
 
 ## Constraints
 
-- The **names** of the players will be **always unique**.
+- The **names** of the players will be **always unique.**
 - You will always have a player added before receiving methods manipulating the Guild's players.
 
 ## Examples
 
-This is an example of how the **Guild** class is **intended to be used**.
+This is an example how the **Guild** class is **intended to be used.** 
 
-``` java 
+``` java
 package guild;
 
 public class Main {
@@ -96,14 +83,15 @@ public class Main {
         //Initialize entity
         Player player = new Player("Mark", "Rogue");
         //Print player
-        System._out_.println(player); //Player Mark: Rogue
+        System.out.println(player); 
+        //Player Mark: Rogue
         //Rank: Trial
         //Description: n/a
 
         //Add player
         guild.addPlayer(player);
-        System._out_.println(guild.count()); //1
-        System._out_.println(guild.removePlayer("Gosho")); //false
+        System.out.println(guild.count()); //1
+        System.out.println(guild.removePlayer("Gosho")); //false
 
         Player firstPlayer = new Player("Pep", "Warrior");
         Player secondPlayer = new Player("Lizzy", "Priest");
@@ -123,15 +111,15 @@ public class Main {
         guild.promotePlayer("Lizzy");
 
         //Remove Player
-        System._out_.println(guild.removePlayer("Pep")); //true
+        System.out.println(guild.removePlayer("Pep")); //true
 
         Player[] kickedPlayers = guild.kickPlayersByClass("Rogue");
         for (Player kickedPlayer : kickedPlayers) {
-            System._out_.print(kickedPlayer.getName() + " ");
+            System.out.print(kickedPlayer.getName() + " ");
         }
         //Mark Mike
 
-        System._out_.println(guild.report());
+        System.out.println(guild.report());
         //Players in the guild: Weekend Raiders:
         //Player Lizzy: Priest
         //Rank: Member
@@ -141,6 +129,7 @@ public class Main {
         //Description: n/a
     }
 }
+
 ```
 
 [/task-description]
