@@ -1,5 +1,7 @@
-[slide]
 # Lesson Introduction
+[slide hideTitle]
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="489372226/26eeb00a96" default /]
@@ -10,7 +12,7 @@
 
 **1. Definition**
 
-- What is an Array?
+- What is an Array
 
 **2. Operations**
 
