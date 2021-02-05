@@ -4,10 +4,15 @@
 
 # Event Propagation
 
+Event propagation is a way to describe the "stack" of events that are fired in a web browser.
+
 In the browser we have 3 phases of event propagation:
-- Capturing phase – the event goes down to the element.
-- Target phase – the event reaches the target element.
-- Bubbling phase – the event bubbles up from the element.
+
+- Capturing phase: the event goes down to the element
+
+- Target phase: the event reaches the target element
+
+- Bubbling phase: the event bubbles up from the element
 
 [image assetsSrc="Dom-Manipulation(2).gif" /]
 
@@ -15,17 +20,18 @@ When clicking on the `<A>` element, the event first goes through the chain down 
 
 To catch an event on the **capturing phase**, we need to set the handler capture option to **true**.
 
-During this phase, only the capturers found on the path from the window to the event target parent are called.
+During this phase, only the capturers found on the path from the Window to the event target parent are called.
 
-If this parameter is omitted, its default value is **false** and the listener is not a **capturer**.
+If this parameter is omitted, its default value is **false**, and the listener is not a **capturer**.
+
 
 ```js
 el.addEventListener('click', listener, true);
 ```
 
-When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors. This is the **bubbling phase**.
+When an event happens on an element, it first runs the handlers on it, then on its parent, and then all the way up on other ancestors. This is the **bubbling phase**.
 
-In this example the handler is assigned to the `<div>` element, but also runs if you click on any nested tag like `<em>` or `<code>`.
+In this example, the handler is assigned to the `<div>` element, but it also runs if we click on any nested tag like  `<em>` or `<code>`.
 
 ```html
 <div onclick="alert('The handler!')">
@@ -33,11 +39,11 @@ In this example the handler is assigned to the `<div>` element, but also runs if
 </div>
 ```
 
-A bubbling event goes up to document object, and some events even reach window, calling all handlers on the path.
+A bubbling event goes up to "document" object, and some events even reach "window", calling all handlers on the path.
 
 We can stop the **bubbling** using a method called `event.stopPropagation()`.
 
-In this example `body.onclick` doesn’t work if you click on `<button>`.
+In this example, `body.onclick` does not work if we click on `<button>`.
 
 ```html
 <body onclick="alert(`the bubbling doesn't reach here`)">
@@ -67,19 +73,24 @@ Here are some of the event types used in the DOM.
 
 # Event object properties and methods
 
-Let us have a look at the Event Object now.
+Let us examine the Event Object.
 
-The **event object** is automatically passed to the **event handler function** to provide extra features and information.
+The **event handler function** could be an **anonymous function** or a **function declaration**.
 
-The event handler function could be an anonymous function or a function declaration.
+The argument `e`, which is passed to the function, is our **reference to the event object**.
 
-The argument `e` passed to the function is our reference to the event object. 
+The event object has many **properties** and **methods**. 
 
-It has a number of properties like:
+Some of the properties are:
+
+
 - target
+
 - timeStamp
+
 - isTrusted
-- clientX/Y
+
+- ClientX / ClientY
 
 ```js
 addBtn.addEventListener("click", function(e){
@@ -87,24 +98,32 @@ addBtn.addEventListener("click", function(e){
 })
 ```
 
-**target** property of the event object is a reference to the element event occured upon.
+The **target** event property returns the element that triggered the event.
 
-**timeStamp** is a read-only property of the event, which returns the time in milliseconds at which the event was created.
+The **timeStamp** event property is read-only. 
 
-**isTrusted** is a read-only property and it returns either **true** when the event was generated or **false** if the event was created or modified by a script.
+It returns the **time in milliseconds** from the beginning of the current document's lifetime till the event was created.
 
-**clientX/Y** is a read-only property which returns either the "X" or "Y" coordinates where the event occured.
+The **isTrusted** event property returns a Boolean value that is indicating whether the event is trusted or not.
 
-Also methods like:
-- preventDefault()
-- stopPropagation()
-- stopImmediatePropagation()
+The **clientX** property returns the horizontal coordinate (according to the client area) of the mouse pointer when a mouse event was triggered.
+
+The **clientY** property returns the vertical coordinate.
+
+
+Some of the methods are:
+
+- `preventDefault()`
+
+- `stopPropagation()`
+
+- `stopImmediatePropagation()`
 
 The `preventDefault()` method tells the user that if the event does not get explicitly handled, its default action should not be taken as it normally would be.
 
-The `stopPropagation()` method of the event prevents further propagation of the current event in the capturing and bubbling phases.
+The `stopPropagation()` method prevents further propagation of the current event in the capturing and the bubbling phases.
 
-The `stopImmediatePropagation()` method of the event prevents other listeners of the same event from being called.
+The `stopImmediatePropagation()` method prevents other listeners of the same event from being called.
 
 [/slide]
 
@@ -123,7 +142,7 @@ function solve(input){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **for this task.**
 
-Write a function that **reads** the text inside an input field and **appends** the specified text to a list inside an HTML page.
+Create a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
 [image assetsSrc="Dom-Manipulation(3).png" /]
@@ -206,7 +225,7 @@ function solve(input){
 [/code-editor]
 [task-description]
 # Description
-Write a function that **reads** the text inside an input field and **appends** the specified text to a list inside an HTML page.
+Create a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
 [image assetsSrc="Dom-Manipulation(3).png" /]

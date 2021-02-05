@@ -7,9 +7,12 @@
 Event registration is done by providing a callback function.
 
 There are 3 ways to register an event:
-- with HTML Attributes.
-- using DOM Element properties.
-- using DOM event handler.
+
+- with HTML Attributes
+
+- using DOM Element properties
+
+- using DOM event handler
 
 [/slide]
 
