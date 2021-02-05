@@ -9,13 +9,13 @@
 
 
 - Actions in NgRx Store
-  - Have a `have` in the form of a string
+  - Have a `type` in the form of a string
   - Contain a payload of data
 
 ```js
 import { createAction } from '@ngrx/store';
 
-// An action to increment
+// An action to increment a Counter Component
 export const increment = createAction(
   '[Counter Component] Increment'
 )
@@ -24,7 +24,7 @@ export const increment = createAction(
 
 - Reducers are responsible for handling transitions from one state to another
   - They are pure functions
-  - determine which action to handle based on the action's type
+  - Determine which action to handle based on the action's type
 
 
 ```js
