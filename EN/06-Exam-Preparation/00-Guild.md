@@ -130,7 +130,6 @@ public class Main {
 ```
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
