@@ -6,79 +6,79 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/06-Modules-And-Routing-Workshop.zip) **for this task.**
 
-We have created one dynamic page which lists all the themes sorted by two different criteria. 
+So far, we have created **one dynamic page** which **lists all themes** sorted by two different criteria.
 
-The next step is to implement a few more pages and routes between them. 
+The next step is to implement **few more pages** and **route between them**.
 
-Use the **HTML** and the **CSS** skeleton for all other additional pages that you must create. 
+You will be provided with **HTML** and **CSS** skeleton for all other additional pages that you must create.
 
-There is one catch, half of these pages require **authentication**. 
+There is one catch, half of these pages require **authentication**.
 
-You must create some properties or services that **fake this authentication**. 
+You must create some properties or services that fake this authentication.
 
-Because we do not know yet how to manipulate forms properly or the real case with the authentication and authorization, we will fix that later when we have the knowledge to do so.
+Because we do not know yet how to manipulate **forms** properly or the real case with the authentication and authorization. 
+
+We will fix that later when we have the knowledge to do so.
 
 [/slide]
 
 [slide hideTitle]
 
-# Logged in navigation bar
+# Navigation bar
 
-**Logged in**" "**user**" should be able to see the following navigations:
+## Logged in the navigation bar
+
+When the `user` is `logged in` he should see the following navigations: 
+
+The mini nav-bar includes: 
+
+- `[Username's profile]` a-tag should refer to the profile page: `localhost:4200/profile`. 
+
+- `[Logout]` a-tag should refer to `localhost:4200/logout`.
+
+The nav-bar below the logo of the SoftUni forum includes: 
+
+- `[Home]` a-tag should refer to the home page: `localhost:4200/home`.
+
+- `[Themes]` a-tag should refer to the "page with all themes" `localhost:4200/themes` 
+
+- `[New Theme]` a-tag should refer to the "create theme" `localhost:4200/add-theme`.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop.png" /]
 
-The mini nav-bar includes:
+## Not logged in the navigation bar
 
-**User's profile** - this tag should refer to the profile page `localhost:4200/profile`.
+When the user is "not logged in" he should see the following navigations: 
 
-**Logout** - a tag that refers to the logout URL `localhost:4200/logout`.
+The mini nav-bar includes: 
 
-The nav-bar below the logo of the SoftUni forum includes:
+- `[Login]` a-tag should refer to the home page `localhost:4200/login`
 
-**Home** - a tag that leads to the **Home** page `localhost:4200/home`.
-
-**Themes** - a tag that leads to all **Theams** page `localhost:4200/themes`.
-
-**New Theme** - a tag for creating a **Theme** `localhost:4200/add-theme`.
-
-[/slide]
-
-[slide hideTitle]
-
-# Not logged in navigation bar
-
-"**Not logged in**" users should see the following navigations:
+- `[Register]` a-tag should refer to `localhost:4200/register`
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(1).png" /]
 
-The mini nav-bar includes:
-
-**Login** - a tag that leads to the **Home** page `localhost:4200/login`.
-
-**Register** - a tag that leads to the **Register** page `localhost:4200/register`.
-
 [/slide]
 
 [slide hideTitle]
 
-# Home page - Not Logged in
+# Home page
 
-This is the home page URL `localhost:4200/home`. This is a welcome user page. 
+## Not Logged in
 
-We can reuse the **Welcome** component here.
+This is the home page URL `localhost:4200/home`. 
 
-All "**users**" can access this page when they visit the forum. 
+This is a welcome user page. 
 
-Here is how it looks like before the user has logged in:
+The welcome component that we have already can be reused here. 
+
+All `users` can access this page no matter their authentication. 
+
+The not logged in user view: 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(2).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Home page - Logged in
+## Logged in
 
 Logged in users will see the following view:
 
@@ -88,15 +88,18 @@ Logged in users will see the following view:
 
 [slide hideTitle]
 
-# Register - Not Logged in
+# Register: Not Logged in
+
 
 This is the URL of the register page `localhost:4200/register`. 
 
-At this point change the fake **isLoggedIn** property to **true**. 
+This will be the **point** of your app that the fake **isLoggedIn property** can be changed to true. 
 
-For now, we do not have a database with user registration, so make sure each registered user is stored in **userService** or some other appropriate place. 
+For now, we do not have a database with user registration. 
 
-This way each of them can be logged in successfully.
+So, make sure each registered user is stored in **userService** or some other appropriate place. 
+
+So, each of them can log in successfully. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(4).png" /]
 
@@ -104,13 +107,17 @@ This way each of them can be logged in successfully.
 
 [slide hideTitle]
 
-# Login - Not Logged in
+# Login: Not Logged in
 
 This is the URL of the login page `localhost:4200/login`. 
 
-Change the fake **isLoggedIn** property to **true**. 
+This will be another **one point** of your app that the fake **isLoggedIn property** can be changed to **true**. 
 
-For now, we do not have a database with user registration, so make sure each registered user is stored in **userService** or some other appropriate place. 
+For now, we do not have a database with user registration. 
+
+So, make sure each registered user is stored in **userService** or some other appropriate place. 
+
+Each of them can log in successfully.  
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(5).png" /]
 
@@ -118,25 +125,25 @@ For now, we do not have a database with user registration, so make sure each reg
 
 [slide hideTitle]
 
-# Themes page - Not Logged in
+# Themes page 
+
+## Not Logged in
 
 This is the themes page URL `localhost:4200/themes`.
 
-All "**users**" can access this page when they visit the main forum page. 
+This is the page we already have. 
+
+All `users` can access this page no matter their authentication. 
 
 By clicking the title of a theme, you will be redirected to the theme content view. 
 
-There are several differences between the logged and anonymous user. 
+It is described below. There are several differences between the logged and anonymous user. 
 
-The anonymous user should see the following:
+The anonymous user should see the following: 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(6).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Themes page - Logged in
+## Logged in
 
 This is the themes page URL `localhost:4200/themes` for logged in users.
 
@@ -148,19 +155,18 @@ Note: Because you are still not logged in, you can **hardcode** this userId `5fa
 
 [slide hideTitle]
 
-# Theme comments - Not Logged in
+# Theme comments 
 
-Note: Because you are still not logged in, you can **hardcode** this userId `5fa64b162183ce1728ff371d` in your service to write your logic regarding the subscribed users - **Red** and **Green** buttons.
+## Not Logged in
+
+This is the theme comments page (`localhost:4200/themes/:themeId`), where the user can see all the posts for the selected theme. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(8).png" /]
 
-[/slide]
 
-[slide hideTitle]
+## Logged in
 
-# Theme comments - Logged in
-
-**Logged in** user can write new comments or like other user's posts.
+The logged-in user can **write a new comment** or **like** the other user's posts. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(9).png" /]
 
@@ -170,13 +176,13 @@ Note: Because you are still not logged in, you can **hardcode** this userId `5fa
 
 # Create New Theme - Logged in only
 
-Create the new theme page URL `localhost:4200/themes` where each logged-in user can create a theme.
+This is the create new theme page (`localhost:4200/themes`) where each **user** (logged in) can create his own theme.  
 
-When the "**Post**" button is clicked, you can try to make the "**POST**" request to `localhost:4200/themes` with the given theme information. 
+- When the `Post` button is clicked, you can try to make a `POST` request to (`localhost:4200/themes`) with the given theme information. 
 
-After successful creation, redirect the current "**user**" to the theme comments page.
+After successful creation, redirect the current `user` to the theme comments page of his newly created theme. 
 
-When the "**Cancel**" button is clicked, redirect the user to the **Home** page.
+- When the `Cancel` button is clicked, redirect the user to the home page. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(10).png" /]
 
@@ -186,13 +192,13 @@ When the "**Cancel**" button is clicked, redirect the user to the **Home** page.
 
 # Profile - Logged in
 
-This is the profile page URL `localhost:4200/profile`. 
+This is the profile page (`localhost:4200/profile`). 
 
 This page will show the information about the currently logged-in user. 
 
-For now, the data on this page will be static, except if you create more than the fake **isLoggedIn** property. 
+For now, the data on this page will be static, except if you create more than the **fake isLoggedIn property**. 
 
-The "**Edit**" button will replace the information fields with input fields, but this will be made in the next workshop when you learn more about handling forms.
+The `Edit` button will replace the information fields with input fields, but this will be made in the next workshop when you learn more about handling forms. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(11).png" /]
 
@@ -202,17 +208,13 @@ The "**Edit**" button will replace the information fields with input fields, but
 
 # Invalid routes
 
-The page URL for all invalid routes `localhost:4200/??????`. 
+The page URL for all invalid routes `localhost:4200/??????`.
 
 Use it if an invalid path or wrong one is accessed.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop(12).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Protected routes
+## Protected routes
 
 Make sure all logged-in user pages are protected. 
 
