@@ -1,4 +1,5 @@
 # Validation
+
 [slide hideTitle]
 
 ## Data validation 
@@ -36,7 +37,9 @@ Validation happens inside the setter.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Validation Data
+
 [code-task title="Validation Data" taskId="3900f966-ff12-4a8d-a3c0-8c8fb499ae1c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -947,7 +950,9 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
+
 # Solution: Validation Data
+
 [code-task title="Validation Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

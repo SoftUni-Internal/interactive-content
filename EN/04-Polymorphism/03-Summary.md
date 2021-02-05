@@ -2,7 +2,7 @@
 # Summary
 
 
-## In this lesson we learned:
+## In this lesson you learned:
 
 - Polymorphism - Definition and Types
 
@@ -114,7 +114,7 @@ public class Cat extends Animal{
 
 ```
 
-## In the next lesson, we will learn:
+## In the next lesson, you will learn:
 
 - S.O.L.I.D Principles
 

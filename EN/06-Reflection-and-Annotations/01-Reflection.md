@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # What is Metaprogramming?
 
@@ -14,7 +14,9 @@ All objects in Java own `getClass()` method. This method allows us to determine 
 
 This might seem insignificant, but such reflection is not possible in less dynamic languages such as `C++`.
 
-The importance here is that Reflection is allowing us to write programs that do not have to **know** everything at compile time. That makes them more dynamic.
+The importance here is that Reflection is allowing us to write programs that do not have to **know** everything at compile time. 
+
+That makes them more dynamic.
 
 Lots of **frameworks** use reflection because of that. 
 
@@ -22,13 +24,10 @@ For example, if we need to write a framework that has to **interoperate** with *
 
 However, we must be aware when to use **Reflection** and when we try to avoid it.
 
+Lets see in what cases we **do not** use Reflection.
 
-Lets see in what cases we **don't** use Reflection.
+- Reflection is significantly **slower** rather than calling methods by their name, because it has to **inspect** the metadata instead of just using **precompiled addresses** and **constants**
 
-- Reflection is significantly **slower** rather than calling methods by their name, because it has to **inspect** the metadata instead of just using **precompiled addresses** and **constants**.
-
-- By using Reflection we can retrieve the definition of a `protected` or `final` member, remove the protection and manipulate it. This can be very dangerous for ur software security.
-
-
+- By using Reflection we can retrieve the definition of a `protected` or `final` member, remove the protection and manipulate it. This can be very dangerous for ur software security
 
 [/slide]

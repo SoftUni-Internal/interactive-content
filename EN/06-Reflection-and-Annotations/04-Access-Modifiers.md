@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Access Modifiers
 
@@ -45,7 +45,7 @@ Also, we are able to check if the modifiers are protected, public or static with
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Creating Arrays via Java Reflection
 
@@ -83,7 +83,7 @@ The array elements are: 2 9 3 0 7
 
 [slide hideTitle]
 # Problem: High Quality Mistakes
-[code-task title="Problem: High Quality Mistakes" taskId="10edd424-c9b8-44dd-af10-39a1d7d9b6c0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="High Quality Mistakes" taskId="10edd424-c9b8-44dd-af10-39a1d7d9b6c0" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -139,10 +139,60 @@ setEmail have to be private!
 [/code-task]
 [/slide]
 
-[slide]
-
-
+[slide hideTitle]
 # Solution: High Quality Mistakes
+[code-task title="High Quality Mistakes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You are already expert of **High Quality Code**, so you know what kind of **access modifiers** must be set to members of class. 
+
+Time for **revenge** has come. 
+
+Now you have to check code produced by your "**Beautiful and Smart**" trainers in class Reflection. 
+
+Check all **fields and methods access modifiers**. 
+
+Sort each category of members **alphabetically**. 
+
+Print on console all mistakes in **format**:
+- Fields
+
+**{fieldName} must be private!**
+- Getters
+
+**{methodName} have to be public!**
+- Setters
+
+**{methodName} have to be private!**
 
 
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+Blank Test
+[/input]
+[output]
+email must be private!
+name must be private!
+webAddress must be private!
+getWebAddress have to be public!
+getZip have to be public!
+setEmail have to be private!
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]

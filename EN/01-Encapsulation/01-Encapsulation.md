@@ -1,4 +1,5 @@
 [slide hideTitle]
+
 # Encapsulation
 
 **Encapsulation is a process of wrapping code and data together into a single unit**
@@ -28,13 +29,13 @@ class Person {
 
 # Encapsulation Example
 
-Fields should be **private** (-)
+Fields should be **private** (-):
 
 `-name: string`
 
 `-age: int`
 
-Accessors and Mutators should be **public** (+)
+Accessors and Mutators should be **public** (+):
 
 `+Person(String name, int age)`
 
@@ -49,6 +50,7 @@ Accessors and Mutators should be **public** (+)
 [/slide]
 
 [slide hideTitle]
+
 # Keyword This 
 
 - `.this` is a reference to the current object

@@ -1,5 +1,5 @@
-# Mutable and Immutable Objects
 [slide hideTitle]
+
 # Mutable vs Immutable Objects
 
 The contents of **mutable** objects **can be altered**:

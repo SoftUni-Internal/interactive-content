@@ -43,7 +43,7 @@ public class Student extends Person {
 - Consider **Composition** and **Delegation** instead
 
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 
 - What are Inheritance and Interfaces

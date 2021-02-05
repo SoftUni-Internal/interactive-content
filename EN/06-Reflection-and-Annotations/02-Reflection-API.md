@@ -1,5 +1,4 @@
-[slide]
-
+[slide hideTitle]
 
 # Reflection API
 
@@ -11,7 +10,7 @@ Instances that are inside the `Class` acts for interfaces and classes in a runni
 
 We can create object of `Class` by using one of the following options:
 
-- `.class` extension.
+- `.class` extension
 
 For example:
 
@@ -21,7 +20,7 @@ Class test = Dog.class;
 // We can use the test object to achieve reflection as this object will have all the needed information about the class Dog.
 ```
 
-- `forName()` method.
+- `forName()` method
 
 `forName()` method will take the name of the class and returns the Class object.
 
@@ -30,6 +29,12 @@ For example:
 ``` java
 Class test = Class.forName("Dog");
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Class Name
 
 Now, lets obtain the `Class` name:
 
@@ -46,6 +51,11 @@ Class myDogClass = Dog.class;
 String nameClass = myDogClass.getSimpleName();
 ```
 
+[/slide]
+
+[slide hideTitle]
+
+# Base Class and Interfaces
 
 We can also obtain our parent class like this:
 
@@ -79,59 +89,11 @@ Class[] interfaces = aClass.getInterfaces();
 ```
 
 
-Lets asume we have `class` Dog with methods inside:
-
-```java
-public class Dog extends Mammal {
-    public void makeSound() {
-        System.out.println("Woof woof!");
-    }
-    public void eat() {
-        System.out.println("Eating meat");
-    }
-    public void walk() {
-        System.out.println("Walking...");
-    }
-}
-
-```
-
-We can **obtain** this methods with following syntax:
-
-```java
-public class Main {
-    public static void main(String[] args) throws ClassNotFoundException {
-    Method[] methods = Dog.class.getMethods();
-    for (Method method : methods) {
-       System.out.println("method " + method.getName());
-    }
-```
-
-The output will be:
-```
-method walk
-method makeSound
-method eat
-method wait
-method wait
-method wait
-method equals
-method toString
-method hashCode
-method getClass
-method notify
-method notifyAll
-```
-
-We can see that besides the **custom methods** we wrote (walk, makeSound, eat) we also have default methods (wait, equals, toString, hashCode, etc).
-
-
-
 [/slide]
 
 [slide hideTitle]
 # Problem: Reflection
-[code-task title="Problem: Reflection" taskId="f4ea890c-82be-4e79-a370-9bd8d1be7655" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reflection" taskId="f4ea890c-82be-4e79-a370-9bd8d1be7655" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -195,8 +157,66 @@ zip: 1407
 [/code-task]
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Solution: Reflection
+[code-task title="Reflection" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+
+Import "**Reflection.java**" to your "**src**" folder in your project. 
+
+Try to use **reflection** and print some information about this class. 
+
+Print everything on new line:
+- **This class type**
+- **Super class type**
+- **All interfaces** that are implemented by this class
+- **Instantiate object** using reflection and print it too
+
+**Don’t change anything in "Reflection class"!**
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Blank Test
+[/input]
+[output]
+class Reflection
+class java.lang.Object
+interface java.io.Serializable
+Name: Java
+WebAddress: oracle.com
+email: mail@oracle.com
+zip: 1407
+[/output]
+[/test]
+[test]
+[input]
+Blank Test
+[/input]
+[output]
+class Reflection
+class java.lang.Object
+interface java.io.Serializable
+Name: Java
+WebAddress: oracle.com
+email: mail@oracle.com
+zip: 1407
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]

@@ -60,9 +60,11 @@ real.setName("Real Madrid");
 System.out.println(real.getName()); 
 				// Real Madrid
 ```
+
 [/slide]
 
 [slide hideTitle]
+
 # Public Access Modifier
 
 The **public** access modifier states that the given unit is visible and accessible for anyone, anywhere in the program:
@@ -79,6 +81,7 @@ public class Team {
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Sort by Name and Age
 [code-task title="Sort by Name and Age" taskId="fc07458b-3b86-4698-af22-a54efa5e87c5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

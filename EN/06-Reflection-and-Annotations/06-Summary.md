@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 
-# In this lesson we learned:
+## In this lesson you learned:
 
 - Reflection
 - Reflection API
@@ -12,7 +12,7 @@
 
 
 
-# In the next lesson, we will learn:
+## In the next lesson, you will learn:
 
 - Unit Testing
 - Junit

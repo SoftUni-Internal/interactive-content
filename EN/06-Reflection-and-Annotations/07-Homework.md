@@ -463,7 +463,7 @@ private Stream secretStream
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Black Box Integer
 [code-task title="Problem: Black Box Integer" taskId="d57619b4-cea9-4301-90ed-6830ddc952d5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -690,7 +690,7 @@ END
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: BarracksWars – A New Factory
 [code-task title="Problem: BarracksWars – A New Factory" taskId="d693c323-9f5e-4bbe-b32a-ec8c01e0dc75" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1087,7 +1087,7 @@ Swordsman -\> 2
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: BarracksWars – the Commands Strike Back
 [code-task title="Problem: BarracksWars – the Commands Strike Back" taskId="ee763407-6634-494b-a22f-74fa7fdac039" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1371,7 +1371,7 @@ Swordsman -\> 0
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: BarracksWars – Return of the Dependencies
 [code-task title="Problem: BarracksWars – Return of the Dependencies" taskId="9216a3a7-1d58-449e-ba63-aa9b30f7f227" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1590,10 +1590,4 @@ Swordsman -\> 0
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-# Homework Results
-[tasks-results/]
-
 [/slide]

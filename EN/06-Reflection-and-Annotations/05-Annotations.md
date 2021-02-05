@@ -1,6 +1,7 @@
-[slide]
+[slide hideTitle]
 
 # Annotations
+
 Now, lets find out what is Java Annotation.
 
 Annotations are kind of **metadata** that you can insert in your Java code.
@@ -8,6 +9,12 @@ Annotations are kind of **metadata** that you can insert in your Java code.
 They are Java types that are preceded by an "@" symbol and are used to **describes** parts of your code.
 
 Annotations can be applied to **Classes**, **Fields**, **Methods**, etc.
+
+[/slide]
+
+[slide hideTitle]
+
+# Annotation usage
 
 Lets see simple exaple of annotations:
 
@@ -19,6 +26,13 @@ public void deprecatedMethod() {
 ```
 
 These annotation are used to generate or suppress warnings and errors. It is good practice to apply them since it can prevent future programmer errors.
+
+[/slide]
+
+
+[slide hideTitle]
+
+# Built-in Annotations
 
 Here is example of some **Built-In** annotations:
 
@@ -36,6 +50,11 @@ public <T> void warning(int size) {
   T[] unchecked = (T[]) new Object[size]; // Where (T[]) generates compiler warning
 }
 ```
+[/slide]
+
+[slide hideTitle]
+
+# Creating Annotations
 
 We can create Custom Annotations using @interface keyword.
 
@@ -43,9 +62,9 @@ Here is other things to remember while creating custom annotations:
 
 - Methods can have default values
 
-- Return types are restricted to **primitives**, **String**, **Class**, **enums**, **annotations**, and **arrays** of the preceding types.
+- Return types are restricted to **primitives**, **String**, **Class**, **enums**, **annotations**, and **arrays** of the preceding types
 
-- Our method declarations must not throws any clause or have any parameters.
+- Our method declarations must not throws any clause or have any parameters
 
 Here is custom annotation Java example:
 
@@ -72,6 +91,12 @@ public class MyClass {
 
 }
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Meta Annotations 
 
 One more thing we can do is to specify where the annotation is applicable.
 
@@ -109,10 +134,12 @@ Other retention policies:
 - RUNTIME
 
 
+
+
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Obtaining Annotations
 
@@ -173,15 +200,37 @@ public class Testclass {
 ```
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Solution: Create Annotation
+[code-task title="Create Annotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create annotation **Subject** with a **String[]** element called **categories**, that: 
+- Should be available at runtime
+- Can be placed only on types
+
+# Example
+```java
+@Subject(categories {"Test", "Annotations"})
+public class Testclass {
+}
+```
 [/slide]
 
 [slide hideTitle]
 # Problem: Coding Tracker
-[code-task title="Problem: Coding Tracker" taskId="18d26a01-9dd1-4020-a967-e28a0672ec0c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Coding Tracker" taskId="18d26a01-9dd1-4020-a967-e28a0672ec0c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -220,9 +269,45 @@ Peter: printMethodsByAuthor()
 ```
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Solution: Coding Tracker
+[code-task title="Coding Tracker" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create annotation **Author** with a **String** element called **name**, that:
+- Should be available at runtime
+- Can be placed only on methods
+
+Create a class **Tracker** with a method:
+- **public static void printMethodsByAuthor()**
+
+
+# Example
+```java
+@Author (name = "George")
+public static void main(String[] args) {
+    Tracker.print Methods ByAuthor(Tracker.class);
+}
+
+@Author (name "Peter")
+public static void printMethodsByAuthor(Class<?> cl) {...}
+```
+## Output
+```java
+George: main()
+Peter: printMethodsByAuthor()
+```
 [/slide]
+
 
