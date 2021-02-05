@@ -10,6 +10,8 @@
 
 **It is also important to keep the project structure as described.**
 
+Download Resources From [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-OOP-Basics-Exam-Prep-01.Guild_Skeleton.zip)
+
 ## Description
 Your task is to create a repository which stores players by creating the classes described below.
 
