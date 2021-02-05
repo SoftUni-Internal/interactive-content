@@ -11,7 +11,7 @@
 
 ## In this lesson you will learn:
 
-**1. What is a Function?**
+**1. What is a Function**
 
 - Meaning of the term "function" in JavaScript 
 
