@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Even Numbers
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -12,7 +12,7 @@ function sumEvenNumbers(input){
 [/code-editor]
 [task-description]
 # Description
-Write a program which receives an array of strings, parse them to numbers and sum only the even numbers.
+Write a program which receives an array of strings, parses them to numbers and sums only the even numbers.
 
 # Example
 | **Input** | **Output** |
@@ -100,7 +100,7 @@ Write a program which receives an array of strings, parse them to numbers and su
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even and Odd Subtraction
 [code-task title="Even and Odd Subtraction" taskId="js-fundamentals-1-Arrays-Even-and-Odd-Substraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -121,10 +121,12 @@ Write a program that calculates the difference between the sum of the even and t
 |`['1','2','3','4','5','6']`| 3 |
 
 # Comments
+
 `2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
 
+&nbsp;
 
-# More Example
+# More Examples
   | **Input** | **Output** |
 | --- | --- |
 |`['3','5','7','9']`|\-24 |
@@ -245,7 +247,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Condense Array to Number
 [code-task title="Condense Array to Number" taskId="js-fundamentals-1-Arrays-Condense-Array-To-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -270,6 +272,8 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 
 # Comments
 `2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
+
+&nbsp;
 
 # More Examples
   | **Input** | **Output** |
@@ -386,7 +390,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add or Subtract
 [code-task title="Add or Subtract"taskId="js-fundamentals-1-Arrays-Add-or-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -405,6 +409,7 @@ Write a function, which changes the **value** of odd and even numbers in an arra
 
 - If the number is **odd** - **subtract** to its value its index position
 
+&nbsp;
 
 # Output
 
@@ -511,7 +516,7 @@ On the first line print the **newly modified array**, on the second line print t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Array Rotation
 [code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -628,7 +633,7 @@ Print the resulting array elements separated my single space.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Magic Sum
 [code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -643,6 +648,8 @@ function magicSum(input){
 Write a function, which prints all **unique** pairs in an array of integers whose **sum is equal** to a given number. 
 
 **The given number will be the first element in the array.**
+
+&nbsp;
 
 # Example
 | **Input** | **Output** |
