@@ -6,34 +6,33 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/08-Forms-Workshop.zip) **for this task.**
 
-Now that we have our forms, it is time to edit them, so that the given information is processed as expected. 
+At this point, the application has **forms**.
 
-Implement the following **validation**, **notification** and **styling** rules for each form.
+Now it is time to edit them so the given information is handled properly as expected.
 
-By default:
+Implement the following **validation**, **notification** and **styling rules** for each form.
+
+**By default:** 
+
 - The input fields are **neutral** (neither valid nor invalid). 
 
-If some of the fields are **touched**, you should determine the status of validation from the given data inside it.
+If some of the fields are touched, you should determine the status of validation from the given data inside it.
 
 - Each input field is **required**.
 
-**Notifications** should be shown, as paragraph `<p>` elements below each input field or button.
+**Notifications** should be shown as paragraph (`<p>`) elements **below** each input field or button.
 
-The notification **below each button** should display the **status** of the **form validation**:
+The notification **below each button** should display the **status** of the form **validation**: 
 
-- If the status is **untouched** or **valid** the **left border** of the input field must be **green**, else **red**.
+- If the status is **untouched** or **valid** the **left border** of the input field must be green, else red.
 
-- If the status is **invalid**:
+- If the status is invalid, use - `You can't continue until you provide valid data` as text or the default text provided from the skeleton. 
 
-Use - "**You can't continue until you provide a valid data**" as text or the default text provided from the skeleton. 
+**The color** inside that paragraph should be "red" and the **button** should be **disabled**.
 
-The **color** inside that paragraph should be "**red**" and the **button** should be **disabled**.
+- If the status is **valid** just **remove** the notification and **enable** the **button**.
 
-- If the status is **valid**:
-
-Just **remove** the **notification** and **enable** the **button**.
-
-For more clarity check the examples below each form.
+Check the examples below each form for more clarity. 
 
 [/slide]
 
@@ -41,99 +40,95 @@ For more clarity check the examples below each form.
 
 # Valid or Invalid Cases
 
-In case some of the input fields аrе **invalid**, the following **input field** should be styled with class **input-error**.
-
-Use the following style:
+- **Valid Cases**
+In case some of the input fields аrе invalid, the following **input field** should be styled with class input-error, which has the following style: 
 
 ```css
 border-left-color: red;
 ```
 
-**Notification** should be shown with information about the validation. 
+And **notification** should be shown with information about the validation. 
 
-The text inside that paragraph also should be **red**.
+The text inside that paragraph also should be red. 
 
-When the input field is filled with **valid** information, the class **input-error** should be **disabled**.
+- **Invalid Cases**
 
-In this case the left border should be **green** again.
-
-[/slide]
-
-[slide hideTitle]
-
-# Reactive Forms Login
-
-Use the model-driven **reactive** approach to build the **login** and the **register** form.
-
-The login form expects as input **email** and **password**.
-
-Valid credentials in this case are:
-
-- **Email address**: 
-
-Must be at least **6 characters** long, followed by the "At" symbol - `@`. 
-
-The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
-
-**Top-level** domain can be "**bg**" or "**com**".
-
-- **Valid** email addresses: 
-
-`testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
-
-- **Invalid** email addresses: 
-
-`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
-
-- **Password**: 
-
-Must be at least **5 characters** long.
-
-[image assetsSrc="Angular-Forms-Workshop.png" /]
+When the input field is filled with **valid** information, the class input-error should be **disabled** or **removed** so the left border should be green again.
 
 [/slide]
 
 [slide hideTitle]
 
-# Reactive Forms Register
+# Reactive Forms 
+
+Use the **model driven** (**reactive**) **approach** to build login and the **register** form. 
+
+## Login
+
+Valid credentials in this case are: 
+
+- **Email address** must have at least 6 symbols, after that the symbol `@` is followed. 
+
+The valid domain name is only `Gmail` again followed by `.`. 
+
+The top-level domain can be `bg` or `com`. 
+
+   - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`. 
+
+   - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`.
+
+- **Password** should be at least **5 symbols** as well
+
+[image assetsSrc="Angular-Forms-Workshop-1.png" /]
+
+[image assetsSrc="Angular-Forms-Workshop-2.png" /]
+
+[image assetsSrc="Angular-Forms-Workshop-3.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Register
 
 The register form expects as input: **username**, **email**, **password**, **repeat password** and **telephone number** (not required).
 
-- Username validation:
+**Username validation** here is:
 
-Must be at least **5 characters** long and is **required**.
+- Should have at least **5 symbols** and is **required**.
 
-- Email validation:
+**Email validation** here is the same as the log in case:
 
-Must be at least **6 characters** long, followed by the "At" symbol - `@`.
+- Should have at least 6 symbols, after that the symbol of `@` is followed. 
 
-The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
+The valid domain name is only `Gmail` again followed by `.`. 
 
-**Top-level** domain can be "**bg**" or "**com**".
+The top-level domain can be `bg` or `com`.
 
-- **Valid** email addresses: 
+   - Valid email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`.
 
-`testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`
-
-- **Invalid** email addresses: 
-
-`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+   - Invalid email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`.
 
 **Both passwords** should be grouped in the "**passwords**" group. 
 
-- Password validation:
+The validation here is:
 
-The given **password** must be at least **5 characters** long (any English letter and digits are allowed).
+- The given **password** should be at **least 5 characters** (any English letter and digits are allowed).
 
-The given **repeat password** must be the **same** as the given **password**.
+- The given **repeat password should** be the **same** as the given password.
 
 **Both fields** are considered **invalid** if some of them **do not cover** the described validation. 
 
-If that happens, apply the **invalid stylization** for both. 
+If that happens apply the **invalid stylization for both**. 
 
-Otherwise, apply the valid stylization.
+Otherwise the **valid stylization** is applied.
 
-[image assetsSrc="Angular-Forms-Workshop(1).png" /]
+[image assetsSrc="Angular-Forms-Workshop-4.png" /]
+
+[image assetsSrc="Angular-Forms-Workshop-5.png" /]
+
+[image assetsSrc="Angular-Forms-Workshop-6.png" /]
+
 
 [/slide]
 
@@ -141,27 +136,25 @@ Otherwise, apply the valid stylization.
 
 # Template-driven Forms
 
-Use the template-driven approach to build create a new theme and change user information form.
+Use the **template-driven approach** to build the **create new theme** and the **change user information** form.
 
-[/slide]
 
-[slide hideTitle]
-
-# New Theme
+## New Theme
 
 The new theme form expects as input: **theme name**, **post text**.
 
-- Valid data:
+Valid data in this case is:
 
-Theme name - must be at least **5 characters** long.
+- **Theme name**: should be at **least 5 characters** long.
 
-Post text - must be at least **10 characters** long.
+- **Post text**: should be at **least 10 characters** long.
 
-[image assetsSrc="Angular-Forms-Workshop(2).png" /]
+The `Post` button should be **disabled** if the inputs are **NOT** valid.
 
-The "**Post**" button should be **disabled** if the inputs are **NOT** valid.
 
-[image assetsSrc="Angular-Forms-Workshop(3).png" /]
+[image assetsSrc="Angular-Forms-Workshop-7.png" /]
+
+[image assetsSrc="Angular-Forms-Workshop-8.png" /]
 
 [/slide]
 
@@ -169,50 +162,40 @@ The "**Post**" button should be **disabled** if the inputs are **NOT** valid.
 
 # Change Profile Information
 
-When you are logged in you can see your profile information.
+When you are logged in you can see your **profile information**.
 
-[image assetsSrc="Angular-Forms-Workshop(4).png" /]
+[image assetsSrc="Angular-Forms-Workshop-9.png" /]
 
-By clicking the "**Edit**" button, the profile information should be turned into **form with editable fields**. 
+By clicking the `Edit` button, the profile information should be turned into **form with editable fields**. 
 
 The input fields should have the current information of the user.
 
-[image assetsSrc="Angular-Forms-Workshop(5).png" /]
+[image assetsSrc="Angular-Forms-Workshop-10.png" /]
 
-- Username validation:
+**Username validation** here is the same as the register case:
 
-Must be at least **5 characters** long and is **required**.
+- Should have at least **5 symbols** and is **required**.
 
-- Email validation:
+**Email** validation is the same as the login and register cases:
 
-Must be at least **6 characters** long, followed by the "At" symbol - `@`. 
+- Should have at least **6 symbols**, after that the symbol of `@` is followed. 
 
-The valid **domain name** is only "**gmail**", followed by a dot - "**.**". 
+The valid domain name is only `Gmail` again followed by `.`.
 
-Top-level domain can be "**bg**" or "**com**".
+The top-level domain can be `bg` or `com`.
 
-- **Valid** email addresses: 
+   - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `somethingelse@gmail.com`.
 
-`testing@gmail.com`, `testing@gmail.bg`, `somethingelse@gmail.com`
+   - **Invalid** email addresses:`qwe@gmail.com`,`123@gmail.bg`, `somethingelse@abv.bg`,`another@abv.com`.
 
-- **Invalid** email addresses: 
+If the validation passes, the `Save` button should be enabled, and the user can make a **post** request to change the information.
 
-`qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`
+If the `Cancel` button is clicked all changes must be **reverted**, and the user information should be displayed **unchanged**.
 
-If the validation passes, the "**Save**" button should be **enabled**, and the user can make a post request to change the information.
+## Custom Directives
 
-If the "**Cancel**" button is **clicked** all changes must be **reverted**, and the user information should be displayed **unchanged**.
+Think about for a second which logic can be isolated in custom directive so you avoid repeating part of the code.
 
-[/slide]
-
-[slide hideTitle]
-
-# Custom Directives
-
-Think about for a second which logic can be isolated in the custom directive, so you avoid repeating part of the code.
-
-**Hint:** Stylization and Validation.
+**Hint: Stylization / Validation**
 
 [/slide]
-
-
