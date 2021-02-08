@@ -334,6 +334,11 @@ function condense(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -345,7 +350,7 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 
   | **Input** | **Output** |
 | --- | --- |
-|`['2','10','3']`| 25 |
+|`[2, 10, 3]`| 25 |
 
 # Comments
 `2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
@@ -355,8 +360,8 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 # More Examples
   | **Input** | **Output** |
 | --- | --- |
-|`['5','0','4','1','2']`| 35 |
-|`['1']`| 1 |
+|`[5, 0, 4, 1, 2]`| 35 |
+|`[1]`| 1 |
 
 # Hints
 
@@ -371,6 +376,36 @@ While we have more than one element in the array `nums[]`, repeat the following:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+10
+3
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+5
+0
+4
+1
+2
+[/input]
+[output]
+35
+[/output]
+[/test]
+[test]
+[input]
+1
+[/input]
+[output]
+1
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -477,6 +512,11 @@ function addOrSubstract(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -494,7 +534,7 @@ On the first line print the **newly modified array**, on the second line print t
 
   | **Input** | **Output** |
 | --- | --- |
-|`['5', '15', '23', '56', '35']`| `[ 5, 14, 21, 59, 31 ]` |
+|`[5, 15, 23, 56, 35]`| `[ 5, 14, 21, 59, 31 ]` |
 || 134|
 || 130 |
 |`[-5, 11, 3, 0, 2]`| `[ 5, 14, 21, 59, 31 ]` |
@@ -503,6 +543,34 @@ On the first line print the **newly modified array**, on the second line print t
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+15
+23
+56
+35
+[/input]
+[output]
+[ 5, 14, 21, 59, 31 ]
+124
+130
+[/output]
+[/test]
+[test open]
+[input]
+-5
+11
+3
+0
+2
+[/input]
+[output]
+[ 5, 14, 21, 59, 31 ]
+11
+15
+[/output]
+[/test]
 [test]
 [input]
 2
