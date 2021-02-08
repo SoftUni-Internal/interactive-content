@@ -1,6 +1,7 @@
 
 [slide hideTitle]
 # Console (Terminal)
+
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
 It usually looks like a black colored window like this one:
@@ -22,10 +23,7 @@ VS Code has its own console, which we are going to use to read input and print o
 [slide hideTitle]
 # Log Variables on the Console
 
-[vimeo-video]
-[stream language="EN" videoId="486855670/d118990c90" default /]
-[stream language="RO" videoId="486855670/d118990c90"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-16-17-Console-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The console is useful for testing purposes
 
@@ -42,10 +40,7 @@ console.log(firstNum + secondNum);
 [slide hideTitle]
 # Reading User Input
 
-[vimeo-video]
-[stream language="EN" videoId="486855737/188e2502e0" default /]
-[stream language="RO" videoId="486855737/188e2502e0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-18-Reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In software systems, the user input could come from many sources, like User Interface (UI) controls.
 
@@ -59,10 +54,7 @@ Programs can also take the user data (input) from some rest API or as parameter 
 [slide hideTitle]
 # Functions and Parameters
 
-[vimeo-video]
-[stream language="EN" videoId="486855856/06a253a610" default /]
-[stream language="RO" videoId="486855856/06a253a610"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-19-Functions-and-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use functions and Invoke the function by name 
 
@@ -101,10 +93,7 @@ When we enter **Buccuresht**, the output will be as follows: `I am from Buccures
 [slide hideTitle]
 # Passing Multiple Parameters
 
-[vimeo-video]
-[stream language="EN" videoId="486855964/c2b23e3efb" default /]
-[stream language="RO" videoId="486855964/c2b23e3efb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-20-Passing-Multiple-Parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can pass **multiple parameters to a function.** 
 
@@ -135,10 +124,7 @@ console.log(firstNum);
 [slide hideTitle]
 # Formatting Output
 
-[vimeo-video]
-[stream language="EN" videoId="486856070/5392c79701" default /]
-[stream language="RO" videoId="486856070/5392c79701"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-21-21-demo-Formatting-Outputs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript allows us to format floating-point numbers.
 
@@ -173,10 +159,7 @@ The `$` prefix before a string in JS enables the so called **string interp
 [slide hideTitle]
 # Reading Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="486856186/d812421fbc" default /]
-[stream language="RO" videoId="486856186/d812421fbc"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-22-Parsing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In order to read a **number** from the console, we have to **declare a variable** and use the standard command for **reading a text line** from the system console and after that **convert the text line into a number** using `Number(text)`:
 
@@ -273,10 +256,7 @@ Hello, George
 [slide hideTitle]
 # Solution: Greeting
 
-[vimeo-video]
-[stream language="EN" videoId="486856341/87210226f4" default /]
-[stream language="RO" videoId="486856341/87210226f4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
