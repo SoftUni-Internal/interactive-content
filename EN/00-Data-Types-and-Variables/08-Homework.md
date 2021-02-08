@@ -1399,7 +1399,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [test open]
 [input]
 25.5
--
+\-
 3
 [/input]
 [output]
