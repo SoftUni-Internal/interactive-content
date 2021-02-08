@@ -2,10 +2,7 @@
 
 # Programming Languages
 
-[vimeo-video]
-[stream language="EN" videoId="486835179/05cf7da9f0" default /]
-[stream language="RO" videoId="486835179/05cf7da9f0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-13-14-Programming-Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A programming language is an **artificial language** for issuing commands that we want the computer to **read**, **process** and **execute**. 
 
@@ -35,10 +32,7 @@ It **executes the commands** in the program one after another, as it is able to 
 
 # The JavaScript Language
 
-[vimeo-video]
-[stream language="EN" videoId="486835254/ca97b0af6b" default /]
-[stream language="RO" videoId="4486835254/ca97b0af6b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-15-The-JavaScript-Language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript is **prototype-based**, **multi-paradigm**, **dynamic language**. 
 
@@ -62,10 +56,7 @@ Supports **imperative**, **functional** and **object-oriented** programming with
 
 # JavaScript Execution
 
-[vimeo-video]
-[stream language="EN" videoId="486835379/12b65918cb" default /]
-[stream language="RO" videoId="486835379/12b65918cb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-16-JavaScript-Execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we have already mentioned, a program is a **sequence of commands**. 
 Otherwise said, it contains a sequence of **calculations**, **evaluations**, **iterations**, and all kinds of similar operations, which **aim to obtain a certain result**. 
