@@ -10,9 +10,10 @@ They look like regular functions but use the event loop to work asynchronously.
 
 "Async" functions consist of two parts:
 
-- `async` keyword: Placed in **front of the function's declaration**. Specifies that the `await` keyword might be used with asynchronous operations inside the function.
+- `async` - Placed in **front of the function's declaration**. Specifies that the `await` keyword might be used with asynchronous operations inside the function.
 
-- `await` keyword: **Used only in "async functions"**. If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
+
+- `await` - **Used only in "async functions"**. If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
 
 Here is an example of how "async" functions are structured:
 
