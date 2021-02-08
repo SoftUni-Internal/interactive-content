@@ -673,15 +673,15 @@ function arrayRotation(arr){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+(input, code) => code(Number(input.unshift()), input.map(Number));
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array** and number of rotations you have to perform (first element goes at the end).
+Write a function that receives an **array** and the number of rotations you have to perform (the first element goes at the end).
 
-The first element of the input array is the number of rotations you have to perform, so the array you have to perform the actions with starts on the second element of the initial array.
+The first element of the input is the number of rotations you have to perform. The second element is the array you have to perform the rotations.
 
 # Output
 
@@ -689,15 +689,14 @@ Print the resulting array elements separated my single space.
 
 | **Input** | **Output** |
 | --- | --- |
-|`[2, 51, 47, 32, 61, 21]`| 32 61 21 51 47 |
-|`[4, 32, 21, 61, 1]`| 32 21 61 1 |
-|`[5, 2, 4, 15, 31]`|4 15 31 2|
+|`2, [51, 47, 32, 61, 21]`| 32 61 21 51 47 |
+|`4, [32, 21, 61, 1]`| 32 21 61 1 |
+|`5, [2, 4, 15, 31]`|4 15 31 2|
 
 [/task-description]
 [tests]
 [test open]
 [input]
-2
 51
 47
 32
@@ -710,7 +709,6 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-4
 32
 21
 61
@@ -722,7 +720,6 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-5
 2
 4
 15
@@ -841,22 +838,69 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['8', '1', '7', '6', '2', '19', '23']`| 1 7 |
+|`[8, 1, 7, 6, 2, 19, 23]`| 1 7 |
 || 6 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['27', '14', '20', '60', '13', '7', '19', '8']`| 14 13 |
+|`[27, 14, 20, 60, 13, 7, 19, 8]`| 14 13 |
 ||20 7 |
 ||19 8 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['6', '1', '2', '3', '4', '5', '6']`| 1 5 |
+|`[6, 1, 2, 3, 4, 5, 6]`| 1 5 |
 || 2 4 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+8
+1
+7
+6
+2
+19
+23
+[/input]
+[output]
+1 7
+6 2
+[/output]
+[/test]
+[test open]
+[input]
+27
+14
+20
+60
+13
+7
+19
+8
+[/input]
+[output]
+14 13
+20 7
+19 8
+[/output]
+[/test]
+[test open]
+[input]
+6
+1
+2
+3
+4
+5
+6
+[/input]
+[output]
+1 5
+2 4
+[/output]
+[/test]
 [test]
 [input]
 14
