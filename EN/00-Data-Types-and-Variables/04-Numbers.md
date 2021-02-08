@@ -106,11 +106,32 @@ Your task is to find their **sum** and print it to the console with an addition:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|9, 100, 1.1]| 110.1 - Float |
-|100, 200, 303]|603 - Integer|
+|9, 100, 1.1| 110.1 - Float |
+|100, 200, 303|603 - Integer|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+9
+100
+1.1
+[/input]
+[output]
+110.1 - Float
+[/output]
+[/test]
+[test open]
+[input]
+100
+200
+303
+[/input]
+[output]
+603 - Integer
+[/output]
+[/test]
 [test]
 [input]
 9
@@ -210,13 +231,34 @@ Your task is to find their **sum** and print it to the console with an addition:
 
 
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |9, 100, 1.1| 110.1 - Float |
 |100, 200, 303|603 - Integer|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+9
+100
+1.1
+[/input]
+[output]
+110.1 - Float
+[/output]
+[/test]
+[test open]
+[input]
+100
+200
+303
+[/input]
+[output]
+603 - Integer
+[/output]
+[/test]
 [test]
 [input]
 9
