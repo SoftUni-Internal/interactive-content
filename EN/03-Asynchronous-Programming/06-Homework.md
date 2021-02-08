@@ -85,7 +85,7 @@ When the app starts, the **forecast div** is **hidden**. When the user **enters 
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-1.jpg" /]
 
-```js
+```html
 <div id="request">...</div>
 <div id="forecast" style="display:none">
     <div id="current">...</div>
@@ -95,7 +95,7 @@ When the app starts, the **forecast div** is **hidden**. When the user **enters 
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-3.jpg" /]
 
-```js
+```html
 <div id="request">...</div>
 <div id="forecast" style="display: block;">
     <div id="current">
