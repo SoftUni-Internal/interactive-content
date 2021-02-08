@@ -673,7 +673,7 @@ function arrayRotation(arr){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(Number(input.unshift()), input.map(Number));
+(input, code) => {return code(JSON.parse(input[1]).map(Number), Number(input[0]))}
 ```
 [/code-adapter]
 [task-description]
@@ -838,25 +838,24 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[8, 1, 7, 6, 2, 19, 23]`| 1 7 |
+|`8, [1, 7, 6, 2, 19, 23]`| 1 7 |
 || 6 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`[27, 14, 20, 60, 13, 7, 19, 8]`| 14 13 |
+|`27, [14, 20, 60, 13, 7, 19, 8]`| 14 13 |
 ||20 7 |
 ||19 8 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`[6, 1, 2, 3, 4, 5, 6]`| 1 5 |
+|`6, [1, 2, 3, 4, 5, 6]`| 1 5 |
 || 2 4 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-8
 1
 7
 6
@@ -871,7 +870,6 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test open]
 [input]
-27
 14
 20
 60
@@ -888,7 +886,6 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test open]
 [input]
-6
 1
 2
 3
