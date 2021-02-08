@@ -42,9 +42,13 @@ interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-
 [code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -114,9 +118,13 @@ interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-
 [code-task title="Numbers from N down to 1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-  
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -186,9 +194,13 @@ interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-on
 [code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-  
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -262,9 +274,13 @@ interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-on
 [code-task title="Numbers from 1 to N with Step 3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-  
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -338,9 +354,13 @@ interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-
 [code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-  
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -413,9 +433,13 @@ interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-
 [code-task title="Even Powers of 2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
-public static void Main(string[] args) {
-  
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      
+    }
 }
+
 ```
 [/code-editor]
 [task-description]
