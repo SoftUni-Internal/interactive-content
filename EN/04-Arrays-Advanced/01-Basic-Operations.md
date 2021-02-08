@@ -1,6 +1,6 @@
 # Basic Operations
 
-[slide]
+[slide hideTitle]
 # Overview
 
 [vimeo-video]
@@ -14,33 +14,35 @@ We can use arrow functions in some of the advanced methods.
 
 Advanced functionality of an array consists of the following functions:
 
-- `push(el)` – adds one or more elements to the end of an array and returns the new length of the array
+- `push(element)` – adds one or more elements to the end of an array and returns the new length of the array
 
 - `pop()` – removes the **last** element from an array and returns that element
 
 - `shift()` – removes the **first** element from an array and returns that element
 
-- `unshift(el)` – **adds new items to the beginning** of an array, and returns the new **length**
+- `unshift(element)` – **adds new items to the beginning** of an array, and returns the new **length**
 
-- `includes(el)` – determines whether an **array includes a certain element**, returnes `true` or `false`
+- `includes(element)` – determines whether an **array includes a certain element**, returnes `true` or `false`
 
-- `indexOf(el)` – returns the index of an element, or returns -1, if it cannot find the element
+- `indexOf(element)` – returns the index of an element, or returns -1, if it cannot find the element
 
 Basically, these methods modify the array, and we do not need to write a whole bunch of code, which saves lots of time. 
 
 [/slide]
 
-[slide]
-# Add and Remove Functions
+[slide hideTitle]
+# Add at the End, Remove from the End
 
 [vimeo-video]
 [stream language="EN" videoId="489374677/3350dbaf69" default /]
 [stream language="RO" videoId="489374677/3350dbaf69"  /]
 [/video-vimeo]
 
-Add at the End, Remove from the End.
+JavaScript has **built-in methods** for adding and removing elements both from the end and the beginning of an array.
 
-The `array.push()` method is used to add a new element at the end of the array.
+## Adding an Element at the End of an Array
+
+The `array.push()` method is used to **add a new element at the end** of the array.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -50,9 +52,11 @@ array.push(5);
 console.log(array);
 ```
 
-The `array.pop()` method is used to obtain and remove the element at the end of the array.
+## Removing an Element at the End
 
-If we call `array.pop()` on an empty array, it returns **undefined.** 
+The `array.pop()` method is used to **obtain and remove the element at the end** of the array.
+
+If we call `array.pop()` on an empty array, it returns **undefined.** 
 
 ``` js live
 let array = [1, 2, 3, 4, 5];
@@ -65,15 +69,17 @@ console.log(number);
 
 [/slide]
 
-[slide]
-# Add to the Beginning, Remove from the Beginning 
+[slide hideTitle]
+# Add at the Start, Remove from the Start
 
 [vimeo-video]
 [stream language="EN" videoId="489374731/d3be54a729" default /]
 [stream language="RO" videoId="489374731/d3be54a729"  /]
 [/video-vimeo]
 
-The `array.unshift()` method is used to add a new element to the beginning of an array.
+## Adding an Element at the Beginning of an Array
+
+The `array.unshift()` method is used to **add a new element to the beginning** of an array.
 
 ``` js live
 let array = [1, 2, 3, 4];
@@ -83,10 +89,12 @@ array.unshift(0);
 console.log(array);
 ```
 
-The `array.shift()` method is used to obtain and remove an element from the beginning of the array.
+## Removing an Element at the Beginning
+
+The `array.shift()` method is used to **obtain and remove an element from the beginning** of the array.
 
 ``` js live
-let array = [0,1, 2, 3, 4, 5];
+let array = [0, 1, 2, 3, 4, 5];
 
 let number = array.shift();
 
@@ -95,7 +103,7 @@ console.log(number);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum First Last
 
 [vimeo-video]
@@ -103,7 +111,7 @@ console.log(number);
 [stream language="RO" videoId="489374765/676b788b0c"  /]
 [/video-vimeo]
 
-[code-task title="Sum First Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sumFirstLast(input){
@@ -112,11 +120,11 @@ function sumFirstLast(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that calculates and prints the sum of the first and the last elements of an array. 
+Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array. 
 
-The input comes as an array of `string` elements, holding numbers. 
+The **input** comes as an **array** of `string` elements, holding **numbers**. 
 
-The output should be the value, which is returned from the function. 
+The **output** should be the **value, which is returned from the function**. 
 
 ## Examples
 | **Input** | **Output** |
@@ -185,8 +193,8 @@ The output should be the value, which is returned from the function.
 
 [/slide]
 
-[slide]
-# Problem: Sum First Last
+[slide hideTitle]
+# Solution: Sum First Last
 
 [vimeo-video]
 [stream language="EN" videoId="489374493/acd64c96be" default /]
@@ -197,20 +205,16 @@ The output should be the value, which is returned from the function.
 [code-editor language=javascript]
 ```
 function sumFirstLast(input){
-  let firstNum = Number(input.pop());
-  let lastNum = Number(input.shift());
-
-  let result = firstNum + lastNum;
-  console.log(result);
+  // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-Write a function that calculates and prints the sum of the first and the last elements of an array. 
+Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array.
 
-The input comes as an array of `string` elements, holding numbers. 
+The **input** comes as an **array** of `string` elements, holding **numbers**. 
 
-The output should be the value, which is returned from the function. 
+The **output** should be the **value, which is returned from the function**. 
 
 ## Examples
 | **Input** | **Output** |
@@ -279,7 +283,7 @@ The output should be the value, which is returned from the function.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Pushing Into an Array
 
 [vimeo-video]
@@ -287,18 +291,19 @@ The output should be the value, which is returned from the function.
 [stream language="RO" videoId="489374828/cbd47a4e46"  /]
 [/video-vimeo]
 
-The `array.push()` method adds one or more elements to the end of an array and returns the new length:
+The `array.push()` method **adds** one or more elements **to the end of an array** and **returns the new length**:
 
 ``` js live
 let fruits = ['apple','banana','kiwi'];
 
-fruits.push('pineapple', 'orange');
+let newLength = fruits.push('pineapple', 'orange');
 
 console.log(fruits);
+console.log(newLength);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Shifting and Unshifting Into an Array
 
 [vimeo-video]
@@ -306,7 +311,7 @@ console.log(fruits);
 [stream language="RO" videoId="489374831/7be466e53c"  /]
 [/video-vimeo]
 
-The `array.shift()` method removes the first element of an array:
+The `array.shift()` method **removes the first element** of an array:
 
 ``` js live
 let myArray = ["one","two","three","four","five"];
@@ -316,7 +321,7 @@ myArray.shift();
 console.log(myArray);
 ```
 
-The `array.unshift()` method adds elements  to the beginning of an array:
+The `array.unshift()` method **adds elements to the beginning** of an array:
 
 ``` js live
 let myArray = ["red","green","blue"];
@@ -324,9 +329,12 @@ myArray.unshift("purple");
 
 console.log(myArray);
 ```
+
+It also returns the **new length** of the array.
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Negative or Positive Numbers
 
 [vimeo-video]
@@ -334,7 +342,7 @@ console.log(myArray);
 [stream language="RO" videoId="491173934/f975ab3bb3"  /]
 [/video-vimeo]
 
-[code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function negativePositive(arr){
@@ -345,13 +353,13 @@ function negativePositive(arr){
 [/code-editor]
 [task-description]
 
-Write a function that processes all the elements of an array one by one and creates a new array. 
+Write a function that processes **all the elements of an array one by one** and **creates a new array**. 
 
-Append each negative element to the beginning, and each positive (or 0) element, to the end of the new array. 
+Append each **negative** element to the **beginning**, and each **positive** (or 0) element, to the **end** of the new array. 
 
-The input comes as an array of `string` elements, holding numbers. 
+The **input** comes as an **array** of `string` elements, holding **numbers**. 
 
-The output has to be printed on the console, each element on a new line. 
+The **output** has to be **printed to the console**, each element on a **new line**.
 
 
 ## Examples
@@ -371,9 +379,9 @@ The output has to be printed on the console, each element on a new line.
 
 ## Hints
 
-- Use `unshift()` to add an element at the first position
+- Use `unshift()` to add an element at the **first** position
 
-- Use `push()` to add an element at the last position
+- Use `push()` to add an element at the **last** position
 
 
 [/task-description]
@@ -490,7 +498,7 @@ The output has to be printed on the console, each element on a new line.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Negative or Positive Numbers
 
 [vimeo-video]
@@ -504,29 +512,19 @@ The output has to be printed on the console, each element on a new line.
 [code-editor language=javascript]
 ```
 function negativePositive(arr){
-  let resultArr = [arr[0]];
-
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] < 0) {
-            resultArr.unshift(arr[i]);
-        } else {
-            resultArr.push(arr[i]);
-        }
-    }
-    console.log(resultArr.join('\r\n'));
+  // Write your code here
 }
-
 ```
 [/code-editor]
 [task-description]
 
-Write a function that processes all the elements of an array one by one and creates a new array. 
+Write a function that processes **all the elements of an array one by one** and **creates a new array**. 
 
-Append each negative element to the beginning, and each positive (or 0) element, to the end of the new array. 
+Append each **negative** element to the **beginning**, and each **positive** (or 0) element, to the **end** of the new array. 
 
-The input comes as an array of `string` elements, holding numbers. 
+The **input** comes as an **array** of `string` elements, holding **numbers**. 
 
-The output has to be printed on the console, each element on a new line.
+The **output** has to be **printed to the console**, each element on a **new line**.
 
 
 ## Examples
@@ -546,9 +544,9 @@ The output has to be printed on the console, each element on a new line.
 
 ## Hints
 
-- Use `unshift()` to add an element at the first position
+- Use `unshift()` to add an element at the **first** position
 
-- Use `push()` to add an element at the last position
+- Use `push()` to add an element at the **last** position
 
 [/task-description]
 [tests]
@@ -664,7 +662,7 @@ The output has to be printed on the console, each element on a new line.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Find Values
 
 [vimeo-video]
@@ -672,21 +670,21 @@ The output has to be printed on the console, each element on a new line.
 [stream language="RO" videoId="489374946/5dbb522344"  /]
 [/video-vimeo]
 
-The `array.includes()` returns true if the given value is part of the array.
+The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
 
-let isGeorgeInclude = myArray.includes('George');
-let isJohnInclude =myArray.includes('John');
+let isGeorgeIncluded = myArray.includes('George');
+let isJohnIncluded = myArray.includes('John');
 
-console.log(isGeorgeInclude);
-console.log(isJohnInclude);
+console.log(isGeorgeIncluded);
+console.log(isJohnIncluded);
 ```
 
-The `array.indexOf()` returns the index, where the given value is stored.
+The `array.indexOf()` method returns the **index at which the given value is stored**.
 
-It returns `-1` if the value is not found. 
+It returns the **special value** `-1` if the value is **not found**. 
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
