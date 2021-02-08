@@ -1,11 +1,23 @@
-# Problem 3: The Pianist
 
 [slide hideTitle]
+# Problem 3: The Pianist
+
+[code-task title="The Pianist" taskId="js-fundamentals-2-finaleExam-The-Pianist" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
 # Description
 
-On the first line of the input you will receive an **integer** `n` - representing the number of pieces that you will initially have.
 
-On the next `n` lines you will be receiving the titles of each piece, followed by its **composer and key**, separated by `|` in the following format:
+On the first line of the input, you will receive an **integer** `n` - representing the number of pieces that you will initially have.
+
+On the next `n` lines, you will receive the title of each piece, followed by its **composer and key**, separated by `|` in the following format:
+
 
 `{piece}|{composer}|{key}`
 
@@ -13,9 +25,9 @@ Then, you receive **different commands**, each on a new line, separated by `|`, 
 
 * Command `Add|{piece}|{composer}|{key}`: 
 
-You need to **add the piece with the information** about it to the other pieces.
+You need to **add the piece and the information** about it to the other pieces.
 
-If the piece is **already in the collection**, print: 
+If the piece is **already in the collection**, you should print:
 
 `{piece} is already in the collection!`
 
@@ -25,11 +37,13 @@ If the **piece is not in the collection**, print:
 
 * Command `Remove|{piece}`:
 
-If the **piece is in the collection**, remove it and print: 
+If the **piece is in the collection**, you have to remove it. 
+
+Then, you have to print the following message:
 
 `Successfully removed {piece}!`
 
-If the **piece is not in the collection**, print: 
+If the **piece is not in the collection**, you need to print:
 
 `Invalid operation! {piece} does not exist in the collection.`
 
@@ -43,33 +57,24 @@ If the **piece is not in the collection**, print:
 
 `Invalid operation! {piece} does not exist in the collection.`
 
-Upon receiving the `Stop` command you need to print all pieces in the collection, sorted by their **name and by the name of their composer in alphabetical order**, in the following format:
+Upon receiving the ю command, you need to print all pieces in the collection, sorted by their **name and by the name of their composer in alphabetical order**, in the following format:
 
 `{Piece} -> Composer: {composer}, Key: {key}`
 
 ## Input
 
-* You will receive a single integer at first - the initial number of pieces in the collection
+- First, you will receive a single integer - the initial number of pieces in the collection.
 
-* For each piece you will receive a single line of text with information about it.
+- For each piece, you will receive a single line of text containing information about it.
 
-* Then you will receive multiple commands in the way described above until the command `Stop` is given.
+- Then, you will receive multiple commands in the way described above, until you receive the command `Stop`.
+
 
 ## Output
 
 * All the output messages with the appropriate formats are described in the problem description.
 
-[code-task title="The Pianist" taskId="js-fundamentals-2-finaleExam-The-Pianist" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Examples
+## Examples
 
 **Input** 
 `['3', 'Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop']`
@@ -86,15 +91,17 @@ Moonlight Sonata \-\> Composer: Beethoven, Key: C\# Major
 Sonata No.2 \-\> Composer: Chopin, Key: B Minor
 
 **Comments:**
-After we receive the initial pieces with their info, we start receiving commands. 
+After you receive the initial pieces and the information about them, you start receiving commands.
 
-The first two commands are to add a piece to the collection and since the pieces are not already added, we manage to add them.
+The first two commands are to add a piece to the collection. Since the pieces are not in the collection, you add them.
 
-The third add command, however, **attempts to add a piece**, which is already in the collection, so we **print the appropriate message** and do not add the piece.
+By the third command, which is also `add`, you **attempt to add a piece** that is already in the collection, so you **print the appropriate message**, but you do not add the piece.
 
-After that, we receive the **remove command** and since the piece **is in the collection**, we remove it successfully.
+After that, you receive the `remove` command. 
 
-The last command **requires us to change the key of a piece.**
+Since the piece **is in the collection**, you remove it successfully.
+
+The last command **requires changing the key of a piece**.
 
 Since the key is **present in the collection**, we **modify** its key.
 
