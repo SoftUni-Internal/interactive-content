@@ -836,7 +836,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [tests]
 [test open]
 [input]
-1 7 6 2 19 23
+\[ 1 7 6 2 19 23 \]
 8
 [/input]
 [output]
@@ -846,7 +846,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test open]
 [input]
-14 20 60 13 7 19 8
+\[ 14 20 60 13 7 19 8 \]
 27
 [/input]
 [output]
@@ -857,7 +857,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test open]
 [input]
-1 2 3 4 5 6
+\[ 1 2 3 4 5 6 \]
 6
 [/input]
 [output]
@@ -867,7 +867,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-1 5 3 7 7
+\[ 1 5 3 7 7 \]
 14
 [/input]
 [output]
@@ -876,7 +876,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-14 67 43 7 19 8
+\[ 14 67 43 7 19 8 \]
 15
 [/input]
 [output]
@@ -885,7 +885,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-43 1 23 43 45 5
+\[ 43 1 23 43 45 5 \]
 6
 [/input]
 [output]
@@ -894,7 +894,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-6 5 3 4 3 3
+\[ 6 5 3 4 3 3 \]
 7
 [/input]
 [output]
@@ -905,7 +905,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-46 3 43
+\[ 46 3 43 \]
 46
 [/input]
 [output]
@@ -914,7 +914,7 @@ Write a function, which prints all **unique** pairs in **an array of integers** 
 [/test]
 [test]
 [input]
-4 1 2 3
+\[ 4 1 2 3 \]
 5
 [/input]
 [output]
