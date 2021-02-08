@@ -1,10 +1,7 @@
 [slide hideTitle]
 # The break Statement
 
-[vimeo-video]
-[stream language="EN" videoId="487120852/ddd6c46acb" default /]
-[stream language="RO" videoId="487120852/ddd6c46acb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-21-22-The-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 The `break` statement stops the execution of a loop at the time it is called and continues from the first line after the end of the loop.
@@ -21,11 +18,7 @@ If you are using nested loops, this statement will stop the execution of the inn
 
 # Break Function Example
 
-[vimeo-video]
-[stream language="EN" videoId="487120871/e1cde26cec" default /]
-[stream language="RO" videoId="487120871/e1cde26cec"  /]
-[/video-vimeo]
-
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-23-Example-with-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example breaks the loop when the input is an odd number:
 ```js
