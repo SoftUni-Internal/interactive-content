@@ -6,7 +6,16 @@
 [stream language="RO" videoId="487118285/74e8a9a9c7"  /]
 [/video-vimeo]
 
-## Description
+[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 
 You have been hired by a cinema to write a program that calculates whether the cinema hall is full and how much will the profit be.
 
@@ -17,7 +26,6 @@ If the number of people currently entering the hall can be divided by 3 without 
 If there are no more free seats in the hall, the program must stop reading input from the console.
 
 If the number of entering viewers, exceeds the number of seats left in the hall, it should be considered full and the program should finish.
-
 
 # Input
 Read from the console:
@@ -41,16 +49,6 @@ First, print on of these lines:
 - Afterwards, print: 
 
 `Cinema income - {income}$`
-
-[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Intrare** | **Ieșire** |

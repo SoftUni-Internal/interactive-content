@@ -6,6 +6,15 @@
 [stream language="RO" videoId="487118285/74e8a9a9c7"  /]
 [/video-vimeo]
 
+[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
 ## Descriere
 
 Ați fost angajat de un cinematograf să scrieți un program care să calculeze profitul obținut în cazul în care sala este plină. 
@@ -42,15 +51,6 @@ First, print on of these lines:
 
  `Cinema income - {income}$`
 
-[code-task title="Cinema Income" taskId="js-pb-exam-preparation-Cinema-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
 # Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
