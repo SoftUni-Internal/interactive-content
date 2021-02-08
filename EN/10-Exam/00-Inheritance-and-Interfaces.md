@@ -1,7 +1,0 @@
-[slide]
-
-# Final Exam
-
-
-
-[/slide]
