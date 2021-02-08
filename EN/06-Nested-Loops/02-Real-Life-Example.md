@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Real-Life Example: Clock
 
-[vimeo-video]
-[stream language="EN" videoId="488090119/185587dfb3" default /]
-[stream language="RO" videoId="488090119/185587dfb3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-11-12-real-life-example-clock-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="06-nested-loops-clock-1159.png" /]
 
