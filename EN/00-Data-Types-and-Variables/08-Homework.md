@@ -523,6 +523,34 @@ Use `parseInt()` while dividing to get only integer numbers.
 40 -> False
 [/output]
 [/test]
+[test]
+[input]
+6
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+7 -> True
+8 -> False
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -601,6 +629,7 @@ aaa
 3
 [/input]
 [output]
+aaa
 aab
 aac
 aba
@@ -623,6 +652,10 @@ cab
 cac
 cba
 cbb
+cbc
+cca
+ccb
+ccc
 [/output]
 [/test]
 [test]
@@ -917,6 +950,146 @@ dda
 ddb
 ddc
 ddd
+[/output]
+[/test]
+[test]
+[input]
+0
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+aaa
+aab
+aac
+aad
+aae
+aba
+abb
+abc
+abd
+abe
+aca
+acb
+acc
+acd
+ace
+ada
+adb
+adc
+add
+ade
+aea
+aeb
+aec
+aed
+aee
+baa
+bab
+bac
+bad
+bae
+bba
+bbb
+bbc
+bbd
+bbe
+bca
+bcb
+bcc
+bcd
+bce
+bda
+bdb
+bdc
+bdd
+bde
+bea
+beb
+bec
+bed
+bee
+caa
+cab
+cac
+cad
+cae
+cba
+cbb
+cbc
+cbd
+cbe
+cca
+ccb
+ccc
+ccd
+cce
+cda
+cdb
+cdc
+cdd
+cde
+cea
+ceb
+cec
+ced
+cee
+daa
+dab
+dac
+dad
+dae
+dba
+dbb
+dbc
+dbd
+dbe
+dca
+dcb
+dcc
+dcd
+dce
+dda
+ddb
+ddc
+ddd
+dde
+dea
+deb
+dec
+ded
+dee
+eaa
+eab
+eac
+ead
+eae
+eba
+ebb
+ebc
+ebd
+ebe
+eca
+ecb
+ecc
+ecd
+ece
+eda
+edb
+edc
+edd
+ede
+eea
+eeb
+eec
+eed
+eee
 [/output]
 [/test]
 [/tests]
