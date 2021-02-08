@@ -2,6 +2,21 @@
 
 [slide hideTitle]
 
+[code-task title="Mountain Run" taskId="JavaScript-Programming-Basics-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
+[task-description]
+
 # Description
 
 George decides to improve the record for the fastest climb to Mont Blanc.
@@ -15,7 +30,6 @@ Create a function that determines **whether he has coped with the task**, given 
 **Calculate** the seconds George will need to climb the **distance** to the top and the time **difference from the record**.
 
 When **calculating how many times George will slow down** as a result of the slope of the field's slope, the result should be **rounded down to the nearest whole number.**
-
 
 ## Input
 
@@ -47,29 +61,13 @@ Printing on the console depends on the results:
 
 The result must be **formatted** to the second digit after the decimal point.
 
-[code-task title="Mountain Run" taskId="JavaScript-Programming-Basics-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
 |`[10164, 1400, 25]` | No! He was 25676.00 seconds slower. |
 
-
-## Comments
+**Comments**
 
 - George has to **climb 1400 m.**:  `1400 * 25 = 35000 seconds`
 

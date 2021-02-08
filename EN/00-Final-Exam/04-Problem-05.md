@@ -1,6 +1,16 @@
-# Problem 5: Care of Puppy
 
 [slide hideTitle]
+# Problem 5: Care of Puppy
+
+[code-task title="Care of Puppy" taskId="JavaScript-Programming-Basics-final-exam-Care-of-Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
 
 # Description
 Annie finds a puppy to take care of until she finds someone to adopt it.
@@ -31,24 +41,13 @@ One line is printed on the console:
 
  `Food is not enough. You need {need the amount of food} grams more.`
 
-
-[code-task title="Care of Puppy" taskId="JavaScript-Programming-Basics-final-exam-Care-of-Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
 |`['4', '130' ,'345', '400', '180', '230', '120' ,'Adopted']` | Food is enough! Leftovers: 2595 grams. |
 
-# Comments
+**Comments**
 
 - The **purchased** amount of food is `4 kg = 4 * 1000 = 4000 grams.`
 

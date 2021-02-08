@@ -1,8 +1,23 @@
-# Problem 1: Study Materials
-
 [slide hideTitle]
 
+# Problem 1: Study Materials
+
+[code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
+[task-description]
 # Description
+
 The school year has already started and Annie has to buy a certain number of **packets of pencils**, **markers**, and a **detergent** for cleaning the board. 
 
 She is a regular customer of a bookstore, and there is a **discount** for her, which represents a **percentage** of the total.
@@ -49,28 +64,13 @@ Print on the console how much money Annie will need to pay her bill.
 
 The result should be **formatted** to the third decimal place.
 
-[code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
 |`[2, 3, 2.5, 25]` | 27.150 |
 
-# Comments
+**Comments**
 
 - Price for the **pencils**: `2 * 5.80 = 11.60`
 

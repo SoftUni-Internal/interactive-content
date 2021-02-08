@@ -1,7 +1,16 @@
-# Problem 6: Tournament of Christmas 
 
 [slide hideTitle]
+# Problem 6: Tournament of Christmas 
 
+[code-task title="Tournament of Christmas" taskId="JavaScript-Programming-Basics-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+   // Write your code here
+}
+```
+[/code-editor]
+[task-description]
 # Description
 
 Create a function that tracks your team's performance at a Christmas charity tournament. 
@@ -17,7 +26,6 @@ If you have **more games won than lost** - **you are the winner of the day** and
 At the **end of the tournament**, if you have been the winner most days, you **win the tournament and increase all the money won by 20%.**
 
 You will never have an equal number of won and lost games.
-
 
 ## Input
 
@@ -51,24 +59,13 @@ Finally, one line is printed:
 
 The money should be **formatted to the second digit after the decimal point.**
 
-
-[code-task title="Tournament of Christmas" taskId="JavaScript-Programming-Basics-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
 |`['2', 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']` | You won the tournament! Total raised money: 132.00 |
 
-# Comments
+**Comments**
 
 The tournament **is 2 days.**
 

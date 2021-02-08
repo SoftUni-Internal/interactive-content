@@ -1,6 +1,22 @@
-# Problem 4: Food for Pets
 
 [slide hideTitle]
+
+# Problem 4: Food for Pets
+
+[code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
+[task-description]
 
 # Description
 Annie has two pets - a dog and a cat. 
@@ -18,7 +34,6 @@ Your function should print **statistics about the amount of cookies they ate**.
 - What **percentage** of total food they ate.
 
 - What **percentage of the food the dog ate** and how much the cat ate.
-
 
 ## Input
 
@@ -38,7 +53,6 @@ Total amount of food: a number in the range \[0.00…10000.00\]
 
 - The amount of food eaten by the cat: a number in the rang \[10…500\]
 
-
 ## Output
 
 Print four lines on the console:
@@ -55,23 +69,7 @@ The amount of **cookies eaten must be rounded to the nearest whole number.**
 
 The percentage of food **must be formatted to the second digit after the decimal point.**
 
-
-[code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-
-# Example
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
@@ -80,7 +78,7 @@ function solve(input) {
 || 85.00% eaten from the dog. |
 || 15.00% eaten from the cat. |
 
-# Comments
+**Comments**
 
 We have **3 days** and a total amount of food: **1000 grams.**
 
