@@ -12,20 +12,20 @@
 
 **1. Asynchronous programming**
 
-- What asynchronous programming is, its benefits, and use case.
+- What asynchronous programming is, its benefits, and use case
 
-- How the event loop works.
+- How the event loop works
 
 **2. Promises**
 
-- What a JavaScript promise represents.
+- What a JavaScript promise represents
 
-- Different methods and states of a promise.
+- Different methods and states of a promise
 
 **3. Async / Await**
 
-- How `async` functions differ from promises.
+- How `async` functions differ from promises
 
-- Benefits of `async` functions and when to use them.
+- Benefits of `async` functions and when to use them
 
 [/slide]
