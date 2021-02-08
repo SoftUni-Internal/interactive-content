@@ -1108,6 +1108,13 @@ function sumDigits(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a **function** which will be given a single **number**. 
@@ -1116,12 +1123,29 @@ Your task is to find the sum of its digits.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['245678']`| 32 |
-|`['97561']`| 28 |
-|`['543']`| 12 |
+|245678| 32 |
+|97561| 28 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+245678
+[/input]
+[output]
+32
+[/output]
+[/test]
+[tests]
+[test open]
+[input]
+97561
+[/input]
+[output]
+28
+[/output]
+[/test]
 [test]
 [input]
 9465
