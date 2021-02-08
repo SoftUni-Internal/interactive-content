@@ -12,6 +12,9 @@ function guessThePassword(input) {
 [/code-editor]
 [task-description]
 # Description
+
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a program to check a password:
 
 * Read a string: the password **guess**
@@ -61,6 +64,9 @@ function boilingWater(input) {
 [/code-editor]
 [task-description]
 # Description
+
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem2-Boiling-Water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a program, which checks for hot water: 
 
 * Read a floating-point number: the water **temperature** (in °C)
