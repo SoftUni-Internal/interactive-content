@@ -666,7 +666,7 @@ On the first line print the **newly modified array**, on the second line print t
 [code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayRotation(arr){
+function arrayRotation(arr, num){
   // Write your code here
 }
 ```
@@ -797,46 +797,47 @@ Print the resulting array elements separated my single space.
 [code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function magicSum(input){
+function magicSum(arr, num){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(JSON.parse(input[0]).map(Number), Number(input[1]))}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function, which prints all **unique** pairs in an array of integers whose **sum is equal** to a given number. 
-
-**The given number will be the first element in the array.**
+Write a function, which prints all **unique** pairs in **an array of integers** whose **sum** is **equal** to a given number. 
 
 &nbsp;
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`8, [1, 7, 6, 2, 19, 23]`| 1 7 |
+|`[1, 7, 6, 2, 19, 23], 8`| 1 7 |
 || 6 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`27, [14, 20, 60, 13, 7, 19, 8]`| 14 13 |
+|`[14, 20, 60, 13, 7, 19, 8], 27`| 14 13 |
 ||20 7 |
 ||19 8 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`6, [1, 2, 3, 4, 5, 6]`| 1 5 |
+|`[1, 2, 3, 4, 5, 6], 6`| 1 5 |
 || 2 4 |
 
+
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
-1
-7
-6
-2
-19
-23
+1 7 6 2 19 23
+8
 [/input]
 [output]
 1 7
@@ -845,13 +846,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test open]
 [input]
-14
-20
-60
-13
-7
-19
-8
+14 20 60 13 7 19 8
+27
 [/input]
 [output]
 14 13
@@ -861,11 +857,7 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test open]
 [input]
-1
-2
-3
-4
-5
+1 2 3 4 5 6
 6
 [/input]
 [output]
@@ -875,12 +867,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+1 5 3 7 7
 14
-1
-5
-3
-7
-7
 [/input]
 [output]
 7 7
@@ -888,13 +876,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+14 67 43 7 19 8
 15
-14
-67
-43
-7
-19
-8
 [/input]
 [output]
 7 8
@@ -902,13 +885,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+43 1 23 43 45 5
 6
-43
-1
-23
-43
-45
-5
 [/input]
 [output]
 1 5
@@ -916,13 +894,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+6 5 3 4 3 3
 7
-6
-5
-3
-4
-3
-3
 [/input]
 [output]
 3 4
@@ -932,10 +905,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+46 3 43
 46
-46
-3
-43
 [/input]
 [output]
 3 43
@@ -943,11 +914,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+4 1 2 3
 5
-4
-1
-2
-3
 [/input]
 [output]
 4 1
@@ -955,8 +923,6 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
