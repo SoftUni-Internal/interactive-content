@@ -38,11 +38,8 @@ myFunction('I love JavaScript!');
 
 ## In the next lesson, you will learn:
 
-- Basic perations over Arrays
-
-- Manipulating arrays
-
-- Array iteration
-
-- Mapping and sorting arrays
+- Basic operations over arrays
+  - Manipulating arrays
+  - Array iteration
+  - Mapping and sorting arrays
 [/slide]
