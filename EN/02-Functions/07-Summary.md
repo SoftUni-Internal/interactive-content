@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -9,31 +9,34 @@
 ## In this lesson you learned:
 
 - Functions are often used to break large programs into simple pieces of code
-
-- They consist of a declaration and a body
+  - They consist of a declaration and a body
+  
 ```js
 function myFunction(){
   //function  body
 }
 ```
+
 - Functions are invoked by typing in their name in the program code
+
 ```js live
 function myFunction(){
-  console.log('Hello JavaScript!');
+  console.log('Hello World!');
 }
 
 myFunction();
 ```
+
 - Functions can accept parameters
 ```js live
 function myFunction(input){
   console.log(input);
 }
 
-myFunction('Hello JavaScript!');
+myFunction('I love JavaScript!');
 ```
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
 - Basic perations over Arrays
 
