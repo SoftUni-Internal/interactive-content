@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Commands in the Computer Programs
 
-[vimeo-video]
-[stream language="EN" videoId="486855548/f48e0caa24" default /]
-[stream language="RO" videoId="486855548/f48e0caa24"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-14-15-Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The actions that a program takes, are expressed as **statements**.
 
