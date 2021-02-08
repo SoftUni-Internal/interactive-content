@@ -46,7 +46,7 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 Round the time up to the nearest whole number.
 
-# Example
+## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['Game of Thrones', '60', '96']`| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|

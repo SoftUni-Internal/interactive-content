@@ -53,7 +53,7 @@ Imprimați pe consolă:
 
 `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
 
-# Example
+## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['Matrix', 'Breaking bad', 'Legend', 'STOP']`| The best movie for you is Breaking bad its ASCII sum is: 878.|

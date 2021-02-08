@@ -28,7 +28,7 @@ Dacă nu mai rămân locuri libere în sală, programul trebuie să oprească ci
 Dacă numărul de spectatori care intră, depășește numărul de locuri rămase în sală, sala  trebuie să fie considerată ca fiind plină și programul trebuie să se oprească. 
 
 
-# Intrare
+## Intrare
 Citiți de pe consolă:
 
 - Lini 1: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
@@ -51,7 +51,8 @@ First, print on of these lines:
 
  `Cinema income - {income}$`
 
-# Example
+## Example
+
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|

@@ -41,7 +41,7 @@ Print out on the console the time needed to watch all of the episodes, rounded d
 
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['Lucifer', '3', '18', '55']`| Total time needed to watch the Lucifer series is 3594 minutes.|

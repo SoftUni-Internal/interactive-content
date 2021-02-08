@@ -47,9 +47,7 @@ The output should consist of one line:
 
 Round the time up to the nearest whole number.
 
-## Input
-
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['Game of Thrones', '60', '96']`| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|

@@ -53,7 +53,7 @@ Imprimați o linie pe consolă:
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 
-# Example
+## Example
 
 | **Intrare** | **Ieșire** |
 | --- | --- |

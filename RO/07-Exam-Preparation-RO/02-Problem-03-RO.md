@@ -52,7 +52,7 @@ Imprimați o linie pe consolă:
 
 * Prețul ar trebui fomratat la două cifre după punctul zecimal
 
-# Example
+## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['John Wick', 'Drink', '6']`| Your bill is 72.00$|

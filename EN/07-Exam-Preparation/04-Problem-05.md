@@ -7,8 +7,6 @@
 [stream language="RO" videoId="487118385/044812fcf3"  /]
 [/video-vimeo]
 
-
-
 [code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -18,7 +16,7 @@ function solve(input) {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. 
 
 You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
@@ -29,12 +27,12 @@ Some of the series have a discount:
 - **Lucifer**: 40\%	
 - **Protector**: 30\%
 - **TotalDrama**: 20\%
-- **Area**:10\%
+- **Area**: 10\%
 
 ## Input
 You receive from the console:
 - Budget: real number in the range \[10.0… 100.0\]
-- Count series: `n` – whole number in the range \[1… 10\]
+- Count series: `n` - whole number in the range \[1… 10\]
 
 For each series you receive two lines:
 - Name of the series: string
@@ -53,7 +51,7 @@ Print one line on the console:
 
 The result must be formatted to two digits after the decimal point.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['3', 'Thrones', '5', 'Riverdale', '5', 'Gotham', '2']`| You bought all the series and have 0.50$ left.|

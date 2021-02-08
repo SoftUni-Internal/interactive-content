@@ -47,7 +47,7 @@ Print one line on the console: `Your bill is {total price}$`
 
  * The price must be formatted to two digits after the decimal point.
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['John Wick', 'Drink', '6']`| Your bill is 72.00$|

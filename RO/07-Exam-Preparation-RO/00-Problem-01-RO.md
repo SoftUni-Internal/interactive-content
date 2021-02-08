@@ -6,7 +6,16 @@
 [stream language="RO" videoId="487118037/76e61cd949"  /]
 [/video-vimeo]
 
-## Descriere
+[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+   // Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
 Scrieți un program care calculează cât timp vă va lua să vedeți toate episoadele unui serial TV, în minute.
 
 Ca date de intrare, veți primi un număr de episoade, numărul de episoade din fiecare sezon și durata fiecărui episod. 
@@ -32,16 +41,6 @@ Ca intrare veți primi 4 linii de pe consolă:
 Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg în următorul format:
 
 `Total time needed to watch the {numele seriei} series is {timp} minutes.`
-
-[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-   // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Intrare** | **Ieșire** |

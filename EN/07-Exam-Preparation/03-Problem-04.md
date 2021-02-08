@@ -27,7 +27,7 @@ If there are no more free seats in the hall, the program must stop reading input
 
 If the number of entering viewers, exceeds the number of seats left in the hall, it should be considered full and the program should finish.
 
-# Input
+## Input
 Read from the console:
 
 - First line: the hall capacity – whole number in the range  \[50... 150\]
@@ -50,7 +50,7 @@ First, print on of these lines:
 
 `Cinema income - {income}$`
 
-# Example
+## Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
