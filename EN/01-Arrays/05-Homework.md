@@ -553,7 +553,7 @@ On the first line print the **newly modified array**, on the second line print t
 [/input]
 [output]
 [ 5, 14, 21, 59, 31 ]
-124
+134
 130
 [/output]
 [/test]
@@ -566,7 +566,7 @@ On the first line print the **newly modified array**, on the second line print t
 2
 [/input]
 [output]
-[ 5, 14, 21, 59, 31 ]
+[ -5, 10, 1, 3, 6 ]
 11
 15
 [/output]
@@ -671,6 +671,11 @@ function arrayRotation(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -684,12 +689,49 @@ Print the resulting array elements separated my single space.
 
 | **Input** | **Output** |
 | --- | --- |
-|`['2','51', '47', '32', '61', '21']`| 32 61 21 51 47 |
-|`['4', '32', '21', '61', '1']`| 32 21 61 1 |
-|`['5', '2', '4', '15', '31']`|4 15 31 2|
+|`[2, 51, 47, 32, 61, 21]`| 32 61 21 51 47 |
+|`[4, 32, 21, 61, 1]`| 32 21 61 1 |
+|`[5, 2, 4, 15, 31]`|4 15 31 2|
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+51
+47
+32
+61
+21
+[/input]
+[output]
+32 61 21 51 47
+[/output]
+[/test]
+[test open]
+[input]
+4
+32
+21
+61
+1
+[/input]
+[output]
+32 21 61 1
+[/output]
+[/test]
+[test open]
+[input]
+5
+2
+4
+15
+31
+[/input]
+[output]
+4 15 31 2
+[/output]
+[/test]
 [test]
 [input]
 1
