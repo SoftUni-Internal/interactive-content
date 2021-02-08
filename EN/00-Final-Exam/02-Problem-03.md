@@ -103,9 +103,11 @@ Since the piece **is in the collection**, you remove it successfully.
 
 The last command **requires changing the key of a piece**.
 
-Since the key is **present in the collection**, we **modify** its key.
+Since the piece is **present in the collection**, you **modify** its key.
 
-We receive the `Stop` command, **print the information about the pieces**, sorted the way described above, and the program ends.
+You receive the `Stop` command, **print the information about the pieces**, sorted the way described above, and the program ends.
+
+Next, you receive the `Stop` command, you **print the information about the pieces**, sorted the way described above, and the program ends.
 
 **Input**
 `[ '4', 'Eine kleine Nachtmusik|Mozart|G Major', 'La Campanella|Liszt|G# Minor', 'The Marriage of Figaro|Mozart|G Major', 'Hungarian Dance No.5|Brahms|G Minor', 'Add|Spring|Vivaldi|E Major', 'Remove|The Marriage of Figaro', 'Remove|Turkish March', 'ChangeKey|Spring|C Major', 'Add|Nocturne|Chopin|C# Minor', 'Stop']`
