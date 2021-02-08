@@ -166,10 +166,7 @@ Min number: -2
 [slide hideTitle]
 # Problem and Solution: Power Of Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="488453000/3f94136963" default /]
-[stream language="RO" videoId="488453000/3f94136963"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-35-36-37-problem&solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -974,10 +971,7 @@ Waiting...
 [slide hideTitle]
 # Problem and Solution: Multiply
 
-[vimeo-video]
-[stream language="EN" videoId="487119938/9a4818ebf0" default /]
-[stream language="RO" videoId="487119938/9a4818ebf0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-38-39-solution-multiply-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Multiply" taskId="pb-js-for-loop-Multiply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
