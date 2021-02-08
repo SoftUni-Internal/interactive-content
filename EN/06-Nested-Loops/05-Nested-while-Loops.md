@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Nested "while" Loops
 
-[vimeo-video]
-[stream language="EN" videoId="488090609/3d873b4b3b" default /]
-[stream language="RO" videoId="488090609/3d873b4b3b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The use of nested `while` loops is very similar to the one of the `for`.
 
@@ -24,10 +21,7 @@ while (condition) {
 [slide hideTitle]
 # Example
 
-[vimeo-video]
-[stream language="EN" videoId="488090625/81b4dc254e" default /]
-[stream language="RO" videoId="488090625/81b4dc254e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-24-nested-while-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 let row = 1;
@@ -122,10 +116,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Triangle of Stars with While
 
-[vimeo-video]
-[stream language="EN" videoId="488090670/32365e006a" default /]
-[stream language="RO" videoId="488090670/32365e006a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-25-26-solution-triangle-of-stars-with-while-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Triangle of Stars with While" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
@@ -204,10 +195,7 @@ Write a program, which:
 [slide hideTitle]
 # Problem: Sum of Digits Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="488090779/48452cdf0b" default /]
-[stream language="RO" videoId="488090779/48452cdf0b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-27-28-problem-sum-of-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Digits Calculator" taskId="pb-js-nested-loops-lab-Sum-of-Digits-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
@@ -327,10 +315,7 @@ Goodbye
 [slide hideTitle]
 # Solution: Sum of Digits Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="488090853/57ce6f8869" default /]
-[stream language="RO" videoId="488090853/57ce6f8869"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-29-solution-sum-of-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Digits Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput] 
 [code-editor language=javascript]
