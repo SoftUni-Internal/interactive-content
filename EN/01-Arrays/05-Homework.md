@@ -23,6 +23,42 @@ Write a program which receives an array of strings, parses them to numbers and s
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+2
+3
+4
+5
+6
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test open]
+[input]
+3
+5
+7
+9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test open]
+[input]
+2
+4
+6
+8
+10
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -110,6 +146,11 @@ function evenOdd(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -118,7 +159,7 @@ Write a program that calculates the difference between the sum of the even and t
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['1','2','3','4','5','6']`| 3 |
+|`[1, 2, 3, 4, 5, 6]`| 3 |
 
 # Comments
 
@@ -129,11 +170,47 @@ Write a program that calculates the difference between the sum of the even and t
 # More Examples
   | **Input** | **Output** |
 | --- | --- |
-|`['3','5','7','9']`|\-24 |
-|`['2','4','6','8','10']`|30 |
+|`[3, 5, 7, 9]`|\-24 |
+|`[2, 4, 6, 8, 10]`|30 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+2
+3
+4
+5
+6
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+3
+5
+7
+9
+[/input]
+[output]
+\-24
+[/output]
+[/test]
+[test open]
+[input]
+2
+4
+6
+8
+10
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
 1

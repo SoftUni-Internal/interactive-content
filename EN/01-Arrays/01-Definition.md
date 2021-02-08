@@ -523,12 +523,27 @@ If the number is NOT a valid day, print `Invalid day!`.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+|3| Wednesday |
+|11| Invalid day! |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test open]
+[input]
+11
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
 [test]
 [input]
 1
