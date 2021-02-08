@@ -122,5 +122,22 @@ This is some of the information that could be found in a `package.json` file:
 
 Here is how a `package.json` file looks like:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-1.jpg" /]
+```json
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "Node.js demo project",
+    "main": "index.js",
+    "engines": {                   // Sets versions of Node.js and others
+        "node": ">= 6.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "scripts": {                   // Defines a set of node scripts
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
+```
 [/slide]
