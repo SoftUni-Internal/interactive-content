@@ -5,7 +5,7 @@
 [code-task title="The Pianist" taskId="js-fundamentals-2-finaleExam-The-Pianist" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function solve(number, input) {
 	// Write your code here
 }
 ```
