@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Console App in VS Code
 
-[vimeo-video]
-[stream language="EN" videoId="486835903/f8f0434f30" default /]
-[stream language="RO" videoId="486835903/f8f0434f30"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-30-31-Creating-a-console-application-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We already have Visual Studio Code and we can start it. 
 
@@ -23,10 +20,7 @@ Create a file `hello.js` to hold your program's source code:
 [slide hideTitle]
 # Writing the Program Code
 
-[vimeo-video]
-[stream language="EN" videoId="486835933/467020ce79" default /]
-[stream language="RO" videoId="486835933/467020ce79"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-32-32-Demo-Writing-the-program-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The source code of the JS program should be written inside a function, which we later invoke in order to run it. 
 
@@ -55,10 +49,7 @@ This command is very typical in programming: we say a given **object** should be
 [slide hideTitle]
 # Starting the Program
 
-[vimeo-video]
-[stream language="EN" videoId="486836101/b0f9ba7bd8" default /]
-[stream language="RO" videoId="486836101/b0f9ba7bd8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-33-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To start the program, press `[Ctrl + F5]`
 
