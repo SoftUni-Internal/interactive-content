@@ -6,7 +6,16 @@
 [stream language="RO" videoId="487118452/de8f1dddfb"  /]
 [/video-vimeo]
 
-## Descriere
+[code-task title="The Best Movie" taskId="js-pb-exam-preparation-The-Best-Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
 
 Este vineri seara, vă întrebați la ce film să vă uitați. 
 
@@ -44,15 +53,6 @@ Imprimați pe consolă:
 
 `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
 
-[code-task title="The Best Movie" taskId="js-pb-exam-preparation-The-Best-Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
 # Example
 | **Intrare** | **Ieșire** |
 | --- | --- |

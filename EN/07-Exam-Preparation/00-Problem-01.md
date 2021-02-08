@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Problem 1: Calculator for TV series
 
 [vimeo-video]
@@ -6,7 +6,17 @@
 [stream language="RO" videoId="487118037/76e61cd949"  /]
 [/video-vimeo]
 
-## Description
+[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
+
 Write a program, which calculates how long it will take you to watch all episodes of a TV series in minutes.
 
 As input, you will receive the number of seasons, the number of episodes per season and the duration of each episode.
@@ -30,16 +40,6 @@ As input you will receive 4 console lines:
 Print out on the console the time needed to watch all of the episodes, rounded down to the nearest whole number in the following format:
 
 - `Total time needed to watch the {name of the series} series is {time} minutes.`
-
-[code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Input** | **Output** |
