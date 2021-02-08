@@ -11,6 +11,9 @@ function hello() {
 ```
 [/code-editor]
 [task-description]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a JavaScript program, which:
 
 Prints `Hello JavaScript` on the console.
@@ -40,6 +43,9 @@ function calculate() {
 ```
 [/code-editor]
 [task-description]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a JavaScript program, which:
 
 * Calculates the value of 5 * 5
