@@ -1351,7 +1351,7 @@ L
 [code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculator(input){
+function calculator(firstNumber, operator, secondNumber){
   // Write your code here
 }
 ```
