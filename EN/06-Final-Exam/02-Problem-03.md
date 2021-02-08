@@ -12,7 +12,11 @@ function solve(number, input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(Number(input.unshift()), input);
+(input, code) => {
+    let num = input[0]
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
 ```
 [/code-adapter]
 [task-description]
