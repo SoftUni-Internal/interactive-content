@@ -184,21 +184,19 @@ function amazingNumbers(input){
 
 Write a function which as input will receive a **number.**
  
-Check and print whether it is **amazing** or not into the following format: 
+Check and print whether it is **amazing** or not into the following format:
 
 `{number} Amazing? {result}`
 
-An **amazing** number is one that includes the **digit 9** in the sum of its digits. 
+An **amazing** number is one that includes the **digit 9** in the sum of its digits.
 
 Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
 
-
-
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|`1233`| 1233 Amazing? True |
-|`999`|999 Amazing? False|
+|1233| 1233 Amazing? True |
+|999|999 Amazing? False|
 
 [/task-description]
 [tests]
@@ -305,11 +303,11 @@ function amazingNumbers(input) {
 
 Write a function which as input will receive a **number.**
  
-Check and print whether it is **amazing** or not into the following format: 
+Check and print whether it is **amazing** or not into the following format:
 
 `{number} Amazing? {result}`
 
-An **amazing** number is one that includes the **digit 9** in the sum of its digits. 
+An **amazing** number is one that includes the **digit 9** in the sum of its digits.
 
 Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
 
@@ -317,8 +315,8 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`1233`| 1233 Amazing? True |
-|`999`|999 Amazing? False|
+|1233| 1233 Amazing? True |
+|999|999 Amazing? False|
 
 [/task-description]
 [tests]

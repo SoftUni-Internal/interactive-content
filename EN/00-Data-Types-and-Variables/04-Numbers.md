@@ -82,11 +82,18 @@ console.log(myVar + 10);
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function integerOrFloat(input){
+function integerOrFloat(firstNumber, secondNumber, thirdNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 You will receive **three numbers**. 
@@ -99,8 +106,8 @@ Your task is to find their **sum** and print it to the console with an addition:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['9', '100', '1.1']`| 110.1 - Float |
-|`['100', '200', '303']`|603 - Integer|
+|9, 100, 1.1]| 110.1 - Float |
+|100, 200, 303]|603 - Integer|
 
 [/task-description]
 [tests]
@@ -181,11 +188,18 @@ Your task is to find their **sum** and print it to the console with an addition:
 [code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function integerOrFloat(input){
+function integerOrFloat(firstNumber, secondNumber, thirdNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 You will receive **three numbers**. 
@@ -198,8 +212,8 @@ Your task is to find their **sum** and print it to the console with an addition:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['9', '100', '1.1']`| 110.1 - Float |
-|`['100', '200', '303']`|603 - Integer|
+|9, 100, 1.1| 110.1 - Float |
+|100, 200, 303|603 - Integer|
 
 [/task-description]
 [tests]
