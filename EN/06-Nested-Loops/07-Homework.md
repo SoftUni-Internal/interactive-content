@@ -3,17 +3,11 @@
 [slide hideTitle]
 # Problem: Building
 
-[vimeo-video]
-[stream language="EN" videoId="488090883/a7c270a8f6" default /]
-[stream language="RO" videoId="488090883/a7c270a8f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-30-32-problem-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Solution
 
-[vimeo-video]
-[stream language="EN" videoId="488090919/8b4c1a9e61" default /]
-[stream language="RO" videoId="488090919/8b4c1a9e61"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-33-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Building" taskId="pb-js-nested-loops-Building" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -186,17 +180,11 @@ A10 A11 A12
 [slide hideTitle]
 # Problem: Passwords
 
-[vimeo-video]
-[stream language="EN" videoId="488091064/8c0b8dc12c" default /]
-[stream language="RO" videoId="488091064/8c0b8dc12c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-34-35-problem-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Solution
 
-[vimeo-video]
-[stream language="EN" videoId="488091095/c49f5f03e5" default /]
-[stream language="RO" videoId="488091095/c49f5f03e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-36-solution-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Passwords" taskId="pb-js-nested-loops-Passwords" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
