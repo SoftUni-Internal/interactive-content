@@ -1,6 +1,5 @@
-# Problem 2: Mountain Run
-
 [slide hideTitle]
+# Problem 2: Mountain Run
 
 [code-task title="Mountain Run" taskId="JavaScript-Programming-Basics-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

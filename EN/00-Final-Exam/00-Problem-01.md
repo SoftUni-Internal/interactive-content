@@ -1,5 +1,4 @@
 [slide hideTitle]
-
 # Problem 1: Study Materials
 
 [code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
