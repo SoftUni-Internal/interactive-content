@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Nested "for" Loops
 
-[vimeo-video]
-[stream language="EN" videoId="488090349/1e2b80201d" default /]
-[stream language="RO" videoId="488090349/1e2b80201d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-17-18-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Nested for-loops are statements that consist of several for loops located inside each other 
 
@@ -41,10 +38,7 @@ for (let i = 1; i <= n; i += 3) {
 [slide hideTitle]
 # Example
 
-[vimeo-video]
-[stream language="EN" videoId="488090388/9cb36b2bd2" default /]
-[stream language="RO" videoId="488090388/9cb36b2bd2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-19-nested-for-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example JavaScript program:
 ```js live
@@ -141,10 +135,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Triangle of Stars
 
-[vimeo-video]
-[stream language="EN" videoId="488090539/2eacc8e193" default /]
-[stream language="RO" videoId="488090539/2eacc8e193"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-21-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
