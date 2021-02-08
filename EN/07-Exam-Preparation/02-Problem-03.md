@@ -6,7 +6,16 @@
 [stream language="RO" videoId="487118157/70c5ba1ce8"  /]
 [/video-vimeo]
 
-## Description
+[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 For the upcoming premieres of three highly expected productions a local cinema has hired you to write a piece of software that calculates the price, which their clients have to pay, depending on the movie and the offer they have chosen.
 
 |\- | **John Wick**      | **Star Wars** | **Jumanji**   |
@@ -38,15 +47,6 @@ Print one line on the console: `Your bill is {total price}$`
 
  * The price must be formatted to two digits after the decimal point.
 
-[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 # Example
 | **Input** | **Output** |
 | --- | --- |

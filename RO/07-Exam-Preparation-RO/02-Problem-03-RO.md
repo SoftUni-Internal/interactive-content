@@ -6,7 +6,18 @@
 [stream language="RO" videoId="487118157/70c5ba1ce8"  /]
 [/video-vimeo]
 
-## Descriere
+
+
+[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
 Pentru viitoarele premiere ale 3 din celor mai așteptate producții de cinema locale ați fost angajat să creați un program care calculează prețul pe care clienții lor trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
 | \- | **John Wick**      | **Star Wars** | **Jumanji**   |
@@ -40,16 +51,6 @@ Imprimați o linie pe consolă:
 `Your bill is {total price}$`
 
 * Prețul ar trebui fomratat la două cifre după punctul zecimal
-
-[code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Intrare** | **Ieșire** |
