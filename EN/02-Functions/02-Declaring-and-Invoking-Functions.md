@@ -115,7 +115,14 @@ function countDown(x) {
 }
 ```
 
-Recursion means that a **function calls itself.** 
+**Recursion** is the process in which a function **calls itself**.
+
+Such functions are called **recursive**.
+
+Proper recursive functions **stop** invoking themselves when a desired **result** is achieved.
+
+If **no such condition exists**, the function will call itself **endlessly**.
+
 
 [/slide]
 
