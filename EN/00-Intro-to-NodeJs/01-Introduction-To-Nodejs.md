@@ -24,7 +24,7 @@ Here are some of the benefits that come along with it:
 
 # Installation
 
-_**Here is a**_ [link](https://nodejs.org/en/) _**to the official Node.js website**_.
+**Here is a** [link](https://nodejs.org/en/) **to the official Node.js website.**
 
 It is recommended to download and install the latest version.
 
