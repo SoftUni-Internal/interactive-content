@@ -1,6 +1,6 @@
 # Naming and Best Practices
 
-[slide]
+[slide hideTitle]
 # Naming Functions
 
 [vimeo-video]
@@ -9,8 +9,8 @@
 [/video-vimeo]
 
 - Function names should **describe their task** in a **clear** and **unambigious** way
- - Their names should be **meaningful and not very long**
- - Should answer the question: "**What does this function do?**"
+- Their names should be **meaningful and not very long**
+- Should answer the question: "**What does this function do?**"
 
 Examples for **good** names:
 ```js
@@ -45,7 +45,7 @@ p, p1, p2, populate, LastName, lastName
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Best Function Practices
 
@@ -55,8 +55,8 @@ p, p1, p2, populate, LastName, lastName
 [/video-vimeo]
 
 
- - Each function should perform a **single**, well-defined task.
- - **Avoid long functions**, **split** them into **several shorter ones**.
+ - Each function should perform a **single**, well-defined task
+ - **Avoid long functions**, **split** them into **several shorter ones**
 
  ```js
  function printReceipt(){
@@ -66,16 +66,19 @@ p, p1, p2, populate, LastName, lastName
 }
  ```
 
- Following the practices, the function defined in the example above is **self-documenting** and **easy to test**.
+Following the practices, the function defined in the example above is **self-documenting** and **easy to test**.
 
 ## Code Structure and Code Formatting
 
-Make sure to use correct indentation
+Make sure to use correct indentation.
+
 - Leave a blank line between functions and after blocks
+
 - Always use curly brackets for conditional and loop bodies
+
 - Avoid long lines and complex expressions
 
-- Example of a **well-structured function:**
+This is an example of a **well-structured function:**
 
 ```js
 function sum() {
@@ -96,7 +99,7 @@ function sum()
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Simple Calculator
 
 [vimeo-video]
@@ -104,7 +107,7 @@ function sum()
 [stream language="RO" videoId="489373707/dfc94da2ab"  /]
 [/video-vimeo]
 
-[code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
@@ -118,6 +121,8 @@ Write a function that receives an array containing three elements.
 Write an arrow function that calculates the result depending on the specified operator. 
 
 The operator could only be one of the following: `multiply`, `divide`, `add` and `subtract`.
+
+&nbsp;
 
 ## Examples
 | **Input** | **Output** |
@@ -214,7 +219,7 @@ subtract
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Simple Calculator
 
 [vimeo-video]
@@ -226,28 +231,7 @@ subtract
 [code-editor language=javascript]
 ```
 function simpleCalculator(input){
-  let a = Number(input[0]);
-  let b = Number(input[1]);  
-  let operator = input[2];
-  
-  switch (operator) {
-    case 'multiply':
-      let multiply = (a, b) => a * b;
-      console.log(multiply(a, b));
-      break;
-    case 'divide':
-      let divide = (a, b) => a / b;
-      console.log(divide(a, b));
-      break;
-    case 'add':
-      let add = (a, b) => a + b;
-      console.log(add(a, b));
-      break;
-    case 'subtract':
-      let subtract = (a, b) => a - b;
-      console.log(subtract(a, b));
-      break;
-  }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -257,6 +241,8 @@ Write a function that receives an array containing three elements.
 Write an arrow function that calculates the result depending on the specified operator. 
 
 The operator could only be one of the following: `multiply`, `divide`, `add` and `subtract`.
+
+&nbsp;
 
 ## Examples
 | **Input** | **Output** |
