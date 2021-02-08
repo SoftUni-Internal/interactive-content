@@ -10,21 +10,29 @@ When using for-loops, the loop variable can be modified in more than one way.
 In addition to incrementation and decrementation, it can be altered using more complex logic, such as division and multiplication.
 
 For example:
-``` java
+``` java live
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
     // Print only even values of i from 0 to 10
 }
+```
 
+``` java live
 for (int i = 20; i > 0; i -= 5) {
      System.out.println(i);
     // Print values that are devisible by 5
 }
+```
+
+``` java live
 
 for (int j = 2; j <= 16; j *= 2) {
     System.out.println(j);
     // Print the results of powers of 2 ascending
 }
+```
+
+``` java live
 
 for (int j = 16; j > 1; j /= 2) {
     System.out.println(j);

@@ -1,4 +1,5 @@
 [slide hideTitle]
+
 # Real-Life Example: Clock
 
 interactive-programming-basics-with-java-nested-loops-17-18-nested-loops-real-life-example
@@ -21,11 +22,13 @@ As you can see in pseudocode example there are two `for` loops: **inner** and **
 
 The outer one represents the hours, while the inner one is responsible for the minutes.
 
-# Pseudocode
+## Pseudocode
+
 ```
 for h which is in range from 0 to 23
     for m which is in range from 0 to 59
         print h and m in format similar to the clock
 ```
+
 [/slide]
 
