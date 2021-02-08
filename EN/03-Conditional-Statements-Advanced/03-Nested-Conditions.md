@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Nested Conditions
 
-[vimeo-video]
-[stream language="EN" videoId="486869737/722ae750dd" default /]
-[stream language="RO" videoId="486869737/722ae750dd"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested Conditional Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 
@@ -129,10 +126,7 @@ Weekend
 
 [slide hideTitle]
 # Solution: Marketplace
-[vimeo-video]
-[stream language="EN" videoId="486869990/380a476703" default /]
-[stream language="RO" videoId="486869990/380a476703"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -249,10 +243,7 @@ Write a program, which:
 
 [slide hideTitle]
 # Solution: Biggest Number of Three
-[vimeo-video]
-[stream language="EN" videoId="486870661/f4c774cc7b" default /]
-[stream language="RO" videoId="486870661/f4c774cc7b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem and Solution-Biggest number of three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
