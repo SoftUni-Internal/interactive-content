@@ -1127,7 +1127,6 @@ Your task is to find the sum of its digits.
 |97561| 28 |
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
