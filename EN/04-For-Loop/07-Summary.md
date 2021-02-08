@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="487119952/6981ade933" default /]
-[stream language="RO" videoId="487119952/6981ade933"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-52-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you learned:
 
