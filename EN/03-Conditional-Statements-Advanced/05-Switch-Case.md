@@ -1,10 +1,7 @@
 [slide hideTitle]
 # The Switch-Case Statement
 
-[vimeo-video]
-[stream language="EN" videoId="486873288/8055a584f1" default /]
-[stream language="RO" videoId="486873288/8055a584f1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-27-28-The-switch-case-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The switch-case condition works as a sequence of if-else blocks. 
 
@@ -37,10 +34,8 @@ switch (selector) {
 
 [slide hideTitle]
 # The default case
-[vimeo-video]
-[stream language="EN" videoId="486873687/12bb55bdb9" default /]
-[stream language="RO" videoId="486873687/12bb55bdb9"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-29-switch-case-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The default case specifies the `switch` section to execute **if the match expression doesn't match any other case label**.
 
@@ -99,10 +94,7 @@ switch (day) {
 [slide hideTitle]
 # Multiple Labels
 
-[vimeo-video]
-[stream language="EN" videoId="486873816/db58eac4b4" default /]
-[stream language="RO" videoId="486873816/db58eac4b4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-30-31-Multiple Labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In **JS** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 
@@ -129,10 +121,7 @@ switch (selector) {
 [slide hideTitle]
 # Example: Animal Type
 
-[vimeo-video]
-[stream language="EN" videoId="486873964/be087efd1c" default /]
-[stream language="RO" videoId="486873964/be087efd1c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a program that prints the type of the animal depending on its name:
 -  dog \-\> **mammal**
