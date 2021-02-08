@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Dependencies
 
@@ -55,7 +55,7 @@ public void testGetInfoById() {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Fake implementation vs Mocking objects
 

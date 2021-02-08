@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # What is Unit-Testing?
 
@@ -37,7 +37,7 @@ To make the things easier we need a **structured** approach that:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Automated Testing
 
@@ -55,7 +55,7 @@ Automated testing contains:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JUnit
 
@@ -95,7 +95,7 @@ public void commandShouldMultiplyNumbers() {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # 3A Pattern
 

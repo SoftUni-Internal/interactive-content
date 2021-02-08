@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Unit-Testing best practices
 
@@ -38,7 +38,7 @@ Actual :35
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Magic Numbers
 
@@ -65,7 +65,7 @@ This is better because if we need to change our `amount` variable, we can change
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Before
 
@@ -96,7 +96,7 @@ That way, our initialize method will execute before each test.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Naming Test Methods:
 
