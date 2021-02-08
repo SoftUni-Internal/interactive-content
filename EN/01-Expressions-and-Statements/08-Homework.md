@@ -66,10 +66,7 @@ Write a function that gets an integer and calculates the area of a square with s
 [slide hideTitle]
 # Problem: Currency Converter
 
-[vimeo-video]
-[stream language="EN" videoId="486857468/b246ee7ca8" default /]
-[stream language="RO" videoId="486857468/b246ee7ca8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem2-currency-converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Currency Converter" taskId="pb-js-expressions-Currency-Converted" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
@@ -205,10 +202,7 @@ Round the result to the nearest integer using `toFixed(0)`.
 [slide hideTitle]
 # Problem: Days to Minutes
 
-[vimeo-video]
-[stream language="EN" videoId="486857308/5e4892a5b8" default /]
-[stream language="RO" videoId="486857308/5e4892a5b8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem1-days-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days to Minutes" taskId="pb-js-expressions-Days-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
