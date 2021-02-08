@@ -7,7 +7,16 @@
 [stream language="RO" videoId="487118385/044812fcf3"  /]
 [/video-vimeo]
 
-## Descriere
+[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
 Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. 
 
 Veți primi un număr, reprezentând bugetul clientului, numărul total de titluri de seriale pe care clientul ar vrea să le cumpere și, după aceea, prețul fiecăruia dintre seriale.Unele seriale au aplicate reduceri:
@@ -44,23 +53,13 @@ Imprimați o linie pe consolă:
 
 Rezultatul trebuie să fie formatat la două cifre după punctul zecimal. 
 
-[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-
 # Example
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |`['3', 'Thrones', '5', 'Riverdale', '5', 'Gotham', '2']`| You bought all the series and have 0.50$ left.|
 
-## Comments
+**Comments**
 Primiți bugetul: 10$ și numărul de seriale - 3.
 
 Primul serial este Thrones cu prețul 5$, care are aplicată o reducere de 50\% din preț `5 - 50% = 2.50$`. 

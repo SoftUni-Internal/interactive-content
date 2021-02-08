@@ -7,6 +7,17 @@
 [stream language="RO" videoId="487118385/044812fcf3"  /]
 [/video-vimeo]
 
+
+
+[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
 ## Description
 You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. 
 
@@ -41,16 +52,6 @@ Print one line on the console:
 `You need {money needed}$ more to buy the series!`
 
 The result must be formatted to two digits after the decimal point.
-
-[code-task title="TV Series Budget" taskId="js-pb-exam-preparation-TV-Series-Budget" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Input** | **Output** |
