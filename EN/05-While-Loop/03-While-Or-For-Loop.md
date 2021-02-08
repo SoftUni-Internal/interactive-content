@@ -1,10 +1,7 @@
 [slide hideTitle]
 # While or For Loop?
 
-[vimeo-video]
-[stream language="EN" videoId="487120722/4b17fd0910" default /]
-[stream language="RO" videoId="487120722/4b17fd0910"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-15-16-While-or-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 `while` and `for` loops both **repeat** a block of **code**.
@@ -49,6 +46,8 @@ console.log(number);
 
 [slide hideTitle]
 # Problem: Odd Number
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-17-problem-odd-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Odd Number" taskId="pb-js-while-loop-lab-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -91,10 +90,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Odd Number
 
-[vimeo-video]
-[stream language="EN" videoId="487120737/05e8469c7d" default /]
-[stream language="RO" videoId="487120737/05e8469c7d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-18-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
