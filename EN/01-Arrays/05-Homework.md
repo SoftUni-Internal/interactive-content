@@ -673,7 +673,7 @@ function arrayRotation(arr){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(JSON.parse(input[1]).map(Number), Number(input[0]))}
+(input, code) => {return code(JSON.parse(input[0]).map(Number), Number(input[1]))}
 ```
 [/code-adapter]
 [task-description]
@@ -681,7 +681,9 @@ function arrayRotation(arr){
 
 Write a function that receives an **array** and the number of rotations you have to perform (the first element goes at the end).
 
-The first element of the input is the number of rotations you have to perform. The second element is the array you have to perform the rotations.
+The first element of the input is the array of numbers where you have to perform the rotations.
+
+The second element of the input is the number of rotations you have to perform.
 
 # Output
 
@@ -689,19 +691,17 @@ Print the resulting array elements separated my single space.
 
 | **Input** | **Output** |
 | --- | --- |
-|`2, [51, 47, 32, 61, 21]`| 32 61 21 51 47 |
-|`4, [32, 21, 61, 1]`| 32 21 61 1 |
-|`5, [2, 4, 15, 31]`|4 15 31 2|
+|`[51, 47, 32, 61, 21], 2`| 32 61 21 51 47 |
+|`[32, 21, 61, 1], 4`| 32 21 61 1 |
+|`[2, 4, 15, 31], 5`|4 15 31 2|
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
-51
-47
-32
-61
-21
+\[51, 47, 32, 61, 21\]
+2
 [/input]
 [output]
 32 61 21 51 47
@@ -709,10 +709,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-32
-21
-61
-1
+\[32, 21, 61, 1\]
+4
 [/input]
 [output]
 32 21 61 1
@@ -720,10 +718,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test open]
 [input]
-2
-4
-15
-31
+\[2, 4, 15, 31\]
+5
 [/input]
 [output]
 4 15 31 2
@@ -731,12 +727,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[1, 47, 32, 61, 91\]
 1
-1
-47
-32
-61
-91
 [/input]
 [output]
 47 32 61 91 1
@@ -744,12 +736,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[451, 47, 32, 61, 12\]
 2
-451
-47
-32
-61
-12
 [/input]
 [output]
 32 61 12 451 47
@@ -757,11 +745,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[31, 21, 69, 1\]
 3
-31 
-21
-69
-1
 [/input]
 [output]
 1 31 21 69
@@ -769,11 +754,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[3, 21, 7, 1\]
 4
-3
-21
-7
-1
 [/input]
 [output]
 3 21 7 1
@@ -781,11 +763,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[22, 4, 4, 15\]
 10
-22
-4
-4
-15
 [/input]
 [output]
 4 15 22 4
@@ -793,8 +772,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[15\]
 11
-15
 [/input]
 [output]
 15
@@ -802,19 +781,15 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[21, 69, 4\]
 0
-21
-69
-4
 [/input]
 [output]
 21 69 4
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
