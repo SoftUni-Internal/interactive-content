@@ -1133,7 +1133,7 @@ Your task is to find the sum of its digits.
 245678
 [/input]
 [output]
-28
+32
 [/output]
 [/test]
 [test open]
@@ -1141,7 +1141,7 @@ Your task is to find the sum of its digits.
 97561
 [/input]
 [output]
-24
+28
 [/output]
 [/test]
 [test]
@@ -1247,8 +1247,8 @@ Write a program that takes **3 parameters** (characters) and prints them in **re
 |'A', 'B','C'| C B A |
 |'1','L','\&'| \& L 1 |
 
-
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
