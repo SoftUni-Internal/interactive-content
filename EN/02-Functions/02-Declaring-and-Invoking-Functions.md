@@ -1,6 +1,6 @@
 # Declaring and Invoking Functions
 
-[slide]
+[slide hideTitle]
 # Declaring a Function
 
 [vimeo-video]
@@ -452,7 +452,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Math Power
 
 [vimeo-video]
