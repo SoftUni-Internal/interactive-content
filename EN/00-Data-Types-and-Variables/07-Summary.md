@@ -51,6 +51,7 @@ let cars = ["Nio", "Tesla", "Xpeng"];
 
 console.log(typeof(cars));
 ```
+
 - `Null` is "nothing", while `undefined` exists, but is empty
 
 
@@ -58,30 +59,9 @@ console.log(typeof(cars));
 
 - Arrays
   - Definition and syntax
-``` js
-let cars = ["Nio", "Tesla", "Xpeng"];
-```
-
 - Array iteration
   - How we iterate over array
   - Alternative ways to iterate using a for-of loop
-
-``` js live
-let cars = ["Nio", "Tesla", "Xpeng"];
-
-for (let i = 0; i < cars.length; i++) {
-    console.log(cars[i]);
-}
-```
-
-``` js live
-let cars = ["Nio", "Tesla", "Xpeng"];
-
-for (const car of cars) {
-  console.log(car);
-}
-```
-
 - Array operations
 
 [/slide]
