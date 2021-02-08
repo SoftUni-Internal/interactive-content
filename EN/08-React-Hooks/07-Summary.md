@@ -1,63 +1,71 @@
-[slide]
+# Summary
+
+[slide hideTitle]
 
 # Summary
 
 ## In this lesson you learned:
 
--  What are Hooks.
+- What are Hooks:
 
-   -  They let us use functionality from class components without writing them.
+   - They let us use the **class** functionality in **functional components**
 
--  What is **UseState** Hook.
+   - We can use them only in **functional components**
 
-   -  It allows us to have a state in functional components.
+- What is **UseState** Hook:
 
-   ```js
-   const [count, setCount] = useState(0);
-   ```
+   - It allows us to have a **state** in **functional components**
 
--  What is **UseEffect** Hook.
+   - It does not **merge** the **old value** and **the new one**
 
-   -  Bundles the lifecycle methods in a single API.
-
-   -  Let us use side effects from function components.
+   - We can instantiate more that one `useState()` in a single component
 
    ```js
-   useEffect(() => {
-      document.title = `The counter reached: ${count} times`;
-   });
+      const [count, setCount] = useState(0);
    ```
 
--  Custom Hooks.
+- What is **UseEffect** Hook:
 
-   -  We can have re-usable logic without adding more components to the tree.
+   - Bundles the lifecycle methods in a single API
 
-   -  Every custom hook need to start with **use**.
+   - Let us use side effects from **functional components**
 
    ```js
-   function useStatus(id) {
-      const [status, setStatus] = useState(0);
-
-      return status;
-   }
+      useEffect(() => {
+         document.title = `The counter reached: ${count} times`;
+      });
    ```
 
--  Rules when using Hooks.
+- **Custom Hooks**.
 
-   -  **Only call hooks at the top level**.
+   - We can have re-usable logic without adding more components to the tree
 
-   -  **Hooks only work in React function**.
+   - Every custom hook need to start with **use**
 
-## In the next lesson you will learn about:
+   ```js
+      function useUser(id) {
+         const [user, setUser] = useState(0);
 
--  Advanced Techniques:
+         return user;
+      }
+   ```
 
-   -  What are Error Boundaries.
+-  Rules to follow when using Hooks:
 
-   -  Unit Testing with JEST and Enzyme.
+   - **Only call hooks at the top level**
 
-   -  How to test the asynchronous code.
+   - **Hooks only work in React function**
 
-   -  Server-side rendering with React.
+## In the next lesson, you will learn:
+
+- Advanced Techniques:
+
+   - What are Error Boundaries.
+
+   - Unit Testing with JEST and Enzyme.
+
+   - How to test the asynchronous code.
+
+   - Server-side rendering with React.
 
 [/slide]

@@ -1,18 +1,20 @@
 # Introduction to React Hooks
 
-[slide]
+[slide hideTitle]
 
 # What are React Hooks?
 
-**React Hooks** is a pretty new feature in React.
+The **React Hooks** is a new feature in **React**.
 
-They arrived at the **React 16.8** version.
+They arrived at the **16.8** version of **React**.
 
-**React Hooks** are functions that can be used only in function components.
+The main idea of **React Hooks** is to use the **class** functionality in **functional components**.
 
-They let us use state or context without writing classes.
+They let us to **manage the state** and **add lifecycle methods** to the application **without** writing **class components**.
 
-Hooks have a naming convention that we need to observe.
+That means that we can use them only in **functional components**.
+
+**Hooks** have a naming convention that we need to follow.
 
 They start with **use**, and after that is the name of the function.
 
@@ -24,16 +26,10 @@ For example:
 
 - `useEffect()`
 
-The main idea is to use the class functionality into functions components.
-
-Like **managing state** and **adding lifecycle methods**.
-
 Hooks are made to be **highly re-usable** and independent.
 
-So this means that we can **share functionality**, but we **cannot** share data between components.
+That means that we can **share functionality**, but we **cannot** share data between components.
 
-Also, hooks are **not** lifecycle methods.
-
-We **cannot** replace them with hooks, but we can **simulate** them.
+We **cannot** replace the **lifecycle methods** with hooks, but we can **simulate** them.
 
 [/slide]

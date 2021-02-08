@@ -1,101 +1,120 @@
 # State Hook
 
-[slide]
+[slide hideTitle]
 
 # UseState Hook
 
-With React Hooks, we can use **React state** in functional components.
+**React Hooks** allow us to use **state** in **functional components**.
 
-The function that allows us to do that is called `useState()`.
+The function that provides the **state** is called `useState()`.
 
-With this function, we do not have to migrate functional components to class ones anymore.
+With `useState()` hook, we do not have to migrate from **functional components** to **class** ones anymore.
 
-To use `useState()` we need to import it from **React**.
+If we want to use `useState()`, we need to import it from **React** like this: `import React, { useState } from 'react';`.
 
-It look like this: `import React, { useState } from 'react';`.
-
-After we have imported it, **useState** will return an array with two elements.
+After **useState** is instantiated, it will return an **array** with two elements.
 
 They will be value and a function, which we use to update the state.
 
 Here is an example of calling **useState**:
 
 ```js
-const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 ```
 
 The **count** is the current state.
 
-**SetCount** is the function that we use to update the state.
+The update function is **SetCount**.
 
-In `useState()`, we need to tell the default value.
+In the `useState()`, we need to assign the default value.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Example of UseState Hook
 
-Now we will have a look at an example of the `useState()` hook.
+In this example, we will use `useState()` to set a counter for how many times the user clicks the button.
 
-Here is an example:
+Have a look:
 
 ```js
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 
-const Counter = () {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <p>Counter: {count}</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
+  const Counter = () => {
+    const [count, setCount] = useState(0);
+
+    return (
+      <div>
+        <p>Counter: {count}</p>
+        <button onClick={() => setCount(count + 1)}>
+          Update Counter
+        </button>
+      </div>
+    );
+  }
 ```
 
-The first thing that we do is to import **useState**.
+We imported `useState()` and declare it in the **Counter** component.
 
-After we imported it, we declare it in the **Counter** component.
+`useState()` returns an array with two elements and has a default value of zero.
 
-**UseState** returns an array with two elements.
+The first one is **count**, and the second one is the **setCount** function.
 
-The first one is **count**, and the second one is **setCount**.
+After, we attach **setCount** function to the `onClick={}` event of the button.
 
-We also set the default value to be zero.
+On every click, we will update **count**. 
 
-Then we attach **setCount** to a button.
-
-And on every click, we update **count**.
+If the user refreshes the application, the counter will have a value of **zero**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # State Hook Overview
 
-With **useState**, we have only one argument, which is the default value.
+**UseState** have only one argument, which is the **default value**.
 
-It is used only for the first instance of the state.
+It is used only for the **first instance** of the state, and it does not need to be an **object**.
 
-And this argument does not need to be an **object**.
+If we want, we can call the update function from **anywhere** in the component.
 
-We can call the update function from **anywhere** in the component.
-
-But it is different from **this.setState** because it does not merge the old value and the new one.
+The `setName()` function is different from **this.setState** because it **does not** merge the **old** and the **new** value.
 
 Also, we can have more than one **useState** in a component.
 
 Here is an example:
 
 ```js
-const registerComponent = () {
-  const [email, setEmail] = useState("");
-  const [age, setAge] = useState("0");
-  const [password, setPassword] = useState("");
-}
+  function App() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    return (
+      <div>
+        <input
+          type="text"
+          id="username"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="text"
+          id="username"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <p>Email: {email}</p>
+        <p>Pass: {password}</p>
+      </div>
+    );
+  }
 ```
+
+In this example, we created a component with **input fields** and **paragraph** tags.
+
+On every change in the **input fields**, we will update the **state**. 
+
+We visualize the **state** in the **paragraph** tags.
 
 [/slide]

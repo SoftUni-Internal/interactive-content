@@ -1,37 +1,39 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table of contents
+# Lesson Contents
 
 ## In this lesson you will learn:
 
 **1. Introduction to Hooks**
 
--  What are React Hooks?
+- React Hooks Overview
 
 **2. State Hooks**
 
--  `useState()`.
+- `useState()`
 
 **3. Effect Hooks**
 
--  `useEffect()`.
+- `useEffect()`
 
 **4. Rules of Hooks**
 
+- Rules to follow when using **React Hooks**
+
 **5. Custom Hooks**
 
--  How to make Custom Hooks.
+- How to make Custom Hooks
 
 **6. useContext Hook**
 
--  `React.createContext()`.
+- `React.createContext()`
 
--  `useContext()`.
+- `useContext()`
 
 **7. useReducer Hook**
 
--  `useReducer()`.
+- `useReducer()`
 
 [/slide]

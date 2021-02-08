@@ -1,31 +1,31 @@
 # Custom Hooks
 
-[slide]
+[slide hideTitle]
 
 # Overview
 
-When we have a logic that is highly re\-usable, we can make it a hook.
+If we have a **highly re-usable** logic, we can turn it into a **hook**.
 
-In the class components, this is done by **higher-order components**, or by **rendering the props** and wrapping the component into a separate one.
+In the **class** components, we can do it with **higher-order components**, or by **rendering the props** and wrapping the component with another one.
 
-They allow us to have re\-usable logic without adding more components to the tree.
+**Hooks** allow us to have **re-usable** logic without adding more components to the tree.
+
+Also, we can specify what arguments they receive and what they return.
+
+When we use a **default** hooks in our **custom hook**, we need to call them at the **top level** of the **custom** hook.
 
 **Custom Hooks**, like the default ones, have naming conventions.
 
 They always start with **use**.
 
-Custom hooks do not have to have a particular signature, unlike the components.
-
-With them, we can specify what arguments they receive and what they return.
-
 Here is an example:
 
 ```js
-function useStatus(friendID) {
-   const [status, setStatus] = useState([]);
-
-   return status;
-}
+   function useStatus(friendID) {
+      const [status, setStatus] = useState([]);
+      
+      return status;
+   }
 ```
 
 In this example, we made a custom hook called **useStatus**.

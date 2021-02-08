@@ -1,26 +1,20 @@
 # Effect Hook
 
-[slide]
+[slide hideTitle]
 
 # What is UseEffect Hook?
 
-The effect hooks come when we want to **fetch data**, do **subscriptions**, or **manually changing the DOM**.
+The **Effect Hooks** allow us to have **side effects** in functional components.
 
-They can influence other components, but it cannot be during rendering.
+We can use them to **fetch data**, do **subscriptions**, or **manually changing the DOM**.
 
-These operations are also called **side effects**.
+**Effect Hooks** can influence other components, but it cannot be during rendering.
 
-**UseEffect** allows us to have side effect operations in function components.
+To have **side effect** operations in function components, we have to **UseEffect** hook.
 
 It bundles the lifecycle methods in a single API.
 
-**UseEffect** does the same thing as:
-
--  **componentDidMount**.
-
--  **componentDidUpdate**.
-
--  **componentWillUnmount**.
+**UseEffect** does the same thing as: **componentDidMount**, **componentDidUpdate** and **componentWillUnmount**.
 
 To use **useEffect**, we need to import it from React, like this:
 
@@ -30,65 +24,70 @@ import React, { useEffect } from 'react';
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # How to use UseEffect?
 
 When we want to use **useEffect**, we need to pass it a function.
 
-This function will be executed when the action is committed.
+**useEffect** will execute when the action is committed.
 
-We can choose when we want to run the function.
-
-For example, on update or render.
+We can choose when we want to run the function, for example, on update or render.
 
 By default, they are executed after **every completed render**.
 
-Now, have a look at this example.
+Have a look at this example:
 
 ```js
-import React, { useState, useEffect } from 'react';
+   import React, { useState, useEffect } from 'react';
 
-const counter = () => {
-   const [count, setCount] = useState(0);
-
-   useEffect(() => {
-      document.title = `The counter reached: ${count} times`;
-   });
-};
+   function App() {
+     const [count, setCount] = useState(0);
+   
+     useEffect(() => {
+       document.title = `The counter reached: ${count} times`;
+     });
+   
+     return (
+       <div>
+         <p>Counter: {count}</p>
+         <button onClick={() => setCount(count + 1)}>Update Counter</button>
+       </div>
+     );
+   }
 ```
 
 In this example, `useEffect()` acts as **componentDidMount** and **componentDidUpdate**.
 
-**UseEffect** will update the document title on every update of the counter.
+**UseEffect** will update the title of the document on every update of the counter.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # UseEffect Hook Overview
 
-We use **useEffect** when we want to run a function on a change to the DOM.
+We use **useEffect** if we want to **execute** a function when the **DOM** changes.
 
-It is declared inside the component and has access to the props and the state.
+It is declared inside the component and has access to the **props** and the **state**.
 
-When we want to do unmounting, we create a **clean up** function.
+When we want to unmount a component, we can create a **clean up** function.
 
-The **clean up** function is just a function that **useEffect** returns.
+The **clean up** function is just a regular function that **useEffect** returns.
 
 Here is an example:
 
 ```js
-useEffect(() => {
-   const subscription = props.source.subscribe();
-   return () => {
-      subscription.unsubscribe();
-   };
-});
+  useEffect(() => {
+     const subscription = props.source.subscribe();
+     return () => {
+        subscription.unsubscribe();
+     };
+  });
 ```
 
 In this example, **useEffect** acts like **componentWillUnmount**.
 
-So on every unmount of the component, we will **unsubscribe**.
+On every **unmount** of the component, we will instantiate the `unsubscribe()` method.
 
 [/slide]
