@@ -2,11 +2,7 @@
 [slide hideTitle]
 # More Complex Conditions
 
-
-[vimeo-video]
-[stream language="EN" videoId="486871142/63e6f30a5a" default /]
-[stream language="RO" videoId="486871142/63e6f30a5a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us take a look at how we can create more **complex logical conditions** in programming. 
 
@@ -38,10 +34,8 @@ We shall explain the logical **"AND"** (`&&`), the logical **"OR"** (`||
 
 [slide hideTitle]
 # Logical "AND"
-[vimeo-video]
-[stream language="EN" videoId="486871442/f9e84d4655" default /]
-[stream language="RO" videoId="486871442/f9e84d4655"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-22-Logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we saw, in some tasks we have to make **many checks at once**. 
 
@@ -202,10 +196,7 @@ Write a program that applies bonus to given points
 
 [slide hideTitle]
 # Solution: Bonus Points
-[vimeo-video]
-[stream language="EN" videoId="486871642/75ebf87fb1" default /]
-[stream language="RO" videoId="486871642/75ebf87fb1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem and Solution-Bonus-Points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Bonus Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -265,10 +256,7 @@ Write a program that applies bonus to given points
 [slide hideTitle]
 # Logical "OR" Operator
 
-[vimeo-video]
-[stream language="EN" videoId="488463195/decef19bc9" default /]
-[stream language="RO" videoId="488463195/decef19bc9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-24-25-Logical-or-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
@@ -320,10 +308,7 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 [slide hideTitle]
 # Problem: Food or Drink
 
-[vimeo-video]
-[stream language="EN" videoId="488477836/b40ae06b15" default /]
-[stream language="RO" videoId="488477836/b40ae06b15"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Problem-Food-Or-Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
@@ -391,10 +376,7 @@ unknown
 [slide hideTitle]
 # Solution: Food or Drink
 
-[vimeo-video]
-[stream language="EN" videoId="488477876/d4fe816fbd" default /]
-[stream language="RO" videoId="488477876/d4fe816fbd"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Solution-Food Or Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -461,10 +443,7 @@ unknown
 [slide hideTitle]
 # Logical "NOT" Operator
 
-[vimeo-video]
-[stream language="EN" videoId="486872932/bae112a39e" default /]
-[stream language="RO" videoId="486872932/bae112a39e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-26-Logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Logical negation (operator `!` ) means that a given condition is **not fulfilled.**
 
