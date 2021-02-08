@@ -88,11 +88,16 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function concatNames(input){
+function concatNames(firstName, LastName, delimeter){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
@@ -102,8 +107,8 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['John', 'Smith', '->']`| John\-\>Smith |
-|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+|'John', 'Smith', '\-\>'| John\-\>Smith |
+|'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
 
 [/task-description]
 [tests]
@@ -185,14 +190,17 @@ JanpWhite
 [code-task title="Concantenate Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
-
-
 ```
-function concatNames(input){
+function concatNames(firstName, LastName, delimeter){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which: 
@@ -202,8 +210,8 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['John', 'Smith', '->']`| John\-\>Smith |
-|`['Jan', 'White', '<->']`|Jan\<\-\>White|
+|'John', 'Smith', '\-\>'| John\-\>Smith |
+|'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
 
 [/task-description]
 [tests]
@@ -285,11 +293,16 @@ JanpWhite
 [code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function rightPlace(input){
+function rightPlace(string, symbol, result){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
@@ -304,8 +317,8 @@ If they are equal you should print `Matched`, otherwise print `Not Matched`.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|\['Str_ng', 'I', 'Strong'\] | Not Matched |
-|\['Str_ng', 'i', 'String'\] |Matched|
+|'Str_ng', 'I', 'Strong' | Not Matched |
+|'Str_ng', 'i', 'String' |Matched|
 
 [/task-description]
 [tests]
@@ -386,11 +399,16 @@ Not Matched
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function rightPlace(input){
+function rightPlace(string, symbol, result){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 You will receive 3 parameters: **string**, **char**, **string**.
@@ -405,8 +423,8 @@ If they are equal you should print `Matched`, otherwise print `Not Matched`.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|\['Str_ng', 'I', 'Strong'\]| Not Matched |
-|\['Str_ng', 'i', 'String'\]|Matched|
+|'Str_ng', 'I', 'Strong' | Not Matched |
+|'Str_ng', 'i', 'String' |Matched|
 
 [/task-description]
 [tests]
