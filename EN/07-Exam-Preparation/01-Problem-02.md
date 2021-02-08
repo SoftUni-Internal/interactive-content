@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Problem 2: Time for Lunch
 
-[vimeo-video]
-[stream language="EN" videoId="487118102/c7f6a5713f" default /]
-[stream language="RO" videoId="487118102/c7f6a5713f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
