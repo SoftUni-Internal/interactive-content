@@ -181,7 +181,9 @@ function amazingNumbers(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]));
+}
 ```
 [/code-adapter]
 [task-description]
@@ -314,7 +316,9 @@ function amazingNumbers(input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+(input, code) => {
+  return code (Number(input[0]));
+}
 ```
 [/code-adapter]
 [task-description]
