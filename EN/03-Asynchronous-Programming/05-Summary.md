@@ -1,15 +1,15 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+## In this lesson you learned:
 
 **Asynchronous programming**
 
-- Key differences between **synchronous** and **asynchronous** programming.
+- Key differences between **synchronous** and **asynchronous** programming
 
-- **Code execution order** in JavaScript.
+- **Code execution order** in JavaScript
 
-- Escaping JavaScript's **synchronous** nature.
+- Escaping JavaScript's **synchronous** nature
 ```js
 async function getData(url) {
   let data = await fetch(url);
@@ -20,9 +20,9 @@ async function getData(url) {
 ```
 **Promises**
 
-- Representing data that will be **received in the future**.
+- Representing data that will be **received in the future**
 
-- **Chaining** promises and utilizing their methods.
+- **Chaining** promises and utilizing their methods
 
 ```js
 new Promise(executor);
@@ -30,9 +30,9 @@ new Promise(executor);
 
 **"Async" functions**
 
-- Writing clean and concise asynchronous code with `async` and `await`.
+- Writing clean and concise asynchronous code with `async` and `await`
 
-- **Sequential** and **concurrent** execution.
+- **Sequential** and **concurrent** execution
 ```js
 async function getDbInfo(url) {
   try {
@@ -49,8 +49,8 @@ async function getDbInfo(url) {
 
 - **Remote Databases**
 
-- **Relational** and **non-relational** databases.
+- **Relational** and **non-relational** databases
 
-- **BaaS** (Backend-as-a-Service).
+- **BaaS** (Backend-as-a-Service)
 
 [/slide]
