@@ -1,10 +1,7 @@
 [slide hideTitle]
 # If-Else Conditions
 
-[vimeo-video]
-[stream language="EN" videoId="486879057/c8e3a2cdaa" default /]
-[stream language="RO" videoId="486879057/c8e3a2cdaa"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-17-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
@@ -56,10 +53,7 @@ function example(input) {
 [slide hideTitle]
 # Block of Code
 
-[vimeo-video]
-[stream language="EN" videoId="486879069/fa69d41600" default /]
-[stream language="RO" videoId="486879069/fa69d41600"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-18-19-Blocks-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
@@ -150,10 +144,7 @@ even
 [slide hideTitle]
 # Solution: Even or Odd
 
-[vimeo-video]
-[stream language="EN" videoId="486879240/35e90b72ee" default /]
-[stream language="RO" videoId="486879240/35e90b72ee"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
