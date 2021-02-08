@@ -111,8 +111,9 @@ Write a program, which:
 |'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
 John
 Smith
@@ -294,7 +295,7 @@ JanpWhite
 [code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function rightPlace(string, symbol, result){
+function rightPlace(string, sym, result){
   // Write your code here
 }
 ```
@@ -322,7 +323,28 @@ If they are equal you should print `Matched`, otherwise print `Not Matched`.
 |'Str_ng', 'i', 'String' |Matched|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+Str_ng
+I
+Strong
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test open]
+[input]
+Str_ng
+I
+String
+[/input]
+[output]
+Matched
+[/output]
+[/test]
 [test]
 [input]
 aa_av
@@ -400,7 +422,7 @@ Not Matched
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function rightPlace(string, symbol, result){
+function rightPlace(string, sym, result){
   // Write your code here
 }
 ```
@@ -428,7 +450,28 @@ If they are equal you should print `Matched`, otherwise print `Not Matched`.
 |'Str_ng', 'i', 'String' |Matched|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+Str_ng
+I
+Strong
+[/input]
+[output]
+Not Matched
+[/output]
+[/test]
+[test open]
+[input]
+Str_ng
+I
+String
+[/input]
+[output]
+Matched
+[/output]
+[/test]
 [test]
 [input]
 aa_av
