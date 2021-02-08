@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Real Life Example: Moving Dishes
 
-[vimeo-video]
-[stream language="EN" videoId="487119221/9c519c14e8" default /]
-[stream language="RO" videoId="487119221/9c519c14e8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-9-10-Real-life-example-Moving-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us say you want to fill the dishwasher with plates.
 
@@ -23,10 +20,7 @@ When you reach that condition, you stop the loop.
 [slide hideTitle]
 # For Loop
 
-[vimeo-video]
-[stream language="EN" videoId="487119239/423a548f1b" default /]
-[stream language="RO" videoId="487119239/423a548f1b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-11-13-For-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming on many occasions, we need to execute a block of commands multiple times. 
 
@@ -82,10 +76,7 @@ The loop repeats 10 times and each of these repetitions is called an **iteration
 [slide hideTitle]
 # Problem: Print Sum of N Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487119267/15cae043ef" default /]
-[stream language="RO" videoId="487119267/15cae043ef"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-14-problem-first-n-numbers-sum-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-lab-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -152,10 +143,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Print Sum of N Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487119329/778e284f8f" default /]
-[stream language="RO" videoId="487119329/778e284f8f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-15-Solution-Print-Sum-of-N-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -221,10 +209,7 @@ Write a program, which:
 [slide hideTitle]
 # Problem: Greatest Number
 
-[vimeo-video]
-[stream language="EN" videoId="487119324/39b9907585" default /]
-[stream language="RO" videoId="487119324/39b9907585"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-16-problem-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -310,10 +295,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Greatest Number
 
-[vimeo-video]
-[stream language="EN" videoId="487119366/21cddc7cd5" default /]
-[stream language="RO" videoId="487119366/21cddc7cd5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-17-solution-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Greatest Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
