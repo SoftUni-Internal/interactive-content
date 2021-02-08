@@ -1,12 +1,6 @@
-# Validation
-
 [slide hideTitle]
 
-<<<<<<< HEAD
-# Data validation 
-=======
-## Data validation 
->>>>>>> a2f6da66f952e4098a4e39aec7e77b35039e80b2
+# Validation
 
 **Data validation happens in setters:**
 
