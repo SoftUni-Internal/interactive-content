@@ -4,10 +4,7 @@
 [slide hideTitle]
 # What is an Array? 
 
-[vimeo-video]
-[stream language="EN" videoId="487119167/37fe7bf771" default /]
-[stream language="RO" videoId="487119167/37fe7bf771"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-6-7-8-reading-from-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We already know how to store single piece of data in one variable. Arrays allow us to store multiple pieces data, again, in only one variable. 
 
