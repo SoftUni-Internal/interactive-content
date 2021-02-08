@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Real Life Example
 
-[vimeo-video]
-[stream language="EN" videoId="486854871/0266769f7d" default /]
-[stream language="RO" videoId="486854871/0266769f7d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/Interactive-JS-PB-Intorduction-to-programming-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If we think of the variables as boxes that hold information, this is how they would look:
 
@@ -45,10 +42,7 @@ The data that they are storing can be read and changed at any time.
 [slide hideTitle]
 # Creating a Variable
 
-[vimeo-video]
-[stream language="EN" videoId="486854948/925f8eaf2d" default /]
-[stream language="RO" videoId="486854948/925f8eaf2d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-7-8-8-demo-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variables can be stored in the program's:
 
@@ -87,10 +81,7 @@ let age = 35;
 [slide hideTitle]
 # Declaration Statements
 
-[vimeo-video]
-[stream language="EN" videoId="486855151/43dc67876d" default /]
-[stream language="RO" videoId="486855151/43dc67876d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-9-10-Declaration-statements-let-var-const-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Declaration statements in javascript are: `let`, `var` and `const`
 
