@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Sequence of If-Else Conditions
 
-[vimeo-video]
-[stream language="EN" videoId="486879402/eb03e7a9d0" default /]
-[stream language="RO" videoId="486879402/eb03e7a9d0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-24,25-Sequence-of-if-else-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
@@ -29,10 +26,7 @@ else {
 [slide hideTitle]
 # Example: Digits in English
 
-[vimeo-video]
-[stream language="EN" videoId="486879419/2d0e9d0270" default /]
-[stream language="RO" videoId="486879419/2d0e9d0270"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-26-Series-of-conditions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 
