@@ -2,10 +2,7 @@
 [slide hideTitle]
 # Arithmetic Operations
 
-[vimeo-video]
-[stream language="EN" videoId="486856657/5524b19304" default /]
-[stream language="RO" videoId="486856657/5524b19304"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-25-26-Arithmetic-operators-Plus-Minus-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's examine the basic **arithmetic operations** in programming. 
 
@@ -33,10 +30,7 @@ console.log(a - b);
 [slide hideTitle]
 # Multiplying Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="486856776/0a071915ba" default /]
-[stream language="RO" videoId="486856776/0a071915ba"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-27-Arithmetic-Operators-Multiplication-Divison.mp4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 For **multiplication** of numbers we use the `*` operator:
 ```js live
@@ -101,10 +95,7 @@ console.log(f);
 [slide hideTitle]
 # Remainder
 
-[vimeo-video]
-[stream language="EN" videoId="486856887/86a313dc61" default /]
-[stream language="RO" videoId="486856887/86a313dc61"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-29-Arithmetic-operators-Modular-Division-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The remainder operator `%` computes the remainder after dividing its left-hand operand by its right-hand operand.
 ```js live
