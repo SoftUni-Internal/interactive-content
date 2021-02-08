@@ -205,7 +205,7 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 
 [slide hideTitle]
 # Solution: Reverse an Array of Integers
-[code-task title="Solution: Reverse an Array of Integers" taskId="java-fund-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Reverse an Array of Integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
