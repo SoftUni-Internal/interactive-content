@@ -1,11 +1,22 @@
-# Problem 2: Food supply
 
 [slide hideTitle]
+# Problem 2: Food supply
+
+[code-task title="Food supply" taskId="js-fundamentals-2-finaleExam-Food-supply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
 # Description
 
-On the first line of the input you will be given a **text string**, containing the items **currently stored in your fridge.**
+On the first line of the input, you will be given a **string**, containing the items that are **currently stored in your fridge.**
 
-You must **extract the information about each one** and calculate its total calories.
+You must **extract the information about each one of them** and calculate their total calories.
 
 First, you must **extract the food info.** 
 
@@ -19,7 +30,9 @@ It will always follow the **same pattern** rules:
 
 * The item name may contain only **lowercase**, **uppercase** **letters**, and **spaces.**
 
-* The expiration date will always follow the pattern: `{day}/{month}/{year}`, **the day, month, and year will consist of two digits**
+* The expiration date will always follow the pattern: `{day}/{month}/{year}`.  
+
+The **day**, the **month**, and the **year** will consist of two digits.
 
 * The calories will be an **integer in the range: 0-10000**
 
@@ -31,26 +44,17 @@ Calculate **the total calories of all food items** from the string and then dete
 
 ## Output
 
-- On the first output line, print the number of days that this supply of food would last before you have to go to the store for more:
+- On the first output line, print the number of days that this food supply would last before you have to go to the store for more:
 
 `You have enough food for {days} days!`
 
-- After, print each valid item. 
+- After that, print all valid items.
 
 - The output should look like this:
 `Item: {item name}, Best before: {expiration date}, Nutrition: {calories}`
 
-[code-task title="Food supply" taskId="js-fundamentals-2-finaleExam-Food-supply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
-# Example
+## Example
 
 **Input** 
 `['#Bread#19/03/21#4000#|Invalid|03/03.20||Apples|08/10/20|200||Carrots|06/08/20|500||Not right|6.8.20|5|']`
@@ -62,15 +66,16 @@ Item: Apples, Best before: 08\/10\/20, Nutrition: 200
 Item: Carrots, Best before: 06\/08\/20, Nutrition: 500
 
 **Comments**
-We have a total of three matches
+We have three matches in total: 
 `#Bread#19/03/21#4000#`: bread
 `|Apples|08/10/20|200|`: apples
 `|Carrots|06/08/20|500|`: carrots
 
 The sum of their calories is 4700. 
 
-Since you need 2000kcal a day, we divide `4700/2000`, which means this food will last you for 2 days.
-We print each item
+Since you need 2000kcal a day, you divide `4700/2000`, which means that this food will last for 2 days. 
+
+We print each item.
 
 ## More Examples
 
@@ -96,10 +101,10 @@ The total calories are `8500 + 9000 + 2000 = 19500`, which means you have food f
 `['Hello|#Invalid food#19/03/20#450|$5*(@']`
 
 **Output**
-You have food to last you for: 0 days!
+You have enough food for 0 days\!
 
 **Comments**
-We have no matches, which means we have no food.
+There are no matches, which means you have no food.
 
 This text `#Invalid food#19/03/20#450` is not a match, since it does not have a `#` at the end.
 
