@@ -1133,16 +1133,15 @@ Your task is to find the sum of its digits.
 245678
 [/input]
 [output]
-32
+28
 [/output]
 [/test]
-[tests]
 [test open]
 [input]
 97561
 [/input]
 [output]
-28
+24
 [/output]
 [/test]
 [test]
