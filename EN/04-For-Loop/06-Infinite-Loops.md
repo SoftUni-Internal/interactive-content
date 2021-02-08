@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Infinite Loops
 
-[vimeo-video]
-[stream language="EN" videoId="487119696/795eeac3a1" default /]
-[stream language="RO" videoId="487119696/795eeac3a1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-30-32-infinite-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Infinite loops can **repeat a block of code an unlimited number of times.** 
 
@@ -28,10 +25,7 @@ for ( ; ; ) {
 [slide hideTitle]
 # Problem: Sum Numbers Until 0
 
-[vimeo-video]
-[stream language="EN" videoId="487119738/e0db9467e8" default /]
-[stream language="RO" videoId="487119738/e0db9467e8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-33-problem-sum-numbers-until-zero-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Numbers Until 0" taskId="pb-js-for-loop-lab-Sum-Numbers-Until-0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -112,10 +106,7 @@ Good bye
 [slide hideTitle]
 # Solution: Sum Numbers Until 0
 
-[vimeo-video]
-[stream language="EN" videoId="487119772/ad088bc30e" default /]
-[stream language="RO" videoId="487119772/ad088bc30e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-34-solution-sum-numbers-until-zero-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Numbers Until 0" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
