@@ -56,7 +56,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 5, 4, 3, 2, 1 |
+|5| 5 4 3 2 1 |
 
 
 [/task-description]
@@ -66,7 +66,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 5
 [/input]
 [output]
-5, 4, 3, 2, 1
+5 4 3 2 1
 [/output]
 [/test]
 [test]
@@ -74,7 +74,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 4
 [/input]
 [output]
-4, 3, 2, 1
+4 3 2 1
 [/output]
 [/test]
 [test]
@@ -82,7 +82,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 3
 [/input]
 [output]
-3, 2, 1
+3 2 1
 [/output]
 [/test]
 [test]
@@ -90,7 +90,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 2
 [/input]
 [output]
-2, 1
+2 1
 [/output]
 [/test]
 [test]
@@ -128,7 +128,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 5, 4, 3, 2, 1 |
+|5| 5 4 3 2 1 |
 
 
 [/task-description]
@@ -138,7 +138,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 5
 [/input]
 [output]
-5, 4, 3, 2, 1
+5 4 3 2 1
 [/output]
 [/test]
 [test]
@@ -146,7 +146,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 4
 [/input]
 [output]
-4, 3, 2, 1
+4 3 2 1
 [/output]
 [/test]
 [test]
@@ -154,7 +154,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 3
 [/input]
 [output]
-3, 2, 1
+3 2 1
 [/output]
 [/test]
 [test]
@@ -162,7 +162,7 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 2
 [/input]
 [output]
-2, 1
+2 1
 [/output]
 [/test]
 [test]
