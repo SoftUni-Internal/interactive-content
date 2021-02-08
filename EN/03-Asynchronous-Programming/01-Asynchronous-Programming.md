@@ -36,7 +36,7 @@ Running code like this can **block an entire webpage** due to the waiting time o
 
 There are, however, several ways to go around JavaScript's synchronous nature:
 
-- `callbacks` - A callback is a function, which is **an argument to another function** and performs a certain operation inside of it.
+- `callback` - A callback is a function, which is **an argument to another function** and performs a certain operation inside of it.
 
 ```js
 function calculateTax(income) {
@@ -51,7 +51,7 @@ function outer(callback) {
 outer(calculateTax); // outer is called with calculateTax as a callback
 ```
 
-- `promises`: A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data.
+- `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data.
 
 ```js
 let promise = new Promise(function (resolve, reject) {
@@ -59,7 +59,7 @@ let promise = new Promise(function (resolve, reject) {
 });
 ```
 
-- `Async` functions: Fundamentally **built on promises**, but much easier to use. Allow for a **cleaner and more readable code**.
+- `async function` - Fundamentally **built on promises**, but much easier to use. Allows for a **cleaner and more readable code**.
 
 ```js
 async function getData(url) {
@@ -117,17 +117,17 @@ setTimeout(printGeorge, 1000);
 
 What happens here is that the code is executed **line by line**:
 
-- Firstly, "Jessica" is printed.
+- Firstly, "Jessica" is printed
 
-- After that the callback function `printSam` is **scheduled to run after three seconds**.
+- After that the callback function `printSam` is **scheduled to run after three seconds**
 
-- "Tyson" is printed since `printSam`'s three seconds **have not yet passed**.
+- "Tyson" is printed since `printSam`'s three seconds **have not yet passed**
 
-- `printGeorge` is **scheduled to run after one second** while `printSam`'s three seconds are still yet to pass.
+- `printGeorge` is **scheduled to run after one second** while `printSam`'s three seconds are still yet to pass
 
-- One second passes and `printGeorge` is executed.
+- One second passes and `printGeorge` is executed
 
-- Three seconds pass and `printSam` is executed.
+- Three seconds pass and `printSam` is executed
 
 If the same code were executed synchronously, the names would be in the following order:
 
