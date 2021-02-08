@@ -88,7 +88,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function concatNames(firstName, LastName, delimeter){
+function concatNames(firstName, lastName, delimeter){
   // Write your code here
 }
 ```
@@ -191,7 +191,7 @@ JanpWhite
 [code-editor language=javascript]
 
 ```
-function concatNames(firstName, LastName, delimeter){
+function concatNames(firstName, lastName, delimeter){
   // Write your code here
 }
 ```
@@ -214,6 +214,7 @@ Write a program, which:
 |'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
