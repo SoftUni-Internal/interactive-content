@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Problem 6: The Best Movie
 
-[vimeo-video]
-[stream language="EN" videoId="487118452/de8f1dddfb" default /]
-[stream language="RO" videoId="487118452/de8f1dddfb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
