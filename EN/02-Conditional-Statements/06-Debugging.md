@@ -1,10 +1,7 @@
 [slide]
 # Debugging
 
-[vimeo-video]
-[stream language="EN" videoId="486879791/6f3c715a5b" default /]
-[stream language="RO" videoId="486879791/6f3c715a5b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-31,32-Debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 So far, we wrote a lot of code, and there were some mistakes in it, right? Now we will show a tool that can help us find mistakes more easily: **the debugger**.
 
@@ -21,10 +18,7 @@ We can track **line by line** what happens in our program, what path it follows,
 
 # Debugging in Visual Studio Code
 
-[vimeo-video]
-[stream language="EN" videoId="486879964/71bacdc0d7" default /]
-[stream language="RO" videoId="486879964/71bacdc0d7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-33-Debugging-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 * With \[F5\] will start the program in debug mode
