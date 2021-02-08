@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Iterating over Characters
 
-[vimeo-video]
-[stream language="EN" videoId="487119574/ea95aca57d" default /]
-[stream language="RO" videoId="487119574/ea95aca57d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-24-27-iterating-over-characters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 It is good to know that **for loops** do not only work with numbers. 
 
@@ -71,11 +68,7 @@ console.log(asciiValue);
 [slide hideTitle]
 # Problem: Latin Letters
 
-
-[vimeo-video]
-[stream language="EN" videoId="487119629/a9b273defe" default /]
-[stream language="RO" videoId="487119629/a9b273defe"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-28-problem-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -150,10 +143,7 @@ p q r s t
 [slide hideTitle]
 # Solution: Latin Letters
 
-[vimeo-video]
-[stream language="EN" videoId="487119646/6501686e7f" default /]
-[stream language="RO" videoId="487119646/6501686e7f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-29-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
