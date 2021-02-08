@@ -2,10 +2,7 @@
 
 # Real-Life Example: Box of Books
 
-[vimeo-video]
-[stream language="EN" videoId="487120525/72418abb77" default /]
-[stream language="RO" videoId="487120525/72418abb77"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-6-7-Introduction-Real-life-examle-box-of-books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The next type of loops that we will get familiar with are called `while` loops. 
 
