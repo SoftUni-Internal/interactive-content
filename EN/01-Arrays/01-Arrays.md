@@ -1,24 +1,19 @@
 # Arrays
 
-[slide]
+[slide hideTitle]
 # Definition
-
-[vimeo-video startTimeInSeconds="85" endTimeInSeconds="2420"]
-[stream language="EN" videoId="421771481" default /]
-[stream language="RO" videoId="427418768"  /]
-[/vimeo-video]
 
 You already know how to store single data in one variable. Arrays allow us to store multiple data, again, in only one variable.
 
 Arrays are useful for preserving a sequence of data and iterating over it.
 
-They are enclosed in curly brackets and the values inside it are separated by a comma.
+You can initialize an array and set the values inside it by enclosing them in curly brackets and separating the values by commas:
 
 ``` java
 String[] days = { "apple", "pear", "cherry" };
 ```
 
-A single array can contain duplicate values.
+An array can contain duplicate values.
 
 ```Java
 int[] numbers = { 1, 1, 2, 4, 5 };
@@ -27,7 +22,7 @@ int[] numbers = { 1, 1, 2, 4, 5 };
 The values in an array are called elements.
 
 # Real-Life Example
-Imagine a train which has wagons, and each wagon - passengers.
+Imagine a train with multiple wagons and passengers riding in each wagon.
 
 Now imagine this as an array of integers, each element represent a wagon and its value is the passengers.
 
@@ -43,10 +38,10 @@ You are going to learn about these structures in the following courses.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Working with Arrays
 
-Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+Arrays are used for storing multiple values in a single variable, instead of declaring separate variables for each value.
 
 Arrays have a fixed size. This means they cannot be resized.
 
@@ -74,23 +69,23 @@ Indexes of an array are numbered from **0** to **length-1**.
  // System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
 ```
 
-Here are some explanations about the example you can see above.
+Here are some explanations about the last example.
 
 We **allocate** an array of 5 integers.
 
-Then we **initialize** the array, but all values are 0, because the default of int is zero.
+Then we **initialize** the array, but all values are 0 because the default of **int** is zero.
 
 We **assign** a value to the array elements.
 
 The length holds the number of array elements.
 
-In the for-loop we use `i < numbers.length` because array's indexes are zero-based, which means that the first index of an array is 0 and the last element is `numbers[4]`.
+In the for-loop we use `i < numbers.length` because the array's indexes are zero-based, which means that the first index of an array is 0 and the last element is `numbers[4]`.
 
 **Accessing** array elements by index.
 
 As we mentioned above the first index of an array is always 0 and the last index is `array.length - 1`.
 
-In total we have 5 elements in our array, but the last element is at index 4, so we subtract `array.length - 1 = 4` which is our last index.
+In total, we have 5 elements in our array, but the last element is at index 4, so we subtract `array.length - 1 = 4` which is our last index.
 
 The `[]` operator accesses elements by index.
 
@@ -101,7 +96,7 @@ If we try to access the element on an invalid index, we get an exception.
 
 [slide hideTitle]
 # Problem: Day of Week
-[code-task title="Problem: Day of Week" taskId="java-fund-Arrays-Day-of-Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -239,7 +234,7 @@ Invalid day!
 
 [slide hideTitle]
 # Solution: Day of Week
-[code-task title="Problem: Day of Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Day of Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -374,7 +369,7 @@ Invalid day!
 
 [slide hideTitle]
 # Problem: Sum Even Numbers
-[code-task title="Problem: Sum Even Numbers" taskId="java-fund-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -471,7 +466,7 @@ Read an array from the console and sum only the even numbers.
 
 [slide hideTitle]
 # Solution: Sum Even Numbers
-[code-task title="Problem: Sum Even Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Sum Even Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Arrays;

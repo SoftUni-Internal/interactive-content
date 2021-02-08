@@ -1,5 +1,8 @@
-[slide]
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Contents
 
 TODO: Add Video
 
@@ -7,22 +10,20 @@ TODO: Add Video
 
 **1. Arrays**
 
-- What are arrays? 
+- What are arrays
 
-- How to work with arrays?
+- Working with arrays
 
 - Arrays syntax
 
 **2. Reading Arrays from the Console**
 
-- How to read an array from the console?
+- Reading an array from the console
 
-- How to print an array?
+- Printing an array to the console
 
 **3. Foreach Loop**
 
 - Printing Array with ForEach loop
-
-**4. Live exercises**
 
 [/slide]

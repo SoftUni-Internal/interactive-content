@@ -1,27 +1,31 @@
-[slide]
 # For-each Loop
-
-[vimeo-video startTimeInSeconds="6409" endTimeInSeconds="8192"]
-[stream language="EN" videoId="421771481" default /]
-[stream language="RO" videoId="427418768"  /]
-[/vimeo-video]
+[slide hideTitle]
+# Definition
 
 `For-each` is another array traversing technique like `for` loop, `while` loop, `do-while` loop introduced in Java.
 
-- It starts with the keyword `for` like a normal `for` loop.
+It starts with the keyword `for` like a normal `for` loop.
 
-- Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon, which is then followed by the array name.
+Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
 
-- In the loop body, you cannot access the current index, but you can use the loop variable you created rather than using an indexed array element.
+In the loop body, you cannot access the current index, but you can use the loop variable you created rather than using an indexed array element.
 
-- It’s commonly used to iterate over an array.
+It is commonly used to iterate over an array.
 
-```Java
-for (var item : collection) {
-    // Process the value here
+```java
+for (int variableName : arrayName) {
+  //execute some code here
 }
 ```
-We can **print** an array with `for-each`:
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Printing an Array With Foreach
+
+We can **print** an array with **for-each**:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -30,11 +34,13 @@ for (int number : numbers) {
 }
 ```
 
+One thing to note here, is that you would not be able to manipulate the elements of an array while iterating with **for-each**. 
+
 [/slide]
 
 [slide hideTitle]
 # Problem: Even and Odd Subtraction
-[code-task title="Problem: Even and Odd Subtraction" taskId="java-fund-07-Arrays-Even-and-Odd-Subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Even and Odd Subtraction" taskId="java-fund-arrays-lab-even-and-odd-subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -136,7 +142,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [slide hideTitle]
 # Solution: Even and Odd Subtraction
-[code-task title="Problem: Even and Odd Subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Even and Odd Subtraction" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Arrays;
@@ -239,7 +245,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [slide hideTitle]
 # Problem: Condense Array to Number
-[code-task title="Problem: Condense Array to Number" taskId="java-fund-Arrays-Condense-Array-to-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Condense Array to Number" taskId="java-fund-arrays-lab-condense-array-to-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -254,9 +260,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read a**n array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** is obtained.
+Write a program to read **an array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** remains.
 
-For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and obtain \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and obtain \{12+13\} = \{25\}.
+For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and this results in \{12+13\} = \{25\}.
 
 ## Examples
 |**Input**|**Output**| **Comments** |
@@ -269,11 +275,11 @@ For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the se
 ### Hints
 While we have more than one element in the array `nums[]`, repeat the following:
 
-*	Allocate a new array `condensed[]` of size `nums.length`.
-*	Sum the numbers from `nums[]` to `condensed[]`:
+- Allocate a new array `condensed[]` of size `nums.length`
+- Sum the numbers from `nums[]` to `condensed[]`
 
-	`condensed[i]` = `nums[i]` + `nums[i+1]`
-*	`nums[] = condensed[]`
+    - `condensed[i]` = `nums[i]` + `nums[i+1]`
+    - `nums[] = condensed[]`
 
 [/task-description]
 [code-io /]
@@ -370,9 +376,10 @@ public class P7_Condense_Array_to_Number {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to read a**n array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** is obtained.
 
-For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and obtain \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and obtain \{12+13\} = \{25\}.
+Write a program to read **an array of integers** and condense them by **summing** adjacent couples of elements until a **single integer** remains.
+
+For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the second two elements and get \{2+10, 10+3\} = \{12, 13\}, then we sum again all adjacent elements and this results in \{12+13\} = \{25\}.
 
 ## Examples
 |**Input**|**Output**| **Comments** |
@@ -385,11 +392,11 @@ For example, if we have 3 elements \{2, 10, 3\}, we sum the first two and the se
 ### Hints
 While we have more than one element in the array `nums[]`, repeat the following:
 
-*	Allocate a new array `condensed[]` of size `nums.length`.
-*	Sum the numbers from `nums[]` to `condensed[]`:
+- Allocate a new array `condensed[]` of size `nums.length`
+- Sum the numbers from `nums[]` to `condensed[]`
 
-	`condensed[i]` = `nums[i]` + `nums[i+1]`
-*	`nums[] = condensed[]`
+    - `condensed[i]` = `nums[i]` + `nums[i+1]`
+    - `nums[] = condensed[]`
 
 [/task-description]
 [code-io /]

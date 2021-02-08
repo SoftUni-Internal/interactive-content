@@ -1,9 +1,9 @@
 
-[slide]
+[slide hideTitle]
 # Summary
 
-## In this lesson you learned:
-- Arrays hold a sequence of elements
+# In this lesson you learned:
+- Arrays hold a sequence of elements 
 - Creating (allocating) an array
 
 ```java
@@ -34,15 +34,22 @@ for (int number : numbers) {
 
 - For-each loop
 
+```Java
+int[] numbers = { 1, 2, 3, 4, 5 };
+for (int number : numbers) {
+   System.out.println(number + " ");
+}
+```
+
 ## In the next lesson, you will learn:
-- What Is a Method?
-- Naming and Best Practices
-- Declaring and Invoking Methods
-  - Void and Return Type Methods
-- Methods with Parameters
-- Value vs. Reference Types
-- Overloading Methods
-- Program Execution Flow
+- What is a method
+- Naming and best practices
+- Declaring and invoking methods
+  - void and return type Methods
+- Methods with parameters
+- Value types vs. reference types
+- Overloading methods
+- Program execution flow
 [/slide]
 
 
