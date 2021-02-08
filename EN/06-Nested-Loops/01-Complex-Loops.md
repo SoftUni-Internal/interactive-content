@@ -39,19 +39,19 @@ for (int j = 16; j > 1; j /= 2) {
 
 interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one + 
 
-[code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function numbersFromNto1(input) {
-  // Write your code here
+public static void Main(string[] args) {
+
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the numbers from N down to 1.
+Write a program that prints the numbers from N down to 1.
 
-The function receives a number `n` and prints the numbers from `n` down to 1. 
+The program receives a number `n` and prints the numbers from `n` down to 1. 
 
 # Example
 | **Input** | **Output** |
@@ -111,20 +111,19 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 
 interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one-solution
 
-[code-task title="Numbers from N down to 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Numbers from N down to 1" taskId="pb-js-nested-loops-lab-Numbers-from-N-down-to-1-Solution" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function numbersFromNto1(input) {
-  // Write your code here
+public static void Main(string[] args) {
+  
 }
-
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the numbers from N down to 1.
+Write a program that prints the numbers from N down to 1.
 
-The function receives a number `n` and prints the numbers from `n` down to 1. 
+The program receives a number `n` and prints the numbers from `n` down to 1. 
 
 # Example
 | **Input** | **Output** |
@@ -177,7 +176,6 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [/tests]
 [code-io/]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -185,17 +183,17 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 
 interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three + 
 
-[code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function numbersFrom1ton(n) {
-  // Write your code here
+public static void Main(string[] args) {
+  
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the numbers from 1 to `n` with step 3:
+Write a program that prints the numbers from 1 to `n` with step 3:
 
 * Receives a number `n`
 
@@ -261,17 +259,17 @@ Write a function to print the numbers from 1 to `n` with step 3:
 
 interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three-solution
 
-[code-task title="Numbers from 1 to N with Step 3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Numbers from 1 to N with Step 3" taskId="pb-js-nested-loops-lab-Numbers-from-1-to-N-with-Step-3-solution" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function numbersFrom1ton(n) {
-  // Write your code here
+public static void Main(string[] args) {
+  
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the numbers from 1 to `n` with step 3:
+Write a program that prints the numbers from 1 to `n` with step 3:
 
 * Receives a number `n`
 
@@ -332,23 +330,22 @@ Write a function to print the numbers from 1 to `n` with step 3:
 
 [/slide]
 
-
 [slide hideTitle]
 # Problem: Even Powers of 2
 
 interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two + 
 
-[code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function evenPowersOfTwo(n) {
-  // Write your code here
+public static void Main(string[] args) {
+  
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the even powers of 2:
+Write a program that prints the even powers of 2:
 
 * Receives a number `n`
 
@@ -413,17 +410,17 @@ Write a function to print the even powers of 2:
 
 interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two-solution
 
-[code-task title="Even Powers of 2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Even Powers of 2" taskId="pb-js-nested-loops-lab-Even-Powers-of-2-Solution" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
 ```
-function evenPowersOfTwo(n) {
-  // Write your code here
+public static void Main(string[] args) {
+  
 }
 ```
 [/code-editor]
 [task-description]
 # Description
-Write a function to print the even powers of 2:
+Write a program that prints the even powers of 2:
 
 * Receives a number `n`
 
