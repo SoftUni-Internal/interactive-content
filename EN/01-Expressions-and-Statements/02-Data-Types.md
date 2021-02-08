@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Data Types
 
-[vimeo-video]
-[stream language="EN" videoId="486855368/8cbb7ec0db" default /]
-[stream language="RO" videoId="486855368/8cbb7ec0db"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-11-12-What-are-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are six primitive data types:
 
@@ -59,10 +56,8 @@ U will cover **object** types later.
 [slide hideTitle]
 # Data Types are Dynamic
 
-[vimeo-video]
-[stream language="EN" videoId="486855395/6827c0da76" default /]
-[stream language="RO" videoId="486855395/6827c0da76"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-13-13-demo-Data-types-are-dynamic-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In JavaScript data types are dynamic.
 
