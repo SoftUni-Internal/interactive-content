@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Development Environments (IDE)
 
-[vimeo-video]
-[stream language="EN" videoId="486835445/ac9f325729" default /]
-[stream language="RO" videoId="486835445/ac9f325729"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-17-18-19-Integrated-Development-Environments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In order to program we need an **Integrated Development Environment** (IDE). 
 
@@ -41,10 +38,7 @@ This is an example of how this IDE looks (the Visual Studio Code IDE for JavaScr
 [slide hideTitle]
 # Installing Node.js and Visual Studio Code
 
-[vimeo-video]
-[stream language="EN" videoId="486835484/98228c39ea" default /]
-[stream language="RO" videoId="486835484/98228c39ea"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
@@ -102,10 +96,7 @@ That's all. You are ready to work with Visual Studio Code.
 [slide hideTitle]
 # Development Environments: Desktop and Online
 
-[vimeo-video]
-[stream language="EN" videoId="486835538/7662f7e6ca" default /]
-[stream language="RO" videoId="4486835538/7662f7e6ca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-23-Development-Environments-Desktop-And-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Install Microsoft Visual Studio Code
 
@@ -126,10 +117,7 @@ Alternative IDE (online)
 [slide hideTitle]
 # What is Visual Studio Code
 
-[vimeo-video]
-[stream language="EN" videoId="486835601/f6d36a44eb" default /]
-[stream language="RO" videoId="486835601/f6d36a44eb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-25-What-is-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Visual Studio Code is open source-code editor.
@@ -148,10 +136,7 @@ We can **extend** it via extensions, which are available through a central repos
 [slide hideTitle]
 # Running VSC and Recommended Extensions
 
-[vimeo-video]
-[stream language="EN" videoId="486835722/828f778f35" default /]
-[stream language="RO" videoId="486835722/828f778f35"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-27-28-Running-VSC-and-recommended-extensions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Visual Studio Code has many extensions that can make our working flow more pleasant.
 
@@ -174,10 +159,8 @@ We use different extensions depending on what type of project we are working.
 [slide hideTitle]
 # Projects in VSC
 
-[vimeo-video]
-[stream language="EN" videoId="486835793/082e4ffd04" default /]
-[stream language="RO" videoId="486835793/082e4ffd04"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-29-30-Projects-in-VSC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The video above is showing how we can setup a basic project.
 
