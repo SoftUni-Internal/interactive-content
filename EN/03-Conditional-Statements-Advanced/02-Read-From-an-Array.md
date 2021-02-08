@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is an Array? 
 
-[vimeo-video]
-[stream language="EN" videoId="486869174/dcb7c31b0d" default /]
-[stream language="RO" videoId="486869174/dcb7c31b0d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We already know how to store single piece of data in one variable. Arrays allow us to store multiple pieces data, again, in only one variable. 
 
@@ -41,10 +38,7 @@ In this course we **will not** initialize an array, we will only accept arra
 [slide hideTitle]
 # Reading from Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="486869498/f3292af295" default /]
-[stream language="RO" videoId="486869498/f3292af295"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading from Arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each element in an array has its own **index** (**position**) by which it can be **accessed**.
 
