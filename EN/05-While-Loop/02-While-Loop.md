@@ -1,10 +1,7 @@
 [slide hideTitle]
 # While Loop
 
-[vimeo-video]
-[stream language="EN" videoId="487120555/61828bfd47" default /]
-[stream language="RO" videoId="487120555/61828bfd47"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
@@ -36,10 +33,7 @@ All this is repeated again and again **until at some point the conditional expre
 [slide hideTitle]
 # Problem: Decreasing Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487120584/cf3fbb855b" default /]
-[stream language="RO" videoId="487120584/cf3fbb855b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-11-Problem-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Decreasing Numbers" taskId="pb-js-while-loop-lab-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -114,10 +108,7 @@ Write a program, which:
 [slide hideTitle]
 # Solution: Decreasing Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487120633/4307d54296" default /]
-[stream language="RO" videoId="487120633/4307d54296"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-12-Solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -193,12 +184,7 @@ Write a program, which:
 [slide hideTitle]
 # Problem: Sequence 2k + 1
 
-[vimeo-video]
-[stream language="EN" videoId="487120652/4dbc030699" default /]
-[stream language="RO" videoId="487120652/4dbc030699"  /]
-[/video-vimeo]
-
-
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-13-Problem-Sequence-2K+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-lab-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -234,11 +220,7 @@ Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 
 [slide hideTitle]
 # Solution: Sequence 2k + 1
 
-[vimeo-video]
-[stream language="EN" videoId="487120683/99149d6f3f" default /]
-[stream language="RO" videoId="487120652/4dbc030699"  /]
-[/video-vimeo]
-
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-14-Solution-Sequence-2k+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
