@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Problem 3: Cinema
 
-[vimeo-video]
-[stream language="EN" videoId="487118157/70c5ba1ce8" default /]
-[stream language="RO" videoId="487118157/70c5ba1ce8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/07.Exam-Preparation/EN/JS-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Cinema" taskId="js-pb-exam-preparation-Cinema" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
