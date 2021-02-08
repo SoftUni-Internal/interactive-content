@@ -10,14 +10,17 @@ function solve(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(Number(input.unshift()), input);
+```
+[/code-adapter]
 [task-description]
 # Description
-
 
 On the first line of the input, you will receive an **integer** `n` - representing the number of pieces that you will initially have.
 
 On the next `n` lines, you will receive the title of each piece, followed by its **composer and key**, separated by `|` in the following format:
-
 
 `{piece}|{composer}|{key}`
 
@@ -77,7 +80,7 @@ Upon receiving the ю command, you need to print all pieces in the collection, s
 ## Examples
 
 **Input** 
-`['3', 'Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop']`
+`3, ['Fur Elise|Beethoven|A Minor', 'Moonlight Sonata|Beethoven|C# Minor', 'Clair de Lune|Debussy|C# Minor', 'Add|Sonata No.2|Chopin|B Minor', 'Add|Hungarian Rhapsody No.2|Liszt|C# Minor', 'Add|Fur Elise|Beethoven|C# Minor', 'Remove|Clair de Lune', 'ChangeKey|Moonlight Sonata|C# Major', 'Stop']`
 
 **Output**
 Sonata No.2 by Chopin in B Minor added to the collection!
@@ -110,7 +113,7 @@ You receive the `Stop` command, **print the information about the pieces**, sort
 Next, you receive the `Stop` command, you **print the information about the pieces**, sorted the way described above, and the program ends.
 
 **Input**
-`[ '4', 'Eine kleine Nachtmusik|Mozart|G Major', 'La Campanella|Liszt|G# Minor', 'The Marriage of Figaro|Mozart|G Major', 'Hungarian Dance No.5|Brahms|G Minor', 'Add|Spring|Vivaldi|E Major', 'Remove|The Marriage of Figaro', 'Remove|Turkish March', 'ChangeKey|Spring|C Major', 'Add|Nocturne|Chopin|C# Minor', 'Stop']`
+`4, ['Eine kleine Nachtmusik|Mozart|G Major', 'La Campanella|Liszt|G# Minor', 'The Marriage of Figaro|Mozart|G Major', 'Hungarian Dance No.5|Brahms|G Minor', 'Add|Spring|Vivaldi|E Major', 'Remove|The Marriage of Figaro', 'Remove|Turkish March', 'ChangeKey|Spring|C Major', 'Add|Nocturne|Chopin|C# Minor', 'Stop']`
 
 **Output**
 Spring by Vivaldi in E Major added to the collection\!
