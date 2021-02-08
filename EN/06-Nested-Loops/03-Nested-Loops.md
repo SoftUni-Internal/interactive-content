@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Nested Loops
 
-[vimeo-video]
-[stream language="EN" videoId="488090283/21d2c907ca" default /]
-[stream language="RO" videoId="488090283/21d2c907ca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-15-16-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A nested loop is a construction with which one loop is placed inside \(inner\) the body of another one \(outer\). 
 
@@ -42,10 +39,7 @@ This happens the following way:
 [slide hideTitle]
 # Nested Loops – Examples
 
-[vimeo-video]
-[stream language="EN" videoId="488090192/65c460bd1a" default /]
-[stream language="RO" videoId="488090192/65c460bd1a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-13-14-nested-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an **example** that illustrates nested loops. 
 
