@@ -203,8 +203,8 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|7| 1, 4, 7 |
-|10| 1, 4, 7, 10 |
+|7| 1 4 7 |
+|10| 1 4 7 10 |
 
 [/task-description]
 [tests]
@@ -213,7 +213,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 10
 [/input]
 [output]
-1, 4, 7, 10
+1 4 7 10
 [/output]
 [/test]
 [test]
@@ -221,7 +221,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 15
 [/input]
 [output]
-1, 4, 7, 10, 13
+1 4 7 10 13
 [/output]
 [/test]
 [test]
@@ -229,7 +229,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 20
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19
+1 4 7 10 13 16 19
 [/output]
 [/test]
 [test]
@@ -237,7 +237,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 25
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19, 22, 25
+1 4 7 10 13 16 19 22 25
 [/output]
 [/test]
 [test]
@@ -245,7 +245,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 30
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19, 22, 25, 28
+1 4 7 10 13 16 19 22 25 28
 [/output]
 [/test]
 [/tests]
@@ -279,8 +279,8 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|7| 1, 4, 7 |
-|10| 1, 4, 7, 10 |
+|7| 1 4 7 |
+|10| 1 4 7 10 |
 
 [/task-description]
 [tests]
@@ -289,7 +289,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 10
 [/input]
 [output]
-1, 4, 7, 10
+1 4 7 10
 [/output]
 [/test]
 [test]
@@ -297,7 +297,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 15
 [/input]
 [output]
-1, 4, 7, 10, 13
+1 4 7 10 13
 [/output]
 [/test]
 [test]
@@ -305,7 +305,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 20
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19
+1 4 7 10 13 16 19
 [/output]
 [/test]
 [test]
@@ -313,7 +313,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 25
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19, 22, 25
+1 4 7 10 13 16 19 22 25
 [/output]
 [/test]
 [test]
@@ -321,7 +321,7 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 30
 [/input]
 [output]
-1, 4, 7, 10, 13, 16, 19, 22, 25, 28
+1 4 7 10 13 16 19 22 25 28
 [/output]
 [/test]
 [/tests]
@@ -354,8 +354,8 @@ Write a program that prints the even powers of 2:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 1, 4, 16 |
-|10| 1, 4, 16, 64, 256, 1024 |
+|5| 1 4 16 |
+|10| 1 4 16 64 256 1024 |
 
 [/task-description]
 [tests]
@@ -364,7 +364,7 @@ Write a program that prints the even powers of 2:
 10
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024
+1 4 16 64 256 1024
 [/output]
 [/test]
 [test]
@@ -372,7 +372,7 @@ Write a program that prints the even powers of 2:
 15
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384
+1 4 16 64 256 1024 4096 16384
 [/output]
 [/test]
 [test]
@@ -380,7 +380,7 @@ Write a program that prints the even powers of 2:
 20
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576
 [/output]
 [/test]
 [test]
@@ -388,7 +388,7 @@ Write a program that prints the even powers of 2:
 25
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576 4194304 16777216
 [/output]
 [/test]
 [test]
@@ -396,7 +396,7 @@ Write a program that prints the even powers of 2:
 30
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216, 67108864, 268435456, 1073741824
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576 419434, 16777216 67108864 268435456 1073741824
 [/output]
 [/test]
 [/tests]
@@ -429,8 +429,8 @@ Write a program that prints the even powers of 2:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 1, 4, 16 |
-|10| 1, 4, 16, 64, 256, 1024 |
+|5| 1 4 16 |
+|10| 1 4 16 64 256 1024 |
 
 [/task-description]
 [tests]
@@ -439,7 +439,7 @@ Write a program that prints the even powers of 2:
 10
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024
+1 4 16 64 256 1024
 [/output]
 [/test]
 [test]
@@ -447,7 +447,7 @@ Write a program that prints the even powers of 2:
 15
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384
+1 4 16 64 256 1024 4096 16384
 [/output]
 [/test]
 [test]
@@ -455,7 +455,7 @@ Write a program that prints the even powers of 2:
 20
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576
 [/output]
 [/test]
 [test]
@@ -463,7 +463,7 @@ Write a program that prints the even powers of 2:
 25
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576 4194304 16777216
 [/output]
 [/test]
 [test]
@@ -471,7 +471,7 @@ Write a program that prints the even powers of 2:
 30
 [/input]
 [output]
-1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216, 67108864, 268435456, 1073741824
+1 4 16 64 256 1024 4096 16384 65536 262144 1048576 419434, 16777216 67108864 268435456 1073741824
 [/output]
 [/test]
 [/tests]
