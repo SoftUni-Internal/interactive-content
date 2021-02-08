@@ -1,11 +1,7 @@
 [slide hideTitle]
 # Infinite While Loop
 
-[vimeo-video]
-[stream language="EN" videoId="487120926/1516b4fb70" default /]
-[stream language="RO" videoId="487120926/1516b4fb70"  /]
-[/video-vimeo]
-
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-24-25-Infinite-While-Loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We call an infinite loop one that repeats infinitely the performance of its body. 
 
@@ -23,10 +19,7 @@ while (true) {
 
 # Example: Infinite While Loop (Bug)
 
-[vimeo-video]
-[stream language="EN" videoId="487120943/858eb0fc69" default /]
-[stream language="RO" videoId="487120943/858eb0fc69"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-25-Example-infinite-while-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ```js
