@@ -179,6 +179,11 @@ function amazingNumbers(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -199,13 +204,22 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 |999|999 Amazing? False|
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-5454155
+1233
 [/input]
 [output]
-5454155 Amazing? True
+1233 Amazing? True
+[/output]
+[/test]
+[test open]
+[input]
+999
+[/input]
+[output]
+999 Amazing? False
 [/output]
 [/test]
 [test]
@@ -298,6 +312,11 @@ function amazingNumbers(input) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -319,13 +338,22 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 |999|999 Amazing? False|
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
 [input]
-5454155
+1233
 [/input]
 [output]
-5454155 Amazing? True
+1233 Amazing? True
+[/output]
+[/test]
+[test open]
+[input]
+999
+[/input]
+[output]
+999 Amazing? False
 [/output]
 [/test]
 [test]
