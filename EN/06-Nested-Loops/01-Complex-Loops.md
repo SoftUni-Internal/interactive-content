@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Complex Loops
 
-[vimeo-video]
-[stream language="EN" videoId="488089818/dbec289e55" default /]
-[stream language="RO" videoId="488089818/dbec289e55"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-3-4-complex-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # For-loops may have different steps
 
@@ -115,10 +112,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [slide hideTitle]
 # Solution: Numbers from N down to 1
 
-[vimeo-video]
-[stream language="EN" videoId="488089892/222dacd55c" default /]
-[stream language="RO" videoId="488089892/222dacd55c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-5-6-solution-numbers-from-n-down-to-one-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from N down to 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -265,10 +259,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [slide hideTitle]
 # Solution: Numbers from 1 to N with Step 3
 
-[vimeo-video]
-[stream language="EN" videoId="488090074/f832efa21d" default /]
-[stream language="RO" videoId="488090074/f832efa21d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-7-8-numbers-from-one-to-n-with-step-three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Numbers from 1 to N with Step 3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -416,10 +407,7 @@ Write a function to print the even powers of 2:
 [slide hideTitle]
 # Solution: Even Powers of 2
 
-[vimeo-video]
-[stream language="EN" videoId="488090120/198b6ba65a" default /]
-[stream language="RO" videoId="488090120/198b6ba65a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-9-10-even-powers-of-two-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Even Powers of 2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
