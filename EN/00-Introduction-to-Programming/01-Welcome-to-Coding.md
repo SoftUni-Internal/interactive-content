@@ -1,10 +1,7 @@
 [slide]
 # What is Coding?
 
-[vimeo-video]
-[stream language="EN" videoId="486831827/419d467fd3" default /]
-[stream language="RO" videoId="486831827/419d467fd3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-3-4-What is Coding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **To program**, put in simple terms, means to **give commands** to the computer.
 
@@ -31,10 +28,7 @@ console.log("Welcome to coding");
 
 # Computer Programs
 
-[vimeo-video]
-[stream language="EN" videoId="486832336/e4188d5010" default /]
-[stream language="RO" videoId="486832336/e4188d5010"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-5-6-Running-JavaScript-Commands-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Computer programs represent **a sequence of commands** which are written in a certain **programming language**, like: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
@@ -72,10 +66,7 @@ Therefore, we are going to learn the **principles** of writing computer **code s
 [slide hideTitle]
 # Algorithms
 
-[vimeo-video]
-[stream language="EN" videoId="486832885/b0c2ee91e7" default /]
-[stream language="RO" videoId="486832885/b0c2ee91e7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-7-8-9-Programming-and-Algorithms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Computer programs usually execute algorithms. 
 
@@ -114,10 +105,7 @@ console.log(min)
 [slide hideTitle]
 # Console-Based JavaScript Program – Example
 
-[vimeo-video]
-[stream language="EN" videoId="486834408/4266dce8e6" default /]
-[stream language="RO" videoId="486834408/4266dce8e6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer, converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
 
@@ -137,10 +125,7 @@ convertUsdToEur("5");
 [slide hideTitle]
 # Browser-Based JavaScript Program – Example
 
-[vimeo-video]
-[stream language="EN" videoId="486834720/d1ce0ef921" default /]
-[stream language="RO" videoId="486834720/d1ce0ef921"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, we can import and use a function in our web page.
 
