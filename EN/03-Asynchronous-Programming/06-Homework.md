@@ -85,11 +85,44 @@ When the app starts, the **forecast div** is **hidden**. When the user **enters 
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-1.jpg" /]
 
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-2.jpg" /]
+```js
+<div id="request">...</div>
+<div id="forecast" style="display:none">
+    <div id="current">...</div>
+    <div id="upcoming">...</div>
+</div>
+```
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-3.jpg" /]
 
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-4.jpg" /]
+```js
+<div id="request">...</div>
+<div id="forecast" style="display: block;">
+    <div id="current">
+        <div class="label">Current conditions</div>
+        <div class="forecasts">
+            <span class="condition symbol">☀</span>
+            <span class="condition">
+                <span clsas="forecast-data">New York, USA</span>
+                <span clsas="forecast-data">8°/19°</span>
+                <span clsas="forecast-data">Sunny</span>
+            </span>
+        </div>
+    </div>
+    <div id="upcoming">
+        <div class="label">Three-day forecast</div>
+        <div class="forecast-info">
+            <span class="upcoming">
+                <span clsas="symbol">⛅</span>
+                <span clsas="forecast-data">6°/17°</span>
+                <span clsas="forecast-data">Partly sunny</span>
+            </span>
+            <span class="upcoming">...</span>
+            <span class="upcoming">...</span>
+        </div>
+    </div>
+</div>
+```
 
 # Hints
 
