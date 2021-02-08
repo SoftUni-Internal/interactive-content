@@ -6,7 +6,18 @@
 [stream language="RO" videoId="487118102/c7f6a5713f"  /]
 [/video-vimeo]
 
-## Descriere
+
+
+[code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Scrieți codul dvs. aici
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
 În timpul pauzei de prânz vreți să vedeți un episod din serialul TV preferat. 
 
 Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să aflați dacă aveți timp suficient să vedeți un întreg episod. 
@@ -35,15 +46,6 @@ Rezultatul ar trebui să fie format dintr-o singură linie:
 
 Round the time up to the nearest whole number.
 
-[code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
 # Example
 | **Intrare** | **Ieșire** |
 | --- | --- |

@@ -6,7 +6,16 @@
 [stream language="RO" videoId="487118102/c7f6a5713f"  /]
 [/video-vimeo]
 
-## Description
+[code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 During your lunch break you want to watch an episode of your favorite TV series.
 
 Your task is to write a program that will help you determine whether you have enough time to watch an entire episode.
@@ -38,15 +47,6 @@ The output should consist of one line:
 
 Round the time up to the nearest whole number.
 
-[code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 ## Input
 
 # Example
