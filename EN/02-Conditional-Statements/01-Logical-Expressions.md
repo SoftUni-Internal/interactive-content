@@ -1,11 +1,6 @@
 [slide hideTitle]
 # Comparison Operators
 
-[vimeo-video]
-[stream language="EN" videoId="486878604/02a3167730" default /]
-[stream language="RO" videoId="486878604/02a3167730"  /]
-[/video-vimeo]
-
 In programming, we can compare values using the following operators:
 
 |Operators|Designation|
@@ -34,10 +29,7 @@ When compared, the result is a Boolean value `true` or `false`, depending on whe
 [slide hideTitle]
 # Value Comparison
 
-[vimeo-video]
-[stream language="EN" videoId="486878826/d63c730134" default /]
-[stream language="RO" videoId="486878826/d63c730134"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-12-Value-Comparison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Examples of such an expression are as follows:
 ```js live
