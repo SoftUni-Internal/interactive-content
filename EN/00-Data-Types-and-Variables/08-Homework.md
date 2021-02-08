@@ -3,12 +3,7 @@
 [slide hideTitle]
 # Problem: Integer Operations
 
-[vimeo-video]
-[stream language="EN" videoId="425479885" default /]
-[stream language="RO" videoId="425478220"  /]
-[/video-vimeo]
-
-[code-task title="Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -24,7 +19,7 @@ public class Main {
 ## Description
 Read **four integer numbers**. 
 
-**Add** **first** to the **second**, **divide** (integer) the **sum** by the **third** number and **multiply** the result by the **fourth** number. 
+**Add** the **first** number to the **second**, **divide** (integer division) the **sum** by the **third** number and **multiply** the result by the **fourth** number. 
 
 **Print** the **result**.
 
@@ -100,7 +95,7 @@ Read **four integer numbers**.
 
 [slide hideTitle]
 # Problem: Sum Digits
-[code-task title="Sum Digits" taskId="java-fund-05-Data Types-Exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sum Digits" taskId="java-fund-05-data-types-exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -171,12 +166,7 @@ Your task is to find the **sum of its digits**.
 [slide hideTitle]
 # Problem: Elevator
 
-[vimeo-video]
-[stream language="EN" videoId="425479929" default /]
-[stream language="RO" videoId="425478254"  /]
-[/video-vimeo]
-
-[code-task title="Elevator" taskId="java-fund-05-Data Types-Exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Elevator" taskId="java-fund-05-data-types-exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -192,9 +182,9 @@ public class Main {
 [task-description]
 ## Description
 
-Calculate how many courses will be needed to **elevate n persons** by using an elevator with **capacity of p persons**. 
+Calculate how many times an elevator will need to go up to take **n persons** to the top.
 
-The **input** holds **two lines**: 
+The **input** will consist of **two lines**: 
 - the number of people **n**
 - the capacity **p** of the elevator
 
@@ -258,7 +248,7 @@ The **input** holds **two lines**:
 
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Sum of Chars" taskId="java-fund-05-Data Types-Exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Sum of Chars" taskId="java-fund-05-data-types-exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -275,11 +265,11 @@ public class Main {
 
 Write a program, which **sums the ASCII codes of n characters**. 
 
-**Print the sum** on the console.
+**Print the sum** to the console.
 
 ### Input
--	On the first line, you will receive n – the number of lines, which will follow
--	On the next n lines – you will receive letters from the Latin alphabet
+-	On the first line, you will receive **n** – the number of lines
+-	On the next **n lines** – you will receive letters from the Latin alphabet
 
 ### Output
 Print the total sum in the following format:
@@ -384,7 +374,7 @@ The sum equals: 1940
 
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-Data Types-Exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Print Part of the ASCII Table" taskId="java-fund-05-data-types-exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -398,7 +388,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Find online more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) and write a program that **prints part of the ASCII table** of characters at the console.  
+Find more information about ASCII www.ascii-code.com (American Standard Code for Information Interchange) online and write a program that **prints part of the ASCII table** of characters to the console.  
 
 On the first line of input you will receive the **char index** you should **start** with and on the second line - the index of the **last** character you should print.
 
@@ -453,7 +443,7 @@ a b c d e f g h
 
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Triples of Latin Letters" taskId="java-fund-05-Data Types-Exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Triples of Latin Letters" taskId="java-fund-05-data-types-exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -467,7 +457,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to **read** an integer **n** and **print all triples of the first n small Latin letters**, ordered **alphabetically**.
+Write a program that **reads** an integer **n** and **prints all triples of the first n small Latin letters**, ordered **alphabetically**.
 
 ### Example
 | **Input** | **Output** |
@@ -842,12 +832,7 @@ fff
 [slide hideTitle]
 # Problem: Water Overflow
 
-[vimeo-video]
-[stream language="EN" videoId="425479963" default /]
-[stream language="RO" videoId="425478301"  /]
-[/video-vimeo]
-
-[code-task title="Water Overflow" taskId="java-fund-Data-Types-Exercise-Water-Overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Water Overflow" taskId="java-fund-05-data-types-exercise-water-overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -861,9 +846,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have a **water tank** with capacity of 255 liters.
+You have a **water tank** with a capacity of 255 liters.
 
-On the **first** line, you will receive n.
+On the **first** line, you will receive **n**.
 
 On the next **n lines**, you will **receive liters** of water, which you have to **pour in your tank**. 
 
@@ -961,12 +946,7 @@ Insufficient capacity!
 [slide hideTitle]
 # Problem: Beer Kegs
 
-[vimeo-video]
-[stream language="EN" videoId="425480025" default /]
-[stream language="RO" videoId="425478330"  /]
-[/video-vimeo]
-
-[code-task title="Beer Kegs" taskId="java-fund-Data-Types-Exercise-Beer-Kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Beer Kegs" taskId="java-fund-05-data-types-exercise-beer-kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1085,7 +1065,7 @@ Keg 4
 
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Spice Must Flow" taskId="java-fund-Data-Types-Exercise-Spice-Must-Flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Spice Must Flow" taskId="java-fund-05-data-types-exercise-spice-must-flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1109,14 +1089,14 @@ A source is considered **profitable only while its yield is at least 100** – w
 
 The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. Note that the workers cannot consume more spice than there is in storage. 
 
-When the operation is complete, **print on the console on two separate lines** how many **days** the mine has operated and the total **amount** of spice extracted.
+When the operation is complete, **print to the console on two separate lines** how many **days** the mine has operated and the total **amount** of spice extracted.
 
 
 ### Input
 You will **receive a number**, representing the **starting** yield of the source. 
 
 ### Output
-Print **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
+Print on **two separate lines** how many **days the mine has operated** and the **total amount of spice extracted**.
 
 ### Example
 | **Input** | **Output** |
@@ -1174,7 +1154,7 @@ Print **two separate lines** how many **days the mine has operated** and the **t
 
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Poke Mon" taskId="java-fund-Data-Types-Exercise-Poke-Mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Poke Mon" taskId="java-fund-05-data-types-exercise-poke-mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1188,7 +1168,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keeps **statistics**, about how many pokes it has managed to make.
+A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keep **statistics** on how many pokes it has managed to do.
 
 The Poke Mon pokes his target, and then proceeds to poke another target. The **distance between his targets reduces his poke power**.
 
@@ -1200,17 +1180,17 @@ Then you will be given the **exhaustionFactor Y** – an integer.
 
 Your task is to start **subtracting M from N until N becomes less than M**, i.e. the Poke Mon does not have enough power to reach the next target. 
 
-**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. COUNT how many targets you’ve poked – you’ll need that count.
+**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. **Count** how many targets you’ve poked – you’ll need that count.
 
-The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is POSSIBLE. This DIVISION is between integers.
+The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is **possible**. Use integer division.
 
-If a division is not possible, you should NOT do it. Instead, you should continue subtracting.
+If division is not possible, you should NOT do it. Instead, you should continue subtracting.
 
 After dividing, you should **continue subtracting** from N, until it becomes less than M.
 
 When N becomes less than M, you must take what has remained of N and the count of targets you’ve poked, and print them as output.
 
-NOTE: When you are calculating percentages, you should be PRECISE at maximum.
+**NOTE:** When you are calculating percentages, you should do it with maximum precision.
 
 Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 
@@ -1293,12 +1273,7 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 [slide hideTitle]
 # Problem: Snowballs
 
-[vimeo-video]
-[stream language="EN" videoId="425480088" default /]
-[stream language="RO" videoId="425478382"  /]
-[/video-vimeo]
-
-[code-task title="Snowballs" taskId="java-fund-Data-Types-Exercise-Snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Snowballs" taskId="java-fund-05-data-types-exercise-snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1312,9 +1287,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Tony and Andi love playing in the snow and having snowball fights, but they always argue which makes the best snowballs. 
+Tony and Andi love playing in the snow and having snowball fights, but they always argue who makes the best snowballs. 
 
-Тhey have decided to involve you in their fray, by making you write a program which **calculates snowball data**, and outputs the best snowball value.
+They have decided to involve you in their fray, by making you write a program which **calculates snowball data**, and outputs the best snowball value.
 
 You will receive **N** – an integer, the **number of snowballs being made** by Tony and Andi.
 

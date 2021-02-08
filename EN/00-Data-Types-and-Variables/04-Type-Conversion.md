@@ -1,20 +1,15 @@
-[slide]
+[slide hideTitle]
 # Type Conversion
-
-[vimeo-video startTimeInSeconds="1506" endTimeInSeconds="1740"]
-[stream language="EN" videoId="425081520" default /]
-[stream language="RO" videoId="425084744"  /]
-[/vimeo-video]
 
 When you assign the value of one data type to another, the two types might not be compatible with each other.
 
-If the data types are compatible, then Java will perform the conversion automatically known as Automatic Type Conversion, and if not then they need to be cast or converted explicitly.
+If the data types are compatible, then Java will perform the conversion automatically. This is known as Automatic Type Conversion, and if not then they need to be cast or converted explicitly.
 
-For example, assigning an int value to a long variable.
+For example, assigning an **int** value to a **long** variable.
 
 In Java, there are two types of casting:
 
-- Widening Casting \(automatically\) - converting a smaller type to a larger type size.
+- Widening conversion \(automatic\) - converting a smaller type to a larger type size. This is also known as **implicit conversion**
 
 ```java live
 int myInt = 9;
@@ -24,9 +19,9 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Here the lower data type \(having smaller size\) is converted into the higher data type \(having larger size\). Hence there is no loss in data. This is why this type of conversion happens automatically.
+Here the lower data type \(having smaller size\) is converted into the higher data type \(having larger size\). There is no loss in data. This is why this type of conversion happens automatically.
 
-- Narrowing Casting \(manually\) - converting a larger type to a smaller size type.
+- Narrowing conversion \(manual\) - converting a larger type to a smaller size type
 
 ```java live
 double myDouble = 9.78;
@@ -36,14 +31,14 @@ System.out.println(myDouble);
 System.out.println(myInt);
 ```
 
-Here the higher data types \(having larger size\) are converted into lower data types \(having smaller size\). Hence there is the loss of data. This is why this type of conversion does not happen automatically.
+Here the higher data types \(having larger size\) are converted into lower data types \(having smaller size\). Hence there is the loss of data. This is why this type of conversion does not happen automatically. This is also known as **explicit conversion**.
 
 [/slide]
 
 [slide hideTitle]
 # Problem: Centuries to Minutes
 
-[code-task title="Problem: Centuries to Minutes" taskId="java-fund-Data-Types-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Centuries to Minutes" taskId="java-fund-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -61,7 +56,7 @@ public class Main {
 
 ## Description
 
-Write program to enter an integer number of **centuries** and convert it to **years**, **days**, **hours** and **minutes**.
+Write a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. The input will be of type **int**.
 
 ## Examples
 
@@ -136,7 +131,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [slide hideTitle]
 # Solution: Centuries to Minutes
 
-[code-task title="Centuries to Minutes"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Centuries to Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -144,7 +139,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    // Write your solution here
+        // Write your code here
+    }
 }
 ```
 
@@ -153,7 +149,7 @@ public class Main {
 
 ## Description
 
-Write program to enter an integer number of **centuries** and convert it to **years**, **days**, **hours** and **minutes**.
+Write a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. The input will be of type **int**.
 
 ## Examples
 
@@ -229,7 +225,7 @@ Write program to enter an integer number of **centuries** and convert it to **ye
 [slide hideTitle]
 # Problem: Chars to String
 
-[code-task title="Chars to String" taskId="java-fund-Data-Types-Chars-to-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Chars to String" taskId="java-fund-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -249,7 +245,7 @@ public class Main {
 
 Write a program that reads 3 lines of input.
 
-On each line you get a single character.
+You will get a single character on each line.
 
 Combine all the characters into one string and print it on the console.
 
@@ -359,7 +355,7 @@ b
 [slide hideTitle]
 # Solution: Chars to String
 
-[code-task title="Chars to String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Chars to String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -367,7 +363,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your solution here
+        // Write your code here
     }
 }
 ```
@@ -379,7 +375,7 @@ public class Main {
 
 Write a program that reads 3 lines of input.
 
-On each line you get a single character.
+You will get a single character on each line.
 
 Combine all the characters into one string and print it on the console.
 
@@ -487,7 +483,7 @@ b
 
 [slide hideTitle]
 # Problem: Lower or Upper
-[code-task title="Chars to String" taskId="java-fund-Data-Types-Lower-or-Upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Lower or Upper" taskId="java-fund-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -501,7 +497,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints whether a given character is upper-case or lower-case.
+Write a program that prints whether a given character is written in upper or lower-case.
 
 ## Examples
 | **Input** | **Output** |
@@ -556,21 +552,21 @@ lower-case
 
 [slide hideTitle]
 # Solution: Lower or Upper
-[code-task title="Lower or Upper"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Lower of Upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your solution here
+        // Write your code here
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a program that prints whether a given character is upper-case or lower-case.
+Write a program that prints whether a given character is written in upper or lower-case.
 
 ## Examples
 | **Input** | **Output** |

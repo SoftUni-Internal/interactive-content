@@ -1,39 +1,39 @@
-[slide]
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 ## In this lesson you will learn about:
 
 **1. Data Types and Variables**
 
-- How computing works?
+- How does computing work
 
-- What is Data Type?
+- Data types and their meaning
 
-- What is a Variable?
+- What is a variable
 
 **2.Integer and Real Number Type**
 
-- Difference between Integer and Real Number Types
+- The difference between Integer and Real Number types
 
-**3. Type Convension**
+**3. Type Conversion**
 
-- Implicit vs Explicit Convension
+- Implicit vs explicit conversion
 
 **4. Boolean Type**
 
-- What is boolean ?
+- What is a boolean
 
-- Boolean overview and what it holds
+- An overview of the boolean data type and what it is used for
 
 **5. Character and String Type**
 
-- Overview and representation of "Character" data type
+- An overview of the "character" data type
 
-- Overview and representation of "String" data type
+- An overview of of the "String" data type
 
 **6. Live Exercises**
-
-
-
 
 [/slide]

@@ -1,9 +1,9 @@
-[slide]
+[slide hideTitle]
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learned:
 
-  - Variables – store data
+  - Data is stored within **variables**.
 
 
   ```java
@@ -14,8 +14,7 @@
   String myText = "Goodbye";     // String
   ```
 
-  
-  - Numeral types: 
+  - Numeric types: 
     - Represent numbers
     - Have specific ranges for every type
 
@@ -31,7 +30,7 @@
 
   - String and text types: 
     - Represent text
-    - Sequences of Unicode characters
+    - Strings are sequences of Unicode characters
 
     ```java
     char myGrade = 'B';
@@ -43,6 +42,7 @@
 
   - Type conversion: implicit and explicit
 
+  - Boolean can have only two possible values - **true** or **false**
 
 ## In the next lesson, you will learn:
   - Arrays

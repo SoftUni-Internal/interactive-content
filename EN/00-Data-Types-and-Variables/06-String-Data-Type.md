@@ -1,34 +1,24 @@
-[slide]
-# Strings
-
-[vimeo-video startTimeInSeconds="2221" endTimeInSeconds="2422"]
-[stream language="EN" videoId="425081520" default /]
-[stream language="RO" videoId="425084744"  /]
-[/vimeo-video]
+# String Type
+[slide hideTitle]
+# The String Data Type
 
 Strings are used for storing text.
 
-A **String** variable contains a collection of characters surrounded by double quotes and has a default value **null** (no value).
+A **String** variable contains a collection of characters surrounded by double quotes and has a default value of **null** (no value).
 
-- Example:
-Create a variable of type **String** and assign it a value:
+
+Creating a variable of type **String** and assigning a value to it:
 
 ```Java live
 String greeting = "Hello";
 System.out.println(greeting);
 ```
 
-## String Concatenation
-The `+` operator can be used between strings to combine them. This is called concatenation:
+[/slide]
 
-```Java live
-String firstName = "John";
-String lastName = "Doe";
-System.out.println(firstName + " " + lastName);
-```
-* Note that we have added an empty text `(" ")` to create a space between firstName and lastName on print.
+[slide hideTitle]
 
-## Format strings insert variable values by pattern
+# String Formatting
 
 ```Java live
 String firstName = "John";
@@ -37,7 +27,13 @@ String fullName = String.format("%s %s", firstName, lastName);
 System.out.println(fullName);
 ```
 
-## Combining the names of a person to obtain the full name
+[/slide]
+
+[slide hideTitle]
+
+# Example: Saying Hello
+
+Here is how we can combine the first and last name of a person to print their full name.
 
 ```Java live
 String firstName = "John";
@@ -45,12 +41,22 @@ String lastName = "Smith";
 String fullName = String.format("%s %s", firstName, lastName);
 System.out.printf("Your full name is %s.", fullName);
 ```
+## String Concatenation
+The `+` operator can be used to combine two strings together. This is called concatenation:
+
+```Java live
+String firstName = "John";
+String lastName = "Doe";
+System.out.println(firstName + " " + lastName);
+```
+
+Note that we have added an empty text `(" ")` to create a space between firstName and lastName on print.
 
 [/slide]
 
 [slide hideTitle]
 # Problem: Concat Names
-[code-task title="Problem: Concat Names" taskId="java-fund-Data-Types-Concat-Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Concat Names" taskId="java-fund-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -173,7 +179,7 @@ abc--\>123
 
 [slide hideTitle]
 # Solution: Concat Names
-[code-task title="Problem: Concat Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Concat Names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

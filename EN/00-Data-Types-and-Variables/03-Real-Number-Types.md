@@ -1,47 +1,50 @@
 # Real Number Types
 
-[slide]
-# What are Floating-Point Types?
-
-[vimeo-video startTimeInSeconds="1001" endTimeInSeconds="1505"]
-[stream language="EN" videoId="425081520" default /]
-[stream language="RO" videoId="425084744"  /]
-[/vimeo-video]
+[slide hideTitle]
+# Floating-Point Types?
 
 You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
-- Have range and precision depending on the memory used.
-- Sometimes behave abnormally in the calculations.
-- May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**.
+- Have range and precision depending on the memory used
+- Sometimes behave abnormally in the calculations
+- May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
 
-Valid types are **float** and **double**:
+These can be either **float** or **double**:
 
 | Type   | Size   | Precision       |
 | --- | --- | --- |
 | float  | 32 bit | up to 7 digits  |
 | double | 64 bit | up to 16 digits |
 
-## Examples
+[/slide]
 
-- **Float**: data type can store fractional numbers, note that you should end the value with an `f`:
+[slide hideTitle]
+# Floating-Point Numbers
+
+- **Float**: used for storing fractional numbers. Note that you should suffix the value with an `f`:
 
 ```java live
 float myNum = 5.75f;
 System.out.println(myNum);
 ```
 
-- **Double**: in this course when we need floating-point numbers, most of the time we're going to use **double**.
+The **default value** of **float** is **0.0F**.
+
+- **Double**: in this course when we need floating-point numbers, we are going to use **double** most of the time.
 
 ```java live
 double myNum = 19.99;
 System.out.println(myNum);
 ```
+The **default value** of **double** is **0.0D**.
+[/slide]
 
-## PI Precision
+[slide hideTitle]
+# PI Precision
 
-There are difference in precision when using **float** and **double**:
+There is a difference in precision when using **float** and **double**:
 
 ```java live
 float floatPI = 3.141592653589793238f;
@@ -52,14 +55,14 @@ System.out.println("Double PI is: " + doublePI);
 
 - NOTE: The `f` suffix in the first statement!
 
-- Real numbers are by default interpreted as double.
+- Real numbers are interpreted as double by default
 
-- One should explicitly convert them to float
+- You should explicitly convert them to float
 [/slide]
 
 [slide hideTitle]
 # Problem: Pounds to Dollars
-[code-task title="Pounds to Dollars" taskId="java-fund-Data-Types-Pounds-to-Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -73,9 +76,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars formatted to 3rd decimal point.
+Write a program that converts British pounds to US dollars. The result should be formatted to 2 decimal places.
 
-1 British Pound = 1.31 Dollars
+Assume that **1 British Pound = 1.31 Dollars**.
 
 ## Examples
 | **Input** | **Output** |
@@ -153,7 +156,7 @@ Write a program that converts British pounds to US dollars formatted to 3rd deci
 
 [slide hideTitle]
 # Solution: Pounds to Dollars
-[code-task title="Pounds to Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Pounds to Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -167,9 +170,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that converts British pounds to US dollars formatted to 3rd decimal point.
+Write a program that converts British pounds to US dollars. The result should be formatted to 2 decimal places.
 
-1 British Pound = 1.31 Dollars
+Assume that **1 British Pound = 1.31 Dollars**.
 
 ## Examples
 | **Input** | **Output** |
@@ -245,14 +248,14 @@ Write a program that converts British pounds to US dollars formatted to 3rd deci
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Scientific Notation
 
 When working with large numbers, scientific notation is exceptionally helpful.
 
 In scientific notation, the letter `E` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`.
 
-Let's review some examples of scientific notation below.
+Let us review some examples of scientific notation below.
 
 ```java live
 double exampleVariableOne = 1E+3;
@@ -264,7 +267,9 @@ System.out.println(exampleVariableTwo);
 double exampleVariableThree = 1E-4;
 System.out.println(exampleVariableThree);
 ```
+[/slide]
 
+[slide hideTitle]
 # Floating-Point Division
 
 Integral division and floating-point division are different.
@@ -280,8 +285,10 @@ System.out.println(0 / 0.0);
 System.out.println(8 % 2.5);
 //System.out.println(10 / 0);     ArithmeticException
 ```
+[/slide]
 
-# Floating-Point Calculations – Abnormalities
+[slide hideTitle]
+# Floating-Point Abnormalities
 
 Keep in mind that sometimes floating-point numbers work incorrectly!
 
@@ -306,13 +313,15 @@ num += 0.0001;
 
 System.out.println(num);
 ```
+[/slide]
 
-# BigDecimal Class
+[slide hideTitle]
+# BigDecimal
 
 
 Keep in mind that sometimes floating-point numbers work incorrectly!
 
-We encourage you to read more about `IEEE 754`.
+We encourage you to read more about **IEEE 754**.
 
 
 ```java live
@@ -342,7 +351,7 @@ System.out.println(bigDecimal1);
 
 [slide hideTitle]
 # Problem: Exact Sum of Real Numbers
-[code-task title="Exact Sum of Real Numbers" taskId="java-fund-Data-Types-Exact-Sum-of-Real-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -357,7 +366,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to enter n numbers and calculate and print their **exact sum** (without rounding).
+Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
@@ -449,7 +458,7 @@ Write a program to enter n numbers and calculate and print their **exact sum** (
 
 [slide hideTitle]
 # Solution: Exact Sum of Real Numbers
-[code-task title="Exact Sum of Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Exact Sum of Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.math.BigDecimal;
@@ -463,7 +472,7 @@ public class ExactSum {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to enter n numbers and calculate and print their **exact sum** (without rounding).
+Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
