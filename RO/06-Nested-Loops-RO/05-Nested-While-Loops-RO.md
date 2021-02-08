@@ -133,7 +133,7 @@ Scrieți un program care:
 
 [slide hideTitle]
 
-# Example: Combining while and for Loops
+# Exemplu: Combinarea buclelor while și for
 
 interactive-programming-basics-with-java-nested-loops-33-nesting-while-and-for-loops + 
 

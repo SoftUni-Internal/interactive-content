@@ -60,11 +60,11 @@ Bucla interioară se va executa de câte ori se execută conținutul buclei exte
 
 [slide hideTitle]
 
-# Multiple Levels of Nested Loops
+# Nivele multiple de bucle imbricate
 
-It is possible to have more than one nested loop.
+Este posibil să aveți mai multe nivele de bucle imbricate.
 
-The only restriction is that can not be used the same names of initial variables.
+Rețineți că variabilele buclei trebuie să utilizeze nume diferite la fiecare nivel de buclă următor.
 
 ```java
 for (int hour = 0; hour <= 23; hour++) {

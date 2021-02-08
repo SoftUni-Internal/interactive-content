@@ -25,7 +25,7 @@ Deci, trebuie să aveți grijă să nu provocați apariția sa în mod accidenta
 
 [slide hideTitle]
 
-# Example: Infinite for Loop in Programming
+# Exemplu: Bucla infinită for în programare
 
 interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo
 

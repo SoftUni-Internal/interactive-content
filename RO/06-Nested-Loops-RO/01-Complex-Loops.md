@@ -1,34 +1,34 @@
 [slide hideTitle]
-# Complex Loops
+# Bucle complexe
 
 interactive-programming-basics-with-java-nested-loops-8-9-complex-loops + 
 
 interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-demo
 
-When using for-loops, the loop variable can be modified in more than one way.
+Atunci când utilizați bucle for, bucla variabilă poate fi modificată în mai multe moduri.
 
-In addition to incrementation and decrementation, it can be altered using more complex logic, such as division and multiplication.
+În plus, față de incrementare și decrementare, acestea pot fi modificate folosind o logică mai complexă, cum ar fi împărțirea și multiplicarea.
 
-For example:
+De exemplu:
 ``` java
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
-    // Print only even values of i from 0 to 10
+    // Imprimați doar valorile pare ale i de la 0 până la 10
 }
 
 for (int i = 20; i > 0; i -= 5) {
      System.out.println(i);
-    // Print values that are devisible by 5
+    // Imprimați valorile divizibile cu 5
 }
 
 for (int j = 2; j <= 16; j *= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 ascending
+    // Imprimați rezultatele puterilor numărului 2 în ordine crescătoare 
 }
 
 for (int j = 16; j > 1; j /= 2) {
     System.out.println(j);
-    // Print the results of powers of 2 descending
+    // Imprimați rezultatele puterilor numărului 2 în ordine descrescătoare
 }
 
 ```
