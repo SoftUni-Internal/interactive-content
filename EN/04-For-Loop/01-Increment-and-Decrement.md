@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Increment and Decrement Operators
 
-[vimeo-video]
-[stream language="EN" videoId="487119117/f65ddf18a0" default /]
-[stream language="RO" videoId="487119117/f65ddf18a0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-3-4-5-Increment-and-Decrement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The unary increment operator `++` increments its operand by 1, while the unary decrement operator `--` decrements it by 1.
 
