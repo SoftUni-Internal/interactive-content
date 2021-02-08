@@ -6,7 +6,18 @@
 [stream language="RO" videoId="487118452/de8f1dddfb"  /]
 [/video-vimeo]
 
-## Description
+
+
+[code-task title="The Best Movie" taskId="js-pb-exam-preparation-The-Best-Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 It is Friday night, and you are wondering which movie to watch. 
 
 You decide to write a program to choose it for you. 
@@ -44,16 +55,6 @@ Print on the console:
 - Print the best movie for you: 
 
 `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
-
-[code-task title="The Best Movie" taskId="js-pb-exam-preparation-The-Best-Movie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Example
 | **Input** | **Output** |
