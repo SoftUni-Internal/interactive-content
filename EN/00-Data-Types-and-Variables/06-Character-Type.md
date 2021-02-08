@@ -157,6 +157,7 @@ a
 [/code-task]
 [/slide]
 
+[slide hideTitle]
 
 # Solution: Reversed Chars
 [code-task title="Solution: Reversed Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
