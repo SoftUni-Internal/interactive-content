@@ -3,10 +3,7 @@
 [slide hideTitle]
 # The Return Statement
 
-[vimeo-video]
-[stream language="EN" videoId="489373485/8c7c7e9e3c" default /]
-[stream language="RO" videoId="489373485/8c7c7e9e3c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-17-18-the-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 The `return` operator is used to return a value and end the execution of the function. 
@@ -33,10 +30,7 @@ If you try to use it outside of a function, **it will throw an error.**
 [slide hideTitle]
 # Using the Return Values
 
-[vimeo-video]
-[stream language="EN" videoId="489373490/e62d49a36f" default /]
-[stream language="RO" videoId="489373490/e62d49a36f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-19-using-the-return-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 The return value can be: 
@@ -64,10 +58,7 @@ multiply(getMax(5,10), 20);
 [slide hideTitle]
 # Returning Values: Examples
 
-[vimeo-video]
-[stream language="EN" videoId="489373540/c9dcb0e5e4" default /]
-[stream language="RO" videoId="489373540/c9dcb0e5e4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-20-returning-values-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 - Check if an **array index** is valid:
@@ -103,10 +94,7 @@ console.log(pass(5.32))
 [slide hideTitle]
 # Return Statement Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373875/3db9f493f6" default /]
-[stream language="RO" videoId="489373875/3db9f493f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-the-return-statement-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -114,10 +102,7 @@ console.log(pass(5.32))
 [slide hideTitle]
 # Nested Functions
 
-[vimeo-video]
-[stream language="EN" videoId="489373544/4848ba2e9e" default /]
-[stream language="RO" videoId="489373544/4848ba2e9e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-21-22-nested-functions-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The nested function operates within the scope of the outer function. 
 

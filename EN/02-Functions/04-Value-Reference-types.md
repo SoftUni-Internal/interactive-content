@@ -4,10 +4,7 @@
 
 # Value and Reference Types
 
-[vimeo-video]
-[stream language="EN" videoId="489373589/a2a27866c0" default /]
-[stream language="RO" videoId="489373589/a2a27866c0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-23-24-25-value-and-reference-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Value types** and **reference types** are the two main categories of JavaScript types.
 
@@ -15,7 +12,7 @@
 
 ## Value Types
 
-A variable of a **value (primitive data) type** contains an **instance** of the type and holds their value directly.
+A variable of a **value \(primitive data\) type** contains an **instance** of the type and holds their value directly.
 
 With value types, each variable has **its own copy of the data**, and it is not possible for operations done on one variable to affect the other. 
 
@@ -55,9 +52,6 @@ let obj = {firstName:"Maria", lastName:"Agarici"};
 [slide hideTitle]
 # Value and Reference Types: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373150/9d47a9faca" default /]
-[stream language="RO" videoId="489373150/9d47a9faca"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-value-vs-refenrence-types-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
