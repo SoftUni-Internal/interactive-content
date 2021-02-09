@@ -31,13 +31,14 @@ Dacă numărul de spectatori care intră, depășește numărul de locuri rămas
 ## Intrare
 Citiți de pe consolă:
 
-- Lini 1: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
+- Primul element: capacitatea sălii: un număr întreg în intervalul  \[50... 150\]
 
-- Pe fiecare linie următoare, până când comana este  `Movie time!`:
+- 
+Pe fiecare dintre elementele următoare, până când comanda este `Movie Time!`:
 	- Numărul de oameni care intră în cinematograf: un număr întreg în intervalul  \[1… 15\]
 
 ## Output
-First, print on of these lines:
+Mai întâi, tipăriți următoarele linii:
 
 - Dacă ați primit comanda `Movie time!`: 
 
@@ -62,7 +63,8 @@ First, print on of these lines:
 
 Capacitatea sălii este de 60 locuri.
 
-Pe următoarea linie, vom primi numărul de oameni care au intrat în sală-10. 
+
+Următorul element este numărul de persoane care au intrat în sală: 10.
 
 Prețul pe care îl vor plăti este `10 * 5 = 50$`. 
 

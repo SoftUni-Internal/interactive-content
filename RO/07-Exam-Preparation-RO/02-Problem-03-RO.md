@@ -36,7 +36,7 @@ Sunt, de asemenea, reduceri promoționale disponibile pentru două dintre filme:
 
 ## Intrare
 
-Primiți 3 lii de pe consolă:
+Ca intrare veți primi 3 elemente de consolă:
 
 - Linia 1: film - șir: `John Wick`, `Star Wars` sau `Jumanji`
 

@@ -28,7 +28,7 @@ Ceea ce trebuie să faceți este să scrieți un program care să vă ajute să 
 
 
 ## Intrare
-Veți primi 3 linii de pe consolă:
+Ca intrare veți primi 3 elemente de consolă:
 - Numele serialului: un șir
 - Durata unui episod: un număr întreg în intervalul \[10… 90\]
 - Durata pauzei: un număr întreg în intervalul \[10… 120\]

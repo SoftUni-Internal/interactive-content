@@ -38,7 +38,7 @@ Rețineți următoarele:
 - Puteți avea maxim 7 titluri de filme 
 
 ## Intrare
-Primiți mai multe linii de pe consolă, până ce primiți comanda `STOP` sau până la atingerea limitei de 7 filme:
+Primiți mai multe elemente de pe consolă, până ce primiți comanda `STOP` sau până la atingerea limitei de 7 filme:
 
 - Numele filmului: un șir;
 

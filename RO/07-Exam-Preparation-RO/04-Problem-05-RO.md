@@ -32,9 +32,9 @@ Primiți de pe consolă:
 
 - Buget: un număr întreg în intervalul \[10.0… 100.0\]
 
-- Numărul de seriale: n – un număr întreg în intervalul \[1… 10\]
+- Numărul de seriale: `n` – un număr întreg în intervalul \[1… 10\]
 
-Pentru fiecare serial primiți 2 linii
+Pentru fiecare serie primiți două elemente:
 
 - Numele serialului: un șir
 

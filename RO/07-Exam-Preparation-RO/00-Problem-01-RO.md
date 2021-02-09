@@ -26,7 +26,7 @@ Trebuie să rețineți și faptul că fiecare sezon se încheie cu un episod spe
 
 ## Intrare
 
-Ca intrare veți primi 4 linii de pe consolă:
+Ca intrare veți primi 4 elemente de consolă:
 
 - Numele serialului: un șir
 
