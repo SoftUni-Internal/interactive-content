@@ -1,14 +1,17 @@
-[slide]
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="489373158/2db89d88a6" default /]
 [stream language="RO" videoId="489373158/2db89d88a6"  /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
-**1. What is a Function?**
+**1. What is a Function**
 
 - Meaning of the term "function" in JavaScript 
 
