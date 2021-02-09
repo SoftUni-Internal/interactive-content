@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is a Number?
 
-[vimeo-video]
-[stream language="EN" videoId="489371556/90a6f7534f" default /]
-[stream language="RO" videoId="489371556/90a6f7534f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-18-19-what-is-a-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Numbers in JavaScript do not have a separate type for **integers** and **floating point numbers.**
 
@@ -74,10 +71,7 @@ console.log(myVar + 10);
 [slide hideTitle]
 # Problem: Integer or Float
 
-[vimeo-video]
-[stream language="EN" videoId="489371609/3a04a5e772" default /]
-[stream language="RO" videoId="489371609/3a04a5e772"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-problem-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -201,10 +195,7 @@ Your task is to find their **sum** and print it to the console with an addition:
 [slide hideTitle]
 # Solution: Integer or Float
 
-[vimeo-video]
-[stream language="EN" videoId="489371615/50cc2d6699" default /]
-[stream language="RO" videoId="489371615/50cc2d6699"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-solution-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
