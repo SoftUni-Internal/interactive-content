@@ -1,7 +1,5 @@
-# Problem 2: The Lift
-
 [slide hideTitle]
-# Description
+# Problem 2: The Lift
 
 [vimeo-video]
 [stream language="EN" videoId="497664040/da0b1365f9" default /]
@@ -9,6 +7,16 @@
 [/video-vimeo]
 
 
+[code-task title="Problem: The Lift" taskId="js-fundamentals-examPreparation-2-The-Lift" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function lift(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 Write a program that checks for **empty seats on a lift.**
 
 Each of the cabins of the lift can fit no **more than 4 people.**
@@ -43,46 +51,34 @@ Followed by:
 
 * If the lift is full and there are no more people waiting to get in, you should just print out the state of each cabin separated by a single space.
 
+# Example
 
-[code-task title="Problem: The Lift" taskId="js-fundamentals-examPreparation-2-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function lift(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Examples
-
-## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['15','0 0 0 0 0']`| There is room for more passengers! |
 ||4 4 4 3 0|
 
-### Comment
+**Comment**
 
-* First state: `4 0 0 0` \-\> `11` people left
+* First state: `4 0 0 0 -> 11` people left
 
-* Second state: `4 4 0 0` \-\> `7` people left
+* Second state: `4 4 0 0 -> 7` people left
 
-* Third state: `4 4 4 0` \-\> `3` people left
+* Third state: `4 4 4 0 -> 3` people left
 
-## Example
+# Example
 | **Input** | **Output** |
 | --- | --- |
 |`['20','0 2 0']`|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
-### Comment
+**Comment**
 
-* First state - `4 2 0`  \-\> `16` people left
+* First state - `4 2 0 -> 16` people left
 
-* Second state – `4 4 0`  \-\> `14` people left
+* Second state – `4 4 0 -> 14` people left
 
-* Third state – `4 4 4` \-\> `10` people left, but there're no more waggons.
+* Third state – `4 4 4 -> 10` people left, but there are no more waggons.
 
 
 [/task-description]

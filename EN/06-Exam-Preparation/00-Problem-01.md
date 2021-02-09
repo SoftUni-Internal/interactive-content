@@ -1,7 +1,6 @@
-# Problem 1: Array Modifier
 
 [slide hideTitle]
-# Description
+# Problem 1: Array Modifier
 
 [vimeo-video]
 [stream language="EN" videoId="497664341/656c4f7354" default /]
@@ -12,6 +11,18 @@
 [stream language="EN" videoId="497664300/136916d5ee" default /]
 [stream language="RO" videoId="497664300/136916d5ee"  /]
 [/video-vimeo]
+
+[code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-Array-Modifier" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function arrayModifier(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
+# Description
 
 You are given an array of integers.
 
@@ -40,7 +51,6 @@ The commands could be:
 
 * `decrease`
 
-
 ## Output
 The final form of the array should be printed out on the console, with each of its elements separated by a comma and a single space `, `.
 
@@ -54,27 +64,13 @@ The final form of the array should be printed out on the console, with each of i
 
 * Indices will always be inside the range of the array
 
-
-
-[code-task title="Array Modifier" taskId="js-fundamentals-examPreparation-2-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Examples
-
 ## Example
 
 | **Input** | **Output** |
 | --- | --- |
 |`['23 -2 321 87 42 90 -123', 'swap 1 3','swap 3 6','swap 1 0','multiply 1 2','multiply 2 1','decrease','end']`| 86, 7382, 2369942, -124, 41, 89, -3|
 
-### Comments
+**Comments**
 
 The initial state of the array: `23 -2 321 87 42 90 -123`
 
