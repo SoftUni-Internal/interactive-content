@@ -1,6 +1,19 @@
 # Problem 2: School Library
 
 [slide hideTitle]
+
+# School Library
+
+[code-task title="School Library" taskId="js-fundamentals-regular-exam-School-Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+   // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
 # Description
 
 On the first line, you will receive a String, representing a bookshelf in the library. Every book title is separated by `&`.
@@ -48,16 +61,6 @@ If the index is invalid, ignore the command.
 ## Constraints
 
 * You will not receive any duplicate book names in the initial list of books.
-
-[code-task title="School Library" taskId="js-fundamentals-regular-exam-School-Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Examples
 | **Input** | **Output** |

@@ -1,6 +1,19 @@
 # Problem 1: Archery Tournament
 
 [slide hideTitle]
+
+# Archery Tournament
+
+[code-task title="Archery Tournament" taskId="js-fundamentals-regular-exam-Archery-Tournament" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function solve(input) {
+   // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
 # Description
 
 Peter the archer is going to participate in a tournament.
@@ -52,16 +65,6 @@ If the start index, specified in any command is out of range, to begin with, Pet
 `{target} - {target} - {target} ….. - {target}`
 
 `Peter finished the archery tournament with {points}!`
-
-[code-task title="Archery Tournament" taskId="js-fundamentals-regular-exam-Archery-Tournament" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(input) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Examples
 
