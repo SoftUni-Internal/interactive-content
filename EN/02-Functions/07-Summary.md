@@ -6,7 +6,7 @@
 [stream language="RO" videoId="489373802/dc043536a7"  /]
 [/video-vimeo]
 
-## In this lesson you learned:
+# In this lesson you learned:
 
 - Functions are often used to break large programs into simple pieces of code
   - They consist of a declaration and a body
@@ -28,6 +28,7 @@ myFunction();
 ```
 
 - Functions can accept parameters
+
 ```js live
 function myFunction(input){
   console.log(input);
