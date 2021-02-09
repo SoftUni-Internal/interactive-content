@@ -57,7 +57,7 @@ The money must be formatted to the second digit after the decimal point.
 
 ### Comments
 - The goal, of the club, is to collect 500$.
-- The first order is for 6 cocktails Bellini. 
+- The first order is for 6 cocktails Bellini.
 - The price of the cocktail is its name length - 7. 6 Cocktails of 7$ -> 42$. The last digit is 2, therefore there is no discount.
 - The next order is for 7 Bamboo cocktails, its price is 6$. 6 * 7-> 42$. Again there is no discount.
 - We receive the command Party! The program stops.
