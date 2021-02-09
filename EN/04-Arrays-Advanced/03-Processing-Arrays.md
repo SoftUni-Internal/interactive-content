@@ -83,13 +83,18 @@ function oddNumbers(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 
 You are given an **array of numbers**.
 
 Write a function that **prints** all the elements at **odd positions, doubled, and in reversed order**. 
 
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
+The **input** comes as an **array** of **numbers**.
 
 The **output** is **printed to the console** on a **single line**, **separated by space.**
 
@@ -110,6 +115,30 @@ The **output** is **printed to the console** on a **single line**, **separated b
 
 [/task-description]
 [tests]
+[test]
+[input]
+10
+15
+20
+25
+[/input]
+[output]
+12 4 24
+[/output]
+[/test]
+[test]
+[input]
+34
+12
+34
+2
+56
+6
+[/input]
+[output]
+12 4 24
+[/output]
+[/test]
 [test]
 [input]
 34

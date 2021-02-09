@@ -106,7 +106,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 7
@@ -118,7 +118,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 8 9
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3
 6
@@ -270,7 +270,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 2
 7
@@ -282,7 +282,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 8 9
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3
 6
