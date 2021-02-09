@@ -1,6 +1,6 @@
 # Problem 1: Array Modifier
 
-[slide]
+[slide hideTitle]
 # Description
 
 [vimeo-video]
@@ -15,22 +15,24 @@
 
 You are given an array of integers.
 
-Write a program to modify the array, the possible alterations are: `swap`, `multiply` or `decrease`.
+Write a program to modify the array.
 
-* `swap {index1} {index2}`: take the two elements and swap their places.
+The possible alterations are: `swap`, `multiply` or `decrease`.
 
-* `multiply {index1} {index2}`: take the number from the first specified index and multiply it by the number at the second one.
+* `swap {index1} {index2}`: take the two elements and swap their places
+
+* `multiply {index1} {index2}`: take the number from the first specified index and multiply it by the number at the second one
 
 Save the product of the two at the index, where the first number was.
 
-* `decrease`: decreases all elements in the array by 1.
+* `decrease`: decreases all elements in the array by 1
 
 ## Input
 On the first input line you will be given the initial array values, separated by a single space.
 
-On the next lines you will be getting commands until you receive the command end.
+On the next lines you will be getting commands until you receive the command `end`.
 
-The commands could be
+The commands could be:
 
 * `swap {index1} {index2}`
 
@@ -40,17 +42,17 @@ The commands could be
 
 
 ## Output
-The final form of the array should be printed out on the console, with each of its elements separated by a comma and a space `, ` (comma and single space).
+The final form of the array should be printed out on the console, with each of its elements separated by a comma and a single space `, `.
 
 ## Constraints
 
-* The commands are limited to: `swap`, `multiply` or `decrease` and `end`
+* The commands are limited to: `swap`, `multiply` or `decrease`, and `end`
 
 * All elements of the array will be integer numbers in the range `[-231...231]`
 
 * The number of elements in the array will be in the range `[2...100]`
 
-* Indexes will always be inside the range of the array
+* Indices will always be inside the range of the array
 
 
 
@@ -66,11 +68,13 @@ function solve(input) {
 
 # Examples
 
+## Example
+
 | **Input** | **Output** |
 | --- | --- |
 |`['23 -2 321 87 42 90 -123', 'swap 1 3','swap 3 6','swap 1 0','multiply 1 2','multiply 2 1','decrease','end']`| 86, 7382, 2369942, -124, 41, 89, -3|
 
-## Comments
+### Comments
 
 The initial state of the array: `23 -2 321 87 42 90 -123`
 
@@ -92,12 +96,13 @@ The state of the array after the fourth command: `87 7383 321 -123 42 290 -2`
 
 * `multiply 2(321) 1(7383) = 2369943` 
 
-TThe state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
+The state of the after the fifth command: `87 7383 2369943 -123 42 90 -2`
 
 * `decrease – all - 1`
 
-TThe state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
+The state of the after the sixth command: `86 7383 2369942 -124 41 89 -3`
 
+## Example
 
 | **Input** | **Output** |
 | --- | --- |
