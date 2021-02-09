@@ -1,12 +1,23 @@
+[slide hideTitle]
 # Problem 1: Mu Online
 
-[slide hideTitle]
-# Description
 
 [vimeo-video]
 [stream language="EN" videoId="497656935/bfde3ae27b" default /]
 [stream language="RO" videoId="497656935/bfde3ae27b"  /]
 [/video-vimeo]
+
+[code-task title="Problem: Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function muOnline(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+
+# Description
 
 Your character starts with **100 health points** and **0 bitcoins.**
 
@@ -76,15 +87,6 @@ A **string**, separated by a vertical bar `|`.
 ## Output
 **Print** the corresponding **messages**, as shown in the description.
 
-[code-task title="Problem: Mu Online" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function muOnline(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 # Examples
 | **Input** | **Output** |
 | --- | --- |

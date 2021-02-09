@@ -1,13 +1,25 @@
-# Problem 2: Inventory
+
 
 [slide hideTitle]
-# Description
+# Problem 2: Inventory
 
 [vimeo-video]
 [stream language="EN" videoId="497656637/db5855df33" default /]
 [stream language="RO" videoId="497656637/db5855df33"  /]
 [/video-vimeo]
 
+
+
+[code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function inventory(input) {
+	// Write your code here
+}
+```
+[/code-editor]
+[task-description]
+# Description
 You will receive a string, containing the current items in your inventory, separated by a comma and a space `, `.
 
 After that, until receiving `Craft!` you will be given different commands.
@@ -36,16 +48,6 @@ If the given item exists, you should change its position and put it in the last 
 
 ## Output
 After receiving `Craft!`, print out all items in your inventory, separated by `, ` a comma and a space.
-
-[code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function inventory(input) {
-	// Write your code here
-}
-```
-[/code-editor]
-[task-description]
 
 # Examples
 | **Input** | **Output** |
