@@ -23,7 +23,7 @@ In every episode there are advertisements, which increase its duration by `20%`.
 You should also keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual.
 
 ## Input
-As input you will receive 4 console lines:
+As input you will receive 4 console elements:
 
 - Name of the series: String
 

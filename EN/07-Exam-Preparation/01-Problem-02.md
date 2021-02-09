@@ -23,7 +23,7 @@ You know, that the time you need to finish your lunch takes up precisely `1/8`(a
 
 
 ## Input
-You will receive 3 lines from the console:
+You will receive 3 elements from the console:
 
 - Name of the series: string
 

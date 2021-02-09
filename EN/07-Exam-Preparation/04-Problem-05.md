@@ -31,7 +31,7 @@ You receive from the console:
 - Budget: real number in the range \[10.0… 100.0\]
 - Count series: `n` - whole number in the range \[1… 10\]
 
-For each series you receive two lines:
+For each series you receive two elements:
 - Name of the series: string
 - Price for a series: real number in the range \[1.0… 15.0\]
 

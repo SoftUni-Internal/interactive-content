@@ -30,13 +30,13 @@ There are also promotional discounts available for two of the movies:
 - If the chosen movie is `Jumanji` and exactly 2 tickets are bought, there is `15%` discount for two.
 
 ## Input
-You receive 3 lines from the console:
+You receive 3 elements from the console:
 
-- First line: movie - string: `John Wick`, `Star Wars` or `Jumanji`
+- First element: movie - string: `John Wick`, `Star Wars` or `Jumanji`
 
-- Second line: offer - string: `Drink`, `Popcorn` or `Menu`
+- Second element: offer - string: `Drink`, `Popcorn` or `Menu`
 
-- Third line: number of tickets  – whole number in the range \[1… 30\]
+- Third element: number of tickets  – whole number in the range \[1… 30\]
 
 ## Output
 

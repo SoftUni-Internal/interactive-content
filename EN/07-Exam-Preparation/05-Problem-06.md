@@ -37,7 +37,7 @@ Keep in mind the following:
 
 ## Input
 
-You receive multiple lines from the console until the command `STOP` or until the limit of 7 movies is reached:
+You receive multiple elements from the console until the command `STOP` or until the limit of 7 movies is reached:
 
 - Movie title: string;
 

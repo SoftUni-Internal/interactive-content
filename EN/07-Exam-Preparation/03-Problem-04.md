@@ -48,9 +48,9 @@ First, print on of these lines:
 `Cinema income - {income}$`
 
 ## Example
-| **Intrare** | **Ieșire** |
+| **Input** | **Output** |
 | --- | --- |
-|`['10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
+|`['60', '10', '6', '3', '20', '15', 'Movie time!']`| There are 6 seats left in the cinema.|
 ||Cinema income - 255$|
 
 **Comments**
