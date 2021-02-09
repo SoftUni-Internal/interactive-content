@@ -26,6 +26,7 @@ Print a numbered array of all the products **ordered by name.**
 ||4\.Tomatoes|
  
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -109,24 +110,8 @@ fdZ
 2\.fdZ
 [/output]
 [/test]
-[test]
-[input]
-Potatoes
-Tomatoes
-Onions
-Apples
-[/input]
-[output]
-1\.Apples
-2\.Onions
-3\.Potatoes
-4\.Tomatoes
-[/output]
-[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
