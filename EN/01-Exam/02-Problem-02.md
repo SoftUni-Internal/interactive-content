@@ -1,6 +1,6 @@
-﻿[slide]
-# Problem 02
-[code-task title="Problem-02" taskId="pb-java-march-exam-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+﻿[slide hideTitle]
+# Family Trip
+[code-task title="Family Trip" taskId="pb-java-march-exam-02" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
