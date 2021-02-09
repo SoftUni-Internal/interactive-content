@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Variable Scope
 
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-29,30-Variable-life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-29-30-Variable-life-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each variable has a range in which it exists, called **variable scope**. 
 
