@@ -4,10 +4,7 @@
 
 # What is a Boolean?
 
-[vimeo-video]
-[stream language="EN" videoId="489371680/3568705290" default /]
-[stream language="RO" videoId="489371680/3568705290"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-21-22-what-is-a-boolean-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Boolean** values are named after [George Boole](https://en.wikipedia.org/wiki/George_Boole), an English mathematician.
@@ -33,10 +30,7 @@ Boolean comparisons are most often put in an `if` construction, but we can also 
 
 # Comparisons and Conditions
 
-[vimeo-video]
-[stream language="EN" videoId="489371693/bb15d255c4" default /]
-[stream language="RO" videoId="489371693/bb15d255c4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-23-comparisons-and-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Examples of comparison operators:
 
@@ -80,10 +74,7 @@ if (number) {
 [slide hideTitle]
 # True and False
 
-[vimeo-video]
-[stream language="EN" videoId="489371697/c3dbb010c9" default /]
-[stream language="RO" videoId="489371697/c3dbb010c9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-24-25-boolean-comparisons-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 In addition to `true` and `false`, JavaScript has `truthy` and `falsy` (sometimes written `falsey`). 
@@ -166,10 +157,7 @@ It is always better to be **explicit** so as not to be ambiguous.
 
 # Problem: Amazing Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489371747/54fbdf1eb2" default /]
-[stream language="RO" videoId="489371747/54fbdf1eb2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-26-problem-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -299,10 +287,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 
 # Solution: Amazing Numbers
-[vimeo-video]
-[stream language="EN" videoId="489371745/0d75d93049" default /]
-[stream language="RO" videoId="489371745/0d75d93049"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-26-solution-solution-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -434,10 +419,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 # The Typeof operator
 
-[vimeo-video]
-[stream language="EN" videoId="489371799/fe15836811" default /]
-[stream language="RO" videoId="489371799/fe15836811"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-28-29-Definition-of-the-typeof-operator-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript itself provides an operator called `typeof` for everything that works in a straightforward way.
 
