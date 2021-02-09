@@ -109,16 +109,21 @@ function sum(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
+Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['20', '30', '40']`| 60 |
-|`['10', '17', '22', '33']`| 43 |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
 
 [/task-description]
 [tests]
@@ -223,16 +228,21 @@ function sum(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
+Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['20', '30', '40']`| 60 |
-|`['10', '17', '22', '33']`| 43 |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
 
 [/task-description]
 [tests]
