@@ -15,7 +15,7 @@
 
 ## Value Types
 
-A variable of a **value \(primitive data\) type** contains an **instance** of the type and holds their value directly.
+A variable of a **value (primitive data) type** contains an **instance** of the type and holds their value directly.
 
 With value types, each variable has **its own copy of the data**, and it is not possible for operations done on one variable to affect the other. 
 

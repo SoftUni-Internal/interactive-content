@@ -110,12 +110,19 @@ function sum()
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function simpleCalculator(input){
+function simpleCalculator(firstNumber, secondNumber, operator){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(Number(input[0]), Number(input[1]), input[2])}
+```
+[/code-adapter]
 [task-description]
+# Description
+
 Write a function that receives an array containing three elements. 
 
 Write an arrow function that calculates the result depending on the specified operator. 
@@ -127,12 +134,53 @@ The operator could only be one of the following: `multiply`, `divide`, `add` and
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['5', '5', 'multiply']` | 25 |
-|`['40', '8', 'divide']` | 5 |
-|`['12', '19', 'add']` | 31 |
+|5, 5, 'multiply' | 25 |
+|40, 8, 'divide' | 5 |
+|12, 19, 'add' | 31 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+5
+10
+multiply
+[/input]
+[output]
+50
+[/output]
+[/test]
+[test open]
+[input]
+40
+8
+divide
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test open]
+[input]
+12
+19
+add
+[/input]
+[output]
+31
+[/output]
+[/test]
+[test open]
+[input]
+50
+13
+subtract
+[/input]
+[output]
+37
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -210,13 +258,11 @@ add
 subtract
 [/input]
 [output]
-\-475
+-475
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -235,7 +281,14 @@ function simpleCalculator(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(Number(input[0]), Number(input[1]), input[2])}
+```
+[/code-adapter]
 [task-description]
+# Description
+
 Write a function that receives an array containing three elements. 
 
 Write an arrow function that calculates the result depending on the specified operator. 
@@ -247,12 +300,53 @@ The operator could only be one of the following: `multiply`, `divide`, `add` and
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['5', '5', 'multiply']` | 25 |
-|`['40', '8', 'divide']` | 5 |
-|`['12', '19', 'add']` | 31 |
+|5, 5, 'multiply' | 25 |
+|40, 8, 'divide' | 5 |
+|12, 19, 'add' | 31 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+5
+10
+multiply
+[/input]
+[output]
+50
+[/output]
+[/test]
+[test open]
+[input]
+40
+8
+divide
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test open]
+[input]
+12
+19
+add
+[/input]
+[output]
+31
+[/output]
+[/test]
+[test open]
+[input]
+50
+13
+subtract
+[/input]
+[output]
+37
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -330,11 +424,9 @@ add
 subtract
 [/input]
 [output]
-\-475
+-475
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
