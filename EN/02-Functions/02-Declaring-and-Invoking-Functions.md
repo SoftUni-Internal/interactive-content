@@ -1,6 +1,6 @@
 # Declaring and Invoking Functions
 
-[slide]
+[slide hideTitle]
 # Declaring a Function
 
 [vimeo-video]
@@ -28,15 +28,15 @@ let printText = function(text){
 }
 ```
 
-## Functions with parameters
+## Functions with Parameters
 
-**Arguments** can be passed to the function by enclosing the values in a parentheses after the function name.
+**Arguments** can be passed to the function by enclosing the values in parentheses after the function name.
 
 Arguments can be sent as a comma separated list of **arguments** while calling the function.
 
-The arguments recieved as **parameters** by the recieving function and are stored in local variables. 
+The arguments are received as **parameters** by the receiving function and stored in local variables. 
 
-As soon as the function ends the variable disappears
+As soon as the function ends the variable disappears.
 
 ```js
 function printText(text){
@@ -46,7 +46,7 @@ function printText(text){
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Invoking a Function
 
 [vimeo-video]
@@ -57,7 +57,7 @@ function printText(text){
 
 A function is not executed before it is invoked.
 
-A function can be invoked from **everywhere in the scope**, where it is defined.
+A function can be invoked from **everywhere in the scope**, in which it is defined.
 
 We can declare a function, and then we can invoke (call) the function by its name:
 
@@ -79,8 +79,8 @@ hLine();
 
 [/slide]
 
-[slide]
-# Invoking a Function from another function
+[slide hideTitle]
+# Invoking a Function from Another Function
 
 [vimeo-video]
 [stream language="EN" videoId="489373314/21401d79a4" default /]
@@ -98,7 +98,7 @@ function printDocument() {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Recursion
 
 [vimeo-video]
@@ -106,7 +106,7 @@ function printDocument() {
 [stream language="RO" videoId="489373783/9258f21dc4"  /]
 [/video-vimeo]
 
-We can also invoke a **function** **in its own body (recursion):**
+We can also invoke a **function in its own body (recursion):**
 
 ``` js
 function countDown(x) {
@@ -115,11 +115,18 @@ function countDown(x) {
 }
 ```
 
-Recursion means that a **function calls itself.** 
+**Recursion** is the process in which a function **calls itself**.
+
+Such functions are called **recursive**.
+
+Proper recursive functions **stop** invoking themselves when a desired **result** is achieved.
+
+If **no such condition exists**, the function will call itself **endlessly**.
+
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Functions Without Parameters
 
 [vimeo-video]
@@ -131,8 +138,7 @@ We can have a function **with or without** parameters.
 
 Function **parameters** behave like local variables inside the **function body.**
 
-
-If a function does not receive arguments when invoked the **it will always produce the same result** (unless it takes data from outside itself):
+If a function does not receive arguments when invoked then **it will always produce the same result** (unless it takes data from outside itself):
 
 ``` js live
 function printHeader() {
@@ -143,7 +149,8 @@ function printHeader() {
 printHeader();
 ```
 [/slide]
-[slide]
+
+[slide hideTitle]
 # Functions With Parameters
 
 [vimeo-video]
@@ -151,7 +158,7 @@ printHeader();
 [stream language="RO" videoId="489373715/065a22dd97"  /]
 [/video-vimeo]
 
-A function can receive **any number and type of arguments** when invoked:
+A function can receive **any number and type of arguments** when invoked.
 
 In this example we pass **two parameteres** as an argument:
 
@@ -180,7 +187,7 @@ If we pass more arguments, then additional arguments **will be ignored.**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Grades
 
 [vimeo-video]
@@ -189,7 +196,7 @@ If we pass more arguments, then additional arguments **will be ignored.**
 [/video-vimeo]
 
 
-[code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function grades(input){
@@ -198,7 +205,7 @@ function grades(input){
 ```
 [/code-editor]
 [task-description]
-Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words
+Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
 
 | **Grade** | **Result** |
 | --- | --- |
@@ -264,7 +271,7 @@ Fail
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Grades
 
 [vimeo-video]
@@ -277,22 +284,12 @@ Fail
 [code-editor language=javascript]
 ```
 function grades(grade){
-  if (grade >= 2.0 && grade < 3.0) {
-        console.log('Fail');
-    } else if (grade >= 3.0 && grade < 3.5) {
-        console.log('Poor');
-    } else if (grade >= 3.5 && grade < 4.5) {
-        console.log('Good');
-    } else if (grade >= 4.5 && grade < 5.5) {
-        console.log('Very good');
-    } else if (grade >= 5.5 && grade <= 6.0) {
-        console.log('Excellent');
-    }
+  // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words
+Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
 
 | **Grade** | **Result** |
 | --- | --- |
@@ -358,7 +355,7 @@ Fail
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Math Power
 
 [vimeo-video]
@@ -367,7 +364,7 @@ Fail
 [/video-vimeo]
 
 
-[code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function mathPower(input){
@@ -381,7 +378,9 @@ function mathPower(input){
 ```
 [/code-adapter]
 [task-description]
-Write a function that **calculates** and returns the value of a number **raised to a given power:**
+Write a function that **calculates** and returns the value of a number **raised to a given power.**
+
+&nbsp;
 
 ## Examples
 | **Input** | **Output** |
@@ -460,7 +459,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Math Power
 
 [vimeo-video]
@@ -474,11 +473,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 
 ```
 function mathPower(input){
-  let num = Number(input[0]);
-  let pow = Number(input[1]);
-
-  let result = Math.pow(num,pow);
-  console.log(result);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -488,7 +483,9 @@ function mathPower(input){
 ```
 [/code-adapter]
 [task-description]
-Write a function that **calculates** and returns the value of a number **raised to a given power:**
+Write a function that **calculates** and returns the value of a number **raised to a given power.**
+
+&nbsp;
 
 ## Examples
 | **Input** | **Output** |
