@@ -4,7 +4,7 @@
 
 # Constructors
 
-Now, lets see how we can obtain a Constructor Objects.
+Lets see how we can obtain a Constructor Objects.
 
 We can use the **constructor class** that provides us the following methods for this purpose:
 
@@ -35,9 +35,9 @@ MyObject myObject = (MyObject)
 
 The `newInstance()` method takes an optional amount of parameters.
 
-We must supply exact one parameter per argument in the constructor which we are invoking.
+We must supply exactly one parameter per argument in the constructor which we are invoking.
 
-Like in this case - It was a constructor taking `String`, so we supplied one `String`.
+Like in the code above - It was a constructor taking `String`, so we supplied one `String`.
 
 [/slide]
 
@@ -45,9 +45,9 @@ Like in this case - It was a constructor taking `String`, so we supplied one `St
 
 # Fields Name and Type
 
-Analogically to the way we obtain constructors, we can obtain **class members**.
+Analogically to the way we get constructors, we can obtain **class members**.
 
-Lets see how we can obtain all **public** fields:
+Lets see how we can recieve all **public** fields:
 
 ``` java
 Field field = aClass.getField("fieldname");

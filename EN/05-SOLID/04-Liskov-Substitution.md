@@ -16,7 +16,7 @@ That requires the objects of your Subclasses to **behave in the same way** as th
 
 The Liskov substitution principle is just an **extension** of the **Open-closed** principle. 
 
-That means that we are able to implement the Open-closed principle through **additional objects**, **inheritance**, and **polymorphism**.​
+That means that we are able to implement the **Open-closed** principle through **additional objects**, **inheritance**, and **polymorphism**.​
 
 We must make sure that new derived classes are extending the base classes **without changing their behavior**. 
 
@@ -34,7 +34,7 @@ Every subtype is expected to **stick** to **this contract**.
 
 If a Subclass does not adhere to the Superclass’s contract, it’s **violating the LSP**.
 
-This code snippet shows what violates LSP and how we can fix it
+This code snippet shows what violates LSP and how we can fix it:
 
 ```java
 public interface Vehicle {
@@ -66,7 +66,7 @@ public class MotorCar implements Vehicle {
 
 As the above code describes, we have an **engine** that we can **turn on**, and we can **increase the power**.
 
-But what happens if we want to add an **electric car**.
+But what happens if we want to add an **electric car**:
 
 ```java
 public class ElectricCar implements Vehicle {
@@ -87,7 +87,7 @@ These are the kinds of problems that **violations** of the Liskov Substitution P
 The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating interfaces of vehicles with and without engines.
 
 
-From the Vehicle Interface we remove the `startEngine()` method.
+From the Vehicle Interface we remove the `startEngine()` method:
 
 ```java
 public interface Vehicle {
@@ -95,7 +95,7 @@ public interface Vehicle {
 }
 ```
 
-Then, we create the **ElectricVehicle** interface, which **extends the Vehicle interface**, and has his own method - `batteryLife()`
+Then, we create the **ElectricVehicle** interface, which **extends the Vehicle interface**, and has his own method `batteryLife()`:
 
 ```java
 public interface ElectricVehicle extends Vehicle {
@@ -103,7 +103,7 @@ public interface ElectricVehicle extends Vehicle {
     int batteryLife();
 }
 ```
-So, we create an interface **Car** which extends Vehicle, where is more appropriate to add the `startEngine()` - method.
+So, we create an interface **Car** which extends Vehicle, where is more appropriate to add the `startEngine()` method.
 
 ```java
 public interface Car extends Vehicle {

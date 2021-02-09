@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## SOLID Principles Overview
+# SOLID Principles Overview
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/05.Java-OOP-Advanced-S.O.L.I.D-Lab-Skeleton.zip) **for this lesson.**
 
@@ -27,7 +27,9 @@ When applied properly, it makes your code more **extendable**, **logical** and *
 - **S** – **Single responsibility** – a unit should have only one responsibility
 - **O** – **Open–closed** - open for extension, but closed for modification
 - **L** – **Liskov substitution** – objects should be replaceable with instances of their subtypes, 
+
 without altering the correctness of that program
+
 - **I** – **Interface segregation** – many specific interfaces are better than one general interface
 - **D** – **Dependency inversion** – one should depend upon abstractions, not concretions
 

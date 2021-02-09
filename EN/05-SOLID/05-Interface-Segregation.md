@@ -52,17 +52,17 @@ public class Robot implements Worker {​
   }​
 }
 ```
-As you can see we have a **Worker** interface with two methods inside – `work()` and `sleep()`.​
+As you can see we have a `Worker` interface with two methods inside – `work()` and `sleep()`.​
 
-When an **Employee** class implements that interface there won’t be any problems. 
+When an `Employee` class implements that interface there will not be any problems. 
 
-That is because the interface methods are suitable for the **Employee** class.​
+That is because the interface methods are suitable for the `Employee` class.​
 
-But let’s see what happens when a class **Robot** implements the same interface.​
+But let’s see what happens when a class `Robot` implements the same interface.​
 
-The **Robot** class can implement the `work()` method, but the `sleep()` one is not appropriate for this class. 
+The `Robot` class can implement the `work()` method, but the `sleep()` one is not appropriate for this class. 
 
-The problem here is that we force the **Robot** class to implement a method that it should not.​
+The problem here is that we force the *obot class to implement a method that it should not.​
 
 You saw what problems the Fat Interfaces can bring, let's list them our and their solutions and figure out a method to fix our problem.
 
@@ -72,7 +72,7 @@ You saw what problems the Fat Interfaces can bring, let's list them our and thei
 
 # Fat Interfaces - consequences
 
-Having fat interfaces may lead to few consequences which we should be aware of.
+**Having fat interfaces may lead to few consequences which we should be aware of**
 
 When we see an interface with more than 5-6 members we should ask ourselves if it is not two interfaces or more.
 

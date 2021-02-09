@@ -28,6 +28,6 @@ Lets see in what cases we **do not** use Reflection.
 
 - Reflection is significantly **slower** rather than calling methods by their name, because it has to **inspect** the metadata instead of just using **precompiled addresses** and **constants**
 
-- By using Reflection we can retrieve the definition of a `protected` or `final` member, remove the protection and manipulate it. This can be very dangerous for ur software security
+- By using Reflection we can retrieve the definition of a `protected` or `final` member, remove the protection and manipulate it. This can be very dangerous for your software security
 
 [/slide]

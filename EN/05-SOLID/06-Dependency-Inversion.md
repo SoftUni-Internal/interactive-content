@@ -63,7 +63,7 @@ The above code is a violation of the **Dependency Inversion principle**.
 
 # The DI Problem - Solution
 
-To solve the design issue behind the code above, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implemented by any classes like Lamp:
+To solve the design issue behind the previous code, we need to create a **middle-layer** where we can define an **abstract interface associated with `Button`** and implemented by any classes like `Lamp`:
 
 ```java
 public interface SwitchableDevice {
@@ -135,7 +135,7 @@ It also means that `Button` will be **able to control objects** that have **not 
 
 # Dependency Examples 
 
-Understanding what **Dependency Inversion** is can take time, but let's have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
+Understanding what **Dependency Inversion** is may take time, but lets have a look at few dependency examples and try to better understand what we are trying to achieve with this principle. 
 
 **A dependency is any external component/system:**
 
@@ -156,17 +156,19 @@ Understanding what **Dependency Inversion** is can take time, but let's have a l
 | System.in / System.out |
 |   |
 
+We want to de-couple our code from specific classes, in order for it to be flexible and at any point of our program to change its behaviour by changing the concrete implementation of its dependencies.
+
 [/slide]
 
 [slide hideTitle]
 
-# How to DIP? (1)
+# How to DIP?
 
-We can achieve Dependency-Inversion Principle by applying the Dependency Injection design pattern. 
+We can achieve Dependency-Inversion Principle by applying the **Dependency Injection** design pattern. 
 
 Dependency Injection allows us to use **Inversion of Control Container (IOC)**.
 
-Basically, it is a tool in which we register all dependencies as **{Interface} = {Class to generate}**, then every time we need a dependency it passes it to us without us specifying it. 
+Basically, it is a tool in which we register all dependencies as **\{Interface\} = \{Class to generate\}**, then every time we need a dependency it passes it to us without us specifying it. 
 
 There are 3 types of Dependency Injection and it's important for every developer to know them.
 

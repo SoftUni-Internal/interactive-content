@@ -20,19 +20,19 @@ Let's see the following example:
 public class HeroSettings {​
 
   public static void changeName(Hero hero) {​
-
+    //logic...
   }​
 
   public static void selectRole(Hero hero) {​
-
+    //logic...
   }
 
   public void printHeroName() {
-
+    //logic...
   }
 
   public void printHeroRole() {
-
+    //logic...
   }
 }
 ```
@@ -50,23 +50,23 @@ For this purpose, we should create another class, **which will only handle print
 public class PrintHeroFeatures {​
 
   public void printHeroName(){
-
+    //logic...
   }
 
   public void printHeroRole(){
-
+    //logic...
   }
 }
 ```
 
-The **Single Responsibility principle** doesn’t mean that our classes should only have a few methods, or a small amount of code they contain.
+The **Single Responsibility principle** doesn not mean that our classes should only have a few methods, or a small amount of code that they contain.
 
-The key is that the code that is inside the class must be **directly related to the main purpose** of the class and the work it does. 
+The key is that the code that is inside the class must be **directly related to the main purpose** of the class and the job it does. 
 
-It is good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we can not keep the this principle.
+It is a good practice to **write methods** that are **accurate**, **concise**, and as **straight-forward** as possible, although in some situations we can not keep to this principle.
 
 Thanks to the **Single Responsibility principle**, we can easily detect and eliminate bugs in the software.​
 
-When all the methods in one class are aimed to serve one goal only we say that this class has **strong cohension**.
+When all the methods in one class are aimed to serve one goal only then we say that this class has **strong cohension**.
 
 [/slide]

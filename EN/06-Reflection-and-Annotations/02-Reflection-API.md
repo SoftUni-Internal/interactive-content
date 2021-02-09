@@ -4,7 +4,7 @@
 
 Lets continue with some more detailed information about Classes in Java Reflection.
 
-Java provides us a class with name `Class` in java.lang.package. 
+Java provides us a static class with the name `Class` in `java.lang.package`. 
 
 Instances that are inside the `Class` acts for interfaces and classes in a running Java application.
 
@@ -42,6 +42,11 @@ Now, lets obtain the `Class` name:
 ``` java
 Class myDogClass = Dog.class;
 String nameClass = myDogClass.getName();
+System.out.println(nameClass);
+```
+
+```
+Output: com.company.Dog
 ```
 
 If we want to obtain the class name without the package name, we can use `getSimpleName()` method:
@@ -49,6 +54,11 @@ If we want to obtain the class name without the package name, we can use `getSim
 ``` java
 Class myDogClass = Dog.class;
 String nameClass = myDogClass.getSimpleName();
+System.out.println(nameClass);
+```
+
+```
+Output: Dog
 ```
 
 [/slide]
@@ -69,14 +79,14 @@ public class Dog extends Mammal {
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException {
         Class myDogClass = Dog.class;
-        Class nameClass = myDogClass.getSuperclass();
+        Class nameClass = myDogClass.getSuperclass();   //Returns the full name of the parent class
         System.out.println(nameClass);
 ```
 
 And the **output** will be:
 
 ```
-class Mammal
+class com.company.Mammal
 ```
 
 

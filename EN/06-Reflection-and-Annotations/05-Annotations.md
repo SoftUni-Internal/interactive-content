@@ -2,11 +2,11 @@
 
 # Annotations
 
-Now, lets find out what is Java Annotation.
+What is Java Annotation?
 
 Annotations are kind of **metadata** that you can insert in your Java code.
 
-They are Java types that are preceded by an "@" symbol and are used to **describes** parts of your code.
+They are Java types that are preceded by an "** @**" symbol and are used to **describes** parts of your code.
 
 Annotations can be applied to **Classes**, **Fields**, **Methods**, etc.
 
@@ -16,7 +16,7 @@ Annotations can be applied to **Classes**, **Fields**, **Methods**, etc.
 
 # Annotation usage
 
-Lets see simple exaple of annotations:
+Lets see simple example of annotations:
 
 ``` java
 @Deprecated // That shows our method is Deprecated
@@ -56,7 +56,7 @@ public <T> void warning(int size) {
 
 # Creating Annotations
 
-We can create Custom Annotations using @interface keyword.
+We can create Custom Annotations using **@interface** keyword.
 
 Here is other things to remember while creating custom annotations:
 
@@ -71,8 +71,8 @@ Here is custom annotation Java example:
 ``` java
 @interface MyAnnotation {
 
-   String   name();
-   int      age();
+   String name();
+   int age();
    String[] newNames();
 }
 ``` 
@@ -98,7 +98,7 @@ public class MyClass {
 
 # Meta Annotations 
 
-One more thing we can do is to specify where the annotation is applicable.
+Another thing we can do is to specify where the annotation is applicable.
 
 We can achieve this using `@Target`
 
@@ -143,7 +143,7 @@ Other retention policies:
 
 # Obtaining Annotations
 
-Lets see, how can obtain class annotations:
+How can we obtain class's annotations?
 
 We can use `getAnnotations()` method to obtain all class annotations.
 

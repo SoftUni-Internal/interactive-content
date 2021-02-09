@@ -25,5 +25,7 @@ In this lesson, you learned:
 
 
 ## In the next lesson, you will learn:
+- Reflection - What? Why? Where?
+- Reflection API
 
 [/slide]

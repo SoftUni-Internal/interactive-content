@@ -6,6 +6,18 @@
 
 - Reflection
 - Reflection API
+
+``` java
+//Get class by its name
+Class test = Class.forName("Dog");
+
+//Get names of a given class
+String nameClass = myDogClass.getName();
+String nameClass = myDogClass.getSimpleName();
+
+```
+
+
 - Reflecting Classes, Constructors, Methods, Fields
 - Access Modifiers
 - Annotations
