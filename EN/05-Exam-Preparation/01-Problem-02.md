@@ -1,5 +1,3 @@
-
-
 [slide hideTitle]
 # Problem 2: Inventory
 
