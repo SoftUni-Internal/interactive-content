@@ -1,6 +1,6 @@
 # Problem 2: The Lift
 
-[slide]
+[slide hideTitle]
 # Description
 
 [vimeo-video]
@@ -13,17 +13,19 @@ Write a program that checks for **empty seats on a lift.**
 
 Each of the cabins of the lift can fit no **more than 4 people.**
 
-If a cabin is full you should direct the people to the next one with available seats.
+If a cabin is full, you should direct the people to the next one with available seats.
 
 ## Input
 
-* On the first line you, will receive the number of people waiting in line to get on the lift.
+* On the first line, you will receive the number of people waiting in line to get on the lift.
+
 
 * On the second line, you will receive the current state of the lift – a string of numbers `(0-4)` each number representing the number of people in each next cabin, separated by an empty space.
 
+
 ## Output
 
-When you run out of empty seats, or if there are no more people on the queue you should print out one of the following messages:
+When you run out of empty seats, or if there are no more people on the queue, you should print out one of the following messages:
 
 * If there are no more people queueing but there are some seats left on the lift:
 
@@ -42,10 +44,10 @@ Followed by:
 * If the lift is full and there are no more people waiting to get in, you should just print out the state of each cabin separated by a single space.
 
 
-[code-task title="The Lift" taskId="js-fundamentals-examPreparation-2-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: The Lift" taskId="js-fundamentals-examPreparation-2-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function lift(input) {
 	// Write your code here
 }
 ```
@@ -53,12 +55,14 @@ function solve(input) {
 [task-description]
 
 # Examples
+
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['15','0 0 0 0 0']`| There is room for more passengers! |
 ||4 4 4 3 0|
 
-## Comment
+### Comment
 
 * First state: `4 0 0 0` \-\> `11` people left
 
@@ -66,13 +70,13 @@ function solve(input) {
 
 * Third state: `4 4 4 0` \-\> `3` people left
 
-
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |`['20','0 2 0']`|The lift is full. 10 people currently in line.|
 ||4 4 4|
 
-## Comment
+### Comment
 
 * First state - `4 2 0`  \-\> `16` people left
 
