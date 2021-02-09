@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: List of Products
 [code-task title="List of Products" taskId="js-fundamentals-1-Arrays-Advanced-List-of-Products" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -117,7 +117,7 @@ Apples
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Train
 [code-task title="Train" taskId="js-fundamentals-1-Arrays-Advanced-Train" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -140,9 +140,9 @@ The second element of the array will be the max capacity of each wagon (single n
 
 The rest of the elements will be commands in the following format:
 
-- `Add {passengers}` – add a wagon to the end, with the given number of passengers.
+- `Add {passengers}` – add a wagon to the end, with the given number of passengers
 
-- `{passengers}` -  find an existing wagon to fit all the passengers (starting from the first wagon).
+- `{passengers}` -  find an existing wagon to fit all the passengers (starting from the first wagon)
 
 In the end, print the final state of the train (all the wagons, separated by a space).
 
@@ -249,9 +249,9 @@ Add 10
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Distinct Array
-[code-task title="Distinct Array" taskId="js-fundamentals-1-Arrays-Advanced-DIstinct-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Distinct Array" taskId="js-fundamentals-1-Arrays-Advanced-Distinct-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function distinctArray(arr){
@@ -380,7 +380,7 @@ Print the result elements(the remaining ones), separated by a single space.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: HouseParty
 [code-task title="HouseParty" taskId="js-fundamentals-1-Arrays-Advanced-HouseParty" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -408,7 +408,7 @@ If you receive the second type of input, you have to **remove** the person if he
 In the end, print all the guests, each on a separate line. 
 
 
-# Example
+# Examples
 | **Input**   | **Output** | 
 | :---:       |    :----:   |   
 |`['Allie is going!','George is going!','John is not going!','George is not going!']`| John is not in the list!|
@@ -523,7 +523,7 @@ T
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Sorting
 [code-task title="Sorting" taskId="js-fundamentals-1-Arrays-Advanced-Sorting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -636,7 +636,7 @@ Print the elements on one line, separated by a single space.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sort an Array by 2 Criteria
 [code-task title="Sort an Array by 2 Criteria" taskId="js-fundamentals-1-Arrays-Advanced-Sort-an-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -649,14 +649,14 @@ function sort(input){
 [task-description]
 # Description
 
-Write a function that sorts an array of strings, by their length in ascending order, as primary criteria, and by alphabetical value in ascending order, as second criteria. 
+Write a function that sorts an array of strings, by their length in ascending order, as a primary criteria, and by alphabetical value in ascending order, as a second criteria. 
 
 The input comes as an array of strings. 
 
 The output is the sorted array of strings. 
 
 
-# Example
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |`["alpha", "beta", "gamma"]`|beta|
@@ -674,11 +674,11 @@ The output is the sorted array of strings.
 
 ## Hints
 
-- An array can be sorted by passing a compare function to the `Array.sort()` function. 
+- An array can be sorted by passing a compare function to the `Array.sort()` function
 
-- Creating a **compare function** by two criterias can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the compare is not 0\) - return the result of the **compare function.** 
+- Creating a **compare function** by two criterias can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the comparison is not 0\) - return the result of the **compare function** 
 
-If the two items are the same by the main criteria \(the result of the compare is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
+If the two items are the same by the main criteria \(the result of the comparison is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
 
 
 [/task-description]
@@ -775,7 +775,7 @@ Default
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Array Manipulations
 [code-task title="Array Manipulations" taskId="js-fundamentals-1-Arrays-Advanced-Array-Manipulation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -790,13 +790,13 @@ function arrayManipulations(input){
 
 Write a function that manipulates an array of numbers. 
 
-- `Add {number}`: add a number to the end of the array.
+- `Add {number}`: add a number to the end of the array
 
-- `Remove {number}`: add a number to the end of the array.
+- `Remove {number}`: add a number to the end of the array
 
--	`RemoveAt {index}`: add a number to the end of the array.
+-	`RemoveAt {index}`: add a number to the end of the array
 
-- `Insert {number} {index}`: insert a number at a given index.
+- `Insert {number} {index}`: insert a number at a given index
 
 **Note: All the indices will be valid!**
 

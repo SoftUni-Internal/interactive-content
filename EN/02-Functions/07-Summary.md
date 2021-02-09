@@ -1,12 +1,9 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489373802/dc043536a7" default /]
-[stream language="RO" videoId="489373802/dc043536a7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+# In this lesson you learned:
 
 - Functions are often used to break large programs into simple pieces of code
   - They consist of a declaration and a body

@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What Are Arrays?
 
-[vimeo-video]
-[stream language="EN" videoId="489372251/f2e6e4672e" default /]
-[stream language="RO" videoId="489372251/f2e6e4672e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You already know how to store **single data in one variable.** 
 
@@ -58,10 +55,7 @@ In this example we have **7 elements.**
 [slide hideTitle]
 # Creating Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489372249/6743adf4f6" default /]
-[stream language="RO" videoId="489372249/6743adf4f6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-5-Creating-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two ways to create an array: 
 
@@ -105,10 +99,7 @@ console.log(numbers);
 [slide hideTitle]
 # Problem: Sum First and Last Array Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489372302/7905a8f7f5" default /]
-[stream language="RO" videoId="489372302/7905a8f7f5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Problem-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -118,16 +109,21 @@ function sum(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
+Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['20', '30', '40']`| 60 |
-|`['10', '17', '22', '33']`| 43 |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
 
 [/task-description]
 [tests]
@@ -222,10 +218,7 @@ Write a function that receives an **array of strings**, **turns them into number
 [slide hideTitle]
 # Solution: Sum First and Last Array Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489372305/43d632bad4" default /]
-[stream language="RO" videoId="489372305/43d632bad4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -235,16 +228,21 @@ function sum(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of strings**, **turns them into numbers** and prints out the sum of first and last element of that array. 
+Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['20', '30', '40']`| 60 |
-|`['10', '17', '22', '33']`| 43 |
+|`[20, 30, 40]`| 60 |
+|`[10, 17, 22, 33]`| 43 |
 
 [/task-description]
 [tests]
@@ -339,16 +337,14 @@ Write a function that receives an **array of strings**, **turns them into number
 [slide hideTitle]
 # Days of Week: Example
 
-[vimeo-video]
-[stream language="EN" videoId="489372340/6ef0de5d43" default /]
-[stream language="RO" videoId="489372340/6ef0de5d43"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-7-Example-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
 |**Index**|**Value**|
+|---|---|
 |`days[0]`|Monday|
 |`days[1]`|Tuesday|
 |`days[2]`|Wednesday|
@@ -368,10 +364,7 @@ The last element, Sunday, is at index 6 of the array.
 [slide hideTitle]
 # Problem: Days of Week
 
-[vimeo-video]
-[stream language="EN" videoId="489372347/856f508476" default /]
-[stream language="RO" videoId="489372347/856f508476"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Probelm-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -492,10 +485,7 @@ Invalid day!
 [slide]
 # Solution: Days of Week
 
-[vimeo-video]
-[stream language="EN" videoId="489372392/785b1fe99f" default /]
-[stream language="RO" videoId="489372392/785b1fe99f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -609,10 +599,7 @@ Invalid day!
 [slide hideTitle]
 # Arrays of Different Types
 
-[vimeo-video]
-[stream language="EN" videoId="489372393/3a35572b19" default /]
-[stream language="RO" videoId="489372393/3a35572b19"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-10-Arrays-of-different-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Arrays can hold different types of elements:
 
@@ -635,10 +622,7 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [slide hideTitle]
 # Adding New Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489372468/1ac4aabd28" default /]
-[stream language="RO" videoId="489372468/1ac4aabd28"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-11-Adding-new-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We  can add an element to the end of the array:
 
@@ -662,10 +646,7 @@ console.log(arr);
 [slide hideTitle]
 # JS Arrays and Invalid Positions
 
-[vimeo-video]
-[stream language="EN" videoId="489372453/ea5fcbe683" default /]
-[stream language="RO" videoId="489372453/ea5fcbe683"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If we attempt to assign a value to a non-existent index, JS will fill the missing elements with 'undefined' values and increase its size:
 

@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Functions in JavaScript
 
-[vimeo-video]
-[stream language="EN" videoId="489373212/52cac3ad3a" default /]
-[stream language="RO" videoId="489373212/52cac3ad3a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-3-4-functions-in-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A function is a **subprogram** designed to perform a particular **task**.
 

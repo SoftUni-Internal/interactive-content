@@ -65,10 +65,15 @@ function numbers(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 Write a function that **prints** the **first** `k` and the **last** `k` elements of an **array of numbers**. 
 
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
+The **input** comes as an **array** of integers. 
 
 The **first element** represents the number `k`. 
 
@@ -85,13 +90,13 @@ On the **second line**, print the **last k** elements, separated by **space*
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['2', '7', '8', '9']` | 7 8 |
+|`[2, 7, 8, 9]` | 7 8 |
 | | 8 9 |
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '6', '7', '8', '9']` | 6 7 8 |
+|`[3, 6, 7, 8, 9]` | 6 7 8 |
 | | 7 8 9 |
 
 # Hints
@@ -101,6 +106,31 @@ On the **second line**, print the **last k** elements, separated by **space*
 
 [/task-description]
 [tests]
+[test]
+[input]
+2
+7
+8
+9
+[/input]
+[output]
+7 8
+8 9
+[/output]
+[/test]
+[test]
+[input]
+3
+6
+7
+8
+9
+[/input]
+[output]
+6 7 8
+7 8 9
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -199,10 +229,15 @@ function numbers(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 Write a function that **prints** the **first** `k` and the **last** `k` elements of an **array of numbers**. 
 
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
+The **input** comes as an **array** of integers. 
 
 The **first element** represents the number `k`. 
 
@@ -219,13 +254,13 @@ On the **second line**, print the **last k** elements, separated by **space*
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['2', '7', '8', '9']` | 7 8 |
+|`[2, 7, 8, 9]` | 7 8 |
 | | 8 9 |
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['3', '6', '7', '8', '9']` | 6 7 8 |
+|`[3, 6, 7, 8, 9]` | 6 7 8 |
 | | 7 8 9 |
 
 # Hints
@@ -235,6 +270,31 @@ On the **second line**, print the **last k** elements, separated by **space*
 
 [/task-description]
 [tests]
+[test]
+[input]
+2
+7
+8
+9
+[/input]
+[output]
+7 8
+8 9
+[/output]
+[/test]
+[test]
+[input]
+3
+6
+7
+8
+9
+[/input]
+[output]
+6 7 8
+7 8 9
+[/output]
+[/test]
 [test]
 [input]
 4
@@ -328,11 +388,18 @@ On the **second line**, print the **last k** elements, separated by **space*
 [code-task title="Last K Numbers Sequence" taskId="fundamentals-js-arrays-advanced-lab-Last-K-Numbers-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbers(arr){
+function numbers(n, k){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]));
+}
+```
+[/code-adapter]
 [task-description]
 You are given **two integers**: `n` and `k`. 
 
@@ -342,7 +409,7 @@ Write a **function** that **generates and prints** the following sequence:
 - Every **following element** is **equal to the sum** of the previous `k` elements. 
 - The **length** of the **sequence** is `n` elements.
 	
-The **input** comes as an **array** of two `string` elements, holding **numbers**. 
+The **input** comes as two **numbers**.
 
 The **first element** represents the number `n`, and the second – the number `k`.
 
@@ -351,8 +418,8 @@ The output is **printed** to the console on a **single line**, separated by **sp
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['6', '3']` | 1 1 2 4 7 13 |
-|`['8', '2']` | 1 1 2 3 5 8 13 21 |
+|6, 3| 1 1 2 4 7 13 |
+|8, 2 | 1 1 2 3 5 8 13 21 |
 
 
 # Hints
@@ -367,6 +434,24 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+6
+3
+[/input]
+[output]
+1 1 2 4 7 13
+[/output]
+[/test]
+[test open]
+[input]
+8
+2
+[/input]
+[output]
+1 1 2 3 5 8 13 21
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -429,11 +514,18 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 [code-task title="Last K Numbers Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function numbers(arr){
+function numbers(n, k){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]));
+}
+```
+[/code-adapter]
 [task-description]
 You are given **two integers**: `n` and `k`. 
 
@@ -442,19 +534,18 @@ Write a **function** that **generates and prints** the following sequence:
 - The **first element** is `1`.
 - Every **following element** is **equal to the sum** of the previous `k` elements. 
 - The **length** of the **sequence** is `n` elements.
-	
-The **input** comes as an **array** of two `string` elements, holding **numbers**. 
+
+The **input** comes as two **numbers**.
 
 The **first element** represents the number `n`, and the second – the number `k`.
 
 The output is **printed** to the console on a **single line**, separated by **space**.
 
-
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['6', '3']` | 1 1 2 4 7 13 |
-|`['8', '2']` | 1 1 2 3 5 8 13 21 |
+|6, 3| 1 1 2 4 7 13 |
+|8, 2 | 1 1 2 3 5 8 13 21 |
 
 
 # Hints
@@ -469,6 +560,24 @@ The **fifth element** is equal to the sum of the **second, third and fourth (1, 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+6
+3
+[/input]
+[output]
+1 1 2 4 7 13
+[/output]
+[/test]
+[test open]
+[input]
+8
+2
+[/input]
+[output]
+1 1 2 3 5 8 13 21
+[/output]
+[/test]
 [test]
 [input]
 3

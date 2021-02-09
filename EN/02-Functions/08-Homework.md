@@ -27,8 +27,8 @@ The function should **return a new string** (the old one repeated **n** times).
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'abc', '3'| abcabcabc |
-|'String', '2' | StringString |
+|'abc', 3| abcabcabc |
+|'String', 2 | StringString |
 
 
 [/task-description]
@@ -498,7 +498,7 @@ b c
 :
 [/input]
 [output]
-\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
 [/output]
 [/test]
 [test open]
@@ -507,7 +507,7 @@ C
 \#
 [/input]
 [output]
-\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B
 [/output]
 [/test]
 [test]
@@ -525,7 +525,7 @@ F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l 
 \}
 [/input]
 [output]
-" \# \\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
+\" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
 [/output]
 [/test]
 [test]
@@ -543,7 +543,7 @@ F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l 
 \#
 [/input]
 [output]
-\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9
+\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
 [/output]
 [/test]
 [test]
@@ -975,7 +975,7 @@ Password is valid
 [code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function мatrix(input){
+function matrix(input){
   // Write your code here
 }
 ```

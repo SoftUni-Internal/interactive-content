@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489372690/1982a43d5b" default /]
-[stream language="RO" videoId="489372690/1982a43d5b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 # In this lesson you learned:
