@@ -1,5 +1,9 @@
-[slide]
 # Archery Tournament BG
+
+[slide hideTitle]
+
+# Archery BG var
+
 [code-task title="Archery Tournament BG" taskId="Archery-Tournament-BG" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript-code]
 ```
