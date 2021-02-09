@@ -35,7 +35,7 @@ class Team {
   }
 } 
 ```
-- In this case **getter is like setter too**
+- When we work with reference types, getters are quite tricky. When we return our object we give a reference to it's memory, that is why with this reference we can change the original memory of the object, thus changing the objects itself. 
 [/slide]
 
 [slide hideTitle]
@@ -65,7 +65,7 @@ What happens is that although we do not have a setter, the list is still muttabl
 
 # Imutable Fields
 
-- For securing our collection we can return `Collections.unmodifiableList()`:
+- For securing our collection we can return `Collections.unmodifiableList()`, this encloses our reference type and does not permit any change:
 
 ```java
 class Team {
@@ -104,7 +104,7 @@ Create a **Team** class.
 
 Add to this team all the people you receive. 
 
-All person **younger** than 40 go in **first team**, others go in **reserve team**.
+All person **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
 
 At the end print first and reserve team sizes.
 
@@ -1211,7 +1211,7 @@ Create a **Team** class.
 
 Add to this team all the people you receive. 
 
-All person **younger** than 40 go in **first team**, others go in **reserve team**.
+All person **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
 
 At the end print first and reserve team sizes.
 

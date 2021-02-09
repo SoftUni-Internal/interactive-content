@@ -9,6 +9,13 @@
 
 The idea behind using **Inheritance** is that you can build classes upon already existing classes, thus reusing code and one of the golden rules in programming is Less code, fewer bugs.
 
+```java
+public class Mammal {...}
+//Mammal is the parent class, this class passes its members to its children
+public class Cow extends Mammal {...}
+//Cow is the child class, this class inherits the members of its parent class.
+```
+
 [/slide]
 
 
@@ -90,6 +97,8 @@ class Employee extends Person { … }
 The **Derived** classes can inherit and call all the **non-private** members of the class.
 
 If a unit is declared as private, the memory for it is declared as well when we create the class, but we can not call it through our **Derived** class.
+
+
 
 [image assetsSrc="inheritance-example(5).png" /]
 

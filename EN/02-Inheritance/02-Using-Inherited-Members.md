@@ -91,9 +91,9 @@ That is because all the members of the **Parent** are declared as well as all th
 # Inheritance has a transitive relation
 
 ```java
-class Person { … }                              //Base class with some functionallity.
-class Student extends Person { … }              //Student will get all the functionallity from Person and add more to it.
-class CollegeStudent extends Student { … }      //CollegeStudent will inherit all the functionallity from Student and from Person.
+class Person { … }                          //Base class with some members.
+class Student extends Person { … }          //Student will get all members from Person and adds more.
+class CollegeStudent extends Student { … }  //CollegeStudent will inherit all members both from Student and Person.
 ```
 
 That's what transitive relation is, a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
@@ -106,6 +106,14 @@ That's what transitive relation is, a **Subclass** gets all the functionality fr
 # Multiple Inheritance
 
 **In Java multiple inheritances is now allowed**
+
+```java
+public class Person {...}
+
+public class CollegeStudent {...}
+
+public class Student extends Person, CollegeStudent // NOT ALLOWED!
+```
 
 Instead, if you need one class to be from few families you can implement many **interfaces** on a single class.
 
@@ -138,7 +146,7 @@ class Person {
 class Employee extends Person { 
   public void fire(String reasons) { 
     System.out.println(
-        super.name +                        //We use the `super` keyword to access the Superclass/Inherited class members.
+        super.name +     //We use the `super` keyword to access the Superclass/Inherited class members.
         " got fired because " + reasons);
   }
 }

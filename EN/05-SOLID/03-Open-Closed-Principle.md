@@ -89,7 +89,8 @@ public interface Shape {
 }
 ```
 
-- By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method.
+By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method.
+
 - **Circle** class:
 
 ```java
@@ -140,7 +141,7 @@ public class Square implements Shape {
 
 ```
 
-- In the end, our **CalculateArea** class should look like this:
+In the end, our **CalculateArea** class should look like this:
 
 ```java
 public class CalculateArea {
@@ -170,10 +171,14 @@ As well as applying it **reduces the risk of introducing new bugs** to existing 
 Not following the Open-Close Principle will lead to problems.
 
 **- Cascading changes through modules**
-  If we change the code in our class, everybody that uses this class will change their behaviour implicitly, it does not matter if the clients are  inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
+  If we change the code in our class, everybody that uses this class will change their behaviour implicitly.
+  
+ It does not matter if the clients are  inheriting or declaring the class's object, changes to the existing code will lead to cascading changes down the line.
 
 **- Re-testing**
-  Our code needs testing to validate it's correctness, this is an inevitable part of our jobs, imagine if every time we want to add new feature and do it throgh changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
+  Our code needs testing to validate it's correctness, this is an inevitable part of our jobs.
+  I
+  magine if every time we want to add new feature and do it throgh changing our old code, we have to go through all the tests we have written for it and refactor them to make them valid again.
 
 **- Logic depends on conditional statements**
   Some parts of our code depened on conditional statements logic, changing our old code may brake the conditional statements, changing the behaviour of our program, which may lead to bugs which will be hard to find.
@@ -186,17 +191,16 @@ Not following the Open-Close Principle will lead to problems.
 
 
 - Inheritance / Abstraction
-    As we did in the example we can level up an abstraction, giving a solution to our current problem, this way we will be able to keep the **OCP**
+As we did in the example we canlevel up an abstraction, giving asolution to our current problem,this way we will be able to keepthe **OCP**
     
 - Design Patterns
-    When we need to solve any design problems, we can look up the common design patterns.
+When we need to solve any designproblems, we can look up thecommon design patterns.
 
-    They have tested solutions, which give us an abstract way to solve a given problem.
-
-    The ones that can help us keep the **Open-Close-Principle** are:
-    - Template Method Pattern
-    - Strategy Pattern
-    - Decorator Pattern
+They have tested solutions, whichgive us an abstract way to solvea given problem.
+The ones that can help us keep the **Open-Close-Principle** are:
+   - Template Method Pattern
+   - Strategy Pattern
+   - Decorator Pattern
 
 Later in the course, we will learn about the different design patterns.
 

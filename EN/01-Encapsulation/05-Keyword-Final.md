@@ -24,6 +24,8 @@ public class Mammal extends Animal {
 
 **Final variable value can not be changed once it is set:**
 
+When we declare a field as `final` it is like creating a `constant` but we can give it value in the constructor.
+
 ```java
 private final String name;
 private final List<Person> firstTeam;
