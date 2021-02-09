@@ -1,24 +1,24 @@
 # Arrow Functions
 
-[slide]
-# Arrow Functions
+[slide hideTitle]
+# What are Arrow Functions?
 
 [vimeo-video]
 [stream language="EN" videoId="489373607/d385422a18" default /]
 [stream language="RO" videoId="489373607/d385422a18"  /]
 [/video-vimeo]
 
-Arrow functions `=>` were introduced with [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript). 
+Arrow functions `=>` were introduced with [ECMAScript 6](https://en.wikipedia.org/wiki/ECMAScript) in 2015. 
 
-With the new syntax we can often create more concise code. 
+With the new syntax we can often create more **concise** code. 
 
 In some cases, translating multi-line callbacks to one-liners, thanks to features like the implicit return. 
 
 Arrow functions cannot replace standard functions everywhere. 
 
-There are some contexts where we cannot use them, and we will see why 
+There are some contexts in which we cannot use them, and we will see why.
 
-Example:
+## Examples
 
 - Function syntax:
 
