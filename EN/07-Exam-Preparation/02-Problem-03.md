@@ -30,7 +30,7 @@ There are also promotional discounts available for two of the movies:
 - If the chosen movie is `Jumanji` and exactly 2 tickets are bought, there is `15%` discount for two.
 
 ## Input
-You receive 3 elements from the console:
+As input you will receive 3 console elements:
 
 - First element: movie - string: `John Wick`, `Star Wars` or `Jumanji`
 
