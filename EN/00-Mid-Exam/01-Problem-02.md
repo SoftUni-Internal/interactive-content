@@ -16,9 +16,9 @@ function solve(input) {
 
 # Description
 
-On the first line, you will receive a String, representing a bookshelf in the library. Every book title is separated by `&`.
+You will receive a String, representing a bookshelf in the library. Every book title is separated by `&`.
 
-On the next lines until you receive `Done` as a command, you will be receiving the following commands:
+Until you receive `Done` as a command, you will be receiving the following commands:
 
 * Command `Add Book | {book name}`: 
 
@@ -47,9 +47,9 @@ If the index is invalid, ignore the command.
 
 ## Input
 
-* On the first line, you will receive a string, containing book titles, separated by `&`.
+* You will receive a string, containing book titles, separated by `&`.
 
-* On the next lines, until you receive `Done`, you will get commands in the format described above.
+* Until you receive `Done`, you will get commands in the format described above.
 
 
 ## Output

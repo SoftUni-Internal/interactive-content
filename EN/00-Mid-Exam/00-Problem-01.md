@@ -54,9 +54,9 @@ If the start index, specified in any command is out of range, to begin with, Pet
 
 ## Input
 
-* On the first line, you will receive integers separated by `|` representing the targets in the archery range.
+* You will receive integers separated by `|` representing the targets in the archery range.
 
-* On the next lines, until the `Game over` command is given you will receive commands in the format described above.
+* Until the `Game over` command is given you will receive commands in the format described above.
 
 ## Output
 
