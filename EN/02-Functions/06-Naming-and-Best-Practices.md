@@ -276,7 +276,7 @@ subtract
 [code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function simpleCalculator(input){
+function simpleCalculator(firstNumber, secondNumber, operator){
   // Write your code here
 }
 ```

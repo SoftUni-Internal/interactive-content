@@ -27,8 +27,8 @@ The function should **return a new string** (the old one repeated **n** times).
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'abc', '3'| abcabcabc |
-|'String', '2' | StringString |
+|'abc', 3| abcabcabc |
+|'String', 2 | StringString |
 
 
 [/task-description]
