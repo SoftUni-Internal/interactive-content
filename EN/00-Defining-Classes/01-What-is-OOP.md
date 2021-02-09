@@ -1,6 +1,6 @@
 [slide]
 
-# What is OOP?
+# What is OOP
 
 - **OOP** stands for **Objected-Oriented Programming**
     - It is a programming paradigm based on the concept of **"objects"**
@@ -27,7 +27,7 @@
 
 [slide]
 
-# When and why should we use OOP?
+# When and Why Should We Use OOP
 
 ## When?
 
