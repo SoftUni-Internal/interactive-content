@@ -149,7 +149,7 @@ The **output** should be the **value, which is returned from the function**.
 [test open]
 [input]
 5
-1
+10
 [/input]
 [output]
 15
