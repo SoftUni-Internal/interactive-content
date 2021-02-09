@@ -40,7 +40,7 @@ Basically, these methods modify the array, and we do not need to write a whole b
 
 JavaScript has **built-in methods** for adding and removing elements both from the end and the beginning of an array.
 
-## Adding an Element at the End of an Array
+- **Adding an Element at the End of an Array**
 
 The `array.push()` method is used to **add a new element at the end** of the array.
 
@@ -52,7 +52,7 @@ array.push(5);
 console.log(array);
 ```
 
-## Removing an Element at the End
+- **Removing an Element at the End**
 
 The `array.pop()` method is used to **obtain and remove the element at the end** of the array.
 
@@ -77,7 +77,7 @@ console.log(number);
 [stream language="RO" videoId="489374731/d3be54a729"  /]
 [/video-vimeo]
 
-## Adding an Element at the Beginning of an Array
+- **Adding an Element at the Beginning of an Array**
 
 The `array.unshift()` method is used to **add a new element to the beginning** of an array.
 
@@ -89,7 +89,7 @@ array.unshift(0);
 console.log(array);
 ```
 
-## Removing an Element at the Beginning
+- **Removing an Element at the Beginning**
 
 The `array.shift()` method is used to **obtain and remove an element from the beginning** of the array.
 
@@ -120,6 +120,7 @@ function sumFirstLast(input){
 ```
 [/code-editor]
 [task-description]
+
 Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array. 
 
 The **input** comes as an **array** of `string` elements, holding **numbers**. 
@@ -134,6 +135,25 @@ The **output** should be the **value, which is returned from the function**.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+20
+30
+40
+[/input]
+[output]
+60
+[/output]
+[/test]
+[test open]
+[input]
+5
+10
+[/input]
+[output]
+15
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -224,6 +244,25 @@ The **output** should be the **value, which is returned from the function**.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+20
+30
+40
+[/input]
+[output]
+60
+[/output]
+[/test]
+[test open]
+[input]
+5
+10
+[/input]
+[output]
+15
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -386,7 +425,7 @@ The **output** has to be **printed to the console**, each element on a **new
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 \-2
 8
@@ -402,6 +441,20 @@ The **output** has to be **printed to the console**, each element on a **new
 99
 100
 11
+[/output]
+[/test]
+[test open]
+[input]
+3
+\-2
+0
+\-1
+[/input]
+[output]
+\-1
+\-2
+3
+0 
 [/output]
 [/test]
 [test]
@@ -550,7 +603,7 @@ The **output** has to be **printed to the console**, each element on a **new
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 \-2
 8
@@ -566,6 +619,20 @@ The **output** has to be **printed to the console**, each element on a **new
 99
 100
 11
+[/output]
+[/test]
+[test open]
+[input]
+3
+\-2
+0
+\-1
+[/input]
+[output]
+\-1
+\-2
+3
+0 
 [/output]
 [/test]
 [test]
