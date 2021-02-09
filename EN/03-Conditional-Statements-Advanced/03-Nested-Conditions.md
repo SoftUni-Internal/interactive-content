@@ -126,7 +126,7 @@ Weekend
 
 [slide hideTitle]
 # Solution: Marketplace
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
