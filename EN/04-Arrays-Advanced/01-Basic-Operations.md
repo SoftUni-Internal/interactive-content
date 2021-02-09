@@ -134,6 +134,7 @@ The **output** should be the **value, which is returned from the function**.
 |`['5', '10']` | 15 |
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -148,7 +149,7 @@ The **output** should be the **value, which is returned from the function**.
 [test open]
 [input]
 5
-10
+1
 [/input]
 [output]
 15
@@ -208,9 +209,7 @@ The **output** should be the **value, which is returned from the function**.
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -243,6 +242,7 @@ The **output** should be the **value, which is returned from the function**.
 |`['5', '10']` | 15 |
 
 [/task-description]
+[code-io /]
 [tests]
 [test open]
 [input]
@@ -257,7 +257,7 @@ The **output** should be the **value, which is returned from the function**.
 [test open]
 [input]
 5
-10
+1
 [/input]
 [output]
 15
@@ -317,9 +317,7 @@ The **output** should be the **value, which is returned from the function**.
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
