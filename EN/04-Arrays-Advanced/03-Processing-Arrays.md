@@ -494,7 +494,7 @@ The **input** comes as an **array** of **numbers**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[30, 15, 50, 5]` | 50 30 |
+|`[30, 15, 50, 5]` | 5 15 |
 |`[3, 0, 10, 4, 7, 3]` | 0 3 |
 
 
@@ -522,7 +522,7 @@ let sortedInAscending = arr.sort((a, b) =>{
 5
 [/input]
 [output]
-50 30
+5 15
 [/output]
 [/test]
 [test open]

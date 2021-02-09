@@ -15,7 +15,7 @@ let numbers = [3, 8, 15, 22];
 
 numbers.push(30); // Appends 30 to the array
 
-console.log(array);
+console.log(numbers);
 ```
 
 - We can add, remove, or insert elements at runtime
@@ -23,7 +23,7 @@ console.log(array);
 ```js live
 let people = ['Paul', 'Mary', 'John'];
 
-let firstEl = array.shift(); // Removing the element at index zero
+let firstEl = people.shift(); // Removing the element at index zero
 
 console.log(people);
 console.log(firstEl);
