@@ -19,10 +19,7 @@ We can use variables to store all kind of data we need.
 [slide hideTitle]
 # Definition of Variables
 
-[vimeo-video]
-[stream language="EN" videoId="486854872/71ae21e1d5" default /]
-[stream language="RO" videoId="486854872/71ae21e1d5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-5-6-What-are-variables-and-how-are-they-used-in-computing-New-Link-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming, each **variable** stores a certain value of a particular type. 
 
