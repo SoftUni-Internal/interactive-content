@@ -1,7 +1,7 @@
 # Definition
 
 [slide]
-# What Are Arrays?
+# What Are Arrays
 
 [vimeo-video]
 [stream language="EN" videoId="489372251/f2e6e4672e" default /]
