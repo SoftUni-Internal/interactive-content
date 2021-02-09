@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Array Methods
 
-[vimeo-video]
-[stream language="EN" videoId="489372517/068155927c" default /]
-[stream language="RO" videoId="489372517/068155927c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-13-14-Array-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Some operations that work with Arrays could also function with Array-like values. 
 
@@ -45,10 +42,7 @@ console.log(arr);
 [slide hideTitle]
 # Usage
 
-[vimeo-video]
-[stream language="EN" videoId="489372490/1ebd778a3f" default /]
-[stream language="RO" videoId="489372490/1ebd778a3f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-15-Usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `includes()` - Returns `true` if the array contains the value placed in the brackets  searchElement and `false` otherwise:
 

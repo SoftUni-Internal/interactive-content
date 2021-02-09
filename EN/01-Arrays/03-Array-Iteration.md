@@ -59,10 +59,7 @@ for(let num of arr){
 [slide hideTitle]
 # Problem: Reverse an Array of Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489372548/0e9743357b" default /]
-[stream language="RO" videoId="489372548/0e9743357b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-18-Problem-Reverse-an-array-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Numbers" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -247,10 +244,7 @@ Where `n` is the  first element of the array.
 [slide hideTitle]
 # Solution: Reverse an Array of Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489372607/8699baf857" default /]
-[stream language="RO" videoId="489372607/8699baf857"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-18-Solution-Reverse-an-array-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -433,10 +427,7 @@ Where `n` is the  first element of the array.
 [slide hideTitle]
 # Problem: Reverse an Array of Strings
 
-[vimeo-video]
-[stream language="EN" videoId="489372618/881c97fdd1" default /]
-[stream language="RO" videoId="489372618/881c97fdd1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-21-Problem-Reverse-array-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Reverse an Array of Strings" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Strings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
