@@ -20,9 +20,9 @@ Peter the archer is going to participate in a tournament.
 
 Your task is to help him calculate his points.
 
-On the first line, you will receive an array of integers separated by `|`, representing the targets in an archery range.
+You will receive an array of integers separated by `|`, representing the targets in an archery range.
 
-On the next lines until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
+Next, until you receive the Game over command, you have to process commands issued by the Judge of the tournament:
 
 * Command `Shoot Left@{start index}@{length}`:
 
