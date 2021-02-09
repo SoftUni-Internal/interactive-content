@@ -1,6 +1,6 @@
 # Returning Values
 
-[slide]
+[slide hideTitle]
 # The Return Statement
 
 [vimeo-video]
@@ -20,7 +20,7 @@ function readFullName(firstName, lastName) {
   return firstName + " " + lastName;
 }
 
-const fullName = readFullName("John","Smith");
+const fullName = readFullName("John", "Smith");
 console.log(fullName)
 ```
 
@@ -30,7 +30,7 @@ If you try to use it outside of a function, **it will throw an error.**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Using the Return Values
 
 [vimeo-video]
@@ -61,7 +61,7 @@ multiply(getMax(5,10), 20);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Returning Values: Examples
 
 [vimeo-video]
@@ -70,7 +70,7 @@ multiply(getMax(5,10), 20);
 [/video-vimeo]
 
 
-- Check if **array index** is valid:
+- Check if an **array index** is valid:
 
 ``` js live
 function isValid(index, arr) {
@@ -84,7 +84,7 @@ function isValid(index, arr) {
 console.log(isValid(3, [1,2,3,4,5]));
 ```
 
-When working with arrays it is often used to check if an **index is valid.**
+When working with arrays such function is often used to check if an **index is valid.**
 
 The result of this function is **boolean**, it will return true if the index is inside of the boundary of the array, and `false` if it is not.
 
@@ -99,8 +99,9 @@ console.log(pass(5.32))
 ```
 
 [/slide]
-[slide]
-# Return statement Demo
+
+[slide hideTitle]
+# Return Statement Demo
 
 [vimeo-video]
 [stream language="EN" videoId="489373875/3db9f493f6" default /]
@@ -110,7 +111,7 @@ console.log(pass(5.32))
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Nested Functions
 
 [vimeo-video]
@@ -122,7 +123,7 @@ The nested function operates within the scope of the outer function.
 
 It can access the outer function's variables and arguments. 
 
-**BUT the outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
+However, **the outer function does not have access to the inner function's variables**, nor does the calling application have access to the inner function.
 
 [image assetsSrc="Nested-Functions.png" /]
 
@@ -148,6 +149,6 @@ In this example, we create a function `swapElements()`, which receives one argum
 
 In the function body, we loop through the array and invoke another function `swap()`, to which we pass three arguments. 
 
-This function does the actual swapping of the array's elements. 
+This function does the **actual swapping** of the array's elements. 
 
 [/slide]
