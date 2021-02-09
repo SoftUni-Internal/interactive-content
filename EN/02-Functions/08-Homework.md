@@ -5,11 +5,18 @@
 [code-task title="Repeat String" taskId="js-fundamentals-1-Functions-Repeat-String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function repeatString(input){
+function repeatString(str, n){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+   return code(input[0], Number(input[1]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -20,12 +27,31 @@ The function should **return a new string** (the old one repeated **n** times).
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['abc','3']`| abcabcabc |
-|`['String','2']`| StringString |
+|'abc', '3'| abcabcabc |
+|'String', '2' | StringString |
 
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+abc
+3
+[/input]
+[output]
+abcabcabc
+[/output]
+[/test]
+[test open]
+[input]
+String
+2
+[/input]
+[output]
+StringString
+[/output]
+[/test]
 [test]
 [input]
 ani
@@ -71,31 +97,28 @@ ivan
 ivanivan
 [/output]
 [/test]
-[test]
-[input]
-String
-2
-[/input]
-[output]
-StringString
-[/output]
-[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
+
 
 [slide hideTitle]
 # Problem: Smallest of Three Numbers
 [code-task title="Smallest of Three Numbers" taskId="js-fundamentals-1-Functions-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function smallestNumbers(input){
+function smallestNumbers(firstNumber, secondNumber, thirdNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -106,12 +129,43 @@ Use an **appropriate name** for the function.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['2','5', '3']`| 2 |
-|`['600','342', '123']`| 123 |
-|`['25','21', '4']`| 4 |
+|2, 5, 3| 2 |
+|600, 342, 123| 123 |
+|25, 21, 4| 4 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+2
+5
+3
+[/input]
+[output]
+2
+[/output]
+[/test]
+[test open]
+[input]
+600
+342
+123
+[/input]
+[output]
+123
+[/output]
+[/test]
+[test open]
+[input]
+25
+21
+4
+[/input]
+[output]
+4
+[/output]
+[/test]
 [test]
 [input]
 25
@@ -172,10 +226,48 @@ Use an **appropriate name** for the function.
 892651240
 [/output]
 [/test]
+[test]
+[input]
+1325565386
+175816470
+1646690050
+[/input]
+[output]
+175816470
+[/output]
+[/test]
+[test]
+[input]
+1897368806
+101858759
+89570573
+[/input]
+[output]
+89570573
+[/output]
+[/test]
+[test]
+[input]
+851370685
+108554923
+110531645
+[/input]
+[output]
+108554923
+[/output]
+[/test]
+[test]
+[input]
+1315489464
+15286437
+2013240737
+[/input]
+[output]
+15286437
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -183,11 +275,18 @@ Use an **appropriate name** for the function.
 [code-task title="Add and Subtract" taskId="js-fundamentals-1-Functions-Add-and-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function addSubtract(input){
+function addSubtract(firstNumber, secondNumber, thirdNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -199,12 +298,43 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['23','6', '10']`| 29 |
-|`['1','17', '30']`| \-12 |
-|`['42','58', '100']`| 0 |
+|23, 6, 10| 29 |
+|1, 17, 30| \-12 |
+|42, 58, 100| 0 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+23
+6
+10
+[/input]
+[output]
+19
+[/output]
+[/test]
+[test open]
+[input]
+1
+17
+30
+[/input]
+[output]
+-12
+[/output]
+[/test]
+[test open]
+[input]
+42 
+58
+100
+[/input]
+[output]
+0
+[/output]
+[/test]
 [test]
 [input]
 775
@@ -222,7 +352,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 8783
 [/input]
 [output]
-\-2694
+-2694
 [/output]
 [/test]
 [test]
@@ -242,7 +372,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 5695
 [/input]
 [output]
-\-2359
+-2359
 [/output]
 [/test]
 [test]
@@ -252,7 +382,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 8565
 [/input]
 [output]
-\-2050
+-2050
 [/output]
 [/test]
 [test]
@@ -282,7 +412,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 7681
 [/input]
 [output]
-\-5594
+-5594
 [/output]
 [/test]
 [test]
@@ -292,7 +422,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 9102
 [/input]
 [output]
-\-180
+-180
 [/output]
 [/test]
 [test]
@@ -316,9 +446,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -326,11 +454,18 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 [code-task title="Characters in Range" taskId="js-fundamentals-1-Functions-Characters-in-Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function charactersInRange(input){
+function charactersInRange(firstChar, secondChar){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code(input[0], input[1]);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -341,58 +476,14 @@ Keep in mind that the **second character's ASCII code** might be **before the fi
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['a','b']`| b c |
-|`['#',':']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
-|`['C','#']`| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
+|'a', 'b'| b c |
+|'#', ':'| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 |
+|'C', '#'| \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B |
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
-[input]
-t
-E
-[/input]
-[output]
-F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s
-[/output]
-[/test]
-[test]
-[input]
-\!
-\}
-[/input]
-[output]
-\" \# \$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ _ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
-[/output]
-[/test]
-[test]
-[input]
-\|
-\$
-[/input]
-[output]
-\% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9 \: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
-[/output]
-[/test]
-[test]
-[input]
-\:
-\#
-[/input]
-[output]
-\$ \% \& \' \( \) \* \+ \, \- \. \/ 0 1 2 3 4 5 6 7 8 9
-[/output]
-[/test]
-[test]
-[input]
-m
-9
-[/input]
-[output]
-\: \; \< \= \> \? \@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \\ \] \^ \_ \` a b c d e f g h i j k l
-[/output]
-[/test]
-[test]
+[test open]
 [input]
 a
 d
@@ -401,10 +492,71 @@ d
 b c
 [/output]
 [/test]
+[test open]
+[input]
+\#
+:
+[/input]
+[output]
+\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9
+[/output]
+[/test]
+[test open]
+[input]
+C
+\#
+[/input]
+[output]
+\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B
+[/output]
+[/test]
+[test]
+[input]
+t
+E
+[/input]
+[output]
+F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s
+[/output]
+[/test]
+[test]
+[input]
+!
+\}
+[/input]
+[output]
+" \# \\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z \{ \|
+[/output]
+[/test]
+[test]
+[input]
+\|
+\\$
+[/input]
+[output]
+% & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9 : ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z \{
+[/output]
+[/test]
+[test]
+[input]
+:
+\#
+[/input]
+[output]
+\\$ % & ' ( ) \* + , - . / 0 1 2 3 4 5 6 7 8 9
+[/output]
+[/test]
+[test]
+[input]
+m
+9
+[/input]
+[output]
+: ; \< = \> ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z \[ \ \] ^ _ ` a b c d e f g h i j k l
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -417,6 +569,11 @@ function oddEvenSum(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(Number(i[0]))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -427,11 +584,28 @@ You have to write a function, that returns the **sum** of **all even** and **all
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['1000435']`|  Odd sum = 9, Even sum = 4 |
-|`['3495892137259234']`| Odd sum = 54, Even sum = 22 |
+|1000435|  Odd sum = 9, Even sum = 4 |
+|3495892137259234| Odd sum = 54, Even sum = 22 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+1000435
+[/input]
+[output]
+Odd sum = 9, Even sum = 4
+[/output]
+[/test]
+[test open]
+[input]
+3495892137259234
+[/input]
+[output]
+Odd sum = 54, Even sum = 22
+[/output]
+[/test]
 [test]
 [input]
 527249158
@@ -473,9 +647,7 @@ Odd sum = 30, Even sum = 8
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -488,6 +660,13 @@ function palindrome(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code(input.map(Number));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -498,20 +677,49 @@ Write a function which receives an **array of positive integers** and checks if 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['123','323','421','121']`|  false |
+|`[123, 323, 421, 121]`|  false |
 ||true|
 ||false|
 ||true|
 
 | **Input** | **Output** |
 | --- | --- |
-|`['32','2','232','1010']`|  false |
+|`[32, 2, 232, 1010]`|  false |
 ||true|
 ||true|
 ||false|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+123
+323
+421
+121
+[/input]
+[output]
+false
+true
+false
+true
+[/output]
+[/test]
+[test open]
+[input]
+32
+2
+232
+1010
+[/input]
+[output]
+false
+true
+true
+false
+[/output]
+[/test]
 [test]
 [input]
 121
@@ -615,9 +823,7 @@ true
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -630,6 +836,13 @@ function passwordValidator(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code(input[0]);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -652,20 +865,47 @@ If it is **NOT** valid, for every unfulfilled rule print a message:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['logIn']`| Password must be between 6 and 10 characters |
+|'logIn'| Password must be between 6 and 10 characters |
 || Password must have at least 2 digits |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['MyPass123']`| Password is valid |
+|'MyPass123'| Password is valid |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['Pa$s$s']`| Password must consist only of letters and digits |
+|'Pa$s$s'| Password must consist only of letters and digits |
 || Password must have at least 2 digits|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+logIn
+[/input]
+[output]
+Password must be between 6 and 10 characters
+Password must have at least 2 digits
+[/output]
+[/test]
+[test open]
+[input]
+MyPass123
+[/input]
+[output]
+Password is valid
+[/output]
+[/test]
+[test open]
+[input]
+Pa\\$s\\$s
+[/input]
+[output]
+Password must consist only of letters and digits
+Password must have at least 2 digits
+[/output]
+[/test]
 [test]
 [input]
 Acer
@@ -693,7 +933,7 @@ Password must consist only of letters and digits
 [/test]
 [test]
 [input]
-gas\%2
+gas%2
 [/input]
 [output]
 Password must be between 6 and 10 characters
@@ -703,11 +943,19 @@ Password must have at least 2 digits
 [/test]
 [test]
 [input]
-\$\$\$\$\$\$\$
+\\$\\$\\$\\$\\$\\$\\$
 [/input]
 [output]
 Password must consist only of letters and digits
 Password must have at least 2 digits
+[/output]
+[/test]
+[test]
+[input]
+Pesho189
+[/input]
+[output]
+Password is valid
 [/output]
 [/test]
 [test]
@@ -719,9 +967,7 @@ Password is valid
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -734,6 +980,11 @@ function мatrix(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(+i[0])}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -742,19 +993,30 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['3']`| 3 3 3|
+|3| 3 3 3|
 || 3 3 3 |
 || 3 3 3 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['2']`| 2 2 |
+|2| 2 2 |
 || 2 2 |
 
 
 [/task-description]
+[code-io /]
 [tests]
-[test]
+[test open]
+[input]
+3
+[/input]
+[output]
+3 3 3
+3 3 3
+3 3 3
+[/output]
+[/test]
+[test open]
 [input]
 7
 [/input]
@@ -766,6 +1028,15 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 7 7 7 7 7 7 7
 7 7 7 7 7 7 7
 7 7 7 7 7 7 7
+[/output]
+[/test]
+[test open]
+[input]
+2
+[/input]
+[output]
+2 2
+2 2
 [/output]
 [/test]
 [test]
@@ -870,9 +1141,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -880,11 +1149,18 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 [code-task title="Perfect Number" taskId="js-fundamentals-1-Functions-Perfect-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function perfectNumber (input){
+function perfectNumber(input){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code(+input[0]);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -897,9 +1173,9 @@ The sum of a number's positive divisors excluding the number itself is also know
 # Example
 | Input   | Output | Comments   |
 | :---:       |    :----:   |   :---:     |
-|`['6']`|We have a perfect number!| `1 + 2 + 3`|
-|`['28']`| We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
-|`['1236498']`|It's not so perfect.||
+|6|We have a perfect number!| `1 + 2 + 3`|
+|28| We have a perfect number!|`1 + 2 + 4 + 7 + 14`|
+|1236498|It's not so perfect.||
 
 ## Hint
 
@@ -910,7 +1186,32 @@ Equivalently, a perfect number is a number that is **half the sum** of all of it
 Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_number).
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+6
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test open]
+[input]
+28
+[/input]
+[output]
+We have a perfect number!
+[/output]
+[/test]
+[test open]
+[input]
+1236498
+[/input]
+[output]
+It's not so perfect.
+[/output]
+[/test]
 [test]
 [input]
 7
@@ -960,7 +1261,5 @@ We have a perfect number!
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]

@@ -204,6 +204,13 @@ function grades(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
 
@@ -219,12 +226,37 @@ Write a function that receives a grade between `2.00` and `6.00` and prints the 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`3.33` | Poor |
-|`4.50` | Very good |
-|`2.99` | Fail |
+|3.33 | Poor |
+|4.50 | Very good |
+|2.99 | Fail |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+3.33
+[/input]
+[output]
+Poor
+[/output]
+[/test]
+[test open]
+[input]
+4.50
+[/input]
+[output]
+Very good
+[/output]
+[/test]
+[test open]
+[input]
+2.99
+[/input]
+[output]
+Fail
+[/output]
+[/test]
 [test]
 [input]
 4.49
@@ -266,9 +298,7 @@ Fail
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -288,6 +318,13 @@ function grades(grade){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 Write a function that receives a grade between `2.00` and `6.00` and prints the corresponding grade in words.
 
@@ -303,12 +340,37 @@ Write a function that receives a grade between `2.00` and `6.00` and prints the 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`3.33` | Poor |
-|`4.50` | Very good |
-|`2.99` | Fail |
+|3.33 | Poor |
+|4.50 | Very good |
+|2.99 | Fail |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+3.33
+[/input]
+[output]
+Poor
+[/output]
+[/test]
+[test open]
+[input]
+4.50
+[/input]
+[output]
+Very good
+[/output]
+[/test]
+[test open]
+[input]
+2.99
+[/input]
+[output]
+Fail
+[/output]
+[/test]
 [test]
 [input]
 4.49
@@ -350,9 +412,7 @@ Fail
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -374,7 +434,11 @@ function mathPower(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+  let a = Number(input[0]);
+  let b = Number(input[1]);
+  return code(a, b);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -385,11 +449,30 @@ Write a function that **calculates** and returns the value of a number **raised 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['2', '8']` | 256 |
-|`['3', '4']` | 81 |
+|2, 8 | 256 |
+|3, 4 | 81 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+2
+8
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test open]
+[input]
+3
+4
+[/input]
+[output]
+81
+[/output]
+[/test]
 [test]
 [input]
 7
@@ -453,10 +536,35 @@ Write a function that **calculates** and returns the value of a number **raised 
 8
 [/output]
 [/test]
+[test]
+[input]
+3
+2
+[/input]
+[output]
+9
+[/output]
+[/test]
+[test]
+[input]
+4
+4
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test]
+[input]
+4
+4
+[/input]
+[output]
+256
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -479,7 +587,11 @@ function mathPower(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+  let a = Number(input[0]);
+  let b = Number(input[1]);
+  return code(a, b);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -490,11 +602,30 @@ Write a function that **calculates** and returns the value of a number **raised 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['2', '8']` | 256 |
-|`['3', '4']` | 81 |
+|2, 8 | 256 |
+|3, 4 | 81 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+2
+8
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test open]
+[input]
+3
+4
+[/input]
+[output]
+81
+[/output]
+[/test]
 [test]
 [input]
 7
@@ -558,8 +689,33 @@ Write a function that **calculates** and returns the value of a number **raised 
 8
 [/output]
 [/test]
+[test]
+[input]
+3
+2
+[/input]
+[output]
+9
+[/output]
+[/test]
+[test]
+[input]
+4
+4
+[/input]
+[output]
+256
+[/output]
+[/test]
+[test]
+[input]
+4
+4
+[/input]
+[output]
+256
+[/output]
+[/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]

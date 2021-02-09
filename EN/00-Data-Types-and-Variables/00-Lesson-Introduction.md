@@ -9,8 +9,6 @@
 
 ## In this lesson you will learn:
 
-test1233124412
-
 **1. Let vs Var**
 
 - What is the difference between **Let** and **Var**
