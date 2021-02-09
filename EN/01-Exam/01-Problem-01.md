@@ -14,22 +14,23 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-It is hot and sunny outside so Softuni training team decides to organize a workday by the swimming pool. 
+It is hot and sunny outside so тхе SoftUni training team decides to organize a workday by the swimming pool. 
 
 Your task is to write a program that calculates the amount that should be paid. 
 
 Entrance fee must be paid for every single person. 
 
-You should keep in mind that an umbrella is enough for two people. It is known that only 75% of the team wants sunbeds. 
+You should keep in mind that an umbrella is enough for two people. Only 75% of the team want sunbeds. 
 
-In the calculation of the number of umbrellas and sunbeds, their number should be rounded up to the nearest whole number.
+In the calculation of the number of umbrellas and sunbeds, their number should be rounded up to the next integer.
 
 ## Input
-4 lines are read from the console:
-- First line - number of people - whole number in the range [1... 100]
-- Second line - entrance fee - real number in the range [0.00... 50.00]
-- Third line - price for a sunbed - real number in the range [0.00... 50.00]
-- Fourth line - price for one umbrella - real number in the range [0.00... 50.00]
+You will receive 4 lines from the console: 
+
+- First line - the number of people - an integer in range [1... 100]
+- Second line - the entrance fee - a real number in range [0.00... 50.00]
+- Third line - the price for a single sunbed - a real number in range [0.00... 50.00]
+- Fourth line - the price for one umbrella - a real number in range [0.00... 50.00] 
 
 ## Output
 "\{total price\} dollars." 

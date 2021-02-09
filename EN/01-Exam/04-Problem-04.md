@@ -21,18 +21,18 @@ Write a program that calculates the profit of a club for the evening and whether
 
 The price of a cocktail is its name's length. 
 
-If the price of an order is an odd number, there is a 25% discount on the order price.
+If the price of an order is an odd number - there is a 25% discount on the price of the order.
 
 # Input
 You will receive:
-- On the first line – the desired profit of the club - real number in the range [1.00... 15000.00]
+- On the first line – the desired profit of the club - a real number in the range [1.00... 15000.00]
 
-A series of two rows until the command "Party!" or until the desired profit is reached:
-- Name of the cocktail - string
-- Number of cocktails for the order - whole number in the range [1… 50]
+On the next n lines, you will be receiving two rows until you receive the command "Party!" or until the desired profit is reached: 
+- The name of the cocktail - String 
+- The number of cocktails for the order - An integer in range [1… 50] 
 
 ## Output
-First, print one line on the console:
+First, print a line on the console:
 
 - If you receive the command "Party!":
 	- "We need \{money needed\} dollars more."
@@ -56,10 +56,10 @@ The money must be formatted to the second digit after the decimal point.
 | Party! |  |
 
 ### Comments
-- The goal of the club is to collect 500$.
+- The goal, of the club, is to collect 500$.
 - The first order is for 6 cocktails Bellini. 
-- The price of the cocktail is its name length - 7. 6 Cocktails of 7$ -> 42$, the last digit is 2, therefore there is no discount.
-- The next order is for 7 Bamboo cocktails, its price is 6$. 6 * 7-> 42$, again there is no discount.
+- The price of the cocktail is its name length - 7. 6 Cocktails of 7$ -> 42$. The last digit is 2, therefore there is no discount.
+- The next order is for 7 Bamboo cocktails, its price is 6$. 6 * 7-> 42$. Again there is no discount.
 - We receive the command Party! The program stops.
 - The club has 42 + 42 = 84$ and the target is 500. 500 – 84 = 416$ are needed.
 

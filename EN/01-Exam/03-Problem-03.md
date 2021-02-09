@@ -14,7 +14,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that calculates the price a customer, who has bought drinks from a coffee machine, has to pay:
+Create a program that calculates the cost of drinks, that a customer has bought from the coffee machine:
 
 |   | Without sugar | Normal | Extra sugar |
 |---|---|---|---|
@@ -23,17 +23,17 @@ Write a program that calculates the price a customer, who has bought drinks from
 | Tea | 0.50$ | 0.60$ | 0.70$ |
 
 Keep in mind the following discounts:
-- With a selected drink without sugar, there is a 35% discount.
-- With a selected drink "Espresso" and bought at least 5 drinks, there is a 25% discount.
-- With an amount exceeding 15$, there is a 20% discount from the final price. 
+- There is a 35% discount if the selected drinks is without sugar
+- There is a 25% discount if 5 cups of Espressos have been purchased
+- There is a 20% discount from the final price, if the cost exceeds 15$
 
 The discounts are applied in the order of their description.
 
 ## Input
-You receive 3 lines from the console:
-- First line - drink - string: "Espresso", "Cappuccino" or "Tea"
-- Second line - sugar - string: "Without", "Normal" or "Extra"
-- Third line - count drinks - whole number in the range [1… 50]
+You will receive 3 lines from the console:
+- The first line will be for the drink - String: "Espresso", "Cappuccino" or "Tea" 
+- The second line will be for the sugar - String: "Without", "Normal" or "Extra" 
+- The third line will be for the count of drinks - An integer in range [1… 50] 
 
 ## Output
 Print one line on the console:
@@ -48,7 +48,7 @@ Print one line on the console:
 | 10 |  |
 
 ### Comments
-- Selected are 10 cups of espresso without sugar 0.90 each -> 9$
+- 10 cups of espresso without sugar 0.90 each -> 9$
 - 35% discount for a sugar free drink of 9$ -> 3.15 -> 9 – 3.15 = 5.85
 - 25% discount on the purchase of at least 5 cups of espresso. 25% of 5.85 -> 1.4625
 - 5.85 – 1.4625 -> 4.3875

@@ -15,19 +15,19 @@ public class Program {
 [task-description]
 
 ## Description
-For Laura, the words possess great power. 
+For Laura, words possess great power. 
 
-She's asking you to invent an algorithm to find out which is the "strongest" word. 
+She is asking you to write an algorithm that finds out which is the "strongest" word. 
 
-Until the command "End of words" you will be receiving words from the console. 
+Until the command "End of words", you will be receiving words from the console. 
 
 To determine the strength of each word, you need to find the sum of the ASCII values of the symbols that make up the word. 
 
-If it starts with a vowel letter - 'a', 'e', ' i', 'o', 'u', 'y'(or their equivalent capital letters), the result must be multiplied by the length of the word, otherwise, divided by the length and rounded down to the nearest whole number.
+If it starts with a vowel - 'a', 'e', ' i', 'o', 'u', 'y'(or their equivalent capital letters), the result must be multiplied by the length of the word. Otherwise, divided by the length and round it down to the previous integer.
 
 ## Input
-Until the command "End of words" you will receive lines from the console:
-- word – string 
+Until the command "End of words", you willne recieving words from the console:
+- word – String 
 
 ## Output
 Print the word with the "greatest" power:

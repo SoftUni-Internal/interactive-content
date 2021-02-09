@@ -14,34 +14,35 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Your task is to write a program that takes the name of a team and does statistics about it. 
+Create a program that takes the name of a football team and displays its statistics, based on their matches played this season. 
 
-During one season each team plays a certain number of football matches and for each team meeting points are awarded depending on the outcome of the match. 
+Its statistics should include the total number of points earned in the current season, detailed statistics on the outcome of the games played and a win rate in the season. 
 
-There are three possible outcomes from one meeting: 
-- W - The team is a winner and gets 3 points
-- D - The meeting ended without a winner and the team gets 1 point
-- L - The team has lost the match and does not receive points
+If for some reason the team has not played any matches in the current season, a special message is displayed. 
 
-Write a program that takes the name of a football team and displays its statistics, based on played matches this season. 
+Your task is to create a program that analyzes the statistics of the name of a given team.
 
-Its statistics should include the total number of points earned in the current season, detailed statistics on the outcome of the games played and a beat rate in the season. 
+During one season, each team plays a certain number of football matches and, for each match played, points are awarded depending on the outcome.
 
-If for some reason the team has not played any matches in the current season, a special message is displayed.
+There are three possible outcomes from a match: 
+- W - The team wins and gets 3 points 
+- D - The game on a draw and the team gets 1 point 
+- L - The team has lost the match and does not receive any points
 
 ## Input
 You will receive two lines from the console:
-- The name of the football team we're doing statistics about - string
-- Number of games played in the current season - whole number in the range [0… 100]
+- The name of the football team we're analyzing - String
+- The number of games, played in the current season - An integer in range [0… 100] 
 
 For each game played, a separate line is read:
-- The result of the game played in one of the formats above - a character: 'W', 'D' or 'L'
+- The result of the game played in one of the format - A character: 'W', 'D' or 'L' 
 
 ## Output
-Depending on whether the team has played games in the current season two types of output are displayed.
-- If the team has not played a single match in the current season, one line is displayed in the following format:
+Depending on whether the team has played any games or not in the current season, two types of output are displayed:
+
+- If the team has not played a single match in the current season, print out a line in the following format:
 	- "\{team name\} hasn't played any games during this season."
-- If the team has played one match or more, six lines are displayed in the following format:
+- If the team has played at least one match, six lines are displayed in the following format:
 	- "\{team name\} has won \{count points\} points during this season."
 	- "Total stats:"
 	- "## W: \{count games won\}"
@@ -49,7 +50,7 @@ Depending on whether the team has played games in the current season two types o
 	- "## L: \{count games lost\}" 
 	- "Win rate: \{percent games won\}%"
 
-The percent must be formatted to the second digit after the decimal point.
+The percentage must be formatted after the 2nd decimal point.
 
 ## Example
 | **Input** | **Output** |

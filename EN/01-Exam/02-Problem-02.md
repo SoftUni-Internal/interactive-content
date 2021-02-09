@@ -16,19 +16,19 @@ public class Program {
 ## Description
 The Smiths are planning their family trip. 
 
-Your task is to write a program that calculates whether their budget will be enough, knowing how many nights they have planned, what is the price per night and what percent of the budget has been provided for additional costs.
+Your task is to create a program that calculates whether their budget will be enough, knowing how many nights they have planned, what the price per night is and what percentage of the budget has been provided for additional costs.
 
 Keep in mind that if the number of nights is greater than 7, the price per night is reduced by 5%.
 
 ## Input
 You will receive 4 lines from the console:
-- The budget they have – real number in the range [1.00 … 10000.00]
-- Count of nights – whole number in the range [0 … 1000]
-- Price per night – real number in the range [1.00 … 500.00]
-- Additional cost percentage – whole number in the range [0 … 100]
+- The budget that they have – a real number in range [1.00 … 10000.00] 
+- The count of nights – an integer in range [0 … 1000] 
+- The price per night – a real number in range [1.00 … 500.00] 
+- The additional cost percentage – an integer in range [0 … 100] 
 
 ## Output
-The printing on the console depends on the result:
+The output  depends on the budget:
 - If the budget is enough:
 	- "The Smiths will be left with \{money left after the trip\} dollars after vacation."
 - If the budget is NOT enough:
