@@ -124,6 +124,11 @@ function train(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(i.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -269,6 +274,11 @@ function distinctArray(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(i.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -426,6 +436,11 @@ function houseParty(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => { return c(i)}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -579,6 +594,11 @@ function sorting(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {c(i.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -693,6 +713,11 @@ function sort(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(i)}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -706,14 +731,14 @@ The output is the sorted array of strings.
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`["alpha", "beta", "gamma"]`|beta|
+|`['alpha', 'beta', 'gamma']`|beta|
 ||alpha|
 ||gamma|
 
 
 | **Input** | **Output** |
 | --- | --- |
-|`["Isacc", "Theodor", "Jack", "Harrison", "George"]`|Jack|
+|`['Isacc', 'Theodor', 'Jack', 'Harrison', 'George']`|Jack|
 ||Isacc|
 ||George|
  ||Theodor|
@@ -859,6 +884,11 @@ function arrayManipulations(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {return c(JSON.parse(i[0]), JSON.parse(i[1]))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -876,7 +906,7 @@ Write a function that manipulates an array of numbers.
 
 Print the final state of the array (separated by a single space). 
 
-The input comes as an array of strings. 
+The input comes as two arrays. 
 
 The first element will be a string, containing the array to manipulate. 
 
@@ -888,7 +918,7 @@ The output is the manipulated array, which we should print on the console on a s
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['4 19 2 53 6 43','Add 3','Remove 2','RemoveAt 1','Insert 8 3']`|4 53 6 8 43 3|
+|`[4 19 2 53 6 43], ['Add 3','Remove 2','RemoveAt 1','Insert 8 3']`|4 53 6 8 43 3|
 
 [/task-description]
 [code-io /]
