@@ -1,6 +1,6 @@
 # Definition
 
-[slide]
+[slide hideTitle]
 # What Are Arrays?
 
 [vimeo-video]
@@ -24,7 +24,7 @@ Creating an array of strings:
 let fruit = ["apple", "pear", "cherry"];
 ```
 
-Arrays can contain variables of **different data types**, integers, strings, boolean etc. 
+Arrays can contain variables of **different data types** - integers, strings, boolean etc. 
 
 Also, **duplicate** values **can** be stored in it. 
 
@@ -34,7 +34,7 @@ let myArray = ["string", 2, 3.33, 2, true];
 
 The values in an array are called **elements.** 
 
-You could think of it as a **train**, each wagon of which **may contain a different type and number of objects**: passengers, cargo, raw materials, the wagon might even be empty. 
+You could think of it as a **train**, of which each wagon **may contain a different type and number of objects**: passengers, cargo, raw materials, the wagon might even be empty. 
 
 Now let us **imagine an array of integers**, each element representing a wagon and each value is the number of passengers. 
 
@@ -43,19 +43,19 @@ As in this graphical representation:
 
 This one has **7 wagons** (**elements**). 
 
-Each one has **passengers in it** (a value) 
+Each one has **passengers in it** (a value):
 
 - `[3, 4, 10, 7, 5, 0, 6]`
 
 Array elements are numbered from `0` to `length-1`.
 
-By using the `Array.length`method we can get a variable, containing the length of an array.
+By using the `Array.length` method we can get a variable, containing the length of an array.
 
 In this example we have **7 elements.**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Creating Arrays
 
 [vimeo-video]
@@ -65,13 +65,13 @@ In this example we have **7 elements.**
 
 There are two ways to create an array: 
 
-Initialize it using **square brackets** `[]`, if no elements are declared, the array will be empty
+- Initializing it using **square brackets** `[]`, if no elements are declared, the array will be empty:
 
 ```js
 let names = [];
 ```
 
-Initialize an array holding integer values:
+- Initializing an array holding integer values:
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -85,10 +85,10 @@ The `[]` operator is used to access elements of the array by their **index.**
 let numbers = [1, 2, 3, 4, 5];
 
 console.log(`First number is ${numbers[0]}`); 
-console.log(`Last number is ${numbers[numbers.length-1]}`);
+console.log(`Last number is ${numbers[numbers.length - 1]}`);
 ```
 
-**We can assign values** to the array elements at a specific index
+**We can assign values** to the array elements at a specific index.
 
 The **length method** can be used to return the number of elements in a string:
 
@@ -102,7 +102,7 @@ console.log(numbers);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum First and Last Array Elements
 
 [vimeo-video]
@@ -110,7 +110,7 @@ console.log(numbers);
 [stream language="RO" videoId="489372302/7905a8f7f5"  /]
 [/video-vimeo]
 
-[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sum(input){
@@ -126,34 +126,30 @@ Write a function that receives an **array of strings**, **turns them into number
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
+|`['20', '30', '40']`| 60 |
+|`['10', '17', '22', '33']`| 43 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-12
-32
-15
-1
-16
-78
+20
+30
+40
 [/input]
 [output]
-90
+60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-12
-32
-18
-16
+10
+17
+22
+33
 [/input]
 [output]
-28
+43
 [/output]
 [/test]
 [test]
@@ -223,7 +219,7 @@ Write a function that receives an **array of strings**, **turns them into number
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Sum First and Last Array Elements
 
 [vimeo-video]
@@ -235,8 +231,7 @@ Write a function that receives an **array of strings**, **turns them into number
 [code-editor language=javascript]
 ```
 function sum(arr){
-  let sum = Number(arr[0]) + Number(arr[arr.length - 1]);
-  console.log(sum);
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -248,34 +243,30 @@ Write a function that receives an **array of strings**, **turns them into number
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
+|`['20', '30', '40']`| 60 |
+|`['10', '17', '22', '33']`| 43 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-12
-32
-15
-1
-16
-78
+20
+30
+40
 [/input]
 [output]
-90
+60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-12
-32
-18
-16
+10
+17
+22
+33
 [/input]
 [output]
-28
+43
 [/output]
 [/test]
 [test]
@@ -345,7 +336,7 @@ Write a function that receives an **array of strings**, **turns them into number
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Days of Week: Example
 
 [vimeo-video]
@@ -353,15 +344,28 @@ Write a function that receives an **array of strings**, **turns them into number
 [stream language="RO" videoId="489372340/6ef0de5d43"  /]
 [/video-vimeo]
 
+```js
+let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+```
+
+|**Index**|**Value**|
+|`days[0]`|Monday|
+|`days[1]`|Tuesday|
+|`days[2]`|Wednesday|
+|`days[3]`|Thursday|
+|`days[4]`|Friday|
+|`days[5]`|Saturday|
+|`days[6]`|Sunday|
+
 This is an example of an array containing strings for the different days of the week.
 
 The first element, Monday, is at index 0 of the array.
 
-The first element, Sunday, is at index 6 of the array.
+The last element, Sunday, is at index 6 of the array.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Days of Week
 
 [vimeo-video]
@@ -369,14 +373,21 @@ The first element, Sunday, is at index 6 of the array.
 [stream language="RO" videoId="489372347/856f508476"  /]
 [/video-vimeo]
 
-[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function days(input){
+function days(number){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -387,12 +398,27 @@ If the number is NOT a valid day, print `Invalid day!`.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+|3| Wednesday |
+|11| Invalid day! |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test open]
+[input]
+11
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -475,14 +501,7 @@ Invalid day!
 [code-editor language=javascript]
 ```
 function days(input){
-    let n = input[0];
-    if (n <= 7) {
-        let days = ['Invalid day!', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-        console.log(days[n]);
-    }
-    else {
-        console.log('Invalid day!');
-    }
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -496,12 +515,27 @@ If the number is NOT a valid day, print `Invalid day!`.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+|3| Wednesday |
+|11| Invalid day! |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test open]
+[input]
+11
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -572,7 +606,7 @@ Invalid day!
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Arrays of Different Types
 
 [vimeo-video]
@@ -587,18 +621,18 @@ Array holding numbers:
 let numbers = [10, 20, 30, 40, 50];
 ```
 
-Array holding strings
+Array holding strings:
 ``` js
 let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
-Array holding mixed data
+Array holding mixed data:
 ```js
 let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Adding New Elements
 
 [vimeo-video]
@@ -607,6 +641,7 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [/video-vimeo]
 
 We  can add an element to the end of the array:
+
 ``` js live
 let arr = [10, 20, 30];
 arr[arr.length] = 40;
@@ -614,7 +649,7 @@ arr[arr.length] = 40;
 console.log(arr); 
 ```
 
-Or we can use the built-in push method
+Or we can use the built-in push method:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -624,7 +659,7 @@ console.log(arr);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # JS Arrays and Invalid Positions
 
 [vimeo-video]
@@ -644,9 +679,9 @@ console.log(nums.length);
 console.log(nums[3]);
 ```
 
-Typical errors that we can face when working with arrays: 
+Typical errors that we can face when working with arrays:
 
-We can actually access indexes which do not exist in the array. 
+- We can actually access indexes which do not exist in the array: 
 
 ``` js live
 let nums = [10, 20, 30];

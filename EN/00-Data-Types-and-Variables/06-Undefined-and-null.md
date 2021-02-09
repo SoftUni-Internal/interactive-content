@@ -4,10 +4,7 @@
 
 # Undefined
 
-[vimeo-video]
-[stream language="EN" videoId="489371807/542891a72e" default /]
-[stream language="RO" videoId="489371807/542891a72e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-30-31-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Undefined-Null.png" /]
 
@@ -37,10 +34,7 @@ console.log(car);
 
 # Null
 
-[vimeo-video]
-[stream language="EN" videoId="489371851/d2a4d15a1e" default /]
-[stream language="RO" videoId="489371851/d2a4d15a1e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-32-null-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Null** is an **object type** which can be used for any variable that **holds an object** which we do not want to be undefined.
 
@@ -66,10 +60,7 @@ console.log(typeof(person));
 
 # Null and Undefined
 
-[vimeo-video]
-[stream language="EN" videoId="489371864/d1eeb434fb" default /]
-[stream language="RO" videoId="489371864/d1eeb434fb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-33-null-and-undefined-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Null** is a value that we set so we know that there is **nothing** inside, i.e. we set the value null **explicitly**.

@@ -5,11 +5,16 @@
 [code-task title="Gramophone" taskId="js-fundamentals-1-basic-syntax-Gramophone" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function gramophone(input){
+function gramophone(bandName, album, songName){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function which as input will receive 3 parameters (strings)
@@ -34,15 +39,23 @@ As output you should print the following message:
 
 Rotations should be **rounded up.**
 
-
-
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Black Sabbath', 'Paranoid', 'War Pigs']`| The plate was rotated 167 times. |
+|'Black Sabbath', 'Paranoid', 'War Pigs'| The plate was rotated 167 times. |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Black Sabbath
+Paranoid
+War Pigs
+[/input]
+[output]
+The plate was rotated 167 times.
+[/output]
+[/test]
 [test]
 [input]
 Bhjkhbath
@@ -114,11 +127,18 @@ The plate was rotated 29 times.
 [code-task title="Fuel Money" taskId="js-fundamentals-1-basic-syntax-Fuel-Money" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function fuelMoney(input){
+function fuelMoney(pistance, passengers, price){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a **function** which calculates how much **money** for fuel will be needed to drive а bus from one place to another.
@@ -132,8 +152,11 @@ Consider the following:
 - The **money** is calculated by **multiplying** the **fuel price** by the needed fuel for the trip.
 
 As **input** you will receive **3 parameters**:
+
 - **Distance** the bus must travel
+
 - **Passengers** in it 
+
 - **Price** for **1 liter of diesel**
 
 As output you should print this message:
@@ -142,11 +165,31 @@ As output you should print this message:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['260', '9', '2.49']`| Needed money for that trip is 47.559 dollars. |
-|`['90', '14', '2.88']`| Needed money for that trip is 22.176 dollars. |
+|260, 9, 2.49| Needed money for that trip is 47.559 dollars. |
+|90, 14, 2.88| Needed money for that trip is 22.176 dollars. |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+260
+9
+2.49
+[/input]
+[output]
+Needed money for that trip is 47.559 dollars.
+[/output]
+[/test]
+[test open]
+[input]
+90
+14
+2.88
+[/input]
+[output]
+Needed money for that trip is 22.176 dollars.
+[/output]
+[/test]
 [test]
 [input]
 154
@@ -248,25 +291,50 @@ Needed money for that trip is 165.0175 dollars.
 [code-task title="Centuries to Minutes" taskId="js-fundamentals-1-basic-syntax-Centuries-to-Minutes" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function centuriesToMinutes(input){
+function centuriesToMinutes(number){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program that receives a number of centuries, and converts it to years, days, hours, and minutes.
 
 Print the output in the following format: 
+
 `{number} centuries = {number} years = {number} days = {number} hours = {number} minutes`
+
 # Example
-  | **Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
-|`['1']`| 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
-|`['5']`| 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+|1| 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
+|5| 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+[/input]
+[output]
+1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
+[/output]
+[/test]
+[test open]
+[input]
+5
+[/input]
+[output]
+5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes
+[/output]
+[/test]
 [test]
 [input]
 14
@@ -318,36 +386,32 @@ Print the output in the following format:
 [code-task title="Special Numbers" taskId="js-fundamentals-1-basic-syntax-Special-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function specialNumbers(input){
+function specialNumbers(number){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program that receives a number `n`. For all numbers in the range `1…n`, print the number and whether it is special or not.
 
 A number is special when the sum of its digits is **5,7, or 11.**
 
-
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['15']`| 1 -> False |
+|5| 1 -> False |
 ||2 -> False|
 ||3 -> False|
 ||4 -> False|
 ||5 -> True|
-||6 -> False|
-||7 -> True|
-||8 -> False|
-||9 -> False|
-||10 -> False|
-||11 -> False|
-||12 -> False|
-||13 -> False|
-||14 -> True|
-||15 -> False|
 
 # Hints
 
@@ -359,6 +423,18 @@ Use `parseInt()` while dividing to get only integer numbers.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -369,7 +445,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-5
+15
 [/input]
 [output]
 1 -> False
@@ -377,6 +453,16 @@ Use `parseInt()` while dividing to get only integer numbers.
 3 -> False
 4 -> False
 5 -> True
+6 -> False
+7 -> True
+8 -> False
+9 -> False
+10 -> False
+11 -> False
+12 -> False
+13 -> False
+14 -> True
+15 -> False
 [/output]
 [/test]
 [test]
@@ -437,6 +523,34 @@ Use `parseInt()` while dividing to get only integer numbers.
 40 -> False
 [/output]
 [/test]
+[test]
+[input]
+6
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+[/output]
+[/test]
+[test]
+[input]
+8
+[/input]
+[output]
+1 -> False
+2 -> False
+3 -> False
+4 -> False
+5 -> True
+6 -> False
+7 -> True
+8 -> False
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -448,40 +562,32 @@ Use `parseInt()` while dividing to get only integer numbers.
 [code-task title="Triples of Latin Letters" taskId="js-fundamentals-1-basic-syntax-Triples-of-latin-letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function triplesLatinLetters(input){
+function triplesLatinLetters(number){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program that receives a **number** `n` and prints all triples of the first n small Latin letters, ordered alphabetically.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['3']`| aaa |
+|2| aaa |
 ||aab|
-||aac|
 ||aba|
 ||abb|
-||abc|
-||aca|
-||acb|
-||acc|
 ||baa|
 ||bab|
-||bac|
 ||bba|
 ||bbb|
-||bbc|
-||bca|
-||bcb|
-||bcc|
-||caa|
-||cab|
-||cac|
-||cba|
-||cbb|
 
 # Hints
 
@@ -495,15 +601,7 @@ The function `String.fromCharCode()` gets the **value in decimal** and transform
 
 [/task-description]
 [tests]
-[test]
-[input]
-1
-[/input]
-[output]
-aaa
-[/output]
-[/test]
-[test]
+[test open]
 [input]
 2
 [/input]
@@ -516,6 +614,48 @@ baa
 bab
 bba
 bbb
+[/output]
+[/test]
+[test]
+[input]
+1
+[/input]
+[output]
+aaa
+[/output]
+[/test]
+[test]
+[input]
+3
+[/input]
+[output]
+aaa
+aab
+aac
+aba
+abb
+abc
+aca
+acb
+acc
+baa
+bab
+bac
+bba
+bbb
+bbc
+bca
+bcb
+bcc
+caa
+cab
+cac
+cba
+cbb
+cbc
+cca
+ccb
+ccc
 [/output]
 [/test]
 [test]
@@ -812,6 +952,146 @@ ddc
 ddd
 [/output]
 [/test]
+[test]
+[input]
+0
+[/input]
+[output]
+
+[/output]
+[/test]
+[test]
+[input]
+5
+[/input]
+[output]
+aaa
+aab
+aac
+aad
+aae
+aba
+abb
+abc
+abd
+abe
+aca
+acb
+acc
+acd
+ace
+ada
+adb
+adc
+add
+ade
+aea
+aeb
+aec
+aed
+aee
+baa
+bab
+bac
+bad
+bae
+bba
+bbb
+bbc
+bbd
+bbe
+bca
+bcb
+bcc
+bcd
+bce
+bda
+bdb
+bdc
+bdd
+bde
+bea
+beb
+bec
+bed
+bee
+caa
+cab
+cac
+cad
+cae
+cba
+cbb
+cbc
+cbd
+cbe
+cca
+ccb
+ccc
+ccd
+cce
+cda
+cdb
+cdc
+cdd
+cde
+cea
+ceb
+cec
+ced
+cee
+daa
+dab
+dac
+dad
+dae
+dba
+dbb
+dbc
+dbd
+dbe
+dca
+dcb
+dcc
+dcd
+dce
+dda
+ddb
+ddc
+ddd
+dde
+dea
+deb
+dec
+ded
+dee
+eaa
+eab
+eac
+ead
+eae
+eba
+ebb
+ebc
+ebd
+ebe
+eca
+ecb
+ecc
+ecd
+ece
+eda
+edb
+edc
+edd
+ede
+eea
+eeb
+eec
+eed
+eee
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -828,6 +1108,13 @@ function sumDigits(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a **function** which will be given a single **number**. 
@@ -836,12 +1123,27 @@ Your task is to find the sum of its digits.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['245678']`| 32 |
-|`['97561']`| 28 |
-|`['543']`| 12 |
+|245678| 32 |
+|97561| 28 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+245678
+[/input]
+[output]
+32
+[/output]
+[/test]
+[test open]
+[input]
+97561
+[/input]
+[output]
+28
+[/output]
+[/test]
 [test]
 [input]
 9465
@@ -925,11 +1227,16 @@ Your task is to find the sum of its digits.
 [code-task title="Reversed Chars" taskId="js-fundamentals-1-basic-syntax-reversed-chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reversChars(input){
+function reversChars(firstChar, secondChar, thirdChar){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => code(...input);
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program that takes **3 parameters** (characters) and prints them in **reversed order** with a space between them.
@@ -937,12 +1244,32 @@ Write a program that takes **3 parameters** (characters) and prints them in **re
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['A', 'B','C']`| C B A |
-|`['1','L','&']`| \& L 1 |
-
+|'A', 'B','C'| C B A |
+|'1','L','\&'| \& L 1 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+A
+B
+C
+[/input]
+[output]
+C B A
+[/output]
+[/test]
+[test open]
+[input]
+1
+L
+\&
+[/input]
+[output]
+\& L 1
+[/output]
+[/test]
 [test]
 [input]
 a
@@ -1024,11 +1351,21 @@ L
 [code-task title="Calculator" taskId="js-fundamentals-1-basic-syntax-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculator(input){
+function calculator(firstNumber, operator, secondNumber){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+  let a = Number(input[0]);
+  let b = input[1];
+  let c = Number(input[2]);
+  return code(a, b, c);
+}
+```
+[/code-adapter]
 [task-description]
 Write a function that receives **three string parameters:** 
 
@@ -1043,12 +1380,32 @@ Print the **result of the calculation** to the console formatted to the **second
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['5', '+','10']`| 15.00 |
-|`['25.5','-','3']`| 22.50 |
+|5, '+', 10| 15.00 |
+|25.5, '-', 3 | 22.50 |
 
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+\+
+10
+[/input]
+[output]
+15.00
+[/output]
+[/test]
+[test open]
+[input]
+25.5
+\-
+3
+[/input]
+[output]
+22.50
+[/output]
+[/test]
 [test]
 [input]
 10

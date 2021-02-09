@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489371197/487983cf9f" default /]
-[stream language="RO" videoId="489371197/487983cf9f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-34-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 # In this lesson you learned:
@@ -51,6 +48,7 @@ let cars = ["Nio", "Tesla", "Xpeng"];
 
 console.log(typeof(cars));
 ```
+
 - `Null` is "nothing", while `undefined` exists, but is empty
 
 
@@ -58,30 +56,9 @@ console.log(typeof(cars));
 
 - Arrays
   - Definition and syntax
-``` js
-let cars = ["Nio", "Tesla", "Xpeng"];
-```
-
 - Array iteration
   - How we iterate over array
   - Alternative ways to iterate using a for-of loop
-
-``` js live
-let cars = ["Nio", "Tesla", "Xpeng"];
-
-for (let i = 0; i < cars.length; i++) {
-    console.log(cars[i]);
-}
-```
-
-``` js live
-let cars = ["Nio", "Tesla", "Xpeng"];
-
-for (const car of cars) {
-  console.log(car);
-}
-```
-
 - Array operations
 
 [/slide]
