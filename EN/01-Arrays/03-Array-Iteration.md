@@ -37,6 +37,14 @@ console.log(capitals.toString())
 
 The `for..of` loop is used to iterate over any iterable object but cannot be used to  access its indexes. 
 
+``` js live
+const cars = ['Nio', 'Tesla', 'Xpeng'];
+
+for (const car of cars) {
+  console.log(car);
+}
+```
+
 [/slide]
 
 [slide hideTitle]
@@ -249,7 +257,7 @@ Where `n` is the  first element of the array.
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverse(input){
+function reverse(n, inputArr){
   // Write your code here
 }
 ```
