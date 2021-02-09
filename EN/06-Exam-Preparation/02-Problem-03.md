@@ -4,7 +4,7 @@
 
 # Archery BG var
 
-[code-task title="Archery Tournament BG" taskId="Archery-Tournament-BG" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Archery Tournament BG" taskId="Archery-Tournament-BG" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript-code]
 ```
 
