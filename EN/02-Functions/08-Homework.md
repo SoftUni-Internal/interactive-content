@@ -975,7 +975,7 @@ Password is valid
 [code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function мatrix(input){
+function matrix(input){
   // Write your code here
 }
 ```
