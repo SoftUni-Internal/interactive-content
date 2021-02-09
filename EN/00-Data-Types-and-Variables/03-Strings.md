@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is a String?
 
-[vimeo-video]
-[stream language="EN" videoId="489371415/8a09c2cbb3" default /]
-[stream language="RO" videoId="489371415/8a09c2cbb3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-12-13-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 A string is a type of data that is used to present **text** and is a **sequence** of characters.
@@ -31,10 +28,7 @@ console.log(myString.length);
 
 # Strings Are Immutable
 
-[vimeo-video]
-[stream language="EN" videoId="489371418/250eaf629b" default /]
-[stream language="RO" videoId="489371418/250eaf629b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-14-strings-are-immutable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Keep in mind that we can only take the individual elements of the string, but we cannot change the elements inside the string.
@@ -60,10 +54,7 @@ We know we can change the **data held by a variable**, but we cannot change symb
 
 # String Interpolation
 
-[vimeo-video]
-[stream language="EN" videoId="489371467/900551de56" default /]
-[stream language="RO" videoId="489371467/900551de56"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-15-sting-interpolation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Replacing **placeholders** with values inside of a string literal is called string **interpolation**. 
 
@@ -80,10 +71,7 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 [slide hideTitle]
 # Problem: Concantenate Names
 
-[vimeo-video]
-[stream language="EN" videoId="489371465/3ddd050862" default /]
-[stream language="RO" videoId="489371465/3ddd050862"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-16-problem-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -183,10 +171,7 @@ JanpWhite
 
 # Solution: Concantenate Names
 
-[vimeo-video]
-[stream language="EN" videoId="489371497/73837bd2a6" default /]
-[stream language="RO" videoId="489371497/73837bd2a6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-16-solution-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Concantenate Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -287,10 +272,7 @@ JanpWhite
 
 # Problem: Right Place
 
-[vimeo-video]
-[stream language="EN" videoId="489371500/1d3c01f1f7" default /]
-[stream language="RO" videoId="489371500/1d3c01f1f7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-17-problem-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -415,10 +397,8 @@ Not Matched
 
 # Solution: Right Place
 
-[vimeo-video]
-[stream language="EN" videoId="489371554/f8c9ad29ff" default /]
-[stream language="RO" videoId="489371554/f8c9ad29ff"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-17-solution-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
