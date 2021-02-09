@@ -27,9 +27,9 @@ If the number of entering viewers, exceeds the number of seats left in the hall,
 ## Input
 Read from the console:
 
-- First line: the hall capacity – whole number in the range  \[50... 150\]
+- First element: the hall capacity – whole number in the range  \[50... 150\]
 
-- On each of the next line until the command is  `Movie time!`:
+- On each of the next element until the command is  `Movie time!`:
 	- Number of people entering the cinema: whole number in the range  \[1… 15\]
 
 ## Output
@@ -57,7 +57,7 @@ First, print on of these lines:
 
 The hall's capacity is 60 seats. 
 
-On the next line we receive the number of people that have entered the hall: 10. 
+The next element is the number of people that have entered the hall: 10. 
 
 The price that they will pay is `10 * 5 = 50$`. 
 
