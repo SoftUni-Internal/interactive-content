@@ -376,7 +376,7 @@ unknown
 [slide hideTitle]
 # Solution: Food or Drink
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Solution-Food Or Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Solution-only-Food Or Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # Problem: Print "Hello JavaScript"
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Print Hello Javascript" taskId="pb-js-introduction-Print-Hello-Javascript" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
@@ -11,8 +14,6 @@ function hello() {
 ```
 [/code-editor]
 [task-description]
-
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem1-print-hello-javascript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a JavaScript program, which:
 
@@ -34,6 +35,9 @@ Hello JavaScript
 
 [slide hideTitle]
 # Problem: Calculate and Print 5 * 5
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Calculate and Print 5 * 5" taskId="pb-js-introduction-Calculate-and-Print" executionType="tests-execution" executionStrategy="javascript-code"]
 [code-editor language=javascript]
 ```
@@ -43,8 +47,6 @@ function calculate() {
 ```
 [/code-editor]
 [task-description]
-
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/problem2-calculate-and-print-5times5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a JavaScript program, which:
 
