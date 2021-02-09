@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Comparison Operators
 
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-10-11-Comparison-Operators-parts-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In programming, we can compare values using the following operators:
 
 |Operators|Designation|
