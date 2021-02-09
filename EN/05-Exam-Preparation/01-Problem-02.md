@@ -1,6 +1,6 @@
 # Problem 2: Inventory
 
-[slide]
+[slide hideTitle]
 # Description
 
 [vimeo-video]
@@ -26,7 +26,7 @@ You should remove the item from your inventory, if you have it.
 
 * Command `Combine Items - {oldItem}:{newItem}`: 
 
-You should check if the first item can be found in your inventory, if so, add the new item after the it.
+You should check if the first item can be found in your inventory, if so, add the new item after the old one.
 
 Otherwise, ignore the command.
 
@@ -40,7 +40,7 @@ After receiving `Craft!` print out all items in your inventory, separated by `, 
 [code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function (input) {
 	// Write your code here
 }
 ```
@@ -54,7 +54,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron','Craft!']`| Sword, Bow, Iron|
+|`['Iron, Sword','Drop - Bronze','Combine Items - Sword:Bow','Renew - Iron', 'Craft!']`| Sword, Bow, Iron|
 
 
 [/task-description]
