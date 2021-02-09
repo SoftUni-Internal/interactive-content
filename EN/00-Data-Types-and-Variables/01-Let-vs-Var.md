@@ -5,10 +5,7 @@
 
 # Var and Let
 
-[vimeo-video]
-[stream language="EN" videoId="489371278/6878e454cb" default /]
-[stream language="RO" videoId="489371278/6878e454cb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-3-4-let-vs-var-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Different data types have different **sizes** in computer's memory.
 
@@ -82,10 +79,7 @@ We strongly advise you to use `let` when you **declare a variable**, that way yo
 
 
 
-[vimeo-video]
-[stream language="EN" videoId="489371276/4ac6b52083" default /]
-[stream language="RO" videoId="489371276/4ac6b52083"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-5-6-variable-scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Scope means the **life** of the variable or where the variable is **visible**. 
 
@@ -150,10 +144,7 @@ We will talk about object scope in more detail in the Advanced course.
 
 # Naming Variables
 
-[vimeo-video]
-[stream language="EN" videoId="489371334/07bcadb0ba" default /]
-[stream language="RO" videoId="489371334/07bcadb0ba"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-7-naming-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we create a variable, we use `camelCase`, which means that the variable starts with a **lowercase letter** and each subsequent word begins with a **capital letter**.
 

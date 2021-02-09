@@ -5,10 +5,7 @@
 
 # What is a Data Type?
 
-[vimeo-video]
-[stream language="EN" videoId="489371369/e56b1d1bdf" default /]
-[stream language="RO" videoId="489371369/e56b1d1bdf"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-8-9-10-what-is-a-data-type-examples-of-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Data types inform the computer how much information to read **from memory** purely technically.
@@ -54,10 +51,7 @@ let unknown = undefined;				 // Undefined
 
 # Dynamic Typing
 
-[vimeo-video]
-[stream language="EN" videoId="489371371/38ee98e956" default /]
-[stream language="RO" videoId="489371371/38ee98e956"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-11-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variables in JavaScript are not strictly associated with a particular **value type**.
 

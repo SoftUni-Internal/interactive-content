@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Sum Even Numbers
 [code-task title="Sum Even Numbers" taskId="js-fundamentals-1-Arrays-Sum-Even-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -12,7 +12,7 @@ function sumEvenNumbers(input){
 [/code-editor]
 [task-description]
 # Description
-Write a program which receives an array of strings, parse them to numbers and sum only the even numbers.
+Write a program which receives an array of strings, parses them to numbers and sums only the even numbers.
 
 # Example
 | **Input** | **Output** |
@@ -23,6 +23,42 @@ Write a program which receives an array of strings, parse them to numbers and su
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+2
+3
+4
+5
+6
+[/input]
+[output]
+12
+[/output]
+[/test]
+[test open]
+[input]
+3
+5
+7
+9
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test open]
+[input]
+2
+4
+6
+8
+10
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -100,7 +136,7 @@ Write a program which receives an array of strings, parse them to numbers and su
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Even and Odd Subtraction
 [code-task title="Even and Odd Subtraction" taskId="js-fundamentals-1-Arrays-Even-and-Odd-Substraction" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -110,6 +146,11 @@ function evenOdd(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -118,20 +159,58 @@ Write a program that calculates the difference between the sum of the even and t
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['1','2','3','4','5','6']`| 3 |
+|`[1, 2, 3, 4, 5, 6]`| 3 |
 
 # Comments
+
 `2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
 
+&nbsp;
 
-# More Example
+# More Examples
   | **Input** | **Output** |
 | --- | --- |
-|`['3','5','7','9']`|\-24 |
-|`['2','4','6','8','10']`|30 |
+|`[3, 5, 7, 9]`|\-24 |
+|`[2, 4, 6, 8, 10]`|30 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+1
+2
+3
+4
+5
+6
+[/input]
+[output]
+3
+[/output]
+[/test]
+[test open]
+[input]
+3
+5
+7
+9
+[/input]
+[output]
+\-24
+[/output]
+[/test]
+[test open]
+[input]
+2
+4
+6
+8
+10
+[/input]
+[output]
+30
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -245,7 +324,7 @@ Write a program that calculates the difference between the sum of the even and t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Condense Array to Number
 [code-task title="Condense Array to Number" taskId="js-fundamentals-1-Arrays-Condense-Array-To-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -255,6 +334,11 @@ function condense(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -266,16 +350,18 @@ For example, if we have 3 elements `[2, 10, 3]`, we sum the first two and the se
 
   | **Input** | **Output** |
 | --- | --- |
-|`['2','10','3']`| 25 |
+|`[2, 10, 3]`| 25 |
 
 # Comments
 `2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
 
+&nbsp;
+
 # More Examples
   | **Input** | **Output** |
 | --- | --- |
-|`['5','0','4','1','2']`| 35 |
-|`['1']`| 1 |
+|`[5, 0, 4, 1, 2]`| 35 |
+|`[1]`| 1 |
 
 # Hints
 
@@ -290,6 +376,36 @@ While we have more than one element in the array `nums[]`, repeat the following:
 
 [/task-description]
 [tests]
+[test open]
+[input]
+2
+10
+3
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+5
+0
+4
+1
+2
+[/input]
+[output]
+35
+[/output]
+[/test]
+[test]
+[input]
+1
+[/input]
+[output]
+1
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -386,7 +502,7 @@ While we have more than one element in the array `nums[]`, repeat the following:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add or Subtract
 [code-task title="Add or Subtract"taskId="js-fundamentals-1-Arrays-Add-or-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -396,6 +512,11 @@ function addOrSubstract(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -405,6 +526,7 @@ Write a function, which changes the **value** of odd and even numbers in an arra
 
 - If the number is **odd** - **subtract** to its value its index position
 
+&nbsp;
 
 # Output
 
@@ -412,7 +534,7 @@ On the first line print the **newly modified array**, on the second line print t
 
   | **Input** | **Output** |
 | --- | --- |
-|`['5', '15', '23', '56', '35']`| `[ 5, 14, 21, 59, 31 ]` |
+|`[5, 15, 23, 56, 35]`| `[ 5, 14, 21, 59, 31 ]` |
 || 134|
 || 130 |
 |`[-5, 11, 3, 0, 2]`| `[ 5, 14, 21, 59, 31 ]` |
@@ -421,6 +543,34 @@ On the first line print the **newly modified array**, on the second line print t
 
 [/task-description]
 [tests]
+[test open]
+[input]
+5
+15
+23
+56
+35
+[/input]
+[output]
+[ 5, 14, 21, 59, 31 ]
+134
+130
+[/output]
+[/test]
+[test open]
+[input]
+-5
+11
+3
+0
+2
+[/input]
+[output]
+[ -5, 10, 1, 3, 6 ]
+11
+15
+[/output]
+[/test]
 [test]
 [input]
 2
@@ -511,22 +661,29 @@ On the first line print the **newly modified array**, on the second line print t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Array Rotation
 [code-task title="Array Rotation"taskId="js-fundamentals-1-Arrays-Array-Rotation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayRotation(arr){
+function arrayRotation(arr, num){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(JSON.parse(input[0]).map(Number), Number(input[1]))}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array** and number of rotations you have to perform (first element goes at the end).
+Write a function that receives an **array** and the number of rotations you have to perform (the first element goes at the end).
 
-The first element of the input array is the number of rotations you have to perform, so the array you have to perform the actions with starts on the second element of the initial array.
+The first element of the input is the array of numbers where you have to perform the rotations.
+
+The second element of the input is the number of rotations you have to perform.
 
 # Output
 
@@ -534,20 +691,44 @@ Print the resulting array elements separated my single space.
 
 | **Input** | **Output** |
 | --- | --- |
-|`['2','51', '47', '32', '61', '21']`| 32 61 21 51 47 |
-|`['4', '32', '21', '61', '1']`| 32 21 61 1 |
-|`['5', '2', '4', '15', '31']`|4 15 31 2|
+|`[51, 47, 32, 61, 21], 2`| 32 61 21 51 47 |
+|`[32, 21, 61, 1], 4`| 32 21 61 1 |
+|`[2, 4, 15, 31], 5`|4 15 31 2|
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+\[51, 47, 32, 61, 21\]
+2
+[/input]
+[output]
+32 61 21 51 47
+[/output]
+[/test]
+[test open]
+[input]
+\[32, 21, 61, 1\]
+4
+[/input]
+[output]
+32 21 61 1
+[/output]
+[/test]
+[test open]
+[input]
+\[2, 4, 15, 31\]
+5
+[/input]
+[output]
+4 15 31 2
+[/output]
+[/test]
 [test]
 [input]
+\[1, 47, 32, 61, 91\]
 1
-1
-47
-32
-61
-91
 [/input]
 [output]
 47 32 61 91 1
@@ -555,12 +736,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[451, 47, 32, 61, 12\]
 2
-451
-47
-32
-61
-12
 [/input]
 [output]
 32 61 12 451 47
@@ -568,11 +745,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[31, 21, 69, 1\]
 3
-31 
-21
-69
-1
 [/input]
 [output]
 1 31 21 69
@@ -580,11 +754,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[3, 21, 7, 1\]
 4
-3
-21
-7
-1
 [/input]
 [output]
 3 21 7 1
@@ -592,11 +763,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[22, 4, 4, 15\]
 10
-22
-4
-4
-15
 [/input]
 [output]
 4 15 22 4
@@ -604,8 +772,8 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[15\]
 11
-15
 [/input]
 [output]
 15
@@ -613,64 +781,98 @@ Print the resulting array elements separated my single space.
 [/test]
 [test]
 [input]
+\[21, 69, 4\]
 0
-21
-69
-4
 [/input]
 [output]
 21 69 4
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Magic Sum
 [code-task title="Magic Sum"taskId="js-fundamentals-1-Arrays-Magic-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function magicSum(input){
+function magicSum(arr, num){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  const numArr = input[0].split(' ').map(Number);
+  const magicNum = +input[1];
+  return code(numArr,  magicNum);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function, which prints all **unique** pairs in an array of integers whose **sum is equal** to a given number. 
+Write a function, which prints all **unique** pairs in **an array of integers** whose **sum** is **equal** to a given number. 
 
-**The given number will be the first element in the array.**
+&nbsp;
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['8', '1', '7', '6', '2', '19', '23']`| 1 7 |
+|`[1, 7, 6, 2, 19, 23], 8`| 1 7 |
 || 6 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['27', '14', '20', '60', '13', '7', '19', '8']`| 14 13 |
+|`[14, 20, 60, 13, 7, 19, 8], 27`| 14 13 |
 ||20 7 |
 ||19 8 |
 
 | **Input** | **Output** |
 | --- | --- |
-|`['6', '1', '2', '3', '4', '5', '6']`| 1 5 |
+|`[1, 2, 3, 4, 5, 6], 6`| 1 5 |
 || 2 4 |
 
+
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+1 7 6 2 19 23
+8
+[/input]
+[output]
+1 7
+6 2
+[/output]
+[/test]
+[test open]
+[input]
+14 20 60 13 7 19 8
+27
+[/input]
+[output]
+14 13
+20 7
+19 8
+[/output]
+[/test]
+[test open]
+[input]
+1 2 3 4 5 6
+6
+[/input]
+[output]
+1 5
+2 4
+[/output]
+[/test]
 [test]
 [input]
+1 5 3 7 7
 14
-1
-5
-3
-7
-7
 [/input]
 [output]
 7 7
@@ -678,13 +880,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+14 67 43 7 19 8
 15
-14
-67
-43
-7
-19
-8
 [/input]
 [output]
 7 8
@@ -692,13 +889,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+43 1 23 43 45 5
 6
-43
-1
-23
-43
-45
-5
 [/input]
 [output]
 1 5
@@ -706,13 +898,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+6 5 3 4 3 3
 7
-6
-5
-3
-4
-3
-3
 [/input]
 [output]
 3 4
@@ -722,10 +909,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+46 3 43
 46
-46
-3
-43
 [/input]
 [output]
 3 43
@@ -733,11 +918,8 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/test]
 [test]
 [input]
+4 1 2 3
 5
-4
-1
-2
-3
 [/input]
 [output]
 4 1
@@ -745,8 +927,5 @@ Write a function, which prints all **unique** pairs in an array of integers whos
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
-

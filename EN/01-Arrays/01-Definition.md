@@ -126,34 +126,30 @@ Write a function that receives an **array of strings**, **turns them into number
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
+|`['20', '30', '40']`| 60 |
+|`['10', '17', '22', '33']`| 43 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-12
-32
-15
-1
-16
-78
+20
+30
+40
 [/input]
 [output]
-90
+60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-12
-32
-18
-16
+10
+17
+22
+33
 [/input]
 [output]
-28
+43
 [/output]
 [/test]
 [test]
@@ -247,34 +243,30 @@ Write a function that receives an **array of strings**, **turns them into number
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-|`[11, 58, 69]`| 80 |
+|`['20', '30', '40']`| 60 |
+|`['10', '17', '22', '33']`| 43 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-12
-32
-15
-1
-16
-78
+20
+30
+40
 [/input]
 [output]
-90
+60
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-12
-32
-18
-16
+10
+17
+22
+33
 [/input]
 [output]
-28
+43
 [/output]
 [/test]
 [test]
@@ -352,6 +344,19 @@ Write a function that receives an **array of strings**, **turns them into number
 [stream language="RO" videoId="489372340/6ef0de5d43"  /]
 [/video-vimeo]
 
+```js
+let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+```
+
+|**Index**|**Value**|
+|`days[0]`|Monday|
+|`days[1]`|Tuesday|
+|`days[2]`|Wednesday|
+|`days[3]`|Thursday|
+|`days[4]`|Friday|
+|`days[5]`|Saturday|
+|`days[6]`|Sunday|
+
 This is an example of an array containing strings for the different days of the week.
 
 The first element, Monday, is at index 0 of the array.
@@ -371,11 +376,18 @@ The last element, Sunday, is at index 6 of the array.
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function days(input){
+function days(number){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+  return code (Number(input[0]));
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -386,12 +398,27 @@ If the number is NOT a valid day, print `Invalid day!`.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+|3| Wednesday |
+|11| Invalid day! |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test open]
+[input]
+11
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
 [test]
 [input]
 1
@@ -488,12 +515,27 @@ If the number is NOT a valid day, print `Invalid day!`.
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[3]`| Wednesday |
-|`[6]`| Saturday |
-|`[11]`| Invalid day! |
+|3| Wednesday |
+|11| Invalid day! |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+3
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test open]
+[input]
+11
+[/input]
+[output]
+Invalid day!
+[/output]
+[/test]
 [test]
 [input]
 1
