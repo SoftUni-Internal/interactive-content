@@ -115,7 +115,7 @@ The **output** is **printed to the console** on a **single line**, **separated b
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 10
 15
@@ -123,7 +123,20 @@ The **output** is **printed to the console** on a **single line**, **separated b
 25
 [/input]
 [output]
-12 4 24
+50 30
+[/output]
+[/test]
+[test open]
+[input]
+3
+0
+10
+4
+7
+3
+[/input]
+[output]
+6 8 0
 [/output]
 [/test]
 [test]
@@ -253,6 +266,43 @@ The **output** is **printed to the console** on a **single line**, **separated b
 
 [/task-description]
 [tests]
+[test open]
+[input]
+10
+15
+20
+25
+[/input]
+[output]
+50 30
+[/output]
+[/test]
+[test open]
+[input]
+3
+0
+10
+4
+7
+3
+[/input]
+[output]
+6 8 0
+[/output]
+[/test]
+[test]
+[input]
+34
+12
+34
+2
+56
+6
+[/input]
+[output]
+12 4 24
+[/output]
+[/test]
 [test]
 [input]
 34
@@ -321,6 +371,7 @@ The **output** is **printed to the console** on a **single line**, **separated b
 [/tests]
 [code-io /]
 [/code-task]
+
 [/slide]
 
 [slide hideTitle]
@@ -429,16 +480,21 @@ function smallestTwoNumbers(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input.map(Number))}
+```
+[/code-adapter]
 [task-description]
 
 Write a function that **sorts** an array in **ascending order** and **prints** the first **two** numbers. 
 
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
+The **input** comes as an **array** of **numbers**. 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[30, 15, 50, 5]` | 50 30 |
+|`[30, 15, 50, 5]` | 5 15 |
 |`[3, 0, 10, 4, 7, 3]` | 0 3 |
 
 
@@ -458,6 +514,30 @@ let sortedInAscending = arr.sort((a, b) =>{
 
 [/task-description]
 [tests]
+[test open]
+[input]
+30
+15
+50
+5
+[/input]
+[output]
+5 15
+[/output]
+[/test]
+[test open]
+[input]
+3
+0
+10
+4
+7
+3
+[/input]
+[output]
+0 3
+[/output]
+[/test]
 [test]
 [input]
 \-5
@@ -543,7 +623,7 @@ function smallestTwoNumbers(input){
 
 Write a function that **sorts** an array in **ascending order** and **prints** the first **two** numbers. 
 
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
+The **input** comes as an **array** of **numbers**. 
 
 ## Examples
 | **Input** | **Output** |
@@ -568,6 +648,30 @@ let sortedInAscending = arr.sort((a, b) =>{
 
 [/task-description]
 [tests]
+[test open]
+[input]
+30
+15
+50
+5
+[/input]
+[output]
+50 30
+[/output]
+[/test]
+[test open]
+[input]
+3
+0
+10
+4
+7
+3
+[/input]
+[output]
+0 3
+[/output]
+[/test]
 [test]
 [input]
 \-5
