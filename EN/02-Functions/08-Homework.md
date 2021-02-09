@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Repeat String
 [code-task title="Repeat String" taskId="js-fundamentals-1-Functions-Repeat-String" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -13,9 +13,9 @@ function repeatString(input){
 [task-description]
 # Description
 
-Write a function that receives **a string** and a repeat count `n`. 
+Write a function that receives **a string** and a **repeat count** - `n`. 
 
-The function should return a new string (the old one repeated n times).
+The function should **return a new string** (the old one repeated **n** times).
 
 # Example
 | **Input** | **Output** |
@@ -86,22 +86,22 @@ StringString
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Smallest of Three Numbers
 [code-task title="Smallest of Three Numbers" taskId="js-fundamentals-1-Functions-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function smallestNumbers(input){
- 
+  // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Description
 
-Write a function which receives three integer and **prints out the smallest.** 
+Write a function which receives **three integers** and **prints out the smallest.** 
 
-Use an appropriate name for the function. 
+Use an **appropriate name** for the function. 
 
 # Example
 | **Input** | **Output** |
@@ -178,13 +178,13 @@ Use an appropriate name for the function.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Add and Subtract
 [code-task title="Add and Subtract" taskId="js-fundamentals-1-Functions-Add-and-Substract" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function addSubtract(input){
- 
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -321,7 +321,7 @@ Write a function called `sum()` to get the sum of the first two integers and a `
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Characters in Range
 [code-task title="Characters in Range" taskId="js-fundamentals-1-Functions-Characters-in-Range" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -336,7 +336,7 @@ function charactersInRange(input){
 
 Create a function that **receives two characters** and prints on a single line all the characters in between them according to the ASCII table. 
 
-Keep in mind that the second **character's ASCII code might be before the first one in the ASCII table.** 
+Keep in mind that the **second character's ASCII code** might be **before the first one** in the ASCII table.
 
 # Example
 | **Input** | **Output** |
@@ -407,7 +407,7 @@ b c
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Odd and Even Sum
 [code-task title="Odd and Even Sum" taskId="js-fundamentals-1-Functions-Odd-and-Even-sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -478,7 +478,7 @@ Odd sum = 30, Even sum = 8
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Palindrome Integers
 [code-task title="Palindrome Integers" taskId="js-fundamentals-1-Functions-Palindrom-Integers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -493,7 +493,7 @@ function palindrome(input){
 
 A palindrome is a number which **reads the same backward as forward**, such as 323 or 1001. 
 
-Write a function which receives an array of positive integers and checks if each integer is a palindrome or not. 
+Write a function which receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
 
 # Example
 | **Input** | **Output** |
@@ -620,7 +620,7 @@ true
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Password Validator
 [code-task title="Password Validator" taskId="js-fundamentals-1-Functions-Password-Validator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -643,11 +643,11 @@ If a password is valid print `Password is valid`.
 
 If it is **NOT** valid, for every unfulfilled rule print a message:
 
-`Password must be between 6 and 10 characters`
+- `Password must be between 6 and 10 characters`
 
-`Password must consist only of letters and digits`
+- `Password must consist only of letters and digits`
 
-`Password must have at least 2 digits`
+- `Password must have at least 2 digits`
 
 # Example
 | **Input** | **Output** |
@@ -724,7 +724,7 @@ Password is valid
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: NxN Matrix
 [code-task title="NxN Matrix" taskId="js-fundamentals-1-Functions-NxN-Matrix" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -875,7 +875,7 @@ Write a function that receives a single integer number **n** and prints **nxn** 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Perfect Number 
 [code-task title="Perfect Number" taskId="js-fundamentals-1-Functions-Perfect-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -888,11 +888,11 @@ function perfectNumber (input){
 [task-description]
 # Description
 
-Write a function that receives a number and determines whether **this number is perfect or NOT.**
+Write a function that receives a number and determines whether **the number is perfect or not.**
 
 A perfect number is a positive integer that is equal to the sum of its proper positive divisors.
 
-The sum of its positive divisors excluding the number itself (also known as its aliquot sum.
+The sum of a number's positive divisors excluding the number itself is also known as its **aliquot sum**.
 
 # Example
 | Input   | Output | Comments   |
@@ -903,9 +903,11 @@ The sum of its positive divisors excluding the number itself (also known as its 
 
 ## Hint
 
-Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors`(including itself) => 6` is a perfect number, because it is the sum of `1 + 2 + 3` (all of which are divided without residue)
+Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself
 
-- Read about the [Perfect](https://en.wikipedia.org/wiki/Perfect_number) number.
+**Six** is a perfect number, because it is the sum of `1 + 2 + 3` (all of which are divided without residue).
+
+Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_number).
 
 [/task-description]
 [tests]
