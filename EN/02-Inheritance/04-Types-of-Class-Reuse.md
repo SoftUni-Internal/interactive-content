@@ -10,9 +10,11 @@ Extension of class is called **IS-A** relationship.
 public Student extends Person{}
 ```
 
-- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we used this code in order to fix it
+- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we 
+  used this code in order to fix it
 - **Reuse classes** through **extension** and add custom logic to it
-- When a class is not from our library and we don't know its implementation we can only extend the given class to add custom logic to it
+- When a class is not from our library and we don't know its implementation we can only extend the given class to 
+    add custom logic to it
 
 [image assetsSrc="inheritance-example(15).png" /]
 
@@ -47,20 +49,20 @@ class Laptop {
 **Delegation is a process of passing attributes between objects**
 This way we can give a common interface for the client to work with as he doesn't really care of the implementation underneath.
 
+[image assetsSrc="inheritance-example(17).png" /]
+
 ```java
 class Laptop {
   Monitor monitor;
-  void incrBrightness() {           //In our class Laptop we provide a method for increasing the brigthness
-    monitor.brighten();             //although that undearneath we are calling the monior's method
-  }                                 //we give an interface to our class, without specifying the code that does the job
-                                    //this way we can also combine several methods from differnet classed under just one method.                            
+  void incrBrightness() {   //In our class Laptop we provide a method for increasing the brigthness
+    monitor.brighten();     //although that undearneath we are calling the monior's method
+  }                         //we give an interface to our class, without specifying the code that does the job
+                            //this way we can combine complex logic in just one method                      
   void decrBrightness() {
     monitor.dim();
   } 
 }
 ```
-
-[image assetsSrc="inheritance-example(17).png" /]
 
 [/slide]
 

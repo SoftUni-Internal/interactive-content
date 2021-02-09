@@ -39,6 +39,7 @@ abstract class Animal{
 // Dog class extends Animal class
 public class Dog extends Animal{
 
+    //It must declare and implement the abstract method
    public void sound(){
 	System.out.println("Woof, Woof");
    }
@@ -48,8 +49,10 @@ public class Dog extends Animal{
 ``` java
 public class Main {
     public static void main(String[] args) {
-        Animal object = new Dog();
-        object.sound();
+        Animal dog = new Dog(); 
+        //Like with the inheritance we can contain the object in an interface that it implements.
+        dog.sound();
+        //We can use only the methods the interface declares.
     }
 }
 ```

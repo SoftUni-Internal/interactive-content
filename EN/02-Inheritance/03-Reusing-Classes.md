@@ -23,7 +23,8 @@ class Person {
 # Shadowing Variables
 
 - Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
-- When you are using **shadowing** you can rebase an entire method, this means changing its parameters and logic inside, but not its return type. 
+- When you are using **shadowing** you can rebase an entire method, 
+  this means changing its parameters and logic inside, but not its return type. 
 
 ```java
 class Person { 
@@ -133,20 +134,20 @@ public class MyMath extends Math { }     // Error…
 - With inheritance, we can provide an abstraction to the classes we use
 - We can re-use code, less code means fewer bugs
 - We can achieve **Polymorphism**
-- Inheritance provides a clear model structure, which is easy to understand.
-- With inheritance, if we have a bug in the parent class, we can fix it for all child classes as well.
+- Inheritance provides a clear model structure, which is easy to understand
+- With inheritance, if we have a bug in the parent class, we can fix it for all child classes as well
+
+[image assetsSrc="inheritance-example(13).png" /]
 
 ```java
-Person person = new Person();
-Student student = new Student();
+Person person = new Person();    //When we have a base class
+Student student = new Student(); //And another inherited class 
 
-List<Person> people = new ArrayList();
+List<Person> people = new ArrayList(); //We can contain them both in a collection of the base class
 
 people.add(person);
 people.add(student);
 ```
-
-[image assetsSrc="inheritance-example(13).png" /]
 
 [/slide]
 
@@ -160,6 +161,11 @@ If we take notice of the picture, we see an extension of the `Lists<>` logic, wh
 
 [image assetsSrc="inheritance-example(14).png" /]
 
+```java
+public class MyArrayList<E> extends ArrayList<E>{
+  //Custom logic...
+}
+```
 
 [/slide]
 
