@@ -1,6 +1,6 @@
 # Problem 1: Mu Online
 
-[slide]
+[slide hideTitle]
 # Description
 
 [vimeo-video]
@@ -8,19 +8,19 @@
 [stream language="RO" videoId="497656935/bfde3ae27b"  /]
 [/video-vimeo]
 
-Your character starts with a **100 health points** and **0 bitcoins.**
+Your character starts with **100 health points** and **0 bitcoins.**
 
 You will be given a string, **representing different occurrences**, that you have to process.
 
 Each command is **separated** by a vertical bar `|`.
 
-Each command will contain a word and a number, separated by a space.
+Every command will contain a **word** and a **number**, separated by a **space**.
 
 The command can be:
 
 * Command `potion`: 
 
-Restores the specified number of health points to your character.
+**Restores** the specified number of **health points** to your character.
 
 The health points **cannot exceed 100.**
 
@@ -34,7 +34,7 @@ And after that, print your current health:
 
 * Command `chest`: 
 
-You have found bitcoins add this number to the value of your current bitcoins.
+You have found bitcoins, add this number to the value of your current bitcoins.
 
 Print:
 
@@ -42,23 +42,23 @@ Print:
 
 * Any other input you get means that you are **facing a monster**. 
 
-The **word at the beginning of the command** will be the monster name and the **number** \- the **damage that the monster deals to you.**
+The word at the **beginning of the command** will be the **monster name** and the **number** \- the **damage that the monster deals to you**.
 
-Examples: `rat {number}`, `boss {number}`, there could be other types of monster.
+Examples: `rat {number}`, `boss {number}`, there could be other types of monsters.
 
-You should **decrease you champion's health** points by the damage that each monster deals to them.
+You should **decrease you champion's health** points by the **damage** that each monster deals to them.
 
-* If you are not dead (health <= 0) you have defeated the monster, and you should print out:
+* If you are **not dead** (health >= 0) you have defeated the monster, and you should print out:
 
 `You defeated a {monster}.`
 
-* If you have died the expected output is:  
+* If **you have died** the expected output is:  
 
 `You died! Killed by {monster}.`
 
 **And your quest is over.**
 
-Print the number of the last room you have managed to reach: 
+Print the **number** of the **last room you have managed to reach**: 
 
 `Highest level reached: {last room}.`.
 
@@ -71,15 +71,15 @@ If you **managed to go through all the rooms in the dungeon**, print on the next
 `Health: {health}`
 
 ## Input
-A string, separated by a vertical bar `|`.
+A **string**, separated by a vertical bar `|`.
 
 ## Output
-Print the corresponding messages, as shown in the description.
+**Print** the corresponding **messages**, as shown in the description.
 
-[code-task title="Problem: Sum Numbers" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Mu Online" taskId="js-fundamentals-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function muOnline(input) {
 	// Write your code here
 }
 ```
@@ -99,7 +99,7 @@ function solve(input) {
 
 | **Input** | **Output** |
 | --- | --- |
-|`[cat 10|potion 30|orc 10|chest 10|snake 25|chest 110]`| You defeated a cat.|
+|`['cat 10|potion 30|orc 10|chest 10|snake 25|chest 110']`| You defeated a cat.|
 ||You healed for 10 hp.|
 ||Current health: 100 hp.|
 ||You defeated a orc.|
