@@ -40,7 +40,7 @@ After receiving `Craft!` print out all items in your inventory, separated by `, 
 [code-task title="Problem: Inventory" taskId="js-fundamentals-examPreparation-problem-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function (input) {
+function inventory(input) {
 	// Write your code here
 }
 ```
