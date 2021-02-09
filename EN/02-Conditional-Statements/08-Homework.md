@@ -2,6 +2,9 @@
 [slide]
 
 # Problem: Guess the Password
+
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
@@ -12,8 +15,6 @@ function guessThePassword(input) {
 [/code-editor]
 [task-description]
 # Description
-
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a program to check a password:
 
@@ -54,6 +55,9 @@ Wrong password!
 
 [slide]
 # Problem: Boiling Water
+
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem2-Boiling-Water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Boiling Water" taskId="pb-js-Conditions-Boiling-Water" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
@@ -64,8 +68,6 @@ function boilingWater(input) {
 [/code-editor]
 [task-description]
 # Description
-
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem2-Boiling-Water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a program, which checks for hot water: 
 
