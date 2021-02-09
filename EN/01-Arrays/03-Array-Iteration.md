@@ -67,11 +67,20 @@ for(let num of arr){
 [code-task title="Reverse an Array of Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverce(input){
+function reverce(n, inputArr){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 Write a program which receives an array of elements.
 
@@ -83,12 +92,51 @@ Where `n` is the  first element of the array.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[3, 10, 20, 30, 40, 50]` | 30 20 10 |
-|`[4, -1, 20, 99, 5]` | 5 99 20 -1 |
-|`[2, 66, 43, 75, 89, 47]` | 43 66 |
+|`3, [10, 20, 30, 40, 50]` | 30 20 10 |
+|`4, [-1, 20, 99, 5]` | 5 99 20 -1 |
+|`2, [66, 43, 75, 89, 47]` | 43 66 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+3
+10
+20
+30
+40
+50
+[/input]
+[output]
+30 20 10
+[/output]
+[/test]
+[test open]
+[input]
+4
+-1
+20
+99
+5
+[/input]
+[output]
+5 99 20 -1
+[/output]
+[/test]
+[test open]
+[input]
+2
+66
+43
+75
+89
+47
+[/input]
+[output]
+43 66
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -192,9 +240,7 @@ Where `n` is the  first element of the array.
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 
@@ -216,6 +262,15 @@ function solve(arr){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {
+    let num = Number(input[0])
+    let arr = input.splice(1, input.length)
+    return code(num, arr)
+}
+```
+[/code-adapter]
 [task-description]
 Write a program which receives an array of elements.
 
@@ -226,12 +281,51 @@ Where `n` is the  first element of the array.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`[3, 10, 20, 30, 40, 50]` | 30 20 10 |
-|`[4, -1, 20, 99, 5]` | 5 99 20 -1 |
-|`[2, 66, 43, 75, 89, 47]` | 43 66 |
+|`3, [10, 20, 30, 40, 50]` | 30 20 10 |
+|`4, [-1, 20, 99, 5]` | 5 99 20 -1 |
+|`2, [66, 43, 75, 89, 47]` | 43 66 |
 
 [/task-description]
+[code-io /]
 [tests]
+[test open]
+[input]
+3
+10
+20
+30
+40
+50
+[/input]
+[output]
+30 20 10
+[/output]
+[/test]
+[test open]
+[input]
+4
+-1
+20
+99
+5
+[/input]
+[output]
+5 99 20 -1
+[/output]
+[/test]
+[test open]
+[input]
+2
+66
+43
+75
+89
+47
+[/input]
+[output]
+43 66
+[/output]
+[/test]
 [test]
 [input]
 3
@@ -335,9 +429,7 @@ Where `n` is the  first element of the array.
 [/output]
 [/test]
 [/tests]
-[code-io /]
 [/code-task]
-
 [/slide]
 
 [slide]
