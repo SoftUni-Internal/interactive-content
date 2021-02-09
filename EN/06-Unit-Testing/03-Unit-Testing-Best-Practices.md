@@ -73,6 +73,10 @@ When we write tests, its common to find that several tests need similar object t
 
 We can use `@Before` annotation to create this behavior.
 
+The method with that annotation will be executed each time before running the next test.
+
+This will ensure consistent and clean data for each test, making our tests more reliable.
+
 Lets take a look with this simple example:
 
 ``` java
@@ -114,6 +118,8 @@ There are few recommendations regarding test names:
 
 - We must write clean names.
 
+- Do not be afriad to write long names, as long as they need to be to explain the test.
+
 Lets see some examples of **bad** test naming:
 
 ```
@@ -131,7 +137,59 @@ depositNegativeShouldNotAddMoney() {}
 transferSubtractsFromSourceAddsToDestAccount() {}
 ```
 
+[/slide]
 
+[slide hideTitle]
 
+# Problem: Refactor Tests
+
+## Description
+Refactor the tests for **Axe** and **Dummy** classes
+
+Make sure that:
+- **Names** of test methods are **descriptive**
+- You use **appropriate assertions** (assert equals vs assert true)
+- You use **assertion messages**
+- There are **no magic numbers**
+- There is **no code duplication** (Don’t Repeat Yourself)
+
+## Hints
+
+Extract constants and private fields for `Axe` class
+```java
+private static final int AXE_ATTACK = 10;
+private static final int AXE_DURABILITY = 1;
+private static final int DUMMY_HEALTH = 20;
+private static final int DUMMY_XP = 10;
+private static final int EXPECTED_DURABILITY = AXE_DURABILITY - 1;
+
+private Axe axe;
+private Dummy dummy;
+```
+
+Create a method that executes before each test:
+```java
+@Before
+public void initializeTestObjects(){
+  this.axe - new Axe(AXE_ATTACK, AXE_DURABILITY);
+  this.dummy = new Dummy(DUMMY_HEALTH, DUMMY_XP);
+}
+```
+
+Make use of constants and private fields, as well as add assertion messages
+```java
+@Test
+public void weaponAttackLosesDurability(){
+  //Act
+  this.axe.attack(this.dummy);
+
+  //Assert
+  Assert.assertEquals("Wrong Durability, "),
+          EXPECTED_DURABILITY,
+          this.axe.getDurabilityPoints());
+}
+```
+
+Follow the same logic for other test methods and `TestDummy` class
 
 [/slide]

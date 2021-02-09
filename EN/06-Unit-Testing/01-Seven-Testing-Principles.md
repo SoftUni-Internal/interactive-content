@@ -34,7 +34,9 @@ It is recommended to test input data using different methods like **Boundary Val
 
 Most of the defects that are found during **pre-release testing** are related to a small numbers of module.
 
-The main reason behind this is that the modules may be **too complex**. Coding related to such modules is complicated.
+The main reason behind this is that the modules may be **too complex**. 
+
+Coding related to such modules is complicated.
 
 ## 4.Early Testing:
 
@@ -64,11 +66,8 @@ Sometimes our software is tested against wrong requirements.
 
 Finding and fixing defects itself does not help when:
 
-- Our system built is unusable.
+- Our system built is unusable
 
-- When our software does not fulfill the users needs and expectations.
-
-
-
+- When our software does not fulfill the users needs and expectations
 
 [/slide]

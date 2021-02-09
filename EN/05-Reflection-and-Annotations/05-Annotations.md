@@ -6,7 +6,7 @@ What is Java Annotation?
 
 Annotations are kind of **metadata** that you can insert in your Java code.
 
-They are Java types that are preceded by an "** @**" symbol and are used to **describes** parts of your code.
+They are Java types that are preceded by an "**@**" symbol and are used to **describes** parts of your code.
 
 Annotations can be applied to **Classes**, **Fields**, **Methods**, etc.
 

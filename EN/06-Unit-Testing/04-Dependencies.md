@@ -4,7 +4,7 @@
 
 It is important to understand that not many components live on their own without reliance on other components.
 
-Instead of creating a components, that are close-coupled to each other we can use **dependency injection** to improve the *separation of concerns*. 
+Instead of creating a components, that are close-coupled to each other we can use **dependency injection** to improve the **separation of concerns**. 
 
 You can read more detailed information about [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
@@ -67,11 +67,11 @@ They are not the same as the production ones.
 
 A very good example of this is working with implementation of Repository.
 
-Our repository will use a collection to **store data**, but it won't engage any **database**.
+Our repository will use a collection to **store data**, but it will not engage any **database**.
 
 This will allow us to test easier, without starting up a database and performing time consuming requests.
 
-To illustrate this, lets see an example of that:
+To illustrate this, lets see an example it:
 
 ``` java
 public class FakeRepository implements AccountRepository {
@@ -131,7 +131,147 @@ Copy this in to pom.xml file:
 
 [slide hideTitle]
 
+# Problem: Fake Axe and Dummy
+
+## Description
+Test if hero gains XP when target dies.
+
+To do this, you need to:
+- Make Hero class testable (use Dependency Injection)
+- Introduce Interfaces for Axe and Dummy
+  - Interface Weapon 
+  - Interface Target 
+
+Create fake Weapon and fake Dummy for the test.
+
+## Hints
+
+Create Weapon interface
+```java
+public interface Weapon{
+
+  void attack(Target target);
+
+  int getAttackPoints();
+
+  int getDurabilityPoints();
+}
+```
+
+Create `Target` interface
+
+```java
+public interface Target{
+
+  void takeAttack(int attackPoints);
+
+  int getHealth();
+
+  int giveExperience();
+
+  boolean isDead();
+}
+```
+
+Implement interfaces
+
+```java
+public class Axe implements Weapon{
+
+  public void Attack(Target target){
+    if (this.durabilityPoints <= 0){
+      throw new IllegalStateException("Axe is broken.");
+    }
+
+    target.takeAttack(this.attackPoints);
+    this.durabilityPoints -= 1;
+  }
+}
+```
+
+Modify both `Axe` and `Dummy` classes
+
+Use **Dependency Injection** for `Hero` class
+
+```java
+public Hero(String name, Weapon weapon){
+  this.name = name;
+  this.experience = 0;
+  this.weapon = weapon;
+}
+```
+
+Create `HeroTests` class and test gaining XP functionality by faking `Weapon` and `Target` classes.
+
+```java
+@Test
+public void attackGainsExperienceIfTargetIsDead(){
+  Target fakeTarget = new Target(){
+    public void takeAttack(int attackPoints) { }
+    public int getHealth() { return 0; }
+    public int giveExperience() { return TARGET_XP; }
+    public boolean isDead() { return true; }
+  };
+
+  Weapon fakeWeapon = new Weapon() {
+    public void attack(Target target) { }
+    public int getAttackPoints() { return 10; }
+    public int getDurabilityPoints() { return 0; }
+  };
+
+  Hero hero = new Hero(HERO_NAME, fakeWeapon);
+  hero.attack(fakeTarget);
+  Assert.assertEquals("Wrong experience", TARGET_XP, hero.getExperience());
+}
+```
+[/slide]
+
+[slide hideTitle]
+
 # Problem: Mocking
+Include **Mockito** in the project dependencies, then:
+1.	Mock fakes from previous problem
+2.	Implement **Hero Inventory**, holding unequipped weapons
+  - method - **Iterable<\Weapon\> getInventory()**
+3.	Implement Target giving random weapon upon death
+  - field - **private List<\Weapon\> possibleLoot**
+4.	Test Hero killing a target getting loot in his inventory
+
+## Hints
+Locate **pom.xml**
+[image assetsSrc="Unit-Testing-Example(8).png" /]
 
 
+Add **Mockito** dependency
+
+```
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-android</artifactId>
+  <version>2.7.19</version>
+  <type>pom</type>
+</dependency>
+```
+
+Go to `HeroTests` and refactor the code, making use of **Mockito**
+
+```java
+@Test
+public void attackGainsExperienceIfTargetIsDead(){
+  Weapon weaponMock = Mockito.mock(Weapon.class);
+  Target targetMock = Mockito.mock(Target.classTarget;
+  Mockito.when(targetMock.isDead()).thenReturn(true);
+  Mockito.when(targetMock.giveExperience()).thenReturn(TARGET_XP);
+
+  Hero hero = new Hero(Hero_Name, weaponMock);
+
+  hero.attack(targetMock);
+
+  Assert.assertEquals("Wrong experience", TARGET_XP, hero.getExperience());
+}
+```
+
+- Implement hero inventory and `Target` dropping loot functionalities
+
+- Test `Hero` getting loot upon killing a `Target`
 [/slide]
