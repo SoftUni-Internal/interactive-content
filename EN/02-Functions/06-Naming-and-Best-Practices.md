@@ -3,10 +3,8 @@
 [slide hideTitle]
 # Naming Functions
 
-[vimeo-video]
-[stream language="EN" videoId="489373649/847cb6caf0" default /]
-[stream language="RO" videoId="489373649/847cb6caf0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-30-naming-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 - Function names should **describe their task** in a **clear** and **unambigious** way
 - Their names should be **meaningful and not very long**
@@ -49,10 +47,7 @@ p, p1, p2, populate, LastName, lastName
 
 # Best Function Practices
 
-[vimeo-video]
-[stream language="EN" videoId="489373682/d2ab7caa52" default /]
-[stream language="RO" videoId="489373682/d2ab7caa52"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-29-naming-and-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
  - Each function should perform a **single**, well-defined task
@@ -102,27 +97,17 @@ function sum()
 [slide hideTitle]
 # Problem: Simple Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="489373707/dfc94da2ab" default /]
-[stream language="RO" videoId="489373707/dfc94da2ab"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-34-problem-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Simple Calculator" taskId="fundamentals-js-functions-lab-Simple-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function simpleCalculator(firstNumber, secondNumber, operator){
+function simpleCalculator(input){
   // Write your code here
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(Number(input[0]), Number(input[1]), input[2])}
-```
-[/code-adapter]
 [task-description]
-# Description
-
 Write a function that receives an array containing three elements. 
 
 Write an arrow function that calculates the result depending on the specified operator. 
@@ -134,53 +119,12 @@ The operator could only be one of the following: `multiply`, `divide`, `add` and
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|5, 5, 'multiply' | 25 |
-|40, 8, 'divide' | 5 |
-|12, 19, 'add' | 31 |
+|`['5', '5', 'multiply']` | 25 |
+|`['40', '8', 'divide']` | 5 |
+|`['12', '19', 'add']` | 31 |
 
 [/task-description]
-[code-io /]
 [tests]
-[test open]
-[input]
-5
-10
-multiply
-[/input]
-[output]
-50
-[/output]
-[/test]
-[test open]
-[input]
-40
-8
-divide
-[/input]
-[output]
-5
-[/output]
-[/test]
-[test open]
-[input]
-12
-19
-add
-[/input]
-[output]
-31
-[/output]
-[/test]
-[test open]
-[input]
-50
-13
-subtract
-[/input]
-[output]
-37
-[/output]
-[/test]
 [test]
 [input]
 1
@@ -258,20 +202,19 @@ add
 subtract
 [/input]
 [output]
--475
+\-475
 [/output]
 [/test]
 [/tests]
+[code-io /]
 [/code-task]
+
 [/slide]
 
 [slide hideTitle]
 # Solution: Simple Calculator
 
-[vimeo-video]
-[stream language="EN" videoId="489373791/a1578a4a89" default /]
-[stream language="RO" videoId="489373791/a1578a4a89"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-solution-simple-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Simple Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -281,14 +224,7 @@ function simpleCalculator(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(Number(input[0]), Number(input[1]), input[2])}
-```
-[/code-adapter]
 [task-description]
-# Description
-
 Write a function that receives an array containing three elements. 
 
 Write an arrow function that calculates the result depending on the specified operator. 
@@ -300,53 +236,12 @@ The operator could only be one of the following: `multiply`, `divide`, `add` and
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|5, 5, 'multiply' | 25 |
-|40, 8, 'divide' | 5 |
-|12, 19, 'add' | 31 |
+|`['5', '5', 'multiply']` | 25 |
+|`['40', '8', 'divide']` | 5 |
+|`['12', '19', 'add']` | 31 |
 
 [/task-description]
-[code-io /]
 [tests]
-[test open]
-[input]
-5
-10
-multiply
-[/input]
-[output]
-50
-[/output]
-[/test]
-[test open]
-[input]
-40
-8
-divide
-[/input]
-[output]
-5
-[/output]
-[/test]
-[test open]
-[input]
-12
-19
-add
-[/input]
-[output]
-31
-[/output]
-[/test]
-[test open]
-[input]
-50
-13
-subtract
-[/input]
-[output]
-37
-[/output]
-[/test]
 [test]
 [input]
 1
@@ -424,9 +319,11 @@ add
 subtract
 [/input]
 [output]
--475
+\-475
 [/output]
 [/test]
 [/tests]
+[code-io /]
 [/code-task]
+
 [/slide]

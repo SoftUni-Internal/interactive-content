@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Declaring a Function
 
-[vimeo-video]
-[stream language="EN" videoId="489373256/dbc8412983" default /]
-[stream language="RO" videoId="489373256/dbc8412983"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-6-7-declaring-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A function is defined by using the keyword `function` followed by the name of the function and a set of parentheses which hold parameters or values to be received by the function. 
 
@@ -49,10 +46,7 @@ function printText(text){
 [slide hideTitle]
 # Invoking a Function
 
-[vimeo-video]
-[stream language="EN" videoId="489373258/bc07c2ad58" default /]
-[stream language="RO" videoId="489373258/bc07c2ad58"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-8-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 A function is not executed before it is invoked.
@@ -71,10 +65,7 @@ hLine();
 
 ## Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489373310/980f876469" default /]
-[stream language="RO" videoId="489373310/980f876469"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-9-invoking-a-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -82,10 +73,7 @@ hLine();
 [slide hideTitle]
 # Invoking a Function from Another Function
 
-[vimeo-video]
-[stream language="EN" videoId="489373314/21401d79a4" default /]
-[stream language="RO" videoId="489373314/21401d79a4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-10-invoking-a-function-from-another-function-and-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 We can also invoke a **function** from **another function:**
@@ -101,10 +89,7 @@ function printDocument() {
 [slide hideTitle]
 # Recursion
 
-[vimeo-video]
-[stream language="EN" videoId="489373783/9258f21dc4" default /]
-[stream language="RO" videoId="489373783/9258f21dc4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-recursion-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can also invoke a **function in its own body (recursion):**
 
@@ -129,10 +114,7 @@ If **no such condition exists**, the function will call itself **endlessly**.
 [slide hideTitle]
 # Functions Without Parameters
 
-[vimeo-video]
-[stream language="EN" videoId="489373376/28ddf53572" default /]
-[stream language="RO" videoId="489373376/28ddf53572"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-11-12-functions-with-and-without-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can have a function **with or without** parameters.
 
@@ -153,10 +135,7 @@ printHeader();
 [slide hideTitle]
 # Functions With Parameters
 
-[vimeo-video]
-[stream language="EN" videoId="489373715/065a22dd97" default /]
-[stream language="RO" videoId="489373715/065a22dd97"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-functions-with-parameters-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A function can receive **any number and type of arguments** when invoked.
 
@@ -190,10 +169,8 @@ If we pass more arguments, then additional arguments **will be ignored.**
 [slide hideTitle]
 # Problem: Grades
 
-[vimeo-video]
-[stream language="EN" videoId="489373386/94e32c3892" default /]
-[stream language="RO" videoId="489373386/94e32c3892"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-13-problem-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 
 [code-task title="Grades" taskId="fundamentals-js-functions-lab-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -304,10 +281,7 @@ Fail
 [slide hideTitle]
 # Solution: Grades
 
-[vimeo-video]
-[stream language="EN" videoId="489373420/6a36318ce6" default /]
-[stream language="RO" videoId="489373420/6a36318ce6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-14-solution-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -418,10 +392,7 @@ Fail
 [slide hideTitle]
 # Problem: Math Power
 
-[vimeo-video]
-[stream language="EN" videoId="489373435/cb25361ef7" default /]
-[stream language="RO" videoId="489373435/cb25361ef7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-15-problem-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Math Power" taskId="fundamentals-js-functions-lab-Math-Power"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -570,10 +541,7 @@ Write a function that **calculates** and returns the value of a number **raised 
 [slide hideTitle]
 # Solution: Math Power
 
-[vimeo-video]
-[stream language="EN" videoId="489373438/64f923b0a0" default /]
-[stream language="RO" videoId="489373438/64f923b0a0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/03.JS-Fundamentals-Functions/EN/03.JS-Fundamentals-Functions-16-solution-math-power-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Math Power" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
