@@ -1,14 +1,14 @@
 # Functions Overview
 
-[slide]
-# Functions in JS
+[slide hideTitle]
+# Functions in JavaScript
 
 [vimeo-video]
 [stream language="EN" videoId="489373212/52cac3ad3a" default /]
 [stream language="RO" videoId="489373212/52cac3ad3a"  /]
 [/video-vimeo]
 
-A function is a subprogram designed to perform a particular task.
+A function is a **subprogram** designed to perform a particular **task**.
 
 Functions are executed when they are called, this is known as **invoking a function.**
 
@@ -24,12 +24,12 @@ printStars(4)
 
 A function is a **block of code** which is **executed only when called.**
 
-Data can be **passed to it**, as parameters.
+Data can be **passed to it** in the form of parameters.
 
-**Functions can** return data too, as a result.
+**Functions** can **return data** too, as a result.
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Why Use Functions?
 
 [vimeo-video]
@@ -38,7 +38,7 @@ Data can be **passed to it**, as parameters.
 [/video-vimeo]
 
 
-The reasons functions should be used are:
+The reasons for using functions are:
  - Splits large problems **into small pieces**
  - **Better organization** of the program code
  - Improves code **readiblity**
