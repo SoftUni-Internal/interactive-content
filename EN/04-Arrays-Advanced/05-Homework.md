@@ -124,11 +124,6 @@ function train(arr){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => {return c(i.map(Number))}
-```
-[/code-adapter]
 [task-description]
 # Description
 
