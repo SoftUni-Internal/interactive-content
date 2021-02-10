@@ -14,7 +14,7 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-It is hot and sunny outside so тхе SoftUni training team decides to organize a workday by the swimming pool. 
+It is hot and sunny outside so the SoftUni training team decides to organize a workday by the swimming pool. 
 
 Your task is to write a program that calculates the amount that should be paid. 
 
