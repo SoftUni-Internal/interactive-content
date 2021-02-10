@@ -4,8 +4,6 @@
 
 ## In this lesson you learned: 
 
-**DOM**
-
 - A programming API for **XML** and **HTML** documents
 
 - DOM **methods** and **properties**
@@ -27,8 +25,6 @@ h1.remove();
 container.removeChild(content);
 ```
 
-**BOM**
-
 - **Accessing and using** the browser's objects with JavaScript
 
 ```js
@@ -41,7 +37,7 @@ history.back();
 
 ## In the next lesson you will learn:
 
-**DOM Manipulations**
+- **DOM Manipulations**
 
 - A deeper look into **DOM-manipulating operations**
 
