@@ -339,7 +339,21 @@ If the display style is `none`, we should **change** it to `block` and the **opp
 [tests]
 [test]
 [input]
-document.body.innerHTML = `\<div id="accordion"\> \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\> \<div id="extra" style="display: none"\> \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\</p\> \</div\> \</div\>`;
+document.body.innerHTML = `
+\<div id="accordion"\>
+        \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
+        \<div id="extra" style="display: none"\>
+            \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.\</p\>
+        \</div\>
+    \</div\>
+`;
 
 result(); // Show
 
@@ -357,7 +371,21 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<div id="accordion"\> \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\> \<div id="extra" style="display: none"\> \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\</p\> \</div\> \</div\>`;
+document.body.innerHTML = `
+\<div id="accordion"\>
+        \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
+        \<div id="extra" style="display: none"\>
+            \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.\</p\>
+        \</div\>
+    \</div\>
+`;
 
 let extra = document.getElementById("extra");
 let button = document.getElementsByClassName("button")\[0\];
@@ -376,7 +404,21 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<div id="accordion"\> \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\> \<div id="extra" style="display: none"\> \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\</p\> \</div\> \</div\>`;
+document.body.innerHTML = `
+\<div id="accordion"\>
+        \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
+        \<div id="extra" style="display: none"\>
+            \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.\</p\>
+        \</div\>
+    \</div\>
+`;
 
 let extra = document.getElementById("extra");
 let button = document.getElementsByClassName("button")\[0\];
@@ -405,9 +447,10 @@ yes
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 
-# Problem: Order the names
+# Problem: Order the Names
 
 [code-task title="Problem: Order the names" taskId="js-advanced-DOM-Order-The-Names" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
@@ -494,7 +537,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -557,7 +599,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -620,7 +661,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -683,7 +723,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -748,7 +787,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -822,7 +860,6 @@ document.body.innerHTML = `
         \</main\>
 
     \</div\>
-
 `;
 
 result();
@@ -892,25 +929,25 @@ The **current div** should be appended to the div with an `id="chat_messages"`.
 [input]
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -930,7 +967,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -953,25 +989,25 @@ yes
 // Children length, textContent, tagName
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -991,7 +1027,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -1014,25 +1049,25 @@ yes
 // Class name check
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -1052,7 +1087,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -1073,25 +1107,25 @@ yes
 // Clearing input field
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -1111,7 +1145,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -1131,25 +1164,25 @@ yes
 // Multiple messages
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -1169,7 +1202,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -1202,25 +1234,25 @@ yes
 // Children length, textContent, tagName
 document.body.innerHTML = `
 \<div class="flexbox"\>
-\<div class="chat-box"\>
-\<div class="chat-box-header"\>
-\<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
-\</div\>
-\<div id="chat_box_body" class="chat-box-body"\>
-\<div id="chat_messages"\>
-\<div class="profile other-profile"\>
-\<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
-width="30" height="30" /\>
-\<span\>Other profile\</span\>
-\</div\>
-\<div class="message other-message"\>
-Sorry, I am busy right now, Can I write you back later?
-\</div\>
-\<div class="profile my-profile"\>
-\<span\>My profile\</span\>
-\<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
-width="30" height="30" /\>
-\</div\>
+        \<div class="chat-box"\>
+            \<div class="chat-box-header"\>
+                \<h3\>Chat Room\<br /\>\<small\>Last active: 2 min ago\</small\>\</h3\>
+            \</div\>
+            \<div id="chat_box_body" class="chat-box-body"\>
+                \<div id="chat_messages"\>
+                    \<div class="profile other-profile"\>
+                        \<img src="https://images.unsplash.com/photo-1537396123722-b93d0acd8848?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=efc6e85c24d3cfdd15cd36cb8a2471ed"
+                            width="30" height="30" /\>
+                        \<span\>Other profile\</span\>
+                    \</div\>
+                    \<div class="message other-message"\>
+                        Sorry, I am busy right now, Can I write you back later?
+                    \</div\>
+                    \<div class="profile my-profile"\>
+                        \<span\>My profile\</span\>
+                        \<img src="https://images.unsplash.com/photo-1534135954997-e58fbd6dbbfc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=02d536c38d9cfeb4f35f17fdfaa36619"
+                            width="30" height="30" /\>
+                    \</div\>
 
                     \<div class="message my-message"\>
                         Hi!
@@ -1240,7 +1272,6 @@ width="30" height="30" /\>
             \</div\>
         \</div\>
     \</div\>
-
 `;
 
 result();
@@ -1325,36 +1356,35 @@ And we press `Clear`, the expected result should be:
 [test open]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1387,36 +1417,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1443,36 +1472,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1497,36 +1525,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1552,36 +1579,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1604,36 +1630,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1661,36 +1686,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1729,36 +1753,35 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="calculator"\>
-\<!-- Screen and clear key --\>
-\<div class="top"\>
-\<button class="clear" type="button" value="Clear"\>C\</button\>
-\<p id="expressionOutput"\>\</p\>
-\<p id="resultOutput"\>\</p\>
-\<div id="result"\>\</div\>
-\</div\>
+	\<div id="calculator"\>
+		\<!-- Screen and clear key --\>
+		\<div class="top"\>
+			\<button class="clear" type="button" value="Clear"\>C\</button\>
+			\<p id="expressionOutput"\>\</p\>
+			\<p id="resultOutput"\>\</p\>
+			\<div id="result"\>\</div\>
+		\</div\>
 
-    	\<div class="keys"\>
-    		\<!-- operators and other keys --\>
-    		\<button type="button" value="7"\>7\</button\>
-    		\<button type="button" value="8"\>8\</button\>
-    		\<button type="button" value="9"\>9\</button\>
-    		\<button type="button" value="/"\>/\</button\>
-    		\<button type="button" value="4"\>4\</button\>
-    		\<button type="button" value="5"\>5\</button\>
-    		\<button type="button" value="6"\>6\</button\>
-    		\<button type="button" value="\*"\>x\</button\>
-    		\<button type="button" value="1"\>1\</button\>
-    		\<button type="button" value="2"\>2\</button\>
-    		\<button type="button" value="3"\>3\</button\>
-    		\<button type="button" value="-"\>-\</button\>
-    		\<button type="button" value="0"\>0\</button\>
-    		\<button type="button" value="."\>.\</button\>
-    		\<button type="button" value="="\>=\</button\>
-    		\<button type="button" value="+"\>+\</button\>
-    	\</div\>
-    \</div\>
-
+		\<div class="keys"\>
+			\<!-- operators and other keys --\>
+			\<button type="button" value="7"\>7\</button\>
+			\<button type="button" value="8"\>8\</button\>
+			\<button type="button" value="9"\>9\</button\>
+			\<button type="button" value="/"\>/\</button\>
+			\<button type="button" value="4"\>4\</button\>
+			\<button type="button" value="5"\>5\</button\>
+			\<button type="button" value="6"\>6\</button\>
+			\<button type="button" value="\*"\>x\</button\>
+			\<button type="button" value="1"\>1\</button\>
+			\<button type="button" value="2"\>2\</button\>
+			\<button type="button" value="3"\>3\</button\>
+			\<button type="button" value="-"\>-\</button\>
+			\<button type="button" value="0"\>0\</button\>
+			\<button type="button" value="."\>.\</button\>
+			\<button type="button" value="="\>=\</button\>
+			\<button type="button" value="+"\>+\</button\>
+		\</div\>
+	\</div\>
 `;
 
 result();
@@ -1837,7 +1860,25 @@ Also they should have values (binary and hexadecimal).
 [test open]
 [input]
 // 20 to binary
-document.body.innerHTML = `\<div id="container"\> \<label for="input"\>Number\</label\> \<input type="number" id="input"/\>\<br\> \<label for="selectMenuFrom"\>From\</label\> \<select id="selectMenuFrom"\> \<option selected value="decimal"\>Decimal\</option\> \</select\> \<label for="selectMenuTo"\>To\</label\> \<select id="selectMenuTo"\> \<option selected value=""\>\</option\> \</select\> \<button\>Convert it\</button\> \</div\> \<footer\> \<label for="result"\>Result\</label\> \<input type="text" name="output" id="result" disabled readonly/\> \</footer\>`;
+document.body.innerHTML = `
+\<div id="container"\>
+    \<label for="input"\>Number\</label\>
+    \<input type="number" id="input"/\>\<br\>
+    \<label for="selectMenuFrom"\>From\</label\>
+    \<select id="selectMenuFrom"\>
+        \<option selected value="decimal"\>Decimal\</option\>
+    \</select\>
+    \<label for="selectMenuTo"\>To\</label\>
+    \<select id="selectMenuTo"\>
+        \<option selected value=""\>\</option\>
+    \</select\>
+    \<button\>Convert it\</button\>
+\</div\>
+\<footer\>
+    \<label for="result"\>Result\</label\>
+    \<input type="text" name="output" id="result" disabled readonly/\>
+\</footer\>
+`;
 
 result();
 
@@ -1855,7 +1896,25 @@ yes
 [test]
 [input]
 // 100 to binary
-document.body.innerHTML = `\<div id="container"\> \<label for="input"\>Number\</label\> \<input type="number" id="input"/\>\<br\> \<label for="selectMenuFrom"\>From\</label\> \<select id="selectMenuFrom"\> \<option selected value="decimal"\>Decimal\</option\> \</select\> \<label for="selectMenuTo"\>To\</label\> \<select id="selectMenuTo"\> \<option selected value=""\>\</option\> \</select\> \<button\>Convert it\</button\> \</div\> \<footer\> \<label for="result"\>Result\</label\> \<input type="text" name="output" id="result" disabled readonly/\> \</footer\>`;
+document.body.innerHTML = `
+\<div id="container"\>
+    \<label for="input"\>Number\</label\>
+    \<input type="number" id="input"/\>\<br\>
+    \<label for="selectMenuFrom"\>From\</label\>
+    \<select id="selectMenuFrom"\>
+        \<option selected value="decimal"\>Decimal\</option\>
+    \</select\>
+    \<label for="selectMenuTo"\>To\</label\>
+    \<select id="selectMenuTo"\>
+        \<option selected value=""\>\</option\>
+    \</select\>
+    \<button\>Convert it\</button\>
+\</div\>
+\<footer\>
+    \<label for="result"\>Result\</label\>
+    \<input type="text" name="output" id="result" disabled readonly/\>
+\</footer\>
+`;
 
 result();
 
@@ -1873,7 +1932,25 @@ yes
 [test]
 [input]
 // 110 to hexadecimal
-document.body.innerHTML = `\<div id="container"\> \<label for="input"\>Number\</label\> \<input type="number" id="input"/\>\<br\> \<label for="selectMenuFrom"\>From\</label\> \<select id="selectMenuFrom"\> \<option selected value="decimal"\>Decimal\</option\> \</select\> \<label for="selectMenuTo"\>To\</label\> \<select id="selectMenuTo"\> \<option selected value=""\>\</option\> \</select\> \<button\>Convert it\</button\> \</div\> \<footer\> \<label for="result"\>Result\</label\> \<input type="text" name="output" id="result" disabled readonly/\> \</footer\>`;
+document.body.innerHTML = `
+\<div id="container"\>
+    \<label for="input"\>Number\</label\>
+    \<input type="number" id="input"/\>\<br\>
+    \<label for="selectMenuFrom"\>From\</label\>
+    \<select id="selectMenuFrom"\>
+        \<option selected value="decimal"\>Decimal\</option\>
+    \</select\>
+    \<label for="selectMenuTo"\>To\</label\>
+    \<select id="selectMenuTo"\>
+        \<option selected value=""\>\</option\>
+    \</select\>
+    \<button\>Convert it\</button\>
+\</div\>
+\<footer\>
+    \<label for="result"\>Result\</label\>
+    \<input type="text" name="output" id="result" disabled readonly/\>
+\</footer\>
+`;
 
 result();
 
@@ -1891,7 +1968,25 @@ yes
 [test]
 [input]
 // 1515 to hexadecimal
-document.body.innerHTML = `\<div id="container"\> \<label for="input"\>Number\</label\> \<input type="number" id="input"/\>\<br\> \<label for="selectMenuFrom"\>From\</label\> \<select id="selectMenuFrom"\> \<option selected value="decimal"\>Decimal\</option\> \</select\> \<label for="selectMenuTo"\>To\</label\> \<select id="selectMenuTo"\> \<option selected value=""\>\</option\> \</select\> \<button\>Convert it\</button\> \</div\> \<footer\> \<label for="result"\>Result\</label\> \<input type="text" name="output" id="result" disabled readonly/\> \</footer\>`;
+document.body.innerHTML = `
+\<div id="container"\>
+    \<label for="input"\>Number\</label\>
+    \<input type="number" id="input"/\>\<br\>
+    \<label for="selectMenuFrom"\>From\</label\>
+    \<select id="selectMenuFrom"\>
+        \<option selected value="decimal"\>Decimal\</option\>
+    \</select\>
+    \<label for="selectMenuTo"\>To\</label\>
+    \<select id="selectMenuTo"\>
+        \<option selected value=""\>\</option\>
+    \</select\>
+    \<button\>Convert it\</button\>
+\</div\>
+\<footer\>
+    \<label for="result"\>Result\</label\>
+    \<input type="text" name="output" id="result" disabled readonly/\>
+\</footer\>
+`;
 
 result();
 
@@ -1909,7 +2004,25 @@ yes
 [test]
 [input]
 // 903 to binary
-document.body.innerHTML = `\<div id="container"\> \<label for="input"\>Number\</label\> \<input type="number" id="input"/\>\<br\> \<label for="selectMenuFrom"\>From\</label\> \<select id="selectMenuFrom"\> \<option selected value="decimal"\>Decimal\</option\> \</select\> \<label for="selectMenuTo"\>To\</label\> \<select id="selectMenuTo"\> \<option selected value=""\>\</option\> \</select\> \<button\>Convert it\</button\> \</div\> \<footer\> \<label for="result"\>Result\</label\> \<input type="text" name="output" id="result" disabled readonly/\> \</footer\>`;
+document.body.innerHTML = `
+\<div id="container"\>
+    \<label for="input"\>Number\</label\>
+    \<input type="number" id="input"/\>\<br\>
+    \<label for="selectMenuFrom"\>From\</label\>
+    \<select id="selectMenuFrom"\>
+        \<option selected value="decimal"\>Decimal\</option\>
+    \</select\>
+    \<label for="selectMenuTo"\>To\</label\>
+    \<select id="selectMenuTo"\>
+        \<option selected value=""\>\</option\>
+    \</select\>
+    \<button\>Convert it\</button\>
+\</div\>
+\<footer\>
+    \<label for="result"\>Result\</label\>
+    \<input type="text" name="output" id="result" disabled readonly/\>
+\</footer\>
+`;
 
 result();
 
