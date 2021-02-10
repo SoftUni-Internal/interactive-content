@@ -4,6 +4,8 @@
 
 # What is a closure?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-20-21-closure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In a **closure**, the **inner function scope** includes that of the **outer (enclosing) function**.
 
 
@@ -46,6 +48,8 @@ When a function **finishes execution**, any variables that were defined **inside
 [slide hideTitle]
 
 # Functions Returning Functions
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-22-functions-returning-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **state** is preserved in the outer function (closure):
 

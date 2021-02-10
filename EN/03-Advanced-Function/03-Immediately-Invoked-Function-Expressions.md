@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-18-19-iife-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 An **Immediately-Invoked Function Expression** is a JavaScript **function** that **runs instantly after it is defined**.
 
 **Immediately-Invoked Function Expressions** are:

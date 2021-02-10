@@ -4,6 +4,8 @@
 
 # Currying
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-13-15-currying-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use **currying** to evaluate a function with **multiple arguments**, into a **sequence** of functions with a **single argument**.
 
 ```js live
@@ -31,6 +33,8 @@ Some example uses of **currying** include:
 
 [slide hideTitle]
 # Partial Application
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-16-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Reducing** the number of function **parameters** by converting it to a **new function with fewer parameters**, is called **Partial Application**.
 
@@ -61,6 +65,8 @@ The resulting function takes in **one**, instead of **two** parameters.
 
 [slide hideTitle]
 # Currying vs Partial Application
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-17-currying-vs-partial-application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The main differences between **currying** and **partial application** are:
 

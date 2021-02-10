@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-25-27-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Error handling** comprises of the **response** and **recovery procedures** from error conditions in an application.
 
 A function should either:
@@ -48,6 +50,8 @@ The `toUppercase()` function will throw a TypeError, because it is invoked with 
 [slide hideTitle]
 # Types of Errors
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-28-types-of-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The three most common types of **errors** are:
 
 - **Syntax Errors**
@@ -74,6 +78,8 @@ The three most common types of **errors** are:
 [slide hideTitle]
 
 # Error Handling - Exceptions
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-29-error-handling-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An exception occurs when a function is unable to do execute its task successfully resulting in an error.
 
@@ -110,6 +116,8 @@ console.log(George);   // Uncaught ReferenceError
 
 # Error Handling - Special Values
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-30-error-handling-special-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 ```js live
 let sqrt = Math.sqrt(-1); // NaN (special value)
@@ -134,6 +142,8 @@ let date = invalid.getDate(); // NaN
 [slide hideTitle]
 # Throwing Exceptions
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-31-throwing-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use the `throw` statement to manually throw an exception:
 
 ```js
@@ -152,6 +162,8 @@ If ``TypeError`` is thrown, the rest of the code **will not** be executed.
 
 [slide hideTitle]
 # Try-Catch
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-32-try-catch-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **try-catch** construct consists of two main blocks: 
 
@@ -172,6 +184,8 @@ try {
 
 [slide hideTitle]
 # Exception Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-33-exception-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `Error` object contains multiple properties:
 

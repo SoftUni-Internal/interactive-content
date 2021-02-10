@@ -4,6 +4,8 @@
 
 # First-Class Functions
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-3-7-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 In JavaScript functions are treated as **first-class citizens**.
 
@@ -60,6 +62,8 @@ In short, first-class functions **support all the operations** available to any 
 
 # Higher-Order Functions
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-8-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Higher-order functions** can accept other functions as **arguments** and return them as **values**.
 
 Here is a higher-order function in action:
@@ -83,6 +87,8 @@ When invoked, the `sayHello` function returns another function, which is then as
 
 # Predicates
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-9-predicates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 A **predicate** is any function that takes one value as input and returns **true** or **false** based on whether the value **satisfies the condition**.
 
@@ -105,6 +111,8 @@ It returns a **boolean**, meaning it is a **predicate**.
 [slide hideTitle]
 
 # Built-in Higher-Order Functions
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-10-built-in-higher-order-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Built\-in higher-order functions accept a **callback function** as an argument, which is called on **every element** in an array.
 
@@ -172,6 +180,8 @@ In the end, the result is stored in the **sum** variable.
 
 # Pure Functions
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-11-pure-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A pure function always returns the same result if the same arguments are passed to it:
 
 - It must **only depend** on its **input arguments**
@@ -196,6 +206,8 @@ No matter how many times you run the function with the **same input**, it will *
 [slide hideTitle]
 
 # Referential Transparency
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-12-referencial-transparency-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 A **referentially transparent** function call can be replaced with its **return value** and **not affect** the rest of the program.
