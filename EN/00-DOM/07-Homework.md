@@ -1,4 +1,4 @@
-# Homework: DOM
+# Homework
 
 [slide hideTitle]
 
