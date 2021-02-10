@@ -40,9 +40,9 @@ We see that the **textboxes** and the **div** have **id** attributes on them.
 
 ```js
 <div id="wrapper">
-<input type="text" id="firstNumber" value="13.33" disabled>
-<input type="text" id="secondNumber" value="22.18" disabled>
-<div id="result"></div>
+   <input type="text" id="firstNumber" value="13.33" disabled>
+   <input type="text" id="secondNumber" value="22.18" disabled>
+   <div id="result"></div>
 </div>
 
 ```
@@ -89,7 +89,7 @@ result();
 
 var $div = $('#result');
 
-expect($div[0].textContent).to.equal("-8.85");
+expect($div[0].textContent).to.equal(\"\-8.85");
 [/input]
 [output]
 yes
