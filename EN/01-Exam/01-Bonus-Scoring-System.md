@@ -23,7 +23,7 @@ On the first line, you are going to receive **the number of students** for the c
 
 Every course has **an additional bonus**.
 
-On the third line, you are going to receive an additional bonus for every course.
+On the third line, you are going to receive **an additional bonus** for **every course**.
 
 On the next lines, you will be receiving the **number of attending students**.
 
@@ -31,7 +31,7 @@ The bonus points are calculated with the following **formula**:
 
 `{total bonus} = {student attendances} / {course lectures} * (5 + {additional bonus})`
 
-Find the student with the **most bonus points** and print his/her **attendances** in the following format:
+Find the student with the **most bonus points** and print his/her **points** along with  **attendances** in the following format:
 
 ```
 "Max Bonus: {maxBonusPoints}."
@@ -54,7 +54,7 @@ In the end, round the bonus points to **the next whole number**.
 
 ### Output
 
-- Print the maximum bonus points, rounded to the next whole number,  along with the attendance of the given student, in the format described above
+- Print the maximum bonus points, rounded to the next whole number, along with the attendance of the given student, in the format described above
 
 ## Examples
 | **Input** | **Output** |

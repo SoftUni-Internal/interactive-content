@@ -19,7 +19,8 @@ You start the game with **100 health and 0 bitcoins**.
 
 You will be given a String, representing the rooms of the dungeon.
 
-Each room is separated with "|" (vertical bar): room1|room2|room3…
+Each room is separated with "|" (vertical bar): room1\|room2\|room3…
+
 The rooms themselves contain 2 values. The first value can be:
 
 - a potion:
@@ -32,7 +33,7 @@ The rooms themselves contain 2 values. The first value can be:
 
    - After that, print your current health: `Current health: {health} hp.`
 
-- а chest:
+- a chest:
 
     - Increase the amount of bitcoins with the amount of the second value
 
@@ -40,7 +41,7 @@ The rooms themselves contain 2 values. The first value can be:
 
 - In any other case, you are facing a monster and you are going to fight
 
-The second part of the room contains the attack of the monster.
+The second value of the room contains the attack of the monster.
 
 You should remove the value of the monster's attack from your health.
 
