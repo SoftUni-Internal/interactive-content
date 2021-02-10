@@ -19,7 +19,7 @@ You start the game with **100 health and 0 bitcoins**.
 
 You will be given a String, representing the rooms of the dungeon.
 
-Each room is separated with "|" (vertical bar): room1\|room2\|room3…
+Each room is separated with "\|" (vertical bar): room1\|room2\|room3…
 
 The rooms themselves contain 2 values. The first value can be:
 
