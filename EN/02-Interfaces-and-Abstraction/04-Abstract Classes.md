@@ -52,7 +52,7 @@ class Main {
 # Abstract Methods
 
 
-After we've learned about **abstract classes**, let us continue with **abstract methods**.
+Lets continue with **abstract methods**.
 
 **Abstract** methods in their nature are methods that do not have body.
 

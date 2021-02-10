@@ -29,9 +29,9 @@ In this example we create a base class `Person`, this person has properties whic
 
 When we create another object of type `Employee` our employee also needs to know its **name and address**.
 
-That is why there is **Inheritance**, instead of creating the same properties for our `Employee` we can just `extend` the class `Person` and we will receive and use its properties.
+That is one of the reasons there is **Inheritance**, instead of creating the same properties for our `Employee` we can `extend` the class `Person` and we will inherit and re-use its properties.
 
-That is why we call it a **derived** class.
+Therefore it is called **derived** class.
 
 But also extend the functionality by adding a `String Company` parameter.
 
@@ -69,7 +69,7 @@ This means that every class that we create is implicitly a child of the class `O
 [slide hideTitle]
 # Inheritance in Java
 
-We can **Inherite** a given class through the keyword **extends**, placed right after the name of the given **Subclass**, further setting the parent.
+We **inherite** a given class through the keyword **extends**, placed right after the name of the given **Subclass**, further setting the parent.
 
 We will know that we have to use **Inheritance** when we need to re-use some logic.
 

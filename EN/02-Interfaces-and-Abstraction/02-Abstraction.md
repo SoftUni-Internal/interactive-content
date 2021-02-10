@@ -23,7 +23,7 @@ There are 2 ways we can achieve **abstraction** in Java:
 
 
 [slide hideTitle]
-## Example: Java Abstract Class
+# Example: Java Abstract Class
 
 Lets see how we can use that abstract classes.
 

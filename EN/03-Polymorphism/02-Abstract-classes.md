@@ -551,12 +551,12 @@ public static void main(String[] args) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | I am Oscar and my favourite food is Whiskas |
-|  | MEEOW |
-|  | I am Rocky and my favourite food is Meat |
-|  | DJAAF |
+| **Output** |
+| --- |
+| I am Oscar and my favourite food is Whiskas |
+| MEEOW |
+| I am Rocky and my favourite food is Meat |
+| DJAAF |
 
 [/task-description]
 [code-io /]
@@ -927,12 +927,12 @@ public static void main(String[] args) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | I am Oscar and my favourite food is Whiskas |
-|  | MEEOW |
-|  | I am Rocky and my favourite food is Meat |
-|  | DJAAF |
+| **Output** |
+| --- |
+| I am Oscar and my favourite food is Whiskas |
+| MEEOW |
+| I am Rocky and my favourite food is Meat |
+| DJAAF |
 
 [/task-description]
 [code-io /]

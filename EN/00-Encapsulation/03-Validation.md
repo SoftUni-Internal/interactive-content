@@ -28,7 +28,7 @@ public Person(String firstName, String lastName,
   setSalary(salary);
 }
 ```
-Validation happens inside the setter.
+**Validation happens inside the setter:**
 - Guarantees valid state of object in its creation
 - Guarantees valid state for public setters
 

@@ -2959,7 +2959,7 @@ Test Passed!
 
 [slide hideTitle]
 
-## Default Method
+# Default Method
 
 Java 8 introduces the "Default method" feature.
 
@@ -3056,11 +3056,12 @@ private static void print(Person person) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Hi |
-|  | Hello |
-|  | Djydjybydjy |
+| **Output** |
+| --- |
+| Hi |
+| Hello |
+| Djydjybydjy |
+|   |
 
 [/task-description]
 [code-io /]
@@ -3515,11 +3516,12 @@ private static void print(Person person) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Hi |
-|  | Hello |
-|  | Djydjybydjy |
+| **Output** |
+| --- |
+| Hi |
+| Hello |
+| Djydjybydjy |
+|   |
 
 [/task-description]
 [code-io /]
@@ -3975,11 +3977,12 @@ private static void print(Person person) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Hi |
-|  | Hello |
-|  | Djydjybydjy |
+| **Output** |
+| --- |
+| Hi |
+| Hello |
+| Djydjybydjy |
+|   |
 
 [/task-description]
 [code-io /]
@@ -4357,11 +4360,12 @@ private static void print(Person person) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Hi |
-|  | Hello |
-|  | Djydjybydjy |
+| **Output** |
+| --- |
+| Hi |
+| Hello |
+| Djydjybydjy |
+|   |
 
 [/task-description]
 [code-io /]

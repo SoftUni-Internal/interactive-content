@@ -53,9 +53,9 @@ team.getPlayers().clear();
 System.out.println(team.getPlayers().size());  // 0
 ```
 
-In this case our field is not safely encapsulated and it still can me changed.
+In this case our field is not safely encapsulated and it still can be changed.
 
-The reason behind it is because as we know the `List<>` is a refference type, that is why when we pass it with the `getter` we actually give the refference to the List's memory.
+The reason behind it is that the `List<>` is a reference type, that is why when we pass it with the `getter` we actually give the reference to the List's memory.
 
 What happens is that although we do not have a setter, the list is still muttable.
 

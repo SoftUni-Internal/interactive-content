@@ -23,6 +23,7 @@ class Person {
 # Shadowing Variables
 
 - Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name for itself
+
 - When you are using **shadowing** you can rebase an entire method, 
   this means changing its parameters and logic inside, but not its return type. 
 

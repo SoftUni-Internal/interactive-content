@@ -6,7 +6,7 @@
 
 With the **private access** modifier an object can hide it is data from the rest of the objects in our program.
 
-We choose to make a **field or method** private when we want to presrve the interal logic of our object, so nobody can mess it up:
+We choose to make a **field or method** private when we want to preserve the interal logic of our object, so nobody can mess it up:
 
 ```java
 class Person {
@@ -44,7 +44,7 @@ class Team {
 
 # Default Access Modifier
 
-Does not explicitly declare an access modifier
+When we do not specifically declare a modifier, a Default Access Modifier gets in power
 
 ```java
 class Team {
