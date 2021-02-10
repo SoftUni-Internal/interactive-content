@@ -132,10 +132,9 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Problem: Articles List
 
-[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
-function repeatString(){
+function articlesList(){
   // Write your code here
 }
 ```
@@ -164,7 +163,7 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 - Both new created elements (**h3** and **p**) should be appended to a new **article element** `<article\>`
 
-- **The current article element** should be **appended** to the section which has an id articles (`#articles`)
+- **The current article element** should be **appended** to the section which has id articles (`#articles`)
 
 - You should create new **article element** only if **title** and **content are not empty**
 
@@ -365,11 +364,10 @@ yes
 
 # Solution: Articles List
 
-[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List-solution" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Articles List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function repeatString(){
+function articlesList(){
   // Write your code here
 }
 ```
@@ -377,8 +375,6 @@ function repeatString(){
 [task-description]
 
 # Description
-
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) **for this task.**
 
 In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
@@ -398,7 +394,7 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 - Both new created elements (**h3** and **p**) should be appended to a new **article element** `<article\>`
 
-- **The current article element** should be **appended** to the section which has an id articles (`#articles`)
+- **The current article element** should be **appended** to the section which has id articles (`#articles`)
 
 - You should create new **article element** only if **title** and **content are not empty**
 
@@ -728,13 +724,12 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Problem: Growing Word
 
-[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
+[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
-
+function growingWord(){
+  // Write your code here
+}
 ```
-
 [/code-editor]
 [task-description]
 
@@ -746,9 +741,22 @@ In this problem, you should **create a JS functionality** which **changes the si
 
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-7.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">
+<div id="blueDiv">Blue</div>
+<div id="greenDiv">Green</div>
+<div id="redDiv">Red</div>
+</div>
+<div>
+<button type="button" onclick="growingWord()">CHANGE</button>
+</div>
+<p>Growing Word</p>
+</div>
 
-Every time when we **click** on the \[**CHANGE**\] button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
+```
+
+Every time when we **click** on the `[CHANGE]` button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
 
 **After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
 
@@ -760,19 +768,40 @@ Every time when we **click** on the \[**CHANGE**\] button, **the color** and **t
 
 - If we click **three times**, the current color of that paragraph should be changed to **red** and the font size should be **8** (4 \* 2)
 
-- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
+- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. 
+
+Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-9.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">...</div>
+<div>... </div>
+<p style="color: blue; font-size: 2px;"> Growing Word</p>
+</div>
+```
 
 [image assetsSrc="JS-Advanced-DOM-Lab-10.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-11.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">...</div>
+<div>... </div>
+<p style="color: green; font-size: 4px;">Growing Word</p>
+</div>
+
+```
 
 [image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-13.jpg" /]
+```js
+<div id="exercise">
+> <div id="colors">... </div>
+<div>...</div>
+<p style="color: red; font-size: 8px;"> Growing Word</p>
+</div>
+```
 
 [/task-description]
 [code-io /]
@@ -1037,8 +1066,7 @@ yes
 
 # Solution: Growing Word
 
-[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Growing Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 
@@ -1053,9 +1081,22 @@ In this problem, you should **create a JS functionality** which **changes the si
 
 [image assetsSrc="JS-Advanced-DOM-Lab-6.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-7.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">
+<div id="blueDiv">Blue</div>
+<div id="greenDiv">Green</div>
+<div id="redDiv">Red</div>
+</div>
+<div>
+<button type="button" onclick="growingWord()">CHANGE</button>
+</div>
+<p>Growing Word</p>
+</div>
 
-Every time when we **click** on the \[**CHANGE**\] button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
+```
+
+Every time when we **click** on the `[CHANGE]` button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
 
 **After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
 
@@ -1067,19 +1108,40 @@ Every time when we **click** on the \[**CHANGE**\] button, **the color** and **t
 
 - If we click **three times**, the current color of that paragraph should be changed to **red** and the font size should be **8** (4 \* 2)
 
-- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
+- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. 
+
+Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
 
 [image assetsSrc="JS-Advanced-DOM-Lab-8.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-9.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">...</div>
+<div>... </div>
+<p style="color: blue; font-size: 2px;"> Growing Word</p>
+</div>
+```
 
 [image assetsSrc="JS-Advanced-DOM-Lab-10.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-11.jpg" /]
+```js
+<div id="exercise">
+<div id="colors">...</div>
+<div>... </div>
+<p style="color: green; font-size: 4px;">Growing Word</p>
+</div>
+
+```
 
 [image assetsSrc="JS-Advanced-DOM-Lab-12.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-13.jpg" /]
+```js
+<div id="exercise">
+> <div id="colors">... </div>
+<div>...</div>
+<p style="color: red; font-size: 8px;"> Growing Word</p>
+</div>
+```
 
 [/task-description]
 [code-io /]
@@ -1443,5 +1505,5 @@ Both **NodeList** and **HTMLCollection** are indexed collection of **DOM nodes**
 However, **HTMLCollection** is limited only to **Element nodes**, while **NodeList** could hold nodes
 **of any type**.
 
-The two collections have the same methods, for the exception of **NodeList**'s `namedItem` method.
+The two collections have the same methods, with the exception of **NodeList**'s `namedItem` method.
 [/slide]
