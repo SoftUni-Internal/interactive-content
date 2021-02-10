@@ -1394,12 +1394,10 @@ yes
 [slide hideTitle]
 
 # Problem: Encode And Decode Messages
-
-[code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function encodeAndDecodeMessages(){
   // Write your code here
 }
 ```
@@ -1649,11 +1647,10 @@ yes
 
 # Problem: Table Search Engine
 
-[code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Table Search Engine" taskId="Js-Advanced-Dom-Manipulations-Table-Search-Engine" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function tableSearchEngine(){
   // Write your code here
 }
 ```
@@ -2212,12 +2209,10 @@ yes
 [slide hideTitle]
 
 # Problem: Furniture
-
-[code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Furniture" taskId="Js-Advanced-Dom-Manipulations-Furniture" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function furniture(){
   // Write your code here
 }
 ```
@@ -2237,7 +2232,7 @@ When the `Generate` button is **clicked**, add a new row to the table for each p
 
 When the `Buy` button is clicked, get all checkboxes that are marked, and show in the result textbox the names of the furniture that were **checked**, separated by a comma and a single space, in the following format: 
 
-`Bought furniture: {furniture1} {furniture2}….`
+`Bought furniture: {furniture1} {furniture2}...`
 
 On the next line, print the total price in format: `Total price: {totalPrice}`, formatted two digits after the decimal point.
 
@@ -2718,11 +2713,10 @@ yes
 
 # Problem: Cards
 
-[code-task title="Cards" taskId="Js-Advanced-Dom-Manipulations-Cards" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Cards" taskId="Js-Advanced-Dom-Manipulations-Cards" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function cards(){
   // Write your code here
 }
 ```
