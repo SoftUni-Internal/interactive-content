@@ -339,7 +339,7 @@ If the display style is `none`, we should **change** it to `block` and the **opp
 [tests]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="accordion"\>
         \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
         \<div id="extra" style="display: none"\>
@@ -353,7 +353,7 @@ document.body.innerHTML = `
                 anim id est laborum.\</p\>
         \</div\>
     \</div\>
-`;
+\`;
 
 result(); // Show
 
@@ -371,7 +371,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="accordion"\>
         \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
         \<div id="extra" style="display: none"\>
@@ -385,7 +385,7 @@ document.body.innerHTML = `
                 anim id est laborum.\</p\>
         \</div\>
     \</div\>
-`;
+\`;
 
 let extra = document.getElementById("extra");
 let button = document.getElementsByClassName("button")\[0\];
@@ -404,7 +404,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="accordion"\>
         \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
         \<div id="extra" style="display: none"\>
@@ -418,7 +418,7 @@ document.body.innerHTML = `
                 anim id est laborum.\</p\>
         \</div\>
     \</div\>
-`;
+\`;
 
 let extra = document.getElementById("extra");
 let button = document.getElementsByClassName("button")\[0\];
