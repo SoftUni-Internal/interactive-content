@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Printing Arrays On the Console
 
-[vimeo-video]
-[stream language="EN" videoId="489372567/b8ba0e753f" default /]
-[stream language="RO" videoId="489372567/b8ba0e753f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-16-17-Array-iteration-and-printing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To print all array elements, a for-loop can be used:
 
@@ -30,10 +27,7 @@ console.log(capitals.toString())
 [slide hideTitle]
 # For-of Loop
 
-[vimeo-video]
-[stream language="EN" videoId="489453701/2693aea66c" default /]
-[stream language="RO" videoId="489453701/2693aea66c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `for..of` loop is used to iterate over any iterable object but cannot be used to  access its indexes. 
 
@@ -50,10 +44,7 @@ for (const car of cars) {
 [slide hideTitle]
 # Print an Array with For-of
 
-[vimeo-video]
-[stream language="EN" videoId="489372688/6c7e446d04" default /]
-[stream language="RO" videoId="489372688/6c7e446d04"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-25-Printing-an-array-with-for-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js live
 let arr = [1,2,3,4,5,6];
