@@ -4,10 +4,7 @@
 
 # Relational Databases
 
-[vimeo-video]
-[stream language="EN" videoId="498356193/5a0918ae93" default /]
-[stream language="RO" videoId="498356193/5a0918ae93"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-3-4-relational-and-non-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Relational databases maintain data in tables, providing an efficient and flexible way to store and access structured information. 
 
@@ -45,10 +42,7 @@ Non-relational databases are ideal for storing data that may be changed frequent
 
 # Relational And Non-Relational Pros
 
-[vimeo-video]
-[stream language="EN" videoId="498356293/48bad932af" default /]
-[stream language="RO" videoId="498356293/48bad932af"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pros of a Relational Database:**
 - Data structured into categories.
@@ -90,10 +84,7 @@ Many web-based businesses require data services that are available without inter
 
 # What is BaaS?
 
-[vimeo-video]
-[stream language="EN" videoId="498356368/437c121efd" default /]
-[stream language="RO" videoId="498356368/437c121efd"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-6-backend-as-a-service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Backend-as-a-Service or **BaaS** is a cloud service model in which developers outsource all the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
 

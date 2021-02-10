@@ -4,10 +4,8 @@
 
 # What is Firebase?
 
-[vimeo-video]
-[stream language="EN" videoId="498355813/b1d8525738" default /]
-[stream language="RO" videoId="498355813/b1d8525738"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-7-8-what-is-a-firebase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Firebase is a toolset to build, improve, and grow your app.
 
@@ -23,10 +21,7 @@ The services are hosted in the cloud and scale with little to no effort on the p
 
 # Firebase REST API CRUD Operations 1
 
-[vimeo-video]
-[stream language="EN" videoId="498355882/b742849899" default /]
-[stream language="RO" videoId="498355882/b742849899"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-9-10-firebase-rest-api-crud-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are some of the methods we use when working with the database.
 
@@ -148,10 +143,7 @@ The response from the server will be **200 OK**.  It also will return **null**.
 
 # Firebase REST API CRUD Operations 2
 
-[vimeo-video]
-[stream language="EN" videoId="498355923/fe4483c15f" default /]
-[stream language="RO" videoId="4498355923/fe4483c15f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The next step is to edit a book.
 
@@ -270,10 +262,9 @@ The response from the server will be, **200 OK** and in the **body** it will ret
 [slide hideTitle]
 
 # Authentication vs Authorization
-[vimeo-video]
-[stream language="EN" videoId="498356096/3eb775adc0" default /]
-[stream language="RO" videoId="498356096/3eb775adc0"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-12-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Authentication is about validating your credentials such as Username, ID, and password to verify your identity.
 
 Authorization occurs after your identity is successfully authenticated by the system, which, therefore, gives you full access to resources such as information, files, databases, etc.
