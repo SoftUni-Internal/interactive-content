@@ -65,7 +65,7 @@ If the index is invalid, ignore the command.
 # Examples
 
 **Input** 
-`['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book | The Odyssey', Take Book | Don Quixote', 'Insert Book | Alice's Adventures in Wonderland', 'Check Book | 3', 'Done' ]`
+`['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book | The Odyssey', 'Take Book | Don Quixote', 'Insert Book | Alice\'s Adventures in Wonderland', 'Check Book | 3', 'Done' ]`
 
 **Output**
 Hamlet
