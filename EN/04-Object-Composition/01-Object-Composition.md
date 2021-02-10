@@ -4,6 +4,8 @@
 
 # What is Object Composition?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-3-4-object-composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A composite data type is any data type which can be constructed in a program using the programming language's primitive data types and other composite types. 
 
 The act of constructing a composite type is known as composition.
@@ -31,6 +33,8 @@ console.log(student.location.lat);
 
 # Composing an object
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-5-composing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here is an example of how we can compose an object. 
 
 First we declare and initialize the primitive data types `name`, `population` and `country`.
@@ -54,6 +58,8 @@ console.log(town);
 [slide]
 
 # Combining data with functions
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can also combine data using functions, that is because functions are also objects in JavaScript.
 
@@ -84,6 +90,8 @@ rect.print();
 [slide]
 
 # Printing objects
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-7-printing-objects-tostring-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Printing objects using the `ToString()` function:
 

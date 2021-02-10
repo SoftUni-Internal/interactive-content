@@ -4,6 +4,8 @@
 
 # Aggregation
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-13-14-aggregation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We have Aggregation when an object is formed from an enumerable collection of subobjects. 
 
 This is an object which contains other objects. 
@@ -54,6 +56,8 @@ console.log(result);
 
 # Aggregation Example
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-15-aggregation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```js live
 let dataArray = [{ id: "a", score: 1 }, { id: "b", score: 2 },
 { id: "c", score: 5 }, { id: "a", score: 3 }, { id: "c", score: 2 },];
@@ -74,6 +78,8 @@ console.log(res1);
 [slide]
 
 # Concatenation
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-16-concatenation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Concatenation is when an object is formed by adding new properties to an existing object.
 
@@ -107,6 +113,8 @@ console.log(result);
 
 # Concatenation Example
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-17-concatenation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```js live
 const objs = [
     { name: 'Peter', age: 35 },
@@ -124,6 +132,8 @@ console.log(c);
 [slide]
 
 # Delegation
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-18-delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Delegation is when an object forwards or delegates to another object.
 
@@ -165,6 +175,8 @@ console.log(result.height);
 [slide]
 
 # Delegation Example
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-19-delegation-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
 const objs = [

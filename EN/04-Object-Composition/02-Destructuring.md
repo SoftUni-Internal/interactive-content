@@ -4,6 +4,8 @@
 
 # Destructuring
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-8-9-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 Let us have a look at some examples:
@@ -54,6 +56,8 @@ console.log(objectList);
 
 # Nested destructuring
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-10-nested-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Now let us have a look at some nested destructuring.
 
 Use this expression: `const {data: {director}} = department` to create a new variable `director` by destructuring `department` object.
@@ -84,6 +88,8 @@ console.log(department);
 
 # Destructuring nested arrays
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-11-destructuring-nested-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When destructuring nested arrays is important to know the position of what you are looking for.
 
 Also you need to provide a reference variable or comma placeholder for each element up and until the one you are looking for.
@@ -106,6 +112,8 @@ console.log(positions);
 [slide]
 
 # Objects and array destructuring
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-12-objects-and-arrays-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Destructuring an array of objects.
 
