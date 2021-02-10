@@ -15,45 +15,46 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program that calculates **bonus points** for each **student**, for a certain course.
+Create a program that calculates the **bonus points** for each **student**, for a certain course.
 
-On the first line, you are going to receive **the count of the students** for this course.
+On the first line, you are going to receive **the number of students** for the course.
 
-**In the second line**, you will receive **the count of the lectures** in the course.
+**On the second line**, you are going to receive **the number of the lectures** in the course.
 
 Every course has **an additional bonus**.
 
-You are going to receive it **on the third line**.
+On the third line, you are going to receive an additional bonus for every course.
 
-On the next lines, you will be receiving the **count of attendance for each student**.
+On the next lines, you will be receiving the **number of attending students**.
 
-The bonus is calculated with the following **formula**:
+The bonus points are calculated with the following **formula**:
 
 `{total bonus} = {student attendances} / {course lectures} * (5 + {additional bonus})`
 
-Find the student with the **maximum bonus** and print him/her, along with **his attendances** in the following format:
+Find the student with the **most bonus points** and print his/her **attendances** in the following format:
 
-`Max Bonus: {maxBonusPoints}.`
+```
+"Max Bonus: {maxBonusPoints}."
+"The student has attended {studentAttendances} lectures."
+```
 
-`The student has attended {studentAttendances} lectures.`
-
-Round the bonus points at the end to **the nearest bigger number**.
+In the end, round the bonus points to **the next whole number**.
 
 ### Input \/ Constrains
 
-- On the **first line**, you are going to receive the count of the students – an integer number in the range 0…50.
+- On the **first line**, you are going to receive the count of students – an integer in range [0...50]
 
-- On the **second line**, you are going to receive the count of the lectures – an integer number in the range 0...50.
+- On the **second line**, you are going to receive the count of lectures – an integer in range [0...50]
 
-- On the **third line**, you are going to receive **the initial bonus** – an integer number in the range 0….100.
+- On the **third line**, you are going to receive **the initial bonus** – an integer in range [0...100]
 
-- **In the next lines**, you will be receiving the **attendance of each student**.
+- **On the next lines**, you will be receiving the **attendance of each student**
 
-- There will **never** be **students with equal bonuses**.
+- There will **never** be **with the exact bonus points**
 
 ### Output
 
-- Print the maximum bonus points along with the attendance of the given student, **rounded** to the nearest **bigger** number, scored by a student in this course in the format described above.
+- Print the maximum bonus points, rounded to the next whole number,  along with the attendance of the given student, in the format described above
 
 ## Examples
 | **Input** | **Output** |
@@ -75,7 +76,7 @@ The total count of the lectures is `25` and the initial bonus is `30`.
 
 Then we calculate the bonus of the student with `12` attendances, which is `16.8`.
 
-We continue calculating **each of the student's bonuses**. 
+We continue to calculate **each of the student's bonus points**. 
 
 The one **with** `24` **attendances** has the **highest bonus** – `33.6` (`34` **rounded**), so we print the appropriate message on the console.
 

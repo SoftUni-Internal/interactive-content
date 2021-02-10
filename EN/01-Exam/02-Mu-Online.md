@@ -15,47 +15,52 @@ public class Main {
 [task-description]
 ## Description
 
-You have initial **health 100 and initial bitcoins 0**.
+You start the game with **100 health and 0 bitcoins**.
 
-You will be given a string, representing the rooms of the dungeon.
+You will be given a String, representing the rooms of the dungeon.
 
-Each room is separated with `|` (vertical bar): `room1|room2|room3…`
+Each room is separated with "|" (vertical bar): room1|room2|room3…
+The rooms themselves contain 2 values. The first value can be:
 
-- `potion`:
+- a potion:
 
-   - You are healed with the number in the second part.
+   - You are healed with the amount of the second value
 
-   - But your health **cannot exceed** your **initial health (100)**.
+   - Your health **cannot exceed** your **initial health (100)**
 
-   - First print: `You healed for {amount} hp.`
+   - First print: "{amount} health points restored."
 
    - After that, print your current health: `Current health: {health} hp.`
 
-- `chest`:
+- а chest:
 
-   - You've found some bitcoins, the number in the second part.
+    - Increase the amount of bitcoins with the amount of the second value
 
-   - Print: `You found {amount} bitcoins.`
+    - After that, print out: "You found {amount} bitcoins."
 
-- In any other case, you are facing a monster, you are going to fight.
+- In any other case, you are facing a monster and you are going to fight
 
 The second part of the room contains the attack of the monster.
 
-You should remove the monster's attack from your health.
+You should remove the value of the monster's attack from your health.
 
-- If you are **not dead** (health \> 0) you've slain the monster, and you should print `You slew {monster}.`
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an {monster}."
 
-- If you've died, print `You died! Killed by {monster}.` and your quest is over.
+- If you died, print "You died! Killed by {monster}." and your quest is over
 
-Print the best room you've manage to reach: `Best room: {room}`.
+Print the best room you have managed to reach: `Best room: {room}`.
 
-If you managed to go through all the rooms in the dungeon, print on the next three lines:
+If you managed to go through all of the rooms in the dungeon, print on the next three lines:
 
-`You've made it!`, `Bitcoins: {bitcoins}`, `Health: {health}`
+```
+"You've made it! 
+Bitcoins: {bitcoins} 
+Health: {health}" 
+```
 
 ### Input \/ Constraints
 
-You receive a string, representing the rooms of the dungeon, separated with `|` (vertical bar): `room1|room2|room3…`.
+You will receive a String, representing the rooms of the dungeon, separated with a "|" (vertical bar): room1|room2|room3...".
 
 ### Output
 
@@ -64,11 +69,11 @@ Print the corresponding messages, described above.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000 | You slew rat. |
-|  | You slew bat. |
-|  | You healed for 10 hp. |
+| rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000 | You have slayed a rat. |
+|  | You have slayed a bat. |
+|  | 10 health points restored. |
 |  | Current health: 80 hp. |
-|  | You slew rat. |
+|  | You have slayed a rat. |
 |  | You found 100 bitcoins. |
 |  | You died! Killed by boss. |
 |  | Best room: 6 |
@@ -76,12 +81,12 @@ Print the corresponding messages, described above.
 
 | **Input** | **Output** |
 | --- | --- |
-| cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110 | You slew cat. |
-|  | You healed for 10 hp. |
+| cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110 | You have slayed a cat. |
+|  | 10 health points restored. |
 |  | Current health: 100 hp. |
-|  | You slew orc. |
+|  | You have slayed an orc. |
 |  | You found 10 bitcoins. |
-|  | You slew snake. |
+|  | You have slayed a snake. |
 |  | You found 110 bitcoins. |
 |  | You've made it! |
 |  | Bitcoins: 120 |
@@ -96,11 +101,11 @@ Print the corresponding messages, described above.
 rat 10\|bat 20\|potion 10\|rat 10\|chest 100\|boss 70\|chest 1000
 [/input]
 [output]
-You slew rat.
-You slew bat.
-You healed for 10 hp.
+You have slayed a rat.
+You have slayed a bat.
+10 health points restored.
 Current health: 80 hp.
-You slew rat.
+You have slayed a rat.
 You found 100 bitcoins.
 You died! Killed by boss.
 Best room: 6
@@ -111,12 +116,12 @@ Best room: 6
 cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110
 [/input]
 [output]
-You slew cat.
-You healed for 10 hp.
+You have slayed a cat.
+10 health points restored.
 Current health: 100 hp.
-You slew orc.
+You have slayed an orc.
 You found 10 bitcoins.
-You slew snake.
+You have slayed a snake.
 You found 110 bitcoins.
 You've made it!
 Bitcoins: 120
@@ -128,8 +133,8 @@ Health: 65
 rat 10\|bat 20
 [/input]
 [output]
-You slew rat.
-You slew bat.
+You have slayed a rat.
+You have slayed a bat.
 You've made it!
 Bitcoins: 0
 Health: 70
@@ -140,10 +145,10 @@ Health: 70
 rat 10\|bat 20\|cat 30\|dog 39
 [/input]
 [output]
-You slew rat.
-You slew bat.
-You slew cat.
-You slew dog.
+You have slayed a rat.
+You have slayed a bat.
+You have slayed a cat.
+You have slayed a dog.
 You've made it!
 Bitcoins: 0
 Health: 1
@@ -154,9 +159,9 @@ Health: 1
 rat 10\|bat 20\|cat 30\|dog 40
 [/input]
 [output]
-You slew rat.
-You slew bat.
-You slew cat.
+You have slayed a rat.
+You have slayed a bat.
+You have slayed a cat.
 You died! Killed by dog.
 Best room: 4
 [/output]
@@ -192,8 +197,8 @@ Health: 100
 cat 40\|potion 30
 [/input]
 [output]
-You slew cat.
-You healed for 30 hp.
+You have slayed a cat.
+30 health points restored.
 Current health: 90 hp.
 You've made it!
 Bitcoins: 0
@@ -205,8 +210,8 @@ Health: 90
 cat 10\|potion 30
 [/input]
 [output]
-You slew cat.
-You healed for 10 hp.
+You have slayed a cat.
+10 health points restored.
 Current health: 100 hp.
 You've made it!
 Bitcoins: 0
@@ -218,8 +223,8 @@ Health: 100
 dog 10\|potion 30
 [/input]
 [output]
-You slew dog.
-You healed for 10 hp.
+You have slayed a dog.
+10 health points restored.
 Current health: 100 hp.
 You've made it!
 Bitcoins: 0
@@ -231,11 +236,11 @@ Health: 100
 a 10\|b 20\|potion 10\|c 30\|chest 10\|chest 1000\|d 50\|chest 1000
 [/input]
 [output]
-You slew a.
-You slew b.
-You healed for 10 hp.
+You have slayed an a.
+You have slayed a b.
+10 health points restored.
 Current health: 80 hp.
-You slew c.
+You have slayed a c.
 You found 10 bitcoins.
 You found 1000 bitcoins.
 You died! Killed by d.
@@ -247,15 +252,15 @@ Best room: 7
 cat 10\|potion 30\|orc 10\|chest 10\|snake 25\|chest 110\|chest 100\|potion 1000\|DRAGON 1000
 [/input]
 [output]
-You slew cat.
-You healed for 10 hp.
+You have slayed a cat.
+10 health points restored.
 Current health: 100 hp.
-You slew orc.
+You have slayed an orc.
 You found 10 bitcoins.
-You slew snake.
+You have slayed a snake.
 You found 110 bitcoins.
 You found 100 bitcoins.
-You healed for 35 hp.
+35 health points restored.
 Current health: 100 hp.
 You died! Killed by DRAGON.
 Best room: 9

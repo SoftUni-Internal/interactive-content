@@ -17,25 +17,25 @@ public class Main {
 
 ### Input \/ Constraints
 
-You will receive a journal with some Collecting items, separated with `, ` **(comma and space)**. After that, until receiving `Craft!` you will be receiving different commands.
+You will receive a journal with some items, separated with ", " **(comma and space)**. After that, until you receive the command "Craft!", you will be receiving different commands.
 
-Commands split by ` - ` **(space dash spase)**:
+The commands are split by " - " **(space dash space)**:
 
-- `Collect - {item}` – Receiving this command, you should add the given item in your inventory.
+- `Collect - {item}` – Receiving this command, you should add the given item to your inventory
 
-If the item already **exists**, you should **skip** this line.
+If the item is already in your inventory, you should skip it.
 
-- `Drop - {item}` – You should remove the item from your inventory, **if it exists**.
+- `Drop - {item}` – You should remove the item from your inventory, **if it exists**
 
-- `Combine Items - {oldItem}:{newItem}` – You should check if the **old item exists**, if so, **add** the new item after the old one.
+- `Combine Items - {oldItem}:{newItem}` – You should check if the **old item exists**, If so, **add** the new item after the old one
 
 Otherwise, ignore the command.
 
-- `Renew – {item}` – If the given item exists, you should change its position and **put it last** in your inventory.
+- `Renew – {item}` – If the given item exists, you should change its position and **put it at the end of your inventory**.
 
 ### Output
 
-After receiving `Craft!` print the items in your inventory, separated by `, ` **(comma and space)**.
+After receiving "Craft!" print the items in your inventory, separated by ", " **(comma and space)**
 
 ## Examples
 | **Input** | **Output** |
