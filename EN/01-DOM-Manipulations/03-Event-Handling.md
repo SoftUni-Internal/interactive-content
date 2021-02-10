@@ -348,7 +348,7 @@ result();
 document.getElementById('newText').value = 'Second';
 result();
 
-let items = \\$('\#items li');
+let items = \$('\#items li');
 
 // Verify items where added with delete links
 expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
@@ -383,7 +383,7 @@ result();
 document.getElementById('newText').value = 'Second';
 result();
 
-let items = \\$('\#items li');
+let items = \$('\#items li');
 
 // Verify items where added with delete links
 expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
