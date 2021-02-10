@@ -10,7 +10,7 @@ It connects Javascript to the **browser** just like the DOM connects it to the *
 
 The **BOM** allows browser elements to be accessed and manipulated by **representing them as objects**.
 
-[image assetsSrc="Js-advanced-DOM.png" /]
+[image assetsSrc="JS-Advanced-DOM.png" /]
 
 The following commands show some of the browser's objects:
 
