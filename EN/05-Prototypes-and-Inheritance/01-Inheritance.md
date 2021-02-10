@@ -4,6 +4,8 @@
 
 # What is Inheritance
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Inheritance is the ability of a class to copy the functions of a parent class.
 
 In JavaScript, **inheritance** can also be called **Delegation Behavior**.
@@ -26,6 +28,8 @@ The inheritance in JavaScript is a type of **dependence**.
 [slide hideTitle]
 
 # Simple Inheritance
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-5-simple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **child** class **inherits** the features of the **parent** class, it is called **Simple inheritance**. 
 
@@ -59,6 +63,8 @@ The **Dog** class will **inherit** all features of the **Pet** class.
 [slide hideTitle]
 
 # Multilevel Inheritance
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-6-multi-level-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In **Multilevel inheritance**, the **parent** class is inherited from the **grandchild** one through a **child** class.
 
@@ -102,6 +108,8 @@ The **Breed** class will **obtain** all of the methods that **Dog** and **Pet** 
 
 # Hierarchical Inheritance
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-7-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In **Hierarchical inheritance**, the **classes** are inherited **multiple** times. 
 
 The downside is that if we change something in the **parent** class, we need to change it in all of its **children**.
@@ -140,6 +148,8 @@ All of them will have the properties and methods that the **Pet** class has.
 
 [slide hideTitle]
 # Multiple Inheritance
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-8-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Multiple Inheritance** is a directly inheriting feature from more than one parent class.
 

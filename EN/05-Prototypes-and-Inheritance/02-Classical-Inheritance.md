@@ -4,6 +4,8 @@
 
 # Traditional Classes
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-9-10-classical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Classes are **blueprints** for creating objects.
 
 When they are **instantiated**, a **copy** of the class is created and becomes the current instance. 
@@ -23,6 +25,8 @@ We can use **protected** properties in the class scope and its children.
 [slide hideTitle]
 
 # Class Inheritance
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-11-12-13-class-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **extends** keyword is used to create a child class from the parent class.
 
@@ -78,6 +82,8 @@ In the second, we printed in the console the **Teacher** object with its paramet
 
 # Classes in JavaScript
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-14-15-classes-in-javascript-class-syntax-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Classes in JavaScript are **based** on **prototype** **inheritance**.
 
 They **do** **not** introduce a new inheritance model to JavaScript. 
@@ -130,6 +136,8 @@ In the `speak()` method, we use the **identify** method inherited from the **Per
 [slide hideTitle]
 
 # Prototype Inheritance
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-16-prototype-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us see how it will look with functions:
 

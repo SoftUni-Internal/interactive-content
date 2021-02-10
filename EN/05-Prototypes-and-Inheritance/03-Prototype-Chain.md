@@ -4,6 +4,8 @@
 
 # Object Create
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 we can use `object.create()`, when we want to **extend** an object. 
 
 It uses an **existing** object **prototype** to **delegate** its features to a **new object**.
@@ -36,6 +38,8 @@ The result will be printed in the console.
 [slide hideTitle]
 
 # What is Prototype
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-19-20-what-is-a-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The prototype is an **object**, which has an **internal property**. 
 
@@ -80,6 +84,8 @@ Here we have a **Person** function and, we add **nationality** to its **prototyp
 
 # Prototype Methods
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-21-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Before **ES6 (ES2015)** all classes were composed manually, through functions. 
 
 After **ES6**, we have the sugar syntax with classes.
@@ -113,6 +119,8 @@ The result will be printed in the console.
 [slide hideTitle]
 
 # Comparison with the New Syntax 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-22-comparison-with-the-new-syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After **ES6**, we can do the same thing from the previous slide with classes.
 
@@ -148,6 +156,8 @@ We will output the result in the console.
 
 # Object Creation
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-23-object-creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8c" poster="" /]
+
 There are two ways to create an object. 
 
 The first one is **Literal** creation, and the second is **Constructor** creation.
@@ -163,6 +173,8 @@ This property points at the set prototype.
 [slide hideTitle]
 
 # Javascript Objects
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-24-javascript-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of **literal creation**:
 
@@ -210,6 +222,8 @@ In the end, we printed in the console the result that the **speak()** method ret
 
 # Proto vs Prototype Property
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There is a difference between the `__proto__` and the **Prototype Property**. 
 
 The `__proto__`, is a **accessor** property of the object and **exposes** its **internal prototype**.
@@ -225,6 +239,8 @@ The **prototype property** is a container which stores properties and method tha
 [slide hideTitle]
 
 # Accessing Private Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-26-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To mark properties as **private**, we need to **prefix** them with **hashtag** `#`.
 
@@ -253,6 +269,8 @@ And here is an example of **prototype.set**:
 [slide hideTitle]
 
 # Example of Prototype Chain
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js live
    function MakeSentence(greet) {
