@@ -153,9 +153,36 @@ Create a function that **reads** a text inside an input field and **appends** th
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+document.body.innerHTML = \`
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add""\>
+    \</main\>
+\`;
+
+document.getElementById('newItemText').value = 'new mode';
+
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 3, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+[/input]
+[output]
+yes
+[/output]
+[/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<h1\>List of Items\</h1\>
     \<main\>
         \<ul id="items"\>
@@ -165,7 +192,7 @@ document.body.innerHTML = `
         \<input type="text" id="newItemText" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</main\>
-`;
+\`;
 
 \\$('\#newItemText').val('new mode');
 result();
@@ -183,36 +210,8 @@ assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item con
 yes
 [/output]
 [/test]
-[test]
-[input]
-document.body.innerHTML = `
-\<h1\>List of Items\</h1\>
-    \<main\>
-        \<ul id="items"\>
-            \<li\>First\</li\>
-            \<li\>Second\</li\>
-        \</ul\>
-        \<input type="text" id="newItemText" /\>
-        \<input type="button" value="Add""\>
-    \</main\>
-`;
-
-document.getElementById('newItemText').value = 'new mode';
-
-result();
-
-let liElements = document.getElementsByTagName('li');
-
-assert.equal(liElements.length, 3, 'List items count is invalid');
-assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
-[/input]
-[output]
-yes
-[/output]
-[/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 
@@ -236,9 +235,36 @@ Create a function that **reads** a text inside an input field and **appends** th
 [/task-description]
 [code-io /]
 [tests]
+[test open]
+[input]
+document.body.innerHTML = \`
+\<h1\>List of Items\</h1\>
+    \<main\>
+        \<ul id="items"\>
+            \<li\>First\</li\>
+            \<li\>Second\</li\>
+        \</ul\>
+        \<input type="text" id="newItemText" /\>
+        \<input type="button" value="Add""\>
+    \</main\>
+\`;
+
+document.getElementById('newItemText').value = 'new mode';
+
+result();
+
+let liElements = document.getElementsByTagName('li');
+
+assert.equal(liElements.length, 3, 'List items count is invalid');
+assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
+[/input]
+[output]
+yes
+[/output]
+[/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<h1\>List of Items\</h1\>
     \<main\>
         \<ul id="items"\>
@@ -248,7 +274,7 @@ document.body.innerHTML = `
         \<input type="text" id="newItemText" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</main\>
-`;
+\`;
 
 \\$('\#newItemText').val('new mode');
 result();
@@ -266,34 +292,6 @@ assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item con
 yes
 [/output]
 [/test]
-[test]
-[input]
-document.body.innerHTML = `
-\<h1\>List of Items\</h1\>
-    \<main\>
-        \<ul id="items"\>
-            \<li\>First\</li\>
-            \<li\>Second\</li\>
-        \</ul\>
-        \<input type="text" id="newItemText" /\>
-        \<input type="button" value="Add""\>
-    \</main\>
-`;
-
-document.getElementById('newItemText').value = 'new mode';
-
-result();
-
-let liElements = document.getElementsByTagName('li');
-
-assert.equal(liElements.length, 3, 'List items count is invalid');
-assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
-[/input]
-[output]
-yes
-[/output]
-[/test]
 [/tests]
 [/code-task]
-
 [/slide]
