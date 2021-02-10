@@ -40,7 +40,7 @@ class Team {
 
 [slide hideTitle]
 
-# Muttable Fields Example
+# Mutable Fields Example
 
 Example:
 
@@ -65,7 +65,8 @@ What happens is that although we do not have a setter, the list is still muttabl
 
 # Imutable Fields
 
-- For securing our collection we can return `Collections.unmodifiableList()`, this encloses our reference type and does not permit any change:
+- For securing our collection we can return `Collections.unmodifiableList()`
+  * This encloses our reference type and does not permit any change
 
 ```java
 class Team {
