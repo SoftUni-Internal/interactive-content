@@ -4,10 +4,7 @@
 
 # What is Handlebars?
 
-[vimeo-video]
-[stream language="EN" videoId="497195006/8d0a49752d" default /]
-[stream language="RO" videoId="497195006/8d0a49752d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-12-13-14-overview-and-installation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Handlebars** is a simple **templating language**, based on the Mustache specification.
 
@@ -63,10 +60,7 @@ You can also use Handlebars **without installing it locally**, with the help of 
 
 # Expressions
 
-[vimeo-video]
-[stream language="EN" videoId="497195032/770428affc" default /]
-[stream language="RO" videoId="497195032/770428affc"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-15-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Handlebars expressions use the **double curly brace notation** we discussed earlier: 
 
@@ -98,10 +92,7 @@ You can use any `id` you want, as long as it is **unique**.
 
 # Compilation and Execution
 
-[vimeo-video]
-[stream language="EN" videoId="497194700/1df29e2fa4" default /]
-[stream language="RO" videoId="497194700/1df29e2fa4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-16-compilation-and-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Compilation
 
@@ -143,10 +134,8 @@ The resulting output looks like this:
 [slide hideTitle]
 
 # Hello Handlebars
-[vimeo-video]
-[stream language="EN" videoId="497950510/b2f8f5ae83" default /]
-[stream language="RO" videoId="497950510/b2f8f5ae83"  /]
-[/video-vimeo]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-17-Handlebars-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is a brief example of Handlebars in action.
 
@@ -198,10 +187,7 @@ Lastly, we **call the compiled template** with our variables and save the output
 [slide hideTitle]
 
 # For-Loops
-[vimeo-video]
-[stream language="EN" videoId="497950425/888afea457" default /]
-[stream language="RO" videoId="497950425/888afea457"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-18-For-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using the `#each` **special helper**, we can iterate through an array:
 
@@ -223,10 +209,7 @@ It will be **rendered** in case the given **array** is **empty**.
 
 [slide hideTitle]
 # Conditional Statements
-[vimeo-video]
-[stream language="EN" videoId="497950460/b05f75e27e" default /]
-[stream language="RO" videoId="497950460/b05f75e27e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-19-Conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Similar to JavaScript, you can also use **conditional statements** in your **template**.
 
@@ -252,10 +235,7 @@ The `#if` helper, followed by a condition is used to achieve this:
 
 # Partials and HTML Escaping
 
-[vimeo-video]
-[stream language="EN" videoId="497194727/a51e939ff0" default /]
-[stream language="RO" videoId="497194727/a51e939ff0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-20-21-partials-and-html-escaping-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Handlebars allows us to **reuse templates** through **partials**. 
 
@@ -288,9 +268,6 @@ If you do not want Handlebars to **escape a value**, you can use the "triple-sta
 [slide hideTitle]
 # Templating: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="497194803/b312568d8a" default /]
-[stream language="RO" videoId="497194803/b312568d8a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-templating-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

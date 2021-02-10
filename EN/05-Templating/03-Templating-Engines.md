@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is a Templating Engine?
 
-[vimeo-video]
-[stream language="EN" videoId="497194973/9364bc0756" default /]
-[stream language="RO" videoId="497194973/9364bc0756"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-10-11-popular-templating-engines-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **templating engine** enables us to use static **template files** in our application.
 

@@ -3,10 +3,7 @@
 [slide hideTitle]
 # What is Templating?
 
-[vimeo-video]
-[stream language="EN" videoId="497194934/666338721f" default /]
-[stream language="RO" videoId="497194934/666338721f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-3-4-5-6-7-8-9-what-is-templating-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Templating** is the procedure of separating an HTML document's structure from the actual **content**.
 

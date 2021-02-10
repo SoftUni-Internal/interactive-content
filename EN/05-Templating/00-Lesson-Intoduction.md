@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Lesson Content
 
-[vimeo-video]
-[stream language="EN" videoId="497194912/5c7adc45b8" default /]
-[stream language="RO" videoId="497194912/5c7adc45b8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 

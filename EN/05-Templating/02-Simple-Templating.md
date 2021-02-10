@@ -3,10 +3,7 @@
 [slide hideTitle]
 # How does Templating work?
 
-[vimeo-video]
-[stream language="EN" videoId="497948726/d3414251b3" default /]
-[stream language="RO" videoId="497948726/d3414251b3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06.JS-Applications-Templating/EN/Interactive-js-apps-templating-Simple-Templating-How-does-templating-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In **templating**, each element of the user interface is stored in a **separate file**, called a **template**.
 
