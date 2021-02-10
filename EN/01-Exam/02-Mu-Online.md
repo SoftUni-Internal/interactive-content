@@ -45,8 +45,7 @@ The second value of the room contains the attack of the monster.
 
 You should remove the value of the monster's attack from your health.
 
-- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an 
-\{monster\}."
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an \{monster\}."
 
 - If you died, print "You died! Killed by {monster}." and your quest is over
 
