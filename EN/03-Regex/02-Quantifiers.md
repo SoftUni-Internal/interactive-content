@@ -2,10 +2,7 @@
 
 [slide]
 # Quantifiers
-[vimeo-video]
-[stream language="EN" videoId="489818790/4ce49729f2" default /]
-[stream language="RO" videoId="489818790/4ce49729f2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Quantifiers indicate numbers of characters or expressions to match.
 
@@ -74,10 +71,7 @@ Example: `1000, 10000 or 100000`
 [slide]
 # Grouping Constructs
 
-[vimeo-video]
-[stream language="EN" videoId="489818792/d2321e70c6" default /]
-[stream language="RO" videoId="489818792/d2321e70c6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A part of a pattern can be enclosed in parentheses (...). 
 
@@ -150,10 +144,7 @@ The pipe symbol `|` in the example means logical "or".
 # Backreferences
 
 
-[vimeo-video]
-[stream language="EN" videoId="489818270/3eedc1f66f" default /]
-[stream language="RO" videoId="489818270/3eedc1f66f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-14-15-Backreferences-Match-Previous-Groups-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A group can be referenced in the pattern, using \N, where N is the group number.
 

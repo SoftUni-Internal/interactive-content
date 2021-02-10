@@ -3,10 +3,7 @@
 [slide]
 # What is a Set?
 
-[vimeo-video]
-[stream language="EN" videoId="489798942/1e12af5747" default /]
-[stream language="RO" videoId="489798942/1e12af5747"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-32-33-what-is-a-set-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Set object lets you store **unique** values of any type, whether primitive values or object references.
 

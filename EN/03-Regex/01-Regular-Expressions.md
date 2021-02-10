@@ -3,10 +3,7 @@
 [slide]
 # What Are Regular Expressions?
 
-[vimeo-video]
-[stream language="EN" videoId="489818611/b94191c1c8" default /]
-[stream language="RO" videoId="489818611/b94191c1c8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 "Regular expressions" are patterns used to match character combinations in strings.
 
@@ -23,10 +20,7 @@ To test our regular expressions we can use the following site:
 [slide]
 # Regular Expression Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="489818685/4416e06b0f" default /]
-[stream language="RO" videoId="489818685/4416e06b0f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-6-Regular-expressions-pattern-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When working with regular expressions we use paterns to extract only the data we need.
 
@@ -48,10 +42,7 @@ Example of a patern that matches a name:
 # Character Classes: Ranges
 
 
-[vimeo-video]
-[stream language="EN" videoId="489818738/683c3c4047" default /]
-[stream language="RO" videoId="489818738/683c3c4047"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-7-Character-classes-ranges-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use square brackets:
 
@@ -81,10 +72,7 @@ John is **8** years old.
 # Predefined Classes
 
 
-[vimeo-video]
-[stream language="EN" videoId="489818761/ed44d0ae3b" default /]
-[stream language="RO" videoId="489818761/ed44d0ae3b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-8-Predefined-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In regex, we also have several character classes that provide us with a shorthand notation for commonly used sets of characters.
 
@@ -104,9 +92,6 @@ If you want to read more about regular expressins: [Regular Expressions](https:/
 [slide]
 # Regex101: Demo
 
-[vimeo-video]
-[stream language="EN" videoId="489818656/8342484c8d" default /]
-[stream language="RO" videoId="489818656/8342484c8d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-5-Regex101-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

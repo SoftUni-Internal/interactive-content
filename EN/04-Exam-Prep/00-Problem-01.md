@@ -1,7 +1,11 @@
 # Problem 1: Password Reset
 
 [slide]
+
 # Description
+
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/password-reset-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Write a password reset program that performs a series of commands on a string. 
 
 First, you will receive the string, that you have to alter, and afterwards, until the command `Done` is received, you will be given commands in the form of text (a string), split by a single space. 

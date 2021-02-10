@@ -4,10 +4,7 @@
 # Regex in JS
 
 
-[vimeo-video]
-[stream language="EN" videoId="489818276/f505c53905" default /]
-[stream language="RO" videoId="489818276/f505c53905"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-16-17-Regex-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In "JavaScript", we can construct a regular expression in two ways:
 
@@ -31,10 +28,7 @@ let regExp = new RegExp('[A-Za-z]+', 'g');
 [slide]
 # Validating string by pattern
 
-[vimeo-video]
-[stream language="EN" videoId="489818324/1f73bd06a2" default /]
-[stream language="RO" videoId="489818324/1f73bd06a2"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-18-Validating-string-by-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The first method we will look at is the `.test()`. It simply determines whether there is a match.
 
@@ -51,10 +45,7 @@ console.log(containsValidDate);
 [slide]
 # Checking for matches
 
-[vimeo-video]
-[stream language="EN" videoId="489818336/9c43130f55" default /]
-[stream language="RO" videoId="489818336/9c43130f55"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-19-Checking-for-matches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the `.match()` method to check for matches. It returns an array, which can be iterated easily after that.
 
@@ -73,10 +64,7 @@ console.log(matches[1]);
 [slide]
 # Using the Exec() method
 
-[vimeo-video]
-[stream language="EN" videoId="489818381/0d46d8c337" default /]
-[stream language="RO" videoId="489818381/0d46d8c337"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-20-Using-the-exce()-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If the match succeeds, the `.exec()` method returns an array with extra properties\: "index" and "input". 
 
@@ -103,10 +91,7 @@ while (result !== null) {
 [slide]
 # Replacing with regex
 
-[vimeo-video]
-[stream language="EN" videoId="489818394/353321baad" default /]
-[stream language="RO" videoId="489818394/353321baad"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-21-Replacing-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use the `.replace(regex, stringReplacement)` method with regular expressions.
 
@@ -124,10 +109,7 @@ console.log(result);
 [slide]
 # MatchAll method
 
-[vimeo-video]
-[stream language="EN" videoId="489818400/49ac9835cd" default /]
-[stream language="RO" videoId="489818400/49ac9835cd"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-22-Match-all-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The method `.matchAll()` returns an iterator of all results matching a string against a regular expression, including capturing groups.
 
@@ -147,10 +129,7 @@ console.log(array[1][0]);
 
 [slide]
 # Spliting with regex
-[vimeo-video]
-[stream language="EN" videoId="489818451/1a9e36239e" default /]
-[stream language="RO" videoId="489818451/1a9e36239e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-23-Splitting-with-regex-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The method `.split()` splits the text by pattern and returns an array of strings.
 

@@ -3,10 +3,7 @@
 [slide]
 # What is a Map?
 
-[vimeo-video]
-[stream language="EN" videoId="489798657/f9cf526cd8" default /]
-[stream language="RO" videoId="489798657/f9cf526cd8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-20-21-what-is-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Map object holds key-value pairs and keeps the original **insertion order** of the keys. 
 
@@ -23,10 +20,7 @@ Pure JavaScript objects are like Maps in that they both let you:
 [slide]
 # Adding, Accessing Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489798724/1030d751f4" default /]
-[stream language="RO" videoId="489798724/1030d751f4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-22-adding-and-accessing-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To add a key-value pair to a map use the `.set()` method.
 
@@ -63,10 +57,7 @@ console.log(map.size);
 [slide]
 # Containse / Delete
 
-[vimeo-video]
-[stream language="EN" videoId="489798726/3bdccf1504" default /]
-[stream language="RO" videoId="489798726/3bdccf1504"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-23-contains-and-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To find out if a map has a given key use the `.has()` method. 
 
@@ -107,10 +98,7 @@ console.log(map.size);
 [slide]
 # Iterators
 
-[vimeo-video]
-[stream language="EN" videoId="489798762/eb50153555" default /]
-[stream language="RO" videoId="489798762/eb50153555"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-24-iterators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 By using iterators, we can return an array containing [key-value] pairs.
 
@@ -155,10 +143,7 @@ console.log(entries);
 [slide]
 # Iterating A Map
 
-[vimeo-video]
-[stream language="EN" videoId="489798765/fa6116356d" default /]
-[stream language="RO" videoId="489798765/fa6116356d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-25-iterating-a-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To print a map simply use a **for-of** loop.
 
@@ -469,10 +454,7 @@ coknfee \-\> 350
 [slide]
 # Map Sorting
 
-[vimeo-video]
-[stream language="EN" videoId="489798851/7c58633974" default /]
-[stream language="RO" videoId="489798851/7c58633974"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-map-sorting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **sort** a Map, first transform it into an **array**, then use the `sort()` method.
 
