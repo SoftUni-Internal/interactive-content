@@ -1,32 +1,26 @@
 # HTTP Basics
 
-[slide]
+[slide hideTitle]
 
 # What is HTTP?
 
-**HTTP** which, means **HyperText Transfer Protocol**, is an application-layer protocol.
+**HTTP** means **Hyper Text Transfer Protocol**, it is an application-layer protocol.
 
-It is a text\-based client\-server protocol used for transferring Web resources, like HTML files, images, and more.
+**HTTP** is a text-based **client-server** protocol used for transferring Web resources, like HTML files or images.
 
-The most important qualities that HTTP has are:
+It is **text-based** protocol working on a **request-response** model.
 
--  It is based on the **request-response** model.
+HTTP relies on a **URL**s and provides **metadata** in the headers.
 
--  It is a text\-based protocol.
-
--  It relies on a **URL**s.
-
--  It provides **metadata** \- data in the header.
-
--  Every request is individual, HTTP is **stateless**.
+Every request is individual, HTTP is **stateless**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Request-Response Model
 
-With the **request-response** model, we have client and server.
+With the **request-response** model, we have a client and a server.
 
 The client program is running at the **end-host**.
 
@@ -38,15 +32,15 @@ For example, on a **web server**.
 
 And His main job is to provide the requested data.
 
-Have a look at this picture:
+For example:
 
 [image assetsSrc="Angular-Introduction.png" /]
 
-As we can see the client sends a request and the server sends a response.
+As we can see, the client sends a **request**, and the server answers with a **response**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # HTTP Request Examples
 
@@ -57,39 +51,41 @@ We send **GET** requests when we want to obtain data from the server.
 Here is an example request:
 
 ```
-GET /courses/about.aspx HTTP/1.1
-Host: www.softuni.com
-User-Agent: Mozilla/5.0
-<CRLF>
+    GET /courses/about.aspx HTTP/1.1
+    Host: www.softuni.com
+    User-Agent: Mozilla/5.0
+    <CRLF>
 ```
 
-The first line is for the **request type**, the requested resource, and the protocol version.
+On the first line is the **request type**, the **requested resource**, and the **protocol version**.
 
-On the next lines are the **Host**, the **User-Agent**, and the **body**.
+The **Host**, the **User-Agent**, and the **body** are on the following lines.
 
-And this is how the response will look like:
+## HTTP Response
+
+This response will look like this:
 
 ```
-HTTP/1.1 200 OK
-Date: Mon, 5 Jul 2010 13:09:03 GMT
-Server: Microsoft-HTTPAPI/2.0
-Last-Modified: Mon, 12 Jul 2010 15:33:23 GMT
-Content-Length: 54
-<CRLF>
-<html><title>Hello</title>Welcome to our site</html>
+    HTTP/1.1 200 OK
+    Date: Mon, 5 Jul 2010 13:09:03 GMT
+    Server: Microsoft-HTTPAPI/2.0
+    Last-Modified: Mon, 12 Jul 2010 15:33:23 GMT
+    Content-Length: 54
+    <CRLF>
+    <html><title>Hello</title>Welcome to our site</html>
 ```
 
-The first thing that we have is the **protocol version** and the **status code**.
+In the first line, we see the **protocol version** and the **status code**.
 
-On the next lines, we have:
+The next lines contain:
 
--  The **response date**,
+-  The date of the **response**
 
--  **Server Type**,
+-  The **Server Type**
 
--  The **date** when the resource is **modified**,
+-  The **date** when the resource is **modified**
 
--  The **length** of the **content**.
+-  The **length** of the **content**
 
 The **body** is after the **headers**.
 

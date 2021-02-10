@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # TypeScript playground
 
@@ -10,23 +10,33 @@ Install typescript with the `npm install typescript -g`.
 
 Create a **.vscode** folder and a **tsconfig.json** file with the following configuration:
 
+```
+    {
+      "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true
+      }
+    }
+```
+
 [image assetsSrc="Angular-Introduction-5.png" /]
 
 After you have your **.ts** file, open the **terminal** and execute the **following commands**:
 
 ```
-tsc {filename}.ts
+    tsc {filename}.ts
 ```
 
 ```
-node {filename}
+    node {filename}
 ```
 
 [image assetsSrc="Angular-Introduction-6.jpg" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Data Class
 
@@ -58,7 +68,7 @@ The **response** property is initialized to **undefined** and the **fulfilled** 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Tickets
 
@@ -99,7 +109,7 @@ Your program will receive two parameters – an array of strings and a single st
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # People
 
@@ -134,18 +144,18 @@ The resulting objects also expose the functions `work()` and `collectSalary()`.
 When `work()` is called, one of the following lines is printed on the console, depending on the current task in the list:
 
 ```
-{employee name} is working on a simple task.
-{employee name} is working on a complicated task.
-{employee name} is taking time off work.
-{employee name} is supervising junior workers.
-{employee name} scheduled a meeting.
-{employee name} is preparing a quarterly report.
+    {employee name} is working on a simple task.
+    {employee name} is working on a complicated task.
+    {employee name} is taking time off work.
+    {employee name} is supervising junior workers.
+    {employee name} scheduled a meeting.
+    {employee name} is preparing a quarterly report.
 ```
 
 And when `collectSalary()` is called, print the following:
 
 ```
-{employee name} received {salary + bonuses} this month.
+    {employee name} received {salary + bonuses} this month.
 ```
 
 ## Hints
@@ -154,7 +164,16 @@ We should begin by creating a parent class, that will hold all properties, share
 
 Looking at the problem description, we see the following structure for our parent object:
 
-[image assetsSrc="Angular-Introduction-8.png" /]
+```
+    {
+      age: Number,
+      name: String,
+      salary: Number,
+      tasks: [],
+      work: Function,
+      collectSalary: Function
+    }
+```
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**.
 
@@ -164,19 +183,59 @@ Functions are defined inside the class body.
 
 Why should the class be abstract?
 
-[image assetsSrc="Angular-Introduction-9.png" /]
+```js
+    abstract class Employee {
+        public name: string;
+        public age: number;
+        public salary: number;
+        public tasks: Array<string>;
+
+        (name: string, age: number) {
+            this.name = name;
+            this.age = age;
+            this.salary = 0;
+            this.tasks = [];
+        }
+
+        public work(): void {
+        /   /TODO
+        }
+
+        public collectSalary(): void {
+            //TODO
+        }
+
+        public getSalary(): number {
+            //TODO
+        }
+    }
+```
 
 The `work()` function has to cycle through the list of tasks and print the current one.
 
 The easiest way to do this is to shift the first element from the array and push it at the end.
 
-[image assetsSrc="Angular-Introduction-10.png" /]
+```js
+    public work(): void {
+        const currentTask = this.tasks.shift();
+        this.tasks.push(currentTask);
+        console.log(this.name + currentTask);
+    }
+```
 
 Printing the salary is pretty straightforward.
 
 However, since the manager has an added bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
 
-[image assetsSrc="Angular-Introduction-11.png" /]
+```js
+    public collectSalary(): void {
+        console.log(`${this.name} received ${this.getSalary()} this month.`);
+    }
+
+    public getSalary(): number {
+        return this.salary;
+    }
+```
 
 Now any objects that inherit from Employee will have all of their properties as well as anything new that’s defined in their declaration.
 
@@ -188,17 +247,47 @@ For **Junior** and **Senior**, the only difference from the parent **Employee** 
 
 Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
 
-[image assetsSrc="Angular-Introduction-12.png" /]
+```js
+    export class Junior extends Employee {
+        constructor(name: string, age: number) {
+            super(name, age);
+            this.tasks.push(" is working on a simple task.");
+        }
+    }
+
+    export class Senior extends Employee {
+        constructor(name: string, age: number) {
+            super(name, age);
+            this.tasks.push(" is working on a complicated task.");
+            this.tasks.push(" is taking time off work.");
+            this.tasks.push(" is supervising junior workers.");
+        }
+    }
+```
 
 The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero.
 
 His definition also needs to override the `getSalary()` function we added to the base class earlier, so it includes the bonus.
 
-[image assetsSrc="Angular-Introduction-13.png" /]
+```js
+    export class Manager extends Employee {
+        public dividend: number;
+
+        constructor(name: string, age: number) {
+            super(name, age);
+            this.tasks.push(" scheduled a meeting.");
+            this.tasks.push(" is preparing a quarterly meeting.");
+        }
+
+        public getSalary(): number {
+            return this.salary + this.dividend
+        }
+    }
+```
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Elements
 
@@ -225,9 +314,9 @@ The property should have only a **getter**.
 All of the classes should hold a `toString()` function, which returns the following result for them:
 
 ```
-"Element: {Water/Fire/Earth/Air}"
-"Sort: {elemelonSort}"
-"Element Index: {elemelonElementIndex}"
+    "Element: {Water/Fire/Earth/Air}"
+    "Sort: {elemelonSort}"
+    "Element Index: {elemelonElementIndex}"
 ```
 
 Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elements, regardless of which**.
@@ -242,11 +331,21 @@ The `toString()` function should remain the same as its parent class.
 
 ## Example
 
-[image assetsSrc="Angular-Introduction-14.png" /]
+```js
+    let test : Melon = new Melon(100, "Test");
+    //Throws error
+
+    let watermelon : Watermelon = new Watermelon(12.5, "Kingsize");
+    console.log(watermelon.toString());
+
+    // Element: Water
+    // Sort: Kingsize
+    // Element Index: 100
+```
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Boxes
 
@@ -280,11 +379,29 @@ Remove should get the topmost element.
 | `box.remove();` ||
 | `console.log(box.count);` ||
 
-[image assetsSrc="Angular-Introduction-15.png" /]
+```js
+    class Box<T> {
+        private _boxes = [];
+
+        public add(el: T) {
+            //TODO
+        }
+        
+        public remove(el: T) {
+            //TODO
+        }
+
+        get count(): number {
+            //TODO
+        }
+    }
+
+    export default Box;
+```
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # KeyValuePairs
 
@@ -304,6 +421,18 @@ It should have the following public methods:
 | `kvp.setKeyValue(1, "Steve");`||
 | `kvp.display();`||
 
-[image assetsSrc="Angular-Introduction-16.png" /]
+```js
+    class KeyValuePair<T, U>
+    {
+        private key: T;
+        private value: U;
+
+        //TODO: Create setKeyValue function
+
+        //TODO: Create display function
+    }
+
+    export default KeyValuePair
+```
 
 [/slide]

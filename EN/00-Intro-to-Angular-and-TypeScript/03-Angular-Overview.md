@@ -1,56 +1,54 @@
 # Angular Overview
 
-[slide]
+[slide hideTitle]
 
 # What is Angular?
 
-Angular is an open-source **web application framework** for building enterprise\-level front-end applications.
+**Angular** is an open-source **web application framework**, developed by **Google**.
 
-It is developed by **Google**.
+It is made for building **enterprise-level** **front-end** applications.
 
 Angular concentrates on best the **front-end practices** and the **end-to-end tooling**.
 
-The **Angular CLI** gives us a really good build process, which allows us to create quickly a very well structured app.
+The **Angular CLI** gives us a **high-quality** build process, which allows us to create quickly a very well structured app.
 
-Also, it gives us end-to-end testing, unit testing, and more.
+Also, it gives us **end-to-end testing**, **unit testing**, and more.
 
 Here is an example of an Angular component:
 
 ```js
-import { Component } from '@angular/core';
+   import { Component } from '@angular/core';
 
-@Component({
-   selector: 'my-app',
-   template: `<h1>Hello {{ name }}</h1>`,
-})
-export class AppComponent {
-   name = 'Angular';
-}
+   @Component({
+      selector: 'my-app',
+      template: `<h1>Hello {{ name }}</h1>`,
+   })
+   export class AppComponent {
+      name = 'Angular';
+   } 
 ```
 
-In this example, we have a class called **AppComponent**, which is decorated with **component decorator** - `@Component`.
+In this example, we have the **AppComponent** class decorated with **component decorator** - `@Component`.
 
-This decorator has **selector** and **template**.
+This **decorator** has a **selector** and a **template**.
 
-The selector wraps the template as instruction and triggers the instantiation of that instruction.
+The **selector** wraps the template as instruction and triggers the instantiation of that instruction.
 
-That means whenever there is an HTML tag with `my-app`, the **AppComponent** will be created.
-
-And will render the **template**.
+That means whenever there is an HTML tag with `my-app`, the **AppComponent** will create itself, and the **template** will render.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Angular Versions
 
-The first version is **Angular 1**, which now is called AngularJS.
+The first version is **Angular 1**, which now is called **AngularJS**.
 
-The second version is a **complete re-write** of the first one.
+The second version of **Angular** is called **Angular 2**.
 
-It is **Angular 2** and the following version after the second one.
+**Angular 2** is a **complete re-write** of the **Angular** (**AngularJS**).
 
-They are called just **Angular**.
+The following versions after the **Angular 2**, nowadays are called just **Angular**.
 
 [image assetsSrc="Angular-Introduction-3.png" /]
 

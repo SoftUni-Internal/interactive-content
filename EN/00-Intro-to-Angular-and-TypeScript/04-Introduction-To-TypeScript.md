@@ -1,283 +1,287 @@
 # Introduction to TypeScript
 
-[slide]
+[slide hideTitle]
 
 # TypeScript Overview
 
-**TypeScript** is a JS superset developed by Google and Microsoft.
+**TypeScript** is a **JavaScript superset** developed by Google and Microsoft.
 
-It allows us to write **typed** JavaScript, but it does not oblige us.
+It allows us to write **typed** JavaScript, but it does not force us.
 
-We can install the TypeScript compiler from npm with this command: `npm install -g typescript`.
+We can install the **TypeScript** compiler from **npm** with the following command: `npm install -g typescript`.
 
-To write it, we need to add the `.ts` extension to our files.
+We need to add the `.ts` extension to our files if we want to write **TypeScript**.
 
-We run them with `tsc myFile.ts`.
+To run **TypeScript** files, we need to write the `tsc myFile.ts` command in the terminal.
 
-The output that we receive is plain JavaScript.
+After the file compilation, we will receive plain JavaScript as output.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Variable Types in TypeScript
 
-TypeScript allows us to have **annotations** for the variables.
+TypeScript allows us to have **annotations** attach to the variables.
 
-The annotations give us the ability to specify which variable what type is.
+The annotations give us the ability to **specify** the **type** of every **variable**.
 
-The **types** in TypeScript are:
+The variable **types** in TypeScript are:
 
 -  **Boolean**
 
 ```js
-let isDone: boolean = false;
+   let isChecked: boolean = false;
 ```
 
 -  **Number**
 
 ```js
-let decimal: number = 6;
-let hex: number = 0xf00d;
-let binary: number = 0b1010;
-let octal: number = 0o744;
+   let decimal: number = 6;
+   let hex: number = 0xf00d;
+   let binary: number = 0b1010;
+l  et octal: number = 0o744;
 ```
 
 -  **String**
 
 ```js
-let car: string = 'coupe';
+   let car: string = 'coupe';
 ```
 
 -  **Array**
 
 ```js
-let list: number[] = [1, 2, 3]; //Recommended
-let list: Array<number> = [1, 2, 3];
+   let list: number[] = [1, 2, 3]; //Recommended
+   let shoppingList: Array<number> = [1, 2, 3];
 ```
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Classes in TypeScript
 
-The classes in TypeScript are a little different from the ones in JS.
+The **classes** in **TypeScript** are a little bit different from the ones in JavaScript.
 
-TypeScript gives us **access modifiers** and functions can have a **return type**.
+**TypeScript** gives us **access modifiers** and functions can have a **return type**.
 
-So a class in TypeScript looks like this:
+A **class** in **TypeScript** looks like this:
 
 ```js
-class Greeter {
-  public greeting : string;
+   class Greeter {
+      public greeting : string;
 
-  constructor(message : string) {
-    this.greeting = message;
-  }
+      constructor(message : string) {
+      this.greeting = message;
+   }
 
-  greet() : string {
-      return `Hello, ${this.greeting}!`;
-  }
-}
+   greet() : string {
+         return `Hello, ${this.greeting}!`;
+      }
+   }
 
-let greeter : Greeter = new Greeter('world');
-console.log(greeter.greet());
+   let greeter : Greeter = new Greeter('world');
+   console.log(greeter.greet());
 ```
 
-In this class, we have **public** property.
+In this class, the **greeting** property is а **public** one also, it is a **string**.
 
-Which is **greeting**, it is a **string**.
+The **constructor** is a usual JavaScript constructor, with the difference that we set a **type** to the message property.
 
-The **constructor** is the usual JS constructor, with the difference that we set a **type** to the message property.
+We set the **return type** of the **greet** function, which returns a **string**.
 
-We set the **return type** of the **greet** function, which returns a string.
-
-After, we instantiate the class and `console.log()` it.
+After we have instantiated the **Greeter** class, we have also printed it to the console.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Inheritance in TypeScript
 
-Inheritance in TypeScript is the same as in JS.
+**Inheritance** in **TypeScript** is the same as the one in **JavaScript**.
 
-We inherit with the keyword **extends**.
+In **TypeScript** to inherit a class, we use the **extends** keyword.
 
-The difference is that we can add annotations.
+The difference between the inheritance in **TypeScript** and the one in **JavaScript**, is that in **TypeScript** we can add **annotations**.
 
 Here is an example:
 
 ```js
-class Animal {
-   move(distanceInMeters: number = 0): void {
-      console.log(`Animal moved ${distanceInMeters}m.`);
+   class Animal {
+      move(distanceInMeters: number = 0): void {
+         console.log(`Animal moved ${distanceInMeters}m.`);
+      }
    }
-}
 
-class Dog extends Animal {
-   bark(): void {
-      console.log('Woof! Woof!');
+   class Dog extends Animal {
+      bark(): void {
+         console.log('Woof! Woof!');
+      }
    }
-}
 
-const dog = new Dog();
-dog.bark();
-dog.move(10);
-dog.bark();
+   const dog = new Dog();
+   dog.bark();
+   dog.move(10);
+   dog.bark();
 ```
 
 In this example, the **Dog** class inherits the **Animal** one.
 
 The **Dog** will have all the methods that the **Animal** has.
 
-On the methods, we added the **void** annotation because they **do not** return anything.
+To the `bark()` and the `move()` methods, we added the **void** annotation because they **do not** return anything.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Interfaces
 
-Another ability that TypeScript gives us is the **interfaces**.
+The **interfaces** are another ability that TypeScript gives us.
 
-With them, we can take apart the most used properties and not write them every time.
+With **interfaces**, we can take apart the most used properties and **re-use** them instead of writing them every time.
 
-That allows us to have more re-usable code, also to have fewer lines.
+That allows us to have more **re-usable** code, also to have fewer lines of code.
 
-When we use the **interface** in many files in our app, we can take it out in a different file.
+We can take the **interfaces** out in a different file if we use them a lot in the application.
 
-And in this way, we will need only to import it.
+In this way, if we need them, we only need to import them.
 
-To use **interfaces** we need to add them as **annotation**.
+If we are going to use an **interface**, we need to add it as an **annotation**.
 
 Here is an example:
 
 ```js
-interface Man {
-   name: string;
-}
+   interface Man {
+      name: string;
+   }
 
-function person(obj: Man) {
-   return `Hi, ${obj.name}`;
-}
+   function Person(obj: Man) {
+      return `Hi, ${obj.name}`;
+   }
 
-let myObj = { name: 'John' };
-console.log(myObj);
+   let john = { name: 'John' };
+   console.log(john);
 ```
 
-In this example, we have the **interface** **Man**, which is used in the function **person**.
+In this example, we have the **interface** **Man**, used in the function **Person**.
 
-This function will return a string with `Hi, John`.
+This function will return a string with `Hi, John` printed to the console.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Generics and Enumerations
 
-Generics gives us a more flexible, more re-usable code, also make the component to work with more than one type.
+Generics gives us a **more flexible** and more **re-usable** code, also make the component to work with **more than one type**.
 
-We can set a function to work with **any** type, but in this way, after the return, we are losing the type.
+We can set a specific function to work with **any** given type, but in this way, after the return, we are **losing the type**.
 
-But we can use the **type variable** - `T`, which allows us to capture the type which is provided.
+But we can use the **type variable** - `T`, which allows us to **capture** the provided type.
 
-Have a look at this example:
+For example:
 
 ```js
-function identity<T>(arg: T): T {
-   return arg;
-}
+   function identity<T>(arg: T): T {
+      return arg;
+   }
 
-let output = identity<string>'myString';
-let output1 = identity<number>5;
+   let outputString = identity<string>'myString';
+   let outputNumber = identity<number>5;
 ```
 
-In this example, on the first variable, we set that the type is a string, the second one is a **number**.
+In this example, we set the type of the `outputString` variable to be a **string**.
 
-The `output` type will return a **string** and `output1` type will be **number**.
+We set `outputNumber` variable to be a **number**
+
+The `outputString` will be **string** but the `outputNumber` will be **number**.
+
+## Enumerations
 
 The **Enumerations** are a set of named constants.
 
-They help us to create a set of individual cases
-
 TypeScript provides both **numeric** and **string-based** enums.
 
-Here is an example of numeric and string-based enums:
+They help us to create a set of individual cases.
 
--  Numeric:
-
-```js
-enum Direction {
-    Up = 1,
-    Down,
-    Left,
-    Right,
-}
-```
-
--  String-Based
+Here is an example of **Numeric** enum:
 
 ```js
-enum Direction {
-  Up = "UP",
-  Down = "DOWN",
-  Left = "LEFT",
-  Right = "RIGHT",
-}
+   enum Direction {
+      Up = 1,
+      Down,
+      Left,
+      Right,
+   }
 ```
+
+The **Numeric** enumerations can store values as numbers.
+
+Have a look a **String-Based** enum:
+
+```js
+   enum Direction {
+      Up = "UP",
+      Down = "DOWN",
+      Left = "LEFT",
+      Right = "RIGHT",
+   }
+```
+
+Unlike the Numeric enums, the **String-Based** enumerations can store strings as values.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Modules
 
-Modules in TypeScript are the same as the ones in ES6.
+Modules in TypeScript are the same as the ones in **ES6**.
 
-Here are some ways to export:
+Here are some ways to export methods:
 
--  Exporting and declaring:
-
-```js
-export default interface StringValidator {
-    isAcceptable(s: string): boolean;
-}
-```
-
--  Exporting a specific function:
+- **Exporting** and **declaring**:
 
 ```js
-export { Example };
+   export default interface StringValidator {
+      isAcceptable(s: string): boolean;
+   }
 ```
 
--  Export a function with different name:
+- **Exporting** a **specific** function:
 
 ```js
-export { Example as mainExample };
+   export { Example };
 ```
 
-And here are some ways to import:
-
--  Importing a specific function:
+- **Export** a **function** with **different** **name**:
 
 ```js
-import { Example } from './example';
+   export { Example as mainExample };
 ```
 
--  Importing everything into a single variable:
+Here are some ways to import methods:
+
+- **Importing** a **specific** function:
 
 ```js
-import * as example from './example';
+   import { Example } from './example';
 ```
 
--  Importing a function and changing the name:
+- **Importing** **everything** into a **single** **variable**:
 
 ```js
-import { Example as mainExample } from './example';
+   import * as example from './example';
 ```
 
-If we have used the default exporting, we can use `import example from "./example";`.
+- **Importing** a **function** and **changing** the **name**:
+
+```js
+   import { Example as mainExample } from './example';
+```
+
+If we have used the **default exporting**, we can use `import example from "./example";`.
 
 [/slide]

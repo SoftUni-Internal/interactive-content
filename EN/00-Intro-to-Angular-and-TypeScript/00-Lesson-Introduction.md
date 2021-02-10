@@ -1,8 +1,8 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
-# Table of contents
+# Lesson Contents
 
 ## In this lesson you will learn:
 
@@ -12,11 +12,11 @@
 
 **2. What is Routing**
 
--  Client\-side
+-  **Client-side**
 
--  Server\-side
+-  **Server-side**
 
-**3. Introduction to Angular**
+**3. Angular Overview**
 
 -  Web Application Platform
 

@@ -1,49 +1,55 @@
 # Routing Overview
 
-[slide]
+[slide hideTitle]
 
 # What is Routing?
 
-**Routing** is navigation on the **client-side**.
+**Routing** is the **client-side** navigation.
 
-The **client-side routing** is the main element of the **Single Page Applications**, also called **SPA**.
+The **client-side routing** is the main element of the **Single Page Applications**.
 
-This navigation downloads the entire app on the first load.
+This navigation allows us to downloads the entire application on the first load.
 
-And When the URL changes, it only updates the page without **reloading**.
+When the URL changes, it only updates the modified component without **reloading**.
 
-Unlike the **server-side** navigation, which reloads on every **change** in the URL.
+Here is an example: 
 
-Here is the difference between the two types of navigation:
+[image assetsSrc="Angular-Introduction-2.png" /]
 
--  **Server-Side**:
+## Server-side
 
-   [image assetsSrc="Angular-Introduction-1.png" /]
+The **server-side** navigation reloads the application on every **change** in the URL.
 
--  **Client-Side**:
+When a new page is **requested**, we **exchange** data from the server.
 
-   [image assetsSrc="Angular-Introduction-2.png" /]
+After the server returns a response, we will display a new page in the browser.
+
+We can define an application as a **Multi Page Application** when the **reload** icon gets triggered.
+
+Here is an example:
+
+[image assetsSrc="Angular-Introduction-1.png" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Single Page Application
 
-When the **location is changed**, the **router** will load the correct resource for that location.
+The **router navigation** will load the correct resource when the **location is changed**.
 
-Also, in reverse, a difference in the content will be represented in the URL
+In reverse, a difference in the content represents itself in the **URL**.
 
-This type of routing has many benefits.
+With this type of routing, we get many **benefits**:
 
-Some of them are:
+- The resources are loaded **only once**
 
--  The resources for the app are load **only once**.
+- The state is maintainable across all pages
 
--  The state is maintainable across all pages.
+- We can use **browser history**
 
--  We can use **browser history**.
+- quicker **UX**
 
--  Fast **UI**.
+- Smooth transitions between pages 
 
 [/slide]
