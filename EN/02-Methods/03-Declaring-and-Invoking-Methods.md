@@ -1,7 +1,7 @@
 # Declaring and Invoking Methods
 
 [slide hideTitle]
-# Create a Method
+# Creating Methods
 
 A method must be declared within a class.
 
@@ -30,7 +30,7 @@ public class MyClass {
 
 [slide hideTitle]
 
-# Invoking a Method
+# Invoking Methods
 
 To call a method in Java, write the method's name followed by two parentheses **()** and a semicolon **;**
 
