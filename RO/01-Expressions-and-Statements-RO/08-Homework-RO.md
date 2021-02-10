@@ -211,7 +211,7 @@ Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
 [/slide]
 
 [slide hideTitle]
-# Problemă: Days to Minutes
+# Problemă cu Soluție Days to Minutes
 
 [vimeo-video]
 [stream language="EN" videoId="486857308/5e4892a5b8" default /]
