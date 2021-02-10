@@ -1,5 +1,7 @@
 # Problem 3: P!rates
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/pirates-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [slide]
 # Description
 Until the `Sail` command is given you will be receiving:

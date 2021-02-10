@@ -1,5 +1,7 @@
 # Problem 2: Fancy Barcodes
 
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/05.JS-Fundamentals-Exam-Prep/EN/barcodes-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [slide]
 # Description
 Your task is to determine if the given sequence of characters is a valid barcode or not.
