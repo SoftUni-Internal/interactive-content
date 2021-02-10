@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Pool Day
-[code-task title="Pool Day" taskId="pb-java-march-exam-01" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Pool Day" taskId="pb-java-exam-Pool-day" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
