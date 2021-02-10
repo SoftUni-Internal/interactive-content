@@ -45,7 +45,8 @@ The second value of the room contains the attack of the monster.
 
 You should remove the value of the monster's attack from your health.
 
-- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an {monster}."
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an 
+\{monster\}."
 
 - If you died, print "You died! Killed by {monster}." and your quest is over
 
@@ -55,13 +56,13 @@ If you managed to go through all of the rooms in the dungeon, print on the next 
 
 ```
 "You've made it! 
-Bitcoins: {bitcoins} 
-Health: {health}" 
+Bitcoins: \{bitcoins\} 
+Health: \{health\}" 
 ```
 
 ### Input \/ Constraints
 
-You will receive a String, representing the rooms of the dungeon, separated with a "|" (vertical bar): room1|room2|room3...".
+You will receive a String, representing the rooms of the dungeon, separated with a "\|" (vertical bar): room1\|room2\|room3...".
 
 ### Output
 
