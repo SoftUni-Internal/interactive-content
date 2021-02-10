@@ -1860,7 +1860,7 @@ Also they should have values (binary and hexadecimal).
 [test open]
 [input]
 // 20 to binary
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
     \<label for="input"\>Number\</label\>
     \<input type="number" id="input"/\>\<br\>
@@ -1878,7 +1878,7 @@ document.body.innerHTML = `
     \<label for="result"\>Result\</label\>
     \<input type="text" name="output" id="result" disabled readonly/\>
 \</footer\>
-`;
+\`;
 
 result();
 
@@ -1896,7 +1896,7 @@ yes
 [test]
 [input]
 // 100 to binary
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
     \<label for="input"\>Number\</label\>
     \<input type="number" id="input"/\>\<br\>
@@ -1914,7 +1914,7 @@ document.body.innerHTML = `
     \<label for="result"\>Result\</label\>
     \<input type="text" name="output" id="result" disabled readonly/\>
 \</footer\>
-`;
+\`;
 
 result();
 
@@ -1932,7 +1932,7 @@ yes
 [test]
 [input]
 // 110 to hexadecimal
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
     \<label for="input"\>Number\</label\>
     \<input type="number" id="input"/\>\<br\>
@@ -1950,7 +1950,7 @@ document.body.innerHTML = `
     \<label for="result"\>Result\</label\>
     \<input type="text" name="output" id="result" disabled readonly/\>
 \</footer\>
-`;
+\`;
 
 result();
 
@@ -1968,7 +1968,7 @@ yes
 [test]
 [input]
 // 1515 to hexadecimal
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
     \<label for="input"\>Number\</label\>
     \<input type="number" id="input"/\>\<br\>
@@ -1986,7 +1986,7 @@ document.body.innerHTML = `
     \<label for="result"\>Result\</label\>
     \<input type="text" name="output" id="result" disabled readonly/\>
 \</footer\>
-`;
+\`;
 
 result();
 
@@ -2004,7 +2004,7 @@ yes
 [test]
 [input]
 // 903 to binary
-document.body.innerHTML = `
+document.body.innerHTML = \`
 \<div id="container"\>
     \<label for="input"\>Number\</label\>
     \<input type="number" id="input"/\>\<br\>
@@ -2022,7 +2022,7 @@ document.body.innerHTML = `
     \<label for="result"\>Result\</label\>
     \<input type="text" name="output" id="result" disabled readonly/\>
 \</footer\>
-`;
+\`;
 
 result();
 
