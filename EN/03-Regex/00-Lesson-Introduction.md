@@ -2,10 +2,7 @@
 [slide]
 # Lesson Introduction
 
-[vimeo-video]
-[stream language="EN" videoId="489818589/f0ee739d40" default /]
-[stream language="RO" videoId="489818589/f0ee739d40"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn about:
 

@@ -1,10 +1,7 @@
 [slide]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489818568/4de33cd756" default /]
-[stream language="RO" videoId="489818568/4de33cd756"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-29-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you learned:
 
