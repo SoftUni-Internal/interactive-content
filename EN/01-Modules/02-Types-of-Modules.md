@@ -3,10 +3,7 @@
 [slide hideTitle]
 # IIFE Modules
 
-[vimeo-video]
-[stream language="EN" videoId="497190428/165032f175" default /]
-[stream language="RO" videoId="497190428/165032f175"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-6-iife-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **IIFE Modules** are essential for front-end development.
 
@@ -49,10 +46,7 @@ The counter itself, however, **cannot be directly accessed**, unless we declare 
 [slide hideTitle]
 # Node.js Modules
 
-[vimeo-video]
-[stream language="EN" videoId="497190452/0853897b4d" default /]
-[stream language="RO" videoId="497190452/0853897b4d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-7-8-nodejs-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Node\.js, **every file has its own scope**.
 
@@ -144,10 +138,7 @@ let fs = require('fs');
 [slide hideTitle]
 # ES6 Modules
 
-[vimeo-video]
-[stream language="EN" videoId="497190480/bb0605a541" default /]
-[stream language="RO" videoId="497190480/bb0605a541"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-9-es6-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
 
