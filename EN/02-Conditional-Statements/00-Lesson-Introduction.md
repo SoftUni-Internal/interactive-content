@@ -9,12 +9,12 @@
 ## In this lesson you will learn about:
 
 **1. Comparison Operators**
-- Compare values using comparison operators.
+- Compare values using comparison operators
 
 **2. What conditional statements are:**
 - The `if` Statement
 - The `if-else` Statement
-- The `if-else-if-else`-… Statemen
+- The `if-else-if-else`-… Statement
 
 **3. Debugging**
 - Debugging in VSC

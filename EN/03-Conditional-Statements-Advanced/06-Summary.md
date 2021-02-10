@@ -45,7 +45,7 @@ switch (selector) {
 
 ## In the next lesson we will learn:
 
-- What is for-loop?
+- What is for-loop
 
 - For-loop syntax
 

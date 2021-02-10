@@ -6,13 +6,13 @@
 ## In this lesson you learned:
 
 - What is a logical Boolean expression. 
-   - how to use comparison operators.
+   - How to use comparison operators.
 
-- what is a conditional statement: 
+- What is a conditional statement: 
    - `if`
    - `if-else`
    - `if-else-if`
-- how to make a series of `if-else` conditions.
+- How to make a series of `if-else` conditions.
 
 ```js
 if (num == 1) {
@@ -26,7 +26,7 @@ if (num == 1) {
 }
 ```
 
-- how to trace the program's bugs using a debugger
+- How to trace the program's bugs using a debugger
 
 ## In the next lesson we will learn:
 
