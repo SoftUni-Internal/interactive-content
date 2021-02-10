@@ -166,7 +166,7 @@ Then you should create and append an `<option>` to the `<select>` with `id "menu
 
 ## Example
 
-[image assetsSrc="JS-Advanced-DOM-Homework-5.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-5.png" /]
 
 ## Hints
 
