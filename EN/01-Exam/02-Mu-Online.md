@@ -56,8 +56,8 @@ If you managed to go through all of the rooms in the dungeon, print on the next 
 
 ```
 "You've made it! 
-Bitcoins: \{bitcoins\} 
-Health: \{health\}" 
+Bitcoins: {bitcoins} 
+Health: {health}" 
 ```
 
 ### Input \/ Constraints
