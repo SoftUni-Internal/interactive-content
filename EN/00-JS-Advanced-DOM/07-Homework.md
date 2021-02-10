@@ -1743,11 +1743,12 @@ yes
 
 # Problem: Number Convertor
 
-[code-task title="Problem: Number Convertor" taskId="js-advanced-DOM-Number-Convertor" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Number Convertor" taskId="js-advanced-DOM-Number-Convertor" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function repeatString(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -1763,19 +1764,19 @@ Write a function that **converts** a **decimal number** to **binary** and **hexa
 
 The given number will always be in **decimal format.**
 
-The **"From"** select menu will only have a
-**Decimal** option, but the **"To"** select menu will have **two options:** **Binary** and **Hexadeicmal**.
+The `From` select menu will only have a
+**Decimal** option, but the `To` select menu will have **two options:** **binary** and **hexadeicmal**.
 
 This means that our program should have the functionality to **convert decimal** to **binary** and
 **decimal** to **hexadecimal**.
 
-Note that **"To" select menu** by default is empty.
+Note that `To` **select menu** by default is empty.
 
-You have to insert the two options (**'Binary'** and **'Hexadecimal'**) inside before continue.
+You have to insert the two options (binary and hexadecimal) inside before continue.
 
-Also they should have **values ('binary'** and '**hexadecimal**').
+Also they should have values (binary and hexadecimal).
 
-- When the **\[Convert it\]** button is **clicked**, the expected result should appear in the **\[Result\]** input field.
+- When the `[Convert it]` button is **clicked**, the expected result should appear in the `[Result]` input field.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-22.jpg" /]
 
