@@ -145,11 +145,12 @@ yes
 
 # Problem: Fill Dropdown
 
-[code-task title="Problem: Fill Dropdown" taskId="js-advanced-DOM-Fill-Dropdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Fill Dropdown" taskId="js-advanced-DOM-Fill-Dropdown"  executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function fillDropdown(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -159,9 +160,9 @@ yes
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/02-Fill-Dropdown.zip) **for this task.**
 
-Your task is to take values from **input** fields with **ids "newItemText"** and **"newItemValue"**.
+Your task is to take values from **input** fields with `ids "newItemText` and `newItemValue`.
 
-Then you should create and append an **\<option\>** to the **\<select\>** with **id "menu"**.
+Then you should create and append an `<option>` to the `<select>` with `id "menu"`.
 
 ## Example
 
@@ -169,9 +170,11 @@ Then you should create and append an **\<option\>** to the **\<select\>** with *
 
 ## Hints
 
-- Your function should take the values of **newItemText** and **newItemValue**. After that you should create a new **option** element and set its **textContent** and its **value** to the newly taken ones.
+- Your function should take the values of **newItemText** and **newItemValue**. 
 
-- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id **"menu"**.
+After that you should create a new **option** element and set its **textContent** and its **value** to the newly taken ones.
+
+- Once you have done all of that, you should **append** the newly created **option** as a **child** to the **select** item with id `menu`.
 
 - Finally, you should **clear** the value of the two **input** fields.
 
