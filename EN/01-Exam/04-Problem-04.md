@@ -1,6 +1,6 @@
 ﻿[slide hideTitle]
 # Club
-[code-task title="Club" taskId="pb-java-march-exam-04" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Club" taskId="pb-java-exam-Club" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
