@@ -364,6 +364,11 @@ function city(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
+```
+[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -390,7 +395,7 @@ See the examples below.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Sofia
 492
@@ -472,6 +477,11 @@ function city(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
+```
+[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -498,7 +508,7 @@ See the examples below.
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 Sofia
 492
