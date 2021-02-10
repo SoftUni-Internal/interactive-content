@@ -2,10 +2,8 @@
 
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="489798990/f378fc8dd7" default /]
-[stream language="RO" videoId="489798990/f378fc8dd7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-34-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 ## In this lesson you learned:
 

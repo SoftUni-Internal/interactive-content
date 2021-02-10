@@ -3,10 +3,7 @@
 [slide]
 # What is an Associative Array?
 
-[vimeo-video]
-[stream language="EN" videoId="489799053/d484700337" default /]
-[stream language="RO" videoId="489799053/d484700337"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-3-4-what-are-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The JavaScript language is built on one central data structure - the associative array.
 
@@ -30,10 +27,7 @@ Example:
 [slide]
 # Declartation
 
-[vimeo-video]
-[stream language="EN" videoId="489799055/f5c3621dae" default /]
-[stream language="RO" videoId="489799055/f5c3621dae"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-5-declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An associative array in JavaScript is just an object, so we can declare it dynamically.
 
@@ -70,10 +64,7 @@ assocArr[key] = 6;
 [slide]
 # Using a for-in loop
 
-[vimeo-video]
-[stream language="EN" videoId="489799112/12f12cff47" default /]
-[stream language="RO" videoId="489799112/12f12cff47"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-6-using-for-in-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use a **for-in** loop to iterate through the keys.
 
@@ -372,10 +363,7 @@ tyuhjk \-\> 0844565344
 [slide]
 # Manipulating Associative Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489799185/17e719a047" default /]
-[stream language="RO" videoId="489799185/17e719a047"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-9-manipulating-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use the following expression to check if a **key** is **present**. 
 
@@ -868,10 +856,7 @@ Tuesday \-\> Ted
 [slide]
 # Sorting Associative Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489799307/dcdb81aea5" default /]
-[stream language="RO" videoId="489799307/dcdb81aea5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-13-sorting-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Objects **cannot be sorted**. To do so, we must convert them into arrays.
 
@@ -908,10 +893,7 @@ Use the `.localeCompare()` method to sort **strings** in JavaScript.
 [slide]
 # Sorting by Key
 
-[vimeo-video]
-[stream language="EN" videoId="489799327/286d74afc8" default /]
-[stream language="RO" videoId="489799327/286d74afc8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-14-sorting-by-key-and-value-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **sort by key**, use the **first element** of each entry.
 
@@ -1324,10 +1306,7 @@ Ted \-\> Dayton Ave
 
 # Nested Data Structures
 
-[vimeo-video]
-[stream language="EN" videoId="489798633/dfd36c09a6" default /]
-[stream language="RO" videoId="489798633/dfd36c09a6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-18-nested-data-structures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The values stored in associative arrays can be objects, or arrays.
 
