@@ -4,10 +4,7 @@
 
 # What is Unit Testing?
 
-[vimeo-video]
-[stream language="EN" videoId="497187486/91a42d34b4" default /]
-[stream language="RO" videoId="497187486/91a42d34b4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-3-4-5-unit-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A unit test is a piece of code that checks whether a certain **functionality works as expected.**
 
@@ -62,10 +59,7 @@ It means you have a well-defined code with high cohesion.
 
 # Unit Test Structure
 
-[vimeo-video]
-[stream language="EN" videoId="497187562/291e2862b3" default /]
-[stream language="RO" videoId="497187562/291e2862b3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-6-7-unit-tests-structures-and-frameworks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **AAA** "Arrange-Act-Assert" pattern is almost a standard across the industry. 
 

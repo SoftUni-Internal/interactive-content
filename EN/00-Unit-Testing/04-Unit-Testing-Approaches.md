@@ -4,10 +4,7 @@
 
 # Types of Unit Testing
 
-[vimeo-video]
-[stream language="EN" videoId="497186923/11dd2d2251" default /]
-[stream language="RO" videoId="497186923/11dd2d2251"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-16-17-18-19-20-unit-testing-approaches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Code First
 
@@ -19,10 +16,7 @@ This is a classical approach, where the functionality, is implemented and then t
 [slide hideTitle]
 # Test-Driven Development
 
-[vimeo-video]
-[stream language="EN" videoId="497186952/c459aec01c" default /]
-[stream language="RO" videoId="497186952/c459aec01c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-20-test-driven-development-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tests first approach means we write the tests before actual code. 
 
@@ -43,10 +37,7 @@ In Test-Driven Development we follow these steps:
 [slide hideTitle]
 # Why TDD is a better approach?
 
-[vimeo-video]
-[stream language="EN" videoId="497187415/9886bcfa69" default /]
-[stream language="RO" videoId="497187415/9886bcfa69"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-21-why-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - TDD helps find issues in an early stage of the project and thus avoids reworking
 

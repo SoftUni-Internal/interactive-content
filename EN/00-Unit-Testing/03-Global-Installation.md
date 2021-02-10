@@ -4,10 +4,7 @@
 
 # Global Installation
 
-[vimeo-video]
-[stream language="EN" videoId="497187625/794b3d10c7" default /]
-[stream language="RO" videoId="497187625/794b3d10c7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-11-12-13-14-global-installation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To install frameworks and libraries globally, use the Windows "CMD" or Visual Studio Code "npm".
 

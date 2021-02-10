@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Lesson Content
 
-[vimeo-video]
-[stream language="EN" videoId="497187463/27e13c8c22" default /]
-[stream language="RO" videoId="497187463/27e13c8c22"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 

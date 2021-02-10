@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Summary
 
-[vimeo-video]
-[stream language="EN" videoId="497187442/eabcce8a84" default /]
-[stream language="RO" videoId="497187442/eabcce8a84"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-22-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # In this lesson you learnt:
 

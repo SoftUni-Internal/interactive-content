@@ -4,10 +4,7 @@
 
 # What is Mocha and Chai?
 
-[vimeo-video]
-[stream language="EN" videoId="497187597/ab33a32f17" default /]
-[stream language="RO" videoId="497187597/ab33a32f17"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-8-9-10-mocha-and-chai-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Mocha** is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. 
