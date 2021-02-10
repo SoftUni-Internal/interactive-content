@@ -1,7 +1,7 @@
 # Declaring and Invoking Methods
 
 [slide hideTitle]
-# Create a Method
+# Creating Methods
 
 A method must be declared within a class.
 
