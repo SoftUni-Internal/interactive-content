@@ -4,10 +4,7 @@
 
 # Event Loop
 
-[vimeo-video]
-[stream language="EN" videoId="497193139/39a6d2879a" default /]
-[stream language="RO" videoId="497193139/39a6d2879a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-3-4-Asynchronous-Programming-and-the-Event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The event loop in JavaScript is **where all the incoming events are processed**.
 
@@ -23,10 +20,7 @@ Here is how the whole process happens:
 
 # Asynchronous Programming in JS
 
-[vimeo-video]
-[stream language="EN" videoId="497193187/781d77b299" default /]
-[stream language="RO" videoId="497193187/781d77b299"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-5-6-Asynchronous-Programming-in-JavaScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
 
@@ -78,10 +72,7 @@ It is important to know that the `async` keyword **must be provided in front of 
 
 # Asynchronous Programming
 
-[vimeo-video]
-[stream language="EN" videoId="497193235/5e5e63906b" default /]
-[stream language="RO" videoId="497193235/5e5e63906b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-7-Asynchronous-Programming-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a store and a website.
 

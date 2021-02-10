@@ -4,6 +4,8 @@
 
 # Async Functions
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-16-17-18-19-Async-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "Async" functions, unlike promises and callbacks, are an **easy-to-read way of operating asynchronously**.
 
 They look like regular functions but use the event loop to work asynchronously.
@@ -49,6 +51,8 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 [slide hideTitle]
 
 # Async/Await vs Promise.then
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-20-Async-Await-vs-Promise.then()-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Async functions a **much more concise** than promises.
 
@@ -96,6 +100,8 @@ Both examples above **do the same job**, the difference is just in **code readab
 
 # Error Handling
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-21-Error-Handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Async functions are **best used with a try/catch block**.
 
 ```js
@@ -131,6 +137,8 @@ Working with code **always produces errors** and it is **better for user experie
 [slide hideTitle]
 
 # Sequential Execution
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-22-Sequential-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `await` keyword in `async` functions allows for the **execution of code in sequence**.
 
@@ -170,6 +178,8 @@ This way **going inside the given function with an undefined variable is impossi
 [slide hideTitle]
 
 # Concurrent Execution
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-23-Concurrent-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When the `await` keyword is omitted, operations run **concurrently** or independently from one another.
 

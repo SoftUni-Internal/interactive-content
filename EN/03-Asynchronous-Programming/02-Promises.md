@@ -4,10 +4,7 @@
 
 # What is a Promise?
 
-[vimeo-video]
-[stream language="EN" videoId="497193252/5a46d55624" default /]
-[stream language="RO" videoId="497193252/5a46d55624"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-8-9-10-What-is-a-Promise--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Executing functions that rely on value from foreign sources is a **tedious and slow task**.
 
@@ -45,10 +42,7 @@ Here is a visual representation of the chaining process:
 
 # Promise Methods
 
-[vimeo-video]
-[stream language="EN" videoId="497193280/a49d93bcb6" default /]
-[stream language="RO" videoId="497193280/a49d93bcb6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-11-12-Promise-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Promises offer a variety of useful methods for an easy and effective work process:
 
@@ -165,10 +159,7 @@ Promise.resolve("Operation succeeded!")
 
 # Example 1: Promise.then()
 
-[vimeo-video]
-[stream language="EN" videoId="497192784/74c03a37f9" default /]
-[stream language="RO" videoId="497192784/74c03a37f9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-13-Promise.then()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `.then()` method makes chaining promises possible.
 
@@ -202,10 +193,7 @@ As seen above, the `.then()` method **waits for the completion with the previous
 
 # Example 2: Promise.catch()
 
-[vimeo-video]
-[stream language="EN" videoId="497192805/b85fc82d6e" default /]
-[stream language="RO" videoId="497192805/b85fc82d6e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `.catch()` method is used to **"catch thrown errors" by promises**. 
 
