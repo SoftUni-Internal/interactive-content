@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Problem 2: Inventory
 
-[vimeo-video]
-[stream language="EN" videoId="497656637/db5855df33" default /]
-[stream language="RO" videoId="497656637/db5855df33"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/05.JS-Fundamentals-Exam-Preparation/EN/inventory-problem-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 
