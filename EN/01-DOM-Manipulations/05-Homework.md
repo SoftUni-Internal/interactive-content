@@ -4,11 +4,10 @@
 
 # Problem: Sections
 
-[code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Sections" taskId="Js-Advanced-Dom-Manipulations-Sections" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
-```js
-function solve(input) {
+```
+function sections(input) {
   // Write your code here
 }
 ```
@@ -123,11 +122,10 @@ yes
 
 # Problem: Notification
 
-[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function notification(){
   // Write your code here
 }
 ```
@@ -337,11 +335,12 @@ yes
 
 # Problem: Time Converter
 
-[code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Time Converter" taskId="Js-Advanced-Dom-Manipulations-Time-Converter" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function timeConverter(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -539,12 +538,12 @@ yes
 [slide hideTitle]
 
 # Problem: Locked Profile
-
-[code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
-[code-editor language=javascript]
+[code-task title="Locked Profile" taskId="Js-Advanced-Dom-Manipulations-Locked-Profiles" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function lockedProfile(){
+  // Write your code here
+}
 
 ```
 
