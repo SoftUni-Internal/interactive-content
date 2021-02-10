@@ -15,7 +15,7 @@ DOM properties are **information, that can be received and changed.**
 
 [slide hideTitle]
 
-# Example 1: DOM Methods
+# Example of DOM Methods
 
 After running this example in the browser:
 
@@ -73,7 +73,7 @@ And that way, the first title element, which is `Introduction to DOM`, can be pr
 
 [slide hideTitle]
 
-# Example 2: DOM Methods
+# Another Example of DOM Methods
 
 HTML DOM properties are values that you can `get` or `set`:
 
@@ -98,7 +98,7 @@ HTML DOM properties are values that you can `get` or `set`:
 
 The given code produces the following result:
 
-[image assetsSrc="screenshot.JPG" /]
+[image assetsSrc="JS-Advanced-Intro-DOM.JPG" /]
 
 With this example ` - DONE` is added to the end of `DOM Properties example` and as a result, there is `DOM Properties example - DONE`.
 
