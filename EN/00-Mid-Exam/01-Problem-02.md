@@ -7,7 +7,7 @@
 [code-task title="School Library" taskId="js-fundamentals-regular-exam-School-Library" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function schoolLibrary(input) {
    // Write your code here
 }
 ```
@@ -63,15 +63,19 @@ If the index is invalid, ignore the command.
 * You will not receive any duplicate book names in the initial list of books.
 
 # Examples
-| **Input** | **Output** |
-| --- | --- |
-|`['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book | The Odyssey', Take Book | Don Quixote', 'Insert Book | Alice's Adventures in Wonderland', 'Check Book | 3', 'Done' ]`|Hamlet |
-||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland|
 
+**Input** 
+`['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book | The Odyssey', Take Book | Don Quixote', 'Insert Book | Alice's Adventures in Wonderland', 'Check Book | 3', 'Done' ]`
 
-| **Input** | **Output** |
-| --- | --- |
-|`['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book | David Copperfield', 'Add Book | One Thousand and One Nights', 'Swap Books | One Thousand and One Nights | Catch-22', 'Take Book | David Copperfield', 'Insert Book | The Stories of Anton Chekhov', 'Check Book | 17', 'Done']`|Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The Stranger, The Stories of Anton Chekhov |
+**Output**
+Hamlet
+The Odyssey, The Great Gatsby, Moby Dick, Hamlet, Alice's Adventures in Wonderland
+
+**Input**
+`['Anna Karenina&Heart of Darkness&Catch-22& The Stranger', 'Add Book | David Copperfield', 'Add Book | One Thousand and One Nights', 'Swap Books | One Thousand and One Nights | Catch-22', 'Take Book | David Copperfield', 'Insert Book | The Stories of Anton Chekhov', 'Check Book | 17', 'Done']`
+
+**Output**
+Catch-22, Anna Karenina, Heart of Darkness, One Thousand and One Nights,  The Stranger, The Stories of Anton Chekhov 
 
 [/task-description]
 [code-io /]

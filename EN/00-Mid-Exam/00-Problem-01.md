@@ -7,7 +7,7 @@
 [code-task title="Archery Tournament" taskId="js-fundamentals-regular-exam-Archery-Tournament" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function archeryTournament(input) {
    // Write your code here
 }
 ```
@@ -62,16 +62,19 @@ If the start index, specified in any command is out of range, to begin with, Pet
 
 * Print out the state of each target on the field in the following format: 
 
-`{target} - {target} - {target} ….. - {target}`
+`{target} - {target} - {target} ... - {target}`
 
 `Peter finished the archery tournament with {points}!`
 
 # Examples
 
-| **Input** | **Output** |
-| --- | --- |
-|`['10|10|10|10|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over']`| 5 \- 5 \- 10 \- 10 \- 10|
-||Peter finished the archery tournament with 10 points\!|
+**Input**
+`['10|10|10|10|10', 'Shoot Left@0@2','Shoot Right@4@5','Shoot Right@6@5','Reverse','Game over']`
+
+**Output**
+5 \- 5 \- 10 \- 10 \- 10
+Peter finished the archery tournament with 10 points\!
+
 
 ## Comments
 
@@ -87,10 +90,12 @@ At this point he aquires 5 points.
 
 * `Reverse` \-\> The end result should be: `5 - 5 - 10 - 10 - 10`
 
-| **Input** | **Output** |
-| --- | --- |
-|`['20|30|40|50|60','Shoot Left@0@12','Shoot Right@4@15','Shoot Left@6@5','Reverse','Game over']`| 55 \- 45 \- 40 \- 30 \- 20|
-||Peter finished the archery tournament with 10 points\!|
+**Input** 
+`['20|30|40|50|60','Shoot Left@0@12','Shoot Right@4@15','Shoot Left@6@5','Reverse','Game over']`
+
+**Output**
+55 \- 45 \- 40 \- 30 \- 20
+Peter finished the archery tournament with 10 points\!
 
 [/task-description]
 [code-io /]
