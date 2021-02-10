@@ -1,6 +1,6 @@
 ﻿[slide hideTitle]
 # Coffee Machine
-[code-task title="Coffee Machine" taskId="pb-java-march-exam-03" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Coffee Machine" taskId="pb-java-exam-coffee-machine" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
