@@ -155,7 +155,7 @@ for (let key in person) {
 [stream language="RO" videoId="489795432/3e85c0a88d"  /]
 [/video-vimeo]
 
-[code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function personInfo(input){
@@ -163,6 +163,14 @@ function personInfo(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {
+    const {firstName, lastName, age} = c(i[0], i[1], Number(i[2]));
+    return [`firstName: ${firstName}`, `lastName: ${lastName}`, `age: ${age}`].join('\n');
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
