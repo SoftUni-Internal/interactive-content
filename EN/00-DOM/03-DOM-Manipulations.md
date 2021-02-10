@@ -228,7 +228,7 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 [tests]
 [test open]
 [input]
-document.body.innerHTML = \`
+document.body.innerHTML = `
 <h4>Create a functionality which creates articles and appends them into some article section.</h4>
 <div id="createArticle">
     <label for="createTitle">Title</label>
@@ -240,7 +240,7 @@ document.body.innerHTML = \`
 <section id="articles">
     <h1>Articles List</h1>
 </section>
-\`;
+`;
 
 document.getElementById("createTitle").value = "JavaScript Title Test";
 document.getElementById("createContent").value = "JavaScript Content Test";
@@ -258,7 +258,7 @@ yes
 [/test]
 [test open]
 [input]
-document.body.innerHTML = \`
+document.body.innerHTML = `
 <h4>Create a functionality which creates articles and appends them into some article section.</h4>
 <div id="createArticle">
     <label for="createTitle">Title</label>
@@ -270,7 +270,7 @@ document.body.innerHTML = \`
 <section id="articles">
     <h1>Articles List</h1>
 </section>
-\`;
+`;
 
 document.getElementById("createTitle").value = "JavaScript Title Test";
 
@@ -287,17 +287,29 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 document.getElementById("createTitle").value = "JavaScript";
 document.getElementById("createContent").value = "JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in the HTML and executed automatically as the page loads. Scripts are provided and executed as a plain text. They don’t need a special preparation or a compilation to run.In this aspect, JavaScript is very different from another language called Java";
 
 result();
 
-let currArticle = document.querySelectorAll('\#articles article')\[0\];
+let currArticle = document.querySelectorAll('#articles article')[0];
 
-expect(currArticle.childNodes\[0\].textContent).to.equal("JavaScript");
-expect(currArticle.childNodes\[1\].textContent).to.equal("JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in the HTML and executed automatically as the page loads. Scripts are provided and executed as a plain text. They don’t need a special preparation or a compilation to run.In this aspect, JavaScript is very different from another language called Java");
+expect(currArticle.childNodes[0].textContent).to.equal("JavaScript");
+expect(currArticle.childNodes[1].textContent).to.equal("JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in the HTML and executed automatically as the page loads. Scripts are provided and executed as a plain text. They don’t need a special preparation or a compilation to run.In this aspect, JavaScript is very different from another language called Java");
 [/input]
 [output]
 yes
@@ -305,13 +317,25 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 document.getElementById("createTitle").value = "JavaScript Test Title Field";
 
 result();
 
-let articlesCount = document.querySelectorAll('\#articles article').length;
+let articlesCount = document.querySelectorAll('#articles article').length;
 
 expect(articlesCount).to.equal(0);
 [/input]
@@ -321,13 +345,25 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 document.getElementById("createContent").value = "JavaScript Content Test";
 
 result();
 
-let articlesCount = document.querySelectorAll('\#articles article').length;
+let articlesCount = document.querySelectorAll('#articles article').length;
 
 expect(articlesCount).to.equal(0);
 [/input]
@@ -337,11 +373,23 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 result();
 
-let articlesCount = document.querySelectorAll('\#articles article')\[0\] === undefined;
+let articlesCount = document.querySelectorAll('#articles article')[0] === undefined;
 
 expect(articlesCount).to.equal(true);
 [/input]
@@ -351,7 +399,19 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 let title = document.getElementById("createTitle");
 let content = document.getElementById("createContent");
@@ -370,7 +430,19 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 document.getElementById("createTitle").value = "JavaScript Title Test";
 document.getElementById("createContent").value = "JavaScript Content Test";
@@ -387,7 +459,7 @@ document.getElementById("createContent").value = "JavaScript Content Test 33";
 
 result();
 
-let articlesCount = document.querySelectorAll('\#articles article').length;
+let articlesCount = document.querySelectorAll('#articles article').length;
 
 expect(articlesCount).to.equal(3);
 [/input]
@@ -1220,7 +1292,9 @@ yes
 [code-task title="Problem: Growing Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function growingWord(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
