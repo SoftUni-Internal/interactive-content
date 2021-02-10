@@ -134,11 +134,11 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 [code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-
 ```
-
+function repeatString(){
+  // Write your code here
+}
 ```
-
 [/code-editor]
 [task-description]
 
@@ -158,19 +158,31 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 # Constraints:
 
-- **Title value** from the **title input** should be a **heading 3 element \<h3\>**
+- **Title value** from the **title input** should be a **heading 3 element** `<h3>`
 
-- **Content text** from the **textarea element** should be a **paragraph \<p\>**
+- **Content text** from the **textarea element** should be a **paragraph** `<p>`
 
-- Both new created elements (**h3** and **p**) should be appended to a new **article element \<article\>**
+- Both new created elements (**h3** and **p**) should be appended to a new **article element** `<article\>`
 
-- **The current article element** should be **appended** to the section which has an id articles (**\#articles**)
+- **The current article element** should be **appended** to the section which has an id articles (`#articles`)
 
 - You should create new **article element** only if **title** and **content are not empty**
 
 - After the button is pressed you must **clear** the **title value** and **text value**
 
-[image assetsSrc="JS-Advanced-DOM-Lab-2.jpg" /]
+```js
+<div id="createArticle">
+<label for="createTitle">Title</label>
+<input id="createTitle">
+<br>
+<label for="createContent">Content</label>
+<textarea id="createContent"></textarea>
+<button onclick="createArticle()">Create</button>
+</div>
+<section id="articles">
+<h1>Articles List</h1>
+</section>
+```
 
 ### Input
 
@@ -180,7 +192,23 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 [image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-5.jpg" /]
+```js
+<section id="articles">
+<h1>Articles List</h1>
+<article>
+<h3>JavaScript</h3>
+<p>
+"JavaScript is a programming language that adds
+interactivity to your website (for example games, responses
+when buttons are pressed or data is entered in forms,
+dynamic styling, animation). This article helps you get
+started with this exciting language and gives you an idea
+of what is possible."
+</p>
+</article>
+</section>
+
+```
 
 [/task-description]
 [code-io /]
@@ -341,13 +369,16 @@ yes
 [code-editor language=javascript]
 
 ```
-
+function repeatString(){
+  // Write your code here
+}
 ```
-
 [/code-editor]
 [task-description]
 
 # Description
+
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/01-Article_list_problem.zip) **for this task.**
 
 In this problem, you should create JS functionality which creates articles and appends them into an article section.
 
@@ -361,29 +392,56 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 # Constraints:
 
-- **Title value** from the **title input** should be a **heading 3 element \<h3\>**
+- **Title value** from the **title input** should be a **heading 3 element** `<h3>`
 
-- **Content text** from the **textarea element** should be a **paragraph \<p\>**
+- **Content text** from the **textarea element** should be a **paragraph** `<p>`
 
-- Both new created elements (**h3** and **p**) should be appended to a new **article element \<article\>**
+- Both new created elements (**h3** and **p**) should be appended to a new **article element** `<article\>`
 
-- **The current article element** should be **appended** to the section which has an id articles (**\#articles**)
+- **The current article element** should be **appended** to the section which has an id articles (`#articles`)
 
 - You should create new **article element** only if **title** and **content are not empty**
 
 - After the button is pressed you must **clear** the **title value** and **text value**
 
-[image assetsSrc="JS-Advanced-DOM-Lab-2.jpg" /]
+```js
+<div id="createArticle">
+<label for="createTitle">Title</label>
+<input id="createTitle">
+<br>
+<label for="createContent">Content</label>
+<textarea id="createContent"></textarea>
+<button onclick="createArticle()">Create</button>
+</div>
+<section id="articles">
+<h1>Articles List</h1>
+</section>
+```
 
-### Input
+## Input
 
 [image assetsSrc="JS-Advanced-DOM-Lab-3.jpg" /]
 
-### Output
+## Output
 
 [image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
 
-[image assetsSrc="JS-Advanced-DOM-Lab-5.jpg" /]
+```js
+<section id="articles">
+<h1>Articles List</h1>
+<article>
+<h3>JavaScript</h3>
+<p>
+"JavaScript is a programming language that adds
+interactivity to your website (for example games, responses
+when buttons are pressed or data is entered in forms,
+dynamic styling, animation). This article helps you get
+started with this exciting language and gives you an idea
+of what is possible."
+</p>
+</article>
+</section>
+```
 
 [/task-description]
 [code-io /]
