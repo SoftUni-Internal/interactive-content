@@ -360,11 +360,12 @@ yes
 
 # Problem: Order the names
 
-[code-task title="Problem: Order the names" taskId="js-advanced-DOM-Order-The-Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Order the names" taskId="js-advanced-DOM-Order-The-Names" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function orderTheNames(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -804,11 +805,12 @@ yes
 
 # Problem: Chat Room
 
-[code-task title="Problem: Chat Room" taskId="js-advanced-DOM-Chat-Room" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Chat Room" taskId="js-advanced-DOM-Chat-Room" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function chatRoom(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -826,7 +828,7 @@ Write a **function** to create the functionality of **a chat room.**
 
 **The new div element with class message my-message** should contain the current message that is about to be send.
 
-The **current div** should be appended to the div with an **id="chat_messages".**
+The **current div** should be appended to the div with an `id="chat_messages"`.
 
 **The input should be cleared on each click of the send button.**
 
