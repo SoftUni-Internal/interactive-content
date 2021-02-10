@@ -158,17 +158,14 @@ function personInfo(input){
 [/code-adapter]
 [task-description]
 # Description
-Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
-`{key}: {value}`
+"Write a function that receives an array of 3 elements. Sets them to an object and return the created object."`
 
-The input comes as 3 separate strings in the following order: firstName, lastName, age.
+The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Peter','Pan','20']`| firstName: Peter |
-||lastName: Pan|
-||age: 20|
+|`['Peter','Pan','20']`| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
 
 [/task-description]
 [tests]
@@ -264,19 +261,24 @@ function personInfo(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(i, c) => {
+    const {firstName, lastName, age} = c(i[0], i[1], Number(i[2]));
+    return [`firstName: ${firstName}`, `lastName: ${lastName}`, `age: ${age}`].join('\n');
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
-`{key}: {value}`
+"Write a function that receives an array of 3 elements. Sets them to an object and return the created object."`
 
-The input comes as 3 separate strings in the following order: firstName, lastName, age.
+The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Peter','Pan','20']`| firstName: Peter |
-||lastName: Pan|
-||age: 20|
+|`['Peter','Pan','20']`| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
 
 [/task-description]
 [tests]
