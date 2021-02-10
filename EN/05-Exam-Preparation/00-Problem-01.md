@@ -1,8 +1,14 @@
-[slide hideTitle]
 # Problem 1: Mu Online
 
+[slide hideTitle]
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/05.JS-Fundamentals-Exam-Preparation/EN/exam-prep-problem-1-mu-online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Mu Online
+
+
+[vimeo-video]
+[stream language="EN" videoId="497656935/bfde3ae27b" default /]
+[stream language="RO" videoId="497656935/bfde3ae27b"  /]
+[/video-vimeo]
 
 [code-task title="Problem: Mu Online" taskId="js-fundamentals-examPreparation-Mu-Online" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
