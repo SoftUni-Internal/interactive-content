@@ -3,10 +3,7 @@
 [slide]
 # What Are Classes ?
 
-[vimeo-video]
-[stream language="EN" videoId="489794985/0c02c8963c" default /]
-[stream language="RO" videoId="489794985/0c02c8963c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-24-25-What-are-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **class** is like a **blueprint** (or template) for creating **objects**.
 
@@ -20,10 +17,7 @@ Class instances can also have **methods** for **modifying its state**, they are 
 [slide]
 # Class Declaration
 
-[vimeo-video]
-[stream language="EN" videoId="489794989/34b7176f44" default /]
-[stream language="RO" videoId="489794989/34b7176f44"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-26-Class-declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Example: 
 
@@ -43,10 +37,7 @@ The `constructor` is a special method for creating and initializing an object.
 [slide]
 # Class example
 
-[vimeo-video]
-[stream language="EN" videoId="489795065/d7a673fc0a" default /]
-[stream language="RO" videoId="489795065/d7a673fc0a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-27-Class-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `class` keyword is used to create a class.
 
@@ -75,10 +66,7 @@ let student = new Student('Peter', 5.50);
 [slide]
 # Functions in a Class
 
-[vimeo-video]
-[stream language="EN" videoId="489795074/7c855b8347" default /]
-[stream language="RO" videoId="489795074/7c855b8347"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
 

@@ -3,10 +3,7 @@
 [slide]
 # What Are Objects ?
 
-[vimeo-video]
-[stream language="EN" videoId="489795277/32e690031f" default /]
-[stream language="RO" videoId="489795277/32e690031f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Objects in JavaScript, as in **many other programming languages**, can be compared to objects in real life.
 
@@ -34,10 +31,7 @@ We can access the property value with the name of the class `.` property name.
 [slide]
 # Object Definition 
 
-[vimeo-video]
-[stream language="EN" videoId="489795273/ab8664a147" default /]
-[stream language="RO" videoId="489795273/ab8664a147"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-5-Object-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can define an empty object and add the properties later:
 
@@ -60,10 +54,7 @@ person.hairColor = 'black';
 [slide]
 # Object Methods
 
-[vimeo-video]
-[stream language="EN" videoId="489795322/e2b71c887b" default /]
-[stream language="RO" videoId="489795322/e2b71c887b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-6-Methods-of-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions within a JavaScript object are called methods.
 
@@ -100,10 +91,7 @@ person.sayHello = () => console.log('Hi, guys');
 [slide]
 # Built-in Methods
 
-[vimeo-video]
-[stream language="EN" videoId="489795341/8532941804" default /]
-[stream language="RO" videoId="489795341/8532941804"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-7-Built-in-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Methods:
 
@@ -129,10 +117,7 @@ console.log(Object.values(cat));
 [slide]
 # Iterate through Keys
 
-[vimeo-video]
-[stream language="EN" videoId="489795350/598a1cef8e" default /]
-[stream language="RO" videoId="489795350/598a1cef8e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can iterate through keys of an object, by using a `for-in` loop to iterate over the object's properties by key:
 

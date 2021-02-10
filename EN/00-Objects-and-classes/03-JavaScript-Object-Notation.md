@@ -3,10 +3,7 @@
 [slide]
 # What is JSON?
 
-[vimeo-video]
-[stream language="EN" videoId="489794709/20241a30bb" default /]
-[stream language="RO" videoId="489794709/20241a30bb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-14-15-What-is-JSON--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JSON stands for **JavaScript Object Notation** and is a **text-based information format** that follows the JavaScript object syntax.
 
@@ -18,10 +15,7 @@ JSON is a method of storing data and information in an organized and easy-to-acc
 [slide]
 # JSON Usage
 
-[vimeo-video]
-[stream language="EN" videoId="489794769/4f4530031d" default /]
-[stream language="RO" videoId="489794769/4f4530031d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-16-JSON-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 With JSON we can **exchange data between a browser and a server.**
 
@@ -35,10 +29,7 @@ JSON uses **human-readable text to transmit data.**
 [slide]
 # JSON Example
 
-[vimeo-video]
-[stream language="EN" videoId="489794764/4f709f8685" default /]
-[stream language="RO" videoId="489794764/4f709f8685"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-17-JSON-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ``` js
 {
@@ -67,10 +58,7 @@ In this example:
 [slide]
 # JSON Methods
 
-[vimeo-video]
-[stream language="EN" videoId="489794807/692c83c874" default /]
-[stream language="RO" videoId="489794807/692c83c874"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-18-JSON-Methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We have two  JSON method:
 
