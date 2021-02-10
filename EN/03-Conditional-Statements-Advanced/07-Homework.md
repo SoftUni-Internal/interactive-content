@@ -160,7 +160,7 @@ Consonant
 [/slide]
 
 [slide hideTitle]
-# Problem: Product of 3 Numbers
+# Problem with Solution: Product of 3 Numbers
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/problem1-product-of-3-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -271,7 +271,7 @@ zero
 [/slide]
 
 [slide hideTitle]
-# Problem: Sorted Numbers
+# Problem with Solution: Sorted Numbers
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/problem2-sorted-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sorted Numbers" taskId="pb-js-Conditions-Advanced-Sorted-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]

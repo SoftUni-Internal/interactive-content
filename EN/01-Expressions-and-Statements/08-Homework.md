@@ -64,7 +64,7 @@ Write a function that gets an integer and calculates the area of a square with s
 [/slide]
 
 [slide hideTitle]
-# Problem: Currency Converter
+# Problem with Solution: Currency Converter
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem2-currency-converter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -200,7 +200,7 @@ Round the result to the nearest integer using `toFixed(0)`.
 [/slide]
 
 [slide hideTitle]
-# Problem: Days to Minutes
+# Problem with Solution: Days to Minutes
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/problem1-days-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

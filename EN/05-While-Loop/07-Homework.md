@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem and Solution: Sum Digits
+# Problem with Solution: Sum Digits
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-27-28-Problem&Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -86,7 +86,7 @@ Write a program, which:
 [/slide]
 
 [slide hideTitle]
-# Problem and Solution: Favorite Book
+# Problem with Solution: Favorite Book
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-29-30-Problem&Solution-Favourite-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

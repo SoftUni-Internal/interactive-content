@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Building
+# Problem with Solution: Building
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-30-32-problem-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -178,7 +178,7 @@ A10 A11 A12
 [/slide]
 
 [slide hideTitle]
-# Problem: Passwords
+# Problem with Solution: Passwords
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-34-35-problem-password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -164,7 +164,7 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
-# Problem and Solution: Power Of Numbers
+# Problem with Solution: Power Of Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-35-36-37-problem&solution-power-of-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -969,7 +969,7 @@ Waiting...
 [/slide]
 
 [slide hideTitle]
-# Problem and Solution: Multiply
+# Problem with Solution: Multiply
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-38-39-solution-multiply-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -1116,7 +1116,7 @@ Write a program, which:
 [/slide]
 
 [slide hideTitle]
-# Problem:  Numbers, Divisible by 9
+# Problem: Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

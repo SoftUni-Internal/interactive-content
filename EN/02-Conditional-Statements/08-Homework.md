@@ -1,7 +1,7 @@
 # Homework
-[slide]
+[slide hideTitle]
 
-# Problem: Guess the Password
+# Problem with Solution: Guess the Password
 
 [video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem1-Guess-the-Password-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -53,8 +53,8 @@ Wrong password!
 
 [/slide]
 
-[slide]
-# Problem: Boiling Water
+[slide hideTitle]
+# Problem with Solution: Boiling Water
 
 [video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/problem2-Boiling-Water-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +106,7 @@ The water is not hot enough
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Speed Info
 [code-task title="Speed Info" taskId="pb-js-Conditions-Speed-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -155,7 +155,7 @@ Fast
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Bonus Score
 [code-task title="Bonus Score" taskId="pb-js-Conditions-Bonus-Score" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -266,7 +266,7 @@ Additional bonus points, accrued separately from the previous ones:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Tickets
 [code-task title="Tickets" taskId="pb-js-Conditions-Tickets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
