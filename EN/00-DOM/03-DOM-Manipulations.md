@@ -40,7 +40,7 @@ Here are a few ways to utilize them:
 
 - `input[type="text"]` - Selects **all** input fields that are of type "text".
 
-- `#idNumber, .container` - Selects the element with an "idNumber" id **and** all the elements with the "container class.
+- `#idNumber, .container` - Selects the element with an "idNumber" id **and** all the elements with the `container` class.
 
 [/slide]
 
@@ -56,7 +56,9 @@ Here are some of the **methods** and **properties** which are used in the proces
 
 - `.innerHTML` - A property for **accessing** and **changing** the HTML of an element.
 
-- `.attributes` - A property that returns all attributes of an element in a collection. Every item in that collection has **two** values - **attribute** and **value**.
+- `.attributes` - A property that returns all attributes of an element in a collection. 
+
+Every item in that collection has **two** values - **attribute** and **value**.
 
 - `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute.
 
@@ -76,7 +78,9 @@ h1.style.color = "blue"; // .color selects the CSS property to be changed and "b
 
 - `.appendChild()` - A method, that **adds** a child to the **back** of an element.
 
-- `.replaceChild()` - A method, that **replaces** one HTML element with another. It takes two parameters - the element to be replaced and the element to replace it with.
+- `.replaceChild()` - A method, that **replaces** one HTML element with another. 
+
+It takes two parameters - the element to be replaced and the element to replace it with.
 
 - `.document.write()` - A method, used to write text **directly** into the HTML document.
 
@@ -181,40 +185,40 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 ```js
 <div id="createArticle">
-<label for="createTitle">Title</label>
-<input id="createTitle">
-<br>
-<label for="createContent">Content</label>
-<textarea id="createContent"></textarea>
-<button onclick="createArticle()">Create</button>
+   <label for="createTitle">Title</label>
+   <input id="createTitle">
+   <br>
+   <label for="createContent">Content</label>
+   <textarea id="createContent"></textarea>
+   <button onclick="createArticle()">Create</button>
 </div>
 <section id="articles">
-<h1>Articles List</h1>
+   <h1>Articles List</h1>
 </section>
 ```
 
-### Input
+## Input
 
 [image assetsSrc="JS-Advanced-DOM-Lab-3.jpg" /]
 
-### Output
+## Output
 
 [image assetsSrc="JS-Advanced-DOM-Lab-4.jpg" /]
 
 ```js
 <section id="articles">
-<h1>Articles List</h1>
-<article>
-<h3>JavaScript</h3>
-<p>
-"JavaScript is a programming language that adds
-interactivity to your website (for example games, responses
-when buttons are pressed or data is entered in forms,
-dynamic styling, animation). This article helps you get
-started with this exciting language and gives you an idea
-of what is possible."
-</p>
-</article>
+   <h1>Articles List</h1>
+   <article>
+      <h3>JavaScript</h3>
+      <p>
+         "JavaScript is a programming language that adds
+         interactivity to your website (for example games, responses
+         when buttons are pressed or data is entered in forms,
+         dynamic styling, animation). This article helps you get
+         started with this exciting language and gives you an idea
+         of what is possible."
+      </p>
+   </article>
 </section>
 
 ```
@@ -412,15 +416,15 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 ```js
 <div id="createArticle">
-<label for="createTitle">Title</label>
-<input id="createTitle">
-<br>
-<label for="createContent">Content</label>
-<textarea id="createContent"></textarea>
-<button onclick="createArticle()">Create</button>
+   <label for="createTitle">Title</label>
+   <input id="createTitle">
+   <br>
+   <label for="createContent">Content</label>
+   <textarea id="createContent"></textarea>
+   <button onclick="createArticle()">Create</button>
 </div>
 <section id="articles">
-<h1>Articles List</h1>
+   <h1>Articles List</h1>
 </section>
 ```
 
@@ -434,19 +438,20 @@ In this aspect, JavaScript is very **different** from many other languages, whic
 
 ```js
 <section id="articles">
-<h1>Articles List</h1>
-<article>
-<h3>JavaScript</h3>
-<p>
-"JavaScript is a programming language that adds
-interactivity to your website (for example games, responses
-when buttons are pressed or data is entered in forms,
-dynamic styling, animation). This article helps you get
-started with this exciting language and gives you an idea
-of what is possible."
-</p>
-</article>
+   <h1>Articles List</h1>
+   <article>
+      <h3>JavaScript</h3>
+      <p>
+         "JavaScript is a programming language that adds
+         interactivity to your website (for example games, responses
+         when buttons are pressed or data is entered in forms,
+         dynamic styling, animation). This article helps you get
+         started with this exciting language and gives you an idea
+         of what is possible."
+      </p>
+   </article>
 </section>
+
 ```
 
 [/task-description]
@@ -454,17 +459,29 @@ of what is possible."
 [tests]
 [test open]
 [input]
-document.body.innerHTML = `\<h4\>Create a functionality which creates articles and appends them into some article section.\</h4\> \<div id="createArticle"\> \<label for="createTitle"\>Title\</label\> \<input id="createTitle"/\>\<br\> \<label for="createContent"\>Content\</label\> \<textarea id="createContent"\>\</textarea\> \<button\>Create\</button\> \</div\> \<section id="articles"\> \<h1\>Articles List\</h1\> \</section\>`;
+document.body.innerHTML = `
+<h4>Create a functionality which creates articles and appends them into some article section.</h4>
+<div id="createArticle">
+    <label for="createTitle">Title</label>
+    <input id="createTitle"/><br>
+    <label for="createContent">Content</label>
+    <textarea id="createContent"></textarea>
+    <button>Create</button>
+</div>
+<section id="articles">
+    <h1>Articles List</h1>
+</section>
+`;
 
 document.getElementById("createTitle").value = "JavaScript Title Test";
 document.getElementById("createContent").value = "JavaScript Content Test";
 
 result();
 
-let currArticle = document.querySelectorAll('\#articles article')\[0\];
+let currArticle = document.querySelectorAll('#articles article')[0];
 
-expect(currArticle.childNodes\[0\].textContent).to.equal("JavaScript Title Test");
-expect(currArticle.childNodes\[1\].textContent).to.equal("JavaScript Content Test");
+expect(currArticle.childNodes[0].textContent).to.equal("JavaScript Title Test");
+expect(currArticle.childNodes[1].textContent).to.equal("JavaScript Content Test");
 [/input]
 [output]
 yes
@@ -630,10 +647,10 @@ Suppose there is the following HTML:
 
 ```js
 <div id="container">
-  <p id="my-name"> My name is </p>
+   <p id="my-name"> My name is </p>
 </div>
 <form>
-    <input id="name-input">
+   <input id="name-input">
 </form>
 ```
 
@@ -671,34 +688,42 @@ console.log(input.value); //logs the value of the input field
 This is an example of some HTML to work on:
 
 ```js
-    <a id="link" href="www.google.com">Link</a>
-    <input id="first-input" type="text">
+<a id="link" href="www.google.com">Link</a>
+<input id="first-input" type="text">
 ```
 
 And here are a few of the common methods:
 
-- `getAttribute()` - Returns the value of the element's attribute. Accepts **one** parameter - **the attribute name**.
+- `getAttribute()` - Returns the value of the element's attribute. 
+
+Accepts **one** parameter - **the attribute name**.
 
 ```js
 let a = document.getElementById("link");
 a.getAttribute("href"); // www.google.com
 ```
 
-- `setAttribute()` - **Sets** the value of the element's attribute or **updates** it if it already exists. Accepts two parameters - **name of attribute and value**.
+- `setAttribute()` - **Sets** the value of the element's attribute or **updates** it if it already exists. 
+
+Accepts two parameters - **name of attribute and value**.
 
 ```js
 let input = document.getElementById("first-input");
 input.setAttribute("name", "username"); // Sets the value of the name attribute to "username"
 ```
 
-- `removeAttribute()` - **Removes** from the given HTML element. Accepts one parameter - **the name of the attribute**.
+- `removeAttribute()` - **Removes** from the given HTML element. 
+
+Accepts one parameter - **the name of the attribute**.
 
 ```js
 let input = document.getElementById("first-input");
 input.removeAttribute("name"); // Removes the name attribute of the input
 ```
 
-- `hasAttribute()` - **Returns a boolean** if the specified attribute is present or not. Takes one parameter - **the name of the attribute**.
+- `hasAttribute()` - **Returns a boolean** if the specified attribute is present or not. 
+
+Takes one parameter - **the name of the attribute**.
 
 ```js
 let input = document.getElementById("first-input");
@@ -759,15 +784,15 @@ In this problem, you should **create a JS functionality** which **changes the si
 
 ```js
 <div id="exercise">
-<div id="colors">
-<div id="blueDiv">Blue</div>
-<div id="greenDiv">Green</div>
-<div id="redDiv">Red</div>
-</div>
-<div>
-<button type="button" onclick="growingWord()">CHANGE</button>
-</div>
-<p>Growing Word</p>
+   <div id="colors">
+      <div id="blueDiv">Blue</div>
+      <div id="greenDiv">Green</div>
+      <div id="redDiv">Red</div>
+   </div>
+   <div>
+      <button type="button" onclick="growingWord()">CHANGE</button>
+   </div>
+   <p>Growing Word</p>
 </div>
 
 ```
@@ -792,9 +817,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-<div id="colors">...</div>
-<div>... </div>
-<p style="color: blue; font-size: 2px;"> Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: blue; font-size: 2px;"> Growing Word</p>
 </div>
 ```
 
@@ -802,9 +827,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-<div id="colors">...</div>
-<div>... </div>
-<p style="color: green; font-size: 4px;">Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: green; font-size: 4px;">Growing Word</p>
 </div>
 
 ```
@@ -813,9 +838,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-> <div id="colors">... </div>
-<div>...</div>
-<p style="color: red; font-size: 8px;"> Growing Word</p>
+   <div id="colors">... </div>
+   <div>...</div>
+   <p style="color: red; font-size: 8px;"> Growing Word</p>
 </div>
 ```
 
@@ -1099,22 +1124,24 @@ In this problem, you should **create a JS functionality** which **changes the si
 
 ```js
 <div id="exercise">
-<div id="colors">
-<div id="blueDiv">Blue</div>
-<div id="greenDiv">Green</div>
-<div id="redDiv">Red</div>
-</div>
-<div>
-<button type="button" onclick="growingWord()">CHANGE</button>
-</div>
-<p>Growing Word</p>
+   <div id="colors">
+      <div id="blueDiv">Blue</div>
+      <div id="greenDiv">Green</div>
+      <div id="redDiv">Red</div>
+   </div>
+   <div>
+      <button type="button" onclick="growingWord()">CHANGE</button>
+   </div>
+   <p>Growing Word</p>
 </div>
 
 ```
 
 Every time when we **click** on the `[CHANGE]` button, **the color** and **the size** of **the paragraph** which contains "**Growing Word**" **should change**!
 
-**After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. Also, **the color** of that paragraph should change, depending on the **previous color**.
+**After every click**, the current paragraph **font size** should be **changed** to **the current font size multiplied by 2**. 
+
+Also, **the color** of that paragraph should change, depending on the **previous color**.
 
 # Example:
 
@@ -1132,9 +1159,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-<div id="colors">...</div>
-<div>... </div>
-<p style="color: blue; font-size: 2px;"> Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: blue; font-size: 2px;"> Growing Word</p>
 </div>
 ```
 
@@ -1142,9 +1169,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-<div id="colors">...</div>
-<div>... </div>
-<p style="color: green; font-size: 4px;">Growing Word</p>
+   <div id="colors">...</div>
+   <div>... </div>
+   <p style="color: green; font-size: 4px;">Growing Word</p>
 </div>
 
 ```
@@ -1153,9 +1180,9 @@ Just loop throw these three colors (blue, green, red) again and again and again.
 
 ```js
 <div id="exercise">
-> <div id="colors">... </div>
-<div>...</div>
-<p style="color: red; font-size: 8px;"> Growing Word</p>
+   <div id="colors">... </div>
+   <div>...</div>
+   <p style="color: red; font-size: 8px;"> Growing Word</p>
 </div>
 ```
 
