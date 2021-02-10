@@ -271,7 +271,7 @@ Link action should be **toggleable** (you should be able to click the button inf
 
 ## Example
 
-[image assetsSrc="JS-Advanced-DOM-Homework-6.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-6.png" /]
 
 ## Hints
 
