@@ -2,6 +2,8 @@
 
 # DOM Methods
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-6-7-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 HTML elements in the DOM tree have their own **methods** and **properties**.
 
 They are an **additional tool**, which is very useful in a software engineer's job.
@@ -16,6 +18,8 @@ DOM properties are **information, that can be received and changed.**
 [slide hideTitle]
 
 # Example of DOM Methods
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-8-9-example-dom-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After running this example in the browser:
 

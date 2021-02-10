@@ -4,6 +4,8 @@
 
 # BOM
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-40-41-browser-object-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Browser Object Model** acts as a connection just like the **Document Object Model**.
 
 It connects Javascript to the **browser** just like the DOM connects it to the **HTML document**.
@@ -46,6 +48,8 @@ window.printYear();
 [slide hideTitle]
 
 # Playing with BOM
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-42-playing-with-bom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are some interesting and educational BOM properties:
 

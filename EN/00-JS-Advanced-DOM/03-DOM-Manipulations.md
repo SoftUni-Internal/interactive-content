@@ -4,6 +4,8 @@
 
 # Selection of Elements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-11-selection-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **DOM** allows the modification of **HTML elements**.
 
 Before they are modified, these elements need to be **selected** first.
@@ -24,6 +26,8 @@ Here are the four ways to select an element:
 
 # CSS Selectors
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-12-css-selectors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **CSS Selectors** are a quick and efficient way to select one or multiple nested HTML elements.
 
 Here are a few ways to utilize them:
@@ -43,6 +47,8 @@ Here are a few ways to utilize them:
 [slide hideTitle]
 
 # DOM Manipulations
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-10-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 DOM elements can be **read** and **manipulated** with Javascript.
 
@@ -80,6 +86,8 @@ h1.style.color = "blue"; // .color selects the CSS property to be changed and "b
 
 # Creating DOM Elements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-15-17-creating-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **two** ways to create new HTML elements.
 
 The first one is to **directly** create one using the `.createElement` command.
@@ -104,6 +112,8 @@ They are just **Javascript variables**.
 [slide hideTitle]
 
 # Deleting DOM Elements
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-16-deleting-dom-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As always, to perform any kind of operation on an element, it must be **accessed** first.
 
@@ -594,6 +604,8 @@ yes
 
 # Properties vs. Attributes
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-20-21-dom-properties-and-html-attributes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Attributes can **define additional** information about the HTML element.
 
 DOM properties, on the other hand, are **properties of the object** that represents an HTML element.
@@ -609,6 +621,8 @@ There are DOM properties that **do not correspond** to an HTML element and vice 
 [slide hideTitle]
 
 # DOM Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-22-dom-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As covered, DOM elements **can be modified** through their properties.
 
@@ -651,6 +665,8 @@ console.log(input.value); //logs the value of the input field
 [slide hideTitle]
 
 # HTML Attributes and Methods
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-23-28-html-attributes-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is an example of some HTML to work on:
 
@@ -1406,6 +1422,8 @@ yes
 
 # Parents and Child Elements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-31-36-parents-and-child-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 HTML elements can have **multiple** other elements inside of them.
 
 When a certain element holds other elements **between its opening and closing tag** - it is a **parent element**.
@@ -1499,6 +1517,8 @@ list.prependChild(firstLi); //adds the "firstLi" element to the front of the lis
 [slide hideTitle]
 
 # NodeList vs. HTMLCollection
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-37-nodelist-vs-htmlcollection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Both **NodeList** and **HTMLCollection** are indexed collection of **DOM nodes**.
 
