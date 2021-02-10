@@ -1,27 +1,20 @@
 # Summary
 
-
-[slide]
+[slide hideTitle]
 # Summary
-
 
 # In this lesson you learned:
 
-- Method - **block of code** that can be reused multiple times
+- Methods - **blocks of code** that can be reused multiple times
 
 ``` java
-public static void printText(String text) { // Print text method
+public static void printText(String text) {
   System.out.println(text);
 }
 ```
 
-- Methods consist of **declaration** and **body**
+- Methods consist of a **declaration** and a **body**
 
-``` java
-public static void printHeader() {
-  System.out.println("----------");
-}
-```
 - Methods are invoked by their `name` + `()`
 
 ``` java
@@ -33,7 +26,7 @@ public static void main(String[] args) {
 - Methods can accept **parameters**
 
 ``` java
-static void printNumbers(int start, int end) { // Method with parameters
+static void printNumbers(int start, int end) { 
   for (int i = start; i <= end; i++) {
     System.out.printf("%d ", i);
   }
@@ -42,14 +35,11 @@ static void printNumbers(int start, int end) { // Method with parameters
 - Methods can **return a value** or nothing - `void`
 
 
+## In the next lesson, you will learn:
 
-
-# In the next lesson, you will learn:
-
-- What are **Lists** in Java?
-- **List Manipulating**
-- **Reading Lists** from the Console
-- **Sorting Lists and Arrays**
-
+- What are **lists**
+- **List** operations
+- **Reading lists** from the console
+- **Sorting lists and arrays**
 
 [/slide]

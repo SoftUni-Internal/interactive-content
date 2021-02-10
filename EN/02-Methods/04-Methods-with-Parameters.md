@@ -1,10 +1,5 @@
-[slide]
+[slide hideTitle]
 # Method Parameters
-
-[vimeo-video startTimeInSeconds="2556" endTimeInSeconds="3633"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
 
 Information can be **passed** to methods as a parameter. 
 
@@ -14,14 +9,14 @@ Parameters are specified after the method name, **inside the parentheses**.
 
 You can add as **many** parameters as you want, just **separate** them with a comma.
 
-The following example has a method that takes a `String` called `firstName` as a parameter.
+The following example has a method that takes a **String** called **firstName** as a parameter.
 
 When the method is called, we pass along a first name, which is used inside the method to print the full name:
 
 ```java live no-template
 public class MyClass {
   static void printName(String firstName) {
-    System.out.println(firstName + " Refsnes");
+    System.out.println(firstName + " Rudolf");
   }
 
   public static void main(String[] args) {
@@ -36,7 +31,7 @@ You can pass zero or several parameters.
 
 You can pass parameters of different types.
 
-Each parameter has a name and a type.
+Each parameter should be given a name and a type.
 
 ```Java
 public static void printStudent(String name, int age, double grade) {
@@ -49,7 +44,7 @@ public static void printStudent(String name, int age, double grade) {
 
 [slide hideTitle]
 # Problem: Sign of Integer
-[code-task title="Sign of Integer" taskId="java-fund-Methods-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sign of Integer" taskId="java-fund-Methods-lab-Sign-of-Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -63,7 +58,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that prints the sign of an integer number.
+Create a method that checks whether a number is positive, negative or zero and prints the result to the console.
 
 ## Examples
 | **Input** | **Output** |
@@ -115,7 +110,7 @@ The number 0 is zero.
 
 [slide hideTitle]
 # Solution: Sign of Integer
-[code-task title="Sign of Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Sign of Integer" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -128,7 +123,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that prints the sign of an integer number.
+Create a method that checks whether a number is positive, negative or zero and prints the result to the console.
 
 ## Examples
 | **Input** | **Output** |
@@ -180,7 +175,7 @@ The number 0 is zero.
 
 [slide hideTitle]
 # Problem: Grades
-[code-task title="Grades" taskId="java-fund-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Grades" taskId="java-fund-lab-Methods-Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -194,7 +189,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method **that receives** a grade between **2.00** and **6.00** and **prints the corresponding grade in words**:
+
+Create a method **that receives** a grade between **2.00** and **6.00** and **prints the corresponding grade definition**:
 
 * 2.00 – 2.99 - "Fail"
 * 3.00 – 3.49 - "Poor"
@@ -292,7 +288,7 @@ Fail
 
 [slide hideTitle]
 # Solution: Grades
-[code-task title="Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Grades" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -305,7 +301,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method **that receives** a grade between **2.00** and **6.00** and **prints the corresponding grade in words**:
+Create a method **that receives** a grade between **2.00** and **6.00** and **prints the corresponding grade definition**:
 
 * 2.00 – 2.99 - "Fail"
 * 3.00 – 3.49 - "Poor"
@@ -403,7 +399,7 @@ Fail
 
 [slide hideTitle]
 # Problem: Printing Triangle
-[code-task title="Printing Triangle" taskId="java-fund-Methods-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Printing Triangle" taskId="java-fund-Methods-lab-Printing-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -584,7 +580,7 @@ Create a method for printing triangles as shown below:
 
 [slide hideTitle]
 # Solution: Printing Triangle
-[code-task title="Printing Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Printing Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

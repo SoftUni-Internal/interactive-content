@@ -1,16 +1,11 @@
 # Declaring and Invoking Methods
 
-[slide]
+[slide hideTitle]
 # Create a Method
-
-[vimeo-video startTimeInSeconds="2054" endTimeInSeconds="2555"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
 
 A method must be declared within a class.
 
-It is defined with the name of the method, followed by parentheses `()`.
+It is defined with the name of the method, followed by parentheses **()**.
 
 Java provides some pre-defined methods, such as ``System.out.println()``, but you can also create your own methods to perform certain actions:
 
@@ -23,17 +18,21 @@ public class MyClass {
 }
 ```
 
-* `public` defines access type of the method i.e. from where it can be accessed in your application.
+- `public` - defines access type of the method i.e. from where it can be accessed in your application
 
-* `void` means that this method does not have a return value.
+- `void` - means that this method does not have a return value
 
-* `printHello()` is the name of the method.
+- `printHello()` - is the name of the method and the parenthesis signify that we are calling the method, in this case with no parameters
 
-* note that method body always surrounded by `{ }`.
+- the body of the method should always be placed between curly brackets **{ }**
 
-### Call a Method (Invoking)
+[/slide]
 
-To call a method in Java, write the method's name followed by two parentheses `()` and a semicolon;
+[slide hideTitle]
+
+# Invoking a Method
+
+To call a method in Java, write the method's name followed by two parentheses **()** and a semicolon **;**
 
 In the following example, `printHello()` is used to print a text (the action), when it is called:
 

@@ -1,49 +1,50 @@
 # Naming and Best Practices
 
-[slide]
+[slide hideTitle]
 # Naming Methods
 
-[vimeo-video startTimeInSeconds="1996" endTimeInSeconds="2053"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
+Always use verbs when naming methods.
 
-The method's name should always be a verb.
+A method represents an action, and its name should clearly state what action they perform.
 
-They represent an action and the method name should clearly state the action they perform.
+Method names can be a single word or 2-3 words as needed to represent the action.
 
-The method name can be a single or 2-3 words as needed to represent the action.
-
-## Example for good names
+## Example of good names
 
 Method names should answer the question:
 
 `What does this method do?`
 
-* Good method names: `findStudent`, `getReportByName`, `getId`.
+Good method names: **findStudent**, **getReportByName**, **getId**.
 
 
-## Example for bad names
+## Examples of bad method names
 
 If you cannot find a good name for a method, think about whether it has a **clear intent**.
 
-* Bad methods name: `Method1`, `DoSomething`, `HandleStuff`, `SampleMethod`.
+Bad methods name: **Method1**, **DoSomething**, **HandleStuff**, **SampleMethod**.
+[/slide]
 
+[slide hideTitle]
 # Naming Method Parameters
 
-Method parameters names should be `[Noun]` or `[Adjective]` + `[Noun]`. Also we should write methods in camelCase, and methods name should be meaningful:
+Method parameter names should be **[Noun]** or **[Adjective]** + **[Noun]**. Also we should write methods in camelCase, and methods name should be meaningful:
 
-* `firstName`, `report`, `speedKmH`, `usersList`, `fontSizeInPixels`, `font`.
+- **firstName**, **report**, **speedKmH**, **usersList**, **fontSizeInPixels**, **font**
 
+
+[/slide]
+
+[slide hideTitle]
 # Methods – Best Practices
 
 Each method should perform a **single**, well-defined task.
 
 A method's name should **describe that task** in a clear and non-ambiguous way.
 
-**Avoid** methods **longer than one screen**, split them to several shorter methods.
+**Avoid** methods **longer than one screen**, split them into several shorter methods.
 
-* Here are some self-documenting and easy to test:
+Here are some self-documenting method names:
 
 ```Java
 public static void printReceipt() {
@@ -52,14 +53,16 @@ public static void printReceipt() {
     printFooter();
 }
 ```
+[/slide]
 
-# Code Structure and Code Formatting
+[slide hideTitle]
+# Code Structure and Formatting
 
 Make sure to use correct **indentation**.
 
-Leave a **blank line** between **methods**, after **loops** and after `if` statements.
+Leave a **blank line** between **methods**, after **loops**, and after **if** statements.
 
-Always use **curly brackets** `for` loops and `if` statements bodies.
+Always use **curly brackets** for **loops** and **if** statements bodies.
 
 **Avoid long lines** and **complex expressions**.
 

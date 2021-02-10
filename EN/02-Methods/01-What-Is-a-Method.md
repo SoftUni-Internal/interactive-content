@@ -1,16 +1,11 @@
-# What Is a Method
+# What is a Method
 
-[slide]
-# Method
-
-[vimeo-video startTimeInSeconds="199" endTimeInSeconds="1995"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
+[slide hideTitle]
+# Methods
 
 A method is a block of code that only runs when it is called.
 
-You can pass data, known as parameters, into a method.
+You can pass data to methods in the form of parameters.
 
 Methods are used to perform certain actions, and they are also known as **functions**.
 
@@ -22,7 +17,7 @@ public static void printHello () {
 }
 ```
 
-* Call a Method \(Invoking\)
+Invoking / calling a method:
 
 ```Java
 printHello();
@@ -32,23 +27,34 @@ printHello();
 
 We use methods in Java for several reasons:
 
-- **Reusability**: we can write a method once, and use it **multiple times**. 
+- **Reusability** - we write a method once, and use it **multiple times**. We do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`.
 
-We do not have to rewrite the entire code each time. Think of it as, `write once, reuse multiple times`.
+- **To parameterize code** - in addition to making reusable code which is the same in all cases, you will often want to use `parameters` that change the way the method works
 
-- **To parameterize code**: in addition to making reusable code which is the same in all cases. 
-You will often want to use `parameters` that change the way the method works.
+- **Create conceptual units** - create methods to do something that is one action in your **mental view of the problem**. This will make it **much easier** for you to work with your programs
 
-- **Create conceptual units**: create methods to do something that is one action in your **mental view of the problem**.
+- Methods make code more readable and easier to debug. For example, the `printHello()` method is so readable, that we can know what this method will print `Hello`
 
-This will make it **much easier** for you to work with your programs.
+- **Simplify problems** - Because local variables and statements of a method **can not be seen from outside the method**. They \(and their complexity\) are **hidden** from other parts of the program, which prevents accidental errors or confusion.
 
-- Methods make code more readable and easier to debug. 
+[/slide]
 
-For example, `printHello()` method is so readable, that we can know what this method will print `Hello`.
+[slide hideTitle]
+# Void Type Methods
 
-- **Simplify problems**: Because local variables and statements of a method **can not be seen from outside the method**. 
+Methods with the **void** return type simply execute the code in their code block. They can accept parameters but do not return any result. 
 
-They \(and their complexity\) are **hidden** from other parts of the program, which prevents accidental errors or confusion.
+```java
+public static void doSomething() {
+  //executes code
+}
+```
 
+The **main()** method we have been writing code into is a void method as well.
+
+```java
+public static void main(String[] args) {
+  System.out.println("Hello");
+}
+```
 [/slide]

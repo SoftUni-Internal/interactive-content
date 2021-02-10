@@ -1,14 +1,9 @@
 # Returning Values From Methods
 
-[slide]
+[slide hideTitle]
 # The Return Statement
 
-[vimeo-video startTimeInSeconds="4537" endTimeInSeconds="5783"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
-
-The `return` keyword finishes the execution of a method, and can be used to return a value from a method.
+The `return` keyword finishes the execution of a method, and can be used to return a value from it.
 
 
 ```java live no-template
@@ -22,21 +17,25 @@ public class MyClass {
   }
 }
 ```
+
+[/slide]
+
+[slide hideTitle]
 # Using the Return Values
 
-Return value can be:
+The return value can be:
 
-* **Assigned** to a variable
+- **Assigned** to a variable
 ```Java
 int max = getMax(5, 10);
 ```
 
-* **Used** in expression
+- **Used** in expression
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-* **Passed** to another method
+- **Passed** to another method
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
@@ -45,7 +44,7 @@ int age = Integer.parseInt(sc.nextLine());
 
 [slide hideTitle]
 # Problem: Calculate Rectangle Area
-[code-task title="Problem: Calculate Rectangle Area" taskId="java-fund-Methods-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Calculate Rectangle Area" taskId="java-fund-Methods-lab-Calculate-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -59,7 +58,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the area of a rectangle by given width and length:
+Create a method that calculates and returns the area of a rectangle by a given width and length:
 
 ## Examples
 |**Input**|**Output**|
@@ -141,7 +140,7 @@ Create a method that calculates and returns the area of a rectangle by given wid
 
 [slide hideTitle]
 # Solution: Calculate Rectangle Area
-[code-task title="Problem: Calculate Rectangle Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Calculate Rectangle Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -154,7 +153,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the area of a triangle by given width and length:
+Create a method that calculates and returns the area of a triangle by a given width and length:
 
 ## Examples
 |**Input**|**Output**|
@@ -236,7 +235,7 @@ Create a method that calculates and returns the area of a triangle by given widt
 
 [slide hideTitle]
 # Problem: Repeat String
-[code-task title="Problem: Repeat String" taskId="java-fund-Methods-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Repeat String" taskId="java-fund-Methods-lab-Repeat-String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -250,9 +249,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a string and a repeat count n \(integer\).
+Write a method that receives a string and a repeat count **n** \(integer\).
 
-The method should return a new string \(the old one repeated n times\).
+The method should return a new string \(the input string repeated **n** times\).
 
 ## Examples
 |**Input**|**Output**|
@@ -338,7 +337,7 @@ ivanivan
 
 [slide hideTitle]
 # Solution: Repeat String
-[code-task title="Problem: Repeat String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Repeat String" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -351,9 +350,10 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a string and a repeat count n \(integer\).
+Write a method that receives a string and a repeat count **n** \(integer\).
 
-The method should return a new string \(the old one repeated n times\).
+The method should return a new string \(the input string repeated **n** times\).
+
 
 ## Examples
 |**Input**|**Output**|
@@ -440,7 +440,7 @@ ivanivan
 
 [slide hideTitle]
 # Problem: Math Power
-[code-task title="Problem: Math Power" taskId="java-fund-Methods-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Math Power" taskId="java-fund-Methods-lab-Math-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;
@@ -455,7 +455,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the value of a number raised to a given power:
+Create a method that calculates and returns the value of a number raised to a given power.
 
 ## Hint
 Use **BigDecimal**.
@@ -589,7 +589,7 @@ Use **BigDecimal**.
 
 [slide hideTitle]
 # Solution: Math Power
-[code-task title="Problem: Math Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Math Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.text.DecimalFormat;
@@ -603,7 +603,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a method that calculates and returns the value of a number raised to a given power:
+Create a method that calculates and returns the value of a number raised to a given power.
 
 ## Hint
 Use **BigDecimal**.
@@ -737,7 +737,7 @@ Use **BigDecimal**.
 
 [slide hideTitle]
 # Problem: Orders
-[code-task title="Problem: Orders" taskId="java-fund-Methods-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Orders" taskId="java-fund-Methods-lab-Orders" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -751,16 +751,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that calculates the total price of an order and prints it on the console.
+Write a method that calculates the total price of an order and prints it to the console.
 
 The method should receive one of the **following products**: coffee, coke, water, snacks; and a quantity of the product.
 
 The prices for a single piece of each product are:
 
-* coffee - 1.50
-* water - 1.00
-* coke - 1.40
-* snacks - 2.00
+|**Product**|**Price**|
+| --- | --- |
+| coffee | 1.50 |
+| water | 1.00 |
+| coke | 1.40 |
+| snacks | 2.00 |
+
 
 Print the result rounded to the second decimal place.
 
@@ -863,16 +866,18 @@ public class Orders {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that calculates the total price of an order and prints it on the console.
+Write a method that calculates the total price of an order and prints it to the console.
 
 The method should receive one of the **following products**: coffee, coke, water, snacks; and a quantity of the product.
 
 The prices for a single piece of each product are:
 
-* coffee - 1.50
-* water - 1.00
-* coke - 1.40
-* snacks - 2.00
+|**Product**|**Price**|
+| --- | --- |
+| coffee | 1.50 |
+| water | 1.00 |
+| coke | 1.40 |
+| snacks | 2.00 |
 
 Print the result rounded to the second decimal place.
 

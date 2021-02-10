@@ -1,17 +1,23 @@
 # Value and Reference Types
 
-[slide]
+[slide hideTitle]
+
+# Reference vs Value
+
+[image assetsSrc="java-fund-methods-01.gif" /]
+
+
+[/slide]
+
+[slide hideTitle]
 
 # Value Types
 
-[vimeo-video startTimeInSeconds="5784" endTimeInSeconds="6540"]
-[stream language="EN" videoId="421775938" default /]
-[stream language="RO" videoId="429688382" /]
-[/video-vimeo]
-
 A variable of a value \(primitive data\) type contains an instance of the type and hold directly their value. 
 
-With value types, each variable has **its own copy of the data**, and it is not possible for operations on one variable to **affect the other**.
+Primitive data types or value types contain the value of a variable directly inside their own memory location.
+
+With value types, each variable has **its own copy of the data**, and it is not possible for operations on one variable to **affect the another**.
 
 When a value of a primitive is assigned to another variable of the same type, a copy is made.
 
@@ -21,23 +27,26 @@ The called method does not have access to the original primitive value and there
 
 The called method can change the copied value.
 
-* Primitive data types are: `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` and `char`.
+* Primitive data types are: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** and **char**.
 
 ```Java
 int i = 42; //require 4 bytes of memory
 char ch = 'A'; //require 2 bytes of memory
 boolean result = true; //require 1 byte of memory
 ```
+[/slide]
+
+[slide hideTitle]
 
 # Reference Types
 
-**Reference type** variables hold а reference \(pointer / memory address\) of the value itself.
+**Reference type** variables hold а reference \(pointer / memory address\) to the value.
 
 When a reference type is assigned to another reference type, both will point to the same object.
 
 When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
 
-* Reference data types are: `String`, `int[]`, `char[]`, `String[]`.
+* Reference data types are: **String**, **int[]**, **char[]**, **String[]**.
 
 ```Java
 String str = "Hello";
@@ -77,8 +86,79 @@ public static void increment(int[] nums, int value) {
 [/slide]
 
 [slide hideTitle]
+# Value types vs. Reference Types
+
+Now we will visually demonstrate how value types are stores, compare to reference types. We will first initialize some primitive value type variables, followed by ones that are reference types:
+
+```java
+//primitives
+int num = 42;
+char letter = 'A';
+boolean isRunning = true;
+
+//reference type
+String str = "Hello";
+byte[] bytes ={ 1, 2, 3 };
+```
+
+[image assetsSrc="java-fund-methods-02.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Example: Value Types
+
+```java
+public static void main(String[] args) {
+   int num = 5;
+   incrementNumber(num, 15);
+   System.out.println(num);
+}
+
+public static void incrementNumber(int num, int incrementValue) {
+   num += incrementValue;
+}
+```
+
+We have an **incrementNumber** method that takes a number and increments it by another number - **incrementValue**.
+
+Even though we performed some operations with the **num** variable, its value will not change when **num** is printed to the console. 
+
+This is because **int** is a primitive type and when passed a copy of its value is passed to the method.
+
+[/slide]
+
+[slide hideTitle]
+
+# Example: Reference Types
+
+
+```java
+public static void main(String[] args) {
+  int[] nums = { 5 };
+  increment(nums, 15);
+  System.out.println(nums[0]);
+}
+
+public static void increment(int[] numbersArray, int incrementValue) {
+  numbersArray[0] += incrementValue;
+}
+
+```
+
+Arrays store references to memory locations. When we pass the array to the **increment** method it manipulates the values stored at the same memory reference. 
+
+When we passed **nums** as a value for the **numbersArray** parameter of the method, what happened is, the numbersArray parameter received the reference to the memory location of the original array. 
+
+Any operation that would change an element in the array inside the method will also change the original array as we are working with the same reference.
+
+[/slide]
+
+
+[slide hideTitle]
 # Problem: Math Operations
-[code-task title="Problem: Math operations" taskId="java-fund-Methods-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Math operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -92,13 +172,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two number** and an **operator**, calculates the result and returns it.
+Write a method that receives **two numbers** and an **operator**, calculates the result and returns it.
 
 You will be given **three lines of input**.
 
 The first will be the first **number**, the second one will be the **operator** and the last one will be the **second number**.
 
-The possible operators are: `/` `*` `+` `-`
+The possible operators are: **/** ***** **+** **-**
 
 ## Examples
 |**Input**|**Output**|
@@ -192,7 +272,7 @@ The possible operators are: `/` `*` `+` `-`
 
 [slide hideTitle]
 # Solution: Math operations
-[code-task title="Problem: Math operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Solution: Math operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -205,13 +285,13 @@ public class MathOperations {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two number** and an **operator**, calculates the result and returns it.
+Write a method that receives **two numbers** and an **operator**, calculates the result and returns it.
 
 You will be given **three lines of input**.
 
 The first will be the first **number**, the second one will be the **operator** and the last one will be the **second number**.
 
-The possible operators are: `/` `*` `+` `-`
+The possible operators are: **/** ***** **+** **-**
 
 ## Examples
 |**Input**|**Output**|

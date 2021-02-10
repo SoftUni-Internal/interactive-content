@@ -3,12 +3,7 @@
 [slide hideTitle]
 # Problem: Smallest of Three Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="421822503" default /]
-[stream language="RO" videoId="430366304"  /]
-[/video-vimeo]
-
-[code-task title="Smallest of Three Numbers" taskId="java-fund-Methods-Exercise-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Smallest of Three Numbers" taskId="java-fund-Methods-Exercise-Smallest-of-Three-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -24,7 +19,7 @@ public class Main {
 ## Description
 Write a method to **print the smallest of three integer numbers**.
 
-Use an appropriate name for the method.
+Think of a good name for the method.
 
 ### Example
 | **Input** | **Output** |
@@ -129,7 +124,7 @@ Use an appropriate name for the method.
 
 [slide hideTitle]
 # Problem: Vowels Count
-[code-task title="Vowels Count" taskId="java-fund-Methods-Exercise-Vowels-Count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Vowels Count" taskId="java-fund-Methods-Exercise-Vowels-Count" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -143,9 +138,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a **single string** and **prints the count of the vowels**.
+Write a method that receives a **single string** and **prints the count of the vowels** contained in it.
 
-Use appropriate name for the method.
+Think of a good name for the method.
 
 ### Example
 | **Input** | **Output** |
@@ -222,13 +217,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non.
 
 [slide hideTitle]
 # Problem: Characters in Range
-
-[vimeo-video]
-[stream language="EN" videoId="421819325" default /]
-[stream language="RO" videoId="430366338"  /]
-[/video-vimeo]
-
-[code-task title="Characters in Range" taskId="java-fund-Methods-Exercise-Characters-in-Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Characters in Range" taskId="java-fund-Methods-Exercise-Characters-in-Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -242,9 +231,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives **two characters** and prints on a single line all the **characters in between them according to ASCII**.
+Write a method that receives **two characters** and prints all the **characters in between them according to ASCII** on a single line.
 
-**NOTE:** If the second letter is less than the first one then letters should be swapped.
+**NOTE:** If the second letter's ASCII value is less than that of the first one then letters should be swapped.
 
 ### Example
 | **Input** | **Output** |
@@ -330,7 +319,7 @@ B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i 
 
 [slide hideTitle]
 # Problem: Password Validator
-[code-task title="Password Validator" taskId="java-fund-Methods-Exercise-Password-Validator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Password Validator" taskId="java-fund-Methods-Exercise-Password-Validator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -344,12 +333,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that checks if a given password is **valid**. 
+Create a program that checks if a given password is **valid**. 
 
 Password **rules** are:
 - **6 - 10 characters** (inclusive)
 - Consists **only** of **letters and digits**
-- Have **at least 2 digits** 
+- Contains **at least 2 digits** 
+
 If a password is **valid** print "Password is valid". 
 
 If it is **not valid**, for every unfulfilled rule **print a message**:
@@ -458,12 +448,7 @@ Password is valid
 [slide hideTitle]
 # Problem: Add and Subtract
 
-[vimeo-video]
-[stream language="EN" videoId="421818762" default /]
-[stream language="RO" videoId="430366408"  /]
-[/video-vimeo]
-
-[code-task title="Add and Subtract" taskId="java-fund-Methods-Exercise-Add-and-Subtract" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Add and Subtract" taskId="java-fund-Methods-Exercise-Add-and-Subtract" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -479,7 +464,7 @@ public class Main {
 ## Description
 You will receive 3 integers.
 
-Write a method sum to get the sum of the first two integers and subtract method that subtracts the third integer from the result from the Sum method.
+Write a method to get the sum of the first two integers and another method that subtracts the third integer from the result from the Sum method.
 
 ### Example
 | **Input** | **Output** |
@@ -634,7 +619,7 @@ Write a method sum to get the sum of the first two integers and subtract method 
 
 [slide hideTitle]
 # Problem: Middle Characters
-[code-task title="Middle Characters" taskId="java-fund-Methods-Exercise-Middle-Characters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Middle Characters" taskId="java-fund-Methods-Exercise-Middle-Characters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -777,12 +762,6 @@ ea
 
 [slide hideTitle]
 # Problem: NxN Matrix
-
-[vimeo-video]
-[stream language="EN" videoId="421821470" default /]
-[stream language="RO" videoId="430366442"  /]
-[/video-vimeo]
-
 [code-task title="NxN Matrix" taskId="java-fund-Methods-Exercise-NxN-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -797,7 +776,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a method that receives a single integer n and prints nxn matrix with that number.
+Write a method that receives a single integer **n** and prints an n*n matrix with that number.
 
 ### Example
 | **Input** | **Output** |
@@ -989,7 +968,7 @@ public class Main {
 ## Description
 Read **two integer numbers**.
 
-Calculate **factorial** of each number.
+Calculate the **factorial** of each number.
 
 **Divide the first result by the second** and print the **division formatted to the second** decimal point.
 
@@ -1130,9 +1109,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A palindrome is a number which reads the same **backward as forward,** such as 323 or 1001.
+A palindrome is a number that reads the same **backward as forward,** such as 323 or 1001.
 
-Write a program which reads a positive integer numbers **until you receive** "END", for each number **print whether the number is palindrome or not**.
+Write a program which reads positive integer numbers **until you receive** "END", for each number **print whether the number is a palindrome or not**.
 
 ### Example
 | **Input** | **Output** |
@@ -1289,11 +1268,6 @@ true
 
 [slide hideTitle]
 # Problem: Top Number
-
-[vimeo-video]
-[stream language="EN" videoId="421823015" default /]
-[stream language="RO" videoId="430365015"  /]
-[/video-vimeo]
 
 [code-task title="Top Number" taskId="java-fund-Methods-Exercise-Top-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
