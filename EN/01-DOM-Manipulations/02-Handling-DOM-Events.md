@@ -57,6 +57,8 @@ In this example, `body.onclick` does not work if we click on `<button>`.
 
 # Event Types In The DOM API
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-13-event-types-in-dom-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here are some of the event types used in the DOM.
 
 | **Mouse events** | **Touch events** | **DOM/UI events** | **Keyboard events** | **Focus events** | **Form events** |
@@ -72,6 +74,8 @@ Here are some of the event types used in the DOM.
 [slide hideTitle]
 
 # Event object properties and methods
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-14-15-event-object-properties-and-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us examine the Event Object.
 

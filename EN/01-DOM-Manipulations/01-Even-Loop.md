@@ -3,8 +3,6 @@
 [slide hideTitle]
 # Reduce a thread's waiting time with callbacks
 
-_Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/6VAgTbqT#eTEsCGG6h0WErbhKN9PgO0S5NRk2NCSHhk5uoC-O4YU)
-
 First of all, **JavaScript** is executed mostly **in the browser.**
 
 The **event loop** is a fundamental concept in JavaScript asynchronous programming.
@@ -23,6 +21,8 @@ A **callback** function is a function passed into another function as an argumen
 [slide hideTitle]
 
 # Stack Execution
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-5-10-stack-execution-of-the-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, we can see the two types of memories: the **Stack** and the **Heap**.
 
@@ -52,6 +52,8 @@ There is an example:
 
 [slide hideTitle]
 # The Event Loop
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-3-4-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, **we have a function**, which invokes another function, but this time the function creates an **event into the event queue**.
 
