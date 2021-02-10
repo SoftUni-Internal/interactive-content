@@ -32,7 +32,7 @@ Implement the above to provide the following functionality:
 
 ## Example
 
-[image assetsSrc="JS-Advanced-DOM-Homework-1.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-1.png" /]
 
 ## Hints
 
@@ -83,13 +83,13 @@ Submit only the `subtract()` function in judge.
 [tests]
 [test open]
 [input]
-document.body.innerHTML = `\<div id="wrapper"\> \<input type="text" id="firstNumber" value="13.33" disabled\> \<input type="text" id="secondNumber" value="22.18" disabled\> \<div id="result"\>\</div\> \</div\>`;
+document.body.innerHTML = '<div id="wrapper"><input type="text" id="firstNumber" value="13.33" disabled><input type="text" id="secondNumber" value="22.18" disabled><div id="result"></div></div>';
 
 result();
 
-var \\$div = \\$('\#result');
+var $div = $('#result');
 
-expect(\\$div\[0\].textContent).to.equal("-8.85");
+expect($div[0].textContent).to.equal("-8.85");
 [/input]
 [output]
 yes
@@ -97,13 +97,13 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<div id="wrapper"\> \<input type="text" id="firstNumber" value="0.9" disabled\> \<input type="text" id="secondNumber" value="0.5" disabled\> \<div id="result"\>\</div\> \</div\>`;
+document.body.innerHTML = '<div id="wrapper"><input type="text" id="firstNumber" value="0" disabled><input type="text" id="secondNumber" value="0" disabled><div id="result"></div></div>';
 
 result();
 
-var \\$div = \\$('\#result');
+var $div = $('#result');
 
-expect(\\$div\[0\].textContent).to.equal("0.4");
+expect($div[0].textContent).to.equal("0");
 [/input]
 [output]
 yes
@@ -111,13 +111,13 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<div id="wrapper"\> \<input type="text" id="firstNumber" value="93.33" disabled\> \<input type="text" id="secondNumber" value="22.18" disabled\> \<div id="result"\>\</div\> \</div\>`;
+document.body.innerHTML = '<div id="wrapper"><input type="text" id="firstNumber" value="15" disabled><input type="text" id="secondNumber" value="2" disabled><div id="result"></div></div>';
 
 result();
 
-var \\$div = \\$('\#result');
+var $div = $('#result');
 
-expect(\\$div\[0\].textContent).to.equal("71.15");
+expect($div[0].textContent).to.equal("13");
 [/input]
 [output]
 yes
@@ -125,13 +125,13 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `\<div id="wrapper"\> \<input type="text" id="firstNumber" value="13.33" disabled\> \<input type="text" id="secondNumber" value="22.18" disabled\> \<div id="result"\>\</div\> \</div\>`;
+document.body.innerHTML = '<div id="wrapper"><input type="text" id="firstNumber" value="0" disabled><input type="text" id="secondNumber" value="-13.40" disabled><div id="result"></div></div>';
 
 result();
 
-var \\$div = \\$('\#result');
+var $div = $('#result');
 
-expect(\\$div\[0\].textContent).to.equal("-8.85");
+expect($div[0].textContent).to.equal("13.4");
 [/input]
 [output]
 yes
