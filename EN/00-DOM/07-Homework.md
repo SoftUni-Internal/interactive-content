@@ -184,7 +184,7 @@ After that you should create a new **option** element and set its **textContent*
 [tests]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<h1\>Dropdown Menu\</h1\>
     \<article\>
         \<div\>
@@ -200,14 +200,14 @@ document.body.innerHTML = `
         \<input type="text" id="newItemValue" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</article\>
-`;
+\`;
 
-\\$('\#newItemText').val('new node');
-\\$('\#newItemValue').val('val1');
+\$('\#newItemText').val('new node');
+\$('\#newItemValue').val('val1');
 
 result();
 
-let item = \\$('\#menu').find('option');
+let item = \$('\#menu').find('option');
 expect(item.text()).to.contains('new node', "Item text wasn't added");
 expect(item.val()).to.contains('val1', "Item value wasn't added");
 [/input]
@@ -217,7 +217,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<h1\>Dropdown Menu\</h1\>
     \<article\>
         \<div\>
@@ -233,18 +233,18 @@ document.body.innerHTML = `
         \<input type="text" id="newItemValue" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</article\>
-`;
+\`;
 
-\\$('\#newItemText').val('Some Text');
-\\$('\#newItemValue').val('myValue');
+\$('\#newItemText').val('Some Text');
+\$('\#newItemValue').val('myValue');
 
 result();
 
-let item = \\$('\#menu').find('option');
+let item = \$('\#menu').find('option');
 expect(item.text()).to.contains('Some Text', "Item text wasn't added");
 expect(item.val()).to.contains('myValue', "Item value wasn't added");
-expect(\\$('\#newItemText').val()).to.equal('', "Text input was not cleared");
-expect(\\$('\#newItemValue').val()).to.equal('', "Value input was not cleared");
+expect(\$('\#newItemText').val()).to.equal('', "Text input was not cleared");
+expect(\$('\#newItemValue').val()).to.equal('', "Value input was not cleared");
 [/input]
 [output]
 yes
@@ -252,7 +252,7 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
     \<h1\>Dropdown Menu\</h1\>
     \<article\>
         \<div\>
@@ -268,16 +268,16 @@ document.body.innerHTML = `
         \<input type="text" id="newItemValue" /\>
         \<input type="button" value="Add" onclick="addItem()"\>
     \</article\>
-`;
+\`;
 
-\\$('\#newItemText').val('Option 1');
-\\$('\#newItemValue').val('value1');
+\$('\#newItemText').val('Option 1');
+\$('\#newItemValue').val('value1');
 result();
-\\$('\#newItemText').val('Option 2');
-\\$('\#newItemValue').val('value2');
+\$('\#newItemText').val('Option 2');
+\$('\#newItemValue').val('value2');
 result();
 
-let item = \\$('\#menu').find('option');
+let item = \$('\#menu').find('option');
 expect(item\[0\].textContent).to.contains('Option 1', "Item wasn't added");
 expect(item\[0\].value).to.contains('value1', "Item wasn't added");
 expect(item\[1\].textContent).to.contains('Option 2', "Item wasn't added");
