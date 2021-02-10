@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Slicing Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489374953/4d8a0f208e" default /]
-[stream language="RO" videoId="489374953/4d8a0f208e"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-15-16-slicing-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.slice()` method **returns** the **selected elements** in an array, as a **new array object**.
 
@@ -26,10 +23,7 @@ console.log(myArray.slice(2,4));
 [slide hideTitle]
 # Splice: Cut and Insert Array Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489374185/fc61ac9758" default /]
-[stream language="RO" videoId="489374185/fc61ac9758"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.splice()` method **adds** or **removes** items to\/from an array, and **returns** the removed item(s).
 

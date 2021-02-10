@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Transform Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489374289/c0b4d9c5f7" default /]
-[stream language="RO" videoId="489374289/c0b4d9c5f7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-23-transform-elements-with-map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Starting from EcmaScript 5, the JavaScript `Array` type provides a `map()` method that allows us to **transform the elements of an array** in a cleaner way. 
 
@@ -41,10 +38,7 @@ You can [read more about map() here](https://developer.mozilla.org/en-US/docs/We
 [slide hideTitle]
 # Filter Elements
 
-[vimeo-video]
-[stream language="EN" videoId="489374290/1e675608b7" default /]
-[stream language="RO" videoId="489374290/1e675608b7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-24-filter-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `filter()` method creates a **new array**, filled with all array elements that **pass a given test** (provided as a function).
 
@@ -377,10 +371,7 @@ The **output** is **printed to the console** on a **single line**, **separated b
 [slide hideTitle]
 # Sorting Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489374351/27d530505f" default /]
-[stream language="RO" videoId="489374351/27d530505f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-27-28-sorting-arrays-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `sort()` method **sorts the items** of an array.
 
@@ -419,10 +410,7 @@ console.log(numbers);
 [slide hideTitle]
 # Compare Functions
 
-[vimeo-video]
-[stream language="EN" videoId="489374404/c8ee191474" default /]
-[stream language="RO" videoId="489374404/c8ee191474"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-29-compare-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `sort()` method, fortunately, can sort **negative, zero, and positive values** in the **correct order**.
 
@@ -445,10 +433,7 @@ console.log(nums.join('|'));
 [slide hideTitle]
 # Sorting String Arrays
 
-[vimeo-video]
-[stream language="EN" videoId="489374405/c099f73018" default /]
-[stream language="RO" videoId="489374405/c099f73018"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-30-sorting-string-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `localeCompare()` method compares **two strings** in the current locale. 
 

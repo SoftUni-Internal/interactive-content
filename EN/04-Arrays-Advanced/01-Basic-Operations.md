@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Overview
 
-[vimeo-video]
-[stream language="EN" videoId="489374674/6cf27fdbe0" default /]
-[stream language="RO" videoId="489374674/6cf27fdbe0"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-3-4-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript has **built-in functions** for dealing with arrays that **can simplify the code, make it easier to read**, and last but not least, make it easier to debug.
 
@@ -33,10 +30,7 @@ Basically, these methods modify the array, and we do not need to write a whole b
 [slide hideTitle]
 # Add at the End, Remove from the End
 
-[vimeo-video]
-[stream language="EN" videoId="489374677/3350dbaf69" default /]
-[stream language="RO" videoId="489374677/3350dbaf69"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript has **built-in methods** for adding and removing elements both from the end and the beginning of an array.
 
@@ -72,10 +66,7 @@ console.log(number);
 [slide hideTitle]
 # Add at the Start, Remove from the Start
 
-[vimeo-video]
-[stream language="EN" videoId="489374731/d3be54a729" default /]
-[stream language="RO" videoId="489374731/d3be54a729"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Adding an Element at the Beginning of an Array**
 
@@ -323,10 +314,7 @@ The **output** should be the **value, which is returned from the function**.
 [slide hideTitle]
 # Pushing Into an Array
 
-[vimeo-video]
-[stream language="EN" videoId="489374828/cbd47a4e46" default /]
-[stream language="RO" videoId="489374828/cbd47a4e46"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.push()` method **adds** one or more elements **to the end of an array** and **returns the new length**:
 
@@ -343,10 +331,7 @@ console.log(newLength);
 [slide hideTitle]
 # Shifting and Unshifting Into an Array
 
-[vimeo-video]
-[stream language="EN" videoId="489374831/7be466e53c" default /]
-[stream language="RO" videoId="489374831/7be466e53c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.shift()` method **removes the first element** of an array:
 
@@ -373,11 +358,6 @@ It also returns the **new length** of the array.
 
 [slide hideTitle]
 # Problem: Negative or Positive Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="491173934/f975ab3bb3" default /]
-[stream language="RO" videoId="491173934/f975ab3bb3"  /]
-[/video-vimeo]
 
 [code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -552,12 +532,7 @@ The **output** has to be **printed to the console**, each element on a **new
 [slide hideTitle]
 # Solution: Negative or Positive Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="491173994/fc9de18c5b" default /]
-[stream language="RO" videoId="491173994/fc9de18c5b"  /]
-[/video-vimeo]
-
-
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -730,10 +705,7 @@ The **output** has to be **printed to the console**, each element on a **new
 [slide hideTitle]
 # Find Values
 
-[vimeo-video]
-[stream language="EN" videoId="489374946/5dbb522344" default /]
-[stream language="RO" videoId="489374946/5dbb522344"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-14-find-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
 
