@@ -1223,11 +1223,12 @@ yes
 
 # Problem: Numpad Calculator
 
-[code-task title="Problem: Numpad Calculator" taskId="js-advanced-DOM-Numpad-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Numpad Calculator" taskId="js-advanced-DOM-Numpad-Calculator" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-
+function numpadCalculator(){
+  // Write your code here
+}
 ```
 
 [/code-editor]
@@ -1239,35 +1240,35 @@ yes
 
 Write a function that implements a calculator that has the following functionalities:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-14.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-14.png" /]
 
-When one of **the buttons is clicked**, its value should be shown in the **"Expression"** **field (#expressionOutput).**
+When one of **the buttons is clicked**, its value should be shown in the `Expression` **field (#expressionOutput).**
 
 For instance, if we click on the button with value **9**, the expected result should be:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-15.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-15.png" /]
 
 If the **current Expression** field (**#expresisonOutput**) contains the whole math expression (**left operand**, **operator** and **right operand: Example: 9 + 2)**, the expected result should be:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-16.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-16.png" /]
 
-When the **equal sign "=" is pressed, the result of that expression** should appear in the **Result** field **(#resultOutput)**
+When the **equal sign** `=` **is pressed, the result of that expression** should appear in the **Result** field `#resultOutput`
 
-[image assetsSrc="JS-Advanced-DOM-Homework-17.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-17.png" /]
 
-Otherwise, if we create an invalid expression such as **"99 +" (without second/right operand)** and we hit the equal sign **"="**, the expected result should be:
+Otherwise, if we create an invalid expression such as `"99 +" (without second/right operand)` and we hit the equal sign `=`, the expected result should be:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-18.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-18.png" /]
 
-The **"Clear"** button should **clear both Expression and Result fields (#expressionOutput** and **#resultOutput)**
+The `Clear` button should **clear both Expression and Result fields (`#expressionOutput` and `#resultOutput`)
 
 For instance, if we have the following expression:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-19.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-19.png" /]
 
-And we press **"Clear"**, the expected result should be:
+And we press `Clear`, the expected result should be:
 
-[image assetsSrc="JS-Advanced-DOM-Homework-20.jpg" /]
+[image assetsSrc="JS-Advanced-DOM-Homework-20.png" /]
 
 [/task-description]
 [code-io /]
