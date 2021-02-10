@@ -184,7 +184,23 @@ After that you should create a new **option** element and set its **textContent*
 [tests]
 [test]
 [input]
-document.body.innerHTML = ` \<h1\>Dropdown Menu\</h1\> \<article\> \<div\> \<select id="menu"\>\</select\> \</div\> \<label for="newItemText"\> Text: \</label\> \<input type="text" id="newItemText" /\> \<label for="newItemValue"\> Value: \</label\> \<input type="text" id="newItemValue" /\> \<input type="button" value="Add" onclick="addItem()"\> \</article\>`;
+document.body.innerHTML = `
+    \<h1\>Dropdown Menu\</h1\>
+    \<article\>
+        \<div\>
+            \<select id="menu"\>\</select\>
+        \</div\>
+        \<label for="newItemText"\>
+            Text:
+        \</label\>
+        \<input type="text" id="newItemText" /\>
+        \<label for="newItemValue"\>
+            Value:
+        \</label\>
+        \<input type="text" id="newItemValue" /\>
+        \<input type="button" value="Add" onclick="addItem()"\>
+    \</article\>
+`;
 
 \\$('\#newItemText').val('new node');
 \\$('\#newItemValue').val('val1');
@@ -201,7 +217,23 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = ` \<h1\>Dropdown Menu\</h1\> \<article\> \<div\> \<select id="menu"\>\</select\> \</div\> \<label for="newItemText"\> Text: \</label\> \<input type="text" id="newItemText" /\> \<label for="newItemValue"\> Value: \</label\> \<input type="text" id="newItemValue" /\> \<input type="button" value="Add" onclick="addItem()"\> \</article\>`;
+document.body.innerHTML = `
+    \<h1\>Dropdown Menu\</h1\>
+    \<article\>
+        \<div\>
+            \<select id="menu"\>\</select\>
+        \</div\>
+        \<label for="newItemText"\>
+            Text:
+        \</label\>
+        \<input type="text" id="newItemText" /\>
+        \<label for="newItemValue"\>
+            Value:
+        \</label\>
+        \<input type="text" id="newItemValue" /\>
+        \<input type="button" value="Add" onclick="addItem()"\>
+    \</article\>
+`;
 
 \\$('\#newItemText').val('Some Text');
 \\$('\#newItemValue').val('myValue');
@@ -220,7 +252,23 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = ` \<h1\>Dropdown Menu\</h1\> \<article\> \<div\> \<select id="menu"\>\</select\> \</div\> \<label for="newItemText"\> Text: \</label\> \<input type="text" id="newItemText" /\> \<label for="newItemValue"\> Value: \</label\> \<input type="text" id="newItemValue" /\> \<input type="button" value="Add" onclick="addItem()"\> \</article\>`;
+document.body.innerHTML = `
+    \<h1\>Dropdown Menu\</h1\>
+    \<article\>
+        \<div\>
+            \<select id="menu"\>\</select\>
+        \</div\>
+        \<label for="newItemText"\>
+            Text:
+        \</label\>
+        \<input type="text" id="newItemText" /\>
+        \<label for="newItemValue"\>
+            Value:
+        \</label\>
+        \<input type="text" id="newItemValue" /\>
+        \<input type="button" value="Add" onclick="addItem()"\>
+    \</article\>
+`;
 
 \\$('\#newItemText').val('Option 1');
 \\$('\#newItemValue').val('value1');
