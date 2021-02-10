@@ -199,10 +199,9 @@ clearInterval(intervalID);
 
 [slide hideTitle]
 # Problem: Add Delete
-[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-lab-Add-Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function solve(){
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-lab-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+```
+function addDelete(){
   // Write your code here
 }
 ```
@@ -266,10 +265,9 @@ yes
 
 [slide hideTitle]
 # Solution: Add Delete
-[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function solve(){
+[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+```
+function addDelete(){
   // Write your code here
 }
 ```

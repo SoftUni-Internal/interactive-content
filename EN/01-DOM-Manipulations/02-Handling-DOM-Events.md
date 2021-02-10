@@ -131,7 +131,7 @@ The `stopImmediatePropagation()` method prevents other listeners of the same eve
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-lab-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function listOfItems(){
   // Write your code here
 }
 ```
@@ -217,7 +217,7 @@ yes
 [code-task title="List Of Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function solve(){
+function listOfItems(){
   // Write your code here
 }
 ```
