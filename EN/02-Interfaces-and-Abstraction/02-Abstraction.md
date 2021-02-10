@@ -66,7 +66,7 @@ Woof, Woof
 
 
 [slide hideTitle]
-## Example: Java Interface
+# Example: Java Interface
 
 We can use interfaces too.
 
