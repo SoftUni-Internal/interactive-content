@@ -4,6 +4,8 @@
 
 # Event Handler
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-19-20-event-handler-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Event registration is done by providing a callback function.
 
 There are 3 ways to register an event:
@@ -19,6 +21,8 @@ There are 3 ways to register an event:
 [slide hideTitle]
 
 # Event Listener
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-21-event-listener-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To be able to use our **event handler function**, we need the `.addEventListener()` method.
 
@@ -56,6 +60,8 @@ addBtn.removeEventListener("click", handler);
 
 # Attaching Click Event
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-22-attaching-click-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here is an example using the "click" type and the "clickMe" function as an event handler.
 
 On each click of the button, the "number" will be incremented by one.
@@ -75,6 +81,8 @@ function clickMe(e) {
 [slide hideTitle]
 
 # Attaching hover event
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-23-24-attaching-hover-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of using the "mouseOver" type and a function declaration.
 
@@ -123,6 +131,8 @@ inputField.addEventListener('input', function () {
 
 # Remove Events
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-25-remove-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here is a more in-depth implementation of the `.addEventListener()` and the `.removeEventListener()` methods.
 
 The first event listener (`focus`, `focusEvent`) will add focus to the password input field if we click on this field.
@@ -155,6 +165,8 @@ button.addEventListener('click', () => {
 
 # Multiple Events
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-26-multiple-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can add multiple events to the same element without overwriting existing events.
 
 ```js
@@ -169,6 +181,8 @@ element.addEventListener("mouseout", myThirdFunction);
 [slide hideTitle]
 
 # SetInterval() And ClearInterval()
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-27-setinterval-clearinterval-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In JavaScript, we can **start** or **stop** timers.
 
