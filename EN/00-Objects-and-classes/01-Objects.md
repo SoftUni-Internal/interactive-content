@@ -249,15 +249,7 @@ age: 22
 //Different vido code
 
 function personInfo(input){
-  let person = {
-        firstName: input[0],
-        lastName: input[1],
-        age: input[2]
-    }
-
-    for (let [key, value] of Object.entries(person)){
-        console.log(key + ": " + value);
-    }
+  
 }
 ```
 [/code-editor]
@@ -356,7 +348,7 @@ age: 22
 [stream language="RO" videoId="489795448/09ea78efff"  /]
 [/video-vimeo]
 
-[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function city(input){
@@ -460,20 +452,10 @@ postCode -> 484
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-//Different vido code
+//Different video code
 
 function city(input){
- let cityObject = {
-        name: input[0],
-        area: input[1],
-        population: input[2],
-        country: input[3],
-        postCode: input[4]
-    }
 
-    for (let key in cityObject){
-        console.log(`${key} -> ${cityObject[key]}`);
-    }
 }
 ```
 [/code-editor]
