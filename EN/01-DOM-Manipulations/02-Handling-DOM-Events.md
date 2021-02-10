@@ -33,7 +33,7 @@ When an event happens on an element, it first runs the handlers on it, then on i
 
 In this example, the handler is assigned to the `<div>` element, but it also runs if we click on any nested tag like  `<em>` or `<code>`.
 
-```html
+```js
 <div onclick="alert('The handler!')">
   <em>Click on <code>ME</code>, or click on the main <code>DIV</code> runs.</em>
 </div>
@@ -45,7 +45,7 @@ We can stop the **bubbling** using a method called `event.stopPropagation()`.
 
 In this example, `body.onclick` does not work if we click on `<button>`.
 
-```html
+```js
 <body onclick="alert(`the bubbling doesn't reach here`)">
   <button onclick="event.stopPropagation()">Click me</button>
 </body>
@@ -60,7 +60,7 @@ In this example, `body.onclick` does not work if we click on `<button>`.
 Here are some of the event types used in the DOM.
 
 | **Mouse events** | **Touch events** | **DOM/UI events** | **Keyboard events** | **Focus events** | **Form events** |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | click | touchstart | load | keydown | focus (got focus) | input |
 | mouseover | touchend | unload | keypress | blur (lost focus) | change |
 | mouseout | touchmove | resize | keyup |  | submit |
@@ -82,7 +82,6 @@ The argument `e`, which is passed to the function, is our **reference to the eve
 The event object has many **properties** and **methods**. 
 
 Some of the properties are:
-
 
 - target
 
@@ -110,7 +109,6 @@ The **clientX** property returns the horizontal coordinate (according to the cli
 
 The **clientY** property returns the vertical coordinate.
 
-
 Some of the methods are:
 
 - `preventDefault()`
@@ -129,10 +127,11 @@ The `stopImmediatePropagation()` method prevents other listeners of the same eve
 
 [slide hideTitle]
 # Problem: List Of Items
-[code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+
+[code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-lab-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
 ```
-function solve(input){
+function solve(){
   // Write your code here
 }
 ```
@@ -215,10 +214,10 @@ yes
 
 [slide hideTitle]
 # Solution: List Of Items
-[code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-List-Of-Items-Solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="List Of Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
 ```
-function solve(input){
+function solve(){
   // Write your code here
 }
 ```

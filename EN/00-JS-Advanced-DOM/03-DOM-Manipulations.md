@@ -132,7 +132,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Problem: Articles List
 
-[code-task title="Problem: Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Problem: Articles List" taskId="js-advanced-DOM-lab-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function articlesList(){
   // Write your code here
@@ -724,7 +724,7 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Problem: Growing Word
 
-[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Problem: Growing Word" taskId="js-advanced-DOM-lab-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function growingWord(){
   // Write your code here

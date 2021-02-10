@@ -1,6 +1,6 @@
 # Event Loop
 
-[slide]
+[slide hideTitle]
 # Reduce a thread's waiting time with callbacks
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/6VAgTbqT#eTEsCGG6h0WErbhKN9PgO0S5NRk2NCSHhk5uoC-O4YU)
@@ -20,7 +20,7 @@ A **callback** function is a function passed into another function as an argumen
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Stack Execution
 
@@ -34,24 +34,23 @@ On each new function call, it is pushed on top of the stack.
 
 In the **Stack**, everything is **organized in scopes**, so that each function in the stack **has its own scope.**
 
-**The Call stack** is a mechanism "JavaScript" uses to keep track of functions.
+**The Call stack** is a mechanism JavaScript uses to keep track of functions.
 
-When we call a function, "JavaScript" will **add** that function to the **call stack**. 
+When we call a function, JavaScript will **add** that function to the **call stack**. 
  
-If this function calls another function, "JavaScript" will add that function to the **call stack** as well, above the first function.
+If this function calls another function, JavaScript will add that function to the **call stack** as well, above the first function.
 
 This process will repeat with any other function that will be called by the previous function. 
 
-When one function is finished, "JavaScript" will **remove** that function from the **call stack**.
+When one function is finished, JavaScript will **remove** that function from the **call stack**.
 
 There is an example:
-
 
 [image assetsSrc="DOM-Manipulation.gif" /]
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # The Event Loop
 
 In this example, **we have a function**, which invokes another function, but this time the function creates an **event into the event queue**.
