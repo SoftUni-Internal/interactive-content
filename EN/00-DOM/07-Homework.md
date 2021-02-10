@@ -339,26 +339,26 @@ If the display style is `none`, we should **change** it to `block` and the **opp
 [tests]
 [test]
 [input]
-document.body.innerHTML = \`
-\<div id="accordion"\>
-        \<div class="head"\>DOM Manipulations Exercise \<span class="button"\>More\</span\>\</div\>
-        \<div id="extra" style="display: none"\>
-            \<p\>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+document.body.innerHTML = `
+<div id="accordion">
+        <div class="head">DOM Manipulations Exercise <span class="button">More</span></div>
+        <div id="extra" style="display: none">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit
-                anim id est laborum.\</p\>
-        \</div\>
-    \</div\>
-\`;
+                anim id est laborum.</p>
+        </div>
+    </div>
+`;
 
 result(); // Show
 
 let extra = document.getElementById("extra");
-let button = document.getElementsByClassName("button")\[0\];
+let button = document.getElementsByClassName("button")[0];
 
 button.click();
 
