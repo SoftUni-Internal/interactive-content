@@ -4,6 +4,8 @@
 
 # Function Context
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Function context** refers to the object that **owns** the code, which is currently being executed. The context depends on the way the function is invoked. 
 
 Functions can be called in several different ways:
@@ -21,6 +23,8 @@ Functions can be called in several different ways:
 
 # What is "This"?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-3-4-what-is-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The value of `this` is always a reference to an object - the object from which it was called. In other words - `this` references the object that is executing the current function.
 
 The goal of the current lesson will be to understand how `this` behaves in **non-strict mode**. 
@@ -34,6 +38,8 @@ The object referenced by `this` **changes** when the execution context is change
 [slide hideTitle]
 
 # "This" Referring to the Global Object
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-6-this-refers-to-the-global-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If `this` is used on its own, it always returns the global object - `Object [global]`
 
@@ -51,6 +57,8 @@ When run, the above example returns **true**, meaning that `this` is indeed equa
 [slide hideTitle]
 
 # "This" in the Browser
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-7-this-keyword-in-the-browser-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **global object** in the browser is the **window**. 
 

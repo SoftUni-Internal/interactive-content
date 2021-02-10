@@ -4,6 +4,8 @@
 
 # Explicit Binding
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-16-17-explicit-binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Binding allows us to modify the context of a function, essentially changing what the `this` keyword points to.
 
 **Explicit binding** is what happens when we use `call()`, `apply()` or `bind()` on a function. 
@@ -34,6 +36,8 @@ It is an outside function but still behaves as though `speak()` is a method that
 [slide hideTitle]
 
 # Changing the Context: Call
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-18-19-changing-the-context-call-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `call()` calls a function with a given value of `this` and optional arguments. It changes the context of the function to the given object.
 
@@ -82,6 +86,8 @@ Every time we used `call()` the context of `this` was different.
 
 # Changing the Context: Apply
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-20-changing-the-context-apply-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `apply()` and `call()` serve the same purpose. However, `call()` takes a list of arguments, while `apply()` takes an array.
 
 To illustrate this with the previous example:
@@ -115,6 +121,8 @@ functionName.call(thisContext, ...[yourArray]);
 
 # Apply() - Example
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-21-apply-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ```js
 js
 const firstPerson = {
@@ -134,6 +142,8 @@ firstPerson.shareInfo.apply(secondPerson);
 [slide hideTitle]
 
 # Changing the Context: Bind
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-22-changing-the-context-bind-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `bind()` creates a **new function** and has `this` set to whatever value we provided. 
 
@@ -207,6 +217,8 @@ This is known as function borrowing in JavaScript.
 [slide hideTitle]
 
 # Bind() - Example
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-23-bind-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
 const x = 42;

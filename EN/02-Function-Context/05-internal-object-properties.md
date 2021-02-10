@@ -3,6 +3,9 @@
 [slide hideTitle]
 
 # Internal Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-27-28-internal-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [image assetsSrc="function-context-06.png" /]
 
 All the properties of an object have properties of their own, namely **Enumerable, Configurable, Writable** and **Value**.
@@ -47,6 +50,9 @@ Only properties that are **configurable**  can be deleted.
 
 [slide hideTitle]
 # Non-enumerable Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-29-objects-non-enumerable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Run the code below:
 
 ```js live
@@ -125,6 +131,8 @@ Printing the object itself with ``console.log(person)`` will not print out the *
 [slide hideTitle]
 # Non-writable Properties
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-30-objects-non-writable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Values of **non-writable** properties cannot be changed using assignments.
 
 Using ``Object.defineProperty`` by specifying a property that does not exist in our object, we can add a brand new property to that object, set its value and make it non-writable:
@@ -162,6 +170,8 @@ If the **non-writable** property is an object then the reference of the object w
 
 # Non-configurable Properties
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-31-object-non-configurable-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 If you set **configurable:false** for any property you will only be able to modify the **writable** property if it is true to false and nothing else. 
 
 Any attempt to change any other internal property **will fail** and throw a **TypeError**. 
@@ -179,6 +189,8 @@ Object.defineProperty(ob, 'a', { writable: true }); // throws a TypeErr
 [slide hideTitle]
 
 # Object Freeze and Seal
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-32-object-freeze-and-seal-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Syntax: `Object.freeze(obj)` and `Object.seal(obj)`
 

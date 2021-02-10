@@ -4,6 +4,8 @@
 
 # "Тhis" in a Method
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-8-9-this-in-a-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When inside a method, `this` is used to access information, stored in the object, that "owns" the object:
 
 ```js live
@@ -49,6 +51,8 @@ If there is no variable with the same name outside the scope of the project, the
 [slide hideTitle]
 
 # "Тhis" Refers to the Parent Object
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Consider the example below:
 
@@ -100,6 +104,8 @@ To summarize:
 
 # In Events
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-11-in-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When used in event handlers, `this` points to the specific element that the event fired from.
 
 If you create an HTML file and attach the following event handler to an element with id "button", what would the resulting output in the console be?
@@ -148,6 +154,8 @@ Clicking on the button in the example produces the following output in the conso
 [slide hideTitle]
 
 # In Classes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-12-this-in-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When used in classes, the value of `this` refers to the instance of the class that you initialize using the `new` keyword.
 
