@@ -4,10 +4,7 @@
 
 # RESTful Services
 
-[vimeo-video]
-[stream language="EN" videoId="497191038/6224733eff" default /]
-[stream language="RO" videoId="497191038/6224733eff"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-14-15-rest-and-restful-services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **REST** is an abbreviation for **Re**presentational **S**tate **T**ransfer.
 
@@ -29,10 +26,7 @@ We can use the **CRUD** operation on the resources.
 
 # REST Architectural Constrains
 
-[vimeo-video]
-[stream language="EN" videoId="497191068/9e59640c57" default /]
-[stream language="RO" videoId="497191068/9e59640c57"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-16-rest-architectural-constraints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are **six architectural constraints** that **REST** sets.
 
@@ -52,10 +46,7 @@ You can read more about REST Architectural Constraints [here](https://www.ics.uc
 [slide hideTitle]
 # REST and RESTfull Services: Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191104/a6933d75bc" default /]
-[stream language="RO" videoId="497191104/a6933d75bc"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-17-rest-and-restful-services-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us consider some theoretical examples.
 

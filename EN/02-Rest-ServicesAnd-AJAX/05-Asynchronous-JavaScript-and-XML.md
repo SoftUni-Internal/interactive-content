@@ -4,10 +4,7 @@
 
 # What is AJAX
 
-[vimeo-video]
-[stream language="EN" videoId="497191274/a7841157ed" default /]
-[stream language="RO" videoId="497191274/a7841157ed"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-23-24-what-is-ajax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **AJAX** abbreviation stands for **Asynchronous** **JavaScript** and **XML**. 
 
@@ -27,10 +24,7 @@ There are two types of **AJAX**:
 
 # AJAX Workflow
 
-[vimeo-video]
-[stream language="EN" videoId="497191306/6c8c746993" default /]
-[stream language="RO" videoId="497191306/6c8c746993"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-25-ajax-workflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of AJAX workflow:
 
@@ -48,10 +42,7 @@ That allows us to load the content **without** page reload.
 
 # XMLHttpRequest – Standard API for AJAX
 
-[vimeo-video]
-[stream language="EN" videoId="497191331/aab9a52aae" default /]
-[stream language="RO" videoId="497191331/aab9a52aae"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-26-27-xmlhttp-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here we can see how to update a web page without page reloading.
 
@@ -90,10 +81,7 @@ button.addEventListener('click', function loadRepos() {
 
 # What is a Promise?
 
-[vimeo-video]
-[stream language="EN" videoId="497191378/a55aff23a3" default /]
-[stream language="RO" videoId="497191378/a55aff23a3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-28-what-is-a-promise-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Promise** is the result of an **asynchronous action**.
 
@@ -113,10 +101,7 @@ To create a **Promise**, we use **Promise object** : `new Promise(executor);`
 
 # Promise.then(): Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191409/ff4fc09960" default /]
-[stream language="RO" videoId="497191409/ff4fc09960"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-29-promise-then-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example we will see how the **new Promise** works:
 
@@ -151,10 +136,7 @@ That is because **new Promise** is asynchronous.
 
 # What is Fetch?
 
-[vimeo-video]
-[stream language="EN" videoId="497191438/868f1cd08d" default /]
-[stream language="RO" videoId="497191438/868f1cd08d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-30-31-what-is-fetch-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Fetch** is an alternative of **XMLHttpRequest**.
 
@@ -200,10 +182,7 @@ We check the response status, and if it is **200**, we continue with parsing the
 
 # Chaining Promises
 
-[vimeo-video]
-[stream language="EN" videoId="497191476/2eee16d66a" default /]
-[stream language="RO" videoId="497191476/2eee16d66a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-32-chaining-promises-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The beneficial thing about **promises** is that when we use `fetch ()`, the result returned by it can be **separated** into functions.
 
@@ -234,10 +213,7 @@ If one of the operations is not successful, `catch()` will print an error.
 
 # GET Request
 
-[vimeo-video]
-[stream language="EN" videoId="497191506/ffd06dbce6" default /]
-[stream language="RO" videoId="497191506/ffd06dbce6"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-33-get-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The first request with `fetch()` that we are going to have a look at is a **GET** request.
 
@@ -266,10 +242,7 @@ If there is an error, `catch()` will print an error.
 
 # Post Request
 
-[vimeo-video]
-[stream language="EN" videoId="497191535/cb32a5d9e3" default /]
-[stream language="RO" videoId="497191535/cb32a5d9e3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-34-post-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **POST** request is different from the **GET** request. 
 
@@ -295,10 +268,7 @@ In the **body**, we set the data, and it should be **JSON stringified**.
 
 # Body Methods
 
-[vimeo-video]
-[stream language="EN" videoId="497191576/3758785d78" default /]
-[stream language="RO" videoId="497191576/3758785d78"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-35-36-body-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After the fetch request is done, a response should be returned.
 
@@ -320,10 +290,7 @@ The methods are:
 
 # Response Type
 
-[vimeo-video]
-[stream language="EN" videoId="497191609/984e7c1fb1" default /]
-[stream language="RO" videoId="497191609/984e7c1fb1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-37-response-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **response types** are **read-only** properties, 
 

@@ -4,10 +4,7 @@
 
 # HTTP Basics
 
-[vimeo-video]
-[stream language="EN" videoId="497191742/5d1c1190a0" default /]
-[stream language="RO" videoId="497191742/5d1c1190a0" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-3-4-http-basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Hypertext Transfer Protocol** (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
 
@@ -29,10 +26,7 @@ As we can see, the **client** sends a **request**, and the **server** sends a **
 
 # HTTP Request Methods
 
-[vimeo-video]
-[stream language="EN" videoId="497191798/2db8518a74" default /]
-[stream language="RO" videoId="497191798/2db8518a74" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-5-http-request-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **HTTP** has **methods**, to indicates the performed action of the identified resource.
 
@@ -58,10 +52,7 @@ They must be in uppercase.
 
 # HTTP GET Request Examples
 
-[vimeo-video]
-[stream language="EN" videoId="497191844/041a07ddb5" default /]
-[stream language="RO" videoId="497191844/041a07ddb5" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-6-http-get-request-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 By default, if we sent a request, it will be **GET**.
 
@@ -91,10 +82,7 @@ After it is the **headers** and the **body** `<CRLF>`.
 
 # HTTP Post Request Examples
 
-[vimeo-video]
-[stream language="EN" videoId="497191883/abf5823850" default /]
-[stream language="RO" videoId="497191883/abf5823850" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-7-http-post-request-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We send **POST** requests when we want to store data on the server.
 
@@ -126,10 +114,7 @@ But this time, the **body** holds the submitted data.
 
 # HTTP Response Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191921/7bfe82a1b9" default /]
-[stream language="RO" videoId="497191921/7bfe82a1b9" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-8-http-response-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After the request is sent, the server will return a **response**.
 
@@ -163,10 +148,7 @@ And finally, we have the **body**, which holds the data that we have requested.
 
 # HTTP Response Status Codes
 
-[vimeo-video]
-[stream language="EN" videoId="497191947/6cd7004d9e" default /]
-[stream language="RO" videoId="497191947/6cd7004d9e" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-9-http-response-status-codes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Every response has a **status code**, from which we can know if the request is successful or not.
 
@@ -189,10 +171,7 @@ These are some of the codes:
 
 # Content-Type and Disposition
 
-[vimeo-video]
-[stream language="EN" videoId="497191983/5228b6f5f4" default /]
-[stream language="RO" videoId="497191983/5228b6f5f4" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-10-content-type-and-disposition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Every request needs to have a field for **Content-Type** or **Content-Disposition**.
 

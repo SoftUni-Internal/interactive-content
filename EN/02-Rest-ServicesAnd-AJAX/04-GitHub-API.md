@@ -4,10 +4,7 @@
 
 # GitHub API - Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191130/b851b586aa" default /]
-[stream language="RO" videoId="497191130/b851b586aa"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-18-19-github-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To try GitHub's API we need Postman.
 
@@ -24,10 +21,7 @@ In this examples we will see a **GET** requests to the following URLs:
 
 # GitHub: Labels Issue: Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191186/eea6d5398d" default /]
-[stream language="RO" videoId="497191186/eea6d5398d"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-20-github-labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We need Postman if we want to try GitHub's API.
 
@@ -41,10 +35,7 @@ We need to specify the **id** of the issue and send a **GET** request to the fol
 
 # GitHub: Create Issue: Example
 
-[vimeo-video]
-[stream language="EN" videoId="497191252/8d95fa288f" default /]
-[stream language="RO" videoId="497191252/8d95fa288f"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-22-github-api-creating-an-issue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 For these examples, we need Postman.
 

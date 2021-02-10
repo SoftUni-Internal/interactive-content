@@ -1,8 +1,9 @@
 [slide hideTitle]
 # Summary
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learnt:
+## In this lesson you learned:
 
 -  HTTP is a **text-based client-server protocol** used for transferring Web resources
 

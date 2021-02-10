@@ -4,10 +4,7 @@
 
 # Chrome Developer Tools
 
-[vimeo-video]
-[stream language="EN" videoId="497190983/6fa8bbc679" default /]
-[stream language="RO" videoId="497190983/6fa8bbc679" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-11-12-chrome-developer-tools-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Chrome DevTools** is a set of tools that are built-in in the Chrome browser.
 
@@ -28,10 +25,7 @@ You can learn more about DevTools [here](https://developers.google.com/web/tools
 
 # Postman
 
-[vimeo-video]
-[stream language="EN" videoId="497191010/985739ced5" default /]
-[stream language="RO" videoId="497191010/985739ced5" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-13-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Postman gives us the ability to test an API.
 
