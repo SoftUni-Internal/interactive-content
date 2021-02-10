@@ -1,5 +1,5 @@
 [slide hideTitle]
-# The break Statement
+# The Break Statement
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-21-22-The-break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
