@@ -1,6 +1,6 @@
 ﻿[slide hideTitle]
 # Football Tournament
-[code-task title="Football Tournament" taskId="pb-java-march-exam-05" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Football Tournament" taskId="pb-java-exam-football-tournament" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
