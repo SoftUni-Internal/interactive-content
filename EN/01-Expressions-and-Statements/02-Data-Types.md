@@ -102,7 +102,7 @@ let userLoginCount;
 
 **Pascal case** combines words by:
 
-* capitalizing each word along with the first one
+* Capitalizing each word along with the first one
 
 * Removing all spaces:
 
@@ -112,10 +112,10 @@ let UserLoginCount;
 
 **Snake-case** is another naming convention, which combines words by:
 
-* using an underscore as a separator of the words `_`
-* removing all spaces
-* each element's initial letter usually lowercased within the compound
-* the first letter either upper or lowercase:
+* Using an underscore as a separator of the words `_`
+* Removing all spaces
+* Each element's initial letter usually lowercased within the compound
+* The first letter either upper or lowercase:
 
 ```js
 let users_count;
