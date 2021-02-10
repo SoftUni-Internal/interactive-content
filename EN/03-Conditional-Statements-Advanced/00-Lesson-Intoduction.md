@@ -1,5 +1,8 @@
-[slide hideTitle]
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-1-2-Introduction and table of contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

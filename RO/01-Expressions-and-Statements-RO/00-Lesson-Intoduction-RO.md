@@ -1,6 +1,8 @@
+# Lecție introductivă
+
 [slide hideTitle]
 
-# Expresii și Declarații
+# Conținutul lecției
 
 [vimeo-video]
 [stream language="EN" videoId="486854823/83a385d5b2" default /]

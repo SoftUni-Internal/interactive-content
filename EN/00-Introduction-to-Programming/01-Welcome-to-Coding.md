@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # What is Coding?
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-3-4-What-is-Coding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]

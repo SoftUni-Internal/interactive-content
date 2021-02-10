@@ -1,6 +1,8 @@
+# Lecție introductivă
+
 [slide hideTitle]
 
-# Lecție introductivă
+# Conținutul lecției
 
 [vimeo-video]
 [stream language="EN" videoId="488089815/9d59e2bbf4" default /]
