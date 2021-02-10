@@ -36,10 +36,10 @@ Data can be **passed to it** in the form of parameters.
 
 
 The reasons for using functions are:
- - Splits large problems **into small pieces**
+ - Splitting large problems **into small pieces**
  - **Better organization** of the program code
- - Improves code **readiblity**
- - Improves code **understandability**
- - Improves code **maintainability**
- - Code **reusability** using existing functions multiple times
+ - Improving code **readablity**
+ - Making code **easier to understand**
+ - Improving the **maintainability** of your code
+ - Code **reusability** - using existing functions multiple times
 [/slide]
