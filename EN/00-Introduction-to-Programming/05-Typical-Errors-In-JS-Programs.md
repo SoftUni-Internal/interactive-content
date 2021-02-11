@@ -29,5 +29,3 @@ In JavaScript double equal and tripple equal sign are called comparison operator
 
 [/slide]
 
-- Turn on the stove
-  * set temperature 
