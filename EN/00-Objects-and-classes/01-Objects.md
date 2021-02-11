@@ -600,7 +600,7 @@ Students are given to **write a function** with certain **name** and **input par
 greeting('Peter', 'Pan', '20')
 [/input]
 [output]
-Hello, Peter Pan. You are you 20 years old.
+Hello, Peter Pan. You are 20 years old.
 [/output]
 [/test]
 [/tests]
