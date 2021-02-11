@@ -2,13 +2,13 @@
 
 # Seven Testing Principles
 
-There are **fundamentals** testing principles which helps the testing teams to make the process of testing software more effective.
+There are **fundamental** testing principles which helps the testing teams to make the process of testing software more effective.
 
 Lets see what is the concept behind testing:
 
 ## 1.Testing is context depedent:
 
-That means, that different kind of sites are tested differently.
+Different kind of sites are tested differently.
 
 For example: 
 
@@ -20,7 +20,7 @@ The same goes for the software applications.
 
 ## 2.Exhaustive testing is impossible:
 
-Thats mean simply we cannot test everything. 
+Simply we cannot test everything. 
 
 We have almost **infinite** combinations of **input data**.
 
@@ -34,7 +34,7 @@ It is recommended to test input data using different methods like **Boundary Val
 
 Most of the defects that are found during **pre-release testing** are related to a small numbers of module.
 
-The main reason behind this is that the modules may be **too complex**. 
+The reason behind is that the modules may be **too complex**. 
 
 Coding related to such modules is complicated.
 
@@ -42,21 +42,19 @@ Coding related to such modules is complicated.
 
 The later a bug is found - the more it costs!
 
-The **cost** involved fixing defects at the start, when the project is small is cheaper compared to those found during the later stages of testing.
+The **costs** involved in fixing defects at the start of the projects are cheaper compared to those found during the later stages of testing.
 
 [image assetsSrc="Unit-Testing-Example.png" /]
 
 ## 5.Pesticide Paradox
 
-The Pesticide Paradox in testing shows us that the process of **repeating** the **same tests** over and over eventually will stop find new defects or bugs.
+The Pesticide Paradox in testing, states that repeating **the same tests** over and over again eventually will stop detecting new defects or bugs.
 
 We can overcome this problem by writing new tests and adding new test data.
 
 ## 6.Testing shows presence of defects:
 
-It is important to understand that even **after testing** we cannot say our product is **100% defect free**.
-
-Our tests cannot prove that our software is free of defects. 
+It is important to understand that even **after testing** we cannot state that our product is **100% defect free**.
 
 However efficient testing techniques **reduces** the chance of undiscovered bugs/defects.
 
@@ -64,7 +62,7 @@ However efficient testing techniques **reduces** the chance of undiscovered bugs
 
 Sometimes our software is tested against wrong requirements.
 
-Finding and fixing defects itself does not help when:
+Finding and fixing defects does not help when:
 
 - Our system built is unusable
 

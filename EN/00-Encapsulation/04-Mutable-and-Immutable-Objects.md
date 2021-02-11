@@ -35,7 +35,10 @@ class Team {
   }
 } 
 ```
-- When we work with reference types, getters are quite tricky. When we return our object we give a reference to it's memory, that is why with this reference we can change the original memory of the object, thus changing the objects itself. 
+When we work with reference types, getters are quite tricky. 
+
+When we return our object we give a reference to it's memory, that is why with this reference we can change the original memory of the object, thus changing the objects itself.
+
 [/slide]
 
 [slide hideTitle]
@@ -57,7 +60,7 @@ In this case our field is not safely encapsulated and it still can be changed.
 
 The reason behind it is that the `List<>` is a reference type, that is why when we pass it with the `getter` we actually give the reference to the List's memory.
 
-What happens is that although we do not have a setter, the list is still muttable.
+What happens is that although we do not have a setter, the list is still mutable.
 
 [/slide]
 
@@ -104,7 +107,7 @@ Create a **Team** class.
 
 Add to this team all the people you receive. 
 
-All person **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
+All people **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
 
 At the end print first and reserve team sizes.
 
@@ -1211,7 +1214,7 @@ Create a **Team** class.
 
 Add to this team all the people you receive. 
 
-All person **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
+All people **younger** than 40 years old go in **the first team**, others go in **the reserve team**.
 
 At the end print first and reserve team sizes.
 

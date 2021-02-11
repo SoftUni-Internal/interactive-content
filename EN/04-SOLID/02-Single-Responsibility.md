@@ -59,7 +59,7 @@ public class PrintHeroFeatures {​
 }
 ```
 
-The **Single Responsibility principle** doesn not mean that our classes should only have a few methods, or a small amount of code that they contain.
+The **Single Responsibility principle** does not mean that our classes should only have a few methods, or a small amount of code that they contain.
 
 The key is that the code that is inside the class must be **directly related to the main purpose** of the class and the job it does. 
 

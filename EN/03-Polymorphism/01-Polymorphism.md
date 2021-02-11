@@ -84,19 +84,19 @@ We can use the `instanceOf` operator in Java to check if an **object** is an ins
 
 Lets take a look now at the different examples:
 
-1. First, lets declare our Map
+- First, lets declare our Map
 
 ```java
  Map<Object, Object> map = new HashMap();
 ```
 
-2. Then, lets create a `boolean` type to evaluate our result
+- Then, lets create a `boolean` type to evaluate our result
 
 ```java
 boolean result = map instanceof Object;
 ```
 
-3. Finally we can print the result
+- Finally we can print the result
 
 ```java
 System.out.println("Map is instance of Object: " + result);
@@ -272,11 +272,12 @@ public static void main(String[] args) throws IOException {
 
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | 4 |
-|  | 9 |
-|  | 16 |
+| **Output** |
+| --- |
+| 4 |
+| 9 |
+| 16 |
+|   |
 
 [/task-description]
 [code-io /]
@@ -428,11 +429,12 @@ public static void main(String[] args) throws IOException {
 
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | 4 |
-|  | 9 |
-|  | 16 |
+| **Output** |
+| --- |
+| 4 |
+| 9 |
+| 16 |
+|  |
 
 [/task-description]
 [code-io /]

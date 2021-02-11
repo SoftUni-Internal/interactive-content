@@ -82,7 +82,7 @@ public class ElectricCar implements Vehicle {
 ```
 The electric car is a vehicle, however it does not have an engine and hence, the method `startEngine()` cannot be implemented.
 
-These are the kinds of problems that **violations** of the Liskov Substitution Principle leads to, and they can most often be recognized by a **method that does nothing**, or can't even be **implemented.**
+These are the kinds of problems that **violations** of the Liskov Substitution Principle leads to, and they can most often be recognized by a **method that does nothing**, or cannot even be **implemented.**
 
 The **solution** to these problems is a correct **inheritance hierarchy**, and in our case, we would solve the problem by differentiating interfaces of vehicles with and without engines.
 

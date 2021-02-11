@@ -46,23 +46,23 @@ You already have a class - Database. This time it is extended.
 
 There are the following provided methods:  adding, removing and finding People. 
 
-In other words, it should store People. There should be two types of finding methods - first: findById (long id) and the second one: findByUsername (String username).
+In other words, it should store People. There should be two types of finding methods - first: `findById (long id)` and the second one: `findByUsername (String username)`.
 
-As you may guess, each person should have its own unique id, and unique username. Your task is to test these functions.
+As you may guessed, each person should have its own unique id, and unique username. Your task is to test these functions.
 
 ## Constraints
 
 Database should have methods:
 
-- add
+- `add`
 
   * If there are multiple users with this id, throw **OperationNotSupportedException**.
 
   * If negative or null ids are present, throw **OperationNotSupportedException**. 
 
-- remove
+- `remove`
 
-- findByUsername
+- `findByUsername`
 
   * If no user is present by this username, throw **OperationNotSupportedException**.
 
@@ -70,7 +70,7 @@ Database should have methods:
 
   * Arguments are all CaseSensitive!
 
-- findById
+- `findById`
 
   * If no user is present by this id, throw **OperationNotSupportedException**.
 
@@ -86,11 +86,11 @@ Do not forget to test the constructor(s). They are methods too!
 
 # Problem: Iterator Test
 
-You are given a simple class "ListIterator", it should receive the collection (Strings) which it will iterate, through its constructor. You should store the elements in a List and get them initially through its constructor. If there is null passed to the constructor, throw new **OperationNotSupportedException**. The class should have three main functions:
+You are given a simple class `ListIterator`, it should receive a collection of Strings which it will iterate, injected through its constructor. You should store the elements in a `List`. If there is null passed to the constructor, throw new **OperationNotSupportedException**. The class should have three main functions:
 
-- **Move** - should move an internal index position to the next index in the list, the method should return true if it successfully moved and false if there is no next index.
-- **HasNext** - should return true if there is a next index and false if the index is already at the last element of the list.
-- **Print** - should print the element at the current internal index, calling Print on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!".** 
+- `Move` - should move an internal index position to the next index in the list, the method should return true if it successfully moved and false if there is no next index.
+- `HasNext` - should return true if there is a next index and false if the index is already at the last element of the list.
+- `Print` - print the element at the current internal index, calling `Print` on a collection without elements should throw an appropriate exception with the message **"Invalid Operation!".** 
 
 | **Command** | **Return Type** | **Description** |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ You are given a simple class "ListIterator", it should receive the collection (S
 
 ## Test 
 
-Create tests, so you are sure all methods in the class ListIterator are working as intended.
+Create tests, so you are sure all methods in the class `ListIterator` are working as intended.
 
 ## Constraints
 
@@ -157,6 +157,12 @@ You are given a data structure that needs to be tested. Use the Java file **Cust
 
 # Problem: Tire Pressure Monitoring System
 
-You are given a small project for a system which monitors the pressure in car tires. Your task is to write unit tests for the system. You will need to use mocking in order to pass dependencies. Think about the corner cases of the project
+You are given a small project for a system which monitors the pressure in car tires. 
+
+Your task is to write unit tests for the system. 
+
+You will need to use mocking in order to pass dependencies. 
+
+Think about the corner cases of the project.
 
 [/slide]

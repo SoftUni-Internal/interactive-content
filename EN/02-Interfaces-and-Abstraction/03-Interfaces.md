@@ -157,10 +157,10 @@ public static void main(String[] args) {
 Consider using the wrapper classes in the **Seat** constructor.
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Leon is gray color and have 110 horse power |
-|  | This is Leon produced in Spain and have 4 tires |
+| **Output** |
+| --- |
+| Leon is gray color and have 110 horse power |
+| This is Leon produced in Spain and have 4 tires |
 
 [/task-description]
 [code-io /]
@@ -776,10 +776,10 @@ public static void main(String[] args) {
 Consider using the wrapper classes in the **Seat** constructor.
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Leon is gray color and have 110 horse power |
-|  | This is Leon produced in Spain and have 4 tires |
+| **Output** |
+| --- |
+| Leon is gray color and have 110 horse power |
+| This is Leon produced in Spain and have 4 tires |
 
 [/task-description]
 [code-io /]
@@ -1399,14 +1399,14 @@ private static void printCarInfo(Car car) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Leon is Gray color and have 110 horse power |
-|  | This is Leon produced in Spain and have 4 tires |
-|  | Leon sells for 11111,100000 |
-|  | A4 is Gray color and have 110 horse power |
-|  | This is A4 produced in Germany and have 4 tires |
-|  | Minimum rental period of 3 days. Price per day 99,900000 |
+| **Output** |
+| --- |
+| Leon is Gray color and have 110 horse power |
+| This is Leon produced in Spain and have 4 tires |
+| Leon sells for 11111,100000 |
+| A4 is Gray color and have 110 horse power |
+| This is A4 produced in Germany and have 4 tires |
+| Minimum rental period of 3 days. Price per day 99,900000 |
 
 [/task-description]
 [code-io /]
@@ -2199,14 +2199,14 @@ private static void printCarInfo(Car car) {
 ```
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-|  | Leon is Gray color and have 110 horse power |
-|  | This is Leon produced in Spain and have 4 tires |
-|  | Leon sells for 11111,100000 |
-|  | A4 is Gray color and have 110 horse power |
-|  | This is A4 produced in Germany and have 4 tires |
-|  | Minimum rental period of 3 days. Price per day 99,900000 |
+| **Output** |
+| --- |
+| Leon is Gray color and have 110 horse power |
+| This is Leon produced in Spain and have 4 tires |
+| Leon sells for 11111,100000 |
+| A4 is Gray color and have 110 horse power |
+| This is A4 produced in Germany and have 4 tires |
+| Minimum rental period of 3 days. Price per day 99,900000 |
 
 [/task-description]
 [code-io /]
@@ -2989,7 +2989,7 @@ class TestInterfaceDefault {
 
 [slide hideTitle]
 
-## Static Method
+# Static Method
 
 Another thing we can do since Java 8 is to **define** and **implement** `static` methods in interfaces.
 

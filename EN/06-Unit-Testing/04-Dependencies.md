@@ -8,9 +8,9 @@ Instead of creating a components, that are close-coupled to each other we can us
 
 You can read more detailed information about [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
-Basically, dependency injection is a concept of giving a component all the thing its need from outside.
+Basically, dependency injection is a concept of giving a component all the things it needs from outside.
 
-That means we can **decoupling components** by providing their dependencies from outside, instead of creating them directly inside.
+**Decoupling components** by providing their dependencies from outside, instead of creating them directly inside.
 
 Lets have a look at this simple code to understand better the concept:
 
@@ -47,13 +47,6 @@ public void testGetInfoById() {
 
 
 [/slide]
-
-[slide hideTitle]
-
-# Problem: Fake Axe and Dummy
-
-[/slide]
-
 
 [slide hideTitle]
 
@@ -142,7 +135,7 @@ To do this, you need to:
   - Interface Weapon 
   - Interface Target 
 
-Create fake Weapon and fake Dummy for the test.
+Create а fake Weapon and а fake Dummy for the test.
 
 ## Hints
 
@@ -232,9 +225,9 @@ public void attackGainsExperienceIfTargetIsDead(){
 Include **Mockito** in the project dependencies, then:
 1.	Mock fakes from previous problem
 2.	Implement **Hero Inventory**, holding unequipped weapons
-  - method - **Iterable<\Weapon\> getInventory()**
+  - method - `Iterable<Weapon> getInventory()`
 3.	Implement Target giving random weapon upon death
-  - field - **private List<\Weapon\> possibleLoot**
+  - field - `private List<Weapon> possibleLoot`
 4.	Test Hero killing a target getting loot in his inventory
 
 ## Hints

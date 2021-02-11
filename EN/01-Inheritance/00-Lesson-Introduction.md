@@ -10,7 +10,7 @@
 
 - What is **Inheritance**
 
-- How **Inheritance**
+- How to do **Inheritance**
 
 - What benefits does it bring
 

@@ -25,7 +25,7 @@ Also, we can obtain a following constructor by his parameters:
 Constructor ctor = aClass.getConstructor(String.class);
 ```
 
-Now, lets try to instantiate objects using our Constructor Object:
+Lets try to instantiate objects using our Constructor Object:
 
 ``` java
 Constructor constructor = MyObject.class.getConstructor(String.class);
@@ -73,7 +73,7 @@ Object fieldType = field.getType();
 
 # Fields Set and Get
 
-Lets discuss now, how we can setting value for a field via Reflection
+Lets discuss, how we can setting value for a field via Reflection
 
 ``` java
 Field field = targetClass.getDeclaredField(fieldName);
