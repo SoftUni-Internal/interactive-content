@@ -2871,53 +2871,58 @@ yes
 [test]
 [input]
 // clicking 1 cards, empty history
-document.body.innerHTML = \`
-\<section class="description"\>
-\<h2\>Create a functonality which checks all cards, shows which
-one is greater and keeps history of all hands.
-\</h2\>
-\</section\>
-\<section class="cards"\>
-\<div id="player1Div"\>
-\<img src="images/card.jpg" name="2"/\>
-\<img src="images/card.jpg" name="15"/\>
-\<img src="images/card.jpg" name="4"/\>
-\<img src="images/card.jpg" name="12"/\>
-\<img src="images/card.jpg" name="6"/\>
-\<img src="images/card.jpg" name="10"/\>
-\<img src="images/card.jpg" name="8"/\>
-\<img src="images/card.jpg" name="9"/\>
-\</div\>
-\<div id="result"\>
-\<span\>\</span\>
-\<span\>vs\</span\>
-\<span\>\</span\>
-\</div\>
-\<div id="player2Div"\>
-\<img src="images/card.jpg" name="10"/\>
-\<img src="images/card.jpg" name="14"/\>
-\<img src="images/card.jpg" name="9"/\>
-\<img src="images/card.jpg" name="7"/\>
-\<img src="images/card.jpg" name="11"/\>
-\<img src="images/card.jpg" name="5"/\>
-\<img src="images/card.jpg" name="13"/\>
-\<img src="images/card.jpg" name="3"/\>
-\</div\>
-\<div id="history"\>\</div\>
-\</section\>
-\`;
+document.body.innerHTML = `
+<section class="description">
+<h2>Create a functonality which checks all cards, shows which
+    one is greater and keeps history of all hands.
+</h2>
+</section>
+
+<section class="cards">
+    <div id="player1Div">
+        <img src="images/card.jpg" name="2"/>
+        <img src="images/card.jpg" name="15"/>
+        <img src="images/card.jpg" name="4"/>
+        <img src="images/card.jpg" name="12"/>
+        <img src="images/card.jpg" name="6"/>
+        <img src="images/card.jpg" name="10"/>
+        <img src="images/card.jpg" name="8"/>
+        <img src="images/card.jpg" name="9"/>
+    </div>
+
+    <div id="result">
+        <span></span>
+        <span>vs</span>
+        <span></span>
+    </div>
+
+    <div id="player2Div">
+        <img src="images/card.jpg" name="10"/>
+        <img src="images/card.jpg" name="14"/>
+        <img src="images/card.jpg" name="9"/>
+        <img src="images/card.jpg" name="7"/>
+        <img src="images/card.jpg" name="11"/>
+        <img src="images/card.jpg" name="5"/>
+        <img src="images/card.jpg" name="13"/>
+        <img src="images/card.jpg" name="3"/>
+    </div>
+
+    <div id="history"></div>
+</section>
+`;
 
 result();
 
-\\$("img\[name='15'\]").trigger("click");
+$("img[name='15']").trigger("click");
 
-let result1 = \\$("\#result span")\[0\].innerHTML;
-let result2 = \\$("\#result span")\[2\].innerHTML;
-let history =\\$("\#history")\[0\].innerHTML;
+let result1 = $("#result span")[0].innerHTML;
+let result2 = $("#result span")[2].innerHTML;
+let history =$("#history")[0].innerHTML;
 
 expect(result1).to.equal("15");
 expect(result2).to.equal("");
 expect(history).to.equal("");
+
 [/input]
 [output]
 yes
@@ -2926,49 +2931,53 @@ yes
 [test]
 [input]
 // clicking 1 cards, empty history
-document.body.innerHTML = \`
-\<section class="description"\>
-\<h2\>Create a functonality which checks all cards, shows which
-one is greater and keeps history of all hands.
-\</h2\>
-\</section\>
-\<section class="cards"\>
-\<div id="player1Div"\>
-\<img src="images/card.jpg" name="2"/\>
-\<img src="images/card.jpg" name="15"/\>
-\<img src="images/card.jpg" name="4"/\>
-\<img src="images/card.jpg" name="12"/\>
-\<img src="images/card.jpg" name="6"/\>
-\<img src="images/card.jpg" name="10"/\>
-\<img src="images/card.jpg" name="8"/\>
-\<img src="images/card.jpg" name="9"/\>
-\</div\>
-\<div id="result"\>
-\<span\>\</span\>
-\<span\>vs\</span\>
-\<span\>\</span\>
-\</div\>
-\<div id="player2Div"\>
-\<img src="images/card.jpg" name="10"/\>
-\<img src="images/card.jpg" name="14"/\>
-\<img src="images/card.jpg" name="9"/\>
-\<img src="images/card.jpg" name="7"/\>
-\<img src="images/card.jpg" name="11"/\>
-\<img src="images/card.jpg" name="5"/\>
-\<img src="images/card.jpg" name="13"/\>
-\<img src="images/card.jpg" name="3"/\>
-\</div\>
-\<div id="history"\>\</div\>
-\</section\>
-\`;
+document.body.innerHTML = `
+<section class="description">
+<h2>Create a functonality which checks all cards, shows which
+    one is greater and keeps history of all hands.
+</h2>
+</section>
+
+<section class="cards">
+    <div id="player1Div">
+        <img src="images/card.jpg" name="2"/>
+        <img src="images/card.jpg" name="15"/>
+        <img src="images/card.jpg" name="4"/>
+        <img src="images/card.jpg" name="12"/>
+        <img src="images/card.jpg" name="6"/>
+        <img src="images/card.jpg" name="10"/>
+        <img src="images/card.jpg" name="8"/>
+        <img src="images/card.jpg" name="9"/>
+    </div>
+
+    <div id="result">
+        <span></span>
+        <span>vs</span>
+        <span></span>
+    </div>
+
+    <div id="player2Div">
+        <img src="images/card.jpg" name="10"/>
+        <img src="images/card.jpg" name="14"/>
+        <img src="images/card.jpg" name="9"/>
+        <img src="images/card.jpg" name="7"/>
+        <img src="images/card.jpg" name="11"/>
+        <img src="images/card.jpg" name="5"/>
+        <img src="images/card.jpg" name="13"/>
+        <img src="images/card.jpg" name="3"/>
+    </div>
+
+    <div id="history"></div>
+</section>
+`;
 
 result();
 
-\\$("img\[name='14'\]").trigger("click");
+$("img[name='14']").trigger("click");
 
-let result1 = \\$("\#result span")\[0\].innerHTML;
-let result2 = \\$("\#result span")\[2\].innerHTML;
-let history =\\$("\#history")\[0\].innerHTML;
+let result1 = $("#result span")[0].innerHTML;
+let result2 = $("#result span")[2].innerHTML;
+let history =$("#history")[0].innerHTML;
 
 expect(result1).to.equal("");
 expect(result2).to.equal("14");
