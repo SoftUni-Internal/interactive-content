@@ -11,7 +11,7 @@ We use these patterns when we must decide on how to create an object of a class.
 
 They contain two main ideas:
 
-- **Encapsulating** knowledge about which classes the system uses.
+- **Encapsulating** knowledge about which classes the system uses
 
 - **Hiding** how instances of these classes are created.
 
