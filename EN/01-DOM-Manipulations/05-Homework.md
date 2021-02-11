@@ -1393,7 +1393,7 @@ yes
 
 [slide hideTitle]
 
-# Problem: Encode And Decode Messages
+# Problem: Encode and Decode Messages
 [code-task title="Encode And Decode Messages" taskId="Js-Advanced-Dom-Manipulations-Encode-And-Decode-Messages" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```

@@ -180,7 +180,7 @@ element.addEventListener("mouseout", myThirdFunction);
 
 [slide hideTitle]
 
-# SetInterval() And ClearInterval()
+# SetInterval() and ClearInterval()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/02.JS-Advanced-DOM-Manipulations/EN/JS-Advanced-DOM-Manipulations-27-setinterval-clearinterval-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
