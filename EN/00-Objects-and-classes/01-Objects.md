@@ -382,6 +382,11 @@ function city(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+(input, code) => {return code(input)}
+```
+[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
