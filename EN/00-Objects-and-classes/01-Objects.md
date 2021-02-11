@@ -565,3 +565,46 @@ postCode -> 484
 [/code-task]
 
 [/slide]
+
+
+[slide]
+# Problem: Person Greeting (new JS strategy)
+
+[code-task title="Person Greeting" taskId="js-fundamentals-2-person-greeting" executionType="tests-execution" executionStrategy="javascript-function" requiresInput]
+[code-editor language=javascript]
+
+
+```
+function greeting(firstName, lastName, age) {
+  console.log(`Hello, {firstName} {lastName}. You are {age} years old.`);
+}
+```
+
+[/code-editor]
+[task-description]
+# Description
+
+Students are given to **write a function** with certain **name** and **input parameters**, e.g.:
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+| greeting('Peter', 'Pan', '20') | Hello, Peter Pan. You are 20 years old. |
+| --- | --- |
+
+[/task-description]
+[tests]
+[test]
+[input]
+greeting('Peter', 'Pan', '20')
+[/input]
+[output]
+Hello, Peter Pan. You are you 20 years old.
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
