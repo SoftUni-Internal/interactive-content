@@ -3,7 +3,10 @@
 [slide]
 # What Are Objects ?
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[vimeo-video]
+[stream language="EN" videoId="489795277/32e690031f" default /]
+[stream language="RO" videoId="489795277/32e690031f"  /]
+[/video-vimeo]
 
 Objects in JavaScript, as in **many other programming languages**, can be compared to objects in real life.
 
@@ -31,7 +34,10 @@ We can access the property value with the name of the class `.` property name.
 [slide]
 # Object Definition 
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-5-Object-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[vimeo-video]
+[stream language="EN" videoId="489795273/ab8664a147" default /]
+[stream language="RO" videoId="489795273/ab8664a147"  /]
+[/video-vimeo]
 
 We can define an empty object and add the properties later:
 
@@ -54,7 +60,10 @@ person.hairColor = 'black';
 [slide]
 # Object Methods
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-6-Methods-of-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[vimeo-video]
+[stream language="EN" videoId="489795322/e2b71c887b" default /]
+[stream language="RO" videoId="489795322/e2b71c887b"  /]
+[/video-vimeo]
 
 Functions within a JavaScript object are called methods.
 
@@ -91,7 +100,10 @@ person.sayHello = () => console.log('Hi, guys');
 [slide]
 # Built-in Methods
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-7-Built-in-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[vimeo-video]
+[stream language="EN" videoId="489795341/8532941804" default /]
+[stream language="RO" videoId="489795341/8532941804"  /]
+[/video-vimeo]
 
 Methods:
 
@@ -117,7 +129,10 @@ console.log(Object.values(cat));
 [slide]
 # Iterate through Keys
 
-[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[vimeo-video]
+[stream language="EN" videoId="489795350/598a1cef8e" default /]
+[stream language="RO" videoId="489795350/598a1cef8e"  /]
+[/video-vimeo]
 
 We can iterate through keys of an object, by using a `for-in` loop to iterate over the object's properties by key:
 
@@ -140,7 +155,7 @@ for (let key in person) {
 [stream language="RO" videoId="489795432/3e85c0a88d"  /]
 [/video-vimeo]
 
-[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function personInfo(input){
@@ -148,24 +163,19 @@ function personInfo(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => {
-    const {firstName, lastName, age} = c(i[0], i[1], Number(i[2]));
-    return [`firstName: ${firstName}`, `lastName: ${lastName}`, `age: ${age}`].join('\n');
-}
-```
-[/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
+Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
+`{key}: {value}`
 
-The input comes as 3 separate elements in the following order: firstName, lastName, age.
+The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|'Peter','Pan','20'| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+|`['Peter','Pan','20']`| firstName: Peter |
+||lastName: Pan|
+||age: 20|
 
 [/task-description]
 [tests]
@@ -236,6 +246,49 @@ age: 22
 [/slide]
 
 [slide]
+# Problem: Person Greeting (new JS strategy)
+
+
+[code-task title="Person Greeting" taskId="js-fundamentals-2-person-greeting" executionType="tests-execution" executionStrategy="javascript-function" requiresInput]
+[code-editor language=javascript]
+
+
+```
+function greeting(firstName, lastName, age) {
+  console.log(`Hello, {firstName} {lastName}. You are {age} years old.`);
+}
+```
+
+[/code-editor]
+[task-description]
+# Description
+
+Students are given to **write a function** with certain **name** and **input parameters**, e.g.:
+
+
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+| greeting('Peter', 'Pan', '20') | Hello, Peter Pan. You are 20 years old. |
+| --- | --- |
+
+[/task-description]
+[tests]
+[test]
+[input]
+greeting('Peter', 'Pan', '20')
+[/input]
+[output]
+Hello, Peter Pan. You are you 20 years old.
+[/output]
+[/test]
+[/tests]
+[code-io /]
+[/code-task]
+
+[/slide]
+
+[slide]
 # Solution: Person Info
 
 [vimeo-video]
@@ -249,28 +302,31 @@ age: 22
 //Different vido code
 
 function personInfo(input){
-  
+  let person = {
+        firstName: input[0],
+        lastName: input[1],
+        age: input[2]
+    }
+
+    for (let [key, value] of Object.entries(person)){
+        console.log(key + ": " + value);
+    }
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => {
-    const {firstName, lastName, age} = c(i[0], i[1], Number(i[2]));
-    return [`firstName: ${firstName}`, `lastName: ${lastName}`, `age: ${age}`].join('\n');
-}
-```
-[/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
+Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
+`{key}: {value}`
 
-The input comes as 3 separate elements in the following order: firstName, lastName, age.
+The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|'Peter','Pan','20'| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+|`['Peter','Pan','20']`| firstName: Peter |
+||lastName: Pan|
+||age: 20|
 
 [/task-description]
 [tests]
@@ -348,7 +404,7 @@ age: 22
 [stream language="RO" videoId="489795448/09ea78efff"  /]
 [/video-vimeo]
 
-[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function city(input){
@@ -356,11 +412,6 @@ function city(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
-```
-[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -387,7 +438,7 @@ See the examples below.
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 Sofia
 492
@@ -452,18 +503,23 @@ postCode -> 484
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-//Different video code
+//Different vido code
 
 function city(input){
+ let cityObject = {
+        name: input[0],
+        area: input[1],
+        population: input[2],
+        country: input[3],
+        postCode: input[4]
+    }
 
+    for (let key in cityObject){
+        console.log(`${key} -> ${cityObject[key]}`);
+    }
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
-```
-[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -490,7 +546,7 @@ See the examples below.
 
 [/task-description]
 [tests]
-[test open]
+[test]
 [input]
 Sofia
 492
