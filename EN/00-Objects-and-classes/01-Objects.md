@@ -158,14 +158,14 @@ function personInfo(input){
 [/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an array of 3 elements. Sets them to an object and return the created object."`
+"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
 
 The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Peter','Pan','20']`| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+|'Peter','Pan','20'| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
 
 [/task-description]
 [tests]
@@ -263,14 +263,14 @@ function personInfo(input){
 [/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an array of 3 elements. Sets them to an object and return the created object."`
+"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
 
 The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Peter','Pan','20']`| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
+|'Peter','Pan','20'| \{firstName: 'Peter', lastName: 'Pan', age: '20'\} |
 
 [/task-description]
 [tests]
