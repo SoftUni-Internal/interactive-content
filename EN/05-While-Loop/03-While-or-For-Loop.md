@@ -1,7 +1,7 @@
 [slide hideTitle]
 # While or For Loop?
 
-Java-While-Loops-12-13-While-or-for
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `while` and `for` loops both **repeat** a block of **code**.
 

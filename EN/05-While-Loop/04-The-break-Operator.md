@@ -1,9 +1,7 @@
 [slide hideTitle]
 # The break Statement
 
-Java-While-Loops-18-19-Break-operator + 
-
-Java-While-Loops-20-Example-break-operator
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-18-19-20-Break-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `break` statement stops the execution of a loop at the time it is called and continues from the first line after the end of the loop.
 

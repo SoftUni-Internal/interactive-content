@@ -1,9 +1,7 @@
 [slide hideTitle]
 # While Loop
 
-Java-While-Loops-5-6-While-loops + 
-
-Java-While-Loops-7-While-Loops-Example
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/EN/Java-While-Loops-5-6-7-While-Loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
