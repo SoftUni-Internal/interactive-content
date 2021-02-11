@@ -141,7 +141,7 @@ Weekend
 [slide hideTitle]
 # Problemă cu soluția: Biggest Number of Three
 
-[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-Biggest-Number-of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
