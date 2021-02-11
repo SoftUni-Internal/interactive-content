@@ -311,8 +311,7 @@ Hello, Peter Pan. You are you 20 years old.
 
 [/slide]
 
-[slide]
-=======
+
 [slide hideTitle]
 >>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 # Solution: Person Info
@@ -336,9 +335,9 @@ function personInfo(input){
     for (let [key, value] of Object.entries(person)){
         console.log(key + ": " + value);
     }
-=======
+
   // Write your code here
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
+
 }
 ```
 [/code-editor]
@@ -347,11 +346,9 @@ function personInfo(input){
 <<<<<<< HEAD
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
 `{key}: {value}`
-=======
+
 Write a function that receives an 3 elements. 
 
-Sets them to an object and return the created object.
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 
 The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
@@ -450,11 +447,9 @@ age: 22
 [stream language="RO" videoId="489795448/09ea78efff"  /]
 [/video-vimeo]
 
-<<<<<<< HEAD
+
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-=======
 [code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 [code-editor language=javascript]
 ```
 function city(input){
@@ -462,8 +457,7 @@ function city(input){
 }
 ```
 [/code-editor]
-<<<<<<< HEAD
-=======
+
 [code-adapter]
 ```
 (i, c) => {
@@ -472,7 +466,6 @@ function city(input){
     const {name, area, population, county, postCode} = result;
 ```
 [/code-adapter]
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -564,8 +557,6 @@ postCode -> 484
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-<<<<<<< HEAD
-//Different vido code
 
 function city(input){
  let cityObject = {
@@ -579,10 +570,8 @@ function city(input){
     for (let key in cityObject){
         console.log(`${key} -> ${cityObject[key]}`);
     }
-=======
 function city(input){
   // Write your code here
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 }
 ```
 [/code-editor]
