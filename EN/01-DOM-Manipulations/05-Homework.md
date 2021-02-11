@@ -1839,51 +1839,51 @@ yes
 [input]
 // Search for .bg - Second and Third table row should be selected
 document.body.innerHTML = `
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+ <table class="container">
+        <thead>
+            <tr>
+                <th>Student name</th>
+                <th>Student email</th>
+                <th>Student course</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John Dan</td>
+                <td>john@john-dan.com</td>
+                <td>JS-CORE</td>
+            </tr>
+            <tr>
+                <td>Max Peterson</td>
+                <td>max@softuni.bg</td>
+                <td>JS-WEB</td>
+            </tr>
+            <tr>
+                <td>Philip Anderson</td>
+                <td>philip@softuni.bg</td>
+                <td>FRONT-END</td>
+            </tr>
+            <tr>
+                <td>Sam Lima</td>
+                <td>sam@gmail.com</td>
+                <td>TECH-JS</td>
+            </tr>
+            <tr>
+                <td>Eva Longoria</td>
+                <td>eva@gmail.com</td>
+                <td>All possible courses</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
 `;
 
 result();
@@ -1892,18 +1892,18 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different className');
-\})
+})
 
 input.value = ".bg";
 button.click();
 
-assert.equal(rows\[0\].className, '', 'First row has different class name');
-assert.equal(rows\[1\].className, 'select', 'Second row has different class name');
-assert.equal(rows\[2\].className, 'select', 'Third row has different class name');
-assert.equal(rows\[3\].className, '', 'Fourth row has different class name');
-assert.equal(rows\[4\].className, '', 'Fifth row has different class name');
+assert.equal(rows[0].className, '', 'First row has different class name');
+assert.equal(rows[1].className, 'select', 'Second row has different class name');
+assert.equal(rows[2].className, 'select', 'Third row has different class name');
+assert.equal(rows[3].className, '', 'Fourth row has different class name');
+assert.equal(rows[4].className, '', 'Fifth row has different class name');
 [/input]
 [output]
 yes
@@ -1913,51 +1913,51 @@ yes
 [input]
 // Search for com - First, Fourth, Fifth row should be selected
 document.body.innerHTML = `
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+ <table class="container">
+        <thead>
+            <tr>
+                <th>Student name</th>
+                <th>Student email</th>
+                <th>Student course</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John Dan</td>
+                <td>john@john-dan.com</td>
+                <td>JS-CORE</td>
+            </tr>
+            <tr>
+                <td>Max Peterson</td>
+                <td>max@softuni.bg</td>
+                <td>JS-WEB</td>
+            </tr>
+            <tr>
+                <td>Philip Anderson</td>
+                <td>philip@softuni.bg</td>
+                <td>FRONT-END</td>
+            </tr>
+            <tr>
+                <td>Sam Lima</td>
+                <td>sam@gmail.com</td>
+                <td>TECH-JS</td>
+            </tr>
+            <tr>
+                <td>Eva Longoria</td>
+                <td>eva@gmail.com</td>
+                <td>All possible courses</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
 `;
 
 result();
@@ -1966,18 +1966,18 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different className');
-\})
+})
 
 input.value = "com";
 button.click();
 
-assert.equal(rows\[0\].className, 'select', 'First row has different class name');
-assert.equal(rows\[1\].className, '', 'Second row has different class name');
-assert.equal(rows\[2\].className, '', 'Third row has different class name');
-assert.equal(rows\[3\].className, 'select', 'Fourth row has different class name');
-assert.equal(rows\[4\].className, 'select', 'Fifth row has different class name');
+assert.equal(rows[0].className, 'select', 'First row has different class name');
+assert.equal(rows[1].className, '', 'Second row has different class name');
+assert.equal(rows[2].className, '', 'Third row has different class name');
+assert.equal(rows[3].className, 'select', 'Fourth row has different class name');
+assert.equal(rows[4].className, 'select', 'Fifth row has different class name');
 [/input]
 [output]
 yes
@@ -1987,51 +1987,51 @@ yes
 [input]
 // Search for "-" - Every row except the last one should be selected
 document.body.innerHTML = `
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+ <table class="container">
+        <thead>
+            <tr>
+                <th>Student name</th>
+                <th>Student email</th>
+                <th>Student course</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John Dan</td>
+                <td>john@john-dan.com</td>
+                <td>JS-CORE</td>
+            </tr>
+            <tr>
+                <td>Max Peterson</td>
+                <td>max@softuni.bg</td>
+                <td>JS-WEB</td>
+            </tr>
+            <tr>
+                <td>Philip Anderson</td>
+                <td>philip@softuni.bg</td>
+                <td>FRONT-END</td>
+            </tr>
+            <tr>
+                <td>Sam Lima</td>
+                <td>sam@gmail.com</td>
+                <td>TECH-JS</td>
+            </tr>
+            <tr>
+                <td>Eva Longoria</td>
+                <td>eva@gmail.com</td>
+                <td>All possible courses</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
 `;
 
 result();
@@ -2040,18 +2040,18 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different className');
-\})
+})
 
 input.value = "-";
 button.click();
 
-assert.equal(rows\[0\].className, 'select', 'First row has different class name');
-assert.equal(rows\[1\].className, 'select', 'Second row has different class name');
-assert.equal(rows\[2\].className, 'select', 'Third row has different class name');
-assert.equal(rows\[3\].className, 'select', 'Fourth row has different class name');
-assert.equal(rows\[4\].className, '', 'Fifth row has different class name');
+assert.equal(rows[0].className, 'select', 'First row has different class name');
+assert.equal(rows[1].className, 'select', 'Second row has different class name');
+assert.equal(rows[2].className, 'select', 'Third row has different class name');
+assert.equal(rows[3].className, 'select', 'Fourth row has different class name');
+assert.equal(rows[4].className, '', 'Fifth row has different class name');
 [/input]
 [output]
 yes
@@ -2061,51 +2061,51 @@ yes
 [input]
 // Search for @ - Every row should be selected
 document.body.innerHTML = `
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+ <table class="container">
+        <thead>
+            <tr>
+                <th>Student name</th>
+                <th>Student email</th>
+                <th>Student course</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John Dan</td>
+                <td>john@john-dan.com</td>
+                <td>JS-CORE</td>
+            </tr>
+            <tr>
+                <td>Max Peterson</td>
+                <td>max@softuni.bg</td>
+                <td>JS-WEB</td>
+            </tr>
+            <tr>
+                <td>Philip Anderson</td>
+                <td>philip@softuni.bg</td>
+                <td>FRONT-END</td>
+            </tr>
+            <tr>
+                <td>Sam Lima</td>
+                <td>sam@gmail.com</td>
+                <td>TECH-JS</td>
+            </tr>
+            <tr>
+                <td>Eva Longoria</td>
+                <td>eva@gmail.com</td>
+                <td>All possible courses</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
 `;
 
 result();
@@ -2114,16 +2114,16 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different className');
-\})
+})
 
 input.value = "@";
 button.click();
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, 'select', 'Some of the rows has different changed className');
-\})
+})
 [/input]
 [output]
 yes
@@ -2133,51 +2133,51 @@ yes
 [input]
 // Search for no-existing string - No one from the rows should be selected
 document.body.innerHTML = `
- \<table class="container"\>
-        \<thead\>
-            \<tr\>
-                \<th\>Student name\</th\>
-                \<th\>Student email\</th\>
-                \<th\>Student course\</th\>
-            \</tr\>
-        \</thead\>
-        \<tfoot\>
-            \<tr\>
-                \<td colspan="3"\>
-                    \<input type="text" id="searchField" /\>
-                    \<button type="button" id="searchBtn"\>Search\</button\>
-                \</td\>
-            \</tr\>
-        \</tfoot\>
-        \<tbody\>
-            \<tr\>
-                \<td\>John Dan\</td\>
-                \<td\>john@john-dan.com\</td\>
-                \<td\>JS-CORE\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Max Peterson\</td\>
-                \<td\>max@softuni.bg\</td\>
-                \<td\>JS-WEB\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Philip Anderson\</td\>
-                \<td\>philip@softuni.bg\</td\>
-                \<td\>FRONT-END\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Sam Lima\</td\>
-                \<td\>sam@gmail.com\</td\>
-                \<td\>TECH-JS\</td\>
-            \</tr\>
-            \<tr\>
-                \<td\>Eva Longoria\</td\>
-                \<td\>eva@gmail.com\</td\>
-                \<td\>All possible courses\</td\>
-            \</tr\>
-        \</tbody\>
-    \</table\>
-    \<div id="result"\>\</div\>
+ <table class="container">
+        <thead>
+            <tr>
+                <th>Student name</th>
+                <th>Student email</th>
+                <th>Student course</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="searchField" />
+                    <button type="button" id="searchBtn">Search</button>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John Dan</td>
+                <td>john@john-dan.com</td>
+                <td>JS-CORE</td>
+            </tr>
+            <tr>
+                <td>Max Peterson</td>
+                <td>max@softuni.bg</td>
+                <td>JS-WEB</td>
+            </tr>
+            <tr>
+                <td>Philip Anderson</td>
+                <td>philip@softuni.bg</td>
+                <td>FRONT-END</td>
+            </tr>
+            <tr>
+                <td>Sam Lima</td>
+                <td>sam@gmail.com</td>
+                <td>TECH-JS</td>
+            </tr>
+            <tr>
+                <td>Eva Longoria</td>
+                <td>eva@gmail.com</td>
+                <td>All possible courses</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="result"></div>
 `;
 
 result();
@@ -2186,16 +2186,16 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different className');
-\})
+})
 
 input.value = "Pesho";
 button.click();
 
-Array.from(rows).forEach((row) =\> \{
+Array.from(rows).forEach((row) => {
 assert.equal(row.className, '', 'Some of the rows has different changed className');
-\})
+})
 [/input]
 [output]
 yes
