@@ -1,6 +1,8 @@
+# Unit-Testing best practices
+
 [slide hideTitle]
 
-# Unit-Testing best practices
+# Assertions
 
 Here, we will take a look at some good practices in Unit Testing.
 
@@ -99,7 +101,7 @@ Our initialize method will execute before each test.
 
 [slide hideTitle]
 
-# Naming Test Methods:
+# Naming Test Methods
 
 Test naming is very important. 
 
@@ -152,7 +154,11 @@ Make sure that:
 - There are **no magic numbers**
 - There is **no code duplication** (Do not Repeat Yourself)
 
-## Hints
+[/slide]
+
+[slide hideTitle]
+
+# Solution: Refactor Tests
 
 Extract constants and private fields for `Axe` class
 ```java
@@ -190,5 +196,6 @@ public void weaponAttackLosesDurability(){
 ```
 
 Follow the same logic for other test methods and `TestDummy` class
+
 
 [/slide]

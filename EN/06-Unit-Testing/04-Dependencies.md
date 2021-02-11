@@ -2,11 +2,9 @@
 
 # Dependencies
 
-It is important to understand that not many components live on their own without reliance on other components.
+It is important to understand that not many components live on their own without the reliance on other components.
 
 Instead of creating a components, that are close-coupled to each other we can use **dependency injection** to improve the **separation of concerns**. 
-
-You can read more detailed information about [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 
 Basically, dependency injection is a concept of giving a component all the things it needs from outside.
 
@@ -15,36 +13,67 @@ Basically, dependency injection is a concept of giving a component all the thing
 Lets have a look at this simple code to understand better the concept:
 
 ``` java
-interface AccountManager {  // we use interface
-  Account getAccount();
-}
-public class Bank {
-  private AccountManager accountManager; // this is independent from implementation
-  public Bank(AccountManager accountManager) // here, we inject dependencies 
-  {
-    this.accountManager = accountManager;
-  }
+public class Bank {​
+  private AccountManager accountManager;​ // We have a concrete implementation
+                                         // which couples our classes
+  public Bank() {​
+    this.accountManager = new AccountManager();​  // Bank depends on AccountManager
+  }​
+
+  public AccountInfo getInfo(String id) { … }​
 }
 ```
 
-The goal here is to **fixate** all **moving parts**:
+In this class our `Bank` depends on `AccountManager` and if the dependency brings **bugs** in our test from the outside it will be harder to detect, therefore it is always better to use **Dependency Inversion Principle** in our tests.
 
-``` java
-@Test
-public void testGetInfoById() {
-  // Arrange
-  AccountManager manager = new AccountManager() // Annonymous class 
-  {
-    public Account getAccount(String id) {
-       // fake interface implementation with fixed behavior
-    } 
+[/slide]
+
+[slide hideTitle]
+
+# Dependency Injection
+
+When we use **abstraction** and **dependency injection** the testing of our code becomes easier,
+observe the following graphic and code to understand the concept. 
+
+[image assetsSrc="Unit-Testing-Example(9).png" /]
+
+```java
+interface IAccountManager { ​
+  Account getAccount();​
+}​
+
+public class Bank {​
+  private IAccountManager accountManager;​
+
+  public Bank(IAccountManager accountManager) {​
+    this.accountManager = accountManager;​
   }
-  Bank bank = new Bank(manager);
-  AccountInfo info = bank.getInfo(ID);
+}
+```
+As our class is no longer depended on the `AccountManager` concrete class but on an interface, we can create a fake object, which will ensure us that we will not bring bugs from the outside.
+
+```java
+@Test​
+
+public void testGetInfoById() {​
+  // Arrange​
+  AccountManager manager = new AccountManager() {​  //Anonymous class / Fake Object
+    public Account getAccount(String id) { … } ​    //Fake implementation with fixed behaviour
+  }​
+
+  Bank bank = new Bank(manager);​
+
+  AccountInfo info = bank.getInfo(ID);​
   // Assert…  }
 ```
 
+[/slide]
 
+[slide hideTitle]
+
+# Isolating Test Behaviour
+
+The goal is to **fixate** all **moving parts**, making our code more stable and decoupled, increasing the efficency of our tests. 
 
 [/slide]
 
@@ -81,44 +110,6 @@ public class FakeRepository implements AccountRepository {
        }
 }
 ```
-
-On the other hand **Mocking objects** simulate behavior of real objects.
-
-An example could be the function that calls e-mail sending service.
-
-It is pointless and ineffective to send e-mail everytime we run a test.
-
-The easiest think we can do is to verify that our **sending** service was called.
-
-Similar case is presented in the following example:
-
-``` java
-@Test
-public void testAlarmClockShouldRingInTheMorning() {
-  Time time = new Time();
-  AlarmClock clock = new AlarmClock(time);
-  if (time.isMorning()) // The test will pass only in the morning.
-  {
-    Assert.assertTrue(clock.isRinging());
-  }
-}
-```
-
-**Mockito** is a framework for mocking objects. [Mockito web site](https://site.mockito.org/)
-
-We can obtain our **Mockito** dependency from here: 
-
-Copy this in to pom.xml file:
-
-```
-<dependency>
-    <groupId>org.mockito</groupId>
-    <artifactId>mockito-core</artifactId>
-    <version>3.0.0</version>
-    <scope>test</scope>
-</dependency>
-```
-
 
 [/slide]
 
@@ -217,6 +208,56 @@ public void attackGainsExperienceIfTargetIsDead(){
   Assert.assertEquals("Wrong experience", TARGET_XP, hero.getExperience());
 }
 ```
+[/slide]
+
+
+[slide hideTitle]
+
+# Mocking
+
+On the other hand **Mocking objects** simulate behavior of real objects.
+
+An example could be the function that calls e-mail sending service.
+
+It is pointless and ineffective to send e-mail everytime we run a test.
+
+The easiest think we can do is to verify that our **sending** service was called.
+
+Similar case is presented in the following example:
+
+``` java
+@Test
+public void testAlarmClockShouldRingInTheMorning() {
+  Time time = new Time();
+  AlarmClock clock = new AlarmClock(time);
+  if (time.isMorning()) // The test will pass only in the morning.
+  {
+    Assert.assertTrue(clock.isRinging());
+  }
+}
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Mockito
+
+**Mockito** is a framework for mocking objects. [Mockito web site](https://site.mockito.org/)
+
+We can obtain our **Mockito** dependency from here: 
+
+Copy this in to pom.xml file:
+
+```
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>3.0.0</version>
+    <scope>test</scope>
+</dependency>
+```
+
 [/slide]
 
 [slide hideTitle]

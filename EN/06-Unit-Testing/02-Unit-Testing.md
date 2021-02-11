@@ -81,7 +81,13 @@ After creating a Maven project, we must copy and paste this code in our pom.xml 
 </project>
 ```
 
-Next, lets create a new **package** for our tests.
+[/slide]
+
+[slide hideTitle]
+
+# JUnit - Writing Tests
+
+Lets create a new **package** for our tests.
 
 Than we must create our first class for test methods. (e.g **CalculatorTests**)
 
@@ -127,6 +133,10 @@ Lets take a look at this simple example:
     }
 ```
 
+[/slide]
+
+[slide hideTitle]
+
 In some method we may need to throw an exception for (example: invalid input) in our code, we can test this behaviour like:
 
 ``` java
@@ -136,6 +146,7 @@ public void multiplyingWordsShouldThrow() {
   calculator.multiply(a, b);
 }
 ```
+
 
 
 [/slide]
