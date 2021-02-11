@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Nested Conditions
 
-interactive-programming-basics-with-java-conditional-statements-advanced-11-nested-conditional-statements-2
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/java-basics-conditional-statements-advanced-9-10-nested-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 

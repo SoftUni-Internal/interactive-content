@@ -2,7 +2,7 @@
 [slide hideTitle]
 # The Switch-Case Statement
 
-interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The switch-case condition works as a sequence of **if-else** blocks. 
 
@@ -59,9 +59,7 @@ switch (selector) {
 [slide hideTitle]
 # Example: "Yes" or "No"
 
-interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example + 
-
-interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's write a program that prints **"Yes" or "No"** (in English) depending on the **given command** (Y, N) or **"Invalid response"** if an invalid input is given.
 
@@ -85,7 +83,7 @@ switch (choice) {
 [slide hideTitle]
 # Multiple Labels
 
-interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In **Java** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 

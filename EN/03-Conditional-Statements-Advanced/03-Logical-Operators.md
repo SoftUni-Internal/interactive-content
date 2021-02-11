@@ -1,7 +1,7 @@
 [slide hideTitle]
 # More Complex Conditions
 
-interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-16-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
@@ -33,7 +33,7 @@ We shall explain the logical **AND** (`&&`), the logical **OR** (`||`), and the 
 [slide hideTitle]
 # Logical AND
 
-interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we saw, in some tasks we have to make **many checks at once**. 
 
@@ -247,7 +247,7 @@ Write a program that applies bonus to given points
 [slide hideTitle]
 # Logical OR Operator
 
-interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The logical **OR** (operator `||`) means that **at least one** among a few conditions is fulfilled. 
 
@@ -423,7 +423,7 @@ unknown
 [slide hideTitle]
 # Logical NOT Operator
 
-interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Logical negation (operator **!**) means a given condition is **not fulfilled**.
 
@@ -451,7 +451,7 @@ if (!inRange) {
 [slide]
 # The Parenthesis  Operator
 
-interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-23-logical-not-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Like the rest of the operators in programming, the operators `&&` and `||` have a priority, as in the case `&&` is with higher priority than `||`. 
 
