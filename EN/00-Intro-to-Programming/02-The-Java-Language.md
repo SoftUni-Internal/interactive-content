@@ -1,9 +1,8 @@
 [slide hideTitle]
 
 # Programming Languages
-Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
 
-0:00 - 1:20
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-10-11-Programming Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A programming language is an artificial language (syntax for expression), meant for giving commands that we want the computer to **read**, **process** and **execute**.
 
@@ -29,9 +28,7 @@ It executes the commands in the program **one after another**, as it understands
 [slide hideTitle]
 # The Java Language
 
-Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
-
-1:21 - 2:28
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-12-The-Java-Language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Java** is modern, general purpose programming language.
 
@@ -49,9 +46,7 @@ Combines **procedural**, **object-oriented** and **functional programming** with
 [slide hideTitle]
 # Java Compilation and Execution
 
-Java-basics-introduction-to-programming-10-13-java-compilation-and-execution
-
-2:29 - 3:38
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-13-Java-compilation-and-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we have already mentioned, a program is **a sequence of commands**, otherwise said, it describes a sequence of calculations, evaluations, iterations and all kinds of similar operations, which aim to obtain certain result.
 
@@ -69,7 +64,7 @@ With **scripts and interpreted languages**, like JavaScript, Python and PHP, the
 
 # JDK and JRE
 
-Java-basics-introduction-to-programming-14-15-JDK-JRE
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-14-15-JDK-JRE-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## JDK – Java Development Toolkit
 

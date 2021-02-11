@@ -1,9 +1,7 @@
 [slide hideTitle]
 # Integrated Development Environments (IDE)
 
-Java-basics-introduction-to-programming-16-19-IDEs
-
-0:00 - 1:35
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-16-18-IDE-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In order to program we need an **Integrated Development Environment** (IDE). 
 
@@ -31,9 +29,7 @@ This an example how a development IDE may look (IntelliJ IDEA IDE for Java):
 [slide hideTitle]
 # Installing IntelliJ IDEA
 
-Java-basics-introduction-to-programming-21-25-InteliJ-IDEA
-
-0:00 - 0:53
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-21-24-Installing-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We begin with the installation of the integrated environment **IntelliJ IDEA** (Community, version 2019.2.1, latest as of August 2019). 
 
@@ -82,9 +78,7 @@ That's all. You are ready to work with IntelliJ IDEA.
 [slide hideTitle]
 # Project Solutions and Projects in IntelliJ IDEA
 
-Java-basics-introduction-to-programming-21-25-InteliJ-IDEA
-
-0:54 - 1:12
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-25-Project-Solutions-and-Projects-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Before we start working with IntelliJ IDEA, it is necessary to get familiar with the concepts of a **IntelliJ IDEA Project** and a **IntelliJ IDEA Modules**, which are an inevitable part of it.
 
@@ -116,9 +110,7 @@ For **smaller projects** IntelliJ Projects and IntelliJ Modules are **complicati
 [slide hideTitle]
 # Development Environments: Desktop and Online
 
-Java-basics-introduction-to-programming-16-19-IDEs
-
-1:36 - 2:14
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-19-Development-Environments-Desktop-and-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Install JetBrains IntelliJ IDEA Community
 

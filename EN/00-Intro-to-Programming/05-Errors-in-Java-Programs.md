@@ -1,7 +1,8 @@
 [slide hideTitle]
 # Typical Errors and Mistakes in Java Programing
 
-Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 IntelliJ has a way to show us most of the basics errors we can make.
 
@@ -30,7 +31,7 @@ Confusing the assignment (=) and equality (==, ===) operators.
 [slide hideTitle]
 # Example: Typical Errors and Mistakes in Java Programing
 
-Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java-Demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-33-35-Typical-program-errors-and-mistakes-in-Java-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 

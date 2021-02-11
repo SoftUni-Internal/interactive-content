@@ -1,11 +1,7 @@
 [slide hideTitle]
 # What is Coding
 
-Video-Java-basics-introduction-to-programming-3-4-What-is-coding
-
-Video-Java-basics-introduction-to-programming-3-4-What-is-coding-Demo-1 +
-
-Video-Java-basics-introduction-to-programming-3-4-What-is-coding-Demo-2 +
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
@@ -24,13 +20,7 @@ System.out.println("I am coding");
 
 # Example: Simple Commands
 
-Java-basics-introduction-to-programming-5-Commands-in-Java-examples +
-
-Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-1 + 
-
-Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-2 + 
-
-Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-3
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-5-Commands-in-Java-and-demo-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]
@@ -38,9 +28,7 @@ Java-basics-introduction-to-programming-5-Commands-in-Java-Demo-3
 [slide hideTitle]
 # Computer Programs
 
-Java-basics-introduction-to-programming-7-Computer-program-example +
-
-Java-basics-introduction-to-programming-7-Computer-program-example-demo-1 + 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-7-compute-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Computer programs represent **a sequence of commands** that are written in certain **programming language**, like C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
 
@@ -79,16 +67,14 @@ Therefore, we are going to get familiar with the syntax and the semantics of the
 
 # Example: Complete Computer Program
 
-Java-basics-introduction-to-programming-8-complete-computer-program + 
-
-Java-basics-introduction-to-programming-8-complete-computer-program-Demo-1
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-8-complete-computer-program-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Algorithms
 
-Java-basics-introduction-to-programming-6-programming-and-algorithms
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-6-programming-and-algorithms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Computer programs usually execute some algorithm. 
 
@@ -110,9 +96,7 @@ For convenience when creating programs, for writing programming code, for execut
 [slide hideTitle]
 # Example: Console-Based Java Program
 
-Java-basics-introduction-to-programming-9-console-based-java-program-example + 
-
-Java-basics-introduction-to-programming-9-console-based-java-program-example-demo-1
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's look at a simple program that reads from the user some amount of money in U.S. Dollars (USD) - an integer, converts it into Euro (EUR) by dividing it by the Euro's rate and prints the obtained result. 
 

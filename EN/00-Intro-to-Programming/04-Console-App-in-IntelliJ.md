@@ -1,9 +1,7 @@
 [slide hideTitle]
 # Console App in IntelliJ IDEA
 
-Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
-
-0:00 - 1:12
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-26-27-28-Console-app-in-IntelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We already have IntelliJ IDEA and we can start it.
 
@@ -28,9 +26,7 @@ Click [New] and locate your JDK installation:
 [slide hideTitle]
 # Writing the Program Code
 
-Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
-
-1:13 - 2:05
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-29-writing-programming-code-in-intelliJ-IDEA-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The commands of the program are written in `main(String[] args)`, between the opening and the closing parentheses `{ }`.
 
@@ -63,9 +59,7 @@ More technically explained, `out` is a static member in the `System` class, bein
 [slide hideTitle]
 # Starting the Program
 
-Java-basics-introduction-to-programming-26-30-console-app-in-inteliJ-IDEA
-
-2:06 - 2:46
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-30-Starting-the-program-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To start the program, press `[Ctrl + Shift + F10]`. If there aren't any errors, the program will be executed. 
 
