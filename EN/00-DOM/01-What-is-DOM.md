@@ -56,8 +56,6 @@ It defines:
 
 Here is an example of what the HTML DOM looks like:
 
-[image assetsSrc="Js-advanced-DOM-1.png" /]
+[image assetsSrc="Js-advanced-DOM-24.png" /]
 
-[image assetsSrc="Js-advanced-DOM-100.png" /]
-[image assetsSrc="Js-advanced-DOM-112.png" /]
 [/slide]
