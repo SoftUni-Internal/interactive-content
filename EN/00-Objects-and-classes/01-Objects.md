@@ -1,6 +1,6 @@
 # Object Introduction
 
-[slide]
+[slide hideTitle]
 # What Are Objects ?
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -28,7 +28,7 @@ We can access the property value with the name of the class `.` property name.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Object Definition 
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-5-Object-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -51,7 +51,7 @@ person.hairColor = 'black';
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Object Methods
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-6-Methods-of-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -88,7 +88,7 @@ person.sayHello = () => console.log('Hi, guys');
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Built-in Methods
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-7-Built-in-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -114,7 +114,7 @@ console.log(Object.values(cat));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Iterate through Keys
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -132,7 +132,7 @@ for (let key in person) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Person Info
 
 [vimeo-video]
@@ -140,7 +140,7 @@ for (let key in person) {
 [stream language="RO" videoId="489795432/3e85c0a88d"  /]
 [/video-vimeo]
 
-[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function personInfo(input){
@@ -158,7 +158,9 @@ function personInfo(input){
 [/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
+Write a function that receives an 3 elements. 
+
+Sets them to an object and return the created object.
 
 The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
@@ -169,6 +171,18 @@ The input comes as 3 separate elements in the following order: firstName, lastNa
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Peter
+Pan
+20
+[/input]
+[output]
+firstName: Peter
+lastName: Pan
+age: 20
+[/output]
+[/test]
 [test]
 [input]
 Johny
@@ -235,7 +249,7 @@ age: 22
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: Person Info
 
 [vimeo-video]
@@ -246,10 +260,8 @@ age: 22
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-//Different vido code
-
 function personInfo(input){
-  
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -263,7 +275,9 @@ function personInfo(input){
 [/code-adapter]
 [task-description]
 # Description
-"Write a function that receives an 3 elements. Sets them to an object and return the created object."`
+Write a function that receives an 3 elements. 
+
+Sets them to an object and return the created object.
 
 The input comes as 3 separate elements in the following order: firstName, lastName, age.
 
@@ -274,6 +288,18 @@ The input comes as 3 separate elements in the following order: firstName, lastNa
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Peter
+Pan
+20
+[/input]
+[output]
+firstName: Peter
+lastName: Pan
+age: 20
+[/output]
+[/test]
 [test]
 [input]
 Johny
@@ -340,7 +366,7 @@ age: 22
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: City
 
 [vimeo-video]
@@ -389,18 +415,18 @@ See the examples below.
 [tests]
 [test open]
 [input]
-Sofia
-492
-1238438
-Bulgaria
-1000
+Bucharest
+228
+1.83m
+Romania
+010082
 [/input]
 [output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
+name -> Bucharest
+area -> 228
+population -> 1.83m
+country -> Romania
+postCode -> 010082
 [/output]
 [/test]
 [test]
@@ -441,7 +467,7 @@ postCode -> 484
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: City
 
 [vimeo-video]
@@ -492,18 +518,18 @@ See the examples below.
 [tests]
 [test open]
 [input]
-Sofia
-492
-1238438
-Bulgaria
-1000
+Bucharest
+228
+1.83m
+Romania
+010082
 [/input]
 [output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
+name -> Bucharest
+area -> 228
+population -> 1.83m
+country -> Romania
+postCode -> 010082
 [/output]
 [/test]
 [test]
