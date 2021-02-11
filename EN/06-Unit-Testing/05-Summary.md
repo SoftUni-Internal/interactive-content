@@ -43,7 +43,7 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 - Looses coupling and improves design by using dependency injection
 - Difference between fake implementation and mocking objects
 
-# In the next lesson, we will learn:
+## In the next lesson you will learn:
 
 - The concept of Test Driven Development
 

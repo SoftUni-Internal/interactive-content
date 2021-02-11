@@ -238,5 +238,4 @@ With this builder pattern, we have control over the steps of the **construction 
 
 We can create a different representation with the same construction process.
 
-
 [/slide]

@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Design Patterns
 
@@ -6,7 +6,7 @@ In software engineering design patterns represent **general** and **reusable sol
 
 It is important to understand, that design patterns **by themselves are not finished and ready for implementation templates**.
 
-They are more like a **description of templates** for how to solve problems that can be used in many situations.
+They are more like a **description of templates** for how to solve  problems that can be used in many situations.
 
 Why do we use **design patterns**?
 
@@ -30,7 +30,7 @@ Most common problems that design pattern solves are:
 
 Let's see the Elements of our design patterns:
 
-- Pattern name that increases the **vocabulary** of designers
+- Pattern name that increases the **vocabulary** of developers
 
 - Problem - Intent, context, and when to apply
 
@@ -42,15 +42,13 @@ Let's see the Elements of our design patterns:
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Benefits and Drawbacks
 
 ## Benefits
 
-Now, we will talk a little bit about the benefits and drawbacks of using design patterns.
-
-Let's start first with the benefits:
+Let's start with the benefits design patterns deliver:
 
 Design patterns bring standardization to your projects. It also ensures, that your code follows good programming principles like **coupling** and **cohesion**.
 
@@ -78,8 +76,6 @@ Design patterns should be used only if they are well understood by the developer
 
 Often they are used improperly without a realistic understanding of how our software **is going to change in the future**.
 
-Now, let's continue to the next important information in our lesson: **Design Pattern Types**
-
-
+Let's continue to the next important information in our lesson: **Design Pattern Types**
 
 [/slide]

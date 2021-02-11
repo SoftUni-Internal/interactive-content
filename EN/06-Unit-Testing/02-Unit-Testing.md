@@ -1,3 +1,5 @@
+# Unit-Testing
+
 [slide hideTitle]
 
 # What is Unit-Testing?
@@ -137,12 +139,17 @@ Lets take a look at this simple example:
 
 [slide hideTitle]
 
+# Exceptions
+
 In some method we may need to throw an exception for (example: invalid input) in our code, we can test this behaviour like:
 
 ``` java
-@Test(expected = IllegalArgumentException.class) 
+@Test(expected = IllegalArgumentException.class) //Assert
 public void multiplyingWordsShouldThrow() {
+  //Arrange
   Calculator calculator = new Calculator();
+  
+  //Act
   calculator.multiply(a, b);
 }
 ```
@@ -158,7 +165,7 @@ public void multiplyingWordsShouldThrow() {
 ## Description
 Maven is build automation tool that takes care of dependencies for your project. 
 
-Before you can make one, make sure that you enable the plugin in IntelliJ **\[File \-\> Settings \-\> Plugins \-\> Maven Integration\]**
+Before you can make one, make sure that you enable the plugin in IntelliJ \[File \-\> Settings \-\> Plugins \-\> Maven Integration\]
 
 [image assetsSrc="Unit-Testing-Example(2).png" /]
 

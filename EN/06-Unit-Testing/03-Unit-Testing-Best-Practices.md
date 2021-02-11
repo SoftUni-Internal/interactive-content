@@ -4,11 +4,9 @@
 
 # Assertions
 
-Here, we will take a look at some good practices in Unit Testing.
+We will take a look at some good practices in Unit Testing.
 
 `assertEquals(expected, actual)` method gives us better description details when we are working with values than `assertTrue()` method.
-
-For example:
 
 As an example we can observe the following code when we use `assertTrue()` and the output of it:
 ``` java
@@ -42,7 +40,7 @@ Actual :35
 
 # Magic Numbers
 
-Another good practice is avoide using "**magic numbers**".
+Another good practice is to avoid using "**magic numbers**".
 
 We must use "**constants**" instead.
 
@@ -59,7 +57,7 @@ public void depositShouldAddMoney() {
 }
 ```
 
-We observe taht its better to declare our `int` variable outside of the test and use it as a constant.
+We observe that it is better to declare our `int` variable outside of the test and use it as a constant.
 
 This is better because if we need to change our `amount` variable, we can change it only **outside** of the test and do not worry about the logic inside.
 

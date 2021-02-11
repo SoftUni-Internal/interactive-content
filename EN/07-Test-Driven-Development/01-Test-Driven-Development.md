@@ -6,7 +6,7 @@ When we are creating complex software one of the things we should consider is th
 
 Two of these development approaches are: 
 
-- The Code First Approach (write code and test code)
+- The Code First Approach (write code then test code)
 - Test First Approach (Test-Driven-Development)
 
 Both of these approaches are good, but they are used in different cases.
@@ -15,7 +15,7 @@ So far we have always used the **Code-Driven-Approach**, meaning we always wrote
 
 What fails us, in this case, is ourselves.
 
-When we write tests for a code that we wrote, we may unconsciously write them so they pass, ignoring some edge cases which may break our code. 
+When we write tests for a code that we wrote, we may unconsciously write them so they pass, ignoring some edge cases which may brake our code. 
 
 That is where the **Test-Driven-Approach** comes in place.
 

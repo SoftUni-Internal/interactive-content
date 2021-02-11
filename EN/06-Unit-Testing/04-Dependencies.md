@@ -98,6 +98,7 @@ To illustrate this, lets see an example it:
 ``` java
 public class FakeRepository implements AccountRepository {
        
+       //Our fake database
        Map<User, Account> accounts = new HashMap<>();
        
        public FakeRepository() {
