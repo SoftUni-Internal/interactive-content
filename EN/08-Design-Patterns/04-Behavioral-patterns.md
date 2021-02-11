@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Behavioral Patterns
 
@@ -54,7 +54,7 @@ public class Text
 }
 ```
 
-Now, let's create our classes which implement our Command interface that we've created.
+Further let's create our classes which implement our Command interface that we have created.
 
 ``` java
 public class OpenText implements Command
@@ -119,7 +119,7 @@ public class Options
 }
 ```
 
-And now, let's test our code using our `main` method.
+Let's test our code using our `main` method.
 
 ``` java
 public class Main
@@ -147,7 +147,7 @@ Text is Closed
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Template Pattern:
 
