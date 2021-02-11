@@ -2,7 +2,9 @@
 
 # Summary
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-28-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you learned:
 
 - **Multi Page Application** reloads the entire page when the user interacts with the app.
 

@@ -4,6 +4,8 @@
 
 # How Routers Work
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-14-15-16-navigation-for-SPA-how-routers-wrok-hash-based-routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Router** loads the right content for a specific location, also called URL.
 
 We should **update** the address bar on **every change** in the content of the page.
@@ -17,6 +19,8 @@ It gives the **user** a better **experience**.
 [slide hideTitle]
 
 # Hash Based Routing
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-17-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We use **hash-based** routing to deep link a section of a page.
 
@@ -52,6 +56,8 @@ After, we set `window.location.href` to the same URL but with a changed hash.
 [slide hideTitle]
 
 # Subscribing for Changes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-18-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can subscribe for changes in the url.
 
@@ -91,6 +97,8 @@ After, we set a **timeout** to 200ms, at which the function to be called.
 
 # Push Based Routing
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-19-Push-based-routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **push-based** routing is a more modern way to handle navigation.
 
 It allows us to show real **server-side data**. 
@@ -106,6 +114,8 @@ This routing allows us to use the **hash-based** routing as intended.
 [slide hideTitle]
 
 # History API
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-20-History-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The History API provides access to the browser **history** object.
 
@@ -124,6 +134,8 @@ They work in combination with the **popstate** event.
 [slide hideTitle]
 
 # The PushState Method
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-21-The-Pushstate-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We will have a look at the `pushState()` method.
 
@@ -154,6 +166,8 @@ The browsers ignores the second parameter, and that is why it is an empty string
 
 # The ReplaceState Method
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-22-The-ReplaceState-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Let us examine `replaceState()`.
 
 **ReplaceState** modifies the current entry.
@@ -178,6 +192,8 @@ After we instantiate the `replaceState()` method, it will modify the current his
 [slide hideTitle]
 
 # The Popstate Event
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-23-The-Popstate-event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **popstate event** listens for changes in the state.
 

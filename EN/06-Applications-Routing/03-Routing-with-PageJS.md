@@ -4,6 +4,8 @@
 
 # Introduction to page.js
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-24-25-26-27-Routing-with-page-js-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Page.js** is a client-side router, which uses **string-to-regexp** conversion.
 
 We need to install it from **npm** with the following command: `npm install page`.

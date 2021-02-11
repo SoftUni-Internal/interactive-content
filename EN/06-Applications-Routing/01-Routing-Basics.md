@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Multi Page Applications
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-3-4-5-Multi-page-applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Multi Page Applications** reload the entire page when a user interacts with the app.
 
 We exchange data when a new page is **requested**.
@@ -36,6 +38,8 @@ Now have a look at the **cons**:
 [slide hideTitle]
 
 # Single Page Application
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-6-7-8-Single-page-applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **SPA** is an abbreviation for **Single-Page Application**.
 
@@ -90,6 +94,8 @@ Let us see the cons:
 [slide hideTitle]
 
 # Multi and Single Page Application Lifecycle
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-10-11-12-13-Multi-SPA-lifecycle-navigation-types-query-parameters-location-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Both **Multi Page Application's** and **Single Page Application** have their lifecycle.
 
