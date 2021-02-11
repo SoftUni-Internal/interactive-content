@@ -1,11 +1,7 @@
 [slide hideTitle]
 # Infinite Loops
 
-interactive-programming-basics-with-java-for-loops-30-31-infinite-loops + 
-
-interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming + 
-
-interactive-programming-basics-with-java-for-loops-30-31-infinite-loops-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-30-31-32-infinite-loops-in-programming-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 So far, we were introduced to `for` loop, learning what structure it has and how it is applied. 
 
@@ -33,6 +29,6 @@ So you have to be careful not to cause one by accident.
 
 # Example: Infinite for Loop in Programming
 
-interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-32-infinite-loops-in-programming-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

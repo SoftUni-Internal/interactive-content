@@ -1,9 +1,7 @@
   [slide hideTitle]
 # For Loop with Step
 
-interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-a-step + 
-
-interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this section we will pay attention to a particular and very important part of the `for` loop, namely the **step**.
 

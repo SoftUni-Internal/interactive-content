@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Real-Life Example: Moving Dishes
 
-interactive-programming-basics-with-java-for-loops-10-11-for-loop-and-for-loop-example-dishes
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-10-11-for-loop-and-for-loop-example-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's imagine you have to load the dishwasher with all of the dishes from the sink.
 

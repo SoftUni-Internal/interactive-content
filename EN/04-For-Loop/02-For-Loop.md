@@ -1,9 +1,7 @@
 [slide hideTitle]
 # For Loop
 
-interactive-programming-basics-with-java-for-loops-12-13-for-loop-example + 
-
-interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-12-13-for-loop-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming it is often required to perform a block of commands multiple times. 
 
@@ -26,7 +24,7 @@ The loop starts with the `for` operator and passes through all values for a part
 [slide hideTitle]
 # Syntax: For-Loop
 
-interactive-programming-basics-with-java-for-loops-14-for-loop
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-14-for-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Upon declaring the loop, you can specify a **start value** and an **end value**. 
 

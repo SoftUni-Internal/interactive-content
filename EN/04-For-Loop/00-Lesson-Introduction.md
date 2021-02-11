@@ -3,7 +3,7 @@
 
 # Lesson Content
 
-interactive-programming-basics-with-java-for-loops-1-2-introduction-and-table-of-contents
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 

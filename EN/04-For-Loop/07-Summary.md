@@ -1,9 +1,9 @@
 [slide hideTitle]
 # Summary
 
-interactive-programming-basics-with-java-for-loops-54-summary
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-54-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson we learned: 
+## In this lesson you learned: 
 
 - For loops
   
@@ -36,7 +36,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 - Prefix and Postfix overview
 
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - What are **While** loops and how we use them
 

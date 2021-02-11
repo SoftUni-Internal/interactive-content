@@ -3,9 +3,7 @@
 
 # Iterating over Characters
 
-interactive-programming-basics-with-java-for-loops-25-26-the-ascii-table + 
-
-interactive-programming-basics-with-java-for-loops-27-the-ascii-table
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # ASCII Table
 
@@ -24,8 +22,6 @@ The columns that you would most probably use for the purposes of this course are
 For example, the decimal value of the character **'a'** is **97** and the one corresponding to **'@'** is **64**.
 
 # Iterating over Characters
-
-interactive-programming-basics-with-java-for-loops-27-the-ascii-table
 
 It is good to know that the **for loops** don't only work with numbers. 
 
