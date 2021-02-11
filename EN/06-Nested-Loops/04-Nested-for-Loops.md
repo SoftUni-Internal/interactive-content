@@ -56,8 +56,11 @@ for (let r = 0; r <= rows; r++) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-lab-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem with Solution: Triangle of Stars
+
+[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-21-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
@@ -132,81 +135,3 @@ Write a program, which:
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Triangle of Stars
-
-[video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-21-solution-triangle-of-stars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function triangleOfStars(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
-| **Input** | **Output**| 
-| --- | --- |
-| 5 | \* |
-| | \*\* |
-| | \*\*\* |
-|  | \*\*\*\* |
-| | \*\*\*\*\* |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-\*\*\*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]

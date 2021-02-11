@@ -69,8 +69,8 @@ for (let r = 0; r <= rows; r++) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Triangle of Stars
-[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-lab-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problemă cu soluția: Triangle of Stars
+[code-task title="Triangle of Stars" taskId="pb-js-nested-loops-Triangle-of-Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function triangleOfStars(input) {
@@ -144,84 +144,3 @@ Scrieți un program care:
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Triangle of Stars
-
-[vimeo-video]
-[stream language="EN" videoId="488090539/2eacc8e193" default /]
-[stream language="RO" videoId="488090539/2eacc8e193"  /]
-[/video-vimeo]
-
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function triangleOfStars(input) {
-  // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-
-# Descriere
-Scrieți un program care:
-
-* Citește **înălțimea** unui triunghi de pe consolă
-* Tipărește un **triunghi de stele**
-# Exemplu
-| **Input** | **Output**| 
-| --- | --- |
-| 5 | \* |
-| | \*\* |
-| | \*\*\* |
-|  | \*\*\*\* |
-| | \*\*\*\*\* |
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-\*\*\*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-\*
-\*\*
-\*\*\*
-\*\*\*\*
-\*\*\*\*\*
-\*\*\*\*\*\*
-\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
