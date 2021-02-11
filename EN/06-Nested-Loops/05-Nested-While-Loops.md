@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Nested while Loops
 
-interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The use of nested `while` loops is very similar to the one of the `for`.
 
@@ -143,9 +143,7 @@ Write a program, which:
 
 # Example: Combining while and for Loops
 
-interactive-programming-basics-with-java-nested-loops-33-nesting-while-and-for-loops + 
-
-interactive-programming-basics-with-java-nested-loops-34-problem-and-solution-sum-digits-calcuulator
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [/slide]

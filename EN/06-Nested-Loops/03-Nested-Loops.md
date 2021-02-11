@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Nested Loops
 
-interactive-programming-basics-with-java-nested-loops-21-nested-loops
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-21-nested-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **nested loop** is a construction where **in the body of one loop** (outer one) **stays another loop** (inner one). 
 
@@ -32,9 +32,7 @@ This happens the following way:
 [slide hideTitle]
 # Example: Rectangle of Stars
 
-interactive-programming-basics-with-java-nested-loops-19-20-nested-loops + 
-
-interactive-programming-basics-with-java-nested-loops-19-20-nested-loops-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-19-20-Nested-loops-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an **example** that illustrates nested loops. 
 
@@ -68,7 +66,7 @@ The inner loop will execute as many times as the body of the outer loop executes
 
 # Multiple Levels of Nested Loops
 
-interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops + interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-22-multiple-levels-of-nested-loops-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 It is possible to have more than one level of nested loops.
 

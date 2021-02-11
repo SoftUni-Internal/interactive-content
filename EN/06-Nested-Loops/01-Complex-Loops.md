@@ -1,9 +1,7 @@
 [slide hideTitle]
 # Complex Loops
 
-interactive-programming-basics-with-java-nested-loops-8-9-complex-loops + 
-
-interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When using for-loops, the loop variable can be modified in more than one way.
 
