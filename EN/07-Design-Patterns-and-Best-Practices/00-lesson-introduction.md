@@ -4,10 +4,7 @@
 # Lesson Content
 
 
-[vimeo-video]
-[stream language="EN" videoId="497194061/114be0f447" default /]
-[stream language="RO" videoId="497194061/114be0f447"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 

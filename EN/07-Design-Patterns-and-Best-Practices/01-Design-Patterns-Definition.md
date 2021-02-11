@@ -1,10 +1,7 @@
 [slide hideTitle]
 # Definition and Structure
 
-[vimeo-video]
-[stream language="EN" videoId="497194102/7947128fe7" default /]
-[stream language="RO" videoId="497194102/7947128fe7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-3-4-what-is-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Design patterns** are like blueprints for solutions to common, recurring problems that programmers face during development. 
 
@@ -35,10 +32,7 @@ Understanding and using **design patterns** helps facilitate better communicatio
 [slide hideTitle]
 # Categories of Design Patterns
 
-[vimeo-video]
-[stream language="EN" videoId="497194138/cbf3e12761" default /]
-[stream language="RO" videoId="497194138/cbf3e12761"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-5-categories-of-design-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Design patterns can be divided into three categories:
 - **Creational**: deal with object creation
@@ -51,10 +45,7 @@ Design patterns can be divided into three categories:
 
 # Creational Design Patterns
 
-[vimeo-video]
-[stream language="EN" videoId="497194180/4e86039751" default /]
-[stream language="RO" videoId="497194180/4e86039751"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-6-creational-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creational design patterns focus on the mechanisms for creating objects to solve specific problems by controlling the object creation process.
 
@@ -115,10 +106,7 @@ This is typically used when the creation of an object through the constructor me
 [slide hideTitle]
 # Structural Design Patterns
 
-[vimeo-video]
-[stream language="EN" videoId="497194237/12b9f257c1" default /]
-[stream language="RO" videoId="497194237/12b9f257c1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-7-structural-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Structural design patterns** focus on object composition to form larger structures, expanding existing functionality.
 
@@ -157,10 +145,7 @@ It is a placeholder with the possibility of adding some checks that help control
 [slide hideTitle]
 # Behavioral Design Patterns
 
-[vimeo-video]
-[stream language="EN" videoId="497194275/71552d9ec9" default /]
-[stream language="RO" videoId="497194275/71552d9ec9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-8-behavioral-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Behavioral design patterns** are patterns that focus on improving communication between dissimilar objects.
 
@@ -193,10 +178,7 @@ The new logic is added to a new object called the **visitor**.
 [slide hideTitle]
 # Benefits and Drawbacks of Design Patterns
 
-[vimeo-video]
-[stream language="EN" videoId="497194312/c8c57555f4" default /]
-[stream language="RO" videoId="497194312/c8c57555f4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-9-10-benefits-and-drawbacks-of-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Design patterns **help solve issues in software development** by relying on **proven techniques**, benefitting from the collective experience of other programmers.
 

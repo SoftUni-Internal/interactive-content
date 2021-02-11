@@ -3,10 +3,7 @@
 [slide hideTitle]
 # Factory Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193746/ad30cc2f41" default /]
-[stream language="RO" videoId="497193746/ad30cc2f41"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-11-12-factory-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **factory design pattern** is a creational pattern and its purpose is creating objects. 
 
@@ -47,10 +44,7 @@ The creation of new objects is abstracted behind an interface, which can cause p
 [slide hideTitle]
 # Pros and Cons
 
-[vimeo-video]
-[stream language="EN" videoId="497193774/ffaee495f8" default /]
-[stream language="RO" videoId="497193774/ffaee495f8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-13-pros-and-cons-of-the-factory-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 |  **Pros** |**Cons**   |
 |---|---|
@@ -71,10 +65,7 @@ This is because you can add new types of features without risking breaking the e
 [slide hideTitle]
 # Example
 
-[vimeo-video]
-[stream language="EN" videoId="497193800/49eef38a98" default /]
-[stream language="RO" videoId="497193800/49eef38a98"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-14-15-examples-with-the-factory-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Below is an example of how the factory pattern can be used:
 
@@ -118,10 +109,7 @@ Finally, we iterate through the collection and print out the names and special m
 [slide hideTitle]
 # Decorator Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193817/5bc97e96c4" default /]
-[stream language="RO" videoId="497193817/5bc97e96c4"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-16-17-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **decorator pattern** is a structural design pattern that promotes code reusability and is an alternative to subclassing.
 
@@ -166,10 +154,7 @@ If you were to use a decorator on top of the Car object in the above example the
 [slide hideTitle]
 # Pros and Cons of the Decorator Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193839/a8d4c3a950" default /]
-[stream language="RO" videoId="497193839/a8d4c3a950"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-18-pros-and-cons-of-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 |  **Pros** |**Cons**   |
 |---|---|
@@ -181,10 +166,7 @@ If you were to use a decorator on top of the Car object in the above example the
 [slide hideTitle]
 # Example of the Decorator Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193862/b055ec35a3" default /]
-[stream language="RO" videoId="497193862/b055ec35a3"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-19-20-examples-with-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of how the **decorator pattern** works:
 
@@ -226,10 +208,7 @@ In this way, the decorated ebook reader would have an additional property and th
 [slide hideTitle]
 # Facade Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193882/25a78c5ed5" default /]
-[stream language="RO" videoId="497193882/25a78c5ed5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-21-22-facade-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="js-application-design-patterns-14.png" /]
 
@@ -255,10 +234,7 @@ In this case, the facade pattern can simplify things.
 [slide hideTitle]
 # Pros and Cons of the Facade Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193902/9361453e74" default /]
-[stream language="RO" videoId="497193902/9361453e74"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-23-pros-and-cons-of-the-facade-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 |  **Pros** |**Cons**   |
 |---|---|
@@ -271,10 +247,7 @@ The facade pattern can reduce complexity when several modules are communicating 
 [slide hideTitle]
 # Example of the Facade Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193922/1188386c43" default /]
-[stream language="RO" videoId="497193922/1188386c43"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-24-example-with-the-facade-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here we are creating a **ComplaintRegistry** facade class with a method called **registerComplaint**.
 
@@ -303,10 +276,7 @@ The facade simply takes the **customer**, **type** and **details** and adds the 
 [slide hideTitle]
 # Observer Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193947/a94481c8d5" default /]
-[stream language="RO" videoId="497193947/a94481c8d5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-25-26-27-observer-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods. 
 
@@ -346,10 +316,7 @@ An example of this would be on sites like YouTube where you can subscribe to oth
 [slide hideTitle]
 # Pros and Cons of the Observer Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497193982/e0846881e5" default /]
-[stream language="RO" videoId="497193982/e0846881e5"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-28-pros-and-cons-of-the-observer-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 |  **Pros** |**Cons**   |
 |---|---|
@@ -367,10 +334,7 @@ Changes can be broadcast to any number of observers, although the order in which
 [slide hideTitle]
 # Example of the Observer Pattern
 
-[vimeo-video]
-[stream language="EN" videoId="497194003/c1d107d8ce" default /]
-[stream language="RO" videoId="497194003/c1d107d8ce"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-29-example-of-the-observer-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is a simplified example of the **observer pattern**:
 
