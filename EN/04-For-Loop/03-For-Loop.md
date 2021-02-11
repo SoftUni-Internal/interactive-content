@@ -74,11 +74,11 @@ The loop repeats 10 times and each of these repetitions is called an **iteration
 [/slide]
 
 [slide hideTitle]
-# Problem: Print Sum of N Numbers
+# Problem with Solution: Print Sum of N Numbers
 
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-14-problem-first-n-numbers-sum-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-15-Solution-Print-Sum-of-N-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-lab-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function printSum (input) {
@@ -140,78 +140,14 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Print Sum of N Numbers
-
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-15-Solution-Print-Sum-of-N-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function printSum (input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads number n from the console
-* **Prints** all numbers from **1** to **n**
-* **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|5| 1 |
-|| 2 |
-|| 3 |
-|| 4 |
-|| 5 |
-|| 15 |
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-1
-2
-3
-4
-5
-15
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-1
-2
-3
-4
-5
-6
-21
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Greatest Number
+# Problem with Solution: Greatest Number
 
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-16-problem-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-17-solution-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="Greatest Number" taskId="pb-js-for-loop-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(n, numbers) {
@@ -292,88 +228,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Greatest Number
-
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-17-solution-biggest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Greatest Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function greatestNumber(n, numbers) {
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(Number(input.unshift()), input);
-```
-[/code-adapter]
-[task-description]
-# Description
-Write a program, which: 
-
-* Reads `n`: a number representing the amount of following input numbers 
-
-* Reads n numbers 
-
-* Finds and prints the greatest number 
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|`3, ['40', '90', '50']`| 90 |
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-3
-30
-80
-40
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-3
-30
-80
-40
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-3
-15
-110
-40
-[/input]
-[output]
-110
-[/output]
-[/test]
-[test]
-[input]
-3
-30
-90
-40
-[/input]
-[output]
-90
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

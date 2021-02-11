@@ -72,96 +72,15 @@ console.log(asciiValue);
 [/slide]
 
 [slide hideTitle]
-# Problem: Latin Letters
+# Problemă cu soluția: Latin Letters
 
 
-[vimeo-video]
-[stream language="EN" videoId="487119629/a9b273defe" default /]
-[stream language="RO" videoId="487119629/a9b273defe"  /]
-[/video-vimeo]
 
-[code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Latin Letters" taskId="pb-js-for-loop-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function latinLetters(startChar, endChar) {
     // Write your code here...
-}
-
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
-[task-description]
-Scrieți un program care:
-
-* Citește 2 litere
-* Imprimă toate literele din intervalul dat inclusiv
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|'a', 'c'| a b c  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-d
-u
-[/input]
-[output]
-d e f g h i j k l m n o p q r s t u
-[/output]
-[/test]
-[test]
-[input]
-a
-d
-[/input]
-[output]
-a b c d
-[/output]
-[/test]
-[test]
-[input]
-b
-p
-[/input]
-[output]
-b c d e f g h i j k l m n o p
-[/output]
-[/test]
-[test]
-[input]
-p
-t
-[/input]
-[output]
-p q r s t
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Latin Letters
-
-[vimeo-video]
-[stream language="EN" videoId="487119646/6501686e7f" default /]
-[stream language="RO" videoId="487119646/6501686e7f"  /]
-[/video-vimeo]
-
-[code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function latinLetters(startChar, endChar) {
-  // Scrieți codul dvs. aici
 }
 
 ```

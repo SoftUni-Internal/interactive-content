@@ -81,14 +81,10 @@ Bucla se repetă de 10 ori și fiecate repetare se numește **iterație**.
 [/slide]
 
 [slide hideTitle]
-# Problem: Print Sum of N Numbers
+# Problemă cu soluția: Print Sum of N Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487119267/15cae043ef" default /]
-[stream language="RO" videoId="487119267/15cae043ef"  /]
-[/video-vimeo]
 
-[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-lab-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Sum of N Numbers" taskId="pb-js-for-loop-Print-Sum-of-N-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function printSum (input) {
@@ -151,85 +147,17 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Print Sum of N Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="487119329/778e284f8f" default /]
-[stream language="RO" videoId="487119329/778e284f8f"  /]
-[/video-vimeo]
-
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function printSum (input) {
-   // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-
-# Descriere
-Scrie un program care:
-
-* citește numărul n în consolă
-* **Afișează** toate numerele de la **1** la **n**
-* **Adună** toate numerele de la **1** la **n**
-* **Afișează** suma la final
-
-# Exemplu
-  | **Input** | **Output** |
-| --- | --- |
-|5| 1 |
-|| 2 |
-|| 3 |
-|| 4 |
-|| 5 |
-|| 15 |
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-1
-2
-3
-4
-5
-15
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-1
-2
-3
-4
-5
-6
-21
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Greatest Number
+# Problemă cu soluția: Greatest Number
 
 [vimeo-video]
 [stream language="EN" videoId="487119324/39b9907585" default /]
 [stream language="RO" videoId="487119324/39b9907585"  /]
 [/video-vimeo]
 
-[code-task title="Greatest Number" taskId="pb-js-for-loop-lab-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greatest Number" taskId="pb-js-for-loop-Greatest-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function greatestNumber(n, numbers) {
@@ -312,92 +240,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Greatest Number
-
-[vimeo-video]
-[stream language="EN" videoId="487119366/21cddc7cd5" default /]
-[stream language="RO" videoId="487119366/21cddc7cd5"  /]
-[/video-vimeo]
-
-[code-task title="Greatest Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function greatestNumber(n, numbers) {
- // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
-[task-description]
-
-# Descriere
-Scrie un program care: 
-
-* Citește `n`: un număr care reprezintă câte elemente sunt introduse 
-
-* Citește n numere 
-
-* Găsește și afișează cel mai mare număr 
-
-# Exemplu
-
-| **Input** | **Output** |
-| --- | --- |
-|`3, ['40', '90', '50']`| 90 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-3
-30
-80
-40
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-3
-30
-80
-40
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-3
-15
-110
-40
-[/input]
-[output]
-110
-[/output]
-[/test]
-[test]
-[input]
-3
-30
-90
-40
-[/input]
-[output]
-90
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

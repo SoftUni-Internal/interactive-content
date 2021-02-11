@@ -41,107 +41,16 @@ for (let i = 10; i >= 1; i--) {
 
 
 [slide hideTitle]
-# Problem: Number Ending with 7
-
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-20-problem-numbers-ending-in-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Number Ending with 7" taskId="pb-js-for-loop-lab-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function numbersEndingWith7(n) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|30| 7 |
-||17 |
-||27 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-40
-[/input]
-[output]
-7
-17
-27
-37
-[/output]
-[/test]
-[test]
-[input]
-35
-[/input]
-[output]
-7
-17
-27
-[/output]
-[/test]
-[test]
-[input]
-80
-[/input]
-[output]
-7
-17
-27
-37
-47
-57
-67
-77
-[/output]
-[/test]
-[test]
-[input]
-130
-[/input]
-[output]
-7
-17
-27
-37
-47
-57
-67
-77
-87
-97
-107
-117
-127
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Number Ending with 7
+# Problem With Solution: Number Ending with 7
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-21-solution-numbers-ending-in-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="Number Ending with 7" taskId="pb-js-for-loop-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersEndingWith7(n) {
-  // Write your code here
+   // Write your code here
 }
 ```
 [/code-editor]
@@ -153,7 +62,7 @@ Write a program, which:
 * Prints all numbers from **7 to n**, **ending with 7**
 
 # Example
-|**Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 |30| 7 |
 ||17 |
@@ -223,12 +132,14 @@ Write a program, which:
 
 [/slide]
 
+
 [slide hideTitle]
-# Problem: Exam Countdown
+# Problem with Solution: Exam Countdown
 
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-22-problem-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-23-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Exam Countdown" taskId="pb-js-for-loop-lab-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+
+[code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function examCountdown(days) {
@@ -314,93 +225,3 @@ The exam has come.
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Exam Countdown
-
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-23-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function examCountdown(days) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads an integer - count of **days before an exam**
-* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
-* At the end prints: `The exam has come.`
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|3| 3 days before the exam |
-||2 days before the exam |
-||1 days before the exam |
-||The exam has come. |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-6 days before the exam
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-7 days before the exam
-6 days before the exam
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

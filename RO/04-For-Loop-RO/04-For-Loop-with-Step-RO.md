@@ -44,7 +44,7 @@ for (let i = 10; i >= 1; i--) {
 
 
 [slide hideTitle]
-# Problem: Number Ending with 7
+# Problemă cu soluția: Number Ending with 7
 
 [vimeo-video]
 [stream language="EN" videoId="487119426/15f9ad851f" default /]
@@ -52,7 +52,7 @@ for (let i = 10; i >= 1; i--) {
 [/video-vimeo]
 
 
-[code-task title="Number Ending with 7" taskId="pb-js-for-loop-lab-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Number Ending with 7" taskId="pb-js-for-loop-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function numbersEndingWith7(n) {
@@ -138,109 +138,13 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Number Ending with 7
 
-[vimeo-video]
-[stream language="EN" videoId="487119464/39daf17177" default /]
-[stream language="RO" videoId="487119464/39daf17177"  /]
-[/video-vimeo]
-
-[code-task title="Number Ending with 7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function numbersEndingWith7(n) {
-  // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Scrieți un program care:
-
-* Citește un număr **n**
-* Imprimă toate numerele de la  **7 până la n**, **care se termină cu 7**
-
-# Example
-|**Input** | **Output** |
-| --- | --- |
-|30| 7 |
-||17 |
-||27 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-40
-[/input]
-[output]
-7
-17
-27
-37
-[/output]
-[/test]
-[test]
-[input]
-35
-[/input]
-[output]
-7
-17
-27
-[/output]
-[/test]
-[test]
-[input]
-80
-[/input]
-[output]
-7
-17
-27
-37
-47
-57
-67
-77
-[/output]
-[/test]
-[test]
-[input]
-130
-[/input]
-[output]
-7
-17
-27
-37
-47
-57
-67
-77
-87
-97
-107
-117
-127
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Exam Countdown
+# Problemă cu soluția: Exam Countdown
 
-[vimeo-video]
-[stream language="EN" videoId="487119503/367fcdcc3d" default /]
-[stream language="RO" videoId="487119503/367fcdcc3d"  /]
-[/video-vimeo]
 
-[code-task title="Exam Countdown" taskId="pb-js-for-loop-lab-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function examCountdown(days) {
@@ -326,94 +230,3 @@ The exam has come.
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Exam Countdown
-
-[vimeo-video]
-[stream language="EN" videoId="487119549/e38e542417" default /]
-[stream language="RO" videoId="487119549/e38e542417"  /]
-[/video-vimeo]
-
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function examCountdown(days) {
-   // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Description
-* Citește un număr întreg - numărul de **zile înainte de examen**
-* După fiecare zi trecută, imprimă: `{numberOfDaysLeft} days before the exam`
-* La final imprimă: `The exam has come.`
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|3| 3 days before the exam |
-||2 days before the exam |
-||1 days before the exam |
-||The exam has come. |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-6 days before the exam
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-7 days before the exam
-6 days before the exam
-5 days before the exam
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come.
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

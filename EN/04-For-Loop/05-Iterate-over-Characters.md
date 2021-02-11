@@ -66,11 +66,11 @@ console.log(asciiValue);
 [/slide]
 
 [slide hideTitle]
-# Problem: Latin Letters
+# Problem with Solution: Latin Letters
 
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-28-problem-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-29-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Latin Letters" taskId="pb-js-for-loop-lab-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Latin Letters" taskId="pb-js-for-loop-Latin-Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function latinLetters(startChar, endChar) {
@@ -140,77 +140,3 @@ p q r s t
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Latin Letters
-
-[video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-29-solution-latin-letters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Latin Letters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function latinLetters(startChar, endChar) {
-  // Write your code here
-}
-
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads 2 letters
-* Prints all letters in the given range inclusive
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|'a', 'c'| a b c  |
-
-[/task-description]
-[tests]
-[test]
-[input]
-d
-u
-[/input]
-[output]
-d e f g h i j k l m n o p q r s t u
-[/output]
-[/test]
-[test]
-[input]
-a
-d
-[/input]
-[output]
-a b c d
-[/output]
-[/test]
-[test]
-[input]
-b
-p
-[/input]
-[output]
-b c d e f g h i j k l m n o p
-[/output]
-[/test]
-[test]
-[input]
-p
-t
-[/input]
-[output]
-p q r s t
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
