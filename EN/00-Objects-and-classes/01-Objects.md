@@ -155,11 +155,10 @@ for (let key in person) {
 [stream language="RO" videoId="489795432/3e85c0a88d"  /]
 [/video-vimeo]
 
-<<<<<<< HEAD
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-=======
+
 [code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
+
 [code-editor language=javascript]
 ```
 function personInfo(input){
@@ -169,14 +168,13 @@ function personInfo(input){
 [/code-editor]
 [task-description]
 # Description
-<<<<<<< HEAD
+
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
 `{key}: {value}`
-=======
+
 Write a function that receives an 3 elements. 
 
 Sets them to an object and return the created object.
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 
 The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
@@ -267,10 +265,8 @@ age: 22
 
 [/slide]
 
-<<<<<<< HEAD
 [slide]
 # Problem: Person Greeting (new JS strategy)
-
 
 [code-task title="Person Greeting" taskId="js-fundamentals-2-person-greeting" executionType="tests-execution" executionStrategy="javascript-function" requiresInput]
 [code-editor language=javascript]
@@ -313,7 +309,6 @@ Hello, Peter Pan. You are you 20 years old.
 
 
 [slide hideTitle]
->>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 # Solution: Person Info
 
 [vimeo-video]
@@ -343,7 +338,6 @@ function personInfo(input){
 [/code-editor]
 [task-description]
 # Description
-<<<<<<< HEAD
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
 `{key}: {value}`
 
