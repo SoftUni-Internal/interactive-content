@@ -374,7 +374,7 @@ age: 22
 [stream language="RO" videoId="489795448/09ea78efff"  /]
 [/video-vimeo]
 
-[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function city(input){
@@ -382,11 +382,6 @@ function city(input){
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
-```
-[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -478,18 +473,11 @@ postCode -> 484
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-//Different video code
-
 function city(input){
-
+  // Write your code here
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-(i, c) => c({name: i[0], area: i[1], population: i[2], country: i[3], postCode: i[4]})
-```
-[/code-adapter]
 [task-description]
 # Description
 Receive and array containing five elements. 
