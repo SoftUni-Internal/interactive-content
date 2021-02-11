@@ -35,7 +35,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [/slide]
 
 [slide hideTitle]
-# Problemă: Decreasing Numbers
+# Problemă cu soluția: Decreasing Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="487120584/cf3fbb855b" default /]
@@ -43,7 +43,7 @@ Toată această parte se repetă din nou **până într-un anumit punct în care
 [/video-vimeo]
 
 
-[code-task title="Decreasing Numbers" taskId="pb-js-while-loop-lab-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Decreasing Numbers" taskId="pb-js-while-loop-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
@@ -112,82 +112,6 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Decreasing Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="487120633/4307d54296" default /]
-[stream language="RO" videoId="487120633/4307d54296"  /]
-[/video-vimeo]
-
-
-[code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function decreasingNumbers(input) {
-  // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {code(Number(input[0]))}
-```
-[/code-adapter]
-[task-description]
-# Cerință
-Scrieți un program care:
-
-* Citește un număr de pe consolă
-* Imprimă numerele începând de la numărul respectiv până la 1 (**inclusiv**)
-# Exemplu
-  | **Input** | **Output** |
-| --- | --- |
-|4| 4 |
-||3 |
-||2 |
-|| 1|
-
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-5
-4
-3
-2
-1
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-4
-3
-2
-1
-[/output]
-[/test]
-[test]
-[input]
-3
-[/input]
-[output]
-3
-2
-1
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 
 [slide hideTitle]
@@ -199,7 +123,7 @@ Scrieți un program care:
 [/video-vimeo]
 
 
-[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-lab-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sequence (input) {
@@ -230,59 +154,3 @@ Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7,
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Sequence 2k + 1
-
-[vimeo-video]
-[stream language="EN" videoId="487120683/99149d6f3f" default /]
-[stream language="RO" videoId="487120652/4dbc030699"  /]
-[/video-vimeo]
-
-
-[code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sequence (input) {
-  // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-[task-description]
-# Cerință
-
-Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** presupunând că fiecare număr care urmează = **numărul precedent * 2 + 1**.
-
-# Soluție:
-
-Problema poate fi rezolvată în felul următor:
-- Creăm o variabilă num pentru numărul curent, căreia îi asignăm o **valoare inițială egală cu 1**.
-- Drept condiție de repetiție, scriem **numărul curent <= n**.
-- În **conținutul buclei**: imprimăm valoarea numărului curent și incrementăm numărul curent utilizând formula din cerința problemei.
-
-Aceasta este o implementare a acestei idei:
-```js
-let n = Number(input.shift());
-let num = 1;
-while (num <= n) {
-  console.log(num);
-  num = 2 * num + 1;
-}
-```
-
-[/task-description]
-[tests]
-[test]
-[input]
-3
-[/input]
-[output]
-1
-3
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]

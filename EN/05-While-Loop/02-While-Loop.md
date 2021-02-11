@@ -31,91 +31,15 @@ All this is repeated again and again **until at some point the conditional expre
 [/slide]
 
 [slide hideTitle]
-# Problem: Decreasing Numbers
-
-[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-11-Problem-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Decreasing Numbers" taskId="pb-js-while-loop-lab-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function decreasingNumbers (input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {code(Number(input[0]))}
-```
-[/code-adapter]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|4| 4 |
-||3 |
-||2 |
-|| 1|
-
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-5
-4
-3
-2
-1
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-4
-3
-2
-1
-[/output]
-[/test]
-[test]
-[input]
-3
-[/input]
-[output]
-3
-2
-1
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Decreasing Numbers
+# Problem with Solution: Decreasing Numbers
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-12-Solution-Decreasing-Numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-[code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Decreasing Numbers" taskId="pb-js-while-loop-Decreasing-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function decreasingNumbers (input) {
- // Write your code here
+  // Write your code here
 }
 ```
 [/code-editor]
@@ -181,48 +105,13 @@ Write a program, which:
 [/slide]
 
 
-[slide hideTitle]
-# Problem: Sequence 2k + 1
-
-[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-13-Problem-Sequence-2K+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-lab-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sequence(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-3
-[/input]
-[output]
-1
-3
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Solution: Sequence 2k + 1
+# Problem with Solution: Sequence 2k + 1
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-14-Solution-Sequence-2k+1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sequence 2k + 1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sequence 2k + 1" taskId="pb-js-while-loop-Sequence-2k" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sequence(input) {
@@ -232,29 +121,9 @@ function sequence(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
 
 Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
 
-## Solution:
-
-Here is how we can solve the problem:
-
-- We create a num variable for the current number to which we assign an initial **value of 1**.
-
-- For a loop condition, we put **the current number <= n**.
-
-- In **the body of the loop**: we print the value of the current number and increase the current number by using the formula from the problem's description.
-
-Here is a sample implementation of this idea:
-```js
-let n = Number(input.shift());
-let num = 1;
-while (num <= n) {
-  console.log(num);
-  num = 2 * num + 1;
-}
-```
 
 [/task-description]
 [tests]
@@ -272,3 +141,4 @@ while (num <= n) {
 [/code-task]
 
 [/slide]
+

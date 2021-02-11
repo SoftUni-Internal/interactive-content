@@ -48,8 +48,9 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problemă: Odd Number
-[code-task title="Odd Number" taskId="pb-js-while-loop-lab-Odd-Number" executionStrategy="javascript-code" requiresInput]
+# Problemă cu soluția: Odd Number
+
+[code-task title="Odd Number" taskId="pb-js-while-loop-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
@@ -88,49 +89,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Odd Number
-
-[vimeo-video]
-[stream language="EN" videoId="487120737/05e8469c7d" default /]
-[stream language="RO" videoId="487120737/05e8469c7d"  /]
-[/video-vimeo]
-
-
-[code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function oddNumber(numbers) {
- // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Cerință
-Scrieți un program care:
-
-* Citește numere dde pe in consolă până la obținerea unui **număr impar**
-* Imprimă **numărul impar**
-# Exemplu
-  | **Input** | **Output** |
-| --- | --- |
-|`['2', '4', '8', '3']`| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-2
-4
-8
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

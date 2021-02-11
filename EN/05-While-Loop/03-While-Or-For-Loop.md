@@ -45,10 +45,12 @@ console.log(number);
 [/slide]
 
 [slide hideTitle]
-# Problem: Odd Number
-[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-17-problem-odd-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problem with Solution: Odd Number
 
-[code-task title="Odd Number" taskId="pb-js-while-loop-lab-Odd-Number" executionStrategy="javascript-code" requiresInput]
+[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-18-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+[code-task title="Odd Number" taskId="pb-js-while-loop-Odd-Number" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function oddNumber(numbers) {
@@ -87,46 +89,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Odd Number
-
-[video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-18-Solution-Odd-Number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Odd Number" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function oddNumber(numbers) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['2', '4', '8', '3']`| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-2
-4
-8
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
