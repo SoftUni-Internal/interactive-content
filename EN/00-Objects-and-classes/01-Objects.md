@@ -1,6 +1,6 @@
 # Object Introduction
 
-[slide]
+[slide hideTitle]
 # What Are Objects ?
 
 [vimeo-video]
@@ -31,7 +31,7 @@ We can access the property value with the name of the class `.` property name.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Object Definition 
 
 [vimeo-video]
@@ -57,7 +57,7 @@ person.hairColor = 'black';
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Object Methods
 
 [vimeo-video]
@@ -97,7 +97,7 @@ person.sayHello = () => console.log('Hi, guys');
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Built-in Methods
 
 [vimeo-video]
@@ -126,7 +126,7 @@ console.log(Object.values(cat));
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Iterate through Keys
 
 [vimeo-video]
@@ -147,7 +147,7 @@ for (let key in person) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Person Info
 
 [vimeo-video]
@@ -155,7 +155,11 @@ for (let key in person) {
 [stream language="RO" videoId="489795432/3e85c0a88d"  /]
 [/video-vimeo]
 
+<<<<<<< HEAD
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+=======
+[code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 [code-editor language=javascript]
 ```
 function personInfo(input){
@@ -165,8 +169,14 @@ function personInfo(input){
 [/code-editor]
 [task-description]
 # Description
+<<<<<<< HEAD
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
 `{key}: {value}`
+=======
+Write a function that receives an 3 elements. 
+
+Sets them to an object and return the created object.
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 
 The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
@@ -179,6 +189,18 @@ The input comes as 3 separate strings in the following order: firstName, lastNam
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Peter
+Pan
+20
+[/input]
+[output]
+firstName: Peter
+lastName: Pan
+age: 20
+[/output]
+[/test]
 [test]
 [input]
 Johny
@@ -245,6 +267,7 @@ age: 22
 
 [/slide]
 
+<<<<<<< HEAD
 [slide]
 # Problem: Person Greeting (new JS strategy)
 
@@ -289,6 +312,9 @@ Hello, Peter Pan. You are you 20 years old.
 [/slide]
 
 [slide]
+=======
+[slide hideTitle]
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 # Solution: Person Info
 
 [vimeo-video]
@@ -299,9 +325,8 @@ Hello, Peter Pan. You are you 20 years old.
 [code-task title="Person Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-//Different vido code
-
 function personInfo(input){
+<<<<<<< HEAD
   let person = {
         firstName: input[0],
         lastName: input[1],
@@ -311,13 +336,22 @@ function personInfo(input){
     for (let [key, value] of Object.entries(person)){
         console.log(key + ": " + value);
     }
+=======
+  // Write your code here
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 }
 ```
 [/code-editor]
 [task-description]
 # Description
+<<<<<<< HEAD
 Write a function that receives an array of 3 elements, sets them to an **object** and prints the object's properties by key and value in the format:
 `{key}: {value}`
+=======
+Write a function that receives an 3 elements. 
+
+Sets them to an object and return the created object.
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 
 The input comes as 3 separate strings in the following order: firstName, lastName, age.
 
@@ -330,6 +364,18 @@ The input comes as 3 separate strings in the following order: firstName, lastNam
 
 [/task-description]
 [tests]
+[test open]
+[input]
+Peter
+Pan
+20
+[/input]
+[output]
+firstName: Peter
+lastName: Pan
+age: 20
+[/output]
+[/test]
 [test]
 [input]
 Johny
@@ -396,7 +442,7 @@ age: 22
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: City
 
 [vimeo-video]
@@ -404,7 +450,11 @@ age: 22
 [stream language="RO" videoId="489795448/09ea78efff"  /]
 [/video-vimeo]
 
+<<<<<<< HEAD
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+=======
+[code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 [code-editor language=javascript]
 ```
 function city(input){
@@ -412,6 +462,17 @@ function city(input){
 }
 ```
 [/code-editor]
+<<<<<<< HEAD
+=======
+[code-adapter]
+```
+(i, c) => {
+    const result = c(i[0], Number(i[1]), Number(i[2]), i[3], Number(i[4]));
+    if (typeof result != 'object') { return 'You must return an object!'; }
+    const {name, area, population, county, postCode} = result;
+```
+[/code-adapter]
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 [task-description]
 # Description
 Receive and array containing five elements. 
@@ -422,7 +483,7 @@ Loop through all the keys and print them with their values in format:
 
 `{key} -> {value}`
 
-The input will be in the following order: **name**, **area**, **population**, **country** and **postCode**.
+The input will be in the following order: **name**, **area**, **population**, **country** and **postcode**.
 
 See the examples below.
 
@@ -430,9 +491,9 @@ See the examples below.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
+|`['Bucharest', '228', '1830000', 'Romania', '010082']`| name \-\> Bucharest |
 ||area \-\> 228|
-||population \-\> 1.83m|
+||population \-\> 1830000|
 ||country \-\> Romania|
 ||postCode \-\> 010082|
 
@@ -440,18 +501,18 @@ See the examples below.
 [tests]
 [test]
 [input]
-Sofia
-492
-1238438
-Bulgaria
-1000
+Bucharest
+228
+1830000
+Romania
+010082
 [/input]
 [output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
+name -> Bucharest
+area -> 228
+population -> 1.83m
+country -> Romania
+postCode -> 010082
 [/output]
 [/test]
 [test]
@@ -492,7 +553,7 @@ postCode -> 484
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Solution: City
 
 [vimeo-video]
@@ -503,6 +564,7 @@ postCode -> 484
 [code-task title="City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
+<<<<<<< HEAD
 //Different vido code
 
 function city(input){
@@ -517,6 +579,10 @@ function city(input){
     for (let key in cityObject){
         console.log(`${key} -> ${cityObject[key]}`);
     }
+=======
+function city(input){
+  // Write your code here
+>>>>>>> 4ffb359b5c237bd5b00b7ad352874070e4875ef8
 }
 ```
 [/code-editor]
@@ -548,18 +614,18 @@ See the examples below.
 [tests]
 [test]
 [input]
-Sofia
-492
-1238438
-Bulgaria
-1000
+Bucharest
+228
+1.83m
+Romania
+010082
 [/input]
 [output]
-name -> Sofia
-area -> 492
-population -> 1238438
-country -> Bulgaria
-postCode -> 1000
+name -> Bucharest
+area -> 228
+population -> 1.83m
+country -> Romania
+postCode -> 010082
 [/output]
 [/test]
 [test]
