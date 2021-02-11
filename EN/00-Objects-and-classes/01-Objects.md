@@ -385,7 +385,7 @@ function city(input){
 [code-adapter]
 ```
 (i, c) => {
-    const result = c(i[0], i[1], i[2], i[3], i[4]);
+    const result = c(i[0], Number(i[1]), Number(i[2]), i[3], Number(i[4]));
     if (typeof result != 'object') { return 'You must return an object!'; }
     const {name, area, population, county, postCode} = result;
 ```
@@ -400,7 +400,7 @@ Loop through all the keys and print them with their values in format:
 
 `{key} -> {value}`
 
-The input will be in the following order: **name**, **area**, **population**, **country** and **postCode**.
+The input will be in the following order: **name**, **area**, **population**, **country** and **postcode**.
 
 See the examples below.
 
@@ -408,9 +408,9 @@ See the examples below.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['Bucharest', '228', '1.83m', 'Romania', '010082']`| name \-\> Bucharest |
+|`['Bucharest', '228', '1830000', 'Romania', '010082']`| name \-\> Bucharest |
 ||area \-\> 228|
-||population \-\> 1.83m|
+||population \-\> 1830000|
 ||country \-\> Romania|
 ||postCode \-\> 010082|
 
@@ -420,7 +420,7 @@ See the examples below.
 [input]
 Bucharest
 228
-1.83m
+1830000
 Romania
 010082
 [/input]
