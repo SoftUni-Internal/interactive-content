@@ -384,7 +384,10 @@ function city(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input)}
+(i, c) => {
+    const result = c(i[0], i[1], i[2], i[3], i[4]);
+    if (typeof result != 'object') { return 'You must return an object!'; }
+    const {name, area, population, county, postCode} = result;
 ```
 [/code-adapter]
 [task-description]
