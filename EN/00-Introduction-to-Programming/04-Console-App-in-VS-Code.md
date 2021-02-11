@@ -1,4 +1,3 @@
-# Integrated Development Environments
 
 [slide hideTitle]
 # Console App in VS Code
