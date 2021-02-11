@@ -3,7 +3,7 @@
 # Summary
 
 
-# In this lesson we learned:
+## In this lesson we learned:
 
 - Unit Testing helps us build solid code
 - We use AAA pattern to structure our unit tests
