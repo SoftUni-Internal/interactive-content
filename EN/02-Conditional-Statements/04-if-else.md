@@ -2,7 +2,7 @@
 
 # If-Else Conditions
 
-interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `if` construction may also contain an `else` clause to give a specific action in case the Boolean expression (which is set at the beginning `if (bool expression)` ) returns a negative result (`false`). 
 
@@ -42,7 +42,7 @@ The statement or statements in the then-statement and the else-statement can be 
 
 # Example: Weather
 
-interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is an extended version of the example from the previous slide.
 
@@ -62,7 +62,7 @@ if (weather.equals("rainy")) {
 [slide hideTitle]
 # Block of Code
 
-interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 

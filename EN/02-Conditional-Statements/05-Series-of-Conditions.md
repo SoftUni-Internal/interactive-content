@@ -2,7 +2,7 @@
 
 # Sequence of If-Else Conditions
 
-interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. 
 
@@ -27,7 +27,7 @@ else {
 [slide hideTitle]
 # Example: Digits in English
 
-interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Print the digits in the range of 1 to 9 (digits are read from the console) in English. 
 

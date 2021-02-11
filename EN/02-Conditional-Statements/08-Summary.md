@@ -1,9 +1,9 @@
 [slide hideTitle]
 # Summary
 
-interactive-programming-basics-with-java-conditional-statements-50-summary
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-50-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson we learned: 
+## In this lesson you learned: 
 
 - Comparison Operators (**==** , **!=** , **<** , **>** , **<=** , **>=** )
 
@@ -39,7 +39,7 @@ if (condition) {
 
 - How to debug code. Using Breakpoints
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - **Nested if-else** Statements
 

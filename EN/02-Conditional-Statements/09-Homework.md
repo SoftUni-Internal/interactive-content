@@ -76,9 +76,7 @@ Wrong password!
 [slide hideTitle]
 # Problem with Solution: Boiling Water
 
-interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water + 
-
-interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Boiling Water" taskId="pb-java-Conditional-Statements-Boiling-water" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -232,9 +230,7 @@ Fast
 [slide hideTitle]
 # Problem with Solution: Area of Figures
 
-interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures + 
-
-interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures-and-solution -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Area of Figures" taskId="pb-java-Conditional-Statements-Area-of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -454,9 +450,7 @@ Invalid ticket type!
 [slide hideTitle]
 # Problem: Coffee Shop
 
-interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop + 
-
-interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop-and-solution  -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1226,9 +1220,7 @@ unknown
 [slide hideTitle]
 # Problem with Solution: Pets
 
-interactive-programming-basics-with-java-conditional-statements-47-problem-pets + 
-
-interactive-programming-basics-with-java-conditional-statements-47-problem-pets-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-47-problem-pets-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

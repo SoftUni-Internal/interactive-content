@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Comparison Operators
 
-interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming, we can compare values using the following operators:
 
@@ -21,7 +21,7 @@ When compared, the result is a Boolean value `true` or `false`, depending on whe
 
 [slide hideTitle]
 
-interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Examples for Comparing Numbers
 Examples of such an expression are as follows:
@@ -53,7 +53,7 @@ If the value of the expression on the left side is greater than or equal to the 
 [slide hideTitle]
 # String Comparison
 
-interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-2
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-10-13-logical-expressions-demo-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Comparing text using the `equals()` method.
 
