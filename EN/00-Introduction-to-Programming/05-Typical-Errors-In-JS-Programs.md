@@ -9,13 +9,13 @@ It **underlines** the wrong code that cannot be compiled.
 
 Some of the basic common mistakes we can face:
 
-- Mixing of **lowercase** and **uppercase** letters in syntax.
+- Mixing of **lowercase** and **uppercase** letters in syntax
 
-- Wrong Syntax.
+- Wrong Syntax
 
-- Missing quotes `"` or bracket `(` or `)`.
+- Missing quotes `"` or bracket `(` or `)`
 
-- Confusing **Addition** and **Concatenation**.
+- Confusing **Addition** and **Concatenation**
 
 The `+` operator has two functionalities.
 
@@ -28,3 +28,6 @@ The `+` operator has two functionalities.
 In JavaScript double equal and tripple equal sign are called comparison operators.
 
 [/slide]
+
+- Turn on the stove
+  * set temperature 
