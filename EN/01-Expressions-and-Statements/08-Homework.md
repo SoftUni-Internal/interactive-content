@@ -84,9 +84,7 @@ Write a program to calculate the speed by time and distance:
 [slide hideTitle]
 # Problem with Solution: Currency Converter
 
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor + 
-
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -257,9 +255,7 @@ Write a program to calculate a triangle area:
 [slide hideTitle]
 # Problem: Four Operations
 
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations + 
-
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -775,9 +771,7 @@ Print on the console the calculated area.
 [slide hideTitle]
 # Problem: Projects Creation
 
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation +
-
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -1396,9 +1390,7 @@ Print on the console: "\{total sum\} dollars". The result should be formatted to
 [slide hideTitle]
 # Problem: Fishland
 
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland + 
-
-interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-solution
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

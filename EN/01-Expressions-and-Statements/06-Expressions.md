@@ -2,7 +2,7 @@
 
 # Expressions
 
-interactive-programming-basics-with-java-expressions-and-statements-28-29-expressions
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-28-29-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Expressions** are sequences of operators, literals and variables which are evaluated to a value.
   * Consist of at least one **operand**

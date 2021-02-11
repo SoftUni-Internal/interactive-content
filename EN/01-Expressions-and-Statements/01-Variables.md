@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Variables
 
-interactive-programming-basics-with-java-expressions-and-statements-3-7-variables
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming, each **variable** stores a certain value of a particular type. 
 
@@ -45,6 +45,6 @@ Variables can be stored in the program's:
 
 # Example: Declaring a variable
 
-interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

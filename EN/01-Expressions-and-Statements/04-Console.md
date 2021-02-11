@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Console (Terminal)
 
-interactive-programming-basics-with-java-expressions-and-statements-13-14-reading-user-input-and-formatting-output
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-13-14-reading-user-input-and-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generally, the **system console** represents a text terminal, which means that it accepts and visualizes just **text** without any graphical elements like buttons, menus, etc. 
 
@@ -23,7 +23,7 @@ The console runs console applications. They read text from the command line and 
 [slide hideTitle]
 # Printing and Formatting Text and Numbers
 
-interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Using `System.out.print(…)` and `System.out.println(…)`
 Working with these methods is easy because they can print all the basic types (string, numeric and primitive types).
@@ -75,14 +75,14 @@ The placeholders `%d` is replaced by the expressions, given after the text.
 
 # Example: Formatting Text and Numbers
 
-interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-16-formatting-output-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Reading User Input
 
-interactive-programming-basics-with-java-expressions-and-statements-15-reading-user-input
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-15-reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To read a **text** (string) from the console, again, we have to **declare a new variable** and use the standard **command for reading a text from the console**:
 ```java 
@@ -115,9 +115,7 @@ I am from Sofia!
 
 # Example: Reading User Input
 
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input + 
-
-interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-17-reading-user-input-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
@@ -125,7 +123,7 @@ interactive-programming-basics-with-java-expressions-and-statements-17-reading-u
 [slide hideTitle]
 # Reading Integers
 
-interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers 
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In order to read an **integer** (not a float) **number** from the console, we have to **declare a variable**, declare the **number type** and use the standard command for **reading a text line** from the system console `scanner.nextLine()` and after that **convert the text line into an integer number** using `Integer.parseInt(text)`:
 
@@ -146,7 +144,7 @@ Later on, we will find out how we can catch these kinds of errors and make the u
 [slide hideTitle]
 # Example: Calculating a Square Area
 
-interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-18-reading-integers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This code demonstrates how we can calculate the square area by the given length of the side:
 ```java
@@ -166,7 +164,7 @@ Here is how the program would work if we had a square with a side length equal t
 [slide hideTitle]
 # Reading Floating-Point Numbers
 
-interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To read a **floating-point number** (fractional number, non-integer) from the console use the following command:
 ```java
@@ -180,7 +178,7 @@ The above Java code first reads a **text line** from the console, then converts 
 [slide hideTitle]
 # Example: Converting Inches into Centimeters
 
-interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-19-reading-floating-point-numbers-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let's write a program that reads a floating-point number in inches and converts it to centimeters:
 ```java
