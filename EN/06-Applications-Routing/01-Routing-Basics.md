@@ -95,7 +95,7 @@ Let us see the cons:
 
 # Multi and Single Page Application Lifecycle
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-10-11-12-13-Multi-SPA-lifecycle-navigation-types-query-parameters-location-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-Multi-page-application-lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Both **Multi Page Application's** and **Single Page Application** have their lifecycle.
 
@@ -124,6 +124,8 @@ The page updates itself without refreshing, which gives the feeling for a lot fa
 [slide hideTitle]
 
 # Navigation Types
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-10-11-12-13-Multi-SPA-lifecycle-navigation-types-query-parameters-location-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two types of navigation: a **standard** one and navigation using **Routing**.
 
