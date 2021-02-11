@@ -5,7 +5,7 @@
 
 ## In this lesson you learned:
 
-For-loops are used when we need to execute a block of code multiple times 
+For-loops are used when we need to execute a block of code multiple times.
 
 * The for-loop syntax consists of: 
    

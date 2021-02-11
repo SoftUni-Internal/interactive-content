@@ -207,8 +207,8 @@ Aici, vedem cum funcționează programul dacă avem un pătrat cu latura egală 
 
 
 [slide hideTitle]
-# Problemă: Greeting
-[code-task title="Greeting" taskId="pb-js-expression-and-statements-lab-Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problemă cu soluția: Greeting
+[code-task title="Greeting" taskId="pb-js-expression-and-statements-lab" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sayHello (input) {
@@ -219,73 +219,6 @@ function sayHello (input) {
 [task-description]
 # Enunț
 Scrieți o funcție care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
-
-## Exemplu
-| **Input** | **Output** |
-| --- | --- |
-| Peter | Hello, Peter |
-
-[/task-description]
-[tests]
-[test]
-[input]
-John
-[/input]
-[output]
-Hello, John
-[/output]
-[/test]
-[test]
-[input]
-Marie
-[/input]
-[output]
-Hello, Marie
-[/output]
-[/test]
-[test]
-[input]
-asd
-[/input]
-[output]
-Hello, asd
-[/output]
-[/test]
-[test]
-[input]
-George
-[/input]
-[output]
-Hello, George
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Soluție: Greeting
-
-[vimeo-video]
-[stream language="EN" videoId="486856341/87210226f4" default /]
-[stream language="RO" videoId="486856341/87210226f4"  /]
-[/video-vimeo]
-
-[code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sayHello (input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Enunț
-Scrieți o funcție care citește datele furnizate de utilizator din consolă: numele și apoi, imprimați. 
-
-`Hello, {name}`, unde `{name}` sunt datele furnizate de utilizator.   
 
 ## Exemplu
 | **Input** | **Output** |
