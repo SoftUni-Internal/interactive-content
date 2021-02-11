@@ -125,7 +125,7 @@ yes
 [code-task title="Notification" taskId="Js-Advanced-Dom-Manipulations-Notification" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function notification(){
+function notification(message){
   // Write your code here
 }
 ```
@@ -352,7 +352,7 @@ function timeConverter(){
 
 Create a program that **converts** different time units.
 
-Your task is to add a **click** event listener to all \`CONVERT\` buttons.
+Your task is to add a **click** event listener to all `CONVERT` buttons.
 
 When a button is **clicked**, read the **corresponding** input field and **display** the converted values inside the other three input fields.
 
@@ -1417,19 +1417,19 @@ The first one is to encode the given message and send it to the receiver.
 
 The second one is to decode the received message and display it.
 
-When the `Encode and send it` button is clicked, you should get the given message from the first textarea.
+When the `Encode and send it` button is clicked, you should get the given message from the first texta rea.
 
 When you get the current message, you should encode it as follows:
 
-- Change the ASCII CODE on every single character in that message by adding 1 to the current ASCII NUMBER that represent the current character in that message.
+- Change the ASCII CODE on every single character in that message by adding 1 to the current ASCII NUMBER that represents the current character in that message.
 
-- Clear the sender textarea and append the encoded message to the receiver textarea.
+- Clear the sender text area and append the encoded message to the receiver text area.
 
-After that, when the `Decode and read it` button is clicked, you need to get the encoded message from the receiver textarea and do the opposite logic:
+After that, when the `Decode and read it` button is clicked, you need to get the encoded message from the receiver text area and do the opposite logic:
 
 - Subtract 1 from the current ASCII NUMBER that represents the current character in that message.
 
-- Replace the encoded message with your decoded message in the receiver textarea to make it readable.
+- Replace the encoded message with your decoded message in the receiver text area to make it readable.
 
 # Example
 
@@ -1683,60 +1683,60 @@ Note: After every search, **clear the input** field and remove all already selec
 
 **Output**
 [image assetsSrc="Dom-Manipulation(17).png" /]
+
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
 // Search for John Dan - First table row must be selected
-document.body.innerHTML = \`
-
- <table class="container">
-        <thead>
-            <tr>
-                <th>Student name</th>
-                <th>Student email</th>
-                <th>Student course</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td colspan="3">
-                    <input type="text" id="searchField" />
-                    <button type="button" id="searchBtn">Search</button>
-                </td>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>John Dan</td>
-                <td>john@john-dan.com</td>
-                <td>JS-CORE</td>
-            </tr>
-            <tr>
-                <td>Max Peterson</td>
-                <td>max@softuni.bg</td>
-                <td>JS-WEB</td>
-            </tr>
-            <tr>
-                <td>Philip Anderson</td>
-                <td>philip@softuni.bg</td>
-                <td>FRONT-END</td>
-            </tr>
-            <tr>
-                <td>Sam Lima</td>
-                <td>sam@gmail.com</td>
-                <td>TECH-JS</td>
-            </tr>
-            <tr>
-                <td>Eva Longoria</td>
-                <td>eva@gmail.com</td>
-                <td>All possible courses</td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="result"></div>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -1744,18 +1744,18 @@ let input = document.getElementById('searchField');
 let button = document.getElementById('searchBtn');
 let rows = document.querySelectorAll('tbody tr');
 
-Array.from(rows).forEach((row) => {
+Array.from(rows).forEach((row) =\> \{
 assert.equal(row.className, '', 'Some of the rows has different className');
-})
+\})
 
 input.value = "John Dan";
 button.click();
 
-assert.equal(rows[0].className, 'select', 'First row has different class name');
-assert.equal(rows[1].className, '', 'Second row has different class name');
-assert.equal(rows[2].className, '', 'Third row has different class name');
-assert.equal(rows[3].className, '', 'Fourth row has different class name');
-assert.equal(rows[4].className, '', 'Fifth row has different class name');
+assert.equal(rows\[0\].className, 'select', 'First row has different class name');
+assert.equal(rows\[1\].className, '', 'Second row has different class name');
+assert.equal(rows\[2\].className, '', 'Third row has different class name');
+assert.equal(rows\[3\].className, '', 'Fourth row has different class name');
+assert.equal(rows\[4\].className, '', 'Fifth row has different class name');
 [/input]
 [output]
 yes
@@ -1764,53 +1764,53 @@ yes
 [test]
 [input]
 // Search for Sam Lima - Fourth table row must be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -1838,53 +1838,53 @@ yes
 [test]
 [input]
 // Search for .bg - Second and Third table row should be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -1912,53 +1912,53 @@ yes
 [test]
 [input]
 // Search for com - First, Fourth, Fifth row should be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -1986,53 +1986,53 @@ yes
 [test]
 [input]
 // Search for "-" - Every row except the last one should be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -2060,53 +2060,53 @@ yes
 [test]
 [input]
 // Search for @ - Every row should be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -2132,53 +2132,53 @@ yes
 [test]
 [input]
 // Search for no-existing string - No one from the rows should be selected
-document.body.innerHTML = \`
-\<table class="container"\>
-\<thead\>
-\<tr\>
-\<th\>Student name\</th\>
-\<th\>Student email\</th\>
-\<th\>Student course\</th\>
-\</tr\>
-\</thead\>
-\<tfoot\>
-\<tr\>
-\<td colspan="3"\>
-\<input type="text" id="searchField" /\>
-\<button type="button" id="searchBtn"\>Search\</button\>
-\</td\>
-\</tr\>
-\</tfoot\>
-\<tbody\>
-\<tr\>
-\<td\>John Dan\</td\>
-\<td\>john@john-dan.com\</td\>
-\<td\>JS-CORE\</td\>
-\</tr\>
-\<tr\>
-\<td\>Max Peterson\</td\>
-\<td\>max@softuni.bg\</td\>
-\<td\>JS-WEB\</td\>
-\</tr\>
-\<tr\>
-\<td\>Philip Anderson\</td\>
-\<td\>philip@softuni.bg\</td\>
-\<td\>FRONT-END\</td\>
-\</tr\>
-\<tr\>
-\<td\>Sam Lima\</td\>
-\<td\>sam@gmail.com\</td\>
-\<td\>TECH-JS\</td\>
-\</tr\>
-\<tr\>
-\<td\>Eva Longoria\</td\>
-\<td\>eva@gmail.com\</td\>
-\<td\>All possible courses\</td\>
-\</tr\>
-\</tbody\>
-\</table\>
-\<div id="result"\>\</div\>
-\`;
+document.body.innerHTML = `
+ \<table class="container"\>
+        \<thead\>
+            \<tr\>
+                \<th\>Student name\</th\>
+                \<th\>Student email\</th\>
+                \<th\>Student course\</th\>
+            \</tr\>
+        \</thead\>
+        \<tfoot\>
+            \<tr\>
+                \<td colspan="3"\>
+                    \<input type="text" id="searchField" /\>
+                    \<button type="button" id="searchBtn"\>Search\</button\>
+                \</td\>
+            \</tr\>
+        \</tfoot\>
+        \<tbody\>
+            \<tr\>
+                \<td\>John Dan\</td\>
+                \<td\>john@john-dan.com\</td\>
+                \<td\>JS-CORE\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Max Peterson\</td\>
+                \<td\>max@softuni.bg\</td\>
+                \<td\>JS-WEB\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Philip Anderson\</td\>
+                \<td\>philip@softuni.bg\</td\>
+                \<td\>FRONT-END\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Sam Lima\</td\>
+                \<td\>sam@gmail.com\</td\>
+                \<td\>TECH-JS\</td\>
+            \</tr\>
+            \<tr\>
+                \<td\>Eva Longoria\</td\>
+                \<td\>eva@gmail.com\</td\>
+                \<td\>All possible courses\</td\>
+            \</tr\>
+        \</tbody\>
+    \</table\>
+    \<div id="result"\>\</div\>
+`;
 
 result();
 
@@ -2203,7 +2203,6 @@ yes
 [/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -2234,7 +2233,7 @@ When the `Buy` button is clicked, get all checkboxes that are marked, and show i
 
 `Bought furniture: {furniture1} {furniture2}...`
 
-On the next line, print the total price in format: `Total price: {totalPrice}`, formatted two digits after the decimal point.
+On the next line, print the total price in the format: `Total price: {totalPrice}`, formatted two digits after the decimal point.
 
 Finally, print the average decoration factor in the format: `Average decoration factor: {decFactor}`.
 
@@ -2728,7 +2727,7 @@ function cards(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/08-Cards.zip) **for this task.**
 
-Create a function that checks cards, shows which one is greater, and keeps history of all hands.
+Create a function that checks cards, shows which one is greater, and keeps the history of all hands.
 
 First, **add click events to all cards**.
 
@@ -2742,7 +2741,7 @@ When cards from **both sides are selected**, check which one is **greater**.
 
 The card that is greater should have a border `2px solid green`, and the other card should have a border `2px solid red`.
 
-You should clear the span elements that hold the current cards' names, when both are selected, and the winner is selected.
+You should clear the span elements that hold the current cards' names when both are selected, and the winner is selected.
 
 After every hand, push the current cards' names in the **history div** in the following format:
 `[{top side card name} vs {bottom side card name}]`
