@@ -43,9 +43,13 @@ console.log(firstNum + secondNum);
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-18-Reading-user-input-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In software systems, the user input could come from many sources, like User Interface (UI) controls.
+
 You have a text box that says `please type your username and type your password`, then you click the login button. 
+
 This is a way to receive user's input.
+
 Programs can also take the user data (input) from some rest API or as parameter in a function.
+
 [/slide]
 
 [slide hideTitle]
