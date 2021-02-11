@@ -17,9 +17,10 @@ We can track **line by line** what happens in our program, what path it follows,
 
 [slide hideTitle]
 
+# Debugging in IntelliJ IDEA 
+
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# Debugging in IntelliJ IDEA 
 By pressing the `[Shift + F9]` button, we run the program in **debug mode**. We move to **the next line** with `[F7]`.
 
 [image assetsSrc="conditional-statements-debug.png" /]
