@@ -197,69 +197,11 @@ Here is how the program would work if we had a square with a side length equal t
 
 
 [slide hideTitle]
-# Problem: Greeting
-[code-task title="Greeting" taskId="pb-js-expression-and-statements-lab-Greeting"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sayHello (input) {
-   // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
-
-## Example
-| **Input** | **Output** |
-| --- | --- |
-| Peter | Hello, Peter |
-
-[/task-description]
-[tests]
-[test]
-[input]
-John
-[/input]
-[output]
-Hello, John
-[/output]
-[/test]
-[test]
-[input]
-Marie
-[/input]
-[output]
-Hello, Marie
-[/output]
-[/test]
-[test]
-[input]
-asd
-[/input]
-[output]
-Hello, asd
-[/output]
-[/test]
-[test]
-[input]
-George
-[/input]
-[output]
-Hello, George
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Greeting
+# Problem with Solution: Greeting
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-23-Problem-Greeting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Greeting" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Greeting" taskId="pb-js-expression-and-statements-Greeting"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function sayHello (input) {
@@ -274,11 +216,11 @@ Write a function, which reads the user input from the console: name and then pri
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| Peter | Hello, Peter |
+| John | Hello, John |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 John
 [/input]
