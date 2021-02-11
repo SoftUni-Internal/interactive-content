@@ -138,8 +138,11 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Bonus Points
-[code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-lab-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem with Solution: Bonus Points
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem and Solution-Bonus-Points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function bonusPoints(input) {
@@ -194,64 +197,7 @@ Write a program that applies bonus to given points
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Bonus Points
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-23-Problem and Solution-Bonus-Points-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function bonusPoints(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that applies bonus to given points
-
-* If points are between **0** and **3**, adds **5**
-
-* If points are between **4** and **6**, adds **15**
-
-* If points are between **7** and **9**, adds **20**
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|4| 19 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-19
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
 # Logical "OR" Operator
@@ -306,13 +252,12 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 [/slide]
 
 [slide hideTitle]
-# Problem: Food or Drink
-
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Problem-Food-Or-Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problem with Solution: Food or Drink
 
 
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Solution-only-Food Or Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-lab-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
@@ -373,72 +318,7 @@ unknown
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Food or Drink
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-25-Solution-only-Food Or Drink-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function foodOrDrink(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads single line and print **drink**, **food** or **unknown**
-
-* Foods: curry, noodles, sushi, spaghetti
-
-* Drinks: tea, water, coffee
-
-* Everything else is unknown
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|curry| food |
-
-
-| **Input** | **Output** |
-| --- | --- |
-|flower| unknown |
-
-[/task-description]
-[tests]
-[test]
-[input]
-curry
-[/input]
-[output]
-food
-[/output]
-[/test]
-[test]
-[input]
-tea
-[/input]
-[output]
-drink
-[/output]
-[/test]
-[test]
-[input]
-something
-[/input]
-[output]
-unknown
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
 
 [slide hideTitle]
 # Logical "NOT" Operator

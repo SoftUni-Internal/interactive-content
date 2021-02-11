@@ -80,9 +80,9 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul alt
 
 [slide hideTitle]
 
-# Problemă: Marketplace
+# Problemă cu soluția: Marketplace
 
-[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-lab-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
@@ -137,71 +137,11 @@ Weekend
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Marketplace
-[vimeo-video]
-[stream language="EN" videoId="486869990/380a476703" default /]
-[stream language="RO" videoId="486869990/380a476703"  /]
-[/video-vimeo]
-
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function marketPlace(input) {
- // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-
-- Citește un **produs** și o zi de pe consolă
-
-- Imprimă **prețul**, formatat la două decimele, pe baza tabelului de mai jos:
-
-| Product      | Weekday | Weekend   |
-| :---:       |    :----:   |   :---:     |
-| Banana      | 2.50       | 2.70 |
-| Apple       | 1.30        | 1.60    |
-| Kiwi        | 2.20        | 3.00    |
-
-# Exemplu
-| **Input** | **Output** |
-| --- | --- |
-| `['Banana', 'Weekday']`| 2.50 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Banana
-Weekday
-[/input]
-[output]
-2.50
-[/output]
-[/test]
-[test]
-[input]
-Apple
-Weekend
-[/input]
-[output]
-1.60
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problemă: Biggest Number of Three
+# Problemă cu soluția: Biggest Number of Three
 
-[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-lab-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function biggestNumberOfThree(input) {
@@ -260,71 +200,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-
-# Soluție: Biggest Number of Three
-
-[vimeo-video]
-[stream language="EN" videoId="486870661/f4c774cc7b" default /]
-[stream language="RO" videoId="486870661/f4c774cc7b"  /]
-[/video-vimeo]
-
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function biggestNumberOfThree(input) {
-  // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-
-# Descriere
-Scrieți un program care:
-
-* Citește **3 numere** de pe consolă
-
-* Tipărește cel mai mare număr
-
-# Exemplu
-| **Input** | **Output** |
-| --- | --- |
-|`['1', '2', '3']`| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
--1
--5
--9
-[/input]
-[output]
--1
-[/output]
-[/test]
-[test]
-[input]
-1
-5
-3
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

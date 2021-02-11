@@ -67,8 +67,12 @@ It **has to be avoided**, mostly through optimization of the structure/the algor
 [/slide]
 
 [slide hideTitle]
-# Problem: Marketplace
-[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-lab-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem with Solution: Marketplace
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+[code-task title="Marketplace" taskId="pb-js-conditional-statements-advanced-Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function marketPlace(input) {
@@ -124,65 +128,12 @@ Weekend
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Marketplace
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-15-16-Problem-and-Solution-Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function marketPlace(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that: 
-
-- Reads a **product** and a day from the console. 
-
-- Prints the **price**, formatted to 2nd digit, based on the price table below: 
-
-| Product      | Weekday | Weekend   |
-| :---:       |    :----:   |   :---:     |
-| Banana      | 2.50       | 2.70 |
-| Apple   | 1.30        | 1.60    |
-| Kiwi   | 2.20        | 3.00    |
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-| `['Banana', 'Weekday']`| 2.50 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Banana
-Weekday
-[/input]
-[output]
-2.50
-[/output]
-[/test]
-[test]
-[input]
-Apple
-Weekend
-[/input]
-[output]
-1.60
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Biggest Number of Three
+# Problem with Solution: Biggest Number of Three
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem and Solution-Biggest number of three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Biggest Number of Three" taskId="pb-js-conditional-statements-advanced-lab-Biggest-Number of-Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -241,64 +192,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Biggest Number of Three
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-17-18-Problem and Solution-Biggest number of three-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function biggestNumberOfThree(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-  * Reads **3 numbers** from the console
-  * Prints the **greatest** number
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|`['1', '2', '3']`| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
--1
--5
--9
-[/input]
-[output]
--1
-[/output]
-[/test]
-[test]
-[input]
-1
-5
-3
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]

@@ -85,8 +85,12 @@ if (color == "red") {
 [/slide]
 
 [slide hideTitle]
-# Problem: Even or Odd
-[code-task title="Even or Odd" taskId="pb-js-conditional-statements-lab-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problem with Solution: Even or Odd
+
+[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+[code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
@@ -108,65 +112,6 @@ Write a program, which checks if a number is **even** or **odd**
 | 4 | even |
 | 7 | odd |
 
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-even
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-odd
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-even
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Even or Odd
-
-[video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-20-Problem-Solution-Even-or-Odd-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function evenOrOdd(input) {
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which checks if a number is **even** or **odd**
-
-  * If it is even, print `even`
-  * If it is odd, print `odd`
-
-# Example
-
-| **Input** | **Output** |
-| --- | --- |
-| 4 | even |
-| 7 | odd |
 
 [/task-description]
 [tests]

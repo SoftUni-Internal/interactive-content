@@ -138,9 +138,9 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problemă: Bonus Points
+# Problemă cu soluția: Bonus Points
 
-[code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-lab-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bonus Points" taskId="pb-js-conditional-statements-advanced-Bonus-Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function bonusPoints(input) {
@@ -194,69 +194,7 @@ Scrieți un program care aplică un bonus punctelor date
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Bonus Points
-[vimeo-video]
-[stream language="EN" videoId="486871642/75ebf87fb1" default /]
-[stream language="RO" videoId="486871642/75ebf87fb1"  /]
-[/video-vimeo]
 
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function bonusPoints (input) {
- // Scrieți codul dvs. aici
-}
-```
-
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care aplică un bonus punctelor date
-
-* Dacă punctele sunt între **0** și **3**, se adaugă **5**
-
-* Dacă punctele sunt între **4** și **6**, se adaugă **15**
-
-* Dacă punctele sunt între **7** și **9**, se adaugă **20**
-
-# Exemplu
-| **Intrare** | **Ieșire** |
-| --- | --- |
-|4| 19 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-19
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
 # Operator logic "SAU" 
@@ -311,14 +249,14 @@ Ajungând la `b`, înțelege că are o valoare `adevărată` și întreaga **exp
 [/slide]
 
 [slide hideTitle]
-# Problemă: Food or Drink
+# Problemă cu soluția: Food or Drink
 
 [vimeo-video]
 [stream language="EN" videoId="488477836/b40ae06b15" default /]
 [stream language="RO" videoId="488477836/b40ae06b15"  /]
 [/video-vimeo]
 
-[code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-lab-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Food or Drink" taskId="pb-js-conditional-statements-advanced-Food-or-Drink" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function foodOrDrink(input) {
@@ -379,75 +317,6 @@ unknown
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Food or Drink
-
-[vimeo-video]
-[stream language="EN" videoId="488477876/d4fe816fbd" default /]
-[stream language="RO" videoId="488477876/d4fe816fbd"  /]
-[/video-vimeo]
-
-
-[code-task title="Mâncare sau băutură" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function foodOrDrink(input) {
- // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-
-* Citește o singură linie și tipărește **băutură**, **mâncare** sau **necunoscută**
-
-* Alimente: curry, fidea, sushi, spaghete
-
-* Băuturi: ceai, apă, cafea
-
-* Orice altceva este necunoscut
-
-# Exemplu
-| ***Intrare** | **Ieșire** |
-| --- | --- |
-|curry| food |
-
-
-| **Intrare** | **Ieșire** |
-| --- | --- |
-|flower| unknown |
-
-[/task-description]
-[tests]
-[test]
-[input]
-curry
-[/input]
-[output]
-food
-[/output]
-[/test]
-[test]
-[input]
-tea
-[/input]
-[output]
-drink
-[/output]
-[/test]
-[test]
-[input]
-something
-[/input]
-[output]
-unknown
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-[/slide]
 
 [slide hideTitle]
 # Operator logic "NU"

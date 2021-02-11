@@ -97,8 +97,8 @@ if (color == "red") {
 
 [slide hideTitle]
 
-# Problemă: Even or Odd
-[code-task title="Even or Odd" taskId="pb-js-conditional-statements-lab-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+# Problemă cu soluția: Even or Odd
+[code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 function evenOrOdd(input) {
@@ -151,68 +151,4 @@ even
 [/code-task]
 
 [/slide]
-
-[slide hideTitle]
-# Solutie: Even or Odd
-
-[vimeo-video]
-[stream language="EN" videoId="486879240/35e90b72ee" default /]
-[stream language="RO" videoId="486879240/35e90b72ee"  /]
-[/video-vimeo]
-
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```js
-function evenOrOdd(input) {
- // Scrieți codul dvs. aici
-}
-```
-[/code-editor]
-[task-description]
-# Descriere 
-Scrieți un program, care verifică dacă un număr este **egal** sau **impar**
-
-* Daca este egal,tipariti   `Even`
-* Dacă este impar, tipariti `Odd`
-
-# Exemplu
-| **Input** | **Output** |
-| --- | --- |
-| 4 | even |
-| 7 | odd |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-even
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-odd
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-even
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-
-
 
