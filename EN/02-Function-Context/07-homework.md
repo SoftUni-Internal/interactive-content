@@ -321,18 +321,20 @@ yes
 
 [slide hideTitle]
 # Ex.Problem: HEX
-[code-task title="Ex.Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+
+[code-task title="Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
+
 ```
 class Hex {
-    // TODO: implement this class...
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 
 **1. Your Task**
-Write a Hex Class, Which Supports the Described Functionality Below.
+Write a Hex class, which supports the described functionality below.
 
 **2. Functionality**
 
@@ -342,20 +344,20 @@ Should have **1** property:
 - **value** - number
 
 Functions:
-- `ValueOf()`
-This Function Should Return the Value Property of the Hex Class
+- `ValueOf()`:
+This function should return the value property of the Hex class.
 
-- `ToString()`
-This function will show its hexidecimal value starting with `0x`
+- `ToString()`:
+This function will show its hexidecimal value starting with `0x`.
 
-- `Plus({number})`
-This function should add a number or a Hex object and return a new Hex object
+- `Plus({number})`:
+This function should add a number or a Hex object and return a new Hex object.
 
-- `Minus({number})`
-This function should subtract a number or a Hex object and return a new Hex object
+- `Minus({number})`:
+This function should subtract a number or a Hex object and return a new Hex object.
 
-- `Parse({string})`
-Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers
+- `Parse({string})`:
+Create a parse class method that can parse Hexidecimal numbers and convert them to standard decimal numbers.
 
 **3. Submission**
 Submit only your **Hex class**.
