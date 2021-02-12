@@ -98,19 +98,15 @@ yes
 
 [slide]
 # Problem: Currency Format
-[code-task title="Problem: Currency Format" taskId="js-advanced-advanced-functions-homework-problem-02" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Currency Format" taskId="js-advanced-advanced-functions-homework-Currency-Format" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function currencyFormatter(separator, symbol, symbolFirst, value) {
-    let result = Math.trunc(value) + separator;
-    result += value.toFixed(2).substr(-2,2);
-    if (symbolFirst) return symbol + ' ' + result;
-    else return result + ' ' + symbol;
+function currencyFormatter(separator, symb, symbolFirst, value) {
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a **higher-order** function that fixes some of the parameters of another function. 
 
@@ -149,7 +145,7 @@ You need to **return a function** that takes one parameter - **value**.
 
 ## Example
 
-**Input\:**
+**Input/Output**
 
 ```js
 let dollarFormatter = result(currencyFormatter);
