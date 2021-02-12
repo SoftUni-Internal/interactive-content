@@ -1394,7 +1394,6 @@ At the end you must **print the highest calculated** snowballValue.
 
 # Testing Function Adapter JS
 
-
 [code-task title="Building" taskId="pb-js-testing-function" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
