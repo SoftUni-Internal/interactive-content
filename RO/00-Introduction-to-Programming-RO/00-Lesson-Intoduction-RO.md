@@ -1,5 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Lesson-Introduction"
-
+// sectionId: "Javascript-Programming-Basics-Lesson-Introduction-RO"
 
 # Lecție introductivă
 
