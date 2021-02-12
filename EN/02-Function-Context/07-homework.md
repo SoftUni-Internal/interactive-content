@@ -811,7 +811,7 @@ yes
 [code-task title="Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function nextArticle(articles) {
+function getArticleGenerator(articles) {
     // Write your code here
 }
 ```
@@ -888,20 +888,20 @@ Return a **function** that displays the array elements on the web page.
 [test open]
 [input]
 document.body.innerHTML = `
-\<div id="content"\>\</div\>
-\<button\>Show Next Article\</button\>
+<div id="content"></div>
+<button>Show Next Article</button>
 `;
 
 expect(typeof result).to.equal('function', "Your solution must be a function");
 expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
 
-let articles =\[
+let articles =[
     "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
     "A group of cats is called a clowder.",
     "Cats have over 20 muscles that control their ears.",
     "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
     "The world's largest cat measured 48.5 inches long."
-\];
+];
 let showNext = result(articles);
 expect(typeof showNext).to.equal('function', "Your solution did not return a function");
 expect(showNext.length).to.equal(0, "The returned function should be parameterless");
@@ -913,25 +913,25 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="content"\>\</div\>
-\<button\>Show Next Article\</button\>
+<div id="content"></div>
+<button>Show Next Article</button>
 `;
 
-let articles =\[
+let articles =[
     "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
     "A group of cats is called a clowder.",
     "Cats have over 20 muscles that control their ears.",
     "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
     "The world's largest cat measured 48.5 inches long."
-\];
-let showNext = result(Object.assign(\[\], articles));
-let contentHolder = \\$('\#content');
+];
+let showNext = result(Object.assign([], articles));
+let contentHolder = $('#content');
 expect(contentHolder.text()).to.equal('', "Do not modify the content before the button is clicked");
 showNext();
-expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
+expect(contentHolder.text()).to.contains(articles[0], "First article is missing after click");
 showNext();
-expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
-expect(contentHolder.text()).to.contains(articles\[1\], "Second article is missing after click");
+expect(contentHolder.text()).to.contains(articles[0], "First article is missing after click");
+expect(contentHolder.text()).to.contains(articles[1], "Second article is missing after click");
 showNext();
 showNext();
 showNext();
@@ -945,20 +945,20 @@ yes
 [test]
 [input]
 document.body.innerHTML = `
-\<div id="content"\>\</div\>
-\<button\>Show Next Article\</button\>
+<div id="content"></div>
+<button>Show Next Article</button>
 `;
 
 expect(typeof result).to.equal('function', "Your solution must be a function");
 expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
 
-let articles =\[
+let articles =[
     "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
     "A group of cats is called a clowder.",
     "Cats have over 20 muscles that control their ears.",
     "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
     "The world's largest cat measured 48.5 inches long."
-\];
+];
 let showNext = result(articles);
 expect(typeof showNext).to.equal('function', "Your solution did not return a function");
 expect(showNext.length).to.equal(0, "The returned function should be parameterless");
