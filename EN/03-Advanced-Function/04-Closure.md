@@ -81,7 +81,7 @@ function commandProcesso() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that keeps a string **inside its context** and can execute different **commands** that modify or print the string on the console.
 
@@ -103,7 +103,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 
 ## Examples
 
-| **Sample Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 | `let firstZeroTest = solution();` | loa | 
 |  |  |
@@ -112,7 +112,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 | `firstZeroTest.removeStart(3);` | |
 | `firstZeroTest.removeEnd(4);` | |
 
-| **Sample Input** | **Output** |
+| **Input** | **Output** |
 | --- | --- |
 | `let secondZeroTest = solution();` | 34 | 
 |  |  |
@@ -128,9 +128,9 @@ Whenever you receive the command **print**, the output should be the **printed**
 [test]
 [input]
 // Acquire console
-let log = \[\];
+let log = [];
 let oldcon = console.log;
-console.log = (string) =\> log.push(string);
+console.log = (string) => log.push(string);
 
 let firstZero = result();
 let secondZero = result();
@@ -151,8 +151,8 @@ secondZero.print();
 // Restore the console
 console.log = oldcon;
 
-assert.equal(log\[0\], '78', 'Printed wrong value.');
-assert.equal(log\[1\], 'low', 'Printed wrong value.');
+assert.equal(log[0], '78', 'Printed wrong value.');
+assert.equal(log[1], 'low', 'Printed wrong value.');
 [/input]
 [output]
 yes
@@ -160,10 +160,10 @@ yes
 [/test]
 [test]
 [input]
-// Acquire console
-let log = \[\];
+/// Acquire console
+let log = [];
 let oldcon = console.log;
-console.log = (string) =\> log.push(string);
+console.log = (string) => log.push(string);
 
 let firstZero = result();
 let secondZero = result();
@@ -184,8 +184,8 @@ secondZero.print();
 // Restore the console
 console.log = oldcon;
 
-assert.equal(log\[0\], '34', 'Printed wrong value.');
-assert.equal(log\[1\], 'loa', 'Printed wrong value.');
+assert.equal(log[0], '34', 'Printed wrong value.');
+assert.equal(log[1], 'loa', 'Printed wrong value.');
 [/input]
 [output]
 yes
