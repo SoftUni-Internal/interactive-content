@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Welcome-To-Coding"
+// sectionId: "Javascript-Programming-Basics-Lesson-Introduction"
 
 [slide hideTitle]
 # What is Coding?
