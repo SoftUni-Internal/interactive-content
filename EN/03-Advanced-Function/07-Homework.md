@@ -219,11 +219,14 @@ yes
 
 [slide]
 # Problem: Filter Employees
-[code-task title="Problem: Filter Employees" taskId="js-advanced-advanced-functions-homework-problem-03" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Problem: Filter Employees" taskId="js-advanced-advanced-functions-homework-Filter-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
+
 ```
 function solution() {
     // Write your solution here
+    // Node.js, fix test when strategy is ready
 }
 ```
 [/code-editor]
@@ -242,7 +245,7 @@ You should **parse** the input, find all employees that fulfills the criteria an
 
 You will receive a **string** with all the employees, and the **criteria** by which you should sort the employees.
 
-If the criteria is **"all"** print all the employees in the given format.
+If the criteria is `all` print all the employees in the given format.
 
 ## Output
 
@@ -398,10 +401,10 @@ gender-Female
 
 [slide]
 # Problem: Sort Array
-[code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-problem-04" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-Sort-Array" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solution() {
+function sortArray() {
     // Write your code here
 }
 ```
@@ -497,19 +500,19 @@ yes
 
 [slide]
 # Problem: Argument Info
-[code-task title="Problem: Argument Info" taskId="js-advanced-advanced-functions-homework-problem-05" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solution() {
+function argumentInfo() {
     // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
-Write a function that displays **information** about the **arguments** which are passed to it \(**type** and **value**\) and a **summary** about the number of each type in the following format: 
+Write a function that displays **information** about the **arguments** which are passed to it (**type** and **value**) and a **summary** about the number of each type in the following format: 
 
 `{argument type}: {argument value}`
 
@@ -531,13 +534,13 @@ You will receive a series of arguments **passed** to your function.
 
 ## Example
 
-**Input\:**
+**Input**
 
 ```js
 'cat', 42, function () { console.log('Hello world!'); }
 ```
 
-**Output\:**
+**Output**
 
 ```
 string: cat
@@ -740,10 +743,10 @@ yes
 
 [slide]
 # Problem: Personal BMI
-[code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-problem-06" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-Personal-BMI" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solution() {
+function personalBmi() {
     // Write your code here
 }
 ```
@@ -932,10 +935,11 @@ yes
 
 [slide]
 # Problem: Vector Math
-[code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-problem-07" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+
+[code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-Vector-Math" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solution() {
+function vectorMath() {
     // Write your code here
 }
 ```
@@ -1145,10 +1149,10 @@ yes
 
 [slide]
 # Problem: Breakfast Robot
-[code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-problem-08" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-Breakfast-Robot" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solution() {
+function breakfastRobot() {
     // Write your code here
 }
 ```
@@ -1160,7 +1164,9 @@ function solution() {
 *Robots take care of everything and man has been freed from the mundane tasks of everyday life.*
 *There is still work to be done though since those robots need to be programmed first. We may have robot chefs, but we do not yet have robot software developers.*
 
-Your task is to write the management software for a breakfast chef robot. It needs to **take orders**, keep track of available **ingredients** and output an **error** if something is wrong. 
+Your task is to write the management software for a breakfast chef robot. 
+
+It needs to **take orders**, keep track of available **ingredients** and output an **error** if something is wrong. 
 
 The cooking instructions have already been installed, so your module needs to **plug into** the system and only take care of **orders** and **ingredients**. 
 
