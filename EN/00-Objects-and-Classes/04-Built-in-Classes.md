@@ -192,7 +192,7 @@ System.out.println(isValid);
 [/slide]
 
 [slide hideTitle]
-# Solution: Randomize Words
+# Problem with Solution: Randomize Words
 [code-task title="Randomize Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -333,7 +333,7 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum Big Numbers
+# Problem with Solution: Sum Big Numbers
 [code-task title="Sum Big Numbers" taskId="java-fund-16-Objects-and-Classes-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -445,117 +445,7 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 [/slide]
 
 [slide hideTitle]
-# Solution: Sum Big Numbers
-[code-task title="Sum Big Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.math.BigInteger;
-import java.util.Scanner;
-
-public class SumBigNumbers {
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
-
-## Examples
-
-| **Input** | **Output** |
-| --- | --- |
-| 923847238931983192462832102 | 934573817465075391826664309019448 |
-| 934572893617836459843471846187346 | |
-
-| **Input** | **Output** |
-| --- | --- |
-| 4 | 104 | 
-| 100 | | 
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-4
-100
-[/input]
-[output]
-104
-[/output]
-[/test]
-[test open]
-[input]
-923847238931983192462832102
-934572893617836459843471846187346
-[/input]
-[output]
-934573817465075391826664309019448
-[/output]
-[/test]
-[test]
-[input]
-1234567890
-1234567890
-[/input]
-[output]
-2469135780
-[/output]
-[/test]
-[test]
-[input]
-129830419415091450143
-3478410041470111511474904
-[/input]
-[output]
-3478539871889526602925047
-[/output]
-[/test]
-[test]
-[input]
-999999999999999999999999999999999999999
-9999999999999999999999999999999999
-[/input]
-[output]
-1000009999999999999999999999999999999998
-[/output]
-[/test]
-[test]
-[input]
-00001
-0000002
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
-982374328974238974913824792347
-3127642874284682374
-[/input]
-[output]
-982374328977366617788109474721
-[/output]
-[/test]
-[test]
-[input]
-9999
-1
-[/input]
-[output]
-10000
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Big Factorial
+# Problem with Solution: Big Factorial
 [code-task title="Big Factorial" taskId="java-fund-16-Objects-and-Classes-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -657,105 +547,3 @@ Calculate **Factorial of N** and print the result.
 [/code-task]
 [/slide]
 
-
-[slide hideTitle]
-# Solution: Big Factorial
-[code-task title="Big Factorial" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.math.BigInteger;
-import java.util.Scanner;
-
-public class BigFactorial {
-    public static void main(String[] args) {
-        // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-You will receive N – number in range **\[0 – 1000]**.
-
-Calculate **Factorial of N** and print the result.
-
-## Examples
-
-| **Input** | **Output** |
-| --- | --- |
-| 5 | 120 |
-
-| **Input** | **Output** |
-| --- | --- |
-| 50 | 30414093201713378043612608166064768844377641568960512000000000000 |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-5
-[/input]
-[output]
-120
-[/output]
-[/test]
-[test open]
-[input]
-50
-[/input]
-[output]
-30414093201713378043612608166064768844377641568960512000000000000
-[/output]
-[/test]
-[test]
-[input]
-10
-[/input]
-[output]
-3628800
-[/output]
-[/test]
-[test]
-[input]
-12
-[/input]
-[output]
-479001600
-[/output]
-[/test]
-[test]
-[input]
-88
-[/input]
-[output]
-185482642257398439114796845645546284380220968949399346684421580986889562184028199319100141244804501828416633516851200000000000000000000
-[/output]
-[/test]
-[test]
-[input]
-101
-[/input]
-[output]
-9425947759838359420851623124482936749562312794702543768327889353416977599316221476503087861591808346911623490003549599583369706302603264000000000000000000000000
-[/output]
-[/test]
-[test]
-[input]
-250
-[/input]
-[output]
-3232856260909107732320814552024368470994843717673780666747942427112823747555111209488817915371028199450928507353189432926730931712808990822791030279071281921676527240189264733218041186261006832925365133678939089569935713530175040513178760077247933065402339006164825552248819436572586057399222641254832982204849137721776650641276858807153128978777672951913990844377478702589172973255150283241787320658188482062478582659808848825548800000000000000000000000000000000000000000000000000000000000000
-[/output]
-[/test]
-[test]
-[input]
-333
-[/input]
-[output]
-10334465434588059156093965538297516550622260041682062823432902469783188597914276568552700194849877929894375950252570477080418352732597658745665925604704669227133726477243854317836635130694123893711638533001980496229875665476598568821806170303765540489814402234159901540440432134155844542962445153646330595588291605924429211352279943471372817279938720974895260387784578239150931816946786416232516666251965421919651838044618050991294403546958930745419743836966520198735201123255884089263272829846640538826979843642885775791641575109178753509580001660392092396798648924375401024147883702298145910046889402880394195369984000000000000000000000000000000000000000000000000000000000000000000000000000000000
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
