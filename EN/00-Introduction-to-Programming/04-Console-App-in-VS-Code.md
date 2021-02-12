@@ -1,4 +1,3 @@
-
 // sectionId: "Javascript-Programming-Basics-Console-App-In-VS-Code"
 
 [slide hideTitle]
