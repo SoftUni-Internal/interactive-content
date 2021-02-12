@@ -1,41 +1,47 @@
-[slide]
+[slide hideTitle]
 # Objects
 
-An object is **basic unit** and an **instance of a class**.
-Classes define templates for objects: fields, constructors, methods.
+An object is a **basic unit** and an **instance of a class**.
 
-Example:
+Classes define templates for objects like **fields**, **constructors**, and **methods**.
 
-- Sample class: LocalDate
+This is how **objects** can be derived from a **class**:
 
-- Sample objects: birthdayPeter, birthdayMaria
+- `LocalDate` - A sample **class**
 
+- `birthdayPeter` and `birthdayMaria` - Sample **objects**
 
 An object represents **real-life subjects**. 
 
 If you compare the software object with a real-world object, they have very similar characteristics.
-You can find many objects around us: cars from class Vehicle, dogs from class Animal, humans from class Person, etc.
+
+You can find many objects around us like: 
+
+- Cars from class Vehicle 
+
+- Dogs from class Animal 
+
+- Humans from class Person
 
 [/slide]
 
 
-[slide]
-# Definition of Object
+[slide hideTitle]
+# Definition of an Object
 
 An object has:
 
-- state, which is represented by **fields**.
+- **state** - represented by **fields**
 
-- behavior, which is represented by **methods** - an object interacts with another object by invoking methods. 
+- **behavior** - represented by **methods**, which are used for object interaction 
 
-- identity, which gives a **unique name** to an object.
+- **identity** - gives a **unique name** to an object
 
+In real life, dogs have a **breed** state and **barking** behavior.
 
-Real-life example: A dog has states - color, name, breed; and behaviors – barking, eating, wagging the tail. 
+An object holds a set of **named values**.
 
-
-An object holds a set of named values.
-Example: birthday object holds the day, month and year.
+A birthday object, for example, will have values like `day`, `month`, `year` etc.
 
 ```java live no-template
 import java.time.LocalDate;
@@ -48,18 +54,27 @@ public class Main {
     }
 }
 ```
-
 [/slide]
 
 
-[slide]
-# Create an Object
+[slide hideTitle]
+# Creating an Object
 
-Creating an object of a defined class is called **instantiation**.
-The **instance** is the object itself, which is created runtime.
+Creating an object based on a predefined class is called **instantiation**.
+
+The **instance** is the object itself, which is created at runtime.
+
 All instances have common **behavior**. 
 
-To create an object first declare **main method**, then specify the **class name**, followed by the **object name**, and use the **keyword** `new`:
+To create an object: 
+
+1) Declare the `main` **method**
+
+2) Specify the **class name** 
+
+3) Set an **object name**
+
+4) Use the `new` **keyword** 
 
 ```java
 public class Animal {
@@ -96,7 +111,7 @@ public class Animal {
 }
 ```
 
-You can create multiple objects of one class.
+You can create **multiple objects** out of one class.
 
 ```java
 public class Animal {

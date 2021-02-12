@@ -1,18 +1,29 @@
-[slide]
+[slide hideTitle]
 # Built-in Classes
 
-Java provides **ready-to-use** classes, which are organized inside **Packages**. These classes provide predefined methods and fields that help to save time and effort in writing code and repeating it.
+Java provides **ready-to-use** classes, which are organized inside **Packages**. 
 
-Example: `java.util.Scanner;` `java.utils.List;` `java.lang.Math;` `java.math.BigInteger;`
+These classes provide **predefined methods** and **fields** that help to save time and effort in writing code and repeating it.
 
+Some of these methods are:
 
-Using **static** Java classes and their methods requires only to call the class name and the needed method:
+- `java.util.Scanner` 
+
+- `java.utils.List` 
+
+- `java.lang.Math` 
+
+- `java.math.BigInteger`
+
+Using **static** Java classes and their methods requires only calling the class name and the needed method:
+
 ```java
 LocalDateTime today = LocalDateTime.now();
 double cosine = Math.cos(Math.PI);
 ```
 
 Using **non-static** Java classes and their methods requires creating object (instance) of the current class:
+
 ```java
 Random rnd = new Random();
 int randomNumber = rnd.nextInt(10);
@@ -20,10 +31,11 @@ int randomNumber = rnd.nextInt(10);
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Math
 
-Math class methods are **static** and help to perform the **numeric operations** and commonly used **mathematical functions** like:
+`Math` class methods are **static** and help performing the **numeric operations** and commonly used **mathematical functions** like:
+
 - rounding
 
 - comparing
@@ -38,73 +50,97 @@ Math class methods are **static** and help to perform the **numeric operations**
 
 - trigonometric operations.
 
-Math methods include:
+`Math` methods include:
 
-- `abs(a)` : Returns the absolute value of the passed parameter `a`
+- `abs(a)` - Returns the absolute value of the passed parameter `a`
+
 ```java live
 int a = Math.abs(5);
 int b = Math.abs(-10);
 System.out.println(a);
 System.out.println(b);
 ```
-- `ceil(a)` : Rounds a floating point value `a` up to the nearest integer value, returned as a `double`
+
+- `ceil(a)` - Rounds a floating point value `a` up to the nearest integer value, returned as a `double`
+
 ```java live
 double ceil = Math.ceil(8.357);
 System.out.println(ceil);
 ```
-- `floor(a)` : Rounds a floating point value `a` down to the nearest integer value, returned as a `double`
+
+- `floor(a)` - Rounds a floating point value `a` down to the nearest integer value, returned as a `double`
+
 ```java live
 double floor = Math.floor(8.357);
 System.out.println(floor);
 ```
-- `max(a, b)` : Returns the largest of two values passed as parameter
+
+- `max(a, b)` - Returns the largest of two values passed as parameter
+
 ```java live
 int max = Math.max(5, 10);
 System.out.println(max);
 ```
-- `min(a, b)` : Returns the smallest of two values passed as parameter
+
+- `min(a, b)` - Returns the smallest of two values passed as parameter
+
 ```java live
 int min = Math.min(5, 10);
 System.out.println(min);
 ```
-- `round(a)` : Rounds a float or double to the nearest integer using normal math round rules (either up or down)
+
+- `round(a)` - Rounds a float or double to the nearest integer using normal math round rules (either up or down)
+
 ```java live
 double roundedDown = Math.round(29.459);
 double roundedUp = Math.round(29.549);
 System.out.println(roundedDown);
 System.out.println(roundedUp);
 ```
-- `pow(a, b)` : Returns the value of the first parameter `a` raised to the power of the second parameter `b`
+
+- `pow(a, b)` - Returns the value of the first parameter `a` raised to the power of the second parameter `b`
+
 ```java live
 double number = Math.pow(3,2);
 System.out.println(number);
 ```
-- `sqrt(a)` : Calculates the square root of the given parameter `a`
+
+- `sqrt(a)` - Calculates the square root of the given parameter `a`
+
 ```java live
 double number = Math.sqrt(9);
 System.out.println(number);
 ```
-- `toDegrees(a)` : Converts an angle in radians to degrees
+
+- `toDegrees(a)` - Converts an angle in radians to degrees
+
 ```java live
 double degrees = Math.toDegrees(3.141592653589793);
 System.out.println(degrees);
 ```
-- `toRadians(a)` : Reverse of `toDegrees`, converts an angle in degrees to radians
+
+- `toRadians(a)` - Reverse of `toDegrees`, converts an angle in degrees to radians
+
 ```java live
 double radians = Math.toRadians(180);
 System.out.println(radians);
 ```
-- Trigonometric Functions - calculate the value of come angle value in radians `sin(a)` `cos(a)` `tan(a)`
+
+- Trigonometric Functions - Calculate the value of angles in radians `sin(a)` `cos(a)` `tan(a)`
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Random
 
-The class `java.util.Random;` is used to generate random numbers of types integer, float, double, long. It can also generate random boolean type and return result between `true` or `false`. 
+The class `java.util.Random` is used to generate random numbers of types **integer**, **float**, **double**, **long**. 
+
+It can also generate a random boolean type and return a result between `true` or `false`.
+
 Random class methods are **not-static**.
 
-Declare a Random:
+The following code is an example of how to create a `Random` **instance**:
+
 ```java
 import java.util.Random;
 
@@ -115,10 +151,9 @@ public class Main {
 }
 ```
 
-Random methods include:
+These are some of the `Random` methods:
 
-* `nextInt()` - Returns next pseudorandom `int` value from random number sequence. 
-If you press the `Run` button several times you will see different results on the console.
+- `nextInt()` - Returns the next pseudorandom `int` value from random number sequence. 
 
 ```java live
 Random random = new Random();
@@ -126,7 +161,7 @@ int number = random.nextInt();
 System.out.println(number);
 ```
 
-- `nextInt(n)` - Returns next pseudorandom `int` value in the range from 0 to 9 both inclusive
+- `nextInt(n)` - Returns the next pseudorandom `int` value in the range from 0 to 9 both inclusive
 
 ```java live
 Random random = new Random();
@@ -136,7 +171,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
-- `nextDouble()` - Returns next pseudorandom `double` value in the range from 0.0 to 1.0
+- `nextDouble()` - Returns the next pseudorandom `double` value in the range from 0.0 to 1.0
 
 ```java live 
 Random random = new Random();
@@ -146,7 +181,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
-- `nextBoolean()` - Returns next pseudorandom `boolean` value, which can either be `true` or `false`
+- `nextBoolean()` - Returns the next pseudorandom `boolean` value, which can either be `true` or `false`
 
 ```java live
 Random random = new Random();
@@ -214,67 +249,86 @@ to
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # BigInteger
 
-The class `java.math.BigInteger;` provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;`.
-`BigInteger` class helps to deal with **very large Integers**. BigInteger class methods are **non-static**.
+The `java.math.BigInteger` class provides **operations analogues** to all of Java's **primitive integer operations** and for **all relevant methods** from `java.lang.Math;`.
 
-Declare a BigInteger: 
+The `BigInteger` class helps dealing with **very large Integers**. 
+
+BigInteger class methods are **non-static**.
+
+This is how to declare a BigInteger: 
 
 - `BigInteger num = BigInteger.valueOf(1234567890);` 
-  - Here the number `1234567890` is a `long` variable (64 bits).
+  - The number `1234567890` is a `long` variable (64 bits)
+
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - Here the number `12345688901234567890` is too large, can not fit in 64bits, so take the **numeric String** as parameter.
+  - The number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
 
-BigInteger **fields** include:
+The `BigInteger` **fields** are:
 
-- `BigInteger.ONE` : Constant one
-- `BigInteger.ZERO` : Constant zero
-- `BigInteger.TEN` : Constant ten
+- `BigInteger.ONE` - Constant one
 
-BigInteger **methods** include:
+- `BigInteger.ZERO` - Constant zero
 
-- `abs()` : Returns the absolute value of current BigInteger
+- `BigInteger.TEN` - Constant ten
+
+The `BigInteger` **methods** are:
+
+- `abs()` - Returns the absolute value of current BigInteger
+
 ```java live
 BigInteger number = BigInteger.valueOf(-123);
 number = number.abs();
 System.out.println(number);
 ```
-- `add(value)` : Assigns **new value** to current BigInteger, performs **addition** (current + value)
+
+- `add(value)` - Assigns **new value** to current BigInteger, performs **addition** (current + value)
+
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)` : Assigns **new value** to current BigInteger, performs **subtraction** (current - value)
+
+- `subtract(value)` - Assigns **new value** to current BigInteger, performs **subtraction** (current - value)
+
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
-- `multiply(value)` : Assigns **new value** to current BigInteger, performs **multiplication** (current * value)
+
+- `multiply(value)` - Assigns **new value** to current BigInteger, performs **multiplication** (current * value)
+
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
-- `divide(value)` : Assigns **new value** to current BigInteger, performs **division** (current / value)
+
+- `divide(value)` - Assigns **new value** to current BigInteger, performs **division** (current / value)
+
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
-- `pow(value)` : Assigns **new value** to current BigInteger, performs **power raise** (current ^ value)
+
+- `pow(value)` - Assigns **new value** to current BigInteger, performs **power raise** (current ^ value)
+
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.pow(2);
 System.out.println(number);
 ```
-- `intValue()` : Converts to an `int`
-- `doubleValue()` : Converts to a `double`
-- `toString()` : Returns the decimal String representation
 
+- `intValue()` - Converts to an `int`
+
+- `doubleValue()` - Converts to a `double`
+
+- `toString()` - Returns the decimal String representation
 
 [/slide]
 
