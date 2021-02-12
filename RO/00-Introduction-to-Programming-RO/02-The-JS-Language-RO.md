@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-The-JS-Language-RO"
+
 [slide hideTitle]
 # Limbaje de programare
 

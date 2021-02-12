@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-VS-Code-RO"
+
 [slide hideTitle]
 # Medii de dezvoltare (IDE) 
 

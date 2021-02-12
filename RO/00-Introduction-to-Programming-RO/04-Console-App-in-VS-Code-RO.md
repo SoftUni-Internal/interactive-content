@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Console-App-In-VS-Code-RO"
+
 [slide hideTitle]
 # Console App in VS Code
 

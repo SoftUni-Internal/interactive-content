@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Summary"
+
 [slide hideTitle]
 # Summary
 

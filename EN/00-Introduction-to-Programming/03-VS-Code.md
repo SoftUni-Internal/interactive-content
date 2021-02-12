@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-VS-Code"
+
 [slide hideTitle]
 # Development Environments (IDE)
 

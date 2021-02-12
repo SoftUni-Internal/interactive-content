@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Typical-Errors-In-JS-Programs
+
 [slide hideTitle]
 # Typical Errors In JavaScript Programs
 

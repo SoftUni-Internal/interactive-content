@@ -1,4 +1,6 @@
-[slide] / [diapozitiv]
+// sectionId: "Javascript-Programming-Basics-Welcome-To-Coding-RO"
+
+[slide]
 # Ce este codarea?
 [vimeo-video]
 [stream language / fluxul de limbaj = "EN" videoId = "486831827 / 419d467fd3" implicit /]
