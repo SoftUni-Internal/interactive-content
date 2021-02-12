@@ -3,7 +3,7 @@
 
 ## In this lesson you learned:
 
-- Classes define templates for object 
+- Classes define templates for objects
     - Fields
     - Constructors
     - Properties

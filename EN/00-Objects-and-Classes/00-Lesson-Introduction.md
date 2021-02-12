@@ -13,9 +13,9 @@
 
 **1. Classes**
 
-- What Classes represents
+- What Classes represent
 
-- How to define simple class
+- How to define a simple class
 
 - Constructors, Fields, Methods, Properties
 
