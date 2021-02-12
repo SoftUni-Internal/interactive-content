@@ -25,11 +25,11 @@ In programming, each **variable** stores a certain value of a particular type.
 
 For example, data types can be: 
 
-* a number: 1, 2, 3.14, -1, 1.5e38 etc
+* A number: 1, 2, 3.14, -1, 1.5e38 etc
 
-* text (string): 'Hello', "Hi", "How are you?" etc
+* Text (string): 'Hello', "Hi", "How are you?" etc
 
-* boolean: true or false
+* Boolean: true or false
 
 We can imagine **variables** as containers for data or named areas in the memory. 
 
@@ -57,11 +57,11 @@ Basically **variables** provide means for:
 
 They are characterized by:
 
-* name (identifier)
+* Name (identifier)
 
-* type (of the information preserved)
+* Type (of the information preserved)
 
-* value (stored information)
+* Value (stored information)
 
 Each of the variables in JavaScript has a name, a type and a value. 
 

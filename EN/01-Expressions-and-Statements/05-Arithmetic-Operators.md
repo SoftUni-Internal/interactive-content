@@ -48,7 +48,7 @@ The number type represents **both** integer and floating point numbers. There is
 let result = 5/4;
 console.log(result);
 ```
-the expected result is 1, but the answer is 1.25.
+The expected result will be 1, but the answer is 1.25.
 
 Integer division can easily be achieved by flooring the quotient of the two numbers, using `Math.floor()`:
 ```js live
