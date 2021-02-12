@@ -885,7 +885,7 @@ Return a **function** that displays the array elements on the web page.
 [/task-description]
 [code-io /]
 [tests]
-[test open]
+[test]
 [input]
 document.body.innerHTML = \`
 <div id="content"></div>
