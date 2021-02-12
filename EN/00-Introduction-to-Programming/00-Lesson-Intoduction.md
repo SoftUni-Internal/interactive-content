@@ -16,10 +16,10 @@
 **2. Programming Languages**
 - First steps in JavaScript
 
-**3. Integrated development environment (IDE)**
+**3. Integrated Development Environment (IDE)**
 - Visual Studio Code
 
-**4. Console apps in Visual Studio Code**
+**4. Console Apps in Visual Studio Code**
 - Creating and running console apps
 
 [/slide]

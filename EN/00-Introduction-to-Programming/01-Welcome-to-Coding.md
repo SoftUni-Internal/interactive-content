@@ -9,11 +9,11 @@
 
 Some basic examples are: 
 
-- `to play a sound`
+- To play a sound
 
-- `to print something on the screen`
+- To print something on the screen
 
-- `to multiply two numbers`.
+- To multiply two numbers
 
 When we have a sequence of commands following one another - this could be called a **computer program**.
 
@@ -76,13 +76,13 @@ Computer programs usually execute algorithms.
 
 For example, if we want to boil an egg, we will **follow some steps** (an algorithm): 
 
-- turn on the stove
+- Turn on the stove
 
-- take a pot and pour water in it
+- Take a pot and pour water in it
 
-- place the pot on the stove and put the egg inside
+- Place the pot on the stove and put the egg inside
 
-- wait for the water to boil and take the eggs out after 5 minutes
+- Wait for the water to boil and take the eggs out after 5 minutes
 
 Similarly, in programming **the computer program executes algorithms**: a sequence of commands, necessary for the completion of a certain task. 
 
