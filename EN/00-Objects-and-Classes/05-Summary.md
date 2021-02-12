@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 ## In this lesson you learned:
@@ -8,7 +8,9 @@
     - Constructors
     - Properties
     - Methods
+
 - Objects hold a set of named values
+
 ``` java
 LocalDate birthday = 
 LocalDate.of(2018, 5, 5);
@@ -29,7 +31,9 @@ class Dice {
     - `HashMap <key, value>`
     - `LinkedHashMap <key, value>`
     - `TreeMap <key, value>`
+
 - Lambda Expressions
+
 - Stream API
     - Filtering
     - Mapping

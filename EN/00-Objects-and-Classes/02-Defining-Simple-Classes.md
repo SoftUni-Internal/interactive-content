@@ -1,28 +1,44 @@
-[slide]
+[slide hideTitle]
 # Defining Simple Classes
 
-When defining class, it contains only those components of a class declaration that are required.
+When defining a class, it contains only those components of a class declaration that are required.
 
-The obligatory components are:
-- Keyword - `class`
-- Class name
-- Class body - between `{}`
+The **obligatory** components are:
 
-Not obligatory, but credential, components are: 
+- The `class` keyword
+
+- A name for the class
+
+- The body of the class, between **curly brackets**
+
+Not obligatory, but **credential** components are: 
+
 - Class fields
+
 - Constructor
+
 - Getters and Setters
+
 - Class methods
 
-Each class, field, constructor, method is initialized with an access modifier in front, which specifies the accessibility. Тhe access level can be changed by applying the access modifier on it. We will cover this in the next course. 
+Each **class**, **field**, **constructor** or **method** is initialized with an **access modifier** in front, which specifies the **accessibility**. 
 
-There is a possibility to generate automatically via IntelliJ IDEA constructors, getters, setters, and other most used methods. It is possible by Right-click + Generate. The short command depends on the operation system of the computer: in Windows and Linux - Alt + Insert; in Macintosh - Cmd + N.
+Тhe **access level** can be **changed** by applying the **access modifier** on it. We will cover this in the next course. 
 
+There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
+
+It is possible by `Right-click + Generate`. 
+
+The short command depends on the operation system of the computer: 
+
+- In Windows and Linux it is `Alt + Insert` 
+
+- In Macintosh it is `Cmd + N`
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Naming Classes
 
 The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
@@ -32,7 +48,7 @@ The class name should contain descriptive nouns.
 Abbreviations are required to be avoided (except widely known, e.g. URL, HTTP, etc.).
 
 ```java
-public class MyClass {
+public class CompanyEmployee {
 
 }
 ```
@@ -40,11 +56,16 @@ public class MyClass {
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Fields
 
-Fields store **values** 
-`private String type;` `private int age;` `private boolean vegetarian;`
+Fields store **values** such as:
+
+- `private String type` 
+
+- `private int age` 
+
+- `private boolean vegetarian`
 
 Fields represent the **state** of an object.
 
@@ -56,14 +77,14 @@ public class Animal {
     // fields
     private String type;
     private int age;
-    private boolean vegetarian;
+    private boolean herbivorous;
 }
 ```
 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Constructor
 
 A special method, executed during object creation, that **sets object's initial state**.
@@ -81,7 +102,7 @@ public class Animal {
     // fields
     private String type;
     private int age;
-    private boolean vegetarian;
+    private boolean herbivorous;
 
     // constructors
     public Animal() {
@@ -95,20 +116,20 @@ public class Animal {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Getters and Setters
 
 There can be declared getter and setter for each field.
 
 Getter provide **access** to field and read its value. 
 
-Naming convention: `getXxx()`, where **Xxx** is the name of the variable. 
+Naming convention: `getVariable()`, where `Variable` is **replaced** with name of the variable. 
 
 Since the getter method is **return** type, the data type of the value returned by the method is the same as the field type.
 
 Setter provides field's **change** and updates its value. 
 
-Naming convention: `setXxx()`, where **Xxx** is the name of the variable. 
+Naming convention: `setVariable()`, where `Variable` is **replaced** with the name of the variable. 
 
 The setter method is **void** type.
 
@@ -131,19 +152,21 @@ public class Animal {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Methods
 
-Methods describe **behavior** of an object 
-`public void makeSound() { ... }`
-Methods store **executable code** (algorithm) that manipulate state.
+Methods describe the **behavior** of an object:
+
+- `public void makeSound() { ... }`
+
+They store **executable code** (algorithm) that manipulate state.
 
 ```java
 class Animal {
     // fields
     private String type;
     private int age;
-    private boolean vegetarian;
+    private boolean herbivorous;
 
     // method
     public void makeSound() {

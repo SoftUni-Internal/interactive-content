@@ -1,13 +1,15 @@
-[slide]
-
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="" default /]
 [stream language="RO" videoId="" /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. Classes**
 
@@ -26,8 +28,5 @@
 - **3. Built-in Classes in Java**
 
 - Overview of some Java Built-in classes
-
-
-**4. Live Exercises**
 
 [/slide]
