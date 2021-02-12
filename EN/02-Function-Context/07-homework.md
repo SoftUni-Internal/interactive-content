@@ -887,10 +887,10 @@ Return a **function** that displays the array elements on the web page.
 [tests]
 [test open]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 <div id="content"></div>
 <button>Show Next Article</button>
-`;
+\`;
 
 expect(typeof result).to.equal('function', "Your solution must be a function");
 expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
@@ -912,10 +912,10 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 <div id="content"></div>
 <button>Show Next Article</button>
-`;
+\`;
 
 let articles =[
     "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
@@ -925,18 +925,18 @@ let articles =[
     "The world's largest cat measured 48.5 inches long."
 ];
 let showNext = result(Object.assign([], articles));
-let contentHolder = $('#content');
+let contentHolder = \$('\#content');
 expect(contentHolder.text()).to.equal('', "Do not modify the content before the button is clicked");
 showNext();
-expect(contentHolder.text()).to.contains(articles[0], "First article is missing after click");
+expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
 showNext();
-expect(contentHolder.text()).to.contains(articles[0], "First article is missing after click");
-expect(contentHolder.text()).to.contains(articles[1], "Second article is missing after click");
-showNext();
-showNext();
+expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
+expect(contentHolder.text()).to.contains(articles\[1\], "Second article is missing after click");
 showNext();
 showNext();
-expect(contentHolder.find('article').length).to.equal(5, "Empty article added, your function should od nothing when the elements in the array run out\n");
+showNext();
+showNext();
+expect(contentHolder.find('article').length).to.equal(5, "Empty article added, your function should od nothing when the elements in the array run out\\n");
 [/input]
 [output]
 yes
@@ -944,10 +944,10 @@ yes
 [/test]
 [test]
 [input]
-document.body.innerHTML = `
+document.body.innerHTML = \`
 <div id="content"></div>
 <button>Show Next Article</button>
-`;
+\`;
 
 expect(typeof result).to.equal('function', "Your solution must be a function");
 expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
