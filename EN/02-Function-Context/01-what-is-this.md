@@ -44,10 +44,10 @@ The object referenced by `this` **changes** when the execution context is change
 If `this` is used on its own, it always returns the global object - `Object [global]`
 
 ```js live
-function solve() {
+function testThis() {
     return this;
 }
-console.log(solve() === global);
+console.log(testThis() === global);
 ```
 
 When run, the above example returns **true**, meaning that `this` is indeed equal to the global object.
@@ -65,13 +65,12 @@ The **global object** in the browser is the **window**.
 Run the following examples in your browser's console to see them in action!
 
 ```js
-function foo() {
-    console.log("Simple function call");
+function thisInBrowser() {
+    console.log('Simple function call');
     console.log(this === window);
 }
-foo();
-  //prints true
-```
+thisInBrowser();
+ ```
 
 [image assetsSrc="function-context-01.png" /]
 
@@ -97,7 +96,7 @@ console.log("My name is ", this.anotherName);
 
 [image assetsSrc="function-context-03.png" /]
 
-### Note: Declaring a variable with "let" or "var" returns "undefined" in NodeJS.
+**Note: Declaring a variable with "let" or "var" returns "undefined" in NodeJS.**
 
 [/slide]
 
