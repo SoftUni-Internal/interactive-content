@@ -1,28 +1,33 @@
 # Homework
+
 [slide hideTitle]
-# Ex.Problem: Company
-[code-task title="Ex.Problem: Person" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+
+# Problem: Company
+
+[code-task title="Problem: Company" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
 class Company {
-    // TODO: implement this class...
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
 # Your Task
+
 Write a Company Class, Which Supports the Described Functionality Below.
 
 **1. Functionality**
 
-**Constructor():**
+`Constructor()`:
 
 Should have this 1 property: `departments`- an empty array
 
-AddEmployee\(`{username}`, `{Salary}`, `{Position}`, `{Department}`\):
+`AddEmployee({username}, {Salary}, {Position}, {Department})`:
+
 This function should add a new employee to the department with the given name.
 
-- If one of the passed parameters is an empty string (""), undefined or null,  this function should throw an error with the following message:
+- If one of the passed parameters is an empty string `""`, undefined or null, this function should throw an error with the following message:
 
 `Invalid input!`
 
@@ -34,7 +39,8 @@ This function should add a new employee to the department with the given name.
 
 `New employee is hired. Name: {name}. Position: {position}`
 
-**3. bestDepartment()**:
+`bestDepartment()`:
+
 This **function** should print the department with the highest average salary and its employees, sorted by their salary by descending and by name in the following format:
 
 ```
@@ -43,7 +49,7 @@ Average salary: {best department's average salary}
 {employee1} {salary} {position}
 {employee2} {salary} {position}
 {employee3} {salary} {position}
-. . ."
+..."
 ```
 
 **2. Submission**
@@ -53,7 +59,8 @@ Submit only your **Company class**.
 
 This is an example how the code is **intended to be used**:
 
-## Sample code usage 
+**Sample code usage**
+
 ```js
 let c = new Company();
 c.addEmployee("Steven", 2000, "engineer", "Construction");
@@ -66,7 +73,7 @@ c.addEmployee("George", 1350, "HR", "Human resources");
 console.log(c.bestDepartment());
 ```
 
-## Corresponding output
+**Corresponding output**
 
 ```
 Best Department is: Construction
@@ -191,7 +198,8 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Ex.Problem: Fibonacci
+# Problem: Fibonacci
+
 [code-task title="Ex.Problem: Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
