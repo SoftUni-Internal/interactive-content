@@ -219,11 +219,11 @@ function add(a, b) {
   return a + b;
 }
 
-let varOne = add(5, 7);
-let varTwo = 12;
+let letOne = add(5, 7);
+let letTwo = 12;
 
-console.log(varOne);
-console.log(varTwo);
+console.log(letOne);
+console.log(letTwo);
 ```
 
 A **referentially transparent** function **only depends on its input**.
