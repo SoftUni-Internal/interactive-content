@@ -2,11 +2,9 @@
 
 [slide]
 # Problem: Add
-
-[code-task title="Problem: Add" taskId="js-advanced-advanced-functions-homework-problem-01" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Add" taskId="js-advanced-advanced-functions-homework-add" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solution() {
+function add() {
     // Write your code here
 }
 ```
@@ -45,6 +43,23 @@ Your function should **return** the final result.
 [test]
 [input]
 // Acquire console
+let add0=result(0);
+
+assert.equal(add0(2), 2, 'Printed wrong value.');
+assert.equal(add0(3), 3, 'Printed wrong value.');
+
+let add20000=result(20000);
+
+assert.equal(add20000(2), 20002, 'Printed wrong value.');
+assert.equal(add20000(3), 20003, 'Printed wrong value.');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+// Acquire console
 let add5=result(5);
 
 assert.equal(add5(2), 7, 'Printed wrong value.');
@@ -71,23 +86,6 @@ let addNegative2=result(-2);
 
 assert.equal(addNegative2(2), 0, 'Printed wrong value.');
 assert.equal(addNegative2(-3), -5, 'Printed wrong value.');
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-// Acquire console
-let add0=result(0);
-
-assert.equal(add0(2), 2, 'Printed wrong value.');
-assert.equal(add0(3), 3, 'Printed wrong value.');
-
-let add20000=result(20000);
-
-assert.equal(add20000(2), 20002, 'Printed wrong value.');
-assert.equal(add20000(3), 20003, 'Printed wrong value.');
 [/input]
 [output]
 yes
