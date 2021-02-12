@@ -1,13 +1,5 @@
 # Email Validator
 
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421819529" default /]
-[stream language="RO" videoId="436043965"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Email Validator

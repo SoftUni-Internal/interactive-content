@@ -1,13 +1,5 @@
 # Inbox Manager
 
-[slide]
-# Video
-
-[vimeo-video]
-[stream language="EN" videoId="421820584" default /]
-[stream language="RO" videoId="436043847"  /]
-[/video-vimeo]
-[/slide]
 
 [slide hideTitle]
 # Inbox Manager
