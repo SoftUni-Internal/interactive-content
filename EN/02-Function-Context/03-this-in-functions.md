@@ -40,7 +40,7 @@ If you want to use `this` in similar situations, you can do so with **arrow func
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-15-this-with-arrow-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Within **arrow functions** (=>), `this` retains the value of the **enclosing lexical context**.
+Within **arrow functions** (`=>`), `this` retains the value of the **enclosing lexical context**.
 
 In other words, they inherit the reference of `this` from the parent object or scope in which they are used.
 

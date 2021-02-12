@@ -124,7 +124,6 @@ functionName.call(thisContext, ...[yourArray]);
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-21-apply-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
-js
 const firstPerson = {
     name: "Peter",
     prof: "Fisherman",

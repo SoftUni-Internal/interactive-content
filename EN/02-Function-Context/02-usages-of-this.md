@@ -10,8 +10,8 @@ When inside a method, `this` is used to access information, stored in the object
 
 ```js live
 let cat = {
-    name: "Muffins",
-    breed: "British Shorthair",
+    name: 'Muffins',
+    breed: 'British Shorthair',
 
     info: function () {
         return `${this.name} is a ${this.breed}.`
@@ -21,11 +21,13 @@ let cat = {
     }
 }
 console.log(cat.info());
-console.log("******************");
+console.log('******************');
 console.log(cat.whatIsThis());
 ```
 
-The example above illustrates how `this` is used to retrieve the values, stored inside the properties of the **cat** object. Whenever we use `this` in a method, it references the object itself and hence `cat.whatIsThis()` returns the cat object.
+The example above illustrates how `this` is used to retrieve the values, stored inside the properties of the **cat** object. 
+
+Whenever we use `this` in a method, it references the object itself and hence `cat.whatIsThis()` returns the cat object.
 
 You can also retrieve the values of object properties by replacing `this` with the object name.
 
@@ -37,14 +39,17 @@ info: function () {
         return cat;
     }
 ```
- This is not a good practice and will make the code harder to maintain. 
+
+This is not a good practice and will make the code harder to maintain. 
  
- Imagine you want to change the object's name in the future and miss updating it in your methods! 
+Imagine you want to change the object's name in the future and miss updating it in your methods! 
 
 
-Note: Attempting to return **name** or **breed** without `this` will have unintended consequences. 
+**Note:** Attempting to return **name** or **breed** without `this` will have unintended consequences. 
 
-If there is no variable with the same name outside the scope of the project, the result will be **undefined**. If there is a variable with the same name already defined and if it is in scope its value will be returned.
+If there is no variable with the same name outside the scope of the project, the result will be **undefined**. 
+
+If there is a variable with the same name already defined and if it is in scope its value will be returned.
 
 [/slide]
 
@@ -82,8 +87,8 @@ Let us see what is going on in the code step by step to understand it better.
 Defining a function `printContext()` which checks if `this===global` (`this===window` if running it in the browser) and prints the result to the console.
 
 Creating an object **user** with two methods:
-   - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
-   -  `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this===global` and prints the result to the console.
+- `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
+- `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this===global` and prints the result to the console.
 
 Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
@@ -96,7 +101,9 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 - `user.printAnotherContext();` will return **false** because `printAnotherContext()` is a method of the object **user** and `this` will return the object itself like it did with the **printContext** method
 
 To summarize: 
+
 - used in methods, `this` references the object to which the method belongs
+
 - used in a function, `this` references the **global** object such as **window** in browsers or **global** in Node
 [/slide]
 
@@ -120,7 +127,9 @@ function solve() {
 }
 ```
 
-When referencing `this` from within an event, it returns the element from which the event was called. In our case, it will be the button element that called the ``solve()`` function.
+When referencing `this` from within an event, it returns the element from which the event was called. 
+
+In our case, it will be the button element that called the ``solve()`` function.
 
 You can test it yourself by creating an HTML file with the following example code:
 
@@ -170,13 +179,13 @@ class Vehicle {
     }
 };
 
-let car = new Vehicle("Toyota", "Corolla");
+let car = new Vehicle('Toyota', 'Corolla');
 car.displayInfo();
 ```
 
-In the example above we are accessing the properties of the **car** class by using ``this.``.
+In the example above we are accessing the properties of the **car** class by using `this.`.
 
-Remember we previously learned about using the ``this`` keyword in objects and it behaved in the same way.
+Remember we previously learned about using the `this` keyword in objects and it behaved in the same way.
 
 This is because classes are templates for creating objects!
 
