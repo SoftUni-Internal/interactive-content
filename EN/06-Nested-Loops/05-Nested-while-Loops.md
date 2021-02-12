@@ -119,7 +119,7 @@ Write a program, which:
 
 
 [slide hideTitle]
-# Problem: Sum of Digits Calculator
+# Problem with Solution: Sum of Digits Calculator
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-29-solution-sum-of-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

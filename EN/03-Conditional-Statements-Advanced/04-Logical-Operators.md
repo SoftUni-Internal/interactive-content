@@ -7,10 +7,10 @@
 Let us take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:
-* logical **"AND"** (`&&`)
-* logical **"OR"** (`||`)
-* logical **negation** (`!`) 
-* **brackets** (`()`).
+* Logical **"AND"** (`&&`)
+* Logical **"OR"** (`||`)
+* Logical **negation** (`!`) 
+* **Brackets** (`()`).
 
 # Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
