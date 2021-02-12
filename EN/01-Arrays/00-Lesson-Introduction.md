@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Lesson Contents
+# Lesson Content
 
 TODO: Add Video
 

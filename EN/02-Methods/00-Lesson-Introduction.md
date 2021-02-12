@@ -1,6 +1,6 @@
 # Lesson Introduction
 [slide hideTitle]
-# Lesson Contents
+# Lesson Content
 
 ## In this lesson you will learn about:
 
