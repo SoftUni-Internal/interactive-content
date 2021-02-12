@@ -11,7 +11,7 @@
 ## In this lesson you will learn:
 
 **1. What is Coding**
-- Writing simple commands and programs.
+- Writing simple commands and programs
 
 **2. Programming Languages**
 - First steps in JavaScript
