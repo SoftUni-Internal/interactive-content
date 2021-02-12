@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Lesson-Summary-RO"
+// sectionId: "Javascript-Programming-Basics-Lesson-Summary"
 
 [slide hideTitle]
 # Rezumat
