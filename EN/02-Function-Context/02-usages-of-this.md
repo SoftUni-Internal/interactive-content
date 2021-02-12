@@ -58,42 +58,42 @@ Consider the example below:
 
 ```js live
 //Defining a function
-function foo() {
+function printContext() {
     console.log(this === global);
 }
 //Creating an object called user
 let user = {
     count: 10,
-    foo: foo,
-    bar: function () { console.log(this === global); }
+    printContext: printContext,
+    printAnotherContext: function () { console.log(this === global); }
 }
 
-user.foo();
+user.printContext();
 
-let func = user.bar; //func is a global function
+let globalFunction = user.printAnotherContext;
 
-func();
+globalFunction();
 
-user.bar();
+user.printAnotherContext();
 ```
 
 Let us see what is going on in the code step by step to understand it better.
 
-Defining a function `foo()` which checks if `this===global` (`this===window` if running it in the browser).
+Defining a function `printContext()` which checks if `this===global` (`this===window` if running it in the browser) and prints the result to the console.
 
 Creating an object **user** with two methods:
-   - `foo: foo` - stores the **foo** function we defined in step 1 inside a method with the same name
-   -  `bar: function()` - the **bar** method checks if `this===global`
+   - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
+   -  `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this===global` and prints the result to the console.
 
-Calling `user.foo();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
+Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
-`let func = user.bar;` Now we define a new function, and we are assigning the method **bar** from the **user** object to it. 
+`let globalFunction = user.printAnotherContext;` Now we define a new function, and we are assigning the method **printAnotherContext** from the **user** object to it. 
 
-Returns **true**, because now `this` is called by the function **func** and not from the user object's method. 
+Returns **true**, because now `this` is called by the function **globalFunction** and not from the user object's method. 
 
 `this` is indeed equal to **global**.
 
-- `user.bar();` will return **false** because `bar()` is a method of the object **user** and `this` will return the object iself like it did with the **foo** method
+- `user.printAnotherContext();` will return **false** because `printAnotherContext()` is a method of the object **user** and `this` will return the object itself like it did with the **printContext** method
 
 To summarize: 
 - used in methods, `this` references the object to which the method belongs
