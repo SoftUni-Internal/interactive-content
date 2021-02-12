@@ -1493,4 +1493,4 @@ solve(10990, 78, 483)
 [/tests]
 [code-io/]
 [/code-task]
-[slide]
+[/slide]
