@@ -1,3 +1,6 @@
+// sectionId: "Javascript-Programming-Basics-Lesson-Introduction"
+
+
 # Lecție introductivă
 
 [slide hideTitle]
