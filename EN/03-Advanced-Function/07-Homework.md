@@ -404,7 +404,7 @@ gender-Female
 [code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-Sort-Array" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-function sortArray() {
+function sortArray(data, type) {
     // Write your code here
 }
 ```
@@ -746,7 +746,7 @@ yes
 [code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-Personal-BMI" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-function personalBmi() {
+function personalBmi(name, age, weight, heightCm) {
     // Write your code here
 }
 ```
@@ -1276,7 +1276,7 @@ let expectationPairs = \[
 
 for (let i = 0; i \< expectationPairs.length; i++) \{
     let expectation = expectationPairs\[i\];
-    expect(result(expectation\[0\])).to.equal(expectation\[1\], `Order \\$\{expectation\[0\]\} should have resulted in \\$\{expectation\[1\]\}`);
+    expect(result(expectation\[0\])).to.equal(expectation\[1\], \`Order \\$\{expectation\[0\]\} should have resulted in \\$\{expectation\[1\]\}\`);
 \}
 [/input]
 [output]
@@ -1517,4 +1517,3 @@ yes
 [/tests]
 [/code-task]
 [/slide]
-
