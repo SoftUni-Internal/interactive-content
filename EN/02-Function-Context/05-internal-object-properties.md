@@ -14,7 +14,7 @@ To list the internal properties of any object property use `Oject.getOwnProperty
 
 ```js
 let person = {
-    name: "Billy",
+    name: 'Billy',
     age: 50
 }
 
@@ -57,7 +57,7 @@ Run the code below:
 
 ```js live
 let person = {
-    name: "Billy",
+    name: 'Billy',
     age: 50
 }
 
@@ -70,7 +70,7 @@ for (const property in person) {
 The expected output here is:
 
 ```js
-name: Billy
+name: 'Billy'
 age: 50
 ```
 
@@ -97,7 +97,7 @@ Object.defineProperty(object1, 'property1', {
 
 ```js live
 let person = {
-    name: "Billy",
+    name: 'Billy',
     age: 50
 }
 
@@ -122,9 +122,9 @@ Notice how age is no longer output to the console? It is still inside the object
 
 You can also try listing the properties with `Object.keys(person)` to list the properties, but the only visible property will be **name**.
 
-Printing the object itself with ``console.log(person)`` will not print out the **age** property either.
+Printing the object itself with `console.log(person)` will not print out the **age** property either.
 
-**Non-enumerable** properties are not serialized when using ``JSON.stringify()``.
+**Non-enumerable** properties are not serialized when using `JSON.stringify()`.
 
 [/slide]
 
@@ -135,7 +135,7 @@ Printing the object itself with ``console.log(person)`` will not print out the *
 
 Values of **non-writable** properties cannot be changed using assignments.
 
-Using ``Object.defineProperty`` by specifying a property that does not exist in our object, we can add a brand new property to that object, set its value and make it non-writable:
+Using `Object.defineProperty` by specifying a property that does not exist in our object, we can add a brand new property to that object, set its value and make it non-writable:
 
 ```js live
 let object = { property: 2 };
@@ -156,9 +156,11 @@ Original value: 2
 New value: 2
 ```
 
-If you modify the code above and set writable to **true**, as it is by default, then you would be able to assign the value **1000** to **anotherProperty**. The output would be:
+If you modify the code above and set writable to **true**, as it is by default, then you would be able to assign the value **1000** to **anotherProperty**. 
 
-```
+The output would be:
+
+```js
 Original value: 2
 New value: 1000
 ```
@@ -238,7 +240,7 @@ You can use `Object.isFrozen(someObject)`.
 If **someObject** is frozen this would return **true**.
 
 ## Object Seal
-``Object.seal()``- does not allow adding new properties to the object and all its properties become **non-configurable**. 
+`Object.seal()`- does not allow adding new properties to the object and all its properties become **non-configurable**. 
 
 The values of the properties can be changed.
 
@@ -274,130 +276,21 @@ To prevent this, we can also **freeze** the object property and then the value i
 
 [slide hideTitle]
 
-# Problem: Person
-[code-task title="Problem: Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+# Problem with Solution: Person
+
+[code-task title="Problem: Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
+class Person{
+    // Write your code here
+}
 
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a JS program which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
+# Description
+Write a class which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
 
 Properties should all be **accessible**. We discovered that "accessible" also means "mutable". 
-
-This means that:
-
-- If **firstName** or **lastName** have changed, then **fullName** should also be changed
-
-- If **fullName** is changed, then **firstName** and **lastName** should also be changed
-
-- If **fullName** is **invalid**, you should not change the other properties
-
-A **valid** **full name** is in the format: `{firstName} {lastName}`
-
-Note: Check the examples below for more information.
-
-## Examples
-
-**Sample Input**
-
-```js
-let person = new Person("Peter", "Smith");
-console.log(person.fullName);  //Peter Smith
-person.firstName = "George";
-console.log(person.fullName);  //George Smith
-person.lastName = "Peterson";
-console.log(person.fullName);  //George Peterson
-person.fullName = "Nikola Tesla";
-console.log(person.firstName)  //Nikola
-console.log(person.lastName)   //Tesla
-let person = new Person("Albert", "Simpson");
-console.log(person.fullName);  //Albert Simpson
-person.firstName = "Simon";
-console.log(person.fullName);  //Simon Simpson
-person.fullName = "Peter";
-console.log(person.firstName)  // Simon
-console.log(person.lastName)   // Simpson
-```
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-let Person = result;
-let a = new Person("Albert", "Simpson");
-let actual = a.fullName;
-let expected = "Albert Simpson";
-assert.equal(actual,expected);
-a.firstName = "Simon";
-let actualFullName = a.fullName;
-let expectedFullName = "Simon Simpson";
-assert.equal(actualFullName,expectedFullName);
-a.fullName = "Peter";
-let b = a.firstName;
-let expectedB = "Simon"
-assert.equal(b,expectedB);
-let v = a.lastName;
-let expectedV = "Simpson";
-assert.equal(v,expectedV);
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let Person = result;
-let person = new Person("Peter", "Ivanov");
-
-let act1 = person.fullName;
-let exp1 = "Peter Ivanov";
-assert.equal(act1,exp1);
-
-person.firstName = "George";
-let act2 = person.fullName;
-let exp2 = "George Ivanov";
-assert.equal(act2,exp2);
-
-person.lastName = "Peterson";
-let act3 = person.fullName;
-let exp3 = "George Peterson";
-assert.equal(act3,exp3);
-
-person.fullName = "Nikola Tesla";
-let act4 = person.firstName;
-let exp4 = "Nikola";
-assert.equal(act4,exp4);
-
-let act5 = person.lastName;
-let exp5 = "Tesla";
-assert.equal(act5,exp5);
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide hideTitle]
-# Solution: Person
-[code-task title="Solution: Person" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-
-```
-[/code-editor]
-[task-description]
-## Description
-Write a JS program which takes **first** and **last** names as **parameters** and returns an object with **firstName**, **lastName** and **fullName**: `{firstName} {lastName}`. 
-
-Properties which should all be **accessible**, we discovered that "accessible" also means "mutable". 
 
 This means that:
 
