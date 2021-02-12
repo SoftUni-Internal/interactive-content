@@ -320,7 +320,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Ex.Problem: HEX
+# Problem: HEX
 
 [code-task title="Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -483,11 +483,14 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Ex.Problem: Table
-[code-task title="Ex.Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
+# Problem: Table
 
+[code-task title="Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
+```
+function table(){
+    // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
@@ -503,9 +506,32 @@ Use the provided [resources](https://videos.softuni.org/resources/javascript/jav
 
 Write the missing JavaScript code to make the **Table** application work as expected.
 
-When you **click** on an item from the table, you should change its **background color** to **"#413f5e"**. 
+When you **click** on an item from the table, you should change its **background color** to `#413f5e`. 
 
-[image assetsSrc="function-context-08.png" /]
+```js
+<table class="minimalistBlack">
+   <thead>_</thead>
+   <tbody>
+      <tr>
+         <td>Eve</td>
+         <td>New York</td>
+      </tr>
+      <tr>
+         <td>Nick</td>
+         <td>London</td>
+      </tr>
+      <tr>
+         <td>Donald</td>
+         <td>Boston</td>
+      </tr>
+      <tr>
+         <td>Ted</td>
+         <td>San Diego</td>
+      </tr>
+   </tbody>
+</table>
+
+```
 
 [image assetsSrc="function-context-09.png" /]
 
