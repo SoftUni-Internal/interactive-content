@@ -200,18 +200,19 @@ yes
 [slide hideTitle]
 # Problem: Fibonacci
 
-[code-task title="Ex.Problem: Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 
+function fibonacci() {
+   // Write your code here
+}
 ```
 [/code-editor]
 [task-description]
 ## Description
-Write a JS function that returns the next Fibonacci number, starting from 0, 1. 
+Write a function that returns the next Fibonacci number, starting from 0, 1. 
 
 Use a **closure** to keep the current number.
-
 
 ## Input
 There will be no input.
