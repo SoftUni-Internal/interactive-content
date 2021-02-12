@@ -23,7 +23,7 @@ function speak(message) {
 
 let person = { name: 'John' };
 
-speak.call(person, "This is my story...");
+speak.call(person, 'This is my story...');
 ```
 Normally `this` would have pointed back to the **global object** or **window** and returned `undefined` for `this.name`.
 
@@ -123,15 +123,16 @@ functionName.call(thisContext, ...[yourArray]);
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-21-apply-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-```js
+```js live
 const firstPerson = {
-    name: "Peter",
-    prof: "Fisherman",
+    name: 'Peter',
+    prof: 'Fisherman',
     shareInfo: function () {
         console.log(`${this.name} works as a ${this.prof}`);
     }
 };
-const secondPerson = { name: "George", prof: "Manager" };
+
+const secondPerson = { name: 'George', prof: 'Manager' };
 firstPerson.shareInfo.apply(secondPerson);
 // George works as a Manager
 ```
@@ -219,7 +220,7 @@ This is known as function borrowing in JavaScript.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-23-bind-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-```js
+```js live
 const x = 42;
 const getX = function () {
     return this.x;
@@ -235,18 +236,18 @@ console.log(boundGetX()); // 42
 
 [slide hideTitle]
 
-# Problem: Area and Volume Calculator
+# Problem with Solution: Area and Volume Calculator
 
 [code-task title="Problem: Area and Volume Calculator" taskId="js-advanced-function-context-lab-Area-and-Volume-Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(area, vol, input) {
-    //ToDo....
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function which **calculates** the **area** and the **volume** of a figure, which is **defined** by its **coordinates** 
 (**x**, **y**, **z**). 
@@ -266,7 +267,7 @@ function vol() {
 ```
 
 ## Input
-You will receive 3 parameters -  the functions area and vol and a string, which contains the figures' coordinates. 
+You will receive 3 parameters - the functions area and vol and a string, which contains the figures' coordinates. 
 
 **For more information check the examples.**
 
@@ -283,7 +284,7 @@ The output should be **returned** as an **array of objects**. Each object has **
 
 ```
 
-### Note: Submit only the solve function. 
+**Note: Submit only the solve function.**
 
 ## Examples
 
@@ -331,197 +332,6 @@ area, vol, '[
   { area: 4400, volume: 1100000 }
 ]
 ```
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-function area() \{
-    return this.x \* this.y\*156;
-\};
-function vol() \{
-    return this.x \* this.y \* this.z;
-\};
-let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
-let expected = \[
-  \{ area: 312, volume: 20 \},
-  \{ area: 7644, volume: 490 \},
-  \{ area: 1560, volume: 100 \}
-\];
-assert.deepEqual(actual,expected,"The returned value is not correct")
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-function area() \{
-    return this.x \* this.y\*3;
-\};
-function vol() \{
-    return this.x \* this.y \* this.z/16;
-\};
-let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
-let expected = \[
-  \{ area: 6, volume: 1.25 \},
-  \{ area: 147, volume: 30.625 \},
-  \{ area: 30, volume: 6.25 \}
-\]
-assert.deepEqual(actual,expected,"The returned value is not correct")
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-function area() \{
-    return this.x \* this.y;
-\};
-function vol() \{
-    return this.x \* this.y \* this.z;
-\};
-let actual = result(area, vol,'\[\{"x":"1","y":"2","z":"10"\},\{"x":"7","y":"7","z":"10"\},\{"x":"5","y":"2","z":"10"\}\]');
-let expected = \[
-  \{ area: 2, volume: 20 \},
-  \{ area: 49, volume: 490 \},
-  \{ area: 10, volume: 100 \}
-\];
-assert.deepEqual(actual,expected,"The returned value is not correct")
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-function area() \{
-    return this.x \* this.y;
-\};
-function vol() \{
-    return this.x \* this.y \* this.z;
-\};
-let actual = result(area, vol,'\[\{"x":"10","y":"-22","z":"10"\},\{"x":"47","y":"7","z":"-5"\},\{"x":"55","y":"8","z":"0"\},\{"x":"100","y":"100","z":"100"\},\{"x":"55","y":"80","z":"250"\}\]');
-let expected = \[
-  \{ area: 220, volume: 2200 \},
-  \{ area: 329, volume: 1645 \},
-  \{ area: 440, volume: 0 \},
-  \{ area: 10000, volume: 1000000 \},
-  \{ area: 4400, volume: 1100000 \}
-\];
-assert.deepEqual(actual,expected,"The returned value is not correct")
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-
-[slide hideTitle]
-
-# Solution: Area and Volume Calculator
-
-[code-task title="Solution: Area and Volume Calculator" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(area, vol, input) {
-    //ToDo....
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-Write a function which **calculates** the **area** and the **volume** of a figure, which is **defined** by its **coordinates** 
-(**x**, **y**, **z**). 
-
-The functions **area** and **vol** are **passed as parameters** to your function:
-
-```js
-function area() {
-  return this.x * this.y;
-};
-```
-
-```js
-function vol() {
-  return this.x * this.y * this.z;
-};
-```
-
-## Input
-You will receive 3 parameters -  the functions area and vol and a string, which contains the figures' coordinates. 
-
-**For more information check the examples.**
-
-
-## Output
-The output should be **returned** as an **array of objects**. Each object has **two properties**: the figure's **area** and **volume**.
-
-```js
-[
-  { area: ${area1}, volume: ${volume1} },
-  { area: ${area2}, volume: ${volume2} },
-  . . .
-]
-
-```
-
-### Note: Submit only the solve function. 
-
-## Examples
-
-**Input**
-
-```js
-area, vol, '[ 
-{"x":"1","y":"2","z":"10"}, 
-{"x":"7","y":"7","z":"10"}, 
-{"x":"5","y":"2","z":"10"} 
-]'
-```            
-
-**Output**
-
-```js
-[
-  { area: 2, volume: 20 }, 
-  { area: 49, volume: 490 },
-  { area: 10, volume: 100 }
-]
-```
-
-
-**Input**
-
-```js
-area, vol, '[ 
-{"x":"10","y":"-22","z":"10"}, 
-{"x":"47","y":"7","z":"-5"}, 
-{"x":"55","y":"8","z":"0"}, 
-{"x":"100","y":"100","z":"100"}, 
-{"x":"55","y":"80","z":"250"} 
-]' 
-```
-
-**Output**
-
-```js
-[
-  { area: 220, volume: 2200 },
-  { area: 329, volume: 1645 },
-  { area: 440, volume: 0 },
-  { area: 10000, volume: 1000000 },
-  { area: 4400, volume: 1100000 }
-]
-```
-
 
 [/task-description]
 [code-io /]
