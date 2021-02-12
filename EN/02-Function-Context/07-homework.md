@@ -806,24 +806,23 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Ex.Problem: Next Article
+# Problem: Next Article
 
-[code-task title="Ex.Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
-function getArticleGenerator(articles) {
-    // TODO
+function nextArticle(articles) {
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a JS program that sequentially **displays articles** on a web page when the user **clicks** a button. 
+# Description
+Write a function that sequentially **displays articles** on a web page when the user **clicks** a button. 
 
 You will receive an **array of strings** that will initialize the program. 
 
-You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID "**content**". 
+You need to return a function that keeps the initial array in its closure and every time it is called, it takes the first element from the array and displays it on the web page, inside a div with ID `content`. 
 
 If there are no more elements left, your function should do nothing.
 
@@ -885,5 +884,89 @@ Return a **function** that displays the array elements on the web page.
 
 [/task-description]
 [code-io /]
+[tests]
+[test open]
+[input]
+document.body.innerHTML = `
+\<div id="content"\>\</div\>
+\<button\>Show Next Article\</button\>
+`;
+
+expect(typeof result).to.equal('function', "Your solution must be a function");
+expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
+
+let articles =\[
+    "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
+    "A group of cats is called a clowder.",
+    "Cats have over 20 muscles that control their ears.",
+    "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
+    "The world's largest cat measured 48.5 inches long."
+\];
+let showNext = result(articles);
+expect(typeof showNext).to.equal('function', "Your solution did not return a function");
+expect(showNext.length).to.equal(0, "The returned function should be parameterless");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div id="content"\>\</div\>
+\<button\>Show Next Article\</button\>
+`;
+
+let articles =\[
+    "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
+    "A group of cats is called a clowder.",
+    "Cats have over 20 muscles that control their ears.",
+    "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
+    "The world's largest cat measured 48.5 inches long."
+\];
+let showNext = result(Object.assign(\[\], articles));
+let contentHolder = \\$('\#content');
+expect(contentHolder.text()).to.equal('', "Do not modify the content before the button is clicked");
+showNext();
+expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
+showNext();
+expect(contentHolder.text()).to.contains(articles\[0\], "First article is missing after click");
+expect(contentHolder.text()).to.contains(articles\[1\], "Second article is missing after click");
+showNext();
+showNext();
+showNext();
+showNext();
+expect(contentHolder.find('article').length).to.equal(5, "Empty article added, your function should od nothing when the elements in the array run out\n");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+document.body.innerHTML = `
+\<div id="content"\>\</div\>
+\<button\>Show Next Article\</button\>
+`;
+
+expect(typeof result).to.equal('function', "Your solution must be a function");
+expect(result.length).to.equal(1, "Your function must receive a single parameter - an array of strings");
+
+let articles =\[
+    "Cats are the most popular pet in the United States: There are 88 million pet cats and 74 million dogs.",
+    "A group of cats is called a clowder.",
+    "Cats have over 20 muscles that control their ears.",
+    "A cat has been mayor of Talkeetna, Alaska, for 15 years. His name is Stubbs.",
+    "The world's largest cat measured 48.5 inches long."
+\];
+let showNext = result(articles);
+expect(typeof showNext).to.equal('function', "Your solution did not return a function");
+expect(showNext.length).to.equal(0, "The returned function should be parameterless");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
 [/code-task]
 [/slide]
