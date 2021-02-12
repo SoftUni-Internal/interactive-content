@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Lesson-Introduction"
+// sectionId: "Javascript-Programming-Basics-What-Is-Coding"
 
 [slide hideTitle]
 # What is Coding?
@@ -9,11 +9,11 @@
 
 Some basic examples are: 
 
-- To play a sound
+- `to play a sound`
 
-- To print something on the screen
+- `to print something on the screen`
 
-- To multiply two numbers
+- `to multiply two numbers`.
 
 When we have a sequence of commands following one another - this could be called a **computer program**.
 
@@ -76,13 +76,13 @@ Computer programs usually execute algorithms.
 
 For example, if we want to boil an egg, we will **follow some steps** (an algorithm): 
 
-- Turn on the stove
+- turn on the stove
 
-- Take a pot and pour water in it
+- take a pot and pour water in it
 
-- Place the pot on the stove and put the egg inside
+- place the pot on the stove and put the egg inside
 
-- Wait for the water to boil and take the eggs out after 5 minutes
+- wait for the water to boil and take the eggs out after 5 minutes
 
 Similarly, in programming **the computer program executes algorithms**: a sequence of commands, necessary for the completion of a certain task. 
 
