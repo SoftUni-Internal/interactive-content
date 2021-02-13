@@ -195,7 +195,7 @@ Vom învăța cum să gestionăm excepțiile în cursurile ulterioare.
 [/slide]
 
 [slide hideTitle]
-# Problem: Greeting
+# Problemă cu soluția: Greeting
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
 ```java
@@ -260,72 +260,4 @@ Hello, George!
 [/code-task]
 [/slide]
 
-
-[slide hideTitle]
-# Solution: Greeting
-[code-task title="Greeting" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    String name = scanner.nextLine();
-    System.out.print("Hello, ");
-    System.out.println(name);
-  }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un **program**, care:
-
-* Citește o intrare de utilizator - **name**, de pe consolă
-* Tipărește "Hello, \{name\}!", unde \{name\} este intrarea utilizatorului
-# Exemplu:
-
-| **Input** | **Output** |
-| --- | --- |
-| Peter | Hello, Peter! |
-|  |  |
-[/task-description]
-[tests]
-[test open]
-[input]
-Peter
-[/input]
-[output]
-Hello, Peter!
-[/output]
-[/test]
-[test]
-[input]
-Marie
-[/input]
-[output]
-Hello, Marie!
-[/output]
-[/test]
-[test]
-[input]
-asd
-[/input]
-[output]
-Hello, asd!
-[/output]
-[/test]
-[test]
-[input]
-George
-[/input]
-[output]
-Hello, George!
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
 
