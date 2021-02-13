@@ -37,7 +37,7 @@ Extremely versatile. You can create everything: from Web and mobile apps to game
 The demand for Java developers is currently among the highest. This ensures professional realization once you have the skills you need! Java is used by about **7,1 million** programmers around the world (according to SlashData). 
 
 Right now Java is one of the most suitable programming languages for **beginners**. 
-* It is easy to learn Java through the rich set of video tutorials and exercises at **SoftUni**. 
+* It is easy to learn Java through the rich set of video tutorials and exercises at **SoftUni**
 
 Combines **procedural**, **object-oriented** and **functional programming** with a **clear and concise syntax**.
 

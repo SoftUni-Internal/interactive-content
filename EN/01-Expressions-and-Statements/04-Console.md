@@ -200,9 +200,9 @@ We will learn how to handle exceptions in later courses.
 [/slide]
 
 [slide hideTitle]
-# Problem: Greeting
+# Problem with Solution: Greeting
 
-interactive-programming-basics-with-java-expressions-and-statements-20-problem-greeting
+interactive-programming-basics-with-java-expressions-and-statements-20-problem-with-Solution-Greeting
 
 [code-task title="Greeting" taskId="pb-java-expressions-greeting" executionStrategy="java-code" requiresInput]
 [code-editor language="java"]
@@ -267,74 +267,4 @@ Hello, George!
 [/code-task]
 [/slide]
 
-
-[slide hideTitle]
-# Solution: Greeting
-
-interactive-programming-basics-with-java-expressions-and-statements-21-problem-greeting-solution
-
-[code-task title="Greeting" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    String name = scanner.nextLine();
-    System.out.print("Hello, ");
-    System.out.println(name);
-  }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a **program**, which:
-* Reads a user input - **name**, from the console
-* Prints "Hello, \{name\}!", where \{name\} is the user input
-# Example:
-
-| **Input** | **Output** |
-| --- | --- |
-| Peter | Hello, Peter! |
-|  |  |
-[/task-description]
-[tests]
-[test open]
-[input]
-Peter
-[/input]
-[output]
-Hello, Peter!
-[/output]
-[/test]
-[test]
-[input]
-Marie
-[/input]
-[output]
-Hello, Marie!
-[/output]
-[/test]
-[test]
-[input]
-asd
-[/input]
-[output]
-Hello, asd!
-[/output]
-[/test]
-[test]
-[input]
-George
-[/input]
-[output]
-Hello, George!
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
 

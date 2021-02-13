@@ -38,24 +38,24 @@ In Java the convention for naming variables are used ***"camel-case"***.
 There are other naming conventions which are used in different languages such as pascal case, snake case. 
 
 **Camel case** combines words by:
-* capitalizing all words following the first word
-* removing the space:
+* Capitalizing all words following the first word
+* Removing the space:
 ```java
 int userLoginCount;
 ```
 
 **Pascal case** combines words by:
-* capitalizing each word along with the first one
-* removing the space:
+* Capitalizing each word along with the first one
+* Removing the space:
 ```java
 int UserLoginCount;
 ```
 
-**Snake-case** is another naming convention, which separates words with:
-* one underscore character (_)
-* no spaces
-* each element's initial letter usually lowercased within the compound
-* the first letter either upper or lowercase:
+**Sake-case** is another naming convention, which separates words with:
+* One underscore character (_)
+* No spaces
+* Each element's initial letter usually lowercased within the compound
+* The first letter either upper or lowercase:
 ```java
 int users_count;
 string first_name;

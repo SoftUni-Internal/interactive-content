@@ -10,19 +10,19 @@ It underlines the wrong code that cannot be compiled.
 
 Some of the basic common mistakes we can face:
 
-- Mixing of lowercase and uppercase letters in syntax.
+- Mixing of lowercase and uppercase letters in syntax
 
-- Wrong Syntax.
+- Wrong Syntax
 
-- Missing quotes " " or bracket ( ).
+- Missing quotes " " or bracket ( )
 
-- Confusing Addition and Concatenation.
+- Confusing Addition and Concatenation
 
 The "+" operator has two functionalities.
 
-- Addition is for numbers.
+- Addition is for numbers
 
-- Concatenation is for strings.
+- Concatenation is for strings
 
 Confusing the assignment (=) and equality (==, ===) operators.
 
