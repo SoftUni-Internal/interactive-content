@@ -1,7 +1,17 @@
+# National Court
+
+[slide]
+# Video
+
+[vimeo-video]
+[stream language="EN" videoId="434990192" default /]
+[stream language="RO" videoId="433962147"  /]
+[/video-vimeo]
+[/slide]
 
 [slide hideTitle]
 # National Court
-[code-task title="National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: National Court" taskId="java-fund-18-Exam-Preparation-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -15,22 +25,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-There are **3 employees working** on the reception all day long.
+There are **3 employees working** at the reception all day long.
 
-Each of them can handle **different number of people per hour**.
+Each of them can handle a **different number of people per hour**.
 
 Your task is to **calculate how much time it will take to answer all the questions** of a given number of people.
 
-First you will receive **3 lines with integers**, representing the **count of people that each of the employee can help per hou**r. 
+First, you will receive **3 lines with integers**, representing the **count of people that each of the employees can help per hou**r. 
 
-On the **next line you will receive the total people** count as a single integer. 
+On the **next line, you will receive the total count of people** as a single integer. 
 
 **Every fourth hour all the employees have a one-hour break** before they start working again. 
 
 **Calculate the time needed to answer all people's questions** and **print it in the following format**: "Time needed: \{time\}h."
 
 ### Input / Constraints
-- On first 3 lines -  each employee's **efficiency** - an **integer**
+- On the first 3 lines - each employee's **efficiency** - an **integer**
 - On the 4th line - people **count** - an **integer**
 
 ### Output
@@ -46,8 +56,8 @@ On the **next line you will receive the total people** count as a single integer
 | 20 | |
 
 ### Comment
-- All employees can answer 15 people per hour.
-- After the first hour there are 5 people left to be answered.
+- All employees can answer the questions of 15 people per hour
+- After the first hour, the questions of 5 people remain to be answered
 - All people will be answered in the second hour.
 
 ### Example
@@ -59,12 +69,12 @@ On the **next line you will receive the total people** count as a single integer
 |45 | |
 
 ### Comment
-- All employess can answer 6 people per hour. 
-- In the first 3 hours they have answered 6 \* 3 = 18 people. 
-- Then they have a break for an hour.
-- After the next 3 hours there are 18 + 6 \* 3 = 36 answered people. 
-- After the break for an hour, there are only 9 people to answer.
-- 10th hour - all of the people questions would be answered.
+- All employees can answer 6 people per hour
+- In the first 3 hours, they have answered the questions of 6 \* 3 = 18 people
+- Then they have a break for an hour
+- After the next 3 hours there the questions of 18 + 6 \* 3 = 36 are yet to be answered 
+- After a one hour break, there are only 9 people's questions left to answer
+- All questions will be answered on the 10th hour
 
 ### Example
 | **Input** | **Output** |
