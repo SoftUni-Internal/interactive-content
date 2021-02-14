@@ -18,20 +18,24 @@ public class Main {
 ## Description
 Create a program, that checks **if registrations are valid**.
 
-A registration consists of a **Username and a Password**.
+Each registration consists of a **Username and a Password**.
 
-On the **first line** you will receive a **number that indicates how many inputs** you will receive on the **next** lines.
+On the **first line**, you will get a **number that indicates how many inputs** you will receive on the **next** lines.
 
 A **registration is valid** when:
+
 - The **username is surrounded by** "U\$"
-- The **username needs to be minimum 3 characters** long, **start** with an **uppercase letter**, followed **only by lowercase letters**
+
+- The **username needs to contain a minimum of 3 characters**, **start** with an **uppercase letter**, followed **only by lowercase letters**
+
 - The **password is surrounded by** "P@\$"
-- The **password needs to start with minimum 5 alphabetical letters** (not including digits) and **must end with a digit**
+
+- The **password needs to start with a minimum of 5 alphabetical letters** (not including digits) and **must end with a digit**
 
 **Example for a valid** registration: 
 - "U\$MichaelU\$P@\$asdqwe123P@\$"
 
-You must check if the registration is **valid and if it is print**:
+You must check if the registration is **valid and if it is,  print**:
 - "Registration was successful"
 - "Username: \{Username\}, Password: \{Password\}"
 
@@ -42,12 +46,12 @@ In the end **print the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
 ### Input
-- On the first line - n - the count of inputs.
-- On the next n lines - input that you have to check if it has a valid registration.
+- On the first line, you will receive **n** - the count of inputs.
+- On the next **n** lines - input that you have to check for valid registrations
 
 ### Output
-- Print all results from each input, each on a new line.
-- In the end print the count of successful registrations
+- Print all results from each input, each on a new line
+- In the end, print the count of successful registrations
 
 ### Example
 | **Input** | **Output** |
@@ -59,10 +63,10 @@ In the end **print the count of successful registrations**:
 | | Successful registrations: 1 |
 
 ### Comment
-- We have 3 input lines to check.
-- The first one follows the rules and is valid. 
-- The second one doesn't because the password doesn’t end with a digit. 
-- The third one is not valid because the password is too short.
+- We have 3 input lines to check
+- The first one follows the rules and is valid
+- The second one doesn't because the password doesn't end with a digit
+- The third one is not valid because the password is too short
 
 ### Example
 | **Input** | **Output** |
