@@ -15,23 +15,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-There are **3 employees working** on the reception all day long.
+There are **3 employees working** at the reception of the National Court all day long.
 
-Each of them can handle **different number of people per hour**.
+Each of them can serve a **different number of people per hour**.
 
 Your task is to **calculate how much time it will take to answer all the questions** of a given number of people.
 
-First you will receive **3 lines with integers**, representing the **count of people that each of the employee can help per hou**r. 
+First, you will receive **3 lines with integers**, representing the **count of people that each of the employees can help per hour**. 
 
-On the **next line you will receive the total people** count as a single integer. 
+On the **next line**, you will receive **the total count of people** as a single integer. 
 
 **Every fourth hour all the employees have a one-hour break** before they start working again. 
 
 **Calculate the time needed to answer all people's questions** and **print it in the following format**: "Time needed: \{time\}h."
 
 ### Input / Constraints
-- On first 3 lines -  each employee's **efficiency** - an **integer**
-- On the 4th line - people **count** - an **integer**
+- On the first 3 lines, you will receive each employee's **efficiency** as an **integer**
+- On the 4th line - the  **count** of people as an **integer**
 
 ### Output
 - Print a **single line**: 
@@ -46,9 +46,9 @@ On the **next line you will receive the total people** count as a single integer
 | 20 | |
 
 ### Comment
-- All employees can answer 15 people per hour.
-- After the first hour there are 5 people left to be answered.
-- All people will be answered in the second hour.
+- All employees can answer 15 people per hour
+- After the first hour, there are 5 people left to be answered
+- All the people would have been helped on the second hour
 
 ### Example
 | **Input** | **Output** |
@@ -59,12 +59,12 @@ On the **next line you will receive the total people** count as a single integer
 |45 | |
 
 ### Comment
-- All employess can answer 6 people per hour. 
-- In the first 3 hours they have answered 6 \* 3 = 18 people. 
-- Then they have a break for an hour.
-- After the next 3 hours there are 18 + 6 \* 3 = 36 answered people. 
-- After the break for an hour, there are only 9 people to answer.
-- 10th hour - all of the people questions would be answered.
+- The employees can answer 6 people per hour 
+- In the first 3 hours they have answered 6 \* 3 = 18 people
+- Then they have a break for an hour
+- After the next 3 hours there are 18 + 6 \* 3 = 36 answered people 
+- After the one-hour break, there are only 9 people to answer
+- On the 10th hour all of the people's questions would have been answered
 
 ### Example
 | **Input** | **Output** |
