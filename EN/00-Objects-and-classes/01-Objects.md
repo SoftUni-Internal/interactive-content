@@ -114,7 +114,7 @@ console.log(Object.values(cat));
 [/slide]
 
 [slide hideTitle]
-# Iterate through Keys
+# Iterate Through Keys
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-8-Iterate-through-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
