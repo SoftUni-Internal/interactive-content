@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Order Rectangles
 [code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -227,7 +227,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: List Processor
 [code-task title="Problem: List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -334,7 +334,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Object Factory
 [code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -405,7 +405,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cars
 [code-task title="Problem: Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -491,7 +491,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sum
 [code-task title="Problem: Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -591,7 +591,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Heroes
 [code-task title="Problem: Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -695,7 +695,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Construction Crew
 [code-task title="Problem: Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -851,7 +851,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Car Factory
 [code-task title="Problem: Car Factory" taskId="js-advanced-Object-Composition-Car-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -1095,7 +1095,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Extensible Object
 [code-task title="Problem: Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -1243,7 +1243,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: String Extension
 [code-task title="Problem: String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
@@ -1418,7 +1418,7 @@ yes
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Sorted List
 [code-task title="Problem: Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="" requiresInput]
 [code-editor language=javascript]
