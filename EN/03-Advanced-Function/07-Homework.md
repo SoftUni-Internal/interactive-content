@@ -265,7 +265,7 @@ For more information check the examples.
 **Sample Input**
 
 ```
-`[{
+'[{
     "id": "1",
     "first_name": "Ardine",
     "last_name": "Bassam",
@@ -284,7 +284,7 @@ For more information check the examples.
     "last_name": "Maldin",
     "email": "emaldin2@hostgator.com",
     "gender": "Male"
-  }]`, 
+  }]', 
 'gender-Female'
 ```
 
@@ -298,7 +298,7 @@ For more information check the examples.
 **Sample Input\:**
 
 ```
-`[{
+'[{
     "id": "1",
     "first_name": "Kaylee",
     "last_name": "Johnson",
@@ -322,7 +322,7 @@ For more information check the examples.
     "last_name": "Johnson",
     "email": "ev2@hostgator.com",
     "gender": "Male"
-  }]`,
+  }]',
  'last_name-Johnson'
 ```
 
@@ -349,54 +349,50 @@ filterEmployees('\[\{"id": "1","first_name": "Ardine","last_name": "Bassam","ema
 [/test]
 [test open]
 [input]
-solve('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\},\{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'last_name-Johnson')
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\},\{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'last_name-Johnson')
 [/input]
 [output]
-\0\. Kaylee Johnson \- k0\@cnn.com
-\1\. Kizzee Johnson \- kjost1\@forbes\.com
-\2\. Evanne Johnson \- ev2\@hostgator\.com
+0\. Kaylee Johnson \- k0\@cnn.com
+1\. Kizzee Johnson \- kjost1\@forbes\.com
+2\. Evanne Johnson \- ev2\@hostgator\.com
 [/output]
 [/test]
 [test]
 [input]
-\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\] 
-all
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'all')
 [/input]
 [output]
-0. Kaylee Johnson - k0@cnn.com
-1. Kizzee Johnson - kjost1@forbes.com
-2. Evanne Maldin - emaldin2@hostgator.com
-3. Evanne Johnson - ev2@hostgator.com
+0\. Kaylee Johnson - k0@cnn.com
+1\. Kizzee Johnson - kjost1@forbes.com
+2\. Evanne Maldin - emaldin2@hostgator.com
+3\. Evanne Johnson - ev2@hostgator.com
 [/output]
 [/test]
 [test]
 [input]
-\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\] 
-gender-Male
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'gender-Male')
 [/input]
 [output]
-0. Evanne Maldin - emaldin2@hostgator.com
-1. Evanne Johnson - ev2@hostgator.com
+0\. Evanne Maldin - emaldin2@hostgator.com
+1\. Evanne Johnson - ev2@hostgator.com
 [/output]
 [/test]
 [test]
 [input]
-\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\] 
-email-null
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'email-null')
 [/input]
 [output]
-0. Kizzee Johnson - null
-1. Evanne Maldin - null
+0\. Kizzee Johnson - null
+1\. Evanne Maldin - null
 [/output]
 [/test]
 [test]
 [input]
-\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]
-gender-Female
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'gender-Female',
 [/input]
 [output]
-0. Kaylee Johnson - k0@cnn.com
-1. Kizzee Johnson - null
+0\. Kaylee Johnson - k0@cnn.com
+1\. Kizzee Johnson - null
 [/output]
 [/test]
 [/tests]
