@@ -326,7 +326,7 @@ yes
 # Problem: Object Factory
 [code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function objectFactory(input){
   // Write your code here
 }
 ```
@@ -344,12 +344,12 @@ You should print the newly created object.
 # Examples
 | **Input** | **Output** |
 | --- | --- |
-|`'[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]'`| `{ canMove: true, doors: 4, capacity: 5 }` |
+|`'[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]'`| \{ canMove: true, doors: 4, capacity: 5 \} |
 
 
 | **Input** | **Output** |
 | --- | --- |
-|`'[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]'`| `{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true }` |
+|`'[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]'`| \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \} |
 
 [/task-description]
 [code-io /]
@@ -368,7 +368,7 @@ yes
 [test]
 [input]
 let composer = result;
-let actual = composer(`\[\{"canFly": true\},\{"canMove":true, "doors": 4\},\{"capacity": 255\},\{"canFly":true, "canLand": true\}\]`);
+let actual = composer(\`\[\{"canFly": true\},\{"canMove":true, "doors": 4\},\{"capacity": 255\},\{"canFly":true, "canLand": true\}\]\`);
 let expected = \{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true \};
 assert.deepEqual(actual,expected);
 [/input]
