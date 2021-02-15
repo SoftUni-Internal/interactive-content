@@ -176,7 +176,7 @@ yes
 [code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-   function аrrayExtension() {
+   function arrayExtension() {
       // Write your code here
    }
 ```
