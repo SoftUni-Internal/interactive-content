@@ -26,21 +26,25 @@ Common actions include:
   After you declare a variable, you can assign a value to a variable. 
   
   Assigning a value to a variable means **storing** a **value** to a variable.
+
   ```java
   counter = 1;
   ```
 
 - Declaring + **initializing**
+
   ```java
   int counter = 1;
   ```
 
 - **Printing** a value
+
   ```java
   System.out.println(counter);
   ```
 
 - **Modifying** a value
+
   ```java
   counter++;
   ```
