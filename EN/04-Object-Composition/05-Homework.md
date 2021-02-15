@@ -489,16 +489,20 @@ The returned object should support the following functionality\:
 - `add()` adds the numerical value of the element corresponding to selector1 to the numerical value of the element corresponding to selector2 and then writes the result in the element corresponding to resultSelector.
 - `subtract()` subtracts the numerical value of the element corresponding to selector2 from the numerical value of the element corresponding to selector1 and then writes the result in the element corresponding to resultSelector.
 
+## Input
 There will be no input your function must only provide an object.
 
-All commands will always be valid. There will be no nonexistent or incorrect input.
+## Output
+Your function should return an object that meets the specified requirements.
 
-All selectors will point to single textbox elements.
+## Constraints
 
-You are given the following HTML for testing purposes\:
+- All commands will always be valid, there will be no nonexistent or incorrect input.
 
+- All selectors will point to single textbox elements.
 
-# Example
+## HTML
+You are given the following HTML for testing purposes:
 
 ```js
 <html lang="en">
