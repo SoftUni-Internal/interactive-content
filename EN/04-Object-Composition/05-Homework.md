@@ -4,7 +4,7 @@
 # Problem: Order Rectangles
 [code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function orderRectangles(input){
   // Write your code here
 }
 ```
@@ -22,7 +22,7 @@ The input will come ina form of an **array of arrays** - every nested array will
 
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criteria and by their **width** in **descending** order as a second criteria.  
 
-# Example 1
+# Examples
 **Input**
 
 `[[10,5],[5,12]]` 
@@ -32,7 +32,6 @@ The output must be an array of **rectangles** objects sorted by their **area** i
 `[{width:5, height:12, area:function(), compareTo:function(other)},
 {width:10, height:5, area:funciton(),compareTo:function(other)}]`
 
-# Example 2
 **Input**
 
 `[[10,5], [3,20], [5,12]]`
@@ -228,10 +227,9 @@ yes
 
 [slide hideTitle]
 # Problem: List Processor
-[code-task title="Problem: List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function listProcessor(input){
   // Write your code here
 }
 ```
@@ -249,15 +247,11 @@ The commands supported should be the following:
 The input will be in a form of an array of strings - each string represents a command to be executed from the command execution engine.
  
 
-# Example 1
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |`['add hello', 'add again', 'remove hello', 'add again', 'print']`| again\, again |
 
-# Example 2
-| **Input** | **Output** |
-| --- | --- |
-|`['add pesho', 'add george', 'add peter', 'remove peter','print']`| pesho\, george |
 
 [/task-description]
 [code-io /]
