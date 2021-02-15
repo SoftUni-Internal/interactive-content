@@ -1,15 +1,12 @@
-# Problem 1: Task Manager
-
 [slide hideTitle]
-
-# Description
+# Problem 1: Task Manager
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/07.JS-Advanced-Exam-Preparation/EN/Problem-1-Task-Manager-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Task Manager" taskId="js-advanced-exam-preparation-task-manager" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
 ```
-function solve(){
+function taskManager(){
   // Write your code here
 }
 ```
@@ -55,7 +52,7 @@ When the `Delete` button is clicked, the Task (the whole article) **should be re
 
 After clicking the `Finish` button, **the Task will be completed**, and you should move the article to the `Complete` section.
 
-The buttons, including their parent `div` element should be removed.
+The buttons, including their parent `div` element, should be removed.
 
 [image assetsSrc="exam-prep-pic4.png" /]
 
