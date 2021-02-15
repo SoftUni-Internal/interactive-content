@@ -3,9 +3,7 @@
 [slide hideTitle]
 
 # Problem: Person and Teacher
-
-[code-task title="Problem: Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function personAndTeacher() {
@@ -87,9 +85,7 @@ yes
 [slide hideTitle]
 
 # Problem: Inheriting and Replacing ToString
-
-[code-task title="Problem: Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function toStringExtension() {
@@ -177,9 +173,7 @@ yes
 [slide hideTitle]
 
 # Problem: Array Extension
-
-[code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function аrrayExtension() {
@@ -395,9 +389,7 @@ yes
 [slide hideTitle]
 
 # Problem: Balloons
-
-[code-task title="Problem: Balloons" taskId="js-advanced-prototypes-and-inheritance-balloons" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Balloons" taskId="js-advanced-prototypes-and-inheritance-balloons" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function balloons() {
@@ -677,8 +669,7 @@ yes
 
 # Problem: People
 
-[code-task title="Problem: People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function people() {
@@ -1180,8 +1171,7 @@ yes
 
 # Problem: Posts
 
-[code-task title="Problem: Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function posts() {
@@ -1437,8 +1427,7 @@ yes
 
 # Problem: Computer
 
-[code-task title="Problem: Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function computer() {
@@ -1449,7 +1438,7 @@ yes
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Implement the class hierarchy for a computer business.
 
