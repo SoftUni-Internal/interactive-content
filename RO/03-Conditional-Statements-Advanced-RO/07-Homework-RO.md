@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Homework
+
 # Homework
 [slide hideTitle]
 # Problem: Fruit or Vegetable

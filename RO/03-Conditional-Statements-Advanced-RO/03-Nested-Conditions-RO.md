@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Nested-Conditions
+
 [slide hideTitle]
 # Condiții imbricate
 
@@ -97,7 +99,7 @@ Scrieți un program care:
 
 - Citește un **produs** și o zi de pe consolă
 
-- Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos:
+- Imprimă **prețul**, formatat cu două zecimale după virgulă, pe baza tabelului de mai jos
 
  | Produs      | Ziua lucratoare| Weekend   |
 | :---:       |    :----:   |   :---:     |

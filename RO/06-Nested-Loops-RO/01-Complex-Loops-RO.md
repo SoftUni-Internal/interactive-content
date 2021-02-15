@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Complex-Loops
+
 [slide hideTitle]
 # Bucle complexe
 
@@ -9,7 +11,7 @@
 
 # Buclele  for pot avea pași diferiți
 
-* Bucla for inversată:
+* Bucla for inversată
 
 
 ``` js live

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Series-Of-Conditions
+
 [slide hideTitle]
 
 # Secvența condițiilor If-Else

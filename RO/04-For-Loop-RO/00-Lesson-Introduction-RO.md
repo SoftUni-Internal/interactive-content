@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Lesson-Introduction
+
 # Lecție introductivă
 
 [slide hideTitle]
@@ -13,22 +15,22 @@
 
 ## În această lecție veții invața despre:
 
-**1. Operatori de incrementare și decrementare**
+**1. Operatori de Incrementare Si Decrementare**
 - Cum să schimbați valoarea unei funcții cu operatori speciali
 
-**2. Ce este un vector?**
+**2. Ce Este un Vector?**
 - Citirea unui vector
 
-**3. Bucle - blocuri de cod repetitive**
+**3. Bucle - Blocuri de Cod Repetitive**
 - Bucla For
 
 **4. Bucla For cu un pas**
 - Iterația cu diferiți pași
 
-**5. Iterația peste caractere**
+**5. Iterația Peste Caractere**
 - Tabelul ASCII
 
-**6. Bucle infinite**
+**6. Bucle Infinite**
 - Repetarea unui bloc de cod pe termen nelimitat
 
 

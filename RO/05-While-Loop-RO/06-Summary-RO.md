@@ -1,4 +1,6 @@
-[slide]
+// sectionId: "Javascript-Programming-Basics-While-Loop-Summary
+
+[slide hideTitle]
 # Recapitulare
 
 [vimeo-video]

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-04
+
 [slide hideTitle]
 # Problem 4: Cinema Income
 

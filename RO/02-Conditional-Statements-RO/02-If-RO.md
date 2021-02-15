@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-If
+
 # Condiții simple if
 [slide hideTitle]
 # Exemplu din viață reală: Udarea plantelor 
@@ -19,7 +21,7 @@ Aveți câteva plante în grădină care au nevoie de apa.
 
 **Dacă** plouă:
 
-* Nu vom uda plantele din grădină.
+* Nu vom uda plantele din grădin
 
 **Altfel**:
 

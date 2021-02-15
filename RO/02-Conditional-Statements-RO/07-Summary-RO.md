@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Summary
+
 [slide hideTitle]
 # Recapitulare
 
@@ -11,11 +13,11 @@ In această lecție am învățat:
 - Ce este o expresie logică booleană  
    - cum să folosim operatorii de comparație 
 
-- ce este o instrucțiune condițională 
+- Ce este o instrucțiune condițională 
    - `if`
    - `if-else`
    - `if-else-if`
-- cum să construim o serie de condiții `if-else` 
+- Cum să construim o serie de condiții `if-else` 
 
 ```js
 if (num == 1) {
@@ -29,7 +31,7 @@ if (num == 1) {
 }
 ```
 
-- cum să identificăm bug-urile din program, folosind un debugger
+- Cum să identificăm bug-urile din program, folosind un debugger
 
 ## In lecția următoare vom învăța:
 

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Real-Life-Example
+
 [slide hideTitle]
 
 # Exemplu de viață reală: Piață
@@ -8,7 +10,7 @@
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-Piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii
+Piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 
 | **Produs**      | **Ziua lucrătoare** | **Weekend**   |

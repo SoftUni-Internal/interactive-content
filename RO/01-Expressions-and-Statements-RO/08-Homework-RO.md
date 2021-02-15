@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Homework
+
 # Teme pentru acasă
 
 [slide hideTitle]
@@ -14,11 +16,11 @@ function calculateSpeed (input) {
 # Descriere
 Scrieți o funcție care obține un număr întreg și calculează aria unui pătrat cu latura `a`.
 
-- obțineți un număr în argumentul funcției
+- Obțineți un număr în argumentul funcției
 
-- multiplicați-l și
+- Multiplicați-l și
 
-- tipăriți rezultatul în consolă
+- Tipăriți rezultatul în consolă
 
 ## Exemplu
 | **Input** | **Output** |

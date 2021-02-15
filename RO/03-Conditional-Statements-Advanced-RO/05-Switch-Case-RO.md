@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Switch-Case
+
 [slide hideTitle]
 # Instrucțiunea Switch-case
 [vimeo-video]

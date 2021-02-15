@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Nested-Loops
+
 [slide hideTitle]
 
 # Bucle imbricate
@@ -25,15 +27,15 @@ while (condition) {
 
 Acest lucru se întâmplă în felul următor:
 
-* Atunci când buclele imbricate încep să se execute, bucla exterioară începe mai întâi:
+* Atunci când buclele imbricate încep să se execute, bucla exterioară începe mai întâi
 
      * variabila de control este inițializată și după verificarea stării buclei, codul din corpul său este executat
 
-* După aceea, bucla interioară este executată:
+* După aceea, bucla interioară este executată
 
-     * se inițializează poziția de pornire a variabilelor de control, se verifică starea buclei, se execută codul din corpul său.
+     * se inițializează poziția de pornire a variabilelor de control, se verifică starea buclei, se execută codul din corpul său
 
-* Când valoarea specificată pentru **încheierea buclei este atinsă**, programul revine cu un pas în sus și continuă să execute bucla anterioară (exterioară):
+* Când valoarea specificată pentru **încheierea buclei este atinsă**, programul revine cu un pas în sus și continuă să execute bucla anterioară (exterioară)
 
      * variabila de control a buclei externe se schimbă cu un pas, se efectuează o verificare pentru a vedea dacă este îndeplinită condiția finală, dacă nu- se repetă bucla (interioară)
 

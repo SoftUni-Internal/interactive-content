@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-While-Loop-While-Loop
+
 [slide hideTitle]
 # Bucla While
 

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-While-Loop-Infinite-While-Loop
+
 [slide hideTitle]
 # Bucla infinită While
 

@@ -1,3 +1,4 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Expressions
 
 [slide hideTitle]
 # Expresii
@@ -22,7 +23,7 @@ let name = "John Doe";
 
 In majoritatea contextelor în care sunt folosite expresiile, ca de exemplu, în declarații, acestea trebuie să returneze o valoare. 
 
-* Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică. 
+* Dacă `x` și `y` sunt numere, expresia `x + y` este evaluată ca o valoare numerică
 
 # Expresiile numerice 
 

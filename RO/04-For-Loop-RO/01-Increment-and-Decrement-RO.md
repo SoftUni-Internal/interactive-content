@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Increment-And-Decrement
+
 [slide hideTitle]
 # Operatori de incrementare și decrementare
 
@@ -11,8 +13,8 @@ Operatorul de incrementare unitar `++` își incrementează operandul cu 1, în 
 
 Operatorii de incrementare și decrementare pot fi scriși astfel: 
 
-* operator de incrementare/decrementare ca sufix, `x++`/`x--` 
-* operator de incrementare/decrementare ca prefix, `++x`/`--x`
+* Operator de incrementare/decrementare ca sufix, `x++`/`x--` 
+* Operator de incrementare/decrementare ca prefix, `++x`/`--x`
 
 ## Operatorul de incrementare
 

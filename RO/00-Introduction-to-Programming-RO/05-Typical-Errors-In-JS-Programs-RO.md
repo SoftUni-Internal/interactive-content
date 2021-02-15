@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Typicals-Errors-In-JS-Programs"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Typicals-Errors-In-JS-Programs"
 
 [slide hideTitle]
 # Erori tipice în programele JavaScript
@@ -28,7 +28,7 @@ Operatorul `+` are două funcționalități.
 
 **Concatenarea** este pentru șiruri de caractere.
 
-- Confuzia operatorilor **assignment** (`=`) și **equality** (`==`, `===`).
+- Confuzia operatorilor **assignment** (`=`) și **equality** (`==`, `===`)
 
 În JavaScript semnurile dublu egal și triplu egal sunt numiți operatori de comparație.
 

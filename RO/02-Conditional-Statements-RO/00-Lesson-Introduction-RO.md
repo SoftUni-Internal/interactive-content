@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Lesson-Introduction
+
 # Lecție introductivă
 
 [slide hideTitle]
@@ -11,11 +13,11 @@
 
 ## În această lecție veți afla despre:
 
-**1. Operatorii de comparație**
+**1. Operatorii de Comparație**
 
 - Comparați valorile folosind operatorii de comparație.
 
-**2. Ce reprezintă declarațiile condiționale:**
+**2. Ce Reprezintă Declarațiile Condiționale:**
 
 - Declarația `if`                           
 - Declarația  `if-else`                   

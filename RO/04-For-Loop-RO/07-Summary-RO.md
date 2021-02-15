@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Summary
+
 [slide hideTitle]
 # Recapitulare
 

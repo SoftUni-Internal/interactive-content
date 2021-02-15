@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-VS-Code"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-VS-Code"
 
 [slide hideTitle]
 # Medii de dezvoltare (IDE) 

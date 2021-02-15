@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Real-Life-Example
+
 [slide hideTitle]
 
 # Exemplu din viața reală: Ceas

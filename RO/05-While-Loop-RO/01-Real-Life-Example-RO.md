@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-While-Loop-Real-Life-Example
+
 [slide hideTitle]
 
 # Exemplu din viața reală: Găleată cu apă

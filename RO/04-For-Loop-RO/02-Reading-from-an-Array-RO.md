@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Reading-From-An-Array
+
 # Citirea unei matrice
 
 [slide hideTitle]
@@ -57,12 +59,12 @@ console.log(`Last element is ${train[train.length-1]}`);
 
 În acest exemplu fiecare element se află pe o poziție diferită:
 
-- **primul** element al matricei se afla pe **poziția zero** `train[0]`
+- **Primul** element al matricei se afla pe **poziția zero** `train[0]`
 
-- **al doilea** element al matricei  se află pe **poziția unu** `train[1]`
+- **Al doilea** element al matricei  se află pe **poziția unu** `train[1]`
 
-- **al treilea** element al matricei se află pe **poziția 2** `train[2]`
+- **Al treilea** element al matricei se află pe **poziția 2** `train[2]`
 
-- **ultimul** element al matricei se află pe poziția `train[train.length-1]`
+- **Ultimul** element al matricei se află pe poziția `train[train.length-1]`
 
 [/slide]

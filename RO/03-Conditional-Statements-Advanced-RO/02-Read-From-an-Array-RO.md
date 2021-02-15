@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Read-From-An-Array
+
 # Citiți dintr-o matrice
 
 [slide hideTitle]

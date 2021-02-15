@@ -1,3 +1,4 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Arithmetic-Operators
 
 [slide hideTitle]
 # Operatorii aritmetici
@@ -57,7 +58,7 @@ console.log(a * b);
 
 Tipul numerelor reprezintă **atât** numerele întregi  (integer), cât și cele în virgulă mobilă (floating point number). Nu este  **împărțire întreagă implicită**.
 
-* If you do this: 
+* If you do this
 
 ```js live
 let result = 5/4;
@@ -84,9 +85,9 @@ console.log(result);
 
 În acest caz rezultatul este negativ. 
 
-* Răspunsul așteptat este -1, dar veți obține -2, în schimb.
+* Răspunsul așteptat este -1, dar veți obține -2, în schimb
 
-* Rotunjirea în jos funcționează în sensul opus pentru numerele negative. O instrucțiune if poate poate repara aceasta problemă:
+* Rotunjirea în jos funcționează în sensul opus pentru numerele negative. O instrucțiune if poate poate repara aceasta problemă
 
 ```js live
 let result = -5/4;

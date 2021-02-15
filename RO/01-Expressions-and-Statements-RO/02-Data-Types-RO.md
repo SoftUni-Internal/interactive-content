@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Data-Types
+
 # Tipurile de date și gama de variabile
 
 [slide hideTitle]
@@ -10,13 +12,13 @@
 
 Există șase tipuri primitive de date:
 
-* datele de tip boolean: true or false (adevărat sau fals)
-* datele de tip Null
-* datele de tip nedefinit (Undefined)
-* datele numerice (numere întregi): `1, 2, 4.5, -2`
-* datele de tip text (string): `Hello, World!`
-* datele de tip simbol (simboluri) (o noutate a ECMAScript 6)
-* datele de tip BigInt
+* Datele de tip boolean: true or false (adevărat sau fals)
+* Datele de tip Null
+* Datele de tip nedefinit (Undefined)
+* Datele numerice (numere întregi): `1, 2, 4.5, -2`
+* Datele de tip text (string): `Hello, World!`
+* Datele de tip simbol (simboluri) (o noutate a ECMAScript 6)
+* Datele de tip BigInt
 
 ```js
 const isValidated = true; // tipul de date boolean este reprezentat de una dintre cele două valori ale sale, adevărat (true) sau fals (false)
@@ -99,7 +101,7 @@ Mai există și alte convenții privind denumirea variabilelor care sunt utiliza
 
 * Indicând separarea cuvintelor cu o simpla literă mare la începutul fiecărui cuvânt următor
 
-* Eliminând toate spațiile:
+* Eliminând toate spațiile
 
 ```js
 let userLoginCount;
@@ -117,10 +119,10 @@ let UserLoginCount;
 
 **Snake-case** este o altă convenție privind alocarea unui nume, care combină cuvintele astfel:
 
-* folosind o liniuță jos ca separator al cuvintelor `_`
-* eliminând toate spațiile
-* litera de început a fiecărui element component este de obicei literă mică
-* prima literă poate fi literă mică sau majusculă, la alegere:
+* Folosind o liniuță jos ca separator al cuvintelor `_`
+* Eliminând toate spațiile
+* Litera de început a fiecărui element component este de obicei literă mică
+* Prima literă poate fi literă mică sau majusculă, la alegere
 
 ```js
 let users_count;

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-05
+
 [slide hideTitle]
 
 # Problem 5: TV Series Budget

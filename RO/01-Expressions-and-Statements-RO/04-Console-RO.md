@@ -1,3 +1,4 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Console
 
 [slide hideTitle]
 # Console (Terminal)

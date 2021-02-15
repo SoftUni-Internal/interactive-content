@@ -1,5 +1,7 @@
-[slide hideTitle]
-# Problem 1: Calculator for TV series
+// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-01
+
+[slide1 hideTitle]
+# Problem : Calculator for TV series
 
 [vimeo-video]
 [stream language="EN" videoId="487118037/76e61cd949" default /]

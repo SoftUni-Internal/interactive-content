@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-02
+
 [slide hideTitle]
 # Problema 2: Time for Lunch
 

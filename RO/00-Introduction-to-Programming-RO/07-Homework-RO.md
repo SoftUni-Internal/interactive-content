@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Homework"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Homework"
 
 # Homework
 

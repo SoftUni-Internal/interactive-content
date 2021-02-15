@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Infinite-Loops
+
 [slide hideTitle]
 # Infinite Loops
 
@@ -10,11 +12,11 @@ Buclele infinite pot **repeta un bloc de cod de un număr nelimitat.**
 
 Utilizare în programare:
 
-* Sunt utilizate pe scară largă în dezvoltarea jocului pentru a desena mediul jocului.
+* Sunt utilizate pe scară largă în dezvoltarea jocului pentru a desena mediul jocului
 
-* Pentru desenarea animațiilor.
+* Pentru desenarea animațiilor
 
-* Pe serverele web, deoarece acestea rulează permanent.
+* Pe serverele web, deoarece acestea rulează permanent
 
 ```js
 for ( ; ; ) {

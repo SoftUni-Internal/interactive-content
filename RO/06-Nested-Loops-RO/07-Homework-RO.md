@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Homework
+
 # Temă pentru acasă
 
 [slide hideTitle]

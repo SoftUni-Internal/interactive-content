@@ -1,6 +1,6 @@
-// sectionId: "Javascript-Programming-Basics-Welcome-To-Coding"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Welcome-To-Coding"
 
-[slide]
+[slide hideTitle]
 # Ce este codarea?
 [vimeo-video]
 [stream language / fluxul de limbaj = "EN" videoId = "486831827 / 419d467fd3" implicit /]
@@ -10,9 +10,9 @@
 **A programa**, exprimat în termeni simpli, înseamnă a **da comenzi** computerului.
 Câteva exemple de bază sunt:
 
-- `a crea un sunet`
-- `a lista ceva de pe ecran`
-- `a multiplica două numere`
+- `A crea un sunet`
+- `A lista ceva de pe ecran`
+- `A multiplica două numere`
 
 Când avem o succesiune de comenzi,urmându-se unа pe cealaltă- aceasta ar putea fi numită un **program de computer**.
 
@@ -51,7 +51,7 @@ Programul de mai sus definește o funcție care deține o secvență de **3 come
 
 - Calculează și **imprimă** o **expresie**: `console.log (" Area = "+ size * size)`
 
-- Rezultatul (output) executării programului de mai sus este după cum urmează:
+- Rezultatul (output) executării programului de mai sus este după cum urmează
 
 ```
 Size = 5
@@ -81,13 +81,13 @@ Programele de calculator execută de obicei algoritmi.
 
 De exemplu, dacă vrem să fierbem un ou, vom urma **câțiva pași** (un algoritm):
 
-- porniți aragazul
+- Porniți aragazul
 
-- luați o oală și turnați apă în ea
+- Luați o oală și turnați apă în ea
 
-- puneți oala pe aragaz și puneți oul înăuntru
+- Puneți oala pe aragaz și puneți oul înăuntru
 
-- așteptați să fiarbă apa și scoateți ouăle după 5 minute
+- Așteptați să fiarbă apa și scoateți ouăle după 5 minute
 
 În mod similar, în programarea **programul de calculator execută algoritmi**: o succesiune de comenzi, necesare pentru finalizarea unei anumite sarcini.
 

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Lesson-Introduction"
+
 # Lecție introductivă
 
 [slide hideTitle]

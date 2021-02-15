@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-For-Loop-Homework
+
 # Temă de acasă
 
 [slide hideTitle]

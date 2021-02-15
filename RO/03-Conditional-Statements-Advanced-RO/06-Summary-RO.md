@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Summary
+
 [slide hideTitle]
 # Recapitulare
 [vimeo-video]
@@ -26,10 +28,10 @@ if (condition1) {
 ```
 
 - Operatorii logici execută expresii booleene
-  - logical **"AND"** `&&`
-  - logical **"OR"** `||`
-  - logical **negation** `!`
-  - **brackets** `()`
+  - Logical **"AND"** `&&`
+  - Logical **"OR"** `||`
+  - Logical **negation** `!`
+  - **Brackets** `()`
 
 - Instrucțiunea **switch-case** este o alternativă a instrucțiunii **if-else**
 
@@ -46,9 +48,9 @@ switch (selector) {
 
 ## În cadrul lecței următoare veți afla:
 
-- Ce este bucla for?
+- Ce este bucla for
 
-- Care este sintaxa buclei for?
+- Care este sintaxa buclei for
 
 
 [/slide]
