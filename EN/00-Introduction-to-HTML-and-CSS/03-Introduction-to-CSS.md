@@ -10,7 +10,7 @@
 
 **Cascading Style Sheets** (**CSS**) is a stylesheet language used to describe the **presentation of a document written in HTML**.
 
-CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+CSS describes how elements should be rendered on a screen.
 
 For example, change text color in green for all paragraph elements:
 [html]
@@ -36,7 +36,7 @@ A CSS rule-set consists of a **selector** and a **declaration block**:
 }
 ```
 
-The selector points to the **HTML element** you want to style.
+The selector points to the **HTML element** we'd like to style.
 
 The declaration block contains declarations separated by semicolons.
 
@@ -51,7 +51,7 @@ Example:
 [/html]
 
 Example Explained:
-- p is a selector in CSS (it points to the HTML element you want to style: `<p>`, we will cover in the next pages)
+- p is a selector in CSS (it points to the HTML element we want to style: `<p>`)
 - `color` is a **property**, and `green` is the **property value**
 
 # Element Selectors
@@ -95,7 +95,7 @@ Example:
 [stream language="RO" videoId="444864056" /]
 [/video-vimeo]
 
-The CSS ID selector matches an element based on the value of its `id` attribute which must **match exactly** the value given in the selector.
+The CSS id selector matches an element based on the value of its `id` attribute which must **match** the value given in the selector.
 
 The id of an element is **unique within a page**, so the id selector is used to **select one unique element**.
 
@@ -140,7 +140,7 @@ To select elements with a specific class, write a period (`.`) character, follow
 <p class="main">lorem ipsum dolor sit amet</p>
 ```
 
-You can also specify that **only specific HTML elements** should be affected by a class.
+We can also specify that **only specific HTML elements** should be affected by a class.
 
 ```css
 h1.headings {
@@ -162,7 +162,7 @@ Here, all `<h1>` elements with class `headings` will be affected.
 A pseudo-class is used to define a **special state of an element**.
 
 Examples of pseudo-classes:
-- Style a link when the user's mouse is over it
+- Style a link when the user's mouse is hovering over it
 - Style **visited** and **unvisited** links differently
 
 Syntax:
@@ -195,9 +195,9 @@ An external style sheet is a separate file linked to an HTML web page. All the s
 
 The most common way to add CSS, is to keep the styles in **separate CSS files**. 
 
-Benefits of the external style sheet:
+The benefits of the external style sheet are:
 - It can be applied to an unlimited number of web pages;
-- An external style sheet can be applied instantly to apply the look to each and every web page;
+- An external style sheet can be attached instantly to apply the look to each and every web page;
 - It helps in bringing a uniform format to every page they are attached to.
 
 To link an external stylesheet, you'd include a `<link>` element inside your `<head>` like this:
@@ -224,11 +224,11 @@ h1 {
 ```
 
 ## Inline CSS
-An inline style may be used to apply a unique style for a single element.
+An inline style can be used to apply a unique style for a single element.
 
 To use inline styles, add the `style` attribute to the relevant element. The style attribute can contain any CSS property.
 
-Example of Inlince CSS:
+Example of Inline CSS:
 [html]
 <p class="codepen" data-height="202" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="MWaWNEb" style="height: 202px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="MWaWNEb">
 </p>
@@ -264,7 +264,7 @@ h1 {
 
 ```
 
-Because the browser can only pick **one color** to apply on this paragraph, it will have to decide which CSS rule takes priority over other ones.
+Because the browser can only pick **one color** to apply to this paragraph, it will have to determine which CSS rule takes priority.
 
 Here is the priority list as it follows, where number one has the highest priority:
 - `#id`
