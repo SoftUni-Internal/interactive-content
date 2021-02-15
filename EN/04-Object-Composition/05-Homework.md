@@ -471,10 +471,10 @@ yes
 
 [slide hideTitle]
 # Problem: Sum
-[code-task title="Problem: Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+
 ```
-function solve(input){
+function sum(){
   // Write your code here
 }
 ```
@@ -502,20 +502,20 @@ You are given the following HTML for testing purposes\:
 
 ```js
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<input type="text" id="num1" />
-<input type="text" id="num2" />
-<input type="text" id="result" readonly />
-<br>
-<button id="sumButton">
-    Sum</button>
-<button id="subtractButton">
-    Subtract</button>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+   </head>
+   <body>
+      <input type="text" id="num1" />
+      <input type="text" id="num2" />
+      <input type="text" id="result" readonly />
+      <br>
+      <button id="sumButton">
+      Sum</button>
+      <button id="subtractButton">
+      Subtract</button>
+   </body>
 </html>
 ```
 
