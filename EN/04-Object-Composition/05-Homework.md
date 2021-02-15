@@ -878,34 +878,35 @@ The format will be as follows:
 
 # Examples
 
-| **Input** | **Output** |
-| --- | --- |
-|`{ model: 'VW Golf II',
+**Input** 
+`{ model: 'VW Golf II',
   power: 90,
   color: 'blue',
   carriage: 'hatchback',
-  wheelsize: 14 }`| \{ model: 'VW Golf II',
-  engine: \{ power: 90,
-            volume: 1800 \},
-  carriage: \{ type: 'hatchback',
-              color: 'blue' \},
-  wheels: \[13, 13, 13, 13\] \}|
+  wheelsize: 14 }`
 
+**Output**
+  `{ model: 'VW Golf II',
+    engine: { power: 90,
+              volume: 1800 },
+    carriage: { type: 'hatchback',
+                color: 'blue' },
+    wheels: [13, 13, 13, 13] }`
 
-
-| **Input** | **Output** |
-| --- | --- |
-|
+**Input**
 `{ model: 'Opel Vectra',
   power: 110,
   color: 'grey',
   carriage: 'coupe',
-  wheelsize: 17 }`| \{ model: 'Opel Vectra',
-  engine: \{ power: 120,
-            volume: 2400 \},
-  carriage: \{ type: 'coupe',
-              color: 'grey' \},
-  wheels: \[17, 17, 17, 17\] \}|
+  wheelsize: 17 }`
+
+**Output**
+`{ model: 'Opel Vectra',
+   engine: { power: 120,
+             volume: 2400 },
+   carriage: { type: 'coupe',
+               color: 'grey' },
+   wheels: [17, 17, 17, 17] }`
 
 
 [/task-description]

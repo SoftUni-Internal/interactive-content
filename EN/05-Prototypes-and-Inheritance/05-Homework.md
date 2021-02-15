@@ -3,13 +3,11 @@
 [slide hideTitle]
 
 # Problem: Person and Teacher
-
-[code-task title="Problem: Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function personAndTeacher() {
-      // TODO:
+      // Write your code here
 
       return {
          Person,
@@ -21,7 +19,7 @@
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Write a class **Person** and a class **Teacher** which extends **Person**.
 
@@ -87,13 +85,11 @@ yes
 [slide hideTitle]
 
 # Problem: Inheriting and Replacing ToString
-
-[code-task title="Problem: Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function toStringExtension() {
-      // TODO:
+      // Write your code here
 
       return {
          Person,
@@ -106,7 +102,7 @@ yes
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Extend the **Person** and **Teacher** classes from the previous task and add a class **Student** inheriting from **Person**. 
 
@@ -177,20 +173,18 @@ yes
 [slide hideTitle]
 
 # Problem: Array Extension
-
-[code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function аrrayExtension() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Extend the built-in **Array** object with additional functionality. 
 
@@ -395,20 +389,18 @@ yes
 [slide hideTitle]
 
 # Problem: Balloons
-
-[code-task title="Problem: Balloons" taskId="js-advanced-prototypes-and-inheritance-balloons" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Balloons" taskId="js-advanced-prototypes-and-inheritance-balloons" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function balloons() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 You have been tasked with creating several classes for balloons.
 
@@ -677,19 +669,18 @@ yes
 
 # Problem: People
 
-[code-task title="Problem: People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function people() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Define several classes that represent a company's employee records. 
 
@@ -1180,12 +1171,11 @@ yes
 
 # Problem: Posts
 
-[code-task title="Problem: Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function posts() {
-       // TODO:
+      // Write your code here
    }
 ```
 
@@ -1437,19 +1427,18 @@ yes
 
 # Problem: Computer
 
-[code-task title="Problem: Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function computer() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Implement the class hierarchy for a computer business.
 

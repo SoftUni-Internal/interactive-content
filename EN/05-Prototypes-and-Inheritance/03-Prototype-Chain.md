@@ -110,7 +110,7 @@ Here is an example of how they looked before ES6:
 ```
 In this example, we created a function called **Rectangle**, which accepts as parameters **width** and **heigh**.
 
-To the **Rectangle** function, we attach another one which will multiply the **width** and the **heigh**.
+To the **Rectangle** function, we attach another one that will multiply the **width** and the **heigh**.
 
 The result will be printed in the console.
 
@@ -180,9 +180,9 @@ Here is an example of **literal creation**:
 
 ```js live
    let Person = {
-      me: 'I am John',
+      me: 'I am John',
       speak: function () {
-         console.log('Hello, ' + this.me + '.');
+         console.log('Hello, ' + this.me + '.');
       },
    };
 
@@ -293,45 +293,26 @@ Then we attach to the **MakeSentence** a property **name** and a method **concat
 
 Which concatenates the **greet** the **name** and the **punctuation** properties.
 
-After that, we instantiate **MakeSentence** and print the **concatenate** method result in the console..
+After that, we instantiate **MakeSentence** and print the **concatenate** method result in the console.
 
 [/slide]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [slide hideTitle]
 
-# Problem: Extending Prototype
-
-[code-task title="Problem: Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-extending-prototype" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+# Problem with Solution: Extending Prototype
+[code-task title="Problem: Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-lab-extending-prototype" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-   function extendPrototype(classToExtend) {
-      // TODO:
-   }
+function extendPrototype(classToExtend) {
+   // Write your code here
+}
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Write a function that receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
 
@@ -353,36 +334,36 @@ There is **NO** output, your function should only attach the properties to the g
 [test]
 [input]
 class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
+    constructor(name, email) \{
+        this.name = name;
+        this.email = email;
+    \}
+    toString() \{
+        let className = this.constructor.name;
+        return \`\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})\`;
+    \}
 \}
 
 class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
+    constructor(name, email, subject) \{
+        super(name, email);
+        this.subject = subject;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, subject: \\$\{this.subject\})\`;
+    \}
 \}
 
 class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
+    constructor(name, email, course) \{
+        super(name, email);
+        this.course = course;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, course: \\$\{this.course\})\`;
+    \}
 \}
 
 result(Person);
@@ -397,36 +378,36 @@ yes
 [test]
 [input]
 class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
+    constructor(name, email) \{
+        this.name = name;
+        this.email = email;
+    \}
+    toString() \{
+        let className = this.constructor.name;
+        return \`\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})\`;
+    \}
 \}
 
 class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
+    constructor(name, email, subject) \{
+        super(name, email);
+        this.subject = subject;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, subject: \\$\{this.subject\})\`;
+    \}
 \}
 
 class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
+    constructor(name, email, course) \{
+        super(name, email);
+        this.course = course;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, course: \\$\{this.course\})\`;
+    \}
 \}
 
 result(Person);
@@ -441,36 +422,36 @@ yes
 [test]
 [input]
 class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
+    constructor(name, email) \{
+        this.name = name;
+        this.email = email;
+    \}
+    toString() \{
+        let className = this.constructor.name;
+        return \`\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})\`;
+    \}
 \}
 
 class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
+    constructor(name, email, subject) \{
+        super(name, email);
+        this.subject = subject;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, subject: \\$\{this.subject\})\`;
+    \}
 \}
 
 class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
+    constructor(name, email, course) \{
+        super(name, email);
+        this.course = course;
+    \}
+    toString() \{
+        let baseStr = super.toString().slice(0, -1);
+        return baseStr + \`, course: \\$\{this.course\})\`;
+    \}
 \}
 
 result(Person);
@@ -484,177 +465,4 @@ yes
 [/test]
 [/tests]
 [/code-task]
-
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Extending Prototype
-
-[code-task title="Problem: Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-extending-prototype-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-   function extendPrototype(classToExtend) {
-      // TODO:
-   }
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Write a function that receives a **class** and adds a property **species** and a function `toSpeciesString()` to it.
-
-When called, the function returns a string in the format:
-
-`I am a <species>. <toString()>`
-
-The function `toString()` is called from the current instance (use the **this** keyword to call it).
-
-## Input and Output
-
-Your function will receive a **class** whose prototype it should extend. 
-
-There is **NO** output, your function should only attach the properties to the given class's prototype.
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
-\}
-
-class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
-\}
-
-class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
-\}
-
-result(Person);
-let p = new Person("Pesho","email@hit.bg");
-expect(p.species).to.equal('Human',"No species property");
-expect(p.toSpeciesString()).to.equal("I am a Human. Person (name: Pesho, email: email@hit.bg)");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
-\}
-
-class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
-\}
-
-class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
-\}
-
-result(Person);
-let t = new Teacher("Posho","imail@hit.bg","Coding");
-expect(t.species).to.equal('Human',"No species property");
-expect(t.toSpeciesString()).to.equal("I am a Human. Teacher (name: Posho, email: imail@hit.bg, subject: Coding)");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-class Person \{
-constructor(name, email) \{
-this.name = name;
-this.email = email;
-\}
-toString() \{
-let className = this.constructor.name;
-return `\\$\{className\} (name: \\$\{this.name\}, email: \\$\{this.email\})`;
-\}
-\}
-
-class Teacher extends Person \{
-constructor(name, email, subject) \{
-super(name, email);
-this.subject = subject;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, subject: \\$\{this.subject\})`;
-\}
-\}
-
-class Student extends Person \{
-constructor(name, email, course) \{
-super(name, email);
-this.course = course;
-\}
-toString() \{
-let baseStr = super.toString().slice(0, -1);
-return baseStr + `, course: \\$\{this.course\})`;
-\}
-\}
-
-result(Person);
-let s = new Student("Gosho","gesha@hit.bg",1);
-expect(s.species).to.equal('Human',"No species property");
-expect(s.toSpeciesString()).to.equal("I am a Human. Student (name: Gosho, email: gesha@hit.bg, course: 1)");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
-
 [/slide]
