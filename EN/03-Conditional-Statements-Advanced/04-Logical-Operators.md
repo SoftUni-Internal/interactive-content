@@ -12,7 +12,7 @@ We can use:
 * Logical **"AND"** (`&&`)
 * Logical **"OR"** (`||`)
 * Logical **negation** (`!`) 
-* **Brackets** (`()`).
+* **Brackets** (`()`)
 
 # Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
