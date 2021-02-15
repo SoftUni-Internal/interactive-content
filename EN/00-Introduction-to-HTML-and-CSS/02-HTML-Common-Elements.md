@@ -28,7 +28,7 @@ The HTML `<h1>...<h6>` elements represent six levels of section headings.
 [stream language="RO" videoId="444864051" /]
 [/video-vimeo]
 
-The HTML `<p>` element represents a paragraph. Browsers automatically add some space before and after each `<p>` element. The margins can be modified with **CSS**.
+The HTML `<p>` element represents a paragraph. Browsers automatically add space before and after each `<p>` element. The margins can be modified with **CSS**.
 
 HTML paragraphs can be used for **grouping related content**, such as images.
 
@@ -46,9 +46,9 @@ HTML paragraphs can be used for **grouping related content**, such as images.
 [stream language="RO" videoId="444864048" /]
 [/video-vimeo]
 
-Tags in HTML have **attributes**. These are additional values that provide **additional information** about an element.
+Tags in HTML have **attributes**. They are additional values that provide **more information** about an element.
 
-Attributes are always specified in the st**art tag**.
+Attributes are always specified in the **opening tag**.
 
 Attributes usually come in **name/value pairs** like: `name="value"`.
 
@@ -57,7 +57,7 @@ Attributes usually come in **name/value pairs** like: `name="value"`.
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
 
-You will learn more about links and the `<a>` tag in the next page.
+You will learn more about links and the `<a>` tag in the next slide.
 [/slide]
 
 [slide]
@@ -68,12 +68,12 @@ You will learn more about links and the `<a>` tag in the next page.
 [stream language="RO" videoId="444864049" /]
 [/video-vimeo]
 
-Links allow users to click their way from **page to page**. When you move the mouse over a link, the mouse arrow will turn into a **little hand**.
+Links allow users to navigate from **one page to another**.
 
 **Note**: A link does not have to be text. It can be an image or any other HTML element.
 
 ## External Hyperlinks
-External pages can be referenced with an URL to the web page.
+External pages can be referenced with a URL to the web page.
 
 [html]
 <p class="codepen" data-height="186" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
@@ -131,16 +131,16 @@ The HTML `<img>` element embeds an image into the document.
 ```
 **NOTE**: `softuni.png` is a local file in the example.
 
-The above example shows the usage of the `<img>` element:
+The example above shows the usage of the `<img>` element:
 - The `src` attribute is **required**, and contains the **path to the image**.
-- The `alt` attribute holds a text description of the image, which isn't mandatory but is incredibly useful since screen readers read this description out to their users so they know what the image means. 
-[/slide]
+- The `alt` attribute specifies an **alternate** text for an image, if the image cannot be displayed.
+
 
 [slide]
 # Lists
 HTML lists are used to present a list of information in a well-formed and semantic way. 
 
-There are three different types of list in HTML and each one has a specific purpose and meaning:
+There are two different types of lists in HTML and each one has a specific purpose and meaning:
 - Unordered HTML List
 - Ordered HTML List
 
