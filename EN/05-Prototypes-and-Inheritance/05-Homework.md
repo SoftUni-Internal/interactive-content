@@ -9,7 +9,7 @@
 
 ```
    function personAndTeacher() {
-      // TODO:
+      // Write your code here
 
       return {
          Person,
@@ -21,7 +21,7 @@
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Write a class **Person** and a class **Teacher** which extends **Person**.
 
@@ -93,7 +93,7 @@ yes
 
 ```
    function toStringExtension() {
-      // TODO:
+      // Write your code here
 
       return {
          Person,
@@ -106,7 +106,7 @@ yes
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Extend the **Person** and **Teacher** classes from the previous task and add a class **Student** inheriting from **Person**. 
 
@@ -183,14 +183,14 @@ yes
 
 ```
    function аrrayExtension() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Extend the built-in **Array** object with additional functionality. 
 
@@ -401,14 +401,14 @@ yes
 
 ```
    function balloons() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 You have been tasked with creating several classes for balloons.
 
@@ -682,14 +682,14 @@ yes
 
 ```
    function people() {
-      // TODO:
+      // Write your code here
    }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 Define several classes that represent a company's employee records. 
 
@@ -1185,7 +1185,7 @@ yes
 
 ```
    function posts() {
-       // TODO:
+      // Write your code here
    }
 ```
 
@@ -1442,7 +1442,7 @@ yes
 
 ```
    function computer() {
-      // TODO:
+      // Write your code here
    }
 ```
 
