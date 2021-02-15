@@ -1,13 +1,13 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 
 ## In this lesson you learned:
 
 - Strings are immutable sequences of Unicode characters
+
 - String processing methods:
     - `concat()`, `indexOf()`, `contains()`, `substring()`, `split()`, `replace()`, etc.
-
 
 ```java live
 
@@ -31,16 +31,18 @@ System.out.println(result); // "Hello, SoftUni!"
 
 - StringBuilder efficiently builds and modifies strings
 
-
-
-
 ## In the next lesson, you will learn:
 
-- What are Regular Expressions?
-- RegEx Syntax 
+- What Regular Expressions are
+
+- RegEx Syntax
+
 - Quantifiers and Grouping
+
 - Lookahead and Lookbehind
+
 - Backreferences
+
 - Regex in Java
 
 [/slide]

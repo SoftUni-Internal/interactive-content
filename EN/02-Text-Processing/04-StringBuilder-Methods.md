@@ -1,6 +1,11 @@
-[slide]
+[slide hideTitle]
+
 # Add
-- `append()` - **appends** a string value **to the end** of the current sequence of characters
+
+There are **two** ways to add new string values to a `StringBuilder`:
+
+- `append()` - **Appends** a string value **to the end** of the current sequence of characters"
+
 ```java live
 StringBuilder sb = new StringBuilder();
 
@@ -10,7 +15,9 @@ sb.append("I sent you an email.");
 
 System.out.println(sb.toString());
 ```
-- `insert(int index, String str)` - **inserts** a string at the **specified** character **position**
+
+- `insert(int index, String str)` - **Inserts** a string at the **specified** character **position**
+
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 
@@ -19,19 +26,23 @@ sb.insert(11, " Smith");
 System.out.println(sb.toString());
 ```
 
-
 [/slide]
-[slide]
+
+[slide hideTitle]
+
 # Length
-- `length()` - returns the **length** of the **string** in the buffer
+
+The length of a `StringBuilder` can be **accessed** and **modified**.
+
+- `length()` - Returns the **length** of the **string** in the buffer
+
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 
 System.out.println(sb.length()); // 25
 ```
 
-- `setLength(int newLength)` - Sets the **length of the string**. If **newLength** is **less** than **length()**, the **last characters** in the string are **truncated**. 
-
+- `setLength(int newLength)` - Sets the **length of the string** and **truncates** the **last characters** if `newLength` is smaller than `length()` 
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -42,6 +53,7 @@ System.out.println(sb.toString()); // Hello Peter,
 ```
 
 If **newLength** is **greater** than **length()**, **null** characters are **added** at the end of the string.
+
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 
@@ -51,12 +63,14 @@ System.out.println(sb.toString()); // Hello Peter, how are you?
 
 System.out.println(sb.length()); // 28
 ```
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Access
 
-- `charAt(int index)` - returns char on the current index
+By using `charAt(int index)`, it is possible to access the `char` at the specified `index`.
+
 ```java live
 StringBuilder sb = new StringBuilder();
 
@@ -67,10 +81,11 @@ System.out.println(sb.charAt(1)); // e
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Replace
 
-- `replace(int startIndex, int endIndex, String str)` - replaces the characters in a substring
+The `replace(int startIndex, int endIndex, String str)` method replaces the characters in a substring.
+
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 
@@ -81,10 +96,11 @@ System.out.println(sb.toString()); // Hello George, how are you?
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Convert to String
 
-- `toString()` - **converts** the value of this instance **to a String**
+The `toString()` method **converts** the value of the current instance **to a String**.
+
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 

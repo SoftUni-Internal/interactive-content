@@ -1,17 +1,19 @@
-[slide]
-
 # Lesson Introduction
+
+[slide hideTitle]
+
+# Lesson Content
 
 [vimeo-video]
 [stream language="EN" videoId="" default /]
 [stream language="RO" videoId="" /]
 [/video-vimeo]
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
 **1. String**
 
-- What is String?
+- What a String is
 
 - Collection of Key and Value pairs
 
@@ -26,8 +28,5 @@
 - StringBuilder overview
 
 - StringBuilder methods
-
-
-**4. Live Exercises**
 
 [/slide]
