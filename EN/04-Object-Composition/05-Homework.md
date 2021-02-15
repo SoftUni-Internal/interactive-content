@@ -707,10 +707,10 @@ Workers who do not have dizziness should not be modified in any way. Return them
 # Examples 
 | **Input** | **Output** |
 | --- | --- |
-|`{ weight: 80,
+|\{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true }`| \{ weight: 80,
+  dizziness: true \}| \{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
   dizziness: false \}|
@@ -718,33 +718,33 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 | **Input** | **Output** |
 | --- | --- |
-|`{ weight: 80,
+|\{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true }`| \{ weight: 80,
+  dizziness: true \}| \{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
   dizziness: false \}|
 
 | **Input** | **Output** |
 | --- | --- |
-|`{ weight: 120,
+|\{ weight: 120,
   experience: 20,
   levelOfHydrated: 200,
-  dizziness: true }`| \{ weight: 120,
+  dizziness: true \}| \{ weight: 120,
   experience: 20,
   levelOfHydrated: 440,
   dizziness: false \}|
 
 | **Input** | **Output** |
 | --- | --- |
-|`{ weight: 95,
+|\{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }`| \{ weight: 95,
+  dizziness: false \}| \{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }\|
+  dizziness: false \}|
 
 [/task-description]
 [code-io /]
@@ -1068,10 +1068,10 @@ yes
 
 [slide hideTitle]
 # Problem: Extensible Object
-[code-task title="Problem: Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+
 ```
-function solve(input){
+function extensibleObject(){
   // Write your code here
 }
 ```
@@ -1089,33 +1089,38 @@ The `extend()` function of your object will receive a valid object as an input p
 
 To gain access to the prototype of an instance, use the `Object.getPrototypeOf()` function. 
 
-To make a function shared between all instances, it’ll have to be attached to the prototype instead of the instance.
+To make a function shared between all instances, it will have to be attached to the prototype instead of the instance.
 
 # Example
 **Extensible Object**
 
-`myObj: {
+```js
+myObj: {
   __proto__: {}
   extend: function () {…}
 }
-`
+```
 
 **Template Object**
 
-`template: {
+```js
+template: {
   extensionMethod: function () {…},
   extensionProperty: 'someString'
-}`
+}
+```
 
 **Resulting Object**
 
-`myObj: {
+```js
+myObj: {
   __proto__: {
     extensionMethod: function () {…}
   },
   extend: function () {…},
   extensionProperty: 'someString'
-}`
+}
+```
 
 [/task-description]
 [code-io /]
