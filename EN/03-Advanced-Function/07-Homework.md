@@ -222,12 +222,21 @@ yes
 
 
 ```
-function solution() {
+function filterEmployees(data, criteria) {
     // Write your solution here
     // Node.js, fix test when strategy is ready
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
 
@@ -331,8 +340,7 @@ For more information check the examples.
 [tests]
 [test open]
 [input]
-\[\{"id": "1","first_name": "Ardine","last_name": "Bassam","email": "abassam0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Jost","email": "kjost1@forbes.com","gender": "Female"\},\{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}\]
-gender-Female
+filterEmployees(\[\{"id": "1","first_name": "Ardine","last_name": "Bassam","email": "abassam0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Jost","email": "kjost1@forbes.com","gender": "Female"\},\{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}\], gender-Female)
 [/input]
 [output]
 0. Ardine Bassam - abassam0@cnn.com
