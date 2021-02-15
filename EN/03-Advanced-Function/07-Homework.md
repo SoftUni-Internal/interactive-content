@@ -159,41 +159,17 @@ console.log(dollarFormatter(2.709));  // $ 2,71
 [tests]
 [test]
 [input]
-expect(typeof result).to.equal('function', "Your solution must be a function");
-expect(result.length).to.equal(1, "Your function must receive a single parameter - the formatting function");
-
-function interceptor(separator, symbol, symbolFirst, value) \{
-    return \[separator, symbol, symbolFirst, value\];
-\}
-let intercepted = result(interceptor);
-expect(typeof intercepted).to.equal('function', "Your solution did not return a function");
-expect(intercepted.length).to.equal(1, "The returned function must take exactly one parameter");
-
-let \[separator, symbol, symbolFirst, value\] = intercepted(1);
-expect(separator).to.equal(',', "Incorrect separator passed to original function");
-expect(symbol).to.equal('\\$', "Incorrect symbol passed to original function");
-expect(symbolFirst).to.equal(true, "Incorrect symbolFirst passed to original function");
-expect(value).to.equal(1, "Incorrect value passed to original function");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
 let called = false;
 
-function currencyFormatter(separator, symbol, symbolFirst, value) \{
+function currencyFormatter(separator, symbol, symbolFirst, value) {
     called = true;
     let result = Math.trunc(value) + separator;
     result += value.toFixed(2).substr(-2,2);
     if (symbolFirst) return symbol + ' ' + result;
     else return result + ' ' + symbol;
-\}
+}
 
-expect(typeof result).to.equal('function', "Your solution must be a function");
-expect(result.length).to.equal(1, "Your function must receive a single parameter - the formatting function");
-let dollarFormatter = result(currencyFormatter);
+let dollarFormatter = result(',', '$', true, currencyFormatter);
 expect(typeof dollarFormatter).to.equal('function', "Your solution did not return a function");
 expect(dollarFormatter.length).to.equal(1, "The returned function must take exactly one parameter");
 
@@ -202,9 +178,31 @@ expect(called).to.be.equal(true, "Your solution must use the passed in function!
 expect(typeof output).to.not.equal('undefined', "The curried function must return a value");
 expect(typeof output).to.equal('string', "The curried function must return a formatted string");
 expect(output.length).to.be.greaterThan(0, "The curried function returned an empty string");
-expect(dollarFormatter(5345)).to.equal('\\$ 5345,00', "Wrong formatting");
-expect(dollarFormatter(3.1429)).to.equal('\\$ 3,14', "Wrong formatting");
-expect(dollarFormatter(2.709)).to.equal('\\$ 2,71', "Wrong formatting");
+expect(dollarFormatter(5345)).to.equal('$ 5345,00', "Wrong formatting");
+expect(dollarFormatter(3.1429)).to.equal('$ 3,14', "Wrong formatting");
+expect(dollarFormatter(2.709)).to.equal('$ 2,71', "Wrong formatting");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+expect(typeof result).to.equal('function', "Your solution must be a function");
+expect(result.length).to.equal(4, "Your function must receive four parameters");
+
+function interceptor(separator, symbol, symbolFirst, value) {
+    return [separator, symbol, symbolFirst, value];
+}
+let intercepted = result(',', '$', true, interceptor);
+expect(typeof intercepted).to.equal('function', "Your solution did not return a function");
+expect(intercepted.length).to.equal(1, "The returned function must take exactly one parameter");
+
+let [separator, symbol, symbolFirst, value] = intercepted(1);
+expect(separator).to.equal(',', "Incorrect separator passed to original function");
+expect(symbol).to.equal('$', "Incorrect symbol passed to original function");
+expect(symbolFirst).to.equal(true, "Incorrect symbolFirst passed to original function");
+expect(value).to.equal(1, "Incorrect value passed to original function");
 [/input]
 [output]
 yes
