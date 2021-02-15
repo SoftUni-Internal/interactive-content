@@ -16,11 +16,11 @@ You will be passed a few pairs of **widths** and **heights** of rectangles.
 
 Create objects to represent the rectangles. 
 
-The objects should additionally have two functions **area**, which returns the area of the rectangle and **compareTo** function, which compares the current rectangle with another one.
+The objects should additionally have two functions **area**, which returns the area of the rectangle, and **compareTo** function, which compares the current rectangle with another one.
 
-The input will come ina form of an **array of arrays** - every nested array will contain exactly 2 variables the **width** and the **height** of the rectangle.
+The input will come in form of an **array of arrays** - every nested array will contain exactly 2 variables the **width** and the **height** of the rectangle.
 
-The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criteria and by their **width** in **descending** order as a second criteria.  
+The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criterion and by their **width** in **descending** order as a second criterion.  
 
 # Examples
 |**Input**|**Output**|
@@ -482,7 +482,7 @@ function sum(){
 [task-description]
 # Description
 
-Create a function which returns an object that can modify the DOM. 
+Create a function that returns an object that can modify the DOM. 
 
 The returned object should support the following functionality\:
 - `init(selector1, selector2, resultSelector)` initializes the object to work with the elements corresponding to the supplied selectors.
@@ -575,10 +575,9 @@ yes
 
 [slide hideTitle]
 # Problem: Heroes
-[code-task title="Problem: Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function heroes(){
   // Write your code here
 }
 ```
@@ -586,7 +585,7 @@ function solve(input){
 [task-description]
 # Description
 
-Create a functionwhich returns an object with 2 methods `mage` and `fighter`. 
+Create a function that returns an object with 2 methods `mage` and `fighter`. 
 
 This object should be able to create heroes `fighters` and `mages`. 
 
@@ -600,11 +599,11 @@ When the fighter fights its stamina decreases by 1 and the following message is 
 
 Mages also have `name`, `health = 100` and `mana = 100`. 
 
-Every mage can cast spells. When a spell is casted the mage's mana decreases by 1 and the following message is printed on the console:
+Every mage can cast spells. When a spell is cast the mage's mana decreases by 1 and the following message is printed on the console:
 
 `${mage's name} cast ${spell}`
 
-# Example
+## Example
 **Input**
 
 ```js
@@ -679,10 +678,9 @@ yes
 
 [slide hideTitle]
 # Problem: Construction Crew
-[code-task title="Problem: Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function constructionCrew(input){
   // Write your code here
 }
 ```
@@ -699,9 +697,9 @@ Workers have the following structure:
   levelOfHydrated: Number,
   dizziness: Boolean }`
 
-Weight is expressed in kilograms, experience in years and levelOfHydrated is in milliliters. 
+Weight is expressed in kilograms, experience in years, and levelOfHydrated is in milliliters. 
 
-If you receive a worker who\’s dizziness property is set to **true** it means he needs to intake some water in order to be able to work correctly. 
+If you receive a worker who's dizziness property is set to **true** it means he needs to intake some water to be able to work correctly. 
 
 The required amount is 0\.1ml per kilogram per year of experience. 
 
@@ -850,7 +848,7 @@ Write a program that assembles a car by given requirements out of existing compo
 
 The client will place an order in the form of an object describing the car. 
 
-You need to determine which parts to use to fulfil the client’s order. 
+You need to determine which parts to use to fulfill the client’s order. 
 
 You have the following parts in storage\:
 
@@ -866,7 +864,7 @@ Both of these values are numbers. When selecting an engine, pick the smallest po
 
 A carriage has a type and color. 
 
-Both of these values are strings. You have two types of carriages in storage and you can paint it in any color.
+Both of these values are strings. You have two types of carriages in storage and you can paint them in any color.
 
 `Hatchback: { type: 'hatchback', color: <as required> }`
 
@@ -1092,18 +1090,18 @@ function solve(input){
 
 Create an object that can clone the functionality of another object into itself. 
 
-Implement an extend\(template\) function that would copy all of the properties of template to the parent object and if the property is a function, add it to the object’s prototype instead.
+Implement an extend\(template\) function that would copy all of the properties of the template to the parent object and if the property is a function, add it to the object’s prototype instead.
 
 Your code should return the extensible object instance. 
 
-The `extend()` function of your object will receive a valid object as input parameter, and has no output.
+The `extend()` function of your object will receive a valid object as an input parameter and has no output.
 
 To gain access to the prototype of an instance, use the `Object.getPrototypeOf()` function. 
 
 To make a function shared between all instances, it’ll have to be attached to the prototype instead of the instance.
 
 # Example
-**Extesible Object**
+**Extensible Object**
 
 `myObj: {
   __proto__: {}
@@ -1244,7 +1242,7 @@ Implement the following functions\:
 - `ensureStart(str)` append str to the beginning of a string, only if it’s not already present.
 - `ensureEnd(str)` append str to the end of a string, only if it’s not already present.
 - `isEmpty()` return **true** if the string is empty, **false** otherwise.
-- `truncate(n)` truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end. If a string is less than **n** characters long, return the same string. If it is longer, split the string where a space occurs and append an ellipsis to it so that the total length is less than or equal to **n**. If no space occurs anywhere in the string, return n \- 3 characters and an ellipsis. If n is less than 4, return **n** amount of periods.
+- `truncate(n)` truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end. If a string is less than **n** characters long, return the same string. If it is longer, split the string where space occurs and append an ellipsis to it so that the total length is less than or equal to **n**. If no space occurs anywhere in the string, return n \- 3 characters and an ellipsis. If n is less than 4, return **n** amount of periods.
 - `format(string, …params)` static method to replace placeholders with parameters. A placeholder is a number surrounded by curly braces. If parameter index cannot be found for a certain placeholder, do not modify it. Note static methods are attached to the String object instead of its prototype. 
 
 See the examples for more info.
@@ -1416,7 +1414,7 @@ function solve(input){
 Implement a collection, which keeps a list of numbers, sorted in **ascending** order. 
 
 It must support the following functionality\:
-- `add(elemenent)` adds a new element to the collection.
+- `add(element)` adds a new element to the collection.
 - `remove(index)` removes the element at position index.
 - `get(index)` returns the value of the element at position index.
 - `size` number of elements stored in the collection.
