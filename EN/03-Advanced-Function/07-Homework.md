@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Add
 [code-task title="Problem: Add" taskId="js-advanced-advanced-functions-homework-add" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
@@ -96,7 +96,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Currency Format
 [code-task title="Problem: Currency Format" taskId="js-advanced-advanced-functions-homework-Currency-Format" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
@@ -215,7 +215,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Filter Employees
 [code-task title="Problem: Filter Employees" taskId="js-advanced-advanced-functions-homework-Filter-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -399,7 +399,7 @@ filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","em
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Sort Array
 [code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-Sort-Array" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -498,7 +498,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Argument Info
 [code-task title="Problem: Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -741,7 +741,7 @@ yes
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Personal BMI
 [code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-Personal-BMI" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -933,7 +933,7 @@ yes
 
 
 
-[slide]
+[slide hideTitle]
 # Problem: Vector Math
 
 [code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-Vector-Math" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
@@ -1147,7 +1147,7 @@ yes
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Breakfast Robot
 [code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-Breakfast-Robot" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
