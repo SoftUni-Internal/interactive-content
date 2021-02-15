@@ -121,13 +121,14 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 # Problem with Solution: Bonus Points
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.Scanner;
 
-public class Main {
+public class Program {
   public static void main(String[] args) {
-      // Scrieți codul aici
-    }
+      Scanner scanner = new Scanner(System.in);
+      // write code here
+  }
 }
 ```
 [/code-editor]
