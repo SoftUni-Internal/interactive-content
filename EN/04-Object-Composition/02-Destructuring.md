@@ -1,6 +1,4 @@
-
-
-[slide]
+[slide hideTitle]
 
 # Destructuring
 
@@ -12,7 +10,7 @@ Let us have a look at some examples:
 
 In this example we are referencing the `data` object inside `department` object directly by assigning it to a new variable `data` using this line of code: `const { data } = department`.
 
-You can see that the new `data` object is a refernece to `data` object inside `department` object. 
+You can see that the new `data` object is a reference to the `data` object inside the `department` object. 
 
 We can prove that by changing `employeesCount` of the newly created `data` object to 30.
 
@@ -29,11 +27,11 @@ const department = {
     console.log(department);
 ```
 
-In this example we have an object `objectList`, which is an array of objects. 
+In this example, we have an object `objectList`, which is an array of objects. 
 
-After destructuring, the object at index 0 wiil be assigned to `obj1`, the object at index 1 to `obj2` and the object at index 2 to `obj3`.
+After destructuring, the object at index 0 will be assigned to `obj1`, the object at index 1 to `obj2` and the object at index 2 to `obj3`.
 
-Remember that `obj1`, `obj2` and `obj3` are referencing the objects inside `objectList` array.
+Remember that `obj1`, `obj2`, and `obj3` are referencing the objects inside the `objectList` array.
 
 Now let us change the `obj1.key` to be equal to "John Smith" and print out the `objectList`.
 
@@ -52,7 +50,7 @@ console.log(objectList);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Nested destructuring
 
@@ -84,7 +82,7 @@ console.log(department);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Destructuring nested arrays
 
@@ -92,9 +90,9 @@ console.log(department);
 
 When destructuring nested arrays is important to know the position of what you are looking for.
 
-Also you need to provide a reference variable or comma placeholder for each element up and until the one you are looking for.
+Also, you need to provide a reference variable or comma placeholder for each element up and until the one you are looking for.
 
-In this example the new variables `name` and `positions` correspond to the data of the `departments` object at index 0.
+In this example, the new variables `name` and `positions` correspond to the data of the `departments` object at index 0.
 
 Use square brackets when destructuring arrays.
 
@@ -109,8 +107,7 @@ console.log(positions);
 
 [/slide]
 
-[slide]
-
+[slide hideTitle]
 # Objects and array destructuring
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-12-objects-and-arrays-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -119,7 +116,7 @@ Destructuring an array of objects.
 
 Create a new variable `name` using the expression `const [{name}] = employees`.
 
-Obviously `name` will be equal to "John". 
+In this case, `name` will be equal to "John". 
 
 Use this expression: `const [{}, {name}] = employees` to assign "Jane" to the `name` variable and print out the result.
 
@@ -129,7 +126,7 @@ const [{name}] = employees;
 console.log(name);
 ```
 
-Destructuring an object containing array or arrays.
+Destructuring an object containing an array or arrays.
 
 Try printing out the rest of the names yourself.
 

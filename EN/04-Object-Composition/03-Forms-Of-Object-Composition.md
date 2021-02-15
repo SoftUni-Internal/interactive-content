@@ -1,6 +1,6 @@
 # Forms Of Object Composition
 
-[slide]
+[slide hideTitle]
 
 # Aggregation
 
@@ -14,21 +14,21 @@ Each subobject keeps its own reference identity, such that it could be destructu
 
 When to use it:
 
-Whenever there are collections of objects which need to share common operations, such as iterables, stacks, queues, trees, graphs, state machines, or the composite pattern (when you want a single item to share the same interface as many items).
+Whenever there are collections of objects which need to share common operations, such as tables, stacks, queues, trees, graphs, state machines, or the composite pattern (when you want a single item to share the same interface as many items).
 
-In the example below we have an array of objects. To applay aggregation we will use `.reduce()` method.
+In the example below, we have an array of objects. To apply aggregation we will use the `.reduce()` method.
 
 The `.reduce()` method accepts 4 parameters. 
 
 First is `acc`, which will be an empty array before the first iteration. 
 
-On each iteration we will push an object from `dataArray` to the `acc` or we will update the object if it already exists in the `acc`.
+On each iteration, we will push an object from `dataArray` to the `acc` or we will update the object if it already exists in the `acc`.
 
-Second is `curr`, which is the current element of the `dataArray` at a given index.
+The second is `curr`, which is the current element of the `dataArray` at a given index.
 
-Third parameter is `index`, which is the `dataArray` index.
+The third parameter is `index`, which is the `dataArray` index.
 
-And last parameter is the array itself - the `dataArray`.
+And the last parameter is the array itself - the `dataArray`.
 
 With the expression `let same = acc.find(e => e.id === curr.id);` we check if we have an object in the `acc` with `id` equal to the `curr.id` object.
 
@@ -52,7 +52,7 @@ console.log(result);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Aggregation Example
 
@@ -75,7 +75,7 @@ console.log(res1);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Concatenation
 
@@ -85,11 +85,11 @@ Concatenation is when an object is formed by adding new properties to an existin
 
 When to use: 
 
-It would be useful to progressively assemble data structures at runtime, like merging JSON objects, hydrating application state from multiple sources, creating updates to immutable state by merging previous state with new data.
+It would be useful to progressively assemble data structures at runtime, like merging JSON objects, hydrating application state from multiple sources, creating updates to the immutable state by merging the previous state with new data.
 
-We will use the `.reduce()` method again. You can see from the result of the example that worder really matters here.
+We will use the `.reduce()` method again. You can see from the result of the example that wonder matters here.
 
-We use the spread syntax to get the elements of the `obj` array. If we dont use the spread syntax in front of `curr` variable we will only get the last element `{ hairColor: "brown" }`.
+We use the spread syntax to get the elements of the `obj` array. If we do not use the spread syntax in front of the `curr` variable we will only get the last element `{ hairColor: "brown" }`.
 
 ```js live
 const obj = [
@@ -109,7 +109,7 @@ console.log(result);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Concatenation Example
 
@@ -129,7 +129,7 @@ console.log(c);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Delegation
 
@@ -143,7 +143,7 @@ JavaScript's built-in types use delegation to forward built-in method calls up t
 
 `[].map()` delegates to `Array.prototype.map()`, `obj.hasOwnProperty()` delegates to `Object.prototype.hasOwnProperty()` and so on.
 
-In the example below we use the `.reduceRight()` method.
+In the example below, we use the `.reduceRight()` method.
 
 First create a function `delegate`, which will have two parameters.
 
@@ -172,7 +172,7 @@ console.log(result.height);
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Delegation Example
 
@@ -187,6 +187,6 @@ const objs = [
 ];
 const concatenate = (a, o) => ({ ...a, ...o });
 const c = objs.reduce(concatenate, {});
-console.log(c);// { name: 'Steven', age: 22, height: 180 }
+console.log(c);// { name: 'Steven', age: 22, height: 180 }
 ```
 [/slide]
