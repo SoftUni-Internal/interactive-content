@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Infinity-While-Loop
+// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Infinity-While-Loop"
 
 [slide hideTitle]
 # Infinite While Loop

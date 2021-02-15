@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Increment-And-Decrement
+// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Increment-And-Decrement"
 
 [slide hideTitle]
 # Increment and Decrement Operators

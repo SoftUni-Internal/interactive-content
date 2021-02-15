@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Nested-Loops-Nested-For-Loops
+// sectionId: "Javascript-Programming-Basics-Conditional-Nested-Loops-Nested-For-Loops"
 
 [slide hideTitle]
 # Nested "for" Loops

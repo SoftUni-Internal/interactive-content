@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Nested-Conditions
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Nested-Conditions"
 
 [slide hideTitle]
 # Nested Conditions

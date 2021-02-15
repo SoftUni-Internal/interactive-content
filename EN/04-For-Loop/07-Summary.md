@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Summary
+// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Summary"
 
 [slide hideTitle]
 # Summary

@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Homework
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Homework"
 
 # Homework
 [slide hideTitle]

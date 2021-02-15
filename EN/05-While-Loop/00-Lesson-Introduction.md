@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Lesson-Introduction
+// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Lesson-Introduction"
 # Lesson Introduction
 
 [slide hideTitle]

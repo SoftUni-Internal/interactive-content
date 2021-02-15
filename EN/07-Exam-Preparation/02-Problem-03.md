@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Exam-Preparation-Problem-03
+// sectionId: "Javascript-Programming-Basics-Conditional-Exam-Preparation-Problem-03"
 
 [slide hideTitle]
 # Problem 3: Cinema

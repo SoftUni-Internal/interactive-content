@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Real-Life-Example
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Real-Life-Example"
 
 [slide hideTitle]
 

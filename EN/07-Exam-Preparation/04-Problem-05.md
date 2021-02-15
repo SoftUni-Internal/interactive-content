@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Exam-Preparation-Problem-05
+// sectionId: "Javascript-Programming-Basics-Conditional-Exam-Preparation-Problem-05"
 
 [slide hideTitle]
 

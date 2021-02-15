@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Read-From-An-Array
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Read-From-An-Array"
 
 # Read From an Array
 
