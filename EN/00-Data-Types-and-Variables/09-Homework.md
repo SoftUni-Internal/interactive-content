@@ -1422,9 +1422,13 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Test Adapter Function Here with this code input:
+Test Adapter Function Here with this code **input**:
 
 solve(9, 100, 1.1)
+
+**Output** must be: 
+
+110.1 - Float
 
 [/task-description]
 [tests]
