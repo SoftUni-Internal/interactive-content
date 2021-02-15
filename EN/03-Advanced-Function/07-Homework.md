@@ -262,7 +262,7 @@ For more information check the examples.
 
 ## Examples
 
-**Sample Input\:**
+**Sample Input**
 
 ```
 `[{
@@ -288,7 +288,7 @@ For more information check the examples.
 'gender-Female'
 ```
 
-**Output\:**
+**Output**
 
 ```
 0. Ardine Bassam - abassam0@cnn.com
@@ -343,19 +343,18 @@ For more information check the examples.
 filterEmployees(\[\{"id": "1","first_name": "Ardine","last_name": "Bassam","email": "abassam0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Jost","email": "kjost1@forbes.com","gender": "Female"\},\{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\}\], 'gender-Female')
 [/input]
 [output]
-0. Ardine Bassam - abassam0@cnn.com
-1. Kizzee Jost - kjost1@forbes.com
+0\. Ardine Bassam \- abassam0\@cnn\.com
+1\. Kizzee Jost \- kjost1\@forbes\.com
 [/output]
 [/test]
 [test open]
 [input]
-\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\},\{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]
-last_name-Johnson
+solve(\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "kjost1@forbes.com","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "emaldin2@hostgator.com","gender": "Male"\},\{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\], 'last_name-Johnson')
 [/input]
 [output]
-0. Kaylee Johnson - k0@cnn.com
-1. Kizzee Johnson - kjost1@forbes.com
-2. Evanne Johnson - ev2@hostgator.com
+\0\. Kaylee Johnson \- k0\@cnn.com
+\1\. Kizzee Johnson \- kjost1\@forbes\.com
+\2\. Evanne Johnson \- ev2\@hostgator\.com
 [/output]
 [/test]
 [test]
