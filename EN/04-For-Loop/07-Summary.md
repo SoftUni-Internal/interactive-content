@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Summary
+
 [slide hideTitle]
 # Summary
 
@@ -7,7 +9,7 @@
 
 For-loops are used when we need to execute a block of code multiple times.
 
-* The for-loop syntax consists of: 
+* The for-loop syntax consists of
    
 ``` js
 for (initialization; condition; update) {

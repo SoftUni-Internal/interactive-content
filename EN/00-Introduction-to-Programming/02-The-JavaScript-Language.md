@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-The-Javascript-Language"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-The-Javascript-Language"
 
 [slide hideTitle]
 

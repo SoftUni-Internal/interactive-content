@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Logical-Expressions
+
 [slide hideTitle]
 # Comparison Operators
 

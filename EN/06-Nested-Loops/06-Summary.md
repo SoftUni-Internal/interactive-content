@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Nested-Loops-Summary
+
 [slide hideTitle]
 # Summary
 

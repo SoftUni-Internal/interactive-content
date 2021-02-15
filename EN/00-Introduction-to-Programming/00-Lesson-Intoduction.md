@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Lesson-Introduction"
+// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Lesson-Introduction"
 
 # Lesson Introduction
 

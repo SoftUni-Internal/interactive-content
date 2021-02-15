@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Iterate-Over-Character
+
 [slide hideTitle]
 # Iterating over Characters
 

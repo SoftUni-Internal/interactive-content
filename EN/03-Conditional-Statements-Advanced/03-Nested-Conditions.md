@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Nested-Conditions
+
 [slide hideTitle]
 # Nested Conditions
 
@@ -20,10 +22,10 @@ if (condition1) {
 
 # Example: Personal Titles
 Depending on the age (decimal number) and the gender (**m** / **f**) of a person, print a title: 
-- `Mr.`: a man (gender **m**) - 16 or more years old.
-- `Master`: a boy (gender **m**) - under 16 years. 
-- `Ms.`: a woman (gender **f**) - 16 or more years old.
-- `Miss`: a girl (gender **f**) -  under 16 years.
+- `Mr.`: a man (gender **m**) - 16 or more years old
+- `Master`: a boy (gender **m**) - under 16 years
+- `Ms.`: a woman (gender **f**) - 16 or more years old
+- `Miss`: a girl (gender **f**) -  under 16 years
 
 # Solution: Person Titles
 We should notice that the **output** of the program **depends on a few things**. 

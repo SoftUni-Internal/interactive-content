@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Homework
+
 # Homework
 
 [slide hideTitle]

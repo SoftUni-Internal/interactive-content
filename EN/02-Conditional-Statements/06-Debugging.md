@@ -1,4 +1,6 @@
-[slide]
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Debugging
+
+[slide hideTitle]
 # Debugging
 
 [video src="https://videos.softuni.org/hls/javascript-basics/02.Conditions/EN/02-conditional-statements-js-31-32-Debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -14,7 +16,7 @@ We can track **line by line** what happens in our program, what path it follows,
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Debugging in Visual Studio Code
 

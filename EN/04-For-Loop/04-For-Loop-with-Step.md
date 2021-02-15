@@ -1,5 +1,7 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-For-Loop-With-Step
+
 [slide hideTitle]
-# For Loop with A step
+# For Loop with a step
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

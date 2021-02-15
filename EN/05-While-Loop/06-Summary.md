@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Summary
+
 [slide hideTitle]
 # Summary
 
@@ -7,7 +9,7 @@
 ## In this lesson you learned:
 
 - **While** loop executes a block of code **multiple** times
-   - While the loop condition is true
+   - while the loop condition is true
 
 ```js
 while (condition) {

@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Logical-Operators
+
 # Logical Operators
 [slide hideTitle]
 # More Complex Conditions

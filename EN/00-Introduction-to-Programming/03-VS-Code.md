@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-VS-Code"
+// sectionId: "Javascript-Programming-Introduction-to-Programming-Basics-VS-Code"
 
 [slide hideTitle]
 # Development Environments (IDE)

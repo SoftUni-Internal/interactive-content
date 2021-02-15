@@ -1,3 +1,5 @@
+// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Real-Life-Example
+
 [slide hideTitle]
 
 # Real-Life Example: Box of Books
