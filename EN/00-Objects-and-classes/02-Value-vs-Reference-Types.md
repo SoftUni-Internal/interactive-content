@@ -64,7 +64,7 @@ When we assign `arrayOne` to the second variable `arrayTwo`, we create a copy of
 
 Because of that when we log both variables to the console, we get the same result - `['a', 'b', 'c', 'd']`. 
  
-When we add the string `e` to the array by calling `array.push('e')` we are altering the **value** stored in memory. 
+When we add the string `e` to the array by calling `array.push('e')`, we are altering the **value** stored in memory. 
  
 Because `arrayTwo` is just a copy of the **reference** point to the same value, we get the same result when we `console.log` both variables. 
 
