@@ -1,6 +1,11 @@
-[slide]
+# Lesson Introduction
 
-# In this lesson you will learn about:
+[slide hideTitle]
+
+# Lesson Content
+
+
+## In this lesson you will learn:
 
 **1. RegEx**
 
@@ -10,13 +15,10 @@
 
 **2. Quantifiers and Grouping**
 
-- What are Quantifiers and how we Group symbols
+- What Quantifiers are and how to group symbols
 
 **3. Backreferences**
 
 - Backreferences and more advanced concepts
-
-
-**4. Live Exercises**
 
 [/slide]
