@@ -1233,7 +1233,7 @@ Look at the sample output for more information.
 
 ## Examples
 
-**Execution\:**
+**Execution:**
 ```js
 let manager = solution();
 manager("restock flavour 50");  // Success
@@ -1269,15 +1269,15 @@ manager("prepare lemonade 4");  // Error: not enough carbohydrate in stock
 [input]
 result = result();
 
-let expectationPairs = \[
-    \['restock flavour 50', 'Success'\],
-    \['prepare lemonade 4', 'Error: not enough carbohydrate in stock'\]
-\];
+let expectationPairs = [
+    ['restock flavour 50', 'Success'],
+    ['prepare lemonade 4', 'Error: not enough carbohydrate in stock']
+];
 
-for (let i = 0; i \< expectationPairs.length; i++) \{
-    let expectation = expectationPairs\[i\];
-    expect(result(expectation\[0\])).to.equal(expectation\[1\], \`Order \\$\{expectation\[0\]\} should have resulted in \\$\{expectation\[1\]\}\`);
-\}
+for (let i = 0; i < expectationPairs.length; i++) {
+    let expectation = expectationPairs[i];
+    expect(result(expectation[0])).to.equal(expectation[1], `Order ${expectation[0]} should have resulted in ${expectation[1]}`);
+}
 [/input]
 [output]
 yes
