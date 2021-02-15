@@ -9,7 +9,7 @@
 ## In this lesson you will learn:
 
 **1. Objects**
-- What objects are
+- What an object is
 - Properties and methods
 
 **2. JSON**
