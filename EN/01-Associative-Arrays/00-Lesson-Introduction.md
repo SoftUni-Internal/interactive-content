@@ -13,9 +13,9 @@
 
 **1. Maps**
 
-- What are maps
+- What maps are
 
-- Collection of Key and Value pairs
+- Collections of Key and Value pairs
 
 **2. Map Methods**
 
@@ -29,10 +29,10 @@
 
 **4. Stream API**
 
-- What is Stream
+- What a Stream is
 
-- How to process collections with Stream API
+- How to process collections with the Stream API
 
-- Filter and Sort Collection
+- How to filter and sort Collections
 
 [/slide]

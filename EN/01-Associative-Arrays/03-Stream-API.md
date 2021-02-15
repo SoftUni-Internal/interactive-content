@@ -363,7 +363,7 @@ sell
 
 There are several ways to sort collections:
 
-- Sorting in **ascending** (**Natural**) order
+- Sorting in **ascending** (**Natural**) order:
 
 ```java live no-template
 import java.util.*;
@@ -387,7 +387,7 @@ public class Main {
 }
 ```
 
-- Sorting in **descending** order
+- Sorting in **descending** order:
 
 ```java live  no-template
 import java.util.*;
@@ -411,7 +411,7 @@ public class Main {
 }
 ```
 
-- Sorting by **multiple criteria**
+- Sorting by **multiple criteria**:
 
 ```java live
 Map<String, Integer> products = new HashMap<>();
@@ -433,7 +433,7 @@ products.entrySet()
         .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
 ```
 
-- Using functional `forEach()`
+- Using functional `forEach()`:
 
 ```java live
 Map<String, List<Integer>> courseGrades = new HashMap<>();

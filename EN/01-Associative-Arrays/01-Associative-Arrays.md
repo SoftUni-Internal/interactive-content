@@ -121,6 +121,8 @@ It is important to know that once the `Key` and the `Value` are set, the map can
 [slide hideTitle]
 # Built-in methods
 
+There are several built-in methods for a `HashMap`: 
+
 - `put(K key, V value)` - Used to **add items** (insert an entry) in the map 
 
 Only a **single Key + Value pair** for each Key can exist in the Map **at the same time**. 
@@ -220,7 +222,7 @@ System.out.println(airplanes.isEmpty());
 [slide hideTitle]
 # Iterating through a Map
 
-Iterating through objects of type **Map.Entry <K, V>**. **Cannot modify** the collection(read-only).
+When iterating through objects of type **Map.Entry <K, V>**, it is **impossible** to modify the collection(read-only).
 
 There are several ways to iterate the Keys stored in a Map.
 
