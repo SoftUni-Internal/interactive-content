@@ -33,7 +33,7 @@ For example:
 
 [/slide]
 
-[slide hideTitel]
+[slide hideTitle]
 # Map Implementations
 
 The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as:
