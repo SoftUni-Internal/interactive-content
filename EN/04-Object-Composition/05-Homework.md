@@ -1176,7 +1176,7 @@ yes
 [test]
 [input]
 var template = \{
-    fight: function(target) \{ return `object fights with \\$\{target\}` \},
+    fight: function(target) \{ return \`object fights with \\$\{target\}\` \},
     health: 100,
     mana: 50
 \};
@@ -1221,10 +1221,9 @@ yes
 
 [slide hideTitle]
 # Problem: String Extension
-[code-task title="Problem: String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function stringExtension(){
   // Write your code here
 }
 ```
@@ -1232,14 +1231,33 @@ function solve(input){
 [task-description]
 # Description
 
-Extend the build\-in String object with additional functionality. 
+Extend the build-in String object with additional functionality. 
 
-Implement the following functions\:
-- `ensureStart(str)` append str to the beginning of a string, only if it’s not already present.
-- `ensureEnd(str)` append str to the end of a string, only if it’s not already present.
-- `isEmpty()` return **true** if the string is empty, **false** otherwise.
-- `truncate(n)` truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end. If a string is less than **n** characters long, return the same string. If it is longer, split the string where space occurs and append an ellipsis to it so that the total length is less than or equal to **n**. If no space occurs anywhere in the string, return n \- 3 characters and an ellipsis. If n is less than 4, return **n** amount of periods.
-- `format(string, …params)` static method to replace placeholders with parameters. A placeholder is a number surrounded by curly braces. If parameter index cannot be found for a certain placeholder, do not modify it. Note static methods are attached to the String object instead of its prototype. 
+Implement the following functions:
+
+- `ensureStart(str)` - append str to the beginning of a string, only if it is not already present.
+
+- `ensureEnd(str)` - append str to the end of a string, only if it’s not already present.
+
+- `isEmpty()` - return **true** if the string is empty, **false** otherwise.
+
+- `truncate(n)` - truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end. 
+
+If a string is less than **n** characters long, return the same string. 
+
+If it is longer, split the string where space occurs and append an ellipsis to it so that the total length is less than or equal to **n**. 
+
+If no space occurs anywhere in the string, return n \- 3 characters and an ellipsis. 
+
+If n is less than 4, return **n** amount of periods.
+
+- `format(string, …params)` - static method to replace placeholders with parameters. 
+
+A placeholder is a number surrounded by curly braces. 
+
+If parameter index cannot be found for a certain placeholder, do not modify it. 
+
+Note static methods are attached to the String object instead of its prototype. 
 
 See the examples for more info.
 
@@ -1248,7 +1266,7 @@ Your main code should be structured as an IIFE without input or output. It shoul
 # Example
 **Input**
 
-```
+```js
 let str = 'my string';
 str = str.ensureStart('my');
 str = str.ensureStart('hello ');
@@ -1266,22 +1284,14 @@ str = String.format('jumps {0} {1}',
 **Output**
 
 'my string'
-
 'hello my string'
-
 'hello my string'
-
 'hello my...'
-
 'hello...'
-
 'h...'
-
 '..'
-
 'The quick brown fox'
-
-'jumps dog {1}'   
+'jumps dog \{1\}'
 
 [/task-description]
 [code-io /]
@@ -1396,10 +1406,9 @@ yes
 
 [slide hideTitle]
 # Problem: Sorted List
-[code-task title="Problem: Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function sortedList(){
   // Write your code here
 }
 ```
@@ -1409,11 +1418,15 @@ function solve(input){
 
 Implement a collection, which keeps a list of numbers, sorted in **ascending** order. 
 
-It must support the following functionality\:
-- `add(element)` adds a new element to the collection.
-- `remove(index)` removes the element at position index.
-- `get(index)` returns the value of the element at position index.
-- `size` number of elements stored in the collection.
+It must support the following functionality:
+
+- `add(element)`- adds a new element to the collection.
+
+- `remove(index)`- removes the element at position index.
+
+- `get(index)` - returns the value of the element at position index.
+
+- `size` - number of elements stored in the collection.
 
 The correct order of the element must be kept at all times, regardless of which operation is called. 
 
@@ -1426,7 +1439,7 @@ Write your code such that the **first function in your solution** returns an ins
 
 # Example
 
-```
+``` js
 function sortedList() {
     return (function () {
         let arr = [];
