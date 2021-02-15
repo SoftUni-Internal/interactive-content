@@ -8,7 +8,7 @@
 [stream language="RO" videoId="444864040" /]
 [/video-vimeo]
 
-HTML (**HyperText Markup Language**) is the most basic **building block of the Web**. 
+HTML (**Hypertext Markup Language**) is the most basic **building block of the Web**. 
 
 It defines the meaning and structure of web content. 
 
@@ -29,16 +29,16 @@ HTML uses "**markup**" to annotate text, images and other content for display in
 [stream language="RO" videoId="444864042" /]
 [/video-vimeo]
 
-In HTML, a tag is used for **creating an element**. 
+In HTML, a tags are used for **creating elements**. 
 
 Each HTML tag describes that the browser should do something instead of simply displaying the text. In HTML, the tags begin with (`<`) and end with (`>`).
 
-HTML tags can be of two types:
+HTML tags can be two types:
 - Paired Tags
 - Unpaired Tags
 
 ## Paired Tags
-A tag is said to be a paired tag if the text is placed between a tag and its companion tag. In paired tags, the first tag is referred to as **opening tag** and the second tag is referred to as **closing tag**.
+A paired tag is considered when text is placed between a certain tag and its companion tag. In paired tags, the first tag is referred to as **opening tag** and the second tag is referred to as **closing tag**.
 
 Note that the end tag's name is preceded by a **slash character** `</b>`.
 
@@ -62,7 +62,7 @@ This tag does not require a closing tag.
 
 ## Tags Based on Their Usage
 
-We can differentiate tags based on the **purpose they used**. Basically we have three types:
+We can differentiate tags based on the **their purpose**.There are three types:
 - **Formatting tags** - manage the size of the font, underline part of the text, make the text bold etc.
 - **Semantic tags** - description, title, head, body, etc.
 - **Control tags** - form tags, script tags, radio buttons, etc are used for interaction with user.
@@ -72,7 +72,7 @@ We can differentiate tags based on the **purpose they used**. Basically we have 
 # Main HTML Tags
 
 ## html tag
-The HTML `<html></html>` element represents the **top-level** element of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+The HTML `<html></html>` element represents the **top-level** element of an HTML document and it is also referred to as the root element. All other elements must be descendants of this element.
 
 Example:
 ```html
@@ -131,9 +131,9 @@ The HTML `<body></body>` element represents the content of an HTML document. The
 
 Whitespace is any string of text composed only of **spaces**, **tabs** or **line breaks**.
 
-These characters allow you to **format your code** in a way that will make it easily **readable** by yourself and other people. 
+These characters allow us to **format our code** in a way that will make it easily **readable**. 
 
-In fact, much of our source code is full of these whitespace characters, and we only tend to get rid of it in a production build step to reduce code download sizes.
+In fact, much of our source code is full of whitespace characters, and we tend to remove them in a production build step to reduce code download sizes.
 
 ## HTML ignores whitespace
 
@@ -153,18 +153,18 @@ If we need space around and inside elements, we can do that with **CSS**.
 [/slide]
 
 [slide]
-# Syntax Error
+# Syntax Errors
 
 [vimeo-video]
 [stream language="EN" videoId="431748211" default /]
 [stream language="RO" videoId="444864044" /]
 [/video-vimeo]
 
-These are spelling errors in your code. These are usually easy to fix as long as you are familiar with the language's syntax.
+Syntax errors are spelling errors in our code. They are usually easy to fix as long as we are familiar with the language's syntax.
 
 HTML itself doesn't suffer from syntax errors because browsers parse it **permissively**, meaning that the page still displays even if there are syntax errors. 
 
-Browsers have built-in rules to state how to interpret **incorrectly written markup**, so you'll get something running, even if it is not what you expected. 
+Browsers have built-in rules to state how to interpret **incorrectly written markup**. 
 
 The web would probably not be as popular as it is today, if it had been more strict from the very beginning.
 
@@ -174,11 +174,11 @@ However, this can still be a **problem**.
 
 You really want to make sure your HTML is **well-formed**! You probably wonder how? 
 
-The best way is to start by running your HTML page through the [Markup Validation Service](https://validator.w3.org/). 
+The best way is to start by running our HTML page through the [Markup Validation Service](https://validator.w3.org/). 
 
 W3C is the organization that looks after the specifications that define HTML, CSS, and other web technologies. 
 
-This webpage takes an HTML document as an input and tells what is wrong with your HTML.
+This webpage takes an HTML document as an input and if there are any issues with our HTML, it will notify us.
 
 To specify the HTML to validate, you can give it a **web address**, upload entire **HTML document**, or **directly put** your HTML code.
 
