@@ -1,12 +1,11 @@
-# Problem 2: Press House
+
 
 [slide hideTitle]
-# Description
+# Problem 2: Press House
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/07.JS-Advanced-Exam-Preparation/EN/Problem-2-Press-House-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Task Manager" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Press House" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function pressHouse(){
   // Write your code here
@@ -32,7 +31,6 @@ The **Article** class should have **2 properties**:
 - **content** \- string  
 
 
-
 The `toString()` function should return the title and the content:
 
 ```
@@ -55,11 +53,17 @@ The `ShortReports` class inherits from the **Article** class.
 
 - **comments** \- an array of strings
 
-The goal is to create short reports. You should limit the length of characters that can be stored in the **content** property. It should accept a report of **less than 150 symbols**. If the submitted content exceeds the limit you should throw an error with the following message:
+The goal is to create short reports. You should limit the length of characters that can be stored in the **content** property. 
+
+It should accept a report of **less than 150 symbols**. 
+
+If the submitted content exceeds the limit you should throw an error with the following message:
 
 `Short reports content should be less than 150 symbols.`
 
-The **originalResearches** object is should contain both **author** and **title**. If it does not then throw an error with the following message:
+The **originalResearches** object is should contain both **author** and **title**. 
+
+If it does not then throw an error with the following message:
 
 `The original research should have author and title.`
 
@@ -89,10 +93,10 @@ The `BookReview` class inherits from the `Article` class.
 
 **BookReview** should have **4 properties:**
 
-   - **title** \- string
-   - **content** \- string
-   - **book** \- an object with properties **name** and **author**
-   - **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
+- **title** \- string
+- **content** \- string
+- **book** \- an object with properties **name** and **author**
+- **customers** \- an array of **customer** objects. Each **customer** object should have the following structure `{customerName, orderDescription}`
 
 `addCustomer(customerName,  orderDescription)`: 
 
@@ -122,7 +126,7 @@ Orders:
 //and so on
 ```
 
-**Note:  For more information see the examples below!**
+**Note: For more information see the examples below!**
 
 ## Submission
 
@@ -133,7 +137,8 @@ Orders:
 # Examples
 This is an example of how the code is **intended to be used:**
 
-**Sample code usage** 
+**Sample code usage**
+
 ```js
 let classes = solveClasses();
 let lorem = new classes.Article("Lorem", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel…");
