@@ -1,13 +1,10 @@
+[slide hideTitle]
+
 # Problem 3: Bank
-
-[slide]
-
-# Description
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/07.JS-Advanced-Exam-Preparation/EN/Problem-3-Bank-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Task Manager" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Bank" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 class Bank {
     // TODO: implement this class...
@@ -30,10 +27,9 @@ The **Bank** class should have these **2 properties:**
 - bankName \- a **private** property of type string
 - allCustomers \- initially an empty array
 
-
 `newCustomer (customer)`: the **customer** is of type object `{firstName, lastName, personalId}`.
 
-Check if they are already a customer of the bank. If they are already a customer throw an error:
+Check if they are already a customer of the bank. If they are already a customer throws an error:
 `{firstName} {lastName} is already our customer!`
 
 Otherwise, this function should add a new customer with the provided details.
@@ -50,7 +46,7 @@ Otherwise, add the amount to the corresponding customer in a property named **to
 
 `withdrawMoney (personalId, amount)`:  **personalId** and **amount** should be numbers.
 
-Check if the given **personalId** corresponds to a customer **in the customers array**, if not **throw a new error:**
+Check if the given **personalId** corresponds to a customer **in the customers' array**, if not **throw a new error:**
 
 `We have no customer with this ID!`
 
@@ -66,7 +62,7 @@ Otherwise, subtract the **amount** from the `totalMoney` of the customer and sto
 
 `customerInfo (personalId)`: **personalId** is of **type number**
 
-Check if the given **personalId** corresponds to a customer in the customers array, if not throw a new error:
+Check if the given **personalId** corresponds to a customer in the customers' array, if not throw a new error:
 
 `We have no customer with this ID!`
 
