@@ -78,7 +78,8 @@ We can differentiate tags based on **their purpose**. There are three types:
 [slide hideTitle]
 # Main HTML Tags
 
-`<html>` tag
+## <html> tag
+
 The HTML `<html></html>` element represents the **top-level** element of an HTML document and it is also referred to as the root element. 
 
 All other elements must be descendants of this element.
@@ -90,7 +91,7 @@ Example:
 </html>
 ```
 
-`<head>` tag
+## <head> tag
 
 The HTML `<head></head>` element contains **machine-readable information** (**metadata**) about the document, like its **title**, **scripts**, and **style sheets**.
 
@@ -102,7 +103,7 @@ The HTML `<head></head>` element contains **machine-readable information** (**me
 </html>
 ```
 
-`<body>` tag
+## <body> tag
 
 The HTML `<body></body>` element represents the content of an HTML document. 
 
