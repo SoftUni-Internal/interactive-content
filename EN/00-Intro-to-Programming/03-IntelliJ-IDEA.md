@@ -13,11 +13,11 @@ In the development environment we write code, compile and execute the programs. 
 
 If we don't use an environment for development, we will have to write the code in a text editor, to compile it with a command on the console, to run it with another command on the console and to write more additional commands when needed, which is very time consuming. 
 
-For programming with **the Java language** the most commonly used IDE is **IntelliJ IDEA**, which is developed and distributed freely by JetBrains and can be downloaded from: https://www.jetbrains.com/idea/download/.
+For programming with **the Java language** the most commonly used IDE is **IntelliJ IDEA**, which is developed and distributed freely by JetBrains and can be downloaded from: [Here](https://www.jetbrains.com/idea/download/)
 
 Alternatives of Visual Studio are:
-- Eclipse – https://www.eclipse.org/downloads/
-- NetBeans – https://netbeans.org/downloads/8.0.2/
+- [Eclipse](https://www.eclipse.org/downloads/)
+- [NetBeans](https://netbeans.org/downloads/8.0.2/)
 
 In this course, we are going to use the development environment **IntelliJ IDEA**. 
 
@@ -114,14 +114,14 @@ For **smaller projects** IntelliJ Projects and IntelliJ Modules are **complicati
 
 Install JetBrains IntelliJ IDEA Community
 
-* https://www.jetbrains.com/idea/download/
+* [JetBrains](https://www.jetbrains.com/idea/download/)
 * You can use an older version, but better use the latest
 
 Alternative IDE (online)
 
-* Java: https://www.compilejava.net, https://repl.it/languages/java
-* C#: https://dotnetfiddle.net
-* Python: https://repl.it
+* [Java](https://www.compilejava.net) [Repl](https://repl.it/languages/java)
+* [C#](https://dotnetfiddle.net)
+* [Python](https://repl.it)
 * JavaScript: directly use the Web browser console (press \[F12\] key)
 
 [image assetsSrc="intro-to-programming-rplit.png" /]
