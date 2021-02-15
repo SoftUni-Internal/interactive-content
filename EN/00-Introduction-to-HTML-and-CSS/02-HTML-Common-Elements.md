@@ -1,6 +1,6 @@
 # HTML Common Elements
 
-[slide]
+[slide hideTitle]
 # Headings
 
 [vimeo-video]
@@ -135,6 +135,7 @@ The example above shows the usage of the `<img>` element:
 - The `src` attribute is **required**, and contains the **path to the image**.
 - The `alt` attribute specifies an **alternate** text for an image, if the image cannot be displayed.
 
+[/slide]
 
 [slide]
 # Lists
