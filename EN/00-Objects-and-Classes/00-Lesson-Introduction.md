@@ -25,7 +25,7 @@
 
 - Object Values
 
-- **3. Built-in Classes in Java**
+**3. Built-in Classes in Java**
 
 - Overview of some Java's Built-in classes
 
