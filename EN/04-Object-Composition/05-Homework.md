@@ -635,15 +635,14 @@ Scorcher 2 slashes at the foe\!
 [test]
 [input]
 let create \= result\(\)\;
-
-const scorcher \= create.mage\("Scorcher"\)\;
-scorcher\.cast\("fireball"\)
-scorcher\.cast\("thunder"\)
-scorcher\.cast\("light"\)
+const scorcher \= create.mage\(\"Scorcher\"\)\;
+scorcher\.cast\(\"fireball\"\)
+scorcher\.cast\(\"thunder\"\)
+scorcher\.cast\(\"light\"\)
 
 let act4 \= scorcher.mana\;
 let exp4 \= 97\;
-assert\.equal\(act4,exp4,"4"\)\;
+assert\.equal\(act4\,exp4\,\"4\"\)\;
 let act1 \= scorcher\.health\;
 assert\.equal\(100,act1\)\;
 [/input]
