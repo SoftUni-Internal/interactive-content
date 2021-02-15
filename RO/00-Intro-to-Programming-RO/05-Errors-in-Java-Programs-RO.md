@@ -15,15 +15,6 @@ Unele dintre greșelile de bază pe care le putem întâlni:
 
 - Citate lipsă "" sau paranteză ()
 
-- Să confundați adunarea cu concatenarea
-
-Operatorul "+" are două funcționalități:
-
-- Adunarea se folosește pentru numere
-
-- Concatenarea se folosește pentru șiruri
-
-Să confundăm operatorii de  asignare (=) cu cei de egalitate (==, ===).
 
 [/slide]
 

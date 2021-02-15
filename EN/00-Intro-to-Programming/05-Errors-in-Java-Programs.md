@@ -12,19 +12,10 @@ Some of the basic common mistakes we can face:
 
 - Mixing of lowercase and uppercase letters in syntax
 
-- Wrong Syntax
+- Wrong syntax
 
-- Missing quotes " " or bracket ( )
+- Missing quotes " " or parantheses ( )
 
-- Confusing Addition and Concatenation
-
-The "+" operator has two functionalities.
-
-- Addition is for numbers
-
-- Concatenation is for strings
-
-Confusing the assignment (=) and equality (==, ===) operators.
 
 [/slide]
 
