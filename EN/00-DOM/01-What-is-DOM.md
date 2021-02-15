@@ -16,13 +16,13 @@ DOM is simply a **link** between HTML documents and the JavaScript programming l
 
 Through DOM manipulations the developer can:
 
-- `Get an HTML element`
+- Get an HTML element
 
-- `Change an element`
+- Change an element
 
-- `Add a new element`
+- Add a new element
 
-- `Delete an element`
+- Delete an element
 
 Here is an example of an HTML element:
 
@@ -30,7 +30,7 @@ Here is an example of an HTML element:
 <p>This is some random text</p>
 ```
 
-In the example the element is surrounded by opening and closing tags, specifying its type (in this case - a paragraph)
+In the example the element is surrounded by opening and closing tags, specifying its type (in this case - a paragraph).
 
 Between the two tags, there is the text value of the element.
 
@@ -46,13 +46,13 @@ The HTML DOM is an **Object Model** for the HTML document.
 
 It defines:
 
-- `HTML elements as objects`
+- HTML elements as objects
 
-- `Properties`
+- Properties
 
-- `Methods`
+- Methods
 
-- `Events`
+- Events
 
 Here is an example of what the HTML DOM looks like:
 
