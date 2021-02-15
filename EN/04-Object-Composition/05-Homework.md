@@ -23,19 +23,21 @@ The input will come in form of an **array of arrays** - every nested array will 
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criterion and by their **width** in **descending** order as a second criterion.  
 
 # Examples
-|**Input**|**Output**|
-|---|---|
-|`[[10,5], [5,12]]`|\[\{width:5, height:12, area:function(), compareTo:function(other)\},
-\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]| 
+**Input**
+`[[10,5], [5,12]]`
+
+**Output**
+\[\{width:5, height:12, area:function(), compareTo:function(other)\},
+\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]
 
 
+**Input**
+`[[10,5], [3,20], [5,12]]`
 
-|**Input**|**Output**|
-|---|---|
-|`[[10,5], [3,20], [5,12]]`|\[\{width:5, height:12, area:function(), compareTo:function(other)},
+**Output**
+\[\{width:5, height:12, area:function(), compareTo:function(other)\},
 \{width:3, height:20, area:funciton(),compareTo:function(other)\},
-\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]|
-
+\{width:10, height:5, area:funciton(),compareTo:function(other)\}\]
 
 [/task-description]
 [code-io /]
@@ -702,25 +704,14 @@ Once the water is administered, change the dizziness property to **false**.
 
 Workers who do not have dizziness should not be modified in any way. Return them as they are.
 
-
-# Examples 
-| **Input** | **Output** |
-| --- | --- |
-|\{ weight: 80,
-  experience: 1,
-  levelOfHydrated: 0,
-  dizziness: true \}| \{ weight: 80,
-  experience: 1,
-  levelOfHydrated: 8,
-  dizziness: false \}|
-
+## Examples
 
 | **Input** | **Output** |
 | --- | --- |
 |\{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true \}| \{ weight: 80,
+  dizziness: true \}|\{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
   dizziness: false \}|
@@ -730,20 +721,23 @@ Workers who do not have dizziness should not be modified in any way. Return them
 |\{ weight: 120,
   experience: 20,
   levelOfHydrated: 200,
-  dizziness: true \}| \{ weight: 120,
+  dizziness: true \}|\{ weight: 120,
   experience: 20,
   levelOfHydrated: 440,
   dizziness: false \}|
+
 
 | **Input** | **Output** |
 | --- | --- |
 |\{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false \}| \{ weight: 95,
+  dizziness: false \}|\{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
   dizziness: false \}|
+
+
 
 [/task-description]
 [code-io /]
