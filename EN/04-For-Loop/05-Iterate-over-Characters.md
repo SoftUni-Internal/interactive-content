@@ -36,7 +36,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Latin Letters
+# Problem with Solution: Latin Letters
 
 interactive-programming-basics-with-java-for-loops-28-problem-latin-letters
 
@@ -90,57 +90,3 @@ f g h i j k l
 
 [/slide]
 
-[slide]
-# Solution: Latin Letters
-
-interactive-programming-basics-with-java-for-loops-28-problem-latin-letters-solution
-
-[code-task title="Latin Letters" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads **2 letters**
-* Prints **all letters** in the given range **inclusive**
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| a | a b c |
-| c |  |
-|  |  |
-[/task-description]
-[tests]
-[test]
-[input]
-a
-c
-[/input]
-[output]
-a b c
-[/output]
-[/test]
-[test]
-[input]
-f
-l
-[/input]
-[output]
-f g h i j k l
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

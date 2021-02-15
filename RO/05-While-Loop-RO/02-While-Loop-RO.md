@@ -46,7 +46,7 @@ while (num <= n) {
 [/slide]
 
 [slide hideTitle]
-# Problemă: Descreșterea Numerelor
+# Problem with Solution: Descreșterea Numerelor
 [code-task title="Decreasing Numbers" taskId="java-basics-while-loop-decreasing-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -94,57 +94,10 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Decreșterea numerelor
-[code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
 
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Enunț
-Scrieți un program care:
-
-* Citește un număr din consolă
-* Imprimă numerele începând de la număr, la 1 (**inclusive**)
-## Exemplu
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 4 | 4 |
-|| 3 |
-|| 2 |
-|| 1 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-5
-4
-3
-2
-1
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problemă: Un număr din interval
+# Problem with Solution: Un număr din interval
 [code-task title="Number in Range" taskId="java-basics-while-loop-number-in-range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -192,50 +145,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Number in Range
-[code-task title="Number in Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-* Citește un **număr** de pe consolă
-* Verifică dacă numărul este în intervalul dintre **1 and 100**
-* Dacă nu este - citește **un nou număr**
-* Dacă este - **imprimă numărul** și programul se oprește
-## Exemplu
-
-| **Input** | **Output** |
-| ---- | ---- |
-| -10 | 50 |
-| 101 |
-| 50 |
-
-[/task-description]
-[tests]
-[test]
-[input]
--10
-101
-60
-[/input]
-[output]
-60
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]

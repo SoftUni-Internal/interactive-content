@@ -50,7 +50,7 @@ for (int i = 0; i < a; i++) {
 
 
 [slide hideTitle]
-# Problem: Triangle of Stars
+# Problem with Solution: Triangle of Stars
 
 interactive-programming-basics-with-java-nested-loops-26-problem-triangle-of-stars
 
@@ -101,54 +101,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Triangle of Stars
-
-interactive-programming-basics-with-java-nested-loops-26-problem-triangle-of-stars-solution
-
-[code-task title="Triangle of Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads the **height** of a triangle from the console
-* Prints a **triangle of stars**
-# Example
-
-| **Input** |**Output**|
-| ----- | ----- |
-| 5 | \* |
-|| \*\* |
-|| \*\*\* |
-|| \*\*\*\* |
-|| \*\*\*\*\* |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-*
-**
-***
-****
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

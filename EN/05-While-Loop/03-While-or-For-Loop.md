@@ -45,7 +45,7 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Problem: Odd Number
+# Problem with Solution: Odd Number
 
 Java-While-Loops-14-Problem-Odd-Number
 
@@ -96,59 +96,9 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Odd Number
-
-Java-While-Loops-15-Solution-Odd-Number
-
-[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-     // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads numbers from the console until it gets an **odd number**
-* Prints the **odd** number
-## Example
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 2 | 3 |
-| 4 |
-| 8 |
-| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-2
-4
-8
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Number Processor
+# Problem with Solution: Number Processor
 
 Java-While-Loops-16-Problem-Number-Processor
 
@@ -228,77 +178,3 @@ END
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Number Processor
-
-Java-While-Loops-17-Solution-Number-Processor
-
-[code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-     // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads a number from the console
-* Reads the following commands:
-* **Add** - Аdds 1 to the number
-* **Subtract** - Subtracts 1 from the number
-* **END** -  Prints the number and stops the program
-
-## Example
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 5 | 6 |
-| Add |
-| END |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-Add
-END
-[/input]
-[output]
-5
-[/output]
-[/test]
-[test]
-[input]
-4
-Subtract
-END
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
-4
-Add
-Add
-Subtract
-END
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]

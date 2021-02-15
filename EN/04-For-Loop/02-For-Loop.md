@@ -54,7 +54,7 @@ The loop repeats 10 times and each of these repetitions is called an **"iteratio
 
 
 [slide hideTitle]
-# Problem: Print Sum of N Numbers
+# Problem with Solution: Print Sum of N Numbers
 
 interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers
 
@@ -123,73 +123,4 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Print Sum of N Numbers
-
-interactive-programming-basics-with-java-for-loops-15-problem-print-sum-of-n-numbers-solution
-
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads number n from the console
-* **Prints** all numbers from **1** to **n**
-* **Sums** all numbers from **1** to **n**
-* **Prints** the sum on the console at the end\
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| 5 | 1 |
-|  | 2 |
-|  | 3 |
-|  | 4 |
-|  | 5 |
-|  | 15 |
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-1
-2
-3
-4
-5
-15
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-1
-2
-3
-4
-5
-6
-21
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 

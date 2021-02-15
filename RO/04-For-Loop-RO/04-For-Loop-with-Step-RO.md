@@ -33,7 +33,7 @@ for (int i = 10; i >= 1; i--) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Numbers Ending with 7 
+# Problem with Solution: Numbers Ending with 7 
 [code-task title="Numbers Ending with 7" taskId="java-basics-for-loop-numbers-ending-with-7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -78,54 +78,9 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Numbers Ending with 7 
-[code-task title="Numbers Ending with 7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-*Citește un număr **n**
-*Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
-
-## Exemplu
-|**Intrare**|**Ieșire** |
-| --- | --- |
-| 30 | 7 |
-|  | 17 |
-|  | 27 |
-[/task-description]
-[tests]
-[test]
-[input]
-40
-[/input]
-[output]
-7
-17
-27
-37
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Exam Countdown
+# Problem with Solution: Exam Countdown
 [code-task title="Exam Countdown" taskId="java-basics-for-loop-exam-countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -173,50 +128,3 @@ The exam has come
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Exam Countdown
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-
-* Citește un număr întreg - numărul de **zile înainte de un examen**
-* Pentru **fiecare zi** imprimă: "\{currentDay\} days before the exam"
-* La final imprimă: "The exam has come"**
-
-## Exemplu
-|**Intrare**| **Ieșire** |
-| --- | --- |
-| 3 | 3 days before the exam |
-|  | 2 days before the exam |
-|  | 1 days before the exam |
-|  | The exam has come |
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

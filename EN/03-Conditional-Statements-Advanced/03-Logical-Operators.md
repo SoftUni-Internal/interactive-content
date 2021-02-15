@@ -123,7 +123,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Bonus Points
+# Problem with Solution: Bonus Points
 
 interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points
 
@@ -183,66 +183,7 @@ Write a program that applies bonus to given points
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Bonus Points
 
-interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-problem-bonus-points-solution
-
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that applies bonus to given points
-  * If points are between **0** and **3**, adds **5**
-  * If points are between **4** and **6**, adds **15**
-  * If points are between **7** and **9**, adds **20**
-# Example
-
-| Input | Output |
-| --- | --- |
-| 4 | 19 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-19
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
 # Logical OR Operator
@@ -290,7 +231,7 @@ Reaching `b`, it understands that it has a `true` value and the whole **expressi
 [/slide]
 
 [slide hideTitle]
-# Problem: Food or Drink
+# Problem with Solution: Food or Drink
 
 interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink
 
@@ -357,67 +298,6 @@ unknown
 
 interactive-programming-basics-with-java-conditional-statements-advanced-21-logical-or-problem-food-or-drink-solution
 
-# Solution: Food or Drink
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-  * Reads single line and print "***drink***", "***food***" or "***unknown***"
-  * Foods: curry, noodles, sushi, spaghetti 
-  * Drinks: tea, water, coffee
-  * Everything else is unknown
-# Example
-## Input
-- curry
-## Output
-- food
-## Input
-- flower
-## Output
-- unknown
-[/task-description]
-[tests]
-[test]
-[input]
-curry
-[/input]
-[output]
-food
-[/output]
-[/test]
-[test]
-[input]
-tea
-[/input]
-[output]
-drink
-[/output]
-[/test]
-[test]
-[input]
-something
-[/input]
-[output]
-unknown
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 
 [slide hideTitle]

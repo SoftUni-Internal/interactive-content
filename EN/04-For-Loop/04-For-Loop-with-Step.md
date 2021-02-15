@@ -38,7 +38,7 @@ for (int i = 10; i >= 1; i--) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Numbers Ending with 7 
+# Problem with Solution: Numbers Ending with 7 
 
 interactive-programming-basics-with-java-for-loops-21-problem-numbers-ending-with-seven
 
@@ -86,57 +86,9 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Numbers Ending with 7 
-
-interactive-programming-basics-with-java-for-loops-21-problem-numbers-ending-with-seven-solution
-
-[code-task title="Numbers Ending with 7" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| 30 | 7 |
-|  | 17 |
-|  | 27 |
-[/task-description]
-[tests]
-[test]
-[input]
-40
-[/input]
-[output]
-7
-17
-27
-37
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Exam Countdown
+# Problem with Solution: Exam Countdown
 
 interactive-programming-basics-with-java-for-loops-23-problem-exam-countdown
 
@@ -187,53 +139,3 @@ The exam has come
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Exam Countdown
-
-interactive-programming-basics-with-java-for-loops-23-problem-exam-countdown-solution
-
-[code-task title="Exam Countdown" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-* Reads an integer - count of **days before an exam**
-* For **each day** prints: "\{currentDay\} days before the exam"
-* At the end prints: **"The exam has come"**
-
-## Example
-| **Input** | **Output** 
-| --- | --- |
-| 3 | 3 days before the exam |
-|  | 2 days before the exam |
-|  | 1 days before the exam |
-|  | The exam has come |
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-4 days before the exam
-3 days before the exam
-2 days before the exam
-1 days before the exam
-The exam has come
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

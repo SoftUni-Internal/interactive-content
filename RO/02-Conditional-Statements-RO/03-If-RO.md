@@ -25,8 +25,8 @@ if (weather.equals("rainy")) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Freezing Weather
-[code-task title="Freezing Weather" taskId="pb-java-Conditional-Statements-freezing-weather" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Freezing Weather
+[code-task title="Freezing Weather" taskId="pb-java-Conditional-Statements-Freezing-Weather" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -82,60 +82,3 @@ Freezing weather!
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Freezing Weather
-[code-task title="Freezing Weather" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-
-# Descriere
-Scrieți un program pentru a verifica vremea rece:
-
-  * Citește o temperatură în Celsius (un număr real reprezentat în virgulă mobilă cu simplă precizie (float))
-  * Tipăriți `Freezing weather!`, dacă temperatura este **egală** sau **mai mică de 0**
-  # Exemplu
-
-| **Input** | **Output** | 
-| ---- | ---- |
-| -2 | Freezing weather!|
-| 4 | (no output)
-
-[/task-description]
-[tests]
-[test]
-[input]
--2
-[/input]
-[output]
-Freezing weather!
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-[/output]
-[/test]
-[test]
-[input]
--5
-[/input]
-[output]
-Freezing weather!
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

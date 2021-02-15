@@ -94,7 +94,7 @@ if (color.equals("red")) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Even or Odd
+# Problem with Solution: Even or Odd
 
 interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd
 
@@ -155,70 +155,10 @@ even
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Even or Odd
 
-interactive-programming-basics-with-java-conditional-statements-21-problem-even-or-odd-solution
-
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which checks if a number is **even** or **odd**
-
-  * If it's even, print "**even**"
-  * If it's odd, print "**odd**"
-# Example
-
-| **Input** | **Output** | 
-| ---- | ---- |
-| 4 | even|
-| 7 | odd |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-even
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-odd
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-even
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Greater Numbers
+# Problem with Solution: Greater Numbers
 
 interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers
 
@@ -281,70 +221,4 @@ Greater number: 2
 [code-io/]
 [/code-task]
 
-[/slide]
-
-
-[slide hideTitle]
-# Solution: Greater Numbers
-
-interactive-programming-basics-with-java-conditional-statements-23-problem-greater-numbers-solution
-
-[code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which finds the greater of two numbers:
-
-  * Read two **integers**
-  * Find the greater number
-  * Print `"Greater number: "` + the **greater** number
-# Example
-
-| **Input** | **Output** | 
-| ---- | ---- |
-| 4 | Greater number: 8 |
-| 8 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-8
-[/input]
-[output]
-Greater number: 8
-[/output]
-[/test]
-[test]
-[input]
-7
-3
-[/input]
-[output]
-Greater number: 7
-[/output]
-[/test]
-[test]
-[input]
-1
-2
-[/input]
-[output]
-Greater number: 2
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
 [/slide]

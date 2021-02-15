@@ -86,7 +86,7 @@ if (color.equals("red")) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Even or Odd
+# Problem with Solution: Even or Odd
 [code-task title="Even or Odd" taskId="pb-java-Conditional-Statements-even-or-odd"  executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -144,67 +144,10 @@ even
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Even or Odd
-[code-task title="Even or Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
 
-public class Program {
-    public static void main(String[] args) {
-      // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program, care verifică dacă un număr este **even** sau **odd**
-
-   * Dacă este even, tipăriți **even**
-   * Dacă este odd, tipăriți **odd**
-# Examplu
-
-| **Input** | **Output** | 
-| ---- | ---- |
-| 4 | even|
-| 7 | odd |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-even
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-odd
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-even
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Greater Number
+# Problem with Solution: Greater Number
 [code-task title="Greater Number" taskId="pb-java-Conditional-Statements-greater-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -267,64 +210,3 @@ Greater number: 2
 [/slide]
 
 
-[slide hideTitle]
-# Soluție: numere mai mari
-[code-task title="Greater Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-      // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program, care găsește cel mai mare dintre două numere:
-
-   * Citiți două **numere întregi**
-   * Găsiți numărul mai mare
-   * Imprimați `Greater number: ` + numărul **mai mare**
-# Exemplu
-
-| **Input** | **Output** | 
-| ---- | ---- |
-| 4 | Greater number: 8 |
-| 8 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-8
-[/input]
-[output]
-Greater number: 8
-[/output]
-[/test]
-[test]
-[input]
-7
-3
-[/input]
-[output]
-Greater number: 7
-[/output]
-[/test]
-[test]
-[input]
-1
-2
-[/input]
-[output]
-Greater number: 2
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]

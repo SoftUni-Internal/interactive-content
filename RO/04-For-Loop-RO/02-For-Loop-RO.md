@@ -47,7 +47,7 @@ Bucla se repetă de 10 ori și fiecare dintre aceste repetări se numește **"it
 
 
 [slide hideTitle]
-# Problem: Print Sum of N Numbers
+# Problem with Solution: Print Sum of N Numbers
 [code-task title="Print Sum of N Numbers" taskId="java-basics-for-loop-print-sum-of-n-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -56,73 +56,6 @@ import java.util.Scanner;
 public class Program {
    public static void main(String[] args) {
       // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-* Citește numărul n de pe consolă
-* **Tipărește** toate numerele de la **1** la **n**
-* **Adună** toate numerele de la **1** la **n**
-* **Tipărește** suma de pe consolă la final
-
-## Exemplu
-| **Intrare** | **Ieșire** |
-| --- | --- |
-| 5 | 1 |
-|  | 2 |
-|  | 3 |
-|  | 4 |
-|  | 5 |
-|  | 15 |
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-1
-2
-3
-4
-5
-15
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-1
-2
-3
-4
-5
-6
-21
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Print Sum of N Numbers
-[code-task title="Print Sum of N Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-    public static void main(String[] args) {
-        // Write code here
     }
 }
 ```

@@ -118,7 +118,7 @@ if (x >= x1 && x <= x2 && y >= y1 && y <= y2) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Bonus Points
+# Problem with Solution: Bonus Points
 [code-task title="Bonus Points" taskId="java-basics-logical-operators-bonus-points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -175,63 +175,7 @@ Scrieți un program care aplică bonus punctelor date
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Bonus Points
-[code-task title="Bonus Points" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care aplică bonus punctelor date
-   *Dacă punctele sunt între **0** și **3**, se adaugă **5**
-   *Dacă punctele sunt între **4** și **6**, se adaugă **15**
-   *Dacă punctele sunt între **7** și **9**, se adaugă **20**
-# Exemplu
-
-| Intrare | Ieșire |
-| --- | --- |
-| 4 | 19 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-[/input]
-[output]
-19
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-28
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
 # Operatorul logic SAU 
@@ -336,68 +280,7 @@ unknown
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Food or Drink
-[code-task title="Food or Drink" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-   * Citește o singură linie și tipărește "***drink***", "***food***" sau "***unknown***"
-   * Alimente: curry, noodles, sushi, spaghetti 
-   * Băuturi: tea, water, coffee
-   * Orice altceva este unknown
-# Exemplu
-## Intrare
-- curry
-## Ieșire
-- food
-## Intrare
-- flower
-## Ieșire
-- unknown
-
-[/task-description]
-[tests]
-[test]
-[input]
-curry
-[/input]
-[output]
-food
-[/output]
-[/test]
-[test]
-[input]
-tea
-[/input]
-[output]
-drink
-[/output]
-[/test]
-[test]
-[input]
-something
-[/input]
-[output]
-unknown
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 
 [slide hideTitle]

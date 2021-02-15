@@ -41,7 +41,7 @@ for (int j = 16; j > 1; j /= 2) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Numbers from N down to 1
+# Problem with Solution: Numbers from N down to 1
 
 interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one + 
 
@@ -116,84 +116,9 @@ The program receives a number `n` and prints the numbers from `n` down to 1.
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Numbers from N down to 1
-
-interactive-programming-basics-with-java-nested-loops-10-problem-numbers-from-n-down-to-one-solution
-
-[code-task title="Numbers from N down to 1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-      
-    }
-}
-
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that prints the numbers from N down to 1.
-
-The program receives a number `n` and prints the numbers from `n` down to 1. 
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|5| 5 4 3 2 1 |
-
-
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-5 4 3 2 1
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-4 3 2 1
-[/output]
-[/test]
-[test]
-[input]
-3
-[/input]
-[output]
-3 2 1
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-2 1
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-1
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-[/slide]
 
 [slide hideTitle]
-# Problem: Numbers from 1 to N with Step 3
+# Problem with Solution: Numbers from 1 to N with Step 3
 
 interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three + 
 
@@ -272,88 +197,10 @@ Write a program that prints the numbers from 1 to `n` with step 3:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Numbers from 1 to N with Step 3
 
-interactive-programming-basics-with-java-nested-loops-12-problem-numbers-from-one-to-n-with-step-three-solution
-
-[code-task title="Numbers from 1 to N with Step 3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-      
-    }
-}
-
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that prints the numbers from 1 to `n` with step 3:
-
-* Receives a number `n`
-
-* Prints the numbers from 1 to `n` with step 3
-
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|7| 1 4 7 |
-|10| 1 4 7 10 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-10
-[/input]
-[output]
-1 4 7 10
-[/output]
-[/test]
-[test]
-[input]
-15
-[/input]
-[output]
-1 4 7 10 13
-[/output]
-[/test]
-[test]
-[input]
-20
-[/input]
-[output]
-1 4 7 10 13 16 19
-[/output]
-[/test]
-[test]
-[input]
-25
-[/input]
-[output]
-1 4 7 10 13 16 19 22 25
-[/output]
-[/test]
-[test]
-[input]
-30
-[/input]
-[output]
-1 4 7 10 13 16 19 22 25 28
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Even Powers of 2
+# Problem with Solution: Even Powers of 2
 
 interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two + 
 
@@ -431,81 +278,3 @@ Write a program that prints the even powers of 2:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Even Powers of 2
-
-interactive-programming-basics-with-java-nested-loops-14-problem-even-powers-of-two-solution
-
-[code-task title="Even Powers of 2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-      
-    }
-}
-
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program that prints the even powers of 2:
-
-* Receives a number `n`
-
-* Prints the even powers of 2 up to `2n`:
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|5| 1 4 16 |
-|10| 1 4 16 64 256 1024 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-10
-[/input]
-[output]
-1 4 16 64 256 1024
-[/output]
-[/test]
-[test]
-[input]
-15
-[/input]
-[output]
-1 4 16 64 256 1024 4096 16384
-[/output]
-[/test]
-[test]
-[input]
-20
-[/input]
-[output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576
-[/output]
-[/test]
-[test]
-[input]
-25
-[/input]
-[output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576 4194304 16777216
-[/output]
-[/test]
-[test]
-[input]
-30
-[/input]
-[output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576 419434, 16777216 67108864 268435456 1073741824
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]

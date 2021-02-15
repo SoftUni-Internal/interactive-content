@@ -43,7 +43,7 @@ System.out.println(number);
 [/slide]
 
 [slide hideTitle]
-# Problemă: Număr impar
+# Problem with Solution: Număr impar
 [code-task title="Odd Number" taskId="java-basics-while-loop-odd-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -91,56 +91,10 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Odd Number
-[code-task title="Odd Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
 
-public class Program {
-   public static void main(String[] args) {
-     // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Descriere
-Scrieți un program care:
-
-* Citește numerele de pe  consolă până ce primește **un număr impar**
-* Imprimă acel număr  **impar** 
-## Exemplu
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 2 | 3 |
-| 4 |
-| 8 |
-| 3 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-2
-4
-8
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problemă: Procesor numeric
+# Problem with Solution: Procesor numeric
 [code-task title="Number Processor" taskId="java-basics-while-loop-number-processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -211,74 +165,3 @@ END
 
 [/slide]
 
-[slide hideTitle]
-# Soluție: Procesor numeric
-[code-task title="Number Processor" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-     // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Enunț
-Scrieți un program care:
-
-* Citește un număr de pe  consolă
-* Citește următoarele comenzi:
-* **Add** - Аdaugă 1 numărului
-* **Subtract** - Scade 1 din număr
-* **END** -  Imprimă numărul și oprește programul
-
-## Exemplu
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 5 | 6 |
-| Add |
-| END |
-
-[/task-description]
-[tests]
-[test]
-[input]
-4
-Add
-END
-[/input]
-[output]
-5
-[/output]
-[/test]
-[test]
-[input]
-4
-Subtract
-END
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
-4
-Add
-Add
-Subtract
-END
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]

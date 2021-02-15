@@ -66,7 +66,7 @@ It **has to be avoided**, mostly through optimization of the structure/the algor
 [/slide]
 
 [slide hideTitle]
-# Problem: Marketplace
+# Problem with Solution: Marketplace
 
 interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace
 
@@ -127,69 +127,10 @@ Weekend
 
 [/slide]
 
-[slide]
-# Solution: Marketplace
 
-interactive-programming-basics-with-java-conditional-statements-advanced-12-problem-marketplace-solution
-
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program which:
-  * Reads a **product** and **day** from the console
-  * Prints the **price**, formatted to 2nd digit, based on the price table below
-
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
-|Banana|2.50|2.70|
-|Apple|1.30|1.60|
-|Kiwi|2.20|3.00|
-# Example
-
-| Input | Output |
-| ------- | ------- |
-| Banana | 2.50 |
-| Weekday |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Banana
-Weekday
-[/input]
-[output]
-2.50
-[/output]
-[/test]
-[test]
-[input]
-Apple
-Weekend
-[/input]
-[output]
-1.60
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Biggest Number of Three
+# Problem with Solution: Biggest Number of Three
 
 interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three
 
@@ -257,70 +198,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Biggest Number of Three
-
-interactive-programming-basics-with-java-conditional-statements-advanced-14-problem-greatest-number-of-three-solution
-
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
-
-  * Reads **3 numbers** from the console
-  * Prints **the biggest** number
-# Example
-
-| Input | Output |
-| ------- | ------- |
-| 1 | 3 |
-| 2 |
-| 3 |
-
-[/task-description]
-[code-io/]
-[tests]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
--1
--5
--9
-[/input]
-[output]
--1
-[/output]
-[/test]
-[test]
-[input]
-1
-5
-3
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]

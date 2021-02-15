@@ -63,7 +63,7 @@ Imbricarea a **mai mult de trei instrucțiuni condiționale** în interiorul une
 [/slide]
 
 [slide hideTitle]
-# Problem: Marketplace
+# Problem with Solution: Marketplace
 [code-task title="Marketplace" taskId="java-basics-nested-conditions-marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -121,66 +121,10 @@ Weekend
 
 [/slide]
 
-[slide]
-# Solution: Marketplace
-[code-task title="Marketplace" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-   * Citește un **produs** și **o zi** de pe consolă
-   * Tipărește **prețul**, formatat la a doua cifră după virgula zecimală pe baza tabelului de prețuri de mai jos
-
-|Product|Weekday|Weekend| 
-|-------|-------|-------|
-|Banana|2.50|2.70|
-|Apple|1.30|1.60|
-|Kiwi|2.20|3.00|
-# Exemplu
-
-| Intrare | Ieșire |
-| ------- | ------- |
-| Banana | 2.50 |
-| Weekday |
-
-[/task-description]
-[tests]
-[test]
-[input]
-Banana
-Weekday
-[/input]
-[output]
-2.50
-[/output]
-[/test]
-[test]
-[input]
-Apple
-Weekend
-[/input]
-[output]
-1.60
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Biggest Number of Three
+# Problem with Solution: Biggest Number of Three
 [code-task title="Biggest Number of Three" taskId="java-basics-nested-conditions-biggest-number-of-three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -245,66 +189,3 @@ Scrieți un program care:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Biggest Number of Three
-[code-task title="Biggest Number of Three" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Scrieți codul aici
-    }
-}
-```
-[/code-editor]
-[task-description]
-# Descriere
-Scrieți un program care:
-   * Citește **3 numere** de pe consolă
-   * Tipărește **cel mai mare** număr
-# Exemplu
-
-| Intrare | Ieșire |
-| ------- | ------- |
-| 1 | 3 |
-| 2 |
-| 3 |
-
-[/task-description]
-[code-io/]
-[tests]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[test]
-[input]
--1
--5
--9
-[/input]
-[output]
--1
-[/output]
-[/test]
-[test]
-[input]
-1
-5
-3
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]

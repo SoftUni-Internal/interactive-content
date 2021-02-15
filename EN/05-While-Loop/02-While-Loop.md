@@ -49,7 +49,7 @@ while (num <= n) {
 [/slide]
 
 [slide hideTitle]
-# Problem: Decreasing Numbers
+# Problem with Solution: Decreasing Numbers
 
 Java-While-Loops-8-Problem-Decreasing-Numbers + 
 
@@ -100,60 +100,9 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Decreasing Numbers
-
-Java-While-Loops-8-Solution-Decreasing-Numbers
-
-[code-task title="Decreasing Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads a number from the console
-* Prints the numbers starting from the number to 1 (**inclusive**)
-## Example
-
-| **Input** | **Output** |
-| ---- | ---- |
-| 4 | 4 |
-|| 3 |
-|| 2 |
-|| 1 |
-
-[/task-description]
-[tests]
-[test]
-[input]
-5
-[/input]
-[output]
-5
-4
-3
-2
-1
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
-# Problem: Number in Range
+# Problem with Solution: Number in Range
 
 Java-While-Loops-10-Problem-Number-in-range
 
@@ -204,53 +153,3 @@ Write a program, which:
 
 [/slide]
 
-[slide hideTitle]
-# Solution: Number in Range
-
-Java-While-Loops-11-Solution-Number-In-range
-
-[code-task title="Number in Range" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program, which:
-
-* Reads a **number** from the console
-* Checks if the number is in the range between **1 and 100**
-* If it isn't - it reads a **new one**
-* If it is - **prints the number** and the program stops
-## Example
-
-| **Input** | **Output** |
-| ---- | ---- |
-| -10 | 50 |
-| 101 |
-| 50 |
-
-[/task-description]
-[tests]
-[test]
-[input]
--10
-101
-60
-[/input]
-[output]
-60
-[/output]
-[/test]
-[/tests]
-[code-io/]
-[/code-task]
-
-[/slide]
