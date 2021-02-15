@@ -70,10 +70,10 @@ Programele de computer execută, de obicei, algoritmi.
 **Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei ”rețete”.
 
 De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algoritm): 
-- se încălzește uleiul într-o tigaie
-- se sparg ouăle în tigaie
-- se așteaptă până se prăjesc
-- se îndepărtează de aragaz
+- Se încălzește uleiul într-o tigaie
+- Se sparg ouăle în tigaie
+- Se așteaptă până se prăjesc
+- Se îndepărtează de aragaz
 
 În mod similar, în programare, **programele de calculator execută algoritmi**: secvențe de comenzi, necesare pentru finalizarea unei anumite sarcini. 
 
@@ -87,7 +87,7 @@ Pentru conveniență, atunci când creăm programe, când scriem coduri de progr
 Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) făcând împărțirea sumei prin cursul de schimb Euro-dolar și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:
-```java 
+```java
 import java.util.Scanner;
 
 public class Program {

@@ -14,8 +14,8 @@ Dacă nu utilizăm un mediu de dezvoltare, va trebui să scriem codul într-un e
 Pentru programarea cu **limbajul Java** cel mai des utilizat IDE este **IntelliJ IDEA**, care este dezvoltat și distribuit gratuit de JetBrains și poate fi descărcat de pe site-ul web: https://www.jetbrains.com/idea/download/.
 
 Alternativele Visual Studio sunt:
-- Eclipse – https://www.eclipse.org/downloads/
-- NetBeans – https://netbeans.org/downloads/8.0.2/
+- [Eclipse](https://www.eclipse.org/downloads/)
+- [NetBeans](https://netbeans.org/downloads/8.0.2/)
 
 În cadrul acestui curs, vom folosi mediul de dezvoltare **IntelliJ IDEA**. 
 
@@ -108,9 +108,9 @@ Instalați de pe JetBrains comunitatea  IntelliJ IDEA Community
 
 Alternative IDE (online)
 
-* Java: https://www.compilejava.net, https://repl.it/languages/java
-* C#: https://dotnetfiddle.net
-* Python: https://repl.it
+* [Java](https://www.compilejava.net) , [Repl.it](https://repl.it/languages/java)
+* [C#](https://dotnetfiddle.net)
+* [Python](https://repl.it)
 * JavaScript: folosiți direct consola browser-ului Web (apăsând tasta \[F12\])
 
 [image assetsSrc="intro-to-programming-rplit.png" /]

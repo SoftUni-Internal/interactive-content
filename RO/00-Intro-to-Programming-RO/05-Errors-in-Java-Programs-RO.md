@@ -9,19 +9,19 @@ Acesta ubliniază codul greșit care nu poate fi compilat.
 
 Unele dintre greșelile de bază pe care le putem întâlni:
 
-- Amestecarea de litere minuscule cu cele majuscule în sintaxă.
+- Amestecarea de litere minuscule cu cele majuscule în sintaxă
 
-- O sintaxă greșită.
+- O sintaxă greșită
 
-- Citate lipsă "" sau paranteză ().
+- Citate lipsă "" sau paranteză ()
 
-- Să confundați adunarea cu concatenarea.
+- Să confundați adunarea cu concatenarea
 
 Operatorul "+" are două funcționalități:
 
-- Adunarea se folosește pentru numere.
+- Adunarea se folosește pentru numere
 
-- Concatenarea se folosește pentru șiruri.
+- Concatenarea se folosește pentru șiruri
 
 Să confundăm operatorii de  asignare (=) cu cei de egalitate (==, ===).
 
