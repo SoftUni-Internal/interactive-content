@@ -15,7 +15,7 @@ We refer to these as **primitive data types.**
 
 A single **variable** can only **store** a single **type** of data.
 
-If a primitive type is assigned to a variable, we could say that this variable contains the primitive value:
+If a primitive type is assigned to a variable, we could say that this variable contains the primitive value:
 
 ``` js live
 let a = 10;
@@ -45,7 +45,7 @@ Variables that are assigned a non-primitive value are given a **reference** to
 
 ``` js live
 let arrayOne = ['a', 'b', 'c', 'd'];
-let arrayTwo = array;
+let arrayTwo = arrayOne;
 
 console.log(`First array value: ${arrayOne}`);
 console.log(`Second array value: ${arrayTwo}`);
