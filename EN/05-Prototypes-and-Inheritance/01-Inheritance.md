@@ -10,11 +10,11 @@ Inheritance is the ability of a class to copy the functions of a parent class.
 
 In JavaScript, **inheritance** can also be called **Delegation Behavior**.
 
-Because the functionality from one object is delegated to another one, 
+Because the functionality from one object is delegated to another one.
 
 The inheritance in JavaScript is a type of **dependence**.
 
-## Types of Inheritance
+**Types of Inheritance**
 
 - **Simple** Inheritance
 - **Multilevel** Inheritance
@@ -96,9 +96,9 @@ Here is an example:
     }
 ```
 
-In this example, we extended the **Pet** class with a class **Dog**. 
+In this example, we extended the **Pet** class with a class **Dog**.
 
-After that, we inherited the **Dog** class with the **Breed** one. 
+After that, we inherited the **Dog** class with the **Breed** one.
 
 The **Breed** class will **obtain** all of the methods that **Dog** and **Pet** classes have.
 
