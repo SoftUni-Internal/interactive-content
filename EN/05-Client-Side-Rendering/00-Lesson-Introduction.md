@@ -21,7 +21,7 @@
 - Angular
 - Vue
 - Handlebars
-- lit-html
+- Lit-html
 - Web Components
 
 **4. Overview of lit-html**
