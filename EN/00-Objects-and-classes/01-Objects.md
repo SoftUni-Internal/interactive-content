@@ -1,4 +1,4 @@
-# Object Introduction
+# Objects Introduction
 
 [slide hideTitle]
 # What Are Objects?
