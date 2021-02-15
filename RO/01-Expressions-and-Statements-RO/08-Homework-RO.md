@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Homework
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Homework"
 
 # Teme pentru acasă
 

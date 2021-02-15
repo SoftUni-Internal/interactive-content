@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-For-Loop-Increment-And-Decrement
+// sectionId: "Javascript-Programming-Basics-For-Loop-Increment-And-Decrement"
 
 [slide hideTitle]
 # Operatori de incrementare și decrementare

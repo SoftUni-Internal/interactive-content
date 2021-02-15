@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Statements
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Statements"
 
 # Declarații
 

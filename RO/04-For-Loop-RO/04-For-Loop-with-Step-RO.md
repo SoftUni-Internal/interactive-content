@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-For-Loop-For-Loop-With-Step
+// sectionId: "Javascript-Programming-Basics-For-Loop-For-Loop-With-Step"
 
 [slide hideTitle]
 # Bucla For cu un pas

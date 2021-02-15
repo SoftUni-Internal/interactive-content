@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-While-Loop-While-Or-For-Loop
+// sectionId: "Javascript-Programming-Basics-While-Loop-While-Or-For-Loop"
 
 [slide hideTitle]
 # Bucla While sau Bucla For?

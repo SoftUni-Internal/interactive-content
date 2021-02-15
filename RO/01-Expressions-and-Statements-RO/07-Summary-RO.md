@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Summary
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Summary"
 
 [slide hideTitle]
 # Recapitulare

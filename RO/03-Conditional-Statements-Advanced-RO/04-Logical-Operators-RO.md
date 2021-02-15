@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Logical-Operators
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Logical-Operators"
 
 # Operatori logici
 

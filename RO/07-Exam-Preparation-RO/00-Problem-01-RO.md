@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-01
+// sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-01"
 
 [slide1 hideTitle]
 # Problem : Calculator for TV series

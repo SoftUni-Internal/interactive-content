@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Complex-Loops
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Complex-Loops"
 
 [slide hideTitle]
 # Bucle complexe

@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Real-Life-Example
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Real-Life-Example"
 
 [slide hideTitle]
 

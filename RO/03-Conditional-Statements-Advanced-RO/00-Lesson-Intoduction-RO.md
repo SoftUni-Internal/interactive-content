@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Lesson-Introduction
+// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Advanced-Lesson-Introduction"
 
 # Lecție introductivă
 

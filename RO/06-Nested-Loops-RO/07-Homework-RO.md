@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Homework
+// sectionId: "Javascript-Programming-Basics-Nested-Loops-Homework"
 
 # Temă pentru acasă
 

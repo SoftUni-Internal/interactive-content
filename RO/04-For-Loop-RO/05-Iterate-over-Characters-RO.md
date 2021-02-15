@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-For-Loop-Iterate-Over-Characters
+// sectionId: "Javascript-Programming-Basics-For-Loop-Iterate-Over-Characters"
 
 [slide hideTitle]
 # Iterația peste caractere

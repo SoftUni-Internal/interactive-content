@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Variables
+// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Variables"
 
 # Variabilele și stocarea datelor
 

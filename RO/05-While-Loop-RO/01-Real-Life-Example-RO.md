@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-While-Loop-Real-Life-Example
+// sectionId: "Javascript-Programming-Basics-While-Loop-Real-Life-Example"
 
 [slide hideTitle]
 

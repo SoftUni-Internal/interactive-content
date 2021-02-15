@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-For-Loop-Homework
+// sectionId: "Javascript-Programming-Basics-For-Loop-Homework"
 
 # Temă de acasă
 

@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-While-Loop-The-Break-Operator
+// sectionId: "Javascript-Programming-Basics-While-Loop-The-Break-Operator"
 
 [slide hideTitle]
 # Operatorul Break

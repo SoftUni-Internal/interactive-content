@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-While-Loop-Lesson-Introduction
+// sectionId: "Javascript-Programming-Basics-While-Loop-Lesson-Introduction"
 
 # Lecție introductivă
 
