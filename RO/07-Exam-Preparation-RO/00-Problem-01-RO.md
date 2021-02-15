@@ -1,6 +1,6 @@
 // sectionId: "Javascript-Programming-Basics-Exam-Preparation-Problem-01"
 
-[slide1 hideTitle]
+[slide hideTitle]
 # Problem : Calculator for TV series
 
 [vimeo-video]
