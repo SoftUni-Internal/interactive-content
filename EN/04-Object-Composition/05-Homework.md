@@ -621,15 +621,10 @@ console.log(scorcher.mana);
 **Output**
 
 Scorcher cast fireball
-
 Scorcher cast thunder
-
 Scorcher cast light
-
 Scorcher 2 slashes at the foe\!
-
 99
-
 97
 
 [/task-description]
@@ -673,7 +668,6 @@ yes
 [/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
@@ -710,50 +704,47 @@ Once the water is administered, change the dizziness property to **false**.
 Workers who do not have dizziness should not be modified in any way. Return them as they are.
 
 
-# Example 1
-**Input**
-
-`{ weight: 80,
+# Examples 
+| **Input** | **Output** |
+| --- | --- |
+|`{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true }`
-
-**Output**
-
-`{ weight: 80,
+  dizziness: true }`| \{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
-  dizziness: false }`
+  dizziness: false \}|
 
-# Example 2
-**Input**
 
-`{ weight: 120,
+| **Input** | **Output** |
+| --- | --- |
+|`{ weight: 80,
+  experience: 1,
+  levelOfHydrated: 0,
+  dizziness: true }`| \{ weight: 80,
+  experience: 1,
+  levelOfHydrated: 8,
+  dizziness: false \}|
+
+| **Input** | **Output** |
+| --- | --- |
+|`{ weight: 120,
   experience: 20,
   levelOfHydrated: 200,
-  dizziness: true }`
-
-**Output**
-
-`{ weight: 120,
+  dizziness: true }`| \{ weight: 120,
   experience: 20,
   levelOfHydrated: 440,
-  dizziness: false }`
+  dizziness: false \}|
 
-# Example 3
-**Input**
-
-`{ weight: 95,
+| **Input** | **Output** |
+| --- | --- |
+|`{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }`
-
-**Output**
-
-`{ weight: 95,
+  dizziness: false }`| \{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false }`
+  dizziness: false }\|
 
 [/task-description]
 [code-io /]
