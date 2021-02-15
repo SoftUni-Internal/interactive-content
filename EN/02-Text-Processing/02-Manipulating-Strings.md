@@ -43,9 +43,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-- `substring(int startIndex, int endIndex)` - Returns **new String** containing the substring of 
-
-the given string from specified **startIndex** (inclusive) to **endIndex** (exclusive)
+- `substring(int startIndex, int endIndex)` - Returns a **new String** starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
 
 ```java live
 String fullName = "John Doe";
