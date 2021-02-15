@@ -634,6 +634,23 @@ Scorcher 2 slashes at the foe\!
 [tests]
 [test]
 [input]
+let create = result();
+const scorcher2 = create.fighter("Scorcher 2");
+scorcher2.fight();
+let act = scorcher2.stamina;
+let exp = 99;
+assert.equal(act,exp,"2");
+
+let act1 = scorcher2.name;
+let exp1 = "Scorcher 2"
+assert.equal(act1,exp1);
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
 let create \= result\(\)\;
 const scorcher \= create.mage\(\"Scorcher\"\)\;
 scorcher\.cast\(\"fireball\"\)
@@ -645,23 +662,6 @@ let exp4 \= 97\;
 assert\.equal\(act4\,exp4\,\"4\"\)\;
 let act1 \= scorcher\.health\;
 assert\.equal\(100,act1\)\;
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let create = result();
-const scorcher2 = create.fighter("Scorcher 2");
-scorcher2.fight();
-let act = scorcher2.stamina;
-let exp = 99;
-assert.equal(act,exp,"2");
-
-let act1 = scorcher2.name;
-let exp1 = "Scorcher 2"
-assert.equal(act1,exp1);
 [/input]
 [output]
 yes
@@ -706,37 +706,42 @@ Workers who do not have dizziness should not be modified in any way. Return them
 
 ## Examples
 
-| **Input** | **Output** |
-| --- | --- |
-|\{ weight: 80,
+**Input**
+`{ weight: 80,
   experience: 1,
   levelOfHydrated: 0,
-  dizziness: true \}|\{ weight: 80,
+  dizziness: true }`
+
+**Output**
+`{ weight: 80,
   experience: 1,
   levelOfHydrated: 8,
-  dizziness: false \}|
+  dizziness: false }`
 
-| **Input** | **Output** |
-| --- | --- |
-|\{ weight: 120,
+**Input**
+`{ weight: 120,
   experience: 20,
   levelOfHydrated: 200,
-  dizziness: true \}|\{ weight: 120,
+  dizziness: true }`
+  
+**Output** 
+`{ weight: 120,
   experience: 20,
   levelOfHydrated: 440,
-  dizziness: false \}|
+  dizziness: false }`
 
+**Input**  
 
-| **Input** | **Output** |
-| --- | --- |
-|\{ weight: 95,
+`{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false \}|\{ weight: 95,
+  dizziness: false }`
+
+**Output** 
+`{ weight: 95,
   experience: 3,
   levelOfHydrated: 0,
-  dizziness: false \}|
-
+  dizziness: false }`
 
 
 [/task-description]
