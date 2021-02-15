@@ -256,7 +256,7 @@ The input will be in a form of an array of strings - each string represents a co
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 let output = "";
 
@@ -329,8 +329,7 @@ yes
 
 [slide hideTitle]
 # Problem: Object Factory
-[code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function solve(input){
   // Write your code here
@@ -350,12 +349,12 @@ You should print the newly created object.
 # Example 1
 | **Input** | **Output** |
 | --- | --- |
-|`[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]`| `{ canMove: true, doors: 4, capacity: 5 }` |
+|`'[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]'`| `{ canMove: true, doors: 4, capacity: 5 }` |
 
 # Example 2
 | **Input** | **Output** |
 | --- | --- |
-|`[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]`| `{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true }` |
+|`'[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]'`| `{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true }` |
 
 [/task-description]
 [code-io /]
@@ -363,7 +362,7 @@ You should print the newly created object.
 [test]
 [input]
 let composer = result;
-let actual = composer(`\[\{"prop1": 1\},\{"prop2":2\},\{"prop3":3\}\]`);
+let actual = composer(\`\[\{"prop1": 1\},\{"prop2":2\},\{"prop3":3\}\]\`);
 let expected = \{prop1:1,prop2:2,prop3:3\};
 assert.deepEqual(actual,expected);
 [/input]
