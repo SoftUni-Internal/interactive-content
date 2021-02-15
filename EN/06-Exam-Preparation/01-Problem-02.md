@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/07.JS-Advanced-Exam-Preparation/EN/Problem-2-Press-House-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Press House" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Press House" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function pressHouse(){
   // Write your code here
