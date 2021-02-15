@@ -1,17 +1,17 @@
 # Object Introduction
 
 [slide hideTitle]
-# What Are Objects ?
+# What Are Objects?
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-3-4-What-are-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Objects in JavaScript, as in **many other programming languages**, can be compared to objects in real life.
+**Objects** in **JavaScript**, as in **many other programming languages**, can be compared to objects in real life.
 
-The concept of objects in JavaScript can be understood with real life, tangible objects.
+The concept of objects in JavaScript can be understood using real life objects as an example.
 
-An object consists of several variables and functions called properties and methods.
+An object consists of several **variables** and **functions** called **properties** and **methods**.
 
-In JavaScript, at run time you can add and remove properties from any object.
+In JavaScript, at runtime, you can **add** and **remove properties** from any object.
 
 Example: 
 
@@ -20,11 +20,11 @@ let person = { name:'Peter', age: 20 };
 console.log(person.name);
 ```
 
-In the example above, we initialize an object with the name `person`.
+In the example above, we **initialize** an object with the name `person`.
 
-This object has two properties `name` and `age`.
+This object has **two properties** - `name` and `age`.
 
-We can access the property value with the name of the class `.` property name.
+We can **access** a property's value with the class name, followed by a period `.` and the property name.
 
 [/slide]
 
