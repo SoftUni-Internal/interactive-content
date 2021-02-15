@@ -827,7 +827,7 @@ yes
 [code-task title="Problem: Car Factory" taskId="js-advanced-Object-Composition-Car-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input){
+function carFactory(input){
   // Write your code here
 }
 ```
@@ -841,7 +841,7 @@ The client will place an order in the form of an object describing the car.
 
 You need to determine which parts to use to fulfill the client’s order. 
 
-You have the following parts in storage\:
+You have the following parts in storage:
 
 An engine has power and volume. Power is in horsepower and volume is in cubic centimeters.
 
@@ -865,50 +865,50 @@ The wheels will be represented by an array of 4 numbers, each number represents 
 
 The size can only be an odd number. Round down any requirements you receive to the nearest odd number. 
 
-You will receive an object as an argument to your function. The format will be as follows\:
+You will receive an object as an argument to your function. 
 
-`{ model: <model name>,
+The format will be as follows:
+
+```js
+{ model: <model name>,
   power: <minimum power>,
   color: <color>,
   carriage: <carriage type>,
-  wheelsize: <size> }`
+  wheelsize: <size> }
+```
 
 
-# Example 1
-**Input**
+# Examples
 
-`{ model: 'VW Golf II',
+| **Input** | **Output** |
+| --- | --- |
+|`{ model: 'VW Golf II',
   power: 90,
   color: 'blue',
   carriage: 'hatchback',
-  wheelsize: 14 }`
+  wheelsize: 14 }`| \{ model: 'VW Golf II',
+  engine: \{ power: 90,
+            volume: 1800 \},
+  carriage: \{ type: 'hatchback',
+              color: 'blue' \},
+  wheels: \[13, 13, 13, 13\] \}|
 
-**Output**
 
-`{ model: 'VW Golf II',
-  engine: { power: 90,
-            volume: 1800 },
-  carriage: { type: 'hatchback',
-              color: 'blue' },
-  wheels: [13, 13, 13, 13] }`
 
-# Example 2
-**Input**
-
+| **Input** | **Output** |
+| --- | --- |
+|
 `{ model: 'Opel Vectra',
   power: 110,
   color: 'grey',
   carriage: 'coupe',
-  wheelsize: 17 }`
+  wheelsize: 17 }`| \{ model: 'Opel Vectra',
+  engine: \{ power: 120,
+            volume: 2400 \},
+  carriage: \{ type: 'coupe',
+              color: 'grey' \},
+  wheels: \[17, 17, 17, 17\] \}|
 
-**Output**
-
-`{ model: 'Opel Vectra',
-  engine: { power: 120,
-            volume: 2400 },
-  carriage: { type: 'coupe',
-              color: 'grey' },
-  wheels: [17, 17, 17, 17] }`
 
 [/task-description]
 [code-io /]
