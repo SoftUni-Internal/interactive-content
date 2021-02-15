@@ -24,7 +24,7 @@ By uploading content to the Internet and linking it to pages created by other pe
 HTML uses "**markup**" to annotate text, images, and other content for display in a Web browser. 
 [/slide]
 
-[slide hide]
+[slide hideTitle]
 # HTML Tags
 
 [vimeo-video]
