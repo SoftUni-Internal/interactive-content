@@ -23,24 +23,19 @@ The input will come ina form of an **array of arrays** - every nested array will
 The output must be an array of **rectangles** objects sorted by their **area** in **descending** order as a first criteria and by their **width** in **descending** order as a second criteria.  
 
 # Examples
-**Input**
+|**Input**|**Output**|
+|---|---|
+|`[[10,5], [5,12]]`|`[{width:5, height:12, area:function(), compareTo:function(other)},
+{width:10, height:5, area:funciton(),compareTo:function(other)}]`| 
 
-`[[10,5],[5,12]]` 
 
-**Output**
 
-`[{width:5, height:12, area:function(), compareTo:function(other)},
-{width:10, height:5, area:funciton(),compareTo:function(other)}]`
-
-**Input**
-
-`[[10,5], [3,20], [5,12]]`
-
-**Output**
-
-`[{width:5, height:12, area:function(), compareTo:function(other)},
+|**Input**|**Output**|
+|---|---|
+|`[[10,5], [3,20], [5,12]]`|`[{width:5, height:12, area:function(), compareTo:function(other)},
 {width:3, height:20, area:funciton(),compareTo:function(other)},
-{width:10, height:5, area:funciton(),compareTo:function(other)}]]`
+{width:10, height:5, area:funciton(),compareTo:function(other)}]]`|
+
 
 [/task-description]
 [code-io /]
@@ -247,7 +242,7 @@ The commands supported should be the following:
 The input will be in a form of an array of strings - each string represents a command to be executed from the command execution engine.
  
 
-# Examples
+# Example
 | **Input** | **Output** |
 | --- | --- |
 |`['add hello', 'add again', 'remove hello', 'add again', 'print']`| again\, again |
@@ -346,12 +341,12 @@ You will receive an array and your goal is to create a new object with all the u
 You should print the newly created object.
  
 
-# Example 1
+# Examples
 | **Input** | **Output** |
 | --- | --- |
 |`'[{"canMove": true},{"canMove":true, "doors": 4},{"capacity": 5}]'`| `{ canMove: true, doors: 4, capacity: 5 }` |
 
-# Example 2
+
 | **Input** | **Output** |
 | --- | --- |
 |`'[{"canFly": true},{"canMove":true, "doors": 4},{"capacity": 255},{"canFly":true, "canLand": true}]'`| `{ canFly: true, canMove: true, doors: 4, capacity: 255, canLand: true }` |
@@ -399,10 +394,9 @@ yes
 
 [slide hideTitle]
 # Problem: Cars
-[code-task title="Problem: Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function solve(input){
+function cars(input){
   // Write your code here
 }
 ```
@@ -425,20 +419,12 @@ You should support the following functionality:
  All commands will always be valid. There will be no nonexistent or incorrect input.
 
 # Example
-**Input**
+| **Input** | **Output** |
+| --- | --- |
+|`['create c1', 'create c2 inherit c1', 'set c1 color red', 'set c2 model new', 'print c1', 'print c2']`| color\:red |
+||model\:new\, color\:red|
 
-`['create c1',
-'create c2 inherit c1',
-'set c1 color red',
-'set c2 model new',
-'print c1',
-'print c2']`
 
-**Output**
-
-color\:red
-
-model\:new\, color\:red
 
 [/task-description]
 [code-io /]
