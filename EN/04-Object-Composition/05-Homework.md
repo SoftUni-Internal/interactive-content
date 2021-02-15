@@ -2,8 +2,7 @@
 
 [slide hideTitle]
 # Problem: Order Rectangles
-[code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="" requiresInput]
-[code-editor language=javascript]
+[code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function solve(input){
   // Write your code here
