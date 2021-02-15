@@ -224,7 +224,6 @@ yes
 ```
 function filterEmployees(data, criteria) {
     // Write your solution here
-    // Node.js, fix test when strategy is ready
 }
 ```
 [/code-editor]
@@ -295,7 +294,7 @@ For more information check the examples.
 1. Kizzee Jost - kjost1@forbes.com
 ```
 
-**Sample Input\:**
+**Sample Input**
 
 ```
 '[{
@@ -326,7 +325,7 @@ For more information check the examples.
  'last_name-Johnson'
 ```
 
-**Output\:**
+**Output**
 
 ```
 0. Kaylee Johnson - k0@cnn.com
@@ -388,7 +387,7 @@ filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","em
 [/test]
 [test]
 [input]
-filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'gender-Female',
+filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","email": "k0@cnn.com","gender": "Female"\}, \{"id": "2","first_name": "Kizzee","last_name": "Johnson","email": "null","gender": "Female"\}, \{"id": "3","first_name": "Evanne","last_name": "Maldin","email": "null","gender": "Male"\}, \{"id": "4","first_name": "Evanne","last_name": "Johnson","email": "ev2@hostgator.com","gender": "Male"\}\]', 'gender-Female')
 [/input]
 [output]
 0\. Kaylee Johnson - k0@cnn.com
@@ -802,11 +801,11 @@ Look at the sample output for more information.
 
 ## Example
 
-**Input:**
+**Input**
 
 `“Peter”, 29, 75, 182`
 
-**Output:**
+**Output**
 
 ```
 { name: 'Peter',
@@ -819,11 +818,11 @@ Look at the sample output for more information.
   status: 'normal' }
 ```
 
-**Input:**
+**Input**
 
 `“Honey Boo Boo”, 9, 57, 137`
 
-**Output:**
+**Output**
 
 ```
 { name: 'Honey Boo Boo', personalInfo: { age: 9, weight: 57, height: 137 }, BMI: 30, status: 'obese', recommendation: 'admission required' }
