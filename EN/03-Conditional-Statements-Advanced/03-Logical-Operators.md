@@ -6,10 +6,10 @@
 Let's take a look at how we can create more **complex logical conditions** in programming. 
 
 We can use:
-* logical **"AND"** (`&&`)
-* logical **"OR"** (`||`)
-* logical **negation** (`!`) 
-* **brackets** (`()`).
+* Logical **"AND"** (`&&`)
+* Logical **"OR"** (`||`)
+* Logical **negation** (`!`) 
+* **Brackets** (`()`)
 
 # Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of logical **"AND"**, logical **"OR"** and logical **"NOT"**:
@@ -74,11 +74,11 @@ System.out.println(result);
 ```
 
 The program will run in the **following** way: 
-- **It starts** the check form `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`. 
-- After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument. 
-- It gets to `c` and sees that the variable has a `false` value. 
-- After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is. 
-- That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`.
+- **It starts** the check form `a`, **reads** it and accepts that it has a `true` value, after which it **checks** `b`
+- After it has **accepted** that `a` and `b` return `true`, **it checks the next** argument
+- It gets to `c` and sees that the variable has a `false` value
+- After the program accepts that the argument `c` has a `false` value, it calculates the expression **before** `c`, **independent** of what the value of `d` is
+- That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
 # Example: Point in a Rectangle
 Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
@@ -100,10 +100,10 @@ The input data is read from the console and consists of 6 lines:
 
 ## Solution
 A point is internal for a given polygon, if the following four conditions are applied at the same time:
--  The point is placed to the right from the left side of the rectangle.
--  The point is placed to the left from the right side of the rectangle.
--  The point is placed downwards from the upper side of the rectangle.
--  The point is placed upwards from the down side of the rectangle.
+-  The point is placed to the right from the left side of the rectangle
+-  The point is placed to the left from the right side of the rectangle
+-  The point is placed downwards from the upper side of the rectangle
+-  The point is placed upwards from the down side of the rectangle
 
 ```java live
 double x1 = 2;

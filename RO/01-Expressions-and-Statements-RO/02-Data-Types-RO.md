@@ -36,26 +36,26 @@ In Java pentru convențiile de denumire a variabilelor sunt utilizate ***"camel-
 Există alte convenții de denumire care sunt folosite în diferite limbi, cum ar fi cazul pascal, cazul de șarpe.
 
 **Camel case** combină cuvintele prin:
-* scrierea cu majuscule a tuturor cuvintelor care urmează primului cuvânt
-* eliminarea spațiului:
+* Scrierea cu majuscule a tuturor cuvintelor care urmează primului cuvânt
+* Eliminarea spațiului
 ```java
 int userLoginCount;
 ```
 
-** Cazul Pascal ** combină cuvintele prin:
-* scrierea cu majuscule a fiecărui cuvânt împreună cu primul
-* eliminarea spațiului:
+**Cazul Pascal** combină cuvintele prin:
+* Scrierea cu majuscule a fiecărui cuvânt împreună cu primul
+* Eliminarea spațiului:
 ```java
 int UserLoginCount;
 ```
 
 **Snake-case** este o altă convenție de denumire, care separă cuvintele cu:
-* un caracter de subliniere (_)
-* fara spatii
-* litera inițială a fiecărui element de obicei cu litere mici în compus
-* prima literă mai mare sau mică
+* Un caracter de subliniere (_)
+* Fara spatii
+* Litera inițială a fiecărui element de obicei cu litere mici în compus
+* Prima literă mai mare sau mică
 ```java
 int users_count;
-string first_name;
+String first_name;
 ```
 [/slide]

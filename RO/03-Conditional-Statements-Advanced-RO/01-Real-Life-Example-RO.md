@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Exemplu de viață reală: Piata 
-O piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii
+O piață oferă prețuri diferite pentru anumite produse în funcție de ziua săptămânii.
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
@@ -12,7 +12,7 @@ O piață oferă prețuri diferite pentru anumite produse în funcție de ziua s
 |Măr|1.30|1.60|
 |Kiwi|2.20|3.00|
 
-Vrem să calculăm prețul pentru anumite produse și și o anumită zi
+Vrem să calculăm prețul pentru anumite produse și și o anumită zi.
 
 # Pseudocode
 

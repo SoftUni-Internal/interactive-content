@@ -216,7 +216,7 @@ Write a program that prints the even powers of 2:
 
 * Receives a number `n`
 
-* Prints the even powers of 2 up to `2n`:
+* Prints the even powers of 2 up to `2n`
 
 # Example
 | **Input** | **Output** |

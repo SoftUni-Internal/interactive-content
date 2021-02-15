@@ -1,11 +1,11 @@
-# Real-Life Example
+# Real Life Example
 
 [slide hideTitle]
 # Real Life Example: Marketplace
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/java-basics-conditional-statements-advanced-6-7-8-real-life-example-marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A market offers different prices for certain products based on the day of the week
+A market offers different prices for certain products based on the day of the week.
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
@@ -15,7 +15,7 @@ A market offers different prices for certain products based on the day of the we
 |Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
 
-We want to calculate the price for certain product and day
+We want to calculate the price for certain product and day.
 
 # Pseudocode
 

@@ -38,7 +38,7 @@ while (true) {
 
 - Nested loops and how we use them
 
-  * Loops inside loops
+  * loops inside loops
 
 - Combining nested **for** and **while** loops
 

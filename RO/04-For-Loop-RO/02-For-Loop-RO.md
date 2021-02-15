@@ -31,10 +31,10 @@ for (initialization; condition; update) {
 }
 ```
 Se compune din:
-* o **parte de inițializare** pentru contor (în modelul `int i = 0`)
-* o condiție **booleană** (`i < 10`) 
-* o expresie pentru **actualizarea** contorului (``i += 1``)
-* corpul buclei.
+* O **parte de inițializare** pentru contor (în modelul `int i = 0`)
+* O condiție **booleană** (`i < 10`) 
+* O expresie pentru **actualizarea** contorului (``i += 1``)
+* Corpul buclei
 
 În majoritatea cazurilor, o buclă `for` se execută între `1` și `n` ori (de exemplu de la 1 la 10).
 

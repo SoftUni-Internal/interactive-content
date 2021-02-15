@@ -18,7 +18,7 @@ while (condition) {
 În fiecare iterație a buclei exterioare, se execută **întreaga** buclă interioară. 
 
 Acest lucru are loc:
-* Când buclele imbricate încep să se execute, **bucla exterioară începe** mai întâi: 
+* Când buclele imbricate încep să se execute, **bucla exterioară începe** mai întâi 
   * **variabila** de control este inițializată și după o verificare de terminare a buclei, codul din interiorul său este executat
 * După aceea, **se execută bucla interioară**: 
   * poziția de start a variabilelor de control este inițializată, are loc o verificare pentru terminarea buclei și se execută codul din conținutul său.

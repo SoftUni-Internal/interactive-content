@@ -4,8 +4,8 @@ Operatorul unar de incrementare `++` își mărește operandul cu 1, în timp ce
 
 Operatorii de incrementare și decrementare sunt suportați în două forme:
 
-* operatorul de incrementare /decrementare  postfix, `x++` / `x--`
-* operatorul de incrementare /decrementare  a prefixului, `++x`/`--x`
+* Operatorul de incrementare /decrementare  postfix, `x++` / `x--`
+* Operatorul de incrementare /decrementare  a prefixului, `++x`/`--x`
 
 ## Operator de incrementare 
 

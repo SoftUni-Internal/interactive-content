@@ -29,9 +29,9 @@ Totul se repetă mereu și mereu **până când la un moment dat expresia condi�
 Scrieți un program care imprimă toate **numerele ≤ n** al seriei: **1, 3, 7, 15, 31, …,** dacă fiecare număr următor = **previous number * 2 + 1**.
 
 Iată cum rezolvăm problema:
-- Creăm o variabilă num pentru numărul curent căruia îi asignăm inițial **value of 1**.
-- Ca și condiție de buclă, punem **the current number <= n**.
-- În **corpul buclei**: imprimăm valoarea unui număr curent și creștem numărul curent folosind formula din enunțul problemei. 
+- Creăm o variabilă num pentru numărul curent căruia îi asignăm inițial **value of 1**
+- Ca și condiție de buclă, punem **the current number <= n**
+- În **corpul buclei**: imprimăm valoarea unui număr curent și creștem numărul curent folosind formula din enunțul problemei
 
 Aici este o probă de implementare a acestei idei:
 ```java live

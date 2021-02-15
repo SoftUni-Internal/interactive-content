@@ -50,14 +50,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-# Descriere
-Scrieți un program care:
+# Description
+Write a program that:
 
-* Citește **înălțimea** unui triunghi din consolă
-* Imprimă un **triunghi din stele**
-# Exemplu
+* Read **the height** of a triangle in the console
+* Print a **star triangle**
+# Example
 
-| **Date de intrare** |**Date de ieșire**|
+| **Input** |**Output**|
 | ----- | ----- |
 | 5 | \* |
 || \*\* |

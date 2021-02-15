@@ -5,7 +5,7 @@ Construcția `if` poate conține, de asemenea, o clauză `else` pentru a da o ac
 
 Construită astfel, **declarația condițională** se numește `if-else` și comportamentul său este după cum urmează:
 * În cazul în care rezultatul condiției este pozitiv (`true`) - vom efectua unele acțiuni
-* când este negativ („false”) - alt ceva.
+* Când este negativ („false”) - alt ceva
 
 [image assetsSrc="02-usecase-if-else-statement.png" /]
 

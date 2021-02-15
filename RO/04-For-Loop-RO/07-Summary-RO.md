@@ -32,7 +32,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 ```
 
 
-În lecția următoare vom învăța:
+## În lecția următoare vom învăța:
 
 - Ce sunt buclele **While** și modul în care le folosim
 

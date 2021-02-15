@@ -17,10 +17,10 @@ if (condition1) {
 
 # Exemplu: titluri personale
 În funcție de **vârstă**(număr zecimal și **sex**(**m**/**f**), tipăriți un titlu personal:
-- "Mr." - un bărbat (sex "m") - 16 ani sau mai mult.
-- "Master" - un băiat (sex "m") sub 16 ani.
-- "Ms." - o femeie (sex "f") - 16 ani sau mai mult.
-- "Miss" - o fată (sex "f") sub 16 ani.
+- "Mr." - un bărbat (sex "m") - 16 ani sau mai mult
+- "Master" - un băiat (sex "m") sub 16 ani
+- "Ms." - o femeie (sex "f") - 16 ani sau mai mult
+- "Miss" - o fată (sex "f") sub 16 ani
 
 # Soluție: Titluri de persoană
 Ar trebui să observăm că **rezultatul**  programului **depinde de câteva lucruri**.

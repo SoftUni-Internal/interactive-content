@@ -3,10 +3,10 @@
 Să aruncăm o privire la modul în care putem crea mai multe **condiții logice complexe** în programare.
 
 Putem folosi:
-* operatorul logic **"ȘI"** (`&&`)
-* operatorul logic **"SAU"** (`||`)
-* operatorul  logic **negare** (`!`) 
-* **paranteze** (`()`).
+* Operatorul logic **"ȘI"** (`&&`)
+* Operatorul logic **"SAU"** (`||`)
+* Operatorul  logic **negare** (`!`) 
+* **Paranteze** (`()`).
 
 # Operatorii logici "ȘI", "SAU" și "NU"
 Acesta este un scurt exemplu care demonstrează puterea logicii **"ȘI"**, logică **"SAU"** și logică **"NU"**:
@@ -69,11 +69,11 @@ System.out.println(result);
 ```
 
 Programul va rula în modul **următor**:
-- **Începe** formularul de verificare `a`, **îl citește** și acceptă că are o valoare `adevărată`, după care **verifică** `b`.
-- După ce **a acceptat** că `a` și `b` se schimba in `adevărat`,**verifică următorul** argument.
-- Se ajunge la `c` și vede că variabila are o valoare `falsă`.
-- După ce programul acceptă că argumentul `c` are o valoare `falsă`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`.
-- De aceea evaluarea lui `d` este **sarită**și întreaga expresie este calculată ca `falsă`.
+- **Începe** formularul de verificare `a`, **îl citește** și acceptă că are o valoare `adevărată`, după care **verifică** `b`
+- După ce **a acceptat** că `a` și `b` se schimba in `adevărat`,**verifică următorul** argument
+- Se ajunge la `c` și vede că variabila are o valoare `falsă`
+- După ce programul acceptă că argumentul `c` are o valoare `falsă`, acesta calculează expresia **înainte de** `c`, **independent** de ce este valoarea lui `d`
+- De aceea evaluarea lui `d` este **sarită**și întreaga expresie este calculată ca `falsă`
 
 # Exemplu: Punct într-un dreptunghi
 Verifică dacă **`punctul {x, y}`** este plasat **în interiorul dreptunghiului {x1, y1} - {x2, y2}**.
@@ -95,10 +95,10 @@ Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 
 ## Soluție
 Un punct este intern pentru un poligon dat, dacă următoarele patru condiții sunt aplicate în același timp:
-- Punctul este plasat în dreapta din partea stângă a dreptunghiului.
-- Punctul este plasat în stânga din partea dreaptă a dreptunghiului.
-- Punctul este plasat în jos din partea superioară a dreptunghiului.
-- Punctul este plasat în sus din partea de jos a dreptunghiului.
+- Punctul este plasat în dreapta din partea stângă a dreptunghiului
+- Punctul este plasat în stânga din partea dreaptă a dreptunghiului
+- Punctul este plasat în jos din partea superioară a dreptunghiului
+- Punctul este plasat în sus din partea de jos a dreptunghiului
 
 ```java live
 double x1 = 2;

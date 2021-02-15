@@ -15,7 +15,7 @@
 
 - if, if-else conditions
 
-**3. Series of checks**
+**3. Series of Checks**
 
 - if-else-if-else-if...
 

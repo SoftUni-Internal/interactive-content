@@ -10,10 +10,10 @@ Aceasta  este utilizată pentru **alegerea între o listă de posibilități**.
 
 Instrucțiunea compară o valoare dată cu constante definite și, în funcție de rezultat, ia o măsură.
 
-- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** `switch` și acesta se numește **"selector"**.
--  **Tipul trebuie să fie comparabil** (numere, șiruri).
-- **Consecutiv**, programul începe **să compare** fiecare **valoare** care este **găsită** după **etichetele** `case`.
-- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`.
+- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** `switch` și acesta se numește **"selector"**
+-  **Tipul trebuie să fie comparabil** (numere, șiruri)
+- **Consecutiv**, programul începe **să compare** fiecare **valoare** care este **găsită** după **etichetele** `case`
+- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
 
 În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sarit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
 
@@ -77,7 +77,7 @@ switch (choice) {
 
 [slide hideTitle]
 # Etichete multiple
-În**Java**avem posibilitatea de a utiliza etichete **multiple** `case` în construcția 'switch-case', atunci când trebuie să execute **același cod**.
+În **Java** avem posibilitatea de a utiliza etichete **multiple** `case` în construcția 'switch-case', atunci când trebuie să execute **același cod**.
 
 În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** cod, deoarece **după** eticheta respectivă `case` **nu există cod** de executat și un operator `break`. 
 
@@ -99,9 +99,9 @@ switch (selector) {
 ```
 # Exemplu: Tipul de animal
 Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
--  dog -> **mammal**
--  crocodile, tortoise, snake -> **reptile**
--  others -> **unknown**
+-  Dog -> **mammal**
+-  Crocodile, tortoise, snake -> **reptile**
+-  Others -> **unknown**
 
 Putem rezolva sarcina cu condiții de `switch-case` cu mai multe etichete în felul următor:
 ```java

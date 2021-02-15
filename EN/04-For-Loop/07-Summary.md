@@ -7,9 +7,9 @@
 
 - For loops
   
-  * Overview of what For loops contains
+  * overview of what for loops contains
 
-  * For loops repeat a certain block of code
+  * for loops repeat a certain block of code
 
 ```java live
 for (int i = 1; i <= 10; i++) {

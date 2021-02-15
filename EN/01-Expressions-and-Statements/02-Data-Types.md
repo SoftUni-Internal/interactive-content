@@ -46,7 +46,7 @@ int userLoginCount;
 
 **Pascal case** combines words by:
 * Capitalizing each word along with the first one
-* Removing the space:
+* Removing the space
 ```java
 int UserLoginCount;
 ```
@@ -55,7 +55,7 @@ int UserLoginCount;
 * One underscore character (_)
 * No spaces
 * Each element's initial letter usually lowercased within the compound
-* The first letter either upper or lowercase:
+* The first letter either upper or lowercase
 ```java
 int users_count;
 string first_name;

@@ -28,7 +28,7 @@ while (true) {
 
 - Buclele infinite
 
-In lecția următoare vom învăța:
+## In lecția următoare vom învăța:
 
 - Buclele complexe cu pași speciali
 
