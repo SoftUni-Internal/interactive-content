@@ -21,12 +21,12 @@
 
 **2. Objects**
 
-- What are Objects
+- What Objects are
 
 - Object Values
 
 - **3. Built-in Classes in Java**
 
-- Overview of some Java Built-in classes
+- Overview of some Java's Built-in classes
 
 [/slide]

@@ -31,11 +31,11 @@ You can find many objects around us like:
 
 An object has:
 
-- **state** - represented by **fields**
+- **state** - Represented by **fields**
 
-- **behavior** - represented by **methods**, which are used for object interaction 
+- **behavior** - Represented by **methods**, which are used for object interaction 
 
-- **identity** - gives a **unique name** to an object
+- **identity** - Gives a **unique name** to an object
 
 In real life, dogs have a **breed** state and **barking** behavior.
 

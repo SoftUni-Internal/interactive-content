@@ -261,10 +261,10 @@ BigInteger class methods are **non-static**.
 This is how to declare a BigInteger: 
 
 - `BigInteger num = BigInteger.valueOf(1234567890);` 
-  - The number `1234567890` is a `long` variable (64 bits)
+  - the number `1234567890` is a `long` variable (64 bits)
 
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - The number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
+  - the number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
 
 The `BigInteger` **fields** are:
 

@@ -7,9 +7,9 @@ The **obligatory** components are:
 
 - The `class` keyword
 
-- A name for the class
+- A **name** for the class
 
-- The body of the class, between **curly brackets**
+- The **body** of the class, between **curly brackets**
 
 Not obligatory, but **credential** components are: 
 
@@ -27,7 +27,7 @@ Each **class**, **field**, **constructor** or **method** is initialized with an 
 
 There is a possibility to generate **automatically** via IntelliJ IDEA **constructors**, **getters**, **setters**, and other most used methods. 
 
-It is possible by `Right-click + Generate`. 
+To do so, just use `Right-click + Generate`. 
 
 The short command depends on the operation system of the computer: 
 

@@ -13,7 +13,7 @@ It builds the specification of a given type object from the real-world.
 [/slide]
 
 [slide hideTitle]
-# Real Life Example
+# Real-Life Example
 
 All entities with similar characteristics can be arranged in categories.
 

@@ -3,11 +3,11 @@
 
 ## In this lesson you learned:
 
-- Classes define templates for objects
-    - Fields
-    - Constructors
-    - Properties
-    - Methods
+- Classes define the following templates for objects
+    - fields
+    - constructors
+    - properties
+    - methods
 
 - Objects hold a set of named values
 
@@ -35,9 +35,9 @@ class Dice {
 - Lambda Expressions
 
 - Stream API
-    - Filtering
-    - Mapping
-    - Ordering
+    - filtering
+    - mapping
+    - ordering
     
 [/slide] 
 
