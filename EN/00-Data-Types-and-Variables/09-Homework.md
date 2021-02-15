@@ -1422,7 +1422,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Test Adapter Function Here
+Test Adapter Function Here with this code input:
+
+solve(9, 100, 1.1)
 
 [/task-description]
 [tests]
