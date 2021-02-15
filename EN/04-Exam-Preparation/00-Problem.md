@@ -11,22 +11,20 @@
 [task-description]
 ## Description
 
-Write a password reset program that performs a series of commands upon a predefined string. 
+Write a password reset program that performs a series of commands on a predefined string. 
 
-First, you will receive a string and afterwards, until the command "**Done**" is given, you will be receiving strings with commands split by a single space. 
+First, you will receive a string. After that until the command "**Done**" is given, you will be receiving strings with commands split by a single space. 
 
 The commands will be the following:
 
 - **TakeOdd**
-  * Takes only the characters at **odd indices** and **concatenates** them together to
-obtain the **new raw password** and then **prints** it.
+  * Takes only the characters at the **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
 - Cut {index} {length}
-  * Gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console.
-  * The given index and length will **always be valid**.
+  * Gets the substring with the **given length**, starting from the **given index** from the password and removes the first occurrence of it, then prints the password to the console
+  * The given index and length will **always be valid**
 - Substitute {substring} {substitute}
-  * If the raw password contains the given substring, replaces all of its 
-occurrences with the substitute text given and prints the result.
-  * If it doesn’t, prints "**Nothing to replace!**"
+  * If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
+  * If it does not, prints "**Nothing to replace!**"
 
   ## Input
 
@@ -64,7 +62,7 @@ occurrences with the substitute text given and prints the result.
 
 - icecream::hot::mer
 
-We cut a substring starting at index 15 with length 3, remove it from the raw password and print it. 
+We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
 
 Then, on a new line we print the resulting new raw password.
 
@@ -86,9 +84,6 @@ Then, on a new line we print the resulting new raw password.
 | Substitute ! *** | Nothing to replace! |
 | Substitute ? .!. | Your password is: programming\*\*\*is\*\*\*fun |
 | Done | | 
-
-
-
 
 
 [/task-description]
