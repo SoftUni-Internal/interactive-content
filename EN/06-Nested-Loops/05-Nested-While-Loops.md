@@ -35,6 +35,54 @@ while (i < n) {
 ```
 [/slide]
 
+[slide hideTitle]
+# Problem with Solution: Triangle of Stars with While
+[code-task title="Triangle of Stars with While" taskId="java-basics-nested-loops-Triangle-of-Stars-with-While" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+# Descriere
+Scrieți un program care:
+
+* Citește **înălțimea** unui triunghi din consolă
+* Imprimă un **triunghi din stele**
+# Exemplu
+
+| **Date de intrare** |**Date de ieșire**|
+| ----- | ----- |
+| 5 | \* |
+|| \*\* |
+|| \*\*\* |
+|| \*\*\*\* |
+|| \*\*\*\*\* |
+
+[/task-description]
+[tests]
+[test]
+[input]
+4
+[/input]
+[output]
+\*
+\*\*
+\*\*\*
+\*\*\*\*
+[/output]
+[/test]
+[/tests]
+[code-io/]
+[/code-task]
+
+[/slide]
 
 
 [slide hideTitle]
