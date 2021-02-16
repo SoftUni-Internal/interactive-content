@@ -66,14 +66,14 @@ describe("Test group #2", function () {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Sum Of Numbers
+# Problem with Solution: Sum of Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="497187668/5cbd6f3899" default /]
 [stream language="RO" videoId="497187668/5cbd6f3899"  /]
 [/video-vimeo]
 
-[code-task title="Sum Of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
+[code-task title="Sum of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
 [code-editor language=javascript]
 

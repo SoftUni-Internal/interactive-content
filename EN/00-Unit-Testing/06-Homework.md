@@ -1,12 +1,14 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Even Or Odd
+# Problem: Even or Odd
 [code-task title="Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
 [code-editor language=javascript]
 ```
-
+describe('Even or odd', () => {
+   // Write your code here
+})
 ```
 [/code-editor]
 [task-description]
@@ -56,7 +58,7 @@ After we check the validation, it is time to check whether the function works co
 
 Write a test for each of the cases. 
 
-In the first test, we pass a string with an **even** length, and a second one where we pass a string with an **odd** length.
+In the first test, we pass a string with an **even** length and a second one where we pass a string with an **odd** length.
 
 ```js
 describe("Is Odd Or Even", function(){
@@ -178,8 +180,10 @@ Test Passed!
 [code-task title="Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
 [code-editor language=javascript]
-```js
-
+```
+describe('Char lookup', () => {
+  // Write your code here
+})
 ```
 [/code-editor]
 [task-description]
@@ -236,7 +240,7 @@ describe("Character Look Up", function(){
 
 If we take a closer look at the implementation, we see that the check uses `Number.isInteger()` instead of `typeof(index === number)` to check the index. 
 
-While `typeof` would protect us from getting passed an **index** that is a **non-number**, it will not protect us from being passed a **floating-point number**. 
+While `typeof` would protect us from getting past an **index** that is a **non-number**, it will not protect us from being passed a **floating-point number**. 
 
 The specification says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
 
@@ -418,12 +422,14 @@ Test Passed!
 [code-task title="Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 
-```js
-
+```
+describe('Math enforcer', function () {
+   // Write your code here
+})
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Your task is to test an object called **mathEnforcer**, which will have the following functionality
 
@@ -905,12 +911,14 @@ Test Passed!
 [code-task title="String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 
-```js
-
+```
+describe("String Builder", function(){
+   // Write your code here
+});
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the following "JavaScript" class.
 
@@ -1519,13 +1527,15 @@ Test Passed!
 [slide hideTitle]
 # Problem: Payment Package
 [code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
-[code-editor language=javascript]
-```js
 
+```js
+describe("Payment package", function(){
+
+});
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the following "JavaScript" class.
 
