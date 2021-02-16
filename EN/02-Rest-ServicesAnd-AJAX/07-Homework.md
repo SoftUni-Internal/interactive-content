@@ -70,27 +70,43 @@ The web host will respond with valid data to IDs 1287, 1308, 1327, and 2334.
 [tests]
 [test open]
 [input]
-let response = \{ "name": "St. Nedelya sq.", "buses": \{ "12": "6", "18": "7", "4": "13" \} \};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
+server.respondWith((request) => {
+    if (request.method == 'GET') {
+        let target = request.url.split('/');
+        target = target[target.length - 1].split('.')[0];
+        expect(target == '1308');
+        let response = `{ "name": "St. Nedelya sq.", "buses": { "12": "6", "18": "7", "4": "13" } }`;
+        request.respond(200, {"Content-Type": "application/json"}, response);
+    } else {
+        request.respond(404, {}, "");
+    }
+});
 
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
+server.respondImmediately = true;
+document.body.innerHTML = `<div id="stopInfo">
+    <div>
+        <label for="stopId">Stop ID: </label>
+        <input id="stopId" type="text">
+        <input id="submit" type="button" value="Check"></div>
+    <div id="result">
+        <div id="stopName"></div>
+        <ul id="buses"></ul>
+    </div>
+</div>`;
 
-document.body.innerHTML = \`\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>\`;
-
-\\$('\#stopId').val('1308');
+$('#stopId').val('1308');
 result();
 
-function testIt() \{
-expect(\\$('\#stopName').text()).to.contains("St. Nedelya sq.");
-    let list = \\$('\#buses').find('li');
-expect(list.text()).to.contains('Bus 4 arrives in 13 minutes');
-expect(list.text()).to.contains('Bus 12 arrives in 6 minutes');
-expect(list.text()).to.contains('Bus 18 arrives in 7 minutes');
-done();
-\}
+setTimeout(nextStep, 50);
 
-setTimeout(testIt, 100);
-fetchStub.restore();
+function nextStep() {
+    expect($('#stopName').text()).to.contains("St. Nedelya sq.");
+    let list = $('#buses').find('li');
+    expect(list.text()).to.contains('Bus 4 arrives in 13 minutes');
+    expect(list.text()).to.contains('Bus 12 arrives in 6 minutes');
+    expect(list.text()).to.contains('Bus 18 arrives in 7 minutes');
+    done();
+}
 [/input]
 [output]
 yes
