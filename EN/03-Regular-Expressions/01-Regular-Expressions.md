@@ -1,3 +1,37 @@
+# Regular Expressions
+
+[slide hideTitle]
+# What are Regular Expressions?
+
+The **abbreviation** for **regular expression** is **regex**.
+
+A **regular expression** defines a **search pattern** for **strings**.
+ 
+The search pattern can be anything from a **simple character**, a **fixed string**, or a complex expression containing special characters describing the pattern.
+
+Patterns are defined by special syntax:
+
+- `[0-9]+` - Matches non-empty sequence of digits
+
+- `[A-Z][a-z]*` - Matches a capital + small letters
+
+ 
+You can **play** with **regex live** at:
+
+- [regexr.com](regexr.com)
+
+- [regex101.com](regex101.com)
+
+[/slide]
+
+[slide hideTitle]
+
+# Regular Expression Patterns - Example
+
+TODO: Add video
+
+[/slide]
+
 [slide hideTitle]
 
 # Character Classes: Ranges
@@ -86,3 +120,4 @@ In the example above, the class `[abc]` matches any character that is either **a
 The example above matches the **entire string** with a length between **6** and **12** characters.
 
 [/slide]
+
