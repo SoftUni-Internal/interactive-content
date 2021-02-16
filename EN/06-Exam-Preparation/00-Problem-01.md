@@ -22,7 +22,7 @@ Use the `index.html` and `app.js` files to solve this problem.
 
 [image assetsSrc="exam-prep-picture1.jpg" /]
 
-# Your task
+## Your task
 
 Write the **missing JavaScript code** to make the Task Manager Functionality works as follows:
 
@@ -105,7 +105,7 @@ The buttons, including their parent `div` element, should be removed.
 </section>
 ```
 
-**Submit your solution in the body of the `solve()`` function.**
+**Submit your solution in the body of the `solve()` function.**
 
 [/task-description]
 [code-io /]
