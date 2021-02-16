@@ -105,16 +105,17 @@ Whenever you receive the command **print**, the output should be the **printed**
 
 | **Input** | **Output** |
 | --- | --- |
-| `let firstZeroTest = solution();` | loa | 
+| `let firstZeroTest = commandProcesso();` | loa | 
 |  |  |
 | `firstZeroTest.append('hello');` | |
 | `firstZeroTest.append('again');` | |
 | `firstZeroTest.removeStart(3);` | |
 | `firstZeroTest.removeEnd(4);` | |
+| `firstZeroTest.print();` | |
 
 | **Input** | **Output** |
 | --- | --- |
-| `let secondZeroTest = solution();` | 34 | 
+| `let secondZeroTest = commandProcesso();` | 34 | 
 |  |  |
 | `firstZeroTest.append('123');` | |
 | `firstZeroTest.append('45');` | |
@@ -128,12 +129,12 @@ Whenever you receive the command **print**, the output should be the **printed**
 [test]
 [input]
 // Acquire console
-let log = \[\];
-let oldcon = console\.log;
-console\.log = \(string\) \=\> log\.push\(string\);
+let log \= \[\];
+let oldcon \= console\.log;
+console\.log \= \(string\) \=\> log\.push\(string\);
 
-let firstZero = result\(\);
-let secondZero = result\(\);
+let firstZero \= result\(\);
+let secondZero \= result\(\);
 
 firstZero\.append\('247'\);
 firstZero\.append\('86'\);
@@ -149,7 +150,7 @@ firstZero\.print\(\);
 secondZero\.print\(\);
 
 // Restore the console
-console\.log = oldcon;
+console\.log \= oldcon;
 
 assert\.equal\(log\[0\], '78', 'Printed wrong value\.'\);
 assert\.equal\(log\[1\], 'low', 'Printed wrong value\.'\);
