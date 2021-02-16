@@ -29,6 +29,6 @@ There are some **keys** of readable typography:
 
 * **Emphasis** of important elements is another key factor. This includes highlighting links, bolding important text and showing quotes;
 
-* Good **margins** helps to avoid walls of text. Margins are one of the best white space elements and support text elements well. Margins on either side will force the user’s eye to focus inward on the core content of the article.
+* Good **margins** helps to avoid walls of text. Margins are one of the best white space elements and provide great support for text elements. Margins on either side will force the user’s eye to focus inward on the core content of the article.
 
 [/slide]
