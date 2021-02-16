@@ -53,8 +53,17 @@ for (let key in person) {
   }
 }
 ```
-  - `parse` and `stringify` are built-in JavaScript methods
-  - Used for converting JSON to an object, and vice versa
+
+- `parse` and `stringify` are built-in JavaScript methods
+  - used for converting JSON to an object, and vice versa
+  
+```js live
+let car = '{"Car":"Nio","Model": "EP9","Colour":"Blue"}';  
+
+var data = JSON.parse(car);  
+
+console.log(data);
+```
 
 - Classes in JavaScript
 
