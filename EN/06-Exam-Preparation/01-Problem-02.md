@@ -1,5 +1,3 @@
-
-
 [slide hideTitle]
 # Problem 2: Press House
 
@@ -7,9 +5,16 @@
 
 [code-task title="Press House" taskId="js-advanced-exam-preparation-press-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
-function pressHouse(){
+function pressHouse() {
   // Write your code here
+
+  return {
+    Article,
+    ShortReports,
+    BookReview,
+  };
 }
+
 ```
 [/code-editor]
 [task-description]
@@ -132,7 +137,18 @@ Orders:
 
 **Submit your pressHouse function.**
 
-[image assetsSrc="exam-prep-pic6.png" /]
+```js
+function pressHouse() {
+  // Write your code here
+
+  return {
+    Article,
+    ShortReports,
+    BookReview,
+  };
+}
+
+```
 
 # Examples
 This is an example of how the code is **intended to be used:**
@@ -189,8 +205,8 @@ Goodreads - 30 symbols
  let classes = result()
         let lorem = new classes.Article('Lorem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel, ultricies est. Phasellus id pellentesque risus. Morbi aliquet at lectus ac malesuada. Morbi eu erat orci. Donec id turpis elit. Donec iaculis sapien odio, sit amet cursus lacus rutrum sit amet. Cras ac urna sapien. Pellentesque porta mauris ac dolor commodo, congue condimentum orci varius. Ut ultrices pretium commodo. Aenean facilisis mattis facilisis.');
         let output = lorem.toString();
-        let expectedOutput = `Title: Lorem
-Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel, ultricies est. Phasellus id pellentesque risus. Morbi aliquet at lectus ac malesuada. Morbi eu erat orci. Donec id turpis elit. Donec iaculis sapien odio, sit amet cursus lacus rutrum sit amet. Cras ac urna sapien. Pellentesque porta mauris ac dolor commodo, congue condimentum orci varius. Ut ultrices pretium commodo. Aenean facilisis mattis facilisis.`;
+        let expectedOutput = \`Title: Lorem
+Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non tortor finibus, facilisis mauris vel, ultricies est. Phasellus id pellentesque risus. Morbi aliquet at lectus ac malesuada. Morbi eu erat orci. Donec id turpis elit. Donec iaculis sapien odio, sit amet cursus lacus rutrum sit amet. Cras ac urna sapien. Pellentesque porta mauris ac dolor commodo, congue condimentum orci varius. Ut ultrices pretium commodo. Aenean facilisis mattis facilisis.\`;
         expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
 [output]
@@ -206,13 +222,13 @@ let classes = result()
         short.addComment("Thank god they didn't use java.")
         output = short.addComment('In the end JavaScript’s features are executed in C++ — the underlying language.')
         output += '\n' + short.toString();
-        expectedOutput = `The comment is added.
+        expectedOutput = \`The comment is added.
 Title: SpaceX and Javascript
 Content: Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?
 Original Research: Dragon 2 by wikipedia.org
 Comments:
 Thank god they didn't use java.
-In the end JavaScript’s features are executed in C++ — the underlying language.`
+In the end JavaScript’s features are executed in C++ — the underlying language.\`
         expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
 [output]
@@ -228,14 +244,14 @@ let classes = result()
         output = book.addCustomer('The Guardian', '100 symbols');
         output += '\n' + book.addCustomer('Goodreads', '30 symbols');
         output += '\n' + book.toString();
-        expectedOutput = `The Guardian has ordered a review for The Great Gatsby
+        expectedOutput = \`The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
 Title: The Great Gatsby is so much more than a love story
 Content: The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...
 Book: The Great Gatsby
 Orders:
 The Guardian - 100 symbols
-Goodreads - 30 symbols`
+Goodreads - 30 symbols\`
         expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
 [output]
