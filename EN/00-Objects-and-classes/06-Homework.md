@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Employees
 [code-task title="Employees" taskId="js-fundamentals-pt2-objects-and-classes-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -90,7 +90,7 @@ Name\: Brendan Villarreal \-\- Personal Number\: 18
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Towns
 [code-task title="Towns" taskId="js-fundamentals-pt2-objects-and-classes-Towns" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -194,7 +194,7 @@ a \| 136.45 \| 812.575
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Movies
 [code-task title="Movies"taskId="js-fundamentals-pt2-objects-and-classes-Movies" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -319,7 +319,7 @@ k onDate 30\.07\.2010
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Inventory
 [code-task title="Inventory"taskId="js-fundamentals-pt2-objects-and-classes-Inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -478,7 +478,7 @@ items \=\> ca, d, e, q, t, w
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Make a Dictionary
 [code-task title="Make a Dictionarytory"taskId="js-fundamentals-pt2-objects-and-classes-Make-a-Dictionary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -599,7 +599,7 @@ Term: zmmjad \=\> Definition: gyuu guy guy gyu guy guyguhvhv
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Songs
 [code-task title="Songs"taskId="js-fundamentals-pt2-objects-and-classes-Songs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
