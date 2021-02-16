@@ -15,6 +15,17 @@ public class Main {
     }
 }
 ```
+
+[hints]
+[hint]
+
+Test 123
+
+[/hint]
+[/hints]
+
+
+
 [/code-editor]
 [task-description]
 ## Description
