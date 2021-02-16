@@ -20,7 +20,7 @@ Write a program for reading blog content.
 
 It needs to make **requests** to the **server** and display **all blog posts** and their **comments**.
 
-Firebase URL - https://blog-apps-c12bf.firebaseio.com/
+[Firebase URL](https://blog-apps-c12bf.firebaseio.com/)
 
 Skeleton will be provided in the **Resources folder**.
 
