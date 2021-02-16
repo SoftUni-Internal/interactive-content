@@ -159,39 +159,6 @@ assert.equal(log\[1\], 'loa', 'Printed wrong value.');
 yes
 [/output]
 [/test]
-[test]
-[input]
-// Acquire console
-let log = \[\];
-let oldcon = console.log;
-console.log = (string) =\> log.push(string);
-
-let firstZero = result();
-let secondZero = result();
-
-firstZero.append('123');
-firstZero.append('45');
-firstZero.removeStart(2);
-firstZero.removeEnd(1);
-
-secondZero.append('hello');
-secondZero.append('again');
-secondZero.removeStart(3)
-secondZero.removeEnd(4)
-
-firstZero.print();
-secondZero.print();
-
-// Restore the console
-console.log = oldcon;
-
-assert.equal(log\[0\], '34', 'Printed wrong value.');
-assert.equal(log\[1\], 'loa', 'Printed wrong value.');
-[/input]
-[output]
-yes
-[/output]
-[/test]
 [/tests]
 [/code-task]
 [/slide]
