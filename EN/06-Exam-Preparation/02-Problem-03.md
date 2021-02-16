@@ -7,7 +7,7 @@
 [code-task title="Bank" taskId="js-advanced-exam-preparation-bank" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 class Bank {
-    // TODO: implement this class...
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -139,35 +139,36 @@ let name = 'SoftUni Bank';
 let bank = new Bank(name);
 
 
-let customer1 = bank.newCustomer(\{ firstName: 'Svetlin', lastName: 'Nakov', personalId: 1111111 \});
+let customer1 = bank.newCustomer({ firstName: 'Svetlin', lastName: 'Nakov', personalId: 1111111 });
 expect(customer1.firstName).to.be.equal('Svetlin');
 
-let customer2 = bank.newCustomer(\{ firstName: 'Mihaela', lastName: 'Mileva', personalId: 3333333 \});
+let customer2 = bank.newCustomer({ firstName: 'Mihaela', lastName: 'Mileva', personalId: 3333333 });
 expect(customer2.lastName).to.be.equal('Mileva');
 expect(customer2.personalId).to.be.equal(3333333);
 
 let totalMoney1 = bank.depositMoney(1111111, 250);
-expect(totalMoney1).to.be.equal('250\\$', 'Function depositMoney returns incorrect totalMoney');
+expect(totalMoney1).to.be.equal('250$', 'Function depositMoney returns incorrect totalMoney');
 
 let totalMoney2 = bank.depositMoney(1111111, 250);
-expect(totalMoney2).to.be.equal('500\\$', 'Function depositMoney returns incorrect totalMoney');
+expect(totalMoney2).to.be.equal('500$', 'Function depositMoney returns incorrect totalMoney');
 
 let totalMoney3 = bank.depositMoney(3333333, 555);
-expect(totalMoney3).to.be.equal('555\\$', 'Function depositMoney returns incorrect totalMoney');
+expect(totalMoney3).to.be.equal('555$', 'Function depositMoney returns incorrect totalMoney');
 
 let totalMoney4 = bank.withdrawMoney(1111111, 125);
-expect(totalMoney4).to.equal('375\\$', 'Function withdrawMoney returns incorrect totalMoney');
+expect(totalMoney4).to.equal('375$', 'Function withdrawMoney returns incorrect totalMoney');
 
 let output = bank.customerInfo(1111111);
 let expectedOutput = \`Bank name: SoftUni Bank
 Customer name: Svetlin Nakov
 Customer ID: 1111111
-Total Money: 375\\$
+Total Money: 375$
 Transactions:
-3\. Svetlin Nakov withdrew 125\\$!
-2\. Svetlin Nakov made a deposit of 250\\$!
-1\. Svetlin Nakov made a deposit of 250\\$!\`;
+3. Svetlin Nakov withdrew 125$!
+2. Svetlin Nakov made deposit of 250$!
+1. Svetlin Nakov made deposit of 250$!\`;
 expect(expectedOutput).to.be.equal(output, 'Incorrect output');
+
 [/input]
 [output]
 yes
@@ -354,9 +355,9 @@ let Bank = result;
 let name = 'SoftUniBank';
 
 let bank = new Bank(name);
-bank.newCustomer(\{firstName: 'Svetlin', lastName: 'Nakov', personalId: 9265667\});
-bank.newCustomer(\{firstName: 'Mihaela', lastName: 'Mileva', personalId: 4151596\});
-bank.newCustomer(\{firstName: 'Pesho', lastName: 'Ivanov', personalId: 55555555\});
+bank.newCustomer({firstName: 'Svetlin', lastName: 'Nakov', personalId: 9265667});
+bank.newCustomer({firstName: 'Mihaela', lastName: 'Mileva', personalId: 4151596});
+bank.newCustomer({firstName: 'Pesho', lastName: 'Ivanov', personalId: 55555555});
 
 bank.depositMoney(9265667, 250);
 bank.depositMoney(55555555, 155);
@@ -370,12 +371,12 @@ let info = bank.customerInfo(9265667);
 let output = \`Bank name: SoftUniBank
 Customer name: Svetlin Nakov
 Customer ID: 9265667
-Total Money: 300\\$
+Total Money: 300$
 Transactions:
-4\. Svetlin Nakov withdrew 133\\$!
-3\. Svetlin Nakov withdrew 150\\$!
-2\. Svetlin Nakov made a deposit of 333\\$!
-1\. Svetlin Nakov made a deposit of 250\\$!\`;
+4. Svetlin Nakov withdrew 133$!
+3. Svetlin Nakov withdrew 150$!
+2. Svetlin Nakov made deposit of 333$!
+1. Svetlin Nakov made deposit of 250$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
@@ -390,7 +391,7 @@ let Bank = result;
 let name = 'Some Name';
 
 let bank = new Bank(name);
-bank.newCustomer(\{firstName: 'Svetlin', lastName: 'Nakov', personalId: 123123123\});
+bank.newCustomer({firstName: 'Svetlin', lastName: 'Nakov', personalId: 123123123});
 
 bank.depositMoney(123123123, 221);
 bank.depositMoney(123123123, 21);
@@ -404,14 +405,14 @@ let info = bank.customerInfo(123123123);
 let output = \`Bank name: Some Name
 Customer name: Svetlin Nakov
 Customer ID: 123123123
-Total Money: 337\\$
+Total Money: 337$
 Transactions:
-6\. Svetlin Nakov withdrew 25\\$!
-5\. Svetlin Nakov withdrew 125\\$!
-4\. Svetlin Nakov made a deposit of 356\\$!
-3\. Svetlin Nakov withdrew 111\\$!
-2\. Svetlin Nakov made a deposit of 21\\$!
-1\. Svetlin Nakov made a deposit of 221\\$!\`;
+6. Svetlin Nakov withdrew 25$!
+5. Svetlin Nakov withdrew 125$!
+4. Svetlin Nakov made deposit of 356$!
+3. Svetlin Nakov withdrew 111$!
+2. Svetlin Nakov made deposit of 21$!
+1. Svetlin Nakov made deposit of 221$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
