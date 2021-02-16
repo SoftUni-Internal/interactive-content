@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
@@ -8,7 +8,7 @@
 
 - Objects - Definition, properties and methods
 ```js
-let person = { name:'Peter', 
+let person = { name: 'Peter', 
 age: 20,
 sayHello() {
      console.log('Hi, guys');
@@ -17,7 +17,19 @@ sayHello() {
 ```
 - Object methods
 
+```js live
+let person = { name: 'John', 
+age: 43,
+sayHello() {
+     console.log('Hello, my name is ' + this.name);
+  }
+};
+
+person.sayHello();
+```
+
 - Object iterations
+
 ``` js live
 let person = { name:'Peter', age:'18', grade:'5.50' };
 
@@ -26,9 +38,10 @@ for (let key in person) {
 }
 
 ```
-- Difference between Reference and Value Type
+- Difference between Reference and Value Types
 
 - JSON files overview
+
 ``` js
 {
   }
@@ -40,9 +53,20 @@ for (let key in person) {
   }
 }
 ```
-  - Parse and Stringify
 
-- Classes in Javascript
+- `parse` and `stringify` are built-in JavaScript methods
+  - used for converting JSON to an object, and vice versa
+  
+```js live
+let car = '{"Car":"Nio","Model": "EP9","Colour":"Blue"}';  
+
+var data = JSON.parse(car);  
+
+console.log(data);
+```
+
+- Classes in JavaScript
+
 ``` js
 class Student {
   constructor(name) {
@@ -51,7 +75,7 @@ class Student {
 }
 ```
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
 - Maps
 
