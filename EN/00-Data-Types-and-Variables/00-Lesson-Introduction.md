@@ -26,7 +26,7 @@
 
 - What a **boolean** is
 
-- An overview of the **boolean** data type and what it is used for
+- An overview of the **boolean** data type and how to use it
 
 **5. Character and String Type**
 
