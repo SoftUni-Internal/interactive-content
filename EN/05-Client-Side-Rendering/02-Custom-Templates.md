@@ -6,7 +6,7 @@
 
 In **templating**, each element of the user interface is stored in a **separate file**, called a **template**.
 
-[image assetsSrc="server-side-rendering(1).png" /]
+[image assetsSrc="server-side-rendering(1).png" /]
 
 A **templating engine** enables enables us to use these **template files** in our application. 
 
