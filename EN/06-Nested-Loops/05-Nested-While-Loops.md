@@ -87,7 +87,7 @@ Write a program that:
 
 [slide hideTitle]
 
-# Example: Combining while and for Loops
+# Example: Combining "while" and "for" Loops
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-33-34-nesting-while-and-for-loops-and-problem-and-solution-sum-digits-calculator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
