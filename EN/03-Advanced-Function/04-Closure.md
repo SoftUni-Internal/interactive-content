@@ -72,7 +72,7 @@ Every time we call the function `func()` the counter will be output to the conso
 [slide hideTitle]
 # Problem with Solution: Command Processor
 
-[code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Command Processor" taskId="js-advanced-advanced-functions-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function commandProcessor() {
@@ -129,20 +129,20 @@ Whenever you receive the command **print**, the output should be the **printed**
 [test]
 [input]
 // Acquire console
-let log = \[\];
+let log = [];
 let oldcon = console.log;
-console.log = (string) =\> log.push(string);
+console.log = (string) => log.push(string);
 
 let firstZero = result();
 let secondZero = result();
 
-firstZero.append('247');
-firstZero.append('86');
+firstZero.append('123');
+firstZero.append('45');
 firstZero.removeStart(2);
 firstZero.removeEnd(1);
 
 secondZero.append('hello');
-secondZero.append('world');
+secondZero.append('again');
 secondZero.removeStart(3)
 secondZero.removeEnd(4)
 
@@ -152,8 +152,8 @@ secondZero.print();
 // Restore the console
 console.log = oldcon;
 
-assert.equal(log\[0\], '78', 'Printed wrong value.');
-assert.equal(log\[1\], 'low', 'Printed wrong value.');
+assert.equal(log[0], '34', 'Printed wrong value.');
+assert.equal(log[1], 'loa', 'Printed wrong value.');
 [/input]
 [output]
 yes
