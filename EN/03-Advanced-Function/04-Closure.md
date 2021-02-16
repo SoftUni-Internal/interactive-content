@@ -12,11 +12,11 @@ In a **closure**, the **inner function scope** includes that of the **outer (enc
 
 A **closure** has three scope chains:
 
-- it has access to **its own scope** - variables enclosed by its own function body
+- It has access to **its own scope** - variables enclosed by its own function body
   
-- it has access to the **outer function's** variables
+- It has access to the **outer function's** variables
 
-- it has access to the **global** variables
+- It has access to the **global** variables
 
 Let us take a look at a simple example:
 
