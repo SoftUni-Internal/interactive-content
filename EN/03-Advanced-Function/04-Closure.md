@@ -128,6 +128,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 [tests]
 [test open]
 [input]
+```
 // Acquire console
 let log = [];
 let oldcon = console.log;
@@ -154,9 +155,12 @@ console.log = oldcon;
 
 assert.equal(log[0], '34', 'Printed wrong value.');
 assert.equal(log[1], 'loa', 'Printed wrong value.');
+```
 [/input]
 [output]
+```
 yes
+```
 [/output]
 [/test]
 [/tests]
