@@ -1,4 +1,4 @@
-# Programming Advanced with JavaScitpt
+# Programming Advanced with JavaScript
 
 ## Description
 This course teaches the **fundamentals of coding**, such as:
