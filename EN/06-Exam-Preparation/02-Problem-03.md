@@ -164,9 +164,9 @@ Customer name: Svetlin Nakov
 Customer ID: 1111111
 Total Money: 375$
 Transactions:
-3. Svetlin Nakov withdrew 125$!
-2. Svetlin Nakov made deposit of 250$!
-1. Svetlin Nakov made deposit of 250$!\`;
+3\. Svetlin Nakov withdrew 125$!
+2\. Svetlin Nakov made deposit of 250$!
+1\. Svetlin Nakov made deposit of 250$!\`;
 expect(expectedOutput).to.be.equal(output, 'Incorrect output');
 
 [/input]
@@ -373,10 +373,10 @@ Customer name: Svetlin Nakov
 Customer ID: 9265667
 Total Money: 300$
 Transactions:
-4. Svetlin Nakov withdrew 133$!
-3. Svetlin Nakov withdrew 150$!
-2. Svetlin Nakov made deposit of 333$!
-1. Svetlin Nakov made deposit of 250$!\`;
+4\. Svetlin Nakov withdrew 133$!
+3\. Svetlin Nakov withdrew 150$!
+2\. Svetlin Nakov made deposit of 333$!
+1\. Svetlin Nakov made deposit of 250$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
@@ -407,12 +407,12 @@ Customer name: Svetlin Nakov
 Customer ID: 123123123
 Total Money: 337$
 Transactions:
-6. Svetlin Nakov withdrew 25$!
-5. Svetlin Nakov withdrew 125$!
-4. Svetlin Nakov made deposit of 356$!
-3. Svetlin Nakov withdrew 111$!
-2. Svetlin Nakov made deposit of 21$!
-1. Svetlin Nakov made deposit of 221$!\`;
+6\. Svetlin Nakov withdrew 25$!
+5\. Svetlin Nakov withdrew 125$!
+4\. Svetlin Nakov made deposit of 356$!
+3\. Svetlin Nakov withdrew 111$!
+2\. Svetlin Nakov made deposit of 21$!
+1\. Svetlin Nakov made deposit of 221$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
