@@ -29,106 +29,7 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [slide hideTitle]
 
-# Substring
-
-As the name suggests, `substring` extracts only a **part** of a `String`.
-
-- `substring(int startIndex)` - Returns a **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
-
-```java live
-String text = "My name is John";
-
-String extractWord = text.substring(11);
-
-System.out.println(extractWord); // John
-```
-
-- `substring(int startIndex, int endIndex)` - Returns a **new String** starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
-
-```java live
-String fullName = "John Doe";
-
-String firstName = fullName.substring(0, 4);
-
-System.out.println(firstName); // John
-```
-
-[/slide]
-
-[slide hideTitle]
-
-# Searching
-
-It is possible to search for the first or last occurences of a pattern in a string:
-
-- `indexOf()` - Returns the **first match index**, if there is **no match** returns **-1**
-
-```java live 
-String fruits = "banana, apple, kiwi, banana, apple";
-
-System.out.println(fruits.indexOf("banana"));    // 0
-
-System.out.println(fruits.indexOf("orange"));    // -1
-```
-
-- `lastIndexOf()` - Finds the last occurrence
-
-```java live
-String fruits = "banana, apple, kiwi, banana, apple";
-
-System.out.println(fruits.lastIndexOf("banana")); // 21
-
-System.out.println(fruits.lastIndexOf("orange")); // -1
-```
-[/slide]
-
-[slide hideTitle]
-
-# Splitting
-
-A `String` could be split by **one** or **multiple** criteria, using the `split()` method.
- 
-- Splitting a string by a given **pattern**
-
-```java live
-String text
- = "I had coffee, pancakes, berries and a banana for breakfast.";
-String[] words = text.split(", ");
-
-System.out.println(words[0]);
-System.out.println(words[1]);
-System.out.println(words[2]);
-```
-
-- Splitting by **multiple separators**
-
-```java live
-
-String text = "Hello, I am John.";
-
-// splits text by comma, whitespace or dot
-String[] words = text.split("[, .]+");
-
-System.out.println(String.join(", ",words));
-```
-
-[/slide]
-
-[slide hideTitle]
-
-# Replacing
-
-Java also makes it possible to make **replacements** in a String.
-
-- `replace(match, replacement)` - **Replaces all occurrences** and returns a **new String** (Strings are immutable)
-
-```java live
-String text = "I have three bananas, three oranges, three apples.";
-
-String replacedText = text.replace("three", "five");
-
-System.out.println(replacedText);
-```
+# Joining Strings
 
 [/slide]
 
@@ -239,6 +140,61 @@ linearlinearlinearlinearlinearlinear
 [/slide]
 
 [slide hideTitle]
+
+# Substring
+
+As the name suggests, `substring` extracts only a **part** of a `String`.
+
+- `substring(int startIndex)` - Returns a **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
+
+```java live
+String text = "My name is John";
+
+String extractWord = text.substring(11);
+
+System.out.println(extractWord); // John
+```
+
+- `substring(int startIndex, int endIndex)` - Returns a **new String** starting from the specified **startIndex** (inclusive) to the **endIndex** (exclusive)
+
+```java live
+String fullName = "John Doe";
+
+String firstName = fullName.substring(0, 4);
+
+System.out.println(firstName); // John
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Searching
+
+It is possible to search for the first or last occurences of a pattern in a string:
+
+- `indexOf()` - Returns the **first match index**, if there is **no match** returns **-1**
+
+```java live 
+String fruits = "banana, apple, kiwi, banana, apple";
+
+System.out.println(fruits.indexOf("banana"));    // 0
+
+System.out.println(fruits.indexOf("orange"));    // -1
+```
+
+- `lastIndexOf()` - Finds the last occurrence
+
+```java live
+String fruits = "banana, apple, kiwi, banana, apple";
+
+System.out.println(fruits.lastIndexOf("banana")); // 21
+
+System.out.println(fruits.lastIndexOf("orange")); // -1
+```
+[/slide]
+
+[slide hideTitle]
 # Problem with Solution: Substring
 [code-task title="Substring" taskId="Java-Fundamentals-Part-Two-String-Processing-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -335,6 +291,56 @@ stration
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+[slide hideTitle]
+
+# Splitting
+
+A `String` could be split by **one** or **multiple** criteria, using the `split()` method.
+ 
+- Splitting a string by a given **pattern**
+
+```java live
+String text
+ = "I had coffee, pancakes, berries and a banana for breakfast.";
+String[] words = text.split(", ");
+
+System.out.println(words[0]);
+System.out.println(words[1]);
+System.out.println(words[2]);
+```
+
+- Splitting by **multiple separators**
+
+```java live
+
+String text = "Hello, I am John.";
+
+// splits text by comma, whitespace or dot
+String[] words = text.split("[, .]+");
+
+System.out.println(String.join(", ",words));
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Replacing
+
+Java also makes it possible to make **replacements** in a String.
+
+- `replace(match, replacement)` - **Replaces all occurrences** and returns a **new String** (Strings are immutable)
+
+```java live
+String text = "I have three bananas, three oranges, three apples.";
+
+String replacedText = text.replace("three", "five");
+
+System.out.println(replacedText);
+```
+
 [/slide]
 
 [slide hideTitle]
