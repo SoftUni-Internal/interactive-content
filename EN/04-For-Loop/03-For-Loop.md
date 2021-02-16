@@ -3,7 +3,7 @@
 # For Loop
 
 [slide hideTitle]
-# Real Life Example: Moving Dishes
+# Real-Life Example: Moving Dishes
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-9-10-Real-life-example-Moving-dishes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

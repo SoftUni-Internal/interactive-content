@@ -7,7 +7,7 @@
 
 Nested for-loops are statements that consist of several for loops located inside each other 
 
-**Nested for loops** are used:
+**Nested For loops** are used:
 
 * To execute an **action**, which **executes** multiple **actions**
 * To make more **complex** calculations and variations

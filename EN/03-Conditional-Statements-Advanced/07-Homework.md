@@ -792,7 +792,7 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 # Description
 Write a program to apply an operator for given two numbers:
 
-* Read two integers and a math operator from the console. 
+* Read two integers and a math operator from the console 
 * The math operator could be: `+`, `-`, `/`, `%` și `*`
 * The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
 

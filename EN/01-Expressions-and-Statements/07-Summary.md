@@ -29,19 +29,19 @@ function town(homeTown) {
   console.log(`I am from ${homeTown}!`);
 }
 
-town("Buccuresht");
+town("Paris");
 ```
 
 - How to perform simple arithmetic operations
 
-  ```js
-  let sum = 5 + 10;
-  ```
+```js
+let sum = 5 + 10;
+```
 
 - How to format output using interpolation
 
 ```js
-let homeTown = "Buccuresht";
+let homeTown = "Paris";
 
 console.log(`I am from ${homeTown}!`);
 ```

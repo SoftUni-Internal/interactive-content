@@ -4,7 +4,7 @@
 
 [slide hideTitle]
 # Problem: Calculate a Square Area
-[code-task title="Calculate a square area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Calculate a Square Area" taskId="pb-js-expressions-Calculate-a-square-area" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language="javascript"]
 ```
 function calculateSpeed (input) {
@@ -15,9 +15,9 @@ function calculateSpeed (input) {
 [task-description]
 # Description
 Write a function that gets an integer and calculates the area of a square with side `a`. 
-- you get a number in the argument of the function, 
+- you get a number in the argument of the function 
 - multiply it yourself and 
-- print the result in the console.
+- print the result in the console
 
 ## Example
 | **Input** | **Output** |

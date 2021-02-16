@@ -35,7 +35,7 @@ This way we check the execution of our program line by line.
 Using debugging makes easier to validate and fix a problem in our program.
 
 
-[image assetsSrc="debugging-demo.png 0.5x" /]
+[image assetsSrc="debugging-demo.png" /]
 
 [/slide]
 
