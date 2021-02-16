@@ -240,18 +240,18 @@ yes
 //zero test 3
 //BookReview toString test
 let classes = result()
-        let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        output = book.addCustomer('The Guardian', '100 symbols');
-        output += '\n' + book.addCustomer('Goodreads', '30 symbols');
+        let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', { name: 'The Great Gatsby', author: 'F Scott Fitzgerald' });
+        output = book.addClient('The Guardian', '100 symbols');
+        output += '\n' + book.addClient('Goodreads', '30 symbols');
         output += '\n' + book.toString();
-        expectedOutput = \`The Guardian has ordered a review for The Great Gatsby
+        expectedOutput = `The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
 Title: The Great Gatsby is so much more than a love story
 Content: The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...
 Book: The Great Gatsby
 Orders:
 The Guardian - 100 symbols
-Goodreads - 30 symbols\`
+Goodreads - 30 symbols`
         expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
 [output]
@@ -260,13 +260,13 @@ yes
 [/test]
 [test]
 [input]
-// Is a valid constructor
-let classes = result()
-let longContent = 'Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?'
+// ShortReports -- The original research should have author and title. -- no author"
+   let classes = result()
+        let content = 'Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript.'
          
-expect(function(){new classes.ShortReports('SpaceX and Javascript', longContent, { title: 'Dragon 2', author: 'wikipedia.org' })})
-        .to.throw(Error, 'Short reports content should be less then 150 symbols.')
-        
+        expect(function(){new classes.ShortReports('SpaceX and Javascript', content, { title: 'Dragon 2' })})
+        .to.throw(Error, 'The original research should have author and title.')
+       
 [/input]
 [output]
 yes
@@ -304,9 +304,9 @@ yes
             let short = new classes.ShortReports('SpaceX and Javascript', 'Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?', \{ title: 'Dragon 2', author: 'wikipedia.org' \});
                     
             output = short.toString();
-            expectedOutput = `Title: SpaceX and Javascript
+            expectedOutput = \`Title: SpaceX and Javascript
 Content: Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?
-Original Research: Dragon 2 by wikipedia.org`;
+Original Research: Dragon 2 by wikipedia.org\`;
      
             expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
@@ -341,14 +341,11 @@ yes
 [input]
 // BookReview toString with no comments 
 let classes = result()
-            let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-                        
+            let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});                      
             output = book.toString();
-
-            expectedOutput = `Title: The Great Gatsby is so much more than a love story
+            expectedOutput = \`Title: The Great Gatsby is so much more than a love story
 Content: The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...
-Book: The Great Gatsby`;
-     
+Book: The Great Gatsby\`;     
             expect(expectedOutput).to.be.equal(output, 'Incorrect output');
 [/input]
 [output]
