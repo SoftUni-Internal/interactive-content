@@ -1,4 +1,4 @@
-# Unit Testing With Mocha And Chai
+# Unit Testing with Mocha and Chai
 
 [slide hideTitle]
 

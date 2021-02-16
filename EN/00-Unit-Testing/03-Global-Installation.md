@@ -1,4 +1,4 @@
-# Installing Mocha And Chai Globally
+# Installing Mocha and Chai Globally
 
 [slide hideTitle]
 
@@ -73,11 +73,14 @@ describe("Test group #2", function () {
 [stream language="RO" videoId="497187668/5cbd6f3899"  /]
 [/video-vimeo]
 
-[code-task title="Sum Of Numbers" taskId="js-applications-Unit-Testing-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum Of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
+
 [code-editor language=javascript]
 
 ```
-
+describe('Sum of numbers', () => {
+  // Write your code here
+});
 ```
 [/code-editor]
 [task-description]
