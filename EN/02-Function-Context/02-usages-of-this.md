@@ -1,8 +1,8 @@
-# Using "This"
+# Using "this"
 
 [slide hideTitle]
 
-# "Тhis" in a Method
+# "this" in a Method
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-8-9-this-in-a-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -55,7 +55,7 @@ If there is a variable with the same name already defined and if it is in scope 
 
 [slide hideTitle]
 
-# "Тhis" Refers to the Parent Object
+# "this" Refers to the Parent Object
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-10-this-refers-to-the-parent-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -88,7 +88,7 @@ Defining a function `printContext()` which checks if `this===global` (`this===wi
 
 Creating an object **user** with two methods:
 - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
-- `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this===global` and prints the result to the console.
+- `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console.
 
 Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
@@ -100,7 +100,7 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 
 - `user.printAnotherContext();` will return **false** because `printAnotherContext()` is a method of the object **user** and `this` will return the object itself like it did with the **printContext** method
 
-To summarize: 
+**To summarize:**
 
 - used in methods, `this` references the object to which the method belongs
 
@@ -129,7 +129,7 @@ function solve() {
 
 When referencing `this` from within an event, it returns the element from which the event was called. 
 
-In our case, it will be the button element that called the ``solve()`` function.
+In our case, it will be the button element that called the `solve()` function.
 
 You can test it yourself by creating an HTML file with the following example code:
 

@@ -1,4 +1,4 @@
-# The "This" Keyword
+# The "this" Keyword
 
 [slide hideTitle]
 
@@ -21,7 +21,7 @@ Functions can be called in several different ways:
 
 [slide hideTitle]
 
-# What is "This"?
+# What "this" is
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -37,7 +37,7 @@ The object referenced by `this` **changes** when the execution context is change
 
 [slide hideTitle]
 
-# "This" Referring to the Global Object
+# "this" Referring to the Global Object
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-6-this-refers-to-the-global-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -56,7 +56,7 @@ When run, the above example returns **true**, meaning that `this` is indeed equa
 
 [slide hideTitle]
 
-# "This" in the Browser
+# "this" in the Browser
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-7-this-keyword-in-the-browser-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -8,13 +8,13 @@
 
 ## In this lesson you will learn:
 
-**1. What is "this"?** 
+**1. What "this" is** 
 - What is behind the `this` keyword and the meaning of **function context**
 
 **2. Usages of "this" Keyword** 
 - What `this` refers to in different situations
 
-**3. "this" In Functions**
+**3. "this" in Functions**
 - Behavior of the `this` keyword in nested functions and arrow functions
 
 **4. Explicit Binding**
