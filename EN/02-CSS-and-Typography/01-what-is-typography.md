@@ -8,11 +8,11 @@
 [stream language="RO" videoId="445501180" /]
 [/video-vimeo]
 
-Typography is the art and technique of arranging type to make written language **legible**, **readable** and **appealing**.
+Typography is the art and technique of arranging types to create written language **legible**, **readable** and **appealing**.
 
 Typography is the **visual component** of the written word.
 
-The typography includes the **style**, **appearance** and **structure** of the font to evoke emotions and convey specific messages.
+Typography includes the **style**, **appearance** and **structure** of the font to evoke emotions and convey specific messages.
 
 ## Books
 
