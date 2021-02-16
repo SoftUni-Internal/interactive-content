@@ -1,7 +1,5 @@
+[slide hideTitle]
 # Problem 2: Pet House
-
-[slide]
-# Description
 
 [code-task title="Pet House" taskId="js-advanced-exam-pet-house" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
@@ -12,9 +10,7 @@ function solveClasses(){
 ```
 [/code-editor]
 [task-description]
-# Description
-
-## Your task
+# Your task
 
 Implement the following classes: `Pet`, `Cat`, `Dog`.
 
@@ -24,9 +20,9 @@ Implement the following classes: `Pet`, `Cat`, `Dog`.
 
 Should have these **3 properties:**
 
-owner – string; 
-name – string;
-comments – array;
+* **owner** - string; 
+* **name** - string;
+* **comments** - array;
 
 - `addComment(comment)`
 
@@ -38,12 +34,13 @@ If the the same comment was **already added** to the comments array, throw an er
 
 `This comment is already added!`
 
-- `feed()`
+- `feed()`:
+
 This **function** should **return** a simple message:
 
 `{ name } is fed`
 
-- `toString()`
+- `toString()`:
 
 This **function** should **return** a string:
 
@@ -60,18 +57,18 @@ The `Cat` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-owner – string,  
-name – string, 
-insideHabits – string,
-scratching – boolean,
+* **owner** - string,  
+* **name** - string, 
+* **insideHabits** - string,
+* **scratching** - boolean,
 
-- `feed()`
+- `feed()`:
 
 This function should inherit the `feed()` method of the `Pet` class and extend the **returned** message adding this to the end of the same line:
 
 `, happy and purring.`
 
-- `toString()`
+- `toString()`:
 
 This function should extend the `toString()` method of the `Pet` class, returning the **message** with some more lines at the end which are:
 
@@ -93,16 +90,19 @@ The `Dog` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-owner – string,  
-name – string, 
-runningNeeds – string
-trainability – string 
+- **owner** - string,  
+- **name** - string, 
+- **runningNeeds** - string
+- **trainability** - string 
 
-- `feed()`
+- `feed()`:
+
 This **function** should inherit the `feed()` method of the `Pet` class and extend the returned message adding this at the end:
+
 `, happy and wagging tail.`
 
-- `toString()`
+- `toString()`:
+
 This **function** should extend the `toString()` method of the `Pet` class returning the message with some more lines at the end which are:
 
 `Main information:`

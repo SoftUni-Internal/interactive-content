@@ -1,13 +1,12 @@
-# Problem 1: Pet Me (DOM Manipulation)
+[slide hideTitle]
 
-[slide]
-# Description
+# Problem 1: Pet Me
 
 [code-task title="Pet Me" taskId="js-advanced-exam-pet-me" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(){
+function petMe(){
   // Write your code here
 }
 ```
@@ -29,7 +28,9 @@ Write the missing JavaScript code to make the **Pet Me** application work as exp
 
 Each new registered pet must have the following properties: `Name`, `Age`, `Kind` and `Current Owner`.
 
-When the `[Add]` button is clicked a new **list** item should be added to the section with id `adoption`. Do not add anything if **any of the input fields are empty** or if the age entered is not a number.
+When the `[Add]` button is clicked a new **list** item should be added to the section with id `adoption`. 
+
+Do not add anything if **any of the input fields are empty** or if the age entered is not a number.
 
 Do not forget to **clear the inputs** after a new pet is added or in case of invalid input (see above).
 
@@ -43,7 +44,7 @@ Any new item that is added should have the **following structure:**
 
 You should create a **list** element that contains a **paragraph** element with the name, age, and kind of the new pet (cat, dog, parrot, and so on). 
 
-Format: `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are inside **\<strong>** elements within the paragraph. 
+Format: `{ name } is a { years } year old { kind }`, where  **name**, **years** and **kind** are inside `<strong>` elements within the paragraph. 
 
 After the list element, we have a **span** element with `Owner: { owner name }` and a `[Contact Owner]`  button.
 
