@@ -301,11 +301,7 @@ After that, we instantiate **MakeSentence** and print the **concatenate** method
 [slide hideTitle]
 
 # Problem with Solution: Extending Prototype
-<<<<<<< HEAD
 [code-task title="Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-extending-prototype" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
-=======
-[code-task title="Extending Prototype" taskId="js-advanced-prototypes-and-inheritance-lab-extending-prototype" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
->>>>>>> 3f8a7b186924fe53c59a58748071ae222213eba8
 
 ```
 function extendPrototype(classToExtend) {
