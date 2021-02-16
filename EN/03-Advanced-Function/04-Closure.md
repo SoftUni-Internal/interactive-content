@@ -126,7 +126,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
 // Acquire console
 let log = [];
