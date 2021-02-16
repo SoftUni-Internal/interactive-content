@@ -63,7 +63,9 @@ When the pet is healed and leaves the clinic, **its array of procedures must be 
 
 **Before registering:**
 
-- Check if the clinic can accept more pets. If the clinic is full **throw an error**:
+- Check if the clinic can accept more pets. 
+
+If the clinic is full **throw an error**:
 
 `Sorry, we are not able to accept more patients!`
 

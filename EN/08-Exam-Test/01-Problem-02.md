@@ -26,9 +26,9 @@ Implement the following classes: `Pet`, `Cat`, `Dog`.
 
 Should have these **3 properties:**
 
-* **owner** - string; 
-* **name** - string;
-* **comments** - array;
+* **owner** - string
+* **name** - string
+* **comments** - array
 
 - `addComment(comment)`
 
@@ -63,10 +63,10 @@ The `Cat` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-* **owner** - string,  
-* **name** - string, 
-* **insideHabits** - string,
-* **scratching** - boolean,
+* **owner** - string
+* **name** - string
+* **insideHabits** - string
+* **scratching** - boolean
 
 - `feed()`:
 
@@ -96,8 +96,8 @@ The `Dog` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-- **owner** - string,  
-- **name** - string, 
+- **owner** - string
+- **name** - string
 - **runningNeeds** - string
 - **trainability** - string 
 
