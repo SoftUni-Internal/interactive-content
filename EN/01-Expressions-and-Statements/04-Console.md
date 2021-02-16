@@ -194,6 +194,7 @@ example('3');
 ```
 
 Here is how the program would work if we had a square with a side length equal to 3: 
+
 [image assetsSrc="expressions-and-statements-example.png" /]
 [/slide]
 
