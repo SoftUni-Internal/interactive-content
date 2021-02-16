@@ -57,7 +57,7 @@ console.log(town);
 
 [slide hideTitle]
 
-# Combining data with functions
+# Combining Data with Functions
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -89,11 +89,11 @@ rect.print();
 
 [slide hideTitle]
 
-# Printing objects
+# Printing Objects
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-7-printing-objects-tostring-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Printing objects using the `ToString()` function:
+Printing objects using the `toString()` function:
 
 ```js live
 let rect = {
