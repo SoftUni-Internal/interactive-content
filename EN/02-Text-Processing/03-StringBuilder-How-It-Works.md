@@ -1,3 +1,5 @@
+# Building and Modifying Strings
+
 [slide hideTitle]
 # StringBuilder: How It Works?
 Just like the `String`, the `StringBuilder` is a **sequence of characters**. 
