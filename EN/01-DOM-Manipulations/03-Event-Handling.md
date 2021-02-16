@@ -347,7 +347,8 @@ document.getElementById("parent-list")
 
 **Pros and Cons**
 
-Advantages:
+**Advantages:**
+
 - Code quality
 
 - Saving memory
@@ -356,7 +357,7 @@ Advantages:
 
 - Less DOM manipulations
 
-Disadvantages:
+**Disadvantages:**
 
 - Not all events bubble up
 
