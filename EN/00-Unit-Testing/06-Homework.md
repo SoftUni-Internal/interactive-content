@@ -1526,13 +1526,16 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Payment Package
+
 [code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
+[code-editor language=javascript]
 
 ```
 describe("Payment package", function(){
-
+   // Write your code here
 });
 ```
+
 [/code-editor]
 [task-description]
 # Description
