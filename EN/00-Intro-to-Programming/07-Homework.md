@@ -16,15 +16,6 @@ public class Main {
 }
 ```
 
-[hints]
-[hint]
-
-Test 123
-
-[/hint]
-[/hints]
-
-
 
 [/code-editor]
 [task-description]
@@ -33,6 +24,15 @@ Test 123
 Write a Java program, which:
 
 Prints "Hello Java" on the console.
+
+[hints]
+[hint]
+
+Test 123
+
+[/hint]
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
