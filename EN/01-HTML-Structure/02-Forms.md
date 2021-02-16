@@ -10,13 +10,13 @@
 
 An HTML form is used to collect user input, which is generally sent to a web server for processing and storage.
 
-It can also be used on the client-side to immediately update the interface in some way (for example by adding another item to a list or show or hide a UI feature).
+It can also be used on the client-side to immediately update the interface in some way (for example by adding another item to a list or to show or hide a UI feature).
 
 ## HTML `<form>` Tag
 
 The HTML `<form>` tag defines a form. It's a container element like `<main>` and `<section>`.
 
-The form contains interactive controls for submitting information. It takes input from the site visitor and posts it.
+The form contains interactive controls for submitting information. It receives input from the user and posts it.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="ZEbRVeG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZEbRVeG">
@@ -40,7 +40,7 @@ The form contains interactive controls for submitting information. It takes inpu
 
 The form attributes are optional, but it's standard practice to always set at least the **action** and **method** attributes.
 * The action attribute defines the URL, where the form's collected data should be send when it is submitted.
-* The method attribute defines which HTTP method to send the data with (GET/POST).
+* The method attribute defines how to send the form data via a HTTP request (GET/POST).
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="wvKXRJR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="wvKXRJR">
