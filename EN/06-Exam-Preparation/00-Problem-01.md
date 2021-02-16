@@ -34,7 +34,24 @@ After validating the input fields, **you need to add the new task (article)** to
 
 The HTML structure looks like this:
 
-[image assetsSrc="exam-prep-pic2.png" /]
+```js
+<section>
+   <div>
+      <h1 class="orange">Open</h1>
+   </div>
+   <div>
+      <article>
+         <h3>JS Advanced Exam</h3>
+         <p>Description: To organize the Exam</p>
+         <p>Due Date: 2020.04.14</p>
+         <div class="flex">
+            <button class="green">Start</button>
+            <button class="red">Delete</button>
+         </div>
+      </article>
+   </div>
+</section>
+```
 
 The article should have two buttons `Start` and `Delete`. 
 
@@ -46,7 +63,24 @@ When the `Start` button is clicked, **you need to move the Task** to the `In Pro
 
 The HTML structure looks like this: 
 
-[image assetsSrc="exam-prep-pic3.png" /]
+```js
+<section>
+   <div>
+      <h1 class="yellow">In Progress</h1>
+   </div>
+   <div>
+      <article>
+         <h3>JS Exam preparation</h3>
+         <p>Description: To make tasks for JS Advanced Exam</p>
+         <p>Due Date: 2020.03.15</p>
+         <div class="flex">
+            <button class="red">Delete</button>
+            <button class="orange">Finish</button>
+         </div>
+      </article>
+   </div>
+</section>
+```
 
 When the `Delete` button is clicked, the Task (the whole article) **should be removed from the HTML.**
 
@@ -56,7 +90,20 @@ The buttons, including their parent `div` element, should be removed.
 
 [image assetsSrc="exam-prep-pic4.png" /]
 
-[image assetsSrc="exam-prep-pic5.png" /]
+```js
+<section>
+   <div>
+      <h1 class="green">Complete</h1>
+   </div>
+   <div>
+      <article>
+         <h3>Angular 8.0</h3>
+         <p>Description: To prepare my project</p>
+         <p>Due Date: 2020.02.22</p>
+      </article>
+   </div>
+</section>
+```
 
 **Submit your solution in the body of the `solve()`` function.**
 
