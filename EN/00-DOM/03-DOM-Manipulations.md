@@ -32,15 +32,15 @@ Here are the four ways to select an element:
 
 Here are a few ways to utilize them:
 
-- `p` - Selects element based on **type** (In this case: `<p>`).
+- `p` - Selects element based on **type** (In this case: `<p>`)
 
-- `.container` - Selects **all** elements with the "container" **class**.
+- `.container` - Selects **all** elements with the "container" **class**
 
-- `#idNumber` - Selects a **single** element with the "idNumber" **id**.
+- `#idNumber` - Selects a **single** element with the "idNumber" **id**
 
-- `input[type="text"]` - Selects **all** input fields that are of type "text".
+- `input[type="text"]` - Selects **all** input fields that are of type "text"
 
-- `#idNumber, .container` - Selects the element with an "idNumber" id **and** all the elements with the `container` class.
+- `#idNumber, .container` - Selects the element with an "idNumber" id **and** all the elements with the `container` class
 
 [/slide]
 
@@ -54,16 +54,16 @@ DOM elements can be **read** and **manipulated** with JavaScript.
 
 Here are some of the **methods** and **properties** which are used in the process:
 
-- `.innerHTML` - A property for **accessing** and **changing** the HTML of an element.
+- `.innerHTML` - A property for **accessing** and **changing** the HTML of an element
 
-- `.attributes` - A property that returns all attributes of an element in a collection. 
+- `.attributes` - A property that returns all attributes of an element in a collection
 
-Every item in that collection has **two** values - **attribute** and **value**.
+Every item in that collection has **two** values - **attribute** and **value**
 
-- `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute.
+- `.setAttribute()` - A method, used to **add** an attribute to an element, or **update** it, if the element already has the given attribute
 
 
-- `.style` - A property, used to **directly** update the **CSS** of an element.
+- `.style` - A property, used to **directly** update the **CSS** of an element
 
 ```js
 <h1 id="title">This is the title of a website</h1>
@@ -74,15 +74,15 @@ let h1 = document.getElementById("title");
 h1.style.color = "blue"; // .color selects the CSS property to be changed and "blue" specifies its value
 ```
 
-- `.removeChild()` - A method, that **removes** and **returns** a child from an HTML element.
+- `.removeChild()` - A method, that **removes** and **returns** a child from an HTML element
 
-- `.appendChild()` - A method, that **adds** a child to the **back** of an element.
+- `.appendChild()` - A method, that **adds** a child to the **back** of an element
 
-- `.replaceChild()` - A method, that **replaces** one HTML element with another. 
+- `.replaceChild()` - A method, that **replaces** one HTML element with another
 
 It takes two parameters - the element to be replaced and the element to replace it with.
 
-- `.document.write()` - A method, used to write text **directly** into the HTML document.
+- `.document.write()` - A method, used to write text **directly** into the HTML document
 
 [/slide]
 
@@ -146,7 +146,7 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Problem with Solution: Articles List
 
-[code-task title="Articles List" taskId="js-advanced-DOM-lab-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function articlesList(){
   // Write your code here
@@ -548,7 +548,7 @@ This is an example of some HTML to work on:
 
 And here are a few of the common methods:
 
-- `getAttribute()` - Returns the value of the element's attribute. 
+- `getAttribute()` - Returns the value of the element's attribute
 
 Accepts **one** parameter - **the attribute name**.
 
@@ -566,7 +566,7 @@ let input = document.getElementById("first-input");
 input.setAttribute("name", "username"); // Sets the value of the name attribute to "username"
 ```
 
-- `removeAttribute()` - **Removes** from the given HTML element. 
+- `removeAttribute()` - **Removes** from the given HTML element 
 
 Accepts one parameter - **the name of the attribute**.
 
@@ -575,7 +575,7 @@ let input = document.getElementById("first-input");
 input.removeAttribute("name"); // Removes the name attribute of the input
 ```
 
-- `hasAttribute()` - **Returns a boolean** if the specified attribute is present or not. 
+- `hasAttribute()` - **Returns a boolean** if the specified attribute is present or not
 
 Takes one parameter - **the name of the attribute**.
 
@@ -601,9 +601,9 @@ const h1 = document.getElementById("title").classList;
 
 `classList` has two methods, which **create** or **delete** a CSS class:
 
-- `add()` - Accepts the name of the class as a parameter and adds it to the element.
+- `add()` - Accepts the name of the class as a parameter and adds it to the element
 
-- `remove()` - Accepts the name of the class as a parameter and deletes it from the element.
+- `remove()` - Accepts the name of the class as a parameter and deletes it from the element
 
 ```js
 let h1 = document.getElementById("title");
@@ -619,7 +619,7 @@ h1.classList.remove("first"); //removes the "first" class
 
 # Problem with Solution: Growing Word
 
-[code-task title="Growing Word" taskId="js-advanced-DOM-lab-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function growingWord(){
   // Write your code here
@@ -663,7 +663,7 @@ Every time when we **click** on the `[CHANGE]` button, **the color** and **the s
 
 - If we click **three times**, the current color of that paragraph should be changed to **red** and the font size should be **8** (4 \* 2)
 
-- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**. 
+- If our paragraph already has a **red color**, on the next click, the color should turn to **blue**
 
 Just loop throw these three colors (blue, green, red) again and again and again... while you are clicking on that button.
 

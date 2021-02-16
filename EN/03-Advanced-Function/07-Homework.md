@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Add
-[code-task title="Problem: Add" taskId="js-advanced-advanced-functions-homework-add" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Add" taskId="js-advanced-advanced-functions-homework-add" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function add() {
     // Write your code here
@@ -98,7 +98,7 @@ yes
 
 [slide hideTitle]
 # Problem: Currency Format
-[code-task title="Problem: Currency Format" taskId="js-advanced-advanced-functions-homework-Currency-Format" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Currency Format" taskId="js-advanced-advanced-functions-homework-Currency-Format" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function currencyFormatter(separator, symb, symbolFirst, value) {
     // Write your code here
@@ -217,7 +217,7 @@ yes
 
 [slide hideTitle]
 # Problem: Filter Employees
-[code-task title="Problem: Filter Employees" taskId="js-advanced-advanced-functions-homework-Filter-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Filter Employees" taskId="js-advanced-advanced-functions-homework-Filter-Employees" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 
@@ -401,7 +401,7 @@ filterEmployees('\[\{"id": "1","first_name": "Kaylee","last_name": "Johnson","em
 
 [slide hideTitle]
 # Problem: Sort Array
-[code-task title="Problem: Sort Array" taskId="js-advanced-advanced-functions-homework-Sort-Array" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Sort Array" taskId="js-advanced-advanced-functions-homework-Sort-Array" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function sortArray(data, type) {
@@ -743,7 +743,7 @@ yes
 
 [slide hideTitle]
 # Problem: Personal BMI
-[code-task title="Problem: Personal BMI" taskId="js-advanced-advanced-functions-homework-Personal-BMI" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Personal BMI" taskId="js-advanced-advanced-functions-homework-Personal-BMI" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function personalBmi(name, age, weight, heightCm) {
@@ -772,13 +772,13 @@ The patient chart object must contain the following properties:
   
 The status is one of the following:
 
-- **underweight**, for BMI less than 18.5;
+- **underweight**, for BMI less than 18.5
   
-- **normal**, for BMI less than 25;
+- **normal**, for BMI less than 25
   
-- **overweight**, for BMI less than 30;
+- **overweight**, for BMI less than 30
   
-- **obese**, for BMI 30 or more;
+- **obese**, for BMI 30 or more
   
 Once the BMI and status are calculated, you can make a recommendation. 
 
@@ -936,7 +936,7 @@ yes
 [slide hideTitle]
 # Problem: Vector Math
 
-[code-task title="Problem: Vector Math" taskId="js-advanced-advanced-functions-homework-Vector-Math" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Vector Math" taskId="js-advanced-advanced-functions-homework-Vector-Math" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function vectorMath() {
@@ -1149,7 +1149,7 @@ yes
 
 [slide hideTitle]
 # Problem: Breakfast Robot
-[code-task title="Problem: Breakfast Robot" taskId="js-advanced-advanced-functions-homework-Breakfast-Robot" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Breakfast Robot" taskId="js-advanced-advanced-functions-homework-Breakfast-Robot" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function breakfastRobot() {

@@ -88,15 +88,15 @@ Defining a function `printContext()` which checks if `this===global` (`this===wi
 
 Creating an object **user** with two methods:
 - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
-- `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console.
+- `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console
 
 Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
 
-`let globalFunction = user.printAnotherContext;` Now we define a new function, and we are assigning the method **printAnotherContext** from the **user** object to it. 
+`let globalFunction = user.printAnotherContext;` Now we define a new function, and we are assigning the method **printAnotherContext** from the **user** object to it
 
 Returns **true**, because now `this` is called by the function **globalFunction** and not from the user object's method. 
 
-`this` is indeed equal to **global**.
+`this` is indeed equal to **global**
 
 - `user.printAnotherContext();` will return **false** because `printAnotherContext()` is a method of the object **user** and `this` will return the object itself like it did with the **printContext** method
 

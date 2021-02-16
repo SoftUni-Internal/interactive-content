@@ -3,7 +3,7 @@
 [slide hideTitle]
 
 # Problem: Person and Teacher
-[code-task title="Problem: Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Person and Teacher" taskId="js-advanced-prototypes-and-inheritance-person-and-teacher" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function personAndTeacher() {
@@ -85,7 +85,7 @@ yes
 [slide hideTitle]
 
 # Problem: Inheriting and Replacing ToString
-[code-task title="Problem: Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Inheriting and Replacing ToString" taskId="js-advanced-prototypes-and-inheritance-inheriting-and-replacing-toString" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function toStringExtension() {
@@ -173,7 +173,7 @@ yes
 [slide hideTitle]
 
 # Problem: Array Extension
-[code-task title="Problem: Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Array Extension" taskId="js-advanced-prototypes-and-inheritance-array-extension" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function arrayExtension() {
@@ -669,7 +669,7 @@ yes
 
 # Problem: People
 
-[code-task title="Problem: People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="People" taskId="js-advanced-prototypes-and-inheritance-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function people() {
@@ -1171,7 +1171,7 @@ yes
 
 # Problem: Posts
 
-[code-task title="Problem: Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Posts" taskId="js-advanced-prototypes-and-inheritance-posts" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function posts() {
@@ -1197,11 +1197,11 @@ Implement the following classes:
 
 - **SocialMediaPost**, which inherits the **Post** class and should be initialized with **2 additional arguments** - **likes** (Number) and **dislikes** (Number). The class should hold:
 
-   - **comments**(Strings) - an array of strings.
+   - **comments**(Strings) - an array of strings
 
-   - **addComment**(comment)- a function which **adds** comments to that array.
+   - **addComment**(comment)- a function which **adds** comments to that array
 
-   - The class should extend the `toString()` function of the **Post** class, and should return the following result:
+   - The class should extend the `toString()` function of the **Post** class, and should return the following result
 
     ```
       Post: {postTitle}
@@ -1214,13 +1214,13 @@ Implement the following classes:
 
 In case **there are no comments**, return information only about the **title**, **content**, and the **rating** of the **post**.
 
-- **BlogPost**, which inherits the **Post** class:
+- **BlogPost**, which inherits the **Post** class
 
-   - The **BlogPost** class should be initialized with **1 additional argument** - **views**(Number).
+   - the **BlogPost** class should be initialized with **1 additional argument** - **views**(Number)
 
-   - The **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**.
+   - the **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**
 
-   - The **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result:
+   - the **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result
 
    ```
    Post: {postTitle}
@@ -1427,7 +1427,7 @@ yes
 
 # Problem: Computer
 
-[code-task title="Problem: Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Computer" taskId="js-advanced-prototypes-and-inheritance-computer" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
    function computer() {

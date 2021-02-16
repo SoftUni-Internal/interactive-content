@@ -18,6 +18,6 @@
 
 **3. Prototype Chain**
 
--  What is the Prototype Chain
+-  What the Prototype Chain is
 
 [/slide]

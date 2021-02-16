@@ -64,11 +64,11 @@ console.log(town);
 We can also combine data using functions, that is because functions are also objects in JavaScript.
 
 The way we add a function to the object:
-- first, we have the function name `grow`.
-- followed by `:`.
-- then the keyword `function`.
-- parameters(if such exists) inside parentheses of the function.
-- finally, curly braces containing the scope of the function.
+- First, we have the function name `grow`
+- Followed by `:`
+- Then the keyword `function`
+- Parameters(if such exists) inside parentheses of the function
+- Finally, curly braces containing the scope of the function
 
 ```js live
 let rect = {
