@@ -75,7 +75,7 @@ let responseObj = \{"status": "200", "Content-Type": "application/json", json: (
 
 var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
 
-document.body.innerHTML = `\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>`;
+document.body.innerHTML = \`\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>\`;
 
 \\$('\#stopId').val('1308');
 result();
@@ -102,7 +102,7 @@ let responseObj = \{"status": "404", json: () =\> \{return \{\}\}\};
 
 var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
 
-document.body.innerHTML = `\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>`;
+document.body.innerHTML = \`\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>\`;
 
 \\$('\#stopId').val('111');
 result();
