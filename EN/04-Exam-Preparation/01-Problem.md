@@ -15,18 +15,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive an **initial list with groceries separated by** "!".
+You will receive an **initial list with groceries separated by** "!" (exclamation point).
 
-After that, you will be receiving **4 types of commands until you receive** "Go Shopping!"
+After that, you will be receiving **4 types of commands until you receive** the "Go Shopping!" command.
 
 - Urgent \{item\} - **add the item at the start** of the list
-    - If the item **already exists, skip this command**
+    - **Skip** this command if the tiem does not exist
 
-- Unnecessary \{item\} - **remove the item with the given name**.
-
+- Unnecessary \{item\} - **remove the item with the given name**
     - **Only if it exists in the list**. **Otherwise, skip** this command
-- Correct \{oldItem\} \{newItem\} - **if the item with the given name exists**, **change its name** with the new one
-    - If it **doesn't exist, skip** this command
+- Correct \{oldItem\} \{newItem\} - **Swap the old item** with the new item, **if it exists**
+    - **Skip** this command if the tiem does not exist
 
 - Rearrange \{item\} - if the item **exists in the list**, **remove it from its current** position and **add it at the end of the list**
 
@@ -34,7 +33,7 @@ After that, you will be receiving **4 types of commands until you receive** "Go 
 - There will not be any duplicate items in the initial list
 
 ### Output
-**Print the list with all the groceries, joined by** ", ".
+**Print the groceries list, joined by** ", "** (a comma followed by a single space between the items).
 - "\{firstGrocery\}, \{secondGrocery\}, … \{nthGrocery\}"
 
 ### Example
