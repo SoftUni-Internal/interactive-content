@@ -10,13 +10,13 @@
 
 HTML5 uses **semantic tags** for the document structure.
 
-The semantic element clearly describes its meaning to both the **browser** and the **developer**.
+Semantic elements clearly describe their meaning to both the **browser** and the **developer**.
 
 Examples of **non-semantic elements** are \<div\>, \<span\> because they tell nothing about its content.
 
-Examples of **semantic elements** are \<section\>, \<header\>, \<article\> . They define its content.
+Examples of **semantic elements** are \<section\>, \<header\>, \<article\>. They define its content.
 
-In HTML there are some semantic elements, that can be used to define different parts of a web page:
+In HTML there are semantic elements, that can be used to define different parts of a web page:
 
 * `<article>`
 * `<aside>`
@@ -62,11 +62,11 @@ The `<nav>` tag defines a set of navigation links.
 [stream language="RO" videoId="445187592" /]
 [/video-vimeo]
 
-The `<header>` tag specifies a header for a document or section.
+The `<header>` tag specifies a header for a document or a section.
 
 This tag should be used as a **container for introductory content**.
 
-You can have several `<header>` tags in one document.
+We can have several `<header>` tags in one document.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="vYNrQwZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYNrQwZ">
@@ -86,11 +86,11 @@ You can have several `<header>` tags in one document.
 
 The `<main>` tag specifies the main content of a document.
 
-It's content should be unique to the document.
+Its content should be unique to the document.
 
-There must not be more than one `<main>` tag in a document.
+We should only have one `<main>` tag in a document.
 
-`<main>` tag wraps the most important information in the body.
+The `<main>` tag wraps the most important information in the body.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="MWaXzdd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="MWaXzdd">
@@ -108,11 +108,11 @@ There must not be more than one `<main>` tag in a document.
 [stream language="RO" videoId="445187595" /]
 [/video-vimeo]
 
-The `<footer>` tag represents a footer for a document or section.
+The `<footer>` tag represents a footer for a document or a section.
 
 Usually, a `<footer>` tag contains information about the author, copyright data or links to related documents.
 
-You may have several `<footer>` tags in one document.
+We may have several `<footer>` tags in one document.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="PoPaxrR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="PoPaxrR">
@@ -132,7 +132,7 @@ You may have several `<footer>` tags in one document.
 
 The HTML `<section>` tag represents a standalone section, which doesn't have a more specific semantic tag to represent it.
 
-Typically, but not mandatory, sections have a heading.
+Typically sections have a heading however it's not mandatory.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="OJyEaKZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="OJyEaKZ">
@@ -150,7 +150,7 @@ Typically, but not mandatory, sections have a heading.
 [stream language="RO" videoId="445187602" /]
 [/video-vimeo]
 
-Тhe HTML `<aside>` tag defines some content aside from the content it is placed in.
+Тhe HTML `<aside>` tag defines content aside from the content it is placed in.
 
 Asides are frequently presented as sidebars or call-out boxes.
 
@@ -194,7 +194,7 @@ The `<details>` tag specifies additional details, that the user can view or hide
 
 A summary or label can be provided using the `<summary>` element.
 
-If the first child of the `<details>` element is a `<summary>`, the contents of the `<summary>` element are used as the label for the disclosure widget.
+If the first child of the `<details>` element is a `<summary>`, the contents of the `<summary>` element are used as a label for the disclosure widget.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="XWmYopd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="XWmYopd">
@@ -212,8 +212,8 @@ If the first child of the `<details>` element is a `<summary>`, the contents of 
 [stream language="RO" videoId="445198037" /]
 [/video-vimeo]
 
-* The `<time>` tag defines a human-readable date/time. It may include the datetime attribute to translate dates into a machine-readable format.
-* The HTML `<address>` element indicates that the enclosed HTML provides contact information like email address, URL, physical address, phone number, social media handle, etc.
+* The `<time>` tag defines a readable date/time. It may include the datetime attribute to translate dates into a machine-readable format.
+* The HTML `<address>` element indicates that the enclosed HTML provides contact information like an email address, a URL, a physical address, a phone number, social media handle, etc.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="softuni-inter" data-slug-hash="LYprMxL" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="LYprMxL">
