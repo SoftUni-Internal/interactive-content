@@ -34,7 +34,7 @@ For example:
 [/slide]
 
 [slide hideTitle]
-# Map Implementations
+# Collections of Key and Value Pairs
 
 The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as:
 
@@ -215,6 +215,24 @@ HashMap<String, Integer> airplanes = new HashMap<>();
 airplanes.put("Boeing 737", 130);
 System.out.println(airplanes.isEmpty());
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# HashMap: Put()
+
+[/slide]
+
+[slide hideTitle]
+
+# HashMap: Remove()
+
+[/slide]
+
+[slide hideTitle]
+
+# TreeMap<K, V> - Example
 
 [/slide]
 

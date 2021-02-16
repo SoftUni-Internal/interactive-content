@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Lambda Expressions
+# Lambda Functions
 
 A lambda expression is an **anonymous function** containing **expressions and statements**. 
 
