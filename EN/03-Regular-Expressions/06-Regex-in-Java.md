@@ -1,8 +1,6 @@
-# Regex in Java
-
 [slide hideTitle]
 
-# Built-In Regex Classes 
+# Regex in Java
 
 The `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
@@ -38,11 +36,12 @@ These are the steps that the previous exampel follows:
 [/slide]
 
 [slide hideTitle]
-# Matcher methods
 
-There are several **matcher methods** in Java:
+# Checking for a Single Match
 
-- `find()` - Scans the input sequence looking for the next subsequence that matches the pattern
+The `find()` method scans the input sequence looking for the next subsequence that matches the pattern.
+
+Check the following example:
 
 ```java live no-template
 import java.util.regex.Pattern;
@@ -63,6 +62,14 @@ public class Main {
     }
 } 
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Replacing with Regex
+
+There are **two** ways to replace a pattern with **Regex**:
 
 - `replaceAll()` - Replaces all the matched subsequences in the input with the given string value and returns the result
 
@@ -103,7 +110,13 @@ public class Main {
 }
 ```
 
-- `split(String pattern)` - Splits the text by the pattern, returns `String[]`
+[/slide]
+
+[slide hideTitle]
+
+# Splitting with Regex
+
+The `split(String pattern)` method splits the text by the pattern and returns a `String[]`.
 
 ```java live
 String text = "1   2 3      4";
@@ -113,8 +126,8 @@ String[] tokens = text.split(pattern);
 
 System.out.println(String.join(", ",tokens));
 ```
-[/slide]
 
+[/slide]
 
 [slide hideTitle]
 # Problem with Solution: Match Full Name

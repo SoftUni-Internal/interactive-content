@@ -33,7 +33,7 @@
 
 [slide hideTitle]
 
-# Grouping
+# Grouping Constructs
 
 We can split regex into **groups** and we can use these groups to **extract information** about **part of the match**.
 

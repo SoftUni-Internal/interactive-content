@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Character Classes
+# Character Classes: Ranges
 
 In the **context of regular expressions**, a character class is a **set of characters enclosed within square brackets**. 
 

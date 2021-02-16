@@ -22,3 +22,9 @@ You can **play** with **regex live** at:
 
 [/slide]
 
+[slide hideTitle]
+
+# Regular Expression Patterns - Example
+
+[/slide]
+
