@@ -130,7 +130,7 @@ The `stopImmediatePropagation()` method prevents other listeners of the same eve
 [/slide]
 
 [slide hideTitle]
-# Problem: List Of Items
+# Problem with Solution: List Of Items
 
 [code-task title="List Of Items" taskId="Js-Advanced-Dom-Manipulations-lab-List-Of-Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
@@ -145,88 +145,6 @@ function listOfItems(){
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/JS-Advanced-DOM-Manipulations-Lab-01.List-Of-Items.zip) **for this task.**
 
-Create a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
-
-# Example
-[image assetsSrc="Dom-Manipulation(3).png" /]
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-document.body.innerHTML = \`
-\<h1\>List of Items\</h1\>
-    \<main\>
-        \<ul id="items"\>
-            \<li\>First\</li\>
-            \<li\>Second\</li\>
-        \</ul\>
-        \<input type="text" id="newItemText" /\>
-        \<input type="button" value="Add""\>
-    \</main\>
-\`;
-
-document.getElementById('newItemText').value = 'new mode';
-
-result();
-
-let liElements = document.getElementsByTagName('li');
-
-assert.equal(liElements.length, 3, 'List items count is invalid');
-assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-document.body.innerHTML = \`
-\<h1\>List of Items\</h1\>
-    \<main\>
-        \<ul id="items"\>
-            \<li\>First\</li\>
-            \<li\>Second\</li\>
-        \</ul\>
-        \<input type="text" id="newItemText" /\>
-        \<input type="button" value="Add" onclick="addItem()"\>
-    \</main\>
-\`;
-
-\\$('\#newItemText').val('new mode');
-result();
-
-\\$('\#newItemText').val('Fourth Grade');
-result();
-
-let liElements = document.getElementsByTagName('li');
-
-assert.equal(liElements.length, 4, 'List items count is invalid');
-assert.equal(liElements\[2\].textContent, 'new mode', 'The new list item contains something different');
-assert.equal(liElements\[3\].textContent, 'Fourth Grade', 'The new list item contains something different');
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide hideTitle]
-# Solution: List Of Items
-[code-task title="List Of Items" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
-
-```
-function listOfItems(){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
 Create a function that **reads** a text inside an input field and **appends** the specified text to a list inside an HTML page.
 
 # Example
