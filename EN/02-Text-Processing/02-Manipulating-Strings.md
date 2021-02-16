@@ -1,9 +1,11 @@
+# Manipulating Strings
+
 [slide hideTitle]
 # Concatenating
 
 There are **two** ways to concatenate a `String`:
 
-- Using `+` or `+=` operators
+- Using the `+` or `+=` operators
 
 ```java live
 String text = "Hello" + ", " + "SoftUni";
@@ -13,7 +15,7 @@ text += "!";
 System.out.println(text); // "Hello, SoftUni!"
 ```
 
-- Using `concat()` method
+- Using the `concat()` method
 
 ```java live
 String greet = "Hello, ";
@@ -30,6 +32,8 @@ System.out.println(result); // "Hello, SoftUni!"
 [slide hideTitle]
 
 # Joining Strings
+
+TODO: Add content or video
 
 [/slide]
 

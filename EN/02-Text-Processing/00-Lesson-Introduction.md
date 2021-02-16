@@ -17,7 +17,7 @@
 
 - Collection of Key and Value pairs
 
-**2. Manipulation Strings**
+**2. String Manipulation**
 
 - String concatenation
 

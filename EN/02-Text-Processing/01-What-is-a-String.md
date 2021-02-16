@@ -1,3 +1,5 @@
+# Strings
+
 [slide hideTitle]
 # What is a String?
 

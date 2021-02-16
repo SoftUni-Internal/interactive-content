@@ -64,7 +64,7 @@ System.out.println(sb.capacity()); // 25
 
 # Concatenation vs StringBuilder
 
-- **Concatenating** strings is a **slow** operation because each iteration creates a **new String**
+**Concatenating** strings is a **slow** operation because each iteration creates a **new String**
 
 Copy the following code and run it locally:
 
@@ -170,7 +170,7 @@ sb.append("Hello Peter, how are you?");
 System.out.println(sb.charAt(1)); // e
 ```
 
-- `replace(int startIndex, int endIndex, String str)` Replaces the characters in a substring.
+- `replace(int startIndex, int endIndex, String str)` - Replaces the characters in a substring.
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
