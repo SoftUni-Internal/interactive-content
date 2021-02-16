@@ -3,9 +3,7 @@
 [slide hideTitle]
 
 # Problem: Bus Stop
-
-[code-task title="Bus Stop" taskId="js-applications-rest-services-and-ajax-bus-stop" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Bus Stop" taskId="js-applications-rest-services-and-ajax-bus-stop" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function busStop(){
