@@ -25,7 +25,9 @@ console.dir(history);
 console.dir(document);
 ```
 
-The **window** is the global object in the browser. All global variables are its **properties** and all global functions are its **methods**.
+The **window** is the global object in the browser. 
+
+All global variables are its **properties** and all global functions are its **methods**.
 
 ```js
 var name = "Steven";
