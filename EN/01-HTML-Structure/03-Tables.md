@@ -8,7 +8,7 @@
 [stream language="RO" videoId="445198061" /]
 [/video-vimeo]
 
-HTML table allows web authors to arrange data into **rows** and **columns**. Through CSS you can add a border between the cells.
+HTML tables allow web authors to arrange data into **rows** and **columns**. Through CSS we can add borders between cells.
 
 ## HTML `<table>` Tag
 
@@ -60,7 +60,7 @@ These elements are used to specify each part of a table (header, body, footer).
 
 ## Cells that Span Many Columns or Rows
 
-If needed you can make a cell span more than one column/row using `colspan`/`rowspan` attributes:
+If needed, we can create a cell span more than one column/row using `colspan`/`rowspan` attributes:
 * `colspan` attribute is used for columns;
 * `rowspan` attribute is used for rows.
 
