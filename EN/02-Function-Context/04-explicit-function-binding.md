@@ -35,7 +35,7 @@ It is an outside function but still behaves as though `speak()` is a method that
 
 [slide hideTitle]
 
-# Changing the Context: Call
+# Changing the Context: Call()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-18-19-changing-the-context-call-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -84,7 +84,7 @@ Every time we used `call()` the context of `this` was different.
 
 [slide hideTitle]
 
-# Changing the Context: Apply
+# Changing the Context: Apply()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-20-changing-the-context-apply-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -119,7 +119,7 @@ functionName.call(thisContext, ...[yourArray]);
 
 [slide hideTitle]
 
-# Apply() - Example
+# Example of Apply()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-21-apply-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -141,7 +141,7 @@ firstPerson.shareInfo.apply(secondPerson);
 
 [slide hideTitle]
 
-# Changing the Context: Bind
+# Changing the Context: Bind()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-22-changing-the-context-bind-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -216,7 +216,7 @@ This is known as function borrowing in JavaScript.
 
 [slide hideTitle]
 
-# Bind() - Example
+# Example of Bind()
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-23-bind-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
