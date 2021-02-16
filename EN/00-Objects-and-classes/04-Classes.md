@@ -105,7 +105,7 @@ dog.speak();
 [stream language="RO" videoId="489795144/890591bfdb"  /]
 [/video-vimeo]
 
-[code-task title="Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cats" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function cats(input){
