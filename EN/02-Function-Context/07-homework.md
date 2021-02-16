@@ -4,7 +4,7 @@
 
 # Problem: Company
 
-[code-task title="Problem: Company" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Company" taskId="js-advanced-function-context-company" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 class Company {
@@ -200,7 +200,7 @@ yes
 [slide hideTitle]
 # Problem: Fibonacci
 
-[code-task title="Problem: Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Fibonacci" taskId="js-advanced-function-context-fibonacci" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 
 function fibonacci() {
@@ -322,7 +322,7 @@ yes
 [slide hideTitle]
 # Problem: HEX
 
-[code-task title="Problem: HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="HEX" taskId="js-advanced-function-context-hex" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 
 ```
@@ -485,7 +485,7 @@ yes
 [slide hideTitle]
 # Problem: Table
 
-[code-task title="Problem: Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Table" taskId="js-advanced-function-context-table" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function table(){
@@ -808,7 +808,7 @@ yes
 [slide hideTitle]
 # Problem: Next Article
 
-[code-task title="Problem: Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Next Article" taskId="js-advanced-function-context-next-article" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function getArticleGenerator(articles) {

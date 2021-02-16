@@ -278,7 +278,7 @@ To prevent this, we can also **freeze** the object property, and then the value 
 
 # Problem with Solution: Person
 
-[code-task title="Problem: Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Person" taskId="js-advanced-function-context-lab-Person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 class Person{
     // Write your code here
