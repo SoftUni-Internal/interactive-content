@@ -2,9 +2,10 @@
 
 [slide hideTitle]
 # Problem: Even Or Odd
-[code-task title="Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
+
 [code-editor language=javascript]
-```js
+```
 
 ```
 [/code-editor]
@@ -174,7 +175,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Char Lookup
-[code-task title="Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
+
 [code-editor language=javascript]
 ```js
 
@@ -413,8 +415,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Math Enforcer
-[code-task title="Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
+
 ```js
 
 ```
@@ -899,8 +902,9 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: String Builder
-[code-task title="String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
+
 ```js
 
 ```
@@ -1514,7 +1518,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Payment Package
-[code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```js
 
