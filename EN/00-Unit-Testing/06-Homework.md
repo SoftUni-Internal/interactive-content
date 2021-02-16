@@ -1004,20 +1004,15 @@ User,w Hello, there
 [tests]
 [test open]
 [input]
-```
 //\<minTestCount\>5\</minTestCount\> - specifies the minimum amount of tests your code should have.
 var PaymentPackage = function () \{\};
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test open]
 [input]
-```
 PaymentPackage = class PaymentPackage \{
     constructor(name, value) \{
         this.name = name;
@@ -1088,12 +1083,9 @@ PaymentPackage = class PaymentPackage \{
         return output.join('\n');
     \}
 \};
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
