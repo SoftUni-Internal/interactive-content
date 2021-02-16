@@ -244,14 +244,14 @@ let classes = result()
         output = book.addClient('The Guardian', '100 symbols');
         output += '\n' + book.addClient('Goodreads', '30 symbols');
         output += '\n' + book.toString();
-        expectedOutput = `The Guardian has ordered a review for The Great Gatsby
+        expectedOutput = \`The Guardian has ordered a review for The Great Gatsby
 Goodreads has ordered a review for The Great Gatsby
 Title: The Great Gatsby is so much more than a love story
 Content: The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...
 Book: The Great Gatsby
 Orders:
 The Guardian - 100 symbols
-Goodreads - 30 symbols`
+Goodreads - 30 symbols\`
         expect(expectedOutput).to.be.equal(output, 'Incorrect output')
 [/input]
 [output]
@@ -327,11 +327,13 @@ yes
 [/test]
 [test]
 [input]
-// BookReview throw -- This customer has already ordered this review.
+// BookReview throw -- This client has already ordered this review.
 let classes = result()
-        let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        book.addCustomer('The Guardian', '100 symbols');         
-        expect(function()\{ book.addCustomer('The Guardian', '100 symbols'); \}).to.throw(Error, \`This customer has already ordered this review.\`)
+        let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', { name: 'The Great Gatsby', author: 'F Scott Fitzgerald' });
+        book.addClient('The Guardian', '100 symbols');
+               
+        expect(function(){ book.addClient('The Guardian', '100 symbols'); }).to.throw(Error, `This client has already ordered this review.`)
+    
 [/input]
 [output]
 yes
