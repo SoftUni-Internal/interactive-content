@@ -15,7 +15,17 @@ The stream does **not change the original data structure**, it provides result.
 
 Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
-The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. 
+The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**:  
+
+- `count()` 
+
+- `max()` 
+
+- `min()` 
+
+- `sum()` 
+
+These operations work according to the predefined implementation. 
 
 It is called **terminal operation** because in order to get the minimum value, for example, have to **traverse the values inside the stream** and get the result. 
 
