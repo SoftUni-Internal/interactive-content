@@ -1,21 +1,17 @@
+[slide hideTitle]
 # Problem 3: Veterinary Clinic
-
-[slide]
-# Description
 
 [code-task title="Veterinary Clinic" taskId="js-advanced-exam-veterinary-clinic" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 
 ```
 class VeterinaryClinic {
-    // TODO: implement this class...
+    // Write your code here
 }
 ```
 [/code-editor]
 [task-description]
-# Description
-
-## Your task
+# Your task
 
 Write a `VeterinaryClinic` class and implement the following functionality:
 
@@ -27,33 +23,37 @@ Receives `2` parameters at initialization of the class - **clinicName and capaci
 
 Should have these **3 properties:**
 
-`clinicName` – a property of type string;
-`capacity` – a property of type number;
-`customers` – initially an empty array;
+* **clinicName** - a property of type string;
+* **capacity** - a property of type number;
+* **customers** - initially an empty array;
 
 Hint: Add more properties like `totalProfit` and `currentWorkload` to help you complete the task. Read the problem description **until the end** to understand what is required.
 
-- `newCustomer(ownerName, petName, kind, procedures)`
+- `newCustomer(ownerName, petName, kind, procedures)`:
 
 The `ownerName`, `petName` and ``kind`` are of type **string** and the **procedures** are an **array** of strings. 
 
 This information will be used in the following `toString()` method.
 
-- `ownerName`
+- `ownerName`:
 
-A **string** that stores the name of the current pet owner. One owner **may have more than one pet** under their name. Design the customer's structure wisely so you can collect all the provided information.
+A **string** that stores the name of the current pet owner. 
 
-- `petName`
+One owner **may have more than one pet** under their name. Design the customer's structure wisely so you can collect all the provided information.
+
+- `petName`:
 
 A **string** containing the name of the current pet.
 
-- `kind` 
-A **string** that stores the current kind of pet. Be **careful** of the capitalization of the input string. You will need to print it out in **lowercase** later on.
+- `kind`:
 
+A **string** that stores the current kind of pet. 
+
+Be **careful** of the capitalization of the input string. You will need to print it out in **lowercase** later on.
 
 Once stored information about **ownerName**, **petName**, and **kind** stays in the clinic's data, even after the pet has been healed.
 
-- `procedures` 
+- `procedures`: 
 
 An **array** of strings that stores the procedures that need to be performed on the current pet. 
 
@@ -67,7 +67,9 @@ When the pet is healed and leaves the clinic, **its array of procedures must be 
 
 `Sorry, we are not able to accept more patients!`
 
-- Check if the pet is already registered under this owner's name. If it is registered and still has a full list of procedures, you should **throw an error:**
+- Check if the pet is already registered under this owner's name. 
+
+If it is registered and still has a full list of procedures, you should **throw an error:**
 
 `This pet is already registered under { ownerName } name! { petName } is on our lists, waiting for { all their procedures separated by ', ' }.`
 
@@ -75,7 +77,7 @@ When the pet is healed and leaves the clinic, **its array of procedures must be 
 
 `Welcome { petName }!`
 
-- `onLeaving (ownerName, petName)`
+- `onLeaving (ownerName, petName)`:
 
 Check if the given `ownerName` corresponds to a customer in the **customers array**, if not **throw an error:**
 
@@ -85,19 +87,21 @@ Then check if the given `petName` is registered under this `ownerName`, if not o
 
 `Sorry, there are no procedures for { petName }!`
 
-Otherwise, on leaving **generate** bill of the current customer, add it to the total profit of the clinic and save the data. Consider the cost of each procedure to be `500.00$`. 
+Otherwise, on leaving **generate** bill of the current customer, add it to the total profit of the clinic and save the data. 
+
+Consider the cost of each procedure to be `500.00$`. 
 
 Do not forget to **update** the current **workload**. 
 
 Clear the **procedures array** for the current pet. 
 
-When a pet leaves the clinic, `petName` and **kind** should be kept in the clinic\'s data, but the **procedures array** should be cleared.
+When a pet leaves the clinic, `petName` and **kind** should be kept in the clinic's data, but the **procedures array** should be cleared.
 
 After that return, the following string:
 
 `Goodbye { petName }. Stay safe!`
 
-- `toString()`
+- `toString()`:
 
 **Return** the full clinic's status information.
 
@@ -123,7 +127,7 @@ All owners should be returned in **alphabetical order**, along with all their pe
 `---{ petName } - a { kind } that needs: { procedures separated by ', '}`
 
 
-# Examples
+## Examples
 This is an example of how the code is **intended to be used:**
 
 **Sample code usage** 
