@@ -20,12 +20,12 @@ You will receive an **initial list with groceries separated by** "!" (exclamatio
 After that, you will be receiving **4 types of commands until you receive** the "Go Shopping!" command.
 
 - Urgent \{item\} - **add the item at the start** of the list
-    - **Skip** this command if the tiem does not exist
+    - **Skip** this command if the item does not exist
 
 - Unnecessary \{item\} - **remove the item with the given name**
     - **Only if it exists in the list**. **Otherwise, skip** this command
 - Correct \{oldItem\} \{newItem\} - **Swap the old item** with the new item, **if it exists**
-    - **Skip** this command if the tiem does not exist
+    - **Skip** this command if the item does not exist
 
 - Rearrange \{item\} - if the item **exists in the list**, **remove it from its current** position and **add it at the end of the list**
 
