@@ -212,7 +212,7 @@ clearInterval(intervalID);
 [/slide]
 
 [slide hideTitle]
-# Problem: Add Delete
+# Problem with Solution: Add Delete
 [code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-lab-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function addDelete(){
@@ -232,101 +232,6 @@ Clicking on it should delete the item with no confirmation.
 # Example
 [image assetsSrc="Dom-Manipulation(4).png" /]
 
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-document.body.innerHTML = \`
-\<h1\>List of Items\</h1\>
-\<ul id="items"\>
-\</ul\>
-\<input type="text" id="newText" /\>
-\<input type="button" value="Add"  onclick="addItem()"\>
-\`;
-
-document.getElementById('newText').value = 'First';
-result();
-
-document.getElementById('newText').value = 'Second';
-result();
-
-let items = \$('\#items li');
-
-// Verify items where added with delete links
-expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
-expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
-expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
-expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
-
-// Setup event
-var clickEvent = document.createEvent('MouseEvents');
-clickEvent.initEvent('click', true, true);
-items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
-
-expect(\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-document.body.innerHTML = \`
-\<h1\>List of Items\</h1\>
-\<ul id="items"\>
-\</ul\>
-\<input type="text" id="newText" /\>
-\<input type="button" value="Add"  onclick="addItem()"\>
-\`;
-
-document.getElementById('newText').value = 'First';
-result();
-
-document.getElementById('newText').value = 'Second';
-result();
-
-let items = \$('\#items li');
-
-// Verify items where added with delete links
-expect(items.get(0).innerHTML).to.contains('First', "Element wasn't added.");
-expect(items.get(0).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
-expect(items.get(1).innerHTML).to.contains('Second', "Element wasn't added.");
-expect(items.get(1).innerHTML).to.contains('\<a href="\#"\>\[Delete\]\</a\>', "Delete link wasn't added.");
-
-// Setup event
-var clickEvent = document.createEvent('MouseEvents');
-clickEvent.initEvent('click', true, true);
-items.eq(1).find('a').get(0).dispatchEvent(clickEvent);
-
-expect(\$('\#items li').length).to.equal(1, "Correct element wasn't deleted.");
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Add Delete
-[code-task title="Add Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
-```
-function addDelete(){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-Extend the previous problem to display a `[Delete]` link after each list item. 
-
-Clicking on it should delete the item with no confirmation.
-
-# Example
-[image assetsSrc="Dom-Manipulation(4).png" /]
 
 [/task-description]
 [code-io /]
