@@ -12,9 +12,7 @@ class Bank {
 ```
 [/code-editor]
 [task-description]
-# Description
-
-## Your Task
+# Your Task
 
 Write a **Bank** class that implements the following functionality:
 
@@ -161,14 +159,14 @@ let totalMoney4 = bank.withdrawMoney(1111111, 125);
 expect(totalMoney4).to.equal('375\\$', 'Function withdrawMoney returns incorrect totalMoney');
 
 let output = bank.customerInfo(1111111);
-let expectedOutput = `Bank name: SoftUni Bank
+let expectedOutput = \`Bank name: SoftUni Bank
 Customer name: Svetlin Nakov
 Customer ID: 1111111
 Total Money: 375\\$
 Transactions:
-3. Svetlin Nakov withdrew 125\\$!
-2. Svetlin Nakov made a deposit of 250\\$!
-1. Svetlin Nakov made a deposit of 250\\$!`;
+3\. Svetlin Nakov withdrew 125\\$!
+2\. Svetlin Nakov made a deposit of 250\\$!
+1\. Svetlin Nakov made a deposit of 250\\$!\`;
 expect(expectedOutput).to.be.equal(output, 'Incorrect output');
 [/input]
 [output]
@@ -290,7 +288,7 @@ let name = 'SoftUniBank';
 
 let bank = new Bank(name);
 
-expect(()=\>bank.depositMoney(6233267, 200)).to.throw(Error, `We have no customer with this ID!`);
+expect(()=\>bank.depositMoney(6233267, 200)).to.throw(Error, \`We have no customer with this ID!\`);
 [/input]
 [output]
 yes
@@ -329,7 +327,7 @@ bank.depositMoney(55555555, 155);
 let totalMoney = bank.withdrawMoney(55555555, 154);
 expect(totalMoney).to.equal('1\\$', 'Function returns incorrect totalMoney');
 
-expect(()=\>bank.withdrawMoney(55555555, 100)).to.throw(Error, `Pesho Ivanov does not have enough money to withdraw that amount!`);
+expect(()=\>bank.withdrawMoney(55555555, 100)).to.throw(Error, \`Pesho Ivanov does not have enough money to withdraw that amount!\`);
 [/input]
 [output]
 yes
@@ -369,15 +367,15 @@ bank.withdrawMoney(9265667, 133);
 
 let info = bank.customerInfo(9265667);
 
-let output = `Bank name: SoftUniBank
+let output = \`Bank name: SoftUniBank
 Customer name: Svetlin Nakov
 Customer ID: 9265667
 Total Money: 300\\$
 Transactions:
-4. Svetlin Nakov withdrew 133\\$!
-3. Svetlin Nakov withdrew 150\\$!
-2. Svetlin Nakov made a deposit of 333\\$!
-1. Svetlin Nakov made a deposit of 250\\$!`;
+4\. Svetlin Nakov withdrew 133\\$!
+3\. Svetlin Nakov withdrew 150\\$!
+2\. Svetlin Nakov made a deposit of 333\\$!
+1\. Svetlin Nakov made a deposit of 250\\$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
@@ -403,17 +401,17 @@ bank.withdrawMoney(123123123, 25);
 
 let info = bank.customerInfo(123123123);
 
-let output = `Bank name: Some Name
+let output = \`Bank name: Some Name
 Customer name: Svetlin Nakov
 Customer ID: 123123123
 Total Money: 337\\$
 Transactions:
-6. Svetlin Nakov withdrew 25\\$!
-5. Svetlin Nakov withdrew 125\\$!
-4. Svetlin Nakov made a deposit of 356\\$!
-3. Svetlin Nakov withdrew 111\\$!
-2. Svetlin Nakov made a deposit of 21\\$!
-1. Svetlin Nakov made a deposit of 221\\$!`;
+6\. Svetlin Nakov withdrew 25\\$!
+5\. Svetlin Nakov withdrew 125\\$!
+4\. Svetlin Nakov made a deposit of 356\\$!
+3\. Svetlin Nakov withdrew 111\\$!
+2\. Svetlin Nakov made a deposit of 21\\$!
+1\. Svetlin Nakov made a deposit of 221\\$!\`;
 
 expect(info).to.be.equal(output, 'Function prints incorrect answer');
 [/input]
