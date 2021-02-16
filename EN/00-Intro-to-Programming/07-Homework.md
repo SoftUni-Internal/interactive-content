@@ -28,7 +28,7 @@ Prints "Hello Java" on the console.
 [hints]
 [hint]
 
-Test 123
+Type in the console: System.out.println("Hello Java");
 
 [/hint]
 [/hints]
