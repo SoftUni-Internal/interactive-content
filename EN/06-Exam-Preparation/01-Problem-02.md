@@ -264,8 +264,9 @@ yes
 let classes = result()
 let longContent = 'Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?Yes, its damn true.SpaceX in its recent launch Dragon 2 Flight has used a technology based on Chromium and Javascript. What are your views on this ?'
          
-expect(function()\{new classes.ShortReports('SpaceX and Javascript', longContent, \{ title: 'Dragon 2', author: 'wikipedia.org' \})\})
-        .to.throw(Error, 'Short reports content should be less than 150 symbols.')
+expect(function(){new classes.ShortReports('SpaceX and Javascript', longContent, { title: 'Dragon 2', author: 'wikipedia.org' })})
+        .to.throw(Error, 'Short reports content should be less then 150 symbols.')
+        
 [/input]
 [output]
 yes
@@ -329,9 +330,8 @@ yes
 // BookReview throw -- This customer has already ordered this review.
 let classes = result()
         let book = new classes.BookReview('The Great Gatsby is so much more than a love story', 'The Great Gatsby is in many ways similar to Romeo and Juliet, yet I believe that it is so much more than just a love story. It is also a reflection on the hollowness of a life of leisure. ...', \{ name: 'The Great Gatsby', author: 'F Scott Fitzgerald' \});
-        book.addCustomer('The Guardian', '100 symbols');
-               
-        expect(function()\{ book.addCustomer('The Guardian', '100 symbols'); \}).to.throw(Error, `This customer has already ordered this review.`)
+        book.addCustomer('The Guardian', '100 symbols');         
+        expect(function()\{ book.addCustomer('The Guardian', '100 symbols'); \}).to.throw(Error, \`This customer has already ordered this review.\`)
 [/input]
 [output]
 yes
