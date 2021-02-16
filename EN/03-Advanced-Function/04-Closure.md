@@ -72,7 +72,7 @@ Every time we call the function `func()` the counter will be output to the conso
 [slide hideTitle]
 # Problem with Solution: Command Processor
 
-[code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-Command-Processor" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function commandProcesso() {
@@ -129,12 +129,12 @@ Whenever you receive the command **print**, the output should be the **printed**
 [test]
 [input]
 // Acquire console
-let log \= \[\];
-let oldcon \= console\.log;
-console\.log \= \(string\) \=\> log\.push\(string\);
+let log\=\[\];
+let oldcon\=console\.log;
+console\.log\=\(string\)\=\>log\.push\(string\);
 
-let firstZero \= result\(\);
-let secondZero \= result\(\);
+let firstZero\=result\(\);
+let secondZero\=result\(\);
 
 firstZero\.append\('247'\);
 firstZero\.append\('86'\);
@@ -150,7 +150,7 @@ firstZero\.print\(\);
 secondZero\.print\(\);
 
 // Restore the console
-console\.log \= oldcon;
+console\.log\=oldcon;
 
 assert\.equal\(log\[0\], '78', 'Printed wrong value\.'\);
 assert\.equal\(log\[1\], 'low', 'Printed wrong value\.'\);
