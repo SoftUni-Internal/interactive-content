@@ -111,9 +111,9 @@ In the example above, the class `[abc]` matches any character that is either **a
 
 ## Anchors
 
-- `^` - the match must start at the beginning of the string or line
+- `^` - The match must start at the beginning of the string or line
 
-- `$` - the match must occur at the end of the string or before next line
+- `$` - The match must occur at the end of the string or before next line
 
 [image assetsSrc="regex-example(12).png" /]
 
