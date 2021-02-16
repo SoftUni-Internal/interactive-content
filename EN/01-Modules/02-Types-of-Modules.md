@@ -112,8 +112,8 @@ module.exports.currencyConverter = {
 
 Here are some commonly used ones:
 
-- The `http` module:
-    - Used to create an **HTTP server**:
+- The `http` module
+    - used to create an **HTTP server**
 
 ```js
 let http = require('http');
@@ -149,7 +149,7 @@ JavaScript's **built-in module statements always export and import an object**.
 
 Importing an object can be done in a few ways:
 
-- Importing a **specific function**:
+- Importing a **specific function**
 
 ```js
 import convertToUSD from './currencyConverter.js'
@@ -163,7 +163,7 @@ import * as convert from './currencyConverter.js'
 
 To import the whole object, we use an **asterisk**, followed by the **name** we want to use.
 
-- **Changing the name** after importing:
+- **Changing the name** after importing
 
 ```js
 import { toUSD as convertToUSD } from './currencyConverter.js'

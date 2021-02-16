@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Even Or Odd
-[code-task title="Problem: Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Even Or Odd" taskId="js-applications-Unit-Testing-Even-Or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -34,9 +34,9 @@ function isOddOrEven(input) {
 
 # Hints
 We can see there are three outcomes for the function:
-- Returning `undefined`.
-- Returning `even`.
-- Returning `odd`.
+- Returning `undefined`
+- Returning `even`
+- Returning `odd`
 
 Write one or two tests passing parameters that are **NOT** of type string to the function expecting it to return undefined.
 
@@ -174,7 +174,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Char Lookup
-[code-task title="Problem: Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Char Lookup" taskId="js-applications-Unit-Testing-Char-Lookup" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -186,13 +186,13 @@ Test Passed!
 Write **unit tests** for a function that retrieves a character at a given **index** from a **string**.
 
 You have a function called `lookupChar()` that has the following functionality:
-- lookupChar(string, index) - accepts a **string** and an **integer**, which is the index of the character we are looking for.
+- lookupChar(string, index) - accepts a **string** and an **integer**, which is the index of the character we are looking for
 
-- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - return **undefined**.
+- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - return **undefined**
 
-- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length or a negative number - `return Incorrect index`. 
+- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length or a negative number - `return Incorrect index` 
 
-- If both parameters have correct types and values, return the character at the specified index in the string.
+- If both parameters have correct types and values, return the character at the specified index in the string
 
 Here is the implementation of the `lookupChar()` function.
 
@@ -213,9 +213,9 @@ function lookupChar(string, index) {
 А good first step in testing a method is usually to determine all exit conditions. 
 
 Reading through the specification or taking a look at the implementation, we can determine three main exit conditions:
-- Returning `undefined`.
-- Returning an `empty string`.
-- Returning the `character at the specified index`.
+- Returning `undefined`
+- Returning an `empty string`
+- Returning the `character at the specified index`
 
 Now that we have our exit conditions, we start checking in what situations we can reach them.
 
@@ -413,7 +413,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Math Enforcer
-[code-task title="Problem: Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Math Enforcer" taskId="js-applications-Unit-Testing-Math-Enforcer" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -422,22 +422,22 @@ Test Passed!
 [task-description]
 ## Description
 
-Your task is to test an object called **mathEnforcer**, which will have the following functionality.
+Your task is to test an object called **mathEnforcer**, which will have the following functionality
 
-- `addFive(num)`: A function that accepts a **single** parameter.
+- `addFive(num)`: A function that accepts a **single** parameter
 
-    - If the parameter is **NOT** a **number**, the funtion should return **undefined**.
-    - If the parameter is a **number**, **add 5** to it, and return the result.
+    - if the parameter is **NOT** a **number**, the funtion should return **undefined**
+    - if the parameter is a **number**, **add 5** to it, and return the result
 
-- `subtractTen(num)`: A function that accepts a **single** parameter.
-    - If the parameter is **NOT** a **number**, the function should return **undefined**.
-    - If the parameter is a **number**, **subtract 10** from it, and return the result.
+- `subtractTen(num)`: A function that accepts a **single** parameter
+    - if the parameter is **NOT** a **number**, the function should return **undefined**
+    - if the parameter is a **number**, **subtract 10** from it, and return the result
 
-- `sum(num1, num2)`: A function that accepts **two** parameters.
-    - If any of the 2 parameters is NOT a number, the function should return undefined.
-    - If **both** parameters are **numbers**, the function should return their **sum**.
+- `sum(num1, num2)`: A function that accepts **two** parameters
+    - if any of the 2 parameters is NOT a number, the function should return undefined
+    - if **both** parameters are **numbers**, the function should return their **sum**
 
-Here is the implementation of the **mathEnforcer** object.
+Here is the implementation of the **mathEnforcer** object:
 
 ```js
 let mathEnforcer = {
@@ -490,9 +490,9 @@ All test cases you write should reference this variable.
 
 # Hints
 
-- Test how the program behaves when passing in negative values.
+- Test how the program behaves when passing in negative values
 
-- Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers.
+- Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers
 
 [/task-description]
 [code-io /]
@@ -899,7 +899,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: String Builder
-[code-task title="Problem: String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -958,13 +958,13 @@ The above code defines a class that holds characters (strings with length 1) in 
 
 An instance of the class should support the following operations:
 
-- Can be instantiated with a passed-in string argument or without anything.
-- Function `append(string)`: converts the passed-in string argument to an array and adds it to the end of the storage.
-- Function `prepend(string)`: converts the passed-in string argument to an array and adds it to the beginning of the storage.
-- Function `insertAt(string, index)`: converts the passed-in string argument to an array and adds it at the given index (there is no need to check if the index is in range).
-- Function `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range).
-- Function `toString()`: returns a string with all elements joined by an empty string.
-- All passed-in arguments should be strings. 
+- Can be instantiated with a passed-in string argument or without anything
+- Function `append(string)`: converts the passed-in string argument to an array and adds it to the end of the storage
+- Function `prepend(string)`: converts the passed-in string argument to an array and adds it to the beginning of the storage
+- Function `insertAt(string, index)`: converts the passed-in string argument to an array and adds it at the given index (there is no need to check if the index is in range)
+- Function `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range)
+- Function `toString()`: returns a string with all elements joined by an empty string
+- All passed-in arguments should be strings 
 
 If any of the parameters is not a string, throws a type error with the following message: `Argument must be a string`.
 
@@ -1514,7 +1514,7 @@ Test Passed!
 
 [slide hideTitle]
 # Problem: Payment Package
-[code-task title="Problem: Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```js
 
@@ -1601,12 +1601,12 @@ class PaymentPackage {
 The above code defines a class that contains information about a payment package. 
 
 An instance of the class should support the following operations:
-- Can be instantiated with two parameters: a string name and a number value.
-- Accessor **name**: gets and sets the value of "name".
-- Accessor **value**: gets and sets the value of "value".
-- Accessor **VAT**: gets and sets the value of "VAT".
-- Accessor **active**: gets and sets the value of "active".
-- Function `toString()`: returns a string containing an overview of the instance. 
+- Can be instantiated with two parameters: a string name and a number value
+- Accessor **name**: gets and sets the value of "name"
+- Accessor **value**: gets and sets the value of "value"
+- Accessor **VAT**: gets and sets the value of "VAT"
+- Accessor **active**: gets and sets the value of "active"
+- Function `toString()`: returns a string containing an overview of the instance
 
 If the package is not active, append the label `(inactive)` to the printed name.
 
@@ -1614,13 +1614,13 @@ When creating an instance or changing any of the property values, the parameters
 
 They must follow these rules:
 
-- **name**: a non-empty string.
+- **name**: a non-empty string
 
-- **value**: a non-negative number.
+- **value**: a non-negative number
 
-- **VAT**: a non-negative number.
+- **VAT**: a non-negative number
 
-- **active**: a Boolean.
+- **active**: a Boolean
 
 If any of the requirements are not met, the operation must throw an error.
 

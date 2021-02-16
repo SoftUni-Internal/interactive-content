@@ -12,7 +12,7 @@ It also provides the developers with the **necessary information**, where **erro
 
 We will write our own **test** before we start using some of the known frameworks.
 
-In the example below, we have a simple sorting function called`sortNums()`. 
+In the example below, we have a simple sorting function called `sortNums()`. 
 
 It sorts the numbers inside an array.
 

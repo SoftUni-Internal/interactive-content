@@ -12,10 +12,10 @@ Create a collection called **books** where each book have a **title**, an **auth
 
 You have to implement the following functionality:
 
-- List all books.
-- Create a new book.
-- Update a book.
-- Delete a book.
+- List all books
+- Create a new book
+- Update a book
+- Delete a book
 
 **List All Books**.
 
@@ -53,11 +53,11 @@ Create a new collection called "students".
 
 Each student has:
 
-- ID - a number, non-empty.
-- FirstName - a string, non-empty.
-- LastName - a string, non-empty.
-- FacultyNumber - a string of numbers, non-empty.
-- Grade - a number, non-empty.
+- ID - a number, non-empty
+- FirstName - a string, non-empty
+- LastName - a string, non-empty
+- FacultyNumber - a string of numbers, non-empty
+- Grade - a number, non-empty
 
 Write functionality for creating students.
 
@@ -91,9 +91,9 @@ Write REST services for a simple Western game.
 
 Create a collection called "players", each player having a name, money, and bullets to hold information about the players in the game.
 
-- name - a string representing the name of the current player.
-- money - an integer number representing the current player’s money.
-- bullets - an integer number representing the current bullets of the player.
+- name - a string representing the name of the current player
+- money - an integer number representing the current player’s money
+- bullets - an integer number representing the current bullets of the player
 
 HTML and JS
 
@@ -109,8 +109,8 @@ Whenever the "Save" button is pressed, the progress of the current player, if an
 
 Use a **PUT** request to update the data on the server:
 
-- The **canvas** and the buttons "Save" and "Reload" should be hidden.
-- The **clearInterval** should be called on the "canvas.intervarId" property, used for the main loop of the game.
+- The **canvas** and the buttons "Save" and "Reload" should be hidden
+- The **clearInterval** should be called on the "canvas.intervarId" property, used for the main loop of the game
 
 Whenever the "Reload" button is pressed, the player’s money should be **reduced by 60** and their bullets should be **set to 6**.
 
@@ -120,10 +120,10 @@ Each new player **starts** with **500 Money** and **6 bullets**.
 
 Pressing the "Play" button on a player should:
 
-- Call the "Save" button.
-- Display the canvas, "Save" and "Reload" buttons.
-- Call the "loadCanvas()" function from the "loadCanvas.js" file.
-- Pass to it the **new player** as an **object**, containing those properties name, money, and bullets.
+- Call the "Save" button
+- Display the canvas, "Save" and "Reload" buttons
+- Call the "loadCanvas()" function from the "loadCanvas.js" file
+- Pass to it the **new player** as an **object**, containing those properties name, money, and bullets
 
 When a player’s "Delete" button is pressed, the player should be deleted, both from the HTML and the server.
 

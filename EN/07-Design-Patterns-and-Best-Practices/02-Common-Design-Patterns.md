@@ -19,17 +19,17 @@ At any time new types of objects can be added to the manufacturing process of th
 
 This pattern is typically used when:
 
-- The setup of objects requires a high level of complexity.
+- The setup of objects requires a high level of complexity
 
 The logic for instantiating objects is encapsulated within the factory object and the client does not need to know the actual logic to use it.
 
 It calls upon the factory and receives the created object.
 
-- When you need to generate different instances of objects depending on the context.
+- When you need to generate different instances of objects depending on the context
 
 - When working with objects or components that share the same properties
 
-- When you need to create a **loosely coupled system**.
+- When you need to create a **loosely coupled system**
 
 ## When not to use
 
@@ -286,13 +286,13 @@ The **Observer** pattern facilitates a good object-oriented design and promotes 
 
 [image assetsSrc="js-application-design-patterns-15.png" /]
 
-- **Subject**: contains a collection of observers. 
+- **Subject**: contains a collection of observers
 
 It can add or remove observers as needed. Implements an interface that allows observed objects to be added or removed - `subscribe()`, `unsubscribe()`. 
 
 Sends notifications to the observers attached to it.
 
-- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state.
+- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state
 
 # Concept 
 

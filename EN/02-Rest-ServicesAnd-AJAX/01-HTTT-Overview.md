@@ -32,12 +32,12 @@ As we can see, the **client** sends a **request**, and the **server** sends a **
 
 The most used methods are:
 
--  **GET** retrieves or loads a resource.
--  **POST** creates or stores a resource.
--  **PUT** updates a resource.
--  **DELETE** removes a resource.
--  **PATCH** updates partially a resource.
--  **HEAD** retrieves headers of a resource.
+-  **GET** retrieves or loads a resource
+-  **POST** creates or stores a resource
+-  **PUT** updates a resource
+-  **DELETE** removes a resource
+-  **PATCH** updates partially a resource
+-  **HEAD** retrieves headers of a resource
 -  **OPTIONS** returns the HTTP methods that the server supports for the specified URL
 
 The HTTP methods are **case sensitive**.

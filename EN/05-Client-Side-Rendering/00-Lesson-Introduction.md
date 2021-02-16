@@ -21,16 +21,16 @@
 - Angular
 - Vue
 - Handlebars
-- Lit-html
+- lit-html
 - Web Components
 
 **4. Overview of lit-html**
 
 - How to install and use lit-html
 - Syntax overview
-  - Tagged templates
-  - Attribute and property bindings
-  - Handling events
-  - Conditional statemnts
+  - tagged templates
+  - attribute and property bindings
+  - handling events
+  - conditional statements
 
 [/slide]

@@ -5,7 +5,7 @@
 
 # In this lesson you learnt:
 
-- Unit tests check if certain functionality works as expected.
+- Unit tests check if certain functionality works as expected
 ```js
 it('expect sum ([1,2.3] to be 6)', function() {
     let expected = 6;
@@ -14,12 +14,13 @@ it('expect sum ([1,2.3] to be 6)', function() {
     })
 ```
 
-- Test-driven development (TDD).
-    - Tests are written first.
+- Test-driven development (TDD)
+    - tests are written first
 
 ## In the next lesson you will learn:
 
 - Modules
 
 - Types of modules
+
 [/slide]

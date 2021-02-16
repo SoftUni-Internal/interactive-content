@@ -30,7 +30,7 @@ Running code like this can **block an entire webpage** due to the waiting time o
 
 There are, however, several ways to go around JavaScript's synchronous nature:
 
-- `callback` - A callback is a function, which is **an argument to another function** and performs a certain operation inside of it.
+- `callback` - A callback is a function, which is **an argument to another function** and performs a certain operation inside of it
 
 ```js
 function calculateTax(income) {
@@ -45,7 +45,7 @@ function outer(callback) {
 outer(calculateTax); // outer is called with calculateTax as a callback
 ```
 
-- `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data.
+- `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data
 
 ```js
 let promise = new Promise(function (resolve, reject) {
@@ -53,7 +53,7 @@ let promise = new Promise(function (resolve, reject) {
 });
 ```
 
-- `async function` - Fundamentally **built on promises**, but much easier to use. Allows for a **cleaner and more readable code**.
+- `async function` - Fundamentally **built on promises**, but much easier to use. Allows for a **cleaner and more readable code**
 
 ```js
 async function getData(url) {

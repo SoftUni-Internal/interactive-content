@@ -5,13 +5,13 @@
 
 ## In this lesson you learned:
 
-- What is Relational Databases.
+- What is Relational Databases
 
-- What is a Non-Relational Databases.
+- What is a Non-Relational Databases
 
-- What is a BaaS.
+- What is a BaaS
 
-- Firebase is a JSON-based cloud database.
+- Firebase is a JSON-based cloud database
 
 
 ## In the next lesson you will learn:

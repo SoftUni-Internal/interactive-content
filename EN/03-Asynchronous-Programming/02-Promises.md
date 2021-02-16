@@ -12,15 +12,15 @@ Since the information **does not arrive immediately**, the whole function **must
 
 Synchronously getting resources from a database, for example, can **block an entire web page**.
 
-Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carries on with the execution**.
+Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to ** carry on with the execution**.
 
 These states are:
 
-- `Fulfilled` - The operation was completed with success.
+- `Fulfilled` - The operation was completed with success
 
-- `Rejected` - The operation has failed.
+- `Rejected` - The operation has failed
 
-- `Pending` - This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected.
+- `Pending` - This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected
 
 Promises are initialized with the `Promise` object;
 
@@ -46,7 +46,7 @@ Here is a visual representation of the chaining process:
 
 Promises offer a variety of useful methods for an easy and effective work process:
 
-- `Promise.reject(reason)` - Returns a `Promise` object, that has been **rejected for a specific reason**.
+- `Promise.reject(reason)` - Returns a `Promise` object, that has been **rejected for a specific reason**
 
 ```js live
 Promise.reject("There was an error!").then(
@@ -59,7 +59,7 @@ Promise.reject("There was an error!").then(
 );
 ```
 
-- `Promise.resolve(value)` - Returns a **resolved** `Promise` object with the provided value.
+- `Promise.resolve(value)` - Returns a **resolved** `Promise` object with the provided value
 
 If the value is a promise - **returns the promise**.
 
@@ -74,7 +74,7 @@ Promise.resolve("Operation was successful!").then(
 );
 ```
 
-- `Promise.all(iterable)` - Takes an array of promises and returns a single `Promise`, which **resolves** to an array of values, **if all the given promises are resolved**.
+- `Promise.all(iterable)` - Takes an array of promises and returns a single `Promise`, which **resolves** to an array of values, **if all the given promises are resolved**
 
 
 Otherwise, it would **reject immediately**.
@@ -91,7 +91,7 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object only after all of the given promises are **either resolved or rejected**.
+- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object only after all of the given promises are **either resolved or rejected**
 
 
 ```js live
@@ -163,7 +163,7 @@ Promise.resolve("Operation succeeded!")
 
 The `.then()` method makes chaining promises possible.
 
-It is used **after a promise has been initialized** and takes **two parameters** :
+It is used **after a promise has been initialized** and takes **two parameters**:
 
 - A callback function **if the promise is resolved**
 

@@ -53,7 +53,7 @@ They aid the writing of scalable code.
 
 Let us look at some of the most common design patterns from this category:
 
-- **Constructor**: this design pattern is class-based and is one of the most commonly used.
+- **Constructor**: this design pattern is class-based and is one of the most commonly used
 
 It is a basic language construct and it is often used when creating objects of any kind.
 
@@ -77,7 +77,7 @@ let harryPotter = new Book('Harry Potter', 'J. K. Rowling');
 console.log(harryPotter.getInfo());
 ```
 
-- **Factory**: the **factory pattern** is also widely used in programming.
+- **Factory**: the **factory pattern** is also widely used in programming
 
 It is another class-based pattern that deals with object creation.
 
@@ -85,7 +85,7 @@ The main difference between this and the other creational patterns is that it do
 
 [image assetsSrc="js-application-design-patterns-01.png" /]
 
-- **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects.
+- **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects
 
 This is achieved through prototypical inheritance which is natively supported in JavaScript.
 
@@ -97,7 +97,7 @@ This is typically used when the creation of an object through the constructor me
 
 [image assetsSrc="js-application-design-patterns-02.png" /]
 
-- **Singleton**: the **singleton pattern** is when you want to have a single instance of an object and provide global access to all clients that need to use it from a single endpoint.
+- **Singleton**: the **singleton pattern** is when you want to have a single instance of an object and provide global access to all clients that need to use it from a single endpoint
 
 [image assetsSrc="js-application-design-patterns-03.png" /]
 
@@ -116,23 +116,23 @@ By implementing these patterns you can introduce new functionalities without cha
 
 Some of the most common structural design patterns are:
 
-- **Decorator**: used when you need to add functionality to an existing class without the risk of introducing bugs into existing implementations of that class.
+- **Decorator**: used when you need to add functionality to an existing class without the risk of introducing bugs into existing implementations of that class
 
 Imagine you have a monumental class that is used throughout your application and changing anything inside it would affect the entire application.
 
 [image assetsSrc="js-application-design-patterns-04.png" /]
 
-- **Facade**: the **facade pattern** is used a lot in multi-layer applications where only certain logic and functionality needs to be exposed to different clients, shielding them from any complex business logic that clients do not need to be concerned with.
+- **Facade**: the **facade pattern** is used a lot in multi-layer applications where only certain logic and functionality needs to be exposed to different clients, shielding them from any complex business logic that clients do not need to be concerned with
 
 It is also useful in refactoring and almost always improves code usability.
 
 [image assetsSrc="js-application-design-patterns-05.png" /]
 
-- **Adapter**: the **adapter pattern** allows connecting programming components that normally cannot work together by translating one interface to another.
+- **Adapter**: the **adapter pattern** allows connecting programming components that normally cannot work together by translating one interface to another
 
 [image assetsSrc="js-application-design-patterns-06.png" /]
 
-- **Proxy**: the **proxy pattern** is implemented when an object acts as a surrogate or placeholder for another.
+- **Proxy**: the **proxy pattern** is implemented when an object acts as a surrogate or placeholder for another
 
 Typically the proxy object does extend the original object.
 
@@ -151,23 +151,23 @@ It is a placeholder with the possibility of adding some checks that help control
 
 Some commonly used patterns in this category are:
 
-- **Iterator**: provides a way to access the elements of a collection (aggregate object) without exposing the underlying representation.
+- **Iterator**: provides a way to access the elements of a collection (aggregate object) without exposing the underlying representation
 
 This is also known as "cursor".
 
 [image assetsSrc="js-application-design-patterns-08.png" /]
 
-- **Mediator**: this pattern is implemented by having a single object be responsible for the communication between various other modules of the application to avoid too many direct relationships between components.
+- **Mediator**: this pattern is implemented by having a single object be responsible for the communication between various other modules of the application to avoid too many direct relationships between components
 
 [image assetsSrc="js-application-design-patterns-09.png" /]
 
-- **Observer**: this is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods. 
+- **Observer**: this is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods
 
 The **Observer** pattern facilitates a good object-oriented design and promotes loose coupling.
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
-- **Visitor** - this pattern is useful when there is a collection of objects and new functionality needs to be added to them without changing the objects themselves.
+- **Visitor** - this pattern is useful when there is a collection of objects and new functionality needs to be added to them without changing the objects themselves
 
 The new logic is added to a new object called the **visitor**.
 
@@ -180,29 +180,30 @@ The new logic is added to a new object called the **visitor**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-9-10-benefits-and-drawbacks-of-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Design patterns **help solve issues in software development** by relying on **proven techniques**, benefitting from the collective experience of other programmers.
+- Design patterns **help solve issues in software development** by relying on **proven techniques**, benefitting from the collective experience of other programmers
 
-- The design pattern names and **established vocabulary** that comes with them aids in the **communication** between developers.
+- The design pattern names and **established vocabulary** that comes with them aids in the **communication** between developers
 
-- Design patterns are robust approaches to solving problems that can be adapted to suit the needs of the specific case where they are used.
+- Design patterns are robust approaches to solving problems that can be adapted to suit the needs of the specific case where they are used
 
 They are not set in stone and if a pattern does not work for you, you can always modify it.
 
-- They improve the software development process and can **reduce errors**.
+- They improve the software development process and can **reduce errors**
 
-- Design patterns are **scalable** and **reusable**.
+- Design patterns are **scalable** and **reusable**
 
-- Can **speed up development**, less time is spent on finding solutions.
+- Can **speed up development**, less time is spent on finding solutions
 
 # Drawbacks of Design Patterns
 
 [image assetsSrc="js-application-design-patterns-12.jpg" /]
 
-- Design patterns come with consequences and if applied incorrectly or without regard to how the application might change in the future they can cause problems.
+- Design patterns come with consequences and if applied incorrectly or without regard to how the application might change in the future they can cause problems
 
-- Patterns do not provide us with concrete code to use, they simply provide a possible approach to take when designing applications.
+- Patterns do not provide us with concrete code to use, they simply provide a possible approach to take when designing applications
 
-- They look simple, but they have intricacies and can be misunderstood and applied incorrectly. 
+- They look simple, but they have intricacies and can be misunderstood and applied incorrectly
+
 
 They should be used only if their benefits outweigh the cost of using them.
 

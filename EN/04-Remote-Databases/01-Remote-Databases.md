@@ -45,11 +45,11 @@ Non-relational databases are ideal for storing data that may be changed frequent
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pros of a Relational Database:**
-- Data structured into categories.
-- They support **ACID** transactional consistency and support "joins".
-- Built-in data integrity and a large eco-system.
-- Relationships in this system have constraints.
-- Limitless indexing.
+- Data structured into categories
+- They support **ACID** transactional consistency and support "joins"
+- Built-in data integrity and a large eco-system
+- Relationships in this system have constraints
+- Limitless indexing
 
 One of the benefits of using a Relational Database is that this type of database allows the user to classify the data into different categories and store them efficiently. 
 
@@ -62,11 +62,11 @@ The value of a primary key must not be **null**.
 Use indexes to quickly locate data without searching every row in a database table every time a database table is accessed.
 
 **Pros of a Non-Relational Database:**
-- Data is not confined to a structured group.
-- You can perform functions that allow for greater flexibility.
-- Scale-out horizontally.
-- High availability.
-- Many are **open source**.
+- Data is not confined to a structured group
+- You can perform functions that allow for greater flexibility
+- Scale-out horizontally
+- High availability
+- Many are **open source**
 
 NoSQL databases have become popular because they store data in straightforward forms that can be easier to understand than the type of data models used in SQL databases.
 

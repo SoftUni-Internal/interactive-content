@@ -23,15 +23,15 @@ We can define an application as a **Multi Page Application** when the **reload**
 
 Let us check some of the **pros**:
 
-- They perform very well in **search engines**.
+- They perform very well in **search engines**
 
-- They provide a **visual map** of the application when shared through a link in social media.
+- They provide a **visual map** of the application when shared through a link in social media
 
 Now have a look at the **cons**:
 
-- They are **complex to develop**.
+- They are **complex to develop**
 
-- The Front-End and the Back-End are **coupled**.
+- The Front-End and the Back-End are **coupled**
 
 [/slide]
 
@@ -71,21 +71,21 @@ Location-based SPAs need a special object called **Router**.
 
 Here are the **pros**:
 
-- They are a lot faster.
+- They are a lot faster
 
-- They load all of the needed scripts at **once**.
+- They load all of the needed scripts at **once**
 
-- With SPAs, we can use the browser **history**.
+- With SPAs, we can use the browser **history**
 
 - They provide better **UX**
 
 Let us see the cons:
 
-- They are not good at **SEO**.
+- They are not good at **SEO**
 
-   - The solution is the **server-side rendering**.
+   - The solution is the **server-side rendering**
 
-- They provide a **single sharing link**.
+- They provide a **single sharing link**
 
 - If we store data on the front-end, they can be less secure
 
@@ -159,11 +159,11 @@ They give us the ability to **personalize** the sent request to the API.
 
 Here are some use cases to use query parameters:
 
-- If we want to filter.
+- If we want to filter
 
-- If we want to sort.
+- If we want to sort
 
-- If we want to display the current page number in a pagination collection.
+- If we want to display the current page number in a pagination collection
 
 Have a look at this example:
 

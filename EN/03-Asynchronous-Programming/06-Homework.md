@@ -4,7 +4,7 @@
 
 # Problem: Forecaster
 
-[code-task title="Problem: Forecaster" taskId="js-applications-asynchronous-programming-Forecaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Forecaster" taskId="js-applications-asynchronous-programming-Forecaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -226,7 +226,7 @@ yes
 
 # Problem: Fisher Game
 
-[code-task title="Problem: Fisher Game" taskId="js-applications-asynchronous-programming-Fisher-Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Fisher Game" taskId="js-applications-asynchronous-programming-Fisher-Game" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```

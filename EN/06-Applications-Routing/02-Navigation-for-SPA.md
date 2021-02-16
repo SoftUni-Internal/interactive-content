@@ -143,11 +143,11 @@ The **PushState** method adds a new entry to the **history object** of the brows
 
 This method takes three parameters.
 
-- The **state** is associated with the new entry.
+- The **state** is associated with the new entry
 
-- The **Title** is ignored by most of the browser nowadays.
+- The **Title** is ignored by most of the browser nowadays
 
-- The **URL** is the new history entry, and it must be from the **same origin** as the current URL.
+- The **URL** is the new history entry, and it must be from the **same origin** as the current URL
 
 Here is an example:
 

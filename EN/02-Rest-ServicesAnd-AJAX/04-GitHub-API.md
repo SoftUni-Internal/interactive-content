@@ -10,10 +10,10 @@ To try GitHub's API we need Postman.
 
 In this examples we will see a **GET** requests to the following URLs:
 
--  To list all public repositories, the URL we need is: `https://api.github.com/users/SoftUni/repos`.
--  To list all commits from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/commits`.
--  To get the issues from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues`.
--  To get the first issue from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues/1`.
+-  To list all public repositories, the URL we need is: `https://api.github.com/users/SoftUni/repos`
+-  To list all commits from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/commits`
+-  To get the issues from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues`
+-  To get the first issue from a public repository, the URL we need is: `https://api.github.com/repos/softuni/js-apps/issues/1`
 
 [/slide]
 

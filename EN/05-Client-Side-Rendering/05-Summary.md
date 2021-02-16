@@ -5,20 +5,20 @@
 # In this lesson you learned:
 
 - Client-side rendering is prevalent in the modern web
-    - Enables instant user interaction
-    - Saves data by fetching dynamic content only
+    - enables instant user interaction
+    - saves data by fetching dynamic content only
 
 - Templates make our HTML modular
-    - Resulting in less repetitive code and fewer data to load
-    - They speed up and simplify our development process
+    - resulting in less repetitive code and fewer data to load
+    - they speed up and simplify our development process
 
 ```js
 html`<h1>I am ${user.name} and my favorite artists are ${user.favoriteArtists.join(', ')}.</h1>`
 ```
 
 - lit-html offers many functionalities
-    - Effective templates
-    - Can be extended using directives
+    - effective templates
+    - can be extended using directives
 
 ```js
 import { html, render } from 'lit-html';
@@ -41,7 +41,7 @@ render(greetingTemplate(), element);
 - Single Page Application​s
 - Navigation and History​
 - Routing with page.js
-    - Hash-based​
-    - Push-based​ 
+    - hash-based​
+    - push-based​ 
 
 [/slide]

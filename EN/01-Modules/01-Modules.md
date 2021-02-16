@@ -18,25 +18,25 @@ There are numerous benefits when it comes to using modules:
 
 - **Grouping related behavior**, enabling easier access in the future
 
-- Enables **storing** an application's codebase **across multiple files**, thus making code **easier to read** and understand.
+- Enables **storing** an application's codebase **across multiple files**, thus making code **easier to read** and understand
   
-- **Scope** is easier to control and maintain because **modules do not populate the global** scope.
+- **Scope** is easier to control and maintain because **modules do not populate the global** scope
   
-- **Errors are easier to track down** because they are **isolated to a smaller portion of the program**.
+- **Errors are easier to track down** because they are **isolated to a smaller portion of the program**
 
 # Approaches for Modules
 
 There are **three main ways** to create **modules** in your program:
 
-- Using **Immediately-Invoked Function Expressions**\(IIFE\);
+- Using **Immediately-Invoked Function Expressions**\(IIFE\)
 
-- Using Node.js `require` and `export`;
+- Using Node.js `require` and `export`
 
-- Using the `import/export` statements:
+- Using the `import/export` statements
   
-    - Built **directly into JavaScript**;
+    - built **directly into JavaScript**
 
-    - Before the introduction of **ES6** in 2015, modules were not native to JavaScript. 
+    - before the introduction of **ES6** in 2015, modules were not native to JavaScript.
     
 You can learn more [here](https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_–_ECMAScript_2015).
 

@@ -5,15 +5,15 @@
 
 # In this lesson you learnt:
 
-- What are modules in JavaScript?
+- What Javascript modules are
 
-	- A set of functions to be included in applications
+	- a set of functions to be included in applications
 
-    - Reusable pieces of code that supercharge our productivity
+    - reusable pieces of code that supercharge our productivity
 
 
 - IIFE Modules
-    - Enabling data encapsulation
+    - enabling data encapsulation
 
 ```js 
 var myModule = (function() {
@@ -32,9 +32,9 @@ console.log(people); // ReferenceError
 
 - Node\.js Modules
   
-	- The `module.exports` special object is used to export data or functionality
+	- the `module.exports` special object is used to export data or functionality
   
-    - We use `require()` to import them:
+    - we use `require()` to import them
 
 ```js
 const myModule = require("./myModule.js");

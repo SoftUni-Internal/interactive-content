@@ -124,7 +124,7 @@ The `render()` function is used to **render** a template to a **DOM container**:
 It accepts two parameters:
 
 - The **template** to render
-  - This template function accepts the dynamic **data** used to **populate** the template
+  - this template function accepts the dynamic **data** used to **populate** the template
 
 - The **parent node** to render it inside
 

@@ -14,9 +14,9 @@ This technique allows us to **dynamically** **load** and **render** content or d
 
 There are two types of **AJAX**:
 
--  **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads.
+-  **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads
 
--  **JSON service**, has a JSON object, which we need to parse.
+-  **JSON service**, has a JSON object, which we need to parse
 
 [/slide]
 
@@ -89,9 +89,9 @@ When the Promise is **completed**, it  **produces value**.
 
 They have states, which are:
 
-- **Pending** means that the operation is still running, or it is unfinished.
-- **Fulfilled** means that the operation is finished, and the result is available.
-- **Failed** means the operation failed, and an error is present.
+- **Pending** means that the operation is still running, or it is unfinished
+- **Fulfilled** means that the operation is finished, and the result is available
+- **Failed** means the operation failed, and an error is present
 
 To create a **Promise**, we use **Promise object** : `new Promise(executor);`
 
@@ -276,11 +276,11 @@ The response object has properties and methods.
 
 The methods are:
 
-- `clone()` will create a **clone** of the response.
-- `json()` will **parse** the response to JSON.
-- `redirect()` will create a copy of the response, but with a new name.
-- `text()` will **parse** the response to a text.
-- `arrayBuffer()` will return a promise that resolves with an **ArrayBuffer**.
+- `clone()` will create a **clone** of the response
+- `json()` will **parse** the response to JSON
+- `redirect()` will create a copy of the response, but with a new name
+- `text()` will **parse** the response to a text
+- `arrayBuffer()` will return a promise that resolves with an **ArrayBuffer**
 - `blob()` will take the response and return a promise that resolves with **Blob**
 - `formData()` will return a promise that resolves with a **FormData** object
 

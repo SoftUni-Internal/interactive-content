@@ -18,7 +18,7 @@
 
 **3. Navigation and History**
 
--  Browser Object Model
+-  Browser object model
 
 **4. Routing with page.js**
 

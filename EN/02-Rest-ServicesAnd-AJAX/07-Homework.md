@@ -4,7 +4,7 @@
 
 # Problem: Bus Stop
 
-[code-task title="Problem: Bus Stop" taskId="js-applications-rest-services-and-ajax-bus-stop" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bus Stop" taskId="js-applications-rest-services-and-ajax-bus-stop" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -219,7 +219,7 @@ yes
 
 # Problem: Bus Schedule
 
-[code-task title="Problem: Bus Schedule" taskId="js-applications-rest-services-and-ajax-bus-schedule" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bus Schedule" taskId="js-applications-rest-services-and-ajax-bus-schedule" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -418,7 +418,7 @@ yes
 
 # Problem: Messenger
 
-[code-task title="Problem: Messenger" taskId="js-applications-rest-services-and-ajax-Messenger" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Messenger" taskId="js-applications-rest-services-and-ajax-Messenger" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -541,7 +541,7 @@ yes
 
 # Problem: PhoneBook
 
-[code-task title="Problem: PhoneBook" taskId="js-applications-rest-services-and-ajax-phoneBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="PhoneBook" taskId="js-applications-rest-services-and-ajax-phoneBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```

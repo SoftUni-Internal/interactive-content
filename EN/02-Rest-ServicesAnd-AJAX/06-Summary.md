@@ -9,7 +9,7 @@
 
 -  REST is an architecture style for **client-server communication**
 
-   -  Based on **request-response**
+   -  based on **request-response**
 
 -  **REST requests:**
 
@@ -93,12 +93,12 @@
 
 ## In the next lesson you will learn:
 
--  Asynchronous Programming and Promises:
+-  Asynchronous Programming and Promises
 
-   -  What is Asynchronous Programming.
+   -  what asynchronous programming is
 
-   -  Deep dive into Promises.
+   -  deep dive into Promises
 
-   -  Async and await.
+   -  async and await
 
 [/slide]

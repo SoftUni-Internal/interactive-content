@@ -32,11 +32,11 @@ The browser **interprets** the HTML, making the page **visible**.
 
 To enable **interaction**, the browser **downloads** the necessary **scripts** from the server, and **runs them**.
 
-**Client side rendering** does most of the work on the client's machine.
+** Client-side rendering** does most of the work on the client's machine.
 
 When the browser makes a GET **request** to the website, a **Content Delivery Network** \(CDN\) serves the **static files** and the **scripts**.
 
-Then **JavaScript** makes **multiple requests** to a REST Service, continously **fetching data**.
+Then **JavaScript** makes **multiple requests** to a REST Service, continuously **fetching data**.
 
 Once the needed content is **downloaded**, JavaScript **generates** the **DOM elements**, resulting in a **view**.
 
@@ -64,9 +64,9 @@ Once the needed content is **downloaded**, JavaScript **generates** the **DOM el
 
 - Websites take **longer to load** for the **first time**
 
-- Requires more **powerful hardware** ot the **client side**, since **most of the work is done there**
+- Requires more **powerful hardware** to the **client-side**, since **most of the work is done there**
 
-- Requres a **library** in order to be **implemented**
+- Requires a **library** to be **implemented**
 
 [/slide]
 
@@ -108,28 +108,28 @@ When using client-side rendering, templates are used to create **DOM elements** 
 
 # Templating Benefits
 
-Templates bring a number of **benefits**.
+Templates bring several **benefits**.
 
 Here are the most prominent ones:
 
 - **Productivity**
-    - Templating results in **less repetitive code**
-    - They make our markup **easier to read** and interpret
+    - templating results in **less repetitive code**
+    - they make our markup **easier to read** and interpret
 
 - **Bandwidth Savings**
-    - The **HTML** is sent only **once**
-    - The **templating engine** takes care of similar elements
-    - Only the **data** for a given entity is being sent
+    - the **HTML** is sent only **once**
+    - the **templating engine** takes care of similar elements
+    - only the **data** for a given entity is being sent
 
 - **Composability**
-    - Allows for the use of a **single element on multiple pages**
-    - **Headers**, **Footers** and **Sidebars** are examples of that
+    - allows for the use of a **single element on multiple pages**
+    - **headers**, **Footers** and **Sidebars** are examples of that
 
 - **Separation of concerns**
-    - Isolating **HTML components** from the associated **content**
+    - isolating **HTML components** from the associated **content**
 
 - **Interactivity**
-    - Since only **dynamic data** is fetched, views can render **faster**, resulting in **less** waiting time
+    - since only **dynamic data** is fetched, views can render **faster**, resulting in **less** waiting time
 
 [/slide]
 
@@ -141,11 +141,11 @@ Here are the most prominent ones:
 These are some recommended templating practices:
 
 - Every template should be kept as **simple** as possible
-    - **Breaking up into smaller units** for better organisation
-    - It is recommended to store **each** template in its **own file**
+    - **breaking up into smaller units** for better organization
+    - it is recommended to store **each** template in its **own file**
 
 - Templates are comparable to **pure functions**
-    - The principles of **functional programming** can be applied to templates as well
+    - the principles of **functional programming** can be applied to templates as well
 
 
 [/slide]
