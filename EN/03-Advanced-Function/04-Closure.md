@@ -75,7 +75,7 @@ Every time we call the function `func()` the counter will be output to the conso
 [code-task title="Problem: Command Processor" taskId="js-advanced-advanced-functions-lab-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
-function commandProcesso() {
+function commandProcessor() {
     // Write your code here
 }
 ```
@@ -105,7 +105,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 
 | **Input** | **Output** |
 | --- | --- |
-| `let firstZeroTest = commandProcesso();` | loa | 
+| `let firstZeroTest = commandProcessor();` | loa | 
 |  |  |
 | `firstZeroTest.append('hello');` | |
 | `firstZeroTest.append('again');` | |
@@ -115,7 +115,7 @@ Whenever you receive the command **print**, the output should be the **printed**
 
 | **Input** | **Output** |
 | --- | --- |
-| `let secondZeroTest = commandProcesso();` | 34 | 
+| `let secondZeroTest = commandProcessor();` | 34 | 
 |  |  |
 | `firstZeroTest.append('123');` | |
 | `firstZeroTest.append('45');` | |
@@ -129,31 +129,31 @@ Whenever you receive the command **print**, the output should be the **printed**
 [test]
 [input]
 // Acquire console
-let log\=\[\];
-let oldcon\=console\.log;
-console\.log\=\(string\)\=\>log\.push\(string\);
+let log = \[\];
+let oldcon = console.log;
+console.log = (string) =\> log.push(string);
 
-let firstZero\=result\(\);
-let secondZero\=result\(\);
+let firstZero = result();
+let secondZero = result();
 
-firstZero\.append\('247'\);
-firstZero\.append\('86'\);
-firstZero\.removeStart\(2\);
-firstZero\.removeEnd\(1\);
+firstZero.append('247');
+firstZero.append('86');
+firstZero.removeStart(2);
+firstZero.removeEnd(1);
 
-secondZero\.append\('hello'\);
-secondZero\.append\('world'\);
-secondZero\.removeStart\(3\)
-secondZero\.removeEnd\(4\)
+secondZero.append('hello');
+secondZero.append('world');
+secondZero.removeStart(3)
+secondZero.removeEnd(4)
 
-firstZero\.print\(\);
-secondZero\.print\(\);
+firstZero.print();
+secondZero.print();
 
 // Restore the console
-console\.log\=oldcon;
+console.log = oldcon;
 
-assert\.equal\(log\[0\], '78', 'Printed wrong value\.'\);
-assert\.equal\(log\[1\], 'low', 'Printed wrong value\.'\);
+assert.equal(log\[0\], '78', 'Printed wrong value.');
+assert.equal(log\[1\], 'low', 'Printed wrong value.');
 [/input]
 [output]
 yes
@@ -161,10 +161,10 @@ yes
 [/test]
 [test]
 [input]
-/// Acquire console
-let log = [];
+// Acquire console
+let log = \[\];
 let oldcon = console.log;
-console.log = (string) => log.push(string);
+console.log = (string) =\> log.push(string);
 
 let firstZero = result();
 let secondZero = result();
@@ -185,8 +185,8 @@ secondZero.print();
 // Restore the console
 console.log = oldcon;
 
-assert.equal(log[0], '34', 'Printed wrong value.');
-assert.equal(log[1], 'loa', 'Printed wrong value.');
+assert.equal(log\[0\], '34', 'Printed wrong value.');
+assert.equal(log\[1\], 'loa', 'Printed wrong value.');
 [/input]
 [output]
 yes
