@@ -1528,7 +1528,7 @@ Test Passed!
 # Problem: Payment Package
 [code-task title="Payment Package" taskId="js-applications-Unit-Testing-Payment-Package" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
-```js
+```
 describe("Payment package", function(){
 
 });
