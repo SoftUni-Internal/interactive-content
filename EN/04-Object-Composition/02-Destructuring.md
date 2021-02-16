@@ -52,7 +52,7 @@ console.log(objectList);
 
 [slide hideTitle]
 
-# Nested Destructuring
+# Nested destructuring
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-10-nested-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -84,7 +84,7 @@ console.log(department);
 
 [slide hideTitle]
 
-# Destructuring Nested Arrays
+# Destructuring nested arrays
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-11-destructuring-nested-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -108,7 +108,7 @@ console.log(positions);
 [/slide]
 
 [slide hideTitle]
-# Objects and Array Destructuring
+# Objects and array destructuring
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-12-objects-and-arrays-destructuring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
