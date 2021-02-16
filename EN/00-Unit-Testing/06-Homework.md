@@ -13,7 +13,7 @@ describe('Even or odd', () => {
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 You need to write **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
 
@@ -187,7 +187,7 @@ describe('Char lookup', () => {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write **unit tests** for a function that retrieves a character at a given **index** from a **string**.
 
@@ -2500,4 +2500,3 @@ Test Passed!
 [/tests]
 [/code-task]
 [/slide]
-
