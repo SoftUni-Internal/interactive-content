@@ -6,6 +6,12 @@
 ```
 function solveClasses(){
   // Write your code here
+
+   return {
+      Pet,
+      Cat,
+      Dog
+   }
 }
 ```
 [/code-editor]
@@ -113,7 +119,18 @@ This **function** should extend the `toString()` method of the `Pet` class retur
 ## Submission
 Submit your `solveClasses` function.
 
-[image assetsSrc="exam-pic9.png" /]
+```js
+function solveClasses(){
+  // Write your code here
+
+   return {
+      Pet,
+      Cat,
+      Dog
+   }
+}
+
+```
 
 # Examples
 This is an example how the code is **intended to be used:**
