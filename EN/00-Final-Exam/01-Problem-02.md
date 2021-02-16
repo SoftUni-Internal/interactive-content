@@ -6,6 +6,12 @@
 ```
 function solveClasses(){
   // Write your code here
+
+   return {
+      Pet,
+      Cat,
+      Dog
+   }
 }
 ```
 [/code-editor]
@@ -20,9 +26,9 @@ Implement the following classes: `Pet`, `Cat`, `Dog`.
 
 Should have these **3 properties:**
 
-* **owner** - string; 
-* **name** - string;
-* **comments** - array;
+* **owner** - string
+* **name** - string
+* **comments** - array
 
 - `addComment(comment)`
 
@@ -57,10 +63,10 @@ The `Cat` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-* **owner** - string,  
-* **name** - string, 
-* **insideHabits** - string,
-* **scratching** - boolean,
+* **owner** - string
+* **name** - string
+* **insideHabits** - string
+* **scratching** - boolean
 
 - `feed()`:
 
@@ -90,8 +96,8 @@ The `Dog` class inherits from `Pet`.
 
 Should have these **4 properties:**
 
-- **owner** - string,  
-- **name** - string, 
+- **owner** - string
+- **name** - string
 - **runningNeeds** - string
 - **trainability** - string 
 
@@ -113,7 +119,18 @@ This **function** should extend the `toString()` method of the `Pet` class retur
 ## Submission
 Submit your `solveClasses` function.
 
-[image assetsSrc="exam-pic9.png" /]
+```js
+function solveClasses(){
+  // Write your code here
+
+   return {
+      Pet,
+      Cat,
+      Dog
+   }
+}
+
+```
 
 # Examples
 This is an example how the code is **intended to be used:**

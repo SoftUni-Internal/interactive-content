@@ -40,7 +40,25 @@ Do not forget to **clear the inputs** after a new pet is added or in case of inv
 
 Any new item that is added should have the **following structure:**
 
-[image assetsSrc="exam-pic3.png" /]
+```js
+<section id="adoption">
+   <h2>Find a new friend from here:</h2>
+   <ul>
+      <li>
+         <p>
+            <strong>Tom</strong>
+            " is a "
+            <strong>0.3</strong>
+            " year old "
+            <strong>cat</strong>
+         </p>
+         <span>Owner: Jim King</span>
+         <button>Contact with owner</button>
+      </li>
+      <li>...</li>
+   </ul>
+</section>
+```
 
 You should create a **list** element that contains a **paragraph** element with the name, age, and kind of the new pet (cat, dog, parrot, and so on). 
 
@@ -52,9 +70,28 @@ When the `[Contact Owner]` button is clicked, an input appears and the button ch
 
 [image assetsSrc="exam-pic4.png" /]
 
-The new elements should be placed inside a `div` element and ** the structure changes like so:**
+The new elements should be placed inside a `div` element and **the structure changes like so:**
 
-[image assetsSrc="exam-pic5.png" /]
+```js
+<ul>
+   <li>
+      <p>
+        <strong>Tom</strong>
+        " is a "
+        <strong>0.3</strong>
+        " year old "
+        <strong>cat</strong>
+      </p>
+      <span>Owner: Jim King</span>
+      <div>
+         <input placeholder="Enter your names">
+         <button>Yes! I take it!</button>
+      </div>
+   </li>
+   <li>...</li>
+</ul>
+
+```
 
 ## Moving pets into the new home section
 
@@ -67,7 +104,24 @@ Here we have changed the **owner's name** to the new one.
 
 We also have a `[Checked]` button:
 
-[image assetsSrc="exam-pic8.png" /]
+```js
+<section id="adopted">
+   <h2>Buddies with a new home:</h2>
+   <ul>
+      <li>
+         <p> 
+            <strong>Tom</strong>
+            " is a "
+            <strong>0.3</strong>
+            " year old "
+            <strong>cat</strong>
+         </p>
+         <span>New Owner: Lara Smith</span>
+         <button>Checked</button>
+      </li>
+   </ul>
+</section>
+```
 
 When clicked, the `[Checked]` button must **delete** the current list item.
 
