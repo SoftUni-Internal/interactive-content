@@ -9,16 +9,14 @@
 ## In this lesson you will learn:
 
 **1. Objects**
-- What object?
-- Definition
-- Properties
-- Methods
+- What an object is
+- Properties and methods
 
 **2. JSON**
-- Json files overview
+- JSON files overview
 
 **3. Classes**
-- What is class?
+- What a class is
 - Classes overview and syntax
 
 [/slide]
