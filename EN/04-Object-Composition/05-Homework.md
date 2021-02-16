@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Order Rectangles
-[code-task title="Problem: Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Order Rectangles" taskId="js-advanced-object-composition-Order-Rectangles" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function orderRectangles(input){
   // Write your code here
@@ -224,7 +224,7 @@ yes
 
 [slide hideTitle]
 # Problem: List Processor
-[code-task title="Problem: List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="List Processor" taskId="js-advanced-object-composition-List-Processor" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function listProcessor(input){
   // Write your code here
@@ -326,7 +326,7 @@ yes
 
 [slide hideTitle]
 # Problem: Object Factory
-[code-task title="Problem: Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Object Factory" taskId="js-advanced-object-composition-Object-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function objectFactory(input){
   // Write your code here
@@ -396,7 +396,7 @@ yes
 
 [slide hideTitle]
 # Problem: Cars
-[code-task title="Problem: Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Cars" taskId="js-advanced-object-composition-Cars" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function cars(input){
   // Write your code here
@@ -473,7 +473,7 @@ yes
 
 [slide hideTitle]
 # Problem: Sum
-[code-task title="Problem: Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Sum" taskId="js-advanced-object-composition-Sum" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function sum(){
@@ -577,7 +577,7 @@ yes
 
 [slide hideTitle]
 # Problem: Heroes
-[code-task title="Problem: Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Heroes" taskId="js-advanced-object-composition-Heroes" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function heroes(){
   // Write your code here
@@ -673,7 +673,7 @@ yes
 
 [slide hideTitle]
 # Problem: Construction Crew
-[code-task title="Problem: Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Construction Crew" taskId="js-advanced-object-composition-Construction-Crew" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function constructionCrew(input){
   // Write your code here
@@ -822,7 +822,7 @@ yes
 
 [slide hideTitle]
 # Problem: Car Factory
-[code-task title="Problem: Car Factory" taskId="js-advanced-Object-Composition-Car-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
+[code-task title="Car Factory" taskId="js-advanced-Object-Composition-Car-Factory" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
 function carFactory(input){
@@ -1067,7 +1067,7 @@ yes
 
 [slide hideTitle]
 # Problem: Extensible Object
-[code-task title="Problem: Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Extensible Object" taskId="js-advanced-object-composition-Extensible-Object" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function extensibleObject(){
@@ -1220,7 +1220,7 @@ yes
 
 [slide hideTitle]
 # Problem: String Extension
-[code-task title="Problem: String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="String Extension" taskId="js-advanced-object-composition-String-Extension" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function stringExtension(){
   // Write your code here
@@ -1405,7 +1405,7 @@ yes
 
 [slide hideTitle]
 # Problem: Sorted List
-[code-task title="Problem: Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Sorted List" taskId="js-advanced-object-composition-Sorted List" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 ```
 function sortedList(){
   // Write your code here

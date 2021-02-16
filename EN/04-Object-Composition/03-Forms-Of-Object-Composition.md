@@ -1,4 +1,4 @@
-# Forms Of Object Composition
+# Forms оf Object Composition
 
 [slide hideTitle]
 
