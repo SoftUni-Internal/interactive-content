@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Concatenating
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-7-8-manipulate-strings-concatenating-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **two** ways to concatenate a `String`:
 
 - Using the `+` or `+=` operators
@@ -33,12 +35,15 @@ System.out.println(result); // "Hello, SoftUni!"
 
 # Joining Strings
 
-TODO: Add content or video
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-9-joining-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Repeat strings
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-10-problem-and-solution-repeat-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Repeat strings" taskId="Java-Fundamentals-Part-Two-String-Processing-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -147,6 +152,8 @@ linearlinearlinearlinearlinearlinear
 
 # Substring
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-13-substring-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 As the name suggests, `substring` extracts only a **part** of a `String`.
 
 - `substring(int startIndex)` - Returns a **new String** containing the substring of the given string from specified **startIndex** (**inclusive**)
@@ -175,6 +182,8 @@ System.out.println(firstName); // John
 
 # Searching
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-14-searching-1-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 It is possible to search for the first or last occurences of a pattern in a string:
 
 - `indexOf()` - Returns the **first match index**, if there is **no match** returns **-1**
@@ -200,6 +209,9 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 
 [slide hideTitle]
 # Problem with Solution: Substring
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-16-problem-and-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Substring" taskId="Java-Fundamentals-Part-Two-String-Processing-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -301,6 +313,8 @@ stration
 
 # Splitting
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-18-splitting-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A `String` could be split by **one** or **multiple** criteria, using the `split()` method.
  
 - Splitting a string by a given **pattern**
@@ -333,6 +347,8 @@ System.out.println(String.join(", ",words));
 
 # Replacing
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-19-replacing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Java also makes it possible to make **replacements** in a String.
 
 - `replace(match, replacement)` - **Replaces all occurrences** and returns a **new String** (Strings are immutable)
@@ -349,6 +365,9 @@ System.out.println(replacedText);
 
 [slide hideTitle]
 # Problem with Solution: Text Filter
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-20-problem-and-solution-text-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Text Filter" taskId="Java-Fundamentals-Part-Two-String-Processing-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # StringBuilder: How It Works?
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-24-25-stringbuilder-how-it-works-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Just like the `String`, the `StringBuilder` is a **sequence of characters**. 
 
 The main difference between them is that the `StringBuilder` is **mutable(can be modified).**
@@ -31,6 +34,8 @@ The `capacity()` is always **greater than or equal** to the `length()` of the st
 
 [slide hideTitle]
 # Using StringBuilder Class
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-26-using-stringbuilder-class-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are several ways to initialize a `StringBuilder`:
 
@@ -63,6 +68,8 @@ System.out.println(sb.capacity()); // 25
 [slide hideTitle]
 
 # Concatenation vs StringBuilder
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-27-28-concatenation-vs-stringbuilder-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Concatenating** strings is a **slow** operation because each iteration creates a **new String**
 
@@ -105,6 +112,8 @@ The time of program execution is about 1 second, a lot faster than the concatena
 [slide hideTitle]
 
 # StringBuilder Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-29-stringbuilder-methods-1-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are some of **StringBuilder**'s methods and what they do:
 

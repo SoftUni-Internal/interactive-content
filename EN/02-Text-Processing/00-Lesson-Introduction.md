@@ -4,10 +4,7 @@
 
 # Lesson Content
 
-[vimeo-video]
-[stream language="EN" videoId="" default /]
-[stream language="RO" videoId="" /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## In this lesson you will learn:
 

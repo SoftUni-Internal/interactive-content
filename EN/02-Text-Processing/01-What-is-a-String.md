@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What is a String?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-3-4-what-is-a-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A **String** is an **object** that represents a **sequence of characters** - `char []`.
 
 [image assetsSrc="String-example(1).png" /]
@@ -41,7 +43,17 @@ The main **features** of **Strings** are:
 [/slide]
 
 [slide hideTitle]
+
+# Strings are Immutable
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-5-strings-are-immutable-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
 # Initializing a String
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-6-initializing-a-string-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are several ways to initialize a `String`:
 
