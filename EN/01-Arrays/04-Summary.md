@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 - Arrays hold a sequence of elements 
 - Creating (allocating) an array
 
