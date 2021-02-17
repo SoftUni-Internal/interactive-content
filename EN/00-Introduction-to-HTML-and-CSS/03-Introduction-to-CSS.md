@@ -12,7 +12,7 @@
 
 CSS describes how elements should be rendered on a screen.
 
-For example, if we want to change the color of the text to green and position the text in the center for all level one headings we would use this syntax:
+For example, if we want to change the color of the text to green and position the text in the center for all level one headings we would use this syntax (Notice the CSS tab):
 [html]
 <p class="codepen" data-height="240" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="vYNYqKm" style="height: 240px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYNYqKm"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
