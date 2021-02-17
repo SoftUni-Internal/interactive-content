@@ -1234,13 +1234,13 @@ Extend the build-in String object with additional functionality.
 
 Implement the following functions:
 
-- `ensureStart(str)` - append str to the beginning of a string, only if it is not already present.
+- `ensureStart(str)` - append str to the beginning of a string, only if it is not already present
 
-- `ensureEnd(str)` - append str to the end of a string, only if it’s not already present.
+- `ensureEnd(str)` - append str to the end of a string, only if it’s not already present
 
-- `isEmpty()` - return **true** if the string is empty, **false** otherwise.
+- `isEmpty()` - return **true** if the string is empty, **false** otherwise
 
-- `truncate(n)` - truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end. 
+- `truncate(n)` - truncates the string to **n** characters by removing words and appends an ellipsis \(three periods\) to the end
 
 If a string is less than **n** characters long, return the same string. 
 
@@ -1419,13 +1419,13 @@ Implement a collection, which keeps a list of numbers, sorted in **ascending** o
 
 It must support the following functionality:
 
-- `add(element)`- adds a new element to the collection.
+- `add(element)`- adds a new element to the collection
 
-- `remove(index)`- removes the element at position index.
+- `remove(index)`- removes the element at position index
 
-- `get(index)` - returns the value of the element at position index.
+- `get(index)` - returns the value of the element at position index
 
-- `size` - number of elements stored in the collection.
+- `size` - number of elements stored in the collection
 
 The correct order of the element must be kept at all times, regardless of which operation is called. 
 

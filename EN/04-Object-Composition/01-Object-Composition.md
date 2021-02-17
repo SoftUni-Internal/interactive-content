@@ -57,18 +57,18 @@ console.log(town);
 
 [slide hideTitle]
 
-# Combining data with functions
+# Combining Data with Functions
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-6-combining-data-with-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can also combine data using functions, that is because functions are also objects in JavaScript.
 
 The way we add a function to the object:
-- first, we have the function name `grow`.
-- followed by `:`.
-- then the keyword `function`.
-- parameters(if such exists) inside parentheses of the function.
-- finally, curly braces containing the scope of the function.
+- First, we have the function name `grow`
+- Followed by `:`
+- Then the keyword `function`
+- Parameters(if such exists) inside parentheses of the function
+- Finally, curly braces containing the scope of the function
 
 ```js live
 let rect = {
@@ -89,7 +89,7 @@ rect.print();
 
 [slide hideTitle]
 
-# Printing objects
+# Printing Objects
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/05.JS-Advanced-Object-Composition/EN/JS-Advanced-Object-Composition-7-printing-objects-tostring-function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

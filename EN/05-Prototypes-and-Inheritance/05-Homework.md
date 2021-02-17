@@ -1197,11 +1197,11 @@ Implement the following classes:
 
 - **SocialMediaPost**, which inherits the **Post** class and should be initialized with **2 additional arguments** - **likes** (Number) and **dislikes** (Number). The class should hold:
 
-   - **comments**(Strings) - an array of strings.
+   - **comments**(Strings) - an array of strings
 
-   - **addComment**(comment)- a function which **adds** comments to that array.
+   - **addComment**(comment)- a function which **adds** comments to that array
 
-   - The class should extend the `toString()` function of the **Post** class, and should return the following result:
+   - The class should extend the `toString()` function of the **Post** class, and should return the following result
 
     ```
       Post: {postTitle}
@@ -1214,13 +1214,13 @@ Implement the following classes:
 
 In case **there are no comments**, return information only about the **title**, **content**, and the **rating** of the **post**.
 
-- **BlogPost**, which inherits the **Post** class:
+- **BlogPost**, which inherits the **Post** class
 
-   - The **BlogPost** class should be initialized with **1 additional argument** - **views**(Number).
+   - the **BlogPost** class should be initialized with **1 additional argument** - **views**(Number)
 
-   - The **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**.
+   - the **BlogPost** class should hold a `view()` method which **increments** the **views** of the object by **1**, every time it is called. The function should **return the object**, so that **chaining is supported**
 
-   - The **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result:
+   - the **BlogPost** class should extend the `toString()` function of the **Post** class, and should return the following result
 
    ```
    Post: {postTitle}

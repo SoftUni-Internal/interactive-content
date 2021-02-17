@@ -130,9 +130,9 @@ Whenever you receive the command **print**, the output should be the **printed**
 [input]
 ```
 // Acquire console
-let log = [];
+let log = \[\];
 let oldcon = console.log;
-console.log = (string) => log.push(string);
+console.log = (string) =\> log.push(string);
 
 let firstZero = result();
 let secondZero = result();
@@ -153,8 +153,8 @@ secondZero.print();
 // Restore the console
 console.log = oldcon;
 
-assert.equal(log[0], '34', 'Printed wrong value.');
-assert.equal(log[1], 'loa', 'Printed wrong value.');
+assert.equal(log\[0\], '34', 'Printed wrong value.');
+assert.equal(log\[1\], 'loa', 'Printed wrong value.');
 ```
 [/input]
 [output]

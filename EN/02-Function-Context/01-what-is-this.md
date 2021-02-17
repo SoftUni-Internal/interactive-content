@@ -21,7 +21,7 @@ Functions can be called in several different ways:
 
 [slide hideTitle]
 
-# What is "this"?
+# What "this" is
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/03.JS-Advanced-Function-Context/EN/js-advanced-function-context-5-this-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
