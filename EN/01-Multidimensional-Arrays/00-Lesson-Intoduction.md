@@ -1,21 +1,22 @@
 # Lesson Introduction
 
 [slide hideTitle]
+
 # Lesson Content
 
 ## In this lesson you will learn:
 
-**1. Arrays in Java**
-- Working with Arrays in Java
+**1. Overview of Arrays in Java**
 
-**2. What is Multidimensional Array?**
+- Sequence of elements
 
-**3. Declaring and Creating Multidimensional Arrays**
+**2. Multidimensional Arrays**
+ 
+  * definition
+  * declaring and creating Multidimensional Arrays
+  * initializing Multidimenisonal Arrays
+  * accessing elements
 
-**4. Initializing Multidimensional Arrays**
-
-**5. Accessing Elements**
-
-**6. Reading a Matrix**
+**3. Reading and Printing a Multidimensional Array**
 
 [/slide]

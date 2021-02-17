@@ -1,10 +1,10 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
-- What is Multidimensional Array?
-    - Arrays can have more than one dimension, e.g. matrices
+- What a Multidimensional Array is
+    - arrays can have more than one dimension, e.g. matrices
 
 ```java
 int[][] intMatrix = new int[3][];
@@ -59,12 +59,12 @@ int[][] matrix = {
 ## In the next lesson you will learn:
 
 - Sets
-    - `HashSet<E>`
-    - `TreeSet<E>` 
-    - `LinkedHashSet<E>`
+    - HashSet\<E\>
+    - TreeSet\<E\>
+    - LinkedHashSet\<E\>
 - Maps
-    - `HashMap<K, V>` 
-    - `TreeMap<K, V>` 
-    - `LinkedHashMap<K, V>`
+    - HashMap\<K, V\>
+    - TreeMap\<K, V\>
+    - LinkedHashMap\<K, V\>
 
 [/slide]

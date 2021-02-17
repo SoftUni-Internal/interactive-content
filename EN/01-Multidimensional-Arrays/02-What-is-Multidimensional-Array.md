@@ -1,8 +1,8 @@
-# Multidimensional Array
+# Multidimensional Arrays
 
 [slide hideTitle]
 
-# What is Multidimensional Array?
+# Definition
 
 The arrays we have been using so far have only held one column of data.
 
@@ -25,18 +25,18 @@ It might look like this:
 
 # Declaring and Creating Multidimensional Arrays
 
-Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as `2D` and `3D` array, anything above is rare.
+Two of the **most used** multi-dimensional arrays are **two and three-dimensional array**, known as a `2D` and `3D` array. Anything above is rare.
 
-- Creating Multidimensional Arrays using `new` - keyword and specifying the size of at least one dimension
+- Creating Multidimensional Arrays using the `new` - keyword and specifying the size of at least one dimension
 
 ```java 
 int[][] intMatrix = new int[3][];
 ```
 In this example, we declare an empty two-dimensional array of integers. We use `int[][]` to tell the compiler that we want a two-dimensional array.
 
-As same as in the one-dimensional array we use `new` to allocate memory into the heap for our array. 
+Similarly to the one-dimensional array, we use the `new` keyword to allocate memory into the heap for our array. 
 
-Notice that we need to provide a size for our multidimensional array and in this case, our row will contain three elements.
+Notice that we need to provide a size for our multidimensional array and, in this case, our row will contain three elements.
 
 By default, this array will contain only zeros.
 
@@ -52,7 +52,9 @@ Here we create a three-dimensional array of strings.
 
 [slide hideTitle]
 
-# Initializing Multidimensional Arrays
+# Creating and Initializing Multidimensional Arrays
+
+-	We can create and initialize a two-dimensional array using curly brackets
 
 - Creating and **Initializing** two-dimensional array with shortcut syntax, using curly brackets:
 
@@ -84,17 +86,17 @@ for (int i = 0; i < 2; i++) {
 
 # Accessing Elements
 
-- Accessing Elements of `2D Array`
+- Accessing Elements of а "2D Array"
 
-Elements in **two-dimensional arrays** are commonly referred by `x[i][j]` where `i` is **the row number** and `j` is **the column number**.
+Elements in **two-dimensional arrays** are commonly referred by `x[i][j]` where `i` is **the row number** and the value of `j` is **the column number**.
 
-Syntax is:
+The syntax is:
 ```java
 int [][] array = new int [5][5];
 array[0][0]  // the first element of the matrix
 ```
 
-- Getting Element Value:
+- Accessing an element
 
 ```java live
 int[][] matrix = {
@@ -108,7 +110,7 @@ System.out.println(element);
 
 ```
 
-- Setting Element Value:
+- Updating a value on a specific location
 
 ```java 
 int[][] matrix = {

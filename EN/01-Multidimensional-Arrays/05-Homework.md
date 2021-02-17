@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Fill the Matrix
-[code-task title="Problem: Fill the Matrix" taskId="java-advanced-multidimensional-arrays-Fill-the-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Fill the Matrix" taskId="java-advanced-multidimensional-arrays-Fill-the-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -16,8 +16,6 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Filling a matrix in a regular way ( **top to bottom** and **left to right** ) is boring.
-
 Write two **methods** that **fill** a **matrix** of size  **N x N** in **two** different **patterns.** Both patterns are described below:
 
 [image assetsSrc="Fill-the-Matrix.png"/]
@@ -178,7 +176,7 @@ Write two **methods** that **fill** a **matrix** of size  **N x N** in **two** d
 
 [slide hideTitle]
 # Problem: Matrix of Palindromes
-[code-task title="Problem: Matrix of Palindromes" taskId="java-advanced-multidimensional-arrays-Matrix-of-Palindromes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Matrix of Palindromes" taskId="java-advanced-multidimensional-arrays-Matrix-of-Palindromes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -192,15 +190,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program to generate the following **matrix of palindromes**. 
+Create a program to generate the following **matrix of palindromes**. 
 
 There must be a palindrome of **3 letters** on each position. 
 
 Each palindrome has **the same first and last** letter. The **middle letter** of the palindrome changes **in every column**. 
 
-**Rows** define **the first and the last** letter. 
+**The rows** define **the first and the last** letter. 
 
-**Columns** define **the middle** letter.
+**The columns** define **the middle** letter.
 
 For example:
 - On `row 0` the palindromes start and end with `a`,  on `row 1` - `b`, on `row 2` - `c` ...
@@ -351,7 +349,7 @@ nnn non npn nqn nrn nsn ntn nun nvn nwn nxn nyn nzn
 
 [slide hideTitle]
 # Problem: Diagonal Difference
-[code-task title="Problem: Diagonal Difference" taskId="java-advanced-multidimensional-arrays-Diagonal-Difference" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Diagonal Difference" taskId="java-advanced-multidimensional-arrays-Diagonal-Difference" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -365,7 +363,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that finds the **difference between the sums of the square matrix diagonals** (absolute value).
+Create a program that finds the **difference between the sums of the square matrix diagonals** (absolute value).
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png"/]
 
@@ -507,7 +505,7 @@ Write a program that finds the **difference between the sums of the square matri
 
 [slide hideTitle]
 # Problem: Maximal Sum
-[code-task title="Problem: Maximal Sum" taskId="java-advanced-multidimensional-arrays-Maximal-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Maximal Sum" taskId="java-advanced-multidimensional-arrays-Maximal-Sum" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -521,12 +519,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads a rectangular integer matrix of size  **N x M**  and finds in it the square  **3 x 3**  that **has the maximal sum of its elements**.
+Create a program that reads a rectangular integer matrix of size **N x M** and finds the square **3 x 3** that **has the maximal sum of its elements**.
 
 ## Input
 
-- On the first line, you will receive the rows **N** and columns **M**.
-- On the next **N lines** you will receive **each row with its elements**.
+- On the first line, you will receive the rows **N** and columns **M**
+- On the next **N lines** you will receive **each row with its elements**
 
 Print the **elements** of the 3 x 3 square as a matrix, along with their **sum**. See the format of the output below:
 
@@ -724,7 +722,7 @@ Sum = 132
 
 [slide hideTitle]
 # Problem: Matrix Shuffling
-[code-task title="Problem: Matrix Shuffling" taskId="java-advanced-multidimensional-arrays-Matrix-Shuffling" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Matrix Shuffling" taskId="java-advanced-multidimensional-arrays-Matrix-Shuffling" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -738,7 +736,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads a string matrix from the console and performs certain operations with its elements.
+Create a program that reads a string matrix from the console and performs certain operations with its elements.
 
 User input is provided in a similar way as in the problems above - first, you read the **dimensions** and then the **data**.
 
@@ -1077,7 +1075,7 @@ Invalid input!
 
 [slide hideTitle]
 # Problem: String Matrix Rotation
-[code-task title="Problem: String Matrix Rotation" taskId="java-advanced-multidimensional-arrays-String-Matrix-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="String Matrix Rotation" taskId="java-advanced-multidimensional-arrays-String-Matrix-Rotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1095,7 +1093,7 @@ You are given a **sequence of text lines**.
 
 Assume these text lines form a **matrix of characters** (pad the missing positions with spaces to build a rectangular matrix).
 
-Write a program to ** rotates the matrix** by 90, 180, 270, 360, … degrees.
+Write a program to **rotates the matrix** by 90, 180, 270, 360, … degrees.
 
 Print the result at the console as a sequence of strings after receiving the `END` command.
 
@@ -1530,7 +1528,7 @@ creation of desktop and mobile applications.
 
 [slide hideTitle]
 # Problem: Crossfire
-[code-task title="Problem: Crossfire" taskId="java-advanced-multidimensional-arrays-Crossfire" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Crossfire" taskId="java-advanced-multidimensional-arrays-Crossfire" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1544,13 +1542,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You will receive **two integers** which represent the **dimensions** of a **matrix**.
+You will receive **two integers**, which represent the **dimensions** of a **matrix**.
 
 Then, you must **fill the matrix** with **increasing integers** starting from 1, and continuing on every row, like this:
 
-first row: `1, 2, 3, ..., n`
-second row: `n + 1, n + 2, n + 3, ..., n + n`
-third row: `2 * n + 1, 2 * n + 2, ..., 2 * n + n`
+First row: `1, 2, 3, ..., n`
+Second row: `n + 1, n + 2, n + 3, ..., n + n`
+Third row: `2 * n + 1, 2 * n + 2, ..., 2 * n + n`
 
 You will also receive several commands in the form of **3 integers** separated by a space. 
 
@@ -2048,9 +2046,9 @@ Nuke it from orbit
 
 [slide hideTitle]
 # Problem: Parking System
-[code-task title="Problem: Parking System" taskId="java-advanced-multidimensional-arrays-Parking-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Parking System" taskId="java-advanced-multidimensional-arrays-Parking-System" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.*;
 
 public class Main {
@@ -2062,15 +2060,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program for an automated parking system.
+Create a program for an automated parking system.
 
-The parking lot is a **rectangular** matrix where the **first** column is **always** free and all other cells are parking spots. 
+The parking lot is a **rectangular** matrix where the **first** column is **always** free of the other cells are parking spots. 
 
 A car can enter from **any cell** of the **first column** and then decides to go to a specific spot. 
 
 If that spot is **not** free, the car searches for the **closest** free spot on the **same** row. 
 
-If **all** the cells on that specific row are used, the car cannot park and leaves. 
+If **all** of the cells, on that specific row, are used, the car cannot park and leaves. 
 
 If **two** free cells are located at the **same** distance from the **initial** parking spot, the cell which is **closer** to the entrance is preferred. 
 
@@ -2082,7 +2080,7 @@ Example: A car enters the parking at row 1.
 
 It wants to go to cells 2, 2 so it moves through **exactly four** cells to reach its parking spot.
 
-[image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png"/]
+[image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
 ## Input
 
@@ -2090,14 +2088,14 @@ It wants to go to cells 2, 2 so it moves through **exactly four** cells to reach
 
 - On the next several lines, you are given the integers **Z, X, Y** where **Z** is the entry row and **X, Y** are the coordinates of the desired parking spot
 
-- The input stops with the command `stop`. 
+- The input stops with the command `stop`
 
 All integers are separated by a **single** space
 
 ## Output
 
 - For each car, print the distance traveled to the desired spot or the first free spot
-- If a car cannot park on its desired row, print the message `Row {row number} full`;
+- If a car cannot park on its desired row, print the message `Row {row number} full`
 
 ## Constraints
 
@@ -2563,37 +2561,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Browsing through GitHub, you come across an old JS Basics teamwork game.
 
-It is about very nasty bunnies that multiply extremely fast.
+First, you will receive a line holding the integers **N** and **M** , which represent the rows and columns in the lair. 
 
-There is also a player that has to escape from their lair.
+Then, you will receive **N** amount of strings that can consist **only** of `.`, `B` , `P`. 
 
-You really like the game so you decide to port it to Java because that is your language of choice.
-
-The last thing that is left is the algorithm that decides if the player will escape the lair or not.
-
-First, you will receive a line holding integers **N** and **M** , which represent the rows and columns in the lair. 
-
-Then you receive **N** strings that can **only** consist of `.`, `B` , `P`. 
-
-The **bunnies** are marked with `B`, the **player** is marked with `P`, and **everything** else is free space, marked with a dot `.`. 
+The **bunnies** are marked with the letter `B`, the **player** is marked with the letter `P`, and **everything** else is free space, marked with a dot `.`. 
 
 They represent the initial state of the lair. 
 
-There will be **only** one player. 
-
-Then you will receive a string with **commands** such as `LLRRUUDD*` - where each letter represents the next **move** of the player (Left, Right, Up, Down).
+Then, you will receive a string with **commands** such as `LLRRUUDD*` - where each letter represents the next **move** of the player (Left, Right, Up, Down).
 
 **After** each step of the player, each of the bunnies spread to the up, down, left, and right (neighboring cells marked as `.` **changes** their value to `B`). 
 
-If the player **moves** to a bunny cell or a bunny **reaches** the player, the player has died. 
+If the player **moves** to a cell, which contains a bunny, or a bunny **reaches** the player, the player dies.
 
-If the player goes **out** of the lair **without** encountering a bunny, the player has won.
+If the player goes **out** of the lair **without** encountering a bunny, the player wins.
 
 When the player **dies** or **wins** , the game ends. 
 
-All the activities for **this** turn continue (e.g. all the bunnies spread normally), but there are no more turns. 
+All of the activities for ,**this** turn, continue (e.g. all the bunnies spread normally), but there are no more turns. 
 
 There will be **no** stalemates where the moves of the player end before he dies or escapes.
 
@@ -2601,7 +2588,7 @@ Finally, print the final state of the lair with every row on a separate line.
 
 On the last line, print either `dead: {row} {col}` or `won: {row} {col}`. 
 
-Row and col are the coordinates of the cell where the player has died or the last cell he has been in before escaping the lair.
+"row" and "col" are the coordinates of the cell where the player has died or the last cell he has been in before escaping the lair.
 
 ## Input
 
@@ -2624,6 +2611,7 @@ There will be only one `P` for all the input
 
 - The dimensions of the lair are in the range `[3 ... 20]`
 - The directions string length is in the range `[1 ... 20]`
+- There will be **only** one player. 
 
 ## Examples
 | **Input** | **Output** |
@@ -2919,7 +2907,7 @@ dead: 2 7
 
 [slide hideTitle]
 # Problem: Reverse Matrix Diagonals
-[code-task title="Problem: Reverse Matrix Diagonals" taskId="java-advanced-multidimensional-arrays-Reverse-Matrix-Diagonals" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse Matrix Diagonals" taskId="java-advanced-multidimensional-arrays-Reverse-Matrix-Diagonals" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -3296,7 +3284,7 @@ All the integers will be in the range `[1 ... 1000]`
 
 [slide hideTitle]
 # Problem: The Matrix
-[code-task title="Problem: The Matrix" taskId="java-advanced-multidimensional-arrays-The-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="The Matrix" taskId="java-advanced-multidimensional-arrays-The-Matrix" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
