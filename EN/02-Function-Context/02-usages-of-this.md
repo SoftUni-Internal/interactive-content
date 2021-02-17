@@ -87,7 +87,9 @@ Let us see what is going on in the code step by step to understand it better.
 Defining a function `printContext()` which checks if `this===global` (`this===window` if running it in the browser) and prints the result to the console.
 
 Creating an object **user** with two methods:
+
 - `printContext: printContext` - stores the **printContext** function we defined in step 1 inside a method with the same name
+
 - `printAnotherContext: function() { console.log(this === global); }` - the **printAnotherContext** method checks if `this === global` and prints the result to the console
 
 Calling `user.printContext();` invokes the method belonging to the **user** object. Returns: **false**, because `this` is used within an object's method and returns the object itself.
@@ -102,9 +104,9 @@ Returns **true**, because now `this` is called by the function **globalFunction*
 
 **To summarize:**
 
-- used in methods, `this` references the object to which the method belongs
+- Used in methods, `this` references the object to which the method belongs
 
-- used in a function, `this` references the **global** object such as **window** in browsers or **global** in Node
+- Used in a function, `this` references the **global** object such as **window** in browsers or **global** in Node
 [/slide]
 
 [slide hideTitle]
