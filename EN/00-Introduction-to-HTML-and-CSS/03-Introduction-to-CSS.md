@@ -127,7 +127,7 @@ To select elements with a specific class, write a period (`.`) character, follow
 
 **HTML Usage**:
 ```html
-<p class="main">lorem ipsum dolor sit amet</p>
+<p class="main">Hello World!</p>
 ```
 
 We can also specify that **only specific HTML elements** should be affected by a class.
@@ -138,7 +138,7 @@ h1.headings {
 }
 ```
 
-Here, all `<h1>` elements with class `headings` will be affected.
+In the example above, all `<h1>` elements with class `headings` will be affected.
 [/slide]
 
 [slide]
@@ -164,8 +164,8 @@ selector:pseudo-class {
 
 Example:
 [html]
-<p class="codepen" data-height="176" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="yLYLmee" style="height: 176px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="yLYLmee"></p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="176" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="KKNmQKw" style="height: 176px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KKNmQKw"></p>
+<script async src="https://static.codepen.io/assets/embed/KKNmQKw"></script>
 [/html]
 
 [/slide]
