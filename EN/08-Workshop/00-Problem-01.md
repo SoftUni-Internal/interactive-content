@@ -1,7 +1,7 @@
 
 [slide hideTitle]
 
-# JS Applications Exam: the SoftWiki SPA
+# The SoftWiki SPA
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Exam-Resources.zip) **for this task.**
 
@@ -118,8 +118,10 @@ Using **Postman** or other HTTP client tool, test the REST service endpoints:
 ```
 { "error": "InvalidCredentials", "description": "Invalid credentials. Please retry your request with correct credentials", "debug": "" }
 ```
+[/slide]
 
-## The SoftWiki - HTML and CSS
+[slide hideTitle]
+# The SoftWiki - HTML and CSS
 
 You have been given the web design of the application as **HTML** \+ **CSS** files.
 
@@ -144,7 +146,9 @@ You may modify **href attributes** of links and add **action/method** **attribut
 [slide hideTitle]
 # The SoftWiki: Client-Side Web Application
 
-**Design** and **implement** a client\-side front-end app (SPA) for managing articles. Implement the functionality described below.
+**Design** and **implement** a client\-side front-end app (SPA) for managing articles. 
+
+Implement the functionality described below.
 
 ## Navigation Bar (5 Pts)
 
