@@ -238,7 +238,7 @@ console.log(boundGetX()); // 42
 
 # Problem with Solution: Area and Volume Calculator
 
-[code-task title="Area and Volume Calculator" taskId="js-advanced-function-context-Area-and-Volume-Calculator" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Area and Volume Calculator" taskId="js-advanced-function-context-lab-Area-and-Volume-Calculator" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function calculator(area, vol, input) {

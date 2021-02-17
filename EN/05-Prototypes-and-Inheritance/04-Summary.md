@@ -10,7 +10,7 @@
 
     - **Inheritance** is the ability of a class to copy the functions of another class
 
-    - the class that inherits is called **Child** and the inherited one is called **Parent**
+    - The class that inherits is called **Child** and the inherited one is called **Parent**
 
 - Objects have an **internal property** used for implementing **prototype-based inheritance**
 
@@ -18,7 +18,7 @@
 
 - The **properties** in the **prototype chain** form a **hierarchical chain**
 
-- There are two ways to create an object
+- There are two ways to create an object:
 
   - **Literal creation**
 

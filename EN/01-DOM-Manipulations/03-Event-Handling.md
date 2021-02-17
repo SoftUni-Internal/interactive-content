@@ -10,11 +10,11 @@ Event registration is done by providing a callback function.
 
 There are 3 ways to register an event:
 
-- Using HTML Attributes
+- using HTML Attributes.
 
-- Using a DOM event handler
+- using a DOM event handler.
 
-- Using DOM event handler
+- using DOM event handler.
 
 [/slide]
 
@@ -213,7 +213,7 @@ clearInterval(intervalID);
 
 [slide hideTitle]
 # Problem with Solution: Add Delete
-[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
+[code-task title="Add Delete" taskId="Js-Advanced-Dom-Manipulations-lab-Add-Delete" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function addDelete(){
   // Write your code here

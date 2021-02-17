@@ -9,8 +9,8 @@
 ## In this lesson you learned:
 
 - **First-class functions**:
-  - can be passed as an **argument**
-  - can be **returned**
+  - Can be passed as an **argument**
+  - Can be **returned**
 
 ```js
 function sayHello() {
@@ -50,11 +50,11 @@ console.log(name) // TypeError
 
 ## In the next lesson you will learn:
 
-- What object composition is
+- What is object composition?
 - Destructuring
 - Forms of object composition
-  - aggregation
-  - concatenation
-  - delegation
+  - Aggregation
+  - Concatenation
+  - Delegation
 
 [/slide]

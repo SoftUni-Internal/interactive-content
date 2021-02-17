@@ -500,7 +500,7 @@ yes
 
 [slide hideTitle]
 # Problem: Argument Info
-[code-task title="Problem: Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
+[code-task title="Argument Info" taskId="js-advanced-advanced-functions-homework-Argument-Info" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
 function argumentInfo() {
@@ -772,13 +772,13 @@ The patient chart object must contain the following properties:
   
 The status is one of the following:
 
-- **underweight**, for BMI less than 18.5
+- **underweight**, for BMI less than 18.5;
   
-- **normal**, for BMI less than 25
+- **normal**, for BMI less than 25;
   
-- **overweight**, for BMI less than 30
+- **overweight**, for BMI less than 30;
   
-- **obese**, for BMI 30 or more
+- **obese**, for BMI 30 or more;
   
 Once the BMI and status are calculated, you can make a recommendation. 
 

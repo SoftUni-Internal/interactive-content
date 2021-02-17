@@ -18,7 +18,7 @@ Any other behavior is **incorrect** and is subject to **error handling**.
 
 When a function or method fails to do what its name suggests, it **should** either:
 
-- Return a special value
+- Return a special value:
 
 ```js live
 const years = [1991, 1968, 2009];
@@ -29,7 +29,7 @@ In the above example, the `indexOf()` method **fails** to find `2020` in the `ye
 
 To indicate that, it returns the special value `-1`.
 
-- Throw an **exception**
+- Throw an **exception**:
 
 ```js live
 function toUppercase(string) {
@@ -56,22 +56,22 @@ The three most common types of **errors** are:
 
 - **Syntax Errors**
   
-  - every programming language has a set of **grammar rules** which, if mistaken, cause problems
+  - Every programming language has a set of **grammar rules** which, if mistaken, cause problems
   
-  - most [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) have with the ability to warn you about **Syntax Errors** at the time of writing your code
+  - Most [IDEs](https://en.wikipedia.org/wiki/Integrated_development_environment) have with the ability to warn you about **Syntax Errors** at the time of writing your code
   
 
 - **Runtime Errors**
   
-  - runtime Errors happen after compilation, as a **user is executing your application**
+  - Runtime Errors happen after compilation, as a **user is executing your application**
   
-  - making use of [software frameworks](https://en.wikipedia.org/wiki/Software_framework) can significantly lower the chance of such errors
+  - Making use of [software frameworks](https://en.wikipedia.org/wiki/Software_framework) can significantly lower the chance of such errors
 
 - **Logical errors**
   
-  - they occur when a mistake has been made in the **logic of the script** and the **expected result is incorrect**
+  - They occur when a mistake has been made in the **logic of the script** and the **expected result is incorrect**
   
-  - they are most commonly known as **bugs**
+  - They are most commonly known as **bugs**
 
 [/slide]
 

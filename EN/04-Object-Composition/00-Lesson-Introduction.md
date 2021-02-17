@@ -9,10 +9,7 @@
 
 **1. Object Composition**
 
-- Assembling or composing objects to get more complex behavior
-
 **2. Destructuring**
-
 
 **3. Forms Of Object Composition**
 - Aggregation
