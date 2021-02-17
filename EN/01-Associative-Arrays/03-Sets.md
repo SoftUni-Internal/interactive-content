@@ -61,9 +61,9 @@ set.delete(1);
 console.log(set);
 ```
 
-We can also delete all the elements in the Set. Use the `.clear()` method.
+We can also delete all the elements in the Set using the `.clear()` method.
 
-The result will be `Set {}`.
+The resulting output will be `Set {}`.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);
