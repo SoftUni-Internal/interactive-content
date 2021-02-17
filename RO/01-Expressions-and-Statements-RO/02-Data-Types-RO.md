@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Data-Types"
+// sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Data-Types"
 
 # Tipurile de date și gama de variabile
 

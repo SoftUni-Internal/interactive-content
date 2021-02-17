@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-And-Statements-Arithmetic-Operators"
+// sectionId: "Javascript::Programming-Basics::Expressions-And-Statements::Arithmetic-Operators"
 
 [slide hideTitle]
 # Operatorii aritmetici
