@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-11-12-13-14-global-installation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To install frameworks and libraries globally, use the Windows "CMD" or Visual Studio Code "npm".
+To install frameworks and libraries globally, use the Windows "CMD" (Command Prompt) or "npm" (Node Package Manager) in Visual Studio Code.
 
 Open an instance of the terminal in Visual Studio Code.
 
@@ -34,17 +34,17 @@ You need to set the `NODE_PATH` environment variable manually.
 
 Open the Windows `CMD` console.
 
-To set the path use this piece of code for any future sessions.
+To set the path use this piece of code for future sessions:
 
 `setx NODE_PATH %AppData%\npm\node_modules`
 
-Use this piece of code to set the path for the current session.
+Use this piece of code to set the path for the current session:
 
 `set NODE_PATH=%AppData%\npm\node_modules`
 
 You may need to restart your IDE after changing the "NODE_PATH".
 
-To load a library first, we need to **require** it, like in the example below.
+To load a library, first we need to **require** it, like in the example below.
 
 `const expect = require("chai").expect;`
 
@@ -84,7 +84,8 @@ describe('Sum of numbers', () => {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
+You are required to submit only the unit tests for the object/function you are testing.  
 
 Write tests to check the functionality of the following code:
 
@@ -100,10 +101,8 @@ function sum(arr) {
 In your tests, use a function called `sum()`. 
 
 It should meet the following requirements:
-- Take an array of numbers as an argument
-- Return the sum of the values of all elements inside the array
-
-# Example
+- Take an **array** of **numbers** as an argument
+- **Return** the **sum** of the values of **all elements** inside the array
 
 [/task-description]
 [code-io /]
