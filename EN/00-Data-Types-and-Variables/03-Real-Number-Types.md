@@ -1,15 +1,15 @@
 # Real Number Types
 
 [slide hideTitle]
-# Floating-Point Types?
+# Floating-Point Types
 
-You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
+You should use a **floating-point type** whenever you need a number with a decimal, such as **9.99** or **3.14515**.
 
 Floating-point types also:
 
 - Have range and precision depending on the memory used
-- Sometimes behave abnormally in the calculations
-- May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
+- They can have abnormal behavior in some calculations
+- Can hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
 
 These can be either **float** or **double**:
 
@@ -18,10 +18,7 @@ These can be either **float** or **double**:
 | float  | 32 bit | up to 7 digits  |
 | double | 64 bit | up to 16 digits |
 
-[/slide]
-
-[slide hideTitle]
-# Floating-Point Numbers
+## Floating-Point Numbers
 
 - **Float**: used for storing fractional numbers. Note that you should suffix the value with an `f`:
 
@@ -39,10 +36,8 @@ double myNum = 19.99;
 System.out.println(myNum);
 ```
 The **default value** of **double** is **0.0D**.
-[/slide]
 
-[slide hideTitle]
-# PI Precision
+## Example: PI Precision
 
 There is a difference in precision when using **float** and **double**:
 
@@ -53,7 +48,7 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-- NOTE: The `f` suffix in the first statement!
+- NOTE: The "f" suffix in the first statement!
 
 - Real numbers are interpreted as double by default
 
@@ -61,8 +56,8 @@ System.out.println("Double PI is: " + doublePI);
 [/slide]
 
 [slide hideTitle]
-# Problem: Pounds to Dollars
-[code-task title="Problem: Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Pounds to Dollars
+[code-task title="Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -70,100 +65,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program that converts British pounds to US dollars. The result should be formatted to 2 decimal places.
-
-Assume that **1 British Pound = 1.31 Dollars**.
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 80 | 104.800 |
-|  |  |
-
-| **Input** | **Output** |
-| --- | --- |
-| 39 | 51.090 |
-|  |  |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-80
-[/input]
-[output]
-104.800
-[/output]
-[/test]
-[test open]
-[input]
-39
-[/input]
-[output]
-51.090
-[/output]
-[/test]
-[test]
-[input]
-25.50
-[/input]
-[output]
-33.405
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-0.000
-[/output]
-[/test]
-[test]
-[input]
-100
-[/input]
-[output]
-131.000
-[/output]
-[/test]
-[test]
-[input]
-55.55
-[/input]
-[output]
-72.771
-[/output]
-[/test]
-[test]
-[input]
-99.85
-[/input]
-[output]
-130.803
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Pounds to Dollars
-[code-task title="Solution: Pounds to Dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your solution here
     }
 }
 ```
@@ -350,8 +251,8 @@ System.out.println(bigDecimal1);
 [/slide]
 
 [slide hideTitle]
-# Problem: Exact Sum of Real Numbers
-[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Exact Sum of Real Numbers
+[code-task title="Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -366,7 +267,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
+Write a program that accepts a count of **n** numbers, calculates, and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |
@@ -382,111 +283,6 @@ Write a program that accepts a count of **n** numbers, calculates and prints the
 | 0.00000000003 |  |
 | 333333333333.3 |  |
 
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3
-1000000000000000000
-5
-10
-[/input]
-[output]
-1000000000000000015
-[/output]
-[/test]
-[test open]
-[input]
-2
-0.00000000003
-333333333333.3
-[/input]
-[output]
-333333333333.30000000003
-[/output]
-[/test]
-[test]
-[input]
-5
-0.11
-0.22
-0.33
-1.11
-10.11
-[/input]
-[output]
-11.88
-[/output]
-[/test]
-[test]
-[input]
-2
-1000000000000000000
-5
-[/input]
-[output]
-1000000000000000005
-[/output]
-[/test]
-[test]
-[input]
-2
-0.00000000003
-333333333333.3
-[/input]
-[output]
-333333333333.30000000003
-[/output]
-[/test]
-[test]
-[input]
-4
-100000000000
-0.00001
-100000000000
-0.00001
-[/input]
-[output]
-200000000000.00002
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Exact Sum of Real Numbers
-[code-task title="Solution: Exact Sum of Real Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.math.BigDecimal;
-import java.util.Scanner;
-
-public class ExactSum {
-    public static void main(String[] args) {
-       // Write your solution here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 3 | 1000000000000000015 |
-| 1000000000000000000 |  |
-| 5 |  |
-| 10 |  |
-
-| **Input** | **Output** |
-| --- | --- |
-| 2 | 333333333333.30000000003 |
-| 0.00000000003 |  |
-| 333333333333.3 |  |
 
 [/task-description]
 [code-io /]
