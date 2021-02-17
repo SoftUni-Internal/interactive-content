@@ -2,6 +2,8 @@
 [slide hideTitle]
 # The String Data Type
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-45-48-string-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Strings are used for storing text.
 
 A **String** variable contains a collection of characters surrounded by double quotes and has a default value of **null** (no value).
@@ -51,6 +53,9 @@ Note that we have added an empty text `(" ")` to create a space between firstNam
 
 [slide hideTitle]
 # Problem with Solution: Concat Names
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-49-problem-and-solution-concat-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Concat Names" taskId="java-fund-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
