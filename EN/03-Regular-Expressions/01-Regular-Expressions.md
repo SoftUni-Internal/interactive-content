@@ -13,10 +13,10 @@ Patterns are defined by special syntax:
 
 - `[0-9]+` - Matches non-empty sequence of digits
 
-- `[A-Z][a-z]*` - Matches a capital + small letters
+- `[A-Z][a-z]*` - Matches a capital and small letters
 
  
-You can **play** with **regex live** at:
+You can **practice** creating custom regular expressions at:
 
 - [regexr.com](regexr.com)
 
