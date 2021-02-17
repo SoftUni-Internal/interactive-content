@@ -165,7 +165,7 @@ If there are **NO** such offers, the following view should be displayed.
 
 If there is at least **one registered offer**, the offer must be shown as the example below in the format:
 
-|\#| Name| Description |Price| Details |Actions|
+|\#| **Name**| **Description** |**Price**| **Details** |**Actions**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |Current offer **index**|Current product **name**|Current product **description**|Current product **price**|`[Order details]` button which refers to the details for the current offer/product|`[Delete]` `[Edit]` Buttons, only if the currently logged-in user is the creator of that offer. Where both buttons refer to the delete and edit view (pages) for the current offer/product|
 
