@@ -10,7 +10,7 @@
 
 CSS `float` is a property that forces any element to **float** (right, left, none, inherit) **inside its parent** body with the rest of the elements to wrap around it.
 
-The element is **removed** from the **normal flow** of the page, though still remaining a part of the flow.
+The element is **removed** from the **normal flow** of the page, though still remains a part of the flow.
 
 Usually, the float property is used to **wrap text around images**.
 
@@ -18,11 +18,11 @@ Usually, the float property is used to **wrap text around images**.
 [stream language="EN" videoId="431760789" default /]
 [/video-vimeo]
 
-The values of float property are:
-* `float : right;` - floats the element to **right** of it's container;
-* `float : left;` - floats the element to **left** of it's container;
+The values of the float property are:
+* `float : right;` - floats the element to **right** of its container;
+* `float : left;` - floats the element to **left** of its container;
 * `float : none;` - it will **restrict** the element to float;
-* `float : initial;` - the element remains to it's **default position**;
+* `float : initial;` - the element remains to its **default position**;
 * `float : inherit;` - enables the element to **inherit** the property **from its parent** element.
 
 [/slide]
@@ -37,7 +37,7 @@ The values of float property are:
 
 ## `float: none;`
 
-When the `float: none;` is used, the image is displayed where **it occurs** in the text.
+When `float: none;` is used, the image is displayed where **it occurs** in the text.
 
 **Example:**
 [html]
@@ -52,7 +52,7 @@ When the `float: none;` is used, the image is displayed where **it occurs** in t
 
 ## `float: left;`
 
-When the `float: left;` is used, it defines that an image should **float to the left** in a text.
+When `float: left;` is used, it defines that an image should **float to the left** in a text.
 
 **Example:**
 [html]
@@ -67,7 +67,7 @@ When the `float: left;` is used, it defines that an image should **float to the 
 
 ## `float: right;`
 
-When the `float: right;` is used, it defines that an image should **float to the right** in a text.
+When `float: right;` is used, it defines that an image should **float to the right** in a text.
 
 **Example:**
 [html]
