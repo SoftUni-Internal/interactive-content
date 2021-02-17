@@ -24,7 +24,9 @@ Here is how the whole process happens:
 
 As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
 
-In simpler words - chunks of code are executed **one at a time**. This way each of those chunks must wait for the previous one to be finished.
+In simpler words - chunks of code are executed **one at a time**. 
+
+This way each of those chunks must wait for the previous one to be finished.
 
 Running code like this can **block an entire webpage** due to the waiting time of **one function**, which is a serious user experience problem.
 
@@ -76,9 +78,9 @@ It is important to know that the `async` keyword **must be provided in front of 
 
 The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a store and a website.
 
-- In the store, people have to **wait in a queue** to buy something. (synchronous programming)
+- In the store, people have to **wait in a queue** to buy something: synchronous programming
 
-- On the website, however, hundreds of people can buy items **independently of each other**. (asynchronous programming)
+- On the website, however, hundreds of people can buy items **independently of each other**: asynchronous programming
 
 Here is a diagram of some code's run time to better visualize the concept:
 
