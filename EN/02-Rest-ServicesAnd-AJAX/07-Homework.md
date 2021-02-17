@@ -384,7 +384,7 @@ server.respondWith((request) => {
         let target = request.url.split('/');
         target = target[target.length - 1].split('.')[0];
         expect(target == 'depot');
-        let response = `{ "name": "Depot", "next": "0361" }`;
+        let response = \`{ "name": "Depot", "next": "0361" }\`;
         request.respond(200, {"Content-Type": "application/json"}, response);
     } else {
         request.respond(404, {}, "");
@@ -392,13 +392,13 @@ server.respondWith((request) => {
 });
 
 server.respondImmediately = true;
-document.body.innerHTML = `<div id="schedule">
+document.body.innerHTML = \`<div id="schedule">
     <div id="info"><span class="info">Not Connected</span></div>
     <div id="controls">
         <input id="depart" value="Depart" type="button">
         <input id="arrive" value="Arrive" type="button" disabled="true">
     </div>
-</div>`;
+</div>\`;
 
 result = result();
 
