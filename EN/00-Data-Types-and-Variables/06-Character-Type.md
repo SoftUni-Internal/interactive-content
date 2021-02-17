@@ -13,15 +13,15 @@ char myGrade = 'B';
 System.out.println(myGrade);
 ```
 
-The character also:
+The character data type also:
 
 - Assigns each symbol a corresponding integer code
 
-- Has a `\0` as its default value
+- Has a default value of `\0`
 
 - Takes up 16 bits of memory \(from **U+0000** to **U+FFFF**\)
 
-- Holds a single Unicode character \(or part of character\)
+- Holds a single Unicode character \(or part of a character\)
 
 ```java live
 char ch = 'a';
@@ -33,27 +33,32 @@ System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ch = 'A';
 System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ```
-In the example above, we convert each character to its **ASCII** representation. The **ASCII** is an acronym for the `American Standard Code for Information Interchange`.
-It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. We encourage you to do some research on the ASCII table!
-[/slide]
+In the example above, we convert each character to its **ASCII** representation. 
 
-[slide hideTitle]
-# Characters and Unicode
+The **ASCII** is an acronym for the **American Standard Code for Information Interchange**.
 
-There is an integer value behind each character. This value corresponds to a letter in the Unicode table.
+It is a code for representing 128 English characters as numbers, with each letter assigned a number from 0 to 127. 
+
+We encourage you to do some research on the ASCII table!
+
+## Characters and Unicode
+
+There is an integer value behind each character. 
+
+This value corresponds to a letter in the Unicode table.
 
 ```java live
 char ch = 'a';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ch = 'b';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ch = 'A';
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
-ch = 'щ';  // Cyrillic letter 'sht'
-System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
+System.out.printf("'%c' is: %d%n", ch, (int) ch);
+ch = 'щ'; 
+System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ```
 
-The unicode table is separated in different parts and almost all living languages are represented in it.
+The Unicode table is separated into different parts and almost all living languages are represented in it.
 
 [/slide]
 
@@ -63,7 +68,7 @@ The unicode table is separated in different parts and almost all living language
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Reversed Chars" taskId="java-fund-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reversed Chars" taskId="java-fund-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -163,41 +168,48 @@ a
 [/slide]
 
 [slide hideTitle]
+
+[slide hideTitle]
 # Escaping Characters
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-43-escaping-characters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Strings in Java are typed between double-quotes. Due to this Java will not be able to handle a string such as the below by default and this would result in an error.
+Every programming language, including Java, has some reserved characters that cannot be used directly. 
 
+An example of this is the double quotes in strings that should be escaped.
 
 ```Java
 String txt = "We are the so-called "Vikings" from the north.";
 ```
 
-To bypass this, we append a backslash** \(\\\)** , which is used as an escape character.
+To bypass this, we append a backslash** \(\\\)**, that is used as an escape character.
 
 The backslash \(\\\) escape character turns special characters into string characters:
 
-**Escape character**:
-- \\' -> '  Single quote
-- \\" -> "  Double quote
-- \\\ -> \\ Backslash
+**Escape characters**:
 
-The sequence `\"` inserts a double quote in a string:
+|Escape Sequence |Character| Description
+|-----|--------|--------|
+|\\'|**'**       |Single quote|
+|\\"  |**''**      |Double quote|
+|\\\  |**\\**     |Backslash|
+
+
+The `\"` sequence inserts a double quote into a string:
 
 ```Java live
 String txt = "We are the so-called \"Vikings\" from the north.";
 System.out.println(txt);
 ```
 
-The sequence `\'`  inserts a single quote in a string:
+The `\'` sequence inserts a single quote in a string:
 
 ```Java live
 String txt = "It\'s alright.";
 System.out.println(txt);
 ```
 
-The sequence `\\`  inserts a single backslash in a string:
+The `\\` sequence inserts a single backslash in a string:
 
 ```Java live
 String txt = "The character \\ is called backslash.";
@@ -210,6 +222,7 @@ System.out.println(txt);
 # Character Literals
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-44-character-literals-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Character literals are all the character expressions that are embedded in Java. 
 
