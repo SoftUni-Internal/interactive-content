@@ -379,25 +379,39 @@ This allows Depart to be clicked again, which makes a new request and updates th
 [tests]
 [test open]
 [input]
-let response = \{ "name": "Depot", "next": "0361" \};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
+server.respondWith((request) => {
+    if (request.method == 'GET') {
+        let target = request.url.split('/');
+        target = target[target.length - 1].split('.')[0];
+        expect(target == 'depot');
+        let response = `{ "name": "Depot", "next": "0361" }`;
+        request.respond(200, {"Content-Type": "application/json"}, response);
+    } else {
+        request.respond(404, {}, "");
+    }
+});
 
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
+server.respondImmediately = true;
+document.body.innerHTML = `<div id="schedule">
+    <div id="info"><span class="info">Not Connected</span></div>
+    <div id="controls">
+        <input id="depart" value="Depart" type="button">
+        <input id="arrive" value="Arrive" type="button" disabled="true">
+    </div>
+</div>`;
 
 result = result();
+
 result.depart();
 
-function testIt() \{
-expect(\\$('\#info').find('span').text()).to.contains("Depot");
-    expect(\\$('\#depart').prop('disabled')).to.be.true;
-expect(\\$('\#arrive').prop('disabled')).to.be.false;
-done();
-\}
+setTimeout(nextStep, 20);
 
-setTimeout(testIt, 100);
-fetchStub.restore();
+function nextStep() {
+    expect($('#info').find('span').text()).to.contains("Depot");
+    expect($('#depart').prop('disabled')).to.be.true;
+    expect($('#arrive').prop('disabled')).to.be.false;
+    done();
+}
 [/input]
 [output]
 yes
