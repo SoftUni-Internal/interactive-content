@@ -77,7 +77,7 @@ Links allow users to navigate from **one page to another**.
 External pages can be referenced with a URL to the web page.
 
 [html]
-<p class="codepen" data-height="186" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
+<p class="codepen" data-height="286" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
 
@@ -99,9 +99,9 @@ See the <a href="#exercises"></a>
 The `target` attribute specifies where to open the linked document.
 
 The `target` attribute can have one of the following values:
-- `_blank` - Opens the linked document in a new window or tab;
-- `_self` - Opens the linked document in the same tab (this is the default);
-- `_top` - Opens the linked document in the full body of the window.
+- `_blank` - Opens the linked document in a new window or tab
+- `_self` - Opens the linked document in the same tab (this is the default)
+- `_top` - Opens the linked document in the full body of the window
 
 This example will open the linked document in a new tab:
 [html]
@@ -133,8 +133,8 @@ The HTML `<img>` element embeds an image into the document.
 **NOTE**: `softuni.png` is a local file in the example.
 
 The example above shows the usage of the `<img>` element:
-- The `src` attribute is **required**, and contains the **path to the image**.
-- The `alt` attribute specifies an **alternate** text for an image, if the image cannot be displayed.
+- The `src` attribute is **required**, and should contain the **path to the image**
+- The `alt` attribute specifies an **alternate** text for the image, if the image cannot be displayed
 
 [/slide]
 
@@ -143,8 +143,8 @@ The example above shows the usage of the `<img>` element:
 HTML lists are used to present a list of information in a well-formed and semantic way. 
 
 There are two different types of lists in HTML and each one has a specific purpose and meaning:
-- Unordered HTML List
-- Ordered HTML List
+- Unordered HTML list
+- Ordered HTML list
 
 ## Ordered HTML List
 The HTML `<ol>` element represents an ordered list of items - typically rendered as a numbered list.
@@ -155,7 +155,7 @@ Each list item is represented by the `<li>` tag.
 <p class="codepen" data-height="208" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="bGVGWgR" style="height: 208px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="bGVGWgR"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br>
 ## Unordered HTML List
 
 [vimeo-video]
