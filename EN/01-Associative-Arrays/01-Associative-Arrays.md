@@ -37,7 +37,7 @@ An associative array in JavaScript is just an object, so we can declare it dynam
 
 Let us declare and initialize one:
 
-In this example, "one" is the **key**, and the number 1 is the corresponding **value**.
+In this example, "one" is the **key**, and the number 1 is the corresponding **value**:
 
 ```js
 let assocArr = { one: 1 };
@@ -45,19 +45,19 @@ let assocArr = { one: 1 };
 
 You can access the values through their keys.
 
-In this example, "four" is the **key** and the number 4 is the corresponding **value**.
+In this example, "four" is the **key** and the number 4 is the corresponding **value**:
 
 ```js
 assocArr["four"] = 4;
 ```
 
-Here, "five" is the **key** and 5 is the corresponding **value**.
+Here, "five" is the **key** and 5 is the corresponding **value**:
 
 ```js
 assocArr.five = 5;
 ```
 
-Here is how we declare and initialize the **key** first, and after that, use it to assign a **value** to it.
+Here is how we declare and initialize the **key** first, and after that, use it to assign a **value** to it:
 
 ```js
 let key = "six";
