@@ -30,7 +30,7 @@ The HTML `<h1>...<h6>` elements represent six levels of section headings.
 
 The HTML `<p>` element represents a paragraph. Browsers automatically add space before and after each `<p>` element. The margins can be modified with **CSS**.
 
-HTML paragraphs can be used for **grouping related content**, such as images.
+HTML paragraphs can be used for **grouping related content**.
 
 [html]
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="RwWwpov" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwWwpov"></p>
@@ -53,10 +53,10 @@ Attributes are always specified in the **opening tag**.
 Attributes usually come in **name/value pairs** like: `name="value"`.
 
 [html]
-<p class="codepen" data-height="186" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
+<p class="codepen" data-height="286" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br>
 You will learn more about links and the `<a>` tag in the next slide.
 [/slide]
 
