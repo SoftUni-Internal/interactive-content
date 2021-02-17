@@ -7,7 +7,7 @@
 
 You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with cloud\-based backend \(Firebase or Kinvey\).
 
-Using libraries like **jQuery**, **Handlebars** and **PageJs** is allowed but is **not obligatory**.
+Using libraries like **jQuery**, **lit-html** and **PageJs** is allowed but is **not obligatory**.
 
 The app keeps **users** and **articles**.
 
@@ -129,7 +129,7 @@ You have been given the web design of the application as **HTML** \+ **CSS** fil
 
 Your application may **hide/show elements** by CSS **(display: none)** or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
 
-- You may render the views/forms/components with **JavaScript** or **Handlebars**.
+- You may render the views/forms/components with **JavaScript** or **lit-html**.
 
 ## Important
 
