@@ -16,26 +16,20 @@ String greeting = "Hello";
 System.out.println(greeting);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# String Formatting
+## String Formatting
 
 ```Java live
-String firstName = "John";
-String lastName = "Smith";
-String fullName = String.format("%s %s", firstName, lastName);
-System.out.println(fullName);
+String secret = "loves metal music";
+String name = "Tom";
+String secretRevealed = String.format("%s has a secret, he %s.", name, secret);
+System.out.println(secretRevealed);
 ```
 
-[/slide]
+You can use `String.format` to insert the values of string variables into another string.
 
-[slide hideTitle]
+## Example: Saying Hello
 
-# Example: Saying Hello
-
-Here is how we can combine the first and last name of a person to print their full name.
+Here is how we can combine the first and last names of a person to print their full name.
 
 ```Java live
 String firstName = "John";
@@ -44,6 +38,7 @@ String fullName = String.format("%s %s", firstName, lastName);
 System.out.printf("Your full name is %s.", fullName);
 ```
 ## String Concatenation
+
 The `+` operator can be used to combine two strings together. This is called concatenation:
 
 ```Java live
@@ -61,7 +56,7 @@ Note that we have added an empty text `(" ")` to create a space between firstNam
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-49-problem-and-solution-concat-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Concat Names" taskId="java-fund-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Concat Names" taskId="java-fund-data-types-lab-concat-names" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
