@@ -34,7 +34,7 @@ console.log(set);
 
 Use `.add()` method to add values. 
 
-The result will be `Set { 1, 2, 3, 4, 5, 10 }`
+The result will be `Set { 1, 2, 3, 4, 5, 10 }`.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);
@@ -53,7 +53,7 @@ console.log(set.has(1));
 
 We can delete a value using the `.delete()` method. 
 
-The output will be `Set { 2, 3, 4, 5 }`
+The output will be `Set { 2, 3, 4, 5 }`.
 
 ```js live
 let set = new Set([1, 2, 2, 3, 4, 5]);
