@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Word Tracker
 
@@ -32,12 +32,11 @@ The words should be **sorted by the number of times they were present in descend
 
 # Example
 
-**Input**                                                                                                                                                              
- `['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']`
+| **Input** | **Output** |
+| --- | --- |
+|`['this sentence', 'In', 'this', 'sentence', 'you', 'have', 'to', 'count', 'the', 'occurances', 'of', 'the', 'words', 'this', 'and', 'sentence', 'because', 'this', 'is', 'your', 'task']` | this \- 3 |
+| | sentence \- 2 |
 
- **Output**
- this \- 3 
- sentence \- 2
 
 [/task-description]
 [tests]
@@ -199,7 +198,7 @@ c \- 1
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Odd Occurrences
 
@@ -219,7 +218,9 @@ function solve(input) {
 
 Write a function that extracts all the elements of a sentence, which are present in a string an odd number of times (**capitalization should be disregarded**).
 
-The input is a **single string**. The words will be **separated by a single space**.
+The input is a **single string**. 
+
+The words will be **separated by a single space**.
 
 # Example
 
@@ -283,7 +284,7 @@ a aa ab cccc
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Piccolo
 
@@ -303,29 +304,24 @@ function solve(input) {
 
 Write a function that:
 
-- Records a car license plate for every car that enters the parking lot.
-- Removes the car when it goes out.
-- Input will be an array of strings in the following format `['direction, carNumber']`.
+- Records a car license plate for every car that enters the parking lot
+- Removes the car when it goes out
+- Input will be an array of strings in the following format `['direction, carNumber']`
 
 Print the output with all car numbers which are in the parking lot **sorted in ascending order by their license plate**.
 
-# Example 1
+# Examples
 
-**Input**                                                                                                                                                             
-`['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 
-'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']`
+## Example 1
 
-**Output**
+| **Input** | **Output**  |
+| --- | --- |
+| `['IN, CA2844AA', 'IN, CA1234TA', 'OUT, CA2844AA', 'IN, CA9999TT', 'IN, CA2866HI', 'OUT, CA1234TA', 'IN, CA2844AA', 'OUT, CA2866HI', 'IN, CA9876HH', 'IN, CA2822UU']` | CA2822UU |
+| | CA2844AA |
+| | CA9876HH |
+| | CA9999TT |
 
-CA2822UU
-
-CA2844AA
-
-CA9876HH
-
-CA9999TT
-
-# Example 2
+## Example 2
 
 | **Input** | **Output** |
 | --- | ---|
@@ -484,7 +480,7 @@ sss
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Party Time
 
@@ -510,11 +506,13 @@ The input will be an **array of strings**. You will be given the list with the g
 
 All **VIP numbers start with a digit**.
 
-When you receive the command: `PARTY` the guests start coming.
+When you receive the command `PARTY`, the guests start coming.
 
 Output all guests, who did not come to the party (VIPs must be first).
 
-# Example 1
+# Example
+
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -522,23 +520,15 @@ Output all guests, who did not come to the party (VIPs must be first).
 |                                                                                                             | 7IK9Yo0h   |
 |                                                                                                             | tSzE5t0p   |
 
-# Example 2
+## Example 2
 
-**Input**                                                                                                                                                              
-`['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', 
-'2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 
-'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK',
-'PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 
-'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 
-'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']`
+| **Input** | **Output** |
+| --- | --- |
+| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 
+'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
+| | xys2FYzn |
+| | MDzcM9ZK |
 
-**Output**
-
-2
-
-xys2FYzn
-
-MDzcM9ZK
 
 [/task-description]
 [tests]
@@ -687,7 +677,8 @@ jghvgyg
 [/code-task]
 
 [/slide]
-[slide]
+
+[slide hideTitle]
 
 # Problem: Card Game
 
@@ -731,18 +722,11 @@ Print out the total card value, that each player has in his hand in the format:
 
 # Example
 
-**Input**                                                                                                                                                              
-`['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 
-'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 
-'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` 
-
-**Output**
-
-Peter\: 167
-
-Tomas\: 175
-
-Andrea\: 197
+| **Input** | **Output** |
+| --- | --- |
+| `['Peter: 2C, 4H, 9H, AS, QS', 'Tomas: 3H, 10S, JC, KD, 5S, 10S', 'Andrea: QH, QC, QS, QD', 'Tomas: 6H, 7S, KC, KD, 5S, 10C', 'Andrea: QH, QC, JS, JD, JC', 'Peter: JD, JD, JD, JD, JD, JD']` | Peter\: 167 |
+| | Tomas\: 175 |
+| | Andrea\: 197  |
 
 [/task-description]
 [tests]
@@ -842,11 +826,12 @@ Pesho\: 22
 [/code-task]
 
 [/slide]
-[slide]
+
+[slide hideTitle]
 
 # Problem: Company Users
 
-[code-task title="Company Users" taskId="js-fundamentals-pt2-Associative-Arrays-Company-users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Company Users" taskId="js-fundamentals-pt2-Associative-Arrays-Company-Users" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -875,10 +860,12 @@ Print the company name and each employee's id in the following format:
 -- {id2}
 -- {idN}`
 
-- The input is an **array of strings**, each in the format: `{companyName} -> {employeeId}`.
-- The input will always be valid.
+- The input is an **array of strings**, each in the format: `{companyName} -> {employeeId}`
+- The input will always be valid
 
-# Example 1
+# Examples
+
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -890,7 +877,7 @@ Print the company name and each employee's id in the following format:
 |                                                                                         | \-\- AA12345 |
 |                                                                                         | \-\- BB12345 |
 
-# Example 2
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1082,7 +1069,8 @@ Q
 [/code-task]
 
 [/slide]
-[slide]
+
+[slide hideTitle]
 
 # Problem: A Miner Task
 
