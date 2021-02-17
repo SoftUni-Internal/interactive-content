@@ -392,7 +392,7 @@ sell
 [slide hideTitle]
 # Ordering / Sorting Collections
 
-There are several ways to sort collections:
+There are **two** ways to sort collections:
 
 - Sorting in **ascending** (**Natural**) order:
 
@@ -442,7 +442,15 @@ public class Main {
 }
 ```
 
-- Sorting by **multiple criteria**:
+[/slide]
+
+[slide hideTitle]
+
+# Sorting Collections by Multiple Criteria
+
+It is also possible to sort collections by multiple criteria.
+
+Consider the following example:
 
 ```java live
 Map<String, Integer> products = new HashMap<>();
@@ -464,7 +472,15 @@ products.entrySet()
         .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
 ```
 
-- Using functional `forEach()`:
+[/slide]
+
+[slide hideTitle]
+
+# Using Functional ForEach
+
+The `forEach()` method is used to iterate over every pair in a Map.
+
+Take a look at the example below:
 
 ```java live
 Map<String, List<Integer>> courseGrades = new HashMap<>();
