@@ -32,29 +32,29 @@ HTML uses "**markup**" to annotate text, images, and other content for display i
 [stream language="RO" videoId="444864042" /]
 [/video-vimeo]
 
-In HTML, a tags are used for **creating elements**. 
+In HTML, tags are used for **creating elements**. 
 
 Each HTML tag describes that the browser should do something instead of simply displaying the text. 
 
 In HTML, the tags begin with (`<`) and end with (`>`).
 
-HTML tags can be two types:
+There are two types of HTML tags:
 - Paired tags
 - Unpaired tags
 
 ## Paired Tags
-A paired tag is considered when text is placed between a certain tag and its companion tag. 
+A tag is considered to be paired when content is placed between a certain tag and its companion tag. 
 
 In paired tags, the first tag is referred to as **opening tag** and the second tag is referred to as **closing tag**.
 
-Note that the end tag's name is preceded by a **slash character** `</b>`.
+Note that the end tag's name is preceded by a **slash**.
 
 **Example:**
 ```html
 <b>This is bold text.</b>
 ```
 
-**Note:** Here `<b>` is called an opening tag and `</b>` is called a closing tag.
+**Note:** Here `<b>` is the opening tag and `</b>` is the closing tag.
 
 ## Unpaired Tags
 
