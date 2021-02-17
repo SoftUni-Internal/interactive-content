@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Welcome-To-Coding"
+// sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Welcome-To-Coding"
 
 [slide hideTitle]
 # Ce este codarea?

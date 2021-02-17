@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-Typicals-Errors-In-JS-Programs"
+// sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Typicals-Errors-In-JS-Programs"
 
 [slide hideTitle]
 # Erori tipice în programele JavaScript

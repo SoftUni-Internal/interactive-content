@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Introduction-to-Programming-The-JS-Language"
+// sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::The-JS-Language"
 
 [slide hideTitle]
 # Limbaje de programare
