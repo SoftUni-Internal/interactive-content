@@ -36,6 +36,7 @@ HTML paragraphs can be used for **grouping related content**.
 <p class="codepen" data-height="265" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="RwWwpov" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwWwpov"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
+<br/><br/>
 [/slide]
 
 [slide]
@@ -56,7 +57,7 @@ Attributes usually come in **name/value pairs** like: `name="value"`.
 <p class="codepen" data-height="286" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 
 You will learn more about links and the `<a>` tag in the next slide.
 [/slide]
@@ -80,7 +81,7 @@ External pages can be referenced with a URL to the web page.
 <p class="codepen" data-height="286" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 The `href` attribute specifies the destination address of the link - softuni.org in the example. 
 
 The link text is the **visible part** - `Go to SoftUni home page!` in the example.
@@ -109,7 +110,7 @@ This example will open the linked document in a new tab:
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 ## Same Domain Hyperlink
 Clicking the link will navigate the user to another page **within the website's domain**.
 
@@ -170,5 +171,5 @@ The list items will be marked with **bullets** (small black circles) by default:
 <p class="codepen" data-height="238" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="YzyzVpP" style="height: 238px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YzyzVpP"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 [/slide]
