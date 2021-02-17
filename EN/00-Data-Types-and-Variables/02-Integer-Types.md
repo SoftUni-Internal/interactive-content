@@ -1,9 +1,11 @@
 [slide hideTitle]
 # Integer types
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-12-15-integer-types-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Integer types** store whole numbers, positive or negative (such as 123 or -456), without decimals.
 
-**Byte**, **short**, **int**, and **long** are all integer data types. Choosing which one to use depends on the numeric value that will be stored in it.
+**Byte**, **short**, **int**, and **long** are all integer data types. Choosing which one to use, depends on the numeric value it will need to store.
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
@@ -12,8 +14,10 @@
 | int | 0 | -2147483648 | 2147483647 | 32 bit |
 | long | 0 | -9223372036854775808 | 9223372036854775807 | 64 bit |
 
+[/slide]
 
-## Example: Centuries
+[slide hideTitle]
+# Example: Centuries
 
 ```java live
 byte centuries = 20; 
@@ -26,25 +30,25 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-We can use different integer types, depending on the values we need to store in them.
+We can use different integer types, depending on what we want to store in them. 
 
-The **byte** data type can be used for storing whole numbers from -128 to 127
+- The *byte** data type can be used for storing whole numbers from -128 to 127
 
-**Byte** can be used to save memory when you are certain that the value will be within -128 to 127:
+**Byte** can be used instead to save memory when you are certain that the value will be within -128 to 127:
 
 ```java live
 byte myNum = 100;
 System.out.println(myNum);
 ```
 
-The **short** data type can be used to store whole numbers from -32768 to 32767:
+- The **Short** data type can be used to store whole numbers from -32768 to 32767:
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-The **int** data type can store whole numbers from -2147483648 to 2147483647
+- The **Int** data type can store whole numbers from -2147483648 to 2147483647
 
 In general, the **int** data type is the preferred data type when we create variables with a numeric value.
 
@@ -53,24 +57,24 @@ int myNum = 100000;
 System.out.println(myNum);
 ```
 
-The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
+- **Long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
 
-**Long** can be used when an **int** is not large enough to store the value.
+This is used when an int is not large enough to store the value.
 
-Note that when using long, you should append "L" (case-insensitive) to the end of the numeric value:
+Note that you should end the value with an "L":
 
 ```java live
 long myNum = 15000000000L;
 System.out.println(myNum);
 ```
+[/slide]
 
-## Integer Overflow
+[slide hideTitle]
+# Integer Overflow
 
-All integers have a range - a minimum and maximum value. 
+All integers have a range - a minimum and maximum value. This means that integers can overflow, resulting in incorrect values. 
 
-This means that integers can overflow, resulting in incorrect values. 
-
-Take a look at the example below:
+Take a look at the below example.
 
 ```java
 byte counter = 0;
@@ -87,14 +91,16 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The counter variable starts from 0 and is incremented with each step of the for loop. Eventually, when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
+The counter variable starts from 0 and is incremented with each step of the for loop. Eventually when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
 
 [/slide]
 
 [slide hideTitle]
 # Integer Literals
 
-Integer literals are numbers, which do not have a floating-point part. **541** is a literal value by that definition. A
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-16-integer-literals-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Integer literals are numbers, which do not have a floating point part. **541** is a literal value by that definition. A
 
 They can be represented in a few different ways, which are not as intuitive:
 
@@ -115,7 +121,10 @@ System.out.println("long: ", number);
 
 [slide hideTitle]
 # Problem with Solution: Convert Meters to Kilometers
-[code-task title="Convert Meters to Kilometers" taskId="java-fund-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-17-problem-and-solution-convert-meters-to-kilometers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Problem: Convert Meters to Kilometers" taskId="java-fund-data-types-lab-convert-meters-to-kilometers-problem" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

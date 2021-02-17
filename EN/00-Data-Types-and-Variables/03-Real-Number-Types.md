@@ -1,15 +1,17 @@
 # Real Number Types
 
 [slide hideTitle]
-# Floating-Point Types
+# Floating-Point Types?
 
-You should use a **floating-point type** whenever you need a number with a decimal, such as **9.99** or **3.14515**.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-18-21-real-number-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+You should use a **floating-point type** whenever you need a number with a decimal, such as 9.99 or 3.14515.
 
 Floating-point types also:
 
 - Have range and precision depending on the memory used
-- They can have abnormal behavior in some calculations
-- Can hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
+- Sometimes behave abnormally in the calculations
+- May hold very small and very big values like **0.00000000000001** and **100000000000000000000000000.0**
 
 These can be either **float** or **double**:
 
@@ -18,7 +20,10 @@ These can be either **float** or **double**:
 | float  | 32 bit | up to 7 digits  |
 | double | 64 bit | up to 16 digits |
 
-## Floating-Point Numbers
+[/slide]
+
+[slide hideTitle]
+# Floating-Point Numbers
 
 - **Float**: used for storing fractional numbers. Note that you should suffix the value with an `f`:
 
@@ -36,8 +41,10 @@ double myNum = 19.99;
 System.out.println(myNum);
 ```
 The **default value** of **double** is **0.0D**.
+[/slide]
 
-## Example: PI Precision
+[slide hideTitle]
+# PI Precision
 
 There is a difference in precision when using **float** and **double**:
 
@@ -48,7 +55,7 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-- NOTE: The "f" suffix in the first statement!
+- NOTE: The `f` suffix in the first statement!
 
 - Real numbers are interpreted as double by default
 
@@ -57,7 +64,10 @@ System.out.println("Double PI is: " + doublePI);
 
 [slide hideTitle]
 # Problem with Solution: Pounds to Dollars
-[code-task title="Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-22-problem-and-solution-pounds-to-dollars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Problem: Pounds to Dollars" taskId="java-fund-data-types-lab-pounds-to-dollars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -152,6 +162,8 @@ Assume that **1 British Pound = 1.31 Dollars**.
 [slide hideTitle]
 # Scientific Notation
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When working with large numbers, scientific notation is exceptionally helpful.
 
 In scientific notation, the letter `E` represents `10 to the power of E`. For example, `1.51E+1` means the same thing as `1.51x10^1`.
@@ -173,6 +185,8 @@ System.out.println(exampleVariableThree);
 [slide hideTitle]
 # Floating-Point Division
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-24-floating-point-division-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Integral division and floating-point division are different.
 
 See the examples below:
@@ -190,6 +204,8 @@ System.out.println(8 % 2.5);
 
 [slide hideTitle]
 # Floating-Point Abnormalities
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-25-floating-point-calculations-abnormalities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Keep in mind that sometimes floating-point numbers work incorrectly!
 
@@ -218,6 +234,8 @@ System.out.println(num);
 
 [slide hideTitle]
 # BigDecimal
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Keep in mind that sometimes floating-point numbers work incorrectly!
@@ -252,7 +270,10 @@ System.out.println(bigDecimal1);
 
 [slide hideTitle]
 # Problem with Solution: Exact Sum of Real Numbers
-[code-task title="Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-27-problem-and-solution-exact-sum-of-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[code-task title="Problem: Exact Sum of Real Numbers" taskId="java-fund-data-types-lab-exact-sum-of-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -267,7 +288,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that accepts a count of **n** numbers, calculates, and prints their **exact sum** (without rounding).
+Write a program that accepts a count of **n** numbers, calculates and prints their **exact sum** (without rounding).
 
 ## Examples
 | **Input** | **Output** |

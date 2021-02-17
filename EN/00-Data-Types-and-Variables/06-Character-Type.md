@@ -4,6 +4,8 @@
 
 # The Character Data Type
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-38-40-character-type-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The char data type stores a **single** character. The character must be surrounded by single quotes, like `'A'` or `'c'`.
 
 ```java live
@@ -57,7 +59,10 @@ The unicode table is separated in different parts and almost all living language
 
 
 [slide hideTitle]
-# Problem: Reversed Chars
+# Problem with Solution: Reversed Chars
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-41-problem-and-solution-reversed-chars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Problem: Reversed Chars" taskId="java-fund-data-types-lab-reversed-chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -158,109 +163,10 @@ a
 [/slide]
 
 [slide hideTitle]
-
-# Solution: Reversed Chars
-[code-task title="Solution: Reversed Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a program that accepts an input of 3 lines of characters and prints them in reversed order with a space between them.
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| A | C B A |
-| B |  |
-| C |  |
-
-| **Input** | **Output** |
-| --- | --- |
-| 1 | & L 1 |
-| L |  |
-| & |  |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-A
-B
-C
-
-[/input]
-[output]
-C B A
-[/output]
-[/test]
-[test open]
-[input]
-1
-L
-&
-
-[/input]
-[output]
-& L 1
-[/output]
-[/test]
-[test]
-[input]
-1
-2
-3
-[/input]
-[output]
-3 2 1
-[/output]
-[/test]
-[test]
-[input]
-A
-A
-A
-[/input]
-[output]
-A A A
-[/output]
-[/test]
-[test]
-[input]
-X
-a
-1
-[/input]
-[output]
-1 a X
-[/output]
-[/test]
-[test]
-[input]
-(
-0
-)
-[/input]
-[output]
-) 0 (
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
 # Escaping Characters
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-43-escaping-characters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Strings in Java are typed between double-quotes. Due to this Java will not be able to handle a string such as the below by default and this would result in an error.
 
 
@@ -302,6 +208,8 @@ System.out.println(txt);
 
 [slide hideTitle]
 # Character Literals
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-44-character-literals-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Character literals are all the character expressions that are embedded in Java. 
 
