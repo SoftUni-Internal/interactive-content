@@ -2,6 +2,8 @@
 [slide hideTitle]
 # Exam: SoftBay App
 
+**Here is a link to the** [resources](www.li.com) **for this task.**
+
 You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with a cloud-based backend (Firebase or Backendless). 
 
 Initially, all views and forms are shown by the HTML. 
