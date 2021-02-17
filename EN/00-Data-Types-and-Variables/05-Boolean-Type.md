@@ -27,7 +27,7 @@ The boolean data type is declared with the **boolean** keyword. It can hold only
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-36-problem-and-solution-special-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Special Numbers" taskId="java-fund-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Special Numbers" taskId="java-fund-data-types-lab-special-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -43,7 +43,9 @@ public class Main {
 ## Description
 A **number** is **special** when the **sum of its digits is 5, 7, or 11**.
 
-Write a program to read an integer **n**. For all numbers in the range **1…n**, print the number and if it is special or not - **(True / False)**.
+Write a program to read an integer **n**. 
+
+For all numbers in the range **1…n**, print the number and if it is special or not - **(True / False)**.
 
 ## Example
 | **Input** | **Output** |
