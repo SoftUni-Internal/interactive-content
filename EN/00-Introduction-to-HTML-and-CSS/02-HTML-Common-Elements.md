@@ -56,7 +56,7 @@ Attributes usually come in **name/value pairs** like: `name="value"`.
 <p class="codepen" data-height="286" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="abvbJWq" style="height: 186px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abvbJWq"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-<br/>
+<br/><br/>
 You will learn more about links and the `<a>` tag in the next slide.
 [/slide]
 
