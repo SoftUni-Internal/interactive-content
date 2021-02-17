@@ -17,7 +17,7 @@ The HTML `<h1>...<h6>` elements represent six levels of section headings.
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 [/slide]
 
 [slide]
@@ -148,7 +148,7 @@ There are two different types of lists in HTML and each one has a specific purpo
 - Ordered HTML list
 
 ## Ordered HTML List
-The HTML `<ol>` element represents an ordered list of items - typically rendered as a numbered list.
+The HTML `<ol>` element represents an **ordered list** of items - typically rendered as a numbered list.
 
 Each list item is represented by the `<li>` tag.
 
@@ -164,7 +164,7 @@ Each list item is represented by the `<li>` tag.
 [stream language="RO" videoId="444864047" /]
 [/video-vimeo]
 
-The HTML `<ul>` element represents an unordered list of items. Each list item is represented by the `<li>` tag.
+The HTML `<ul>` element represents an **unordered list** of items. Each list item is represented by the `<li>` tag.
 
 The list items will be marked with **bullets** (small black circles) by default:
 [html]
