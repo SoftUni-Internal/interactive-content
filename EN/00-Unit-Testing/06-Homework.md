@@ -1694,7 +1694,12 @@ Error: Active status must be a boolean
 [tests]
 [test open]
 [input]
+<<<<<<< HEAD
+//\<minTestCount\>5\</minTestCount\> - specifies the minimum amount of tests your code should have.
+var PaymentPackage = function () \{\};
+=======
 var PaymentPackage \= function \(\) \{\};
+>>>>>>> afffa60d3b55a83a8e2d173be359dd5c35f0edf7
 [/input]
 [output]
 Test Passed! 
@@ -1706,6 +1711,18 @@ PaymentPackage = class PaymentPackage {
     constructor(name, value) {
         this.name = name;
         this.value = value;
+<<<<<<< HEAD
+        this.VAT = 20;      // Default value        
+        this.active = true; // Default value
+    \}
+
+    get name() \{
+        return this._name;
+    \}
+
+    set name(newValue) \{
+        if (typeof newValue !== 'string') \{
+=======
         this.VAT = 20;            
         this.active = true; 
     }
@@ -1714,24 +1731,60 @@ PaymentPackage = class PaymentPackage {
     }
     set name(newValue) {
         if (typeof newValue !== 'string') {
+>>>>>>> afffa60d3b55a83a8e2d173be359dd5c35f0edf7
             throw new Error('Name must be a non-empty string');
         }
         if (newValue.length === 0) {
             throw new Error('Name must be a non-empty string');            
         }
         this._name = newValue;
+<<<<<<< HEAD
+    \}
+
+    get value() \{
+        return this._value;
+    \}
+
+    set value(newValue) \{
+        if (typeof newValue !== 'number') \{
+=======
     }
     get value() {
         return this._value;
     }
     set value(newValue) {
         if (typeof newValue !== 'number') {
+>>>>>>> afffa60d3b55a83a8e2d173be359dd5c35f0edf7
             throw new Error('Value must be a non-negative number');
         }
         if (newValue < 0) {
             throw new Error('Value must be a non-negative number');            
         }
         this._value = newValue;
+<<<<<<< HEAD
+    \}
+    
+    get VAT() \{
+        return this._VAT;
+    \}
+
+    set VAT(newValue) \{
+        if (typeof newValue !== 'number') \{
+            throw new Error('VAT must be a non-negative number');
+        \}
+        if (newValue \< 0) \{
+            throw new Error('VAT must be a non-negative number');            
+        \}
+        this._VAT = newValue;
+    \}
+
+    get active() \{
+        return this._active;
+    \}
+
+    set active(newValue) \{
+        if (typeof newValue !== 'boolean') \{
+=======
     }
     get VAT() {
         return this._VAT;
@@ -1750,9 +1803,20 @@ PaymentPackage = class PaymentPackage {
     }
     set active(newValue) {
         if (typeof newValue !== 'boolean') {
+>>>>>>> afffa60d3b55a83a8e2d173be359dd5c35f0edf7
             throw new Error('Active status must be a boolean');
         }
         this._active = newValue;
+<<<<<<< HEAD
+    \}
+
+    toString() \{
+        const output = \[
+            `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
+            `- Value (excl. VAT): \\$\{this.value\}`,
+            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+        \];
+=======
     }
     toString() {
         const output = [
@@ -1760,6 +1824,7 @@ PaymentPackage = class PaymentPackage {
             \`- Value (excl. VAT): ${this.value}\`,
             \`- Value (VAT ${this.VAT}%): ${this.value * (1 + this.VAT / 100)}\`
         ];
+>>>>>>> afffa60d3b55a83a8e2d173be359dd5c35f0edf7
         return output.join('\n');
     }
 };
