@@ -9,7 +9,7 @@
 [stream language="RO" videoId="446432570" /]
 [/video-vimeo]
 
-HTML is made up of various elements that act as the **building blocks** of web pages. 
+HTML is made up of various elements which act as the **building blocks** of web pages. 
 
 Every HTML element has a default **display value**:
 * Block Elements are `<address>` `<article>` `<aside>` `<blockquote>` `<div>` `<footer>` `<form>` `<h1>`-`<h6>` `<header>` `<li>` `<main>` `<nav>` `<ol>`
@@ -22,7 +22,7 @@ Every HTML element has a default **display value**:
 
 The block element always takes up the full available width and starts on a new line.
 
-You can add margins and paddings on all **four sides** of any block element.
+We can add margins and paddings on all **four sides** of any block element.
 
 **Example:**
 [html]
@@ -44,7 +44,7 @@ The inline element only takes up as **much width as necessary** and doesn't star
 
 They appear on the **same line** as the content and tags.
 
-You can add margins and paddings just on **right** and **left** sides of any inline element.
+We can add margins and paddings on the **right** and **left** sides of any inline element.
 
 **Example:**
 [html]
@@ -71,7 +71,7 @@ Inline-block elements are similar to inline elements.
 
 They can have paddings and margins added on **all four sides**.
 
-For using this property you have to declare `display: inline-block` in your CSS code.
+For using this property we have to declare `display: inline-block` in our CSS code.
 
 One common use for using inline-block is for creating navigation links horizontally.
 
