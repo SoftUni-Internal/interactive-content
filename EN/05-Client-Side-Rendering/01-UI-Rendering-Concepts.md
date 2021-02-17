@@ -32,7 +32,7 @@ The browser **interprets** the HTML, making the page **visible**.
 
 To enable **interaction**, the browser **downloads** the necessary **scripts** from the server, and **runs them**.
 
-** Client-side rendering** does most of the work on the client's machine.
+**Client-side rendering** does most of the work on the client's machine.
 
 When the browser makes a GET **request** to the website, a **Content Delivery Network** \(CDN\) serves the **static files** and the **scripts**.
 
