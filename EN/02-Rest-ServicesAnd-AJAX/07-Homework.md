@@ -7,14 +7,14 @@
 
 ```
 function busStop(){
-    //TODO
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for this task.**
 
@@ -232,20 +232,18 @@ yes
 [slide hideTitle]
 
 # Problem: Bus Schedule
-
-[code-task title="Bus Schedule" taskId="js-applications-rest-services-and-ajax-bus-schedule" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
+[code-task title="Bus Schedule" taskId="js-applications-rest-services-and-ajax-bus-schedule" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 
 ```
 function busSchedule(){
-    //TODO
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-02.BUS-SCHEDULE.zip) **for this task.**
 
@@ -257,11 +255,13 @@ The bus has two states – **moving** and **stopped**.
 
 When it is **stopped**, only the button **Depart** is **enabled**, while the infobox shows the name of the **current** stops.
 
-When it is **moving**, only the button **Arrive** is **enabled**, while the infobox shows the name of the **upcoming** stops. Initially, the info box shows **Not Connected**, and the **Arrive** button is **disabled**.
+When it is **moving**, only the button **Arrive** is **enabled**, while the infobox shows the name of the **upcoming** stops. 
+
+Initially, the info box shows **Not Connected**, and the **Arrive** button is **disabled**.
 
 The ID of the first stop is **depot**.
 
-When the "**Depart**" button is clicked, make a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
+When the `Depart` button is clicked, make a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
 
 As a response, you will receive a JSON object in the following format:
 
@@ -437,14 +437,14 @@ yes
 
 ```
 function messenger(){
-    //TODO
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-03.MESSENGER.zip) **for this task.**
 
@@ -560,14 +560,14 @@ yes
 
 ```
 function phoneBook(){
-    //TODO
+    // Write your code here
 }
 ```
 
 [/code-editor]
 [task-description]
 
-## Description
+# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-04.PHONEBOOK.zip) **for this task.**
 
