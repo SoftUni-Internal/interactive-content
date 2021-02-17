@@ -4,6 +4,8 @@
 
 # Quantifiers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Quantifiers** specify **how many** instances of a **character**, **group**, or **character class** must be **present** in the input for a match to be found.
 
 | **Notation** | **Meaning** |
@@ -34,6 +36,8 @@
 [slide hideTitle]
 
 # Grouping Constructs
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can split regex into **groups** and we can use these groups to **extract information** about **part of the match**.
 
@@ -68,6 +72,8 @@ Write a **regular expression** at [www.regex101.com](www.regex101.com) which **e
 
 [slide hideTitle]
 # Problem with Solution: Match Dates
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-24-Problem-and-Soluttion-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a **regular expression** that **extracts dates from text**.
 

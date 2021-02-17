@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What are Regular Expressions?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-3-4-What-are-regular-expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **abbreviation** for **regular expression** is **regex**.
 
 A **regular expression** defines a **search pattern** for **strings**.
@@ -28,13 +30,15 @@ You can **practice** creating custom regular expressions at:
 
 # Regular Expression Patterns - Example
 
-TODO: Add video
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-6-Regular-expressions-pattern-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 
 # Character Classes: Ranges
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-7-Character-classes-ranges-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the **context of regular expressions**, a character class is a **set of characters enclosed within square brackets**. 
 
@@ -60,6 +64,8 @@ In the example above, the class `[abc]` matches any character that is either **a
 [slide hideTitle]
 
 # Predefined Classes
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-8-Predefined-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 | **Notation** | **Meaning (Returns a match where…)** |
 | --- | --- |

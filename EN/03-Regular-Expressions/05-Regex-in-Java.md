@@ -4,6 +4,8 @@
 
 # Regex in Java
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-17-18-Regex-in-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used for advanced regular expressions.
 
 ```java live no-template
@@ -41,6 +43,8 @@ These are the steps that the previous exampel follows:
 
 # Checking for a Single Match
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `find()` method scans the input sequence looking for the next subsequence that matches the pattern.
 
 Check the following example:
@@ -70,6 +74,8 @@ public class Main {
 [slide hideTitle]
 
 # Replacing with Regex
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-20-Replacing-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are **two** ways to replace a pattern with **Regex**:
 
@@ -118,6 +124,8 @@ public class Main {
 
 # Splitting with Regex
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-21-Splitting-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `split(String pattern)` method splits the text by the pattern and returns a `String[]`.
 
 ```java live
@@ -133,6 +141,9 @@ System.out.println(String.join(", ",tokens));
 
 [slide hideTitle]
 # Problem with Solution: Match Full Name
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-25-Problem-and-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Match Full Name" taskId="Java-Fundamentals-Part-Two-Regex-Match-Full-Nmaes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
