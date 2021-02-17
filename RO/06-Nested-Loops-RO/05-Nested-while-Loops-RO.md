@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Nested-While-Loops"
+// sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-While-Loops"
 
 [slide hideTitle]
 # Bucle imbricate

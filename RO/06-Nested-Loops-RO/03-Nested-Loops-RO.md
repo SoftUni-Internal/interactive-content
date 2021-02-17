@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Nested-Loops"
+// sectionId: "Javascript::Programming-Basics::Nested-Loops::Nested-Loops"
 
 [slide hideTitle]
 
