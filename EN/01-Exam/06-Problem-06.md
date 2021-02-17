@@ -40,7 +40,7 @@ For each sport read:
 
 The output is formatted in one line:
 
-- If you **won** the tournament:
+- If you **win** the tournament:
 
      "You won the tournament! Total money raised: \{earned money\}"
 
