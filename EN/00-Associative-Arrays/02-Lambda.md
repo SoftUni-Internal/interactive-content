@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Lambda Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-16-18-lambda-functions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A lambda expression is an **anonymous function** containing **expressions and statements**. 
 
 It **replaces an entire function** and **improves** code writing. 

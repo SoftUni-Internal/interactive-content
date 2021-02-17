@@ -39,6 +39,8 @@ Most of the methods use lambda expressions on the stream.
 [slide hideTitle]
 # Processing Arrays with the Stream API
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-processing-arrays-with-stream-api-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Using **one line operations** on arrays instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 - `min()` - Finds and returns the **smallest** element in a collection
@@ -103,6 +105,8 @@ System.out.println(average);
 
 [slide hideTitle]
 # Processing Collections with Stream API
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using one line operations on collections like lists, maps, instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
@@ -210,6 +214,8 @@ for (String word : words) {
 
 # Converting Collections
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **two** ways to convert collections in Java:
 
 - `toArray()` - Converts a collection into an **array**
@@ -236,6 +242,8 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 # Filtering Collections
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `filter()` method goes through a collection and gets only the elements that match a certain criteria:
 
 ```java
@@ -250,6 +258,9 @@ int[] numbers = Arrays.stream(scanner.nextLine()
 
 [slide hideTitle]
 # Problem with Solution: Word Filter
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-28-problem-and-solution-word-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Word Filter" taskId="Java-Fundamentals_part-Two-ASsociative-Arrays-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -392,6 +403,8 @@ sell
 [slide hideTitle]
 # Ordering / Sorting Collections
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-30-sorting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are **two** ways to sort collections:
 
 - Sorting in **ascending** (**Natural**) order:
@@ -448,6 +461,8 @@ public class Main {
 
 # Sorting Collections by Multiple Criteria
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-31-sorting-collections-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 It is also possible to sort collections by multiple criteria.
 
 Consider the following example:
@@ -477,6 +492,8 @@ products.entrySet()
 [slide hideTitle]
 
 # Using Functional ForEach
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-32-33-using-functional-for-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `forEach()` method is used to iterate over every pair in a Map.
 
@@ -536,6 +553,9 @@ courseGrades.entrySet()
 
 [slide hideTitle]
 # Problem with Solution: Largest 3 Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-34-problem-largest-three-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

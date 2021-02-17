@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Associative Arrays
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Associative arrays are collections of type parameters **Key** and **Value** pairs and are indexed by **Keys**, not by numbers like arrays. 
 
 **The Key** represents **the index** of the map. Keys and Values are **objects** and each pair is known as **an entry**.
@@ -35,6 +37,8 @@ For example:
 
 [slide hideTitle]
 # Collections of Key and Value Pairs
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Java Collections API contains several Map **implementations**, which allow a Map's contents to be viewed as:
 
@@ -222,13 +226,15 @@ System.out.println(airplanes.isEmpty());
 
 # TreeMap<K, V> - Example
 
-TODO: Add More Videos
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-10-treemap-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 
 [slide hideTitle]
 # Iterating through a Map
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When iterating through objects of type **Map.Entry <K, V>**, it is **impossible** to modify the collection(read-only).
 
@@ -275,6 +281,9 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 
 [slide hideTitle]
 # Problem with Solution: Count Real Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Count Real Numbers" taskId="Java-Fundamentals-part-Two-Associative-arrays-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -406,6 +415,9 @@ Read a **list of real numbers** and print them in **ascending order** along with
 
 [slide hideTitle]
 # Problem with Solution: Word Synonyms
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-14-problem-and-solution-word-synonyms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Word Synonyms" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
