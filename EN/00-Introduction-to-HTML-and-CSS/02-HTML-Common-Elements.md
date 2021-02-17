@@ -155,7 +155,7 @@ Each list item is represented by the `<li>` tag.
 <p class="codepen" data-height="208" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="bGVGWgR" style="height: 208px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="bGVGWgR"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-<br>
+<br/><br/>
 ## Unordered HTML List
 
 [vimeo-video]
