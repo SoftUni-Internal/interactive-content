@@ -322,7 +322,7 @@ If invalid data is received, show **Error** inside the infobox and **disable** b
 
 ## Examples
 
-Initially, the info box shows `Not Connected` and they arrive button is disabled.
+Initially, the info box shows `Not Connected` and the arrive button is disabled.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-12.png" /]
 
@@ -350,7 +350,7 @@ The infobox is updated with the new information and the buttons are changed:
       <span class="info">Next stop Depot</span>
    </div>
    <div id="controls">
-      <input id="depart" value="Depart” type=“button" onclick="result.depart()" disabled="disabled">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()" disabled="disabled">
       <input id="arrive" value="Arrive" type="button" onclick="result.arrive()">
    </div>
 </div>
@@ -368,7 +368,7 @@ This allows Depart to be clicked again, which makes a new request and updates th
       <span class="info">Arriving at Depot</span>
    </div>
    <div id="controls">
-      <input id="depart" value="Depart” type=“button" onclick="result.depart()">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
       <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="disabled">
    </div>
 </div>
@@ -680,7 +680,7 @@ The URL to which your program should make requests is: `https://phonebook-nakov.
 
 **GET** and **POST** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook.json`, while **DELETE** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook/<key>.json`, where `<key>` is the unique key of the entry \(you can find out the **key** from the key property in the **GET** request\)
 
-**You may create your own app** in Firebase.
+**You may create your app** in Firebase.
 
 ## Screenshots:
 
