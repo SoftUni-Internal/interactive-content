@@ -1693,7 +1693,7 @@ Error: Active status must be a boolean
 [tests]
 [test open]
 [input]
-//\<minTestCount\>5\</minTestCount\> - specifies the minimum amount of tests your code should have.
+// \<minTestCount\>5\</minTestCount\> \- specifies the minimum amount of tests your code should have.
 var PaymentPackage = function () \{\};
 [/input]
 [output]
@@ -1765,9 +1765,9 @@ PaymentPackage = class PaymentPackage \{
 
     toString() \{
         const output = \[
-            `Package: \\$\{this.name\}` + (this.active === false ? ' (inactive)' : ''),
-            `- Value (excl. VAT): \\$\{this.value\}`,
-            `- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}`
+            \`Package: \\$\{this.name\}\` + (this.active === false ? ' (inactive)' : ''),
+            \`- Value (excl. VAT): \\$\{this.value\}\`,
+            \`- Value (VAT \\$\{this.VAT\}%): \\$\{this.value \* (1 + this.VAT / 100)\}\`
         \];
         return output.join('\n');
     \}
@@ -1779,7 +1779,7 @@ Test Passed!
 [/test]
 [test]
 [input]
-//\<testInfo\>Missing name getter/setter\</testInfo\>
+// \<testInfo\>Missing name getter/setter\</testInfo\>
 PaymentPackage = class PaymentPackage \{
     constructor(name, value) \{
         this.name = name;
