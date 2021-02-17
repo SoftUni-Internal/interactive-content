@@ -13,6 +13,6 @@
 
 **2. Unit Testing With Mocha And Chai**
 
-- What is a framework for testing
+- Using software testing frameworks
 
 [/slide]
