@@ -11,9 +11,13 @@ Associative arrays in JavaScript are objects in which, the indexes are replaced 
 
 They do not have a **length** property like normal array and cannot be iterated using normal for loop.
 
-Arrays are indexed by **string keys**. They consist of a **key** and a **value**.
+Arrays are indexed by **string keys**.
 
-The **key** is a **string**. The **value** can be of **any** type.
+They consist of a **key** and a **value**.
+
+The **key** is a **string**.
+
+The **value** can be of **any** type.
 
 **Example:**
 
