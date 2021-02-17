@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
@@ -7,7 +7,8 @@
 
 ## In this lesson you learned:
 
-- We can use both **Objects** and **Maps** to store **key-value** pairs.
+- We can use both **Objects** and **Maps** to store **key-value** pairs
+
 ```js
 let myMap = new Map([
   [3, 'three'],
@@ -15,22 +16,22 @@ let myMap = new Map([
   [1, 'one'],
 ]);
 ```
-- In practice, **Objects** are used more often.
+
+- In practice, **Objects** are used more often
 
 ```js
 let car = {type:"Tesla", model:"X", color:"Blue"};
 ```
+
 - **Maps** have advantages in some cases:
-  - You may use **any data type** as **key**.
-  - They are **iterable**.
-  - They have a **size property**.
+  - You may use **any data type** as **key**
+  - They are **iterable**
+  - They have a **size property**
 
-## In the next lesson we will learn:
+## In the next lesson, you will learn:
 
-- String
-
-- Manipulation strings
-
-- Building and modifying strings
+- Strings
+  - Manipulating strings
+  - Building and modifying strings
 
 [/slide]
