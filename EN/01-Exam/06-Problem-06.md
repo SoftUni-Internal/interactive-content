@@ -70,6 +70,7 @@ The output is formatted in one line:
 | win | |
 | **Finish** | |
 
+
 ## Comments:
 
 The tournament is 2 days long.
