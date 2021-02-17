@@ -2,8 +2,14 @@
 # Tournament for Christmas
 [code-task title="Tournament for Christmas" taskId="pb-java-exam-tournament-for-christmas" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
-```
+```java
+import java.util.Scanner;
 
+public class Program {
+  public static void main(String[] args) {
+    // Write code here
+  }
+}
 ```
 [/code-editor]
 [task-description]
