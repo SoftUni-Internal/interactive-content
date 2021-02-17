@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Defining Simple Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When defining a class, it contains only those components of a class declaration that are required.
 
 The **obligatory** components are:
@@ -40,6 +42,8 @@ The short command depends on the operation system of the computer:
 
 [slide hideTitle]
 # Naming Classes
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-16-naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
 
@@ -118,6 +122,8 @@ public class Animal {
 
 [slide hideTitle]
 # Getters and Setters
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-17-19-class-members-methods-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There can be declared getter and setter for each field.
 
