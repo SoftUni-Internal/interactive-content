@@ -15,7 +15,7 @@ It only works on **positioned** elements (anything apart from static).
 If the element has **greater** stack order then it is always **in front** of an element with a lower stack order.
 
 The following values of `z-index` are possible:
-* `auto` - Sets the stack order **equal to its parents**. This is **default**;
+* `auto` - Sets the stack order **equal to its parents**. This is by **default**;
 * \<number> - Sets the **stack order** of the element. Negative numbers are **allowed**.
 
 The order is defined by the **order in the HTML** code:
@@ -62,7 +62,7 @@ The target element is moved in **front** of its siblings.
 [stream language="EN" videoId="431760668" default /]
 [/video-vimeo]
 
-For `z-index` you can use **negative** values.
+For `z-index` we can use **negative** values.
 
 The target element is moved **behind** its siblings.
 
