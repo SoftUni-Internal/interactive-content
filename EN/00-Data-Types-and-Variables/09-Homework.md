@@ -1,9 +1,10 @@
 # Homework
 
 [slide hideTitle]
+
 # Problem: Integer Operations
 
-[code-task title="Problem: Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Integer Operations" taskId="java-fund-Data-Types-Exercise-Integer-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -95,7 +96,7 @@ Read **four integer numbers**.
 
 [slide hideTitle]
 # Problem: Sum Digits
-[code-task title="Problem: Sum Digits" taskId="java-fund-05-data-types-exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Digits" taskId="java-fund-05-data-types-exercise-Sum-Digits" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -166,7 +167,7 @@ Your task is to find the **sum of its digits**.
 [slide hideTitle]
 # Problem: Elevator
 
-[code-task title="Problem: Elevator" taskId="java-fund-05-data-types-exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Elevator" taskId="java-fund-05-data-types-exercise-Elevator" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -248,7 +249,7 @@ The **input** will consist of **two lines**:
 
 [slide hideTitle]
 # Problem: Sum of Chars
-[code-task title="Problem: Sum of Chars" taskId="java-fund-05-data-types-exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum of Chars" taskId="java-fund-05-data-types-exercise-Sum-of-Chars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -374,7 +375,7 @@ The sum equals: 1940
 
 [slide hideTitle]
 # Problem: Print Part of the ASCII Table
-[code-task title="Problem: Print Part of the ASCII Table" taskId="java-fund-05-data-types-exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Print Part of the ASCII Table" taskId="java-fund-05-data-types-exercise-Print-Part-of-the-ASCII-Table" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -443,7 +444,7 @@ a b c d e f g h
 
 [slide hideTitle]
 # Problem: Triples of Latin Letters
-[code-task title="Problem: Triples of Latin Letters" taskId="java-fund-05-data-types-exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triples of Latin Letters" taskId="java-fund-05-data-types-exercise-Triples-of-Latin-Letters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -832,7 +833,7 @@ fff
 [slide hideTitle]
 # Problem: Water Overflow
 
-[code-task title="Problem: Water Overflow" taskId="java-fund-05-data-types-exercise-water-overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Water Overflow" taskId="java-fund-05-data-types-exercise-water-overflow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -946,7 +947,7 @@ Insufficient capacity!
 [slide hideTitle]
 # Problem: Beer Kegs
 
-[code-task title="Problem: Beer Kegs" taskId="java-fund-05-data-types-exercise-beer-kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Beer Kegs" taskId="java-fund-05-data-types-exercise-beer-kegs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1065,7 +1066,7 @@ Keg 4
 
 [slide hideTitle]
 # Problem: Spice Must Flow
-[code-task title="Problem: Spice Must Flow" taskId="java-fund-05-data-types-exercise-spice-must-flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Spice Must Flow" taskId="java-fund-05-data-types-exercise-spice-must-flow" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1087,7 +1088,9 @@ After it has been mined for a day, the yield drops by 10, meaning on the **secon
 
 A source is considered **profitable only while its yield is at least 100** – when less than 100 spice is expected in a day, abandon the source.
 
-The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. Note that the workers cannot consume more spice than there is in storage. 
+The mining **crew consumes 26 spice every day** at the **end of their shift and an additional 26** after the mine has been exhausted. 
+
+Note that the workers cannot consume more spice than there is in storage. 
 
 When the operation is complete, **print to the console on two separate lines** how many **days** the mine has operated and the total **amount** of spice extracted.
 
@@ -1105,9 +1108,11 @@ Print on **two separate lines** how many **days the mine has operated** and the 
 | | 134 |
 
 **Comments** 
-- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101.
-- Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91.
-- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days.
+- Day 1 we extract 111 spice and at the end of the shift, the workers consume 26, leaving 85. The yield drops by 10 to 101
+
+- Day 2 we extract 101 spice, the workers consume 26, leaving 75. The total is 160 and the yield has dropped to 91
+
+- Since the expected yield is less than 100, we abandon the source. The workers take another 26, leaving 134. The mine has operated 2 days
 
 [/task-description]
 [code-io /]
@@ -1154,7 +1159,7 @@ Print on **two separate lines** how many **days the mine has operated** and the 
 
 [slide hideTitle]
 # Problem: Poke Mon
-[code-task title="Problem: Poke Mon" taskId="java-fund-05-data-types-exercise-poke-mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Poke Mon" taskId="java-fund-05-data-types-exercise-poke-mon" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1170,7 +1175,9 @@ public class Main {
 ## Description
 A Poke Mon is a special type of pokemon which likes to Poke others. But at the end of the day, the Poke Mon wants to keep **statistics** on how many pokes it has managed to do.
 
-The Poke Mon pokes his target, and then proceeds to poke another target. The **distance between his targets reduces his poke power**.
+The Poke Mon pokes his target, and then proceeds to poke another target. 
+
+The **distance between his targets reduces his poke power**.
 
 You will be given the **poke power** the Poke Mon has, **N** – an integer.
 
@@ -1180,11 +1187,17 @@ Then you will be given the **exhaustionFactor Y** – an integer.
 
 Your task is to start **subtracting M from N until N becomes less than M**, i.e. the Poke Mon does not have enough power to reach the next target. 
 
-**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. **Count** how many targets you’ve poked – you’ll need that count.
+**Every time you subtract M from N that means you’ve reached a target** and poked it successfully. 
 
-The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is **possible**. Use integer division.
+**Count** how many targets you’ve poked – you’ll need that count.
 
-If division is not possible, you should NOT do it. Instead, you should continue subtracting.
+The Poke Mon becomes gradually **more exhausted**. **If N becomes equal to EXACTLY 50 % of its original value, you must divide N by Y**, if it is **possible**. 
+
+Use integer division.
+
+If division is not possible, you should NOT do it. 
+
+Instead, you should continue subtracting.
 
 After dividing, you should **continue subtracting** from N, until it becomes less than M.
 
@@ -1192,15 +1205,15 @@ When N becomes less than M, you must take what has remained of N and the count o
 
 **NOTE:** When you are calculating percentages, you should do it with maximum precision.
 
-Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
+Note: 505 is not exactly 50% of 1000, it is 50.5%.
 
 ### Input/ Constraints
--	On the first line you will receive **N** – an integer.
--	On the second line you will receive **M** – an integer.
--	On the third line you will receive **Y** – an integer.
+-	On the first line you will receive **N** – an integer
+-	On the second line you will receive **M** – an integer
+-	On the third line you will receive **Y** – an integer
 
 ### Output
--	On the first line print **what has remained of N**, after subtracting from it.
+-	On the first line print **what has remained of N**, after subtracting from it
 -	On the second line print the **count of targets**, you’ve managed to poke
 
 ### Example
@@ -1211,13 +1224,13 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 | 3 | |
 
 **Comments**
-- N = 5, M = 2, Y = 3.
-- We start subtracting M from N.
-- N – M = 3. 1 target poked.
-- N – M = 1. 2 targets poked.
-- N < M.
-- We print what has remained of N, which is 1.
-- We print the count of targets, which is 2.
+- N = 5, M = 2, Y = 3
+- We start subtracting M from N
+- N – M = 3. 1 target poked
+- N – M = 1. 2 targets poked
+- N < M
+- We print what has remained of N, which is 1
+- We print the count of targets, which is 2
 
 [/task-description]
 [code-io /]
@@ -1273,7 +1286,7 @@ Example: 505 is NOT EXACTLY 50 % from 1000, its 50.5 %.
 [slide hideTitle]
 # Problem: Snowballs
 
-[code-task title="Problem: Snowballs" taskId="java-fund-05-data-types-exercise-snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Snowballs" taskId="java-fund-05-data-types-exercise-snowballs" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -1294,9 +1307,9 @@ They have decided to involve you in their fray, by making you write a program wh
 You will receive **N** – an integer, the **number of snowballs being made** by Tony and Andi.
 
 For each snowball you will receive 3 input lines:
--	On the first line you will get the **snowballSnow** – an integer.
--	On the second line you will get the **snowballTime** – an integer.
--	On the third line you will get the **snowballQuality** – an integer.
+-	On the first line you will get the **snowballSnow** – an integer
+-	On the second line you will get the **snowballTime** – an integer
+-	On the third line you will get the **snowballQuality** – an integer
 
 For each snowball you must calculate its snowballValue by the following formula:
 **(snowballSnow / snowballTime) ^ snowballQuality**
@@ -1305,11 +1318,11 @@ At the end you must **print the highest calculated** snowballValue.
 
 
 ### Input/ Constraints
--	On the first input line you will receive N – the number of snowballs.
--	On the next N * 3 input lines you will be receiving data about snowballs. 
+-	On the first input line you will receive N – the number of snowballs
+-	On the next N * 3 input lines you will be receiving data about snowballs
 
 ### Output
--	As output you must print the **highest calculated snowballValue**, by the formula, specified above. 
+-	As output you must print the **highest calculated snowballValue**, by the formula, specified above
 - The output format is: 
 \{snowballSnow\} : \{snowballTime\} = \{snowballValue\} (\{snowballQuality\})
 
