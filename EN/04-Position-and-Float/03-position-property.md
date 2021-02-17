@@ -31,7 +31,7 @@ These properties also work differently **depending on the position value**.
 
 `position: static;` is the **default** state of every element.
 
-It just means: 'put the element into its **normal position** in the document layout flow'.
+It just means: 'place the element into its **normal position** in the document layout flow'.
 
 **Note**: It **will not react** to the following properties: top, bottom, left, right, z-index.
 
@@ -58,7 +58,7 @@ It just means: 'put the element into its **normal position** in the document lay
 
 `position: relative;` is very similar to static positioning, **except** that once the positioned element has taken its place, you can then modify its final position with the **positional properties** – left, right, top, bottom, z-index.
 
-It also makes the element **positioned**: it will act as **anchor** point for the absolutely positioned block.
+It also makes the element **positioned**: it will act as an **anchor** point for the absolutely positioned block.
 
 When the position is set to **relative**, the following properties can be set:
 
