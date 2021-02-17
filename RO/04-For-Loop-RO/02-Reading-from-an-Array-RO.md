@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-For-Loop-Reading-From-An-Array"
+// sectionId: "Javascript::Programming-Basics::For-Loop::Reading-From-An-Array"
 
 # Citirea unei matrice
 

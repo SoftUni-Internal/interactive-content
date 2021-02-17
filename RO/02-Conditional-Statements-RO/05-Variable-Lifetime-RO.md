@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Variable-Lifetime"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::Variable-Lifetime"
 
 [slide hideTitle]
 # Domeniul de aplicare variabil

@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-While-Loop-Summary"
+// sectionId: "Javascript::Programming-Basics::While-Loop::Summary"
 
 [slide hideTitle]
 # Recapitulare

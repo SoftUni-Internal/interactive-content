@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-If-Else"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::If-Else"
 
 [slide hideTitle]
 # Condiții If-Else

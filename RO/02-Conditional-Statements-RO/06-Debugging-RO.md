@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Debugging"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::Debugging"
 
 [slide hideTitle]
 # Depanare

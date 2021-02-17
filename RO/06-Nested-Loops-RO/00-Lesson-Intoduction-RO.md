@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Nested-Loops-Lesson-Introduction"
+// sectionId: "Javascript::Programming-Basics::Nested-Loops::Lesson-Introduction"
 
 # Lecție introductivă
 
