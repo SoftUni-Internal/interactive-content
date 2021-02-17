@@ -17,7 +17,7 @@
 - Backendless
 
 **3. Firebase**
-- Realtime databse
+- Realtime database
 - Backend as a service
 - JSON-based data structure
 

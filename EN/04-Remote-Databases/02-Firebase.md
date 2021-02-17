@@ -397,7 +397,7 @@ URL: `https://databaseURL/books/bookId.json`
 
 The next task is to execute the "PUT" command. 
 
-In our case, we have to change the author’s name to "New author was assigned".
+In our case, we have to change the author's name to "New author was assigned".
 
 The JSON body should be in the following format:
 

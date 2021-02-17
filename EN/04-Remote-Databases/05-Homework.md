@@ -125,9 +125,11 @@ Pressing the "Play" button on a player should:
 - Call the "loadCanvas()" function from the "loadCanvas.js" file
 - Pass to it the **new player** as an **object**, containing those properties name, money, and bullets
 
-When a player’s "Delete" button is pressed, the player should be deleted, both from the HTML and the server.
+When a player's "Delete" button is pressed, the player should be deleted, both from the HTML and the server.
 
 [image assetsSrc="Remote-Databases(17).png" /]
+
+
 
 [image assetsSrc="Remote-Databases(18).png" /]
 

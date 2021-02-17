@@ -7,7 +7,7 @@
 
 - What is Relational Databases
 
-- What is a Non-Relational Databases
+- What is Non-Relational Databases
 
 - What is a BaaS
 

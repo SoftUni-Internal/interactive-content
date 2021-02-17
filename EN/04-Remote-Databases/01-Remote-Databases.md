@@ -72,7 +72,7 @@ NoSQL databases have become popular because they store data in straightforward f
 
 NoSQL databases often allow developers to change the structure of the data.
 
-They can scale-out “horizontally,” meaning that they run on multiple servers that work together, each sharing part of the load.
+They can scale-out "horizontally", meaning that they run on multiple servers that work together, each sharing part of the load.
 
 High-availability NoSQL databases are systems designed to run without interruption of service. 
 
