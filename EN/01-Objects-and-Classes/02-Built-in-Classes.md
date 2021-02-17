@@ -1,5 +1,7 @@
+# Built-in API Classes
+
 [slide hideTitle]
-# Built-in Classes
+# Built-in Classes in Java
 
 Java provides **ready-to-use** classes, which are organized inside **Packages**. 
 
@@ -36,19 +38,19 @@ int randomNumber = rnd.nextInt(10);
 
 `Math` class methods are **static** and help performing the **numeric operations** and commonly used **mathematical functions** like:
 
-- rounding
+- Rounding
 
-- comparing
+- Comparing
 
-- square root
+- Square root
 
-- cube root
+- Cube root
 
-- exponential
+- Exponential
 
-- logarithm
+- Logarithm
 
-- trigonometric operations.
+- Trigonometric operations
 
 `Math` methods include:
 
