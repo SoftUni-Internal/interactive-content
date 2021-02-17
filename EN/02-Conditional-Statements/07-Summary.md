@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Summary"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::Summary"
 
 [slide hideTitle]
 # Summary

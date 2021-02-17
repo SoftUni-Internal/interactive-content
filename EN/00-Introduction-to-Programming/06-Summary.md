@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Introduction-to-Programming-Basics-Summary"
+// sectionId: "Javascript::Programming-Basics::Introduction-to-Programming::Summary"
 
 [slide hideTitle]
 # Summary

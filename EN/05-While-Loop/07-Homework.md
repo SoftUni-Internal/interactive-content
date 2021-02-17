@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-While-Loop-Homework"
+// sectionId: "Javascript::Programming-Basics::While-Loop::Homework"
 
 # Homework
 

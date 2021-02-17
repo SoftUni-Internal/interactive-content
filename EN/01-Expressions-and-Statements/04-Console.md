@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-and-Statements-Console"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Console"
 
 
 [slide hideTitle]

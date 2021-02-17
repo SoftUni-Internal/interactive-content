@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Reading-From-An-Array"
+// sectionId: "Javascript::Programming-Basics::For-Loop::Reading-From-An-Array"
 
 # Read From an Array
 

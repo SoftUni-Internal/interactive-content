@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-and-Statements-Variables"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Variables"
 
 # Variables and Storing Data
 

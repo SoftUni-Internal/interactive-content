@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-and-Statements-Homework"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Homework"
 
 # Homework
 

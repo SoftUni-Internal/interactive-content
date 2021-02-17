@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-For-Loop-Infinity-Loops"
+// sectionId: "Javascript::Programming-Basics::For-Loop::Infinity-Loops"
 
 [slide hideTitle]
 # Infinite Loops

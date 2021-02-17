@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-and-Statements-Expressions"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Expressions"
 
 [slide hideTitle]
 # Expressions

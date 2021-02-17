@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Expressions-and-Statements-Data-Types"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Data-Types"
 
 # Data Types and Ranges of Variables
 

@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Exam-Preparation-Problem-02"
+// sectionId: "Javascript::Programming-Basics::Exam-Preparation::Problem-02"
 
 [slide hideTitle]
 # Problem 2: Time for Lunch
