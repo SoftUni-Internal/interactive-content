@@ -1694,7 +1694,6 @@ Error: Active status must be a boolean
 [tests]
 [test open]
 [input]
-//<minTestCount>5</minTestCount> - specifies the minimum amount of tests your code should have.
 var PaymentPackage \= function \(\) \{\};
 [/input]
 [output]
@@ -1707,8 +1706,8 @@ PaymentPackage = class PaymentPackage {
     constructor(name, value) {
         this.name = name;
         this.value = value;
-        this.VAT = 20;      // Default value        
-        this.active = true; // Default value
+        this.VAT = 20;            
+        this.active = true; 
     }
     get name() {
         return this._name;
