@@ -1,7 +1,7 @@
 
 
 [slide hideTitle]
-# JS Applications Exam Preparation: Shoe Shelf SPA
+# Exam Preparation: Shoe Shelf SPA
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Js-Applications-Exam-prep.zip) **for this task.**
 
@@ -16,11 +16,8 @@ The app keeps **users** and **shoes.**
 Logged\-in users should be able to view **all shoes**, **add shoes**, **buy shoes**, see **details** about a **shoes** and **logout**.
 
 Logged-in users should also be able to **edit** or **delete** the **shoes they have added.**
-[/slide]
 
-[slide hideTitle]
-
-# Create a REST Service
+## Create a REST Service
 
 Use any cloud-based database and create an application to keep your data in the cloud.
 
@@ -212,9 +209,11 @@ After successfully buying:
 
 - Display the updated Details page
 
-- By clicking the `[Buy]` button changes to `[You bought it]` span so users can't **buy an item** multiple times.
+- By clicking the `[Buy]` button: 
 
 [image assetsSrc="js-apps-exam-prep-12.png" /]
+
+- It changes to `[You bought it]` span so users can not **buy an item** multiple times:
 
 [image assetsSrc="js-apps-exam-prep-13.png" /]
 
