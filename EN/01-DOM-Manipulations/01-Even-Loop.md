@@ -1,7 +1,7 @@
 # Event Loop
 
 [slide hideTitle]
-# Reduce a thread's waiting time with callbacks
+# Reduce a thread's Waiting Time with Callbacks
 
 First of all, **JavaScript** is executed mostly **in the browser.**
 
