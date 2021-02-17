@@ -1,17 +1,23 @@
+# Type Conversion
+
 [slide hideTitle]
+
 # Type Conversion
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+
 When you assign the value of one data type to another, the two types might not be compatible with each other.
 
-If the data types are compatible, then Java will perform the conversion automatically. This is known as Automatic Type Conversion, and if not then they need to be cast or converted explicitly.
+If the data types are compatible, then Java will perform the conversion automatically. 
+
+This is known as Automatic Type Conversion, and if they are not compatible, they need to be cast or converted explicitly.
 
 For example, assigning an **int** value to a **long** variable.
 
 In Java, there are two types of casting:
 
-- Widening conversion \(automatic\) - converting a smaller type to a larger type size. This is also known as **implicit conversion**
+- **Widening conversion** \(automatic\) - converting a smaller type to a larger type size. This is also known as **implicit conversion**
 
 ```java live
 int myInt = 9;
@@ -21,19 +27,28 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Here the lower data type \(having smaller size\) is converted into the higher data type \(having larger size\). There is no loss in data. This is why this type of conversion happens automatically.
+Here the lower data type \(having smaller size\) is converted into the higher data type \(having larger size\). 
 
-- Narrowing conversion \(manual\) - converting a larger type to a smaller size type
+There is no loss in data. This is why this type of conversion happens automatically.
+
+- **Narrowing conversion** \(manual\) - converting a larger type to a smaller size type. Also known as **explicit conversion**
 
 ```java live
 double myDouble = 9.78;
-int myInt = (int)myDouble; // Manual casting: double to int
+
+// Manual casting: double to int
+int myInt = (int)myDouble; 
 
 System.out.println(myDouble);
 System.out.println(myInt);
 ```
 
-Here the higher data types \(having larger size\) are converted into lower data types \(having smaller size\). Hence there is the loss of data. This is why this type of conversion does not happen automatically. This is also known as **explicit conversion**.
+Here the higher data types \(having larger size\) are converted into lower data types \(having smaller size\). 
+
+When this happens there can be a loss of data/precision.
+
+This is why this type of conversion does not happen automatically. 
+
 
 [/slide]
 
@@ -42,7 +57,7 @@ Here the higher data types \(having larger size\) are converted into lower data 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-33-problem-and-solution-centuries-to-minutes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Centuries to Minutes" taskId="java-fund-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Centuries to Minutes" taskId="java-fund-data-types-lab-centuries-to-minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -60,7 +75,9 @@ public class Main {
 
 ## Description
 
-Write a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. The input will be of type **int**.
+Write a program that accepts an **int** number of **centuries** and converts it to **years**, **days**, **hours**, and **minutes**. 
+
+The input will be of type **int**.
 
 ## Examples
 
@@ -132,12 +149,14 @@ Write a program that accepts an **int** number of **centuries** and converts it 
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem with Solution: Chars to String
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-chars-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Chars to String" taskId="java-fund-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[code-task title="Chars to String" taskId="java-fund-data-types-lab-chars-to-string" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
 ```
@@ -263,12 +282,14 @@ b
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem with Solution: Lower or Upper
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-problem-and-solution-lower-or-upper-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Lower or Upper" taskId="java-fund-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+
+[code-task title="Lower or Upper" taskId="java-fund-data-types-lab-lower-or-upper" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
