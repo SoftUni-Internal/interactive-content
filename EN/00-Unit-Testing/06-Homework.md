@@ -15,11 +15,11 @@ describe('Even or odd', () => {
 
 # Description
 
-You need to write **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
+Create **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
 
 If the passed parameter is **NOT** a string, it returns **undefined**.
 
-If the parameter is a string, it returns either "**even**" or "**odd**" based on the length of the string.
+If the parameter in a string, it returns either "**even**" or "**odd**" based on the length of the string.
 
 You are provided with an implementation of the `isOddOrEven()` function.
 
@@ -41,7 +41,7 @@ We can see there are three outcomes for the function:
 - Returning `even`
 - Returning `odd`
 
-Write one or two tests passing parameters that are **NOT** of type string to the function expecting it to return undefined.
+Write one or two tests passing in parameters that are **NOT** of type string to the function, expecting it to return undefined. 
 
 ```js
 describe("Is Odd Or Even", function(){
@@ -192,13 +192,14 @@ describe('Char lookup', () => {
 Write **unit tests** for a function that retrieves a character at a given **index** from a **string**.
 
 You have a function called `lookupChar()` that has the following functionality:
-- lookupChar(string, index) - accepts a **string** and an **integer**, which is the index of the character we are looking for
 
-- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - return **undefined**
+- `lookupChar(string, index)` - accepts a **string** and an **integer**, which is the index of the character we are looking for
 
-- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length or a negative number - `return Incorrect index` 
+- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - it should return **undefined**
 
-- If both parameters have correct types and values, return the character at the specified index in the string
+- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length, or a negative number - it should return `Incorrect index` 
+
+- If both parameters have correct types and values, returns the character at the specified index in the string
 
 Here is the implementation of the `lookupChar()` function.
 
@@ -225,7 +226,7 @@ Reading through the specification or taking a look at the implementation, we can
 
 Now that we have our exit conditions, we start checking in what situations we can reach them.
 
-If any of the parameters are of **incorrect type**,  we return  **undefined**.
+If any of the parameters are of an **incorrect type**,  we return  **undefined**.
 
 ```js
 describe("Character Look Up", function(){
@@ -240,9 +241,9 @@ describe("Character Look Up", function(){
 
 If we take a closer look at the implementation, we see that the check uses `Number.isInteger()` instead of `typeof(index === number)` to check the index. 
 
-While `typeof` would protect us from getting past an **index** that is a **non-number**, it will not protect us from being passed a **floating-point number**. 
+While `typeof` would protect us from getting an **index** that is a **non-number**, it will not protect us from receiving a **floating-point number**. 
 
-The specification says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
+The condition says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
 
 ```js
 describe("Character Look Up", function(){
@@ -254,7 +255,7 @@ describe("Character Look Up", function(){
 
 Moving on to the next exit condition - returning an empty string.
 
-This is the case when we pass an index that is a negative number or an index that is outside of the bounds of the string.
+This is the case when we pass in an index that is a negative number or an index that is outside of the bounds of the string. 
 
 ```js
 describe("Character Look Up", function(){
@@ -431,16 +432,16 @@ describe('Math enforcer', function () {
 [task-description]
 # Description
 
-Your task is to test an object called **mathEnforcer**, which will have the following functionality
+Test an object called **mathEnforcer**, which will have the following functionality:
 
 - `addFive(num)`: A function that accepts a **single** parameter
 
-    - if the parameter is **NOT** a **number**, the funtion should return **undefined**
-    - if the parameter is a **number**, **add 5** to it, and return the result
+    - if the parameter is **NOT** a **number**, the function should return **undefined**
+    - if the parameter is a **number**, **adds 5** to it, returns the result
 
 - `subtractTen(num)`: A function that accepts a **single** parameter
     - if the parameter is **NOT** a **number**, the function should return **undefined**
-    - if the parameter is a **number**, **subtract 10** from it, and return the result
+    - if the parameter is a **number**, **subtracts 10** from it and returns the result
 
 - `sum(num1, num2)`: A function that accepts **two** parameters
     - if any of the 2 parameters is NOT a number, the function should return undefined
@@ -918,7 +919,7 @@ describe("String Builder", function(){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the following "JavaScript" class.
 
@@ -971,12 +972,18 @@ The above code defines a class that holds characters (strings with length 1) in 
 An instance of the class should support the following operations:
 
 - Can be instantiated with a passed-in string argument or without anything
-- Function `append(string)`: converts the passed-in string argument to an array and adds it to the end of the storage
-- Function `prepend(string)`: converts the passed-in string argument to an array and adds it to the beginning of the storage
-- Function `insertAt(string, index)`: converts the passed-in string argument to an array and adds it at the given index (there is no need to check if the index is in range)
-- Function `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range)
+
+- The `append(string)` function: converts the passed-in string argument to an array and adds it to the end of the storage
+
+- The `prepend(string)` function: converts the passed-in string argument to an array and adds it to the beginning of the storage
+
+- `insertAt(string, index)`: converts the passed-in string to an array and adds it at the given index (there is no need to check if the index is in range)
+
+- `remove(startIndex, length)`: removes elements from the storage, starting at the given index (inclusive, length number of characters (there is no need to check if the index is in range)
+
 - Function `toString()`: returns a string with all elements joined by an empty string
-- All passed-in arguments should be strings 
+
+- All passed-in arguments should be strings
 
 If any of the parameters is not a string, throws a type error with the following message: `Argument must be a string`.
 
