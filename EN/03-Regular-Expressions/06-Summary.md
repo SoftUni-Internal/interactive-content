@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("[a-z]+");
+        Pattern pattern = Pattern.compile("[A-Za-z]+");
 
         String text = "Regex was the topic of this lesson.";
 
