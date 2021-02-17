@@ -9,14 +9,14 @@
     - define special characters, operators and constructs for building complex pattern
     - can utilize character classes, groups, quantifiers and more
 
-```java live
+```java live no-template
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("\b[a-zA-Z]{3}\b");
+        Pattern pattern = Pattern.compile("[a-z]+");
 
         String text = "Regex was the topic of this lesson.";
 
