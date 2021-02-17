@@ -9,7 +9,7 @@
 [stream language="RO" videoId="446432573" /]
 [/video-vimeo]
 
-Block elements have **width** and **height**.
+All block elements have **width** and **height**.
 
 The `width` property defines the width of an element.
 
@@ -83,7 +83,7 @@ The default value of this property is `0`.
 
 If the content is **smaller than the minimum height**, the minimum height will be **applied**.
 
-If the content is **larger than the minimum height**, the min-height property has **no effect**.
+If the content is **larger than the minimum height**, the `min-height` property has **no effect**.
 
 **Note**: The `min-height` and `max-height` properties override the `height` property.
 
