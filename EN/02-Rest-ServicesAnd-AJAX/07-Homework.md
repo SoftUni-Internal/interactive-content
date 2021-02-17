@@ -384,7 +384,7 @@ let responseObj = \{"status": "200", "Content-Type": "application/json", json: (
 
 var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
 
-document.body.innerHTML = `\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>`;
+document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
 
 result = result();
 result.depart();
@@ -410,7 +410,7 @@ let response = \{ "name": "Depot", "next": "0361" \};
 let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
 var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
 
-document.body.innerHTML = `\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>`;
+document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
 
 result = result();
 result.depart();
@@ -436,7 +436,7 @@ let response = \{ "name": "Depot", "next": "0361" \};
 let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
 var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
 
-document.body.innerHTML = `\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>`;
+document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
 
 result = result();
 result.depart();
