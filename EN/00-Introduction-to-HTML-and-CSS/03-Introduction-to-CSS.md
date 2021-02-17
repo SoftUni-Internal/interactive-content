@@ -12,12 +12,12 @@
 
 CSS describes how elements should be rendered on a screen.
 
-For example, change text color in green for all paragraph elements:
+For example, if we want to change the color of the text to green for all level one headings:
 [html]
 <p class="codepen" data-height="240" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="vYNYqKm" style="height: 240px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYNYqKm"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 [/slide]
 
 [slide]
@@ -31,8 +31,8 @@ For example, change text color in green for all paragraph elements:
 A CSS rule-set consists of a **selector** and a **declaration block**:
 ```
 [selector] { 
-  [declaration] property: value
-  [declaration] property: value
+  [declaration] property: value;
+  [declaration] property: value;
 }
 ```
 
@@ -49,21 +49,11 @@ Example:
 <p class="codepen" data-height="240" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="vYNYqKm" style="height: 240px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYNYqKm"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
-Example Explained:
-- p is a selector in CSS (it points to the HTML element we want to style: `<p>`)
+<br/><br/>
+Explanation:
+- h1 is a selector in CSS (it points to the HTML element we want to style: `<h1>`)
 - `color` is a **property**, and `green` is the **property value**
-
-# Element Selectors
-
-The element selector selects all elements with the specified element name.
-
-Styling all headings of level 1 `<h1>`:
-[html]
-<p class="codepen" data-height="234" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="rNONEwN" style="height: 234px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="rNONEwN">
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-[/html]
+- `text-align` is also a **property**, and `center` is the **property value**
 
 [/slide]
 
@@ -84,7 +74,7 @@ Example:
 <p class="codepen" data-height="454" data-theme-id="39135" data-default-tab="html,result" data-user="atanas-atanasov-the-scripter" data-slug-hash="vYNYqJJ" style="height: 454px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vYNYqJJ"></p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 [/html]
-
+<br/><br/>
 [/slide]
 
 [slide]
