@@ -14,7 +14,7 @@
 This property defines if the padding and border are included or excluded in the total width/height.
 
 * `content-box` is the **initial** and **default** value. The width and height properties include the content, but they **don't include** the padding, border and margin;
-* `border-box` The width and height properties **include** content, padding and border.
+* `border-box` The width and height properties **include** the content, padding and border.
 
 **Example:**
 ```html
