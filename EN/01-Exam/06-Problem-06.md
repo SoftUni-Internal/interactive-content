@@ -1,171 +1,459 @@
-﻿[slide hideTitle]
-# The Most Powerful Word 
-[code-task title="The Most Powerful Word" taskId="pb-java-exam-the-most-powerful-word" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
+[slide hideTitle]
+# Tournament for Christmas
+[code-task title="Tournament for Christmas" taskId="pb-java-exam-tournament-for-christmas" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java-code]
+```
 
-public class Program {
-  public static void main(String[] args) {
-    // Write code here
-  }
-}
 ```
 [/code-editor]
 [task-description]
-
 ## Description
-For Laura, words possess great power. 
 
-She is asking you to write an algorithm that finds out which is the "strongest" word. 
+Write a program that tracks your team's performance at a Christmas charity tournament.
 
-Until the command "End of words", you will be receiving words from the console. 
+Every day, until the "**Finish**" command you will receive **different type of game names**.
 
-To determine the strength of each word, you need to find the sum of the ASCII values of the symbols that make up the word. 
+By **winning** each game, you win **20 euros** for charity. 
 
-If it starts with a vowel - 'a', 'e', ' i', 'o', 'u', 'y'(or their equivalent capital letters), the result must be multiplied by the length of the word. Otherwise, divided by the length and round it down to the previous integer.
+You need to **calculate how much money** you earned at the end of the day. 
+
+**If you have more games won than lost** - you are the winner of the day and your money gets **increased by 10%**.
+
+At the end of the tournament, if you have been a winner on most days, you win the tournament and **increase all winnings by 20%**.
+
+**You will never have an equal number of won and lost games**.
 
 ## Input
-Until the command "End of words", you willne recieving words from the console:
-- word – String 
+
+**Initially, the number of days of the tournament is read from the console - an integer in the interval \[1… 20\]**
+
+Until you receive the "**Finish**" command, read:
+
+- Sports - **String**
+
+For each sport read:
+
+  * result - **String with options: "win" or "lose"**
+
 
 ## Output
-Print the word with the "greatest" power:
-- "The most powerful word is \{word with the "greatest" power\} - \{word's power\}"
 
-## Example
+The output is formatted in one line:
+
+- If you **won** the tournament:
+
+     "You won the tournament! Total money raised: \{earned money\}"
+
+- If you **lost** in the tournament:
+
+"You lost the tournament! Total money raised: \{earned money\}"
+
+**The money variable should be formatted to the second digit after the decimal point.**
+
+## Example:
+
 | **Input** | **Output** |
-| --- | --- |
-| The | The most powerful word is Experience - 10320 |
-| Most |  |
-| Powerful |  |
-| Word |  |
-| Is |  |
-| Experience |  |
-| End of words |  |
+| --- | --- | 
+| **2** | You won the tournament! Total money raised: 132.00 |
+| volleyball | |
+| win | | 
+| football | |
+| lose | |
+| basketball | |
+| win | |
+| **Finish** | |
+| golf | | 
+| win | |
+| tennis | |
+| win | |
+| badminton | |
+| win | |
+| **Finish** | |
 
-### Comments
-- The first word is "The". 
-- The sum of its ASCII values is 84 + 104 + 101 = 289. 
-- The word does not begin with a vowel letter, so we divide the sum by the length of the word in this case 3. 289/3 = 96
-- We continue with the rest of the words.
-- The last word is "Experience". The amount of its ASCII values is 1032. 
-- The word begins with a vowel letter, so we multiply the points by the length of the word in this case 10.
-1032 * 10 = 10320
-- We receive the command "End of words"
-- The most powerful word is "Experience"
+## Comments:
+
+The tournament is 2 days long.
+
+**The first day:**
+
+We play volleyball and win -> 20 Euro.
+
+We play football and lose -> 0 Euro.
+
+We play basketball and win -> 20 Euro.
+
+We get the Finish command and the games for the day are over. 
+
+Earned money 20 + 0 + 20 = 40 Euro We have more games won than lost, respectively we increase the money of the day by 10% -> 44 Euro.
+
+**The Second day:**
+
+We play golf and win -> 20 Euro.
+
+We play tennis and win -> 20 Euro.
+
+We play badminton and win -> 20 Euro.
+
+We receive the **Finish** command and the games for the day are over. 
+
+Earned money 20 + 20 + 20 = 60 Euro We have only won games, respectively we increase the money of the day by 10% -> 66 Euro.
+
+The money earned from the two days: 44 + 66 = 110 Euro.
+
+Since we have more wins than losses, we win the tournament and increase the money by 20% -> 132 Euro.
+
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-The
-Most
-Powerful
-Word
-Is
-Experience
-End of words
+2
+volleyball
+win
+football
+lose
+basketball
+win
+Finish
+golf
+win
+tennis
+win
+badminton
+win
+Finish
 [/input]
 [output]
-The most powerful word is Experience - 10320
+You won the tournament! Total money raised: 132.00
+[/output]
+[/test]
+[test open]
+[input]
+3
+darts
+lose
+handball
+lose
+judo
+win
+Finish
+snooker
+lose
+swimming
+lose
+squash
+lose
+table tennis
+win
+Finish
+volleyball
+win
+basketball
+win
+Finish
+[/input]
+[output]
+You lost the tournament! Total money raised: 84.00
 [/output]
 [/test]
 [test]
 [input]
-Whats'up
-Bitches
-I'm
-Back
-End of words
+2
+sport
+lose
+Finish
+sport
+lose
+Finish
 [/input]
 [output]
-The most powerful word is I'm - 663
+You lost the tournament! Total money raised: 0.00
 [/output]
 [/test]
 [test]
 [input]
-Are
-you
-K
-Maaaan
-End of words
+2
+sport
+win
+Finish
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is you - 1047
+You won the tournament! Total money raised: 52.80
 [/output]
 [/test]
 [test]
 [input]
-yes
-bitch
-Pleaseeeee
-Ahoy
-End of words
+3
+sport
+win
+sport
+win
+Finish
+sport
+lose
+sport
+lose
+sport
+win
+Finish
+sport
+win
+sport
+win
+sport
+lose
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is Ahoy - 1604
+You won the tournament! Total money raised: 156.00
 [/output]
 [/test]
 [test]
 [input]
-Can
-i
-get
-an
-Ameeeeen
-End of words
+5
+sport
+win
+sport
+win
+sport
+win
+Finish
+sport
+win
+sport
+win
+sport
+win
+sport
+win
+sport
+win
+sport
+win
+Finish
+sport
+win
+sport
+win
+sport
+win
+Finish
+sport
+win
+Finish
+sport
+win
+sport
+win
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is Ameeeeen - 6312
+You won the tournament! Total money raised: 422.40
 [/output]
 [/test]
 [test]
 [input]
-Pesho123
-is
-the
-username
-of
-the
-winner
-End of words
+3
+sport
+win
+sport
+win
+sport
+win
+sport
+lose
+sport
+lose
+Finish
+sport
+win
+sport
+win
+sport
+lose
+Finish
+sport
+lose
+sport
+lose
+sport
+win
+sport
+lose
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is username - 6912
+You won the tournament! Total money raised: 180.00
 [/output]
 [/test]
 [test]
 [input]
-Pesho
-Gosho464 23
-Emo.13.06.96
-End of words
+4
+sport
+lose
+sport
+lose
+sport
+win
+sport
+lose
+Finish
+sport
+lose
+sport
+lose
+sport
+lose
+Finish
+sport
+win
+sport
+win
+Finish
+sport
+lose
+sport
+lose
+sport
+lose
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is Emo.13.06.96 - 8880
+You lost the tournament! Total money raised: 84.00
 [/output]
 [/test]
 [test]
 [input]
-oaieyu
-boss
-End of words
+2
+sport
+win
+sport
+win
+sport
+win
+sport
+lose
+sport
+lose
+sport
+lose
+sport
+lose
+Finish
+sport
+lose
+sport
+lose
+Finish
 [/input]
 [output]
-The most powerful word is oaieyu - 3912
+You lost the tournament! Total money raised: 60.00
 [/output]
 [/test]
 [test]
 [input]
-yes
-hello
-oreo
-End of words
+1
+sport
+win
+sport
+lose
+sport
+win
+sport
+lose
+sport
+win
+sport
+win
+Finish
 [/input]
 [output]
-The most powerful word is oreo - 1748
+You won the tournament! Total money raised: 105.60
+[/output]
+[/test]
+[test]
+[input]
+4
+sport
+win
+sport
+win
+sport
+win
+sport
+lose
+sport
+lose
+sport
+win
+Finish
+sport
+win
+sport
+win
+Finish
+sport
+lose
+sport
+lose
+sport
+win
+Finish
+sport
+win
+Finish
+[/input]
+[output]
+You won the tournament! Total money raised: 208.80
+[/output]
+[/test]
+[test]
+[input]
+4
+sport
+lose
+sport
+lose
+sport
+win
+sport
+lose
+sport
+lose
+sport
+win
+Finish
+sport
+win
+sport
+win
+Finish
+sport
+lose
+sport
+lose
+sport
+win
+Finish
+sport
+lose
+Finish
+[/input]
+[output]
+You lost the tournament! Total money raised: 104.00
 [/output]
 [/test]
 [/tests]
