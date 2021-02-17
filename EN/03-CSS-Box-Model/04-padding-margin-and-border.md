@@ -27,7 +27,7 @@ The values of the margin property are:
 * \<length> - Specifies a margin in **px, pt, cm,** etc. Default value is 0. **Negative** values are allowed;
 * `%` - Specifies a margin in **percent of the width** of the containing element.
 
-The following two examles make the same thing:
+The following two examples are identical however they are implemented differently:
 
 **Example:**
 ```html
@@ -80,7 +80,7 @@ The values of the padding property are:
 * **\<length>** - Specifies the padding in **px, pt, cm,** etc. Default value is 0.
 * `%` - Specifies the padding in **percent of the width** of the containing element
 
-The following two examples make the same thing:
+The following two examples are identical however they are implemented differently:
 
 **Example:**
 ```html
