@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-Logical-Expressions"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::Logical-Expressions"
 
 [slide hideTitle]
 

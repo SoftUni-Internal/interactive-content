@@ -1,4 +1,4 @@
-// sectionId: "Javascript-Programming-Basics-Conditional-Statements-If"
+// sectionId: "Javascript::Programming-Basics::Conditional-Statements::If"
 
 # Condiții simple if
 [slide hideTitle]
