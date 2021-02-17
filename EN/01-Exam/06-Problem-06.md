@@ -13,7 +13,7 @@ Write a program that tracks your team's performance at a Christmas charity tourn
 
 Every day, until the "**Finish**" command you will receive **different type of game names**.
 
-By **winning** each game, you win **20 euros** for charity. 
+By **winning** each game, you win **20 euro** for charity. 
 
 You need to **calculate how much money** you earned at the end of the day. 
 
