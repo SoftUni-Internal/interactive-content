@@ -9,13 +9,13 @@
 [stream language="RO" videoId="445509666" /]
 [/video-vimeo]
 
-Font awesome is **most popular icon toolkit** based on CSS.
+Font awesome is the **most popular icon toolkit** based on CSS.
 
 Icon fonts has:
 * Fonts containing **symbols and glyphs** instead of letters/numbers;
 * You can style them with **CSS** the same way as regular text.
 
-Font Awsome has:
+Font Awesome has:
 * More than **1,580 Free** Icons;
 * More than **7,840 Pro** Icons.
 
@@ -28,11 +28,11 @@ There are two ways **to use** the Free Font Awesome 5 icons:
 * You can **download** the Font Awesome library;
 * You can **sign up for an account** at Font Awesome, and get a code (called KIT CODE) to use
 
-Let's start using Font Awsome by **adding** the following line inside the `<head>` section of your **HTML file**:
+Let's start using Font Awesome by **adding** the following line inside the `<head>` section of our **HTML file**:
 
 `<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">`
 
-or Import Font Awesome in the **CSS file**:
+Alternatively, we can import Font Awesome in the **CSS file**:
 
 `@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';`
 
