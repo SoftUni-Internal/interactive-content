@@ -104,7 +104,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 `font-style` defines how much the text is **slanted**. This property has three values:
 * `normal` - The text is shown **normally**;
 * `italic` - The text is shown in **italics**;
-* `oblique` - The text is "**leaning**" (oblique is very similar to italic, but less supported).
+* `oblique` - The text is "**leaning**" (oblique is very similar to italic).
 
 **Example:**
 [html]
@@ -128,7 +128,7 @@ It's common to use both `url()` and `local()` together so that the user's instal
 
 The `font-size` property sets the **size** of the font.
 
-This property is also used to **compute** the size of **em**, **ex**, and another relative `<length>` units.
+This property is also used to **compute** the size of **em**, **ex**, and other relative `<length>` units.
 
 The `font-size` value can be **absolute** or **relative**.
 
@@ -157,12 +157,12 @@ font-size: 1rem;
 [stream language="RO" videoId="445509656" /]
 [/video-vimeo]
 
-The `font-weight` property defines the **weight** (or **boldness**) of the font.
+The `font-weight` property defines the **weight** of the font. In other words, how **thick or thin** characters in text should be displayed.
 
-The weights available depend on the font-family you are using.
+The weights available depend on the font-family we are using.
 
 The values of this property are:
-* **Numeric** - where are used numeric values from `100` to `900`;
+* **Numeric** - we can use numeric values from `100` to `900`;
 * **Keyword values** - such as `thin`, `lighter`, `bold`, `bolder`.
 
 For example the `thin` property equals to `100`, and the `bolder` equals to `900`.
