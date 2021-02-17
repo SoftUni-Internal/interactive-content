@@ -99,44 +99,6 @@ double average = Arrays.stream(numbers)
 System.out.println(average);
 ```
 
-- `toArray()` - Converts a collection to an array
-
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-- `map()` - Manipulates elements in a collection
-
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-```java live
-String[] words = {"abc", "def", "geh", "yyy"};
-words = Arrays.stream(words)
-            .map(w -> w + "yyy")
-            .toArray(String[]::new);
-for (String word : words) {
-    System.out.println(word);
-}
-```
-
-`filter()` - Selects elements based on given condition
-
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .filter(n -> n > 0)
-            .toArray();
-```
-
 [/slide]
 
 [slide hideTitle]
@@ -215,7 +177,51 @@ double average = numbers.stream()
 System.out.println(average);
 ```
 
-- `toList()` - Converts a collection into a list
+[/slide]
+
+[slide hideTitle]
+
+# Manipulating Collections
+
+Collections can be **modified** by using the `map()` method.
+
+Take a look at the following example:
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+```java live
+String[] words = {"abc", "def", "geh", "yyy"};
+words = Arrays.stream(words)
+            .map(w -> w + "yyy")
+            .toArray(String[]::new);
+for (String word : words) {
+    System.out.println(word);
+}
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Converting Collections
+
+There are **two** ways to convert collections in Java:
+
+- `toArray()` - Converts a collection into an **array**
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+- `toList()` - Converts a collection into a **list**
 
 ```java
 List<Integer> numbers = Arrays.stream(scanner.nextLine()
@@ -226,6 +232,21 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [/slide]
 
+[slide hideTitle]
+
+# Filtering Collections
+
+The `filter()` method goes through a collection and gets only the elements that match a certain criteria:
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .filter(n -> n > 0)
+            .toArray();
+```
+
+[/slide]
 
 [slide hideTitle]
 # Problem with Solution: Word Filter

@@ -28,6 +28,6 @@ public class Main {
 
 - Building and Modifying Strings
     - Using StringBuilder Class
-    - Why Concatenation Is a Slow Operation?
+    - Why Concatenation is a slow operation
 
 [/slide]

@@ -220,22 +220,6 @@ System.out.println(airplanes.isEmpty());
 
 [slide hideTitle]
 
-# HashMap: Put()
-
-TODO: Add More Videos
-
-[/slide]
-
-[slide hideTitle]
-
-# HashMap: Remove()
-
-TODO: Add More Videos
-
-[/slide]
-
-[slide hideTitle]
-
 # TreeMap<K, V> - Example
 
 TODO: Add More Videos
