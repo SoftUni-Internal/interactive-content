@@ -157,7 +157,7 @@ Promise.resolve("Operation succeeded!")
 
 [slide hideTitle]
 
-# Example 1: Promise.then()
+# Promise.then(): Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-13-Promise.then()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -191,7 +191,7 @@ As seen above, the `.then()` method **waits for the completion with the previous
 
 [slide hideTitle]
 
-# Example 2: Promise.catch()
+# Promise.catch(): Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
