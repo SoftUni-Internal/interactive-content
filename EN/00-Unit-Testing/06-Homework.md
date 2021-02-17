@@ -1688,6 +1688,7 @@ Package: Partnership Fee
 \- Value (VAT 20%): 8400
 Error: Active status must be a boolean
 
+
 [/task-description]
 [code-io /]
 [tests]
