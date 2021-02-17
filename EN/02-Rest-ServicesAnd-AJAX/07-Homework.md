@@ -47,19 +47,51 @@ If the request is not successful, or the information is not in the expected form
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-6.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-7.png" /]
+```js
+<div id="stopInfo" style="width: 20em">
+   <div>
+      <label for="stopId">Stop ID: </label>
+      <input id="stopId" type="text">
+      <input id="submit" type="button" value="Check" onclick="getInfo()">
+   </div>
+   <div id="result">
+      <div id="stopName"></div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 When the button is clicked, the results are displayed in the corresponding elements:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-8.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-9.png" /]
+```js
+<div id="stopInfo" style="width: 20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Buckingham Palace</div>
+      <ul id="busses">
+         <li>Bus 4 arrives in 13 minutes</1li>
+         <li>Bus 12 arrives in 6 minutes</1li>
+         <li>Bus 18 arrives in 7 minutes</1li>
+      </ul>
+   </div>
+</div>
+```
 
 If an error occurs, the stop name changes to Error:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-10.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-11.png" /]
+```js
+<div id="stopInfo" style="width: 20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Error</div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 ## Hints
 
@@ -294,7 +326,17 @@ Initially, the info box shows `Not Connected` and they arrive button is disabled
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-12.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-13.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Not Connected</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="true">
+   </div>
+</div>
+```
 
 When Depart is clicked, a request is made with the first ID.
 
@@ -302,7 +344,17 @@ The infobox is updated with the new information and the buttons are changed:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-14.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-15.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Next stop Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart” type=“button" onclick="result.depart()" disabled="disabled">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()">
+   </div>
+</div>
+```
 
 Clicking Arrive changes the infobox and swaps the buttons.
 
@@ -310,7 +362,17 @@ This allows Depart to be clicked again, which makes a new request and updates th
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-16.png" /]
 
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-17.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Arriving at Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart” type=“button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="disabled">
+   </div>
+</div>
+```
 
 [/task-description]
 [code-io /]
