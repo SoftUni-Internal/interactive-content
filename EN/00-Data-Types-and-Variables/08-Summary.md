@@ -5,15 +5,15 @@
 
 ## In this lesson you learned:
 
-  - Data is stored within **variables**.
+  - Data is stored within **variables**
 
 
   ```java
-  int myNum = 3;               // Integer (whole number)
-  float myFloatNum = 2.99f;    // Floating point number
-  char myLetter = 'E';         // Character
-  boolean myBool = false;       // Boolean
-  String myText = "Goodbye";     // String
+  int myNum = 3;               
+  float myFloatNum = 2.99f;    
+  char myLetter = 'E';         
+  boolean myBool = false;       
+  String myText = "Goodbye";     
   ```
 
   - Numeric types: 
@@ -48,10 +48,10 @@
 
 ## In the next lesson, you will learn:
   - Arrays
-  - Reading Arrays from the Console
+  - Reading Arrays from the console
     - `For Loop` and `String.split()`
-  - Printing Arrays on the Console
-  - Foreach Loop
+  - Printing Arrays to the console
+  - The Foreach Loop
 [/slide]
 
 
