@@ -1,19 +1,7 @@
-# JS Applications Exam: the SoftWiki SPA
 
 [slide hideTitle]
-# Description
 
-[code-task title="SoftWiki SPA" taskId="js-applications-exam-softwiki-spa" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function solve(){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-# Description
+# JS Applications Exam: the SoftWiki SPA
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Exam-Resources.zip) **for this task.**
 
@@ -42,8 +30,10 @@ Each **article** has a **title**, **category**, **content** and **creator.**
 Then go to the **rules** and **edit** them to look like this:
 
 [image assetsSrc="js-application-exam-3.png" /]
+[/slide]
 
-**1. Test the Firebase REST Services**
+[slide hideTitle]
+# Test the Firebase REST Services
 
 Using **Postman** or other HTTP client tool, test the REST service endpoints:
 
@@ -149,7 +139,10 @@ You are **allowed** to add **data attributes** to any elements.
 
 You may modify **href attributes** of links and add **action/method** **attributes** to **forms**, to allow the use of a routing library.
 
-**2. The SoftWiki- Client-Side Web Application**
+[/slide]
+
+[slide hideTitle]
+# The SoftWiki: Client-Side Web Application
 
 **Design** and **implement** a client\-side front-end app (SPA) for managing articles. Implement the functionality described below.
 
@@ -169,7 +162,9 @@ The Logged-in user navbar should contain the following elements: `[SoftWiki]` wh
 
 [image assetsSrc="js-application-exam-5.png" /]
 
-## Register User (5 Pts)
+[/slide]
+[slide hideTitle]
+# Register User (5 Pts)
 
 By given **email** and **password**, the app should register a new user in the system and should **redirect you to the home page.**
 
@@ -190,8 +185,10 @@ By given **email** and **password**, the app should log in as an existing user.
 You are one step away from awesome articles!
 
 [image assetsSrc="js-application-exam-7.png" /]
+[/slide]
 
-## Home Page (40 Pts)
+[slide hideTitle]
+# Home Page (40 Pts)
 
 Successfully logged-in users should be welcomed by the **Home page.**
 
@@ -203,7 +200,9 @@ If there are **NO** such articles, the following view should be displayed:
 
 [image assetsSrc="js-application-exam-9.png" /]
 
-## Create Article (10 Pts)
+[/slide]
+[slide hideTitle]
+# Create Article (10 Pts)
 
 Logged-in users should be able to create articles.
 
@@ -218,8 +217,10 @@ Clicking the `[Create]` link in the **NavBar** should display the **Create Artic
 - After an article is created successfully you should be redirected to the **Home Page.**
 
 [image assetsSrc="js-application-exam-10.png" /]
+[/slide]
 
-## Details (15 Pts)
+[slide hideTitle]
+# Details (15 Pts)
 
 Logged-in users should be able to **view details** about articles.
 
@@ -231,7 +232,10 @@ Clicking the `[Details]` link in of a **particular article** should **display** 
 
 [image assetsSrc="js-application-exam-12.png" /]
 
-## Edit Article (10 Pts)
+[/slide]
+
+[slide hideTitle]
+# Edit Article (10 Pts)
 
 Logged-in users should be able to **edit** their **own** articles.
 
@@ -240,8 +244,10 @@ Clicking the `[Edit]` link of a **particular article** on the **Details page** s
 - After a successful edit the user should be redirected to the Home page.
 
 [image assetsSrc="js-application-exam-13.png" /]
+[/slide]
 
-## Delete Article (5 Pts)
+[slide hideTitle]
+# Delete Article (5 Pts)
 
 Logged-in users should be able to delete their articles.
 
@@ -253,81 +259,4 @@ Clicking the `[Delete]` **link** of an article (on the **Details page**) should 
 
 The articles in the **home page** (for registered users), should be sorted in **descending** order by **title.**
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test open]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[test]
-[input]
-
-[/input]
-[output]
-
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
