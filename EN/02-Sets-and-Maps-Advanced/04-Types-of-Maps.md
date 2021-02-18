@@ -97,7 +97,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [/slide]
 
 [slide hideTitle]
-# Built-in methods
+# Built-in Methods
 
 - `put(K key, V value)`: **adds the given items** in the map. 
 
@@ -189,7 +189,7 @@ System.out.println(airplanes.isEmpty());
 
 
 [slide hideTitle]
-# Iterating over a Map
+# Iterating Over a Map
 
 Iterating through objects of type `Map.Entry <K, V>`. 
 
