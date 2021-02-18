@@ -29,7 +29,7 @@
    let include = str.includes('John');
    ```
 
--  Most of the methods returns a new string
+-  Most of the methods return a new string
 
 ## In the next lesson, you will learn:
 
