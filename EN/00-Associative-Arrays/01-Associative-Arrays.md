@@ -304,18 +304,18 @@ Read a **list of real numbers** and print them in **ascending order** along with
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-| 82282 | 2 -> 3 |
+| 8 2 2 8 2 | 2 -> 3 |
 |  | 8 -> 2 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 1513 | 1 -> 2 |
+| 1 5 1 3 | 1 -> 2 |
 |  | 3 -> 1 |
 |  | 5 -> 1 |
 
 | **Input** | **Output** |
 | --- | --- |
-| -2002 | -2 -> 1 |
+| -2 0 0 2 | -2 -> 1 |
 |  | 0 -> 2 |
 |  | 2 -> 1 |
 
