@@ -32,7 +32,8 @@ You will receive **4 lines of input from the console**:
 - The price for one umbrella - **a real number** in the range [0.00... 50.00] 
 
 ## Output
-"\{total price\} dollars." 
+The output should consist of one line:
+"\{total price\} euro" 
 - The result must be formatted to two decimal places. 
 
 ## Example
