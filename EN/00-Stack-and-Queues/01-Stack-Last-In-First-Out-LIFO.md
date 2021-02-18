@@ -6,9 +6,9 @@
 **Stacks** are data structures similar to **lists**. The elements in a stack are ordered based on the **LIFO** principle - **Last In First Out**. When you add an element, it is always placed **on top** of the stack. Removing an element also removes it **from the top** of the stack.
 
 - Stacks provide the following functionality:
-    - **Pushing** an element to the top of the stack
-    - **Popping** an element from the top of the stack
-    - Getting (**peeking at**) the top element without removing it
+    - **pushing** an element to the top of the stack
+    - **popping** an element from the top of the stack
+    - getting (**peeking at**) the top element without removing it
 
 [image assetsSrc="Java-Advanced-Stack-and-Queues-3.png" /]
 
