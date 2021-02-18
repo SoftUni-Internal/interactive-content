@@ -4,66 +4,55 @@
 
 **Here is a link to the** [resources](www.li.com) **for this task.**
 
-You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with a cloud-based backend (Firebase or Backendless). 
+Create a **Single Page Application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON as well as utilizing a cloud-based backend (Firebase or Kinvey). 
 
-Initially, all views and forms are shown by the HTML. 
+Initially, all of the views and the forms are shown in the HTML file. 
 
-Your application must display the current views depends on the routing URL. 
+Your application must display the current views depending on the routing URL. 
 
 You may render the views/forms/components with **lit-Html**.
 
-You are **allowed** to use libraries like **jQuery**, **lit-html** and **Page.js**. 
+You are **allowed** to use libraries like **jQuery**, **lit-html** and **page.js**. 
 
 Frameworks and libraries like React, Angular, Vue are **not permitted**.
 
 ## Important
-Do not change the elements' **class names and ids**. 
+Do not change the elements' **class names and IDs**. 
 
 You **are allowed** to add **data attributes** to any elements. 
 
-You may modify **href attributes** of links and add **action/method** attributes to **forms**, to allow the use of a routing library.
+You may modify the **href attributes** of the links and add **action/method** attributes to the **forms**, to allow the use of a routing library.
+
+Create a collection called **softbay**. 
 
 [/slide]
 
 [slide hideTitle]
-# Create a REST Service
-Use any cloud-based database and create an application to keep your data in the cloud.
+# HTML and CSS
 
-Create a collection called **softbay**. 
+You are been given the web design of the application as **HTML** and **CSS** files.
 
-## HTML and CSS
+- Initially, all of the views and the forms are shown on the **HTML** file
 
-You have been given the web design of the application as **HTML** + **CSS** files.
+Your application may hide/show elements using **CSS** **(display: none)** or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed.
 
-- Initially, all views and forms are shown by the **HTML**
-
-Your application may hide/show elements by **CSS** **(display: none)** or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
-
-- You may render the views/forms/components with JavaScript or Handlebars
+- You may render the views/forms/components with **JavaScript** or **lit-html**
 
 - You are **allowed** to **add attributes** to any **HTML** elements
 
 [/slide]
 [slide hideTitle]
-# SoftBay: Client-Side Web Application
+# Navigation Bar (5 Pts)
 
-**Design** and **implement** a client-side front-end app (SPA) for managing **offers**. 
+The buttons on the navigation bar should correctly change the current page (view).
 
-Implement the functionality described below.
+Clicking on the **buttons** on the **navigation bar** should display the view behind the link (views are represented as sections in the HTML file).
 
-## Navigation Bar (Header) (5 Pts)
-
-Navigation links should correctly change the current page (view).
-
-Clicking on the links in the **NavBar** should display the view behind the link (views are represented as sections in the HTML code).
-
-Your application must display the views it needs to display.
-
-The **Logged-in user** navbar should contain the following elements: `[SoftBay]`, `[Dashboard]`, `[Create Offer]` and `[Logout]`.
+The **Logged-in user's** navigation bar should contain the following elements: `[SoftBay]`, `[Dashboard]`, `[Create Offer]` and `[Logout]`.
 
 [image assetsSrc="js-apps-new-exam-1.png" /]
 
-The guest users navbar should contain the following elements: `[SoftBay]` and `[Login]`.
+The guest user's navbar should contain the following elements: `[SoftBay]` and `[Login]`.
 
 [image assetsSrc="js-apps-new-exam-2.png" /]
 
@@ -76,21 +65,21 @@ The guest users navbar should contain the following elements: `[SoftBay]` and `[
 
 # Register Page (5 Pts)
 
-By given **email** and **password**, the app should register a new user in the system.
+The app should register a new user in the system using their **email** and **password** and should **redirect the user to the home page**.
 
 - The following validations should be made:
 
-   - The **email** and **password** must be a non-empty string
+   - The **email** and **password** must be non-empty strings
 
    - The **re-password** should be **equal to the password**
 
-- After a **successful registration**, **home page** should be displayed **with the right navbar**
+- After **successfully registering**, the user should be redirected to the **home page with the right navbar**
 
-- Keep the user session data in the browser's **session or local storage**
+- Keep the user's session data in the browser's **session or local storage**
 
 [image assetsSrc="js-apps-new-exam-4.png" /]
 
-`[Login]` link should refer to the login form (view)
+The `[Login]` **button** should refer to the login form (view)
 
 [/slide]
 
@@ -99,23 +88,23 @@ By given **email** and **password**, the app should register a new user in the s
 
 ## Login (5 Pts)
 
-By given **email** and **password**, the app should log in as an existing user.
+Тhe app should log in an existing user using their **email** and **password**.
 
-- After a **successful login**, a **home page** should be displayed with the **right navbar**
+- After **successfully logging in**, the user should be redirected to the **home page with the right navbar**
 
-- Keep the user session data in the browser's **session or local storage**
+- Keep the user's session data in the browser's **session or local storage**
 
 [image assetsSrc="js-apps-new-exam-5.png" /]
 
-`[Register]` link should refer to the registration form (view)
+The `[Register]` **button** should refer to the registration form (view)
 
 ## Home Page (5 Pts)
 
-Successfully logged-in users should be able to logout from the app.
+Successfully logged-in users should be able to log out.
 
-- After a **successful** logout the **home page for guest users** should be shown
+- After a **successful** logout, the **home page for guest users** should be shown
 
-- All local information in the browser **(user session data)** about the current user **should be deleted**
+- All local information in the browser **(the user's session data)** about the current user **should be deleted**
 
 [/slide]
 
@@ -124,11 +113,11 @@ Successfully logged-in users should be able to logout from the app.
 
 The initial page (view) should display the **navigation bar for guest users** + **Home Page** + **Footer**. 
 
-`[SoftBay]` **button** should refer to the **home page** (view)
+The `[SoftBay]` **button** should refer to the **home page** (view)
 
 [image assetsSrc="js-apps-new-exam-6.png" /]
 
-If user is logged-in the page (view) should display the **navigation bar logged-in users** + **Home Page** + **Footer**.
+If user is logged-in, the page (view) should display the **navigation bar logged-in users** + **Home Page** + **Footer**.
 
 [image assetsSrc="js-apps-new-exam-7.png" /]
 
@@ -142,11 +131,11 @@ Clicking the `[Create Offer]` **link** in the **NavBar** should **display** the 
 
 - The form should contain the following validations:
 
-   - The input fields for **product**, **description** and price should be **non-empty strings**
+   - The input fields for the **product**, **description** and **price** should be **non-empty strings**
 
-   - The input field for **imageUrl**, must be **valid url** (starts with `https://`)
+   - The input field for **imageUrl**, must be a **valid url** (starts with `https://`)
 
-After a **successful** offer creation the **Dashboard** should be shown.
+After a **successful** offer is created, the **Dashboard** should be shown.
 
 The newly created offer should be stored in the database collection "**offers**".
 
@@ -157,7 +146,7 @@ The newly created offer should be stored in the database collection "**offers**"
 
 # Dashboard (25 Pts)
 
-By clicking over the `[Dashboard]` button, the currently logged-in user should be able to see all created offers.
+By clicking over the `[Dashboard]` button, the currently logged-in user should be able to see all of the created offers.
 
 The initial page (view) should display the **navigation bar for logged-in users** + **Dashboard** + **Footer**.
 
@@ -169,7 +158,7 @@ If there is at least **one registered offer**, the offer must be shown as the ex
 
 |\#| **Name**| **Description** |**Price**| **Details** |**Actions**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|Current offer **index**|Current product **name**|Current product **description**|Current product **price**|`[Order details]` button which refers to the details for the current offer/product|`[Delete]` `[Edit]` Buttons, only if the currently logged-in user is the creator of that offer. Where both buttons refer to the delete and edit view (pages) for the current offer/product|
+|Current offer **index**|Current product **name**|Current product **description**|Current product **price**|`[Order details]` button, which refers to the details for the current offer/product|`[Delete]` `[Edit]` Buttons, only if the currently logged-in user is the creator of that offer. Both buttons refer to the delete and edit view (pages) for the current offer/product|
 
 [image assetsSrc="js-apps-new-exam-10.png" /]
 [/slide]
@@ -179,9 +168,9 @@ If there is at least **one registered offer**, the offer must be shown as the ex
 
 Logged-in users should be able to **edit** their **own** offers. 
 
-Clicking the `[Edit]` **link** of a **particular offer**, **Edit Offer Page** should be displayed with **already filled** input fields with the current offer information. 
+Clicking on the `[Edit]` **button** of a **particular offer**, the **Edit Offer Page** should be displayed with an **already filled** input fields with the current offer information. 
 
-By clicking the `[Edit]` button, a put request should be sent to the **offers collections** and the current offer **should be changed**.
+By clicking on the `[Edit]` **button**, a put request should be sent to the **offers collections** and the current offer **should be changed**.
 
 
 [image assetsSrc="js-apps-new-exam-11.png" /]
@@ -206,9 +195,9 @@ After **successful offer deletes a Dashboard page** must be shown.
 [slide hideTitle]
 # Offer Details (15 Pts)
 
-Logged-in users should be able to **view details** about offers. 
+Logged-in users should be able to **view the details** about offers. 
 
-Clicking the `[Order details]` **link** in of a **particular offer** should display the **Offer Details page**, where the **product name**, **picture**, **description** and the **price** are shown in the format below on the picture.
+Clicking on the `[Order details]` **button** on a **particular offer** should display the **Offer Details page**, where the **product name**, **picture**, **description** and the **price** are shown in the format below on the picture.
 
 [image assetsSrc="js-apps-new-exam-12.png" /]
 
@@ -217,11 +206,11 @@ Clicking the `[Order details]` **link** in of a **particular offer** should disp
 [slide hideTitle]
 # Bonus: Notifications (5 Pts)
 
-In case of a **successful** action (create an offer, login, registration, edit, delete), a **notification message (green)** should be shown, which disappears after **3 seconds**.
+In case of a **successful** action (creating an offer, login, registration, edit, delete), a **notification message (green)** should be shown, which disappears after **3 seconds**.
 
 [image assetsSrc="js-apps-new-exam-13.png" /]
 
-In case of **error** (wrong passwords, wrong ajax call, authorization, etc...), **an error notification message (red)** should be shown, which disappears after **3 seconds** or **on user click**.
+In case of an **error** (wrong passwords, wrong ajax call, authorization, etc...), **an error notification message (red)** should be shown, which disappears after **3 seconds** or **on a user click**.
 
 [image assetsSrc="js-apps-new-exam-14.png" /]
 
@@ -233,11 +222,11 @@ By default, all notifications are styled with `display: none`.
 [slide hideTitle]
 # Bonus: Buy an item and Profile page (10 Pts)
 
-In these cases when some of the offers are **not made** from the currently logged-in user, in the section "**Actions**" must be added a `[Buy]` button.
+In these cases when some of the offers are **not made** from the currently logged-in user, in the section "**Actions**" there must be a `[Buy]` button.
 
-By clicking the `[Buy]` button the current product must be successfully bought by the user.
+By clicking on the `[Buy]` button, the current product must be successfully bought by the user.
 
-There are no quantities on the products, so you do not have to remove them from the list or something else, just store the number of purchases in the database for the current user.
+If there are no quantities of the products, you do not have to remove them from the list. Store the number of purchases in the database for the current user.
 
 [image assetsSrc="js-apps-new-exam-15.png" /]
 
@@ -246,13 +235,14 @@ There are no quantities on the products, so you do not have to remove them from 
 
 ## Profile Page
 
-In the NavBar (header) must be added a new link `[Profile]` which refers to the currently logged user.
+<< On the NavBar (header), you must be added a new link `[Profile]` which refers to the currently logged user. >>
+// Да се оправи
 
 [image assetsSrc="js-apps-new-exam-17.png" /]
 
-It should be displayed **2** types of information: email for the current user and **number of purchases** that the current user is made. 
+It should display **2** types of information: email for the current user and **number of purchases** that the current user is made. 
 
-**Any other info is static**, and you do not have to think about it.
+**Any other info is static** and you do not have to think about it.
 
 [image assetsSrc="js-apps-new-exam-18.png" /]
 
