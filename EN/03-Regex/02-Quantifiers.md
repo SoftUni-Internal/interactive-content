@@ -23,10 +23,10 @@ Let us have a look at the examples:
 `lo*` will match "l", "looo", "l", "l", and "lo".
 
 ```js live
-    var str = "Hellooo World! Hello Again!";
-    var pattern = /lo*/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "Hellooo World! Hello Again!";
+let pattern = /lo*/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 
 `+` matches the preceding element one or more times.
@@ -36,10 +36,10 @@ Let us have a look at the examples:
 `o+` will match "ooo", "o", and "o".
 
 ```js live
-    var str = "Hellooo World! Hello Again!";
-    var pattern = /o+/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "Hellooo World! Hello Again!";
+let pattern = /o+/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 
 `?` matches the preceding element zero or one time.
@@ -49,10 +49,10 @@ Let us have a look at the examples:
 `10?` matches "1", "10" and "10" as a result.
 
 ```js live
-    var str = "1, 100 or 1000";
-    var pattern = /10?/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "1, 100 or 1000";
+let pattern = /10?/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 
 `{4}` matches the preceding element exactly 4 times.
@@ -62,10 +62,10 @@ Let us have a look at the examples:
 `\d{4}` matches "1000", "1000", and "1000" as a result.
 
 ```js live
-    var str = "1000, 10000 or 100000";
-    var pattern = /\d{4}/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "1000, 10000 or 100000";
+let pattern = /\d{4}/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 [/slide]
 
@@ -86,19 +86,19 @@ This has two effects:
 In the following example, we will search for the expression "go".
 
 ```js live
-    const str = "Here we go now";
-    var pattern = /(go)/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "Here we go now";
+let pattern = /(go)/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 
 We can also use quantifiers after the parentheses.
 
 ```js live
-    const str = "Here we gogo now";
-    var pattern = /(go)+/g;
-    var result = str.match(pattern);
-    console.log(result);
+let str = "Here we gogo now";
+let pattern = /(go)+/g;
+let result = str.match(pattern);
+console.log(result);
 ```
 
 Use this expression for a **named capturing group**: `(?<name>subexpression)`.
@@ -108,22 +108,22 @@ The `.exec()` method tests for a match in a string.
 This method returns the matched text if it finds a match, otherwise, it returns null.
 
 ```js live
-    const str = "My telephone number is 0884608975";
-    var pattern = /(?<number>\d+)/g;
-    var match = pattern.exec(str);
-    console.log(match.groups.number);
+let str = "My telephone number is 0884608975";
+let pattern = /(?<number>\d+)/g;
+let match = pattern.exec(str);
+console.log(match.groups.number);
 ```
 
 If there are multiple matches, we can iterate over them.
 
 ```js live
-    const str = "My telephone number is 0884608975 and yours is 0887468956";
-    var pattern = /(?<number>\d+)/g;
-    var match = pattern.exec(str);
-    while (match != null) {
-    console.log(match.groups.number);
-    match = pattern.exec(str);
-    }
+let str = "My telephone number is 0884608975 and yours is 0887468956";
+let pattern = /(?<number>\d+)/g;
+let match = pattern.exec(str);
+while (match != null) {
+console.log(match.groups.number);
+match = pattern.exec(str);
+}
 ```
 
 Use this expression for **non-capturing groups**: `(?:subexpression)`.
@@ -160,10 +160,10 @@ To match the second `#` which is after the word "there", use `\1`, where the num
 
 
 ```js live
-    const str = `The day #he said I will be there# he made a promise`;
-    const pattern = /(\#)[A-Za-z\s]+\1/;
-    const result = str.match(pattern);
-    console.log(result[0]);
+let str = `The day #he said I will be there# he made a promise`;
+let pattern = /(\#)[A-Za-z\s]+\1/;
+let result = str.match(pattern);
+console.log(result[0]);
 ```
 
 [/slide]
