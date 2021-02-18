@@ -1,12 +1,12 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-## In this lesson you learned:
+# In this lesson you learned:
 
 -  **Strings** are an immutable series of **characters**
 
--  They have built-in methods that we use to process them, some of them are:
+-  They have built-in methods that we use to process them, some of them are
 
    -  `concat()`
 
@@ -29,18 +29,18 @@
    let include = str.includes('John');
    ```
 
--  Most of the methods returns a new string.
+-  Most of the methods returns a new string
 
-## In the next lesson you will learn about:
+## In the next lesson, you will learn:
 
--  Regular Expressions:
+-  Regular Expressions
 
-   -  RegExp Syntax.
+   -  RegEx Syntax
 
-   -  Quantifiers.
+   -  Quantifiers
 
-   -  Grouping.
+   -  Grouping
 
-   -  Backreferences.
+   -  Backreferences
 
 [/slide]
