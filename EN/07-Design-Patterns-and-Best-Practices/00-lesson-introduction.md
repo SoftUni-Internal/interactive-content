@@ -19,10 +19,10 @@
 **2. Common Design Patterns**
 
 - **Factory Pattern** 
-   - based on class creation
+   - Based on class creation
 - **Decorator Pattern**
-   - focused on dynamically adding functionality to existing classes
+   - Focused on dynamically adding functionality to existing classes
 - **Observer Pattern**
-   - used when we have classes that need constant updates on the state of another class
+   - Used when we have classes that need constant updates on the state of another class
 
 [/slide]
