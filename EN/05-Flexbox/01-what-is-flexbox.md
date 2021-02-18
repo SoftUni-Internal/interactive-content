@@ -10,7 +10,7 @@
 
 The Flexible Box Module - **flexbox**, was designed as a one-dimensional layout model, and as a method that could offer **space distribution** between items in an interface and powerful alignment capabilities.
 
-The Flexbox is the easiest way to make a flexible responsive layout structure without using float or positioning.
+The Flexbox is the easiest way to create a flexible responsive layout structure without using float or positioning.
 
 Flexbox is a method for laying out items in **rows** or **columns**.
 
