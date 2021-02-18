@@ -33,15 +33,15 @@ You will receive **4 lines of input from the console**:
 
 ## Output
 The output should consist of one line:
-"\{total price\} euro" 
-- The result must be formatted to two decimal places. 
+- "\{total price\} euro" 
+The result must be formatted to **two decimal places**. 
 
 ## Example
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | 21 | 254.10 euro | 21 people \* 5.50 = 115.50 euro |
 | 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40 euro |
-| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20$ = 68.20 euro |
+| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20 = 68.20 euro |
 | 6.20 | | The final: 115.50 + 70.40 + 68.20 = 254.10 |
 
 [/task-description]
