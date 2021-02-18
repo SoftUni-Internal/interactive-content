@@ -96,7 +96,7 @@ for (let key in assocArr) {
 [stream language="RO" videoId="489799126/f74d7e08c7"  /]
 [/video-vimeo]
 
-[code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -297,7 +297,7 @@ for (let [key, value] of Object.entries(assocArr)) {
 [stream language="RO" videoId="489799225/6db77ff45a"  /]
 [/video-vimeo]
 
-[code-task title="Meetings" taskId="js-fundamentals-pt2-Associative-Arrays-Meetings"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Meetings" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -521,7 +521,9 @@ console.log(firstEntry[0]);
 console.log(firstEntry[1]);
 ```
 
-As the name of the `sort()` method suggests, it sorts the elements of an array and returns a sorted array. The default sort order is **ascending**.
+As the name of the `sort()` method suggests, it sorts the elements of an array and returns a sorted array.
+
+The default sort order is **ascending**.
 
 The **entries** array from the above example can be **sorted**, using a **compare function**.
 
@@ -536,11 +538,11 @@ We use the `.localeCompare()` method to sort **strings** in JavaScript.
 
 To **sort by key**, use the **first element** of each entry.
 
-Here `a[0]` is the first element and `b[0]`, the second element of the sorting function.
+Here `a[0]` is the first element and `b[0]` - the second element of the sorting function.
 
 The expression `a[0].localeCompare(b[0])` will sort the array in ascending order.
 
-If we have `b[0].localeCompare(a[0])` the function will sort the array in descending order.
+If we use `b[0].localeCompare(a[0])` the function will sort the array in descending order.
 
 ```js live
 let phonebook = { Tim: "0876566344", Bill: "0896543112" };
@@ -570,7 +572,7 @@ console.log(result);
 [stream language="RO" videoId="489799330/4e7e06a7e1"  /]
 [/video-vimeo]
 
-[code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -772,7 +774,9 @@ console.log(billsContact.phone);
 
 ## Sorting Nested Data Structures
 
-We can **sort** data structure by the **property values** of each entry. In this case, we will use destructuring to sort the contact book **alphabetically** by each person's address.
+We can **sort** data structures by the **property values** of each entry.
+
+In this case, we will use destructuring to sort the contacts book **alphabetically** by each person's address.
 
 ```js live
 let contacts = {
