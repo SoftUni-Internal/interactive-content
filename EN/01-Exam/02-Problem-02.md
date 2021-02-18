@@ -45,10 +45,10 @@ The sum must be formatted to the second digit after the decimal point.
 | 2 | |
 
 ### Comments
-- 8 Nights > 7, therefore there is a 5% discount on the price per night, which is 100$
-- 5% from 100 is 5. -> 100 – 5-> 95$ per night after the discount, 8 overnights 95$ -> 760$
+- 8 nights > 7, therefore there is a 5% discount on the price per night, which is 100$
+- 5% from 100 is 5 -> 100 - 5 = 95$ per night after the discount, 8 * 95$ = 760$
 - 2% of the budget is provided for additional costs. 2% from 800.50 is 16.01$
-- 760 + 16.01 = 776.01 < = 800.50, therefore the money is enough and after the trip they return with 800.50 – 776.01 = 24.49$
+- 760 + 16.01 = 776.01 <= 800.50, therefore the money is enough and after the trip they return with 800.50 - 776.01 = 24.49$
  
 [/task-description]
 [code-io /]
