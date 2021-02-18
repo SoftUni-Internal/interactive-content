@@ -517,15 +517,14 @@ Output all guests, who did not come to the party (VIPs must be first).
 | **Input** | **Output** |
 | --- | --- |
 | `['7IK9Yo0h', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc', 'tSzE5t0p', 'PARTY', '9NoBUajQ', 'Ce8vwPmE', 'SVQXQCbc']` | 2          |
-|                                                                                                             | 7IK9Yo0h   |
-|                                                                                                             | tSzE5t0p   |
+| | 7IK9Yo0h   |
+| | tSzE5t0p   |
 
 ## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
-| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 
-'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
+| `['m8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'xys2FYzn', 'MDzcM9ZK','PARTY', '2FQZT3uC', 'dziNz78I', 'mdSGyQCJ', 'LjcVpmDL', 'fPXNHpm1', 'HTTbwRmM', 'B5yTkMQi', '8N0FThqG', 'm8rfQBvl', 'fc1oZCE0', 'UgffRkOn', '7ugX7bm0', '9CQBGUeJ']` | 2          |
 | | xys2FYzn |
 | | MDzcM9ZK |
 
@@ -1100,7 +1099,9 @@ Your task is to collect the resources and print each of them on a new line.
 
 The quantities inputs will be in range `[1 ... 2 000 000 000]`
 
-# Example 1
+# Examples
+
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
@@ -1108,7 +1109,7 @@ The quantities inputs will be in range `[1 ... 2 000 000 000]`
 |                                                   | Silver \-\> 10 |
 |                                                   | Copper \-\> 17 |
 
-# Example 2
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
