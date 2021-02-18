@@ -37,7 +37,7 @@ In the example above, we initialize an empty array of integers with a length of 
 - `int[]`: to initialize an array, we need to provide a data type
 - `numbers`: is the name of the variable
 - `new int[5]`: creates a new instance of an array, which will hold five integers
-- when we iterate through the array, it will be printing zeros because the default value of an integer is zero
+When we iterate through the array, it will be printing zeros because the default value of an integer is zero
 
 - Assigning values to the Array elements:
 
