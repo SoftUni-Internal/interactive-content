@@ -13,7 +13,7 @@
 
 
 - IIFE Modules
-    - enabling data encapsulation
+    - enabling data encapsulation: 
 
 ```js 
 var myModule = (function() {
@@ -32,7 +32,7 @@ console.log(people); // ReferenceError
 
 - Node\.js Modules
   
-	- the `module.exports` special object is used to export data or functionality
+	- the `module.exports` - a special object is used to export data or functionality
   
     - we use `require()` to import them
 

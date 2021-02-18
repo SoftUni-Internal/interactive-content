@@ -8,19 +8,19 @@
 
 A **Module** is a **set of functions** that is made **accessible throughout any part of your application**.
 
-Modules are used to **encapsulate** related **code and data** to **implement a certain functionality**.
+Modules are used to **encapsulate** **code and data** to **implement a certain functionality**.
 
 Most often, **modules** are packaged in a **single unit**, so that they are **easier to deploy**.
 
 There are numerous benefits when it comes to using modules:
 
-- **Preventing repetitive code**
+- **Avoiding code repetition**
 
 - **Grouping related behavior**, enabling easier access in the future
 
-- Enables **storing** an application's codebase **across multiple files**, thus making code **easier to read** and understand
+- Enables **storing** an application's codebase **across multiple files**, making code **easier to read** and understand
   
-- **Scope** is easier to control and maintain because **modules do not populate the global** scope
+- **Their Scope** is easier to control and maintain because **modules do not populate the global** scope
   
 - **Errors are easier to track down** because they are **isolated to a smaller portion of the program**
 

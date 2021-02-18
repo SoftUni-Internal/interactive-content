@@ -29,7 +29,7 @@ var myModule = (function() {
 
 In the example above, we define the `myModule` variable, which stores our IIFE module.
 
-This module contains the `count` variable and `increase()` function.
+This module contains the `count` variable and the `increase()` function.
 
 As you may know, variables defined with `var` are **available globally** by default.
 
@@ -50,7 +50,7 @@ The counter itself, however, **cannot be directly accessed**, unless we declare 
 
 In Node\.js, **every file has its own scope**.
 
-Thus, individual files could be considered as **separate modules**.
+Individual files could be considered as **separate modules**.
 
 **The modules we create manually have to be exported** before they could be required.
 
@@ -147,7 +147,7 @@ JavaScript's **built-in module statements always export and import an object**.
 ## Importing
 
 
-Importing an object can be done in a few ways:
+Importing an object can be done in several ways:
 
 - Importing a **specific function**
 
@@ -171,13 +171,13 @@ import { toUSD as convertToUSD } from './currencyConverter.js'
 
 ## Exporting
 
-We use the `export` statement to create a JavaScript module.
+We use the export statement to create a JavaScript module.
 
 ```js
 export { myFunc, varOne };
 ```
 
-Using the `default` keyword we can later import the value with **any given name**:
+Using the default keyword we can later import the value with **any given name**:
 
 ```js
 export default greetFunction;
