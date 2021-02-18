@@ -99,7 +99,7 @@ linkedHashMap.forEach((k, v) -> System.out.println(k + " - " + v));
 [slide hideTitle]
 # Built-in Methods
 
-- `put(K key, V value)`: **adds the given items** in the map. 
+- `put(K key, V value)`: **adds the given items** in the map
 
 Only a **single "Key - Value" pair** for each Key can exist in the Map **at the same time**. 
 
