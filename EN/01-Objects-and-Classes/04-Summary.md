@@ -1,8 +1,6 @@
 [slide hideTitle]
 # Summary
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-28-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 ## In this lesson you learned:
 
 - Classes define the following templates for objects

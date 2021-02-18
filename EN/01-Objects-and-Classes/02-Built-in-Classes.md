@@ -3,8 +3,6 @@
 [slide hideTitle]
 # Built-in Classes in Java
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-8-9-built-in-api-classes-in-java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Java provides **ready-to-use** classes, which are organized inside **Packages**. 
 
 These classes provide **predefined methods** and **fields** that help to save time and effort in writing code and repeating it.
@@ -40,19 +38,19 @@ int randomNumber = rnd.nextInt(10);
 
 `Math` class methods are **static** and help performing the **numeric operations** and commonly used **mathematical functions** like:
 
-- Rounding
+- rounding
 
-- Comparing
+- comparing
 
-- Square root
+- square root
 
-- Cube root
+- cube root
 
-- Exponential
+- exponential
 
-- Logarithm
+- logarithm
 
-- Trigonometric operations
+- trigonometric operations.
 
 `Math` methods include:
 
@@ -197,9 +195,6 @@ System.out.println(isValid);
 
 [slide hideTitle]
 # Problem with Solution: Randomize Words
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="Randomize Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -341,9 +336,6 @@ System.out.println(number);
 
 [slide hideTitle]
 # Problem with Solution: Sum Big Numbers
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-sum-big-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="Sum Big Numbers" taskId="java-fund-16-Objects-and-Classes-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -456,9 +448,6 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 
 [slide hideTitle]
 # Problem with Solution: Big Factorial
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [code-task title="Big Factorial" taskId="java-fund-16-Objects-and-Classes-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
