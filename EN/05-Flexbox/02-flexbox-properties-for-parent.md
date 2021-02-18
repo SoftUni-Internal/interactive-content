@@ -12,9 +12,9 @@
 [stream language="EN" videoId="431762651" default /]
 [/video-vimeo]
 
-For start using the Flexbox model, we need to turn the parent element into a **flexbox container**.
+To start using the Flexbox model, we need to turn the parent element into a **flexbox container**.
 
-The child elements will be turned into flexbox **items**.
+By doing this, the child elements will be turned into flexbox **items**.
 
 **Example:**
 
@@ -41,7 +41,7 @@ The child elements will be turned into flexbox **items**.
 The element shares properties of both an inline and a flexbox element:
 
 * **inline** because the element behaves like **simple text**, and inserts itself in a **block** of text;
-* **flexbox** because its child element will be turned into **flexbox** items.
+* **flexbox** because its child elements will be turned into **flexbox** items.
 
 [vimeo-video]
 [stream language="EN" videoId="431762796" default /]
@@ -61,7 +61,7 @@ By working with flexbox we have two axes:
 * the main axis;
 * the cross axis.
 
-With `flex-direction` property we can define the main axis, and the cross axis is the perpendicular one.
+The `flex-direction` property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
 
 The `flex-direction` property has the following values:
 * `row`- The flexbox  items are ordered the **same way** as the text direction, along the main axis;
