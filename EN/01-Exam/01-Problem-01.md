@@ -14,34 +14,33 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-It is hot and sunny outside so the SoftUni training team decides to organize a workday by the swimming pool. 
+It's hot and sunny outside so you decides to go to the swimming pool with your friends. 
 
 Your task is to write a program that calculates the amount that should be paid. 
 
-Entrance fee must be paid for every single person. 
+**Every person should pay an entrace fee.** 
 
-You should keep in mind that an umbrella is enough for two people. Only 75% of the team want sunbeds. 
+You should keep in mind that **an umbrella is enough for two people** and only **75% of the group wants sunbeds**. 
 
-In the calculation of the number of umbrellas and sunbeds, their number should be rounded up to the next integer.
+When calculating the number of umbrellas and sunbeds, their number should be **rounded up to the next integer**.
 
 ## Input
-You will receive 4 lines from the console: 
-
-- First line - the number of people - an integer in range [1... 100]
-- Second line - the entrance fee - a real number in range [0.00... 50.00]
-- Third line - the price for a single sunbed - a real number in range [0.00... 50.00]
-- Fourth line - the price for one umbrella - a real number in range [0.00... 50.00] 
+You will receive **4 lines of input from the console**: 
+- The number of people - **an integer** in the range [1... 100]
+- The entrance fee for one person - **a real number** in the range [0.00... 50.00]
+- The price for a single sunbed - **a real number** in the range [0.00... 50.00]
+- The price for one umbrella - **a real number** in the range [0.00... 50.00] 
 
 ## Output
 "\{total price\} dollars." 
-- The result must be formatted to the second digit after the decimal point.
+- The result must be formatted to two decimal places. 
 
 ## Example
 | **Input** | **Output** | **Comments** |
 | --- | --- | --- |
-| 21 | 254.10 dollars. | 21 people \* 5.50$ = 115.50$ |
-| 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40$ |
-| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20$ = 68.20$ |
+| 21 | 254.10 euro | 21 people \* 5.50 = 115.50 euro |
+| 5.50 | | 75% of 21 people are 16 -> 16 * 4.40 = 70.40 euro |
+| 4.40 | | 50% of 21 people are 11 -> 11 * 6.20$ = 68.20 euro |
 | 6.20 | | The final: 115.50 + 70.40 + 68.20 = 254.10 |
 
 [/task-description]
@@ -55,7 +54,7 @@ You will receive 4 lines from the console:
 6.20
 [/input]
 [output]
-254.10 dollars.
+254.10 euro
 [/output]
 [/test]
 [test]
@@ -66,7 +65,7 @@ You will receive 4 lines from the console:
 4
 [/input]
 [output]
-272.00 dollars.
+272.00 euro
 [/output]
 [/test]
 [test]
@@ -77,7 +76,7 @@ You will receive 4 lines from the console:
 5
 [/input]
 [output]
-3325.00 dollars.
+3325.00 euro
 [/output]
 [/test]
 [test]
@@ -88,7 +87,7 @@ You will receive 4 lines from the console:
 6
 [/input]
 [output]
-8994.00 dollars.
+8994.00 euro
 [/output]
 [/test]
 [test]
@@ -99,7 +98,7 @@ You will receive 4 lines from the console:
 1
 [/input]
 [output]
-3.00 dollars.
+3.00 euro
 [/output]
 [/test]
 [test]
@@ -110,7 +109,7 @@ You will receive 4 lines from the console:
 1.6
 [/input]
 [output]
-166.00 dollars.
+166.00 euro
 [/output]
 [/test]
 [test]
@@ -121,7 +120,7 @@ You will receive 4 lines from the console:
 23.6
 [/input]
 [output]
-2465.80 dollars.
+2465.80 euro
 [/output]
 [/test]
 [test]
@@ -132,7 +131,7 @@ You will receive 4 lines from the console:
 5.60
 [/input]
 [output]
-1614.50 dollars.
+1614.50 euro
 [/output]
 [/test]
 [test]
@@ -143,7 +142,7 @@ You will receive 4 lines from the console:
 33.33
 [/input]
 [output]
-4155.14 dollars.
+4155.14 euro
 [/output]
 [/test]
 [test]
@@ -154,7 +153,7 @@ You will receive 4 lines from the console:
 1.3
 [/input]
 [output]
-1418.60 dollars.
+1418.60 euro
 [/output]
 [/test]
 [test]
@@ -165,7 +164,7 @@ You will receive 4 lines from the console:
 50
 [/input]
 [output]
-11250.00 dollars.
+11250.00 euro
 [/output]
 [/test]
 [/tests]
