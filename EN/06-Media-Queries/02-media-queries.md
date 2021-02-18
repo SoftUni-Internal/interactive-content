@@ -13,7 +13,7 @@ Media Queries are a feature of CSS that enables webpage content to **adapt** to 
 
 They are a fundamental part of **responsive web design** and are used to customize the appearance of websites for multiple devices.
 
-The example bellow means, that if the browser window is 550px or smaller, the background color will be changed to blue, and the text color will be red.
+In the example we can see that if the browser window is 550px or smaller, the background color will be changed to blue, and the text color will be red.
 
 **Example:**
 ```html
@@ -29,18 +29,16 @@ The example bellow means, that if the browser window is 550px or smaller, the ba
 
 [slide]
 
-## How Can be Used Media Queries?
+## How Can We Use Media Queries?
 
 [vimeo-video]
 [stream language="EN" videoId="431768717" default /]
 [/video-vimeo]
 
-Media queries in CSS3 look at the **capability** of the device.
-
 Media queries can be used to check many things, such as:
 * **width** and **height** of the **viewport**;
 * **width** and **height** of the **device**;
-* orientation (is the tablet/phone in **landscape** or **portrait** mode?);
+* orientation (is the tablet/phone in **landscape** or **portrait** mode);
 * **resolution**.
 
 [/slide]
@@ -64,7 +62,7 @@ A media query consists of a **media type** and can contain one or more **express
 
 The result of the query is **true** if the specified media type matches the type of device the document is being displayed on.
 
-Unless you use the **not** or **only** operators, the media type is **optional** and all type will be implied.
+Unless we use the **not** or **only** operators, the media type is **optional** and all type will be implied.
 
 [vimeo-video]
 [stream language="EN" videoId="431769287" default /]
@@ -82,11 +80,11 @@ A set of **CSS rules** that will be applied if the test passes and the media typ
 
 ## Typical Device Breakpoints
 
-In our days, there are many types of screens and devices with different heights and widths.
+Nowadays, there are many types of screens and devices with different heights and widths.
 
 It is very hard (almost impossible) to create an exact breakpoint for each device.
 
-To keep things simple you could target five groups:
+To keep things simple we could target five groups:
 
 **Example:**
 ```html
