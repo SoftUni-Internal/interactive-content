@@ -1,4 +1,4 @@
-﻿[slide hideTitle]
+[slide hideTitle]
 # Family Trip
 [code-task title="Family Trip" taskId="pb-java-exam-family-trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
