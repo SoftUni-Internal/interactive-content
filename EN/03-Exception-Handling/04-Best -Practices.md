@@ -10,11 +10,11 @@
 - Continue with the more general exceptions
 - Otherwise, a compilation error will occur
 
-Each **catch** block should handle only these exceptions, which it expects:
+Each **catch** block should handle only these exceptions, which it concerns:
 
-- If a method is not competent to handle an exception, it should leave it unhandled
+- If a method is not intended to handle a exception, it should leave it unhandled
 
-- Handling all exceptions disregarding their type is a bad practice (anti-pattern)
+- Handling all exceptions disregarding their type is a bad practice
 
 [/slide]
 
@@ -23,6 +23,7 @@ Each **catch** block should handle only these exceptions, which it expects:
 # Choosing the Exception Type 
 
 When an application attempts to use **null** in a case where an object is required:
+
 - **NullPointerException**
 
 An array has been accessed with an illegal index:
@@ -33,7 +34,7 @@ An index is either negative or greater than the size of the string:
 
 - **StringIndexOutOfBoundsException**
 
-Attempts to convert an inappropriate string to one of the numeric types:
+The code attempts to convert an inappropriate string to one of the numeric types:
 
 - **NumberFormatException**
 
@@ -41,11 +42,11 @@ When an exceptional arithmetic condition has occurred
 
 - **ArithmeticException**
 
-Attempts to cast an object to a subclass of which it is not an instance
+The program attempts to cast an object to a subclass of which it is not an instance
 
 - **ClassCastException**
 
-A method has been passed an illegal or inappropriate argument
+A method has received an illegal or an inappropriate argument
 
 - **IllegalArgumentException**
 
@@ -55,7 +56,7 @@ A method has been passed an illegal or inappropriate argument
 
 # Best Practices 
 
-When raising an exception, always pass a **good explanation message** to the constructor.
+When throwing an exception, always specify a **good explanation message in** to the constructor.
 
 When throwing an exception try to give a good description of the problem.
 

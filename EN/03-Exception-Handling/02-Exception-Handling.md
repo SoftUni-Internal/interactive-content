@@ -8,7 +8,7 @@ In Java, we handle exceptions by using the **try-catch** construction.
 
 ```java 
 try {
-// Do some work that can raise an exception
+// Specify a piece of code logic that could raise an exception 
 } catch (SomeException) {
 // Handle the caught exception
 }
@@ -40,12 +40,12 @@ See the following example:
 
 ```java 
 try {
-  // Do some work that can cause an exception
+  // Specify a piece of code logic that could raise an exception 
 } catch (IndexOutOfBoundsException ae) {
   // Handle the caught arithmetic exception
 }
 ```
-The code in the example handles **IndexOutOfBoundsException** and its descendants: 
+The code in the example handles the **IndexOutOfBoundsException** and its descendants: 
 - **ArrayIndexOutOfBoundsException**
 - **StringIndexOutOfBoundsException**
 
@@ -71,17 +71,19 @@ try {
 
 - Unmanaged code can throw **other exceptions**
 
-For **handling all exceptions** (even unmanaged) use the construction:
+To **handling all exceptions** (even unmanaged) use the construction
+
+Specify a piece of code logic that could raise an exception 
 
 ```java
 try {
-  // Do some work that can raise any exception
+  // Specify a piece of code logic that could raise an exception 
 } catch (Exception ex) {
   // Handle the caught exception
 }
 ``` 
 
-Hint: Trace out the exceptions hierarchy. Be cautious witch exception is the main and which is the inheritor.
+Hint: Trace the exceptions hierarchy. Be cautious witch exception is the main and which is the inheritor.
 
 [/slide]
 
@@ -89,13 +91,12 @@ Hint: Trace out the exceptions hierarchy. Be cautious witch exception is the mai
 
 # "Try-finally" Statement
 
-The **"try-finally"** statement ensures **execution** of a given block **in all cases** when an exception is raised or not in the try block.
+The **"try-finally"** statement ensures the **execution** of a given block **in all cases** whether an exception is raised or not in the try block.
 
-It helps the execution for cleaning-up code, e.g. releasing resources.
 
 ```java 
 try {
-   // Do some work that can cause an exception
+   // Specify a piece of code logic that could raise an exception 
 } finally {
    // This block will always execute
 }
@@ -140,7 +141,7 @@ The **finally block** gives us a chance to run the code which we want to execute
 
 # Problem with Solution: Square Root
 
-Write a program that reads an integer **number** and **calculates** and **prints** its **square root**.
+Create a program that reads an integer, **calculates** and **prints** its **square root**.
 
 If the number is invalid, print **"Invalid number"**. 
 
@@ -155,13 +156,13 @@ Use **try-catch-finally.**
 
 # Problem with Solution: Enter Numbers
 
-Write a method **printNumbers(int start, int end)** that prints integer numbers in a given range **\[start...end\]**. 
+Write a method **printNumbers(int start, int end)** that prints integers in a given range \[start...end\]. 
 
-If we have an **invalid number** or a **non-number** as input, the method should **throw an exception**. 
+If we receive an **invalid number** or a **non-number** as input, the method should **throw an exception**. 
 
-Using this method write a program that enters **start** and **end:** **1 < start < end < 100**. 
+Using this method create a program that runs from the value of **start** and finishes when reaching the value of **end: 1 < start < end < 100**. 
 
-If the user enters an invalid number, make the user enter all of them again.
+If the user enters an invalid number, make sure that the user will enter numbers again.
 
 [/slide]
 

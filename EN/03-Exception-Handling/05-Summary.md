@@ -18,7 +18,7 @@
     - try-finally Statement
     ```java 
     try {
-    // Do some work that can cause an exception
+    // Do some work that can raise an exception
     } finally {
     // This block will always execute
     }
@@ -43,15 +43,15 @@
     }
     ```
 - Best Practices
-    - Using Catch Block
-    - Choosing the Exception Type 
+    - Using a Catch Block
+    - Choosing the right Exception Type 
 
 ## In the next lesson, you will learn:
 
-- What is Debugging?
+- What is debugging
     - working with Debugging tools (`debuggers`)
     - importance of Debugging
-- Working with **IntelliJ IDEA Debugger**
+- Working with the **IntelliJ IDEA Debugger**
     - breakpoints
 - Data Inspection
 

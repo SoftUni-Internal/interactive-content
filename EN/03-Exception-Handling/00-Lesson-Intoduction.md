@@ -1,29 +1,33 @@
 # Lesson Introduction
 
 [slide hideTitle]
+
 # Lesson Content
 
 ## In this lesson you will learn:
 
 **1. What Exceptions are**
 
-- The Exception Class
+- The exception class
 
-- Types of Exceptions and Their Hierarchy
+- Types of Exceptions and their hierarchy
 
 **2. Handling Exceptions**
 
-- Multiple Catch
+- Multiple catch
 
-- The Try-finally Statement
+- The try-finally statement
 
 **3. Raising (Throwing) Exceptions**
 
-- Using Throw Keyword
+- Using the "Throw" Keyword
 
-- Re-Throwing Exceptions
+- Re-Throwing exceptions
 
 **4. Best Practices**
-- Using Catch Block
-- Choosing the Exception Type 
+
+- Using catch blocks
+
+- Choosing the rigth exception type
+
 [/slide]

@@ -1,17 +1,17 @@
-# Raising (Throwing) Exceptions
+# "throwing" Exceptions
 
 [slide hideTitle]
 
-# How to Raise an Exceptions
+# How to throw an Exceptions
 
-Exceptions are thrown (raised) by the **throw** keyword.
+Exceptions are throwed using the **throw** keyword. 
 
-They are used to notify the calling code in case of an error or unusual situation.
+Exceptions are used to notify the person running the code in case an error occurs or if the program produces unexpected results. 
 
-**When we have an exception:**
+**When an exception is "thrown"**: 
 - The program execution stops
 - The exception travels over the stack
-   - until a matching catch block is reached to handle it
+   - until a matching catch block is reached to handle it 
    
 Unhandled exceptions display an error message.
 
@@ -19,14 +19,14 @@ Unhandled exceptions display an error message.
 
 [slide hideTitle]
 
-# Using Throw Keyword
+# Using the "throw" Keyword
 
 - Throwing an exception with an error message
 
 ```java
 throw new IllegalArgumentException("Invalid amount!");
 ```
-- Exceptions can accept message and cause:
+- Exceptions can contain a message and a cause:
 
 ```java
 try {
@@ -35,7 +35,6 @@ try {
   throw new IllegalStateException("Cannot save invoice.", sqlEx);
 }
 ```
-**Note:** If the original exception is not passed, the initial cause of the exception is lost
 
 [/slide]
 
@@ -78,15 +77,18 @@ public static void main(String[] args) {
 
 # Problem with Solution: Valid Person
 
-Define a simple class **Person**, which has the following fields:
+Define a simple class called **Person**, which has the following fields:
 
- **first name**, **last name** and **age.**
+ - first name
+ - last name 
+ - age
 
-**Validate** the data in the **setters**, **throw** appropriate **exceptions** in case invalid data is entered.
+**Validate** the data in the **setters**, **rise** appropriate **exceptions** in case invalid data is entered.
 
 - **Step 1: Create a Class Person**
 
-Create a class **Person**. The class should contain the following fields: 
+The class should contain the following fields: 
+
 **first name (String), last name (String), and age (int)**.
 
 All fields are **required**, meaning you should have one constructor accepting all three as **parameters**. 
@@ -119,9 +121,9 @@ The **first** and **last name** cannot be **null** or **empty** strings.
 
 To check this, use the `string.IsNullOrEmpty()` method.
 
-The **age** must be in the range **[0 … 120].**
+The **age** must be in range [0 … 120].
 
-If data is **invalid**, **throw** appropriate exceptions with descriptive **messages**
+If data is **invalid**, **throw the** appropriate exceptions with descriptive **messages**
 
 For example, if the **name** is an **empty string**, an appropriate exception may be **IllegalArgumentException**.
 
@@ -148,7 +150,7 @@ private void setAge (int age) {
 }
 ```
 
-Now the constructor should make use of the setters instead of modifying the private fields directly:
+The constructor should use of setters instead of modifying the private fields directly:
 
 ```java
 public Person (String firstName, String lastName, int age) {
@@ -160,18 +162,18 @@ public Person (String firstName, String lastName, int age) {
 
 - **Step 3: Test the Person Class**
 
-In your main program, test whether your class behaves correctly. 
+In the main program, test whether the class behaves correctly. 
 
-Create several objects of type Person – one with **valid data**, one with an **empty first name**, 
+Create several objects of type Person – one with **valid data**, one with an **empty string for a first name**, 
 one with **null as last name**, one with **negative age** and one with **age > 120**. 
 
-Check whether executing the code results in errors in case data is invalid. 
+Check whether executing the code results in errors in case the entered data is invalid. 
 
 Test the invalid cases one by one.
 
 Comment out the other invalid lines of code.
 
-Your program will stop executing when the first error occurs.
+Note: The program will stop executing when the first error occurs.
 
 ```java
 public static void main(String[] args) {
@@ -186,9 +188,9 @@ public static void main(String[] args) {
 
 - **Step 4: Add Try-Catch Blocks**
 
-To prevent the program from blowing up, surround the invalid lines in **try-catch** blocks. 
+To prevent the program from stopping, surround the invalid lines in **try-catch** blocks. 
 
-It is good practice to put different catch blocks for different types of errors you anticipate the operation might throw. 
+It is a good practice to put different **catch blocks** for different types of errors that you anticipate.
 
 
 Example:
