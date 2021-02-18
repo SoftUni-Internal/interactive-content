@@ -1,13 +1,13 @@
 # Homework
 
 [slide]
-# How to Submit your Solution for a Problem
+# How to Submit Your Solution for a Problem
 
-* **Create** your **HTML** document and write the content of the problem in it;
-* **Create** your **CSS** file;
-* **Include link** to your **CSS** file **in the HTML** document: `<link rel="stylesheet" href="./style.css">` ;
-* **Write** your **CSS code**;
-* When you are ready with the solution, **zip both files** (`index.html and style.css`) and **upload** your `.zip` file in the platform.
+* **Create** your **HTML** document and write the content of the problem in it
+* **Create** your **CSS** file
+* **Link** your **HTML** document to your **CSS** file: `<link rel="stylesheet" href="./style.css">`
+* **Write** your **CSS code**
+* When you are ready with the solution, **zip both files** (`index.html and style.css`) and **upload** your `.zip` file to the platform
 
 **Note:** Be careful, because the uploaded file must be of **type zip**! .rar or .7zip will **NOT** be accepted!
 
@@ -28,9 +28,9 @@
 [task-description]
 ## Description
 
-* Create a HTML document.
-* Change the document **title** to *Simple HTML Page* 
-* Use **paragraph** tag for plain text and **strong** tag for bold text
+* Create an HTML document.
+* Change the **title** of the document to *Simple HTML Page* 
+* Use the **paragraph** tag for plain text and the **strong** tag for bold text
 
 You can find an example view [here](https://i.imgur.com/k58mFsI.png)
 
