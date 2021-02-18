@@ -5,25 +5,25 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Exam_Preparation_ShoeShelf_Resourses.zip) **for this task.**
 
-You are assigned to implement a **Single Web Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** with cloud-based backend ([Firebase](https://firebase.google.com), **Backendless** or other).
+In this exam preparation, we're going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Kinvey).
 
-Using libraries like  **lit-html** and **page.js** is allowed but is not obligatory.
+Using libraries like **lit-html** and **page.js** is allowed but is **not obligatory**.
 
 The app keeps **users** and **shoes.**
 
 **Guests** should be able to register and log in.
 
-Logged\-in users should be able to view **all shoes**, **add shoes**, **buy shoes**, see **details** about a **shoes** and **logout**.
+Logged-in users should be able to view **all of the shoes**, **add new shoes**, **buy shoes**, see **details** about **shoes** and **logout**.
 
-Logged-in users should also be able to **edit** or **delete** the **shoes they have added.**
+Logged-in users should also be able to **edit** or **delete** the **shoes that they have added.**
 
 ## Create a REST Service
 
-Use any cloud-based database and create an application to keep your data in the cloud.
+Use any cloud-based database and create an application to keep your data on the cloud.
 
 Create a collection called **shoes.**
 
-Each shoes has a **name**, **price**, **imageUrl**, **description**, **brand**, **creator** and **people bought it.**
+Each shoes has a **name**, **price**, **imageUrl**, **description**, **brand**, **creator** and **people who have bought it.**
 [/slide]
 
 [slide hideTitle]
@@ -32,41 +32,35 @@ Each shoes has a **name**, **price**, **imageUrl**, **description**, **brand**, 
 
 You have been given the web design of the application as **HTML** \+ **CSS** files.
 
-- Initially, all views and forms are shown by the HTML. 
+- Initially, all of the views and the forms are shown in the HTML files. 
 
-Your application may **hide/show elements** by CSS (display: none) or delete/reattach from and to the DOM all unneeded elements, or just display the views it needs to display.
+Your application may **hide/show elements** using CSS (display: none) or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed.
 
 - You may render the views/forms/components with **JavaScript** or **lit-html**.
 
-- You are **allowed** to add **attributes** to any HTML elements.
+- You are **allowed** to add **attributes** to any HTML element.
 
 ## Important
 
-Do not change the elements' **class names** and ids.
+Do not change the elements' **class names** and IDs.
 
-Do not rename form fields/link/ids.
+Do not rename the form fields/links/IDs.
 
-You may modify **href attributes** of links and add **action/method attributes** to forms, to allow the use of a routing library.
+You may modify the **href attributes** of the links and add **actions/method attributes** to forms, to allow the use of a routing library.
 
 [/slide]
 [slide hideTitle]
-# Client-Side Web Application
+# Navigation Bar (5 Pts)
 
-Design and implement a client-side front-end app (SPA).
+Navigation links should correctly change the current page (view).
 
-Implement the functionality described below.
+Clicking on the buttons on the navigation bar should display the view behind the link (views are represented as sections in the HTML code).
 
-## Navigation Bar (5 Pts)
-
-- Clicking on the links in the **NavBar** should display the view behind the navigation link.
-
-- Your application may **hide/show elements** by CSS (display: none) or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
-
-- The Logged\-in user navbar should contain the following elements: `[Create new offer]` a **link** to the **Create page**, the Shoe Shelf logo \- link to the listed shoes, the user caption `Welcome, {email}` and `[Logout]` link.
+The navigation bar of the logged-in user should contain the following elements: `[Create new offer]` a **link** to the **Create page**, the Shoe Shelf logo \- a link to the listed shoes, the user caption `Welcome, {email}` and the `[Logout]` link.
 
 [image assetsSrc="js-apps-exam-prep-1.png" /]
 
-- The guest users navbar should contain the following elements: **Shoe Shelf** with the logo in-between.
+The navigation bar of the guest users should contain the following elements: **Shoe Shelf** with the logo in-between.
 
 [image assetsSrc="js-apps-exam-prep-2.png" /]
 [/slide]
@@ -84,20 +78,20 @@ The initial page (view) should display the **guest navigation bar** \+ **Guest H
 [slide hideTitle]
 # Register User (5 Pts)
 
-By given **email** and **password**, the app should register a new user in the system.
+The app should register a new user in the system using their email and password credentials.
 
 - The following validations should be made:
    - The **email** input must be **filled**
 
    - The password should be at least **6 characters long**
 
-   - The **repeat** **password** should be equal to the password
+   - The **repeat** **password** value should be equal to the password
 
-- Keep the user data in the browser's **session or local storage.**
+- Keep the user's data in the browser's **session or local storage.**
 
-- After a **successful registration** redirect to **Home page.**
+- After a **successful registration**, redirect to **Home page.**
 
-- In case of **error**, nothing happens, the user should be able to fill in the form again.
+- In case of an **error**, nothing should happen and the user should be able to fill in the form again.
 
 [image assetsSrc="js-apps-exam-prep-4.png" /]
 
@@ -106,13 +100,13 @@ By given **email** and **password**, the app should register a new user in the s
 [slide hideTitle]
 # Login User (5 Pts)
 
-By given **email** and **password**, the app should log in as an existing user.
+ Тhe app should log in an existing user using their **email** and **password**
 
-- Keep the user data in the browser's **session or locale storage.**
+- Keep the user's data in the browser's **session or locale storage**
 
-- After a **successful login** redirect to the Home page.
+- After a **successful login**, redirect to the Home page
 
-- In case of **error**, nothing happens, the user should be able to fill in the login form again.
+- In case of an **error**, nothing should happen and the user should be able to fill in the form again
 
 [image assetsSrc="js-apps-exam-prep-5.png" /]
 
@@ -130,15 +124,15 @@ Successfully logged-in users should be able to logout from the app.
 [/slide]
 [slide hideTitle]
 
-# Home Page(Logged in User)  (30 Pts)
+# Home Page (Logged in User)  (30 Pts)
 
-Successfully logged-in users should be welcomed by the **Home page.**
+Successfully logged-in users should be welcomed when entering the **Home page.**
 
-They should be able to see all added shoes:
+They should be able to see all of the added shoes:
 
 [image assetsSrc="js-apps-exam-prep-6.png" /]
 
-If there are **NO** such, the following view should be displayed:
+If there are **NO** shoes added, the following view should be displayed:
 
 [image assetsSrc="js-apps-exam-prep-7.png" /]
 
@@ -149,19 +143,19 @@ If there are **NO** such, the following view should be displayed:
 
 Logged-in users should be able to **add shoes.** 
 
-Clicking the `[Create new offer]` button in the navbar should **display** the **Create page.**
+Clicking the `[Create new offer]` button, on the navgivation bar, should **display** the **Create page.**
 
 - The form should contain the following validations:
 
-   - All **input** fields shouldn't be **empty**. 
+   - All **input** fields should be **filled**
 
    - **By default**, every newly created offer must have additional information:
 
 `Creator`: a string representing the current user;
 
-`People bought it`: keeping data of users bought the shoes;
+`People bought it`: the data of the users who have bought the shoes;
 
-   - After a **successful** creating **Home page** should be shown. 
+   - After **successfully** creating a new offer, the application should redirect to the **Home page**. 
 
 - The newly added offer should be stored in the database collection `shoes`.
 
@@ -172,11 +166,11 @@ Clicking the `[Create new offer]` button in the navbar should **display** the **
 [slide hideTitle]
 # Details (15 Pts)
 
-Logged-in users should be able to **view details** about an offer. 
+Logged-in users should be able to **view the details** about an offer. 
 
 Clicking on a **particular offer** should display the **Details page.**
 
-- If the currently logged-in user is the creator, the `[Delete]` and `[Edit]` **buttons** should be set to **visible**, otherwise there should be only 1 button `[Buy]`.
+- If the currently logged-in user is the creator, the `[Delete]` and `[Edit]` **buttons** should be set to **visible**. Otherwise there should be only 1 button `[Buy]`.
 
 [image assetsSrc="js-apps-exam-prep-9.png" /]
 
@@ -186,13 +180,13 @@ Clicking on a **particular offer** should display the **Details page.**
 [slide hideTitle]
 # Edit Offer (10 Pts)
 
-Logged-in users should be able to **edit** offers, added by them.
+Logged-in users should be able to **edit** their own offers.
 
-Clicking the `[Edit]` button of a particular offer on the **Details page** should **display** the **Edit page** inserting the additional information of the shoes in the input fields:
+Clicking the `[Edit]` button of a particular offer on the **Details page** should **display** the **Edit page**, inserting the additional information of the shoes in the input fields:
 
 [image assetsSrc="js-apps-exam-prep-11.png" /]
 
-- After a successful edit user should be redirected to the current shoes **Details page.**
+- After a successful edit, the user should be redirected to the current shoes **Details page**
 
 [/slide]
 
@@ -201,9 +195,9 @@ Clicking the `[Edit]` button of a particular offer on the **Details page** shoul
 
 Logged-in users should be able to **buy** shoes, added by another user.
 
-**NOTE: A user should NOT be able to buy an offer, created by himself.**
+**NOTE: A user should NOT be able to buy from offers, created by himself.**
 
-Clicking the `[Buy]` **button** (on the Details page) should **add the current user email to the property People bought it**.
+Clicking on the `[Buy]` **button** (on the Details page) should **add the current user's email to the property `People bought it`**.
 
 After successfully buying:
 
@@ -222,13 +216,13 @@ After successfully buying:
 [slide hideTitle]
 # Delete Offer (5 Pts)
 
-Logged-in users should be able to **delete their offers.**
+Logged-in users should be able to **delete their own offers.**
 
-Clicking the `[Delete]` **button** of an offer (on the Details page) should delete the **offer.**
+Clicking on the `[Delete]` **button** of an offer (on the Details page) should delete the **offer.**
 
-- After **successful delete** - **Home page** should be **shown.**
+- After **successfully deleting an offer**, the user should be redirected to the **home page**
 
 ## (BONUS) Order: (5 Pts)
 
-**Home page** for a logged user should display offers in **descending order by count** of **people bought** the item.
+The **home page** for a logged user should display the offers in **descending order by count** of **people who bought** the item.
 [/slide]
