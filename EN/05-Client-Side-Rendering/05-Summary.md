@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Client-side rendering is prevalent in the modern web
     - enables instant user interaction
