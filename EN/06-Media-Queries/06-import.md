@@ -9,7 +9,7 @@
 
 The **@import CSS at-rule** is used to import style rules from other style sheets.
 
-You can specify media-dependent @import rules.
+We can specify media-dependent @import rules.
 
 These conditional imports specify comma-separated media queries after the URL.
 
