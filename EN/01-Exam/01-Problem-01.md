@@ -34,6 +34,7 @@ You will receive **4 lines of input from the console**:
 ## Output
 The output should consist of one line:
 - "\{total price\} euro" 
+
 The result must be formatted to **two decimal places**. 
 
 ## Example
