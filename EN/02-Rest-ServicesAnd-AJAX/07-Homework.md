@@ -3,18 +3,6 @@
 [slide hideTitle]
 
 # Problem: Bus Stop
-[code-task title="Bus Stop" taskId="js-applications-rest-services-and-ajax-bus-stop" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
-
-```
-function busStop(){
-    // Write your code here
-}
-```
-
-[/code-editor]
-[task-description]
-
-# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for this task.**
 
@@ -97,164 +85,6 @@ If an error occurs, the stop name changes to Error:
 
 The web host will respond with valid data to IDs 1287, 1308, 1327, and 2334.
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-server.respondWith((request) => {
-    if (request.method == 'GET') {
-        let target = request.url.split('/');
-        target = target[target.length - 1].split('.')[0];
-        expect(target == '1308');
-        let response = `{ "name": "St. Nedelya sq.", "buses": { "12": "6", "18": "7", "4": "13" } }`;
-        request.respond(200, {"Content-Type": "application/json"}, response);
-    } else {
-        request.respond(404, {}, "");
-    }
-});
-
-server.respondImmediately = true;
-document.body.innerHTML = `<div id="stopInfo">
-    <div>
-        <label for="stopId">Stop ID: </label>
-        <input id="stopId" type="text">
-        <input id="submit" type="button" value="Check"></div>
-    <div id="result">
-        <div id="stopName"></div>
-        <ul id="buses"></ul>
-    </div>
-</div>`;
-
-$('#stopId').val('1308');
-result();
-
-setTimeout(nextStep, 50);
-
-function nextStep() {
-    expect($('#stopName').text()).to.contains("St. Nedelya sq.");
-    let list = $('#buses').find('li');
-    expect(list.text()).to.contains('Bus 4 arrives in 13 minutes');
-    expect(list.text()).to.contains('Bus 12 arrives in 6 minutes');
-    expect(list.text()).to.contains('Bus 18 arrives in 7 minutes');
-    done();
-}
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test open]
-[input]
-let responseObj = \{"status": "404", json: () =\> \{return \{\}\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = \`\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>\`;
-
-\\$('\#stopId').val('111');
-result();
-
-function testIt() \{
-expect(\\$('\#stopName').text()).to.contains("Error");
-    let list = \\$('\#buses').find('li');
-expect(list.length).to.equal(0);
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let response = \{ "name": "Centralni Hali", "buses": \{ "20": "11", "22": "4" \} \};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>`;
-
-\\$('\#stopId').val('2334');
-result();
-
-function testIt() \{
-expect(\\$('\#stopName').text()).to.contains("Centralni Hali");
-    let list = \\$('\#buses').find('li');
-expect(list.text()).to.contains('Bus 20 arrives in 11 minutes');
-expect(list.text()).to.contains('Bus 22 arrives in 4 minutes');
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return \{\}\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>`;
-
-\\$('\#stopId').val('666');
-result();
-
-function testIt() \{
-expect(\\$('\#stopName').text()).to.contains("Error");
-    let list = \\$('\#buses').find('li');
-expect(list.length).to.equal(0);
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let response = \{ name: "Central Train Station sq.", buses: \{ 78: 18, 85: 20, 213: 18, 285: 20, 305: 18, 404: 18, 413: 16 \} \};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<div id="stopInfo"\> \<div\> \<label for="stopId"\>Stop ID: \</label\> \<input id="stopId" type="text"\> \<input id="submit" type="button" value="Check"\>\</div\> \<div id="result"\> \<div id="stopName"\>\</div\> \<ul id="buses"\>\</ul\> \</div\> \</div\>`;
-
-\\$('\#stopId').val('1327');
-result();
-
-function testIt() \{
-expect(\\$('\#stopName').text()).to.contains("Central Train Station sq.");
-    let list = \\$('\#buses').find('li');
-expect(list.text()).to.contains('Bus 78 arrives in 18 minutes');
-expect(list.text()).to.contains('Bus 85 arrives in 20 minutes');
-expect(list.text()).to.contains('Bus 213 arrives in 18 minutes');
-expect(list.text()).to.contains('Bus 285 arrives in 20 minutes');
-expect(list.text()).to.contains('Bus 305 arrives in 18 minutes');
-expect(list.text()).to.contains('Bus 404 arrives in 18 minutes');
-expect(list.text()).to.contains('Bus 413 arrives in 16 minutes');
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 
@@ -264,18 +94,6 @@ yes
 [slide hideTitle]
 
 # Problem: Bus Schedule
-[code-task title="Bus Schedule" taskId="js-applications-rest-services-and-ajax-bus-schedule" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
-
-```
-function busSchedule(){
-    // Write your code here
-}
-```
-
-[/code-editor]
-[task-description]
-
-# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-02.BUS-SCHEDULE.zip) **for this task.**
 
@@ -374,125 +192,6 @@ This allows Depart to be clicked again, which makes a new request and updates th
 </div>
 ```
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-server.respondWith((request) => {
-    if (request.method == 'GET') {
-        let target = request.url.split('/');
-        target = target[target.length - 1].split('.')[0];
-        expect(target == 'depot');
-        let response = \`{ "name": "Depot", "next": "0361" }\`;
-        request.respond(200, {"Content-Type": "application/json"}, response);
-    } else {
-        request.respond(404, {}, "");
-    }
-});
-
-server.respondImmediately = true;
-document.body.innerHTML = \`<div id="schedule">
-    <div id="info"><span class="info">Not Connected</span></div>
-    <div id="controls">
-        <input id="depart" value="Depart" type="button">
-        <input id="arrive" value="Arrive" type="button" disabled="true">
-    </div>
-</div>\`;
-
-result = result();
-
-result.depart();
-
-setTimeout(nextStep, 20);
-
-function nextStep() {
-    expect($('#info').find('span').text()).to.contains("Depot");
-    expect($('#depart').prop('disabled')).to.be.true;
-    expect($('#arrive').prop('disabled')).to.be.false;
-    done();
-}
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test open]
-[input]
-let response = \{ "name": "Depot", "next": "0361" \};
-
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
-
-result = result();
-result.depart();
-
-function testIt() \{
-expect(\\$('\#info').find('span').text()).to.contains("Depot");
-    expect(\\$('\#depart').prop('disabled')).to.be.true;
-expect(\\$('\#arrive').prop('disabled')).to.be.false;
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let response = \{ "name": "Depot", "next": "0361" \};
-
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = \`\<div id="schedule"\> \<div id="info"\>\<span class="info"\>Not Connected\</span\>\</div\> \<div id="controls"\> \<input id="depart" value="Depart" type="button"\> \<input id="arrive" value="Arrive" type="button" disabled="true"\> \</div\> \</div\>\`;
-
-result = result();
-result.depart();
-
-function nextStep() \{
-expect(\\$('\#info').find('span').text()).to.contains("Depot");
-    expect(\\$('\#depart').prop('disabled')).to.be.true;
-expect(\\$('\#arrive').prop('disabled')).to.be.false;
-
-    result.arrive();
-    expect(\\$('\#info').find('span').text()).to.contains("Depot");
-    expect(\\$('\#depart').prop('disabled')).to.be.false;
-    expect(\\$('\#arrive').prop('disabled')).to.be.true;
-
-    response = \{ "name": "Ovcha Kupel", "next": "0812" \};
-
-    responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-    fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-    result.depart();
-
-    function nextNextStep() \{
-        expect(\\$('\#info').find('span').text()).to.contains("Ovcha Kupel");
-        expect(\\$('\#depart').prop('disabled')).to.be.true;
-        expect(\\$('\#arrive').prop('disabled')).to.be.false;
-        done();
-    \}
-
-        setTimeout(nextNextStep, 100);
-        fetchStub.restore();
-
-\}
-
-setTimeout(nextStep, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 
@@ -507,20 +206,6 @@ yes
 [slide hideTitle]
 
 # Problem: Messenger
-
-[code-task title="Messenger" taskId="js-applications-rest-services-and-ajax-Messenger" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function messenger(){
-    // Write your code here
-}
-```
-
-[/code-editor]
-[task-description]
-
-# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-03.MESSENGER.zip) **for this task.**
 
@@ -557,65 +242,6 @@ Use the following message format:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-20.png" /]
 
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-let response = \{"-LjH4pfOCXxKp7qilNSh":\{author:"Spami",content:"Hello, are you there?",timestamp:1562597899447 \},"LjH6AplPAnU8AdbcVdb":\{author:"Garry",content:"Yep, whats up :?",timestamp:1562598252760\},"LjH851rrC6qc2l6yyCs":\{ author:"Spami",content:"How are you? Long time no see? :)",timestamp:1562598753863\}\};
-
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<div id="main"\> \<textarea id="messages" cols="80" rows="12" disabled="true"\>\</textarea\> \<div id="controls"\> \<label for="author"\>Name: \</label\>\<input id="author" type="text"\>\<br\> \<label for="content"\>Message: \</label\>\<input id="content" type="text"\> \<input id="submit" type="button" value="Send"\> \<input id="refresh" type="button" value="Refresh"\> \</div\> \</div\>`;
-
-result();
-\\$('\#refresh').trigger('click');
-
-function nextStep() \{
-let messages = \\$('\#messages').text();
-expect(messages).to.contains('Spami: Hello, are you there?');
-expect(messages).to.contains('Garry: Yep, whats up :?');
-expect(messages).to.contains('Spami: How are you? Long time no see? :)');
-done();
-\}
-
-setTimeout(nextStep, 200);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let response = \{"-LjH4pf4CXxKp9qilNRf": \{ author: "Mowgli", content: "Like you, I was. Like me, you will be.", timestamp: 1562597889447 \}\};
-
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<div id="main"\> \<textarea id="messages" cols="80" rows="12" disabled="true"\>\</textarea\> \<div id="controls"\> \<label for="author"\>Name: \</label\>\<input id="author" type="text"\>\<br\> \<label for="content"\>Message: \</label\>\<input id="content" type="text"\> \<input id="submit" type="button" value="Send"\> \<input id="refresh" type="button" value="Refresh"\> \</div\> \</div\>`;
-
-result();
-\\$('\#author').val('Mowgli');
-\\$('\#content').val('Like you, I was. Like me, you will be.');
-\\$('\#submit').trigger('click');
-
-function testIt() \{
-let messages = \\$('\#messages').text();
-expect(messages).to.contains('Mogli: Like you, I was. Like me, you will be.');
-done();
-\}
-
-setTimeout(testIt, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 
@@ -631,19 +257,6 @@ yes
 
 # Problem: PhoneBook
 
-[code-task title="PhoneBook" taskId="js-applications-rest-services-and-ajax-phoneBook" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function phoneBook(){
-    // Write your code here
-}
-```
-
-[/code-editor]
-[task-description]
-
-# Description
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-04.PHONEBOOK.zip) **for this task.**
 
@@ -688,107 +301,5 @@ The URL to which your program should make requests is: `https://phonebook-nakov.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-22.png" /]
 
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-let response = \{ "guy1": \{ "phone": "+555", "person": "guy" \};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<h1\>Phonebook\</h1\> \<ul id="phonebook"\>\</ul\> \<button id="btnLoad"\>Load\</button\> \<h2\>Create Contact\</h2\> Person: \<input type="text" id="person" /\> \<br\> Phone: \<input type="text" id="phone" /\> \<br\> \<button id="btnCreate"\>Create\</button\>`;
-
-result();
-
-\\$('\#btnLoad').trigger('click');
-
-function checkResults() \{
-let entry = \\$('\#phonebook').find('li');
-expect(entry.eq(0).text()).to.contains('guy');
-expect(entry.eq(0).text()).to.contains('+555');
-expect(entry.eq(0).find('button').length).to.equal(1);
-done();
-\}
-
-setTimeout(checkResults, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-let response = \{person: "Peter", phone: "9993"\};
-let responseObj = \{"status": "200", "Content-Type": "application/json", json: () =\> \{return response\}\};
-
-var fetchStub = sinon.stub(fetch, 'Promise').returns(Promise.resolve(responseObj));
-
-document.body.innerHTML = `\<ul id="phonebook"\>\</ul\> \<button id="btnLoad"\>Load\</button\> Person: \<input type="text" id="person" /\> Phone: \<input type="text" id="phone" /\> \<button id="btnCreate"\>Create\</button\>`;
-
-result();
-
-\\$('\#person').val('Peter');
-\\$('\#phone').val('7777');
-\\$('\#btnCreate').trigger('click');
-
-function checkResults() \{
-expect(\\$('\#person').val()).to.be.empty;
-    expect(\\$('\#phone').val()).to.be.empty;
-done();
-\}
-
-setTimeout(checkResults, 100);
-fetchStub.restore();
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[test]
-[input]
-var isCalled = false;
-
-server.respondWith((request) =\> \{
-if (request.method == 'GET') \{
-request.respond(200, \{"Content-Type": "application/json"\}, '\{ "guy1": \{ "phone": "+555", "person": "guy" \} \}');
-\} else if (request.method == 'DELETE' && request.url.includes("firebaseio.com/phonebook/guy1.json")) \{
-isCalled = true;
-request.respond(200, \{\}, "");
-\} else \{
-request.respond(404, \{\}, JSON.stringify('Not Found'));
-\}
-\});
-server.respondImmediately = true;
-document.body.innerHTML = `\<ul id="phonebook"\>\</ul\> \<button id="btnLoad"\>Load\</button\> Person: \<input type="text" id="person" /\> Phone: \<input type="text" id="phone" /\> \<button id="btnCreate"\>Create\</button\>`;
-
-result();
-
-\\$('\#btnLoad').trigger('click');
-
-function next() \{
-expect(isCalled).to.equal(true,"Delete button did not send the correct DELETE command.")
-done();
-\}
-
-function checkResults() \{
-let entries = \\$('\#phonebook').find('li');
-    expect(entries).to.have.lengthOf(1,'Incorrect ammount of entries');
-    \\$('\#phonebook').find('li').find('button').trigger('click');
-
-    setTimeout(next, 50);
-
-\}
-
-setTimeout(checkResults, 50);
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
