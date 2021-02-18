@@ -103,7 +103,7 @@ We play badminton and win -> 20 euro.
 
 We receive the **Finish** command and the games for the day are over. 
 
-Earned money 20 + 20 + 20 = 60 Euro We have only won games, respectively we increase the money of the day by 10% -> 66 euro.
+Earned money 20 + 20 + 20 = 60 euro. We have only won games, respectively we increase the money of the day by 10% -> 66 euro.
 
 The money earned from the two days: 44 + 66 = 110 euro.
 
