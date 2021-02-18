@@ -101,43 +101,6 @@ To create an object:
 
 ```java
 public class Animal {
-    // fields
-    private String type;
-
-    // constructors
-    public Animal() {
-    }
-
-    public Animal(String type) {
-        this.type = type;
-    }
-
-    // getters and setters
-    public String getType() {
-        return this.type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    // methods
-    public void makeSound() {
-        System.out.println("The animal is making sounds.");
-    }
-
-    // main method
-    public static void main(String[] args) {
-        Animal dog = new Animal("mammal");
-        Animal lizard = new Animal("reptile");
-    }
-}
-```
-
-You can create **multiple objects** out of one class.
-
-```java
-public class Animal {
     public static void main(String[] args) {
         Animal dog = new Animal("mammal");
         Animal lizard = new Animal("reptile");
