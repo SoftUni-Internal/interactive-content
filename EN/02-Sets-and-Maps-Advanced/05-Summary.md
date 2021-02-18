@@ -1,12 +1,12 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
-- What are Sets in Java? 
-    - Unordered collection of objects
-    - Duplicate elements are not allowed
-    - Offers very fast performance
+- What Sets in Java are
+    - unordered collection of objects
+    - duplicate elements are not allowed
+    - offers very fast performance
 - Types of Sets
     - `HashSet<E>`
    ```java
@@ -39,9 +39,9 @@
 
 ## In the next lesson you will learn:
 
-- What Are Exceptions?
-    - The `Exception` Class
-    - Types of Exceptions and Their Hierarchy
+- What Exceptions are
+    - the `Exception` Class
+    - types of Exceptions and Their Hierarchy
 - Handling Exceptions
 - Raising (Throwing) Exceptions
 - Best Practices

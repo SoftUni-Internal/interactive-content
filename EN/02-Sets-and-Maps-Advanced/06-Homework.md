@@ -4,7 +4,7 @@
 # Problem: Unique Usernames
 [code-task title="Unique Usernames" taskId="java-advanced-sets-and-maps-advanced-Unique-Usernames" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
-```
+```java
 import java.util.*;
 
 public class Main {
@@ -16,9 +16,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a simple program that reads from the console a sequence of usernames and keeps a collection with only the unique ones.
+Create a program that reads a sequence of usernames and keeps a collection with only the unique ones.
 
-Print the collection on the console in order of insertion:
+Print the unique usernames on the console in order of insertion. 
 
 ## Examples
 | **Input** | **Output** |
@@ -414,11 +414,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-On the first line, you are given **the length of two sets n and m**.
+On the first line, you will be given **the length of two sets n and m**.
 
 On the **next n + m** lines, there are **n numbers that are in the first set** and **m numbers that are in the second**.
 
-Find all **non-repeating elements** that appear in **both** of them, and print them in **the same order** at the console:
+Find all **non-repeating elements** that appear in **both** of them, and print them in **the same order** to the console:
 
 Set with length `n = 4:{1, 3 , 5 , 7}`
 
@@ -641,9 +641,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given the **n** number of **chemical compounds**.
+You are given an **n** number of **chemical compounds**.
 
-You need to **keep track of all chemical elements** used in the compounds and at the end print all **unique ones in ascending order**.
+You need to **keep track of all the chemical elements** used in the compounds. In the end, print all of the **unique ones in ascending order**.
 
 ## Examples
 | **Input** | **Output** |
@@ -769,7 +769,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that reads some **text** from the console and **counts the occurrences of each character** in it.
+Create a program that reads some **text** and **counts the occurrences of each character** in it.
 
 Print the results in **alphabetical** (lexicographical) order, using the syntax: `{symbol}: {count} time/s`.
 
@@ -980,17 +980,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that receives some info from the console about **people** and their **phone numbers**.
+Create a program that receives some info from the console about **people** and their **phone numbers**.
 
-You are free to choose how the data is entered. Each **entry** should have just **one name** and **one number** (both of them strings). 
+You are free to choose how the data is entered. Each **entry** should have **one name** and **one number** (both of them strings). 
 
-If you receive a name that **already exists** in the phonebook, simply update its number.
+If you receive a name that **already exists** in the phonebook, update its number.
 
-After filling this simple phonebook, upon receiving the **command** `search`, your program should be able to perform a search of contact by name and print the details in the format `{name} -> {number}`. 
+After filling the phonebook, upon receiving the **command** "**search**", your program should be able to perform a search in the contact by name and print the details in the format `{name} -> {number}`. 
 
-In case the contact isn't found, print `Contact {name} does not exist.`
+In case the contact isn't found, print "Contact {name} does not exist."
 
-The program should end when receiving the **command** `stop`.
+The program should end when receiving the "**stop**" command.
 
 ## Examples
 | **Input** | **Output** |
@@ -1164,9 +1164,9 @@ public class Main {
 ## Description
 You are given a sequence of strings, each on a **new line**.
 
-Every **odd** line on the console is representing a **resource** (e.g.
+Every **odd** line represents a **resource** (e.g.
 
-Gold, Silver, Copper, and so on), and every **even - quantity**.
+Gold, Silver, Copper, and so on), and every **even - a quantity**.
 
 Your task is to **collect** the resources and to print them each on a **new line**.
 
@@ -1174,7 +1174,7 @@ Your task is to **collect** the resources and to print them each on a **new line
 
 `{resource} –> {quantity}`
 
-The quantities inputs will be in the **range** \[1 ... 2 000 000 000\]
+The quantity inputs will be in **range** \[1 ... 2 000 000 000\]
 
 ## Examples
 | **Input** | **Output** |
@@ -1427,7 +1427,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a sequence of strings, each on a new line, until you receive the `stop` command.
+You are given a sequence of strings, each on a new line, until you receive the "stop" command.
 
 The first string is a **name** of a person.
 
@@ -1584,29 +1584,31 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a sequence of people and for every person what **cards** he draws from the deck.
+You are given a sequence of people.
 
-The input will be **separate** lines in the **format**:
+Each person draws cards from their deck.
 
-`{personName}: {PT, PT, PT,… PT}`
+The input will be in **separate** lines in the **format**:
 
-Where P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) is the power of the card, and T (S, H, D, C) is the type. The input ends when a `JOKER` is drawn. 
+"{personName}: {PT, PT, PT,… PT}"
 
-The name can contain any ASCII symbol except `:`. 
+Where P (2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A) is the power of the card, and T (S, H, D, C) is the type. The input ends when a "**JOKER**" is drawn. 
 
-The input will always be valid and in the format described, there is no need to check it.
+The name can contain any ASCII symbol except for: "."
 
-A single person **can not have more than one** card with the same power and type, if he draws such a card he **discards** it. 
+The input will always be valid and in the format described.
+
+A single person **can not have more than one** card with the same power and type. If he draws such a card, he **discards** it. 
 
 The people are playing with **multiple decks**. 
 
 Each card has a value that is **calculated** by the power multiplied by the type. 
 
-Powers **2 to 10** have the same value and **J to A** are **11 to 14**. 
+Powers from **2 to 10** have the same value and **J to A** are **11 to 14**. 
 
-Types are mapped to multipliers the following way (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
+Types are mapped to multipliers in the the following format (`S -> 4`, `H-> 3`, `D -> 2`, `C -> 1`).
 
-Finally, print out the **total value each player** has in his hand in the format:
+In the end, print the **total value each player** has in his hand in the format:
 
 `{personName}: {value}`
 
@@ -1698,10 +1700,6 @@ public class Main {
 [task-description]
 ## Description
 
-There is a new type of threat where users flood the server with messages and are hard to be detected since they change their IP address all the time.
-
-Only a skillful programmer can track the user logs of the servers.
-
 You are given input in the format:
 
 `IP=(IP.Address) message=(A&sample&message) user=(username)`
@@ -1753,10 +1751,10 @@ The IP addresses must be split with a comma, and each line of IP addresses must 
 
 ## Constraints
 
-- The number of commands will be in the range [1 ... 50]
+- The number of commands will be in range [1 ... 50]
 - The IP addresses will be in the format of either **IPv4** or **IPv6.**
 - The messages will be in the format: **This&is&a&message**
-- The username will be a string with length in the range \[3 ... 50\]
+- The username will be a string with length in range \[3 ... 50\]
 
 ## Examples
 | **Input** | **Output** |
@@ -2172,17 +2170,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-So many people! It is hard to count them all.
-
-But that is your job as a statistician.
-
-You get raw data for a given city and you need to aggregate it.
-
-On each input line, you will be given data in the format: `city|country|population`. 
+On each input line, you will be given the data in the format: **city|country|population**. 
 
 There will be **no redundant whitespaces anywhere** in the input. 
 
-Aggregate the data **by country and by city** and print it on the console. 
+Aggregate the data **by country and by city** and print it to the console. 
 
 **For each country**, print its **total population** and on separate lines the data for each of its cities. 
 
@@ -2190,31 +2182,23 @@ Aggregate the data **by country and by city** and print it on the console.
 
 If two countries/cities have the same population, keep them in the **order** in which they were **entered**. 
 
-Check out the examples! 
-
-Follow the output **format strictly**!
 
 ## Input
 
-- The input data should be read from the console.
-- It consists of a variable number of lines and ends when the command `report` is received.
-- The input data will always be valid and in the format described. There is no need to check it explicitly.
+- The data consist of a variable number of lines and ends when the "report" command is received
+- The input data will always be valid and in the format described. There is no need to check it explicitly
 
 ## Output
 
-- The output should be printed on the console.
-- Print the aggregated data for each country and city in the format shown below.
+- The output should be printed to the console
+- Print the aggregated data for each country and city in the format shown below
 
 ## Constraints
 
-- The name of the city, country, and the population count will be separated from each other by **a pipe** `|`.
-- The **number of input lines** will be in the range \[2 ... 50\].
-- A city-country pair will not be repeated.
-- The **population count** of each city will be an integer in the range \[0 ... 2 000 000 000\].
-- Allowed working time for your program: 0.1 seconds. 
-
-Allowed memory: 16 MB.
-
+- The name of the city, country, and the population count will be separated from each other by **a pipe** `|`
+- The **number of input lines** will be in range \[2 ... 50\]
+- A city-country pair will not be repeated
+- The **population count** of each city will be an integer in range \[0 ... 2 000 000 000\]
 
 ## Examples
 | **Input** | **Output** |
@@ -2905,7 +2889,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You are given a sequence of access logs in the format 
+Create a program that aggregates the logs of data and print for each user the **total duration** of his sessions and a **list of unique IP addresses** in format 
 
 `< IP > < user > < duration >`.
 
@@ -2934,11 +2918,9 @@ The output should be printed like this:
 
 ## Input
 
-The input comes from the console. 
+On the first line is a number **n** - the count of the following lines. 
 
-At the first line is a number **n** - the count of the following lines. 
-
-Each of the next n lines holds log information in the format 
+The next n lines hold the logged information in the format. 
 
 `< IP > < user > < duration >`. 
 
@@ -2950,7 +2932,7 @@ There is no need to check it explicitly.
 
 Print **single line for each user** (order users alphabetically). 
 
-For each user print, the sum of durations and all of his session IPs ordered alphabetically in format
+For each user print the sum of durations and all of his session IPs ordered alphabetically in format.
 
 `< user >: < duration > [< IP1 >, < IP2 >, ...]`. 
 
@@ -2958,11 +2940,10 @@ Remove any duplicated values in the IP addresses.
 
 ## Constraints
 
-- The **count** of the lines **n** is in the range \[1 ... 1000\].
-- The `< IP >` is a standard IP address in format **a.b.c.d** where **a**, **b**, **c** and **d** are integers in the range [0 ... 255].
-- The `< user >` consists only of **Latin characters**, with length of \[1 .... 20\].
-- The `< duration >` is an integer number in the range \[1 ... 1000\].
-- Time limit: 0.3 sec. Memory limit: 16 MB.
+- The **count** of the lines **n** is in range \[1 ... 1000\]
+- The `< IP >` is a standard IP address in format **a.b.c.d** where **a**, **b**, **c** and **d** are integers in range [0 ... 255]
+- The `< user >` consists only of **Latin characters**, with length of \[1 .... 20\]
+- The `< duration >` is an integer number in the range \[1 ... 1000\]
 
 ## Examples
 
@@ -3388,9 +3369,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-You have beaten all the content and the last thing left to accomplish is to own a legendary item.
+You have beaten all of the content and the last thing left to accomplish is to own a legendary item.
 
-However, it is a tedious process and requires quite a bit of farming.
+However, it is a tedious process and it requires quite a bit of farming.
 
 Anyway, you are not too pretentious - any legendary will do.
 
@@ -3399,7 +3380,7 @@ The possible items are:
 - **Valanyr** - requires **250 Fragments**;
 - **Dragonwrath** - requires **250 Motes**;
 
-**Shards, Fragments**, and **Motes** are the **key materials**, the others are **junk**. 
+**Shards, Fragments**, and **Motes** are the **key materials**, everything else is **junk**. 
 
 You will be given lines of input, such as **2 motes 3 ores 15 stones**. 
 
@@ -3407,36 +3388,34 @@ Keep track of the **key materials** - the **first** that reaches **250 mark wins
 
 At that point, print the corresponding legendary obtained. 
 
-Then, print the **remaining** shards, fragments, motes, ordered by **quantity** in **descending** order, each on a new line. 
+Then, print the **remaining** shards, fragments, motes, ordered by their **quantity** in **descending** order, each on a new line. 
 
 Finally, print the collected **junk** items, in **alphabetic** order.
 
 
 ## Input
 
-- Each line of input is in format 
+- Each line of input is in a specific format: 
 
 `{quantity} {material} {quantity} {material} ... {quantity} {material}`
 
 
 ## Output
 
-- On the first line, print the obtained item in format 
+- On the first line, print the obtained item in the following format: 
 `{Legendary item} obtained!`
 - On the next three lines, print the remaining key materials in descending order by quantity
-  - If two key materials have the same quantity, print them in alphabetical order
+  - if two or more key materials have the same quantity, print them in alphabetical order
 - On the final several lines, print the junk items in alphabetical order
-  - All materials are printed in the format  
+  - all materials should be printed in the format  
   `{material}: {quantity}`
-  - All outputs should be in **lower case**, except the first letter of the legendary
+  - all outputs should be in **lower case**, except the first letter of the legendary
 
 ## Constraints
 
-- The quantity-material pairs are between 1 and 25 per line.
-- The number of lines is in the range \[1 ... 10\]
-- All materials are case-insensitive.
-- Allowed working time: 0.25s
-- Allowed memory: 16 MB
+- The quantity-material pairs are between 1 and 25 per line
+- The number of lines is in range \[1 ... 10\]
+- All materials are case-insensitive
 
 ## Examples
 | **Input** | **Output** |
@@ -3686,7 +3665,7 @@ His favorite units in the game are all **types** of dragons - black, red, gold, 
 
 He likes them so much that he gives them **names** and keeps logs of their **stats** : **damage, health**, and **armor**.
 
-The process of aggregating all the data is quite tedious, so he would like to have a program doing it.
+The process of aggregating all of the data is quite tedious, so he would like to have a program doing it.
 
 Since he is no programmer, it is your task to help him.
 
@@ -3694,11 +3673,11 @@ You need to categorize dragons by their **type**.
 
 For each dragon, identified by **name**, keep information about his **stats**. 
 
-Type is **preserved** in the order of the input but dragons are **sorted** alphabetically by name. 
+Type is **preserved** in the order of the input but the dragons are **sorted** alphabetically by name. 
 
 For each type, you should also print the average **damage**, **health**, and **armor** of the dragons. 
 
-For each dragon, print his own stats.
+For each dragon, print its own stats.
 
 There **may** be **missing** stats in the input, though. 
 
@@ -3718,30 +3697,30 @@ See the examples below for a better understanding of the task.
 
 If the same dragon is added a second time, the new stats should **overwrite** the previous ones. 
 
-Two dragons are considered **equal** if they match by **both** name and type.
+Two dragons are considered **equal** if they match by **both** in name and in type.
 
 ## Input
 
 - On the first line, you are given **number N** - the number of dragons
-- On the **next N lines** you are given **input** in the **above described** format. There will be a single space separating each element.
+- On the **next N lines**, you will be receiving inputs in the **above described** format. There will be a single space separating each element. 
 
 ### Output
 
 - Print the aggregated data on the console
-- For each type, print average stats of its dragons in format 
+- For each type, print the average stats of its dragons in format 
 
 `{Type}::({damage}/{health}/{armor})`
 
-- Damage, health, and armor should be rounded to two digits after the decimal separator
-- For each dragon, print its stats in format 
+- Damage, health, and armor should be rounded to the 2nd digit after the decimal separator
+- For each dragon, print its stats in the following format 
 
 `-{Name} -> damage: {damage}, health: {health}, armor: {armor}`
 
 ### Constraints
 
-- N is in the range \[1 ... 100\]
+- N is in range \[1 ... 100\]
 - The dragon type and name are one word only, starting with a capital letter.
-- Damage health and armor are integers in the range \[0 ... 100000\] or **null**
+- Damage health and armor are integers in range \[0 ... 100000\] or **null**
 
 ## Examples
 | **Input** | **Output** |
