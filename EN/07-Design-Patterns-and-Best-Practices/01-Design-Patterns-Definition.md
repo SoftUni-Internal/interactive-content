@@ -199,8 +199,6 @@ They are not set in stone and, if a pattern does not work for you, you can alway
 
 # Drawbacks of Design Patterns
 
-[image assetsSrc="js-application-design-patterns-12.jpg" /]
-
 - Design patterns come with consequences and, if applied incorrectly or without regard to how the application might change in the future, they can cause problems
 
 - Patterns do not provide us with а concrete code to use, they simply provide a possible approach to take when designing applications
