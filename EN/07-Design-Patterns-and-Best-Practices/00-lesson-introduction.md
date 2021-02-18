@@ -8,7 +8,7 @@
 
 ## In this lesson you will learn:
 
-**1. What is a Pattern?** 
+**1. What a Pattern is** 
 
 - Why are patterns used in coding and how they improve code quality
 

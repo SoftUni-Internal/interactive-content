@@ -147,7 +147,7 @@ performAction(toyota);
 
 ```
 
-If you were to use a decorator on top of the Car object in the above example then the check form **instanceof** would return false and the code in the **else** block would be executed, which might not be the intended behavior.
+If you were to use a decorator on top of the Car object in the above example then the check form **instance of** would return false and the code in the **else** block would be executed, which might not be the intended behavior.
 
 [/slide]
 
@@ -282,7 +282,7 @@ This is a pattern in which an object called **subject** maintains a list of depe
 
 The **Observer** pattern facilitates a good object-oriented design and promotes loose coupling.
 
-# Common Participants
+## Common Participants
 
 [image assetsSrc="js-application-design-patterns-15.png" /]
 
@@ -294,7 +294,7 @@ Sends notifications to the observers attached to it.
 
 - **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state
 
-# Concept 
+## Concept 
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
@@ -325,7 +325,9 @@ An example of this would be on sites like YouTube where you can subscribe to oth
 | add and remove observers at any time |  |
 | **loose coupling** between subject and observer |  |
 
-By using the observer pattern we introduce **loose coupling** between the subject and its observers. The subject is only aware of the collection of observers it maintains but is not concerned with the concrete implementation of the observers.
+By using the observer pattern we introduce **loose coupling** between the subject and its observers. 
+
+The subject is only aware of the collection of observers it maintains but is not concerned with the concrete implementation of the observers.
 
 Changes can be broadcast to any number of observers, although the order in which the notifications are sent can be unpredictable, which might lead to problems.
 

@@ -11,7 +11,9 @@ These patterns are not necessarily unique to the language you are using.
 
 Rather, they are design principles that can be applied almost universally.
 
-**Design patterns** improve code reusability, readability, and help avoid the need for extensive refactoring. They are already proven, optimized, short solutions to given problems. 
+**Design patterns** improve code reusability, readability, and help avoid the need for extensive refactoring. 
+
+They are already proven, optimized, short solutions to given problems. 
 
 They are not complete solutions but rather tried and tested approaches to solving problems and writing elegant implementations.
 
@@ -25,7 +27,7 @@ They save time spent on software architecture as they provide guidelines on how 
 
 Understanding and using **design patterns** helps facilitate better communication n between developers, providing a common language with terms that are understood universally by people in the software development field.
 
-"Each pattern describes a problem which occurs over and over again in our environment and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it in the same way twice." - Christopher Alexander (1977), A Pattern Language: Towns, Buildings, Construction.
+*Each pattern describes a problem that occurs over and over again in our environment and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it in the same way twice.* - Christopher Alexander (1977), A Pattern Language: Towns, Buildings, Construction.
 
 [/slide]
 
@@ -37,7 +39,7 @@ Understanding and using **design patterns** helps facilitate better communicatio
 Design patterns can be divided into three categories:
 - **Creational**: deal with object creation
 - **Structural**: deal with the relationships between entities
-- **Behavioral**: describe the interaction between objects that are not similar and the division of responsibilities among them.
+- **Behavioral**: describe the interaction between objects that are not similar and the division of responsibilities among them
 
 [/slide]
 
