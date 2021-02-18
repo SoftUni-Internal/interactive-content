@@ -7,7 +7,7 @@
 [stream language="EN" videoId="431769465" default /]
 [/video-vimeo]
 
-After specifying the type, you can then target a media feature with a **rule**.
+After specifying the type, we can then target a media feature with a **rule**.
 
 ## Width and Height
 
@@ -63,7 +63,7 @@ To change the body text color if the device is in landscape orientation:
 [stream language="EN" videoId="431769630" default /]
 [/video-vimeo]
 
-`hover` is used to querying the user’s ability to **hover** over elements on the page with the primary pointing device:
+`hover` is used to query the user’s ability to **hover** over elements on the page with the primary pointing device:
 
 * `hover: hover;` - hover over elements with ease;
 * `hover: none;` - can’t hover over elements.
