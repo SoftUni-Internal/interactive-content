@@ -97,8 +97,7 @@ yes
 * Use **p** tags for each line of the text
 * See the screenshot and use **strong** and **em** tags where needed
 
-[image assetsSrc="02.intro-to-html-tags-cardio-paragraphs.png" /]
-
+// ДА СЕ СЛОЖИ СНИМКА В РЕСУРСИТЕ
 You can download the resources [here](https://mega.nz/file/3Qp2hQTT#uc-eYG1FPqQ5sm9sKl4XIqJRUVcA6tAoNvBuhtPwJ4Q)
 
 [/task-description]
