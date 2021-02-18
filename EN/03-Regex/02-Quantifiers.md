@@ -135,10 +135,10 @@ When we are dealing with complex regular expressions, this can be very helpful.
 The pipe symbol `|` in the example means logical "or".
 
 ```js live
-    const regex = /(?:Jane|John|Alison)\s(.*?)\s(?:Smith|Smuth)/;
-    const result = regex.exec('Jane Isabell Smith');
-    console.log(result[0]);
-    console.log(result[1]);
+let regex = /(?:Jane|John|Alison)\s(.*?)\s(?:Smith|Smuth)/;
+let result = regex.exec('Jane Isabell Smith');
+console.log(result[0]);
+console.log(result[1]);
 ```
 [/slide]
 
