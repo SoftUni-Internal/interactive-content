@@ -5,19 +5,19 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Workshop_SoftWiki_resouces.zip) **for this task.**
 
-You are assigned to implement a **Web application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON with cloud\-based backend \(Firebase or Kinvey\).
+In this workshop, we are going to create a **Single Page Application** (SPA) using HTML5, JavaScript, AJAX, REST, and JSON as well as utilizing a cloud-based backend (**Firebase** or **Kinvey**). 
 
-Using libraries like **jQuery**, **lit-html** and **PageJs** is allowed but is **not obligatory**.
+Using libraries like **jQuery**, **lit-html** and **Page.js** is allowed but is **not obligatory**.
 
-The app keeps **users** and **articles**.
+The app must maintain information **about** users and **articles**. 
 
-**Users** should be able to **register** and **login**.
+**Users** should be able to **register** and **login** to the application.
 
-Logged\-in users should be able to view all articles, create articles, see details about an article, and **logout**.
+Logged-in users should be able to view all of the articles, create articles, see details about an article, and **logout**. 
 
-Logged\-in users should also be able to edit or delete the articles they have created. Create a Firebase REST Service.
+Logged-in users should also be able to edit or delete the articles that they have created. 
 
-Register at [Firebase](https://firebase.google.com) and create an application to keep your data in the cloud.
+Create a Firebase REST Service. 
 
 Create a collection called **articles**.
 
@@ -35,7 +35,7 @@ Then go to the **rules** and **edit** them to look like this:
 [slide hideTitle]
 # Test the Firebase REST Services
 
-Using **Postman** or other HTTP client tool, test the REST service endpoints:
+Using **Postman** or any other HTTP client tool, test the REST service endpoints:
 
 ## List All Articles
 
@@ -121,48 +121,41 @@ Using **Postman** or other HTTP client tool, test the REST service endpoints:
 [/slide]
 
 [slide hideTitle]
-# The SoftWiki - HTML and CSS
+# HTML and CSS
 
 You have been given the web design of the application as **HTML** \+ **CSS** files.
 
-- Initially, all views and forms are shown by the HTML. 
+- Initially, all of the views and the forms are shown in the HTML file
 
-Your application may **hide/show elements** by CSS **(display: none)** or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
+Your application may **hide/show** elements using CSS (**display: none**) or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed. 
 
 - You may render the views/forms/components with **JavaScript** or **lit-html**.
 
 ## Important
 
-Do not change the elements' class names and ids.
+Do not change the elements' class names and IDs. 
 
-Do not rename form fields/link names/ids.
+Do not rename the form fields/link names/ids. 
 
-You are **allowed** to add **data attributes** to any elements.
+You **are allowed** to add **data attributes** to any elements. 
 
-You may modify **href attributes** of links and add **action/method** **attributes** to **forms**, to allow the use of a routing library.
+You may modify the **href attributes** of the links and add **actions/method** **attributes** to **the forms**, to allow the use of a routing library. 
+
 
 [/slide]
 
 [slide hideTitle]
-# The SoftWiki: Client-Side Web Application
-
-**Design** and **implement** a client\-side front-end app (SPA) for managing articles. 
-
-Implement the functionality described below.
-
-## Navigation Bar (5 Pts)
+# Navigation Bar (5 Pts) 
 
 Navigation links should correctly change the current page (view).
 
-- Clicking on the links in the **Header** should display the view behind the link (views are represented as sections in the HTML code).
+- Clicking on the buttons on the navigation bar should display the view behind the link (views are represented as sections in the HTML code)
 
-- Your application may **hide/show elements** by CSS (**display**: **none**) or **delete/reattach** from and to the DOM all unneeded elements, or just display the views it needs to display.
-
-The Logged-in user navbar should contain the following elements: `[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
+The Logged-in user navbar should contain the following elements: m`[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
 
 [image assetsSrc="js-application-exam-4.png" /]
 
-- The guest users header should contain the following elements:  `[SoftWiki]` which is a link to the Login page and `[Register]`.
+- The guest users header should contain the following elements: `[SoftWiki]` which is a link to the Login page and `[Register]`.
 
 [image assetsSrc="js-application-exam-5.png" /]
 
@@ -170,23 +163,23 @@ The Logged-in user navbar should contain the following elements: `[SoftWiki]` wh
 [slide hideTitle]
 # Register User (5 Pts)
 
-By given **email** and **password**, the app should register a new user in the system and should **redirect you to the home page.**
+The app should register a new user in the system using their **email** and **password** credentials and should redirect the user to the home page.
 
-- Keep the user local data in the browser's **local/session storage.**
-
-Register once and create/read awesome articles!
+- Keep the user local data in the browser's **local/session storage**
 
 [image assetsSrc="js-application-exam-6.png" /]
 
-## Login User / Guest Home Page (5 Pts)
+[/slide]
 
-By given **email** and **password**, the app should log in as an existing user.
+[slide hideTitle]
 
-- Keep the user's local data in the browser's local storage.
+# Login User / Guest Home Page (5 Pts)
 
-- After a successful login **redirect to the home page.**
+ Тhe app should log in an existing user using **their email** and **password**. 
 
-You are one step away from awesome articles!
+- Keep the user's local data in the browser's local storage
+
+- After a successful login **redirect to the home page**
 
 [image assetsSrc="js-application-exam-7.png" /]
 [/slide]
@@ -194,9 +187,9 @@ You are one step away from awesome articles!
 [slide hideTitle]
 # Home Page (40 Pts)
 
-Successfully logged-in users should be welcomed by the **Home page.**
+Successfully logged-in users should be welcomed when entering the **Home page**. 
 
-They should be able to see all created articles.
+They should be able to see all of the created articles. 
 
 [image assetsSrc="js-application-exam-8.png" /]
 
@@ -205,20 +198,21 @@ If there are **NO** such articles, the following view should be displayed:
 [image assetsSrc="js-application-exam-9.png" /]
 
 [/slide]
+
 [slide hideTitle]
 # Create Article (10 Pts)
 
 Logged-in users should be able to create articles.
 
-Clicking the `[Create]` link in the **NavBar** should display the **Create Article page.**
+Clicking on the `[Create]` button, on **NavBar**, should display the **Create Article page.**
 
 - **By default**, every newly created article must have additional information:
 
-  - **Creator:** the email of the current user;
+  - **Creator:** the email of the current user
 
-- The newly organizer article should be stored in the Firebase\Kinvey collection `articles`.
+- The newly created article should be stored in the Firebase\Kinvey collection "articles"
 
-- After an article is created successfully you should be redirected to the **Home Page.**
+- After an article is created successfully, the application should be redirect to the **Home Page** 
 
 [image assetsSrc="js-application-exam-10.png" /]
 [/slide]
@@ -226,11 +220,13 @@ Clicking the `[Create]` link in the **NavBar** should display the **Create Artic
 [slide hideTitle]
 # Details (15 Pts)
 
-Logged-in users should be able to **view details** about articles.
+Logged-in users should be able to **view the details** about the articles.
 
-Clicking the `[Details]` link in of a **particular article** should **display** the **Article Details page.**
+Clicking on the `[Details]` button of a **particular article**, should **display** the **Article Details page.**
 
-- If the currently logged-in user is the creator of the article, the `[Edit]` and `[Delete]` **buttons** should be set to **visible**, otherwise there should be only 1 button `[Back]` which redirects to the Home Page.
+- If the currently logged-in user is the creator of that article, the `[Edit]` and `[Delete]` **buttons** should be set to **visible**. 
+
+Otherwise there should be only 1 button, `[Back]`, which redirects to the Home Page.
 
 [image assetsSrc="js-application-exam-11.png" /]
 
@@ -243,9 +239,9 @@ Clicking the `[Details]` link in of a **particular article** should **display** 
 
 Logged-in users should be able to **edit** their **own** articles.
 
-Clicking the `[Edit]` link of a **particular article** on the **Details page** should display the **Edit page:**
+Clicking the `[Edit]` button of a **particular article** (on the Details page) should display the **Edit page:**
 
-- After a successful edit the user should be redirected to the Home page.
+- After successfully editing an article, the user should be redirected to the **Home page**
 
 [image assetsSrc="js-application-exam-13.png" /]
 [/slide]
@@ -253,14 +249,17 @@ Clicking the `[Edit]` link of a **particular article** on the **Details page** s
 [slide hideTitle]
 # Delete Article (5 Pts)
 
-Logged-in users should be able to delete their articles.
+Logged-in users should be able to delete their own articles.
 
-Clicking the `[Delete]` **link** of an article (on the **Details page**) should **delete** the **article.**
+Clicking the `[Delete]` **button** of an article (on the **Details page**) should **delete** the **article.**
 
-- After **successful article delete** you should show the **Home page.**
+- After successfully deleting an **article**, the user should be redirected to the **Home page**
 
+[/slide]
+
+[slide hideTitle]
 ## (BONUS) Sorting:  (5 Pts)
 
-The articles in the **home page** (for registered users), should be sorted in **descending** order by **title.**
+The articles, on in the **home page** (for the registered users), should be sorted in **descending** order by their **title.**
 
 [/slide]
