@@ -43,8 +43,8 @@
     }
     ```
 - Best Practices
-    - Using a Catch Block
-    - Choosing the right Exception Type 
+    - using a Catch Block
+    - choosing the right Exception Type 
 
 ## In the next lesson, you will learn:
 
