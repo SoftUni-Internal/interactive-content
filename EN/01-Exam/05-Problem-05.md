@@ -69,7 +69,7 @@ The percentage must be formatted to two decimal places.
 | W |  |
 
 ### Comments
-- The name of our team is Liverpool.
+- The name of our team is Liverpool
 - It has played 10 games during the season:
 - 5 won * 3 points = 15 points
 - 4 scored even * 1 points = 4 points
