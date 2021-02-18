@@ -32,7 +32,7 @@ The first flex item in the code does not have to appear as the first item in the
 
 * `order: 1;` - The order is relative to the flexbox item's siblings. 
 
-The final order is defined when all individual flexbox item order values are taken into account;
+The final order is defined when all individual flexbox items order values are taken into account;
 
 **Example** for `order: 1;`
 
@@ -64,7 +64,7 @@ The final order is defined when all individual flexbox item order values are tak
 
 [/html]
 
-* `order: 9;` - Each item can have different order to appear on the needed place; 
+* `order: 9;` - Each item can have a different order to appear on the needed place; 
 
 **Example** for `order: 9;`
 
@@ -129,7 +129,7 @@ This property has two possible values:
 [stream language="EN" videoId="431768150" default /]
 [/video-vimeo]
 
-* `flex-shrink: 0;` - The element will **not shrink** it will retain the width it needs, and **not wrap** its content. Its siblings will shrink to give space to the target element.
+* `flex-shrink: 0;` - The element will **not shrink**. It will retain the width it needs, and **not wrap** its content. Its siblings will shrink to give space to the target element.
 
 If the target element will not wrap its content, there is a chance for the flexbox container's content to **overflow**;
 
@@ -162,7 +162,7 @@ The `flex-basis` property defines the initial size of a flexbox item.
 [stream language="EN" videoId="431768224" default /]
 [/video-vimeo]
 
-* `flex-basis: 80px;` - You can define **pixel** or **(r)em** values. The element will wrap its content to avoid any overflow.
+* `flex-basis: 80px;` - We can define **pixel** or **(r)em** values. The element will wrap its content to avoid any overflow.
 
 **Example:**
 [html]
