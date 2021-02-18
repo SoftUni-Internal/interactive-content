@@ -41,7 +41,7 @@ It consists of:
 * An **initialization part** for the counter (in the pattern `int i = 0`)
 * A **boolean** condition (`i < 10`)
 * An expression for **updating** the counter (``i += 1``)
-* Body of the loop.
+* Body of the loop
 
 In most cases a `for` loop is run between `1` and `n` times (for example from 1 to 10). 
 
