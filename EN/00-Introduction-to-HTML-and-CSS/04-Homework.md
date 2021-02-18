@@ -28,11 +28,11 @@
 [task-description]
 ## Description
 
-* Create an HTML document.
+* Create an HTML document
 * Change the **title** of the document to *Simple HTML Page* 
 * Use the **paragraph** tag for plain text and the **strong** tag for bold text
 
-You can find an example view [here](https://i.imgur.com/k58mFsI.png)
+You can find an example view [here](https://i.imgur.com/k58mFsI.png) // ТОВА ТРЯБВА ДА СЕ СМЕНИ СЪС СНИМКА
 
 [/task-description]
 
