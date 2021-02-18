@@ -69,7 +69,7 @@ try {
 
 # Handling all Exceptions
 
-- Unmanaged code can throw **other exceptions**.
+- Unmanaged code can throw **other exceptions**
 
 For **handling all exceptions** (even unmanaged) use the construction:
 
@@ -138,7 +138,7 @@ The **finally block** gives us a chance to run the code which we want to execute
 
 [slide hideTitle]
 
-# Problem: Square Root
+# Problem with Solution: Square Root
 
 Write a program that reads an integer **number** and **calculates** and **prints** its **square root**.
 
@@ -150,20 +150,10 @@ Use **try-catch-finally.**
 
 [/slide]
 
-[slide hideTitle]
-
-# Solution: Square Root
-
-**TODO: Take the solution from Dimo's presentation because it is the same.**
-
-```java live
-
-```
-[/slide]
 
 [slide hideTitle]
 
-# Problem: Enter Numbers
+# Problem with Solution: Enter Numbers
 
 Write a method **printNumbers(int start, int end)** that prints integer numbers in a given range **\[start...end\]**. 
 
@@ -175,21 +165,10 @@ If the user enters an invalid number, make the user enter all of them again.
 
 [/slide]
 
-[slide hideTitle]
-
-# Solution: Enter Numbers
-
-**TODO: Take the solution from Dimo's presentation because it is the same.**
-
-```java live
-
-```
-
-[/slide]
 
 [slide hideTitle]
 
-# Problem: Fixing
+# Problem with Solution: Fixing
 
 This program is throwing an **ArrayIndexOutOfBoundsException**. 
 
@@ -199,32 +178,8 @@ Using your skills, fix this problem using a try-catch block.
 
 public static void main(String[] args) {
    Scanner scanner = new Scanner (System.in);
-   String[] weekdays = new String[5];
-
-   weekdays[0] = "Monday";
-   weekdays[1] = "Tuesday";
-   weekdays[2] = "Wednesday";
-   weekdays[3] = "Thursday";
-   weekdays[4] = "Friday";
-
-   for (int i = 0; i <= weekdays.lenght; i++) {
-      System.out.println(weekdays[i]);
-   }
    
-   scanner.nextLine();
 }
-
-```
-
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Fixing
-
-**TODO: Take the solution from Dimo's presentation because it is the same.**
-
-```java live
 
 ```
 

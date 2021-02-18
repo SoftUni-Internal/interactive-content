@@ -11,7 +11,7 @@ They are used to notify the calling code in case of an error or unusual situatio
 **When we have an exception:**
 - The program execution stops
 - The exception travels over the stack
-   - Until a matching catch block is reached to handle it
+   - until a matching catch block is reached to handle it
    
 Unhandled exceptions display an error message.
 
@@ -21,7 +21,7 @@ Unhandled exceptions display an error message.
 
 # Using Throw Keyword
 
-- Throwing an exception with an error message:
+- Throwing an exception with an error message
 
 ```java
 throw new IllegalArgumentException("Invalid amount!");
@@ -76,19 +76,13 @@ public static void main(String[] args) {
 
 [slide hideTitle]
 
-# Problem: Valid Person
+# Problem with Solution: Valid Person
 
 Define a simple class **Person**, which has the following fields:
 
  **first name**, **last name** and **age.**
 
 **Validate** the data in the **setters**, **throw** appropriate **exceptions** in case invalid data is entered.
-
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Valid Person
 
 - **Step 1: Create a Class Person**
 
@@ -209,4 +203,6 @@ try {
 // Result in console:
 // Exception thrown: The first name cannot be null or empty
 ```
+
 [/slide]
+

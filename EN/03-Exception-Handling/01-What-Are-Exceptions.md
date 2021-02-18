@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Exceptions: Defenition
+# Exceptions: Definition
 
 An exception is an event, which occurs during the execution of a program.
 
@@ -39,12 +39,12 @@ It can also contain a message string that gives more information about the error
 Below **Throwable** are:
 
 - **Exception**
-    - Used for exceptional conditions that user programs should catch
-    - User-defined exceptions
+    - used for exceptional conditions that user programs should catch
+    - user-defined exceptions
 
 - **Error**
-    - Not expected to be caught under normal circumstances from the program
-    - Example - "StackOverflowError"
+    - not expected to be caught under normal circumstances from the program
+    - example - "StackOverflowError"
 
 [/slide]
 
@@ -55,7 +55,7 @@ Below **Throwable** are:
 **Exceptions** are two types:
 
 - **Checked** - an exception that is checked (notified) by the compiler at compilation-time
-    - Also called **Compile Time exceptions**
+    - also called **Compile Time exceptions**
 
 ```java 
   public static void main(String args[]) {

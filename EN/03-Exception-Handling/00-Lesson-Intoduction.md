@@ -5,7 +5,7 @@
 
 ## In this lesson you will learn:
 
-**1. What Are Exceptions?**
+**1. What Exceptions are**
 
 - The Exception Class
 

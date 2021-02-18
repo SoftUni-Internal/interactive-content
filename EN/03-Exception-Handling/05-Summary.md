@@ -1,11 +1,11 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
-- What are Exceptions in Java? 
-    - Exception Hierarchy
-- How to Hanlde Exception?
+- What Java exceptions are
+    - exception Hierarchy
+- How to Handle Exception
     - try-catch Constructor
     ```java 
     try {
@@ -24,7 +24,7 @@
     }
     ```
 
-- How to Raising (Throwing) Exceptions
+- How to Raise (Throw) Exceptions
     - Using Throw Keyword
     ```java
     try {
@@ -49,10 +49,10 @@
 ## In the next lesson, you will learn:
 
 - What is Debugging?
-    - Working with Debugging tools (`debuggers`)
-    - Importance of Debugging
+    - working with Debugging tools (`debuggers`)
+    - importance of Debugging
 - Working with **IntelliJ IDEA Debugger**
-    - Breakpoints
+    - breakpoints
 - Data Inspection
 
 [/slide]
