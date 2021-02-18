@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Exam Preparation: Shoe Shelf SPA
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Js-Applications-Exam-prep.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Exam_Preparation_ShoeShelf_Resourses.zip) **for this task.**
 
 You are assigned to implement a **Single Web Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** with cloud-based backend ([Firebase](https://firebase.google.com), **Backendless** or other).
 
