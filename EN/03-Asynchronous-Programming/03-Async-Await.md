@@ -50,7 +50,7 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 
 [slide hideTitle]
 
-# Async/Await vs Promise.then
+# "Async"/"Await" vs "Promise.then"
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-20-Async-Await-vs-Promise.then()-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -90,7 +90,7 @@ async function getDbInfo(url) {
 }
 ```
 
-It is important to note that async functions are written **on top of promises** as a way to **ease the process of writing asynchronous code**.
+It is important to note that **async** functions are written **on top of promises** as a way to **ease the process of writing asynchronous code**.
 
 Both examples above **do the same job**, the difference is just in **code readability**.
 
@@ -172,7 +172,7 @@ serialFlow();
 
 Sequential execution is best used when **the functions below rely on the data that is being fetched**.
 
-This way **going inside the given function with an undefined variable is impossible**.
+This way, **going inside the given function with an undefined variable is impossible**. 
 [/slide]
 
 [slide hideTitle]
@@ -181,7 +181,7 @@ This way **going inside the given function with an undefined variable is impossi
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-23-Concurrent-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When the `await` keyword is omitted, operations run **concurrently** or independently from one another.
+When the **await** keyword is omitted, operations run **concurrently** or **independently** from one another.
 
 Here is the code from the previous example, but with **concurrent** execution:
 

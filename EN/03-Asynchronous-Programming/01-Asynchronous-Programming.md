@@ -24,7 +24,8 @@ Here is how the whole process happens:
 
 As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
 
-In simpler words - chunks of code are executed **one at a time**. 
+
+In other words - chunks of code are executed **one at a time**. 
 
 This way each of those chunks must wait for the previous one to be finished.
 
@@ -112,7 +113,7 @@ What happens here is that the code is executed **line by line**:
 
 - Firstly, "Jessica" is printed
 
-- After that the callback function `printSam` is **scheduled to run after three seconds**
+- After that, the callback function `printSam` is **scheduled to run after three seconds** 
 
 - "Tyson" is printed since `printSam`'s three seconds **have not yet passed**
 
@@ -122,7 +123,7 @@ What happens here is that the code is executed **line by line**:
 
 - Three seconds pass and `printSam` is executed
 
-If the same code were executed synchronously, the names would be in the following order:
+If the same code was executed synchronously, the names would be in the following order:
 
 - Jessica
 

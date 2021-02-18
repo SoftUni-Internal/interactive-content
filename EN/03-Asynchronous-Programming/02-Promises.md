@@ -12,17 +12,17 @@ Since the information **does not arrive immediately**, the whole function **must
 
 Synchronously getting resources from a database, for example, can **block an entire web page**.
 
-Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to ** carry on with the execution**.
+Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carry on with the execution**.
 
 These states are:
 
-- `Fulfilled` - The operation was completed with success
+- **Fulfilled** - The operation was completed with success
 
-- `Rejected` - The operation has failed
+- **Rejected** - The operation has failed
 
-- `Pending` - This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected
+- **Pending** - This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected
 
-Promises are initialized with the `Promise` object;
+Promises are initialized with the **Promise** object.
 
 ```js
 new Promise(executor);
@@ -30,7 +30,7 @@ new Promise(executor);
 
 Promises can also be **chained together**.
 
-This way the first promise **passes information about the process** to the second one, which reacts accordingly and so on...
+This way, the first promise **passes information about the process** to the second one, which reacts accordingly and so on...
 
 Here is a visual representation of the chaining process:
 
@@ -46,7 +46,7 @@ Here is a visual representation of the chaining process:
 
 Promises offer a variety of useful methods for an easy and effective work process:
 
-- `Promise.reject(reason)` - Returns a `Promise` object, that has been **rejected for a specific reason**
+- `Promise.reject(reason)` - Returns a **Promise** object that has been rejected for a specific reason
 
 ```js live
 Promise.reject("There was an error!").then(
@@ -114,7 +114,7 @@ Promise.allSettled([firstPromise, secondPromise]).then((data) => {
 });
 ```
 
-- `Promise.race(iterable)` - Takes an array of promises and after the first one is **either resolved or rejected**, returns a `Promise` object that resolves or rejects with its value.
+- `Promise.race(iterable)` - Takes an array of promises and after the first one is either resolved or rejected, returns a Promise object that resolves or rejects with its value
 
 
 ```js live
@@ -141,7 +141,7 @@ Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.finally(function)`: Takes a callback function to be executed **after the promise is settled**.
+- `Promise.finally(function)`: Takes a callback function to be executed after the promise is settled
 
 ```js live
 Promise.resolve("Operation succeeded!")

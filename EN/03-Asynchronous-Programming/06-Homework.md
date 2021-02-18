@@ -6,13 +6,13 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Asynchronous-Programming-Homework-01.Forecaster.zip) **for this task.**
 
-Write a program that **requests** a weather report **from a server** and **displays** it to the user.
+Create a program that **requests** a weather report **from a server** and **displays** it to the user.
 
 **Use the skeleton from the provided resources.**
 
 When the user writes the name of a location and clicks `Get Weather`, make a **GET** request to the server at address https://judgetests.firebaseio.com/locations.json.
 
-The response will be an array of objects, with the following structure:
+The response will be an array of objects with the following structure: 
 
 ```js
 {
@@ -57,7 +57,7 @@ Use the information from these two objects to compose a forecast in HTML and ins
 
 Note that the `<div`> with ID "**forecast**" must be set to **visible**. See the examples for details.
 
-If an **error** occurs (the server doesn’t respond or the location name cannot be found) or the data is not in the correct format, display `Error` in the **forecast section**.
+If an **error** occurs (the server does not respond or the location name cannot be found) or the data is not in the correct format, display `Error` in the **forecast section**.
 
 Use the following codes for weather symbols:
 
@@ -69,7 +69,9 @@ Use the following codes for weather symbols:
 
 # Examples
 
-When the app starts, the **forecast div** is **hidden**. When the user **enters a name** and **clicks** on the button **Get Weather**, the requests being.
+When the app starts, the **forecast div** is **hidden**. 
+
+When the user **enters a name** and **clicks** on the button **Get Weather**, the requests being.
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-1.jpg" /]
 

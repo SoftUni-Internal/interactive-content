@@ -4,7 +4,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Asynchronous-Programming-Lab-Resources.zip) **for this task.**
 
-Write a program for reading blog content.
+Create a program for reading blog content.
 
 It needs to make **requests** to the **server** and display **all blog posts** and their **comments**.
 
@@ -51,9 +51,9 @@ Create an `<option>` for each post using its **object key** as value and **curre
 
 When the button with ID "**btnViewPost**" is clicked, a **GET** request should be made to:
 
-- `/posts/{postId}` to obtain the selected post (from the dropdown menu with ID "**posts**") - The following **request** will return a **single object** as described above.
+- `/posts/{postId}` to obtain the selected post (from the dropdown menu with ID "**posts**") - The following **request** will return a **single object** as described above
 
-- `/comments`: to obtain all comments. 
+- `/comments`: to obtain all comments
 
 The request will **return** an **Object of objects**.
 
