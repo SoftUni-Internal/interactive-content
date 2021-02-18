@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You already know how to store single data in one variable. Arrays allow us to store multiple data, again, in only one variable.
 
 Arrays are useful for preserving a sequence of data and iterating over it.
@@ -40,6 +42,8 @@ You are going to learn about these structures in the following courses.
 
 [slide hideTitle]
 # Working with Arrays
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Arrays are used for storing multiple values in a single variable, instead of declaring separate variables for each value.
 
@@ -95,7 +99,10 @@ If we try to access the element on an invalid index, we get an exception.
 [/slide]
 
 [slide hideTitle]
-# Problem: Day of Week
+# Problem with Solution: Day of Week
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-6-7-problem-and-solution-day-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Problem: Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -233,142 +240,10 @@ Invalid day!
 [/slide]
 
 [slide hideTitle]
-# Solution: Day of Week
-[code-task title="Solution: Day of Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-import java.util.Scanner;
+# Problem with Solution: Sum Even Numbers
 
-public class TestTech {
-    public static void main(String[] args) {
-        // Write your solution here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Enter a **day number** \[1…7\] and print the **day name** \(in English\) or **`Invalid day!`**.
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-sum-even-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Use an **array of strings**.
-
-## Examples
-|**Input**|**Output**|
-|-----|------|
-| 1 | Monday |
-| 2 | Tuesday |
-| 7 | Sunday |
-| 0 | Invalid day! |
-
-### Hints
-* Use an array of strings holding the day names: \{`Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`\}.
-
-* Print the element at index \(day-1\) when it is in the range \[1…7\] or `Invalid Day!` otherwise.
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-1
-[/input]
-[output]
-Monday
-[/output]
-[/test]
-[test open]
-[input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test open]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test open]
-[input]
-0
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-3
-[/input]
-[output]
-Wednesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
--150
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Sum Even Numbers
 [code-task title="Problem: Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -379,102 +254,6 @@ public class Main {
     public static void main(String[] args) {
         // Write your code here
     }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Read an array from the console and sum only the even numbers.
-
-## Examples
-|**Input**|**Output**|**Comments**|
-|-----|------|------|
-| 1 2 3 4 5 6 | 12|
-| 3 5 7 9 | 0 |
-| 2 4 6 8 10 | 30|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-1 2 3 4 5 6
-[/input]
-[output]
-12
-[/output]
-[/test]
-[test open]
-[input]
-3 5 7 9
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test open]
-[input]
-2 4 6 8 10
-[/input]
-[output]
-30
-[/output]
-[/test]
-[test]
-[input]
-1 1 1
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-2 4 3 1
-[/input]
-[output]
-6
-[/output]
-[/test]
-[test]
-[input]
-12 22 32 44
-[/input]
-[output]
-110
-[/output]
-[/test]
-[test]
-[input]
-1 2 3 4 5 6 7 8 9 10
-[/input]
-[output]
-30
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Solution: Sum Even Numbers
-[code-task title="Solution: Sum Even Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class SumEvenNumbers {
-    public static void main(String[] args) {
-       // Write your solution here
 }
 ```
 [/code-editor]
