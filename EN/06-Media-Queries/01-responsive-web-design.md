@@ -7,19 +7,19 @@
 [stream language="EN" videoId="431769094" default /]
 [/video-vimeo]
 
-Responsive Web Design is about using HTML and CSS to **automatically resize**, hide, shrink, or enlarge, a website, to make it look good on **all devices** (desktops, tablets, and phones).
+Responsive Web Design is all about using HTML and CSS to **automatically resize**, **hide**, **shrink**, or **enlarge**, a website, to make it look appealing on **all devices** (desktops, tablets, and phones).
 
 ## What is The Viewport?
 
-The viewport is the area of a web page witch is visible for the user.
+The viewport is the area of a web page which is visible for the user.
 
-The viewport varies and is smaller on a mobile phone than on a computer screen.
+The viewport varies on different devices and it is smaller on a mobile phone than on a computer screen.
 
 ### Setting The Viewport
 
-Through the <meta> tag in HTML you can take control over the viewport.
+Through the <meta> tag in HTML we can take control over the viewport.
 
-For using it, you should include the following `<meta>` **viewport** element in all your web pages:
+To use it, we should include the following `<meta>` **viewport** element in all our web pages:
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
@@ -41,8 +41,8 @@ This will give the browser instructions on how to control the page’s **dimensi
 [/video-vimeo]
 
 Responsive website design consists of the following three main components:
-* **Flexible layouts** – Using a flexible grid to create the website layout. That will dynamically resize to any width;
-* **Media queries** -  Allow designers to specify different styles for specific browser and device circumstances;
+* **Flexible layouts** – We can use a flexible grid to create the website layout. It will dynamically resize to any width;
+* **Media queries** -  Allows designers to specify different styles for a specific browser and device;
 * **Flexible Media** – Makes media (images, video, and other formats) scalable.
 
 [vimeo-video]
@@ -51,10 +51,10 @@ Responsive website design consists of the following three main components:
 
 Benefits of using a Responsive Website:
 * **Increased traffic** from mobile users;
-* **Lower cost** and website maintenance;
+* **Lower cost** for website maintenance;
 * Provides a Seamless **User Experience**;
 * **Adapts** easily to any screen size;
-* A Responsive Website improves your **SEO** efforts.
+* A Responsive Website improves our **SEO** efforts.
 
 [vimeo-video]
 [stream language="EN" videoId="431769187" default /]
