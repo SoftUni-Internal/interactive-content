@@ -7,15 +7,16 @@
 
 **1. Set Interface**
 
-- `HashSet<E>`
-- `TreeSet<E>`
-- `LinkedHashSet<E>`
+- Difference between HashSet, TreeSet and LinkedHashSet
+
+- Difference between Set and Map
 
 **2. Map Interface**
 
-- `HashMap<K, V>`
-- `TreeMap<K, V>`
-- `LinkedHashMap<K, V>`
+- What "Map" is
+
+- Difference between HashMap, TreeMap, LinkedHashMap
+
 
 
 [/slide]
