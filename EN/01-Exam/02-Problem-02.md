@@ -16,22 +16,22 @@ public class Program {
 ## Description
 The Smiths are planning their family trip. 
 
-Your task is to create a program that calculates whether their budget will be enough, knowing how many nights they have planned, what the price per night is and what percentage of the budget has been provided for additional costs.
+Your task is to create a program that calculates whether their budget will be enough, knowing how many nights they have planned to stay, what the price per night is and what percentage of the budget has been provided for additional costs.
 
-Keep in mind that if the number of nights is greater than 7, the price per night is reduced by 5%.
+Keep in mind that if the number of nights is greater than 7, the price per night should be reduced by 5%.
 
 ## Input
-You will receive 4 lines from the console:
-- The budget that they have – a real number in range [1.00 … 10000.00] 
-- The count of nights – an integer in range [0 … 1000] 
-- The price per night – a real number in range [1.00 … 500.00] 
-- The additional cost percentage – an integer in range [0 … 100] 
+You will receive **4 lines of input from the console**:
+- The budget that they have – **a real number** in the range [1.00 … 10000.00] 
+- The count of nights – **an integer** in range [0 … 1000] 
+- The price per night – **a real number** in range [1.00 … 500.00] 
+- The additional cost percentage – **an integer** in range [0 … 100] 
 
 ## Output
-The output  depends on the budget:
-- If the budget is enough:
-	- "The Smiths will be left with \{money left after the trip\} dollars after vacation."
-- If the budget is NOT enough:
+The output depends on the budget:
+- If the budget **is enough**:
+	- "The Smiths will be left with \{money left after the trip\} dollars after the vacation."
+- If the budget is **NOT enough**:
 	- "\{money needed\} dollars needed."
 
 The sum must be formatted to the second digit after the decimal point.
@@ -39,7 +39,7 @@ The sum must be formatted to the second digit after the decimal point.
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| 800.50 | The Smiths will be left with 24.49 dollars after vacation. |
+| 800.50 | The Smiths will be left with 24.49 dollars after the vacation. |
 | 8 | |
 | 100 | |
 | 2 | |
@@ -61,7 +61,7 @@ The sum must be formatted to the second digit after the decimal point.
 2
 [/input]
 [output]
-The Smiths will be left with 24.49 dollars after vacation.
+The Smiths will be left with 24.49 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -83,7 +83,7 @@ The Smiths will be left with 24.49 dollars after vacation.
 18
 [/input]
 [output]
-The Smiths will be left with 265.40 dollars after vacation.
+The Smiths will be left with 265.40 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -105,7 +105,7 @@ The Smiths will be left with 265.40 dollars after vacation.
 30
 [/input]
 [output]
-The Smiths will be left with 310.70 dollars after vacation.
+The Smiths will be left with 310.70 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -127,7 +127,7 @@ The Smiths will be left with 310.70 dollars after vacation.
 60
 [/input]
 [output]
-The Smiths will be left with 225.00 dollars after vacation.
+The Smiths will be left with 225.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -149,7 +149,7 @@ The Smiths will be left with 225.00 dollars after vacation.
 10
 [/input]
 [output]
-The Smiths will be left with 50.00 dollars after vacation.
+The Smiths will be left with 50.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -160,7 +160,7 @@ The Smiths will be left with 50.00 dollars after vacation.
 0
 [/input]
 [output]
-The Smiths will be left with 0.00 dollars after vacation.
+The Smiths will be left with 0.00 dollars after the vacation.
 [/output]
 [/test]
 [test]
@@ -171,7 +171,7 @@ The Smiths will be left with 0.00 dollars after vacation.
 10
 [/input]
 [output]
-The Smiths will be left with 0.00 dollars after vacation.
+The Smiths will be left with 0.00 dollars after the vacation.
 [/output]
 [/test]
 [/tests]
