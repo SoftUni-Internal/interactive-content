@@ -17,7 +17,7 @@ They are already proven, optimized, and are short solutions to given problems.
 
 They are not complete solutions but rather tried and tested approaches to solving problems and writing elegant implementations.
 
-# What is a Pattern?
+## What is a Pattern?
 
 Patterns are **general solutions** to common problems that occur in software design.
 
@@ -37,8 +37,11 @@ Understanding and using **design patterns** help facilitate better communication
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-5-categories-of-design-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Design patterns can be divided into three categories:
+
 - **Creational**: deals with the object creation mechanism
+
 - **Structural**: deals with the relationships between entities
+
 - **Behavioral**: describes the interaction between objects that are not similar and the division of responsibilities among them
 
 [/slide]
@@ -88,19 +91,21 @@ The main difference between the factory pattern and the other creational pattern
 [image assetsSrc="js-application-design-patterns-01.png" /]
 
 
-- **Prototype**: the **prototype pattern** is used to create objects that serve as blueprint for other objects
+- **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects
 
-This is achieved through prototypical inheritance, which is natively supported in JavaScript.
+This is achieved through **prototypical inheritance**, which is natively supported in JavaScript.
 
-You are essentially copying existing objects without your code having to depend on their classes.
+You are essential **copying existing objects** without your code having to depend on their classes.
 
-The objects are clones rather than created by using constructors, which improves performance.
+The objects are **clones** rather than created by using **constructors**, which improves **performance**.
 
-This is typically used when the creation of an object through the constructor method would be time-consuming.
+This is typically used when the creation of an object through the **constructor** method would be time-consuming.
 
 [image assetsSrc="js-application-design-patterns-02.png" /]
 
-- **Singleton**: the **singleton pattern** is when you want to have a single instance of an object and provide global access to all of the clients that need to use it from a single endpoint
+- **Singleton**: the **singleton pattern** is when you want to have a **single** instance of an object
+
+Then you provide global **access** to all of the clients that need to use it from a **single** endpoint.
 
 [image assetsSrc="js-application-design-patterns-03.png" /]
 
@@ -113,25 +118,27 @@ This is typically used when the creation of an object through the constructor me
 
 **Structural design patterns** focus on the object composition to form larger structures, expanding existing functionalities.
 
-These patterns are concerned with how classes inherit from each other and how classes are composed of other classes.
+These patterns are concerned with how **classes inherit** from each other and how classes are composed of other classes.
 
-By implementing these patterns, you can introduce new functionalities without changing the existing ones.
+By implementing these patterns, you can introduce new **functionalities** without changing the **existing ones**.
 
 Some of the most common structural design patterns are:
 
 - **Decorator**: used when you need to add functionalities to an existing class without the risk of introducing bugs into existing implementations of that class
 
-Imagine you have a monumental class that is used throughout your application and changing anything inside it would affect the entire application.
+Imagine you have a **monumental class** that is used throughout your application and **changing** anything inside it would affect the entire application.
 
 [image assetsSrc="js-application-design-patterns-04.png" /]
 
-- **Facade**: the **facade pattern** is used in multi-layer applications where only a certain logic and functionality need to be exposed to different clients, shielding them from any complex business logic that the clients do not need to be concerned with
+- **Facade**: the **facade pattern** is used in multi-layer applications where only a **certain logic** and functionality need to be exposed to **different clients**, shielding them from any complex business logic that the clients do not need to be concerned with
 
-It is also useful in refactoring and almost always improves code usability.
+It is also useful in refactoring and almost always **improves** code usability.
 
 [image assetsSrc="js-application-design-patterns-05.png" /]
 
-- **Adapter**: the **adapter pattern** allows use ti connect programming components that normally cannot work together by translating one interface to another
+- **Adapter**: the **adapter pattern** allows users to connect programming components that normally cannot work together
+
+We can do that by translating one interface to another.
 
 [image assetsSrc="js-application-design-patterns-06.png" /]
 
@@ -160,17 +167,19 @@ This is also known as a "cursor".
 
 [image assetsSrc="js-application-design-patterns-08.png" /]
 
-- **Mediator**: this pattern is implemented by having a single object responsible for the communication between various other modules of the application to avoid too many direct relationships between components
+- **Mediator**: this pattern is implemented by having a **single object responsible** for the **communication** between various other modules of the application
+
+That way we avoid too many direct relationships between components.
 
 [image assetsSrc="js-application-design-patterns-09.png" /]
 
-- **Observer**: this is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods
+- **Observer**: this is a pattern in which an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually through calling one of their methods
 
 The **Observer** pattern facilitates a good object-oriented design and promotes loose coupling.
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
-- **Visitor** - this pattern is useful when there is a collection of objects and new functionality needs to be added to them without changing the objects themselves
+- **Visitor** - this pattern is useful when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
 
 The new logic is added to a new object called the **visitor**.
 
@@ -193,19 +202,18 @@ They are not set in stone and, if a pattern does not work for you, you can alway
 
 - They improve the software development process and can **reduce errors**
 
-- They are **scalable** and **reusable**
+- They are **scalable** and **reusable**
 
-- They can **speed up development** and less time is spent on finding solutions
+- They can **speed up development** and less time is spent on finding solutions
 
 # Drawbacks of Design Patterns
 
-- Design patterns come with consequences and, if applied incorrectly or without regard to how the application might change in the future, they can cause problems
+- Design patterns come with **consequences** and if applied **incorrectly** or without regard to how the application might change in the future, they can **cause problems**
 
-- Patterns do not provide us with а concrete code to use, they simply provide a possible approach to take when designing applications
+- Patterns do not provide us with а **concrete code to use**, they simply provide a possible **approach** to take when designing applications
 
-- They look simple but they have intricacies and can be misunderstood and applied incorrectly
+- They look **simple** but they have **intricacies** and can be misunderstood and applied incorrectly
 
-
-They should be used only if their benefits outweigh the cost of using them.
+They should be used only if their **benefits** outweigh the cost of using them.
 
 [/slide]

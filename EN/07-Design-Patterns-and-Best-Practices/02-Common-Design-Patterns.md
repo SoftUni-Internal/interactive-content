@@ -9,9 +9,9 @@ The **factory design pattern** is a creational pattern and its purpose is creati
 
 It is just like an actual factory in real life. 
 
-It produces products (objects) based on business requirements. 
+It **produces** products (objects) based on business requirements. 
 
-The logic of how the products are manufactured does not need to be known by the client using the services of the factory. 
+The logic of how the products are **manufactured** does not need to be known by the client using the services of the factory. 
 
 New types of objects can be added at any time to the manufacturing process of the factory. 
 
@@ -20,23 +20,23 @@ This pattern is used when:
 
 - The setup of objects requires a high level of complexity
 
-The logic for instantiating objects is encapsulated within the factory object and the client does not need to know the actual logic to use it.
+The logic for instantiating objects is **encapsulated** within the factory object and the client **does not need to know** the actual logic to use it.
 
-It calls upon the factory and receives the created object:
+It calls upon the **factory** and **receives** the created object:
 
-- When you need to generate different instances of objects depending on the context
+- When you need to **generate** different instances of objects depending on the context
 
-- When working with objects or components that share the same properties
+- When working with objects or components that **share the same properties**
 
 - When you need to create a **loosely coupled system**
 
 ## When not to use
 
-If applied incorrectly, it can introduce a lot of unnecessary complexity into the code. 
+If applied incorrectly, it can introduce a lot of **unnecessary** complexity into the code. 
 
-Do not use it unless your goal is to create an interface for object creation and you need to be able to constantly construct new objects of certain types without exposing the logic to the clients using it.
+Do not use it unless your goal is to create an **interface for object** creation and you need to be able to constantly construct new objects of certain types without exposing the logic to the clients using it.
 
-The creation of new objects is abstracted behind an interface, which can cause problems in unit testing later on depending on how complex the logic of the factory is.
+The creation of new objects is **abstracted behind an interface**, which can cause **problems in unit testing later on** depending on how complex the logic of the factory is.
 
 [/slide]
 
@@ -89,8 +89,8 @@ function DigimonFactory() {
 let digimonFactory = new DigimonFactory();
 let digitalMonsters = [];
 
-digitalMonsters.push(digimonFactory.create("Agumon", "Fire Breath"));
-digitalMonsters.push(digimonFactory.create("Botamon", "Bubble Blow"));
+digitalMonsters.push(digimonFactory.create('Agumon', 'Fire Breath'));
+digitalMonsters.push(digimonFactory.create('Botamon', 'Bubble Blow'));
 
 digitalMonsters.forEach((digimon) => {
     digimon.attack();
@@ -99,9 +99,9 @@ digitalMonsters.forEach((digimon) => {
 
 In the example above, we have a **digimonFactory** that is used to create new digital monsters. 
 
-We then create an empty array and push some digital monsters into it after creating them using the factory. 
+We then create an **empty array** and push some digital monsters into it after **creating** them using the factory. 
 
-Finally, we iterate through the collection and print out the names and special moves of each monster inside the collection.
+Finally, we iterate through the collection and **print out the names** and special moves of each monster inside the collection.
 
 [/slide]
 
@@ -112,10 +112,11 @@ Finally, we iterate through the collection and print out the names and special m
 
 The **decorator pattern** is a structural design pattern that promotes code reusability and is an alternative to subclassing.
 
-With this pattern, extra responsibilities or behaviors can be added to objects during runtime, without breaking the code that uses them.
+With this pattern, extra responsibilities or behaviors can be **added** to objects during **runtime**, without breaking the code that uses them.
 
 ## When to use
-- When you need to add a functionality to an object either dynamically (during runtime) or statically, without affecting the behavior of other objects of the same class
+
+- When you need to add a **functionality** to an object either dynamically (during runtime) or statically, without affecting the **behavior** of other objects of the same class
 
 - When extending with subclasses is not practical
 
@@ -136,10 +137,10 @@ let toyota = new Car('Toyota', 'Corolla', 1998);
 
 function performAction(car) {
     if (toyota instanceof Car) {
-        console.log("Do something");
+        console.log('Do something');
     }
     else {
-        console.log("Do something else");
+        console.log('Do something else');
     }
 }
 
@@ -186,13 +187,13 @@ let DecoratedEbook = function (ebookReader, model) {
     this.screenSize = ebookReader.screenSize;
     this.model = model;
     this.info = function () {
-        console.log("Decorated ebook:");
+        console.log('Decorated ebook:');
         console.log(`Model: ${this.model}, Cost: ${this.cost}, Screen size: ${this.screenSize}`)
     }
 }
 
 let eBook = new EbookReader(100, 7);
-let decoratedEbook = new DecoratedEbook(eBook, "Kindle");
+let decoratedEbook = new DecoratedEbook(eBook, 'Kindle');
 
 
 eBook.info();
@@ -213,18 +214,19 @@ In this way, the decorated ebook reader would have an additional property and th
 
 [image assetsSrc="js-application-design-patterns-14.png" /]
 
-The **facade pattern** is used a lot in multi-layered applications where only certain logic and functionality need to be exposed to different clients, shielding them from any complex business logic that clients do not need to be concerned with. 
+The **facade pattern** is used a lot in multi-layered applications where only certain logic and functionality need to be exposed to **different clients**, shielding them from any complex business logic that clients do not need to be concerned with. 
 
-It is also useful in refactoring and almost always improves code usability.
+It is also useful in **refactoring** and almost always improves code **usability**.
 
-It is implemented by creating a "wrapper" class, encapsulating the subsystem. 
+It is implemented by creating a "wrapper" class, **encapsulating** the subsystem. 
 
-The client is only coupled to the facade and not to the subsystem(s) behind it.
+The client is only **coupled** to the facade and not to the subsystem(s) behind it.
 
 ## Use it when you have 
-- a complex system and you need a simple interface to communicate with it
 
-- a lot of tightly coupled code which would require the client to have extensive knowledge on how the system works in order to use it
+- A **complex** system and you need a **simple** interface to communicate with it
+
+- A lot of tightly **coupled** code which would require the client to have **extensive** knowledge on how the system works in order to use it
 
 
 [/slide]
@@ -307,11 +309,12 @@ Messages to the observers are typically sent using a `notify()` method that loop
 When the observer no longer needs to receive updates from the subject it can be **detached** (removed from the subject's collection).
 
 ## When to use
-When you have a class that needs to be monitored by other classes in the program and they need to be aware of any changes in its state. 
+
+When you have a class that needs to be **monitored** by other classes in the program and they need to be **aware** of any changes in **its state**. 
 
 An example of this would be on websites where you can subscribe to other users.
 
-Your account would be added to their subscribers and each time they upload a new video, you would be notified, in effect making your account an Observer.
+Your account would be added to their **subscribers** and each time they upload a new video, you would be notified, in effect making your account an Observer.
 
 [/slide]
 
@@ -331,7 +334,7 @@ By using the observer pattern, we introduce **loose coupling** between the subje
 
 The subject is only aware of the collection of observers it maintains but is not concerned with the concrete implementation of the observers.
 
-Changes can be broadcasted to any number of observers, although the order, in which the notifications are sent, can be unpredictable, which might lead to problems.
+Changes can be **broadcasted** to any number of observers, although the order, in which the **notifications** are sent, can be unpredictable, which might lead to problems.
 
 [/slide]
 
