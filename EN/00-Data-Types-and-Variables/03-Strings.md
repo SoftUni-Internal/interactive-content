@@ -69,9 +69,11 @@ console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 
 
 [slide hideTitle]
-# Problem: Concantenate Names
+# Problem with Solution: Concantenate Names
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-16-problem-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-16-solution-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Concantenate Names" taskId="fund-js-data-types-and-variables-lab-concatenate-names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -88,6 +90,7 @@ function concatNames(firstName, lastName, delimeter){
 [/code-adapter]
 [task-description]
 # Description
+
 Write a program, which: 
 - Receives two names as string parameters and a delimiter
 - Prints the names joined by the delimiter
@@ -169,110 +172,11 @@ JanpWhite
 
 [slide hideTitle]
 
-# Solution: Concantenate Names
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-16-solution-concatenate-names-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Concantenate Names" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function concatNames(firstName, lastName, delimeter){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
-[task-description]
-# Description
-Write a program, which: 
-- Receives two names as string parameters and a delimiter
-- Prints the names joined by the delimiter
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|'John', 'Smith', '\-\>'| John\-\>Smith |
-|'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-John
-Smith
-m
-[/input]
-[output]
-JohnmSmith
-[/output]
-[/test]
-[test]
-[input]
-Jan
-White
-k
-[/input]
-[output]
-JankWhite
-[/output]
-[/test]
-[test]
-[input]
-Jan
-White
-\-
-[/input]
-[output]
-Jan\-White
-[/output]
-[/test]
-[test]
-[input]
-Jan
-White
-\=
-[/input]
-[output]
-Jan\=White
-[/output]
-[/test]
-[test]
-[input]
-Jan
-White
-\,
-[/input]
-[output]
-Jan\,White
-[/output]
-[/test]
-[test]
-[input]
-Jan
-White
-p
-[/input]
-[output]
-JanpWhite
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-
-# Problem: Right Place
+# Problem with Solution: Right Place
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-17-problem-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-17-solution-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Right Place" taskId="fund-js-data-types-and-variables-lab-right-place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -289,9 +193,10 @@ function rightPlace(string, sym, result){
 [/code-adapter]
 [task-description]
 # Description
+
 You will receive 3 parameters: **string**, **char**, **string**.
 
-First string will be a word with a **missing char** replaced with an underscore `_`.
+The first string will be a word with a **missing char** replaced with an underscore `_`.
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 
@@ -390,129 +295,5 @@ Not Matched
 [/tests]
 [code-io /]
 [/code-task]
-[/slide]
 
-[slide hideTitle]
-
-
-# Solution: Right Place
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-17-solution-last-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Right Place" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function rightPlace(string, sym, result){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => code(...input);
-```
-[/code-adapter]
-[task-description]
-# Description
-You will receive 3 parameters: **string**, **char**, **string**.
-
-First string will be a word with a **missing char** replaced with an underscore `_`.
-
-You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
-
-If they are equal you should print `Matched`, otherwise print `Not Matched`.
-
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|'Str_ng', 'I', 'Strong' | Not Matched |
-|'Str_ng', 'i', 'String' |Matched|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Str_ng
-I
-Strong
-[/input]
-[output]
-Not Matched
-[/output]
-[/test]
-[test open]
-[input]
-Str_ng
-I
-String
-[/input]
-[output]
-Matched
-[/output]
-[/test]
-[test]
-[input]
-aa_av
-n
-aanav
-[/input]
-[output]
-Matched
-[/output]
-[/test]
-[test]
-[input]
-fd_sa
-l
-fdlsa
-[/input]
-[output]
-Matched
-[/output]
-[/test]
-[test]
-[input]
-ww_
-w
-www
-[/input]
-[output]
-Matched
-[/output]
-[/test]
-[test]
-[input]
-_ngsd
-n
-jkljkl
-[/input]
-[output]
-Not Matched
-[/output]
-[/test]
-[test]
-[input]
-gds_aaasng
-m
-Sjkl
-[/input]
-[output]
-Not Matched
-[/output]
-[/test]
-[test]
-[input]
-a_ff
-i
-jkll
-[/input]
-[output]
-Not Matched
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
 [/slide]
