@@ -135,6 +135,7 @@ public class Main {
 [tests]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -160,6 +161,7 @@ public class T00_1ValidateTypesExist \{
         return clazz;
     \}
 \}
+```
 [/input]
 [output]
 Test Passed!
@@ -167,6 +169,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -241,6 +244,7 @@ public class T00_2ValidateFieldsExists \{
 
 
 \}
+```
 [/input]
 [output]
 Test Passed!
@@ -248,6 +252,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -355,6 +360,7 @@ public class T00_3ValidateMethodsExists \{
         return clazz;
     \}
 \}
+```
 [/input]
 [output]
 Test Passed!
