@@ -3,7 +3,7 @@
 
 # Problem 1: Trip
 
-[code-task title="Trip" taskId="js-fundamentals-2-finaleExam-Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Trip" taskId="js-fundamentals-2-finalExam-Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function solve(input) {
@@ -48,16 +48,18 @@ After receiving the `Travel` command, print the following message:
 
 ## Output
 
-* Print the proper output messages for each of the cases, as described in the problem description.
+* Print the proper output messages for each of the cases, as described in the problem description
 
-## Examples
+# Example
 
-**Input**
-`['Hawai:Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawai:Bulgaria', 'Travel']`
+### Input
 
-**Output**
-`Hawai:RomeCyprys-Greece`
-`Hawai:Rome-Greece`
+`['Hawaii:Cyprys-Greece', 'Add Stop:7:Rome', 'Remove Stop:11:16', 'Switch:Hawaii:Bulgaria', 'Travel']`
+
+### Output
+
+`Hawaii:RomeCyprys-Greece`
+`Hawaii:Rome-Greece`
 `Bulgaria:Rome-Greece`
 `Ready for a world tour! Planned stops: Bulgaria:Rome-Greece`
 
@@ -67,15 +69,15 @@ After receiving the `Travel` command, print the following message:
 [tests]
 [test open]
 [input]
-Hawai\:\:Cyprys\-Greece
+Hawaii\:\:Cyprys\-Greece
 Add Stop\:7\:Rome
 Remove Stop\:11\:16
-Switch\:Hawai\:Bulgaria
+Switch\:Hawaii\:Bulgaria
 Travel
 [/input]
 [output]
-Hawai\:\:RomeCyprys\-Greece
-Hawai\:\:Rome\-Greece
+Hawaii\:\:RomeCyprys\-Greece
+Hawaii\:\:Rome\-Greece
 Bulgaria\:\:Rome\-Greece
 Ready for a world tour\! Planned stops\: Bulgaria\:\:Rome\-Greece
 [/output]
