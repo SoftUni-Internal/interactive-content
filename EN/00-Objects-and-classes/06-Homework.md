@@ -26,6 +26,7 @@ In the end print all the **listed employees** in the following format:
 
 
 # Example
+
 | **Input** | **Output** |
 | --- | --- |
 |`['Silas Butler','Adnaan Buckley','Juan Peterson','Brendan Villarreal']`| Name\: Silas Butler \-\- Personal Number\: 12 |
@@ -115,13 +116,13 @@ Check the examples to get a better understanding of your task.
 
 The output should be objects. 
 
-Latitude and longitude must be parsed to numbers and formatted to the second decimal point!
+Latitude and longitude must be parsed to numbers and formatted to the second decimal point.
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 |`['Bucuresti | 42.696552 | 23.32601','Beijing | 39.913818 | 116.363625']`|`{ town: 'Bucuresti', latitude: '42.70', longitude: '23.33' }` |
-|| `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
+| | `{ town: 'Beijing', latitude: '39.91', longitude: '116.36' }` |
 
 [/task-description]
 [tests]
@@ -208,24 +209,22 @@ function movies(input){
 # Description
 Write a function that stores information about movies inside an array.
 
-The movies object info must be name, director and date. You can receive several types of input:
+The movie's object info must be name, director and date. You can receive several types of input:
 
-* `addMovie {movie name}`: add the movie
+* `addMovie {movie name}` - add the movie
 
-* `{movie name} directedBy {director}`: check if the movie exists and then add the director
-* `{movie name} onDate {date}`: check if the movie exists and then add the date
+* `{movie name} directedBy {director}` - check if the movie exists and then add the director
+* `{movie name} onDate {date}` - check if the movie exists and then add the date
 
 At the end print all the movies that have all the info (if the movie has no director, name or date, don’t print it) **in JSON format.**
 
 # Example
 
-**Input:** 
-`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']`
+| **Input** | **Output** |
+| --- | --- |
+|`['addMovie Fast and Furious','addMovie Godfather','Inception directedBy Christopher Nolan','Godfather directedBy Francis Ford Coppola','Godfather onDate 29.07.2018','Fast and Furious onDate 30.07.2018','Batman onDate 01.08.2018','Fast and Furious directedBy Rob Cohen']` | `{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`|
+| | `{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}` |
 
- **Output:**
-`{"name":"Fast and Furious","date":"30.07.2018","director":"Rob Cohen"}`
-
-`{"name":"Godfather","director":"Francis Ford Coppola","date":"29.07.2018"}`
 
 [/task-description]
 [tests]
@@ -345,6 +344,7 @@ The name is a string, the level is a number, and the items are all strings.
 The output is all of the data for all the heroes you have stored sorted ascending by level, the items are sorted alphabetically.
 
 The data must be in the following format for each hero:
+
 `Hero: {heroName}`
 `level => {heroLevel}`
 `Items => {item1}, {item2}, {item3}`
@@ -352,21 +352,17 @@ The data must be in the following format for each hero:
 
 # Example
 
-**Input** 
-
-`["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` 
-
-**Output** 
-
-`Hero: Hes`
-`level => 1`
-`items => Antara, Desolator, Sentinel`
-`Hero: Derek`
-`level => 12`
-`items => BarrelVest, DestructionSword`
-`Hero: Isacc`
-`level => 25`
-`items => Apple, GravityGun`
+| **Input** | **Output** |
+| --- | --- |
+| `["Isacc / 25 / Apple, GravityGun","Derek / 12 / BarrelVest, DestructionSword","Hes / 1 / Desolator, Sentinel, Antara"]` | `Hero: Hes` |
+| | `level => 1` |
+| | `items => Antara, Desolator, Sentinel` |
+| | `Hero: Derek` |
+| | `level => 12` |
+| | `items => BarrelVest, DestructionSword` |
+| | `Hero: Isacc` |
+| | `level => 25` |
+| | `items => Apple, GravityGun` |
 
 [/task-description]
 [tests]
@@ -491,7 +487,7 @@ function dictionary(input){
 [task-description]
 # Description
 
-You will receive an array holding strings in the form of JSON's
+You will receive an array holding strings in the form of JSONs.
 
 You have to parse these strings and **combine them into one object.**
 
@@ -499,7 +495,7 @@ Every string from the array will hold terms their descriptions.
 
 If you receive the same term twice replace it with the new definition. 
 
-Print every **term and definition** from the dictionary on a new line in this  format: 
+Print every **term and definition** from the dictionary on a new line in this format: 
 
 `Term: ${term} => Definition: ${definition}`
 
@@ -507,21 +503,13 @@ Do not forget to sort the content **alphabetically** by the terms as in real dic
 
 # Example
 
-**Input** 
-
-`['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']`
-
-**Output** 
-
-Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water.
-
-Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.
-
-Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub.
-
-Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded.
-
-Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something.
+| **Input** | **Output** |
+| --- | --- |
+| `['{"Coffee":"A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."}','{"Bus":"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare."}','{"Boiler":"A fuel-burning apparatus or container for heating water."}','{"Tape":"A narrow strip of material, typically used to hold or fasten something."}','{"Microphone":"An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded."}']` | Term\: Boiler \=\> Definition\: A fuel\-burning apparatus or container for heating water. |
+| | Term\: Bus \=\> Definition\: A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare. |
+| | Term\: Coffee \=\> Definition\: A hot drink made from the roasted and ground seeds \(coffee beans\) of a tropical shrub. |
+| | Term\: Microphone \=\> Definition\: An instrument for converting sound waves into electrical energy variations which may then be amplified, transmitted, or recorded. |
+| | Term\: Tape \=\> Definition\: A narrow strip of material, typically used to hold or fasten something. |
 
 [/task-description]
 [tests]
@@ -625,35 +613,25 @@ aand the the last element will be Type List \/ `all`.
 
 Print only the names of the songs which are from that Type List \/ All songs. 
 
-# Example: 
-**Input** 
+# Examples
 
-`[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']`
+| **Input** | **Output** |
+| --- | --- |
+| `[3,'favourite_DownTown_3:14','favourite_Kiss_4:16','favourite_Smooth Criminal_4:01','favourite']` | DownTown |
+| | Kiss |
+| | Smooth Criminal |
 
-**Output** 
 
-DownTown
-Kiss
-Smooth Criminal
+| **Input** | **Output** |
+| --- | --- |
+| `[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']` | Andalouse |
 
-# Example: 
-**Input** 
 
-`[4,'favourite_DownTown_3:14','listenLater_Andalouse_3:24','favourite_In To The Night_3:58','favourite_Live It Up_3:48','listenLater']`
+| **Input** | **Output** |
+| --- | --- |
+| `[2,'like_Replay_3:15','ban_Photoshop_3:48','all']` | Replay |
+| | Photoshop |
 
-**Output** 
-
-Andalouse
-
-# Example: 
-**Input** 
-
-`[2,'like_Replay_3:15','ban_Photoshop_3:48','all']`
-
-**Output** 
-
-Replay
-Photoshop
 
 [/task-description]
 [tests]
