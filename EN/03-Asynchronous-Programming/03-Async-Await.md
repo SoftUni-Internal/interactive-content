@@ -6,31 +6,35 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-16-17-18-19-Async-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-"Async" functions, unlike promises and callbacks, are an **easy-to-read way of operating asynchronously**.
+**Async** functions, unlike promises and callbacks, are an **easy-to-read way of operating asynchronously**.
 
 They look like regular functions but use the event loop to work asynchronously.
 
-"Async" functions consist of two parts:
+**Async** functions consist of two parts:
 
-- `async` - Placed in **front of the function's declaration**. Specifies that the `await` keyword might be used with asynchronous operations inside the function
+- `async` - Placed in **front of the function's declaration**
+
+Specifies that the `await` keyword might be used with asynchronous operations inside the function.
 
 
-- `await` - **Used only in "async functions"**. If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**
+- `await` - **Used only in "async functions"**
 
-Here is an example of how "async" functions are structured:
+If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
+
+Here is an example of how `async` functions are structured:
 
 ```js live
 function getValueAfterDelay() {
-  let username = "Alex";
+  let username = 'Alex';
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve("Username is: " + username);
+      resolve('Username is: ' + username);
     }, 2000);
   });
 }
 
 async function printUsername() {
-  console.log("Getting name...");
+  console.log('Getting name...');
 
   let result = await getValueAfterDelay(); // throws error if promise is rejected
 
@@ -149,7 +153,7 @@ Here is an example of sequential code execution:
 ```js
 function multiplyByTwo(number, seconds) {
   return new Promise((resolve) => {
-    console.log("Entry number: " + number);
+    console.log('Entry number: ' + number);
 
     setTimeout(() => {
       console.log(`${number}*2 = ` + number * 2);
@@ -164,7 +168,7 @@ async function serialFlow() {
   let result3 = await multiplyByTwo(5, 1);
 
   let total = result1 + result2 + result3;
-  console.log("Total sum: " + total);
+  console.log('Total sum: ' + total);
 }
 
 serialFlow();
@@ -188,7 +192,7 @@ Here is the code from the previous example, but with **concurrent** execution:
 ```js
 function multplyByTwo(number, seconds) {
   return new Promise((resolve) => {
-    console.log("Entry number: " + number);
+    console.log('Entry number: ' + number);
 
     setTimeout(() => {
       console.log(`${number}*2 = ` + number * 2);
@@ -203,7 +207,7 @@ async function concurrentFlow() {
   let result3 = multplyByTwo(5, 3);
 
   let total = (await result1) + (await result2) + (await result3);
-  console.log("Total sum: " + total);
+  console.log('Total sum: ' + total);
 }
 
 concurrentFlow();

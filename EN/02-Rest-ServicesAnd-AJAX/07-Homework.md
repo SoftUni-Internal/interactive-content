@@ -51,7 +51,7 @@ The list should be cleared before every request is sent.
 </div>
 ```
 
-When the button is clicked, the results are displayed in the corresponding elements:
+When the button is **clicked**, the results are **displayed** in the corresponding elements:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-8.png" /]
 
@@ -69,7 +69,7 @@ When the button is clicked, the results are displayed in the corresponding eleme
 </div>
 ```
 
-If an error occurs, the stop name changes to Error:
+If an error occurs, the stop name changes to **Error**:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-10.png" /]
 
@@ -139,7 +139,7 @@ If invalid data is received, show **Error** inside the infobox and **disable** b
 
 ## Examples
 
-Initially, the info box shows `Not Connected` and the arrive button is disabled.
+Initially, the info box shows "Not Connected" and the arrive button is disabled.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-12.png" /]
 

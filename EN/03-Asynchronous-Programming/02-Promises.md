@@ -12,7 +12,9 @@ Since the information **does not arrive immediately**, the whole function **must
 
 Synchronously getting resources from a database, for example, can **block an entire web page**.
 
-Here is where promises come to save the day. Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carry on with the execution**.
+Here is where promises come to save the day. 
+
+Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carry on with the execution**.
 
 These states are:
 
@@ -49,7 +51,7 @@ Promises offer a variety of useful methods for an easy and effective work proces
 - `Promise.reject(reason)` - Returns a **Promise** object that has been rejected for a specific reason
 
 ```js live
-Promise.reject("There was an error!").then(
+Promise.reject('There was an error!').then(
   (successMessage) => {
     console.log(successMessage);
   },
@@ -64,7 +66,7 @@ Promise.reject("There was an error!").then(
 If the value is a promise - **returns the promise**.
 
 ```js live
-Promise.resolve("Operation was successful!").then(
+Promise.resolve('Operation was successful!').then(
   (successMessage) => {
     console.log(successMessage);
   },
@@ -81,9 +83,9 @@ Otherwise, it would **reject immediately**.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
-  resolve("Information acquired successfully!");
+  resolve('Information acquired successfully!');
 });
-let secondPromise = Promise.resolve("No errors.");
+let secondPromise = Promise.resolve('No errors.');
 let thirdPromise = Promise.resolve(7);
 
 Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
@@ -97,13 +99,13 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    reject("Error!");
+    reject('Error!');
   }, 1000);
 });
 
 let secondPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("Success!");
+    resolve('Success!');
   }, 3000);
 });
 
@@ -114,25 +116,27 @@ Promise.allSettled([firstPromise, secondPromise]).then((data) => {
 });
 ```
 
-- `Promise.race(iterable)` - Takes an array of promises and after the first one is either resolved or rejected, returns a Promise object that resolves or rejects with its value
+- `Promise.race(iterable)` - Takes an array of promises and after the first one is either **resolved** or **rejected**.
+
+This method returns a Promise object that resolves or rejects with its value
 
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("This took a lot of time.");
+    resolve('This took a lot of time.');
   }, 5000);
 });
 
 let secondPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("Operation finished quickly!");
+    resolve('Operation finished quickly!');
   }, 1000);
 });
 
 let thirdPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve("This took three seconds to finish!");
+    resolve('This took three seconds to finish!');
   }, 3000);
 });
 
@@ -141,15 +145,15 @@ Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.finally(function)`: Takes a callback function to be executed after the promise is settled
+- `Promise.finally(function)` - Takes a callback function to be executed after the promise is settled
 
 ```js live
-Promise.resolve("Operation succeeded!")
+Promise.resolve('Operation succeeded!')
   .then((data) => {
     console.log(data);
   })
   .finally(() => {
-    console.log("This is printed after the oprations has finished!");
+    console.log('This is printed after the oprations has finished!');
   });
 ```
 
@@ -172,17 +176,17 @@ It is used **after a promise has been initialized** and takes **two parameters**
 Here is an example of how `.then()` is used:
 
 ```js live
-console.log("This will appear first");
+console.log('This will appear first');
 
 new Promise(function (resolve, reject) {
   setTimeout(function () {
-    resolve("Eddie");
+    resolve('Eddie');
   }, 1000);
 }).then(function (response) {
-  console.log("My name is: " + response);
+  console.log('My name is: ' + response);
 });
 
-console.log("This will appear second");
+console.log('This will appear second');
 ```
 
 As seen above, the `.then()` method **waits for the completion with the previous promise** and **runs with its return value**.
@@ -195,28 +199,28 @@ As seen above, the `.then()` method **waits for the completion with the previous
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `.catch()` method is used to **"catch thrown errors" by promises**. 
+The `.catch()` method is used to "**catch thrown errors**" by promises. 
 
 It is very useful to **handle possible promise rejections**.
 
 Here is how this method is used with the code from the previous example:
 
 ```js live
-console.log("This will appear first");
+console.log('This will appear first');
 
 new Promise(function (resolve, reject) {
   setTimeout(function () {
-    reject("Error while getting name!");
+    reject('Error while getting name!');
   }, 1000);
 })
   .then(function (response) {
-    console.log("My name is: " + response);
+    console.log('My name is: ' + response);
   })
   .catch(function (err) {
     console.log(err);
   });
 
-console.log("This will appear second");
+console.log('This will appear second');
 ```
 
 It is good to know that another `.then()` method can be placed **after** `.catch()`. 

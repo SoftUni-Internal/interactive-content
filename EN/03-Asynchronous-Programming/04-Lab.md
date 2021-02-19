@@ -51,7 +51,9 @@ Create an `<option>` for each post using its **object key** as value and **curre
 
 When the button with ID "**btnViewPost**" is clicked, a **GET** request should be made to:
 
-- `/posts/{postId}` to obtain the selected post (from the dropdown menu with ID "**posts**") - The following **request** will return a **single object** as described above
+- `/posts/{postId}` to obtain the selected post (from the dropdown menu with ID "**posts**")
+
+The following **request** will return a **single object** as described above
 
 - `/comments`: to obtain all comments
 
@@ -83,9 +85,9 @@ Each object will be in the following format:
 
 You have to find these comments that are for the current post (check the **postId property**).
 
-Display the post title inside `h1` with ID `post-title` and the post content inside ul with ID `post-body`.
+Display the post title inside `h1` with ID "post-title" and the post content inside ul with ID "post-body".
 
-Display **each comment** as a `<li>` inside ul with ID `post-comments`.
+Display **each comment** as a `<li>` inside ul with ID "post-comments".
 
 Do not forget to clear its content beforehand.
 

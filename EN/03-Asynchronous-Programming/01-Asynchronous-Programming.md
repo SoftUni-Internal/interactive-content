@@ -92,18 +92,18 @@ Here is an example of some asynchronous behavior in JavaScript:
 
 ```js live
 function printSam() {
-  console.log("Sam");
+  console.log('Sam');
 }
 
 function printGeorge() {
-  console.log("George");
+  console.log('George');
 }
 
-console.log("Jessica");
+console.log('Jessica');
 
 setTimeout(printSam, 3000);
 
-console.log("Tyson");
+console.log('Tyson');
 
 setTimeout(printGeorge, 1000);
 ```
@@ -124,12 +124,12 @@ What happens here is that the code is executed **line by line**:
 
 If the same code was executed synchronously, the names would be in the following order:
 
-- Jessica
+- "Jessica"
 
-- Sam
+- "Sam"
 
-- Tyson
+- "Tyson"
 
-- George
+- "George"
 
 [/slide]
