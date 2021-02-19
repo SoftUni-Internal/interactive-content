@@ -174,45 +174,45 @@ import org.junit.Test;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
-public class T00_2ValidateFieldsExists \{
+public class T00_2ValidateFieldsExists {
     private static final String FIELD_NOT_PRESENT_ERROR_MESSAGE = "The field '%s.%s' does not exist!";
 
-    private class ExpField \{
+    private class ExpField {
         String name;
 
-        public ExpField(String name) \{
+        public ExpField(String name) {
             this.name = name;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateClassFields() \{
+    public void validateClassFields() {
         Class playerClazz = getType("Player");
-        ExpField\[\] fieldsFirstType = new ExpField\[\]\{
+        ExpField\[\] fieldsFirstType = new ExpField\[\]{
                 new ExpField("name"),
                 new ExpField("clazz"),
                 new ExpField("rank"),
                 new ExpField("description"),
-        \};
+        };
 
-        for (ExpField field : fieldsFirstType) \{
+        for (ExpField field : fieldsFirstType) {
             validateField(playerClazz, field);
-        \}
+        }
 
 
         Class guildClazz = getType("Guild");
-        ExpField\[\] fieldsSecondType = new ExpField\[\]\{
+        ExpField\[\] fieldsSecondType = new ExpField\[\]{
                 new ExpField("roster"),
                 new ExpField("name"),
                 new ExpField("capacity"),
-        \};
+        };
 
-        for (ExpField field : fieldsSecondType) \{
+        for (ExpField field : fieldsSecondType) {
             validateField(guildClazz, field);
-        \}
-    \}
+        }
+    }
 
-    private void validateField(Class clazz, ExpField expField) \{
+    private void validateField(Class clazz, ExpField expField) {
             String expectedName = expField.name;
 
             // Returns null if the field does not exist
@@ -221,27 +221,27 @@ public class T00_2ValidateFieldsExists \{
             // Tests whether the field exist
             String nameMessage = String.format(FIELD_NOT_PRESENT_ERROR_MESSAGE, clazz.getSimpleName(), expectedName);
             Assert.assertNotNull(nameMessage, actualField);
-    \}
+    }
 
-    private Field getField(Class clazz, String expectedName) \{
+    private Field getField(Class clazz, String expectedName) {
         Field field = null;
-        try \{
+        try {
             field = clazz.getDeclaredField(expectedName);
-        \} catch (NoSuchFieldException e) \{
-        \}
+        } catch (NoSuchFieldException e) {
+        }
 
         return field;
-    \}
+    }
 
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
 
-\}
+}
 [/input]
 [output]
 Test Passed!
