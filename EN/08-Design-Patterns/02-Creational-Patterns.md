@@ -1,4 +1,4 @@
- [slide hideTitle] 
+[slide hideTitle]
 
 # Creational Patterns
 
