@@ -10,15 +10,15 @@
 
 **1. Single Page Application**
 
--  What is SPA
+-  Definition
 
 **2. Routing Concepts**
 
--  Most common routing concepts
+-  Common Routing Concepts 
 
 **3. Navigation and History**
 
--  Browser object model
+-  The Browser Object Model (BOM) 
 
 **4. Routing with page.js**
 

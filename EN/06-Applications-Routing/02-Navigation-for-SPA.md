@@ -1,4 +1,4 @@
-# Navigation for SPA
+# Routing Concepts 
 
 [slide hideTitle]
 

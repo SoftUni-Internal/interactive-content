@@ -1,4 +1,4 @@
-# Routing Basics
+# Routing Basics 
 
 [slide hideTitle]
 # Multi Page Applications
@@ -11,7 +11,7 @@ We exchange data when a new page is **requested**.
 
 After the server returns a response, a new page is displayed in the browser.
 
-We can define an application as a **Multi Page Application** when the **reload** icon gets triggered.
+We can define an application as a **Multi Page** when the **reloaded**.
 
 [/slide]
 
@@ -19,15 +19,13 @@ We can define an application as a **Multi Page Application** when the **reload**
 
 # Multi Page Pros and Cons
 
-**Multi Page Application** have **pros** and **cons** .
-
-Let us check some of the **pros**:
+**Pros**:
 
 - They perform very well in **search engines**
 
 - They provide a **visual map** of the application when shared through a link in social media
 
-Now have a look at the **cons**:
+**Cons**:
 
 - They are **complex to develop**
 
@@ -45,7 +43,7 @@ Now have a look at the **cons**:
 
 They are an evolution of the **Multi Page Application**.
 
-**SPA**s **dynamically updates** the page content, instead of **refreshing** it.
+The **SPA dynamically updates** the page content, instead of **refreshing** it.
 
 They **re-render** the content in response to the user's actions.
 
@@ -67,9 +65,7 @@ Location-based SPAs need a special object called **Router**.
 
 # SPA Pros and Cons
 
-**Single Page Applications** also have **pros** and **cons**.
-
-Here are the **pros**:
+**Pros**:
 
 - They are a lot faster
 
@@ -79,39 +75,40 @@ Here are the **pros**:
 
 - They provide better **UX**
 
-Let us see the cons:
+**Cons**:
 
-- They are not good at **SEO**
+- They are not good at **Search engine optimization (SEO)** 
 
    - The solution is the **server-side rendering**
 
 - They provide a **single sharing link**
 
-- If we store data on the front-end, they can be less secure
+- Less secure if stored in the Front-End 
+
 
 [/slide]
 
 [slide hideTitle]
 
-# Multi and Single Page Application Lifecycle
+# Application Lifecycle
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-Multi-page-application-lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Both **Multi Page Application's** and **Single Page Application** have their lifecycle.
+Multi **Page Applications** and **Single Page Applications** have their lifecycles.
 
-On this image is the **Multi Page Application's** lifecycle.
+This is the **Multi Page Application's lifecycle**: 
 
 [image assetsSrc="JS-Applications-Routing.png" /]
 
-We see that when a user **sends a request**, the server **responds with HTML**.
+We see that when a user **sends a request**, the server **responds with an HTML formatted response**. 
 
 After every response, the page **reloads**.
 
-Let us have a look at the **Single Page Application** lifecycle.
+Let us have a look at the **Single Page Application's** lifecycle.
 
 [image assetsSrc="JS-Applications-Routing-1.png" /]
 
-In this image, we see that on the **initial request**, the server responds with HTML.
+In this image, we see that on the **initial request**, the server responds with **an HTML** file. 
 
 But on every other request, the response is a **JSON**. 
 
@@ -127,7 +124,7 @@ The page updates itself without refreshing, which gives the feeling for a lot fa
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-10-11-12-13-Multi-SPA-lifecycle-navigation-types-query-parameters-location-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are two types of navigation: a **standard** one and navigation using **Routing**.
+There are two types of navigations: a **standard** one and a navigation using **Routing**.
 
 The standard navigation is used in the **Multi Page Applications**. 
 
@@ -139,21 +136,17 @@ Because it uses **hyperlinks**, the standard navigation reloads the entire page.
 
 The other type is the **Routing** navigation. 
 
-We use it in **SPA**s because it simulates the standard one without refreshing the page.
+We use it in **SPA**s because it simulates the standard navigation without refreshing the page.
 
 [image assetsSrc="JS-Applications-Routing-3.png" /]
 
-The **Routing** navigation allows us to update the URL and the content after everything is rendered.
+The **Routing** navigation allows us to update the URL and its the content after everything is rendered.
 
-The **reload icon** will not get triggered unless the user refreshes the page by clicking `F5`.
+It will **not trigger a reload** unless the user refreshes the page by clicking `F5`.
 
-[/slide]
+## Query Parameters
 
-[slide hideTitle]
-
-# Query Parameters
-
-The **query parameters** are a set of parameters attached to the end of a URL.
+The **query parameters** are a set of parameters attached to the end of an URL.
 
 They give us the ability to **personalize** the sent request to the API.
 
