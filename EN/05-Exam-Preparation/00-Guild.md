@@ -167,6 +167,7 @@ Test Passed!
 [/test]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -241,6 +242,7 @@ public class T00_2ValidateFieldsExists {
 
 
 }
+```
 [/input]
 [output]
 Test Passed!
