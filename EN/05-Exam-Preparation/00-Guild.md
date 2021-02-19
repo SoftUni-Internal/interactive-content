@@ -143,7 +143,7 @@ public class T00_1ValidateTypesExist {
 
     @Test
     public void validateTypesExist() {
-        String\[\] classTypesToAssert = new String\[\]{
+        String[] classTypesToAssert = new String[]{
                 "Guild",
                 "Player",
         };
@@ -160,7 +160,6 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
-
 [/input]
 [output]
 Test Passed!
@@ -188,7 +187,7 @@ public class T00_2ValidateFieldsExists {
     @Test
     public void validateClassFields() {
         Class playerClazz = getType("Player");
-        ExpField\[\] fieldsFirstType = new ExpField\[\]{
+        ExpField[] fieldsFirstType = new ExpField[]{
                 new ExpField("name"),
                 new ExpField("clazz"),
                 new ExpField("rank"),
@@ -201,7 +200,7 @@ public class T00_2ValidateFieldsExists {
 
 
         Class guildClazz = getType("Guild");
-        ExpField\[\] fieldsSecondType = new ExpField\[\]{
+        ExpField[] fieldsSecondType = new ExpField[]{
                 new ExpField("roster"),
                 new ExpField("name"),
                 new ExpField("capacity"),
@@ -249,44 +248,43 @@ Test Passed!
 [/test]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T00_3ValidateMethodsExists \{
+public class T00_3ValidateMethodsExists {
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
 
-    private class ExpMethod \{
+    private class ExpMethod {
         String name;
-        Class\[\] parameterTypes;
+        Class[] parameterTypes;
 
-        public ExpMethod(String name, Class... parameterTypes) \{
+        public ExpMethod(String name, Class... parameterTypes) {
             this.name = name;
             this.parameterTypes = parameterTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validatePlayerMethods() \{
+    public void validatePlayerMethods() {
         Class playerClazz = getType("Player");
 
-        ExpMethod\[\] playerMethods = new ExpMethod\[\]\{
+        ExpMethod[] playerMethods = new ExpMethod[]{
                 new ExpMethod("getName"),
                 new ExpMethod("getClazz"),
                 new ExpMethod("setRank", String.class),
                 new ExpMethod("toString"),
-        \};
+        };
 
-        for (ExpMethod method : playerMethods) \{
+        for (ExpMethod method : playerMethods) {
             validateMethod(playerClazz, method);
-        \}
+        }
 
         Class guildClazz = getType("Guild");
 
-        ExpMethod\[\] methods = new ExpMethod\[\]\{
+        ExpMethod[] methods = new ExpMethod[]{
                 new ExpMethod("addPlayer", playerClazz),
                 new ExpMethod("removePlayer", String.class),
                 new ExpMethod("promotePlayer", String.class),
@@ -294,70 +292,69 @@ public class T00_3ValidateMethodsExists \{
                 new ExpMethod("kickPlayersByClass", String.class),
                 new ExpMethod("count"),
                 new ExpMethod("report"),
-        \};
+        };
 
-        for (ExpMethod method : methods) \{
+        for (ExpMethod method : methods) {
             validateMethod(guildClazz, method);
-        \}
-    \}
+        }
+    }
 
-    private void validateMethod(Class clazz, ExpMethod expMethod) \{
+    private void validateMethod(Class clazz, ExpMethod expMethod) {
         String expectedName = expMethod.name;
-        Class\[\] expectedParameterTypes = expMethod.parameterTypes;
+        Class[] expectedParameterTypes = expMethod.parameterTypes;
 
         Method actualMethod = getMethod(clazz, expectedName, expectedParameterTypes);
 
         // Tests whether the method exist
         String actualMethodsParametersMessage = null;
 
-        if (actualMethod == null) \{
+        if (actualMethod == null) {
             actualMethodsParametersMessage = findMethodFromMethods(clazz, expectedName);
-        \}
+        }
 
         String existMessage = String.format(METHOD_NOT_PRESENT_ERROR_MESSAGE, clazz.getSimpleName(), expectedName, actualMethodsParametersMessage, arrayToString(expectedParameterTypes));
         Assert.assertNotNull(existMessage, actualMethod);
-    \}
+    }
 
-    private String arrayToString(Class\[\] array) \{
-        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
+    private String arrayToString(Class[] array) {
+        String[] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String[]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
-    \}
+    }
 
-    private String findMethodFromMethods(Class clazz, String methodName) \{
-        Method\[\] methods = clazz.getMethods();
+    private String findMethodFromMethods(Class clazz, String methodName) {
+        Method[] methods = clazz.getMethods();
 
-        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
+        Method[] methodsWithGivenName = Arrays.stream(methods).filter(m -> m.getName().equals(methodName)).toArray(Method[]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method : methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) {
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
-        \}
+            sb.append("{ " + parameterTypes + " } ");
+        }
 
         return sb.toString().trim();
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
-```
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -372,56 +369,56 @@ import org.junit.Test;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T01GuildMethods \{
+public class T01GuildMethods {
     private static final String METHOD_NOT_PRESENT_ERROR_MESSAGE = "The method '%s.%s' does not exist(actual methods parameter types: '%s' ;expected - '%s')!";
     private static final String METHOD_HAS_WRONG_RETURN_TYPE = "The method '%s.%s()' has the wrong return type(actual - '%s'; expected - '%s')!";
     private static final String METHOD_HAS_PARAMETER_TYPES = "The method '%s.%s()' has incorrect parameter types(actual - '%s'; expected - '%s')!";
 
-    private class ExpMethod \{
+    private class ExpMethod {
         Class returnType;
         String name;
-        Class\[\] parameterTypes;
+        Class[] parameterTypes;
 
-        public ExpMethod(Class returnType, String name, Class... parameterTypes) \{
+        public ExpMethod(Class returnType, String name, Class... parameterTypes) {
             this.returnType = returnType;
             this.name = name;
             this.parameterTypes = parameterTypes;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateClassMethods() \{
+    public void validateClassMethods() {
         Class playerClazz = getType("Player");
         Class guildClazz = getType("Guild");
 
-        ExpMethod\[\] methods = new ExpMethod\[\]\{
+        ExpMethod[] methods = new ExpMethod[]{
                 new ExpMethod(void.class, "addPlayer", playerClazz),
                 new ExpMethod(boolean.class, "removePlayer", String.class),
                 new ExpMethod(void.class, "promotePlayer", String.class),
                 new ExpMethod(void.class, "demotePlayer", String.class),
-                new ExpMethod(Player\[\].class, "kickPlayersByClass", String.class),
+                new ExpMethod(Player[].class, "kickPlayersByClass", String.class),
                 new ExpMethod(int.class, "count"),
                 new ExpMethod(String.class, "report"),
-        \};
+        };
 
-        for (ExpMethod method : methods) \{
+        for (ExpMethod method : methods) {
             validateMethod(guildClazz, method);
-        \}
-    \}
+        }
+    }
 
-    private void validateMethod(Class clazz, ExpMethod expMethod) \{
+    private void validateMethod(Class clazz, ExpMethod expMethod) {
         String expectedReturnType = expMethod.returnType.toString();
         String expectedName = expMethod.name;
-        Class\[\] expectedParameterTypes = expMethod.parameterTypes;
+        Class[] expectedParameterTypes = expMethod.parameterTypes;
 
         Method actualMethod = getMethod(clazz, expectedName, expectedParameterTypes);
 
         // Tests whether the method exist
         String actualMethodsParametersMessage = null;
 
-        if (actualMethod == null) \{
+        if (actualMethod == null) {
             actualMethodsParametersMessage = findMethodFromMethods(clazz, expectedName);
-        \}
+        }
 
         String existMessage = String.format(METHOD_NOT_PRESENT_ERROR_MESSAGE, clazz.getSimpleName(), expectedName, actualMethodsParametersMessage, arrayToString(expectedParameterTypes));
         Assert.assertNotNull(existMessage, actualMethod);
@@ -430,47 +427,47 @@ public class T01GuildMethods \{
         String actualReturnType = actualMethod.getReturnType().toString();
         String returnTypeMessage = String.format(METHOD_HAS_WRONG_RETURN_TYPE, clazz.getSimpleName(), expectedName, actualReturnType, expectedReturnType);
         Assert.assertEquals(returnTypeMessage, expectedReturnType, actualReturnType);
-    \}
+    }
 
-    private String arrayToString(Class\[\] array) \{
-        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
+    private String arrayToString(Class[] array) {
+        String[] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String[]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
-    \}
+    }
 
-    private String findMethodFromMethods(Class clazz, String methodName) \{
-        Method\[\] methods = clazz.getMethods();
+    private String findMethodFromMethods(Class clazz, String methodName) {
+        Method[] methods = clazz.getMethods();
 
-        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -\> m.getName().equals(methodName)).toArray(Method\[\]::new);
+        Method[] methodsWithGivenName = Arrays.stream(methods).filter(m -> m.getName().equals(methodName)).toArray(Method[]::new);
 
         StringBuilder sb = new StringBuilder();
 
-        for (Method method : methodsWithGivenName) \{
+        for (Method method : methodsWithGivenName) {
             String parameterTypes = arrayToString(method.getParameterTypes());
-            sb.append("\{ " + parameterTypes + " \} ");
-        \}
+            sb.append("{ " + parameterTypes + " } ");
+        }
 
         return sb.toString().trim();
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -486,12 +483,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T02ValidatePlayerInstance \{
+public class T02ValidatePlayerInstance {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validatePlayerInstance() \{
-        Object\[\] arguments = new Object\[\]\{"Gumble", "Mage"\};
+    public void validatePlayerInstance() {
+        Object[] arguments = new Object[]{"Gumble", "Mage"};
         Class clazz = getType("Player");
         Object object = createObjectInstance(clazz, arguments);
 
@@ -512,77 +509,77 @@ public class T02ValidatePlayerInstance \{
         Assert.assertEquals(nameMessage, expectedName, actualName);
         Assert.assertEquals(clazzMessage, expectedClazz, actualClazz);
         Assert.assertEquals(toStringMessage, expectedToString, actualToString);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (InstantiationException e) {
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -598,26 +595,26 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T03ValidateGuildAddMethod \{
+public class T03ValidateGuildAddMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateGuildAddMethod() \{
+    public void validateGuildAddMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] guildArguments = new Object\[\]\{"Freshness", 20\};
+        Object[] guildArguments = new Object[]{"Freshness", 20};
         Class guild = getType("Guild");
         Object guildObject = createObjectInstance(guild, guildArguments);
 
         //Create Player object
-        Object\[\] PlayerArguments = new Object\[\]\{"Burp", "Rogue"\};
+        Object[] PlayerArguments = new Object[]{"Burp", "Rogue"};
         Class playerClazz = getType("Player");
         Object playerObject = createObjectInstance(playerClazz, PlayerArguments);
 
         Object expectedCount = 1;
 
         //Act
-        Object\[\] methodArgs = new Object\[\]\{playerObject\};
+        Object[] methodArgs = new Object[]{playerObject};
 
         getMethodValue(guildObject, guild, "addPlayer", methodArgs, playerClazz);
 
@@ -626,78 +623,78 @@ public class T03ValidateGuildAddMethod \{
         //Assert
         String countMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guild.getName(), "count", actualCount, expectedCount);
         Assert.assertEquals(countMessage, expectedCount, actualCount);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -713,31 +710,31 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T05ValidateGuildAddMethodWithFilledCapacity \{
+public class T05ValidateGuildAddMethodWithFilledCapacity {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateGuildAddMethodWithFilledCapacity() \{
+    public void validateGuildAddMethodWithFilledCapacity() {
         //Arrange
         //Create Guild object
-        Object\[\] guildArguments = new Object\[\]\{"Freshness", 1\};
+        Object[] guildArguments = new Object[]{"Freshness", 1};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, guildArguments);
 
         //Create Player objects
-        Object\[\] playerOneArguments = new Object\[\]\{"Chichi One", "Mage One"\};
+        Object[] playerOneArguments = new Object[]{"Chichi One", "Mage One"};
         Class playerOneClazz = getType("Player");
         Object playerOneObject = createObjectInstance(playerOneClazz, playerOneArguments);
 
-        Object\[\] playerTwoArguments = new Object\[\]\{"Chichi Two", "Mage Two"\};
+        Object[] playerTwoArguments = new Object[]{"Chichi Two", "Mage Two"};
         Class playerTwoClazz = getType("Player");
         Object playerTwoObject = createObjectInstance(playerTwoClazz, playerTwoArguments);
 
         Object expectedCount = 1;
 
         //Act
-        Object\[\] methodOneArgs = new Object\[\]\{playerOneObject\};
-        Object\[\] methodTwoArgs = new Object\[\]\{playerTwoObject\};
+        Object[] methodOneArgs = new Object[]{playerOneObject};
+        Object[] methodTwoArgs = new Object[]{playerTwoObject};
 
         getMethodValue(guildObject, guildClazz, "addPlayer", methodOneArgs, playerOneClazz);
         getMethodValue(guildObject, guildClazz, "addPlayer", methodTwoArgs, playerTwoClazz);
@@ -747,78 +744,78 @@ public class T05ValidateGuildAddMethodWithFilledCapacity \{
         //Assert
         String countMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "count", actualCount, expectedCount);
         Assert.assertEquals(countMessage, expectedCount, actualCount);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -834,24 +831,24 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T06ValidateGuildRemovePlayerMethod \{
+public class T06ValidateGuildRemovePlayerMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateAquariumRemoveMethod() \{
+    public void validateAquariumRemoveMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] aquariumArguments = new Object\[\]\{"Freshness", 10\};
+        Object[] aquariumArguments = new Object[]{"Freshness", 10};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, aquariumArguments);
 
         //Create Player objects
         //Create Player objects
-        Object\[\] playerOneArguments = new Object\[\]\{"Chichi", "Mage"\};
+        Object[] playerOneArguments = new Object[]{"Chichi", "Mage"};
         Class playerOneClazz = getType("Player");
         Object playerOneObject = createObjectInstance(playerOneClazz, playerOneArguments);
 
-        Object\[\] playerTwoArguments = new Object\[\]\{"Beauty", "Priest"\};
+        Object[] playerTwoArguments = new Object[]{"Beauty", "Priest"};
         Class playerTwoClazz = getType("Player");
         Object playerTwoObject = createObjectInstance(playerTwoClazz, playerTwoArguments);
 
@@ -860,14 +857,14 @@ public class T06ValidateGuildRemovePlayerMethod \{
         Object expectedIsRemoved = true;
 
         //Act
-        Object\[\] methodOneArgs = new Object\[\]\{playerOneObject\};
-        Object\[\] methodTwoArgs = new Object\[\]\{playerTwoObject\};
+        Object[] methodOneArgs = new Object[]{playerOneObject};
+        Object[] methodTwoArgs = new Object[]{playerTwoObject};
 
         getMethodValue(guildObject, guildClazz, "addPlayer", methodOneArgs, playerOneClazz);
         getMethodValue(guildObject, guildClazz, "addPlayer", methodTwoArgs, playerTwoClazz);
 
         Object actualIsRemoved =
-                getMethodValue(guildObject, guildClazz, "removePlayer", new Object\[\]\{"Chichi"\}, String.class);
+                getMethodValue(guildObject, guildClazz, "removePlayer", new Object[]{"Chichi"}, String.class);
 
         Object actualCount = getMethodValue(guildObject, guildClazz, "count", null);
 
@@ -877,78 +874,78 @@ public class T06ValidateGuildRemovePlayerMethod \{
 
         String countMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "count", actualCount, expectedCount);
         Assert.assertEquals(countMessage, expectedCount, actualCount);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -965,125 +962,125 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T07ValidateGuildKickByClassMethod \{
+public class T07ValidateGuildKickByClassMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateAquariumRemoveMethod() \{
+    public void validateAquariumRemoveMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] aquariumArguments = new Object\[\]\{"Freshness", 10\};
+        Object[] aquariumArguments = new Object[]{"Freshness", 10};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, aquariumArguments);
 
         //Create Player objects
-        Object\[\] playerOneArguments = new Object\[\]\{"Chichi", "Mage"\};
+        Object[] playerOneArguments = new Object[]{"Chichi", "Mage"};
         Class playerOneClazz = getType("Player");
         Object playerOneObject = createObjectInstance(playerOneClazz, playerOneArguments);
 
-        Object\[\] playerTwoArguments = new Object\[\]\{"Beautys", "Mage"\};
+        Object[] playerTwoArguments = new Object[]{"Beautys", "Mage"};
         Class playerTwoClazz = getType("Player");
         Object playerTwoObject = createObjectInstance(playerTwoClazz, playerTwoArguments);
 
-        Object\[\] playerThreeArguments = new Object\[\]\{"Beauty", "Priest"\};
+        Object[] playerThreeArguments = new Object[]{"Beauty", "Priest"};
         Class playerThreeClazz = getType("Player");
         Object playerThreeObject = createObjectInstance(playerTwoClazz, playerThreeArguments);
 
         Object expectedCount = 1;
-        Object\[\] expectedResult = new Player\[\]\{(Player) playerOneObject, (Player) playerTwoObject\};
+        Object[] expectedResult = new Player[]{(Player) playerOneObject, (Player) playerTwoObject};
 
         //Act
-        Object\[\] methodOneArgs = new Object\[\]\{playerOneObject\};
-        Object\[\] methodTwoArgs = new Object\[\]\{playerTwoObject\};
-        Object\[\] methodThreeArgs = new Object\[\]\{playerThreeObject\};
+        Object[] methodOneArgs = new Object[]{playerOneObject};
+        Object[] methodTwoArgs = new Object[]{playerTwoObject};
+        Object[] methodThreeArgs = new Object[]{playerThreeObject};
 
         getMethodValue(guildObject, guildClazz, "addPlayer", methodOneArgs, playerOneClazz);
         getMethodValue(guildObject, guildClazz, "addPlayer", methodTwoArgs, playerTwoClazz);
         getMethodValue(guildObject, guildClazz, "addPlayer", methodThreeArgs, playerThreeClazz);
 
         Object actualIsRemoved =
-                getMethodValue(guildObject, guildClazz, "kickPlayersByClass", new Object\[\]\{"Mage"\}, String.class);
+                getMethodValue(guildObject, guildClazz, "kickPlayersByClass", new Object[]{"Mage"}, String.class);
 
         Object actualCount = getMethodValue(guildObject, guildClazz, "count", null);
 
         // Assert
         String isRemovedMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "kickPlayersByClass", actualIsRemoved, expectedResult);
-        Assert.assertArrayEquals(isRemovedMessage, expectedResult, (Object\[\]) actualIsRemoved);
+        Assert.assertArrayEquals(isRemovedMessage, expectedResult, (Object[]) actualIsRemoved);
 
         String countMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "count", actualCount, expectedCount);
         Assert.assertEquals(countMessage, expectedCount, actualCount);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -1099,19 +1096,19 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T08ValidateGuildPromotePlayerMethod \{
+public class T08ValidateGuildPromotePlayerMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateGuildPromotePlayerMethod() \{
+    public void validateGuildPromotePlayerMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] guildArguments = new Object\[\]\{"Freshness", 20\};
+        Object[] guildArguments = new Object[]{"Freshness", 20};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, guildArguments);
 
         //Create Player object
-        Object\[\] PlayerArguments = new Object\[\]\{"Chichi", "Mage"\};
+        Object[] PlayerArguments = new Object[]{"Chichi", "Mage"};
         Class playerClazz = getType("Player");
         Object playerObject = createObjectInstance(playerClazz, PlayerArguments);
 
@@ -1120,88 +1117,88 @@ public class T08ValidateGuildPromotePlayerMethod \{
                 "Description: n/a");
 
         //Act
-        Object\[\] methodOneArgs = new Object\[\]\{playerObject\};
+        Object[] methodOneArgs = new Object[]{playerObject};
         getMethodValue(guildObject, guildClazz, "addPlayer", methodOneArgs, playerClazz);
 
-        getMethodValue(guildObject, guildClazz, "promotePlayer", new Object\[\] \{"Chichi"\}, String.class);
+        getMethodValue(guildObject, guildClazz, "promotePlayer", new Object[] {"Chichi"}, String.class);
 
         Object actualToString = getMethodValue(playerObject, playerClazz, "toString", null).toString();
 
         //Assert
         String toStringMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "toString", actualToString, expectedtoString);
         Assert.assertEquals(toStringMessage, expectedtoString, actualToString);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -1217,19 +1214,19 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T09ValidateGuildDemotePlayerMethod \{
+public class T09ValidateGuildDemotePlayerMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateGuildPromotePlayerMethod() \{
+    public void validateGuildPromotePlayerMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] guildArguments = new Object\[\]\{"Freshness", 20\};
+        Object[] guildArguments = new Object[]{"Freshness", 20};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, guildArguments);
 
         //Create Player object
-        Object\[\] PlayerArguments = new Object\[\]\{"Chichi", "Mage"\};
+        Object[] PlayerArguments = new Object[]{"Chichi", "Mage"};
         Class playerClazz = getType("Player");
         Object playerObject = createObjectInstance(playerClazz, PlayerArguments);
 
@@ -1238,89 +1235,89 @@ public class T09ValidateGuildDemotePlayerMethod \{
                 "Description: n/a");
 
         //Act
-        Object\[\] methodOneArgs = new Object\[\]\{playerObject\};
+        Object[] methodOneArgs = new Object[]{playerObject};
         getMethodValue(guildObject, guildClazz, "addPlayer", methodOneArgs, playerClazz);
 
-        getMethodValue(guildObject, guildClazz, "promotePlayer", new Object\[\]\{"Chichi"\}, String.class);
-        getMethodValue(guildObject, guildClazz, "demotePlayer", new Object\[\]\{"Chichi"\}, String.class);
+        getMethodValue(guildObject, guildClazz, "promotePlayer", new Object[]{"Chichi"}, String.class);
+        getMethodValue(guildObject, guildClazz, "demotePlayer", new Object[]{"Chichi"}, String.class);
 
         Object actualToString = getMethodValue(playerObject, playerClazz, "toString", null).toString();
 
         //Assert
         String toStringMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, guildClazz.getName(), "toString", actualToString, expectedToString);
         Assert.assertEquals(toStringMessage, expectedToString, actualToString);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
         Constructor ctor = null;
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
@@ -1336,27 +1333,27 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-public class T10ValidateGuildReportMethod \{
+public class T10ValidateGuildReportMethod {
     private static final String METHOD_INCORRECT_RETURN_VALUE = "The method '%s.%s' returns invalid data (actual result: '%s'; expected - '%s')!";
 
     @Test
-    public void validateAquariumReportMethod() \{
+    public void validateAquariumReportMethod() {
         //Arrange
         //Create Guild object
-        Object\[\] aquariumArguments = new Object\[\]\{"Freshness", 10\};
+        Object[] aquariumArguments = new Object[]{"Freshness", 10};
         Class guildClazz = getType("Guild");
         Object guildObject = createObjectInstance(guildClazz, aquariumArguments);
 
         //Create Player objects
-        Object\[\] playerOneArguments = new Object\[\]\{"Chichi", "Mage"\};
+        Object[] playerOneArguments = new Object[]{"Chichi", "Mage"};
         Class playerOneClazz = getType("Player");
         Object playerOneObject = createObjectInstance(playerOneClazz, playerOneArguments);
 
-        Object\[\] playerTwoArguments = new Object\[\]\{"Beauty", "Rogue"\};
+        Object[] playerTwoArguments = new Object[]{"Beauty", "Rogue"};
         Class playerTwoClazz = getType("Player");
         Object playerTwoObject = createObjectInstance(playerTwoClazz, playerTwoArguments);
 
-        Object\[\] playerThreeArguments = new Object\[\]\{"Beautys", "Priest"\};
+        Object[] playerThreeArguments = new Object[]{"Beautys", "Priest"};
         Class playerThreeClazz = getType("Player");
         Object playerThreeObject = createObjectInstance(playerThreeClazz, playerThreeArguments);
 
@@ -1375,9 +1372,9 @@ public class T10ValidateGuildReportMethod \{
         // Act
         // Invoke methods
         // add Fish to Aquarium
-        getMethodValue(guildObject, guildClazz, "addPlayer", new Object\[\]\{playerOneObject\}, playerOneClazz);
-        getMethodValue(guildObject, guildClazz, "addPlayer", new Object\[\]\{playerTwoObject\}, playerOneClazz);
-        getMethodValue(guildObject, guildClazz, "addPlayer", new Object\[\]\{playerThreeObject\}, playerOneClazz);
+        getMethodValue(guildObject, guildClazz, "addPlayer", new Object[]{playerOneObject}, playerOneClazz);
+        getMethodValue(guildObject, guildClazz, "addPlayer", new Object[]{playerTwoObject}, playerOneClazz);
+        getMethodValue(guildObject, guildClazz, "addPlayer", new Object[]{playerThreeObject}, playerOneClazz);
 
         String actualReport =
                 getMethodValue(guildObject, guildClazz, "report", null).toString().trim();
@@ -1390,79 +1387,79 @@ public class T10ValidateGuildReportMethod \{
                 actualReport,
                 expectedReport);
         Assert.assertEquals(reportMessage, expectedReport, actualReport);
-    \}
+    }
 
-    private Object getMethodValue(Object object, Class clazz, String methodName, Object\[\] methodArgs, Class... parameterTypes) \{
+    private Object getMethodValue(Object object, Class clazz, String methodName, Object[] methodArgs, Class... parameterTypes) {
         Method method = getMethod(clazz, methodName, parameterTypes);
 
         Object methodValue = null;
-        if (method != null) \{
-            try \{
+        if (method != null) {
+            try {
                 methodValue = method.invoke(object, methodArgs);
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return methodValue;
-    \}
+    }
 
-    private Object createObjectInstance(Class clazz, Object\[\] arguments) \{
+    private Object createObjectInstance(Class clazz, Object[] arguments) {
         Constructor ctor = null;
 
-        Class\[\] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class\[\]::new);
+        Class[] argumentTypes = Arrays.stream(arguments).map(Object::getClass).toArray(Class[]::new);
 
-        try \{
+        try {
             ctor = clazz.getConstructor(argumentTypes);
-        \} catch (NoSuchMethodException e) \{
+        } catch (NoSuchMethodException e) {
             mapIntegerToInt(argumentTypes);
 
-            try \{
+            try {
                 ctor = clazz.getConstructor(argumentTypes);
-            \} catch (NoSuchMethodException ex) \{
-            \}
-        \}
+            } catch (NoSuchMethodException ex) {
+            }
+        }
 
         Object obj = null;
 
-        if (ctor != null) \{
-            try \{
+        if (ctor != null) {
+            try {
                 obj = ctor.newInstance(arguments);
-            \} catch (InstantiationException e) \{
+            } catch (InstantiationException e) {
                 e.printStackTrace();
-            \} catch (IllegalAccessException e) \{
-            \} catch (InvocationTargetException e) \{
-            \}
-        \}
+            } catch (IllegalAccessException e) {
+            } catch (InvocationTargetException e) {
+            }
+        }
 
         return obj;
-    \}
+    }
 
-    private void mapIntegerToInt(Class\[\] types) \{
-        for (int i = 0; i \< types.length; i++) \{
-            if (types\[i\].getName().equals(Integer.class.getName())) \{
-                types\[i\] = int.class;
-            \}
-        \}
-    \}
+    private void mapIntegerToInt(Class[] types) {
+        for (int i = 0; i < types.length; i++) {
+            if (types[i].getName().equals(Integer.class.getName())) {
+                types[i] = int.class;
+            }
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
-    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) \{
+    private Method getMethod(Class clazz, String expectedName, Class... parameterTypes) {
         Method method = null;
 
-        try \{
+        try {
             method = clazz.getMethod(expectedName, parameterTypes);
-        \} catch (NoSuchMethodException e) \{
-        \}
+        } catch (NoSuchMethodException e) {
+        }
 
         return method;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
