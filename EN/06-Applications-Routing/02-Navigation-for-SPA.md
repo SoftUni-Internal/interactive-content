@@ -18,11 +18,11 @@ It gives the **user** a better **experience**.
 
 [slide hideTitle]
 
-# Hash Based Routing
+# Hash-Based Routing 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-17-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We use **hash-based** routing to deep link a section of a page.
+We use **hash-based** routing to "deep link" a section of a page.
 
 This type of navigation simulates the loading of different content.
 
@@ -34,11 +34,11 @@ To extract the hash from the URL, we use:
 window.location.href.split('#')[1] || '';
 ```
 
-If we use only `window.location.href`, we will retrieve the whole URL.
+If we use only **window.location.href**, we will **retrieve the whole URL**.
 
-To extract the hash, we need to use `split('#')`.
+To extract the hash, we can use `split('#')`.
 
-We can change the location like this:
+An example for changing the location: 
 
 ```js
 let changePath = function (path) {
@@ -47,19 +47,19 @@ let changePath = function (path) {
 };
 ```
 
-We set the current URL in a variable called **currentPath**
+We set the current URL in a variable called "**currentPath**".
 
-After, we set `window.location.href` to the same URL but with a changed hash.
+After, we set the **window.location.href** to the same URL but with a changed hash.
 
 [/slide]
 
 [slide hideTitle]
 
-# Subscribing for Changes
+# Subscribing to Changes 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-18-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can subscribe for changes in the url.
+We can subscribe for changes in the URL.
 
 The subscribing looks like this:
 
@@ -89,13 +89,13 @@ In this function, we check if the current hash is different.
 
 If not, we assign the hash to the **URL** variable.
 
-After, we set a **timeout** to 200ms, at which the function to be called.
+After that, we set a **timeout** to 200ms, at which the function to be called.
 
 [/slide]
 
 [slide hideTitle]
 
-# Push Based Routing
+# Push-Based Routing 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-19-Push-based-routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -107,19 +107,19 @@ That can help with **SEO** and **Facebook Open Graph**.
 
 The **push-based** routing helps with **analytics** and fix **hashtag issues**.
 
-This routing allows us to use the **hash-based** routing as intended.
+This type of routing allows us to use the **hash-based** routing as intended.
 
 [/slide]
 
 [slide hideTitle]
 
-# History API
+# History API 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-20-History-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The History API provides access to the browser **history** object.
+The History API provides access to the browser "**history**" object.
 
-With history object we can use methods like `back()`, `forward()` and `go()`.
+We can use methods like `back()`, `forward()` and `go()` using the the "history" object. 
 
 This method allows us to have the native navigation that users want.
 
@@ -129,6 +129,8 @@ These methods can modify and add to the **history object entries**.
 
 They work in combination with the **popstate** event.
 
+If we use the `pushState()` method or the `replaceState()` method, the event listener will store a copy of the history object. 
+
 [/slide]
 
 [slide hideTitle]
@@ -136,8 +138,6 @@ They work in combination with the **popstate** event.
 # The PushState Method
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-21-The-Pushstate-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-We will have a look at the `pushState()` method.
 
 The **PushState** method adds a new entry to the **history object** of the browser.
 
@@ -168,13 +168,12 @@ The browsers ignores the second parameter, and that is why it is an empty string
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-22-The-ReplaceState-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us examine `replaceState()`.
 
-**ReplaceState** modifies the current entry.
+The **ReplaceState** moethod modifies the current entry.
 
-It takes **State**, **Title**, and **URL** as parameters.
+It takes a **State**, a **Title**, and a **URL** as parameters.
 
-The **Title** parameter will be ignored, by most of the browsers.
+The **Title** parameter will be ignored by most of the browsers.
 
 **ReplaceState** is useful if we want to update the **state object** or the **URL**.
 
@@ -201,8 +200,7 @@ The event will trigger when the history object changes.
 
 **Popstate event** will update the current entry to the last that the user has visited.
 
-if we use `pushState()` or `replaceState()`, the **event listener** will store a copy of the history object.
 
-We can read the current history object with `history.state.property` without waiting for the **popstate** event.
+We can read the current history object with **history.state.property** without waiting for the **popstate** event.
 
 [/slide]
