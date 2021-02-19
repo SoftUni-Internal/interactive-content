@@ -30,7 +30,7 @@ if (num == 1) {
 
 - How to trace the program's bugs using a debugger
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - Reading input from array
 

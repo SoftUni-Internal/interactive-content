@@ -17,7 +17,7 @@
 
 - How to create a project, files, and console applications in VSCode.
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - Data Types
 

@@ -52,7 +52,7 @@ console.log(`I am from ${homeTown}!`);
 let r = (150-20) / 2 + 5;
 ```
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - Compare values using comparison operators
 
