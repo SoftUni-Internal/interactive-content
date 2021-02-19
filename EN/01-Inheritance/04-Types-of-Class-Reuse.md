@@ -10,11 +10,17 @@ Extension of class is called **IS-A** relationship.
 public Student extends Person{}
 ```
 
-- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we 
+- Duplicate code is error prone, but also if we have a bug at one place we have to go and find all the places we
+
+
   used this code in order to fix it
+
+
 - **Reuse classes** through **extension** and add custom logic to it
-- When a class is not from our library and we don't know its implementation we can only extend the given class to 
-    add custom logic to it
+- When a class is not from our library and we don't know its implementation we can only extend the given class to
+
+
+add custom logic to it
 
 [image assetsSrc="inheritance-example(15).png" /]
 

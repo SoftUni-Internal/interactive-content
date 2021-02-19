@@ -35,7 +35,7 @@ Therefore it is called **derived** class.
 
 But also extend the functionality by adding a `String Company` parameter.
 
-Respectively we do the same for the `Student`, but with its internal logic which it has to add.
+Respectively we do the same for the `Student`, but with its own internal logic which it has to add.
 
 
 [image assetsSrc="inheritance-example(1).png" /]
@@ -94,9 +94,9 @@ class Employee extends Person { … }
 
 **Derived class taking all members from its base class**
 
-The **Derived** classes can inherit and call all the **non-private** members of the class.
+The **Derived** classes can inherit and call all the **non-private** members of the **Parent** class.
 
-If a unit is declared as private, the memory for it is declared as well when we create the class, but we can not call it through our **Derived** class.
+If a unit is declared as private, the memory for it is declared as well when we create the class, but we can use it through our **Derived** class.
 
 
 

@@ -1,12 +1,12 @@
+# Unit-Testing
+
 [slide hideTitle]
 
 # What is Unit-Testing?
 
-We saw what are the seven testing principles. 
-
 Lets continue with Unit-Testing.
 
-Unit-Testing means that we test the smaller **pieces/units** of our application.
+Unit-Testing means that we test smaller **pieces/units** of our application.
 
 Lets see what is the main difference between manual and automated testing.
 
@@ -16,9 +16,9 @@ Manual testing:
 
 - Our Manual testing methods cannot **cover** all of our code
 
-- This methods are not as easy as it should be
+- Menual testing methods are not as easy as they should be
 
-Here is one example: 
+Here is an example: 
 
 ```java
 void testSum() {
@@ -29,7 +29,7 @@ void testSum() {
 
 To make the things easier we need a **structured** approach that:
 
-- Allows us **refactoring**
+- Allows **refactoring**
 
 - Reduce the **cost of change**
 
@@ -46,14 +46,16 @@ To make the things easier we need a **structured** approach that:
 Automated testing contains:
 
 - Unit tests
+  - A **piece of a single logical unit** in our code (method, class, etc.)
+- Integration tests
+  - A test of a module in our app (payment, registration, etc.)
+
 
 - System tests
-
-- Integration tests
+  - End-to-End testing of our full system.
 
 
 [image assetsSrc="Unit-Testing-Example(1).png" /]
-
 
 [/slide]
 
@@ -81,11 +83,17 @@ After creating a Maven project, we must copy and paste this code in our pom.xml 
 </project>
 ```
 
-Next, lets create a new **package** for our tests.
+[/slide]
 
-After that we must create our first class for test methods. (e.g **CalculatorTests**)
+[slide hideTitle]
 
-Now, we can create our first **public void** method annotated with `@Test`.
+# JUnit - Writing Tests
+
+Lets create a new **package** for our tests.
+
+Than we must create our first class for test methods. (e.g **CalculatorTests**)
+
+We can now create our first **public void** method annotated with `@Test`.
 
 ``` java
 @Test
@@ -101,19 +109,19 @@ public void commandShouldMultiplyNumbers() {
 
 # 3A Pattern
 
-There is a **must-known** pattern if we want to make a better unit tests.
+There is a **must-know** pattern when creating unit tests.
 
-The AAA pattern (**Arrange-Act-Assert**) became the **standart** across our industry.
+The AAA pattern (**Arrange-Act-Assert**) became the **standard** across our industry.
 
-The basis of this pattern is that all tests should follow the default layer.
+The basis of this pattern is that all tests should follow a default layer.
 
-At the beginning, we must **arrange** all the conditions to the system.
+At the beginning, we must **Arrange** all the conditions to the system.
 
-After that we take actions required for the test. That is the "**Act**" part.
+After that we take the actions **Act**, needed to produce a result.
 
-Finally, we **assert** that the expected output is generated.
+Finally, we **Assert** that the expected output is generated.
 
-Let's take a look at this simple example:
+Lets take a look at this simple example:
 
 ``` java
 @Test
@@ -127,15 +135,25 @@ Let's take a look at this simple example:
     }
 ```
 
-Sometimes we must throw exceptions as expected behavior.
+[/slide]
+
+[slide hideTitle]
+
+# Exceptions
+
+In some method we may need to throw an exception for (example: invalid input) in our code, we can test this behaviour like:
 
 ``` java
-@Test(expected = IllegalArgumentException.class) 
+@Test(expected = IllegalArgumentException.class) //Assert
 public void multiplyingWordsShouldThrow() {
+  //Arrange
   Calculator calculator = new Calculator();
+  
+  //Act
   calculator.multiply(a, b);
 }
 ```
+
 
 
 [/slide]
@@ -147,7 +165,7 @@ public void multiplyingWordsShouldThrow() {
 ## Description
 Maven is build automation tool that takes care of dependencies for your project. 
 
-Before you can make one, make sure that you enable the plugin in IntelliJ **[File -> Settings -> Plugins -> Maven Integration]**
+Before you can make one, make sure that you enable the plugin in IntelliJ \[File \-\> Settings \-\> Plugins \-\> Maven Integration\]
 
 [image assetsSrc="Unit-Testing-Example(2).png" /]
 
@@ -194,7 +212,7 @@ Create the new package **rpg_tests** and inside create the class `AxeTests`
 
 [image assetsSrc="Unit-Testing-Example(7).png" /]
 
-1. Inside the class create your first test:
+Inside the class create your first test:
 
 ```java
 public class AxeTests{
@@ -210,26 +228,26 @@ public class AxeTests{
 }
 ```
 
-2. Arrange preconditions:
+Arrange preconditions:
 ```java
 //Arrange
 Axe axe = new Axe(10, 10);
 Dummy dummy = new Dummy(10, 10);
 ```
 
-3. Execute tested behaviour:
+Execute tested behaviour:
 ```java
 //Act
 axe.attack(dummy);
 ```
 
-4. Assert postconditions:
+Assert postconditions:
 ```java
 //Assert
 Assert.assertEquals(9, age.getDurabilityPoints());
 ```
 
-1. Create your second text method:
+Create your second text method:
 ```java
 @Test(expected = IllegalStateExcepiton.class) //Assert
 public void brokenWeaponCantAttack(){
@@ -240,7 +258,7 @@ public void brokenWeaponCantAttack(){
 }
 ```
 
-2. Arrange preconditions and test behaviour:
+Arrange preconditions and test behaviour:
 ```java
 //Arrange
 Axe axe - new Axe(10, 1);

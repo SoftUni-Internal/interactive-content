@@ -6,9 +6,9 @@
 
 Software entities (**classes, modules, methods, etc.**) should be extendable without actually changing the contents of the class you are extending. 
 
-If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code** and adding new functionallities to our classes would only be by adding new code, not fixing old one.
+If we follow this principle strongly enough, it is possible to then modify the behavior of our code **without ever touching** a piece of **the original code** and adding new functionallities to our classes would happen only through adding new code, not fixing old one.
 
-This principle does not count if we are fixing bugs, only than we should modify the existing code.
+This principle does not count if we are fixing bugs, only then we should modify the existing code.
 
 [/slide]
 
@@ -79,9 +79,9 @@ Each **shape** must have its **own logic** to calculate its area.
 
 See the solution of the problem in the following code: 
 
-1. We add **abstraction** by creating the **Shape** Interface
+- We add **abstraction** by creating the **Shape** Interface
 
-2. We declare the `calculateArea()` method to the **Shape** Interface
+- We declare the `calculateArea()` method to the **Shape** Interface
 
 ```java
 public interface Shape {
@@ -89,7 +89,7 @@ public interface Shape {
 }
 ```
 
-3. By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method
+- By implementing the **Shape** Interface, all shapes classes are obligatory in order to implement the `calculateArea()` method
 
 **Circle** class:
 

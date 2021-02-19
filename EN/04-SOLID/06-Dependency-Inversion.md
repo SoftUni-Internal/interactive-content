@@ -40,12 +40,9 @@ public class Button() {
     }
 
    public void poll() {
-
       if (something) {
-
          lamp.turnOn();
       } else {
-
          lamp.turnOff();
       }
    }
@@ -53,7 +50,7 @@ public class Button() {
 ```
 **Button** class **depends directly on Lamp** class: if Lamp changes, then Button will have to be changed too.
 
-Furthermore, **Button class is not reusable**: you can’t use it to switch on a coffee machine, for example.
+Furthermore, **Button class is not reusable**: you cannot use it to switch on a coffee machine, for example.
 
 The above code is a violation of the **Dependency Inversion principle**.
 
@@ -73,7 +70,7 @@ public interface SwitchableDevice {
 }
 ```
 
-Now, the `Button` class depends on the `SwitchableDevice` interface, not on concrete class such as `Lamp`:
+The `Button` class depends on the `SwitchableDevice` interface, not on concrete class such as `Lamp`:
 
 ```java 
 public class Button {
@@ -168,7 +165,7 @@ We can achieve Dependency-Inversion Principle by applying the **Dependency Injec
 
 Dependency Injection allows us to use **Inversion of Control Container (IOC)**.
 
-Basically, it is a tool in which we register all dependencies as **\{Interface\} = \{Class to generate\}**, then every time we need a dependency it passes it to us without us specifying it. 
+Basically, it is a tool in which we register all dependencies as \{**Interface**\} = \{**Class to generate**\}, then every time we need a dependency it passes it to us without us specifying it. 
 
 There are 3 types of Dependency Injection and it's important for every developer to know them.
 

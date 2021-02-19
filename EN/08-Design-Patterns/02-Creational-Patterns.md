@@ -1,9 +1,6 @@
-[slide] 
-
+[slide hideTitle]
 
 # Creational Patterns
-
-Now, let's see the types of design patterns:
 
 Creational patterns are **object creational design patterns**.
 
@@ -11,7 +8,7 @@ We use these patterns when we must decide on how to create an object of a class.
 
 They contain two main ideas:
 
-- **Encapsulating** knowledge about which classes the system uses.
+- **Encapsulating** knowledge about which classes the system uses
 
 - **Hiding** how instances of these classes are created.
 
@@ -42,12 +39,12 @@ public class Singleton {
     }
 
     public void printMessage() {
-        System.out.println("Hello, i am singleton class");
+        System.out.println("Hello, I am singleton class");
     }
 }
 ```
 
-Now, let's see what is going on in our Main class
+Let's see what is going on in our `Main` class
 
 ``` java
 public class Main {
@@ -77,7 +74,7 @@ This way, our Singleton class provides a method to get its **static** instance t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Prototype Pattern
 
@@ -127,15 +124,13 @@ We can use the **Prototype Design Pattern** when:
 
 - We need to instantiate classes at runtime
 
-- It's complicated or expensive for us to create a class
+- It is complicated or expensive for us to create a class
 
-- Our clients don't need to know of object creation and representation
-
-
+- Our clients do not need to know of object creation and representation
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Builder Pattern
 
@@ -147,13 +142,13 @@ We can create an object with a lot of possible configuration options.
 
 Usage of Builder pattern:
 
-- When our construction process must allow different representations for the object that is constructed.
+- When our construction process must allow different representations for the object that is constructed (highly customizable).
 
 - When we want our algorithm for creating objects to be independent of the parts that make up our object and how they are assembled.
 
 Imagine that we want to create a character for our MMORPG game. Let's allow our constructor to create the character for us.
 
-Let's take a look at this code example:
+Take a look at this code example:
 
 ``` java
 // this is our Hero class
@@ -165,18 +160,27 @@ public final class Hero {
     private final Armor armor;
     private final Weapon weapon;
 
- Hero(Builder builder) {
-    this.race = builder.race;
-    this.name = builder.name;
-    this.startingHP = builder.startingHP;
-    this.hairColor = builder.hairColor;
-    this.weapon = builder.weapon;
-    this.armor = builder.armor;
+ Hero(
+     Race race, 
+     String name, 
+     Integer startingHP, 
+     HairColor hairColor, 
+     Armor armor, 
+     Weapon weapon
+     ) {
+    this.race = race;
+    this.name = name;
+    this.startingHP = startingHP;
+    this.hairColor = hairColor;
+    this.armor = armor;
+    this.weapon = weapon;
     }
+
+    //...getters
 }
 ```
 
-And that's how our builder class should be looking:
+And that Is how our builder class should be looking:
 
 ``` java
 public class Builder {
@@ -217,7 +221,14 @@ public class Builder {
     }
 
     public Hero build() {
-        return new Hero(this);
+        return new Hero(
+            this.race,
+            this.name,
+            this.startingHp,
+            this.hairColor,
+            this.armor,
+            this.weapon
+            );
     }
 }
 ```
@@ -225,6 +236,5 @@ public class Builder {
 With this builder pattern, we have control over the steps of the **construction process**.
 
 We can create a different representation with the same construction process.
-
 
 [/slide]

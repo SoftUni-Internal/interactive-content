@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Structural Patterns
 
@@ -10,15 +10,17 @@ Structural patterns rely on the concept of interfaces and inheritance, allowing 
 
 This kind of pattern makes the design by identifying a simple way to realize **relationship** between different entities.
 
-Knowing this, let's take a look at the first Structural pattern:
+Knowing this, let's take a look at the first **Structural pattern**:
 
-# Façade Pattern
+# Facade Pattern
 
-So, basically, the Façade pattern is used to hide the complexities of our system and provides a simplified **interface** to the client. With this interface, our client can access the system.
+The Façade pattern is used to hide the complexities of our system and provides a simplified **interface** to the client. With this interface, our client can access the system.
 
-We use the Façade pattern when we have a very complex or difficult to understand architecture.
+We use the Facade pattern when we have a very complex or difficult to understand architecture.
 
 This way the dependencies on a subsystem are minimized.
+
+Another reason to use Facade might be, if we are using outer poorly designed or too complex library and we use only few of it's methods, we can use Facade to provide an easier interface of it.
 
 [image assetsSrc="Design-Patterns(1).png" /]
 
@@ -81,7 +83,7 @@ This example shows us how a client can **interact** with the facade (in our case
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Composite Pattern
 

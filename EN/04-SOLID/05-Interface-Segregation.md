@@ -58,13 +58,13 @@ When an `Employee` class implements that interface there will not be any problem
 
 That is because the interface methods are suitable for the `Employee` class.​
 
-But let’s see what happens when a class `Robot` implements the same interface.​
+But lets see what happens when a class `Robot` implements the same interface.​
 
 The `Robot` class can implement the `work()` method, but the `sleep()` one is not appropriate for this class. 
 
-The problem here is that we force the *obot class to implement a method that it should not.​
+The problem here is that we force the `Robot` class to implement a method that it should not.​
 
-You saw what problems the Fat Interfaces can bring, let's list them our and their solutions and figure out a method to fix our problem.
+You saw what problems the Fat Interfaces can bring, lets list them our and their solutions and figure out a method to fix our problem.
 
 [/slide]
 

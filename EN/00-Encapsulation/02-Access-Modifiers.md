@@ -4,7 +4,7 @@
 
 # Private Access Modifier
 
-With the **private access** modifier an object can hide it is data from the rest of the objects in our program.
+With the **private access** modifier an object can hide its data from the rest of the objects in our program.
 
 We choose to make a **field or method** private when we want to preserve the interal logic of our object, so nobody can mess it up:
 
@@ -44,7 +44,7 @@ class Team {
 
 # Default Access Modifier
 
-When we do not specifically declare a modifier, a Default Access Modifier gets in power
+When we do not specifically declare a modifier, a Default Access Modifier gets in use:
 
 ```java
 class Team {
@@ -52,7 +52,7 @@ class Team {
   void setName(String name) {…}
 }
 ```
-**Available** to any other class in the same **package**:
+Each element with this Access Modifier is **Available** to any other class in the same **package**:
 
 ```java
 Team real = new Team("Real");

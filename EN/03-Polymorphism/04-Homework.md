@@ -1039,7 +1039,6 @@ The total memory allowed for use by your program is **16MB**
 | **Input** | **Output** |
 | --- | --- |
 | 1 * 2 * 3 ms * 4 * mr / 2 end | 72 |
-|  |  |
 
 | **Input** | **Output** |
 | --- | --- |
