@@ -74,7 +74,7 @@ Promise.resolve("Operation was successful!").then(
 );
 ```
 
-- `Promise.all(iterable)` - Takes an array of promises and returns a single `Promise`, which **resolves** to an array of values, **if all the given promises are resolved**
+- `Promise.all(iterable)` - Takes an array of promises and returns a single **Promise**, which **resolves** to an array of values, **if all the given promises are resolved**
 
 
 Otherwise, it would **reject immediately**.

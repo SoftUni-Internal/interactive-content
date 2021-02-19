@@ -24,7 +24,6 @@ Here is how the whole process happens:
 
 As a **single-threaded** language JavaScript has just **one call stack** and **one memory heap**.
 
-
 In other words - chunks of code are executed **one at a time**. 
 
 This way each of those chunks must wait for the previous one to be finished.
