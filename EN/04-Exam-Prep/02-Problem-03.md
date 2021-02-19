@@ -1,6 +1,6 @@
 # Problem 3: P!rates
 
-[slide]
+[slide hideTitle]
 
 # Description
 
@@ -8,9 +8,9 @@
 
 Until the `Sail` command is given you will be receiving:
 
-* Cities that you and your **crew has targeted**, and each city's population and gold, separated by `||` (vertical bar signs).
+* Cities that you and your **crew has targeted**, and each city's population and gold, separated by `||` (vertical bar signs)
 
-* If you receive a city which was **already targeted**, you have to increase its population and gold with the given values.
+* If you receive a city which was **already targeted**, you have to increase its population and gold with the given values
 
 After reaching the `Sail` command, you will start receiving lines of text representing events until the `End` command is given.
 
@@ -20,7 +20,7 @@ Events will be in the following format:
 
 This means that the crew has successfully attacked and plundered the town, eliminating the given number of people and stealing the respective amount of gold.
 
-For every town you attack print this message: `{town} plundered! {gold} gold stolen, {people} citizens killed.`
+For every town you attack, print this message: `{town} plundered! {gold} gold stolen, {people} citizens killed.`
 
 If any of these two values (population or gold) reaches zero, the town is destroyed.
 
@@ -34,7 +34,7 @@ Indicates economic growth in the given city, increasing its treasury by the spec
 
 The amount of gold in this case could be a **negative number**, so be careful.
 
-If a **negative amount of gold** is given in the command print:  
+If a **negative amount of gold** is given in the command, print:  
 
 `Gold added cannot be a negative number!`
 
@@ -76,10 +76,15 @@ function solve(input) {
 [task-description]
 
 # Examples
-**Input** 
+
+## Example 1
+
+### Input
+
 `['Tortuga||345000||1250', 'Santo Domingo||240000||630', 'Havana||410000||1100', 'Sail', 'Plunder=>Tortuga=>75000=>380', 'Prosper=>Santo Domingo=>180', 'End']`
 
-**Output**
+### Output
+
 Tortuga plundered! 380 gold stolen, 75000 citizens killed.
 
 180 gold added to the city treasury. Santo Domingo now has 810 gold.
@@ -89,10 +94,14 @@ Havana \-\> Population: 410000 citizens, Gold: 1100 kg
 Tortuga \-\> Population: 270000 citizens, Gold: 870 kg
 Santo Domingo \-\> Population: 240000 citizens, Gold: 810 kg
 
- **Input** 
+## Example 2
+
+### Input
+
 `['Nassau||95000||1000', 'San Juan||930000||1250', 'Campeche||270000||690', 'Port Royal||320000||1000', 'Port Royal||100000||2000', 'Sail', 'Prosper=>Port Royal=>-200', 'Plunder=>Nassau=>94000=>750', 'Plunder=>Nassau=>1000=>150', 'Plunder=>Campeche=>150000=>690', 'End']`
 
-**Output**
+### Output
+
 Gold added cannot be a negative number\!
 Nassau plundered\! 750 gold stolen, 94000 citizens killed.
 Nassau plundered\! 150 gold stolen, 1000 citizens killed.
