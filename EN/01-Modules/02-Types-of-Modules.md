@@ -113,21 +113,21 @@ module.exports.currencyConverter = {
 Here are some commonly used ones:
 
 - The `http` module
-    - used to create an **HTTP server**
+    * used to create an **HTTP server**
 
 ```js
 let http = require('http');
 ```
 
 - The `url` module:
-    - Used to parse a **URL string** into an **object** with an `href` property:
+    * used to parse a **URL string** into an **object** with an `href` property
 
 ```js
 let url = require('url');
 ```
 
 - The `fs` module:
-    - Enables access to the computer's **filesystem**:
+    * enables access to the computer's **filesystem**
 
 ```js
 let fs = require('fs');

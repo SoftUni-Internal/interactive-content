@@ -7,13 +7,13 @@
 
 - What Javascript modules are
 
-	- A set of functions to be included in applications
+	* a set of functions to be included in applications
 
-    - Reusable pieces of code that supercharge our productivity
+    * reusable pieces of code that supercharge our productivity
 
 
 - IIFE Modules
-    - Enabling data encapsulation: 
+    * enabling data encapsulation
 
 ```js 
 var myModule = (function() {
@@ -32,19 +32,19 @@ console.log(people); // ReferenceError
 
 - Node\.js Modules
   
-	- The **module.exports** - a special object is used to export data or functionality
+	* the **module.exports** - a special object is used to export data or functionality
   
-    - We use `require()` to import them
+    * we use `require()` to import them
 
 ```js
-const myModule = require("./myModule.js");
+const myModule = require('./myModule.js');
 
 module.exports = 'Hello world!';
 ```
 
 - ES6 Modules
-	- Built directly into JavaScript
-	- Declared using the `import/export` statements
+	* built directly into JavaScript
+	* declared using the import/export statements
 
 ```js
 import * as myModule from './myModule.js'
