@@ -27,9 +27,9 @@ You can learn more about DevTools [here](https://developers.google.com/web/tools
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-13-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Postman gives us the ability to test an API.
+**Postman** gives us the ability to test an API.
 
-With this tool, we can send requests and receive responses without writing code or using the browser.
+With this tool, we can send **requests** and **receive** responses without **writing code** or using the browser.
 
 Here is how it looks:
 

@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is AJAX
+# What is AJAX?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-23-24-what-is-ajax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -14,9 +14,9 @@ This technique allows us to **dynamically** **load** and **render** content or d
 
 There are two types of **AJAX**:
 
--  **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads
+- **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads
 
--  **JSON service**, has a JSON object, which we need to parse
+- **JSON service**, has a JSON object, which we need to parse
 
 [/slide]
 
@@ -40,7 +40,7 @@ That allows us to load the content **without** page reload.
 
 [slide hideTitle]
 
-# XMLHttpRequest – Standard API for AJAX
+# XMLHttpRequest - Standard API for AJAX
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-26-27-xmlhttp-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -50,7 +50,7 @@ For this example, we will use **XMLHttpRequest object** to request the data from
 
 We need to create a **button** and a **div**.
 
-```
+```js
 <button id="load">Load Repos</button>
 <div id="res"></div>
 ```
@@ -184,7 +184,7 @@ We check the response status, and if it is **200**, we continue with parsing the
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-32-chaining-promises-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The beneficial thing about **promises** is that when we use `fetch ()`, the result returned by it can be **separated** into functions.
+The beneficial thing about **promises** is that when we use `fetch()`, the result returned by it can be **separated** into functions.
 
 We can **chain** promises with `then()`.
 
@@ -244,7 +244,7 @@ If there is an error, `catch()` will print an error.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-34-post-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **POST** request is different from the **GET** request. 
+The **POST** request is different from the **GET** request.
 
 When we send a **POST** request, we need to set the **method**, the **headers**, and the **body**.
 
@@ -298,10 +298,10 @@ They show the type of response.
 
 | **Type** | **Description** |
 | --- | --- |
-|`basic`| Normal, or same-origin response |
-|`cors`| The response is received from valid cross-origin request |
-|`error`| Network error or not valid information |
-|`opaque`| Response for **no-cors** request send to cors resource |
-|`opaqueredirect`| The request was made with **manual** redirect |
+|**basic**| Normal, or same-origin response |
+|**cors**| The response is received from valid cross-origin request |
+|**error**| Network error or not valid information |
+|**opaque**| Response for **no-cors** request send to cors resource |
+|**opaqueredirect**| The request was made with **manual** redirect |
 
 [/slide]

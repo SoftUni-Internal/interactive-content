@@ -29,7 +29,9 @@ Place the name property as text inside the div with ID **stopName** and each bus
 
 Replace all highlighted parts with the relevant value from the response.
 
-If the request is not successful, or the information is not in the expected format, display **Error** as **stopName** and nothing in the list. The list should be cleared before every request is sent.
+If the request is not successful, or the information is not in the expected format, display **Error** as **stopName** and nothing in the list. 
+
+The list should be cleared before every request is sent.
 
 ## Examples
 
@@ -88,9 +90,6 @@ The web host will respond with valid data to IDs 1287, 1308, 1327, and 2334.
 [/slide]
 
 
-
-
-
 [slide hideTitle]
 
 # Problem: Bus Schedule
@@ -111,7 +110,7 @@ Initially, the info box shows **Not Connected**, and the **Arrive** button is **
 
 The ID of the first stop is **depot**.
 
-When the `Depart` button is clicked, make a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
+When the **Depart** button is clicked, make a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
 
 As a response, you will receive a JSON object in the following format:
 
@@ -122,13 +121,13 @@ stopId {
 }
 ```
 
-Update the infobox with the response information, disable the `Depart` button, and enable the `Arrive` button.
+Update the infobox with the response information, disable the **Depart** button, and enable the **Arrive** button.
 
 The infobox text should look like this \(replace the highlighted part with the relevant value\):
 
 `Next stop {stopName}`
 
-When the "Arrive" button is clicked, update the text, disable the `Arrive` button and enable the `Depart` button.
+When the "Arrive" button is clicked, update the text, disable the **Arrive** button and enable the **Depart** button.
 
 The infobox text should look like this (replace the highlighted part with the relevant value):
 
@@ -243,13 +242,6 @@ Use the following message format:
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-20.png" /]
 
 [/slide]
-
-
-
-
-
-
-
 
 
 

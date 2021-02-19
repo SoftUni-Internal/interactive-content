@@ -9,11 +9,11 @@
 
 -  REST is an architecture style for **client-server communication**
 
-   -  based on **request-response**
+   *  based on **request-response**
 
 -  **REST requests:**
 
-   -  GET
+   * GET
 
    ```
    GET /api/example
@@ -21,7 +21,7 @@
    token: example
    ```
 
-   -  POST
+   * POST
 
    ```
    POST /api/example
@@ -34,7 +34,7 @@
    }
    ```
 
-   -  PUT
+   * PUT
 
    ```
    PUT /api/example/1
@@ -47,7 +47,7 @@
    }
    ```
 
-   -  PATCH
+   * PATCH
 
    ```
    PATCH /api/example/1
@@ -60,7 +60,7 @@
    }
    ```
 
-   -  DELETE
+   * DELETE
 
    ```
    DELETE /api/example/1
@@ -93,12 +93,12 @@
 
 ## In the next lesson you will learn:
 
--  Asynchronous Programming and Promises
+- Asynchronous Programming and Promises
 
-   -  what asynchronous programming is
+   * what asynchronous programming is
 
-   -  deep dive into Promises
+   * deep dive into Promises
 
-   -  async and await
+   * async and await
 
 [/slide]

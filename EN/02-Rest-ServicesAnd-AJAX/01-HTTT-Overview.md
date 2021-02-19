@@ -156,15 +156,15 @@ These are some of the codes:
 
 | Status Code   | Action | Description   |
 | :---:   |    :----: |   :---:     |
-|`200`| `OK`| The resource is successfully retrieved. |
-|`201`| `Created`| The new resource is created. |
-|`204`| `No Content`| There is nothing to return. |
-|`301` or `302`|`Moved`| The resource is moved or redirected to another location. |
-|`400`| `Bad Request`| The request is invalid or there is a syntax error. |
-|`401` or `403`| `Unauthorized`| Authentication failed or Access Denied. |
-|`404`| `Not Found`| The resource is not valid or not found. |
-|`409`| `Conflict`| There is a conflict in the request, for example, duplicated email. |
-|`500` or `503`| `Server Error` | There is an Internal server error or the service is unavailable. |
+|`200`| **OK**| The resource is successfully retrieved. |
+|`201`| **Create**| The new resource is created. |
+|`204`| **No Content**| There is nothing to return. |
+|`301` or `302`|**Moved**| The resource is moved or redirected to another location. |
+|`400`| **Bad Request**| The request is invalid or there is a syntax error. |
+|`401` or `403`| **Unauthorized**| Authentication failed or Access Denied. |
+|`404`| **Not Found**| The resource is not valid or not found. |
+|`409`| **Conflict**| There is a conflict in the request, for example, duplicated email. |
+|`500` or `503`| **Server Error** | There is an Internal server error or the service is unavailable. |
 [/slide]
 
 [slide hideTitle]

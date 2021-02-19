@@ -9,27 +9,27 @@
 
 **1. The HTTP Overview​**
 
--  HTTP Protocol
+-  HTTP protocol
 
 **2. HTTP Developer Tools**
 
--  Chrome Dev Tools
+-  Chrome dev tools
 -  Fiddler
 -  Postman
 
 **3. REST and RESTful Services​**
 
 -  Definition
--  REST Architectural Constraints
+-  REST architectural constraints
 
 **4. Accessing the GitHub API**
 
--  Labels Issue
--  Create an Issue
+-  Labels issue
+-  Create an issue
 
 **5. AJAX**
 
--  Promises Basics
--  Fetch AP
+-  Promises basics
+-  Fetch API
 
 [/slide]
