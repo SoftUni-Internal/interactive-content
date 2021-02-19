@@ -1,6 +1,6 @@
 # Problem 2: Fancy Barcodes
 
-[slide]
+[slide hideTitle]
 
 # Description
 
@@ -12,7 +12,7 @@ Each line must not contain anything else but a valid barcode.
 
 A barcode is valid when it:
 
-* •	Is starts and ends with an `at` sign  `@` followed by one or more hash signs `#`
+* Starts and ends with an `at` sign  `@` followed by one or more hash signs `#`
 
 * Is at least **6 characters long** (without the surrounding `@` or `#`)
 
@@ -26,7 +26,9 @@ A barcode is valid when it:
 
 Examples of **invalid** barcodes: `##InvaliDiteM##, @InvalidIteM@, @#Invalid_IteM@#`
 
-Next, you will have to determine the `product group` of the item from the barcode. This is done by concatenating all the digits from the barcode.
+Next, you will have to determine the `product group` of the item from the barcode. 
+
+This is done by concatenating all the digits from the barcode.
 
 If there are no digits present in the barcode, the default product group is `00`.
 
@@ -40,9 +42,9 @@ If there are no digits present in the barcode, the default product group is `00`
 
 ## Input
 
-* On the first line you will be given an integer `n` – representing the number of barcodes that you will be receiving next.
+* On the first line you will be given an integer `n` – representing the number of barcodes that you will be receiving next
 
-* On the next n lines, you will receive different strings.
+* On the next n lines, you will receive different strings
 
 
 ## Output
@@ -64,18 +66,27 @@ function solve(input) {
 [task-description]
 
 # Examples
-**Input** 
+
+## Example 1
+
+### Input
+
 `['3', '@#FreshFisH@#', '@###Brea0D@###', '@##Che4s6E@##']`
 
-**Output**
+### Output
+
 Product group\: 00
 Product group\: 0
 Product group\: 46
 
- **Input** 
+## Example 2
+
+### Input
+
 `['6', '@###Val1d1teM@###', '@#InvalidIteM@#', '##InvaliDiteM##', '@InvalidIteM@', '@#Invalid_IteM@#', '@#ValiditeM@#']`
 
-**Output**
+### Output
+
 Product group\: 11
 Product group\: 00
 Invalid barcode
