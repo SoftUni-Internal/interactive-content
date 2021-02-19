@@ -14,9 +14,9 @@
 - Compare values using comparison operators
 
 **2. What Conditional Statements are:**
-- The `if` Statement
-- The `if-else` Statement
-- The `if-else-if-else-…` Statement
+- The `if` statement
+- The `if-else` statement
+- The `if-else-if-else-…` statement
 
 **3. Debugging**
 - Debugging in VSC
