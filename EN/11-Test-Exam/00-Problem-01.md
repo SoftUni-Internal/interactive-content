@@ -69,9 +69,9 @@ The app should register a new user in the system using their **email** and **pas
 
 - The following validations should be made:
 
-   - The **email** and **password** must be non-empty strings
+   * the **email** and **password** must be non-empty strings
 
-   - The **re-password** should be **equal to the password**
+   * the **re-password** should be **equal to the password**
 
 - After **successfully registering**, the user should be redirected to the **home page with the right navbar**
 
@@ -129,11 +129,11 @@ Logged-in users should be able to Create offers
 
 Clicking the `[Create Offer]` **link** in the **NavBar** should **display** the **Create Offer page**.
 
-- The form should contain the following validations:
+- The form should contain the following validations
 
-   - The input fields for the **product**, **description** and **price** should be **non-empty strings**
+   - the input fields for the **product**, **description** and **price** should be **non-empty strings**
 
-   - The input field for **imageUrl**, must be a **valid url** (starts with `https://`)
+   - the input field for **imageUrl**, must be a **valid url** (starts with `https://`)
 
 After a **successful** offer is created, the **Dashboard** should be shown.
 
@@ -235,8 +235,7 @@ If there are no quantities of the products, you do not have to remove them from 
 
 ## Profile Page
 
-<< On the NavBar (header), you must be added a new link `[Profile]` which refers to the currently logged user. >>
-// Да се оправи
+On the NavBar (header), you must be added a new link `[Profile]` which refers to the currently logged user. 
 
 [image assetsSrc="js-apps-new-exam-17.png" /]
 
