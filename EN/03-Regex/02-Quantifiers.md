@@ -154,9 +154,9 @@ To make it clear why that is helpful, let us consider a task, such as extracting
 
 The first group in the pattern is `(\#)` and it will match the first `#`. 
 
-After that, we match capital letters, small letters, and spaces with `[A-Z,a-z\s]+`
+After that, we match capital letters, small letters, and spaces with `[A-Z,a-z\s]+`.
 
-To match the second `#` which is after the word "there", use `\1`, where the number 1 is the number of the group.
+To match the second `#` which is after the word "there", use `\1`, where **1** is the number of the group.
 
 
 ```js live
@@ -354,7 +354,7 @@ Day: 07, Month: Feb, Year: 2008
 [/video-vimeo]
 
 
-[code-task title="Email Validation" taskId="js-fundamentals-pt2-regular-expressions-lab-Email-Validation" executionType="tests-execution" executionStrategy="javascript-tests" requiresInput]
+[code-task title="Email Validation" taskId="js-fundamentals-pt2-regular-expressions-lab-Email-Validation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function emailValidator(input){
@@ -375,9 +375,9 @@ An email consists of: username `@` domain name.
 
 - **Domain name** may contain only **English letters**
 
-- Valid email: `valid123@email.com`
+- **Valid email:** `valid123@email.com`
 
-- Invalid email: `invalid*name@emai1.com`
+- **Invalid email:** `invalid*name@emai1.com`
 
 ## Input
 
@@ -385,9 +385,9 @@ An email consists of: username `@` domain name.
 
 ## Output
 
-- If the string is a valid email, print 'Valid'
+- If the string is a **valid email**, print `Valid`
 
-- If the string is invalid, print 'Invalid'
+- If the string is **invalid**, print `Invalid`
 
 # Example
 
@@ -397,7 +397,7 @@ An email consists of: username `@` domain name.
 
 | **Input** | **Output** |
 | --- | --- |
-| `'invalid@emai1.bg'` | Valid |
+| `'invalid@emai1.bg'` | Invalid |
 
 
 [/task-description]
