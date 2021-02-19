@@ -17,11 +17,12 @@ function gramophone(bandName, album, songName){
 [/code-adapter]
 [task-description]
 # Description
+
 Write a function which as input will receive 3 parameters (strings)
 
-- First string is the name of the band
+- The First string is the name of the band
 
-- Second string is the name of the album
+- The Second string is the name of the album
 
 - The third is holding a song name from the album
 
@@ -141,6 +142,7 @@ function fuelMoney(pistance, passengers, price){
 [/code-adapter]
 [task-description]
 # Description
+
 Write a **function** which calculates how much **money** for fuel will be needed to drive а bus from one place to another.
 
 Consider the following:
@@ -305,6 +307,7 @@ function centuriesToMinutes(number){
 [/code-adapter]
 [task-description]
 # Description
+
 Write a program that receives a number of centuries, and converts it to years, days, hours, and minutes.
 
 Print the output in the following format: 
@@ -1367,6 +1370,8 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
+# Description
+
 Write a function that receives **three string parameters:** 
 
 - **number**
