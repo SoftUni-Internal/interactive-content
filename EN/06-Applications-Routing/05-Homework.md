@@ -90,39 +90,37 @@ Use this information as a guideline.
 
 You may style and structure your solution differently, as long as the required functionality is present.
 
-The home page when the user is not logged in.
+**The home page when the user is not logged in.**
 
 [image assetsSrc="JS-Applications-Routing-5.png" /]
 
-The user registration form:
+**The user registration form:**
 
 [image assetsSrc="JS-Applications-Routing-6.png" /]
 
-The user login form: 
+**The user login form:**
 
 [image assetsSrc="JS-Applications-Routing-7.png" /]
 
-Home page view for a registered user.
-
-Note the header navigation has changed to reflect that.
+**Home page view for a registered user.**
 
 Note that the header navigation has changed to reflect that.
 
 [image assetsSrc="JS-Applications-Routing-8.png" /]
 
-Team browser:
+**Team browser**:
 
 [image assetsSrc="JS-Applications-Routing-9.png" /]
 
-Create team and edit team forms are identical.
+**Create team and edit team forms are identical.**
 
 [image assetsSrc="JS-Applications-Routing-10.png" /]
 
-Team details with the option to join the team and a list of all current members.
+**Team details with the option to join the team and a list of all current members.**
 
 [image assetsSrc="JS-Applications-Routing-11.png" /]
 
-Team management:
+**Team management:**
 
 - If the user is a member, they can leave the team
 
