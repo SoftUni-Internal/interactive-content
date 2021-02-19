@@ -27,9 +27,16 @@ page('/', user.list);
 page('/user/:id', user.load, user.show);
 ```
 
-In this example, we set the URL and the callbacks: **user.load** and **user.show**.
+In this example, we set the URLs and the callbacks: **user.list**, **user.load** and **user.show**.
 
-After the **user.load** is ready, the **user.show** will be executed.
+The **user.list** will be executed when the user is at the **Home page**.
+
+It will list all of the users.
+
+When the user is on the `/user/:id` path, the **user.load** will be executed.
+
+After **user.load** is ready, the **user.show** will be executed.
+
 [/slide]
 
 [slide hideTitle]
