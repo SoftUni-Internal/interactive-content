@@ -1,6 +1,6 @@
 # Problem 1: Password Reset
 
-[slide]
+[slide hideTitle]
 
 # Description
 
@@ -8,7 +8,7 @@
 
 Write a password reset program that performs a series of commands on a string. 
 
-First, you will receive the string, that you have to alter, and afterwards, until the command `Done` is received, you will be given commands in the form of text (a string), split by a single space. 
+First, you will receive the string that you have to alter, and afterward, until the command `Done` is received, you will be given commands in the form of text (a string), split by a single space. 
 
 The commands will be the following:
 
@@ -25,20 +25,20 @@ Then prints the new raw password on a new line.
 The specified index and length will always be valid.
 
 * Command `Substitute {substring} {substitute}`: 
-If the `raw password`  contains the given substring, replaces all of its occurrences with the substitute text given and prints the result.
 
-If it doesn't, prints `Nothing to replace!`
+If the `raw password`  contains the given substring, replaces all of its occurrences with the given substitute text and prints the result.
+
+If it does not, print `Nothing to replace!`
 
 ## Input
 
-* You will be receiving strings until the `Done` command is received.
+* You will be receiving strings until the `Done` command is received
 
-* The indexes of the `Cut {index} {length}` command will always be valid.
+* The indexes of the `Cut {index} {length}` command will always be valid
 
 ## Output
 
 * After the `Done` command is received, print: `Your password is: {password}`
-
 
 [code-task title="Password Reset" taskId="js-fundamentals-2-examPreparation-problem-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -52,10 +52,13 @@ function solve(input) {
 
 # Examples
 
- **Input** 
+## Example 1
+
+### Input
+
 `['Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr','TakeOdd', 'Cut 15 3', 'Substitute :: -', 'Substitute | ^', 'Done']`
 
-**Output**
+### Output
 
 icecream\:\:hot\:\:summer
 
@@ -67,7 +70,7 @@ Nothing to replace!
 
 Your password is: icecream\-hot\-mer
 
-# Comments
+### Comments
 
 * The first command is `TakeOdd`:
 
@@ -93,7 +96,7 @@ The initial string is: `icecream::hot::summer`
 
 we replace `::` with `-`, and the result is
 
-`icream-hot-summer`
+`icecream-hot-summer`
 
 * The fourth command is `Substitute | ^`:
 
@@ -105,12 +108,14 @@ We print:
 Finally, after receiving the `Done` command, we print the resulting password in the proper format.
 
 
-# Examples
+## Example
 
- **Input**
+### Input
+
 `['up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy','TakeOdd', 'Cut 18 2', 'Substitute ! ***', 'Substitute ? .!.', 'Done']`
 
-**Output**
+### Output
+
 programming!is!funny
 
 programming!is!fun
