@@ -153,7 +153,7 @@ If you were to use a decorator on top of the `Car` object in the above example t
 [/slide]
 
 [slide hideTitle]
-# Pros and Cons of the Decorator Pattern
+# Pros and Cons
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-18-pros-and-cons-of-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
