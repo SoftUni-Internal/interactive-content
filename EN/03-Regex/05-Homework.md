@@ -1,10 +1,10 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Problem: Match Dates
 
-[code-task title="Match Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Match Dates" taskId="js-fundamentals-pt2-Regular-Expressions-Match-Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -20,34 +20,26 @@ function solve(input){
 
 Write a program, which matches a date in the format `dd{separator}MMM{separator}yyyy`.
 
-Compose the Regular Expression
+Compose the regular expression.
 
 Every valid date has the following characteristics:
 
-- Always starts with two digits, followed by a separator.
-- After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar).
-- After that, it has a separator and exactly 4 digits (for the year).
-- The separator could be\: a period `"."`, a hyphen `"-"`, or a forward slash `"/"`.
-- The separator needs to be the same for the whole date `(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)`.
+- Always starts with two digits, followed by a separator
+- After that, it has one uppercase and two lowercase letters (e.g. Jan, Mar)
+- After that, it has a separator and exactly 4 digits (for the year)
+- The separator could be\: a period `"."`, a hyphen `"-"`, or a forward slash `"/"`
+- The separator needs to be the same for the whole date `(e.g. 13.03.2016 is valid, 13.03/2016 is NOT)`
 
-Use a group backreference to check for this.
+Use a group **backreference** to check for this.
 
 
 # Example
 
-**Input**
-
-`['13/Jul/1928, 10-Nov-1934, 
-, 01/Jan-1951,f 25.Dec.1937 
-23/09/1973, 1/Feb/2016']`
-
-**Output**
-
-Day\: 13\, Month\: Jul\, Year\: 1928 
-
-Day\: 10\, Month\: Nov\, Year\: 1934
-
-Day\: 25\, Month\: Dec\, Year\: 1937
+| **Input** | **Output** |
+| --- | --- |
+| `['13/Jul/1928, 10-Nov-1934 , 01/Jan-1951, 25.Dec.1937, 23/09/1973, 1/Feb/2016']` | Day\: 13\, Month\: Jul\, Year\: 1928 |
+| | Day\: 10\, Month\: Nov\, Year\: 1934 |
+| | Day\: 25\, Month\: Dec\, Year\: 1937 |
 
 [/task-description]
 [tests]
@@ -175,11 +167,11 @@ Day\: 07\, Month\: Feb\, Year\: 2008
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Furniture
 
-[code-task title="Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Furniture" taskId="js-fundamentals-pt2-Regular-Expressions-Furniture" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -212,25 +204,19 @@ In the end print out each bought furniture on a separate line in the format:
 {2nd name}
 …`
 
-And on the last line print the following: 
+And on the last line, print the following: 
 
 `Total money spend: {spend money}` formatted to the second decimal point.
 
 # Example
 
-**Input**
+| **Input** | **Output** |
+| --- | --- |
+| `['>>Sofa<<312.23!3', '>>TV<<300!5', '>Invalid<<!5', 'Purchase']` | Bought furniture\: |
+| | Sofa |
+| | TV |
+| | Total money spend\: 2436\.69 |
 
-`['>>Sofa<<312.23!3', '>>TV<<300!5', '>Invalid<<!5', 'Purchase']`
-
-**Output**
-
-Bought furniture\:
-
-Sofa
-
-TV
-
-Total money spend\: 2436\.69
 
 [/task-description]
 [tests]
@@ -338,11 +324,11 @@ Total money spend\: 8593\.09
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Race
 
-[code-task title="Race" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Race"  taskId="js-fundamentals-pt2-Regular-Expressions-Race" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -509,11 +495,11 @@ end of race
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Problem: Bar Income
 
-[code-task title="Bar Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Bar Income" taskId="js-fundamentals-pt2-Regular-Expressions-Bar-Income" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -527,7 +513,7 @@ function solve(input) {
 
 # Description
 
-Let's take a break and visit the game bar at SoftUni. 
+Let us take a break and visit the game bar at SoftUni. 
 
 It is about time for the people behind the bar to go home. You are the person, who has to calculate the earned money from the products that were sold throughout the day.
 
@@ -536,10 +522,10 @@ Until you receive a line with a text **end of shift**, you will be given lines o
 Before processing these lines, you have to do some validations first.
 
 Each valid order should have a customer, a product, a count and a price:
-- Valid customer's name should be surrounded by `%` and must start with a capital letter, followed by lower-case letters.
-- Valid product contains any word character and must be surrounded by `<` and `>`. 
-- Valid count is an integer, surrounded by `|`.
-- Valid price is any real number followed by `$`.
+- Valid customer's name should be surrounded by `%` and must start with a capital letter, followed by lower-case letters
+- Valid product contains any word character and must be surrounded by `<` and `>`
+- Valid count is an integer, surrounded by `|`
+- Valid price is any real number followed by `$`
 
 The parts of a valid order should appear in the given order: a customer, a product, a count and a price.
 
