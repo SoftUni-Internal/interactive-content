@@ -1,11 +1,10 @@
 
-
 [slide hideTitle]
 # Exam Preparation: Shoe Shelf SPA
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Exam_Preparation_ShoeShelf_Resourses.zip) **for this task.**
 
-In this exam preparation, we're going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Kinvey).
+In this exam preparation, we are going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Kinvey).
 
 Using libraries like **lit-html** and **page.js** is allowed but is **not obligatory**.
 
@@ -80,18 +79,18 @@ The initial page (view) should display the **guest navigation bar** \+ **Guest H
 
 The app should register a new user in the system using their email and password credentials.
 
-- The following validations should be made:
-   - The **email** input must be **filled**
+- The following validations should be made
+   * the **email** input must be **filled**
 
-   - The password should be at least **6 characters long**
+   * the password should be at least **6 characters long**
 
-   - The **repeat** **password** value should be equal to the password
+   * the **repeat** **password** value should be equal to the password
 
-- Keep the user's data in the browser's **session or local storage.**
+- Keep the user's data in the browser's **session or local storage**
 
-- After a **successful registration**, redirect to **Home page.**
+- After a **successful registration**, redirect to **Home page**
 
-- In case of an **error**, nothing should happen and the user should be able to fill in the form again.
+- In case of an **error**, nothing should happen and the user should be able to fill in the form again
 
 [image assetsSrc="js-apps-exam-prep-4.png" /]
 
@@ -112,15 +111,17 @@ The app should register a new user in the system using their email and password 
 
 [/slide]
 [slide hideTitle]
+
 # Logout (5 Pts)
 
 Successfully logged-in users should be able to logout from the app.
 
-- The `logout` **REST** **service** at the back-end must be called at logout.
+- The `logout` **REST** **service** at the back-end must be called at logout
 
-- All local information in the browser (**user session data**) about the current user should be deleted.
+- All local information in the browser (**user session data**) about the current user should be deleted
 
-- After a **successful logout** redirect to **Login page.**
+- After a **successful logout** redirect to **Login page**
+
 [/slide]
 [slide hideTitle]
 
@@ -145,19 +146,19 @@ Logged-in users should be able to **add shoes.**
 
 Clicking the `[Create new offer]` button, on the navgivation bar, should **display** the **Create page.**
 
-- The form should contain the following validations:
+- The form should contain the following validations
 
-   - All **input** fields should be **filled**
+   * all **input** fields should be **filled**
 
-   - **By default**, every newly created offer must have additional information:
+   * **by default**, every newly created offer must have additional information
 
 `Creator`: a string representing the current user;
 
 `People bought it`: the data of the users who have bought the shoes;
 
-   - After **successfully** creating a new offer, the application should redirect to the **Home page**. 
+   * after **successfully** creating a new offer, the application should redirect to the **Home page** 
 
-- The newly added offer should be stored in the database collection `shoes`.
+- The newly added offer should be stored in the database collection `shoes`
 
 [image assetsSrc="js-apps-exam-prep-8.png" /]
 
