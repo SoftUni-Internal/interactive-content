@@ -1,17 +1,9 @@
-[slide]
+[slide hideTitle]
 # Problem: Easter Races
-[code-task title="Problem: Easter Races" taskId="02afca4d-cbfe-43f7-b654-93aa86bdb73e" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
+[code-task title="Easter Races Business Logic" timeLimit=5000 taskId="Java-OOP-Advanced-Easter-Races" executionType="tests-execution" executionStrategy="java-project-tests" requiresInput]
+[code-upload allowedMemory="30" /]
 
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
+
 [task-description]
 ## Description
 
@@ -42,9 +34,9 @@ There are **3** types of entities and 3 repositories in the application: **Car, 
 ## Data
 
 - **model - String**
-  * If the model **is null, whitespace or less than 4 symbols,** throw an **IllegalArgumentException** with message **"Model \{model\} cannot be less than 4 symbols."**
+  * if the model **is null, whitespace or less than 4 symbols,** throw an **IllegalArgumentException** with message **"Model \{model\} cannot be less than 4 symbols."**
 
-  * All models are unique
+  * all models are unique
 
 - **horsePower - int**
   * **Every type** of car has different range of valid horsepower. If the horsepower is not in the valid range, throw an **IllegalArgumentException** with message **"Invalid horse power: \{horsepower\}."**
@@ -92,12 +84,12 @@ If you receive horsepower which is not in the given range throw **IllegalArgumen
 ## Data
 
 - **name - String**
-  * If the name **is null**, **empty** or less than **5 symbols** throw an **IllegalArgumentException** with message **"Name \{name\} cannot be less than 5 symbols."**
-  * All names are unique
+  * if the name **is null**, **empty** or less than **5 symbols** throw an **IllegalArgumentException** with message **"Name \{name\} cannot be less than 5 symbols."**
+  * all names are unique
 - **car - Car**
 - **numberOfWins - int**
 - **canParticipate - boolean**
-  * Default behaviour is **false**
+  * default behaviour is **false**
   * **Driver** can participate in race, **ONLY** if he has a **Car** (**Car** is not **null**)
 
 ## Behavior
@@ -183,7 +175,6 @@ Create **CarRepository**, **DriverRepository** and **RaceRepository** repositori
 
 
 [/task-description]
-[code-io /]
 [tests]
 [test open]
 [input]
