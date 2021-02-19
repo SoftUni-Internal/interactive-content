@@ -5,9 +5,7 @@
 
 ## In this lesson you learned:
 
-- What is Relational Databases
-
-- What is Non-Relational Databases
+- What Relational and Non-Relational Databases are
 
 - What is a BaaS
 
