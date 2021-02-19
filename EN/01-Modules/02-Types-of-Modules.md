@@ -74,9 +74,9 @@ The path is **relative to the file in which you do the import**.
 
 ## Exporting
 
-To **export** modules in Node\.js, we use the `module.exports` object.
+To **export** modules in Node\.js, we use the **module.exports** object.
 
-Whatever you push in the `module.exports` object is made globally available to **other modules**.
+Whatever you push in the **module.exports** object is made globally available to **other modules**.
 
 The following example creates a module that returns a greeting function:
 
@@ -86,7 +86,7 @@ module.exports.greeting = function (name) {
 };
 ```
 
-You can also attach an object to `module.exports`, as shown below:
+You can also attach an object to **module.exports**, as shown below:
 
 ```js
 module.exports.person = {
@@ -127,7 +127,7 @@ let url = require('url');
 ```
 
 - The `fs` module:
-    - Enables access to the computer's **filesystem**\:
+    - Enables access to the computer's **filesystem**:
 
 ```js
 let fs = require('fs');
@@ -145,7 +145,6 @@ In 2015, with the introduction of the EcmaScript 6 standard, modules were introd
 JavaScript's **built-in module statements always export and import an object**.
 
 ## Importing
-
 
 Importing an object can be done in several ways:
 
@@ -174,7 +173,7 @@ import { toUSD as convertToUSD } from './currencyConverter.js'
 We use the export statement to create a JavaScript module.
 
 ```js
-export { myFunc, varOne };
+export { myFunction, variableOne };
 ```
 
 Using the default keyword we can later import the value with **any given name**:

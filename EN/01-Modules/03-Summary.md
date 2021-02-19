@@ -3,17 +3,17 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-11-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learnt:
+## In this lesson you learned:
 
 - What Javascript modules are
 
-	- a set of functions to be included in applications
+	- A set of functions to be included in applications
 
-    - reusable pieces of code that supercharge our productivity
+    - Reusable pieces of code that supercharge our productivity
 
 
 - IIFE Modules
-    - enabling data encapsulation: 
+    - Enabling data encapsulation: 
 
 ```js 
 var myModule = (function() {
@@ -32,9 +32,9 @@ console.log(people); // ReferenceError
 
 - Node\.js Modules
   
-	- the `module.exports` - a special object is used to export data or functionality
+	- The **module.exports** - a special object is used to export data or functionality
   
-    - we use `require()` to import them
+    - We use `require()` to import them
 
 ```js
 const myModule = require("./myModule.js");
