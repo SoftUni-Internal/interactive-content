@@ -17,19 +17,19 @@ The increment and decrement operators are supported in two forms:
 ### Postfix Increment Operator
 The result of `x++` is the value of `x` before the operation, as the following example shows:
 ```js live
-let i = 3;
-console.log(i);   // output: 3
-console.log(i++); // output: 3
-console.log(i);   // output: 4
+let x = 3;
+console.log(x);  
+console.log(x++); 
+console.log(x);   
 ```
 
 ### Prefix Increment Operator
 The result of `++x` is the value of `x` after the operation, as the following example shows:
 ```js live
-let a = 1.5;
-console.log(a);   // output: 1.5
-console.log(++a); // output: 2.5
-console.log(a);   // output: 2.5
+let x = 1.5;
+console.log(x);   
+console.log(++x); 
+console.log(x);  
 ```
 
 ## Decrement Operator
@@ -37,18 +37,18 @@ console.log(a);   // output: 2.5
 ### Postfix Decrement Operator
 The result of `x--` is the value of `x` before the operation, as the following example shows:
 ```js live
-let i = 3;
-console.log(i);   // output: 3
-console.log(i--); // output: 3
-console.log(i);   // output: 2
+let x = 3;
+console.log(x);   
+console.log(x--); 
+console.log(x);   
 ```
 
 ### Prefix Decrement Operator
 The result of `--x` is the value of `x` after the operation, as the following example shows:
 ```js live
-let a = 1.5;
-console.log(a);   // output: 1.5
-console.log(--a); // output: 0.5
-console.log(a);   // output: 0.5
+let x = 1.5;
+console.log(x);   
+console.log(--x); 
+console.log(x);   
 ```
 [/slide]
