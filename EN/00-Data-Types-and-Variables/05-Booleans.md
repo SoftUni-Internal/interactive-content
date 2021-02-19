@@ -155,9 +155,11 @@ It is always better to be **explicit** so as not to be ambiguous.
 
 [slide hideTitle]
 
-# Problem: Amazing Numbers
+# Problem with Solution: Amazing Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-26-problem-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-26-solution-solution-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Amazing Numbers" taskId="fund-js-data-types-and-variables-lab-amazing-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -282,138 +284,6 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 
 [/slide]
 
-[slide hideTitle]
-
-
-
-# Solution: Amazing Numbers
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-26-solution-solution-amazing-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
-[code-task title="Amazing Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function amazingNumbers(input) {
-  // Write your code here
-}
-
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {
-  return code (Number(input[0]));
-}
-```
-[/code-adapter]
-[task-description]
-# Description
-
-Write a function which as input will receive a **number.**
- 
-Check and print whether it is **amazing** or not into the following format:
-
-`{number} Amazing? {result}`
-
-An **amazing** number is one that includes the **digit 9** in the sum of its digits.
-
-Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3 + 4 + 7 + 2 = 29)`
-
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|1233| 1233 Amazing? True |
-|999|999 Amazing? False|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-1233
-[/input]
-[output]
-1233 Amazing? True
-[/output]
-[/test]
-[test open]
-[input]
-999
-[/input]
-[output]
-999 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-144
-[/input]
-[output]
-144 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-55555554
-[/input]
-[output]
-55555554 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-5554
-[/input]
-[output]
-5554 Amazing? True
-[/output]
-[/test]
-[test]
-[input]
-45645
-[/input]
-[output]
-45645 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-3671
-[/input]
-[output]
-3671 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-1231
-[/input]
-[output]
-1231 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-6123
-[/input]
-[output]
-6123 Amazing? False
-[/output]
-[/test]
-[test]
-[input]
-65451
-[/input]
-[output]
-65451 Amazing? False
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
 
 [slide hideTitle]
 
