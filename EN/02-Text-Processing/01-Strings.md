@@ -1,7 +1,7 @@
-# String
+# Strings
 
-[slide]
-# What is a String
+[slide hideTitle]
+# What is a String?
 
 [vimeo-video]
 [stream language="EN" videoId="489817383/8da2994345" default /]
@@ -19,19 +19,19 @@ The text should be wrapped in quotes, there are three types which can be used:
 -  **Double quotes**
 
 ```js
-let myString = "Hello !";
+let myString = "Hello!";
 ```
 
 -  **Single quotes**
 
 ```js
-let myString = 'Hello !';
+let myString = 'Hello!';
 ```
 
 -  **Backticks**
 
 ```js
-let myString = `Hello !`;
+let myString = `Hello!`;
 ```
 
 We can **concatenate strings** with the plus (`+`) operator.
@@ -45,12 +45,14 @@ let concatenated = hello + ' ' + world;
 console.log(`${concatenated}`);
 ```
 
-# Accessing Strings
+## Accessing Strings
 
 
 **Strings** are read-only chains of characters, this means that we cannot change them. 
 
-We **access** them by their index. There are two ways of doing this .
+We **access** them by their index. 
+
+There are two ways of doing this:
 
 - The first one is by using indexing operator `[]`
 
@@ -60,9 +62,9 @@ let hi = 'Hi, JS';
 console.log(hi[4]);
 ```
 
-This one will also return `J` because the two ways of accessing indexes are identical.  
+This example will return `J`.
 
--  We can access a **string** also with the method `charAt()`.
+-  We can access a **string** also with the method `charAt()`
 
 And it will look like that:
 
@@ -72,11 +74,11 @@ let hi = 'Hi, JS';
 console.log(hi.charAt(4));
 ```
 
-That will also return `J` because the two ways are identical at the end.
+That will also return `J` because the two ways of accessing indexes are identical.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Iterate Through a String: Demo
 
 [vimeo-video]
@@ -84,7 +86,7 @@ That will also return `J` because the two ways are identical at the end.
 [stream language="RO" videoId="489817402/1b82ef9f2e"  /]
 [/video-vimeo]
 
-Iterate Through a String using `for-of` loop:
+Iterate through a string using a `for-of` loop:
 
 ```js live
 let text = 'Hello, there!'
@@ -94,17 +96,16 @@ for(let el of text){
 }
 ```
 
+In this example, every character in `text` will be printed to the console.
+
 [/slide]
 
-[slide]
-# Problem: Print Characters
+[slide hideTitle]
+# Problem with Solution: Print Characters
 
-[vimeo-video]
-[stream language="EN" videoId="489817393/3dc5fc66ce" default /]
-[stream language="RO" videoId="489817393/3dc5fc66ce"  /]
-[/video-vimeo]
+## Missing Video
 
-[code-task title="Print Characters" taskId="text-processing-lab-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Print Characters" taskId="js-fund-part-2-text-processing-lab-Print-Characters" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -115,13 +116,13 @@ function printCharacters(input){
 
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a function that receives a string and prints its characters on separate lines. 
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['AWord']`| A |
+|`'AWord'`| A |
 ||W|
 ||o|
 ||r|
@@ -204,112 +205,3 @@ o
 [/code-task]
 [/slide]
 
-[slide]
-# Solution: Print Characters
-
-## Missing Video
-
-[code-task title="Print Characters" taskId="text-processing-lab-solution-1" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-function solve(input) {
-  let word = input[0];
-
-  for (let i =0; i < word.length; i++){
-    console.log(word[i])
- }
-}
-```
-
-[/code-editor]
-[task-description]
-## Description
-Write a function that receives a string and prints its characters on separate lines. 
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['AWord']`| A |
-||W|
-||o|
-||r|
-||d|
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-AWord
-[/input]
-[output]
-A
-W
-o
-r
-d
-[/output]
-[/test]
-[test]
-[input]
-AWord
-[/input]
-[output]
-A
-W
-o
-r
-d
-[/output]
-[/test]
-[test]
-[input]
-A
-[/input]
-[output]
-A
-[/output]
-[/test]
-[test]
-[input]
-AB
-[/input]
-[output]
-A
-B
-[/output]
-[/test]
-[test]
-[input]
-Pesho
-[/input]
-[output]
-P
-e
-s
-h
-o
-[/output]
-[/test]
-[test]
-[input]
-GOSHOpesho
-[/input]
-[output]
-G
-O
-S
-H
-O
-p
-e
-s
-h
-o
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
