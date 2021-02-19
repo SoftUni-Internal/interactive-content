@@ -143,7 +143,7 @@ public class T00_1ValidateTypesExist {
 
     @Test
     public void validateTypesExist() {
-        String[] classTypesToAssert = new String[]{
+        String\[\] classTypesToAssert = new String\[\]{
                 "Guild",
                 "Player",
         };
@@ -187,7 +187,7 @@ public class T00_2ValidateFieldsExists {
     @Test
     public void validateClassFields() {
         Class playerClazz = getType("Player");
-        ExpField[] fieldsFirstType = new ExpField[]{
+        ExpField\[\] fieldsFirstType = new ExpField\[\]{
                 new ExpField("name"),
                 new ExpField("clazz"),
                 new ExpField("rank"),
@@ -200,7 +200,7 @@ public class T00_2ValidateFieldsExists {
 
 
         Class guildClazz = getType("Guild");
-        ExpField[] fieldsSecondType = new ExpField[]{
+        ExpField\[\] fieldsSecondType = new ExpField\[\]{
                 new ExpField("roster"),
                 new ExpField("name"),
                 new ExpField("capacity"),
@@ -259,7 +259,7 @@ public class T00_3ValidateMethodsExists {
 
     private class ExpMethod {
         String name;
-        Class[] parameterTypes;
+        Class\[\] parameterTypes;
 
         public ExpMethod(String name, Class... parameterTypes) {
             this.name = name;
@@ -271,7 +271,7 @@ public class T00_3ValidateMethodsExists {
     public void validatePlayerMethods() {
         Class playerClazz = getType("Player");
 
-        ExpMethod[] playerMethods = new ExpMethod[]{
+        ExpMethod\[\] playerMethods = new ExpMethod\[\]{
                 new ExpMethod("getName"),
                 new ExpMethod("getClazz"),
                 new ExpMethod("setRank", String.class),
@@ -284,7 +284,7 @@ public class T00_3ValidateMethodsExists {
 
         Class guildClazz = getType("Guild");
 
-        ExpMethod[] methods = new ExpMethod[]{
+        ExpMethod\[\] methods = new ExpMethod\[\]{
                 new ExpMethod("addPlayer", playerClazz),
                 new ExpMethod("removePlayer", String.class),
                 new ExpMethod("promotePlayer", String.class),
@@ -301,7 +301,7 @@ public class T00_3ValidateMethodsExists {
 
     private void validateMethod(Class clazz, ExpMethod expMethod) {
         String expectedName = expMethod.name;
-        Class[] expectedParameterTypes = expMethod.parameterTypes;
+        Class\[\] expectedParameterTypes = expMethod.parameterTypes;
 
         Method actualMethod = getMethod(clazz, expectedName, expectedParameterTypes);
 
@@ -316,17 +316,17 @@ public class T00_3ValidateMethodsExists {
         Assert.assertNotNull(existMessage, actualMethod);
     }
 
-    private String arrayToString(Class[] array) {
-        String[] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String[]::new);
+    private String arrayToString(Class\[\] array) {
+        String\[\] stringArray = Arrays.stream(array).map(Class::getSimpleName).toArray(String\[\]::new);
         String arrayStr = String.join(", ", stringArray);
 
         return arrayStr;
     }
 
     private String findMethodFromMethods(Class clazz, String methodName) {
-        Method[] methods = clazz.getMethods();
+        Method\[\] methods = clazz.getMethods();
 
-        Method[] methodsWithGivenName = Arrays.stream(methods).filter(m -> m.getName().equals(methodName)).toArray(Method[]::new);
+        Method\[\] methodsWithGivenName = Arrays.stream(methods).filter(m -> m.getName().equals(methodName)).toArray(Method\[\]::new);
 
         StringBuilder sb = new StringBuilder();
 
