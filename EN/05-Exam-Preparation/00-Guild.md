@@ -135,7 +135,6 @@ public class Main {
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -161,7 +160,6 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
-```
 [/input]
 [output]
 Test Passed!
