@@ -28,11 +28,11 @@ mocha --version
 
 # Node Path Configuration
 
-By default `Node.js` does not find its globally installed modules.
+By default **Node.js** does not find its globally installed modules.
 
-You need to set the `NODE_PATH` environment variable manually.
+You need to set the "NODE_PATH" environment variable manually.
 
-Open the Windows `CMD` console.
+Open the Windows "CMD" console.
 
 To set the path use this piece of code for future sessions:
 
@@ -49,15 +49,15 @@ To load a library, first we need to **require** it, like in the example below.
 `const expect = require("chai").expect;`
 
 ```js
-const expect = require("chai").expect;
-describe("Test group #1", function () {
-    it("should… when…", function () {
+const expect = require('chai').expect;
+describe('Test group #1', function () {
+    it('should… when…', function () {
         expect(actual).to.be.equal(expected);
     });
-    it("should… when…", function () { … });
+    it('should… when…', function () { … });
 });
-describe("Test group #2", function () {
-    it("should… when…", function () {
+describe('Test group #2', function () {
+    it('should… when…', function () {
         expect(actual).to.be.equal(expected);
     });
 });

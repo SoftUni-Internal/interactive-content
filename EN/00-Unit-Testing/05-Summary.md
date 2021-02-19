@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-22-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learnt:
+## In this lesson you learned:
 
 - Unit tests check if certain functionalities work as expected 
 ```js

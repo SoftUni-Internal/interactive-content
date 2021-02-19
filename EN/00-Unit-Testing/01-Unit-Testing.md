@@ -22,7 +22,7 @@ Then we sort the array.
 
 Finally, we have an if statement, where we check if the array has been sorted as expected.
 
-Use the `JSON.stringify()` method to convert to a string and compare it with the expected output - `[-2,2,4,15]`.
+Use the `JSON.stringify()` method to convert to a string and compare it with the expected output - \[-2,2,4,15\].
 
 ```js live
 function sortNums(arr) {
@@ -32,12 +32,12 @@ function sortNums(arr) {
 // Our test
 let nums = [2, 15, -2, 4];
 sortNums(nums);
-if (JSON.stringify(nums) === "[-2,2,4,15]") {
-    console.error("They are equal!");
+if (JSON.stringify(nums) === '[-2,2,4,15]') {
+    console.error('They are equal!');
 }
 ```
 
-# Why do we need Unit Testing?
+## Why do we need Unit Testing?
 
 Unit tests make it **safer** and **easier** to refactor out code by writing tests.
 
@@ -80,8 +80,8 @@ let nums = [2, 15, -2, 4];
 // Act on the object or method under test
 sortNums(nums);
 // Assert that the obtained results are what we expect
-if (JSON.stringify(nums) === "[-2,2,4,15]") {
-    console.error("They are equal!");
+if (JSON.stringify(nums) === '[-2,2,4,15]') {
+    console.error('They are equal!');
 }
 ```
 

@@ -10,15 +10,15 @@
 
 Mocha tests run sequentially, allowing for flexible and accurate reporting while mapping uncaught exceptions to the correct test cases. 
 
-It provides common testing functions including, `it`, `describe` and the main function that runs tests.
+It provides common testing functions including, **it**, **describe** and the main function that runs tests.
 
 Mocha is usually used together with **Chai**.
 
 For more information, here is a [link](https://mochajs.org/) to the developer's web page.
 
 ```js
-describe("title", function () {
-    it("title", function () { ... });
+describe('title', function () {
+    it('title', function () { ... });
 });
 ```
 
@@ -33,9 +33,9 @@ This is done on the first line of code: `let assert = require("chai").assert;`
 For more information, you can visit the [developer's](https://www.chaijs.com/api/) web page. 
 
 ```js
-let assert = require("chai").assert;
-describe("pow", function() {
-    it("2 raised to power 3 is 8", function() {
+let assert = require('chai').assert;
+describe('pow', function() {
+    it('2 raised to power 3 is 8', function() {
         assert.equal(pow(2, 3), 8);
     });
 });

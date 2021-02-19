@@ -18,11 +18,13 @@ This is a classical approach, where the functionality, is implemented and then t
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-20-test-driven-development-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The Test First approach suggests that we write the tests before the actual code. 
+The **Test First** approach suggests that we write the tests **before** the actual code. 
 
-We can keep rerunning the tests. This way we will always know whether our code produces the expected results or not. 
+We can keep rerunning the tests. 
 
-In Test-Driven Development we follow these steps:
+This way we will **always** know whether our code produces the expected results or not. 
+
+In **Test-Driven Development** we follow these steps:
 - Create a test list
 - Pick a test
 - Compose it 
@@ -39,10 +41,10 @@ In Test-Driven Development we follow these steps:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-21-why-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- TDD (Test Driven Development) helps find issues in an early stage of the project and avoid having to rework parts of out code 
+- TDD (Test Driven Development) helps find **issues** in an **early** stage of the project and avoid having to rework parts of out code 
 
-- Writing code to satisfy certain conditions helps us acquire greater focus in the process. 
+- Writing code to **satisfy** certain conditions helps us acquire greater focus in the process
 
-- If we create the tests before writing the code, usually they will be more comprehensive. 
+- If we create the tests before writing the code, usually they will be more **comprehensive**
 
 [/slide]
