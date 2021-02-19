@@ -1,6 +1,6 @@
 # Manipulating Strings
 
-[slide]
+[slide hideTitle]
 # Concatenating
 
 [vimeo-video]
@@ -8,7 +8,7 @@
 [stream language="RO" videoId="489817452/a5c7ddac9c"  /]
 [/video-vimeo]
 
-The **concatenation** in JS is done with the operators: `+` and `+=` or by the `concat()` method.
+**Concatenation** in JavaScript is done with the operators: `+` and `+=` or by the `concat()` method.
 
 **Concat** can also be used to **merge** two arrays.
 
@@ -18,11 +18,11 @@ Here is an example of how the `+` and `+=` operators work:
 
 ```js live
 let sentence = 'Hello' + ', ';
-let world = 'John';
+let word = 'John';
 
-sentence += world
+sentence += word;
 
-console.log(sentence)
+console.log(sentence);
 ```
 
 Let us see how `concat()` works: 
@@ -36,13 +36,13 @@ let concatenated = greet.concat(name);
 console.log(concatenated);
 ```
 
-In the end, we see that both ways will return an **identical string**.
+In the end, we see that both methods will return an **identical string**.
 
 That is because `+` and `+=` and the `concat()` method do the same but in different ways.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Searching for Substrings
 
 [vimeo-video]
@@ -52,14 +52,14 @@ That is because `+` and `+=` and the `concat()` method do the same but in differ
 
 To **find** a substring, we can use `indexOf()` or `lastIndexOf()`. 
 
-These two methods are **case sensitive**, this means that if we search for a word including a **capital letter and the string contains its lower-case version**, they will not match the word at all, and will return `-1`. 
+These two methods are **case sensitive**, which means that if we search for a word including a **capital letter and the string contains its lower-case version**, they will not match the word at all, and will return `-1`. 
 
 Both of them can **take up to two parameters:** 
 
-- The first one is the word that it searches for.
-- The second one is the starting index.
+- The first one is the word that it searches for
+- The second one is the starting index
 
-Here is an example of using `indexOf()`
+Here is an example of using `indexOf()`:
 
 ```js live
 let str = 'I love JS a lot';
@@ -67,16 +67,16 @@ let str = 'I love JS a lot';
 console.log(str.indexOf('JS'));
 ```
 
-Here `indexOf` returns **7** because this is first index that `JS` appears. 
+Here `indexOf` returns **7** because this is the first index that `JS` appears. 
 
-Now let us try with `js` not `JS`:
+Now let us try with `js`, instead of `JS`:
 
 ```js live
 let str = 'I love JS a lot';
 
 console.log(str.indexOf('js'));
 ```
-Now it returns `-1` because **indexOf** is case sensitive and does not detect **js** as **JS** 
+Now it returns `-1` because `indexOf` is case sensitive and does not detect **"js"** as **"JS"** 
 
 Let us check `lastIndexOf()`. 
 
@@ -97,7 +97,7 @@ And the second returns `-1` because it will not find anything.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Extracting Substrings
 
 [vimeo-video]
@@ -105,18 +105,20 @@ And the second returns `-1` because it will not find anything.
 [stream language="RO" videoId="489817495/403a2d42fe"  /]
 [/video-vimeo]
 
-To **extract** a substring, we can use `substring()`. This method has two parameters:
+To **extract** a substring, we can use `substring()`. 
 
-- The first one is the start index.
-- The second one is the end index.
+This method has two parameters:
+
+- The first one is the **start** index
+- The second one is the **end** index
 
 And it will return the part from the **start index** till the **end index**. 
 
-But if we don't give the **second parameter**, it will return the part between the **start index** and the **end**. 
+But if we do not give the **second parameter**, it will return the part between the **start index** and the **end**. 
 
 **Substring** will not modify the original string, it will return a new one. 
 
-This means that we need to assign it to a variable to work.
+This means that we need to assign it to a variable for it to work.
 
 Here are some examples:
 
@@ -129,15 +131,15 @@ let subStrTwo = str.substring(5)
 console.log(subStrOne);
 console.log(subStrTwo);
 ```
-Here **subStrOne** will return **to** because this is the part that is in the range of the start and end index.
+Here **subStrOne** will return **"to"** because this is the part that is in the range of the start and end index.
 
-But **subStrTwo** returns everything from **to** to the end.
+But **subStrTwo** returns everything from **"to"** to the end.
 
 That is because we did not give it the second parameter, which is the **end** index.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # String Operations
 
 [vimeo-video]
@@ -147,18 +149,18 @@ That is because we did not give it the second parameter, which is the **end** in
 
 If we want to change a part of a string directly, we will use `replace()`. 
 
-Like `substring()`, `replace()` it **will not modify** the original string, it will **return a new one**. 
+Like `substring()`, `replace()` **will not modify** the original string, instead it will **return a new one**. 
 
 This means that we need to assign it to a variable.
 
 **Replace** is a method that requires two parameters:
 
--  pattern
--  replacement
+-  `pattern`
+-  `replacement`
 
-For the **pattern** part we can use **Regex** or **string**. 
+For the **pattern** part we can use a **regular expression** or a **string**. 
 
-And for the **replacement** we can use `function()` or a **string**.
+And for the **replacement** we can use a `function()` or a **string**.
 
 After it matches the pattern, it will change only its first appearance. 
 
@@ -173,15 +175,15 @@ console.log(replacedStr);
 
 [/slide]
 
-[slide]
-# Problem: Substring
+[slide hideTitle]
+# Problem with Solution: Substring
 
 [vimeo-video]
 [stream language="EN" videoId="489817604/03cd593d45" default /]
 [stream language="RO" videoId="489817604/03cd593d45"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Substring" taskId="text-processing-lab-2" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Substring" taskId="js-fundamentals-pt2-text-processing-lab-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function substring(input){
@@ -190,7 +192,7 @@ function substring(input){
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a function that receives **a string and two numbers.**
 
 The numbers will be a starting index and count of elements to substring. 
@@ -200,19 +202,19 @@ Print the result.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['ASentance', '1', '8']`| Sentance |
+|`['ASentence', '1', '8']`| Sentence |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-ASentance
+ASentence
 1
 8
 [/input]
 [output]
-Sentance
+Sentence
 [/output]
 [/test]
 [test]
@@ -269,109 +271,7 @@ JAko88/(()
 [/code-task]
 [/slide]
 
-[slide]
-# Solution: Substring
-
-[vimeo-video]
-[stream language="EN" videoId="489816947/090fda2f05" default /]
-[stream language="RO" videoId="489816947/090fda2f05"  /]
-[/video-vimeo]
-
-[code-task title="Solution: Substring" taskId="text-processing-lab-2-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-// Different vido code
-function solve(index) {
-    let word = index[0];
-    let index1 = Number(index[1]);
-    let index2 = Number(index[2]);
-
-    let sub = word.substring(index1, index1 + index2)
-    console.log(sub)
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a function that receives **a string and two numbers.**
-
-The numbers will be a starting index and count of elements to substring. 
-
-Print the result.
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['ASentance', '1', '8']`| Sentance |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-ASentance
-1
-8
-[/input]
-[output]
-Sentance
-[/output]
-[/test]
-[test]
-[input]
-gashajGAHJGAasghaj
-4
-8
-[/input]
-[output]
-ajGAHJGA
-[/output]
-[/test]
-[test]
-[input]
-gasjGAHJAasghaj
-0
-10
-[/input]
-[output]
-gasjGAHJAa
-[/output]
-[/test]
-[test]
-[input]
-gasjGA48HJAasghaj
-5
-1
-[/input]
-[output]
-A
-[/output]
-[/test]
-[test]
-[input]
-gasjGA48HJAahaj
-5
-5
-[/input]
-[output]
-A48HJ
-[/output]
-[/test]
-[test]
-[input]
-jjjasjA48HJAko88/(())haj
-10
-10
-[/input]
-[output]
-JAko88/(()
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide]
+[slide hideTitle]
 # Splitting a String
 
 [vimeo-video]
@@ -387,9 +287,9 @@ We have the option to add a second parameter, which is the **limit**.
 
 It sets the **limit** of **indexes** in the final **array**.
 
-Here an example on using `split()`
+Here an example of using `split()`:
 
--  the separator will be **space**
+-  The separator will be a **space**
 
 ```js live
 let str = 'I love JS';
@@ -398,24 +298,22 @@ let divided = str.split(' ');
 console.log(divided);
 ```
 
-# Finding in a String
+## Finding in a String
 
 To find a specific part of a string, we use the `includes()` method. 
 
 This method takes two parameters:
 
-- The string we are searching for. 
-- Position at which to start searching. This one is optional.
+- The string we are searching for
+- Position at which to start searching, which is optional
 
 It takes the **string** and searches for it in the main one.
 
-It takes the string and searches for it in the main one.
+It is similar to `indexOf()`, but if it finds the substring, this method returns `true`, and `false` if it does not. 
 
-It is similar to `indexOf()`, but if it finds it, this method returns `true` and `false` if it does not. 
+`includes()` is case sensitive.
 
-**Includes** is case sensitive.
-
-For example:
+**For example:**
 
 ```js live
 let text = 'I love JS';
@@ -425,7 +323,7 @@ console.log(text.includes('js'));
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Repeating in a String
 
 [vimeo-video]
@@ -433,18 +331,20 @@ console.log(text.includes('js'));
 [stream language="RO" videoId="489817061/4454e2aa76"  /]
 [/video-vimeo]
 
-When we want to **repeat** a **string** in JS, we use `repeat()`. That allows us to make a certain number of **copies** of that **string**.
+When we want to **repeat** a **string** in JS, we use `repeat()`. 
+
+That allows us to make a certain number of **copies** of that **string**.
 
 It receives two parameters:
 
--  String
--  Count
+-  `string`
+-  `count`
 
-After it is called on a specific **string**, **repeat** will take the **string** that we gave and it will **multiply** it by the **number** that we also pass to it. 
+After it is called on a specific **string**, **repeat** will take the **string** that we gave and it will **multiply** it by the **number** that we pass to it. 
 
 After that, it will **return** a **concatenated string** of all the copies.
 
-Here is an example on how **repeat** works:
+Here is an example of how **repeat** works:
 
 ```js live
 let str = '*';
@@ -454,15 +354,15 @@ console.log(str.repeat(5));
 
 [/slide]
 
-[slide]
-# Problem: Censored Words
+[slide hideTitle]
+# Problem with Solution: Censored Words
 
 [vimeo-video]
 [stream language="EN" videoId="489817109/c566f94bb4" default /]
 [stream language="RO" videoId="489817109/c566f94bb4"  /]
 [/video-vimeo]
 
-[code-task title="Censored Words" taskId="text-processing-lab-3" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Censored Words" taskId="js-fundamentals-pt2-text-processing-Censored-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -472,10 +372,10 @@ function censoredWords(input){
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a function that receives a text as a first parameter  and a single word as a second.
+# Description
+Write a function that receives a sentence as a first parameter  and a single word as a second.
 
-Find all occurrences of that word in the text and **replace them** with the corresponding count of `*`.
+Find all occurrences of that word in the sentence and **replace them** with the corresponding count of `*`.
 
 # Example
   | **Input** | **Output** |
@@ -545,107 +445,7 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 [/code-task]
 [/slide]
 
-[slide]
-# Solution: Censored Words
-
-[vimeo-video]
-[stream language="EN" videoId="489817292/f7357145f2" default /]
-[stream language="RO" videoId="489817292/f7357145f2"  /]
-[/video-vimeo]
-
-[code-task title="Censored Words" taskId="text-processing-lab-3-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-//Different vido code
-
-function censoredWords(input){
-
-    let text = input[0];
-    let word = input[1];
-
-    while (text.indexOf(word) > -1) {
-        text = text.replace(word, '*'.repeat(word.length));
-    }
-    console.log(text);
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a function that receives a text as a first parameter  and a single word as a second.
-
-Find all occurrences of that word in the text and **replace them** with the corresponding count of `*`.
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['A small sentence with some words', 'small']`| A \*\*\*\*\* sentence with some words |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-A small sentence with some words
-small
-[/input]
-[output]
-A \*\*\*\*\* sentence with some words
-[/output]
-[/test]
-[test]
-[input]
-soallsentencewithsomewords
-so
-[/input]
-[output]
-\*\*allsentencewith\*\*mewords
-[/output]
-[/test]
-[test]
-[input]
-pesho gosho stamat pesho
-pesho
-[/input]
-[output]
-\*\*\*\*\* gosho stamat \*\*\*\*\*
-[/output]
-[/test]
-[test]
-[input]
-aa bb aa ca pesho gosho stamat pesho
-a
-[/input]
-[output]
-\*\* bb \*\* c\* pesho gosho st\*m\*t pesho
-[/output]
-[/test]
-[test]
-[input]
-repeat word repeat repeat word word repeat
-repeat word
-[/input]
-[output]
-\*\*\*\*\*\*\*\*\*\*\* repeat \*\*\*\*\*\*\*\*\*\*\* word repeat
-[/output]
-[/test]
-[test]
-[input]
-aaa heyyy a heyyy abv hey abc
-heyyy
-[/input]
-[output]
-aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide]
+[slide hideTitle]
 # Trimming Strings
 
 [vimeo-video]
@@ -655,7 +455,7 @@ aaa \*\*\*\*\* a \*\*\*\*\* abv hey abc
 
 To **remove whitespaces** we use the `trim()` method. 
 
-**Trim** will remove all of the **whitespaces** in a string, from both ends.
+**Trim** will remove all of the **whitespaces** in a string from both ends.
 
 So that is why we have `trimStart()` and `trimEnd()`. 
 
@@ -691,7 +491,7 @@ console.log(str.trimEnd());
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Starts With or Ends With
 
 [vimeo-video]
@@ -701,7 +501,7 @@ console.log(str.trimEnd());
 
 With `startsWith()`, we can check if a string starts with a specific word, that we will pass to the method as a parameter.
 
-**EndsWith** it is almost the same. 
+**EndsWith** is almost the same. 
 
 The difference between them is that `endsWith()` checks if that string ends with a certain word.
 
@@ -709,16 +509,15 @@ If they find the substring, they will return true, and false if they do not.
 
 **StartsWith** can receive two parameters: 
 
-- The word that it searches for in the string.
-- And **position** from which index to start. This parameter is optional.
+- The **word** that it searches for in the string
+- And **position** from which index to start 
+  - this parameter is optional
 
-**EndsWith** also can receive two parameters.
+**EndsWith** also can receive two parameters, but the second one is **length** and it is optional.
 
-But the second one is **length** and it is optional.
+If the **second parameter is given**, it will be used as the search' starting index.
 
-If the **second parameter is given**, it will tell from which index to search.
-
-Here are some examples on how they work:
+Here are some examples of how they work:
 
 ```js live
 let sentence = 'My name is John';
@@ -727,7 +526,7 @@ console.log(sentence.startsWith('My'));
 console.log(sentence.startsWith('My', 3));
 ```
 
-Let us see and how `endsWith()` works:
+Let us see how `endsWith()` works:
 
 ```js live
 let sentence = 'My name is John';
@@ -736,11 +535,11 @@ console.log(sentence.endsWith('John'));
 console.log(sentence.endsWith('John', 10));
 ```
 
-In the first example the **console.logs**, will return `true`, but in the second one, they will return `false` because the substring will not be in the searching part. 
+In both examples, the first **console.log**, will return `true`, but the second one will return `false` because the substring will not be in the searching part. 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Padding at the Start and End
 
 [vimeo-video]
@@ -750,7 +549,7 @@ In the first example the **console.logs**, will return `true`, but in the second
 
 If we want to **add** a string **a certain number of times** at **the beginning** or the **end** of another string, we can use the `padStart()` or `padEnd()` methods.
 
-They will **concatenate the substring**, which is one of the two parameters that we pass to them until they reach the length, which is the other parameter that we gave them.
+They will **concatenate the substring**, which is one of the two parameters that we pass to them until they reach the length, which they receive as a parameter as well.
 
 We also need to assign them to a variable because **they will not modify the original string.**
 
@@ -774,15 +573,15 @@ console.log(padded);
 
 [/slide]
 
-[slide]
-# Problem: Count String Occurrences
+[slide hideTitle]
+# Problem with Solution: Count String Occurrences
 
 [vimeo-video]
 [stream language="EN" videoId="489817230/bda8e696ff" default /]
 [stream language="RO" videoId="489817230/bda8e696ff"  /]
 [/video-vimeo]
 
-[code-task title="Count String Occurrences" taskId="text-processing-lab-4" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Count String Occurrences" taskId="js-fundamentals-pt2-text-processing-Count-String-Occurrences" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -792,109 +591,8 @@ function countStringOccurrences(input){
 ```
 [/code-editor]
 [task-description]
-## Description
-Write a function that receives a piece of text and a string that you need to search for in it.
-
-Print all the occurrences of that word in the string.
-
-# Example
-  | **Input** | **Output** |
-| --- | --- |
-|`['This is a word and it also is a sentence','is']`| 2 |
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-This is a word and it also is a sentence
-is
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-az ti toi tq to nie vie te az az az
-az
-[/input]
-[output]
-4
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie te az az az
-toi
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie az az az
-te
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-az toi ti toi tq to nie vie az az az
-tq
-[/input]
-[output]
-1
-[/output]
-[/test]
-[test]
-[input]
-az tq tq tq tq
-tq
-[/input]
-[output]
-4
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-[/slide]
-
-[slide]
-# Solution: Count String Occurrences
-
-[vimeo-video]
-[stream language="EN" videoId="489817236/3a7e106620" default /]
-[stream language="RO" videoId="489817236/3a7e106620"  /]
-[/video-vimeo]
-
-[code-task title="Count String Occurrences" taskId="text-processing-lab-4-solution" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-
-```
-//Different vido code
-function countStringOccurrences(input){
-   let sentence = input[0].split(' ')
-   let keyWord = input[1];
-   let occs = 0
-
-    for(word of sentence){
-        if(word === keyWord){
-            occs++
-        }
-    }
-    console.log(occs)
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a function that receives a text and a string that you need to search.
+# Description
+Write a function that receives a **piece of text** and a **string that you need to search for** in it.
 
 Print all the occurrences of that word in the string.
 
