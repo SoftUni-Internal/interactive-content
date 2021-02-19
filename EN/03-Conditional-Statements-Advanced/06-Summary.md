@@ -45,7 +45,7 @@ switch (selector) {
 }
 ```
 
-## In the next lesson we will learn:
+## In the next lesson you will learn:
 
 - What is for-loop
 
