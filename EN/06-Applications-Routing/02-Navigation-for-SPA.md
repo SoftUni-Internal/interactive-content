@@ -59,7 +59,9 @@ After, we set the **window.location.href** to the same URL but with a changed ha
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-18-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can subscribe for changes in the URL.
+Subscribing means to create a function, which checks at a certain period if there are any changes.
+
+In our case, we attach the function to the URL.
 
 The subscribing looks like this:
 
@@ -81,7 +83,9 @@ let listen = function () {
 listen();
 ```
 
-We have two functions, `getCurrent()` and `listen()`, `getCurrent()` returns the **hash**.
+We have two functions, `getCurrent()` and `listen()`.
+
+The `getCurrent()` function returns the current **hash** that is in the URL.
 
 The function that we are interested in is the `listen()` function.
 
@@ -101,9 +105,9 @@ After that, we set a **timeout** to 200ms, at which the function to be called.
 
 The **push-based** routing is a more modern way to handle navigation.
 
-It allows us to show real **server-side data**. 
+With **push-based** routing we can use **server-side rendering**.
 
-That can help with **SEO** and **Facebook Open Graph**.
+The **server-side rendering** helps with **SEO** and **Facebook Open Graph**.
 
 The **push-based** routing helps with **analytics** and fix **hashtag issues**.
 
@@ -143,22 +147,31 @@ The **PushState** method adds a new entry to the **history object** of the brows
 
 This method takes three parameters.
 
-- The **state** is associated with the new entry
+- The **state** associated with the new entry
 
-- The **Title** is ignored by most of the browser nowadays
+- The page **Title** of the new entry
+
+   - It is ignored by most of the browser nowadays
 
 - The **URL** is the new history entry, and it must be from the **same origin** as the current URL
 
 Here is an example:
 
 ```js
-let productId = { productId: '56789123' };
-history.pushState(productId, '', 'product.html');
+history.pushState({}, '', '/product/56789123');
 ```
 
 We call the `history.pushState()` method and pass the parameters.
 
 The browsers ignores the second parameter, and that is why it is an empty string.
+
+Before we call `pushState()`, the URL will look like this:
+
+[image assetsSrc="JS-Applications-Routing-12.jpg" /]
+
+After the `pushState()` method is instantiated the URL would be like this:
+
+[image assetsSrc="JS-Applications-Routing-13.jpg" /]
 
 [/slide]
 
@@ -168,7 +181,7 @@ The browsers ignores the second parameter, and that is why it is an empty string
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-22-The-ReplaceState-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **ReplaceState** moethod modifies the current entry.
+The **ReplaceState** method modifies the current entry.
 
 It takes a **State**, a **Title**, and a **URL** as parameters.
 
@@ -179,11 +192,18 @@ The **Title** parameter will be ignored by most of the browsers.
 Here is an example of `replaceState()`:
 
 ```js
-let student = { studentId: '56789123' };
-history.replaceState(student, '', 'newStudent.html');
+history.replaceState({}, '', '20');
 ```
 
 After we instantiate the `replaceState()` method, it will modify the current history entry.
+
+Before the `replaceState()` method is instantiated, the URL will look like this:
+
+[image assetsSrc="JS-Applications-Routing-14.jpg" /]
+
+After we call `replaceState()`, the URL would be like this:
+
+[image assetsSrc="JS-Applications-Routing-15.jpg" /]
 
 [/slide]
 
