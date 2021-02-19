@@ -97,9 +97,11 @@ console.log(numbers);
 [/slide]
 
 [slide hideTitle]
-# Problem: Sum First and Last Array Elements
+# Problem with Solution: Sum First and Last Array Elements
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Problem-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -117,126 +119,7 @@ function sum(input){
 [task-description]
 # Description
 
-Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
-
-[/task-description]
-[tests]
-[test open]
-[input]
-20
-30
-40
-[/input]
-[output]
-60
-[/output]
-[/test]
-[test open]
-[input]
-10
-17
-22
-33
-[/input]
-[output]
-43
-[/output]
-[/test]
-[test]
-[input]
-191
-67
-22
-33
-9
-[/input]
-[output]
-200
-[/output]
-[/test]
-[test]
-[input]
-10
-69
-[/input]
-[output]
-79
-[/output]
-[/test]
-[test]
-[input]
-56
-44
-19
-[/input]
-[output]
-75
-[/output]
-[/test]
-[test]
-[input]
-118
-574
-19
-[/input]
-[output]
-137
-[/output]
-[/test]
-[test]
-[input]
-11
-58
-69
-[/input]
-[output]
-80
-[/output]
-[/test]
-[test]
-[input]
-91
-18
-19
-[/input]
-[output]
-110
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Sum First and Last Array Elements
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Sum First and Last Array Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function sum(arr){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {return code(input.map(Number))}
-```
-[/code-adapter]
-[task-description]
-# Description
-
-Write a function that receives an **array of numbers**. Print out the sum of first and last element of that array. 
+Write a function that receives an **array of numbers**. Print out the sum of the first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
@@ -362,9 +245,11 @@ The last element, Sunday, is at index 6 of the array.
 [/slide]
 
 [slide hideTitle]
-# Problem: Days of Week
+# Problem with Solution: Days of Week
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Probelm-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Days of Week" taskId="fundamentals-js-arrays-lab-Days-of-Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -384,121 +269,7 @@ function days(number){
 [task-description]
 # Description
 
-Write a program which receives a number and prints out the corresponding name of the day of week. 
-
-If the number is NOT a valid day, print `Invalid day!`.
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|3| Wednesday |
-|11| Invalid day! |
-
-[/task-description]
-[tests]
-[test open]
-[input]
-3
-[/input]
-[output]
-Wednesday
-[/output]
-[/test]
-[test open]
-[input]
-11
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-Monday
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-Tuesday
-[/output]
-[/test]
-[test]
-[input]
-4
-[/input]
-[output]
-Thursday
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-Friday
-[/output]
-[/test]
-[test]
-[input]
-6
-[/input]
-[output]
-Saturday
-[/output]
-[/test]
-[test]
-[input]
-7
-[/input]
-[output]
-Sunday
-[/output]
-[/test]
-[test]
-[input]
-8
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[test]
-[input]
-9
-[/input]
-[output]
-Invalid day!
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide]
-# Solution: Days of Week
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Days of Week" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function days(input){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-# Description
-
-Write a program which receives a number and prints out the corresponding name of the day of week. 
+Write a program that receives a number and prints out the corresponding name of the day of the week. 
 
 If the number is NOT a valid day, print `Invalid day!`.
 
