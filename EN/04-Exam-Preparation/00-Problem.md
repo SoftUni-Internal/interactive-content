@@ -52,25 +52,25 @@ The commands will be the following:
 
 ## Comments
 
-### TakeOdd 
+`TakeOdd` 
 
-- Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr -> icecream::hot::summer
+- `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr -> icecream::hot::summer`
 
 - We only take the chars at odd indices 1, 3, 5 etc.
 
-### Cut 15  3 -> icecream::hot::summer -> sum
+`Cut 15  3 -> icecream::hot::summer -> sum`
 
-- icecream::hot::mer
+- `icecream::hot::mer`
 
 We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
 
 Then, on a new line we print the resulting new raw password.
 
-### Substitute :: - -> icecream::hot::summer -> icream-hot-summer
+`Substitute :: - -> icecream::hot::summer -> icream-hot-summer`
 
-- We replace "::" with "-".
+- `We replace "::" with "-"` .
 
-### Substitute | ^ -> Nothing to replace! 
+`Substitute | ^ -> Nothing to replace!` 
 
 - "|" is not found anywhere in the raw password.
 
