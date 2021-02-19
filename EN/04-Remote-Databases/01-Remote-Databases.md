@@ -8,11 +8,11 @@
 
 Relational databases maintain data in tables, providing an efficient and flexible way to store and access structured information. 
 
-Tables consist of columns containing one or more data categories, and rows, also known as table records, are a set of data defined by the category.
+The tables consist of columns containing one or more data categories, and rows, also known as table records, are a set of data defined by the category.
 
-Each table has a **unique** identifier called **primary key**, which identifies the information in the table.
+Each table has a **unique** identifier called a **primary key**, which identifies the information in the table.
 
-The logical connection between different tables is established with  **foreign keys** -  a field in a table that connects with the **primary key** data of another table.
+The logical connection between different tables is established with  **foreign keys** - a field in a table that connects with the **primary key** of another table.
 
 **SQL** or **Structured Query Language** is the primary interface used to communicate with Relational Databases.
 
@@ -45,28 +45,28 @@ Non-relational databases are ideal for storing data that may be changed frequent
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pros of a Relational Database:**
-- Data structured into categories
-- They support **ACID** transactional consistency and support "joins"
+- Data is structured into categories
+- They support **ACID** transactional consistency and "JOINs"
 - Built-in data integrity and a large eco-system
 - Relationships in this system have constraints
 - Limitless indexing
 
-One of the benefits of using a Relational Database is that this type of database allows the user to classify the data into different categories and store them efficiently. 
+One of the benefits of using a Relational Database is that it allows the user to classify the data into different categories and store them efficiently. 
 
 In computer science, **ACID** (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, etc.
 
-Key constraint specifies that in any relation, all the values of a primary key must be unique.
+The key constraint specifies that in any relation, all of the values of a primary key must be unique.
 
 The value of a primary key must not be **null**.
 
-Use indexes to quickly locate data without searching every row in a database table every time a database table is accessed.
+Relational databases use indexes to quickly locate data without searching every row in every table.
 
 **Pros of a Non-Relational Database:**
 - Data is not confined to a structured group
-- You can perform functions that allow for greater flexibility
+- You can perform functions that allow for a greater flexibility
 - Scale-out horizontally
 - High availability
-- Many are **open source**
+- Many NoSQL databases are **open source**
 
 NoSQL databases have become popular because they store data in straightforward forms that can be easier to understand than the type of data models used in SQL databases.
 
@@ -74,7 +74,7 @@ NoSQL databases often allow developers to change the structure of the data.
 
 They can scale-out "horizontally", meaning that they run on multiple servers that work together, each sharing part of the load.
 
-High-availability NoSQL databases are systems designed to run without interruption of service. 
+High-availability NoSQL databases are systems designed to run without an interruption of a service.
 
 Many web-based businesses require data services that are available without interruption.
 
@@ -86,10 +86,10 @@ Many web-based businesses require data services that are available without inter
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-6-backend-as-a-service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Backend-as-a-Service or **BaaS** is a cloud service model in which developers outsource all the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
+Backend-as-a-Service or **BaaS** is a cloud service model, in which developers outsource all of the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
 
 **BaaS** vendors provide pre-written software for activities that take place on servers, such as user **authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
 
-There are two types of BaaS. One is **Cloud BaaS** and the other is **Open-source BaaS**.
+There are two types of BaaS: **Cloud BaaS** and **Open-source BaaS**.
 
 [/slide]
