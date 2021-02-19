@@ -15,7 +15,7 @@ it('expect sum ([1,2.3] to be 6)', function() {
 ```
 
 - In Test-driven development (TDD) 
-    - tests are written first
+    * tests are written first
 
 ## In the next lesson you will learn:
 

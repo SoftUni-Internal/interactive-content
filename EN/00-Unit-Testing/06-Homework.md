@@ -29,9 +29,9 @@ function isOddOrEven(input) {
         return undefined;
     }
     if (input.length % 2 === 0) {
-        return "even";
+        return 'even';
     }
-    return "odd";
+    return 'odd';
 }
 ```
 
@@ -44,12 +44,12 @@ We can see there are three outcomes for the function:
 Write one or two tests passing in parameters that are **NOT** of type string to the function, expecting it to return undefined. 
 
 ```js
-describe("Is Odd Or Even", function(){
-    it("should return undefined with a number as parameter", function(){
-        expect(isOddOrEven(13)).to.equal(undefined, "Function did not return the correct result!")
+describe('Is Odd Or Even', function(){
+    it('should return undefined with a number as parameter', function(){
+        expect(isOddOrEven(13)).to.equal(undefined, 'Function did not return the correct result!')
     });
-    it("should return undefined with an object as parameter", function(){
-        expect(isOddOrEven({name: "George"})).to.equal(undefined, "Function did not return the correct result!")
+    it('should return undefined with an object as parameter', function(){
+        expect(isOddOrEven({name: 'George'})).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
 ```
@@ -61,12 +61,12 @@ Write a test for each of the cases.
 In the first test, we pass a string with an **even** length and a second one where we pass a string with an **odd** length.
 
 ```js
-describe("Is Odd Or Even", function(){
-    it("should return even", function(){
-        expect(isOddOrEven("aaaa")).to.equal("even", "Function did not return the correct result!")
+describe('Is Odd Or Even', function(){
+    it('should return even', function(){
+        expect(isOddOrEven('aaaa')).to.equal('even', 'Function did not return the correct result!')
     });
-    it("should return odd", function(){
-        expect(isOddOrEven("aaa")).to.equal("odd", "Function did not return the correct result!")
+    it('should return odd', function(){
+        expect(isOddOrEven('aaa')).to.equal('odd', 'Function did not return the correct result!')
     });
 })
 ```
@@ -74,11 +74,11 @@ describe("Is Odd Or Even", function(){
 Finally, make a test passing multiple strings in a row to ensure the function works correctly.
 
 ```js
-describe("Is Odd Or Even", function(){
-    it("should return correct values with multiple checks", function(){
-        expect(isOddOrEven("cat")).to.equal("odd", "Function did not return the correct result!")
-        expect(isOddOrEven("pet")).to.equal("odd", "Function did not return the correct result!")
-        expect(isOddOrEven("bird")).to.equal("even", "Function did not return the correct result!")
+describe('Is Odd Or Even', function(){
+    it('should return correct values with multiple checks', function(){
+        expect(isOddOrEven('cat')).to.equal('odd', 'Function did not return the correct result!')
+        expect(isOddOrEven('pet')).to.equal('odd', 'Function did not return the correct result!')
+        expect(isOddOrEven('bird')).to.equal('even', 'Function did not return the correct result!')
     });
 })
 ```
@@ -209,7 +209,7 @@ function lookupChar(string, index) {
         return undefined;
     }
     if (string.length <= index || index < 0) {
-        return "Incorrect index";
+        return 'Incorrect index';
     }
     return string.charAt(index);
 }
@@ -229,26 +229,26 @@ Now that we have our exit conditions, we start checking in what situations we ca
 If any of the parameters are of an **incorrect type**,  we return  **undefined**.
 
 ```js
-describe("Character Look Up", function(){
-    it("should return undefined with first parameter as a number", function(){
-        expect(lookupChar(13, 0)).to.equal(undefined, "Function did not return the correct result!")
+describe('Character Look Up', function(){
+    it('should return undefined with first parameter as a number', function(){
+        expect(lookupChar(13, 0)).to.equal(undefined, 'Function did not return the correct result!')
     });
-    it("should return undefined with second parameter as a string", function(){
-        expect(lookupChar("Peter", "George")).to.equal(undefined, "Function did not return the correct result!")
+    it('should return undefined with second parameter as a string', function(){
+        expect(lookupChar('Peter', 'George')).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
 ```
 
 If we take a closer look at the implementation, we see that the check uses `Number.isInteger()` instead of `typeof(index === number)` to check the index. 
 
-While `typeof` would protect us from getting an **index** that is a **non-number**, it will not protect us from receiving a **floating-point number**. 
+While **typeof** would protect us from getting an **index** that is a **non-number**, it will not protect us from receiving a **floating-point number**. 
 
 The condition says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
 
 ```js
-describe("Character Look Up", function(){
-    it("should return undefined with second parameter as a floating point number", function(){
-        expect(lookupChar("Peter", 3.12)).to.equal(undefined, "Function did not return the correct result!")
+describe('Character Look Up', function(){
+    it('should return undefined with second parameter as a floating point number', function(){
+        expect(lookupChar('Peter', 3.12)).to.equal(undefined, 'Function did not return the correct result!')
     });
 })
 ```
@@ -258,15 +258,15 @@ Moving on to the next exit condition - returning an empty string.
 This is the case when we pass in an index that is a negative number or an index that is outside of the bounds of the string. 
 
 ```js
-describe("Character Look Up", function(){
-    it("should return incorrect index with second parameter as incorrect value", function(){
-        expect(lookupChar("George", 13)).to.equal("Incorrect index", "Function did not return the correct result!")
+describe('Character Look Up', function(){
+    it('should return incorrect index with second parameter as incorrect value', function(){
+        expect(lookupChar('George', 13)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
-    it("should return incorrect index with second parameter as negative value", function(){
-        expect(lookupChar("Peter", -1)).to.equal("Incorrect index", "Function did not return the correct result!")
+    it('should return incorrect index with second parameter as negative value', function(){
+        expect(lookupChar('Peter', -1)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
-    it("should return incorrect index with second parameter equal to the first parameter length", function(){
-        expect(lookupChar("Peter", 5)).to.equal("Incorrect index", "Function did not return the correct result!")
+    it('should return incorrect index with second parameter equal to the first parameter length', function(){
+        expect(lookupChar('Peter', 5)).to.equal('Incorrect index', 'Function did not return the correct result!')
     });
 })
 ```
@@ -274,12 +274,12 @@ describe("Character Look Up", function(){
 For the last exit condition, which will be to return a correct result, a simple check for the returned value will be enough.
 
 ```js
-describe("Character Look Up", function(){
-    it("should return correct value with correct parameters", function(){
-        expect(lookupChar("Peter", 3)).to.equal("e", "Function did not return the correct result!")
+describe('Character Look Up', function(){
+    it('should return correct value with correct parameters', function(){
+        expect(lookupChar('Peter', 3)).to.equal('e', 'Function did not return the correct result!')
     });
-    it("should return correct value with correct parameters", function(){
-        expect(lookupChar("Peter", 0)).to.equal("P", "Function did not return the correct result!")
+    it('should return correct value with correct parameters', function(){
+        expect(lookupChar('Peter', 0)).to.equal('P', 'Function did not return the correct result!')
     });
 })
 ```
@@ -479,15 +479,15 @@ When using floating-point numbers, the result should be considered correct if it
 When testing a more complex object, write a **nested describe** for each function shown in the example below. 
 
 ```js
-describe("Math Enforcer", function(){
-    describe("Add Five", function(){
-        it("should return undefined passing parameter as a string", function(){
+describe('Math Enforcer', function(){
+    describe('Add Five', function(){
+        it('should return undefined passing parameter as a string', function(){
             // To Do
         });
     })
 
-    describe("Add Five", function(){
-        it("should return 5 if parameter equals 0", function(){
+    describe('Add Five', function(){
+        it('should return 5 if parameter equals 0', function(){
             // To Do
         });
     })
@@ -912,7 +912,7 @@ Test Passed!
 [code-task title="String Builder" taskId="js-applications-Unit-Testing-String-Builder" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
-describe("String Builder", function(){
+describe('String Builder', function(){
    // Write your code here
 });
 
@@ -1538,7 +1538,7 @@ Test Passed!
 [code-editor language=javascript]
 
 ```
-describe("Payment package", function(){
+describe('Payment package', function(){
    // Write your code here
 });
 ```

@@ -32,13 +32,13 @@ As we can see, the **client** sends a **request**, and the **server** sends a **
 
 The most used methods are:
 
--  **GET** retrieves or loads a resource
--  **POST** creates or stores a resource
--  **PUT** updates a resource
--  **DELETE** removes a resource
--  **PATCH** updates partially a resource
--  **HEAD** retrieves headers of a resource
--  **OPTIONS** returns the HTTP methods that the server supports for the specified URL
+- **GET** retrieves or loads a resource
+- **POST** creates or stores a resource
+- **PUT** updates a resource
+- **DELETE** removes a resource
+- **PATCH** updates partially a resource
+- **HEAD** retrieves headers of a resource
+- **OPTIONS** returns the HTTP methods that the server supports for the specified URL
 
 The HTTP methods are **case sensitive**.
 
@@ -179,7 +179,7 @@ These fields specify the format of the request.
 
 We can set the **Content-Type** to be **JSON-encoded**.
 
-It will look like this: `Content-Type: application/json`.
+It will look like this: Content-Type: application/json`.
 
 We can also set the **Content-Type** to be `Content-Type: text/html`
 
