@@ -88,11 +88,11 @@ The are characterized by:
 
 In computer programming, a naming convention is a set of **rules** for choosing the name to be used for variables.
 
-In JS the convention for naming variables is **camel-case**. 
+In JS the convention for naming variables is **camelCase**. 
 
-There are other naming conventions which are used in different languages such as `Pascal case` and  `Snake case`. 
+There are other naming conventions which are used in different languages such as **PascalCase** and  **Snake case**.
 
-**Camel case** combines words by:
+**camelCase** combines words by:
 
 * Indicating the separation of the words with a single capitalized letter
 
@@ -102,7 +102,7 @@ There are other naming conventions which are used in different languages such as
 let userLoginCount;
 ```
 
-**Pascal case** combines words by:
+**PascalCase** combines words by:
 
 * Capitalizing each word along with the first one
 
@@ -112,7 +112,7 @@ let userLoginCount;
 let UserLoginCount;
 ```
 
-**Snake-case** is another naming convention, which combines words by:
+**Snake case** is another naming convention, which combines words by:
 
 * Using an underscore as a separator of the words `_`
 * Removing all spaces
