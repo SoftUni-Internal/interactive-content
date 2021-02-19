@@ -72,7 +72,7 @@ Then, on a new line we print the resulting new raw password.
 
 `Substitute | ^ -> Nothing to replace!` 
 
-- "|" is not found anywhere in the raw password.
+- `"|" is not found anywhere in the raw password.`
 
 - Finally, after receiving the "Done" command, we print the resulting password in the proper format.
 
