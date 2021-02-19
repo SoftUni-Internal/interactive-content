@@ -62,8 +62,6 @@ In this example:
 
 We have two built-in **JSON methods** in JavaScript:
 
-<br>
-
 * `JSON.parse()` - This method takes a JSON string and transforms it into a JavaScript object
 
 ``` js live
