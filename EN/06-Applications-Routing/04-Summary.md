@@ -12,7 +12,7 @@
 
 -  Types of **Routing**
 
-   -  Hash-Based
+   * Hash-Based
 
    ```js
    let changePath = function (path) {
@@ -21,7 +21,7 @@
    };
    ```
 
-   -  Push-Based
+   * Push-Based
 
    ```js
    let stateObj = { facNum: '123' };
@@ -30,14 +30,14 @@
 
    -  The History API provides access to the browser **history** object.
 
-      -  it provides methods like `back()`, `forward()`, `go()` and etc.
+      * it provides methods like `back()`, `forward()`, `go()` and etc.
 
 ## In the next lesson you will learn:
 
--  Design Patterns
+- Design Patterns
 
-   -  what is Pattern
+   * what is Pattern
 
-   -  most common Design Patterns
+   * most common Design Patterns
 
 [/slide]

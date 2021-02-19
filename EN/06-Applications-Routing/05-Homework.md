@@ -22,9 +22,9 @@ The example is styled using [Bootstrap](https://getbootstrap.com/).
 
 - **Home Page**: show the relevant info, depending on the status of the user.
 
-- **Catalog**: a list of all registered teams.
+- **Catalog**: a list of all registered teams
 
-- **About**: a dummy page that would hold information about the app.
+- **About**: a dummy page that would hold information about the app
 
 - **Register User**
 
@@ -32,7 +32,7 @@ The example is styled using [Bootstrap](https://getbootstrap.com/).
 
 - **Edit Team**
 
-- **View Team Details**: a detailed page that shows all of the members of the team and management controls.
+- **View Team Details**: a detailed page that shows all of the members of the team and management controls
 
 Create a header that is shared across all pages and place links to the relevant sections in it.
 
@@ -90,7 +90,7 @@ Use this information as a guideline.
 
 You may style and structure your solution differently, as long as the required functionality is present.
 
-**The home page when the user is not logged in.**
+**The home page when the user is not logged in:**
 
 [image assetsSrc="JS-Applications-Routing-5.png" /]
 
@@ -102,7 +102,7 @@ You may style and structure your solution differently, as long as the required f
 
 [image assetsSrc="JS-Applications-Routing-7.png" /]
 
-**Home page view for a registered user.**
+**Home page view for a registered user:**
 
 Note that the header navigation has changed to reflect that.
 
@@ -112,11 +112,11 @@ Note that the header navigation has changed to reflect that.
 
 [image assetsSrc="JS-Applications-Routing-9.png" /]
 
-**Create team and edit team forms are identical.**
+**Create team and edit team forms are identical:**
 
 [image assetsSrc="JS-Applications-Routing-10.png" /]
 
-**Team details with the option to join the team and a list of all current members.**
+**Team details with the option to join the team and a list of all current members:**
 
 [image assetsSrc="JS-Applications-Routing-11.png" /]
 

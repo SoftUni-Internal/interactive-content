@@ -18,7 +18,7 @@
 
 **3. Navigation and History**
 
--  The Browser Object Model (BOM) 
+- The Browser Object Model (BOM) 
 
 **4. Routing with page.js**
 

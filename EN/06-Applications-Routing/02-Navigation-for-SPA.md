@@ -168,7 +168,6 @@ The browsers ignores the second parameter, and that is why it is an empty string
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-22-The-ReplaceState-Method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
 The **ReplaceState** moethod modifies the current entry.
 
 It takes a **State**, a **Title**, and a **URL** as parameters.
@@ -199,7 +198,6 @@ The **popstate event** listens for changes in the state.
 The event will trigger when the history object changes.
 
 **Popstate event** will update the current entry to the last that the user has visited.
-
 
 We can read the current history object with **history.state.property** without waiting for the **popstate** event.
 

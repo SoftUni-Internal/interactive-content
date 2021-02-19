@@ -79,7 +79,7 @@ Location-based SPAs need a special object called **Router**.
 
 - They are not good at **Search engine optimization (SEO)** 
 
-   - The solution is the **server-side rendering**
+   * the solution is the **server-side rendering**
 
 - They provide a **single sharing link**
 
@@ -136,7 +136,7 @@ Because it uses **hyperlinks**, the standard navigation reloads the entire page.
 
 The other type is the **Routing** navigation. 
 
-We use it in **SPA**s because it simulates the standard navigation without refreshing the page.
+We use it in **SPA** because it simulates the standard navigation without refreshing the page.
 
 [image assetsSrc="JS-Applications-Routing-3.png" /]
 
