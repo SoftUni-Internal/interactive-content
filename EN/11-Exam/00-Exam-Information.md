@@ -2,6 +2,6 @@
 
 # Exam Information
 
-[exam-information] [/exam-information]
+[exam-information]  [/exam-information]
 
 [/slide]
