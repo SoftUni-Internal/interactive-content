@@ -135,7 +135,6 @@ public class Main {
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -144,7 +143,7 @@ public class T00_1ValidateTypesExist {
 
     @Test
     public void validateTypesExist() {
-        String[] classTypesToAssert = new String[]{
+        String\[\] classTypesToAssert = new String\[\]{
                 "Guild",
                 "Player",
         };
@@ -161,7 +160,7 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
-```
+
 [/input]
 [output]
 Test Passed!
@@ -169,7 +168,6 @@ Test Passed!
 [/test]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -244,7 +242,6 @@ public class T00_2ValidateFieldsExists \{
 
 
 \}
-```
 [/input]
 [output]
 Test Passed!
