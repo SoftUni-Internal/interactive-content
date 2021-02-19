@@ -69,9 +69,11 @@ console.log(myVar + 10);
 [/slide]
 
 [slide hideTitle]
-# Problem: Integer or Float
+# Problem with Solution: Integer or Float
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-problem-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-solution-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -90,130 +92,7 @@ function integerOrFloat(firstNumber, secondNumber, thirdNumber){
 [/code-adapter]
 [task-description]
 # Description
-You will receive **three numbers**. 
 
-Your task is to find their **sum** and print it to the console with an addition:
-
-`{number} - Integer or Float`
-
-
-# Example
-| **Input** | **Output** |
-| --- | --- |
-|9, 100, 1.1| 110.1 - Float |
-|100, 200, 303|603 - Integer|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-9
-100
-1.1
-[/input]
-[output]
-110.1 - Float
-[/output]
-[/test]
-[test open]
-[input]
-100
-200
-303
-[/input]
-[output]
-603 - Integer
-[/output]
-[/test]
-[test]
-[input]
-9
-14156
-1231.41
-[/input]
-[output]
-15396.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-456
-120
-145.41
-[/input]
-[output]
-721.41 - Float
-[/output]
-[/test]
-[test]
-[input]
-912
-54610
-451.11
-[/input]
-[output]
-55973.11 - Float
-[/output]
-[/test]
-[test]
-[input]
-56
-2120
-3203
-[/input]
-[output]
-5379 - Integer
-[/output]
-[/test]
-[test]
-[input]
-170
-2098
-483
-[/input]
-[output]
-2751 - Integer
-[/output]
-[/test]
-[test]
-[input]
-10990
-78
-483
-[/input]
-[output]
-11551 - Integer
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Integer or Float
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-solution-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[code-task title="Integer or Float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function integerOrFloat(firstNumber, secondNumber, thirdNumber){
-  // Write your code here
-}
-```
-[/code-editor]
-[code-adapter]
-```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
-}
-```
-[/code-adapter]
-[task-description]
-# Description
 You will receive **three numbers**. 
 
 Your task is to find their **sum** and print it to the console with an addition:
