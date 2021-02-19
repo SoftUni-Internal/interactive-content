@@ -21,7 +21,6 @@ While this method worked fine for **static** webpages, **interactivity**, which 
 
 # Server-Side vs. Client-Side
 
-
 **Server-side rendering** takes and renders our JavaScript code to static HTML and CSS **on the server**, sending **client-ready** HTML.
 
 When a user tries to **access** a website, the **server** prepares the **HTML** templates and **compiles** them.
@@ -113,23 +112,23 @@ Templates bring several **benefits**.
 Here are the most prominent ones:
 
 - **Productivity**
-    - templating results in **less repetitive code**
-    - they make our markup **easier to read** and interpret
+    * templating results in **less repetitive code**
+    * they make our markup **easier to read** and interpret
 
 - **Bandwidth Savings**
-    - the **HTML** is sent only **once**
-    - the **templating engine** takes care of similar elements
-    - only the **data** for a given entity is being sent
+    * the **HTML** is sent only **once**
+    * the **templating engine** takes care of similar elements
+    * only the **data** for a given entity is being sent
 
 - **Composability**
-    - allows for the use of a **single element on multiple pages**
-    - **headers**, **Footers** and **Sidebars** are examples of that
+    * allows for the use of a **single element on multiple pages**
+    * **headers**, **Footers** and **Sidebars** are examples of that
 
 - **Separation of concerns**
-    - isolating **HTML components** from the associated **content**
+    * isolating **HTML components** from the associated **content**
 
 - **Interactivity**
-    - since only **dynamic data** is fetched, views can render **faster**, resulting in **less** waiting time
+    * since only **dynamic data** is fetched, views can render **faster**, resulting in **less** waiting time
 
 [/slide]
 
@@ -141,11 +140,11 @@ Here are the most prominent ones:
 These are some recommended templating practices:
 
 - Every template should be kept as **simple** as possible
-    - **breaking up into smaller units** for better organization
-    - it is recommended to store **each** template in its **own file**
+    * **breaking up into smaller units** for better organization
+    * it is recommended to store **each** template in its **own file**
 
 - Templates are comparable to **pure functions**
-    - the principles of **functional programming** can be applied to templates as well
+    * the principles of **functional programming** can be applied to templates as well
 
 
 [/slide]

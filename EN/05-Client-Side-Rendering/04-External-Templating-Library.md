@@ -4,7 +4,7 @@
 
 # What is lit-html?
 
-**lit-html** is a simple **templating library**, part of the Polymer Project.
+**Lit-html** is a simple **templating library**, part of the Polymer Project.
 
 It is built on **tagged template literals**, a JavaScript feature, introduced in EcmaScript 6.
 
@@ -70,7 +70,7 @@ You can use any of the following **online editors** to **try out** lit-html:
 
 # Usage
 
-In order to use `lit-html`, you must **import** it via path:
+In order to use **lit-html**, you must **import** it via path:
 
 ```js
 <script type="module">
@@ -100,7 +100,7 @@ By default, the server will **start running on port 8080**.
 
 A browser window will open **automatically**.
 
-If it does not, go to `localhost:8080`.
+If it does not, go to **localhost:8080**.
 
 [/slide]
 
@@ -109,22 +109,22 @@ If it does not, go to `localhost:8080`.
 
 # Rendering a Template
 
-`lit-html`'s two main APIs are `html` and `render`.
+**Lit-html's** two main APIs are **html** and **render**.
 
 - **html**
 
-The `html` template tag is used to **write** templates.
+The **html** template tag is used to **write** templates.
 
 - **render()**
 
-The `render()` function is used to **render** a template to a **DOM container**:
+The **render()** function is used to **render** a template to a **DOM container**:
 
 `render(template(data), document.querySelector('#main'));`
 
 It accepts two parameters:
 
 - The **template** to render
-  - this template function accepts the dynamic **data** used to **populate** the template
+  * this template function accepts the dynamic **data** used to **populate** the template
 
 - The **parent node** to render it inside
 
