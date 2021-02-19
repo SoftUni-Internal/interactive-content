@@ -389,11 +389,15 @@ An email consists of: username `@` domain name.
 
 - If the string is **invalid**, print `Invalid`
 
-# Example
+# Examples
+
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
 | `'valid@email.bg'` | Valid |
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
