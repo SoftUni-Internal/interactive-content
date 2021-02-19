@@ -8,13 +8,15 @@
 
 **Page.js** is a client-side router, which uses **string-to-regexp** conversion.
 
+In order to use it, we need to install the package.
+
 We need to install it from **npm** with the following command: `npm install page`.
 
 We can pass multiple parameters to **page.js**.
 
-Defining a route is done with **callbacks**.
+Defining a route is done with using **callbacks**.
 
-Every callback is called with **context** and **next** parameters.
+Every callback is called with a **context** and a **next** as parameters.
 
 When we pass the **next** callback, it will instantiate the next registered callback from the path.
 
@@ -25,15 +27,17 @@ page('/', user.list);
 page('/user/:id', user.load, user.show);
 ```
 
-In this example, we set the URL and the callbacks: `user.load` and `user.show`.
+In this example, we set the URL and the callbacks: **user.load** and **user.show**.
 
-After the `user.load` is ready, the `user.show` will be executed.
+After the **user.load** is ready, the **user.show** will be executed.
+[/slide]
 
-## Redirecting with PageJS
+[slide hideTitle]
+# Redirecting with page.js
 
-To redirect we can call `page.redirect()`.
+We can call `page.redirect()` to redirect.
 
-This method receives only the **path** as a parameter.
+This method receives only the a **path** as a parameter.
 
 It waits for the state of the current route and replaces it with a new one.
 
@@ -42,7 +46,7 @@ After the redirect, it will leave the **browser history object** clean.
 Here is how `redirect()` looks:
 
 ```js
-page('/default', function () {
+page('/index', function () {
    if (admin) {
       page.redirect('/admin');
    } else {
