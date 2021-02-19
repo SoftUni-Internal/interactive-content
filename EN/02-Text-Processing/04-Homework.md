@@ -1,8 +1,8 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 # Problem: Reveal Words
-[code-task title="Reveal Words" taskId="js-advanced-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Reveal Words" taskId="js-fundamentals-pt2-text-processing-Reveal-Words" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function revealWords(input){
@@ -96,9 +96,9 @@ jdsakl kiro as pesho dsajkk goshho b hdsj stamatko
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Modern Times of HashTag
-[code-task title="Modern Times of HashTag" taskId="js-advanced-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Modern Times of HashTag" taskId="js-fundamentals-pt2-text-processing-Modern-Times-of HashTag" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function modernTimesOfHashTag(input){
@@ -119,9 +119,8 @@ Print the words you found without the tag each on a new line.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`[''Nowadays everyone uses # to tag a #special word in #socialMedia']`| special
-socialMedia
- |
+|`'Nowadays everyone uses # to tag a #special word in #socialMedia'`| special |
+| | socialMedia |
 
 
 [/task-description]
@@ -183,9 +182,9 @@ nnj
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Extract File
-[code-task title="Extract File" taskId="js-advanced-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Extract File" taskId="js-fundamentals-pt2-text-processing-Extract-File" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function extractFile(input){
@@ -196,8 +195,11 @@ function extractFile(input){
 [/code-editor]
 [task-description]
 ## Description
-Write a function that receives a single string - the path to a file (the `\` character is escaped)
-Your task is to subtract the **file name** and its extension. (Beware of files like **template.bak.pptx**, as **template.bak** should be the file name, while pptx is the extension).
+Write a function that receives a single string - the path to a file (the `\` character is escaped).
+
+Your task is to subtract the **file name** and its extension. 
+
+Beware of files like **template.bak.pptx**, as **template.bak** should be the file name, while pptx is the extension.
 
 # Example
   | **Input** | **Output** |
@@ -281,9 +283,9 @@ File extension: docx
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: String Substring
-[code-task title="String Substring" taskId="js-advanced-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="String Substring" taskId="js-fundamentals-pt2-text-processing-String-Substring" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function stringSubstring(input){
@@ -381,9 +383,9 @@ drashki not found!
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Replace Repeating Chars
-[code-task title="Replace Repeating Chars" taskId="js-advanced-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Replace Repeating Chars" taskId="js-fundamentals-pt2-text-processing-Replace-Repeating-Chars" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
@@ -466,10 +468,10 @@ asdasdasd
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Pascal-Case Splitter
 
-[code-task title="Pascal-Case Splitter" taskId="js-advanced-text-processing-Pascal-Case-Splitter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Pascal-Case Splitter" taskId="js-fundamentals-pt2-text-processing-Pascal-Case-Splitter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function splitter(input){
@@ -566,10 +568,10 @@ Mhjbhb
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cut and Reverse
 
-[code-task title="Cut and Reverse" taskId="js-advanced-text-processing-cut-and-reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Cut and Reverse" taskId="js-fundamentals-pt2-text-processing-cut-and-reverse" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
