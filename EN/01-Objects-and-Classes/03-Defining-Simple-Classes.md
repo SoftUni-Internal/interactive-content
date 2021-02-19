@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Defining Simple Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When defining a class, it contains only those components of a class declaration that are required.
 
 The **obligatory** components are:
@@ -43,6 +45,8 @@ The short command depends on the operation system of the computer:
 [slide hideTitle]
 # Naming Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-16-naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The class name is with the initial letter capitalized by convention, i.e. **PascalCase naming**. 
 
 The class name should contain descriptive nouns.
@@ -60,6 +64,8 @@ public class CompanyEmployee {
 [slide hideTitle]
 
 # Class Members
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-17-19-class-members-methods-getters-and-setters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Fields** and **methods** define the **state** and **behavior** of a class.
 
@@ -162,6 +168,8 @@ public class Car {
 
 # Creating an Object
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-20-22-creating-an-object-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Each time an object is **created**, some **memory** is **dedicated** for it.
 
 This is why **local variables** are created as **references** to that part of the memory.
@@ -219,6 +227,9 @@ public class Animal {
 
 [slide hideTitle]
 # Problem with Solution: Students
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Students" taskId="java-fund-16-Objects-and-Classes-problem-2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -388,6 +399,9 @@ Port Lee is 14 years old
 
 [slide hideTitle]
 # Problem with Solution: Students 2.0
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Students 2.0" taskId="java-fund-16-Objects-and-Classes-problem-3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -490,6 +504,9 @@ J P is 61 years old
 
 [slide hideTitle]
 # Problem with Solution: Songs
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-songs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Songs" taskId="java-fund-16-Objects-and-Classes-problem-1" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

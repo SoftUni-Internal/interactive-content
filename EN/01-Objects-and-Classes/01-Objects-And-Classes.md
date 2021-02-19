@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Objects
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-3-4-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Everything in Java is associated with classes and objects, along with their fields and methods.
 
 An object is a **basic unit** and an **instance of a class**.
@@ -41,6 +43,8 @@ public class Main {
 
 [slide hideTitle]
 # Classes
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-5-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Classes and objects are the **two main aspects** of object-orientated programming. 
 
@@ -83,6 +87,8 @@ A class is like an object constructor, that contains all of their similar charac
 [slide hideTitle]
 # Objects - Instances of Classes
 
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-6-objects-instances-of-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Creating an object based on a predefined class is called **instantiation**.
 
 The **instance** is the object itself, which is created at runtime.
@@ -114,6 +120,6 @@ public class Animal {
 
 # Classes vs. Objects
 
-TODO: Add video
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-7-classes-vs-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
