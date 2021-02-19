@@ -45,7 +45,8 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 
 **POST** `https://{apiKey}.firebaseio.com/articles.json`
 
-- Request body:
+- Request body
+
 ```
 {
     "title": "Arrays",
@@ -55,7 +56,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 }
 
 ```
-- Response: 201 Created
+- Response - **201 Created**
 
 ```
 {Key}:{
@@ -66,7 +67,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 }
 ```
 
-- Error response: `401 Unauthorized`
+- Error response - **401 Unauthorized**
 
 
 ```
@@ -87,7 +88,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 }
 ```
 
-- Response: `200 OK`
+- Response - **200 OK**
 
 ```
 {key}:{
@@ -98,7 +99,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 }
 ```
 
-- Error response: `401 Unauthorized`
+- Error response - **401 Unauthorized**
 
 ```
 { "error": "InvalidCredentials", "description": "Invalid credentials. Please retry your request with correct credentials", "debug": "" }
@@ -107,13 +108,13 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
 
 **DELETE** `https://{apiKey}.com/articles/{id}`
 
-- Error response: `404 Not Found`
+- Error response - **404 Not Found**
 
 ```
 { "error": "EntityNotFound", "description": "This entity not found in the collection", "debug": "" }
 ```
 
-- Error response: `401 Unauthorized`
+- Error response -  **401 Unauthorized**
 
 ```
 { "error": "InvalidCredentials", "description": "Invalid credentials. Please retry your request with correct credentials", "debug": "" }
@@ -129,7 +130,7 @@ You have been given the web design of the application as **HTML** \+ **CSS** fil
 
 Your application may **hide/show** elements using CSS (**display: none**) or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed. 
 
-- You may render the views/forms/components with **JavaScript** or **lit-html**.
+- You may render the views/forms/components with **JavaScript** or **lit-html**
 
 ## Important
 
@@ -151,11 +152,11 @@ Navigation links should correctly change the current page (view).
 
 - Clicking on the buttons on the navigation bar should display the view behind the link (views are represented as sections in the HTML code)
 
-The Logged-in user navbar should contain the following elements: m`[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
+The Logged-in user navbar should contain the following elements: `[SoftWiki]` which is a link to the **Home Page**, `[Create]` **and** `[Logout]`
 
 [image assetsSrc="js-application-exam-4.png" /]
 
-- The guest users header should contain the following elements: `[SoftWiki]` which is a link to the Login page and `[Register]`.
+- The guest users header should contain the following elements: `[SoftWiki]` which is a link to the Login page and `[Register]`
 
 [image assetsSrc="js-application-exam-5.png" /]
 
@@ -206,9 +207,9 @@ Logged-in users should be able to create articles.
 
 Clicking on the `[Create]` button, on **NavBar**, should display the **Create Article page.**
 
-- **By default**, every newly created article must have additional information:
+- **By default**, every newly created article must have additional information
 
-  - **Creator:** the email of the current user
+  - **creator:** the email of the current user
 
 - The newly created article should be stored in the Firebase\Kinvey collection "articles"
 
@@ -224,7 +225,7 @@ Logged-in users should be able to **view the details** about the articles.
 
 Clicking on the `[Details]` button of a **particular article**, should **display** the **Article Details page.**
 
-- If the currently logged-in user is the creator of that article, the `[Edit]` and `[Delete]` **buttons** should be set to **visible**. 
+- If the currently logged-in user is the creator of that article, the `[Edit]` and `[Delete]` **buttons** should be set to **visible**
 
 Otherwise there should be only 1 button, `[Back]`, which redirects to the Home Page.
 
