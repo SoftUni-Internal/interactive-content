@@ -122,7 +122,7 @@ function smallestNumbers(firstNumber, secondNumber, thirdNumber){
 [task-description]
 # Description
 
-Write a function which receives **three integers** and **prints out the smallest.** 
+Write a function that receives **three integers** and **prints out the smallest.** 
 
 Use an **appropriate name** for the function. 
 
@@ -670,9 +670,9 @@ function palindrome(input){
 [task-description]
 # Description
 
-A palindrome is a number which **reads the same backward as forward**, such as 323 or 1001. 
+A palindrome is a number that **reads the same backward as forwarding**, such as 323 or 1001. 
 
-Write a function which receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
+Write a function that receives an **array of positive integers** and checks if **each integer is a palindrome or not**. 
 
 # Example
 | **Input** | **Output** |
@@ -849,8 +849,8 @@ function passwordValidator(input){
 Write a function that checks if a given password is valid. Password validations are:
 
 - The length should be 6 - 10 characters (inclusive)
--	It should consists only of letters and digits
--	It should have at least 2 digits 
+- It should consist only of letters and digits
+- It should have at least 2 digits 
 
 If a password is valid print `Password is valid`.
 
@@ -1181,7 +1181,7 @@ The sum of a number's positive divisors excluding the number itself is also know
 
 Equivalently, a perfect number is a number that is **half the sum** of all of its positive divisors, excluding itself
 
-**Six** is a perfect number, because it is the sum of `1 + 2 + 3` (all of which are divided without residue).
+**Six** is a perfect number because it is the sum of `1 + 2 + 3` (all of which are divided without residue).
 
 Learn more about perfect numbers [here](https://en.wikipedia.org/wiki/Perfect_number).
 
