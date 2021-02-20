@@ -62,11 +62,11 @@ console.log(positiveNums);
 [/slide]
 
 [slide hideTitle]
-# Problem: Process Odd Numbers
+# Problem with Solution: Process Odd Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="489374346/bee533f0f2" default /]
-[stream language="RO" videoId="489374346/bee533f0f2"  /]
+[stream language="EN" videoId="489374571/1014b0026b" default /]
+[stream language="RO" videoId="489374571/1014b0026b"  /]
 [/video-vimeo]
 
 [code-task title="Process Odd Numbers" taskId="fundamentals-js-arrays-advanced-lab-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -83,6 +83,7 @@ function oddNumbers(arr){
 ```
 [/code-adapter]
 [task-description]
+# Description
 
 You are given an **array of numbers**.
 
@@ -102,158 +103,7 @@ The **output** is **printed to the console** on a **single line**, **separated b
 # Hints
 
 - Counting in arrays starts from `0`
-- For example: we receive `10, 15, 20, 25`
-- The elements at odd positions are `15 (index 1) and 25 (index 3)`
-- We need to take these two elements and `multiply them * 2`
-- Finally, we print them on the console in **reversed order**
-
-[/task-description]
-[tests]
-[test open]
-[input]
-10
-15
-20
-25
-[/input]
-[output]
-50 30
-[/output]
-[/test]
-[test open]
-[input]
-3
-0
-10
-4
-7
-3
-[/input]
-[output]
-6 8 0
-[/output]
-[/test]
-[test]
-[input]
-34
-12
-34
-2
-56
-6
-[/input]
-[output]
-12 4 24
-[/output]
-[/test]
-[test]
-[input]
-34
-12
-34
-2
-56
-6
-[/input]
-[output]
-12 4 24
-[/output]
-[/test]
-[test]
-[input]
-4
-22
-30
-12
-6
-16
-25
-10
-[/input]
-[output]
-20 32 24 44
-[/output]
-[/test]
-[test]
-[input]
-6
-5
-56
-[/input]
-[output]
-10
-[/output]
-[/test]
-[test]
-[input]
-34
-62
-3
-9
-56
-[/input]
-[output]
-18 124
-[/output]
-[/test]
-[test]
-[input]
-4
-12
-34
-2
-8
-6
-1
-31
-[/input]
-[output]
-62 12 4 24
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-[slide hideTitle]
-# Solution: Process Odd Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="489374571/1014b0026b" default /]
-[stream language="RO" videoId="489374571/1014b0026b"  /]
-[/video-vimeo]
-
-[code-task title="Process Odd Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function oddNumbers(arr){
-  // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-You are given an **array of numbers**.
-
-Write a function that **prints** all the elements at **odd positions, doubled, and in reversed order**. 
-
-The **input** comes as an **array** of `string` elements, holding **numbers**. 
-
-The **output** is **printed to the console** on a **single line**, **separated by space.**
-
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-|`[10, 15, 20, 25]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 6 8 0 |
-
-# Hints
-
-- Counting in arrays starts from `0`
-- For example: we receive `10, 15, 20, 25`
+- For example, we receive `10, 15, 20, 25`
 - The elements at odd positions are `15 (index 1) and 25 (index 3)`
 - We need to take these two elements and `multiply them * 2`
 - Finally, we print them on the console in **reversed order**
@@ -450,11 +300,11 @@ console.log(words);
 [/slide]
 
 [slide hideTitle]
-# Problem: Smallest two Numbers
+# Problem with Solution: Smallest two Numbers
 
 [vimeo-video]
-[stream language="EN" videoId="489374451/5801e23a89" default /]
-[stream language="RO" videoId="489374451/5801e23a89"  /]
+[stream language="EN" videoId="489374613/1127440400" default /]
+[stream language="RO" videoId="489374613/1127440400"  /]
 [/video-vimeo]
 
 [code-task title="Smallest two Numbers" taskId="fundamentals-js-arrays-advanced-lab-Smallest-two-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -471,6 +321,7 @@ function smallestTwoNumbers(arr){
 ```
 [/code-adapter]
 [task-description]
+# Description
 
 Write a function that **sorts** an array in **ascending order** and **prints** the first **two** numbers. 
 
@@ -484,17 +335,18 @@ The **input** comes as an **array** of **numbers**.
 
 
 # Hints
+
 - We can use the following function to sort the elements of the array: 
 
  ```js
-let sortedInAscending = arr.sort((a, b) =>{
-  return a - b
-});
+  let sortedInAscending = arr.sort((a, b) =>{
+    return a - b
+  });
  ```
 
 - Afterwards, the first two elements in the array are the smallest ones
 
-- We can use `slice()` method to take the first two elements
+- We can use the `slice()` method to take the first two elements
 
 
 [/task-description]
@@ -508,140 +360,6 @@ let sortedInAscending = arr.sort((a, b) =>{
 [/input]
 [output]
 5 15
-[/output]
-[/test]
-[test open]
-[input]
-3
-0
-10
-4
-7
-3
-[/input]
-[output]
-0 3
-[/output]
-[/test]
-[test]
-[input]
-\-5
-3
-2
-1
-[/input]
-[output]
-\-5 1
-[/output]
-[/test]
-[test]
-[input]
-\-53
-31
-\-42
-21
-13
-2
-31
-[/input]
-[output]
-\-53 \-42
-[/output]
-[/test]
-[test]
-[input]
-31
-42
-\-25
-3
-2
-1
-[/input]
-[output]
-\-25 1
-[/output]
-[/test]
-[test]
-[input]
--5
-13
-2
-1
-[/input]
-[output]
-\-5 1
-[/output]
-[/test]
-[test]
-[input]
--5
-11
-[/input]
-[output]
-\-5 11
-[/output]
-[/test]
-[/tests]
-[code-io /]
-[/code-task]
-
-[/slide]
-
-
-[slide hideTitle]
-# Solution: Smallest two Numbers
-
-[vimeo-video]
-[stream language="EN" videoId="489374613/1127440400" default /]
-[stream language="RO" videoId="489374613/1127440400"  /]
-[/video-vimeo]
-
-[code-task title="Smallest two Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
-[code-editor language=javascript]
-```
-function smallestTwoNumbers(input){
-    // Write your code here
-}
-```
-[/code-editor]
-[task-description]
-
-Write a function that **sorts** an array in **ascending order** and **prints** the first **two** numbers. 
-
-The **input** comes as an **array** of **numbers**. 
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-|`[30, 15, 50, 5]` | 50 30 |
-|`[3, 0, 10, 4, 7, 3]` | 0 3 |
-
-
-# Hints
-- We can use the following function to sort the elements of the array: 
-
- ```js
-let sortedInAscending = arr.sort((a, b) =>{
-  return a - b
-});
- ```
-
-- Afterwards, the first two elements in the array are the smallest ones
-
-- We can use `slice()` method to take the first two elements
-
-
-[/task-description]
-[tests]
-[test open]
-[input]
-30
-15
-50
-5
-[/input]
-[output]
-50 30
 [/output]
 [/test]
 [test open]
