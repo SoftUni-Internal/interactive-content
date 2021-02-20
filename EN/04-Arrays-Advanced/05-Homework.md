@@ -601,7 +601,6 @@ Write a function that sorts an array of numbers, so that the first element i
 
 Print the elements on one line, separated by a single space. 
 
-
 # Example
 | **Input**   | **Output** | 
 | :---:       |    :----:   |   
@@ -716,12 +715,11 @@ function sort(input){
 [task-description]
 # Description
 
-Write a function that sorts an array of strings, by their length in ascending order, as a primary criteria, and by alphabetical value in ascending order, as a second criteria. 
+Write a function that sorts an array of strings, by their length in ascending order, as a primary criterion, and by alphabetical value in ascending order, as a second criterion. 
 
-The input comes as an array of strings. 
+The input comes as an array of strings. 
 
 The output is the sorted array of strings. 
-
 
 # Examples
 | **Input** | **Output** |
@@ -741,11 +739,11 @@ The output is the sorted array of strings.
 
 ## Hints
 
-- An array can be sorted by passing a compare function to the `Array.sort()` function
+- An array can be sorted by passing a compare function to the `Array.sort()` function
 
-- Creating a **compare function** by two criterias can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the comparison is not 0\) - return the result of the **compare function** 
+- Creating a **compare function** by two criteria can be achieved by first comparing by the main criteria, and if the two items are different \(the result of the comparison is not 0\) - return the result of the **compare function** 
 
-If the two items are the same by the main criteria \(the result of the comparison is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
+If the two items are the same by the main criteria \(the result of the comparison is 0\), we need to compare them by the second criteria, and the result of that comparison will be the result of the **compare function.** 
 
 
 [/task-description]
@@ -908,7 +906,6 @@ The first element will be a string, containing the array to manipulate.
 Every other element(command) that we receive, will also be a string. 
 
 The output is the manipulated array, which we should print on the console on a single line, separated by a space. 
-
 
 # Example
 | **Input** | **Output** |
