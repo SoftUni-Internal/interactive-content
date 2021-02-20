@@ -1,4 +1,4 @@
-# Problem 2: Inventory
+# Problem with Solution 2: Inventory
 
 [slide hideTitle]
 # Inventory
@@ -20,7 +20,8 @@ function inventory(input) {
 [/code-editor]
 [task-description]
 # Description
-You will receive a string, containing the current items in your inventory, separated by a comma and a space `, `.
+
+You will receive a string, containing the current items in your inventory, separated by a comma and space \(`, `\).
 
 After that, until receiving `Craft!` you will be given different commands.
 
@@ -34,7 +35,7 @@ If the item already exists, you should skip this command.
 
 * Command `Drop - {item}`: 
 
-You should remove the item from your inventory, if you have it.
+You should remove the item from your inventory if you have it.
 
 * Command `Combine Items - {oldItem}:{newItem}`: 
 
@@ -47,7 +48,7 @@ Otherwise, ignore the command.
 If the given item exists, you should change its position and put it in the last position of your inventory.
 
 ## Output
-After receiving `Craft!`, print out all items in your inventory, separated by `, ` a comma and a space.
+After receiving `Craft!`, print out all items in your inventory, separated by a comma and space \(`, `\).
 
 # Examples
 | **Input** | **Output** |
@@ -191,4 +192,5 @@ S, O, F, T, U, N, I
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]
