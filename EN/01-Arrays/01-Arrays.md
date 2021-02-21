@@ -104,7 +104,7 @@ If we try to access the element on an invalid index, we get an exception.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-6-7-problem-and-solution-day-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Day of Week" taskId="java-fund-arrays-lab-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
