@@ -7,7 +7,7 @@
 
 There is no direct way of accepting array input in Java using Scanner or any other utility but the same can be achieved using standard **Scanner** methods and asking some questions to the user.
 
-For example, if you want to accept an **array of strings** as input you need the **length** of the array and then you can use a for loop to retrieve that many elements and store them in an array.
+For example, if you want to accept an **array of strings**, you will first need to get its **length** as input, and you can then use a for-loop to retrieve that many elements and store them in an array.
 
 ```java
 //accept n - length of the array
@@ -42,16 +42,12 @@ Then we initialize a new array with a length equal to the number of elements we 
 
 Finally, using a for loop we insert all the values into the array.
 
-We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulate arrays.
+We can read an array of integers using `java.util.Arrays;` which is a `class` in Java that allows you to create and manipulate arrays.
 
 We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
 
 
 ## A Shorter Way to Read Arrays
-
-We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulate arrays.
-
-We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
 
 Here is a much shorter way to read an input and create an array from it.
 
@@ -62,19 +58,27 @@ String[] items = inputLine
   .split(" ");
 
 int[] arr = Arrays
-  .stream(scanner.nextLine()    //read the input from the console as string
-  .split(" "))                  //split the input by space
-  .mapToInt(Integer::parseInt)  //convert the string input to int
-  .toArray();                   //convert to array
+  .stream(scanner.nextLine()   
+  .split(" "))                
+  .mapToInt(Integer::parseInt)  
+  .toArray();                  
 ```
 [/slide]
+
+We are first reading the input from the console as a string using `scanner.nextLine()`. 
+
+Then we split the input by space using `split(" ")`.
+
+We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
+
+Finally, we convert the result to an array.
 
 [slide hideTitle]
 # Printing Arrays
 
 A `for` loop can be used for printing all the elements of an array.
 
-While printing each element we can split them by whitespace or new line.
+While printing each element we can split them by whitespace or newline.
 
 See the following example:
 
@@ -331,7 +335,7 @@ f60 e50 d40 c30 b20 a10
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-equal-arrays-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
