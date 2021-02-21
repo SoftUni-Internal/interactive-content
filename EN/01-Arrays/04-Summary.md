@@ -43,14 +43,14 @@ for (int number : numbers) {
 }
 ```
 
-## In the next lesson, you will learn:
-- What is a method
+## In the next lesson you will learn:
+- What a **method** is
 - Naming and best practices
-- Declaring and invoking methods
-  - void and return type Methods
+- Declaring and **invoking methods**
+  - void and return type methods
 - Methods with parameters
-- Value types vs. reference types
-- Overloading methods
+- **Value types** vs. **reference types**
+- **Overloading** methods
 - Program execution flow
 [/slide]
 
