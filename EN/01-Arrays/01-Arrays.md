@@ -1,6 +1,7 @@
 # Arrays
 
 [slide hideTitle]
+
 # Definition
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -23,7 +24,7 @@ int[] numbers = { 1, 1, 2, 4, 5 };
 
 The values in an array are called elements.
 
-# Real-Life Example
+## Real-Life Example
 Imagine a train with multiple wagons and passengers riding in each wagon.
 
 Now imagine this as an array of integers, each element represent a wagon and its value is the passengers.
@@ -244,7 +245,7 @@ Invalid day!
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-sum-even-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Even Numbers" taskId="java-fund-arrays-lab-sum-even-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
