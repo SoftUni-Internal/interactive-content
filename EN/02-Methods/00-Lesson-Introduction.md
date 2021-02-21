@@ -2,11 +2,11 @@
 [slide hideTitle]
 # Lesson Content
 
-## In this lesson you will learn about:
+## In this lesson you will learn:
 
-**1. What is Method?**
+**1. What Methods Are**
 
-- What is a method
+- What a method is
 
 - Why we use methods
 
@@ -40,7 +40,7 @@
 
 **7. Overloading Methods**
 
-- What is "method overloading"
+- What "method overloading" is
 
 **8. Program Execution Flow**
 
