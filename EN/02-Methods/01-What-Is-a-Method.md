@@ -22,12 +22,14 @@ Invoking / calling a method:
 ```Java
 printHello();
 ```
+[/slide]
 
+[slide hideTitle]
 # Why Use Methods?
 
 We use methods in Java for several reasons:
 
-- **Reusability** - we write a method once, and use it **multiple times**. We do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`.
+- **Reusability** - we write a method once and use it **multiple times**. We do not have to copy the same blocks of code in multiple places to use them. Think of it as, `write once, reuse multiple times`.
 
 - **To parameterize code** - in addition to making reusable code which is the same in all cases, you will often want to use `parameters` that change the way the method works
 
