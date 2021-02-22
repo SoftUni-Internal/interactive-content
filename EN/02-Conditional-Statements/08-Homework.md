@@ -60,7 +60,7 @@ Wrong password!
 [/test]
 [test]
 [input]
-wrong
+guessThePassword(wrong)
 [/input]
 [output]
 Wrong password!
