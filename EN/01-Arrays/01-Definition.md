@@ -99,8 +99,6 @@ console.log(numbers);
 [slide hideTitle]
 # Problem with Solution: Sum First and Last Array Elements
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Problem-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-6-Solution-Sum-first-and-last-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First and Last Array Elements" taskId="fundamentals-js-arrays-lab-Sum-First-and-Last-Array-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
@@ -246,8 +244,6 @@ The last element, Sunday, is at index 6 of the array.
 
 [slide hideTitle]
 # Problem with Solution: Days of Week
-
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Probelm-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-8-Solution-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
