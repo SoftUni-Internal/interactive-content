@@ -46,10 +46,7 @@ console.log(nums.join('|'));
 [slide hideTitle]
 # Problem with Solution: First and Last K Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374505/9ba74796f9" default /]
-[stream language="RO" videoId="489374505/9ba74796f9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-03-solution-first-and-last-k-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="First and Last K Numbers" taskId="fundamentals-js-arrays-advanced-lab-First-and-Last-K-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -211,10 +208,7 @@ On the **second line**, print the **last k** elements, separated by **space*
 [slide hideTitle]
 # Problem with Solution: Last K Numbers Sequence
 
-[vimeo-video]
-[stream language="EN" videoId="489374563/74c0604242" default /]
-[stream language="RO" videoId="489374563/74c0604242"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-04-solution-sum-last-k-numbers-sequence-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Last K Numbers Sequence" taskId="fundamentals-js-arrays-advanced-lab-Last-K-Numbers-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

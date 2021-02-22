@@ -64,10 +64,7 @@ console.log(positiveNums);
 [slide hideTitle]
 # Problem with Solution: Process Odd Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374571/1014b0026b" default /]
-[stream language="RO" videoId="489374571/1014b0026b"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-05-solution-process-odd-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Process Odd Numbers" taskId="fundamentals-js-arrays-advanced-lab-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -302,10 +299,7 @@ console.log(words);
 [slide hideTitle]
 # Problem with Solution: Smallest two Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="489374613/1127440400" default /]
-[stream language="RO" videoId="489374613/1127440400"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-06-solution-smallest-two-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Smallest two Numbers" taskId="fundamentals-js-arrays-advanced-lab-Smallest-two-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

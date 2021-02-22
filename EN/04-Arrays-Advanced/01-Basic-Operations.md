@@ -97,10 +97,7 @@ console.log(number);
 [slide hideTitle]
 # Problem with Solution: Sum First Last
 
-[vimeo-video]
-[stream language="EN" videoId="489374493/acd64c96be" default /]
-[stream language="RO" videoId="489374493/acd64c96be"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
