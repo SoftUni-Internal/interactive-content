@@ -37,7 +37,7 @@ Create a program to check for fruit or vegetable:
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
 fruitOrVegetable('lemon')
 [/input]
@@ -45,7 +45,7 @@ fruitOrVegetable('lemon')
 fruit
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 fruitOrVegetable('carrot')
 [/input]
@@ -138,29 +138,29 @@ function adapter(input, code) {
 # Description
 Create a program to print the day of the week as a word: 
 
-* Read and integer **n**: the **day of the week** in range `[1..7]`
+* Read and integer **n**: the **day of the week** in range \[1..7\]
 * Print the name of the day (as word, in English) 
-* Print `Error` if the number is not in the given range
+* Print "**Error**" if the number is not in the given range
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| Monday |
-|8| Error |
+|dayOfWeek(1)| Monday |
+|dayOfWeek(8)| Error |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
+dayOfWeek(1)
 [/input]
 [output]
 Monday
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-8
+dayOfWeek(8)
 [/input]
 [output]
 Error
@@ -168,10 +168,50 @@ Error
 [/test]
 [test]
 [input]
-7
+dayOfWeek(7)
 [/input]
 [output]
 Sunday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(2)
+[/input]
+[output]
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(3)
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(4)
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(5)
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(6)
+[/input]
+[output]
+Saturday
 [/output]
 [/test]
 [/tests]

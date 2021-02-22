@@ -53,6 +53,62 @@ fruitOrVegetable('carrot')
 vegetable
 [/output]
 [/test]
+[test]
+[input]
+fruitOrVegetable('banana')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('apple')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('cherry')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('grapes')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('onion')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('cucumber')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('pepper')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
 [/tests]
 [code-io /]
 [/code-task]
@@ -90,22 +146,22 @@ Creați un program pentru a imprima ziua săptămânii ca un cuvânt:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|1| Monday |
-|8| Error |
+|dayOfWeek(1)| Monday |
+|dayOfWeek(8)| Error |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
+dayOfWeek(1)
 [/input]
 [output]
 Monday
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-8
+dayOfWeek(8)
 [/input]
 [output]
 Error
@@ -113,10 +169,50 @@ Error
 [/test]
 [test]
 [input]
-7
+dayOfWeek(7)
 [/input]
 [output]
 Sunday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(2)
+[/input]
+[output]
+Tuesday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(3)
+[/input]
+[output]
+Wednesday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(4)
+[/input]
+[output]
+Thursday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(5)
+[/input]
+[output]
+Friday
+[/output]
+[/test]
+[test]
+[input]
+dayOfWeek(6)
+[/input]
+[output]
+Saturday
 [/output]
 [/test]
 [/tests]
