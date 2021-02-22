@@ -417,9 +417,9 @@ The function receives one argument:
 ## Output
  Two lines are printed on the console:
 
-- `The final price is: {final price of the service} dollars.`
+- The final price is: \{final price of the service\} dollars.
 
-- `The discount is: {discount} dollars.`
+- The discount is: \{discount\} dollars.
 
 ## Example
 | **Input** | **Output** |
