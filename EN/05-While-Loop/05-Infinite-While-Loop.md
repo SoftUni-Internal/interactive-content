@@ -7,7 +7,7 @@
 
 We call an infinite loop one that repeats infinitely the performance of its body. 
 
-In `while` and `do-while` loops the end check is a conditional expression that always returns `true`. 
+In "**while**" and "**do-while**" loops the end check is a conditional expression that always returns `true`. 
 
 ```js
 while (true) {
@@ -43,5 +43,5 @@ while (command != "End") {
 }
 ```
 
-Here, the value of the variable `command` is changed at each iteration and the **infinite loop** is avoided. 
+Here, the value of the variable "command" is changed at each iteration and the **infinite loop** is avoided. 
 [/slide]

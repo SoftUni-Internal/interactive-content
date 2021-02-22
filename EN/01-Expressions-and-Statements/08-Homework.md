@@ -14,7 +14,7 @@ function calculateSpeed (input) {
 [/code-editor]
 [task-description]
 # Description
-Write a function that gets an integer and calculates the area of a square with side `a`. 
+Write a function that gets an integer and calculates the area of a square with the side `a`. 
 - you get a number in the argument of the function 
 - multiply it yourself and 
 - print the result in the console
@@ -351,7 +351,7 @@ function fourOperations(input){
 [/code-editor]
 [task-description]
 # Description
-Peter wants to landscape the back yard, so he hired a **company** to do it for him.
+Peter wants to landscape the backyard, so he hired a **company** to do it for him.
 Write a function that **calculates** the necessary funds that Peter will have to **pay** for the job. 
 The price per square meter is **7.61 dollars** with VAT. 
 As Peter's yard is quite **large**, the contractor company offers an **18 percent** discount on the final price.

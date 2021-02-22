@@ -7,7 +7,7 @@
 
 Let's examine the basic **arithmetic operations** in programming. 
 
-We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*` and `/`.
+We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*`, and `/`.
 
 ## Summing up Numbers
 We can **sum** up numbers using the `+` operator:
@@ -42,9 +42,9 @@ console.log(a * b);
 
 ## Dividing Numbers
 
-**Dividing** numbers is done using the `/` operator.
+**Dividing** numbers are done using the `/` operator.
 
-The number type represents **both** integer and floating point numbers. There is **no integer division by default**.
+The number type represents **both** integer and floating-point numbers. There is **no integer division by default**.
 * If you do this
 
 ```js live
@@ -64,7 +64,7 @@ This leads to a problem though. What if we have a situation like this:
 let result = Math.floor(-5/4);
 console.log(result);
 ```
-In this case the quotient is negative. 
+In this case, the quotient is negative. 
 
 * The expected answer is -1, but you’ll get -2 instead
 
@@ -118,7 +118,7 @@ console.log(3.5 % 1);
 
 It is useful if we want to check whether a number is **even** or **odd**.
 
-If the remainder when dividing by 2 is equal to 0, then the number is even, otherwise it is odd.
+If the remainder when dividing by 2 is equal to 0, then the number is even, otherwise, it is odd.
 
 See the following example: 
 

@@ -1144,9 +1144,9 @@ Write a program, which:
 
 Generates all **4 digit numbers** with digits less than n and prints them out if: 
 
-* When you split the number in two pairs and add the first digit to the second one of each pair- the result equals `n` 
+* When you split the number into two pairs and add the first digit to the second one of each pair- the result equals `n` 
 
-* When you add the first two, the result is divisible by n without a remainde
+* When you add the first two, the result is divisible by n without a remainder
 
 # Example
 | **Input** | **Output** |

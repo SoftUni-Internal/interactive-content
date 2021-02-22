@@ -5,11 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section we will get more detail on a particular and very important part of the `for` loop, **namely the step.** 
+In this section, we will get more detail on a particular and very important part of the "**for**" loop, **namely the step.** 
 
 **The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable. 
 
-It is declared last in the skeleton of the for loop. 
+It is declared last in the skeleton of the for a loop. 
 
 Very often, it has a size of 1, in this case, instead of writing `i += 1` or `i -= 1`, we can use the `i++` or `i--` operators.
 
@@ -31,7 +31,7 @@ for (let i = 0; i < 10; i += 2) {
 
 We might want to have a **decreasing step** - `i -=` + step size. 
 
-In this case we should pay attention to the end condition to **avoid** an **infinite loop**.
+In this case, we should pay attention to the end condition to **avoid** an **infinite loop**.
 
 ```js live
 for (let i = 10; i >= 1; i--) {

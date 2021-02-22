@@ -5,9 +5,11 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/05.PB-JavaScript-While-Loop-8-9-10-While-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In programming the `while` **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
+In programming, the "**while**" **loop** is used when we want to **repeat** the execution of a certain logic while a condition is in effect. 
 
-By **"condition"**, we understand every **expression** that returns `true` or `false`. When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
+By **"condition"**, we understand every **expression** that returns `true` or `false`. 
+
+When **the condition** is **wrong**, the while loop is **interrupted**, the program **continues** to execute the remaining code after the loop. 
 
 [image assetsSrc="05-use-case-while.png" /]
 
@@ -18,11 +20,11 @@ while (condition) {
 }
 ```
 
-In the code example above, condition is any **expression that returns a Boolean result** - `true` or `false`. 
+In the code example above, the condition is any **expression that returns a Boolean result** - `true` or `false`. 
 
-It determines how long the loop body will be repeated and is called `loop condition`. 
+It determines how long the loop body will be repeated and is called "loop condition". 
 
-In this example the `loop body` is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
+In this example, the "loop body" is the programming code executed at each iteration of the loop, i.e. whenever the input condition is true.
 
 In the while loop, firstly the Boolean expression is evaluated and if it is `true`, the sequence of operations in the body of the loop is executed. 
 

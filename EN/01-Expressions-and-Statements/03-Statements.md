@@ -15,7 +15,7 @@ JavaScript supports **several different** kinds of statements and here are a few
 
 * **Expression** statements: evaluate expressions
 
-* **Selection** statements: select one of a number of possible statements
+* **Selection** statements: select one of several possible statements
 
 * **Iteration** statements: execute repeatedly an embedded statement
 

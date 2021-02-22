@@ -9,11 +9,11 @@
 [/video-vimeo]
 
 
-Buclele `while` și `for` **repetă** un bloc de **cod**.
+Buclele "**while**" și "**for**" **repetă** un bloc de **cod**.
 
 Dar există situații diferite în procesul scrierii de cod în care ni se recomandă să folosim primul tip sau cel al doilea.
 
-Când știți **exact de câte ori** doriți să repetați un bloc de cod, utilizați bucla `for`.
+Când știți **exact de câte ori** doriți să repetați un bloc de cod, utilizați bucla "**for**".
 ```js live
 for (let i = 0; i <= 5; i++) {
     console.log(i);
@@ -22,13 +22,13 @@ for (let i = 0; i <= 5; i++) {
 
 Este de obicei potrivit să folosiți bucle for în cazurile în care inițializarea și incrementarea sunt instrucțiuni unice  și sunt legate în mod logic.
 
-Este o buclă mai compactă în comparație cu bucla `while` și menține instrucțiunile de control ale buclei în același loc.
+Este o buclă mai compactă în comparație cu bucla "**while**" și menține instrucțiunile de control ale buclei în același loc.
 
 Dar ar putea exista mai multe probleme **complexe** în care numărul de iterații depinde de anumite **situații** și nu pot fi anticipate. 
 
 Ceea ce înseamnă că nu știm exact dinainte **de câte ori** trebuie să repetăm o buclă.
 
-În acele situații, este recomandată utilizarea unei bucle `while`.
+În acele situații, este recomandată utilizarea unei bucle "**while**".
 ```js
 let command = input.shift();
 let number = Number(input.shift());

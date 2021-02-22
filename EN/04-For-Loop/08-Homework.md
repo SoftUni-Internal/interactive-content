@@ -563,9 +563,9 @@ Write a program, which:
 
 * Reads `n` and an **n amount** of numbers after it 
 
-* Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3 and 4 as a divisors** 
+* Finds the **percentage** of how many of them can be divided **without a remainder using 2, 3, and 4 as divisors** 
 
-* Prints the percentages for **p1, p2 and p3**, **formatted** to the second digit 
+* Prints the percentages for **p1, p2, and p3**, **formatted** to the second digit 
 
 # Example
   | **Input** | **Output** |
@@ -726,7 +726,7 @@ Write a program, which:
 
 * Reads `n` - the count of characters which the program is going to receive 
 
-* If character is a vowel, it adds the characters `value` to the result
+* If a character is a vowel, it adds the characters `value` to the result
 
  | **character**      | **a** | **e**   |**i**   |**o**  |**u**  |
 | :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
@@ -991,7 +991,7 @@ Write a program, which:
 
 * Holds a for-loop which prints: `{n} x {i} = {result}` 
 
-* Where i are the numbers from **1 to 10 (inclusive)** 
+* Where `i` are the numbers from **1 to 10 (inclusive)** 
 
 # Example
   | **Input** | **Output** |
@@ -1136,7 +1136,7 @@ function solve(firstNumber, secondNumber) {
 [task-description]
 # Description
 
-Write a function that receive two numbers as parameters and prints to the console, all the numbers in the range that are divisible by 9 without remainder, and their sum.
+Write a function that receives two numbers as parameters and prints to the console, all the numbers in the range that are divisible by 9 without remainder, and their sum.
 
 On the first line print the sum of the numbers, and on the next line the corresponding numbers with a space between them.
 

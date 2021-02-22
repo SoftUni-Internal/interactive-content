@@ -11,9 +11,9 @@
 
 O buclă imbricată este o construcție cu care o buclă este plasată în interiorul \(interior\) corpului celeilalte \(exterior\).
 
-Pot exista atât bucle imbricate `for`, cât și bucle imbircate `while`.
+Pot exista atât bucle imbricate "**for**", cât și bucle imbircate "**while**".
 
-Nu numai că puteți imbrica `for` în `for` și `while` în `while`, ci și 'for' în `while` și vice versa: 
+Nu numai că puteți imbrica "**for**" în "**for**" și "**while**" în "**while**", ci și 'for' în "**while**" și vice versa: 
 
 ```js
 // Outer Loop

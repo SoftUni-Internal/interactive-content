@@ -9,7 +9,7 @@ Each variable has a range in which it exists, called **variable scope**.
 
 This range specifies where a variable can be used and how long is its **lifetime**. 
 
-In the JavaScript language, the scope in which a variable exists, starts from the line in which we **defined it** and ends with the first closing curly bracket `}` (of the method, the **if statement**, etc.).
+In the JavaScript language, the scope in which a variable exists, starts from the line in which we **defined it** and ends with the first closing braces `}` (of the method, the **if statement**, etc.).
 
 Thus, it is important to know that **any variable defined inside the body of a certain** `if` **statement will not be available outside of it**, unless we have defined it previously in a higher scope in the code. 
 

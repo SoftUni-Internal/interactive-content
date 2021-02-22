@@ -8,7 +8,7 @@
 [stream language="RO" videoId="487119404/67365f350f"  /]
 [/video-vimeo]
 
-În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei `for`, **și anume pasul.**
+În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
 
 **Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale. 
 

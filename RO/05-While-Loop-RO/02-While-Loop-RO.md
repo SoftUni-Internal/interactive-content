@@ -24,9 +24,9 @@ while (condition) {
 
 În exemplul de cod de mai sus, condiția este orice **expresie care returnează un rezultat de tip boolean** - `true` sau `false`. 
 
-Aceasta determină de câte ori se va repeta conținutul buclei și se numește `condiția de repetiție`. 
+Aceasta determină de câte ori se va repeta conținutul buclei și se numește "condiția de repetiție". 
 
-În acest exemplu, `conținutul blocului repetitiv` este codul executat la fiecare iterație a buclei, cu alte cuvinte, oricând condiția dată este îndeplinită.
+În acest exemplu, "conținutul blocului repetitiv" este codul executat la fiecare iterație a buclei, cu alte cuvinte, oricând condiția dată este îndeplinită.
 
 În bucla while, mai întâi este evaluată expresia booleană, iar dacă aceasta e `true`, secvența de operații din conținutul buclei este executată. 
 

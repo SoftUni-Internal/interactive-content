@@ -31,7 +31,7 @@ for (let k = 1; k <= 6; k *= 2) {
 }
 ```
 
-* For loop which uses a step which divides the variable by 2
+* For loop which uses a step that divides the variable by 2
 
 ``` js live
 for (let d = 40; d > 0; d /= 2) {

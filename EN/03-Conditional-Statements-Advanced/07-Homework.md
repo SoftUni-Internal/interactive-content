@@ -62,10 +62,10 @@ function dayOfWeek(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program to print the day of the week as word: 
+Write a program to print the day of the week as a word: 
 
 * Read and integer **n**: the **day of the week** in range `[1..7]`
-* Print the name of the day (as word, in English) 
+* Print the name of the day (as word, in English) 
 * Print `Error` if the number is not in the given range
 
 # Example
@@ -405,8 +405,8 @@ function vacationExpenses(season, building, days){
 # Description
 Write a program, which calculates vacation expenses:
 
-* Read a season, an accommodation type and a count of the days 
-* Print the total **expenses**, based on the price table bellow, formatted to the **2nd digit** after the decimal point
+* Read a season, an accommodation type, and a count of the days 
+* Print the total **expenses**, based on the price table below, formatted to the **2nd digit** after the decimal point
 
  | Season   | Hotel | Camping   | Discount|
 | :---:       |    :----:   |   :---:     |   :---: |
@@ -792,7 +792,7 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 # Description
 Write a program to apply an operator for given two numbers:
 
-* Read two integers and a math operator from the console 
+* Read two integers and a math operator from the console 
 * The math operator could be: `+`, `-`, `/`, `%` și `*`
 * The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
 

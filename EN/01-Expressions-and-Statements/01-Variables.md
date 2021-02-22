@@ -13,7 +13,7 @@ If we think of the variables as boxes that hold information, this is how they wo
 
 Most of our applications need to work with information.
 
-We can use variables to store all kind of data we need.
+We can use variables to store all kinds of data we need.
 
 [/slide]
 
@@ -43,7 +43,7 @@ The data that they are storing can be read and changed at any time.
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-7-8-8-demo-Variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Variables can be stored in the program's:
+Variables can be stored in the programs:
 
 * Operational memory: in the execution **stack**
 
@@ -65,7 +65,7 @@ They are characterized by:
 
 * Value (stored information)
 
-Each of the variables in JavaScript has a name, a type and a value. 
+Each of the variables in JavaScript has a name, a type, and a value. 
 
 Here is how we would declare a variable and assign it with a value at the same time:
 

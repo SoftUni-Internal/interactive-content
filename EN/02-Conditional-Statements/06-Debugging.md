@@ -9,7 +9,7 @@ So far, we wrote a lot of code, and there were some mistakes in it, right? Now w
 
 # What is "Debugging"?
 
-**Debugging** is the process of "**attaching**" to the program execution, which allows us to **track step by step the process**. 
+**Debugging** is the process of "**attaching**" to the program execution, which allows us to **track step by step process**. 
 
 We can track **line by line** what happens in our program, what path it follows, what are the values of defined variables at each step of debugging, and many other things that allow us to detect errors (**bugs**).
 [image assetsSrc="image32.png" /]
@@ -32,7 +32,7 @@ We can track **line by line** what happens in our program, what path it follows,
 
 This way we check the execution of our program line by line.
 
-Using debugging makes easier to validate and fix a problem in our program.
+Using debugging makes it easier to validate and fix a problem in our program.
 
 
 [image assetsSrc="debugging-demo.png" /]

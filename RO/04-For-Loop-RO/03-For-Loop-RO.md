@@ -47,14 +47,14 @@ Acest bloc de cod poate fi explicat cu ajutorul acestei diagrame:
 
 [image assetsSrc="for-loop-use-case.png" /]
 
-Bucla începe cu operatorul `for` și trece prin toate valorile cu ajutorul unei variabile, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi. 
+Bucla începe cu operatorul "**for**" și trece prin toate valorile cu ajutorul unei variabile, de exemplu numerele de la 1 la 10 (inclusiv), iar pentru fiecare valoare se fac anumite comenzi. 
 
 ## Sintaxa: Bucla For 
 
 După ce se declară bucla, se poate specifica o  **valoare inițială** și o **valoare finală.** 
 
 Cuprinsul buclei este cuprins între acolade `{ }` și reprezintă un bloc de una sau mai multe comenzi. 
-Blocul de cod de mai jos ne arată structura buclei `for`: 
+Blocul de cod de mai jos ne arată structura buclei "**for**": 
 
 ``` js
 for (initialization; condition; update) {

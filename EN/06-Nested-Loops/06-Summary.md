@@ -31,7 +31,7 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-- Nested **while loops**, are verry well applied for nested, repeating logic with exit conditions 
+- Nested **while loops** are very well applied for nested, repeating logic with exit conditions 
 ```js
 while (condition) {
 

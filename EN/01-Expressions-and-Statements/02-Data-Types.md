@@ -74,7 +74,7 @@ x = true;  // x is Boolean
 
 Data types set ranges of values with similar characteristics.
 
-The are characterized by:
+They are characterized by:
 
 * **Name**
 
@@ -90,7 +90,7 @@ In computer programming, a naming convention is a set of **rules** for choosing 
 
 In JS the convention for naming variables is **camelCase**. 
 
-There are other naming conventions which are used in different languages such as **PascalCase** and  **Snake case**.
+Other naming conventions are used in different languages such as **PascalCase** and  **Snake case**.
 
 **camelCase** combines words by:
 

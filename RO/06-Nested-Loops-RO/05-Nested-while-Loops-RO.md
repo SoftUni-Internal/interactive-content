@@ -8,7 +8,7 @@
 [stream language="RO" videoId="488090609/3d873b4b3b"  /]
 [/video-vimeo]
 
-Folosirea buclelor imbricate `while` este foarte asemănătiare cu folosirea lui `for`.
+Folosirea buclelor imbricate "**while**" este foarte asemănătiare cu folosirea lui "**for**".
 
 Iată cum arată sintaxa in JS:
 

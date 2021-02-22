@@ -27,9 +27,9 @@ Because a condition can’t be simultaneously `true` and `false`, the then-state
 
 After the then-statement or the `else`-statement runs, control is transferred to the next statement after the `if` statement.
 
-In an `if` statement that doesn’t include an else statement, if condition is `true`, the then-statement runs. 
+In an `if` statement that does not include an else statement, if the condition is `true`, the then-statement runs. 
 
-If condition is `false`, control is transferred to the next statement after the if statement.
+If the condition is `false`, control is transferred to the next statement after the if statement.
 
 Both the then-statement and the else-statement can consist of a single statement or multiple statements that are enclosed in braces `{ }`. 
 
@@ -59,7 +59,7 @@ function example(input) {
 
 When we have **only one command** in the body of the **if construction**, we can **skip the curly brackets**, indicating the conditional operator body. 
 
-When we want to execute **block of code** (group of commands), curly brackets are **required**. 
+When we want to execute **block of code** (a group of commands), curly brackets are **required**. 
 
 In case we drop them, **only the first line** after the **if clause** will be executed.
 

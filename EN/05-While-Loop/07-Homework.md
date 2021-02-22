@@ -361,7 +361,7 @@ function specialNumber(input) {
 [/code-adapter]
 [task-description]
 # Description
-Special number is number **divisible by all of its digits** without remainder. 
+The special number is a number **divisible by all of its digits** without remainder. 
 
 Write a program, which: 
 

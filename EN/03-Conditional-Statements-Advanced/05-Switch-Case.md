@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-27-28-The-switch-case-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The switch-case condition works as a sequence of if-else blocks. 
+The switch-case condition works as a sequence of if-else blocks. 
 
 Whenever the work of our program depends on the value of one variable, instead of making consecutive conditions with `if-else` blocks, we can **use** the conditional `switch` statement. 
 
@@ -14,11 +14,11 @@ It is being used for **choosing between a list of possibilities**.
 The statement compares a given value with defined constants and depending on the result, it takes an action.
 
 - We put **the variable** that we want to **compare**, inside the **brackets after the operator** `switch` and it is called a **"selector"**
-- The type must be **comparable** (numbers, strings,etc) 
+- The type must be **comparable** (numbers, strings, etc) 
 - **Consecutively**, the program starts comparing each value which is found after the case labels 
 - Upon a match, the execution of the code from the respective place begins and continues until it reaches the operator `break`
 
-`break` might be skipped, in order to execute a code from other `case` construction, until it reaches another operator. 
+`break` might be skipped, to execute a code from another `case` construction, until it reaches another operator. 
 
 When **no matches** are **found**, the `default` construction is being executed, **if** such **exists**.
 
@@ -43,7 +43,7 @@ The default case specifies the `switch` section to execute **if the match expres
 
 If a default case is not present and the match expression doesn't match any other case label, program flow **falls** through the switch statement.
 
-The default case can appear in any order in the switch statement, but regardless of its order in the source code it's always evaluated **last**, after all case labels have been evaluated.
+The default case can appear in any order in the switch statement, but regardless of its order in the source code, it's always evaluated **last**, after all, case labels have been evaluated.
 
 ```js
 switch (selector) {
@@ -60,7 +60,7 @@ switch (selector) {
 ```
 
 # Example: Day of the Week
-Let's write a program that prints **the day of the week** (in English) depending on the **given number** (1 … 7) or **"Error!"** if an invalid input is given.
+Let's write a program that prints **the day of the week** (in English) depending on the **given number** (1 … 7) or **"Error!"** if invalid input is given.
 
 ```js
 let day = Number(input);
@@ -98,7 +98,7 @@ switch (day) {
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-30-31-Multiple Labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In **JS** we have the possibility to use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
+In **JS** we can use **multiple** `case` labels in the `switch-case` coonstruction, when they have to execute **the same code**. 
 
 This way, when our **program** finds a **match**, it will execute the **next** code, because **after** the respective `case` label **there is no code** for execution and a `break` operator. 
 

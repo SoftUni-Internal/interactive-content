@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-30-29-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Expressions** are sequences of operators, literals and variables which are evaluated to a value.
+**Expressions** are sequences of operators, literals, and variables that are evaluated to a value.
   * Consist of at least one **operand**
   * Can have 1 or more **operators**
 
@@ -27,5 +27,5 @@ console.log(r);
 ```
 The standard rule for **priorities** of arithmetic operations is applied: multiplication and division are always done before addition and subtraction. 
 
-In case of an expression in **brackets**, it is calculated **first**, just like in math.
+In the case of an expression in **brackets**, it is calculated **first**, just like in math.
 [/slide]

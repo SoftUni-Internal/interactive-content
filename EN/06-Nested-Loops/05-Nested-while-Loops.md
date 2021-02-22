@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/06.Nested-Loops/EN/JS-basics-nested-loops-22-23-nested-wihle-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The use of nested `while` loops is very similar to the one of the `for`.
+The use of nested "**while**" loops is very similar to the one of the "**for**".
 
 Here is the syntax in JS:
 ```js

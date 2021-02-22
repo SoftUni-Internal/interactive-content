@@ -19,7 +19,7 @@ Usage in Programming:
 for ( ; ; ) {
   console.log("Hello World");
 }
-// You can skip the initialization, condition and the increment
+// You can skip the initialization, condition, and the increment
 ```
 [/slide]
 
