@@ -91,7 +91,7 @@ The program will run in the **following** way:
 - That is why the evaluation of `d` is being **skipped** and the whole expression is calculated as `false`
 
 # Example: Point in a Rectangle
-Checks whether **`point {x, y}`** is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
+Checks whether `point {x, y}` is placed **inside the rectangle {x1, y1} – {x2, y2}**. 
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
@@ -152,9 +152,18 @@ function bonusPoints(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program that applies a bonus to given points
+Create a program that applies a bonus to given points
 
 * If points are between **0** and **3**, adds **5**
 
@@ -165,13 +174,13 @@ Write a program that applies a bonus to given points
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|4| 19 |
+|bonusPoints(4)| 19 |
 
 [/task-description]
 [tests]
 [test]
-[input]
-4
+[input open]
+bonusPoints(4)
 [/input]
 [output]
 19
@@ -179,7 +188,7 @@ Write a program that applies a bonus to given points
 [/test]
 [test]
 [input]
-8
+bonusPoints(8)
 [/input]
 [output]
 28
@@ -187,7 +196,7 @@ Write a program that applies a bonus to given points
 [/test]
 [test]
 [input]
-1
+bonusPoints(1)
 [/input]
 [output]
 6
@@ -267,9 +276,18 @@ function foodOrDrink(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads single line and print **drink**, **food** or **unknown**
 
@@ -282,26 +300,34 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|curry| food |
+|foodOrDrink('curry')| food |
 
 
 | **Input** | **Output** |
 | --- | --- |
-|flower| unknown |
+|foodOrDrink('flower')| unknown |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-curry
+foodOrDrink('curry')
 [/input]
 [output]
 food
 [/output]
 [/test]
+[test open]
+[input]
+foodOrDrink('flower')
+[/input]
+[output]
+unknown
+[/output]
+[/test]
 [test]
 [input]
-tea
+foodOrDrink('tea')
 [/input]
 [output]
 drink
@@ -309,7 +335,7 @@ drink
 [/test]
 [test]
 [input]
-something
+foodOrDrink('something')
 [/input]
 [output]
 unknown
