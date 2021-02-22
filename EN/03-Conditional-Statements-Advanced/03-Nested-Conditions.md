@@ -94,7 +94,7 @@ function adapter(input, code) {
 [task-description]
 
 # Description
-Write a program that: 
+Create a program that: 
 
 - Reads a **product** and a day from the console. 
 
@@ -185,7 +185,7 @@ function biggestNumberOfThree(input) {
 [/code-editor]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
   * Reads **3 numbers** from the console
   * Prints the **greatest** number
@@ -193,15 +193,13 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['1', '2', '3']`| 3 |
+|biggestNumberOfThree(['1', '2', '3'])| 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
-2
-3
+biggestNumberOfThree(['1', '2', '3'])
 [/input]
 [output]
 3
@@ -209,9 +207,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
--1
--5
--9
+biggestNumberOfThree(['-1', '-5', '-9'])
 [/input]
 [output]
 -1
@@ -219,12 +215,24 @@ Write a program, which:
 [/test]
 [test]
 [input]
-1
-5
-3
+biggestNumberOfThree(['1', '5', '3'])
 [/input]
 [output]
 5
+[/output]
+[/test]
+[input]
+biggestNumberOfThree(['1', '1000000', '3'])
+[/input]
+[output]
+1000000
+[/output]
+[/test]
+[input]
+biggestNumberOfThree(['1000', '5000', '10000000000000000000'])
+[/input]
+[output]
+10000000000000000000
 [/output]
 [/test]
 [/tests]
