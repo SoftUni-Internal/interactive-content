@@ -7,21 +7,22 @@
 
 There is no direct way of accepting array input in Java using Scanner or any other utility but the same can be achieved using standard **Scanner** methods and asking some questions to the user.
 
-For example, if you want to accept an **array of strings** as input you need the **length** of the array and then you can use a for loop to retrieve that many elements and store them in an array.
+For example, if you want to accept an **array of strings**, you will first need to get its **length** as input, and you can then use a for-loop to retrieve that many elements and store them in an array.
 
-```Java
-int n = Integer.parseInt(sc.nextLine()); //Receive the array length
-int[] arr = new int[n];                  //Create an array with the given length
+```java
+//accept n - length of the array
+int n = Integer.parseInt(sc.nextLine()); 
+
+//create the array with length of n
+int[] arr = new int[n];                  
                 
 for (int i = 0; i < n; i++) {
-  arr[i] = Integer.parseInt(sc.nextLine()); //Read array elements
+  //read array elements from the console
+  arr[i] = Integer.parseInt(sc.nextLine()); 
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-# Reading From Single Line
+## Reading From Single Line
 
 Arrays can be read from a single line of separated values. For example, if we want to read this array: `2 8 30 25 40 72 -2 44 56`:
 
@@ -35,50 +36,49 @@ for (int i = 0; i < items.length; i++){
 }
 ```
 
-
 First, we read the numbers from the console and split them by the empty spaces between them.
 
 Then we initialize a new array with a length equal to the number of elements we read. 
 
 Finally, using a for loop we insert all the values into the array.
 
-We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulate arrays.
+We can read an array of integers using `java.util.Arrays;` which is a `class` in Java that allows you to create and manipulate arrays.
 
 We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
 
-[/slide]
 
-[slide hideTitle]
-# Shorter Way to Read Arrays
-
-We can read an array of integers using `java.util.Arrays;`, which is a `class` in Java that allows you to create and manipulate arrays.
-
-We're going to learn about **classes** later in this course, but if you're curious feel free to google it.
+## A Shorter Way to Read Arrays
 
 Here is a much shorter way to read an input and create an array from it.
 
 ```Java
 String inputLine = sc.nextLine();
 
-String[] items = inputLine      //create a string array
+String[] items = inputLine      
   .split(" ");
 
 int[] arr = Arrays
-  .stream(scanner.nextLine()    //read the input from the console as string
-  .split(" "))                  //split the input by space
-  .mapToInt(Integer::parseInt)  //convert the string input to int
-  .toArray();                   //convert to array
+  .stream(scanner.nextLine()   
+  .split(" "))                
+  .mapToInt(Integer::parseInt)  
+  .toArray();                  
 ```
 [/slide]
+
+We are first reading the input from the console as a string using `scanner.nextLine()`. 
+
+Then we split the input by space using `split(" ")`.
+
+We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
+
+Finally, we convert the result to an array.
 
 [slide hideTitle]
 # Printing Arrays
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-15-printing-arrays-with-for-string.join-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 A `for` loop can be used for printing all the elements of an array.
 
-While printing each element we can split them by whitespace or new line.
+While printing each element we can split them by whitespace or newline.
 
 See the following example:
 
@@ -98,7 +98,7 @@ for (int i = 0; i < arr.length; i++) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-13-14-problem-and-solution-print-numbers-in-reverse-order-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Reverse an Array of Integers" taskId="java-fund-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Integers" taskId="java-fund-arrays-lab-reverse-array-of-integers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -223,7 +223,7 @@ String[] strings = { "one", "two" };
 System.out.println(String.join(" ", strings));
 ```
 
-If we try printing int we receive error:
+If we try printing an array of type **int** we get an error:
 
 ```Java live
 int[] arr = { 1, 2, 3 };
@@ -238,7 +238,7 @@ System.out.println(String.join(" ", arr));
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-16-17-problem-and-solution-reverse-an-array-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Reverse an Array of Strings" taskId="java-fund-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Reverse an Array of Strings" taskId="java-fund-arrays-lab-reverse-an-array-of-strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -335,7 +335,7 @@ f60 e50 d40 c30 b20 a10
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-problem-and-solution-equal-arrays-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Problem: Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Arrays" taskId="java-fund-Arrays-Equal-Arrays" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
