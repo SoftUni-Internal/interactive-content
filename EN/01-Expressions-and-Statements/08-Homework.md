@@ -23,7 +23,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a function that gets an integer and calculates the area of a square with the side `a`. 
+Create a program that gets an integer and calculates the area of a square with the side `a`. 
 - you get a number in the argument of the function 
 - multiply it yourself and 
 - print the result in the console
@@ -98,7 +98,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program to convert from USD to EUR:
+Create a program to convert from USD to EUR:
   * Read a **floating-point number**: the **dollars** to be converted 
   * Convert dollars to euro (use fixed rate of dollars to euro: **0.88**)
   * Print the converted value in **euro**
@@ -171,7 +171,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a function that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+Create a program that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Use the formula: 
 - `degrees = radians * 180 / π` 
@@ -252,7 +252,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program to convert from days to minutes:
+Create a program to convert from days to minutes:
 
 * Read a single **integer** (the **days** to be converted)
 
@@ -328,7 +328,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program to calculate a **circle** area and perimeter:
+Create a program to calculate a **circle** area and perimeter:
   * Read a floating-point number: the **radius** of a circle
   * Calculate the **area** and **perimeter** of a circle
   * Print the calculated values **formatted** to 2 digits after the decimal point 
@@ -406,7 +406,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 Peter wants to landscape the backyard, so he hired a **company** to do it for him.
-Write a function that **calculates** the necessary funds that Peter will have to **pay** for the job. 
+Create a program that **calculates** the necessary funds that Peter will have to **pay** for the job. 
 The price per square meter is **7.61 dollars** with VAT. 
 As Peter's yard is quite **large**, the contractor company offers an **18 percent** discount on the final price.
 
