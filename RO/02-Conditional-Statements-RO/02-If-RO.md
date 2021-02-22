@@ -96,10 +96,10 @@ function adapter(input, code) {
 [task-description]
 
 # Descriere
-Scrieți un program pentru a verifica vremea înghețată:
+Creați un program pentru a verifica vremea înghețată:
 
 * Citiți o temperatură în Celsius (a floating-point number)
-* Tipăriți `Freezing weather!`, Dacă temperatura este **egală cu** sau **mai mică decât 0**
+* Tipăriți "**Freezing weather!**", Dacă temperatura este **egală cu** sau **mai mică decât 0**
 
 # Exemplu
 

@@ -111,10 +111,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which checks if a number is **even** or **odd**
+Create a program, which checks if a number is **even** or **odd**
 
-  * If it is even, print `even`
-  * If it is odd, print `odd`
+  * If it is even, print "**even**"
+  * If it is odd, print "**odd**"
 
 # Example
 

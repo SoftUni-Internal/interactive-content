@@ -119,10 +119,10 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program, care verifică dacă un număr este **par sau impar**
+Creați un program, care verifică dacă un număr este **par sau impar**
 
-* Dacă este par, tipăriți  `Even`
-* Dacă este impar, tipăriți `Odd`
+* Dacă este par, tipăriți "**even**"
+* Dacă este impar, tipăriți "**odd**"
 
 # Exemplu
 | **Input** | **Output** |

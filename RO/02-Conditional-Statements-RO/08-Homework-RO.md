@@ -25,11 +25,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program pentru a verifica o parolă:
+Creați un program pentru a verifica o parolă:
 
 * Citiți un string pentru: parola **guess**
-  * Imprimați `Welcome` dacă parola este `s3cr3t!`
-  * Imprimați `Wrong password!` în orice altă situație
+  * Imprimați "**Welcome**" dacă parola este "**s3cr3t!**"
+  * Imprimați "**Wrong password!**" în orice altă situație
 
 # Exemplu
 
@@ -92,13 +92,13 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program care caută apă la fierbere: 
+Creați un program care caută apă la fierbere: 
 
 * Citiți un număr în virgulă mobilă: temperatura  **temperature** (in °C)
 
-* Imprimați `The water is boiling` dacă numărul este `>100`
+* Imprimați "**The water is boiling**" dacă numărul este \> 100
 
-* Imprimați `The water is not hot enough` în orice altă situație
+* Imprimați "**The water is not hot**" în orice altă situație
 
   # Exemplu
 
@@ -169,21 +169,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program pentru a verifica viteza mare/mică: 
+Creați un program pentru a verifica viteza mare/mică: 
 
 * Citiți  **speed** (un număr floating-point)
 
-* Imprimați `Slow` dacă viteza este `<= 30`
+* Imprimați "**Slow**" dacă viteza este \<\= 30
 
-* Imprimați `Fast` dacă viteza este `> 30`
+* Imprimați "**Fast**" dacă viteza este \> 30
 
   # Exemplu
 
 | **Input** | **Output** |
 | --- | --- |
-| 30 | Slow |
-| 60 | Fast |
-
 | speedInfo(30) | Slow |
 | speedInfo(60) | Fast |
 
@@ -262,7 +259,7 @@ Avem un integer cu datele ințiale **number** de puncte.
 
 **Bonus points** sunt oferite, în funcție de regulile descrise mai jos. 
 
-Scrieți o funcție care calculează 
+Creați un program care calculează 
 
 - punctele bonus **received** din număr 
 
@@ -405,7 +402,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Enunț
-Scrieți un program care să calculeze prețul unui bilet:
+Creați un program care să calculeze prețul unui bilet:
 
 * Citiți tipul de bilet: fie **student** fie **regular**
 
@@ -417,7 +414,7 @@ Scrieți un program care să calculeze prețul unui bilet:
 
 * Prețul unui bilet obișnuit: **1.60**
 
-* Pentru un tip nevalid, imprimați `Invalid ticket type!`
+* Pentru un tip nevalid, imprimați "**Invalid ticket type!**"
 
 # Exemplu
 

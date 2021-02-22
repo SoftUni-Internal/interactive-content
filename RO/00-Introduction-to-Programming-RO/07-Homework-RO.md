@@ -15,7 +15,7 @@ function hello() {
 [/code-editor]
 [task-description]
 
-Scrieți un program JavaScript, care:
+Creați un program JavaScript, care:
 
 Imprimă 'Hello JavaScript' pe consolă.
 
@@ -46,7 +46,7 @@ function calculate() {
 [/code-editor]
 [task-description]
 
-Scrieți un program JavaScript, care:
+Creați un program JavaScript, care:
 
 * Calculează valoarea de 5 * 5
 * Imprimă rezultatul
@@ -76,7 +76,7 @@ function nameAndExpression() {
 ```
 [/code-editor]
 [task-description]
-Scrieți un program pentru a imprima `Catlyn` pe prima linie și calculați și imprimați rezultatul expresiei` 5 + 3` pe a doua linie
+Creați un program pentru a imprima `Catlyn` pe prima linie și calculați și imprimați rezultatul expresiei` 5 + 3` pe a doua linie
 [/task-description]
 [code-io /]
 [tests]
@@ -105,7 +105,7 @@ function calculations() {
 [/code-editor]
 [task-description]
 
-Scrieți un program, care calculează și imprimă valoarea următoarelor expresii:
+Creați un program care calculează și imprimă valoarea următoarelor expresii:
 
 * `5 + 3 * 2`
 * `4 * (2 + 3)`
@@ -138,7 +138,7 @@ function squareOfStars() {
 ```
 [/code-editor]
 [task-description]
-Scrieți un program care:
+Creați un program care:
 
 Imprimă  un pătrat de stele `7 * 7` astfel:
 

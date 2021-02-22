@@ -27,11 +27,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a program to check a password:
+Create a program  to check a password:
 
 * Read a string: the password **guess**
-* Print `Welcome` if the password guess is `s3cr3t!`
-* Print `Wrong password!` in all other cases 
+* Print "**Welcome**" if the password guess is "**s3cr3t!**"
+* Print "**Wrong password!**" in all other cases 
 
 # Example
 
@@ -60,7 +60,7 @@ Wrong password!
 [/test]
 [test]
 [input]
-guessThePassword(wrong)
+guessThePassword('wrong')
 [/input]
 [output]
 Wrong password!
@@ -97,11 +97,11 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Write a program, which checks for hot water: 
+Create a program, which checks for hot water: 
 
 * Read a floating-point number: the water **temperature** (in °C)
-* Print `The water is boiling` if the number `> 100`
-* Prints `The water is not hot enough` in all other cases 
+* Print "**The water is boiling**" if the number \> 100
+* Prints "**The water is not hot**" enough` in all other cases 
 
   # Example
 
@@ -174,8 +174,8 @@ function adapter(input, code) {
 Write a program to check for fast / slow speed: 
 
 * Read the **speed** (a floating-point number)
-* Print `Slow` if the speed `<= 30`
-* Print `Fast` if the speed `> 30`
+* Print "**Slow**" if the speed \<\= 30
+* Print "**Fast**" if the speed \> 30
 
   # Example
 
@@ -257,7 +257,7 @@ An integer is given which the initial **number** of points.
 
 **Bonus points** are awarded according to the rules described below. 
 
-Write a function that calculates 
+Create a program that calculates 
 
 - the **received** bonus points from the number 
 
@@ -271,7 +271,7 @@ Additional bonus points, accrued separately from the previous ones:
 
 - For an even number you add 1 point
 
--	For a number ending in 5, you add 2 points
+- For a number ending in 5, you add 2 points
 
 # Example
 
@@ -391,7 +391,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Write a program to calculate a ticket price:
+Create a program to calculate a ticket price:
 
 * Read a ticket type: either **student** or **regular**
 
@@ -402,7 +402,7 @@ Write a program to calculate a ticket price:
 
 * Regular ticket price: **1.60**
 
-* For invalid type print `Invalid ticket type!`
+* For invalid type print "**Invalid ticket type!**"
 
 # Example
 

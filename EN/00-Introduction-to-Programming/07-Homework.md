@@ -17,7 +17,7 @@ function hello() {
 [/code-editor]
 [task-description]
 
-Write a JavaScript program, which:
+Create a JavaScript program, which:
 
 Prints 'Hello JavaScript' on the console.
 
@@ -50,7 +50,7 @@ function calculate() {
 [/code-editor]
 [task-description]
 
-Write a JavaScript program, which:
+Create a JavaScript program, which:
 
 * Calculates the value of 5 * 5
 * Prints the result
@@ -79,7 +79,7 @@ function nameAndExpression() {
 ```
 [/code-editor]
 [task-description]
-Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression `5 + 3` on the second line
+Create a program to print 'Catlyn' on the first line and calculate and print the result of the expression `5 + 3` on the second line
 [/task-description]
 [code-io /]
 [tests]
@@ -106,7 +106,7 @@ function calculations() {
 ```
 [/code-editor]
 [task-description]
-Write a program, which calculates and prints the value of the following expressions:
+Create a program, which calculates and prints the value of the following expressions:
 
 * `5 + 3 * 2`
 * `4 * (2 + 3)`
@@ -138,7 +138,7 @@ function squareOfStars() {
 ```
 [/code-editor]
 [task-description]
-Write a program, which:
+Create a program, which:
 
 Prints a square of `7 * 7` stars like this:
 
