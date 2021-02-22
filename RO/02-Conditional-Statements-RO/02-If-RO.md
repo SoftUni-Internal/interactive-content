@@ -127,7 +127,7 @@ freezingWeather(4)
 [/test]
 [test]
 [input]
--5
+freezingWeather(-5)
 [/input]
 [output]
 Freezing weather!

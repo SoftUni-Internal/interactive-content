@@ -9,12 +9,21 @@
 
 [code-task title="Guess the Password" taskId="pb-js-Conditions-Guess-The-Password" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function guessThePassword(input) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -28,17 +37,25 @@ Write a program to check a password:
 
 | **Input** | **Output** |
 | --- | --- |
-| s3cr3t! | Welcome |
-| qwerty | Wrong password! |
+| guessThePassword('s3cr3t!') | Welcome |
+| guessThePassword('qwerty') | Wrong password! |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-s3cr3t!
+guessThePassword('s3cr3t!')
 [/input]
 [output]
 Welcome
+[/output]
+[/test]
+[test open]
+[input]
+guessThePassword('qwerty')
+[/input]
+[output]
+Wrong password!
 [/output]
 [/test]
 [test]
@@ -62,12 +79,21 @@ Wrong password!
 
 [code-task title="Boiling Water" taskId="pb-js-Conditions-Boiling-Water" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function boilingWater(input) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -81,14 +107,14 @@ Write a program, which checks for hot water:
 
 | **Input** | **Output** |
 | --- | --- |
-| 104.8 | The water is boiling |
-| 29 | The water is not hot enough |
+| boilingWater(104.8) | The water is boiling |
+| boilingWater(29) | The water is not hot enough |
 
 [/task-description]
 [tests]
 [test]
 [input]
-105
+boilingWater(104.8)
 [/input]
 [output]
 The water is boiling
@@ -96,7 +122,23 @@ The water is boiling
 [/test]
 [test]
 [input]
-10
+boilingWater(29)
+[/input]
+[output]
+The water is not hot enough
+[/output]
+[/test]
+[test]
+[input]
+boilingWater(105)
+[/input]
+[output]
+The water is boiling
+[/output]
+[/test]
+[test]
+[input]
+boilingWater(10)
 [/input]
 [output]
 The water is not hot enough
@@ -118,6 +160,15 @@ function speedInfo(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program to check for fast / slow speed: 
@@ -167,6 +218,15 @@ function bonusScore(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 An integer is given which the initial **number** of points. 
@@ -278,6 +338,15 @@ function tickets(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program to calculate a ticket price:

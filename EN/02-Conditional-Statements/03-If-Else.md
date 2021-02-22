@@ -94,12 +94,21 @@ if (color == "red") {
 
 [code-task title="Even or Odd" taskId="pb-js-conditional-statements-Even-or-Odd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function evenOrOdd(input) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a program, which checks if a number is **even** or **odd**
@@ -111,23 +120,23 @@ Write a program, which checks if a number is **even** or **odd**
 
 | **Input** | **Output** |
 | --- | --- |
-| 4 | even |
-| 7 | odd |
+| evenOrOdd(4) | even |
+| evenOrOdd(7) | odd |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-4
+evenOrOdd(4)
 [/input]
 [output]
 even
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-7
+evenOrOdd(7)
 [/input]
 [output]
 odd
