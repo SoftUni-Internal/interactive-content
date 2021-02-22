@@ -15,6 +15,15 @@ function hello() {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 Write a JavaScript program, which:
@@ -26,6 +35,7 @@ Prints `Hello JavaScript` on the console.
 [tests]
 [test]
 [input]
+hello()
 [/input]
 [output]
 Hello JavaScript
