@@ -146,6 +146,8 @@ parent.removeChild(content); //removes the element by accessing its parent
 
 # Problem with Solution: Articles List
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-18-solution-one-article-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Articles List" taskId="js-advanced-DOM-Articles-List" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
 function articlesList(){
@@ -618,6 +620,8 @@ h1.classList.remove("first"); //removes the "first" class
 [slide hideTitle]
 
 # Problem with Solution: Growing Word
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/01.JS-Advanced-DOM/EN/JS-Advanced-DOM-29-solution-two-growing-word-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Growing Word" taskId="js-advanced-DOM-Growing-Word" executionType="tests-execution" executionStrategy="javascript-js-dom-unit-tests" requiresInput] [code-editor language=javascript]
 ```
