@@ -35,12 +35,12 @@
 
 -  Regular Expressions
 
-   -  RegEx Syntax
+   -  regEx Syntax
 
-   -  Quantifiers
+   -  quantifiers
 
-   -  Grouping
+   -  grouping
 
-   -  Backreferences
+   -  backreferences
 
 [/slide]

@@ -24,14 +24,14 @@ let car = {type:"Tesla", model:"X", color:"Blue"};
 ```
 
 - **Maps** have advantages in some cases:
-  - You may use **any data type** as **key**
-  - They are **iterable**
-  - They have a **size property**
+  - you may use **any data type** as **key**
+  - they are **iterable**
+  - they have a **size property**
 
 ## In the next lesson, you will learn:
 
 - Strings
-  - Manipulating strings
-  - Building and modifying strings
+  - manipulating strings
+  - building and modifying strings
 
 [/slide]
