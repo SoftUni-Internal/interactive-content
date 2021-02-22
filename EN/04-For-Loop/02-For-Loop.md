@@ -28,7 +28,7 @@ The loop starts with the `for` operator and passes through all values for a part
 
 Upon declaring the loop, you can specify a **start value** and an **end value**. 
 
-The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**. 
+The **body** of the loop is usually enclosed in curly brackets `{ }` and represents a block of **one or multiple commands**.
 
 The code block below shows the structure of a `for` loop:
 ```
