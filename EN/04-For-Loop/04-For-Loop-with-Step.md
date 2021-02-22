@@ -59,7 +59,7 @@ public class Program {
 Write a program, which:
 
 * Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+* Prints all numbers from **7 to n**, **ending in 7**
 
 ## Example
 | **Input** | **Output** 
