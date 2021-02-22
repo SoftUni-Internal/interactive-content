@@ -71,8 +71,6 @@ console.log(myVar + 10);
 [slide hideTitle]
 # Problem with Solution: Integer or Float
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-problem-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/01.JS-Fundamentals-Data-types-and-variables/EN/01.JS-Fundamentals-Data-types-and-variables-20-solution-integer-or-float-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Integer or Float" taskId="fund-js-data-types-and-variables-lab-integer-or-float" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
