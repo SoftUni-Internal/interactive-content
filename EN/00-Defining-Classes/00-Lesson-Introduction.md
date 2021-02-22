@@ -24,7 +24,7 @@
 - Constructing an object by given rules
 
 **5. Static Members**
-- Usage of static classes
+- Usage of static fields and methods
 
 [/slide]
 
