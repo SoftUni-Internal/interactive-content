@@ -91,10 +91,7 @@ console.log(data);
 [slide hideTitle]
 # Problem with Solution: Convert to Object
 
-[vimeo-video]
-[stream language="EN" videoId="489794882/3f1feba34c" default /]
-[stream language="RO" videoId="489794882/3f1feba34c"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-21-Solution-Convert-to-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to Object" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-Object" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -160,10 +157,7 @@ town\: Sofia
 [slide hideTitle]
 # Problem with Solution: Convert to JSON
 
-[vimeo-video]
-[stream language="EN" videoId="489794931/a0337f77f1" default /]
-[stream language="RO" videoId="489794931/a0337f77f1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-23-Solution-Convert-to-JSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Convert to JSON" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Convert-to-JSON" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

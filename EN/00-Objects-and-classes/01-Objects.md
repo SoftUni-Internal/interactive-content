@@ -136,10 +136,7 @@ for (let key in person) {
 [slide hideTitle]
 # Problem with Solution: Person Info
 
-[vimeo-video]
-[stream language="EN" videoId="489795397/a61485a8d9" default /]
-[stream language="RO" videoId="489795397/a61485a8d9"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-10-Solution-Person-info-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Person Info" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Person-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -252,10 +249,7 @@ age: 22
 [slide hideTitle]
 # Problem with Solution: City
 
-[vimeo-video]
-[stream language="EN" videoId="489795461/ed6a2ec0c8" default /]
-[stream language="RO" videoId="489795461/ed6a2ec0c8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-12-Solution-City-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="City" taskId="JS-fundamentals-2-Objects-and-Classes-lab-City" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

@@ -100,10 +100,7 @@ dog.speak();
 [slide hideTitle]
 # Problem with Solution: Cats
 
-[vimeo-video]
-[stream language="EN" videoId="489795144/890591bfdb" default /]
-[stream language="RO" videoId="489795144/890591bfdb"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-31-Solution-Cat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Cats" taskId="JS-fundamentals-2-Objects-and-Classes-lab-Cats" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
