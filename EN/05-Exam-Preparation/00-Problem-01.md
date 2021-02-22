@@ -1,9 +1,8 @@
-# Problem 1: Mu Online
+# Problem with Solution 1: Mu Online
 
 [slide hideTitle]
 
 # Mu Online
-
 
 [vimeo-video]
 [stream language="EN" videoId="497656935/bfde3ae27b" default /]
@@ -60,7 +59,7 @@ The word at the **beginning of the command** will be the **monster name** and th
 
 Examples: `rat {number}`, `boss {number}`, there could be other types of monsters.
 
-You should **decrease you champion's health** points by the **damage** that each monster deals to them.
+You should **decrease your champion's health** points by the **damage** that each monster deals to them.
 
 * If you are **not dead** (health >= 0) you have defeated the monster, and you should print out:
 
@@ -290,4 +289,5 @@ Highest level reached: 9
 [/test]
 [/tests]
 [/code-task]
+
 [/slide]
