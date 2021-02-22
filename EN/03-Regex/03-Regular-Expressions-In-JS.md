@@ -152,10 +152,7 @@ console.log(result);
 
 [slide hideTitle]
 # Problem with Solution: Match Full Name
-[vimeo-video]
-[stream language="EN" videoId="489818467/fd0f9e6999" default /]
-[stream language="RO" videoId="489818467/fd0f9e6999"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-25-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Match Full Name" taskId="js-fundamentals-pt2-Regular-Expressions-lab-Match-Full-Name" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -297,10 +294,7 @@ Ivan Ivanov Ivan Ivanov
 
 [slide hideTitle]
 # Problem with Solution: Match Phone Number
-[vimeo-video]
-[stream language="EN" videoId="489818535/165ce68434" default /]
-[stream language="RO" videoId="489818535/165ce68434"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-27-Solution-Match-phone-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Match Phone Number" taskId="js-fundamentals-pt2-Regular-Expressions-Match-Phone-Number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

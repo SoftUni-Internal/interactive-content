@@ -171,10 +171,7 @@ console.log(result[0]);
 [slide hideTitle]
 # Problem with Solution: Match Dates
 
-[vimeo-video]
-[stream language="EN" videoId="489818844/8c5a03bb11" default /]
-[stream language="RO" videoId="489818844/8c5a03bb11"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-12S-Solution-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Match Dates" taskId="js-fundamentals-pt2-regular-expressions-lab-Match-Dates" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -348,10 +345,7 @@ Day: 07, Month: Feb, Year: 2008
 [slide hideTitle]
 # Problem with Solution: Email Validation
 
-[vimeo-video]
-[stream language="EN" videoId="489818897/c7b03af810" default /]
-[stream language="RO" videoId="489818897/c7b03af810"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/EN/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Email Validation" taskId="js-fundamentals-pt2-regular-expressions-lab-Email-Validation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
