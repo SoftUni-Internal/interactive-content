@@ -7,7 +7,9 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-9-10-What-is-an-Array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We already know how to store a single piece of data in one variable. Arrays allow us to store multiple pieces of data, again, in only one variable. 
+We already know how to store a single piece of data in one variable. 
+
+Arrays allow us to store multiple pieces of data, again, in only one variable. 
 
 An array is a **collection** which is **ordered** and **changeable**.
 
@@ -29,7 +31,9 @@ Take a look at this picture:
 
 [image assetsSrc="list-example.png" /]
 
-There are **7 wagons** (**elements**). Each has **passengers** (**a value**). `[3, 4, 10, 7, 5, 0, 6]`
+There are **7 wagons** (**elements**). 
+
+Each has **passengers** (**a value**). `[3, 4, 10, 7, 5, 0, 6]`
 
 The first element of the array is located at index `0`, and the last element of the array is located at index `length-1`. 
 

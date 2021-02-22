@@ -82,6 +82,15 @@ function marketPlace(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -101,15 +110,14 @@ Write a program that:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| `['Banana', 'Weekday']`| 2.50 |
+| marketPlace(['Banana', 'Weekday'])| 2.50 |
 
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-Banana
-Weekday
+marketPlace(['Banana', 'Weekday'])
 [/input]
 [output]
 2.50
@@ -117,11 +125,42 @@ Weekday
 [/test]
 [test]
 [input]
-Apple
-Weekend
+marketPlace(['Apple', 'Weekend'])
 [/input]
 [output]
 1.60
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Kiwi', 'Weekday'])
+[/input]
+[output]
+2.20
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Kiwi', 'Weekend'])
+[/input]
+[output]
+3.00
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Apple', 'Weekday'])
+[/input]
+[output]
+1.30
+[/output]
+[/test]
+[test]
+[input]
+marketPlace(['Banana', 'Weekend'])
+[/input]
+[output]
+2.70
 [/output]
 [/test]
 [/tests]
