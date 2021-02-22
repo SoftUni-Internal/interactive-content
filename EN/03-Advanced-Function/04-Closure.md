@@ -72,6 +72,8 @@ Every time we call the function `func()` the counter will be output to the conso
 [slide hideTitle]
 # Problem with Solution: Command Processor
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/04.JS-Advanced-Advanced-Functions/EN/js-advanced-advanced-functions-24-solution-command-processor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Command Processor" taskId="js-advanced-advanced-functions-Command-Processor"  executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput] [code-editor language=javascript]
 
 ```
