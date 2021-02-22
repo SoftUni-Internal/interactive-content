@@ -68,10 +68,7 @@ describe('Test group #2', function () {
 [slide hideTitle]
 # Problem with Solution: Sum of Numbers
 
-[vimeo-video]
-[stream language="EN" videoId="497187668/5cbd6f3899" default /]
-[stream language="RO" videoId="497187668/5cbd6f3899"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-15-solution-sum-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
