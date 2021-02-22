@@ -25,9 +25,9 @@ public class Main {
 ## Description
 You will be given a count of wagons in a train **n**. 
 
-On the next **n lines** you will receive how many people are going to get on that wagon. 
+On the next **n lines**, you will receive how many people are going to get on that wagon. 
 
-At the end **print the whole train** and after that the **sum of the people in the train**.
+In the end **print the whole train** and after that the **sum of the people on the train**.
 
 ### Example
 | **Input** | **Output** |
@@ -154,7 +154,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program, which prints **common elements** in **two arrays**.
+Write a program that prints **common elements** in **two arrays**.
 
 You have to **compare the elements** of the **second array** to the elements of the **first**.
 
@@ -266,11 +266,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program which creates **2 arrays**.
+Write a program that creates **2 arrays**.
 
 You will be given an **integer n**.
 
-On the **next n lines** you get **2 integers**.
+On the **next n lines**, you will get **2 integers**.
 
 Form 2 arrays as **shown below**.
 
@@ -390,7 +390,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Write a program that **receives an array and number of rotations** you have to perform (first element goes at the end).
+Write a program that **receives an array and a number of rotations** you have to perform.
+
+Rotations are done by switching the element on the first index with the element at the last index.
 
 **Print the resulting** array.
 
@@ -504,7 +506,7 @@ public class Main {
 ## Description
 Write a program to **find all the top integer**s in an array.
 
-A top integer is an integer which is **bigger** than all the elements **to its right**.
+A top integer is an integer that is **bigger** than all the elements **to its right**.
 
 ### Example
 | **Input** | **Output** |
@@ -601,7 +603,7 @@ public class Main {
 ## Description
 Write a program that determines if there **exists an element in the array** such that the **sum of the elements on its left** is **equal** to **the sum of the elements on its right**.
 
-If there are **no elements to the left / right**, their **sum is considered to be 0**.
+If there are **no elements to the left or right**, their **sum is considered to be 0**.
 
 **Print** the **index** that satisfies the required condition or "no" if there is no such index.
 
@@ -1034,7 +1036,7 @@ public class Main {
 ## Description
 You are given a **field size** and the **indexes of ladybugs** inside the field.
 
-After that on every new line until the "end" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given fly length.
+After that on every new line, until the "end" command is given, a ladybug **changes its position** either to its **left** or to its **right** by a given fly length.
 
 A **command** to a ladybug looks like this: "0 right 1".
 
@@ -1056,15 +1058,15 @@ If you are given ladybug index that is **outside the field**, **nothing** happen
 
 Your job is to create the program, simulating the ladybugs flying around doing nothing.
 
-At the end, **print all cells** in the field **separated** by **blank spaces**.
+In the end, **print all cells** in the field **separated** by **blank spaces**.
 
-For each cell that has a ladybug on it print '1' and for each empty cells print '0'.
+For each cell that has a ladybug on it print '1' and for each empty cell print '0'.
 
 For the example above, the output should be '0 1 0'.
 
 ### Input
-- On the first line you will receive an integer - the size of the field
-- On the second line you will receive the initial indexes of all ladybugs separated by a blank space. The given indexes may or may not be inside the field range
+- On the first line, you will receive an integer - the size of the field
+- On the second line, you will receive the initial indexes of all ladybugs separated by a blank space. The given indexes may or may not be inside the field range
 - On the next lines, until you get the "end" command you will receive commands in the format: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Output
