@@ -10,15 +10,17 @@ Classes are **blueprints** for creating objects.
 
 When they are **instantiated**, a **copy** of the class is created and becomes the current instance. 
 
-Classes can **inherit** each other the parent class is **copied** to the child one.
+Classes can **inherit** each other 
+
+The parent class is **copied** to the child class.
 
 They have properties and methods that can be **public**, **private**, or **protected**.
 
-When the properties are **public** they are visible from everywhere in the code.
+When the properties are **public**, they are visible from everywhere in the code.
 
-If they are **private** they are visible only in the class scope.
+If they are **private**, they are visible only in the class scope.
 
-We can use **protected** properties in the class scope and its children.
+**Protected** properties can be used in the class scope and its children.
 
 [/slide]
 
@@ -64,17 +66,17 @@ Here is an example:
 
 In this example, we create two classes. 
 
-The **Person** class is the **parent** one, and the **Teacher** class is the **child**. 
+The **Person** class is the **parent** class, and the **Teacher** class is the **child** class. 
 
-The **Person** class has a **name** and **email** parameters.
+The **Person** class takes a **name** and an **email** as parameters.
 
 In the **Teacher** class, we inherit the parameters from the **Person** class. 
 
 Also, add another parameter to the **Teacher** class, called **subject**. 
 
-In the first `console.log`, we output the **Person** with its parameters, **name** and **email**.
+In the first `console.log()`, we output the **Person** with its parameters: **name** and **email**.
 
-In the second, we printed in the console the **Teacher** object with its parameters.
+In the second, we print on the console the **Teacher** object with its parameters.
 
 [/slide]
 
@@ -84,15 +86,15 @@ In the second, we printed in the console the **Teacher** object with its paramet
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-14-15-classes-in-javascript-class-syntax-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Classes in JavaScript are **based** on **prototype** **inheritance**.
+In JavaScript, classes are **based** on **prototype inheritance**.
 
-They **do** **not** introduce a new inheritance model to JavaScript. 
+   - They **do** **not** introduce a new inheritance model to JavaScript. 
 
-Classes in JavaScript **delegate** rather than create **blueprints**.
+Classes in JavaScript **delegate** **blueprints** rather than create **blueprints**.
 
 Not all methods will be copied when a class is inherited.  
 
-Parent classes **delegate** the methods to their children, and the **keys** and their **values** are shared by **reference**.
+Parent classes **delegate** the methods to their children, and the **keys**, and their **values**, are shared by **reference**.
 
 If a method is not **declared** in the child instance, we will call it from the **parent** instance. 
 
@@ -124,11 +126,11 @@ Here is an example of using classes:
    Joe.speak();
 ```
 
-In this example, the **Man** class inherited the properties and the methods that the **Person** has.
+In this example, the **Man** class inherits the properties and the methods from the **Person** class.
 
-From `Man`, we can access the parameters and methods of **Person**. 
+From **"Man"**, we can access the parameters and methods of the **Person** class. 
 
-In the `speak()` method, we use the **identify** method inherited from the **Person** class.
+In the `speak()` method, we use the **identify** method, inherited from the **Person** class.
 
 [/slide]
 
@@ -169,7 +171,7 @@ In this example, we create a **Person** with a parameter **who**.
 
 We attach another function called **identify** to the **Person** prototype. 
 
-After that, we create the **Man** function, and **inherited** the **Person** prototype from the `Man` function. 
+After that, we create the **Man** function and **inherited** the **Person** prototype from the `Man` function. 
 
 We attach a function called **speak** to the prototype of `Man`.
 
