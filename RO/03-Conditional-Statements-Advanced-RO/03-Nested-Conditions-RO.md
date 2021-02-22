@@ -193,15 +193,13 @@ Creați un program care:
 # Exepmlu
 | **Input** | **Output** |
 | --- | --- |
-|`['1', '2', '3']`| 3 |
+|biggestNumberOfThree(['1', '2', '3'])| 3 |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-1
-2
-3
+biggestNumberOfThree(['1', '2', '3'])
 [/input]
 [output]
 3
@@ -209,9 +207,7 @@ Creați un program care:
 [/test]
 [test]
 [input]
--1
--5
--9
+biggestNumberOfThree(['-1', '-5', '-9'])
 [/input]
 [output]
 -1
@@ -219,12 +215,24 @@ Creați un program care:
 [/test]
 [test]
 [input]
-1
-5
-3
+biggestNumberOfThree(['1', '5', '3'])
 [/input]
 [output]
 5
+[/output]
+[/test]
+[input]
+biggestNumberOfThree(['1', '1000000', '3'])
+[/input]
+[output]
+1000000
+[/output]
+[/test]
+[input]
+biggestNumberOfThree(['1000', '5000', '10000000000000000000'])
+[/input]
+[output]
+10000000000000000000
 [/output]
 [/test]
 [/tests]
@@ -232,4 +240,3 @@ Creați un program care:
 [/code-task]
 
 [/slide]
-
