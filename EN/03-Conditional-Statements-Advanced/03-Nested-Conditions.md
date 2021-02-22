@@ -221,6 +221,7 @@ biggestNumberOfThree(['1', '5', '3'])
 5
 [/output]
 [/test]
+[test]
 [input]
 biggestNumberOfThree(['1', '1000000', '3'])
 [/input]
@@ -228,6 +229,7 @@ biggestNumberOfThree(['1', '1000000', '3'])
 1000000
 [/output]
 [/test]
+[test]
 [input]
 biggestNumberOfThree(['1000', '5000', '10000000000000000000'])
 [/input]
