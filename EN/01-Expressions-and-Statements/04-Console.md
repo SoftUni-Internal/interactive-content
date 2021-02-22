@@ -212,6 +212,15 @@ function sayHello (input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 Write a function, which reads the user input from the console: name and then prints `Hello, {name}`, where `{name}` is the user input.  
@@ -219,13 +228,13 @@ Write a function, which reads the user input from the console: name and then pri
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| John | Hello, John |
+| sayHello('John') | Hello, John |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-John
+sayHello('John')
 [/input]
 [output]
 Hello, John
@@ -233,7 +242,7 @@ Hello, John
 [/test]
 [test]
 [input]
-Marie
+sayHello('Marie')
 [/input]
 [output]
 Hello, Marie
@@ -241,7 +250,7 @@ Hello, Marie
 [/test]
 [test]
 [input]
-asd
+sayHello('asd')
 [/input]
 [output]
 Hello, asd
@@ -249,7 +258,7 @@ Hello, asd
 [/test]
 [test]
 [input]
-George
+sayHello('George')
 [/input]
 [output]
 Hello, George
