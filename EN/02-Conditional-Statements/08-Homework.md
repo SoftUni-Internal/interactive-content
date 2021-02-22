@@ -154,7 +154,7 @@ The water is not hot enough
 # Problem: Speed Info
 [code-task title="Speed Info" taskId="pb-js-Conditions-Speed-Info" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function speedInfo(input) {
     // Write your code here
 }
@@ -181,17 +181,25 @@ Write a program to check for fast / slow speed:
 
 | **Input** | **Output** |
 | --- | --- |
-| 30 | Slow |
-| 60 | Fast |
+| speedInfo(30) | Slow |
+| speedInfo(60) | Fast |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-30
+speedInfo(30)
 [/input]
 [output]
 Slow
+[/output]
+[/test]
+[test open]
+[input]
+speedInfo(60)
+[/input]
+[output]
+Fast
 [/output]
 [/test]
 [test]
@@ -200,6 +208,22 @@ Slow
 [/input]
 [output]
 Fast
+[/output]
+[/test]
+[test]
+[input]
+speedInfo(49)
+[/input]
+[output]
+Fast
+[/output]
+[/test]
+[test open]
+[input]
+speedInfo(20)
+[/input]
+[output]
+Slow
 [/output]
 [/test]
 [/tests]
@@ -212,7 +236,7 @@ Fast
 # Problem: Bonus Score
 [code-task title="Bonus Score" taskId="pb-js-Conditions-Bonus-Score" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function bonusScore(input) {
     // Write your code here
 }
@@ -253,33 +277,51 @@ Additional bonus points, accrued separately from the previous ones:
 
 | **Input** | **Output** |
 | --- | --- |
-| 20| 6 |
+| bonusScore(20)| 6 |
 |  |26 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 175| 37 |
+| bonusScore(175)| 37 |
 |  |212 |
 
 | **Input** | **Output** |
 | --- | --- |
-| 2703| 270.3 |
+| bonusScore(2703)| 270.3 |
 |  |2973.3 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-20
+bonusScore(20)
 [/input]
 [output]
 6
 26
 [/output]
 [/test]
+[test open]
+[input]
+bonusScore(175)
+[/input]
+[output]
+37
+212
+[/output]
+[/test]
+[test open]
+[input]
+bonusScore(2703)
+[/input]
+[output]
+270.3
+2973.3
+[/output]
+[/test]
 [test]
 [input]
-140
+bonusScore(140)
 [/input]
 [output]
 29
@@ -288,7 +330,7 @@ Additional bonus points, accrued separately from the previous ones:
 [/test]
 [test]
 [input]
-175
+bonusScore(175)
 [/input]
 [output]
 37
@@ -297,7 +339,7 @@ Additional bonus points, accrued separately from the previous ones:
 [/test]
 [test]
 [input]
-35
+bonusScore(35)
 [/input]
 [output]
 7
@@ -306,7 +348,7 @@ Additional bonus points, accrued separately from the previous ones:
 [/test]
 [test]
 [input]
-17
+bonusScore(17)
 [/input]
 [output]
 5
@@ -315,7 +357,7 @@ Additional bonus points, accrued separately from the previous ones:
 [/test]
 [test]
 [input]
-0
+bonusScore(0)
 [/input]
 [output]
 6
@@ -332,7 +374,7 @@ Additional bonus points, accrued separately from the previous ones:
 # Problem: Tickets
 [code-task title="Tickets" taskId="pb-js-Conditions-Tickets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-```js
+```
 function tickets(input) {
     // Write your code here
 }
@@ -366,14 +408,14 @@ Write a program to calculate a ticket price:
 
 | **Input** | **Output** |
 | --- | --- |
-| student | $1.00 |
+| tickets('student') | $1.00 |
 
 
 [/task-description]
 [tests]
 [test]
-[input]
-student
+[input open]
+tickets('student')
 [/input]
 [output]
 $1.00
@@ -381,7 +423,7 @@ $1.00
 [/test]
 [test]
 [input]
-regular
+tickets('regular')
 [/input]
 [output]
 $1.60
@@ -389,7 +431,7 @@ $1.60
 [/test]
 [test]
 [input]
-ticket
+tickets('ticket')
 [/input]
 [output]
 Invalid ticket type!
