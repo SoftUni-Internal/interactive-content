@@ -17,7 +17,7 @@ function hello() {
 
 Scrieți un program JavaScript, care:
 
-Imprimă `Hello JavaScript` pe consolă.
+Imprimă 'Hello JavaScript' pe consolă.
 
 [/task-description]
 [code-io /]

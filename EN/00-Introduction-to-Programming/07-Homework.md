@@ -19,7 +19,7 @@ function hello() {
 
 Write a JavaScript program, which:
 
-Prints `Hello JavaScript` on the console.
+Prints 'Hello JavaScript' on the console.
 
 [/task-description]
 [code-io /]
@@ -79,7 +79,7 @@ function nameAndExpression() {
 ```
 [/code-editor]
 [task-description]
-Write a program to print `Catlyn` on the first line and calculate and print the result of the expression `5 + 3` on the second line
+Write a program to print 'Catlyn' on the first line and calculate and print the result of the expression `5 + 3` on the second line
 [/task-description]
 [code-io /]
 [tests]
