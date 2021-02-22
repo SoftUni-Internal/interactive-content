@@ -23,7 +23,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți o funcție care obține un număr întreg și calculează aria unui pătrat cu latura `a`.
+Creați un program care obține un număr întreg și calculează aria unui pătrat cu latura **a**.
 
 - Obțineți un număr în argumentul funcției
 
@@ -105,7 +105,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Scrieți un program pentru a converti de la USD la EUR:
+Creați un program pentru a converti de la USD la EUR:
 
 * Citiți un **număr cu virgulă mobilă**: **dolari** care urmează să fie convertiți
 
@@ -181,14 +181,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Scrieți o funcție care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
+Creați un program care obține un **unghi** în [radiane](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Utilizați formula: 
 
-- `grade = radiane * 180 / π` 
+- **grade = radiane * 180 / π**
 
-Numărul **π** în programele JavaScript poate fi accesat prun `Math.PI`. 
-Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind `toFixed(0)`.
+Numărul **π** în programele JavaScript poate fi accesat prun **Math.PI**. 
+Rotunjiți rezultatul la cel mai apropiat număr întreg, folosind **toFixed(0)**.
 
 
 ## Exemplu
@@ -267,7 +267,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Scrieți un program care covertează zilele în minute:
+Creați un program care covertează zilele în minute:
 
 * Citiți un număr **întreg** (**zilele** care trebuie să fie convertite)
 
@@ -343,7 +343,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program pentru a calcula aria și perimetrul unui **cerc**:
+Creați un program pentru a calcula aria și perimetrul unui **cerc**:
 
 * Citiți numărul în virgulă mobilă: **raza** cercului
 
@@ -425,7 +425,7 @@ function adapter(input, code) {
 # Descriere
 Peter dorește să amenajeze teritoriul curții sale și de accea el a  yard, așa că a angajat o **companie** care să o facă pentru el.
 
-Scrieți o funcție care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
+Creați un program care **calculează** fondurile necesare pe care Peter va trebui să le **plătească** pentru acest serviciu.
 
 Prețul pe metru pătrat este de **7,61 dolari** cu TVA.
 
@@ -433,14 +433,14 @@ Deoarece curtea lui Peter este destul de **mare**, firma contractantă oferă o 
 
 ## Input
 Funcția primește un argument:
-- Metri pătrați, care vor fi amenajați - un număr real în intervalul `[0.00… 10000.00]`
+- Metri pătrați, care vor fi amenajați - un număr real în intervalul \[0.00… 10000.00\]
 
 ## Output
  Două linii sunt imprimate pe consolă:
 
-- `The final price is: {final price of the service} dollars.`
+- The final price is: \{final price of the service\} dollars.
 
-- `The discount is: {discount} dollars.`
+- The discount is: \{discount\} dollars.
 
 ## Exemplu
 | **Input** | **Output** |
@@ -450,15 +450,15 @@ Funcția primește un argument:
 
 ## Explicații
 Calculăm prețul pentru amenajarea întregi curți:
-- `550 * 7.61 = $4185.5`
+- **550 * 7.61 = $4185.5**
 
 Reducem reducerea din suma totală:
 
-- `0.18 * 4185.5 = $753.39`
+- **0.18 * 4185.5 = $753.39**
 
 Calculăm prețul final al serivicului:
 
-- `4185.5 – 753.39 -> $3432.11`
+- **4185.5 – 753.39 -> $3432.11**
 
 
 | **Input** | **Output** |
