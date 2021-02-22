@@ -12,7 +12,7 @@ function sumEvenNumbers(input){
 [/code-editor]
 [task-description]
 # Description
-Write a program which receives an array of strings, parses them to numbers and sums only the even numbers.
+Write a program that receives an array of strings, parses them to numbers, and sums only the even numbers.
 
 # Example
 | **Input** | **Output** |
@@ -342,7 +342,7 @@ function condense(input){
 [task-description]
 # Description
 
-Write a program which receives **an array of numbers** and condense them by **summing** adjacent couples of elements until a **single number** is obtained.
+Write a program that receives **an array of numbers** and condenses them by **summing** adjacent couples of elements until a **single number** is obtained.
 
 # Example
 
@@ -687,7 +687,7 @@ The second element of the input is the number of rotations you have to perform.
 
 # Output
 
-Print the resulting array elements separated my single space.
+Print the resulting array elements separated by a single space.
 
 | **Input** | **Output** |
 | --- | --- |
@@ -813,6 +813,7 @@ function magicSum(arr, num){
 [/code-adapter]
 [task-description]
 # Description
+
 Write a function, which prints all **unique** pairs in **an array of integers** whose **sum** is **equal** to a given number. 
 
 &nbsp;
