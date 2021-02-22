@@ -17,39 +17,41 @@ public class Main {
 
 You start the game with **100 health and 0 bitcoins**.
 
-You will be given a String, representing the rooms of the dungeon.
+You will be given a **String**, representing the rooms of the dungeon.
 
-Each room is separated with "\|" (vertical bar): room1\|room2\|room3…
+Each room is separated by a "\|" (vertical bar): room1\|room2\|room3…
 
-The rooms themselves contain 2 values. The first value can be:
+The text of each room contains **2 values**. 
+
+The first value can be:
 
 - a potion:
 
-   - You are healed with the amount of the second value
+   - you are healed in the amount of the second value
 
-   - Your health **cannot exceed** your **initial health (100)**
+   - your health **cannot exceed** your **initial health (100)**
 
-   - First print: "{amount} health points restored."
+   - first print: "{amount} health points restored."
 
-   - After that, print your current health: `Current health: {health} hp.`
+   - after that, print your current health: `Current health: {health} hp.`
 
 - a chest:
 
-    - Increase the amount of bitcoins with the amount of the second value
+    - increase the amount of bitcoins with the amount of the second value
 
-    - After that, print out: "You found {amount} bitcoins."
+    - after that, print out: "You found {amount} bitcoins."
 
-- In any other case, you are facing a monster and you are going to fight
+- In any other case, you are facing a monster that you are going to fight
 
-The second value of the room contains the attack of the monster.
+The second value of the room contains the attack points of the monster.
 
 You should remove the value of the monster's attack from your health.
 
-- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an \{monster\}."
+- If you are **still alive** (health \> 0), you have slayed the monster and you should print: "You have slayed a/an \{type of monster\}."
 
 - If you died, print "You died! Killed by {monster}." and your quest is over
 
-Print the best room you have managed to reach: `Best room: {room}`.
+Print the best highest number of a room you have managed to reach: `Best room: {room}`. 
 
 If you managed to go through all of the rooms in the dungeon, print on the next three lines:
 
@@ -61,7 +63,7 @@ Health: {health}"
 
 ### Input \/ Constraints
 
-You will receive a String, representing the rooms of the dungeon, separated with a "\|" (vertical bar): room1\|room2\|room3...".
+You will receive a String, representing the rooms of the dungeon, separated by a "\|" (vertical bar): room1\|room2\|room3...".
 
 ### Output
 
