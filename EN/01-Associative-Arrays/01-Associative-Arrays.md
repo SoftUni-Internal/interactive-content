@@ -91,10 +91,7 @@ for (let key in assocArr) {
 [slide hideTitle]
 # Problem with Solution: Phone Book
 
-[vimeo-video]
-[stream language="EN" videoId="489799126/f74d7e08c7" default /]
-[stream language="RO" videoId="489799126/f74d7e08c7"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-7-solution-phone-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Phone Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Phone-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -292,10 +289,7 @@ for (let [key, value] of Object.entries(assocArr)) {
 [slide hideTitle]
 # Problem with Solution: Meetings
 
-[vimeo-video]
-[stream language="EN" videoId="489799225/6db77ff45a" default /]
-[stream language="RO" videoId="489799225/6db77ff45a"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-11-solution-meetings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Meetings" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Meetings" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -567,10 +561,7 @@ console.log(result);
 [slide hideTitle]
 # Problem with Solution: Address Book
 
-[vimeo-video]
-[stream language="EN" videoId="489799330/4e7e06a7e1" default /]
-[stream language="RO" videoId="489799330/4e7e06a7e1"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-15-solution-adress-book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Address Book" taskId="js-fundamentals-pt2-Associative-Arrays-lab-Address-Book" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

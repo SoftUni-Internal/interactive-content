@@ -187,10 +187,7 @@ for (let values of map.values()) {
 
 # Problem with Solution: Storage
 
-[vimeo-video]
-[stream language="EN" videoId="489798859/c32c318fc8" default /]
-[stream language="RO" videoId="489798859/c32c318fc8"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-28-solution-storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Storage" taskId="js-fundamentals-pt2-Associative-Arrays-Storage" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -348,10 +345,7 @@ for (let kvp of sorted) {
 
 # Problem with Solution: School Grades
 
-[vimeo-video]
-[stream language="EN" videoId="489798897/2d3a116709" default /]
-[stream language="RO" videoId="489798897/2d3a116709"  /]
-[/video-vimeo]
+[video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/02.JS-Fundamentals-Associative-Arrays/EN/02.JS-Fundamentals-Associative-Arrays-29-solution-school-grades-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="School Grades" taskId="js-fundamentals-pt2-Associative-Arrays-School-Grades" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
