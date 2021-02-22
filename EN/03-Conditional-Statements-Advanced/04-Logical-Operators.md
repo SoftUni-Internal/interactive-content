@@ -12,7 +12,7 @@ We can use:
 * Logical **"AND"** (`&&`)
 * Logical **"OR"** (`||`)
 * Logical **negation** (`!`) 
-* **Brackets** (`()`)
+* **Parentheses** (`()`)
 
 # Logical "AND", "OR" and "NOT"
 This is a short example that demonstrates the power of the logical **"AND"**, the logical **"OR"** and the logical **"NOT"**: 
@@ -56,7 +56,7 @@ The following table of truthfulness is applicable:
 | false | true | false |
 | false | false | false |
 
-# How does the `&&` operator work? 
+## How does the `&&` operator work? 
 
 The `&&` operator accepts a couple of Boolean (conditional) statements, which have a true or a false value, and returns one 'bool' statement as a result. 
 
@@ -178,8 +178,8 @@ Create a program that applies a bonus to given points
 
 [/task-description]
 [tests]
-[test]
-[input open]
+[test open]
+[input]
 bonusPoints(4)
 [/input]
 [output]

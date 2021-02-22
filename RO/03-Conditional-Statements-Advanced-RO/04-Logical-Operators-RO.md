@@ -175,8 +175,8 @@ Creați un program care aplică un bonus punctelor date
 
 [/task-description]
 [tests]
-[test]
-[input open]
+[test open]
+[input]
 bonusPoints(4)
 [/input]
 [output]

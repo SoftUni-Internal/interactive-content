@@ -11,34 +11,43 @@ function fruitOrVegetable(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica fructele sau legumele:
+Creați un program pentru a verifica fructele sau legumele:
 
 * Citiți o singură linie de intrare: un articol din legume
 * Fructe: banana, apple, kiwi, cherry, lemon, grapes
 * Legume: cucumber, pepper, carrot, onion
-* Imprimați: `vegetable`, `fruit` sau  `unknown`
+* Imprimați: "**vegetable**", "**fruit**" sau  "**unknown**"
 
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|lemon| fruit |
-|carrot| vegetable |
+|fruitOrVegetable('lemon')| fruit |
+|fruitOrVegetable('carrot')| vegetable |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-lemon
+fruitOrVegetable('lemon')
 [/input]
 [output]
 fruit
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-carrot
+fruitOrVegetable('carrot')
 [/input]
 [output]
 vegetable
@@ -60,13 +69,22 @@ function dayOfWeek(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
+Creați un program pentru a imprima ziua săptămânii ca un cuvânt:
 
-*Citire și număr întreg **n**: **ziua săptămânii** în intervalul `[1..7]`
-*Tipăriți *numele zilei* (ca un cuvânt, în engleză)
-*Imprimați `Error`, dacă numărul nu se află în intervalul dat
+* Citire și număr întreg **n**: **ziua săptămânii** în intervalul \[1..7\]
+* Tipăriți *numele zilei* (ca un cuvânt, în engleză)
+* Imprimați "**Error**", dacă numărul nu se află în intervalul dat
 
 
 # Exemplu
@@ -117,12 +135,21 @@ function vowelOrConsonant(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # # Descriere
-Scrieți un program pentru a verifica o literă dacă este o vocală sau o consoană:
+Creați un program pentru a verifica o literă dacă este o vocală sau o consoană:
 
 *Citiți o **literă** din alfabetul englez
-*Imprimați  `Vowel` sau `Consonant`
+*Imprimați  "**Vowel**" sau "**Consonant**"
 
 
 # Exemplu
@@ -180,8 +207,10 @@ function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -190,7 +219,7 @@ function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
 Calculați semnul produsului de 3 numere:
 
 * Citiți **3 numere în virgulă mobilă** 
-* Imprimați semnul** produsului celor 3 numere introduse: `positive`, `negative` sau `zero`
+* Imprimați semnul produsului celor 3 numere introduse: "**positive**", "**negative**" sau "**zero**"
 
 Încercați să faceți acest lucru **fără a înmulți** cele 3 numere
 
@@ -294,19 +323,21 @@ function sortedNumbers(firstNumber, secondNumber, thirdNumber) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program, care verifică **3 numere sortate**:
+Creați un program, care verifică **3 numere sortate**:
 
 * Citiți 3 numere reale
-* Tipăriți `Ascending` dacă numerele sunt în ordine crescătoare
-* Tipăriți `Descending` dacă numerele sunt în ordine descrescătoare
-* Imprimați `Not sorted` în orice alt caz
+* Tipăriți "**Ascending**" dacă numerele sunt în ordine crescătoare
+* Tipăriți "**Descending**" dacă numerele sunt în ordine descrescătoare
+* Imprimați "**Not sorted**" în orice alt caz
 
 
 # Exemplu
@@ -405,14 +436,16 @@ function vacationExpenses(season, building, days){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (input[0], input[1], Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program, care calculează cheltuielile de vacanță:
+Creați un program, care calculează cheltuielile de vacanță:
 
 * Citiți sezonul, tipul de cazare și  numărul de zile
 * Imprimați **cheltuielile** totale pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
@@ -520,8 +553,10 @@ function cinema(typeOfMovie, rows, seatsPerRow) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (input[0], Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -529,8 +564,8 @@ function cinema(typeOfMovie, rows, seatsPerRow) {
 # Description
 Calculați **prețul** pentru toate biletele pentru un film cinematografic:
 
-*Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-*Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
+* Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
+* Tipăriți **prețul total** pentru toate locurile **formatate** la a doua cifră după punctul zecimal
 
 
   | **Type** | **Price** |
@@ -795,16 +830,18 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), input[2]);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Scrieți un program pentru a aplica un operator pentru două numere date:
+Creați un program pentru a aplica un operator pentru două numere date:
 
-* Citiți doi numere întregi și operatorul matematic de pe consolă. 
+* Citiți doi numere întregi și operatorul matematic de pe consolă
 * Operatorul aritmetic ar putea fi: `+`, `-`, `/`, `%` și `*`
 * IRezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
 
@@ -904,19 +941,21 @@ function atm(balance, withdraw, limit) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program pentru a simula o retragere de numerar de la bancomat
+Creați un program pentru a simula o retragere de numerar de la bancomat
 
 * Citiți: **balance**, **withdraw** și **limit**
-* Imprimați `The withdraw was successful.` Dacă soldul este suficient
-* Imprimați `The daily limit was exceeded.` Dacă limita este depășită
-* Imprimați `Insufficient availability.` dacă soldul nu este sufficient
+* Imprimați "**The withdraw was successful.**" Dacă soldul este suficient
+* Imprimați "**The daily limit was exceeded.**" Dacă limita este depășită
+* Imprimați "**Insufficient availability.**" dacă soldul nu este sufficient
 
 # Exemplu
   | **Intrare** | **Ieșire** |
@@ -1002,13 +1041,17 @@ function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Descriere
 
-Scrieți un program pentru a găsi cel mai mare dintre 5 numere
+Creați un program pentru a găsi cel mai mare dintre 5 numere
 
 * Citiți **5 numere întregi**
 

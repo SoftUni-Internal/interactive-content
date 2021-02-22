@@ -11,26 +11,35 @@ function fruitOrVegetable(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program to check for fruit or vegetable:
+Create a program to check for fruit or vegetable:
 
 * Read a single input line: an item from the greengrocery
 * Fruits: banana, apple, kiwi, cherry, lemon, grapes
 * Vegetables: cucumber, pepper, carrot, onion
-* Print: `vegetable`, `fruit` or `unknown`
+* Print: "**vegetable**", "**fruit**" or  "**unknown**"
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|lemon| fruit |
-|carrot| vegetable |
+|fruitOrVegetable('lemon')| fruit |
+|fruitOrVegetable('carrot')| vegetable |
 
 [/task-description]
 [tests]
 [test]
 [input]
-lemon
+fruitOrVegetable('lemon')
 [/input]
 [output]
 fruit
@@ -38,7 +47,63 @@ fruit
 [/test]
 [test]
 [input]
-carrot
+fruitOrVegetable('carrot')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('banana')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('apple')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('cherry')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('grapes')
+[/input]
+[output]
+fruit
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('onion')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('cucumber')
+[/input]
+[output]
+vegetable
+[/output]
+[/test]
+[test]
+[input]
+fruitOrVegetable('pepper')
 [/input]
 [output]
 vegetable
@@ -60,9 +125,18 @@ function dayOfWeek(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program to print the day of the week as a word: 
+Create a program to print the day of the week as a word: 
 
 * Read and integer **n**: the **day of the week** in range `[1..7]`
 * Print the name of the day (as word, in English) 
@@ -116,12 +190,21 @@ function vowelOrConsonant(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program to check a letter for vowel or consonant:
+Create a program to check a letter for vowel or consonant:
 
 * Read a **letter** from the English alphabet
-* Print either `Vowel` or `Consonant`
+* Print either "**Vowel**" or "**Consonant**"
 
 # Example
   | **Input** | **Output** |
@@ -291,14 +374,23 @@ function sortedNumbers(firstNumber, secondNumber, thirdNumber) {
 }
 ```
 [/code-adapter]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which checks for **sorted 3 numbers**:
+Create a program, which checks for **sorted 3 numbers**:
 
 * Read 3 real numbers
-* Print `Ascending` if the numbers are in ascending order
-* Print `Descending` if the numbers are in descending order
-* Print `Not sorted` in any other case
+* Print "**Ascending**" if the numbers are in ascending order
+* Print "**Descending**" if the numbers are in descending order
+* Print "**Not sorted**" in any other case
 
 # Example
 | **Input** | **Output** |
@@ -396,14 +488,16 @@ function vacationExpenses(season, building, days){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (input[0], input[1], Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which calculates vacation expenses:
+Create a program, which calculates vacation expenses:
 
 * Read a season, an accommodation type, and a count of the days 
 * Print the total **expenses**, based on the price table below, formatted to the **2nd digit** after the decimal point
@@ -783,14 +877,16 @@ function operationswithNumbers(firstNumber, secondNumber, operation) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), input[2]);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program to apply an operator for given two numbers:
+Create a program to apply an operator for given two numbers:
 
 * Read two integers and a math operator from the console 
 * The math operator could be: `+`, `-`, `/`, `%` și `*`
@@ -891,19 +987,30 @@ function atm(balance, withdraw, limit) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program to simulate an ATM withdrawal:
+Create a program to simulate an ATM withdrawal:
 
 * Read: **balance**, **withdraw** and **limit**
-* Print `The withdraw was successful.` if the balance is enough
-* Print `The daily limit was exceeded.` if the limit is exceeded
-* Print `Insufficient availability.` if the balance is not enough
+* Print "**The withdraw was successful.**" if the balance is enough
+* Print "**The daily limit was exceeded.**" if the limit is exceeded
+* Print "**Insufficient availability.**" if the balance is not enough
 
 # Example
   | **Input** | **Output** |
@@ -987,12 +1094,16 @@ function biggestOfFiveNumbers(numOne, numTwo, numThree, numFour, numFive) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program to find the biggest among 5 numbers
+Create a program to find the biggest among 5 numbers
 * Read **5 integers**
 * Print the **largest** number. 
 
