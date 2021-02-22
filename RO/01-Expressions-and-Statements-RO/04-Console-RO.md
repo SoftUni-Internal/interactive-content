@@ -228,7 +228,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Enunț
-Scrieți o funcție care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
+Creați un program care să citească datele de intrare din consolă: numele și apoi imprimați  `Hello, {name}`, unde `{name}` este introdus de utilizator.  
 
 ## Exemplu
 | **Input** | **Output** |
