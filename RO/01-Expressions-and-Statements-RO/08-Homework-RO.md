@@ -13,11 +13,13 @@ function calculateSpeed (input) {
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Descriere
@@ -92,11 +94,13 @@ function currencyConverter (input) {
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Description
@@ -167,11 +171,13 @@ function areaOfTriangle (input) {
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Description
@@ -250,11 +256,13 @@ function daysToMinutes (input) {
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Description
@@ -325,11 +333,13 @@ function circleArea (input) {
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Descriere
@@ -403,11 +413,13 @@ function fourOperations(input){
 ```
 [/code-editor]
 [code-adapter]
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 [task-description]
 # Descriere
