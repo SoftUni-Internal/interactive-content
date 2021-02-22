@@ -32,7 +32,7 @@ console.log("Welcome to coding");
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-5-6-Running-JavaScript-Commands-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Computer programs represent **a sequence of commands** which are written in a certain **programming language**, like: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go or another.
+Computer programs represent **a sequence of commands** which are written in a certain **programming language**, like: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go, or another.
 
 Example of **computer program** in JS: 
 
@@ -42,7 +42,7 @@ let size = 5;
 console.log("Size = " + size);
 console.log("Area = " + size * size);
 ```
-The above program defines a function which holds a sequence of **3 commands** and calls it afterwards: 
+The above program defines a function that holds a sequence of **3 commands** and calls it afterward: 
 
 - Declares and assigns a **variable**: `let size = 5`
 
@@ -58,9 +58,9 @@ Area = 25
 ```
 We **will explain in detail how to write programs in JavaScript**, why we need to define a **function** and then call the function - a bit later. 
 
-For now, let's just say that the **JavaScript programming language** requires all the above code in order to execute a sequence of commands. 
+For now, let's just say that the **JavaScript programming language** requires all the above code to execute a sequence of commands. 
 
-In order to correctly **form our commands**, we should know the **syntax** and the **semantics** of the language which we are working with, in our case – JavaScript.
+To correctly **form our commands**, we should know the **syntax** and the **semantics** of the language which we are working with, in our case – JavaScript.
 
 Therefore, we are going to learn the **principles** of writing computer **code step by step**, with the syntax and logic used in JavaScript. 
 [/slide]
@@ -92,7 +92,7 @@ For example, to arrange a sequence of numbers in an **ascending order**, an algo
 
 One very convenient tool when writing **programming code**, used for the execution of programs and many other operations related to programming, is an **integrated development environment**.
 
-This is a very simple example of an algorithm which finds smallest number in an array.
+This is a very simple example of an algorithm that finds the smallest number in an array.
 
 We will discuss arrays later.
 
@@ -109,7 +109,7 @@ console.log(min)
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-10-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let's look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer, converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
+Let's look at a simple program that takes **an amount of money in U.S. Dollars (USD)** - an integer converts it into **Euro (EUR)** multiplying it by the exchange rate and prints out the obtained result. 
 
 This is a program of 3 consecutive commands: 
 
@@ -129,7 +129,7 @@ convertUsdToEur("5");
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-11-12-Console-Based-JavaScript-Program-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this example, we can import and use a function in our web page.
+In this example, we can import and use a function on our web page.
 
 Using the block of code from the example we are creating a text box as in the slide.
 
@@ -144,7 +144,7 @@ Using the block of code from the example we are creating a text box as in the sl
 
 It is important to insert our `convertUsdToEur()` function in our html script.
 
-Also, we have two text boxes - **Dollars:** and **Euro:**.
+Also, we have two textboxes - **Dollars:** and **Euro:**.
 
 
 

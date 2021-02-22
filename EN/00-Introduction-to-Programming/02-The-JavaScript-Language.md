@@ -6,27 +6,27 @@
 
 [video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-13-14-Programming-Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A programming language is an **artificial language** for issuing commands that we want the computer to **read**, **process** and **execute**. 
+A programming language is an **artificial language** for issuing commands that we want the computer to **read**, **process**, and **execute**. 
 
 Using programming languages, we can write **sequences of commands** (programs), which define what the computer should do. 
 
 Some of the **most popular** programming languages currently are C#, Java, JavaScript, Python, C, C++, PHP, Swift, Go. 
 
-These languages **differ in their philosophy**, syntax, purpose, programming constructions and execution environment. 
+These languages **differ in their philosophy**, syntax, purpose, programming constructions, and execution environment. 
 
 The execution of computer programs can be done with a **compiler** or with an **interpreter**. 
 
 ## Compilers 
 
-The compiler **translates** the **code** from programming language to **machine code**, as for each of the constructions (commands) in the code it chooses a proper, **previously prepared** fragment of machine code and in the meantime it checks the text of the program for errors. 
+The compiler **translates** the **code** from programming language to **machine code**, as for each of the constructions (commands) in the code it chooses a proper, **previously prepared** fragment of machine code, and in the meantime, it checks the text of the program for errors. 
 
-Together, all compiled into machine code fragments represent the program in a way which the microprocessor of the computer can process it. 
+Together, all compiled into machine code fragments represent the program in a way that the microprocessor of the computer can process it. 
 
 ## Interpreters 
 
-The interpreter is `a program for executing programs`. 
+The interpreter is a program for executing programs`. 
 
-It **executes the commands** in the program one after another, as it is able to process not only a single command or a sequence of commands, but also **other language constructions.** 
+It **executes the commands** in the program one after another, as it can process not only a single command or a sequence of commands, but also **other language constructions.** 
 
 [/slide]
 
@@ -67,9 +67,9 @@ A JavaScript program is written in the **form of text**, and the text of the pro
 
 The **interpreter** executes the code **directly line by line**. 
 
-Scripts and interpreted languages, like JavaScript, Python and PHP, **get their name** from the fact that their source code gets **executed step by step by an interpreter.**
+Scripts and interpreted languages, like JavaScript, Python, and PHP, **get their name** from the fact that their source code gets **executed step by step by an interpreter.**
 
-The process of **compiling** the code before its execution is used only in **compiled languages** like C#, Java and C++. 
+The process of **compiling** the code before its execution is used only in **compiled languages** like C#, Java, and C++. 
 
 [image assetsSrc="execution-engine.png" /]
 
