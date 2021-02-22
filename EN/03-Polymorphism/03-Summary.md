@@ -68,7 +68,7 @@ public class Main {
 }
 ```
 
-- Overloading Methods.
+- Overloading Methods
 
 ``` java
 class Calculation {  
@@ -98,7 +98,7 @@ Animal cat = new Animal(); // Compile time error
 Animal cat = new Cat(); // Polymorphism
 ```
 
-- Abstract methods.
+- Abstract methods
 
 ```java
 public abstract class Animal {

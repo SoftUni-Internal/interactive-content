@@ -107,17 +107,17 @@ Especially for the long term projects.
 
 There are few recommendations regarding test names:
 
-- Test names should use business domain terminology.
+- Test names should use business domain terminology
 
-- Test names should be descriptive and readable.
+- Test names should be descriptive and readable
 
-- Our tests should express a specific requirement.
+- Our tests should express a specific requirement
 
-- Some of ours test names could include the name of the tested method or class.
+- Some of ours test names could include the name of the tested method or class
 
-- We must write clean names.
+- We must write clean names
 
-- Do not be afriad to write long names, as long as they need to be to explain the test.
+- Do not be afriad to write long names, as long as they need to be to explain the test
 
 Lets see some examples of **bad** test naming:
 
@@ -140,7 +140,7 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 
 [slide hideTitle]
 
-# Problem: Refactor Tests
+# Problem with Solution: Refactor Tests
 
 ## Description
 Refactor the tests for **Axe** and **Dummy** classes
@@ -151,10 +151,6 @@ Make sure that:
 - You use **assertion messages**
 - There are **no magic numbers**
 - There is **no code duplication** (Do not Repeat Yourself)
-
-[/slide]
-
-[slide hideTitle]
 
 # Solution: Refactor Tests
 

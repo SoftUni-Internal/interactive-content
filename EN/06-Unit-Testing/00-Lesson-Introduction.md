@@ -10,7 +10,7 @@
 - Which are the seven core principles of testing
 
 **2.What is Unit Testing**
-- What is **Unit Testing Framework**
+- **Unit Testing Framework**
 - Different **UTF** in JAVA
 - The 3A Pattern
 

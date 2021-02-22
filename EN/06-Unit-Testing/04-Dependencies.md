@@ -79,7 +79,7 @@ The goal is to **fixate** all **moving parts**, making our code more stable and 
 
 [slide hideTitle]
 
-# Fake implementation vs Mocking objects
+# Fake Implementation vs Mocking Objects
 
 Lets find the difference between **fakes** and **mocking** objects.
 

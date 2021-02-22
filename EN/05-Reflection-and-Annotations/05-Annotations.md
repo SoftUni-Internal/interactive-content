@@ -173,8 +173,8 @@ Annotation[] methodAnot = method.getDeclaredAnnotations();
 [/slide]
 
 [slide hideTitle]
-# Problem: Create Annotation
-[code-task title="Problem: Create Annotation" taskId="b8c27c60-4a50-4b09-9b9e-cfea3b81d211" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Create Annotation
+[code-task title="Problem: Create Annotation" taskId="Java-OOP-Advanced-Reflection-Create-Annotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -200,78 +200,10 @@ public class Testclass {
 ```
 [/slide]
 
-[slide hideTitle]
-# Solution: Create Annotation
-[code-task title="Create Annotation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Create annotation **Subject** with a **String[]** element called **categories**, that: 
-- Should be available at runtime
-- Can be placed only on types
-
-# Example
-```java
-@Subject(categories {"Test", "Annotations"})
-public class Testclass {
-}
-```
-[/slide]
 
 [slide hideTitle]
-# Problem: Coding Tracker
-[code-task title="Coding Tracker" taskId="18d26a01-9dd1-4020-a967-e28a0672ec0c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Create annotation **Author** with a **String** element called **name**, that:
-- Should be available at runtime
-- Can be placed only on methods
-
-Create a class **Tracker** with a method:
-- **public static void printMethodsByAuthor()**
-
-
-# Example
-```java
-@Author (name = "George")
-public static void main(String[] args) {
-    Tracker.print Methods ByAuthor(Tracker.class);
-}
-
-@Author (name "Peter")
-public static void printMethodsByAuthor(Class<?> cl) {...}
-```
-## Output
-```java
-George: main()
-Peter: printMethodsByAuthor()
-```
-[/slide]
-
-[slide hideTitle]
-# Solution: Coding Tracker
-[code-task title="Coding Tracker" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Coding Tracker
+[code-task title="Coding Tracker" taskId="Java-OOP-Advanced-Reflection-Coding-Tracker" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

@@ -46,13 +46,13 @@ To make the things easier we need a **structured** approach that:
 Automated testing contains:
 
 - Unit tests
-  - A **piece of a single logical unit** in our code (method, class, etc.)
+  - a **piece of a single logical unit** in our code (method, class, etc.)
 - Integration tests
-  - A test of a module in our app (payment, registration, etc.)
+  - a test of a module in our app (payment, registration, etc.)
 
 
 - System tests
-  - End-to-End testing of our full system.
+  - end-to-End testing of our full system
 
 
 [image assetsSrc="Unit-Testing-Example(1).png" /]

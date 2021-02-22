@@ -7,11 +7,11 @@ In this lesson, you learned:
 
 - **SOLID** principles make the software:​
 
-    - **Understandable​**
+    - **understandable​**
 
-    - **Flexible​**
+    - **flexible​**
 
-    - **Maintainable**
+    - **maintainable**
 
 - **Single Responsibility** - One unit must do only one job
  

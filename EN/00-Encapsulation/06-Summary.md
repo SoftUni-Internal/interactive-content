@@ -4,9 +4,9 @@
 ## In this lesson you learned:
 
 - **Encapsulation**
-    - Hides implementation
-    - Reduces complexity
-    - Ensures that structural changes remain local
+    - hides implementation
+    - reduces complexity
+    - ensures that structural changes remain local
 
 ```java
   public String getName() {…}

@@ -10,7 +10,7 @@ They contain two main ideas:
 
 - **Encapsulating** knowledge about which classes the system uses
 
-- **Hiding** how instances of these classes are created.
+- **Hiding** how instances of these classes are created
 
 ## Singleton design pattern
 
@@ -142,9 +142,9 @@ We can create an object with a lot of possible configuration options.
 
 Usage of Builder pattern:
 
-- When our construction process must allow different representations for the object that is constructed (highly customizable).
+- When our construction process must allow different representations for the object that is constructed (highly customizable)
 
-- When we want our algorithm for creating objects to be independent of the parts that make up our object and how they are assembled.
+- When we want our algorithm for creating objects to be independent of the parts that make up our object and how they are assembled
 
 Imagine that we want to create a character for our MMORPG game. Let's allow our constructor to create the character for us.
 
