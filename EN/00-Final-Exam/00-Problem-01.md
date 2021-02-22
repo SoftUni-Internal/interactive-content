@@ -6,7 +6,7 @@
 [code-task title="Trip" taskId="js-fundamentals-2-finalExam-Trip" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function trip(input) {
 	// Write your code here
 }
 ```
@@ -16,11 +16,11 @@ function solve(input) {
 
 Some of your friends have decided to go on a rather long trip, however, they are really distracted right now, as they need to prepare for the road.
 
-So, they have asked you to help them organize their trip by creating a program that will process some changes to their initial travel plan.
+So, they have asked you to help them organize their trip by creating a program that will process some changes to their initial travel plan. 
 
 You will be given a string containing the initial list of **travel destinations.**
 
-Afterward, you will receive commands, which represent changes to the travel plan, until you receive the command `Travel`.
+Afterward, you will receive **commands**, which represent changes to the travel plan, until you receive the command `Travel`.
 
 The commands may be:
 
@@ -30,15 +30,15 @@ The commands may be:
 
 * Command `Remove Stop:{start_index}:{end_index}`:
 
-**Remove** the elements of the string from the **start index** to the end index \(inclusive\) if both indices are valid.
+**Remove** the elements of the string from the **start index** to the **end index** (inclusive) if both indices are valid. 
 
 * Command `Switch:{old_string}:{new_string}`: 
 
-If the **old string** is currently present in the travel plan string, **replace all occurrences with the new string.**
+If the **old string** is currently present in the travel plan string, **replace all occurrences with the new string.** 
 
 **Note: After each command, print the current state of the string.**
 
-After receiving the `Travel` command, print the following message:
+After receiving the `Travel` command, print the following message: 
 
 `Ready for a world tour! Planned stops: {string}`
 
@@ -63,7 +63,7 @@ After receiving the `Travel` command, print the following message:
 `Bulgaria:Rome-Greece`
 `Ready for a world tour! Planned stops: Bulgaria:Rome-Greece`
 
-
+ 
 [/task-description]
 [code-io /]
 [tests]

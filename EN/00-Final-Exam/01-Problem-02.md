@@ -5,8 +5,8 @@
 [code-task title="Food Supply" taskId="js-fundamentals-2-finalExam-Food-Supply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
-	// Write your code here
+function soodSupply(input) {
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -14,9 +14,9 @@ function solve(input) {
 
 # Description
 
-On the first line of the input, you will be given a **string**, containing the items that are **currently stored in your fridge.**
+On the first line of the input, you will be given a **string**, containing the items that are **currently stored in your fridge.** 
 
-You must **extract the information about each one of them** and calculate their total calories.
+You must **extract the information about each one of them** and calculate their total calories. 
 
 First, you must **extract the food info.** 
 
@@ -32,11 +32,11 @@ It will always follow the **same pattern** rules:
 
 * The expiration date will always follow the pattern: `{day}/{month}/{year}`  
 
-The **day**, the **month**, and the **year** will consist of two digits.
+**The day**, **the month**, and **the year** will consist of two digits. 
 
 * The calories will be an **integer in the range: 0-10000**
 
-Calculate **the total calories of all food items** from the string and then determine how many days you could last with this amount, **assuming that you consume 2000 kcal per day.**
+Calculate **the total calories of all food items** from the string, and then determine how many days you could last with this amount, **assuming that you consume 2000 kcal per day.** 
 
 ## Input
 
@@ -44,7 +44,7 @@ Calculate **the total calories of all food items** from the string and then dete
 
 ## Output
 
-- On the first output line, print the number of days that this food supply would last before you have to go to the store for more:
+- On the first output line, print the number of days that this food supply would last before you have to go to the store for more: 
 
 `You have enough food for {days} days!`
 
@@ -57,7 +57,7 @@ Calculate **the total calories of all food items** from the string and then dete
 
 # Examples
 
-## Example 1
+## First Example
 
 ### Input
 
@@ -72,18 +72,19 @@ Item: Carrots, Best before: 06\/08\/20, Nutrition: 500
 
 ### Comments
 
-We have three matches in total: 
+We have three matches in total: 
 `#Bread#19/03/21#4000#`: bread
 `|Apples|08/10/20|200|`: apples
 `|Carrots|06/08/20|500|`: carrots
 
-The sum of their calories is 4700. 
+The sum of their calories is 4700.
 
-Since you need 2000kcal a day, you divide `4700/2000`, which means that this food will last for 2 days. 
+Since you need 2000kcal a day, you divide 4700/2000, which means that this food will last for 2 days.
 
-We print each item.
+We print each item. 
 
-## Example 2
+
+## Second Example
 
 ### Input
 
@@ -105,7 +106,7 @@ We have three matches:
 
 The total calories are `8500 + 9000 + 2000 = 19500`, which means you have food for a total of 9 days.
 
-## Example 3
+## Third Example
 
 ### Input
 
