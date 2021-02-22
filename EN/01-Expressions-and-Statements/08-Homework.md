@@ -23,7 +23,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program that gets an integer and calculates the area of a square with the side `a`. 
+Create a program that gets an integer and calculates the area of a square with the side **a**. 
 - you get a number in the argument of the function 
 - multiply it yourself and 
 - print the result in the console
@@ -174,10 +174,10 @@ function adapter(input, code) {
 Create a program that gets an **angle** in [radians](https://en.wikipedia.org/wiki/Radian) and converts it to [degrees](https://en.wikipedia.org/wiki/Degree_(angle)). 
 
 Use the formula: 
-- `degrees = radians * 180 / π` 
+- **degrees = radians * 180 / π** 
 
-The number of **π** in JavaScript programs is available through `Math.PI`. 
-Round the result to the nearest integer using `toFixed(0)`.
+The number of **π** in JavaScript programs is available through **Math.PI**. 
+Round the result to the nearest integer using **toFixed(0)**.
 
 
 ## Example
@@ -430,15 +430,15 @@ The function receives one argument:
 ## Explanations
 We calculate the price for landscaping the whole yard:
 
-- `550 * 7.61 = $4185.5`
+- **550 * 7.61 = $4185.5**
 
 We deduct the discount from the total amount:
 
-- `0.18 * 4185.5 = $753.39`
+- **0.18 * 4185.5 = $753.39**
 
 We calculate the final price of the service:
 
-- `4185.5 – 753.39 -> $3432.11`
+- **4185.5 – 753.39 -> $3432.11**
 
 
 | **Input** | **Output** |
