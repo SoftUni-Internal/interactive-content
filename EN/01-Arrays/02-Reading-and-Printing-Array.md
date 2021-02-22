@@ -63,7 +63,6 @@ int[] arr = Arrays
   .mapToInt(Integer::parseInt)  
   .toArray();                  
 ```
-[/slide]
 
 We are first reading the input from the console as a string using `scanner.nextLine()`. 
 
@@ -72,6 +71,9 @@ Then we split the input by space using `split(" ")`.
 We continue by parsing each string to integer values with `mapToInt(Integer::parseInt)`.
 
 Finally, we convert the result to an array.
+
+[/slide]
+
 
 [slide hideTitle]
 # Printing Arrays
