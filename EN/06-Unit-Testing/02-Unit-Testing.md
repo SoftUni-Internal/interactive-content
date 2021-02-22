@@ -4,7 +4,6 @@
 
 # What is Unit-Testing?
 
-Lets continue with Unit-Testing.
 
 Unit-Testing means that we test smaller **pieces/units** of our application.
 
@@ -16,7 +15,7 @@ Manual testing:
 
 - Our Manual testing methods cannot **cover** all of our code
 
-- Menual testing methods are not as easy as they should be
+- Manual testing methods are not as easy as they should be
 
 Here is an example: 
 
