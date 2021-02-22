@@ -31,7 +31,7 @@ The first value can be:
 
    - your health **cannot exceed** your **initial health (100)**
 
-   - first print: "{amount} health points restored."
+   - first print: "\{amount\} health points restored."
 
    - after that, print your current health: `Current health: {health} hp.`
 
@@ -39,7 +39,7 @@ The first value can be:
 
     - increase the amount of bitcoins with the amount of the second value
 
-    - after that, print out: "You found {amount} bitcoins."
+    - after that, print out: "You found \{amount\} bitcoins."
 
 - In any other case, you are facing a monster that you are going to fight
 
