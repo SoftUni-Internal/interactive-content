@@ -16,8 +16,12 @@
 
 -  A look at class inheritance and prototype inheritance
 
-**3. Prototype Chain**
+**3. Prototype Property**
 
--  What the Prototype Chain is
+-  Prototype property
+
+- \_\_proto\_\_
+
+- Prototype chaining
 
 [/slide]

@@ -2,41 +2,6 @@
 
 [slide hideTitle]
 
-# Object Create
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-we can use `object.create()`, when we want to **extend** an object. 
-
-It uses an **existing** object **prototype** to **delegate** its features to a **new object**.
-
-Here is an example:
-
-```js live
-   const Dog = {
-      name: 'Sparky',
-      printInfo: function () {
-         console.log(`My name is ${this.name}. My breed is ${this.breed}`);
-      },
-   };
-   const MyDog = Object.create(Dog);
-   MyDog.name = 'Max';
-   MyDog.breed = 'shepherd';
-   MyDog.printInfo();
-```
-
-In this example, we declare an object called **Dog** with property **name** and a `printInfo()` method. 
-
-After, we created the new **MyDog** object with `Object.create()`, using the **Dog** object as a prototype. 
-
-We set the **name** property of **MyDog** and, we add a new property called **breed**, which is not present in the **dog** object.
-
-The result will be printed in the console.
-
-[/slide]
-
-[slide hideTitle]
-
 # What is Prototype
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-19-20-what-is-a-prototype-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -47,7 +12,7 @@ It used for implementing **prototype-based inheritance** and **shared properties
 
 All methods and properties will be inherited by reference in the **prototype-based inheritance**. 
 
-They can be used by the **new object**, but they still belong to the prototype they **came from**.
+They can be used by the **new object**, but they still belong to the prototype that they **came from**.
 
 That creates a **link** between the **prototype** and the inherited **object**. 
 
@@ -76,17 +41,17 @@ For example:
    person.nationality('British');
 ```
 
-Here we have a **Person** function and, we add **nationality** to its **prototype** property.
+Here we have a **Person** function and we add **nationality** to its **prototype** property.
 
 [/slide]
 
 [slide hideTitle]
 
-# Prototype Methods
+# Prototype Chain
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-21-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Before **ES6 (ES2015)** all classes were composed manually, through functions. 
+We created classes manually through functions before **ES6 (ES2015)**.
 
 After **ES6**, we have the sugar syntax with classes.
 
@@ -144,7 +109,7 @@ Here is how it will look like:
    console.log(sum);
 ```
 
-We create a class called **Rectangle**, which has **width** and **height** properties.
+We create a class called **Rectangle**, which has a **width** and a **height** property.
 
 The **Rectangle** class also has an `area()` method, which multiplies the **width** and the **height**.
 
@@ -162,11 +127,46 @@ There are two ways to create an object.
 
 The first one is **Literal** creation, and the second is **Constructor** creation.
 
-The **constructor** creation gives us a reference to the **value** of the **prototype property**.
+The **Constructor** creation gives us a reference to the **value** of the **prototype property**.
 
 Also, we get an **internal link** to the `__proto__` property of the object. 
 
-This property points at the set prototype.
+This property points at the **set** prototype.
+
+[/slide]
+
+[slide hideTitle]
+
+# object.create()
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-18-object-create-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+we can use `object.create()` when we want to **extend** an object. 
+
+It uses an **existing** object **prototype** to **delegate** its features to a **new object**.
+
+Here is an example:
+
+```js live
+   const Dog = {
+      name: 'Sparky',
+      printInfo: function () {
+         console.log(`My name is ${this.name}. My breed is ${this.breed}`);
+      },
+   };
+   const MyDog = Object.create(Dog);
+   MyDog.name = 'Max';
+   MyDog.breed = 'shepherd';
+   MyDog.printInfo();
+```
+
+In this example, we declare an object called **Dog** with property **name** and a `printInfo()` method. 
+
+After that, we created the new **MyDog** object with `Object.create()`, using the **Dog** object as a prototype. 
+
+We set the **name** property of **MyDog** and we add a new property called **breed**, which is not present in the **Dog** object.
+
+The result will be printed on the console.
 
 [/slide]
 
@@ -189,9 +189,9 @@ Here is an example of **literal creation**:
    Person.speak();
 ```
 
-We created the **Person** object with property **name** and method `speak()`. 
+We create the **Person** object with a property **name** and a `speak()` method. 
 
-The `speak()` method will print in the console the result from the concatenation.
+The `speak()` method will print the result from the concatenation.
 
 Have a look at the **Constructor creation**:
 
@@ -203,18 +203,18 @@ Have a look at the **Constructor creation**:
       };
    }
 
-   let person = new Person('b1');
+   let person = new Person('John');
 
    console.log(person.speak());
 ```
 
-In this example, we created a function **Person**, in which we set the **name** property and the `speak()` method. 
+In this example, we create a function **Person**, in which we set the **name** property and the `speak()` method. 
 
-The `speak()` method will return the result from the concatenation.
+The `speak()` method will return the result from the string interpolation.
 
-After we created the **Person**, we instantiated it using the **new** keyword.
+Now that we created the **Person** object, we instantiate a new variable using the **new** keyword.
 
-In the end, we printed in the console the result that the **speak()** method returns.
+In the end, we print the result that the `speak()` method returns.
 
 [/slide]
 
@@ -224,15 +224,17 @@ In the end, we printed in the console the result that the **speak()** method ret
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-25-proto-vs-prototype-property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There is a difference between the `__proto__` and the **Prototype Property**. 
+There is a difference between the `__proto__` and the **prototype property**. 
 
-The `__proto__`, is a **accessor** property of the object and **exposes** its **internal prototype**.
+The `__proto__`, is an **accessor** property of the object and **exposes** its **internal prototype**.
 
 We should not use `__proto__` directly in our code because it is **deprecated**.
 
-The **constructor function** sets the **Prototype** of an object, regular object **do not** have the **prototype** property
+The **constructor function** sets the **Prototype** of an object. 
 
-The **prototype property** is a container which stores properties and method that we can inherit.
+Regular objects **do not** have the **prototype** property
+
+The **prototype property** is a container which stores properties and methods that we can inherit.
 
 [/slide]
 
@@ -242,11 +244,9 @@ The **prototype property** is a container which stores properties and method tha
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-26-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To mark properties as **private**, we need to **prefix** them with **hashtag** `#`.
+To mark properties as **private**, we need to **prefix** them with a **hashtag** `#`.
 
-For **getting** private properties we use `object.prototype.getNameOfProperty`. 
-
-When we want to **set** properties it is almost the same, but instead of **get** we write **set**: `object.prototype.setNameOfProperty`
+For **getting** private properties, we use `object.prototype.getNameOfProperty`. 
 
 Here is an example of **prototype.get**:
 
@@ -255,6 +255,8 @@ Here is an example of **prototype.get**:
       return this.#name;
    };
 ```
+
+When we want to **set** properties, it is almost the same, but, instead of **get**, we write **set**: `object.prototype.setNameOfProperty`
 
 And here is an example of **prototype.set**:
 
@@ -268,7 +270,7 @@ And here is an example of **prototype.set**:
 
 [slide hideTitle]
 
-# Example of Prototype Chain
+# Prototype Chain Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Advanced/06.JS-Advanced-Prototypes-and-Inheritance/EN/interactive-javascript-advanced-prototypes-and-inheritance-27-prototype-chain-simple-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -287,13 +289,13 @@ And here is an example of **prototype.set**:
    console.log(makeSentence.concatenate("!"));
 ```
 
-We create a function **MakeSentence** with a parameter **greet**. 
+We create a function called **MakeSentence** with a parameter **greet**.
 
-Then we attach to the **MakeSentence** a property **name** and a method **concatenate**. 
+Then, we attach a property **name** and a method **concatenate** to the **MakeSentence** function. 
 
-Which concatenates the **greet** the **name** and the **punctuation** properties.
+The **concatenate** method concatenates the **greet**, the **name** and the **punctuation** properties.
 
-After that, we instantiate **MakeSentence** and print the **concatenate** method result in the console.
+After that, we instantiate **MakeSentence** and print the **concatenate** method result on the console.
 
 [/slide]
 
