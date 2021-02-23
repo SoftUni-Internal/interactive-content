@@ -10,6 +10,10 @@ The event loop in JavaScript is **where all the incoming events are processed**.
 
 It queues event handlers in the **Event queue** and executes them in the **Call stack**, producing JS code.
 
+The event loop has one simple job — to monitor the **Call stack** and the **Callback queue**. 
+
+If the Call stack is empty, the Event Loop will take the **first event** from the queue and will push it to the Call Stack, which will run it.
+
 [/slide]
 
 [slide hideTitle]
