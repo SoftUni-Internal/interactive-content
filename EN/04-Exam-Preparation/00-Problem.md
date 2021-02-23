@@ -24,7 +24,6 @@ First, you will receive a string. After that until the command "**Done**" is giv
 The commands will be the following:
 
 - **TakeOdd**
-<<<<<<< HEAD
   * takes only the characters at **odd indices** and **concatenates** them together to
 obtain the **new raw password** and then **prints** it.
 - Cut \{index\} \{length\}
@@ -33,16 +32,8 @@ obtain the **new raw password** and then **prints** it.
 - Substitute \{substring\} \{substitute\}
   * if the raw password contains the given substring, replaces all of its 
 occurrences with the substitute text given and prints the result.
-  * if it doesn’t, prints "**Nothing to replace!**"
-=======
-  * Takes only the characters at the **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
-- Cut {index} {length}
-  * Gets the substring with the **given length**, starting from the **given index** from the password and removes the first occurrence of it, then prints the password to the console
-  * The given index and length will **always be valid**
-- Substitute {substring} {substitute}
-  * If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
-  * If it does not, prints "**Nothing to replace!**"
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
+  * if it does not, prints "**Nothing to replace!**"
+
 
   ## Input
 
@@ -72,11 +63,8 @@ occurrences with the substitute text given and prints the result.
 
 `TakeOdd` 
 
-<<<<<<< HEAD
 - `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` -> `icecream::hot::summer`
-=======
-- `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr -> icecream::hot::summer`
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
+
 
 - We only take the chars at odd indices 1, 3, 5 etc.
 

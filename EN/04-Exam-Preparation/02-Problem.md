@@ -27,23 +27,13 @@ You will be **receiving lines with commands separated by** "->" **until you rece
 
 There are **three possible commands**:
 - "Add->\{username\}" 
-<<<<<<< HEAD
     - **check if the username exists and if it does print** - "\{username\} is already registered"
-    - if it doesn't exist, then add the user to the collection of users
+    - if it does not exist, then add the user to the collection of users
 - "Send->\{username\}->\{Email\}" 
     - add the \{Email\} to the \{username\}'s collection of sent emails
 - "Delete->\{username\}"
     - delete the given user, if he exists
-    - if the user doesn’t exist, print "\{username\} not found!"
-=======
-    - **Check if the username exists and if it does print** - "\{username\} is already registered"
-    - If it does not exist, then add the user to the collection of users
-- "Send->\{username\}->\{Email\}" 
-    - Add the \{Email\} to the \{username\}'s collection of sent emails
-- "Delete->\{username\}"
-    - Delete the given user, if he exists
-    - If the user does not exist, print "\{username\} not found!"
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
+    - if the user does not exist, print "\{username\} not found!"
 
 In the end, you have to **print the count of users**, **each user with their emails**. 
 
@@ -61,17 +51,13 @@ Users count: \{count\}
 
 ### Input
 - You will be receiving lines until you receive the "Statistics" command
-<<<<<<< HEAD
-- The commands will be in the format described above.
-
-### Output
-- Print the collection in the format described above after the "Statistics" command
-=======
 - The commands will be in the format described above
 
 ### Output
+- Print the collection in the format described above after the "Statistics" command
+
+### Output
 Print the collection in the format described above after receiving the "Statistics" command.
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
 ### Example
 | **Input** | **Output** |
@@ -85,17 +71,11 @@ Print the collection in the format described above after receiving the "Statisti
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
-<<<<<<< HEAD
 ### Comments
 - First we receive our users
 - Since they are not already in our collection, we add them
 - Then they start sending emails and in the end we print the output in the described format
-=======
-### Comment
-- First we receive our users
-- Since they are not already in our collection, we add them.
-- Then they start sending emails and in the end we print the output in the described format.
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
+
 
 ### Example
 | **Input** | **Output** |

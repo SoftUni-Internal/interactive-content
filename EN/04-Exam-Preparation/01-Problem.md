@@ -18,11 +18,8 @@ public class Main {
 ## Description
 Create a program, that checks **if registrations are valid**.
 
-<<<<<<< HEAD
-A registration consists of a **username and a password**.
-=======
 Each registration consists of a **Username and a Password**.
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
+
 
 On the **first line**, you will get a **number that indicates how many inputs** you will receive on the **next** lines.
 
@@ -50,13 +47,9 @@ In the end **print the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
 ### Input
-<<<<<<< HEAD
-- On the first line - n - the count of inputs
-- On the next n lines - input that you have to check if it has a valid registration
-=======
+
 - On the first line, you will receive **n** - the count of inputs.
 - On the next **n** lines - input that you have to check for valid registrations
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
 ### Output
 - Print all results from each input, each on a new line
@@ -74,11 +67,7 @@ In the end **print the count of successful registrations**:
 ### Comment
 - We have 3 input lines to check
 - The first one follows the rules and is valid
-<<<<<<< HEAD
 - The second one doesn't because the password doesn’t end with a digit
-=======
-- The second one doesn't because the password doesn't end with a digit
->>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 - The third one is not valid because the password is too short
 
 ### Example
