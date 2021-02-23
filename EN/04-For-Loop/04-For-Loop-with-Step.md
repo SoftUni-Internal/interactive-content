@@ -1,15 +1,16 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::For-Loop-With-Step"
 
 [slide hideTitle]
+
 # For Loop with a Step
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-18-19-loops-with-a-step-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section, we will get more detail on a particular and very important part of the "**for**" loop, **namely the step.** 
+In this section, we will get more detail on a particular and very important part of the "**for**" loop, **namely the step.**
 
-**The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable. 
+**The step** is that **part** of the for loop construction that indicates how to increase or decrease the value of its leading variable.
 
-It is declared last in the skeleton of the for a loop. 
+It is declared last in the skeleton of the for a loop.
 
 Very often, it has a size of 1, in this case, instead of writing `i += 1` or `i -= 1`, we can use the `i++` or `i--` operators.
 
@@ -21,7 +22,7 @@ for (let i = 0; i < 10; i++) {
 
 If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + step size operator.
 
- With step of 2, the loop would look like this:
+With step of 2, the loop would look like this:
 
 ```js live
 for (let i = 0; i < 10; i += 2) {
@@ -29,7 +30,7 @@ for (let i = 0; i < 10; i += 2) {
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` + step size. 
+We might want to have a **decreasing step** - `i -=` + step size.
 
 In this case, we should pay attention to the end condition to **avoid** an **infinite loop**.
 
@@ -41,40 +42,55 @@ for (let i = 10; i >= 1; i--) {
 
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem With Solution: Number Ending with 7
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-21-solution-numbers-ending-in-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
 [code-task title="Number Ending with 7" taskId="pb-js-for-loop-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function numbersEndingWith7(n) {
    // Write your code here
 }
 ```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
 
-* Reads a number **n**
-* Prints all numbers from **7 to n**, **ending with 7**
+[/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
+[task-description]
+
+# Description
+
+Create a program, which:
+
+- Reads a number **n**
+- Prints all numbers from **7 to n**, **ending with 7**
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|30| 7 |
-||17 |
-||27 |
+
+| **Input**              | **Output** |
+| ---------------------- | ---------- |
+| numbersEndingWith7(30) | 7          |
+|                        | 17         |
+|                        | 27         |
 
 [/task-description]
 [tests]
 [test]
 [input]
-40
+numbersEndingWith7(40)
 [/input]
 [output]
 7
@@ -85,7 +101,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-35
+numbersEndingWith7(35)
 [/input]
 [output]
 7
@@ -95,7 +111,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-80
+numbersEndingWith7(80)
 [/input]
 [output]
 7
@@ -110,7 +126,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-130
+numbersEndingWith7(130)
 [/input]
 [output]
 7
@@ -134,42 +150,57 @@ Write a program, which:
 
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem with Solution: Exam Countdown
 
 [video src="https://videos.softuni.org/hls/javascript-basics/04.For-Loop/EN/JS-basics-for-23-solution-exam-countdown-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
 [code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function examCountdown(days) {
    // Write your code here
 }
 ```
-[/code-editor]
-[task-description]
-# Description
-Write a program, which:
 
-* Reads an integer - count of **days before an exam**
-* After each day passes, it prints: `{numberOfDaysLeft} days before the exam`
-* At the end prints: `The exam has come.`
+[/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
+[task-description]
+
+# Description
+
+Create a program, which:
+
+- Reads an integer - count of **days before an exam**
+- After each day passes, it prints: \{numberOfDaysLeft\} days before the exam
+- At the end prints: **The exam has come.**
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|3| 3 days before the exam |
-||2 days before the exam |
-||1 days before the exam |
-||The exam has come. |
+
+| **Input**        | **Output**             |
+| ---------------- | ---------------------- |
+| examCountdown(3) | 3 days before the exam |
+|                  | 2 days before the exam |
+|                  | 1 days before the exam |
+|                  | The exam has come.     |
 
 [/task-description]
 [tests]
 [test]
 [input]
-4
+examCountdown(4)
 [/input]
 [output]
 4 days before the exam
@@ -181,7 +212,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-5
+examCountdown(5)
 [/input]
 [output]
 5 days before the exam
@@ -194,7 +225,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-6
+examCountdown(6)
 [/input]
 [output]
 6 days before the exam
@@ -208,7 +239,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-7
+examCountdown(7)
 [/input]
 [output]
 7 days before the exam
@@ -226,4 +257,3 @@ The exam has come.
 [/code-task]
 
 [/slide]
-
