@@ -697,7 +697,7 @@ Total: 50550.00
 [/test]
 [test]
 [input]
-accountBalance(['5.51', '345345', '69.42', 'END', 'END'])
+accountBalance(['5.51', '345345', '69.42', '100', 'END', 'END'])
 [/input]
 [output]
 Increase: 5.51
