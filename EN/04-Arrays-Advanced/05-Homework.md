@@ -5,11 +5,20 @@
 [code-task title="List of Products" taskId="js-fundamentals-1-Arrays-Advanced-List-of-Products" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function listProducts(input){
+function listProducts(array1, array2){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
