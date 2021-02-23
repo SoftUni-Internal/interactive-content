@@ -320,7 +320,7 @@ Vowel
 [code-task title="Product of 3 Numbers" taskId="pb-js-Conditions-Advanced-Product-of-3-numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
+function productOfThreeNumbers(input) {
     // Scrieți codul dvs. aici
 }
 ```
@@ -338,7 +338,7 @@ function adapter(input, code) {
 # Descriere
 Calculați semnul produsului de 3 numere:
 
-* Citiți **3 numere în virgulă mobilă** 
+* Citiți **3 numere în virgulă mobilă** ca matrice
 * Imprimați semnul produsului celor 3 numere introduse: "**positive**", "**negative**" sau "**zero**"
 
 Încercați să faceți acest lucru **fără a înmulți** cele 3 numere
@@ -346,14 +346,14 @@ Calculați semnul produsului de 3 numere:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|productOfThreeNumbers(2, 3, -1)| negative |
+|productOfThreeNumbers([2, 3, -1])| negative |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-productOfThreeNumbers(2, 3, -1)
+productOfThreeNumbers([2, 3, -1])
 [/input]
 [output]
 negative
@@ -361,7 +361,7 @@ negative
 [/test]
 [test]
 [input]
-productOfThreeNumbers(-3, -4, 5)
+productOfThreeNumbers([-3, -4, 5])
 [/input]
 [output]
 positive
@@ -369,7 +369,7 @@ positive
 [/test]
 [test]
 [input]
-productOfThreeNumbers(2, -9, 5)
+productOfThreeNumbers([2, -9, 5])
 [/input]
 [output]
 negative
@@ -377,7 +377,7 @@ negative
 [/test]
 [test]
 [input]
-productOfThreeNumbers(4, 0, -10)
+productOfThreeNumbers([4, 0, -10])
 [/input]
 [output]
 zero
@@ -385,7 +385,7 @@ zero
 [/test]
 [test]
 [input]
-productOfThreeNumbers(5, 2, 2)
+productOfThreeNumbers([5, 2, 2])
 [/input]
 [output]
 positive
@@ -393,7 +393,7 @@ positive
 [/test]
 [test]
 [input]
-productOfThreeNumbers(-5, 2, -2)
+productOfThreeNumbers([-5, 2, -2])
 [/input]
 [output]
 positive
@@ -401,7 +401,7 @@ positive
 [/test]
 [test]
 [input]
-productOfThreeNumbers(1, 2, 0)
+productOfThreeNumbers([1, 2, 0])
 [/input]
 [output]
 zero
