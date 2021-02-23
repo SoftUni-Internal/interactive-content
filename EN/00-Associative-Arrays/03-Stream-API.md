@@ -1,28 +1,50 @@
-[slide]
+[slide hideTitle]
 # Stream API
 
-Java Stream API provides a **functional approach to process collections of objects/elements**. It allows to **reduce the code**, to create **more readable programs**, and to **improve productivity**. It also provides **easier coding of parallel operations**. 
+Java Stream API provides a **functional approach to process collections of objects/elements**. 
 
-A Java Stream is a component that is capable of **internal iteration of its elements**, this means it can **iterate its elements itself**. A stream is a **sequence of objects** that supports **various methods**. The stream does **not change the original data structure**, it provides result. 
+It allows to **reduce the code**, to create **more readable programs**, and to **improve productivity**. 
+
+It also provides **easier coding of parallel operations**. 
+
+A Java Stream is a component that is capable of **internal iteration of its elements**, this means it can **iterate its elements itself**. 
+
+A stream is a **sequence of objects** that supports **various methods**. 
+
+The stream does **not change the original data structure**, it provides result. 
 
 Stream pipeline is a **chain of stream source**, **intermediate operations**, and a **terminal operation**. 
 
-The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**, for example `count()` `max()` `min()` `sum()`, but these operations work according to the predefined implementation. 
+The API has many **terminal operations** that aggregate a stream to a **type** or a **primitive**:  
 
-It is called **terminal operation** because in order to get the minimum value, for example, have to **traverse the values inside the stream** and get the result. After getting the min value it is **not possible to convert that back into the stream** because the minimum value is just a value. 
+- `count()` 
+
+- `max()` 
+
+- `min()` 
+
+- `sum()` 
+
+These operations work according to the predefined implementation. 
+
+It is called **terminal operation** because in order to get the minimum value, for example, have to **traverse the values inside the stream** and get the result. 
+
+After getting the min value it is **not possible to convert that back into the stream** because the minimum value is just a value. 
 
 Most of the methods use lambda expressions on the stream.
-
 
 [/slide]
 
 
-[slide]
-# Processing Arrays with Stream API
+[slide hideTitle]
+# Processing Arrays with the Stream API
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-19-20-processing-arrays-with-stream-api-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using **one line operations** on arrays instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
-- `min()` - finds and returns the **smallest** element in a collection:
+- `min()` - Finds and returns the **smallest** element in a collection
+
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
@@ -31,7 +53,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-It is possible to set an alternative value to be returned instead of the minimum value, using `orElse()`.
+It is possible to set an alternative return value instead of the minimum value, using `orElse()`.
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
@@ -51,7 +73,8 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-- `max()` - finds and returns the **largest** element in a collection
+- `max()` - Finds and returns the **largest** element in a collection
+
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int max = Arrays.stream(numbers)
@@ -60,14 +83,16 @@ int max = Arrays.stream(numbers)
 System.out.println(max);
 ```
 
-- `sum()` - finds and returns **the sum** of all elements in a collection
+- `sum()` - Finds and returns **the sum** of all elements in a collection
+
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int sum = Arrays.stream(numbers).sum();
 System.out.println(sum);
 ```
 
-- `average()` - finds and returns **the average** of all elements
+- `average()` - Finds and returns **the average** of all elements
+
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 double average = Arrays.stream(numbers)
@@ -76,50 +101,17 @@ double average = Arrays.stream(numbers)
 System.out.println(average);
 ```
 
-- `toArray()` - converting collection to an array
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-- `map()` - manipulating elements in a collection
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .toArray();
-```
-
-```java live
-String[] words = {"abc", "def", "geh", "yyy"};
-words = Arrays.stream(words)
-            .map(w -> w + "yyy")
-            .toArray(String[]::new);
-for (String word : words) {
-    System.out.println(word);
-}
-```
-
-`filter()` - select elements with given condition
-```java
-int[] numbers = Arrays.stream(scanner.nextLine()
-            .split(" "))
-            .mapToInt(e -> Integer.parseInt(e))
-            .filter(n -> n > 0)
-            .toArray();
-```
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Processing Collections with Stream API
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using one line operations on collections like lists, maps, instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
+- `min()` - Finds and returns the **smallest** element in a collection:
 
-- `min()` - finds and returns the **smallest** element in a collection:
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -141,7 +133,8 @@ int min = numbers.stream()
 System.out.println(min);
 ```
 
-- `max()` - finds and returns the **largest** element in a collection
+- `max()` - Finds and returns the **largest** element in a collection
+
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -163,7 +156,8 @@ int max = numbers.stream()
 System.out.println(max);
 ```
 
-- `sum()` - finds and returns **the sum** of all elements in a collection
+- `sum()` - Finds and returns **the sum** of all elements in a collection
+
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -174,7 +168,8 @@ int sum = numbers.stream()
 System.out.println(sum);
 ```
 
-- `average()` - finds and returns **the average** of all elements
+- `average()` - Finds and returns **the average** of all elements
+
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -186,7 +181,54 @@ double average = numbers.stream()
 System.out.println(average);
 ```
 
-- `toList()` - converting collection to a list
+[/slide]
+
+[slide hideTitle]
+
+# Manipulating Collections
+
+Collections can be **modified** by using the `map()` method.
+
+Take a look at the following example:
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+```java live
+String[] words = {"abc", "def", "geh", "yyy"};
+words = Arrays.stream(words)
+            .map(w -> w + "yyy")
+            .toArray(String[]::new);
+for (String word : words) {
+    System.out.println(word);
+}
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Converting Collections
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+There are **two** ways to convert collections in Java:
+
+- `toArray()` - Converts a collection into an **array**
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .toArray();
+```
+
+- `toList()` - Converts a collection into a **list**
+
 ```java
 List<Integer> numbers = Arrays.stream(scanner.nextLine()
             .split(" "))
@@ -196,9 +238,29 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [/slide]
 
+[slide hideTitle]
 
-[slide]
-# Problem: Word Filter
+# Filtering Collections
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The `filter()` method goes through a collection and gets only the elements that match a certain criteria:
+
+```java
+int[] numbers = Arrays.stream(scanner.nextLine()
+            .split(" "))
+            .mapToInt(e -> Integer.parseInt(e))
+            .filter(n -> n > 0)
+            .toArray();
+```
+
+[/slide]
+
+[slide hideTitle]
+# Problem with Solution: Word Filter
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-28-problem-and-solution-word-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Word Filter" taskId="Java-Fundamentals_part-Two-ASsociative-Arrays-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -338,152 +400,15 @@ sell
 [/code-task]
 [/slide]
 
-[slide]
-# Solution: Word Filter
-[code-task title="Word Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class WordFilter {
-    public static void main(String[] args) {
-    // Write your solution here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Read an array of **strings**, take only words which length is **even**.
-
-### Input / Constraints
-
-Read an array of strings.
-
-### Output
-
-Print each word on a new line.
-
-Filter those whose length is even.
-
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| kiwi orange banana apple | kiwi |
-|  | orange |
-|  | banana |
-
-| **Input** | **Output** |
-| --- | --- |
-| pizza cake pasta chips | cake |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-kiwi orange banana apple
-[/input]
-[output]
-kiwi
-orange
-banana
-[/output]
-[/test]
-[test open]
-[input]
-pizza cake pasta chips
-[/input]
-[output]
-cake
-[/output]
-[/test]
-[test]
-[input]
-deal guide counter seat hobby
-[/input]
-[output]
-deal
-seat
-[/output]
-[/test]
-[test]
-[input]
-deal guide counter seat hobby acute switch car widen criticism painter unfortunate pause boat
-[/input]
-[output]
-deal
-seat
-switch
-boat
-[/output]
-[/test]
-[test]
-[input]
-photograph architect literature wardrobe hobby locate upset explosion extension favour gravel crutch misery resort leaf
-[/input]
-[output]
-photograph
-literature
-wardrobe
-locate
-favour
-gravel
-crutch
-misery
-resort
-leaf
-[/output]
-[/test]
-[test]
-[input]
-adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint
-[/input]
-[output]
-strike
-graduate
-critical
-rest
-ignorant
-contract
-[/output]
-[/test]
-[test]
-[input]
-adult visible strike dialect graduate issue bracket critical rest ignorant witness contract paint guerrilla jam diagram anticipation muggy rhetoric invite parade manage aid bank smooth native snub image injury real east storm sell
-[/input]
-[output]
-strike
-graduate
-critical
-rest
-ignorant
-contract
-anticipation
-rhetoric
-invite
-parade
-manage
-bank
-smooth
-native
-snub
-injury
-real
-east
-sell
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide]
+[slide hideTitle]
 # Ordering / Sorting Collections
 
-- Sorting in ascending (Natural) order
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-30-sorting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+There are **two** ways to sort collections:
+
+- Sorting in **ascending** (**Natural**) order:
+
 ```java live no-template
 import java.util.*;
 import java.util.stream.Collectors;
@@ -506,7 +431,8 @@ public class Main {
 }
 ```
 
-- Sorting in descending order
+- Sorting in **descending** order:
+
 ```java live  no-template
 import java.util.*;
 import java.util.stream.Collectors;
@@ -529,7 +455,17 @@ public class Main {
 }
 ```
 
-- Sorting by multiple criteria
+[/slide]
+
+[slide hideTitle]
+
+# Sorting Collections by Multiple Criteria
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-31-sorting-collections-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+It is also possible to sort collections by multiple criteria.
+
+Consider the following example:
 
 ```java live
 Map<String, Integer> products = new HashMap<>();
@@ -551,7 +487,17 @@ products.entrySet()
         .forEach(e -> System.out.println(e.getKey() + " " + e.getValue()));
 ```
 
-- Using functional `forEach()`
+[/slide]
+
+[slide hideTitle]
+
+# Using Functional ForEach
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-32-33-using-functional-for-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The `forEach()` method is used to iterate over every pair in a Map.
+
+Take a look at the example below:
 
 ```java live
 Map<String, List<Integer>> courseGrades = new HashMap<>();
@@ -605,8 +551,11 @@ courseGrades.entrySet()
 [/slide]
 
 
-[slide]
-# Problem: Largest 3 Numbers
+[slide hideTitle]
+# Problem with Solution: Largest 3 Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-34-problem-largest-three-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-Part-Two-Associative-Arrays-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -617,118 +566,6 @@ public class Main {
     public static void main(String[] args) {
         // Write your code here
     }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Read a **list of integers** and **print largest 3 of them**.
-
-If there are **less** than 3, print **all** of them.
-
-Order the list using **Stream API**.
-
-### Input / Constraints
-Read a list of integers.
-
-### Output 
-
-Print top 3 numbers with **for** loop.
-
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 10 30 15 20 50 5 | 50 30 20 |
-
-| **Input** | **Output** |
-| --- | --- |
-| 20 30 | 30 20 |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-10 30 15 20 50 5
-[/input]
-[output]
-50 30 20
-[/output]
-[/test]
-[test open]
-[input]
-20 30
-[/input]
-[output]
-30 20
-[/output]
-[/test]
-[test]
-[input]
-3 3 9 5 2 3 3
-[/input]
-[output]
-9 5 3
-[/output]
-[/test]
-[test]
-[input]
-33 88 35 98 43 10 81
-[/input]
-[output]
-98 88 81
-[/output]
-[/test]
-[test]
-[input]
-91 4 7 49 83 51 73 34 45 24
-[/input]
-[output]
-91 83 73
-[/output]
-[/test]
-[test]
-[input]
-59 12
-[/input]
-[output]
-59 12
-[/output]
-[/test]
-[test]
-[input]
-53 3
-[/input]
-[output]
-53 3
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-5
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide]
-# Solution: Largest 3 Numbers
-[code-task title="Largest 3 Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
-
-public class Largest3Numbers {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-// Write your solution here
 }
 ```
 [/code-editor]

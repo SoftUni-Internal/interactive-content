@@ -17,13 +17,14 @@ public class Main {
 [task-description]
 ## Description
 
-Write a password reset program that performs a series of commands upon a predefined string. 
+Write a password reset program that performs a series of commands on a predefined string. 
 
-First, you will receive a string and afterwards, until the command "**Done**" is given, you will be receiving strings with commands split by a single space. 
+First, you will receive a string. After that until the command "**Done**" is given, you will be receiving strings with commands split by a single space. 
 
 The commands will be the following:
 
 - **TakeOdd**
+<<<<<<< HEAD
   * takes only the characters at **odd indices** and **concatenates** them together to
 obtain the **new raw password** and then **prints** it.
 - Cut \{index\} \{length\}
@@ -33,6 +34,15 @@ obtain the **new raw password** and then **prints** it.
   * if the raw password contains the given substring, replaces all of its 
 occurrences with the substitute text given and prints the result.
   * if it doesn’t, prints "**Nothing to replace!**"
+=======
+  * Takes only the characters at the **odd indices** and **concatenates** them together to obtain the **new raw password** and then **prints** it
+- Cut {index} {length}
+  * Gets the substring with the **given length**, starting from the **given index** from the password and removes the first occurrence of it, then prints the password to the console
+  * The given index and length will **always be valid**
+- Substitute {substring} {substitute}
+  * If the raw password contains the given substring, replaces all of its occurrences with the substitute text given and prints the result
+  * If it does not, prints "**Nothing to replace!**"
+>>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
   ## Input
 
@@ -60,27 +70,31 @@ occurrences with the substitute text given and prints the result.
 
 ## Comments
 
-### TakeOdd 
+`TakeOdd` 
 
+<<<<<<< HEAD
 - `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` -> `icecream::hot::summer`
+=======
+- `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr -> icecream::hot::summer`
+>>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
 - We only take the chars at odd indices 1, 3, 5 etc.
 
-### Cut 15  3 -> icecream::hot::summer -> sum
+`Cut 15  3 -> icecream::hot::summer -> sum`
 
 - `icecream::hot::mer`
 
-We cut a substring starting at index 15 with length 3, remove it from the raw password and print it. 
+We cut a substring starting at index 15 with a length of 3, remove it from the raw password and print it. 
 
 Then, on a new line we print the resulting new raw password.
 
-### Substitute :: - -> icecream::hot::summer -> icream-hot-summer
+`Substitute :: - -> icecream::hot::summer -> icream-hot-summer`
 
-- We replace "::" with "-".
+- `We replace "::" with "-"` .
 
-### Substitute | ^ -> Nothing to replace! 
+`Substitute | ^ -> Nothing to replace!` 
 
-- "|" is not found anywhere in the raw password.
+- `"|" is not found anywhere in the raw password.`
 
 - Finally, after receiving the "Done" command, we print the resulting password in the proper format.
 
@@ -92,9 +106,6 @@ Then, on a new line we print the resulting new raw password.
 | `Substitute ! ***` | `Nothing to replace!` |
 | `Substitute ? .!.` | `Your password is: programming***is***fun` |
 | Done | | 
-
-
-
 
 
 [/task-description]

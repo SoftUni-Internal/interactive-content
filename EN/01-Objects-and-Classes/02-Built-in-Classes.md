@@ -1,5 +1,9 @@
+# Built-in API Classes
+
 [slide hideTitle]
-# Built-in Classes
+# Built-in Classes in Java
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-8-9-built-in-api-classes-in-java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Java provides **ready-to-use** classes, which are organized inside **Packages**. 
 
@@ -36,19 +40,19 @@ int randomNumber = rnd.nextInt(10);
 
 `Math` class methods are **static** and help performing the **numeric operations** and commonly used **mathematical functions** like:
 
-- rounding
+- Rounding
 
-- comparing
+- Comparing
 
-- square root
+- Square root
 
-- cube root
+- Cube root
 
-- exponential
+- Exponential
 
-- logarithm
+- Logarithm
 
-- trigonometric operations.
+- Trigonometric operations
 
 `Math` methods include:
 
@@ -193,6 +197,9 @@ System.out.println(isValid);
 
 [slide hideTitle]
 # Problem with Solution: Randomize Words
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Randomize Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -261,10 +268,10 @@ BigInteger class methods are **non-static**.
 This is how to declare a BigInteger: 
 
 - `BigInteger num = BigInteger.valueOf(1234567890);` 
-  - The number `1234567890` is a `long` variable (64 bits)
+  - the number `1234567890` is a `long` variable (64 bits)
 
 - `BigInteger num = new BigInteger("12345688901234567890");`
-  - The number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
+  - the number `12345688901234567890` is too large and cannot fit in 64bits, so the parameter is a **numeric String**
 
 The `BigInteger` **fields** are:
 
@@ -334,6 +341,7 @@ System.out.println(number);
 
 [slide hideTitle]
 # Problem with Solution: Sum Big Numbers
+
 [code-task title="Sum Big Numbers" taskId="java-fund-16-Objects-and-Classes-problem-5" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
@@ -446,6 +454,9 @@ You will receive two numbers **(0 to 10 ^ 50)**, print their sum.
 
 [slide hideTitle]
 # Problem with Solution: Big Factorial
+
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Big Factorial" taskId="java-fund-16-Objects-and-Classes-problem-6" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```

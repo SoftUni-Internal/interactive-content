@@ -27,6 +27,7 @@ You will be **receiving lines with commands separated by** "->" **until you rece
 
 There are **three possible commands**:
 - "Add->\{username\}" 
+<<<<<<< HEAD
     - **check if the username exists and if it does print** - "\{username\} is already registered"
     - if it doesn't exist, then add the user to the collection of users
 - "Send->\{username\}->\{Email\}" 
@@ -34,10 +35,19 @@ There are **three possible commands**:
 - "Delete->\{username\}"
     - delete the given user, if he exists
     - if the user doesn’t exist, print "\{username\} not found!"
+=======
+    - **Check if the username exists and if it does print** - "\{username\} is already registered"
+    - If it does not exist, then add the user to the collection of users
+- "Send->\{username\}->\{Email\}" 
+    - Add the \{Email\} to the \{username\}'s collection of sent emails
+- "Delete->\{username\}"
+    - Delete the given user, if he exists
+    - If the user does not exist, print "\{username\} not found!"
+>>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
-In the end, you have to **print the count of users**, **each user with his/her emails**. 
+In the end, you have to **print the count of users**, **each user with their emails**. 
 
-**Users** need to be **sorted in descending order** by the **count of sent еmails and then by their username in ascending order in the following format**:  
+**Users** need to be **sorted in descending order** by the **count of emails they sent and then by their username in ascending order in the following format**:  
 
 Users count: \{count\}
 
@@ -51,10 +61,17 @@ Users count: \{count\}
 
 ### Input
 - You will be receiving lines until you receive the "Statistics" command
+<<<<<<< HEAD
 - The commands will be in the format described above.
 
 ### Output
 - Print the collection in the format described above after the "Statistics" command
+=======
+- The commands will be in the format described above
+
+### Output
+Print the collection in the format described above after receiving the "Statistics" command.
+>>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
 ### Example
 | **Input** | **Output** |
@@ -68,10 +85,17 @@ Users count: \{count\}
 | Send->Mike->Another random test mail |  - Hello, do you want to meet up tomorrow? |
 | Statistics |  - Another random test mail |
 
+<<<<<<< HEAD
 ### Comments
 - First we receive our users
 - Since they are not already in our collection, we add them
 - Then they start sending emails and in the end we print the output in the described format
+=======
+### Comment
+- First we receive our users
+- Since they are not already in our collection, we add them.
+- Then they start sending emails and in the end we print the output in the described format.
+>>>>>>> 36de252b4bccc9a87e2678b16676867c15c6f354
 
 ### Example
 | **Input** | **Output** |
