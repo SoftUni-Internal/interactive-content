@@ -144,7 +144,7 @@ You need 53.80$ more to buy the series!
 [/test]
 [test]
 [input]
-budget([10, 4, 'Thrones', 8, 'Lucifer', '5, 'Stoned', 4, 'MK', 12])
+budget([10, 4, 'Thrones', 8, 'Lucifer', 5, 'Stoned', 4, 'MK', 12])
 [/input]
 [output]
 You need 13.00$ more to buy the series!
