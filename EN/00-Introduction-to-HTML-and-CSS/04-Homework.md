@@ -11,7 +11,7 @@
 
 **Note:** Be careful, because the uploaded file must be of **type zip**! .rar or .7zip will **NOT** be accepted!
 
-[image assetsSrc="01-intro-to-html-tags-simple-html-page.png" /]
+[image assetsSrc="01-intro-to-html-tags-simple-html-page.jpg" /]
 
 [/slide]
 
