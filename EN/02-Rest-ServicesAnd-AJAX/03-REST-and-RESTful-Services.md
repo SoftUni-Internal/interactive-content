@@ -8,13 +8,13 @@
 
 **REST** is an abbreviation for **Re**presentational **S**tate **T**ransfer.
 
-It is an architecture style based on **request-response**, used for **client-server communication** over HTTP.
+It is an architecture style based on **requests-responses** used for **client-server communication** over HTTP.
 
-Every request is made to a **URI**, which stands for **Uniform Resource Identifier**.
+Every request is made to a **Uniform Resource Identifier** (**URI**).
 
-We can use the **CRUD** operation on the resources.
+We can use the **CRUD** operations on the resources.
 
-**CRUD** abbreviation stands for **create**, **read**, **update** and **delete**.
+**CRUD** abbreviation stands for **C**reate, **R**ead, **U**pdate and **D**elete.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-4.png" /]
 
@@ -39,7 +39,7 @@ They are:
 - Code on demand - this one is optional
 - Uniform interface
 
-You can read more about REST Architectural Constraints [here](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf?fbclid=IwAR0vzDHFwDYLG_uarrsMbxwhgvnmgE6s-7jk37y0agkxxgqvXM7y-wCiZXQ).
+You can read more about the REST Architectural Constraints [here](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf?fbclid=IwAR0vzDHFwDYLG_uarrsMbxwhgvnmgE6s-7jk37y0agkxxgqvXM7y-wCiZXQ).
 
 [/slide]
 
@@ -56,7 +56,7 @@ To get all posts, we will send a **GET** request to the same endpoint.
 
 But if we want to **get** a certain post, we need to add the **ID** of that post, and the endpoint will look like this: `http://some-service.org/api/posts/17`.
 
-Also, we need the **ID** of that post, if we want to send a **DELETE**, a **PUT**, or a **PATCH** request.
+Also, we need the **ID** of that post if we want to send a **DELETE**, a **PUT**, or a **PATCH** request.
 
 The endpoint will look like this: `http://some-service.org/api/posts/17`.
 
