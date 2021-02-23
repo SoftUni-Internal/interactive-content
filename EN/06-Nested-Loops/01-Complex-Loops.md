@@ -55,23 +55,32 @@ function numbersFromNto1(input) {
 
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function to print the numbers from N down to 1.
+Create a program to print the numbers from N down to 1.
 
-The function receives a number `n` and prints the numbers from `n` down to 1. 
+The function receives a number **n** and prints the numbers from **n** down to 1. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 5, 4, 3, 2, 1 |
+| numbersFromNto1(5) | 5, 4, 3, 2, 1 |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-5
+numbersFromNto1(5)
 [/input]
 [output]
 5, 4, 3, 2, 1
@@ -79,7 +88,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [/test]
 [test]
 [input]
-4
+numbersFromNto1(4)
 [/input]
 [output]
 4, 3, 2, 1
@@ -87,7 +96,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [/test]
 [test]
 [input]
-3
+numbersFromNto1(3)
 [/input]
 [output]
 3, 2, 1
@@ -95,7 +104,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [/test]
 [test]
 [input]
-2
+numbersFromNto1(2)
 [/input]
 [output]
 2, 1
@@ -103,7 +112,7 @@ The function receives a number `n` and prints the numbers from `n` down to 1.
 [/test]
 [test]
 [input]
-1
+numbersFromNto1(1)
 [/input]
 [output]
 1
@@ -128,26 +137,35 @@ function numbersFrom1ton(n) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function to print the numbers from 1 to `n` with step 3:
+Create a program to print the numbers from 1 to **n** with step 3:
 
-* Receives a number `n`
+* Receives a number **n**
 
-* Prints the numbers from 1 to `n` with step 3
+* Prints the numbers from 1 to **n** with step 3
 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|7| 1, 4, 7 |
-|10| 1, 4, 7, 10 |
+| numbersFrom1ton(7) | 1, 4, 7 |
+| numbersFrom1ton(10) | 1, 4, 7, 10 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-10
+numbersFrom1ton(10)
 [/input]
 [output]
 1, 4, 7, 10
@@ -155,7 +173,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [/test]
 [test]
 [input]
-15
+numbersFrom1ton(15)
 [/input]
 [output]
 1, 4, 7, 10, 13
@@ -163,7 +181,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [/test]
 [test]
 [input]
-20
+numbersFrom1ton(20)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19
@@ -171,7 +189,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [/test]
 [test]
 [input]
-25
+numbersFrom1ton(25)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19, 22, 25
@@ -179,7 +197,7 @@ Write a function to print the numbers from 1 to `n` with step 3:
 [/test]
 [test]
 [input]
-30
+numbersFrom1ton(30)
 [/input]
 [output]
 1, 4, 7, 10, 13, 16, 19, 22, 25, 28
@@ -204,25 +222,34 @@ function evenPowersOfTwo(n) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a function to print the even powers of 2:
+Create a program to print the even powers of 2:
 
-* Receives a number `n`
+* Receives a number **n**
 
-* Prints the even powers of 2 up to `2n`:
+* Prints the even powers of 2 up to **2n**:
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5| 1, 4, 16 |
-|10| 1, 4, 16, 64, 256, 1024 |
+| evenPowersOfTwo(5) | 1, 4, 16 |
+| evenPowersOfTwo(10) | 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-10
+evenPowersOfTwo(10)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024
@@ -230,7 +257,7 @@ Write a function to print the even powers of 2:
 [/test]
 [test]
 [input]
-15
+evenPowersOfTwo(15)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384
@@ -238,7 +265,7 @@ Write a function to print the even powers of 2:
 [/test]
 [test]
 [input]
-20
+evenPowersOfTwo(20)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576
@@ -246,7 +273,7 @@ Write a function to print the even powers of 2:
 [/test]
 [test]
 [input]
-25
+evenPowersOfTwo(25)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216
@@ -254,7 +281,7 @@ Write a function to print the even powers of 2:
 [/test]
 [test]
 [input]
-30
+evenPowersOfTwo(30)
 [/input]
 [output]
 1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216, 67108864, 268435456, 1073741824

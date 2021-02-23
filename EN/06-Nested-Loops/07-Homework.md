@@ -18,27 +18,27 @@ function building(floors, rooms) {
 [code-adapter]
 ```
 function adapter(input, code) {
-  let a = Number(input[0]);
-  let b = Number(input[1]);
-  return code(a, b);
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 Prints information about a building: 
 * The building can hold: **apartments (odd numbered floors)**, **offices (even numbered floors)** and **(on the last floor) Large Apartments** 
-* Apartments are indexed with: `A{buildingNum}{apartmentNum}`
-* Offices: `O{floorNum}{officeNum}`
-* Large apartments: `L{buildingNum}{apartmentNum}`
+* Apartments are indexed with: **A**\{**buildingNum**\}\{**apartmentNum**\}
+* Offices: **O**\{**floorNum**\}\{**officeNum**\}
+* Large apartments: **L**\{**buildingNum**\}\{**apartmentNum**\}
 * The numbers always start from 0
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|6, 4| L60 L61 L62 L63|
+| building(6, 4) | L60 L61 L62 L63|
 || A50 A51 A52 A53|
 ||O40 O41 O42 O43 |
 ||A30 A31 A32 A33 |
@@ -49,8 +49,7 @@ Prints information about a building:
 [tests]
 [test]
 [input]
-1
-7
+bulding(1, 7)
 [/input]
 [output]
 L10 L11 L12 L13 L14 L15 L16
@@ -58,8 +57,7 @@ L10 L11 L12 L13 L14 L15 L16
 [/test]
 [test]
 [input]
-0
-0
+building(0, 0)
 [/input]
 [output]
 
@@ -67,8 +65,7 @@ L10 L11 L12 L13 L14 L15 L16
 [/test]
 [test]
 [input]
-2
-5
+building(2, 5)
 [/input]
 [output]
 L20 L21 L22 L23 L24
@@ -77,8 +74,7 @@ A10 A11 A12 A13 A14
 [/test]
 [test]
 [input]
-10
-10
+building(10, 10)
 [/input]
 [output]
 L100 L101 L102 L103 L104 L105 L106 L107 L108 L109
@@ -95,8 +91,7 @@ A10 A11 A12 A13 A14 A15 A16 A17 A18 A19
 [/test]
 [test]
 [input]
-5
-5
+building(5, 5)
 [/input]
 [output]
 L50 L51 L52 L53 L54
@@ -108,8 +103,7 @@ A10 A11 A12 A13 A14
 [/test]
 [test]
 [input]
-1
-1
+bulding(1, 1)
 [/input]
 [output]
 L10
@@ -117,8 +111,7 @@ L10
 [/test]
 [test]
 [input]
-6
-7
+building(6, 7)
 [/input]
 [output]
 L60 L61 L62 L63 L64 L65 L66
@@ -131,8 +124,7 @@ A10 A11 A12 A13 A14 A15 A16
 [/test]
 [test]
 [input]
-8
-2
+building(8, 2)
 [/input]
 [output]
 L80 L81
@@ -147,8 +139,7 @@ A10 A11
 [/test]
 [test]
 [input]
-9
-0
+building(9, 0)
 [/input]
 [output]
 
@@ -156,8 +147,7 @@ A10 A11
 [/test]
 [test]
 [input]
-7
-3
+building(7, 3)
 [/input]
 [output]
 L70 L71 L72
@@ -188,9 +178,18 @@ function passwords(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 * Reads an integer - **n**
 * Generates custom passwords, which meet the following conditions:
 * The **first** part is an **even** number and should not be greater than **n**
@@ -200,13 +199,13 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|6| 212 236 2510 414 4312 4520 616 6318 6530 |
+| passwords(6) | 212 236 2510 414 4312 4520 616 6318 6530 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-8
+passwords(8)
 [/input]
 [output]
 212 236 2510 2714 414 4312 4520 4728 616 6318 6530 6742 818 8324 8540 8756
@@ -214,7 +213,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-9
+passwords(9)
 [/input]
 [output]
 212 236 2510 2714 2918 414 4312 4520 4728 4936 616 6318 6530 6742 6954 818 8324 8540 8756 8972
@@ -222,7 +221,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-10
+passwords(10)
 [/input]
 [output]
 212 236 2510 2714 2918 414 4312 4520 4728 4936 616 6318 6530 6742 6954 818 8324 8540 8756 8972 10110 10330 10550 10770 10990
@@ -230,7 +229,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-3
+passwords(3)
 [/input]
 [output]
 212 236
@@ -238,7 +237,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-2
+passwords(2)
 [/input]
 [output]
 212
@@ -246,7 +245,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-9
+passwords(9)
 [/input]
 [output]
 212 236 2510 2714 2918 414 4312 4520 4728 4936 616 6318 6530 6742 6954 818 8324 8540 8756 8972
@@ -254,7 +253,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-15
+passwords(15)
 [/input]
 [output]
 212 236 2510 2714 2918 21122 21326 21530 414 4312 4520 4728 4936 41144 41352 41560 616 6318 6530 6742 6954 61166 61378 61590 818 8324 8540 8756 8972 81188 813104 815120 10110 10330 10550 10770 10990 1011110 1013130 1015150 12112 12336 12560 12784 129108 1211132 1213156 1215180 14114 14342 14570 14798 149126 1411154 1413182 1415210
@@ -276,16 +275,25 @@ function magicNumber(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 * Reads a **number - n**, from the console
-* Finds all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to `n` 
+* Finds all **3-digit numbers** for which the product of the multiplication of their separate digits is equal to **n** 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| 113 |
+| magicNumber(3) | 113 |
 || 131 |
 || 311 |
  
@@ -293,7 +301,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-4
+magicNumber(4)
 [/input]
 [output]
 114
@@ -306,7 +314,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-5
+magicNumber(5)
 [/input]
 [output]
 115
@@ -316,7 +324,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-8
+magicNumber(8)
 [/input]
 [output]
 118
@@ -333,7 +341,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-9
+magicNumber(9)
 [/input]
 [output]
 119
@@ -346,7 +354,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-12
+magicNumber(12)
 [/input]
 [output]
 126
@@ -368,7 +376,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-4
+magicNumber(4)
 [/input]
 [output]
 114
@@ -381,7 +389,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-14
+magicNumber(14)
 [/input]
 [output]
 127
@@ -408,38 +416,33 @@ function travelling(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads a **destination** and a **required budget** to visit it 
 * Continues taking numbers - amounts of money, until it is **enough** to take the trip 
-* If we receive the command `End` the program ends
+* If we receive the command **End** the program ends
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`['Philippines', '1000', '550', '450', 'End']` | Going to Philippines! |
+| travelling(['Philippines', 1000, 550, 450, 'End']) | Going to Philippines! |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-Greece
-1000
-200
-200
-300
-100
-150
-240
-Spain
-1200
-300
-500
-193
-423
-End
+travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End'])
 [/input]
 [output]
 Going to Greece!
@@ -448,29 +451,7 @@ Going to Spain!
 [/test]
 [test open]
 [input]
-France
-2000
-300
-300
-200
-400
-190
-258
-360
-Portugal
-1450
-400
-400
-200
-300
-300
-Egypt
-1900
-1000
-280
-300
-500
-End
+travelling(['France', 2000, 300, 300, 200, 400, 190, 258, 360, 'Portugal', 1450, 400, 400, 200, 300, 300, 'Egypt', 1900, 1000, 280, 300, 500, 'End'])
 [/input]
 [output]
 Going to France!
@@ -480,18 +461,7 @@ Going to Egypt!
 [/test]
 [test]
 [input]
-Bulgaria
-500
-200
-100
-300
-Austria
-700
-200
-200
-200
-200
-End
+travelling(['Bulgaria', 500, 200, 100, 300, 'Austria', 700, 200, 200, 200, 200, 'End'])
 [/input]
 [output]
 Going to Bulgaria!
@@ -500,17 +470,7 @@ Going to Austria!
 [/test]
 [test]
 [input]
-Maldives
-2500
-1000
-340
-50
-50
-50
-50
-700
-700
-End
+travelling(['Maldives', 2500, 1000, 340, 50, 50, 50, 50, 700, 700, 'End'])
 [/input]
 [output]
 Going to Maldives!
@@ -518,19 +478,7 @@ Going to Maldives!
 [/test]
 [test]
 [input]
-Africa
-3000
-1000
-5000
-America
-2000
-2500
-China
-4000
-2000
-1800
-1800
-End
+travelling(['Africa', 3000, 1000, 5000, 'America', 2000, 2500, 'China', 4000, 2000, 1800, 1800, 'End'])
 [/input]
 [output]
 Going to Africa!
@@ -540,42 +488,7 @@ Going to China!
 [/test]
 [test]
 [input]
-Estonia
-1000
-300
-200
-200
-300
-Peru
-3000
-2000
-1000
-Uganda
-1000
-1000
-UAE
-5000
-3000
-4000
-Germany
-2000
-2000
-Portugal
-2050
-3000
-Portugal
-2050
-3000
-Portugal
-2050
-3000
-Portugal
-2050
-3000
-Portugal
-2050
-3000
-End
+travelling(['Estonia', 1000, 300, 200, 200, 300, 'Peru', 3000, 2000, 1000, 'Uganda', 1000, 1000, 'UAE', 5000, 3000, 4000, 'Germany', 2000, 2000, 'Portugal', 2050, 3000, 'Portugal', 2050, 3000, 'Portugal', 2050, 3000, 'Portugal', 2050, 3000, 'Portugal', 2050, 3000, 'End'])
 [/input]
 [output]
 Going to Estonia!
@@ -592,7 +505,7 @@ Going to Portugal!
 [/test]
 [test]
 [input]
-End
+travelling(['End'])
 [/input]
 [output]
 
@@ -600,29 +513,7 @@ End
 [/test]
 [test]
 [input]
-France
-3000
-50
-50
-50
-50
-50
-50
-50
-50
-50
-50
-50
-250
-100
-106
-280
-400
-400
-50
-400
-600
-End
+travelling(['France', 3000, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 250, 100, 106, 280, 400, 400, 50, 400, 600, 'End'])
 [/input]
 [output]
 Going to France!
@@ -630,25 +521,7 @@ Going to France!
 [/test]
 [test]
 [input]
-Russia
-15000
-4500
-300
-300
-3000
-2000
-4500
-5000
-Japan
-1500.600
-67.60
-26.4052345
-250.78
-450.78945
-578.76
-98.60
-260.84
-End
+travelling(['Russia', 15000, 4500, 300, 300, 3000, 2000, 4500, 5000, 'Japan', 1500.600, 67.60, 26.4052345, 250.78, 450.78945, 578.76, 98.60, 260.84, 'End'])
 [/input]
 [output]
 Going to Russia!
@@ -657,18 +530,7 @@ Going to Japan!
 [/test]
 [test]
 [input]
-South Africa
-2000
-1000
-1000
-Egypt
-300
-150
-100
-20
-20
-20
-End
+travelling(['South Africa', 2000, 1000, 1000, 'Egypt', 300, 150, 100, 20, 20, 20, 'End'])
 [/input]
 [output]
 Going to South Africa!
@@ -677,15 +539,7 @@ Going to Egypt!
 [/test]
 [test]
 [input]
-Zambia
-3700.250
-450.300
-450.20414
-600.43
-640.23
-824.50
-1200.46
-End
+travelling(['Zambia', 3700.250, 450.300, 450.20414, 600.43, 640.23, 824.50, 1200.46, 'End'])
 [/input]
 [output]
 Going to Zambia!
@@ -693,14 +547,7 @@ Going to Zambia!
 [/test]
 [test]
 [input]
-Albania
-350.23414
-45.24
-23.124
-123.144
-145.23556
-45.2345
-End
+travelling(['Albania', 350.23414, 45.24, 23.124, 123.144, 145.23556, 45.2345, 'End'])
 [/input]
 [output]
 Going to Albania!
@@ -724,14 +571,16 @@ function primeNumbers(firstNumber, secondNumber) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]))
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads **two numbers** from the console
 * Prints the **prime** number in that **range**
@@ -739,14 +588,13 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1, 50| 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
+| primeNumbers(1, 50) | 1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-1
-4
+primeNumbers(1, 4)
 [/input]
 [output]
 1 2 3
@@ -754,8 +602,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-600
-900
+primeNumbers(600, 900)
 [/input]
 [output]
 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887
@@ -763,8 +610,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-55
-70
+primeNumbers(55, 70)
 [/input]
 [output]
 59 61 67
@@ -772,8 +618,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-11
-13
+primeNumbers(11, 13)
 [/input]
 [output]
 11 13
@@ -781,8 +626,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-88
-100
+primeNumbers(88, 100)
 [/input]
 [output]
 89 97
@@ -790,8 +634,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-23
-27
+primeNumbers(23, 27)
 [/input]
 [output]
 23
@@ -799,8 +642,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-1
-9
+primeNumbers(1, 9)
 [/input]
 [output]
 1 2 3 5 7
@@ -824,14 +666,16 @@ function uniquePinCodes(firstNumber, secondNumber, thirdNumber) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]))
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads **3 digits** - n1, n2 and n3
 * Generates **unique 3 digit PIN Codes**, which meet the following **conditions**:
@@ -844,7 +688,7 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3, 5, 5| 222 |
+| uniquePinCodes(3, 5, 5) | 222 |
 || 224 |
 || 232 |
 || 234 |
@@ -855,9 +699,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-8
-2
-8
+uniquePinCodes(8, 2, 8)
 [/input]
 [output]
 222
@@ -880,9 +722,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-2
-4
-6
+uniquePinCodes(2, 4, 6)
 [/input]
 [output]
 222
@@ -895,9 +735,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-3
-6
-9
+uniquePinCodes(3, 6, 9)
 [/input]
 [output]
 222
@@ -916,9 +754,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-2
-2
-3
+uniquePinCodes(2, 2, 3)
 [/input]
 [output]
 222
@@ -926,9 +762,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-1
-1
-1
+uniquePinCodes(1, 1, 1)
 [/input]
 [output]
 
@@ -936,9 +770,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-7
-8
-9
+uniquePinCodes(7, 8, 9)
 [/input]
 [output]
 222
@@ -993,9 +825,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-2
-3
-5
+uniquePinCodes(2, 3, 5)
 [/input]
 [output]
 222
@@ -1022,12 +852,16 @@ function letterCombinations(firstLetter, lastLetter,  missedLetter) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Prints **letter combinations** and the **number** of generated combinations
 
@@ -1038,15 +872,13 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'a', 'c', 'b'| aaa aac aca acc caa cac cca ccc 8 |
+| letterCombinations('a', 'c', 'b') | aaa aac aca acc caa cac cca ccc 8 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-a
-c
-b
+letterCombinations('a', 'c', 'b')
 [/input]
 [output]
 aaa aac aca acc caa cac cca ccc 8
@@ -1054,9 +886,7 @@ aaa aac aca acc caa cac cca ccc 8
 [/test]
 [test]
 [input]
-r
-w
-m
+letterCombinations('r', 'w', 'm')
 [/input]
 [output]
 rrr rrs rrt rru rrv rrw rsr rss rst rsu rsv rsw rtr rts rtt rtu rtv rtw rur rus rut ruu ruv ruw rvr rvs rvt rvu rvv rvw rwr rws rwt rwu rwv rww srr srs srt sru srv srw ssr sss sst ssu ssv ssw str sts stt stu stv stw sur sus sut suu suv suw svr svs svt svu svv svw swr sws swt swu swv sww trr trs trt tru trv trw tsr tss tst tsu tsv tsw ttr tts ttt ttu ttv ttw tur tus tut tuu tuv tuw tvr tvs tvt tvu tvv tvw twr tws twt twu twv tww urr urs urt uru urv urw usr uss ust usu usv usw utr uts utt utu utv utw uur uus uut uuu uuv uuw uvr uvs uvt uvu uvv uvw uwr uws uwt uwu uwv uww vrr vrs vrt vru vrv vrw vsr vss vst vsu vsv vsw vtr vts vtt vtu vtv vtw vur vus vut vuu vuv vuw vvr vvs vvt vvu vvv vvw vwr vws vwt vwu vwv vww wrr wrs wrt wru wrv wrw wsr wss wst wsu wsv wsw wtr wts wtt wtu wtv wtw wur wus wut wuu wuv wuw wvr wvs wvt wvu wvv wvw wwr wws wwt wwu wwv www 216
@@ -1064,9 +894,7 @@ rrr rrs rrt rru rrv rrw rsr rss rst rsu rsv rsw rtr rts rtt rtu rtv rtw rur rus 
 [/test]
 [test]
 [input]
-y
-v
-z
+letterCombinations('y', 'v', 'z')
 [/input]
 [output]
 0
@@ -1074,9 +902,7 @@ z
 [/test]
 [test]
 [input]
-q
-z
-n
+letterCombinations('q', 'z', 'n')
 [/input]
 [output]
 qqq qqr qqs qqt qqu qqv qqw qqx qqy qqz qrq qrr qrs qrt qru qrv qrw qrx qry qrz qsq qsr qss qst qsu qsv qsw qsx qsy qsz qtq qtr qts qtt qtu qtv qtw qtx qty qtz quq qur qus qut quu quv quw qux quy quz qvq qvr qvs qvt qvu qvv qvw qvx qvy qvz qwq qwr qws qwt qwu qwv qww qwx qwy qwz qxq qxr qxs qxt qxu qxv qxw qxx qxy qxz qyq qyr qys qyt qyu qyv qyw qyx qyy qyz qzq qzr qzs qzt qzu qzv qzw qzx qzy qzz rqq rqr rqs rqt rqu rqv rqw rqx rqy rqz rrq rrr rrs rrt rru rrv rrw rrx rry rrz rsq rsr rss rst rsu rsv rsw rsx rsy rsz rtq rtr rts rtt rtu rtv rtw rtx rty rtz ruq rur rus rut ruu ruv ruw rux ruy ruz rvq rvr rvs rvt rvu rvv rvw rvx rvy rvz rwq rwr rws rwt rwu rwv rww rwx rwy rwz rxq rxr rxs rxt rxu rxv rxw rxx rxy rxz ryq ryr rys ryt ryu ryv ryw ryx ryy ryz rzq rzr rzs rzt rzu rzv rzw rzx rzy rzz sqq sqr sqs sqt squ sqv sqw sqx sqy sqz srq srr srs srt sru srv srw srx sry srz ssq ssr sss sst ssu ssv ssw ssx ssy ssz stq str sts stt stu stv stw stx sty stz suq sur sus sut suu suv suw sux suy suz svq svr svs svt svu svv svw svx svy svz swq swr sws swt swu swv sww swx swy swz sxq sxr sxs sxt sxu sxv sxw sxx sxy sxz syq syr sys syt syu syv syw syx syy syz szq szr szs szt szu szv szw szx szy szz tqq tqr tqs tqt tqu tqv tqw tqx tqy tqz trq trr trs trt tru trv trw trx try trz tsq tsr tss tst tsu tsv tsw tsx tsy tsz ttq ttr tts ttt ttu ttv ttw ttx tty ttz tuq tur tus tut tuu tuv tuw tux tuy tuz tvq tvr tvs tvt tvu tvv tvw tvx tvy tvz twq twr tws twt twu twv tww twx twy twz txq txr txs txt txu txv txw txx txy txz tyq tyr tys tyt tyu tyv tyw tyx tyy tyz tzq tzr tzs tzt tzu tzv tzw tzx tzy tzz uqq uqr uqs uqt uqu uqv uqw uqx uqy uqz urq urr urs urt uru urv urw urx ury urz usq usr uss ust usu usv usw usx usy usz utq utr uts utt utu utv utw utx uty utz uuq uur uus uut uuu uuv uuw uux uuy uuz uvq uvr uvs uvt uvu uvv uvw uvx uvy uvz uwq uwr uws uwt uwu uwv uww uwx uwy uwz uxq uxr uxs uxt uxu uxv uxw uxx uxy uxz uyq uyr uys uyt uyu uyv uyw uyx uyy uyz uzq uzr uzs uzt uzu uzv uzw uzx uzy uzz vqq vqr vqs vqt vqu vqv vqw vqx vqy vqz vrq vrr vrs vrt vru vrv vrw vrx vry vrz vsq vsr vss vst vsu vsv vsw vsx vsy vsz vtq vtr vts vtt vtu vtv vtw vtx vty vtz vuq vur vus vut vuu vuv vuw vux vuy vuz vvq vvr vvs vvt vvu vvv vvw vvx vvy vvz vwq vwr vws vwt vwu vwv vww vwx vwy vwz vxq vxr vxs vxt vxu vxv vxw vxx vxy vxz vyq vyr vys vyt vyu vyv vyw vyx vyy vyz vzq vzr vzs vzt vzu vzv vzw vzx vzy vzz wqq wqr wqs wqt wqu wqv wqw wqx wqy wqz wrq wrr wrs wrt wru wrv wrw wrx wry wrz wsq wsr wss wst wsu wsv wsw wsx wsy wsz wtq wtr wts wtt wtu wtv wtw wtx wty wtz wuq wur wus wut wuu wuv wuw wux wuy wuz wvq wvr wvs wvt wvu wvv wvw wvx wvy wvz wwq wwr wws wwt wwu wwv www wwx wwy wwz wxq wxr wxs wxt wxu wxv wxw wxx wxy wxz wyq wyr wys wyt wyu wyv wyw wyx wyy wyz wzq wzr wzs wzt wzu wzv wzw wzx wzy wzz xqq xqr xqs xqt xqu xqv xqw xqx xqy xqz xrq xrr xrs xrt xru xrv xrw xrx xry xrz xsq xsr xss xst xsu xsv xsw xsx xsy xsz xtq xtr xts xtt xtu xtv xtw xtx xty xtz xuq xur xus xut xuu xuv xuw xux xuy xuz xvq xvr xvs xvt xvu xvv xvw xvx xvy xvz xwq xwr xws xwt xwu xwv xww xwx xwy xwz xxq xxr xxs xxt xxu xxv xxw xxx xxy xxz xyq xyr xys xyt xyu xyv xyw xyx xyy xyz xzq xzr xzs xzt xzu xzv xzw xzx xzy xzz yqq yqr yqs yqt yqu yqv yqw yqx yqy yqz yrq yrr yrs yrt yru yrv yrw yrx yry yrz ysq ysr yss yst ysu ysv ysw ysx ysy ysz ytq ytr yts ytt ytu ytv ytw ytx yty ytz yuq yur yus yut yuu yuv yuw yux yuy yuz yvq yvr yvs yvt yvu yvv yvw yvx yvy yvz ywq ywr yws ywt ywu ywv yww ywx ywy ywz yxq yxr yxs yxt yxu yxv yxw yxx yxy yxz yyq yyr yys yyt yyu yyv yyw yyx yyy yyz yzq yzr yzs yzt yzu yzv yzw yzx yzy yzz zqq zqr zqs zqt zqu zqv zqw zqx zqy zqz zrq zrr zrs zrt zru zrv zrw zrx zry zrz zsq zsr zss zst zsu zsv zsw zsx zsy zsz ztq ztr zts ztt ztu ztv ztw ztx zty ztz zuq zur zus zut zuu zuv zuw zux zuy zuz zvq zvr zvs zvt zvu zvv zvw zvx zvy zvz zwq zwr zws zwt zwu zwv zww zwx zwy zwz zxq zxr zxs zxt zxu zxv zxw zxx zxy zxz zyq zyr zys zyt zyu zyv zyw zyx zyy zyz zzq zzr zzs zzt zzu zzv zzw zzx zzy zzz 1000
@@ -1084,9 +910,7 @@ qqq qqr qqs qqt qqu qqv qqw qqx qqy qqz qrq qrr qrs qrt qru qrv qrw qrx qry qrz 
 [/test]
 [test]
 [input]
-l
-p
-g
+letterCombinations('l', 'p', 'g')
 [/input]
 [output]
 lll llm lln llo llp lml lmm lmn lmo lmp lnl lnm lnn lno lnp lol lom lon loo lop lpl lpm lpn lpo lpp mll mlm mln mlo mlp mml mmm mmn mmo mmp mnl mnm mnn mno mnp mol mom mon moo mop mpl mpm mpn mpo mpp nll nlm nln nlo nlp nml nmm nmn nmo nmp nnl nnm nnn nno nnp nol nom non noo nop npl npm npn npo npp oll olm oln olo olp oml omm omn omo omp onl onm onn ono onp ool oom oon ooo oop opl opm opn opo opp pll plm pln plo plp pml pmm pmn pmo pmp pnl pnm pnn pno pnp pol pom pon poo pop ppl ppm ppn ppo ppp 125
@@ -1094,9 +918,7 @@ lll llm lln llo llp lml lmm lmn lmo lmp lnl lnm lnn lno lnp lol lom lon loo lop 
 [/test]
 [test]
 [input]
-a
-d
-j
+letterCombinations('a', 'd', 'j')
 [/input]
 [output]
 aaa aab aac aad aba abb abc abd aca acb acc acd ada adb adc add baa bab bac bad bba bbb bbc bbd bca bcb bcc bcd bda bdb bdc bdd caa cab cac cad cba cbb cbc cbd cca ccb ccc ccd cda cdb cdc cdd daa dab dac dad dba dbb dbc dbd dca dcb dcc dcd dda ddb ddc ddd 64
@@ -1104,9 +926,7 @@ aaa aab aac aad aba abb abc abd aca acb acc acd ada adb adc add baa bab bac bad 
 [/test]
 [test]
 [input]
-b
-i
-l
+letterCombinations('b', 'i', 'l')
 [/input]
 [output]
 bbb bbc bbd bbe bbf bbg bbh bbi bcb bcc bcd bce bcf bcg bch bci bdb bdc bdd bde bdf bdg bdh bdi beb bec bed bee bef beg beh bei bfb bfc bfd bfe bff bfg bfh bfi bgb bgc bgd bge bgf bgg bgh bgi bhb bhc bhd bhe bhf bhg bhh bhi bib bic bid bie bif big bih bii cbb cbc cbd cbe cbf cbg cbh cbi ccb ccc ccd cce ccf ccg cch cci cdb cdc cdd cde cdf cdg cdh cdi ceb cec ced cee cef ceg ceh cei cfb cfc cfd cfe cff cfg cfh cfi cgb cgc cgd cge cgf cgg cgh cgi chb chc chd che chf chg chh chi cib cic cid cie cif cig cih cii dbb dbc dbd dbe dbf dbg dbh dbi dcb dcc dcd dce dcf dcg dch dci ddb ddc ddd dde ddf ddg ddh ddi deb dec ded dee def deg deh dei dfb dfc dfd dfe dff dfg dfh dfi dgb dgc dgd dge dgf dgg dgh dgi dhb dhc dhd dhe dhf dhg dhh dhi dib dic did die dif dig dih dii ebb ebc ebd ebe ebf ebg ebh ebi ecb ecc ecd ece ecf ecg ech eci edb edc edd ede edf edg edh edi eeb eec eed eee eef eeg eeh eei efb efc efd efe eff efg efh efi egb egc egd ege egf egg egh egi ehb ehc ehd ehe ehf ehg ehh ehi eib eic eid eie eif eig eih eii fbb fbc fbd fbe fbf fbg fbh fbi fcb fcc fcd fce fcf fcg fch fci fdb fdc fdd fde fdf fdg fdh fdi feb fec fed fee fef feg feh fei ffb ffc ffd ffe fff ffg ffh ffi fgb fgc fgd fge fgf fgg fgh fgi fhb fhc fhd fhe fhf fhg fhh fhi fib fic fid fie fif fig fih fii gbb gbc gbd gbe gbf gbg gbh gbi gcb gcc gcd gce gcf gcg gch gci gdb gdc gdd gde gdf gdg gdh gdi geb gec ged gee gef geg geh gei gfb gfc gfd gfe gff gfg gfh gfi ggb ggc ggd gge ggf ggg ggh ggi ghb ghc ghd ghe ghf ghg ghh ghi gib gic gid gie gif gig gih gii hbb hbc hbd hbe hbf hbg hbh hbi hcb hcc hcd hce hcf hcg hch hci hdb hdc hdd hde hdf hdg hdh hdi heb hec hed hee hef heg heh hei hfb hfc hfd hfe hff hfg hfh hfi hgb hgc hgd hge hgf hgg hgh hgi hhb hhc hhd hhe hhf hhg hhh hhi hib hic hid hie hif hig hih hii ibb ibc ibd ibe ibf ibg ibh ibi icb icc icd ice icf icg ich ici idb idc idd ide idf idg idh idi ieb iec ied iee ief ieg ieh iei ifb ifc ifd ife iff ifg ifh ifi igb igc igd ige igf igg igh igi ihb ihc ihd ihe ihf ihg ihh ihi iib iic iid iie iif iig iih iii 512
@@ -1114,9 +934,7 @@ bbb bbc bbd bbe bbf bbg bbh bbi bcb bcc bcd bce bcf bcg bch bci bdb bdc bdd bde 
 [/test]
 [test]
 [input]
-b
-e
-k
+letterCombinations('b', 'e', 'k')
 [/input]
 [output]
 bbb bbc bbd bbe bcb bcc bcd bce bdb bdc bdd bde beb bec bed bee cbb cbc cbd cbe ccb ccc ccd cce cdb cdc cdd cde ceb cec ced cee dbb dbc dbd dbe dcb dcc dcd dce ddb ddc ddd dde deb dec ded dee ebb ebc ebd ebe ecb ecc ecd ece edb edc edd ede eeb eec eed eee 64
@@ -1138,27 +956,36 @@ function happyNumbers(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 Generates all **4 digit numbers** with digits less than n and prints them out if: 
 
-* When you split the number into two pairs and add the first digit to the second one of each pair- the result equals `n` 
+* When you split the number into two pairs and add the first digit to the second one of each pair- the result equals **n**
 
 * When you add the first two, the result is divisible by n without a remainder
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| 1212 1221 2112 2121 |
+| happyNumbers(3) | 1212 1221 2112 2121 |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-3
+happyNumbers(3)
 [/input]
 [output]
 1212 1221 2112 2121
@@ -1166,7 +993,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-6
+happyNumbers(6)
 [/input]
 [output]
 1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
@@ -1174,7 +1001,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-2
+happyNumbers(2)
 [/input]
 [output]
 1111
@@ -1182,7 +1009,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-4
+happyNumbers(4)
 [/input]
 [output]
 1111 1313 1322 1331 2213 2222 2231 3113 3122 3131
@@ -1190,7 +1017,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-5
+happyNumbers(5)
 [/input]
 [output]
 1414 1423 1432 1441 2314 2323 2332 2341 3214 3223 3232 3241 4114 4123 4132 4141
@@ -1198,7 +1025,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-6
+happyNumbers(6)
 [/input]
 [output]
 1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
@@ -1206,7 +1033,7 @@ Generates all **4 digit numbers** with digits less than n and prints them out if
 [/test]
 [test]
 [input]
-7
+happyNumbers(7)
 [/input]
 [output]
 1616 1625 1634 1643 1652 1661 2516 2525 2534 2543 2552 2561 3416 3425 3434 3443 3452 3461 4316 4325 4334 4343 4352 4361 5216 5225 5234 5243 5252 5261 6116 6125 6134 6143 6152 6161
