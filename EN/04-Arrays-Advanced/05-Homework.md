@@ -872,7 +872,7 @@ kcld
 [code-task title="Array Manipulations" taskId="js-fundamentals-1-Arrays-Advanced-Array-Manipulation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayManipulations(array1, array2){
+function arrayManipulations(array1, array2, array3, array4){
   // Write your code here
 }
 ```
