@@ -8,7 +8,7 @@
 
 Unit tests check whether certain code **functionalities work as expected.**
 
-It also provides the developers with the **necessary information**, when **errors occur in the code.**
+It also provides developers with the **necessary information**, when **errors occur in the code.**
 
 We will write our own **test** before we start using some of the known frameworks.
 
