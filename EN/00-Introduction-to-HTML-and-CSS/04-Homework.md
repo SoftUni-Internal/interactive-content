@@ -15,7 +15,7 @@
 
 [image assetsSrc="js-application-design-patterns-11.png" /]
 
-[image assetsSrc="02.intro-to-html-tags-cardio-paragraphs" /]
+[image assetsSrc="02.intro-to-html-tags-cardio-paragraphs.png" /]
 
 js-application-design-patterns-11
 
