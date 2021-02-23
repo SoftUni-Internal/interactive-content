@@ -11,6 +11,8 @@
 
 **Note:** Be careful, because the uploaded file must be of **type zip**! .rar or .7zip will **NOT** be accepted!
 
+[image assetsSrc="01-intro-to-html-tags-simple-html-page.png" /]
+
 [/slide]
 
 [slide]
@@ -21,6 +23,9 @@
 [stream language="RO" videoId="444869128" /]
 [/video-vimeo]
 
+[code-task title="Simple HTML Page" taskId="c71fd240-cf92-43e1-95db-d79255ead525" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+
+[code-upload allowedMemory="30" /]
 
 [task-description]
 ## Description
