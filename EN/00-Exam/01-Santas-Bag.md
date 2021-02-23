@@ -16,7 +16,7 @@ It is also important to keep the project structure as described above.
 
 Download the resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
-## Problem description
+## Problem Description
 
 Create the classes that are described below.
 
