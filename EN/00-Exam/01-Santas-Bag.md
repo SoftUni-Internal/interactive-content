@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Santa's Bag of Presents
-[code-task title="Santa's Bag of Presents" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Santa's Bag of Presents" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-code"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
