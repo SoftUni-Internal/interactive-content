@@ -168,7 +168,7 @@ movie(['Rage', 'Fury', 'Cold', 'Ice', 'Fire', 'Furrry', 'ROAD RAGE'])
 [/input]
 [output]
 Title limit has been reached.
-The best movie for you is Fury its ASCII sum is: 584.
+The best movie for you is Furrry its ASCII sum is: 584.
 [/output]
 [/test]
 [test]
