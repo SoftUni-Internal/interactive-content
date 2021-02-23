@@ -389,7 +389,7 @@ specialNumber('32')
 [/test]
 [test]
 [input]
-specialNumber('454232')
+specialNumber('4545232')
 [/input]
 [output]
 4545232 is not special
