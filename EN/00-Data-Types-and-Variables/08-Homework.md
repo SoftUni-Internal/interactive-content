@@ -12,7 +12,11 @@ function gramophone(bandName, album, songName){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -36,22 +40,20 @@ The song **duration in seconds** is calculate by the given formula:
 
 As output you should print the following message:
 
-`The plate was rotated {rotations} times.`
+"**The plate was rotated {rotations} times.**"
 
 Rotations should be **rounded up.**
 
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|'Black Sabbath', 'Paranoid', 'War Pigs'| The plate was rotated 167 times. |
+|gramophone('Black Sabbath', 'Paranoid', 'War Pigs')| The plate was rotated 167 times. |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-Black Sabbath
-Paranoid
-War Pigs
+gramophone('Black Sabbath', 'Paranoid', 'War Pigs')
 [/input]
 [output]
 The plate was rotated 167 times.
@@ -59,9 +61,7 @@ The plate was rotated 167 times.
 [/test]
 [test]
 [input]
-Bhjkhbath
-Pudfgdgioid
-Wois
+gramophone('Bhjkhbath', 'Pudfgdgioid', 'Wois')
 [/input]
 [output]
 The plate was rotated 80 times.
@@ -69,9 +69,7 @@ The plate was rotated 80 times.
 [/test]
 [test]
 [input]
-gjhg
-jklcrj
-gyuguyguy
+gramophone('gjhg', 'jklcrj', 'gyuguyguy')
 [/input]
 [output]
 The plate was rotated 44 times.
@@ -79,9 +77,7 @@ The plate was rotated 44 times.
 [/test]
 [test]
 [input]
-bhjbhjbj
-cghcgh
-uiou
+gramophone('bhjbhjbj', 'cghcgh', 'uiou')
 [/input]
 [output]
 The plate was rotated 39 times.
@@ -89,9 +85,7 @@ The plate was rotated 39 times.
 [/test]
 [test]
 [input]
-Bvyuvh
-ji
-Wauios
+gramophone('Bvyuvh', 'ji', 'Wauios')
 [/input]
 [output]
 The plate was rotated 15 times.
@@ -99,9 +93,7 @@ The plate was rotated 15 times.
 [/test]
 [test]
 [input]
-gyuuath
-Pgyd
-Wabygs
+gramophone('gyuuath', 'Pgyd', 'Wabygs')
 [/input]
 [output]
 The plate was rotated 34 times.
@@ -109,9 +101,7 @@ The plate was rotated 34 times.
 [/test]
 [test]
 [input]
-tyuath
-Pargyu
-tuus
+gramophone('tyuath', 'Pargyu', 'tuus')
 [/input]
 [output]
 The plate was rotated 29 times.
