@@ -157,7 +157,7 @@ You won the tournament! Total raised money: 156.00
 [/test]
 [test]
 [input]
-tournament([5, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'Finish, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'Finish, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'Finish, 'sport, 'win, 'Finish, 'sport, 'win, 'sport, 'win, 'sport, 'win, 'Finish'])
+tournament([5, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 422.40
