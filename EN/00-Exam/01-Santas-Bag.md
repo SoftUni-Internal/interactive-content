@@ -129,28 +129,28 @@ Submit **single .zip file**, containing **christmas package, with the classes in
 import org.junit.Assert;
 import org.junit.Test;
 
-public class T00_1ValidateTypesExist \{
+public class T00_1ValidateTypesExist {
     private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
 
     @Test
-    public void validateTypesExist() \{
-        String\[\] classTypesToAssert = new String\[\]\{
+    public void validateTypesExist() {
+        String[] classTypesToAssert = new String[]{
                 "Bag",
                 "Present",
-        \};
+        };
 
-        for (String classType \: classTypesToAssert) \{
+        for (String classType : classTypesToAssert) {
             String message = String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, classType);
             Assert.assertNotNull(message, getType(classType));
-        \}
-    \}
+        }
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
-\}
+    }
+}
 [/input]
 [output]
 Test Passed!
