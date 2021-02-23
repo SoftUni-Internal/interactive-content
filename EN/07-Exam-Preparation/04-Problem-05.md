@@ -14,6 +14,15 @@ function budget(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. 

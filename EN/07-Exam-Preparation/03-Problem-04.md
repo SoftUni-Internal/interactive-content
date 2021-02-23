@@ -29,7 +29,7 @@ You have been hired by a cinema to create a program that calculates whether the 
 
 You are going to receive the count of seats in the hall and on the next console lines until the command "**Movie time!**" Is entered, you will get a number of newly arriving viewers.
 
-If the number of people currently entering the hall can be d**ivided by 3 without a remainder**, there is 5$ **discount** on the total price.
+If the number of people currently entering the hall can be **divided by 3 without a remainder**, there is 5$ **discount** on the total price.
 
 If there are **no more free seats in the hall**, the program must stop reading input from the console.
 

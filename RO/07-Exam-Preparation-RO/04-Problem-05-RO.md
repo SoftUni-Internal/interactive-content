@@ -17,6 +17,15 @@ function budget(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Ați fost angajat de o companie TV să scrieți un program care calculează dacă este posibil pentru clienții săi să cumpere serialele sale TV. 
