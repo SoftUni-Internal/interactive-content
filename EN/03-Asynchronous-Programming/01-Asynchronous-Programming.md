@@ -112,7 +112,7 @@ What happens here is that the code is executed **line by line**:
 
 - Firstly, "Jessica" is printed
 
-- After that, the callback function `printSam` is **scheduled to run after three seconds** 
+- After that, the callback function `printSam` is  **scheduled to run after three seconds** 
 
 - "Tyson" is printed since `printSam`'s three seconds **have not yet passed**
 
