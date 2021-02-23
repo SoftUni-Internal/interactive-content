@@ -342,14 +342,14 @@ Creați un program cu următoarele caracteristici:
 # Exemplu
 | **Date de intrare** | **Date de ieșire** |
 | --- | --- |
-| specialNumber(23)| 23 is not special |
+| specialNumber('23')| 23 is not special |
 
 
 [/task-description]
 [tests]
 [test]
 [input]
-specialNumber(55)
+specialNumber('55')
 [/input]
 [output]
 55 is special
@@ -357,7 +357,7 @@ specialNumber(55)
 [/test]
 [test]
 [input]
-specialNumber(22)
+specialNumber('22')
 [/input]
 [output]
 22 is special
@@ -365,7 +365,7 @@ specialNumber(22)
 [/test]
 [test]
 [input]
-specialNumber(73)
+specialNumber('73')
 [/input]
 [output]
 73 is not special
@@ -373,7 +373,7 @@ specialNumber(73)
 [/test]
 [test]
 [input]
-specialNumber(41)
+specialNumber('41')
 [/input]
 [output]
 41 is not special
@@ -381,7 +381,7 @@ specialNumber(41)
 [/test]
 [test]
 [input]
-specialNumber(32)
+specialNumber('32')
 [/input]
 [output]
 32 is special
@@ -389,7 +389,7 @@ specialNumber(32)
 [/test]
 [test]
 [input]
-specialNumber(454232)
+specialNumber('454232')
 [/input]
 [output]
 4545232 is not special
@@ -397,7 +397,7 @@ specialNumber(454232)
 [/test]
 [test]
 [input]
-specialNumber(88)
+specialNumber('88')
 [/input]
 [output]
 88 is special
