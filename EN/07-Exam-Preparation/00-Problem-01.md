@@ -8,11 +8,20 @@
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function tvSeries(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -20,7 +29,7 @@ Write a program, which calculates how long it will take you to watch all episode
 
 As input, you will receive the number of seasons, the number of episodes per season and the duration of each episode.
 
-In every episode there are advertisements, which increase its duration by `20%`.
+In every episode there are advertisements, which increase its duration by 20\%.
 
 You should also keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual.
 
@@ -43,27 +52,38 @@ Print out on the console the time needed to watch all of the episodes, rounded d
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['Lucifer', '3', '18', '55']`| Total time needed to watch the Lucifer series is 3594 minutes.|
+|tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
+|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 **Comments** 
 
-Duration of advertisements per episode: `20% from 55 = 11.0`
+Duration of advertisements per episode: 20\% from 55 \= 11.0
 
-Duration of an episode with the advertisements: `55 + 11 = 66.0`
+Duration of an episode with the advertisements: 55 \+ 11 \= 66.0
 
-Additional time to be added, because of the specials: `3*10 = 30`
+Additional time to be added, because of the specials: 3\*10 \= 30
 
-Total time needed to watch the episodes: `66 * 18 * 3 + 30 = 3594.0` 
+Total time needed to watch the episodes: 66 \* 18 \* 3 \+ 30 = 3594.0
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Flash
-5
-20
-51
+tvSeries(['Lucifer', 3, 18, 55])
+[/input]
+[output]
+Total time needed to watch the Lucifer series is 3594 minutes.
+[/output]
+[/test]
+[test open]
+[input]
+tvSeries(['Flash', 5, 20, 51])
 [/input]
 [output]
 Total time needed to watch the Flash series is 6170 minutes.
@@ -71,10 +91,7 @@ Total time needed to watch the Flash series is 6170 minutes.
 [/test]
 [test]
 [input]
-Origin
-10
-19
-50
+tvSeries(['Origin', 10, 19, 50])
 [/input]
 [output]
 Total time needed to watch the Origin series is 11500 minutes.
@@ -82,10 +99,7 @@ Total time needed to watch the Origin series is 11500 minutes.
 [/test]
 [test]
 [input]
-Arrow
-5
-24
-60
+tvSeries(['Arrow', 5, 24, 60])
 [/input]
 [output]
 Total time needed to watch the Arrow series is 8690 minutes.
@@ -93,10 +107,7 @@ Total time needed to watch the Arrow series is 8690 minutes.
 [/test]
 [test]
 [input]
-Vampires
-8
-25
-50
+tvSeries(['Vampires', 8, 25, 50])
 [/input]
 [output]
 Total time needed to watch the Vampires series is 12080 minutes.
@@ -104,10 +115,7 @@ Total time needed to watch the Vampires series is 12080 minutes.
 [/test]
 [test]
 [input]
-Tom & Jerry
-15
-25
-30
+tvSeries(['Tom & Jerry', 15, 25, 30])
 [/input]
 [output]
 Total time needed to watch the Tom & Jerry series is 13650 minutes.
@@ -115,10 +123,7 @@ Total time needed to watch the Tom & Jerry series is 13650 minutes.
 [/test]
 [test]
 [input]
-Teen wolf
-5
-20
-55
+tvSeries(['Teen wolf', 5, 20, 55])
 [/input]
 [output]
 Total time needed to watch the Teen wolf series is 6650 minutes.

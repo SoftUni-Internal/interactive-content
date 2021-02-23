@@ -11,18 +11,27 @@
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function tvSeries(input) {
    // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
 Scrieți un program care calculează cât timp vă va lua să vedeți toate episoadele unui serial TV, în minute.
 
 Ca date de intrare, veți primi un număr de episoade, numărul de episoade din fiecare sezon și durata fiecărui episod. 
 
-In fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului cu `20%`.
+In fiecare episod este inclusă o reclamă, ceea ce mărește durata episodului cu 20\%.
 
 Trebuie să rețineți și faptul că fiecare sezon se încheie cu un episod special care este mai lung cu 10 minute decât celelalte.
 
@@ -32,11 +41,11 @@ Ca intrare veți primi 4 elemente de consolă:
 
 - Numele serialului: un șir
 
-- Numărul sezoanelor: un număr întreg în intervalul \[1… 10\]
+- Numărul sezoanelor: un număr întreg în intervalul \[1...10\]
 
-- Numărul episoadelor: un număr întreg în intervalul \[10… 80\]
+- Numărul episoadelor: un număr întreg în intervalul \[10... 80\]
 
-- Durata unui episod standard fără reclame: dublă în intervalul \[40.0 ... 65.0 \]
+- Durata unui episod standard fără reclame: dublă în intervalul \[40.0...65.0 \]
 
 ## Ieșire
 
@@ -47,27 +56,37 @@ Imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunji
 # Example
 | **Intrare** | **Ieșire** |
 | --- | --- |
-|`['Lucifer', '3', '18', '55']`| Total time needed to watch the Lucifer series is 3594 minutes.|
+|tvSeries(['Lucifer', 3, 18, 55])| Total time needed to watch the Lucifer series is 3594 minutes.|
 
 **Comments** 
 
-Durata reclamelor din fiecare episod: `20% from 55 = 11.0`
+Durata reclamelor din fiecare episod: 20\% from 55 \= 11.0
 
-Durata unui episod cu publicitate: `55 + 11 = 66.0`
+Durata unui episod cu publicitate: 55 \+ 11 \= 66.0
 
-Timp adăugat pentru episoadele speciale: `3 * 10 = 30`
+Timp adăugat pentru episoadele speciale: 3\*10 \= 30
 
-Timpul total necesar pentru a vedea toate episoadele: `66 * 18 * 3 + 30 = 3594.0` 
+Timpul total necesar pentru a vedea toate episoadele: 66 \* 18 \* 3 \+ 30 = 3594.0
+
+## Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|tvSeries(['Flash', 5, 20, 51])| Total time needed to watch the Flash series is 6170 minutes.|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Flash
-5
-20
-51
+tvSeries(['Lucifer', 3, 18, 55])
+[/input]
+[output]
+Total time needed to watch the Lucifer series is 3594 minutes.
+[/output]
+[/test]
+[test open]
+[input]
+tvSeries(['Flash', 5, 20, 51])
 [/input]
 [output]
 Total time needed to watch the Flash series is 6170 minutes.
@@ -75,10 +94,7 @@ Total time needed to watch the Flash series is 6170 minutes.
 [/test]
 [test]
 [input]
-Origin
-10
-19
-50
+tvSeries(['Origin', 10, 19, 50])
 [/input]
 [output]
 Total time needed to watch the Origin series is 11500 minutes.
@@ -86,10 +102,7 @@ Total time needed to watch the Origin series is 11500 minutes.
 [/test]
 [test]
 [input]
-Arrow
-5
-24
-60
+tvSeries(['Arrow', 5, 24, 60])
 [/input]
 [output]
 Total time needed to watch the Arrow series is 8690 minutes.
@@ -97,10 +110,7 @@ Total time needed to watch the Arrow series is 8690 minutes.
 [/test]
 [test]
 [input]
-Vampires
-8
-25
-50
+tvSeries(['Vampires', 8, 25, 50])
 [/input]
 [output]
 Total time needed to watch the Vampires series is 12080 minutes.
@@ -108,10 +118,7 @@ Total time needed to watch the Vampires series is 12080 minutes.
 [/test]
 [test]
 [input]
-Tom & Jerry
-15
-25
-30
+tvSeries(['Tom & Jerry', 15, 25, 30])
 [/input]
 [output]
 Total time needed to watch the Tom & Jerry series is 13650 minutes.
@@ -119,10 +126,7 @@ Total time needed to watch the Tom & Jerry series is 13650 minutes.
 [/test]
 [test]
 [input]
-Teen wolf
-5
-20
-55
+tvSeries(['Teen wolf', 5, 20, 55])
 [/input]
 [output]
 Total time needed to watch the Teen wolf series is 6650 minutes.

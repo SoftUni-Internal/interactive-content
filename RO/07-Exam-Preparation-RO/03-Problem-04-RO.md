@@ -79,16 +79,7 @@ Continuăm până ce primim comanda `Movie time!` și apoi imprimăm datele de i
 [tests]
 [test open]
 [input]
-140
-15
-15
-10
-5
-6
-7
-8
-9
-Movie time!
+cinemaIncome([140, 15, 15, 10, 5, 6, 7, 8, 9, 'Movie time!'])
 [/input]
 [output]
 There are 65 seats left in the cinema.
@@ -97,16 +88,7 @@ Cinema income - 355$
 [/test]
 [test]
 [input]
-150
-15
-15
-15
-15
-15
-10
-10
-10
-Movie time!
+cinemaIncome([150, 15, 15, 15, 15, 15, 10, 10, 10, 'Movie time!'])
 [/input]
 [output]
 There are 45 seats left in the cinema.
@@ -115,12 +97,7 @@ Cinema income - 500$
 [/test]
 [test]
 [input]
-50
-10
-15
-15
-10
-9
+cinemaIncome([50, 10, 15, 15, 10, 9,])
 [/input]
 [output]
 The cinema is full.
@@ -129,14 +106,7 @@ Cinema income - 240$
 [/test]
 [test]
 [input]
-100
-15
-15
-15
-15
-15
-15
-15
+cinemaIncome([100, 15, 15, 15, 15, 15, 15, 15,])
 [/input]
 [output]
 The cinema is full.
@@ -145,20 +115,7 @@ Cinema income - 420$
 [/test]
 [test]
 [input]
-120
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-10
-Movie time!
+cinemaIncome([120, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 'Movie time!'])
 [/input]
 [output]
 There are 0 seats left in the cinema.
@@ -167,13 +124,7 @@ Cinema income - 600$
 [/test]
 [test]
 [input]
-50
-15
-15
-10
-6
-3
-3
+cinemaIncome([50, 15, 15, 10, 6, 3, 3])
 [/input]
 [output]
 The cinema is full.
@@ -182,15 +133,7 @@ Cinema income - 225$
 [/test]
 [test]
 [input]
-100
-15
-3
-6
-9
-12
-15
-10
-Movie time!
+cinemaIncome([100, 15, 3, 6, 9, 12, 15, 10, 'Movie time!'])
 [/input]
 [output]
 There are 30 seats left in the cinema.
@@ -199,12 +142,7 @@ Cinema income - 320$
 [/test]
 [test]
 [input]
-50
-15
-15
-10
-9
-9
+cinemaIncome([50, 15, 15, 10, 9, 9])
 [/input]
 [output]
 The cinema is full.
@@ -213,15 +151,7 @@ Cinema income - 230$
 [/test]
 [test]
 [input]
-120
-10
-15
-3
-6
-9
-12
-15
-Movie time!
+cinemaIncome([120, 10, 15, 3, 6, 9, 12, 15, 'Movie time!'])
 [/input]
 [output]
 There are 50 seats left in the cinema.

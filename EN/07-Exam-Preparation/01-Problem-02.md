@@ -8,24 +8,33 @@
 [code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function timeForLunch(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-During your lunch break you want to watch an episode of your favorite TV series.
+During your lunch break you want to **watch** an episode of your favorite TV series.
 
-Your task is to write a program that will help you determine whether you have enough time to watch an entire episode.
+Your task is to create a program that will help you determine whether you have **enough time** to watch an entire episode.
 
-During your lunchbreak you should also take some time to eat and relax.
+During your lunchbreak you should also take some time to **eat** and **relax**.
 
-You know, that the time you need to finish your lunch takes up precisely `1/8`(an eight) of your break and the time you need for relaxation will be exactly `1/4` (a quarter) of your total break time.
+You know, that the time you need to finish your lunch takes up precisely 1\/8 (**an eight**) of your break and the time you need for relaxation will be exactly 1\/4 (**a quarter**) of your **total** break time.
 
 
 ## Input
-You will receive 3 elements from the console:
+You will receive **3 elements** from the console:
 
 - Name of the series: string
 
@@ -49,28 +58,39 @@ Round the time up to the nearest whole number.
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|`['Game of Thrones', '60', '96']`| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
+|timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
 **Comments**
 
-Time for lunch: `96 * 1/8 = 12.0`
+Time for lunch: 96 \* 1\/8 = 12.0
 
-Time to relax: `96 * 1/4 = 24.0`
+Time to relax: 96 \* 1\/4 = 24.0
 
-Time left: `96 - 12 - 24 = 60`
+Time left: 96 \- 12 \- 24 = 60
 
 In this case, the time you would have left is more than or equal to the duration of the episode.
 
 Make sure that the right output is printed out.
+
+## Example
+| **Input** | **Output** |
+| --- | --- |
+|timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Riverdale
-57
-90
+timeForLunch(['Game of Thrones', 60, 96])
+[/input]
+[output]
+You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.
+[/output]
+[/test]
+[test open]
+[input]
+timeForLunch(['Riverdale', 57, 90])
 [/input]
 [output]
 You don't have enough time to watch Riverdale, you need 1 more minutes.
@@ -78,9 +98,7 @@ You don't have enough time to watch Riverdale, you need 1 more minutes.
 [/test]
 [test]
 [input]
-Gotham
-45
-120
+timeForLunch(['Gotham', 45, 120])
 [/input]
 [output]
 You have enough time to watch Gotham and would be left with 30 minutes of free time.
@@ -88,9 +106,7 @@ You have enough time to watch Gotham and would be left with 30 minutes of free t
 [/test]
 [test]
 [input]
-Arrow
-45
-60
+timeForLunch(['Arrow', 45, 60])
 [/input]
 [output]
 You don't have enough time to watch Arrow, you need 8 more minutes.
@@ -98,9 +114,7 @@ You don't have enough time to watch Arrow, you need 8 more minutes.
 [/test]
 [test]
 [input]
-CW
-45
-51
+timeForLunch(['CW', 45, 51])
 [/input]
 [output]
 You don't have enough time to watch CW, you need 14 more minutes.
@@ -108,9 +122,7 @@ You don't have enough time to watch CW, you need 14 more minutes.
 [/test]
 [test]
 [input]
-Lucifer
-50
-75
+timeForLunch(['Lucifer', 50, 75])
 [/input]
 [output]
 You don't have enough time to watch Lucifer, you need 4 more minutes.
@@ -118,9 +130,7 @@ You don't have enough time to watch Lucifer, you need 4 more minutes.
 [/test]
 [test]
 [input]
-Riverdale
-45
-80
+timeForLunch(['Riverdale', 45, 80])
 [/input]
 [output]
 You have enough time to watch Riverdale and would be left with 5 minutes of free time.
@@ -128,9 +138,7 @@ You have enough time to watch Riverdale and would be left with 5 minutes of free
 [/test]
 [test]
 [input]
-Game of thrones
-56
-90
+timeForLunch(['Game of thrones', 56, 90])
 [/input]
 [output]
 You have enough time to watch Game of thrones and would be left with 1 minutes of free time.
@@ -138,9 +146,7 @@ You have enough time to watch Game of thrones and would be left with 1 minutes o
 [/test]
 [test]
 [input]
-Lucifer
-45
-80
+timeForLunch(['Lucifer', 45, 80])
 [/input]
 [output]
 You have enough time to watch Lucifer and would be left with 5 minutes of free time.
