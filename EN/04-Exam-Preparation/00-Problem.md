@@ -19,7 +19,7 @@ public class Main {
 
 Write a password reset program that performs a series of commands on a predefined string. 
 
-First, you will receive a string. After that until the command "**Done**" is given, you will be receiving strings with commands split by a single space. 
+First, you will receive a string. Until the command "**Done**", you will be receiving strings with commands split by a single space. 
 
 The commands will be the following:
 
@@ -109,11 +109,11 @@ Substitute \| ^
 Done
 [/input]
 [output]
-icecream::hot::summer
-icecream::hot::mer
+icecream\:\:hot\:\:summer
+icecream\:\:hot\:\:mer
 icecream-hot-mer
 Nothing to replace!
-Your password is: icecream-hot-mer
+Your password is\: icecream-hot-mer
 [/output]
 [/test]
 [test open]
