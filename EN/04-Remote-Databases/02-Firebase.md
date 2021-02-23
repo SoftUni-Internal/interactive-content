@@ -19,7 +19,7 @@ The services are hosted in the cloud and scale with little to no effort on the p
 
 [slide hideTitle]
 
-# Firebase REST API CRUD Operations 1
+# Firebase REST API CRUD Operations: Part One
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-9-10-firebase-rest-api-crud-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -29,7 +29,9 @@ In this example, we will be using a Book database, which has already been create
 
 **Note: You may not get the same results as shown in the examples below.** 
 
-**This is because as people experiment with the database, they can delete or create new books. This way, the database will inevitably change.**
+**This is because as people experiment with the database, they can delete or create new books.**
+
+**This way, the database will inevitably change.**
 
 Open **Postman** and create a new request. 
 
@@ -141,7 +143,7 @@ The response from the server will be **200 OK**.  It also will return **null**.
 
 [slide hideTitle]
 
-# Firebase REST API CRUD Operations 2
+# Firebase REST API CRUD Operations: Part Two
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -281,7 +283,9 @@ Open a browser and type in "firebase console".
 
 [image assetsSrc="Remote-Databases(1).png" /]
 
-!!!!!!!!!!!!!!!!Once you are signed in, you should be able to see this window: тук май липсва снимка
+Once you are signed in, you should be able to see this window:
+
+[image assetsSrc="Remote-Databases(19).png" /]
 
 Create a new project by clicking on "Add project".
 
