@@ -6,15 +6,15 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for this task.**
 
-Write a JS program that displays arrival times for all buses by a given bus stop ID when a button is clicked.
+Create a program that displays the arrival times for all of the buses by a given bus stop ID when a button is clicked.
 
-When the button with ID **submit** is clicked, the name of the bus stop appears, and the list below gets filled with all the buses that are expected and their time of arrival.
+When the **Submit** button is clicked, the name of the bus stop appears and the list below gets filled with all of the buses that are expected and their time of arrival.
 
-Take the **value** of the input field with id **stopId**.
+Take the **value** of the input field with **ID** **stopId**.
 
 Submit a **GET** request to `https://js-applications1.firebaseio.com/businfo/{stopId}.json` \(replace the highlighted part with the correct value\) and parse the response.
 
-You will receive a JSON object in the format:
+You will receive a JSON object in the following format:
 
 ```
 stopId: {
@@ -23,13 +23,13 @@ stopId: {
 }
 ```
 
-Place the name property as text inside the div with ID **stopName** and each bus as a list item with text:
+Place the name property as a text inside the div with an ID **stopName** and each bus as a list item with the text:
 
 `Bus {busId} arrives in {time}`
 
-Replace all highlighted parts with the relevant value from the response.
+Replace all of the highlighted parts with the relevant value from the response.
 
-If the request is not successful, or the information is not in the expected format, display **Error** as **stopName** and nothing in the list. 
+If the request is not successful or the information is not in the expected format, display **Error** as **stopName** and nothing in the list. 
 
 The list should be cleared before every request is sent.
 
@@ -69,7 +69,7 @@ When the button is **clicked**, the results are **displayed** in the correspondi
 </div>
 ```
 
-If an error occurs, the stop name changes to **Error**:
+If an error occurs, the bus stop changes to **Error**:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-10.png" /]
 
@@ -85,7 +85,7 @@ If an error occurs, the stop name changes to **Error**:
 
 ## Hints
 
-The web host will respond with valid data to IDs 1287, 1308, 1327, and 2334.
+The web host will respond with valid data to the IDs 1287, 1308, 1327, and 2334.
 
 [/slide]
 
@@ -96,21 +96,21 @@ The web host will respond with valid data to IDs 1287, 1308, 1327, and 2334.
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-02.BUS-SCHEDULE.zip) **for this task.**
 
-Write a JS program that tracks the progress of a bus on its route and announces it inside an infobox.
+Create a program that tracks the progress of a bus on its route and announces it inside of an **infobox**.
 
-The program should display which is the upcoming stop and once the bus arrives, request from the server the name of the next one.
+The program should display the upcoming stop and once the bus arrives, request the name of the next one.
 
 The bus has two states – **moving** and **stopped**.
 
-When it is **stopped**, only the button **Depart** is **enabled**, while the infobox shows the name of the **current** stops.
+When it is **stopped**, only the button **Depart** is **enabled** while the infobox shows the name of the **current** stops.
 
-When it is **moving**, only the button **Arrive** is **enabled**, while the infobox shows the name of the **upcoming** stops. 
+When it is **moving**, only the button **Arrive** is **enabled** while the infobox shows the name of the **upcoming** stops. 
 
-Initially, the info box shows **Not Connected**, and the **Arrive** button is **disabled**.
+Initially, the info box shows **Not Connected** and the **Arrive** button is **disabled**.
 
 The ID of the first stop is **depot**.
 
-When the **Depart** button is clicked, make a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
+When the **Depart** button is clicked, send a **GET** request to the server with the ID of the current stop to address `https://js-applications1.firebaseio.com/schedule/{currentId}.json` \(replace the highlighted part with the relevant value\).
 
 As a response, you will receive a JSON object in the following format:
 
@@ -129,7 +129,7 @@ The infobox text should look like this \(replace the highlighted part with the r
 
 When the "Arrive" button is clicked, update the text, disable the **Arrive** button and enable the **Depart** button.
 
-The infobox text should look like this (replace the highlighted part with the relevant value):
+The infobox text should look like this \(replace the highlighted part with the relevant value\):
 
 `Arriving at {stopName}`
 
@@ -155,7 +155,7 @@ Initially, the info box shows "Not Connected" and the arrive button is disabled.
 </div>
 ```
 
-When Depart is clicked, a request is made with the first ID.
+When **Depart** is clicked, a request is made with the first ID.
 
 The infobox is updated with the new information and the buttons are changed:
 
@@ -173,9 +173,9 @@ The infobox is updated with the new information and the buttons are changed:
 </div>
 ```
 
-Clicking Arrive changes the infobox and swaps the buttons.
+Clicking on the **Arrive** button changes the infobox and swaps the buttons.
 
-This allows Depart to be clicked again, which makes a new request and updates the information:
+This allows **Depart** to be clicked again, which makes a new request and updates the information:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-16.png" /]
 
@@ -208,13 +208,13 @@ This allows Depart to be clicked again, which makes a new request and updates th
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-03.MESSENGER.zip) **for this task.**
 
-Write a JS program that records and displays messages.
+Create a program that records and displays messages.
 
-The user can post a message, supplying a name and content, and retrieve all currently recorded messages.
+The user can post a message, containing a name and content and retrieve all of the currently recorded messages.
 
 **Firebase url** for the requests - `https://rest-messanger.firebaseio.com/messanger`.
 
-When **Send button** is clicked, you should create a **new object** and send a **post request** to the firebase URL.
+When the **Send button** is clicked, you should create a **new object** and send a **post request** to the firebase URL.
 
 Use the following message structure:
 
@@ -225,11 +225,11 @@ Use the following message structure:
 }
 ```
 
-The key associated with each message object is not essential - when making a **POST** request with the message object as a parameter, Firebase will automatically assign a random key.
+The key associated with each message object is not required. When making a **POST** request with the message object as a parameter, Firebase will automatically assign a random key.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-18.png" /]
 
-If you click over the **Refresh button**, you should **get all** messages with **GET request** and display them into the text area.
+If you click on the **Refresh button**, you should **get all** of the messages with a **GET request** and display them in a text area.
 
 Use the following message format:
 
@@ -252,13 +252,13 @@ Use the following message format:
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-04.PHONEBOOK.zip) **for this task.**
 
-Write a JS program that can load, create and delete entries from a PhoneBook.
+Create a program that can load, create and delete entries from a PhoneBook.
 
-You will be given an HTML template to which you must bind the needed functionality.
+Using the HTML template, to which you should bind the needed functionality.
 
-When the **Load button** is clicked, a **GET** request should be made to the server to get all phoneBook entries.
+When the **Load button** is clicked, a **GET** request should be made to the server to get all of the **phoneBook** entries.
 
-Each received entry should be in a li inside the **ul** with `id="phonebook"` in the following format with text `<person>: <phone>` and a **Delete button** attached.
+Each received entry should be in a **li** tag inside the **ul** tag with an `id="phonebook"` in the following format with text `<person>: <phone>` and a **Delete button** attached.
 
 Pressing the **Delete** button should send a **DELETE** request to the server and delete the entry.
 
@@ -266,11 +266,11 @@ The received response will be an object in the following format:
 
 `{<key>:{person:<person>, phone:<phone>}, <key2>:{person:<person2>, phone:<phone2>,…}`
 
-where `<key>` is a unique key given by the server, and `<person>` and `<phone>` are the actual values.
+where `<key>` is a unique key given by the server and `<person>` and `<phone>` are the actual values.
 
-When the **Create** button is clicked, a new **POST** request should be made to the server with the information from the Person and Phone textboxes, the Person and Phone textboxes should be cleared, and the PhoneBook should be automatically reloaded \(like if the **Load** button was pressed\).
+When the **Create** button is clicked, a new **POST** request should be made to the server with the information from the Person and Phone textboxes. The Person and Phone textboxes should be cleared and the PhoneBook should be automatically reloaded \(like if the **Load** button was pressed\).
 
-The data sent on a **POST** request should be a valid JSON object, containing properties **person** and **phone**.
+The data sent on a **POST** request should be a valid JSON object, containing the properties **person** and **phone**.
 
 Example format:
 
@@ -285,7 +285,7 @@ The URL to which your program should make requests is: `https://phonebook-nakov.
 
 **GET** and **POST** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook.json`, while **DELETE** requests should go to `https://phonebook-nakov.firebaseio.com/phonebook/<key>.json`, where `<key>` is the unique key of the entry \(you can find out the **key** from the key property in the **GET** request\)
 
-**You may create your app** in Firebase.
+You can use Firebase to create your app.
 
 ## Screenshots:
 
