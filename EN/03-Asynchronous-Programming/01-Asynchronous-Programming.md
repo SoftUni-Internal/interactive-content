@@ -12,7 +12,7 @@ It queues event handlers in the **Event queue** and executes them in the **Call 
 
 The event loop has one simple job — to monitor the **Call stack** and the **Callback queue**. 
 
-If the Call stack is empty, the Event Loop will take the **first event** from the queue and will push it to the Call Stack, which will run it.
+If the Call stack is empty, the event loop will take the **first event** from the queue and will push it to the Call stack, which will run it.
 
 [/slide]
 
