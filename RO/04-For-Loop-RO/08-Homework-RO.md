@@ -463,7 +463,7 @@ zigZagSum(8, ['45', '5', '654', '4', '5', '345', '123', '2'])
 [/test]
 [test]
 [input]
-zigZagSum(3, ['3453', '456345', '547546'])
+zigZagSum(3, ['3453', '456456', '547546'])
 [/input]
 [output]
 94543
@@ -593,7 +593,7 @@ divideWithoutRemainder(9, ['34', '0', '453', '45', '2342', '654', '76', '2', '56
 [/test]
 [test]
 [input]
-divideWithoutRemainder(10, ['34', '12', '0', '453', '45', '2343', '654', '76', '2', '56'])
+divideWithoutRemainder(10, ['34', '12', '0', '453', '45', '2342', '654', '76', '2', '56'])
 [/input]
 [output]
 80.00\%
@@ -698,7 +698,7 @@ vowelSum(5, ['a', 'g', 'c', 'q', 'i'])
 [/test]
 [test]
 [input]
-vowelSum(6, ['a', 'e', 'c', 'q', 'i' 'u'])
+vowelSum(6, ['a', 'e', 'c', 'q', 'i', 'u'])
 [/input]
 [output]
 11
