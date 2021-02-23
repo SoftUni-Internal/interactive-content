@@ -64,7 +64,7 @@ Print on the console:
 
 `The best movie for you is {movie title} its ASCII sum is: {sum of symbols}.`
 
-# Example
+## Example
 | **Input** | **Output** |
 | --- | --- |
 |movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])| The best movie for you is Breaking bad its ASCII sum is: 878.|
@@ -78,6 +78,11 @@ The second letter has a value of 97 and we subtract from its title length \* 2 f
 Similarly, we proceed with each subsequent letter until we receive the final amount of 563.
 
 Upon receiving the "**STOP**" command, we print the title with the highest value, which is **Breaking** bad with a sum of 878.
+## Example
+| **Input** | **Output** |
+| --- | --- |
+|movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
+||The best movie for you is Harry Potter its ASCII sum is: 948.|
 
 [/task-description]
 [code-io /]
@@ -89,6 +94,16 @@ movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])
 [output]
 The best movie for you is Breaking bad its ASCII sum is: 878.
 [/output]
+[/test]
+[test open]
+[input]
+movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])
+[/input]
+[output]
+Title limit has been reached.
+The best movie for you is Harry Potter its ASCII sum is: 948.
+[/output]
+[/test]
 [test]
 [input]
 movie(['The maze', 'School story 2', 'Shrek 2', 'Ice age', 'STOP'])
@@ -153,12 +168,12 @@ movie(['Rage', 'Fury', 'Cold', 'Ice', 'Fire', 'Furrry', 'ROAD RAGE'])
 [/input]
 [output]
 Title limit has been reached.
-The best movie for you is Furrry its ASCII sum is: 584.
+The best movie for you is Fury its ASCII sum is: 584.
 [/output]
 [/test]
 [test]
 [input]
-movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY, 'Elysium, 'Vortex', 'Ice Age'])
+movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'Ice Age'])
 [/input]
 [output]
 Title limit has been reached.
@@ -167,7 +182,7 @@ The best movie for you is War of Titans its ASCII sum is: 942.
 [/test]
 [test]
 [input]
-movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'STOP',
+movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'STOP'])
 [/input]
 [output]
 The best movie for you is War of Titans its ASCII sum is: 942.

@@ -79,6 +79,12 @@ A doua literă are valoarea 97 și scădem lungimea titlului \* 2 din suma 97 \-
 
 După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
 
+## Example
+| **Intrare** | **Ieșire** |
+| --- | --- |
+|movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])| Title limit has been reached.|
+||The best movie for you is Harry Potter its ASCII sum is: 948.|
+
 [/task-description]
 [code-io /]
 [tests]
@@ -89,6 +95,16 @@ movie(['Matrix', 'Breaking bad', 'Legend', 'STOP'])
 [output]
 The best movie for you is Breaking bad its ASCII sum is: 878.
 [/output]
+[/test]
+[test open]
+[input]
+movie(['Wrong turn', 'The maze', 'Area 51', 'Night Club', 'Ice age', 'Harry Potter', 'Wizards'])
+[/input]
+[output]
+Title limit has been reached.
+The best movie for you is Harry Potter its ASCII sum is: 948.
+[/output]
+[/test]
 [test]
 [input]
 movie(['The maze', 'School story 2', 'Shrek 2', 'Ice age', 'STOP'])
@@ -153,12 +169,12 @@ movie(['Rage', 'Fury', 'Cold', 'Ice', 'Fire', 'Furrry', 'ROAD RAGE'])
 [/input]
 [output]
 Title limit has been reached.
-The best movie for you is Furrry its ASCII sum is: 584.
+The best movie for you is Fury its ASCII sum is: 584.
 [/output]
 [/test]
 [test]
 [input]
-movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY, 'Elysium, 'Vortex', 'Ice Age'])
+movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'Ice Age'])
 [/input]
 [output]
 Title limit has been reached.
@@ -167,7 +183,7 @@ The best movie for you is War of Titans its ASCII sum is: 942.
 [/test]
 [test]
 [input]
-movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'STOP',
+movie(['Heavy Metal', 'Armagedon', 'War of Titans', 'TROY', 'Elysium', 'Vortex', 'STOP'])
 [/input]
 [output]
 The best movie for you is War of Titans its ASCII sum is: 942.
