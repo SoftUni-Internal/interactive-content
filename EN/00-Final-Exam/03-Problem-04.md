@@ -6,14 +6,18 @@
 [code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function poodForPets(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -73,7 +77,7 @@ The percentage of food **must be formatted to the second digit after the decimal
 
 | **Input** | **Output** |
 | --- | --- |
-|`[3, 1000, 300, 20, 100, 30, 110, 40]` | Total eaten biscuits: 15gr. |
+|poodForPets([3, 1000, 300, 20, 100, 30, 110, 40]) | Total eaten biscuits: 15gr. |
 || 60.00% of the food has been eaten. |
 || 85.00% eaten from the dog. |
 || 15.00% eaten from the cat. |
@@ -96,7 +100,7 @@ We have **3 days** and a total amount of food: **1000 grams.**
 
 On this day they should also **receive a prize - cookies:**
 
-- `10% of 110 + 40 - 15 grams.`
+- 10\% of 110 \+ 40 \- 15 grams.
 
 **Total food eaten: 600 grams.**
 
@@ -106,26 +110,27 @@ On this day they should also **receive a prize - cookies:**
 
 - by the cat: 90 grams
 
-`600g of 1000g = 60%` of the food is eaten.
+600g of 1000g = 60\% of the food is eaten.
 
-`510g of 600g = 85%` was eaten by the dog.
+510g of 600g = 85\% was eaten by the dog.
 
-`90g of 600g = 15%` was eaten by the cat.
+90g of 600g = 15\% was eaten by the cat.
 
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|poodForPets([3, 500, 100, 30, 110, 25, 120, 35]) | Total eaten biscuits: 16gr.|
+|| 84.00% of the food has been eaten. |
+|| 78.57% eaten from the dog. |
+|| 21.43% eaten from the cat. |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3
-1000
-300
-20
-100
-30
-110
-40
+poodForPets([3, 1000, 300, 20, 100, 30, 110, 40])
 [/input]
 [output]
 Total eaten biscuits: 15gr.
@@ -136,14 +141,7 @@ Total eaten biscuits: 15gr.
 [/test]
 [test open]
 [input]
-3
-500
-100
-30
-110
-25
-120
-35
+poodForPets([3, 500, 100, 30, 110, 25, 120, 35])
 [/input]
 [output]
 Total eaten biscuits: 16gr.
@@ -154,20 +152,7 @@ Total eaten biscuits: 16gr.
 [/test]
 [test]
 [input]
-6
-6000
-200
-100
-300
-30
-100
-55
-156
-25
-426
-65
-200
-29
+poodForPets([6, 6000, 200, 100, 300, 30, 100, 55, 156, 25, 426, 65, 200, 29])
 [/input]
 [output]
 Total eaten biscuits: 38gr.
@@ -178,18 +163,7 @@ Total eaten biscuits: 38gr.
 [/test]
 [test]
 [input]
-5
-5014
-236
-124
-365
-120
-146
-66
-208
-140
-369
-96
+poodForPets([5, 5014, 236, 124, 365, 120, 146, 66, 208, 140, 369, 96])
 [/input]
 [output]
 Total eaten biscuits: 21gr.
@@ -200,12 +174,7 @@ Total eaten biscuits: 21gr.
 [/test]
 [test]
 [input]
-2
-700
-200
-33
-300
-50
+poodForPets([2, 700, 200, 33, 300, 50])
 [/input]
 [output]
 Total eaten biscuits: 0gr.
@@ -216,22 +185,7 @@ Total eaten biscuits: 0gr.
 [/test]
 [test]
 [input]
-7
-7000
-200
-33
-300
-50
-369
-258
-456
-246
-666
-66
-648
-215
-741
-231
+poodForPets([7, 7000, 200, 33, 300, 50, 369, 258, 456, 246, 666, 66, 648, 215, 741, 231])
 [/input]
 [output]
 Total eaten biscuits: 149gr.
@@ -242,22 +196,7 @@ Total eaten biscuits: 149gr.
 [/test]
 [test]
 [input]
-7
-3000
-200
-33
-300
-50
-369
-25
-234
-24
-466
-66
-648
-21
-541
-23
+poodForPets([7, 3000, 200, 33, 300, 50, 369, 25, 234, 24, 466, 66, 648, 21, 541, 23])
 [/input]
 [output]
 Total eaten biscuits: 106gr.
@@ -268,18 +207,7 @@ Total eaten biscuits: 106gr.
 [/test]
 [test]
 [input]
-5
-5584
-436
-224
-565
-220
-346
-166
-508
-148
-469
-95
+poodForPets([5, 5584, 436, 224, 565, 220, 346, 166, 508, 148, 469, 95])
 [/input]
 [output]
 Total eaten biscuits: 51gr.
@@ -290,14 +218,7 @@ Total eaten biscuits: 51gr.
 [/test]
 [test]
 [input]
-3
-900
-176
-36
-159
-19
-399
-111
+poodForPets([3, 900, 176, 36, 159, 19, 399, 111])
 [/input]
 [output]
 Total eaten biscuits: 51gr.
@@ -308,14 +229,7 @@ Total eaten biscuits: 51gr.
 [/test]
 [test]
 [input]
-3
-2000
-300
-110
-365
-120
-444
-50
+poodForPets([3, 2000, 300, 110, 365, 120, 444, 50])
 [/input]
 [output]
 Total eaten biscuits: 49gr.
@@ -326,16 +240,7 @@ Total eaten biscuits: 49gr.
 [/test]
 [test]
 [input]
-4
-5000
-666
-230
-156
-32
-400
-200
-500
-190
+poodForPets([4, 5000, 666, 230, 156, 32, 400, 200, 500, 190])
 [/input]
 [output]
 Total eaten biscuits: 60gr.

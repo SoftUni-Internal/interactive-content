@@ -4,14 +4,18 @@
 [code-task title="Mountain Run" taskId="JavaScript-Programming-Basics-exam-Mountain-Run" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function mountainRun(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -64,29 +68,33 @@ The result must be **formatted** to the second digit after the decimal point.
 
 | **Input** | **Output** |
 | --- | --- |
-|`[10164, 1400, 25]` | No! He was 25676.00 seconds slower. |
+|mountainRun([10164, 1400, 25]) | No! He was 25676.00 seconds slower. |
 
 **Comments**
 
-- George has to **climb 1400 m.**:  `1400 * 25 = 35000 seconds`
+- George has to **climb 1400 m.**:  1400 \* 25 = 35000 seconds
 
-- Every **50 meters**, **30 seconds are added** to his time: `(1400 / 50) * 30 = 840 seconds`
+- Every **50 meters**, **30 seconds are added** to his time: (1400 \/ 50) \* 30 = 840 seconds
 
-- Total time: `35000 + 840 = 35840 seconds`
+- Total time: 35000 \+ 840 = 35840 seconds
 
-- But because `10164 < 35840`, it did not **improve the record.**
+- But because 10164 \< 35840, it did not **improve the record.**
 
-- He **did not have enough time** to improve the record: `35840 - 10164 = 25676 seconds`
+- He **did not have enough time** to improve the record: 35840 \- 10164 = 25676 seconds
 
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|mountainRun([5554.36, 1340, 3.23]) | Yes! The new record is 5108.20 seconds. |
+|mountainRun([1377, 389, 3])|No! He was 0.00 seconds slower.|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-10164
-1400
-25
+mountainRun([10164, 1400, 25])
 [/input]
 [output]
 No! He was 25676.00 seconds slower.
@@ -94,9 +102,7 @@ No! He was 25676.00 seconds slower.
 [/test]
 [test open]
 [input]
-5554.36
-1340
-3.23
+mountainRun([5554.36, 1340, 3.23])
 [/input]
 [output]
 Yes! The new record is 5108.20 seconds.
@@ -104,9 +110,7 @@ Yes! The new record is 5108.20 seconds.
 [/test]
 [test open]
 [input]
-1377
-389
-3
+mountainRun([1377, 389, 3])
 [/input]
 [output]
 No! He was 0.00 seconds slower.
@@ -114,9 +118,7 @@ No! He was 0.00 seconds slower.
 [/test]
 [test]
 [input]
-1052
-100
-9.77
+mountainRun([1052, 100, 9.77])
 [/input]
 [output]
 Yes! The new record is 1037.00 seconds.
@@ -124,9 +126,7 @@ Yes! The new record is 1037.00 seconds.
 [/test]
 [test]
 [input]
-108
-89
-0.5
+mountainRun([108, 89, 0.5])
 [/input]
 [output]
 Yes! The new record is 74.50 seconds.
@@ -134,9 +134,7 @@ Yes! The new record is 74.50 seconds.
 [/test]
 [test]
 [input]
-100000
-100000
-1000
+mountainRun([100000, 100000, 1000])
 [/input]
 [output]
 No! He was 99960000.00 seconds slower.
@@ -144,9 +142,7 @@ No! He was 99960000.00 seconds slower.
 [/test]
 [test]
 [input]
-99999.9999
-74738.1
-0.2
+mountainRun([99999.9999, 74738.1, 0.2])
 [/input]
 [output]
 Yes! The new record is 59767.62 seconds.
@@ -154,9 +150,7 @@ Yes! The new record is 59767.62 seconds.
 [/test]
 [test]
 [input]
-2.25
-5
-0.5
+mountainRun([2.25, 5, 0.5])
 [/input]
 [output]
 No! He was 0.25 seconds slower.
@@ -164,9 +158,7 @@ No! He was 0.25 seconds slower.
 [/test]
 [test]
 [input]
-344444
-378
-417
+mountainRun([344444, 378, 417])
 [/input]
 [output]
 Yes! The new record is 157836.00 seconds.
@@ -174,9 +166,7 @@ Yes! The new record is 157836.00 seconds.
 [/test]
 [test]
 [input]
-1174
-150
-7
+mountainRun([1174, 150, 7])
 [/input]
 [output]
 Yes! The new record is 1140.00 seconds.
@@ -184,9 +174,7 @@ Yes! The new record is 1140.00 seconds.
 [/test]
 [test]
 [input]
-7.55
-5
-0.02
+mountainRun([7.55, 5, 0.02])
 [/input]
 [output]
 Yes! The new record is 0.10 seconds.
@@ -194,9 +182,7 @@ Yes! The new record is 0.10 seconds.
 [/test]
 [test]
 [input]
-357.5
-15
-23
+mountainRun([357.5, 15, 23])
 [/input]
 [output]
 Yes! The new record is 345.00 seconds.
@@ -204,9 +190,7 @@ Yes! The new record is 345.00 seconds.
 [/test]
 [test]
 [input]
-3164
-3000
-0.221
+mountainRun([3164, 3000, 0.221])
 [/input]
 [output]
 Yes! The new record is 2463.00 seconds.
@@ -214,9 +198,7 @@ Yes! The new record is 2463.00 seconds.
 [/test]
 [test]
 [input]
-1401
-891
-1
+mountainRun([1401, 891, 1])
 [/input]
 [output]
 No! He was 0.00 seconds slower.
@@ -224,9 +206,7 @@ No! He was 0.00 seconds slower.
 [/test]
 [test]
 [input]
-1526
-68
-22
+mountainRun([1526, 68, 22])
 [/input]
 [output]
 No! He was 0.00 seconds slower.

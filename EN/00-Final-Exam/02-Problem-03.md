@@ -6,11 +6,20 @@
 [code-task title="Energy Booster" taskId="JavaScript-Programming-Basics-Energy-Booster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function energyBooster(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -32,8 +41,8 @@ Create a function that calculates the total amount for the order.
 
 | \- | Watermelon  | Mango | Pineapple   | Raspberry |
 | :---:       |    :----:   |   :---:     |  :---:     | :---:     |
-| `2 pcs. (small)` | $56 pcs.  | $36.66 pcs. |$42.10 pcs. | $20 pcs.|
-| `5 pcs. (big)`  | $28.70 pcs.  | $19.60 pcs. |$24.80 pcs. | $15.20 pcs.|
+| 2 pcs. (small) | $56 pcs.  | $36.66 pcs. |$42.10 pcs. | $20 pcs.|
+| 5 pcs. (big) | $28.70 pcs.  | $19.60 pcs. |$24.80 pcs. | $15.20 pcs.|
 
 For orders:
 
@@ -47,11 +56,11 @@ The input comes as an **array of which contains three elements:**
 
 - **First Element:**  
 
-Flavor, text with possibilities: `Watermelon`, `Mango`, `Pineapple` or `Raspberry`
+Flavor, text with possibilities: **Watermelon**, **Mango**, **Pineapple** or **Raspberry**
 
 - **Second Element:** 
 
-Cut size, text with options: `small` or `big`
+Cut size, text with options: **small** or **big**
 
 - **Third Element:** 
 
@@ -67,28 +76,33 @@ Number of ordered cuts: integer in the interval \[1 … 10000\]
 
 | **Input** | **Output** |
 | --- | --- |
-|`['Watermelon', 'big', '4']` | 487.90 dollars. |
+|energyBooster(['Watermelon', 'big', '4']) | 487.90 dollars. |
 
 **Comments**
 
-- The price of a large package of watermelon bars is `5 * 28.70 = $143.50`
+- The price of a large package of watermelon bars is 5 \* 28.70 = $143.50
 
-- The price of 4 sets: `$574`
+- The price of 4 sets: $574
 
-- The customer receives a 15\% discount: `400 <= 574 <= 1000`
+- The customer receives a 15\% discount: 400 \<\= 574 \<\= 1000
 
-- `15% from 574 = $86.1 discount`
+- 15\% from 574 = \$86.1 discount
 
-- Final price: `574 - 86.1 = $487.9`
+- Final price: 574 \- 86.1 = \$487.9
+
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|energyBooster(['Pineapple', 'small', 1]) | 84.20 dollars. |
+|energyBooster(['Raspberry', 'small', 50])|1000.00 dollars.|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Watermelon
-big
-4
+energyBooster(['Watermelon', 'big', '4'])
 [/input]
 [output]
 487.90 dollars.
@@ -96,9 +110,7 @@ big
 [/test]
 [test open]
 [input]
-Pineapple
-small
-1
+energyBooster(['Pineapple', 'small', 1])
 [/input]
 [output]
 84.20 dollars.
@@ -106,9 +118,7 @@ small
 [/test]
 [test open]
 [input]
-Raspberry
-small
-50
+energyBooster(['Raspberry', 'small', 50])
 [/input]
 [output]
 1000.00 dollars.
@@ -116,9 +126,7 @@ small
 [/test]
 [test open]
 [input]
-Mango
-big
-8
+energyBooster(['Mango', 'big', 8])
 [/input]
 [output]
 666.40 dollars.
@@ -126,9 +134,7 @@ big
 [/test]
 [test]
 [input]
-Raspberry
-small
-25
+energyBooster(['Raspberry', 'small', 25])
 [/input]
 [output]
 850.00 dollars.
@@ -136,9 +142,7 @@ small
 [/test]
 [test]
 [input]
-Raspberry
-small
-10
+energyBooster(['Raspberry', 'small', 10])
 [/input]
 [output]
 340.00 dollars.
@@ -146,9 +150,7 @@ small
 [/test]
 [test]
 [input]
-Watermelon
-big
-44
+energyBooster(['Watermelon', 'big', 44])
 [/input]
 [output]
 3157.00 dollars.
@@ -156,9 +158,7 @@ big
 [/test]
 [test]
 [input]
-Pineapple
-small
-2
+energyBooster(['Pineapple', 'small', 2])
 [/input]
 [output]
 168.40 dollars.
@@ -166,9 +166,7 @@ small
 [/test]
 [test]
 [input]
-Mango
-big
-10
+energyBooster(['Mango', 'big', 10])
 [/input]
 [output]
 833.00 dollars.
@@ -176,9 +174,7 @@ big
 [/test]
 [test]
 [input]
-Watermelon
-big
-0
+energyBooster(['Watermelon', 'big', 0])
 [/input]
 [output]
 0.00 dollars.
@@ -186,9 +182,7 @@ big
 [/test]
 [test]
 [input]
-Pineapple
-big
-77
+energyBooster(['Pineapple', 'big', 77])
 [/input]
 [output]
 4774.00 dollars.
@@ -196,9 +190,7 @@ big
 [/test]
 [test]
 [input]
-Watermelon
-small
-3
+energyBooster(['Watermelon', 'small', 3])
 [/input]
 [output]
 336.00 dollars.
@@ -206,9 +198,7 @@ small
 [/test]
 [test]
 [input]
-Mango
-small
-11
+energyBooster(['Mango', 'small', 11])
 [/input]
 [output]
 685.54 dollars.
@@ -216,9 +206,7 @@ small
 [/test]
 [test]
 [input]
-Pineapple
-small
-10000
+energyBooster(['Pineapple', 'small', 10000])
 [/input]
 [output]
 421000.00 dollars.

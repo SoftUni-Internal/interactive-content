@@ -5,17 +5,26 @@
 [code-task title="Tournament of Christmas" taskId="JavaScript-Programming-Basics-exam-Tournament-of-Christmas" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function tournament(input) {
    // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
 Create a function that tracks your team's performance at a Christmas charity tournament. 
 
-Every day you get game names until the `Finish` command. 
+Every day you get game names until the "**Finish**" command. 
 
 By winning each game, you win **$20 for the charity**. 
 
@@ -31,19 +40,19 @@ You will never have an equal number of won and lost games.
 
 **The input comes as an array of elements.** 
 
-Until you receive the `Finish` command, you receive:
+Until you receive the "**Finish**" command, you receive:
 
 - **First Element:**
 
 **The number of days of the tournament**: an integer in the interval \[1… 20\]
 
-- **Until you receive the** `Finish` **command, read:**
+- **Until you receive the** "**Finish**" **command, read:**
 
 **Sport** - String
 
 - **For each sport read:**
 
-**Result** - Text with possibilities:  `win` or `lose`
+**Result** - Text with possibilities:  "**win**" or "**lose**"
 
 ## Output
 
@@ -63,7 +72,7 @@ The money should be **formatted to the second digit after the decimal point.**
 
 | **Input** | **Output** |
 | --- | --- |
-|`['2', 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']` | You won the tournament! Total raised money: 132.00 |
+|tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
 
 **Comments**
 
@@ -71,52 +80,44 @@ The tournament **is 2 days.**
 
 The first day:
 
-- We play volleyball and win `$20`
-- We play football and lose `$0`
-- We play basketball and win `$20`
+- We play volleyball and win $20
+- We play football and lose $0
+- We play basketball and win $20
 
-We get the `Finish` command and the games for the day are over. 
+We get the "**Finish**" command and the games for the day are over. 
 
-Earned money `20 + 0 + 20 = $40.` 
+Earned money 20 \+ 0 \+ 20 = $40. 
 
-We have more games won than lost, respectively we increase the money of the day by `10% -> $44`.
+We have more games won than lost, respectively we increase the money of the day by 10\% \-\> $44.
 
 The second day:
 
-- We play golf and win `$20`
-- We play tennis and win  `$20`
-- We play badminton and win `$20`
+- We play golf and win $20
+- We play tennis and win  $20
+- We play badminton and win $20
 
-We get the `Finish` command and the games for the day are over.
+We get the "**Finish**" command and the games for the day are over.
 
-Earned money `20 + 20 + 20 = $60` 
+Earned money 20 \+ 20 \+ 20 = $60
 
-We have only won games, respectively we increase the money of the day by `10% -> $66`.
+We have only won games, respectively we increase the money of the day by 10\% \-\> $66.
 
-Earned money from both days: `44 + 66 = $ 110`
+Earned money from both days: 44 \+ 66 = $110.
 
-Because we have more wins than losses, we win the tournament and increase the money by `20% -> $132`
+Because we have more wins than losses, we win the tournament and increase the money by 20\% \-\> $132.
+
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-volleyball
-win
-football
-lose
-basketball
-win
-Finish
-golf
-win
-tennis
-win
-badminton
-win
-Finish
+tournament([2, 'volleyball', 'win', 'football', 'lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 132.00
@@ -124,28 +125,7 @@ You won the tournament! Total raised money: 132.00
 [/test]
 [test open]
 [input]
-3
-darts
-lose
-handball
-lose
-judo
-win
-Finish
-snooker
-lose
-swimming
-lose
-squash
-lose
-table tennis
-win
-Finish
-volleyball
-win
-basketball
-win
-Finish
+tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 84.00
@@ -153,13 +133,7 @@ You lost the tournament! Total raised money: 84.00
 [/test]
 [test]
 [input]
-2
-sport
-lose
-Finish
-sport
-lose
-Finish
+tournament([2, 'sport', 'lose', 'Finish', 'sport', 'lose', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 0.00
@@ -167,13 +141,7 @@ You lost the tournament! Total raised money: 0.00
 [/test]
 [test]
 [input]
-2
-sport
-win
-Finish
-sport
-win
-Finish
+tournament([2, 'sport', 'win', 'Finish', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 52.80
@@ -181,28 +149,7 @@ You won the tournament! Total raised money: 52.80
 [/test]
 [test]
 [input]
-3
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-lose
-sport
-win
-Finish
+tournament([3, 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 156.00
@@ -210,44 +157,7 @@ You won the tournament! Total raised money: 156.00
 [/test]
 [test]
 [input]
-5
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-Finish
-sport
-win
-Finish
-sport
-win
-sport
-win
-sport
-win
-Finish
+tournament([5, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport, win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 422.40
@@ -255,36 +165,7 @@ You won the tournament! Total raised money: 422.40
 [/test]
 [test]
 [input]
-3
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-Finish
-sport
-win
-sport
-win
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-sport
-win
-Finish
+tournament([3, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 180.00
@@ -292,37 +173,7 @@ You won the tournament! Total raised money: 180.00
 [/test]
 [test]
 [input]
-4
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-sport
-lose
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-lose
-sport
-win
-Finish
+tournament([4, 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 84.00
@@ -330,27 +181,7 @@ You lost the tournament! Total raised money: 84.00
 [/test]
 [test]
 [input]
-2
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-sport
-lose
-sport
-lose
-Finish
-sport
-lose
-sport
-lose
-Finish
+tournament([2, 'sport', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'sport', 'lose', 'Finish', 'sport', 'lose', 'sport', 'lose', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 60.00
@@ -358,20 +189,7 @@ You lost the tournament! Total raised money: 60.00
 [/test]
 [test]
 [input]
-1
-sport
-win
-sport
-lose
-sport
-win
-sport
-lose
-sport
-win
-sport
-win
-Finish
+tournament([1, 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'win', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 105.60
@@ -379,35 +197,7 @@ You won the tournament! Total raised money: 105.60
 [/test]
 [test]
 [input]
-4
-sport
-win
-sport
-win
-sport
-win
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-Finish
+tournament([4, 'port', 'win', 'sport', 'win', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'Finish'])
 [/input]
 [output]
 You won the tournament! Total raised money: 208.80
@@ -415,35 +205,7 @@ You won the tournament! Total raised money: 208.80
 [/test]
 [test]
 [input]
-4
-sport
-lose
-sport
-lose
-sport
-win
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-win
-sport
-win
-Finish
-sport
-lose
-sport
-lose
-sport
-win
-Finish
-sport
-lose
-Finish
+tournament([4, 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'win', 'sport', 'win', 'Finish', 'sport', 'lose', 'sport', 'lose', 'sport', 'win', 'Finish', 'sport', 'lose', 'Finish'])
 [/input]
 [output]
 You lost the tournament! Total raised money: 104.00

@@ -5,11 +5,20 @@
 [code-task title="Care of Puppy" taskId="JavaScript-Programming-Basics-final-exam-Care-of-Puppy" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function careOfPuppy(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Description
@@ -27,7 +36,7 @@ Create a function that checks if the **amount of food purchased for the puppy** 
 
 Purchased **amount of food for the puppy in kilograms**: an integer in the interval \[1 …100\]
 
-- On each subsequent element until you receive the `Adopted` command, you will receive **how many grams the puppy eats at each meal**: an integer in the interval \[10 …1000\]
+- On each subsequent element until you receive the "**Adopted**" command, you will receive **how many grams the puppy eats at each meal**: an integer in the interval \[10 …1000\]
 
 ## Output
 
@@ -45,34 +54,33 @@ One line is printed on the console:
 
 | **Input** | **Output** |
 | --- | --- |
-|`['4', '130' ,'345', '400', '180', '230', '120' ,'Adopted']` | Food is enough! Leftovers: 2595 grams. |
+|careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
 
 **Comments**
 
-- The **purchased** amount of food is `4 kg = 4 * 1000 = 4000 grams.`
+- The **purchased** amount of food is 4 kg = 4 \* 1000 = 4000 grams.
 
 - The **total amount of food** that the puppy ate before adoption was:
 
- `130 + 345 + 400 + 180 + 230 + 120 = 1405 grams.` 
+ 130 \+ 345 \+ 400 \+ 180 \+ 230 \+ 120 = 1405 grams.
 
 - **This quantity is less than the originally purchased 4000 grams:**
 
-The food left is: `4000 - 1405 = 2595 grams.`
+The food left is: 4000 \- 1405 \= 2595 grams.
 
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted']) | Food is enough! Leftovers: 2595 grams. |
+|careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted']) | Food is not enough. You need 2032 grams more. |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-4
-130
-345
-400
-180
-230
-120
-Adopted
+careOfPuppy([4, 130, 345, 400, 180, 230, 120, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 2595 grams.
@@ -80,11 +88,7 @@ Food is enough! Leftovers: 2595 grams.
 [/test]
 [test open]
 [input]
-3
-1000
-1000
-1000
-Adopted
+careOfPuppy([3, 1000, 1000, 1000, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 0 grams.
@@ -92,14 +96,7 @@ Food is enough! Leftovers: 0 grams.
 [/test]
 [test open]
 [input]
-2
-999
-456
-999
-999
-123
-456
-Adopted
+careOfPuppy([2, 999, 456, 999, 999, 123, 456, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 2032 grams more.
@@ -107,12 +104,7 @@ Food is not enough. You need 2032 grams more.
 [/test]
 [test]
 [input]
-4
-500
-600
-700
-800
-Adopted
+careOfPuppy([4, 500, 600, 700, 800, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 1400 grams.
@@ -120,12 +112,7 @@ Food is enough! Leftovers: 1400 grams.
 [/test]
 [test]
 [input]
-4
-1000
-2000
-3000
-4000
-Adopted
+careOfPuppy([4, 1000, 2000, 3000, 4000, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 6000 grams more.
@@ -133,16 +120,7 @@ Food is not enough. You need 6000 grams more.
 [/test]
 [test]
 [input]
-3
-120
-120
-120
-120
-150
-180
-340
-560
-Adopted
+careOfPuppy([3, 120, 120, 120, 120, 150, 180, 340, 560, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 1290 grams.
@@ -150,12 +128,7 @@ Food is enough! Leftovers: 1290 grams.
 [/test]
 [test]
 [input]
-1
-200
-300
-400
-200
-Adopted
+careOfPuppy([1, 200, 300, 400, 200, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 100 grams more.
@@ -163,16 +136,7 @@ Food is not enough. You need 100 grams more.
 [/test]
 [test]
 [input]
-9
-800
-430
-560
-120
-340
-560
-125
-440
-Adopted
+careOfPuppy([9, 800, 430, 560, 120, 340, 560, 125, 440, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 5625 grams.
@@ -180,16 +144,7 @@ Food is enough! Leftovers: 5625 grams.
 [/test]
 [test]
 [input]
-4
-1000
-340
-120
-356
-1000
-2345
-100
-450
-Adopted
+careOfPuppy([4, 1000, 340, 120, 356, 1000, 2345, 100, 450, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 1711 grams more.
@@ -197,11 +152,7 @@ Food is not enough. You need 1711 grams more.
 [/test]
 [test]
 [input]
-2
-1200
-1200
-1200
-Adopted
+careOfPuppy([2, 1200, 1200, 1200, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 1600 grams more.
@@ -209,12 +160,7 @@ Food is not enough. You need 1600 grams more.
 [/test]
 [test]
 [input]
-18
-200
-400
-500
-600
-Adopted
+careOfPuppy([18, 200, 400, 500, 600, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 16300 grams.
@@ -222,13 +168,7 @@ Food is enough! Leftovers: 16300 grams.
 [/test]
 [test]
 [input]
-5
-5000
-1000
-234
-456
-789
-Adopted
+careOfPuppy([5, 5000, 1000, 234, 456, 789, 'Adopted'])
 [/input]
 [output]
 Food is not enough. You need 2479 grams more.
@@ -236,9 +176,7 @@ Food is not enough. You need 2479 grams more.
 [/test]
 [test]
 [input]
-1
-1000
-Adopted
+careOfPuppy([1, 1000, 'Adopted'])
 [/input]
 [output]
 Food is enough! Leftovers: 0 grams.

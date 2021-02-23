@@ -4,14 +4,18 @@
 [code-task title="Study materials" taskId="JavaScript-Programming-Basics-exam-Study-Materials" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function solve(input) {
+function studyMaterials(input) {
 	// Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -67,29 +71,33 @@ The result should be **formatted** to the third decimal place.
 
 | **Input** | **Output** |
 | --- | --- |
-|`[2, 3, 2.5, 25]` | 27.150 |
+|studyMaterials([2, 3, 2.5, 25])| 27.150 |
 
 **Comments**
 
-- Price for the **pencils**: `2 * 5.80 = 11.60`
+- Price for the **pencils**: 2 \* 5.80 = 11.60
 
-- Price for the **markers**: `3 * 7.20 = 21.60`
+- Price for the **markers**: 3 \* 7.20 = 21.60
 
-- Price for the **detergent**: `2.5 * 1.20 = 3.00`
+- Price for the **detergent**: 2.5 \* 1.20 = 3.00
 
-- **Total price:** `11.60 + 21.60 + 3.00 = 36.20`
+- **Total price:** 11.60 \+ 21.60 \+ 3.00 = 36.20
 
-- **Price with discount:** `36.20 – ((36.20 * 25) / 100) = 27.150`
+- **Price with discount:** 36.20 \– ((36.20 \* 25) \/ 100) = 27.150
+
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+|studyMaterials([4, 2, 5, 13])| 37.932 |
+|studyMaterials([7, 8, 0.5, 45])|54.340|
  
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-2
-3
-2.5
-25
+studyMaterials([2, 3, 2.5, 25])
 [/input]
 [output]
 27.150
@@ -97,10 +105,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test open]
 [input]
-4
-2
-5
-13
+studyMaterials([4, 2, 5, 13])
 [/input]
 [output]
 37.932
@@ -108,10 +113,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test open]
 [input]
-7
-8
-0.5
-45
+studyMaterials([7, 8, 0.5, 45])
 [/input]
 [output]
 54.340
@@ -119,10 +121,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-1
-8
-5.5
-40
+studyMaterials([1, 8, 5.5, 40])
 [/input]
 [output]
 42.000
@@ -130,10 +129,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-9
-9
-4
-15
+studyMaterials([9, 9, 4, 15])
 [/input]
 [output]
 103.530
@@ -141,10 +137,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-11
-2
-4.5
-16
+studyMaterials([11, 2, 4.5, 16])
 [/input]
 [output]
 70.224
@@ -152,10 +145,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-12
-12
-10
-5
+studyMaterials([12, 12, 10, 5])
 [/input]
 [output]
 159.600
@@ -163,10 +153,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-1
-1
-1
-1
+studyMaterials([1, 1, 1, 1])
 [/input]
 [output]
 14.058
@@ -174,10 +161,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-3
-11
-8
-50
+studyMaterials([3, 11, 8, 50])
 [/input]
 [output]
 53.100
@@ -185,10 +169,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-17
-19
-35.6
-45
+studyMaterials([17, 19, 35.6, 45])
 [/input]
 [output]
 152.966
@@ -196,10 +177,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-48
-62
-32.54
-18
+studyMaterials([48, 62, 32.54, 18])
 [/input]
 [output]
 626.355
@@ -207,10 +185,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-73
-84
-50.0
-65
+studyMaterials([73, 84, 50.0, 65])
 [/input]
 [output]
 380.870
@@ -218,10 +193,7 @@ The result should be **formatted** to the third decimal place.
 [/test]
 [test]
 [input]
-100
-100
-50
-100
+studyMaterials([100, 100, 50, 100])
 [/input]
 [output]
 0.000
