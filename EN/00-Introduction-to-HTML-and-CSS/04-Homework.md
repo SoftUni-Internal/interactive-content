@@ -21,9 +21,6 @@
 [stream language="RO" videoId="444869128" /]
 [/video-vimeo]
 
-[code-task title="Simple HTML Page" taskId="c71fd240-cf92-43e1-95db-d79255ead525" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
-
-[code-upload allowedMemory="30" /]
 
 [task-description]
 ## Description
@@ -33,8 +30,6 @@
 * Use the **paragraph** tag for plain text and the **strong** tag for bold text
 
 [image assetsSrc="01-intro-to-html-tags-simple-html-page.png" /]
-
-[image assetsSrc="inheritance-example(13).png" /]
 
 [/task-description]
 
