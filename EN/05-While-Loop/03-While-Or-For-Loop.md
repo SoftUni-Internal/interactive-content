@@ -60,9 +60,18 @@ function oddNumber(numbers) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads numbers from the console until it gets an **odd number**
 * Prints the **odd** number
@@ -70,16 +79,13 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|`['2', '4', '8', '3']`| 3 |
+| oddNumber(['2', '4', '8', '3']) | 3 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-4
-8
-5
+oddNumber(['2', '4', '8', '5'])
 [/input]
 [output]
 5

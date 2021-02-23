@@ -49,12 +49,16 @@ function decreasingNumbers (input) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {code(Number(input[0]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
-Write a program, which:
+Create a program, which:
 
 * Reads a number from the console
 * Prints the numbers starting from the number to 1 (**inclusive**)
@@ -62,7 +66,7 @@ Write a program, which:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|4| 4 |
+|decreasingNumbers(4)| 4 |
 ||3 |
 ||2 |
 || 1|
@@ -71,7 +75,7 @@ Write a program, which:
 [tests]
 [test]
 [input]
-5
+decreasingNumbers(5)
 [/input]
 [output]
 5
@@ -83,7 +87,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-4
+decreasingNumbers(4)
 [/input]
 [output]
 4
@@ -94,7 +98,7 @@ Write a program, which:
 [/test]
 [test]
 [input]
-3
+decreasingNumbers(3)
 [/input]
 [output]
 3
@@ -123,17 +127,32 @@ function sequence(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
-Write a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
+Create a program that prints all **numbers ≤ n** of the series: **1, 3, 7, 15, 31, …,** assuming that each next number = **previous number * 2 + 1**.
 
+# Example
+  | **Input** | **Output** |
+| --- | --- |
+|sequence(8)| 1 |
+||3 |
+||7 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-3
+sequence(3)
 [/input]
 [output]
 1
