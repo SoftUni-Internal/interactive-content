@@ -90,7 +90,7 @@ sumEvenNumbers(['13', '55', '37', '19'])
 [/test]
 [test]
 [input]
-sumEvenNumbers(['1', '156', '7', '8'])
+sumEvenNumbers(['1', '156', '7', '18'])
 [/input]
 [output]
 174
