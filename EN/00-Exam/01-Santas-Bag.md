@@ -1,6 +1,6 @@
 [slide hideTitle]
 # Problem: Santa's Bag of Presents
-[code-task title="Santa's Bag of Presents" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Santas Bag of Presents" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
@@ -126,6 +126,7 @@ Submit **single .zip file**, containing **christmas package, with the classes in
 [tests]
 [test open]
 [input]
+```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -151,9 +152,12 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
+```
 [/input]
 [output]
+```
 Test Passed!
+```
 [/output]
 [/test]
 [test open]
