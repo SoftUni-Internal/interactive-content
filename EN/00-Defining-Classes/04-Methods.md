@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Methods
+# What Are Methods
 
 [vimeo-video]
 [stream language="EN" videoId="485442837/72b15114f6" default /]
@@ -198,7 +198,7 @@ System.out.println(hash);
 [stream language="RO" videoId="485443278/abf3282bb7"  /]
 [/video-vimeo]
 
-[code-task title="Car Info" taskId="java-oop-basics-lab-Car-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Car Info" taskId="oop-basics-java-defining-classes-lab-Car-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -280,22 +280,27 @@ System.out.println(car.carInfo());
 ```
 
 
-## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 3 | The car is: Chevrolet Impala - 390 HP. |
-| Chevrolet Impala 390 | The car is: TESLA MODEL-S - 503 HP. |
-| TESLA MODEL-S 503 | The car is: DACIA DUSTER - 149 HP. |
-| DACIA DUSTER 149 |  |
+# Examples
+
+## Example 1
 
 | **Input** | **Output** |
 | --- | --- |
-| 5 | The car is: This Car - 1 HP. |
-| This Car 1 | The car is: Was Made - 2 HP. |
-| Was Made 2 | The car is: Only For - 3 HP. |
-| Only For 3 | The car is: Test Purposes - 4 HP. |
-| Test Purposes 4 | The car is: No Way - 5 HP. |
-| No Way 5 |  |
+| 3 |  |
+| Chevrolet Impala 390 | The car is: Chevrolet Impala - 390 HP.  |
+| TESLA MODEL-S 503 | The car is: TESLA MODEL-S - 503 HP. |
+| DACIA DUSTER 149 | The car is: DACIA DUSTER - 149 HP. |
+
+## Example 2
+
+| **Input** | **Output** |
+| --- | --- |
+| 5 |  |
+| This Car 1 | The car is: This Car - 1 HP. |
+| Was Made 2 | The car is: Was Made - 2 HP. |
+| Only For 3 | The car is: Only For - 3 HP. |
+| Test Purposes 4 | The car is: Test Purposes - 4 HP. |
+| No Way 5 | The car is: No Way - 5 HP. |
 
 [/task-description]
 [code-io /]
