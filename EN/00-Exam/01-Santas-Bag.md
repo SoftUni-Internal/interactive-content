@@ -10,19 +10,19 @@ Can you imagine Santa without his special bag that carries presents for so many 
 So let's have a quick sneak peek inside it and help  Santa rearrange it. 
 
 ## Preparation
-Pay attention to name the package (christmas), all the classes, their fields and methods exactly the same way they are presented in the following document. 
+Pay attention to name the package (**christmas**), all the classes, their fields and methods exactly the same way they are presented in the following resources. 
 
-It is also important to keep the project structure as)described above. 
+It is also important to keep the project structure as described above. 
 
-Download Resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
+Download the resources from [Here](https://videos.softuni.org/resources/java/java-oop-basics/Java-Basics-OOP-Exam-Christmas_Skeleton.zip)
 
 ## Problem description
 
-Your task is to create a repository which stores departments by creating the classes described below. 
+Create the classes that are described below.
 
 ### Present
 
-First, write a Java class Present with the following fields: 
+First, write a Java class **Present** with the following fields: 
 
 - **name: String**
 - **weight double**
@@ -30,12 +30,12 @@ First, write a Java class Present with the following fields:
 
 The class constructor should receive (**name, weight and gender**). 
 
-The class also should have the methods: 
+The class should contain the methods: 
 
 **- getName()**
 **- getWeight()**
 **- getGender()**
-- Override the **toString()** method in the following format: "**Present {name} ({weight}) for a {gender}**" 
+- Override the **toString()** method in the following format: "Present \{name\} (\{weight\}) for a \{gender\}" 
 
 **Note: Format the weight to the second digit after the decimal point!** 
 
@@ -62,10 +62,10 @@ Implement the following features:
 **- heaviestPresent()** method – returns the **heaviest** present 
 **- getPresent(String name)** method – returns the present with the **given name** 
 **- report()** method – **returns a string** in the following **format** (print the presents in order of appearance): 
-**"{color of Bag} bag contains:**
-**{Present1}** 
-**{Present2}** 
-**(…)"**
+"\{color of Bag\} bag contains:
+\{Present1\} 
+\{Present2\}
+(…)"
 
 ### Constraints
 
@@ -114,13 +114,13 @@ System.out.println(p);
 System.out.println(bag.count()); // 2 
 System.out.println(bag.report()); 
 
-// Black bag contains: 
+// black bag contains: 
 // Present Doll (0.40) for a girl 
 // Present Train (2.00) for a boy 
 ```
 
 ## Submission
-Submit **single .zip file**, containing **christmas package, with the classes inside (Present, Bag and the Main class)**, there is no specific content required inside the Main class e. g. you can do any kind of local testing of you program there. However there should be **main(String[] args)** method inside. 
+Submit **single .zip file**, containing **christmas package, with the classes inside (Present, Bag and the Main class)**, there is no specific content required inside the Main class e. g. you can do any kind of local testing of you program there. However there should be **main** method inside. 
 
 [/task-description]
 [tests]
