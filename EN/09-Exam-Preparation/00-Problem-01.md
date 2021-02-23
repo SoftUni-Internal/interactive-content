@@ -4,7 +4,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Exam_Preparation_ShoeShelf_Resourses.zip) **for this task.**
 
-In this exam preparation, we are going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Kinvey).
+In this exam preparation, we are going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Backendless).
 
 Using libraries like **lit-html** and **page.js** is allowed but is **not obligatory**.
 
