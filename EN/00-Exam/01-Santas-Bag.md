@@ -126,7 +126,6 @@ Submit **single .zip file**, containing **christmas package, with the classes in
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -135,7 +134,7 @@ public class T00_1ValidateTypesExist {
 
     @Test
     public void validateTypesExist() {
-        String[] classTypesToAssert = new String[]{
+        String[] classTypesToAssert = new String\[\]{
                 "Bag",
                 "Present",
         };
@@ -152,7 +151,6 @@ public class T00_1ValidateTypesExist {
         return clazz;
     }
 }
-```
 [/input]
 [output]
 Test Passed!
