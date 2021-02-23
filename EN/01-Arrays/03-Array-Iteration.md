@@ -139,7 +139,7 @@ reverse(3, [-41, 520, 99, 5])
 [/test]
 [test]
 [input]
-reverse(4, [-1, 320, 199, 5])
+reverse(4, [-31, 320, 199, 5])
 [/input]
 [output]
 5 199 320 -31
