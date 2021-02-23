@@ -6,7 +6,7 @@
 [task-description]
 ## Preparation 
 
-**Pay attention to name the package guild, all the classes, their fields and methods the same way they are presented in the following document.**
+**Pay attention to the name of the package "guild", all of the classes, their fields and methods the same way they are presented in the following document.**
 
 **It is also important to keep the project structure as described.**
 
@@ -17,15 +17,15 @@ Your task is to create a repository which stores players by creating the classes
 
 ## Player
 
-First, write a Java class **Player** with the following fields:
+First, create a Java class **Player** with the following fields:
 - name: String
 - clazz: String
 - rank: String – "Trial" by default
 - description: String – "n/a" by default
 
-The class **constructor** should receive **name and clazz**. 
+The class **constructor** should receive a **name and a clazz**. 
 
-You need to create the appropriate **getters and setters**. Override the **toString()** method in the following format:
+You need to create the appropriate **getters and setters**. Override the **toString()** method with the following format:
 
 "Player \{name\}: \{clazz\}
 
@@ -35,21 +35,21 @@ Description: \{description\}"
 
 ## Guild
 
-**Next**, write a Java class **Guild** that has a **roster** (a collection which stores **Player** entities). 
+**Next**, create a Java class named **Guild** that has a **roster** (a collection which stores **Player** entities). 
 
 All entities inside the repository have the **same fields**. 
 
 Also, the **Guild** class should have those **fields**:
 
-The class **constructor** should receive **name** and **capacity**, also it should initialize the **roster** with a new instance of the collection. 
+The class **constructor** should receive a **name** and a **capacity**, it should initialize the **roster** with a new instance of the collection. 
 
-Implement the following features:
+Implement the following methods:
 
-- Method **addPlayer(Player player)** - **adds** an **entity** to the roster **if there is room** for it
-- Method **removePlayer(String name)** - removes a player by **given name**, if such **exists**, and **returns boolean**
-- Method **promotePlayer(String name)** - **promote (set his rank to "Member")** the **first player** with the **given name**. If the player is **already** a "Member", **do nothing.**
-- Method **demotePlayer(String name)- demote (set his rank to "Trial")** the first player with the **given** name. If the player is **already** a "Trial",  **do nothing**.
-- Method **kickPlayersByClass(String clazz)** - removes all the players by the given class and returns **all removed players** from that **class as an array**
+- Method **addPlayer(Player player)** - **adds** a **player** to the roster **if there is room** for him
+- Method **removePlayer(String name)** - removes a player by their **given name**, if such **exists**.  **Returns boolean**
+- Method **promotePlayer(String name)** - **promotes (set his rank to "Member")** the **first player** with the **given name**. If the player is **already** a "Member", **do nothing.**
+- Method **demotePlayer(String name)- demotes (set his rank to "Trial")** the first player with the **given** name. If the player is **already** a "Trial",  **do nothing**.
+- Method **kickPlayersByClass(String clazz)** - removes all of the players by the given class and returns **all of the removed players** from that **class as an array**
 - Method **count() - returns** the **number** of players
 - Method **report()** - **returns a String** in the following **format**:
 
@@ -66,11 +66,11 @@ Implement the following features:
 ## Constraints
 
 - The **names** of the players will be **always unique.**
-- You will always have a player added before receiving methods manipulating the Guild's players.
+- You will always have a player added before receiving methods that manipulate the Guild's players.
 
 ## Examples
 
-This is an example how the **Guild** class is **intended to be used.** 
+This is an example of how the **Guild** class is **intended to be used.** 
 
 ``` java
 package guild;
