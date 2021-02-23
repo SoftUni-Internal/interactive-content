@@ -322,8 +322,10 @@ function productOfThreeNumbers(firstNumber, secondNumber, thirdNumber) {
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -732,22 +734,6 @@ cinema('Discount', 34, 7)
 [/test]
 [test]
 [input]
-cinema('Discount', 93, 21)
-[/input]
-[output]
-9765.00
-[/output]
-[/test]
-[test]
-[input]
-cinema('Discount', 54, 46)
-[/input]
-[output]
-12420.00
-[/output]
-[/test]
-[test]
-[input]
 cinema('Discount', 34, 93)
 [/input]
 [output]
@@ -792,14 +778,6 @@ cinema('Normal', 59, 57)
 [/input]
 [output]
 25222.50
-[/output]
-[/test]
-[test]
-[input]
-cinema('Premiere', 34, 54)
-[/input]
-[output]
-20736.00
 [/output]
 [/test]
 [test]
@@ -871,7 +849,7 @@ Create a program to apply an operator for given two numbers:
 
 * Read two integers and a math operator from the console 
 * The math operator could be: \+, \-, \/, \% and \*
-* The output should be in the following **format**: "**{N1} {operator} {N2} = {result}**""
+* The output should be in the following **format**: `{N1} {operator} {N2} = {result}`
 
 # Example
   | **Input** | **Output** |
@@ -885,12 +863,12 @@ Create a program to apply an operator for given two numbers:
 operationswithNumbers(12, 10, '\+')
 [/input]
 [output]
-10 + 12 = 22
+12 + 10 = 22
 [/output]
 [/test]
 [test]
 [input]
-operationswithNumbers(12, 10, '\-'
+operationswithNumbers(12, 10, '\-')
 [/input]
 [output]
 12 \- 10 = 2
