@@ -8,17 +8,17 @@
 
 **Hypertext Transfer Protocol** (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML.
 
-**HTTP** ensures that the communication between the web browser and server.
+**HTTP** ensures that the communication between the web browser and the server.
 
-HTTP follows a classical **client-server model**, where only the client, which is most often is a **web browser**, can send a request, and when the server receives the request it is mandatory to send back a **response**.
+HTTP follows a classical **client-server model** where only the client, which most often is a **web browser**, can send a request and when the server receives the request it is mandatory to send back a **response**.
 
-But the server reacts only **upon a request**, which means that the server cannot send any data without **receiving a request**.
+But the server reacts only **upon request**, which means that the server cannot send any data without **receiving a request**.
 
-Thus the server does not keep any data between two request, which make HTTP protocol a **stateless protocol**.
+Therefore the server does not keep any data between two request, which make HTTP protocol a **stateless protocol**.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX.png" /]
 
-As we can see, the **client** sends a **request**, and the **server** sends a **response**.
+As we can see, the **client** sends a **request** and the **server** sends a **response**.
 
 [/slide]
 
@@ -28,7 +28,7 @@ As we can see, the **client** sends a **request**, and the **server** sends a **
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-5-http-request-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**HTTP** has **methods**, to indicates the performed action of the identified resource.
+**HTTP** uses **methods** to indicate the performed action of the identified resource.
 
 The most used methods are:
 
@@ -54,7 +54,7 @@ They must be in uppercase.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-6-http-get-request-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-By default, if we sent a request, it will be **GET**.
+By default, we send a **GET** request.
 
 We send a **GET** request when we want to obtain data from the server.
 
@@ -74,7 +74,7 @@ Cache-Control: no-cache
 
 The first line, `GET /users/softuni/repos HTTP/1.1`, is called a **request line**.
 
-After it is the **headers** and the **body** `<CRLF>`.
+The next lines are the **headers** and the **body** `<CRLF>`.
 
 [/slide]
 
@@ -104,7 +104,7 @@ Cache-Control: no-cache
 <CRLF>
 ```
 
-Here we have the **request line**, the **headers**, and the **body**.
+Here we have the **request line**, the **headers** and the **body**.
 
 But this time, the **body** holds the submitted data.
 
@@ -140,7 +140,7 @@ It holds the server response **status code**, which tells us if the request is c
 
 After the **response line** is the **header**, which holds information about the server.
 
-And finally, we have the **body**, which holds the data that we have requested.
+Then we have the **body**, which holds the data that we have requested.
 
 [/slide]
 
@@ -150,7 +150,7 @@ And finally, we have the **body**, which holds the data that we have requested.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-9-http-response-status-codes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Every response has a **status code**, from which we can know if the request is successful or not.
+Every response has a **status code**, from which we know if the request is successful or not.
 
 These are some of the codes:
 
@@ -173,13 +173,13 @@ These are some of the codes:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-10-content-type-and-disposition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Every request needs to have a field for **Content-Type** or **Content-Disposition**.
+Every request needs to have a field for the **Content-Type** or the **Content-Disposition**.
 
 These fields specify the format of the request.
 
 We can set the **Content-Type** to be **JSON-encoded**.
 
-It will look like this: Content-Type: application/json`.
+It will look like this: `Content-Type: application/json`.
 
 We can also set the **Content-Type** to be `Content-Type: text/html`
 
