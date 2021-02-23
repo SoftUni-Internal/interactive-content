@@ -1,9 +1,15 @@
 [slide hideTitle]
 # The Party Reservation Filter Module 
 [code-task title="The Party Reservation Filter Module " taskId="Java-OOP-Basics-Exam-The-Party-Reservation-Filter-Module" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -13,11 +19,11 @@ You are a young and talented **developer**.
 
 The first task you need to do is to implement **a filtering module** to a party reservation software. 
 
-First, The Party Reservation Filter Module (**TPRF** Module for short) is passed a **list** with invitations. 
+First, to the party reservation Filter Module (**TPRF** Module for short) is passed a **list** with invitations. 
 
 Next the **TPRF** receives a sequence of commands that specify if you need to add or remove a given filter.  
 
-**TPRF** Commands are in the given format **{command;filter type;filter parameter}**
+**TPRF** Commands are in the given format \{command;filter type;filter parameter\}
 
 You can receive the following **TPRF** commands: "**Add filter**", "**Remove filter**" or "**Print**". 
 
