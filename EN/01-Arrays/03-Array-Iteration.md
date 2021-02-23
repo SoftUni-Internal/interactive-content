@@ -63,48 +63,43 @@ for(let num of arr){
 [code-task title="Reverse an Array of Numbers" taskId="fundamentals-js-arrays-lab-Reverse-an-Array-of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function reverce(n, inputArr){
+function reverse(n, inputArr){
   // Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a program that receives an array of elements.
+Create a program that receives an array of elements.
 
-Your task is to create a new array with `n` numbers, reverse it and print its elements on a single line, space-separated.
+Your task is to create a new array with **n** numbers, reverse it and print its elements on a single line, space-separated.
 
-Where `n` is the first element of the array.
+Where **n** is the first element of the array.
 
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`3, [10, 20, 30, 40, 50]` | 30 20 10 |
-|`4, [-1, 20, 99, 5]` | 5 99 20 -1 |
-|`2, [66, 43, 75, 89, 47]` | 43 66 |
+| reverse(3, [10, 20, 30, 40, 50]) | 30 20 10 |
+| reverse(4, [-1, 20, 99, 5]) | 5 99 20 -1 |
+| reverse(2, [66, 43, 75, 89, 47]) | 43 66 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-3
-10
-20
-30
-40
-50
+reverse(3, [10, 20, 30, 40, 50])
 [/input]
 [output]
 30 20 10
@@ -112,11 +107,7 @@ Where `n` is the first element of the array.
 [/test]
 [test open]
 [input]
-4
--1
-20
-99
-5
+reverse(4, [-1, 20, 99, 5])
 [/input]
 [output]
 5 99 20 -1
@@ -124,12 +115,7 @@ Where `n` is the first element of the array.
 [/test]
 [test open]
 [input]
-2
-66
-43
-75
-89
-47
+reverse(2, [66, 43, 75, 89, 47])
 [/input]
 [output]
 43 66
@@ -137,11 +123,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-3
-110
-520
-330
-87
+reverse(3, [110, 520, 330, 87])
 [/input]
 [output]
 330 520 110
@@ -149,11 +131,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-3
--41
-520
-99
-5
+reverse(3, [-41, 520, 99, 5])
 [/input]
 [output]
 99 520 -41
@@ -161,11 +139,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-4
--31
-320
-199
-5
+reverse(4, [-1, 320, 199, 5])
 [/input]
 [output]
 5 199 320 -31
@@ -173,11 +147,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-1
--16
-20
-9159
-5
+reverse(1, [-16, 20, 9159, 5])
 [/input]
 [output]
 -16
@@ -185,12 +155,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-2
-6342
-74
-1
-139
-417
+reverse(2, [6342, 74, 1, 139, 417])
 [/input]
 [output]
 74 6342
@@ -198,12 +163,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-3
-616
-43
-75
-89
-47
+reverse(3, [616, 43, 75, 89, 47])
 [/input]
 [output]
 75 43 616
@@ -211,12 +171,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-2
-41
-423
-475
-89
-47
+reverse(2, [41, 423, 475, 89, 47])
 [/input]
 [output]
 423 41
@@ -224,14 +179,7 @@ Where `n` is the first element of the array.
 [/test]
 [test]
 [input]
-5
-664
-43
-715
-8899
-747
-44
-78
+reverse(5, [664, 43, 715, 8899, 747, 44, 78])
 [/input]
 [output]
 747 8899 715 43 664
@@ -258,18 +206,27 @@ function reverse(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
-Write a program that receives an **array of strings** (space separated values).
+Create a program that receives an **array of strings** (space separated values).
 
 Your task is to reverse it and print its elements. **Swap** elements.
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['a', 'b', 'c', 'd', 'e']` | e d c b a  |
-|`['abc', 'def', 'hig', 'klm', 'nop']` | nop klm hig def abc |
-|`['33', '123', '0', 'dd']` | dd 0 123 33 |
+| reverse(['a', 'b', 'c', 'd', 'e']) | e d c b a  |
+| reverse(['abc', 'def', 'hig', 'klm', 'nop']) | nop klm hig def abc |
+| reverse(['33', '123', '0', 'dd']) | dd 0 123 33 |
 
 # Comments
 The first element should be last, and the last element should be first.
@@ -278,12 +235,7 @@ The first element should be last, and the last element should be first.
 [tests]
 [test]
 [input]
-3ghj3
-123
-0
-dkl;d
-dasjkjd
-dage
+reverse(['3ghj3', '123', '0', 'dkl;d', 'dasjkjd', 'dage'])
 [/input]
 [output]
 dage dasjkjd dkl;d 0 123 3ghj3
@@ -291,12 +243,7 @@ dage dasjkjd dkl;d 0 123 3ghj3
 [/test]
 [test]
 [input]
-3gjhgjh3
-123bnmb
-nmbmn0
-dd
-dasd
-dage
+reverse(['3gjhgjh3', '123bnmb', 'nmbmn0', 'dd', 'dasd', 'dage'])
 [/input]
 [output]
 dage dasd dd nmbmn0 123bnmb 3gjhgjh3
@@ -304,12 +251,7 @@ dage dasd dd nmbmn0 123bnmb 3gjhgjh3
 [/test]
 [test]
 [input]
-3bmn3
-12bnmbn3
-0
-dd
-dasd
-dage
+reverse(['3bmn3', '12bnmbn3', '0', 'dd', 'dasd', 'dage'])
 [/input]
 [output]
 dage dasd dd 0 12bnmbn3 3bmn3
@@ -317,12 +259,7 @@ dage dasd dd 0 12bnmbn3 3bmn3
 [/test]
 [test]
 [input]
-3hjkh3
-1hjkh23
-0ghjgj
-45dd
-djklasd
-dage
+reverse(['3hjkh3', '1hjkh23', '0ghjgj', '45dd', 'djklasd', 'dage'])
 [/input]
 [output]
 dage djklasd 45dd 0ghjgj 1hjkh23 3hjkh3
@@ -330,11 +267,7 @@ dage djklasd 45dd 0ghjgj 1hjkh23 3hjkh3
 [/test]
 [test]
 [input]
-3jkj3
-124543
-0
-dd
-dsadaffa
+reverse(['3jkj3', '124543', '0', 'dd', 'dsadaffa'])
 [/input]
 [output]
 dsadaffa dd 0 124543 3jkj3
