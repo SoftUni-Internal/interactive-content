@@ -40,7 +40,7 @@ js-application-design-patterns-11
 * Change the **title** of the document to *Simple HTML Page* 
 * Use the **paragraph** tag for plain text and the **strong** tag for bold text
 
-[image assetsSrc="01-intro-to-html-tags-simple-html-page.png" /]
+[image assetsSrc="01-intro-to-html-tags-simple-html-page.jpg" /]
 
 [/task-description]
 
