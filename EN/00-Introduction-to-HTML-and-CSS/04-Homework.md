@@ -14,6 +14,9 @@
 [image assetsSrc="01-intro-to-html-tags-simple-html-page.jpg" /]
 
 [image assetsSrc="js-application-design-patterns-11.png" /]
+
+[image assetsSrc="02.intro-to-html-tags-cardio-paragraphs" /]
+
 js-application-design-patterns-11
 
 [/slide]
