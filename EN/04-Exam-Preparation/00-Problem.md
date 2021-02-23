@@ -5,7 +5,13 @@
 [code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java-code]
 ```
+import java.util.*;
 
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
 ```
 [/code-editor]
 [task-description]
@@ -18,15 +24,15 @@ First, you will receive a string and afterwards, until the command "**Done**" is
 The commands will be the following:
 
 - **TakeOdd**
-  * Takes only the characters at **odd indices** and **concatenates** them together to
+  * takes only the characters at **odd indices** and **concatenates** them together to
 obtain the **new raw password** and then **prints** it.
-- Cut {index} {length}
-  * Gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console.
-  * The given index and length will **always be valid**.
-- Substitute {substring} {substitute}
-  * If the raw password contains the given substring, replaces all of its 
+- Cut \{index\} \{length\}
+  * gets the substring with the **given length** starting from the **given index** from the password and removes its first occurrence of it, then prints the password on the console.
+  * the given index and length will **always be valid**.
+- Substitute \{substring\} \{substitute\}
+  * if the raw password contains the given substring, replaces all of its 
 occurrences with the substitute text given and prints the result.
-  * If it doesn’t, prints "**Nothing to replace!**"
+  * if it doesn’t, prints "**Nothing to replace!**"
 
   ## Input
 
@@ -35,34 +41,34 @@ occurrences with the substitute text given and prints the result.
   ## Output
 
 - After the "**Done**" command is received, print:
-  * "Your password is: {password}"
+  * "Your password is: \{password\}"
 
 ## Constraints
 
-- The indexes from the "Cut {index} {length}" command will always be valid.
+- The indexes from the "Cut \{index\} \{length\}" command will always be valid.
 
 
 ## Examples
 
 | **Input** | **Output** |
 | --- | --- |
-| Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr | icecream::hot::summer |
-| TakeOdd | icecream::hot::mer |
-| Cut 15 3 | icecream-hot-mer |
-| Substitute \:\: \- | Nothing to replace! |
-| Substitute \| ^ | Your password is: icecream-hot-mer
+| `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` | `icecream::hot::summer` |
+| `TakeOdd` | `icecream::hot::mer` |
+| `Cut 15 3` | `icecream-hot-mer` |
+| `Substitute :: -` | `Nothing to replace!` |
+| `Substitute | ^ `| `Your password is: icecream-hot-mer` |
 
 ## Comments
 
 ### TakeOdd 
 
-- Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr -> icecream::hot::summer
+- `Siiceercaroetavm!:?:ahsott.:i:nstupmomceqr` -> `icecream::hot::summer`
 
 - We only take the chars at odd indices 1, 3, 5 etc.
 
 ### Cut 15  3 -> icecream::hot::summer -> sum
 
-- icecream::hot::mer
+- `icecream::hot::mer`
 
 We cut a substring starting at index 15 with length 3, remove it from the raw password and print it. 
 
@@ -80,11 +86,11 @@ Then, on a new line we print the resulting new raw password.
 
 | **Input** | **Output** |
 | --- | --- |
-| up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy | programming!is!funny |
-| TakeOdd | programming!is!fun |
-| Cut 18 2 | programming\*\*\*is\*\*\*fun |
-| Substitute ! *** | Nothing to replace! |
-| Substitute ? .!. | Your password is: programming\*\*\*is\*\*\*fun |
+| `up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy` | `programming!is!funny` |
+| `TakeOdd` | `programming!is!fun` |
+| `Cut 18 2` | `programming***is***fun` |
+| `Substitute ! ***` | `Nothing to replace!` |
+| `Substitute ? .!.` | `Your password is: programming***is***fun` |
 | Done | | 
 
 

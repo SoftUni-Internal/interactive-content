@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Registration
-[code-task title="Registration" taskId="d3807cc1-117e-4698-9d49-adceb9e49978" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Registration" taskId="java-fundamentals-part-2-exam-registration" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class Main {
 ## Description
 Create a program, that checks **if registrations are valid**.
 
-A registration consists of a **Username and a Password**.
+A registration consists of a **username and a password**.
 
 On the **first line** you will receive a **number that indicates how many inputs** you will receive on the **next** lines.
 
@@ -35,15 +35,15 @@ You must check if the registration is **valid and if it is print**:
 - "Registration was successful"
 - "Username: \{Username\}, Password: \{Password\}"
 
-**If it isn't** - print the following message:
+**If it is not** - print the following message:
 - "Invalid username or password"
 
 In the end **print the count of successful registrations**:
 - "Successful registrations: \{successfulRegistrationsCount\}"
 
 ### Input
-- On the first line - n - the count of inputs.
-- On the next n lines - input that you have to check if it has a valid registration.
+- On the first line - n - the count of inputs
+- On the next n lines - input that you have to check if it has a valid registration
 
 ### Output
 - Print all results from each input, each on a new line.
@@ -59,10 +59,10 @@ In the end **print the count of successful registrations**:
 | | Successful registrations: 1 |
 
 ### Comment
-- We have 3 input lines to check.
-- The first one follows the rules and is valid. 
-- The second one doesn't because the password doesn’t end with a digit. 
-- The third one is not valid because the password is too short.
+- We have 3 input lines to check
+- The first one follows the rules and is valid
+- The second one doesn't because the password doesn’t end with a digit
+- The third one is not valid because the password is too short
 
 ### Example
 | **Input** | **Output** |
