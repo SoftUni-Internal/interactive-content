@@ -32,7 +32,7 @@ In Java, a constructor is called **default** when it does not have any parameter
 
 If you do not have a constructor in your class, the Java compiler will insert a default constructor for you.
 
-You would not find it in your source code (the java file) as it would be inserted into the code during compilation and exists in the `.class` file.
+You would not find it in your source code (the Java file), as it would be inserted into the code during compilation and is being stored in the `.class` file.
 
 The default constructor does not have any parameters and looks like this:
 
