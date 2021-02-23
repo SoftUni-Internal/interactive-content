@@ -21,21 +21,19 @@ After that, until the `Generate` command is given, you will be receiving strings
 
 There are several types of instructions, split by `>>>`:
 
-* `Contains>>>{substring}` – checks if the raw activation key contains the given substring.
+* `Contains>>>{substring}` – Checks if the raw activation key contains the given substring
 
-  - If it does prints: `{raw activation key} contains {substring}`.
+  - if it does, print: `{raw activation key} contains {substring}`
 
-  - If not, prints: `Substring not found!`
+  - if not, print: `Substring not found!`
 
-* `Flip>>>Upper/Lower>>>{startIndex}>>>{endIndex}`:
-
-Changes the substring **between the given indices (the end index is exclusive)** to upper or lower case.
+* `Flip>>>Upper/Lower>>>{startIndex}>>>{endIndex}` - Changes the substring **between the given indices (the end index is exclusive)** to upper or lower case
 
 All given indexes will be valid.
 
 Prints the activation key.
 
-- `Slice>>>{startIndex}>>>{endIndex}`:
+- `Slice>>>{startIndex}>>>{endIndex}`
 
 **Deletes** the characters between the start and end indices (**end index is exclusive**).
 
@@ -45,7 +43,7 @@ Prints the activation key.
 
 ### Input
 
-The first line of the input will be string and it will consist of **letters and numbers only**.
+The first line of the input will be a string and it will consist of **letters and numbers only**.
 
 After the first line, until the `Generate` command is given, you will be receiving strings.
 
@@ -68,25 +66,25 @@ After the `Generate` command is received, print:
 
 ### Comments
 
-* `Slice>>2>>6`:
+* `Slice>>2>>6`
 
-ab**cdef**ghijklmnopqrstuvwxyz becomes `abghijklmnopqrstuvwxyz`
+ab**cdef**ghijklmnopqrstuvwxyz **becomes** `abghijklmnopqrstuvwxyz`
 
-* `Flip>>>Upper>>>3>>>14`:
+* `Flip>>>Upper>>>3>>>14`
 
-abg**hijklmnopqr**stuvwxyz becomes abg`HIJKLMNOPQR`stuvwxyz
+abg**hijklmnopqr**stuvwxyz **becomes** abg`HIJKLMNOPQR`stuvwxyz
 
 * `Flip>>>Lower>>>5>>>7`:
 
-abgHI**JK**LMNOPQRstuvwxyz becomes abgHI`jk`LMNOPQRstuvwxyz
+abgHI**JK**LMNOPQRstuvwxyz **becomes** abgHI`jk`LMNOPQRstuvwxyz
 
 * `Contains>>>def`:
 
-`abgHIjkLMNOPQRstuvwxyz` does not contain `def`
+`abgHIjkLMNOPQRstuvwxyz` **does not** contain `def`
 
 * `Contains>>>deF`:
 
-`abgHIjkLMNOPQRstuvwxyz` does not contain `deF`
+`abgHIjkLMNOPQRstuvwxyz` **does not** contain `deF`
 
 The final activation key is `abgHIjkLMNOPQRstuvwxyz`
 

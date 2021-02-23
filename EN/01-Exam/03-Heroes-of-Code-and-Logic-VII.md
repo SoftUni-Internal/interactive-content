@@ -17,11 +17,11 @@ public class Main {
 
 On the first line of the standard input, you will receive an integer `n` – the number of heroes that you can choose for your party.
 
-On the next `n` lines, the heroes themselves will follow with their **hit points** and **mana points** separated by empty space in the following format:
+On the next `n` lines, the heroes will follow with their **hit points** and **mana points** separated by empty space in the following format:
 
 `{hero name} {HP} {MP}`
 
-Where **HP** stands for hit points and **MP** for mana points and a hero can have a **maximum** of **100 HP** and **200 MP**.
+**HP** stands for hit points and **MP** for mana points. A hero can have a **maximum** of **100 HP** and **200 MP**.
 
 After you have successfully picked your heroes, you can start playing the game.
 
@@ -31,11 +31,11 @@ There are several actions that can be performed by the heroes:
 
 - `CastSpell – {hero name} – {MP needed} – {spell name}`:
 
-If the hero has the required MP, he casts the spell, thus reducing his MP. Print this message: 
+If the hero has the required MP, they cast the spell which reduces their MP. Print the following message: 
 
 `{hero name} has successfully cast {spell name} and now has {mana points left} MP!`
 
-If the hero is unable to cast the spell print:
+If the hero is unable to cast the spell, print:
 
 `{hero name} does not have enough MP to cast {spell name}!`
 
@@ -43,17 +43,17 @@ If the hero is unable to cast the spell print:
 
 Reduce the hero HP by the given damage amount.
 
-If the hero is still alive (his HP is greater than 0) print:
+If the hero is still alive (their HP is greater than 0) print:
 
 `{hero name} was hit for {damage} HP by {attacker} and now has {current HP} HP left!`
 
-If the hero has died, remove him from your party and print:
+If the hero has died, remove them from your party and print:
 
 `{hero name} has been killed by {attacker}!`
 
 - `Recharge – {hero name} – {amount}`:
 
-The hero increases his MP.
+The hero increases their MP.
 
 If a command is given that would bring the MP of the hero above `200`, MP is increased so that it reaches the maximum.
 
@@ -126,7 +126,7 @@ Print the following message:
 
 `TakeDamage` – Ivor`s HP is now -2, so he is dead too.
 
-After the `End` command we print the remaining living heroes, sorted by their HP in reverse order.
+After the `End` command we print the remaining living heroes, sorted by their HP in decending order.
 
 
 ## Examples

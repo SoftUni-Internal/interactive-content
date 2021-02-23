@@ -17,17 +17,17 @@ public class Main {
 
 Your first task is to determine if the given sequence of characters is a **valid** barcode or **not**.
 
-**Each line must not contain anything else but a valid barcode**. A barcode is valid when:
+**Each line must contain only valid barcodes**. A barcode is valid when:
 
-- Is surrounded with a `@` followed by one or more `#`
+- is surrounded with a `@` followed by one or more `#`
 
-- Is at least 6 characters long (without the surrounding `@` or `#`)
+- is at least 6 characters long (without the surrounding `@` or `#`)
 
-- Starts with a capital letter
+- starts with a capital letter
 
-- Contains only letters (lower and upper case) and digits
+- contains only letters (lower and upper case) and digits
 
-- Ends with a capital letter
+- ends with a capital letter
 
 Examples of valid barcodes:`@#FreshFisH@#`, `@###Brea0D@###`, `@##Che46sE@##`, `@##Che46sE@###`
 
