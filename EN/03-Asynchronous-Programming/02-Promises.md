@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-8-9-10-What-is-a-Promise--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Executing functions that rely on value from foreign sources is a **tedious and slow task**.
+Executing functions that rely on value from foreign sources is a rather **slow task**.
 
 Since the information **does not arrive immediately**, the whole function **must be blocked** until some value is present.
 
