@@ -2,15 +2,6 @@
 
 [slide hideTitle]
 
-# Reference vs Value
-
-[image assetsSrc="java-fund-methods-01.gif" /]
-
-
-[/slide]
-
-[slide hideTitle]
-
 # Value Types
 
 A variable of a value \(primitive data\) type contains an instance of the type and hold directly their value. 
@@ -88,7 +79,11 @@ public static void increment(int[] nums, int value) {
 [slide hideTitle]
 # Value types vs. Reference Types
 
-Now we will visually demonstrate how value types are stores, compare to reference types. We will first initialize some primitive value type variables, followed by ones that are reference types:
+[image assetsSrc="java-fund-methods-01.gif" /]
+
+Now we will visually demonstrate how value types are stored, compared to reference types. 
+
+We will first initialize some primitive value type variables, followed by ones that are reference types:
 
 ```java
 //primitives
@@ -158,7 +153,7 @@ Any operation that would change an element in the array inside the method will a
 
 [slide hideTitle]
 # Problem: Math Operations
-[code-task title="Problem: Math operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Math operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;

@@ -4,10 +4,9 @@
 
 ## In this lesson you will learn:
 
-**1. What Methods Are**
+**1. Methods**
 
-- What a method is
-
+- What methods are
 - Why we use methods
 
 **2. Naming and Best Practices** 
@@ -24,13 +23,13 @@
 
 - Invoking methods
 
-**4. Method with Parameters**
+**4. Methods with Parameters**
 
-- Overview of a method that accepts parameters
+- Overview of methods that accept parameters
 
 **5. Returning Values from Methods**
 
-- How to use the "return" values from methods
+- Using the "return" values from methods
 
 **6. Value vs References type**
 
@@ -40,7 +39,7 @@
 
 **7. Overloading Methods**
 
-- What "method overloading" is
+- What **method overloading** is and how to do it
 
 **8. Program Execution Flow**
 

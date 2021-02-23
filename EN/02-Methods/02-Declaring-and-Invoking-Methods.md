@@ -9,7 +9,7 @@ It is defined with the name of the method, followed by parentheses **()**.
 
 Java provides some pre-defined methods, such as ``System.out.println()``, but you can also create your own methods to perform certain actions:
 
-```Java
+```java
 public class MyClass {
   public static void printHello() {
     System.out.println("Hello World!");
@@ -32,9 +32,9 @@ public class MyClass {
 
 # Invoking Methods
 
-To call a method in Java, write the method's name followed by two parentheses **()** and a semicolon **;**
+To call or invoke a method in Java, write the method's name followed by a pair of parentheses **()** and a semicolon **;**
 
-In the following example, `printHello()` is used to print a text (the action), when it is called:
+In the following example, `printHello()` is used to print some text, when it is called:
 
 ```java live no-template
 public class MyClass {
