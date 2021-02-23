@@ -111,27 +111,29 @@ function sum(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {return code(input.map(Number))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a function that receives an **array of numbers**. Print out the sum of the first and last element of that array. 
+Create a program that receives an **array of numbers**. Print out the sum of the first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|`[20, 30, 40]`| 60 |
-|`[10, 17, 22, 33]`| 43 |
+| sum([20, 30, 40]) | 60 |
+| sum([10, 17, 22, 33]) | 43 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-20
-30
-40
+sum([20, 30, 40])
 [/input]
 [output]
 60
@@ -139,10 +141,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test open]
 [input]
-10
-17
-22
-33
+sum([10, 17, 22, 33])
 [/input]
 [output]
 43
@@ -150,11 +149,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-191
-67
-22
-33
-9
+sum([191, 67, 22, 33, 9])
 [/input]
 [output]
 200
@@ -162,8 +157,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-10
-69
+sum([10, 69])
 [/input]
 [output]
 79
@@ -171,9 +165,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-56
-44
-19
+sum([56, 44, 19])
 [/input]
 [output]
 75
@@ -181,9 +173,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-118
-574
-19
+sum([118, 574, 19])
 [/input]
 [output]
 137
@@ -191,9 +181,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-11
-58
-69
+sum([11, 58, 69])
 [/input]
 [output]
 80
@@ -201,9 +189,7 @@ Write a function that receives an **array of numbers**. Print out the sum of the
 [/test]
 [test]
 [input]
-91
-18
-19
+sum([91, 18, 19])
 [/input]
 [output]
 110
@@ -257,29 +243,31 @@ function days(number){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
 [task-description]
 # Description
 
-Write a program that receives a number and prints out the corresponding name of the day of the week. 
+Create a program that receives a number and prints out the corresponding name of the day of the week. 
 
-If the number is NOT a valid day, print `Invalid day!`.
+If the number is NOT a valid day, print "**Invalid day!**".
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|3| Wednesday |
-|11| Invalid day! |
+| days(3) | Wednesday |
+| days(11) | Invalid day! |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-3
+days(3)
 [/input]
 [output]
 Wednesday
@@ -287,7 +275,7 @@ Wednesday
 [/test]
 [test open]
 [input]
-11
+days(11)
 [/input]
 [output]
 Invalid day!
@@ -295,7 +283,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-1
+days(1)
 [/input]
 [output]
 Monday
@@ -303,7 +291,7 @@ Monday
 [/test]
 [test]
 [input]
-2
+days(2)
 [/input]
 [output]
 Tuesday
@@ -311,7 +299,7 @@ Tuesday
 [/test]
 [test]
 [input]
-4
+days(4)
 [/input]
 [output]
 Thursday
@@ -319,7 +307,7 @@ Thursday
 [/test]
 [test]
 [input]
-5
+days(5)
 [/input]
 [output]
 Friday
@@ -327,7 +315,7 @@ Friday
 [/test]
 [test]
 [input]
-6
+days(6)
 [/input]
 [output]
 Saturday
@@ -335,7 +323,7 @@ Saturday
 [/test]
 [test]
 [input]
-7
+days(7)
 [/input]
 [output]
 Sunday
@@ -343,7 +331,7 @@ Sunday
 [/test]
 [test]
 [input]
-8
+days(8)
 [/input]
 [output]
 Invalid day!
@@ -351,7 +339,7 @@ Invalid day!
 [/test]
 [test]
 [input]
-9
+days(9)
 [/input]
 [output]
 Invalid day!
