@@ -110,7 +110,7 @@ Because we have more wins than losses, we win the tournament and increase the mo
 
 | **Input** | **Output** |
 | --- | --- |
-|tournament([2, 'volleyball', 'win', 'football','lose', 'basketball', 'win', 'Finish', 'golf', 'win', 'tennis', 'win', 'badminton', 'win', 'Finish']) | You won the tournament! Total raised money: 132.00 |
+|tournament([3, 'darts', 'lose', 'handball', 'lose', 'judo', 'win', 'Finish', 'snooker', 'lose', 'swimming', 'lose', 'squash', 'lose', 'table tennis', 'win', 'Finish', 'volleyball', 'win', 'basketball', 'win', 'Finish']) | You lost the tournament! Total raised money: 84.00 |
 
 [/task-description]
 [code-io /]
