@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Password Reset
 [code-task title="Password Reset" taskId="java-fundamentals-part-2-exam-password-reset" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 import java.util.*;
 
