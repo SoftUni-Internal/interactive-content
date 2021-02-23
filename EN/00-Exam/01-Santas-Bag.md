@@ -453,40 +453,40 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.List;
 
-public class T02ValidateBagFields \{
+public class T02ValidateBagFields {
     private static final String MODIFIER_PRIVATE = "private";
     private static final String FIELD_NOT_PRESENT_ERROR_MESSAGE = "The field '%s.%s' does not exist!";
     private static final String FIELD_IS_NOT_CORRECT_MODIFIER = "The field '%s.%s' doesn't have correct access modifier(actual - `%s`; expected - `%s`;)!";
     private static final String FIELD_HAS_WRONG_TYPE = "The field '%s.%s' has the wrong type(actual - `%s`; expected - `%s`;)!";
 
-    private class ExpField \{
+    private class ExpField {
         Class fieldType;
         String modifier;
         String name;
 
-        public ExpField(String modifier, Class fieldType, String name) \{
+        public ExpField(String modifier, Class fieldType, String name) {
             this.fieldType = fieldType;
             this.modifier = modifier;
             this.name = name;
-        \}
-    \}
+        }
+    }
 
     @Test
-    public void validateClassFields() \{
+    public void validateClassFields() {
         Class clazz = getType("Bag");
 
-        ExpField\[\] fields = new ExpField\[\]\{
+        ExpField\[\] fields = new ExpField\[\]{
                 new ExpField(MODIFIER_PRIVATE, String.class, "color"),
                 new ExpField(MODIFIER_PRIVATE, int.class, "capacity"),
                 new ExpField(MODIFIER_PRIVATE, List.class, "data"),
-        \};
+        };
 
-        for (ExpField field \: fields) \{
+        for (ExpField field : fields) {
             validateField(clazz, field);
-        \}
-    \}
+        }
+    }
 
-    private void validateField(Class clazz, ExpField expField) \{
+    private void validateField(Class clazz, ExpField expField) {
         String expectedModifier = expField.modifier;
         String expectedType = expField.fieldType.toString();
         String expectedName = expField.name;
@@ -507,33 +507,33 @@ public class T02ValidateBagFields \{
         String actualType = actualField.getType().toString();
         String typeMessage = String.format(FIELD_HAS_WRONG_TYPE, clazz.getSimpleName(), expectedName, actualType, expectedType);
         Assert.assertEquals(typeMessage, expectedType, actualType);
-    \}
+    }
 
-    private Field getField(Class clazz, String expectedName) \{
+    private Field getField(Class clazz, String expectedName) {
         Field field = null;
-        try \{
+        try {
             field = clazz.getDeclaredField(expectedName);
-        \} catch (NoSuchFieldException e) \{
-        \}
+        } catch (NoSuchFieldException e) {
+        }
 
         return field;
-    \}
+    }
 
-    private String getFieldModifier(Field field) \{
+    private String getFieldModifier(Field field) {
         int actualModifier = field.getModifiers();
 
         String modifierAsStr = Modifier.toString(actualModifier);
         return modifierAsStr;
-    \}
+    }
 
-    private static Class getType(String name) \{
+    private static Class getType(String name) {
         Class clazz = Classes.allClasses.get(name);
 
         return clazz;
-    \}
+    }
 
 
-\}
+}
 [/input]
 [output]
 Test Passed!
