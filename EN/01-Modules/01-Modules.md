@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-3-4-5-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **Module** is a **set of functions** that is made **accessible throughout any part of your application**.
+A **Module** is a **set of functions** that is made **accessible throughout any part of the application**.
 
 Modules are used to **encapsulate code and data** to **implement a certain functionality**.
 
