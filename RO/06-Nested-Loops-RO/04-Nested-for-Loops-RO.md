@@ -80,17 +80,26 @@ function triangleOfStars(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 
 # Descriere
-Scrieți un program care:
+Creați un program care:
 
 * Citește **înălțimea** unui triunghi de pe consolă
 * Tipărește un **triunghi de stele**
 # Exemplu
 | **Input** | **Output**| 
 | --- | --- |
-| 5 | \* |
+| triangleOfStars(5) | \* |
 | | \*\* |
 | | \*\*\* |
 |  | \*\*\*\* |
@@ -101,7 +110,7 @@ Scrieți un program care:
 [tests]
 [test]
 [input]
-5
+triangleOfStars(5)
 [/input]
 [output]
 \*
@@ -114,7 +123,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-6
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -128,7 +137,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
+triangleOfStars(8)
 [/input]
 [output]
 \*

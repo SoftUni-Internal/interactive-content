@@ -57,16 +57,25 @@ function triangleOfStars(input) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Scrieți un program care:
+Creați un program care:
 
 * Citește **înălțimea** unui triunghi din consolă 
 * Imprimă un **un triunghi de stele**
 # Exemplu
 | **Input** | **Output**| 
 | --- | --- |
-| 5 | \* |
+| triangleOfStars(5) | \* |
 | | \*\* |
 | | \*\*\* |
 |  | \*\*\*\* |
@@ -77,7 +86,7 @@ Scrieți un program care:
 [tests]
 [test]
 [input]
-5
+triangleOfStars(6)
 [/input]
 [output]
 \*
@@ -90,7 +99,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-6
+triangleOfStars(7)
 [/input]
 [output]
 \*
@@ -104,7 +113,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
+triangleOfStars(9)
 [/input]
 [output]
 \*
@@ -140,13 +149,22 @@ function sumOfDigits(inputLines) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Descriere
-Citiți continuu numerele, până când este introdus `End`:
+Citiți continuu numerele, până când este introdus **End**:
 
 * Imprimați suma cifrelor pentru fiecare număr 
 
-* La final, imprimați `Goodbye`
+* La final, imprimați **Goodbye**
 
 # Exemplu
 | **Input** | **Output** |
@@ -163,11 +181,7 @@ Citiți continuu numerele, până când este introdus `End`:
 [tests]
 [test]
 [input]
-124
-33
-2
-563
-End
+sumOfDigits(['124', '33', '2', '563', 'End'])
 [/input]
 [output]
 Sum of digits: 7
@@ -179,11 +193,7 @@ Goodbye
 [/test]
 [test]
 [input]
-24
-312
-3
-543
-End
+sumOfDigits(['24', '312', '3', '543', 'End'])
 [/input]
 [output]
 Sum of digits: 6
@@ -195,11 +205,7 @@ Goodbye
 [/test]
 [test]
 [input]
-1234
-212
-4
-343
-End
+sumOfDigits(['1234', '212', '4', '343', 'End'])
 [/input]
 [output]
 Sum of digits: 10
@@ -211,11 +217,7 @@ Goodbye
 [/test]
 [test]
 [input]
-123
-23
-234
-566
-End
+sumOfDigits(['123', '23', '234', '566', 'End'])
 [/input]
 [output]
 Sum of digits: 6
@@ -227,11 +229,7 @@ Goodbye
 [/test]
 [test]
 [input]
-789
-567
-567
-345
-End
+sumOfDigits(['789', '567', '567', '345', 'End'])
 [/input]
 [output]
 Sum of digits: 24
