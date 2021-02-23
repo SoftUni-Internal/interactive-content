@@ -1,7 +1,7 @@
 # Static Members
 
 [slide hideTitle]
-# Static Members
+# What Are Static Members
 
 [vimeo-video]
 [stream language="EN" videoId="485443972/9db86c189e" default /]
@@ -75,7 +75,7 @@ public class Car {
 [stream language="RO" videoId="485444110/761b551138"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
