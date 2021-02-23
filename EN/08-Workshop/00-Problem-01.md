@@ -52,7 +52,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
     "title": "Arrays",
     "category": "JavaScript",
     "content": "Lorem ipsum dolor sit amet, consectetur...",
-    "creator-email": "peter.georgiev@email.com"
+    "creator-email": "peter.smith@email.com"
 }
 
 ```
@@ -95,7 +95,7 @@ Using **Postman** or any other HTTP client tool, test the REST service endpoints
     "title": "Arrays",
     "category": "JavaScript",
     "content": "Lorem ipsum dolor sit amet, consectetur...",
-    "creator-email": "peter.georgiev@email.com"
+    "creator-email": "peter.smith@email.com"
 }
 ```
 
