@@ -17,7 +17,7 @@ For example - in real life, a **car is an object**:
 ```java
 public class Car {
 
-    String Color;
+    String color;
     int weight;
 
     void drive(){ ... }
@@ -174,8 +174,8 @@ Car sportsCar = new Car()
 
 ```java
 // for object sportsCar(4860c54d):
-type=Car;
-int horsePower=0;
+type = Car;
+int horsePower = 0;
 ``` 
 
 [/slide]
