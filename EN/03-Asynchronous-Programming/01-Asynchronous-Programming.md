@@ -10,10 +10,6 @@ The event loop in JavaScript is **where all the incoming events are processed**.
 
 It queues event handlers in the **Event queue** and executes them in the **Call stack**, producing JS code.
 
-Here is how the whole process happens:
-
-[image assetsSrc="JS-Applications-Asynchronous-Programming.gif" /]
-
 [/slide]
 
 [slide hideTitle]
