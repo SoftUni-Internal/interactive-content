@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 # Summary
 
 [vimeo-video]
@@ -6,28 +6,30 @@
 [stream language="RO" videoId="485444743/fd95b4883a"  /]
 [/video-vimeo]
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
-- What are classes in Java?
-    - Template from which objects are created
-    - Object is an instance of a class
+- Classes are templates from which objects are created
+    - class instances are called objects
+    
 ```java
 class Animal { 
     
 }
 Animal animal = new Animal();
 ```
-- Class components:
-    - Fields 
-        - Field is a variable inside a class
+
+- The variables inside a class are called fields
+
 ```java
 class Animal { 
     String name;
     Int age;
 }
 ```
-- Methods 
-    - Store executable code that manipulate state
+
+- Methods store executable code
+    - they are used to manipulate the state
+
 ```java
 class Animal { 
     String name;
@@ -36,10 +38,11 @@ class Animal {
     void bark(){ ... }
 }
 ```
-- Constructors
-    - Special type of method which is used to initialize the object
-    - Constructors are invoked when creating new class instances
-    - Set object's initial state
+
+- Constructors are a special methods, used to initialize objects
+    - constructors are invoked when creating new class instances
+    - they set the object's initial state
+    
 ```java
 class Animal { 
     String name;
@@ -55,13 +58,14 @@ class Animal {
 Animal animal = new Animal("Rex", 5);
 ```
 
-# In the next lesson, you will learn:
+## In the next lesson, you will learn:
 
 - Generics in Java 
-- Generics Syntax
-- Generic Classes and Interfaces
-- Generic Methods
-- Type Erasure, Type Parameter Bounds
+    - syntax
+    - classes and interfaces
+    - generic methods
+- Type erasure
+- Type parameter bounds
 
 
 [/slide]
