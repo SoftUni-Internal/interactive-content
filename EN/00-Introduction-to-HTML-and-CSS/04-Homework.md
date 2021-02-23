@@ -32,7 +32,9 @@
 * Change the **title** of the document to *Simple HTML Page* 
 * Use the **paragraph** tag for plain text and the **strong** tag for bold text
 
-[image assetsSrc="htmlintro(1).png" /]
+[image assetsSrc="01-intro-to-html-tags-simple-html-page.png" /]
+
+[image assetsSrc="inheritance-example(13).png" /]
 
 [/task-description]
 
