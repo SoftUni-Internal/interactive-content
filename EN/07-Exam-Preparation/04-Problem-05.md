@@ -62,7 +62,7 @@ The result must be formatted to two digits after the decimal point.
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|budget([3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
+|budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
 
 **Comments**
 
@@ -78,15 +78,28 @@ Price of series is 2.50 \+ 5 \+ 2 = 9.50$.
 
 Your budget is bigger than the price of series, so you can buy them.
 
+## Example
+| **Input** | **Output** |
+| --- | --- |
+|budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
+
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-budget([3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])
+budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])
 [/input]
 [output]
 You bought all the series and have 0.50$ left.
+[/output]
+[/test]
+[test open]
+[input]
+budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])
+[/input]
+[output]
+You need 2.00$ more to buy the series!
 [/output]
 [/test]
 [test]
@@ -99,7 +112,7 @@ You bought all the series and have 19.00$ left.
 [/test]
 [test]
 [input]
-budget([15, 3, 'Protector' 8, 'TotalDrama' 6, 'Area', 5])
+budget([15, 3, 'Protector', 8, 'TotalDrama', 6, 'Area', 5])
 [/input]
 [output]
 You bought all the series and have 0.10$ left.
@@ -107,7 +120,7 @@ You bought all the series and have 0.10$ left.
 [/test]
 [test]
 [input]
-budget([50, 2, 'Lord of the rings', 40, 'Gotham', 10])
+budget([50, 2, 'Lord of the rings', 40, 'Gotham', 10}])
 [/input]
 [output]
 You bought all the series and have 0.00$ left.
@@ -115,7 +128,7 @@ You bought all the series and have 0.00$ left.
 [/test]
 [test]
 [input]
-budget([24, 4, 'Gotham', '11', 'Thrones' '5', 'Lucifer', 9, 'Unkown', 4])
+budget([24, 4, 'Gotham', 11, 'Thrones', 5, 'Lucifer', 9, 'Unkown', 4])
 [/input]
 [output]
 You bought all the series and have 1.10$ left.
@@ -123,7 +136,7 @@ You bought all the series and have 1.10$ left.
 [/test]
 [test]
 [input]
-budget([5, 2, 'Area' 12, 'Legendarie', 48])
+budget([5, 2, 'Area', 12, 'Legendarie', 48])
 [/input]
 [output]
 You need 53.80$ more to buy the series!
@@ -131,15 +144,15 @@ You need 53.80$ more to buy the series!
 [/test]
 [test]
 [input]
-budget([10, 4, 'Thrones', 8, 'Lucifer', 5, 'Stoned', 4, 'MK', 12])
+budget([10, 4, 'Thrones', 8, 'Lucifer', '5, 'Stoned', 4, 'MK', 12])
 [/input]
 [output]
-You need 13.00$ more to buy the series!
+You need 13.00$. more to buy the series!
 [/output]
 [/test]
 [test]
 [input]
-budget([5, 4, 'Legends', 5, 'Gotham', 4, 'Lucifer', 12, 'Thrones', 4])
+budget([5, 4, Legends, 5, 'Gotham', 4, 'Lucifer', 12, 'Thrones', 4])
 [/input]
 [output]
 You need 13.20$ more to buy the series!
@@ -163,7 +176,7 @@ You need 4.25$ more to buy the series!
 [/test]
 [test]
 [input]
-budget([100, 4, 'Area', 15, 'Legendary', 10, 'Teen wolf', 10, 'Breaking bad', 15])
+budget([100, 4, 'Area', 15, 'Legendary', 10, 'Teen wolf', 10, 'Breaking bad', 15,
 [/input]
 [output]
 You bought all the series and have 51.50$ left.
