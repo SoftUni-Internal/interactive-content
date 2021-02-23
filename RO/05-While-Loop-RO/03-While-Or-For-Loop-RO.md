@@ -60,9 +60,18 @@ function oddNumber(numbers) {
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Cerință
-Scrieți un program care:
+Creați un program care:
 
 * Citește numere de pe consolă până la obținerea unui **număr impar**
 * Imprimă **numărul impar** 
@@ -70,16 +79,13 @@ Scrieți un program care:
 # Exemplu
   | **Input** | **Output** |
 | --- | --- |
-|`['2', '4', '8', '3']`| 3 |
+| oddNumber(['2', '4', '8', '3']) | 3 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-4
-8
-5
+oddNumber(['2', '4', '8', '5'])
 [/input]
 [output]
 5
