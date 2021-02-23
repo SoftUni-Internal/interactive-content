@@ -1,13 +1,9 @@
 [slide hideTitle]
 # Problem: Santa's Bag of Presents
-[code-task title="Santas Bag of Presents" timeLimit=5000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
+[code-task title="Santas Bag of Presents" timeLimit=10000 taskId="Java-OOP-Basics-Exam-Santas-Bag-of-Presents" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Can you imagine Santa without his special bag that carries presents for so many children? Neither can we. 
-
-So let's have a quick sneak peek inside it and help  Santa rearrange it. 
 
 ## Preparation
 Pay attention to name the package (**christmas**), all the classes, their fields and methods exactly the same way they are presented in the following resources. 
