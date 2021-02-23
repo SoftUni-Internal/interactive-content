@@ -450,14 +450,14 @@ Creați un program, care verifică **3 numere sortate**:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|sortedNumbers(1, 2, 3)| Ascending |
-|sortedNumbers(3, 5, 2)| Not sorted |
+|sortedNumbers([1, 2, 3])| Ascending |
+|sortedNumbers([3, 5, 2])| Not sorted |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-sortedNumbers(1, 2, 3)
+sortedNumbers([1, 2, 3])
 [/input]
 [output]
 Ascending
@@ -465,7 +465,7 @@ Ascending
 [/test]
 [test open]
 [input]
-sortedNumbers(3, 5, 2)
+sortedNumbers([3, 5, 2])
 [/input]
 [output]
 Not sorted
@@ -473,7 +473,7 @@ Not sorted
 [/test]
 [test]
 [input]
-sortedNumbers(3, 1, 2)
+sortedNumbers([3, 1, 2])
 [/input]
 [output]
 Not sorted
@@ -481,7 +481,7 @@ Not sorted
 [/test]
 [test]
 [input]
-sortedNumbers(3, 2, 1)
+sortedNumbers([3, 2, 1])
 [/input]
 [output]
 Descending
@@ -489,7 +489,7 @@ Descending
 [/test]
 [test]
 [input]
-sortedNumbers(4, 3, 2)
+sortedNumbers([4, 3, 2])
 [/input]
 [output]
 Descending
@@ -497,7 +497,7 @@ Descending
 [/test]
 [test]
 [input]
-sortedNumbers(2, 3, 4)
+sortedNumbers([2, 3, 4])
 [/input]
 [output]
 Ascending
@@ -505,7 +505,7 @@ Ascending
 [/test]
 [test]
 [input]
-sortedNumbers(4, 5, 3)
+sortedNumbers([4, 5, 3])
 [/input]
 [output]
 Not sorted
@@ -513,7 +513,7 @@ Not sorted
 [/test]
 [test]
 [input]
-sortedNumbers(10, 9, 8)
+sortedNumbers([10, 9, 8])
 [/input]
 [output]
 Descending
