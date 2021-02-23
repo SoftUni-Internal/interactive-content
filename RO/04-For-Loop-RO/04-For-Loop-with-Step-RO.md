@@ -1,16 +1,17 @@
 // sectionId: "Javascript::Programming-Basics::For-Loop::For-Loop-With-Step"
 
 [slide hideTitle]
+
 # Bucla For cu un pas
 
 [vimeo-video]
 [stream language="EN" videoId="487119404/67365f350f" default /]
-[stream language="RO" videoId="487119404/67365f350f"  /]
+[stream language="RO" videoId="487119404/67365f350f" /]
 [/video-vimeo]
 
-În această secține vom oferi mai multe detalii cu privre la o  parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
+În această secține vom oferi mai multe detalii cu privre la o parte specială și foarte importantă a buclei "**for**", **și anume pasul.**
 
-**Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale. 
+**Pasul** este acea **parte** a construcției buclei care indică cum să fie incrementată sau decrementată valoarea variabilei principale.
 
 Aceasta este declarată ultimă în corpul buclei for.
 
@@ -44,43 +45,58 @@ for (let i = 10; i >= 1; i--) {
 
 [/slide]
 
-
 [slide hideTitle]
+
 # Problemă cu soluția: Number Ending with 7
 
 [vimeo-video]
 [stream language="EN" videoId="487119426/15f9ad851f" default /]
-[stream language="RO" videoId="487119426/15f9ad851f"  /]
+[stream language="RO" videoId="487119426/15f9ad851f" /]
 [/video-vimeo]
-
 
 [code-task title="Number Ending with 7" taskId="pb-js-for-loop-Number-Ending-with-7" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function numbersEndingWith7(n) {
   // Scrieți codul dvs. aici
 }
 ```
-[/code-editor]
-[task-description]
-# Description
-Scrieți un program care:
 
-* Citește un număr **n**
-* Imprimă toate numerele de la  **7 până la n**, **care se termină cu 7**
+[/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
+[task-description]
+
+# Description
+
+Creați un program care:
+
+- Citește un număr **n**
+- Imprimă toate numerele de la **7 până la n**, **care se termină cu 7**
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|30| 7 |
-||17 |
-||27 |
+
+| **Input**              | **Output** |
+| ---------------------- | ---------- |
+| numbersEndingWith7(30) | 7          |
+|                        | 17         |
+|                        | 27         |
 
 [/task-description]
 [tests]
 [test]
 [input]
-40
+numbersEndingWith7(40)
 [/input]
 [output]
 7
@@ -91,7 +107,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-35
+numbersEndingWith7(35)
 [/input]
 [output]
 7
@@ -101,7 +117,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-80
+numbersEndingWith7(80)
 [/input]
 [output]
 7
@@ -116,7 +132,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-130
+numbersEndingWith7(130)
 [/input]
 [output]
 7
@@ -140,41 +156,55 @@ Scrieți un program care:
 
 [/slide]
 
-
-
 [slide hideTitle]
-# Problemă cu soluția: Exam Countdown
 
+# Problemă cu soluția: Exam Countdown
 
 [code-task title="Exam Countdown" taskId="pb-js-for-loop-Exam-Countdown" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function examCountdown(days) {
    // Scrieți codul dvs. aici
 }
 ```
-[/code-editor]
-[task-description]
-# Description
-Scrieți un program care:
 
-* Citește un număr întreg - numărul de **zile înainte de examen**
-* După fiecare zi trecută, imprimă: `{numberOfDaysLeft} days before the exam`
-* La final imprimă: `The exam has come.`
+[/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
+[task-description]
+
+# Description
+
+Creați un program care:
+
+- Citește un număr întreg - numărul de **zile înainte de examen**
+- După fiecare zi trecută, imprimă: \{numberOfDaysLeft\} days before the exam
+- La final imprimă: **The exam has come.**
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|3| 3 days before the exam |
-||2 days before the exam |
-||1 days before the exam |
-||The exam has come. |
+
+| **Input**        | **Output**             |
+| ---------------- | ---------------------- |
+| examCountdown(3) | 3 days before the exam |
+|                  | 2 days before the exam |
+|                  | 1 days before the exam |
+|                  | The exam has come.     |
 
 [/task-description]
 [tests]
 [test]
 [input]
-4
+examCountdown(4)
 [/input]
 [output]
 4 days before the exam
@@ -186,7 +216,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-5
+examCountdown(5)
 [/input]
 [output]
 5 days before the exam
@@ -199,7 +229,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-6
+examCountdown(6)
 [/input]
 [output]
 6 days before the exam
@@ -213,7 +243,7 @@ The exam has come.
 [/test]
 [test]
 [input]
-7
+examCountdown(7)
 [/input]
 [output]
 7 days before the exam
@@ -231,4 +261,3 @@ The exam has come.
 [/code-task]
 
 [/slide]
-

@@ -3,45 +3,52 @@
 # Temă de acasă
 
 [slide hideTitle]
+
 # Problem: Calculate Month Salary
+
 [code-task title="Calculate Month Salary" taskId="pb-js-for-loop-Calculate-Month-Salary" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function calculateMonthSalary (days, salaryPerDay) {
    // Scrieți codul dvs. aici
 }
 
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
-# Descriere
-Scrieți un program care:
 
-* Primește numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
-* Calculează salariul lunar al unui angajat
-* Tipărește rezultatul pe consolă
+# Descriere
+
+Creați un program care:
+
+- Primește numărul de zile lucrătoare pentru luna curentă și salariul pe zi - numere întregi
+- Calculează salariul lunar al unui angajat
+- Tipărește rezultatul pe consolă
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`2, ['100', '200']`| 300 |
+
+| **Intrare**                             | **Ieșire** |
+| --------------------------------------- | ---------- |
+| calculateMonthSalary(2, ['100', '200']) | 300        |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-100
-300
+calculateMonthSalary(2, ['100', '300'])
 [/input]
 [output]
 400
@@ -49,10 +56,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
-100
-300
-50
+calculateMonthSalary(3, ['100', '300', '50'])
 [/input]
 [output]
 450
@@ -60,12 +64,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-5
-100
-100
-100
-100
-100
+calculateMonthSalary(5, ['100', '100', '100', '100', '100'])
 [/input]
 [output]
 500
@@ -73,10 +72,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
-10
-20
-30
+calculateMonthSalary(3, ['10', '20', '30'])
 [/input]
 [output]
 60
@@ -89,47 +85,52 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Number Sequence
+
 [code-task title="Number Sequence" taskId="pb-js-for-loop-Number-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function numberSequence (n, numbers) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
-# Descriere
-Scrieți un program care:
 
-* Citește **n** reprezentând numărul de numere de citit în continuare
-* Găsește numerele **max** și **min**
-* Le imprimă pe consolă
+# Descriere
+
+Creați un program care:
+
+- Citește **n** reprezentând numărul de numere de citit în continuare
+- Găsește numerele **max** și **min**
+- Le imprimă pe consolă
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`5, ['10', '304', '0', '0', '50']`| Max number: 304 |
-||Min number: 0|
+
+| **Intrare**                                      | **Ieșire**      |
+| ------------------------------------------------ | --------------- |
+| numberSequence(5, ['10', '304', '0', '0', '50']) | Max number: 304 |
+|                                                  | Min number: 0   |
 
 [/task-description]
 [tests]
 [test]
 [input]
-4
-100
-200
-0
-300
+numberSequence(4, ['100', '200', '0', '300'])
 [/input]
 [output]
 Max number: 300
@@ -138,8 +139,7 @@ Min number: 0
 [/test]
 [test]
 [input]
-1
-100
+numberSequence(1, ['100'])
 [/input]
 [output]
 Max number: 100
@@ -148,10 +148,7 @@ Min number: 100
 [/test]
 [test]
 [input]
-3
--1
--2
-0
+numberSequence(3, ['-1', '-2', '0'])
 [/input]
 [output]
 Max number: 0
@@ -165,41 +162,52 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
+
 # Problem and Solution: Power Of Numbers
 
 [vimeo-video]
 [stream language="EN" videoId="488453000/3f94136963" default /]
-[stream language="RO" videoId="488453000/3f94136963"  /]
+[stream language="RO" videoId="488453000/3f94136963" /]
 [/video-vimeo]
-
 
 [code-task title="Power Of Numbers" taskId="pb-js-for-loop-Power-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function powerOfNumbers(n, p) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
+
 [/code-adapter]
 [task-description]
+
 # Descriere
-Scrieți un program care:
 
-* Citește `p` - puterea și n - numărul
+Creați un program care:
 
-* Tipărește rezultatul lui `n` la puterea lui `p`
+- Citește **p** - puterea și **n** - numărul
 
-* Nu utilizați `Math.Pow()` - nu reprezintă obiectivul exercițiului nostru
+- Tipărește rezultatul lui **n** la puterea lui **p**
+
+- Nu utilizați **Math.Pow()** - nu reprezintă obiectivul exercițiului nostru
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|5, 2| 32 |
+
+| **Intrare** | **Ieșire** |
+| ----------- | ---------- |
+| 5, 2        | 32         |
 
 [/task-description]
 [code-io /]
@@ -263,49 +271,52 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Equal Pairs
+
 [code-task title="Equal Pairs" taskId="pb-js-for-loop-Calculate-Equal-Pairs" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function equalPairs(n, numbers) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
-# Descriere
-Scrieți un program care:
 
-* Citește numărul **n** și **n perechi** de numere
-* Tipărește `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
-* **În caz contrar**, imprimă `No, maxdiff={diff}`
-* diff este **diferența maximă** în suma dintre două perechi
+# Descriere
+
+Creați un program care:
+
+- Citește numărul **n** și **n perechi** de numere
+- Tipărește `Yes, value={sum}`, dacă **suma tuturor** perechilor este **aceeași**
+- **În caz contrar**, imprimă `No, maxdiff={diff}`
+- diff este **diferența maximă** în suma dintre două perechi
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`2, ['-1', '0', '0', '-1']`| Yes, value=\-1 |
+
+| **Intrare**                           | **Ieșire**     |
+| ------------------------------------- | -------------- |
+| equalPairs(2, ['-1', '0', '0', '-1']) | Yes, value=\-1 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-3
-1
-2
-0
-3
-4
--1
+equalPairs(3, ['1', '2', '0', '3', '4', '-1'])
 [/input]
 [output]
 Yes, value=3
@@ -313,11 +324,7 @@ Yes, value=3
 [/test]
 [test]
 [input]
-2
-1
-2
-2
-2
+equalPairs(2, ['1', '2', '2', '2'])
 [/input]
 [output]
 No, maxdiff=1
@@ -325,15 +332,7 @@ No, maxdiff=1
 [/test]
 [test]
 [input]
-4
-1
-1
-3
-1
-2
-2
-0
-0
+equalPairs(4, ['1', '1', '3', '1', '2', '2', '0', '0'])
 [/input]
 [output]
 No, maxdiff=4
@@ -341,9 +340,7 @@ No, maxdiff=4
 [/test]
 [test]
 [input]
-1
-5
-5
+equalPairs(1, ['5', '5'])
 [/input]
 [output]
 Yes, value=10
@@ -351,11 +348,7 @@ Yes, value=10
 [/test]
 [test]
 [input]
-2
--1
-0
-0
--1
+equalPairs(2, ['-1', '0', '0', '-1'])
 [/input]
 [output]
 Yes, value=-1
@@ -363,11 +356,7 @@ Yes, value=-1
 [/test]
 [test]
 [input]
-2
--1
-2
-0
--1
+equalPairs(2, ['-1', '2', '0', '-1'])
 [/input]
 [output]
 No, maxdiff=2
@@ -375,23 +364,7 @@ No, maxdiff=2
 [/test]
 [test]
 [input]
-8
-5
-5
-70
--60
-3
-7
-2
-8
-20
--10
-15
--5
-0
-10
-10
-0
+equalPairs(8, ['5', '5', '70', '-60', '3', '7', '2', '8', '20', '-10', '15', '-5', '0', '10', '10', '0'])
 [/input]
 [output]
 Yes, value=10
@@ -404,49 +377,53 @@ Yes, value=10
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Zig Zag Sum
+
 [code-task title="Zig Zag Sum" taskId="pb-js-for-loop-Zig-Zag-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function zigZagSum(n, numbers) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
-# Descriere
-Scrieți un program care:
 
-* Citește **n** - număr reprezentând cantitatea de numere de intrare
-* Citeste **n numere**
-* Pentru fiecare linie  **pară**  **se adaugă** numărul la rezultat
-* Pentru fiecare linie  **impară** linie **se scade** numărul din rezultat
-* **Tipărește** rezultatul
+# Descriere
+
+Creați un program care:
+
+- Citește **n** - număr reprezentând cantitatea de numere de intrare
+- Citeste **n numere**
+- Pentru fiecare linie **pară** **se adaugă** numărul la rezultat
+- Pentru fiecare linie **impară** linie **se scade** numărul din rezultat
+- **Tipărește** rezultatul
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`2, ['10', '20']`| 10 |
 
+| **Intrare**                | **Ieșire** |
+| -------------------------- | ---------- |
+| zigZagSum(2, ['10', '20']) | 10         |
 
 [/task-description]
 [tests]
 [test]
 [input]
-4
-20
-20
-20
-20
+zigZagSum(4, ['20', '20', '20', '20'])
 [/input]
 [output]
 0
@@ -454,9 +431,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-2
-10
-20
+zigZagSum(2, ['10', '20'])
 [/input]
 [output]
 10
@@ -464,12 +439,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-5
-213
-645
-234
-547
-3
+zigZagSum(5, ['213', '645', '234', '547', '3'])
 [/input]
 [output]
 742
@@ -477,14 +447,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-7
-3
-4
-3
-2
-5
-345
-657
+zigZagSum(7, ['3', '4', '3', '2', '5', '345', '657'])
 [/input]
 [output]
 317
@@ -492,15 +455,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
-45
-5
-654
-4
-5
-345
-123
-2
+zigZagSum(8, ['45', '5', '654', '4', '5', '345', '123', '2'])
 [/input]
 [output]
 471
@@ -508,10 +463,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
-3453
-456456
-547546
+zigZagSum(3, ['3453', '456345', '547546'])
 [/input]
 [output]
 94543
@@ -519,12 +471,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-5
-4564
-345
-456
-4563
-234
+zigZagSum(5, ['4564', '345', '456', '4563', '234'])
 [/input]
 [output]
 346
@@ -537,50 +484,56 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Divide Without Remainder
+
 [code-task title="Divide Without Remainder" taskId="pb-js-for-loop-Divide-Without-Reminder" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function divideWithoutRemainder(n, numbers)) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
+
 # Descriere
-Scrieți un program care:
 
-* Citește `n` și o **cantitate n** de numere după acesta
+Creați un program care:
 
-* Găsește **procentul** din câte dintre ele pot fi împărțite **fără un rest folosind 2, 3 și 4 ca divizori**
+- Citește `n` și o **cantitate n** de numere după acesta
 
-* Tipărește procentele pentru **p1, p2 și p3**, **formatate** la a doua cifră după virgulă
+- Găsește **procentul** din câte dintre ele pot fi împărțite **fără un rest folosind 2, 3 și 4 ca divizori**
+
+- Tipărește procentele pentru **p1, p2 și p3**, **formatate** la a doua cifră după virgulă
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`3, ['3', '6', '9']`| 33.33\% |
-|| 100.00\%|
-||0.00\% |
-|| |
+
+| **Intrare**                                | **Ieșire** |
+| ------------------------------------------ | ---------- |
+| divideWithoutRemainder(3, ['3', '6', '9']) | 33.33\%    |
+|                                            | 100.00\%   |
+|                                            | 0.00\%     |
+|                                            |            |
 
 [/task-description]
 [tests]
 [test]
 [input]
-3
-12
-27
-6
+divideWithoutRemainder(3, ['12', '27', '6'])
 [/input]
 [output]
 66.67\%
@@ -590,12 +543,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-5
-34
-45
-654
-76
-56
+divideWithoutRemainder(5, ['34', '45', '654', '76', '56'])
 [/input]
 [output]
 80.00\%
@@ -605,13 +553,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-6
-34
-453
-45
-654
-76
-56
+divideWithoutRemainder(6, ['34', '453', '45', '654', '76', '56'])
 [/input]
 [output]
 66.67\%
@@ -621,14 +563,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-7
-34
-453
-45
-654
-76
-2
-56
+divideWithoutRemainder(7, ['34', '453', '45', '654', '76', '2', '56'])
 [/input]
 [output]
 71.43\%
@@ -638,15 +573,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
-34
-0
-453
-45
-654
-76
-2
-56
+divideWithoutRemainder(8, ['34', '0', '453', '45', '654', '76', '2', '56'])
 [/input]
 [output]
 75.00\%
@@ -656,16 +583,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-9
-34
-0
-453
-45
-2342
-654
-76
-2
-56
+divideWithoutRemainder(9, ['34', '0', '453', '45', '2342', '654', '76', '2', '56'])
 [/input]
 [output]
 77.78\%
@@ -675,17 +593,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-10
-34
-12
-0
-453
-45
-2342
-654
-76
-2
-56
+divideWithoutRemainder(10, ['34', '12', '0', '453', '45', '2343', '654', '76', '2', '56'])
 [/input]
 [output]
 80.00\%
@@ -700,52 +608,57 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Vowel Sum
+
 [code-task title="Vowel Sum" taskId="pb-js-for-loop-Vowel-Sum" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function vowelSum(n, chars) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => {
-    let num = Number(input[0])
-    let arr = input.splice(1, input.length)
-    return code(num, arr)
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
+
 [/code-adapter]
 [task-description]
+
 # Descriere
-Scrieți un program care:
 
-* Citește `n` - numărul de caractere pe care programul urmează să le primească
+Creați un program care:
 
-* Dacă caracterul este o vocală, se adaugă caracterele `valoare` la rezultat
+- Citește **n** - numărul de caractere pe care programul urmează să le primească
 
- | **character**      | **a** | **e**   |**i**   |**o**  |**u**  |
-| :---:       |    :----:   |   :---:     |  :---:|:---:     |:---:     |
-| **value**  | 1  | 2 |3 |4 |5 |
+- Dacă caracterul este o vocală, se adaugă caracterele **valoare** la rezultat
 
+| **character** | **a** | **e** | **i** | **o** | **u** |
+| :-----------: | :---: | :---: | :---: | :---: | :---: |
+|   **value**   |   1   |   2   |   3   |   4   |   5   |
 
-* Tipărește rezultatul
+- Tipărește rezultatul
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`2, ['a', 'g']`| 1 |
 
+| **Intrare**             | **Ieșire** |
+| ----------------------- | ---------- |
+| vowelSum(2, ['a', 'g']) | 1          |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-i
-u
+vowelSum(2, ['i', 'u'])
 [/input]
 [output]
 8
@@ -753,12 +666,7 @@ u
 [/test]
 [test]
 [input]
-5
-a
-u
-n
-m
-s
+vowelSum(5, ['a', 'u', 'n', 'm', 's'])
 [/input]
 [output]
 6
@@ -766,8 +674,7 @@ s
 [/test]
 [test]
 [input]
-1
-a
+vowelSum(1, ['a'])
 [/input]
 [output]
 1
@@ -775,15 +682,7 @@ a
 [/test]
 [test]
 [input]
-8
-a
-e
-i
-o
-u
-a
-a
-s
+vowelSum(8, ['a', 'e', 'i', 'o', 'u', 'a', 'a', 's'])
 [/input]
 [output]
 17
@@ -791,12 +690,7 @@ s
 [/test]
 [test]
 [input]
-5
-a
-g
-c
-q
-i
+vowelSum(5, ['a', 'g', 'c', 'q', 'i'])
 [/input]
 [output]
 4
@@ -804,13 +698,7 @@ i
 [/test]
 [test]
 [input]
-6
-a
-e
-c
-q
-i
-u
+vowelSum(6, ['a', 'e', 'c', 'q', 'i' 'u'])
 [/input]
 [output]
 11
@@ -818,14 +706,7 @@ u
 [/test]
 [test]
 [input]
-7
-a
-e
-c
-q
-i
-u
-o
+vowelSum(7, ['a', 'e', 'c', 'q', 'i', 'u', 'o'])
 [/input]
 [output]
 15
@@ -838,46 +719,59 @@ o
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Rollercoaster
+
 [code-task title="Rollercoaster" taskId="pb-js-for-loop-Rollercoaster" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function rollercoaster(input) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
 [task-description]
+
 # Descriere
-Scrieți un program care:
 
-* Citește numărul de **locuri** pe un rollercoaster
+Creați un program care:
 
-* **Vârsta minimă a pasagerilor**
+- Citește numărul de **locuri** pe un rollercoaster
 
-* După aceea primește **numărul de persoane** pe coadă pentru această cursă
+- **Vârsta minimă a pasagerilor**
 
-* Urmat de **vârsta** pentru fiecare persoană de pe coadă
+- După aceea primește **numărul de persoane** pe coadă pentru această cursă
 
-* Dacă toate locurile pot fi ocupate, programul tipărește: `The rollercoaster departures` 
+- Urmat de **vârsta** pentru fiecare persoană de pe coadă
 
-* În orice alt caz, tipărește: `Waiting...`
+- Dacă toate locurile pot fi ocupate, programul tipărește: **The rollercoaster departures**
+
+- În orice alt caz, tipărește: **Waiting...**
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|`['2', '10', '2', '15', '24']`| The rollercoaster departures |
 
+| **Intrare**                                 | **Ieșire**                   |
+| ------------------------------------------- | ---------------------------- |
+| rollercoaster(['2', '10', '2', '15', '24']) | The rollercoaster departures |
 
 [/task-description]
 [tests]
 [test]
 [input]
-2
-10
-2
-15
-24
+rollercoaster(['2', '10', '2', '15', '24'])
 [/input]
 [output]
 The rollercoaster departures
@@ -885,14 +779,7 @@ The rollercoaster departures
 [/test]
 [test]
 [input]
-2
-25
-5
-10
-15
-18
-5
-30
+rollercoaster(['2', '25', '5', '10', '15', '18', '5', '30'])
 [/input]
 [output]
 Waiting...
@@ -900,19 +787,7 @@ Waiting...
 [/test]
 [test]
 [input]
-4
-18
-10
-15
-57
-14
-35
-68
-45
-23
-14
-24
-26
+rollercoaster(['4', '18', '10', '15', '57', '14', '35', '68', '45', '23', '14', '24', '26'])
 [/input]
 [output]
 The rollercoaster departures
@@ -920,14 +795,7 @@ The rollercoaster departures
 [/test]
 [test]
 [input]
-3
-21
-5
-25
-45
-34
-12
-24
+rollercoaster(['3', '21', '5', '25', '45', '34', '12', '24'])
 [/input]
 [output]
 The rollercoaster departures
@@ -935,14 +803,7 @@ The rollercoaster departures
 [/test]
 [test]
 [input]
-3
-10
-5
-10
-15
-18
-5
-30
+rollercoaster(['3', '10', '5', '10', '15', '18', '5', '30'])
 [/input]
 [output]
 The rollercoaster departures
@@ -950,14 +811,7 @@ The rollercoaster departures
 [/test]
 [test]
 [input]
-10
-10
-5
-12
-9
-8
-1
-23
+rollercoaster(['10', '10', '5', '12', '9', '8', '1', '23'])
 [/input]
 [output]
 Waiting...
@@ -970,50 +824,67 @@ Waiting...
 [/slide]
 
 [slide hideTitle]
+
 # Problem and Solution: Multiply
 
 [vimeo-video]
 [stream language="EN" videoId="487119938/9a4818ebf0" default /]
-[stream language="RO" videoId="487119938/9a4818ebf0"  /]
+[stream language="RO" videoId="487119938/9a4818ebf0" /]
 [/video-vimeo]
 
 [code-task title="Multiply" taskId="pb-js-for-loop-Multiply" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function multiply(input) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
+[code-adapter]
+
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+
+[/code-adapter]
 [task-description]
+
 # Descriere
-Scrieți un program care:
 
-* Citește `n` - un int
+Creați un program care:
 
-* Deține o buclă for care imprimă: `{n} x {i} = {result}` 
+- Citește `n` - un int
 
-* Unde sunt numerele de la **1 la 10 (inclusiv)**
+- Deține o buclă for care imprimă: `{n} x {i} = {result}`
+
+- Unde sunt numerele de la **1 la 10 (inclusiv)**
 
 # Exemplu
-  | **Intrare** | **Ieșire** |
-| --- | --- |
-|2| 2 x 1 = 2 |
-||2 x 2 = 4 |
-|| 2 x 3 = 6|
-|| 2 x 4 = 8|
-||2 x 5 = 10 |
-|| 2 x 6 = 12|
-||2 x 7 = 14 |
-||2 x 8 = 16 |
-|| 2 x 9 = 18|
-|| 2 x 10 = 20|
+
+| **Intrare** | **Ieșire**  |
+| ----------- | ----------- |
+| multiply(2) | 2 x 1 = 2   |
+|             | 2 x 2 = 4   |
+|             | 2 x 3 = 6   |
+|             | 2 x 4 = 8   |
+|             | 2 x 5 = 10  |
+|             | 2 x 6 = 12  |
+|             | 2 x 7 = 14  |
+|             | 2 x 8 = 16  |
+|             | 2 x 9 = 18  |
+|             | 2 x 10 = 20 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-5
+multiply(5)
 [/input]
 [output]
 5 x 1 = 5
@@ -1030,7 +901,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-3
+multiply(3)
 [/input]
 [output]
 3 x 1 = 3
@@ -1047,7 +918,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-4
+multiply(4)
 [/input]
 [output]
 4 x 1 = 4
@@ -1064,7 +935,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-6
+multiply(6)
 [/input]
 [output]
 6 x 1 = 6
@@ -1081,7 +952,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-7
+multiply(7)
 [/input]
 [output]
 7 x 1 = 7
@@ -1098,7 +969,7 @@ Scrieți un program care:
 [/test]
 [test]
 [input]
-8
+multiply(8)
 [/input]
 [output]
 8 x 1 = 8
@@ -1120,40 +991,50 @@ Scrieți un program care:
 [/slide]
 
 [slide hideTitle]
-# Problem:  Numbers, Divisible by 9
+
+# Problem: Numbers, Divisible by 9
 
 [code-task title="Divisible by 9" taskId="pb-js-for-loop-Numbers-Divisible-by-9" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
+
 ```
 function solve(firstNumber, secondNumber) {
   // Scrieți codul dvs. aici
 }
 ```
+
 [/code-editor]
 [code-adapter]
+
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
+
 [/code-adapter]
 [task-description]
+
 # Description
 
-Scrieți o funcție care obține două numere și le imprimă pe consolă, toate numerele din interval care sunt divizibile cu 9 fără rest și suma lor.
+Creați un program care obține două numere și le imprimă pe consolă, toate numerele din interval care sunt divizibile cu 9 fără rest și suma lor.
 
 Pe prima linie tipăriți suma numerelor, iar pe următoarea linie numerele corespunzătoare cu un spațiu între ele.
 
 # Example
-| **Input** | **Output** |
-| --- | --- |
-|100, 200| The sum: 1683 |
-||108 117 126 135 144 153 162 171 180 189 198|
+
+| **Input**       | **Output**                                  |
+| --------------- | ------------------------------------------- |
+| solve(100, 200) | The sum: 1683                               |
+|                 | 108 117 126 135 144 153 162 171 180 189 198 |
 
 [/task-description]
 [tests]
 [test]
 [input]
-100
-200
+solve(100, 200)
 [/input]
 [output]
 The sum: 1683
@@ -1162,8 +1043,7 @@ The sum: 1683
 [/test]
 [test]
 [input]
-0
-100
+solve(0, 100)
 [/input]
 [output]
 The sum: 594
@@ -1172,8 +1052,7 @@ The sum: 594
 [/test]
 [test]
 [input]
-1
-50
+solve(1, 50)
 [/input]
 [output]
 The sum: 135
@@ -1182,8 +1061,7 @@ The sum: 135
 [/test]
 [test]
 [input]
-9000
-9008
+solve(9000, 9008)
 [/input]
 [output]
 The sum: 9000
@@ -1192,8 +1070,7 @@ The sum: 9000
 [/test]
 [test]
 [input]
-1000
-1300
+solve(1000, 1300)
 [/input]
 [output]
 The sum: 38016
@@ -1202,8 +1079,7 @@ The sum: 38016
 [/test]
 [test]
 [input]
-500
-630
+solve(500, 630)
 [/input]
 [output]
 The sum: 8505
@@ -1212,8 +1088,7 @@ The sum: 8505
 [/test]
 [test]
 [input]
-200
-260
+solve(200, 260)
 [/input]
 [output]
 The sum: 1377
@@ -1222,8 +1097,7 @@ The sum: 1377
 [/test]
 [test]
 [input]
-120
-260
+solve(120, 260)
 [/input]
 [output]
 The sum: 2835
@@ -1235,5 +1109,3 @@ The sum: 2835
 [/code-task]
 
 [/slide]
-
-
