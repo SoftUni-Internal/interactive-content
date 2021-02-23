@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-3-4-5-unit-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A unit test is a piece of code that checks whether a certain piece of code **functionality works as expected.**
+Unit tests check whether certain code **functionalities work as expected.**
 
 It also provides the developers with the **necessary information**, when **errors occur in the code.**
 
