@@ -39,7 +39,7 @@ if (JSON.stringify(nums) === '[-2,2,4,15]') {
 
 ## Why do we need Unit Testing?
 
-Unit tests make it **safer** and **easier** to refactor out code by writing tests.
+Unit tests make it **safer** and **easier** to refactor our code by writing tests.
 
 Using unit tests increases code reliability.
 
