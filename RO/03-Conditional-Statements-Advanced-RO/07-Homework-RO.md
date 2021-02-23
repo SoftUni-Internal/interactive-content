@@ -251,33 +251,57 @@ Creați un program pentru a verifica o literă dacă este o vocală sau o consoa
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|a| Vowel |
-|B| Consonant |
+|vowelOrConsonant('a')| Vowel |
+|vowelOrConsonant('B')| Consonant |
 
 [/task-description]
 [tests]
-[test]
+[test open]
 [input]
-a
+vowelOrConsonant('a')
 [/input]
 [output]
 Vowel
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-E
-[/input]
-[output]
-Vowel
-[/output]
-[/test]
-[test]
-[input]
-b
+vowelOrConsonant('B')
 [/input]
 [output]
 Consonant
+[/output]
+[/test]
+[test]
+[input]
+vowelOrConsonant('E')
+[/input]
+[output]
+Vowel
+[/output]
+[/test]
+[test]
+[input]
+vowelOrConsonant('b')
+[/input]
+[output]
+Consonant
+[/output]
+[/test]
+[test]
+[input]
+vowelOrConsonant('C')
+[/input]
+[output]
+Consonant
+[/output]
+[/test]
+[test]
+[input]
+vowelOrConsonant('A')
+[/input]
+[output]
+Vowel
 [/output]
 [/test]
 [/tests]
@@ -322,16 +346,14 @@ Calculați semnul produsului de 3 numere:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|2, 3, -1| negative |
+|productOfThreeNumbers(2, 3, -1)| negative |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
--2
-3
-1
+productOfThreeNumbers(2, 3, -1)
 [/input]
 [output]
 negative
@@ -339,9 +361,7 @@ negative
 [/test]
 [test]
 [input]
--3
--4
-5
+productOfThreeNumbers(-3, -4, 5)
 [/input]
 [output]
 positive
@@ -349,9 +369,7 @@ positive
 [/test]
 [test]
 [input]
-2
--9
-5
+productOfThreeNumbers(2, -9, 5)
 [/input]
 [output]
 negative
@@ -359,9 +377,7 @@ negative
 [/test]
 [test]
 [input]
-4
-0
--10
+productOfThreeNumbers(4, 0, -10)
 [/input]
 [output]
 zero
@@ -369,9 +385,7 @@ zero
 [/test]
 [test]
 [input]
-5
-2
-2
+productOfThreeNumbers(5, 2, 2)
 [/input]
 [output]
 positive
@@ -379,9 +393,7 @@ positive
 [/test]
 [test]
 [input]
--5
-2
--2
+productOfThreeNumbers(-5, 2, -2)
 [/input]
 [output]
 positive
@@ -389,9 +401,7 @@ positive
 [/test]
 [test]
 [input]
-1
-2
-0
+productOfThreeNumbers(1, 2, 0)
 [/input]
 [output]
 zero
@@ -402,6 +412,7 @@ zero
 [/code-task]
 
 [/slide]
+
 [slide hideTitle]
 # Problem: Sorted Numbers
 [vimeo-video]
@@ -439,26 +450,22 @@ Creați un program, care verifică **3 numere sortate**:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|1, 2, 3| Ascending |
-|3, 5, 2]| Not sorted |
+|sortedNumbers(1, 2, 3)| Ascending |
+|sortedNumbers(3, 5, 2)| Not sorted |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-1
-2
-3
+sortedNumbers(1, 2, 3)
 [/input]
 [output]
 Ascending
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-3
-1
-2
+sortedNumbers(3, 5, 2)
 [/input]
 [output]
 Not sorted
@@ -466,39 +473,7 @@ Not sorted
 [/test]
 [test]
 [input]
-3
-2
-1
-[/input]
-[output]
-Descending
-[/output]
-[/test]
-[test]
-[input]
-4
-3
-2
-[/input]
-[output]
-Descending
-[/output]
-[/test]
-[test]
-[input]
-2
-3
-4
-[/input]
-[output]
-Ascending
-[/output]
-[/test]
-[test]
-[input]
-4
-5
-3
+sortedNumbers(3, 1, 2)
 [/input]
 [output]
 Not sorted
@@ -506,9 +481,39 @@ Not sorted
 [/test]
 [test]
 [input]
-10
-9
-8
+sortedNumbers(3, 2, 1)
+[/input]
+[output]
+Descending
+[/output]
+[/test]
+[test]
+[input]
+sortedNumbers(4, 3, 2)
+[/input]
+[output]
+Descending
+[/output]
+[/test]
+[test]
+[input]
+sortedNumbers(2, 3, 4)
+[/input]
+[output]
+Ascending
+[/output]
+[/test]
+[test]
+[input]
+sortedNumbers(4, 5, 3)
+[/input]
+[output]
+Not sorted
+[/output]
+[/test]
+[test]
+[input]
+sortedNumbers(10, 9, 8)
 [/input]
 [output]
 Descending
@@ -557,15 +562,13 @@ Creați un program, care calculează cheltuielile de vacanță:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|'Winter', 'Hotel', 5| 180.00 |
+|vacationExpenses('Winter', 'Hotel', 5)| 180.00 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-Winter
-Hotel
-5
+vacationExpenses('Winter', 'Hotel', 5)
 [/input]
 [output]
 180.00
@@ -573,9 +576,7 @@ Hotel
 [/test]
 [test]
 [input]
-Winter
-Camping
-10
+vacationExpenses('Winter', 'Camping', 10)
 [/input]
 [output]
 90.00
@@ -583,9 +584,7 @@ Camping
 [/test]
 [test]
 [input]
-Autumn
-Camping
-6
+vacationExpenses('Autumn', 'Camping', 6)
 [/input]
 [output]
 63.00
@@ -593,9 +592,7 @@ Camping
 [/test]
 [test]
 [input]
-Summer
-Hotel
-7
+vacationExpenses('Summer', 'Hotel', 7)
 [/input]
 [output]
 350.00
@@ -603,9 +600,7 @@ Hotel
 [/test]
 [test]
 [input]
-Spring
-Camping
-8
+vacationExpenses('Spring', 'Camping', 8)
 [/input]
 [output]
 64.00
@@ -613,9 +608,7 @@ Camping
 [/test]
 [test]
 [input]
-Summer
-Hotel
-9
+vacationExpenses('Summer', 'Hotel', 9)
 [/input]
 [output]
 450.00
@@ -623,9 +616,7 @@ Hotel
 [/test]
 [test]
 [input]
-Autumn
-Camping
-10
+vacationExpenses('Autumn', 'Camping', 10)
 [/input]
 [output]
 105.00
@@ -673,18 +664,17 @@ Calculați **prețul** pentru toate biletele pentru un film cinematografic:
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|Normal| 810.00 |
-|12|  |
-|9|  |
+|cinema('Premiere', 10, 12)| 1440.00 |
+|cinema('Normal', 21, 13)| 2047.50 |
+|cinema('Discount', 12, 30)| 1800.00 |
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Premiere
-10
-12
+cinema('Premiere', 10, 12)
 [/input]
 [output]
 1440.00
@@ -692,9 +682,7 @@ Premiere
 [/test]
 [test open]
 [input]
-Normal
-21
-13
+cinema('Normal', 21, 13)
 [/input]
 [output]
 2047.50
@@ -702,19 +690,15 @@ Normal
 [/test]
 [test open]
 [input]
-Discount
-12
-30
+cinema('Discount', 12, 30)
 [/input]
 [output]
-1800.00 leva
+1800.00
 [/output]
 [/test]
 [test]
 [input]
-Normal
-88
-44
+cinema('Normal', 88, 44)
 [/input]
 [output]
 29040.00
@@ -722,9 +706,7 @@ Normal
 [/test]
 [test]
 [input]
-Discount
-43
-15
+cinema('Discount', 43, 15)
 [/input]
 [output]
 3225.00
@@ -732,9 +714,7 @@ Discount
 [/test]
 [test]
 [input]
-Premiere
-42
-62
+cinema('Premiere', 42, 62)
 [/input]
 [output]
 31248.00
@@ -742,9 +722,7 @@ Premiere
 [/test]
 [test]
 [input]
-Discount
-30
-36
+cinema('Discount', 30, 36)
 [/input]
 [output]
 5400.00
@@ -752,9 +730,7 @@ Discount
 [/test]
 [test]
 [input]
-Premiere
-94
-17
+cinema('Premiere', 94, 17)
 [/input]
 [output]
 19176.00
@@ -762,9 +738,7 @@ Premiere
 [/test]
 [test]
 [input]
-Discount
-34
-7
+cinema('Discount', 34, 7)
 [/input]
 [output]
 1190.00
@@ -772,9 +746,7 @@ Discount
 [/test]
 [test]
 [input]
-Discount
-93
-21
+cinema('Discount', 93, 21)
 [/input]
 [output]
 9765.00
@@ -782,9 +754,7 @@ Discount
 [/test]
 [test]
 [input]
-Discount
-54
-46
+cinema('Discount', 54, 46)
 [/input]
 [output]
 12420.00
@@ -792,9 +762,7 @@ Discount
 [/test]
 [test]
 [input]
-Discount
-34
-93
+cinema('Discount', 34, 93)
 [/input]
 [output]
 15810.00
@@ -802,9 +770,7 @@ Discount
 [/test]
 [test]
 [input]
-Premiere
-68
-50
+cinema('Premiere', 68, 50)
 [/input]
 [output]
 40800.00
@@ -812,9 +778,7 @@ Premiere
 [/test]
 [test]
 [input]
-Normal
-73
-61
+cinema('Normal', 73, 61)
 [/input]
 [output]
 33397.50
@@ -822,9 +786,7 @@ Normal
 [/test]
 [test]
 [input]
-Normal
-63
-64
+cinema('Normal', 63, 64)
 [/input]
 [output]
 30240.00
@@ -832,9 +794,7 @@ Normal
 [/test]
 [test]
 [input]
-Normal
-84
-98
+cinema('Normal', 84, 98)
 [/input]
 [output]
 61740.00
@@ -842,9 +802,7 @@ Normal
 [/test]
 [test]
 [input]
-Normal
-59
-57
+cinema('Normal', 59, 57)
 [/input]
 [output]
 25222.50
@@ -852,9 +810,7 @@ Normal
 [/test]
 [test]
 [input]
-Premiere
-32
-54
+cinema('Premiere', 34, 54)
 [/input]
 [output]
 20736.00
@@ -862,9 +818,7 @@ Premiere
 [/test]
 [test]
 [input]
-Premiere
-52
-35
+cinema('Premiere', 52, 35)
 [/input]
 [output]
 21840.00
@@ -872,9 +826,7 @@ Premiere
 [/test]
 [test]
 [input]
-Normal
-36
-75
+cinema('Normal', 36, 75)
 [/input]
 [output]
 20250.00
@@ -882,9 +834,7 @@ Normal
 [/test]
 [test]
 [input]
-Normal
-65
-68
+cinema('Normal', 65, 68)
 [/input]
 [output]
 33150.00
@@ -892,9 +842,7 @@ Normal
 [/test]
 [test]
 [input]
-Premiere
-59
-35
+cinema('Premiere', 59, 35)
 [/input]
 [output]
 24780.00
@@ -902,9 +850,7 @@ Premiere
 [/test]
 [test]
 [input]
-Discount
-78
-9
+cinema('Discount', 78, 9)
 [/input]
 [output]
 3510.00
@@ -938,22 +884,19 @@ function adapter(input, code) {
 Creați un program pentru a aplica un operator pentru două numere date:
 
 * Citiți doi numere întregi și operatorul matematic de pe consolă
-* Operatorul aritmetic ar putea fi: `+`, `-`, `/`, `%` și `*`
-* IRezultatul trebuie să fie în următorul **format**: `{N1} {operator} {N2} = {result}`
+* Operatorul aritmetic ar putea fi: \+, \-, \/, \% și \*
+* IRezultatul trebuie să fie în următorul **format**: "**{N1} {operator} {N2} = {result}**""
 
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|12, 10, '\+'| 12 + 10 = 22 |
-
+|operationswithNumbers(12, 10, '\+')| 12 + 10 = 22 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-10
-12
-\+
+operationswithNumbers(12, 10, '\+')
 [/input]
 [output]
 10 + 12 = 22
@@ -961,9 +904,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-12
-10
-\-
+operationswithNumbers(12, 10, '\-'
 [/input]
 [output]
 12 \- 10 = 2
@@ -971,9 +912,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-10
-12
-\*
+operationswithNumbers(10, 12, '\*')
 [/input]
 [output]
 10 \* 12 = 120
@@ -981,9 +920,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-6
-2
-\/
+operationswithNumbers(6, 2, '\/')
 [/input]
 [output]
 6 \/ 2 = 3
@@ -991,9 +928,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-5
-2
-\%
+operationswithNumbers(5, 2, '%')
 [/input]
 [output]
 5 \% 2 = 1
@@ -1001,9 +936,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-2
-2
-\-
+operationswithNumbers(2, 2, '\-')
 [/input]
 [output]
 2 \- 2 = 0
@@ -1011,9 +944,7 @@ Creați un program pentru a aplica un operator pentru două numere date:
 [/test]
 [test]
 [input]
-2
-2
-\+
+operationswithNumbers(2, 2, '\+')
 [/input]
 [output]
 2 \+ 2 = 4
@@ -1056,33 +987,28 @@ Creați un program pentru a simula o retragere de numerar de la bancomat
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|420, 20, 25| The withdraw was successful. |
+|atm(420, 20, 25)| The withdraw was successful. |
 
 
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|10, 50, 20| The daily limit was exceeded. |
+|atm(10, 50, 20)| The daily limit was exceeded. |
 || Insufficient availability. |
-
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-420
-20
-25
+atm(420, 20, 25)
 [/input]
 [output]
 The withdraw was successful.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-10
-50
-20
+atm(10, 50, 20)
 [/input]
 [output]
 The daily limit was exceeded.
@@ -1091,9 +1017,7 @@ Insufficient availability.
 [/test]
 [test]
 [input]
-10
-4565
-345
+atm(10, 4565, 345)
 [/input]
 [output]
 The daily limit was exceeded.
@@ -1102,9 +1026,7 @@ Insufficient availability.
 [/test]
 [test]
 [input]
-342
-2
-3
+atm(342, 2, 3)
 [/input]
 [output]
 The withdraw was successful.
@@ -1112,9 +1034,7 @@ The withdraw was successful.
 [/test]
 [test]
 [input]
-10
-50
-20
+atm(10, 50, 20)
 [/input]
 [output]
 The daily limit was exceeded.
@@ -1157,7 +1077,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 # Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
-|\-1, \-2, \-3, \-4, \-5 | \-1 |
+|biggestOfFiveNumbers(\-1, \-2, \-3, \-4, \-5) | \-1 |
 
 
 [/task-description]
@@ -1165,11 +1085,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [tests]
 [test open]
 [input]
--1
--2
--3
--4
--5
+biggestOfFiveNumbers(\-1, \-2, \-3, \-4, \-5)
 [/input]
 [output]
 -1
@@ -1177,11 +1093,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
-5
--2
--3
-9
--8
+biggestOfFiveNumbers(5, -2, -3, 9, -8)
 [/input]
 [output]
 9
@@ -1189,11 +1101,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
--1
-4
-3
--4
-1
+biggestOfFiveNumbers(-1, 4, 3, -4, 1)
 [/input]
 [output]
 4
@@ -1201,11 +1109,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
-4
-2
-5
-43
-1
+biggestOfFiveNumbers(4, 2, 5, 43, 1)
 [/input]
 [output]
 43
@@ -1213,11 +1117,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
-234234
-2345
-56756
-67867
-3453
+biggestOfFiveNumbers(234234, 2345, 56756, 67867, 3453)
 [/input]
 [output]
 234234
@@ -1225,11 +1125,7 @@ Creați un program pentru a găsi cel mai mare dintre 5 numere
 [/test]
 [test]
 [input]
-3452
-54756
-6786
-3453
-4
+biggestOfFiveNumbers(3452, 54756, 6786, 3453, 4)
 [/input]
 [output]
 54756
