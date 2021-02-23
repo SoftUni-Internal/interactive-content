@@ -1,4 +1,6 @@
-[slide]
+# Methods
+
+[slide hideTitle]
 
 # Methods
 
@@ -9,17 +11,15 @@
 
 A method is a collection of statements that perform some specific task and return the result to the caller. 
 
-A method can perform some specific task without returning anything.
-
-Methods allow us to reuse the code without retyping the code. 
-
-In Java, every method must be part of some class.
+In some cases, they can do so without returning anything.
 
 Methods are time savers and help us to reuse the code without retyping the code.
 
-The following example defines a method called **increaseHP** inside a class named Car.
+In Java, every method must be a part of a class.
 
-When called, this method increases the internal **horsePower** variable with a given value.
+The following example defines a method called `increaseHP` inside a class named Car.
+
+When called, this method increases the internal `horsePower` variable with a given value.
 
 ```java
 class Car {
@@ -32,7 +32,7 @@ class Car {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Getters and Setters
 
 [vimeo-video]
@@ -40,15 +40,13 @@ class Car {
 [stream language="RO" videoId="485442925/6a6914cf48"  /]
 [/video-vimeo]
 
-In Java **getter** and **setter** are two conventional methods that are used for retrieving and updating the value of a variable.
+In Java **getters** and **setters** are two conventional methods that are used for retrieving and updating the value of a variable.
 
 For each instance variable, a getter method returns its value while a setter method sets or updates its value.
 
-Getters and Setters are also known as **accessor** and **mutator**.
+Getters and setters are also known as **accessors** and **mutators**.
 
-Why do we need Getters and Setters?
-
-Let's have a look at the following example:
+Let us have a look at the following example:
 
 ```java
 class Car {
@@ -65,19 +63,21 @@ class Car {
 }
 ```
 
-First, we have a class Car with private field "**horsePower**" because the field has private access we cannot get or modify it.
+First, we have a `Car` class with a private field `horsePower`.
+
+Because the field has private access, we **cannot** get or modify it.
 
 To overcome this problem we have to use "**get**" and "**set**" methods.
 
-The `getHorsePower()` method **returns** the value of the "**horsePower**" field.
+The `getHorsePower()` method **returns** the value of the `horsePower` field.
 
-The `setHorsePower()` method **sets** the value of the "**horsePower**" field.
+The `setHorsePower()` method **sets** the value of the `horsePower` field.
 
-## Keyword "this"
+## "this" Keyword
 
-The keyword this, in Java, is a reference to the current object - the object whose method or constructor is called. 
+In Java, the keyword `this` is a reference to the current object - the object whose method or constructor is called. 
 
-It is like a pointer (reference), given to us by the creators of Java, with which to access the elements (fields, methods, constructors) of our own class:
+It is like a pointer (reference), used to access the elements (fields, methods, constructors) of our own class:
 
 ```java
 class Car {
@@ -93,9 +93,9 @@ class Car {
 
 ```
 
-In the example above the `setHorsePowerNotWorking()`, is not work because the method parameter "horsePower" shadows the "horsePower" field. 
+In the example above `setHorsePowerNotWorking()`, is not working because the method parameter `horsePower` shadows the `horsePower` field. 
 
-To overcome this problem, we have to use `this` keyword:
+To overcome this problem, we have to use the `this` keyword:
 
 ```java
  public void setHorsePower(int horsePower) {
@@ -107,7 +107,7 @@ The most common use of the `this` keyword is to eliminate the confusion between 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # ToString() Method
 
 [vimeo-video]
@@ -115,15 +115,15 @@ The most common use of the `this` keyword is to eliminate the confusion between 
 [stream language="RO" videoId="485443131/756193f8d0"  /]
 [/video-vimeo]
 
-By using `toString()` method, you can represent any object as a String.
+By using the `toString()` method, you can represent any object as a string.
 
-In general, the toString method returns a string that "textually represents" this object. 
+In general, the `toString` method returns a string that "textually represents" the object. 
 
 The result should be a concise but informative representation that is easy for a person to read. 
 
 It is recommended that all subclasses override this method.
 
-If you define `toString()` method in your class then your implemented/Overridden `toString()` method will be called:
+If you define a custom `toString()` method in your class then your own method will be called, overriding the built-in one:
 
 ```java live no-template
 public class Car {
@@ -148,7 +148,7 @@ public class Car {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Equals() Method
 
 [vimeo-video]
@@ -156,7 +156,7 @@ public class Car {
 [stream language="RO" videoId="485443235/ad08ba7339"  /]
 [/video-vimeo]
 
-In java `equals()` method is used to compare equality of two Objects. 
+The `equals()` method is used to determine if two objects are equal. 
 
 ```java
 Car firstCar = new Car("TESLA", "MODEL S");
@@ -168,7 +168,7 @@ System.out.println(isCarsEquals);
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 # HashCode() Method
 
 [vimeo-video]
@@ -178,7 +178,7 @@ System.out.println(isCarsEquals);
 
 The `hashCode()` method returns the **integer** hash code value of the object. 
 
-The hash code is always the same if the object doesn’t change.
+The hash code is always the same if the object does not change.
 
 ```java
 Car car = new Car();
@@ -190,15 +190,15 @@ System.out.println(hash);
 
 [/slide]
 
-[slide]
-# Problem: Car Info
+[slide hideTitle]
+# Problem with Solution: Car Info
 
 [vimeo-video]
 [stream language="EN" videoId="485443278/abf3282bb7" default /]
 [stream language="RO" videoId="485443278/abf3282bb7"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Car Info" taskId="8bb0524a-5629-4c59-847f-c7b913b41ff3" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Car Info" taskId="java-oop-basics-lab-Car-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -213,14 +213,14 @@ public class Main {
 [task-description]
 ## Description
 
-Define Car Class.
+Your task is to define a `Car` class.
 
-The class should have the following private fields:
-- brand: String
-- model: String
-- horsePower: String
+The class must have the following private fields:
+- `brand: String`
+- `model: String`
+- `horsePower: String`
 
-The class should have the following public methods:
+It should also include the following public methods:
 
 - `getBrand(): String`
 - `setBrand(String brand): void`
@@ -232,7 +232,7 @@ The class should have the following public methods:
 
 ## Hints
 
-Use the Car class from previous problem.
+Use the `Car` class from the previous problem.
 
 Because all fields in the **Car** class are **private**, if you try to access the fields directly through the class you should have a **compilation error**.
 
@@ -411,114 +411,4 @@ The car is: d 2 - 4 HP.
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-
-[slide]
-
-# Solution: Car Info
-
-[vimeo-video]
-[stream language="EN" videoId="485443434/2e6aff9fbd" default /]
-[stream language="RO" videoId="485443434/2e6aff9fbd"  /]
-[/video-vimeo]
-
-Set access modifiers for the fields:
-```java
-public class Car {
-
-    private String brand;
-    private String model;
-    private int horsePower;
-```
-
-Set `get()` and `set()` methods for bthe fields:
-
-```java
-public class Car {
-
-    private String brand;
-    private String model;
-    private int horsePower;
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getHorsePower() {
-        return horsePower;
-    }
-
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
-    }
-}
-```
-
-Set `carInfo()` to format the output:
-```java
-public class Car {
-
-    private String brand;
-    private String model;
-    private int horsePower;
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getHorsePower() {
-        return horsePower;
-    }
-
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
-    }
-
-    public String carInfo() {
-        return String.format("The car is: %s %s - %d HP.",
-                this.brand, this.model, this.horsePower);
-    }
-}
-```
-
-Set `Main()` method as following:
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        Car car = new Car();
-
-        car.setBrand("TESLA");
-        car.setModel("MODEL S");
-        car.setHorsePower(503);
-
-        System.out.println(car.carInfo());
-    }
-}
-```
 [/slide]
