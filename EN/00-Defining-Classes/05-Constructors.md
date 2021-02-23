@@ -138,17 +138,17 @@ Let us see the following example:
 
 ```java
 class Car {
-  private String brand;
-  private int horsePower;
+    private String brand;
+    private int horsePower;
 
-  public Car(String brand, int horsePower) {
-    this.brand = brand;
-    this.horsePower = horsePower;
-  }
+    public Car(String brand, int horsePower) {
+        this.brand = brand;
+        this.horsePower = horsePower;
+    }
 
-  public Car(String brand) {
-    this(brand, -1);
-  }
+    public Car(String brand) {
+        this(brand, -1);
+    }
 }
 ```
 
