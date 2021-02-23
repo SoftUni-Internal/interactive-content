@@ -5,20 +5,11 @@
 [code-task title="List of Products" taskId="js-fundamentals-1-Arrays-Advanced-List-of-Products" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function listProducts(array1, array2){
+function listProducts(input){
   // Write your code here
 }
 ```
 [/code-editor]
-[code-adapter]
-```
-function adapter(input, code) {
-    let inputParams = /\((.+)\)$/.exec(input)[1];
-    inputParams = eval(`[${inputParams}]`);
-    return code(...inputParams);
-}
-```
-[/code-adapter]
 [task-description]
 # Description
 
@@ -881,14 +872,18 @@ kcld
 [code-task title="Array Manipulations" taskId="js-fundamentals-1-Arrays-Advanced-Array-Manipulation" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function arrayManipulations(input){
+function arrayManipulations(array1, array2){
   // Write your code here
 }
 ```
 [/code-editor]
 [code-adapter]
 ```
-(i, c) => {return c(JSON.parse(i[0]), JSON.parse(i[1]))}
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
