@@ -13,6 +13,9 @@
 
 [image assetsSrc="01-intro-to-html-tags-simple-html-page.jpg" /]
 
+[image assetsSrc="js-application-design-patterns-11.png" /]
+js-application-design-patterns-11
+
 [/slide]
 
 [slide]
