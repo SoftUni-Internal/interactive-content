@@ -107,6 +107,15 @@ function simpleCalculator(input){
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 
@@ -114,24 +123,46 @@ Write a function that receives an array containing three elements.
 
 Write an arrow function that calculates the result depending on the specified operator. 
 
-The operator could only be one of the following: `multiply`, `divide`, `add`, and `subtract`.
+The operator could only be one of the following: "**multiply**", "**divide**", "**add**", and "**subtract**".
 
 &nbsp;
 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|`['5', '5', 'multiply']` | 25 |
-|`['40', '8', 'divide']` | 5 |
-|`['12', '19', 'add']` | 31 |
+| simpleCalculator(['5', '5', 'multiply']) | 25 |
+| simpleCalculator(['40', '8', 'divide']) | 5 |
+| simpleCalculator(['12', '19', 'add']) | 31 |
 
 [/task-description]
 [tests]
+[test open]
+[input]
+simpleCalculator(['5', '5', 'multiply'])
+[/input]
+[output]
+25
+[/output]
+[/test]
+[test open]
+[input]
+simpleCalculator(['40', '8', 'divide'])
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test open]
+[input]
+simpleCalculator(['12', '19', 'add'])
+[/input]
+[output]
+31
+[/output]
+[/test]
 [test]
 [input]
-1
-15
-multiply
+simpleCalculator(['1', '15', 'multiply'])
 [/input]
 [output]
 15
@@ -139,9 +170,7 @@ multiply
 [/test]
 [test]
 [input]
-61
-2
-divide
+simpleCalculator(['61', '2', 'divide'])
 [/input]
 [output]
 30.5
@@ -149,9 +178,7 @@ divide
 [/test]
 [test]
 [input]
-2
-18
-add
+simpleCalculator(['2', '18', 'add'])
 [/input]
 [output]
 20
@@ -159,9 +186,7 @@ add
 [/test]
 [test]
 [input]
-186
-121
-subtract
+simpleCalculator(['186', '121', 'subtract'])
 [/input]
 [output]
 65
@@ -169,9 +194,7 @@ subtract
 [/test]
 [test]
 [input]
-2
-35
-multiply
+simpleCalculator(['2', '35', 'multiply'])
 [/input]
 [output]
 70
@@ -179,9 +202,7 @@ multiply
 [/test]
 [test]
 [input]
-12
-2
-divide
+simpleCalculator(['12', '2', 'divide'])
 [/input]
 [output]
 6
@@ -189,9 +210,7 @@ divide
 [/test]
 [test]
 [input]
-115
-338
-add
+simpleCalculator(['115', '338', 'add'])
 [/input]
 [output]
 453
@@ -199,9 +218,7 @@ add
 [/test]
 [test]
 [input]
-46
-521
-subtract
+simpleCalculator(['46', '521', 'subtract'])
 [/input]
 [output]
 \-475
