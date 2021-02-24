@@ -8,7 +8,7 @@
 
 - Arrays are sequences of elements 
 
-    - Their elements are numbered from `0` to `length-1 `
+    - their elements are numbered from 0 to `length-1`
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];
@@ -27,7 +27,7 @@ let numbers = [1, 2, 3, 4, 5];
 let numbers = [1, 2, 3, 4, 5];
 ```
 
-- Elements can be iterated over with a standard loop or a `for-of` loop 
+- Elements can be iterated over with a standard loop or a "**for-of**" loop 
 
 ``` js live
 let numbers = [1, 2, 3, 4, 5];

@@ -18,7 +18,7 @@ To declare an array, we place the values that it should hold in square brackets,
 Creating an array of strings: 
 
 ```js
-let fruit = ["apple", "pear", "cherry"];
+let fruit = ['apple', 'pear', 'cherry'];
 ```
 
 Arrays can contain variables of **different data types** - integers, strings, boolean etc. 
@@ -26,7 +26,7 @@ Arrays can contain variables of **different data types** - integers, strings, bo
 Also, **duplicate** values **can** be stored in it. 
 
 ```js
-let myArray = ["string", 2, 3.33, 2, true];
+let myArray = ['string', 2, 3.33, 2, true];
 ```
 
 The values in an array are called **elements.** 
@@ -36,15 +36,16 @@ You could think of it as a **train**, of which each wagon **may contain a differ
 Now let us **imagine an array of integers**, each element representing a wagon and each value is the number of passengers. 
 
 As in this graphical representation: 
+
 [image assetsSrc="array-example.png" /]
 
 This one has **7 wagons** (**elements**). 
 
 Each one has **passengers in it** (a value):
 
-- `[3, 4, 10, 7, 5, 0, 6]`
+- [3, 4, 10, 7, 5, 0, 6]
 
-Array elements are numbered from `0` to `length-1`.
+Array elements are numbered from 0 to `length-1`.
 
 By using the `Array.length` method we can get a variable, containing the length of an array.
 
@@ -121,7 +122,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-Create a program that receives an **array of numbers**. Print out the sum of the first and last element of that array. 
+Create a program that receives an **array of numbers**. 
+
+Print out the sum of the first and last element of that array. 
 
 # Example
 | **Input** | **Output** |
@@ -207,7 +210,7 @@ sum([91, 18, 19])
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-7-Example-Days-of-week-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```js
-let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 ```
 
 |**Index**|**Value**|
@@ -399,11 +402,11 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# JS Arrays and Invalid Positions
+# JavaScript Arrays and Invalid Positions
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-12-JS-Arrays-and-invalid-positions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-If we attempt to assign a value to a non-existent index, JS will fill the missing elements with 'undefined' values and increase its size:
+If we attempt to assign a value to a non-existent index, JS will fill the missing elements with "**undefined**" values and increase its size:
 
 ``` js live
 let nums = [10, 20, 30];

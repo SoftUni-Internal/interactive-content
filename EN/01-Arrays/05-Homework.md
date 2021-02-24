@@ -135,21 +135,11 @@ function adapter(input, code) {
 Create a program that calculates the difference between the sum of the even and the sum of the odd numbers in an array.
 
 # Example
-  | **Input** | **Output** |
-| --- | --- |
-| evenOdd([1, 2, 3, 4, 5, 6] | 3 |
-
-# Comments
-
-`2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3`
-
-&nbsp;
-
-# More Examples
-  | **Input** | **Output** |
-| --- | --- |
-| evenOdd([3, 5, 7, 9]) |\-24 |
-| evenOdd([2, 4, 6, 8, 10]) |30 |
+  | **Input** | **Output** |**Comments** |
+| :--- | :---: | :---:|
+| evenOdd([1, 2, 3, 4, 5, 6] | 3 | 2 + 4 + 6 = 12, 1 + 3 + 5 = 9, 12 - 9 = 3|
+| evenOdd([3, 5, 7, 9]) |\-24 ||
+| evenOdd([2, 4, 6, 8, 10]) |30 | |
 
 [/task-description]
 [tests]
@@ -279,26 +269,18 @@ function adapter(input, code) {
 
 Create a program that receives **an array of numbers** and condenses them by **summing** adjacent couples of elements until a **single number** is obtained.
 
-# Example
+## Example
 
 For example, if we have 3 elements \[**2, 10, 3**\], we sum the first two and the second two elements and obtain \{**2+10, 10+3**\} = \{**12, 13**\}, then we sum again all adjacent elements and obtain \{**12+13**\} = \{**25**\}.
 
-  | **Input** | **Output** |
-| --- | --- |
-| condense([2, 10, 3]) | 25 |
+   | **Input** | **Output** |**Comments** |
+| :--- | :---: | :---:|
+| condense([2, 10, 3]) | 25 |2 10 3 \-\> 2+10 10+3 \-\> 12 13 -> 12 + 13 \-\> 25 |
+| condense([5, 0, 4, 1, 2]) | 35 ||
+| condense(\[1\]) | 1 ||
 
-# Comments
-`2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25`
 
-&nbsp;
-
-# More Examples
-  | **Input** | **Output** |
-| --- | --- |
-| condense([5, 0, 4, 1, 2]) | 35 |
-| condense([1]) | 1 |
-
-# Hints
+## Hints
 
 While we have more than one element in the array **nums**\[\], repeat the following:
 
@@ -419,16 +401,17 @@ Create a program, which changes the **value** of odd and even numbers in an arra
 
 &nbsp;
 
-# Output
+## Output
 
 On the first line print the **newly modified array**, on the second line print the sum of numbers from the **original** array, on the third line print the sum of numbers from the **modified array.**
 
+## Example
   | **Input** | **Output** |
 | --- | --- |
-| addOrSubtract([5, 15, 23, 56, 35]) | `[ 5, 14, 21, 59, 31 ]` |
+| addOrSubtract([5, 15, 23, 56, 35]) | [ 5, 14, 21, 59, 31 ] |
 || 134|
 || 130 |
-| addOrSubtract([-5, 11, 3, 0, 2]) | `[ 5, 14, 21, 59, 31 ]` |
+| addOrSubtract([-5, 11, 3, 0, 2]) | [ 5, 14, 21, 59, 31 ] |
 || 11|
 || 15 |
 
@@ -548,10 +531,11 @@ The first element of the input is the array of numbers where you have to perform
 
 The second element of the input is the number of rotations you have to perform.
 
-# Output
+## Output
 
 Print the resulting array elements separated by a single space.
 
+## Example
 | **Input** | **Output** |
 | --- | --- |
 | arrayRotation([51, 47, 32, 61, 21], 2) | 32 61 21 51 47 |

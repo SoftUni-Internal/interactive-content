@@ -29,7 +29,7 @@ console.log(capitals.toString())
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/02.JS-Fundamentals-Arrays/EN/02.JS-Fundamentals-Arrays-23-24-for-of-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `for..of` loop is used to iterate over any iterable object but cannot be used to  access its indexes. 
+The "**for..of**" loop is used to iterate over any iterable object but cannot be used to  access its indexes. 
 
 ``` js live
 const cars = ['Nio', 'Tesla', 'Xpeng'];
@@ -233,6 +233,30 @@ The first element should be last, and the last element should be first.
 
 [/task-description]
 [tests]
+[test open]
+[input]
+reverse(['a', 'b', 'c', 'd', 'e'])
+[/input]
+[output]
+e d c b a
+[/output]
+[/test]
+[test opne]
+[input]
+reverse(['abc', 'def', 'hig', 'klm', 'nop'])
+[/input]
+[output]
+nop klm hig def abc
+[/output]
+[/test]
+[test open]
+[input]
+reverse(['33', '123', '0', 'dd'])
+[/input]
+[output]
+dd 0 123 33
+[/output]
+[/test]
 [test]
 [input]
 reverse(['3ghj3', '123', '0', 'dkl;d', 'dasjkjd', 'dage'])
