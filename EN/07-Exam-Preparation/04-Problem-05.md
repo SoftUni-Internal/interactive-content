@@ -25,9 +25,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-You were hired by a TV company to write a program that calculates whether it is possible for their customers to purchase some of their TV series. 
-
-You will receive a number, representing the budget of the customer, the total number of TV series titles, that the user will want to purchase, and afterward the title and price for each of the entries.
+You were hired by a TV company to create a program, which calculates whether it is possible for their customers to purchase some of their TV series. 
 
 Some of the series have a discount:
 
@@ -38,51 +36,47 @@ Some of the series have a discount:
 - **Area**: 10\%
 
 ## Input
-You receive from the console:
-- Budget: real number in the range \[10.0… 100.0\]
-- Count series: "**n**" - whole number in the range \[1… 10\]
+You receive the following elements from the console:
+- Budget: Floating-point in the range \[10.0… 100.0\]
+- Count of series "**n**": Int in the range \[1… 10\]
 
 For each series you receive two elements:
-- Name of the series: string
-- Price for a series: real number in the range \[1.0… 15.0\]
+- Name of the series: String
+- Price: Floating-point number in the range \[1.0… 15.0\]
 
 ## Output
-Print one line on the console:
+Print one line to the console:
 
 - If your budget is greater than or equal to the price of the series: 
 
-`You bought all the series and have {money left}$ left.`
+**You bought all the series and have** \{**money left**\}$ **left.**
 
 - If your budget is less than the price of the series: 
 
-`You need {money needed}$ more to buy the series!`
+**You need** \{**money needed**\}$ **more to buy the series!**
 
-The result must be formatted to two digits after the decimal point.
+The result must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-|budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
 |budget([25, 6, 'Teen Wolf', 8, 'Protector', 5, 'TotalDrama', 5,'Area', 4, 'Thrones', 5, 'Lucifer', 9])|You need 2.00$ more to buy the series!|
+|budget([10, 3, 'Thrones', 5, 'Riverdale', 5, 'Gotham', 2])| You bought all the series and have 0.50$ left.|
 
-[hints]
+**Comments**
 
-[hint]
-You receive a budget of 10$ and the count of series - 3.
+You receive a budget of 10$ and a count of 3 series.
 
 The first series is Thrones with price 5\$, which has 50\% discount from the price 5 \- 50\% = 2.50\$. 
 
 The second series is Riverdale, which does not have a discount on the price. 
 
 The third series also does not have a discount. 
-[/hint]
-[hint]
-Price of series is 2.50 \+ 5 \+ 2 = 9.50$. 
+
+The price of the series is 2.50 \+ 5 \+ 2 = 9.50$. 
 
 Your budget is bigger than the price of series, so you can buy them.
-[/hint]
 
-[/hints]
 [/task-description]
 [code-io /]
 [tests]
