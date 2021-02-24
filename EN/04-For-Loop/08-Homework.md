@@ -207,8 +207,8 @@ Create a program, which calculates and prints a given number to a given power
 
 | **Input** | **Output** |
 | --------- | ---------- |
-| 5, 2      | 32         |
-| 5, 5      | 3125       |
+| powerOfNumbers(5, 2)      | 32         |
+| powerOfNumbers(5, 5)      | 3125       |
 
 [/task-description]
 [code-io /]
