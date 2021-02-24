@@ -94,9 +94,9 @@ function adapter(input, code) {
 [task-description]
 
 # Description
-Create a program that: 
+Create a program, which: 
 
-- Reads a **product** and a day from the console. 
+- Receives a **product type** and a **day type** from the console. 
 
 - Prints the **price**, formatted to 2nd digit, based on the price table below: 
 
@@ -110,7 +110,8 @@ Create a program that:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| marketPlace(['Banana', 'Weekday'])| 2.50 |
+| marketPlace(['Banana', 'Weekday']) | 2.50 |
+| marketPlace(['Kiwi', 'Weekend']) | 3.00 |
 
 
 [/task-description]
@@ -196,13 +197,14 @@ function adapter(input, code) {
 # Description
 Create a program, which:
 
-  * Reads **3 numbers** from the console
+  * Receives **3 numbers** from the console
   * Prints the **greatest** number
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|biggestNumberOfThree(['1', '2', '3'])| 3 |
+| biggestNumberOfThree(['1', '2', '3']) | 3 |
+| biggestNumberOfThree(['55', '17', '100']) | 100 |
 
 [/task-description]
 [tests]
