@@ -103,16 +103,17 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which prints all letters in a given range:
 
-- Reads 2 letters
-- Prints all letters in the given range inclusive
+- You receive 2 letters: the **beginning** and the **end** of the range
+- Print all letters in the given range inclusive
 
 # Example
 
 | **Input**              | **Output** |
 | ---------------------- | ---------- |
 | latinLetters('a', 'c') | a b c      |
+| latinLetters('e', 'h') | e f g h    |
 
 [/task-description]
 [tests]
