@@ -1,12 +1,14 @@
-[slide]
 # Static Members
+
+[slide hideTitle]
+# What Are Static Members
 
 [vimeo-video]
 [stream language="EN" videoId="485443972/9db86c189e" default /]
 [stream language="RO" videoId="485443972/9db86c189e"  /]
 [/video-vimeo]
 
-In Java, static members are those which belongs to the class and you can access these members without instantiating the class.
+In Java, static members are those that belong to the class and you can access these members without instantiating the class.
 
 The static keyword can be used with methods, fields, classes (inner/nested), blocks.
 
@@ -65,15 +67,15 @@ public class Car {
 ```
 [/slide]
 
-[slide]
-# Problem: Bank Account
+[slide hideTitle]
+# Problem with Solution: Bank Account
 
 [vimeo-video]
 [stream language="EN" videoId="485444110/761b551138" default /]
 [stream language="RO" videoId="485444110/761b551138"  /]
 [/video-vimeo]
 
-[code-task title="Problem: Bank Account" taskId="1dfa7c1b-84b0-4bb3-8ee1-0832b748acb9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bank Account" taskId="oop-basics-java-defining-classes-lab-Bank-Account" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -87,17 +89,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create class BankAccount.
+Create a `BankAccount` class.
 
 The class should have private fields for:
-- Id: int (Starts from 1 and increments for every new account)
-- Balance: double
-- Interest rate: double (Shared for all accounts. Default value: 0.02)
+- `id`: int (Starts from 1 and increments for every new account)
+- `balance`: double
+- `interestRate`: double 
+    - Shared for all accounts
+    - Default value: 0.02
 
 The class should also have public methods for:
-- setInterestRate(double interest): void (static)
-- getInterest(int Years): double
-- deposit(double amount): void
+- `setInterestRate(double interest): void (static)`
+- `getInterest(int Years): double`
+- `deposit(double amount): void`
 
 Create a test client supporting the following commands:
 - Create
@@ -106,13 +110,19 @@ Create a test client supporting the following commands:
 - GetInterest {ID} {Years}
 - End
 
-## Examples
+# Examples
+
+## Example 1
+
 | **Input** | **Output** |
 | --- | --- |
 | Create | Account ID1 created |
 | Deposit 1 20 | Deposited 20 to ID1 |
 | GetInterest 1 10 | 4.00 |
 | End |  |
+
+
+## Example 2
 
 | **Input** | **Output** |
 | --- | --- |
@@ -392,101 +402,4 @@ Account does not exist
 [/test]
 [/tests]
 [/code-task]
-[/slide]
-
-[slide]
-# Solution: Bank Account
-
-[vimeo-video]
-[stream language="EN" videoId="485444208/9655609390" default /]
-[stream language="RO" videoId="485444208/9655609390"  /]
-[/video-vimeo]
-
-- Bank Account class:
-
-```java
-public class BankAccount {
-
-    private final static double DEFAULT_INTEREST_RATE = 0.02;
-    private static double interestRate = DEFAULT_INTEREST_RATE;
-    private static int bankAccountCount = 1;
-    private int id;
-    private double balance;
-
-
-    public BankAccount() {
-        this.id = BankAccount.bankAccountCount++;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public double getInterestRate(int years) {
-        return BankAccount.interestRate * years * this.balance;
-    }
-
-    public static void setInterestRate(double interestRate) {
-        BankAccount.interestRate = interestRate;
-    }
-
-    public void deposit(double amount) {
-        this.balance += amount;
-    }
-}
-```
-
-- Main class:
-
-```java
-public class Main {
-
-    private static Map<Integer, BankAccount> bankAccounts = new HashMap<>();
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        while (true) {
-            String[] line = reader.readLine().split(" ");
-            if("end".equalsIgnoreCase(line[0])) {
-                break;
-            }
-
-            switch (line[0]) {
-                case "Create" -> createBankAccount();
-                case "Deposit" -> depositSum(Integer.parseInt(line[1]), Double.parseDouble(line[2]));
-                case "SetInterest" -> setInterest(Double.parseDouble(line[1]));
-                case "GetInterest" -> getInterest(Integer.parseInt(line[1]), Integer.parseInt(line[2]));
-            }
-        }
-    }
-
-    private static void getInterest(int id, int years) {
-        if(bankAccounts.containsKey(id)) {
-            System.out.printf("%.2f%n", bankAccounts.get(id).getInterestRate(years));
-        } else {
-            System.out.println("Account does not exist");
-        }
-    }
-
-    private static void depositSum(int id, double amount) {
-        if(bankAccounts.containsKey(id)) {
-            bankAccounts.get(id).deposit(amount);
-            System.out.printf("Deposited %.0f to ID%d%n", amount, id);
-        } else {
-            System.out.println("Account does not exist");
-        }
-    }
-
-    private static void createBankAccount() {
-        BankAccount ba = new BankAccount();
-        bankAccounts.put(ba.getId(), ba);
-        System.out.println("Account ID" + ba.getId() + " created");
-    }
-
-    private static void setInterest(double interest) {
-        BankAccount.setInterestRate(interest);
-    }
-}
-```
 [/slide]
