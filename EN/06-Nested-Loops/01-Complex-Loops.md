@@ -66,14 +66,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to print the numbers from N down to 1.
+Create a program, which prints the numbers from **n** down to 1.
 
-The function receives a number **n** and prints the numbers from **n** down to 1. 
+- You receive a number **n** as input
+
+- Print all the numbers from **n** to 1 in **descending order**
 
 # Example
 | **Input** | **Output** |
 | --- | --- |
 | numbersFromNto1(5) | 5, 4, 3, 2, 1 |
+| numbersFromNto1(10)| 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 |
 
 
 [/task-description]
@@ -148,11 +151,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to print the numbers from 1 to **n** with step 3:
+Create a program, which prints the numbers from 1 to **n** with a step 3:
 
-* Receives a number **n**
+* You receive a number **n** as input
 
-* Prints the numbers from 1 to **n** with step 3
+* Print the numbers from 1 up to **n** with step 3
 
 
 # Example
@@ -233,11 +236,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program to print the even powers of 2:
+Create a program, which prints all the even powers of 2 up to a given input:
 
-* Receives a number **n**
+* You receive a number **n** as input
 
-* Prints the even powers of 2 up to **2n**:
+* Print the even powers of 2 up to **n**:
 
 # Example
 | **Input** | **Output** |
