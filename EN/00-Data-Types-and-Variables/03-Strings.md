@@ -83,7 +83,11 @@ function concatNames(firstName, lastName, delimeter){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -96,17 +100,31 @@ Write a program, which:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'John', 'Smith', '\-\>'| John\-\>Smith |
-|'Jan', 'White', '\<\-\>'|Jan\<\-\>White|
+| concatNames('John', 'Smith', '\-\>') | John\-\>Smith |
+| concatNames('Jan', 'White', '\<\-\>') | Jan\<\-\>White |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-John
-Smith
-m
+concatNames('John', 'Smith', '\-\>')
+[/input]
+[output]
+John\-\>Smith
+[/output]
+[/test]
+[test open]
+[input]
+concatNames('Jan', 'White', '\<\-\>')
+[/input]
+[output]
+Jan\<\-\>White
+[/output]
+[/test]
+[test]
+[input]
+concatNames('John', 'Smith', 'm')
 [/input]
 [output]
 JohnmSmith
@@ -114,9 +132,7 @@ JohnmSmith
 [/test]
 [test]
 [input]
-Jan
-White
-k
+concatNames('Jan', 'White', 'k')
 [/input]
 [output]
 JankWhite
@@ -124,9 +140,7 @@ JankWhite
 [/test]
 [test]
 [input]
-Jan
-White
-\-
+concatNames('Jan', 'White', '\-')
 [/input]
 [output]
 Jan\-White
@@ -134,9 +148,7 @@ Jan\-White
 [/test]
 [test]
 [input]
-Jan
-White
-\=
+concatNames('Jan', 'White', '\=')
 [/input]
 [output]
 Jan\=White
@@ -144,9 +156,7 @@ Jan\=White
 [/test]
 [test]
 [input]
-Jan
-White
-\,
+concatNames('Jan', 'White', '\,')
 [/input]
 [output]
 Jan\,White
@@ -154,9 +164,7 @@ Jan\,White
 [/test]
 [test]
 [input]
-Jan
-White
-p
+concatNames('Jan', 'White', 'p')
 [/input]
 [output]
 JanpWhite
@@ -184,7 +192,11 @@ function rightPlace(string, sym, result){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -202,17 +214,15 @@ If they are equal you should print `Matched`, otherwise print `Not Matched`.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|'Str_ng', 'I', 'Strong' | Not Matched |
-|'Str_ng', 'i', 'String' |Matched|
+| rightPlace('Str_ng', 'I', 'Strong') | Not Matched |
+| rightPlace('Str_ng', 'i', 'String') | Matched |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Str_ng
-I
-Strong
+rightPlace('Str_ng', 'I', 'Strong')
 [/input]
 [output]
 Not Matched
@@ -220,9 +230,7 @@ Not Matched
 [/test]
 [test open]
 [input]
-Str_ng
-I
-String
+rightPlace('Str_ng', 'i', 'String')
 [/input]
 [output]
 Matched
@@ -230,9 +238,7 @@ Matched
 [/test]
 [test]
 [input]
-aa_av
-n
-aanav
+rightPlace('aa_av', 'n', 'aanav')
 [/input]
 [output]
 Matched
@@ -240,9 +246,7 @@ Matched
 [/test]
 [test]
 [input]
-fd_sa
-l
-fdlsa
+rightPlace('fd_sa', 'l', 'fdlsa')
 [/input]
 [output]
 Matched
@@ -250,9 +254,7 @@ Matched
 [/test]
 [test]
 [input]
-ww_
-w
-www
+rightPlace('ww_', 'w', 'www')
 [/input]
 [output]
 Matched
@@ -260,9 +262,7 @@ Matched
 [/test]
 [test]
 [input]
-_ngsd
-n
-jkljkl
+rightPlace('_ngsd', 'n', 'jkljkl')
 [/input]
 [output]
 Not Matched
@@ -270,9 +270,7 @@ Not Matched
 [/test]
 [test]
 [input]
-gds_aaasng
-m
-Sjkl
+rightPlace('gds_aaasng', 'm', 'Sjkl')
 [/input]
 [output]
 Not Matched
@@ -280,9 +278,7 @@ Not Matched
 [/test]
 [test]
 [input]
-a_ff
-i
-jkll
+rightPlace('a_ff', 'i', 'jkll')
 [/input]
 [output]
 Not Matched
