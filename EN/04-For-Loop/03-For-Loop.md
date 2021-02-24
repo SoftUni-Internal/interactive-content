@@ -109,12 +109,12 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which prints all numbers in a given range and their sum:
 
-- Reads number n from the console
-- **Prints** all numbers from **1** to **n**
-- **Sums** all numbers from **1** to **n**
-- **Prints** the sum on the console at the end
+- You receive a number **n** from the console
+- **Print** all numbers from **1** to **n**
+- **Calculate** the **sum** of all numbers from **1** to **n**
+- **Print** the sum to the console at the end
 
 # Example
 
@@ -126,6 +126,10 @@ Create a program, which:
 |             | 4          |
 |             | 5          |
 |             | 15         |
+| printSum(3) | 1          |
+|             | 2          |
+|             | 3          |
+|             | 6          |
 
 [/task-description]
 [tests]
@@ -193,19 +197,20 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which prints **the greatest** number in an array:
 
-- Reads **n**: a number representing the amount of following input numbers
+- You receive **n**: the size of the array
 
-- Reads n numbers
+- Process **n** numbers
 
-- Finds and prints the greatest number
+- Find and print the greatest number
 
 # Example
 
 | **Input**                             | **Output** |
 | ------------------------------------- | ---------- |
 | greatestNumber(3, ['40', '90', '50']) | 90         |
+| greatestNumber(4, ['5', '3', '14', '35']) | 35 |
 
 [/task-description]
 [tests]
