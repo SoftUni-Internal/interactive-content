@@ -437,22 +437,32 @@ The function receives one argument:
 [hints]
 [hint]
 
-We calculate the price for landscaping the whole yard:
-- 550 * 7.61 = $4185.5
+Calculate the price for the landscaping of the whole yard and store it in a variable:
+let total =  input * 7.61 
+
 
 [/hint]
 
 [hint]
 
-We deduct the discount from the total amount:
-- 1.18 * 4185.5 = $753.39
+Calculate the discount and store the result in a variable: 
+let discount = total * 0.18
 
 [/hint]
 
 [hint]
 
-We calculate the final price of the service:
-- 4185.5 – 753.39 -> $3432.11
+Subtract the discount from the total price:
+total -= discount
+
+
+
+[/hint]
+[hint]
+
+Print the result on the console:
+console.log(The final price is: ${total} dollars.);
+console.log(The discount is: ${discount} dollars.)
 
 [/hint]
 [/hints]
