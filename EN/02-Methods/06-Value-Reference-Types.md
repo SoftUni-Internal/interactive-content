@@ -18,7 +18,7 @@ The called method does not have access to the original primitive value and there
 
 The called method can change the copied value.
 
-* Primitive data types are: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** and **char**.
+Primitive data types are: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** and **char**.
 
 ```Java
 int i = 42; //require 4 bytes of memory
@@ -37,7 +37,7 @@ When a reference type is assigned to another reference type, both will point to 
 
 When an object is passed into a method, the called method can change the contents of the object passed to it but not the address of the object.
 
-* Reference data types are: **String**, **int[]**, **char[]**, **String[]**.
+Reference data types are: **String**, **int\[\]**, **char\[\]**, **String\[\]**.
 
 ```Java
 String str = "Hello";
@@ -152,8 +152,8 @@ Any operation that would change an element in the array inside the method will a
 
 
 [slide hideTitle]
-# Problem: Math Operations
-[code-task title="Math operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem with Solution: Math Operations
+[code-task title="Math Operations" taskId="java-fund-Methods-lab-Math-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.Scanner;
@@ -173,7 +173,7 @@ You will be given **three lines of input**.
 
 The first will be the first **number**, the second one will be the **operator** and the last one will be the **second number**.
 
-The possible operators are: **/** ***** **+** **-**
+The possible operators are: `/`, `*`, `+` and `-`.
 
 ## Examples
 |**Input**|**Output**|
@@ -265,115 +265,3 @@ The possible operators are: **/** ***** **+** **-**
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Solution: Math operations
-[code-task title="Solution: Math operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.Scanner;
-
-public class MathOperations {
-    public static void main(String[] args) {
-        // Write your solution here
-}
-```
-[/code-editor]
-[task-description]
-## Description
-Write a method that receives **two numbers** and an **operator**, calculates the result and returns it.
-
-You will be given **three lines of input**.
-
-The first will be the first **number**, the second one will be the **operator** and the last one will be the **second number**.
-
-The possible operators are: **/** ***** **+** **-**
-
-## Examples
-|**Input**|**Output**|
-| --- | --- | 
-| 5 | 25 |
-| * ||
-| 5 ||
-
-|**Input**|**Output**|
-| --- | --- | 
-| 4 | 12 |
-| + ||
-| 8 ||
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-5
-\*
-5
-[/input]
-[output]
-25
-[/output]
-[/test]
-[test open]
-[input]
-4
-+
-8
-[/input]
-[output]
-12
-[/output]
-[/test]
-[test]
-[input]
-4
-/
-2
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-3
-\-
-1
-[/input]
-[output]
-2
-[/output]
-[/test]
-[test]
-[input]
-5
-+
-2
-[/input]
-[output]
-7
-[/output]
-[/test]
-[test]
-[input]
-2
-\*
-3
-[/input]
-[output]
-6
-[/output]
-[/test]
-[test]
-[input]
-5
-+
-5
-[/input]
-[output]
-10
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
