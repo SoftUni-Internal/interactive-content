@@ -47,7 +47,7 @@ Rotations should be **rounded up.**
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|gramophone('Black Sabbath', 'Paranoid', 'War Pigs')| The plate was rotated 167 times. |
+| gramophone('Black Sabbath', 'Paranoid', 'War Pigs') | The plate was rotated 167 times. |
 
 [/task-description]
 [tests]
@@ -125,8 +125,10 @@ function fuelMoney(pistance, passengers, price){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]), Number(input[1]), Number(input[2]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -157,16 +159,14 @@ As output you should print this message:
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|260, 9, 2.49| Needed money for that trip is 47.559 dollars. |
-|90, 14, 2.88| Needed money for that trip is 22.176 dollars. |
+| fuelMoney(260, 9, 2.49) | Needed money for that trip is 47.559 dollars. |
+| fuelMoney(90, 14, 2.88) | Needed money for that trip is 22.176 dollars. |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-260
-9
-2.49
+fuelMoney(260, 9, 2.49)
 [/input]
 [output]
 Needed money for that trip is 47.559 dollars.
@@ -174,9 +174,7 @@ Needed money for that trip is 47.559 dollars.
 [/test]
 [test open]
 [input]
-90
-14
-2.88
+fuelMoney(90, 14, 2.88)
 [/input]
 [output]
 Needed money for that trip is 22.176 dollars.
@@ -184,9 +182,7 @@ Needed money for that trip is 22.176 dollars.
 [/test]
 [test]
 [input]
-154
-5
-3.1
+fuelMoney(154, 5, 3.1)
 [/input]
 [output]
 Needed money for that trip is 34.968 dollars.
@@ -194,9 +190,7 @@ Needed money for that trip is 34.968 dollars.
 [/test]
 [test]
 [input]
-545
-5
-54.59
+fuelMoney(545, 5, 54.59)
 [/input]
 [output]
 Needed money for that trip is 2109.9035 dollars.
@@ -204,9 +198,7 @@ Needed money for that trip is 2109.9035 dollars.
 [/test]
 [test]
 [input]
-32
-15
-1.0
+fuelMoney(32, 15, 1.0)
 [/input]
 [output]
 Needed money for that trip is 3.74 dollars.
@@ -214,9 +206,7 @@ Needed money for that trip is 3.74 dollars.
 [/test]
 [test]
 [input]
-1232
-13
-2.19
+fuelMoney(1232, 13, 2.19)
 [/input]
 [output]
 Needed money for that trip is 191.7126 dollars.
@@ -224,9 +214,7 @@ Needed money for that trip is 191.7126 dollars.
 [/test]
 [test]
 [input]
-546
-45
-4.45
+fuelMoney(546, 45, 4.45)
 [/input]
 [output]
 Needed money for that trip is 190.104 dollars.
@@ -234,9 +222,7 @@ Needed money for that trip is 190.104 dollars.
 [/test]
 [test]
 [input]
-755
-10
-3.474
+fuelMoney(755, 10, 3.474)
 [/input]
 [output]
 Needed money for that trip is 187.0749 dollars.
@@ -244,9 +230,7 @@ Needed money for that trip is 187.0749 dollars.
 [/test]
 [test]
 [input]
-451
-2
-12.5
+fuelMoney(451, 2, 12.5)
 [/input]
 [output]
 Needed money for that trip is 397.125 dollars.
@@ -254,9 +238,7 @@ Needed money for that trip is 397.125 dollars.
 [/test]
 [test]
 [input]
-361
-45
-2.989
+fuelMoney(361, 45, 2.989)
 [/input]
 [output]
 Needed money for that trip is 88.98253 dollars.
@@ -264,9 +246,7 @@ Needed money for that trip is 88.98253 dollars.
 [/test]
 [test]
 [input]
-1565
-12
-1.49
+fuelMoney(1565, 12, 1.49)
 [/input]
 [output]
 Needed money for that trip is 165.0175 dollars.
@@ -290,8 +270,10 @@ function centuriesToMinutes(number){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -307,14 +289,14 @@ Print the output in the following format:
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1| 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
-|5| 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
+| centuriesToMinutes(1) | 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes |
+| centuriesToMinutes(5) | 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-1
+centuriesToMinutes(1)
 [/input]
 [output]
 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
@@ -322,7 +304,7 @@ Print the output in the following format:
 [/test]
 [test open]
 [input]
-5
+centuriesToMinutes(5)
 [/input]
 [output]
 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240 minutes
@@ -330,7 +312,7 @@ Print the output in the following format:
 [/test]
 [test]
 [input]
-14
+centuriesToMinutes(14)
 [/input]
 [output]
 14 centuries = 1400 years = 511339 days = 12272136 hours = 736328160 minutes
@@ -338,7 +320,7 @@ Print the output in the following format:
 [/test]
 [test]
 [input]
-2
+centuriesToMinutes(2)
 [/input]
 [output]
 2 centuries = 200 years = 73048 days = 1753152 hours = 105189120 minutes
@@ -346,7 +328,7 @@ Print the output in the following format:
 [/test]
 [test]
 [input]
-4
+centuriesToMinutes(4)
 [/input]
 [output]
 4 centuries = 400 years = 146096 days = 3506304 hours = 210378240 minutes
@@ -354,7 +336,7 @@ Print the output in the following format:
 [/test]
 [test]
 [input]
-3
+centuriesToMinutes(3)
 [/input]
 [output]
 3 centuries = 300 years = 109572 days = 2629728 hours = 157783680 minutes
@@ -362,7 +344,7 @@ Print the output in the following format:
 [/test]
 [test]
 [input]
-6
+centuriesToMinutes(6)
 [/input]
 [output]
 6 centuries = 600 years = 219145 days = 5259480 hours = 315568800 minutes
@@ -386,8 +368,10 @@ function specialNumbers(number){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -400,7 +384,7 @@ A number is special when the sum of its digits is **5,7, or 11.**
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|5| 1 -> False |
+| specialNumbers(5) | 1 -> False |
 ||2 -> False|
 ||3 -> False|
 ||4 -> False|
@@ -418,7 +402,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [tests]
 [test open]
 [input]
-5
+specialNumbers(5)
 [/input]
 [output]
 1 -> False
@@ -430,7 +414,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-1
+specialNumbers(1)
 [/input]
 [output]
 1 -> False
@@ -438,7 +422,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-15
+specialNumbers(15)
 [/input]
 [output]
 1 -> False
@@ -460,7 +444,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-4
+specialNumbers(4)
 [/input]
 [output]
 1 -> False
@@ -471,7 +455,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-40
+specialNumbers(40)
 [/input]
 [output]
 1 -> False
@@ -518,7 +502,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-6
+specialNumbers(6)
 [/input]
 [output]
 1 -> False
@@ -531,7 +515,7 @@ Use `parseInt()` while dividing to get only integer numbers.
 [/test]
 [test]
 [input]
-8
+specialNumbers(8)
 [/input]
 [output]
 1 -> False
@@ -562,8 +546,10 @@ function triplesLatinLetters(number){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -573,7 +559,7 @@ Write a program that receives a **number** `n` and prints all triples of the fir
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|2| aaa |
+| triplesLatinLetters(2) | aaa |
 ||aab|
 ||aba|
 ||abb|
@@ -596,7 +582,7 @@ The function `String.fromCharCode()` gets the **value in decimal** and transform
 [tests]
 [test open]
 [input]
-2
+triplesLatinLetters(2)
 [/input]
 [output]
 aaa
@@ -611,7 +597,7 @@ bbb
 [/test]
 [test]
 [input]
-1
+triplesLatinLetters(1)
 [/input]
 [output]
 aaa
@@ -619,7 +605,7 @@ aaa
 [/test]
 [test]
 [input]
-3
+triplesLatinLetters(3)
 [/input]
 [output]
 aaa
@@ -653,7 +639,7 @@ ccc
 [/test]
 [test]
 [input]
-6
+triplesLatinLetters(6)
 [/input]
 [output]
 aaa
@@ -876,7 +862,7 @@ fff
 [/test]
 [test]
 [input]
-4
+triplesLatinLetters(4)
 [/input]
 [output]
 aaa
@@ -947,7 +933,7 @@ ddd
 [/test]
 [test]
 [input]
-0
+triplesLatinLetters(0)
 [/input]
 [output]
 
@@ -955,7 +941,7 @@ ddd
 [/test]
 [test]
 [input]
-5
+triplesLatinLetters(5)
 [/input]
 [output]
 aaa
@@ -1103,8 +1089,10 @@ function sumDigits(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -1116,14 +1104,14 @@ Your task is to find the sum of its digits.
 # Example
   | **Input** | **Output** |
 | --- | --- |
-|245678| 32 |
-|97561| 28 |
+| sumDigits(245678) | 32 |
+| sumDigits(97561) | 28 |
 
 [/task-description]
 [tests]
 [test open]
 [input]
-245678
+sumDigits(245678)
 [/input]
 [output]
 32
@@ -1131,7 +1119,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test open]
 [input]
-97561
+sumDigits(97561)
 [/input]
 [output]
 28
@@ -1139,7 +1127,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-9465
+sumDigits(9465)
 [/input]
 [output]
 24
@@ -1147,7 +1135,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-1
+sumDigits(1)
 [/input]
 [output]
 1
@@ -1155,7 +1143,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-1566625331
+sumDigits(1566625331)
 [/input]
 [output]
 38
@@ -1163,7 +1151,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-00001
+sumDigits(00001)
 [/input]
 [output]
 1
@@ -1171,7 +1159,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-15477
+sumDigits(15477)
 [/input]
 [output]
 24
@@ -1179,7 +1167,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-99999
+sumDigits(99999)
 [/input]
 [output]
 45
@@ -1187,7 +1175,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-1558974233
+sumDigits(1558974233)
 [/input]
 [output]
 47
@@ -1195,7 +1183,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-69844
+sumDigits(69844)
 [/input]
 [output]
 31
@@ -1203,7 +1191,7 @@ Your task is to find the sum of its digits.
 [/test]
 [test]
 [input]
-00000
+sumDigits(00000)
 [/input]
 [output]
 0
@@ -1227,7 +1215,11 @@ function reversChars(firstChar, secondChar, thirdChar){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => code(...input);
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
 ```
 [/code-adapter]
 [task-description]
@@ -1237,17 +1229,15 @@ Write a program that takes **3 parameters** (characters) and prints them in **re
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|'A', 'B','C'| C B A |
-|'1','L','\&'| \& L 1 |
+| reversChars('A', 'B','C') | C B A |
+| reversChars('1','L','\&') | \& L 1 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-A
-B
-C
+reversChars('A', 'B','C')
 [/input]
 [output]
 C B A
@@ -1255,9 +1245,7 @@ C B A
 [/test]
 [test open]
 [input]
-1
-L
-\&
+reversChars('1','L','\&')
 [/input]
 [output]
 \& L 1
@@ -1265,9 +1253,7 @@ L
 [/test]
 [test]
 [input]
-a
-b
-c
+reversChars('a','b','c')
 [/input]
 [output]
 c b a
@@ -1275,9 +1261,7 @@ c b a
 [/test]
 [test]
 [input]
-z
-z
-z
+reversChars('z','z','z')
 [/input]
 [output]
 z z z
@@ -1285,9 +1269,7 @@ z z z
 [/test]
 [test]
 [input]
-\!
-\@
-\#
+reversChars('\!','\@','\#')
 [/input]
 [output]
 \# \@ \!
@@ -1295,9 +1277,7 @@ z z z
 [/test]
 [test]
 [input]
-l
-K
-\#
+reversChars('l','K','\#')
 [/input]
 [output]
 \# K l
@@ -1305,9 +1285,7 @@ K
 [/test]
 [test]
 [input]
-\_
-P
-\>
+reversChars('\_','P','\>')
 [/input]
 [output]
 \> P \_
@@ -1315,9 +1293,7 @@ P
 [/test]
 [test]
 [input]
-A
-B
-C
+reversChars('A','B','C')
 [/input]
 [output]
 C B A
@@ -1325,9 +1301,7 @@ C B A
 [/test]
 [test]
 [input]
-1
-L
-\&
+reversChars('1','L','\&')
 [/input]
 [output]
 \& L 1
@@ -1352,10 +1326,9 @@ function calculator(firstNumber, operator, secondNumber){
 [code-adapter]
 ```
 function adapter(input, code) {
-  let a = Number(input[0]);
-  let b = input[1];
-  let c = Number(input[2]);
-  return code(a, b, c);
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -1375,17 +1348,15 @@ Print the **result of the calculation** to the console formatted to the **second
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|5, '+', 10| 15.00 |
-|25.5, '-', 3 | 22.50 |
+| calculator(5, '+', 10) | 15.00 |
+| calculator(25.5, '-', 3) | 22.50 |
 
 
 [/task-description]
 [tests]
 [test open]
 [input]
-5
-\+
-10
+calculator(5, '\+', 10)
 [/input]
 [output]
 15.00
@@ -1393,9 +1364,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test open]
 [input]
-25.5
-\-
-3
+calculator(25.5, '\-', 3)
 [/input]
 [output]
 22.50
@@ -1403,9 +1372,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-10
-/
-2
+calculator(10, '/', 2)
 [/input]
 [output]
 5.00
@@ -1413,9 +1380,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-20
-\*
-2
+calculator(20, '\*', 2)
 [/input]
 [output]
 40.00
@@ -1423,9 +1388,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-5
-/
-2
+calculator(5, '/', 2)
 [/input]
 [output]
 2.50
@@ -1433,9 +1396,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-100
-+
-100
+calculator(100, '\+', 100)
 [/input]
 [output]
 200.00
@@ -1443,9 +1404,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-5.5
-\-
-5.5
+calculator(5.5, '\-', 5.5)
 [/input]
 [output]
 0.00
@@ -1453,9 +1412,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-0
-\+
-11.11
+calculator(0, '\+', 11.11)
 [/input]
 [output]
 11.11
@@ -1463,9 +1420,7 @@ Print the **result of the calculation** to the console formatted to the **second
 [/test]
 [test]
 [input]
-10
-\*
-5.5
+calculator(10, '\*', 5.5)
 [/input]
 [output]
 55.00
@@ -1476,4 +1431,3 @@ Print the **result of the calculation** to the console formatted to the **second
 [/code-task]
 
 [/slide]
-
