@@ -61,17 +61,24 @@ Round the time up to the nearest whole number.
 |timeForLunch(['Riverdale', 57, 90])| You don't have enough time to watch Riverdale, you need 1 more minutes.|
 |timeForLunch(['Game of Thrones', 60, 96])| You have enough time to watch Game of Thrones and would be left with 0 minutes of free time.|
 
-**Comments**
+[hints]
 
+[hint]
 Time for lunch: 96 \* 1\/8 = 12.0
+[/hint]
 
+[hint]
 Time to relax: 96 \* 1\/4 = 24.0
+[/hint]
 
+[hint]
 Time left: 96 \- 12 \- 24 = 60
 
 In this case, the time you would have left is more than or equal to the duration of the episode.
 
 Make sure that the right output is printed to the console.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
