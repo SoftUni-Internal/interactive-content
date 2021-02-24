@@ -8,7 +8,7 @@
 [code-task title="Calculator for TV series" taskId="js-pb-exam-preparation-Calculator-for-TV-series" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function tvSeries(input) {
+function tvSeries(name, seasons, episodes, duration) {
 	// Write your code here
 }
 ```
