@@ -202,9 +202,9 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You will receive 3 parameters: **string**, **char**, **string**.
+You will receive 3 parameters: **string**, **character**, **string**.
 
-The first string will be a word with a **missing char** replaced with an underscore "**_**".
+The first string will be a word with a **missing character** replaced with an underscore "**_**".
 
 You have to **replace** the character with the missing part (underscore) from the first string and **compare** the result with the second string.
 

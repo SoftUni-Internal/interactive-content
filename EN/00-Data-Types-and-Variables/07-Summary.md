@@ -7,15 +7,15 @@
 # In this lesson you learned:
 
 - There are **eight data types** in JavaScript: 
-    - Number
+    - number
     ```js
     let myNumber = 3.14;
     ```
-    - String
+    - ntring
     ```js
     let myString = 'Hello JavaScript!';
     ```
-    - Symbol
+    - symbol
     ```js
     let mySymbol = 'R';
     ```
@@ -28,18 +28,15 @@
      ```js
     let variable = undefined;
     ```
-    - Object
+    - object
      ```js
     let car = {type:"Tesla", model:"S", color:"white"};
     ```
-    - Boolean
+    - boolean
      ```js
     let bool = true;
     ```
-    - BigInt 
-   ```js
-    let alsoHuge = BigInt(9007199254740991)
-    ```
+    
 - `let` has block scope, `var` has function scope
 
 - With `typeof` we can receive the type of a variable
@@ -55,10 +52,10 @@ console.log(typeof(cars));
 ## In the next lesson, you will learn:
 
 - Arrays
-  - Definition and syntax
+  - definition and syntax
 - Array iteration
-  - How we iterate over array
-  - Alternative ways to iterate using a for-of loop
+  - how we iterate over array
+  - alternative ways to iterate using a for-of loop
 - Array operations
 
 [/slide]
