@@ -169,8 +169,10 @@ function amazingNumbers(input){
 [/code-editor]
 [code-adapter]
 ```
-(input, code) => {
-  return code (Number(input[0]));
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
 }
 ```
 [/code-adapter]
@@ -190,15 +192,15 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 # Example
 | **Input** | **Output** |
 | --- | --- |
-|1233| 1233 Amazing? True |
-|999|999 Amazing? False|
+| amazingNumbers(1233) | 1233 Amazing? True |
+| amazingNumbers(999) | 999 Amazing? False|
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-1233
+amazingNumbers(1233)
 [/input]
 [output]
 1233 Amazing? True
@@ -206,7 +208,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test open]
 [input]
-999
+amazingNumbers(999)
 [/input]
 [output]
 999 Amazing? False
@@ -214,7 +216,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-144
+amazingNumbers(144)
 [/input]
 [output]
 144 Amazing? True
@@ -222,7 +224,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-55555554
+amazingNumbers(55555554)
 [/input]
 [output]
 55555554 Amazing? True
@@ -230,7 +232,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-5554
+amazingNumbers(5554)
 [/input]
 [output]
 5554 Amazing? True
@@ -238,7 +240,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-45645
+amazingNumbers(45645)
 [/input]
 [output]
 45645 Amazing? False
@@ -246,7 +248,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-3671
+amazingNumbers(3671)
 [/input]
 [output]
 3671 Amazing? False
@@ -254,7 +256,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-1231
+amazingNumbers(1231)
 [/input]
 [output]
 1231 Amazing? False
@@ -262,7 +264,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-6123
+amazingNumbers(6123)
 [/input]
 [output]
 6123 Amazing? False
@@ -270,7 +272,7 @@ Examples for amazing numbers are: `1233 (1 + 2 + 3 + 3 = 9)`, `583472 (5 + 8 + 3
 [/test]
 [test]
 [input]
-65451
+amazingNumbers(65451)
 [/input]
 [output]
 65451 Amazing? False
