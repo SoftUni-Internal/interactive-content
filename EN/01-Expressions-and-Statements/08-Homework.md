@@ -456,13 +456,12 @@ Subtract the discount from the total price:
 total -= discount
 
 
-
 [/hint]
 [hint]
 
 Print the result on the console:
 console.log(The final price is: ${total} dollars.);
-console.log(The discount is: ${discount} dollars.)
+console.log(The discount is: ${discount} dollars.);
 
 [/hint]
 [/hints]
