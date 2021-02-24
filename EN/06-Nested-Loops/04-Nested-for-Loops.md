@@ -81,11 +81,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which:
+Create a program, which prints a triangle of stars with a given size:
 
-* Reads the **height** of a triangle from the console
+* You receive the **height** of a triangle from the console
 
-* Prints a **triangle of stars**
+* Print the **triangle of stars** to the console
 
 # Example
 | **Input** | **Output**| 
@@ -95,6 +95,9 @@ Create a program, which:
 | | \*\*\* |
 |  | \*\*\*\* |
 | | \*\*\*\*\* |
+| triangleOfStars(3)| \* |
+| | \*\* |
+| | \*\*\* |
 
 [/task-description]
 [code-io /]
