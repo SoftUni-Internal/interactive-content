@@ -23,6 +23,8 @@ Ați fost angajat de un cinematograf să scrieți un program care să calculeze 
 
 Trebuie să primiți numărul de locuri din sală și pe următoarele linii din consolă, până ce este introdusă comanda "**Movie time!**", veți primi un număr de spectatori noi.
 
+Prețul biletului este de 5 USD.
+
 Dacă numărul de oameni care intră în sală poate fi împărțit la trei fără să avem un rest, atunci se va aplica o reducere de $5 la prețul total.
 
 Dacă nu mai rămân locuri libere în sală, programul trebuie să oprească citirea datelor de intrare de pe consolă. 
@@ -64,20 +66,20 @@ Mai întâi, tipăriți următoarele linii:
 || Cinema income - 355$|
 
 [hints]
+
 [hint]
-Capacitatea sălii este de 60 locuri.
-
-Următorul element este numărul de persoane care au intrat în sală: 10.
-
-Prețul pe care îl vor plăti este 10 \* 5 = 50$. 
-
+Get the hall's capacity. Then calculate how much each group of visitors will pay.
 [/hint]
 [hint]
-După ce primim numărul de 6 spectatori intrați în sală, dacă 6 se împarte la 3, atunci ei vor plăti cu 5$ mai puțin. 
 
-Continuăm până ce primim comanda "**Movie time!**" și apoi imprimăm datele de ieșire corespunzătoare.
+If the number of people entering the hall can be divided by 3, apply the discount.
 [/hint]
+[hint]
+Upon receiving the command "**Movie time!**", print the suitable output.
+[/hint]
+
 [/hints]
+
 [/task-description]
 [code-io /]
 [tests]
