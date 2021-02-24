@@ -6,7 +6,7 @@
 [code-task title="Food for Pets" taskId="JavaScript-Programming-Basics-exam-Food-for-Pets" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function poodForPets(input) {
+function foodForPets(input) {
 	// Write your code here
 }
 ```
@@ -77,7 +77,7 @@ The percentage of food **must be formatted to the second digit after the decimal
 
 | **Input** | **Output** |
 | --- | --- |
-|poodForPets([3, 1000, 300, 20, 100, 30, 110, 40]) | Total eaten biscuits: 15gr. |
+|foodForPets([3, 1000, 300, 20, 100, 30, 110, 40]) | Total eaten biscuits: 15gr. |
 || 60.00% of the food has been eaten. |
 || 85.00% eaten from the dog. |
 || 15.00% eaten from the cat. |
@@ -120,7 +120,7 @@ On this day they should also **receive a prize - cookies:**
 
 | **Input** | **Output** |
 | --- | --- |
-|poodForPets([3, 500, 100, 30, 110, 25, 120, 35]) | Total eaten biscuits: 16gr.|
+|foodForPets([3, 500, 100, 30, 110, 25, 120, 35]) | Total eaten biscuits: 16gr.|
 || 84.00% of the food has been eaten. |
 || 78.57% eaten from the dog. |
 || 21.43% eaten from the cat. |
@@ -130,7 +130,7 @@ On this day they should also **receive a prize - cookies:**
 [tests]
 [test open]
 [input]
-poodForPets([3, 1000, 300, 20, 100, 30, 110, 40])
+foodForPets([3, 1000, 300, 20, 100, 30, 110, 40])
 [/input]
 [output]
 Total eaten biscuits: 15gr.
@@ -141,7 +141,7 @@ Total eaten biscuits: 15gr.
 [/test]
 [test open]
 [input]
-poodForPets([3, 500, 100, 30, 110, 25, 120, 35])
+foodForPets([3, 500, 100, 30, 110, 25, 120, 35])
 [/input]
 [output]
 Total eaten biscuits: 16gr.
@@ -152,7 +152,7 @@ Total eaten biscuits: 16gr.
 [/test]
 [test]
 [input]
-poodForPets([6, 6000, 200, 100, 300, 30, 100, 55, 156, 25, 426, 65, 200, 29])
+foodForPets([6, 6000, 200, 100, 300, 30, 100, 55, 156, 25, 426, 65, 200, 29])
 [/input]
 [output]
 Total eaten biscuits: 38gr.
@@ -163,7 +163,7 @@ Total eaten biscuits: 38gr.
 [/test]
 [test]
 [input]
-poodForPets([5, 5014, 236, 124, 365, 120, 146, 66, 208, 140, 369, 96])
+foodForPets([5, 5014, 236, 124, 365, 120, 146, 66, 208, 140, 369, 96])
 [/input]
 [output]
 Total eaten biscuits: 21gr.
@@ -174,7 +174,7 @@ Total eaten biscuits: 21gr.
 [/test]
 [test]
 [input]
-poodForPets([2, 700, 200, 33, 300, 50])
+foodForPets([2, 700, 200, 33, 300, 50])
 [/input]
 [output]
 Total eaten biscuits: 0gr.
@@ -185,7 +185,7 @@ Total eaten biscuits: 0gr.
 [/test]
 [test]
 [input]
-poodForPets([7, 7000, 200, 33, 300, 50, 369, 258, 456, 246, 666, 66, 648, 215, 741, 231])
+foodForPets([7, 7000, 200, 33, 300, 50, 369, 258, 456, 246, 666, 66, 648, 215, 741, 231])
 [/input]
 [output]
 Total eaten biscuits: 149gr.
@@ -196,7 +196,7 @@ Total eaten biscuits: 149gr.
 [/test]
 [test]
 [input]
-poodForPets([7, 3000, 200, 33, 300, 50, 369, 25, 234, 24, 466, 66, 648, 21, 541, 23])
+foodForPets([7, 3000, 200, 33, 300, 50, 369, 25, 234, 24, 466, 66, 648, 21, 541, 23])
 [/input]
 [output]
 Total eaten biscuits: 106gr.
@@ -207,7 +207,7 @@ Total eaten biscuits: 106gr.
 [/test]
 [test]
 [input]
-poodForPets([5, 5584, 436, 224, 565, 220, 346, 166, 508, 148, 469, 95])
+foodForPets([5, 5584, 436, 224, 565, 220, 346, 166, 508, 148, 469, 95])
 [/input]
 [output]
 Total eaten biscuits: 51gr.
@@ -218,7 +218,7 @@ Total eaten biscuits: 51gr.
 [/test]
 [test]
 [input]
-poodForPets([3, 900, 176, 36, 159, 19, 399, 111])
+foodForPets([3, 900, 176, 36, 159, 19, 399, 111])
 [/input]
 [output]
 Total eaten biscuits: 51gr.
@@ -229,7 +229,7 @@ Total eaten biscuits: 51gr.
 [/test]
 [test]
 [input]
-poodForPets([3, 2000, 300, 110, 365, 120, 444, 50])
+foodForPets([3, 2000, 300, 110, 365, 120, 444, 50])
 [/input]
 [output]
 Total eaten biscuits: 49gr.
@@ -240,7 +240,7 @@ Total eaten biscuits: 49gr.
 [/test]
 [test]
 [input]
-poodForPets([4, 5000, 666, 230, 156, 32, 400, 200, 500, 190])
+foodForPets([4, 5000, 666, 230, 156, 32, 400, 200, 500, 190])
 [/input]
 [output]
 Total eaten biscuits: 60gr.
