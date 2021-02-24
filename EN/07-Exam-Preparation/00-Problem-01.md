@@ -66,7 +66,7 @@ Determine the duration of an episode with advertisements.
 [/hint]
 [hint]
 
-Add extra time because of specials.
+Add extra time for the specials.
 [/hint]
 [hint]
 
