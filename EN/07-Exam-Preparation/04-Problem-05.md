@@ -70,7 +70,7 @@ After receiving the budget and the series count, determine whether the series in
 Then, calculate the price for each series.
 [/hint]
 [hint]
-Calculate the price for the all of the series and check if you can buy them.
+Calculate the price for all of the series and check if you can buy them.
 [/hint]
 
 [/hints]
