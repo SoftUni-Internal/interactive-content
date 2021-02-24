@@ -648,8 +648,8 @@ function adapter(input, code) {
 Create a program, which manages an account balance:
 
 * You receive the **amount of money** for each transaction untill the **END** command
-* **Add** the money to the **balance** and **print**: "**Increase: **\{**money**\}", format **money** to the **2nd digit** after the decimal point
-* After **END**, calculate and **print** the total balance: "**Total: **\{**balance**\}", format **balance** to the **2nd digit** after the decimal point
+* **Add** the money to the **balance** and **print**: "**Increase:** \{**money**\}", format **money** to the **2nd digit** after the decimal point
+* After **END**, calculate and **print** the total balance: "**Total:** \{**balance**\}", format **balance** to the **2nd digit** after the decimal point
 
 # Example
   | **Input** | **Output** |
