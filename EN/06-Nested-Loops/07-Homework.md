@@ -44,8 +44,8 @@ Create a program, which prints the following information about a building:
 ||A30 A31 A32 A33 |
 ||O20 O21 O22 O23 |
 || A10 A11 A12 A13|
-| building(2, 5) | L20, L21, L22, L23, L24|
-|| A10, A11, A12, A13, A14|
+| building(2, 5) | L20 L21 L22 L23 L24|
+|| A10 A11 A12 A13 A14|
 
 [/task-description]
 [tests]
