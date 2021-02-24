@@ -67,7 +67,7 @@ Ordinal value: 3; Name value: SPADES
 
 [slide hideTitle]
 # Problem: Card Rank
-[code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-lab-Card-Rank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Card Rank" taskId="oop-basics-java-more-oop-concepts-Card-Rank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -160,7 +160,7 @@ Ordinal value: 12; Name value: KING
 [slide hideTitle]
 # Problem: Cards with Power
 
-[code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-lab-Cards-with-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Cards with Power" taskId="oop-basics-java-more-oop-concepts-Cards-with-Power" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
