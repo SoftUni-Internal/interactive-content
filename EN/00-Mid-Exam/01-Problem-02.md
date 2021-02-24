@@ -75,8 +75,7 @@ If the index is invalid, ignore the command.
 
 | **Input** | **Output** |
 | --- | --- |
-|schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| 
-The Lord of the Rings', 'Check Book \| 3', 'Done' ])| Hamlet|
+|schoolLibrary(['Don Quixote&The Great Gatsby&Moby Dick&Hamlet', 'Add Book \| The Odyssey', 'Take Book \| Don Quixote', 'Insert Book \| The Lord of the Rings', 'Check Book \| 3', 'Done' ])| Hamlet|
 ||The Odyssey, The Great Gatsby, Moby Dick, Hamlet, The Lord of the Rings|
 
 ## Example Two
