@@ -26,6 +26,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
+//TODO Change the task
 It is Friday night, and you are wondering which movie to watch. 
 
 You decide to create a program, which chooses it for you. 
