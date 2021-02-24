@@ -8,7 +8,7 @@
 [code-task title="Time for Lunch" taskId="js-pb-exam-preparation-Time-for-Lunch" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function timeForLunch(input) {
+function timeForLunch(name, duration, break) {
 	// Write your code here
 }
 ```
