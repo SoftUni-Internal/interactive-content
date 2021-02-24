@@ -2,7 +2,7 @@
 
 # Restaurant
 
-[code-task title="Print Hello Java" taskId="pb-java-introduction-print-hello-java"]
+[code-task title="Restaurant" taskId="HTML-CSS-Exam-Restaurant"]
 
 
 [task-description]
@@ -20,6 +20,5 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Pixel-perfect implementation is **NOT** required
 
 [/task-description]
-[code-io /]
 [/code-task]
 [/slide]
