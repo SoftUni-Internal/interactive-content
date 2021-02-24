@@ -73,10 +73,10 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which prints all the numbers, ending with 7, up to a given number **n**:
 
-- Reads a number **n**
-- Prints all numbers from **7 to n**, **ending with 7**
+- You receive a number **n**
+- Print all the required numbers from **7 to n**
 
 # Example
 
@@ -85,6 +85,11 @@ Create a program, which:
 | numbersEndingWith7(30) | 7          |
 |                        | 17         |
 |                        | 27         |
+| numbersEndingWith7(50) | 7          |
+|                        | 17         |
+|                        | 27         |
+|                        | 37         |
+|                        | 47         |
 
 [/task-description]
 [tests]
@@ -181,11 +186,11 @@ function adapter(input, code) {
 
 # Description
 
-Create a program, which:
+Create a program, which counts down the days before an exam:
 
-- Reads an integer - count of **days before an exam**
-- After each day passes, it prints: \{numberOfDaysLeft\} days before the exam
-- At the end prints: **The exam has come.**
+- You receive an integer - number of **days before an exam**
+- After each day, print: \{**numberOfDaysLeft**\} days before the exam
+- At the end, print: **The exam has come.**
 
 # Example
 
@@ -195,6 +200,10 @@ Create a program, which:
 |                  | 2 days before the exam |
 |                  | 1 days before the exam |
 |                  | The exam has come.     |
+| examCountdown(2) | 2 days before the exam |
+|                  | 1 days before the exam |
+|                  | The exam has come.     |
+
 
 [/task-description]
 [tests]
