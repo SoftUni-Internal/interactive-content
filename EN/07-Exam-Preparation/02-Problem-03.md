@@ -87,7 +87,7 @@ cinema(['John Wick', 'Drink', 6])
 Your bill is 72.00$
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 cinema(['John Wick', 'Popcorn', 11])
 [/input]
